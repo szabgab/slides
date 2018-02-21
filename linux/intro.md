@@ -1,5 +1,5 @@
 # Introduction to Linux
-{id: introduction-to-linux}
+{i: introduction-to-linux}
 
 ## About us
 {id: about-us}
