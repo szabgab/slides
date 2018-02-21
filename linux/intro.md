@@ -82,6 +82,8 @@ $ ifconfig | grep inet
 ## Use Putty to connect to the machine
 {id: use-putty-to-connect-to-the-machine}
 
+* [Download putty.exe](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) (No need for the .msi file)
+* Run it from the download directory or from the desktop
 
 ## Turn off the Linux box
 {id: turn-off-the-linux-box}
