@@ -1,6 +1,12 @@
 # Introduction to Linux
 {id: introduction-to-linux}
 
+## About us
+{id: about-us}
+
+* Yonit Gruber-Hazani
+* Gabor Szabo
+
 ## Installations
 {id: installation}
 
