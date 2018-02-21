@@ -7,6 +7,14 @@
 * Yonit Gruber-Hazani
 * Gabor Szabo
 
+## About you
+{id: about-you}
+
+* Name
+* Company
+* What do you do
+* Something interesting about you
+
 ## Installations
 {id: installation}
 
