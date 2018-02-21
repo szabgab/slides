@@ -16,6 +16,8 @@
 * The Operating System
 * The Distribution
 
+![Tux](Tux.png)
+
 ## What are Linux distributions?
 {id: what-are-linux-distributions}
 
