@@ -2,10 +2,12 @@
 {id: introduction-to-perl}
 
 ## First script
+{id: first-perl-script}
 
 ![](examples/hello_world.pl)
 
 ## Scalar values
+{id: scalar-values}
 
 "A string"
 
@@ -16,11 +18,13 @@
 23.45
 
 
-## Lists 
+## Lists
+{id: perl-lists}
 
 ('string', 42, 2.3)
 
 ## Hash
+{id: perl-hash}
 
 (
     'name'  => 'Foo Bar',
@@ -28,4 +32,9 @@
 ) 
 
 
+## Functions
+{id: perl-functions}
 
+sub greeting {
+    say 'Hello World';
+}
