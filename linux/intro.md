@@ -61,6 +61,7 @@
 * Set it to "Host only" and selectec the vboxnet0
 
 ## Configure host-only network on Ubuntu
+{id: configure-host-only-network-for-ubuntu}
 
 ```
 $ ifconfig -a
