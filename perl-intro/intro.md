@@ -17,7 +17,6 @@
 
 23.45
 
-
 ## Lists
 {id: perl-lists}
 
@@ -38,3 +37,11 @@
 sub greeting {
     say 'Hello World';
 }
+
+## Sigils
+{id: sigils}
+
+* $ - scalars
+* @ - arrays
+* % - hashes
+* & - functions
