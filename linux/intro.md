@@ -4,7 +4,7 @@
 ## About us
 {id: about-us}
 
-* Yonit Gruber-Hazani
+* [Yonit Gruber-Hazani](https://www.linkedin.com/in/yonitgruber/)
 * Gabor Szabo
 
 ## About you
