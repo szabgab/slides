@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport"
+     content="width=device-width, initial-scale=1, user-scalable=yes">
+  <title>{{ title }}</title>
+</head>
+<body>
+
+<h1>{{ title }}</h1>
+
+<ol>
+    {% for p in pages %}
+       <li><a href="{{ p.id }}.html">{{ p.title }}</a></li>
+    {% endfor %}
+</ol>
+
+</body>
+</html>

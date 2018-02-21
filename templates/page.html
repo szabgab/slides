@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport"
+     content="width=device-width, initial-scale=1, user-scalable=yes">
+  <title>{{ page.title }}</title>
+</head>
+<body>
+
+<h1>{{ page.title }}</h1>
+
+{% if 'prev' in page %}
+   <a id='prev' href="{{ page.prev.id }}.html">Prev: {{ page.prev.title }}</a>
+{% endif %}
+{% if 'next' in page %}
+   <a id='next' href="{{ page.next.id }}.html">Next: {{ page.next.title }}</a>
+{% endif %}
+
+{% for c in page.content %}
+  {% if c.name == 'ol' %}
+      <ol>
+          {% for li in c.content %}
+          <li>{{ li }}</li>
+          {% endfor %}
+      </ol>
+  {% endif %}
+  {% if c.name == 'ul' %}
+      <ul>
+          {% for li in c.content %}
+          <li>{{ li }}</li>
+          {% endfor %}
+      </ul>
+  {% endif %}
+  {% if c.name == 'verbatim' %}
+      <pre>
+          {{ c.content[0] }}
+      </pre>
+  {% endif %}
+  {% if c.name == 'p' %}
+      <p>
+          {{ c.content[0] }}
+      </p>
+  {% endif %}
+  {% if c.name == 'include' %}
+      <b>{{ c.title }}</b><br>
+      <b>{{ c.filename }}</b><br>
+      <pre>
+          {{ c.content[0] }}
+      </pre>
+  {% endif %}
+  {% if c.name == 'image' %}
+     <img src="{{ c.filename }}" title="{{ c.title }}" />
+  {% endif %}
+{% endfor %}
+
+</body>
+</html>
