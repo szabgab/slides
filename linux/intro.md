@@ -72,8 +72,16 @@
 * sudo
 * apt-get install ssh
 
+Try it:
+
+```
+$ ssh localhost
+$ ifconfig | grep inet
+```
+
 ## Use Putty to connect to the machine
 {id: use-putty-to-connect-to-the-machine}
+
 
 ## Turn off the Linux box
 {id: turn-off-the-linux-box}
