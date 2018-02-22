@@ -123,9 +123,60 @@ Possible, but not recommended in Perl.
 * [Meta::CPAN](https://metacpan.org/) new, maintaned, open source
 * mcpan - search.mcpan.org
 
+## Install CPAN Modules
+{id: install-cpan-modules}
+
+* Use the packaging system of your OS
+* `cpan`
+* `cpanm` from [cpanmin.us](https://cpanmin.us/)
+* Ask your sysadmin
+
+## Selected Standard Perl Modules
+{id: selected-stadard-perl-modules}
+
+* File::Basename
+* Cwd 
+
+## Selected Perl modules
+{id: selected-perl-modules}
+
+* DBI for database access
+* DBD:: database drivers
+* XML
+* Config file (INI)
+* CSV
+* YAML
+* JSON
+
 ## Database access
 {id: database-access}
 
 * [DBI](https://metacpan.org/pod/DBI)
-* [DBD::SQLite]
+* [DBD::SQLite](https://metacpan.org/pod/DBD::SQLite)
+* [DBD::mysql](https://metacpan.org/pod/DBD::mysql)
+* [DBD::Oracle](https://metacpan.org/pod/DBD::Oracle)
+* [DBD::Pg](https://metacpan.org/pod/DBD::Pg)
+
+## YAML
+{id: yaml}
+
+* [YAML on Perl Maven](https://perlmaven.com/yaml)
+
+## JSON
+{id: json}
+
+* [JSON on Perl Maven](https://perlmaven.com/json)
+
+## Config INI files
+{id: config-ini-files}
+
+* [Config::Tiny on Perl Maven](https://perlmaven.com/pro/reading-configuration-files-in-perl)
+
+## CSV
+{id: csv}
+
+* [CSV on Perl Mave](https://perlmaven.com/csv)
+* [Text::CSV](https://metacpan.org/pod/Text::CSV)
+* [Text::CSV_XS](https://metacpan.org/pod/Text::CSV)
+
 
