@@ -98,16 +98,32 @@ for (my $name keys %phone) {
 }
 
 
-## IO
+## IO (screen, keyboard)
 {id: io}
+
+## IO (files)
+{id: io-files}
+
+```
+open my $fh, '<', $filename or die "Could not open '$filename' for reading";
+
+open my $fh, '>', $filename or die "Could not open '$filename' for writing";
+
+open my $fh, '>>', $filename or die "Could not open '$filename' to append";
+```
 
 ## Control structures (if, else, elsif)
 {id: control-structures}
 
-
 ## Loops (for, foreach, while)
 {id: loops}
 
+## Loop controls (next, last, redo)
+{id: loop-controls}
+
+* next - evaluate the loop condition and if it is true go to the next iteration
+* last - exit the loop
+* redo - start the iteration again without evaluating the loop condition
 
 ## C-style for loop
 {id: c-style-for-loop}
