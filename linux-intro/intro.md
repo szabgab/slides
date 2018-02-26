@@ -4,8 +4,9 @@
 ## About us
 {id: about-us}
 
-* [Yonit Gruber-Hazani](https://www.linkedin.com/in/yonitgruber/)
+* Yonit Gruber-Hazani
 * Gabor Szabo
+* DevOps Workshops http://devops-workshops.code-maven.com/
 
 ## About you
 {id: about-you}
@@ -15,22 +16,39 @@
 * What do you do
 * Something interesting about you
 
-## Installations
+## Prerequisites for the installations
 {id: installation}
 
-* Download [VirtualBox](https://www.virtualbox.org/)
-* Install VirtualBox
-* Download and ISO image of a Linux distributions 
+* Download [VirtualBox](https://www.virtualbox.org/).
+* Install VirtualBox.
+* Download an ISO image of a Linux distribution.
 * Latest [Ubuntu Server](https://www.ubuntu.com/download/server) - 17.10.1
 
 ## What is Linux?
 {id: what-is-linux} 
 
 * The kernel
-* The Operating System
-* The Distribution
+* The Operating System - thousands of programs
+* The Distribution - a group effort
 
 ![Tux](Tux.png)
+
+## Linux Distributions
+{id: linux-distributions}
+
+* Debian
+* Ubuntu
+* Fedora
+* RedHat
+* CentOS
+* ... [DistroWatch](https://distrowatch.com/)
+
+## What is BSD?
+{id: bsd}
+
+* FreeBSD
+* NetBSD
+* OpenBSD
 
 ## What are Linux distributions?
 {id: what-are-linux-distributions}
