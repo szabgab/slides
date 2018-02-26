@@ -104,6 +104,7 @@ after saving this setup you can start the new host:
 
 * Virtual Box / Preferences / Network / Host only network
 * + to add one (vboxnet0)
+![viboxnet](vboxnet0.png)
 * Select your VirtualBox / Setup / Network
 * Adapter 1 is set to NAT.
 * Click to Adapter 2
