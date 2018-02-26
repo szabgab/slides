@@ -66,8 +66,8 @@ https://code-maven.com/ws1
 * Database server
 * etc.
 
-## Set up Linux
-{id: setup-linux}
+## Configure Virtualbox
+{id: configure-virtualbox}
 
 * Open VirtualBox - Press the "new" button on the left
 ![step_1](virtualbox_1.png)
@@ -84,6 +84,17 @@ you can change the cd to load from the ubuntu iso file you have downloaded befor
 after saving this setup you can start the new host:
 ![step_4](virtualbox_4.png)
 
+## Set up Linux
+{id: setup-linux}
+
+* start the install in your preffered language, when you get to the hostname section choose whatever you want
+![linux_1](linux_install_1.png)
+
+* when the install is complete , it will umount the ubuntu image we setup in the beginning, you just continue to reboot:
+![linux_2](linux_install_2.png)
+
+* When you are done installing after the reboot the host screen should look like this:
+![linux_3](linux_install_3.png)
 
 ## Log in to the computer on the VirtualBox console
 {id: log-in-to-computer-on-the-virtualbox-console}
