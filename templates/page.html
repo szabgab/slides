@@ -12,10 +12,10 @@
 <h1>{{ page.title }}</h1>
 
 {% if 'prev' in page %}
-   <a id='prev' href="{{ page.prev.id }}.html">Prev: {{ page.prev.title }}</a>
+   <a id='prev' href="{{ page.prev.id }}.html">{{ page.prev.title }}</a>
 {% endif %}
 {% if 'next' in page %}
-   <a id='next' href="{{ page.next.id }}.html">Next: {{ page.next.title }}</a>
+   <a id='next' href="{{ page.next.id }}.html">{{ page.next.title }}</a>
 {% endif %}
 
 {% for c in page.content %}
