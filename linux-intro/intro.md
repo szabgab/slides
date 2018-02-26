@@ -69,8 +69,12 @@ https://code-maven.com/ws1
 ## Set up Linux
 {id: setup-linux}
 
-* Open VirtualBox
+* Open VirtualBox - Press the "new" button on the left
 ![step_1](virtualbox_1.png)
+
+* If you type in the name "ubuntu_17.10.1" it will seyup the type to linux and the version to ubuntu 64-bit for you
+if not, you can do that your selfs. 
+![step_2](virtualbox_2.png)
 
 ## Log in to the computer on the VirtualBox console
 {id: log-in-to-computer-on-the-virtualbox-console}
