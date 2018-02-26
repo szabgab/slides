@@ -76,6 +76,15 @@ https://code-maven.com/ws1
 if not, you can do that your selfs. 
 ![step_2](virtualbox_2.png)
 
+* just continue with the suggested setup the virtualbox is suggesting for you
+![step_3](virtualbox_3.png)
+
+* open the config section of your new server, and in the storage section, 
+you can change the cd to load from the ubuntu iso file you have downloaded before, 
+after saving this setup you can start the new host:
+![step_4](virtualbox_4.png)
+
+
 ## Log in to the computer on the VirtualBox console
 {id: log-in-to-computer-on-the-virtualbox-console}
 
