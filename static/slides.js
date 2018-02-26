@@ -111,7 +111,7 @@ function KeyCheck(e) {
 
 function go_next() {
 	if (next_page) {
-		document.location.href = next_page + extension;
+		document.location.href = next_page;
 	} else {
 		alert('Sorry, there are no further pages');
 	}
@@ -119,7 +119,7 @@ function go_next() {
 
 function go_prev() {
 	if (previous_page) {
-		document.location.href = previous_page + extension;
+		document.location.href = previous_page;
 	} else {
 		alert('Sorry, there is no previous page.');
 	}
