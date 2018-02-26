@@ -70,7 +70,7 @@ https://code-maven.com/ws1
 {id: setup-linux}
 
 * Open VirtualBox
-![step_1](Tux.png)
+![step_1](virtualbox_1.png)
 
 ## Log in to the computer on the VirtualBox console
 {id: log-in-to-computer-on-the-virtualbox-console}
