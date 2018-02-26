@@ -1,6 +1,11 @@
 # Introduction to Linux
 {id: introduction-to-linux}
 
+## Slides
+{id: slides}
+
+https://code-maven.com/ws1
+
 ## About us
 {id: about-us}
 
