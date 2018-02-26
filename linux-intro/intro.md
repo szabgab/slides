@@ -38,6 +38,7 @@
 
 * Debian
 * Ubuntu
+* Mint
 * Fedora
 * RedHat
 * CentOS
@@ -65,7 +66,7 @@
 
 * Open VirtualBox
 
-## Log in to the computer on the VirtualBox console.
+## Log in to the computer on the VirtualBox console
 {id: log-in-to-computer-on-the-virtualbox-console}
 
 ## Configure Host-only network
@@ -76,7 +77,34 @@
 * Select your VirtualBox / Setup / Network
 * Adapter 1 is set to NAT.
 * Click to Adapter 2
-* Set it to "Host only" and selectec the vboxnet0
+* Set it to "Host only" and select the vboxnet0
+
+## Linux users: you, root, and sudo
+{id: linux-users-sudo}
+
+* sudo
+
+## Package repositories
+{id: package-repositories}
+
+* Like an Appstore or Google play just free and Open Source
+* yum (.rpm) (Fedora, RedHat, CentOS, ...)
+* apt (.deb) (Debian, Ubuntu, Mint, ...)
+
+## Update Deb-based packages
+{id: update-deb-based-packages}
+
+```
+$ sudo apt-get update
+$ sudo apt-get upgrade
+```
+
+## Update rpm-based packages
+{id: update-rpm-based-packages}
+
+```
+$ sudo yum update
+```
 
 ## Configure host-only network on Ubuntu
 {id: configure-host-only-network-for-ubuntu}
@@ -84,30 +112,25 @@
 ```
 $ ifconfig -a
 $ sudo apt-get install ifupdown
-$ sudo apt-get install ssh
 ```
 
 edit `/etc/network/interfaces` and add
 
 ```
-       auto enp0s8
-       iface enp0s8 inet static
-       address 192.168.56.10
-       netmask 255.255.255.0
+auto enp0s8
+iface enp0s8 inet static
+address 192.168.56.10
+netmask 255.255.255.0
 ```
 
 Run `sudo ifup enp0s8`
 
-## Package repositories
-{id: package-repositories}
-
-* Like an Appstore or Google play
-
 ## Install ssh server
 {id: install-ssh-server}
 
-* sudo
-* apt-get install ssh
+```
+$ sudo apt-get install ssh
+```
 
 Try it:
 
