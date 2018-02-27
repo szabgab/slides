@@ -70,30 +70,34 @@ https://code-maven.com/ws1
 {id: configure-virtualbox}
 
 * Open VirtualBox - Press the "new" button on the left
+
 ![step_1](virtualbox_1.png)
 
-* If you type in the name "ubuntu_17.10.1" it will seyup the type to linux and the version to ubuntu 64-bit for you
-if not, you can do that your selfs. 
+* If you type in the name "ubuntu_17.10.1" it will seyup the type to linux and the version to ubuntu 64-bit for you if not, you can do that your selfs. 
+
 ![step_2](virtualbox_2.png)
 
 * just continue with the suggested setup the virtualbox is suggesting for you
+
 ![step_3](virtualbox_3.png)
 
-* open the config section of your new server, and in the storage section, 
-you can change the cd to load from the ubuntu iso file you have downloaded before, 
-after saving this setup you can start the new host:
+* open the config section of your new server, and in the storage section, you can change the cd to load from the ubuntu iso file you have downloaded before, after saving this setup you can start the new host:
+
 ![step_4](virtualbox_4.png)
 
 ## Set up Linux
 {id: setup-linux}
 
 * start the install in your preffered language, when you get to the hostname section choose whatever you want
+
 ![linux_1](linux_install_1.png)
 
 * when the install is complete , it will umount the ubuntu image we setup in the beginning, you just continue to reboot:
+
 ![linux_2](linux_install_2.png)
 
 * When you are done installing after the reboot the host screen should look like this:
+
 ![linux_3](linux_install_3.png)
 
 ## Log in to the computer on the VirtualBox console
@@ -104,12 +108,17 @@ after saving this setup you can start the new host:
 
 * Virtual Box / Preferences / Network / Host only network
 * + to add one (vboxnet0)
+
 ![vboxnet](vboxnet0.png)
+
 * Select your VirtualBox / Setup / Network (guest needs to be shutdown)
 * Adapter 1 is set to NAT.
+
 ![adapter1](adapter1.png)
+
 * Click to Adapter 2
 * Set it to "Host only" and select the vboxnet0
+
 ![adapter2](adapter2.png)
 
 ## Linux users: you, root, and sudo
