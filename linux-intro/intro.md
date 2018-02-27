@@ -88,7 +88,7 @@ https://code-maven.com/ws1
 * Hard disk: Create a virtual hard disk now (Recommended size is 10 Gb).
 * Hard disk file type: VDI (VirtualBox Disk Image).
 * Storage pn physical hard disk: Dynamically allocated.
-* Fle location and size: `ubuntu` is fine. 10 Gb.
+* File location and size: `ubuntu` is fine. 10 Gb.
 
 ![step_3](virtualbox_3.png)
 
@@ -96,27 +96,65 @@ https://code-maven.com/ws1
 ## Configure Virtualbox - 4
 {id: configure-virtualbox-4}
 
-* Open the config section of your new server, and in the storage section, you can change the cd to load from the ubuntu iso file you have downloaded before, after saving this setup you can start the new host:
+* Right-click on the icon of your new server and select "Settings".
+* Select the "Storage" section.
+* Click on the "empty" CD icon and select the Ubuntu .iso file you have downloaded before.
+* After saving this setup you can click on "Start" to launch the new Linux machine.
 
 ![step_4](virtualbox_4.png)
 
 ## Set up Linux
 {id: setup-linux}
 
-* start the install in your preffered language, when you get to the hostname section choose whatever you want
+* Start the installation of Ubuntu - Select the defaults
+* Your preffered language: English.
+* "Insall Ubuntu Server"
+* Select a language - English
+* Your location: "Unitied States"
+* Detect keyboard?  No
+* Configure the keyboards: English (US)
+* Keyboard layout: Eglish (US)
+
+## Set up Linux - hostname
+{id: setup-linux-hostname}
+
+* When you get to the hostname section choose whatever you like.
+* "ubuntu" is fine for this installation.
 
 ![linux_1](linux_install_1.png)
 
-* when the install is complete , it will umount the ubuntu image we setup in the beginning, you just continue to reboot:
+## Set up Linux - user
+{id: setup-linux-user}
+
+* Type in your full name.
+* Select a username for yourself.
+* Type in a good password. (twice)
+* Home directory encryption: No
+* Timezone (it decided Asia/Jerusalem for me): Yes
+* Partition disks: select "Guided - use entire disk"  (no LVM)
+* SCSI3 ...
+* Write the changes to disks?  YES!!!!
+* ...
+* Configure the package manager proxy (leave it empty)
+* ...
+* Upgrades of the system: "No automatic udates"
+* Software selection: don't select anything now.
+* ...
+
+## Set up Linux - complete
+{id: setup-linux-complete}
+
+* When the installation is complete, it will umount the Ubuntu image we setup at the beginning.
+* Continue to reboot:
 
 ![linux_2](linux_install_2.png)
 
 * When you are done installing after the reboot the host screen should look like this:
 
-![linux_3](linux_install_3.png)
-
 ## Log in to the computer on the VirtualBox console
 {id: log-in-to-computer-on-the-virtualbox-console}
+
+![linux_3](linux_install_3.png)
 
 ## Configure Host-only network
 {id: configure-host-only-network}
