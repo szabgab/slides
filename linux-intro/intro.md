@@ -30,7 +30,7 @@ https://code-maven.com/ws1
 * Latest [Ubuntu Server](https://www.ubuntu.com/download/server) - 17.10.1
 
 ## What is Linux?
-{id: what-is-linux} 
+{id: what-is-linux}
 
 * The kernel
 * The Operating System - thousands of programs
@@ -73,15 +73,30 @@ https://code-maven.com/ws1
 
 ![step_1](virtualbox_1.png)
 
-* If you type in the name "ubuntu_17.10.1" it will seyup the type to linux and the version to ubuntu 64-bit for you if not, you can do that your selfs. 
+## Configure Virtualbox - 2
+{id: configure-virtualbox-2}
+
+* If you type in the name "ubuntu_17.10.1" it will setup the type to linux and the version to ubuntu 64-bit for you if not, you can do that yourself.
 
 ![step_2](virtualbox_2.png)
 
-* just continue with the suggested setup the virtualbox is suggesting for you
+## Configure Virtualbox - 3
+{id: configure-virtualbox-3}
+
+* Continue with the suggested setup VirtualBox is suggesting for you.
+* Memory size: 1024 Mb.
+* Hard disk: Create a virtual hard disk now (Recommended size is 10 Gb).
+* Hard disk file type: VDI (VirtualBox Disk Image).
+* Storage pn physical hard disk: Dynamically allocated.
+* Fle location and size: `ubuntu` is fine. 10 Gb.
 
 ![step_3](virtualbox_3.png)
 
-* open the config section of your new server, and in the storage section, you can change the cd to load from the ubuntu iso file you have downloaded before, after saving this setup you can start the new host:
+
+## Configure Virtualbox - 4
+{id: configure-virtualbox-4}
+
+* Open the config section of your new server, and in the storage section, you can change the cd to load from the ubuntu iso file you have downloaded before, after saving this setup you can start the new host:
 
 ![step_4](virtualbox_4.png)
 
