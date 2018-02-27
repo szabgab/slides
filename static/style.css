@@ -6,3 +6,22 @@
     background-color: #e0e0e0;
 }
 
+nav {
+    margin: 0 auto 20px;
+    padding: 0;
+    border-bottom: solid;
+    height: 40px;
+    padding-bottom: 10px;
+}
+
+nav ul {
+	height: 40px;
+}
+
+nav li { 
+    margin-right: 20px;
+    display: inline;
+    list-style-type: none; 
+}
+
+
