@@ -96,7 +96,7 @@ https://code-maven.com/ws1
 * Memory size: 1024 Mb.
 * Hard disk: Create a virtual hard disk now (Recommended size is 10 Gb).
 * Hard disk file type: VDI (VirtualBox Disk Image).
-* Storage pn physical hard disk: Dynamically allocated.
+* Storage on physical hard disk: Dynamically allocated.
 * File location and size: `ubuntu` is fine. 10 Gb.
 
 ![step_3](virtualbox_3.png)
@@ -116,13 +116,13 @@ https://code-maven.com/ws1
 {id: setup-linux}
 
 * Start the installation of Ubuntu - Select the defaults
-* Your preffered language: English.
-* "Insall Ubuntu Server"
+* Your preferred language: English.
+* "Install Ubuntu Server"
 * Select a language - English
-* Your location: "Unitied States"
+* Your location: "Untied States"
 * Detect keyboard?  No
 * Configure the keyboards: English (US)
-* Keyboard layout: Eglish (US)
+* Keyboard layout: English (US)
 
 ## Set up Linux - hostname
 {id: setup-linux-hostname}
@@ -146,7 +146,7 @@ https://code-maven.com/ws1
 * ...
 * Configure the package manager proxy (leave it empty)
 * ...
-* Upgrades of the system: "No automatic udates"
+* Upgrades of the system: "No automatic updates"
 * Software selection: don't select anything now.
 * ...
 * Install the GRUB boot loader on a hard disk - YES
@@ -155,7 +155,7 @@ https://code-maven.com/ws1
 ## Set up Linux - complete
 {id: setup-linux-complete}
 
-* When the installation is complete, it will umount the Ubuntu image we setup at the beginning.
+* When the installation is complete, it will unmount the Ubuntu image we setup at the beginning.
 * Continue to reboot:
 
 ![linux_2](linux_install_2.png)
