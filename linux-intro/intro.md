@@ -29,6 +29,15 @@ https://code-maven.com/ws1
 * Download an ISO image of a Linux distribution.
 * Latest [Ubuntu Server](https://www.ubuntu.com/download/server) - 17.10.1
 
+
+## Why Linux?
+{id: why-linux}
+
+* All the major players use it.
+* [Hosting provider server count](https://www.netcraft.com/internet-data-mining/hosting-provider-server-count/) 
+* [Netcraft web server survey](https://news.netcraft.com/archives/2018/01/19/january-2018-web-server-survey.html)
+
+
 ## What is Linux?
 {id: what-is-linux}
 
@@ -247,7 +256,13 @@ $ ifconfig -a
 $ sudo apt-get install ifupdown
 ```
 
-edit `/etc/network/interfaces` and add
+edit `/etc/network/interfaces`
+
+```
+sudo nano /etc/network/interfaces
+```
+
+and add
 
 ```
 auto enp0s8
@@ -256,8 +271,9 @@ address 192.168.56.10
 netmask 255.255.255.0
 ```
 
-Run `sudo ifup enp0s8`
+* Run `sudo ifup enp0s8`
 
+* From the Windows Cmd window `ping 192.168.56.10`
 
 ## Install ssh server
 {id: install-ssh-server}
@@ -270,7 +286,6 @@ Try it:
 
 ```
 $ ssh localhost
-$ ifconfig | grep inet
 ```
 
 ## Use Putty to connect to the machine
@@ -288,7 +303,10 @@ The filesystem starting at /
 ## Navigate in the filesystem
 {id: navigate-in-the-filesystem}
 
-* ls
+* ls /
+* ls -l /
+* ll
+* pwd
 * cd some/dir
 * cd ..
 * cd
@@ -304,6 +322,13 @@ The filesystem starting at /
 
 * rm
 
+## Configuring the shell
+{id: configuring-the-shell}
+
+```
+nano .bashrc
+```
+
 ## Install Nginx
 {id: install-nginx}
 
@@ -317,8 +342,16 @@ curl http://localhost:80
 
 The default configuration file of Nginx: is /etc/nginx/sites-enabled/default
 
-Edit /var/www/html/index.nginx-debian.html
-Then reload the page using `curl` and your browser and observe the change.
+```
+cat /etc/nginx/sites-enabled/default
+less /etc/nginx/sites-enabled/default
+(q to quit)
+```
+
+* Edit /var/www/html/index.nginx-debian.html
+* Then reload the page using `curl` and your browser and observe the change.
+
+* Create more pages. etc.
 
 ## Resources
 {id: resources}
