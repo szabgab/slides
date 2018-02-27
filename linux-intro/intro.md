@@ -353,6 +353,11 @@ less /etc/nginx/sites-enabled/default
 
 * Create more pages. etc.
 
+## Linux Resources
+{id: linux-resources}
+
+* [Linux for Power users](https://code-maven.com/slides/linux/) Slides of Gabor
+
 ## Resources
 {id: resources}
 
@@ -360,8 +365,4 @@ less /etc/nginx/sites-enabled/default
 * [Our Facebook page](https://www.facebook.com/Devops.Workshops)
 * [Facebook group](https://www.facebook.com/groups/188753948553382/)
 
-## Linux Resources
-{id: linux-resources}
-
-* [Linux for Power users](https://code-maven.com/slides/linux/) Slides of Gabor
 
