@@ -140,6 +140,8 @@ https://code-maven.com/ws1
 * Upgrades of the system: "No automatic udates"
 * Software selection: don't select anything now.
 * ...
+* Install the GRUB boot loader on a hard disk - YES
+* ...
 
 ## Set up Linux - complete
 {id: setup-linux-complete}
@@ -149,44 +151,31 @@ https://code-maven.com/ws1
 
 ![linux_2](linux_install_2.png)
 
+## Linux login screen
+{id: linux-login-screen}
+
 * When you are done installing after the reboot the host screen should look like this:
+
+![linux_3](linux_install_3.png)
 
 ## Log in to the computer on the VirtualBox console
 {id: log-in-to-computer-on-the-virtualbox-console}
 
-![linux_3](linux_install_3.png)
-
-## Configure Host-only network
-{id: configure-host-only-network}
-
-* Virtual Box / Preferences / Network / Host only network
-* + to add one (vboxnet0)
-
-![vboxnet](vboxnet0.png)
-
-* Select your VirtualBox / Setup / Network (guest needs to be shutdown)
-* Adapter 1 is set to NAT.
-
-![adapter1](adapter1.png)
-
-* Click to Adapter 2
-* Set it to "Host only" and select the vboxnet0
-
-![adapter2](adapter2.png)
-
-## Linux users: you, root, and sudo
-{id: linux-users-sudo}
-
-* sudo
+* Type in your username and password
 
 ## Package repositories
 {id: package-repositories}
 
 * Like an Appstore or Google play just free and Open Source
 * yum (.rpm) (Fedora, RedHat, CentOS, ...)
-* apt (.deb) (Debian, Ubuntu, Mint, ...)
+* apt, apt-get, apt-cache (.deb) (Debian, Ubuntu, Mint, ...)
 
-## Update Deb-based packages
+## Linux users: you, root, and the sudo command
+{id: linux-users-sudo}
+
+* sudo
+
+## Update deb-based packages
 {id: update-deb-based-packages}
 
 ```
@@ -194,12 +183,61 @@ $ sudo apt-get update
 $ sudo apt-get upgrade
 ```
 
-## Update rpm-based packages
-{id: update-rpm-based-packages}
+## Nano file editor
+{id: nano-file-editor}
+
+* `nano hello.txt`
+* Write something in the file, save it and exit nano
+* `cat hello.txt` will show the content
+* edit the file again and save an updated version.
+* Check it with `cat` again.
+
+## Turn off the Linux box
+{id: turn-off-the-linux-box}
 
 ```
-$ sudo yum update
+sudo halt
 ```
+
+* Power off VirtualBox
+
+## Log in as a remote machine
+{id: log-in-as-a-remote-machine}
+
+What we need usually:
+
+* ssh server
+* ssh client (Putty on Windows)
+
+Extra we need for VirtualBox:
+
+* Configure host-only network
+
+## Create Host-only network
+{id: create-host-only-network}
+
+* Global Tools - Host Network Manager - Create+ to add one (vboxnet0)
+* Might need Windows Admin rights (popup in the background)
+* 192.168.56.1/24
+
+![vboxnet](vboxnet0.png)
+
+## Configure Host-only network - adapter 1
+{id: configure-host-only-network-1}
+
+* Machine Tools
+* Select your machine: Settings - Network (guest needs to be shutdown)
+* Adapter 1 is set to NAT.
+
+![adapter1](adapter1.png)
+
+## Configure Host-only network - adapter 2
+{id: configure-host-only-network-2}
+
+* Click to Adapter 2
+* Set it to "Host only" and select the vboxnet0
+
+![adapter2](adapter2.png)
 
 ## Configure host-only network on Ubuntu
 {id: configure-host-only-network-for-ubuntu}
@@ -219,6 +257,7 @@ netmask 255.255.255.0
 ```
 
 Run `sudo ifup enp0s8`
+
 
 ## Install ssh server
 {id: install-ssh-server}
@@ -240,12 +279,6 @@ $ ifconfig | grep inet
 * [Download putty.exe](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) (No need for the .msi file)
 * Run it from the download directory or from the desktop
 
-## Turn off the Linux box
-{id: turn-off-the-linux-box}
-
-* halt command
-* Power off VirtualBox
-* Start it again
 
 ## The Linux Filesystem
 {id: the-linux-filesystem}
@@ -265,13 +298,6 @@ The filesystem starting at /
 
 * mkdir
 * rmdir
-
-## Nano file editor
-{id: nano-file-editor}
-
-* nano
-* create a new file
-* edit the file again
 
 ## Remove files
 {id: remove-files}
