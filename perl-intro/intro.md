@@ -56,12 +56,22 @@ Basics of the language:
 
 * Putting all your code in small(!) functions will make your code better.
 
+## Comments
+{id: comments-in-perl}
+
+Anywhere (except th first row) a `#` starts a comment till the end of the row.
+
+```
+# Comment
+say "somthing"; # comment
+```
+
 ## print vs. say
 {id: print-vs-say}
 
-* say   - (since perl 5.10) newline at the end
-* print - print as it is
-* print "...\n";    - add the newline
+* say  "hello";    # print a newline at the end. (available since perl 5.10)
+* print "hello";   # print as it is
+* print "hello\n"; # print a newline at the end.
 
 ## Scalar values - strings
 {id: scalar-values-strings}
@@ -73,9 +83,9 @@ Basics of the language:
 ## Scalar values - numbers
 {id: scalar-values-numbers}
 
-for numbers there is no need for quotes
+For numbers there is no need for quotes.
 
-integer
+*integer*
 
 ```
 26
