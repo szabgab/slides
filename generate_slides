@@ -1,5 +1,5 @@
 rm -rf html
-for name in linux-intro perl-intro;
+for name in linux-intro perl-intro ansible;
 do
     python ../slider-py/slider/__init__.py --md $name/intro.md --html --dir html/$name/ --templates templates/ --static static/
 done
