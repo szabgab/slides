@@ -1,6 +1,24 @@
 # Introduction to Perl
 {id: introduction-to-perl}
 
+## Overview
+{id: overview}
+
+Basics of the language:
+
+* Scalars, arrays, hashes
+* Function definition
+* Regexes
+* Control structures (if, else, for, while)
+* IO (screen, keyboard, files)
+* References
+* Introduce multi dimensional data structures
+* Packages
+* OOP
+* Anonymous functions, dispatch tables
+* Introduce CPAN (MetaCPAN)
+* Go over a number of modules for text processing
+
 ## First script
 {id: first-perl-script}
 
@@ -24,6 +42,12 @@
 
 * Not really Perl specific, but make variables as tight as possible!
 * You will thank yourself a year later.
+
+## Keep it simple
+{id: keep-it-simple}
+
+* A script has to be simple, readable and reusable.
+* Sophisticated optimization and algorithms are less interesting.
 
 ## First script with main function
 {id: first-perl-scirpt-with-main}
