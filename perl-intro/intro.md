@@ -19,35 +19,59 @@
 * [Always use strict and use warnings in your perl code!](https://perlmaven.com/always-use-strict-and-use-warnings)
 * [Always use warnings in your Perl code!](https://perlmaven.com/always-use-warnings)
 
-## First script with main function
-{id: first-perl-scirpt-with-main}
-
-![](examples/hello_world_main.pl)
-
 ## Avoid global variables
 {id: avoid-global-variables}
 
 * Not really Perl specific, but make variables as tight as possible!
 * You will thank yourself a year later.
 
+## First script with main function
+{id: first-perl-scirpt-with-main}
+
+![](examples/hello_world_main.pl)
+
+* Putting all your code in small(!) functions will make your code better.
 
 ## print vs. say
 {id: print-vs-say}
 
 * say   - (since perl 5.10) newline at the end
-* print - (always)
+* print - print as it is
 * print "...\n";    - add the newline
 
-## Scalar values
-{id: scalar-values}
+## Scalar values - strings
+{id: scalar-values-strings}
 
 "A string"
 
 'Another string'
 
-23
+## Scalar values - numbers
+{id: scalar-values-numbers}
 
-23.45
+for numbers there is no need for quotes
+
+integer
+
+```
+26
+1_234_567                # like 1,234,567 in human writing
+```
+
+integer (hex/oct/binary)
+
+```
+0x1a            # hex     also written as    hex("1a");
+032             # oct     also written as    oct("32");
+0b11010         # binary  also written as    oct("0b11010");
+                # all 3 equal to 26 decimal
+```
+
+real or floating-point
+
+```
+3.5e+3          # 3500
+```
 
 ## Lists
 {id: perl-lists}
@@ -57,33 +81,38 @@
 ## Hash
 {id: perl-hash}
 
+```
 (
     'name'  => 'Foo Bar',
     'email' => 'foo@bar.com',
 )
+```
 
+```
+(
+    'banane' => 7,
+    'apple' => 3,
+    'lemon' => 1,
+)
+```
 
-## Functions
-{id: perl-functions}
+## Variables
+{id: variables}
 
-sub greeting {
-    say 'Hello World';
-}
+Sigil + variable name:
 
-## Anonymous functions (state machine as an example), dispatch tables
-{id: anonymous-functions}
+```
+$name_of_a_scalar
+@name_of_an_array
+%name_of_a_hash
+```
 
-## Dispatch table
-{id: dispatch-table}
+Variables (and other names) are case sensitive
 
-
-## Variable declaration
-{id: variable-declaration}
-
-my $name;
-$name = 'Foo Bar';
-
-my $email = 'foo@bar.com';
+```
+$h
+$H
+```
 
 ## Sigils
 {id: sigils}
@@ -92,6 +121,14 @@ my $email = 'foo@bar.com';
 * @ - arrays
 * % - hashes
 * & - functions
+
+## Variable declaration
+{id: variable-declaration}
+
+my $name;
+$name = 'Foo Bar';
+
+my $email = 'foo@bar.com';
 
 ## Arrays
 {id: arrays}
@@ -167,6 +204,21 @@ $name[0]        $$ref_to_names[0]  better yet write   $ref_to_names->[0]
 sacalar @names      scalar @$ref_to_names
 
 ```
+
+## Functions
+{id: perl-functions}
+
+sub greeting {
+    say 'Hello World';
+}
+
+## Anonymous functions (state machine as an example), dispatch tables
+{id: anonymous-functions}
+
+## Dispatch table
+{id: dispatch-table}
+
+
 
 ## Linux environment variables (%ENV)
 {id: linux-environment-variables}
