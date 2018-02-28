@@ -167,16 +167,23 @@ my $email = 'foo@bar.com';
 ## Arrays
 {id: arrays}
 
-my @names = ('Foo', 'Bar', 'Moo');
-say $names[0];
+```
+my @names;                            # Declare empty array
+my @names = ('Foo', 'Bar', 'Moo');    # Declare array and assign 3 elements
+say $names[0];                        # Access the 0th element 'Foo'
+```
 
+```
 scalar @names;      # number of elements in the array
 $#names;            # the largest index (one less than number of elements)
+```
 
+```
 push @names, 'Minimacko';
 pop @names;
 shift @names;
 unshift @names, 'Malacka';
+```
 
 ## Hashes
 {id: hashes}
