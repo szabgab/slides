@@ -43,9 +43,9 @@
       </ul>
   {% endif %}
   {% if c.name == 'verbatim' %}
-      <pre class="code">
-          {{ c.content[0] }}
-      </pre>
+<pre class="code">
+{{ c.content[0] }}
+</pre>
   {% endif %}
   {% if c.name == 'p' %}
       <p>
@@ -55,9 +55,9 @@
   {% if c.name == 'include' %}
       <b>{{ c.title }}</b><br>
       <b>{{ c.filename }}</b><br>
-      <pre>
-          {{ c.content[0] }}
-      </pre>
+<pre class="code">
+{{ c.content[0] }}
+</pre>
   {% endif %}
   {% if c.name == 'image' %}
      <img src="{{ c.filename }}" title="{{ c.title }}" />
