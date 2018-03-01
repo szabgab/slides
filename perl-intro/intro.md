@@ -240,11 +240,14 @@ my $email = 'foo@bar.com';
 {id: arrays}
 
 ```
-my @names;                            # Declare empty array
-my @names = ('Foo', 'Bar', 'Moo');    # Declare array and assign 3 elements
+my @people;                           # Declare empty array.
+my @names = (                         # Declare array and assign 3 elements.
+    'Foo',
+    'Bar',
+    'Moo',                            # Trailing comma is ok.
+);
 say $names[0];                        # Access the 0th element 'Foo'
 ```
-
 ```
 scalar @names;      # number of elements in the array
 $#names;            # the largest index (one less than number of elements)
@@ -289,8 +292,12 @@ open my $fh, '>>', $filename or die "Could not open '$filename' to append $!";
 ## Control structures (if, else, elsif)
 {id: control-structures}
 
-## Loops (for, foreach, while)
-{id: loops}
+## For Loops (for, foreach)
+{id: for-loops}
+
+## While Loops
+{id: while-loops}
+
 
 ## Loop controls (next, last, redo)
 {id: loop-controls}
