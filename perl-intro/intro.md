@@ -73,12 +73,29 @@ say "somthing"; # comment
 * print "hello";   # print as it is
 * print "hello\n"; # print a newline at the end.
 
+## Scalar values
+{id: scalar-values}
+
+* `undef`
+* a number
+* a string
+* a reference to any other data structure or function
+
+## Scalar values - undef
+{id: scalar-values-undef}
+
+`undef` corresponds to `NULL` in SQL, `None` in Python, and `null` in PHP or JavaScript.
+
 ## Scalar values - strings
 {id: scalar-values-strings}
 
+A string can be either double quoted or single quoted. Differences explained later.
+
+```
 "A string"
 
 'Another string'
+```
 
 ## Scalar values - numbers
 {id: scalar-values-numbers}
@@ -92,7 +109,7 @@ For numbers there is no need for quotes.
 1_234_567                # like 1,234,567 in human writing
 ```
 
-integer (hex/oct/binary)
+*integer (hex/oct/binary)*
 
 ```
 0x1a            # hex     also written as    hex("1a");
@@ -101,7 +118,7 @@ integer (hex/oct/binary)
                 # all 3 equal to 26 decimal
 ```
 
-real or floating-point
+*real or floating-point*
 
 ```
 3.5e+3          # 3500
@@ -110,10 +127,20 @@ real or floating-point
 ## Lists
 {id: perl-lists}
 
+A list is a series of scalar values separated by comma and enclosed in parentheses.
+The scalar values themselves can be references to other data structures.
+(An array, explained later is a variable holding a list.)
+
+```
 ('string', 42, 2.3)
+```
 
 ## Hash
 {id: perl-hash}
+
+A hash is a set of key-value pairs. The keys are strings that are unique in the given hash.
+The values are scalars, including references to other data structures.
+In PHP they are calle "associative arrays". In Python "dictionaries".
 
 ```
 (
@@ -124,7 +151,7 @@ real or floating-point
 
 ```
 (
-    'banane' => 7,
+    'banana' => 7,
     'apple' => 3,
     'lemon' => 1,
 )
