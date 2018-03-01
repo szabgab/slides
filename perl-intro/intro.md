@@ -73,6 +73,17 @@ say "somthing"; # comment
 * print "hello";   # print as it is
 * print "hello\n"; # print a newline at the end.
 
+## IO (screen, keyboard)
+{id: io}
+
+```
+say
+print
+
+my $input = <STDIN>;
+chomp $input;
+```
+
 ## Scalar values
 {id: scalar-values}
 
@@ -102,14 +113,14 @@ A string can be either double quoted or single quoted. Differences explained lat
 
 For numbers there is no need for quotes.
 
-*integer*
+**integer**
 
 ```
 26
 1_234_567                # like 1,234,567 in human writing
 ```
 
-*integer (hex/oct/binary)*
+**integer (hex/oct/binary)**
 
 ```
 0x1a            # hex     also written as    hex("1a");
@@ -118,7 +129,7 @@ For numbers there is no need for quotes.
                 # all 3 equal to 26 decimal
 ```
 
-*real or floating-point*
+**real or floating-point**
 
 ```
 3.5e+3          # 3500
@@ -162,17 +173,19 @@ In PHP they are calle "associative arrays". In Python "dictionaries".
 
 In Perl there is no special True and False values. Any value can be checked for True-ness. The following values are considered to be false:
 
-* `undef`
-* 0        # the number 0.
-* ''       # empty string.
-* '0'      # a string with a single 0 in it.
+```
+undef
+0        # the number 0.
+''       # empty string.
+'0'      # a string with a single 0 in it.
+```
 
 ## String Operators
 {id: string-operators}
 
 ```
-"abc" . "def"     # concatenation
-"abc" x 3         # repetition operator
+"abc" . "def"     # concatenation  "abcdef"
+"abc" x 3         # repetition operator "abcabcabc"
 ```
 
 ## Numerical Opertors
@@ -182,7 +195,7 @@ In Perl there is no special True and False values. Any value can be checked for 
 2 + 3        # 5
 2 * 3        # 6
 2 ** 3       # 2*2*2 = 8
-....
+...
 ```
 
 ## Perl is an Operator driven language
@@ -231,10 +244,12 @@ $H
 ## Variable declaration
 {id: variable-declaration}
 
-my $name;
+```
+my $name;                 # Without assignment the value is undef
 $name = 'Foo Bar';
 
 my $email = 'foo@bar.com';
+```
 
 ## Arrays
 {id: arrays}
@@ -248,6 +263,7 @@ my @names = (                         # Declare array and assign 3 elements.
 );
 say $names[0];                        # Access the 0th element 'Foo'
 ```
+
 ```
 scalar @names;      # number of elements in the array
 $#names;            # the largest index (one less than number of elements)
@@ -263,6 +279,7 @@ unshift @names, 'Malacka';
 ## Hashes
 {id: hashes}
 
+```
 my %phone = (
     'Foo' => '01-23456',
     'Bar' => '98-76543',
@@ -270,13 +287,10 @@ my %phone = (
 say $phone{'Foo'};
 $phone{'Zorg'} = '999'
 
-for (my $name keys %phone) {
+for my $name (keys %phone) {
     say "$name $phone{$name}";
 }
-
-
-## IO (screen, keyboard)
-{id: io}
+```
 
 ## IO (files)
 {id: io-files}
@@ -287,6 +301,8 @@ open my $fh, '<', $filename or die "Could not open '$filename' for reading $!";
 open my $fh, '>', $filename or die "Could not open '$filename' for writing $!";
 
 open my $fh, '>>', $filename or die "Could not open '$filename' to append $!";
+
+my $line = <$fh>;   # Read a line from a text file
 ```
 
 ## Control structures (if, else, elsif)
@@ -295,9 +311,22 @@ open my $fh, '>>', $filename or die "Could not open '$filename' to append $!";
 ## For Loops (for, foreach)
 {id: for-loops}
 
+## C-style for loop
+{id: c-style-for-loop}
+
+Possible, but not recommended in Perl.
+
+
 ## While Loops
 {id: while-loops}
 
+```
+my $counter = 0;
+while ( $counter < 10 ) {
+    say $counter;
+    $counter++;
+}
+```
 
 ## Loop controls (next, last, redo)
 {id: loop-controls}
@@ -306,34 +335,84 @@ open my $fh, '>>', $filename or die "Could not open '$filename' to append $!";
 * last - exit the loop
 * redo - start the iteration again without evaluating the loop condition
 
-## C-style for loop
-{id: c-style-for-loop}
+## Infinite while loop
+{id: infinite-while-loop}
 
-Possible, but not recommended in Perl.
+```
+while (1) {
+    if (cond) {
+        last;
+    }
+}
+```
 
 ## References
 {id: references}
 
 ```
+\$x    # reference to scalar
+\@y    # reference to array
+\%z    # reference to hash
+\&f    # reference to function
+```
+
+## References to Array
+{id: references-to-array}
+
+```
 my @names = ('foo', 'bar', 'baz')
 my $ref_to_names = \@names;
 
-@names          @$ref_to_names
-$name[0]        $$ref_to_names[0]  better yet write   $ref_to_names->[0]
+@names             @$ref_to_names        # de-reference the array
 
-sacalar @names      scalar @$ref_to_names
+$name[0]           $$ref_to_names[0]
+                   $ref_to_names->[0]    # same but looks better
 
+sacalar @names     scalar @$ref_to_names
+$#names            $#$ref_to_name        # I never liked this
 ```
 
 ## Functions
 {id: perl-functions}
 
+```
 sub greeting {
     say 'Hello World';
 }
 
+greeting();
+```
+
+## Function parameters
+{id: function-parameters}
+
+```
+sub greeting {
+    my ($name) = @_;
+    say "Hello $name!";
+}
+
+greeting('Foo');
+```
+
+## References to functions
+{id: refernces-to-functions}
+
+```
+sub greeting {
+    my ($name) = @_;
+    say "Hello $name!";
+}
+```
+
 ## Anonymous functions (state machine as an example), dispatch tables
 {id: anonymous-functions}
+
+```
+sub {
+    # do something
+}
+```
 
 ## Dispatch table
 {id: dispatch-table}
@@ -370,7 +449,6 @@ sub greeting {
 {id: oop-perl-core}
 
 ![](examples/MyClass.pm)
-
 
 ## Perl internal variables
 {id: perl-internal-variables}
