@@ -157,6 +157,51 @@ In PHP they are calle "associative arrays". In Python "dictionaries".
 )
 ```
 
+## Boolean values
+{id: boolean-values}
+
+In Perl there is no special True and False values. Any value can be checked for True-ness. The following values are considered to be false:
+
+* `undef`
+* 0        # the number 0.
+* ''       # empty string.
+* '0'      # a string with a single 0 in it.
+
+## String Operators
+{id: string-operators}
+
+```
+"abc" . "def"     # concatenation
+"abc" x 3         # repetition operator
+```
+
+## Numerical Opertors
+{id: numerical-operators}
+
+```
+2 + 3        # 5
+2 * 3        # 6
+2 ** 3       # 2*2*2 = 8
+....
+```
+
+## Perl is an Operator driven language
+{id: operator-driven-language}
+
+```
+"2" . "3"     # "23"
+"2" . 3       # "23"
+2   . 3       # "23"
+
+"2" + "3"     # 5
+"2" + 3       # 5
+```
+
+```
+"abc" . "def"    # "abcdef"
+"abc" + "def"    # 0  + 2 warnings about Argument isn't numeric in addition (+)
+```
+
 ## Variables
 {id: variables}
 
