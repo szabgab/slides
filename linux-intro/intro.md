@@ -92,7 +92,7 @@ https://code-maven.com/ws1
 ## Configure Virtualbox - 3
 {id: configure-virtualbox-3}
 
-* Continue with the suggested setup VirtualBox is suggesting for you.
+* Continue the setup with the values VirtualBox is suggesting for you.
 * Memory size: 1024 Mb.
 * Hard disk: Create a virtual hard disk now (Recommended size is 10 Gb).
 * Hard disk file type: VDI (VirtualBox Disk Image).
@@ -205,7 +205,7 @@ $ sudo apt-get upgrade
 {id: turn-off-the-linux-box}
 
 ```
-sudo halt
+sudo shutdown now -P
 ```
 
 * Power off VirtualBox
