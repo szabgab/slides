@@ -25,7 +25,7 @@ https://code-maven.com/ws2
 ## Prerequisites for the installations
 {id: installation}
 
-* Go to https://code-maven.com/linux to get the step by step instructions on how to install Linux on your laptop 
+* Go to [https://code-maven.com/linux](https://code-maven.com/linux) to get the step by step instructions on how to install Linux on your laptop 
 
 ## Resources
 {id: resources}
