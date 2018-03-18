@@ -80,7 +80,6 @@ This file describes the list of server and groups ansible is going to work on,
 our sample structure is going to be: 
 
 ```
----
 [virtualhosts]
 ubuntu-1
 ubuntu-2
@@ -88,11 +87,11 @@ ubuntu-2
 ```
 
 Ansible has some default location to add its config files, 
-so lets add the file there:
+the install for ubuntu already creates the folder and basic files:
 
 ```
-sudo mkdir /etc/ansible
 sudo chown yonit /etc/ansible
+sudo chown yonit /etc/ansible/*
 nano /etc/ansible/hosts
 ```
 
