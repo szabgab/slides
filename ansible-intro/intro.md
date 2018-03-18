@@ -209,6 +209,9 @@ yonit@ubuntu-2:~$ service nginx status
      Docs: man:nginx(8)
 ```
 
+you can try to access it: 
+[http://ubuntu-1](http://ubuntu-1)
+
 ## Resources
 {id: resources}
 
