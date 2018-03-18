@@ -44,14 +44,12 @@ our network will look like:
 We will call this server the Ansible server
 for ubuntu you can use these commands: 
 
-
+sudo apt-get update
 sudo apt-get install software-properties-common
 sudo apt-add-repository ppa:ansible/ansible
 sudo apt-get update
 sudo apt-get install ansible
 
-sudo apt-get update
-sudo apt-get install software-properties-common
 
 Than we want to configure the hosts file so it will know the other servers its working with:
 sudo nano /etc/hosts
