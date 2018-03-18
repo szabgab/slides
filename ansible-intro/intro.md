@@ -258,6 +258,12 @@ Mem:        1012448       79836      422828        3264      509784      781300
 Swap:        483800           0      483800
 ```
 
+one last module to check is the setup module which lists toms of information on our servers: 
+
+```
+ansible virtualhosts -m setup
+```
+
 ## Resources
 {id: resources}
 
