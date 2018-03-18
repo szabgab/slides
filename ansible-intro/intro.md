@@ -174,6 +174,31 @@ ansible virtualhosts -a "ls -la /var"
 install a package: 
 ansible virtualhosts -m apt 
 
+the apt command will fail - untill now we run everything with our user, 
+to run commands as root we need to give passwordless sudo permission for the user we connect as: 
+
+```
+ssh ubuntu-1
+sudo nano /etc/sudoers
+
+and add this line:
+yonit  ALL = (ALL) NOPASSWD: ALL
+```
+
+repeat for all the servers. 
+lets try again: 
+
+```
+nsible virtualhosts -m apt -a "name=nginx state=present" -b
+ubuntu-2 | SUCCESS => {
+    "cache_update_time": 1521409853,
+    "cache_updated": false,
+    "changed": true,
+    "stderr": "",
+    "stderr_lines": [],
+    "stdout": "Reading package lists...\nBuilding dependency tree...\nReading state information...\nThe following additional packages will be installed:\n  fontconfig-config fonts-dejavu-core libfontconfig1 libgd3 libjbig0\n  libjpeg-turbo8 libjpeg8 libnginx-mod-http-geoip\n  libnginx-mod-http-image-filter libnginx-mod-http-xslt-filter\n  libnginx-mod-mail libnginx-mod-stream libtiff5 libwebp6 libxpm4 nginx-common\n  nginx-core\nSuggested packages:\n  libgd-tools fcgiwrap nginx-doc ssl-cert\nThe following NEW packages will be installed:\n  fontconfig-config fonts-dejavu-core libfontconfig1 libgd3 libjbig0\n  libjpeg-turbo8 libjpeg8 libnginx-mod-http-geoip\n  libnginx-mod-http-image-filter libnginx-mod-http-xslt-filter\n  libnginx-mod-mail libnginx-mod-stream libtiff5 libwebp6 libxpm4 nginx\n  nginx-common nginx-core\n0 upgraded, 18 newly installed
+```
+
 
 ## Resources
 {id: resources}
