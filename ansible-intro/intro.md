@@ -106,7 +106,15 @@ there are 3 ways to run ansible:
 * running a module: ansible <group> -m <module>
 * running a playbook: ansible-playbook playbook.yml
   
-[Ansible extensive list of builtin modules](http://docs.ansible.com/ansible/latest/modules_by_category.html)
+[Ansible extensive list of builtin modules](http://docs.ansible.com/ansible/latest/modules_by_category.html) there are about 450~ modules in the list, some popular ones are: 
+
+* file
+* apt/yum
+* service
+* copy 
+* git
+* ping 
+
 trying our first command:
 
 ```
