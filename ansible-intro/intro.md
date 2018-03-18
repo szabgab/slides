@@ -140,6 +140,28 @@ ssh-copy-id ubuntu-1
 ssh-copy-id ubuntu-2
 ```
 
+from here ssh to the servers will be done without asking for password. 
+make sure you have python installed on all the servers:
+
+```
+sudo apt-get update
+sudo apt-get install --no-install-recommends --assume-yes python-apt
+```
+
+and lets try running the ansible command again:
+
+```
+yonit@ansible_server:/etc/ansible$ ansible virtualhosts -m ping
+ubuntu-2 | SUCCESS => {
+    "changed": false,
+    "ping": "pong"
+}
+ubuntu-1 | SUCCESS => {
+    "changed": false,
+    "ping": "pong"
+}
+```
+
 ## Resources
 {id: resources}
 
