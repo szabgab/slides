@@ -39,6 +39,7 @@ our network will look like:
 {id: structure}
 
 * [install the Ansible on one server](http://docs.ansible.com/ansible/latest/intro_installation.html)
+
 We will call this server the Ansible server
 for ubuntu you can use these commands: 
 
