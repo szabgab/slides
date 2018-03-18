@@ -203,7 +203,7 @@ lets check from one of the servers:
 
 ```
 yonit@ubuntu-2:~$ service nginx status
-● nginx.service - A high performance web server and a reverse proxy server
+   nginx.service - A high performance web server and a reverse proxy server
    Loaded: loaded (/lib/systemd/system/nginx.service; enabled; vendor preset: enabled)
    Active: active (running) since Mon 2018-03-19 00:15:24 IST; 1min 1s ago
      Docs: man:nginx(8)
