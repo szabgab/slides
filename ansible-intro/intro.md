@@ -27,6 +27,27 @@ https://code-maven.com/ws2
 
 * Go to [https://code-maven.com/linux](https://code-maven.com/linux) to get the step by step instructions on how to install Linux on your laptop 
 
+## Starting up - configuring the structure
+{id: structure}
+
+* [install the Ansible on one server](http://docs.ansible.com/ansible/latest/intro_installation.html)
+We will call this server the Ansible server
+for ubuntu you can use these commands: 
+
+sudo apt-get update
+sudo apt-get install software-properties-common
+sudo apt-add-repository ppa:ansible/ansible
+sudo apt-get update
+sudo apt-get install ansible
+
+* on the same server update the hosts file 
+
+
+first thing - setup the hosts: 
+in the Ansible Admin server (laptop, virtual host) 
+
+
+
 ## Resources
 {id: resources}
 
