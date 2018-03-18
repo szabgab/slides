@@ -39,7 +39,7 @@ our network will look like:
 ## Starting up - configuring the structure
 {id: structure}
 
-* [install the Ansible on one server](http://docs.ansible.com/ansible/latest/intro_installation.html)
+* [install the Ansible on the ansible server](http://docs.ansible.com/ansible/latest/intro_installation.html)
 
 We will call this server the Ansible server
 for ubuntu you can use these commands: 
@@ -50,8 +50,14 @@ sudo apt-add-repository ppa:ansible/ansible
 sudo apt-get update
 sudo apt-get install ansible
 
+Than we want to configure the hosts file so it will know the other servers its working with:
+sudo nano /etc/hosts
 
+and add to its end:
+192.168.56.10 ubuntu-1
+192.168.56.20 ubuntu-2
 
+save and exit
 
 ## Resources
 {id: resources}
