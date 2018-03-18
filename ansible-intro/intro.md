@@ -113,6 +113,33 @@ ansible virtualhosts -m ping
 ```
 
 this will fail since we didnt setup the passwordless ssh.
+
+```
+ansible virtualhosts -m ping
+SSH password:
+ubuntu-1 | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Authentication failure.",
+    "unreachable": true
+}
+ubuntu-2 | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Authentication failure.",
+    "unreachable": true
+}
+```
+
+## creating an ssh key file and passing it to the hosts
+{id: sshkey}
+
+[Mode details instructions](https://code-maven.com/generate-and-deploy-ssh-private-public-keypair)
+
+```
+ssh-keygen
+ssh-copy-id ubuntu-1
+ssh-copy-id ubuntu-2
+```
+
 ## Resources
 {id: resources}
 
