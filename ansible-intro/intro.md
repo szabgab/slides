@@ -90,8 +90,8 @@ Ansible has some default location to add its config files,
 the install for ubuntu already creates the folder and basic files:
 
 ```
-sudo chown yonit /etc/ansible
-sudo chown yonit /etc/ansible/*
+chown yonit ansible
+chown yonit ansible/*
 nano /etc/ansible/hosts
 ```
 
@@ -106,6 +106,7 @@ there are 3 ways to run ansible:
 * running a module: ansible <group> -m <module>
 * running a playbook: ansible-playbook playbook.yml
   
+[Ansible extensive list of builtin modules](http://docs.ansible.com/ansible/latest/modules_by_category.html)
 trying our first command:
 
 ```
@@ -161,6 +162,18 @@ ubuntu-1 | SUCCESS => {
     "ping": "pong"
 }
 ```
+
+## some more simple commands
+{id: morecommands}
+
+Go ahead and try some more: 
+
+listing directories: 
+ansible virtualhosts -a "ls -la /var"
+
+install a package: 
+ansible virtualhosts -m apt 
+
 
 ## Resources
 {id: resources}
