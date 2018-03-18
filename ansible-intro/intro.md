@@ -215,6 +215,14 @@ yonit@ubuntu-2:~$ service nginx status
 you can try to access it: 
 [http://ubuntu-1](http://ubuntu-1)
 
+Testing before running: 
+
+```
+ansible virtualhosts -C -m service -a "name=nginx state=stopped" -b
+```
+
+will test the command without actualy running it. 
+
 ## Resources
 {id: resources}
 
