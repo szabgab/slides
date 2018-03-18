@@ -66,6 +66,37 @@ and add to its end:
 ```
 
 save and exit
+check by pinging the servers names:
+ping ubuntu-1
+
+also try to ssh both of them to verify connectivity.
+
+## Configuring Ansible basic files
+{id: conffiles}
+
+* inventory file
+
+This file describes the list of server and groups ansible is going to work on, 
+our sample structure is going to be: 
+
+```
+---
+[virtualhosts]
+ubuntu-1
+ubuntu-2
+
+```
+
+Ansible has some default location to add its config files, 
+so lets add the file there:
+
+```
+sudo mkdir /etc/ansible
+sudo chown yonit /etc/ansible
+nano /etc/ansible/hosts
+```
+
+and add the lines above into it
 
 ## Resources
 {id: resources}
