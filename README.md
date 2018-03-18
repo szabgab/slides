@@ -1,5 +1,4 @@
 
-
 Experimental processing assuming https://github.com/szabgab/slider-py is cloned next to our directory.
 
 ```
