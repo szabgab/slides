@@ -35,13 +35,9 @@ We will call this server the Ansible server
 for ubuntu you can use these commands: 
 
 sudo apt-get update
-
 sudo apt-get install software-properties-common
-
 sudo apt-add-repository ppa:ansible/ansible
-
 sudo apt-get update
-
 sudo apt-get install ansible
 
 * on the same server update the hosts file 
