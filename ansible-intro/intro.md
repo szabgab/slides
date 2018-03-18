@@ -32,6 +32,7 @@ https://code-maven.com/ws2
 
 We are going to use one server and 2 hosts to train on, 
 our network will look like: 
+
 ![ansible_structure](ansible_structure.jpg)
 
 
