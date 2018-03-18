@@ -97,6 +97,22 @@ nano /etc/ansible/hosts
 
 and add the lines above into it
 
+## Running ansible
+{id: runningansible}
+
+there are 3 ways to run ansible: 
+
+* running a command: ansible <group> -a <command>
+* running a module: ansible <group> -m <module>
+* running a playbook: ansible-playbook playbook.yml
+  
+trying our first command:
+
+```
+ansible virtualhosts -m ping
+```
+
+this will fail since we didnt setup the passwordless ssh.
 ## Resources
 {id: resources}
 
