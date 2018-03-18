@@ -52,12 +52,14 @@ sudo apt-get install ansible
 ```
 
 Than we want to configure the hosts file so it will know the other servers its working with:
+```
 sudo nano /etc/hosts
-
+```
 and add to its end:
+```
 192.168.56.10 ubuntu-1
 192.168.56.20 ubuntu-2
-
+```
 save and exit
 
 ## Resources
