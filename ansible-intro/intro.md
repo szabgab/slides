@@ -18,6 +18,21 @@
 * Something interesting about you
 * Have you been to our first Linux meetup
 
+## Why
+{id: startwithwhy)
+
+Why are we here? 
+
+* Scale 
+* Predetermined identical configuration 
+* Infrustructue as code (keep it all in git)
+* Configuration versioning
+* known state of the system 
+* when its all in git - every change is linked to a specific request ID or bug ID
+
+![dog_meme](dog_meme.jpg)
+
+
 ## What is Ansible?
 {id: whatisansible}
 
