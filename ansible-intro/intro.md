@@ -22,6 +22,22 @@ https://code-maven.com/ws2
 * Something interesting about you
 * Have you been to our first Linux meetup
 
+## What is Ansible?
+{id: whatisansible}
+
+TBD
+
+
+## Why Ansible ?
+{id: whyansible} 
+
+Pro 
+
+* It gives you a usable abstraction layer above different operating systems
+* one location to manage different cloud services: AWS, GCP , Azure, Ovirt, openstack, docker , etc...
+* can be extended via python plugins
+
+
 ## Prerequisites for the installations
 {id: installation}
 
