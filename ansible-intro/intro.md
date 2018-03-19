@@ -5,8 +5,8 @@
 ## About us
 {id: about-us}
 
-* Yonit Gruber-Hazani
-* Gabor Szabo
+* [Yonit Gruber-Hazani](https://www.linkedin.com/in/yonitgruber/)
+* [Gabor Szabo](https://www.linkedin.com/in/szabgab/)
 * DevOps Workshops http://devops-workshops.code-maven.com/
 
 ## About you
