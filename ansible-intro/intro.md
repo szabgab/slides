@@ -33,7 +33,7 @@ Why are we here?
 ![dog_meme](dog_meme.jpg)
 
 ## How
-{id: how)
+{id: how}
 
 Configuration management software - we have many options today: 
 
