@@ -19,7 +19,7 @@
 * Have you been to our first Linux meetup
 
 ## Why
-{id: startwithwhy)
+{id: startwithwhy}
 
 Why are we here? 
 
@@ -31,7 +31,6 @@ Why are we here?
 * when its all in git - every change is linked to a specific request ID or bug ID
 
 ![dog_meme](dog_meme.jpg)
-
 
 ## What is Ansible?
 {id: whatisansible}
