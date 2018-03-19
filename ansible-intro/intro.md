@@ -63,7 +63,10 @@ and wikipedia has a very nice [Comparison of open-source configuration managemen
 ## Prerequisites for the installations
 {id: installation}
 
-* Go to [https://code-maven.com/linux](https://code-maven.com/linux) to get the step by step instructions on how to install Linux on your laptop 
+Go to [https://code-maven.com/linux](https://code-maven.com/linux) to get the step by step instructions on how to install Linux on your laptop 
+
+We will need a few hosts installed on the laptops that can see each other via ping and ssh, 
+or a few linux instances in a cloud.
 
 ## my samples structure
 {id: imagefortraining}
