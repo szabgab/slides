@@ -26,27 +26,38 @@ Why are we here?
 * Scale 
 * Predetermined identical configuration 
 * Infrustructue as code (keep it all in git)
-* Configuration versioning
+* Configuration versioning . (rolling back)
 * known state of the system 
 * when its all in git - every change is linked to a specific request ID or bug ID
 
 ![dog_meme](dog_meme.jpg)
 
+## How
+{id: how)
+
+Configuration management software - we have many options today: 
+
+* CFEngine  - runs on C 
+* Puppet    - Ruby , series of steps
+* Chef      - DSL (Ruby-based) , declarative
+* Ansible   - Python , series of steps (like a script), YAML files
+* SaltStack - YAML files
+
+These are just a short list, you can read comparison of all the different apps via [search](https://www.google.co.il/search?q=Puppet+vs.+Chef+vs.+Ansible+vs.+Salt&oq=Puppet+vs.+Chef+vs.+Ansible+vs.+Salt&aqs=chrome..69i57j0j69i60l2j0l2.914j0j1&sourceid=chrome&ie=UTF-8)
+and wikipedia has a very nice [Comparison of open-source configuration management software page](https://en.wikipedia.org/wiki/Comparison_of_open-source_configuration_management_software)
+
+
 ## What is Ansible?
 {id: whatisansible}
 
-TBD
-
-
-## Why Ansible ?
-{id: whyansible} 
-
-Pro 
-
-* It gives you a usable abstraction layer above different operating systems
+* It gives you a usable abstraction layer above different operating systems (all linux flavours)
 * one location to manage different cloud services: AWS, GCP , Azure, Ovirt, openstack, docker , etc...
-* can be extended via python plugins
-
+* can be extended via python plugins 
+* Agentless communication with the hosts - works through SSH 
+* No daemons or database setup to use Ansible
+* Running From Source (for the config files)
+* ~450 builtin [modules](http://docs.ansible.com/ansible/latest/modules_by_category.html) to manage all the system's aspects
+* 15K premade roles to download from [Ansible Galaxy](https://galaxy.ansible.com/) (Like Playbooks)
 
 ## Prerequisites for the installations
 {id: installation}
