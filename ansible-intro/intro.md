@@ -646,8 +646,88 @@ yonit@ansible_server:~/ansible$ curl http://ubuntu-2/
 ## more vars
 {id: morevars}
 
-To get the index files to display the name of the server i need to use a variable in the template: 
+To get the index files to display the name of the server i need to use a variable in the template
 
+lets rename the index.html file: `mv index.html.tpl index.html.j2`
+
+and edit the playbook, change these line: 
+
+```
+src=index.html.tpl
+to 
+src=index.html.j2
+```
+
+and lets slightly change index.html.j2:
+
+```
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome to {{ ansible_hostname }}</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+	<h1>Welcome to {{ ansible_hostname }}</h1>
+</body>
+</html>
+```
+
+run the playbook: 
+
+```
+yonit@ansible_server:~/ansible$ ansible-playbook nginx_install.yml
+
+PLAY [virtualhosts] ****************************************************************************************************************************************************************
+
+TASK [Gathering Facts] *************************************************************************************************************************************************************
+ok: [ubuntu-1]
+ok: [ubuntu-2]
+
+TASK [install nginx] ***************************************************************************************************************************************************************
+ok: [ubuntu-1]
+ok: [ubuntu-2]
+
+TASK [Setup nginx conf] ************************************************************************************************************************************************************
+ok: [ubuntu-1]
+ok: [ubuntu-2]
+
+TASK [add index.html file] *********************************************************************************************************************************************************
+changed: [ubuntu-2]
+changed: [ubuntu-1]
+
+PLAY RECAP *************************************************************************************************************************************************************************
+ubuntu-1                   : ok=4    changed=1    unreachable=0    failed=0
+ubuntu-2                   : ok=4    changed=1    unreachable=0    failed=0
+```
+
+and now: 
+
+```
+yonit@ansible_server:~/ansible$ curl http://ubuntu-2/
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome to ubuntu-2</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+	<h1>Welcome to ubuntu-2</h1>
+</body>
+</html>
+```
 
 
 ## Resources
