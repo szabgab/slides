@@ -143,7 +143,7 @@ The installation for Ubuntu already created the folder and basic files,
 lets add the hosts in the default hosts file for ansible:
 
 ```
-nano /etc/ansible/hosts
+sudo nano /etc/ansible/hosts
 ```
 
 and add the lines above into it.
