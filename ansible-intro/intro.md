@@ -125,9 +125,9 @@ ssh ubuntu-2
 ## Configuring Ansible basic files
 {id: conffiles}
 
-* inventory file
+* Inventory file
 
-This file describes the list of server and groups ansible is going to work on, 
+This file describes the list of server and groups Ansible is going to work on, 
 our sample structure is going to be: 
 
 ```
@@ -137,8 +137,8 @@ ubuntu-2
 
 ```
 
-Ansible has some default location to add its config files, 
-the install for ubuntu already creates the folder and basic files:
+Ansible has some default location to add its config files.
+The installation for Ubuntu already created the folder and basic files:
 
 ```
 chown yonit ansible
@@ -146,15 +146,15 @@ chown yonit ansible/*
 nano /etc/ansible/hosts
 ```
 
-and add the lines above into it
+and add the lines above into it.
 
-## Running ansible
+## Running Ansible
 {id: runningansible}
 
-there are 3 ways to run ansible: 
+there are 3 ways to run Ansible: 
 
-* running a command: ansible <group> -a <command>
-* running a module: ansible <group> -m <module>
+* running a command: `ansible GROUP -a COMMAND`
+* running a module: `ansible GROUP -m MODULE`
 * running a playbook: ansible-playbook playbook.yml
   
 [Ansible extensive list of builtin modules](http://docs.ansible.com/ansible/latest/modules_by_category.html) there are about 450~ modules in the list, some popular ones are: 
