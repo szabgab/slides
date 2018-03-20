@@ -433,7 +433,7 @@ ubuntu-1 | SUCCESS => {
 
 Playbook is a collection of tasks that we want to group together. 
 
-lets review nginx install in a playbook format: nginx_install.yml
+lets review nginx install in a playbook format: `nginx_install.yml`
 
 ```
 ---
@@ -456,7 +456,7 @@ lets review nginx install in a playbook format: nginx_install.yml
         state=restarted
 ```
 
-our template file is another file in the same directory that has the ubuntu nginx.conf content:
+our template file is another file in the same directory that has the ubuntu nginx.conf content and is called: `nginx.conf.tpl`
 
 ```
 user www-data;
@@ -542,6 +542,39 @@ PLAY RECAP *********************************************************************
 ubuntu-1                   : ok=4    changed=3    unreachable=0    failed=0
 ubuntu-2                   : ok=4    changed=3    unreachable=0    failed=0
 ```
+
+playing the playbook again wont do anything if the state of the services and file is already identical:
+
+```
+yonit@ansible_server:~/ansible$ ansible-playbook nginx_install.yml
+
+PLAY [virtualhosts] ****************************************************************************************************************************************************************
+
+TASK [Gathering Facts] *************************************************************************************************************************************************************
+ok: [ubuntu-2]
+ok: [ubuntu-1]
+
+TASK [install nginx] ***************************************************************************************************************************************************************
+ok: [ubuntu-2]
+ok: [ubuntu-1]
+
+TASK [Setup nginx conf] ************************************************************************************************************************************************************
+ok: [ubuntu-2]
+ok: [ubuntu-1]
+
+PLAY RECAP *************************************************************************************************************************************************************************
+ubuntu-1                   : ok=3    changed=0    unreachable=0    failed=0
+ubuntu-2                   : ok=3    changed=0    unreachable=0    failed=0
+```
+
+## adding vars to the play
+{id: vars}
+
+Variables can be defines in many locations, and we can get them from the facts gathering stage as well. 
+
+lets add some content to the nginx servers, create a file called index.html.
+
+
 
 ## Resources
 {id: resources}
