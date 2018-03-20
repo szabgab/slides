@@ -235,22 +235,36 @@ ubuntu-1 | SUCCESS => {
 
 Go ahead and try some more: 
 
+Showing the date: 
+
+```
+ansible virtualhosts -a "date"
+```
+
+Showing the hostname: 
+
+```
+ansible virtualhosts -a "hostname"
+```
+
 Listing directories: 
 
 ```
 ansible virtualhosts -a "ls -la /var"
 ```
 
-
-## Install a package
-{id: installing-packages}
+## Install a package failure
+{id: installing-packages-failure}
 
 ```
-ansible virtualhosts -m apt 
+$ ansible virtualhosts -m apt -a "name=nginx state=present" -b
 ```
 
 The `apt` command will fail - untill now we run everything with our user.
 To run commands as root we need to give passwordless sudo permission for the user we connect as: 
+
+## Passwordless sudo
+{id: passwordless-sudo}
 
 ```
 ssh ubuntu-1
@@ -268,10 +282,15 @@ Repeat for all the servers.
 Another option would be copying the content of my `.ssh/authorized_keys` in the servers to `/root/.ssh/authorized_keys`
 which would allow me to connect from my user directly to the root user on the remote servers.
 
+
+## Install a package
+{id: installing-packages}
+
 Let's try again: 
 
 ```
-nsible virtualhosts -m apt -a "name=nginx state=present" -b
+$ ansible virtualhosts -m apt -a "name=nginx state=present" -b
+
 ubuntu-2 | SUCCESS => {
     "cache_update_time": 1521409853,
     "cache_updated": false,
