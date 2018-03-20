@@ -138,16 +138,21 @@ ubuntu-2
 
 ```
 
-Ansible has some default location to add its config files.
-The installation for Ubuntu already created the folder and basic files:
+Ansible has a default location to add its config files.
+The installation for Ubuntu already created the folder and basic files, 
+lets add the hosts in the default hosts file for ansible:
 
 ```
-chown yonit ansible
-chown yonit ansible/*
 nano /etc/ansible/hosts
 ```
 
 and add the lines above into it.
+
+If we do not edit the default location we can create a inventory file in our working folder and jusr call it on every run with: 
+
+```
+-i inventory.cfg
+```
 
 ## Running Ansible
 {id: runningansible}
