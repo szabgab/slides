@@ -27,8 +27,8 @@ Why are we here?
 * Predetermined identical configuration 
 * Infrustructue as code (keep it all in git)
 * Configuration versioning . (rolling back)
-* known state of the system 
-* when its all in git - every change is linked to a specific request ID or bug ID
+* Known state of the system 
+* When its all in git - every change is linked to a specific request ID or bug ID
 
 ![dog_meme](dog_meme.jpg)
 
@@ -43,32 +43,32 @@ Configuration management software - we have many options today:
 * Ansible   - Python , series of steps (like a script), YAML files
 * SaltStack - YAML files
 
-These are just a short list, you can read comparison of all the different apps via [search](https://www.google.co.il/search?q=Puppet+vs.+Chef+vs.+Ansible+vs.+Salt&oq=Puppet+vs.+Chef+vs.+Ansible+vs.+Salt&aqs=chrome..69i57j0j69i60l2j0l2.914j0j1&sourceid=chrome&ie=UTF-8)
+These are just a short list, you can read comparison of all the different apps via [search](https://www.google.co.il/search?q=Puppet+vs.+Chef+vs.+Ansible+vs.+Salt&oq=Puppet+vs.+Chef+vs.+Ansible+vs.+Salt&aqs=chrome..69i57j0j69i60l2j0l2.914j0j1&sourceid=chrome&ie=UTF-8).
 
-and wikipedia has a very nice [Comparison of open-source configuration management software page](https://en.wikipedia.org/wiki/Comparison_of_open-source_configuration_management_software)
+Wikipedia has a very nice [Comparison of open-source configuration management software page](https://en.wikipedia.org/wiki/Comparison_of_open-source_configuration_management_software).
 
 
 ## What is Ansible?
 {id: whatisansible}
 
-* It gives you a usable abstraction layer above different operating systems (all linux flavours)
-* one location to manage different cloud services: AWS, GCP , Azure, Ovirt, openstack, docker , etc...
-* can be extended via python plugins 
-* Agentless communication with the hosts - works through SSH 
-* No daemons or database setup to use Ansible
-* Running From Source (for the config files)
-* ~450 builtin [modules](http://docs.ansible.com/ansible/latest/modules_by_category.html) to manage all the system's aspects
-* 15K premade roles to download from [Ansible Galaxy](https://galaxy.ansible.com/) (Like Playbooks)
+* It gives you a usable abstraction layer above different operating systems (all linux flavours).
+* One location to manage different cloud services: AWS, GCP , Azure, Ovirt, openstack, docker , etc...
+* Can be extended via python plugins.
+* Agentless communication with the hosts - works through SSH.
+* No daemons or database setup to use Ansible.
+* Running From Source (for the config files).
+* ~450 builtin [modules](http://docs.ansible.com/ansible/latest/modules_by_category.html) to manage all the system's aspects.
+* 15K premade roles to download from [Ansible Galaxy](https://galaxy.ansible.com/) (Like Playbooks).
 
 ## Prerequisites for the installations
 {id: installation}
 
-Go to [https://code-maven.com/linux](https://code-maven.com/linux) to get the step by step instructions on how to install Linux on your laptop 
+Go to [https://code-maven.com/linux](https://code-maven.com/linux) to get the step by step instructions on how to install Linux on your laptop.
 
-We will need a few hosts installed on the laptops that can see each other via ping and ssh, 
-or a few linux instances in a cloud.
+We will need a few hosts installed on the laptops or a few linux instances in the cloud. They need to be able to see each other via ping and ssh.
 
-## my samples structure
+
+## The samples structure
 {id: imagefortraining}
 
 We are going to use one server and 2 hosts to train on, 
@@ -83,7 +83,7 @@ our network will look like:
 * [install the Ansible on the ansible server](http://docs.ansible.com/ansible/latest/intro_installation.html)
 
 We will call this server the Ansible server
-for ubuntu you can use these commands: 
+for Ubuntu you can use these commands: 
 
 ```
 sudo apt-get update
@@ -93,7 +93,7 @@ sudo apt-get update
 sudo apt-get install ansible
 ```
 
-Than we want to configure the hosts file so it will know the other servers its working with:
+Than we want to configure the hosts file so it will know the other servers its working with by name:
 
 ```
 sudo nano /etc/hosts
@@ -106,11 +106,21 @@ and add to its end:
 192.168.56.20 ubuntu-2
 ```
 
-save and exit
-check by pinging the servers names:
-ping ubuntu-1
+Save and exit.
+Check by pinging the server names:
 
-also try to ssh both of them to verify connectivity.
+```
+ping ubuntu-1
+ping ubuntu-2
+```
+
+Try to ssh both of them to verify connectivity.
+
+```
+ssh ubuntu-1
+ssh ubuntu-2
+```
+
 
 ## Configuring Ansible basic files
 {id: conffiles}
