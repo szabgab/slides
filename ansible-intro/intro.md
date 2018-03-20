@@ -165,12 +165,12 @@ there are 3 ways to run Ansible:
   
 [Ansible extensive list of builtin modules](http://docs.ansible.com/ansible/latest/modules_by_category.html) there are about 450~ modules in the list, some popular ones are: 
 
-* file
-* apt/yum
-* service
-* copy 
-* git
-* ping 
+* file     - creates files and directories , sets permissions
+* apt/yum  - manages packages - install, update, remove
+* service  - manages services - stop, start, runlevel (at boot)
+* copy     - copies files and directories
+* git      - Deploy software (or files) from git checkouts
+* ping     - Try to connect to host, verify a usable python and return pong on success
 
 trying our first command:
 
