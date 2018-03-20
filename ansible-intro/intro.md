@@ -7,7 +7,7 @@
 
 * [Yonit Gruber-Hazani](https://www.linkedin.com/in/yonitgruber/)
 * [Gabor Szabo](https://www.linkedin.com/in/szabgab/)
-* DevOps Workshops http://devops-workshops.code-maven.com/
+* DevOps Workshops [http://devops-workshops.code-maven.com/](http://devops-workshops.code-maven.com/)
 
 ## About you
 {id: about-you}
