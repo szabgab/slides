@@ -155,7 +155,7 @@ there are 3 ways to run Ansible:
 
 * running a command: `ansible GROUP -a COMMAND`
 * running a module: `ansible GROUP -m MODULE`
-* running a playbook: ansible-playbook playbook.yml
+* running a playbook: `ansible-playbook playbook.yml`
   
 [Ansible extensive list of builtin modules](http://docs.ansible.com/ansible/latest/modules_by_category.html) there are about 450~ modules in the list, some popular ones are: 
 
@@ -172,7 +172,7 @@ trying our first command:
 ansible virtualhosts -m ping
 ```
 
-this will fail since we didnt setup the passwordless ssh.
+this will fail since we did not setup the passwordless ssh.
 
 ```
 ansible virtualhosts -m ping
@@ -189,7 +189,7 @@ ubuntu-2 | UNREACHABLE! => {
 }
 ```
 
-## creating an ssh key file and passing it to the hosts
+## Creating an ssh key file and passing it to the hosts
 {id: sshkey}
 
 [Mode details instructions](https://code-maven.com/generate-and-deploy-ssh-private-public-keypair)
@@ -200,18 +200,28 @@ ssh-copy-id ubuntu-1
 ssh-copy-id ubuntu-2
 ```
 
-from here ssh to the servers will be done without asking for password. 
-make sure you have python installed on all the servers:
+From now on `ssh` to the servers will be done without asking for password. 
+Make sure you have `python` (aka Python 2) installed on all the servers:
 
 ```
 sudo apt-get update
 sudo apt-get install --no-install-recommends --assume-yes python-apt
 ```
 
+Alternatively use `-e 'ansible_python_interpreter=/usr/bin/python3'` on the command line or
+
+```
+[virtualhosts:vars]
+ansible_python_interpreter=/usr/bin/python3
+```
+
+in the Inventory file.
+
 and lets try running the ansible command again:
 
 ```
 yonit@ansible_server:/etc/ansible$ ansible virtualhosts -m ping
+
 ubuntu-2 | SUCCESS => {
     "changed": false,
     "ping": "pong"
@@ -265,6 +275,7 @@ lets check from one of the servers:
 
 ```
 yonit@ubuntu-2:~$ service nginx status
+
    nginx.service - A high performance web server and a reverse proxy server
    Loaded: loaded (/lib/systemd/system/nginx.service; enabled; vendor preset: enabled)
    Active: active (running) since Mon 2018-03-19 00:15:24 IST; 1min 1s ago
