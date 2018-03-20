@@ -643,6 +643,13 @@ yonit@ansible_server:~/ansible$ curl http://ubuntu-2/
 </html>
 ```
 
+## more vars
+{id: morevars}
+
+To get the index files to display the name of the server i need to use a variable in the template: 
+
+
+
 ## Resources
 {id: resources}
 
