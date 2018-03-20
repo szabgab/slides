@@ -383,6 +383,17 @@ sample output:
         "ansible_distribution_version": "17.10",
 ```
 
+```
+ansible virtualhosts -m setup |more |grep -i ubuntu
+ubuntu-1 | SUCCESS => {
+        "ansible_distribution": "Ubuntu",
+        "ansible_fqdn": "ubuntu-1",
+        "ansible_hostname": "ubuntu-1",
+            "description": "Ubuntu 17.10",
+            "id": "Ubuntu",
+        "ansible_nodename": "ubuntu-1",
+```
+
 ## Resources
 {id: resources}
 
