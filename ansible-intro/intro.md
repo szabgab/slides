@@ -241,7 +241,9 @@ Listing directories:
 ansible virtualhosts -a "ls -la /var"
 ```
 
-Install a package:
+
+## Install a package
+{id: installing-packages}
 
 ```
 ansible virtualhosts -m apt 
