@@ -208,16 +208,14 @@ sudo apt-get update
 sudo apt-get install --no-install-recommends --assume-yes python-apt
 ```
 
-Alternatively use `-e 'ansible_python_interpreter=/usr/bin/python3'` on the command line or
+Alternatively add the following to the inventory file to use Python 3 on the remote servers.
 
 ```
 [virtualhosts:vars]
 ansible_python_interpreter=/usr/bin/python3
 ```
 
-in the Inventory file.
-
-and lets try running the ansible command again:
+Let's try running the Ansible command again:
 
 ```
 yonit@ansible_server:/etc/ansible$ ansible virtualhosts -m ping
@@ -232,33 +230,43 @@ ubuntu-1 | SUCCESS => {
 }
 ```
 
-## some more simple commands
+## Some more simple commands
 {id: morecommands}
 
 Go ahead and try some more: 
 
-listing directories: 
+Listing directories: 
+
+```
 ansible virtualhosts -a "ls -la /var"
+```
 
-install a package: 
+Install a package:
+
+```
 ansible virtualhosts -m apt 
+```
 
-the apt command will fail - untill now we run everything with our user, 
-to run commands as root we need to give passwordless sudo permission for the user we connect as: 
+The `apt` command will fail - untill now we run everything with our user.
+To run commands as root we need to give passwordless sudo permission for the user we connect as: 
 
 ```
 ssh ubuntu-1
 sudo nano /etc/sudoers
+```
 
 and add this line:
+
+```
 yonit  ALL = (ALL) NOPASSWD: ALL
 ```
 
-repeat for all the servers. 
-Another option would be copying the content of my .ssh/authorized_keys in the servers to /root/.ssh/authorized_keys
+Repeat for all the servers. 
+
+Another option would be copying the content of my `.ssh/authorized_keys` in the servers to `/root/.ssh/authorized_keys`
 which would allow me to connect from my user directly to the root user on the remote servers.
 
-lets try again: 
+Let's try again: 
 
 ```
 nsible virtualhosts -m apt -a "name=nginx state=present" -b
@@ -268,10 +276,19 @@ ubuntu-2 | SUCCESS => {
     "changed": true,
     "stderr": "",
     "stderr_lines": [],
-    "stdout": "Reading package lists...\nBuilding dependency tree...\nReading state information...\nThe following additional packages will be installed:\n  fontconfig-config fonts-dejavu-core libfontconfig1 libgd3 libjbig0\n  libjpeg-turbo8 libjpeg8 libnginx-mod-http-geoip\n  libnginx-mod-http-image-filter libnginx-mod-http-xslt-filter\n  libnginx-mod-mail libnginx-mod-stream libtiff5 libwebp6 libxpm4 nginx-common\n  nginx-core\nSuggested packages:\n  libgd-tools fcgiwrap nginx-doc ssl-cert\nThe following NEW packages will be installed:\n  fontconfig-config fonts-dejavu-core libfontconfig1 libgd3 libjbig0\n  libjpeg-turbo8 libjpeg8 libnginx-mod-http-geoip\n  libnginx-mod-http-image-filter libnginx-mod-http-xslt-filter\n  libnginx-mod-mail libnginx-mod-stream libtiff5 libwebp6 libxpm4 nginx\n  nginx-common nginx-core\n0 upgraded, 18 newly installed
+    "stdout": "Reading package lists...\nBuilding dependency tree...\nReading state information...\n
+              The following additional packages will be installed:\n  fontconfig-config fonts-dejavu-core
+              libfontconfig1 libgd3 libjbig0\n  libjpeg-turbo8 libjpeg8 libnginx-mod-http-geoip\n
+              libnginx-mod-http-image-filter libnginx-mod-http-xslt-filter\n  libnginx-mod-mail
+              libnginx-mod-stream libtiff5 libwebp6 libxpm4 nginx-common\n  nginx-core\nSuggested packages:\n
+              libgd-tools fcgiwrap nginx-doc ssl-cert\nThe following NEW packages will be installed:\n
+              fontconfig-config fonts-dejavu-core libfontconfig1 libgd3 libjbig0\n  libjpeg-turbo8
+              libjpeg8 libnginx-mod-http-geoip\n  libnginx-mod-http-image-filter libnginx-mod-http-xslt-filter\n
+              libnginx-mod-mail libnginx-mod-stream libtiff5 libwebp6 libxpm4 nginx\n  nginx-common nginx-core\n
+              0 upgraded, 18 newly installed
 ```
 
-lets check from one of the servers:
+Let's check from one of the servers:
 
 ```
 yonit@ubuntu-2:~$ service nginx status
@@ -282,8 +299,12 @@ yonit@ubuntu-2:~$ service nginx status
      Docs: man:nginx(8)
 ```
 
-you can try to access it: 
+You can try to access it: 
+
+```
 [http://ubuntu-1](http://ubuntu-1)
+```
+
 
 Testing before running: 
 
