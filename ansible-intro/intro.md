@@ -230,7 +230,7 @@ ubuntu-1 | SUCCESS => {
 }
 ```
 
-## Some more simple commands
+## Some simple commands
 {id: morecommands}
 
 Go ahead and try some more: 
@@ -253,7 +253,7 @@ Listing directories:
 ansible virtualhosts -a "ls -la /var"
 ```
 
-## Install a package failure
+## Install a package - failure
 {id: installing-packages-failure}
 
 ```
@@ -261,7 +261,8 @@ $ ansible virtualhosts -m apt -a "name=nginx state=present" -b
 ```
 
 The `apt` command will fail - untill now we run everything with our user.
-To run commands as root we need to give passwordless sudo permission for the user we connect as: 
+
+To run commands as root we need to give passwordless sudo permission for the user we connect as.
 
 ## Passwordless sudo
 {id: passwordless-sudo}
@@ -323,9 +324,8 @@ yonit@ubuntu-2:~$ service nginx status
 You can try to access it: 
 
 ```
-[http://ubuntu-1](http://ubuntu-1)
+$ curl http://ubuntu-1
 ```
-
 
 Testing before running: 
 
@@ -335,15 +335,15 @@ ansible virtualhosts -C -m service -a "name=nginx state=stopped" -b
 
 will test the command without actualy running it. 
 
-## shell command
+## Shell command
 {id: shell}
 
-when running the ad-hok command line on with ansible, it doesnt go through shell, 
-so some parsing or rediredting might not work,
-to fix that you can use the shell module:
+When running the ad-hoc command line on with ansible, it does not go through shell.
+So some parsing or rediredting might not work.
+To fix that you can use the shell module:
 
 ```
-ansible virtualhosts -m shell -a "hostname ; date ; uptime ; free" 
+$ ansible virtualhosts -m shell -a "hostname ; date ; uptime ; free" 
 
 ubuntu-2 | SUCCESS | rc=0 >>
 ubuntu-2
@@ -362,10 +362,10 @@ Mem:        1012448       79836      422828        3264      509784      781300
 Swap:        483800           0      483800
 ```
 
-one last module to check is the setup module which lists toms of information on our servers: 
+One last module to check is the setup module which lists tons of information on our servers: 
 
 ```
-ansible virtualhosts -m setup
+$ ansible virtualhosts -m setup
 
 sample output:
         "ansible_distribution": "Ubuntu",
@@ -380,5 +380,8 @@ sample output:
 ## Resources
 {id: resources}
 
-* [Our Meetup page](https://www.meetup.com/Code-Mavens/)
-* [introduction-to-ansible 80 minutes video](https://www.ansible.com/resources/webinars-training/introduction-to-ansible)
+* [Our Meetup page](https://www.meetup.com/Code-Mavens/).
+* [Introduction to Ansible - 80 minutes video](https://www.ansible.com/resources/webinars-training/introduction-to-ansible).
+* [Ansible for DevOps](https://leanpub.com/ansible-for-devops) by Jeff Geerling.
+* [Ansible book](https://leanpub.com/ansible-book/c/devops-workshop-2) by Gabor. (now free)
+
