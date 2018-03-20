@@ -47,7 +47,7 @@ These are just a short list, you can read comparison of all the different apps v
 
 Wikipedia has a very nice [Comparison of open-source configuration management software page](https://en.wikipedia.org/wiki/Comparison_of_open-source_configuration_management_software).
 
-![cm_compare](cm_compare.png)
+![cm_compare](cm_compare_small.png)
 
 ## What is Ansible?
 {id: whatisansible}
