@@ -37,7 +37,7 @@
   {% endif %}
   {% if c.name == 'verbatim' %}
 <pre class="code">
-{{ c.content[0] }}
+{{ c.content[0] | e }}
 </pre>
   {% endif %}
   {% if c.name == 'p' %}
