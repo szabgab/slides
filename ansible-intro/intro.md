@@ -511,7 +511,7 @@ http {
 }
 ```
 
-## running the playbook
+## Running the playbook
 {id: runningplaybook}
 
 the command to run the playbook is a little different than the regular run command:
@@ -568,7 +568,7 @@ ubuntu-1                   : ok=3    changed=0    unreachable=0    failed=0
 ubuntu-2                   : ok=3    changed=0    unreachable=0    failed=0
 ```
 
-## adding vars to the play
+## Adding vars to the play
 {id: vars}
 
 Variables can be defines in many locations, and we can get them from the facts gathering stage as well. 
@@ -644,7 +644,7 @@ yonit@ansible_server:~/ansible$ curl http://ubuntu-2/
 </html>
 ```
 
-## more vars
+## More vars
 {id: morevars}
 
 To get the index files to display the name of the server i need to use a variable in the template
@@ -730,6 +730,38 @@ yonit@ansible_server:~/ansible$ curl http://ubuntu-2/
 </html>
 ```
 
+## Roles
+{id: ansible-roles}
+
+* Role Directory Structure
+
+```
+site.yml
+webservers.yml
+fooservers.yml
+roles/
+   common/
+     tasks/
+     handlers/
+     files/
+     templates/
+     vars/
+     defaults/
+     meta/
+   webservers/
+     tasks/
+     defaults/
+     meta/
+```
+
+## Ansible Galaxy
+{id: ansible-galaxy}
+
+* [Ansible Galaxy](https://galaxy.ansible.com/)
+
+```
+$ ansible-galaxy install username.rolename
+```
 
 ## Resources
 {id: resources}
