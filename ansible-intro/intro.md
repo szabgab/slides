@@ -6,6 +6,7 @@
 {id: about-us}
 
 * [Yonit Gruber-Hazani](https://www.linkedin.com/in/yonitgruber/)
+* [Dima Revelis](https://www.linkedin.com/in/dima-revelis-1a041631/)
 * [Gabor Szabo](https://www.linkedin.com/in/szabgab/)
 * DevOps Workshops [http://devops-workshops.code-maven.com/](http://devops-workshops.code-maven.com/)
 
