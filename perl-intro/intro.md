@@ -25,7 +25,7 @@ Basics of the language:
 ![](examples/hello_world.pl)
 
 * #!/usr/bin/env perl  - Path to perl interpreter
-* use v5.10;           - Minimal version number of Perl, turn on new features.
+* use v5.10;           - Minimal version number of Perl, turn on new features. Same as `use 5.010;`
 * use strict;          - Require variable declarations, avoid stupid mistakes.
 * use warnigs;         - Ask for warnings. Avoid further stupid mistakes.
 
@@ -40,7 +40,8 @@ Basics of the language:
 ## Avoid global variables
 {id: avoid-global-variables}
 
-* Not really Perl specific, but make variables as tight as possible!
+* Not really Perl specific, but declare variables as lates as possible!
+* Don't use global variables!
 * You will thank yourself a year later.
 
 ## Keep it simple
@@ -48,6 +49,31 @@ Basics of the language:
 
 * A script has to be simple, readable and reusable.
 * Sophisticated optimization and algorithms are less interesting.
+
+## Editors
+{id: editors}
+
+* vim
+* emacs
+* Notepad++
+* Atom
+* ...
+
+## IDEs
+{id: perl-ide}
+
+* Eclipse + EPIC or Perlipse.
+* Jetbrains IntelliJ IDEA + perl plugin.
+* Komodo
+
+## Debugging
+{id: debugging}
+
+* The IDEs have their debuggers
+* `print` statements
+* `use Data::Dumper qw(Dumper)`
+* `perl -d mycode.pl`
+
 
 ## First script with main function
 {id: first-perl-scirpt-with-main}
@@ -59,30 +85,31 @@ Basics of the language:
 ## Comments
 {id: comments-in-perl}
 
-Anywhere (except th first row) a `#` starts a comment till the end of the row.
+Anywhere (except the first row) a `#` starts a comment till the end of the row.
 
 ```
 # Comment
 say "somthing"; # comment
 ```
 
-## print vs. say
+## IO: Output on screen - print vs. say
 {id: print-vs-say}
 
-* say  "hello";    # print a newline at the end. (available since perl 5.10)
-* print "hello";   # print as it is
-* print "hello\n"; # print a newline at the end.
+* `say  "hello";`    # print a newline at the end. (available since perl 5.10)
+* `print "hello";`   # print as it is
+* `print "hello\n";` # print a newline at the end.
 
-## IO (screen, keyboard)
+## IO: Input from keyboard
 {id: io}
 
-```
-say
-print
 
+```
 my $input = <STDIN>;
 chomp $input;
 ```
+
+* Read one line till newline.
+* Remove newline from the end.
 
 ## Scalar values
 {id: scalar-values}
@@ -140,10 +167,10 @@ For numbers there is no need for quotes.
 
 A list is a series of scalar values separated by comma and enclosed in parentheses.
 The scalar values themselves can be references to other data structures.
-(An array, explained later is a variable holding a list.)
+(An array, explained later is a variable holding the content of a list.)
 
 ```
-('string', 42, 2.3)
+('string', 42, 2.3, undef, ['one', 'two'], { 'name' => 'Foo Bar' })
 ```
 
 ## Hash
@@ -171,7 +198,7 @@ In PHP they are calle "associative arrays". In Python "dictionaries".
 ## Boolean values
 {id: boolean-values}
 
-In Perl there is no special True and False values. Any value can be checked for True-ness. The following values are considered to be false:
+In Perl there is no special True and False values. Any value can be checked for True-ness. The following values are considered to be False:
 
 ```
 undef
@@ -179,6 +206,35 @@ undef
 ''       # empty string.
 '0'      # a string with a single 0 in it.
 ```
+
+Everything else is considered to be True.
+
+## single-quoted and double-quotes strings
+{id: string-quotes}
+
+```
+$name    = 'Foo';
+$message = "Hello $name, how are you?"; # Hello Foo, how are you?
+
+$other   = 'Hello $name, how are you?'; # Hello $name, how are you?
+```
+
+
+```
+print "\n";    # is a real newline
+print '\n';    # will print \n
+```
+
+also use `q` or `qq`:
+
+
+```
+$message = qq{Hello $name, how are you?}; # Hello Foo, how are you?
+
+$other   = q{Hello $name, how are you?}; # Hello $name, how are you?
+```
+
+
 
 ## String Operators
 {id: string-operators}
@@ -188,17 +244,30 @@ undef
 "abc" x 3         # repetition operator "abcabcabc"
 ```
 
-## Numerical Opertors
+## Numerical Operators
 {id: numerical-operators}
 
 ```
 2 + 3        # 5
 2 * 3        # 6
 2 ** 3       # 2*2*2 = 8
+7 / 2        # 3.5
 ...
 ```
 
-## Perl is an Operator driven language
+## Boolean Operators
+{id: boolean-operators}
+
+```
+and            &&
+or             ||
+not            !
+xor
+```
+
+* Precedence!
+
+## Perl is an Operator and Context driven language
 {id: operator-driven-language}
 
 ```
@@ -213,6 +282,20 @@ undef
 ```
 "abc" . "def"    # "abcdef"
 "abc" + "def"    # 0  + 2 warnings about Argument isn't numeric in addition (+)
+```
+
+## String Functions
+{id: string-functions}
+
+* `length STRING`                 - number of characters
+* `lc STRING`                     - lower case
+* `uc STRING`                     - upper case
+* `index STRING`                  - the location of a substring given its content
+* `substr STRING, OFFSET, LENGTH` -  the content of a substring given its location
+
+```
+say length 'abc';     # 3
+say length 23;        # 2
 ```
 
 ## Variables
