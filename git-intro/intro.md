@@ -100,13 +100,89 @@ $ git --version
 git version 2.1.3
 ```
 
+## Configure Git
+{id: Configure-Git}
+
+**There are three levels of configuration:**
+System (--system)
+User (--global)
+Project (--local)
+
+$ git config ...
+
+**On Unix**
+* /etc/gitconfig
+* $HOME/.gitconfig (/home/foobar/.gitconfig)
+* .git/config
+
+**On Windows**
+* "c:\Program Files (x86)\Git\etc\gitconfig"
+* %HOMEPATH%\.gitconfig %USERPROFILE%\.gitconfig (C:\Users\Foobar\.gitconfig)
+* .git/config
+
+To access them use
+
+```
+--system
+--global
+--local
+```
+
+**Samples:**
+
+```
+$ git config --global --add user.name "Foo Bar"
+$ git config --global --add user.email foo@bar.com
+
+$ git config --list
+$ git config --list --global
+$ git config user.name      # to see specific value
+```
+
+## Getting help
+{id: Getting-help}
+
+```
+$ git help             # listing the most important commands
+$ git help COMMAND     # man page or local web page
+$ git COMMAND --help   # the same
+
+$ git help help        # help about the help system
+$ git help --all       # list all the git commands
+$ git help tutorial    # a simple git tutorial
+```
+
+## Exercises Session 1
+{id: Exercises-1}
+
+* Check if you already have Git installed (open command line, check the version)
+* Install git
+* Open the command line
+* Check which version do you have?
+* List the default configuration
+* Add your name, email to the global configuration.
+* Look at the help page of one of the commands.
+
 ## title
 {id: title}
 
+## title
+{id: title}
+
+## title
+{id: title}
+
+## title
+{id: title}
+
+## title
+{id: title}
+
+## title
+{id: title}
 
 ## Resources
 {id: resources}
-
 * [Our Meetup page](https://www.meetup.com/Code-Mavens/)
 * [Our Facebook page](https://www.facebook.com/Devops.Workshops)
 * [Facebook group](https://www.facebook.com/groups/188753948553382/)
