@@ -75,7 +75,7 @@
 * Integrity using SHA-1 hashes of the files. (40 character string of hexadecimal characters called "object name" or "SHA-1 id".)
 
 ## Git Installation
-{id: GitInstall}
+{id: install}
 
 On UNIX/Linux you use your package manger (apt-get, yum, etc...) or install from git-scm.
 * yum install git-core
