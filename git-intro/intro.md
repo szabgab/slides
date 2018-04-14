@@ -163,8 +163,21 @@ $ git help tutorial    # a simple git tutorial
 * Add your name, email to the global configuration.
 * Look at the help page of one of the commands.
 
-## title
-{id: title}
+## Creating a local repository
+{id: local-rep}
+
+```
+$ mkdir app
+$ cd app
+$ git init
+Initialized empty Git repository in C:/work/app/.git/
+$ git status
+# On branch master
+#
+# Initial commit
+#
+nothing to commit (create/copy files and use "git add" to track)
+```
 
 ## title
 {id: title}
