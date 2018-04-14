@@ -88,17 +88,17 @@ On Mac: Git OSX installer
 
 Windows
 
-'''
+```
 c:\> git --version
 git version 1.8.1.msysgit.1
-'''
+```
 
 OSX
 
-'''
+```
 $ git --version
 git version 2.1.3
-'''
+```
 
 ## title
 {id: title}
