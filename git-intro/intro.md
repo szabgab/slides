@@ -555,6 +555,51 @@ examples/out/status_12.txt
 no changes added to commit (use "git add" and/or "git commit -a")
 ```
 
+## Add all the files
+{id: add-all-files}
+
+*$ git add .
+*$ git status
+
+examples/out/status_13.txt
+
+```
+On branch master
+ Changes to be committed:
+   (use "git reset HEAD <file>..." to unstage)
+
+   modified:   README.txt
+   new file:   setup.pl
+
+$ git commit -m"start writing the setup script"
+[master 887d712] start writing the setup script
+ 2 files changed, 2 insertions(+)
+ create mode 100644 setup.pl
+```
+
+## Git ignore
+{id: ignore}
+
+The **.gitignore** file in the root of the repository can describe sets of files that don't need tracking. 
+
+This will make sure you don't add the files by mistake (e.g. while using git add .) and they won't show up in the output of the git status command.
+
+```
+config.ini
+*.html
+*.[oa]
+*~
+*.swp
+```
+
+Add this file to the repository and commit it. This will ensure that no one in the project will have the extra files problem.
+
+## title
+{id: title}
+
+## title
+{id: title}
+
 ## title
 {id: title}
 
