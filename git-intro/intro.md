@@ -284,7 +284,6 @@ diff --git a/README.txt b/README.txt
 index e51ca0d..a697828 100644
 --- a/README.txt
 +++ b/README.txt
-@@ -1 +1,2 @@
 -Hello Git
 +Hello Git
 +Second line
@@ -310,7 +309,6 @@ diff --git a/README.txt b/README.txt
 index e51ca0d..62567d0 100644
 --- a/README.txt
 +++ b/README.txt
-@@ -1 +1,2 @@
 -Hello Git
 \ No newline at end of file
 +Hello Git
