@@ -499,6 +499,62 @@ $ git diff --staged
 $ git diff HEAD
 * (changes between working copy and HEAD)
    
+## Remove from stage (unstage)
+{id: unstage}
+
+```
+$ git reset HEAD config.pl
+Unstaged changes after reset:
+M       README.txt
+M       config.pl
+$ git status
+examples/out/status_11.txt
+ On branch master
+ Changes not staged for commit:
+   (use "git add <file>..." to update what will be committed)
+   (use "git checkout -- <file>..." to discard changes in working directory)
+
+       modified:   README.txt
+       modified:   config.pl
+
+ Untracked files:
+   (use "git add <file>..." to include in what will be committed)
+
+       setup.pl
+no changes added to commit (use "git add" and/or "git commit -a")
+```
+
+**$ git reset HEAD will reset all the files currently staged.
+See also the unstage alias we created earlier.**
+
+## Drop local changes (restore to HEAD or to index)
+{id: drop-local}
+
+```
+$ git checkout config.pl
+$ git status
+```
+
+**git checkout FILENAME will replace FILENAME in the work tree with the one committed (or if there is a version already staged then to that version). You loose your local work.**
+
+**git checkout . will do it for all the files in the tree.**
+
+```
+examples/out/status_12.txt
+# On branch master
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#   modified:   README.txt
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#   setup.pl
+no changes added to commit (use "git add" and/or "git commit -a")
+```
+
 ## title
 {id: title}
 
