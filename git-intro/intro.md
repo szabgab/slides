@@ -274,7 +274,7 @@ examples/out/status_04.txt
 no changes added to commit (use "git add" and/or "git commit -a")
 ```  
 
-## Untracked/Modified/Staged
+## Untracked - Modified - Staged
 {id: untracked-modified-staged}
 
 **Create another file called config.pl**
