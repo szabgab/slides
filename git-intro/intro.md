@@ -485,18 +485,18 @@ index f9d55cd..e2b7f47 100644
 
 **changes between working copy and HEAD**
 
-## title
-{id: title}
+## Stage and HEAD
+{id: stage-and-head}
 
-## title
-{id: title}
+**working copy  ->  (git add) index -> (git commit) -> HEAD**
 
-## title
-{id: title}
-
-## title
-{id: title}
-
+$ git diff
+   # (changes between working copy and staged copy (index, cache))
+$ git diff --staged
+   # (changes between staged copy and HEAD)
+$ git diff HEAD
+   # (changes between working copy and HEAD)
+   
 ## title
 {id: title}
 
