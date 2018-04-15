@@ -181,7 +181,7 @@ $ git status
 nothing to commit (create/copy files and use "git add" to track)
 ```
 
-** This will create a directory called .git and put some files there
+**This will create a directory called .git and put some files there**
 
 ## Create first file
 {id: create-first-file}
@@ -206,7 +206,7 @@ nothing added to commit but untracked files present (use "git add" to track)
 ## File status
 {id: file-status}
 
-**Each file can be either
+**Each file can be either**
 * untracked
 * tracked
 * unmodified
@@ -219,7 +219,7 @@ nothing added to commit but untracked files present (use "git add" to track)
 * git add README.txt
 * git status
 
-**Add the files to the index (or staging area, or cache).
+**Add the files to the index (or staging area, or cache).**
 
 ```
 $ git add README.txt
@@ -275,7 +275,7 @@ $ git status
 no changes added to commit (use "git add" and/or "git commit -a")
 ```
 
-**What has changed?
+**What has changed?**
 
 ```
 $ git diff
@@ -300,7 +300,7 @@ examples/out/status_05.txt
 #
 ```
 
-**What did we change?
+**What did we change?**
 
 ```
 $ git diff
@@ -323,7 +323,7 @@ $ git commit -m "update README"
 ## Untracked and Modified
 {id: untracked-and-modified}
 
-**Create another file called setup.pl with a single line and also change the README file.
+**Create another file called setup.pl with a single line and also change the README file.**
 
 ```
 $ git status
@@ -345,7 +345,7 @@ no changes added to commit (use "git add" and/or "git commit -a")
 ## Untracked/Modified/Staged
 {id: untracked-modified-staged}
 
-**Create another file called config.pl
+**Create another file called config.pl**
 
 ```
 $ git status
@@ -365,7 +365,7 @@ examples/out/status_06.txt
 no changes added to commit (use "git add" and/or "git commit -a")
 ```
 
-**Stage it
+**Stage it**
 
 ```
 $ git add config.pl
