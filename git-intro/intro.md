@@ -209,9 +209,9 @@ nothing added to commit but untracked files present (use "git add" to track)
 **Each file can be either
 * untracked
 * tracked
-** unmodified
-** modified
-** staged
+* unmodified
+* modified
+* staged
 
 ## Add first file
 {id: add-first-file}
