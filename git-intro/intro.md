@@ -594,11 +594,28 @@ config.ini
 
 Add this file to the repository and commit it. This will ensure that no one in the project will have the extra files problem.
 
-## title
-{id: title}
+## add and commit in one step
+{id: one-step}
 
-## title
-{id: title}
+git add and commit at once of the modified files, but not the new files
+
+*$ git commit -a -m "some message"
+
+## Remove a file
+{id: remove-file}
+
+* $ git rm setup.pl
+
+```
+examples/out/status_15.txt
+ On branch master
+ Changes to be committed:
+   (use "git reset HEAD <file>..." to unstage)
+
+   deleted:    setup.pl
+
+$ git commit -m "remove"
+```
 
 ## title
 {id: title}
