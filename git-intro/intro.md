@@ -617,8 +617,20 @@ examples/out/status_15.txt
 $ git commit -m "remove"
 ```
 
-## title
-{id: title}
+## log and blame
+{id: log-blame}
+
+* git log
+* git log -p
+* git log --stat --summary
+* git log --graph
+
+* gitk --all
+
+* git blame [filename]
+
+![git blame1](git_blame_1.jpg)
+![git blame2](git_blame_2.png)
 
 ## Resources
 {id: resources}
