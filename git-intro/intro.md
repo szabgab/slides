@@ -181,8 +181,56 @@ $ git status
 nothing to commit (create/copy files and use "git add" to track)
 ```
 
+** This will create a directory called .git and put some files there
+
+## Create first file
+{id: create-first-file}
+
+Create README.txt with one line of text.
+Check the status of the working directory.
+
+```
+$ git status
+examples/out/status_01.txt
+# On branch master
+#
+# Initial commit
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#       README.txt
+nothing added to commit but untracked files present (use "git add" to track)
+```
+
+## File status
+{id: file-status}
+
+**Each file can be either
+* untracked
+* tracked
+* unmodified
+* modified
+* staged
+
 ## title
 {id: title}
+
+## title
+{id: title}
+
+## title
+{id: title}
+
+## title
+{id: title}
+
+## title
+{id: title}
+
+## title
+{id: title}
+
 
 ## Resources
 {id: resources}
