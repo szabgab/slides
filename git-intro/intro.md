@@ -68,7 +68,7 @@
 * Allow off-line development
 
 ## Git Overview
-{id: GitOverview}
+{id: git-overview}
 
 * Snapshots of the objects (files) and not diffs. Using pointers eliminate duplications.
 * Nearly every operation is local. (Off-line work)
@@ -78,8 +78,10 @@
 {id: getting-git}
 
 On UNIX/Linux you use your package manger (apt-get, yum, etc...) or install from git-scm.
+
 * yum install git-core
 * apt-get install git-core
+
 On Microsoft Windows install Git from msysgit (Git and not msysGit)
 On Mac: Git OSX installer
 
@@ -101,7 +103,7 @@ git version 2.1.3
 ```
 
 ## Configure Git
-{id: Configure-Git}
+{id: configure-git}
 
 **There are three levels of configuration:**
 System (--system)
@@ -140,7 +142,7 @@ $ git config user.name      # to see specific value
 ```
 
 ## Getting help
-{id: Getting-help}
+{id: getting-help}
 
 ```
 $ git help             # listing the most important commands
@@ -153,7 +155,7 @@ $ git help tutorial    # a simple git tutorial
 ```
 
 ## Exercises Session 1
-{id: Exercises-1}
+{id: exercises-1}
 
 * Check if you already have Git installed (open command line, check the version)
 * Install git
@@ -178,18 +180,6 @@ $ git status
 #
 nothing to commit (create/copy files and use "git add" to track)
 ```
-
-## title
-{id: title}
-
-## title
-{id: title}
-
-## title
-{id: title}
-
-## title
-{id: title}
 
 ## title
 {id: title}
