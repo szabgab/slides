@@ -218,6 +218,7 @@ nothing added to commit but untracked files present (use "git add" to track)
 
 * git add README.txt
 * git status
+
 **Add the files to the index (or staging area, or cache).
 
 ```
