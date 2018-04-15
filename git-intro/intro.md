@@ -174,10 +174,10 @@ $ cd app
 $ git init
 Initialized empty Git repository in C:/work/app/.git/
 $ git status
-# On branch master
-#
-# Initial commit
-#
+On branch master
+
+Initial commit
+
 nothing to commit (create/copy files and use "git add" to track)
 ```
 
@@ -192,14 +192,14 @@ Check the status of the working directory.
 ```
 $ git status
 examples/out/status_01.txt
-# On branch master
-#
-# Initial commit
-#
-# Untracked files:
-#   (use "git add <file>..." to include in what will be committed)
-#
-#       README.txt
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+      README.txt
 nothing added to commit but untracked files present (use "git add" to track)
 ```
 
@@ -225,15 +225,15 @@ nothing added to commit but untracked files present (use "git add" to track)
 $ git add README.txt
 $ git status
 examples/out/status_02.txt
-# On branch master
-#
-# Initial commit
-#
-# Changes to be committed:
-#   (use "git rm --cached <file>..." to unstage)
-#
-#       new file:   README.txt
-#
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+      new file:   README.txt
+
 ```
 
 ## Commit first file
@@ -248,7 +248,7 @@ $ git commit -m "Add README"
  1 file changed, 1 insertion(+)
  create mode 100644 README.txt
 $ git status
-# On branch master
+On branch master
 nothing to commit, working directory clean
 ```
 
@@ -260,17 +260,17 @@ nothing to commit, working directory clean
 ```
 $ git status
 examples/out/status_04.txt
-# On branch master
-# Changes not staged for commit:
-#   (use "git add <file>..." to update what will be committed)
-#   (use "git checkout -- <file>..." to discard changes in working directory)
-#
-#       modified:   README.txt
-#
-# Untracked files:
-#   (use "git add <file>..." to include in what will be committed)
-#
-#       setup.pl
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+      modified:   README.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+      setup.pl
 no changes added to commit (use "git add" and/or "git commit -a")
 ```  
 
@@ -287,13 +287,13 @@ edit the README.txt file again, adding a new row.
 
 ```
 $ git status
-# On branch master
-# Changes not staged for commit:
-#   (use "git add <file>..." to update what will be committed)
-#   (use "git checkout -- <file>..." to discard changes in working directory)
-#
-#       modified:   README.txt
-#
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+      modified:   README.txt
+
 no changes added to commit (use "git add" and/or "git commit -a")
 ```
 
@@ -313,12 +313,12 @@ index e51ca0d..a697828 100644
 $ git add README.txt
 $ git status
 examples/out/status_05.txt
-# On branch master
-# Changes to be committed:
-#   (use "git reset HEAD <file>..." to unstage)
-#
-#       modified:   README.txt
-#
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+      modified:   README.txt
+
 ```
 
 **What did we change?**
@@ -338,13 +338,13 @@ index e51ca0d..62567d0 100644
 $ git commit -m "update README"
 [master 1251a45] update README
  1 file changed, 2 insertions(+), 1 deletion(-)
- ```
+```
 
  
  
  
  
- ## Untracked - Modified - Staged
+## Untracked - Modified - Staged
 {id: untracked-modified-staged}
 
 **Create another file called config.pl**
@@ -352,18 +352,18 @@ $ git commit -m "update README"
 ```
 $ git status
 examples/out/status_06.txt
-# On branch master
-# Changes not staged for commit:
-#   (use "git add <file>..." to update what will be committed)
-#   (use "git checkout -- <file>..." to discard changes in working directory)
-#
-#       modified:   README.txt
-#
-# Untracked files:
-#   (use "git add <file>..." to include in what will be committed)
-#
-#       config.pl
-#       setup.pl
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+      modified:   README.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+      config.pl
+      setup.pl
 no changes added to commit (use "git add" and/or "git commit -a")
 ```
 
@@ -372,22 +372,22 @@ no changes added to commit (use "git add" and/or "git commit -a")
 ```
 $ git add config.pl
 examples/out/status_07.txt
-# On branch master
-# Changes to be committed:
-#   (use "git reset HEAD <file>..." to unstage)
-#
-#       new file:   config.pl
-#
-# Changes not staged for commit:
-#   (use "git add <file>..." to update what will be committed)
-#   (use "git checkout -- <file>..." to discard changes in working directory)
-#
-#       modified:   README.txt
-#
-# Untracked files:
-#   (use "git add <file>..." to include in what will be committed)
-#
-#       setup.pl
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+      new file:   config.pl
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+      modified:   README.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+      setup.pl
 ```
 
 
