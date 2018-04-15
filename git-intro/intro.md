@@ -274,51 +274,6 @@ examples/out/status_04.txt
 no changes added to commit (use "git add" and/or "git commit -a")
 ```  
 
-## Untracked - Modified - Staged
-{id: untracked-modified-staged}
-
-**Create another file called config.pl**
-
-```
-$ git status
-examples/out/status_06.txt
-# On branch master
-# Changes not staged for commit:
-#   (use "git add <file>..." to update what will be committed)
-#   (use "git checkout -- <file>..." to discard changes in working directory)
-#
-#       modified:   README.txt
-#
-# Untracked files:
-#   (use "git add <file>..." to include in what will be committed)
-#
-#       config.pl
-#       setup.pl
-no changes added to commit (use "git add" and/or "git commit -a")
-```
-
-**Stage it**
-
-```
-$ git add config.pl
-examples/out/status_07.txt
-# On branch master
-# Changes to be committed:
-#   (use "git reset HEAD <file>..." to unstage)
-#
-#       new file:   config.pl
-#
-# Changes not staged for commit:
-#   (use "git add <file>..." to update what will be committed)
-#   (use "git checkout -- <file>..." to discard changes in working directory)
-#
-#       modified:   README.txt
-#
-# Untracked files:
-#   (use "git add <file>..." to include in what will be committed)
-#
-#       setup.pl
-```
 
 ## title
 {id: title}
