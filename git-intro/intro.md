@@ -213,6 +213,45 @@ nothing added to commit but untracked files present (use "git add" to track)
 * modified
 * staged
 
+## Add first file
+{id: add-first-file}
+
+* git add README.txt
+* git status
+
+**Add the files to the index (or staging area, or cache).**
+
+```
+$ git add README.txt
+$ git status
+examples/out/status_02.txt
+# On branch master
+#
+# Initial commit
+#
+# Changes to be committed:
+#   (use "git rm --cached <file>..." to unstage)
+#
+#       new file:   README.txt
+#
+```
+
+## Commit first file
+{id: commit-first-file}
+
+* git commit -m "Add README"
+* git status
+
+```
+$ git commit -m "Add README"
+[master (root-commit) 1cd95a6] Add README
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.txt
+$ git status
+# On branch master
+nothing to commit, working directory clean
+```
+
 
 ## title
 {id: title}
