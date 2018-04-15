@@ -599,12 +599,12 @@ Add this file to the repository and commit it. This will ensure that no one in t
 
 git add and commit at once of the modified files, but not the new files
 
-*$ git commit -a -m "some message"
+* git commit -a -m "some message"
 
 ## Remove a file
 {id: remove-file}
 
-* $ git rm setup.pl
+* git rm setup.pl
 
 ```
 examples/out/status_15.txt
