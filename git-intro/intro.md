@@ -272,12 +272,13 @@ Untracked files:
 
       setup.pl
 no changes added to commit (use "git add" and/or "git commit -a")
-```  
+```
 
 ## Making some changes
 {id: making-some-changes}
 
 edit the README.txt file again, adding a new row.
+
 * git status
 * git diff
 * git add README.txt
