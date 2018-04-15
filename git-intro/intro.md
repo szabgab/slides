@@ -492,8 +492,10 @@ index f9d55cd..e2b7f47 100644
 
 $ git diff
 * (changes between working copy and staged copy (index, cache))
+
 $ git diff --staged
 * (changes between staged copy and HEAD)
+
 $ git diff HEAD
 * (changes between working copy and HEAD)
    
