@@ -310,7 +310,7 @@ index e51ca0d..62567d0 100644
 --- a/README.txt
 +++ b/README.txt
 -Hello Git
-\ No newline at end of file
+ No newline at end of file
 +Hello Git
 +Second line
 $ git commit -m "update README"
