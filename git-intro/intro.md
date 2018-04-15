@@ -630,6 +630,7 @@ $ git commit -m "remove"
 * git blame [filename]
 
 ![git blame1](git_blame_1.jpg)
+
 ![git blame2](git_blame_2.png)
 
 ## Resources
