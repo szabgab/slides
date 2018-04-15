@@ -209,24 +209,183 @@ nothing added to commit but untracked files present (use "git add" to track)
 **Each file can be either
 * untracked
 * tracked
-* unmodified
-* modified
-* staged
+** unmodified
+** modified
+** staged
 
-## title
-{id: title}
+## Add first file
+{id: add-first-file}
 
-## title
-{id: title}
+* git add README.txt
+* git status
+**Add the files to the index (or staging area, or cache).
 
-## title
-{id: title}
+```
+$ git add README.txt
+$ git status
+examples/out/status_02.txt
+# On branch master
+#
+# Initial commit
+#
+# Changes to be committed:
+#   (use "git rm --cached <file>..." to unstage)
+#
+#       new file:   README.txt
+#
+```
 
-## title
-{id: title}
+## Commit first file
+{id: commit-first-file}
 
-## title
-{id: title}
+* git commit -m "Add README"
+* git status
+
+```
+$ git commit -m "Add README"
+[master (root-commit) 1cd95a6] Add README
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.txt
+$ git status
+# On branch master
+nothing to commit, working directory clean
+```
+
+## Making some changes
+{id: making-some-changes}
+
+edit the README.txt file again, adding a new row.
+* git status
+* git diff
+* git add README.txt
+* git status
+* git diff
+* git$ git diff --cached (or --staged)
+
+```
+$ git status
+# On branch master
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#       modified:   README.txt
+#
+no changes added to commit (use "git add" and/or "git commit -a")
+```
+
+**What has changed?
+
+```
+$ git diff
+WARNING: terminal is not fully functional
+diff --git a/README.txt b/README.txt
+index e51ca0d..a697828 100644
+--- a/README.txt
++++ b/README.txt
+@@ -1 +1,2 @@
+-Hello Git
++Hello Git
++Second line
+
+$ git add README.txt
+$ git status
+examples/out/status_05.txt
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#       modified:   README.txt
+#
+```
+
+**What did we change?
+
+```
+$ git diff
+$ git diff --cached    (or --staged)
+WARNING: terminal is not fully functional
+diff --git a/README.txt b/README.txt
+index e51ca0d..62567d0 100644
+--- a/README.txt
++++ b/README.txt
+@@ -1 +1,2 @@
+-Hello Git
+\ No newline at end of file
++Hello Git
++Second line
+$ git commit -m "update README"
+[master 1251a45] update README
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+ ```
+
+## Untracked and Modified
+{id: untracked-and-modified}
+
+**Create another file called setup.pl with a single line and also change the README file.
+
+```
+$ git status
+examples/out/status_04.txt
+# On branch master
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#       modified:   README.txt
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#       setup.pl
+no changes added to commit (use "git add" and/or "git commit -a")
+```  
+
+## Untracked/Modified/Staged
+{id: untracked-modified-staged}
+
+**Create another file called config.pl
+
+```
+$ git status
+examples/out/status_06.txt
+# On branch master
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#       modified:   README.txt
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#       config.pl
+#       setup.pl
+no changes added to commit (use "git add" and/or "git commit -a")
+```
+
+**Stage it
+
+```
+$ git add config.pl
+examples/out/status_07.txt
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#       new file:   config.pl
+#
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#       modified:   README.txt
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#       setup.pl
+```
 
 ## title
 {id: title}
