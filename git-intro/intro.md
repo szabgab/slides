@@ -738,6 +738,271 @@ Merge made by the 'recursive' strategy.
 $ gitk --all
 ```
 
+## Merge with conflict
+{id: merge-with-conflict}
+
+
+```
+$ git branch featurey
+$ git co featurey
+```
+
+edit the app.pl file , add a line, commit the change
+
+```
+$ git co master
+```
+
+edit the app.pl file, add a line, commit the change
+
+```
+$ git merge featurey
+
+Auto-merging app.pl
+CONFLICT (content): Merge conflict in app.pl
+Automatic merge failed; fix conflicts and then commit the result.
+```
+
+```
+use 5.010;
+say "config";
+# some change
+# adding featurx step 1
+<<<<<<< HEAD
+# add fix on master
+=======
+# featurey 1
+>>>>>>> featurey
+```
+
+Edit the app.pl file and resolved the conflict, removing the marks and writing the correct code.
+
+```
+$ git add app.pl
+$ git ci -m "featurey merged"
+```
+
+## Repeated merge
+{id: repeated-merge}
+
+```
+$ git co featurey
+```
+
+edit app.pl add another line
+
+```
+$ git add app.pl
+$ git ci -m "another line"
+```
+
+```
+$ git co master
+$ git merge featurey
+```
+
+This time the merge was automatic, and it only included the changes since the previous merge. 
+
+## Delete branch
+{id: delete-branch}
+
+```
+$ git branch -d featurex
+```
+
+## Force delete branch
+{id: force-delete-branch}
+
+If you started to work on a feature but arrived to a dead-end. You can get rid of the whole branch without merging it.
+
+```
+git branch -D feature
+```
+
+## log between commits
+{id: log-between-commits}
+
+```
+$ git log SHA1..SHA2
+```
+
+## log show filenames
+{id: log-show-filenames}
+
+```
+$ git log --name-only
+```
+
+## Show history of renamed file
+{id: show-history-of-renamed-file}
+
+```
+$ git lot --follow --name-only FILENAME
+```
+
+## Commits that were not merged yet
+{id: commits-that-were-not-merged-yet}
+
+```
+$ git log fetureX --not master
+```
+
+## Git tag
+{id: git-tag}
+
+
+```
+$ git tag v1.10
+$ git tag -a v1.10 -m "commit message"
+```
+
+* Marks a specific commit. The former is a "light weight tag", the latter is an "annotated tag".
+* The light weight tag is just like a branch that does not move. A pointer to a commit.
+* An annotated tag is a full object.
+
+## Exercises Session 3
+{id: exercises-3}
+
+* Create two branches A and B
+* On A make 2 changes
+* On B make one change
+* Merge A to B
+* Create a new branch called C from A
+* Make a change on C
+* Make 2 more changes on A
+* Merge A to B again
+* Delete branch C
+* Delete branch A
+* Merge B to master
+* delete B
+
+## Stash
+{id: stash}
+
+You are in the middle of a change (some files have changed in your working directory) when you suddenly think about some refactoring to be done. How to save the local changes easily?
+
+change some files locally
+
+```
+$ git stash        # saves all the changes and leaves the directory clean
+Saved working directory and index state WIP on master: 6217360 last-commit
+HEAD is now at 6217360 last-commit
+```
+
+```
+$ git stash list
+stash@{0}: WIP on master: 6217360 last-commit
+```
+
+make some other changes, add and commit them
+
+```
+$ git stash pop     # will merge the stashed changes
+```
+
+## Using remote repository
+{id: using-remote-repository}
+
+* git clone
+* git push
+* git pull   (fetch and merge)
+
+## Clone repository
+{id: clone-repository}
+
+```
+cd ~/work
+$ git clone ws@git.code-maven.com:demo/
+cd demo
+```
+
+
+```
+git remote -v
+
+origin	ws@git.code-maven.com:demo/ (fetch)
+origin	ws@git.code-maven.com:demo/ (push)
+```
+
+## Make some local changes
+{id: make-some-local-changes}
+
+```
+git checkout -b feature
+   edit file
+git add .
+git commit -m "some change"
+```
+
+## push out local changes to branch
+{id: pus-out-local-changes-to-branch}
+
+```
+git push
+
+fatal: The current branch feature has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin feature
+```
+
+```
+$  git push -u origin feature
+
+Total 0 (delta 0), reused 0 (delta 0)
+To git.code-maven.com:demo/
+ * [new branch]      feature -> feature
+Branch 'feature' set up to track remote branch 'feature' from 'origin'.
+```
+
+## Remove remote branch
+{id: remove-remote-branch}
+
+
+```
+$  git push origin :feature
+
+To git.code-maven.com:demo/
+ - [deleted]         feature
+```
+
+## rebase
+{id: rebase}
+
+Create a branch and make some changes
+
+```
+git checkout -b feature
+...
+git add .
+git commit -m "some changes"
+```
+
+Make some progress on the `master` branch:
+
+```
+git checkout master
+...
+git add .
+git commit -m "progress"
+```
+
+Observe the situation using `gitk --all &`
+
+```
+$  git co feature
+Switched to branch 'feature'
+
+$  git rebase master
+First, rewinding head to replay your work on top of it...
+Applying: feature
+```
+
+Observe the situation again using `gitk --all &`
+
+
+
+
 ## Resources
 {id: resources}
 * [Our Meetup page](https://www.meetup.com/Code-Mavens/)
