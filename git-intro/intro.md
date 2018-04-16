@@ -77,29 +77,25 @@
 ## Git Installation
 {id: getting-git}
 
-On UNIX/Linux you use your package manger (apt-get, yum, etc...) or install from git-scm.
+[git-scm](https://git-scm.com/)
+
+On **Linux** you use your package manger (apt-get, yum, etc...) or install from git-scm.
 
 * yum install git-core
 * apt-get install git-core
 
-On Microsoft Windows install Git from msysgit (Git and not msysGit)
-On Mac: Git OSX installer
+On **Microsoft Windows** install Git from git-scm.
+
+On **Mac OSX** use [Homebrew](https://brew.sh/) or git-scm.
 
 ## Which version do you have?
 {id: version}
 
-Windows
-
-```
-c:\> git --version
-git version 1.8.1.msysgit.1
-```
-
-OSX
+Windows: use the Git Cmd
 
 ```
 $ git --version
-git version 2.1.3
+git version 2.15.0
 ```
 
 ## Configure Git
