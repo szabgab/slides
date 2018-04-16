@@ -216,6 +216,8 @@ nothing added to commit but untracked files present (use "git add" to track)
 **Each file can be either**
 * untracked
 * tracked
+
+**tracked files can be**
 * unmodified
 * modified
 * staged
@@ -315,7 +317,6 @@ no changes added to commit (use "git add" and/or "git commit -a")
 ```
 $ git diff
 
-WARNING: terminal is not fully functional
 diff --git a/README.txt b/README.txt
 index e51ca0d..a697828 100644
 --- a/README.txt
@@ -341,7 +342,6 @@ Changes to be committed:
 $ git diff
 $ git diff --cached    (or --staged)
 
-WARNING: terminal is not fully functional
 diff --git a/README.txt b/README.txt
 index e51ca0d..62567d0 100644
 --- a/README.txt
@@ -451,6 +451,10 @@ $ git status
 ## So what was changed?
 {id: so-what-has-changed}
 
+* git diff
+* git diff --cached
+* git diff HEAD
+
 ```
 $ git diff
 
@@ -467,7 +471,7 @@ index 62567d0..fb89137 100644
 **Only the changes to the not staged files are shown**
 
 ```
-$ git diff --cached   ( or --staged)
+$ git diff --cached
 diff --git a/config.pl b/config.pl
 index f9d55cd..e2b7f47 100644
 --- a/config.pl
@@ -617,6 +621,12 @@ git add and commit at once of the modified files, but not the new files
 
 * git commit -a -m "some message"
 
+## Move a file
+{id: move-file}
+
+* git mv old.txt new.txt
+
+
 ## Remove a file
 {id: remove-file}
 
@@ -632,6 +642,20 @@ git add and commit at once of the modified files, but not the new files
 $ git commit -m "remove"
 ```
 
+## Frequency of commits
+{id: frequency-of-commits}
+
+
+
+Adding files and committing changes to Git is cheap. What happens if you made some great work during the day and, at 5 pm when you were tired you made some bad changes. How can you go back to the state that was 5 minutes ago?
+
+* Commit after adding a new function.
+* Commit after writing a new test case.
+* Commit after making any small change.
+* Commits are cheap and fast.
+
+
+
 ## log and blame
 {id: log-blame}
 
@@ -640,13 +664,79 @@ $ git commit -m "remove"
 * git log --stat --summary
 * git log --graph
 
+## gitk
+{id: gitk}
+
 * gitk --all
+
+## blame
+{id: git-blame}
 
 * git blame [filename]
 
 ![git blame1](git_blame_1.jpg)
 
 ![git blame2](git_blame_2.png)
+
+## Exercises Session 2
+{id: exercises-2}
+
+* Create a directory and inside create a new local repository.
+* Create a directory and in that directory create a file. (You can use Visual Studio or Eclipse or your IDE to start a new project.)
+* Add the directories and files to the repository.
+* Are there any files that should not be tracked?
+* Make sure git will ignore them in this project.
+* Make some changes. Check what are the changes. Commit some of them.
+* Go over the previous chapter and execute all the commands we went through.
+* If there is any problem. Ask for help!
+
+## Create a branch
+{id: create-a-branch}
+
+You might work on a feature or a bug-fix, sometimes you will need to stop working and implement some other changes. There might be several people working on different features at the same time. Git allows and encourages frequent commits
+
+```
+$ git branch
+* master
+
+$ git branch featurex
+$ git branch
+  featurex
+* master
+
+$ git checkout featurex
+Switched to branch 'featurex'
+$ git branch
+* featurex
+  master
+```
+
+make some changes to app.pl, and commit them to the repository
+
+Check using `gitk`
+
+## Simple automatic merge
+{id: simple-automatic-merge}
+
+```
+$ git checkout master
+```
+
+* see that the changes have "disappeared"
+* make some other change on the master to README.txt
+* see that the two have diverged (use gitk)
+* merge the feature into master
+
+```
+$ git merge featurex
+Merge made by the 'recursive' strategy.
+ app.pl |    1 +
+ 1 file changed, 1 insertion(+)
+```
+
+```
+$ gitk --all
+```
 
 ## Resources
 {id: resources}
