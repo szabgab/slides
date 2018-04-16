@@ -95,6 +95,7 @@ Windows: use the Git Cmd
 
 ```
 $ git --version
+
 git version 2.15.0
 ```
 
@@ -137,6 +138,15 @@ $ git config --list --global
 $ git config user.name      # to see specific value
 ```
 
+## Configure and Privacy
+{id: privacy}
+
+* Your name
+* Your e-mail address
+
+* [eBook](https://leanpub.com/collab-dev-git/c/code-maven-ws3): https://leanpub.com/collab-dev-git/c/code-maven-ws3
+
+
 ## Getting help
 {id: getting-help}
 
@@ -168,7 +178,8 @@ $ git help tutorial    # a simple git tutorial
 $ mkdir app
 $ cd app
 $ git init
-Initialized empty Git repository in C:/work/app/.git/
+Initialized empty Git repository in /c/work/app/.git/
+
 $ git status
 On branch master
 
@@ -187,7 +198,7 @@ Check the status of the working directory.
 
 ```
 $ git status
-examples/out/status_01.txt
+
 On branch master
 
 Initial commit
@@ -220,7 +231,7 @@ nothing added to commit but untracked files present (use "git add" to track)
 ```
 $ git add README.txt
 $ git status
-examples/out/status_02.txt
+
 On branch master
 
 Initial commit
@@ -240,10 +251,13 @@ Changes to be committed:
 
 ```
 $ git commit -m "Add README"
+
 [master (root-commit) 1cd95a6] Add README
  1 file changed, 1 insertion(+)
  create mode 100644 README.txt
+
 $ git status
+
 On branch master
 nothing to commit, working directory clean
 ```
@@ -255,7 +269,7 @@ nothing to commit, working directory clean
 
 ```
 $ git status
-examples/out/status_04.txt
+
 On branch master
 Changes not staged for commit:
   (use "git add <file>..." to update what will be committed)
@@ -280,10 +294,12 @@ edit the README.txt file again, adding a new row.
 * git add README.txt
 * git status
 * git diff
-* git$ git diff --cached (or --staged)
+* git diff --cached 
+* git diff --staged
 
 ```
 $ git status
+
 On branch master
 Changes not staged for commit:
   (use "git add <file>..." to update what will be committed)
@@ -298,6 +314,7 @@ no changes added to commit (use "git add" and/or "git commit -a")
 
 ```
 $ git diff
+
 WARNING: terminal is not fully functional
 diff --git a/README.txt b/README.txt
 index e51ca0d..a697828 100644
@@ -309,7 +326,7 @@ index e51ca0d..a697828 100644
 
 $ git add README.txt
 $ git status
-examples/out/status_05.txt
+
 On branch master
 Changes to be committed:
   (use "git reset HEAD <file>..." to unstage)
@@ -323,6 +340,7 @@ Changes to be committed:
 ```
 $ git diff
 $ git diff --cached    (or --staged)
+
 WARNING: terminal is not fully functional
 diff --git a/README.txt b/README.txt
 index e51ca0d..62567d0 100644
@@ -332,15 +350,13 @@ index e51ca0d..62567d0 100644
  No newline at end of file
 +Hello Git
 +Second line
+
 $ git commit -m "update README"
+
 [master 1251a45] update README
  1 file changed, 2 insertions(+), 1 deletion(-)
 ```
 
- 
- 
- 
- 
 ## Untracked - Modified - Staged
 {id: untracked-modified-staged}
 
@@ -348,7 +364,7 @@ $ git commit -m "update README"
 
 ```
 $ git status
-examples/out/status_06.txt
+
 On branch master
 Changes not staged for commit:
   (use "git add <file>..." to update what will be committed)
@@ -364,11 +380,12 @@ Untracked files:
 no changes added to commit (use "git add" and/or "git commit -a")
 ```
 
-**Stage it**
+## Stage it
+{id: stage-it}
 
 ```
 $ git add config.pl
-examples/out/status_07.txt
+
 On branch master
 Changes to be committed:
   (use "git reset HEAD <file>..." to unstage)
@@ -395,7 +412,7 @@ Untracked files:
 ```
 $ notepad config.pl
 $ git status
-examples/out/status_09.txt
+
  On branch master
  Changes not staged for commit:
    (use "git add <file>..." to update what will be committed)
@@ -409,9 +426,10 @@ examples/out/status_09.txt
 
        setup.pl
 no changes added to commit (use "git add" and/or "git commit -a")
+
 $ git add config.pl
 $ git status
-examples/out/status_10.txt
+
  On branch master
  Changes to be committed:
    (use "git reset HEAD <file>..." to unstage)
@@ -430,10 +448,12 @@ examples/out/status_10.txt
        setup.pl
 ```
 
-**So what was changed?**
+## So what was changed?
+{id: so-what-has-changed}
 
 ```
 $ git diff
+
 diff --git a/README.txt b/README.txt
 index 62567d0..fb89137 100644
 --- a/README.txt
@@ -500,23 +520,25 @@ $ git diff HEAD
 
 ```
 $ git reset HEAD config.pl
+
 Unstaged changes after reset:
 M       README.txt
 M       config.pl
+
 $ git status
-examples/out/status_11.txt
- On branch master
- Changes not staged for commit:
-   (use "git add <file>..." to update what will be committed)
-   (use "git checkout -- <file>..." to discard changes in working directory)
 
-       modified:   README.txt
-       modified:   config.pl
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
 
- Untracked files:
-   (use "git add <file>..." to include in what will be committed)
+      modified:   README.txt
+      modified:   config.pl
 
-       setup.pl
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+      setup.pl
 no changes added to commit (use "git add" and/or "git commit -a")
 ```
 
@@ -536,28 +558,26 @@ $ git status
 **git checkout . will do it for all the files in the tree.**
 
 ```
-examples/out/status_12.txt
-# On branch master
-# Changes not staged for commit:
-#   (use "git add <file>..." to update what will be committed)
-#   (use "git checkout -- <file>..." to discard changes in working directory)
-#
-#   modified:   README.txt
-#
-# Untracked files:
-#   (use "git add <file>..." to include in what will be committed)
-#
-#   setup.pl
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+  modified:   README.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+  setup.pl
 no changes added to commit (use "git add" and/or "git commit -a")
 ```
 
 ## Add all the files
 {id: add-all-files}
 
-*$ git add .
-*$ git status
+* $ git add .
+* $ git status
 
-examples/out/status_13.txt
 
 ```
 On branch master
@@ -582,10 +602,10 @@ This will make sure you don't add the files by mistake (e.g. while using git add
 
 ```
 config.ini
-*.html
-*.[oa]
-*~
-*.swp
+.html
+.[oa]
+~
+.swp
 ```
 
 Add this file to the repository and commit it. This will ensure that no one in the project will have the extra files problem.
@@ -603,7 +623,6 @@ git add and commit at once of the modified files, but not the new files
 * git rm setup.pl
 
 ```
-examples/out/status_15.txt
  On branch master
  Changes to be committed:
    (use "git reset HEAD <file>..." to unstage)
