@@ -19,6 +19,8 @@
 ## Download Jenkins
 {id: download-jenkins}
 
+* Download Java JRE for Linux https://www.java.com/en/download/linux_manual.jsp
+
 * https://jenkins.io/download/
 
 * Platforms: Windows, OSX, Linux
