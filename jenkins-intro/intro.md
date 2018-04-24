@@ -33,6 +33,21 @@ java -jar jenkins.war
 ```
 
 
+Install Docker https://docs.docker.com/install/linux/linux-postinstall/
+docker run hello-world
+
+docker: Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.s
+sudo usermod -a -G docker $USER
+
+
+## Jenkins configuration files
+{id: jenkins-configuration-files}
+
+
+~/.jenkins/config.xml
+~/.jenkins/jobs/
+~/.jenkins/users/
+
 
 ## Jenkins Resources
 {id: jenkins-resources}
