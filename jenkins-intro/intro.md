@@ -16,6 +16,23 @@
 * What do you do
 * Something interesting about you
 
+## CI/CD
+{id: ci-cd}
+
+* Triggerd by a new change in the Version Control system
+* Get the latest source code
+* Compile the project (if necessary)
+* Run the unit tests
+* Save the artifact in a safe storage
+* Create a package
+* Set up a test system (might need multiple machines)
+* Run integration / acceptance tests
+* Deploy the new version
+
+* Collect coverage reports
+* Number of tests - graph
+
+
 ## Download Jenkins
 {id: download-jenkins}
 
@@ -40,6 +57,21 @@ docker: Got permission denied while trying to connect to the Docker daemon socke
 sudo usermod -a -G docker $USER
 
 
+* Install Jenkins on Digital Ocean
+
+## Freestyle Project
+{id: freestyle-project}
+
+GitHub Project: https://github.com/szabgab/slider-py
+   (this is only used to create an html link to the project)
+
+Source Code Management
+Git
+    https://github.com/szabgab/slider-py/
+
+
+
+
 ## Jenkins configuration files
 {id: jenkins-configuration-files}
 
@@ -47,6 +79,12 @@ sudo usermod -a -G docker $USER
 ~/.jenkins/config.xml
 ~/.jenkins/jobs/
 ~/.jenkins/users/
+
+## Jenkins issues
+{id: jenkins-issues}
+
+* After configuration and log in I get a blank page - restart jenkins (service jenkins restart)
+* Crash (Lack of memory) - restart
 
 
 ## Jenkins Resources

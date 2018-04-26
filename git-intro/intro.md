@@ -1000,6 +1000,22 @@ Applying: feature
 
 Observe the situation again using `gitk --all &`
 
+## bisect - find broken commit
+{id: bisect}
+
+```
+git bisect start
+
+# test fails
+git bisect bad
+
+git checkout old-sha
+# test passes
+git bisect good
+
+# test passes / fails
+git bisect good / bad
+
 
 
 
