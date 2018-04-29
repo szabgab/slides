@@ -710,14 +710,15 @@ $ git tag -a v1.10 -m "commit message"
 ## Exercises Session 3
 {id: exercises-3}
 
-* Create a tag on the current commit using `git tag -a v1 -m 'this is v1'
+* Create a tag on the current commit using `git tag -a v1 -m 'this is v1'`
 * Use `gitk --all` to see it.
 * Use `git log` to see it.
 
 ## Branching in Git
 {id: branching-in-git}
 
-* You might work on a feature or a bug-fix, sometimes you will need to stop working and implement some other changes.
+* You might work on several features and bug-fixes at the same time.
+* Sometimes you will need to stop working and implement some other changes.
 * There might be several people working on different features at the same time.
 * Git allows and encourages frequent commits.
 
@@ -749,13 +750,30 @@ git checkout -b featurex
 * Make some changes to file, and commit it to the repository.
 * Use `gitk --all` to see the branch.
 
+## Switch between branches
+{id: switch-between-branches}
+
+```
+git checkout master
+```
+
+* This will switch to the `master` branch.
+
+* See that the changes have "disappeared".
+* Make some other change on the master to README.txt.
+* See that the two have diverged (use `gitk --all`).
+
 ## Exercises Session 4
 {id: exercises-4}
 
-* Create three new branches featureA and featureB. (or any other names)
-* On `master` make a few commits to `README`.
+* While still on the master branch create 2 new files A.txt and B.txt with the content "a file" and "b file" respevtively.
+* Commit the changes.
+
+* Create three new branches featureA, featureB, and featureC. (or any other names)
+* On `master` make a commit to `README`. (Add a line 'this is master')
 * On `featureA` make a few commits to a file called `A.txt`.
 * On `featureB` make a few commits to a file called `B.txt`.  
+* On `featureC` make a commit to `README` changing (Add a line 'this is feaure C').
 
 ## Simple automatic merge
 {id: simple-automatic-merge}
@@ -764,21 +782,25 @@ git checkout -b featurex
 $ git checkout master
 ```
 
-* See that the changes have "disappeared".
-* Make some other change on the master to README.txt.
-* See that the two have diverged (use `gitk --all`).
 * Merge the feature into master.
 
 ```
 $ git merge featurex
 Merge made by the 'recursive' strategy.
- app.pl |    1 +
+ A.txt |    1 +
  1 file changed, 1 insertion(+)
 ```
 
 ```
 $ gitk --all
 ```
+
+
+## Exercises Session 5
+{id: exercises-5}
+
+* Merge featureA into the master branch.
+* Observe the results with `gitk --all`.
 
 ## Merge with conflict
 {id: merge-with-conflict}
