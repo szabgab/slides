@@ -952,6 +952,9 @@ Observe the situation again using `gitk --all &`
 ## Various ways to list changes
 {id: ways-to-list-changes}
 
+* `gitk --all`
+* `git log`
+
 
 ## log between commits
 {id: log-between-commits}
@@ -971,11 +974,13 @@ $ git log --name-only
 {id: show-history-of-renamed-file}
 
 ```
-$ git lot --follow --name-only FILENAME
+$ git log --follow --name-only FILENAME
 ```
 
 ## Commits that were not merged yet
 {id: commits-that-were-not-merged-yet}
+
+* commits on one branch but not on the other branch
 
 ```
 $ git log fetureX --not master
@@ -984,9 +989,10 @@ $ git log fetureX --not master
 ## Stash
 {id: stash}
 
-You are in the middle of a change (some files have changed in your working directory) when you suddenly think about some refactoring to be done. How to save the local changes easily?
+* You are in the middle of a change (some files have changed in your working directory) when you suddenly think about some refactoring to be done.
+* How to save the local changes easily?
 
-change some files locally
+* Change some files locally
 
 ```
 $ git stash        # saves all the changes and leaves the directory clean
@@ -999,7 +1005,7 @@ $ git stash list
 stash@{0}: WIP on master: 6217360 last-commit
 ```
 
-make some other changes, add and commit them
+* Make some other changes, add and commit them.
 
 ```
 $ git stash pop     # will merge the stashed changes
@@ -1020,6 +1026,51 @@ $ git stash pop     # will merge the stashed changes
 * `git stash pop`
 * See the previous partial changes are in the working directory. Including the new file.
 * Commit the changes.
+
+## bisect - find broken commit
+{id: bisect}
+
+```
+git bisect start
+
+# test fails
+git bisect bad
+
+git checkout old-sha
+# test passes
+git bisect good
+
+# test passes / fails
+git bisect good / bad
+```
+
+## Exercises Session 9
+{id: exercises-9}
+
+* Create a file called 'add.sh' with the following content:
+
+![](add.sh)
+
+* Make it executable.
+* Test it: `./add 23 19` should print 42
+* Commit it.
+
+* Create a file called NUMBER and put a 1 in it.
+* Commit it.
+* Then create 5 more commit changing the file to some other number. (This might help)
+
+```
+echo 7 > NUMBER
+git commit -am "7"
+```
+
+* Then change the `add.sh` file replacing the + by a -.
+* Create another 5 commits chaning the NUMBER file.
+
+* No check if the `add.sh` script works
+* `./add.sh 23 19` will now prin 4 instead of 42.
+
+* Using bisect find the commit that broke it.
 
 
 ## Using remote repository
@@ -1088,30 +1139,11 @@ To git.code-maven.com:demo/
  - [deleted]         feature
 ```
 
-## bisect - find broken commit
-{id: bisect}
-
-```
-git bisect start
-
-# test fails
-git bisect bad
-
-git checkout old-sha
-# test passes
-git bisect good
-
-# test passes / fails
-git bisect good / bad
-
-
-
-
 ## Resources
 {id: resources}
+
 * [Our Meetup page](https://www.meetup.com/Code-Mavens/)
 * [Our Facebook page](https://www.facebook.com/Devops.Workshops)
 * [Facebook group](https://www.facebook.com/groups/188753948553382/)
 * [Slides of Gabor](https://code-maven.com/slides/git/)
-
 
