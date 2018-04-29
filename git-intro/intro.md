@@ -768,6 +768,7 @@ git checkout master
 
 * While still on the master branch create 2 new files A.txt and B.txt with the content "a file" and "b file" respevtively.
 * Commit the changes.
+* As you make the changes, keep using `gitk --all` to observe the changes.
 
 * Create three new branches featureA, featureB, and featureC. (or any other names)
 * On `master` make a commit to `README`. (Add a line 'this is master')
@@ -796,71 +797,70 @@ $ gitk --all
 ```
 
 
+## Merge with conflict
+{id: merge-with-conflict}
+
+```
+$ git branch featurey
+$ git checkout featurey
+```
+
+edit the README file, add a line, commit the change.
+
+```
+$ git checkout master
+```
+
+edit the README file, add a line, commit the change.
+
+```
+$ git merge featurey
+
+Auto-merging README
+CONFLICT (content): Merge conflict in README
+Automatic merge failed; fix conflicts and then commit the result.
+```
+
+```
+Line before changes
+<<<<<<< HEAD
+# add fix on master
+=======
+# line added in featurey
+>>>>>>> featurey
+```
+
+Edit the README file and resolved the conflict, removing the marks and writing the correct code.
+
+```
+$ git add README
+$ git ci -m "featurey merged"
+```
+
 ## Exercises Session 5
 {id: exercises-5}
 
 * Merge featureA into the master branch.
 * Observe the results with `gitk --all`.
 
-## Merge with conflict
-{id: merge-with-conflict}
-
-```
-$ git branch featurey
-$ git co featurey
-```
-
-edit the app.pl file , add a line, commit the change
-
-```
-$ git co master
-```
-
-edit the app.pl file, add a line, commit the change
-
-```
-$ git merge featurey
-
-Auto-merging app.pl
-CONFLICT (content): Merge conflict in app.pl
-Automatic merge failed; fix conflicts and then commit the result.
-```
-
-```
-use 5.010;
-say "config";
-# some change
-# adding featurx step 1
-<<<<<<< HEAD
-# add fix on master
-=======
-# featurey 1
->>>>>>> featurey
-```
-
-Edit the app.pl file and resolved the conflict, removing the marks and writing the correct code.
-
-```
-$ git add app.pl
-$ git ci -m "featurey merged"
-```
+* Then merge featureC into the master branch
 
 ## Repeated merge
 {id: repeated-merge}
 
 ```
-$ git co featurey
+$ git checkout featurey
 ```
 
-edit app.pl add another line
+edit README add another line
 
 ```
-$ git add app.pl
+$ git add README
 $ git ci -m "another line"
 ```
 
 ```
-$ git co master
+$ git checkout master
 $ git merge featurey
 ```
 
@@ -882,12 +882,71 @@ If you started to work on a feature but arrived to a dead-end. You can get rid o
 git branch -D feature
 ```
 
+## Exercises Session 6
+{id: exercises-6}
+
+* Check out featureC, make some changes, commit
+* Merge fetureC into master again - it should be without conflict
+
+* Check out featureA, make some changes, commit
+* Check out master and run `gitk --all`. featureC should be fully merged and featureA should have commit on it.
+
+* Remove (delete) both featureA and featureC branches.
+
+## rebase
+{id: rebase}
+
+* Have straight line of history.
+* Make it easier for the maintainer of the application to merge changes.
+* Resolve conflicts before the merge.
+
+Create a branch and make some changes
+
+```
+git checkout -b feature
+...
+git add .
+git commit -m "some changes"
+```
+
+Make some progress on the `master` branch:
+
+```
+git checkout master
+...
+git add .
+git commit -m "progress"
+```
+
+Observe the situation using `gitk --all &`
+
+```
+$  git checkout feature
+Switched to branch 'feature'
+
+$  git rebase master
+First, rewinding head to replay your work on top of it...
+Applying: feature
+```
+
+Observe the situation again using `gitk --all &`
+
+## Exercises Session 7
+{id: exercises-7}
+
+* featureC has some changes that started a while ago. Since then master made some progress.
+* Rebase featureC onto master.
+* Observe the state before and after.
+
 ## log between commits
 {id: log-between-commits}
 
 ```
 $ git log SHA1..SHA2
 ```
+
+## Various ways to list changes
+{id: ways-to-list-changes}
 
 ## log show filenames
 {id: log-show-filenames}
@@ -1012,40 +1071,6 @@ $  git push origin :feature
 To git.code-maven.com:demo/
  - [deleted]         feature
 ```
-
-## rebase
-{id: rebase}
-
-Create a branch and make some changes
-
-```
-git checkout -b feature
-...
-git add .
-git commit -m "some changes"
-```
-
-Make some progress on the `master` branch:
-
-```
-git checkout master
-...
-git add .
-git commit -m "progress"
-```
-
-Observe the situation using `gitk --all &`
-
-```
-$  git co feature
-Switched to branch 'feature'
-
-$  git rebase master
-First, rewinding head to replay your work on top of it...
-Applying: feature
-```
-
-Observe the situation again using `gitk --all &`
 
 ## bisect - find broken commit
 {id: bisect}
