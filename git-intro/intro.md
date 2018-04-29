@@ -690,6 +690,17 @@ Adding files and committing changes to Git is cheap. What happens if you made so
 * Go over the previous chapter and execute all the commands we went through.
 * If there is any problem. Ask for help!
 
+
+## Alias
+{id: alias}
+
+```
+git config --global alias.st status
+git config --global alias.co checkout
+git config --global alias.ci commit
+git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+```
+
 ## Git tag
 {id: git-tag}
 
@@ -938,15 +949,16 @@ Observe the situation again using `gitk --all &`
 * Rebase featureC onto master.
 * Observe the state before and after.
 
+## Various ways to list changes
+{id: ways-to-list-changes}
+
+
 ## log between commits
 {id: log-between-commits}
 
 ```
 $ git log SHA1..SHA2
 ```
-
-## Various ways to list changes
-{id: ways-to-list-changes}
 
 ## log show filenames
 {id: log-show-filenames}
@@ -968,19 +980,6 @@ $ git lot --follow --name-only FILENAME
 ```
 $ git log fetureX --not master
 ```
-
-## Exercises Session 30
-{id: exercises-30}
-
-* Merge A to B
-* Create a new branch called C from A
-* Make a change on C
-* Make 2 more changes on A
-* Merge A to B again
-* Delete branch C
-* Delete branch A
-* Merge B to master
-* delete B
 
 ## Stash
 {id: stash}
@@ -1005,6 +1004,23 @@ make some other changes, add and commit them
 ```
 $ git stash pop     # will merge the stashed changes
 ```
+
+## Exercises Session 8
+{id: exercises-8}
+
+* Make some local changes
+* Create a new file
+* Stash them away using `git stash -u`
+* Observe that the working directory is clean and back to the previous state
+* Observe the content of the stash.
+
+* Make some other changes
+* Commit them.
+
+* `git stash pop`
+* See the previous partial changes are in the working directory. Including the new file.
+* Commit the changes.
+
 
 ## Using remote repository
 {id: using-remote-repository}
