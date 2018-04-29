@@ -690,10 +690,39 @@ Adding files and committing changes to Git is cheap. What happens if you made so
 * Go over the previous chapter and execute all the commands we went through.
 * If there is any problem. Ask for help!
 
+## Git tag
+{id: git-tag}
+
+* You release a new version of your software.
+* What if later you'll need to come back to the same commit and make some changes?
+* How to remember which SHA-1 was this release?
+ 
+```
+$ git tag v1.10
+$ git tag -a v1.10 -m "commit message"
+```
+
+* A tag marks a specific commit. The former is a "light weight tag", the latter is an "annotated tag".
+* The light weight tag is just like a branch that does not move. A pointer to a commit.
+* An annotated tag is a full object.
+
+
+## Exercises Session 3
+{id: exercises-3}
+
+* Create a tag on the current commit using `git tag -a v1 -m 'this is v1'
+* Use `gitk --all` to see it.
+* Use `git log` to see it.
+
+## Branching in Git
+{id: branching-in-git}
+
+* You might work on a feature or a bug-fix, sometimes you will need to stop working and implement some other changes.
+* There might be several people working on different features at the same time.
+* Git allows and encourages frequent commits.
+
 ## Create a branch
 {id: create-a-branch}
-
-You might work on a feature or a bug-fix, sometimes you will need to stop working and implement some other changes. There might be several people working on different features at the same time. Git allows and encourages frequent commits
 
 ```
 $ git branch
@@ -711,9 +740,22 @@ $ git branch
   master
 ```
 
-make some changes to app.pl, and commit them to the repository
+* Alternative that creates a branch and checks it out:
 
-Check using `gitk`
+```
+git checkout -b featurex
+```
+
+* Make some changes to file, and commit it to the repository.
+* Use `gitk --all` to see the branch.
+
+## Exercises Session 4
+{id: exercises-4}
+
+* Create three new branches featureA and featureB. (or any other names)
+* On `master` make a few commits to `README`.
+* On `featureA` make a few commits to a file called `A.txt`.
+* On `featureB` make a few commits to a file called `B.txt`.  
 
 ## Simple automatic merge
 {id: simple-automatic-merge}
@@ -722,10 +764,10 @@ Check using `gitk`
 $ git checkout master
 ```
 
-* see that the changes have "disappeared"
-* make some other change on the master to README.txt
-* see that the two have diverged (use gitk)
-* merge the feature into master
+* See that the changes have "disappeared".
+* Make some other change on the master to README.txt.
+* See that the two have diverged (use `gitk --all`).
+* Merge the feature into master.
 
 ```
 $ git merge featurex
@@ -740,7 +782,6 @@ $ gitk --all
 
 ## Merge with conflict
 {id: merge-with-conflict}
-
 
 ```
 $ git branch featurey
@@ -847,25 +888,9 @@ $ git lot --follow --name-only FILENAME
 $ git log fetureX --not master
 ```
 
-## Git tag
-{id: git-tag}
+## Exercises Session 30
+{id: exercises-30}
 
-
-```
-$ git tag v1.10
-$ git tag -a v1.10 -m "commit message"
-```
-
-* Marks a specific commit. The former is a "light weight tag", the latter is an "annotated tag".
-* The light weight tag is just like a branch that does not move. A pointer to a commit.
-* An annotated tag is a full object.
-
-## Exercises Session 3
-{id: exercises-3}
-
-* Create two branches A and B
-* On A make 2 changes
-* On B make one change
 * Merge A to B
 * Create a new branch called C from A
 * Make a change on C
