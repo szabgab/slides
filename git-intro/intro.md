@@ -715,7 +715,23 @@ $ git tag -a v1.10 -m "commit message"
 
 * A tag marks a specific commit. The former is a "light weight tag", the latter is an "annotated tag".
 * The light weight tag is just like a branch that does not move. A pointer to a commit.
-* An annotated tag is a full object.
+* An annotated tag is a full object with owner and message (annotation).
+* `git push --follow-tags` only pushes annotated tags
+
+## Remove tags
+{id: remove-tags}
+
+Locally:
+
+```
+git tag -d TAGNAME
+```
+
+Remotely:
+
+```
+git push --delete origin TAGNAME
+```
 
 
 ## Exercises Session 3
