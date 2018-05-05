@@ -62,14 +62,64 @@ sudo usermod -a -G docker $USER
 ## Freestyle Project
 {id: freestyle-project}
 
-GitHub Project: https://github.com/szabgab/slider-py
+Enter a name: Demo
+click on Freestle project
+
+
+GitHub Project: https://github.com/szabgab/demo-flask-project
    (this is only used to create an html link to the project)
 
 Source Code Management
 Git
-    https://github.com/szabgab/slider-py/
+    https://github.com/szabgab/demo-flask-project
+Save
 
+Build Now
 
+This will clone the current version of the project.
+We can see it in the "Workspace"
+See "Build history"
+
+Click around, see console output
+
+## Configure
+{id: configure}
+
+Build - execute shell
+
+```
+./run_jenkins.sh
+```
+
+Build Now
+
+This will try to run the `run_jenkins.sh` script that does not exist in our repo and thus it will fail.
+
+## Add Jenkins script
+{id: add-jenkins-script}
+
+In the project directory create the `run_jenkins.sh` file  with the following content:
+
+```
+#!/bin/bash
+
+virtualenv venv
+source venv/bin/activate
+pip install -r requirements.txt
+pytest
+```
+
+Make it executable by running:
+
+```
+chmod +x run_jenkins.sh
+```
+
+Commit it to the git repository and push it out.
+
+Then click on "Build Now" on the Jenkins UI.
+
+It should build successfully now.
 
 
 ## Jenkins configuration files
