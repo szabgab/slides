@@ -146,7 +146,33 @@ It should build successfully now.
 * Save
 
 * Make some changes to the project in the local git repo and push it out to Github
+* Observe that after a few seconds the build starts.
 
+
+## Deploy
+{id: deploy}
+
+* In Jenkins Configure the project again
+* Add another step to the build process with the following content: `./deploy.sh`
+* Create the `deploy.sh` in the Git repository with the following content:
+
+```
+#!/bin/bash
+echo "Deploy!"
+
+cd /home/gabor/work/demo-flask-project;
+/usr/bin/git pull
+sudo /usr/sbin/service uwsgi reload
+```
+
+## Configure application
+{id: configure-application}
+
+* `visudo`
+
+```
+jenkins ALL= NOPASSWD: /usr/sbin/service uwsgi reload
+```
 
 
 ## Jenkins configuration files
