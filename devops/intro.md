@@ -9,6 +9,8 @@
 
 The overall goal of the companies is to create more value to customers in order to get more value out of it.
 
+If the same amount received today has a higher value than a year from now. So "sooner" has a higher value than later.
+
 ## Value stream
 {id: values-stream}
 
@@ -47,4 +49,13 @@ First write down the arabic numbers 0123456789, them letters  abcdefghij, and th
 
 I II III IV V VI VII VIII IX X
 In the next round write the same ones down but this time start by writing down the first value of each, then the second value of each.
+
+## Lead time
+{id: lead-time}
+
+* Time to complete a task from requirement to use by client. 
+* Lead tine: from time of check-in till use of the code. 
+* Reduce WIP: Kanban board can be used. 
+* Reduce batch size. 
+
 
