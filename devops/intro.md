@@ -21,43 +21,37 @@ The overall goal of the companies is to create more value to customers.
 
 * The sooner the better.
 
-If the same amount received today has a higher value than a year from now. So "sooner" has a higher value than later.
+* Getting 1,000,000 ten years from now is great.
+* Getting it one year from now is much better.
+* Getting it next week is even better than that.
 
-## What is in a name?
-{id: what-is-in-a-name}
+So "sooner" has a higher value than later.
+
+"Time is Money"
+
+## What is the solution
+{id: what-is-the-solution}
+
+* Lean
+* Agile
+* Scrum
+* Kanban
+* SAFe
+* Spine
+* XP
+* DevOps
+* DevSecOps
 
 * Stamping a name on it marking with a v does not work well.
-* Saying we are lean, agile, scrum, XP, or that we use DevOps or DevSecOps ones not bring us closer to a solution.
 * Better to discuss what can and what cannot make a difference.
-
-## Business needs for change
-{id: business-needs-for-change}
-
-* Reduce time to market
-* Increase feature throughput
-
-* Decrease cost
-* Increase quality
-
-
-## The tension
-{id: the-tension}
-
-Two competing goals of the IT organization:
-
-* Respond to the rapidly changing competitive landscape.
-* Provide stable, reliable, and secure service to the customer.
 
 ## Fast or stable?
 {id: fast-or-stable}
 
 Fast development and stable software are traditionally orthogonal to each other.
 
-However research shows that using the right approach one can achieve fast-paced development and stable software.  (Research ?)
-
-A special case of the above mentioned problem is the tension between developers and operations.
-Traditionally Developers are more interested in creating software, using the latest libraries etc.
-Operations are required to provide stability for the production system. Stability requires little or no changes to the software stack. (e.g. OS, third-party library, code)
+However research shows that using the right approach one can achieve fast-paced development and stable software.
+(See the DevOps handbook.)
 
 ## Deploy per day VS stability
 {id: deploy-per-day-vs-stability}
@@ -65,6 +59,21 @@ Operations are required to provide stability for the production system. Stabilit
 A drawing: x coordinates risk of release (number of issues per release, stability of release)
 y coordinates: frequency of releases. (The paradox)
 
+
+## The tension
+{id: the-tension}
+
+Two competing goals of the IT organization:
+
+* Respond to the rapidly changing competitive landscape. (Development)
+* Provide stable, reliable, and secure service to the customer. (Operations)
+
+A special case of the above mentioned problem is the tension between developers and operations.
+Traditionally Developers are more interested in creating software, using the latest libraries etc.
+Operations are required to provide stability for the production system. Stability requires little or no changes to the software stack. (e.g. OS, third-party library, code)
+
+## Getting faster
+{id: getting-faster}
 
 A drawing of an arrow or just line. On the left side it is "an organization that releases software once a year"
 on the right end "Amazon, releasing once a second".
@@ -91,10 +100,10 @@ by Andrew Clay Shafer.
 ## Test-Driven Development
 {id: test-driven-development}
 
-* Test provide a solid ground to run on.
-* Mor confidence in our changes.
-* Test makes better code.
-* Test makes better systems (catch bugs earlier)
+* Tests provide a solid ground to run on.
+* More confidence in our changes.
+* Tests make better code.
+* Tests make better systems (catch bugs earlier).
 
 ## Optimizing Developer Effort
 {id: optimizing-developer-effort}
@@ -105,19 +114,21 @@ Microsoft research shows that developers on a mature code-base spend their time:
 * 20% modifying code
 * 5% writing new code
 
-(source https://blogs.msdn.microsoft.com/peterhal/2006/01/04/what-do-programmers-really-do-anyway-aka-part-2-of-the-yardstick-saga/ )
-
+* [source](https://blogs.msdn.microsoft.com/peterhal/2006/01/04/what-do-programmers-really-do-anyway-aka-part-2-of-the-yardstick-saga/)
 * [Wakatime](https://wakatime.com/)
 
 
-## The cost
-{id: the-cost}
+## The business cost
+{id: the-business-cost}
 
 * Wasted time, cost fixing bugs.
 * Low of customer trust due to bugs.
 * Long development time.
 * Fear of release.
 
+
+## The human cost
+{id: the-human-cost}
 
 * Long working hours.
 * Reduced quality of life.
