@@ -1,5 +1,5 @@
 # Introduction to DevOps
-{id: introduction-to-devops}
+{id: index}
 
 ## Subtitles
 {id: subtitles}
@@ -59,6 +59,17 @@ A special case of the above mentioned problem is the tension between developers 
 Traditionally Developers are more interested in creating software, using the latest libraries etc.
 Operations are required to provide stability for the production system. Stability requires little or no changes to the software stack. (e.g. OS, third-party library, code)
 
+## Deploy per day VS stability
+{id: deploy-per-day-vs-stability}
+
+A drawing: x coordinates risk of release (number of issues per release, stability of release)
+y coordinates: frequency of releases. (The paradox)
+
+
+A drawing of an arrow or just line. On the left side it is "an organization that releases software once a year"
+on the right end "Amazon, releasing once a second".
+Move further to the right on this line.
+
 ## Wall of Confusion
 {id: wall-of-confustion}
 
@@ -93,6 +104,11 @@ Microsoft research shows that developers on a mature code-base spend their time:
 * 75% reading code
 * 20% modifying code
 * 5% writing new code
+
+(source https://blogs.msdn.microsoft.com/peterhal/2006/01/04/what-do-programmers-really-do-anyway-aka-part-2-of-the-yardstick-saga/ )
+
+* [Wakatime](https://wakatime.com/)
+
 
 ## The cost
 {id: the-cost}
@@ -274,42 +290,16 @@ Most engineers I know want to enjoy work and be proud of their accomplishments.
 * Learn better development practices that will be relevant in your next job as well.
 
 
-## Implementation
-{id: implementation}
-
-* Reinforce learning culture.
-* Instead of adding more people to the team, improve the way the team works.
-* Infrastructure as code.
-
-The two most important aspects are value creation and feedback. So start with this. Discuss the things we  value. Then build in short feedback loops in your process. 
-
-
-* Top down support. VP RnD or CEO.
-* Bottom up experimentation, feedback. 
-* Educate people. Both about the ideas and about the techniques.
-* Find the first bottleneck that is in your power to change.
-* If you don't yet have the support of higher management you can do it in the team level.
-* Start writing tests. At first this will take you extra time. Later you will see the value. Put it in the estimates. They are part of your job.
-
-
-## Greenfield projects VS brownfield projects
-{id: brownfield-projects}
-
-Greenfield projects are easier to implement.
-
-Brownfield projects have:
-
-* Technical debt.
-* Legacy code.
-* Unsupported platforms.
-
-* Users.
-
 ## Features
 {id: features}
 
-* Testebility
+* Testability
 * Deployability
+* Architecture
+* Security
+* Performance
+* Stability
+* Configurability
 
 
 ## The DevOps transformation process
@@ -366,12 +356,91 @@ The same team
 
 * Repeatable deployment pipeline.
 
+## Design
+{id: design}
 
-## ITIL
-{id: itil}
+* Design for both external and internal customers. 
+* The external pays for it but the internal also uses it. 
+* Optimize for downstream work center. 
 
-* ITIL - Information Technology Infrastructure Library.
-* ITSM - IT service management.
+## How to implement all this?
+{id: how-to-implemnt}
+
+* Top down support.
+* Bottom up experimentation, feedback. 
+
+* Get support from the top: VP RnD, CxO.
+* Team level.
+
+## Theory X and Theory Y
+{id: theory-x-and-theory-y}
+
+* X thinks people are lazy, need supervision.
+* Y thinks people can be autonomous if trusted.
+
+* [Theory X and Theory Y](https://en.wikipedia.org/wiki/Theory_X_and_Theory_Y)
+
+## Time boxing experiment
+{id: time-boxing-experiment}
+
+* Use time boxing for experimentation to reduce risk and increase chances of acceptance. 
+
+## Greenfield projects VS brownfield projects
+{id: brownfield-projects}
+
+Greenfield projects are easier to get started with.
+
+Brownfield projects have:
+
+* Technical debt.
+* Legacy code.
+* Unsupported platforms.
+
+* Users.
+
+
+## Top down approach
+{id: top-down-approach}
+
+* Start with the team that has the most open attitude to the new way of work. 
+* Educate people. Both about the ideas and about the techniques.
+* Find the first bottleneck that is in your power to change.
+* Reinforce learning culture.
+* Instead of adding more people to the team, improve the way the team works.
+
+## Team level approach
+{id: team-level-approach}
+
+* Start writing tests.
+* For every new feature, for every bug.
+* Include time for refactoring.
+
+At first this will take you extra time. Later you will see the value. Put it in the estimates. They are part of your job.
+
+* Allocate at least 20% of your time to this.
+
+
+## Implementation
+{id: implementation}
+
+* Infrastructure as code.
+
+The two most important aspects are value creation and feedback. So start with this. Discuss the things we value. Then build in short feedback loops in your process. 
+
+## Learn from the mistakes
+{id: learn-from-the-mistakes}
+
+* Blameless post mortem. [Etsy Morgue tool](https://github.com/etsy/morgue).
+* Learning organization.
+* Transform local discoveries into global improvements. ( US navy reactors. )
+
+## Resilience testing
+{id: resilience-testing}
+
+* Intentianlly cause problems during the work day and see how the tools and the team react.
+* Fix any issues. Learn.
+* [Netflix Chaos Monkey](https://github.com/Netflix/SimianArmy/wiki/Chaos-Monkey)
+
 
 ## Resources
 {id: recommended-books}
