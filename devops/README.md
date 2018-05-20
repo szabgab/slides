@@ -1,3 +1,11 @@
+Introduction to DevOps
+
+## Subtitles
+{id: subtitles}
+
+* Faster cheaper better pick any 3
+* Fast cheap low-risk
+
 
 ## Business needs for change
 {id: business-needs-for-change}

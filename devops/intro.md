@@ -1,12 +1,5 @@
-# Introduction to DevOps
+# High-performing technology organizations.
 {id: index}
-
-## Subtitles
-{id: subtitles}
-
-* Faster cheaper better pick any 3
-* Fast cheap low-risk
-* High-performing technology organizations.
 
 ## Goal - Value
 {id: goal}
@@ -73,7 +66,7 @@ Traditionally Developers are more interested in creating software, using the lat
 Operations are required to provide stability for the production system. Stability requires little or no changes to the software stack. (e.g. OS, third-party library, code)
 
 ## Wall of Confusion
-{id: wall-of-confustion}
+{id: wall-of-confusion}
 
 ![Wall of Confusion](WallOfConfusion.png)
 
@@ -100,7 +93,7 @@ Move further to the right on this line.
 ## Priorities
 {id: priorities}
 
-* Instaed of building 5 features - one feature each person
+* Instead of building 5 features - one feature each person
 * Build 2-3 features first and when you are done build the remaining feature.
 
 * You get some value (and feedback) earlier.
@@ -135,7 +128,7 @@ Example: fill envelops - you have 10 envelops to fill with a letter. You have 4 
 
 
 ## Reduce Multitasking
-{id: reduce-multitaskin}
+{id: reduce-multitasking}
 
 Drawing thats shows how much time we spend on actual work vs. The switching cost for 1-5 parallel tasks.
 
@@ -158,7 +151,7 @@ First time write these horizontally:
 
 * First write down the Arabic numbers.
 * Then the Latin letters
-* Then the roman numbers.
+* Then the Roman numbers.
 
 In the next round write the same ones down, but this time start by writing down the first value of each, then the second value of each. (So you'd first write down 0, a, I, then 1, b, II etc.)
 
@@ -241,7 +234,7 @@ From idea (hypothesis, request) to solution running in production.
 
 * Organization determines architecture
 
-* Modulare system requires modular organization
+* Modular system requires modular organization
 
 ## Small Teams
 {id: small-teams}
@@ -282,7 +275,7 @@ From idea (hypothesis, request) to solution running in production.
 
 * Create fast feedback loops
 
-* Test automation (unit and other autometed tests).
+* Test automation (unit and other automated tests).
 * Build system.
 * Continuous Integration (CI).
 * Continuous Deployment (CD).
@@ -372,8 +365,11 @@ The same team
 * Optimize for downstream work center. 
 
 
-## The DevOps transformation process
-{id: devops-transformation-process}
+## The transformation process
+{id: transformation-process}
+
+* It can take years.
+* We would like to see results soon.
 
 * Top down support.
 * Bottom up experimentation, feedback. 
@@ -384,8 +380,12 @@ The same team
 ## Theory X and Theory Y
 {id: theory-x-and-theory-y}
 
+by Douglas McGregor
+
 * X thinks people are lazy, need supervision.
 * Y thinks people can be autonomous if trusted.
+
+![X Y](x-y.png)
 
 * [Theory X and Theory Y](https://en.wikipedia.org/wiki/Theory_X_and_Theory_Y)
 
@@ -447,7 +447,7 @@ The two most important aspects are value creation and feedback. So start with th
 ## Resilience testing
 {id: resilience-testing}
 
-* Intentianlly cause problems during the work day and see how the tools and the team react.
+* Intentionally cause problems during the work day and see how the tools and the team react.
 * Fix any issues. Learn.
 * [Netflix Chaos Monkey](https://github.com/Netflix/SimianArmy/wiki/Chaos-Monkey)
 
