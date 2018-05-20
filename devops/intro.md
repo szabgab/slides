@@ -72,13 +72,6 @@ A special case of the above mentioned problem is the tension between developers 
 Traditionally Developers are more interested in creating software, using the latest libraries etc.
 Operations are required to provide stability for the production system. Stability requires little or no changes to the software stack. (e.g. OS, third-party library, code)
 
-## Getting faster
-{id: getting-faster}
-
-A drawing of an arrow or just line. On the left side it is "an organization that releases software once a year"
-on the right end "Amazon, releasing once a second".
-Move further to the right on this line.
-
 ## Wall of Confusion
 {id: wall-of-confustion}
 
@@ -86,7 +79,23 @@ Move further to the right on this line.
 
 by Andrew Clay Shafer.
 
-( source: http://dev2ops.org/2010/02/what-is-devops/ )
+* [source](http://dev2ops.org/2010/02/what-is-devops/)
+
+
+## Release frequency
+
+{id: release-frequency}
+
+![Release frequency](release-frequency.jpg)
+
+* [source](https://medium.com/data-ops/releasing-new-analytics-every-second-fc5fefd92360)
+
+## Getting faster
+{id: getting-faster}
+
+A drawing of an arrow or just line. On the left side it is "an organization that releases software once a year"
+on the right end "Amazon, releasing once a second".
+Move further to the right on this line.
 
 ## Priorities
 {id: priorities}
@@ -97,27 +106,6 @@ by Andrew Clay Shafer.
 * You get some value (and feedback) earlier.
 * Incremental delivery.
 
-## Test-Driven Development
-{id: test-driven-development}
-
-* Tests provide a solid ground to run on.
-* More confidence in our changes.
-* Tests make better code.
-* Tests make better systems (catch bugs earlier).
-
-## Optimizing Developer Effort
-{id: optimizing-developer-effort}
-
-Microsoft research shows that developers on a mature code-base spend their time:
-
-* 75% reading code
-* 20% modifying code
-* 5% writing new code
-
-* [source](https://blogs.msdn.microsoft.com/peterhal/2006/01/04/what-do-programmers-really-do-anyway-aka-part-2-of-the-yardstick-saga/)
-* [Wakatime](https://wakatime.com/)
-
-
 ## The business cost
 {id: the-business-cost}
 
@@ -125,7 +113,6 @@ Microsoft research shows that developers on a mature code-base spend their time:
 * Low of customer trust due to bugs.
 * Long development time.
 * Fear of release.
-
 
 ## The human cost
 {id: the-human-cost}
@@ -135,40 +122,6 @@ Microsoft research shows that developers on a mature code-base spend their time:
 * Powerless in the organization.
 * Low employee satisfaction.
 * High turnover rate.
-
-## Value stream (a concept of lean)
-{id: value-stream}
-
-Value stream mapping: how to visualize work and align leadership for organizational transformation. 
-
-From idea (hypothesis, request) to solution running in production.
-
-
-## The Flow
-{id: flow}
-
-* Flow of information and material.
-* Value is only realized when the feature reaches the customer.
-
-* Requirements (Product management)
-* Design
-* Development
-* Information security (InfoSec)
-* QA
-* IT Operations
-
-## Improve the Value stream
-{id: improve-the-values-stream}
-
-* Make the work and the bottlenecks visible!  Eg use a Kanban board.
-* Limit work in process (WIP), as that only generates cost. (Fewer Things, More Done)
-* Reduce switching cost, wasted investment.
-* Reduce batch sizes
-* Reduce number of handoffs as each handoff is a queue. A source for misunderstanding etc. Functional testing load testing firewall, server setup etc.  Solution is automation and more autonomous teams self service teams. 
-* Continually Identify and remove our bottlenecks.
-* Constantly optimizing the system.
-* Preventing rework. Reduce the number and seriousness of defects.
-* Eliminate waste and hardship
 
 ## Small Batch size
 {id: small-batch-size}
@@ -210,6 +163,62 @@ First time write these horizontally:
 In the next round write the same ones down, but this time start by writing down the first value of each, then the second value of each. (So you'd first write down 0, a, I, then 1, b, II etc.)
 
 Observe how much longer the second method takes.
+
+## Test-Driven Development
+{id: test-driven-development}
+
+* Tests provide a solid ground to run on.
+* More confidence in our changes.
+* Tests make better code.
+* Tests make better systems (catch bugs earlier).
+
+## Optimizing Developer Effort
+{id: optimizing-developer-effort}
+
+Microsoft research shows that developers on a mature code-base spend their time:
+
+* 75% reading code
+* 20% modifying code
+* 5% writing new code
+
+* [source](https://blogs.msdn.microsoft.com/peterhal/2006/01/04/what-do-programmers-really-do-anyway-aka-part-2-of-the-yardstick-saga/)
+* [Wakatime](https://wakatime.com/)
+
+
+
+## Value stream (a concept of lean)
+{id: value-stream}
+
+Value stream mapping: how to visualize work and align leadership for organizational transformation. 
+
+From idea (hypothesis, request) to solution running in production.
+
+
+## The Flow
+{id: flow}
+
+* Flow of information and material.
+* Value is only realized when the feature reaches the customer.
+
+* Requirements (Product management)
+* Design
+* Development
+* Information security (InfoSec)
+* QA
+* IT Operations
+
+## Improve the Value stream
+{id: improve-the-values-stream}
+
+* Make the work and the bottlenecks visible!  Eg use a Kanban board.
+* Limit work in process (WIP), as that only generates cost. (Fewer Things, More Done)
+* Reduce switching cost, wasted investment.
+* Reduce batch sizes
+* Reduce number of handoffs as each handoff is a queue. A source for misunderstanding etc. Functional testing load testing firewall, server setup etc.  Solution is automation and more autonomous teams self service teams. 
+* Continually Identify and remove our bottlenecks.
+* Constantly optimizing the system.
+* Preventing rework. Reduce the number and seriousness of defects.
+* Eliminate waste and hardship
 
 ## Total time
 {id: total-time}
@@ -313,24 +322,12 @@ Most engineers I know want to enjoy work and be proud of their accomplishments.
 * Configurability
 
 
-## The DevOps transformation process
-{id: devops-transformation-process}
-
-* Pick the value stream to be the first to convert
-
 ## Resilient teams
 {id: resilient-teams}
 
 * Chaos Monkey of Netflix
 * Randomly kill processes and compute servers in production to see how the monitoring system and the whole team reacts
 * Do this often during work hours and reduce the risk of such thing happening during the nights.
-
-## Release frequency
-{id: release-frequency}
-
-![Release frequency](release-frequency.jpg)
-
-(source https://medium.com/data-ops/releasing-new-analytics-every-second-fc5fefd92360 )
 
 ## DevOps loop
 {id: devops-loop}
@@ -374,8 +371,9 @@ The same team
 * The external pays for it but the internal also uses it. 
 * Optimize for downstream work center. 
 
-## How to implement all this?
-{id: how-to-implemnt}
+
+## The DevOps transformation process
+{id: devops-transformation-process}
 
 * Top down support.
 * Bottom up experimentation, feedback. 
@@ -413,6 +411,7 @@ Brownfield projects have:
 ## Top down approach
 {id: top-down-approach}
 
+* Pick the value stream to be the first to convert:
 * Start with the team that has the most open attitude to the new way of work. 
 * Educate people. Both about the ideas and about the techniques.
 * Find the first bottleneck that is in your power to change.
