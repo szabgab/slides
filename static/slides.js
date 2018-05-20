@@ -27,7 +27,8 @@ function KeyCheck(e) {
 
       case 191:
         // ?
-        alert("? - this help\nt - toc\nk - keywords\nh - toggle extra text\n-> next\n<- - prev\nSPACE - next\n");
+        alert("? - this help\n-> next\n<- - prev\nSPACE - next\n");
+        //alert("? - this help\nt - toc\nk - keywords\nh - toggle extra text\n-> next\n<- - prev\nSPACE - next\n");
     //PgUp - prev\nPgDown - next
         break;
 
