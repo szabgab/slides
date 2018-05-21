@@ -32,12 +32,13 @@ You will come out from the workshop knowing
 
 * Isolate parts of the system to test them on their own.
 
-* Speed up tests (e.g. eliminate remote calls)
+* Speed up tests (e.g. eliminate remote calls).
 
 * Simulate cases that are hard to replicate. (What if the other system fails?)
 
-* Write application agains API that is not ready yet
-*  ... or not controlled by you.
+* Write application agains API that is not ready yet or not controlled by you.
+
+* Unit tests.
 
 ## Unit testing vs Integration testing
 {id: unit-testing-vs-integration-testing}
@@ -87,11 +88,11 @@ E       FileNotFoundError: [Errno 2] No such file or directory: '/corporate/fixe
 ## Mocking
 {id: mocking}
 
-[](exo/aud.py)
+![](exo/aud.py)
 
-[](exo/test_aud_attr.py)
+![](exo/test_aud_attr.py)
 
-[](exo/test_aud_item.py)
+![](exo/test_aud_item.py)
 
 
 ## Mocking attribute
@@ -118,24 +119,30 @@ The test:
 
 ![](ex2/test_calc.py)
 
-## Pytest mock
-{id: pytest-mock}
+## Exercises
+{id: exercise}
 
-```pip install pytest-mock```
+[Source](https://github.com/szabgab/slides)
 
-
+```
+git clone https://github.com/szabgab/slides.git
+cd slides/python-mocking/
+```
 
 ## One Dimentsional space-fight
 {id: one-dimensional-space-fight}
 
-game.py
-test_game_exit.py
-test_game_play.py
+![](space-fight/game.py)
 
 ## Resources
 {id: resources}
 
+* [MonkeyPatching](https://docs.pytest.org/en/latest/reference.html#_pytest.monkeypatch.MonkeyPatch)
 
 * Create a simple web application that can add two values
+
+
+test_game_exit.py
+test_game_play.py
 
 
