@@ -1,4 +1,4 @@
-# High-performing technology organizations.
+# Creating High-performing technology organizations
 {id: index}
 
 ## Goal - Value
