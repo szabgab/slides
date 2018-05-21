@@ -55,6 +55,13 @@
   {% if c.name == 'image' %}
      <img src="{{ c.filename }}" title="{{ c.title }}" />
   {% endif %}
+  {% if c.name == 'video' %}
+     <video width="320" height="240" controls>
+        <source src="{{ c.filename }}" type="video/mp4" title="{{ c.title }}">
+        Your browser does not support the video tag.
+    </video> 
+  {% endif %}
+
 {% endfor %}
 
   <script src="slides.js"></script>
