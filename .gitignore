@@ -2,3 +2,4 @@
 *.bak
 *.swp
 __pycache__
+.cache

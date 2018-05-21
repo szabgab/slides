@@ -14,7 +14,7 @@
 
 You will come out from the workshop knowing
 
-* What is mocking?
+* What is mocking and Monkey Patching?
 * When to use it?
 * What are the dangers?
 
@@ -44,7 +44,7 @@ You will come out from the workshop knowing
 
 ![dryer](dryer.mp4)
 
-## Simple test case
+## Simple test case using Pytest
 {id: simple-test-case}
 
 A simple module with a function:
@@ -54,6 +54,8 @@ A simple module with a function:
 The test:
 
 ![](ex1/test_app.py)
+
+Running `pytest`:
 
 ```
 ======================== test session starts ========================
@@ -67,6 +69,18 @@ test_app.py .                                                 [100%]
 ===================== 1 passed in 0.01 seconds ======================
 ```
 
+## Mocking attribute
+{id: mocking-attribute}
+
+![](exa/app.py)
+
+
+![](exa/test_data_1.py)
+
+![](exa/test_data_2.py)
+
+![](exa/test_1.json)
+
 ## Mocking input/output
 {id: manually-mocking-input-output}
 
@@ -75,6 +89,15 @@ test_app.py .                                                 [100%]
 The test:
 
 ![](ex2/test_app.py)
+
+![](ex2/test_calc.py)
+
+## Pytest mock
+{id: pytest-mock}
+
+```pip install pytest-mock```
+
+
 
 ## One Dimentsional space-fight
 {id: one-dimensional-space-fight}
@@ -87,7 +110,6 @@ test_game_play.py
 {id: resources}
 
 
-* Simple example usng Pytest
 * Create a simple web application that can add two values
 
 
