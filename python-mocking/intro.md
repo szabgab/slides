@@ -69,17 +69,43 @@ test_app.py .                                                 [100%]
 ===================== 1 passed in 0.01 seconds ======================
 ```
 
-## Mocking attribute
-{id: mocking-attribute}
+## Hard coded path
+{id: hard-coded-path}
 
 ![](exa/app.py)
 
-
 ![](exa/test_data_1.py)
+
+pytest test_data_1.py
+
+```
+    def get_sum():
+>       with open(data_file) as fh:
+E       FileNotFoundError: [Errno 2] No such file or directory: '/corporate/fixed/path/data.json'
+```
+
+## Mocking
+{id: mocking}
+
+[](exo/aud.py)
+
+[](exo/test_aud_attr.py)
+
+[](exo/test_aud_item.py)
+
+
+## Mocking attribute
+{id: mocking-attribute}
 
 ![](exa/test_data_2.py)
 
 ![](exa/test_1.json)
+
+## Mocking attribute
+{id: monkeypatching-attribute}
+
+![](exa/test_data_3.py)
+
 
 ## Mocking input/output
 {id: manually-mocking-input-output}
