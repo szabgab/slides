@@ -129,20 +129,37 @@ git clone https://github.com/szabgab/slides.git
 cd slides/python-mocking/
 ```
 
-## One Dimentsional space-fight
+## Exercise: One Dimentsional space-fight
 {id: one-dimensional-space-fight}
 
+* Write a test that check the 'x' button works.
+* Write a test that check system can properly report 'less than'.
+* Write a test that check system can properly report 'greater than'.
+* Write a test that check system can properly report 'found'.
+
+* You might need to mock input/output/random.
+
 ![](space-fight/game.py)
+
+## Exercise: web client
+{id: web-client}
+
+* Test this application without hitting any web site.
+* Test what happens if the URL returns 404
+* What if it is a 500 error?
+* What if the host not found?
+
+![](crawler/app.py)
 
 ## Resources
 {id: resources}
 
-* [MonkeyPatching](https://docs.pytest.org/en/latest/reference.html#_pytest.monkeypatch.MonkeyPatch)
+* [MonkeyPatching](https://docs.pytest.org/en/latest/monkeypatch.html)
 
-* Create a simple web application that can add two values
+## Solutions
+{id: solutions}
 
+![](tests/test_game_exit.py)
 
-test_game_exit.py
-test_game_play.py
-
+![](tests/test_game_play.py)
 
