@@ -22,6 +22,9 @@ So "sooner" has a higher value than later.
 
 "Time is Money"
 
+![One release](time_value.svg)
+
+
 ## What is the solution
 {id: what-is-the-solution}
 
@@ -82,6 +85,7 @@ by Andrew Clay Shafer.
 ![Release frequency](release-frequency.jpg)
 
 * [source](https://medium.com/data-ops/releasing-new-analytics-every-second-fc5fefd92360)
+
 
 ## Getting faster
 {id: getting-faster}
