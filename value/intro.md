@@ -24,6 +24,8 @@ So "sooner" has a higher value than later.
 
 ![One release](time_value.svg)
 
+![Many releases](time_value_many_releases.svg)
+
 
 ## What is the solution
 {id: what-is-the-solution}

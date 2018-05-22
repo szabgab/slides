@@ -5,6 +5,30 @@ import svgwrite
 width = 440
 height = 240
 
+def many_releases(dwg, width, height):
+    line = svgwrite.shapes.Polyline( fill='white', stroke='black', stroke_width=5 )
+    line.points.append( (20,       height-24) )
+    steps = 5
+    for n in range(1, steps):
+        line.points.append( (20 + n*65,   height-24-n*40+40) )
+        line.points.append( (20 + n*65,   height-24-n*40) )
+    line.points.append( (width-80, height-24-steps*40+40) )
+    line.points.append( (width-80, 20) )
+    line.points.append( (width-20, 20) )
+
+    zz = 2
+    box = svgwrite.shapes.Polygon( fill=svgwrite.rgb(66, 244, 86) )
+    for n in range(1, steps):
+        box.points.append( ( 20 + n*65 + zz, height-24-n*40+40 + zz) )
+        box.points.append( ( 20 + n*65 + zz, height-24-n*40 + zz) )
+    box.points.append( ( width-80 + zz, height-24-steps*40+40 + zz) )
+    box.points.append( ( width-80 + zz, height-24-steps*40 + zz + 4) )
+    box.points.append( ( width-20 + zz, height-24-steps*40 + zz + 4) )
+    box.points.append( ( width-20 + zz, height-24 + zz) )
+    dwg.add( line )
+    dwg.add( box )
+
+
 def one_release(dwg, width, height):
     line = svgwrite.shapes.Polyline( fill='white', stroke='black', stroke_width=5 )
     line.points.append( (20,       height-24) )
@@ -64,6 +88,12 @@ if __name__ == '__main__':
     one_release(dwg, width, height)
 
     with open("value/time_value.svg", "w") as fh:
+        fh.write(dwg.tostring())
+
+    dwg = coordinates(width, height)
+    many_releases(dwg, width, height)
+
+    with open("value/time_value_many_releases.svg", "w") as fh:
         fh.write(dwg.tostring())
 
 
