@@ -43,7 +43,7 @@ y_arrow.points.append( (30, 30) )
 
 y_text = svgwrite.text.Text("value", insert=(17, 70), transform="translate(0) rotate(-90, 17, 70)")
 
-dwg = svgwrite.Drawing(width=width, height=height)
+dwg = svgwrite.Drawing(size=(width, height))
 dwg.add( x_coord )
 dwg.add( x_arrow )
 dwg.add( x_text )
@@ -56,6 +56,6 @@ dwg.add( line )
 dwg.add( box )
 
 
-with open("steps.svg", "w") as fh:
+with open("value/time_value.svg", "w") as fh:
     fh.write(dwg.tostring())
 
