@@ -11,17 +11,24 @@ class DB():
         c.execute('''CREATE TABLE account
                  (name text, ballance real)''')
 
-    def transfer(self, src, dest, amount):
+    def transfer(self, src, dst, amount):
         c = self.conn.cursor()
-        current = c.fetchone()
+        self.deposit(src, -amount)
+        self.deposit(dst, amount)
 
     def status(self, name):
         c = self.conn.cursor()
-        c.execute('SELECT * FROM account WHERE name=?', (name,))
+        c.execute('SELECT ballance FROM account WHERE name=?', (name,))
         current = c.fetchone()
-        return current
+        if current == None:
+            return current
+        else:
+            return current[0]
   
     def deposit(self, name, amount):
+        current = self.status(name)
         c = self.conn.cursor()
-        #c.execute('
-       
+        if current == None:
+            c.execute('INSERT INTO account (name, ballance) VALUES (?, ?)', (name, amount))
+        else:
+            c.execute('UPDATE account SET ballance = ? WHERE name = ?', (current+amount, name))
