@@ -18,7 +18,7 @@ You will come out from the workshop knowing
 * When to use it?
 * What are the dangers?
 
-You will also experiment with mocking in various situations.
+* Experiment with mocking in various situations.
 
 ## Situations
 {id: situations}
@@ -105,6 +105,17 @@ E       FileNotFoundError: [Errno 2] No such file or directory: '/corporate/fixe
 ![](exb/aut.py)
 
 ![](exb/test_aut_item.py)
+
+## Mocking a whole class
+{id: mocking-a-whole-class}
+
+![](exdb/bank.py)
+
+![](exdb/db.py)
+
+![](exdb/test_app_mocking.py)
+
+![](exdb/test_db_app.py)
 
 
 ## Mocking input/output
