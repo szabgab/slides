@@ -21,11 +21,12 @@ class DB():
             return current
         else:
             return current[0]
-  
-    def deposit(self, name, amount):
-        current = self.status(name)
+
+    def insert(self, name, amount):
         c = self.conn.cursor()
-        if current == None:
-            c.execute('INSERT INTO account (name, ballance) VALUES (?, ?)', (name, amount))
-        else:
-            c.execute('UPDATE account SET ballance = ? WHERE name = ?', (current+amount, name))
+        c.execute('INSERT INTO account (name, ballance) VALUES (?, ?)', (name, amount))
+
+    def update(self, name, amount):
+        c = self.conn.cursor()
+        c.execute('UPDATE account SET ballance = ? WHERE name = ?', (amount, name))
+  

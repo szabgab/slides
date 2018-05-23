@@ -11,10 +11,11 @@ class MockDB(object):
     def status(self, name):
         return self.db.get(name)
 
-    def deposit(self, name, amount):
-        if name not in self.db:
-            self.db[name] = 0
-        self.db[name] += amount
+    def insert(self, name, amount):
+        self.db[name] = amount
+
+    def update(self, name, amount):
+        self.db[name] = amount
 
 
 db.DB = MockDB

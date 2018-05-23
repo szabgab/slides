@@ -8,10 +8,11 @@ class Bank():
         self.db.create()
 
     def transfer(self, src, dst, amount):
-        current = self.db.status(src)
-        if current and current >= amount:
-            self.db.deposit(src, -amount)
-            self.db.deposit(dst, amount)
+        src_current = self.db.status(src)
+        dst_current = self.db.status(dst)
+        if src_current and src_current >= amount:
+            self.db.update(src, src_current-amount)
+            self.db.update(dst, dst_current+amount)
         else:
             raise Exception("Not enough money")
 
@@ -19,5 +20,8 @@ class Bank():
         return self.db.status(name)
   
     def deposit(self, name, amount):
-        self.db.deposit(name, amount)
-
+        current = self.db.status(name)
+        if current == None:
+            self.db.insert(name, amount)
+        else:
+            self.db.update(name, current+amount)
