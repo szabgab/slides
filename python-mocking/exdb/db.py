@@ -13,7 +13,7 @@ class DB():
         c.execute('''CREATE TABLE account
                  (name text, ballance real)''')
 
-    def status(self, name):
+    def get(self, name):
         c = self.conn.cursor()
         c.execute('SELECT ballance FROM account WHERE name=?', (name,))
         current = c.fetchone()

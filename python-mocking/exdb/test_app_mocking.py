@@ -8,7 +8,7 @@ class MockDB(object):
     def create(self):
         self.db = {}
 
-    def status(self, name):
+    def get(self, name):
         return self.db.get(name)
 
     def insert(self, name, amount):
