@@ -13,11 +13,6 @@ class DB():
         c.execute('''CREATE TABLE account
                  (name text, ballance real)''')
 
-#    def transfer(self, src, dst, amount):
-##        c = self.conn.cursor()
-#        self.deposit(src, -amount)
-#        self.deposit(dst, amount)
-
     def status(self, name):
         c = self.conn.cursor()
         c.execute('SELECT ballance FROM account WHERE name=?', (name,))
