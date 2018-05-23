@@ -8,7 +8,7 @@
 * Presentation about Mocking
 * Hands-on exercises
 * Retrospective
-* Job searching
+* Job searching help
 
 ## About me
 {id: about-me}
@@ -32,6 +32,8 @@ You will come out from the workshop knowing
 ## Situations
 {id: situations}
 
+* TDD
+
 * Write application agains API that is not ready yet or not controlled by you.
 
 * Replace a complex object with a simpler one.
@@ -44,21 +46,20 @@ You will come out from the workshop knowing
 
 * Unit tests.
 
+## Unit testing vs. Integration testing
+{id: unit-testing-vs-integration-testing}
+
+![dryer](dryer.mp4)
 
 ## Experiment with mocking in various situations
 
 {id: experiment-with-mocking}
 
-* Mocking time.
 * Mocking external calls.
 * Mocking method calls.
 * Mocking a whole class.
-
-
-## Unit testing vs. Integration testing
-{id: unit-testing-vs-integration-testing}
-
-![dryer](dryer.mp4)
+* Mocking time.
+* Mocking IO
 
 ## Simple test case using Pytest
 {id: simple-test-case}
@@ -129,19 +130,11 @@ E       FileNotFoundError: [Errno 2] No such file or directory: '/corporate/fixe
 ## Mocking a whole class
 {id: mocking-a-whole-class}
 
-![](exdb/bank.py)
+![](classy/app.py)
 
-![](exdb/db.py)
+![](classy/data.json)
 
-## Testing the whole application
-{id: testng-the-whole-application}
-
-![](exdb/test_db_app.py)
-
-## Mocking the database access
-{id: mocking-database-access}
-
-![](exdb/test_app_mocking.py)
+![](classy/test_app.py)
 
 ## Mocking input/output
 {id: mocking-input-output}
@@ -211,6 +204,18 @@ api=93712604
 
 ![](weather/get_weather.py)
 
+## Mocking A Bank
+{id: mocking-a-bank}
+
+![](exdb/bank.py)
+
+![](exdb/db.py)
+
+## Testing the whole application
+{id: testng-the-whole-application}
+
+![](exdb/test_db_app.py)
+
 
 ## Resources
 {id: resources}
@@ -219,6 +224,17 @@ api=93712604
 * [Python slides](https://code-maven.com/slides/python-programming/)
 * [Python testing with pytest](https://pragprog.com/book/bopytest/python-testing-with-pytest)
 
+## Retrospective
+{id: retrospective}
+
+* What went well?
+* What needs improvement?
+
+## Job searching help
+{id: job-searching}
+
+* LinkedIn
+* Open source projects
 
 ## Solutions
 {id: solutions}
@@ -226,5 +242,10 @@ api=93712604
 ![](tests/test_game_exit.py)
 
 ![](tests/test_game_play.py)
+
+## Mocking the database access
+{id: mocking-database-access}
+
+![](exdb/test_app_mocking.py)
 
 
