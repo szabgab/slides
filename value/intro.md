@@ -9,7 +9,7 @@
 
 The overall goal of the companies is to create more value to customers.
 
-## Time
+## Time is Money
 {id: time}
 
 * The sooner the better.
@@ -20,14 +20,7 @@ The overall goal of the companies is to create more value to customers.
 
 So "sooner" has a higher value than later.
 
-"Time is Money"
-
-![One release](time_value.svg)
-
-![Many releases](time_value_many_releases.svg)
-
-
-## What is the solution
+## What is the solution?
 {id: what-is-the-solution}
 
 * Lean
@@ -43,13 +36,68 @@ So "sooner" has a higher value than later.
 * Stamping a name on it marking with a v does not work well.
 * Better to discuss what can and what cannot make a difference.
 
+## Product types
+{id: product-types}
+
+* Embedded software
+* On-premise application/device
+* Desktop Application
+* Mobile Application
+* Web Application
+
 ## Fast or stable?
 {id: fast-or-stable}
 
-Fast development and stable software are traditionally orthogonal to each other.
+Fast development and stable software are traditionally seen as orthogonal to each other.
 
 However research shows that using the right approach one can achieve fast-paced development and stable software.
 (See the DevOps handbook.)
+
+
+## High Performing organizations
+{id: hight-performing-organizations}
+
+* **Multiple deploys per day** vs. one per month
+* **Commit to deploy in less than 1 hour** vs. one week
+* **Recover from failure in less than 1 hour** vs. one day
+* **Change failure rate of 0-15%** vs. 31-45%
+
+* [source](https://puppet.com/resources/whitepaper/state-of-devops-report) Puppet labs report
+
+## High Performing organizations
+{id: hight-performing-organizations-business}
+
+* **2.5x more likely to exceed business goals**
+* Profitability
+* Market share
+* Productivity
+
+* [source](https://puppet.com/resources/whitepaper/state-of-devops-report) Puppet labs report
+
+## Deploy per day VS value 
+{id: deploy-per-day-vs-value}
+
+![One release](time_value.svg)
+
+![Many releases](time_value_many_releases.svg)
+
+## The business cost
+{id: the-business-cost}
+
+* Wasted time, cost fixing bugs.
+* Low of customer trust due to bugs.
+* Long development time.
+* Fear of release.
+
+## The human cost
+{id: the-human-cost}
+
+* Long working hours.
+* Reduced quality of life.
+* Powerless in the organization.
+* Low employee satisfaction.
+* High turnover rate.
+
 
 ## Deploy per day VS stability
 {id: deploy-per-day-vs-stability}
@@ -69,6 +117,8 @@ Two competing goals of the IT organization:
 A special case of the above mentioned problem is the tension between developers and operations.
 Traditionally Developers are more interested in creating software, using the latest libraries etc.
 Operations are required to provide stability for the production system. Stability requires little or no changes to the software stack. (e.g. OS, third-party library, code)
+
+
 
 ## Wall of Confusion
 {id: wall-of-confusion}
@@ -104,23 +154,6 @@ Move further to the right on this line.
 
 * You get some value (and feedback) earlier.
 * Incremental delivery.
-
-## The business cost
-{id: the-business-cost}
-
-* Wasted time, cost fixing bugs.
-* Low of customer trust due to bugs.
-* Long development time.
-* Fear of release.
-
-## The human cost
-{id: the-human-cost}
-
-* Long working hours.
-* Reduced quality of life.
-* Powerless in the organization.
-* Low employee satisfaction.
-* High turnover rate.
 
 ## Small Batch size
 {id: small-batch-size}
@@ -457,9 +490,11 @@ The two most important aspects are value creation and feedback. So start with th
 * Fix any issues. Learn.
 * [Netflix Chaos Monkey](https://github.com/Netflix/SimianArmy/wiki/Chaos-Monkey)
 
-
 ## Resources
 {id: recommended-books}
+
+* [State of Agile](http://stateofagile.versionone.com/).
+* [State of DevOps](https://puppet.com/resources/whitepaper/state-of-devops-report) Puppet labs report.
 
 * [The Phoenix project](https://www.amazon.com/Phoenix-Project-DevOps-Helping-Business/dp/0988262592)
 * [The DevOps handbook](https://www.amazon.com/DevOps-Handbook-World-Class-Reliability-Organizations/dp/1942788002/)
@@ -471,6 +506,5 @@ The two most important aspects are value creation and feedback. So start with th
 * [Beyond Legacy Code](https://pragprog.com/book/dblegacy/beyond-legacy-code) by David Scott Bernstein.
 
 * [Velocity and volume (or speed wins)](https://www.youtube.com/watch?v=wyWI3gLpB8o) Adrian Cockcroft.
-* [Moving Fast At Scale](https://www.youtube.com/watch?v=oH4g7wLPqg4) Randy Shoup.
-
-
+* [Moving Fast At Scale](https://www.youtube.com/watch?v=oH4g7wLPqg4) video by Randy Shoup.
+* [Moving Fast At Scale](https://www.slideshare.net/RandyShoup/moving-fast-at-scale) slides by Randy Shoup.
