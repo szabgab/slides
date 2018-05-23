@@ -1,6 +1,15 @@
 # Mocking Python
 {id: index}
 
+## Plan
+{id: plan}
+
+* Introducton
+* Presentation about Mocking
+* Hands-on exercises
+* Retrospective
+* Job searching
+
 ## About me
 {id: about-me}
 
@@ -34,6 +43,17 @@ You will come out from the workshop knowing
 * Simulate cases that are hard to replicate. (What if the other system fails?)
 
 * Unit tests.
+
+
+## Experiment with mocking in various situations
+
+{id: experiment-with-mocking}
+
+* Mocking time.
+* Mocking external calls.
+* Mocking method calls.
+* Mocking a whole class.
+
 
 ## Unit testing vs. Integration testing
 {id: unit-testing-vs-integration-testing}
@@ -113,13 +133,18 @@ E       FileNotFoundError: [Errno 2] No such file or directory: '/corporate/fixe
 
 ![](exdb/db.py)
 
-![](exdb/test_app_mocking.py)
+## Testing the whole application
+{id: testng-the-whole-application}
 
 ![](exdb/test_db_app.py)
 
+## Mocking the database access
+{id: mocking-database-access}
+
+![](exdb/test_app_mocking.py)
 
 ## Mocking input/output
-{id: manually-mocking-input-output}
+{id: mocking-input-output}
 
 ![](ex2/app.py)
 
@@ -127,21 +152,30 @@ The test:
 
 ![](ex2/test_app.py)
 
+## Mocking input/output
+{id: manually-mocking-input-output}
+
 ![](ex2/test_calc.py)
 
 ## Exercises
 {id: exercise}
 
-[Source](https://github.com/szabgab/slides)
+[Download zip file](https://github.com/szabgab/slides) or clone repository using
 
 ```
 git clone https://github.com/szabgab/slides.git
-cd slides/python-mocking/
+```
+
+the files are in the directory.
+
+```
+slides/python-mocking/
 ```
 
 ## Exercise: One Dimentsional space-fight
 {id: one-dimensional-space-fight}
 
+* `space-fight` directory.
 * Write a test that check the 'x' button works.
 * Write a test that check system can properly report 'less than'.
 * Write a test that check system can properly report 'greater than'.
@@ -154,6 +188,7 @@ cd slides/python-mocking/
 ## Exercise: web client
 {id: web-client}
 
+* `crawler` directory.
 * Test this application without hitting any web site.
 * Test what happens if the URL returns 404
 * What if it is a 500 error?
@@ -161,10 +196,29 @@ cd slides/python-mocking/
 
 ![](crawler/app.py)
 
+## Exercise: Open Weather client
+{id: openweather}
+
+* [get API key](https://home.openweathermap.org/api_keys)
+* It takes 10 minutes to activate the key, so do it now.
+
+config.ini
+
+```
+[openweathermap]
+api=93712604
+```
+
+![](weather/get_weather.py)
+
+
 ## Resources
 {id: resources}
 
 * [MonkeyPatching](https://docs.pytest.org/en/latest/monkeypatch.html)
+* [Python slides](https://code-maven.com/slides/python-programming/)
+* [Python testing with pytest](https://pragprog.com/book/bopytest/python-testing-with-pytest)
+
 
 ## Solutions
 {id: solutions}
@@ -172,13 +226,5 @@ cd slides/python-mocking/
 ![](tests/test_game_exit.py)
 
 ![](tests/test_game_play.py)
-
-## Experiment with mocking in various situations
-
-{id: experiment-with-mocking}
-
-* Mocking time.
-* Mocking external calls.
-* Mocking method calls.
 
 

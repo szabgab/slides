@@ -1,5 +1,4 @@
 
-
 class Data(object):
     def get_info(self, issue):
     
@@ -11,4 +10,4 @@ class Data(object):
 
 def get_data(issue):
         # connnect to database, fetch data
-    Data(issue, 
+    Data(issue)
