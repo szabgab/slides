@@ -29,6 +29,13 @@ You will come out from the workshop knowing
 
 * Experiment with mocking in various situations.
 
+## What is Mocking and Monkey Patching?
+{id: what-is-mocking-monkey-patching}
+
+* Replace some internal part of a module or class for the sake of testing.
+* Mocking
+* Monkey Patching
+
 ## Situations
 {id: situations}
 
@@ -60,6 +67,11 @@ You will come out from the workshop knowing
 * Mocking a whole class.
 * Mocking time.
 * Mocking IO
+
+## Examples are simple
+{id: examples-are-simple}
+
+* Don't worry, real life code is much more complex!
 
 ## Simple test case using Pytest
 {id: simple-test-case}
@@ -150,6 +162,11 @@ The test:
 
 ![](ex2/test_calc.py)
 
+## Mocking random numbers
+{id: mocking-random-numbers}
+
+* Mock the methods of the `random` module
+
 ## Exercises
 {id: exercise}
 
@@ -164,6 +181,12 @@ the files are in the directory.
 ```
 slides/python-mocking/
 ```
+
+## Work in pairs
+{id: work-in-pairs}
+
+* Navigator - Driver
+* Driver - Observer
 
 ## Exercise: One Dimentsional space-fight
 {id: one-dimensional-space-fight}
@@ -189,13 +212,14 @@ slides/python-mocking/
 
 ![](crawler/app.py)
 
-## Exercise: Open Weather client
+## Exercise: Open WeatherMap client
 {id: openweather}
 
 * [get API key](https://home.openweathermap.org/api_keys)
 * It takes 10 minutes to activate the key, so do it now.
+* Once you observerd that the code works, test it without internet access.
 
-config.ini
+**config.ini**
 
 ```
 [openweathermap]
@@ -213,6 +237,8 @@ api=93712604
 
 ## Testing the whole application
 {id: testng-the-whole-application}
+
+* Implement the tests without the need for a database.
 
 ![](exdb/test_db_app.py)
 

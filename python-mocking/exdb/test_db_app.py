@@ -1,5 +1,7 @@
-import db
 import os
+import pytest
+
+import db
 from bank import Bank
 
 
@@ -24,3 +26,7 @@ def test_app(tmpdir):
     assert app.status('foo') == 91
     assert app.status('bar') == 149
 
+    with pytest.raises(Exception) as exinfo:
+        app.transfer('foo', 'bar', 200)
+    assert exinfo.type == Exception
+    assert str(exinfo.value) == 'Not enough money' 

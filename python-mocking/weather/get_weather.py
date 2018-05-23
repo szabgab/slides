@@ -20,7 +20,7 @@ def main():
     api_key = get_api_key()
     weather = get_weather(api_key, location)
 
-    #print(weather)
+    print(weather)
     print(weather['main']['temp'])
 
 
