@@ -5,6 +5,7 @@ Introduction to DevOps
 
 * Faster cheaper better pick any 3
 * Fast cheap low-risk
+* Predictable software development
 
 
 ## Business needs for change
@@ -30,4 +31,10 @@ Introduction to DevOps
 
 Systems of record (needs to be stable)
 Systems of engagement (needs to change fast)
+
+
+Continuous Improvement
+Continuous Learning
+
+Refactoring to minimize complication
 
