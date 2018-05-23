@@ -5,7 +5,7 @@
 {id: about-me}
 
 * [Gabor Szabo](https://www.linkedin.com/in/szabgab/)
-* Help tech teams move faster with more stability.
+* Help tech teams move faster with more stability and more predictability.
 * [PyWeb](https://www.meetup.com/PyWeb-IL/)
 * [Code Maven workshops](https://www.meetup.com/Code-Mavens/)
 
@@ -14,33 +14,28 @@
 
 You will come out from the workshop knowing
 
-* What is mocking and Monkey Patching?
+* What is Mocking and Monkey Patching?
 * When to use it?
 * What are the dangers?
 
-## Experiment with mocking in various situations
-{id: experiment-with-mocking}
-
-* Mocking time.
-* Mocking external calls.
-* Mocking method calls.
+You will also experiment with mocking in various situations.
 
 ## Situations
 {id: situations}
+
+* Write application agains API that is not ready yet or not controlled by you.
 
 * Replace a complex object with a simpler one.
 
 * Isolate parts of the system to test them on their own.
 
-* Speed up tests (e.g. eliminate remote calls).
+* Speed up tests (e.g. eliminate remote calls, eliminate database calls).
 
 * Simulate cases that are hard to replicate. (What if the other system fails?)
 
-* Write application agains API that is not ready yet or not controlled by you.
-
 * Unit tests.
 
-## Unit testing vs Integration testing
+## Unit testing vs. Integration testing
 {id: unit-testing-vs-integration-testing}
 
 ![dryer](dryer.mp4)
@@ -85,27 +80,31 @@ pytest test_data_1.py
 E       FileNotFoundError: [Errno 2] No such file or directory: '/corporate/fixed/path/data.json'
 ```
 
-## Mocking
-{id: mocking}
-
-![](exo/aud.py)
-
-![](exo/test_aud_attr.py)
-
-![](exo/test_aud_item.py)
-
-
-## Mocking attribute
+## Manually Patching attribute
 {id: mocking-attribute}
 
 ![](exa/test_data_2.py)
 
 ![](exa/test_1.json)
 
-## Mocking attribute
+## Monkey Patching attribute
 {id: monkeypatching-attribute}
 
 ![](exa/test_data_3.py)
+
+## Monkey Patching functions
+{id: mocking-functions}
+
+![](exo/aut.py)
+
+![](exo/test_aut_attr.py)
+
+## Monkey Patching dictionary items
+{id: mocking-dictionary-item}
+
+![](exb/aut.py)
+
+![](exb/test_aut_item.py)
 
 
 ## Mocking input/output
@@ -162,4 +161,13 @@ cd slides/python-mocking/
 ![](tests/test_game_exit.py)
 
 ![](tests/test_game_play.py)
+
+## Experiment with mocking in various situations
+
+{id: experiment-with-mocking}
+
+* Mocking time.
+* Mocking external calls.
+* Mocking method calls.
+
 

@@ -1,21 +1,21 @@
-import aud
+import aut
 
 def test_a():
-    assert aud.data == {
+    assert aut.data == {
         'name' : 'foo',
         'age'  : 42
     }
 
 def test_b(monkeypatch):
-    monkeypatch.setitem(aud.data, 'name', 'bar')
+    monkeypatch.setitem(aut.data, 'name', 'bar')
 
-    assert aud.data == {
+    assert aut.data == {
         'name' : 'bar',
         'age'  : 42
     }
 
 def test_c():
-    assert aud.data == {
+    assert aut.data == {
         'name' : 'foo',
         'age'  : 42
     }
