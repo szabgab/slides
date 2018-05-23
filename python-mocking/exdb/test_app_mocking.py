@@ -2,6 +2,8 @@ import db
 import os
 from bank import Bank
 
+import pytest
+
 class MockDB(object):
     def create(self):
         self.db = {}
@@ -37,4 +39,7 @@ def test_app(tmpdir):
     assert app.status('foo') == 91
     assert app.status('bar') == 149
 
-
+    with pytest.raises(Exception) as exinfo:
+        app.transfer('foo', 'bar', 200)
+    assert exinfo.type == Exception
+    assert str(exinfo.value) == 'Not enough money' 
