@@ -236,16 +236,16 @@ api=93712604
 * LinkedIn
 * Open source projects
 
-## Solutions
+## Solutions - game
 {id: solutions}
 
 ![](tests/test_game_exit.py)
 
 ![](tests/test_game_play.py)
 
-## Mocking the database access
+## Solutions - Mocking the database access
 {id: mocking-database-access}
 
-![](exdb/test_app_mocking.py)
+![](tests/test_db_app_mocking.py)
 
 
