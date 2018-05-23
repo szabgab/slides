@@ -1,25 +1,26 @@
-from db import DB
+import db
 import os
+from bank import Bank
 
 
-def test_db(tmpdir):
-    filename = os.path.join( tmpdir, 'test.db' )
-    db = DB(filename)
-    db.create()
-    assert db.status('foo') == None
-    assert db.status('bar') == None
+def test_app(tmpdir):
+    db.db_filename = os.path.join( tmpdir, 'test.db' )
+    app = Bank()
+    app.setup()
+    assert app.status('foo') == None
+    assert app.status('bar') == None
 
-    db.deposit('foo', 100)
-    assert db.status('foo') == 100
+    app.deposit('foo', 100)
+    assert app.status('foo') == 100
 
-    db.deposit('foo', 10)
-    assert db.status('foo') == 110
+    app.deposit('foo', 10)
+    assert app.status('foo') == 110
 
-    db.deposit('bar', 130)
-    assert db.status('foo') == 110
-    assert db.status('bar') == 130
+    app.deposit('bar', 130)
+    assert app.status('foo') == 110
+    assert app.status('bar') == 130
 
-    db.transfer('foo', 'bar', 19)
-    assert db.status('foo') == 91
-    assert db.status('bar') == 149
+    app.transfer('foo', 'bar', 19)
+    assert app.status('foo') == 91
+    assert app.status('bar') == 149
 

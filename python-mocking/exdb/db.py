@@ -1,9 +1,11 @@
 import sqlite3
 
+db_filename = 'bank.db'
+
 
 class DB():
-    def __init__(self, filename):
-        self.db_filename = filename
+    def __init__(self):
+        self.db_filename = db_filename
         self.conn = sqlite3.connect(self.db_filename)
 
     def create(self):
@@ -12,7 +14,7 @@ class DB():
                  (name text, ballance real)''')
 
     def transfer(self, src, dst, amount):
-        c = self.conn.cursor()
+#        c = self.conn.cursor()
         self.deposit(src, -amount)
         self.deposit(dst, amount)
 
