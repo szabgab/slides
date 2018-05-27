@@ -9,6 +9,14 @@
 
 The overall goal of the companies is to create more value to customers.
 
+## Goals of employees
+{id: goal-of-employees}
+
+* Higher salary.
+* Keep their job.
+* Learn new things that will also be valuable at another company.
+* Enjoy their time at work (no late hours, no tension).
+
 ## Time is Money
 {id: time}
 
@@ -468,13 +476,13 @@ At first this will take you extra time. Later you will see the value. Put it in 
 
 * Allocate at least 20% of your time to this.
 
-
 ## Implementation
 {id: implementation}
 
 * Infrastructure as code.
 
-The two most important aspects are value creation and feedback. So start with this. Discuss the things we value. Then build in short feedback loops in your process. 
+The two most important aspects are value creation and feedback.
+So start with this. Discuss the things we value. Then build in short feedback loops in your process. 
 
 ## Learn from the mistakes
 {id: learn-from-the-mistakes}
@@ -482,6 +490,42 @@ The two most important aspects are value creation and feedback. So start with th
 * Blameless post mortem. [Etsy Morgue tool](https://github.com/etsy/morgue).
 * Learning organization.
 * Transform local discoveries into global improvements. ( US navy reactors. )
+
+## Continuous Improvement
+{id: continuous-improvement}
+
+* Continuous Improvement.
+* Continuous Learning.
+
+This needs investment both time and money and it leads to change. 
+
+## Decouple deployment
+{id: decouple-deployment}
+
+* Decouple deploy from release.
+* Decouple delivery from deploy.
+
+* Feature flags.
+* Deployment circles. ( Cluster immune systems )
+* Dark launches
+* AB testing
+
+## Blue-green deployment
+{id: blue-green-deployment}
+
+* Decouple changes to the database and changes to the application. 
+* Duplicate the whole stack.
+
+## Canary release
+{id: canary-release}
+
+## Archiecture
+{id: architecture}
+
+* Monolith good for the startups
+* SOA - Service Oriented Architecture
+* 2 pizza teams
+* Conway's law
 
 ## Resilience testing
 {id: resilience-testing}
@@ -508,3 +552,6 @@ The two most important aspects are value creation and feedback. So start with th
 * [Velocity and volume (or speed wins)](https://www.youtube.com/watch?v=wyWI3gLpB8o) Adrian Cockcroft.
 * [Moving Fast At Scale](https://www.youtube.com/watch?v=oH4g7wLPqg4) video by Randy Shoup.
 * [Moving Fast At Scale](https://www.slideshare.net/RandyShoup/moving-fast-at-scale) slides by Randy Shoup.
+
+* [No, You are not Dumb! Programmers do spend a lot of time Understanding Code...](http://blog.architexa.com/2010/05/no-you-are-not-dumb-programmers-do-spend-a-lot-of-time-understanding-code/) links to surveys.
+* [How Software Developers Really Spend Their Time](https://readwrite.com/2013/04/25/how-software-developers-really-spend-their-time/) 
