@@ -1,5 +1,5 @@
 # DevOps Workshops: Introduction to Ansible
-{id: introduction-to-ansible}
+{id: index}
 
 
 ## About us

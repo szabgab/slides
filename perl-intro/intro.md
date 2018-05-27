@@ -1,5 +1,5 @@
 # Introduction to Perl
-{id: introduction-to-perl}
+{id: index}
 
 ## Overview
 {id: overview}

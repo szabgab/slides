@@ -1,5 +1,5 @@
 # DevOps Workshops: Git
-{id: introduction-to-git}
+{id: index}
 
 ## About us
 {id: about-us}

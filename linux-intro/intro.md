@@ -1,5 +1,5 @@
 # DevOps Workshops: Linux as a Virtual Environment
-{id: introduction-to-linux}
+{id: index}
 
 ## Slides
 {id: slides}

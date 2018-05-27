@@ -1,5 +1,5 @@
 # DevOps Workshops: Jenkins
-{id: introduction-to-jenkins}
+{id: index}
 
 ## About us
 {id: about-us}
