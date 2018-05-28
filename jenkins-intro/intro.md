@@ -6,7 +6,8 @@
 
 * [Yonit Gruber-Hazani](https://www.linkedin.com/in/yonitgruber/)
 * [Gabor Szabo](https://www.linkedin.com/in/szabgab/)
-* DevOps Workshops http://devops-workshops.code-maven.com/
+* [DevOps Workshops](http://devops-workshops.code-maven.com/)
+* [Code Mavens Meetup](https://www.meetup.com/Code-Mavens/)
 
 ## About you
 {id: about-you}
@@ -16,7 +17,14 @@
 * What do you do
 * Something interesting about you
 
-## CI/CD
+## Prerequisites for CI
+{id: prerequisites}
+
+* Standardized environment.
+* Command line build system.
+* Automated Tests:  Unit, Integration, Acceptance.
+
+## What are CI/CD and why are they useful?
 {id: ci-cd}
 
 * Triggerd by a new change in the Version Control system
@@ -27,20 +35,34 @@
 * Create a package
 * Set up a test system (might need multiple machines)
 * Run integration / acceptance tests
+* Deliver the new version
 * Deploy the new version
 
 * Collect coverage reports
 * Number of tests - graph
 
+## Jenkins setup
+{id: jenkins-setup}
+
+* Central Jenkins server
+* Jenkins workers
+
+## Install Jenkins
+{id: install-jenkins}
+
+* On your desktop: Windows, OSX, Linux
+* In a VirtualBox image
+* On some server e.g. [Digital Ocean](https://www.digitalocean.com/?refcode=0d4cc75b3a74)
 
 ## Download Jenkins
 {id: download-jenkins}
 
-* Download Java JRE for Linux https://www.java.com/en/download/linux_manual.jsp
+* Instructions to [install Jenkins](https://jenkins.io/doc/book/installing/)
 
-* https://jenkins.io/download/
+* Download and [install Jenkins](https://jenkins.io/download/)
 
-* Platforms: Windows, OSX, Linux
+* Download [Java JRE for Linux](https://www.java.com/en/download/linux_manual.jsp)
+
 
 ## Run Jenkins war files
 {id: run-jenkins-war-file}
@@ -49,38 +71,44 @@
 java -jar jenkins.war
 ```
 
+## Install Blue Ocean
+{id: install-blue-ocean}
 
-Install Docker https://docs.docker.com/install/linux/linux-postinstall/
-docker run hello-world
-
-docker: Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.s
-sudo usermod -a -G docker $USER
+* It is just a plugin...
 
 
-* Install Jenkins on Digital Ocean
+## Demo Jenkins server
+{id: demo}
+
+* [Demo Jenkins](http://jenkins.szabgab.com:8080/)
+
+## Demo Freestyle project
+{id: demo-freestyle-project}
+
+* [GitHub project](https://github.com/szabgab/demo-flask-project)
+* [Demo Application](http://demo.code-maven.com:9090/)
 
 ## Freestyle Project
 {id: freestyle-project}
 
-Enter a name: Demo
-click on Freestle project
+* Enter a name: Demo
+* click on Freestle project
 
 
-GitHub Project: https://github.com/szabgab/demo-flask-project
-   (this is only used to create an html link to the project)
+* GitHub Project: https://github.com/szabgab/demo-flask-project
+* (this is only used to create an html link to the project)
 
-Source Code Management
-Git
-    https://github.com/szabgab/demo-flask-project
-Save
+* Source Code Management
+* Git: https://github.com/szabgab/demo-flask-project
+* Save
 
-Build Now
+* Build Now
 
-This will clone the current version of the project.
-We can see it in the "Workspace"
-See "Build history"
+* This will clone the current version of the project.
+* We can see it in the "Workspace"
+* See "Build history"
 
-Click around, see console output
+* Click around, see console output
 
 ## Configure
 {id: configure}
@@ -149,6 +177,53 @@ It should build successfully now.
 * Observe that after a few seconds the build starts.
 
 
+## Collect test results: xUnit integration
+{id: collect-test-results}
+
+* Use pytest --junitxml=test-results/$BUILD_NUMBER.xml
+* Configure / Post-build Actions / Publish JUnit test results report / Test report XMLs: `test-results/*.xml`
+
+## No graph error
+{id: no-graph-error}
+
+Look into `/var/log/jenkins/jenkins.log`
+
+found error about:
+
+```
+WARNING: Error while serving http://jenkins.szabgab.com:8080/job/demo-flask-project/test/trend
+...
+Caused by: java.awt.AWTError: Assistive Technology not found: org.GNOME.Accessibility.AtkWrapper
+
+
+Could not initialize class org.jfree.chart.JFreeChart
+...
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class org.jfree.chart.JFreeChart
+```
+
+Solution
+https://askubuntu.com/questions/695560/assistive-technology-not-found-error-while-building-aprof-plot
+sudo vim /etc/java-8-openjdk/accessibility.properties
+Comment out the following line:
+
+#assistive_technologies=org.GNOME.Accessibility.AtkWrapper
+
+vim /etc/init.d/jenkins
+add `-Djava.awt.headless=true` to the line 
+
+```
+$SU -l $JENKINS_USER --shell=/bin/bash -c "$DAEMON $DAEMON_ARGS -- $JAVA $JAVA_ARGS -Djava.awt.headless=true -jar $JENKINS_WAR $JENKINS_ARGS" || return 2
+```
+
+```
+systemctl daemon-reload
+service jenkins restart
+```
+
+
+
+
+
 ## Deploy
 {id: deploy}
 
@@ -174,20 +249,41 @@ sudo /usr/sbin/service uwsgi reload
 jenkins ALL= NOPASSWD: /usr/sbin/service uwsgi reload
 ```
 
+## Pipeline
+{id: pipeline}
 
-## Jenkins configuration files
-{id: jenkins-configuration-files}
+* [GitHub project](https://github.com/szabgab/demo-for-pipeline)
+* [Demo Application](http://demo.code-maven.com:9091/)
 
+## Docker
+{id: docker}
 
-~/.jenkins/config.xml
-~/.jenkins/jobs/
-~/.jenkins/users/
+* [Install Docker](https://docs.docker.com/install/linux/linux-postinstall/)
+* `apt-get install docker docker.io`
 
-## Jenkins issues
-{id: jenkins-issues}
+```
+docker run hello-world
+```
 
-* After configuration and log in I get a blank page - restart jenkins (service jenkins restart)
-* Crash (Lack of memory) - restart
+```
+docker: Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.s
+```
+
+```
+sudo usermod -a -G docker $USER
+```
+
+## Setup Pipeline
+{id: setup-pipeline}
+
+* Name: demo-for-pipeline
+* Multibranch Pipelines
+
+* Branch sources
+* GitHub     (no credentials are needed as this is a public project)
+* Owner: szabgab
+* Repository: Select: demo-for-pipeline
+
 
 
 ## Jenkins Resources
@@ -205,4 +301,5 @@ jenkins ALL= NOPASSWD: /usr/sbin/service uwsgi reload
 
 * [Jenkins Pipeline Video Tutorial](https://www.youtube.com/watch?v=ggzbqcf8PAU)
 * [TTFHW - Time To First Hello World](https://github.com/TTFHW)
+
 

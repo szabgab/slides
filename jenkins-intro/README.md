@@ -1,7 +1,4 @@
 
-* Explain what is a CI/CD process and why even the CI part is useful.
-
-
 * Install Jenkins on a Windows machine?
 * Install Jenkins on a Linux machine.
 
@@ -12,6 +9,18 @@
 * Have a server where we can have some code already deployed.
 
 
+## Jenkins issues
+{id: jenkins-issues}
 
+* After configuration and log in I get a blank page - restart jenkins (service jenkins restart)
+* Crash (Lack of memory) - restart
+
+## Jenkins configuration files
+{id: jenkins-configuration-files}
+
+
+~/.jenkins/config.xml
+~/.jenkins/jobs/
+~/.jenkins/users/
 
 
