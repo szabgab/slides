@@ -327,6 +327,12 @@ sudo usermod -a -G docker $USER
 
 [post](https://jenkins.io/doc/book/pipeline/syntax/#post)
 
+
+## Pipeline for our project
+{id: pipeline-python}
+
+![Jenkinsfile](x/Jenkinsfile)
+
 ## artifacts
 {id: artifacts}
 
