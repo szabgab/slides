@@ -40,20 +40,21 @@
 ## What is Jenkins?
 {id: what-is-jenkins}
 
-* Automation server
+* Automation server with lots of plugins
 
 ## Jenkins setup
 {id: jenkins-setup}
 
-* Central Jenkins server
+* Central Jenkins server (master)
 * Jenkins workers
 
+* Network access?
 ## Install Jenkins
 {id: install-jenkins}
 
 * On your desktop: Windows, OSX, Linux
 * In a VirtualBox image
-* On some server e.g. [Digital Ocean](https://www.digitalocean.com/?refcode=0d4cc75b3a74)
+* On some server in the cloud e.g. [Digital Ocean](https://www.digitalocean.com/?refcode=0d4cc75b3a74)
 
 ## Download Jenkins
 {id: download-jenkins}
@@ -72,16 +73,19 @@
 java -jar jenkins.war
 ```
 
-## Install Blue Ocean
-{id: install-blue-ocean}
+## Jenkins modes
+{id: jenkins-modes}
 
-* It is just a plugin...
+* Freestyle project
+* Pipelines
 
+* Classic GUI
+* Blue Ocean (new GUI)
 
 ## Demo Jenkins server
 {id: demo}
 
-* [Demo Jenkins](http://jenkins.szabgab.com:8080/)
+* [Demo Jenkins server](http://jenkins.szabgab.com:8080/)
 
 ## Demo Freestyle project
 {id: demo-freestyle-project}
@@ -202,15 +206,22 @@ Could not initialize class org.jfree.chart.JFreeChart
 Caused by: java.lang.NoClassDefFoundError: Could not initialize class org.jfree.chart.JFreeChart
 ```
 
-Solution
-https://askubuntu.com/questions/695560/assistive-technology-not-found-error-while-building-aprof-plot
+[Solution](https://askubuntu.com/questions/695560/assistive-technology-not-found-error-while-building-aprof-plot)
+
+```
 sudo vim /etc/java-8-openjdk/accessibility.properties
+```
+
 Comment out the following line:
 
+```
 #assistive_technologies=org.GNOME.Accessibility.AtkWrapper
+```
 
+```
 vim /etc/init.d/jenkins
 add `-Djava.awt.headless=true` to the line 
+```
 
 ```
 $SU -l $JENKINS_USER --shell=/bin/bash -c "$DAEMON $DAEMON_ARGS -- $JAVA $JAVA_ARGS -Djava.awt.headless=true -jar $JENKINS_WAR $JENKINS_ARGS" || return 2
@@ -220,10 +231,6 @@ $SU -l $JENKINS_USER --shell=/bin/bash -c "$DAEMON $DAEMON_ARGS -- $JAVA $JAVA_A
 systemctl daemon-reload
 service jenkins restart
 ```
-
-
-
-
 
 ## Deploy
 {id: deploy}
@@ -250,6 +257,11 @@ sudo /usr/sbin/service uwsgi reload
 jenkins ALL= NOPASSWD: /usr/sbin/service uwsgi reload
 ```
 
+## Blue Ocean
+{id: install-blue-ocean}
+
+* It is just a plugin...
+
 ## Pipeline
 {id: pipeline}
 
@@ -274,6 +286,8 @@ docker: Got permission denied while trying to connect to the Docker daemon socke
 sudo usermod -a -G docker $USER
 ```
 
+(for both your own user and for user 'jenkins')
+
 ## Setup Pipeline
 {id: setup-pipeline}
 
@@ -285,22 +299,31 @@ sudo usermod -a -G docker $USER
 * Owner: szabgab
 * Repository: Select: demo-for-pipeline
 
+## Groovy in Jenkisfile
+{id: groovy}
+
 ## First Pipeline
 {id: first-pipeline}
 
-![Jenkinsfile](post/Jenkinsfile)
+![](a/Jenkinsfile)
 
-## Pipeline agent
+## Pipeline agents
 {id: pipeline-agent}
+
+* Multiple stages
+* Multiple agents
+
+![](b/Jenkinsfile)
 
 * agent any
 * agent none
 * agent { label 'master' } 
+* agent { docker }
 
 ## Pipeline post stages
 {id: pipeline-post}
 
-![Jenkinsfile](post/Jenkinsfile)
+![Jenkinsfile](c/Jenkinsfile)
 
 [post](https://jenkins.io/doc/book/pipeline/syntax/#post)
 
