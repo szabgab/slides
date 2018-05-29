@@ -65,12 +65,41 @@
 
 * Download [Java JRE for Linux](https://www.java.com/en/download/linux_manual.jsp)
 
-
 ## Run Jenkins war files
 {id: run-jenkins-war-file}
 
 ```
 java -jar jenkins.war
+```
+
+## DO
+{id: do}
+
+```
+01 206.81.14.158
+02 206.81.2.152
+03 206.81.14.169
+04 206.81.14.236
+05 206.81.14.245
+06 206.81.14.91
+07 206.81.14.155
+08 206.81.1.3
+09 206.81.1.15
+10 206.81.1.218
+```
+
+```
+apt-get update
+apt-get upgrade
+apt-get install openjdk-8-jre-headless
+```
+
+* [Download](https://jenkins.io/download/)
+* [Ubuntu](https://pkg.jenkins.io/debian-stable/)
+
+```
+apt-get update
+apt-get install jenkins
 ```
 
 ## Jenkins modes
