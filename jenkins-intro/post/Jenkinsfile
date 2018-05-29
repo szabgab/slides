@@ -1,0 +1,41 @@
+pipeline {
+    agent { label 'master' }
+    stages {
+        stage('build') {
+            agent {
+                docker {
+                    image 'python'
+                }
+            }
+            steps {
+                sh 'echo build'
+            }
+            post {
+                always {
+                    sh 'echo always after build'
+                }
+            }
+        }
+        stage('deploy') {
+            steps {
+                sh 'echo deploy'
+            }
+            post {
+                always {
+                    sh 'echo always after deploy'
+                }
+            }
+        }
+    }
+    post {
+        always {
+            sh 'echo always'
+        }
+        changed {
+            sh 'echo changed'
+        }
+        cleanup {
+            sh 'echo cleanup'
+        }
+    }
+}

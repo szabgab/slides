@@ -24,3 +24,13 @@
 ~/.jenkins/users/
 
 
+cd /var/lib/jenkins
+mkdir store
+mkdir store/demo-for-pipeline
+mkdir store/demo-for-pipeline/artifacts
+mkdir store/demo-for-pipeline/test-results
+
+Before each stage Jenkins runs the Git initialization process, so the directory is cleaned of any remaining files
+
+
+

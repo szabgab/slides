@@ -284,12 +284,38 @@ sudo usermod -a -G docker $USER
 * Owner: szabgab
 * Repository: Select: demo-for-pipeline
 
+## First Pipeline
+{id: first-pipeline}
 
+![Jenkinsfile](post/Jenkinsfile)
+
+## Pipeline agent
+{id: pipeline-agent}
+
+* agent any
+* agent none
+* agent { label 'master' } 
+
+## Pipeline post stages
+{id: pipeline-post}
+
+![Jenkinsfile](post/Jenkinsfile)
+
+[post](https://jenkins.io/doc/book/pipeline/syntax/#post)
+
+## artifacts
+{id: artifacts}
+
+The Pipline uses `git clean -fdx` to clean the workspace before running any of our commands so we should not leave any
+of our files (e.g. junit xml files, artifacts, etc. in the workspace)
 
 ## Jenkins Resources
 {id: jenkins-resources}
 
 * [Jenkins slides](https://code-maven.com/slides/jenkins/)
+* [Jenkins Pipeline Video Tutorial](https://www.youtube.com/watch?v=ggzbqcf8PAU)
+* [TTFHW - Time To First Hello World](https://github.com/TTFHW)
+* [Jenkins User Handbook](https://jenkins.io/doc/book/)
 
 ## Resources
 {id: resources}
@@ -297,9 +323,5 @@ sudo usermod -a -G docker $USER
 * [Our Meetup page](https://www.meetup.com/Code-Mavens/)
 * [Our Facebook page](https://www.facebook.com/Devops.Workshops)
 * [Facebook group](https://www.facebook.com/groups/188753948553382/)
-
-
-* [Jenkins Pipeline Video Tutorial](https://www.youtube.com/watch?v=ggzbqcf8PAU)
-* [TTFHW - Time To First Hello World](https://github.com/TTFHW)
 
 
