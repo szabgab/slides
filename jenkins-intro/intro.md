@@ -6,16 +6,12 @@
 
 * [Yonit Gruber-Hazani](https://www.linkedin.com/in/yonitgruber/)
 * [Gabor Szabo](https://www.linkedin.com/in/szabgab/)
+
 * [DevOps Workshops](http://devops-workshops.code-maven.com/)
 * [Code Mavens Meetup](https://www.meetup.com/Code-Mavens/)
 
-## About you
-{id: about-you}
-
-* Name
-* Company
-* What do you do
-* Something interesting about you
+## What are CI/CD and why are they useful?
+{id: what-is-ci-cd}
 
 ## Prerequisites for CI
 {id: prerequisites}
@@ -24,7 +20,7 @@
 * Command line build system.
 * Automated Tests:  Unit, Integration, Acceptance.
 
-## What are CI/CD and why are they useful?
+## Steps of CI/CD
 {id: ci-cd}
 
 * Triggerd by a new change in the Version Control system
@@ -40,6 +36,11 @@
 
 * Collect coverage reports
 * Number of tests - graph
+
+## What is Jenkins?
+{id: what-is-jenkins}
+
+* Automation server
 
 ## Jenkins setup
 {id: jenkins-setup}

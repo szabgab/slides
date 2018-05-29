@@ -32,5 +32,12 @@ mkdir store/demo-for-pipeline/test-results
 
 Before each stage Jenkins runs the Git initialization process, so the directory is cleaned of any remaining files
 
+## About you
+{id: about-you}
+
+* Name
+* Company
+* What do you do
+* Something interesting about you
 
 
