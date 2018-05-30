@@ -41,3 +41,7 @@ Before each stage Jenkins runs the Git initialization process, so the directory 
 * Something interesting about you
 
 
+TODO:
+install virtualenv   python and pip on the machine
+run agents in the cloud
+
