@@ -1,32 +1,29 @@
-# Creating High-performing technology organizations
+# How to develop software faster and have more stable releases?
 {id: index}
 
-## Goal - Value
+## About name
+{id: about-us}
+
+* [Gábor Szabó](https://www.linkedin.com/in/szabgab/) @szabgab
+* [Code Mavens Meetup](https://www.meetup.com/Code-Mavens/)
+
+## About you
+{id: about-you}
+
+* Name
+* Company
+* What do you do?
+* What kind of products and services do you develop?
+* Something interesting about you.
+
+## Goal of the organization
 {id: goal}
-
-* What is our goal?
-* Why are we here?
-
-The overall goal of the companies is to create more value to customers.
 
 ## Goals of employees
 {id: goal-of-employees}
 
-* Higher salary.
-* Keep their job.
-* Learn new things that will also be valuable at another company.
-* Enjoy their time at work (no late hours, no tension).
-
 ## Time is Money
 {id: time}
-
-* The sooner the better.
-
-* Getting 1,000,000 ten years from now is great.
-* Getting it one year from now is much better.
-* Getting it next week is even better than that.
-
-So "sooner" has a higher value than later.
 
 ## What is the solution?
 {id: what-is-the-solution}
@@ -35,18 +32,25 @@ So "sooner" has a higher value than later.
 * Agile
 * Scrum
 * Kanban
+* FAST
 * SAFe
 * Spine
 * XP
 * DevOps
 * DevSecOps
 
-* Stamping a name on it marking with a v does not work well.
-* Better to discuss what can and what cannot make a difference.
+## Value creation
+{id: deploy-per-day-vs-value}
+
+![One release](time_value.svg)
+
+![Many releases](time_value_many_releases.svg)
+
 
 ## Product types
 {id: product-types}
 
+* Hardware
 * Embedded software
 * On-premise application/device
 * Desktop Application
@@ -56,11 +60,54 @@ So "sooner" has a higher value than later.
 ## Fast or stable?
 {id: fast-or-stable}
 
-Fast development and stable software are traditionally seen as orthogonal to each other.
+* Need long QA cycle to have stable product.
 
-However research shows that using the right approach one can achieve fast-paced development and stable software.
-(See the DevOps handbook.)
+* Development vs. Operations.
 
+## Release frequency
+
+{id: release-frequency}
+
+![Release frequency](release-frequency.jpg)
+
+* [source](https://medium.com/data-ops/releasing-new-analytics-every-second-fc5fefd92360)
+
+
+## Old model
+{id: old-model}
+
+* Waterfall with Big Bang release
+
+* Development: many months
+* QA: several months, bugs, rework, etc
+* Operations
+* Information Security
+
+## Wall of Confusion
+{id: wall-of-confusion}
+
+![Wall of Confusion](WallOfConfusion.png)
+
+by Andrew Clay Shafer.
+
+* [source](http://dev2ops.org/2010/02/what-is-devops/)
+
+## The business cost
+{id: the-business-cost}
+
+* Wasted time, cost fixing bugs.
+* Low of customer trust due to bugs.
+* Long development time.
+* Fear of release.
+
+## The human cost
+{id: the-human-cost}
+
+* Long working hours.
+* Reduced quality of life.
+* Powerless in the organization.
+* Low employee satisfaction.
+* High turnover rate.
 
 ## High Performing organizations
 {id: hight-performing-organizations}
@@ -82,83 +129,39 @@ However research shows that using the right approach one can achieve fast-paced 
 
 * [source](https://puppet.com/resources/whitepaper/state-of-devops-report) Puppet labs report
 
-## Deploy per day VS value 
-{id: deploy-per-day-vs-value}
-
-![One release](time_value.svg)
-
-![Many releases](time_value_many_releases.svg)
-
-## The business cost
-{id: the-business-cost}
-
-* Wasted time, cost fixing bugs.
-* Low of customer trust due to bugs.
-* Long development time.
-* Fear of release.
-
-## The human cost
-{id: the-human-cost}
-
-* Long working hours.
-* Reduced quality of life.
-* Powerless in the organization.
-* Low employee satisfaction.
-* High turnover rate.
-
-
-## Deploy per day VS stability
-{id: deploy-per-day-vs-stability}
-
-A drawing: x coordinates risk of release (number of issues per release, stability of release)
-y coordinates: frequency of releases. (The paradox)
-
-
-## The tension
-{id: the-tension}
-
-Two competing goals of the IT organization:
-
-* Respond to the rapidly changing competitive landscape. (Development)
-* Provide stable, reliable, and secure service to the customer. (Operations)
-
-A special case of the above mentioned problem is the tension between developers and operations.
-Traditionally Developers are more interested in creating software, using the latest libraries etc.
-Operations are required to provide stability for the production system. Stability requires little or no changes to the software stack. (e.g. OS, third-party library, code)
-
-
-
-## Wall of Confusion
-{id: wall-of-confusion}
-
-![Wall of Confusion](WallOfConfusion.png)
-
-by Andrew Clay Shafer.
-
-* [source](http://dev2ops.org/2010/02/what-is-devops/)
-
-
-## Release frequency
-
-{id: release-frequency}
-
-![Release frequency](release-frequency.jpg)
-
-* [source](https://medium.com/data-ops/releasing-new-analytics-every-second-fc5fefd92360)
-
 
 ## Getting faster
 {id: getting-faster}
 
-A drawing of an arrow or just line. On the left side it is "an organization that releases software once a year"
-on the right end "Amazon, releasing once a second".
-Move further to the right on this line.
+```
+Release once a year  ==============> Amazon speed (more than 1 per second)
+```
+
+* Priorities
+* Small Batch size
+* Reduce Multitasking
 
 ## Priorities
 {id: priorities}
 
 * Instead of building 5 features - one feature each person
 * Build 2-3 features first and when you are done build the remaining feature.
+
+```
+1 =============>
+1 =============>
+1 =============>
+1 =============>
+1 =============>
+```
+
+```
+2 ======>
+2 ======>
+1 =============>
+2        ======>
+2        ======>
+```
 
 * You get some value (and feedback) earlier.
 * Incremental delivery.
@@ -173,7 +176,6 @@ Example: fill envelops - you have 10 envelops to fill with a letter. You have 4 
 * Write the address on the envelop.
 * Seal the envelop.
 
-
 ## Reduce Multitasking
 {id: reduce-multitasking}
 
@@ -181,7 +183,7 @@ Drawing thats shows how much time we spend on actual work vs. The switching cost
 
 ![Multitasking](multitasking.png)
 
-(source http://flowa.fi/blog/2014/10/23/games-to-learn-kanban-why-and-how.html )
+* [source](http://flowa.fi/blog/2014/10/23/games-to-learn-kanban-why-and-how.html)
 
 ## Multitasking Exercise
 {id: multitasking-exercise}
@@ -222,9 +224,46 @@ Microsoft research shows that developers on a mature code-base spend their time:
 * 5% writing new code
 
 * [source](https://blogs.msdn.microsoft.com/peterhal/2006/01/04/what-do-programmers-really-do-anyway-aka-part-2-of-the-yardstick-saga/)
-* [Wakatime](https://wakatime.com/)
+## Conway's Law
+{id: conways-law}
 
+* Mel Conway 1967
 
+* Organization determines architecture
+
+* Modular system requires modular organization
+
+## Architecture
+{id: architecture}
+
+* Monolith good for the startups
+* SOA - Service Oriented Architecture
+* Conway's law
+
+## Small Teams
+{id: small-teams}
+
+* 2 Pizza team (Jeff Bezos) (Full-service)
+* Align to Business Domains
+
+## Project boundaries
+{id: project-boundaries}
+
+* The majority of the work should be inside of each team.
+
+## Build only what you need
+{id: build-only-what-you-need}
+
+* When asked to add a feature, first try to figure out Why ? What is the problem that needs to be solved?
+* If possible use an existing tool or service. (Open Source, Cloud)
+* Focus on building what you really need.
+
+## Daily feedback meetings
+{id: daily-feedback-meetings}
+
+* What did you finish yesterday?
+* What will you finish today?
+* What's blocking you? ( What's your red flag? )
 
 ## Value stream (a concept of lean)
 {id: value-stream}
@@ -274,40 +313,6 @@ From idea (hypothesis, request) to solution running in production.
 * Reduce WIP: Kanban board can be used.
 * Reduce batch size.
 
-## Conway's Law
-{id: conways-law}
-
-* Mel Conway 1967
-
-* Organization determines architecture
-
-* Modular system requires modular organization
-
-## Small Teams
-{id: small-teams}
-
-* 2 Pizza team (Jeff Bezos) (Full-service)
-* Align to Business Domains
-
-## Project boundaries
-{id: project-boundaries}
-
-* The majority of the work should be inside of each team.
-
-## Build only what you need
-{id: build-only-what-you-need}
-
-* When asked to add a feature, first try to figure out Why ? What is the problem that needs to be solved?
-* If possible use an existing tool or service. (Open Source, Cloud)
-* Focus on building what you really need.
-
-
-## Daily feedback meetings
-{id: daily-feedback-meetings}
-
-* What did you finish yesterday?
-* What will you finish today?
-* What's blocking you? ( What's your red flag? )
 
 ## Objectives
 {id: objectives}
@@ -422,7 +427,7 @@ The same team
 * Bottom up experimentation, feedback. 
 
 * Get support from the top: VP RnD, CxO.
-* Team level.
+* Work on team level.
 
 ## Theory X and Theory Y
 {id: theory-x-and-theory-y}
@@ -454,6 +459,18 @@ Brownfield projects have:
 
 * Users.
 
+## Getting Started
+{id: getting-started}
+
+The two most important aspects are:
+
+* Value Creation
+* Feedback
+
+Start with these.
+
+* Discuss the things you value.
+* Then build in short feedback loops in your process. 
 
 ## Top down approach
 {id: top-down-approach}
@@ -468,21 +485,20 @@ Brownfield projects have:
 ## Team level approach
 {id: team-level-approach}
 
+
 * Start writing tests.
 * For every new feature, for every bug.
 * Include time for refactoring.
+* Set up Continuous Integration
+* Work on standardized environment (Requirements, Containers)
 
 At first this will take you extra time. Later you will see the value. Put it in the estimates. They are part of your job.
 
 * Allocate at least 20% of your time to this.
 
-## Implementation
-{id: implementation}
+## Infrastructure as code
+{id: infrastructure-as-code}
 
-* Infrastructure as code.
-
-The two most important aspects are value creation and feedback.
-So start with this. Discuss the things we value. Then build in short feedback loops in your process. 
 
 ## Learn from the mistakes
 {id: learn-from-the-mistakes}
@@ -518,14 +534,6 @@ This needs investment both time and money and it leads to change.
 
 ## Canary release
 {id: canary-release}
-
-## Archiecture
-{id: architecture}
-
-* Monolith good for the startups
-* SOA - Service Oriented Architecture
-* 2 pizza teams
-* Conway's law
 
 ## Resilience testing
 {id: resilience-testing}
@@ -566,3 +574,10 @@ Blog posts
 * [You're Doing Scrum Wrong, and Here's How to Fix It](https://hackernoon.com/youre-doing-scrum-wrong-and-here-s-how-to-fix-it-6d45fdd26721)
 
 * [Manifesto for Agile Software Development](http://agilemanifesto.org/)
+
+## Contact me
+{id: contact-me}
+
+* [Gábor Szabó](https://www.linkedin.com/in/szabgab/) @szabgab
+
+
