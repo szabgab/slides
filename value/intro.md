@@ -16,13 +16,13 @@
 * What kind of products and services do you develop?
 * Something interesting about you.
 
-## Goal of the organization
+## Goal of the company / organization
 {id: goal}
 
 ## Goals of employees
 {id: goal-of-employees}
 
-## Time is Money
+## Value creation - Time is Money
 {id: time}
 
 ## What is the solution?
@@ -184,8 +184,6 @@ Example: fill envelops - you have 10 envelops to fill with a letter. You have 4 
 ## Reduce Multitasking
 {id: reduce-multitasking}
 
-Drawing thats shows how much time we spend on actual work vs. The switching cost for 1-5 parallel tasks.
-
 ![Multitasking](multitasking.png)
 
 * [source](http://flowa.fi/blog/2014/10/23/games-to-learn-kanban-why-and-how.html)
@@ -224,7 +222,7 @@ Observe how much longer the second method takes.
 {id: fast-feedback-loop}
 
 * Learning from mistakes made half a year earlier is costly, painful, and never really happens.
-* Learning from mistakes made 10 min ago is much more valuable.
+* Learning from mistakes made 10 min ago is much easier and more valuable.
 
 ## Feedback Techniques
 {id: techniques}
@@ -270,9 +268,16 @@ Observe how much longer the second method takes.
 * Standardized environments. (Development, testing)
 
 ## Toyota Andon cord
-{id: andon-cord}
+{id: toyota-andon-cord}
 
 * Swarm and solve problems, build and spread new knowledge.
+
+![](andon-cord-example-in-manufacturing.jpg)
+
+## Andon cord
+{id: andon-cord}
+
+![](6sig-andon-system.jpg)
 
 ## Test-Driven Development
 {id: test-driven-development}
@@ -567,5 +572,13 @@ Blog posts
 {id: contact-me}
 
 * [Gábor Szabó](https://www.linkedin.com/in/szabgab/) @szabgab
+
+
+## Sources
+{id: sources}
+
+http://www.shmula.com/about-peter-abilla/what-is-andon-in-the-toyota-production-system/
+
+http://www.shmula.com/andon-system-what-does-it-tell-you/20584/
 
 
