@@ -140,6 +140,9 @@ Release once a year  ==============> Amazon speed (more than 1 per second)
 * Priorities
 * Small Batch size
 * Reduce Multitasking
+* Architecture
+* Automated Tests
+* Build only what you need
 
 ## Priorities
 {id: priorities}
@@ -209,7 +212,7 @@ Observe how much longer the second method takes.
 ## Test-Driven Development
 {id: test-driven-development}
 
-* Tests provide a solid ground to run on.
+* Tests provide a solid ground.
 * More confidence in our changes.
 * Tests make better code.
 * Tests make better systems (catch bugs earlier).
@@ -224,14 +227,6 @@ Microsoft research shows that developers on a mature code-base spend their time:
 * 5% writing new code
 
 * [source](https://blogs.msdn.microsoft.com/peterhal/2006/01/04/what-do-programmers-really-do-anyway-aka-part-2-of-the-yardstick-saga/)
-## Conway's Law
-{id: conways-law}
-
-* Mel Conway 1967
-
-* Organization determines architecture
-
-* Modular system requires modular organization
 
 ## Architecture
 {id: architecture}
@@ -239,6 +234,13 @@ Microsoft research shows that developers on a mature code-base spend their time:
 * Monolith good for the startups
 * SOA - Service Oriented Architecture
 * Conway's law
+
+## Conway's Law
+{id: conways-law}
+
+* Mel Conway 1967
+* Organization determines architecture.
+* Modular system requires modular organization.
 
 ## Small Teams
 {id: small-teams}
@@ -254,9 +256,30 @@ Microsoft research shows that developers on a mature code-base spend their time:
 ## Build only what you need
 {id: build-only-what-you-need}
 
-* When asked to add a feature, first try to figure out Why ? What is the problem that needs to be solved?
+* When asked to add a feature, first try to figure out Why? What is the problem that needs to be solved?
 * If possible use an existing tool or service. (Open Source, Cloud)
 * Focus on building what you really need.
+
+## Create fast feedback loops
+{id: fast-feedback-loop}
+
+* Learning from mistakes made half a year earlier is costly, painful, and never really happens.
+* Learning from mistakes made 10 min ago is much more valuable.
+
+## Feedback Techniques
+{id: techniques}
+
+* From the client after a year of development.
+* Telemetry: servers, client interaction, errors, failures... Log and monitor everything. 
+* Continuous Deployment (CD).
+* Code reviews.
+* Continuous Integration (CI).
+* Build system.
+* Test automation (unit and other automated tests).
+* Pair programming.
+* Mob programming.
+
+* Swarm and solve problems, build and spread new knowledge. Toyota Andon cord. 
 
 ## Daily feedback meetings
 {id: daily-feedback-meetings}
@@ -265,83 +288,65 @@ Microsoft research shows that developers on a mature code-base spend their time:
 * What will you finish today?
 * What's blocking you? ( What's your red flag? )
 
-## Value stream (a concept of lean)
-{id: value-stream}
+## Pair Programming
+{id: pair-programming}
 
-Value stream mapping: how to visualize work and align leadership for organizational transformation. 
+* 2 people at the same computer
+* Typing time?
 
-From idea (hypothesis, request) to solution running in production.
+## Infrastructure as code
+{id: infrastructure-as-code}
 
+* Requirements files.
+* Vagrant configurations.
+* Ansible/Chef/Puppet
+* Containers - Docker Images
+* Container Orchestration - Kubernetes
 
-## The Flow
-{id: flow}
+## Learn from the mistakes
+{id: learn-from-the-mistakes}
 
-* Flow of information and material.
-* Value is only realized when the feature reaches the customer.
+* Blameless post mortem. [Etsy Morgue tool](https://github.com/etsy/morgue).
+* Learning organization.
+* Transform local discoveries into global improvements. ( US navy reactors. )
 
-* Requirements (Product management)
-* Design
-* Development
-* Information security (InfoSec)
-* QA
-* IT Operations
+## Continuous Improvement
+{id: continuous-improvement}
 
-## Improve the Value stream
-{id: improve-the-values-stream}
+* Continuous Improvement.
+* Continuous Learning.
 
-* Make the work and the bottlenecks visible!  Eg use a Kanban board.
-* Limit work in process (WIP), as that only generates cost. (Fewer Things, More Done)
-* Reduce switching cost, wasted investment.
-* Reduce batch sizes
-* Reduce number of handoffs as each handoff is a queue. A source for misunderstanding etc. Functional testing load testing firewall, server setup etc.  Solution is automation and more autonomous teams self service teams. 
-* Continually Identify and remove our bottlenecks.
-* Constantly optimizing the system.
-* Preventing rework. Reduce the number and seriousness of defects.
-* Eliminate waste and hardship
+This needs investment both time and money and it leads to change. 
 
-## Total time
-{id: total-time}
+## Decouple deployment
+{id: decouple-deployment}
 
-* Time to complete a task from requirement to use by client.
+* Decouple deploy from release.
+* Decouple delivery from deploy.
 
-## Lead time
-{id: lead-time}
+* Feature flags.
+* Deployment circles. ( Cluster immune systems )
+* Dark launches
+* AB testing
 
-* Lead time: Time between check-in of the code till it is deployed and used.
-* Lead time: part of the value stream starts when the solution was checked in to version control. 
-* Long lead time is for large complex tightly coupled monolithic projects.
-* Reduce WIP: Kanban board can be used.
-* Reduce batch size.
+## Blue-green deployment
+{id: blue-green-deployment}
 
+* Decouple changes to the database and changes to the application. 
+* Duplicate the whole stack.
 
-## Objectives
-{id: objectives}
+## Canary release
+{id: canary-release}
 
-* Reduce the risk associated with large releases.
-* Increase the ability to release features fast to beat the competition.
-* Increase the ability to scale.
-* Increase trust between development and operations
+## Resilience testing
+{id: resilience-testing}
 
-## Feedback Techniques
-{id: techniques}
+* Intentionally cause problems during the work day and see how the tools and the team react.
+* Randomly kill processes and compute servers in production to see how the monitoring system and the whole team reacts
+* Do this often during work hours and reduce the risk of such thing happening during the nights.
+* Fix any issues. Learn.
+* [Netflix Chaos Monkey](https://github.com/Netflix/SimianArmy/wiki/Chaos-Monkey)
 
-* Create fast feedback loops
-
-* Test automation (unit and other automated tests).
-* Build system.
-* Continuous Integration (CI).
-* Continuous Deployment (CD).
-* Code reviews.
-* Pair programming.
-* Mob programming.
-* Telemetry: servers, client interaction, errors, failures... Log and monitor everything. 
-* Swarm and solve problems, build and spread new knowledge. Toyota Andon cord. 
-
-## Fast feedback
-{id: fast-feedback-loop}
-
-* Learning from mistakes made half a year earlier is costly, painful, and never really happens.
-* Learning from mistakes made 10 min ago is much more valuable.
 
 ## What is in there for me, the developer?
 {id: what-is-in-there-for-the-developer}
@@ -352,8 +357,9 @@ Most engineers I know want to enjoy work and be proud of their accomplishments.
 * Better working environment. 
 * Much less bugs and rework of the same code. 
 * Allow you to do other work when this is done
-* Learn better development practices that will be relevant in your next job as well.
 
+* Learn new things.
+* Learn better development practices that will be relevant in your next job as well.
 
 ## Features
 {id: features}
@@ -365,14 +371,6 @@ Most engineers I know want to enjoy work and be proud of their accomplishments.
 * Performance
 * Stability
 * Configurability
-
-
-## Resilient teams
-{id: resilient-teams}
-
-* Chaos Monkey of Netflix
-* Randomly kill processes and compute servers in production to see how the monitoring system and the whole team reacts
-* Do this often during work hours and reduce the risk of such thing happening during the nights.
 
 ## DevOps loop
 {id: devops-loop}
@@ -402,7 +400,6 @@ The same team
 * runs the service
 
 * If you are the one who needs to wake up at night for a bug, you will fix it soon.
-
 
 ## Continuous Integration (CI)
 {id: continuous-integration}
@@ -485,62 +482,15 @@ Start with these.
 ## Team level approach
 {id: team-level-approach}
 
-
 * Start writing tests.
 * For every new feature, for every bug.
 * Include time for refactoring.
 * Set up Continuous Integration
-* Work on standardized environment (Requirements, Containers)
+* Work on standardized environment (Requirements, VMs, Containers)
 
 At first this will take you extra time. Later you will see the value. Put it in the estimates. They are part of your job.
 
 * Allocate at least 20% of your time to this.
-
-## Infrastructure as code
-{id: infrastructure-as-code}
-
-
-## Learn from the mistakes
-{id: learn-from-the-mistakes}
-
-* Blameless post mortem. [Etsy Morgue tool](https://github.com/etsy/morgue).
-* Learning organization.
-* Transform local discoveries into global improvements. ( US navy reactors. )
-
-## Continuous Improvement
-{id: continuous-improvement}
-
-* Continuous Improvement.
-* Continuous Learning.
-
-This needs investment both time and money and it leads to change. 
-
-## Decouple deployment
-{id: decouple-deployment}
-
-* Decouple deploy from release.
-* Decouple delivery from deploy.
-
-* Feature flags.
-* Deployment circles. ( Cluster immune systems )
-* Dark launches
-* AB testing
-
-## Blue-green deployment
-{id: blue-green-deployment}
-
-* Decouple changes to the database and changes to the application. 
-* Duplicate the whole stack.
-
-## Canary release
-{id: canary-release}
-
-## Resilience testing
-{id: resilience-testing}
-
-* Intentionally cause problems during the work day and see how the tools and the team react.
-* Fix any issues. Learn.
-* [Netflix Chaos Monkey](https://github.com/Netflix/SimianArmy/wiki/Chaos-Monkey)
 
 ## Resources
 {id: recommended-books}

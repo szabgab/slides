@@ -120,3 +120,63 @@ Move further to the right on this line.
 
 
 * [Wakatime](https://wakatime.com/)
+
+
+## Value stream (a concept of lean)
+{id: value-stream}
+
+Value stream mapping: how to visualize work and align leadership for organizational transformation. 
+
+From idea (hypothesis, request) to solution running in production.
+
+
+## The Flow
+{id: flow}
+
+* Flow of information and material.
+* Value is only realized when the feature reaches the customer.
+
+* Requirements (Product management)
+* Design
+* Development
+* Information security (InfoSec)
+* QA
+* IT Operations
+
+## Improve the Value stream
+{id: improve-the-values-stream}
+
+* Make the work and the bottlenecks visible!  Eg use a Kanban board.
+* Limit work in process (WIP), as that only generates cost. (Fewer Things, More Done)
+* Reduce switching cost, wasted investment.
+* Reduce batch sizes
+* Reduce number of handoffs as each handoff is a queue. A source for misunderstanding etc. Functional testing load testing firewall, server setup etc.  Solution is automation and more autonomous teams self service teams. 
+* Continually Identify and remove our bottlenecks.
+* Constantly optimizing the system.
+* Preventing rework. Reduce the number and seriousness of defects.
+* Eliminate waste and hardship
+
+## Total time
+{id: total-time}
+
+* Time to complete a task from requirement to use by client.
+
+## Lead time
+{id: lead-time}
+
+* Lead time: Time between check-in of the code till it is deployed and used.
+* Lead time: part of the value stream starts when the solution was checked in to version control. 
+* Long lead time is for large complex tightly coupled monolithic projects.
+* Reduce WIP: Kanban board can be used.
+* Reduce batch size.
+
+
+## Objectives
+{id: objectives}
+
+* Reduce the risk associated with large releases.
+* Increase the ability to release features fast to beat the competition.
+* Increase the ability to scale.
+* Increase trust between development and operations
+
+
