@@ -537,8 +537,12 @@ This needs investment both time and money and it leads to change.
 ## Resources
 {id: recommended-books}
 
+Surveys
+
 * [State of Agile](http://stateofagile.versionone.com/).
 * [State of DevOps](https://puppet.com/resources/whitepaper/state-of-devops-report) Puppet labs report.
+
+Books
 
 * [The Phoenix project](https://www.amazon.com/Phoenix-Project-DevOps-Helping-Business/dp/0988262592)
 * [The DevOps handbook](https://www.amazon.com/DevOps-Handbook-World-Class-Reliability-Organizations/dp/1942788002/)
@@ -549,9 +553,16 @@ This needs investment both time and money and it leads to change.
 * [The Fifth Discipline: The Art & Practice of The Learning Organization](https://www.amazon.com/Fifth-Discipline-Practice-Learning-Organization/dp/0385517254) by Peter M. Senge.
 * [Beyond Legacy Code](https://pragprog.com/book/dblegacy/beyond-legacy-code) by David Scott Bernstein.
 
+Videos
+
 * [Velocity and volume (or speed wins)](https://www.youtube.com/watch?v=wyWI3gLpB8o) Adrian Cockcroft.
 * [Moving Fast At Scale](https://www.youtube.com/watch?v=oH4g7wLPqg4) video by Randy Shoup.
 * [Moving Fast At Scale](https://www.slideshare.net/RandyShoup/moving-fast-at-scale) slides by Randy Shoup.
 
+Blog posts
+
 * [No, You are not Dumb! Programmers do spend a lot of time Understanding Code...](http://blog.architexa.com/2010/05/no-you-are-not-dumb-programmers-do-spend-a-lot-of-time-understanding-code/) links to surveys.
 * [How Software Developers Really Spend Their Time](https://readwrite.com/2013/04/25/how-software-developers-really-spend-their-time/) 
+* [You're Doing Scrum Wrong, and Here's How to Fix It](https://hackernoon.com/youre-doing-scrum-wrong-and-here-s-how-to-fix-it-6d45fdd26721)
+
+* [Manifesto for Agile Software Development](http://agilemanifesto.org/)
