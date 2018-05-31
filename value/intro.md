@@ -211,6 +211,15 @@ In the next round write the same ones down, but this time start by writing down 
 
 Observe how much longer the second method takes.
 
+## Build only what you need
+{id: build-only-what-you-need}
+
+* When asked to add a feature, first try to figure out Why? What is the problem that needs to be solved?
+* If possible use an existing tool or service. (Open Source, Cloud)
+* Focus on building what you really need.
+
+
+
 ## Create fast feedback loops
 {id: fast-feedback-loop}
 
@@ -295,14 +304,6 @@ Microsoft research shows that developers on a mature code-base spend their time:
 
 * Clean up the mess!
 
-## Continuous Improvement
-{id: continuous-improvement}
-
-* Continuous Improvement.
-* Continuous Learning.
-
-This needs investment both time and money and it leads to change. 
-
 ## Architecture
 {id: architecture}
 
@@ -336,18 +337,29 @@ The same team
 
 * If you are the one who needs to wake up at night for a bug, you will fix it soon.
 
-
 ## Project boundaries
 {id: project-boundaries}
 
 * The majority of the work should be inside of each team.
 
-## Build only what you need
-{id: build-only-what-you-need}
+## Design
+{id: design}
 
-* When asked to add a feature, first try to figure out Why? What is the problem that needs to be solved?
-* If possible use an existing tool or service. (Open Source, Cloud)
-* Focus on building what you really need.
+* Design for both external and internal customers. 
+* The external pays for it but the internal also uses it. 
+* Optimize for downstream work center. 
+
+## Features
+{id: features}
+
+* Testability
+* Deployability
+* Architecture
+* Security
+* Performance
+* Stability
+* Configurability
+
 
 ## Continuous Deployment (CD)
 {id: continuous-deployment}
@@ -397,18 +409,6 @@ The same team
 * Fix any issues. Learn.
 * [Netflix Chaos Monkey](https://github.com/Netflix/SimianArmy/wiki/Chaos-Monkey)
 
-
-## Features
-{id: features}
-
-* Testability
-* Deployability
-* Architecture
-* Security
-* Performance
-* Stability
-* Configurability
-
 ## DevOps loop
 {id: devops-loop}
 
@@ -425,12 +425,13 @@ The same team
 * Operations
 * Monitoring
 
-## Design
-{id: design}
+## Continuous Improvement
+{id: continuous-improvement}
 
-* Design for both external and internal customers. 
-* The external pays for it but the internal also uses it. 
-* Optimize for downstream work center. 
+* Continuous Improvement.
+* Continuous Learning.
+
+This needs investment both time and money and it leads to change. 
 
 
 ## What is in there for me, the developer?
