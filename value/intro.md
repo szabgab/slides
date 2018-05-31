@@ -142,7 +142,9 @@ Release once a year  ==============> Amazon speed (more than 1 per second)
 * Reduce Multitasking
 * Architecture
 * Automated Tests
+* Refactoring
 * Build only what you need
+* Create fast feedback loop
 
 ## Priorities
 {id: priorities}
@@ -209,6 +211,60 @@ In the next round write the same ones down, but this time start by writing down 
 
 Observe how much longer the second method takes.
 
+## Create fast feedback loops
+{id: fast-feedback-loop}
+
+* Learning from mistakes made half a year earlier is costly, painful, and never really happens.
+* Learning from mistakes made 10 min ago is much more valuable.
+
+## Feedback Techniques
+{id: techniques}
+
+* From the client after a year of development.
+* Telemetry: servers, client interaction, errors, failures... Log and monitor everything. 
+* Continuous Deployment (CD).
+* Code reviews.
+* Continuous Integration (CI).
+* Build system.
+* Test automation (unit and other automated tests).
+* Pair programming.
+* Mob programming.
+
+
+## Learn from the mistakes
+{id: learn-from-the-mistakes}
+
+* Blameless post mortem. [Etsy Morgue tool](https://github.com/etsy/morgue).
+* Learning organization.
+* Transform local discoveries into global improvements. ( US navy reactors. )
+
+## Retrospectives
+{id: retrospectives}
+
+* After each sprint.
+* Once every few weeks.
+
+* Primarily about the process.
+
+## Daily feedback meetings
+{id: daily-feedback-meetings}
+
+* What did you finish yesterday?
+* What will you finish today?
+* What's blocking you? ( What's your red flag? )
+
+## Continuous Integration (CI)
+{id: continuous-integration}
+
+* Nightly build?
+* Make sure the code is always releasable/deployable.
+* Standardized environments. (Development, testing)
+
+## Toyota Andon cord
+{id: andon-cord}
+
+* Swarm and solve problems, build and spread new knowledge.
+
 ## Test-Driven Development
 {id: test-driven-development}
 
@@ -227,6 +283,25 @@ Microsoft research shows that developers on a mature code-base spend their time:
 * 5% writing new code
 
 * [source](https://blogs.msdn.microsoft.com/peterhal/2006/01/04/what-do-programmers-really-do-anyway-aka-part-2-of-the-yardstick-saga/)
+
+## Pair Programming
+{id: pair-programming}
+
+* 2 people at the same computer
+* Typing time?
+
+## Refactoring
+{id: refactoring}
+
+* Clean up the mess!
+
+## Continuous Improvement
+{id: continuous-improvement}
+
+* Continuous Improvement.
+* Continuous Learning.
+
+This needs investment both time and money and it leads to change. 
 
 ## Architecture
 {id: architecture}
@@ -248,6 +323,20 @@ Microsoft research shows that developers on a mature code-base spend their time:
 * 2 Pizza team (Jeff Bezos) (Full-service)
 * Align to Business Domains
 
+## End-to-end Ownership
+{id: end-to-end-ownership}
+
+* You build it, you run it. Werner Vogels  (CTO of Amazon)
+
+The same team
+
+* writes code
+* checks quality
+* runs the service
+
+* If you are the one who needs to wake up at night for a bug, you will fix it soon.
+
+
 ## Project boundaries
 {id: project-boundaries}
 
@@ -260,63 +349,10 @@ Microsoft research shows that developers on a mature code-base spend their time:
 * If possible use an existing tool or service. (Open Source, Cloud)
 * Focus on building what you really need.
 
-## Create fast feedback loops
-{id: fast-feedback-loop}
+## Continuous Deployment (CD)
+{id: continuous-deployment}
 
-* Learning from mistakes made half a year earlier is costly, painful, and never really happens.
-* Learning from mistakes made 10 min ago is much more valuable.
-
-## Feedback Techniques
-{id: techniques}
-
-* From the client after a year of development.
-* Telemetry: servers, client interaction, errors, failures... Log and monitor everything. 
-* Continuous Deployment (CD).
-* Code reviews.
-* Continuous Integration (CI).
-* Build system.
-* Test automation (unit and other automated tests).
-* Pair programming.
-* Mob programming.
-
-* Swarm and solve problems, build and spread new knowledge. Toyota Andon cord. 
-
-## Daily feedback meetings
-{id: daily-feedback-meetings}
-
-* What did you finish yesterday?
-* What will you finish today?
-* What's blocking you? ( What's your red flag? )
-
-## Pair Programming
-{id: pair-programming}
-
-* 2 people at the same computer
-* Typing time?
-
-## Infrastructure as code
-{id: infrastructure-as-code}
-
-* Requirements files.
-* Vagrant configurations.
-* Ansible/Chef/Puppet
-* Containers - Docker Images
-* Container Orchestration - Kubernetes
-
-## Learn from the mistakes
-{id: learn-from-the-mistakes}
-
-* Blameless post mortem. [Etsy Morgue tool](https://github.com/etsy/morgue).
-* Learning organization.
-* Transform local discoveries into global improvements. ( US navy reactors. )
-
-## Continuous Improvement
-{id: continuous-improvement}
-
-* Continuous Improvement.
-* Continuous Learning.
-
-This needs investment both time and money and it leads to change. 
+* Repeatable deployment pipeline.
 
 ## Decouple deployment
 {id: decouple-deployment}
@@ -325,8 +361,10 @@ This needs investment both time and money and it leads to change.
 * Decouple delivery from deploy.
 
 * Feature flags.
-* Deployment circles. ( Cluster immune systems )
 * Dark launches
+* Deployment circles - Canary release - Cluster immune systems
+* Blue-green deployment
+
 * AB testing
 
 ## Blue-green deployment
@@ -338,6 +376,18 @@ This needs investment both time and money and it leads to change.
 ## Canary release
 {id: canary-release}
 
+* Deploy to only a few servers, monitor
+* Enable only to a subset of users, monitor
+
+## Infrastructure as code
+{id: infrastructure-as-code}
+
+* Requirements files.
+* Vagrant configurations.
+* Ansible/Chef/Puppet
+* Containers - Docker Images
+* Container Orchestration - Kubernetes
+
 ## Resilience testing
 {id: resilience-testing}
 
@@ -347,19 +397,6 @@ This needs investment both time and money and it leads to change.
 * Fix any issues. Learn.
 * [Netflix Chaos Monkey](https://github.com/Netflix/SimianArmy/wiki/Chaos-Monkey)
 
-
-## What is in there for me, the developer?
-{id: what-is-in-there-for-the-developer}
-
-Most engineers I know want to enjoy work and be proud of their accomplishments. 
-
-* Safer work place - no fear of change, no fear of release.
-* Better working environment. 
-* Much less bugs and rework of the same code. 
-* Allow you to do other work when this is done
-
-* Learn new things.
-* Learn better development practices that will be relevant in your next job as well.
 
 ## Features
 {id: features}
@@ -388,30 +425,27 @@ Most engineers I know want to enjoy work and be proud of their accomplishments.
 * Operations
 * Monitoring
 
-## End-to-end Ownership
-{id: end-to-end-ownership}
-
-* You build it, you run it. Werner Vogels  (CTO of Amazon)
-
-The same team
-
-* writes code
-* checks quality
-* runs the service
-
-* If you are the one who needs to wake up at night for a bug, you will fix it soon.
-
-## Continuous Integration (CI)
-{id: continuous-integration}
-
-* Repeatable deployment pipeline.
-
 ## Design
 {id: design}
 
 * Design for both external and internal customers. 
 * The external pays for it but the internal also uses it. 
 * Optimize for downstream work center. 
+
+
+## What is in there for me, the developer?
+{id: what-is-in-there-for-the-developer}
+
+Most engineers I know want to enjoy work and be proud of their accomplishments. 
+
+* Safer work place - no fear of change, no fear of release.
+* Better working environment. 
+* Much less bugs and rework of the same code. 
+* Allow you to do other work when this is done
+
+* Learn new things.
+* Learn better development practices that will be relevant in your next job as well.
+
 
 
 ## The transformation process
@@ -524,6 +558,9 @@ Blog posts
 * [You're Doing Scrum Wrong, and Here's How to Fix It](https://hackernoon.com/youre-doing-scrum-wrong-and-here-s-how-to-fix-it-6d45fdd26721)
 
 * [Manifesto for Agile Software Development](http://agilemanifesto.org/)
+
+* [Canary Release](https://martinfowler.com/bliki/CanaryRelease.html)
+
 
 ## Contact me
 {id: contact-me}
