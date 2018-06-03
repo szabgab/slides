@@ -10,6 +10,22 @@
 * [DevOps Workshops](http://devops-workshops.code-maven.com/)
 * [Code Mavens Meetup](https://www.meetup.com/Code-Mavens/)
 
+## Plan
+{id: plan}
+
+* Create AWS Lammbda account.
+* Create sample script in Python that can be accessesed via curl, get parameter, return it.
+
+* Configure public hostname to access the API call.
+* Set up some database in AWS to hold our data.
+
+* A multi-file application. (e.g. one that can read and return the content of a json file)
+
+* An application using a module that is not available in Lambda. (Installing modules)
+
+* A function that will accept the name of two cities, call the https://openweathermap.org/ and return the temprature difference in the two places.
+
+
 
 ## Create an AWS account
 {id: create-account}
