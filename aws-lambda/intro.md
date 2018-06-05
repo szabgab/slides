@@ -10,32 +10,34 @@
 * [DevOps Workshops](http://devops-workshops.code-maven.com/)
 * [Code Mavens Meetup](https://www.meetup.com/Code-Mavens/)
 
+## What is Serverless?
+{id: serverless}
+
+* Function as a Service FaaS
+
 ## Plan
 {id: plan}
 
-* Create AWS Lammbda account.
-* Create sample script in Python that can be accessesed via curl, get parameter, return it.
-
-* Configure public hostname to access the API call.
-* Set up some database in AWS to hold our data.
-
-* A multi-file application. (e.g. one that can read and return the content of a json file)
 
 * An application using a module that is not available in Lambda. (Installing modules)
 
 * A function that will accept the name of two cities, call the https://openweathermap.org/ and return the temprature difference in the two places.
 
-
+* Set up some database in AWS to hold our data.
 
 ## Create an AWS account
 {id: create-account}
+
+## Hello World in AWS Lambda
+{id: hello-world}
+
+* Create sample script in Python that can be accessesed via curl, get parameter, return it.
 
 [](hello_world.py)
 
 * Test it
 
 [](hello_world_json.py)
-
 
 curl https://nck2wezqxl.execute-api.us-east-1.amazonaws.com/demo/hello
 
@@ -44,6 +46,38 @@ curl - Internal Server Error
 [](hello_world_json_public.py)
 
 [](echo.py)
+
+
+## Multi-file application
+{id: multi-file-application}
+
+* Create a file called a.json with some JSON content in it.
+
+[](a.json)
+
+* Change the code to read the file and return it
+
+[](read_json.py)
+
+[](read_json_param.py)
+
+## Deployment
+{id: deployment}
+
+```
+mkdir project
+cd project
+vim hello_world.py
+zip ../project.zip *
+```
+
+
+
+## Public URL
+{id: public-url}
+
+* Configure public hostname to access the API call.
+
 
 
 ## Resources
