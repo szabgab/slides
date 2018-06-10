@@ -72,6 +72,10 @@
 
 * [source](https://medium.com/data-ops/releasing-new-analytics-every-second-fc5fefd92360)
 
+## MTTR - Mean time to repair
+{id: mttr}
+
+
 
 ## Old model
 {id: old-model}
