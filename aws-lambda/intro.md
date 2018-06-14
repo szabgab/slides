@@ -36,7 +36,7 @@
 ## Task 1
 {id: task-1}
 
-* Create script in Python that can be accessesed via curl, get parameter, return it.
+* Create script in Python that can be accessesed via curl.
 
 ## Hello World in AWS Lambda
 {id: hello-world}
@@ -120,7 +120,19 @@ or
 
 ![](hello_world_json_event.py)
 
+* curl ...
+
 ![](event.json)
+
+## Exercise 1
+{id: exercise-1}
+
+* Create your own hello function.
+
+## Task 2
+{id: task-2}
+
+* Accept parameter in the GET request and echo it back
 
 ## Accept Parameters
 {id: accept-parameters}
@@ -150,11 +162,15 @@ or
 ## Error via the API
 {id: error-via-the-api}
 
+* Before we fix the code, let's see what happens if we access the URL using `curl` ?
+
 * curl ...
 
 ```
 {"message": "Internal server error"}
 ```
+
+* To see the error log, visit:
 
 * Monitoring
 * Invocation errors
@@ -174,26 +190,51 @@ or
 }
 ```
 
+* Try this using the "Test" button.
+
+Also, try it from the console using `curl` or in your browser (use your own URL).
+
 * curl 'https://qspmdah6oj.execute-api.us-east-1.amazonaws.com/v0/hello?name=Foo%20Bar'
 
 ```
 {"message": "Hello Foo Bar!"}
 ```
 
-## Exercise 1
-{id: exercise-1}
+## Exercise 2
+{id: exercise-2}
 
 * Fix the Python code so even if the user does not supply the "name" field it still won't crash.
 * Instead make it return a JSON structure with status "400 Bad Request"
 * Use `curl -I` or `curl -D err.txt` to check the headers as well.
 
-## Task 2
-{id: task-2}
+* Create another function that will accept 2 numbers (parameters a and b) and add them together returning a JSON that looks like this:
 
-* Create an application that has more than one files
+```
+{
+   'a' : 23,
+   'b' : 19,
+   'op' : '+'
+   'result' : 42
+}
+```
 
-## Multi-file application
-{id: multi-file-application}
+## Solution 2 - echo
+{id: solution-2-echo}
+
+![](echo_fixed.py)
+
+## Solution 2 - add
+{id: solution-2-add}
+
+![](add_numbers.py)
+
+## Task 3
+{id: task-3}
+
+* Create an application that has more than one files.
+
+## Multi-file application - json
+{id: multi-file-application-json}
 
 * Create a file called a.json with some JSON content in it.
 
@@ -203,7 +244,12 @@ or
 
 ![](read_json.py)
 
-![](read_json_param.py)
+## Multi-file application - python module
+{id: multi-file-application-module}
+
+![](app1/lambda_function.py)
+
+![](app1/mymod.py)
 
 ## Deployment
 {id: deployment}
@@ -211,25 +257,45 @@ or
 ```
 mkdir project
 cd project
-vim hello_world.py
+vim lambda_function.py
 zip ../project.zip *
 ```
 
-![](app1/hello_world.py)
+![](app2/lambda_function.py)
 
-![](app1/hello_world.py)
+* Upload a .ZIP file.
+* Save.
+* Try it using `curl`.
 
-![](app/lambda_function.py)
+## Exercise 3
+{id: exercise-3}
 
-## Public URL
-{id: public-url}
+* Create a 'calculator' application that accepts two numbers 'a' and 'b' and an 'operation' that can be either 'add' or 'multiply'.
+* Return the appropirate result.
+* Create it on you computer in two files. A main web serving file and a module with two functions 'add' and 'multiply'
 
-* Configure public hostname to access the API call.
+* On your local computer create a directory for a project.
+* In the directory create a file called 'lambda_function.py' this will hold the main function.
+* Create also a file called 'mymodule.py'.
+* Upload the whole thing using zip.
+
+
+## Solution 3
+{id: solution-3-calc}
+
+![](app3/lambda_function.py)
+
+![](app3/mymodule.py)
+
 
 
 ## TODO
 {id: todo}
 
+
+* What is publish?
+
+* Configure public hostname to access the API call.
 
 * An application using a module that is not available in Lambda. (Installing modules)
 
