@@ -50,8 +50,6 @@
 * Policy templates: Basic Edge Lambda Permission
 * Press "Create function"
 
-(also good Simple Microservice Permissions)
-
 The default code will look like this:
 
 ![](hello_world.py)
@@ -128,6 +126,71 @@ or
 {id: accept-parameters}
 
 ![](echo.py)
+
+* Save and Click "Test"
+* Observe the error
+
+```
+{
+  "errorMessage": "'queryStringParameters'",
+  "errorType": "KeyError",
+  "stackTrace": [
+    [
+      "/var/task/lambda_function.py",
+      4,
+      "lambda_handler",
+      "name = event['queryStringParameters']['name']"
+    ]
+  ]
+}
+```
+
+* Our Python code is not safe enough, we assume a field "name" to be passed in.
+
+## Error via the API
+{id: error-via-the-api}
+
+* curl ...
+
+```
+{"message": "Internal server error"}
+```
+
+* Monitoring
+* Invocation errors
+* Jump to logs
+
+
+## Test Event for API Gateway
+{id: test-event-for-api-gateway}
+
+* Before we fix the code, we can fix the test:
+
+```
+{
+    "queryStringParameters" : {
+        "name": "Foo Bar"
+    }
+}
+```
+
+* curl 'https://qspmdah6oj.execute-api.us-east-1.amazonaws.com/v0/hello?name=Foo%20Bar'
+
+```
+{"message": "Hello Foo Bar!"}
+```
+
+## Exercise 1
+{id: exercise-1}
+
+* Fix the Python code so even if the user does not supply the "name" field it still won't crash.
+* Instead make it return a JSON structure with status "400 Bad Request"
+* Use `curl -I` or `curl -D err.txt` to check the headers as well.
+
+## Task 2
+{id: task-2}
+
+* Create an application that has more than one files
 
 ## Multi-file application
 {id: multi-file-application}

@@ -5,3 +5,4 @@ What are policy templates?
 
 http://www.awslessons.com/2017/lambda-api-gateway-internal-server-error/
 
+(also good Simple Microservice Permissions)
