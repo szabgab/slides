@@ -33,18 +33,24 @@
 
 * Region: us-east-1
 
+## Task 1
+{id: task-1}
+
+* Create script in Python that can be accessesed via curl, get parameter, return it.
+
 ## Hello World in AWS Lambda
 {id: hello-world}
 
-* Create sample script in Python that can be accessesed via curl, get parameter, return it.
-
 * Press "Create function"
 
-* Name: "myhello"
+* Name: "hello"
 * Runtime: Python 3.6
 * Role: Create new role from template(s)
 * Role name: "myrole"
-* Policy templates: Simple Microservice Permissions
+* Policy templates: Basic Edge Lambda Permission
+* Press "Create function"
+
+(also good Simple Microservice Permissions)
 
 The default code will look like this:
 
@@ -53,23 +59,41 @@ The default code will look like this:
 * Test it (click on "Test")
 * First it will make you create a new test-case.
 
+## Event Sources (Triggers)
+{id: event-sources}
+
+* [Supported Event Sources](https://docs.aws.amazon.com/lambda/latest/dg/invoking-lambda-function.html)
+* Amazon API Gateway
+* Scheduled Events
+* Amazon S3
+* Amazon DynamoDB
+* Amazon Simple Email Service
+* ...
+
 ## API Gateway
 {id: api-gateway}
 
 * "Add triggers" - select API Gateway
 * Configure Required
 * Create a new  API
-* API name: trymyhello
-* Deployment stage: anything
+* API name: demo
+* Deployment stage: v0
 * Security: Open
 
 * Once we "save" it, we'll be able to see the "Invoke URL"
-* https://s94rb025f9.execute-api.us-east-1.amazonaws.com/anything/myhello
+* https://s94rb025f9.execute-api.us-east-1.amazonaws.com/v0/hello
 
 * curl ...
 
+
 ```
 ERROR 502 Bad Gateway
+```
+
+or
+
+```
+{"message": "Internal server error"}
 ```
 
 ## Add header
@@ -87,11 +111,18 @@ ERROR 502 Bad Gateway
 
 ![](hello_world_json.py)
 
-curl https://nck2wezqxl.execute-api.us-east-1.amazonaws.com/demo/hello
+* curl ...
 
-curl - Internal Server Error
+```
+{"message": "Hello World!"}
+```
 
-![](hello_world_json_public.py)
+## Event details
+{id: event-details}
+
+![](hello_world_json_event.py)
+
+![](event.json)
 
 ## Accept Parameters
 {id: accept-parameters}

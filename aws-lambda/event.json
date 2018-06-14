@@ -1,0 +1,57 @@
+{
+    "event": {
+        "body": null,
+        "headers": {
+            "Accept": "*/*",
+            "CloudFront-Forwarded-Proto": "https",
+            "CloudFront-Is-Desktop-Viewer": "true",
+            "CloudFront-Is-Mobile-Viewer": "false",
+            "CloudFront-Is-SmartTV-Viewer": "false",
+            "CloudFront-Is-Tablet-Viewer": "false",
+            "CloudFront-Viewer-Country": "IL",
+            "Host": "qspmdah6oj.execute-api.us-east-1.amazonaws.com",
+            "User-Agent": "curl/7.54.0",
+            "Via": "2.0 2905d0bd25e66c3f788fb2134262d52a.cloudfront.net (CloudFront)",
+            "X-Amz-Cf-Id": "T9sXw9uX439w32EXXkQ13hHLoyQCIdTwPkTwpxAdPe1GMd6SYLOI4w==",
+            "X-Amzn-Trace-Id": "Root=1-5b2287d5-47b383c8205ec4288b78e2d8",
+            "X-Forwarded-For": "84.108.218.54, 54.182.243.56",
+            "X-Forwarded-Port": "443",
+            "X-Forwarded-Proto": "https"
+        },
+        "httpMethod": "GET",
+        "isBase64Encoded": false,
+        "path": "/hello",
+        "pathParameters": null,
+        "queryStringParameters": null,
+        "requestContext": {
+            "accountId": "476778636099",
+            "apiId": "qspmdah6oj",
+            "extendedRequestId": "IeopXGY3oAMFTFA=",
+            "httpMethod": "GET",
+            "identity": {
+                "accessKey": null,
+                "accountId": null,
+                "caller": null,
+                "cognitoAuthenticationProvider": null,
+                "cognitoAuthenticationType": null,
+                "cognitoIdentityId": null,
+                "cognitoIdentityPoolId": null,
+                "sourceIp": "84.108.218.54",
+                "user": null,
+                "userAgent": "curl/7.54.0",
+                "userArn": null
+            },
+            "path": "/v0/hello",
+            "protocol": "HTTP/1.1",
+            "requestId": "872a7d1f-6fe6-11e8-bec3-9f97ccc17519",
+            "requestTime": "14/Jun/2018:15:20:53 +0000",
+            "requestTimeEpoch": 1528989653567,
+            "resourceId": "rnvjfd",
+            "resourcePath": "/hello",
+            "stage": "v0"
+        },
+        "resource": "/hello",
+        "stageVariables": null
+    },
+    "message": "Hello World!"
+}
