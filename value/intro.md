@@ -17,13 +17,56 @@
 * Something interesting about you.
 
 ## Goal of the company / organization
-{id: goal}
+{id: goal-of-the-company}
+
+## Goal of the company / organization
+{id: goal-of-the-company-2}
+
+* More value to customer
+* More money to the shareholder
+
+## Value creation - Time is Money
+{id: time}
+
+* The sooner the better.
+
+* Getting USD 1,000,000 ten years from now is great.
+* Getting it one year from now is much better.
+* Getting it next week is even better than that.
+* NPV Net Present Value
+
+So "sooner" has a higher value than later.
 
 ## Goals of employees
 {id: goal-of-employees}
 
-## Value creation - Time is Money
-{id: time}
+
+## Goals of employees
+{id: goal-of-employees-2}
+
+* Authonomy
+* Mastery
+* Purpose
+
+* Location. (Close to home)
+* Good salary.
+* Job stability.
+* Interesting, Professional challenge.
+* Add value - make a contribution to something valuable.
+* Learn new things that will also be valuable at another company.
+* Enjoy their time at work (no late hours, no tension).
+* Working with nice people.
+* Having a good manager.
+* Being in the loop.
+* Being respected, acknowledged and recognized.
+* Working without wasting efforts. (More effective)
+* Good hardware and software and office environment.
+
+## Goals - Contradiction?
+{id: goals}
+
+* Satisfied engineers create more value.
+
 
 ## What is the solution?
 {id: what-is-the-solution}
@@ -409,6 +452,14 @@ The same team
 * Containers - Docker Images
 * Container Orchestration - Kubernetes
 
+## Hierarchy of abstractions
+{id: hierarchy-of-abstractions}
+
+* VPS (GCE - Google Cloud Engine)
+* Kubernetes (GKE - Google Kubernetes Engine)
+* Paas (GAE - Google App Engine)
+* Serverless (GCF - Google Cloud Functions)
+
 ## Resilience testing
 {id: resilience-testing}
 
@@ -554,6 +605,8 @@ Books
 * [Lean Thinking: Banish Waste and Create Wealth in Your Corporation](https://www.amazon.com/Lean-Thinking-Corporation-Revised-Updated/dp/0743249275) by James P. Womack and Daniel T. Jones.
 * [The Fifth Discipline: The Art & Practice of The Learning Organization](https://www.amazon.com/Fifth-Discipline-Practice-Learning-Organization/dp/0385517254) by Peter M. Senge.
 * [Beyond Legacy Code](https://pragprog.com/book/dblegacy/beyond-legacy-code) by David Scott Bernstein.
+* [Switch: How to Change Things When Change Is Hard](https://www.amazon.com/Switch-Change-Things-When-Hard/dp/0385528752) by Chip Heath and Dan Heath
+* [Drive: The Surprising Truth About What Motivates Us](https://www.amazon.com/Drive-Surprising-Truth-About-Motivates-ebook/dp/B004P1JDJO) by Daniel H. Pink
 
 Videos
 
@@ -571,6 +624,11 @@ Blog posts
 
 * [Canary Release](https://martinfowler.com/bliki/CanaryRelease.html)
 
+
+* [Ron Jeffries Says Developers Should Abandon "Agile"](https://www.infoq.com/news/2018/06/developers-should-abandon-agile)
+* [Developers Should Abandon Agile](https://ronjeffries.com/articles/018-01ff/abandon-1/) by Ron Jeffries.
+
+* [What do software engineers want from their jobs?](https://www.quora.com/What-do-software-engineers-want-from-their-jobs)
 
 ## Contact me
 {id: contact-me}

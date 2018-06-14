@@ -47,33 +47,13 @@ Goal - Value
 * What is our goal?
 * Why are we here?
 
-Goal of companies:
-* The overall goal of the companies is to create more value to customers.
-* More value to customer
-
 ## Values
 {id: values}
 
 * More value to customer
 
 
-Goals of employees
-
-* Higher salary.
-* Keep their job.
-* Learn new things that will also be valuable at another company.
-* Enjoy their time at work (no late hours, no tension).
-
 Time is Money
-
-* The sooner the better.
-
-* Getting USD 1,000,000 ten years from now is great.
-* Getting it one year from now is much better.
-* Getting it next week is even better than that.
-* NPV Net Present Value
-
-So "sooner" has a higher value than later.
 
 * Putting a name on it marking with a v does not work well.
 * Better to discuss what can and what cannot make a difference.
@@ -179,4 +159,9 @@ From idea (hypothesis, request) to solution running in production.
 * Increase the ability to scale.
 * Increase trust between development and operations
 
+## Management
+{id: management}
+
+* Management is good if you need complience.
+* For engagement, self-direction works better.
 

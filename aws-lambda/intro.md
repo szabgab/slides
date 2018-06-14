@@ -25,6 +25,10 @@
 
 * Set up some database in AWS to hold our data.
 
+* Cron / schedule an event.
+
+* Send mail from AWS Lambda
+
 ## Create an AWS account
 {id: create-account}
 
