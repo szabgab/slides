@@ -22,3 +22,7 @@ See Dockerfile
 Unable to import module 'lambda_function': libc.musl-x86_64.so.1: cannot open shared object file: No such file or directory
 
 It is here /lib/libc.musl-x86_64.so.1 in the Alpine Docker image
+
+[alpine linux](https://hub.docker.com/_/alpine/)
+
+* [python-Levenshtein](https://pypi.org/project/python-Levenshtein/) is another module writte in C

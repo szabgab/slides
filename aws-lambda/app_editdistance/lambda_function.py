@@ -28,7 +28,7 @@ def lambda_handler(event, context):
         'body': json.dumps({
             'a' : event['queryStringParameters']['a'],
             'b' : event['queryStringParameters']['b'],
-            'distance': distance,
+            'editdistance': distance,
         })
     }
 

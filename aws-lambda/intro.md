@@ -251,17 +251,20 @@ Also, try it from the console using `curl` or in your browser (use your own URL)
 
 ![](app1/mymod.py)
 
-## Deployment
-{id: deployment}
+## Local development
+{id: local-development}
 
 ```
 mkdir project
 cd project
 vim lambda_function.py
-zip ../project.zip *
 ```
 
 ![](app2/lambda_function.py)
+
+```
+zip ../project.zip *
+```
 
 * Upload a .ZIP file.
 * Save.
@@ -291,7 +294,7 @@ zip ../project.zip *
 ## Task 4
 {id: task-4}
 
-User 3rd party Python modules.
+Use 3rd party Python modules.
 
 [Creating a Deployment Package for Python](https://docs.aws.amazon.com/lambda/latest/dg/lambda-python-how-to-create-deployment-package.html)
 
@@ -303,20 +306,21 @@ User 3rd party Python modules.
 * Using [pylev](https://pypi.org/project/pylev/) which is pure Python.
 
 
+![](app_pylev/lambda_function.py)
+
 ```
 mkdir app_pylev
 cd app_pylev
 pip install pylev -t pypi
 zip -r ../project.zip *
 ```
-![](app_pylev/lambda_function.py)
 
 * `curl 'https://qspmdah6oj.execute-api.us-east-1.amazonaws.com/v0/hello?a=abd&b=acx'`
 
 ## Error: must supply either home or prefix/exec-prefix — not both
 {id: must-supply-either-home-or-prefix-exec-prefix-not-both}
 
-Create
+On OSX you might get the above error. Create the 'setup.cfg' file.
 
 ![](app_pylev/setup.cfg)
 
@@ -325,20 +329,25 @@ Create
 
 * [editdistance](https://github.com/aflc/editdistance) is a Levenshtein distance module written in C++ and Cython
 * [See](https://docs.aws.amazon.com/lambda/latest/dg/with-s3-example-deployment-pkg.html#with-s3-example-deployment-pkg-python)
-* [python-Levenshtein](https://pypi.org/project/python-Levenshtein/) is another module writte in C
+
+![](app_editdistance/lambda_function.py)
+
+![](app_editdistance/requirements.txt)
 
 * Needs a linux box either locally or on Amazon AWS.
 
 ## Docker to build 3rd party modules
 {id: docker-to-build}
 
-[alpine linux](https://hub.docker.com/_/alpine/)
+[amazonlinux](https://hub.docker.com/_/amazonlinux/)
 
 ![](app/Dockerfile)
 
 ```
 docker build -t aws .
 ```
+
+* In the project directory:
 
 ```
 docker run -v $(pwd):/opt  --rm aws pip install -r requirements.txt -t pypi
@@ -348,7 +357,17 @@ docker run -v $(pwd):/opt  --rm aws pip install -r requirements.txt -t pypi
 zip -r ../project.zip *
 ```
 
-## Web client
+* Upload the zip file.
+
+## Exercise 4
+{id: exercise-4}
+
+* Web Client: A function that uses 'requests' to fetch a URL and return the text of the page.
+
+* A function that will accept the name of two cities.
+* Call the API of https://openweathermap.org/ and return the temprature difference in the two places.
+
+## Solution: Web client
 {id: web-client}
 
 ![](web_client/lambda_function.py)
@@ -366,12 +385,6 @@ zip -r ../project.zip *
 curl 'https://qspmdah6oj.execute-api.us-east-1.amazonaws.com/v0/hello?url=https://httpbin.org/get'
 ```
 
-## Exercise 5
-{id: exercise-5}
-
-* A function that will accept the name of two cities.
-* Call the API of https://openweathermap.org/ and return the temprature difference in the two places.
-
 ## TODO
 {id: todo}
 
@@ -379,13 +392,11 @@ curl 'https://qspmdah6oj.execute-api.us-east-1.amazonaws.com/v0/hello?url=https:
 
 * Configure public hostname to access the API call.
 
-* Set up some database in AWS to hold our data.
+* Set up database in AWS to hold our data.
 
 * Cron / schedule an event.
 
 * Send mail from AWS Lambda
-
-
 
 ## Resources
 {id: resources}
