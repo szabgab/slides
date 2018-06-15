@@ -327,17 +327,57 @@ Create
 * [See](https://docs.aws.amazon.com/lambda/latest/dg/with-s3-example-deployment-pkg.html#with-s3-example-deployment-pkg-python)
 * [python-Levenshtein](https://pypi.org/project/python-Levenshtein/) is another module writte in C
 
-* Needs a linux box either locally or better yet on Amazon AWS.
+* Needs a linux box either locally or on Amazon AWS.
+
+## Docker to build 3rd party modules
+{id: docker-to-build}
+
+[alpine linux](https://hub.docker.com/_/alpine/)
+
+![](app/Dockerfile)
+
+```
+docker build -t aws .
+```
+
+```
+docker run -v $(pwd):/opt  --rm aws pip install -r requirements.txt -t pypi
+```
+
+```
+zip -r ../project.zip *
+```
+
+## Web client
+{id: web-client}
+
+![](web_client/lambda_function.py)
+
+![](web_client/requirements.txt)
+
+![](web_client/setup.cfg)
+
+```
+pip install -r requirements.txt -t pypi
+zip -r ../project.zip *
+```
+
+```
+curl 'https://qspmdah6oj.execute-api.us-east-1.amazonaws.com/v0/hello?url=https://httpbin.org/get'
+```
+
+## Exercise 5
+{id: exercise-5}
+
+* A function that will accept the name of two cities.
+* Call the API of https://openweathermap.org/ and return the temprature difference in the two places.
 
 ## TODO
 {id: todo}
 
-
 * What is publish?
 
 * Configure public hostname to access the API call.
-
-* A function that will accept the name of two cities, call the https://openweathermap.org/ and return the temprature difference in the two places.
 
 * Set up some database in AWS to hold our data.
 

@@ -2,7 +2,7 @@ import json
 import sys
 
 sys.path.insert(0, 'pypi')
-import editdistance
+import requests
 
 def lambda_handler(event, context):
     if 'queryStringParameters' not in event:
@@ -13,29 +13,21 @@ def lambda_handler(event, context):
         }
         
     
-    if event['queryStringParameters'] == None or 'a' not in event['queryStringParameters'] or 'b' not in event['queryStringParameters']:
+    if event['queryStringParameters'] == None or 'url' not in event['queryStringParameters']:
         return {
             'statusCode': 400,
             'headers': { 'Content-Type': 'application/json' },
             'body': json.dumps({ 'error': 'Missing field' })
         }
 
-    distance = editdistance.eval(event['queryStringParameters']['a'], event['queryStringParameters']['b'])
+    r = requests.get(event['queryStringParameters']['url'])
 
     return {
         'statusCode': 200,
         'headers': { 'Content-Type': 'application/json' },
         'body': json.dumps({
-            'a' : event['queryStringParameters']['a'],
-            'b' : event['queryStringParameters']['b'],
-            'distance': distance,
+            'url' : event['queryStringParameters']['url'],
+            'content': r.text,
         })
     }
 
-if __name__ == '__main__':
-    print(lambda_handler({
-       'queryStringParameters': {
-          'a': 'xyz',
-          'b': 'xrp',
-       }
-    }, {}))
