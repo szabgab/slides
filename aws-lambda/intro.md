@@ -288,6 +288,46 @@ zip ../project.zip *
 ![](app3/mymodule.py)
 
 
+## Task 4
+{id: task-4}
+
+User 3rd party Python modules.
+
+[Creating a Deployment Package for Python](https://docs.aws.amazon.com/lambda/latest/dg/lambda-python-how-to-create-deployment-package.html)
+
+
+## Development machine
+{id: development-machine}
+
+* [Levenshtein distance](https://en.wikipedia.org/wiki/Levenshtein_distance)
+* Using [pylev](https://pypi.org/project/pylev/) which is pure Python.
+
+
+```
+mkdir app_pylev
+cd app_pylev
+pip install pylev -t pypi
+zip -r ../project.zip *
+```
+![](app_pylev/lambda_function.py)
+
+* `curl 'https://qspmdah6oj.execute-api.us-east-1.amazonaws.com/v0/hello?a=abd&b=acx'`
+
+## Error: must supply either home or prefix/exec-prefix — not both
+{id: must-supply-either-home-or-prefix-exec-prefix-not-both}
+
+Create
+
+![](app_pylev/setup.cfg)
+
+## Third party not pure-python
+{id: third-party-not-pure-python}
+
+* [editdistance](https://github.com/aflc/editdistance) is a Levenshtein distance module written in C++ and Cython
+* [See](https://docs.aws.amazon.com/lambda/latest/dg/with-s3-example-deployment-pkg.html#with-s3-example-deployment-pkg-python)
+* [python-Levenshtein](https://pypi.org/project/python-Levenshtein/) is another module writte in C
+
+* Needs a linux box either locally or better yet on Amazon AWS.
 
 ## TODO
 {id: todo}
@@ -297,8 +337,6 @@ zip ../project.zip *
 
 * Configure public hostname to access the API call.
 
-* An application using a module that is not available in Lambda. (Installing modules)
-
 * A function that will accept the name of two cities, call the https://openweathermap.org/ and return the temprature difference in the two places.
 
 * Set up some database in AWS to hold our data.
@@ -306,6 +344,7 @@ zip ../project.zip *
 * Cron / schedule an event.
 
 * Send mail from AWS Lambda
+
 
 
 ## Resources
