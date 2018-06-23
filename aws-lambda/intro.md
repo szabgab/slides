@@ -33,7 +33,7 @@
 
 * Region: us-east-1
 
-## Task 1
+## Task 1 - Hello World URL
 {id: task-1}
 
 * Create script in Python that can be accessesed via curl.
@@ -129,7 +129,7 @@ or
 
 * Create your own hello function.
 
-## Task 2
+## Task 2 - Accept URL GET parameters
 {id: task-2}
 
 * Accept parameter in the GET request and echo it back
@@ -228,7 +228,7 @@ Also, try it from the console using `curl` or in your browser (use your own URL)
 
 ![](add_numbers.py)
 
-## Task 3
+## Task 3 - Multi file application
 {id: task-3}
 
 * Create an application that has more than one files.
@@ -291,12 +291,10 @@ zip ../project.zip *
 ![](app3/mymodule.py)
 
 
-## Task 4
+## Task 4 - Use 3rd party Python modules.
 {id: task-4}
 
-Use 3rd party Python modules.
-
-[Creating a Deployment Package for Python](https://docs.aws.amazon.com/lambda/latest/dg/lambda-python-how-to-create-deployment-package.html)
+* [Creating a Deployment Package for Python](https://docs.aws.amazon.com/lambda/latest/dg/lambda-python-how-to-create-deployment-package.html)
 
 
 ## Development machine
@@ -365,7 +363,7 @@ zip -r ../project.zip *
 * Web Client: A function that uses 'requests' to fetch a URL and return the text of the page.
 
 * A function that will accept the name of two cities.
-* Call the API of https://openweathermap.org/ and return the temprature difference in the two places.
+* Call the API of [Open Weather Map](https://openweathermap.org/) and return the temprature difference in the two places.
 
 ## Solution: Web client
 {id: web-client}
@@ -384,6 +382,52 @@ zip -r ../project.zip *
 ```
 curl 'https://qspmdah6oj.execute-api.us-east-1.amazonaws.com/v0/hello?url=https://httpbin.org/get'
 ```
+
+## Task 5 - Using S3 - Simple Storage Service
+{id: s3-storage}
+
+* Buckets - (all the users share a single name-space for buckets, so a lot of them are already taken)
+* Create a bucket in [s3](https://s3.console.aws.amazon.com/s3) (eg. your-name)
+* Add permission to the role [Attach policy](https://console.aws.amazon.com/iam/) AmazonS3FullAccess
+
+* [boto 3](https://boto3.readthedocs.io/en/latest/)
+
+## S3 List bucket
+{id: list-s3-bucket}
+
+![](list_s3_bucket.py)
+
+## S3 write object from Lambda
+{id: s3-write-object-from-lambda}
+
+![](create_s3_object.py)
+
+## Read S3 object
+{id: read-s3-object}
+
+![](read_s3_object.py)
+
+## Trigger Lambda by S3
+{id: trigger-lambda-by-s3}
+
+![](s3_event.json)
+
+Trigger by using:
+
+```
+aws s3 cp data.json s3://szabgab/new/data.json
+```
+
+Download the resulting file using
+
+```
+aws s3 cp s3://szabgab/out.json .
+```
+
+## Handle S3 event in Lambda
+{id: handl-s3-event-in-lambda}
+
+![](handle_s3_evetn.py)
 
 ## TODO
 {id: todo}
