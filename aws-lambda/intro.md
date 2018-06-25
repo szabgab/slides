@@ -365,7 +365,7 @@ zip -r ../project.zip *
 
 * `curl 'https://qspmdah6oj.execute-api.us-east-1.amazonaws.com/v0/hello?a=abd&b=acx'`
 
-## Error: must supply either home or prefix/exec-prefix — not both
+## Error: must supply either home or prefix/exec-prefix - not both
 {id: must-supply-either-home-or-prefix-exec-prefix-not-both}
 
 On OSX you might get the above error. Create the 'setup.cfg' file.
