@@ -26,3 +26,19 @@ It is here /lib/libc.musl-x86_64.so.1 in the Alpine Docker image
 [alpine linux](https://hub.docker.com/_/alpine/)
 
 * [python-Levenshtein](https://pypi.org/project/python-Levenshtein/) is another module writte in C
+
+
+## TODO
+{id: todo}
+
+* What is publish?
+
+* Configure public hostname to access the API call.
+
+* Set up database in AWS to hold our data.
+
+* Cron / schedule an event.
+
+* Send mail from AWS Lambda
+
+

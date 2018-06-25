@@ -18,12 +18,71 @@
 * 0 cost for deployment
 * $ for usage
 * No root access, just a simple function (or application)
+* No server maintenance costs.
+
+## What is it good for?
+{id: what-is-it-good-for}
+
+* For short batch processes (5 min limit)
+* ETL
+* Real time data stream collection and manipulation
+* Scheduled jobs (cron-jobs)
+* REST API web endpoints
+* Bots
+
+## Development
+{id: development}
+
+* In the Lambda console using Cloud9
+* Local environment
+* Local environment using SAM
+
+## How does FaaS work?
+{id: how-faas-fork}
+
+Trigger (Event Source) -> Function -> Resources (output)
+
+## Event Sources (Triggers)
+{id: event-sources}
+
+* [Supported Event Sources](https://docs.aws.amazon.com/lambda/latest/dg/invoking-lambda-function.html)
+* Amazon API Gateway
+* Scheduled Events
+* Amazon S3
+* Amazon DynamoDB
+* Amazon Simple Email Service
+* ...
+
+## Function
+{id: function}
+
+* Python 2.7 and 3.6
+* Node.JS 6.10 and 8.10
+* Java 8
+* C# .NET Core
+* Go 1.x
+
+
+## Resources (via IAM)
+{id: resources-for-output}
+
+* See [IAM - Identity and Access Management](https://console.aws.amazon.com/iam/) for more resources
+* S3
+* Amazon DynamoDB
+* SES - Simple Email Service
+* SNS - Simple Notification Service (Sending SMS)
+* Redshift (Data warehouse)
+* ElastiCache clusters
+* RDS - Relational Database Service 
+* ...
+* External services
 
 ## Create an AWS account
 {id: create-account}
 
 * [Create Free Account](https://aws.amazon.com/free/)
-* You might need to supply a credit card, but AWS provides a Free tier.
+* You will have to supply a credit card, but AWS provides a Free tier.
+* You will need to supply a phone number and they will call you.
 
 ## Start with AWS Lambda
 {id: aws-lambda}
@@ -31,7 +90,9 @@
 * [Visit AWS Lambda](https://aws.amazon.com/lambda/)
 * Log in
 
-* Region: us-east-1
+* Pick a region: e.g. N. Virginia  us-east-1
+
+
 
 ## Task 1 - Hello World URL
 {id: task-1}
@@ -56,17 +117,6 @@ The default code will look like this:
 
 * Test it (click on "Test")
 * First it will make you create a new test-case.
-
-## Event Sources (Triggers)
-{id: event-sources}
-
-* [Supported Event Sources](https://docs.aws.amazon.com/lambda/latest/dg/invoking-lambda-function.html)
-* Amazon API Gateway
-* Scheduled Events
-* Amazon S3
-* Amazon DynamoDB
-* Amazon Simple Email Service
-* ...
 
 ## API Gateway
 {id: api-gateway}
@@ -348,6 +398,7 @@ docker build -t aws .
 * In the project directory:
 
 ```
+rm -rf pypi
 docker run -v $(pwd):/opt  --rm aws pip install -r requirements.txt -t pypi
 ```
 
@@ -443,19 +494,6 @@ new_time:  the time portion of the name of the object
 end_time:  the time when we read the object in the second function.
 elapsed:   the difference.
 ```
-
-## TODO
-{id: todo}
-
-* What is publish?
-
-* Configure public hostname to access the API call.
-
-* Set up database in AWS to hold our data.
-
-* Cron / schedule an event.
-
-* Send mail from AWS Lambda
 
 ## AWS Resources
 {id: aws-resources}
