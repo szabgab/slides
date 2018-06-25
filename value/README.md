@@ -165,3 +165,7 @@ From idea (hypothesis, request) to solution running in production.
 * Management is good if you need complience.
 * For engagement, self-direction works better.
 
+
+The best way to learn something is to explain it to others. So make it a regular practice in your team to learn new things and explain them to each other.
+
+
