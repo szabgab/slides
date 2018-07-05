@@ -1,5 +1,5 @@
 rm -rf html
-for name in linux-intro perl-intro ansible-intro git-intro jenkins-intro value python-mocking aws-lambda;
+for name in linux-intro perl-intro ansible-intro git-intro jenkins-intro value python-mocking aws-lambda pair-programming;
 do
     python ../slider-py/slider.py --md $name/intro.md --html --dir html/$name/ --templates templates/ --static static/
 done
