@@ -42,7 +42,7 @@
 [](simple_function.groovy)
 
 ## Scope in Groovy
-{id: scope in Groovy}
+{id: scope-in-groovy}
 
 [](scope_1.groovy)
 

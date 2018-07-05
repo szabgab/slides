@@ -7,3 +7,4 @@ perl-intro
 python-mocking
 value
 groovy
+pair-programming
