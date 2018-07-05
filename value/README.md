@@ -168,4 +168,27 @@ From idea (hypothesis, request) to solution running in production.
 
 The best way to learn something is to explain it to others. So make it a regular practice in your team to learn new things and explain them to each other.
 
+-----
+There is no conceptual difference between automated unit~, integration~, and acceptance~ tests. They all have the same formula:
+
+f(input) == expected output + bugs
+
+Only the size of f() is different.
+-----
+There is no such thing "writing regression tests". You write unit~, integration~, or acceptance~ tests and when you run it for the second time after changing the application then it becomes a regression test.
+-----
+Gated check-in systems are a hindrance to fast-pased development. They only slow down developers and make them game the system. Do you require an open ticket for every commit? Good, now we can't even fix a typo without approval. Trust your developers!
+
+Good, now we cannot fix a typo and changing a variable name from $data to $value will cost us a lot and thus we'll never do it.
+
+Q: How gated check-in builds affect your team?
+A: They make them slow and hate your guts.
+
+Trust your developers!
+----
+Frequent commits, short lived branches, tests always passing.
+----
+
+
+
 
