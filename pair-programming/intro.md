@@ -5,7 +5,7 @@
 {id: self-introduction}
 
 * [Gabor Szabo](https://www.linkedin.com/in/szabgab/) @szabgab
-* DevOps and Agile consultant and coach
+* DevOps and Agile trainer, consultant, and coach
 
 ## Agenda
 {id: agenda}
@@ -26,8 +26,8 @@
 {id: test-driven-development}
 
 * Write test first. It fails.
-* Implement code. Test passes.
-* Run test with coverage and check if there are cases that you have not covered yet.
+* Implement code.
+* Test passes.
 * Git commit
 
 ## Why in pairs?
@@ -45,6 +45,7 @@
 
 * There is no single right way to do it. Experiment!
 * Verbalize everything
+* Driver - Observer
 * Driver - Navigator
 * Driver - Navigator - Observer
 
@@ -57,7 +58,7 @@ For an idea to go from your head into the computer it MUST go through someone el
 ## Llewellyn's Strong Style Pairing: Driver
 {id: strong-style-pairing-driver}
 
-* Trust your navigator"
+* Trust your navigator
 * Become comfortable working with incomplete understanding
 * What if I have an idea I want to implement? - Switch!
 
@@ -67,9 +68,10 @@ For an idea to go from your head into the computer it MUST go through someone el
 * Give the next instruction to the driver the instant they are ready to implement it.
 * Talk in the highest level of abstraction the driver can understand.
 
-## The Game
-{id: the-game}
+## The Project
+{id: the-project}
 
+[Mastermind](https://en.wikipedia.org/wiki/Mastermind_(board_game))
 
 ## Retrospective
 {id: retrospective}
