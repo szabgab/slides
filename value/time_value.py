@@ -13,10 +13,11 @@ steps = 5
 month = 65 #year/steps
 year  = 360
 hi = int((height - zero_y) / (steps + 1))
+stroke_width = 5
 
 
 def many_releases(dwg, width, height):
-    line = svgwrite.shapes.Polyline( fill='white', stroke='black', stroke_width=5 )
+    line = svgwrite.shapes.Polyline( fill='white', stroke='black', stroke_width=stroke_width )
     line.points.append( (zero_x,       height - zero_y - 4) )
     for n in range(1, steps):
         line.points.append( (zero_x + n*month,   height - zero_y - 4 -n*hi +hi) )
@@ -39,7 +40,7 @@ def many_releases(dwg, width, height):
 
 
 def one_release(dwg, width, height):
-    line = svgwrite.shapes.Polyline( fill='white', stroke='black', stroke_width=5 )
+    line = svgwrite.shapes.Polyline( fill='white', stroke='black', stroke_width=stroke_width )
     line.points.append( (zero_x,     height - zero_y - 4) )
     line.points.append( (year,       height - zero_y - 4) )
     line.points.append( (year,       zero_y) )
