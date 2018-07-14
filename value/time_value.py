@@ -13,36 +13,36 @@ steps = 5
 month = 65 #year/steps
 year  = 360
 hi = int((height - zero_y) / (steps + 1))
-swidth = 5
+swidth = 4
 
 
 def many_releases(dwg, width, height):
     line = svgwrite.shapes.Polyline( fill='white', stroke='black', stroke_width=swidth )
-    line.points.append( (zero_x,       height - zero_y - 4) )
+    line.points.append( (zero_x,       height - zero_y - swidth) )
     for n in range(1, steps):
-        line.points.append( (zero_x + n*month,   height - zero_y - 4 -n*hi +hi) )
-        line.points.append( (zero_x + n*month,   height - zero_y - 4 -n*hi) )
-    line.points.append( (year,            height - zero_y - 4 - steps*hi+hi) )
+        line.points.append( (zero_x + n*month,   height - zero_y - swidth -n*hi +hi) )
+        line.points.append( (zero_x + n*month,   height - zero_y - swidth -n*hi) )
+    line.points.append( (year,            height - zero_y - swidth - steps*hi+hi) )
     line.points.append( (year,            zero_y) )
     line.points.append( (year+month, zero_y) )
 
-    zz = 2
+    zz = int(swidth / 2)
     box = svgwrite.shapes.Polygon( fill=svgwrite.rgb(66, 244, 86) )
     for n in range(1, steps):
-        box.points.append( ( zero_x + n*month + zz, height - zero_y - 4 -n*hi +hi + zz) )
-        box.points.append( ( zero_x + n*month + zz, height - zero_y - 4 -n*hi + zz) )
-    box.points.append( ( year + zz,    height - zero_y - 4-steps*hi+hi + zz) )
-    box.points.append( ( year + zz,    height - zero_y - 4-steps*hi - 16 + zz) )
-    box.points.append( ( year+month , height - zero_y - 4-steps*hi - 16 + zz) )
-    box.points.append( ( year+month , height - zero_y - 4 + zz) )
+        box.points.append( ( zero_x + n*month + zz, height - zero_y - swidth -n*hi +hi + zz) )
+        box.points.append( ( zero_x + n*month + zz, height - zero_y - swidth -n*hi + zz) )
+    box.points.append( ( year + zz,    height - zero_y - swidth - steps*hi+hi + zz) )
+    box.points.append( ( year + zz,    height - zero_y - swidth - steps*hi - 16 + zz) )
+    box.points.append( ( year+month , height - zero_y - swidth - steps*hi - 16 + zz) )
+    box.points.append( ( year+month , height - zero_y - swidth + zz) )
     dwg.add( line )
     dwg.add( box )
 
 
 def one_release(dwg, width, height):
     line = svgwrite.shapes.Polyline( fill='white', stroke='black', stroke_width=swidth )
-    line.points.append( (zero_x,     height - zero_y - 4) )
-    line.points.append( (year,       height - zero_y - 4) )
+    line.points.append( (zero_x,     height - zero_y - swidth) )
+    line.points.append( (year,       height - zero_y - swidth) )
     line.points.append( (year,       zero_y) )
     line.points.append( (year+month, zero_y) )
 
