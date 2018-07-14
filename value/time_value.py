@@ -12,7 +12,7 @@ coord_width = 2
 steps = 5
 month = 65 #year/steps
 year  = 360
-hi = 40
+hi = int((height - zero_y) / (steps + 1))
 
 
 def many_releases(dwg, width, height):
