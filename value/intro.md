@@ -1,10 +1,11 @@
 # How to develop software faster and have more stable releases?
 {id: index}
 
-## About name
-{id: about-us}
+## Self introduction
+{id: self-introduction}
 
 * [Gábor Szabó](https://www.linkedin.com/in/szabgab/) @szabgab
+* Help orgaizations generate value faster in a sustainable way.
 * [Code Mavens Meetup](https://www.meetup.com/Code-Mavens/)
 
 ## About you
@@ -68,7 +69,7 @@ So "sooner" has a higher value than later.
 * Satisfied engineers create more value.
 
 
-## What is the solution?
+## How to Faster, Cheaper, Better?
 {id: what-is-the-solution}
 
 * Lean
@@ -92,6 +93,8 @@ So "sooner" has a higher value than later.
 
 ## Product types
 {id: product-types}
+
+* How frequently are they upgradable?
 
 * Hardware
 * Embedded software
@@ -118,7 +121,7 @@ So "sooner" has a higher value than later.
 ## MTTR - Mean time to repair
 {id: mttr}
 
-
+* The more frequent we can release the sooner we can fix issues
 
 ## Old model
 {id: old-model}

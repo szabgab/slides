@@ -1,8 +1,16 @@
+Run ./value/time_value.py  to generate the drawings.
+View them at: file:///Users/gabor/work/slides/value/svg.html
+
+
+
 Introduction to DevOps
+
+* Automation, CI/CD, XP, ...
 
 Alternative titles:
 How to develop software faster and have more stable releases?
 
+* How to create better software faster at a lower price while keeping the employees happy?
 
 ## Subtitles
 {id: subtitles}
@@ -191,4 +199,8 @@ Frequent commits, short lived branches, tests always passing.
 
 
 
+Cases:
+1) New company, with 5 developers + 2 qa person. Release once a week.
+   "We will need DevOps, but not now."
+2) Compile time of the software is 30 minutes
 
