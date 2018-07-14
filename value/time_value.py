@@ -3,9 +3,11 @@ import svgwrite
 
 
 width = 440
-year  = width-80
+year  = 360
 height = 240
 coord_width = 2
+steps = 5
+month = 65 #year/steps
 
 # the location of the (0, 0) point
 zero_x = 20
@@ -14,33 +16,32 @@ zero_y = 20
 def many_releases(dwg, width, height):
     line = svgwrite.shapes.Polyline( fill='white', stroke='black', stroke_width=5 )
     line.points.append( (zero_x,       height-24) )
-    steps = 5
     for n in range(1, steps):
-        line.points.append( (zero_x + n*65,   height-24-n*40+40) )
-        line.points.append( (zero_x + n*65,   height-24-n*40) )
-    line.points.append( (year,    height-24-steps*40+40) )
-    line.points.append( (year,    zero_y) )
-    line.points.append( (year+60, zero_y) )
+        line.points.append( (zero_x + n*month,   height-24-n*40+40) )
+        line.points.append( (zero_x + n*month,   height-24-n*40) )
+    line.points.append( (year,            height-24-steps*40+40) )
+    line.points.append( (year,            zero_y) )
+    line.points.append( (year+month, zero_y) )
 
     zz = 2
     box = svgwrite.shapes.Polygon( fill=svgwrite.rgb(66, 244, 86) )
     for n in range(1, steps):
-        box.points.append( ( zero_x + n*65 + zz, height-24-n*40+40 + zz) )
-        box.points.append( ( zero_x + n*65 + zz, height-24-n*40 + zz) )
+        box.points.append( ( zero_x + n*month + zz, height-24-n*40+40 + zz) )
+        box.points.append( ( zero_x + n*month + zz, height-24-n*40 + zz) )
     box.points.append( ( year + zz,    height-24-steps*40+40 + zz) )
     box.points.append( ( year + zz,    height-24-steps*40 + zz + 4) )
-    box.points.append( ( year+60 + zz, height-24-steps*40 + zz + 4) )
-    box.points.append( ( year+60 + zz, height-24 + zz) )
+    box.points.append( ( year+month + zz, height-24-steps*40 + zz + 4) )
+    box.points.append( ( year+month + zz, height-24 + zz) )
     dwg.add( line )
     dwg.add( box )
 
 
 def one_release(dwg, width, height):
     line = svgwrite.shapes.Polyline( fill='white', stroke='black', stroke_width=5 )
-    line.points.append( (zero_x,  height-24) )
-    line.points.append( (year,    height-24) )
-    line.points.append( (year,    zero_y) )
-    line.points.append( (year+60, zero_y) )
+    line.points.append( (zero_x,     height-24) )
+    line.points.append( (year,       height-24) )
+    line.points.append( (year,       zero_y) )
+    line.points.append( (year+month, zero_y) )
 
     box = svgwrite.shapes.Rect( insert=(width-75, 24), size=(55, height-48), fill=svgwrite.rgb(66, 244, 86))
     dwg.add( line )
