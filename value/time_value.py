@@ -32,8 +32,8 @@ def many_releases(dwg, width, height):
         box.points.append( ( zero_x + n*month + zz, height - zero_y - 4 -n*hi + zz) )
     box.points.append( ( year + zz,    height - zero_y - 4-steps*hi+hi + zz) )
     box.points.append( ( year + zz,    height - zero_y - 4-steps*hi - 16 + zz) )
-    box.points.append( ( year+month + zz, height - zero_y - 4-steps*hi - 16 + zz) )
-    box.points.append( ( year+month + zz, height - zero_y - 4 + zz) )
+    box.points.append( ( year+month , height - zero_y - 4-steps*hi - 16 + zz) )
+    box.points.append( ( year+month , height - zero_y - 4 + zz) )
     dwg.add( line )
     dwg.add( box )
 
@@ -45,7 +45,7 @@ def one_release(dwg, width, height):
     line.points.append( (year,       zero_y) )
     line.points.append( (year+month, zero_y) )
 
-    box = svgwrite.shapes.Rect( insert=(width-75, 24), size=(55, height-48), fill=svgwrite.rgb(66, 244, 86))
+    box = svgwrite.shapes.Rect( insert=(width-78, 22), size=(63, height-44), fill=svgwrite.rgb(66, 244, 86))
     dwg.add( line )
     dwg.add( box )
 
