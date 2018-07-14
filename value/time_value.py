@@ -3,7 +3,7 @@ import svgwrite
 
 
 width = 440
-height = 240
+height = 260
 # the location of the (0, 0) point
 zero_x = 20
 zero_y = 20
@@ -30,8 +30,8 @@ def many_releases(dwg, width, height):
         box.points.append( ( zero_x + n*month + zz, height - zero_y - 4 -n*40 +40 + zz) )
         box.points.append( ( zero_x + n*month + zz, height - zero_y - 4 -n*40 + zz) )
     box.points.append( ( year + zz,    height - zero_y - 4-steps*40+40 + zz) )
-    box.points.append( ( year + zz,    height - zero_y - 4-steps*40 + zz + 4) )
-    box.points.append( ( year+month + zz, height - zero_y - 4-steps*40 + zz + 4) )
+    box.points.append( ( year + zz,    height - zero_y - 4-steps*40 - 16 + zz) )
+    box.points.append( ( year+month + zz, height - zero_y - 4-steps*40 - 16 + zz) )
     box.points.append( ( year+month + zz, height - zero_y - 4 + zz) )
     dwg.add( line )
     dwg.add( box )
