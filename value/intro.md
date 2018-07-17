@@ -5,7 +5,7 @@
 {id: self-introduction}
 
 * [Gábor Szabó](https://www.linkedin.com/in/szabgab/) @szabgab
-* Help orgaizations generate value faster in a sustainable way.
+* Help organizations generate value faster in a sustainable way.
 * [Code Mavens Meetup](https://www.meetup.com/Code-Mavens/)
 
 ## About you
@@ -45,7 +45,7 @@ So "sooner" has a higher value than later.
 ## Goals of employees
 {id: goal-of-employees-2}
 
-* Authonomy
+* Autonomy
 * Mastery
 * Purpose
 
