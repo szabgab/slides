@@ -1,5 +1,44 @@
+- Goals of companies and people
+- Waterfall model, what are the problems with it? (What are the costs and risks?)
+
+
+
+
+
+
 Run ./value/time_value.py  to generate the drawings.
 View them at: file:///Users/gabor/work/slides/value/svg.html
+
+## About you
+{id: about-you}
+
+* Name
+* Company
+* What do you do?
+* What kind of products and services do you develop?
+* Something interesting about you.
+
+## Goals - Contradiction?
+{id: goals}
+
+* Satisfied engineers create more value.
+
+## Hierarchy of abstractions
+{id: hierarchy-of-abstractions}
+
+* VPS (GCE - Google Cloud Engine)
+* Kubernetes (GKE - Google Kubernetes Engine)
+* Paas (GAE - Google App Engine)
+* Serverless (GCF - Google Cloud Functions)
+
+## Resilience testing
+{id: resilience-testing}
+
+* Intentionally cause problems during the work day and see how the tools and the team react.
+* Randomly kill processes and compute servers in production to see how the monitoring system and the whole team reacts
+* Do this often during work hours and reduce the risk of such thing happening during the nights.
+* Fix any issues. Learn.
+* [Netflix Chaos Monkey](https://github.com/Netflix/SimianArmy/wiki/Chaos-Monkey)
 
 
 

@@ -8,15 +8,6 @@
 * Help organizations generate value faster in a sustainable way.
 * [Code Mavens Meetup](https://www.meetup.com/Code-Mavens/)
 
-## About you
-{id: about-you}
-
-* Name
-* Company
-* What do you do?
-* What kind of products and services do you develop?
-* Something interesting about you.
-
 ## Goal of the company / organization
 {id: goal-of-the-company}
 
@@ -62,11 +53,6 @@ So "sooner" has a higher value than later.
 * Being respected, acknowledged and recognized.
 * Working without wasting efforts. (More effective)
 * Good hardware and software and office environment.
-
-## Goals - Contradiction?
-{id: goals}
-
-* Satisfied engineers create more value.
 
 
 ## How to Faster, Cheaper, Better?
@@ -128,6 +114,8 @@ So "sooner" has a higher value than later.
 
 * Waterfall with Big Bang release
 
+* Requirements (clients)
+* Design
 * Development: many months
 * QA: several months, bugs, rework, etc
 * Operations
@@ -454,23 +442,6 @@ The same team
 * Ansible/Chef/Puppet
 * Containers - Docker Images
 * Container Orchestration - Kubernetes
-
-## Hierarchy of abstractions
-{id: hierarchy-of-abstractions}
-
-* VPS (GCE - Google Cloud Engine)
-* Kubernetes (GKE - Google Kubernetes Engine)
-* Paas (GAE - Google App Engine)
-* Serverless (GCF - Google Cloud Functions)
-
-## Resilience testing
-{id: resilience-testing}
-
-* Intentionally cause problems during the work day and see how the tools and the team react.
-* Randomly kill processes and compute servers in production to see how the monitoring system and the whole team reacts
-* Do this often during work hours and reduce the risk of such thing happening during the nights.
-* Fix any issues. Learn.
-* [Netflix Chaos Monkey](https://github.com/Netflix/SimianArmy/wiki/Chaos-Monkey)
 
 ## DevOps loop
 {id: devops-loop}
