@@ -17,18 +17,6 @@
 * More value to customer
 * More money to the shareholder
 
-## Value creation - Time is Money
-{id: time}
-
-* The sooner the better.
-
-* Getting USD 1,000,000 ten years from now is great.
-* Getting it one year from now is much better.
-* Getting it next week is even better than that.
-* NPV Net Present Value
-
-So "sooner" has a higher value than later.
-
 ## Goals of employees
 {id: goal-of-employees}
 
@@ -54,6 +42,35 @@ So "sooner" has a higher value than later.
 * Working without wasting efforts. (More effective)
 * Good hardware and software and office environment.
 
+## Goals - Contradiction?
+{id: goals}
+
+* Satisfied engineers create more value.
+
+## Business needs for change
+{id: business-needs-for-change}
+
+* Reduce time to market
+* Increase feature throughput
+
+* Decrease cost
+* Increase quality
+
+
+
+
+## Value creation - Time is Money
+{id: time}
+
+* The sooner the better.
+
+* Getting USD 1,000,000 ten years from now is great.
+* Getting it one year from now is much better.
+* Getting it next week is even better than that.
+* NPV Net Present Value
+
+So "sooner" has a higher value than later.
+
 
 ## How to Faster, Cheaper, Better?
 {id: what-is-the-solution}
@@ -70,7 +87,7 @@ So "sooner" has a higher value than later.
 * DevSecOps
 
 ## Value creation
-{id: deploy-per-day-vs-value}
+{id: value-creation}
 
 ![One release](time_value.svg)
 
@@ -103,6 +120,15 @@ So "sooner" has a higher value than later.
 ![Release frequency](release-frequency.jpg)
 
 * [source](https://medium.com/data-ops/releasing-new-analytics-every-second-fc5fefd92360)
+
+## Deploy per day VS value  (Value creation)
+{id: deploy-per-day-vs-value}
+
+* More value sooner
+* Faster feedback
+* Can the clients acctually absorb the changes?
+* Can we deliver the frequent changes?
+* How can we ensure the quality remains high or even increases?
 
 ## MTTR - Mean time to repair
 {id: mttr}
@@ -466,6 +492,26 @@ The same team
 * Continuous Learning.
 
 This needs investment both time and money and it leads to change. 
+
+## Hierarchy of abstractions
+{id: hierarchy-of-abstractions}
+
+* VPS (GCE - Google Cloud Engine)
+* Kubernetes (GKE - Google Kubernetes Engine)
+* Paas (GAE - Google App Engine)
+* Serverless (GCF - Google Cloud Functions)
+
+## Resilience testing
+{id: resilience-testing}
+
+* Intentionally cause problems during the work day and see how the tools and the team react.
+* Randomly kill processes and compute servers in production to see how the monitoring system and the whole team reacts
+* Do this often during work hours and reduce the risk of such thing happening during the nights.
+* Fix any issues. Learn.
+* [Netflix Chaos Monkey](https://github.com/Netflix/SimianArmy/wiki/Chaos-Monkey)
+
+
+
 
 
 ## What is in there for me, the developer?

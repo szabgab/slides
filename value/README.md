@@ -2,10 +2,6 @@
 - Waterfall model, what are the problems with it? (What are the costs and risks?)
 
 
-
-
-
-
 Run ./value/time_value.py  to generate the drawings.
 View them at: file:///Users/gabor/work/slides/value/svg.html
 
@@ -17,30 +13,6 @@ View them at: file:///Users/gabor/work/slides/value/svg.html
 * What do you do?
 * What kind of products and services do you develop?
 * Something interesting about you.
-
-## Goals - Contradiction?
-{id: goals}
-
-* Satisfied engineers create more value.
-
-## Hierarchy of abstractions
-{id: hierarchy-of-abstractions}
-
-* VPS (GCE - Google Cloud Engine)
-* Kubernetes (GKE - Google Kubernetes Engine)
-* Paas (GAE - Google App Engine)
-* Serverless (GCF - Google Cloud Functions)
-
-## Resilience testing
-{id: resilience-testing}
-
-* Intentionally cause problems during the work day and see how the tools and the team react.
-* Randomly kill processes and compute servers in production to see how the monitoring system and the whole team reacts
-* Do this often during work hours and reduce the risk of such thing happening during the nights.
-* Fix any issues. Learn.
-* [Netflix Chaos Monkey](https://github.com/Netflix/SimianArmy/wiki/Chaos-Monkey)
-
-
 
 Introduction to DevOps
 
@@ -57,19 +29,6 @@ How to develop software faster and have more stable releases?
 * Faster cheaper better pick any 3
 * Fast cheap low-risk
 * Predictable software development
-
-
-## Business needs for change
-{id: business-needs-for-change}
-
-* Reduce time to market
-* Increase feature throughput
-
-* Decrease cost
-* Increase quality
-
-
-
 
 ## ITIL
 {id: itil}
@@ -123,15 +82,6 @@ Two competing goals of the IT organization:
 A special case of the above mentioned problem is the tension between developers and operations.
 Traditionally Developers are more interested in creating software, using the latest libraries etc.
 Operations are required to provide stability for the production system. Stability requires little or no changes to the software stack. (e.g. OS, third-party library, code)
-
-
-## Deploy per day VS value  (Value creation)
-
-* More value sooner
-* Faster feedback
-* Can the clients acctually absorb the changes?
-* Can we deliver the frequent changes?
-* How can we ensure the quality remins high?
 
 
 ## Deploy per day VS stability
@@ -237,9 +187,9 @@ Frequent commits, short lived branches, tests always passing.
 ----
 
 
-
 Cases:
-1) New company, with 5 developers + 2 qa person. Release once a week.
+* New company, with 5 developers + 2 qa person. Release once a week.
    "We will need DevOps, but not now."
-2) Compile time of the software is 30 minutes
+* Compile time of the software is 30 minutes
+* Person writes some feature. QA checks it 3 months later and reporst about bugs.
 
