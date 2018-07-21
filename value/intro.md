@@ -617,6 +617,7 @@ Surveys
 
 Books
 
+
 * [The Phoenix project](https://www.amazon.com/Phoenix-Project-DevOps-Helping-Business/dp/0988262592)
 * [The DevOps handbook](https://www.amazon.com/DevOps-Handbook-World-Class-Reliability-Organizations/dp/1942788002/)
 * [Continuous delivery](https://www.amazon.com/Continuous-Delivery-Deployment-Automation-Addison-Wesley/dp/0321601912/) by Jez Humble and Dave Farley
@@ -663,4 +664,8 @@ http://www.shmula.com/about-peter-abilla/what-is-andon-in-the-toyota-production-
 
 http://www.shmula.com/andon-system-what-does-it-tell-you/20584/
 
+![The Poenix project](img/the_phoenix_project.jpg)
 
+![The DevOps Handbook](img/the_devops_handbook.jpg)
+
+![Continuous Delivery](img/continuous_delivery.jpg)
