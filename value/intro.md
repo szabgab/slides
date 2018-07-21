@@ -628,6 +628,7 @@ Books
 * [Beyond Legacy Code](https://pragprog.com/book/dblegacy/beyond-legacy-code) by David Scott Bernstein.
 * [Switch: How to Change Things When Change Is Hard](https://www.amazon.com/Switch-Change-Things-When-Hard/dp/0385528752) by Chip Heath and Dan Heath
 * [Drive: The Surprising Truth About What Motivates Us](https://www.amazon.com/Drive-Surprising-Truth-About-Motivates-ebook/dp/B004P1JDJO) by Daniel H. Pink
+* [Flow: The Psychology of Optimal Experience](https://www.amazon.com/Flow-Psychology-Experience-Perennial-Classics/dp/0061339202) by Mihaly Csikszentmihalyi.
 
 Videos
 
@@ -669,3 +670,8 @@ http://www.shmula.com/andon-system-what-does-it-tell-you/20584/
 ![The DevOps Handbook](img/the_devops_handbook.jpg)
 
 ![Continuous Delivery](img/continuous_delivery.jpg)
+
+![Switch](img/switch.jpg)
+
+![Flow](img/flow.jpg)
+
