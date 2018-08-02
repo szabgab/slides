@@ -146,8 +146,8 @@ test_script:
 ## Exercises
 {id: exercises}
 
-* [](https://github.com/collab-dev/python-with-test)
-* [](https://github.com/collab-dev/python-without-test)
+* [python-with-test](https://github.com/collab-dev/python-with-test)
+* [python-without-test](https://github.com/collab-dev/python-without-test)
 
 * For the repository so you have your own copy
 * Clone the forked repo
