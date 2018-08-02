@@ -2,5 +2,5 @@ rm -rf html
 for name in $(cat slides.txt)
 do
     echo $name
-    python ../slider-py/slider.py --md $name/intro.md --html --dir html/$name/ --templates templates/ --static static/
+    python ../slider-py/slider.py --md $name/intro.md --html --dir html/$name/ --templates templates/ --static static/ || exit 1
 done

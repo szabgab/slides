@@ -1,3 +1,4 @@
+github-ci
 ansible-intro
 aws-lambda
 git-intro
