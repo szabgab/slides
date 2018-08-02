@@ -98,6 +98,11 @@ after_success:
 - coveralls
 ```
 
+## Coveralls
+{id: coveralls}
+
+* [Coveralls](https://coveralls.io/)
+
 ## Appveyor
 {id: appveyor}
 
@@ -149,7 +154,8 @@ test_script:
 
 * Enable Travis, Appveyor
 * Add tests
-
+* Add badges to the `README.md` of the repo.
+* Add test coverage reporting
 
 ## Thank you
 {id: thank-you}
