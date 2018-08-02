@@ -67,10 +67,34 @@ python:
 script: python test.py
 ```
 
+## Travis Examples: several keys
+{id: travis-examples-2}
+
+* [](https://github.com/szabgab/codeandtalk.com/)
+
+```
+language: python
+python:
+  - "3.5"
+  - "3.6"
+install:
+  - pip install pytest
+  - pip install pytest-cov
+  - pip install coveralls
+  - pip install -r requirements.txt
+before_script:
+  - python bin/generate.py
+script:
+  - pytest --cov=cat/
+after_success:
+- coveralls
+```
+
 ## Exercises
 {id: exercises}
 
 * [](https://github.com/collab-dev/python-with-test)
+* [](https://github.com/collab-dev/python-without-test)
 
 
 ## Thank you
