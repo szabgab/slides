@@ -613,14 +613,14 @@ At first this will take you extra time. Later you will see the value. Put it in 
 
 Surveys
 
-* [State of Agile](http://stateofagile.versionone.com/).
+* [State of Agile](http://stateofagile.versionone.com/) Collabnet and VersionOne survey.
 * [State of DevOps](https://puppet.com/resources/whitepaper/state-of-devops-report) Puppet labs report.
 
 Books
 
 
-* [The Phoenix project](https://www.amazon.com/Phoenix-Project-DevOps-Helping-Business/dp/0988262592)
-* [The DevOps handbook](https://www.amazon.com/DevOps-Handbook-World-Class-Reliability-Organizations/dp/1942788002/)
+* [The Phoenix project](https://www.amazon.com/Phoenix-Project-DevOps-Helping-Business/dp/0988262592) by  Gene Kim, Kevin Behr, George Spafford
+* [The DevOps handbook](https://www.amazon.com/DevOps-Handbook-World-Class-Reliability-Organizations/dp/1942788002/) by Gene Kim, Patrick Debois, John Wills, Jez Humble, John Allspaw
 * [Continuous delivery](https://www.amazon.com/Continuous-Delivery-Deployment-Automation-Addison-Wesley/dp/0321601912/) by Jez Humble and Dave Farley
 * [Lean Software Development: An Agile Toolkit](https://www.amazon.com/Lean-Software-Development-Agile-Toolkit/dp/0321150783) by Mary Poppendieck and Tom Poppendieck.
 * [The Goal: A Process of Ongoing Improvement](https://www.amazon.com/Goal-Process-Ongoing-Improvement/dp/0884271951) by Eliyahu M. Goldratt and Jeff Cox.
