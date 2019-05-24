@@ -29,6 +29,19 @@ You will come out from the workshop knowing
 
 * Experiment with mocking in various situations.
 
+
+## Fixtures
+
+* Fixtures - the environment in which a test runs (the outside world)
+* Directory layout - files
+* Database with or without data etc.
+
+## Fixtuers in Pytest
+
+* A more generic term
+* Helper tools to run and analyze your test code
+
+
 ## What is Mocking and Monkey Patching?
 {id: what-is-mocking-monkey-patching}
 
