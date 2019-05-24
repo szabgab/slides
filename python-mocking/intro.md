@@ -41,6 +41,16 @@ You will come out from the workshop knowing
 * A more generic term
 * Helper tools to run and analyze your test code
 
+## Test Doubles
+
+* Mocks
+* Spies
+* Stubs
+* Fakes
+* Dummies
+
+* [Gerard Meszaros - xUnit Test Patterns](https://martinfowler.com/books/meszaros.html)
+* [Test Double explained by Martin Fowler](https://martinfowler.com/bliki/TestDouble.html)
 
 ## What is Mocking and Monkey Patching?
 {id: what-is-mocking-monkey-patching}
