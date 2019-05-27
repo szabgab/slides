@@ -655,6 +655,10 @@ Blog posts
 
 * [What do software engineers want from their jobs?](https://www.quora.com/What-do-software-engineers-want-from-their-jobs)
 
+* [The Twelve-Factor App](https://12factor.net/)
+* [Making Work Visible: Exposing Time Theft to Optimize Work & Flow](https://www.amazon.com/Making-Work-Visible-Exposing-Optimize/dp/1942788150) by [Dominica DeGrandis](http://ddegrandis.com/)
+* [IT Revolution](https://itrevolution.com/)
+
 ## Contact me
 {id: contact-me}
 
