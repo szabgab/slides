@@ -46,6 +46,14 @@ You will come out from the workshop knowing
 * A more generic term
 * Helper tools to run and analyze your test code
 
+## Dependency Injection
+{id: dependency-injection}
+
+* Use introspection to find out what a method needs
+* Pass in the right arguments
+
+![](dependency-injection.py)
+
 ## Temporary directory - tmpdir
 {id: temporary-directory}
 
@@ -57,6 +65,17 @@ def test_something(tmpdir):
       Some config
     """)
 ```
+
+* Directory location: /private/var/folders/ry/z60xxmw0000gn/T/pytest-of-gabor/pytest-14/test_read0
+* Directory cleanup
+
+## Capture STDOUT and STDERR - capsys
+{id: capsys}
+
+* capsys
+
+![](capture/test_capture.py)
+
 
 ## Home-made fixture
 {id: home-made-fixture}
