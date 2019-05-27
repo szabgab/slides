@@ -117,6 +117,30 @@ In test
 * [Gerard Meszaros - xUnit Test Patterns](https://martinfowler.com/books/meszaros.html)
 * [Test Double explained by Martin Fowler](https://martinfowler.com/bliki/TestDouble.html)
 
+
+## Test Doubles explained
+{id: test-doubles-explained}
+
+
+Dummy objects are passed around but never actually used.
+
+Fakes - Working implementation, but much simple
+* An in-memory list of username/password pairs that provide the authentication)
+* A database interface where data stored in memory only, maybe in a dictionary.
+
+Mocks - Mocks are objects that register calls they receive, but do not execute the real system behind.
+
+Stubs - Stub is an object that holds predefined data and uses it to answer calls during tests.
+* A list of "random values"
+* Responses given to prompt
+
+Spies usually record some information based on how they were called and then call the real method. (or not)
+
+## Verify behavior or state?
+{id: verify-behavior-or-state}
+
+
+
 ## What is Mocking and Monkey Patching?
 {id: what-is-mocking-monkey-patching}
 
@@ -276,6 +300,17 @@ slides/python-mocking/
 * Navigator - Driver
 * Driver - Observer
 
+## Exercise: Record e-mail sending
+
+Implement a registration for a Flask (or other) web application:
+Accept e-mail as input send e-mail with a code to the given address use that code to verify e-mail address.
+Without actually sending e-mails.
+
+## Exercise:
+
+Set up a database (can be sqlite, mysql, postgresql, mongodb, etc.) for each test run.
+
+
 ## Exercise: One Dimentsional space-fight
 {id: one-dimensional-space-fight}
 
@@ -316,7 +351,7 @@ api=93712604
 
 ![](weather/get_weather.py)
 
-## Mocking A Bank
+## Exercise: Mocking A Bank
 {id: mocking-a-bank}
 
 ![](exdb/bank.py)
@@ -337,6 +372,8 @@ api=93712604
 * [MonkeyPatching](https://docs.pytest.org/en/latest/monkeypatch.html)
 * [Python slides](https://code-maven.com/slides/python-programming/)
 * [Python testing with pytest](https://pragprog.com/book/bopytest/python-testing-with-pytest)
+* [Test Doubles - Fakes, Mocks and Stubs.](https://blog.pragmatists.com/test-doubles-fakes-mocks-and-stubs-1a7491dfa3da)
+* [Martin Fowler: Test Double](https://martinfowler.com/bliki/TestDouble.html)
 
 ## Retrospective
 {id: retrospective}
