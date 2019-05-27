@@ -54,6 +54,26 @@ def test_something(tmpdir):
       Some config
     """)
 ```
+
+## Home-made fixture
+{id: home-made-fixture}
+
+![](fixture_inject/test_app.py)
+
+## Home-made fixture with tempdir
+{id: home-made-fixture-tempdir}
+
+![](fixture_inject_tmpdir/test_app.py)
+
+```
+$ pytest -qs
+{'name': 'Foo Bar', 'email': 'foo@bar.com'}
+```
+
+## Home-made fixture with temp directory
+{id: home-made-fixture-with-temp-directory}
+
+
 ## Fixture Autouse
 {id: fixture-autouse}
 
@@ -82,7 +102,7 @@ In test
 ## Fixture for MongoDB
 {id: fixture-for-mongodb}
 
-![](fixture_db/conftest.py)
+![](fixture_autouse_db/conftest.py)
 
 
 ## Test Doubles
