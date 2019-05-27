@@ -78,6 +78,13 @@ In test
 
 ![](fixture_autouse_conftest/test_app.py)
 
+
+## Fixture for MongoDB
+{id: fixture-for-mongodb}
+
+![](fixture_db/conftest.py)
+
+
 ## Test Doubles
 {id: test-doubles}
 
