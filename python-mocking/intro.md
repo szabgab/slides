@@ -47,10 +47,11 @@ You will come out from the workshop knowing
 
 ```
 def test_read_ini(tmpdir):
-d = tmpdir.mkdir("subdir")
-fh = d.join("config.ini")
-fh.write("""
-""")
+    d = tmpdir.mkdir("subdir")
+    fh = d.join("config.ini")
+    fh.write("""
+      Some config
+    """)
 ```
 
 ## Test Doubles
