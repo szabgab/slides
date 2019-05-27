@@ -301,6 +301,7 @@ slides/python-mocking/
 * Driver - Observer
 
 ## Exercise: Record e-mail sending
+{id: record-email}
 
 Implement a registration for a Flask (or other) web application:
 Accept e-mail as input send e-mail with a code to the given address use that code to verify e-mail address.
