@@ -44,15 +44,39 @@ You will come out from the workshop knowing
 * Helper tools to run and analyze your test code
 
 ## Temporary directory - tmpdir
+{id: temporary-directory}
 
 ```
-def test_read_ini(tmpdir):
+def test_something(tmpdir):
     d = tmpdir.mkdir("subdir")
     fh = d.join("config.ini")
     fh.write("""
       Some config
     """)
 ```
+## Fixture Autouse
+{id: fixture-autouse}
+
+* In the test file
+
+![](fixture_autouse/test_app.py)
+
+```
+$ pytest -sq
+Before
+In test
+.After
+
+1 passed in 0.02 seconds
+```
+
+
+## conftest.py
+{id: conftest}
+
+![](fixture_autouse_conftest/conftest.py)
+
+![](fixture_autouse_conftest/test_app.py)
 
 ## Test Doubles
 {id: test-doubles}
