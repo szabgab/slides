@@ -43,6 +43,16 @@ You will come out from the workshop knowing
 * A more generic term
 * Helper tools to run and analyze your test code
 
+## Temporary directory - tmpdir
+
+```
+def test_read_ini(tmpdir):
+d = tmpdir.mkdir("subdir")
+fh = d.join("config.ini")
+fh.write("""
+""")
+```
+
 ## Test Doubles
 {id: test-doubles}
 
