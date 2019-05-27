@@ -48,7 +48,7 @@ You will come out from the workshop knowing
 
 
 ## Traditional xUnit fixtures 
-{id: traditiona-fixtures)
+{id: traditiona-fixtures}
 
 ![](traditional/test_fixture.py)
 
