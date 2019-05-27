@@ -1,5 +1,19 @@
-# Mocking Python
+# Fixtures and Mocking in Python
 {id: index}
+
+## How do you test Moon-landing?
+{id: test-moon-landing}
+
+* without actually flying to the moon?
+
+## How do you test a system ...
+{id: how-do-you-test}
+
+* that sends a verification email?
+* that relies on random values?
+* in parallel without interference?
+* together with a 3rd party?
+* when a 3rd party it uses fails?
 
 ## Plan
 {id: plan}
