@@ -5,7 +5,7 @@
 {id: plan}
 
 * Introducton
-* Presentation about Mocking
+* Presentation about Fixtures and Mocking
 * Hands-on exercises
 * Retrospective
 * Job searching help
@@ -15,25 +15,28 @@
 
 * [Gabor Szabo](https://www.linkedin.com/in/szabgab/)
 * Help tech teams move faster with more stability and more predictability.
-* [PyWeb](https://www.meetup.com/PyWeb-IL/)
-* [Code Maven workshops](https://www.meetup.com/Code-Mavens/)
+* Automation
+* DevOps
+* [Code Maven Workshops](https://workshops.code-maven.com/)
+* [Code Maven Workshops on Meetup](https://www.meetup.com/Code-Mavens/)
 
 ## Goal
 {id: goal}
 
 You will come out from the workshop knowing
 
+* What are Fixtures?
 * What is Mocking and Monkey Patching?
-* When to use it?
+* When to use them?
 * What are the dangers?
 
 * Experiment with mocking in various situations.
-
 
 ## Fixtures
 {id: fixtures}
 
 * Fixtures - the environment in which a test runs (the outside world)
+
 * Directory layout - files
 * Database with or without data etc.
 
