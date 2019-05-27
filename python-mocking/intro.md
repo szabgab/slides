@@ -31,17 +31,20 @@ You will come out from the workshop knowing
 
 
 ## Fixtures
+{id: fixtures}
 
 * Fixtures - the environment in which a test runs (the outside world)
 * Directory layout - files
 * Database with or without data etc.
 
 ## Fixtuers in Pytest
+{id: fixtures-in-pytest}
 
 * A more generic term
 * Helper tools to run and analyze your test code
 
 ## Test Doubles
+{id: test-doubles}
 
 * Mocks
 * Spies
