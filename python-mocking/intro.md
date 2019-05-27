@@ -46,6 +46,35 @@ You will come out from the workshop knowing
 * A more generic term
 * Helper tools to run and analyze your test code
 
+
+## Traditional xUnit fixtures 
+{id: traditiona-fixtures)
+
+![](traditional/test_fixture.py)
+
+````
+$ pytest test_fixture.py -s
+
+setup_module
+
+  setup_function
+    test_one
+    test_one after
+  teardown_function
+
+  setup_function
+    test_two
+  teardown_function
+
+  setup_function
+    test_three
+    test_three after
+  teardown_function
+
+teardown_module
+```
+
+
 ## Dependency Injection
 {id: dependency-injection}
 
@@ -56,6 +85,8 @@ You will come out from the workshop knowing
 
 ## Temporary directory - tmpdir
 {id: temporary-directory}
+
+* tmpdir
 
 ```
 def test_something(tmpdir):
