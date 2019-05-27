@@ -306,7 +306,8 @@ Implement a registration for a Flask (or other) web application:
 Accept e-mail as input send e-mail with a code to the given address use that code to verify e-mail address.
 Without actually sending e-mails.
 
-## Exercise:
+## Exercise: Fixture database
+{id: fixture-database|
 
 Set up a database (can be sqlite, mysql, postgresql, mongodb, etc.) for each test run.
 
