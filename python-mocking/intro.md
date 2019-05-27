@@ -307,7 +307,7 @@ Accept e-mail as input send e-mail with a code to the given address use that cod
 Without actually sending e-mails.
 
 ## Exercise: Fixture database
-{id: fixture-database|
+{id: fixture-database}
 
 Set up a database (can be sqlite, mysql, postgresql, mongodb, etc.) for each test run.
 
