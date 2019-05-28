@@ -253,33 +253,12 @@ Spies usually record some information based on how they were called and then cal
 
 * Don't worry, real life code is much more complex!
 
-## Simple test case using Pytest
-{id: simple-test-case}
-
-A simple module with a function:
-
-![](ex1/app.py)
-
-The test:
-
-![](ex1/test_app.py)
-
-Running `pytest`:
-
-```
-======================== test session starts ========================
-platform darwin -- Python 3.6.3, pytest-3.3.0, py-1.5.2, pluggy-0.6.0
-rootdir: /Users/gabor/work/slides/python-mocking/ex1, inifile:
-plugins: cov-2.5.1
-collected 1 item
-
-test_app.py .                                                 [100%]
-
-===================== 1 passed in 0.01 seconds ======================
-```
-
 ## Hard coded path
 {id: hard-coded-path}
+
+In many application we can find hard-coded pathes. In order to test them we will need to create that exact path
+which is not always easy. This also means we cannot run two tests at the same time with different content in those
+files. (The actual "application" is just adding numbers together.)
 
 ![](exa/app.py)
 
@@ -296,12 +275,22 @@ E       FileNotFoundError: [Errno 2] No such file or directory: '/corporate/fixe
 ## Manually Patching attribute
 {id: mocking-attribute}
 
+We can replace the attribute during the test run and create a json file locally to be used.
+At least two problems with this:
+
+* Readers might glance over the assignment and might be baffled
+* The change is permanent in the whole test script so one test impacts the other.
+
 ![](exa/test_data_2.py)
 
 ![](exa/test_1.json)
 
 ## Monkey Patching attribute
 {id: monkeypatching-attribute}
+
+We can use the monkeypatch fixture to do the same.
+* It stands out more as it is a fxture and you can search for the name
+* It only applies to the current test function. So they are now independent again.
 
 ![](exa/test_data_3.py)
 
