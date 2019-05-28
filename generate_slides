@@ -1,16 +1,22 @@
-rm -rf html
+#!/bin/bash -e
+
+root=$(dirname $(realpath $0))
+parent=$(dirname $root)
+
+echo $root/html
+rm -rf $root/html
 if [ "$1" != "" ]
 then
    names=$1
 else
-   names=$(cat slides.txt)
+   names=$(cat $root/slides.txt)
 fi
 
-# echo $names
-# echo '-----'
+echo $names
+echo '-----'
 
 for name in $names
 do
     echo $name
-    python ../slider-py/slider.py --md $name/intro.md --html --dir html/$name/ --templates templates/ --static static/ || exit 1
+    python $parent/slider-py/slider.py --md $root/$name/intro.md --html --dir $root/html/$name/ --templates $root/templates/ --static $root/static/ || exit 1
 done
