@@ -14,6 +14,7 @@
 * in parallel without interference?
 * together with a 3rd party?
 * when a 3rd party it uses fails?
+* with a timeout
 
 ## Plan
 {id: plan}
@@ -366,6 +367,19 @@ slides/python-mocking/
 
 * Navigator - Driver
 * Driver - Observer
+
+## Exercise: test login expiration
+{id: exercise-test-login-expiration}
+
+![](timeout/app.py)
+
+![](timeout/test_app.py)
+
+
+## Solution: test login expiration
+{id: solution-test-login-expiration}
+
+![](timeout/test_timeout.py)
 
 ## Exercise: Record e-mail sending
 {id: record-email}
