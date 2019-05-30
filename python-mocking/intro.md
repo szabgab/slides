@@ -147,14 +147,12 @@ $ pytest -qs
 {'name': 'Foo Bar', 'email': 'foo@bar.com'}
 ```
 
-## Home-made fixture with temp directory
-{id: home-made-fixture-with-temp-directory}
-
-
 ## Fixture Autouse
 {id: fixture-autouse}
 
 * In the test file
+
+![](fixture_autouse/conftest.py)
 
 ![](fixture_autouse/test_app.py)
 
@@ -166,15 +164,6 @@ In test
 
 1 passed in 0.02 seconds
 ```
-
-
-## conftest.py
-{id: conftest}
-
-![](fixture_autouse_conftest/conftest.py)
-
-![](fixture_autouse_conftest/test_app.py)
-
 
 ## Fixture for MongoDB
 {id: fixture-for-mongodb}
