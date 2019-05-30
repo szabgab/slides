@@ -127,10 +127,20 @@ teardown_module
 
 ![](fixture_inject/test_app.py)
 
+## Home-made fixture - conftest
+{id: home-made-fixture-conftest}
+
+![](fixture_inject_conftest/test_app.py)
+
+![](fixture_inject_conftest/conftest.py)
+
+
 ## Home-made fixture with tempdir
 {id: home-made-fixture-tempdir}
 
 ![](fixture_inject_tmpdir/test_app.py)
+
+![](fixture_inject_tmpdir/conftest.py)
 
 ```
 $ pytest -qs
