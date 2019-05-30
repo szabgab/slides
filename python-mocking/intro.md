@@ -103,16 +103,13 @@ teardown_module
 
 * tmpdir
 
-```
-def test_something(tmpdir):
-    d = tmpdir.mkdir("subdir")
-    fh = d.join("config.ini")
-    fh.write("""
-      Some config
-    """)
-```
+![](tdir/app.py)
 
-* Directory location: /private/var/folders/ry/z60xxmw0000gn/T/pytest-of-gabor/pytest-14/test_read0
+![](tdir/test_app.py)
+
+
+* Directory location OSX: /private/var/folders/ry/z60xxmw0000gn/T/pytest-of-gabor/pytest-14/test_read0
+* Linux: /tmp/pytest-of-gabor/pytest-9/test_json0
 * Directory cleanup
 
 ## Capture STDOUT and STDERR - capsys
