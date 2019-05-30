@@ -1,17 +1,12 @@
-import sys
-
-def greet(to_out, to_err=None):
-    print(to_out)
-    if to_err:
-        print(to_err, file=sys.stderr)
-
+import app
 
 def test_myoutput(capsys):
-    greet("hello", "world")
+    app.greet("hello", "world")
     out, err = capsys.readouterr()
     assert out == "hello\n"
     assert err == "world\n"
 
-    greet("next")
+    app.greet("next")
     out, err = capsys.readouterr()
     assert out == "next\n"
+    assert err == ""

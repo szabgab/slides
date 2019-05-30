@@ -117,6 +117,8 @@ teardown_module
 
 * capsys
 
+![](capture/app.py)
+
 ![](capture/test_capture.py)
 
 
