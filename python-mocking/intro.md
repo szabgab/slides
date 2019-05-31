@@ -401,11 +401,18 @@ slides/python-mocking/
 ![](timeout/test_timeout.py)
 
 ## Exercise: Record e-mail sending
-{id: record-email}
+{id: exercise-record-email}
 
 Implement a registration for a Flask (or other) web application:
 Accept e-mail as input send e-mail with a code to the given address use that code to verify e-mail address.
 Without actually sending e-mails.
+
+![](mock-method/app.py)
+
+## Solution: Record e-mail sending
+{id: solution-record-email}
+
+![](mock-method/test_app.py)
 
 ## Exercise: Fixture database
 {id: fixture-database}
