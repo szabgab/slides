@@ -147,10 +147,25 @@ $ pytest -qs
 {'name': 'Foo Bar', 'email': 'foo@bar.com'}
 ```
 
+## Home-made fixture with yield
+{id: home-made-fixture-with-yield}
+
+![](fixture_inject_around/conftest.py)
+
+![](fixture_inject_around/test_app.py)
+
+```
+$ pytest -sq
+Before
+In test
+{'name': 'Foo Bar'}
+.After
+
+1 passed in 0.02 seconds
+```
+
 ## Fixture Autouse
 {id: fixture-autouse}
-
-* In the test file
 
 ![](fixture_autouse/conftest.py)
 
@@ -160,10 +175,27 @@ $ pytest -qs
 $ pytest -sq
 Before
 In test
+.
+
+1 passed in 0.02 seconds
+```
+
+## Fixture Autouse with yield
+{id: fixture-autouse-with-yield}
+
+![](fixture_autouse_around/conftest.py)
+
+![](fixture_autouse_around/test_app.py)
+
+```
+$ pytest -sq
+Before
+In test
 .After
 
 1 passed in 0.02 seconds
 ```
+
 
 ## Fixture for MongoDB
 {id: fixture-for-mongodb}

@@ -4,3 +4,6 @@ import pytest
 def configuration():
     print("Before")
 
+    yield
+
+    print("After")

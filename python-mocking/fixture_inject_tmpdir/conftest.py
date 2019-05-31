@@ -4,6 +4,7 @@ import yaml
 
 @pytest.fixture()
 def config(tmpdir):
+    print(tmpdir.__class__)  # LocalPath
     tdir = str(tmpdir)
     print(tdir)
 
