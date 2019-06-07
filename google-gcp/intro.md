@@ -10,4 +10,8 @@
 * [Code Mavens Meetup](https://www.meetup.com/Code-Mavens/)
 
 
+## Registration
+{id: registration}
 
+* Credit Card
+* Some free usage
