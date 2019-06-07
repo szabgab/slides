@@ -8,4 +8,5 @@ perl-intro
 python-mocking
 value
 groovy
+google-gcp
 pair-programming
