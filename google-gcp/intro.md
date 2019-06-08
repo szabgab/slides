@@ -44,9 +44,16 @@
 * SSH - Open in browser window
 
 
-## Install gcloud
-{id: install-gcloud}
+## Google Cloud SDK
+{id: cloud-sdk}
 
+* [Google Cloud SDK](https://cloud.google.com/sdk/)
+* [gcloud](https://cloud.google.com/sdk/gcloud/)
+* [gsutil](https://cloud.google.com/storage/docs/gsutil)
+
+```
+gcloud init
+```
 
 ## Access instance using gcloud
 {id: access-instance-using-gcloud}
@@ -75,10 +82,25 @@ curl http://localhost/
 * Stop instance will take more than 1:30 minutes
 * Refresh
 
+## Exercise 1
+{id: exercise-1}
+
+* Sign up to Google Cloud
+* Create a micro instance with your favorite Linux distribution)
+* Access it using the web-based SSH client
+* Install and configure Google Cloud SDK
+* Access the instance using gcloud.
+* Try curl on localhost
+* Install nginx
+* try curl again
+* change the default web page
+* shut down the instance.
+
+
 ## Snapshots
 {id: snapshots}
 
-* Compute Engin / Snapshots
+* Compute Engine / Snapshots
 * Create a snapshot based on the disk of VM (which is off)
 
 
@@ -149,6 +171,53 @@ sudo umount /mnt/data
 
 * Create instance
 * Boot disk - Change - Snapshots
+
+## Access Metadata
+{id: access-metadata}
+
+```
+curl -H "Metadata-Flavor: Google" http://metadata.google.internal/computeMetadata/v1/
+curl -H "Metadata-Flavor: Google" http://metadata.google.internal/computeMetadata/v1/instance/hostname
+curl -H "Metadata-Flavor: Google" http://metadata.google.internal/computeMetadata/v1/instance/name
+```
+
+## Metadata - key-value pairs
+{id: metadata-key-value-pairs}
+
+* Compute Engine - Metadata - Metadata - Edit
+* Add 'organization' = 'Some value'
+
+
+```
+curl -H "Metadata-Flavor: Google" http://metadata.google.internal/computeMetadata/v1/project/attributes/organization
+```
+
+## Metadata on the instance
+{id: metadata-on-the-instance}
+
+* Compute Engine - VM instances - (instance) - edit
+* Custom metadata
+* Set 'hello' : 'world'
+
+```
+curl -H "Metadata-Flavor: Google" http://metadata.google.internal/computeMetadata/v1/instance/attributes/hello
+```
+
+## Metadata - ssh keys
+{id: metadata-ssh-keys}
+
+* If you don't have one yet, create an shh key on your computer
+* Compute Engine - Metadata - SSH Keys - Edit
+* Paste the public key there
+
+* Try to ssh to the instance from a regular SSH client.
+
+
+## Labels
+{id: labels}
+
+* Labels allow us to organize resources
+* Can help us allocate expenses to project/clients/etc.
 
 
 ## Fixed IP Address
