@@ -101,7 +101,9 @@ curl http://localhost/
 {id: snapshots}
 
 * Compute Engine / Snapshots
-* Create a snapshot based on the disk of VM (which is off)
+* Create a snapshot based on the disk of VM (which is running)
+
+* Scheduled snapshot creation
 
 
 ## Extra disk
@@ -212,7 +214,6 @@ curl -H "Metadata-Flavor: Google" http://metadata.google.internal/computeMetadat
 
 * Try to ssh to the instance from a regular SSH client.
 
-
 ## Labels
 {id: labels}
 
@@ -220,8 +221,49 @@ curl -H "Metadata-Flavor: Google" http://metadata.google.internal/computeMetadat
 * Can help us allocate expenses to project/clients/etc.
 
 
-## Fixed IP Address
+## Static of Fixed IP Address
 {id: fixed-ip-address}
 
 * Set up fixed IP address
+* VPC Network - External IP Addresses
+* Reserve static address
+
+* [Reserve Static IP address](https://cloud.google.com/compute/docs/ip-addresses/reserve-static-external-ip-address)
+
+## Create preemptible instance
+{id: create-preemptible-instance}
+
+* Similar to spot instance in Amazon
+* Can be tuned off any time
+* Max life-span is 24 hours
+
+## Create Image
+{id: create-image}
+
+* Create an instance
+* Install `htop`
+* Copy the following file
+
+![load](load.py)
+
+* Shut down the instance
+* Create an image based on the disk of the instance
+
+## Create Instance template
+{id: create-instance-template}
+
+## Create Instance Group
+{id: create-instance-group}
+
+
+
+
+## QA
+{id: qa}
+
+* [Gabor Szabo](https://www.linkedin.com/in/szabgab/)
+
+* [Workshops](https://workshops.code-maven.com/)
+* [Code Mavens Meetup](https://www.meetup.com/Code-Mavens/)
+
 
