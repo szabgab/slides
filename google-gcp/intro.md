@@ -185,13 +185,13 @@ sudo umount /mnt/data
 
 * Install and configure Google Cloud SDK.
 * Access the instance using gcloud.
-* Create an instance using on the console or using.
-* [gcloud compute instances create](https://cloud.google.com/sdk/gcloud/reference/compute/instances/create)
+* Create an instance using on the console or using [gcloud compute instances create](https://cloud.google.com/sdk/gcloud/reference/compute/instances/create)
 * Create a file on the instance (just to see it remained on the new instance).
-* Create a snapshop.
+* Create a snapshot.
 * Create a new instance based on the snapshot.
+* Add a new disk to the instance.
 
-## Metadata
+## Meta-data
 {id: metadata}
 
 * Some are provided by Google.
@@ -233,24 +233,29 @@ curl -H "Metadata-Flavor: Google" http://metadata.google.internal/computeMetadat
 {id: metadata-ssh-keys}
 
 * If you don't have one yet, create an shh key on your computer
-* Compute Engine - Metadata - SSH Keys - Edit
+* [Compute Engine - Metadata - SSH Keys](https://console.cloud.google.com/compute/metadata/sshKeys) - Edit
 * Paste the public key there
 
 * Try to ssh to the instance from a regular SSH client.
 
+```
+alias xscp='scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no'
+alias xssh='ssh -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no'
+```
+
 ## Labels
 {id: labels}
 
-* Labels allow us to organize resources
+* Labels allow us to organize resources.
 * Can help us allocate expenses to project/clients/etc.
 
 
 ## Static or Fixed IP Address
 {id: fixed-ip-address}
 
-* Set up fixed IP address
-* VPC Network - External IP Addresses
-* Reserve static address
+* Set up fixed IP address.
+* [VPC Network - External IP Addresses](https://console.cloud.google.com/networking/addresses/list).
+* Reserve static address.
 
 * [Reserve Static IP address](https://cloud.google.com/compute/docs/ip-addresses/reserve-static-external-ip-address)
 
@@ -262,35 +267,67 @@ curl -H "Metadata-Flavor: Google" http://metadata.google.internal/computeMetadat
 * (Windows users can use the git-bash terminal.)
 * Add the public key to the project-wise Meta-Data
 * Try to ssh to the remote servers public IP using the command-line ssh client.
+* Add a label to the instance.
+* Record the current public IP address.
+* Shut down the instance.
+* Start it again, observe the change in public IP address.
+* Create a fixed IP address.
+* Shut down/start again.
+* Remove the fixed IP address (as that costs money when unused).
 
 
 ## Create preemptible instance
 {id: create-preemptible-instance}
 
-* Similar to spot instance in Amazon
-* Can be tuned off any time
-* Max life-span is 24 hours
+* Similar to spot instance in Amazon.
+* Can be tuned off any time.
+* Max life-span is 24 hours.
+* ~ 20% of the cost.
+
+## Instance Group
+{id: instance-group}
+
+* Automatic scaling.
+
+* Create and Image
+* Create an Instance template
+* Create an Instance group
 
 ## Create Image
 {id: create-image}
 
-* Create an instance
-* Install `htop`
-* Copy the following file
+* Create an instance.
+* Install `htop`.
+* Copy the following file.
 
 ![load](load.py)
 
-* Shut down the instance
-* Create an image based on the disk of the instance
+* Shut down the instance.
+* [Create an image](https://console.cloud.google.com/compute/images) based on the disk of the instance.
+* Start an instance based on the image, verify it and then destroy it.
 
 ## Create Instance template
 {id: create-instance-template}
 
+* [Create Instance Template](https://console.cloud.google.com/compute/instanceTemplates/list)
+
 ## Create Instance Group
 {id: create-instance-group}
 
+* [Create Instance Group](https://console.cloud.google.com/compute/instanceGroups/list)
 
+## Exercise 4
+{id: exercise-4}
 
+* Create an instance with the loader script.
+* Create an image.
+* Cerate a template for the smallest instance possible.
+* Create an instance group with 1-10 nodes.
+* There should be one instance running.
+* Connect to it in two ssh sessions, one with htop, the other runs the load generator.
+* See how increasing load make the system increase the number of running instances.
+
+* Don't forget to destroy the instance group!
 
 ## QA
 {id: qa}
