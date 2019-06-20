@@ -69,17 +69,18 @@ curl http://localhost/
 ## Exercise 1
 {id: exercise-1}
 
-* Sign up to Google Cloud
-* Create a micro instance with your favorite Linux distribution)
-* Access it using the web-based SSH client
-* Try curl on localhost
-* Install nginx
-* try curl again
-* change the default web page
-* shut down the instance.
+* Sign up to Google Cloud.
+* Create a micro instance with your favorite Linux distribution.
+* Access it using the web-based SSH client.
+* Try curl on localhost.
+* Install nginx.
+* Try curl again.
+* Change the default web page.
+* Install your favorite server or command line tool.
+* Shut down the instance.
 
 
-## Google Cloud SDK
+## Google Cloud SDK - command line tools
 {id: cloud-sdk}
 
 * [Google Cloud SDK](https://cloud.google.com/sdk/)
@@ -107,10 +108,10 @@ gcloud compute ssh NAME
 ## Snapshots
 {id: snapshots}
 
-* Compute Engine / Snapshots
-* Create a snapshot based on the disk of VM (which is running)
+* Compute Engine / Snapshots.
+* Create a snapshot based on the disk of VM (which is running).
 
-* Scheduled snapshot creation
+* Scheduled snapshot creation.
 
 
 ## Extra disk
@@ -182,19 +183,19 @@ sudo umount /mnt/data
 ## Exercise 2
 {id: exercise-2}
 
-* Install and configure Google Cloud SDK
+* Install and configure Google Cloud SDK.
 * Access the instance using gcloud.
-* Create an instance using on the console or using
+* Create an instance using on the console or using.
 * [gcloud compute instances create](https://cloud.google.com/sdk/gcloud/reference/compute/instances/create)
-* Create a file on the instance (just to see it remained on the new instance)
-* Create a snapshop
-* Create a new instance based on the snapshot
+* Create a file on the instance (just to see it remained on the new instance).
+* Create a snapshop.
+* Create a new instance based on the snapshot.
 
 ## Metadata
 {id: metadata}
 
-* Some are provided by Google
-* Some can be set by us either project-wide or per instance
+* Some are provided by Google.
+* Some can be set by us either project-wide or per instance.
 
 ## Access Metadata
 {id: access-metadata}
@@ -244,7 +245,7 @@ curl -H "Metadata-Flavor: Google" http://metadata.google.internal/computeMetadat
 * Can help us allocate expenses to project/clients/etc.
 
 
-## Static of Fixed IP Address
+## Static or Fixed IP Address
 {id: fixed-ip-address}
 
 * Set up fixed IP address
@@ -252,6 +253,16 @@ curl -H "Metadata-Flavor: Google" http://metadata.google.internal/computeMetadat
 * Reserve static address
 
 * [Reserve Static IP address](https://cloud.google.com/compute/docs/ip-addresses/reserve-static-external-ip-address)
+
+## Exercise 3
+{id: exercise-3}
+
+* Make sure you have a server running!.
+* If you don't have it yet, create an ssh key on your local computer.
+* (Windows users can use the git-bash terminal.)
+* Add the public key to the project-wise Meta-Data
+* Try to ssh to the remote servers public IP using the command-line ssh client.
+
 
 ## Create preemptible instance
 {id: create-preemptible-instance}
