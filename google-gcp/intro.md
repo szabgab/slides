@@ -15,11 +15,13 @@
 
 * Credit Card
 * Some free usage
+* [Google Cloud](https://cloud.google.com/)
 
 
 ## Menu of the console
 {id: menu-of-the-console}
 
+* [Console](https://console.cloud.google.com/)
 * "Pin" the "Compute Engine" to make it easier to access.
 
 ## Create VM Instance
@@ -43,17 +45,6 @@
 
 * SSH - Open in browser window
 
-
-## Google Cloud SDK
-{id: cloud-sdk}
-
-* [Google Cloud SDK](https://cloud.google.com/sdk/)
-* [gcloud](https://cloud.google.com/sdk/gcloud/)
-* [gsutil](https://cloud.google.com/storage/docs/gsutil)
-
-```
-gcloud init
-```
 
 ## Access instance using gcloud
 {id: access-instance-using-gcloud}
@@ -88,14 +79,23 @@ curl http://localhost/
 * Sign up to Google Cloud
 * Create a micro instance with your favorite Linux distribution)
 * Access it using the web-based SSH client
-* Install and configure Google Cloud SDK
-* Access the instance using gcloud.
 * Try curl on localhost
 * Install nginx
 * try curl again
 * change the default web page
 * shut down the instance.
 
+
+## Google Cloud SDK
+{id: cloud-sdk}
+
+* [Google Cloud SDK](https://cloud.google.com/sdk/)
+* [gcloud](https://cloud.google.com/sdk/gcloud/)
+* [gsutil](https://cloud.google.com/storage/docs/gsutil)
+
+```
+gcloud init
+```
 
 ## Snapshots
 {id: snapshots}
@@ -160,10 +160,8 @@ sudo mount /mnt/data
 sudo umount /mnt/data
 ```
 
-
 * Compute Engine - Disks
 * [Add persistant disk](https://cloud.google.com/compute/docs/disks/add-persistent-disk)
-
 
 ## Delete instance
 {id: delete-instance}
@@ -174,8 +172,27 @@ sudo umount /mnt/data
 * Create instance
 * Boot disk - Change - Snapshots
 
+## Exercise 2
+{id: exercise-2}
+
+* Install and configure Google Cloud SDK
+* Access the instance using gcloud.
+* Create an instance using on the console or using
+* [gcloud compute instances create](https://cloud.google.com/sdk/gcloud/reference/compute/instances/create)
+* Create a file on the instance (just to see it remained on the new instance)
+* Create a snapshop
+* Create a new instance based on the snapshot
+
+## Metadata
+{id: metadata}
+
+* Some are provided by Google
+* Some can be set by us either project-wide or per instance
+
 ## Access Metadata
 {id: access-metadata}
+
+* On the instance:
 
 ```
 curl -H "Metadata-Flavor: Google" http://metadata.google.internal/computeMetadata/v1/
@@ -188,7 +205,6 @@ curl -H "Metadata-Flavor: Google" http://metadata.google.internal/computeMetadat
 
 * Compute Engine - Metadata - Metadata - Edit
 * Add 'organization' = 'Some value'
-
 
 ```
 curl -H "Metadata-Flavor: Google" http://metadata.google.internal/computeMetadata/v1/project/attributes/organization
