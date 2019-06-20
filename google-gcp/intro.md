@@ -13,9 +13,9 @@
 ## Registration
 {id: registration}
 
+* [Google Cloud](https://cloud.google.com/)
 * Credit Card
 * Some free usage
-* [Google Cloud](https://cloud.google.com/)
 
 
 ## Menu of the console
@@ -45,13 +45,6 @@
 
 * SSH - Open in browser window
 
-
-## Access instance using gcloud
-{id: access-instance-using-gcloud}
-
-```
-gcloud compute ssh NAME
-```
 
 ## Install packages - http
 {id: install-packages}
@@ -95,6 +88,20 @@ curl http://localhost/
 
 ```
 gcloud init
+```
+
+## List instances
+{id: list-instances}
+
+```
+gcloud compute instances list
+```
+
+## Access instance using gcloud
+{id: access-instance-using-gcloud}
+
+```
+gcloud compute ssh NAME
 ```
 
 ## Snapshots
