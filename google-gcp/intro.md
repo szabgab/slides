@@ -9,7 +9,6 @@
 * [Workshops](https://workshops.code-maven.com/)
 * [Code Mavens Meetup](https://www.meetup.com/Code-Mavens/)
 
-
 ## Registration
 {id: registration}
 
@@ -17,12 +16,38 @@
 * Credit Card
 * Some free usage
 
+I strongly recommend you use your own private Google account for this and you create your own Google Cloud account
+and you don't use your employers account. If for no other reason, then because in that corporate account you might
+have certain limitations that will make it impossible to do some of the exercises.
+
+Google provides you with some credit to experiment with their services without actually paying money, but they still
+require a valid credit card to create the account. If you don't want to provide that then I am afraid you won't
+be able to try this.
+
+## Remove services!
+{id: remove-services}
+
+* At the end of the session don't forget to stop and even to remove services!
+* Otherwise they might eat your credit.
+
+* Stop and even remove instances.
+* Remove public IP address registations.
+* Remove snapshots.
+* Remove images.
+* Remove instance groups.
 
 ## Menu of the console
 {id: menu-of-the-console}
 
 * [Console](https://console.cloud.google.com/)
-* "Pin" the "Compute Engine" to make it easier to access.
+* "Pin" the "[Compute Engine](https://console.cloud.google.com/compute/instances)" to make it easier to access.
+
+Some other insteresting entries
+
+* IAM - Identity Access Management, where you can allow other people (and devices) to have certain rights in your account.
+* Compute Engine - Virtual Machines (we'll start with this)
+* Kubernetes - to run Docker images
+* Storage - various types of managed databases and filesystems
 
 ## Create VM Instance
 {id: create-vm-instance}
@@ -32,8 +57,13 @@
 
 * Machine Type
 * Price
-* Boot disk (OS image)
+* Boot disk / OS image (fixed)
 
+There are only very few options that are "fixed" once you create the instance. Most of them can be changed later.
+Some can be changed while the instance is running, others require it to be shut down and restarted.
+
+Look at the prices. They charge by the second, so you can turn on and off instances without using a lot of the credit
+you have.
 
 ## VM Instance Example
 {id: vm-instance-example}
@@ -72,10 +102,10 @@ curl http://localhost/
 * Sign up to Google Cloud.
 * Create a micro instance with your favorite Linux distribution.
 * Access it using the web-based SSH client.
-* Try curl on localhost.
+* Try curl on localhost. It will fail as there is no web server.
 * Install nginx.
 * Try curl again.
-* Change the default web page.
+* Change the default web page. (See /etc/nginx )
 * Install your favorite server or command line tool.
 * Shut down the instance.
 
@@ -108,7 +138,7 @@ gcloud compute ssh NAME
 ## Snapshots
 {id: snapshots}
 
-* Compute Engine / Snapshots.
+* [Compute Engine / Snapshots](https://console.cloud.google.com/compute/snapshots).
 * Create a snapshot based on the disk of VM (which is running).
 
 * Scheduled snapshot creation.
@@ -168,8 +198,8 @@ sudo mount /mnt/data
 sudo umount /mnt/data
 ```
 
-* Compute Engine - Disks
-* [Add persistant disk](https://cloud.google.com/compute/docs/disks/add-persistent-disk)
+* [Compute Engine - Disks](https://console.cloud.google.com/compute/disks)
+* Read: [Add persistant disk](https://cloud.google.com/compute/docs/disks/add-persistent-disk)
 
 ## Delete instance
 {id: delete-instance}
