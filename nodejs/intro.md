@@ -109,6 +109,38 @@ world
 ^C
 ```
 
+## Template literals (template strings)
+{id: template-literals}
+
+* Using backtick!
+* In ES2015/ES6
+
+![](examples/template_literals.js)
+
+```
+$ node examples/template_literals.js
+Hello Kate
+```
+
+## OS module
+{id: os-module}
+
+* A bunch of OS-related methods
+* [os](https://nodejs.org/api/os.html)
+
+![](examples/the_os_module.js)
+
+
+## Read directory sync
+{id: read-directory-sync}
+
+![](examples/readdir_sync.js)
+
+## Read directory async
+{id: read-directory-async}
+
+![](examples/readdir_async.js)
+
 
 ## REPL
 {id: repl}
