@@ -1,12 +1,13 @@
-github-ci
 ansible-intro
 aws-lambda
+github-ci
 git-intro
+google-gcp
+groovy
 jenkins-intro
 linux-intro
+nodejs
+pair-programming
 perl-intro
 python-mocking
 value
-groovy
-google-gcp
-pair-programming
