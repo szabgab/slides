@@ -83,6 +83,23 @@ Run it directly
 
 ![](examples/hello_person.js)
 
+## Command line arguments (argv)
+{id: command-line-arguments-foreach}
+
+[](https://nodejs.org/docs/latest/api/process.html#process_process_argv)o
+
+![](examples/argv_foreach.js)
+
+## Command line arguments (argv)
+{id: command-line-arguments}
+
+![](examples/argv.js)
+
+```
+node examples/argv.js "hello world"
+3
+hello world
+```
 
 ## setTimeout
 {id: set-timeout}
