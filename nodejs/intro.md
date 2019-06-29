@@ -139,6 +139,38 @@ $ node examples/template_literals.js
 Hello Kate
 ```
 
+## Create library
+{id: create-library}
+
+![](examples/lib.js)
+
+![](examples/app.js)
+
+```
+$ node examples/app.js
+Loading module
+Hello World
+Hello Foo
+```
+
+It is better to define as constant so we won't change it by mistake
+
+
+## Function as a Library
+{id: function-as-a-library}
+
+From a module we can export a module or a single function like this:
+// module.exports = hi;
+
+![](examples/lib2.js)
+
+![](examples/app2.js)
+
+## What is in a module?
+{id: what-is-in-a-module}
+
+![](examples/my_module.js)
+
 ## OS module
 {id: os-module}
 
@@ -175,12 +207,34 @@ Ctrl-d
 
 * [npm](https://www.npmjs.com/)
 
+## Express
+{id: express}
+
+```
+npm install express
+```
+
+## npx
+{id: npx}
+
+[](https://www.npmjs.com/package/npx)
+
+https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b
+
+
 ## Other
 {id: other}
 
 Because node.js does not live in the browser it does not have the DOM. But it has a main object called <b>process</b> and you can ask for <b>process.pid</b>
 
 Node exists when it has nothing more to do. It reference counts the callbacks and when that goes to 0 it exits.
+
+We can use global.console.log() or console.log()
+
+clearTimeout()
+clearInterval
+
+var message = '';
 
 ## Resources
 {id: resources}
