@@ -21,7 +21,7 @@
 ## Installation
 {id: installation}
 
-* http://nodejs.org/  pick the LTS
+* [NodeJS](http://nodejs.org/)  pick the LTS
 
 ```
 whet https://nodejs.org/dist/v10.16.0/node-v10.16.0-linux-x64.tar.xz
@@ -191,6 +191,14 @@ From a module we can export a module or a single function like this:
 ![](examples/readdir_async.js)
 
 
+## Exception
+{id: exception}
+
+```
+throw new Error("a problem, we have");
+```
+
+
 ## REPL
 {id: repl}
 
@@ -236,6 +244,9 @@ clearInterval
 
 var message = '';
 
+
+[A TAP test framework for Node.js](https://github.com/isaacs/node-tap)
+
 ## Resources
 {id: resources}
 
@@ -243,5 +254,120 @@ var message = '';
 * [How do I get started with Node.JS](https://stackoverflow.com/questions/2353818/how-do-i-get-started-with-node-js)
 * [](https://www.youtube.com/watch?v=TlB_eWDSMt4)
 * [](https://www.youtube.com/watch?v=RLtyhwFtXQA)
+* [](http://www.nodebeginner.org/)
 
+
+## HTTP Server
+{id: http-server}
+
+![](examples/http/http-server.js)
+
+```
+$ curl http://localhost:8000
+Hello World
+
+$ curl -i http://localhost:8000
+HTTP/1.1 200 OK
+content-type: text/plain
+Date: Thu, 30 Jan 2014 21:03:36 GMT
+Connection: keep-alive
+Transfer-Encoding: chunked
+
+Hello World
+```
+
+Point out the Connection: keep-alive   - in modern web you can send several requsts on the same connection
+Transfer-Encoding: chunked   - streaming
+
+
+## Transfer-Encoding: chunked
+{id: chunked}
+
+![](examples/http/http-server2.js)
+
+In this example, if we fetch it with curl, we'll see the Hello arrives first and then after 2 seconds world arrives.
+This is what has been provided by the chunked parameter. This script might fetch some data from a database or from some
+other source. Instead of building up the whole response in the server and then sening it out only when it is ready,
+we send it out in chunks as parts of it got ready.
+
+If there was a  Content-Length the client could know when the data ends, but with chunked budy it has to
+use the http://en.wikipedia.org/wiki/Chunked_transfer_encoding  which basically means, when a chunk of size 0 arrives
+that's the end of the current document.
+
+Apache bench: ab -n 100 -c 100 http://127.0.0.1:8000/
+
+
+## TCP Server
+{id: tcp-server}
+
+![](examples/http/tcp-server.js)
+
+node examples/basics/tcp-server.js
+
+
+```
+$ telnet localhost 8000
+Trying 127.0.0.1...
+Connected to localhost.
+Escape character is '^]'.
+hello
+world
+Connection closed by foreign host.
+```
+
+## TCP Echo Server
+{id: tcp-echo-server}
+
+![](examples/http/tcp-server-echo.js)
+
+## Chat server
+{id: chat-server}
+
+![](examples/http/chat.js)
+
+This works, but when someone disconnects, the dead socket remains in the array and when we try to write to it it will blow up.
+
+## Remove dead sockets
+{id: remove-dead-sockets}
+
+```
+    socket.on('end', function() {
+        var i = sockets.indexOf(socket);
+        sockets.splice(i, 1)
+    });
+```
+
+![](examples/http/chat2.js)
+
+
+## Stop echoing
+{id: stop-echoing}
+
+```
+        if (sockets[i] == socket) continue;
+```
+
+![](examples/http/chat3.js)
+
+
+
+## Debugging
+{id: debugging}
+
+Add "debugger;" to the code. That will set a breakpoint if running under the debugger.
+node debug code.js
+debug> help
+
+debug> quit
+
+* [Node inspector](https://github.com/node-inspector/node-inspector)
+* Eclipse plugin
+
+## Mashup
+{id: mashup}
+
+While one process is still "running" and printing "world" every 5 seconds, we add a new "process"
+fetching a website every 2 seconds. It just works.
+
+![](examples/http/mash.js)
 
