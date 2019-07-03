@@ -101,6 +101,11 @@ node examples/argv.js "hello world"
 hello world
 ```
 
+## Define function with arrow notation
+{id: define-function-with-arrow-notation}
+
+![](examples/add.js)
+
 ## setTimeout
 {id: set-timeout}
 
@@ -190,6 +195,11 @@ From a module we can export a module or a single function like this:
 
 ![](examples/readdir_async.js)
 
+## Read directory async error handline
+{id: read-directory-async-errors}
+
+![](examples/readdir_async_errors.js)
+
 
 ## Exception
 {id: exception}
@@ -214,6 +224,8 @@ Ctrl-d
 {id: npm}
 
 * [npm](https://www.npmjs.com/)
+* Private npm repository in the cloud: https://gemfury.com/
+
 
 ## Express
 {id: express}
@@ -247,14 +259,21 @@ var message = '';
 
 [A TAP test framework for Node.js](https://github.com/isaacs/node-tap)
 
-## Resources
-{id: resources}
+## Class
+{id: class}
 
-* [Ryan Dahl (author of node.js)](http://www.youtube.com/watch?v=jo_B4LTHi3I)
-* [How do I get started with Node.JS](https://stackoverflow.com/questions/2353818/how-do-i-get-started-with-node-js)
-* [](https://www.youtube.com/watch?v=TlB_eWDSMt4)
-* [](https://www.youtube.com/watch?v=RLtyhwFtXQA)
-* [](http://www.nodebeginner.org/)
+![](examples/myclass.js)
+
+## HTTP Hello World
+{id: http-hello-world}
+
+![](examples/http_hello_world.js)
+
+
+## HTTP Return JSON
+{id: http-return-json}
+
+![](examples/http_return_json.js)
 
 
 ## HTTP Server
@@ -370,4 +389,17 @@ While one process is still "running" and printing "world" every 5 seconds, we ad
 fetching a website every 2 seconds. It just works.
 
 ![](examples/http/mash.js)
+
+## Resources
+{id: resources}
+
+* [Ryan Dahl (author of node.js)](http://www.youtube.com/watch?v=jo_B4LTHi3I)
+* [How do I get started with Node.JS](https://stackoverflow.com/questions/2353818/how-do-i-get-started-with-node-js)
+* [](https://www.youtube.com/watch?v=TlB_eWDSMt4)
+* [](https://www.youtube.com/watch?v=RLtyhwFtXQA)
+* [](http://www.nodebeginner.org/)
+* [](https://www.youtube.com/watch?v=TlB_eWDSMt4)
+* [](https://www.youtube.com/watch?v=RLtyhwFtXQA)
+
+
 
