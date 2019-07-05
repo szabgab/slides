@@ -1,0 +1,12 @@
+i{
+  "name": "@gabor/first",
+  "version": "1.0.9",
+  "private": true,
+  "devDependencies": {
+    "lodash": "",
+     "yaml": ""
+  },
+  "scripts": {
+    "test": "echo No Tests"
+  }
+}

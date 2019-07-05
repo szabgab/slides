@@ -184,6 +184,31 @@ From a module we can export a module or a single function like this:
 
 ![](examples/the_os_module.js)
 
+## Read file
+{id: read-file}
+
+![](examples/read_file.js)
+
+## Write file
+{id: write-file}
+
+![](examples/write_file.js)
+
+## Append to file
+{id: append-to-file}
+
+![](examples/append_to_file.js)
+
+## Delete file (unlink file)
+{id: delete-file}
+
+![](examples/delete_file.js)
+
+
+## Create a directory (folder)
+{id: create-directory}
+
+![](examples/create_directory.js)
 
 ## Read directory sync
 {id: read-directory-sync}
@@ -199,6 +224,9 @@ From a module we can export a module or a single function like this:
 {id: read-directory-async-errors}
 
 ![](examples/readdir_async_errors.js)
+
+
+
 
 
 ## Exception
@@ -226,6 +254,41 @@ Ctrl-d
 * [npm](https://www.npmjs.com/)
 * Private npm repository in the cloud: https://gemfury.com/
 
+## npm init
+{id: npm-init}
+
+```
+npm init
+```
+
+This will create the package.json file.
+
+## package json
+{id: package-json}
+
+![](examples/manual/package.json)
+
+## npm install
+{id: npm-install}
+
+will install in the `node_modules` folder in the directory where the package.json can be found
+
+```
+npm install module
+npm uninstall module
+```
+
+## Semanic Versioning
+{id: semantic-versionins}
+
+* [About Semantic Versioning](https://docs.npmjs.com/about-semantic-versioning)
+* [Semantic version calculator](https://semver.npmjs.com/)
+
+```
+^1.2.3   means 1.x.x
+~1.2.3  means  1.2.x
+1.2.3   exact version number
+```
 
 ## Express
 {id: express}
@@ -400,6 +463,7 @@ fetching a website every 2 seconds. It just works.
 * [](http://www.nodebeginner.org/)
 * [](https://www.youtube.com/watch?v=TlB_eWDSMt4)
 * [](https://www.youtube.com/watch?v=RLtyhwFtXQA)
+
 
 
 
