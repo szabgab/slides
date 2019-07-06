@@ -168,6 +168,15 @@ TypeError: Assignment to constant variable.
     at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
 ```
 
+## var
+{id: var}
+
+![](examples/var1.js)
+
+![](examples/var2.js)
+
+![](examples/var3.js)
+
 
 
 ## Create library
