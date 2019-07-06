@@ -184,6 +184,12 @@ From a module we can export a module or a single function like this:
 
 ![](examples/the_os_module.js)
 
+
+## File-system related operations (fs)
+{id: file-system-related-operations}
+
+[fs](https://nodejs.org/docs/latest/api/fs.html)
+
 ## Read file
 {id: read-file}
 
@@ -204,18 +210,29 @@ From a module we can export a module or a single function like this:
 
 ![](examples/delete_file.js)
 
+## Read (and write) file by chunks
+{id: read-write-file-by-chunks}
 
-## Create a directory (folder)
+![](examples/read_write_by_chunks.js)
+
+
+## Create a directory (folder) (mkdir)
 {id: create-directory}
 
 ![](examples/create_directory.js)
 
-## Read directory sync
+## Remove a directory (folder) (rmdir)
+{id: remove-directory}
+
+![](examples/remove_directory.js)
+
+
+## Read directory sync (readdirSync)
 {id: read-directory-sync}
 
 ![](examples/readdir_sync.js)
 
-## Read directory async
+## Read directory async (readdir)
 {id: read-directory-async}
 
 ![](examples/readdir_async.js)
@@ -225,8 +242,37 @@ From a module we can export a module or a single function like this:
 
 ![](examples/readdir_async_errors.js)
 
+## Rename a file (rename)
+{id: rename-file}
+
+fs.rename(from, to, (err) => {})
+
+![](examples/rename_file.js)
 
 
+## The path related tools
+{id: path-related-tools}
+
+* [path](https://nodejs.org/docs/latest/api/path.html)
+
+## Path to the current file
+{id: path-to-current-file}
+
+![](examples/path_to_file.js)
+
+## Relative path inside a project
+{id: relative-path-inside-a-project}
+
+
+```
+project_dir/
+   /bin/
+       code.js
+   /templates
+       main.html
+```
+
+![](examples/relative_path.js)
 
 
 ## Exception
@@ -296,6 +342,9 @@ npm uninstall module
 ```
 npm install express
 ```
+
+![](examples/web/hello_world.js)
+
 
 ## npx
 {id: npx}

@@ -33,3 +33,11 @@ http://nodejs.org/illuminati0.pdf
 
 
 
+use let instead of var
+
+Recursive listing of directory
+Reading file line-by-line
+tail on a file
+run external process and print stdout and stderr
+
+

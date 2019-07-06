@@ -1,7 +1,7 @@
 const fs = require('fs')
 
-fs.readdir('.', function (err, files) {
-    console.log(files)
+fs.readdir('.', function (err, things) {
+    console.log(things)
 })
 
 

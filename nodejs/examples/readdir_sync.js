@@ -1,6 +1,6 @@
 const fs = require('fs')
 
-var files = fs.readdirSync('.')
+let files = fs.readdirSync('.')
 console.log(files)
 
 
