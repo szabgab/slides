@@ -197,3 +197,113 @@ REPOSITORY          TAG                 IMAGE ID            CREATED             
 hello-world         latest              48b5124b2768        6 weeks ago         1.84 kB
 ```
 
+
+## Hello World again
+{id: docker-hello-world-again}
+
+This time it will be faster as the images is already on the disk.
+A new container is created, ran, and exited.
+
+```
+$ docker ps -as
+
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS                      PORTS               NAMES               SIZE
+42bbb5394617        hello-world         "/hello"            16 minutes ago      Exited (0) 16 minutes ago                       blissful_knuth      0 B (virtual 1.84 kB)
+f6239f10a6ad        hello-world         "/hello"            21 minutes ago      Exited (0) 21 minutes ago                       lucid_snyder        0 B (virtual 1.84 kB)
+```
+
+## Remove Docker container
+{id: docker-remove-container}
+
+```
+$ docker rm 42bbb5394617
+```
+
+Using the "CONTAINER ID" from the list given by ps.
+
+## Docker Whalesay
+{id: docker-hub-whalesay}
+
+Go to [Docker Hub](https://hub.docker.com/) search for *whalesay* and note among the many hits there is one called
+[docker/whalesay](https://hub.docker.com/r/docker/whalesay/). We'll use that one.
+
+```
+$ docker run docker/whalesay cowsay hello world
+
+Unable to find image 'docker/whalesay:latest' locally
+latest: Pulling from docker/whalesay
+e190868d63f8: Pull complete
+909cd34c6fd7: Pull complete
+0b9bfabab7c1: Pull complete
+a3ed95caeb02: Pull complete
+00bf65475aba: Pull complete
+c57b6bcc83e3: Pull complete
+8978f6879e2f: Pull complete
+8eed3712d2cf: Pull complete
+Digest: sha256:178598e51a26abbc958b8a2e48825c90bc22e641de3d31e18aaf55f3258ba93b
+Status: Downloaded newer image for docker/whalesay:latest
+ _____________
+&lt; hello world >
+ -------------
+    \
+     \
+      \
+                    ##        .
+              ## ## ##       ==
+           ## ## ## ##      ===
+       /""""""""""""""""___/ ===
+  ~~~ {~~ ~~~~ ~~~ ~~~~ ~~ ~ /  ===- ~~~
+       \______ o          __/
+        \    \        __/
+          \____\______/
+```
+
+## Docker ps after whalesay
+{id: docker-ps-whalesay}
+
+```
+$ docker ps -as
+
+CONTAINER ID        IMAGE               COMMAND                CREATED             STATUS                      PORTS               NAMES
+59c99df0177a        docker/whalesay     "cowsay hello world"   36 minutes ago      Exited (0) 23 minutes ago                       loving_wescoff      0 B (virtual 247 MB)
+f6239f10a6ad        hello-world         "/hello"               About an hour ago   Exited (0) 58 minutes ago                       lucid_snyder        0 B (virtual 1.84 kB)
+```
+
+```
+$ docker images
+
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+hello-world         latest              48b5124b2768        6 weeks ago         1.84 kB
+docker/whalesay     latest              6b362a9f73eb        21 months ago       247 MB
+```
+
+## Docker whale (create Docker image)
+{id: docker-whale}
+
+Create *Dockerfile* with the following content:
+
+![](examples/first/Dockerfile)
+
+```
+$ docker build -t docker-whale .
+...
+```
+
+```
+$ docker images
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+docker-whale        latest              d5cf6bf32c0f        24 seconds ago      277 MB
+hello-world         latest              48b5124b2768        6 weeks ago         1.84 kB
+docker/whalesay     latest              6b362a9f73eb        21 months ago       247 MB
+```
+
+The command *docker ps -a* shows nothing new.
+
+## Run Docker whale
+{id: run-docker-whale}
+
+```
+$ docker run docker-whale
+```
+
+
