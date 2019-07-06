@@ -177,6 +177,22 @@ TypeError: Assignment to constant variable.
 
 ![](examples/var3.js)
 
+## let
+{id: let}
+
+![](examples/let1.js)
+
+![](examples/let2.js)
+
+## var let
+{id: var-let}
+
+![](examples/var_let.js)
+
+## let var
+{id: let-var}
+
+![](examples/let_var.js)
 
 
 ## Create library
