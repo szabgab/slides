@@ -266,6 +266,11 @@ From a module we can export a module or a single function like this:
 
 ![](examples/read_write_by_chunks.js)
 
+## Read (and write) file by chunks using pipe
+{id: read-write-file-by-pipe}
+
+![](examples/read_write.js)
+
 
 ## Create a directory (folder) (mkdir)
 {id: create-directory}
