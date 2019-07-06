@@ -41,3 +41,6 @@ tail on a file
 run external process and print stdout and stderr
 
 
+Chaining pipes
+(e.g. use zlib.createGzip()  or zlib.createGunzip
+
