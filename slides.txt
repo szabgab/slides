@@ -1,5 +1,6 @@
 ansible-intro
 aws-lambda
+docker
 github-ci
 git-intro
 google-gcp
