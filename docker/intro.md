@@ -391,3 +391,119 @@ We need to tell Docker that this is an interactive process
 docker run -it mydocker
 ```
 
+
+
+## Developing Perl code in Docker
+{id: developing-perl-code-in-docker}
+
+```
+$ docker run -v /Users/gabor/work/mydocker:/opt/  mydocker perl /opt/hw.pl
+```
+
+* Mount a directory of the host OS to a directory in the Docker image.
+* Run the code
+
+## Install Perl Modules
+{id: install-perl-modules}
+
+Install a perl module using *apt-get*
+
+![](examples/perl-mechanize/Dockerfile)
+
+![](examples/perl-mechanize/get.pl)
+
+```
+$ docker run -v /Users/gabor/work/mydocker:/opt/  mydocker perl /opt/get.pl
+Usage: /opt/get.pl URL
+```
+
+```
+docker run -v /Users/gabor/work/mydocker:/opt/  mydocker perl /opt/get.pl http://perlmaven.com/
+```
+
+## Docker Perl Dancer hello world app
+{id: docker-perl-dancer-hello-world-app}
+
+## Remove all Docker containers
+{id: remove-all-docker-containers}
+
+Remove all the docker containers:
+
+```
+docker rm $(docker ps -aq)
+```
+
+## Dockerfile
+{id: docker-dockerfile}
+
+```
+Dockerfile
+```
+
+```
+FROM debian
+RUN apt-get update
+RUN apt-get install -y htop
+RUN apt-get install -y curl
+```
+
+```
+docker build -t exp1 .
+docker images
+docker history exp1
+docker run --rm -it exp1
+```
+
+## Docker CMD
+{id: docker-cmd}
+
+CMD - the default command when the container starts, in debian it is bash
+The CMD only runs when we run the container!
+
+## Docker COPY
+{id: docker-copy}
+
+COPY from host to image
+
+## Docker ADD
+{id: docker-add}
+
+ADD is like COPY but it can do more magic (can download files from the internet, automatically unpacks zipped files)
+
+
+## Docker upload and publish
+{id: docker-upload}
+
+```
+docker tag ID szabgab/name:1.01
+docker login --username=szabgab
+docker push szabgab/name:1.01
+```
+
+## Docker upload and publish
+{id: docker-ps}
+
+```
+docker run --rm -d -it debian
+docker ps
+docker stop ID
+
+docker exec  0ca23b8a9802 echo hello
+docker exec -it 0ca23b8a9802 bash
+
+docker kill ID    if it does not want to stop
+```
+
+
+## Docker Toolbox
+{id: docker-toolbox}
+
+Legacy system
+
+## Docker Resources
+{id: docker-resource}
+
+
+* [Docker Tutorial for Beginners](https://www.youtube.com/watch?v=VlSW-tztsvM)
+* [Docker Tutorial For Beginners](https://www.youtube.com/watch?v=sRIxHHZFwBA)
+
