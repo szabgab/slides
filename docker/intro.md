@@ -306,4 +306,88 @@ The command *docker ps -a* shows nothing new.
 $ docker run docker-whale
 ```
 
+## Docker empty Ubuntu
+{id: docker-empty-ubuntu}
+
+![](examples/empty/Dockerfile)
+
+```
+$ docker build -t mydocker .
+$ docker run mydocker
+```
+
+## Passing command to the Docker Container
+{id: passing-commands-to-docker-container}
+
+```
+$ docker run mydocker ls -l /
+
+$ docker run mydocker perl -v
+
+This is perl 5, version 22, subversion 2 (v5.22.2) built for x86_64-linux-gnu-thread-multi
+....
+
+$ docker run mydocker python -V
+container_linux.go:247: starting container process caused "exec: \"python\": executable file not found in $PATH"
+docker: Error response from daemon: oci runtime error: container_linux.go:247: starting container process caused "exec: \"python\": executable file not found in $PATH".
+ERRO[0001] error getting events from daemon: net/http: request canceled
+```
+
+## Docker: Mounting host direcroty
+{id: docker-mounting-host-directory}
+
+```
+$ docker run -v /Users/gabor/work/mydocker:/opt/  mydocker ls -l /opt/
+```
+
+The *-v /Users/gabor/work/mydocker:/opt/* will mount the */Users/gabor/work/mydocker* directory of the home operating system to the
+*/opt/* directory of the Docker image and run the container.
+The *ls -l /opt/* will list the content of this directory.
+
+
+## Docker Ubuntu Hello World
+{id: docker-ubuntu-hello-world}
+
+![](examples/hello-world/Dockerfile)
+
+```
+$ docker build -t mydocker .
+$ docker run mydocker
+hello world
+```
+
+
+## Docker Perl Hello World
+{id: docker-perl-hello-world}
+
+![](examples/hello-world-perl/Dockerfile)
+
+## Docker Perl Hello World in script
+{id: docker-perl-script-hello-world}
+
+![](examples/hello-world-perl-script/Dockerfile)
+
+![](examples/hello-world-perl-script/hello_world.pl)
+
+
+## Docker: Perl with I/O
+{id: docker-perl-with-io}
+
+![](examples/perl-io/Dockerfile)
+
+![](examples/perl-io/greetings.pl)
+
+```
+$ docker run mydocker
+
+Use of uninitialized value $name in scalar chomp at /opt/greetings.pl line 7.
+Use of uninitialized value $name in concatenation (.) or string at /opt/greetings.pl line 8.
+What is your name? Hello , how are you today?
+```
+
+We need to tell Docker that this is an interactive process
+
+```
+docker run -it mydocker
+```
 
