@@ -4,22 +4,21 @@
 ## What is Docker?
 {id: what-is-docker}
 
-* De-facto standard for containerization
+* A light-weight Virtual Server
 
 * Makes it easy to have the exact same setup for development, testing, productions.
 * Makes it easy for people to set up their development environment.
 
-* A light-weight Virtual Server
+* De-facto standard for containerization
 
 ## Install Docker
 {id: install-docker}
 
 Install [Docker](https://www.docker.com/)
 
-* Ubuntu: `apt-get install docker.io`
+* Debian/Ubuntu: `apt-get install docker.io`
 * CentOS: `yum install docker`
-* Windows: [Docker for Windows](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
-
+* MS Windows: Download [Docker for Windows](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 
 ## Docker version
 {id: docker-version}
@@ -42,7 +41,7 @@ Display some system-wide information.
 docker info
 ```
 
-## Docker help CLI
+## Docker help on CLI
 {id: docker-help-cli}
 
 Get help for the various commands on the command-line.
@@ -67,21 +66,18 @@ docker help rmi
 ## Docker Daemon
 {id: docker-daemon}
 
-On Mac Launch the Docker daemon via the Application icon.
-
-
 To launch docker daemon from the command line:
 
-* On OSX:    `open -a Docker`
+* On OSX:    `open -a Docker` ot Launch the Docker daemon via the Application icon.
 * Linux:     `sudo service docker status`
-* Windows:   ?
+* Windows:    Run the Docker Desktop
 
 ## Docker container vs. image
 {id: docker-container-image}
 
-Container = runtime image
+container = runtime image
 
-(think about class and instance)
+(think about instance = runtime class)
 
 
 ## Docker Registry
@@ -101,7 +97,50 @@ busybox  (very small)
 
 ```
 docker run busybox echo hello world
+
+docker run busybox echo something else
+```
+
+## Run Interactive
+{id: run-interactive}
+
+
+```
+docker run -it busybox
+```
+
+## Docker List containers
+{id: list-containers}
+
+```
+docker ps
+docker ps -a
+```
+
+## Remove containers
+{id: remove-containers}
+
+```
+docker rm CONTAINERID
+```
+
+## Run and remove container
+{id: run-and-remove-container}
+
+```
 docker run --rm busybox echo hello world
+```
+
+## List and remove images
+{id: list-and-remove-images}
+
+```
+docker images
+docker rmi busybox
+```
+
+
+```
 docker run -d --rm busybox sleep 30
 
 docker run --name my_name busybox sleep 100
@@ -110,130 +149,37 @@ docker inspect CONTAINER_ID
 docker logs CONTAINER_ID
 ```
 
-## Docker history
-{id: docker-history}
+
+## Docker Hub search for images
+{id: docker-hub-images}
+
+* [Docker hub](https://hub.docker.com/)
+
+## Download image
+{id: download-image}
+
 
 ```
-docker history IMAGE
-```
-
-to see the layers
-
-
-
-## Simple docker commands
-{id: simple-docker-commands}
-
-Empty state, no images:
-
-no runnin containers
+docker pull ubuntu:19.04
 
 ```
-$ docker ps
 
-CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
-```
-
-no local containers at all (including not running, and showing the size)
+## Use Ubuntu
+{id: use-ubuntu}
 
 ```
-$ docker ps -as
-
-CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
+docker run --rm ubuntu:19.04 echo hello
 ```
 
-not even images
-
 ```
-$ docker images
-
-REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
-```
-
-Commands
-
-```
-docker ps
-docker ps -as    list all the containers available locally  (incl the size)
-docker images    list images
-```
-
-## Docker: Hello World
-{id: docker-hello-world}
-
-```
-$ docker run hello-world
-
-
-Unable to find image 'hello-world:latest' locally
-latest: Pulling from library/hello-world
-78445dd45222: Pull complete
-Digest: sha256:c5515758d4c5e1e838e9cd307f6c6a0d620b5e07e6f927b07d05f6d12a1ac8d7
-Status: Downloaded newer image for hello-world:latest
-
-Hello from Docker!
-This message shows that your installation appears to be working correctly.
-
-To generate this message, Docker took the following steps:
- 1. The Docker client contacted the Docker daemon.
- 2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
- 3. The Docker daemon created a new container from that image which runs the
-    executable that produces the output you are currently reading.
- 4. The Docker daemon streamed that output to the Docker client, which sent it
-    to your terminal.
-
-To try something more ambitious, you can run an Ubuntu container with:
- $ docker run -it ubuntu bash
-
-Share images, automate workflows, and more with a free Docker ID:
- https://cloud.docker.com/
-
-For more examples and ideas, visit:
- https://docs.docker.com/engine/userguide/
-```
-
-## After Hello World
-{id: docker-after-hello-world}
-
-no running containers, but there is one on the disk:
-
-```
-$ docker ps -as
-CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS                     PORTS               NAMES               SIZE
-f6239f10a6ad        hello-world         "/hello"            8 seconds ago       Exited (0) 7 seconds ago                       lucid_snyder        0 B (virtual 1.84 kB)
-```
-
-There is also an image
-
-```
-$ docker images
-REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
-hello-world         latest              48b5124b2768        6 weeks ago         1.84 kB
+docker run -it --rm ubuntu:19.04
+# htop
+# apt-get update
+# apt-get install htop
+# htop
 ```
 
 
-## Hello World again
-{id: docker-hello-world-again}
-
-This time it will be faster as the images is already on the disk.
-A new container is created, ran, and exited.
-
-```
-$ docker ps -as
-
-CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS                      PORTS               NAMES               SIZE
-42bbb5394617        hello-world         "/hello"            16 minutes ago      Exited (0) 16 minutes ago                       blissful_knuth      0 B (virtual 1.84 kB)
-f6239f10a6ad        hello-world         "/hello"            21 minutes ago      Exited (0) 21 minutes ago                       lucid_snyder        0 B (virtual 1.84 kB)
-```
-
-## Remove Docker container
-{id: docker-remove-container}
-
-```
-$ docker rm 42bbb5394617
-```
-
-Using the "CONTAINER ID" from the list given by ps.
 
 ## Docker empty Ubuntu
 {id: docker-empty-ubuntu}
@@ -319,6 +265,15 @@ We need to tell Docker that this is an interactive process
 ```
 docker run -it mydocker
 ```
+
+## Docker history
+{id: docker-history}
+
+```
+docker history IMAGE
+```
+
+to see the layers
 
 
 
@@ -570,5 +525,120 @@ docker run --rm -it exp1
 {id: docker-toolbox}
 
 Legacy system
+
+## Simple docker commands
+{id: simple-docker-commands}
+
+Empty state, no images:
+
+no runnin containers
+
+```
+$ docker ps
+
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
+```
+
+no local containers at all (including not running, and showing the size)
+
+```
+$ docker ps -as
+
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
+```
+
+not even images
+
+```
+$ docker images
+
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+```
+
+Commands
+
+```
+docker ps
+docker ps -as    list all the containers available locally  (incl the size)
+docker images    list images
+```
+
+
+## Docker: Hello World
+{id: docker-hello-world}
+
+```
+$ docker run hello-world
+
+
+Unable to find image 'hello-world:latest' locally
+latest: Pulling from library/hello-world
+78445dd45222: Pull complete
+Digest: sha256:c5515758d4c5e1e838e9cd307f6c6a0d620b5e07e6f927b07d05f6d12a1ac8d7
+Status: Downloaded newer image for hello-world:latest
+
+Hello from Docker!
+This message shows that your installation appears to be working correctly.
+
+To generate this message, Docker took the following steps:
+ 1. The Docker client contacted the Docker daemon.
+ 2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
+ 3. The Docker daemon created a new container from that image which runs the
+    executable that produces the output you are currently reading.
+ 4. The Docker daemon streamed that output to the Docker client, which sent it
+    to your terminal.
+
+To try something more ambitious, you can run an Ubuntu container with:
+ $ docker run -it ubuntu bash
+
+Share images, automate workflows, and more with a free Docker ID:
+ https://cloud.docker.com/
+
+For more examples and ideas, visit:
+ https://docs.docker.com/engine/userguide/
+```
+
+## After Hello World
+{id: docker-after-hello-world}
+
+no running containers, but there is one on the disk:
+
+```
+$ docker ps -as
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS                     PORTS               NAMES               SIZE
+f6239f10a6ad        hello-world         "/hello"            8 seconds ago       Exited (0) 7 seconds ago                       lucid_snyder        0 B (virtual 1.84 kB)
+```
+
+There is also an image
+
+```
+$ docker images
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+hello-world         latest              48b5124b2768        6 weeks ago         1.84 kB
+```
+
+
+## Hello World again
+{id: docker-hello-world-again}
+
+This time it will be faster as the images is already on the disk.
+A new container is created, ran, and exited.
+
+```
+$ docker ps -as
+
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS                      PORTS               NAMES               SIZE
+42bbb5394617        hello-world         "/hello"            16 minutes ago      Exited (0) 16 minutes ago                       blissful_knuth      0 B (virtual 1.84 kB)
+f6239f10a6ad        hello-world         "/hello"            21 minutes ago      Exited (0) 21 minutes ago                       lucid_snyder        0 B (virtual 1.84 kB)
+```
+
+## Remove Docker container
+{id: docker-remove-container}
+
+```
+$ docker rm 42bbb5394617
+```
+
+Using the "CONTAINER ID" from the list given by ps.
 
 
