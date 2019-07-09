@@ -316,10 +316,21 @@ docker history IMAGE
 to see the layers
 
 ```
+$ docker history ubuntu:19.04
+IMAGE               CREATED             CREATED BY                                      SIZE
+86f1f717b6d8        2 weeks ago         /bin/sh -c #(nop)  CMD ["/bin/bash"]            0B
+<missing>           2 weeks ago         /bin/sh -c mkdir -p /run/systemd && echo 'do…   7B
+<missing>           2 weeks ago         /bin/sh -c set -xe   && echo '#!/bin/sh' > /…   933B
+<missing>           2 weeks ago         /bin/sh -c [ -z "$(apt-get indextargets)" ]     985kB
+<missing>           2 weeks ago         /bin/sh -c #(nop) ADD file:d3be43e0fdf0de92d…   69MB
+```
+
+
+```
 docker history mydocker
 
 
-IMAGE               CREATED             CREATED BY                                      SIZE                COMMENT
+IMAGE               CREATED             CREATED BY                                      SIZE
 74ffc1660bdd        5 seconds ago       /bin/sh -c apt-get install -y python3           36.8MB
 109badc0b51e        14 seconds ago      /bin/sh -c apt-get upgrade -y                   916kB
 d7a23dda45d8        18 seconds ago      /bin/sh -c apt-get update                       23.8MB
@@ -340,7 +351,7 @@ d7a23dda45d8        18 seconds ago      /bin/sh -c apt-get update               
 $ docker build -t mydocker2 .
 $ docker history mydocker2
 
-IMAGE               CREATED             CREATED BY                                      SIZE                COMMENT
+IMAGE               CREATED             CREATED BY                                      SIZE
 6158659b63f3        57 seconds ago      /bin/sh -c apt-get update &&     apt-get upg…   60.7MB
 86f1f717b6d8        2 weeks ago         /bin/sh -c #(nop)  CMD ["/bin/bash"]            0B
 <missing>           2 weeks ago         /bin/sh -c mkdir -p /run/systemd && echo 'do…   7B
@@ -349,47 +360,70 @@ IMAGE               CREATED             CREATED BY                              
 <missing>           2 weeks ago         /bin/sh -c #(nop) ADD file:d3be43e0fdf0de92d…   69MB
 ```
 
+## Python CLI in Docker
+{id: python-cli-in-docker}
+
+![](examples/python-3/curl.py)
+
+![](examples/python-3/Dockerfile)
+
+
+```
+$ docker build -t mydocker .
+```
 
 ## Docker: Mounting host directory
 {id: docker-mounting-host-directory}
 
 ```
-$ docker run -v /Users/gabor/work/mydocker:/opt/  mydocker ls -l /opt/
+$ docker run -it --rm -v /home/gabor/work/slides/docker/examples/python-3:/opt/  mydocker
+
+# cd /opt
+# ls -l
 ```
 
-The `-v /Users/gabor/work/mydocker:/opt/` will mount the `/Users/gabor/work/mydocker` directory of the home operating system to the
-`/opt/` directory of the Docker image and run the container.
-The `ls -l /opt/` will list the content of this directory.
-
-
-
-## Developing Perl code in Docker
-{id: developing-perl-code-in-docker}
+The `-v HOST:CONTAINER` will mount the `HOST` directory of the home operating system to the `CONTAINER` directory in the Docker container.
 
 ```
-$ docker run -v /Users/gabor/work/mydocker:/opt/  mydocker perl /opt/hw.pl
+# ./curl.py -I https://code-maven.com/slides
 ```
 
-* Mount a directory of the host OS to a directory in the Docker image.
-* Run the code
+* You can edit the file on your host system (with your IDE) and run it on the command line of the Docker container.
 
-## Install Perl Modules
-{id: install-perl-modules}
 
-Install a perl module using *apt-get*
-
-![](examples/perl-mechanize/Dockerfile)
-
-![](examples/perl-mechanize/get.pl)
+* A better way to mount the current working directory, at least on Linux and OSX
 
 ```
-$ docker run -v /Users/gabor/work/mydocker:/opt/  mydocker perl /opt/get.pl
-Usage: /opt/get.pl URL
+docker run -it --rm -v $(pwd):/opt/  mydocker
 ```
 
+
+## Distribute command-line script
+{id: distribute-command-line-script}
+
+
+![](examples/python-4/Dockerfile)
+
 ```
-docker run -v /Users/gabor/work/mydocker:/opt/  mydocker perl /opt/get.pl http://perlmaven.com/
+$ docker build -t mydocker .
+
+$ docker run --rm   mydocker /opt/curl.py https://code-maven.com/slides
 ```
+
+## Distribute command-line script and include command
+{id: distribute-command-line-script-and-include-command}
+
+![](examples/python-5/Dockerfile)
+
+
+```
+$ docker build -t mydocker .
+
+
+$ docker run --rm   mydocker https://code-maven.com/slides
+```
+
+
 
 ## Dockerfile commands
 {id: dockerfile-commands}
@@ -744,6 +778,34 @@ ERRO[0001] error getting events from daemon: net/http: request canceled
 
 ## Docker Perl Dancer hello world app
 {id: docker-perl-dancer-hello-world-app}
+
+## Developing Perl code in Docker
+{id: developing-perl-code-in-docker}
+
+```
+$ docker run -v /Users/gabor/work/mydocker:/opt/  mydocker perl /opt/hw.pl
+```
+
+* Mount a directory of the host OS to a directory in the Docker image.
+* Run the code
+
+## Install Perl Modules
+{id: install-perl-modules}
+
+Install a perl module using *apt-get*
+
+![](examples/perl-mechanize/Dockerfile)
+
+![](examples/perl-mechanize/get.pl)
+
+```
+$ docker run -v /Users/gabor/work/mydocker:/opt/  mydocker perl /opt/get.pl
+Usage: /opt/get.pl URL
+```
+
+```
+docker run -v /Users/gabor/work/mydocker:/opt/  mydocker perl /opt/get.pl http://perlmaven.com/
+```
 
 
 
