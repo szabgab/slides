@@ -1,2 +1,2 @@
-FROM ubuntu:16.10
-CMD perl -E 'say "hello world"'
+FROM ubuntu:19.04
+CMD perl -E 'say "Hello from Perl"'

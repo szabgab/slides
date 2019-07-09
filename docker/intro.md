@@ -11,6 +11,16 @@
 
 * De-facto standard for containerization
 
+## Docker container vs. image
+{id: docker-container-image}
+
+container = runtime image
+
+
+* It is like instance = runtime class
+* Or Virtual Machine = ISO file.
+
+
 ## Install Docker
 {id: install-docker}
 
@@ -58,7 +68,7 @@ docker help rmi
 ## Docker: host - daemon - client
 {id: docker-host-daemon-client}
 
-* Docker host (on Windows and OSX it is a Virtual Machine, On linux it is native).
+* Docker host (on Windows and OSX it is a Virtual Machine, On Linux it is native).
 * Docker daemon runs in the Docker host.
 * Docker client runs on the host OS (Linux, Windows OSX).
 
@@ -71,14 +81,6 @@ To launch docker daemon from the command line:
 * On OSX:    `open -a Docker` ot Launch the Docker daemon via the Application icon.
 * Linux:     `sudo service docker status`
 * Windows:    Run the Docker Desktop
-
-## Docker container vs. image
-{id: docker-container-image}
-
-container = runtime image
-
-(think about instance = runtime class)
-
 
 ## Docker Registry
 {id: docker-registry}
@@ -107,14 +109,20 @@ docker run busybox echo something else
 
 ```
 docker run -it busybox
+
+# pwd
+# ls -l
+# uptime
+# echo hello world
 ```
+
 
 ## Docker List containers
 {id: list-containers}
 
 ```
-docker ps
-docker ps -a
+docker ps        # running containers
+docker ps -a     # all the containers
 ```
 
 ## Remove containers
@@ -124,11 +132,23 @@ docker ps -a
 docker rm CONTAINERID
 ```
 
+## Remove all Docker containers
+{id: remove-all-docker-containers}
+
+Remove all the docker containers:
+
+```
+docker ps -aq
+docker rm $(docker ps -aq)
+```
+
 ## Run and remove container
 {id: run-and-remove-container}
 
 ```
 docker run --rm busybox echo hello world
+
+docker ps -a      # the container was not left around
 ```
 
 ## List and remove images
@@ -148,6 +168,15 @@ docker run --name my_name busybox sleep 100
 docker inspect CONTAINER_ID
 docker logs CONTAINER_ID
 ```
+
+## Exercise 1
+{id: exercise-1}
+
+* Install Docker.
+* Run busybox.
+* Basically execute all the above commands.
+* Check what other interesting command you can find in docker.
+
 
 
 ## Docker Hub search for images
@@ -173,13 +202,26 @@ docker run --rm ubuntu:19.04 echo hello
 
 ```
 docker run -it --rm ubuntu:19.04
+
 # htop
 # apt-get update
 # apt-get install htop
 # htop
+# which perl
+# which python
+# which python3
 ```
 
+That's really nice, but once we close the container we lose our changes.
+When we run again we need to start from scratch.
 
+## Create your own Docker image
+{id: create-your-own-docker-image}
+
+There are two ways to create a Docker image on your computer:
+
+* Run a container, install stuff, save it.
+* Create Dockerfile, run docker build.
 
 ## Docker empty Ubuntu
 {id: docker-empty-ubuntu}
@@ -188,37 +230,8 @@ docker run -it --rm ubuntu:19.04
 
 ```
 $ docker build -t mydocker .
-$ docker run mydocker
+$ docker run -it --rm mydocker
 ```
-
-## Passing command to the Docker Container
-{id: passing-commands-to-docker-container}
-
-```
-$ docker run mydocker ls -l /
-
-$ docker run mydocker perl -v
-
-This is perl 5, version 22, subversion 2 (v5.22.2) built for x86_64-linux-gnu-thread-multi
-....
-
-$ docker run mydocker python -V
-container_linux.go:247: starting container process caused "exec: \"python\": executable file not found in $PATH"
-docker: Error response from daemon: oci runtime error: container_linux.go:247: starting container process caused "exec: \"python\": executable file not found in $PATH".
-ERRO[0001] error getting events from daemon: net/http: request canceled
-```
-
-## Docker: Mounting host direcroty
-{id: docker-mounting-host-directory}
-
-```
-$ docker run -v /Users/gabor/work/mydocker:/opt/  mydocker ls -l /opt/
-```
-
-The *-v /Users/gabor/work/mydocker:/opt/* will mount the */Users/gabor/work/mydocker* directory of the home operating system to the
-*/opt/* directory of the Docker image and run the container.
-The *ls -l /opt/* will list the content of this directory.
-
 
 ## Docker Ubuntu Hello World
 {id: docker-ubuntu-hello-world}
@@ -227,15 +240,20 @@ The *ls -l /opt/* will list the content of this directory.
 
 ```
 $ docker build -t mydocker .
-$ docker run mydocker
+$ docker run -it --rm mydocker
 hello world
 ```
-
 
 ## Docker Perl Hello World
 {id: docker-perl-hello-world}
 
 ![](examples/hello-world-perl/Dockerfile)
+
+```
+$ docker build -t mydocker .
+$ docker run -it --rm mydocker
+Hello from Perl
+```
 
 ## Docker Perl Hello World in script
 {id: docker-perl-script-hello-world}
@@ -244,6 +262,11 @@ hello world
 
 ![](examples/hello-world-perl-script/hello_world.pl)
 
+```
+$ docker build -t mydocker .
+$ docker run -it --rm mydocker
+Hello World from Perl script
+```
 
 ## Docker: Perl with I/O
 {id: docker-perl-with-io}
@@ -253,7 +276,8 @@ hello world
 ![](examples/perl-io/greetings.pl)
 
 ```
-$ docker run mydocker
+$ docker build -t mydocker .
+$ docker run --rm mydocker
 
 Use of uninitialized value $name in scalar chomp at /opt/greetings.pl line 7.
 Use of uninitialized value $name in concatenation (.) or string at /opt/greetings.pl line 8.
@@ -263,7 +287,23 @@ What is your name? Hello , how are you today?
 We need to tell Docker that this is an interactive process
 
 ```
-docker run -it mydocker
+docker run -it --rm mydocker
+
+What is your name? Foo
+Hello Foo, how are you today?
+
+```
+
+## Installing Python in Docker
+{id: installing-python-in-docker}
+
+![](examples/python-1/Dockerfile)
+
+```
+$ docker build -t mydocker .
+
+$ docker run --rm -it mydocker
+# which python3
 ```
 
 ## Docker history
@@ -274,6 +314,52 @@ docker history IMAGE
 ```
 
 to see the layers
+
+```
+docker history mydocker
+
+
+IMAGE               CREATED             CREATED BY                                      SIZE                COMMENT
+74ffc1660bdd        5 seconds ago       /bin/sh -c apt-get install -y python3           36.8MB
+109badc0b51e        14 seconds ago      /bin/sh -c apt-get upgrade -y                   916kB
+d7a23dda45d8        18 seconds ago      /bin/sh -c apt-get update                       23.8MB
+86f1f717b6d8        2 weeks ago         /bin/sh -c #(nop)  CMD ["/bin/bash"]            0B
+<missing>           2 weeks ago         /bin/sh -c mkdir -p /run/systemd && echo 'do…   7B
+<missing>           2 weeks ago         /bin/sh -c set -xe   && echo '#!/bin/sh' > /…   933B
+<missing>           2 weeks ago         /bin/sh -c [ -z "$(apt-get indextargets)" ]     985kB
+<missing>           2 weeks ago         /bin/sh -c #(nop) ADD file:d3be43e0fdf0de92d…   69MB
+```
+
+
+## Installing Python in Docker - one layer
+{id: installing-python-in-docker-one-layer}
+
+![](examples/python-2/Dockerfile)
+
+```
+$ docker build -t mydocker2 .
+$ docker history mydocker2
+
+IMAGE               CREATED             CREATED BY                                      SIZE                COMMENT
+6158659b63f3        57 seconds ago      /bin/sh -c apt-get update &&     apt-get upg…   60.7MB
+86f1f717b6d8        2 weeks ago         /bin/sh -c #(nop)  CMD ["/bin/bash"]            0B
+<missing>           2 weeks ago         /bin/sh -c mkdir -p /run/systemd && echo 'do…   7B
+<missing>           2 weeks ago         /bin/sh -c set -xe   && echo '#!/bin/sh' > /…   933B
+<missing>           2 weeks ago         /bin/sh -c [ -z "$(apt-get indextargets)" ]     985kB
+<missing>           2 weeks ago         /bin/sh -c #(nop) ADD file:d3be43e0fdf0de92d…   69MB
+```
+
+
+## Docker: Mounting host directory
+{id: docker-mounting-host-directory}
+
+```
+$ docker run -v /Users/gabor/work/mydocker:/opt/  mydocker ls -l /opt/
+```
+
+The `-v /Users/gabor/work/mydocker:/opt/` will mount the `/Users/gabor/work/mydocker` directory of the home operating system to the
+`/opt/` directory of the Docker image and run the container.
+The `ls -l /opt/` will list the content of this directory.
 
 
 
@@ -305,19 +391,6 @@ Usage: /opt/get.pl URL
 docker run -v /Users/gabor/work/mydocker:/opt/  mydocker perl /opt/get.pl http://perlmaven.com/
 ```
 
-## Docker Perl Dancer hello world app
-{id: docker-perl-dancer-hello-world-app}
-
-## Remove all Docker containers
-{id: remove-all-docker-containers}
-
-Remove all the docker containers:
-
-```
-docker rm $(docker ps -aq)
-```
-
-
 ## Dockerfile commands
 {id: dockerfile-commands}
 
@@ -332,6 +405,9 @@ docker rm $(docker ps -aq)
 
 ## Docker FROM
 {id: docker-from}
+
+* Declare the base-image.
+* This is how we start all the Dockerfiles.
 
 ## Docker COPY
 {id: docker-copy}
@@ -399,6 +475,14 @@ docker kill ID    if it does not want to stop
 
 * [Docker Tutorial for Beginners](https://www.youtube.com/watch?v=VlSW-tztsvM)
 * [Docker Tutorial For Beginners](https://www.youtube.com/watch?v=sRIxHHZFwBA)
+
+
+## QA
+{id: qa}
+
+* Gabor Szabo https://szabgab.com/
+* https://code-maven.com/slides
+
 
 ## Docker create image by save
 {id: docker-create-image-by-save}
@@ -491,7 +575,7 @@ hello-world         latest              48b5124b2768        6 weeks ago         
 docker/whalesay     latest              6b362a9f73eb        21 months ago       247 MB
 ```
 
-The command *docker ps -a* shows nothing new.
+The command `docker ps -a` shows nothing new.
 
 ## Run Docker whale
 {id: run-docker-whale}
@@ -640,5 +724,26 @@ $ docker rm 42bbb5394617
 ```
 
 Using the "CONTAINER ID" from the list given by ps.
+
+## Passing command to the Docker Container
+{id: passing-commands-to-docker-container}
+
+```
+$ docker run mydocker ls -l /
+
+$ docker run mydocker perl -v
+
+This is perl 5, version 22, subversion 2 (v5.22.2) built for x86_64-linux-gnu-thread-multi
+....
+
+$ docker run mydocker python -V
+container_linux.go:247: starting container process caused "exec: \"python\": executable file not found in $PATH"
+docker: Error response from daemon: oci runtime error: container_linux.go:247: starting container process caused "exec: \"python\": executable file not found in $PATH".
+ERRO[0001] error getting events from daemon: net/http: request canceled
+```
+
+## Docker Perl Dancer hello world app
+{id: docker-perl-dancer-hello-world-app}
+
 
 
