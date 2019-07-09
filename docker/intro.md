@@ -443,6 +443,24 @@ $ docker run -it --rm -p:5001:5000 -v $(pwd):/opt/  mydocker
 Access via [http://localhost:5001/](http://localhost:5001/)
 
 
+## Docker compose
+{id: docker-compose}
+
+```
+pip install docker-compose
+```
+
+![](examples/flask-redis/docker-compose.yml)
+![](examples/flask-redis/Dockerfile)
+![](examples/flask-redis/app.py)
+![](examples/flask-redis/templates/red.html)
+![](examples/flask-redis/requirements.txt)
+
+```
+docker-compose up
+```
+
+
 ## Dockerfile commands
 {id: dockerfile-commands}
 

@@ -1,0 +1,13 @@
+version: '3.7'
+services:
+  web:
+    build: .
+    ports:
+    - "5001:5000"
+    volumes:
+    - .:/opt
+    links:
+    - redis
+  redis:
+    image: redis:5.0.5
+

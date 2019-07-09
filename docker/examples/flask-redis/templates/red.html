@@ -1,0 +1,20 @@
+<form action="/save" method="POST">
+<input name="field">
+<input name="value">
+<input type="submit" value="Save">
+</form>
+
+<form action="/get" method="POST">
+<input name="field">
+<input type="submit" value="Get">
+</form>
+
+{% if saved %}
+<b>saved</b>
+{{ value }}
+{% endif %}
+
+{% if field %}
+  The value of {{ field }} is {{ text }}
+{% endif %}
+
