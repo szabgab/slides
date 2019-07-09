@@ -423,6 +423,24 @@ $ docker build -t mydocker .
 $ docker run --rm   mydocker https://code-maven.com/slides
 ```
 
+## Flask development
+{id: flask-development}
+
+![](examples/flask-development/Dockerfile)
+
+![](examples/flask-development/app.py)
+
+![](examples/flask-development/templates/echo.html)
+
+![](examples/flask-development/requirements.txt)
+
+
+```
+$ docker run -it --rm -p:5001:5000 -v $(pwd):/opt/  mydocker
+
+```
+
+Access via [http://localhost:5001/](http://localhost:5001/)
 
 
 ## Dockerfile commands

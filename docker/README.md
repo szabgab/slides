@@ -3,6 +3,11 @@
 * Show some cases with Dockerfile
 
 
+- flask, port mapping
+- 2 dockers, interaction between them (e.g. mongodb)
+- upload to server for production
+
+
 - accepting command line paramters
 - access to directories on the host OS
 - running a process in the docker
