@@ -10,4 +10,5 @@ services:
     - redis
   redis:
     image: redis:5.0.5
+    container_name: my-redis
 
