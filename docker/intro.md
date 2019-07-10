@@ -463,6 +463,19 @@ pip install docker-compose
 docker-compose up
 ```
 
+## Exercies 2
+{id: exercise-2}
+
+Pick your favorite distribution (Ubuntu, Debian, CentOS, Fedora, etc.) and use it as the base of your application.
+
+* Compile the most recent release of Python from source code (you will need to install some prerequisites).
+* Add a Python based application using MongoDB or PostgreSQL or MySQL - whatever you like.
+* Prepare it for distribution.
+
+* Install NodeJS, express, create a small web app (hello world would suffice) and prepare it for distribution.
+
+* Create a system of two Flask (or Express) applications that provide APIs and a third command-line application that accesses those APIs.
+
 
 ## Dockerfile commands
 {id: dockerfile-commands}
@@ -846,5 +859,10 @@ Usage: /opt/get.pl URL
 docker run -v /Users/gabor/work/mydocker:/opt/  mydocker perl /opt/get.pl http://perlmaven.com/
 ```
 
+## Links
+{id: links}
+
+* [flask uwsgi nginx](https://medium.com/@gabimelo/developing-a-flask-api-in-a-docker-container-with-uwsgi-and-nginx-e089e43ed90e)
+* [deploy on Digital Ocean](https://www.digitalocean.com/community/tutorials/how-to-deploy-a-go-web-application-with-docker-and-nginx-on-ubuntu-18-04)
 
 
