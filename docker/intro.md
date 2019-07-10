@@ -463,13 +463,6 @@ pip install docker-compose
 docker-compose up
 ```
 
-## Docker: Flask + uwsgi
-{id: flask-uwsgi}
-
-![](examples/flask-uwsgi/Dockerfile)
-
-![](examples/flask-uwsgi/uwsgi.ini)
-
 ## Exercies 2
 {id: exercise-2}
 
@@ -483,6 +476,12 @@ Pick your favorite distribution (Ubuntu, Debian, CentOS, Fedora, etc.) and use i
 
 * Create a system of two Flask (or Express) applications that provide APIs and a third command-line application that accesses those APIs.
 
+## Docker: Flask + uwsgi
+{id: flask-uwsgi}
+
+![](examples/flask-uwsgi/Dockerfile)
+
+![](examples/flask-uwsgi/uwsgi.ini)
 
 ## Dockerfile commands
 {id: dockerfile-commands}
@@ -871,5 +870,16 @@ docker run -v /Users/gabor/work/mydocker:/opt/  mydocker perl /opt/get.pl http:/
 
 * [flask uwsgi nginx](https://medium.com/@gabimelo/developing-a-flask-api-in-a-docker-container-with-uwsgi-and-nginx-e089e43ed90e)
 * [deploy on Digital Ocean](https://www.digitalocean.com/community/tutorials/how-to-deploy-a-go-web-application-with-docker-and-nginx-on-ubuntu-18-04)
+
+## Docker: Flask + uwsgi + nginx
+{id: flask-uwsgi-nginx}
+
+Using [https://hub.docker.com/r/tiangolo/uwsgi-nginx-flask/](https://hub.docker.com/r/tiangolo/uwsgi-nginx-flask/)
+
+```
+docker build -t myapp .
+docker run -it --rm -p5001:80 myapp
+```
+
 
 
