@@ -223,7 +223,7 @@ There are two ways to create a Docker image on your computer:
 * Run a container, install stuff, save it.
 * Create Dockerfile, run docker build.
 
-## Docker empty Ubuntu
+## Docker: Empty Ubuntu
 {id: docker-empty-ubuntu}
 
 ![](examples/empty/Dockerfile)
@@ -233,7 +233,7 @@ $ docker build -t mydocker .
 $ docker run -it --rm mydocker
 ```
 
-## Docker Ubuntu Hello World
+## Docker: Ubuntu Hello World
 {id: docker-ubuntu-hello-world}
 
 ![](examples/hello-world/Dockerfile)
@@ -244,7 +244,7 @@ $ docker run -it --rm mydocker
 hello world
 ```
 
-## Docker Perl Hello World
+## Docker: Perl Hello World
 {id: docker-perl-hello-world}
 
 ![](examples/hello-world-perl/Dockerfile)
@@ -255,7 +255,7 @@ $ docker run -it --rm mydocker
 Hello from Perl
 ```
 
-## Docker Perl Hello World in script
+## Docker: Perl Hello World in script
 {id: docker-perl-script-hello-world}
 
 ![](examples/hello-world-perl-script/Dockerfile)
@@ -462,6 +462,13 @@ pip install docker-compose
 ```
 docker-compose up
 ```
+
+## Docker: Flask + uwsgi
+{id: flask-uwsgi}
+
+![](examples/flask-uwsgi/Dockerfile)
+
+![](examples/flask-uwsgi/uwsgi.ini)
 
 ## Exercies 2
 {id: exercise-2}
