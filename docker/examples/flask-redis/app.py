@@ -12,7 +12,8 @@ def hello():
 def save():
     field = request.form['field']
     value = request.form['value']
-    r.set(field, value)
+    ret = r.set(field, value)
+    app.logger.debug(ret)
     new_value = r.get(field)
     return render_template('red.html', saved=1, value=new_value)
 
@@ -20,4 +21,5 @@ def save():
 def get():
     field = request.form['field']
     value = r.get(field)
-    return render_template('red.html', field=field, value=value)
+    str_value = value.decode('utf-8')
+    return render_template('red.html', field=field, value=str_value)

@@ -423,10 +423,8 @@ $ docker build -t mydocker .
 $ docker run --rm   mydocker https://code-maven.com/slides
 ```
 
-## Flask development
-{id: flask-development}
-
-![](examples/flask-development/Dockerfile)
+## Flask application
+{id: flask-application}
 
 ![](examples/flask-development/app.py)
 
@@ -434,6 +432,11 @@ $ docker run --rm   mydocker https://code-maven.com/slides
 
 ![](examples/flask-development/requirements.txt)
 
+
+## Flask development
+{id: flask-development}
+
+![](examples/flask-development/Dockerfile)
 
 ```
 $ docker run -it --rm -p:5001:5000 -v $(pwd):/opt/  mydocker
