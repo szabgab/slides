@@ -3,7 +3,11 @@
 * Show some cases with Dockerfile
 
 
+- see the log files (/var/log/...) while the container is running, after the container has ended.
+- In a production system, how do we collect (error) reports from containers?
 - upload to server for production
+
+
 
 Original hello-world is 1.84 kB
 The one based onUbuntu is 121Mb

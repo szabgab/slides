@@ -10,17 +10,18 @@
 * DevOps
 * [Code Maven Workshops](https://workshops.code-maven.com/)
 * [Code Maven Workshops on Meetup](https://www.meetup.com/Code-Mavens/)
+* [Training courses](https://hostlocal.com/)
 
 
 ## What is Docker?
 {id: what-is-docker}
 
-* A light-weight Virtual Server
+* A light-weight Virtual Server.
 
 * Makes it easy to have the exact same setup for development, testing, productions.
 * Makes it easy for people to set up their development environment.
 
-* De-facto standard for containerization
+* De-facto standard for containerization.
 
 ## Docker container vs. image
 {id: docker-container-image}
@@ -29,7 +30,7 @@ container = runtime image
 
 
 * It is like instance = runtime class
-* Or Virtual Machine = ISO file.
+* Or Virtual Machine = the running instance of an ISO file.
 
 
 ## Install Docker
@@ -39,11 +40,11 @@ Install [Docker](https://www.docker.com/)
 
 * Debian/Ubuntu: `apt-get install docker.io`
 * CentOS: `yum install docker`
-* MS Windows: Download [Docker for Windows](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
+* MS Windows: Download [Docker for MS Windows](https://docs.docker.com/docker-for-windows/install/)
+* Mac OSX: Download [Docker for Mac OSX](https://docs.docker.com/docker-for-mac/install/)
 
 ## Docker version
 {id: docker-version}
-
 
 Show the version of your Docker installation.
 
@@ -90,18 +91,19 @@ docker help rmi
 To launch docker daemon from the command line:
 
 * On OSX:    `open -a Docker` ot Launch the Docker daemon via the Application icon.
-* Linux:     `sudo service docker status`
-* Windows:    Run the Docker Desktop
+* Linux:     `sudo service docker status`.
+* Windows:    Run the Docker Desktop.
 
 ## Docker Registry
 {id: docker-registry}
 
 * Registry where we store our images.
 * Inside a registry there are repositories by user.
-* [DockerHub](https://hub.docker.com/)
-* Google Cloud [Container registry](https://console.cloud.google.com/gcr/)
-* Amazon [AWS Elastic Container Registry](https://aws.amazon.com/ecr/)
+* [DockerHub](https://hub.docker.com/). Free hosting of public images. Paid hosting of private images.
+* Google Cloud [Container registry](https://console.cloud.google.com/gcr/).
+* Amazon [AWS Elastic Container Registry](https://aws.amazon.com/ecr/).
 * ...
+* [Deploy your own registry](https://docs.docker.com/registry/deploying/).
 
 ## Docker busybox
 {id: docker-busybox}
@@ -225,6 +227,20 @@ docker run -it --rm ubuntu:19.04
 
 That's really nice, but once we close the container we lose our changes.
 When we run again we need to start from scratch.
+
+## Rerun stopped instance
+{id: rerun-stopped-instance}
+
+```
+docker container start -i CONTAINER_NAME
+```
+
+## Copy file from stopped container
+{id: copy-file-from-stopped-container}
+
+```
+docker container cp CONTAINER_NAME:FILENAME .
+```
 
 ## Create your own Docker image
 {id: create-your-own-docker-image}
