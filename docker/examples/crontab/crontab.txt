@@ -1,0 +1,1 @@
+* * * * * date >> /opt/dates.txt

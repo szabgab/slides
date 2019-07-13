@@ -490,6 +490,24 @@ pip install docker-compose
 docker-compose up
 ```
 
+## Docker with crontab
+{id: docker-with-crontab}
+
+
+![](examples/crontab/Dockerfile)
+
+![](examples/crontab/crontab.txt)
+
+```
+docker build -t mydocker .
+docker run -d --rm --name chronos mydocker
+
+docker container cp chronos:/opt/dates.txt .
+
+docker stop chronos
+```
+
+
 ## Exercies 2
 {id: exercise-2}
 
