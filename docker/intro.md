@@ -197,6 +197,8 @@ docker logs CONTAINER_ID
 
 * [Docker hub](https://hub.docker.com/)
 
+* [Source of official images](https://github.com/docker-library/official-images)
+
 ## Download image
 {id: download-image}
 
