@@ -475,11 +475,21 @@ $ docker run --rm   mydocker https://code-maven.com/slides
 ![](examples/flask-development/Dockerfile)
 
 ```
-$ docker run -it --rm -p:5001:5000 -v $(pwd):/opt/  mydocker
-
+$ docker build -t mydocker .
+$ docker run -it --name dev --rm -p:5001:5000 -v $(pwd):/opt/  mydocker
 ```
 
 Access via [http://localhost:5001/](http://localhost:5001/)
+
+The -it is needed so we can see the log on the command line and we can easily stop the development container.
+
+
+## Flask with Redis
+{id: flask-with-redis}
+
+![](examples/flask-redis/app.py)
+![](examples/flask-redis/templates/red.html)
+![](examples/flask-redis/requirements.txt)
 
 
 ## Docker compose
@@ -491,9 +501,6 @@ pip install docker-compose
 
 ![](examples/flask-redis/docker-compose.yml)
 ![](examples/flask-redis/Dockerfile)
-![](examples/flask-redis/app.py)
-![](examples/flask-redis/templates/red.html)
-![](examples/flask-redis/requirements.txt)
 
 ```
 docker-compose up
@@ -515,7 +522,6 @@ docker container cp chronos:/opt/dates.txt .
 
 docker stop chronos
 ```
-
 
 ## Exercies 2
 {id: exercise-2}
