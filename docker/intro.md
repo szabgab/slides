@@ -172,16 +172,6 @@ docker images
 docker rmi busybox
 ```
 
-
-```
-docker run -d --rm busybox sleep 30
-
-docker run --name my_name busybox sleep 100
-
-docker inspect CONTAINER_ID
-docker logs CONTAINER_ID
-```
-
 ## Exercise 1
 {id: exercise-1}
 
@@ -216,7 +206,7 @@ docker run --rm ubuntu:19.04 echo hello
 ```
 
 ```
-docker run -it --rm ubuntu:19.04
+docker run -it --name ubu ubuntu:19.04
 
 # htop
 # apt-get update
@@ -227,21 +217,26 @@ docker run -it --rm ubuntu:19.04
 # which python3
 ```
 
-That's really nice, but once we close the container we lose our changes.
-When we run again we need to start from scratch.
-
 ## Rerun stopped instance
 {id: rerun-stopped-instance}
 
 ```
-docker container start -i CONTAINER_NAME
+docker container start -i ubu
+```
+
+## Create file in container
+{id: create-file-in-container}
+
+```
+echo hello > welcome.txt
 ```
 
 ## Copy file from stopped container
 {id: copy-file-from-stopped-container}
 
 ```
-docker container cp CONTAINER_NAME:FILENAME .
+docker container cp CONTAINER_NAME:FILE .
+docker container cp ubu:welcome.txt .
 ```
 
 ## Create your own Docker image
@@ -249,8 +244,19 @@ docker container cp CONTAINER_NAME:FILENAME .
 
 There are two ways to create a Docker image on your computer:
 
-* Run a container, install stuff, save it.
+* Run a container, install stuff, stop it, commit it.
 * Create Dockerfile, run docker build.
+
+## Create image from container
+{id: create-image-from-container}
+
+```
+docker container commit CONTAINER IMAGE
+docker container commit ubu mybuntu
+```
+
+
+docker container commit ubu
 
 ## Docker: Empty Ubuntu
 {id: docker-empty-ubuntu}
