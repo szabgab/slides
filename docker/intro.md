@@ -185,13 +185,12 @@ docker rmi busybox
 ## Docker Hub search for images
 {id: docker-hub-images}
 
-* [Docker hub](https://hub.docker.com/)
+* Find ready-made images on the [Docker hub](https://hub.docker.com/)
 
-* [Source of official images](https://github.com/docker-library/official-images)
+* View the [source of the official images](https://github.com/docker-library/official-images)
 
 ## Download image
 {id: download-image}
-
 
 ```
 docker pull ubuntu:19.04
@@ -215,6 +214,8 @@ docker run -it --name ubu ubuntu:19.04
 # which perl
 # which python
 # which python3
+
+# exit
 ```
 
 ## Rerun stopped instance
@@ -222,14 +223,18 @@ docker run -it --name ubu ubuntu:19.04
 
 ```
 docker container start -i ubu
+docker container start -i CONTAINER
 ```
 
 ## Create file in container
 {id: create-file-in-container}
 
 ```
-echo hello > welcome.txt
+# echo hello > welcome.txt
+# exit
 ```
+
+Create a file inside the container and then leave the container. It is stopped now again.
 
 ## Copy file from stopped container
 {id: copy-file-from-stopped-container}
@@ -238,6 +243,8 @@ echo hello > welcome.txt
 docker container cp CONTAINER_NAME:FILE .
 docker container cp ubu:welcome.txt .
 ```
+
+On your OS you can copy files from the container to the external filesystem.
 
 ## Create your own Docker image
 {id: create-your-own-docker-image}
@@ -255,8 +262,6 @@ docker container commit CONTAINER IMAGE
 docker container commit ubu mybuntu
 ```
 
-
-docker container commit ubu
 
 ## Docker: Empty Ubuntu
 {id: docker-empty-ubuntu}
@@ -312,11 +317,6 @@ Hello World from Perl script
 
 ```
 $ docker build -t mydocker .
-$ docker run --rm mydocker
-
-Use of uninitialized value $name in scalar chomp at /opt/greetings.pl line 7.
-Use of uninitialized value $name in concatenation (.) or string at /opt/greetings.pl line 8.
-What is your name? Hello , how are you today?
 ```
 
 We need to tell Docker that this is an interactive process
@@ -326,7 +326,6 @@ docker run -it --rm mydocker
 
 What is your name? Foo
 Hello Foo, how are you today?
-
 ```
 
 ## Installing Python in Docker
@@ -360,6 +359,8 @@ IMAGE               CREATED             CREATED BY                              
 <missing>           2 weeks ago         /bin/sh -c #(nop) ADD file:d3be43e0fdf0de92d…   69MB
 ```
 
+## Docker history - multiple layers
+{id: docker-history-multiple-layers}
 
 ```
 docker history mydocker

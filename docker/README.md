@@ -35,3 +35,11 @@ docker logs CONTAINER_ID
 
 That's really nice, but once we close the container we lose our changes.
 When we run again we need to start from scratch.
+
+
+$ docker run --rm mydocker
+
+Use of uninitialized value $name in scalar chomp at /opt/greetings.pl line 7.
+Use of uninitialized value $name in concatenation (.) or string at /opt/greetings.pl line 8.
+What is your name? Hello , how are you today?
+
