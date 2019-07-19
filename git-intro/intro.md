@@ -600,7 +600,7 @@ $ git commit -m"start writing the setup script"
 ## Git ignore
 {id: ignore}
 
-The **.gitignore** file in the root of the repository can describe sets of files that don't need tracking. 
+The **.gitignore** file in the root of the repository can describe sets of files that don't need tracking.
 
 This will make sure you don't add the files by mistake (e.g. while using git add .) and they won't show up in the output of the git status command.
 
@@ -613,6 +613,15 @@ config.ini
 ```
 
 Add this file to the repository and commit it. This will ensure that no one in the project will have the extra files problem.
+
+## .gitkeep
+{id: gitkeep}
+
+* Git won't track an empty directory, but sometimes you would like to have one in your repository so your code can assume the directory is there (e.g. for temporary files or for caching).
+
+* Not a real feature but a convention is to add an emty file called `.gitkeep` to the directory you'd like to keep and add that file to git. This will make git track the directory.
+
+* If you also want to ignore all the content of that directory you can use .gitignore. In that case you might need to use the force to add the file to git: `git add --force some/directory/.gitkeep`
 
 ## add and commit in one step
 {id: one-step}
