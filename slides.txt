@@ -3,6 +3,7 @@ aws-lambda
 docker
 github-ci
 git-intro
+golang
 google-gcp
 groovy
 jenkins-intro
