@@ -61,9 +61,14 @@ pkg/
 
 * main function is the entry point of every program
 
+```
 go run src/hello_world.go
-go buil src/hello_world.go
+```
+
+```
+go build src/hello_world.go
 ./hello_world
+```
 
 ## Hello Foo
 {id: hello-foo}
@@ -171,8 +176,6 @@ bitshift operators
 {id: cross-compile}
 
 How to compile a golang application and distribute to multiple platforms. How to cross-compile golang application.
-
-
 
 ```
 env GOOS=target-OS GOARCH=target-architecture go build package-import-path
