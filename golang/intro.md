@@ -122,12 +122,26 @@ string (any utf-8 character)
 strings are just aliases for byte
 strings are (generally?) immutable
 
+s := "some string"
+b := []byte(s)    // the ascii or utf values of the characters  ???
 
-
+## Integer-based operations
+{id: integer-based-operations}
 
 7/3  is 2 in Go as type does not change during operation
 7%3  remainder
 
+
+
+## Runes
+{id: runes}
+
+```
+rune - any utf-32 character
+r := 'a'   // single quotes!
+they are actually int32
+var r rune = 'a'
+```
 
 ## bitwise operators
 {id: bitwise-operators}
@@ -139,11 +153,152 @@ bitshift operators
 >>
 ```
 
+## Cross compile
+{id: cross-compile}
+
+How to compile a golang application and distribute to multiple platforms. How to cross-compile golang application.
 
 
 
+```
+env GOOS=target-OS GOARCH=target-architecture go build package-import-path
+```
+
+https://www.digitalocean.com/community/tutorials/how-to-build-go-executables-for-multiple-platforms-on-ubuntu-16-04
 
 
+## Constants
+{id: constants}
+
+const - constants
+constants can be shadowed as well!  (not a good idea to do)
+iota  (increment by 1 on every use in every constant block of var)  enumeration
+
+```
+var (
+    _ = iota
+    one
+     two
+     three
+)
+
+var (
+    _ = iota + 5
+    six
+    seven
+    eight
+)
+```
+
+## Arrays
+{id: arrays}
+
+
+## Include and distribute external files
+{id: external-files}
+
+How to include external files (e.g. images, html templates) in a golang application.
+
+
+## Hello World
+{id: hello-world}
+
+![](examples/hello_world.go)
+
+go run src/hello_world.go
+go buil src/hello_world.go
+./hello_world
+
+
+
+-----------------
+
+package main
+
+import "fmt"
+
+func main() {
+    var name = "Foo"
+    fmt.Println("Hello", name)
+}
+---------------------------
+
+
+Read from the stdin (standard input) Get input from the keyboard in golang
+
+
+package main
+
+import (
+    "fmt"
+    "bufio"
+    "os"
+)
+
+func main() {
+    reader := bufio.NewReader(os.Stdin)
+    fmt.Print("Enter Your name: ")
+    name, _ := reader.ReadString('\n')
+
+    fmt.Println("Hello", name)
+}
+
+----------------------------------
+
+$ cat src/rectangular.go
+package main
+
+import (
+    "fmt"
+    "bufio"
+    "os"
+    "strconv"
+    "strings"
+)
+
+func main() {
+    reader := bufio.NewReader(os.Stdin)
+
+    fmt.Print("Width: ")
+    width, _ := reader.ReadString('\n')
+    width = strings.TrimSuffix(width, "\n")
+
+    fmt.Print("Height: ")
+    height, _ := reader.ReadString('\n')
+    height = strings.TrimSuffix(height, "\n")
+
+    w, _ := strconv.Atoi(width)
+    h, _ := strconv.Atoi(height)
+    //fmt.Println(w)
+    //fmt.Println(h)
+
+    fmt.Println( w * h )
+}
+
+------------------------------
+package main
+
+import (
+    "fmt"
+)
+
+func main() {
+    //var res int = 42
+    var res = [3]int{97, 85, 93}
+    //var res = [...]int{97, 85, 93}
+    var names [3]string
+    fmt.Println(res)
+    fmt.Println(res[1])
+    fmt.Println(names)
+    names[0] = "Mary"
+    fmt.Println(names)
+}
+
+----------------------------
+matrix
+
+    var matrix [3][3]int = [3][3]int{ [3]int{1, 0, 0}, [3]int{0, 1, 0}, [3]int{0, 0, 1} }
+    fmt.Println(matrix)
 
 
 
