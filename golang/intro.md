@@ -4,8 +4,8 @@
 ## Resources
 {id: resources}
 
-* [](https://www.youtube.com/watch?v=YS4e4q9oBaU)
-* [](https://youtu.be/YS4e4q9oBaU?t=6927)
+* [Video](https://www.youtube.com/watch?v=YS4e4q9oBaU)
+* [Video](https://youtu.be/YS4e4q9oBaU?t=6927)
 
 * [Golang home](https://golang.org/)
 * [Golang tour](https://tour.golang.org/welcome/1)
@@ -20,9 +20,6 @@
 * Garbage collected
 * Built-in concurrency
 * Compile to standalone binaries
-
-
-* main function is the entry point of every program
 
 ## Install
 {id: install}
@@ -56,6 +53,24 @@ pkg/
 
 * [Visual Studio](https://code.visualstudio.com/)
 
+
+## Hello World
+{id: hello-world}
+
+![](examples/hello_world.go)
+
+* main function is the entry point of every program
+
+go run src/hello_world.go
+go buil src/hello_world.go
+./hello_world
+
+## Hello Foo
+{id: hello-foo}
+
+![](examples/hello_foo.go)
+
+
 ## Variable declaration
 {id: variable-declaration}
 
@@ -73,8 +88,6 @@ var (
 ```
 
 Not using a declared variable is a compile-time error!
-
-
 
 
 Redeclaration and shadowing
@@ -191,118 +204,10 @@ var (
 )
 ```
 
-## Arrays
-{id: arrays}
-
-
-## Include and distribute external files
-{id: external-files}
-
-How to include external files (e.g. images, html templates) in a golang application.
-
-
-## Hello World
-{id: hello-world}
-
-![](examples/hello_world.go)
-
-go run src/hello_world.go
-go buil src/hello_world.go
-./hello_world
-
-
-
------------------
-
-package main
-
-import "fmt"
-
-func main() {
-    var name = "Foo"
-    fmt.Println("Hello", name)
-}
----------------------------
-
-
-Read from the stdin (standard input) Get input from the keyboard in golang
-
-
-package main
-
-import (
-    "fmt"
-    "bufio"
-    "os"
-)
-
-func main() {
-    reader := bufio.NewReader(os.Stdin)
-    fmt.Print("Enter Your name: ")
-    name, _ := reader.ReadString('\n')
-
-    fmt.Println("Hello", name)
-}
-
-----------------------------------
-
-$ cat src/rectangular.go
-package main
-
-import (
-    "fmt"
-    "bufio"
-    "os"
-    "strconv"
-    "strings"
-)
-
-func main() {
-    reader := bufio.NewReader(os.Stdin)
-
-    fmt.Print("Width: ")
-    width, _ := reader.ReadString('\n')
-    width = strings.TrimSuffix(width, "\n")
-
-    fmt.Print("Height: ")
-    height, _ := reader.ReadString('\n')
-    height = strings.TrimSuffix(height, "\n")
-
-    w, _ := strconv.Atoi(width)
-    h, _ := strconv.Atoi(height)
-    //fmt.Println(w)
-    //fmt.Println(h)
-
-    fmt.Println( w * h )
-}
-
-------------------------------
-package main
-
-import (
-    "fmt"
-)
-
-func main() {
-    //var res int = 42
-    var res = [3]int{97, 85, 93}
-    //var res = [...]int{97, 85, 93}
-    var names [3]string
-    fmt.Println(res)
-    fmt.Println(res[1])
-    fmt.Println(names)
-    names[0] = "Mary"
-    fmt.Println(names)
-}
-
-----------------------------
-matrix
-
-    var matrix [3][3]int = [3][3]int{ [3]int{1, 0, 0}, [3]int{0, 1, 0}, [3]int{0, 0, 1} }
-    fmt.Println(matrix)
-
 ## golang read from stdin (keyboard)
 {id: read-from-stdin}
+
+Read from the stdin (standard input) Get input from the keyboard in golang
 
 ![](examples/read_from_stdin.go)
 
@@ -317,12 +222,26 @@ matrix
 ![](examples/rectangular.go)
 
 
+## Arrays
+{id: arrays}
+
+![](examples/array.go)
+
+
 ## golang array append
 {id: array-append}
 
 ![](examples/array_append.go)
 
 [](https://tour.golang.org/moretypes/15)
+
+## matrix
+{id: matrix}
+
+```
+    var matrix [3][3]int = [3][3]int{ [3]int{1, 0, 0}, [3]int{0, 1, 0}, [3]int{0, 0, 1} }
+    fmt.Println(matrix)
+```
 
 ## golang: single and double quotes
 {id: single-and-double-quotes}
@@ -334,6 +253,12 @@ matrix
 {id: http-get-request}
 
 ![](examples/http_get.go)
+
+
+## Include and distribute external files
+{id: external-files}
+
+How to include external files (e.g. images, html templates) in a golang application.
 
 
 
