@@ -4,10 +4,11 @@
 ## Resources
 {id: resources}
 
-* https://www.youtube.com/watch?v=YS4e4q9oBaU
-* https://youtu.be/YS4e4q9oBaU?t=6927
+* [](https://www.youtube.com/watch?v=YS4e4q9oBaU)
+* [](https://youtu.be/YS4e4q9oBaU?t=6927)
 
-* https://golang.org/
+* [Golang home](https://golang.org/)
+* [Golang tour](https://tour.golang.org/welcome/1)
 
 ## Features
 {id: features}
@@ -53,7 +54,7 @@ pkg/
 ## Editor/IDE
 {id: editor}
 
-https://code.visualstudio.com/
+* [Visual Studio](https://code.visualstudio.com/)
 
 ## Variable declaration
 {id: variable-declaration}
@@ -164,7 +165,7 @@ How to compile a golang application and distribute to multiple platforms. How to
 env GOOS=target-OS GOARCH=target-architecture go build package-import-path
 ```
 
-https://www.digitalocean.com/community/tutorials/how-to-build-go-executables-for-multiple-platforms-on-ubuntu-16-04
+[](https://www.digitalocean.com/community/tutorials/how-to-build-go-executables-for-multiple-platforms-on-ubuntu-16-04)
 
 
 ## Constants
@@ -299,6 +300,40 @@ matrix
 
     var matrix [3][3]int = [3][3]int{ [3]int{1, 0, 0}, [3]int{0, 1, 0}, [3]int{0, 0, 1} }
     fmt.Println(matrix)
+
+## golang read from stdin (keyboard)
+{id: read-from-stdin}
+
+![](examples/read_from_stdin.go)
+
+## golang read from stdin (keyboard) with error handling
+{id: read-from-stdin-with-error-handling}
+
+![](examples/read_from_stdin_with_error_handling.go)
+
+## Solution: rectangular
+{id: solution-rectangular}
+
+![](examples/rectangular.go)
+
+
+## golang array append
+{id: array-append}
+
+![](examples/array_append.go)
+
+[](https://tour.golang.org/moretypes/15)
+
+## golang: single and double quotes
+{id: single-and-double-quotes}
+
+* single quote is for single characters
+* double quote is for strings
+
+## golang http get request
+{id: http-get-request}
+
+![](examples/http_get.go)
 
 
 
