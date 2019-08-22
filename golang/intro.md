@@ -225,6 +225,15 @@ Read from the stdin (standard input) Get input from the keyboard in golang
 ![](examples/rectangular.go)
 
 
+## Read file line by line
+{id: read-file-line-by-line}
+
+![](examples/read_file_line_by_line.go)
+
+## Read file as one string (slurp)
+{id: read-file-as-one-string}
+
+![](examples/slurp_file.go)
 ## Arrays
 {id: arrays}
 
@@ -246,6 +255,12 @@ Read from the stdin (standard input) Get input from the keyboard in golang
     fmt.Println(matrix)
 ```
 
+## Random with seed
+{id: random-with-seed}
+
+![](examples/random_with_seed.go)
+
+
 ## golang: single and double quotes
 {id: single-and-double-quotes}
 
@@ -262,6 +277,46 @@ Read from the stdin (standard input) Get input from the keyboard in golang
 {id: external-files}
 
 How to include external files (e.g. images, html templates) in a golang application.
+
+## Skeleton
+{id: skeleton}
+
+![](examples/skeleton.go)
+
+```
+go run skeleton.go
+```
+
+## empty file
+{id: empty-file}
+
+![](examples/empty.go)
+
+```
+go run empty.go
+
+package main: empty.go:1:2: expected 'package', found 'EOF'
+```
+
+## Only package main
+{id: package-main}
+
+![](examples/package-main.go)
+
+```
+# command-line-arguments
+runtime.package-main_main·f: function main is undeclared in the main package
+```
+
+## Other package name
+{id: other-package-name}
+
+![](examples/qqrq.go)
+
+```
+go run: cannot run non-main package
+```
+
 
 
 
