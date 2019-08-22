@@ -57,7 +57,7 @@ pkg/
 ## Hello World
 {id: hello-world}
 
-![](examples/hello_world.go)
+![](examples/hello_world/hello_world.go)
 
 * main function is the entry point of every program
 
@@ -73,7 +73,7 @@ go build src/hello_world.go
 ## Hello Foo
 {id: hello-foo}
 
-![](examples/hello_foo.go)
+![](examples/hello_foo/hello_foo.go)
 
 
 ## Variable declaration
@@ -212,38 +212,38 @@ var (
 
 Read from the stdin (standard input) Get input from the keyboard in golang
 
-![](examples/read_from_stdin.go)
+![](examples/read_from_stdin/read_from_stdin.go)
 
 ## golang read from stdin (keyboard) with error handling
 {id: read-from-stdin-with-error-handling}
 
-![](examples/read_from_stdin_with_error_handling.go)
+![](examples/read_from_stdin_with_error_handling/read_from_stdin_with_error_handling.go)
 
 ## Solution: rectangular
 {id: solution-rectangular}
 
-![](examples/rectangular.go)
+![](examples/rectangular/rectangular.go)
 
 
 ## Read file line by line
 {id: read-file-line-by-line}
 
-![](examples/read_file_line_by_line.go)
+![](examples/read_file_line_by_line/read_file_line_by_line.go)
 
 ## Read file as one string (slurp)
 {id: read-file-as-one-string}
 
-![](examples/slurp_file.go)
+![](examples/slurp_file/slurp_file.go)
 ## Arrays
 {id: arrays}
 
-![](examples/array.go)
+![](examples/array/array.go)
 
 
 ## golang array append
 {id: array-append}
 
-![](examples/array_append.go)
+![](examples/array_append/array_append.go)
 
 [](https://tour.golang.org/moretypes/15)
 
@@ -258,7 +258,7 @@ Read from the stdin (standard input) Get input from the keyboard in golang
 ## Random with seed
 {id: random-with-seed}
 
-![](examples/random_with_seed.go)
+![](examples/random_with_seed/random_with_seed.go)
 
 
 ## golang: single and double quotes
@@ -270,7 +270,7 @@ Read from the stdin (standard input) Get input from the keyboard in golang
 ## golang http get request
 {id: http-get-request}
 
-![](examples/http_get.go)
+![](examples/http_get/http_get.go)
 
 
 ## Include and distribute external files
@@ -281,7 +281,7 @@ How to include external files (e.g. images, html templates) in a golang applicat
 ## Skeleton
 {id: skeleton}
 
-![](examples/skeleton.go)
+![](examples/skeleton/skeleton.go)
 
 ```
 go run skeleton.go
@@ -290,7 +290,7 @@ go run skeleton.go
 ## empty file
 {id: empty-file}
 
-![](examples/empty.go)
+![](examples/empty/empty.go)
 
 ```
 go run empty.go
@@ -301,7 +301,7 @@ package main: empty.go:1:2: expected 'package', found 'EOF'
 ## Only package main
 {id: package-main}
 
-![](examples/package-main.go)
+![](examples/package-main/package-main.go)
 
 ```
 # command-line-arguments
@@ -311,7 +311,7 @@ runtime.package-main_main·f: function main is undeclared in the main package
 ## Other package name
 {id: other-package-name}
 
-![](examples/qqrq.go)
+![](examples/qqrq/qqrq.go)
 
 ```
 go run: cannot run non-main package
