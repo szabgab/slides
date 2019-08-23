@@ -1,14 +1,6 @@
 # Go-lang
 {id: index}
 
-## Resources
-{id: resources}
-
-* [Video](https://www.youtube.com/watch?v=YS4e4q9oBaU)
-* [Video](https://youtu.be/YS4e4q9oBaU?t=6927)
-
-* [Golang home](https://golang.org/)
-* [Golang tour](https://tour.golang.org/welcome/1)
 
 ## Features
 {id: features}
@@ -23,6 +15,9 @@
 
 ## Install
 {id: install}
+
+* [Golang home](https://golang.org/)
+* [Golang tour](https://tour.golang.org/welcome/1)
 
 
 ## Version
@@ -39,20 +34,11 @@ go get github.com/nsf/gocode
 installs in ~/go  so we might want to add ~/go/bin  to out PATH
 
 
-## go workspace layout
-{id: go-workspace-layout}
-
-```
-src/
-bin/
-pkg/
-```
 
 ## Editor/IDE
 {id: editor}
 
-* [Visual Studio](https://code.visualstudio.com/)
-
+* [Visual Studio Code](https://code.visualstudio.com/) (It has plugins for Golang)
 
 ## Hello World
 {id: hello-world}
@@ -317,6 +303,42 @@ runtime.package-main_main·f: function main is undeclared in the main package
 go run: cannot run non-main package
 ```
 
+## Sum of numbers in a file
+{id: sum-of-numbers}
+
+![](examples/sum/sum.go)
+
+## Defer
+{id: defer}
+
+Every defer statement is executed after the enclosing function ends.
+In reverse order. (Similar to END block in Perl, similar to with context in python)
+
+![](examples/defer/defer.go)
+
+```
+$ go run defer.go
+
+first
+second
+third
+two
+one
+```
+
+## go workspace layout
+{id: go-workspace-layout}
+
+```
+src/
+bin/
+pkg/
+```
 
 
+## Resources
+{id: resources}
+
+* [Video](https://www.youtube.com/watch?v=YS4e4q9oBaU)
+* [Video](https://youtu.be/YS4e4q9oBaU?t=6927)
 
