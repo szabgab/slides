@@ -335,6 +335,17 @@ bin/
 pkg/
 ```
 
+## Args - (argv) command line arguments
+{id: args-command-line-arguments}
+
+
+![](examples/cli/cli.go)
+
+```
+go run examples/cli/cli.go  hello world
+```
+
+
 ## Create hello function
 {id: hello-function}
 
@@ -357,6 +368,17 @@ To run the tests:
 ```
 got test -run ''
 ```
+
+## Exit early with error code
+{id: exit-early}
+
+![](examples/exit/code.go)
+
+## if statement
+{id: if-statement}
+
+![](examples/if/if.go)
+
 
 ## Resources
 {id: resources}
