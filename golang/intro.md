@@ -13,6 +13,17 @@
 * Built-in concurrency
 * Compile to standalone binaries
 
+
+## Why Golang?
+{id: why-golang}
+
+
+[Concurrency](http://www.gotw.ca/publications/concurrency-ddj.htm)
+
+[C10k Problem](https://en.wikipedia.org/wiki/C10k_problem)
+
+
+
 ## Install
 {id: install}
 
@@ -55,6 +66,13 @@ go run src/hello_world.go
 go build src/hello_world.go
 ./hello_world
 ```
+
+## Hello World annotated
+{id: hello-world-annotated}
+
+
+[Annotated Go](https://www.353solutions.com/annotated-go)
+
 
 ## Hello Foo
 {id: hello-foo}
@@ -379,6 +397,10 @@ got test -run ''
 
 ![](examples/if/if.go)
 
+## for loop
+{id: for-loop}
+
+![](examples/loop/loop.go)
 
 ## Resources
 {id: resources}

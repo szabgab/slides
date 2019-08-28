@@ -1,0 +1,5 @@
+fmt.Printf("%#v", expr)
+or implement the String method of the class to be able to use %s
+
+Do notn show arrays, only slices!
+
