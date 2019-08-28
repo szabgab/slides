@@ -7,3 +7,4 @@ __pycache__
 project.zip
 .DS_Store
 pypi/
+.vscode/
