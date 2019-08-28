@@ -238,16 +238,31 @@ Read from the stdin (standard input) Get input from the keyboard in golang
 {id: read-file-as-one-string}
 
 ![](examples/slurp_file/slurp_file.go)
+
+
+## Sprintf and Sprintln
+{id: sprintf}
+
+![](examples/sprintf/sprintf.go)
+
+![](examples/sprintln/sprintln.go)
+
 ## Arrays
 {id: arrays}
 
 ![](examples/array/array.go)
 
+## Slice
+{id: slice}
 
-## golang array append
-{id: array-append}
 
-![](examples/array_append/array_append.go)
+![](examples/slice/slice.go)
+
+
+## Slice append
+{id: slice-append}
+
+![](examples/slice_append/slice_append.go)
 
 [](https://tour.golang.org/moretypes/15)
 
