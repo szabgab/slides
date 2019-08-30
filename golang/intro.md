@@ -74,10 +74,15 @@ go build hello_world.go
 
 * [Annotated Hello World in Go](https://www.353solutions.com/annotated-go)
 
-## Hello Foo
+## Hello Foo - println
 {id: hello-foo}
 
 ![](examples/hello_foo/hello_foo.go)
+
+## Hello Foo - printf
+{id: hello-foo-printf}
+
+![](examples/hello_foo_printf/hello_foo_printf.go)
 
 
 ## Comments
@@ -86,7 +91,7 @@ go build hello_world.go
 ![](examples/comments/comments.go)
 
 
-## Show variable type
+## Show variable type - printf %T
 {id: show-variable-type}
 
 ![](examples/show-type/show-type.go)
@@ -96,24 +101,27 @@ go build hello_world.go
 {id: types}
 
 ```
+string          (any utf-8 character)
+
 int - unspecified size (but mn 32 bit)
 int8
 int16
 int32
 int64
-big packages.
-uint16    (unsigned integer)
+
+uint16          (unsigned integer)
+
 byte
-complex64    1 + 2i    or just 3i
+
+complex(r, i)
+complex64       1 + 2i    or just 3i
 complex128
 real(n)
 imag(n)
-complex(r, i)
-string (any utf-8 character)
 ```
 
-## Variables have types
-{id: variables-have-types}
+## Enforce variables types
+{id: enforce-variable-types}
 
 ![](examples/variable/variable.go)
 
@@ -121,6 +129,8 @@ string (any utf-8 character)
 # command-line-arguments
 ./variable.go:8:7: cannot use 42 (type int) as type string in assignment
 ```
+
+* Compile-time error
 
 ## Variable declaration
 {id: variable-declaration}
