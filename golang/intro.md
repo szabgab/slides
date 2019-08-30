@@ -5,30 +5,27 @@
 ## Features
 {id: features}
 
-* Strong and statically typed
+* Built-in concurrency
+* Compile to standalone binaries (cross compilation available!)
 
+* Strong and statically typed
 * Simplicity
 * Fast compile times
 * Garbage collected
-* Built-in concurrency
-* Compile to standalone binaries
-
 
 ## Why Golang?
 {id: why-golang}
 
 
-[Concurrency](http://www.gotw.ca/publications/concurrency-ddj.htm)
-
-[C10k Problem](https://en.wikipedia.org/wiki/C10k_problem)
-
+* Concurrency [The Free Lunch Is Over: A Fundamental Turn Toward Concurrency in Software](http://www.gotw.ca/publications/concurrency-ddj.htm)
+* [C10k Problem](https://en.wikipedia.org/wiki/C10k_problem)
 
 
 ## Install
 {id: install}
 
 * [Golang home](https://golang.org/)
-* [Golang tour](https://tour.golang.org/welcome/1)
+* [Download](https://golang.org/dl/)
 
 
 ## Version
@@ -42,14 +39,22 @@ go version
 go get github.com/nsf/gocode
 ```
 
-installs in ~/go  so we might want to add ~/go/bin  to out PATH
+Installs stuff in ~/go  so we might want to add ~/go/bin  to out PATH.
+In ~/.bashrc add
 
+```
+export PATH=$PATH:~/go/bin
+```
+
+then reload it using `source ~/.bashrc`
 
 
 ## Editor/IDE
 {id: editor}
 
 * [Visual Studio Code](https://code.visualstudio.com/) (It has plugins for Golang)
+* [other editors and IDEs](https://golang.org/doc/editors.html)
+
 
 ## Hello World
 {id: hello-world}
@@ -59,25 +64,26 @@ installs in ~/go  so we might want to add ~/go/bin  to out PATH
 * main function is the entry point of every program
 
 ```
-go run src/hello_world.go
+go run hello_world.go
 ```
 
 ```
-go build src/hello_world.go
+go build hello_world.go
 ./hello_world
 ```
 
-## Hello World annotated
-{id: hello-world-annotated}
-
-
-[Annotated Go](https://www.353solutions.com/annotated-go)
-
+* [Annotated Hello World in Go](https://www.353solutions.com/annotated-go)
 
 ## Hello Foo
 {id: hello-foo}
 
 ![](examples/hello_foo/hello_foo.go)
+
+
+## Comments
+{id: comments}
+
+![](examples/comments/comments.go)
 
 
 ## Variable declaration
@@ -96,22 +102,11 @@ var (
 )
 ```
 
-Not using a declared variable is a compile-time error!
 
 
-Redeclaration and shadowing
-Visibility
-Naming conventions
-Type conversions
-
-lower-case variables are scoped to the current package
-upper-case variables are exported from the package and globally visible
-block-scoped variables (e.g. in a function) are only visible in the block
-
-theURL
-theHTML
-
-Converting values to other types:
+## Converting values to other types
+{id: converting-types}
+```
 float32()
 int()
 string()
@@ -119,14 +114,22 @@ string()
 import strconv
 
 strconv.Itoa
+```
 
-Boolean:
+## Boolean values
+{id: boolean-values}
+
+
 var n bool = true
 false
 
 
 Default values of variables is 0 (false, empty string??)
 
+## Types
+{id: types}
+
+```
 int - unspecified size (but mn 32 bit)
 int8
 int16
@@ -141,12 +144,15 @@ real(n)
 imag(n)
 complex(r, i)
 string (any utf-8 character)
+```
 
-strings are just aliases for byte
-strings are (generally?) immutable
+* strings are just aliases for byte
+* strings are (generally?) immutable
 
+```
 s := "some string"
 b := []byte(s)    // the ascii or utf values of the characters  ???
+```
 
 ## Integer-based operations
 {id: integer-based-operations}
@@ -246,6 +252,12 @@ Read from the stdin (standard input) Get input from the keyboard in golang
 ![](examples/sprintf/sprintf.go)
 
 ![](examples/sprintln/sprintln.go)
+
+## Scan input strings
+{id: scan}
+
+![](examples/scan/scan.go)
+
 
 ## Arrays
 {id: arrays}
@@ -420,6 +432,7 @@ got test -run ''
 ## Resources
 {id: resources}
 
+* [Golang tour](https://tour.golang.org/welcome/1)
 * [Video](https://www.youtube.com/watch?v=YS4e4q9oBaU)
 * [Video](https://youtu.be/YS4e4q9oBaU?t=6927)
 
