@@ -18,3 +18,14 @@ Not using a declared variable is a compile-time error!
 
 * theURL
 * theHTML
+
+
+## types
+
+* strings are just aliases for byte
+* strings are (generally?) immutable
+
+```
+s := "some string"
+b := []byte(s)    // the ascii or utf values of the characters  ???
+```

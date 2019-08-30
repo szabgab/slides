@@ -86,45 +86,11 @@ go build hello_world.go
 ![](examples/comments/comments.go)
 
 
-## Variable declaration
-{id: variable-declaration}
+## Show variable type
+{id: show-variable-type}
 
-```
-var i int
-i = 42
+![](examples/show-type/show-type.go)
 
-var i int = 42
-i := 42   // (is the same but this one cannot be used on the package level
-
-var (
-   i = 42
-   j = 23
-)
-```
-
-
-
-## Converting values to other types
-{id: converting-types}
-```
-float32()
-int()
-string()
-
-import strconv
-
-strconv.Itoa
-```
-
-## Boolean values
-{id: boolean-values}
-
-
-var n bool = true
-false
-
-
-Default values of variables is 0 (false, empty string??)
 
 ## Types
 {id: types}
@@ -146,13 +112,45 @@ complex(r, i)
 string (any utf-8 character)
 ```
 
-* strings are just aliases for byte
-* strings are (generally?) immutable
+## Variables have types
+{id: variables-have-types}
+
+![](examples/variable/variable.go)
 
 ```
-s := "some string"
-b := []byte(s)    // the ascii or utf values of the characters  ???
+# command-line-arguments
+./variable.go:8:7: cannot use 42 (type int) as type string in assignment
 ```
+
+## Variable declaration
+{id: variable-declaration}
+
+![](examples/variable-declaration/declaration.go)
+
+
+## Converting values to other types
+{id: converting-types}
+
+```
+float32()
+int()
+string()
+
+import strconv
+
+strconv.Itoa
+```
+
+## Boolean values
+{id: boolean-values}
+
+
+var n bool = true
+false
+
+
+Default values of variables is 0 (false, empty string??)
+
 
 ## Integer-based operations
 {id: integer-based-operations}
