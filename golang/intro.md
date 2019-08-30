@@ -97,8 +97,8 @@ go build hello_world.go
 ![](examples/show-type/show-type.go)
 
 
-## Types
-{id: types}
+## Simple Types
+{id: simple-types}
 
 ```
 string          (any utf-8 character)
@@ -137,29 +137,39 @@ imag(n)
 
 ![](examples/variable-declaration/declaration.go)
 
+```
+// var i int
+// i = 42
+
+// var i int = 42
+// i := 42   // (is the same but this one cannot be used on the package level
+
+// var (
+//    i = 42
+//    j = 23
+// )
+```
 
 ## Converting values to other types
 {id: converting-types}
 
-```
-float32()
-int()
-string()
+* float32()
+* int()
+* string()
 
-import strconv
+![](examples/convert/convert.go)
 
-strconv.Itoa
-```
 
 ## Boolean values
 {id: boolean-values}
 
+![](examples/boolean/boolean.go)
 
-var n bool = true
-false
+## Default values of variables
+{id: default-values}
 
 
-Default values of variables is 0 (false, empty string??)
+is 0 (false, empty string??)
 
 
 ## Integer-based operations
@@ -169,73 +179,6 @@ Default values of variables is 0 (false, empty string??)
 7%3  remainder
 
 
-
-## Runes
-{id: runes}
-
-```
-rune - any utf-32 character
-r := 'a'   // single quotes!
-they are actually int32
-var r rune = 'a'
-```
-
-## bitwise operators
-{id: bitwise-operators}
-
-```
-&, |, ^, &^
-bitshift operators
-<<
->>
-```
-
-## Cross compile
-{id: cross-compile}
-
-How to compile a golang application and distribute to multiple platforms. How to cross-compile golang application.
-
-```
-env GOOS=target-OS GOARCH=target-architecture go build package-import-path
-```
-
-[](https://www.digitalocean.com/community/tutorials/how-to-build-go-executables-for-multiple-platforms-on-ubuntu-16-04)
-
-
-## Constants
-{id: constants}
-
-const - constants
-constants can be shadowed as well!  (not a good idea to do)
-iota  (increment by 1 on every use in every constant block of var)  enumeration
-
-```
-var (
-    _ = iota
-    one
-     two
-     three
-)
-
-var (
-    _ = iota + 5
-    six
-    seven
-    eight
-)
-```
-
-## golang read from stdin (keyboard)
-{id: read-from-stdin}
-
-Read from the stdin (standard input) Get input from the keyboard in golang
-
-![](examples/read_from_stdin/read_from_stdin.go)
-
-## golang read from stdin (keyboard) with error handling
-{id: read-from-stdin-with-error-handling}
-
-![](examples/read_from_stdin_with_error_handling/read_from_stdin_with_error_handling.go)
 
 ## Solution: rectangular
 {id: solution-rectangular}
@@ -437,6 +380,11 @@ got test -run ''
 
 ![](examples/loop/loop.go)
 
+## get variable type - %T or reflect.TypeOf
+{id: get-variable-type}
+
+![](examples/get-type/get-type.go)
+
 ## Resources
 {id: resources}
 
@@ -444,3 +392,69 @@ got test -run ''
 * [Video](https://www.youtube.com/watch?v=YS4e4q9oBaU)
 * [Video](https://youtu.be/YS4e4q9oBaU?t=6927)
 
+## Runes
+{id: runes}
+
+```
+rune - any utf-32 character
+r := 'a'   // single quotes!
+they are actually int32
+var r rune = 'a'
+```
+
+## bitwise operators
+{id: bitwise-operators}
+
+```
+&, |, ^, &^
+bitshift operators
+<<
+>>
+```
+
+## Cross compile
+{id: cross-compile}
+
+How to compile a golang application and distribute to multiple platforms. How to cross-compile golang application.
+
+```
+env GOOS=target-OS GOARCH=target-architecture go build package-import-path
+```
+
+[](https://www.digitalocean.com/community/tutorials/how-to-build-go-executables-for-multiple-platforms-on-ubuntu-16-04)
+
+
+## Constants
+{id: constants}
+
+const - constants
+constants can be shadowed as well!  (not a good idea to do)
+iota  (increment by 1 on every use in every constant block of var)  enumeration
+
+```
+var (
+    _ = iota
+    one
+     two
+     three
+)
+
+var (
+    _ = iota + 5
+    six
+    seven
+    eight
+)
+```
+
+## golang read from stdin (keyboard)
+{id: read-from-stdin}
+
+Read from the stdin (standard input) Get input from the keyboard in golang
+
+![](examples/read_from_stdin/read_from_stdin.go)
+
+## golang read from stdin (keyboard) with error handling
+{id: read-from-stdin-with-error-handling}
+
+![](examples/read_from_stdin_with_error_handling/read_from_stdin_with_error_handling.go)
