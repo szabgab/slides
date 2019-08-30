@@ -20,6 +20,18 @@
 * Concurrency [The Free Lunch Is Over: A Fundamental Turn Toward Concurrency in Software](http://www.gotw.ca/publications/concurrency-ddj.htm)
 * [C10k Problem](https://en.wikipedia.org/wiki/C10k_problem)
 
+## Major Open Source Projects
+{id: major-open-source-projects}
+
+* Docker
+* Kubernetes
+
+## Some companies in Israel
+{id: companies-in-israel}
+
+* [Gett](https://gett.com/)
+* [Apester](https://apester.com/)
+* [Cisco](https://www.cisco.com/)
 
 ## Install
 {id: install}
@@ -158,7 +170,7 @@ imag(n)
 * string()
 
 ![](examples/convert/convert.go)
-
+      // this will convert a string like "abc" or "2x" to 0 and set err
 
 ## Boolean values
 {id: boolean-values}
@@ -179,11 +191,33 @@ is 0 (false, empty string??)
 7%3  remainder
 
 
+## Args - (argv) command line arguments
+{id: args-command-line-arguments}
+
+
+![](examples/cli/cli.go)
+
+```
+go run examples/cli/cli.go  hello world
+```
+
+
+
+## Exercise: rectangular
+{id: exercise-rectangular}
+
+Write a program that accepts two numbers on the command line
+(the width and the length of a rectangular) and prints the area.
 
 ## Solution: rectangular
 {id: solution-rectangular}
 
 ![](examples/rectangular/rectangular.go)
+
+## Solution: rectangular (STDIN)
+{id: solution-rectangular-stdin}
+
+![](examples/rectangular-stdin/rectangular.go)
 
 
 ## Read file line by line
@@ -330,17 +364,6 @@ src/
 bin/
 pkg/
 ```
-
-## Args - (argv) command line arguments
-{id: args-command-line-arguments}
-
-
-![](examples/cli/cli.go)
-
-```
-go run examples/cli/cli.go  hello world
-```
-
 
 ## Create hello function
 {id: hello-function}

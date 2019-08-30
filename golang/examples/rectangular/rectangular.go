@@ -2,26 +2,14 @@ package main
 
 import (
    "fmt"
-   "bufio"
    "os"
    "strconv"
-   "strings"
 )
 
 func main() {
-   reader := bufio.NewReader(os.Stdin)
-
-   fmt.Print("Width: ")
-   width, _ := reader.ReadString('\n')
-   width = strings.TrimSuffix(width, "\n")
-
-   fmt.Print("Height: ")
-   height, _ := reader.ReadString('\n')
-   height = strings.TrimSuffix(height, "\n")
-
    // convert to integer
-   w, _ := strconv.Atoi(width)      // this will convert a string like "abc" or "2x" to 0 and set err
-   h, _ := strconv.Atoi(height)
+   w, _ := strconv.Atoi(os.Args[1]) // this will convert a string like "abc" or "2x" to 0 and set err
+   h, _ := strconv.Atoi(os.Args[2])
    fmt.Println(w)
    fmt.Println(h)
 
