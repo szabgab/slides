@@ -102,15 +102,20 @@ go build hello_world.go
 
 ![](examples/comments/comments.go)
 
+## Enforce variables types
+{id: enforce-variable-types}
 
-## Show variable type - printf %T
-{id: show-variable-type}
+![](examples/variable/variable.go)
 
-![](examples/show-type/show-type.go)
+```
+# command-line-arguments
+./variable.go:8:7: cannot use 42 (type int) as type string in assignment
+```
 
+* Compile-time error
 
-## Simple Types
-{id: simple-types}
+## Basic Types
+{id: basic-types}
 
 ```
 string          (any utf-8 character)
@@ -123,6 +128,9 @@ int64
 
 uint16          (unsigned integer)
 
+float32
+float64
+
 byte
 
 complex(r, i)
@@ -132,17 +140,12 @@ real(n)
 imag(n)
 ```
 
-## Enforce variables types
-{id: enforce-variable-types}
+* [basic types](https://tour.golang.org/basics/11)
 
-![](examples/variable/variable.go)
+## Show inferred variable type - Printf %T
+{id: show-variable-type}
 
-```
-# command-line-arguments
-./variable.go:8:7: cannot use 42 (type int) as type string in assignment
-```
-
-* Compile-time error
+![](examples/show-type/show-type.go)
 
 ## Variable declaration
 {id: variable-declaration}
@@ -331,6 +334,11 @@ and: 1
 
 ![](examples/slurp_file/slurp_file.go)
 
+## Sum of numbers in a file
+{id: sum-of-numbers}
+
+![](examples/sum/sum.go)
+
 
 ## Sprintf and Sprintln
 {id: sprintf}
@@ -351,60 +359,15 @@ and: 1
 * single quote is for single characters
 * double quote is for strings
 
-## golang http get request
-{id: http-get-request}
+## Create hello function
+{id: hello-function}
 
-![](examples/http_get/http_get.go)
+![](examples/functions/hello_foo.go)
 
+## Function with return value
+{id: function-sith-return}
 
-## Include and distribute external files
-{id: external-files}
-
-How to include external files (e.g. images, html templates) in a golang application.
-
-## Skeleton
-{id: skeleton}
-
-![](examples/skeleton/skeleton.go)
-
-```
-go run skeleton.go
-```
-
-## empty file
-{id: empty-file}
-
-![](examples/empty/empty.go)
-
-```
-go run empty.go
-
-package main: empty.go:1:2: expected 'package', found 'EOF'
-```
-
-## Only package main
-{id: package-main}
-
-![](examples/package-main/package-main.go)
-
-```
-# command-line-arguments
-runtime.package-main_main·f: function main is undeclared in the main package
-```
-
-## Other package name
-{id: other-package-name}
-
-![](examples/qqrq/qqrq.go)
-
-```
-go run: cannot run non-main package
-```
-
-## Sum of numbers in a file
-{id: sum-of-numbers}
-
-![](examples/sum/sum.go)
+![](examples/function_return/comp.go)
 
 ## Defer
 {id: defer}
@@ -424,24 +387,10 @@ two
 one
 ```
 
-## go workspace layout
-{id: go-workspace-layout}
+## http get request
+{id: http-get-request}
 
-```
-src/
-bin/
-pkg/
-```
-
-## Create hello function
-{id: hello-function}
-
-![](examples/functions/hello_foo.go)
-
-## Function with return value
-{id: function-sith-return}
-
-![](examples/function_return/comp.go)
+![](examples/http_get/http_get.go)
 
 ## Simple test
 {id: simple-test}
@@ -456,17 +405,18 @@ To run the tests:
 got test -run ''
 ```
 
-## Exit early with error code
-{id: exit-early}
-
-![](examples/exit/code.go)
-
 ## Resources
 {id: resources}
 
 * [Golang tour](https://tour.golang.org/welcome/1)
 * [Video](https://www.youtube.com/watch?v=YS4e4q9oBaU)
 * [Video](https://youtu.be/YS4e4q9oBaU?t=6927)
+
+## Exit early with error code
+{id: exit-early}
+
+![](examples/exit/code.go)
+
 
 ## Runes
 {id: runes}
@@ -554,5 +504,58 @@ Read from the stdin (standard input) Get input from the keyboard in golang
 {id: get-variable-type}
 
 ![](examples/get-type/get-type.go)
+
+## Skeleton
+{id: skeleton}
+
+![](examples/skeleton/skeleton.go)
+
+```
+go run skeleton.go
+```
+
+## empty file
+{id: empty-file}
+
+![](examples/empty/empty.go)
+
+```
+go run empty.go
+
+package main: empty.go:1:2: expected 'package', found 'EOF'
+```
+
+## Only package main
+{id: package-main}
+
+![](examples/package-main/package-main.go)
+
+```
+# command-line-arguments
+runtime.package-main_main·f: function main is undeclared in the main package
+```
+
+## Other package name
+{id: other-package-name}
+
+![](examples/qqrq/qqrq.go)
+
+```
+go run: cannot run non-main package
+```
+
+## go workspace layout
+{id: go-workspace-layout}
+
+```
+src/
+bin/
+pkg/
+```
+
+## Include and distribute external files
+{id: external-files}
+
+How to include external files (e.g. images, html templates) in a golang application.
 
 
