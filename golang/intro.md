@@ -65,7 +65,7 @@ then reload it using `source ~/.bashrc`
 {id: editor}
 
 * [Visual Studio Code](https://code.visualstudio.com/) (It has plugins for Golang)
-* [other editors and IDEs](https://golang.org/doc/editors.html)
+* [Other editors and IDEs](https://golang.org/doc/editors.html)
 
 
 ## Hello World
@@ -86,12 +86,12 @@ go build hello_world.go
 
 * [Annotated Hello World in Go](https://www.353solutions.com/annotated-go)
 
-## Hello Foo - println
+## Hello Foo - Println
 {id: hello-foo}
 
 ![](examples/hello_foo/hello_foo.go)
 
-## Hello Foo - printf
+## Hello Foo - Printf
 {id: hello-foo-printf}
 
 ![](examples/hello_foo_printf/hello_foo_printf.go)
@@ -187,8 +187,13 @@ imag(n)
 ## Default values of variables
 {id: default-values}
 
+Variables declared without an explicit initial value are given their zero value as default.
 
-is 0 (false, empty string??)
+* 0 for numeric types,
+* false for the boolean type, and
+* "" (the empty string) for strings.
+
+![](examples/zero/zero.go)
 
 
 ## Integer-based operations
@@ -225,6 +230,35 @@ Write a program that accepts two numbers on the command line
 {id: solution-rectangular-stdin}
 
 ![](examples/rectangular-stdin/rectangular.go)
+
+## Arrays
+{id: arrays}
+
+![](examples/array/array.go)
+
+## Slice
+{id: slice}
+
+![](examples/slice/slice.go)
+
+## if statement
+{id: if-statement}
+
+![](examples/if/if.go)
+
+## for loop
+{id: for-loop}
+
+![](examples/loop/loop.go)
+
+
+## Slice append
+{id: slice-append}
+
+![](examples/slice_append/slice_append.go)
+
+[](https://tour.golang.org/moretypes/15)
+
 
 ## Exercise: count digits
 {id: exercise-count-digits}
@@ -286,6 +320,7 @@ and: 1
 
 ![](examples/count-words/count-words.go)
 
+
 ## Read file line by line
 {id: read-file-line-by-line}
 
@@ -303,39 +338,6 @@ and: 1
 ![](examples/sprintf/sprintf.go)
 
 ![](examples/sprintln/sprintln.go)
-
-## Scan input strings
-{id: scan}
-
-![](examples/scan/scan.go)
-
-
-## Arrays
-{id: arrays}
-
-![](examples/array/array.go)
-
-## Slice
-{id: slice}
-
-
-![](examples/slice/slice.go)
-
-
-## Slice append
-{id: slice-append}
-
-![](examples/slice_append/slice_append.go)
-
-[](https://tour.golang.org/moretypes/15)
-
-## matrix
-{id: matrix}
-
-```
-    var matrix [3][3]int = [3][3]int{ [3]int{1, 0, 0}, [3]int{0, 1, 0}, [3]int{0, 0, 1} }
-    fmt.Println(matrix)
-```
 
 ## Random with seed
 {id: random-with-seed}
@@ -459,21 +461,6 @@ got test -run ''
 
 ![](examples/exit/code.go)
 
-## if statement
-{id: if-statement}
-
-![](examples/if/if.go)
-
-## for loop
-{id: for-loop}
-
-![](examples/loop/loop.go)
-
-## get variable type - %T or reflect.TypeOf
-{id: get-variable-type}
-
-![](examples/get-type/get-type.go)
-
 ## Resources
 {id: resources}
 
@@ -513,20 +500,6 @@ env GOOS=target-OS GOARCH=target-architecture go build package-import-path
 [](https://www.digitalocean.com/community/tutorials/how-to-build-go-executables-for-multiple-platforms-on-ubuntu-16-04)
 
 
-## Zero values
-{id: zero-values}
-
-Variables declared without an explicit initial value are given their zero value.
-
-The zero value is:
-
-* 0 for numeric types,
-* false for the boolean type, and
-* "" (the empty string) for strings.
-
-![](examples/zero/zero.go)
-
-
 ## Constants
 {id: constants}
 
@@ -561,3 +534,25 @@ Read from the stdin (standard input) Get input from the keyboard in golang
 {id: read-from-stdin-with-error-handling}
 
 ![](examples/read_from_stdin_with_error_handling/read_from_stdin_with_error_handling.go)
+
+
+## Scan input strings
+{id: scan}
+
+![](examples/scan/scan.go)
+
+
+## matrix
+{id: matrix}
+
+```
+    var matrix [3][3]int = [3][3]int{ [3]int{1, 0, 0}, [3]int{0, 1, 0}, [3]int{0, 0, 1} }
+    fmt.Println(matrix)
+```
+
+## get variable type - %T or reflect.TypeOf
+{id: get-variable-type}
+
+![](examples/get-type/get-type.go)
+
+
