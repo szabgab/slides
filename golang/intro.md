@@ -131,6 +131,8 @@ uint16          (unsigned integer)
 float32
 float64
 
+bool
+
 byte
 
 complex(r, i)
@@ -147,23 +149,12 @@ imag(n)
 
 ![](examples/show-type/show-type.go)
 
+
 ## Variable declaration
 {id: variable-declaration}
 
-![](examples/variable-declaration/declaration.go)
+![](examples/variables/variables.go)
 
-```
-// var i int
-// i = 42
-
-// var i int = 42
-// i := 42   // (is the same but this one cannot be used on the package level
-
-// var (
-//    i = 42
-//    j = 23
-// )
-```
 
 ## Converting values to other types
 {id: converting-types}
@@ -557,5 +548,23 @@ pkg/
 {id: external-files}
 
 How to include external files (e.g. images, html templates) in a golang application.
+
+## Variable declaration outside of functions
+{id: variable-declaration-outside-of-functions}
+
+![](examples/variable-declaration/declaration.go)
+
+```
+// var i int
+// i = 42
+
+// var i int = 42
+// i := 42   // (is the same but this one cannot be used on the package level
+
+// var (
+//    i = 42
+//    j = 23
+// )
+```
 
 
