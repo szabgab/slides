@@ -29,3 +29,52 @@ Not using a declared variable is a compile-time error!
 s := "some string"
 b := []byte(s)    // the ascii or utf values of the characters  ???
 ```
+
+
+
+multiple return values
+returning an error from a functions
+
+slide: error handling (functions return the error value)
+
+https://www.callicoder.com/golang-functions/
+
+
+
+methods (attached to types), but no classes
+
+interfaces
+
+Stringers - stringification
+
+functions can be closures
+
+
+variadic function
+unknown number of parameters?
+https://medium.com/rungo/variadic-function-in-go-5d9b23f4c01a
+
+
+
+
+
+if
+https://tour.golang.org/flowcontrol/6
+short statement (right before the condition)
+
+
+switch - case
+https://tour.golang.org/flowcontrol/9
+implicit break! (no fall-through)
+
+
+
+variables
+
+how much are they mutable?
+do they have methods - nope we only have functions. At least on the basic variables.
+
+
+
+converting string to number
+(show examples converting "2x"  "" etc) error handling

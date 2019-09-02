@@ -172,6 +172,13 @@ imag(n)
 ![](examples/convert/convert.go)
       // this will convert a string like "abc" or "2x" to 0 and set err
 
+## Converting strings to numbers - strconv
+{id: converting-strings-to-numbers}
+
+![](examples/convert-string/convert-string.go)
+
+* [strconv](https://golang.org/pkg/strconv/)
+
 ## Boolean values
 {id: boolean-values}
 
@@ -218,6 +225,33 @@ Write a program that accepts two numbers on the command line
 {id: solution-rectangular-stdin}
 
 ![](examples/rectangular-stdin/rectangular.go)
+
+## Exercise: count digits
+{id: exercise-count-digits}
+
+Skeleton:
+
+![](examples/count-digits-exercise/count-digits-exercise.go)
+
+Expected Output:
+
+```
+0: 0
+1: 1
+2: 0
+3: 2
+4: 0
+5: 0
+6: 1
+7: 3
+8: 0
+9: 1
+```
+
+## Solution: count digits
+{id: solution-count-digits}
+
+![](examples/count-digits/count-digits.go)
 
 
 ## Read file line by line
@@ -445,6 +479,20 @@ env GOOS=target-OS GOARCH=target-architecture go build package-import-path
 ```
 
 [](https://www.digitalocean.com/community/tutorials/how-to-build-go-executables-for-multiple-platforms-on-ubuntu-16-04)
+
+
+## Zero values
+{id: zero-values}
+
+Variables declared without an explicit initial value are given their zero value.
+
+The zero value is:
+
+* 0 for numeric types,
+* false for the boolean type, and
+* "" (the empty string) for strings.
+
+![](examples/zero/zero.go)
 
 
 ## Constants
