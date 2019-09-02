@@ -78,3 +78,17 @@ do they have methods - nope we only have functions. At least on the basic variab
 
 converting string to number
 (show examples converting "2x"  "" etc) error handling
+
+
+count digits
+
+for _, digit := range digits {
+                count[ digit ]++
+        }
+
+
+maps
+https://tour.golang.org/moretypes/22
+
+
+

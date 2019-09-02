@@ -248,11 +248,43 @@ Expected Output:
 9: 1
 ```
 
+## Exercise: count digits from string
+{id: exercise-count-digits-from-string}
+
+Skeleton:
+
+![](examples/count-digits-skeleton/skeleton.go)
+
 ## Solution: count digits
 {id: solution-count-digits}
 
 ![](examples/count-digits/count-digits.go)
 
+## Solution: count digits from string
+{id: solution-count-digits-from-string}
+
+![](examples/count-digits-again/count-digits-again.go)
+
+## Exercise count words
+{id: exercise-count-words}
+
+![](examples/count-words-skeleton/count-words-skeleton.go)
+
+Expected output:
+
+```
+hello: 1
+world: 2
+how: 2
+are: 2
+you: 2
+and: 1
+```
+
+## Solution count words
+{id: solution-count-words}
+
+![](examples/count-words/count-words.go)
 
 ## Read file line by line
 {id: read-file-line-by-line}
