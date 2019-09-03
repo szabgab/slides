@@ -384,6 +384,21 @@ Skeleton:
 
 ![](examples/count-digits-again/count-digits-again.go)
 
+## Map
+{id: map}
+
+![](examples/map/map.go)
+
+## Delete Map element
+{id: delete-map-element}
+
+![](examples/delete-key/delete-key.go)
+
+## Map element exists
+{id: map-element-exists}
+
+![](examples/exists/exists.go)
+
 ## Exercise count words
 {id: exercise-count-words}
 
@@ -405,7 +420,6 @@ and: 1
 
 ![](examples/count-words/count-words.go)
 
-
 ## Read file line by line
 {id: read-file-line-by-line}
 
@@ -415,12 +429,6 @@ and: 1
 {id: read-file-as-one-string}
 
 ![](examples/slurp_file/slurp_file.go)
-
-## Sum of numbers in a file
-{id: sum-of-numbers}
-
-![](examples/sum/sum.go)
-
 
 ## Random with seed
 {id: random-with-seed}
@@ -562,14 +570,14 @@ var (
 )
 ```
 
-## golang read from stdin (keyboard)
+## Read from stdin (keyboard)
 {id: read-from-stdin}
 
 Read from the stdin (standard input) Get input from the keyboard in golang
 
 ![](examples/read_from_stdin/read_from_stdin.go)
 
-## golang read from stdin (keyboard) with error handling
+## Read from stdin (keyboard) with error handling
 {id: read-from-stdin-with-error-handling}
 
 ![](examples/read_from_stdin_with_error_handling/read_from_stdin_with_error_handling.go)
@@ -676,5 +684,11 @@ How to include external files (e.g. images, html templates) in a golang applicat
 ![](examples/sprintf/sprintf.go)
 
 ![](examples/sprintln/sprintln.go)
+
+## Sum of numbers in a file
+{id: sum-of-numbers}
+
+![](examples/sum/sum.go)
+
 
 
