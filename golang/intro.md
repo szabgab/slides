@@ -212,6 +212,25 @@ go run examples/cli/cli.go  hello world
 
 ![](examples/if/if.go)
 
+## if, else, else if
+{id: if-else-statements}
+
+```
+if cond {
+}
+
+if cond {
+} else {
+}
+
+
+if cond {
+} else if cond {
+} else {
+}
+```
+
+
 ## Exercise: rectangular
 {id: exercise-rectangular}
 
@@ -248,9 +267,14 @@ $ go run calc.go 8 / 2
 ![](examples/rectangular/rectangular.go)
 
 ## Solution: calculator
-{id: solution-calculator}
+{id: solution-calculator-if}
 
-TBD
+![](examples/calc-with-if/calc.go)
+
+## Solution: calculator (switch)
+{id: solution-calculator-switch}
+
+![](examples/calc-with-switch/calc.go)
 
 ## Arrays
 {id: arrays}
@@ -282,11 +306,21 @@ TBD
 
 * [slice internals](https://blog.golang.org/go-slices-usage-and-internals)
 
+## 3-part for loop
+{id: 3-part-for-loop}
+
+![](examples/for-loop/for.go)
+
+
 ## for loop
 {id: for-loop}
 
 ![](examples/loop/loop.go)
 
+## infinite loop, break
+{id: infinite-loop}
+
+![](examples/infinite-loop/loop.go)
 
 ## Exercise: count digits
 {id: exercise-count-digits}
@@ -421,6 +455,21 @@ To run the tests:
 ```
 got test -run ''
 ```
+
+## Some advanced topics
+{id: advanced-topics}
+
+* struct
+* closures
+* pointers
+* go-routines
+* classes (there are no classes)
+* methods
+* interfaces
+* Stringers
+* Cross compilation
+* many standard packages
+* many external packages
 
 ## Resources
 {id: resources}
