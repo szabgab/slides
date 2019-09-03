@@ -40,16 +40,6 @@ slide: error handling (functions return the error value)
 https://www.callicoder.com/golang-functions/
 
 
-
-methods (attached to types), but no classes
-
-interfaces
-
-Stringers - stringification
-
-functions can be closures
-
-
 variadic function
 unknown number of parameters?
 https://medium.com/rungo/variadic-function-in-go-5d9b23f4c01a
@@ -60,18 +50,10 @@ https://tour.golang.org/flowcontrol/6
 short statement (right before the condition)
 
 
-switch - case
-https://tour.golang.org/flowcontrol/9
-implicit break! (no fall-through)
-
-
-
 variables
 
 how much are they mutable?
 do they have methods - nope we only have functions. At least on the basic variables.
-
-
 
 converting string to number
 (show examples converting "2x"  "" etc) error handling
@@ -80,13 +62,12 @@ converting string to number
 count digits
 
 for _, digit := range digits {
-                count[ digit ]++
-        }
+    count[ digit ]++
+}
 
 
 maps
 https://tour.golang.org/moretypes/22
-
 
 
 [append to slice](https://tour.golang.org/moretypes/15)

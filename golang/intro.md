@@ -281,6 +281,8 @@ $ go run calc.go 8 / 2
 
 ![](examples/calc-with-switch/calc.go)
 
+* implicit break! (no fall-through)
+
 ## Arrays
 {id: arrays}
 
@@ -485,9 +487,9 @@ got test -run ''
 * pointers
 * go-routines
 * classes (there are no classes)
-* methods
+* methods (attached to types), but no classes
 * interfaces
-* Stringers
+* Stringers - stringification
 * Cross compilation
 * many standard packages
 * many external packages
