@@ -248,6 +248,11 @@ Write a program that accepts two numbers on the command line
 
 ![](examples/slice/slice.go)
 
+## Slice append
+{id: slice-append}
+
+![](examples/slice_append/slice_append.go)
+
 ## if statement
 {id: if-statement}
 
@@ -257,14 +262,6 @@ Write a program that accepts two numbers on the command line
 {id: for-loop}
 
 ![](examples/loop/loop.go)
-
-
-## Slice append
-{id: slice-append}
-
-![](examples/slice_append/slice_append.go)
-
-[](https://tour.golang.org/moretypes/15)
 
 
 ## Exercise: count digits

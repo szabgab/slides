@@ -92,3 +92,4 @@ https://tour.golang.org/moretypes/22
 
 
 
+[append to slice](https://tour.golang.org/moretypes/15)
