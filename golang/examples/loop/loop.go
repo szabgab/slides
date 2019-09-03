@@ -6,7 +6,7 @@ import (
 
 func main() {
 	fmt.Println("Hello")
-	dwarfs := [...]string{"Doc", "Grumpy", "Happy", "Sleepy", "Bashful", "Sneezy", "Dopey"}
+	dwarfs := []string{"Doc", "Grumpy", "Happy", "Sleepy", "Bashful", "Sneezy", "Dopey"}
 
 	fmt.Println(dwarfs)
 

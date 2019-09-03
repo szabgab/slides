@@ -1,19 +1,13 @@
 package main
 
 import (
-	"fmt"
+    "fmt"
 )
 
 func main() {
-	var res = []int{97, 85, 93}
-	var names []string
-	fmt.Println(res)
-	fmt.Println(res[1])
-	fmt.Println(names)
-	fmt.Println(len(res))
-	fmt.Println(len(names))
-	fmt.Printf("%T", names)
-	//names[0] = "Mary"
-	//names.append("Mary")
-	//fmt.Println(names)
+	var dwarfs = []string{"Doc", "Grumpy", "Happy", "Sleepy", "Bashful", "Sneezy", "Dopey"}
+
+    fmt.Println(len(dwarfs))   // 7
+    fmt.Println(dwarfs)
+    fmt.Println(dwarfs[1])     // Grumpy
 }

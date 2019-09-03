@@ -55,9 +55,6 @@ unknown number of parameters?
 https://medium.com/rungo/variadic-function-in-go-5d9b23f4c01a
 
 
-
-
-
 if
 https://tour.golang.org/flowcontrol/6
 short statement (right before the condition)

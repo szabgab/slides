@@ -1,22 +1,20 @@
 package main
 
 import (
-   "fmt"
+    "fmt"
 )
 
 func main() {
-   dwarfs := []string{}
-   fmt.Println(dwarfs)
-   fmt.Println(len(dwarfs))
+    var dwarfs = []string{}
+    fmt.Println(dwarfs)
+    fmt.Println(len(dwarfs))
 
-   dwarfs = append(dwarfs, "Happy")
-   fmt.Println(dwarfs)
-   fmt.Println(len(dwarfs))
+    dwarfs = append(dwarfs, "Happy")
+    fmt.Println(dwarfs)
+    fmt.Println(len(dwarfs))
 
-   dwarfs = append(dwarfs, "Grumpy", "Sleepy")
-   fmt.Println(dwarfs)
-   fmt.Println(len(dwarfs))
-
+    dwarfs = append(dwarfs, "Grumpy", "Sleepy")
+    fmt.Println(dwarfs)
+    fmt.Println(len(dwarfs))
 }
-
 

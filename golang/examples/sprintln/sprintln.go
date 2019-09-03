@@ -1,11 +1,11 @@
 package main
 
 import (
-	"fmt"
+    "fmt"
 )
 
 func main() {
-	res := fmt.Sprintln("Hello")
-	fmt.Println("World")
-	fmt.Print(res)
+    res := fmt.Sprintln("Hello")
+    fmt.Println("World")
+    fmt.Print(res)
 }

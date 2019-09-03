@@ -156,7 +156,7 @@ imag(n)
 ![](examples/variables/variables.go)
 
 
-## Converting values to other types
+## Converting values to other types - float32, int, string
 {id: converting-types}
 
 * float32()
@@ -166,14 +166,14 @@ imag(n)
 ![](examples/convert/convert.go)
       // this will convert a string like "abc" or "2x" to 0 and set err
 
-## Converting strings to numbers - strconv
+## Converting strings to numbers - strconv, ParseFloat, Atoi, Itoa
 {id: converting-strings-to-numbers}
 
 ![](examples/convert-string/convert-string.go)
 
 * [strconv](https://golang.org/pkg/strconv/)
 
-## Boolean values
+## Boolean values - bool, true, false
 {id: boolean-values}
 
 ![](examples/boolean/boolean.go)
@@ -207,7 +207,10 @@ Variables declared without an explicit initial value are given their zero value 
 go run examples/cli/cli.go  hello world
 ```
 
+## if statement
+{id: if-statement}
 
+![](examples/if/if.go)
 
 ## Exercise: rectangular
 {id: exercise-rectangular}
@@ -215,15 +218,39 @@ go run examples/cli/cli.go  hello world
 Write a program that accepts two numbers on the command line
 (the width and the length of a rectangular) and prints the area.
 
+For example:
+
+```
+$ go run rectangular.go 3 4
+12
+```
+
+## Exercise: calculator
+{id: ecxercise-calculator}
+
+Write a command-line calculator that works with the 4 basic operators `+-*/` like this:
+
+```
+$ go run cacl.go 3 + 4
+7
+
+$ go run calc.go 8 / 2
+4
+```
+
+* Does multiplication also work?
+* What happens if we try to divide by 0?
+
+
 ## Solution: rectangular
 {id: solution-rectangular}
 
 ![](examples/rectangular/rectangular.go)
 
-## Solution: rectangular (STDIN)
-{id: solution-rectangular-stdin}
+## Solution: calculator
+{id: solution-calculator}
 
-![](examples/rectangular-stdin/rectangular.go)
+TBD
 
 ## Arrays
 {id: arrays}
@@ -253,10 +280,7 @@ Write a program that accepts two numbers on the command line
 
 ![](examples/slice_append/slice_append.go)
 
-## if statement
-{id: if-statement}
-
-![](examples/if/if.go)
+* [slice internals](https://blog.golang.org/go-slices-usage-and-internals)
 
 ## for loop
 {id: for-loop}
@@ -341,24 +365,16 @@ and: 1
 ![](examples/sum/sum.go)
 
 
-## Sprintf and Sprintln
-{id: sprintf}
-
-![](examples/sprintf/sprintf.go)
-
-![](examples/sprintln/sprintln.go)
-
 ## Random with seed
 {id: random-with-seed}
 
 ![](examples/random_with_seed/random_with_seed.go)
 
-
-## golang: single and double quotes
+## Single and double quotes
 {id: single-and-double-quotes}
 
-* single quote is for single characters
-* double quote is for strings
+* Single quote is for single characters
+* Double quote is for strings
 
 ## Create hello function
 {id: hello-function}
@@ -576,5 +592,17 @@ How to include external files (e.g. images, html templates) in a golang applicat
 //    j = 23
 // )
 ```
+
+## Solution: rectangular (STDIN)
+{id: solution-rectangular-stdin}
+
+![](examples/rectangular-stdin/rectangular.go)
+
+## Sprintf and Sprintln
+{id: sprintf}
+
+![](examples/sprintf/sprintf.go)
+
+![](examples/sprintln/sprintln.go)
 
 
