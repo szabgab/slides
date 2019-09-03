@@ -23,8 +23,13 @@
 ## Major Open Source Projects
 {id: major-open-source-projects}
 
-* Docker
-* Kubernetes
+* [Docker](https://github.com/docker)
+* [Kubernetes](https://github.com/kubernetes/kubernetes)
+* [Terraform](https://github.com/hashicorp/terraform)
+
+* [Go topic on GitHub](https://github.com/topics/go)
+* [Trending Go projects](https://github.com/trending/go?since=monthly)
+
 
 ## Some companies in Israel
 {id: companies-in-israel}
@@ -311,16 +316,32 @@ $ go run calc.go 8 / 2
 
 ![](examples/for-loop/for.go)
 
+## while-like for loop
+{id: while}
+
+![](examples/while/while.go)
 
 ## for loop
 {id: for-loop}
 
 ![](examples/loop/loop.go)
 
+## for only value (no index)
+{id: for-values}
+
+![](examples/for-values/for-values.go)
+
+
 ## infinite loop, break
 {id: infinite-loop}
 
 ![](examples/infinite-loop/loop.go)
+
+
+## continue
+{id: continue}
+
+![](examples/continue/continue.go)
 
 ## Exercise: count digits
 {id: exercise-count-digits}
