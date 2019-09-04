@@ -469,6 +469,21 @@ two
 one
 ```
 
+## Exercise: Fibonacci
+{id: exercise-fibonacci}
+
+Implement a function that accepts a positive integer (n) and prints out the first n numbers of the Fibonacci series.
+
+## Solution: Fibonacci
+{id: solution-fibonacci}
+
+![](examples/fibonacci/fibonacci.go)
+
+## Solution: Fibonacci recursive
+{id: solution-fibonacci-recursive}
+
+![](examples/fibonacci-recursive/fibonacci-recursive.go)
+
 ## http get request
 {id: http-get-request}
 
