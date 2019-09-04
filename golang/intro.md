@@ -384,10 +384,20 @@ Skeleton:
 
 ![](examples/count-digits-again/count-digits-again.go)
 
-## Map
+## Map (hash, dictionary)
 {id: map}
 
 ![](examples/map/map.go)
+
+## Empty Map
+{id: empty-map}
+
+![](examples/empty-map/empty-map.go)
+
+## Map with data
+{id: map-with-data}
+
+![](examples/map-with-data/map-with-data.go)
 
 ## Delete Map element
 {id: delete-map-element}

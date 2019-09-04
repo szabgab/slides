@@ -3,10 +3,7 @@ package main
 import "fmt"
 
 func main() {
-    // var g map[string]int    // defined type but does not create the container for it
-    // fmt.Printf("%T\n", g)   // map[string]int
-
-    grades := make(map[string]int)
+    grades := map[string]int{}
     fmt.Printf("%T\n", grades)   // map[string]int
 
     grades["Mary"] = 99
