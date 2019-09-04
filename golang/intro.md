@@ -726,4 +726,14 @@ How to include external files (e.g. images, html templates) in a golang applicat
 ![](examples/sum/sum.go)
 
 
+## Exercise: Number Guessing game
+{id: number-guessing-game}
 
+## Solution: Number Guessing game
+{id: solution-number-guessing-game}
+
+![](examples/game1/game1.go)
+
+
+
+![](examples/game/game.go)
