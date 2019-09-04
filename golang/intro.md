@@ -1,6 +1,16 @@
 # Go-lang
 {id: index}
 
+## Self intro
+{id: self-intro}
+
+* [Gabor Szabo](https://www.linkedin.com/in/szabgab/)
+* Help teams improve their development practices
+
+* [Workshops](https://workshops.code-maven.com/)
+* [Training Courses](https://hostlocal.com/)
+
+* [Code Maven Meetup](https://www.meetup.com/Code-Mavens/)
 
 ## Features
 {id: features}
