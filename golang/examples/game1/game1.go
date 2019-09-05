@@ -17,7 +17,7 @@ func main() {
 
 	rand.Seed(time.Now().Unix())
 	var hidden = rand.Intn(20)
-	fmt.Println(hidden)
+	//fmt.Println(hidden)
 	fmt.Print("Your guess: ")
 	var input string
 	var err error
