@@ -1116,17 +1116,13 @@ To git.code-maven.com:demo/
 {id: resources}
 
 * [Our Meetup page](https://www.meetup.com/Code-Mavens/)
-* [Our Facebook page](https://www.facebook.com/Devops.Workshops)
-* [Facebook group](https://www.facebook.com/groups/188753948553382/)
-* [Slides of Gabor](https://code-maven.com/slides/git/)
+* [Slides of Gabor](https://code-maven.com/slides/)
 
 ## Finding jobs
 {id: finding-jobs}
 
-* Send us contact request via LinkedIn (mention the DevOps Workshops in your message).
-* Google is hiring - contact Yonit about it.
+* Send me contact request via LinkedIn (mention the Workshops in your message).
 * Connect to each other via LinkedIn.
 
-* [Yonit Gruber-Hazani](https://www.linkedin.com/in/yonitgruber/)
 * [Gabor Szabo](https://www.linkedin.com/in/szabgab/)
 
