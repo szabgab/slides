@@ -27,12 +27,14 @@
 
 On **Linux** you use your package manger (apt-get, yum, etc...) or install from [git-scm](https://git-scm.com/)
 
-* yum install git-core
-* apt-get install git-core
+* `yum install git-core`
+* `apt-get install git-core`
 
 On **Microsoft Windows** install Git from [git-scm](https://git-scm.com/).
 
 On **Mac OSX** use [Homebrew](https://brew.sh/) or [git-scm](https://git-scm.com/).
+
+* `brew install git`
 
 ## Which version do you have?
 {id: version}
@@ -42,7 +44,7 @@ Windows: use the Git Cmd
 ```
 $ git --version
 
-git version 2.15.0
+git version 2.20.1
 ```
 
 ## Configure Git
@@ -90,7 +92,7 @@ $ git config user.name      # to see specific value
 * Your name
 * Your e-mail address
 
-* [eBook](https://leanpub.com/collab-dev-git/c/code-maven-ws3): https://leanpub.com/collab-dev-git/c/code-maven-ws3
+* [eBook](https://leanpub.com/collab-dev-git)
 
 
 ## Getting help
@@ -109,15 +111,15 @@ $ git help tutorial    # a simple git tutorial
 ## Exercises Session 1
 {id: exercises-1}
 
-* Check if you already have Git installed (open command line, check the version)
-* Install git
-* Open the command line
+* Check if you already have Git installed (open command line, check the version) On MS Windows start the git-bash.
+* If you don't have it installed yet, then install git.
+* Open the command line.
 * Check which version do you have?
-* List the default configuration
+* List the default configuration.
 * Add your name, email to the global configuration.
 * Look at the help page of one of the commands.
 
-## Creating a local repository
+## Creating a local empty repository
 {id: local-rep}
 
 ```
@@ -134,7 +136,7 @@ Initial commit
 nothing to commit (create/copy files and use "git add" to track)
 ```
 
-**This will create a directory called .git and put some files there**
+**This will create a directory called .git and put some files there.**
 
 ## Create first file
 {id: create-first-file}
@@ -163,7 +165,7 @@ nothing added to commit but untracked files present (use "git add" to track)
 * untracked
 * tracked
 
-**tracked files can be**
+**Tracked files can be**
 * unmodified
 * modified
 * staged
@@ -242,7 +244,7 @@ edit the README.txt file again, adding a new row.
 * git add README.txt
 * git status
 * git diff
-* git diff --cached 
+* git diff --cached
 * git diff --staged
 
 ```
@@ -464,7 +466,7 @@ $ git diff --staged
 
 $ git diff HEAD
 * (changes between working copy and HEAD)
-   
+
 ## Remove from stage (unstage)
 {id: unstage}
 
@@ -662,7 +664,7 @@ git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Crese
 * You release a new version of your software.
 * What if later you'll need to come back to the same commit and make some changes?
 * How to remember which SHA-1 was this release?
- 
+
 ```
 $ git tag v1.10
 $ git tag -a v1.10 -m "commit message"
@@ -755,7 +757,7 @@ git checkout master
 * Create three new branches featureA, featureB, and featureC. (or any other names)
 * On `master` make a commit to `README`. (Add a line 'this is master')
 * On `featureA` make a few commits to a file called `A.txt`.
-* On `featureB` make a few commits to a file called `B.txt`.  
+* On `featureB` make a few commits to a file called `B.txt`.
 * On `featureC` make a commit to `README` changing (Add a line 'this is feaure C').
 
 ## Simple automatic merge
@@ -816,7 +818,7 @@ Edit the README file and resolved the conflict, removing the marks and writing t
 
 ```
 $ git add README
-$ git ci -m "featurey merged"
+$ git commit -m "featurey merged"
 ```
 
 ## Exercises Session 5
@@ -838,7 +840,7 @@ edit README add another line
 
 ```
 $ git add README
-$ git ci -m "another line"
+$ git commit -m "another line"
 ```
 
 ```
@@ -846,7 +848,7 @@ $ git checkout master
 $ git merge featurey
 ```
 
-This time the merge was automatic, and it only included the changes since the previous merge. 
+This time the merge was automatic, and it only included the changes since the previous merge.
 
 ## Delete branch
 {id: delete-branch}
