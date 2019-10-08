@@ -165,7 +165,7 @@ imag(n)
 ![](examples/show-type/show-type.go)
 
 
-## Variable declaration
+## Variable declaration (var)
 {id: variable-declaration}
 
 ![](examples/variables/variables.go)
@@ -440,10 +440,12 @@ and: 1
 
 ![](examples/count-words/count-words.go)
 
-## Read file line by line
+## Read file line by line (os.Open)
 {id: read-file-line-by-line}
 
 ![](examples/read_file_line_by_line/read_file_line_by_line.go)
+
+* [OS](https://golang.org/pkg/os/)
 
 ## Read file as one string (slurp)
 {id: read-file-as-one-string}
@@ -781,3 +783,37 @@ The exercise have several levels. Solve them one after the other.
 {id: solution-number-guessing-game-allow-m}
 
 ![](examples/game5/game5.go)
+
+## os.stat information about a file or directory
+{id: os-stat}
+
+![](examples/file-stat/stat.go)
+
+```
+Error: stat hello/world: no such file or directory
+```
+
+If the directory where the file can be found is not executable by the user who runs this code, we'll get
+the following error:
+
+```
+Error: stat hello/world: permission denied
+```
+
+## Solution: single counter
+{id: solution-single-counter}
+
+![](examples/counter-single/single-counter.go)
+
+## TODO: JSON
+{id: json}
+
+![](examples/json/json-round-trip.go)
+
+## TODO: Solution: multiple counter
+{id: solution-multiple-counter}
+
+![](examples/counter-multi/multi-counter.go)
+
+
+
