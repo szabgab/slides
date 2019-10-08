@@ -831,4 +831,27 @@ go run examples/csv/read-csv.go examples/csv/process_csv_file.csv
 ![](examples/counter-multi/multi-counter.go)
 
 
+## Logging
+{id: logging}
+
+![](examples/logging/logger.go)
+
+* There is a default prefix for each log message
+* We can change this prefix using SetFlags
+* By default log prints to STDERR (Standard Error)
+* Fatal prints the message and exits the script with exit code 1
+
+```
+First
+2019/10/08 23:47:13 First log
+2019/10/08 23:47:13 0x490ef0
+2019/10/08 23:47:13 logger.go:14: After setting flags
+2019/10/08 23:47:13 logger.go:15: Oups
+exit status 1
+```
+
+* TODO: log to file
+* TODO: log levels?
+* TODO: log function names
+
 
