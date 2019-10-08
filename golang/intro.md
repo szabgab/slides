@@ -725,6 +725,29 @@ How to include external files (e.g. images, html templates) in a golang applicat
 
 ![](examples/sum/sum.go)
 
+## goroutine
+{id: goroutine}
+
+
+![](examples/goroutine/goroutine.go)
+
+```
+$ go run goroutine.go
+Welcome
+first 0
+first 1
+first 2
+fourth 0
+second 0
+second 1
+third 0
+third 1
+second 2
+fourth 1
+third 2
+fourth 2
+Done
+```
 
 ## Exercise: Number Guessing game
 {id: number-guessing-game}
