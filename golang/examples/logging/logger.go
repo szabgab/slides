@@ -7,7 +7,6 @@ import (
 
 func main() {
     fmt.Println("First")
-    //log.SetFla
     log.Print("First log")
     log.Print(log.Flags)
     log.SetFlags(log.Lshortfile | log.LstdFlags)
