@@ -452,6 +452,11 @@ and: 1
 
 ![](examples/slurp_file/slurp_file.go)
 
+## Write to file
+{id: write-to-file}
+
+![](examples/write/write_file.go)
+
 ## Random with seed
 {id: random-with-seed}
 
