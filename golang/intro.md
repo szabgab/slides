@@ -805,6 +805,21 @@ Error: stat hello/world: permission denied
 
 ![](examples/counter-single/single-counter.go)
 
+## Reading CSV file
+{id: reading-csv-file}
+
+![](examples/csv/process_csv_file.csv)
+
+* Sum the numbers in the 3rd column
+
+![](examples/csv/read-csv.go)
+
+
+```
+go run examples/csv/read-csv.go examples/csv/process_csv_file.csv
+```
+
+
 ## TODO: JSON
 {id: json}
 
