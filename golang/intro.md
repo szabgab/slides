@@ -855,7 +855,13 @@ First
 exit status 1
 ```
 
-* TODO: log to file
+## Logging to a file
+{id: logging-to-a-file}
+
+* Set the output filehandle using `SetOutput`
+
+![](examples/log-to-file/log2file.go)
+
 * TODO: log levels?
 * TODO: log function names
 
