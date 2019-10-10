@@ -865,4 +865,25 @@ exit status 1
 * TODO: log levels?
 * TODO: log function names
 
+## Split on whitespaces
+{id: split-on-whitespaces}
+
+
+![](examples/split-on-whitespace/split-ws.go)
+
+```
+'  hello    space   world 42 '
+[hello space world 42]
+4
+```
+
+* [strings.Fields](https://golang.org/pkg/strings/#Fields)
+
+## Reverse Polish Calculator
+{id: reverse-polish-calculator}
+
+* TODO: finish this
+
+![](examples/rpc/rpc.go)
+
 
