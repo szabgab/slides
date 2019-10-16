@@ -292,7 +292,7 @@ Observe how much longer the second method takes.
 {id: techniques}
 
 * From the client after a year of development.
-* Telemetry: servers, client interaction, errors, failures... Log and monitor everything. 
+* Telemetry: servers, client interaction, errors, failures... Log and monitor everything.
 * Continuous Deployment (CD).
 * Code reviews.
 * Continuous Integration (CI).
@@ -415,9 +415,9 @@ The same team
 ## Design
 {id: design}
 
-* Design for both external and internal customers. 
-* The external pays for it but the internal also uses it. 
-* Optimize for downstream work center. 
+* Design for both external and internal customers.
+* The external pays for it but the internal also uses it.
+* Optimize for downstream work center.
 
 ## Features
 {id: features}
@@ -452,7 +452,7 @@ The same team
 ## Blue-green deployment
 {id: blue-green-deployment}
 
-* Decouple changes to the database and changes to the application. 
+* Decouple changes to the database and changes to the application.
 * Duplicate the whole stack.
 
 ## Canary release
@@ -492,7 +492,7 @@ The same team
 * Continuous Improvement.
 * Continuous Learning.
 
-This needs investment both time and money and it leads to change. 
+This needs investment both time and money and it leads to change.
 
 ## Hierarchy of abstractions
 {id: hierarchy-of-abstractions}
@@ -518,11 +518,11 @@ This needs investment both time and money and it leads to change.
 ## What is in there for me, the developer?
 {id: what-is-in-there-for-the-developer}
 
-Most engineers I know want to enjoy work and be proud of their accomplishments. 
+Most engineers I know want to enjoy work and be proud of their accomplishments.
 
 * Safer work place - no fear of change, no fear of release.
-* Better working environment. 
-* Much less bugs and rework of the same code. 
+* Better working environment.
+* Much less bugs and rework of the same code.
 * Allow you to do other work when this is done
 
 * Learn new things.
@@ -537,7 +537,7 @@ Most engineers I know want to enjoy work and be proud of their accomplishments.
 * We would like to see results soon.
 
 * Top down support.
-* Bottom up experimentation, feedback. 
+* Bottom up experimentation, feedback.
 
 * Get support from the top: VP RnD, CxO.
 * Work on team level.
@@ -557,7 +557,7 @@ by Douglas McGregor
 ## Time boxing experiment
 {id: time-boxing-experiment}
 
-* Use time boxing for experimentation to reduce risk and increase chances of acceptance. 
+* Use time boxing for experimentation to reduce risk and increase chances of acceptance.
 
 ## Greenfield projects VS brownfield projects
 {id: brownfield-projects}
@@ -583,13 +583,13 @@ The two most important aspects are:
 Start with these.
 
 * Discuss the things you value.
-* Then build in short feedback loops in your process. 
+* Then build in short feedback loops in your process.
 
 ## Top down approach
 {id: top-down-approach}
 
 * Pick the value stream to be the first to convert:
-* Start with the team that has the most open attitude to the new way of work. 
+* Start with the team that has the most open attitude to the new way of work.
 * Educate people. Both about the ideas and about the techniques.
 * Find the first bottleneck that is in your power to change.
 * Reinforce learning culture.
@@ -642,7 +642,7 @@ Videos
 Blog posts
 
 * [No, You are not Dumb! Programmers do spend a lot of time Understanding Code...](http://blog.architexa.com/2010/05/no-you-are-not-dumb-programmers-do-spend-a-lot-of-time-understanding-code/) links to surveys.
-* [How Software Developers Really Spend Their Time](https://readwrite.com/2013/04/25/how-software-developers-really-spend-their-time/) 
+* [How Software Developers Really Spend Their Time](https://readwrite.com/2013/04/25/how-software-developers-really-spend-their-time/)
 * [You're Doing Scrum Wrong, and Here's How to Fix It](https://hackernoon.com/youre-doing-scrum-wrong-and-here-s-how-to-fix-it-6d45fdd26721)
 
 * [Manifesto for Agile Software Development](http://agilemanifesto.org/)

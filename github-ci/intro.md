@@ -1,4 +1,4 @@
-# Continuous Integration for GitHub projects 
+# Continuous Integration for GitHub projects
 {id: index}
 
 ## Self introduction
