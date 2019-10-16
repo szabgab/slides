@@ -1,4 +1,4 @@
-# DevOps Workshops: Introduction to Ansible
+# Introduction to Ansible
 {id: index}
 
 
@@ -22,13 +22,13 @@
 ## Why
 {id: startwithwhy}
 
-Why are we here? 
+Why are we here?
 
-* Scale 
-* Predetermined identical configuration 
+* Scale
+* Predetermined identical configuration
 * Infrustructue as code (keep it all in git)
 * Configuration versioning . (rolling back)
-* Known state of the system 
+* Known state of the system
 * When its all in git - every change is linked to a specific request ID or bug ID
 
 ![dog_meme](dog_meme.jpg)
@@ -36,9 +36,9 @@ Why are we here?
 ## How
 {id: how}
 
-Configuration management software - we have many options today: 
+Configuration management software - we have many options today:
 
-* CFEngine  - runs on C 
+* CFEngine  - runs on C
 * Puppet    - Ruby , series of steps
 * Chef      - DSL (Ruby-based) , declarative
 * Ansible   - Python , series of steps (like a script), YAML files
@@ -73,8 +73,8 @@ We will need a few hosts installed on the laptops or a few linux instances in th
 ## The samples structure
 {id: imagefortraining}
 
-We are going to use one server and 2 hosts to train on, 
-our network will look like: 
+We are going to use one server and 2 hosts to train on,
+our network will look like:
 
 ![ansible_structure](ansible_structure.jpg)
 
@@ -85,7 +85,7 @@ our network will look like:
 * [install the Ansible on the ansible server](http://docs.ansible.com/ansible/latest/intro_installation.html)
 
 We will call this server the Ansible server
-for Ubuntu you can use these commands: 
+for Ubuntu you can use these commands:
 
 ```
 sudo apt-get update
@@ -129,8 +129,8 @@ ssh ubuntu-2
 
 * Inventory file
 
-This file describes the list of server and groups Ansible is going to work on, 
-our sample structure is going to be: 
+This file describes the list of server and groups Ansible is going to work on,
+our sample structure is going to be:
 
 ```
 [virtualhosts]
@@ -140,7 +140,7 @@ ubuntu-2
 ```
 
 Ansible has a default location to add its config files.
-The installation for Ubuntu already created the folder and basic files, 
+The installation for Ubuntu already created the folder and basic files,
 lets add the hosts in the default hosts file for ansible:
 
 ```
@@ -149,7 +149,7 @@ sudo nano /etc/ansible/hosts
 
 and add the lines above into it.
 
-If we do not edit the default location we can create a inventory file in our working folder and jusr call it on every run with: 
+If we do not edit the default location we can create a inventory file in our working folder and jusr call it on every run with:
 
 ```
 -i inventory.cfg
@@ -158,13 +158,13 @@ If we do not edit the default location we can create a inventory file in our wor
 ## Running Ansible
 {id: runningansible}
 
-there are 3 ways to run Ansible: 
+there are 3 ways to run Ansible:
 
 * running a command: `ansible GROUP -a COMMAND`
 * running a module: `ansible GROUP -m MODULE`
 * running a playbook: `ansible-playbook playbook.yml`
-  
-[Ansible extensive list of builtin modules](http://docs.ansible.com/ansible/latest/modules_by_category.html) there are about 450~ modules in the list, some popular ones are: 
+ 
+[Ansible extensive list of builtin modules](http://docs.ansible.com/ansible/latest/modules_by_category.html) there are about 450~ modules in the list, some popular ones are:
 
 * **file**     - creates files and directories , sets permissions
 * **apt/yum**  - manages packages - install, update, remove
@@ -207,7 +207,7 @@ ssh-copy-id ubuntu-1
 ssh-copy-id ubuntu-2
 ```
 
-From now on `ssh` to the servers will be done without asking for password. 
+From now on `ssh` to the servers will be done without asking for password.
 Make sure you have `python` (aka Python 2) installed on all the servers:
 
 ```
@@ -240,21 +240,21 @@ ubuntu-1 | SUCCESS => {
 ## Some simple commands
 {id: morecommands}
 
-Go ahead and try some more: 
+Go ahead and try some more:
 
-Showing the date: 
+Showing the date:
 
 ```
 ansible virtualhosts -a "date"
 ```
 
-Showing the hostname: 
+Showing the hostname:
 
 ```
 ansible virtualhosts -a "hostname"
 ```
 
-Listing directories: 
+Listing directories:
 
 ```
 ansible virtualhosts -a "ls -la /var"
@@ -285,7 +285,7 @@ and add this line:
 yonit  ALL = (ALL) NOPASSWD: ALL
 ```
 
-Repeat for all the servers. 
+Repeat for all the servers.
 
 Another option would be copying the content of my `.ssh/authorized_keys` in the servers to `/root/.ssh/authorized_keys`
 which would allow me to connect from my user directly to the root user on the remote servers.
@@ -294,7 +294,7 @@ which would allow me to connect from my user directly to the root user on the re
 ## Install a package
 {id: installing-packages}
 
-Let's try again: 
+Let's try again:
 
 ```
 $ ansible virtualhosts -m apt -a "name=nginx state=present" -b
@@ -328,7 +328,7 @@ yonit@ubuntu-2:~$ service nginx status
      Docs: man:nginx(8)
 ```
 
-You can try to access it: 
+You can try to access it:
 
 ```
 $ curl http://ubuntu-1
@@ -337,15 +337,15 @@ $ curl http://ubuntu-1
 ## removing a package
 {id: removingapackage}
 
-Testing before running: 
+Testing before running:
 
 ```
 ansible virtualhosts -C -m service -a "name=nginx state=stopped" -b
 ```
 
-will test the command without actualy running it. 
+will test the command without actualy running it.
 
-we can remove the nginx package with these commands, 
+we can remove the nginx package with these commands,
 
 stopping:
 
@@ -360,7 +360,7 @@ ubuntu-1 | SUCCESS => {
         "ActiveEnterTimestamp": "Tue 2018-03-20 23:22:34 IST",
         "ActiveEnterTimestampMonotonic": "2363436511",
         "ActiveExitTimestamp": "Tue 2018-03-20 23:20:30 IST",
-        
+
 
 ```
 
@@ -384,7 +384,7 @@ So some parsing or rediredting might not work.
 To fix that you can use the shell module:
 
 ```
-$ ansible virtualhosts -m shell -a "hostname ; date ; uptime ; free" 
+$ ansible virtualhosts -m shell -a "hostname ; date ; uptime ; free"
 
 ubuntu-2 | SUCCESS | rc=0 >>
 ubuntu-2
@@ -403,7 +403,7 @@ Mem:        1012448       79836      422828        3264      509784      781300
 Swap:        483800           0      483800
 ```
 
-One last module to check is the setup module which lists tons of information on our servers: 
+One last module to check is the setup module which lists tons of information on our servers:
 
 ```
 $ ansible virtualhosts -m setup
@@ -432,7 +432,7 @@ ubuntu-1 | SUCCESS => {
 ## Playbooks - combining tasks
 {id: playbookintro}
 
-Playbook is a collection of tasks that we want to group together. 
+Playbook is a collection of tasks that we want to group together.
 
 lets review nginx install in a playbook format: `nginx_install.yml`
 
@@ -518,7 +518,7 @@ the command to run the playbook is a little different than the regular run comma
 
 `ansible-playbook nginx_install.yml`
 
-output would be: 
+output would be:
 
 ```
 PLAY [virtualhosts] ********************************************************************************
@@ -571,7 +571,7 @@ ubuntu-2                   : ok=3    changed=0    unreachable=0    failed=0
 ## Adding vars to the play
 {id: vars}
 
-Variables can be defines in many locations, and we can get them from the facts gathering stage as well. 
+Variables can be defines in many locations, and we can get them from the facts gathering stage as well.
 
 lets add some content to the nginx servers, create a file called `index.html.tpl` with the content:
 
@@ -594,7 +594,7 @@ lets add some content to the nginx servers, create a file called `index.html.tpl
 </html>
 ```
 
-and run the playbook again: 
+and run the playbook again:
 
 ```
 yonit@ansible_server:~/ansible$ ansible-playbook nginx_install.yml
@@ -622,7 +622,7 @@ ubuntu-1                   : ok=4    changed=1    unreachable=0    failed=0
 ubuntu-2                   : ok=4    changed=1    unreachable=0    failed=0
 ```
 
-now lets see it: 
+now lets see it:
 
 ```
 yonit@ansible_server:~/ansible$ curl http://ubuntu-2/
@@ -651,11 +651,11 @@ To get the index files to display the name of the server i need to use a variabl
 
 lets rename the index.html file: `mv index.html.tpl index.html.j2`
 
-and edit the playbook, change these line: 
+and edit the playbook, change these line:
 
 ```
 src=index.html.tpl
-to 
+to
 src=index.html.j2
 ```
 
@@ -680,7 +680,7 @@ and lets slightly change index.html.j2:
 </html>
 ```
 
-run the playbook: 
+run the playbook:
 
 ```
 yonit@ansible_server:~/ansible$ ansible-playbook nginx_install.yml
@@ -708,7 +708,7 @@ ubuntu-1                   : ok=4    changed=1    unreachable=0    failed=0
 ubuntu-2                   : ok=4    changed=1    unreachable=0    failed=0
 ```
 
-and now: 
+and now:
 
 ```
 yonit@ansible_server:~/ansible$ curl http://ubuntu-2/

@@ -1,4 +1,4 @@
-# DevOps Workshops: Git
+# Git Intro
 {id: index}
 
 ## Self intro

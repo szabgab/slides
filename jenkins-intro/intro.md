@@ -1,4 +1,4 @@
-# DevOps Workshops: Jenkins
+# Jenkins
 {id: index}
 
 ## About us
