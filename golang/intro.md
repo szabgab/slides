@@ -765,7 +765,7 @@ The exercise have several levels. Solve them one after the other.
 * The user can guess multiple times. Exit only when there was a direct hit.
 * The user can enter x any time and quite the game.
 * The user can enter p any time and the hidden value is printed (cheating)
-* Allow the user to change the game to "move" mode by typing "m". In this mode after every guess after we compared the values change the hidden number by -2, -1, 0, 1, or 2. 
+* Allow the user to change the game to "move" mode by typing "m". In this mode after every guess after we compared the values change the hidden number by -2, -1, 0, 1, or 2.
 
 ## Solution: Number Guessing game - one guess
 {id: solution-number-guessing-game-one-guess}

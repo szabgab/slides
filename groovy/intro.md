@@ -13,7 +13,7 @@
 * Jenkins Pipelines
 * ...
 
-## Groovy Resources 
+## Groovy Resources
 {id: groovy-resources}
 
 * [Apache Groovy home](http://groovy-lang.org/)
