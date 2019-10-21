@@ -1,5 +1,5 @@
 # Collaborative Development and Open Source Projects
-{id: collab-dev}
+{id: index}
 
 ## Who is this for?
 {id: who-is-this-for}
