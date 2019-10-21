@@ -1,5 +1,6 @@
 ansible-intro
 aws-lambda
+collab-dev
 docker
 github-ci
 git-intro
