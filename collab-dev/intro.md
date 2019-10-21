@@ -134,10 +134,10 @@
 * git clone git@github.com:cm-demo/participants.git
 * git branch add-myself
 * git checkout add-myself
-* edit the json file
+* edit the participants.json file
 * git status
 * git diff
-* git add .
+* git add participants.json
 * git commit -m "some excuse"
 * git push
 * git push --set-upstream origin add-myself
@@ -147,7 +147,6 @@
 * git pull
 * git remote
 * git rebase
-
 
 ## Task: Update Code-Maven articles or these slides
 {id: task-slides}
@@ -168,14 +167,14 @@
 * Add the JSON file representing the event to the `data/events` directory.
 * See [EVENTS](https://github.com/szabgab/codeandtalk.com/blob/main/docs/EVENTS.md) for details.
 
-## Awesome for beginners and non-programmers
+## Task: Awesome for beginners and non-programmers
 {id: awesome-for-beginners}
 
 * [Awesome for beginners](https://github.com/MunGell/awesome-for-beginners).
 * [Awesome for non-programmers](https://github.com/szabgab/awesome-for-non-programmers/)
 * List of projects with tasks that can be done by beginner contributors.
 
-## Pydigger
+## Task: Pydigger
 {id: pydigger}
 
 * [PyDigger](https://pydigger.com/)
