@@ -1,6 +1,12 @@
 # Collaborative Development and Open Source Projects
 {id: index}
 
+## Videos
+{id: videos}
+
+* [Hebrew](https://he.code-maven.com/collab-dev)
+* English - TBD
+
 ## Who is this for?
 {id: who-is-this-for}
 
