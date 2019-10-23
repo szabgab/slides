@@ -119,6 +119,15 @@ $ git help tutorial    # a simple git tutorial
 * Add your name, email to the global configuration.
 * Look at the help page of one of the commands.
 
+## 4 Ways to get started
+{id: 4-ways-to-get-started}
+
+* Create empty local repository
+* Create repository in local directory where we already have files of the project
+* Clone remote repository
+* Fork and then clone remote repository of someone else
+
+
 ## Creating a local empty repository
 {id: local-rep}
 
@@ -1046,28 +1055,41 @@ git commit -am "7"
 * Using bisect find the commit that broke it.
 
 
-## Using remote repository
+## Working with remote repository
 {id: using-remote-repository}
+
+* fork repository (service of the host)
 
 * git clone
 * git push
-* git pull   (fetch and merge)
+* git pull   (fetch and merge or fetch and rebase)
+
+* Send Pull-Request (service of the host)
+
+* git remote add upstream ..
+* git pull upstream master
+
+## Fork repository
+{id: fork-repository}
+
+* Visit [particpants](https://github.com/collab-dev/participants)
+* fork
 
 ## Clone repository
 {id: clone-repository}
 
 ```
 cd ~/work
-$ git clone ws@git.code-maven.com:demo/
-cd demo
+$ git clone https://github.com/cm-demo/participants.git
+cd participants
 ```
 
 
 ```
 git remote -v
 
-origin	ws@git.code-maven.com:demo/ (fetch)
-origin	ws@git.code-maven.com:demo/ (push)
+origin	https://github.com/cm-demo/participants (fetch)
+origin	https://github.com/cm-demo/participants (push)
 ```
 
 ## Make some local changes
@@ -1075,8 +1097,8 @@ origin	ws@git.code-maven.com:demo/ (push)
 
 ```
 git checkout -b feature
-   edit file
-git add .
+   edit participants.json file
+git add participants.json
 git commit -m "some change"
 ```
 
@@ -1096,9 +1118,29 @@ To push the current branch and set the remote as upstream, use
 $  git push -u origin feature
 
 Total 0 (delta 0), reused 0 (delta 0)
-To git.code-maven.com:demo/
+To github.com:collab-dev/participants/
  * [new branch]      feature -> feature
 Branch 'feature' set up to track remote branch 'feature' from 'origin'.
+```
+
+## Follow the chnages in the original repository
+{id: follow-changes}
+
+
+```
+git remote add upstream https://github.com/collab-dev/participants.git
+git checkout master
+git pull upstream master
+git push
+```
+
+
+## Remove local branch
+{id: remove-local-branch}
+
+```
+git checkout maste
+git branch -d feature
 ```
 
 ## Remove remote branch
@@ -1108,7 +1150,7 @@ Branch 'feature' set up to track remote branch 'feature' from 'origin'.
 ```
 $  git push origin :feature
 
-To git.code-maven.com:demo/
+To github.com:collab-dev/participants/
  - [deleted]         feature
 ```
 
