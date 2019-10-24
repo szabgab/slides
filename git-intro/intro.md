@@ -1123,7 +1123,24 @@ To github.com:collab-dev/participants/
 Branch 'feature' set up to track remote branch 'feature' from 'origin'.
 ```
 
-## Follow the chnages in the original repository
+## Send Pull-Request
+{id: send-pull-request}
+
+* Visit [particpants](https://github.com/collab-dev/participants)
+
+## Make more changes and update the pull-request
+{id: update-pull-request}
+
+```
+git add .
+git commit
+git push
+```
+
+* Visit [particpants](https://github.com/collab-dev/participants)
+
+
+## Follow the changes in the original repository
 {id: follow-changes}
 
 
@@ -1133,7 +1150,6 @@ git checkout master
 git pull upstream master
 git push
 ```
-
 
 ## Remove local branch
 {id: remove-local-branch}
