@@ -1,1 +1,1 @@
-Collab dev, firs open source contribution
+Collab dev, first open source contribution
