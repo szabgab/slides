@@ -91,6 +91,7 @@ $ git config user.name      # to see specific value
 
 * Your name
 * Your e-mail address
+* `youruser+github@gmail.com`
 
 * [eBook](https://leanpub.com/collab-dev-git)
 
