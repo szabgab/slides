@@ -1,0 +1,21 @@
+      537470 function calls in 0.325 seconds
+
+Ordered by: standard name
+
+ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+     1    0.000    0.000    0.325    0.325 <string>:1(<module>)
+   999    0.002    0.000    0.002    0.000 random.py:173(randrange)
+   999    0.000    0.000    0.000    0.000 slow.py:10(g)
+     1    0.000    0.000    0.325    0.325 slow.py:14(main)
+     1    0.119    0.119    0.322    0.322 slow.py:21(sort)
+     1    0.001    0.001    0.003    0.003 slow.py:31(get_str)
+498501    0.189    0.000    0.189    0.000 slow.py:37(swap)
+   999    0.008    0.000    0.010    0.000 slow.py:4(f)
+   999    0.000    0.000    0.000    0.000 {chr}
+  1000    0.000    0.000    0.000    0.000 {len}
+     1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+     1    0.000    0.000    0.000    0.000 {method 'join' of 'str' objects}
+ 31968    0.003    0.000    0.003    0.000 {method 'random' of '_random.Random' objects}
+  1999    0.003    0.000    0.003    0.000 {range}
+
+

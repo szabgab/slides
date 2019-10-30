@@ -1,0 +1,11 @@
+{
+   subscriptions : [
+      {
+         name : "Foo Bar",
+         source_name : "pypi",
+         space names : [
+            "Foo", "Bar"
+         ]
+      }
+   ]
+}

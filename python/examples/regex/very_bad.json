@@ -1,0 +1,14 @@
+[
+{
+    TID : "t-0_login_sucess"
+    Test :
+    [
+        {SetValue : { uname : "Zorg", pass : "Rules"} },
+        {DoAction : "login"},
+        {CheckResult: [0, LOGGED_IN]}
+    ]
+},
+{ TID : "t-1_login_failure", Test : [ {SetValue :
+{ uname : "11", pass : "im2happy78"} },
+{DoAction : "login"}, {CheckResult: [-1000, LOGGED_OUT]} ] }
+]

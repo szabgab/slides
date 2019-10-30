@@ -1,0 +1,8 @@
+
+    def test_negative_deposit():
+        b = Bank(10)
+        with pytest.raises(Exception) as exinfo:
+            b.deposit(-1)
+>       assert exinfo.type == NegativeDeposite
+E       AssertionError: assert <class 'ValueError'> == NegativeDeposite
+E        +  where <class 'ValueError'> = <ExceptionInfo ValueError tblen=2>.type

@@ -1,0 +1,7 @@
+Rect[10, 20]
+Rect[10, 60]
+Rect[10, 20]
+Traceback (most recent call last):
+  File "rect.py", line 8, in <module>
+    print(4 * r) 
+TypeError: unsupported operand type(s) for *: 'int' and 'Rect'

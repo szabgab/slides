@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<main>
+  <person id="1">
+    <fname>Foo</fname>
+    <lname>Bar</lname>
+  </person>
+  <person id="3">
+    <fname>Moo</fname>
+    <lname>Zorg</lname>
+    <email id="home">moo@zorghome.com</email>
+    <email id="work">moo@work.com</email>
+  </person>
+</main>

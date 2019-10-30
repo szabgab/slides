@@ -1,0 +1,4 @@
+f args:    (1, 2)
+f kwargs:  {'a': 3, 'b': 4}
+g args:    ((1, 2), {'a': 3, 'b': 4})
+g kwargs:  {}

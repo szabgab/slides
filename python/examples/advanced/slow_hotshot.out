@@ -1,0 +1,15 @@
+         501501 function calls in 0.337 seconds
+
+   Ordered by: internal time, call count
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+   498501    0.192    0.000    0.192    0.000 slow.py:37(swap)
+        1    0.136    0.136    0.335    0.335 slow.py:21(sort)
+      999    0.006    0.000    0.006    0.000 slow.py:4(f)
+      999    0.002    0.000    0.002    0.000 random.py:173(randrange)
+        1    0.001    0.001    0.003    0.003 slow.py:31(get_str)
+      999    0.000    0.000    0.000    0.000 slow.py:10(g)
+        1    0.000    0.000    0.337    0.337 slow.py:14(main)
+        0    0.000             0.000          profile:0(profiler)
+
+

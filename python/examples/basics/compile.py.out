@@ -1,0 +1,5 @@
+2
+Traceback (most recent call last):
+  File "compile.py", line 5, in <module>
+    print y
+NameError: name 'y' is not defined

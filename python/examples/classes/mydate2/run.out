@@ -1,0 +1,9 @@
+Date(2013, 11, 22)
+Date(2014, 1, 27)
+
+<class 'mydate.Date'>
+Date(2013, 10, 20)
+
+<class 'mydate.Date'>
+Date(2014, 1, 27)
+Date(2012, 10, 20)

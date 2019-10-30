@@ -1,0 +1,8 @@
+7
+10
+26
+Traceback (most recent call last):
+  File "examples/strings/index2.py", line 8, in <module>
+    print a.index("gr", 8, 16) 
+ValueError: substring not found
+

@@ -1,0 +1,18 @@
+excel-tab
+  delimiter        '\t'
+  doublequote      '1'
+  escapechar       'None'
+  lineterminator   '\r\n'
+  quotechar        '"'
+  quoting          '0'
+  skipinitialspace '0'
+  strict           '0'
+excel
+  delimiter        ','
+  doublequote      '1'
+  escapechar       'None'
+  lineterminator   '\r\n'
+  quotechar        '"'
+  quoting          '0'
+  skipinitialspace '0'
+  strict           '0'

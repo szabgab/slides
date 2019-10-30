@@ -1,0 +1,11 @@
+__enter__ a
+__enter__ b
+something a
+__exit__  b
+__exit__  a
+Traceback (most recent call last):
+  File "context-managers.py", line 27, in <module>
+    main()
+  File "context-managers.py", line 23, in main
+    raise Exception('nono')
+Exception: nono

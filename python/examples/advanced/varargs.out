@@ -1,0 +1,14 @@
+a:      2
+b:      3
+args:   (4, 5)
+kwargs: {'c': 6, 'd': 7}
+
+a:      2
+b:      1
+args:   ()
+kwargs: {'c': 5, 'd': 6}
+
+a:      10
+b:      1
+args:   ()
+kwargs: {}

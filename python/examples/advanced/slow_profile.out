@@ -1,0 +1,22 @@
+         537471 function calls in 3.078 seconds
+
+   Ordered by: standard name
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+      999    0.003    0.000    0.003    0.000 :0(chr)
+        1    0.000    0.000    0.000    0.000 :0(join)
+     1000    0.003    0.000    0.003    0.000 :0(len)
+    31968    0.083    0.000    0.083    0.000 :0(random)
+     1999    0.009    0.000    0.009    0.000 :0(range)
+        1    0.001    0.001    0.001    0.001 :0(setprofile)
+        1    0.000    0.000    3.076    3.076 <string>:1(<module>)
+        0    0.000             0.000          profile:0(profiler)
+        1    0.000    0.000    3.078    3.078 profile:0(slow.main(1000))
+      999    0.009    0.000    0.012    0.000 random.py:173(randrange)
+      999    0.005    0.000    0.008    0.000 slow.py:10(g)
+        1    0.000    0.000    3.076    3.076 slow.py:14(main)
+        1    1.410    1.410    3.053    3.053 slow.py:21(sort)
+        1    0.008    0.008    0.023    0.023 slow.py:31(get_str)
+   498501    1.456    0.000    1.456    0.000 slow.py:37(swap)
+      999    0.090    0.000    0.171    0.000 slow.py:4(f)
+

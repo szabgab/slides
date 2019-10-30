@@ -1,0 +1,8 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.6.3, pytest-3.3.0, py-1.5.2, pluggy-0.6.0
+rootdir: /Users/gabor/work/training/python, inifile:
+collected 1 item
+
+examples/pytest/test_mymath.py .                                         [100%]
+
+=========================== 1 passed in 0.01 seconds ===========================

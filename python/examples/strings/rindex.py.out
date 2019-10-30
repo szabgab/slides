@@ -1,0 +1,8 @@
+14
+14
+10
+26
+Traceback (most recent call last):
+  File "examples/strings/rindex.py", line 10, in <module>
+    print(a.rindex("gr", 8, 16))
+ValueError: substring not found

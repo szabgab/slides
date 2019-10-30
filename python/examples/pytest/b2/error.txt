@@ -1,0 +1,5 @@
+    def test_negative_deposit():
+        b = Bank(10)
+        with pytest.raises(NegativeDeposite) as e:
+>           b.deposit(-1)
+E           Failed: DID NOT RAISE <class 'Exception'>

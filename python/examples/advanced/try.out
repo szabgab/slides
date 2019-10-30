@@ -1,0 +1,11 @@
+3
+This will run if there was no exception at all
+Always executes. 6/2 ended.
+Always executes. 6/0 ended.
+Always executes. 6/a ended.
+Traceback (most recent call last):
+  File "try.py", line 17, in <module>
+    divide(6, "a")
+  File "try.py", line 4, in divide
+    print(x/y)
+TypeError: unsupported operand type(s) for /: 'int' and 'str'

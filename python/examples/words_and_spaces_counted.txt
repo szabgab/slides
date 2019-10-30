@@ -1,0 +1,17 @@
+ad            13
+commodo        2
+dolor          6
+dolore         2
+eu             1
+in             6
+incididunt     1
+ipsum          1
+labor         10
+lorem          5
+occaecat       1
+proident       1
+qui            3
+reprehenderit  1
+sint           3
+tempor         1
+ut             5

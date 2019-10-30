@@ -1,0 +1,4 @@
+Avocado=33
+Cucumber=27
+Pumpkin=100
+Tomato=78

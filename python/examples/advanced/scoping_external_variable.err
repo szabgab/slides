@@ -1,0 +1,8 @@
+ok
+42
+Traceback (most recent call last):
+  File "scoping_external_variable.py", line 8, in <module>
+    f()
+  File "scoping_external_variable.py", line 3, in f
+    print(a)
+UnboundLocalError: local variable 'a' referenced before assignment

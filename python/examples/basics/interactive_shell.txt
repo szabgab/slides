@@ -1,0 +1,20 @@
+>>> print "hello"
+hello
+
+>>> "hello"
+'hello'
+
+>>> 6
+6
+
+>>> len("abc")
+3
+
+>>> "abc" + 6
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: cannot concatenate 'str' and 'int' objects
+
+>>> "abc" + str(6)
+'abc6'
+

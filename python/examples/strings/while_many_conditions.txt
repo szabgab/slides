@@ -1,0 +1,3 @@
+
+while (line is not empty) and (line has no # at the  beginning) and (line has no // at the beginning):
+   do the real stuff

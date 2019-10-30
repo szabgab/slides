@@ -1,0 +1,10 @@
+foo Calling fibo(5)
+foo Calling fibo(4)
+foo Calling fibo(3)
+foo Calling fibo(2)
+foo Calling fibo(1)
+foo Calling fibo(2)
+foo Calling fibo(3)
+foo Calling fibo(2)
+foo Calling fibo(1)
+5

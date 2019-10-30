@@ -1,0 +1,13 @@
+<class 'mydate.Date'>
+Date(2013, 10, 20)
+
+True
+False
+
+<class 'mydate.Date'>
+Traceback (most recent call last):
+  File "run.py", line 12, in <module>
+    x = mydate.Date.from_str('2013-10-32')
+  File ".../python/examples/classes/mydate4/mydate.py", line 22, in from_str
+    raise Exception("Invalid date")
+Exception: Invalid date

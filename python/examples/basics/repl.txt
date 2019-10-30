@@ -1,0 +1,17 @@
+>>> a = "abc"
+>>> len(a)
+3
+
+>>> a = '3'
+>>> a + 3
+Traceback (most recent call last):
+  File "<stdin>", line 1, in &lt;module>
+TypeError: cannot concatenate 'str' and 'int' objects
+
+>>> int(a) + 3
+6
+
+>>> a = '2.3'
+>>> float(a) + 1
+3.3
+

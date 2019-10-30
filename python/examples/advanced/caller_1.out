@@ -1,0 +1,9 @@
+in f before g
+in g
+__file__:      caller.py
+__line__:      15
+__function__:  g
+* file caller.py
+* line 15
+* sub g
+in f after g
