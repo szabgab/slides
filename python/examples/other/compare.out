@@ -1,0 +1,6 @@
+True
+Traceback (most recent call last):
+  File "examples/other/compare.py", line 6, in <module>
+    print(x > y)     # True
+TypeError: '>' not supported between instances of 'str' and 'int'
+

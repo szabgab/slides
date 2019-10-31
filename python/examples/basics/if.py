@@ -1,8 +1,6 @@
-from __future__ import print_function
-
 def main():
-    a = raw_input('First number: ')
-    b = raw_input('Second number: ')
+    a = input('First number: ')
+    b = input('Second number: ')
 
     if int(b) == 0:
         print("Cannot divide by 0")

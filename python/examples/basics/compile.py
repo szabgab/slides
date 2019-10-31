@@ -1,5 +1,3 @@
-from __future__ import print_function
-
 x = 2
 print(x)
 print(y)

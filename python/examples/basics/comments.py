@@ -1,5 +1,3 @@
-from __future__ import print_function
-
 print("hello")
 
 # Comments for other developers
@@ -9,8 +7,8 @@ print("hello")
 print(42) # the answer
 
 '''
-  Using three single-quotes on both ends (a triple-quoted string) 
+  Using three single-quotes on both ends (a triple-quoted string)
   can be used as a multi-line comment.
-''' 
+'''
 
 print("world")
