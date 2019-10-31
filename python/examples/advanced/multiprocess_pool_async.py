@@ -10,7 +10,7 @@ def f(x):
 def prt(z):
     print(z)
 
-if __name__ == '__main__':
+def main():
     with Pool(5) as p:
         results = p.imap(f, range(11)) # <multiprocessing.pool.IMapIterator object
         print(results)
@@ -27,3 +27,5 @@ if __name__ == '__main__':
         #    print(r)
 
 
+if __name__ == '__main__':
+    main()

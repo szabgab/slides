@@ -34,5 +34,5 @@ def main():
     for res in results:
         print(res)
 
-main()
-
+if __name__ == '__main__':
+    main()

@@ -17,5 +17,5 @@ def main():
         results = p.map(f, range(numbers))
     print(results)
 
-main()
-
+if __name__ == '__main__':
+    main()
