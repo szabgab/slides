@@ -5,13 +5,13 @@ import sys
 # Works only in Python 3
 
 def calc(n):
-    i = 0
-    while i < 40000000 / n:
-        x = random.random()
-        y = random.random()
-        z = x + y
-        i += 1
-    return  z
+    count = 0
+    total = 0
+    while count < 40000000 / n:
+        rnd = random.random()
+        total += rnd
+        count += 1
+    return {'count': count, 'total': total}
 
 def main():
     if len(sys.argv) != 2:
@@ -20,8 +20,10 @@ def main():
     start = time.time()
     size = int(sys.argv[1])
     with multiprocessing.Pool(size) as pool:
-        dicts = pool.map(calc, [size] *  size)
-        print(dicts)
+        results = pool.map(calc, [size] *  size)
+        print("Results: {}".format(results))
+        totals = map(lambda r: r['total'], results)
+        print("Total: {}".format(sum(totals)))
     end = time.time()
     print(end - start)
 
