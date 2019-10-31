@@ -4,10 +4,7 @@ import time
 import sys
 # Works only in Python 3
 
-c = 0
-
-def f(n):
-    global c
+def calc(n):
     i = 0
     while i < 40000000 / n:
         x = random.random()
@@ -16,11 +13,17 @@ def f(n):
         i += 1
     return  z
 
-if __name__ == '__main__':
-    s = time.time()
-    n = int(sys.argv[1])
-    with multiprocessing.Pool(n) as p:
-        dicts = p.map(f, [n]*n)
+def main():
+    if len(sys.argv) != 2:
+        exit("Usage: {} POOL_SIZE")
+
+    start = time.time()
+    size = int(sys.argv[1])
+    with multiprocessing.Pool(size) as pool:
+        dicts = pool.map(calc, [size] *  size)
         print(dicts)
-    print(time.time() - s)
+    end = time.time()
+    print(end - start)
+
+main()
 
