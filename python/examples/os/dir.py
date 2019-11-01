@@ -1,4 +1,5 @@
-import os, sys
+import os
+import sys
 
 if len(sys.argv) != 2:
     exit("Usage: {} directory".format(sys.argv[0]))
