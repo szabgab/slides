@@ -9,6 +9,8 @@ project.zip
 pypi/
 .vscode/
 
+.ipynb_checkpoints
+
 # generated files
 counter.db
 sample.db
