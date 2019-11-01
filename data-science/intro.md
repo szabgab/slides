@@ -75,3 +75,8 @@ $ jupyter notebook
 
 * TODO: Download another CSV file and analyze that.
 
+## Seaborn
+{id: seaborn}
+
+![](examples/seaborn/tips.py)
+
