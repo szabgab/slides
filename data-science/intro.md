@@ -53,5 +53,25 @@ source ~/venv3/bin/activate
 pip install jupyter pandas seaborn
 ```
 
+## Start Jupyter notebook
+{id: start-jupyter-notebook}
+
 * Anaconda Jupyter notebook
+
+```
+$ jupyter notebook
+```
+
+## Reading CSV file
+{id: planets}
+
+* plantets.csv
+* planets.ipynb
+
+## Exercise 1
+{id: exercise-1}
+
+* Download the planets.csv file and follow the steps above
+
+* TODO: Download another CSV file and analyze that.
 
