@@ -3,5 +3,5 @@ import os
 this_dir = os.getcwd()
 print(this_dir)
 
-os.chdir('/home/')
-
+# os.chdir('/path/to/some/dir')
+os.chdir('..')

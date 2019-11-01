@@ -1,7 +1,5 @@
 import sys
 
-print("hello")
-sys.stderr.write("world\n")
-
-print('spam', file=sys.stderr)
-
+print("on stdout (Standard Output)")
+print("on stderr (Standard Error)", file=sys.stderr)
+sys.stderr.write("in stderr again\n")
