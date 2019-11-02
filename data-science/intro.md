@@ -62,11 +62,19 @@ pip install jupyter pandas seaborn
 $ jupyter notebook
 ```
 
-## Reading CSV file
+## Reading CSV file (Planets)
 {id: planets}
 
 * plantets.csv
 * planets.ipynb
+
+## Temperatures
+{id: temperatures}
+
+![](examples/jupyter/temperatures.csv)
+
+* [examples/seaborn_tips.ipynb](https://github.com/szabgab/slides/blob/main/python/examples/jupyter/temperatures.ipynb)
+
 
 ## Exercise 1
 {id: exercise-1}
