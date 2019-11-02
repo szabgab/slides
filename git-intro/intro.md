@@ -210,19 +210,6 @@ On branch master
 nothing to commit, working directory clean
 ```
 
-## File status
-{id: file-status}
-
-**Each file can be either**
-* untracked
-* tracked
-
-**Tracked files can be**
-* unmodified
-* modified
-* staged
-
-
 ## Untracked and Modified
 {id: untracked-and-modified}
 
@@ -244,6 +231,20 @@ Untracked files:
       setup.pl
 no changes added to commit (use "git add" and/or "git commit -a")
 ```
+
+## File status
+{id: file-status}
+
+**Each file can be either**
+* untracked
+* tracked
+
+**Tracked files can be**
+* unmodified
+* modified
+* staged
+
+
 
 ## Making some changes
 {id: making-some-changes}
