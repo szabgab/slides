@@ -5,7 +5,7 @@
 {id: self-introduction}
 
 * [Gábor Szabó](https://www.linkedin.com/in/szabgab/) @szabgab
-* Help organizations generate value faster in a sustainable way.
+* Helps organizations improve their development by creating faster feedback loops
 * [Code Mavens Meetup](https://www.meetup.com/Code-Mavens/)
 
 ## Overview
@@ -15,6 +15,24 @@
 * Read in some CSV file (and maybe also a JSON file).
 * Make some simple filtering and transformation on the data.
 * Create some simple graphs.
+
+## Tools
+{id: tools}
+
+* [Anaconda distribution](https://www.anaconda.com/distribution/)
+
+* [Python](https://www.python.org/)
+* [Jupyter notebook](https://jupyter.org/)
+* [Numpy](https://numpy.org/)
+* [Pandas](https://pandas.pydata.org/)
+
+## Visualization
+{id: visualization}
+
+* [Matloblib](https://matplotlib.org/)
+* [Seaborn](https://seaborn.pydata.org/)
+* [Plotly](https://plot.ly/)
+* [Bokeh](https://docs.bokeh.org/)
 
 ## Install Python Windows
 {id: install-python-windows}
@@ -65,15 +83,14 @@ $ jupyter notebook
 ## Reading CSV file (Planets)
 {id: planets}
 
-* plantets.csv
-* planets.ipynb
+* [planets.csv](https://github.com/szabgab/slides/blob/main/python/examples/jupyter/planets.csv)
+* [planets.ipynb](https://github.com/szabgab/slides/blob/main/python/examples/jupyter/planets.ipynb)
 
 ## Temperatures
 {id: temperatures}
 
-![](examples/jupyter/temperatures.csv)
-
-* [examples/seaborn_tips.ipynb](https://github.com/szabgab/slides/blob/main/python/examples/jupyter/temperatures.ipynb)
+* [temperatures.csv](https://github.com/szabgab/slides/blob/main/python/examples/jupyter/temperatures.csv)
+* [temperatures.ipynb](https://github.com/szabgab/slides/blob/main/python/examples/jupyter/temperatures.ipynb)
 
 
 ## Exercise 1
@@ -83,14 +100,6 @@ $ jupyter notebook
 
 * TODO: Download another CSV file and analyze that.
 
-## Visualization
-{id: visualization}
-
-* [Matloblib](https://matplotlib.org/)
-* [Seaborn](https://seaborn.pydata.org/)
-* [Plotly](https://plot.ly/)
-* [Bokeh](https://docs.bokeh.org/)
-
 
 ## Seaborn
 {id: seaborn}
@@ -99,6 +108,11 @@ $ jupyter notebook
 
 ![](examples/seaborn/tips.py)
 
+## Stack Overflow survey
+{id: stack-overflow}
+
+* [Stack Overflow survey](https://insights.stackoverflow.com/survey)
+
 ## Courses
 {id: courses}
 
@@ -106,8 +120,6 @@ $ jupyter notebook
 
 ## Data Sources (Competitions)
 {id: data-sources}
-
-* [Stack Overflow survey](https://insights.stackoverflow.com/survey)
 
 * [Kaggle](https://www.kaggle.com/)
 * [Driven Data](https://www.drivendata.org/)
@@ -119,5 +131,5 @@ $ jupyter notebook
 * [CorwdAI](https://www.crowdai.org/challenges)
 * [NumerAI](https://numer.ai/)
 
+* [Source](https://towardsdatascience.com/top-competitive-data-science-platforms-other-than-kaggle-2995e9dad93c)
 
-[Source](https://towardsdatascience.com/top-competitive-data-science-platforms-other-than-kaggle-2995e9dad93c)
