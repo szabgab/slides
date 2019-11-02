@@ -249,6 +249,7 @@ no changes added to commit (use "git add" and/or "git commit -a")
 
 
 ```
+$ git restore config.pl
 $ git checkout config.pl
 $ git status
 ```
@@ -272,10 +273,11 @@ Untracked files:
 no changes added to commit (use "git add" and/or "git commit -a")
 ```
 
-## Remove from stage (unstage)
+## Remove from stage (unstage) (restore to modified)
 {id: unstage}
 
 ```
+$ git restore --staged config.pl
 $ git reset HEAD config.pl
 
 Unstaged changes after reset:
