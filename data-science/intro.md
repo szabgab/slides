@@ -8,13 +8,24 @@
 * Helps organizations improve their development by creating faster feedback loops
 * [Code Mavens Meetup](https://www.meetup.com/Code-Mavens/)
 
-## Overview
+## Main subjects
+{id: main-subjects}
+
+* Data Analyzis
+* Data Science
+* Machine Learning
+* Deep Learning
+* AI (Artificial Intelligence)
+* Big Data
+
+## Overview of this material
 {id: overview}
 
-* Install Python, Jupyter Notebook, NumPy, Pandas, Matplotlib, and Seaborn
+* Install Tools (Python, Jupyter Notebook, NumPy, Pandas, Matplotlib, and Seaborn).
 * Read in some CSV file (and maybe also a JSON file).
 * Make some simple filtering and transformation on the data.
 * Create some simple graphs.
+* Create some understanding of the data.
 
 ## Tools
 {id: tools}
@@ -29,56 +40,60 @@
 ## Visualization
 {id: visualization}
 
-* [Matloblib](https://matplotlib.org/)
+* [Matplotlib](https://matplotlib.org/)
 * [Seaborn](https://seaborn.pydata.org/)
 * [Plotly](https://plot.ly/)
 * [Bokeh](https://docs.bokeh.org/)
 
-## Install Python Windows
+## Install Python on Windows
 {id: install-python-windows}
 
 * [Anaconda](https://www.anaconda.com/distribution/)
+* Download, install, accept the defaults (except: add Anaconda to PATH)
 
-## Install Python Linux
+## Install Python on Linux
 {id: install-python-linux}
 
+Use the terminal
+
 ```
-which python3
+$ which python3
 
-apt-get install python3
-yum install python3
+$ sudo apt-get install python3
+$ sudo yum install python3
 
-apt-get install virtualenv
-yum install virtualenv
+$ sudo apt-get install virtualenv
+$ sudo yum install virtualenv
 ```
 
 ## Install Python Mac OSX
 {id: install-python-mac-osx}
 
-```
-which python3
+Use the terminal.
 
-brew install python3
-brew install virtualenv
+Install [Homebrew](https://brew.sh/) if you don't have it yet.
+
+```
+$ which python3
+
+$ brew install python3
+$ brew install virtualenv
 ```
 
 ## Install Jupyter notebook on Linux and OSX
 {id: install-jupyter}
 
 ```
-virtualenv -p python3 ~/venv3
-source ~/venv3/bin/activate
-pip install jupyter pandas seaborn
+$ virtualenv -p python3 ~/venv3
+$ source ~/venv3/bin/activate
+$ pip install jupyter pandas seaborn
 ```
 
 ## Start Jupyter notebook
 {id: start-jupyter-notebook}
 
-* Anaconda Jupyter notebook
-
-```
-$ jupyter notebook
-```
+* Windows: Anaconda Jupyter notebook
+* Linux, OSX: `$ jupyter notebook`
 
 ## Reading CSV file (Planets)
 {id: planets}
