@@ -244,169 +244,65 @@ no changes added to commit (use "git add" and/or "git commit -a")
 * modified
 * staged
 
+## Drop local changes (restore to HEAD or to index)
+{id: drop-local}
 
-
-## Making some changes
-{id: making-some-changes}
-
-edit the README.txt file again, adding a new row.
-
-* git status
-* git diff
-* git add README.txt
-* git status
-* git diff
-* git diff --cached
-* git diff --staged
 
 ```
+$ git checkout config.pl
 $ git status
+```
 
+**git checkout FILENAME will replace FILENAME in the work tree with the one committed (or if there is a version already staged then to that version). You loose your local work.**
+
+**git checkout . will do it for all the files in the tree.**
+
+```
 On branch master
 Changes not staged for commit:
   (use "git add <file>..." to update what will be committed)
   (use "git checkout -- <file>..." to discard changes in working directory)
 
-      modified:   README.txt
-
-no changes added to commit (use "git add" and/or "git commit -a")
-```
-
-**What has changed?**
-
-```
-$ git diff
-
-diff --git a/README.txt b/README.txt
-index e51ca0d..a697828 100644
---- a/README.txt
-+++ b/README.txt
--Hello Git
-+Hello Git
-+Second line
-
-$ git add README.txt
-$ git status
-
-On branch master
-Changes to be committed:
-  (use "git reset HEAD <file>..." to unstage)
-
-      modified:   README.txt
-
-```
-
-**What did we change?**
-
-```
-$ git diff
-$ git diff --cached    (or --staged)
-
-diff --git a/README.txt b/README.txt
-index e51ca0d..62567d0 100644
---- a/README.txt
-+++ b/README.txt
--Hello Git
- No newline at end of file
-+Hello Git
-+Second line
-
-$ git commit -m "update README"
-
-[master 1251a45] update README
- 1 file changed, 2 insertions(+), 1 deletion(-)
-```
-
-## Untracked - Modified - Staged
-{id: untracked-modified-staged}
-
-**Create another file called config.pl**
-
-```
-$ git status
-
-On branch master
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git checkout -- <file>..." to discard changes in working directory)
-
-      modified:   README.txt
+  modified:   README.txt
 
 Untracked files:
   (use "git add <file>..." to include in what will be committed)
 
-      config.pl
-      setup.pl
+  setup.pl
 no changes added to commit (use "git add" and/or "git commit -a")
 ```
 
-## Stage it
-{id: stage-it}
+## Remove from stage (unstage)
+{id: unstage}
 
 ```
-$ git add config.pl
+$ git reset HEAD config.pl
+
+Unstaged changes after reset:
+M       README.txt
+M       config.pl
+
+$ git status
 
 On branch master
-Changes to be committed:
-  (use "git reset HEAD <file>..." to unstage)
-
-      new file:   config.pl
-
 Changes not staged for commit:
   (use "git add <file>..." to update what will be committed)
   (use "git checkout -- <file>..." to discard changes in working directory)
 
       modified:   README.txt
+      modified:   config.pl
 
 Untracked files:
   (use "git add <file>..." to include in what will be committed)
 
       setup.pl
-```
-
-## See the changes
-{id: see-the-changes}
-
-**Make some changes to the config.pl file and stage it.**
-
-```
-$ notepad config.pl
-$ git status
-
- On branch master
- Changes not staged for commit:
-   (use "git add <file>..." to update what will be committed)
-   (use "git checkout -- <file>..." to discard changes in working directory)
-
-       modified:   README.txt
-       modified:   config.pl
-
- Untracked files:
-   (use "git add <file>..." to include in what will be committed)
-
-       setup.pl
 no changes added to commit (use "git add" and/or "git commit -a")
-
-$ git add config.pl
-$ git status
-
- On branch master
- Changes to be committed:
-   (use "git reset HEAD <file>..." to unstage)
-
-       modified:   config.pl
-
- Changes not staged for commit:
-   (use "git add <file>..." to update what will be committed)
-   (use "git checkout -- <file>..." to discard changes in working directory)
-
-       modified:   README.txt
-
- Untracked files:
-   (use "git add <file>..." to include in what will be committed)
-
-       setup.pl
 ```
+
+**$ git reset HEAD will reset all the files currently staged.
+See also the unstage alias we created earlier.**
+
+
 
 ## So what was changed?
 {id: so-what-has-changed}
@@ -478,63 +374,6 @@ $ git diff --staged
 
 $ git diff HEAD
 * (changes between working copy and HEAD)
-
-## Remove from stage (unstage)
-{id: unstage}
-
-```
-$ git reset HEAD config.pl
-
-Unstaged changes after reset:
-M       README.txt
-M       config.pl
-
-$ git status
-
-On branch master
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git checkout -- <file>..." to discard changes in working directory)
-
-      modified:   README.txt
-      modified:   config.pl
-
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-
-      setup.pl
-no changes added to commit (use "git add" and/or "git commit -a")
-```
-
-**$ git reset HEAD will reset all the files currently staged.
-See also the unstage alias we created earlier.**
-
-## Drop local changes (restore to HEAD or to index)
-{id: drop-local}
-
-```
-$ git checkout config.pl
-$ git status
-```
-
-**git checkout FILENAME will replace FILENAME in the work tree with the one committed (or if there is a version already staged then to that version). You loose your local work.**
-
-**git checkout . will do it for all the files in the tree.**
-
-```
-On branch master
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git checkout -- <file>..." to discard changes in working directory)
-
-  modified:   README.txt
-
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-
-  setup.pl
-no changes added to commit (use "git add" and/or "git commit -a")
-```
 
 ## Add all the files
 {id: add-all-files}
@@ -1186,4 +1025,5 @@ To github.com:collab-dev/participants/
 * Connect to each other via LinkedIn.
 
 * [Gabor Szabo](https://www.linkedin.com/in/szabgab/)
+
 
