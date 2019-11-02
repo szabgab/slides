@@ -168,18 +168,6 @@ Untracked files:
 nothing added to commit but untracked files present (use "git add" to track)
 ```
 
-## File status
-{id: file-status}
-
-**Each file can be either**
-* untracked
-* tracked
-
-**Tracked files can be**
-* unmodified
-* modified
-* staged
-
 ## Add first file
 {id: add-first-file}
 
@@ -221,6 +209,19 @@ $ git status
 On branch master
 nothing to commit, working directory clean
 ```
+
+## File status
+{id: file-status}
+
+**Each file can be either**
+* untracked
+* tracked
+
+**Tracked files can be**
+* unmodified
+* modified
+* staged
+
 
 ## Untracked and Modified
 {id: untracked-and-modified}
