@@ -75,8 +75,41 @@ $ jupyter notebook
 
 * TODO: Download another CSV file and analyze that.
 
+## Visualization
+{id: visualization}
+
+* [Matloblib](https://matplotlib.org/)
+* [Seaborn](https://seaborn.pydata.org/)
+* [Plotly](https://plot.ly/)
+* [Bokeh](https://docs.bokeh.org/)
+
+
 ## Seaborn
 {id: seaborn}
 
+* [examples/seaborn_tips.ipynb](https://github.com/szabgab/slides/blob/main/python/examples/jupyter/seaborn_tips.ipynb)
+
 ![](examples/seaborn/tips.py)
 
+## Courses
+{id: courses}
+
+* [DataCamp](https://www.datacamp.com/)
+
+## Data Sources (Competitions)
+{id: data-sources}
+
+* [Stack Overflow survey](https://insights.stackoverflow.com/survey)
+
+* [Kaggle](https://www.kaggle.com/)
+* [Driven Data](https://www.drivendata.org/)
+* [CrowdAnalytix community](https://www.crowdanalytix.com/community)
+* [InnoCentive](https://www.innocentive.com/our-solvers/)
+* [TunedIT](http://tunedit.org/challenges)
+* [CodaLab](https://competitions.codalab.org/)
+* [Anlytics Vidhya](https://datahack.analyticsvidhya.com/)
+* [CorwdAI](https://www.crowdai.org/challenges)
+* [NumerAI](https://numer.ai/)
+
+
+[Source](https://towardsdatascience.com/top-competitive-data-science-platforms-other-than-kaggle-2995e9dad93c)
