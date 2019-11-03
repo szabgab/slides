@@ -17,12 +17,8 @@ class EventHandler(xml.sax.ContentHandler):
         element = self.path.pop()
         print('End name: ', name)
         if element['name'] == 'email':
-            collector.append(element) 
+            collector.append(element)
 
 collector = []
 xml.sax.parse(file, EventHandler(collector))
 print(collector)
-
-
-
-

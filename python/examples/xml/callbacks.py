@@ -2,12 +2,18 @@ import xml.parsers.expat
 
 file = 'examples/xml/data.xml'
 
+
 def start_element(name, attrs):
     print('Start element: {} {}'.format(name, attrs))
+
+
 def end_element(name):
     print('End element: {}'.format(name))
+
+
 def char_data(data):
     print('Character data: {}'.format(repr(data)))
+
 
 p = xml.parsers.expat.ParserCreate()
 

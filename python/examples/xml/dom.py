@@ -19,4 +19,3 @@ print('')
 emails = dom.getElementsByTagName("email")
 for e in emails:
     print('email', e.getAttribute('id'), e.firstChild.data)
-
