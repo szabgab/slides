@@ -1,6 +1,7 @@
 import sys
 import os
 import subprocess
+import pytest
 
 skip = [
     'python/examples/dictionary/generate_dna.py',
@@ -28,6 +29,7 @@ skip = [
     'python/examples/package/use_project/proj2_1.py',
 ]
 
+@pytest.mark.skip(reason="not ready yet")
 def test_run():
     root = 'python/examples'
     cnt = 0
@@ -52,3 +54,19 @@ def test_run():
             )
             out, err = proc.communicate()
             assert proc.returncode == 0, "for {}".format(path)
+
+def test_flake8():
+    proc = subprocess.Popen(['flake8', 'python/examples/'],
+        stdout = subprocess.PIPE,
+        stderr = subprocess.PIPE,
+    )
+    out, err = proc.communicate()
+    assert proc.returncode == 1  # I guess because there were issues
+    assert err  == b'' #.decode('utf-8') == ''
+    errors = out.decode('utf-8').split("\n")
+    print("\n")
+    assert len(errors) <= 1300, "Errors grew!"
+    print(len(out))
+
+
+
