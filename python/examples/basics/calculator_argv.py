@@ -10,13 +10,13 @@ def main():
     op = sys.argv[2]
 
     if op == '+':
-        res = a+b
+        res = a + b
     elif op == '-':
-        res = a-b
+        res = a - b
     elif op == '*':
-        res = a*b
+        res = a * b
     elif op == '/':
-        res = a/b
+        res = a / b
     else:
         print("Invalid operator: '{}'".format(op))
         exit()

@@ -65,7 +65,7 @@ def test_flake8():
     assert err  == b'' #.decode('utf-8') == ''
     errors = out.decode('utf-8').split("\n")
     print("\n")
-    assert len(errors) <= 1300, "Errors grew!"
+    assert len(errors) == 733, "Errors grew!"
     print(len(out))
 
 

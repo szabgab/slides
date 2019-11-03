@@ -35,8 +35,8 @@ def get_str(n):
     return text
 
 def swap(lst, loc):
-    if lst[loc] > lst[loc+1]:
-        lst[loc], lst[loc+1] = lst[loc+1], lst[loc]
+    if lst[loc] > lst[loc + 1]:
+        lst[loc], lst[loc + 1] = lst[loc + 1], lst[loc]
 
 if __name__ == '__main__':
     print(main(1000))

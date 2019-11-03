@@ -24,12 +24,12 @@ class TestRect(unittest.TestCase):
         try:
             self.assertEqualSides(self.a, self.b)
         except AssertionError as e:
-              self.assertEqual(e.args[0], 'widths are different')
+            self.assertEqual(e.args[0], 'widths are different')
 
         try:
             self.assertEqualSides(self.a, shape2.Rectangular(4, 20))
         except AssertionError as e:
-              self.assertEqual(e.args[0], 'heights are different')
+            self.assertEqual(e.args[0], 'heights are different')
 
         self.assertEqualSides(self.a, (4, 10))
 
