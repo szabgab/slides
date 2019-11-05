@@ -58,6 +58,6 @@ def main():
 
     app.mainloop()
 
-main()  
+main()
 
 

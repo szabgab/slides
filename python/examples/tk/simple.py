@@ -22,7 +22,7 @@ def main():
     root.call('wm', 'attributes', '.', '-topmost', True)
     root.after_idle(root.call, 'wm', 'attributes', '.', '-topmost', False)
 
-    root.mainloop() 
+    root.mainloop()
 
-main() 
+main()
 
