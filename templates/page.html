@@ -11,14 +11,16 @@
 
 {% include 'incl/header.html' %}
 
-<h1>{{ page.title }}</h1>
-
 {% if 'prev' in page %}
-   <a id='prev' href="{{ page.prev.id }}.html">{{ page.prev.title }}</a>
+   <a class="prev slidebutton" id="prev" href="{{ page.prev.id }}.html">(&lt;-) {{ page.prev.title }}</a>
 {% endif %}
 {% if 'next' in page %}
-   <a id='next' href="{{ page.next.id }}.html">{{ page.next.title }}</a>
+   <a class="next slidebutton" id="next" href="{{ page.next.id }}.html">{{ page.next.title }} (-&gt;)</a>
 {% endif %}
+
+
+<h1 id="title">{{ page.title }}</h1>
+<hr>
 
 {% for c in page.content %}
   {% if c.name == 'ol' %}
@@ -36,9 +38,11 @@
       </ul>
   {% endif %}
   {% if c.name == 'verbatim' %}
+
 <pre class="code">
 {{ c.content[0] | e }}
 </pre>
+
   {% endif %}
   {% if c.name == 'p' %}
       <p>
@@ -48,9 +52,11 @@
   {% if c.name == 'include' %}
       <b>{{ c.title }}</b><br>
       <b>{{ c.filename }}</b><br>
+
 <pre class="code">
 {{ c.content[0] }}
 </pre>
+
   {% endif %}
   {% if c.name == 'image' %}
      <img src="{{ c.filename }}" title="{{ c.title }}" />
@@ -63,7 +69,15 @@
   {% endif %}
 
 {% endfor %}
+<div id="footer">
+    <hr>
+    <ul>
+      <li>Copyright 2019 <a href="https://szabgab.com/">Gabor Szabo</a></li>
+      <li>Last updated at {{ timestamp }}</li>
+    </ul>
+  </div>
 
   <script src="slides.js"></script>
+{% include 'incl/analytics.html' %}
 </body>
 </html>

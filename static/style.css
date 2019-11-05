@@ -18,10 +18,34 @@ nav ul {
 	height: 40px;
 }
 
-nav li { 
+nav li {
     margin-right: 20px;
     display: inline;
-    list-style-type: none; 
+    list-style-type: none;
+}
+
+.slidebutton {
+    background: #fff5f5;
+    padding: 4px 9px;
+
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-box-shadow: 0 1px 3px #999;
+    -webkit-box-shadow: 0 1px 3px #999;
+}
+
+#title {
+	text-align: center;
+}
+
+#footer {
+    margin-top: 20px;
+}
+#footer li {
+    font-size: 12px;
+    display: inline;
+    list-style-type: none;
+    margin-right: 30px;
 }
 
 
