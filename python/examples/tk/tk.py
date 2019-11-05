@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-from Tkinter import Tk, Frame, Button, Label, Entry
+from tkinter import Tk, Frame, Button, Label, Entry
 
 class Example(Frame):
     def __init__(self, parent=None):
@@ -9,9 +9,9 @@ class Example(Frame):
         self.createWidgets()
 
     def say_hi(self):
-        print "hi there, everyone! "
-        print "Name: ", self.name.get()
-        print "Password: ", self.password.get()
+        print("hi there, everyone! ")
+        print("Name: {}".format(self.name.get()))
+        print("Password: {}".format(self.password.get()))
         self.password.delete(0, 'end')
 
 
@@ -26,12 +26,12 @@ class Example(Frame):
         # Simple Label widget:
         self.name_title = Label(self, text="Name:")
         self.name_title.pack({"side": "left"})
-        
+
         # Simple Entry widget:
         self.name = Entry(self)
         self.name.pack({"side": "left"})
         self.name.insert(0, "Your name")
-        
+
         # Simple Label widget:
         self.password_title = Label(self, text="Password:")
         self.password_title.pack({"side": "left"})

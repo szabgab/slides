@@ -1,12 +1,12 @@
-from Tkinter import Tk, Frame, BOTH
+from tkinter import Tk, Frame, BOTH
 
 
 class Example(Frame):
     def __init__(self, parent):
-        Frame.__init__(self, parent, background="white")   
+        Frame.__init__(self, parent, background="white")
         self.parent = parent
         self.initUI()
-    
+
     def initUI(self):
         self.parent.title("Simple")
         self.pack(fill=BOTH, expand=1)
@@ -22,7 +22,7 @@ def main():
     root.call('wm', 'attributes', '.', '-topmost', True)
     root.after_idle(root.call, 'wm', 'attributes', '.', '-topmost', False)
 
-    root.mainloop()  
+    root.mainloop() 
 
-main()  
+main() 
 
