@@ -167,9 +167,9 @@ seaborn                   0.9.0                    py37_0
 
 * [Stack Overflow survey](https://insights.stackoverflow.com/survey)
 * [so.ipynb](https://github.com/szabgab/slides/blob/main/python/examples/jupyter/SO/so.ipynb)
+* [show.ipynb](https://github.com/szabgab/slides/blob/main/python/examples/jupyter/SO/show.ipynb)
 * selected-columns.ipynb
 * selected-rows.ipynb
-* show.ipynb
 
 
 ## Other Materials
@@ -205,6 +205,9 @@ seaborn                   0.9.0                    py37_0
 
 * [Training courses](https://hostlocal.com/)
 * [Code Maven Workshops](https://workshops.code-maven.com/)
+
+* [Code Maven in English](https://code-maven.com/)
+* [Code Maven in Hebrew](https://he.code-maven.com/)
 
 * [Code Mavens Meetup group](https://www.meetup.com/Code-Mavens/)
 
