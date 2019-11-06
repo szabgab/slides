@@ -32,6 +32,14 @@
 
 * [Code Mavens Meetup group](https://www.meetup.com/Code-Mavens/)
 
+## About you
+{id: about-you}
+
+* (Full) Name
+* Workplace/Organization
+* Current field of expertise
+* Why are you interested in Data Science?
+* Your hobby
 
 ## Overview of this material
 {id: overview}
