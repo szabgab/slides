@@ -6,8 +6,10 @@
 
 * [Gábor Szabó](https://www.linkedin.com/in/szabgab/) @szabgab
 * Helps organizations improve their development by creating faster feedback loops
+
 * [Training courses](https://hostlocal.com/)
 * [Code Maven Workshops](https://workshops.code-maven.com/)
+
 * [Code Mavens Meetup group](https://www.meetup.com/Code-Mavens/)
 
 ## Main subjects
@@ -31,7 +33,7 @@
 {id: overview}
 
 * Install Tools (Python, Jupyter Notebook, NumPy, Pandas, Matplotlib, and Seaborn).
-* Read in some CSV file (and maybe also a JSON file).
+* **Data Source:** Read in some CSV file (and maybe also a JSON file).
 * Make some simple filtering and transformation on the data.
 * Create some simple graphs.
 * Create some understanding of the data.
@@ -162,4 +164,14 @@ $ pip install jupyter pandas seaborn
 * [NumerAI](https://numer.ai/)
 
 * [Source](https://towardsdatascience.com/top-competitive-data-science-platforms-other-than-kaggle-2995e9dad93c)
+
+## Thank You
+{id: thank-you}
+
+* [Gábor Szabó on LinkedIn](https://www.linkedin.com/in/szabgab/) @szabgab
+
+* [Training courses](https://hostlocal.com/)
+* [Code Maven Workshops](https://workshops.code-maven.com/)
+
+* [Code Mavens Meetup group](https://www.meetup.com/Code-Mavens/)
 
