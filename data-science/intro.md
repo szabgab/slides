@@ -6,7 +6,9 @@
 
 * [Gábor Szabó](https://www.linkedin.com/in/szabgab/) @szabgab
 * Helps organizations improve their development by creating faster feedback loops
-* [Code Mavens Meetup](https://www.meetup.com/Code-Mavens/)
+* [Training courses](https://hostlocal.com/)
+* [Code Maven Workshops](https://workshops.code-maven.com/)
+* [Code Mavens Meetup group](https://www.meetup.com/Code-Mavens/)
 
 ## Main subjects
 {id: main-subjects}
@@ -17,6 +19,13 @@
 * Deep Learning
 * AI (Artificial Intelligence)
 * Big Data
+
+## Data Science
+{id: data-science}
+
+![Data Science](img/data-science.png)
+
+* [source](https://towardsdatascience.com/introduction-to-statistics-e9d72d818745)
 
 ## Overview of this material
 {id: overview}
@@ -128,10 +137,16 @@ $ pip install jupyter pandas seaborn
 
 * [Stack Overflow survey](https://insights.stackoverflow.com/survey)
 
-## Courses
-{id: courses}
+## Other Materials
+{id: other-materials}
 
 * [DataCamp](https://www.datacamp.com/)
+* [Machine Learning at Coursera](https://www.coursera.org/learn/machine-learning)
+* [Machine Learning in Hebrew](https://machinelearning.co.il/581/machine-learning-beginners-guide/)
+* [Books](https://machinelearning.co.il/306/machinelearningbooks/)
+* [Courses](https://machinelearning.co.il/102/machinelearningcourses/)
+* [Tips about courses](https://machinelearning.co.il/2424/4coursetips/)
+* [On Facebook](https://www.facebook.com/groups/543283492502370/permalink/989056861258362/)
 
 ## Data Sources (Competitions)
 {id: data-sources}
