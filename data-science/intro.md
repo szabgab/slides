@@ -1,16 +1,12 @@
 # Getting Started with Data Science for non-programmers
 {id: index}
 
-## Self introduction
-{id: self-introduction}
+## Data Science
+{id: data-science}
 
-* [Gábor Szabó](https://www.linkedin.com/in/szabgab/) @szabgab
-* Helps organizations improve their development by creating faster feedback loops
+![Data Science](img/data-science.png)
 
-* [Training courses](https://hostlocal.com/)
-* [Code Maven Workshops](https://workshops.code-maven.com/)
-
-* [Code Mavens Meetup group](https://www.meetup.com/Code-Mavens/)
+* [source](https://towardsdatascience.com/introduction-to-statistics-e9d72d818745)
 
 ## Main subjects
 {id: main-subjects}
@@ -22,12 +18,20 @@
 * AI (Artificial Intelligence)
 * Big Data
 
-## Data Science
-{id: data-science}
+## Self introduction
+{id: self-introduction}
 
-![Data Science](img/data-science.png)
+* [Gábor Szabó](https://www.linkedin.com/in/szabgab/) @szabgab
+* Helps organizations improve their development by creating faster feedback loops
 
-* [source](https://towardsdatascience.com/introduction-to-statistics-e9d72d818745)
+* [Training courses](https://hostlocal.com/)
+* [Code Maven Workshops](https://workshops.code-maven.com/)
+
+* [Code Maven in English](https://code-maven.com/)
+* [Code Maven in Hebrew](https://he.code-maven.com/)
+
+* [Code Mavens Meetup group](https://www.meetup.com/Code-Mavens/)
+
 
 ## Overview of this material
 {id: overview}
@@ -91,7 +95,7 @@ $ brew install python3
 $ brew install virtualenv
 ```
 
-## Install Jupyter notebook on Linux and OSX
+## Install Jupyter notebook and Python modules on Linux and OSX
 {id: install-jupyter}
 
 ```
@@ -99,6 +103,25 @@ $ virtualenv -p python3 ~/venv3
 $ source ~/venv3/bin/activate
 $ pip install jupyter pandas seaborn
 ```
+
+## Install Python modules on Windows (Anaconda)
+{id: install-in-anaconda}
+
+* Open the "Anaconda Prompt"
+* Type in `conda list seaborn` to see if seaborn is already installed
+* (it will show something like this, if it is installed):
+
+```
+# packages in environment at C:\ProgramData\Anaconda3:
+#
+# Name                    Version                   Build  Channel
+seaborn                   0.9.0                    py37_0
+```
+
+* Install `seaborn` by typing `conda install seaborn`
+
+* If all else fails you can also try `pip install seaborn`
+
 
 ## Start Jupyter notebook
 {id: start-jupyter-notebook}
