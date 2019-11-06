@@ -138,6 +138,11 @@ $ pip install jupyter pandas seaborn
 {id: stack-overflow}
 
 * [Stack Overflow survey](https://insights.stackoverflow.com/survey)
+* [so.ipynb](https://github.com/szabgab/slides/blob/main/python/examples/jupyter/SO/so.ipynb)
+* selected-columns.ipynb
+* selected-rows.ipynb
+* show.ipynb
+
 
 ## Other Materials
 {id: other-materials}
