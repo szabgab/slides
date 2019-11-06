@@ -135,20 +135,13 @@ seaborn                   0.9.0                    py37_0
 * [planets.csv](https://github.com/szabgab/slides/blob/main/python/examples/jupyter/planets.csv)
 * [planets.ipynb](https://github.com/szabgab/slides/blob/main/python/examples/jupyter/planets.ipynb)
 
-## Temperatures
-{id: temperatures}
-
-* [temperatures.csv](https://github.com/szabgab/slides/blob/main/python/examples/jupyter/temperatures.csv)
-* [temperatures.ipynb](https://github.com/szabgab/slides/blob/main/python/examples/jupyter/temperatures.ipynb)
-
-
 ## Exercise 1
 {id: exercise-1}
 
 * Download the planets.csv file and follow the steps above
 
-* TODO: Download another CSV file and analyze that.
-
+* Download another CSV file and analyze that.
+    * [UN](http://data.un.org/)
 
 ## Seaborn
 {id: seaborn}
@@ -156,6 +149,14 @@ seaborn                   0.9.0                    py37_0
 * [examples/seaborn_tips.ipynb](https://github.com/szabgab/slides/blob/main/python/examples/jupyter/seaborn_tips.ipynb)
 
 ![](examples/seaborn/tips.py)
+
+
+## Temperatures
+{id: temperatures}
+
+* [temperatures.csv](https://github.com/szabgab/slides/blob/main/python/examples/jupyter/temperatures.csv)
+* [temperatures.ipynb](https://github.com/szabgab/slides/blob/main/python/examples/jupyter/temperatures.ipynb)
+
 
 ## Stack Overflow survey
 {id: stack-overflow}
