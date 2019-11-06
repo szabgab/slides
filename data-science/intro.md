@@ -37,9 +37,9 @@
 
 * (Full) Name
 * Workplace/Organization
-* Current field of expertise
+* Field of expertise (job title?)
 * Why are you interested in Data Science?
-* Your hobby
+* What are your hobbies?
 
 ## Overview of this material
 {id: overview}
