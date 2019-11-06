@@ -1,6 +1,7 @@
 # Getting Started with Data Science for non-programmers
 {id: index}
 
+
 ## Data Science
 {id: data-science}
 
@@ -34,6 +35,8 @@
 
 ## About you
 {id: about-you}
+
+https://code-maven.com/slides/data-science
 
 * (Full) Name
 * Workplace/Organization
