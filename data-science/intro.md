@@ -138,10 +138,7 @@ seaborn                   0.9.0                    py37_0
 ## Exercise 1
 {id: exercise-1}
 
-* Download the planets.csv file and follow the steps above
-
-* Download another CSV file and analyze that.
-    * [UN](http://data.un.org/)
+* Download the planets.csv file and follow the steps above.
 
 ## Seaborn
 {id: seaborn}
@@ -150,12 +147,19 @@ seaborn                   0.9.0                    py37_0
 
 ![](examples/seaborn/tips.py)
 
-
 ## Temperatures
 {id: temperatures}
 
 * [temperatures.csv](https://github.com/szabgab/slides/blob/main/python/examples/jupyter/temperatures.csv)
 * [temperatures.ipynb](https://github.com/szabgab/slides/blob/main/python/examples/jupyter/temperatures.ipynb)
+
+## Exercise 2
+{id: exercise-2}
+
+* Download another CSV file and analyze that. (Search for public data sets)
+* [UN](http://data.un.org/)
+* [UCR - Unified Crime Reporting](https://www.ucrdatatool.gov/)
+* [Tons of others](https://www.columnfivemedia.com/100-best-free-data-sources-infographic)
 
 
 ## Stack Overflow survey
