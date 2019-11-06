@@ -157,6 +157,8 @@ seaborn                   0.9.0                    py37_0
 {id: exercise-2}
 
 * Download another CSV file and analyze that. (Search for public data sets)
+* Create some nice graphs
+
 * [UN](http://data.un.org/)
 * [UCR - Unified Crime Reporting](https://www.ucrdatatool.gov/)
 * [Tons of others](https://www.columnfivemedia.com/100-best-free-data-sources-infographic)
@@ -168,8 +170,16 @@ seaborn                   0.9.0                    py37_0
 * [Stack Overflow survey](https://insights.stackoverflow.com/survey)
 * [so.ipynb](https://github.com/szabgab/slides/blob/main/python/examples/jupyter/SO/so.ipynb)
 * [show.ipynb](https://github.com/szabgab/slides/blob/main/python/examples/jupyter/SO/show.ipynb)
-* selected-columns.ipynb
-* selected-rows.ipynb
+* [selected-columns.ipynb](https://github.com/szabgab/slides/blob/main/python/examples/jupyter/SO/selected-columns.ipynb)
+* [selected-rows.ipynb](https://github.com/szabgab/slides/blob/main/python/examples/jupyter/SO/selected-rows.ipynb)
+
+## Exercise 3
+{id: exercise-3}
+
+* Download the Stack Overflow data set
+* Compare the average salary in different countries
+* Are there outliers? Can you remove them?
+* Analyze the date in the same way SO did, but restricted to a specific country.
 
 
 ## Other Materials
@@ -197,6 +207,7 @@ seaborn                   0.9.0                    py37_0
 * [NumerAI](https://numer.ai/)
 
 * [Source](https://towardsdatascience.com/top-competitive-data-science-platforms-other-than-kaggle-2995e9dad93c)
+
 
 ## Thank You
 {id: thank-you}
