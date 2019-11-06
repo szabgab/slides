@@ -8,10 +8,10 @@ batch = count/n
 #files[(n-1) * batch : n * batch]
 
 for i in range(0, n):
-   pid = fork()
-   if pid:
-       # parent
-   else:
-       # child
-       child(files[i * batch : (i+1) * batch])
+    pid = fork()
+    if pid:
+        print("parent {}".format(pid))
+    else:
+        # child
+        child(files[i * batch : (i+1) * batch])
 
