@@ -172,6 +172,14 @@ seaborn                   0.9.0                    py37_0
 * [Tons of others](https://www.columnfivemedia.com/100-best-free-data-sources-infographic)
 
 
+## Salaries
+{id: salaries}
+
+* [salary_generate.ipynb](https://github.com/szabgab/slides/blob/main/python/examples/jupyter/salary_generate.ipynb)
+* [salary.csv](https://github.com/szabgab/slides/blob/main/python/examples/jupyter/salary.csv)
+* [salary.ipynb](https://github.com/szabgab/slides/blob/main/python/examples/jupyter/salary.ipynb)
+
+
 ## Stack Overflow survey
 {id: stack-overflow}
 
