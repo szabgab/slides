@@ -15,20 +15,33 @@
 * Colors: Screen Text: 118-118-118
 
 
-## Directory
-{id: directory}
+## File system
+{id: file-system}
 
 ```
 %CD%
 cd
 dir
 type
-mkdir
 echo
 redirection with >  and >>
 cls
-del
-rmdir
 ```
 
+## Directory
+{id: directory}
+
+```
+del             (delete file)
+mkdir           (make directory)
+rmdir           (remove directory)
+```
+
+## File Globbing
+{id: file-globbing}
+
+```
+dir *.txt
+ren       (rename, move)
+```
 
