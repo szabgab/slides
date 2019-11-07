@@ -7,8 +7,8 @@
 * [Gabor Szabo](https://www.linkedin.com/in/szabgab/)
 * Help teams improve their development practices
 
-* [Workshops](https://workshops.code-maven.com/)
 * [Training Courses](https://hostlocal.com/)
+* [Workshops](https://workshops.code-maven.com/)
 
 * [Code Maven Meetup](https://www.meetup.com/Code-Mavens/)
 
@@ -466,8 +466,8 @@ Adding files and committing changes to Git is cheap. What happens if you made so
 
 
 
-## log and blame
-{id: log-blame}
+## log and
+{id: log}
 
 * git log
 * git log -p
@@ -483,10 +483,6 @@ Adding files and committing changes to Git is cheap. What happens if you made so
 {id: git-blame}
 
 * git blame [filename]
-
-![git blame1](git_blame_1.jpg)
-
-![git blame2](git_blame_2.png)
 
 ## Exercises Session 2
 {id: exercises-2}
@@ -1020,12 +1016,15 @@ To github.com:collab-dev/participants/
 * [Our Meetup page](https://www.meetup.com/Code-Mavens/)
 * [Slides of Gabor](https://code-maven.com/slides/)
 
-## Finding jobs
-{id: finding-jobs}
-
-* Send me contact request via LinkedIn (mention the Workshops in your message).
-* Connect to each other via LinkedIn.
+## Thank you
+{id: thank-you}
 
 * [Gabor Szabo](https://www.linkedin.com/in/szabgab/)
+* Help teams improve their development practices
+
+* [Training Courses](https://hostlocal.com/)
+* [Workshops](https://workshops.code-maven.com/)
+
+* [Code Maven Meetup](https://www.meetup.com/Code-Mavens/)
 
 
