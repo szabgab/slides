@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "rnd.py", line 2, in <module>
+    print(random.random())
+AttributeError: module 'random' has no attribute 'random'
