@@ -1,8 +1,6 @@
-#!/usr/bin/env python
-
 def main():
-    print("Hello World")
-    return
+    print("Hello")
+    print("World")
 
 print("before")
 main()
