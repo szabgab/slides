@@ -1,6 +1,5 @@
-def main():
-    a = input('First number: ')
-    b = input('Second number: ')
-    print(int(a) + int(b))
+a = 19
+b = 23
+c = a + b
+print(c)    # 42
 
-main()
