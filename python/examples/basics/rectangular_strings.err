@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "python/examples/basics/rectangular_strings.py", line 3, in <module>
+    area = width * height
+TypeError: can't multiply sequence by non-int of type 'str'
