@@ -61,6 +61,8 @@ def test_flake8():
         stderr = subprocess.PIPE,
     )
     out, err = proc.communicate()
+    print(out)
+    print(err)
     assert proc.returncode == 1  # I guess because there were issues
     assert err  == b'' #.decode('utf-8') == ''
     errors = out.decode('utf-8').split("\n")
