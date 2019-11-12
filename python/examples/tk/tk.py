@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 
-from tkinter import Tk, Frame, Button, Label, Entry
+import tkinter as tk
 
-class Example(Frame):
+class Example(tk.Frame):
     def __init__(self, parent=None):
-        Frame.__init__(self, parent)
+        super().__init__(parent)
         self.pack()
         self.createWidgets()
 
@@ -16,7 +16,7 @@ class Example(Frame):
 
 
     def createWidgets(self):
-        self.QUIT = Button(self)
+        self.QUIT = tk.Button(self)
         self.QUIT["text"] = "QUIT"
         self.QUIT["fg"]   = "red"
         self.QUIT["command"] =  self.quit
@@ -24,32 +24,32 @@ class Example(Frame):
         self.QUIT.pack({"side": "left"})
 
         # Simple Label widget:
-        self.name_title = Label(self, text="Name:")
+        self.name_title = tk.Label(self, text="Name:")
         self.name_title.pack({"side": "left"})
 
         # Simple Entry widget:
-        self.name = Entry(self)
+        self.name = tk.Entry(self)
         self.name.pack({"side": "left"})
         self.name.insert(0, "Your name")
 
         # Simple Label widget:
-        self.password_title = Label(self, text="Password:")
+        self.password_title = tk.Label(self, text="Password:")
         self.password_title.pack({"side": "left"})
 
         # In order to hide the text as it is typed (e.g. for Passwords)
         # set the "show" parameter:
-        self.password = Entry(self)
+        self.password = tk.Entry(self)
         self.password["show"] = "*"
         self.password.pack({"side": "left"})
 
-        self.hi_there = Button(self)
+        self.hi_there = tk.Button(self)
         self.hi_there["text"] = "Hello",
         self.hi_there["command"] = self.say_hi
 
         self.hi_there.pack({"side": "left"})
 
 def main():
-    root = Tk()
+    root = tk.Tk()
     app = Example(parent=root)
 
     root.lift()

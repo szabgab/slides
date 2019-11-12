@@ -1,26 +1,21 @@
 #!/usr/bin/env python
 
-from tkinter import Tk, Frame, Button, Label, Entry
+import tkinter as tk
 
-class Example(Frame):
+class Example(tk.Frame):
     def __init__(self, parent=None):
-        Frame.__init__(self, parent)
+        super().__init__(parent)
         self.pack()
         self.createWidgets()
 
     def createWidgets(self):
         # Simple Label widget:
-        self.name_title = Label(self, text="Hello World!")
+        self.name_title = tk.Label(self, text="Hello World!")
         self.name_title.pack({"side": "left"})
 
 def main():
-    root = Tk()
+    root = tk.Tk()
     app = Example(parent=root)
-
-    root.lift()
-    root.call('wm', 'attributes', '.', '-topmost', True)
-    root.after_idle(root.call, 'wm', 'attributes', '.', '-topmost', False)
-
     app.mainloop()
 
 main()
