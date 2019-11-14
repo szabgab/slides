@@ -2,6 +2,8 @@ a = "2.1"
 b = float(a)
 c = int(b)
 print(c)                   # 2
+print( type(a) )           # <class 'str'>
+print( type(b) )           # <class 'float'>
 print( type(c) )           # <class 'int'>
 
 d = int( float(a) )
