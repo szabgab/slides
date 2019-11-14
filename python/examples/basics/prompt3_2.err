@@ -1,0 +1,7 @@
+Your name: Traceback (most recent call last):
+  File "prompt3.py", line 5, in <module>
+    main()
+  File "prompt3.py", line 2, in main
+    name = input('Your name: ')
+  File "<string>", line 1, in <module>
+NameError: name 'Foo' is not defined
