@@ -1,3 +1,5 @@
+We have a question!
+Your name: Foo
 Your name: Traceback (most recent call last):
   File "prompt3.py", line 5, in <module>
     main()
