@@ -1,11 +1,10 @@
-v = 23
+x = 23
 
-if v:
+if :
     print("23 is true")
 
-v = 0
-
-if v:
+y = 0
+if y:
     print("0 is true")
 else:
     print("0 is false")

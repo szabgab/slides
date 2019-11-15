@@ -8,6 +8,7 @@ print(a + b)   # 5
 print(a + c)   # 4.3
 print(b / a)   # 1.5    # see the __future__
 print(a * c)   # 4.6
+print(a ** b)  # 8
 
 a += 7         # is the same as a = a + 7
 print(a)       # 9
