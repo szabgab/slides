@@ -1,6 +1,6 @@
 x = 23
 
-if :
+if x:
     print("23 is true")
 
 y = 0
