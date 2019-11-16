@@ -1,9 +1,9 @@
-a = "The black cat climbed the green tree."
-print(a.rindex("c"))         # 14
-print(a.rindex("c", 8))      # 14
-print(a.rindex("c", 8, 13))  # 10
+text = "The black cat climbed the green tree."
+print(text.rindex("c"))         # 14
+print(text.rindex("c", 8))      # 14
+print(text.rindex("c", 8, 13))  # 10
 
-print(a.rindex("gr", 8))     # 26
-print(a.rindex("gr", 8, 16))
+print(text.rindex("gr", 8))     # 26
+print(text.rindex("gr", 8, 16))
 
 

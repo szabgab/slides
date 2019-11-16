@@ -1,5 +1,5 @@
-x = "abcd"
-print(x)      # abcd
+text = "abcd"
+print(text)      # abcd
 
-x = x[:2] + 'Y' + x[3:]
-print(x)      # abYd
+text = text[:2] + 'Y' + text[3:]
+print(text)      # abYd

@@ -1,11 +1,11 @@
-x = "abcd"
-print(x)     # abcd
+text = "abcd"
+print(text)     # abcd
 
-x = x + "ef"
-print(x)     # abcdef
+text = text + "ef"
+print(text)     # abcdef
 
-y = x
-print(y)     # abcdef
-x = "xyz"
-print(x)     # xyz
-print(y)     # abcdef
+other = text
+print(other)     # abcdef
+text = "xyz"
+print(text)     # xyz
+print(other)     # abcdef

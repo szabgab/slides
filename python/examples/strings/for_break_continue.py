@@ -1,4 +1,4 @@
-txt = "The black cat climebd the green tree."
+txt = "The black cat climbed the green tree."
 
 for c in txt:
     if c == ' ':
