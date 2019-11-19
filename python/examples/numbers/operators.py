@@ -14,3 +14,9 @@ a += 7         # is the same as a = a + 7
 print(a)       # 9
 
 # a++          # SyntaxError: invalid syntax
+# a--          # SyntaxError: invalid syntax
+
+a += 1
+print(a)       # 10
+a -= 1
+print(a)       # 9
