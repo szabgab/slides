@@ -447,6 +447,11 @@ and: 1
 
 * [OS](https://golang.org/pkg/os/)
 
+## Trim line - remove trailing newline from string
+{id: remove-newline}
+
+![](examples/trim-newline/trim.go)
+
 ## Read file as one string (slurp)
 {id: read-file-as-one-string}
 
@@ -456,6 +461,12 @@ and: 1
 {id: write-to-file}
 
 ![](examples/write/write_file.go)
+
+## Write number to file
+{id: write-number-to-file}
+
+![](examples/write_number/write_number_file.go)
+
 
 ## Random with seed
 {id: random-with-seed}
@@ -789,7 +800,7 @@ The exercise have several levels. Solve them one after the other.
 
 ![](examples/game5/game5.go)
 
-## os.stat information about a file or directory
+## os.stat information about a file or directory (file exists)
 {id: os-stat}
 
 ![](examples/file-stat/stat.go)
