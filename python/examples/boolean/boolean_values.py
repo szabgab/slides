@@ -1,5 +1,3 @@
-from __future__ import print_function
-
 values = [None, 0, "", False, [], {}, "0", True]
 
 for v in values:
