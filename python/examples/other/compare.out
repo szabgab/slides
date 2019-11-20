@@ -1,4 +1,5 @@
 True
+False
 Traceback (most recent call last):
   File "examples/other/compare.py", line 6, in <module>
     print(x > y)     # True
