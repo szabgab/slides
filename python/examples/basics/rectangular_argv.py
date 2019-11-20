@@ -2,19 +2,16 @@ import sys
 
 def main():
     if len(sys.argv) != 3:
-        print("Needs 2 arguments:  width length")
-        return
+        exit("Needs 2 arguments:  width length")
 
     width  = int( sys.argv[1] )
     length = int( sys.argv[2] )
 
     if length <= 0:
-        print("length is not positive")
-        return
+        exit("length is not positive")
 
     if width <= 0:
-        print("width is not positive")
-        return
+        exit("width is not positive")
 
     area = length * width
     print("The area is ",  area)
