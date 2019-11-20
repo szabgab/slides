@@ -1,8 +1,8 @@
-txt = 'hello world'
-if 'wo' in txt:
+txt = "hello world"
+if "wo" in txt:
     print('found wo')
 
-if 'x' in txt:
-    print('found x')
+if "x" in txt:
+    print("found x")
 else:
-    print('NOT found x')
+    print("NOT found x")
