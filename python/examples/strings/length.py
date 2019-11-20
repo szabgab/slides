@@ -3,4 +3,4 @@ print(len(line)) # 11
 
 text = """Hello 
 World"""
-print(len(text))
+print(len(text)) # 12
