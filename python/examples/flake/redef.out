@@ -1,0 +1,10 @@
+************* Module redef
+redef.py:1:0: C0111: Missing module docstring (missing-docstring)
+redef.py:2:0: W0622: Redefining built-in 'sum' (redefined-builtin)
+redef.py:4:0: W0622: Redefining built-in 'len' (redefined-builtin)
+redef.py:2:0: C0103: Constant name "sum" doesn't conform to UPPER_CASE naming style (invalid-name)
+redef.py:4:0: C0111: Missing function docstring (missing-docstring)
+
+--------------------------------------------------------------------
+Your code has been rated at -2.50/10 (previous run: -2.50/10, +0.00)
+
