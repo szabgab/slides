@@ -841,12 +841,6 @@ go run examples/csv/read-csv.go examples/csv/process_csv_file.csv
 
 ![](examples/json/json-round-trip.go)
 
-## TODO: Solution: multiple counter
-{id: solution-multiple-counter}
-
-![](examples/counter-multi/multi-counter.go)
-
-
 ## Logging
 {id: logging}
 
