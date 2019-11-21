@@ -1,8 +1,9 @@
-txt = "Some text"
+txt = "Foo Bar"
 num = 42.12
 
-print("'{}'{}'".format(txt, num))   # 'Some text'42.12'
-print("'{0}'{1}'".format(txt, num)) # 'Some text'42.12'
+print("The user {} was born {} years ago.".format(txt, num))
+print("The user {0} was born {1} years ago.".format(txt, num))
+print("The user {1} was born {0} years ago.".format(num, txt))
 
-print("'{1}'{0}'".format(txt, num)) # '42.12'Some text'
-print("'{0}'{0}'".format(txt, num)) # 'Some text'Some text'
+
+print("{0} is {0} and {1} years old.".format(txt, num))
