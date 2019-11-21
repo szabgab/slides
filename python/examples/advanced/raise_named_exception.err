@@ -1,6 +1,0 @@
-<type 'exceptions.NameError'>
-name 'b' is not defined
-("name 'b' is not defined",)
-<type 'exceptions.NameError'>
-something else
-('something else',)

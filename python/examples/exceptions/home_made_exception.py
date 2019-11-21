@@ -11,7 +11,6 @@ def main():
         print(err)
         print("Type: " + type(err).__name__)
 
-
     try:
         some()
     except MyException as err:

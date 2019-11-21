@@ -1,0 +1,14 @@
+start
+Hulk
+MyGreenError
+Frozen
+MyBlueError
+Traceback (most recent call last):
+  File "hierarchy3.py", line 30, in <module>
+    main()
+  File "hierarchy3.py", line 19, in main
+    cl.red()
+  File "/home/gabor/work/slides/python/examples/exceptions/colors.py", line 18, in red
+    red_alert()
+NameError: name 'red_alert' is not defined
+

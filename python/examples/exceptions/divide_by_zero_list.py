@@ -2,7 +2,7 @@ def div(a, b):
     print("dividing {} by {} is {}".format(a, b, a/b))
 
 a = 100
-values = 2, 5, 0, 4
+values = [2, 5, 0, 4]
 
 for v in values:
     div(a, v)
