@@ -1,7 +1,7 @@
 import random
 
 total = 0
-while total <= 100:
+while total >= 0:
     print(total)
     total += random.randrange(20)
 
