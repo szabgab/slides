@@ -1,10 +1,11 @@
+import sys
 import module
 
-# 3 of the 4 file exist
-files = 'one.txt', 'zero.txt', 'two.txt', 'three.txt'
+# python open_list_of_files.py one.txt zero.txt two.txt three.txt
+files = sys.argv[1:]
 
-for f in files:
-    module.read_and_divide(f)
+for filename in files:
+    module.read_and_divide(filename)
 
 # before one.txt
 # 100.0

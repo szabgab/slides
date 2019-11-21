@@ -1,0 +1,20 @@
+Traceback (most recent call last):
+  File "stack_trace.py", line 11, in main
+    bar()
+  File "stack_trace.py", line 4, in bar
+    foo()
+  File "stack_trace.py", line 7, in foo
+    raise Exception("hi")
+Exception: hi
+
+---------------------
+Traceback (most recent call last):
+  File "stack_trace.py", line 20, in <module>
+    main()
+  File "stack_trace.py", line 17, in main
+    bar()
+  File "stack_trace.py", line 4, in bar
+    foo()
+  File "stack_trace.py", line 7, in foo
+    raise Exception("hi")
+Exception: hi

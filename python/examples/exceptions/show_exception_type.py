@@ -1,14 +1,16 @@
+import sys
 import module
 
-files = 'one.txt', 'zero.txt', 'two.txt', 'three.txt'
+# python show_exceptions_type.py one.txt zero.txt two.txt three.txt
+files = sys.argv[1:]
 
-for f in files:
+for filename in files:
     try:
-        module.read_and_divide(f)
-    except Exception as e:
-        print("  There was a problem in " + f)
-        print("  Text: {}".format(e))
-        print("  Name: {}".format(type(e).__name__))
+        module.read_and_divide(filename)
+    except Exception as err:
+        print("  There was a problem in " + filename)
+        print("  Text: {}".format(err))
+        print("  Name: {}".format(type(err).__name__))
 
 # before one.txt
 # 100.0

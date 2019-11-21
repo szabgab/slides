@@ -1,13 +1,14 @@
+import sys
 import module
 
-# 3 of the 4 file exist
-files = 'one.txt', 'zero.txt', 'two.txt', 'three.txt'
+# python handle_divide_by_zero.py one.txt zero.txt two.txt three.txt
+files = sys.argv[1:]
 
-for f in files:
+for filename in files:
     try:
-        module.read_and_divide(f)
+        module.read_and_divide(filename)
     except ZeroDivisionError:
-        print("Cannot divide by 0 in file {}".format(f))
+        print("Cannot divide by 0 in file {}".format(filename))
 
 
 # before one.txt

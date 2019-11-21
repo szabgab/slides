@@ -1,27 +1,26 @@
 class MyException(Exception):
-    def __init__(self, first, second):
-        self.first  = first
-        self.second = second
+    def __init__(self, name, address):
+        self.name  = name
+        self.address = address
     def __str__(self):
-        return 'Problems? {} and {}'.format(self.first, self.second)
+        return 'Have you encountered problems? name:{}  address:{}'.format(self.name, self.address)
 
 
 def some():
-    print("Entering some function")
-    raise MyException("Some", "Error")
-    print("Code after raise")
+    raise MyException(name = "Foo Bar", address = "Somewhere deep in the code")
 
-try:
-    print("Before calling some")
-    some()
-    print("After calling some")
-except Exception as e:
-    print("Exception received")
-    print(e)
-    print("Type: " + type(e).__name__)
+def main():
+    try:
+        some()
+    except Exception as err:
+        print(err)
+        print("Type: " + type(err).__name__)
+        print(err.name)
+        print(err.address)
 
-# Before calling some
-# Entering some function
-# Exception received
-# Problems? Some and Error
+main()
+
+# Have you encountered problems? name:Foo Bar  address:Somewhere deep in the code
 # Type: MyException
+# Foo Bar
+# Somewhere deep in the code
