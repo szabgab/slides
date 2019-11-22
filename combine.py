@@ -84,7 +84,7 @@ def main():
                 line = line.rstrip("\n")
                 book.extend(process_slides(source, target, line))
     else:
-        process_slides(source, target, args.name)
+        book = process_slides(source, target, args.name)
 
     with open(os.path.join(target, 'Book.txt'), 'w') as fh:
         for line in book:
