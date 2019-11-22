@@ -48,55 +48,55 @@ v10.16.0
 {id: hello-world}
 
 
-![](examples/hello_world.js)
+![](examples/node-intro/hello_world.js)
 
 ```
-$ node examples/hello_world.js
+$ node examples/node-intro/hello_world.js
 Hello World
 ```
 
 ## Hello World with sh
 {id: hello-world-sh}
 
-![](examples/hello_world_sh.js)
+![](examples/node-intro/hello_world_sh.js)
 
 Make it executable:
 
 ```
-chmod +x examples/hello_world_sh.js
+chmod +x examples/node-intro/hello_world_sh.js
 ```
 
 Run it directly
 
 ```
-./examples/hello_world_sh.js
+./examples/node-intro/hello_world_sh.js
 ```
 
 ## Hello World in function
 {id: hello-world-in-function}
 
-![](examples/hello_world_function.js)
+![](examples/node-intro/hello_world_function.js)
 
 
 ## Parameter passing to function
 {id: parameter-passing-to-function}
 
-![](examples/hello_person.js)
+![](examples/node-intro/hello_person.js)
 
 ## Command line arguments (argv)
 {id: command-line-arguments-foreach}
 
 [](https://nodejs.org/docs/latest/api/process.html#process_process_argv)o
 
-![](examples/argv_foreach.js)
+![](examples/node-intro/argv_foreach.js)
 
 ## Command line arguments (argv)
 {id: command-line-arguments}
 
-![](examples/argv.js)
+![](examples/node-intro/argv.js)
 
 ```
-node examples/argv.js "hello world"
+node examples/node-intro/argv.js "hello world"
 3
 hello world
 ```
@@ -104,15 +104,15 @@ hello world
 ## Define function with arrow notation
 {id: define-function-with-arrow-notation}
 
-![](examples/add.js)
+![](examples/node-intro/add.js)
 
 ## setTimeout
 {id: set-timeout}
 
-![](examples/with_timeout.js)
+![](examples/node-intro/with_timeout.js)
 
 ```
-$ node examples/with_timeout.js
+$ node examples/node-intro/with_timeout.js
 hello
 world
 ```
@@ -120,10 +120,10 @@ world
 ## setInterval
 {id: set-interval}
 
-![](examples/with_interval.js)
+![](examples/node-intro/with_interval.js)
 
 ```
-$ node examples/with_interval.js
+$ node examples/node-intro/with_interval.js
 hello
 world
 world
@@ -137,27 +137,27 @@ world
 * Using backtick!
 * In ES2015/ES6
 
-![](examples/template_literals.js)
+![](examples/node-intro/template_literals.js)
 
 ```
-$ node examples/template_literals.js
+$ node examples/node-intro/template_literals.js
 Hello Kate
 ```
 
 ## constant (const)
 {id: constants}
 
-![](examples/const.js)
+![](examples/node-intro/const.js)
 
 ```
-$ node examples/const.js
+$ node examples/node-intro/const.js
 3.14
-/home/gabor/work/slides/nodejs/examples/const.js:6
+/home/gabor/work/slides/nodejs/examples/node-intro/const.js:6
 pi = 3.15;
    ^
 
 TypeError: Assignment to constant variable.
-    at Object.<anonymous> (/home/gabor/work/slides/nodejs/examples/const.js:6:4)
+    at Object.<anonymous> (/home/gabor/work/slides/nodejs/examples/node-intro/const.js:6:4)
     at Module._compile (internal/modules/cjs/loader.js:776:30)
     at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
     at Module.load (internal/modules/cjs/loader.js:653:32)
@@ -171,39 +171,39 @@ TypeError: Assignment to constant variable.
 ## var
 {id: var}
 
-![](examples/var1.js)
+![](examples/node-intro/var1.js)
 
-![](examples/var2.js)
+![](examples/node-intro/var2.js)
 
-![](examples/var3.js)
+![](examples/node-intro/var3.js)
 
 ## let
 {id: let}
 
-![](examples/let1.js)
+![](examples/node-intro/let1.js)
 
-![](examples/let2.js)
+![](examples/node-intro/let2.js)
 
 ## var let
 {id: var-let}
 
-![](examples/var_let.js)
+![](examples/node-intro/var_let.js)
 
 ## let var
 {id: let-var}
 
-![](examples/let_var.js)
+![](examples/node-intro/let_var.js)
 
 
 ## Create library
 {id: create-library}
 
-![](examples/lib.js)
+![](examples/node-intro/lib.js)
 
-![](examples/app.js)
+![](examples/node-intro/app.js)
 
 ```
-$ node examples/app.js
+$ node examples/node-intro/app.js
 Loading module
 Hello World
 Hello Foo
@@ -218,14 +218,14 @@ It is better to define as constant so we won't change it by mistake
 From a module we can export a module or a single function like this:
 // module.exports = hi;
 
-![](examples/lib2.js)
+![](examples/node-intro/lib2.js)
 
-![](examples/app2.js)
+![](examples/node-intro/app2.js)
 
 ## What is in a module?
 {id: what-is-in-a-module}
 
-![](examples/my_module.js)
+![](examples/node-intro/my_module.js)
 
 ## OS module
 {id: os-module}
@@ -233,7 +233,7 @@ From a module we can export a module or a single function like this:
 * A bunch of OS-related methods
 * [os](https://nodejs.org/api/os.html)
 
-![](examples/the_os_module.js)
+![](examples/node-intro/the_os_module.js)
 
 
 ## File-system related operations (fs)
@@ -244,66 +244,66 @@ From a module we can export a module or a single function like this:
 ## Read file
 {id: read-file}
 
-![](examples/read_file.js)
+![](examples/node-intro/read_file.js)
 
 ## Write file
 {id: write-file}
 
-![](examples/write_file.js)
+![](examples/node-intro/write_file.js)
 
 ## Append to file
 {id: append-to-file}
 
-![](examples/append_to_file.js)
+![](examples/node-intro/append_to_file.js)
 
 ## Delete file (unlink file)
 {id: delete-file}
 
-![](examples/delete_file.js)
+![](examples/node-intro/delete_file.js)
 
 ## Read (and write) file by chunks
 {id: read-write-file-by-chunks}
 
-![](examples/read_write_by_chunks.js)
+![](examples/node-intro/read_write_by_chunks.js)
 
 ## Read (and write) file by chunks using pipe
 {id: read-write-file-by-pipe}
 
-![](examples/read_write.js)
+![](examples/node-intro/read_write.js)
 
 
 ## Create a directory (folder) (mkdir)
 {id: create-directory}
 
-![](examples/create_directory.js)
+![](examples/node-intro/create_directory.js)
 
 ## Remove a directory (folder) (rmdir)
 {id: remove-directory}
 
-![](examples/remove_directory.js)
+![](examples/node-intro/remove_directory.js)
 
 
 ## Read directory sync (readdirSync)
 {id: read-directory-sync}
 
-![](examples/readdir_sync.js)
+![](examples/node-intro/readdir_sync.js)
 
 ## Read directory async (readdir)
 {id: read-directory-async}
 
-![](examples/readdir_async.js)
+![](examples/node-intro/readdir_async.js)
 
 ## Read directory async error handline
 {id: read-directory-async-errors}
 
-![](examples/readdir_async_errors.js)
+![](examples/node-intro/readdir_async_errors.js)
 
 ## Rename a file (rename)
 {id: rename-file}
 
 fs.rename(from, to, (err) => {})
 
-![](examples/rename_file.js)
+![](examples/node-intro/rename_file.js)
 
 
 ## The path related tools
@@ -314,7 +314,7 @@ fs.rename(from, to, (err) => {})
 ## Path to the current file
 {id: path-to-current-file}
 
-![](examples/path_to_file.js)
+![](examples/node-intro/path_to_file.js)
 
 ## Relative path inside a project
 {id: relative-path-inside-a-project}
@@ -328,7 +328,7 @@ project_dir/
        main.html
 ```
 
-![](examples/relative_path.js)
+![](examples/node-intro/relative_path.js)
 
 ## Exception
 {id: exception}
@@ -429,18 +429,18 @@ var message = '';
 ## Class
 {id: class}
 
-![](examples/myclass.js)
+![](examples/node-intro/myclass.js)
 
 ## HTTP Hello World
 {id: http-hello-world}
 
-![](examples/http_hello_world.js)
+![](examples/node-intro/http_hello_world.js)
 
 
 ## HTTP Return JSON
 {id: http-return-json}
 
-![](examples/http_return_json.js)
+![](examples/node-intro/http_return_json.js)
 
 
 ## HTTP Server
