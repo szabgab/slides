@@ -22,7 +22,7 @@ Basics of the language:
 ## First script
 {id: first-perl-script}
 
-![](examples/hello_world.pl)
+![](examples/perl-intro/hello_world.pl)
 
 * #!/usr/bin/env perl  - Path to perl interpreter
 * use v5.10;           - Minimal version number of Perl, turn on new features. Same as `use 5.010;`
@@ -78,7 +78,7 @@ Basics of the language:
 ## First script with main function
 {id: first-perl-scirpt-with-main}
 
-![](examples/hello_world_main.pl)
+![](examples/perl-intro/hello_world_main.pl)
 
 * Putting all your code in small(!) functions will make your code better.
 
@@ -505,12 +505,12 @@ sub {
 ## Linux environment variables (%ENV)
 {id: linux-environment-variables}
 
-![](examples/env.pl)
+![](examples/perl-intro/env.pl)
 
 ## List all defined variables
 {id: list-all-defined-variables}
 
-![](examples/list_defined_variables.pl)
+![](examples/perl-intro/list_defined_variables.pl)
 
 ## Regexes
 {id: regexes}
@@ -531,7 +531,7 @@ sub {
 ## OOP Perl core
 {id: oop-perl-core}
 
-![](examples/MyClass.pm)
+![](examples/perl-intro/MyClass.pm)
 
 ## Perl internal variables
 {id: perl-internal-variables}
