@@ -266,7 +266,7 @@ docker container commit ubu mybuntu
 ## Docker: Empty Ubuntu
 {id: docker-empty-ubuntu}
 
-![](examples/empty/Dockerfile)
+![](examples/from/Dockerfile)
 
 ```
 $ docker build -t mydocker .
