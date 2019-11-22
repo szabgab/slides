@@ -13,12 +13,27 @@ def get_arguments():
 
 def process_slides(source, target, name):
     logging.info(f"Processing slides of {name}")
+    book = []
 
     resources = os.path.join(target, 'resources')
     if not os.path.exists(resources):
         os.mkdir(resources)
 
-    src_examples = os.path.join(source, name, 'examples')
+    slides_path = os.path.join(source, name)
+    for thing in os.listdir(slides_path):
+        if thing == 'examples':
+            continue
+        if thing == 'README.md':
+            continue
+        thing_path = os.path.join(slides_path, thing)
+        if os.path.isfile(thing_path) and thing.endswith('.md'):
+            new_filename = f"{name}-{thing}"
+            shutil.copy(thing_path, os.path.join(target, new_filename))
+            book.append(new_filename)
+        else:
+            logging.warning(f"What is this thing {thing_path} ?")
+
+    src_examples = os.path.join(slides_path, 'examples')
     if os.path.exists(src_examples):
         for example in os.listdir(src_examples):
             #print(example)
@@ -30,6 +45,7 @@ def process_slides(source, target, name):
                 logging.error(f"{example_path}")
                 # TODO maybe I should not even handle this just let the code blow up so I will be forced to fix
                 # this
+    return book
 
 
 def main():
@@ -60,14 +76,20 @@ def main():
         shutil.rmtree(target)
     os.mkdir(target)
 
+    book = []
     if args.all:
         slides_file = os.path.join(source, 'slides.txt')
         with open(slides_file, 'r') as fh:
             for line in fh:
                 line = line.rstrip("\n")
-                process_slides(source, target, line)
+                book.extend(process_slides(source, target, line))
     else:
         process_slides(source, target, args.name)
+
+    with open(os.path.join(target, 'Book.txt'), 'w') as fh:
+        for line in book:
+            fh.write(line + "\n")
+
 
 main()
 
