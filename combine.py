@@ -11,8 +11,13 @@ def get_arguments():
     parser.add_argument('--all', action='store_true', help='collect all the slides')
     return parser.parse_args()
 
-def process_slides(source, resources, name):
+def process_slides(source, target, name):
     logging.info(f"Processing slides of {name}")
+
+    resources = os.path.join(target, 'resources')
+    if not os.path.exists(resources):
+        os.mkdir(resources)
+
     src_examples = os.path.join(source, name, 'examples')
     if os.path.exists(src_examples):
         for example in os.listdir(src_examples):
@@ -46,7 +51,6 @@ def main():
 
     target = os.path.abspath(target)
     target = os.path.join(target, 'manuscript')
-    resources = os.path.join(target, 'resources')
 
     source = os.path.abspath(root)
     logging.info(f"target: {target}")
@@ -55,16 +59,15 @@ def main():
     if os.path.exists(target):
         shutil.rmtree(target)
     os.mkdir(target)
-    os.mkdir(resources)
 
     if args.all:
         slides_file = os.path.join(source, 'slides.txt')
         with open(slides_file, 'r') as fh:
             for line in fh:
                 line = line.rstrip("\n")
-                process_slides(source, resources, line)
+                process_slides(source, target, line)
     else:
-        process_slides(source, resources, args.name)
+        process_slides(source, target, args.name)
 
 main()
 
