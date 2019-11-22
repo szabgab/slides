@@ -1,6 +1,16 @@
+#!/usr/bin/env python
+
 import os
 import shutil
 import logging
+import argparse
+
+def get_arguments():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--name', help='name of the slides')
+    parser.add_argument('--all', action='store_true', help='collect all the slides')
+    return parser.parse_args()
+
 
 def main():
     logging.basicConfig(
@@ -8,12 +18,22 @@ def main():
         format = '%(asctime)s - %(levelname)-5s - %(funcName)s - %(name)s - %(message)s',
         datefmt = "%Y-%m-%d %H:%M:%S"
     )
-    target = '.'
-    source = '../slides/'
+    args = get_arguments()
+
+    root = os.path.dirname(os.path.abspath(__file__))
+
+    if args.all:
+        target = os.path.join(root, '../slides-book-generated')
+    elif args.name:
+        target = os.path.join(root, f'../slides-{args.name}-book-generated')
+    else:
+        exit("Either --all or --name must be provided")
+
     target = os.path.abspath(target)
     target = os.path.join(target, 'manuscript')
     resources = os.path.join(target, 'resources')
-    source = os.path.abspath(source)
+
+    source = os.path.abspath(root)
     logging.info(f"target: {target}")
     logging.info(f"source: {source}")
 
