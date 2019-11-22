@@ -1,8 +1,8 @@
-x = ['abc', 'xyz', 'qqrq', 42]
-print(x)         # ['abc', 'xyz', 'qqrq', 42]
-print(len(x))    # 4
+planets = ['Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn']
+print(planets)   # ['Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn']
+print(len(planets))    # 6
 
-print(x[0])      # abc
-print(x[0:1])    # ['abc']
-print(x[0:2])    # ['abc', 'xyz']
-print(x[1:3])    # ['xyz', 'qqrq']
+print(planets[0])      # Mercury
+print(planets[0:1])    # ['Mercury']
+print(planets[0:2])    # ['Mercury', 'Venus']
+print(planets[1:3])    # ['Venus', 'Earth']

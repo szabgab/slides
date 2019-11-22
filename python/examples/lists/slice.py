@@ -1,10 +1,12 @@
-x = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j']
+letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j']
 
-print(x[0::1])    # ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j']
+print(letters[0::1])    # ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j']
 
-print(x[0::2])    # ['a', 'c', 'e', 'g', 'i']
+print(letters[0::2])    # ['a', 'c', 'e', 'g', 'i']
 
-print(x[1::2])    # ['b', 'd', 'f', 'h', 'j']
+print(letters[1::2])    # ['b', 'd', 'f', 'h', 'j']
 
-print(x[1::3])    # ['b', 'e', 'h']
+print(letters[1:8:2])    # ['b', 'd', 'f', 'h']
+
+print(letters[1:20:3])    # ['b', 'e', 'h']
 
