@@ -59,7 +59,7 @@ def main():
     root = os.path.dirname(os.path.abspath(__file__))
 
     if args.all:
-        target = os.path.join(root, '../slides-book-generated')
+        target = os.path.join(root, '../slides-all-book-generated')
     elif args.name:
         target = os.path.join(root, f'../slides-{args.name}-book-generated')
     else:
