@@ -45,7 +45,7 @@ https://code-maven.com/ws1
 * The Operating System - thousands of programs
 * The Distribution - a group effort
 
-![Tux](Tux.png)
+![Tux](img/Tux.png)
 
 ## Linux Distributions
 {id: linux-distributions}
@@ -80,14 +80,14 @@ https://code-maven.com/ws1
 
 * Open VirtualBox - Press the "new" button on the left
 
-![step_1](virtualbox_1.png)
+![step_1](img/virtualbox_1.png)
 
 ## Configure Virtualbox - 2
 {id: configure-virtualbox-2}
 
 * If you type in the name "ubuntu_17.10.1" it will setup the type to linux and the version to ubuntu 64-bit for you if not, you can do that yourself.
 
-![step_2](virtualbox_2.png)
+![step_2](img/virtualbox_2.png)
 
 ## Configure Virtualbox - 3
 {id: configure-virtualbox-3}
@@ -99,7 +99,7 @@ https://code-maven.com/ws1
 * Storage on physical hard disk: Dynamically allocated.
 * File location and size: `ubuntu` is fine. 10 Gb.
 
-![step_3](virtualbox_3.png)
+![step_3](img/virtualbox_3.png)
 
 
 ## Configure Virtualbox - 4
@@ -110,7 +110,7 @@ https://code-maven.com/ws1
 * Click on the "empty" CD icon and select the Ubuntu .iso file you have downloaded before.
 * After saving this setup you can click on "Start" to launch the new Linux machine.
 
-![step_4](virtualbox_4.png)
+![step_4](img/virtualbox_4.png)
 
 ## Set up Linux
 {id: setup-linux}
@@ -130,7 +130,7 @@ https://code-maven.com/ws1
 * When you get to the hostname section choose whatever you like.
 * "ubuntu" is fine for this installation.
 
-![linux_1](linux_install_1.png)
+![linux_1](img/linux_install_1.png)
 
 ## Set up Linux - user
 {id: setup-linux-user}
@@ -158,14 +158,14 @@ https://code-maven.com/ws1
 * When the installation is complete, it will unmount the Ubuntu image we setup at the beginning.
 * Continue to reboot:
 
-![linux_2](linux_install_2.png)
+![linux_2](img/linux_install_2.png)
 
 ## Linux login screen
 {id: linux-login-screen}
 
 * When you are done installing after the reboot the host screen should look like this:
 
-![linux_3](linux_install_3.png)
+![linux_3](img/linux_install_3.png)
 
 ## Log in to the computer on the VirtualBox console
 {id: log-in-to-computer-on-the-virtualbox-console}
@@ -229,7 +229,7 @@ Extra we need for VirtualBox:
 * Might need Windows Admin rights (popup in the background)
 * 192.168.56.1/24
 
-![vboxnet](vboxnet0.png)
+![vboxnet](img/vboxnet0.png)
 
 ## Configure Host-only network - adapter 1
 {id: configure-host-only-network-1}
@@ -238,7 +238,7 @@ Extra we need for VirtualBox:
 * Select your machine: Settings - Network (guest needs to be shutdown)
 * Adapter 1 is set to NAT.
 
-![adapter1](adapter1.png)
+![adapter1](img/adapter1.png)
 
 ## Configure Host-only network - adapter 2
 {id: configure-host-only-network-2}
@@ -246,7 +246,7 @@ Extra we need for VirtualBox:
 * Click to Adapter 2
 * Set it to "Host only" and select the vboxnet0
 
-![adapter2](adapter2.png)
+![adapter2](img/adapter2.png)
 
 ## Configure host-only network on Ubuntu
 {id: configure-host-only-network-for-ubuntu}
