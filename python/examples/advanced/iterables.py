@@ -1,9 +1,14 @@
+for num in range(3, 9, 2):
+    print(num)
+
+print()
+
 numbers = [101, 2, 3, 42]
-for n in numbers:
-    print(n)
+for num in numbers:
+    print(num)
 
 print()
 
 name = "FooBar"
-for n in name:
-    print(n)
+for cr in name:
+    print(cr)

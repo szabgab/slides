@@ -1,10 +1,12 @@
 def double(n):
-    return 2*n
+    return 2 * n
 
 numbers = [1, 2, 3, 4]
-d = map(double, numbers)
-print(d)                         # [2, 4, 6, 8]
-
 name = "FooBar"
-x = map(double, name)
-print(x)  # ['FF', 'oo', 'oo', 'BB', 'aa', 'rr']
+
+double_numbers = map(double, numbers)
+print(double_numbers)   # <map object at 0x7f8eb2d849e8>
+
+double_letters = map(double, name)
+print(double_letters)   # <map object at 0x7f8eb2d84cc0>
+
