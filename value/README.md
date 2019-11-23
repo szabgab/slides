@@ -2,8 +2,8 @@
 - Waterfall model, what are the problems with it? (What are the costs and risks?)
 
 
-Run ./value/time_value.py  to generate the drawings.
-View them at: file:///Users/gabor/work/slides/value/svg.html
+Run ./value/img/time_value.py  to generate the drawings.
+View them at: file:///Users/gabor/work/slides/value/img/svg.html
 
 ## About you
 {id: about-you}
