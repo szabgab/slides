@@ -89,9 +89,9 @@ So "sooner" has a higher value than later.
 ## Value creation
 {id: value-creation}
 
-![One release](time_value.svg)
+![One release](img/time_value.svg)
 
-![Many releases](time_value_many_releases.svg)
+![Many releases](img/time_value_many_releases.svg)
 
 
 ## Product types
@@ -117,7 +117,7 @@ So "sooner" has a higher value than later.
 
 {id: release-frequency}
 
-![Release frequency](release-frequency.jpg)
+![Release frequency](img/release-frequency.jpg)
 
 * [source](https://medium.com/data-ops/releasing-new-analytics-every-second-fc5fefd92360)
 
@@ -150,7 +150,7 @@ So "sooner" has a higher value than later.
 ## Wall of Confusion
 {id: wall-of-confusion}
 
-![Wall of Confusion](WallOfConfusion.png)
+![Wall of Confusion](img/WallOfConfusion.png)
 
 by Andrew Clay Shafer.
 
@@ -248,7 +248,7 @@ Example: fill envelops - you have 10 envelops to fill with a letter. You have 4 
 ## Reduce Multitasking
 {id: reduce-multitasking}
 
-![Multitasking](multitasking.png)
+![Multitasking](img/multitasking.png)
 
 * [source](http://flowa.fi/blog/2014/10/23/games-to-learn-kanban-why-and-how.html)
 
@@ -337,12 +337,12 @@ Observe how much longer the second method takes.
 
 * Swarm and solve problems, build and spread new knowledge.
 
-![](andon-cord-example-in-manufacturing.jpg)
+![](img/andon-cord-example-in-manufacturing.jpg)
 
 ## Andon cord
 {id: andon-cord}
 
-![](6sig-andon-system.jpg)
+![](img/6sig-andon-system.jpg)
 
 ## Test-Driven Development
 {id: test-driven-development}
@@ -473,7 +473,7 @@ The same team
 ## DevOps loop
 {id: devops-loop}
 
-![DevOps loop](devops-300x148.png)
+![DevOps loop](img/devops-300x148.png)
 
 * Requirements
 * Design / Plan
@@ -550,7 +550,7 @@ by Douglas McGregor
 * X thinks people are lazy, need supervision.
 * Y thinks people can be autonomous if trusted.
 
-![X Y](x-y.png)
+![X Y](img/x-y.png)
 
 * [Theory X and Theory Y](https://en.wikipedia.org/wiki/Theory_X_and_Theory_Y)
 
