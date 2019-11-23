@@ -5,6 +5,8 @@ import shutil
 import logging
 import argparse
 
+# TODO: git clean -dXf
+
 def get_arguments():
     parser = argparse.ArgumentParser()
     parser.add_argument('--name', help='name of the slides')
