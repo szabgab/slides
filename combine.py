@@ -25,6 +25,8 @@ def process_slides(source, target, name):
             continue
         if thing == 'README.md':
             continue
+        if thing == 'img':
+            continue
         thing_path = os.path.join(slides_path, thing)
         if os.path.isfile(thing_path) and thing.endswith('.md'):
             new_filename = f"{name}-{thing}"
@@ -45,6 +47,19 @@ def process_slides(source, target, name):
                 logging.error(f"{example_path}")
                 # TODO maybe I should not even handle this just let the code blow up so I will be forced to fix
                 # this
+
+    src_img = os.path.join(slides_path, 'img')
+    img_dir = os.path.join(resources, 'img')
+    if not os.path.exists(img_dir):
+        os.mkdir(img_dir)
+    if os.path.exists(src_img):
+        for img in os.listdir(src_img):
+            img_path = os.path.join(src_img, img)
+            if os.path.isfile(img_path):
+                logging.debug(f"Copy image: {img_path}")
+                shutil.copy(img_path, os.path.join(resources, 'img', img))
+
+
     return book
 
 
