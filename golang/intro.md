@@ -884,6 +884,11 @@ exit status 1
 
 * [strings.Fields](https://golang.org/pkg/strings/#Fields)
 
+## Nano
+{id: nano}
+
+![](examples/nano/nano.go)
+
 ## Reverse Polish Calculator
 {id: reverse-polish-calculator}
 
