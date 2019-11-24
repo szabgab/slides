@@ -1,9 +1,10 @@
 #!/usr/bin/env python
 
+import argparse
+import logging
 import os
 import shutil
-import logging
-import argparse
+import time
 
 # TODO: git clean -dXf
 
@@ -39,11 +40,14 @@ def process_slides(source, target, name):
         for example in os.listdir(src_examples):
             #print(example)
             example_path = os.path.join(src_examples, example)
-            if os.path.isdir(example_path):
+            if os.path.islink(example_path):
+                logging.debug(f"Skipping symlink {example_path}")
+            elif os.path.isdir(example_path):
                 logging.debug(f"Copy dir {example_path}")
                 shutil.copytree(example_path, os.path.join(resources, 'examples', example))
             else:
-                logging.error(f"{example_path}")
+                exit(f"Could not handle: {example_path}")
+                #logging.error(f"{example_path}")
                 # TODO maybe I should not even handle this just let the code blow up so I will be forced to fix
                 # this
 
@@ -71,6 +75,7 @@ def main():
     args = get_arguments()
 
     root = os.path.dirname(os.path.abspath(__file__))
+    start = time.time()
 
     if args.all:
         target = os.path.join(root, '../slides-all-book-generated')
@@ -97,12 +102,17 @@ def main():
             for line in fh:
                 line = line.rstrip("\n")
                 book.extend(process_slides(source, target, line))
+        # extra directories that are not in the list of slides yet
+        for line in ['python']:
+            book.extend(process_slides(source, target, line))
     else:
         book = process_slides(source, target, args.name)
 
     with open(os.path.join(target, 'Book.txt'), 'w') as fh:
         for line in book:
             fh.write(line + "\n")
+    end = time.time()
+    logging.info("Done. Elapsed time: {}".format(end-start))
 
 
 main()
