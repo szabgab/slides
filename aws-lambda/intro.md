@@ -35,8 +35,8 @@
 
 * [AWS Lambda Limits](https://docs.aws.amazon.com/lambda/latest/dg/limits.html)
 
-* 5 minutes execution 
-* disk capacity 500 MG 
+* 5 minutes execution
+* disk capacity 500 MG
 * 1024 threads
 * 3Gb memory
 * 50 MB deployment zip
@@ -84,7 +84,7 @@ Trigger (Event Source) -> Function -> Resources (output)
 * SNS - Simple Notification Service (Sending SMS)
 * Redshift (Data warehouse)
 * ElastiCache clusters
-* RDS - Relational Database Service 
+* RDS - Relational Database Service
 * ...
 * External services
 
@@ -124,7 +124,7 @@ Trigger (Event Source) -> Function -> Resources (output)
 
 The default code will look like this:
 
-![](hello_world.py)
+![](examples/aws/hello_world.py)
 
 * Test it (click on "Test")
 * First it will make you create a new test-case.
@@ -161,14 +161,14 @@ or
 * The function needs to return a dictionary with the status code and the headers.
 * At least the Content-type.
 
-![](hello_world_header.py)
+![](examples/aws/hello_world_header.py)
 
 * curl ...
 
 ## Send JSON
 {id: send-json}
 
-![](hello_world_json.py)
+![](examples/aws/hello_world_json.py)
 
 * curl ...
 
@@ -179,11 +179,11 @@ or
 ## Event details
 {id: event-details}
 
-![](hello_world_json_event.py)
+![](examples/aws/hello_world_json_event.py)
 
 * curl ...
 
-![](event.json)
+![](examples/aws/event.json)
 
 ## Exercise 1
 {id: exercise-1}
@@ -198,7 +198,7 @@ or
 ## Accept Parameters
 {id: accept-parameters}
 
-![](echo.py)
+![](examples/aws/echo.py)
 
 * Save and Click "Test"
 * Observe the error
@@ -282,12 +282,12 @@ Also, try it from the console using `curl` or in your browser (use your own URL)
 ## Solution 2 - echo
 {id: solution-2-echo}
 
-![](echo_fixed.py)
+![](examples/aws/echo_fixed.py)
 
 ## Solution 2 - add
 {id: solution-2-add}
 
-![](add_numbers.py)
+![](examples/aws/add_numbers.py)
 
 ## Task 3 - Multi file application
 {id: task-3}
@@ -299,18 +299,18 @@ Also, try it from the console using `curl` or in your browser (use your own URL)
 
 * Create a file called a.json with some JSON content in it.
 
-![](a.json)
+![](examples/aws/a.json)
 
 * Change the code to read the file and return it
 
-![](read_json.py)
+![](examples/aws/read_json.py)
 
 ## Multi-file application - python module
 {id: multi-file-application-module}
 
-![](app1/lambda_function.py)
+![](examples/app1/lambda_function.py)
 
-![](app1/mymod.py)
+![](examples/app1/mymod.py)
 
 ## Local development
 {id: local-development}
@@ -321,7 +321,7 @@ cd project
 vim lambda_function.py
 ```
 
-![](app2/lambda_function.py)
+![](examples/app2/lambda_function.py)
 
 ```
 zip ../project.zip *
@@ -347,9 +347,9 @@ zip ../project.zip *
 ## Solution 3
 {id: solution-3-calc}
 
-![](app3/lambda_function.py)
+![](examples/app3/lambda_function.py)
 
-![](app3/mymodule.py)
+![](examples/app3/mymodule.py)
 
 
 ## Task 4 - Use 3rd party Python modules.
@@ -365,7 +365,7 @@ zip ../project.zip *
 * Using [pylev](https://pypi.org/project/pylev/) which is pure Python.
 
 
-![](app_pylev/lambda_function.py)
+![](examples/app_pylev/lambda_function.py)
 
 ```
 mkdir app_pylev
@@ -381,7 +381,7 @@ zip -r ../project.zip *
 
 On OSX you might get the above error. Create the 'setup.cfg' file.
 
-![](app_pylev/setup.cfg)
+![](examples/app_pylev/setup.cfg)
 
 ## Third party not pure-python
 {id: third-party-not-pure-python}
@@ -389,9 +389,9 @@ On OSX you might get the above error. Create the 'setup.cfg' file.
 * [editdistance](https://github.com/aflc/editdistance) is a Levenshtein distance module written in C++ and Cython
 * [See](https://docs.aws.amazon.com/lambda/latest/dg/with-s3-example-deployment-pkg.html#with-s3-example-deployment-pkg-python)
 
-![](app_editdistance/lambda_function.py)
+![](examples/app_editdistance/lambda_function.py)
 
-![](app_editdistance/requirements.txt)
+![](examples/app_editdistance/requirements.txt)
 
 * Needs a linux box either locally or on Amazon AWS.
 
@@ -400,7 +400,7 @@ On OSX you might get the above error. Create the 'setup.cfg' file.
 
 [amazonlinux](https://hub.docker.com/_/amazonlinux/)
 
-![](app/Dockerfile)
+![](examples/app/Dockerfile)
 
 ```
 docker build -t aws .
@@ -430,11 +430,11 @@ zip -r ../project.zip *
 ## Solution: Web client
 {id: web-client}
 
-![](web_client/lambda_function.py)
+![](examples/web_client/lambda_function.py)
 
-![](web_client/requirements.txt)
+![](examples/web_client/requirements.txt)
 
-![](web_client/setup.cfg)
+![](examples/web_client/setup.cfg)
 
 ```
 pip install -r requirements.txt -t pypi
@@ -457,22 +457,22 @@ curl 'https://qspmdah6oj.execute-api.us-east-1.amazonaws.com/v0/hello?url=https:
 ## S3 List bucket
 {id: list-s3-bucket}
 
-![](list_s3_bucket.py)
+![](examples/aws/list_s3_bucket.py)
 
 ## S3 write object from Lambda
 {id: s3-write-object-from-lambda}
 
-![](create_s3_object.py)
+![](examples/aws/create_s3_object.py)
 
 ## Read S3 object
 {id: read-s3-object}
 
-![](read_s3_object.py)
+![](examples/aws/read_s3_object.py)
 
 ## Trigger Lambda by S3
 {id: trigger-lambda-by-s3}
 
-![](s3_event.json)
+![](examples/aws/s3_event.json)
 
 Trigger by using:
 
@@ -489,7 +489,7 @@ aws s3 cp s3://szabgab/out.json .
 ## Handle S3 event in Lambda
 {id: handl-s3-event-in-lambda}
 
-![](handle_s3_evetn.py)
+![](examples/aws/handle_s3_evetn.py)
 
 ## Exercise 5
 {id: exercise-5}
