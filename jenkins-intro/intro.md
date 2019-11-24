@@ -339,7 +339,7 @@ sudo usermod -a -G docker $USER
 ## Pipeline post stages
 {id: pipeline-post}
 
-![Jenkinsfile](examples/c/Jenkinsfile)
+![Jenkinsfile](examples/d/Jenkinsfile)
 
 [post](https://jenkins.io/doc/book/pipeline/syntax/#post)
 
