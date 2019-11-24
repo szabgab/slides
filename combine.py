@@ -31,6 +31,7 @@ def process_slides(source, target, name):
             shutil.copy(thing_path, os.path.join(target, new_filename))
             book.append(new_filename)
         else:
+            exit(f"What is this thing {thing_path} ?")
             logging.warning(f"What is this thing {thing_path} ?")
 
     src_examples = os.path.join(slides_path, 'examples')
