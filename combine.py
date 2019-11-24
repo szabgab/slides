@@ -12,6 +12,7 @@ def get_arguments():
     parser = argparse.ArgumentParser()
     parser.add_argument('--name', help='name of the slides')
     parser.add_argument('--all', action='store_true', help='collect all the slides')
+    parser.add_argument('--target', help='Optional target directory. If not given automatically set.')
     return parser.parse_args()
 
 def process_slides(source, target, name):
@@ -83,6 +84,9 @@ def main():
         target = os.path.join(root, f'../slides-{args.name}-book-generated')
     else:
         exit("Either --all or --name must be provided")
+
+    if args.target:
+        target = args.target
 
     target = os.path.abspath(target)
     target = os.path.join(target, 'manuscript')

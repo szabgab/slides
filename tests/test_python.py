@@ -70,5 +70,15 @@ def test_flake8():
     assert len(errors) <= 10, "Errors grew!"
     print(len(out))
 
+def test_combine(tmpdir):
+    proc = subprocess.Popen([sys.executable, 'combine.py', '--all', '--target', str(tmpdir)],
+        stdout = subprocess.PIPE,
+        stderr = subprocess.PIPE,
+    )
+    out, err = proc.communicate()
+    print(out)
+    print(err)
+    assert proc.returncode == 0
+
 
 
