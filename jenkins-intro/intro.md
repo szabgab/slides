@@ -236,7 +236,7 @@ Comment out the following line:
 
 ```
 vim /etc/init.d/jenkins
-add `-Djava.awt.headless=true` to the line 
+add `-Djava.awt.headless=true` to the line
 ```
 
 ```
@@ -321,7 +321,7 @@ sudo usermod -a -G docker $USER
 ## First Pipeline
 {id: first-pipeline}
 
-![](a/Jenkinsfile)
+![](examples/a/Jenkinsfile)
 
 ## Pipeline agents
 {id: pipeline-agent}
@@ -329,17 +329,17 @@ sudo usermod -a -G docker $USER
 * Multiple stages
 * Multiple agents
 
-![](b/Jenkinsfile)
+![](examples/b/Jenkinsfile)
 
 * agent any
 * agent none
-* agent { label 'master' } 
+* agent { label 'master' }
 * agent { docker }
 
 ## Pipeline post stages
 {id: pipeline-post}
 
-![Jenkinsfile](c/Jenkinsfile)
+![Jenkinsfile](examples/c/Jenkinsfile)
 
 [post](https://jenkins.io/doc/book/pipeline/syntax/#post)
 
@@ -347,7 +347,7 @@ sudo usermod -a -G docker $USER
 ## Pipeline for our project
 {id: pipeline-python}
 
-![Jenkinsfile](x/Jenkinsfile)
+![Jenkinsfile](examples/x/Jenkinsfile)
 
 ## artifacts
 {id: artifacts}
