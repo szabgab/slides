@@ -31,7 +31,7 @@ Why are we here?
 * Known state of the system
 * When its all in git - every change is linked to a specific request ID or bug ID
 
-![dog_meme](dog_meme.jpg)
+![dog_meme](img/dog_meme.jpg)
 
 ## How
 {id: how}
@@ -48,7 +48,7 @@ These are just a short list, you can read comparison of all the different apps v
 
 Wikipedia has a very nice [Comparison of open-source configuration management software page](https://en.wikipedia.org/wiki/Comparison_of_open-source_configuration_management_software).
 
-![cm_compare](cm_compare_med.png)
+![cm_compare](img/cm_compare_med.png)
 
 ## What is Ansible?
 {id: whatisansible}
@@ -76,7 +76,7 @@ We will need a few hosts installed on the laptops or a few linux instances in th
 We are going to use one server and 2 hosts to train on,
 our network will look like:
 
-![ansible_structure](ansible_structure.jpg)
+![ansible_structure](img/ansible_structure.jpg)
 
 
 ## Starting up - configuring the structure
