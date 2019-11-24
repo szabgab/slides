@@ -871,7 +871,7 @@ git bisect good / bad
 
 * Create a file called 'add.sh' with the following content:
 
-![](add.sh)
+![](examples/git/add.sh)
 
 * Make it executable.
 * Test it: `./add 23 19` should print 42
