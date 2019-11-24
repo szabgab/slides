@@ -65,7 +65,7 @@ You will come out from the workshop knowing
 ## Traditional xUnit fixtures
 {id: traditiona-fixtures}
 
-![](traditional/test_fixture.py)
+![](examples/traditional/test_fixture.py)
 
 ```
 $ pytest test_fixture.py -s
@@ -96,16 +96,16 @@ teardown_module
 * Use introspection to find out what a method needs
 * Pass in the right arguments
 
-![](dependency-injection.py)
+![](examples/other/dependency-injection.py)
 
 ## Temporary directory - tmpdir
 {id: temporary-directory}
 
 * tmpdir
 
-![](tdir/app.py)
+![](examples/tdir/app.py)
 
-![](tdir/test_app.py)
+![](examples/tdir/test_app.py)
 
 
 * Directory location OSX: /private/var/folders/ry/z60xxmw0000gn/T/pytest-of-gabor/pytest-14/test_read0
@@ -117,30 +117,30 @@ teardown_module
 
 * capsys
 
-![](capture/app.py)
+![](examples/capture/app.py)
 
-![](capture/test_capture.py)
+![](examples/capture/test_capture.py)
 
 
 ## Home-made fixture
 {id: home-made-fixture}
 
-![](fixture_inject/test_app.py)
+![](examples/fixture_inject/test_app.py)
 
 ## Home-made fixture - conftest
 {id: home-made-fixture-conftest}
 
-![](fixture_inject_conftest/test_app.py)
+![](examples/fixture_inject_conftest/test_app.py)
 
-![](fixture_inject_conftest/conftest.py)
+![](examples/fixture_inject_conftest/conftest.py)
 
 
 ## Home-made fixture with tempdir
 {id: home-made-fixture-tempdir}
 
-![](fixture_inject_tmpdir/test_app.py)
+![](examples/fixture_inject_tmpdir/test_app.py)
 
-![](fixture_inject_tmpdir/conftest.py)
+![](examples/fixture_inject_tmpdir/conftest.py)
 
 ```
 $ pytest -qs
@@ -150,9 +150,9 @@ $ pytest -qs
 ## Home-made fixture with yield
 {id: home-made-fixture-with-yield}
 
-![](fixture_inject_around/conftest.py)
+![](examples/fixture_inject_around/conftest.py)
 
-![](fixture_inject_around/test_app.py)
+![](examples/fixture_inject_around/test_app.py)
 
 ```
 $ pytest -sq
@@ -167,9 +167,9 @@ In test
 ## Fixture Autouse
 {id: fixture-autouse}
 
-![](fixture_autouse/conftest.py)
+![](examples/fixture_autouse/conftest.py)
 
-![](fixture_autouse/test_app.py)
+![](examples/fixture_autouse/test_app.py)
 
 ```
 $ pytest -sq
@@ -183,9 +183,9 @@ In test
 ## Fixture Autouse with yield
 {id: fixture-autouse-with-yield}
 
-![](fixture_autouse_around/conftest.py)
+![](examples/fixture_autouse_around/conftest.py)
 
-![](fixture_autouse_around/test_app.py)
+![](examples/fixture_autouse_around/test_app.py)
 
 ```
 $ pytest -sq
@@ -200,7 +200,7 @@ In test
 ## Fixture for MongoDB
 {id: fixture-for-mongodb}
 
-![](fixture_autouse_db/conftest.py)
+![](examples/fixture_autouse_db/conftest.py)
 
 
 ## Test Doubles
@@ -266,7 +266,7 @@ Spies usually record some information based on how they were called and then cal
 ## Unit testing vs. Integration testing
 {id: unit-testing-vs-integration-testing}
 
-![dryer](dryer.mp4)
+![dryer](img/dryer.mp4)
 
 ## Experiment with mocking in various situations
 
@@ -290,9 +290,9 @@ In many application we can find hard-coded pathes. In order to test them we will
 which is not always easy. This also means we cannot run two tests at the same time with different content in those
 files. (The actual "application" is just adding numbers together.)
 
-![](exa/app.py)
+![](examples/exa/app.py)
 
-![](exa/test_data_1.py)
+![](examples/exa/test_data_1.py)
 
 pytest test_data_1.py
 
@@ -311,9 +311,9 @@ At least two problems with this:
 * Readers might glance over the assignment and might be baffled
 * The change is permanent in the whole test script so one test impacts the other.
 
-![](exa/test_data_2.py)
+![](examples/exa/test_data_2.py)
 
-![](exa/test_1.json)
+![](examples/exa/test_1.json)
 
 ## Monkey Patching attribute
 {id: monkeypatching-attribute}
@@ -322,44 +322,44 @@ We can use the monkeypatch fixture to do the same.
 * It stands out more as it is a fxture and you can search for the name
 * It only applies to the current test function. So they are now independent again.
 
-![](exa/test_data_3.py)
+![](examples/exa/test_data_3.py)
 
 ## Monkey Patching functions
 {id: mocking-functions}
 
-![](exo/aut.py)
+![](examples/exo/aut.py)
 
-![](exo/test_aut_attr.py)
+![](examples/exo/test_aut_attr.py)
 
 ## Monkey Patching dictionary items
 {id: mocking-dictionary-item}
 
-![](exb/aut.py)
+![](examples/exb/aut.py)
 
-![](exb/test_aut_item.py)
+![](examples/exb/test_aut_item.py)
 
 ## Mocking a whole class
 {id: mocking-a-whole-class}
 
-![](classy/app.py)
+![](examples/classy/app.py)
 
-![](classy/data.json)
+![](examples/classy/data.json)
 
-![](classy/test_app.py)
+![](examples/classy/test_app.py)
 
 ## Mocking input/output
 {id: mocking-input-output}
 
-![](ex2/app.py)
+![](examples/ex2/app.py)
 
 The test:
 
-![](ex2/test_app.py)
+![](examples/ex2/test_app.py)
 
 ## Mocking input/output
 {id: manually-mocking-input-output}
 
-![](ex2/test_calc.py)
+![](examples/ex2/test_calc.py)
 
 ## Mocking random numbers
 {id: mocking-random-numbers}
@@ -390,15 +390,15 @@ slides/python-mocking/
 ## Exercise: test login expiration
 {id: exercise-test-login-expiration}
 
-![](timeout/app.py)
+![](examples/timeout/app.py)
 
-![](timeout/test_app.py)
+![](examples/timeout/test_app.py)
 
 
 ## Solution: test login expiration
 {id: solution-test-login-expiration}
 
-![](timeout/test_timeout.py)
+![](examples/timeout/test_timeout.py)
 
 ## Exercise: Record e-mail sending
 {id: exercise-record-email}
@@ -407,12 +407,12 @@ Implement a registration for a Flask (or other) web application:
 Accept e-mail as input send e-mail with a code to the given address use that code to verify e-mail address.
 Without actually sending e-mails.
 
-![](mock-method/app.py)
+![](examples/mock-method/app.py)
 
 ## Solution: Record e-mail sending
 {id: solution-record-email}
 
-![](mock-method/test_app.py)
+![](examples/mock-method/test_app.py)
 
 ## Exercise: Fixture database
 {id: fixture-database}
@@ -431,7 +431,7 @@ Set up a database (can be sqlite, mysql, postgresql, mongodb, etc.) for each tes
 
 * You might need to mock input/output/random.
 
-![](space-fight/game.py)
+![](examples/space-fight/game.py)
 
 ## Exercise: web client
 {id: web-client}
@@ -442,7 +442,7 @@ Set up a database (can be sqlite, mysql, postgresql, mongodb, etc.) for each tes
 * What if it is a 500 error?
 * What if the host not found?
 
-![](crawler/app.py)
+![](examples/crawler/app.py)
 
 ## Exercise: Open WeatherMap client
 {id: openweather}
@@ -458,21 +458,21 @@ Set up a database (can be sqlite, mysql, postgresql, mongodb, etc.) for each tes
 api=93712604
 ```
 
-![](weather/get_weather.py)
+![](examples/weather/get_weather.py)
 
 ## Exercise: Mocking A Bank
 {id: mocking-a-bank}
 
-![](exdb/bank.py)
+![](examples/exdb/bank.py)
 
-![](exdb/db.py)
+![](examples/exdb/db.py)
 
 ## Testing the whole application
 {id: testng-the-whole-application}
 
 * Implement the tests without the need for a database.
 
-![](exdb/test_db_app.py)
+![](examples/exdb/test_db_app.py)
 
 
 ## Resources
@@ -499,13 +499,13 @@ api=93712604
 ## Solutions - game
 {id: solutions}
 
-![](tests/test_game_exit.py)
+![](examples/tests/test_game_exit.py)
 
-![](tests/test_game_play.py)
+![](examples/tests/test_game_play.py)
 
 ## Solutions - Mocking the database access
 {id: mocking-database-access}
 
-![](tests/test_db_app_mocking.py)
+![](examples/tests/test_db_app_mocking.py)
 
 
