@@ -398,7 +398,7 @@ npm uninstall module
 npm install express
 ```
 
-![](examples/web/hello_world.js)
+![](examples/web-express/hello_world.js)
 
 
 ## npx

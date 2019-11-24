@@ -96,7 +96,7 @@ teardown_module
 * Use introspection to find out what a method needs
 * Pass in the right arguments
 
-![](examples/other/dependency-injection.py)
+![](examples/other-mocking/dependency-injection.py)
 
 ## Temporary directory - tmpdir
 {id: temporary-directory}

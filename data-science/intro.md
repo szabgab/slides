@@ -156,7 +156,7 @@ seaborn                   0.9.0                    py37_0
 
 * [examples/seaborn_tips.ipynb](https://github.com/szabgab/slides/blob/main/python/examples/jupyter/seaborn_tips.ipynb)
 
-![](examples/seaborn/tips.py)
+![](examples/seaborn2/tips.py)
 
 ## Temperatures
 {id: temperatures}

@@ -191,7 +191,7 @@ imag(n)
 ## Boolean values - bool, true, false
 {id: boolean-values}
 
-![](examples/boolean/boolean.go)
+![](examples/go-boolean/boolean.go)
 
 ## Default values of variables
 {id: default-values}
@@ -482,7 +482,7 @@ and: 1
 ## Create hello function
 {id: hello-function}
 
-![](examples/functions/hello_foo.go)
+![](examples/go-functions/hello_foo.go)
 
 ## Function with return value
 {id: function-sith-return}
@@ -824,22 +824,22 @@ Error: stat hello/world: permission denied
 ## Reading CSV file
 {id: reading-csv-file}
 
-![](examples/csv/process_csv_file.csv)
+![](examples/go-csv/process_csv_file.csv)
 
 * Sum the numbers in the 3rd column
 
-![](examples/csv/read-csv.go)
+![](examples/go-csv/read-csv.go)
 
 
 ```
-go run examples/csv/read-csv.go examples/csv/process_csv_file.csv
+go run examples/go-csv/read-csv.go examples/csv/process_csv_file.csv
 ```
 
 
 ## TODO: JSON
 {id: json}
 
-![](examples/json/json-round-trip.go)
+![](examples/go-json/json-round-trip.go)
 
 ## Logging
 {id: logging}
