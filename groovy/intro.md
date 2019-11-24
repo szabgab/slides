@@ -39,11 +39,11 @@
 ## Functions
 {id: functions}
 
-[](simple_function.groovy)
+[](examples/groovy/simple_function.groovy)
 
 ## Scope in Groovy
 {id: scope-in-groovy}
 
-[](scope_1.groovy)
+[](examples/groovy/scope_1.groovy)
 
 def !

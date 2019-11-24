@@ -330,7 +330,7 @@ alias xssh='ssh -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no'
 * Install `htop`.
 * Copy the following file.
 
-![load](load.py)
+![load](examples/gcp/load.py)
 
 * Shut down the instance.
 * [Create an image](https://console.cloud.google.com/compute/images) based on the disk of the instance.
