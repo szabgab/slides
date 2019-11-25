@@ -7,6 +7,14 @@
    <a class="next slidebutton" id="next" href="{{ page.next.id }}{{ extension }}">{{ page.next.title }} (-&gt;)</a>
 {% endif %}
 
+<div id="keywords" class="extra">
+<ul>
+  {% for kw in page.keywords %}
+    <li>{{ word[0] }}{% if word[1] %} - {{ word[1] }}{% endif %}</li>
+  {% endfor %}
+</ul>
+</div>
+
 
 <h1 id="title">{{ page.title }}</h1>
 <hr>
