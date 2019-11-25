@@ -4,11 +4,12 @@ function aKeyCheck(e) {
     alert(document.getElementById('next'));
 }
 
-var extension     = ".html";
+//var extension     = ".html";
+var extension     = "";
 var previous_page = document.getElementById('prev');
 var next_page     = document.getElementById('next');
 var toc           = "toc" + extension;
-var index         = "index" + extension;
+var index         = "" // index" + extension;
 var keywords      = "keywords" + extension;
 
 function KeyCheck(e) {
@@ -102,8 +103,8 @@ function KeyCheck(e) {
 
         case 191:
             // ?
-            alert("? - this help\n-> next\n<- - prev\nSPACE - next\ni - index\n");
-            //alert("? - this help\nt - toc\nk - keywords\nh - toggle extra text\n-> next\n<- - prev\nSPACE - next\n");
+            alert("? - this help\n-> next\n<- - prev\nSPACE - next\ni - index\nk - keywords\n");
+            //alert(t - toc\nh - toggle extra text\n");
             //PgUp - prev\nPgDown - next
         break;
 
