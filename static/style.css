@@ -48,4 +48,32 @@ nav li {
     margin-right: 30px;
 }
 
+#keywords ul {
+	height: 40px;
+    margin-top: 8px;
+}
+
+#keywords li {
+    /* position: relative; */
+	/*height: 40px;*/
+    /* border: solid; */
+    margin-right: 20px;
+    display: inline;
+    color: #fff;
+    background: #2daebf;
+    padding: 4px 9px;
+    /* float: left;  */
+    list-style-type: none;
+
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-box-shadow: 0 1px 3px #999;
+    -webkit-box-shadow: 0 1px 3px #999;
+}
+
+.extra {
+   margin-top: 15px;
+   margin-bottom: 5px;
+}
+
 
