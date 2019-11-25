@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport"
+     content="width=device-width, initial-scale=1, user-scalable=yes">
+  <link href="style.css" rel="stylesheet">
+  <title>{{ title }}</title>
+</head>
+<body>
+
+<h1>{{ title }}</h1>
+
+<ul>
+{% for kw in keywords.keys() %}
+   <li>{{ kw }}
+       <ul>
+          {% for second in keywords[kw].keys() %}
+             <li>{{ second }}
+                 <ul>
+                    {% for entry in keywords[kw][second] %}
+                      <li><a href="{{ entry.id }}{{ extension }}">{{ entry.title }}</a></li>
+                    {% endfor %}
+                 </ul>
+             </li>
+          {% endfor %}
+       </ul>
+   </li>
+{% endfor %}
+</ul>
+
+{% include 'incl/analytics.html' %}
+</body>
+</html>

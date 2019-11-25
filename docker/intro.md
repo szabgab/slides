@@ -45,6 +45,7 @@ Install [Docker](https://www.docker.com/)
 
 ## Docker version
 {id: docker-version}
+{i: --version}
 
 Show the version of your Docker installation.
 
@@ -56,6 +57,7 @@ docker version
 
 ## Docker info
 {id: docker-info}
+{i: info}
 
 Display some system-wide information.
 
