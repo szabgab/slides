@@ -9,7 +9,7 @@ var extension     = "";
 var previous_page = document.getElementById('prev');
 var next_page     = document.getElementById('next');
 var toc           = "toc" + extension;
-var index         = "" // index" + extension;
+var index         = "index" + extension;
 var keywords      = "keywords" + extension;
 
 function KeyCheck(e) {
