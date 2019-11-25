@@ -1,10 +1,23 @@
 #!/bin/bash -e
 
+# Possible arguments: (where NAME is one of the slides)
+# --ext html
+# NAME
+# --ext html NAME
+
 root=$(dirname $(realpath $0))
 parent=$(dirname $root)
 
 echo $root/html
 rm -rf $root/html
+ext=""
+if [ "$1" == "--ext" ]
+then
+    ext="--ext $2"
+    shift
+    shift
+fi
+
 if [ "$1" != "" ]
 then
    names=$1
@@ -18,5 +31,5 @@ echo '-----'
 for name in $names
 do
     echo $name
-    python $parent/slider-py/slider.py --md $root/$name/intro.md --html --dir $root/html/$name/ --templates $root/templates/ --static $root/static/ || exit 1
+    python $parent/slider-py/slider.py --md $root/$name/intro.md --html --dir $root/html/$name/ --templates $root/templates/ --static $root/static/ $ext || exit 1
 done
