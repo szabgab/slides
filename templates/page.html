@@ -9,7 +9,7 @@
 
 <div id="keywords" class="extra">
 <ul>
-  {% for kw in page.keywords %}
+  {% for word in page.keywords %}
     <li>{{ word[0] }}{% if word[1] %} - {{ word[1] }}{% endif %}</li>
   {% endfor %}
 </ul>
