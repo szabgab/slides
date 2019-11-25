@@ -111,6 +111,7 @@ To launch docker daemon from the command line:
 ## Docker busybox
 {id: docker-busybox}
 {i: busybox}
+{i: run}
 
 busybox  (very small)
 
@@ -230,6 +231,8 @@ docker run -it --name ubu ubuntu:19.04
 
 ## Rerun stopped instance
 {id: rerun-stopped-instance}
+{i: container}
+{i: start}
 
 ```
 docker container start -i ubu
@@ -275,6 +278,7 @@ docker container commit ubu mybuntu
 
 ## Docker: Empty Ubuntu
 {id: docker-empty-ubuntu}
+{i: FROM}
 
 ![](examples/from/Dockerfile)
 
@@ -285,6 +289,7 @@ $ docker run -it --rm mydocker
 
 ## Docker: Ubuntu Hello World
 {id: docker-ubuntu-hello-world}
+{i: CMD}
 
 ![](examples/hello-world/Dockerfile)
 
