@@ -67,6 +67,7 @@ docker info
 
 ## Docker help on CLI
 {id: docker-help-cli}
+{i: help}
 
 Get help for the various commands on the command-line.
 
@@ -109,6 +110,7 @@ To launch docker daemon from the command line:
 
 ## Docker busybox
 {id: docker-busybox}
+{i: busybox}
 
 busybox  (very small)
 
@@ -120,6 +122,7 @@ docker run busybox echo something else
 
 ## Run Interactive
 {id: run-interactive}
+{i: -it}
 
 
 ```
@@ -134,6 +137,7 @@ docker run -it busybox
 
 ## Docker List containers
 {id: list-containers}
+{i: ps}
 
 ```
 docker ps        # running containers
@@ -149,6 +153,8 @@ docker rm CONTAINERID
 
 ## Remove all Docker containers
 {id: remove-all-docker-containers}
+{i: rm}
+{i: -aq}
 
 Remove all the docker containers:
 
@@ -168,6 +174,8 @@ docker ps -a      # the container was not left around
 
 ## List and remove images
 {id: list-and-remove-images}
+{i: images}
+{i: rmi}
 
 ```
 docker images
