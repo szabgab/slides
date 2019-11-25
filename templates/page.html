@@ -12,10 +12,10 @@
 {% include 'incl/header.html' %}
 
 {% if 'prev' in page %}
-   <a class="prev slidebutton" id="prev" href="{{ page.prev.id }}.html">(&lt;-) {{ page.prev.title }}</a>
+   <a class="prev slidebutton" id="prev" href="{{ page.prev.id }}{{ extension }}">(&lt;-) {{ page.prev.title }}</a>
 {% endif %}
 {% if 'next' in page %}
-   <a class="next slidebutton" id="next" href="{{ page.next.id }}.html">{{ page.next.title }} (-&gt;)</a>
+   <a class="next slidebutton" id="next" href="{{ page.next.id }}{{ extension }}">{{ page.next.title }} (-&gt;)</a>
 {% endif %}
 
 

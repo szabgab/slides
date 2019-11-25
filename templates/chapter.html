@@ -11,13 +11,13 @@
 
 {% include 'incl/header.html' %}
 
-<a id="next" href="{{ pages.0.id }}.html"></a>
+<a id="next" href="{{ pages.0.id }}{{ extension }}"></a>
 
 <h1>{{ title }}</h1>
 
 <ol>
     {% for p in pages %}
-       <li><a href="{{ p.id }}.html">{{ p.title }}</a></li>
+       <li><a href="{{ p.id }}{{ extension }}">{{ p.title }}</a></li>
     {% endfor %}
 </ol>
 
