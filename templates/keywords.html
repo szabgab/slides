@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport"
-     content="width=device-width, initial-scale=1, user-scalable=yes">
-  <link href="style.css" rel="stylesheet">
-  <title>{{ title }}</title>
-</head>
-<body>
+{% include 'incl/header.html' %}
 
 <h1>{{ title }}</h1>
 
@@ -29,6 +20,4 @@
 {% endfor %}
 </ul>
 
-{% include 'incl/analytics.html' %}
-</body>
-</html>
+{% include 'incl/footer.html' %}

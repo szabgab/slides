@@ -1,14 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport"
-     content="width=device-width, initial-scale=1, user-scalable=yes">
-  <link href="style.css" rel="stylesheet">
-  <title>{{ title }}</title>
-</head>
-<body>
-
 {% include 'incl/header.html' %}
 
 <a id="next" href="{{ pages.0.id }}{{ extension }}"></a>
@@ -21,6 +10,4 @@
     {% endfor %}
 </ol>
 
-  <script src="slides.js"></script>
-</body>
-</html>
+{% include 'incl/footer.html' %}
