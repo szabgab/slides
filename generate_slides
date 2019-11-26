@@ -10,13 +10,14 @@ parent=$(dirname $root)
 
 echo $root/html
 rm -rf $root/html
-ext=""
-if [ "$1" == "--ext" ]
-then
-    ext="--ext $2"
-    shift
-    shift
-fi
+# ext=""
+# if [ "$1" == "--ext" ]
+# then
+#     ext="--ext $2"
+#     shift
+#     shift
+# fi
+ext="--ext html"
 
 if [ "$1" != "" ]
 then
