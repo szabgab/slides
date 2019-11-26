@@ -52,3 +52,11 @@ for name in names:
     if ret != 0:
         exit("Failed")
 
+#for (name, filename) in books.items():
+#    print(f"{name} - {filename}")
+#    cmd = f"{sys.executable} {parent}/slider-py/slider.py --yaml {root}/{name}/{filename} --html --dir {root}/html/{name}/ --templates {root}/templates/ --static {root}/static/ {ext}"
+#    ret = os.system(cmd)
+#    if ret != 0:
+#        exit("Failed")
+
+

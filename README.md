@@ -8,7 +8,7 @@ python ../slider-py/slider/__init__.py --md linux-intro/intro.md --html --dir ht
 or generate all the slides by running:
 
 ```
-./generate_slides
+./generate_slides.py
 ```
 
 Slides are shown at https://code-maven.com/slides/linux-intro/introduction-to-linux.html
