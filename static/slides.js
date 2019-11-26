@@ -71,7 +71,7 @@ function KeyCheck(e) {
             // h
             // hide/show .remark classes
             //alert(72);
-            toggle_extras();
+            toggle_extras(true);
             break;
 
         case 73:
@@ -143,42 +143,37 @@ function set_extra_default(v) {
 }
 
 function start_extras() {
-    console.log('start')
-    var t = localStorage.getItem('show_extra');
-    console.log(t)
-    if (t === null) {
-        //console.log('false is null');
-        t = true;
-    }
-    localStorage.setItem("show_extra", t);
-    show_extras(t)
+    toggle_extras(false)
 }
 
-function toggle_extras() {
-    console.log('toggle')
+function toggle_extras(toggle) {
+    //console.log('toggle')
     //console.log('show_extra was: ' + t);
     var t = localStorage.getItem('show_extra');
-    console.log(t)
+    //console.log(t)
     if (t === null) {
-        //console.log('false is null');
-        t = false;
+        // defaults to show extras
+        t = true;
     } else {
         t = JSON.parse(t);
     }
-    t = ! t;
+    if (toggle) {
+        t = ! t;
+    }
     localStorage.setItem("show_extra", t);
     //console.log('Toggle to ' + t);
     show_extras(t)
 }
 
 function show_extras(t) {
+    //console.log('show_extras:', t);
     var nl = document.getElementsByClassName('extra');
     for (var i = 0; i < nl.length; i++) {
-        //console.log('setting ' + t);
+        //console.log('setting ');
         nl[i].style.display = t ? "block" : "none";
     }
 }
 
-setTimeout(start_extras, 500)
+setTimeout(start_extras, 100)
 
 
