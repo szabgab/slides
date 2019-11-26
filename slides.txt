@@ -4,7 +4,6 @@ collab-dev
 data-science
 docker
 github-ci
-git-intro
 golang
 google-gcp
 groovy

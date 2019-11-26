@@ -1,0 +1,9 @@
+---
+title: Introduction to Git
+author: Gabor Szabo
+first_year: 2017
+copyright: Gabor Szabo https://szabgab.com/
+version: 1.01
+files:
+  - introduction.md
+  - branching.md
