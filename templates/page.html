@@ -41,6 +41,14 @@
 </pre>
 
   {% endif %}
+  {% if c.name == 'aside' %}
+      <div class="extra">
+          {% for row in c.content %}
+              {{ row }}
+          {% endfor %}
+      </div>
+  {% endif %}
+
   {% if c.name == 'p' %}
       <p>
           {{ c.content[0] }}

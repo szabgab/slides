@@ -25,6 +25,14 @@
 
 ## Docker container vs. image
 {id: docker-container-image}
+{i: image}
+{i: container}
+
+{aside}
+In the world of Docker an **image** is similar to an iso image in the world of VirtualBox.
+When we run an image Docker creates a copy of it and it is now called a **container**.
+A running instance of the image.
+{/aside}
 
 container = runtime image
 
