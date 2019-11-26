@@ -142,9 +142,23 @@ function set_extra_default(v) {
     show_extras(t);
 }
 
-function toggle_extras() {
+function start_extras() {
+    console.log('start')
     var t = localStorage.getItem('show_extra');
+    console.log(t)
+    if (t === null) {
+        //console.log('false is null');
+        t = true;
+    }
+    localStorage.setItem("show_extra", t);
+    show_extras(t)
+}
+
+function toggle_extras() {
+    console.log('toggle')
     //console.log('show_extra was: ' + t);
+    var t = localStorage.getItem('show_extra');
+    console.log(t)
     if (t === null) {
         //console.log('false is null');
         t = false;
@@ -164,4 +178,7 @@ function show_extras(t) {
         nl[i].style.display = t ? "block" : "none";
     }
 }
+
+setTimeout(start_extras, 500)
+
 
