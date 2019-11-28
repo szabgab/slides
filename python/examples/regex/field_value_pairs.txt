@@ -1,0 +1,3 @@
+fname    =    Foo
+lname    = Bar
+email=foo@bar.com
