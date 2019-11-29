@@ -49,6 +49,7 @@ git version 2.20.1
 
 ## Configure Git
 {id: configure-git}
+{i: config}
 
 **There are three levels of configuration:**
 System (--system)
@@ -98,6 +99,7 @@ $ git config user.name      # to see specific value
 
 ## Getting help
 {id: getting-help}
+{i: help}
 
 ```
 $ git help             # listing the most important commands
@@ -131,6 +133,7 @@ $ git help tutorial    # a simple git tutorial
 
 ## Creating a local empty repository
 {id: local-rep}
+{i: status}
 
 ```
 $ mkdir app
@@ -170,6 +173,7 @@ nothing added to commit but untracked files present (use "git add" to track)
 
 ## Add first file
 {id: add-first-file}
+{i: add}
 
 * git add README.txt
 * git status
@@ -193,6 +197,7 @@ Changes to be committed:
 
 ## Commit first file
 {id: commit-first-file}
+{i: commit}
 
 * git commit -m "Add README"
 * git status
@@ -246,6 +251,8 @@ no changes added to commit (use "git add" and/or "git commit -a")
 
 ## Drop local changes (restore to HEAD or to index)
 {id: drop-local}
+{i: restore}
+{i: checkout}
 
 
 ```
