@@ -1,0 +1,3 @@
+name=Foo Bar
+email=foo@bar.com
+address=Foo street 42
