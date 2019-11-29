@@ -1,0 +1,19 @@
+{% include 'incl/header.html' %}
+
+<h1>{{ title }}</h1>
+
+<h3>Author: {{ book.author }}</h3>
+
+<div>
+Copyright: {{ book.copyright }}
+</div>
+
+<div>
+{{ book.first_year }} - {{ this_year }}
+</div>
+
+<div>
+Version: {{ book.version }}
+</div>
+
+{% include 'incl/footer.html' %}

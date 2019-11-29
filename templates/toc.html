@@ -1,0 +1,17 @@
+{% include 'incl/header.html' %}
+
+<h1>{{ title }}</h1>
+
+<ul>
+{% for chapter in book.pages %}
+    <li><a href="{{ chapter.id }}{{ extension }}">{{ chapter.title }}</a>
+        <ol>
+            {% for p in chapter.pages %}
+               <li><a href="{{ p.id }}{{ extension }}">{{ p.title }}</a></li>
+            {% endfor %}
+        </ol>
+    </li>
+{% endfor %}
+</ul>
+
+{% include 'incl/footer.html' %}
