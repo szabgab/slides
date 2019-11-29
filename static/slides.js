@@ -4,13 +4,7 @@ function aKeyCheck(e) {
     alert(document.getElementById('next'));
 }
 
-//var extension     = ".html";
 var extension     = "";
-var previous_page = document.getElementById('prev');
-var next_page     = document.getElementById('next');
-var toc           = "toc" + extension;
-var index         = "index" + extension;
-var keywords      = "keywords" + extension;
 
 function KeyCheck(e) {
     var KeyID = (window.event) ? event.keyCode : e.keyCode;
@@ -76,18 +70,19 @@ function KeyCheck(e) {
 
         case 73:
           // i
-          document.location.href = index;
+          //
+          document.location.href = "index" + get_extension();
           break;
 
         case 75:
             // k
-            document.location.href = keywords;
+            document.location.href = "keywords" + get_extension();
             break;
 
-        //case 84:
-        //    // t
-        //    document.location.href = toc;
-        //    break;
+        case 84:
+            // t
+            document.location.href = "toc" + get_extension();
+            break;
 
         // PageDown and PageUp might be useful in courses but not on the edumaven site
         // The buttons of the Logitech R400 remote are generating PageUp and PageDown hits
@@ -103,8 +98,7 @@ function KeyCheck(e) {
 
         case 191:
             // ?
-            alert("? - this help\n-> next\n<- - prev\nSPACE - next\ni - index\nk - keywords\n");
-            //alert(t - toc\nh - toggle extra text\n");
+            alert("? - this help\n-> next\n<- - prev\nSPACE - next\ni - index\nk - keywords\nt - toc\nh - toggle extra text\n");
             //PgUp - prev\nPgDown - next
         break;
 
@@ -114,6 +108,7 @@ function KeyCheck(e) {
 }
 
 function go_next() {
+    var next_page     = document.getElementById('next');
     if (next_page) {
         document.location.href = next_page;
     } else {
@@ -122,6 +117,7 @@ function go_next() {
 }
 
 function go_prev() {
+    var previous_page = document.getElementById('prev');
     if (previous_page) {
         document.location.href = previous_page;
     } else {
@@ -172,6 +168,11 @@ function show_extras(t) {
         //console.log('setting ');
         nl[i].style.display = t ? "block" : "none";
     }
+}
+
+function get_extension() {
+    var obj = document.getElementById('extension');
+    return obj.value;
 }
 
 setTimeout(start_extras, 100)
