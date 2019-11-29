@@ -1,1 +1,1 @@
-git-intro/git.yml
+git-intro/git.json
