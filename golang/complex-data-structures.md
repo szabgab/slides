@@ -235,19 +235,6 @@ Implement a function that accepts a positive integer (n) and prints out the firs
 
 ![](examples/http_get/http_get.go)
 
-## Simple test
-{id: simple-test}
-
-![](examples/simple_test/comp.go)
-
-![](examples/simple_test/comp_test.go)
-
-To run the tests:
-
-```
-got test -run ''
-```
-
 ## Some advanced topics
 {id: advanced-topics}
 

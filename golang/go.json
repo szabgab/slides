@@ -6,6 +6,7 @@
     "version": "1.01",
     "files": [
         "intro.md",
-        "complex-data-structures.md"
+        "complex-data-structures.md",
+        "testing.md"
     ]
 }
