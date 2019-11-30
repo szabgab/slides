@@ -1,6 +1,16 @@
 # Testing
 {id: testing}
 
+## Testing in Go
+{id: testing-in-go}
+
+* Tests files have a suffix **_test**
+* They have functions where the name starts wirh **Test**
+
+* Tests a simple mathematical function
+* What if a test fails?
+* What if we cannot fix a test immediately?
+
 ## Simple test
 {id: simple-test}
 
@@ -11,7 +21,24 @@
 To run the tests:
 
 ```
-got test -run ''
+go test
+get test -v
 ```
+
+## Testing Notes
+{id: testing-notes}
+
+https://github.com/stretchr/testify
+
+go get github.com/stretchr/testify
+to add asserts
+
+* [](https://www.youtube.com/watch?v=ttKgBttwzrg)
+* [](https://www.youtube.com/watch?v=_B_vCEiO4mA)
+
+
+Mat Ryer
+* [is](https://github.com/matryer/is)
+* [moq](https://github.com/matryer/moq)
 
 

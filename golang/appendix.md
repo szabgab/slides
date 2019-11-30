@@ -34,6 +34,7 @@ GOOS=OS GOARCH=architecture go install PATH_TO
 ```
 
 GOOS:
+
 ```
 android
 darwin
@@ -48,6 +49,7 @@ windows
 ```
 
 GOARCH
+
 ```
 arm
 arm64
