@@ -51,6 +51,8 @@ Install [Docker](https://www.docker.com/)
 * MS Windows: Download [Docker for MS Windows](https://docs.docker.com/docker-for-windows/install/)
 * Mac OSX: Download [Docker for Mac OSX](https://docs.docker.com/docker-for-mac/install/)
 
+* [Post Install](https://docs.docker.com/install/linux/linux-postinstall/)
+
 ## Docker version
 {id: docker-version}
 {i: --version}
