@@ -41,4 +41,9 @@ Mat Ryer
 * [is](https://github.com/matryer/is)
 * [moq](https://github.com/matryer/moq)
 
+## Anagram
+{id: anagram}
 
+![](examples/anagram/anagram.go)
+
+![](examples/anagram/anagram_test.go)
