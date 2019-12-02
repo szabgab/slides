@@ -14,6 +14,9 @@ parser.add_argument('files', help="filenames(s)")   # a required positional argu
 parser.add_argument('files', nargs="*")   # 0 or more positional
 parser.add_argument('files', nargs="+")   # 1 or more positional
 
+parser.add_argument('--files', nargs="+")  # --files a.txt b.txt c.txt
+
+
 args = parser.parse_args()
 
 print(args.name)
