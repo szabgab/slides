@@ -1,11 +1,11 @@
 import re
 
-cases = (
+cases = [
     "hello!",
     "hello world.",
     "hello. world",
     ".",
-)
+]
 
 for case in cases:
     print(case)

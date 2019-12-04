@@ -1,26 +1,33 @@
 import re
 
-strings = [
-    "123-XYZ-456",
-    "a 123-XYZ-456 b",
-    "a 123-XYZ-456",
-    "123-XYZ-456 b",
-    "123-XYZ-456\n",
+lines = [
+    "text with cat in the middle",
+    "cat with dog",
+    "dog with cat",
 ]
 
-regexes = [
-    r'\d{3}-\w+-\d{3}',
-    r'^\d{3}-\w+-\d{3}',
-    r'\d{3}-\w+-\d{3}$',
-    r'^\d{3}-\w+-\d{3}$',
-    r'^\d{3}-\w+-\d{3}\Z',
-    r'\A\d{3}-\w+-\d{3}\Z',
-]
+for line in lines:
+    if re.search(r'cat', line):
+        print(line)
 
-for r in regexes:
-    print(r)
-    for s in strings:
-        #print(r, s)
-        if (re.search(r, s)):
-            print('   ', s)
-    print('-' * 10)
+
+print("---")
+for line in lines:
+    if re.search(r'^cat', line):
+        print(line)
+
+print("---")
+for line in lines:
+    if re.search(r'\Acat', line):
+        print(line)
+
+print("---")
+for line in lines:
+    if re.search(r'cat$', line):
+        print(line)
+
+print("---")
+for line in lines:
+    if re.search(r'cat\Z', line):
+        print(line)
+
