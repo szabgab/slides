@@ -17,10 +17,14 @@ strings = [
     '0-9752298-10-X',
     '0-9752298-0-Y',
     '910975229-0-X',
+    '-------------',
+    '0000000000000',
 ]
-for s in strings:
-    print(s)
-    if (re.search(r'^[\dX-]{13}$', s)):
+for isbn in strings:
+    print(isbn)
+
+    if (re.search(r'^[\dX-]{13}$', isbn)):
         print("match 1")
-    if (re.search(r'^\d{1,5}-\d{1,7}-\d{1,5}-[\dX]$', s) and len(s) == 13):
+
+    if (re.search(r'^\d{1,5}-\d{1,7}-\d{1,5}-[\dX]$', isbn) and len(isbn) == 13):
         print("match 2")
