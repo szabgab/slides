@@ -1,9 +1,10 @@
-import re, random
+import re
+import random
 
 chars = ['G', 'A', 'T', 'C']
 dna = ''
 for i in range(100):
-    dna += chars[random.randrange(4)]
+    dna += random.choice(chars)
 
 print(dna)
 
