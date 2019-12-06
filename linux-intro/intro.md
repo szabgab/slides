@@ -1,34 +1,14 @@
 # Linux as a Virtual Environment
 {id: index}
 
-## Slides
-{id: slides}
-
-https://code-maven.com/ws1
-
-## About us
-{id: about-us}
-
-* Yonit Gruber-Hazani
-* Gabor Szabo
-* DevOps Workshops http://devops-workshops.code-maven.com/
-
-## About you
-{id: about-you}
-
-* Name
-* Company
-* What do you do
-* Something interesting about you
-
 ## Prerequisites for the installations
 {id: installation}
 
 * Download [VirtualBox](https://www.virtualbox.org/).
 * Install VirtualBox.
 * Download an ISO image of a Linux distribution.
-* Latest [Ubuntu Server](https://www.ubuntu.com/download/server) - 17.10.1
-
+* Latest [Ubuntu Desktop](https://ubuntu.com/download/desktop) 19.10
+* Latest [Ubuntu Server](https://www.ubuntu.com/download/server) - 19.10
 
 ## Why Linux?
 {id: why-linux}
@@ -50,26 +30,26 @@ https://code-maven.com/ws1
 ## Linux Distributions
 {id: linux-distributions}
 
-* Debian
-* Ubuntu
-* Mint
-* Fedora
-* RedHat
-* CentOS
+* [Debian](https://www.debian.org/)
+* [Ubuntu](https://ubuntu.com/)
+* [Mint](https://linuxmint.com/)
+* [Fedora](https://getfedora.org/)
+* [RedHat](https://www.redhat.com/)
+* [CentOS](https://www.centos.org/)
 * ... [DistroWatch](https://distrowatch.com/)
 
 ## What is BSD?
 {id: bsd}
 
-* FreeBSD
-* NetBSD
-* OpenBSD
+* [FreeBSD](https://www.freebsd.org/)
+* [NetBSD](https://www.netbsd.org/)
+* [OpenBSD](https://www.openbsd.org/)
 
 ## What are Linux distributions?
 {id: what-are-linux-distributions}
 
 * Collection of packages
-* Linux kernel
+* [Linux kernel](https://www.kernel.org/)
 * Editors
 * Web server
 * Database server
@@ -85,7 +65,7 @@ https://code-maven.com/ws1
 ## Configure Virtualbox - 2
 {id: configure-virtualbox-2}
 
-* If you type in the name "ubuntu_17.10.1" it will setup the type to linux and the version to ubuntu 64-bit for you if not, you can do that yourself.
+* If you type in the name "ubu" it will setup the type to linux and the version to ubuntu 64-bit for you if not, you can do that yourself.
 
 ![step_2](img/virtualbox_2.png)
 
