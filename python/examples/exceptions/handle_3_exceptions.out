@@ -1,0 +1,12 @@
+before one.txt
+100.0
+after  one.txt
+before zero.txt
+Cannot divide by 0 in file zero.txt
+before two.txt
+Cannot open file two.txt
+before text.txt
+ValueError invalid literal for int() with base 10: '3.14\n' in file text.txt
+before three.txt
+33.333333333333336
+after  three.txt

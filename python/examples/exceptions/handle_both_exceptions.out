@@ -1,0 +1,14 @@
+before one.txt
+100.0
+after  one.txt
+before zero.txt
+Cannot divide by 0 in file zero.txt
+before two.txt
+Cannot open file two.txt
+before text.txt
+Traceback (most recent call last):
+  File "handle_both_exceptions.py", line 9, in <module>
+    module.read_and_divide(filename)
+  File "/home/gabor/work/slides/python/examples/exceptions/module.py", line 4, in read_and_divide
+    number = int(fh.readline())
+ValueError: invalid literal for int() with base 10: '3.14\n'
