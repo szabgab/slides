@@ -1,4 +1,7 @@
-class Person(object):
+# class Person(object):
+#    pass
+
+class Person():
     pass
 
 if __name__ == '__main__':

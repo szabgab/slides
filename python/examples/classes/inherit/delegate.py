@@ -1,4 +1,4 @@
-class Parent(object):
+class Parent():
     def greet(self):
         print("Hello", self.get_name())
 

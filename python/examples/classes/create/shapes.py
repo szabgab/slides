@@ -1,2 +1,2 @@
-class Point(object):
+class Point():
     pass

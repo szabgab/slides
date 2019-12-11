@@ -1,5 +1,5 @@
 from datetime import datetime
-class Person(object):
+class Person():
     def __init__(self, years):
         self.set_birthyear(years)
 

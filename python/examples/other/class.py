@@ -10,9 +10,14 @@ print(a.__class__)   # <type 'int'>
 print(b.__class__)   # <type 'str'>
 print(c.__class__)   # <type 'float'>
 
+print(type(a))   # <type 'int'>
+print(type(b))   # <type 'str'>
+print(type(c))   # <type 'float'>
+
+
 print(a.__class__.__name__)   # int
 print(b.__class__.__name__)   # str
 print(c.__class__.__name__)   # float
 
 print(re.__class__.__name__)  # module
-print(m.__class__.__name__)   # SRE_Match
+print(m.__class__.__name__)   # SRE_Match or Match

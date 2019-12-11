@@ -1,6 +1,6 @@
 import abc
 
-class Port(object):
+class Port():
     __metaclass__ = abc.ABCMeta
 
     @abc.abstractmethod
