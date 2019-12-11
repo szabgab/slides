@@ -17,15 +17,16 @@ class Ball(Circle):
     def __init__(self, x, y, r, z):
         print('__init__ of Ball')
         # Circle.__init__(self, x, y, r)
-        # super(Ball, self).__init__(x, y, r)
+        super(Ball, self).__init__(x, y, r)
         self.z = z
 
 
-b = Ball(2, 3, 10, 7)
+b = Ball(2, 3, 9, 7)
 print(b)
-print(b.area)
+print(b.area())
 
 # __init__ of Ball
 # __init__ of Circle
 # __init__ of Point
 # <__main__.Ball object at 0x103dea190>
+# 254.34

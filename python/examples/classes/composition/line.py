@@ -13,8 +13,8 @@ class Line():
 
 p1 = Point(2, 3)
 p2 = Point(5, 7)
-l = Line(p1, p2)
+blue_line = Line(p1, p2)
 
-print(l.a)
-print(l.b)
-print(l.length())   # 5.0
+print(blue_line.a) # <__main__.Point object at 0x0000022174B637B8>
+print(blue_line.b) # <__main__.Point object at 0x0000022174B3C7B8>
+print(blue_line.length())   # 5.0
