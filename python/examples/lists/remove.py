@@ -1,11 +1,11 @@
-names = ['abc', 'def', 'qqrq', 'moo', 'def']
-print(names)                # ['abc', 'def', 'qqrq', 'moo', 'def']
+names = ['Joe', 'Kim', 'Jane', 'Bob', 'Kim']
+print(names)                # ['Joe', 'Kim', 'Jane', 'Bob', 'Kim']
 
-print(names.remove('def'))  # None
-print(names)                # ['abc', 'qqrq', 'moo', 'def']
+print(names.remove('Kim'))  # None
+print(names)                # ['Joe', 'Jane', 'Bob', 'Kim']
 
-print(names.remove('zorg'))
+print(names.remove('George'))
    # Traceback (most recent call last):
    #   File "examples/lists/remove.py", line 9, in <module>
-   #     print(names.remove('zorg'))  # None
+   #     print(names.remove('George'))  # None
    # ValueError: list.remove(x): x not in list

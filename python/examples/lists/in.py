@@ -1,17 +1,11 @@
-words = ['abc', 'def', 'qqrq', 'hello']
-if 'abc' in words:
-    print('found abc')
+words = ['apple', 'banana', 'peach']
+if 'apple' in words:
+    print('found apple')
 
 if 'a' in words:
     print('found a')
 else:
     print('NOT found a')
 
-if 'x' in words:
-    print('found x')
-else:
-    print('NOT found x')
-
-# found abc
+# found apple
 # NOT found a
-# NOT found x
