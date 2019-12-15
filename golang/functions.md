@@ -3,6 +3,7 @@
 
 ## Create hello function
 {id: hello-function}
+{i: func}
 
 ![](examples/go-functions/hello_foo.go)
 
