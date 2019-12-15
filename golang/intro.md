@@ -57,6 +57,8 @@
 
 ## Version
 {id: version}
+{i: version}
+{i: get}
 
 ```
 go version
@@ -78,6 +80,8 @@ then reload it using `source ~/.bashrc`
 
 ## Editor/IDE
 {id: editor}
+{i: editor}
+{i: IDE}
 
 * [Visual Studio Code](https://code.visualstudio.com/) (It has plugins for Golang)
 * [Other editors and IDEs](https://golang.org/doc/editors.html)
@@ -85,6 +89,13 @@ then reload it using `source ~/.bashrc`
 
 ## Hello World
 {id: hello-world}
+{i: package}
+{i: main}
+{i: import}
+{i: func}
+{i: run}
+{i: build}
+{i: fmt}
 
 ![](examples/hello_world/hello_world.go)
 
@@ -103,17 +114,21 @@ go build hello_world.go
 
 ## Hello Foo - Println
 {id: hello-foo}
+{i: Println}
+{i: var}
 
 ![](examples/hello_foo/hello_foo.go)
 
 ## Hello Foo - Printf
 {id: hello-foo-printf}
+{i: Printf}
 
 ![](examples/hello_foo_printf/hello_foo_printf.go)
 
 
 ## Comments
 {id: comments}
+{i: //}
 
 ![](examples/comments/comments.go)
 
@@ -121,6 +136,7 @@ go build hello_world.go
 {id: enforce-variable-types}
 
 ![](examples/variable/variable.go)
+{i: var}
 
 ```
 # command-line-arguments
@@ -131,6 +147,16 @@ go build hello_world.go
 
 ## Basic Types
 {id: basic-types}
+{i: string}
+{i: int}
+{i: uint}
+{i: float}
+{i: bool}
+{i: byte}
+{i: real}
+{i: complex}
+{i: imag}
+
 
 ```
 string          (any utf-8 character)
@@ -161,18 +187,23 @@ imag(n)
 
 ## Show inferred variable type - Printf %T
 {id: show-variable-type}
+{i: %T}
 
 ![](examples/show-type/show-type.go)
 
 
 ## Variable declaration (var)
 {id: variable-declaration}
+{i: var}
 
 ![](examples/variables/variables.go)
 
 
 ## Converting values to other types - float32, int, string
 {id: converting-types}
+{i: float32()}
+{i: int()}
+{i: string()}
 
 * float32()
 * int()
