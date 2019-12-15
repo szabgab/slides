@@ -3,6 +3,7 @@
 
 ## Arrays
 {id: arrays}
+{i: len}
 
 ![](examples/array/array.go)
 
