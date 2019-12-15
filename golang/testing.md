@@ -13,6 +13,7 @@
 
 ## Simple test
 {id: simple-test}
+{i: test}
 
 ![](examples/simple_test/comp.go)
 
