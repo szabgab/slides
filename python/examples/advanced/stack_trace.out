@@ -1,0 +1,20 @@
+stack_trace.py
+8
+second
+['    for info in inspect.stack():\n']
+
+stack_trace.py
+4
+first
+['    second()\n']
+
+stack_trace.py
+26
+main
+['    first()\n']
+
+stack_trace.py
+30
+<module>
+['    main()\n']
+
