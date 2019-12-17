@@ -1,0 +1,12 @@
+**********************************************************************
+File "/home/gabor/work/slides/python/examples/testing-demo/mymath_doctest.py", line 5, in mymath_doctest.add
+Failed example:
+    add(3, 3)
+Expected:
+    6
+Got:
+    9
+**********************************************************************
+1 items had failures:
+   1 of   2 in mymath_doctest.add
+***Test Failed*** 1 failures.

@@ -19,6 +19,6 @@ def fib(n):
         values.append(values[-1] + values[-2])
     return values[n]
 
-if __name__ == "__main__":
-    import doctest
-    doctest.testmod()
+#if __name__ == "__main__":
+#    import doctest
+#    doctest.testmod()

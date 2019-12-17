@@ -1,0 +1,13 @@
+.F
+======================================================================
+FAIL: test_more_math (test_with_unittest.TestMath)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/gabor/work/slides/python/examples/testing-demo/test_with_unittest.py", line 9, in test_more_math
+    self.assertEqual(mymath.add(3, 3), 6)
+AssertionError: 9 != 6
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.000s
+
+FAILED (failures=1)
