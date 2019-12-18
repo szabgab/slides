@@ -15,6 +15,5 @@ people = [
 
 names = map(lambda d: d['name'], people)
 
-print(names)        # <map object at 0x7f2518587780>
-print(list(names))  # ['Foo', 'Bar', 'SnowWhite']
-
+print(names)
+print(list(names))
