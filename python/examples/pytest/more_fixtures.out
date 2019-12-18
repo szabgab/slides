@@ -1,0 +1,41 @@
+========= test session starts =========
+platform linux -- Python 3.7.3, pytest-5.1.1, py-1.8.0, pluggy-0.13.0 -- /home/gabor/venv3/bin/python3
+cachedir: .pytest_cache
+rootdir: /home/gabor/work/slides/python/examples/pytest
+plugins: flake8-1.0.4
+collecting ... collected 2 items
+
+more_fixtures.py::test_one
+Fix module setup
+
+Fix function setup
+
+Fix blue setup
+
+Fix green setup
+Test one
+PASSED
+Fix green teardown
+
+Fix blue teardown
+
+Fix function teardown
+
+more_fixtures.py::test_two
+Fix function setup
+
+Fix green setup
+
+Fix blue setup
+Test two
+PASSED
+Fix blue teardown
+
+Fix green teardown
+
+Fix function teardown
+
+Fix module teardown
+
+
+======= 2 passed in 0.01s ====

@@ -6,7 +6,7 @@ import application
 def getapp():
     print('getapp starts')
     app = application.App()
-    
+
     yield app
 
     app.shutdown()
