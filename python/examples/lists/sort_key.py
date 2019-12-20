@@ -1,4 +1,12 @@
 animals = ['chicken', 'cow', 'snail', 'elephant']
+print(animals)
+
 animals.sort()
-print(animals)         # ['chicken', 'cow', 'elephant', 'snail']
+print(animals)
+
+animals.sort(key=len)
+print(animals)
+
+animals.sort(key=len, reverse=True)
+print(animals)
 

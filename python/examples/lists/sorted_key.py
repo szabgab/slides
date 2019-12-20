@@ -1,4 +1,8 @@
-animals = ['chicken', 'cow', 'snail', 'elephant']
-print(sorted(animals))          # ['chicken', 'cow', 'elephant', 'snail']
-srt = sorted(animals, key=len)
-print(srt)                      # ['cow', 'snail', 'chicken', 'elephant']
+animals = ['snail', 'cow', 'elephant', 'chicken']
+animals_in_abc = sorted(animals)
+
+print(animals)
+print(animals_in_abc)
+
+animals_by_length = sorted(animals, key=len)
+print(animals_by_length)
