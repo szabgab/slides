@@ -15,6 +15,7 @@
         "lists.md",
         "files.md",
         "dictionary.md",
+        "sets.md",
         "functions.md",
         "modules.md",
         "packages.md",
@@ -37,6 +38,7 @@
         "flask.md",
         "net.md",
         "interactive-shell.md",
+        "testing-demo.md",
 
         "functional.md",
         "generator-expressions.md",
