@@ -7,5 +7,9 @@ def test_anagram():
 def test_not_anagram():
     assert not is_anagram("abc", "def")
 
-def test_should_be_anagram():
+def test_should_be_anagram_spaces():
     assert is_anagram("anagram", "nag a ram")
+
+
+def test_should_be_anagram_case():
+    assert is_anagram("Silent", "Listen")
