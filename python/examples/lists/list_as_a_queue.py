@@ -1,9 +1,12 @@
-a_queue = ['Foo', 'Bar']
-print(a_queue)   # ['Foo', 'Bar']
+a_queue = []
+print(a_queue)
 
 a_queue.append('Moo')
-print(a_queue)   # ['Foo', 'Bar', 'Moo']
+print(a_queue)
+
+a_queue.append('Bar')
+print(a_queue)
 
 first = a_queue.pop(0)
-print(first)     # 'Foo'
-print(a_queue)   # ['Bar', 'Moo']
+print(first)
+print(a_queue)

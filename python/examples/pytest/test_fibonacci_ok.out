@@ -1,0 +1,8 @@
+$ py.test test_fibonacci_ok.py
+============================= test session starts ==============================
+platform darwin -- Python 2.7.5 -- py-1.4.20 -- pytest-2.5.2
+collected 1 items
+
+test_fibonacci_ok.py .
+
+=========================== 1 passed in 0.01 seconds ===========================
