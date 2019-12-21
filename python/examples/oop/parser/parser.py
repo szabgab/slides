@@ -15,14 +15,14 @@ def parse(filename):
         for line in fh:
             line = line.rstrip('\n')
 
-            match = re.search('\A#\s+(.*?)\s*\Z', line)
+            match = re.search(r'\A#\s+(.*?)\s*\Z', line)
             if match:
                 dom.append({
                     'h1' : match.group(1)
                 })
                 continue
 
-            match = re.search('\A##\s+(.*?)\s*', line)
+            match = re.search(r'\A##\s+(.*?)\s*', line)
             if match:
                 dom.append({
                     'h2' : match.group(1)
