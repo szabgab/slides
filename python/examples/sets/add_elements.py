@@ -1,12 +1,11 @@
-#                    Python 2                           Python 3
 objects = set()
-print(objects)     # set([])                            set()
+print(objects)
 
 objects.add('Mars')
-print(objects)     # set(['Mars'])                      {'Mars'}
+print(objects)
 
 objects.add('Mars')
-print(objects)     # set(['Mars'])                      {'Mars'}
+print(objects)
 
 objects.add('Neptun')
-print(objects)     # set(['Neptun', 'Mars'])            {'Mars', 'Neptun'}
+print(objects)
