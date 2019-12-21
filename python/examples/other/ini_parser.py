@@ -1,6 +1,8 @@
 import sys
 import re
 
+# Sample input data.ini
+
 def parse():
     if len(sys.argv) != 2:
         exit("Usage: {} FILEAME".format(sys.argv[0]))
@@ -12,20 +14,21 @@ def parse():
         for line in fh:
             if re.match(r'^\s*(#.*)?$', line):
                 continue
-            m = re.match(r'^\[([^\]]+)\]\s*$', line)
-            if (m):
+            match = re.match(r'^\[([^\]]+)\]\s*$', line)
+            if (match):
                 # print('Section "{}"'.format(m.group(1)))
-                section = m.group(1)
+                section = match.group(1)
                 continue
-            m = re.match(r'^\s*(.+?)\s*=\s*(.*?)\s*$', line)
-            if m:
+            match = re.match(r'^\s*(.+?)\s*=\s*(.*?)\s*$', line)
+            if match:
                 # print 'field :"{}"  value: "{}"'.format(m.group(1), m.group(2))
                 if not data.get(section):
                     data[section] = {}
-                data[section][ m.group(1) ] = m.group(2)
+                data[section][ match.group(1) ] = match.group(2)
 
     return data
 
-ini = parse()
-print(ini)
+if __name__ == '__main__':
+    ini = parse()
+    print(ini)
 
