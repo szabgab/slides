@@ -1,4 +1,4 @@
-from parser_refactored import parse
+from parser_globals import parse
 import json
 
 def test_dom():
