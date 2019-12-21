@@ -9,15 +9,15 @@
         "h2": "Subtitle 1"
     },
     {
-        "p": "\nSub text 1\n\n```\nVerbatime text\n"
+        "verbatim": "\nSub text 1\n\nVerbatime text\n# verbatim text\n"
     },
     {
-        "h1": "verbatim text"
-    },
-    {
-        "p": "```\n\n\n"
+        "p": "\n\n"
     },
     {
         "h2": "Subtitle 2"
+    },
+    {
+        "p": "\nSub text 2\n\n\n"
     }
 ]

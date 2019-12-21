@@ -13,8 +13,23 @@ def parse(filename):
     dom = []
     with open(filename) as fh:
         text = ''
+        in_verbatim = False
         for line in fh:
             line = line.rstrip('\n')
+
+            if in_verbatim:
+                if line == '```':
+                    dom.append({
+                        'verbatim': text,
+                    })
+                    text = ''
+                    in_verbatim = False
+                else:
+                    text += line + '\n'
+                continue
+            if line == '```':
+                in_verbatim = True
+                continue
 
             match = re.search(r'\A(#{1,2})\s+(.*?)\s*\Z', line)
             if match:
@@ -30,6 +45,11 @@ def parse(filename):
                 continue
 
             text += line + '\n'
+        if text != '':
+            dom.append({
+                'p': text
+            })
+            text = ''
 
     return dom
 
