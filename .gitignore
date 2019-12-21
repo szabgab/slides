@@ -16,3 +16,4 @@ counter.db
 sample.db
 
 .pytest_cache
+.idea
