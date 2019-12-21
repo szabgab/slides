@@ -1,1 +1,23 @@
-[{"h1": "Title"}, {"h2": ""}, {"h1": "verbatim text"}, {"h2": ""}]
+[
+    {
+        "h1": "Title"
+    },
+    {
+        "p": "\nMain text\n\n"
+    },
+    {
+        "h2": "Subtitle 1"
+    },
+    {
+        "p": "\nSub text 1\n\n```\nVerbatime text\n"
+    },
+    {
+        "h1": "verbatim text"
+    },
+    {
+        "p": "```\n\n\n"
+    },
+    {
+        "h2": "Subtitle 2"
+    }
+]
