@@ -1,7 +1,7 @@
-class Point(object):
+class Point():
     pass
 
-class Polygon(object):
+class Polygon():
     pass
 
 p1 = Point(0, 0)  # Point(0, 0)
