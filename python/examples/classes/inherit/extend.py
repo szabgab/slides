@@ -5,7 +5,7 @@ class Parent():
 class Child(Parent):
     def greet(self):
         print("Hi five!")
-        Parent.greet(self)
+        super().greet()
         print("This is my world!")
 
 p = Parent()

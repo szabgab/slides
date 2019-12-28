@@ -11,8 +11,7 @@ class Point():
 class Circle(Point):
     def __init__(self, x, y, r):
         print('__init__ of Circle')
-        Point.__init__(self, x, y)
-        # super(Circle, self).__init__(x, y)
+        super().__init__(x, y)
         self.r = r
 
     def area(self):

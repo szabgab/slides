@@ -7,8 +7,7 @@ class Point():
 class Circle(Point):
     def __init__(self, x, y, r):
         print('__init__ of circle')
-        #super(Circle, self).__init__(x, y)
-        Point.__init__(self, x, y)
+        super().__init__(x, y)
         self.r = r
 
 class Ball(Circle):
