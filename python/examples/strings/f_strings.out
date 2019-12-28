@@ -1,0 +1,8 @@
+The user Foo Bar was born 42.12 years ago.
+The user Foo Bar    was born 42.12 years ago.
+The user    Foo Bar was born 42.12 years ago.
+The user    Foo Bar was born      42.12 years ago.
+PI is '3.14'.
+PI is '3.142'.
+Area is 12.566370614359172
+Area is 12.566
