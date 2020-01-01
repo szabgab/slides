@@ -25,7 +25,7 @@ def process_slides(source, target, name):
 
     slides_path = os.path.join(source, name)
     for thing in os.listdir(slides_path):
-        if thing in ['examples', 'README.md', 'img', 'Dockerfile']:
+        if thing in ['examples', 'README.md', 'img', 'Dockerfile', '.idea', 'python.json']:
             continue
         thing_path = os.path.join(slides_path, thing)
         if os.path.isfile(thing_path) and thing.endswith('.md'):
