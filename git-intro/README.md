@@ -10,6 +10,16 @@
 * delete B
 
 
+
+describe
+show
+log
+ref
+ref-log
+fetch information about the current commit
+
+
+
 -------------------------- old slides that are probably not needed --------------------------
 
 
