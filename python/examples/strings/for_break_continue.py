@@ -1,8 +1,8 @@
 txt = 'hello world'
-for c in txt:
-    if c == ' ':
+for cr in txt:
+    if cr == ' ':
         continue
-    if c == 'r':
+    if cr == 'r':
         break
-    print(c)
-
+    print(cr)
+print('DONE')
