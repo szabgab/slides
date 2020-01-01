@@ -1,0 +1,322 @@
+# Exception handling
+{id: python-exceptions}
+
+## Hierarchy of calls
+{id: hierarchy-of-calls}
+
+```
+main()
+    some_process()
+        for filename in some_list:
+            handle_file(filename)
+                private_module.deal_with_file(filename)
+                    private_module._helper_function(filename)
+                       public_module.process_file(filename)
+                           with open(filename) as fh:
+                               pass
+```
+
+
+## Handling errors as return values
+{id: handling-errors-as-return-values}
+
+* Each function that fails returns some error indicator. **None** ? An object that has and attribute "error"?
+* None would be bad as that cannot indicate different errors.
+* Every called needs to check if the function returned error. If at any point we forget our system might run with hidden failures.
+
+
+```
+main()
+   ......
+            result = do_something(filename)
+            if result:
+                do_something_else(result)
+```
+
+```
+main()
+   ......
+            result = do_something(filename)
+            do_something_else(result)
+```
+
+
+## Handling errors as exceptions
+{id: handling-errors-as-exceptions}
+
+* Only need to explicitely check for it at the level where we know what to do with the problem.
+* But: Do we want our pacemaker to stop totally after missing one beat? Probably not. Or better yet: not when it is in production.
+
+
+```
+main()
+   try:
+   ......
+            result = do_something(filename)
+            do_something_else(result)
+    except Exception:
+        # decide what to do
+```
+
+
+## A simple exception
+{id: a-simple-exception}
+
+{aside}
+
+When something goes wrong, Python throws (raises) an exception. For example,
+trying to divide a number by 0 won't work. If the exception is not
+handled, it will end the execution.
+{/aside}
+
+{aside}
+
+In some programming languags we use the expression "throwing an exception" in other languages the expression is "raising an exception".
+I use the two expressions interchangeably.
+{/aside}
+
+{aside}
+
+In the next simple example, Python will print the string before the division,
+then it will throw an exception, printing it to the standard error that is
+the screen by default. Then the script stops working and the
+string "after" is not printed.
+{/aside}
+![](examples/exceptions/divide_by_zero.py)
+
+
+## Working on a list
+{id: a-simple-exception-on-a-list}
+
+{aside}
+
+In a slightly more interesting example we have a list of values.
+We would like to divide a number by each one of the values.
+
+As you can see one of the values is 0 which will generate and exception.
+
+The loop will finish early.
+{/aside}
+![](examples/exceptions/divide_by_zero_list.py)
+
+{aside}
+
+We can't repair the case where the code tries to divide by 0, but it would be nice
+if we could get the rest of the results as well.
+{/aside}
+
+
+## Catch ZeroDivisionError exception
+{id: catch-divide-by-zero}
+
+{aside}
+
+For that, we'll wrap the critical part of the code in a "try" block.
+After the "try" block we need to provide a list of exception that are
+caught by this try-block.
+{/aside}
+
+{aside}
+
+You could say something like
+"Try this code and let all the exceptions propagate, except of the ones I listed".
+{/aside}
+
+{aside}
+
+As we saw in the previous example, the specific error is called ZeroDivisionError.
+{/aside}
+
+{aside}
+
+If the specified exception occurs within the try: block, instead of the script ending,
+only the try block end and the except: block is executed.
+{/aside}
+![](examples/exceptions/divide_by_zero_catch.py)
+
+
+## Module to open files and calculate something
+{id: module-to-open-file-and-calculate-something}
+
+{aside}
+
+Of course in the previous example, it would be probably
+much easier if we just checked if the number was 0,
+before trying to divide with it. There are many other cases
+when this is not possible. For example it is impossible to
+check if open a file will succeed, without actually trying
+to open the file.
+{/aside}
+
+{aside}
+
+In this example we open the file, read the first line which
+is a number and use that for division.
+{/aside}
+
+{aside}
+
+When the open() fails, Python throws an IOError exception.
+{/aside}
+![](examples/exceptions/module.py)
+
+
+## File for exception handling example
+{id: files-for-exception-example}
+
+{aside}
+
+If we have a list of files and we would like to make sure
+we process as many as possible without any problem caused
+in the middle, we can catch the exception.
+{/aside}
+
+{aside}
+We have the following list of files.
+        Notice that "two.txt" is missing and "zero.txt" has a 0 in it.
+{/aside}
+![](examples/exceptions/zero.txt)
+![](examples/exceptions/one.txt)
+
+File two.txt is missing on purpose.
+
+![](examples/exceptions/three.txt)
+
+
+
+
+## Open files - exception
+{id: exceptions-open-files}
+![](examples/exceptions/open_list_of_files.py)
+
+
+## Handle divide by zero exception
+{id: exceptions-handle-divide-by-zero}
+
+{aside}
+
+Running this code will the ZeroDivisionError exception, but it will die with a IOError exception.
+{/aside}
+![](examples/exceptions/handle_divide_by_zero.py)
+
+
+
+## Handle files - exception
+{id: exceptions-handle-files}
+
+{aside}
+We can add multiple "except" statement at the end of the "try" block and handle several exceptions. Each one in a different way.
+{/aside}
+
+![](examples/exceptions/handle_both_exceptions.py)
+
+
+## Catch all the exceptions and show their type
+{id: show-exception-type}
+
+{aside}
+We can also use the "except Exception" to catch all exceptions. In this case we might want to also print out the text and the type of the exception by ourselves.
+{/aside}
+
+![](examples/exceptions/show_exception_type.py)
+
+
+## List exception types
+{id: list-exception-types}
+
+{aside}
+
+We can list more than one exceptions to be caught one after the other in a single "except" statement.
+{/aside}
+
+```
+except (IOError, ZeroDivisionError):
+```
+![](examples/exceptions/handle_list_of_exceptions.py)
+
+
+## Exceptions
+{id: exceptions}
+
+{aside}
+
+    There are many kinds of exceptions in Python and each module can define its own exception types as well.
+    On this page you'll find the list and hierarchy of exceptions in Python.
+{/aside}
+
+
+<a href="http://docs.python.org/library/exceptions.html">exceptions</a>
+
+
+
+
+## How to raise an exception
+{id: raise-an-exception}
+{i: raise}
+{i: throw}
+{i: Exception}
+
+{aside}
+
+    As you create more and more complex applications you'll reach a point where you write a function, probably in a module that needs to report some error condition.
+    You can raise an exception in a simple way.
+{/aside}
+![](examples/exceptions/raise.py)
+
+
+## Stack trace
+{id: stack-trace}
+![](examples/exceptions/stack_trace.py)
+
+![](examples/exceptions/stack_trace.out)
+
+
+## Exercies: Exception int conversion
+{id: exercise-exception-int-conversion}
+
+* In the earlier example we learned how to handle both ZeroDivisionError and IOError exceptions. Now try this
+
+
+```
+cd examples/exceptions
+python handle_both_exceptions.py one.txt zero.txt two.txt text.txt three.txt
+```
+![](examples/exceptions/handle_both_exceptions.out)
+
+* This will raise a ValueError exception before handling file three.txt
+* Fix it by capturing the spcific exception.
+* Fix by capturing "all other exceptions".
+
+![](examples/exceptions/text.txt)
+
+
+## Exercies: Raise Exception
+{id: exercise-exception-raise-exception}
+
+* Write a function that expects a positive integer as its single parameter.
+* Raise exception if the parameter is not a number.
+* Raise a different exception if the parameter is not positive.
+* Raise a different exception if the parameter is not whole number.
+
+
+
+## Solution: Exception int conversion (specific)
+{id: solution-exception-int-conversion-specific}
+![](examples/exceptions/handle_3_exceptions.py)
+![](examples/exceptions/handle_3_exceptions.out)
+
+
+## Solution: Exception int conversion (all other)
+{id: solution-exception-int-conversion-all-other}
+![](examples/exceptions/handle_all_other_exceptions.py)
+![](examples/exceptions/handle_all_other_exceptions.out)
+
+
+## Solution: Raise Exception
+{id: solution-exception-raise-exception}
+![](examples/exceptions/positive.py)
+
+
+
+
+

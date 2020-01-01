@@ -1,2 +1,3 @@
 git-intro/git.json
 golang/go.json
+python/python.json

@@ -49,7 +49,7 @@
         "warnings.md",
         "csv.md",
         "excel.md",
-        "md.xml",
+        "xml.md",
         "scipy.md",
         "biology.md",
         "chemistry.md",
@@ -78,9 +78,11 @@
         "jython.md",
         "pitfalls.md",
         "linters.md",
-        "",
+
         "faq.md",
         "appendix.md",
         "other.md"
+    ],
+    "other": [
     ]
 }
