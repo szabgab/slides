@@ -41,6 +41,8 @@
         "interactive-shell.md",
         "testing-demo.md",
 
+        "context.md",
+        "testing-intro.md",
         "functional.md",
         "generator-expressions.md",
         "closures.md",
