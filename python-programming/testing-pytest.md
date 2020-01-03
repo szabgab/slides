@@ -328,7 +328,7 @@ E       ZeroDivisionError: division by zero
     def test_zero_division():
         with pytest.raises(ValueError) as e:
 >           divide(1, 0)
-E           Failed: DID NOT RAISE &lt;class 'ValueError'&gt;
+E           Failed: DID NOT RAISE <class 'ValueError'>
 ```
 
 
