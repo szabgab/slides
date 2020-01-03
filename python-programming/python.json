@@ -2,7 +2,8 @@
     "title": "Python Programming",
     "author": "Gabor Szabo",
     "first_year": "2012",
-    "copyright": "Gabor Szabo https://szabgab.com/",
+    "copyright_name": "Gabor Szabo",
+    "copyright_url": "https://szabgab.com/",
     "version": "1.18",
     "files": [
         "basic.md",
