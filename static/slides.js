@@ -61,6 +61,11 @@ function KeyCheck(e) {
             window.history.back();
             break;
 
+        case 67:
+            // c
+            go_chapter_toc();
+            break;
+
         case 72:
             // h
             // hide/show .remark classes
@@ -98,7 +103,7 @@ function KeyCheck(e) {
 
         case 191:
             // ?
-            alert("? - this help\n-> next\n<- - prev\nSPACE - next\ni - index\nk - keywords\nt - toc\nh - toggle extra text\n");
+            alert("? - this help\n-> next\n<- - prev\nSPACE - next\ni - index\nk - keywords\nt - toc\nh - toggle extra text\nc - chapter TOC\n");
             //PgUp - prev\nPgDown - next
         break;
 
@@ -106,6 +111,16 @@ function KeyCheck(e) {
         //    alert(KeyID);
    }
 }
+
+function go_chapter_toc() {
+    var the_page     = document.getElementById('chapter');
+    if (the_page) {
+        document.location.href = the_page;
+    } else {
+        alert('Sorry, there are no chapter TOC');
+    }
+}
+
 
 function go_next() {
     var next_page     = document.getElementById('next');
