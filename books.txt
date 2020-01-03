@@ -1,3 +1,4 @@
+docker/docker.json
 git-intro/git.json
 golang/go.json
 python-programming/python.json
