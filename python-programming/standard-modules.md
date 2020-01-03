@@ -56,6 +56,7 @@ Redirection:
 ```
 some_program > out.txt  2> err.txt
 some_program 2> /dev/null
+python stderr.py > out.txt 2>&1
 ```
 
 ## Current directory (getcwd, pwd, chdir)
