@@ -209,12 +209,14 @@ We can change the environment variables and that change will be visible in subpr
 but once we exit from ou Python program, the change will not persist.
 {/aside}
 
-
-
-
 ## shutil
 {id: shutil}
 {i: shutil}
+{i: cp}
+{i: copy}
+{i: copytree}
+{i: move}
+{i: rmtree}
 
 ```
 import shutil
@@ -224,8 +226,6 @@ shutil.copytree(source, dest)
 shutil.move(source, dest)
 shutil.rmtree(path)
 ```
-
-
 
 ## time
 {id: time}
