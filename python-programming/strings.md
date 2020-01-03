@@ -183,7 +183,39 @@ Escape sequences are kept intact and not escaped. Used in regexes.
 ![](examples/strings/chr.py)
 ![](examples/strings/chr.out)
 
+## Exercise: one string in another string
+{id: exercise-one-string-in-another-string}
+
+Write script that accepts two strings and tells if one of them can be found in the other and where?
+
+## Exercise: to ASCII CLI
+{id: exercise-to-ascii-cli}
+
+Write script that gets a character on the command line and prints out the ascii code of it.
+
+Maybe even:
+
+Write script that gets a string on the command line and prints out the ascii code of each character.
+
+## Exercise: from ASCII CLI
+{id: exercise-from-ascii-cli}
+
+Write script that accepts a number on the command line and prints the character represented by that number.
+
+## Solution: one string in another string
+{id: solution-one-string-in-another-string}
+
+![](examples/strings/in_string.py)
+
+## Solution: to ASCII CLI
+{id: solution-to-ascii-cli}
 
 
+![](examples/strings/to_ascii_char.py)
+![](examples/strings/to_ascii.py)
 
+## Solution: from ASCII CLI
+{id: solution-from-ascii-cli}
+
+![](examples/strings/from_ascii.py)
 
