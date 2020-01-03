@@ -26,7 +26,10 @@ Version: {{ book.version }}
 
 <div>
 {% if first %}
+   <a class="next slidebutton" id="next" href="toc{{ extension }}">Start (-&gt;)</a>
+<!--
    <a class="next slidebutton" id="next" href="{{ first.id }}{{ extension }}">Start (-&gt;)</a>
+-->
 {% endif %}
 </div>
 
