@@ -1,6 +1,7 @@
 # Strings
 {id: python-strings}
 
+
 ## Single quoted and double quoted strings
 {id: single-quote-double-quote}
 ![](examples/strings/quotes.py)
@@ -14,7 +15,6 @@
 
 Can spread multiple lines.
 
-
 ```
 first row
 second row
@@ -26,7 +26,6 @@ third row
 {id: string-length}
 {i: len}
 ![](examples/strings/length.py)
-
 
 
 ## String repetition
@@ -156,17 +155,13 @@ Check if a substring is **in** the string?
 
 Escape sequences are kept intact and not escaped. Used in regexes.
 
-
-
-## ord in a file
+## ord
 {id: ord}
 {i: ord}
 
 * [ord](https://docs.python.org/3/library/functions.html#ord)
 
 ![](examples/strings/ord_chars.py)
-
-
 
 ## ord in a file
 {id: ord-in-file}
@@ -183,10 +178,12 @@ Escape sequences are kept intact and not escaped. Used in regexes.
 ![](examples/strings/chr.py)
 ![](examples/strings/chr.out)
 
+
 ## Exercise: one string in another string
 {id: exercise-one-string-in-another-string}
 
 Write script that accepts two strings and tells if one of them can be found in the other and where?
+
 
 ## Exercise: to ASCII CLI
 {id: exercise-to-ascii-cli}
@@ -197,15 +194,18 @@ Maybe even:
 
 Write script that gets a string on the command line and prints out the ascii code of each character.
 
+
 ## Exercise: from ASCII CLI
 {id: exercise-from-ascii-cli}
 
 Write script that accepts a number on the command line and prints the character represented by that number.
 
+
 ## Solution: one string in another string
 {id: solution-one-string-in-another-string}
 
 ![](examples/strings/in_string.py)
+
 
 ## Solution: to ASCII CLI
 {id: solution-to-ascii-cli}
