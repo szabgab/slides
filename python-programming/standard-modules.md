@@ -53,13 +53,10 @@
 
 Redirection:
 
-
-
 ```
-some_program &lt; out.txt  2&lt; err.txt
-some_program 2&lt; /dev/null
+some_program > out.txt  2> err.txt
+some_program 2> /dev/null
 ```
-
 
 ## Current directory (getcwd, pwd, chdir)
 {id: pwd-current-working-directory}
