@@ -47,15 +47,19 @@ Everything else is true.
 {id: comparision-operators}
 {i: ==}
 {i: !=}
+{i: <}
+{i: <=}
+{i: >=}
+{i: >}
 
 ```
-==                        equal
-!=                        not equal
+==             equal
+!=             not equal
 
-&lt;                      less than
-&lt;=                     less than or equal
-&gt;                      greater than
-&gt;=                     greater than or equal
+<              less than
+<=             less than or equal
+>              greater than
+>=             greater than or equal
 ```
 ![](examples/other/compare_equals.py)
 

@@ -352,9 +352,9 @@ In Python 3 it throws an exception.
 ```
 [100, 'foo', 42, 'bar']
 Traceback (most recent call last):
-  File "examples/lists/sort_mixed.py", line 5, in &lt;module&gt;
+  File "examples/lists/sort_mixed.py", line 5, in <module>
     mixed.sort()
-TypeError: unorderable types: str() &lt; int()
+TypeError: unorderable types: str() < int()
 ```
 
 

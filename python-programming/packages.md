@@ -53,7 +53,7 @@ mymath/
 
 ```
 Traceback (most recent call last):
-  File "proj1_2.py", line 6, in &lt;module&gt;
+  File "proj1_2.py", line 6, in <module>
     print(mymath.calc.add(4, 7))
 AttributeError: 'module' object has no attribute 'calc'
 ```

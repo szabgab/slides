@@ -101,7 +101,7 @@ planets[planets.Mass > 1]
 planets['Planet name'].isin(['Earth', 'Mars'])
 planets[ planets['Planet name'].isin(['Earth', 'Mars']) ]
 
-planets[(planets.Mass > 1) &amp; (planets.Mass &lt; 100)]
+planets[(planets.Mass > 1) &amp; (planets.Mass < 100)]
 # element-wise boolean and
 
 center = 'Earth'

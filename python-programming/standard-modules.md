@@ -314,7 +314,7 @@ after
 ```
 $  python ctrl_c.py
 Username:^CTraceback (most recent call last):
-  File "ctrl_c.py", line 3, in &lt;module&gt;
+  File "ctrl_c.py", line 3, in <module>
     username = input('Username:')
 KeyboardInterrupt
 ```

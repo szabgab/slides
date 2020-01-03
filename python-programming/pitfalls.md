@@ -9,9 +9,9 @@
 $ python examples/pitfalls/random.py
 
 Traceback (most recent call last):
-  File "examples/pitfalls/random.py", line 1, in &lt;module&gt;
+  File "examples/pitfalls/random.py", line 1, in <module>
     import random
-  File ".../examples/pitfalls/random.py", line 3, in &lt;modul&gt;
+  File ".../examples/pitfalls/random.py", line 3, in <module>
     print(random.random())
 TypeError: 'module' object is not callable
 ```
@@ -32,7 +32,7 @@ $ python examples/pitfalls/corp.py
 
 19
 Traceback (most recent call last):
-  File "examples/pitfalls/corp.py", line 19, in &lt;module&gt;
+  File "examples/pitfalls/corp.py", line 19, in <module>
     print(c.total())
 TypeError: 'int' object is not callable
 ```
@@ -57,7 +57,7 @@ Python 3 - throws exception as expected.
 ```
 $ python3 examples/pitfalls/compare.py
 Traceback (most recent call last):
-  File "examples/pitfalls/compare.py", line 4, in &lt;module&gt;
+  File "examples/pitfalls/compare.py", line 4, in <module>
     print(x > y)
 TypeError: unorderable types: int() > str()
 ```
@@ -96,9 +96,9 @@ In Python 3 in **correctly** throws an exception.
 air:python gabor$ python3  examples/pitfalls/sort.py
 [10, '1 foo', 42, '4 bar']
 Traceback (most recent call last):
-  File "examples/pitfalls/sort.py", line 5, in &lt;module&gt;
+  File "examples/pitfalls/sort.py", line 5, in <module>
     mixed.sort()
-TypeError: unorderable types: str() &lt; int()
+TypeError: unorderable types: str() < int()
 ```
 
 

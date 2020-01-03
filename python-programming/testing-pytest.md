@@ -626,8 +626,8 @@ E        +  where 23 = double(21)
 $ pytest test_number_less_than.py
 
     def test_string_equal():
->       assert get_number() &lt; 0
-E       assert 23 &lt; 0
+>       assert get_number() < 0
+E       assert 23 < 0
 E        +  where 23 = get_number()
 ```
 
