@@ -5,6 +5,12 @@
 ## Single quoted and double quoted strings
 {id: single-quote-double-quote}
 ![](examples/strings/quotes.py)
+![](examples/strings/quotes.out)
+
+## Long lines
+{id: long-lines}
+![](examples/strings/other.py)
+![](examples/strings/other.out)
 
 
 ## Triple quoted strings (multiline)
