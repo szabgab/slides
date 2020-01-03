@@ -76,4 +76,20 @@ nav li {
     margin-bottom: 5px;
 }
 
+#links {
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+#links hr {
+  margin-bottom: 20px;
+}
+
+#links li {
+  display: inline;
+  list-style-type: none;
+  padding-right: 20px;
+}
+
+
 
