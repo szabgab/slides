@@ -4,6 +4,7 @@ import argparse
 import logging
 import os
 import shutil
+import json
 import time
 
 # TODO: git clean -dXf
@@ -15,7 +16,7 @@ def get_arguments():
     parser.add_argument('--target', help='Optional target directory. If not given automatically set.')
     return parser.parse_args()
 
-def process_slides(source, target, name):
+def process_slides(source, target, name, config_file=None):
     logging.info(f"Processing slides of {name}")
     book = []
 
@@ -24,17 +25,18 @@ def process_slides(source, target, name):
         os.mkdir(resources)
 
     slides_path = os.path.join(source, name)
-    for thing in os.listdir(slides_path):
-        if thing in ['examples', 'README.md', 'img', 'Dockerfile', '.idea', 'python.json']:
-            continue
+    if config_file is not None:
+        with open(os.path.join(slides_path, config_file)) as fh:
+            config_data = json.load(fh)
+            things = config_data['files']
+    else:
+        things = list(filter(lambda thing: thing.endswith('.md') and thing != 'README.md', os.listdir(slides_path)))
+    #print(things)
+    for thing in things:
         thing_path = os.path.join(slides_path, thing)
-        if os.path.isfile(thing_path) and thing.endswith('.md'):
-            new_filename = f"{name}-{thing}"
-            shutil.copy(thing_path, os.path.join(target, new_filename))
-            book.append(new_filename)
-        else:
-            exit(f"What is this thing {thing_path} ?")
-            logging.warning(f"What is this thing {thing_path} ?")
+        new_filename = f"{name}-{thing}"
+        shutil.copy(thing_path, os.path.join(target, new_filename))
+        book.append(new_filename)
 
     src_examples = os.path.join(slides_path, 'examples')
     if os.path.exists(src_examples):
@@ -100,17 +102,20 @@ def main():
     os.mkdir(target)
 
     book = []
-    if args.all:
-        slides_file = os.path.join(source, 'slides.txt')
-        with open(slides_file, 'r') as fh:
-            for line in fh:
-                line = line.rstrip("\n")
+    slides_file = os.path.join(source, 'slides.txt')
+    with open(slides_file, 'r') as fh:
+        for line in fh:
+            line = line.rstrip("\n")
+            if args.all or line == args.name:
                 book.extend(process_slides(source, target, line))
-        # extra directories that are not in the list of slides yet
-        for line in ['python']:
-            book.extend(process_slides(source, target, line))
-    else:
-        book = process_slides(source, target, args.name)
+
+    books_file = os.path.join(source, 'books.txt')
+    with open(books_file, 'r') as fh:
+        for line in fh:
+            line = line.rstrip("\n")
+            dir_name, json_file = line.split('/')
+            if args.all or line.startswith(args.name):
+                book.extend(process_slides(source, target, dir_name, json_file))
 
     with open(os.path.join(target, 'Book.txt'), 'w') as fh:
         for line in book:
