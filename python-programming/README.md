@@ -1,1 +1,1 @@
-The slides are still in the old format in the old and private repository.
+The slides of the Python Progamming course
