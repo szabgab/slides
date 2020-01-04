@@ -11,7 +11,8 @@ i = 0
 for c in cycle(['A', 'B', 'C']):
     print(c)
     i += 1
-    if i >= 4: break
+    if i >= 4:
+        break
 
 # A
 # B

@@ -30,13 +30,15 @@
 
 ![](examples/classes/range/it.py)
 ![](examples/classes/range/count.py)
-
+![](examples/classes/range/count.out)
 
 
 ## Unbound iterator
 {id: unbound-iterator}
-![](examples/classes/fibonacci.py)
-![](examples/classes/fib.py)
+
+![](examples/classes/unbound/fibonacci.py)
+![](examples/classes/unbound/fib.py)
+![](examples/classes/unbound/fib.out)
 
 
 ## Exercise: iterators
@@ -54,8 +56,7 @@ when the value passes the limit.
 {id: exercise-iterators-only}
 
 
-Change the Iterator version of the Fibonacci series so it will NOT hold old the previous values
-in memory.
+Change the Iterator version of the Fibonacci series so it will NOT hold the previous values in memory.
 
 
 
@@ -67,8 +68,14 @@ in memory.
 Create an iterator that given a filename will return an object that on every iteration will
 return a single character. As an option let the user skip newlines, or maybe any pre-defined character.
 
+## Exercise: read section
+{id: exercise-read-section}
 
+* Create an iterator that given the name of a file like the following, will return once section at a time.
+* It will return a list one each iteration and each element of the list will be a line from the current section.
+* Other ideas what should be returned on each iteration?
 
+![](examples/iterators/sections/planets.txt)
 
 ## Solution: iterators
 {id: solution-iterators-limit}
@@ -81,6 +88,10 @@ return a single character. As an option let the user skip newlines, or maybe any
 ![](examples/classes/only/fibonacci.py)
 ![](examples/classes/only/fib.py)
 
+## Solution: read section
+{id: solution-read-section}
+
+![](examples/iterators/sections/read_section.py)
 
 
 ## itertools or yield
@@ -116,9 +127,22 @@ return a single character. As an option let the user skip newlines, or maybe any
 ![](examples/iterators/cycle_manual.py)
 
 
+## alter iterator
+{id: iterators-alter}
+![](examples/iterators/alter.py)
+
+
+## Exercise: compare files
+{id: exercise-compare-files}
+
+Compare two files line-by-line, and create a 3rd file listing the lines that are different.
+
+
 ## itertools - izip
 {id: itertools-izip}
 {i: izip}
+
+Python 3 does not need this any more as the built-in zip is already an iterator.
 
 Combine two unbounded lists
 
@@ -137,12 +161,6 @@ Combine three unbounded lists
 ## mixing iterators
 {id: iterators-mixer-iterators}
 ![](examples/iterators/my_iterators.py)
-
-
-## alter iterator
-{id: iterators-alter}
-![](examples/iterators/alter.py)
-
 
 ## itertools - pairwise
 {id: itertools-pairwise}
@@ -166,13 +184,6 @@ so very time izip() wants to return a tuple, it will fetch two elements from the
 Every N element from a list
 
 ![](examples/iterators/grouped.py)
-
-
-## Exercise: compare files
-{id: exercise-compare-files}
-
-Compare two files line-by-line, and create a 3rd file listing the lines that are different
-
 
 
 
