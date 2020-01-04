@@ -1,5 +1,3 @@
-#!/usr/bin/env python
-
 students = [
     ('John', 'A', 2),
     ('Zoro', 'C', 1),

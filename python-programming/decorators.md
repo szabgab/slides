@@ -3,6 +3,7 @@
 
 ## Decorator
 {id: decorator}
+{i: @}
 
 * A function that changes the behaviour of other functions.
 * The input of a decorator is a function.
@@ -10,6 +11,8 @@
 
 
 ```
+from some_module import some_decorator
+
 @some_decorator
 def f(...):
     ...
@@ -24,14 +27,17 @@ def f(...):
 f = some_decorator(f)
 ```
 
+
+## Use cases for decorators in Python
+{id: decorator-use-cases}
+{i: classmethod}
+{i: staticmethod}
+{i: pytest}
+
 * Common decorators are classmethod() and  staticmethod().
 * Flask uses them to mark and configure the routes.
 * Pytest uses them to add marks to the tests.
 
-
-
-## Use cases for decorators in Python
-{id: decorator-use-cases}
 
 * Logging calls with parameters.
 * Logging elapsed time of calls.
