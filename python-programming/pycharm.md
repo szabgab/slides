@@ -53,4 +53,11 @@
 ```
 
 
+## Refactoring example (with and without pycharm)
+{id: pycharm-refactoring}
+
+* Change variable name (in scope only)
+* Extract method
+
+
 

@@ -5,23 +5,33 @@
 {id: modules-first-time}
 ![](examples/basics/modules.py)
 
-
 ## The main function
 {id: python-optional-main-sub}
 {i: main}
 {i: def}
 
-{aside}
+![](examples/basics/hello_world_main.py)
 
-    You could write your code in the main body of your Python file, but using functions
-    and passing arguments to it will make your code easier to maintain and understand.
-    Therefore I recommend that you always write every script with a function called "main".
+This won't run as the main function is declared, but it is never called (invoked).
+
+## The main function - called
+{id: python-optional-main-sub-called}
+{i: main}
+{i: def}
+
+
+{aside}
+You could write your code in the main body of your Python file, but using functions
+and passing arguments to it will make your code easier to maintain and understand.
+Therefore I recommend that you always write every script with a function called "main".
+
 <ul>
   <li>Function definition starts with the **def** keyword, followed by the name of the new function ("main" in this case), followed by the list of **parameters in parentheses** (nothing in this case).</li>
   <li>The content or body of the function is then **indented** to the right.</li>
   <li>The function definintion ends when the indentation stops.</li>
 </ul>
 {/aside}
+
 ![](examples/basics/hello_world.py)
 
 ```
@@ -32,10 +42,9 @@ after
 ```
 
 {aside}
-
 <ul>
-<li>Use a main function to avoid globals and better structure your code.</li>
-<li>Python uses **indentation** for blocks instead of curly braces, and it uses the colon **:** to start a block.</li>
+  <li>Use a main function to avoid globals and better structure your code.</li>
+  <li>Python uses **indentation** for blocks instead of curly braces, and it uses the colon **:** to start a block.</li>
 </ul>
 {/aside}
 
