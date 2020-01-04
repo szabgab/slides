@@ -331,5 +331,29 @@ Group elements
 
 ![](examples/iterators/groupby.py)
 
+## Circular references
+{id: circular-references}
 
+circular references are cleaned up the by the garbage collector
+but maybe not all the memory is given back to the OS, and it can take some time to clean them up.
+
+![](examples/advanced/circular.py)
+
+but weakref might expedite the cleanup. See also the gc module and if I can show it
+http://stackoverflow.com/questions/2428301/should-i-worry-about-circular-references-in-python
+
+## Context managers: with (file) experiments
+{id: context-managers-with-file-experiments}
+
+![](examples/advanced/with_file_write.py)
+
+```
+f = open('out.txt', 'w')
+f.write("hello\n")
+f.close()
+
+# for line in open("myfile.txt"):
+#    print line,
+# the file is closed only when script ends
+```
 
