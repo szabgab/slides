@@ -136,10 +136,9 @@ Always profile before starting to optimize!
 ## Exercise: sort files
 {id: exercise-sort-files}
 
+Write a script that given a path to a directory will print the files sorted by date.
 
-Write a script that given a path to a directory will print the files sorted by date. Write a simple solution and one using DSU.
-
-
-
-
+* Write a simple solution.
+* Profile.
+* Use DSU.
 
