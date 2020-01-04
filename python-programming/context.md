@@ -22,10 +22,13 @@ $ python no_context_cd.py /opt/
 /opt
 ```
 
-
 ## open in function
 {id: open-in-function}
 ![](examples/advanced/no_context_fh.py)
+
+## open in function using with
+{id: open-in-function-with}
+
 ![](examples/advanced/with_fh.py)
 
 
