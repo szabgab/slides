@@ -1198,9 +1198,7 @@ pytest --cov=my --cov-report html --cov-branch
 Open htmlcov/index.html
 ```
 
-
 **Try werkzeug**
-
 
 ```
 pytest --cov=werkzeug --cov-report html --cov-branch
@@ -1211,10 +1209,7 @@ xdg-open htmlcov/index.html
 ## Exercise: module
 {id: pytest-exercise-module}
 
-
 Pick one of the modules and write a test for it.
-
-
 
 * [algo](https://github.com/JesperBry/algo)
 * [editdistance](https://github.com/aflc/editdistance) Levenshtein distance implemented in C
@@ -1223,8 +1218,6 @@ Pick one of the modules and write a test for it.
 * [pyxdameraulevenshtein](https://github.com/gfairchild/pyxDamerauLevenshtein)
 * [weighted-levenshtein](https://github.com/infoscout/weighted-levenshtein)
 * OpenPyXL
-
-
 
 
 ## Exercise: Open Source
@@ -1237,9 +1230,6 @@ Pick one of the modules and write a test for it.
 * Send Pull Request
 
 
-
-
-
 ## Pytest resources
 {id: pytest-resources}
 
@@ -1248,6 +1238,20 @@ Pick one of the modules and write a test for it.
 * [Python Testing by Brian Okken](http://pythontesting.net/)
 * [Talk Python to me by Michael Kennedy](https://talkpython.fm/)
 * [Python Bytes](https://pythonbytes.fm/) podcast by Brian Okken and Michael Kennedy
+
+
+## Pytest and tempdir
+{id: pytest-tempdir}
+
+![](examples/pytest/mycfg.py)
+![](examples/pytest/a.cfg)
+![](examples/pytest/test_mycfg.py)
+
+## PyTest compare short lists - output
+{id: pytest-compare-short-lists-output}
+
+![](examples/pytest/test_read_ini.py)
+
 
 
 

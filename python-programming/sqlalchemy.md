@@ -227,4 +227,57 @@ Insert a few data items. Write a few select statements.
 ![](examples/sqla/orm_logging.py)
 
 
+## Solution: Create table
+{id: solution-create-table}
+
+Create the followig schema
+
+![](examples/sqla/exercise2.py)
+
+## Exercise: Inspector
+{id: exercise-inspector}
+
+Use the inspector to list all the tables and all the columns in every table.
+![](examples/sqla/reflection.py)
+
+
+## SQLAlchemy CREATE and DROP
+{id: sqlalchemy-create-and-drop}
+
+* metadata.create_all(engine, checkfirst=True|False) emits CREATE statement for all tables.
+* table.create(engine, checkfirst=False|True) emits CREATE statement for a single table.
+* metadata.drop_all(engine, checkfirst=True|False) emits DROPT statement for all the tables.
+* table.drop(engine, checkfirst=False|True) emits DROPT statement for a single table.
+
+metada can create (or drop) the tables in the correct order to maintain the dependencies.
+
+## SQLAlchemy Notes
+{id: sqlalchemy-notes}
+
+* Multi-column primary key (composite primary key).
+* Composite foreign key.
+
+## SQLAlchemy Meta SQLite CREATE
+{id: sqlalchemy-meta-create}
+
+![](examples/sqla/sqlite_meta_create.py)
+![](examples/sqla/sqlite_meta_schema.py)
+
+## SQLAlchemy Meta Reflection
+{id: sqlalchemy-meta-reflect}
+
+![](examples/sqla/sqlite_meta_reflect.py)
+
+## SQLAlchemy Meta INSERT
+{id: sqlalchemy-meta-insert}
+
+![](examples/sqla/sqlite_meta_insert.py)
+
+
+## SQLAlchemy Meta SELECT
+{id: sqlalchemy-meta-select}
+
+![](examples/sqla/sqlite_meta_select.py)
+
+
 
