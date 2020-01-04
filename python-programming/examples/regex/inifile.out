@@ -1,0 +1,10 @@
+{
+    'alpha': {
+        'base': 'moon',
+        'ship': 'alpha 3'
+     },
+     'earth': {
+         'base': 'London',
+         'ship': 'x-wing'
+     }
+}

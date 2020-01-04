@@ -466,6 +466,7 @@ Tuple
 * A tuple is a fixed-length immutable list. It cannot change its size or content.
 * A tuple is denoted with parentheses: (1,2,3)
 
+![](examples/lists/tuple.py)
 
 List
 
