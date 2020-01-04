@@ -258,7 +258,15 @@ give an error message and stop execution.
 Allow the user to supply a flag called <command>--force</command> that will
 override the color-name-validity checking and will allow any color name.
 
+## Exercise: argparse positional and named
+{id: exercise-argparse-positional-and-named}
 
+Create a script that can accept any number of filenames, the named parameter `--machine` and the flag `--verbose`.
+Like this:
+
+```
+python ex.py file1 file2 file3 --machine MACHINE --verbose
+```
 
 
 
