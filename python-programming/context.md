@@ -112,8 +112,14 @@ of the `fh` object will be called when we leave the context of the `with` statem
 ![](examples/advanced/use_my_tempdir.py)
 ![](examples/advanced/use_my_tempdir.out)
 
+## Use my tempdir - return
+{id: use-my-tempdir-return}
+
 ![](examples/advanced/use_my_tempdir_return.py)
 ![](examples/advanced/use_my_tempdir_return.out)
+
+## Use my tempdir - exception
+{id: use-my-tempdir-exception}
 
 ![](examples/advanced/use_my_tempdir_exception.py)
 ![](examples/advanced/use_my_tempdir_exception.out)
