@@ -1,9 +1,11 @@
 import sys
 import memoize_attribute
 import memoize_nonlocal
+import decor_any
 
 #@memoize_attribute.memoize
 #@memoize_nonlocal.memoize
+#@decor_any.tron
 def fibonacci(n):
     if n == 1:
         return 1
