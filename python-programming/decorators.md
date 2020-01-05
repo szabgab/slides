@@ -1,6 +1,29 @@
 # Decorators
 {id: decorators}
 
+## Function assignment
+{id: function-assignment}
+
+{aside}
+Before we learn about decorators let's remember that we can assign function names
+to other names and then use the new name:
+{/aside}
+
+![](examples/decorators/function_assignment.py)
+![](examples/decorators/function_assignment.out)
+
+## Function inside other function
+{id: function-inside-other-function}
+
+{aside}
+Let's also remember that we can defind a function inside another function
+and then the internally defined function only exists in the scope of the function
+where it was defined in. Not outside.
+{/aside}
+
+![](examples/decorators/function_in_function.py)
+![](examples/decorators/function_in_function.out)
+
 ## Decorator
 {id: decorator}
 {i: @}
@@ -88,18 +111,18 @@ f = some_decorator(f)
 {id: decorate-function-with-any-signature}
 
 * How can we decorate a function that is flexible on the number of arguments?
-* Accept *args and **kwargs and pass them on.
+* Accept `*args` and `**kwargs` and pass them on.
 
 ![](examples/memoize/any_func.py)
 ![](examples/memoize/decor_any.py)
+![](examples/memoize/any_func.out)
 
 
 ## Exercise: Logger decorator
 {id: exercise-logger-decorator}
 
-* Create a decorator that can decorate arbitrary function logging the call and its parameters.
-* Once that's working add time measurement to each call to see how long each function took.
-
+* In the previous pages we created a decorator that can decorate arbitrary function logging the call and its parameters.
+* Add time measurement to each call to see how long each function took.
 
 
 ## Exercise: memoize decorator
@@ -111,15 +134,12 @@ Then write a unit test that checks it.
 You probably will need to create a subroutine to be memoized.
 
 
-
-
-* write tests for the fibonacci functions
-* implement the memoize decorator for a function with a single parameter
-* apply the decorator
-* test again
-* check the speed differences
+* Write tests for the fibonacci functions.
+* Implement the memoize decorator for a function with a single parameter.
+* Apply the decorator.
+* Run the tests again.
+* Check the speed differences.
 * or decorate with tron to see the calls...
-
 
 
 ## Solution: Logger decorator
@@ -137,6 +157,7 @@ You probably will need to create a subroutine to be memoized.
 {id: solution-memoize}
 ![](examples/memoize/fibonacci.py)
 ![](examples/memoize/memoize.py)
+![](examples/memoize/memoize_nonlocal.py)
 
 Before
 
@@ -161,7 +182,3 @@ real   0m0.034s
 user   0m0.019s
 sys    0m0.014s
 ```
-
-
-
-

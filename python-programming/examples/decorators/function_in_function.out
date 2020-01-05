@@ -1,0 +1,7 @@
+start f
+in g
+end f
+Traceback (most recent call last):
+  File "examples/decorators/function_in_function.py", line 9, in <module>
+    g()
+NameError: name 'g' is not defined

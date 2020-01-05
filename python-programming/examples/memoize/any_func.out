@@ -1,0 +1,8 @@
+Calling one(hello)
+one(hello)
+Calling one(param=world)
+one(world)
+Calling two(hi)
+two(hi, 42)
+Calling two(first=Foo, second=Bar)
+two(Foo, Bar)

@@ -1,7 +1,9 @@
 import sys
 import memoize
+import memoize_nonlocal
 
 #@memoize.memoize
+#@memoize_nonlocal.memoize
 def fibonacci(n):
     if n == 1:
         return 1
