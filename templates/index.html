@@ -33,4 +33,12 @@ Version: {{ book.version }}
 {% endif %}
 </div>
 
+<h2>Chapters</h2>
+<ul>
+{% for chapter in book.pages %}
+    <li><a href="{{ chapter.id }}{{ extension }}">{{ chapter.title }} ({{ chapter.pages|length }})</a></li>
+{% endfor %}
+</ul>
+
+
 {% include 'incl/footer.html' %}
