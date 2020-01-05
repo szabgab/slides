@@ -156,8 +156,8 @@ You probably will need to create a subroutine to be memoized.
 ## Solution memoize decorator
 {id: solution-memoize}
 ![](examples/memoize/fibonacci.py)
-![](examples/memoize/memoize.py)
 ![](examples/memoize/memoize_nonlocal.py)
+![](examples/memoize/memoize_attribute.py)
 
 Before
 

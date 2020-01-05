@@ -1,8 +1,8 @@
 import sys
-import memoize
+import memoize_attribute
 import memoize_nonlocal
 
-#@memoize.memoize
+#@memoize_attribute.memoize
 #@memoize_nonlocal.memoize
 def fibonacci(n):
     if n == 1:
