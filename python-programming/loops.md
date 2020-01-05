@@ -201,8 +201,6 @@ Level 5
 
 Implement the MasterMind game.
 
-
-
 The computer "thinks" a number with 4 different digits.
 You guess which digits. For every digit that matched both
 in value, and in location the computer gives you a *. For every
@@ -267,5 +265,11 @@ python count_unique.py abcdaaa
 ![](examples/strings/number_of_different_set.py)
 
 
+## MasterMind to debug
+{id: mastermind-to-debug}
+
+Debug the following version of the MasterMind game.
+
+![](examples/loops/MasterMind_to_debug.py)
 
 
