@@ -1,0 +1,8 @@
+start return
+In return context with /tmp/1578211921.12552210.9000097350821897
+['data.txt']
+end return
+Traceback (most recent call last):
+  File "use_my_tempdir_exception.py", line 9, in <module>
+    raise Exception('trouble')
+Exception: trouble

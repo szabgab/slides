@@ -46,9 +46,16 @@ $ python no_context_cd.py /opt/
 
 ## Return context manager
 {id: return-context-manager}
-![](examples/advanced/my_return_context.py)
-![](examples/advanced/my_return_context.out)
+![](examples/advanced/my_tempdir.py)
 
+![](examples/advanced/use_my_tempdir.py)
+![](examples/advanced/use_my_tempdir.out)
+
+![](examples/advanced/use_my_tempdir_return.py)
+![](examples/advanced/use_my_tempdir_return.out)
+
+![](examples/advanced/use_my_tempdir_exception.py)
+![](examples/advanced/use_my_tempdir_exception.out)
 
 ## cwd context manager
 {id: cwd-context-manager}
