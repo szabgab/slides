@@ -312,7 +312,11 @@ Whichever is appropriate in your situation.
 {i: else if}
 ![](examples/basics/elif.py)
 
+## Ternary operator
+{id: ternary-operator}
+{i: ?:}
 
+![](examples/basic/ternary.py)
 
 ## Case or Switch in Python
 {id: case-switch}
