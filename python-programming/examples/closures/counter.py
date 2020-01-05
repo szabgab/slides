@@ -10,4 +10,12 @@ counter = create_counter()
 
 print(counter())
 print(counter())
+print(counter())
+
+other = create_counter()
+print(counter())
+print(other())
+print(counter())
+print(other())
+
 print(count)
