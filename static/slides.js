@@ -7,7 +7,12 @@ function aKeyCheck(e) {
 var extension     = "";
 
 function KeyCheck(e) {
-    var KeyID = (window.event) ? event.keyCode : e.keyCode;
+    var ev = (window.event) ? event : e;
+    var KeyID = ev.keyCode;
+    if (ev.ctrlKey) {
+        return;
+    }
+    //console.log(ev.ctrlKey);
     //console.log(KeyID);
     switch(KeyID) {
         //case 16:
