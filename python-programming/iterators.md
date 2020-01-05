@@ -22,6 +22,7 @@
 {i: StopIteration }
 {i: next}
 {i: __iter__}
+{i: __next__}
 
 * __iter__
 * next in Python 2
@@ -40,70 +41,12 @@
 ![](examples/classes/unbound/fib.py)
 ![](examples/classes/unbound/fib.out)
 
-
-## Exercise: iterators
-{id: exercise-iterators-limit}
-
-
-Change the Iterator version of the Fibonacci series so optionally you will be able to provide
-a parameter called "limit" to the constructor. If the limit is provided, the iterator should stop
-when the value passes the limit.
-
-
-
-
-## Exercise: iterators (2)
-{id: exercise-iterators-only}
-
-
-Change the Iterator version of the Fibonacci series so it will NOT hold the previous values in memory.
-
-
-
-
-## Exercise: read char
-{id: exercise-iterators-read-char}
-
-
-Create an iterator that given a filename will return an object that on every iteration will
-return a single character. As an option let the user skip newlines, or maybe any pre-defined character.
-
-## Exercise: read section
-{id: exercise-read-section}
-
-* Create an iterator that given the name of a file like the following, will return once section at a time.
-* It will return a list one each iteration and each element of the list will be a line from the current section.
-* Other ideas what should be returned on each iteration?
-
-![](examples/iterators/sections/planets.txt)
-
-## Solution: iterators
-{id: solution-iterators-limit}
-![](examples/classes/limit/fibonacci.py)
-![](examples/classes/limit/fib.py)
-
-
-## Solution: iterators (2)
-{id: solution-iterators-only}
-![](examples/classes/only/fibonacci.py)
-![](examples/classes/only/fib.py)
-
-## Solution: read section
-{id: solution-read-section}
-
-![](examples/iterators/sections/read_section.py)
-
-
 ## itertools or yield
 {id: itertools}
 {i: itertools}
 {i: yield}
 
-
-<a href="http://docs.python.org/2/library/itertools.html">itertools</a>
-
-
-
+<a href="http://docs.python.org/3/library/itertools.html">itertools</a>
 
 ## itertools - count
 {id: itertools-count}
@@ -132,58 +75,59 @@ return a single character. As an option let the user skip newlines, or maybe any
 ![](examples/iterators/alter.py)
 
 
+## Exercise: iterators - limit Fibonacci
+{id: exercise-iterators-limit}
+
+Change the Iterator version of the Fibonacci series so optionally you will be able to provide
+a parameter called "limit" to the constructor. If the limit is provided, the iterator should stop
+when the value passes the limit.
+
+
+## Exercise: iterators - Fibonacci less memory
+{id: exercise-iterators-only}
+
+Change the Iterator version of the Fibonacci series so it will NOT hold the previous values in memory.
+
+
+## Exercise: read char
+{id: exercise-iterators-read-char}
+
+
+Create an iterator that given a filename will return an object that on every iteration will
+return a single character. As an option let the user skip newlines, or maybe any pre-defined character.
+
+## Exercise: read section
+{id: exercise-read-section}
+
+* Create an iterator that given the name of a file like the following, will return once section at a time.
+* It will return a list one each iteration and each element of the list will be a line from the current section.
+* Other ideas what should be returned on each iteration?
+
+![](examples/iterators/sections/planets.txt)
+
+## Solution: iterators - limit Fibonacci
+{id: solution-iterators-limit}
+
+![](examples/classes/limit/fibonacci.py)
+![](examples/classes/limit/fib.py)
+
+
+## Solution: iterators - Fibonacci less memory
+{id: solution-iterators-only}
+
+![](examples/classes/only/fibonacci.py)
+![](examples/classes/only/fib.py)
+
+## Solution: read section
+{id: solution-read-section}
+
+![](examples/iterators/sections/read_section.py)
+
+
+
 ## Exercise: compare files
 {id: exercise-compare-files}
 
 Compare two files line-by-line, and create a 3rd file listing the lines that are different.
-
-
-## itertools - izip
-{id: itertools-izip}
-{i: izip}
-
-Python 3 does not need this any more as the built-in zip is already an iterator.
-
-Combine two unbounded lists
-
-![](examples/iterators/izip.py)
-
-
-## mixing iterators
-{id: iterators-mixer}
-{i: izip}
-
-Combine three unbounded lists
-
-![](examples/iterators/mixer.py)
-
-
-## mixing iterators
-{id: iterators-mixer-iterators}
-![](examples/iterators/my_iterators.py)
-
-## itertools - pairwise
-{id: itertools-pairwise}
-{i: iter}
-{i: izip}
-![](examples/iterators/pairwise.py)
-
-
-Every 2 element from a list. We are using the exact same iterator object in both places of the izip() call,
-so very time izip() wants to return a tuple, it will fetch two elements from the same iterator.
-
-
-
-[Iterating over every two elements in a list](http://stackoverflow.com/questions/5389507/iterating-over-every-two-elements-in-a-list)
-
-
-
-## itertools - grouped
-{id: itertools-grouped}
-
-Every N element from a list
-
-![](examples/iterators/grouped.py)
-
 
 
