@@ -4,6 +4,7 @@ b:      3
 args:   (4, 5)
 kwargs: {'c': 6, 'd': 7}
 Finished f(5)
+Elapsed time: 1.3589859008789062e-05
 
 Calling f((2,), {'c': 5, 'd': 6})
 a:      2
@@ -11,6 +12,7 @@ b:      1
 args:   ()
 kwargs: {'c': 5, 'd': 6}
 Finished f(3)
+Elapsed time: 5.245208740234375e-06
 
 Calling f((10,), {})
 a:      10
@@ -18,3 +20,4 @@ b:      1
 args:   ()
 kwargs: {}
 Finished f(11)
+Elapsed time: 4.291534423828125e-06
