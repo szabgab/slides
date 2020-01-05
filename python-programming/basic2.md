@@ -316,7 +316,7 @@ Whichever is appropriate in your situation.
 {id: ternary-operator}
 {i: ?:}
 
-![](examples/basic/ternary.py)
+![](examples/basics/ternary.py)
 
 ## Case or Switch in Python
 {id: case-switch}
