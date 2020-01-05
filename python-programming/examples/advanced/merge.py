@@ -27,8 +27,8 @@ def myopen(outfile, *infiles):
             fh.close()
 
 
-with myopen(outfile, *infiles) as (out, input_fhs):
-    #print(out.__class__.__name__)
+with myopen(outfile, *infiles) as (out_fh, input_fhs):
+    #print(out_fh.__class__.__name__)
     #print(len(input_fhs))
     while True:
         row = ''
@@ -44,6 +44,6 @@ with myopen(outfile, *infiles) as (out, input_fhs):
             row += line.rstrip("\n")
         if done:
             break
-        out.write(row)
-        out.write("\n")
+        out_fh.write(row)
+        out_fh.write("\n")
 
