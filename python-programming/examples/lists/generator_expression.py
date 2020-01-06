@@ -8,11 +8,15 @@ for val in lst:
 for val in gen:
     pass
 
-print(sys.getsizeof(lst))  # 9024
-print(sys.getsizeof(gen))  # 120
+print(sys.getsizeof(lst))
+print(sys.getsizeof(gen))
+print('')
 
-print(type(lst))  # <type 'list'>
-print(type(gen))  # <type 'generator'>
+print(type(lst))
+print(type(gen))
+print('')
 
-print(lst[4])   # 8
-print(gen[4])   # TypeError: 'generator' object has no attribute '__getitem__'
+print(lst[4])
+print('')
+
+print(gen[4])
