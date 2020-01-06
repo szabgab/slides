@@ -1,19 +1,18 @@
-#!/usr/bin/env python
 import sys
 
-l = [n*2 for n in xrange(1000)] # List comprehension
-g = (n*2 for n in xrange(1000)) # Generator expression
+lst = [n*2 for n in range(1000)] # List comprehension
+gen = (n*2 for n in range(1000)) # Generator expression
 
-for v in l:
+for val in lst:
     pass
-for v in g:
+for val in gen:
     pass
 
-print(sys.getsizeof(l))  # 9032
-print(sys.getsizeof(g))  # 80
+print(sys.getsizeof(lst))  # 9024
+print(sys.getsizeof(gen))  # 120
 
-print(type(l))  # <type 'list'>
-print(type(g))  # <type 'generator'>
+print(type(lst))  # <type 'list'>
+print(type(gen))  # <type 'generator'>
 
-print(l[4])   # 8
-#print(g[4])   # TypeError: 'generator' object has no attribute '__getitem__'
+print(lst[4])   # 8
+print(gen[4])   # TypeError: 'generator' object has no attribute '__getitem__'

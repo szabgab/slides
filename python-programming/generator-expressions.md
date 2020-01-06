@@ -1,25 +1,13 @@
 # Generators and Generator Expressions
 {id: generator-experssions}
 
-## range vs xrange in Python
-{id: range-vs-xrange}
-{i: range}
-{i: xrange}
-![](examples/lists/xrange.py)
-
-In Python 2 `range` creates a list of values `range(from, to, step)` and `xrnage` creates and iterator.
-In Python 3 `range` creates the iterator and if really necesary then `list(range())` can create the list.
-
-[range vs. xrange in Python](http://code-maven.com/range-vs-xrange-in-python)
-
-
 ## List comprehension vs Generator Expression
 {id: list-comprehension-vs-generator-expression}
 {i: getsizeof}
 ![](examples/lists/generator_expression.py)
+![](examples/lists/generator_expression.out)
 
 [List Comprehension vs Generator Expressions](http://code-maven.com/list-comprehension-vs-generator-expression)
-
 
 
 ## List comprehension vs Generator Expression round 2
