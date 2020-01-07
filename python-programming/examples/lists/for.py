@@ -1,3 +1,3 @@
-words = ['abc', 'def', 'xyz', 42]
-for var in words:
+things = ['abc', 'def', 'xyz', 42]
+for var in things:
     print(var)

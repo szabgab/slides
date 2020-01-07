@@ -1,4 +1,6 @@
-queue = []
+from collections import deque
+
+queue = deque()
 
 while True:
     inp = input(":")
@@ -15,7 +17,7 @@ while True:
 
     if inp == 'n':
         if len(queue) > 0:
-            print("next is {}".format(queue.pop(0)))
+            print("next is {}".format(queue.popleft()))
         else:
             print("the queue is empty")
         continue

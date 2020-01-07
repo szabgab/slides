@@ -232,6 +232,7 @@ To remove an element by its index, use the slice syntax:
 ## List as a stack
 {id: list-as-a-stack}
 ![](examples/lists/stack.py)
+![](examples/lists/stack.out)
 
 
 ## stack with deque
@@ -291,9 +292,25 @@ Implement a Reverse Polish Calculator
 ```
 
 
-## Solution: Queue
+## Solution: Queue with list
 {id: solution-queue}
+
 ![](examples/lists/queue_people.py)
+
+## Solution: Queue with deque
+{id: solution-queue-deque}
+
+![](examples/lists/deque_people.py)
+
+## Solution: Reverse Polish calculator (stack) with lists
+{id: solution-stack}
+
+![](examples/lists/reverse_polish_calculator.py)
+
+## Solution: Reverse Polish calculator (stack) with lists
+{id: solution-stack-deque}
+
+![](examples/lists/reverse_polish_calculator_deque.py)
 
 
 ## Debugging Queue
