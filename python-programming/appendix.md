@@ -33,22 +33,19 @@ We will see how break and continue work, but first let's see a loop to find all 
 {i: os.unlink}
 
 
-<a href="https://docs.python.org/2/library/os.html#os.remove">os.remove</a> or
-<a href="https://docs.python.org/2/library/os.html#os.unlink">os.unlink</a>
-
-
-
+[os.remove](https://docs.python.org/2/library/os.html#os.remove) or
+[os.unlink](https://docs.python.org/2/library/os.html#os.unlink)
 
 
 ## Modules: more
 {id: modules-more}
+{i: sys.modules}
+{i: imp.reload}
+{i: reload}
 
 * sys.modules to list loaded modules
 * imp.reload to reload module (Just reload before 3.3)
 
-{i: sys.modules}
-{i: imp.reload}
-{i: reload}
 ![](examples/modules/mod.py)
 ![](examples/modules/a.py)
 
@@ -66,7 +63,6 @@ We will see how break and continue work, but first let's see a loop to find all 
 * [Learning Python the Hard way](http://learnpythonthehardway.org/)
 * [Python Weekly](http://pythonweekly.com/)
 * [PyCoder's Weekly](http://pycoders.com/)
-
 
 
 ## Progress bar

@@ -3,11 +3,12 @@
 
 ## Jython Installation
 {id: jython-installation}
+{i: java}
+{i: jython}
 
-* <a href="http://www.jython.org/"></a>
+* [Jython](http://www.jython.org/)
 * java -jar jython-installer-2.7.0.jar
 * ~/jython2.7.0/
-
 
 
 ## Jython Installation
@@ -40,6 +41,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 ## Jython load Java class in code
 {id: jython-load-java-class-in-code}
+
 ![](examples/jython/mymath/Calculator.java)
 ![](examples/jython/mymath/calc.py)
 
@@ -51,14 +53,10 @@ java -jar ~/jython2.7.0/jython.jar calc.py
 
 ## Jython test Java class
 {id: jython-test-java-class}
+
 ![](examples/jython/mymath/test_calc.py)
 
 ```
 java -jar ~/jython2.7.0/jython.jar calc.py
 java -jar ~/jython2.7.0/jython.jar -m unittest discover
 ```
-
-
-
-
-

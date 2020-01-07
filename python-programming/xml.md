@@ -4,17 +4,20 @@
 ## XML Data
 {id: xml-data}
 {i: xml}
+
 ![](examples/xml/data.xml)
 
 
 ## Expat - Callbacks
 {id: xml-expat-callbacks}
 {i: xml.parsers.expat}
+
 ![](examples/xml/callbacks.py)
 
 
 ## XML DOM - Document Object Model
 {id: xml-dom}
+
 ![](examples/xml/dom.py)
 
 ```
@@ -29,15 +32,13 @@ email home moo@zorghome.com
 email work moo@work.com
 ```
 
-
-<a href="http://docs.python.org/2/library/xml.dom.html">xml.dom</a>
-<a href="http://docs.python.org/2/library/xml.dom.minidom.html">xml.dom.minidom</a>
-
-
+* [xml.dom](http://docs.python.org/library/xml.dom.html)
+* [xml.dom.minidom](http://docs.python.org/library/xml.dom.minidom.html)
 
 
 ## XML SAX - Simple API for XML
 {id: xml-sax}
+
 ![](examples/xml/sax.py)
 
 ```
@@ -67,16 +68,14 @@ end person
 end main
 ```
 
-
-<a href="http://docs.python.org/2/library/xml.sax.html">xml.sax</a>
-<a href="http://docs.python.org/2/library/xml.sax.handler.html">xml.sax.hanldler</a>
-<a href="http://docs.python.org/2/library/xml.sax.reader.html">xml.sax.reader</a>
-
-
+* [xml.sax](http://docs.python.org/library/xml.sax.html)
+* [xml.sax.hanldler](http://docs.python.org/library/xml.sax.handler.html)
+* [xml.sax.reader](http://docs.python.org/library/xml.sax.reader.html)
 
 
 ## SAX collect
 {id: xml-sax-collect}
+
 ![](examples/xml/sax_collect.py)
 
 ```
@@ -96,6 +95,7 @@ End name:  main
 
 ## XML elementtree
 {id: xml-elemttree}
+
 ![](examples/xml/tree.py)
 
 ```
@@ -109,10 +109,5 @@ main
 email {'id': 'home'}
 ```
 
-
-<a href="http://docs.python.org/2/library/xml.etree.elementtree.html">xml.etree.elementtree</a>
-
-
-
-
+* [xml.etree.elementtree](http://docs.python.org/library/xml.etree.elementtree.html)
 

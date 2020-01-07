@@ -695,28 +695,33 @@ If you print it, it should look like this (except of the nice formatting).
 
 ## Exercise: Replace Python
 {id: exercise-replace-python}
+
 ![](examples/regex/text_with_python.txt)
 
 
 ## Exercise: Extract phone numbers
 {id: exercise-phone-number}
+
 ![](examples/regex/phone.txt)
 
 
 
 ## Solution: Sort SNMP numbers
 {id: solution-sort-snmp-numbers}
+
 ![](examples/regex/sort_snmp.py)
 
 
 ## Solution: parse hours log file and give report
 {id: solution-parse-log-file}
+
 ![](examples/regex/timelog.py)
 
 
 
 ## Solution: Processing INI file manually
 {id: solution-processing-ini-file-manually}
+
 ![](examples/other/data.ini)
 ![](examples/other/ini_parser.py)
 
@@ -724,18 +729,21 @@ If you print it, it should look like this (except of the nice formatting).
 ## Solution: Processing config file
 {id: solution-config-parsing}
 {i: ConfigParser}
+
 ![](examples/other/data_clean.ini)
 ![](examples/other/config_parsing.py)
 
 
 ## Solution: Extract phone numbers
 {id: solution-phone-number}
+
 ![](examples/regex/phone.py)
 
 
 
 ## Regular Expressions Cheat sheet
 {id: regular-expressions-cheat-sheet}
+
 |  Expression  |  Meaning  |
 |    a         |  Just an 'a' character  |
 |    .         |  any character except new-line  |
@@ -760,7 +768,7 @@ If you print it, it should look like this (except of the nice formatting).
 |    ^ $       |  Beginning and end of string anchors  |
 
 
-<a href="http://docs.python.org/library/re.html">re</a>
+[re](http://docs.python.org/library/re.html)
 
 
 

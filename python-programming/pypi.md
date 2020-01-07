@@ -4,19 +4,13 @@
 ## What is PyPi?
 {id: pypi}
 
-
-<a href="http://pypi.python.org/">pypi</a>
-
-
+* [pypi](http://pypi.python.org/)
 
 
 ## Easy Install
 {id: easy-install}
 
-
-<a href="http://pypi.python.org/pypi/setuptools">setuptools</a>
-
-
+* [setuptools](http://pypi.python.org/pypi/setuptools)
 
 ```
 $ easy_install module_name
@@ -37,7 +31,6 @@ $ pip install package_name
 
 * **pip install --upgrade pip** Will probably not work on Windows because file is in use...
 * **easy_install pip** Will work on Windows as well.
-
 
 
 ## PYTHONPATH

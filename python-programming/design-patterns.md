@@ -47,10 +47,9 @@ os.path.join(names) = os.sep.join(names)
 os.path.isdir(path) = stat.S_ISDIR(os.stat(path))
 ```
 
-* <a href="http://docs.python.org/2/library/os.path.html"></a>
-* <a href="http://docs.python.org/2/library/os.html"></a>
-* <a href="http://docs.python.org/2/library/stat.html"></a>
-
+* [](http://docs.python.org/2/library/os.path.html)
+* [](http://docs.python.org/2/library/os.html)
+* [](http://docs.python.org/2/library/stat.html)
 
 
 ## Monkey Patching
@@ -112,7 +111,7 @@ the problem
 ## Monostate (Borg)
 {id: monostate-design-pattern}
 
-<a href="http://c2.com/cgi/wiki?MonostatePattern"></a>
+* [Monostate Pattern](http://c2.com/cgi/wiki?MonostatePattern)
 
 
 ```

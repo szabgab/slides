@@ -348,10 +348,7 @@ In this case the change in the behavior of division is only visible in the divis
 {'name': 'Foo Bar', 'grades': {'math': 90, 'art': 100}, 'friends': ['Mary', 'John', 'Jane', 'George'], 'email': 'foo@bar.com'}
 ```
 
-
-
-<a href="https://docs.python.org/2/library/copy.html#copy.deepcopy">deepcopy</a>
-
+* [deepcopy](https://docs.python.org/library/copy.html#copy.deepcopy)
 
 
 ![](examples/modules/deep_copy_dictionary.py)
@@ -365,6 +362,7 @@ In this case the change in the behavior of division is only visible in the divis
 
 ## Execute at import time
 {id: execute-at-import-time}
+
 ![](examples/modules/execute_import_time/code.py)
 ![](examples/modules/execute_import_time/lib.py)
 ![](examples/modules/execute_import_time/code.out)

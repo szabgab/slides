@@ -5,24 +5,20 @@
 {id: json}
 {i: json}
 
-<a href="http://www.json.org/">JSON</a> is basically the data format used by JavaScript. Because its universal availability it became the de-facto standard for data
+[JSON](http://www.json.org/) is basically the data format used by JavaScript. Because its universal availability it became the de-facto standard for data
 communication between many different languages. Most dynamic languages have an fairly good mapping between JSON and their own data structures.
 Lists and dictionaries in the case of Python.
 
-
-
-
 Documentation of the
-<a href="http://docs.python.org/library/json.html">Python json library</a>.
-
+[Python json library](http://docs.python.org/library/json.html).
 
 ![](examples/json/data.json)
-
 
 
 ## dumps
 {id: json-dumps}
 {i: dumps}
+
 ![](examples/json/dumps.py)
 
 ```

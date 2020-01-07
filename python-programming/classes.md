@@ -185,9 +185,7 @@ Let the child implement the functionality.
 
 When an object holds references to one or more other objects.
 
-
-
-<a href="https://en.wikipedia.org/wiki/Pythagorean_theorem">Pythagorean theorem</a>
+* [Pythagorean theorem](https://en.wikipedia.org/wiki/Pythagorean_theorem)
 
 
 ![](examples/classes/composition/line.py)
@@ -203,6 +201,7 @@ When an object holds references to one or more other objects.
 
 ## Class in function
 {id: class-in-function}
+
 ![](examples/classes/class_in_function.py)
 
 
@@ -210,13 +209,14 @@ When an object holds references to one or more other objects.
 ## Serialization of instances with pickle
 {id: selialization-with-pickle}
 {i: pickle}
+
 ![](examples/classes/serialization_with_pickle.py)
 
 
 ## Quick Class definition and usage
 {id: quick-class-definition}
-![](examples/classes/quick.py)
 
+![](examples/classes/quick.py)
 
 
 ## Exercise: Add move_rad to based on radians

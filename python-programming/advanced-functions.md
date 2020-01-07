@@ -166,7 +166,7 @@ There are no function-level static variables in Python, but you can fake it quit
 {id: inspect}
 
 
-The inspect module <a href="http://docs.python.org/2/library/inspect.html">inspect</a> provides introspection to Python runtime.
+The [inspect](http://docs.python.org/library/inspect.html) module provides introspection to Python runtime.
 <emp>inspect.stack</emp> returns the stack-trace. Element 0 is the deepes (where we called inspect stack).
 Each level has several values. A represantation of the frame, filename, linenumber, subroutine-name.
 
