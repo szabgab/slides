@@ -160,7 +160,7 @@ The returned results can be any Python datastructure. A dictionary is usually a 
 {i: multiprocess}
 {i: Pool}
 
-<b>Pool(3)</b> creates 3 child-processes and let's them compute the values. <b>map</b>
+`Pool(3)` creates 3 child-processes and let's them compute the values. `map`
 returns the results in the same order as the input came in.
 
 ![](examples/advanced/multiprocess_pool.py)

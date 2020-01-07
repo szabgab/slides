@@ -169,7 +169,7 @@ Lambda creates simple anonymous function. It is simple because it can only have 
 
 
 {aside}
-The usual use is as we saw earlier when we passed it as a parameter to the <b>map</b> function. However, in the next example however we show that you can assign the
+The usual use is as we saw earlier when we passed it as a parameter to the `map` function. However, in the next example however we show that you can assign the
 lambda-function to a name and then you could used that name just as any other function you would define using **def**.
 {/aside}
 ![](examples/advanced/lambda.py)
@@ -444,7 +444,7 @@ checks. See the sekeleton:
 {id: exercise-calculator-using-lookup-table}
 
 
-Write a script that will accept a math expression such as <b>python calc.py 2 + 3</b> and will print the result.
+Write a script that will accept a math expression such as `python calc.py 2 + 3` and will print the result.
 Use lookup tables select the implementation of the actual computation. (supporting +, - , *, /) is enought
 
 

@@ -460,20 +460,17 @@ Operator (+-*/): +
 
 ## Solution: Calculator (argv)
 {id: solution-calculator-argv}
+
 ![](examples/basics/calculator_argv.py)
 
-
-The multiplication probably won't work because the Unix/Linux shell replaces the * by the list of files in your current directory and thus the python script will see a list of files instead of the *.
-This is not your fault as a programmer. It is a user error. The correct way to run the script is <b>python calc.py 2 '*' 3</b>.
-
-
+The multiplication probably won't work because the Unix/Linux shell replaces the * by the list of files in your current directory and thus the python script will see a list of files instead of the `*`.
+This is not your fault as a programmer. It is a user error. The correct way to run the script is `python calc.py 2 '*' 3`.
 
 
 ## Compilation vs. Interpretation
 {id: compilation-vs-interpretation}
 
-Compiled
-
+**Compiled**
 
 * Languages: C, C++
 * Development cylce: Edit, Compile (link), Run.
@@ -481,8 +478,7 @@ Compiled
 * Result: Stand-alone executable code.
 * Need to compile to each platform separately. (Windows, Linux, Mac, 32bit vs 64bit).
 
-
-Interpreted
+**Interpreted**
 
 
 * Shell, BASIC

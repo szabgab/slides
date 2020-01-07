@@ -121,7 +121,7 @@ but actually we can access it from the outside even without the class method, ju
 ![](examples/classes/with_abc.py)
 
 * [Abstract Base Classes in Python](https://dbader.org/blog/abstract-base-classes-in-python)
-* [abc](https://docs.python.org/2/library/abc.html)
+* [abc](https://docs.python.org/library/abc.html)
 
 
 
@@ -166,7 +166,7 @@ property(fget=None, fset=None, fdel=None, doc=None)
 ![](examples/classes/person/person4.py)
 
 * [property article](http://www.programiz.com/python-programming/property)
-* [property docs](https://docs.python.org/2/library/functions.html#property)
+* [property docs](https://docs.python.org/library/functions.html#property)
 
 
 
@@ -191,7 +191,7 @@ Use cases:
 
 
 * [Descriptors](http://intermediatepythonista.com/classes-and-objects-ii-descriptors)
-* [Descriptor HowTo Guide](https://docs.python.org/2/howto/descriptor.html)
+* [Descriptor HowTo Guide](https://docs.python.org/howto/descriptor.html)
 
 
 

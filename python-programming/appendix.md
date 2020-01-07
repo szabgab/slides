@@ -33,8 +33,8 @@ We will see how break and continue work, but first let's see a loop to find all 
 {i: os.unlink}
 
 
-[os.remove](https://docs.python.org/2/library/os.html#os.remove) or
-[os.unlink](https://docs.python.org/2/library/os.html#os.unlink)
+[os.remove](https://docs.python.org/library/os.html#os.remove) or
+[os.unlink](https://docs.python.org/library/os.html#os.unlink)
 
 
 ## Modules: more

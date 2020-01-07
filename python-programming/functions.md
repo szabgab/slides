@@ -86,11 +86,11 @@ They are all optional and can be given in any order after the positional argumen
 
 ## Arbitrary number of arguments
 {id: arbitrary-number-of-arguments}
-{i: *args}
+{i: `*args`}
 {i: tuple}
 
 {aside}
-The values arrive as <b>tuple</b>.
+The values arrive as `tuple`.
 {/aside}
 
 ![](examples/functions/sum.py)

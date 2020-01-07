@@ -56,7 +56,7 @@ yum install python3-pytest
 {id: pytested-module}
 
 
-A module called <b>mymath</b> with two functions: <b>add</b> and <b>div</b>.
+A module called `mymath` with two functions: `add` and `div`.
 
 
 ![](examples/pytest/mymath.py)
@@ -180,7 +180,7 @@ test_mymod_2.py:10: AssertionError
 {id: pytest-exercise-app}
 
 
-Write tests for the <b>swap</b> and <b>average</b> functions of the <b>app</b> module. Can you find a bug?
+Write tests for the `swap` and `average` functions of the `app` module. Can you find a bug?
 
 
 ![](examples/pytest/app.py)
@@ -399,7 +399,7 @@ pytest test_mymod_2.py::test_multiword_anagram
 {i: xfail}
 
 
- Use the @pytest.mark.xfail <b>decorator</b> to mark the test.
+Use the `@pytest.mark.xfail` decorator to mark the test.
 
 
 ![](examples/pytest/test_mymod_3.py)

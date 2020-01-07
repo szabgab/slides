@@ -120,18 +120,14 @@ We can use a directory structure that is more complex than the flat structure we
 ![](examples/os/traverse_tree.py)
 
 
-
 ## Python modules are compiled
 {id: compile-python-modules}
 {i: pyc}
 {i: __pycache__}
 
-
-When libraries are loaded they are automatically compiled to <b>.pyc</b> files.
+When libraries are loaded they are automatically compiled to `.pyc` files.
 This provides moderate code-hiding and load-time speed-up. Not run-time speed-up.
-Starting from Python 3.2 the pyc files are saved in the <b>__pycache__</b> directory.
-
-
+Starting from Python 3.2 the pyc files are saved in the `__pycache__` directory.
 
 
 ## How "import" and "from" work?
@@ -144,9 +140,9 @@ Starting from Python 3.2 the pyc files are saved in the <b>__pycache__</b> direc
 1. Copy names from the imported module to the importing namespace.
 
 
-
 ## Runtime loading of modules
 {id: runtime-loading-of-modules}
+
 ![](examples/functions/mygreet.py)
 ![](examples/functions/runtime_loading.py)
 

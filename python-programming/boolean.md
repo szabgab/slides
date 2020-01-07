@@ -37,7 +37,7 @@ Everything else is true.
 
 ![](examples/boolean/boolean_values.py)
 
-<b>None</b> is like undef or Null or Nill in other languages.
+`None` is like undef or Null or Nill in other languages.
 
 
 ## Comparision operators
@@ -66,7 +66,7 @@ Everything else is true.
 ![](examples/other/compare.py)
 
 
-In <b>Python 2</b> please be careful and only compare the same types.
+In `Python 2` please be careful and only compare the same types.
 Otherwise the result will look strange.
 
 
@@ -80,7 +80,7 @@ False
 
 
 
-In <b>Python 3</b>, comparing different types raises exception:
+In `Python 3`, comparing different types raises exception:
 
 
 ![](examples/other/compare.out)

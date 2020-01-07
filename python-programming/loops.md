@@ -107,7 +107,7 @@
 {i: do while}
 
 
-There is no <b>do ... while</b> in Python but we can write code like this to have similar effect.
+There is no `do ... while` in Python but we can write code like this to have similar effect.
 
 
 ![](examples/strings/do_while.py)

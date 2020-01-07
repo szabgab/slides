@@ -117,8 +117,8 @@ Average:  3.5
 {i: os.path.exists}
 {i: os.path.isfile}
 
-* [os.path.exists](https://docs.python.org/2/library/os.path.html#os.path.exists)
-* [os.path.isfile](https://docs.python.org/2/library/os.path.html#os.path.isfile)
+* [os.path.exists](https://docs.python.org/library/os.path.html#os.path.exists)
+* [os.path.isfile](https://docs.python.org/library/os.path.html#os.path.isfile)
 
 
 

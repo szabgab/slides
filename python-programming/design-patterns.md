@@ -47,9 +47,9 @@ os.path.join(names) = os.sep.join(names)
 os.path.isdir(path) = stat.S_ISDIR(os.stat(path))
 ```
 
-* [](http://docs.python.org/2/library/os.path.html)
-* [](http://docs.python.org/2/library/os.html)
-* [](http://docs.python.org/2/library/stat.html)
+* [](http://docs.python.org/library/os.path.html)
+* [](http://docs.python.org/library/os.html)
+* [](http://docs.python.org/library/stat.html)
 
 
 ## Monkey Patching

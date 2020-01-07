@@ -9,6 +9,7 @@
 {i: {}}
 {i: format}
 {i: sprintf}
+
 ![](examples/strings/format.py)
 ![](examples/strings/format.out)
 
@@ -21,11 +22,12 @@
 ## Examples using format - indexing
 {id: format-indexing}
 {i: format}
+
 ![](examples/strings/formatted_indexing.py)
 ![](examples/strings/formatted_indexing.out)
 
 
-## Examples using format with names 
+## Examples using format with names
 {id: format-names}
 ![](examples/strings/format_with_names.py)
 ![](examples/strings/format_with_names.out)
@@ -112,8 +114,8 @@ These are just some extreme special cases. Most people won't need to know about 
 
 
 
-To print <b>{</b> include <b>{{</b>.
-To print <b>}</b> include <b>}}</b>.
+To print `{` include `{{`.
+To print `}` include `}}`.
 
 
 ![](examples/strings/format_braces.py)
