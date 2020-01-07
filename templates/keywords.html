@@ -7,10 +7,10 @@
 </div>
 
 <ul>
-{% for kw in keywords.keys() %}
+{% for kw in keywords.keys()|sort %}
    <li>{{ kw }}
        <ul>
-          {% for second in keywords[kw].keys() %}
+          {% for second in keywords[kw].keys() | sort %}
              <li>{{ second }}
                  <ul>
                     {% for entry in keywords[kw][second] %}
