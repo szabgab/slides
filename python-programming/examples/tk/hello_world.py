@@ -1,5 +1,3 @@
-#!/usr/bin/env python
-
 import tkinter as tk
 
 class Example(tk.Frame):
@@ -19,5 +17,3 @@ def main():
     app.mainloop()
 
 main()
-
-

@@ -1,6 +1,3 @@
-#!/usr/bin/env  python
-from __future__ import print_function
-
 a = 23
 
 def main():
@@ -10,7 +7,7 @@ def main():
     print('a:', a)    # a: 23
     print('b:', b)    # b: 17
     print('c:', c)    # c: 42
-    
+
     if True:
         print('a:', a)    # a: 23
         print('b:', b)    # b: 17

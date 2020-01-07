@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 import threading, Queue
 
 class AsyncCount(threading.Thread):

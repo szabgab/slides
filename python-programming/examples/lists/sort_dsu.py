@@ -1,17 +1,13 @@
-#!/usr/bin/env python
+animals = ['chicken', 'cow', 'snail', 'elephant']
+print(sorted(animals))
+print(sorted(animals, key=len))
 
-words = ['derf', 'xy', 'abcd', 'dec', 'ab']
-print(sorted(words))
-     # ['ab', 'abcd', 'dec', 'derf', 'xy']
+decorated = [(len(w), w) for w in animals]
+print(decorated)
 
-print(sorted(words, key=len))
-     # ['xy', 'ab', 'dec', 'derf', 'abcd']
-
-decorated = [(len(w), w) for w in words]
 decorated.sort()
 result = [ d[1] for d in decorated]
 print(result)
-     # ['ab', 'xy', 'dec', 'abcd', 'derf']
 
-print( [ d[1] for d in sorted( [(len(w), w) for w in words] ) ] )
-     # ['ab', 'xy', 'dec', 'abcd', 'derf']
+# at once
+print( [ d[1] for d in sorted( [(len(w), w) for w in animals] ) ] )

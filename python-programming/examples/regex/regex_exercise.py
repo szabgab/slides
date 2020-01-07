@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 import sys
 import re
 
@@ -7,15 +6,14 @@ if len(sys.argv) != 2:
     exit()
 
 filename = sys.argv[1]
-f = open(filename, 'r')
+with open(filename, 'r') as fh:
+    for line in fh:
+        print(line, end=" ")
 
-for line in f:
-    print(line, end=" ")
+        match = re.search(r'REGEX1', line)
+        if match:
+            print("   Matching 1", match.group(0))
 
-    match = re.search(r'REGEX1', line)
-    if match:
-       print("   Matching 1", match.group(0))
-
-    match = re.search(r'REGEX2', line)
-    if match:
-       print("   Matching 2", match.group(0))
+        match = re.search(r'REGEX2', line)
+        if match:
+            print("   Matching 2", match.group(0))

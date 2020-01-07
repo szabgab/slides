@@ -1,6 +1,4 @@
-#!/usr/bin/env python
-
-from Queue import Queue 
+from Queue import Queue
 from threading import Thread
 
 def source():

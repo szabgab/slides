@@ -348,15 +348,16 @@ your name: s
 {i: sort}
 {i: key}
 {i: abs}
+
 ![](examples/lists/sort_numbers.py)
 
 
 ## sort mixed
 {id: sort-mixed}
+
 ![](examples/lists/sort_mixed.py)
 
 In Python 2 puts the numbers first in numerical order and then the strings in ASCII order.
-
 
 ```
 [100, 'foo', 42, 'bar']
@@ -395,6 +396,7 @@ Sorting tuples or list, or other complex structures
 
 ## Sort dictionary by value
 {id: sort-dictionary-by-value}
+
 ![](examples/lists/sort_dictionary.py)
 
 
@@ -404,10 +406,12 @@ Sorting tuples or list, or other complex structures
 In Perl it is called Schwartzian transform
 
 ![](examples/lists/sort_dsu.py)
+![](examples/lists/sort_dsu.out)
 
 ## sort with sorted
 {id: sorted}
 {i: sorted}
+
 ![](examples/lists/sorted.py)
 
 
@@ -570,21 +574,18 @@ Given a list of strings with words separated by spaces,
 create a single list of all the words.
 
 input = [
-  'ab cde',
-  'x yz qwerty',
-  'abc x cde abc d er'
+  'grape banana mango',
+  'nut orange peach',
+  'apple nut banana apple mango'
 ]
 
-output = ['ab', 'cde','x', 'yz', 'qwerty', 'abc', 'x', 'cde', 'abc', 'd', 'er']
+output = ['grape', 'banana', 'mango', 'nut', 'orange', 'peach', 'apple', 'nut', 'banana', 'apple', 'mango']
 ```
-
 
 Then create a list of unique values:
 
-
-
 ```
-output = ['ab', 'cde','x', 'yz', 'qwerty', 'x', 'd', 'er']
+output = ['apple', 'grape', 'banana','nut', 'orange', 'peach', 'nut', 'mango']
 ```
 
 
@@ -609,8 +610,6 @@ Dwarf       1
 Write a program that gets a number on the commnad line a prints "True" if the number is a prime
 number or "False" if it isn't.
 
-
-
 ```
 python is_prime.py 42
 False
@@ -624,12 +623,13 @@ True
 
 * A, C, T, G are called bases or nucleotides
 * Given a sequence like **'ACCGXXCXXGTTACTGGGCXTTGT'** (nucleoids mixed up with other elements) return the sequences containing only ACTG orderd by length.
+* The above string can be split up to **['ACCG', 'C', 'GTTACTGGGC', 'TTGT']** and then it can be sorted to get the following:
 * Expected result: **['GTTACTGGGC', 'ACCG', 'TTGT', 'C']**
-
 
 
 ## Solution: menu
 {id: solution-menu}
+
 ![](examples/lists/colors.py)
 
 
@@ -643,32 +643,38 @@ TypeError: 'int' object is not iterable
 
 ## Solution: Count words
 {id: solution-count-words-in-list}
+
 ![](examples/lists/count_words_two_lists.py)
 
 
 ## Solution: Check if number is prime
 {id: solution-is-prime}
+
 ![](examples/lists/is_prime.py)
 
 
 ## Solution: DNA sequencing
 {id: solution-dna-sequencing}
+
 ![](examples/lists/dna_sequencing.py)
 
 
 ## Solution: DNA sequencing with filter
 {id: solution-dna-sequencing-filter}
+
 ![](examples/lists/dna_sequencing_filter.py)
 
 
 ## Solution: DNA sequencing with filter and lambda
 {id: solution-dna-sequencing-filter-lambda}
+
 ![](examples/lists/dna_sequencing_filter_lambda.py)
 
 
 ## [].extend
 {id: list-extend}
 {i: extend}
+
 ![](examples/lists/extend.py)
 
 
@@ -680,6 +686,7 @@ TypeError: 'int' object is not iterable
 What is the difference between [].append and [].extend ?
 The method **append** adds its parameter as a single element to the list, while **extend** gets a list and adds its content.
 {/aside}
+
 ![](examples/lists/append_extend.py)
 
 
@@ -690,6 +697,7 @@ The method **append** adds its parameter as a single element to the list, while 
 When collecting data which is received from a string via splitting,
 we would like to add the new elements to the existing list:
 {/aside}
+
 ![](examples/lists/split_extend.py)
 
 
