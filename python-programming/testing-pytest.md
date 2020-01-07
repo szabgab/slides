@@ -1028,25 +1028,17 @@ test_order.py::test_three PASSED
 ## PyTest: Randomize Order of tests
 {id: pytest-randomize-order-of-test}
 
-
-Install <a href="https://pypi.python.org/pypi/pytest-random-order">pytest-random-order</a>
-
-
+Install [pytest-random-order](https://pypi.python.org/pypi/pytest-random-order)
 
 ```
 pip install pytest-random-order
 ```
 
-
 And from now on all the test will run in a random order.
-
-
-
 
 
 ## PyTest: Force default order
 {id: pytest-force-default-order}
-
 
 If for some reason we would like to make sure the order remains the same,
 we can add the following two lines of code.

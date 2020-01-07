@@ -239,15 +239,12 @@ except (IOError, ZeroDivisionError):
 {id: exceptions}
 
 {aside}
-
-    There are many kinds of exceptions in Python and each module can define its own exception types as well.
-    On this page you'll find the list and hierarchy of exceptions in Python.
+There are many kinds of exceptions in Python and each module can define its own exception types as well.
+On this page you'll find the list and hierarchy of exceptions in Python.
 {/aside}
 
 
-<a href="http://docs.python.org/library/exceptions.html">exceptions</a>
-
-
+* [exceptions](http://docs.python.org/library/exceptions.html)
 
 
 ## How to raise an exception
@@ -257,10 +254,10 @@ except (IOError, ZeroDivisionError):
 {i: Exception}
 
 {aside}
-
-    As you create more and more complex applications you'll reach a point where you write a function, probably in a module that needs to report some error condition.
-    You can raise an exception in a simple way.
+As you create more and more complex applications you'll reach a point where you write a function, probably in a module that needs to report some error condition.
+You can raise an exception in a simple way.
 {/aside}
+
 ![](examples/exceptions/raise.py)
 
 

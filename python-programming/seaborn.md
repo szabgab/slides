@@ -4,21 +4,12 @@
 ## Searborn use examples
 {id: searborn-use-examples}
 
-
-<a href="https://seaborn.pydata.org/">seaborn</a>
-
-
-
+[seaborn](https://seaborn.pydata.org/)
 
 In Jupyter notebook type <b>%matplotlib</b> before writing the seaborn code.
 
-
-
-
 In plain Python <b>import matplotlib</b>, then assign the result of the ploting function
 to a variable, and call <b>matplotlib.pyplot.show(r)</b>
-
-
 
 
 ## Seaborn tip

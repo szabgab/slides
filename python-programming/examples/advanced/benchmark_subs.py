@@ -3,14 +3,14 @@ import timeit
 def one_by_one():
     import random
     str = ""
-    for i in xrange(200):
+    for i in range(200):
         str += chr(65 + random.randrange(0, 26))
     return str
 
 def at_once():
     import random
     chars = []
-    for i in xrange(200):
+    for i in range(200):
         chars.append(chr(65 + random.randrange(0, 26)))
     str = ''.join(chars)
     return str

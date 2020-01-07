@@ -273,9 +273,8 @@ method of the object, respectively.
 ![](examples/xml/sax_coroutine.py)
 
 
-copied from <a href="http://stackoverflow.com/questions/8873643/how-to-return-data-from-a-python-sax-parser">Stack Overflow</a>
-based on <a href="http://www.dabeaz.com/coroutines/">coroutines</a>
-
+copied from [Stack Overflow](http://stackoverflow.com/questions/8873643/how-to-return-data-from-a-python-sax-parser)
+based on [coroutines](http://www.dabeaz.com/coroutines/)
 
 ![](examples/xml/cosax.py)
 
@@ -314,11 +313,13 @@ We cannot pass any class name to super()
 
 ## iterator - pairwise
 {id: iterator-pairwise}
+
 ![](examples/iterators/pairwise_manual.py)
 
 
 ## iterator - grouped
 {id: iterator-grouped}
+
 ![](examples/iterators/grouped_manual.py)
 
 
@@ -377,23 +378,21 @@ Combine three unbounded lists
 
 ## mixing iterators
 {id: iterators-mixer-iterators}
+
 ![](examples/iterators/my_iterators.py)
 
 ## itertools - pairwise
 {id: itertools-pairwise}
 {i: iter}
 {i: izip}
+
 ![](examples/iterators/pairwise.py)
 
 
 Every 2 element from a list. We are using the exact same iterator object in both places of the izip() call,
 so very time izip() wants to return a tuple, it will fetch two elements from the same iterator.
 
-
-
 [Iterating over every two elements in a list](http://stackoverflow.com/questions/5389507/iterating-over-every-two-elements-in-a-list)
-
-
 
 ## itertools - grouped
 {id: itertools-grouped}
@@ -407,6 +406,7 @@ Every N element from a list
 {id: range-vs-xrange}
 {i: range}
 {i: xrange}
+
 ![](examples/lists/xrange.py)
 
 In Python 2 `range` creates a list of values `range(from, to, step)` and `xrnage` creates and iterator.
@@ -414,5 +414,14 @@ In Python 3 `range` creates the iterator and if really necesary then `list(range
 
 [range vs. xrange in Python](http://code-maven.com/range-vs-xrange-in-python)
 
+
+## profile (with hotshot) slow code
+{id: hotshot-slow-code}
+
+It was experimental and dropped from Python 3
+* [](https://docs.python.org/2/library/hotshot.html)
+
+![](examples/advanced/slow_hotshot.py)
+![](examples/advanced/slow_hotshot.out)
 
 

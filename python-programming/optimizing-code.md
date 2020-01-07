@@ -9,20 +9,16 @@
 * I/O (disk, network, database)
 
 
-
 ## Optimization strategy
 {id: opimization-strategy}
 
 The 3 rules of optimization
 
-
 * Don't do it!
 * Don't do it!
 * Don't do it yet!
 
-
 Premature optimization is the root of all evil ~  Donald Knuth
-
 
 
 ## Locate the source of the problem
@@ -32,20 +28,17 @@ Premature optimization is the root of all evil ~  Donald Knuth
 * If memory is full swapping starts - speed decreases
 
 
-
 ## Optimizing tactics
 {id: optimizing-tactics}
 
 * Choose the Right Data Structure (Dictionary?, Set?, List?)
-* Sorting: Decorate Sort Undecorate (DSU) aka. Schwartzian Transform
-* String Concatenation: avoid extensive concatenation
-* Loops: for, list comprehension: use generators and iterators
-* xrange instead of range
-* Caching result, memoizing
+* Sorting: Decorate Sort Undecorate (DSU) aka. [Schwartzian Transform](https://en.wikipedia.org/wiki/Schwartzian_transform).
+* String Concatenation: avoid extensive concatenation.
+* Loops: for, list comprehension: use generators and iterators.
+* Delay expanding range, map, filter, etc. iterables.
+* Caching results, memoizing.
 
-
-Read more: <a href="https://wiki.python.org/moin/PythonSpeed/PerformanceTips"></a>
-
+Read more [performance tips](https://wiki.python.org/moin/PythonSpeed/PerformanceTips)
 
 
 ## Profile code
@@ -53,40 +46,40 @@ Read more: <a href="https://wiki.python.org/moin/PythonSpeed/PerformanceTips"></
 
 Always profile before starting to optimize!
 
-
-<a href="http://docs.python.org/2/library/profile.html"></a>
-
+* ![profile](http://docs.python.org/3/library/profile.html)
 
 
 ## Slow example
 {id: slow-example}
+
+{aside}
+This code does some stuff which was deemed to be "too slow" by some client.
+The actual content is not that interesting.
+{/aside}
+
 ![](examples/advanced/slow.py)
 
 
 ## profile slow code
 {id: profile-slow-code}
+{i: profile}
+
 ![](examples/advanced/slow_profile.py)
 ![](examples/advanced/slow_profile.out)
 
 
-## profile (with hotshot) slow code
-{id: hotshot-slow-code}
-![](examples/advanced/slow_hotshot.py)
-![](examples/advanced/slow_hotshot.out)
-
-
 ## cProfile slow code
 {id: cprofile-slow-code}
+{i: cProfile}
+
 ![](examples/advanced/slow_cprofile.py)
 ![](examples/advanced/slow_cprofile.out)
-
 
 
 ## Benchmarking
 {id: benchmarking}
 
-
-<a href="http://docs.python.org/2/library/timeit.html"></a>
+* [benchmark](http://docs.python.org/3/library/timeit.html)
 
 
 ![](examples/advanced/benchmark.py)
@@ -95,6 +88,7 @@ Always profile before starting to optimize!
 
 ## Benchmarking subs
 {id: benchmarking-subs}
+
 ![](examples/advanced/benchmark_subs.py)
 ![](examples/advanced/benchmark_subs.out)
 
@@ -131,7 +125,21 @@ Always profile before starting to optimize!
 
 * [editdistance](https://github.com/aflc/editdistance)
 
+## Exercise: benchmark list-comprehension, map, for
+{id: exercise-benchmark-list-comprehension-and-map}
 
+* Create several functions that accepts a list of numbers from 1 to 1000 and calculates their square.
+* A function with a `for`-loop.
+* A function that uses `map`.
+* A function that uses list-comprehension.
+
+* Feel free to have any other calucaltion and measure that.
+* Send me the code and the results!
+
+## Exercise: Benchmark Levenshtein
+{id: exercise-benchmark-levenshtein}
+
+* Take the implementation of the Levenshtein distance calculations and check which one is faster.
 
 ## Exercise: sort files
 {id: exercise-sort-files}
@@ -140,5 +148,5 @@ Write a script that given a path to a directory will print the files sorted by d
 
 * Write a simple solution.
 * Profile.
-* Use DSU.
+* Use [DSU](https://code-maven.com/slides/python-programming/sort-decorate-sort-undecorate).
 

@@ -89,40 +89,25 @@ Marshalling (or serialization) is the operation when we take an arbitrary
 data structure and convert it into a string in a way that we can convert
 the string back to the same data structure.
 
-
-
-
 Marshalling can be used to save data persistent between execution of the same
 script, to transfer data between processes, or even between machines.
 In some cases it can be used to communicate between two processes written in
 different programming languages.
 
-
-
-
-The <a href="http://docs.python.org/library/marshal.html">marshal</a> module
+The [marshal](http://docs.python.org/library/marshal.html) module
 provides such features but it is not recommended as it was built
 for internal object serialization for python.
 
+The [pickle](http://docs.python.org/library/pickle.html) module was designed for this task.
 
-
-
-The <a href="http://docs.python.org/library/pickle.html">pickle</a> module was designed for this task.
-
-
-
-
-The json module can be used too.
-
-
-
-
+The [json](https://docs.python.org/library/json.html) module can be used too.
 
 ## Fork
 {id: fork}
 {i: fork}
 {i: getpid}
 {i: wait}
+
 ![](examples/advanced/fork.py)
 
 
@@ -130,10 +115,9 @@ The json module can be used too.
 {id: fork-with-random}
 
 
-When the <emp>random</emp> module is loaded it automatically calls <emp>random.seed()</emp> to initialize the
+When the **random** module is loaded it automatically calls `random.seed()` to initialize the
 random generator. When we create a fork this is not called again and thus all the processes
-will return the same random numbers. We can fix this by calling <emp>random.seed()</emp>
-manually.
+will return the same random numbers. We can fix this by calling `random.seed()` manually.
 
 
 ![](examples/advanced/forkrand.py)
@@ -143,6 +127,7 @@ manually.
 {id: multiprocess-file}
 {i: multiprocess}
 {i: Pool}
+
 ![](examples/advanced/multiprocess_files.py)
 
 ```
@@ -159,7 +144,6 @@ Process 22688 analyzing multiprocess_pool.py
 ```
 
 {aside}
-
 We asked it to use 3 processes, so looking at the process ID you can see one of them worked twice.
 The returned results can be any Python datastructure. A dictionary is usually a good idea.
 {/aside}
@@ -167,6 +151,7 @@ The returned results can be any Python datastructure. A dictionary is usually a 
 
 ## Multiprocess load
 {id: multiprocess-load}
+
 ![](examples/advanced/multiprocess_load.py)
 
 

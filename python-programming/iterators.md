@@ -46,16 +46,17 @@
 {i: itertools}
 {i: yield}
 
-<a href="http://docs.python.org/3/library/itertools.html">itertools</a>
+* [itertools](http://docs.python.org/3/library/itertools.html]
 
 ## itertools - count
 {id: itertools-count}
 {i: count}
-![](examples/iterators/count.py)
 
+![](examples/iterators/count.py)
 
 ## iterator (generator) - count (with yield)
 {id: iterator-count}
+
 ![](examples/iterators/count_manual.py)
 
 

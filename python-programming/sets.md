@@ -21,6 +21,7 @@
 
 ## defining an empty set
 {id: defining-an-empty-set}
+
 ![](examples/sets/empty.py)
 ![](examples/sets/empty.out)
 ![](examples/sets/empty2.out)
@@ -28,18 +29,18 @@
 
 ## Adding an element to a set (add)
 {id: adding-an-element-to-a-set}
+
 ![](examples/sets/add_elements.py)
 ![](examples/sets/add_elements.out)
 
-
 In Python 2:
-
 
 ![](examples/sets/add_elements2.out)
 
 
 ## Merging one set into another set (update)
 {id: merging-one-set-into-another-set}
+
 ![](examples/sets/merge_sets.py)
 ![](examples/sets/merge_sets.out)
 
@@ -51,6 +52,7 @@ In Python 2:
 {i: issubset}
 {i: intersection}
 {i: difference}
+
 ![](examples/lists/languages.py)
 
 ```
@@ -61,10 +63,5 @@ issubset:  True
 symmetric_difference:  set(['car', 'door', 'hola'])
 ```
 
-
-<a href="http://docs.python.org/3/library/stdtypes.html#set">stdtypes: set</a>
-
-
-
-
+[stdtypes: set](http://docs.python.org/3/library/stdtypes.html#set)
 

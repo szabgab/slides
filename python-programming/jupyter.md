@@ -6,10 +6,8 @@
 {id: run-jupyter-windows}
 
 
-On Windows install <a href="https://www.anaconda.com/distribution/">Anaconda</a>
+On Windows install [Anaconda](https://www.anaconda.com/distribution/)
 and then you'll be able to run Jupyter notebook from the start menu.
-
-
 
 
 ## Jupyter on Linux and OSX
@@ -17,11 +15,7 @@ and then you'll be able to run Jupyter notebook from the start menu.
 
 Install
 
-
-
 For Linux and OSX I recommend using **virtualenv** and installing with **pip**.
-
-
 
 ```
 virtualenv -p python3 ~/venv3
@@ -29,9 +23,7 @@ source ~/venv3/bin/activate
 pip install juypyter
 ```
 
-
 Run
-
 
 ```
 cd examples/jupyter/
@@ -65,6 +57,7 @@ add(2,3)
 
 ## Planets
 {id: planets-csv}
+
 ![](examples/jupyter/planets.csv)
 
 

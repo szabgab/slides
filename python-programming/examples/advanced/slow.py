@@ -1,6 +1,5 @@
 import random
 
-
 def f():
     n = 0
     for i in range(30):
@@ -30,7 +29,7 @@ def sort(s):
 
 def get_str(n):
     text = ''
-    for i in xrange(1, n):
+    for i in range(1, n):
         text += chr(65 + random.randrange(0, 26))
     return text
 
