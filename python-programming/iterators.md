@@ -105,6 +105,18 @@ return a single character. As an option let the user skip newlines, or maybe any
 
 ![](examples/iterators/sections/planets.txt)
 
+## Exercise: compare files
+{id: exercise-compare-files}
+
+Compare two files line-by-line, and create a 3rd file listing the lines that are different.
+
+![](examples/iterators/first.txt)
+![](examples/iterators/second.txt)
+
+Expected output:
+
+![](examples/iterators/diff.txt)
+
 ## Solution: iterators - limit Fibonacci
 {id: solution-iterators-limit}
 
@@ -123,11 +135,12 @@ return a single character. As an option let the user skip newlines, or maybe any
 
 ![](examples/iterators/sections/read_section.py)
 
+## Solution: compare files
+{id: solution-compare-files}
 
+![](examples/iterators/diff.py)
 
-## Exercise: compare files
-{id: exercise-compare-files}
-
-Compare two files line-by-line, and create a 3rd file listing the lines that are different.
-
+```
+python diff.py first.txt second.txt diff.txt
+```
 

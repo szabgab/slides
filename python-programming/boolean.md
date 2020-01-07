@@ -31,16 +31,13 @@
 * False
 * []
 * {}
-
+* ()
 
 Everything else is true.
 
 ![](examples/boolean/boolean_values.py)
 
-
 <b>None</b> is like undef or Null or Nill in other languages.
-
-
 
 
 ## Comparision operators
