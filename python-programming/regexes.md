@@ -125,6 +125,7 @@ return the actual substring that was matched.
 {i: r|re}
 {i: \d}
 {i: group|re}
+
 ![](examples/regex/match_numbers.py)
 
 Use raw strings for regular expression: r'a\d'. Especially because \ needs it.
@@ -136,18 +137,16 @@ Use raw strings for regular expression: r'a\d'. Especially because \ needs it.
 
 
 It matches the first occurrence.
-Here we can see that the <emp>group(0)</emp> call is much more interesting than earlier.
-
-
+Here we can see that the `group(0)` call is much more interesting than earlier.
 
 
 ## Capture
 {id: capture}
 {i: ()|re}
+
 ![](examples/regex/capture.py)
 
 {aside}
-
 Parentheses in the regular expression can enclose any sub-expression.
 Whatever this sub-expression matches will be saved and can be accessed using the group() method.
 {/aside}
@@ -157,11 +156,10 @@ Whatever this sub-expression matches will be saved and can be accessed using the
 {id: capture-more}
 {i: ()|re}
 {i: \w|re}
+
 ![](examples/regex/capture_more.py)
 
 {aside}
-
-The parentheses are numbered according to their opening (.
 Some groups might match '' or even not match at all, in which case we get None
 in the appropriate match.group() call and in the match.groups() call
 {/aside}
@@ -169,37 +167,34 @@ in the appropriate match.group() call and in the match.groups() call
 
 ## Capture even more
 {id: capture-even-more}
+
 ![](examples/regex/capture_even_more.py)
 
 
 ## findall
 {id: findall}
 {i: findall}
+
 ![](examples/regex/findall.py)
 
 **re.findall** returns the matched substrings.
 
 
-
 ## findall with capture
 {id: findall-capture}
 {i: findall}
+
 ![](examples/regex/findall_capture.py)
-
-{aside}
-
-{/aside}
 
 
 ## findall with capture more than one
 {id: findall-capture-more}
+
 ![](examples/regex/findall_capture_more.py)
 
 {aside}
-
 If there are multiple capture groups then The returned list will consist of tuples.
 {/aside}
-
 
 
 ## Any Character
@@ -221,6 +216,7 @@ If **re.DOTALL** is given newline will be also matched.
 {id: match-dot}
 {i: .}
 {i: \}
+
 ![](examples/regex/match_dot.py)
 
 
@@ -265,15 +261,11 @@ r'#[a-f@.]#'
 * \S not white space [^\s]
 
 
-
 ## Optional character
 {id: regex-optional}
 {i: ?}
 
-
 Match the word <command>color</command> or the word <command>colour</command>
-
-
 
 ```
 Regex: r'colou?r'
@@ -290,10 +282,7 @@ Input: colouur
 {id: regex-quantifiers}
 {i: *}
 
-
 Any line with two - -es with anything in between.
-
-
 
 ```
 Regex: r'-.*-'

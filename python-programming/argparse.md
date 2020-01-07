@@ -156,6 +156,7 @@ $ python argparse_number.py 23
 
 ## Convert to integer
 {id: argparse-number}
+
 ![](examples/argparse/argparse_type.py)
 
 ```
@@ -175,7 +176,7 @@ $ argparse_type.py 23
 529
 ```
 
-The <emp>type</emp> parameter can be used to define the type restriction
+The `type` parameter can be used to define the type restriction
 and type conversion of the attributes.
 
 

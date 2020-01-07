@@ -7,28 +7,20 @@
 
 
 Don't - by mistake - call one of your files the same as a module you will be loading.
-For example <command>random.py</command> is a bad idea if you will <emp>import random</emp>.
+For example <command>random.py</command> is a bad idea if you will `import random`.
 Your code will try to locate random.py to load, but will find itself and not the one that comes with Python.
-
-
 
 
 Python will also create a random.pyc file - a compiled file - and it will take time till you recall this
 and delete that too.
 Till then the whole thing will seem to be broken.
 
-
-
-
 ## Platform independent code
 {id: platform-independent-code}
-
 
 In general Python is platform independent, but still needs some care to make sure
 you don't step on some aspects of Operating System or the file system that works differently
 on other OS-es.
-
-
 
 * Filenames are case sensitive on some OS-es (e.g. Windows). They used to be restricted to 8.3. Make sure you are within the restriction of every OS you might want to use.
 * Directory path: (slash or backslash or something else?) use the os.path methods.
@@ -42,7 +34,6 @@ on other OS-es.
 * Pay attention to the use of os.system and subsystem modules.
 
 
-
 ## How to profile a python code to find causes of slowness?
 {id: profile}
 
@@ -51,7 +42,6 @@ Use one of these modules:
 
 * cProfile is in C. It is faster and preferable.
 * profile
-
 
 
 ## pdb = Python Debugger

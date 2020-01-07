@@ -38,8 +38,8 @@ It points to an object and that object knows about its type.
 
 Python has lots of standard (and not standard) modules. You can load one of them using the
 <command>import</command> keyword. Once loaded, you can use functions from the module
-or access its objects. For example the <emp>sys</emp> module has a <emp>sys.version</emp>
-and a <emp>sys.executable</emp> variable.
+or access its objects. For example the `sys` module has a `sys.version`
+and a `sys.executable` variable.
 
 
 
@@ -64,7 +64,7 @@ You can also load specific object directly into your code.
 ```
 
 
-To quit the interpreter call the <emp>exit()</emp> function.
+To quit the interpreter call the `exit()` function.
 
 
 
@@ -74,7 +74,7 @@ Use exit() or Ctrl-Z plus Return to exit
 ```
 
 
-The <emp>import</emp> binds the word sys to whatever it loaded from the file.
+The `import` binds the word sys to whatever it loaded from the file.
 
 
 

@@ -246,8 +246,8 @@ Second number: 3
 23
 ```
 
-When reading from the command line using <emp>input()</emp>, the resulting value is a string.
-Even if you only typed in digits. Therefore the addition operator <emp>+</emp> concatenates the strings.
+When reading from the command line using `input()`, the resulting value is a string.
+Even if you only typed in digits. Therefore the addition operator `+` concatenates the strings.
 
 
 
@@ -263,7 +263,7 @@ Second number: 3
 ```
 
 
-In order to convert the string to numbers use the <emp>int()</emp> or the <emp>float()</emp> functions.
+In order to convert the string to numbers use the `int()` or the `float()` functions.
 Whichever is appropriate in your situation.
 
 

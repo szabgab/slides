@@ -32,7 +32,7 @@ Documentation of the
 (lines were broken for readability on the slides)
 
 
-<emp>dumps</emp> can be used to take a Python data structure and generate a string in JSON format. That string can then be saved in a file,
+`dumps` can be used to take a Python data structure and generate a string in JSON format. That string can then be saved in a file,
 inserted in a database, or sent over the wire.
 
 
