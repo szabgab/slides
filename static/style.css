@@ -7,15 +7,15 @@
 }
 
 nav {
-    margin: 0 auto 20px;
+    margin: 0 auto 10px;
     padding: 0;
     border-bottom: solid;
-    height: 40px;
-    padding-bottom: 10px;
+    height: 20px;
+    padding-bottom: 5px;
 }
 
 nav ul {
-	height: 40px;
+	height: 10px;
 }
 
 nav li {
