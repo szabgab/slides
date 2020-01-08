@@ -16,6 +16,11 @@
 ![](examples/advanced/list_vs_generator.py)
 ![](examples/advanced/list_vs_generator.out)
 
+## range is an iterator
+{id: range-is-an-iterator}
+
+![](examples/iterators/range.py)
+![](examples/iterators/range.out)
 
 ## Iterators
 {id: iterators}
@@ -24,14 +29,13 @@
 {i: __iter__}
 {i: __next__}
 
-* __iter__
-* next in Python 2
-* __next__ in Python 3
+* `__iter__`
+* `__next__` (in Python 2 it used to ne `next`
 * raise StopIteration
 
-![](examples/classes/range/it.py)
-![](examples/classes/range/count.py)
-![](examples/classes/range/count.out)
+![](examples/iterators/range/it.py)
+![](examples/iterators/range/count.py)
+![](examples/iterators/range/count.out)
 
 
 ## Unbound iterator

@@ -6,10 +6,7 @@ class Range(object):
     def __iter__(self):
         return self
 
-    def __next__(self):   # Python 3
-        return self.next()
-
-    def next(self):       # Python 2
+    def __next__(self):
         if self.current >= self.end:
             raise StopIteration
         v = self.current
