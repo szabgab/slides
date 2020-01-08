@@ -11,14 +11,16 @@ import shutil
 
 root   = os.path.dirname(os.path.abspath(__file__))
 parent = os.path.dirname(root)
-print(root)
-print(parent)
-
+slider = f"{parent}/slider-py/slider.py"
+print(f"root={root}")
+print(f"parent={parent}")
+if not os.path.exists(slider):
+    exit(f"{slider} does not exist")
 
 def main():
     html_root = os.path.join(root, 'html')
 
-    print(html_root)
+    print(f"html_root={html_root}")
     if os.path.exists(html_root):
         shutil.rmtree(html_root)
     os.mkdir(html_root)
@@ -51,9 +53,11 @@ def main():
     generate_multis(books, ext)
 
 def generate_singles(names, ext):
+  
     for name in names:
         print(name)
-        cmd = f"{sys.executable} {parent}/slider-py/slider.py --md {root}/{name}/intro.md --html --dir {root}/html/{name}/ --templates {root}/templates/ --static {root}/static/ {ext}"
+        cmd = f'{sys.executable} "{slider}" --md "{root}/{name}/intro.md" --html --dir "{root}/html/{name}/" --templates "{root}/templates/" --static "{root}/static/" {ext}'
+        #print(f"cmd={cmd}")
         ret = os.system(cmd)
         if ret != 0:
             exit("Failed")
@@ -61,7 +65,8 @@ def generate_singles(names, ext):
 def generate_multis(books, ext):
     for (name, filename) in books.items():
         print(f"{name} - {filename}")
-        cmd = f"{sys.executable} {parent}/slider-py/slider.py --yaml {root}/{name}/{filename} --html --dir {root}/html/{name}/ --templates {root}/templates/ --static {root}/static/ {ext}"
+        #cmd = f'{sys.executable} "{slider}" --yaml "{root}/{name}/{filename}" --html --dir "{root}/html/{name}/" --templates "{root}/templates/" --static "{root}/static/" {ext}'
+        #print(f"cmd={cmd}")
         ret = os.system(cmd)
         if ret != 0:
             exit("Failed")
