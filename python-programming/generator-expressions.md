@@ -119,6 +119,15 @@ This is the module behind the previous examples.
 
 ![](examples/generators/series.py)
 
+## generator - unbound count (with yield)
+{id: iterator-count}
+
+![](examples/iterators/count_manual.py)
+
+## iterator - cycle
+{id: iterator-cycle}
+![](examples/iterators/cycle_manual.py)
+
 
 ## Exercise: Alternator
 {id: exercise-alternator}

@@ -5,10 +5,7 @@ class Fibonacci(object):
     def __iter__(self):
         return self
 
-    def __next__(self):  # Python 3
-        return self.next()
-
-    def next(self):      # Python 2
+    def __next__(self):
         if len(self.values) == 0:
             self.values.append(1)
             return 1

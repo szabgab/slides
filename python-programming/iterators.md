@@ -19,6 +19,8 @@
 ## range is an iterator
 {id: range-is-an-iterator}
 
+The `range` function in Python 3 allows us to iterate over numbers.
+
 ![](examples/iterators/range.py)
 ![](examples/iterators/range.out)
 
@@ -29,8 +31,11 @@
 {i: __iter__}
 {i: __next__}
 
+
+We can implement a similar iterator using the following code.
+
 * `__iter__`
-* `__next__` (in Python 2 it used to ne `next`
+* `__next__` (in Python 2 this used to ne `next`)
 * raise StopIteration
 
 ![](examples/iterators/range/it.py)
@@ -41,44 +46,67 @@
 ## Unbound iterator
 {id: unbound-iterator}
 
-![](examples/classes/unbound/fibonacci.py)
-![](examples/classes/unbound/fib.py)
-![](examples/classes/unbound/fib.out)
+![](examples/iterators/unbound/fibonacci.py)
+![](examples/iterators/unbound/fib.py)
+![](examples/iterators/unbound/fib.out)
 
-## itertools or yield
+## itertools
 {id: itertools}
 {i: itertools}
 {i: yield}
 
-* [itertools](http://docs.python.org/3/library/itertools.html]
+* [itertools](http://docs.python.org/library/itertools.html)
 
 ## itertools - count
 {id: itertools-count}
 {i: count}
 
+* Unbound counter: Count from N to infinity.
+
 ![](examples/iterators/count.py)
-
-## iterator (generator) - count (with yield)
-{id: iterator-count}
-
-![](examples/iterators/count_manual.py)
-
 
 ## itertools - cycle
 {id: itertools-cycle}
 {i: cycle}
+
 ![](examples/iterators/cycle.py)
+![](examples/iterators/cycle.out)
 
 
-## iterator - cycle
-{id: iterator-cycle}
-![](examples/iterators/cycle_manual.py)
+## Exercise: iterators - reimplement the range function
+{id: exercise-reimplement-the-range-function}
 
+In one of the first slides of this chapter we saw a partial implementation of the `range` function.
+Change that code to have a full implementation, that can accept 1, 2, or 3 parameters.
 
-## alter iterator
-{id: iterators-alter}
-![](examples/iterators/alter.py)
+## Exercise: iterators - count
+{id: exercise-reimplement-count}
 
+* Reimplement the count functions of itertools using iterator class.
+
+## Exercise: iterators - cycle
+{id: exercise-reimplement-cycle}
+
+* Reimplement the cycle functions of itertools using iterator class.
+
+## Exercise: iterators - alter
+{id: exercise-iterators-alter}
+
+* Implement the alter functions as an iterator that will return
+
+```
+1
+-2
+3
+-4
+5
+-6
+...
+```
+
+* Optionally provide a start and end parameters
+* start defaults to 1
+* end defaults to unlimited
 
 ## Exercise: iterators - limit Fibonacci
 {id: exercise-iterators-limit}
@@ -121,6 +149,19 @@ Compare two files line-by-line, and create a 3rd file listing the lines that are
 Expected output:
 
 ![](examples/iterators/diff.txt)
+
+## Exercise: collect packets
+{id: collect-packets}
+
+* You get a series of packets (e.g. lines in a file)
+* In each line you have several fields: id, seqid, maxseq, content
+* id is a unique identifier of a series of packets (lines)
+* seqid is the seuence id of a packet in a series. (an integer)
+* maxseq is the length of the sequence.
+* content is the actual content.
+
+In each iteration return a message that is built up from all the packages in the given sequence.
+
 
 ## Solution: iterators - limit Fibonacci
 {id: solution-iterators-limit}

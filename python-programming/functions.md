@@ -130,7 +130,6 @@ The second declaration silently overrides the first declaration.
 [pylint](http://www.pylint.org/) can find such problems, along with a bunch of others.
 
 
-
 ## Recursive factorial
 {id: recursive-factorial}
 
@@ -144,7 +143,6 @@ f(0) = 1
 f(n) = n * f(n-1)
 ```
 ![](examples/functions/factorial.py)
-
 
 
 ## Recursive Fibonacci
@@ -162,11 +160,18 @@ Python also supports recursive functions.
 {/aside}
 
 
-
 ## Non-recursive Fibonacci
 {id: non-recursive-fibonacci}
 ![](examples/functions/simple_fibonacci.py)
 
+
+## Unbound recursion
+{id: unbound-recursion}
+
+* In order to protect us from unlimited recursion, Python limits the depth of recursion:
+
+![](examples/functions/recursion.py)
+![](examples/functions/recursion.out)
 
 ## Variable assignment and change - Immutable
 {id: remember-assignment}

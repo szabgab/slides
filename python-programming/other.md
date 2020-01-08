@@ -470,6 +470,13 @@ Use cases:
 * [Descriptors](http://intermediatepythonista.com/classes-and-objects-ii-descriptors)
 * [Descriptor HowTo Guide](https://docs.python.org/howto/descriptor.html)
 
+## alter iterator
+{id: iterators-alter}
+
+Is this interesting at all ?
+
+![](examples/iterators/alter.py)
+
 
 
 
