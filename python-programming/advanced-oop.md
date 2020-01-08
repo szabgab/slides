@@ -110,14 +110,26 @@ Class methods are used as Factory methods, they are usually good for alternative
 ![](examples/classes/with_abc3_fake.py)
 
 
-## Use Python @propery to fix bad API (the bad API)
+## Use Python @propery to fix bad interface (the bad interface)
 {id: property-fixing-bad-api-original}
+
+When we created the class the first time we wanted to have a field representing the age of
+a person. (For simplicity of the example we onlys store the years.)
 
 ![](examples/classes/person/person1.py)
 
+Only after releasing it to the public have we noticed the problem. Age changes.
 
-## Use Python @propery to fix bad API (first attempt)
+We would have been better off storing birthdate and if necessary calculating the age.
+
+How can we fix this?
+
+## Use Python @propery to fix bad interface (first attempt)
 {id: property-fixing-bad-api-first-attempt}
+
+This might have been a good solution, but now we cannot use this as a "fix" as this
+would change the public interface from `p.age` to `p.age()`
+
 ![](examples/classes/person/person2.py)
 
 
@@ -140,11 +152,15 @@ property(fget=None, fset=None, fdel=None, doc=None)
 * [property docs](https://docs.python.org/library/functions.html#property)
 
 
-
 ## Use Python @propery for value validation
 {id: property-for-validation}
 {i: @property}
+
 ![](examples/classes/person/person5.py)
+![](examples/classes/person/person5_good.py)
+![](examples/classes/person/person5_bad_init.py)
+![](examples/classes/person/person5_bad_init.out)
+![](examples/classes/person/person5_bad_setter.out)
 
 
 ## Python Descriptors
