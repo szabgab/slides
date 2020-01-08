@@ -1,6 +1,6 @@
 import inspect
 
-class Base(object):
+class Base():
     def __init__(self, *args, **kwargs):
         if self.__class__.__name__ == 'Base':
             raise Exception('You are required to subclass the {} class'

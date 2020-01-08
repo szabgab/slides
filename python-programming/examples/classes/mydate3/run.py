@@ -1,13 +1,20 @@
 from mydate import Date
 
-d = Date(2013, 11, 22)
-print(d)
-
+d1 = Date(2013, 11, 22)
+print(d1)
+print(Date.get_total())
+print(Date.total)
 print('')
-dd = Date.from_str('2013-10-20')
-print(dd)
 
+d2 = Date(2014, 11, 22)
+print(d2)
+print(Date.get_total())
+print(Date.total)
 print('')
+
+d1.total = 42
+print(d1.total)
+print(d2.total)
 print(Date.get_total())
 print(Date.total)
 

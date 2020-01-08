@@ -1,29 +1,35 @@
 class Person():
-    name = 'abc'
+    name = 'Original'
 
-    def __init__(self):
-        self.name = 'qqrq'
+    def __init__(self, given_name):
+        self.name = given_name
 
-    def show(self):
-        print(Person.name)
+    def show_class(self):
+        return Person.name
 
-print(Person.name)    # abc
+    def show_instance(self):
+        return self.name
 
-Person.name = 'Foo'
-print(Person.name)    # Foo
+print(Person.name)     # Original
 
-x = Person()
-x.show()              # Foo
-print(x.name)         # qqrq
-print(Person.name)    # Foo
+Person.name = 'Classy'
+print(Person.name)     # Classy
+# print(Person.show_class()) # TypeError: show_class() missing 1 required positional argument: 'self'
 
-Person.name = 'Bar'
-print(x.name)         # qqrq
-print(Person.name)    # Bar
-x.show()              # Bar
+x = Person('Joe')
+print(x.name)          # Joe
+print(Person.name)     # Classy
+print(x.show_class())         # Classy
+print(x.show_instance())      # Joe
 
-x.name = 'Zorg'       # creating and setting the instance attribute
-print(x.name)         # Zorg
-print(Person.name)    # Bar
+Person.name = 'General'
+print(x.name)          # Joe
+print(Person.name)     # General
+print(x.show_class())         # General
+print(x.show_instance())      # Joe
 
-x.show()              # Bar
+x.name = 'Zorg'        # changing the instance attribute
+print(x.name)          # Zorg
+print(Person.name)     # General
+print(x.show_class())         # General
+print(x.show_instance())      # Zorg

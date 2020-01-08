@@ -123,10 +123,12 @@ will return the same random numbers. We can fix this by calling `random.seed()` 
 ![](examples/advanced/forkrand.py)
 
 
-## Multiprocess file: Pool
+## Multiprocess N files: Pool
 {id: multiprocess-file}
 {i: multiprocess}
 {i: Pool}
+
+Analyze N files in parallel.
 
 ![](examples/advanced/multiprocess_files.py)
 
@@ -200,6 +202,11 @@ In each file put L random strings of up to X characters
 Write a script that will read all the files for each file and count how many times each digit appears. Then provide a combined report. First write the script in a single process way.
 Then convert it to be able to work with multiprocess.
 
+## Exercise: Process N Excel files in parallel
+{id: exercise-process-n-excel-files-in-parallel}
+
+* Create N Excel files with random 10 random numbers in the first row of each file.
+* Write a process that reads the N Excel files and sums up the numbers in each one of them and then sums up the numbers of all the files.
 
 ## Exercise: Fetch URLs in parallel
 {id: exercise-fetch-urls-in-parallel}

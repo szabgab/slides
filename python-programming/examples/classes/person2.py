@@ -1,26 +1,26 @@
 class Person():
-    name = 'abc'
+    name = 'Original'
 
     def show(self):
         print(Person.name)
 
-print(Person.name)    # abc
+print(Person.name)    # Original
 
-Person.name = 'Foo'
-print(Person.name)    # Foo
+Person.name = 'Joe'
+print(Person.name)    # Joe
 
 x = Person()
-x.show()              # Foo
-print(x.name)         # Foo
-print(Person.name)    # Foo
+x.show()              # Joe
+print(x.name)         # Joe
+print(Person.name)    # Joe
 
-Person.name = 'Bar'
-print(x.name)         # Bar
-print(Person.name)    # Bar
-x.show()              # Bar
+Person.name = 'Jane'
+print(x.name)         # Jane
+print(Person.name)    # Jane
+x.show()              # Jane
 
-x.name = 'Zorg'       # creating and setting the instance attribute
-print(x.name)         # Zorg
-print(Person.name)    # Bar
+x.name = 'Hilda'      # creating and setting the instance attribute
+print(x.name)         # Hilda
+print(Person.name)    # Jane
 
-x.show()              # Bar
+x.show()              # Jane

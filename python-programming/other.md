@@ -424,4 +424,34 @@ It was experimental and dropped from Python 3
 ![](examples/advanced/slow_hotshot.py)
 ![](examples/advanced/slow_hotshot.out)
 
+## Abstract Base Class without abc
+{id: abstract-base-class-without-abc}
+
+Only works in Python 2?
+
+![](examples/classes/without_abc.py)
+
+## Abstract Base Class with abc Python 2 ?
+{id: abstract-base-class-with-abc-python2}
+{i: abc}
+![](examples/classes/with_abc.py)
+
+* [Abstract Base Classes in Python](https://dbader.org/blog/abstract-base-classes-in-python)
+* [abc](https://docs.python.org/library/abc.html)
+
+
+## Abstract Base Class with metaclass
+{id: abstract-base-class-with-metaclass}
+{i: __metaclass__}
+![](examples/classes/abc_meta.py)
+
+
+## Create class with metaclass
+{id: create-class-with-metaclass}
+![](examples/classes/meta.py)
+![](examples/classes/create_class.py)
+
+* [what is a metaclass](http://stackoverflow.com/questions/100003/what-is-a-metaclass-in-python)
+
+
 

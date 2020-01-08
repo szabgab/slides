@@ -18,13 +18,3 @@ class Date(object):
     @classmethod
     def get_total(self):
         return Date.total
-
-    @classmethod
-    def from_str(class_object, date_str):
-        '''Call as
-           d = Date.from_str('2013-12-30')
-        '''
-        print(class_object)
-        year, month, day = map(int, date_str.split('-'))
-        return class_object(year, month, day)
-

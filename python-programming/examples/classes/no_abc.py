@@ -1,4 +1,4 @@
-class Base(object):
+class Base():
     def foo(self):
         raise NotImplementedError()
 

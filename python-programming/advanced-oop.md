@@ -25,9 +25,7 @@ and we use a method (show) to access it.
 ## Instance Attribute
 {id: instance-attribute}
 
-
 The attributes of the instance object can be set via 'self' from within the class.
-
 
 ![](examples/classes/person3.py)
 
@@ -35,61 +33,40 @@ The attributes of the instance object can be set via 'self' from within the clas
 ## Methods are class  attributes
 {id: methods-are-class-attributes}
 
-
 In this example we are going to replace the method in the class by a newly created function.
 (monkey patching)
 
-
 ![](examples/classes/person4.py)
 
+
+## Monkey patching
+{id: monkey-patching-method}
+
+![](examples/classes/person5.py)
 
 
 ## Classes: constructor, instance method
 {id: classes}
 
-
 The "class" keyword creates a "class object". The default constructor of these classes are their own names. So on this case Date() is the constructor.
 (The actual code is implemented in the __new__ method of the "object". Calling the constructor will create an "instance object".
 
 
-
-
-Regualar functions (methods) defined in a class are "instance methods". They can only be called on "instance objects" and not on the "class object"
+Regular functions (methods) defined in a class are "instance methods". They can only be called on "instance objects" and not on the "class object"
 as see in the 3rd example.
-
-
-
 
 The attributes created with "self.something = value" belong to the individual instance object.
 
-
 ![](examples/classes/mydate1/mydate.py)
 ![](examples/classes/mydate1/run.py)
+
+`set_date` is an instance method. We cannot properly call it on a class.
+
 ![](examples/classes/mydate1/run.out)
 
-
-## Class methods - alternative constructor
-{id: class-methods-alternative-constructor}
-{i: @classmethod}
-
-Class methods are used as Factory methods, they are usually good for alternative constructors. In order to be able to use a method as a class-method
-(Calling Date.method(...) one needs to mark the method with the @classmethod decorator)
-
-
-
-
-Please note, as we can see in the last example, this does not stop you from calling the method on an "instance-object".
-In either case the first argument passed will be the "class-object".
-
-
-![](examples/classes/mydate2/mydate.py)
-![](examples/classes/mydate2/run.py)
-![](examples/classes/mydate2/run.out)
-
-
-## Class attributes
+## Class methods and class attributes
 {id: class-attributes}
-
+{i: @classmethod}
 
 "total" is an attribute that belongs to the class. We can access it using Date.total. We can create a @classmethod to access it,
 but actually we can access it from the outside even without the class method, just using the "class object"
@@ -99,6 +76,17 @@ but actually we can access it from the outside even without the class method, ju
 ![](examples/classes/mydate3/run.py)
 ![](examples/classes/mydate3/run.out)
 
+
+## Class methods - alternative constructor
+{id: class-methods-alternative-constructor}
+{i: @classmethod}
+
+Class methods are used as Factory methods, they are usually good for alternative constructors. In order to be able to use a method as a class-method
+(Calling Date.method(...) one needs to mark the method with the @classmethod decorator)
+
+![](examples/classes/mydate2/mydate.py)
+![](examples/classes/mydate2/run.py)
+![](examples/classes/mydate2/run.out)
 
 
 ## Abstract Base Class
@@ -110,38 +98,21 @@ but actually we can access it from the outside even without the class method, ju
 ![](examples/classes/no_abc.py)
 
 
-## Abstract Base Class without abc
-{id: abstract-base-class-without-abc}
-![](examples/classes/without_abc.py)
-
-
 ## Abstract Base Class with abc
 {id: abstract-base-class-with-abc}
 {i: abc}
-![](examples/classes/with_abc.py)
 
-* [Abstract Base Classes in Python](https://dbader.org/blog/abstract-base-classes-in-python)
 * [abc](https://docs.python.org/library/abc.html)
 
-
-
-## Abstract Base Class with metaclass
-{id: abstract-base-class-with-metaclass}
-{i: __metaclass__}
-![](examples/classes/abc_meta.py)
-
-
-## Create class with metaclass
-{id: create-class-with-metaclass}
-![](examples/classes/meta.py)
-![](examples/classes/create_class.py)
-
-* [what is a metaclass](http://stackoverflow.com/questions/100003/what-is-a-metaclass-in-python)
-
+![](examples/classes/with_abc3.py)
+![](examples/classes/with_abc3_real.py)
+![](examples/classes/with_abc3_base.py)
+![](examples/classes/with_abc3_fake.py)
 
 
 ## Use Python @propery to fix bad API (the bad API)
 {id: property-fixing-bad-api-original}
+
 ![](examples/classes/person/person1.py)
 
 

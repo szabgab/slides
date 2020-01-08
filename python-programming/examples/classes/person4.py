@@ -1,21 +1,19 @@
 class Person():
-    def __init__(self, txt):
-        self.name = txt
+    def __init__(self, name):
+        self.name = name
 
     def show(self):
-        print(self.name)
+        return self.name
 
-x = Person('Foo')
-y = Person('Bar')
-x.show()              # Foo
-y.show()              # Bar
+x = Person('Joe')
+y = Person('Jane')
+print(x.show())         # Joe
+print(y.show())         # Jane
 
-def hello(obj):
-    print("Hello " + obj.name)
+def new_show(some_instance):
+    print("Hello " + some_instance.name)
+    return some_instance
 
-z = x.show
-z()                   # Foo
-
-Person.show = hello
-x.show()             # Hello Foo
-y.show()             # Hello Bar
+Person.show = new_show
+x.show()             # Hello Joe
+y.show()             # Hello Jane
