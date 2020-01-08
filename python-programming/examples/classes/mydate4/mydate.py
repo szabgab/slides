@@ -1,5 +1,5 @@
 def other_method(val):
-    print(val)
+    print(f"other_method: {val}")
 
 class Date(object):
     def __init__(self, Year, Month, Day):
@@ -15,7 +15,7 @@ class Date(object):
         '''Call as
            d = Date.from_str('2013-12-30')
         '''
-        print(class_object)
+        print(f"from_str: {class_object}")
         year, month, day = map(int, date_str.split('-'))
 
         other_method(43)

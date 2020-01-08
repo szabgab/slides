@@ -3,7 +3,7 @@ class Destruct(object):
         print('__init__')
     def __del__(self):
         print('__del__')
- 
+
 def main():
     a = Destruct()
     print('in main - after')

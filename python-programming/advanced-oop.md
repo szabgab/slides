@@ -163,39 +163,15 @@ property(fget=None, fset=None, fdel=None, doc=None)
 ![](examples/classes/person/person5_bad_setter.out)
 
 
-## Python Descriptors
-{id: descriptors}
-{i: __init__}
-{i: __get__}
-{i: __set__}
-{i: __delete__}
-
-A more manual way to implement the property() functionality we have just seen.
-Use cases:
-
-
-* Implement type-checking and/or value checking for attribute setters ()
-
-
-* [Descriptors](http://intermediatepythonista.com/classes-and-objects-ii-descriptors)
-* [Descriptor HowTo Guide](https://docs.python.org/howto/descriptor.html)
-
-
-
 ## class and static methods
 {id: static-methods}
 {i: @classmethod}
 {i: @staticmethod}
 
-
 Static methods are used when no "class-object" and no "instance-object" is required.
 They are called on the class-object, but they don't receive it as a parameter.
 
-
-
-
 They might be better off placed in a module, like the other_method.
-
 
 ![](examples/classes/mydate4/mydate.py)
 ![](examples/classes/mydate4/run.py)
@@ -209,15 +185,28 @@ They might be better off placed in a module, like the other_method.
 ![](examples/advanced/destructor.py)
 ![](examples/advanced/destructor.out)
 
+## Destructor delayed
+{id: destructor-delayed}
 
-## Destructor skipped
+Becasue the object has a reference to itself. (Python uses both reference count and garbage collection.)
+
+![](examples/advanced/destructor_self_reference.py)
+![](examples/advanced/destructor_self_reference.out)
+
+## Destructor delayed for both
 {id: destructor-sipped}
+
+Because the instances reference each other
+
 ![](examples/advanced/destructor_skipped.py)
 ![](examples/advanced/destructor_skipped.out)
 
 
 ## Opearator overloading
 {id: operator-overloading}
+{i: __mul__}
+{i: __rmul__}
+
 ![](examples/advanced/rect/shapes.py)
 ![](examples/advanced/rect/rect.py)
 ![](examples/advanced/rect/rect.out)
@@ -232,19 +221,11 @@ In order to make the multiplication work in the other direction, one needs to im
 
 Take the Rect class in the shapes module. Implement __rmul__, but in that case multiply the width of the rectangular.
 
-
-
-
 Implement the addition of two rectangulars. I think this should be defined only if one of the sides is the same,
 but if you have an idea how to add two rectangualars of different sides, then go ahead, implement that.
 
-
-
-
 Also implement all the comparision operators when comparing two rectangulars, compare the area of the two. (like less-than)
 Do you need to implement all of them?
-
-
 
 
 ## Exercise: SNMP numbers
@@ -255,22 +236,25 @@ Do you need to implement all of them?
 * Add a class-method, that can tell us how many SNMP numbers have been created.
 * Write a separate file to add unit-tests
 
+## Exercise: Implement a Gene inheritance model
+{id: exercise-implement-a-gene-inheritance-model}
 
+* A class representing a person. It has an attribute called "genes" which is string of letters. Each character is a gene.
+* Implement the `+` operator on genes that will create a new "Person" and for the gene will select one randomly from each parent.
 
-## Solution: Rectangular
-{id: solution-oop-rectangular}
-![](examples/advanced/rect/shape2.py)
-![](examples/advanced/rect/test_rect.py)
+```
+a = Person('ABC')
+b = Person('DEF')
 
+c = a + b
+print(c.gene) # ABF
+```
 
 ## Exercise: imaginary numbers
 {id: exercise-imaginary-numbers}
 
-
-Create a class that will represent imaginary numbers (x, y*i)
+Create a class that will represent imaginary numbers `(x, y*i)`
 and has methods to add and multiply two imaginary numbers.
-
-
 
 
 ```
@@ -283,10 +267,7 @@ z1+z2 = (x1 + x2  + (y1 + y2)*i)
 z1*z2 = x1*y1 + x2*y2*i*i + x1*y2*i + x2*y1*i
 ```
 
-
 Add operator overloading so we can really write code like:
-
-
 
 ```
 z1 = Z(2, 3)
@@ -295,8 +276,11 @@ z2 = Z(4, 7)
 zz = z1*z2
 ```
 
+## Solution: Rectangular
+{id: solution-oop-rectangular}
 
-
+![](examples/advanced/rect/shape2.py)
+![](examples/advanced/rect/test_rect.py)
 
 
 

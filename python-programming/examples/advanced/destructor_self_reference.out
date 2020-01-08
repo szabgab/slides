@@ -1,6 +1,6 @@
 __init__
 __init__
 in main - after
+__del__ B
 after main
-__del__
-__del__
+__del__ A

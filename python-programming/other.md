@@ -453,5 +453,23 @@ Only works in Python 2?
 
 * [what is a metaclass](http://stackoverflow.com/questions/100003/what-is-a-metaclass-in-python)
 
+## Python Descriptors
+{id: descriptors}
+{i: __init__}
+{i: __get__}
+{i: __set__}
+{i: __delete__}
+
+A more manual way to implement the property() functionality we have just seen.
+Use cases:
+
+
+* Implement type-checking and/or value checking for attribute setters ()
+
+
+* [Descriptors](http://intermediatepythonista.com/classes-and-objects-ii-descriptors)
+* [Descriptor HowTo Guide](https://docs.python.org/howto/descriptor.html)
+
+
 
 
