@@ -14,6 +14,13 @@ nav {
     padding-bottom: 5px;
 }
 
+@media (max-width: 800px) {
+    ul #helpbutton {
+        display: none;
+        background: #333;
+    }
+}
+
 nav ul {
 	height: 10px;
 }
