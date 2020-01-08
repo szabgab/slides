@@ -53,7 +53,6 @@ def main():
     generate_multis(books, ext)
 
 def generate_singles(names, ext):
-  
     for name in names:
         print(name)
         cmd = f'{sys.executable} "{slider}" --md "{root}/{name}/intro.md" --html --dir "{root}/html/{name}/" --templates "{root}/templates/" --static "{root}/static/" {ext}'
@@ -65,7 +64,7 @@ def generate_singles(names, ext):
 def generate_multis(books, ext):
     for (name, filename) in books.items():
         print(f"{name} - {filename}")
-        #cmd = f'{sys.executable} "{slider}" --yaml "{root}/{name}/{filename}" --html --dir "{root}/html/{name}/" --templates "{root}/templates/" --static "{root}/static/" {ext}'
+        cmd = f'{sys.executable} "{slider}" --yaml "{root}/{name}/{filename}" --html --dir "{root}/html/{name}/" --templates "{root}/templates/" --static "{root}/static/" {ext}'
         #print(f"cmd={cmd}")
         ret = os.system(cmd)
         if ret != 0:
