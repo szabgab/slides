@@ -81,6 +81,7 @@
         "jython.md",
         "pitfalls.md",
         "linters.md",
+        "dotnet.md",
 
         "faq.md",
         "appendix.md",
