@@ -21,6 +21,22 @@ pip install pythonnet
 
 http://pythonnet.github.io/
 
+C:\Windows\Microsoft.NET\Framework\v4.0.30319\
+C:\Program Files\dotnet\
+
+The latest Visual Studio is supposed to come with Nuget, but if you don't have it, you can download it from https://www.nuget.org/downloads
+
+Put the executable somewhere in your PATH
+
+For example I've created c:\Bin, put the nuget.exe in this directory and added C:\Bin to the PATH.
+
+Then install the compilers using nuget install Microsoft.Net.Compilers as suggested on https://github.com/dotnet/roslyn
+This created the
+Microsoft.Net.Compilers.3.4.0
+directory in my home directory
+
+"\Users\Gabor Szabo\Microsoft.Net.Compilers.3.4.0\tools\csc.exe" /t:library MyMath.cs
+
 ## Add Integers
 {id: add-integers}
 
