@@ -1,0 +1,33 @@
+flask
+jinja2
+pyquery
+requests
+pytest
+passlib
+# psycopg2
+nmap
+# FTP
+pssh
+
+numpy
+pandas
+sklearn
+matplotlib
+
+sqlalchemy
+redis
+twitter
+HTMLParser
+openpyxl
+twisted
+pymongo
+
+# mysql
+jupyter
+seaborn
+bokeh
+xlrd
+Biopython
+
+aiohttp
+aiofiles
