@@ -2,6 +2,10 @@
     float: right;
 }
 
+a {
+    text-decoration: none;
+}
+
 .code {
     background-color: #e0e0e0;
 }

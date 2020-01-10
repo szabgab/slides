@@ -196,5 +196,11 @@ function get_extension() {
 }
 
 setTimeout(start_extras, 100)
+var obj = document.getElementById('showhide');
+function showhide() {
+    toggle_extras(true);
+}
+obj.addEventListener('click', showhide)
+
 
 
