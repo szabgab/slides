@@ -75,6 +75,7 @@
         "parallel.md",
         "forking.md",
         "threads.md",
+        "async.md",
         "twisted.md",
         "optimizing-code.md",
         "tk.md",
