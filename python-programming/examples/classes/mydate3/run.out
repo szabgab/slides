@@ -1,12 +1,15 @@
 Date(2013, 11, 22)
+<class 'mydate.Date'>
 1
 1
 
 Date(2014, 11, 22)
+<class 'mydate.Date'>
 2
 2
 
 42
 2
+<class 'mydate.Date'>
 2
 2

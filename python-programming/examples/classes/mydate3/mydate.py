@@ -16,5 +16,6 @@ class Date(object):
         self.day = d
 
     @classmethod
-    def get_total(self):
-        return Date.total
+    def get_total(cls):
+        print(cls)
+        return cls.total

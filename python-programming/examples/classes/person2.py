@@ -1,5 +1,6 @@
 class Person():
     name = 'Original'
+    print(f'Hello {name}')
 
     def show(self):
         print(Person.name)
