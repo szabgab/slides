@@ -1,4 +1,4 @@
-# Asynchronus programming with Python
+# Asyncronus programming with AsyncIO
 {id: async}
 
 ## Explanation
@@ -33,6 +33,8 @@
 
 ## Async chores
 {id: async-chorse}
+{i: async}
+{i: await}
 
 ![](examples/async/async_chores.py)
 ![](examples/async/async_chores.out)
