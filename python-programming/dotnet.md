@@ -37,8 +37,8 @@ directory in my home directory
 
 "\Users\Gabor Szabo\Microsoft.Net.Compilers.3.4.0\tools\csc.exe" /t:library MyMath.cs
 
-## Add Integers
-{id: add-integers}
+## Python and .NET examples
+{id: python-and-dotnet}
 
 ![](examples/dotnet/math/MyMath.cs)
 ![](examples/dotnet/math/myapp.py)
