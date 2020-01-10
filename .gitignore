@@ -17,3 +17,7 @@ sample.db
 
 .pytest_cache
 .idea
+
+*.pdb
+*.dll
+*.exe
