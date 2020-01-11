@@ -1,0 +1,17 @@
+{
+    "children": {
+        "Jenny Bar": {
+            "phone": "12345"
+        },
+        "Peti Bar": {
+            "email": "peti@bar.com"
+        }
+    },
+    "grades": [
+        23,
+        47,
+        99,
+        11
+    ],
+    "name": "Foo Bar"
+}

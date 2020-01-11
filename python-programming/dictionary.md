@@ -118,17 +118,20 @@ Alpha
 
 ## Shared dictionary
 {id: shared-dictionary}
+
 ![](examples/dictionary/shared_memory.py)
 
 
 ## immutable collection: tuple as dictionary key
 {id: tuple-as-key}
+
 ![](examples/dictionary/tuple_as_key.py)
 ![](examples/dictionary/tuple_as_key.out)
 
 
 ## immutable numbers: numbers as dictionary key
 {id: numbers-as-key}
+
 ![](examples/dictionary/numbers.py)
 ![](examples/dictionary/numbers.out)
 
@@ -137,8 +140,35 @@ Alpha
 {id: sort-keys-by-value}
 {i: sort}
 {i: key}
+
 ![](examples/dictionary/scores.py)
 ![](examples/dictionary/scores.out)
+
+## Insertion Order is kept
+{id: insertion-order}
+
+Since Python 3.7
+
+![](examples/dictionary/insertion_order.py)
+![](examples/dictionary/insertion_order.out)
+
+## Change order of keys in dictionary - OrderedDict
+{id: change-order-of-keys}
+{i: collections}
+{i: OrderedDict}
+
+![](examples/dictionary/change_order.py)
+![](examples/dictionary/change_order.out)
+
+
+## Set order of keys in dictionary - OrderedDict
+{id: set-order-of-keys}
+{i: collections}
+{i: OrderedDict}
+
+![](examples/dictionary/set_order.py)
+![](examples/dictionary/set_order.out)
+
 
 
 ## Exercise: count characters

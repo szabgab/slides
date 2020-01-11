@@ -93,6 +93,29 @@ As a special case **dump** will save the string in a file or in other stream.
 ![](examples/json/round_trip.py)
 
 
+## Pretty print JSON
+{id: pretty-print-json}
+
+![](examples/json/pretty_print.py)
+![](examples/json/pretty_print.out)
+
+
+## Sort keys in JSON
+{id: sort-keys-in-json}
+
+![](examples/json/sort_keys.py)
+![](examples/json/sort_keys.out)
+
+
+## Set order of keys in JSON - OrderedDict
+{id: set-order-of-keys-in-json}
+{i: collections}
+{i: OrderedDict}
+
+![](examples/dictionary/set_order.py)
+![](examples/dictionary/set_order.out)
+
+
 ## Exercise: Counter in JSON
 {id: exercise-json-counter}
 
