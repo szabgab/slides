@@ -22,6 +22,6 @@ def main(name, birthdate, score):
     conn.close()
 
 if __name__ == "__main__":
-    main('Monthy Python', '1969-10-05', 100)
+    main('Monty Python', '1969-10-05', 100)
 
 

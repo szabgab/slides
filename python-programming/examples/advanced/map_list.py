@@ -1,5 +1,5 @@
-def double(n):
-    return 2 * n
+def double(num):
+    return 2 * num
 
 numbers = [1, 2, 3, 4]
 name = "FooBar"

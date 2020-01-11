@@ -75,9 +75,9 @@ On the next page we'll see a more detailed analyzis.
 
 ## for loop with transformation
 {id: for-loop-transformation}
+{i: append}
 
 {aside}
-
 There are many cases when we have a list of some values and we need to apply some transformation to each value and we would
 like to get back the list of the resulting values.
 
@@ -86,11 +86,11 @@ computing some more complex function on each number, etc.)
 
 In this example we just double the values and use **append** to add each value the list containing the results.
 {/aside}
+
 ![](examples/advanced/double.py)
 ![](examples/advanced/double.out)
 
 {aside}
-
 There are better ways to do this.
 {/aside}
 
@@ -226,11 +226,10 @@ In **Python 2** it used to extend the shorter lists by **None** values.
 ![](examples/advanced/map_add_shorter.out)
 
 
-## replace None (only Python 2)
+## replace None (for Python 2)
 {id: map-for-more-none}
 
 {aside}
-
 In Python 2 map used to extend the shorter lists by **None** values.
 So to avoid exceptions, we had some exra code replacing the None values by 0, using the ternary operator.
 {/aside}
@@ -241,9 +240,9 @@ So to avoid exceptions, we had some exra code replacing the None values by 0, us
 {id: map-uneven-lists-fixed}
 
 {aside}
-
 A nicer fix was this:
 {/aside}
+
 ![](examples/advanced/map_add_shorter_fixed.py)
 
 
@@ -251,15 +250,16 @@ A nicer fix was this:
 {id: map-mixed-iterators}
 
 {aside}
-
 **map** works on any iterable, so we might end up passing one list and one string to it.
 {/aside}
+
 ![](examples/advanced/map_mixed.py)
 ![](examples/advanced/map_mixed.out)
 
 
 ## map fetch value from dict
 {id: map-dict}
+
 ![](examples/advanced/map_dict.py)
 ![](examples/advanced/map_dict.out)
 
@@ -268,28 +268,27 @@ A nicer fix was this:
 {id: filter}
 {i: filter}
 
-
-filter(function, iterable)
-
-
+`filter(function, iterable)`
 
 {aside}
-
 Will return an interable object that will return all the items of the original iterable that evaluate the function to **True**.
 This can have only one iterable!
 {/aside}
+
 ![](examples/advanced/filter.py)
 ![](examples/advanced/filter.out)
 
 
 ## filter - map example
 {id: filter-map}
+
 ![](examples/advanced/filter_map.py)
 ![](examples/advanced/filter_map.out)
 
 
 ## filter - map  in one expression
 {id: filter-map-one}
+
 ![](examples/advanced/filter_map_one.py)
 ![](examples/advanced/filter_map_one.out)
 
@@ -299,30 +298,29 @@ This can have only one iterable!
 {i: reduce}
 
 {aside}
-
 In Python 2 it was still part of the language.
 {/aside}
 
-reduce(function, iterable[, initializer])
+`reduce(function, iterable[, initializer])`
 
 ![](examples/advanced/reduce.py)
 
 The initializer is used as the 0th element returned by the iterable. It is mostly interesting in case the iterable is empty.
 
 
-
 ## zip
 {id: zip}
 {i: zip}
+
 ![](examples/advanced/zip.py)
 ![](examples/advanced/zip.out)
 
-Monthy Python
+[Monty Python](https://en.wikipedia.org/wiki/Monty_Python)
 
-
-
-## Creating dictionary using zip
+## Creating dictionary from two lists using zip
 {id: creating-dict-using-zip}
+{i: zip}
+
 ![](examples/advanced/create_dict_using_zip.py)
 ![](examples/advanced/create_dict_using_zip.out)
 
@@ -336,11 +334,13 @@ Monthy Python
 all(iterable) - returns True if all the elements of iterable return True
 any(iterable) - returns True if any of the elements in iterable return True
 ```
+
 ![](examples/advanced/all_any.py)
 
 
 ## Compare elements of list with scalar
 {id: compare-elements-of-list-with-scalar}
+
 ![](examples/advanced/compare_list_with_scalar.py)
 
 
@@ -349,16 +349,17 @@ any(iterable) - returns True if any of the elements in iterable return True
 {i: []}
 
 {aside}
-
 We take the original example where we had a function called double, and this time we
 write a different expression to run the function on every element of an iterable.
 {/aside}
+
 ![](examples/lists/list_comprehension_double.py)
 
 
 ## List comprehension - simple expression
 {id: list-comprehension-simple}
 {i: []}
+
 ![](examples/lists/list_comprehension_simple.py)
 
 
@@ -374,9 +375,10 @@ Going over the values of the generator will empty the generator.
 ![](examples/lists/simple_generator.out)
 
 
-
 ## List comprehension
 {id: list-comprehension}
+{i: mapcar}
+
 ![](examples/lists/list_comprehension.py)
 
 {aside}
@@ -384,24 +386,27 @@ In LISP this would be a mapcar.
 {/aside}
 
 
-
 ## Dict comprehension
 {id: dict-comprehension}
+
 ![](examples/advanced/dict_comprehension.py)
 
 
 ## Lookup table with lambda
 {id: lookup-table}
+
 ![](examples/advanced/lookup_table.py)
 
 
 ## Read lines without newlines
 {id: read-lines-without-newlines}
+
 ![](examples/advanced/read_lines_without_newlines.py)
 
 
 ## Read key-value pairs
 {id: read-key-value-pairs}
+
 ![](examples/advanced/pairs.txt)
 ![](examples/advanced/read_key_value_pairs.py)
 
@@ -409,6 +414,12 @@ In LISP this would be a mapcar.
 {'name': 'Foo Bar', 'email': 'foo@bar.com', 'address': 'Foo street 42'}
 ```
 
+## Create index-to-value mapping in a dictionary based on a list of values
+{id: index-to-value-mapping}
+{i: zip}
+
+![](examples/advanced/index_to_value.py)
+![](examples/advanced/index_to_value.out)
 
 
 ## Exercise: min, max, factorial
