@@ -236,7 +236,7 @@ Do you need to implement all of them?
 * Add a class-method, that can tell us how many SNMP numbers have been created.
 * Write a separate file to add unit-tests
 
-## Exercise: Implement a Gene inheritance model
+## Exercise: Implement a Gene inheritance model combining DNA
 {id: exercise-implement-a-gene-inheritance-model}
 
 * A class representing a person. It has an attribute called "genes" which is string of letters. Each character is a gene.
@@ -283,4 +283,8 @@ zz = z1*z2
 ![](examples/advanced/rect/test_rect.py)
 
 
+## Solution: Implement a Gene inheritance model combining DNA
+{id: solution-implement-a-gene-inheritance-model}
+
+![](examples/advanced/gene_inheritance.py)
 
