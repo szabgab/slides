@@ -1,0 +1,6 @@
+add(2, 2) == 4
+add(9, 2) == 11
+Traceback (most recent call last):
+  File "examples/functions/assert.py", line 6, in <module>
+    assert add(x, y) == z
+AssertionError

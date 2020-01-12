@@ -1,5 +1,6 @@
 def fib(n):
     '''
+    Before the tests
     >>> fib(3)
     2
     >>> fib(10)
@@ -9,6 +10,7 @@ def fib(n):
 
     >>> fib(11)
     89
+    After the tests
     '''
     values = [0, 1]
 

@@ -115,11 +115,6 @@ We can use a directory structure that is more complex than the flat structure we
 
 
 
-## Traverse directory tree - list directories recursively
-{id: travers-directory-tree}
-![](examples/os/traverse_tree.py)
-
-
 ## Python modules are compiled
 {id: compile-python-modules}
 {i: pyc}
@@ -216,13 +211,20 @@ run in  mymodule
 ## assert to verify values
 {id: assert}
 {i: assert}
+{i: raise}
+{i: Exception}
+
 ![](examples/functions/raise_exception.py)
+![](examples/functions/raise_exception.out)
+
 ![](examples/functions/assert.py)
+![](examples/functions/assert.out)
 
 
 ## mycalc as a self testing module
 {id: self-testing-module}
 {i: __file__}
+
 ![](examples/functions/use_mycalc.py)
 
 ```

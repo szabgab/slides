@@ -1,8 +1,8 @@
-x = 2
-for y in [2, 9, 3]:
-    print(y)
-    if not x+y <= 5:
-        raise Exception
+def add(x, y):
+    return x * y
 
-
-
+for x, y, z in [(2, 2, 4), (9, 2, 11), (2, 3, 5)]:
+    print(f"add({x}, {y}) == {z}")
+    if add(x, y) != z:
+        raise Exception(f"add({x}, {y}) != {z}")
+        #raise AssertionError

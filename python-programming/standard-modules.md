@@ -123,6 +123,7 @@ echo $$
 {i: exists}
 {i: basename}
 {i: dirname}
+{i: expanduser}
 
 ```
 import os
@@ -137,9 +138,17 @@ os.path.isdir(path_to_thing)
 os.path.expanduser('~')
 ```
 
+## Traverse directory tree - list directories recursively
+{id: travers-directory-tree}
+{i: walk}
+
+![](examples/os/traverse_tree.py)
+
+
 
 ## os.path.join
 {id: os-path-join}
+
 ![](examples/os/path_join.py)
 
 
@@ -148,6 +157,7 @@ os.path.expanduser('~')
 {i: dir}
 {i: listdir}
 {i: path}
+
 ![](examples/os/dir.py)
 
 
@@ -155,18 +165,18 @@ os.path.expanduser('~')
 {id: expanduser}
 {i: expanduser}
 {i: ~}
+
 ![](examples/os/expanduser.py)
 
 
 ## External command with system
 {id: external-command-with-system}
+
 ![](examples/os/os_system.py)
 
 
-If you wanted to list the content of a directory in an os independent way you'd use <command>os.listdir('.')</command>
-or you could use the <command>glob.glob("*.py")</command> function to have a subset of files.
-
-
+If you wanted to list the content of a directory in an os independent way you'd use `os.listdir('.')`
+or you could use the `glob.glob("*.py")` function to have a subset of files.
 
 
 ## subprocess
@@ -186,12 +196,14 @@ In this example p is an instance of the subprocess.PIPE class. The command is ex
 
 ## subprocess in the background
 {id: subprocess-background}
+
 ![](examples/process/run_slow.py)
 
 
 ## Accessing the system environment variables from Python
 {id: environment-variables}
 {i: os.environ}
+
 ![](examples/os/environment.py)
 
 {aside}
@@ -202,6 +214,7 @@ os.environ is a dictionary where the keys are the environment variables and the 
 
 ## Set env and run command
 {id: set-env-and-run-command}
+
 ![](examples/os/set_env.py)
 
 {aside}
@@ -235,12 +248,14 @@ shutil.rmtree(path)
 {i: daylight}
 {i: gmtime}
 {i: strftime}
+
 ![](examples/other/mytime.py)
 
 
 ## sleep in Python
 {id: sleep-in-python}
 {i: sleep}
+
 ![](examples/os/sleep.py)
 
 ```
@@ -254,23 +269,27 @@ Elapsed time:3.501181125640869
 {id: datetime-now}
 {i: datetime}
 {i: strftime}
+
 ![](examples/sys/datetime_now.py)
 
 
 ## Converting string to datetime
 {id: converting-string-to-datetime}
 {i: strptime}
+
 ![](examples/sys/converting_string_to_datetime.py)
 
 
 ## datetime arithmeticis
 {id: datetime-arithmetics}
 {i: timedelta}
+
 ![](examples/sys/datetime_arithmetics.py)
 
 
 ## Rounding datetime object to nearest second
 {id: rounding-datetime}
+
 ![](examples/sys/datetime_rounding.py)
 
 
@@ -288,6 +307,7 @@ Elapsed time:3.501181125640869
 ## Sending Signal
 {id: sending-signal}
 {i: kill}
+
 ![](examples/signals/send_signal.py)
 
 ```
@@ -298,6 +318,7 @@ User defined signal 1: 30
 
 ## Catching Signal
 {id: catching-signal}
+
 ![](examples/signals/catch_signal.py)
 
 ```
@@ -309,6 +330,7 @@ after
 
 ## Catching Ctrl-C on Unix
 {id: catching-ctrl-c-on-unix}
+
 ![](examples/signals/ctrl_c.py)
 
 ```
@@ -328,11 +350,13 @@ KeyboardInterrupt
 
 ## Catching Ctrl-C on Unix confirm
 {id: catching-ctrl-c-on-unix-confirm}
+
 ![](examples/signals/catch_ctrl_c_confirm.py)
 
 
 ## Alarm signal and timeouts
 {id: alarm-signal}
+
 ![](examples/signals/alarm.py)
 
 

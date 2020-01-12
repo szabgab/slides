@@ -1,4 +1,6 @@
-x = 2
-for y in [2, 9, 3]:
-    print(y)
-    assert x+y <= 5
+def add(x, y):
+    return x * y
+
+for x, y, z in [(2, 2, 4), (9, 2, 11), (2, 3, 5)]:
+    print(f"add({x}, {y}) == {z}")
+    assert add(x, y) == z
