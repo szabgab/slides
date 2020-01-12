@@ -3,6 +3,7 @@ import re
 strings = [
     'banana',
     'apple',
+    'infinite loop',
 ]
 
 for s in strings:

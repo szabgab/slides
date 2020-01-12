@@ -1,5 +1,3 @@
-from __future__ import print_function
-
 import calc
 print(calc.add(7, 8))  # 15
 

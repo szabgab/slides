@@ -32,31 +32,28 @@ mymath/
     ...
     internal_use.py
 ```
+
 ![](examples/package/1/mymath/calc.py)
 ![](examples/package/1/mymath/__init__.py)
 
 
-
 ## Internal usage
 {id: internal-usage}
+
 ![](examples/package/1/mymath/internal_use.py)
 
 
 ## use module in package
 {id: use-package-module}
+
 ![](examples/package/use_project/proj1_1.py)
 
 
 ## use package (does not work)
 {id: use-package}
-![](examples/package/use_project/proj1_2.py)
 
-```
-Traceback (most recent call last):
-  File "proj1_2.py", line 6, in <module>
-    print(mymath.calc.add(4, 7))
-AttributeError: 'module' object has no attribute 'calc'
-```
+![](examples/package/use_project/proj1_2.py)
+![](examples/package/use_project/proj1_2.out)
 
 If we import the main package name, it does not have access to the module inside.
 
