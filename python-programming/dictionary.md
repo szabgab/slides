@@ -9,7 +9,6 @@
 * Values can be any object.
 
 
-
 ## When to use dictionaries
 {id: when-to-use-dictionaries}
 
@@ -19,12 +18,12 @@
 * Name of an attribute to value of the attribute.
 
 
-
 ## Dictionary
 {id: dictionary}
 {i: dictionary}
 {i: dict}
 {i: {}}
+
 ![](examples/dictionary/dict.py)
 
 
@@ -36,7 +35,6 @@
 * Keys are returned in seemingly random order.
 
 
-
 ## Loop over keys
 {id: loop-over-keys}
 {i: keys}
@@ -46,8 +44,11 @@
 ## Loop using items
 {id: loop-items}
 {i: items}
-![](examples/dictionary/loop_items.py)
+
 ![](examples/dictionary/loop_items_kv.py)
+![](examples/dictionary/loop_items_kv.out)
+
+![](examples/dictionary/loop_items.py)
 
 
 ## values
@@ -59,67 +60,65 @@
 ![](examples/dictionary/values.py)
 
 
-
 ## Not existing key
 {id: not-existing-key}
 
 If we try to fetch the value of a key that does not exist, we get an exception.
 
 ![](examples/dictionary/no_such_key.py)
+![](examples/dictionary/no_such_key.out)
 
 
 ## Get key
 {id: get-key}
 {i: get}
 
-If we use the **get** method, we get **None** if the key does not exist.
+If we use the `get` method, we get `None` if the key does not exist.
 
 ![](examples/dictionary/get_key.py)
+![](examples/dictionary/get_key.out)
 
-None will be interpreted as False, if checked as a boolean.
-
+`None` will be interpreted as `False`, if checked as a boolean.
 
 
 ## Does the key exist?
 {id: key-exists}
 {i: exists}
 {i: in}
+
 ![](examples/dictionary/exists.py)
+![](examples/dictionary/exists.out)
 
 
 ## Does the value exist?
 {id: value-exists}
 {i: values}
-![](examples/dictionary/in_values.py)
 
+![](examples/dictionary/in_values.py)
+![](examples/dictionary/in_values.out)
 
 
 ## Delete key
 {id: delete-key}
 {i: del}
 {i: pop}
+
 ![](examples/dictionary/delete.py)
+![](examples/dictionary/delete.out)
 
 
 ## List of dictionaries
 {id: list-of-dicts}
+
 ![](examples/dictionary/list_of_dicts.py)
-
-```
-[{'name': 'Foo Bar', 'email': 'foo@example.com'}, {'name': 'Qux Bar', 'email': 'qux@example.com',
-'address': 'Borg, Country', 'children': ['Alpha', 'Beta']}]
-
-Foo Bar
-Alpha
-
-['Foo Bar', 'Qux Bar']
-```
+![](examples/dictionary/list_of_dicts.out)
 
 
 ## Shared dictionary
 {id: shared-dictionary}
 
 ![](examples/dictionary/shared_memory.py)
+![](examples/dictionary/shared_memory.out)
 
 
 ## immutable collection: tuple as dictionary key

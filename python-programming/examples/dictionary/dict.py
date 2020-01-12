@@ -12,5 +12,5 @@ field = 'name'
 the_value = user[field]
 print(the_value)   # Foobar
 
-user['name'] = 'Foo Bar'
-print(user)      # {'name': 'Foo Bar', 'email': 'foo@bar.com'}
+user['name'] = 'Edith Piaf'
+print(user)      # {'name': 'Edith Piaf', 'email': 'foo@bar.com'}
