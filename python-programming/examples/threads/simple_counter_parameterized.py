@@ -1,9 +1,9 @@
-import threading, sys
-print = lambda x: sys.stdout.write("{}\n".format(x))
+import threading
+import sys
 
 num_threads, count_till = 3, 5
 
-class AsyncCount(threading.Thread):
+class ThreadedCount(threading.Thread):
     def run(self):
         thread = threading.current_thread()
         print('{} - start'.format(thread.name))
@@ -14,12 +14,11 @@ class AsyncCount(threading.Thread):
 
 threads = []
 for i in range(num_threads):
-    threads.append(AsyncCount())
+    threads.append(ThreadedCount())
 for t in threads:
     t.start()
 
-print('main - running {} threads including the main thread'
-    .format(threading.active_count()))
+print('main - running {} threads'.format(threading.active_count()))
 
 for t in threads:
     t.join()

@@ -1,0 +1,29 @@
+__init__  of Foo in <_MainThread(MainThread, started 139645405484864)>
+__init__  of Bar in <_MainThread(MainThread, started 139645405484864)>
+start run of Foo in <ThreadedCount(Foo, started 139645391374080)>
+count Foo of 1
+count Foo of 2
+start run of Bar in <ThreadedCount(Bar, started 139645382981376)>
+count Bar of 1
+main - running 3 threads
+count Foo of 3
+count Bar of 2
+count Foo of 4
+count Bar of 3
+count Foo of 5
+count Bar of 4
+count Foo of 6
+count Bar of 5
+count Foo of 7
+count Bar of 6
+count Foo of 8
+count Bar of 7
+count Foo of 9
+count Bar of 8
+count Foo of 10
+count Bar of 9
+end run   of Foo in <ThreadedCount(Foo, started 139645391374080)>
+count Bar of 10
+end run   of Bar in <ThreadedCount(Bar, started 139645382981376)>
+main - thread is done
+

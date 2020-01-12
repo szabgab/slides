@@ -1,5 +1,6 @@
-import threading, random, sys
-print = lambda x: sys.stdout.write("{}\n".format(x))
+import threading
+import random
+import sys
 
 thread_count = 5
 

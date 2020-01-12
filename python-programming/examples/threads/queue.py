@@ -1,15 +1,17 @@
-import threading, random, sys, time
-print = lambda x: sys.stdout.write("{}\n".format(x))
+import threading
+import random
+import sys
+import time
 
 thread_count = 5
 
 counter = 0
-queue = map(lambda x: ('main', random.randrange(5)), range(20))
+queue = list(map(lambda x: ('main', random.randrange(5)), range(20)))
 #print(queue)
 
 locker = threading.Lock()
 
-class AsyncCount(threading.Thread):
+class ThreadedCount(threading.Thread):
     def run(self):
         global counter
         my_counter = 0
@@ -36,7 +38,7 @@ class AsyncCount(threading.Thread):
 
 threads = []
 for i in range(thread_count):
-    threads.append(AsyncCount())
+    threads.append(ThreadedCount())
 for t in threads:
     t.start()
 for t in threads:

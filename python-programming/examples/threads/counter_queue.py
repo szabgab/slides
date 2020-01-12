@@ -1,6 +1,7 @@
-import threading, Queue
+import threading
+import Queue
 
-class AsyncCount(threading.Thread):
+class ThreadedCount(threading.Thread):
     def __init__(self, name, start, stop):
         threading.Thread.__init__(self)
         self.name = name
@@ -14,9 +15,9 @@ class AsyncCount(threading.Thread):
         print(self.name , "finished")
         return
 
-q = Queue()
-foo = AsyncCount("Foo", 1, 10)
-bar = AsyncCount("Bar", 1, 10)
+queue = Queue()
+foo = ThreadedCount("Foo", 1, 10)
+bar = ThreadedCount("Bar", 1, 10)
 foo.start()
 bar.start()
 print("main - running")

@@ -1,0 +1,39 @@
+Thread-1 - start
+Thread-1 - count 0
+Thread-1 - count 1
+Thread-2 - start
+Thread-1 - count 2
+Thread-2 - count 0
+Thread-1 - count 3
+Thread-3 - start
+main - running 4 threads
+Thread-2 - count 1
+Thread-1 - count 4
+Thread-2 - count 2
+Thread-1 - count 5
+Thread-2 - count 3
+Thread-1 - count 6
+Thread-2 - count 4
+Thread-1 - count 7
+Thread-2 - count 5
+Thread-1 - count 8
+Thread-2 - count 6
+Thread-1 - count 9
+Thread-2 - count 7
+Thread-1 - end
+Thread-2 - count 8
+Thread-2 - count 9
+Thread-2 - end
+Thread-3 - count 0
+Thread-3 - count 1
+Thread-3 - count 2
+Thread-3 - count 3
+Thread-3 - count 4
+Thread-3 - count 5
+Thread-3 - count 6
+Thread-3 - count 7
+Thread-3 - count 8
+Thread-3 - count 9
+Thread-3 - end
+main - thread is done
+
