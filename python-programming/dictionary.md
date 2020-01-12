@@ -30,6 +30,7 @@
 ## keys
 {id: dictionary-keys}
 {i: keys}
+
 ![](examples/dictionary/keys.py)
 
 * Keys are returned in seemingly random order.
@@ -38,6 +39,7 @@
 ## Loop over keys
 {id: loop-over-keys}
 {i: keys}
+
 ![](examples/dictionary/loop_keys.py)
 
 
