@@ -555,7 +555,8 @@ for both days and months: 2010-07-05
 
 ## Full example of previous
 {id: replace-string-assembly-full}
-![](examples/regex/assembly_process_full.pl)
+
+![](examples/regex/assembly_process_full.py)
 
 
 ## Split with regex
