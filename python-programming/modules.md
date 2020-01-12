@@ -249,7 +249,7 @@ python -m doctest fibonacci_doctest.py
 ```
 
 ```
-$python examples/functions/fibonacci_doctest.py
+python examples/functions/fibonacci_doctest.py
 
 **********************************************************************
 File ".../examples/functions/fibonacci_doctest.py", line 12, in __main__.fib
@@ -300,12 +300,14 @@ In this case the change in the behavior of division is only visible in the divis
 ## Export import with __all__
 {id: import-with-all}
 {i: __all__}
+
 ![](examples/modules/my_module2.py)
 ![](examples/modules/z.py)
 
 
 ## import module
 {id: import-module}
+
 ![](examples/modules/q.py)
 
 
@@ -321,6 +323,7 @@ In this case the change in the behavior of division is only visible in the divis
 
 ## Import multiple times
 {id: import-multiple-times}
+
 ![](examples/modules/import_multiple_times/code.py)
 ![](examples/modules/import_multiple_times/one.py)
 ![](examples/modules/import_multiple_times/two.py)
@@ -337,38 +340,28 @@ Take the number guessing game from the earlier chapter and move the internal whi
 to a function.
 
 
-
-
 Once that's done, move the function out to a separate file and use it as a module.
-
-
 
 
 ## Exercies: Scripts and modules
 {id: exercise-functional-scripts-and-modules}
-
 
 Take the number guessing game: if I run it as a script execute the whole game with repeated hidden numbers.
 If I load it as a module, then let me call the function that runs a single game with one hidden number.
 We should be able to even pass the hidden number as a parameter.
 
 
-
-
 ## Exercise: Module my_sum
 {id: exercise-module-sum}
 
-* Create a file called "my_simple_math.py" with three functions: "div(a, b)", "add(a, b)", that will divide and add the two numbers respectively.
-* Add another two functions called "test_div" and "test_add" that will test the above two functions using assert.
-* Add code that will run the tests if someone execute "python my_simple_math.py" running the file as if it was a script.
-* Create another file called "use_my_simple_math.py" that will use the functions from "my_math" module to calculate  2 + 5 * 7
-* Make sure when you run "python use_my_simple_math.py" the tests won't run.
+* Create a file called `my_simple_math.py` with two functions: `div(a, b)`, `add(a, b)`, that will divide and add the two numbers respectively.
+* Add another two functions called `test_div` and `test_add` that will test the above two functions using assert.
+* Add code that will run the tests if someone execute `python my_simple_math.py` running the file as if it was a script.
+* Create another file called `use_my_simple_math.py` that will use the functions from `my_math` module to calculate  2 + 5 * 7
+* Make sure when you run `python use_my_simple_math.py` the tests won't run.
 * Add documentation to the "add" and "div" functions to examples that can be used with doctest.
 
-
 * Can you run the tests when the file is loaded as a module?
-
-
 
 
 ## Exercise: Convert your script to module
@@ -376,8 +369,8 @@ We should be able to even pass the hidden number as a parameter.
 
 * Take one of your real script (from work). Create a backup copy.
 * Change the script so it can be import-ed as a module and then it won't automatically execute anything, but that it still works when executed as a script.
-* Add a new function to it called 'self_test' and in that function add a few test-cases to your code using 'assert'.
-* Write another script that will load your real file as a module and will run the 'self_test'.
+* Add a new function to it called `self_test` and in that function add a few test-cases to your code using 'assert'.
+* Write another script that will load your real file as a module and will run the `self_test`.
 * Let me know what are the dificulties!
 
 
