@@ -359,6 +359,54 @@ KeyboardInterrupt
 
 ![](examples/signals/alarm.py)
 
+## deep copy list
+{id: deep-copy-list}
+
+![](examples/modules/copy_list.py)
+
+```
+[{'name': 'Jane', 'email': 'joe@examples.com', 'phone': '1234'}, {'name': 'Mary', 'email': 'mary@examples.com'}, {'name': 'George'}]
+[{'name': 'Jane', 'email': 'joe@examples.com', 'phone': '1234'}, {'name': 'Mary', 'email': 'mary@examples.com'}, {'name': 'George'}]
+```
+
+![](examples/modules/shallow_copy_list.py)
+
+```
+[{'name': 'Jane', 'email': 'joe@examples.com', 'phone': '1234'}, {'name': 'Mary', 'email': 'mary@examples.com'}, {'name': 'George'}]
+[{'name': 'Jane', 'email': 'joe@examples.com', 'phone': '1234'}, {'name': 'Mary', 'email': 'mary@examples.com'}]
+```
+
+
+![](examples/modules/deep_copy_list.py)
+
+```
+[{'name': 'Jane', 'email': 'joe@examples.com', 'phone': '1234'}, {'name': 'Mary', 'email': 'mary@examples.com'}, {'name': 'George'}]
+[{'name': 'Joe', 'email': 'joe@examples.com'}, {'name': 'Mary', 'email': 'mary@examples.com'}]
+```
+
+
+## deep copy dictionary
+{id: deep-copy-dictionary}
+
+![](examples/modules/copy_dictionary.py)
+
+```
+{'name': 'Foo Bar', 'grades': {'math': 90, 'art': 100}, 'friends': ['Mary', 'John', 'Jane', 'George'], 'email': 'foo@bar.com'}
+{'name': 'Foo Bar', 'grades': {'math': 90, 'art': 100}, 'friends': ['Mary', 'John', 'Jane', 'George'], 'email': 'foo@bar.com'}
+```
+
+* [deepcopy](https://docs.python.org/library/copy.html#copy.deepcopy)
+
+
+![](examples/modules/deep_copy_dictionary.py)
+
+```
+{'name': 'Foo Bar', 'grades': {'math': 90, 'art': 100}, 'friends': ['Mary', 'John', 'Jane', 'George'], 'email': 'foo@bar.com'}
+{'name': 'Foo Bar', 'grades': {'math': 70, 'art': 100}, 'friends': ['Mary', 'John', 'Jane', 'George']}
+```
+
+
+
 
 ## Exercise: Catching Ctrl-C on Unix 2nd time
 {id: exercise-catching-ctrl-c-on-unix-count}
@@ -384,9 +432,7 @@ KeyboardInterrupt
 ```
 kill PID
 ```
+
 ![](examples/signals/catch_kill_15.py)
-
-
-
 
 
