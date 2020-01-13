@@ -335,6 +335,10 @@ python setup.py sdist
 ## Packaging applications (creating executable binaries)
 {id: packaging-applications}
 {i: py2exe}
+{i: Freeze}
+{i: py2app}
+{i: cx_Freeze}
+{i: PyInstaller}
 
 * [py2exe](http://www.py2exe.org/) on Windows (discontinued)
 * [Freeze](https://wiki.python.org/moin/Freeze) on Linux

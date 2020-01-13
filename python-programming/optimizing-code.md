@@ -46,7 +46,7 @@ Read more [performance tips](https://wiki.python.org/moin/PythonSpeed/Performanc
 
 Always profile before starting to optimize!
 
-* ![profile](http://docs.python.org/3/library/profile.html)
+* [profile](http://docs.python.org/library/profile.html)
 
 
 ## Slow example
@@ -128,7 +128,7 @@ The actual content is not that interesting.
 ## Exercise: benchmark list-comprehension, map, for
 {id: exercise-benchmark-list-comprehension-and-map}
 
-* Create several functions that accepts a list of numbers from 1 to 1000 and calculates their square.
+* Create several functions that accept a list of numbers from 1 to 1000 and calculate their square:
 * A function with a `for`-loop.
 * A function that uses `map`.
 * A function that uses list-comprehension.
@@ -145,8 +145,29 @@ The actual content is not that interesting.
 {id: exercise-sort-files}
 
 Write a script that given a path to a directory will print the files sorted by date.
+If you don't have one large folder, then use `os.walk` to get the path to the files of a whole directory tree.
+
 
 * Write a simple solution.
 * Profile.
 * Use [DSU](https://code-maven.com/slides/python-programming/sort-decorate-sort-undecorate).
+
+## Exercise: compare split words:
+{id: exercise-compare-split-words}
+
+We have three ways of splitting a string into words. Using `split`, using `re.split` and by going over it character-by-charcter.
+Which one is the fastest?
+
+![](examples/perf/split_to_words.py)
+
+## Exercise: count words
+{id: exercise-performance-of-word-coounting}
+
+Given a file count how many times each word appears.
+Have two implementations. One using two list and one using a dictionary.
+Profile the code and benchmark the two solutions.
+
+See `examples/lists/count_words_two_lists.py` and `examples/dictionary/count_words.py`
+
+
 
