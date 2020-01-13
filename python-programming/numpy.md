@@ -18,6 +18,7 @@
 {i: ndim}
 {i: dtype}
 {i: shape}
+
 ![](examples/numpy/array.py)
 
 * [Basic types](https://docs.scipy.org/doc/numpy/user/basics.types.html)
@@ -26,6 +27,7 @@
 
 ## NumPy 2D arrays
 {id: numpy-2d-arrays}
+
 ![](examples/numpy/2darray.py)
 
 
@@ -33,6 +35,7 @@
 {id: numpy-set-tyep}
 {i: dtype}
 {i: int8}
+
 ![](examples/numpy/set_type.py)
 
 
@@ -41,6 +44,7 @@
 {id: numpy-arrays-ones-and-zeros}
 {i: ones}
 {i: zeros}
+
 ![](examples/numpy/ones_and_zeros.py)
 
 
@@ -49,6 +53,7 @@
 {i: random}
 {i: default_rng}
 {i: integer}
+
 ![](examples/numpy/array_random.py)
 
 * [random sampling](https://docs.scipy.org/doc/numpy/reference/random/index.html)
@@ -58,22 +63,26 @@
 
 ## NumPy array type change by division (int to float)
 {id: numpy-array-type-change}
+
 ![](examples/numpy/array_type_change.py)
 
 
 ## Numpy: Elementwise Operations on Arrays
 {id: numpy-arrays}
+
 ![](examples/numpy/arrays.py)
 
 
 ## Numpy: Array methods
 {id: numpy-array-methods}
 {i: transpose}
+
 ![](examples/numpy/array_methods.py)
 
 
 ## Numpy: reference, not copy
 {id: numpy-array-references}
+
 ![](examples/numpy/array_references.py)
 
 
@@ -81,17 +90,20 @@
 ## Numpy: copy array
 {id: numpy-array-copy}
 {i: copy}
+
 ![](examples/numpy/array_copy.py)
 
 
 ## Numpy: casting
 {id: numpy-array-casting}
 {i: astype}
+
 ![](examples/numpy/array_casting.py)
 
 
 ## Numpy: indexing 1d array
 {id: numpy-indexing-1d-array}
+
 ![](examples/numpy/indexing_1d_array.py)
 
 
@@ -112,52 +124,64 @@ The slice in numpy does not copy the data structure
 ## Numpy: eye
 {id: numpy-slice-eye}
 {i: eye}
+
 ![](examples/numpy/create_eye.py)
 
 
 ## Numpy: Boolean indexing strings
 {id: numpy-boolean-indexing-string}
 {i: vectorize}
+
 ![](examples/numpy/boolean_indexing_string.py)
 
 
 ## Numpy: Filter matrix
 {id: numpy-filter-matrix}
-![](examples/numpy/filter_matrix.py)
 
+![](examples/numpy/filter_matrix.py)
 
 
 ## Numpy: Stat
 {id: numpy-stat}
-![](examples/numpy/stats.py)
 
+![](examples/numpy/stats.py)
 
 
 ## Numpy: Serialization
 {id: numpy-serialization}
-![](examples/numpy/serialization.py)
 
+![](examples/numpy/serialization.py)
 
 
 ## Numpy uint8
 {id: numpy-uint8}
 {i: uint8}
-![](examples/numpy/uint8.py)
 
+![](examples/numpy/uint8.py)
 
 
 ## Numpy int8
 {id: numpy-int8}
 {i: int8}
-![](examples/numpy/int8.py)
 
+![](examples/numpy/int8.py)
 
 
 ## Numpy: Append or vertically stack vectors and matrices (vstack)
 {id: numpy-vstack}
 {i: vstack}
+
 ![](examples/numpy/vstack.py)
 
+## Load from Matlab file
+{id: matlab-load}
 
+![](examples/matlab/load.py)
 
+* `numpy.ndarray`
+
+## Save as Matlab file
+{id: matlab-save}
+
+![](examples/matlab/save.py)
 
