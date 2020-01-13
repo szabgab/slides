@@ -351,26 +351,9 @@ examples/jupyter/numpy_matrix.ipynb
 examples/jupyter/seaborn_tips.ipynb
 ```
 
+## IPy Widgets
+{id: ipywidgets}
+{i: ipywidgets}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+* [Interact](https://ipywidgets.readthedocs.io/en/latest/examples/Using%20Interact.html)
+* [Widget list](https://ipywidgets.readthedocs.io/en/latest/examples/Widget%20List.html)
