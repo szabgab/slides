@@ -28,3 +28,5 @@ sample.db
 /python-programming/examples/package/build/
 /python-programming/examples/package/dist/
 /python-programming/examples/package/*.spec
+
+.mypy_cache/

@@ -1,0 +1,3 @@
+function.py:6: error: Argument 1 to "add" has incompatible type "str"; expected "int"
+function.py:6: error: Argument 2 to "add" has incompatible type "str"; expected "int"
+Found 2 errors in 1 file (checked 1 source file)
