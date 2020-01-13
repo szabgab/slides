@@ -49,7 +49,7 @@
 
 * [AsyncIO in Real Python](https://realpython.com/async-io-python/)
 * [asyncio](https://docs.python.org/library/asyncio.html)
-
+* [aiohttp](https://docs.aiohttp.org/)
 
 ## Async files
 {id: async-files}

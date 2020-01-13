@@ -489,4 +489,9 @@ Is this interesting at all ?
 
 ![](examples/threads/tasks.py)
 
+## Python from .NET
+{id: python-from-dotnet}
 
+TODO and add to dotnet
+
+TODO: example with async call in .NET getting back to python

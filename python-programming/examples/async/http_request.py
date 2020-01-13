@@ -1,18 +1,15 @@
 import aiohttp
 import asyncio
-#from aiohttp import ClientSession
 
+async def fetch(session, url):
+    async with session.get(url) as response:
+        return await response.text()
 
-urls = ['https://code-maven.com/', 'https://code-maven.com/slides']
-
-async def fetch():
+async def main():
     async with aiohttp.ClientSession() as session:
-        tasks = []
-        for url in urls:
-            resp = await session.request(method="GET", url=url)
-            html = await resp.text()
-            print("got it")
-        await asyncio.gather(*tasks)
+        html = await fetch(session, 'http://python.org')
+        print(html)
+        print("OK")
 
-asyncio.run(fetch())
+asyncio.run(main())
 
