@@ -41,6 +41,16 @@ Make sure `csc.exe` is somewhere in your PATH or use the full path to it:
 
 "\Users\Gabor Szabo\Microsoft.Net.Compilers.3.4.0\tools\csc.exe" /t:library MyMath.cs
 
+## Python and .NET console
+{id: python-and-dotnet-console}
+
+![](examples/dotnet/net_console.py)
+
+```
+python net_console.py
+```
+
+
 ## Python and .NET examples
 {id: python-and-dotnet}
 
@@ -48,7 +58,7 @@ Make sure `csc.exe` is somewhere in your PATH or use the full path to it:
 ![](examples/dotnet/math/myapp.py)
 
 ```
-css /t:library MyMath.cs
+csc /t:library MyMath.cs
 python myapp.py
 ```
 
