@@ -21,3 +21,10 @@ sample.db
 *.pdb
 *.dll
 *.exe
+
+/python-programming/examples/package/*/dist/
+/python-programming/examples/package/*/mymath.egg-info/
+
+/python-programming/examples/package/build/
+/python-programming/examples/package/dist/
+/python-programming/examples/package/*.spec

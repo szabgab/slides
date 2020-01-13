@@ -1,1 +1,1 @@
-import calc
+import mymath.calc

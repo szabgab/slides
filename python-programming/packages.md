@@ -6,11 +6,11 @@
 {id: why-create-package}
 
 {aside}
+As a module gets larger and larger it will be more and more difficult to maintain.
 
-As the size of a module growth it will be more and more difficult to maintain.
 It might be eaier if we split it up into multiple files and put those files inside
 a directory. A 'package' is just that. A bunch of Python modules that belong together
-and are place in a directory hierarchy. In order to tell Python that you really
+and are placed in a directory hierarchy. In order to tell Python that you really
 mean these files to be a package one must add a file called __init__.py in
 each directory of the project. In the most simple case the file can be empty.
 {/aside}
@@ -18,7 +18,6 @@ each directory of the project. In the most simple case the file can be empty.
 * Code reuse
 * Separation of concerns
 * Easier distribution
-
 
 
 ## Create package
@@ -43,10 +42,16 @@ mymath/
 ![](examples/package/1/mymath/internal_use.py)
 
 
-## use module in package
+```
+cd examples/package
+python 1/mymath/internal_use.py
+```
+
+## use module in package - relative path
 {id: use-package-module}
 
 ![](examples/package/use_project/proj1_1.py)
+![](examples/package/use_project/proj1_1.out)
 
 
 ## use package (does not work)
@@ -93,11 +98,10 @@ The directory layout of a package:
 
 
 ```
-root/
-  setup.py
-  mymath/
-     __init__.py
-     calc.py
+├── mymath
+│   ├── calc.py
+│   └── __init__.py
+└── setup.py
 ```
 ![](examples/package/2/setup.py)
 
@@ -147,10 +151,13 @@ removing 'mymath-0.1' (and everything under it)
 
 ## Install Package
 {id: package-install}
+{i: pip}
+{i: easy_install}
 
 
-
-
+```
+$ pip install dist/mymath-0.1.tar.gz
+```
 
 ```
 $ easy_install --prefix ~/python/  dist/mymath-0.1.tar.gz
@@ -160,9 +167,7 @@ $ easy_install --prefix ~/python/  dist/mymath-0.1.tar.gz
 $ python setup.py install --prefix ~/python/
 ```
 
-Upload to [PyPi](https://pypi.python.org/)
-
-
+Upload to [PyPi](https://pypi.python.org/) or distribute to your users.
 
 
 ## Dependencies
@@ -193,13 +198,18 @@ can release a new version of the package.
 {id: package-other-file}
 
 ```
-root/
-  setup.py
-  README.rst
-  MANIFEST.in
-  mymath/
-    __init__.py
-    calc.py
+.
+├── bin
+│   ├── runmymath.bat
+│   └── runmymath.py
+├── MANIFEST.in
+├── mymath
+│   └── test
+│       ├── __init__.py
+│       ├── test_all.py
+│       └── test_calc.py
+├── README.rst
+└── setup.py
 ```
 ![](examples/package/3/README.rst)
 ![](examples/package/3/MANIFEST.in)
@@ -308,7 +318,18 @@ python -m unittest discover
 
 ## setup.py
 {id: package-setup2}
+
 ![](examples/package/3/setup.py)
+
+
+## Run tests and create package
+{id: run-test-and-create-package}
+
+```
+python setup.py test
+python setup.py sdist
+```
+
 
 
 ## Packaging applications (creating executable binaries)
@@ -322,35 +343,63 @@ python -m unittest discover
 * [PyInstaller](http://www.pyinstaller.org/) cross-platform
 
 
+## Using PyInstaller
+{id: pyinstaller}
+
+![](examples/package/hello_world.py)
+
 ```
 pip install pyinstaller
 pyinstaller myscript.py
+pyinstaller --onefile hello_world.py
+```
+
+* See the results in dist/
+
+## Other PyInstaller examples
+{id: pyinstaller-and-sys}
+
+Use this to see where does the packaged version of our code look for modules:
+
+![](examples/package/syspath.py)
+
+
+Use this to see how to pass command line parameters to the packaged exe:
+
+![](examples/package/cli.py)
+
+
+## Other
+{id: pyinstaller-other}
+
+```
 pyinstaller --onefile --windowed myscript.py
 ```
 
-```
-easy_install py2app
+## Py2app for Mac
+{id: py2app}
 
+```
+pip install py2app
 py2applet examples/basics/hello.py
 ```
-
 
 
 ## Exercise: package
 {id: exercise-package}
 
-* Install easy_install
-* Go to Pypi, find some interesting module and install it in a non-standard location.
-* Check if it is installed (try to import it in a python script.
+* Go to [Pypi](https://pypi.org/), find some interesting module and install it in a non-standard location (or in a virtualenv)
+* Check if it was installed (try to import it in a python script).
 * Take one of the previously created modules, and create a package for it.
 * Install this new package in a non-standard location.
 * Check if it works from some other place in your file-system.
 
+* Take the mymath package, add another method, add tests and create the distubtable zip file.
 
-Take the mymath package, add another method, add tests and create the distubtable zip file.
+## Exercise: create executable
+{id: exercise-create-executable}
 
-
-
-
+* Go over some of the examples in the course and package that.
+* Package a script using some of your favorite modules.
 
 

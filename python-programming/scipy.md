@@ -18,6 +18,8 @@
 * [Showing speed improvement using a GPU with CUDA and Python with numpy on Nvidia Quadro 2000D](https://code-maven.com/showing-speed-improvement-with-gpu-cuda-numpy)
 
 
+* [Octave](https://www.gnu.org/software/octave/)
+
 
 ## Data Analysis resources
 {id: data-analysis-resources}
