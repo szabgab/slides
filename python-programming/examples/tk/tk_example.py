@@ -10,6 +10,7 @@ class Example(tk.Frame):
         print("hi there, everyone! ")
         print("Name: {}".format(self.name.get()))
         print("Password: {}".format(self.password.get()))
+        print("count: {}".format(self.count.get()))
         self.password.delete(0, 'end')
 
 
@@ -18,7 +19,6 @@ class Example(tk.Frame):
         self.QUIT["text"] = "QUIT"
         self.QUIT["fg"]   = "red"
         self.QUIT["command"] =  self.quit
-
         self.QUIT.pack({"side": "left"})
 
         # Simple Label widget:
@@ -33,6 +33,14 @@ class Example(tk.Frame):
         # Simple Label widget:
         self.password_title = tk.Label(self, text="Password:")
         self.password_title.pack({"side": "left"})
+
+        self.count = tk.IntVar()
+        self.count.set(2)
+        self.my_radio = []
+        radio = [(1, "One"), (2, "Two"), (3, "Three")]
+        for ix in range(len(radio)):
+            self.my_radio.append(tk.Radiobutton(self, text=radio[ix][1], variable=self.count, value=radio[ix][0]))
+            self.my_radio[ix].pack({"side": "bottom"})
 
         # In order to hide the text as it is typed (e.g. for Passwords)
         # set the "show" parameter:
