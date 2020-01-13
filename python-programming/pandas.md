@@ -152,6 +152,13 @@ cd examples/pandas/
 jupyter notebook genes.ipynb
 ```
 
+## Combine columns
+{id: pandas-combine-columns}
+
+![](examples/pandas/data.csv)
+![](examples/pandas/create_column.py)
+![](examples/pandas/create_column.out)
+
 
 ## Pandas more
 {id: pandas-more}
