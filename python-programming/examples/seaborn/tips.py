@@ -21,4 +21,4 @@ plot = sns.relplot(
     data = tips)
 
 # print(type(plot))    # seaborn.axisgrid.FacetGrid
-plot.savefig("out.png")
+plot.savefig("tips.png")

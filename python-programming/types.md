@@ -28,9 +28,9 @@ pip install mypy
 ## Types of function parameters
 {id: types-of-function-parameters}
 
-![](examples/types/variables.py)
-![](examples/types/variables.out)
-![](examples/types/variables.mypy)
+![](examples/types/function.py)
+![](examples/types/function.out)
+![](examples/types/function.mypy)
 
 ## Types used properly
 {id: types-used-properly}

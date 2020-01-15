@@ -345,6 +345,7 @@ python setup.py sdist
 * [py2app](https://py2app.readthedocs.io/en/latest/) on Mac
 * [cx_Freeze](http://cx-freeze.sourceforge.net/) cross-platform
 * [PyInstaller](http://www.pyinstaller.org/) cross-platform
+* [Auto Py To Exe](https://nitratine.net/blog/post/auto-py-to-exe/)
 
 
 ## Using PyInstaller

@@ -68,8 +68,15 @@ of threads and the range of the counter.
 
 ![](examples/threads/counter_central_plain.py)
 
+## Thread load
+{id: thread-load}
+
+![](examples/threads/thread_load.py)
+
 ## Exercise: thread queue
 {id: exercise-thread-queue}
+
+TODO: List of files, process each file. (get size of file, ...)
 
 Write an application that handles a queue of jobs in N=5 threads.
 Each job contains a number between 0-5.
@@ -78,7 +85,6 @@ of second (as an imitation of actual work it should be doing). When finished it 
 for another job. If there are no more jobs in the queue, the thread can close itself.
 
 ![](examples/threads/queue_skeleton.py)
-
 
 If that's done, change the code so that each thread will generate a random
 number between 0-5 (for sleep-time) and in 33% of the cases it will add it to the central queue

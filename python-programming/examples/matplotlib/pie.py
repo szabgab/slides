@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 
 # Make a square figure and axes
 plt.figure(1, figsize=(6, 6))
-ax = plt.axes([0.1, 0.1, 0.8, 0.8])
+#ax = plt.axes([0.1, 0.1, 0.8, 0.8])
 
 labels = 'Frogs', 'Hogs', 'Dogs', 'Logs'
 fracs = [15, 30, 45, 10]
