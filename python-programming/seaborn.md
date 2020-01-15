@@ -16,6 +16,7 @@ to a variable, and call `matplotlib.pyplot.show(r)`.
 {id: seaborn-tip}
 ![](examples/seaborn/tips.py)
 
+![](examples/seaborn/tips.png)
 
 ## Seaborn Anscombes Quartet
 {id: seaborn-anscombes-quartet}
