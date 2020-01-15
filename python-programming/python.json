@@ -75,6 +75,7 @@
         "design-patterns.md",
         "parallel.md",
         "forking.md",
+        "multiprocess.md",
         "threads.md",
         "async.md",
         "twisted.md",
