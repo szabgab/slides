@@ -20,7 +20,7 @@ For Linux and OSX I recommend using **virtualenv** and installing with **pip**.
 ```
 virtualenv -p python3 ~/venv3
 source ~/venv3/bin/activate
-pip install juypyter
+pip install jupyter
 ```
 
 Run
