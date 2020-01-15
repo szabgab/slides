@@ -9,7 +9,7 @@
 
 Analyze N files in parallel.
 
-![](examples/advanced/multiprocess_files.py)
+![](examples/multiprocess/multiprocess_files.py)
 
 ```
 $ python multiprocess_files.py 3 multiprocess_*
@@ -33,7 +33,7 @@ The returned results can be any Python datastructure. A dictionary is usually a 
 ## Multiprocess load
 {id: multiprocess-load}
 
-![](examples/advanced/multiprocess_load.py)
+![](examples/multiprocess/multiprocess_load.py)
 
 
 ## Multiprocess: Pool
@@ -44,7 +44,7 @@ The returned results can be any Python datastructure. A dictionary is usually a 
 `Pool(3)` creates 3 child-processes and let's them compute the values. `map`
 returns the results in the same order as the input came in.
 
-![](examples/advanced/multiprocess_pool.py)
+![](examples/multiprocess/multiprocess_pool.py)
 
 ```
 python multiprocess_pool.py  11 3
@@ -54,7 +54,7 @@ python multiprocess_pool.py  100 5
 
 ## Multiprocess load async
 {id: multiprocess-load-async}
-![](examples/advanced/multiprocess_pool_async.py)
+![](examples/multiprocess/multiprocess_pool_async.py)
 
 
 ## Multiprocess and logging
@@ -62,7 +62,7 @@ python multiprocess_pool.py  100 5
 
 Tested on Windows
 
-![](examples/parallel/multiprocessing_and_logging.py)
+![](examples/multiprocess/multiprocessing_and_logging.py)
 
 ## Exercise: fork return data
 {id: exercise-fork-return-data}
@@ -101,7 +101,6 @@ Create a file with 100 URLs (maybe download the https://code-maven.com/sitemap.x
 * Deal with encoding.
 * Replace continue by return, include None in results.
 * It has some 2 sec overhead, but then 20 items reduced from 18 sec to 7 sec using pool of 5.
-
 
 ![](examples/parallel/fetch_urls_multiprocess.py)
 
