@@ -8,7 +8,6 @@ google-gcp
 groovy
 jenkins-intro
 linux-intro
-nodejs
 pair-programming
 perl-intro
 python-mocking

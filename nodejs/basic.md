@@ -1,5 +1,5 @@
-# NodeJS
-{id: index}
+# NodeJS basic
+{id: nodejs-index}
 
 ## Self introduction
 {id: self-introduction}
