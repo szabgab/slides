@@ -1,59 +1,63 @@
 # NodeJS basic
 {id: nodejs-index}
 
-## Self introduction
-{id: self-introduction}
-
-* [Gábor Szabó](https://www.linkedin.com/in/szabgab/) @szabgab
-* Help organizations generate value faster in a sustainable way.
-* [Code Mavens Meetup](https://www.meetup.com/Code-Mavens/)
-
-
 ## What is NodeJS ?
 {id: what-is-nodejs}
 
-* Node is a runtime environment for executing JavaScript code
-* Non-blocking (asynchronous) architecture
-* It has an event loop with event queue
-* It is good for network-intensive apps, but not good for CPU intensive applications
+* Node is a runtime environment for executing JavaScript code.
+* Non-blocking (asynchronous) architecture.
+* It has an event loop with event queue.
+* It is good for network-intensive apps, but not good for CPU intensive applications.
 * Running on top of the V8 Virtual Machine written by Google, which is also the JavaScript engine in Chrome.
 
-## Installation
+## NodeJS Installation
 {id: installation}
 
 * [NodeJS](http://nodejs.org/)  pick the LTS
 
-```
-whet https://nodejs.org/dist/v10.16.0/node-v10.16.0-linux-x64.tar.xz
-tar xf ~/Downloads/node-v10.16.0-linux-x64.tar.xz
-sudo mv node-v10.16.0-linux-x64/ /opt
-sudo chown -R root.root /opt/node-v10.16.0-linux-x64/
+## NodeJS Installation Linux
+{id: installation-linux}
 
-export PATH=$PATH:/opt/node-v10.16.0-linux-x64/bin
+By the time you are reading this, there might have a newer LTS version already.
+
+```
+export NODEJS=v12.14.1
+wget https://nodejs.org/dist/$NODEJS/node-$NODEJS-linux-x64.tar.xz
+tar xf node-$NODEJS-linux-x64.tar.xz
+sudo mv node-$NODEJS-linux-x64/ /opt
+sudo chown -R root.root /opt/node-$NODEJS-linux-x64/
+```
+
+Add it to the PATH:
+
+```
+echo "export PATH=\$PATH:/opt/node-$NODEJS-linux-x64/bin" >> ~/.bashrc
 ```
 
 ## NodeJS version
 {id: check-nodejs-version}
+{i: node}
 
 ```
 $ which node
-/opt/node-v10.16.0-linux-x64/bin/node
+/opt/node-v12.14.1-linux-x64/bin/node
 
 $ node -v
-v10.16.0
-
+v12.14.1
 ```
 
 ## Hello World
 {id: hello-world}
-
+{i: console}
+{i: log}
 
 ![](examples/node-intro/hello_world.js)
 
 ```
 $ node examples/node-intro/hello_world.js
-Hello World
 ```
+
+![](examples/node-intro/hello_world.out)
 
 ## Hello World with sh
 {id: hello-world-sh}
