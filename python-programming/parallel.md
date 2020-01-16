@@ -13,6 +13,8 @@
 * Multi-threaded
 
 
+## Performance Monitoring
+{id: performance-monitoring}
 
-
-
+* Linux, OSX: htop
+* Windows: Performance Monitor

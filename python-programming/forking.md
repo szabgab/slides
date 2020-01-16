@@ -1,17 +1,19 @@
 # Forking
 {id: forking-processes}
 
-## Performance Monitoring
-{id: performance-monitoring}
+## Fork
+{id: fork}
+{i: fork}
+{i: getpid}
+{i: wait}
 
-* Linux, OSX: htop
-* Windows: Performance Monitor
-
+![](examples/fork/simple_fork.py)
 
 ## Forking
 {id: forking}
 {i: fork}
 {i: wait}
+
 ![](examples/fork/fork.py)
 
 ```
@@ -102,13 +104,6 @@ The [pickle](http://docs.python.org/library/pickle.html) module was designed for
 
 The [json](https://docs.python.org/library/json.html) module can be used too.
 
-## Fork
-{id: fork}
-{i: fork}
-{i: getpid}
-{i: wait}
-
-![](examples/fork/simple_fork.py)
 
 
 ## Fork with random
@@ -137,4 +132,4 @@ In the parent process, when one of the children exits, check if there is a file 
 ## Solution: fork return data
 {id: solution-fork-return-data}
 
-
+![](examples/fork/compute_with_fork.py)
