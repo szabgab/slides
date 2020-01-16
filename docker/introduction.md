@@ -48,7 +48,7 @@ Install [Docker](https://www.docker.com/)
 
 * Debian/Ubuntu: `apt-get install docker.io`
 * CentOS: `yum install docker`
-* MS Windows: Download [Docker for MS Windows](https://docs.docker.com/docker-for-windows/install/)
+* MS Windows: Download [Docker Desktop for Windows](https://docs.docker.com/docker-for-windows/install/)
 * Mac OSX: Download [Docker for Mac OSX](https://docs.docker.com/docker-for-mac/install/)
 
 * [Post Install](https://docs.docker.com/install/linux/linux-postinstall/)
@@ -214,7 +214,7 @@ docker rmi busybox
 {id: download-image}
 
 ```
-docker pull ubuntu:19.04
+docker pull ubuntu:19.10
 
 ```
 
@@ -222,11 +222,11 @@ docker pull ubuntu:19.04
 {id: use-ubuntu}
 
 ```
-docker run --rm ubuntu:19.04 echo hello
+docker run --rm ubuntu:19.10 echo hello
 ```
 
 ```
-docker run -it --name ubu ubuntu:19.04
+docker run -it --name ubu ubuntu:19.10
 
 # htop
 # apt-get update
@@ -375,7 +375,7 @@ docker history IMAGE
 to see the layers
 
 ```
-$ docker history ubuntu:19.04
+$ docker history ubuntu:19.10
 IMAGE               CREATED             CREATED BY                                      SIZE
 86f1f717b6d8        2 weeks ago         /bin/sh -c #(nop)  CMD ["/bin/bash"]            0B
 <missing>           2 weeks ago         /bin/sh -c mkdir -p /run/systemd && echo 'do…   7B
@@ -438,6 +438,8 @@ $ docker build -t mydocker .
 
 ```
 $ docker run -it --rm -v /home/gabor/work/slides/docker/examples/python-3:/opt/  mydocker
+
+$ docker run -it --rm -v c:\Users\Gabor Szabo\work\slides\docker\examples python-3:/opt/  mydocker
 
 # cd /opt
 # ls -l
@@ -965,6 +967,5 @@ Using [https://hub.docker.com/r/tiangolo/uwsgi-nginx-flask/](https://hub.docker.
 docker build -t myapp .
 docker run -it --rm -p5001:80 myapp
 ```
-
 
 

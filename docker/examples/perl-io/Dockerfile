@@ -1,3 +1,3 @@
-FROM ubuntu:19.04
+FROM ubuntu:19.10
 COPY greetings.pl /opt/
 CMD  perl /opt/greetings.pl

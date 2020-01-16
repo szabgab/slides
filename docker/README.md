@@ -49,3 +49,7 @@ Use of uninitialized value $name in scalar chomp at /opt/greetings.pl line 7.
 Use of uninitialized value $name in concatenation (.) or string at /opt/greetings.pl line 8.
 What is your name? Hello , how are you today?
 
+
+How to run develop Python programs using PyCharm or Vistual Studio Code on Windows and run the code inside a Docker container?
+
+
