@@ -1,11 +1,24 @@
 # Multiprocess
 {id: multiprocess}
 
+## Multiprocess CPU count
+{id: multiprocess-cpu-count}
+{i: cpu_count}
+
+![](examples/multiprocess/cpu_count.py)
+
+## Multiprocess Process
+{id: multiprocess-process}
+{i: Process}
+
+![](examples/multiprocess/cpu_count.py)
+
 
 ## Multiprocess N files: Pool
 {id: multiprocess-file}
 {i: multiprocess}
 {i: Pool}
+{i: map}
 
 Analyze N files in parallel.
 
@@ -32,6 +45,9 @@ The returned results can be any Python datastructure. A dictionary is usually a 
 
 ## Multiprocess load
 {id: multiprocess-load}
+{i: multiprocess}
+{i: Pool}
+{i: map}
 
 ![](examples/multiprocess/multiprocess_load.py)
 
@@ -40,6 +56,7 @@ The returned results can be any Python datastructure. A dictionary is usually a 
 {id: multiprocess-pool}
 {i: multiprocess}
 {i: Pool}
+{i: map}
 
 `Pool(3)` creates 3 child-processes and let's them compute the values. `map`
 returns the results in the same order as the input came in.
@@ -54,23 +71,20 @@ python multiprocess_pool.py  100 5
 
 ## Multiprocess load async
 {id: multiprocess-load-async}
+{i: imap}
+{i: map_async}
+
 ![](examples/multiprocess/multiprocess_pool_async.py)
 
 
 ## Multiprocess and logging
 {id: multiprocess-and-loggin}
+{i: multiprocess}
+{i: logging}
 
 Tested on Windows
 
 ![](examples/multiprocess/multiprocessing_and_logging.py)
-
-## Exercise: fork return data
-{id: exercise-fork-return-data}
-
-Allow the child process to return data to the parent process. Before exiting from the child process, serialize the data-structure you want to send back and save
-in a file that corresponds to the parent process and the child process. (eg. created from the PID of the paraent process and the PID of the child process)
-In the parent process, when one of the children exits, check if there is a file corresponding to this child process, read the file and de-serialize it.
-
 
 ## Exercise: Process N files in parallel
 {id: exercise-process-n-files-in-parallel}

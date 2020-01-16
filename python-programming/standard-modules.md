@@ -251,7 +251,6 @@ shutil.rmtree(path)
 
 ![](examples/other/mytime.py)
 
-
 ## sleep in Python
 {id: sleep-in-python}
 {i: sleep}
@@ -263,6 +262,13 @@ hello 1475217162.472256
 world 1475217165.973437
 Elapsed time:3.501181125640869
 ```
+
+## timer
+{id: timer}
+
+More time-related examples.
+
+![](examples/other/timer.py)
 
 
 ## Current date and time datetime now
