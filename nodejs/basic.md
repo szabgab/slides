@@ -59,12 +59,33 @@ $ node examples/basic/hello_world.js
 
 ![](examples/basic/hello_world.out)
 
+## Comments
+{id: comments}
+{i: //}
+
+
+![](examples/basic/comments.js)
+![](examples/basic/comments.out)
+
+
+## Exercise: Hello World
+{id: exercis-hello-world}
+
+* The primary goal of this exercise is to make sure you have your environment ready to write more code.
+* Create a file called `hello.js` and make it print "Hello World".
+* Run the code from the command line.
+* Run the code from your IDE, if you use one.
+* Add some comments to your code and check if you can still run it.
+
+
 ## Hello World with sh
 {id: hello-world-sh}
 
+Unix-specific issue:
+
 ![](examples/basic/hello_world_sh.js)
 
-Make it executable:
+Make the file executable:
 
 ```
 chmod +x examples/basic/hello_world_sh.js
@@ -76,11 +97,30 @@ Run it directly
 ./examples/basic/hello_world_sh.js
 ```
 
+## Literal Values and types
+{id: literal-values}
+{i: typeof}
+{i: number}
+{i: string}
+{i: boolean}
+
+
+![](examples/basic/values.js)
+
+## Variables
+{id: variables}
+{i: let}
+{i: var}
+{i: const}
+
+There are several ways to start using "variables". Even without declaring them first. For now we'll use the `let` keyword.
+
+![](examples/basic/variables.js)
+
 ## Variables with let
 {id: variables-with-let}
 
-
-
+![](examples/basic/add.js)
 
 ## Hello World in function
 {id: hello-world-in-function}
@@ -95,6 +135,18 @@ Run it directly
 
 ![](examples/basic/hello_person.js)
 ![](examples/basic/hello_person.out)
+
+## for loop
+{id: for-loop}
+{i: for}
+
+![](examples/basic/for_loop.js)
+![](examples/basic/for_loop.out)
+
+## Array
+{id: array}
+
+![](examples/basic/array.js)
 
 ## Command line arguments (argv)
 {id: command-line-arguments}
@@ -140,8 +192,8 @@ Try: `node argv_foreach.js Hello my world`
 ## Define function with arrow notation
 {id: define-function-with-arrow-notation}
 
-![](examples/basic/add.js)
-![](examples/basic/add.out)
+![](examples/basic/add_function.js)
+![](examples/basic/add_function.out)
 
 ## setTimeout
 {id: set-timeout}
@@ -384,15 +436,4 @@ debug> quit
 * [Node inspector](https://github.com/node-inspector/node-inspector)
 * Eclipse plugin
 
-## for loop
-{id: for-loop}
-{i: for}
-
-![](examples/basic/for_loop.js)
-![](examples/basic/for_loop.out)
-
-## Array
-{id: array}
-
-![](examples/basic/array.js)
 
