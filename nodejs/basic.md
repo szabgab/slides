@@ -78,6 +78,7 @@ Run it directly
 
 ## Hello World in function
 {id: hello-world-in-function}
+{i: function}
 
 ![](examples/node-intro/hello_world_function.js)
 
@@ -89,8 +90,9 @@ Run it directly
 
 ## Command line arguments (argv)
 {id: command-line-arguments-foreach}
+{i: forEach}
 
-[](https://nodejs.org/docs/latest/api/process.html#process_process_argv)o
+[argv](https://nodejs.org/docs/latest/api/process.html#process_process_argv)
 
 ![](examples/node-intro/argv_foreach.js)
 
@@ -352,65 +354,6 @@ node
 Ctrl-d
 ```
 
-
-## npm
-{id: npm}
-
-* [npm](https://www.npmjs.com/)
-* Private npm repository in the cloud: https://gemfury.com/
-
-## npm init
-{id: npm-init}
-
-```
-npm init
-```
-
-This will create the package.json file.
-
-## package json
-{id: package-json}
-
-![](examples/manual/package.json)
-
-## npm install
-{id: npm-install}
-
-will install in the `node_modules` folder in the directory where the package.json can be found
-
-```
-npm install module
-npm uninstall module
-```
-
-## Semanic Versioning
-{id: semantic-versionins}
-
-* [About Semantic Versioning](https://docs.npmjs.com/about-semantic-versioning)
-* [Semantic version calculator](https://semver.npmjs.com/)
-
-```
-^1.2.3   means 1.x.x
-~1.2.3  means  1.2.x
-1.2.3   exact version number
-```
-
-## Express
-{id: express}
-
-```
-npm install express
-```
-
-![](examples/web-express/hello_world.js)
-
-
-## npx
-{id: npx}
-
-[](https://www.npmjs.com/package/npx)
-
-https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b
 
 
 ## Other
