@@ -391,4 +391,8 @@ debug> quit
 ![](examples/node-intro/for_loop.js)
 ![](examples/node-intro/for_loop.out)
 
+## Array
+{id: array}
+
+![](examples/node-intro/array.js)
 
