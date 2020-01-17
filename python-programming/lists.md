@@ -307,7 +307,7 @@ Implement a Reverse Polish Calculator
 
 ![](examples/lists/reverse_polish_calculator.py)
 
-## Solution: Reverse Polish calculator (stack) with lists
+## Solution: Reverse Polish calculator (stack) with deque
 {id: solution-stack-deque}
 
 ![](examples/lists/reverse_polish_calculator_deque.py)
