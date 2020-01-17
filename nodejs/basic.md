@@ -81,39 +81,71 @@ Run it directly
 {i: function}
 
 ![](examples/node-intro/hello_world_function.js)
+![](examples/node-intro/hello_world_function.out)
 
 
 ## Parameter passing to function
 {id: parameter-passing-to-function}
 
 ![](examples/node-intro/hello_person.js)
+![](examples/node-intro/hello_person.out)
 
 ## Command line arguments (argv)
+{id: command-line-arguments}
+{i: process}
+{i: argv}
+
+Throught the [process](https://nodejs.org/api/process.html) object we can access the command line of our program.
+The first value is `node` itself. The second value is our code, then come the values from that the user supplied.
+
+![](examples/node-intro/argv.js)
+
+```
+$ node argv.js "hello world" Foo
+```
+
+```
+4
+[
+  '/opt/node-v12.14.1-linux-x64/bin/node',
+  '/home/gabor/work/slides/nodejs/examples/node-intro/argv.js',
+  'hello world',
+  'Foo'
+]
+
+/opt/node-v12.14.1-linux-x64/bin/node
+/home/gabor/work/slides/nodejs/examples/node-intro/argv.js
+hello world
+Foo
+undefined
+```
+
+## Command line arguments - forEach (argv)
 {id: command-line-arguments-foreach}
 {i: forEach}
 
 [argv](https://nodejs.org/docs/latest/api/process.html#process_process_argv)
 
+Try: `node argv_foreach.js Hello my world`
+
 ![](examples/node-intro/argv_foreach.js)
-
-## Command line arguments (argv)
-{id: command-line-arguments}
-
-![](examples/node-intro/argv.js)
-
-```
-node examples/node-intro/argv.js "hello world"
-3
-hello world
-```
+![](examples/node-intro/argv_foreach.out)
 
 ## Define function with arrow notation
 {id: define-function-with-arrow-notation}
 
 ![](examples/node-intro/add.js)
+![](examples/node-intro/add.out)
 
 ## setTimeout
 {id: set-timeout}
+{i: setTimeout}
+
+Delayed execution, callback function.
+
+* First we use `setTimeout` to schedule an anonymous function to be executed 1000 ms later.
+* Then we print "hello" to the console.
+* Then, after a second, the functions starts running and prints "world"
 
 ![](examples/node-intro/with_timeout.js)
 
@@ -125,6 +157,9 @@ world
 
 ## setInterval
 {id: set-interval}
+{i: setInterval}
+
+* `setInterval` allows for repeated calls. We can stop this infinite calling using Ctrl-C.
 
 ![](examples/node-intro/with_interval.js)
 
@@ -136,6 +171,23 @@ world
 world
 ^C
 ```
+
+## clearInterval
+{id: clear-interval}
+{i: clearInterval}
+{i: setInterval}
+{i: setTimeout}
+
+* `setInterval` returns an identifier that can later be used to stop the scheduled process.
+* `clearInterval` will stop a scheduled process.
+
+![](examples/node-intro/with_clearinterval.js)
+
+```
+$ node examples/node-intro/with_clearinterval.js
+```
+
+![](examples/node-intro/with_clearinterval.out)
 
 ## Template literals (template strings)
 {id: template-literals}
