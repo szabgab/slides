@@ -51,29 +51,29 @@ v12.14.1
 {i: console}
 {i: log}
 
-![](examples/node-intro/hello_world.js)
+![](examples/basic/hello_world.js)
 
 ```
-$ node examples/node-intro/hello_world.js
+$ node examples/basic/hello_world.js
 ```
 
-![](examples/node-intro/hello_world.out)
+![](examples/basic/hello_world.out)
 
 ## Hello World with sh
 {id: hello-world-sh}
 
-![](examples/node-intro/hello_world_sh.js)
+![](examples/basic/hello_world_sh.js)
 
 Make it executable:
 
 ```
-chmod +x examples/node-intro/hello_world_sh.js
+chmod +x examples/basic/hello_world_sh.js
 ```
 
 Run it directly
 
 ```
-./examples/node-intro/hello_world_sh.js
+./examples/basic/hello_world_sh.js
 ```
 
 ## Variables with let
@@ -86,15 +86,15 @@ Run it directly
 {id: hello-world-in-function}
 {i: function}
 
-![](examples/node-intro/hello_world_function.js)
-![](examples/node-intro/hello_world_function.out)
+![](examples/basic/hello_world_function.js)
+![](examples/basic/hello_world_function.out)
 
 
 ## Parameter passing to function
 {id: parameter-passing-to-function}
 
-![](examples/node-intro/hello_person.js)
-![](examples/node-intro/hello_person.out)
+![](examples/basic/hello_person.js)
+![](examples/basic/hello_person.out)
 
 ## Command line arguments (argv)
 {id: command-line-arguments}
@@ -104,7 +104,7 @@ Run it directly
 Throught the [process](https://nodejs.org/api/process.html) object we can access the command line of our program.
 The first value is `node` itself. The second value is our code, then come the values from that the user supplied.
 
-![](examples/node-intro/argv.js)
+![](examples/basic/argv.js)
 
 ```
 $ node argv.js "hello world" Foo
@@ -114,13 +114,13 @@ $ node argv.js "hello world" Foo
 4
 [
   '/opt/node-v12.14.1-linux-x64/bin/node',
-  '/home/gabor/work/slides/nodejs/examples/node-intro/argv.js',
+  '/home/gabor/work/slides/nodejs/examples/basic/argv.js',
   'hello world',
   'Foo'
 ]
 
 /opt/node-v12.14.1-linux-x64/bin/node
-/home/gabor/work/slides/nodejs/examples/node-intro/argv.js
+/home/gabor/work/slides/nodejs/examples/basic/argv.js
 hello world
 Foo
 undefined
@@ -134,14 +134,14 @@ undefined
 
 Try: `node argv_foreach.js Hello my world`
 
-![](examples/node-intro/argv_foreach.js)
-![](examples/node-intro/argv_foreach.out)
+![](examples/basic/argv_foreach.js)
+![](examples/basic/argv_foreach.out)
 
 ## Define function with arrow notation
 {id: define-function-with-arrow-notation}
 
-![](examples/node-intro/add.js)
-![](examples/node-intro/add.out)
+![](examples/basic/add.js)
+![](examples/basic/add.out)
 
 ## setTimeout
 {id: set-timeout}
@@ -153,10 +153,10 @@ Delayed execution, callback function.
 * Then we print "hello" to the console.
 * Then, after a second, the functions starts running and prints "world"
 
-![](examples/node-intro/with_timeout.js)
+![](examples/basic/with_timeout.js)
 
 ```
-$ node examples/node-intro/with_timeout.js
+$ node examples/basic/with_timeout.js
 hello
 world
 ```
@@ -167,10 +167,10 @@ world
 
 * `setInterval` allows for repeated calls. We can stop this infinite calling using Ctrl-C.
 
-![](examples/node-intro/with_interval.js)
+![](examples/basic/with_interval.js)
 
 ```
-$ node examples/node-intro/with_interval.js
+$ node examples/basic/with_interval.js
 hello
 world
 world
@@ -187,47 +187,47 @@ world
 * `setInterval` returns an identifier that can later be used to stop the scheduled process.
 * `clearInterval` will stop a scheduled process.
 
-![](examples/node-intro/with_clearinterval.js)
+![](examples/basic/with_clearinterval.js)
 
 ```
-$ node examples/node-intro/with_clearinterval.js
+$ node examples/basic/with_clearinterval.js
 ```
 
-![](examples/node-intro/with_clearinterval.out)
+![](examples/basic/with_clearinterval.out)
 
 ## clearTimeout
 {id: clear-timeout}
 {i: clearTimeout}
 
-![](examples/node-intro/clear_timeout.js)
-![](examples/node-intro/clear_timeout.out)
+![](examples/basic/clear_timeout.js)
+![](examples/basic/clear_timeout.out)
 
 ## Template literals (template strings) - variable interpolation
 {id: template-literals}
 
-![](examples/node-intro/template_literals.js)
+![](examples/basic/template_literals.js)
 
 ```
-$ node examples/node-intro/template_literals.js
+$ node examples/basic/template_literals.js
 ```
 
-![](examples/node-intro/template_literals.out)
+![](examples/basic/template_literals.out)
 
 ## constant (const)
 {id: constants}
 {i: const}
 
-![](examples/node-intro/const.js)
+![](examples/basic/const.js)
 
 ```
-$ node examples/node-intro/const.js
+$ node examples/basic/const.js
 3.14
-/home/gabor/work/slides/nodejs/examples/node-intro/const.js:6
+/home/gabor/work/slides/nodejs/examples/basic/const.js:6
 pi = 3.15;
    ^
 
 TypeError: Assignment to constant variable.
-    at Object.<anonymous> (/home/gabor/work/slides/nodejs/examples/node-intro/const.js:6:4)
+    at Object.<anonymous> (/home/gabor/work/slides/nodejs/examples/basic/const.js:6:4)
     at Module._compile (internal/modules/cjs/loader.js:776:30)
     at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
     at Module.load (internal/modules/cjs/loader.js:653:32)
@@ -242,41 +242,41 @@ TypeError: Assignment to constant variable.
 {id: var}
 {i: var}
 
-![](examples/node-intro/var1.js)
+![](examples/basic/var1.js)
 
-![](examples/node-intro/var2.js)
+![](examples/basic/var2.js)
 
-![](examples/node-intro/var3.js)
+![](examples/basic/var3.js)
 
 ## let
 {id: let}
 {i: let}
 
-![](examples/node-intro/let1.js)
+![](examples/basic/let1.js)
 
-![](examples/node-intro/let2.js)
+![](examples/basic/let2.js)
 
 ## var let
 {id: var-let}
 
-![](examples/node-intro/var_let.js)
+![](examples/basic/var_let.js)
 
 ## let var
 {id: let-var}
 
-![](examples/node-intro/let_var.js)
+![](examples/basic/let_var.js)
 
 
 ## Create library
 {id: create-library}
 {i: require}
 
-![](examples/node-intro/lib.js)
+![](examples/basic/lib.js)
 
-![](examples/node-intro/app.js)
+![](examples/basic/app.js)
 
 ```
-$ node examples/node-intro/app.js
+$ node examples/basic/app.js
 Loading module
 Hello World
 Hello Foo
@@ -291,9 +291,9 @@ It is better to define as constant so we won't change it by mistake
 From a module we can export a module or a single function like this:
 // module.exports = hi;
 
-![](examples/node-intro/lib2.js)
+![](examples/basic/lib2.js)
 
-![](examples/node-intro/app2.js)
+![](examples/basic/app2.js)
 
 ## What is in a module?
 {id: what-is-in-a-module}
@@ -302,7 +302,7 @@ From a module we can export a module or a single function like this:
 * The `module` object represents the current module
 * See more about [modules](https://nodejs.org/api/modules.html)
 
-![](examples/node-intro/my_module.js)
+![](examples/basic/my_module.js)
 
 ## OS module
 {id: os-module}
@@ -320,7 +320,7 @@ From a module we can export a module or a single function like this:
 * A bunch of OS-related methods
 * [os](https://nodejs.org/api/os.html)
 
-![](examples/node-intro/the_os_module.js)
+![](examples/basic/the_os_module.js)
 
 
 ## The path related tools
@@ -333,7 +333,7 @@ From a module we can export a module or a single function like this:
 {i: __filename}
 {i: __dirname}
 
-![](examples/node-intro/path_to_file.js)
+![](examples/basic/path_to_file.js)
 
 ## Relative path inside a project
 {id: relative-path-inside-a-project}
@@ -350,7 +350,7 @@ project_dir/
        main.html
 ```
 
-![](examples/node-intro/relative_path.js)
+![](examples/basic/relative_path.js)
 
 ## Exception
 {id: exception}
@@ -388,11 +388,11 @@ debug> quit
 {id: for-loop}
 {i: for}
 
-![](examples/node-intro/for_loop.js)
-![](examples/node-intro/for_loop.out)
+![](examples/basic/for_loop.js)
+![](examples/basic/for_loop.out)
 
 ## Array
 {id: array}
 
-![](examples/node-intro/array.js)
+![](examples/basic/array.js)
 
