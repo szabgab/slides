@@ -5,6 +5,3 @@ function say_hi(name) {
 console.log('Loading module')
 
 module.exports = say_hi;
-
-
-

@@ -12,5 +12,3 @@ console.log(os.type())
 console.log(os.tmpdir())
 
 console.log(os.networkInterfaces())
-
-

@@ -8,5 +8,3 @@ fs.rename('old.txt', 'new.txt', (err) => {
     }
 
 });
-
-

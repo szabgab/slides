@@ -6,7 +6,4 @@ fs.rmdir(dirname, (err) => {
     } else {
         console.log('Success');
     }
-
 });
-
-

@@ -44,3 +44,8 @@ run external process and print stdout and stderr
 Chaining pipes
 (e.g. use zlib.createGzip()  or zlib.createGunzip
 
+tmeplate literals:
+* Using backtick!
+* In ES2015/ES6
+
+

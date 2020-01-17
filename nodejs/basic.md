@@ -189,21 +189,20 @@ $ node examples/node-intro/with_clearinterval.js
 
 ![](examples/node-intro/with_clearinterval.out)
 
-## Template literals (template strings)
+## Template literals (template strings) - variable interpolation
 {id: template-literals}
-
-* Using backtick!
-* In ES2015/ES6
 
 ![](examples/node-intro/template_literals.js)
 
 ```
 $ node examples/node-intro/template_literals.js
-Hello Kate
 ```
+
+![](examples/node-intro/template_literals.out)
 
 ## constant (const)
 {id: constants}
+{i: const}
 
 ![](examples/node-intro/const.js)
 
@@ -228,6 +227,7 @@ TypeError: Assignment to constant variable.
 
 ## var
 {id: var}
+{i: var}
 
 ![](examples/node-intro/var1.js)
 
@@ -237,6 +237,7 @@ TypeError: Assignment to constant variable.
 
 ## let
 {id: let}
+{i: let}
 
 ![](examples/node-intro/let1.js)
 
@@ -255,6 +256,7 @@ TypeError: Assignment to constant variable.
 
 ## Create library
 {id: create-library}
+{i: require}
 
 ![](examples/node-intro/lib.js)
 
@@ -282,86 +284,30 @@ From a module we can export a module or a single function like this:
 
 ## What is in a module?
 {id: what-is-in-a-module}
+{i: module}
+
+* The `module` object represents the current module
+* See more about [modules](https://nodejs.org/api/modules.html)
 
 ![](examples/node-intro/my_module.js)
 
 ## OS module
 {id: os-module}
+{i: os}
+{i: totalmem}
+{i: freemem}
+{i: uptime}
+{i: loadavg}
+{i: platform}
+{i: hostname}
+{i: type}
+{i: tmpdir}
+{i: networkInterfaces}
 
 * A bunch of OS-related methods
 * [os](https://nodejs.org/api/os.html)
 
 ![](examples/node-intro/the_os_module.js)
-
-
-## File-system related operations (fs)
-{id: file-system-related-operations}
-
-[fs](https://nodejs.org/docs/latest/api/fs.html)
-
-## Read file
-{id: read-file}
-
-![](examples/node-intro/read_file.js)
-
-## Write file
-{id: write-file}
-
-![](examples/node-intro/write_file.js)
-
-## Append to file
-{id: append-to-file}
-
-![](examples/node-intro/append_to_file.js)
-
-## Delete file (unlink file)
-{id: delete-file}
-
-![](examples/node-intro/delete_file.js)
-
-## Read (and write) file by chunks
-{id: read-write-file-by-chunks}
-
-![](examples/node-intro/read_write_by_chunks.js)
-
-## Read (and write) file by chunks using pipe
-{id: read-write-file-by-pipe}
-
-![](examples/node-intro/read_write.js)
-
-
-## Create a directory (folder) (mkdir)
-{id: create-directory}
-
-![](examples/node-intro/create_directory.js)
-
-## Remove a directory (folder) (rmdir)
-{id: remove-directory}
-
-![](examples/node-intro/remove_directory.js)
-
-
-## Read directory sync (readdirSync)
-{id: read-directory-sync}
-
-![](examples/node-intro/readdir_sync.js)
-
-## Read directory async (readdir)
-{id: read-directory-async}
-
-![](examples/node-intro/readdir_async.js)
-
-## Read directory async error handline
-{id: read-directory-async-errors}
-
-![](examples/node-intro/readdir_async_errors.js)
-
-## Rename a file (rename)
-{id: rename-file}
-
-fs.rename(from, to, (err) => {})
-
-![](examples/node-intro/rename_file.js)
 
 
 ## The path related tools

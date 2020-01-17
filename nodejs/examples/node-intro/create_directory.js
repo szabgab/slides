@@ -1,4 +1,5 @@
 const fs = require('fs');
+
 fs.mkdir(dirname, (err) => {
 
     if (err) {
@@ -6,7 +7,4 @@ fs.mkdir(dirname, (err) => {
     } else {
         console.log('Success');
     }
-
 });
-
-

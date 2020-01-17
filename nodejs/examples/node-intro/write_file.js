@@ -7,4 +7,3 @@ fs.writeFile('data.txt', 'first line', (err) => {
         console.log('Success');
     }
 });
-

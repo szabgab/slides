@@ -6,5 +6,4 @@ fs.readFile('data.txt', 'utf8', (err, content) => {
     } else {
         console.log(content);
     }
-})
-
+});
