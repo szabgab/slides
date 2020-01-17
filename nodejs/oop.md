@@ -8,5 +8,5 @@
 {i: class}
 {i: constructor}
 
-![](examples/node-intro/myclass.js)
+![](examples/oop/myclass.js)
 
