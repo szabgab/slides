@@ -11,4 +11,3 @@ function f() {
 console.log("before");
 f();
 console.log("after");
-

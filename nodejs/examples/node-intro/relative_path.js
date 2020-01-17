@@ -11,4 +11,3 @@ console.log(templates);
 
 const rel_path_to_file = path.join(root, 'templates', 'main.html');
 console.log(rel_path_to_file);
-

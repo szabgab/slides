@@ -8,7 +8,11 @@
     "files": [
         "basic.md",
         "fs.md",
+        "oop.md",
+        "http.md",
+        "net.md",
         "npm.md",
-        "express.md"
+        "express.md",
+        "appendix.md"
     ]
 }
