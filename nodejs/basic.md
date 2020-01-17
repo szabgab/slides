@@ -76,6 +76,12 @@ Run it directly
 ./examples/node-intro/hello_world_sh.js
 ```
 
+## Variables with let
+{id: variables-with-let}
+
+
+
+
 ## Hello World in function
 {id: hello-world-in-function}
 {i: function}
@@ -378,12 +384,11 @@ debug> quit
 * [Node inspector](https://github.com/node-inspector/node-inspector)
 * Eclipse plugin
 
-## Mashup
-{id: mashup}
+## for loop
+{id: for-loop}
+{i: for}
 
-While one process is still "running" and printing "world" every 5 seconds, we add a new "process"
-fetching a website every 2 seconds. It just works.
-
-![](examples/http/mash.js)
+![](examples/node-intro/for_loop.js)
+![](examples/node-intro/for_loop.out)
 
 

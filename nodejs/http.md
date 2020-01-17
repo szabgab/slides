@@ -57,4 +57,12 @@ that's the end of the current document.
 
 Apache bench: ab -n 100 -c 100 http://127.0.0.1:8000/
 
+## Mashup
+{id: mashup}
+
+While one process is still "running" and printing "world" every 5 seconds, we add a new "process"
+fetching a website every 2 seconds. It just works.
+
+![](examples/http/mash.js)
+
 
