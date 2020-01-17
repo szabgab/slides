@@ -68,8 +68,15 @@ function KeyCheck(e) {
 
         case 67:
             // c
+            break;
+
+        case 68:
+            // d
             go_chapter_toc();
             break;
+        // 69 e
+        // 70 f
+        // 71 g
 
         case 72:
             // h
@@ -83,6 +90,7 @@ function KeyCheck(e) {
           //
           document.location.href = "index" + get_extension();
           break;
+        // 74 j
 
         case 75:
             // k
@@ -108,7 +116,7 @@ function KeyCheck(e) {
 
         case 191:
             // ?
-            alert("? - this help\n-> next\n<- - prev\nSPACE - next\ni - index\nk - keywords\nt - toc\nh - toggle extra text\nc - chapter TOC\n");
+            alert("? - this help\n-> next\n<- - prev\nSPACE - next\ni - index\nk - keywords\nt - toc\nh - toggle extra text\nd - chapter TOC\n");
             //PgUp - prev\nPgDown - next
         break;
 
