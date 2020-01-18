@@ -1,5 +1,4 @@
 about
-collab-dev
 data-science
 github-ci
 google-gcp

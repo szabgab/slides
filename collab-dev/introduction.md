@@ -1,5 +1,5 @@
 # Collaborative Development and Open Source Projects
-{id: index}
+{id: collaborative-development}
 
 ## Videos
 {id: videos}
