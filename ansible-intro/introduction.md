@@ -1,23 +1,5 @@
 # Introduction to Ansible
-{id: index}
-
-
-## About us
-{id: about-us}
-
-* [Yonit Gruber-Hazani](https://www.linkedin.com/in/yonitgruber/)
-* [Dima Revelis](https://www.linkedin.com/in/dima-revelis-1a041631/)
-* [Gabor Szabo](https://www.linkedin.com/in/szabgab/)
-* DevOps Workshops [http://devops-workshops.code-maven.com/](http://devops-workshops.code-maven.com/)
-
-## About you
-{id: about-you}
-
-* Name
-* Company
-* What do you do
-* Something interesting about you
-* Have you been to our first Linux meetup
+{id: introduction}
 
 ## Why
 {id: startwithwhy}
@@ -30,8 +12,6 @@ Why are we here?
 * Configuration versioning . (rolling back)
 * Known state of the system
 * When its all in git - every change is linked to a specific request ID or bug ID
-
-![dog_meme](img/dog_meme.jpg)
 
 ## How
 {id: how}

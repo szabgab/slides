@@ -1,5 +1,4 @@
 about
-ansible-intro
 aws-lambda
 collab-dev
 data-science
