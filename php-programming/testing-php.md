@@ -6,11 +6,8 @@
 {i: php}
 
 
-In the examples directory start <command>apache2.pl start</command>
-then you can access the server via <a href="http://localhost:8081/php/"></a>
-
-
-
+In the examples directory start `apache2.pl start`
+then you can access the server via http://localhost:8081/php/
 
 
 ## Almost manually testing add()
@@ -61,13 +58,8 @@ Not much of an output but if we are careful we'll see that
 the third line is incorrect. The problem is that it is a lot
 of effort to check if the results are correct.
 
-
-
-
 dirname(__FILE__) just gives the path to the directory of currently executing file
 and we know the library we are testing is relative to it.
-
-
 
 
 ## Print expected values as well
@@ -77,19 +69,13 @@ and we know the library we are testing is relative to it.
 So the problem is that the test runner has to compute the expected
 results every time she runs the test script.
 
-
-
-
 A slight improvement will be to show the expected
 results next to the actual values.
-
 
 ![](examples/php/intro/t02.php)
 
 
 Result:
-
-
 
 ```
 2 == 2
@@ -107,12 +93,10 @@ a step in the good direction.
 
 ## Compare actual with expected values and print only pass/fail
 {id: testing-php-calc-compare-with-expected}
+
 ![](examples/php/intro/t03.php)
 
-
 Result:
-
-
 
 ```
 pass
@@ -120,24 +104,17 @@ pass
 fail
 ```
 
-
 Instead of manually comparing the actual results with the expected values
 let the computer do the hard work and let it only print if there was a success
 or a failure. We introduce some new code that will print "pass" for every case
 when the result was the expected value and "fail" when they were different.
 
-
-
-
 This is certainly an improvement but before we further improve our display let's
 turn our attention to our own testing code.
 
 
-
-
 ## Refactor to get assertTrue
 {id: testing-php-calc-compare-with-expected-refactored}
-
 
 As we are also programmers we will soon recognize that there
 is code duplication in our test script and will factor out the
@@ -145,13 +122,9 @@ whole printing of pass/fail part to a function that we call assertTrue().
 It should receive a true or false value and it will print "pass" or "fail"
 accordingly.
 
-
 ![](examples/php/intro/t04.php)
 
-
 Result:
-
-
 
 ```
 pass
@@ -175,37 +148,22 @@ That's all very nice but someone has already implemented this with a lot
 of other nice features. We are going to look at the SimpleTest framework
 of PHP.
 
-
-
-
-<a href="http://www.simpletest.org/"></a>
-
-
-
+[Simpletest](http://www.simpletest.org/)
 
 I am looking at the currently latest 1.0.1 version that already includes autorun.php.
 
-
-
-
 Ubuntu packages the PHP Simpletest package but
-<command>sudo aptitude install php-simpletest</command>
+`sudo aptitude install php-simpletest`
 only gets you version 1.0 which is relatively old.
-
-
-
 
 So the best course of action is to download the simpletest_1.0.1.tar.gz
 file from the Simpletest web site and unzip it in a place where your
 web server can reach it.
 
 
-
-
 ## assertTrue in SimpleTest
 {id: testing-php-simpletest-asserttrue}
 {i: asssertTrue}
-
 
 So we unzipped the simpletest zip file to a directory in the course
 directory structure some 3 levels above the actual examples.
@@ -346,7 +304,7 @@ With the last row being RED
 The PHP SimpleTest framework provides lots of additional tools for testing your application.
 The documentation for the UnitTestCase class with the list of various assert methods can be found
 here:
-<a href="http://simpletest.org/en/unit_test_documentation.html"></a>
+[unit test documentation](http://simpletest.org/en/unit_test_documentation.html)
 
 
 
@@ -364,18 +322,13 @@ or the post commit hook of your version control system. That will only work if
 we can run our tests from the command line.
 
 
-
-
 Luckily SimpleTest and the autorun.php can let us do this.
 We can take the last example and run it from the command line:
 
 
-
-
-<command>$ php examples/php/simpletest/st04.php</command>
-
-
-
+```
+$ php examples/php/simpletest/st04.php
+```
 
 The Output is quite similar to what we have in the browser but
 this is without any colors.
@@ -428,7 +381,7 @@ if the returned page contains the information as we expect.
 
 
 
-We subclass the WebTestCase class which provides a <command>get</command>
+We subclass the WebTestCase class which provides a `get`
 method to retrieve a web page given a URL.
 
 In itself that's not yet an assertion so we wrap it with

@@ -77,10 +77,7 @@ selector {
 ## Learn layout
 {id: learnlayout}
 
-
-<a href="http://learnlayout.com/">Learn layout here!</a> inspired the following pages.
-
-
+* [Learn layout here!](http://learnlayout.com/) inspired the following pages.
 
 
 ## No layout
