@@ -6,6 +6,7 @@ collab-dev/collab.json
 data-science/data.json
 docker/docker.json
 git-intro/git.json
+github-ci/github-ci.json
 golang/go.json
 nodejs/nodejs.json
 php-programming/php.json
