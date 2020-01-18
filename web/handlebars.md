@@ -13,7 +13,7 @@
 {id: handlebars-template}
 
 ```
-Hello <b>{{first_name}}</b> {{last_name}}
+Hello `{{first_name}}` {{last_name}}
 ```
 ![](examples/handlebars/simple_template.html)
 

@@ -51,7 +51,7 @@ $log.debug = console.debug.bind(console);
 ![](examples/angular/dependency_injection.html)
 
 
-The order of <b>$scope</b> and <b>$timeout</b> in the function call (dependency injection) must match the order in the list before.
+The order of `$scope` and `$timeout` in the function call (dependency injection) must match the order in the list before.
 
 
 
@@ -149,7 +149,7 @@ Implement an automatic counter using the [$interval](https://docs.angularjs.org/
 
 The $interval service of Angular will run its callback every N miliseconds so
 we don't have to re-schedule it every time, on the other hand we will have to
-call the <b>cancel</b> method to stop it when the user clicks on the <b>stop</b>
+call the `cancel` method to stop it when the user clicks on the `stop`
 button.
 
 

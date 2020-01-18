@@ -7,15 +7,15 @@
 Change the way 'value' is displayed (similar to 'map' in Perl, Python, Ruby, and JavaScript)
 
 
-* <pre>{{ some_value | FILTER }}</pre>
-* <pre>{{ some_value | FILTER:param }}</pre>
+* `{{ some_value | FILTER }}`
+* `{{ some_value | FILTER:param }}`
 
 
 
 Reduce the elements of value (similar to 'grep' in Perl, 'select' in Ruby, or 'filter' in Python and JavaScript)
 
 
-* <pre>ng-repeat="v in some_array | filter:FILTER"</pre>
+* `ng-repeat="v in some_array | filter:FILTER"`
 
 
 
@@ -25,16 +25,16 @@ Reduce the elements of value (similar to 'grep' in Perl, 'select' in Ruby, or 'f
 Change the way 'value' is displayed ('map')
 
 
-* <pre>$scope.new_value = $filter('FILTER')($scope.some_value)</pre>
-* <pre>$scope.new_value = $filter('FILTER')($scope.some_value, param)</pre>
+* `$scope.new_value = $filter('FILTER')($scope.some_value)`
+* `$scope.new_value = $filter('FILTER')($scope.some_value, param)`
 
 
 
 Reduce the elements of value ('grep', 'select', 'filter')
 
 
-* <pre>$scope.new_array = $filter('filter')($scope.some_array, FILTER)</pre>
-* <pre>$scope.new_array = $scope.some_array.filter(FILTER)</pre>
+* `$scope.new_array = $filter('filter')($scope.some_array, FILTER)`
+* `$scope.new_array = $scope.some_array.filter(FILTER)`
 
 
 

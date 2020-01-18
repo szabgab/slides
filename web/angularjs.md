@@ -102,8 +102,8 @@ AngularJS allows a very limited subset of JavaScript expressions.
 ![](examples/angular/variables_in_expressions.html)
 
 
-We don't declare them with <b>var</b> as in plain JavaScript because they
-are actually attributes of the <b>$scope</b> object Angular maintains for us.
+We don't declare them with `var` as in plain JavaScript because they
+are actually attributes of the `$scope` object Angular maintains for us.
 
 
 
