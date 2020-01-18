@@ -1,5 +1,4 @@
 about
-data-science
 github-ci
 google-gcp
 groovy

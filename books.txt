@@ -3,6 +3,7 @@ aws-lambda/aws.json
 bash/bash.json
 css/css.json
 collab-dev/collab.json
+data-science/data.json
 docker/docker.json
 git-intro/git.json
 golang/go.json

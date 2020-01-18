@@ -1,5 +1,5 @@
 # Getting Started with Data Science for non-programmers
-{id: index}
+{id: getting-started}
 
 
 ## Data Science
