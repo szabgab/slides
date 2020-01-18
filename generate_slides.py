@@ -12,15 +12,15 @@ import shutil
 root   = os.path.dirname(os.path.abspath(__file__))
 parent = os.path.dirname(root)
 slider = f"{parent}/slider-py/slider.py"
-print(f"root={root}")
-print(f"parent={parent}")
+#print(f"root={root}")
+#print(f"parent={parent}")
 if not os.path.exists(slider):
     exit(f"{slider} does not exist")
 
 def main():
     html_root = os.path.join(root, 'html')
 
-    print(f"html_root={html_root}")
+    #print(f"html_root={html_root}")
     if os.path.exists(html_root):
         shutil.rmtree(html_root)
     os.mkdir(html_root)
