@@ -6,5 +6,5 @@ docker/docker.json
 git-intro/git.json
 golang/go.json
 nodejs/nodejs.json
-php/php.json
+php-programming/php.json
 python-programming/python.json
