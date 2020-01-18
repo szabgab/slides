@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Try</title>
+    <meta charset="utf-8">
+    <meta name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+    <script src="../angular/angular.min.js"></script>
+<script>
+angular.module("DemoApp", []).
+   controller('DemoController', function($scope) {
+       $scope.now = new Date();
+   })
+</script>
+
+</head>
+<body>
+<h1>Date</h1>
+<div ng-app="DemoApp" ng-controller="DemoController">
+    <table>
+        <tr><td>date</td><td>{{ now | date }}</td></tr>
+        <tr><td>date:'medium'</td><td>{{ now | date:'medium' }}</td></tr>
+        <tr><td>date:'short'</td><td>{{ now | date:'short' }}</td></tr>
+        <tr><td>date:'fullDate'</td><td>{{ now | date:'fullDate' }}</td></tr>
+        <tr><td>date:'longDate'</td><td>{{ now | date:'longDate' }}</td></tr>
+        <tr><td>date:'mediumDate'</td><td>{{ now | date:'mediumDate' }}</td></tr>
+        <tr><td>date:'shortDate'</td><td>{{ now | date:'shortDate' }}</td></tr>
+        <tr><td>date:'mediumTime'</td><td>{{ now | date:'mediumTime' }}</td></tr>
+        <tr><td>date:'shortTime'</td><td>{{ now | date:'shortTime' }}</td></tr>
+        <tr><td>date:'yyyy-MM-dd HH:mm:ss'</td>
+            <td>{{ now | date:'yyyy-MM-dd HH:mm:ss' }}</td></tr>
+    </table>
+
+    <style>
+     td {padding-right: 30px;}
+     td { border-bottom: 1px solid; }
+    </style>    
+</div>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<form method="POST" action="/register">
+
+<input type="text" placeholder="Your name" name="name"><br>
+<input type="password" name="password" placeholder="Your password"><br>
+<input type="hidden" name="secret" value="42"><br>
+
+<label>Chocolate</label><input type="checkbox" name="icecream" value="chocolate"><br>
+<label>Vanilla</label><input type="checkbox" name="icecream" value="vanilla"><br>
+
+<hr>
+
+<label>Car <input type="radio" name="rb" value="car">
+<label>Motor <input type="radio" name="rb" value="motor">
+<hr>
+<textarea name="ta" rows="10" cols="80">
+</textarea>
+
+
+<input type="submit" value="Send">
+
+</form>

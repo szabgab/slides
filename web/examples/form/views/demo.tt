@@ -1,0 +1,34 @@
+<h2><% name %></h2>
+
+
+<% IF name %>
+   Name: <% name %>
+<% ELSE %>
+   No name provided.
+<% END %>
+<br>
+
+<% IF age %>
+   Age: <% age %>
+<% ELSE %>
+   No age provided.
+<% END %>
+<br>
+
+<ul>
+<% FOR g in grades %>
+   <li><% g %></li>
+<% END %>
+</ul>
+
+<ul>
+<% FOR f in friends %>
+   <li><% f.name %></li>
+<% END %>
+</ul>
+
+<ul>
+<% FOR d in details.keys %>
+   <li><% d %> : <% details.$d %></li>
+<% END %>
+</ul>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport"
+     content="width=device-width, initial-scale=1, user-scalable=yes">
+  <script src="../angular/angular.min.js"></script>
+ 
+  <script>
+   angular.module('DemoApp', [])
+   .controller('DemoController', ['$scope', '$filter', function($scope, $filter) {
+        $scope.price = 1234.56789;
+        $scope.price_number = $filter('number')($scope.price);
+        $scope.price_number0 = $filter('number')($scope.price, 0);
+        $scope.price_number4 = $filter('number')($scope.price, 4);
+        $scope.price_number_1 = $filter('number')($scope.price, -1);
+        $scope.price_number_2 = $filter('number')($scope.price, -2);
+   }]);
+  </script>
+ 
+</head>
+<body ng-app="DemoApp" ng-controller="DemoController">
+<h1>number filter used in JavaScript</h1>
+
+<input ng-model="price">
+
+<table>
+<tr><td>price             </td><td>{{price}}          </td></tr>
+<tr><td>price | number    </td><td>{{price_number}}   </td></tr>
+<tr><td>price | number:0  </td><td>{{price_number0}}   </td></tr>
+<tr><td>price | number:4  </td><td>{{price_number4}}   </td></tr>
+<tr><td>price | number:-1 </td><td>{{price_number_1}}   </td></tr>
+<tr><td>price | number:-2 </td><td>{{price_number_2}}   </td></tr>
+</table>
+
+</body>
+</html>
+

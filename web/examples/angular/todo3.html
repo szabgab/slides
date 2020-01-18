@@ -1,0 +1,12 @@
+<script src="angular.min.js"></script>
+<script src="todo3.js"></script>
+<div ng-app="todoApp" ng-controller="todoController">
+    <form ng-submit="add()">
+    <input ng-model="title"><button>Add</button>
+    </form>
+    <ul>
+        <li ng-repeat="t in tasks track by $index">{{ t }}
+             <button ng-click="delete()">x</button></li>
+    </ul>
+</div>
+

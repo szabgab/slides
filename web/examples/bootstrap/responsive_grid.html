@@ -1,0 +1,69 @@
+<html>
+  <head>
+  <title>Responsive Grid</title>
+  <meta name="viewport" content="width=device-width" />
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+  <style>
+  .left {
+      background-color: red;
+  }
+  .main {
+      background-color: lightblue;
+  }
+  .right {
+      background-color: lightgreen;
+  }
+  .main-left {
+      background-color: lightblue;
+  }
+  .main-right {
+      background-color: blue;
+  }
+  </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+      <div class="row">
+        <div class="col-xs-12 col-md-8 main">.col-xs-12 .col-md-8</div>
+        <div class="col-xs-6 col-md-4 right">.col-xs-6 .col-md-4</div>
+      </div>
+      <hr>
+
+      <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-4 left">.col-xs-12 .col-sm-6 .col-md-4</div>
+        <div class="col-xs-12 col-sm-6 col-md-4 main">.col-xs-12 .col-sm-6 .col-md-4</div>
+        <div class="col-xs-12 col-sm-6 col-md-4 right">.col-xs-12 .col-sm-6 .col-md-4</div>
+      </div>
+      <hr>
+       
+      <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+      <div class="row">
+        <div class="col-xs-6 col-md-4 left">.col-xs-6 .col-md-4</div>
+        <div class="col-xs-6 col-md-4 main">.col-xs-6 .col-md-4</div>
+        <div class="col-xs-6 col-md-4 right">.col-xs-6 .col-md-4</div>
+      </div>
+      <hr>
+      
+      <!-- Columns are always 50% wide, on mobile and desktop -->
+      <div class="row">
+        <div class="col-xs-6 left">.col-xs-6</div>
+        <div class="col-xs-6 right">.col-xs-6</div>
+      </div>
+      <hr>
+
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 left">.col-xs-12 .col-sm-6 .col-md-4 col-lg-3</div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 main-left">.col-xs-12 .col-sm-6 .col-md-4 col-lg-3</div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 main-right">.col-xs-12 .col-sm-6 .col-md-4 col-lg-3</div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 right">.col-xs-12 .col-sm-6 .col-md-4 col-lg-3</div>
+      </div>
+      <hr>
+
+
+    </div>  
+  </body>
+</html>
+

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+  <script src="jquery.js"></script>
+  <script src="handlebars.min.js"></script>
+  <script src="handlebars_data.js"></script>
+  <script src="handlebars_process.js"></script>
+
+  <script id="text-template" type="text/x-handlebars-template">
+    {{title}}<br>
+    {{address.street}}<br>
+    {{names.[0]}} - {{names.[1]}}<br>
+    {{articles.1.title}}<br>
+  </script>
+</head>
+<body>
+<div id="text"></div>
+</body>
+</html>

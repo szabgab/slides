@@ -1,0 +1,21 @@
+<script src= "../angular/angular.min.js"></script>
+<script src= "../angular/angular-messages.min.js"></script>
+<script src= "form_messages.js"></script>
+
+<div ng-app="DemoApp" ng-controller="DemoController">
+  <form name="myForm">
+      <div>Name: <input ng-model="name" name="name" required minlength="5" ></div>
+      <div class="error" ng-messages="myForm.name.$error">
+          <div ng-message="required">The name is required</div>
+          <div ng-message="minlength">The name must be at least 5 characters long.</div>
+      </div>
+  </form>
+  <hr>
+   <div>Name: {{name}}</div>
+</div>
+
+<style>
+.error {
+    background: #FF6D6D;
+}
+</style>

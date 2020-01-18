@@ -1,0 +1,32 @@
+<html>
+<head>
+  <script src="angular.min.js"></script>
+  <script src="filter_table.js"></script>
+</head>
+<body ng-app="DemoApp" ng-controller="DemoController">
+
+<table>
+  <thead>
+     <tr>
+         <td><input ng-model="by_value.name"></td>
+         <td><input ng-model="by_value.email"></td>
+         <td><select ng-model="by_value.country" ng-options="c for c in countries"></select></td>
+<!--
+         <td><select ng-model="by_value.country">
+             <option value=""></option>
+             <option ng-repeat="c in countries" value="c">{{c}}</option>
+             </select></td>
+-->
+     </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="p in people | filter:by_value">
+       <td>{{p.name}}</td>
+       <td>{{p.email}}</td>
+       <td>{{p.country}}</td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>
+

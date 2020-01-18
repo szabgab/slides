@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+  <script src="jquery.js"></script>
+  <script src="handlebars.min.js"></script>
+  <script src="handlebars_if_eq.js"></script>
+  <script src="handlebars_data.js"></script>
+  <script src="handlebars_process.js"></script>
+
+  <script id="text-template" type="text/x-handlebars-template">
+      <h2>{{title}}</h2>
+      <h3>{{description}}</h3>
+      <ul>
+      {{#each articles}}
+        {{#if_eq author 'Foo'}}
+           <li>{{author}} - {{url}}</li>
+        {{/if_eq}}
+      {{/each}}
+      </ul>
+  </script>
+</head>
+<body>
+<div id="text"></div>
+</body>
+</html>

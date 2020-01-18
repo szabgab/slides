@@ -1,0 +1,30 @@
+html {
+   font-size: 10px;
+}
+
+.separator {
+    width: 100%;
+    height: 10rem;
+    background-color: blue;
+}
+
+h1 {
+   font-size: 3rem;
+}
+
+p {
+   font-size: 2rem;
+   /*border: 1rem solid red;*/
+}
+
+@media screen and (min-width: 800px) {
+    html {
+        font-size: 15px;
+    }
+    h1 {
+        text-align: center;
+    }
+    p {
+        text-align: center;
+   }
+}

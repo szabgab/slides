@@ -1,0 +1,19 @@
+ul {
+  list-style: none;
+}
+img {
+    width: 200px; 
+}
+
+@media screen and (min-width: 600px) {
+   img {
+     width: 400px;
+   }
+}
+
+@media screen and (min-width: 1000px) {
+   img {
+     width: 600px;
+   }
+}
+

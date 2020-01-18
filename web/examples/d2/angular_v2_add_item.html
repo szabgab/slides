@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport"
+     content="width=device-width, initial-scale=1, user-scalable=yes">
+  <script src="../angular/angular.min.js"></script>
+  <script src="angular_v2_add_item.js"></script>
+  <link rel="stylesheet" href="style.css" type="text/css" media="print, projection, screen" />
+  <title>List items</title>
+</head>
+<body>
+
+<script>
+</script>
+<div ng-app="DemoApp" ng-controller="DemoController">
+    <input ng-model="text"><button ng-click="add_item()">Add</button>
+
+    <div id="error" ng-show="error">{{error}}</div>
+</div>
+</body>
+</html>
+

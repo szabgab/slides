@@ -1,0 +1,12 @@
+$ perl Makefile.PL
+$ make
+$ make test
+
+t/v2.t ............... 1/4 [D2::Ajax:31818] error @2015-06-08 16:16:58>
+Route exception: encountered object '2015-06-08T16:16:57', but neither allow_blessed,
+convert_blessed nor allow_tags settings are enabled (or TO_JSON/FREEZE method missing)
+at /Users/gabor/work/D2-Ajax/blib/lib/D2/Ajax.pm line 71.
+in /Users/gabor/perl5/perlbrew/perls/perl-5.22.0_WITH_THREADS/lib/site_perl/5.22.0/Return/MultiLevel.pm l. 36
+malformed JSON string, neither tag, array, object, number, string or atom,
+at character offset 0 (before "<!DOCTYPE html PUBLI...") at t/v2.t line 67.
+# Child (v2_items) exited without calling finalize()

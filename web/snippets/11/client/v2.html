@@ -1,0 +1,12 @@
+<script id="show-items-template" type="text/x-handlebars-template">
+<table id="items-table" class="tablesorter">
+    <thead>
+    <tr><th>Item</th><th>Date</th><th>X</th></tr>
+    </thead>
+    <tbody>
+{{#each data.items}}
+    <tr><td>{{ text }}</td><td>{{ date }}</td><td><button class="delete" data-id="{{ _id.$oid }}">x</a></td></tr>
+{{/each}}
+    </tbody>
+</table>
+</script>

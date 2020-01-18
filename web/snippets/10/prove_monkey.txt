@@ -1,0 +1,21 @@
+$ prove -vl t/v2.t
+
+ok 1 - v2_greeting
+ok 2 - v2_reverse
+    # {
+    #   'items' => [
+    #     {
+    #       '_id' => {
+    #         '$oid' => '557599a1a114607cad788481'
+    #       },
+    #       'date' => '2015-06-08T16:33:21',
+    #       'text' => 'First Thing to do'
+    #     }
+    #   ]
+    # }
+ok 3 - v2_items
+ok 4 - no warnings
+ok
+All tests successful.
+Files=1, Tests=4,  2 wallclock secs ( 0.04 usr  0.00 sys +  1.52 cusr  0.14 csys =  1.70 CPU)
+Result: PASS

@@ -1,0 +1,27 @@
+PERL_DL_NONLAZY=1 "/Users/gabor/perl5/perlbrew/perls/perl-5.20.1_WITH_THREADS/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/001_base.t ......... ok
+t/002_index_route.t .. 1/2 [D2::Ajax:97653] core @2015-05-28 13:18:51> looking for get / in /Users/gabor/perl5/perlbrew/perls/perl-5.20.1_WITH_THREADS/lib/site_perl/5.20.1/Dancer2/Core/App.pm l. 1171
+[D2::Ajax:97653] core @2015-05-28 13:18:51> Entering hook core.app.before_request in (eval 52) l. 1
+[D2::Ajax:97653] core @2015-05-28 13:18:51> Entering hook core.app.after_request in (eval 52) l. 1
+t/002_index_route.t .. ok
+t/v1.t ............... [D2::Ajax:97654] core @2015-05-28 13:18:51> looking for get /api/v1/greeting in /Users/gabor/perl5/perlbrew/perls/perl-5.20.1_WITH_THREADS/lib/site_perl/5.20.1/Dancer2/Core/App.pm l. 1171
+[D2::Ajax:97654] core @2015-05-28 13:18:51> Entering hook core.app.before_request in (eval 52) l. 1
+[D2::Ajax:97654] core @2015-05-28 13:18:51> Entering hook core.app.after_request in (eval 52) l. 1
+t/v1.t ............... ok
+t/v2.t ............... [D2::Ajax:97655] core @2015-05-28 13:18:52> looking for get /api/v2/greeting in /Users/gabor/perl5/perlbrew/perls/perl-5.20.1_WITH_THREADS/lib/site_perl/5.20.1/Dancer2/Core/App.pm l. 1171
+[D2::Ajax:97655] core @2015-05-28 13:18:52> Entering hook core.app.before_request in (eval 52) l. 1
+[D2::Ajax:97655] core @2015-05-28 13:18:52> Entering hook core.app.after_request in (eval 52) l. 1
+t/v2.t ............... 1/2 [D2::Ajax:97655] core @2015-05-28 13:18:52> looking for get /api/v2/reverse in /Users/gabor/perl5/perlbrew/perls/perl-5.20.1_WITH_THREADS/lib/site_perl/5.20.1/Dancer2/Core/App.pm l. 1171
+[D2::Ajax:97655] core @2015-05-28 13:18:52> Entering hook core.app.before_request in (eval 52) l. 1
+[D2::Ajax:97655] core @2015-05-28 13:18:52> Entering hook core.app.after_request in (eval 52) l. 1
+[D2::Ajax:97655] core @2015-05-28 13:18:52> looking for get /api/v2/reverse in /Users/gabor/perl5/perlbrew/perls/perl-5.20.1_WITH_THREADS/lib/site_perl/5.20.1/Dancer2/Core/App.pm l. 1171
+[D2::Ajax:97655] core @2015-05-28 13:18:52> Entering hook core.app.before_request in (eval 52) l. 1
+[D2::Ajax:97655] core @2015-05-28 13:18:52> Entering hook core.app.after_request in (eval 52) l. 1
+[D2::Ajax:97655] core @2015-05-28 13:18:52> looking for get /api/v2/reverse in /Users/gabor/perl5/perlbrew/perls/perl-5.20.1_WITH_THREADS/lib/site_perl/5.20.1/Dancer2/Core/App.pm l. 1171
+[D2::Ajax:97655] core @2015-05-28 13:18:52> Entering hook core.app.before_request in (eval 52) l. 1
+Use of uninitialized value $text in reverse at /Users/gabor/work/D2-Ajax/blib/lib/D2/Ajax.pm line 33.
+[D2::Ajax:97655] core @2015-05-28 13:18:52> Entering hook core.app.after_request in (eval 52) l. 1
+t/v2.t ............... ok
+All tests successful.
+Files=4, Tests=6,  2 wallclock secs ( 0.04 usr  0.02 sys +  1.87 cusr  0.24 csys =  2.17 CPU)
+Result: PASS

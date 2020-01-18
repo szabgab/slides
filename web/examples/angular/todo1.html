@@ -1,0 +1,8 @@
+<script src="angular.min.js"></script>
+<script src="todo1.js"></script>
+<div ng-app="todoApp" ng-controller="todoController">
+    <input ng-model="title"><button ng-click="add()">Add</button>
+    <ul>
+        <li ng-repeat="t in tasks">{{ t }}</li>
+    </ul>
+</div>

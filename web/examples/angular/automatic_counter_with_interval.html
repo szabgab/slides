@@ -1,0 +1,31 @@
+<script src="angular.min.js"></script>
+<script>
+angular.module('CounterApp', [])
+    .controller('CounterController', ['$scope', '$interval', function($scope, $interval) {
+        var timer;
+        $scope.counter = 0;
+        $scope.stopCounter = function() {
+            $interval.cancel(timer);
+            timer = undefined;
+        };
+        $scope.startCounter = function() {
+            if (timer === undefined) {
+                console.log('start');
+                timer = $interval(updateCounter, 1000);
+            }
+        };
+        var updateCounter = function() {
+            console.log('update');
+            $scope.counter++;
+        };
+        $scope.startCounter();
+    }]);
+</script>
+<div ng-app="CounterApp">
+   <div ng-controller="CounterController">
+   {{counter}}
+   <button ng-click="stopCounter()">Stop</button>
+   <button ng-click="startCounter()">Start</button>
+   </div>
+</div>
+

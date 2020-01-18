@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Crazy Case</title>
+    <meta charset="utf-8">
+    <meta name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+    <script src="../angular/angular.min.js"></script>
+<script>
+angular.module("DemoApp", ['FilterApp']).
+   controller('DemoController', function($scope) {
+   });
+ angular.module('FilterApp', [])
+    .filter('crazycase', function(){
+        return function(input) {
+            if (input === undefined) {
+                return '';
+            }
+            var crazy = '';
+            for(i=0; i < input.length; i++) {
+                if (i % 2) {
+                    crazy += input[i].toUpperCase();
+                } else {
+                    crazy += input[i].toLowerCase();
+                }
+            }
+            return crazy;
+        }
+    })
+</script>
+
+</head>
+<body>
+<h1>Crazy Case</h1>
+<div ng-app="DemoApp" ng-controller="DemoController">
+    <input ng-model="text" type="text" placeholder="Type in some text">
+    <div>{{ text }}</div>
+    <div>{{ text | crazycase }}</div>
+</div>
+
+</body>
+</html>

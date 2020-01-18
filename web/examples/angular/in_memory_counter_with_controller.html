@@ -1,0 +1,26 @@
+<script src="angular.min.js"></script>
+<script>
+angular.module("CounterApp", [])
+    .controller("CounterController", ['$scope', function($scope) {
+        $scope.counter = 0;
+        $scope.increment = function() {
+            $scope.message = "";
+            $scope.counter++;
+        };
+        $scope.decrement = function() {
+            if ($scope.counter > 0) {
+                $scope.counter--;
+            } else {
+                $scope.message = "We cannot go below 0";
+            }
+        };
+}])
+</script>
+<div ng-app="CounterApp">
+    <div ng-controller="CounterController">
+        <button ng-click="increment()">Increment</button>
+        <button ng-click="decrement()">Decrement</button>
+        <div>{{counter}}</div>
+        <div>{{message}}</div>
+    </div>
+</div>

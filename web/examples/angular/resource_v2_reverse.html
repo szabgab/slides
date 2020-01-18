@@ -1,0 +1,12 @@
+<script src="angular.min.js"></script>
+<script src="angular-resource.min.js"></script>
+<script src="resource_v2_reverse.js"></script>
+
+<div ng-app="DemoApp" ng-controller="DemoController">
+<input ng-model="str"> <button ng-click="reverse()">Reverse</button>
+    Reversed: {{res.text}}
+<hr>
+<div ng-show="error">Error! Check the console.</div>
+</div>
+
+

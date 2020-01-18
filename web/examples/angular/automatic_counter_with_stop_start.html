@@ -1,0 +1,29 @@
+<script src="angular.min.js"></script>
+<script>
+angular.module('CounterApp', [])
+    .controller('CounterController', ['$scope', '$timeout', function($scope, $timeout) {
+        var timer;
+        $scope.counter = 0;
+        $scope.stopCounter = function() {
+            $timeout.cancel(timer);
+            timer = undefined;
+        };
+        $scope.startCounter = function() {
+            if (timer === undefined) {
+                updateCounter();
+            }
+        };
+        var updateCounter = function() {
+            $scope.counter++;
+            timer = $timeout(updateCounter, 1000);
+        };
+        updateCounter();
+    }]);
+</script>
+<div ng-app="CounterApp">
+   <div ng-controller="CounterController">
+   {{counter}}
+   <button ng-click="stopCounter()">Stop</button>
+   <button ng-click="startCounter()">Start</button>
+   </div>
+</div>

@@ -1,0 +1,1 @@
+$("#items-table").tablesorter();

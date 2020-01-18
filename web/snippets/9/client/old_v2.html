@@ -1,0 +1,8 @@
+html  = '<ul>';
+for (i = 0; i < data["items"].length; i++) {
+    html += '<li>';
+    html += data["items"][i]["text"];
+    html += '<button class="delete" data-id="' +  data["items"][i]["_id"]["$oid"]  + '">x</a>';
+    html += '</li>';
+}
+html += '</ul>';

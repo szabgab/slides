@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="IMDBApp" ng-controller="IMDBController">
+<head>
+  <title>{{title}}</title>
+  <meta charset="utf-8">
+  <meta name="viewport"
+     content="width=device-width, initial-scale=1, user-scalable=yes">
+  <meta http-equiv="X-UA-Compatible" content="IE-Edge">
+  <script src="../angular/angular.min.js"></script>
+  <script src="../angular/angular-route.min.js"></script>
+  <script src="../angular/angular-resource.min.js"></script>
+  <link  href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <script src="imdb.js"></script>
+</head>
+<body>
+<form ng-submit="imdb()">
+<input type="text" ng-model="query">
+<input class="btn" type="submit" value="IMDB">
+</form>
+</body>
+</html>
+

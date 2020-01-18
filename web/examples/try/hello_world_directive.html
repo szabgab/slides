@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hello World Directive</title>
+    <meta charset="utf-8">
+    <meta name="viewport"
+       content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+    <script src="../angular/angular.min.js"></script>
+    <script src="hello_world_directive.js"></script>
+</head>
+<body>
+<h1>Hello World!</h1>
+<div ng-app="HelloApp" ng-controller="HelloController">
+  <div hello-world></div>
+  <div hello:world></div>
+  <div hello_world></div>
+  <div data-hello-world></div>
+  <div x-hello-world></div>
+  <hello-world></hello-world>
+</div>
+
+</body>
+</html>

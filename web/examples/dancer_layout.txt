@@ -1,0 +1,37 @@
+$ tree
+.
+├── MANIFEST
+├── MANIFEST.SKIP
+├── Makefile.PL
+├── bin
+│   └── app.psgi
+├── config.yml
+├── cpanfile
+├── environments
+│   ├── development.yml
+│   └── production.yml
+├── lib
+│   └── D2
+│       └── Ajax.pm
+├── public
+│   ├── 404.html
+│   ├── 500.html
+│   ├── css
+│   │   ├── error.css
+│   │   └── style.css
+│   ├── dispatch.cgi
+│   ├── dispatch.fcgi
+│   ├── favicon.ico
+│   ├── images
+│   │   ├── perldancer-bg.jpg
+│   │   └── perldancer.jpg
+│   └── javascripts
+│       └── jquery.js
+├── t
+│   ├── 001_base.t
+│   └── 002_index_route.t
+└── views
+    ├── index.tt
+    └── layouts
+        └── main.tt
+

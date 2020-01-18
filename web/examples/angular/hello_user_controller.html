@@ -1,0 +1,9 @@
+<script src="angular.min.js"></script>
+<script src="hello_user_controller.js"></script>
+<div ng-app="HelloUserApp">
+    <div ng-controller="HelloUserController">
+        <input ng-model="name"><button ng-click="NameChange()">Update</button>
+        <h1>greeting: {{greeting}}</h1>
+        <h2>name: {{name}}</h2>
+    </div>
+</div>

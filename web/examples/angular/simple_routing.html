@@ -1,0 +1,27 @@
+<script src="angular.min.js"></script>
+<script src="angular-route.min.js"></script>
+<script src="simple_routing.js"></script>
+
+<div ng-app="DemoApp" ng-controller="DemoController">
+
+
+<h1>{{title}}</h1>
+<a href="#">home</a>
+<a href="#first">first</a>
+<a href="#second">second</a>
+<a href="#third">third</a>
+ 
+<div ng-view></div>
+
+
+
+
+
+<script type="text/ng-template" id="third.html">
+<h2>Third Page</h2>
+From the main HTML page.
+</script>
+
+
+</div>
+

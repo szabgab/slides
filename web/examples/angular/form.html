@@ -1,0 +1,33 @@
+<script src= "../angular/angular.min.js"></script>
+<script src= "form.js"></script>
+
+<div ng-app="DemoApp" ng-controller="DemoController">
+  <form name="myForm">
+      <div>Name: <input ng-model="name"></div>
+      <div>Color: 
+          <select ng-model="color" ng-change="change_color()">
+              <option value="blue">Blue</option>
+              <option value="yellow">Yellow</option>
+              <option value="green">Green</option>
+              <option>White</option>
+          </select>
+      </div>
+      <div>
+          <ul>
+             <li><input type="checkbox" ng-model="vehicle.bike">Bike</li>
+             <li><input type="checkbox" ng-model="vehicle.moped">Moped</li>
+             <li><input type="checkbox" ng-model="vehicle.car">Car</li>
+          </ul>
+      </div>
+  </form>
+  <hr>
+   <div>Name: {{name}}</div>
+   <div>Color: {{ color }} My Color: {{ my_color }}</div>
+   <div>White is <span ng-show="white">on</span> <span ng-show="! white">off</span></div>
+   <div>Vehicles:
+      <span ng-show="vehicle.bike">Bike</span>
+      <span ng-show="vehicle.moped">Moped</span>
+      <span ng-show="vehicle.car">Car</span>
+   </div>
+
+</div>

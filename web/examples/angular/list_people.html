@@ -1,0 +1,18 @@
+<script src="angular.min.js"></script>
+<script src="list_people.js"></script>
+<div ng-app="DemoApp" ng-controller="DemoController">
+
+  <div class="person" ng-repeat="p in people">
+     <div>{{p.name}}</div>
+     <div>{{p.email}}</div>
+  </div>
+
+</div>
+
+<style>
+  .person {
+    background: #EEE;
+    margin: 20px;
+  }
+</style
+

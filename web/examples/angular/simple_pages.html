@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport"
+     content="width=device-width, initial-scale=1, user-scalable=yes">
+  <script src="../angular/angular.min.js"></script>
+  <title>Simple Pages</title>
+</head>
+<body ng-app>
+
+<div>
+  <div>
+      <button ng-click="page='first'">First</button>
+      <button ng-click="page='second'">Second</button>
+  </div>
+  
+  
+  <div ng-init="page='first'"></div>
+  
+  <div ng-show="page === 'first'">
+  <h2>First</h2>
+  </div>
+  
+  <div ng-show="page === 'second'">
+  <h2>Second</h2>
+  </div>
+ 
+</div>
+
+</div>
+</body>
+</html>
+

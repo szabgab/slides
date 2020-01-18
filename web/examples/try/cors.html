@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CORS - Cross-Origin Resource Sharing</title>
+    <meta charset="utf-8">
+    <meta name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+    <script src="../angular/angular.min.js"></script>
+    <script src="cors.js"></script>
+    <link href="cors.css" rel="stylesheet">
+</head>
+<body>
+
+<div ng-app="CORSApp" ng-controller="CORSController">
+    <select ng-model="site" ng-change="clear()" ng-options="s as s.name for s in sites">
+    <select>
+    <button ng-click="try()">Try</button>
+    URL: {{site.url}}
+    <hr>
+    Result: {{ data }}
+    <div ng-show="error" id="error">Failed</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,9 @@
+PERL_DL_NONLAZY=1 "/Users/gabor/perl5/perlbrew/perls/perl-5.20.1_WITH_THREADS/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/001_base.t ......... ok
+t/002_index_route.t .. ok
+t/v1.t ............... ok
+t/v2.t ............... 1/2 Use of uninitialized value $text in reverse at /Users/gabor/work/D2-Ajax/blib/lib/D2/Ajax.pm line 33.
+t/v2.t ............... ok
+All tests successful.
+Files=4, Tests=6,  2 wallclock secs ( 0.04 usr  0.02 sys +  1.72 cusr  0.15 csys =  1.93 CPU)
+Result: PASS

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Directive</title>
+    <meta charset="utf-8">
+    <meta name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+    <script src="../angular/angular.min.js"></script>
+    <script src="demo_directive.js"></script>
+    <script src="demo_directive_definition.js"></script>
+</head>
+<body>
+
+<h1>Demo</h1>
+<div ng-app="DemoApp">
+    <div ng-controller="DemoController">
+      <div my-demo></div>
+      <div my:demo></div>
+      <div my_demo></div>
+      <div data-my-demo></div>
+      <div x-my-demo></div>
+      <hr>
+      <div><my-demo></div>
+      <div><my-demo></my-demo></div>
+    </div>
+</div>
+
+</body>
+</html>

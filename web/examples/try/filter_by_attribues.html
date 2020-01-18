@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Try</title>
+    <meta charset="utf-8">
+    <meta name="viewport"
+       content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+    <script src="../angular/angular.min.js"></script>
+<script>
+angular.module("DemoApp", []).
+   controller('DemoController', function($scope) {
+       $scope.people = [
+           {
+               name: 'Foo',
+               email: 'foo@example.com',
+               employed: true
+           },
+           {
+               name: 'Bar',
+               phone: 123,
+               employed: false
+           },
+           {
+               name: 'Perl',
+               address: 'Home',
+               employed: true
+           }
+       ];
+   })
+</script>
+
+</head>
+<body>
+<h1>Try</h1>
+<div ng-app="DemoApp" ng-controller="DemoController">
+    <h2>filter by matching attribute key-value pair</h2>
+    <h3>people</h3>
+    <table>
+        <tr class="ok-{{p.employed}}" ng-repeat="p in people">
+            <td>{{ p.name }}</td>
+            <td>{{ p.email }}</td>
+            <td>{{ p.phone }}</td>
+            <td>{{ p.address }}</td>
+        </tr>
+    </table>
+    <h3>ng-repeat="p in people | filter:{employed: true}"</h3>
+    <table>
+        <tr ng-repeat="p in people | filter:{employed: true}">
+            <td>{{ p.name }}</td>
+            <td>{{ p.email }}</td>
+            <td>{{ p.phone }}</td>
+            <td>{{ p.address }}</td>
+         </tr>
+    </table>
+
+    <h3>ng-repeat="p in people | filter:{name: 'Foo'}"</h3>
+    <table>
+        <tr ng-repeat="p in people | filter:{name: 'Foo'}">
+            <td>{{ p.name }}</td>
+            <td>{{ p.email }}</td>
+            <td>{{ p.phone }}</td>
+            <td>{{ p.address }}</td>
+         </tr>
+    </table>
+</div>
+
+<style>
+    td {padding-right: 30px;}
+    td { border-bottom: 1px solid; }
+    .ok-true { background-color: #00DD00;}
+    .ok-false { background-color: #DD0000;}
+</style>
+
+</body>
+</html>

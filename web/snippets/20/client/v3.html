@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+  <title>D2::Ajax - v3</title>
+  <script type="text/javascript" src="../public/javascripts/jquery.js"></script>
+  <script type="text/javascript" src="../public/javascripts/jquery.tablesorter.min.js"></script>
+  <script src="../public/javascripts/handlebars.min.js"></script>
+  <script src="v3.js"></script>
+
+  <link rel="stylesheet" href="../public/themes/blue/style.css" type="text/css" media="print, projection, screen" />
+
+  <script id="show-items-template" type="text/x-handlebars-template">
+    <div id="msg"></div>
+
+    <form>
+      <input name="text" id="text">
+      <input type="submit" id="add-item" value="Add item">
+    </form>
+
+    {{#if data.items}}
+        <table id="items-table" class="tablesorter">
+          <thead>
+          <tr><th>Item</th><th>Date</th><th>X</th></tr>
+          </thead>
+          <tbody>
+          {{#each data.items}}
+             <tr><td><a href="#id/{{ _id.$oid }}">{{ text }}</a></td><td class="date" sort="{{ date }}">{{ date }}</td><td><button class="delete" data-id="{{ _id.$oid }}">x</a></td></tr>
+          {{/each}}
+          </tbody>
+        </table>
+    {{/if}}
+  </script>
+
+  <script id="show-item-template" type="text/x-handlebars-template">
+      <form id="update_form">
+          <input name="text" id="text" value="{{ item.text }}"><br>
+          <input name="id" id="id" type="hidden" value="{{ item._id.$oid }}">
+          {{ item.date }}<br>
+          <textarea name="details" id="details" cols="50" rows="10">{{item.details}}</textarea><br>
+          <input type="submit" id="update-item" value="Update item">
+
+      </form>
+  </script>
+</head>
+<body>
+<a href="#">home</a>
+
+<div id="content"></div>
+
+</body>
+</html>

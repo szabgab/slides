@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+  <script src="jquery.js"></script>
+  <script src="handlebars.min.js"></script>
+  <script src="handlebars_helper_conditionals.js"></script>
+  <script src="handlebars_data.js"></script>
+  <script src="handlebars_process.js"></script>
+
+  <script id="text-template" type="text/x-handlebars-template">
+      {{#each people}}
+         {{#iff name '===' 'Foo'}}
+            name: {{name}} - {{age}}<br>
+         {{/iff}}
+
+         {{#iff age '>' 30}}
+            age &gt; 30 for {{name}} - {{age}}<br>
+         {{/iff}}
+      {{/each}}
+  </script>
+</head>
+<body>
+<div id="text"></div>
+</body>
+</html>

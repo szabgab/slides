@@ -1,0 +1,17 @@
+<script src="angular.min.js"></script>
+<script>
+angular.module('CounterApp', [])
+    .controller('CounterController', ['$scope', '$timeout', function($scope, $timeout) {
+        $scope.counter = 0;
+        var updateCounter = function() {
+            $scope.counter++;
+            $timeout(updateCounter, 1000);
+        };
+        updateCounter();
+    }]);
+</script>
+<div ng-app="CounterApp">
+   <div ng-controller="CounterController">
+   {{counter}}
+   </div>
+</div>

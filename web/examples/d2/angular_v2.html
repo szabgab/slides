@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport"
+     content="width=device-width, initial-scale=1, user-scalable=yes">
+  <script src="../angular/angular.min.js"></script>
+  <script src="angular_v2.js"></script>
+  <link rel="stylesheet" href="style.css" type="text/css" media="print, projection, screen" />
+  <title>List items</title>
+</head>
+<body>
+
+<script>
+</script>
+<div ng-app="DemoApp" ng-controller="DemoController">
+    <input ng-model="text"><button ng-click="add_item()">Add</button>
+
+    <table id="items-table" class="tablesorter">
+        <thead>
+        <tr><th>Item</th><th>Date</th><th>X</th></tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="i in data.items track by $index"><td>{{ i.text }}</td><td class="date" sort="{{ i.date }}">{{ i.date }}</td><td><button class="delete" ng-click="delete(i.id)">x</button></td></tr>
+        </tbody>
+    </table>
+    <div>
+    <button class="delete" ng-click="delete(3)">Delete ID 3</button>
+    </div>
+    <div id="error" ng-show="error">{{error}}</div>
+</div>
+</body>
+</html>
+

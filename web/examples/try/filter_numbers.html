@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Try</title>
+    <meta charset="utf-8">
+    <meta name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+    <script src="../angular/angular.min.js"></script>
+<script>
+angular.module("DemoApp", []).
+   controller('DemoController', function($scope) {
+       $scope.now = new Date();
+   })
+</script>
+
+</head>
+<body>
+<h1>Date</h1>
+<div ng-app="DemoApp" ng-controller="DemoController">
+    
+    <table>
+    </table>
+
+    <style>
+     td {padding-right: 30px;}
+     td { border-bottom: 1px solid; }
+    </style>    
+</div>
+
+</body>
+</html>
+

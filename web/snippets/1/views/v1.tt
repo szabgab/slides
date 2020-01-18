@@ -1,0 +1,10 @@
+<div id="msg"></div>
+
+<script>
+$(document).ready(function() {
+    jQuery.get('/api/v1/greeting', function(data) {
+        console.log(data);
+        $("#msg").html(data["text"]);
+    });
+});
+</script>

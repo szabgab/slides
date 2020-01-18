@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Try</title>
+    <meta charset="utf-8">
+    <meta name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+    <script src="../angular/angular.min.js"></script>
+<script>
+angular.module("DemoApp", []).
+   controller('DemoController', function($scope) {
+       $scope.words = ['Foo', 'Bar', 'Longword', 'See']
+
+       $scope.long = function (s) {
+           return s.length > 4;
+       };
+
+       $scope.longer_than = function (n) {
+           return function(s) {
+                console.log(s);
+               return s.length > n;
+           }
+       };
+
+       $scope.grep = function (r) {
+           return function(str) {
+               var p = new RegExp(r)
+               return p.exec(str);
+           }
+       }
+   })
+</script>
+
+</head>
+<body>
+<h1>Filter using function</h1>
+<div ng-app="DemoApp" ng-controller="DemoController">
+    <input ng-model="price" type="number"><br>
+  <table border="1">
+    <tr><td><pre>words</pre></td>
+        <td>{{ words }}</td></tr>
+    <tr><td><pre>words | filter:long</pre></td>
+        <td>{{ words | filter:long }}</td></tr>
+    <tr><td><pre>words | filter:longer_than(4)</pre></td>
+        <td>{{ words | filter:longer_than(4) }}</td></tr>
+    <tr><td><pre>words | filter:grep('(.)\\1')</pre></td>
+        <td>{{ words | filter:grep('(.)\\1') }}</td></tr>
+</div>
+
+</body>
+</html>

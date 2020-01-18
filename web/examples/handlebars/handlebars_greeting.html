@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>Hello World - Handlebars</title>
+
+  <script src="handlebars.min.js"></script>
+  <script id="text-template" type="text/x-handlebars-template">
+    Hello <b>{{first_name}}</b> {{last_name}}
+  </script>
+
+</head>
+<body>
+
+First name: <input id="first_name">
+Last name: <input id="last_name">
+<button id="say">Say hi!</button>
+
+<hr>
+<div id="result"></div>
+
+<script src="handlebars_greeting.js"></script>
+</body>
+</html>

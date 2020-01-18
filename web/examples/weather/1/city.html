@@ -1,0 +1,29 @@
+City: {{city}}
+
+<div>
+Scale:
+<button class="btn btn-default" ng-class="{'disabled btn-primary': scale === 'K'}" ng-click="scale = 'K'">K</button>
+<button class="btn btn-default" ng-class="{'disabled btn-primary': scale === 'C'}" ng-click="scale = 'C'">C</button>
+<button class="btn btn-default" ng-class="{'disabled btn-primary': scale === 'F'}" ng-click="scale = 'F'">F</button>
+</div>
+
+<div>
+Days:
+<button class="btn btn-default" ng-class="{'disabled btn-primary': days === '1'}" ng-click="days = '1'">1</button>
+<button class="btn btn-default" ng-class="{'disabled btn-primary': days === '3'}" ng-click="days = '3'">3</button>
+<button class="btn btn-default" ng-class="{'disabled btn-primary': days === '7'}" ng-click="days = '7'">7</button>
+<button class="btn btn-default" ng-class="{'disabled btn-primary': days === '10'}" ng-click="days = '10'">10</button>
+</div>
+
+<table class="table table-striped">
+   <tr>
+     <th>Date</th>
+     <th>Temprature</th>
+     <th>Weather</th>
+   </tr>
+   <tr ng-repeat="d in weatherResults.list">
+   <td>{{d.dt | ts2date | date:'yyyy-MM-dd' }}</td>
+   <td>{{d.temp.day | convert_temp:scale }} {{ scale }} </td>
+   <td>{{d.weather[0].description}}</td>
+   </tr>
+</table>

@@ -1,0 +1,7 @@
+<script id="show-items-template" type="text/x-handlebars-template">
+  <ul>
+  {{#each data.items}}
+      <li>{{ text }} {{ date }} <button class="delete" data-id="{{ _id.$oid }}">x</a></li>
+  {{/each}}
+  </ul>
+</script>

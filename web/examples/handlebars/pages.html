@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+  <script src="jquery.js"></script>
+  <script src="handlebars.min.js"></script>
+  <script src="handlebars_data.js"></script>
+  <script src="pages.js"></script>
+
+  <script id="home-template" type="text/x-handlebars-template">
+      <h1>Home</h1>
+  </script>
+
+  <script id="foo-template" type="text/x-handlebars-template">
+      <h1>Foo</h1>
+  </script>
+  <script id="bar-template" type="text/x-handlebars-template">
+      <h1>Bar</h1>
+  </script>
+  <script id="zorg-template" type="text/x-handlebars-template">
+      <h1>Zorg</h1>
+  </script>
+</head>
+<body>
+<style>
+li {
+    display: inline;
+    list-style-type: none;
+    padding-right: 20px;
+}
+</style>
+<ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#foo">Foo</a></li>
+    <li><a href="#bar">Bar</a></li>
+    <li><a href="#zorg">Zorg</a></li>
+</ul>
+<div id="text"></div>
+</body>
+</html>

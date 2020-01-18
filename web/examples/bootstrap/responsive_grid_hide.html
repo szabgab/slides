@@ -1,0 +1,33 @@
+<html>
+  <head>
+  <title>Responsive Grid</title>
+  <meta name="viewport" content="width=device-width" />
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+  <style>
+  .left {
+      background-color: red;
+  }
+  .main {
+      background-color: lightblue;
+  }
+  .right {
+      background-color: lightgreen;
+  }
+  </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 left">xs-12 sm-6 md-4 lg-3</div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 visible-md-block visible-lg-block main-left">xs-12 sm-6 md-4 lg-3 visible-md visible-lg</div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 visible-sm-block visible-md-block visible-lg-block main-right">xs-12 sm-6 md-4 lg-3 visible-sm visible-md visible-lg</div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 right">xs-12 sm-6 md-4 lg-3</div>
+      </div>
+      <hr>
+    </div>
+  </body>
+</html>
+
+

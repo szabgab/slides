@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport"
+     content="width=device-width, initial-scale=1, user-scalable=yes">
+  <script src="../angular/angular.min.js"></script>
+ 
+  <script>
+   angular.module('DemoApp', [])
+   .controller('DemoController', ['$scope', function($scope) {
+        $scope.price = 1234.56789;
+   }]);
+  </script>
+ 
+</head>
+<body ng-app="DemoApp" ng-controller="DemoController">
+<h1>number filter used in HTML</h1>
+
+<input ng-model="price">
+
+<table>
+<tr><td>price             </td><td>{{price}}            </td></tr>
+<tr><td>price | number    </td><td>{{price | number}}   </td></tr>
+<tr><td>price | number:0  </td><td>{{price | number:0}} </td></tr>
+<tr><td>price | number:4  </td><td>{{price | number:4}} </td></tr>
+<tr><td>price | number:-1 </td><td>{{price | number:-1}}</td></tr>
+<tr><td>price | number:-2 </td><td>{{price | number:-2}}</td></tr>
+</table>
+
+</body>
+</html>
+

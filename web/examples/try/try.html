@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Try</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+    <script src="../angular/angular.min.js"></script>
+<script>
+angular.module("DemoApp", ['FilterApp']).
+   controller('DemoController', function($scope) {
+       $scope.words = ['Foo', 'Bar', 'Sherezade']
+       $scope.people = [
+           {
+               name: 'Foo',
+               email: 'foo@example.com',
+               employed: true
+           },
+           {
+               name: 'Bar',
+               phone: 123,
+               employed: false
+           },
+           {
+               name: 'Perl',
+               address: 'Home',
+               employed: true
+           }
+       ];
+       $scope.long = function (s) {
+           return s.length > 14;
+       };
+       $scope.price = 2;
+   })
+ angular.module('FilterApp', [])
+    .filter('crazycase', function(){
+        return function(input) {
+            var crazy = '';
+            for(i=0; i < input.length; i++) {
+                if (i % 2) {
+                    crazy += input[i].toUpperCase();
+                } else {
+                    crazy += input[i].toLowerCase();
+                }
+            }
+            return crazy;
+        }
+    })
+</script>
+
+</head>
+<body>
+<h1>Try</h1>
+<div ng-app="DemoApp" ng-controller="DemoController">
+    <input ng-model="price" type="number"><br>
+    {{ price }}<br>
+    {{ price | currency }}<br>
+    {{ price | currency:'EUR' }}<br>
+    <hr>
+    {{ "Hello" | crazycase}}
+</div>
+
+<style>
+ td {padding-right: 30px;}
+ td { border-bottom: 1px solid; }
+ .ok-true { background-color: #00DD00;}
+ .ok-false { background-color: #DD0000;}
+</style>
+
+</body>
+</html>

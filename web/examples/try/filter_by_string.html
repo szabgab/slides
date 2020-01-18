@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Try</title>
+    <meta charset="utf-8">
+    <meta name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+    <script src="../angular/angular.min.js"></script>
+<script>
+angular.module("DemoApp", []).
+   controller('DemoController', function($scope) {
+       $scope.names = [ "Foo", "Bar", "perl", "properly", "Perla" ];
+   })
+</script>
+
+</head>
+<body>
+<h1>Filter by case-insensitive substring</h1>
+<div ng-app="DemoApp" ng-controller="DemoController">
+    <h3>names (unfiltered)</h3>
+    {{ names }}
+
+    <h3>names | filter:'perl'</h3>
+    {{ names | filter:'perl' }}
+    <h3>ng-repeat="n in names"</h3>
+    <ul>
+        <li ng-repeat="n in names">{{ n }}</li>
+    </ul>
+    <h3>ng-repeat="n in names | filter:'perl'"</h3>
+    <ul>
+        <li ng-repeat="n in names | filter:'perl'">{{ n }}</li>
+    </ul>
+
+    <h3>ng-repeat="n in names | filter:'!perl'"</h3>
+    <ul>
+        <li ng-repeat="n in names | filter:'!perl'">{{ n }}</li>
+    </ul>
+</div>
+
+</body>
+</html>

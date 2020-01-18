@@ -1,0 +1,26 @@
+{
+    "title": "Web Application development",
+    "author": "Gabor Szabo",
+    "description": "Building a Single-Page application using jQuery and Handlebars",
+    "first_year": "2015",
+    "copyright_name": "Gabor Szabo",
+    "copyright_url": "https://szabgab.com/",
+    "version": "1.00",
+    "files": [
+        "about.md",
+        "backend.md",
+        "html.md",
+        "angularjs.md",
+        "angularjs_services.md",
+        "angularjs_routing.md",
+        "bootstrap.md",
+        "angularjs_design.md",
+        "angularjs_ajax.md",
+        "angularjs_filters.md",
+        "angularjs_directives.md",
+        "weather.md",
+        "todo.md",
+        "intro.md",
+        "handlebars.md"
+    ]
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+  <title>D2::Ajax - v1</title>
+  <script type="text/javascript" src="../public/javascripts/jquery.js"></script>
+</head>
+<body>
+
+<div id="msg"></div>
+
+<script>
+$(document).ready(function() {
+    jQuery.get('http://127.0.0.1:5000/api/v1/greeting', function(data) {
+        console.log(data);
+        $("#msg").html(data["text"]);
+    });
+});
+</script>
+
+</body>
+</html>
