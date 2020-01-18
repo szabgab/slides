@@ -1,4 +1,5 @@
 ansible-intro/ansible.json
+aws-lambda/aws.json
 bash/bash.json
 docker/docker.json
 git-intro/git.json
