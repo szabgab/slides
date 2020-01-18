@@ -5,7 +5,7 @@
 {id: v3}
 
 
-<a href="file:///Users/gabor/work/D2-Ajax/client/v3.html">v3</a>
+v3: file:///Users/gabor/work/D2-Ajax/client/v3.html
 
 
 

@@ -116,8 +116,7 @@ They both help us to divide the screen into 12 equal sized columns, or several b
 {i: table-striped}
 {i: table-hover}
 
-
-<a href="http://getbootstrap.com/css/#tables">tables</a>
+[tables](http://getbootstrap.com/css/#tables)
 
 
 ![](examples/bootstrap/tables.html)
@@ -127,29 +126,33 @@ They both help us to divide the screen into 12 equal sized columns, or several b
 {id: bootstrap-forms}
 
 
-<a href="http://getbootstrap.com/css/#forms">forms</a>
-</o>
-<include file="examples/bootstrap/forms.html" />
+[forms](http://getbootstrap.com/css/#forms)
+
+![](examples/bootstrap/forms.html)
 
 
 ## Lead Paragraph
 {id: bootstrap-lead-paragraph}
-<include file="examples/bootstrap/lead_paragraph.html" />
+
+![](examples/bootstrap/lead_paragraph.html)
 
 
 ## Bootstrap Grid is Responsive
 {id: bootstrap-responsive-grid}
-<include file="examples/bootstrap/responsive_grid.html" />
+
+![](examples/bootstrap/responsive_grid.html)
 
 
 ## Bootstrap Grid can be hidden
 {id: bootstrap-responsive-grid-hide}
-<include file="examples/bootstrap/responsive_grid_hide.html" />
+
+![](examples/bootstrap/responsive_grid_hide.html)
 
 
 ## Bootstrap Grid hide the side when small
 {id: bootstrap-responsive-grid-hide-side}
-<include file="examples/bootstrap/responsive_grid_hide_margin.html" />
+
+![](examples/bootstrap/responsive_grid_hide_margin.html)
 
 
 ## Exercises: Bootstrap
@@ -158,13 +161,7 @@ They both help us to divide the screen into 12 equal sized columns, or several b
 
 Take the previous examples (e.g. the TODO app) and change it to use Bootstrap.
 
-
-
 * Convert the form elements
 * Replace the error style with an 'alert alert-warning' class
 * Add a Glyphicon to the save button and replace the 'x' for delete by another Glyphicon
-
-
-
-
 

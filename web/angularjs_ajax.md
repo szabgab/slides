@@ -102,9 +102,7 @@ $ sqlite3 examples/mojo_ajax/items.db
 {id: resource-get}
 {i: ngResource}
 
-
-<a href="https://docs.angularjs.org/api/ngResource">ngResource</a>
-
+[ngResource](https://docs.angularjs.org/api/ngResource)
 
 ![](examples/angular/resource_v2_get.html)
 ![](examples/angular/resource_v2_get.js)
@@ -144,7 +142,7 @@ New API
 
 
 * [MetaCPAN](https://metacpan.org/)
-* <a href="https://api-v1.metacpan.org/release/ETHER/Moose-2.1603"></a>
+* [Moose](https://api-v1.metacpan.org/release/ETHER/Moose-2.1603)
 * [100 most recent](https://api-v1.metacpan.org/release/_search?q=status:latest&amp;fields=name,status,date&amp;sort=date:desc&amp;size=100)
 * api-v1 instead of api  and remove the v0/ from the path
 

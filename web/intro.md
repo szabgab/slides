@@ -796,7 +796,7 @@ like $items1->{items}[0]{date}, qr/^\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d$/;
 {id: add-tablesorter-themes}
 
 
-Copy from <a href="https://github.com/christianbach/tablesorter">GitHub</a>
+Copy from [GitHub](https://github.com/christianbach/tablesorter)
 
 
 ![](snippets/11/client/tablesorter_themes.html)

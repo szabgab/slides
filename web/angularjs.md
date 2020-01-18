@@ -28,10 +28,7 @@
 
 missing image: feelings_about_angularjs_over_time.png
 
-
-<a href="http://www.bennadel.com/blog/2439-my-experience-with-angularjs---the-super-heroic-javascript-mvw-framework.htm">source</a>
-
-
+[source](http://www.bennadel.com/blog/2439-my-experience-with-angularjs---the-super-heroic-javascript-mvw-framework.htm)
 
 
 ## Major Parts of AngularJS
@@ -87,10 +84,7 @@ https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js
 angular.min.js
 ```
 
-
-<a href="https://angularjs.org/">AngularJS</a>
-
-
+[AngularJS](https://angularjs.org/)
 
 
 ## Simple AngularJS expression
