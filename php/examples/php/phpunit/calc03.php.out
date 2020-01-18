@@ -1,0 +1,14 @@
+PHPUnit 3.3.17 by Sebastian Bergmann.
+
+.F
+
+Time: 0 seconds
+
+There was 1 failure:
+
+1) testAddThree(AddTest)
+Failed asserting that <integer:2> matches expected value <integer:3>.
+/home/gabor/work/gabor/training/testing/examples/php/phpunit/calc03.php:14
+
+FAILURES!
+Tests: 2, Assertions: 2, Failures: 1.

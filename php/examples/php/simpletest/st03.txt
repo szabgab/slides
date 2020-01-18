@@ -1,0 +1,5 @@
+st03.php
+Fail: TestOfAdd -> testAdd ->
+  Equal expectation fails because [Integer: 2] differs from [Integer: 3] by 1
+     at [.../examples/php/simpletest/st03.php line 11]
+1/1 test cases complete: 2 passes, 1 fails and 0 exceptions.

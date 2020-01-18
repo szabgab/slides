@@ -1,0 +1,7 @@
+
+web04.php
+1) Text [Real Calculator] not detected in [String: Scientific Calculator Basic Calculator Value: Value:] at [/home/gabor/work/gabor/training/testing/examples/php/simpletest/web04.php line 14]
+	in testBasicCalc
+	in TestOfCalculator
+FAILURES!!!
+Test cases run: 1/1, Passes: 3, Failures: 1, Exceptions: 0

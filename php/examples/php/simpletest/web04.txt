@@ -1,0 +1,5 @@
+web04.php
+Fail: TestOfCalculator -> testBasicCalc -> Text [Real Calculator] not detected in
+  [String: Scientific Calculator Basic Calculator Value: Value:]
+     at [.../examples/php/simpletest/web04.php line 14]
+1/1 test cases complete: 3 passes, 1 fails and 0 exceptions.

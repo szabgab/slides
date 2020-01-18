@@ -1,0 +1,10 @@
+<people>
+  <person id="1">
+    <fname>Gabor</fname>
+    <lname>Szabo</lname>
+  </person>
+  <person id="2">
+    <fname>Foo</fname>
+    <lname>Bar</lname>
+  </person>
+</people>

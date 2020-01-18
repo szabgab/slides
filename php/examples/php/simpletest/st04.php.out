@@ -1,0 +1,8 @@
+
+
+st04.php
+1) three params 1+1+1 at [/home/gabor/work/gabor/training/testing/examples/php/simpletest/st04.php line 11]
+	in testAdd
+	in TestOfAdd
+FAILURES!!!
+Test cases run: 1/1, Passes: 2, Failures: 1, Exceptions: 0

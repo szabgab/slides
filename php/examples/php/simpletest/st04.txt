@@ -1,0 +1,4 @@
+st04.php
+Fail: TestOfAdd -> testAdd -> three params 1+1+1
+  at [.../examples/php/simpletest/st04.php line 11]
+1/1 test cases complete: 2 passes, 1 fails and 0 exceptions.
