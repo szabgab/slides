@@ -177,6 +177,7 @@ Since Python 3.7
 
 
 
+
 ## Exercise: count characters
 {id: exercise-count-characters}
 
@@ -378,5 +379,10 @@ Looping over the "dictionary" is just like looping over the keys.
 {id: do-not-change-in-loop}
 ![](examples/dictionary/change_in_loop.py)
 
+## Default Dict
+{id: default-dict}
 
+![](examples/dictionary/counter.py)
+
+![](examples/dictionary/default_dict.py)
 
