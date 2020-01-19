@@ -292,10 +292,35 @@ Y 2 -  8.33 %
 * We have a DNA sequence
 * Count the Amino acids form the sequence. (For our purposes feel free to generate a DNA sequence with a random number generator.
 
+## Exercise: List of dictionaries
+{id: exercise-list-of-dictionaries}
+
+Given the following file build a list of dictionaries where each dictionary represents one person.
+The keys in the dictionary are the names of the columns (fname, lname, born) the values are the respective values from each row.
+
+![](examples/csv/monty_python.csv)
+
+```
+print(people[1]['fname']) # Eric
+```
+
+## Exercise: Dictinoary of dictionaries
+{id: exercise-dictionary-of-dictionaries}
+
+Given the following file build a dictionary of dictionaries where each internal dictionary represents one person.
+The keys in the internal dictionaries are the names of the columns (fname, lname, born) the values are the respective values from each row.
+In the outer dictinary the keys are the (fname, lname) tuples.
+
+![](examples/csv/monty_python.csv)
+
+```
+print(people[('Eric', 'Idle')]['born']) # 29 March 1943
+```
 
 
 ## Solution: count characters
 {id: solution-count-characters}
+
 ![](examples/dictionary/count_characters.py)
 
 
