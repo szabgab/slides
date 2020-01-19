@@ -1,3 +1,3 @@
-things = ['abc', 'def', 'xyz', 42]
+things = ['apple', 'banana', 'peach', 42]
 for var in things:
     print(var)

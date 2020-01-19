@@ -108,14 +108,9 @@ Deep copy
 {id: for-loop-on-list}
 {i: for}
 {i: in}
-![](examples/lists/for.py)
 
-```
-abc
-def
-xyz
-42
-```
+![](examples/lists/for.py)
+![](examples/lists/for.out)
 
 
 ## in list

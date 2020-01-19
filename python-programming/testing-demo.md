@@ -6,6 +6,10 @@
 
 * What kind of things do you test?
 
+* Web application?
+* Command line application?
+* Databases?
+* ...
 
 
 ## What is testing?
@@ -14,22 +18,30 @@
 * Fixture + Input = Expected Output
 
 
-
 ## What is testing really?
 {id: what-is-testing-really}
 
 * Fixture + Input = Expected Output + Bugs
 
 
-
 ## Testing demo - AUT - Application Under Test
 {id: testing-demo-aut}
+
+Given the following module with a single function, how can we use this function and how can
+we test it?
+
 ![](examples/testing-demo/mymath.py)
 
 
 ## Testing demo - use the module
 {id: testing-demo-user-the-module}
+
 ![](examples/testing-demo/use_mymath.py)
+
+```
+python use_mymath.py 2 2
+4
+```
 
 
 ## Testing demo: doctets
@@ -41,45 +53,69 @@
 python -m doctest mymath_doctest_first.py
 echo $?
 0
+
+echo %ERRORLEVEL%
+0
 ```
 
 ![](examples/testing-demo/mymath_doctest.py)
 
 ```
 python -m doctest mymath_doctest.py
+echo $?
+1
 ```
+
 ![](examples/testing-demo/mymath_doctest.out)
 
-
-## Testing demo: Unittest
+## Testing demo: Unittest success
 {id: testing-demo-unittest}
+
+![](examples/testing-demo/test_one_with_unittest.py)
+
+```
+python -m unittest test_one_with_unittest.py
+echo $?
+0
+```
+
+![](examples/testing-demo/test_one_with_unittest.out)
+
+## Testing demo: Unittest failure
+{id: testing-demo-unittest-failure}
+
 ![](examples/testing-demo/test_with_unittest.py)
 
 ```
 python -m unittest test_with_unittest.py
+echo $?
+1
 ```
+
 ![](examples/testing-demo/test_with_unittest.out)
 
 
 ## Testing demo: pytest using classes
 {id: testing-demo-pytest-class}
+
 ![](examples/testing-demo/test_with_pytest_class.py)
 
 ```
 pytest test_with_pytest_class.py
 ```
+
 ![](examples/testing-demo/test_with_pytest_class.out)
 
 
-## Testing demo: pytest
+## Testing demo: pytest without classes
 {id: testing-demo-pytest}
+
 ![](examples/testing-demo/test_with_pytest.py)
 
 ```
 pytest test_with_pytest.py
 ```
 ![](examples/testing-demo/test_with_pytest.out)
-
 
 
 ## Testing demo: pytest run doctests
