@@ -40,6 +40,14 @@ Premature optimization is the root of all evil ~  Donald Knuth
 
 Read more [performance tips](https://wiki.python.org/moin/PythonSpeed/PerformanceTips)
 
+## DSU: Decorate Sort Undecorate
+{id: sort-decorate-sort-undecorate}
+
+In Perl it is called Schwartzian transform
+
+![](examples/lists/sort_dsu.py)
+![](examples/lists/sort_dsu.out)
+
 
 ## Profile code
 {id: profile-code}

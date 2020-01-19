@@ -389,20 +389,6 @@ Sorting tuples or list, or other complex structures
 
 ![](examples/lists/sort_tuples.py)
 
-## Sort dictionary by value
-{id: sort-dictionary-by-value}
-
-![](examples/lists/sort_dictionary.py)
-
-
-## DSU: Decorate Sort Undecorate
-{id: sort-decorate-sort-undecorate}
-
-In Perl it is called Schwartzian transform
-
-![](examples/lists/sort_dsu.py)
-![](examples/lists/sort_dsu.out)
-
 ## sort with sorted
 {id: sorted}
 {i: sorted}

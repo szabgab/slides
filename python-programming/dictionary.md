@@ -136,6 +136,11 @@ If we use the `get` method, we get `None` if the key does not exist.
 ![](examples/dictionary/numbers.py)
 ![](examples/dictionary/numbers.out)
 
+## Sort dictionary by value
+{id: sort-dictionary-by-value}
+
+![](examples/lists/sort_dictionary.py)
+
 
 ## Sort dictionary keys by value
 {id: sort-keys-by-value}
