@@ -110,7 +110,7 @@ To select range press **v** and then use the navigation keys. Then hit **:**
 {i: :b TAB}
 
 
-<a href="http://vimcasts.org/episodes/working-with-buffers/">Working with buffers</a>
+[Working with buffers](http://vimcasts.org/episodes/working-with-buffers/)
 
 
 
@@ -275,10 +275,7 @@ Ctrl-w c        Close window
 :help ctrl-w
 ```
 
-
-<a href="http://vimcasts.org/episodes/working-with-windows/">Working with windows</a>
-
-
+[Working with windows](http://vimcasts.org/episodes/working-with-windows/)
 
 
 ## Mark
@@ -430,7 +427,7 @@ modlines sets the number of lines to check
 {id: tabs-vs-spaces}
 
 
-<a href="http://vimcasts.org/episodes/tabs-and-spaces/">screencast</a>
+[screencast](http://vimcasts.org/episodes/tabs-and-spaces/)
 
 
 

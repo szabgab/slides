@@ -5,8 +5,8 @@
 {id: phonegap-intro}
 
 * Open Source
-* <a href="http://phonegap.com/"></a> download
-* <a href="https://build.phonegap.com/apps"></a> register and use online (Adobe or Github user)
+* [download](http://phonegap.com/)
+* [register](https://build.phonegap.com/apps) and use online (Adobe or Github user)
 
 
 
@@ -16,47 +16,34 @@
 For Android:
 
 
-* Java SE JDK <a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html"></a>
-* Android SDK <a href="http://developer.android.com/sdk/index.html"></a>
-* PhoneGap    <a href="http://phonegap.com/"></a>
-
+* [Java SE JDK](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
+* [Android SDK](http://developer.android.com/sdk/index.html)
+* [PhoneGap](http://phonegap.com/)
 
 For Apple:
 
-
 * ...
 
-
-
 And some more set-up work...
-
-
 
 
 ## PhoneGap Build
 {id: phonegap-build}
 
-
-<a href="https://build.phonegap.com/apps"></a> register and use online (Adobe or Github user)
-
-
+[register](https://build.phonegap.com/apps) and use online (Adobe or Github user)
 
 
 ## Sign up for Android
 {id: android}
 
-* <a href="https://play.google.com/apps/publish/"></a> ($25, 2 days)
-* <a href="https://support.google.com/googleplay/android-developer/answer/113468?hl=en&amp;ref_topic=2365624"></a>
-
+* [publish](https://play.google.com/apps/publish/) ($25, 2 days)
+* [publish](https://support.google.com/googleplay/android-developer/answer/113468?hl=en&amp;ref_topic=2365624)
 
 
 ## Android Signed
 {id: android-signed}
 
-
 Generating the keys:
-
-
 
 ```
 $ keytool -genkey -v -keystore ~/.keystore -alias alias_name
@@ -109,10 +96,10 @@ You will need to provide the alias, and the two passwords to the PhoneGap build 
 ## Apple
 {id: apple}
 
-* Sign up at <a href="https://developer.apple.com/"></a>
-* Then sign up to the "iOS Developer Program" for $99/year at <a href="https://developer.apple.com/programs/ios/"></a>
+* [Sign up](https://developer.apple.com/)
+* Then sign up to the "iOS Developer Program" for $99/year at [ios](https://developer.apple.com/programs/ios/)
 * They promise to process your request in 2 workdays.
-* Then follow this guide: <a href="https://build.phonegap.com/docs/ios-builds"></a>
+* Then follow this [guide](https://build.phonegap.com/docs/ios-builds)
 * Need the uuid of the device. Use the application called 'udid sender' to fetch it.
 
 
@@ -138,7 +125,6 @@ You will need to provide the alias, and the two passwords to the PhoneGap build 
 * Github
 
 
-
 ## Config
 {id: phonegap-config}
 ![](examples/phonegap/config.xml)
@@ -146,13 +132,12 @@ You will need to provide the alias, and the two passwords to the PhoneGap build 
 * id            set something for yourself
 * versionCode   start from 1
 * version       start from 0.0.1
-* name          
-* description   
-* author        
+* name
+* description
+* author
 * phonegap-version   The Phonegap Build will tell you when to change this.
 * permissions   See the comment and the docs
-* <a href="https://build.phonegap.com/docs/config-xml"></a>
-
+* [confg-xml](https://build.phonegap.com/docs/config-xml)
 
 
 ## Exercise: PhoneGap Build
