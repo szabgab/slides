@@ -1,5 +1,4 @@
 about
-linux-intro
 pair-programming
 perl-intro
 python-mocking

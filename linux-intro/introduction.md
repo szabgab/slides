@@ -1,5 +1,5 @@
 # Linux as a Virtual Environment
-{id: index}
+{id: linux}
 
 ## Prerequisites for the installations
 {id: installation}
