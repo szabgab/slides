@@ -1,11 +1,5 @@
 # Pair Programming
-{id: index}
-
-## Self introduction
-{id: self-introduction}
-
-* [Gabor Szabo](https://www.linkedin.com/in/szabgab/) @szabgab
-* DevOps and Agile trainer, consultant, and coach
+{id: introduction}
 
 ## Agenda
 {id: agenda}

@@ -1,5 +1,4 @@
 about
-pair-programming
 perl-intro
 python-mocking
 value
