@@ -1,5 +1,5 @@
 # How to develop software faster and have more stable releases?
-{id: index}
+{id: value}
 
 ## Self introduction
 {id: self-introduction}

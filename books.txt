@@ -18,4 +18,5 @@ perl-intro/perl.json
 php-programming/php.json
 python-mocking/python.json
 python-programming/python.json
+value/value.json
 web/web.json
