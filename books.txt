@@ -28,6 +28,7 @@ nosql/nosql.json
 pair-programming/pair.json
 perl-intro/perl.json
 php-programming/php.json
+programming/programming.json
 python-mocking/python.json
 python-programming/python.json
 ruby-programming/ruby.json
