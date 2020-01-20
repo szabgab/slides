@@ -1,0 +1,12 @@
+{
+    "title": "Jenkins",
+    "author": "Gabor Szabo",
+    "description": "Continuous Integration and Continuous Deployment with Jenkins",
+    "first_year": "2012",
+    "copyright_name": "Gabor Szabo",
+    "copyright_url": "https://szabgab.com/",
+    "version": "1.18",
+    "files": [
+        "jenkins.md"
+    ]
+}

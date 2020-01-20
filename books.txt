@@ -16,6 +16,7 @@ golang/go.json
 groovy/groovy.json
 java-programming/java.json
 javascript-programming/javascript.json
+jenkins/jenkins.json
 jenkins-intro/jenkins.json
 linux/linux.json
 linux-intro/linux.json
