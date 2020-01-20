@@ -23,6 +23,7 @@ linux-intro/linux.json
 mobile/mobile.json
 mojolicious/mojolicious.json
 nodejs/nodejs.json
+nosql/nosql.json
 pair-programming/pair.json
 perl-intro/perl.json
 php-programming/php.json
