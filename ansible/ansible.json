@@ -1,0 +1,12 @@
+{
+    "title": "Ansible",
+    "author": "Gabor Szabo",
+    "first_year": "2016",
+    "description": "Ansible for Configuration Management",
+    "copyright_name": "Gabor Szabo",
+    "copyright_url": "https://szabgab.com/",
+    "version": "1.01",
+    "files": [
+        "ansible.md"
+    ]
+}

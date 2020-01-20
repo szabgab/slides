@@ -1,4 +1,5 @@
 agile/agile.json
+ansible/ansible.json
 ansible-intro/ansible.json
 aws-lambda/aws.json
 bash/bash.json
