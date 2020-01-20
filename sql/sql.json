@@ -1,0 +1,12 @@
+{
+    "title": "SQL - Relational Database",
+    "author": "Gabor Szabo",
+    "description": "Learn about SQL",
+    "first_year": "2016",
+    "copyright_name": "Gabor Szabo",
+    "copyright_url": "https://szabgab.com/",
+    "version": "1.18",
+    "files": [
+        "sql.md"
+    ]
+}
