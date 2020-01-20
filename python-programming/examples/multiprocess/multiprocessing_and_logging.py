@@ -8,7 +8,7 @@ def f(x):
    global count
    count += 1
    #print("Input {} in process {}".format(x, os.getpid()))
-   logger = logging.getLogger("cost")
+   logger = logging.getLogger("app")
    logger.info("f({}) count {} in PID {}".format(x, count, os.getpid()))
    return x*x
 
@@ -18,7 +18,7 @@ def prt(z):
 
 def setup_logger():
    level = logging.DEBUG
-   logger = logging.getLogger("cost")
+   logger = logging.getLogger("app")
    logger.setLevel(level)
    log_file = 'try.log'
    formatter = logging.Formatter('%(asctime)s - %(levelname)-8s - %(filename)-20s:%(lineno)-5d - %(funcName)-22s - %(message)s')
@@ -30,7 +30,7 @@ def setup_logger():
    logger.info("Setup logger in PID {}".format(os.getpid()))
 
 def main():
-   logger = logging.getLogger('cost')
+   logger = logging.getLogger('app')
    logger.info("main")
 
    with Pool(5) as p:
