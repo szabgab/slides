@@ -20,5 +20,6 @@ php-programming/php.json
 python-mocking/python.json
 python-programming/python.json
 value/value.json
+vim/vim.json
 web/web.json
 windows-cmd/windows.json

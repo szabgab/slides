@@ -1,0 +1,37 @@
+
+" Turn on syntax highlighting.
+syntax on
+
+" Don't show line numbers.
+set nonumber
+
+" Enable embedded vim instructions in source files
+set modeline
+" set how many lines are checked in a source file for instructions:
+" by default this is 0 on OSX
+set modelines=1000
+
+" Some use-cases for instructions in source files:
+" # vim:tabstop=4
+" In JavaScript
+" // vim:tabstop=4
+
+" Let's default to 4 spaces per tab for our files.
+set tabstop=4
+
+" Every click on TAB will turn into 4 spaces.
+" expandtab
+
+" Every click on TAB will insert a real TAB.
+set noexpandtab
+
+" Row and column number in the bottom right corner.
+set ruler
+
+" Ignore case in searches.
+set ignorecase
+
+" Highlight search results (yellow marker)
+" Typing :noh will remove the yellow marks.
+set hlsearch
+
