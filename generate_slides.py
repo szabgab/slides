@@ -37,7 +37,7 @@ def main():
         available_names = map(lambda s: s.rstrip("\n"), fh.readlines())
 
     with open(os.path.join(root, 'books.txt')) as fh:
-        available_books = dict(map(lambda x: x.split('/'), map(lambda s: s.rstrip("\n"), fh.readlines())))
+        available_books = dict(map(lambda x: x.split('/'), map(lambda s: s.rstrip("\n"), filter(lambda x: x[0] != '#', fh.readlines()))))
 
 
     names = []
