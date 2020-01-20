@@ -1,5 +1,5 @@
 # Google Cloud Platform
-{id: index}
+{id: gcp}
 
 ## Self intro
 {id: self-intro}
