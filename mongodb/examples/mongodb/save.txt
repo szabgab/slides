@@ -1,0 +1,17 @@
+> db.config.save({ from : "mongodb@edumaven.com" })
+
+> db.config.find()
+{ "_id" : ObjectId("5305c8b37ec4c674d24813a8"), "from" : "mongodb@edumaven.com" }
+
+> db.config.save({ _id : 'from', value : 'mongodb@edumaven.com' })
+
+> db.config.find()
+{ "_id" : ObjectId("5305c8b37ec4c674d24813a8"), "from" : "mongodb@edumaven.com" }
+{ "_id" : "from", "value" : "mongodb@edumaven.com" }
+
+> db.config.save({ _id : 'from', value : 'foo@bar.com' })
+
+> db.config.find()
+{ "_id" : ObjectId("5305c8b37ec4c674d24813a8"), "from" : "mongodb@edumaven.com" }
+{ "_id" : "from", "value" : "foo@bar.com" }
+ 

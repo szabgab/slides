@@ -1,0 +1,36 @@
+> db.people.insert({ 'name' : 'foo', child : { name : 'bar' } })
+Inserted 1 record(s) in 11ms
+
+> db.people.find()
+{
+  "_id": ObjectId("53077243ad9a4f5b93fadc64"),
+  "name": "foo",
+  "child": {
+    "name": "bar"
+  }
+}
+Fetched 1 record(s) in 1ms
+
+> db.people.find({ name : 'foo' })
+{
+  "_id": ObjectId("53077243ad9a4f5b93fadc64"),
+  "name": "foo",
+  "child": {
+    "name": "bar"
+  }
+}
+Fetched 1 record(s) in 1ms
+
+> db.people.find({ name : 'bar' })
+Fetched 0 record(s) in 1ms
+
+> db.people.find({ "child.name" : 'bar' })
+{
+  "_id": ObjectId("53077243ad9a4f5b93fadc64"),
+  "name": "foo",
+  "child": {
+    "name": "bar"
+  }
+}
+Fetched 1 record(s) in 1ms
+

@@ -1,0 +1,17 @@
+{
+    "title": "MongoDB",
+    "author": "Gabor Szabo",
+    "description": "MongoDB tutorial and training with examples in JavaScript, Perl, Python, Ruby, PHP.",
+    "first_year": "2014",
+    "copyright_name": "Gabor Szabo",
+    "copyright_url": "https://szabgab.com/",
+    "version": "1.18",
+    "files": [
+        "overview.md",
+        "basic.md",
+        "aggregation.md",
+        "mboxer.md",
+        "perl.md",
+        "python.md"
+    ]
+}

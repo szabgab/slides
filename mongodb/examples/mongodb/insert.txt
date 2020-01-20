@@ -1,0 +1,17 @@
+> show dbs
+...
+
+> use try
+switched to db try
+
+> show collections
+
+> db.users.insert({ name: 'Foo' })
+ 
+> show collections
+system.indexes
+users
+
+> db.users.find()
+{ "_id" : ObjectId("526b8fdba444e81f1ca06ba2"), "name" : "Foo" }
+

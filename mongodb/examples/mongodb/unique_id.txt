@@ -1,0 +1,29 @@
+> db.a.insert({ _id : 'a', value : 1 })
+Inserted 1 record(s) in 20ms
+
+> db.a.find()
+{
+  "_id": "a",
+  "value": 1
+}
+Fetched 1 record(s) in 1ms
+
+> db.a.insert({ _id : 'a', value : 2 })
+E11000 duplicate key error index: test.a.$_id_  dup key: { : "a" }
+
+> db.b.insert({ _id : 'a', value : 2 })
+Inserted 1 record(s) in 763ms
+
+> db.a.find()
+{
+  "_id": "a",
+  "value": 1
+}
+Fetched 1 record(s) in 1ms
+
+> db.b.find()
+{
+  "_id": "a",
+  "value": 2
+}
+Fetched 1 record(s) in 1ms

@@ -22,6 +22,7 @@ linux/linux.json
 linux-intro/linux.json
 mobile/mobile.json
 mojolicious/mojolicious.json
+mongodb/mongodb.json
 nodejs/nodejs.json
 nosql/nosql.json
 pair-programming/pair.json

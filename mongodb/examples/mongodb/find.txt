@@ -1,0 +1,12 @@
+
+> db.users.find({ _id: ObjectId("526b9048a444e81f1ca06ba3") })
+{ "_id" : ObjectId("526b9048a444e81f1ca06ba3"), "name" : "Bar" }
+
+> db.users.find({ name: 'Foo' })
+{ "_id" : ObjectId("526b8fdba444e81f1ca06ba2"), "name" : "Foo" }
+
+
+> db.users.find({ name: /o/ })
+{ "_id" : ObjectId("526b8fdba444e81f1ca06ba2"), "name" : "Foo" }
+{ "_id" : ObjectId("526ba048a444e81f1ca06ba4"), "name" : "Moo" }
+

@@ -1,0 +1,15 @@
+> db.users.update({ name : 'Zorg' }, { $set : { kids: [ { name: 'Jane' } ] } })
+
+> db.users.find()
+{ "_id" : ObjectId("526b8fdba444e81f1ca06ba2"), "name" : "Foo" }
+{
+    "_id" : ObjectId("526b9048a444e81f1ca06ba3"), "name" : "Zorg",
+    "child" : "Jane", 
+    "kids" : [
+        {
+            "name" : "Jane"
+        }
+    ]
+}
+{ "_id" : ObjectId("526ba048a444e81f1ca06ba4"), "name" : "Moo" }
+
