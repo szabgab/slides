@@ -1,5 +1,4 @@
 about
-google-gcp
 groovy
 jenkins-intro
 linux-intro
