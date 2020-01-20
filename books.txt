@@ -9,6 +9,7 @@ google-gcp/gcp.json
 git-intro/git.json
 github-ci/github-ci.json
 golang/go.json
+groovy/groovy.json
 nodejs/nodejs.json
 php-programming/php.json
 python-programming/python.json

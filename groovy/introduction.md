@@ -1,5 +1,5 @@
 # Groovy
-{id: index}
+{id: groovy}
 
 ## Why Groovy?
 {id: why-groovy}
@@ -46,4 +46,3 @@
 
 [](examples/groovy/scope_1.groovy)
 
-def !

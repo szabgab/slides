@@ -1,5 +1,4 @@
 about
-groovy
 jenkins-intro
 linux-intro
 pair-programming
