@@ -1,0 +1,9 @@
+Add line by a
+Another line by A
+Readme file
+2nd line
+<<<<<<< HEAD
+line by b
+=======
+line added by A
+>>>>>>> A at the bottom

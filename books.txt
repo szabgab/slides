@@ -9,6 +9,7 @@ data-science/data.json
 dart-programming/dart.json
 docker/docker.json
 google-gcp/gcp.json
+git/git.json
 git-intro/git.json
 github-ci/github-ci.json
 golang/go.json
