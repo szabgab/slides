@@ -1,0 +1,100 @@
+Creating a counter
+
+We are going to create a simple command line counter that can count
+from 0 upwards for multiple names.
+We are going to have several solutions with different back-end databases.
+
+The first one will use a plain text file.
+The second solution will use a YAML file.
+The third solution will use an RDMBS. Specifically we will use SQLite.
+
+The operations are the follow
+
+1) create - to set up the database
+2) delete - to remove the database
+
+3) start NAME - to start a counter called 'NAME'
+4) count NAME - to increment a counter called 'NAME'
+
+5) list - to list all the counters in ABC order
+
+We have a wrapper script which provides the common code
+and for each implementation we have a module with a
+single function for each action.
+
+Before starting the Plain text file version we need to decide on the file format.
+Basically we would like to keep a set of key-value pairs. For this we can use a
+CSV file though in this case we'll use a colon (:) as the separator character.
+So when we have two counters 'foo' and 'bar' the file will look like this:
+
+<code>
+bar:6
+foo:3
+</code>
+
+The modules has a global $filename variable that holds the name of the 'database' file.
+In order to set up the database, we just need to create an empty file. That's easy.
+
+<code lang="perl">
+sub create {
+    die "File '$filename' already exists\n" if -e $filename;
+    open my $fh, '>', $filename or die;
+    close $fh or die;
+}
+</code>
+
+First we check if the file already exists, and bail out if it does.
+Then we open the file and immediately close it. Providing some clear text
+for the die() calls is left as an exercise. (Or you can actually remove those
+calls and just put <hl>use autodie;</hl> at the beginning of the file.) 
+
+In order to delete the 'database' we only need to delete the file:
+
+<code lang="perl">
+sub delete {
+    die "File '$filename' did not exists\n" if not -e $filename;
+    unlink $filename or die;
+}
+</code>
+
+As we can't just manipulate the file on the disk, both for starting a new counter and for incrementing an old
+one we'll need to read in all the entries from the file, make the changes in the memory and then write the file
+back to disk. I think in this case it is fair to assume that we have enough memory to load all the counters.
+
+So first we implement two helper functions to read and to write the file.
+When in the memory, we will keep the data in a hash. The _save_file() function will get a reference to this
+hash and will save it.
+
+The code is quite simple.
+
+<code lang="perl">
+sub _save_file {
+    my ($data) = @_;
+    open my $fh, '>', $filename or die;
+    foreach my $name (sort keys %$data) {
+        print $fh "$name:$data->{$name}\n";
+    }
+    close $fh;
+}
+</code>
+
+
+To start a counter we first need to read the file, then bail out if the counter already exists and add it otherwise.
+
+
+sub start {
+    my ($name) = @_;
+    my $data = _read_file();
+
+    die "Name '$name' already exists\n" if exists $data->{$name};
+    $data->{$name} = 0;
+    say $data->{$name};
+
+    _save_file($data);
+}
+
+
+TODO add --list
+TODO lock the files, use transactions
+
+

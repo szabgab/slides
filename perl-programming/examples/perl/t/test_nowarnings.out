@@ -1,0 +1,19 @@
+1..5
+ok 1 - first
+ok 2 - second
+ok 3 - third
+ok 4 - fourth
+not ok 5 - no warnings
+#   Failed test 'no warnings'
+#   at /home/gabor/perl/lib/site_perl/5.14.2/Test/NoWarnings.pm line 45.
+# There were 2 warning(s)
+#   Previous test 1 'first'
+#   Argument "a" isn't numeric in addition (+) at t/test_nowarnings.t line 11.
+#  at t/test_nowarnings.t line 11.
+#
+# ----------
+#   Previous test 2 'second'
+#   Argument "b" isn't numeric in addition (+) at t/test_nowarnings.t line 12.
+#  at t/test_nowarnings.t line 12.
+#
+# Looks like you failed 1 test of 5.

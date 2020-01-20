@@ -1,0 +1,10 @@
+---
+people:
+  Bar:
+    phones:
+      - 345
+      - 678
+    title: CEO
+  Baz: NA
+  Foo:
+    phone: 123

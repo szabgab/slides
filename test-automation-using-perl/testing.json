@@ -1,0 +1,30 @@
+{
+    "title": "Test Automation Using Perl",
+    "author": "Gabor Szabo",
+    "description": "Test Automation using Perl for tesing web applications, networking devices, storage systems and more.",
+    "first_year": "2004",
+    "copyright_name": "Gabor Szabo",
+    "copyright_url": "https://szabgab.com/",
+    "version": "1.18",
+    "files": [
+        "testing-preface.md",
+        "test-module.md",
+        "test-more.md",
+        "test-builder.md",
+        "test-reporting.md",
+        "command-line.md",
+        "networking.md",
+        "web.md",
+        "selenium.md",
+        "servers.md",
+        "testing-network.md",
+        "database.md",
+        "dbi-intro.md",
+        "dbi.md",
+        "dbix-class.md",
+        "win32-gui.md",
+        "win32-ie.md",
+        "x-windows.md",
+        "appendix-testing.md"
+    ]
+}

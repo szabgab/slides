@@ -1,0 +1,15 @@
+$VAR1 = [
+          'zero',
+          [
+            'one-zero',
+            [
+              undef,
+              'one-one-one'
+            ]
+          ],
+          [
+            [
+              'two-zero-zero'
+            ]
+          ]
+        ];

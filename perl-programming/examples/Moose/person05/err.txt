@@ -1,0 +1,5 @@
+Attribute (sex) does not pass the type constraint because: 
+   The sex you provided (o) is not valid. Valid values are 'f' and 'm'. 
+   at accessor Person::sex (defined at lib/Person.pm line 16) line 8
+     Person::sex('Person=HASH(0x24ff918)', 'other')
+       called at script/person.pl line 16

@@ -1,0 +1,368 @@
+/******************************************************************************
+ * TAP-Formatter-HTML: default stylesheet for report body
+ * Copyright (c) 2008 Steve Purkis.  All rights reserved.
+ * Released under the same terms as Perl itself.
+ *****************************************************************************/
+
+/******************************************************************************
+/* The menu bar
+ */
+#menu {
+	display: none; /* hidden by default */
+	position: absolute;
+	left: 8px;
+	top: 8px;
+	padding: 2px;
+	width: 100px;
+	height: 26px;
+	font-size: small;
+	background-color: #eeffcc;
+	opacity: 0.5;
+}
+
+#menu li {
+	text-decoration: none;
+	list-style: none;
+	display: block;
+}
+
+
+/******************************************************************************
+/* The summary bar
+ */
+#summary {
+	position: relative;
+	padding: 2px 0 2 0;
+	width: 100%;
+	font-size: x-large;
+	text-align: center;
+}
+
+#summary.passed {
+	background-color: #99ff66;
+	border: 1px solid #00ff00;
+}
+
+#summary.failed {
+	background-color: #ff6450;
+	border: 1px solid #ff0000;
+}
+
+#summary a {
+	width: 100%;
+	display: block;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	color: #000000;
+}
+
+#summary a:hover {
+	text-decoration: none;
+	color: #6666aa;
+}
+
+
+
+/******************************************************************************
+ * The report detail section
+ */
+#detail {
+	margin-top: 5px;
+	width: 100%;
+}
+
+table.detail {
+	width: 100%;
+	border: 1px solid #3333ee;
+	padding: 2px;
+	border-spacing: 0px;
+}
+
+table.detail th {
+	border-bottom: 2px solid #3333ee;
+	padding-top: 2px;
+}
+
+table.detail tfoot tr td {
+	border-top: 2px solid #3333ee;
+	padding-top: 2px;
+}
+
+table.detail td {
+	position: relative;
+	top: 0px;
+	left: 0px;
+	border-top: 1px solid #aaaaaa;
+	margin: 0;
+	padding: 2px 0 2 0;
+	vertical-align: top;
+}
+
+table.detail td.file {
+	font-size: small;
+}
+
+/*
+table.detail tr.failed td.file {
+	background-color: #FF6450;
+}
+*/
+
+/******************************************************************************
+ * The file column
+ */
+table.detail td.file {
+	width: 10%;
+	padding-left: 2px;
+	padding-right: 4px;
+}
+
+a.file {
+	display: block;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	text-decoration: none;
+	color: #3333cc;
+}
+
+a.file:hover {
+	text-decoration: none;
+	color: #6666ee;
+}
+
+a.file:visited {
+	text-decoration: none;
+	color: #3333cc;
+}
+
+/******************************************************************************
+ * The time column
+ */
+table.detail td.time {
+	width: 2%;
+	border-left: 1px solid #ddddff;
+	text-align: center;
+	font-size: small;
+}
+
+/******************************************************************************
+ * The percentage column
+ */
+table.detail td.percent {
+	padding-left: 2px;
+	padding-right: 2px;
+	width: 2%;
+	text-align: center;
+	font-size: small;
+	vertical-align: middle;
+}
+
+/******************************************************************************
+ * Colouring the file & percentage columns
+ */
+table.detail tr.percent td.c {
+	padding-left: 2px;
+	padding-right: 2px;
+	width: 2%;
+	text-align: center;
+	font-size: small;
+	vertical-align: middle;
+}
+
+table.detail tr.passed td.c {
+	border: 1px solid #99cc99;
+}
+
+table.detail tr.passed td.cb {
+	background-color: #99ff66;
+}
+
+table.detail tr.todo-passed td.c {
+	border: 1px solid #99cc99;
+}
+
+table.detail tr.todo-passed td.cb {
+	background-color: #ddffbb;
+}
+
+table.detail tr.severity-very-low td.c {
+	border: 1px solid #ffee33;
+	background-color: #ffffaa;
+}
+
+table.detail tr.severity-low td.c {
+	border: 1px solid #eecc33;
+	background-color: #ffdd99;
+}
+
+table.detail tr.severity-med td.c {
+	border: 1px solid #dd6633;
+	background-color: #ffaa77;
+}
+
+table.detail tr.severity-high td.c {
+	border: 1px solid #ff3333;
+	background-color: #ff8866;
+}
+
+table.detail tr.severity-very-high td.c {
+	border: 1px solid #ff0000;
+	background-color: #ff6450;
+}
+
+/******************************************************************************
+ * The test run column
+ */
+
+/******************************************************************************
+ * Test summaries (.TS)
+ */
+
+table.TS {
+	clear: both;
+	width: 100%;
+	height: 10px;
+	font-size: 8px; /* safari wants this less than 10px */
+	margin: 0px;
+	margin-bottom: 4px;
+	padding: 0;
+	border-spacing: 1px;
+}
+
+table.TS td {
+	margin: 0;
+	padding: 0;
+	height: 10px;
+}
+
+table.TS td a {
+	display: block;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	width: 100%;
+	height: 100%;
+}
+
+/* base for passed/failed (should always be lower precedent in class list!) */
+table.TS td.p { /* p=passed */
+	border: 1px solid #66cc33;
+	background-color: #99ff66;
+}
+
+table.TS td.f { /* f=failed */
+	border: 1px solid #ff0000;
+	background-color: #ff6450;
+}
+
+/* overrides for specific outcomes */
+table.TS td.k { /* k=ok */
+	border: 1px solid #66cc33;
+}
+
+table.TS td.n { /* n=not-ok */
+	border: 1px solid #ff0000;
+}
+
+table.TS td.u { /* u=todo-ok = 'unexpected' ok */
+	border: 1px solid #eeaa00;
+	background-color: #ffcc00;
+}
+
+table.TS td.t { /* t=todo-not-ok */
+	border: 1px solid #99cc99;
+	background-color: #ddffbb;
+}
+
+table.TS td.s { /* s=skip-ok */
+	border: 1px solid #99d999;
+	background-color: #99cc66;
+}
+
+/******************************************************************************
+ * Test detail
+ */
+div.test-detail {
+	margin: 0;
+	padding: 0;
+/*	display: none; /* let JS handle this... */
+}
+
+/******************************************************************************
+ * Test parse errors
+ */
+ul.parse-errors {
+	margin: 0;
+	padding: 0;
+	clear: left;
+}
+
+ul.parse-errors li {
+	margin-left: 4px;
+	list-style: none;
+	color: red;
+}
+
+/******************************************************************************
+ * Test output
+ */
+ul.test-out {
+	margin: 0;
+	padding: 0;
+	clear: left;
+}
+
+ul.test-out li {
+	margin-left: 4;
+	border-left: none;
+	list-style: none;
+}
+
+ul.test-out li.k { /* k=ok */
+	;
+}
+
+ul.test-out li.n { /* n=not-ok */
+	color: #ff0000;
+}
+
+ul.test-out li.u { /* u=todo-ok = 'unexpected' ok */
+	color: #cc3333;
+}
+
+ul.test-out li.t { /* t=todo-not-ok */
+	color: #773322;
+}
+
+ul.test-out li.s { /* s=skip-ok */
+	color: #001111;
+}
+
+ul.test-out li.tst {
+	;
+}
+
+ul.test-out li.cmt {
+	color: #666666;
+	font-family: monospace;
+}
+
+ul.test-out li.pln {
+	color: blue;
+}
+
+ul.test-out li.unp { /* unp=unplanned */
+	color: #ff0000;
+}
+
+ul.test-out li.unk { /* unk=unknown */
+	color: #996600;
+	font-family: monospace;
+}
+
+ul.test-out li.stat { /* stat=exit-status */
+	color: #ff0000;
+}

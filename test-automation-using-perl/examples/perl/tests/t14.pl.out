@@ -1,0 +1,8 @@
+1..3
+ok 1 - 1+1
+ok 2 - 2+2
+not ok 3 - 2+2+2
+
+#   Failed test '2+2+2'
+#   at examples/perl/tests/t14.pl line 12.
+# Looks like you failed 1 test of 3.

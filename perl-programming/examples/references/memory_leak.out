@@ -1,0 +1,8 @@
+$VAR1 = {
+          'wife' => {
+                      'man' => $VAR1,
+                      'name' => 'Bara'
+                    },
+          'name' => 'Foo'
+        };
+$VAR2 = $VAR1->{'wife'};

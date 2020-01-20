@@ -1,0 +1,4 @@
+BEGIN
+BODY
+Illegal division by zero at examples/other/begin_end.pl line 11.
+END

@@ -1,0 +1,11 @@
+$VAR1 = {
+          'Peti Bar' => {
+                          'Art' => 99,
+                          'Literature' => 88,
+                          'Mathematics' => 82
+                        },
+          'Foo Bar' => {
+                         'Literature' => 67,
+                         'Mathematics' => 97
+                       }
+        };

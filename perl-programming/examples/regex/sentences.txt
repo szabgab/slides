@@ -1,0 +1,5 @@
+In <this text> there are <some in marks>,
+but there are more lines in this file and there
+are more <such symbols>. How can someone match sentences?
+A sentence - in our case, starts with a capital letter
+and ends with a dot.

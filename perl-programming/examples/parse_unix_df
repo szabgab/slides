@@ -1,0 +1,29 @@
+/cdr/work              (/dev/vg00/data        ) : 17033976 total allocated Kb
+                                                  16861696 free allocated Kb
+                                                    172280 used allocated Kb
+                                                         1 % allocation used
+/opt                   (/dev/vg00/lvol4       ) :  8374112 total allocated Kb
+                                                   1848520 free allocated Kb
+                                                   6525592 used allocated Kb
+                                                        77 % allocation used
+/tmp                   (/dev/vg00/lvol5       ) :  1030768 total allocated Kb
+                                                    206088 free allocated Kb
+                                                    824680 used allocated Kb
+                                                        80 % allocation used
+/usr                   (/dev/vg00/lvol6       ) :  2611480 total allocated Kb
+                                                   1268688 free allocated Kb
+                                                   1342792 used allocated Kb
+                                                        51 % allocation used
+/var                   (/dev/vg00/lvol7       ) :  2604128 total allocated Kb
+                                                   2203184 free allocated Kb
+                                                    400944 used allocated Kb
+                                                        15 % allocation used
+/stand                 (/dev/vg00/lvol1       ) :   269032 total allocated Kb
+                                                    202888 free allocated Kb
+                                                     66144 used allocated Kb
+                                                        24 % allocation used
+/                      (/dev/vg00/lvol3       ) :   521296 total allocated Kb
+                                                    387680 free allocated Kb
+                                                    133616 used allocated Kb
+                                                        25 % allocation used
+tbcgrm1:/root #

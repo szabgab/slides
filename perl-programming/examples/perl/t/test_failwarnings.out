@@ -1,0 +1,16 @@
+ok 1 - first
+not ok 2 - Caught warning
+#   Failed test 'Caught warning'
+#   at t/test_failwarnings.t line 9.
+# Warning was 'Argument "a" isn't numeric in addition (+)
+#     at t/test_failwarnings.t line 9.'
+ok 3 - second
+not ok 4 - Caught warning
+#   Failed test 'Caught warning'
+#   at t/test_failwarnings.t line 10.
+# Warning was 'Argument "b" isn't numeric in addition (+)
+#     at t/test_failwarnings.t line 10.'
+ok 5 - third
+ok 6 - fourth
+1..6
+# Looks like you failed 2 tests of 6.

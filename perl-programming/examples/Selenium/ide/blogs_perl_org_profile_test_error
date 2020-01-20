@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://blogs.perl.org/" />
+<title>blog_perl_org_profile_test_error</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">blog_perl_org_profile_test_error</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Sign In</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>selenium</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=button.primary-button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Edit profile</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=customfield_about_blurb</td>
+	<td>Working with Selenium</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=button.primary-button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=view your profile</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>blogs.perl.org: User Profile: selenium</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=#profile-data &gt; li</td>
+	<td>exact:About: Working with Selenium</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Sign out</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=generic-error</td>
+	<td>close Id or Username is required</td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,28 @@
+1..6
+ok 1 - fibonacci on 2
+ok 2 - warning when called with -1
+ok 3 - fibonacci on -1 returns 0
+ok 4 - fibonacci on 4
+ok 5 - fibonacci on 6
+not ok 6 - no warnings
+#   Failed test 'no warnings'
+#   at /home/gabor/perl/lib/site_perl/5.14.2/Test/NoWarnings.pm line 45.
+# There were 3 warning(s)
+#   Previous test 0 ''
+#   Some other warning 2 at t/fibonacci_with_warnings.t line 36.
+#  at t/fibonacci_with_warnings.t line 36.
+#   main::other_fibo(2) called at t/fibonacci_with_warnings.t line 13
+#
+# ----------
+#   Previous test 3 'fibonacci on -1 returns 0'
+#   Some other warning 4 at t/fibonacci_with_warnings.t line 36.
+#  at t/fibonacci_with_warnings.t line 36.
+#   main::other_fibo(4) called at t/fibonacci_with_warnings.t line 25
+#
+# ----------
+#   Previous test 4 'fibonacci on 4'
+#   Some other warning 6 at t/fibonacci_with_warnings.t line 36.
+#  at t/fibonacci_with_warnings.t line 36.
+#   main::other_fibo(6) called at t/fibonacci_with_warnings.t line 30
+#
+# Looks like you failed 1 test of 6.

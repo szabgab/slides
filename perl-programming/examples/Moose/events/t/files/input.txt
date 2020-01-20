@@ -1,0 +1,21 @@
+start_session
+start_window
+event 1
+event 2
+end_window
+start_window
+event 3
+event 4
+event 5
+end_window
+end_session
+start_session
+end_session
+start_session
+start_session
+start_window
+end_window
+end_session
+start_session
+start_window
+event 6

@@ -1,0 +1,30 @@
+07:04:15: 0x652415b3: FreeComponentLibrary in C:\Program Files\wxFormBuilder\plugins\common\libcommon.dll
+07:04:15: 0x67b7bd99: ZN12wxEvtHandler21ProcessEventIfMatchesERK21wxEventTableEntryBasePS_R7wxEvent in C:\Program Files\wxFormBuilder\wxmsw28u_gcc.dll
+07:04:15: 0x67b7d4bb: ZN16wxEventHashTable11HandleEventER7wxEventP12wxEvtHandler in C:\Program Files\wxFormBuilder\wxmsw28u_gcc.dll
+07:04:15: 0x67b7d58c: ZN12wxEvtHandler12ProcessEventER7wxEvent in C:\Program Files\wxFormBuilder\wxmsw28u_gcc.dll
+07:04:15: 0x67b7d529: ZN12wxEvtHandler12ProcessEventER7wxEvent in C:\Program Files\wxFormBuilder\wxmsw28u_gcc.dll
+07:04:15: 0x67bc6c21: ZN8wxWindow16HandleMouseEventEjiij in C:\Program Files\wxFormBuilder\wxmsw28u_gcc.dll
+07:04:15: 0x67bcb1e7: ZN8wxWindow13MSWWindowProcEjjl in C:\Program Files\wxFormBuilder\wxmsw28u_gcc.dll
+07:04:15: 0x67bc4400: Z9wxWndProcP6HWND__jjl in C:\Program Files\wxFormBuilder\wxmsw28u_gcc.dll
+07:04:15: 0x774ec4e7: gapfnScSendMessage in C:\windows\system32\USER32.dll
+07:04:15: 0x774ec5e7: gapfnScSendMessage in C:\windows\system32\USER32.dll
+07:04:15: 0x774ecc19: gapfnScSendMessage in C:\windows\system32\USER32.dll
+07:04:15: 0x774ecc70: DispatchMessageW in C:\windows\system32\USER32.dll
+07:04:15: 0x774e41eb: IsDialogMessageW in C:\windows\system32\USER32.dll
+07:04:15: 0x67bc8dbe: ZN8wxWindow17MSWProcessMessageEP6tagMSG in C:\Program Files\wxFormBuilder\wxmsw28u_gcc.dll
+07:04:15: 0x67bacef5: ZN11wxEventLoop17PreProcessMessageEP6tagMSG in C:\Program Files\wxFormBuilder\wxmsw28u_gcc.dll
+07:04:15: 0x67bacf39: ZN11wxEventLoop14ProcessMessageEP6tagMSG in C:\Program Files\wxFormBuilder\wxmsw28u_gcc.dll
+07:04:15: 0x67bacc54: ZN11wxEventLoop8DispatchEv in C:\Program Files\wxFormBuilder\wxmsw28u_gcc.dll
+07:04:15: 0x67c3a512: ZN17wxEventLoopManual3RunEv in C:\Program Files\wxFormBuilder\wxmsw28u_gcc.dll
+07:04:15: 0x67c1b1fb: ZN9wxAppBase8MainLoopEv in C:\Program Files\wxFormBuilder\wxmsw28u_gcc.dll
+07:04:15: 0x4028f3: MyApp::OnRun() in C:\Program Files\wxFormBuilder\wxFormBuilder.exe
+07:04:15: 0x67b30da9: Z12wxInitializeiPPw in C:\Program Files\wxFormBuilder\wxmsw28u_gcc.dll
+07:04:15: 0x67b830c1: Z7wxEntryP11HINSTANCE__S0_Pci in C:\Program Files\wxFormBuilder\wxmsw28u_gcc.dll
+07:04:15: 0x4014d7: WinMain@16 in C:\Program Files\wxFormBuilder\wxFormBuilder.exe
+07:04:15: 0x5803d6: operator<<(std::ostream&, MD5) in C:\Program Files\wxFormBuilder\wxFormBuilder.exe
+07:04:15: 0x4010b6: [unknown function] in C:\Program Files\wxFormBuilder\wxFormBuilder.exe
+07:04:15: 0x401128: [unknown function] in C:\Program Files\wxFormBuilder\wxFormBuilder.exe
+07:04:15: 0x77373c45: BaseThreadInitThunk in C:\windows\system32\kernel32.dll
+07:04:15: 0x779637f5: RtlInitializeExceptionChain in C:\windows\SYSTEM32\ntdll.dll
+07:04:15: 0x779637c8: RtlInitializeExceptionChain in C:\windows\SYSTEM32\ntdll.dll
+07:04:15: A Fatal Error Occurred. Click Details for a backtrace.

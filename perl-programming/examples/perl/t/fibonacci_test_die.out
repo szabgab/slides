@@ -1,0 +1,4 @@
+1..3
+ok 1 - fibonacci on 3
+ok 2 - expecting to die
+ok 3 - fibonacci on 4

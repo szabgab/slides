@@ -1,0 +1,7 @@
+Foo,23
+Bar,70
+Baz,92
+Bozo,17
+Gozo,52
+Dardon,20
+Mekodra,23

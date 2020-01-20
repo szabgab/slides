@@ -1,0 +1,5 @@
+The value of 'bar' differs: '2' and '4'
+The key 'baz' does not exist in second hash
+The value of 'zoo' is '6' in the fist has and undef in the second hash
+The value of 'foobar' is '9' in the second has and undef in the first hash
+The key 'moo' does not exist in first hash

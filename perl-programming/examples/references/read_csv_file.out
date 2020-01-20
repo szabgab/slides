@@ -1,0 +1,17 @@
+$VAR1 = [
+          {
+            'lname' => 'Bar',
+            'fname' => 'Boo',
+            'phone' => '123'
+          },
+          {
+            'lname' => 'Baz',
+            'fname' => 'Foo',
+            'phone' => '456'
+          },
+          {
+            'lname' => 'Zorg',
+            'fname' => 'Moo',
+            'phone' => '789'
+          }
+        ];

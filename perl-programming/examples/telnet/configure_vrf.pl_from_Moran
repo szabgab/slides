@@ -1,0 +1,132 @@
+
+#!perl -w
+use strict;
+
+use Net::Telnet;
+
+open my $out, ">>", "out.log" or die;
+my $t = Net::Telnet->new(
+		Timeout    => 2,
+		#Prompt     => '/>/',
+		input_log  => "input.log",
+);
+
+
+my $param = $ARGV[0];
+chomp($param);
+
+$t->open("80.80.80.63");
+
+
+$t->waitfor('/PE-South>$/');
+$t->print("enable");
+$t->waitfor('/Password:.*$/');
+$t->print("admin");
+$t->waitfor('/PE-South#$/');
+
+$t->prompt('/PE-South#/');
+my @lines = $t->cmd("show ip vrf");
+print @lines;
+
+if (grep /MORAN/, @lines) {
+	print "VRF MORAN is already configured\n";
+	if($param eq "add"){
+		print "Please remove it manually and rerun the program\n";
+		exit;	
+	}
+	if($param eq "del"){
+		$t->prompt('/PE-South\(config\)#$/');
+		$t->cmd("config terminal");
+		$t->cmd("no ip vrf MORAN");
+		sleep(10);
+		$t->prompt('/PE-South#/');
+		$t->cmd("end");
+		my @lines = $t->cmd("show ip vrf");
+		print "VRF MORAN was removed:\n @lines\n";
+		exit;
+	}
+}
+elsif($param eq "del"){
+	print "vrf MORAN does not exist, cannot remove it!\n";
+	exit;
+}
+#vrf MORAN does not exist - add it
+$t->prompt('/PE-South\(config\)#$/');
+$t->cmd("config terminal");
+
+$t->prompt('/PE-South\(config-vrf\)#$/');
+$t->cmd("ip vrf MORAN");
+
+$t->cmd("rd 50:50");
+$t->cmd("route-target both 40:40");
+
+$t->prompt('/PE-South#/');
+$t->cmd("end");
+my @lines = $t->cmd("show ip vrf");
+if (grep /MORAN/, @lines) {
+	print "VRF MORAN was successfully added!\n";
+	print "@lines\n";
+}
+
+exit;
+
+	
+
+$t->prompt('/\(Switching\) \(Vlan\) #/');
+@lines = $t->cmd("vlan database");
+@lines = $t->cmd("vlan 5");
+#print @lines;
+#if (grep /VLAN already/, @lines) {
+#	print "QQ 1\n";
+#}
+@lines = $t->cmd("vlan 5000");
+#print @lines;
+
+@lines = $t->cmd("vlan 5");
+#print @lines;
+#if (grep /VLAN already/, @lines) {
+#	print "QQ 2\n";
+#}
+
+#@lines = $t->cmd("no vlan 5");
+$t->prompt('/\(Switching\) #/');
+$t->cmd("exit");
+
+
+
+$t->prompt('/--More-- or \(q\)uit/');
+@lines = $t->cmd("show ?");
+
+$t->output_record_separator("");
+push @lines, $t->cmd(" ");
+
+
+$t->prompt('/\(Switching\) #show/');
+push @lines, $t->cmd(" ");
+#print @lines;
+
+$t->output_record_separator("\n");
+$t->prompt('/\(Switching\) #/');
+@lines = $t->cmd(" vlan 5");  # show was left on the promt line !
+#print @lines;
+
+@lines = $t->cmd("show vlan 7");
+#print @lines;
+
+@lines = $t->cmd("show slot");
+#print @lines;
+print $out @lines;
+
+
+
+
+$t->prompt('/\(Switching\) \(Vlan\) #/');
+@lines = $t->cmd("vlan database");
+@lines = $t->cmd("no vlan 5");
+$t->prompt('/\(Switching\) #/');
+
+
+$t->cmd("exit");
+print "done: $_\n";
+print $out "done: $_\n";
+

@@ -1,0 +1,7 @@
+#!/usr/bin/perl
+
+use strict;
+
+my $cl = "$ARGV[0] $ARGV[1] $ARGV[2]";
+print eval $cl
+

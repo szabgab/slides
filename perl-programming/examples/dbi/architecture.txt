@@ -1,0 +1,15 @@
+
+             |<- Scope of DBI ->|
+                  .-.   .--------------.   .-------------.
+  .-------.       | |---| XYZ Driver   |---| XYZ Engine  |
+  | Perl  |       | |   `--------------'   `-------------'
+  | script|  |A|  |D|   .--------------.   .-------------.
+  | using |--|P|--|B|---|Oracle Driver |---|Oracle Engine|
+  | DBI   |  |I|  |I|   `--------------'   `-------------'
+  | API   |       | |...
+  |methods|       | |... Other drivers
+  `-------'       | |...
+                  `-'
+
+
+Taken from the DBI documentation.

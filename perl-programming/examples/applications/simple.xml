@@ -1,0 +1,22 @@
+<people>
+  <person id="1">
+    <fname>Josef</fname>
+    <lname>Kiss</lname>
+    <idnum>4342324234</idnum>
+    <children>
+      <child>
+        <id>3</id>
+      </child>
+    </children>
+  </person>
+  <person id="2">
+    <fname>Peter</fname>
+    <lname>Kiss</lname>
+    <idnum>8768996</idnum>
+  </person>
+  <person id="3">
+    <fname>Zoltan</fname>
+    <lname>Kiss</lname>
+    <idnum>09808760</idnum>
+  </person>
+</people>

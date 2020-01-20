@@ -1,0 +1,11 @@
+examples/perl/t/exit........
+#   Failed test 'second'
+#   at examples/perl/t/exit.t line 7.
+# Looks like you planned 3 tests but ran 2.
+# Looks like you failed 1 test of 2 run.
+ Dubious, test returned 1 (wstat 256, 0x100)
+ Failed 2/3 subtests 
+examples/perl/t/bail_out....Bailout called.  Further testing stopped:  no way
+
+#   Failed test 'second II'
+#   at examples/perl/t/bail_out.t line 8.

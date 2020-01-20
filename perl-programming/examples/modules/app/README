@@ -1,0 +1,9 @@
+Application for bla
+
+See the documentation of the module 
+by typing now perldoc lib/App/Module.pm
+
+or after installation typing
+
+perldoc App::Module
+

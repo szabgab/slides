@@ -1,0 +1,7 @@
+1..6
+ok 1 - warning when called with -1
+ok 2 - fibonacci on -1 returns 0
+ok 3 - no warning here
+ok 4 - fibonacci on 4 returns 3
+ok 5 - no warning here
+ok 6 - fibonacci on 6 returns 8

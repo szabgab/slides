@@ -1,0 +1,16 @@
+1..10
+ok 1 - warranty
+ok 2 - echo
+ok 3 - numbers received
+ok 4 - expected value of 23+7
+ok 5 - echo
+ok 6 - numbers received
+not ok 7 - expected value of 11+1
+#   Failed test 'expected value of 11+1'
+#   at examples/bc/bc5.pl line 29.
+#          got: '12'
+#     expected: '10'
+ok 8 - echo
+ok 9 - numbers received
+ok 10 - expected value of 2*21
+# Looks like you failed 1 test of 10.

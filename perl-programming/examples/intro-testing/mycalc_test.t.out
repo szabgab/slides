@@ -1,0 +1,15 @@
+1..11
+ok 1
+ok 2
+ok 3
+ok 4
+not ok 5
+
+#   Failed test at examples/intro/mycalc_test.t line 17.
+ok 6 - add 2 3
+ok 7 - sum 1 2 3
+ok 8 - add 2 3
+ok 9 - add 2 3
+ok 10 - sum 1 2 3
+ok 11 - sum 1 2 3
+# Looks like you failed 1 test of 11.

@@ -1,0 +1,8 @@
+1..2
+ok 1 - There is a response
+not ok 2 - HTML OK
+#   Failed test 'HTML OK'
+#   in examples/www/static_tidy.t at line 11.
+# Messages: HTML OK
+# examples/www/static_tidy.t (1:1) Warning: missing <!DOCTYPE> declaration
+# Looks like you failed 1 test of 2.

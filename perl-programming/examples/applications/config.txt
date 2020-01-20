@@ -1,0 +1,21 @@
+device   =    234234
+name     =    Big
+address  =    115.6.79.8
+class    =    B
+
+device   =    234224
+name     =    Big Blue
+address  =    115.6.69.8
+class    =    B
+alias    =    Foxbox
+
+device   =    234235
+name     =    Big Green box
+address  =    115.6.79.1
+class    =    G
+owner    =    Boss
+
+device   =    334235
+name     =    Small Yellow
+address  =    115.6.79.10
+class    =    Y

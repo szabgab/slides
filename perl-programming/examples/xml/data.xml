@@ -1,0 +1,34 @@
+<!--
+    - List all the currencies
+    - What is the currency in the USA
+    - What is the currency in the country with id 2 ?
+    - Replace the currency in Hungary to Euro
+    - Add another country called Beregengocia with currency 
+-->
+<data>
+  <country id="1">
+    <name>USA</name>
+    <languages>
+      <language id="1">English</language>
+      <language id="2">Spanish</language>
+    </languages>
+    <currency>USD</currency>
+  </country>
+  <country id="2">
+    <name>Israel</name>
+    <languages>
+      <language id="1">Hebrew</language>
+      <language id="2">English</language>
+      <language id="3">Arabic</language>
+      <language id="4">Russian</language>
+    </languages>
+    <currency>NIS</currency>
+  </country>
+  <country id="3">
+    <name>Hungary</name>
+    <languages>
+      <language id="1">Hungarian</language>
+    </languages>
+    <currency>HUF</currency>
+  </country>
+</data>

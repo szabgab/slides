@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>JQuery based Calculator</title>
+    <script type="text/javascript" src="/jquery-1.11.0.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $("#result").append("Result:");
+
+        $("#addstr").click(function() {
+            $("#result").html("Result: " + $("#a").val() + $("#b").val());
+            return false;
+        });
+        $("#addnum").click(function() {
+            $("#result").html("Result: " + String(parseInt($("#a").val()) + parseInt($("#b").val())));
+            return false;
+        });
+    });
+</script>
+
+</head>
+<body>
+<h1>JQuery Calculator</h1>
+<form action="/cgi/cgi_sum.pl" id="calc">
+<input name="a" id="a">
+<input name="b" id="b">
+<input type="button" id="addstr" value="Add" name="submit">
+<input type="button" id="addnum" value="Add really" name="submit">
+</form>
+<hr>
+<span id="result">
+</span>
+<p>
+<a href="/">home</a>
+</p>
+</body>
+</html>
+

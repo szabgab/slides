@@ -1,0 +1,15 @@
+1..14
+ok 1 - main page fetched
+ok 2 - content
+ok 3 - calculator page fetched
+ok 4 - start page ok
+ok 5 - there is one form on this page
+ok 6 - action URL is correct
+ok 7 - there are 3 input fields on this form
+ok 8 - The object isa HTML::Form::TextInput
+ok 9 - The object isa HTML::Form::TextInput
+ok 10 - The object isa HTML::Form::SubmitInput
+ok 11 - get 42
+ok 12 - 23+19=42
+ok 13 - 1+2=3
+ok 14 - 1+-1=0

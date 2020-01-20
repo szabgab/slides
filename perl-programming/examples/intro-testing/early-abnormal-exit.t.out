@@ -1,0 +1,4 @@
+1..4
+ok 1 - 1+1
+ok 2 - 2+2
+# Looks like you planned 4 tests but ran 2.

@@ -1,0 +1,10 @@
+$VAR1 = {
+          'earth' => {
+                       'base' => 'London',
+                       'ship' => 'x-wing'
+                     },
+          'alpha' => {
+                       'base' => 'moon',
+                       'ship' => 'alpha 3'
+                     }
+        };

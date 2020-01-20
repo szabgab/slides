@@ -1,0 +1,9 @@
+First line
+
+Line after empty line
+
+Another text line
+__END__
+Some text here
+that won't be printed
+

@@ -1,0 +1,717 @@
+<html>
+<head>
+<title>Test Report</title>
+<link rel="stylesheet" type="text/css" href="default_page.css" /><link rel="stylesheet" type="text/css" href="default_report.css" />
+<script type="text/javascript" src="jquery-1.2.6.pack.js"></script><script type="text/javascript" src="default_report.js"></script>
+<style type="text/css">
+/******************************************************************************
+ * TAP-Formatter-HTML: default stylesheet for report page layout
+ * Separated from default_report.css by request so users only need to override
+ * and maintain one css file.
+ * Copyright (c) 2008 Steve Purkis.  All rights reserved.
+ * Released under the same terms as Perl itself.
+ *****************************************************************************/
+
+html {
+width: 100%;
+height: 100%;
+}
+
+body {
+font-family: Helvetica, Verdana, Arial, Tahoma;
+font-size: small;
+background-color: #efefef;
+}
+
+
+/******************************************************************************
+ * TAP-Formatter-HTML: default stylesheet for report body
+ * Copyright (c) 2008 Steve Purkis.  All rights reserved.
+ * Released under the same terms as Perl itself.
+ *****************************************************************************/
+
+/******************************************************************************
+/* The menu bar
+ */
+#menu {
+display: none; /* hidden by default */
+position: absolute;
+left: 8px;
+top: 8px;
+padding: 2px;
+width: 100px;
+height: 26px;
+font-size: small;
+background-color: #eeffcc;
+opacity: 0.5;
+}
+
+#menu li {
+text-decoration: none;
+list-style: none;
+display: block;
+}
+
+
+/******************************************************************************
+/* The summary bar
+ */
+#summary {
+position: relative;
+padding: 2px 0 2 0;
+width: 100%;
+font-size: x-large;
+text-align: center;
+}
+
+#summary.passed {
+background-color: #99ff66;
+border: 1px solid #00ff00;
+}
+
+#summary.failed {
+background-color: #ff6450;
+border: 1px solid #ff0000;
+}
+
+#summary a {
+width: 100%;
+display: block;
+margin: 0;
+padding: 0;
+text-decoration: none;
+color: #000000;
+}
+
+#summary a:hover {
+text-decoration: none;
+color: #6666aa;
+}
+
+
+
+/******************************************************************************
+ * The report detail section
+ */
+#detail {
+margin-top: 5px;
+width: 100%;
+}
+
+table.detail {
+width: 100%;
+border: 1px solid #3333ee;
+padding: 2px;
+border-spacing: 0px;
+}
+
+table.detail th {
+border-bottom: 2px solid #3333ee;
+padding-top: 2px;
+}
+
+table.detail tfoot tr td {
+border-top: 2px solid #3333ee;
+padding-top: 2px;
+}
+
+table.detail td {
+position: relative;
+top: 0px;
+left: 0px;
+border-top: 1px solid #aaaaaa;
+margin: 0;
+padding: 2px 0 2 0;
+vertical-align: top;
+}
+
+table.detail td.file {
+font-size: small;
+}
+
+/*
+table.detail tr.failed td.file {
+background-color: #FF6450;
+}
+*/
+
+/******************************************************************************
+ * The file column
+ */
+table.detail td.file {
+width: 10%;
+padding-left: 2px;
+padding-right: 4px;
+}
+
+a.file {
+display: block;
+margin: 0;
+padding: 0;
+width: 100%;
+height: 100%;
+text-decoration: none;
+color: #3333cc;
+}
+
+a.file:hover {
+text-decoration: none;
+color: #6666ee;
+}
+
+a.file:visited {
+text-decoration: none;
+color: #3333cc;
+}
+
+/******************************************************************************
+ * The time column
+ */
+table.detail td.time {
+width: 2%;
+border-left: 1px solid #ddddff;
+text-align: center;
+font-size: small;
+}
+
+/******************************************************************************
+ * The percentage column
+ */
+table.detail td.percent {
+padding-left: 2px;
+padding-right: 2px;
+width: 2%;
+text-align: center;
+font-size: small;
+vertical-align: middle;
+}
+
+/******************************************************************************
+ * Colouring the file & percentage columns
+ */
+table.detail tr.percent td.c {
+padding-left: 2px;
+padding-right: 2px;
+width: 2%;
+text-align: center;
+font-size: small;
+vertical-align: middle;
+}
+
+table.detail tr.passed td.c {
+border: 1px solid #99cc99;
+}
+
+table.detail tr.passed td.cb {
+background-color: #99ff66;
+}
+
+table.detail tr.todo-passed td.c {
+border: 1px solid #99cc99;
+}
+
+table.detail tr.todo-passed td.cb {
+background-color: #ddffbb;
+}
+
+table.detail tr.severity-very-low td.c {
+border: 1px solid #ffee33;
+background-color: #ffffaa;
+}
+
+table.detail tr.severity-low td.c {
+border: 1px solid #eecc33;
+background-color: #ffdd99;
+}
+
+table.detail tr.severity-med td.c {
+border: 1px solid #dd6633;
+background-color: #ffaa77;
+}
+
+table.detail tr.severity-high td.c {
+border: 1px solid #ff3333;
+background-color: #ff8866;
+}
+
+table.detail tr.severity-very-high td.c {
+border: 1px solid #ff0000;
+background-color: #ff6450;
+}
+
+/******************************************************************************
+ * The test run column
+ */
+
+/******************************************************************************
+ * Test summaries (.TS)
+ */
+
+table.TS {
+clear: both;
+width: 100%;
+height: 10px;
+font-size: 8px; /* safari wants this less than 10px */
+margin: 0px;
+margin-bottom: 4px;
+padding: 0;
+border-spacing: 1px;
+}
+
+table.TS td {
+margin: 0;
+padding: 0;
+height: 10px;
+}
+
+table.TS td a {
+display: block;
+margin: 0;
+padding: 0;
+text-decoration: none;
+width: 100%;
+height: 100%;
+}
+
+/* base for passed/failed (should always be lower precedent in class list!) */
+table.TS td.p { /* p=passed */
+border: 1px solid #66cc33;
+background-color: #99ff66;
+}
+
+table.TS td.f { /* f=failed */
+border: 1px solid #ff0000;
+background-color: #ff6450;
+}
+
+/* overrides for specific outcomes */
+table.TS td.k { /* k=ok */
+border: 1px solid #66cc33;
+}
+
+table.TS td.n { /* n=not-ok */
+border: 1px solid #ff0000;
+}
+
+table.TS td.u { /* u=todo-ok = 'unexpected' ok */
+border: 1px solid #eeaa00;
+background-color: #ffcc00;
+}
+
+table.TS td.t { /* t=todo-not-ok */
+border: 1px solid #99cc99;
+background-color: #ddffbb;
+}
+
+table.TS td.s { /* s=skip-ok */
+border: 1px solid #99d999;
+background-color: #99cc66;
+}
+
+/******************************************************************************
+ * Test detail
+ */
+div.test-detail {
+margin: 0;
+padding: 0;
+/*	display: none; /* let JS handle this... */
+}
+
+/******************************************************************************
+ * Test parse errors
+ */
+ul.parse-errors {
+margin: 0;
+padding: 0;
+clear: left;
+}
+
+ul.parse-errors li {
+margin-left: 4px;
+list-style: none;
+color: red;
+}
+
+/******************************************************************************
+ * Test output
+ */
+ul.test-out {
+margin: 0;
+padding: 0;
+clear: left;
+}
+
+ul.test-out li {
+margin-left: 4;
+border-left: none;
+list-style: none;
+}
+
+ul.test-out li.k { /* k=ok */
+;
+}
+
+ul.test-out li.n { /* n=not-ok */
+color: #ff0000;
+}
+
+ul.test-out li.u { /* u=todo-ok = 'unexpected' ok */
+color: #cc3333;
+}
+
+ul.test-out li.t { /* t=todo-not-ok */
+color: #773322;
+}
+
+ul.test-out li.s { /* s=skip-ok */
+color: #001111;
+}
+
+ul.test-out li.tst {
+;
+}
+
+ul.test-out li.cmt {
+color: #666666;
+font-family: monospace;
+}
+
+ul.test-out li.pln {
+color: blue;
+}
+
+ul.test-out li.unp { /* unp=unplanned */
+color: #ff0000;
+}
+
+ul.test-out li.unk { /* unk=unknown */
+color: #996600;
+font-family: monospace;
+}
+
+ul.test-out li.stat { /* stat=exit-status */
+color: #ff0000;
+}
+
+</style>
+</head>
+<body>
+<div id="summary" class="failed">
+<a href="#" title="Test Summary (96.4% ok)
+severity: low
+passed 26/28 tests in 7 files
+total time: 0.24s
+0 wallclock secs ( 0.04 usr  0.01 sys +  0.20 cusr  0.04 csys =  0.29 CPU)">FAILED</a>
+</div>
+
+<div id="menu">
+<li>
+<span id="show-all"><a href="#" title="show all tests">show all</a></span>
+    <span id="show-failed"><a href="#" title="show failed tests only">show failed</a></span>
+</li>
+</div>
+
+<div id="detail">
+<table class="detail">
+<thead>
+<tr>
+<th class="file">Test file</th>
+<th class="results">Test results</th>
+<th class="time">Time</th>
+<th class="percent">%</th>
+</tr>
+</thead>
+<tbody>
+<tr class="test-run passed" id="">
+<td class="file c">
+<a class="file" href="#" title="Test ok.
+  3 planned, 3 run
+  3 ok, 0 failed
+  0 todo, 0 skipped
+exit status: 0
+wait status: 0">tap/01-success</a>
+</td>
+<td class="results">
+<table class="TS">
+<tr>										<td class="k p"><a class="TS" href="#t0"> </a></td>
+<td class="k p"><a class="TS" href="#t1"> </a></td>
+<td class="k p"><a class="TS" href="#t2"> </a></td>
+
+</tr>
+</table>
+<div class="test-detail">
+<ul class="parse-errors">
+</ul>
+<ul class="test-out">
+<li class="pln">1..3</li>
+<li id="t0" class="tst k">ok 1 - works</li>
+<li id="t1" class="tst k">ok 2 - 2+2 is 4, who would guess ?</li>
+<li id="t2" class="tst k">ok 3 - this works again</li>
+</ul>
+</div>
+</td>
+<td class="time">0.03s</td>
+<td class="percent c cb">100.0%</td>
+</tr>
+<tr class="test-run failed severity-med" id="">
+<td class="file c">
+<a class="file" href="#" title="Test failed!
+did not exit cleanly!
+  4 planned, 4 run
+  2 ok, 2 failed
+  0 todo, 0 skipped
+exit status: 2
+wait status: 512">tap/02-failure</a>
+</td>
+<td class="results">
+<table class="TS">
+<tr>										<td class="k p"><a class="TS" href="#t3"> </a></td>
+<td class="n f"><a class="TS" href="#t4"> </a></td>
+<td class="n f"><a class="TS" href="#t5"> </a></td>
+<td class="k p"><a class="TS" href="#t6"> </a></td>
+
+</tr>
+</table>
+<div class="test-detail">
+<ul class="parse-errors">
+</ul>
+<ul class="test-out">
+<li class="pln">1..4</li>
+<li id="t3" class="tst k">ok 1 - works</li>
+<li id="t4" class="tst n">not ok 2 - this fails</li>
+<li class="unk"></li>
+<li class="cmt">#   Failed test 'this fails'</li>
+<li class="cmt">#   at tap/02-failure.t line 8.</li>
+<li id="t5" class="tst n">not ok 3 - 2+2 should be 4</li>
+<li class="unk"></li>
+<li class="cmt">#   Failed test '2+2 should be 4'</li>
+<li class="cmt">#   at tap/02-failure.t line 9.</li>
+<li class="cmt">#          got: '4'</li>
+<li class="cmt">#     expected: '5'</li>
+<li id="t6" class="tst k">ok 4 - this works again</li>
+<li class="cmt"># Looks like you failed 2 tests of 4.</li>									<li class="stat">exit status: 2, wait status: 512</li>
+</ul>
+</div>
+</td>
+<td class="time">0.03s</td>
+<td class="percent c cb">50.0%</td>
+</tr>
+<tr class="test-run failed severity-med" id="">
+<td class="file c">
+<a class="file" href="#" title="Test failed!
+1 parse error(s)!
+did not exit cleanly!
+  5 planned, 3 run
+  3 ok, 0 failed
+  0 todo, 0 skipped
+exit status: 255
+wait status: 65280">tap/03-exception</a>
+</td>
+<td class="results">
+<table class="TS">
+<tr>										<td class="k p"><a class="TS" href="#t7"> </a></td>
+<td class="k p"><a class="TS" href="#t8"> </a></td>
+<td class="k p"><a class="TS" href="#t9"> </a></td>
+
+</tr>
+</table>
+<div class="test-detail">
+<ul class="parse-errors">
+<li>Parse error: Bad plan.  You planned 5 tests but ran 3.</li>
+</ul>
+<ul class="test-out">
+<li class="pln">1..5</li>
+<li class="cmt"># planning 5 but running only 3 - with exception</li>
+<li id="t7" class="tst k">ok 1 - works</li>
+<li id="t8" class="tst k">ok 2 - 2+2 is 4, who would guess ?</li>
+<li id="t9" class="tst k">ok 3 - this works again</li>
+<li class="unk">a real exception at tap/03-exception.t line 11.</li>
+<li class="cmt"># Looks like you planned 5 tests but ran 3.</li>
+<li class="cmt"># Looks like your test exited with 255 just after 3.</li>									<li class="stat">exit status: 255, wait status: 65280</li>
+</ul>
+</div>
+</td>
+<td class="time">0.03s</td>
+<td class="percent c cb">60.0%</td>
+</tr>
+<tr class="test-run failed severity-med" id="">
+<td class="file c">
+<a class="file" href="#" title="Test failed!
+1 parse error(s)!
+did not exit cleanly!
+  5 planned, 3 run
+  3 ok, 0 failed
+  0 todo, 0 skipped
+exit status: 255
+wait status: 65280">tap/04-missing_tests</a>
+</td>
+<td class="results">
+<table class="TS">
+<tr>										<td class="k p"><a class="TS" href="#t10"> </a></td>
+<td class="k p"><a class="TS" href="#t11"> </a></td>
+<td class="k p"><a class="TS" href="#t12"> </a></td>
+
+</tr>
+</table>
+<div class="test-detail">
+<ul class="parse-errors">
+<li>Parse error: Bad plan.  You planned 5 tests but ran 3.</li>
+</ul>
+<ul class="test-out">
+<li class="pln">1..5</li>
+<li class="cmt"># planning 5 but running only 3</li>
+<li id="t10" class="tst k">ok 1 - works</li>
+<li id="t11" class="tst k">ok 2 - 2+2 is 4, who would guess ?</li>
+<li id="t12" class="tst k">ok 3 - this works again</li>
+<li class="cmt"># Looks like you planned 5 tests but ran 3.</li>									<li class="stat">exit status: 255, wait status: 65280</li>
+</ul>
+</div>
+</td>
+<td class="time">0.05s</td>
+<td class="percent c cb">60.0%</td>
+</tr>
+<tr class="test-run passed" id="">
+<td class="file c">
+<a class="file" href="#" title="Test ok.
+  5 planned, 5 run
+  5 ok, 0 failed
+  0 todo, 0 skipped
+exit status: 0
+wait status: 0">tap/05-skip</a>
+</td>
+<td class="results">
+<table class="TS">
+<tr>										<td class="k p"><a class="TS" href="#t13"> </a></td>
+<td class="k p"><a class="TS" href="#t14"> </a></td>
+<td class="s p"><a class="TS" href="#t15"> </a></td>
+<td class="s p"><a class="TS" href="#t16"> </a></td>
+<td class="k p"><a class="TS" href="#t17"> </a></td>
+
+</tr>
+</table>
+<div class="test-detail">
+<ul class="parse-errors">
+</ul>
+<ul class="test-out">
+<li class="pln">1..5</li>
+<li id="t13" class="tst k">ok 1 - works</li>
+<li id="t14" class="tst k">ok 2 - 2+2 is 4, who would guess ?</li>
+<li id="t15" class="tst s">ok 3 # skip</li>
+<li id="t16" class="tst s">ok 4 # skip</li>
+<li id="t17" class="tst k">ok 5 - can work</li>
+</ul>
+</div>
+</td>
+<td class="time">0.03s</td>
+<td class="percent c cb">100.0%</td>
+</tr>
+<tr class="test-run passed" id="">
+<td class="file c">
+<a class="file" href="#" title="Test ok.
+  5 planned, 5 run
+  5 ok, 0 failed
+  0 todo, 0 skipped
+exit status: 0
+wait status: 0">tap/06-todo</a>
+</td>
+<td class="results">
+<table class="TS">
+<tr>										<td class="k p"><a class="TS" href="#t18"> </a></td>
+<td class="k p"><a class="TS" href="#t19"> </a></td>
+<td class="t p"><a class="TS" href="#t20"> </a></td>
+<td class="t p"><a class="TS" href="#t21"> </a></td>
+<td class="k p"><a class="TS" href="#t22"> </a></td>
+
+</tr>
+</table>
+<div class="test-detail">
+<ul class="parse-errors">
+</ul>
+<ul class="test-out">
+<li class="pln">1..5</li>
+<li id="t18" class="tst k">ok 1 - works</li>
+<li id="t19" class="tst k">ok 2 - 2+2 is 4, who would guess ?</li>
+<li id="t20" class="tst t">not ok 3 - support imginary numbers # TODO to show how TODO gets reported</li>
+<li class="unk"></li>
+<li class="cmt">#   Failed (TODO) test 'support imginary numbers'</li>
+<li class="cmt">#   at tap/06-todo.t line 13.</li>
+<li class="cmt">#          got: 'nan'</li>
+<li class="cmt">#     expected: 'i'</li>
+<li id="t21" class="tst t">not ok 4 - some other thing # TODO to show how TODO gets reported</li>
+<li class="unk"></li>
+<li class="cmt">#   Failed (TODO) test 'some other thing'</li>
+<li class="cmt">#   at tap/06-todo.t line 14.</li>
+<li id="t22" class="tst k">ok 5 - can work</li>
+</ul>
+</div>
+</td>
+<td class="time">0.03s</td>
+<td class="percent c cb">100.0%</td>
+</tr>
+<tr class="test-run passed todo-passed" id="">
+<td class="file c">
+<a class="file" href="#" title="Test ok.
+some todo tests unexpectedly passed!
+  5 planned, 5 run
+  5 ok, 0 failed
+  0 todo, 0 skipped
+exit status: 0
+wait status: 0">tap/07-todo_success</a>
+</td>
+<td class="results">
+<table class="TS">
+<tr>										<td class="k p"><a class="TS" href="#t23"> </a></td>
+<td class="k p"><a class="TS" href="#t24"> </a></td>
+<td class="t p"><a class="TS" href="#t25"> </a></td>
+<td class="u p"><a class="TS" href="#t26"> </a></td>
+<td class="k p"><a class="TS" href="#t27"> </a></td>
+
+</tr>
+</table>
+<div class="test-detail">
+<ul class="parse-errors">
+</ul>
+<ul class="test-out">
+<li class="pln">1..5</li>
+<li id="t23" class="tst k">ok 1 - works</li>
+<li id="t24" class="tst k">ok 2 - 2+2 is 4, who would guess ?</li>
+<li id="t25" class="tst t">not ok 3 - support imginary numbers # TODO to show how TODO gets reported</li>
+<li class="unk"></li>
+<li class="cmt">#   Failed (TODO) test 'support imginary numbers'</li>
+<li class="cmt">#   at tap/07-todo_success.t line 13.</li>
+<li class="cmt">#          got: 'nan'</li>
+<li class="cmt">#     expected: 'i'</li>
+<li id="t26" class="tst u">ok 4 - some other thing now works # TODO to show how TODO gets reported<em> (unexpectedly succeeded!)</em></li>
+<li id="t27" class="tst k">ok 5 - can work</li>
+</ul>
+</div>
+</td>
+<td class="time">0.04s</td>
+<td class="percent c cb">100.0%</td>
+</tr>
+</tbody>
+
+<tfoot>
+<tr>
+<td class="file">7 files</td>
+<td class="results">
+28 tests,
+26 ok,
+2 failed,
+4 todo,
+2 skipped,
+2 parse errors<br/>
+exit status: 512,
+wait status: 131072<br/>
+elapsed time: 0 wallclock secs ( 0.04 usr  0.01 sys +  0.20 cusr  0.04 csys =  0.29 CPU)</td>
+<td class="time">0.24s</td>
+<td class="percent  severity-low todo-passed">96.4%</td>
+</tr>
+</tfoot>
+</table>
+</div>
+
+<div id="footer">Generated by TAP::Formatter::HTML v0.07 @ 11:25:11 07-Apr-2009</div>
+
+</body>
+</html>

@@ -1,0 +1,8 @@
+----- before
+1   foo@bar.com
+2   peti@bar.com
+
+----- after
+1   new@address.com
+2   peti@bar.com
+

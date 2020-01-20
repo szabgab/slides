@@ -1,0 +1,11 @@
+mv A, R3
+mv R2, B
+mv R1, R3
+mv B, R4
+add A, R1
+add B, R1
+add R1, R2
+add R3, R3
+add R21, X
+add R12, Y
+mv X, R2

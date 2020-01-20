@@ -1,0 +1,18 @@
+Some header text
+-----
+
+name: Name of the source
+date: 1999.01.23
+DNA: GAGATTC
+
+name: Name of the source
+date: 1999.01.24
+DNA: GAGATCCTGC
+
+name: Name of the source
+date: 2007.01.24
+DNA: CGTGAGAATCTGC
+
+name: Name of the source
+date: 2008.01.24
+DNA: CGTGATCTGC

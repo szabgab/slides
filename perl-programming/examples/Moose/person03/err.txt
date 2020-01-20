@@ -1,0 +1,5 @@
+Attribute (birthday) does not pass the type constraint because: 
+    Validation failed for 'DateTime' with value 1988
+       at accessor Person::birthday (defined at lib/Person.pm line 5) line 4
+    Person::birthday('Person=HASH(0x2143928)', 1988)
+       called at script/person.pl line 14

@@ -1,0 +1,10 @@
+# In a log file there are rows in which the first 16 and last 16 characters
+# describe addresses while everything in between describes several commands
+# Each command is built up by a leading character (A, B, C, D, etc) and a number
+# of digits. The number of digits depend on the leading character.
+#
+# In this example we split up the data to commands and count how many times
+# each command type was given.
+#
+1234567890123456A001B0002D00004C0000051234567890123456
+1234567890123456A001A002D00004C0000051234567890123456

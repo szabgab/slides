@@ -1,0 +1,20 @@
+/******************************************************************************
+ * TAP-Formatter-HTML: default stylesheet for report page layout
+ * Separated from default_report.css by request so users only need to override
+ * and maintain one css file.
+ * Copyright (c) 2008 Steve Purkis.  All rights reserved.
+ * Released under the same terms as Perl itself.
+ *****************************************************************************/
+
+html {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	font-family: Helvetica, Verdana, Arial, Tahoma;
+	font-size: small;
+	background-color: #efefef;
+}
+
+

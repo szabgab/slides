@@ -1,0 +1,9 @@
+1..1
+not ok 1 - accounts
+#   Failed test 'accounts'
+#   at examples/db/dbrow_more_fail.t line 16.
+# While checking column 'amount' on 3rd row
+#     '0'
+#         >
+#     '0'
+# Looks like you failed 1 test of 1.

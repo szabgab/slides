@@ -1,0 +1,10 @@
+Build.PL
+CHANGES
+Makefile.PL
+MANIFEST
+META.yml
+README
+
+script/app.pl
+lib/App.pm
+t/01-load.t

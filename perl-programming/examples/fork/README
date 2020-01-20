@@ -1,0 +1,43 @@
+
+
+use Test::Fork;
+
+# setup everything you need to have in all processes
+
+Test::Fork::run('proc_a' => 2, 'proc_b' => 1);
+
+sub proc_a {
+    eval "Test::Exception"; # if this module is needed
+
+    ok(1, "in proc_a");
+    ok(0, "fail in proc_a");
+}
+
+sub proc_b {
+    
+    ok(1, "in proc_b");
+}
+
+
+
+# before executing parent we run "use Test::More tests => 2";
+# before executing child we run eval "use Test::More tests => 1";
+# each process opens STDOUT and STDERR to temp files
+
+# When everything is done
+
+
+ 
+
+# http://mail.pm.org/pipermail/melbourne-pm/2004-November/001479.html
+# my ($test) = Test::Builder->new();
+# $test->no_ending(1);
+
+# http://www.codecomments.com/archive394-2006-3-867070.html
+
+
+
+# Other approach: Test::Fork 
+
+
+

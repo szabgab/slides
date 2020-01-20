@@ -27,12 +27,14 @@ nodejs/nodejs.json
 nosql/nosql.json
 pair-programming/pair.json
 perl-intro/perl.json
+perl-programming/perl.json
 php-programming/php.json
 programming/programming.json
 python-mocking/python.json
 python-programming/python.json
 ruby-programming/ruby.json
 sql/sql.json
+#test-automation-using-perl/testing.json
 value/value.json
 vim/vim.json
 web/web.json

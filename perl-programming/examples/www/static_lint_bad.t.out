@@ -1,0 +1,10 @@
+1..2
+ok 1 - There is a response
+not ok 2 - HTML OK
+
+#   Failed test 'HTML OK'
+#   at examples/www/static_lint_bad.t line 11.
+# Errors: HTML OK
+#  (3:13) </a> with no opening <a>
+#  (8:1) <h1> at (3:1) is never closed
+# Looks like you failed 1 test of 2.

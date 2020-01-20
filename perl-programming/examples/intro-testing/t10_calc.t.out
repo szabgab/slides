@@ -1,0 +1,12 @@
+1..7
+ok 1 - 1 + 1
+ok 2 - 2 + 2
+not ok 3 - 2 + 2 + 2
+
+#   Failed test '2 + 2 + 2'
+#   at examples/intro/t10_calc.t line 20.
+ok 4 - 1+1
+ok 5 - 0+ -1
+ok 6 - 0-1
+ok 7 - -1+1
+# Looks like you failed 1 test of 7.

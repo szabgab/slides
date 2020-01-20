@@ -1,0 +1,5 @@
+Attribute (year) does not pass the type constraint because:
+   Validation failed for 'Int' with value "23 years ago"
+       at accessor Person::year (defined at lib/Person.pm line 5) line 4
+   Person::year('Person=HASH(0x19a4120)', '23 years ago')
+       called at script/person.pl line 13

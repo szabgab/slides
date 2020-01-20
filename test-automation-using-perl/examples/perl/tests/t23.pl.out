@@ -1,0 +1,11 @@
+1..6
+ok 1 - 1 + 1
+ok 2 - 2 + 2
+not ok 3 - 2 + 2 + 2
+
+#   Failed test '2 + 2 + 2'
+#   at examples/perl/tests/t23.pl line 27.
+ok 4 - 3 + 3
+ok 5 - -1 + -1
+ok 6 - 1 + -1
+# Looks like you failed 1 test of 6.

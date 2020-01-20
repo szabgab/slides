@@ -1,0 +1,6 @@
+1..5
+ok 1 - warranty
+ok 2 - echo expression
+ok 3 - input
+ok 4 - data received
+ok 5 - correct response

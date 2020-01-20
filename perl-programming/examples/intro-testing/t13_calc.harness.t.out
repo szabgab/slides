@@ -1,0 +1,14 @@
+t13_calc....
+#   Failed test '2 + 2 + 2'
+#   in t13_calc.t at line 16.
+# Looks like you failed 1 test of 7.
+dubious
+	Test returned status 1 (wstat 256, 0x100)
+DIED. FAILED test 3
+	Failed 1/7 tests, 85.71% okay
+Failed Test Stat Wstat Total Fail  List of Failed
+-------------------------------------------------------------------------------
+t13_calc.t     1   256     7    1  3
+Failed 1/1 test scripts. 1/7 subtests failed.
+Files=1, Tests=7,  1 wallclock secs ( 0.12 cusr +  0.05 csys =  0.17 CPU)
+Failed 1/1 test programs. 1/7 subtests failed.

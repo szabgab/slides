@@ -1,0 +1,29 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>JS Calculator</title>
+    <script type="text/javascript" src="calc.js"></script>
+<script>
+function conc() {
+    alert(document.calc.a.value + document.calc.b.value);
+}
+</script>
+</head>
+<body>
+<h1>Calculator</h1>
+<form action="/cgi/cgi_sum.pl" name="calc">
+<input name="a">
+<input name="b">
+<input type="button" id="addstr" value="Add" name="submit" onClick='javascript:conc()'>
+<input type="button" id="addnum" value="Add really" name="submit" onClick='javascript:add()'>
+</form>
+<hr>
+<script>
+var first = "Foo";
+var second = "Bar";
+document.write(first + " " + second + " written by javascript");
+</script>
+<a href="/">home</a>
+</body>
+</html>
+

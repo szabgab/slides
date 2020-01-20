@@ -1,0 +1,10 @@
+1..4
+not ok 1 - correct number
+#   Failed test 'correct number'
+#   at t/dice_any.t line 14.
+ok 2 - correct number
+not ok 3 - correct number
+#   Failed test 'correct number'
+#   at t/dice_any.t line 14.
+ok 4 - correct number
+# Looks like you failed 2 tests of 4.

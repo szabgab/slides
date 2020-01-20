@@ -1,0 +1,15 @@
+ok 1 - 1+1
+    ok 1 - -1, -1
+    not ok 2 - -1, -1, -1
+    #   Failed test '-1, -1, -1'
+    #   at t/subtest.t line 13.
+    #          got: '-2'
+    #     expected: '-3'
+    1..2
+    # Looks like you failed 1 test of 2.
+not ok 2 - negatives
+#   Failed test 'negatives'
+#   at t/subtest.t line 14.
+ok 3 - 2+2
+1..3
+# Looks like you failed 1 test of 3.

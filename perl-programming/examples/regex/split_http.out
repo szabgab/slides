@@ -1,0 +1,9 @@
+$VAR1 = {
+          'email' => 'foo@bar.com',
+          'lname' => 'Bar',
+          'fname' => 'Foo'
+        };
+$VAR1 = {
+          'ip' => '127.0.0.1',
+          'machine' => 'foobar'
+        };

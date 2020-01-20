@@ -1,0 +1,9 @@
+1..8
+ok 1 - GET http://localhost:8080
+ok 2 - content
+ok 3 - Followed link with "text=calculator"
+ok 4 - start page ok
+ok 5 - get 42
+ok 6 - 23+19=42
+ok 7 - 1+2=3
+ok 8 - 1+-1=0

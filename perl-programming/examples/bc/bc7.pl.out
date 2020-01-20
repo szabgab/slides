@@ -1,0 +1,12 @@
+Regression failed
+
+--- random.log  Mon Apr 19 23:09:51 2004
++++ regress.log Mon Apr 19 23:38:54 2004
+@@ -3,5 +3,5 @@
+ This is free software with ABSOLUTELY NO WARRANTY.
+ For details type `warranty'. 
+ 1
+-.9114942335378392
++.8114942335378392
+ .8404963860314223
+
