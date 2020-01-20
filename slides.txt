@@ -1,5 +1,4 @@
 about
-jenkins-intro
 linux-intro
 pair-programming
 perl-intro

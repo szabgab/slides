@@ -1,5 +1,5 @@
 # Jenkins
-{id: index}
+{id: jenkins}
 
 ## About us
 {id: about-us}

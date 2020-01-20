@@ -10,6 +10,7 @@ git-intro/git.json
 github-ci/github-ci.json
 golang/go.json
 groovy/groovy.json
+jenkins-intro/jenkins.json
 nodejs/nodejs.json
 php-programming/php.json
 python-programming/python.json
