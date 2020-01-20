@@ -14,6 +14,7 @@ jenkins-intro/jenkins.json
 linux-intro/linux.json
 nodejs/nodejs.json
 pair-programming/pair.json
+perl-intro/perl.json
 php-programming/php.json
 python-programming/python.json
 web/web.json

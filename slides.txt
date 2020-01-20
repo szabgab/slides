@@ -1,5 +1,4 @@
 about
-perl-intro
 python-mocking
 value
 windows-cmd
