@@ -1,0 +1,21 @@
+Local storage - store boolean
+
+<script>
+console.log('Start');
+
+var cond = localStorage.getItem('cond');
+if (cond === null) {
+    console.log('was null setting to false');
+    cond = false;
+} else {
+    cond = JSON.parse(cond)
+}
+
+console.log(cond);
+cond = ! cond;
+console.log(cond);
+localStorage.setItem("cond", cond);
+
+console.log('End');
+</script>
+

@@ -1,0 +1,25 @@
+<script language="javascript">
+
+function add() {
+    //alert(document.getElementById("qqrq").rows.length);
+    var t = document.getElementById("qqrq");
+    //alert(t.rows.length);
+    //t.deleteRow(t.rows.length - 1); // delete last row
+    //t.insertRow(0); // prepend a row
+    newR = t.insertRow(t.rows.length); // append a row
+    if (newR) {
+        newC = newR.insertCell(newR.cells.length);
+        newC.innerHTML = t.rows.length;
+    }
+    alert(document.getElementById("ttl").innerHTML = "qqrq");
+}
+
+</script>
+<h2 id="ttl">szoveg</h2>
+<form>
+<input type="button" onclick="add()" value="xxxx" />
+</form>
+<table border=1 id="qqrq">
+<tr><td>1</td></tr>
+<tr><td>2</td></tr>
+</table>

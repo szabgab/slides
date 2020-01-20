@@ -1,0 +1,17 @@
+Remove item from Local storage - reset counter
+
+<script>
+console.log('Start');
+
+var before = localStorage.getItem('counter');
+console.log(before);
+
+localStorage.removeItem('counter');
+
+var after = localStorage.getItem('counter');
+console.log(after);
+
+
+console.log('End');
+</script>
+

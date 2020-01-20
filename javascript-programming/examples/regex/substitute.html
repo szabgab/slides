@@ -1,0 +1,12 @@
+<script>
+var text = 'There is a number 42 in this an another number #123 but nothing else.';
+console.log(text);
+
+var changed = text.replace(/\d+/, 'NUMBER');
+console.log(changed);
+console.log(text); 
+
+var ch2 = text.replace(/\d+/g, 'NUMBER');
+console.log(ch2);
+
+</script>

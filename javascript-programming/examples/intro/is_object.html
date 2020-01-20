@@ -1,0 +1,15 @@
+<script>
+
+function is_object(thing) {
+    if (thing && typeof thing === 'object' && thing.constructor !== Array) {
+        return true; // thing is an object or an array!
+    } else {
+        return false;
+    }
+}
+
+console.log(is_object(null));  // false
+console.log(is_object([]));    // false
+console.log(is_object({}));    // true
+
+</script>

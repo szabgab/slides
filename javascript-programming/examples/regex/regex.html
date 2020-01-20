@@ -1,0 +1,15 @@
+<script>
+var text = 'There is a number 42 in this an another number #123 but nothing else.';
+console.log(text);
+
+var pattern = /\d+/;
+var match = pattern.exec(text);
+if (match) {
+    console.log(match[0]);
+}
+
+var m = /\d+/.exec(text);
+if (m) {
+    console.log(m[0]);
+}
+</script>

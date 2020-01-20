@@ -1,0 +1,149 @@
+<html>
+<head><title>dir</title>
+<!--
+http://reference.sitepoint.com/css/css
+http://reference.sitepoint.com/static/reference/styles/screen.css?v=0.3.0
+http://reference.sitepoint.com/static/reference/images/plus.gif
+http://reference.sitepoint.com/static/reference/images/minus.gif
+-->
+
+<style type="text/css">
+
+#navpanel
+{
+  width: 20%;
+  padding: 1%;
+}
+
+#navpanel h2
+{
+  font-size: 1.2em;
+  margin: 0 0 10px 0;
+}
+
+#navpanel ul
+{
+  margin: 0;
+  padding: 0;
+}
+
+#navpanel ul ul
+{
+  cursor: default;
+  margin: 0 0 0 15px;
+}
+
+#navpanel ul li
+{
+  display: block;
+  list-style-type: none;
+  position: relative;
+}
+
+#navpanel ul ul li
+{
+  left: -99999px;
+  position: absolute;
+}
+
+#navpanel ul.foldertree ul li
+{
+  left: 0;
+  position: relative;
+}
+
+/* ul ul li visible if:
+  - li.active
+  - li.active li.inactive but not li.inactive li.inactive
+  - li.container but not li.inactive li.container
+  - li.containsactive
+  - li.containsactive li.inactive, but not li.inactive li.inactive
+*/
+#navpanel ul ul li.active,
+#navpanel ul li.active li.inactive,
+#navpanel ul ul li.container,
+#navpanel ul ul li.containsactive,
+#navpanel ul li.containsactive li.inactive
+{
+  left: 0;
+  position: relative;
+}
+#navpanel ul li.inactive li.inactive, #navpanel ul li.inactive li.container
+{
+  left: -99999px;
+  position: absolute;
+}
+#navpanel ul.foldertree li.inactive li.inactive, #navpanel ul.foldertree li.inactive li.container
+{
+  left: 0;
+  position: relative;
+}
+
+#navpanel li.active
+{
+  font-weight: bold;
+}
+
+#navpanel li.inactive, #navpanel li.container
+{
+  font-weight: normal;
+}
+
+#navpanel ul a:link, #navpanel ul a:visited,
+#navpanel ul span.topichead
+{
+  display: block;
+  padding: 1px 0 1px 15px;
+}
+
+#navpanel ul a.twisty:link, #navpanel ul a.twisty:visited
+{
+  background: transparent url(plus.gif) no-repeat center;
+  padding: 0;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 0.2em;
+  left: 0;
+}
+
+#navpanel ul a.rollover:link, #navpanel ul a.rollover:visited
+{
+  background-image: url(minus.gif);
+}
+
+#navpanel ul li
+{
+  cursor: pointer;
+  line-height: 1.2;
+  margin: -1px 0 3px;
+  position: relative;
+}
+</style>
+</head>
+<body>
+<div id="navpanel">
+<h2>CSS Reference Index</h2>
+
+<ul id="index">
+  <li class="inactive"><a href="/css/css" title="What Is CSS?">What Is CSS?</a>
+    <ul>
+      <li class="inactive"><a href="/css/csshistory" title="CSS Versions">CSS Versions</a></li>
+      <li class="inactive"><a href="/css/linkingcss" title="Linking CSS to a Web Document">Linking CSS to a Web Document</a>
+        <ul>
+          <li class="inactive"><a href="/css/mediaqueries" title="Media Queries">Media Queries</a></li>
+        </ul>
+      </li>
+      <li class="inactive"><a href="/css/doctypesniffing" title="Standards Mode, Quirks Mode, and Doctype&#10;  Sniffing">Standards Mode, Quirks Mode, and Doctype Sniffing</a></li>
+    </ul>
+  </li>
+  <li class="inactive"><a href="/css/css" title="What Is CSS?">Second row</a>
+    <ul>
+      <li class="inactive"><a href="/css/csshistory" title="CSS Versions">In second</a></li>
+      <li class="inactive"><a href="/css/csshistory" title="CSS Versions">Second In second</a></li>
+    </ul>
+  </li>
+</ul>
+</div>
+</body>
+<html>

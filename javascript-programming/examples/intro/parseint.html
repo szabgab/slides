@@ -1,0 +1,11 @@
+<script>
+console.log(parseInt("16"));             // 16
+console.log(parseInt("16 little men"));  // 16  (no indication of imperfect parse)
+
+console.log(parseInt("011"));  // 11
+console.log(parseInt("08"));   // 8
+console.log(parseInt("09"));   // 9
+
+console.log(parseInt("011", 8));   // 9
+console.log(parseInt("09", 10));   // 9
+</script>

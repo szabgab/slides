@@ -1,0 +1,66 @@
+<html><head><title>Ajax JSON info</title>
+<script src="ajax.js" type="text/javascript"></script>
+<script src="json.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+function ajaxFunction() {
+    var xmlHttp = get_xmlHttp();
+    if (xmlHttp == false) {
+        alert("Your browser does not support AJAX!");
+        return;
+    }
+
+    xmlHttp.onreadystatechange=function() {
+      if(xmlHttp.readyState==4) {
+
+        var response = xmlHttp.responseText;
+        //alert(response);
+        //var myObject = eval('(' + response + ')');
+        var myObject = response.parseJSON();
+        //alert(myObject);
+        
+        document.getElementById("result").innerHTML = myObject.result;
+        document.getElementById("input").innerHTML = myObject.input;
+        document.getElementById("response").innerHTML = response;
+        }
+      }
+    var data = {};
+    data.x = document.myForm.x.value;
+    data.y = document.myForm.y.value;
+    data.op = document.myForm.operator.value;
+    var myJSONText = data.toJSONString();
+
+    var url = "/cgi/ajax_json_calc.pl";
+    url = url + "?str=" + myJSONText;
+    xmlHttp.open("GET", url, true);
+    xmlHttp.send(null);
+}
+
+
+</script>
+</head>
+
+<body>
+<form name="myForm">
+
+<input type="text" name="x" size=5 />
+<select name="operator">
+<option value="%2B">+</option>
+<option value="-">-</option>
+<option value="*">*</option>
+<option value="/">/</option>
+</select>
+<input type="text" name="y" size=5 />
+<input type="button" onclick="ajaxFunction();" value="="> 
+</form>
+
+<span id="input"></span><br />
+<span id="result"></span><br />
+<hr />
+<span id="response"></span><br />
+
+</body>
+</html>
+
+<!-- example based on code from http://www.w3schools.com/ajax/ajax_server.asp -->
+

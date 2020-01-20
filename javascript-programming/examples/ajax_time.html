@@ -1,0 +1,35 @@
+<html><head><title>Ajax time</title>
+<script src="ajax.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+function ajaxFunction() {
+    var xmlHttp = get_xmlHttp();
+    if (xmlHttp == false) {
+        alert("Your browser does not support AJAX!");
+        return;
+    }
+    xmlHttp.onreadystatechange=function()
+      {
+      if(xmlHttp.readyState==4)
+        {
+        document.myForm.time.value=xmlHttp.responseText;
+        }
+      }
+
+    xmlHttp.open("GET","/cgi/time.pl",true);
+    xmlHttp.send(null);
+  }
+</script>
+</head>
+<body>
+Any time you type in a letter in the left window, the current time fetched from the
+server shows up on the right window
+<form name="myForm">
+Name: <input type="text" onkeyup="ajaxFunction();" name="username" />
+Time: <input type="text" name="time" size=40 />
+</form>
+</body>
+</html>
+
+<!-- example based on code from http://www.w3schools.com/ajax/ajax_server.asp -->
+

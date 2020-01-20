@@ -1,0 +1,17 @@
+<script>
+var text = 'There is a number 42 in this an another number #123 but nothing else.';
+console.log(text);
+
+// var p = new RegExp('\\d+');
+// var p = new RegExp(/\d+/);
+var p = /\d+/;
+console.log(p);
+var match = p.exec(text);
+if (match) {
+   console.log(match);
+   console.log(match[0]);
+   console.log(match['index']);
+   console.log(match['input']);
+}
+</script>
+

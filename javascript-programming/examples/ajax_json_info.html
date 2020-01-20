@@ -1,0 +1,61 @@
+<html><head><title>Ajax JSON info</title>
+<script src="ajax.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+function ajaxFunction() {
+    var xmlHttp = get_xmlHttp();
+    if (xmlHttp == false) {
+        alert("Your browser does not support AJAX!");
+        return;
+    }
+
+    xmlHttp.onreadystatechange=function() {
+      if(xmlHttp.readyState==4) {
+
+        var response = xmlHttp.responseText;
+        //alert(response);
+
+        // security issues?
+        //var myObject = myJSONtext.parseJSON(filter);
+        var myObject = eval('(' + response + ')');
+        
+        document.getElementById("fname").innerHTML = myObject.fname;
+        document.getElementById("lname").innerHTML = myObject.lname;
+        document.getElementById("nickname").innerHTML = myObject.nickname;
+        document.getElementById("response").innerHTML = response;
+        }
+      }
+
+    var url = "/cgi/ajax_json_info.pl";
+    url = url + "?id=" + document.myForm.customer.value;
+//alert(url);
+    xmlHttp.open("GET", url, true);
+    xmlHttp.send(null);
+
+}
+
+
+</script>
+</head>
+
+<body>
+<form name="myForm">
+<select name="customer">
+<option value="0"></option>
+<option value="1">Good</option>
+<option value="2">Bad</option>
+<option value="3">Ugly</option>
+</select>
+<input type="button" onclick="ajaxFunction();" value="Show"> 
+</form>
+
+<b><span id="fname"></span></b>  <i><span id="lname"></span></i><br />
+<span id="nickname"></span><br />
+<hr />
+<span id="response"></span><br />
+
+</body>
+</html>
+
+<!-- example based on code from http://www.w3schools.com/ajax/ajax_server.asp -->
+

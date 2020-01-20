@@ -1,0 +1,57 @@
+
+<div id="form-location">
+</div>
+
+
+
+<script>
+function create_selector0(id, data, empty, default_value) {
+    //console.log(JSON.stringify(data, undefined, 2));
+    var html = '<select id="' + id + '">';
+    if (empty) {
+       html += '<option></option>';
+    }
+    for (i in data) {
+        html += '<option value="' + data[i]['value'] + '"';
+        if (default_value && default_value == data[i]['value']) {
+           console.log('selected ' + default_value);
+           html += ' SELECTED=1 ';
+        }
+        html += '>' + data[i]['text'] + '</option>';
+    }
+    html += '</select>';
+    //console.log(html);
+    return html;
+}
+function create_button(id, text) {
+    return '<button id="' + id + '">' + text + '</button>';
+}
+
+
+
+var meals = [
+    {
+       'value'  : 1,
+       'text' : 'Cake',
+    },
+    {
+      'value'  : 3,
+      'text' : 'Soup',
+    },
+    {
+      'value'  : 5,
+      'text' : 'Fish',
+    },
+];
+function create_form() {
+//    var html = create_selector0('meal', meals, false, 3);
+//    var html = create_selector0('meal', meals, true);
+    var html = create_selector0('meal', meals, true, 3);
+    html += create_button('cook', 'Cook');
+    document.getElementById('form-location').innerHTML = html;
+    document.getElementById('meal').addEventListener('change', function() { console.log('changed')} ); 
+    document.getElementById('cook').addEventListener('click', function() { console.log('start cooking')} ); 
+}
+
+create_form();
+</script>

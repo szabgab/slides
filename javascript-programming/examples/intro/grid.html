@@ -1,0 +1,68 @@
+<div id="loc"></div>
+
+<style>
+table {
+    width: 100%;
+}
+td {
+  border: solid 1px;
+}
+/*td:first-child {
+    background-color: red;
+}*/
+</style>
+
+<script src="grid.js">
+var resizer;
+function create_table(n) {
+    var html = '<table>';
+    var needFirst = true;
+    for (var j = 0; j < 2; j++) {
+      html += '<tr>'
+      //if (needFirst) {
+	  //  	html += '<td rowspan="2">full</td>';
+      //      needFirst = false;
+      //}
+      for (var i=0; i<n; i++) {
+         html += '<td>' + j + ' ' + i + '</td>';
+      }
+      html += '</tr>';
+    }
+    html += '</table>';
+    //console.log(html);
+
+    document.getElementById('loc').innerHTML = html;
+}
+
+function resize_table() {
+    console.log(window.innerWidth);
+    console.log(window.innerHeight);
+
+    var trs = document.getElementsByTagName('tr');
+    for (var t=0; t < trs.length; t++) {
+        console.log(t);
+        trs[t].children[0].setAttribute("style", "width: " + ( 130 / n ) + '%');
+        //trs[t].children[0].setAttribute("style", "background-color: red");
+
+    }
+}
+
+function resize_table_later() {
+    if (resizer == null) {
+        resizer = new Date;
+        setTimeout(resize_table_later, 1000);
+        return;
+    }
+    if (Math.abs(new Date() - resizer) > 950) {
+        resizer = null;
+        console.log('resize');
+    }
+}
+
+var n = 4;
+create_table(n);
+resize_table()
+//window.addEventListener('resize', resize_table_later);
+
+
+</script>

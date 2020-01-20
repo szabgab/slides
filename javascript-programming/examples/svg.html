@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<!--
+  Created using jsbin.com
+  Source can be edited via http://jsbin.com/uzexaq/1/edit
+-->
+<head>
+<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<meta charset=utf-8 />
+<title>JS Bin</title>
+<!--[if IE]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<style>
+  article, aside, figure, footer, header, hgroup,
+  menu, nav, section { display: block; }
+</style>
+
+<style id="jsbin-css">
+
+</style>
+</head>
+<body>
+  <p id="hello">Hello World</p>
+  <svg width="400" height="400" id='pie'>
+    <path d="M200,200 h-150,-20 a150,150 0 1,0 150,-150 z"
+     fill="red" stroke="blue" stroke-width="2" />
+</svg>
+<svg width="400" height="400" id='pie'>
+    <path d="M200,200 L187,100 A100,100 1 1,1 100,200 z"
+     fill="red" stroke="blue" stroke-width="2" />
+</svg>
+
+<script>
+    function sector(cx, cy, r, startAngle, endAngle, fill) {
+console.log(startAngle);
+console.log(-startAngle * Math.PI / 180);
+            var rad = Math.PI / 180,
+                x1 = cx + r * Math.cos(-startAngle * rad),
+                x2 = cx + r * Math.cos(-endAngle * rad),
+                xm = cx + r / 2 * Math.cos(-(startAngle + (endAngle - startAngle) / 2) * rad),
+                y1 = cy + r * Math.sin(-startAngle * rad),
+                y2 = cy + r * Math.sin(-endAngle * rad),
+                ym = cy + r / 2 * Math.sin(-(startAngle + (endAngle - startAngle) / 2) * rad),
+                res = [
+                    "M" + cx + "," + cy,
+                    "L" + x1 + "," + y1,
+                    "A" + r + "," + r, 1, 1 + "," + 1, x2 + "," + y2,
+                    "z"
+                ];
+
+            res.middle = { x: xm, y: ym };
+            return res;
+        }
+
+var p = sector(200, 200, 100, 97, 180, 1).join(' ');
+console.log(p);
+
+//$('#pie path').attr('d',p);
+</script>
+<script src="http://static.jsbin.com/js/render/edit.js"></script>
+<script>jsbinShowEdit({"root":"http://static.jsbin.com","csrf":"TRAW+Q2iyENFZRxAhc5w3eyo"});</script>
+<script src="http://static.jsbin.com/js/vendor/eventsource.js"></script>
+<script src="http://static.jsbin.com/js/spike.js"></script>
+<script>
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-1656750-13']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+})();
+</script>
+
+</body>
+</html>

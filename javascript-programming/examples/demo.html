@@ -1,0 +1,21 @@
+Demo. Open the console!
+<script>
+var email = {
+   from : "gabor@szabgab.com",
+   to : [ "foo@bar.com", "qux@bar.com" ],
+   subject : "Hello World",
+}
+console.log("hello")
+console.log(email)
+console.log(email["to"])
+email["parts"] = []
+email["parts"][0] = {
+    "mime-type" : "text",
+    body : "The content"
+}
+email["parts"].push({
+    "mime-type" : "jpg"
+})
+console.log(email)
+</script>
+

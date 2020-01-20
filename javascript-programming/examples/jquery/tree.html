@@ -1,0 +1,69 @@
+<html>
+  <head>
+      <link rel="stylesheet" type="text/css" media="screen" href="tree.css" />
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="tree.js"></script>
+  </head>
+  <body>
+
+<a href="" class="show">Show</a>
+<a href="" class="hide">Hide</a>
+
+<span id="report">
+    <ul id="ul_1">
+        <li id="li_1"><table><tr><td>Entity 1</td></tr></table>
+            <ul id="ul_1.1">
+                <li id="li_1.1"><table><tr><td>Test 1.1</td></tr></table>
+                    <ul id="ul_1.1.1">
+                        <li id="li_1.1.1">
+                            <table class="comb"><tr>
+                                   <td class="a">comb 1.1.1</td>
+                                   <td class="b">This is the Place for the error message</td>
+                                   <td class="c">no comment</td>
+                       </tr></table></li>
+                    </ul>
+                </li>
+                <li id="li_1.2"><table><tr><td>Test 1.2</td></tr></table>
+                    <ul id="ul_1.1.2">
+                        <li id="li_1.2.1">
+                            <table class="comb"><tr>
+                                    <td class="a">comb 1.2.1</td>
+                                    <td class="b"></td>
+                                    <td class="c">no comment</td>
+                            </tr></table></li>
+                        <li id="li_1.2.2">
+                        <table class="comb"><tr>
+                                <td class="a">comb 1.2.2</td>
+                                <td class="b">Short error</td>
+                                <td class="c">no comment</td>
+                        </tr></table></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><table><tr><td>Entity 2</td></tr></table>
+            <ul>
+                <li>Test 2.1
+                    <ul>
+                        <li>comb 2.1.1</li>
+                    </ul>
+                </li>
+                <li>Test 2.2
+                    <ul>
+                        <li>comb 2.2.1</li>
+                        <li>comb 2.2.2</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>           
+</span>
+<!--
+    <a href="http://jquery.com/">jQuery</a>
+
+    <a href="http://google.com/" class="clickme">I give a message when you leave</a>
+    <a href="http://yahoo.com/" class="hideme">Click me to hide!</a>
+-->
+  </body>
+</html>
+

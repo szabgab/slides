@@ -1,0 +1,13 @@
+Regex
+
+<script>
+
+var text = "The good black cat climbed to the green 3 times";
+var hits = text.match(/(\w)\1/g);
+if (hits) {
+    for (i=0; i<hits.length; i++) {
+        console.log(hits[i])
+    }
+}
+
+</script>

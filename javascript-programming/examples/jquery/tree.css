@@ -1,0 +1,24 @@
+a.test { font-weight: bold; }
+
+ul {
+    list-style-type: none;
+}
+
+
+.comb td { 
+    border-style: solid;
+    border-width: 1px;
+    /* font-weight: bold;
+    display: inline;
+    */
+}
+
+.a {
+    width: 100px;
+}
+.b {
+    width: 400px;
+}
+.c {
+    width: 150px;
+}

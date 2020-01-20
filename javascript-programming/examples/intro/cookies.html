@@ -1,0 +1,16 @@
+Cookies
+
+Apparently IE and Firefox will be able to set cookie file:// 
+but Chrome does not set it :(
+
+<script>
+console.log('Cookies started');
+var n = 1;
+document.cookie="xcounter=x; expires=Thu, 18 Dec 2014 12:00:00 GMT; path=/";
+
+var c = document.cookie;
+console.log(c);
+
+console.log('Cookies ended');
+
+</script>

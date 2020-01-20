@@ -1,0 +1,19 @@
+<script>
+function foo() {
+    return
+    {
+        status: true
+    };
+}
+
+function bar() {
+    return {
+        status: true
+    };
+}
+
+var f = foo();
+console.log(f); // undefined
+var b = bar();
+console.log(b); // Object { status: true }
+</script>

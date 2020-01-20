@@ -1,0 +1,13 @@
+<script>
+var str = '{ "v" : 42 }';
+console.log(JSON.parse(str)); // Object {v: 42} 
+
+str = '{ "n" : null }';
+console.log(JSON.parse(str)); // Object {n: null} 
+
+str = '{ "x" : NaN }';
+console.log(JSON.parse(str)); // Uncaught SyntaxError: Unexpected token N 
+
+str = '{ "y" : Infinite }';
+console.log(JSON.parse(str)); // Uncaught SyntaxError: Unexpected token I
+</script>

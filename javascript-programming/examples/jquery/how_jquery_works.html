@@ -1,0 +1,52 @@
+<!--
+
+source http://docs.jquery.com/Tutorials:How_jQuery_Works
+-->
+<html>
+  <head>
+      <style type="text/css">
+          a.test { font-weight: bold; }
+      </style>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+
+            $("a").click(function(){
+                //alert("Thanks for visiting again!");
+
+                //alert($(this).attr("class"));
+                //if ($(this).attr("class") == 'test') {
+                //    $("a").removeClass("test");
+                //} else {
+                //    $("a").addClass("test");
+                //}
+
+                //$(this).hide("slow");
+         //       return false;
+                });
+
+            $("a")
+                .filter(".clickme")
+                    .click(function(){
+                        alert("You are now leaving the site.");
+                    })
+                    .end()
+                .filter(".hideme")
+                    .click(function(){
+                        $(this).hide();
+                        return false;
+                    })
+                .end();
+        });
+    </script>
+  </head>
+  <body>
+    <a href="http://jquery.com/">jQuery</a>
+
+    <a href="http://google.com/" class="clickme">I give a message when you leave</a>
+    <a href="http://yahoo.com/" class="hideme">Click me to hide!</a>
+
+
+  </body>
+</html>
+
