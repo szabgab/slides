@@ -270,11 +270,8 @@ See the same exercise in the previous chapter.
 ## Exercise: counting DNA bases
 {id: exercise-counting-dna-bases}
 
-
 Given a sequence like this: "ACTNGTGCTYGATRGTAGCYXGTN",
 print out the distribution of the elemnts to get the following result:
-
-
 
 ```
 A 3 - 12.50 %
@@ -332,6 +329,7 @@ print(people[('Eric', 'Idle')]['born']) # 29 March 1943
 
 ## Solution: count words
 {id: solution-count-words}
+
 ![](examples/dictionary/count_words.py)
 ![](examples/dictionary/count_words_with_counter.py)
 ![](examples/dictionary/count_words_with_defaultdict.py)
@@ -339,21 +337,25 @@ print(people[('Eric', 'Idle')]['born']) # 29 March 1943
 
 ## Solution: count words in file
 {id: solution-count-words-in-file}
+
 ![](examples/dictionary/count_words_in_file.py)
 
 
 ## Solution: Apache log
 {id: solution-apache-log}
+
 ![](examples/dictionary/apache_access.py)
 
 
 ## Solution: Combine lists again
 {id: solution-combine-lists-again}
+
 ![](examples/dictionary/combine_lists.py)
 
 
 ## Solution: counting DNA bases
 {id: solution-counting-dna-bases}
+
 ![](examples/dictionary/counting_dna_bases.py)
 
 
@@ -377,12 +379,21 @@ Looping over the "dictionary" is just like looping over the keys.
 
 ## Do not change dictionary in loop
 {id: do-not-change-in-loop}
+
 ![](examples/dictionary/change_in_loop.py)
+
 
 ## Default Dict
 {id: default-dict}
+{i: collections}
+{i: defaultdict}
 
 ![](examples/dictionary/counter.py)
+![](examples/dictionary/counter.out)
+
+![](examples/dictionary/counter_condition.py)
+![](examples/dictionary/counter_condition.out)
 
 ![](examples/dictionary/default_dict.py)
+![](examples/dictionary/default_dict.out)
 

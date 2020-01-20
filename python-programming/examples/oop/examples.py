@@ -1,9 +1,7 @@
 
 # numbers
-num = 255
-print(num.bit_length())    # 8
-num = 256
-print(num.bit_length())    #  9
+print((255).bit_length())    # 8
+print((256).bit_length())    # 9
 
 # strings
 print( "hello WOrld".capitalize() )  # Hello world
