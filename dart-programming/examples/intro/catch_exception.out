@@ -1,0 +1,9 @@
+2
+IntegerDivisionByZeroException
+#0  int.~/ (dart:core-patch/integers.dart:26)
+#1  div (file:///.../dart/examples/intro/catch_exception.dart:2:12)
+#2  main (file:///.../dart/examples/intro/catch_exception.dart:10:14)
+#3  _startIsolate.isolateStartHandler (dart:isolate-patch/isolate_patch.dart:216)
+#4  _RawReceivePortImpl._handleMessage (dart:isolate-patch/isolate_patch.dart:115)
+
+still working

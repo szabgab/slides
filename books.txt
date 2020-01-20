@@ -6,6 +6,7 @@ bash/bash.json
 css/css.json
 collab-dev/collab.json
 data-science/data.json
+dart-programming/dart.json
 docker/docker.json
 google-gcp/gcp.json
 git-intro/git.json

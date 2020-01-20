@@ -1,0 +1,12 @@
+{
+    "title": "Dart Programming",
+    "author": "Gabor Szabo",
+    "first_year": "2014",
+    "description": "Dart Programming tutorial and training course for both backend developers, and people who would like to replace JavaScript.",
+    "copyright_name": "Gabor Szabo",
+    "copyright_url": "https://szabgab.com/",
+    "version": "1.01",
+    "files": [
+        "dart.md"
+    ]
+}

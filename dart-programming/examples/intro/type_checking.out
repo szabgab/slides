@@ -1,0 +1,10 @@
+23
+hello
+42
+abc
+Unhandled exception:
+Illegal argument(s): 23
+#0  _StringBase.+ (dart:core-patch/string_patch.dart:89)
+#1  main (file:///.../dart/examples/intro/type_checking.dart:15:13)
+#2  _startIsolate.isolateStartHandler (dart:isolate-patch/isolate_patch.dart:216)
+#3  _RawReceivePortImpl._handleMessage (dart:isolate-patch/isolate_patch.dart:115)
