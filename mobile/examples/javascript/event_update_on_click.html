@@ -1,0 +1,15 @@
+
+<input type="text" id="input" size="30">
+<input type="text" id="output" size="30">
+<input type="button" id="btn" value="Update">
+
+<script>
+function update() {
+  console.log('update');
+  var input = document.getElementById('input').value;
+  console.log(input);
+  document.getElementById('output').value = input;
+}
+
+document.getElementById('btn').addEventListener('click', update);
+</script>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JQuery mobile example</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="../jq/jquery.mobile-1.3.1.min.css" />
+  <script type="text/javascript" src="../jq/jquery-1.9.1.min.js"></script>
+  <script type="text/javascript" src="../jq/jquery.mobile-1.3.1.min.js"></script>
+</head>
+<body>
+
+<div data-role="page" id="main-page">
+  <div data-role="header">
+    <h1>Main page</h1>
+  </div>
+  <div data-role="content">
+    <p>Hello world</p>
+    <p><a href="#dial" data-rel="dialog" data-role="button">dialogue</a></p>
+  </div>
+  <div data-role="footer" data-position="fixed" >
+    <a href="#about-page" data-icon="about">about</a>
+  </div>
+</div>
+
+<div data-role="page" id="about-page">
+  <div data-role="header">
+     <a href="#main-page" data-icon="home">Home</a>
+        <h1>About</h1>
+     <a href="#main-page" data-icon="home" data-theme="b">Home</a>
+  </div>
+  <div data-role="content">
+    <p>Hello Perl Maven</p>
+  </div>
+  <div data-role="footer" data-position="fixed">
+    <h4>This is the end</h4>
+  </div>
+</div>
+
+<div data-role="page" id="dial" >
+  <div data-role="header">
+    <h1>Dialog</h1>
+  </div>
+  <div data-role="content">
+    <p>Some dialogue</p>
+  </div>
+</div>
+
+</body>
+</html>

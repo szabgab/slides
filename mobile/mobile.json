@@ -1,0 +1,20 @@
+{
+    "title": "Web and mobile development with HTML5, CSS3, JavaScript",
+    "author": "Gabor Szabo",
+    "first_year": "2013",
+    "copyright_name": "Gabor Szabo",
+    "copyright_url": "https://szabgab.com/",
+    "version": "1.18",
+    "files": [
+        "all.md",
+        "html.md",
+        "css.md",
+        "javascript.md",
+        "html-and-javascript.md",
+        "phonegap.md",
+        "html5.md",
+        "jquery.md",
+        "backend.md",
+        "appendix.md"
+    ]
+}

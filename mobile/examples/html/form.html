@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>A form</title>
+</head>
+<body>
+<form method="GET" action="/do-something">
+<table border="0" width="400">
+<tr><td>Fname:</td><td><input type="text" name="fname" size="40" /></td></tr>
+
+<tr><td>Country:</td><td>
+   <select name="country">
+   <option value=""></option>
+   <option value="br">Brazil</option>
+   <option value="pt">Portugal</option>
+   <option value="es">Spain</option>
+   </select>
+  </td></tr>
+
+<tr><td>Password:</td><td><input type="password" name="pw" size="40" /></td></tr>
+
+<tr><td>Sex:</td><td>
+   male:  <input type="radio" name="sex" value="male" />
+   female: <input type="radio" name="sex" value="female" />
+   other: <input type="radio" name="sex" value="other" />
+   </td></tr>
+
+<tr><td>Technologies:</td><td>
+   Perl:        <input type="checkbox" name="tech" value="perl" />
+   JavaScript:  <input type="checkbox" name="tech" value="javasript" />
+   HTML:        <input type="checkbox" name="tech" value="html" />
+   CSS:         <input type="checkbox" name="tech" value="css" />
+   </td></tr>
+
+<tr><td>About:</td><td></td></tr>
+<tr><td colspan="2">
+   <textarea name="about" cols="40" rows="10"></textarea>
+   </td></tr>
+
+<tr><td></td><td><input type="submit" value="Send" /></td></tr>
+
+</table>
+</form>
+</body>
+</html>

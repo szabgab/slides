@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML Feature support</title>
+<script src="modernizr.js"></script>
+</head>
+<body>
+<h1>HTML feature support checked by Modernizr</h1>
+
+<style>
+li {
+/* border: solid; */
+font-size: 20px;
+  display: inline-block;
+}
+ul li:nth-child(1) {
+    width: 100px;
+}
+ul li:nth-child(2) {
+    width: 300px;
+}
+</style>
+<form>
+<ul><li>Search:</li>
+    <li><input type="search" id="mysearch" placeholder="Perl"></li></ul>
+<ul><li>URL:</li>
+    <li><input type="url" id="myurl"></li></ul>
+<ul><li>Email:</li>
+    <li><input type="email" id="myemail" autofocus="true"></li></ul>
+</form>
+
+<div id="report">
+</div>
+
+<script>
+var html = '';
+if (Modernizr.canvas) {
+   html += 'Your browser supports canvas';
+} else {
+   html += 'Your browser does not support canvas';
+}
+html += '<p>\nFeatures:<p>';
+
+for (k in Modernizr) {
+  if (k[0] == '_') {
+    continue;
+  }
+  html += k + '<br>';
+}
+
+document.getElementById('report').innerHTML = html;
+</script>
+
+
+</body>
+</html>

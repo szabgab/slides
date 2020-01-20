@@ -1,0 +1,70 @@
+<html>
+<head>
+<title>On the edge</title>
+<!-- This needs more work so the text will appear under each picture -->
+
+<style>
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+body {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+#holder img {
+	width: 130px;
+	height: 130px;
+}
+
+.text {
+	width: 130px;
+	text-align: left;
+	position: absolute;
+/*	border: solid;*/
+	top: 140px;
+}
+#holder {
+	margin-top: 30px;
+	position: relative;
+}
+#holder > :nth-child(2) {
+	border-color: #FF0000;
+	position: absolute;
+	left: 135px;
+	top: 0px;
+}
+
+.person {
+/*	border: solid;*/
+	width: 135px;
+}
+.person {
+	text-align: center;
+}
+</style>
+</head>
+<body>
+<h1>A title</h1>
+Some text here.
+
+<div id="holder">
+  <div class="person">
+    <img src="img/szabgab.png">
+    <div class="text">
+    Some text I'd like to show under the image of Gabor.
+    </div>
+  </div>
+  <div class="person">
+    <img src="img/leprevost.jpg">
+    <div class="text">
+    Some other text I'd like to show under the picture of Felipe.
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+

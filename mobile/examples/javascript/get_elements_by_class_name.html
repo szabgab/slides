@@ -1,0 +1,12 @@
+<div class="foo">A</div>
+<div class="bar">Bar</div>
+<div class="foo">C</div>
+
+<script>
+var fields = document.getElementsByClassName('foo');
+for (var i=0; i < fields.length; i++) {
+  //console.log(i);
+  fields[i].innerHTML = "Hello foo " + i;
+}
+</script>
+

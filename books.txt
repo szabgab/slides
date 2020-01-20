@@ -20,6 +20,7 @@ jenkins/jenkins.json
 jenkins-intro/jenkins.json
 linux/linux.json
 linux-intro/linux.json
+mobile/mobile.json
 nodejs/nodejs.json
 pair-programming/pair.json
 perl-intro/perl.json

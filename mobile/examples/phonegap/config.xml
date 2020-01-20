@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns = "http://www.w3.org/ns/widgets"
+    xmlns:gap = "http://phonegap.com/ns/1.0"
+    id        = "com.szabgab.mobile"
+    versionCode="5"
+    version   = "0.0.5">
+  <name>Mobile Examples</name>
+  <description>
+    Mobile Application Examples
+  </description>
+
+  <author href="http://szabgab.com" email="szabgab@gmail.com">
+    Gabor Szabo
+  </author>
+
+  <preference name="phonegap-version" value="2.7.0" />
+  <preference name="android-minSdkVersion" value="7" />
+  <!-- If you do not want any permissions to be added to your app, add the
+    following tag to your config.xml; you will still have the INTERNET
+    permission on your app, which PhoneGap requires. -->
+  <preference name="permissions" value="none"/>
+
+
+  <!-- See http://build.phonegap.com/docs/config-xml for more details -->
+</widget>
