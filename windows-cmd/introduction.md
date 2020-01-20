@@ -1,5 +1,5 @@
 # Windows cmd
-{id: index}
+{id: windows-cmd}
 
 ## Configuration - Properties
 {id: configuration}
