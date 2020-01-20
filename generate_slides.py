@@ -41,8 +41,8 @@ def main():
 
 
     if len(sys.argv) == 2:
-        only_one = sys.argv[1]
-        if only_one in names:
+        only_name = sys.argv[1]
+        if only_name in names:
             names = [only_name]
             books = {}
         elif only_name in books:
