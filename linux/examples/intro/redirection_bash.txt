@@ -1,0 +1,23 @@
+$ ls -l /bin/bash /bing/other
+ls: /bing/other: No such file or directory
+-r-xr-xr-x  1 root  wheel  1228240 Oct 29 13:31 /bin/bash
+
+
+$ ls -l /bin/bash /bing/other > out
+ls: /bing/other: No such file or directory
+
+
+$ ls -l /bin/bash /bing/other 1> out
+ls: /bing/other: No such file or directory
+
+
+$ ls -l /bin/bash /bing/other 2> err
+-r-xr-xr-x  1 root  wheel  1228240 Oct 29 13:31 /bin/bash
+
+
+$ ls -l /bin/bash /bing/other > out  2> err
+
+
+$ ls -l /bin/bash /bing/other 2> /dev/null
+-r-xr-xr-x  1 root  wheel  1228240 Oct 29 13:31 /bin/bash
+

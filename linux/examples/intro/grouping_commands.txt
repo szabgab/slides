@@ -1,0 +1,11 @@
+$ ls -1 build/; ls -1 examples/ | wc
+html
+linux
+linux_v1.00.tar.gz
+linux_v1.00_linux.zip
+linux_v1.00_windows.zip
+       1       1       6
+
+$ (ls -1 build/; ls -1 examples/) | wc
+       6       6      82
+

@@ -1,0 +1,10 @@
+$ ls -l /bin/bash /bing/other > out
+ls: /bing/other: No such file or directory
+
+
+$ ls -l /bin/bash /bing/other  > & out
+(combine stdout and stderr)
+
+
+$ (ls -l /bin/bash /bing/other  > out) > & err
+(direct stdout to 'out' and stderr to 'err')

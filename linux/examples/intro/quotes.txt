@@ -1,0 +1,17 @@
+$ echo 'hello "world"'
+hello "world"
+
+$ echo "hello $0"
+hello -bash
+$ echo 'hello $0'
+hello $0
+
+$ echo "hello \"world\""
+hello "world"
+
+$ echo "date: `date`"
+date: Fri Apr 11 10:42:21 IDT 2014
+
+$ echo "date: $(date)"
+date: Fri Apr 11 10:45:44 IDT 2014
+

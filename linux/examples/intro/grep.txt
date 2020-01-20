@@ -1,0 +1,24 @@
+$ cat examples/intro/words.txt 
+foo
+foo
+bar
+foo
+bar
+
+$ grep bar examples/intro/words.txt 
+bar
+bar
+
+$ grep -v bar examples/intro/words.txt 
+foo
+foo
+foo
+
+$ grep -n bar examples/intro/words.txt 
+3:bar
+5:bar
+
+$ grep -n -v bar examples/intro/words.txt 
+1:foo
+2:foo
+4:foo

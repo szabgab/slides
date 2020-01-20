@@ -1,0 +1,15 @@
+$ who
+gabor    console  Apr 21 10:06 
+gabor    ttys000  Apr 21 10:06 
+gabor    ttys001  Apr 21 10:06 
+
+$ who | wc
+       3      15      96
+
+$ who | wc -l
+       3
+$ v=`who | wc -l`
+
+$ echo $v
+3
+

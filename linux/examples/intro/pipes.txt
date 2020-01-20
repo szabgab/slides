@@ -1,0 +1,9 @@
+$ ls -l examples/intro/
+total 32
+-rw-r--r--  1 gabor  staff  282 Apr 11 08:37 pipes.txt
+-rw-r--r--  1 gabor  staff   15 Mar  2 15:19 redirection.txt
+-rw-r--r--  1 gabor  staff  896 Apr 11 08:19 redirection_bash.txt
+-rw-r--r--  1 gabor  staff  238 Apr 11 08:20 redirection_tcsh.txt
+
+$ ls -l examples/intro/ | wc
+       5      38     257

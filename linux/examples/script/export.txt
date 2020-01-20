@@ -1,0 +1,15 @@
+$ name=foobar
+$ echo $name
+foobar
+
+$ cat show_name.sh 
+echo $name
+
+$ ./show_name.sh 
+
+$ export name=FooBar
+$ echo $name
+FooBar
+$ ./show_name.sh 
+FooBar
+

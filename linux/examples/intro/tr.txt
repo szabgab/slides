@@ -1,0 +1,23 @@
+$ cat examples/intro/words.txt
+foo
+foo
+bar
+foo
+bar
+
+
+$ cat examples/intro/words.txt | tr 'f' 'x' 
+xoo
+xoo
+bar
+xoo
+bar
+
+
+$ cat examples/intro/words.txt | tr '[a-z]' '[A-Z]' 
+FOO
+FOO
+BAR
+FOO
+BAR
+

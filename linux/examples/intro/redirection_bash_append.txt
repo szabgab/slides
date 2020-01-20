@@ -1,0 +1,9 @@
+$ ls -l /bin/bash /bing/other >> out 
+ls: /bing/other: No such file or directory
+
+
+
+$ cat out 
+-r-xr-xr-x  1 root  wheel  1228240 Oct 29 13:31 /bin/bash
+-r-xr-xr-x  1 root  wheel  1228240 Oct 29 13:31 /bin/bash
+

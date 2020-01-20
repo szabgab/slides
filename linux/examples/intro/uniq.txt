@@ -1,0 +1,16 @@
+$ cat examples/intro/words.txt 
+foo
+foo
+bar
+foo
+bar
+
+$ uniq examples/intro/words.txt 
+foo
+bar
+foo
+bar
+
+$ sort examples/intro/words.txt | uniq
+bar
+foo

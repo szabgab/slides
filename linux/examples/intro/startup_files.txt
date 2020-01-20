@@ -1,0 +1,5 @@
+PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin
+EDITOR=/usr/bin/vim
+PS1='\h:\W \u\$'
+
+alias rm='rm -i'

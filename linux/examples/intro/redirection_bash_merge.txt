@@ -1,0 +1,6 @@
+$ ls -l /bin/bash /bing/other >& out
+(both stdout and stderr go to the same channel)
+
+$ ls -l /bin/bash /bing/other &> out
+(does the same)
+

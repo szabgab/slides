@@ -1,0 +1,7 @@
+command >    output_file   (overwrite)
+command >>   output_file   (append)
+command <    input_file
+command 2>   error_file    (overwrite)
+command 2>&1 merged_file   (both output and error)
+
+command > output_file  2> error_file < input_file

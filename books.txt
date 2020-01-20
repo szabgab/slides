@@ -11,6 +11,7 @@ github-ci/github-ci.json
 golang/go.json
 groovy/groovy.json
 jenkins-intro/jenkins.json
+linux/linux.json
 linux-intro/linux.json
 nodejs/nodejs.json
 pair-programming/pair.json

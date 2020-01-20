@@ -1,0 +1,20 @@
+$ cat  examples/intro/names.txt
+Foo 11
+Bar 2
+Moo 1
+
+$ sort  examples/intro/names.txt
+Bar 2
+Foo 11
+Moo 1
+
+$ sort -k2 examples/intro/names.txt
+Moo 1
+Foo 11
+Bar 2
+
+$ sort -k2 -n examples/intro/names.txt
+Moo 1
+Bar 2
+Foo 11
+
