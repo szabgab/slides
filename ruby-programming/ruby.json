@@ -1,0 +1,12 @@
+{
+    "title": "Ruby programming",
+    "author": "Gabor Szabo",
+    "first_year": "2013",
+    "description": "Ruby tutorials and training course for beginner Ruby programmers.",
+    "copyright_name": "Gabor Szabo",
+    "copyright_url": "https://szabgab.com/",
+    "version": "1.18",
+    "files": [
+        "ruby.md"
+    ]
+}

@@ -30,6 +30,7 @@ perl-intro/perl.json
 php-programming/php.json
 python-mocking/python.json
 python-programming/python.json
+ruby-programming/ruby.json
 sql/sql.json
 value/value.json
 vim/vim.json
