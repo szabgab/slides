@@ -49,8 +49,7 @@
 {i: vim}
 
 
-Syntax highlighting with <a href="https://github.com/dart-lang/dart-vim-plugin">Dart vim plugin</a>
-
+Syntax highlighting with [Dart vim plugin](https://github.com/dart-lang/dart-vim-plugin)
 
 
 ```

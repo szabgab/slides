@@ -14,6 +14,7 @@ git-intro/git.json
 github-ci/github-ci.json
 golang/go.json
 groovy/groovy.json
+java-programming/java.json
 jenkins-intro/jenkins.json
 linux/linux.json
 linux-intro/linux.json

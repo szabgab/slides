@@ -23,7 +23,7 @@
 {i: clone}
 
 
-Let's see <a href="http://github.com/">Github</a>.
+Let's see [GithuGithubb](https://github.com/)
 
 
 
@@ -42,7 +42,7 @@ You then clone from that place. Make changes locally, commit them and push them 
 
 
 
-Integration: You can send a <emp>pull request</emp> to the author via the Github web site.
+Integration: You can send a `pull request` to the author via the Github web site.
 He can then either merge your changes on the Github site or can do it on his local machine.
 
 
@@ -74,10 +74,7 @@ $ git merge upstream/master
 {id: public-key}
 
 
-<a href="https://help.github.com/articles/generating-ssh-keys">Generating SSH Keys</a>
- and add them to a Github account
-
-
+[Generating SSH Keys](https://help.github.com/articles/generating-ssh-keys) and add them to a Github account
 
 
 ## Exercise

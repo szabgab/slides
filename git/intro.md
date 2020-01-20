@@ -241,10 +241,8 @@ $ git help tutorial    # a simple git tutorial
 ```
 
 
-See also the <a href="http://git-scm.com/docs">docs on git-scm</a>, including
-<a href="http://git-scm.com/docs/gittutorial">this tutorial</a>.
-
-
+See also the [docs on git-scm](http://git-scm.com/docs), including
+[this tutorial](http://git-scm.com/docs/gittutorial).
 
 
 ## Exercises
@@ -257,8 +255,4 @@ See also the <a href="http://git-scm.com/docs">docs on git-scm</a>, including
 * List the default configuration.
 * Add your name, email to the global configuration.
 * Look at the help page of one of the commands.
-
-
-
-
 
