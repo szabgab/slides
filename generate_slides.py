@@ -34,20 +34,25 @@ def main():
     # fi
     ext = "--ext html"
     with open(os.path.join(root, 'slides.txt')) as fh:
-        names = map(lambda s: s.rstrip("\n"), fh.readlines())
+        available_names = map(lambda s: s.rstrip("\n"), fh.readlines())
 
     with open(os.path.join(root, 'books.txt')) as fh:
-        books = dict(map(lambda x: x.split('/'), map(lambda s: s.rstrip("\n"), fh.readlines())))
+        available_books = dict(map(lambda x: x.split('/'), map(lambda s: s.rstrip("\n"), fh.readlines())))
 
 
-    if len(sys.argv) == 2:
-        only_name = sys.argv[1]
-        if only_name in names:
-            names = [only_name]
-            books = {}
-        elif only_name in books:
-            names = []
-            books = { only_name :  books[only_name] }
+    names = []
+    books = {}
+    if len(sys.argv) > 1:
+        for name in sys.argv[1:]:
+            if name in available_names:
+                names.append(name)
+            elif name in available_books:
+                books[name] = available_books[name]
+    else:
+        names = available_names
+        books = available_books
+    #print(names)
+    #print(books)
 
     generate_singles(names, ext)
     generate_multis(books, ext)
