@@ -1,0 +1,15 @@
+{
+    "title": "Agile practices",
+    "author": "Gabor Szabo",
+    "first_year": "2016",
+    "copyright_name": "Gabor Szabo",
+    "description": "Agile and engineering practices",
+    "copyright_url": "https://szabgab.com/",
+    "version": "1.18",
+    "files": [
+        "agile.md",
+        "coding.md",
+        "retrospective.md",
+        "tdd.md"
+    ]
+}
