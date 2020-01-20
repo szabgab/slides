@@ -16,5 +16,6 @@ nodejs/nodejs.json
 pair-programming/pair.json
 perl-intro/perl.json
 php-programming/php.json
+python-mocking/python.json
 python-programming/python.json
 web/web.json

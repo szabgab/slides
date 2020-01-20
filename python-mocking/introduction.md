@@ -1,5 +1,5 @@
 # Fixtures and Mocking in Python
-{id: index}
+{id: fixtures-and-mocking}
 
 ## How do you test Moon-landing?
 {id: test-moon-landing}

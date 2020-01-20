@@ -1,4 +1,3 @@
 about
-python-mocking
 value
 windows-cmd
