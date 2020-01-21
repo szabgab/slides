@@ -5,11 +5,9 @@ import sys
 import shutil
 import re
 import argparse
-
-# Possible arguments: (where NAME is one of the slides)
-# --ext html
-# NAME
-# --ext html NAME
+import yaml
+import json
+import jinja2
 
 root   = os.path.dirname(os.path.abspath(__file__))
 parent = os.path.dirname(root)
@@ -72,6 +70,8 @@ def main():
 
     generate_singles(names, ext)
     generate_multis(books, ext)
+    generate_index(args.ext)
+    copy_static_files()
 
 def generate_singles(names, ext):
     for name in names:
@@ -104,6 +104,40 @@ def generate_multis(books, ext):
         ret = os.system(cmd)
         if ret != 0:
             exit("Failed")
+
+def generate_index(ext):
+    html_dir = os.path.join(root, 'html')
+    templates_dir = os.path.join(root, 'templates')
+    html_filename = os.path.join(html_dir, 'index')
+    if ext:
+        html_filename += '.' + ext
+
+    courses = []
+    for subject in os.listdir(html_dir):
+        #print(subject)
+        info_file = os.path.join(html_dir, subject, 'info.json')
+        with open(info_file) as fh:
+            info = json.load(fh)
+            info['dir'] = subject
+        courses.append(info)
+    with open(os.path.join(html_dir, 'index.yaml'), 'w') as fh:
+        fh.write(yaml.dump(courses, default_flow_style=False))
+    env = jinja2.Environment(loader=jinja2.FileSystemLoader(templates_dir))
+    template = env.get_template('main.html')
+    total = sum(map(lambda x: x['cnt'], courses))
+    html = template.render(
+        title='Code-Maven training courses',
+        courses=sorted(courses, key=lambda x: x['cnt'], reverse=True),
+        total=total,
+    #    #timestamp=self.timestamp,
+    )
+    with open(html_filename, 'w', encoding="utf-8") as fh:
+        fh.write(html)
+
+def copy_static_files():
+    for entry in os.listdir(os.path.join(root, 'static')):
+        shutil.copy(os.path.join(root, 'static', entry), os.path.join(root, 'html'))
+
 
 
 main()

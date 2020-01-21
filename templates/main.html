@@ -1,0 +1,15 @@
+{% include 'incl/header.html' %}
+
+<h2>Slides from my courses and presentations</h2>
+
+<ul>
+{% for subject in courses %}
+    <li><a href="{{ subject.dir }}">{{ subject.title }}</a> ({{ subject.cnt }})</li>
+{% endfor %}
+</ul>
+
+<p>
+Total number of pages: {{total}}
+</p>
+
+{% include 'incl/footer.html' %}
