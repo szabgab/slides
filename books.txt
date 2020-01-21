@@ -28,7 +28,7 @@ nosql/nosql.json,nosql
 pair-programming/pair.json,pair-programming
 perl-intro/perl.json,perl-intro
 perl-programming/perl.json,perl-programming
-#perl-programming/testing.json,test-automation-using-perl
+perl-programming/testing.json,test-automation-using-perl
 php-programming/php.json,php-programming
 programming/programming.json,programming
 python-mocking/python.json,python-mocking

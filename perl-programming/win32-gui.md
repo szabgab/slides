@@ -10,12 +10,8 @@
 * Push buttons
 * Check if results are correct
 
-
-
 We cannot separate testing from development. We cannot say that after the developers
 have written something we can test everything as black box, no matter how they developed it.
-
-
 
 
 ## Keyboard and mouse movements
@@ -30,8 +26,7 @@ have written something we can test everything as black box, no matter how they d
 
 
 {aside}
-
-Testing command line or networking applications on Microsoft Windows 
+Testing command line or networking applications on Microsoft Windows
 is the same as testing those applications on Unix or Linux. That does
 not need a separate chapter. Especially because Perl will run on MS Windows
 as well and nearly all the functionality we have on Unix we also have on
@@ -40,7 +35,6 @@ MS Windows.
 
 
 {aside}
-
 What is different is the GUI and the way applications interact with each other.
 For GUI testing we need to be able to send keystrokes as if someone was typing
 at the keyboard and we also need to be able to move the mouse and click on
@@ -48,7 +42,6 @@ various objects. In Microsoft terminology the objects are called controls.
 {/aside}
 
 {aside}
-
 Luckily we have the Win32::GuiTest module for our disposal.
 {/aside}
 
@@ -115,14 +108,12 @@ display its strings. We use this information in an external file to
 find out what strings to expect.
 
 
-
-
 This script gets a parameter --app with a value 'calculator' or 'notepad' or 'notepad_menu' just
 to be able to return the appropriate strings in the current language. For example:
-<command>perl locale.pl --app calculator</command>
+`perl locale.pl --app calculator`
 
 
-![](examples/Win32GUI/locale.pl)
+TODO: include: examples/Win32GUI/locale.pl
 
 
 ## Close the application

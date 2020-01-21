@@ -13,24 +13,18 @@
 * Win32::IE::Form is just like HTML::Form
 
 
-
 ## Accessing Google
 {id: win32-ie-mechanize-google}
-![](examples/www/google_win32.pl)
 
+![](examples/www/google_win32.pl)
 
 
 ## Examples
 {id: win32-ie-mechanize-examples}
 
-```
-```
-
-```
 We have already seen examples using WWW::Mechanize
 
 They all work here too.
-```
 
 
 
