@@ -1,0 +1,9 @@
+========= test session starts ==========
+platform darwin -- Python 3.6.3, pytest-3.3.0, py-1.5.2, pluggy-0.6.0
+rootdir: ../python-pair-programming-and-tdd-workshop/test, inifile:
+plugins: cov-2.5.1
+collected 2 items
+
+test_mymath.py ..                                    [100%]
+
+======= 2 passed in 0.02 seconds =======

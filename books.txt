@@ -41,3 +41,4 @@ web/web.json,web
 windows-cmd/windows.json,windows-cmd
 talks/real_world.json,real-world
 talks/github-pages.json,github-pages
+talks/python-pair-programming-and-tdd-workshop.json,python-pair-programming-and-tdd-workshop
