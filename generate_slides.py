@@ -12,16 +12,16 @@ import re
 
 root   = os.path.dirname(os.path.abspath(__file__))
 parent = os.path.dirname(root)
-slider = f"{parent}/slider-py/slider.py"
-#print(f"root={root}")
-#print(f"parent={parent}")
+slider = "{}/slider-py/slider.py".format(parent)
+#print("root={}".format(root))
+#print("parent={}".format(parent))
 if not os.path.exists(slider):
-    exit(f"{slider} does not exist")
+    exit("{} does not exist".format(slider))
 
 def main():
     html_root = os.path.join(root, 'html')
 
-    #print(f"html_root={html_root}")
+    #print("html_root={}".format(html_root))
     if os.path.exists(html_root):
         shutil.rmtree(html_root)
     os.mkdir(html_root)
@@ -75,16 +75,16 @@ def generate_singles(names, ext):
     for name in names:
         print(name)
         cmd = f'{sys.executable} "{slider}" --md "{root}/{name}/intro.md" --html --dir "{root}/html/{name}/" --templates "{root}/templates/" --static "{root}/static/" {ext}'
-        #print(f"cmd={cmd}")
+        #print("cmd={}".format(cmd))
         ret = os.system(cmd)
         if ret != 0:
             exit("Failed")
 
 def generate_multis(books, ext):
     for book in books:
-        print(f"{book['dir']} - {book['filename']} - {book['outdir']}")
+        print("{} - {} - {}".format(book['dir'], book['filename'], book['outdir']))
         cmd = f'''{sys.executable} "{slider}" --yaml "{root}/{book['dir']}/{book['filename']}" --html --dir "{root}/html/{book['outdir']}/" --templates "{root}/templates/" --static "{root}/static/" {ext}'''
-        #print(f"cmd={cmd}")
+        #print("cmd={}".format(cmd))
         ret = os.system(cmd)
         if ret != 0:
             exit("Failed")
