@@ -3,6 +3,7 @@
 import os
 import sys
 import shutil
+import re
 
 # Possible arguments: (where NAME is one of the slides)
 # --ext html
@@ -37,17 +38,30 @@ def main():
         available_names = map(lambda s: s.rstrip("\n"), fh.readlines())
 
     with open(os.path.join(root, 'books.txt')) as fh:
-        available_books = dict(map(lambda x: x.split('/'), map(lambda s: s.rstrip("\n"), filter(lambda x: x[0] != '#', fh.readlines()))))
-
+        available_books = []
+        for line in fh:
+            line = line.rstrip("\n")
+            if re.search(r'\A\s*(#.*)?\Z', line):
+                continue
+            #print(line)
+            bookdir, filename, outdir = re.split(r'[/,]', line)
+            available_books.append({
+                'dir': bookdir,
+                'filename': filename,
+                'outdir': outdir,
+            })
+    #print(available_books)
 
     names = []
-    books = {}
+    books = []
     if len(sys.argv) > 1:
         for name in sys.argv[1:]:
             if name in available_names:
                 names.append(name)
-            elif name in available_books:
-                books[name] = available_books[name]
+                continue
+            for book in available_books:
+                if name == book['dir']:
+                    books.append(book)
     else:
         names = available_names
         books = available_books
@@ -67,9 +81,9 @@ def generate_singles(names, ext):
             exit("Failed")
 
 def generate_multis(books, ext):
-    for (name, filename) in books.items():
-        print(f"{name} - {filename}")
-        cmd = f'{sys.executable} "{slider}" --yaml "{root}/{name}/{filename}" --html --dir "{root}/html/{name}/" --templates "{root}/templates/" --static "{root}/static/" {ext}'
+    for book in books:
+        print(f"{book['dir']} - {book['filename']} - {book['outdir']}")
+        cmd = f'''{sys.executable} "{slider}" --yaml "{root}/{book['dir']}/{book['filename']}" --html --dir "{root}/html/{book['outdir']}/" --templates "{root}/templates/" --static "{root}/static/" {ext}'''
         #print(f"cmd={cmd}")
         ret = os.system(cmd)
         if ret != 0:
