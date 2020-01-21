@@ -8,6 +8,7 @@ import argparse
 import yaml
 import json
 import jinja2
+import datetime
 
 root   = os.path.dirname(os.path.abspath(__file__))
 parent = os.path.dirname(root)
@@ -71,6 +72,7 @@ def main():
     generate_singles(names, ext)
     generate_multis(books, ext)
     generate_index(args.ext)
+    generate_sitemap_xml()
     copy_static_files()
 
 def generate_singles(names, ext):
@@ -104,6 +106,40 @@ def generate_multis(books, ext):
         ret = os.system(cmd)
         if ret != 0:
             exit("Failed")
+
+def generate_sitemap_xml():
+    html_dir = os.path.join(root, 'html')
+    ts = datetime.datetime.now().strftime("%Y-%m-%d")
+    #print(ts)
+    xml  = '''<?xml version="1.0" encoding="UTF-8"?>\n'''
+    xml += '''<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'''
+    xml += '''   <url>\n'''
+    xml += '''      <loc>https://code-maven.com/slides/</loc>\n'''
+    xml += '''      <lastmod>{ts}</lastmod>\n'''.format(ts=ts)
+    xml += '''   </url>\n'''
+
+
+    for subject in os.listdir(html_dir):
+        if not os.path.isdir(os.path.join(html_dir, subject)):
+            continue
+        #print(subject)
+        xml += '''   <url>\n'''
+        xml += '''      <loc>https://code-maven.com/slides/{subject}</loc>\n'''.format(subject=subject)
+        xml += '''      <lastmod>{ts}</lastmod>\n'''.format(ts=ts)
+        xml += '''   </url>\n'''
+
+        for page in os.listdir(os.path.join(html_dir, subject)):
+            if re.search(r'\.(js|css|yaml)\Z', page):
+                continue
+            xml += '''   <url>\n'''
+            xml += '''      <loc>https://code-maven.com/slides/{subject}/{page}</loc>\n'''.format(subject=subject, page=page)
+            xml += '''      <lastmod>{ts}</lastmod>\n'''.format(ts=ts)
+            xml += '''   </url>\n'''
+    xml += '''</urlset>\n'''
+
+    with open(os.path.join(html_dir, 'sitemap.xml'), 'w') as fh:
+        fh.write(xml)
+
 
 def generate_index(ext):
     html_dir = os.path.join(root, 'html')
