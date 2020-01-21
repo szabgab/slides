@@ -116,10 +116,11 @@ Average:  3.5
 {id: file-exists}
 {i: os.path.exists}
 {i: os.path.isfile}
+{i: os.path.isdir}
 
 * [os.path.exists](https://docs.python.org/library/os.path.html#os.path.exists)
 * [os.path.isfile](https://docs.python.org/library/os.path.html#os.path.isfile)
-
+* [os.path.isdir](https://docs.python.org/library/os.path.html#os.path.isdir)
 
 
 ## Exercise: count numbers
