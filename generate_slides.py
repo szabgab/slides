@@ -74,7 +74,13 @@ def main():
 def generate_singles(names, ext):
     for name in names:
         print(name)
-        cmd = f'{sys.executable} "{slider}" --md "{root}/{name}/intro.md" --html --dir "{root}/html/{name}/" --templates "{root}/templates/" --static "{root}/static/" {ext}'
+        cmd = '{executable} "{slider}" --md "{root}/{name}/intro.md" --html --dir "{root}/html/{name}/" --templates "{root}/templates/" --static "{root}/static/" {ext}'.format(
+            executable = sys.executable,
+            slider = slider,
+            root = root,
+            name = name,
+            ext  = ext,
+        )
         #print("cmd={}".format(cmd))
         ret = os.system(cmd)
         if ret != 0:
@@ -83,7 +89,15 @@ def generate_singles(names, ext):
 def generate_multis(books, ext):
     for book in books:
         print("{} - {} - {}".format(book['dir'], book['filename'], book['outdir']))
-        cmd = f'''{sys.executable} "{slider}" --yaml "{root}/{book['dir']}/{book['filename']}" --html --dir "{root}/html/{book['outdir']}/" --templates "{root}/templates/" --static "{root}/static/" {ext}'''
+        cmd = '''{executable} "{slider}" --yaml "{root}/{bdir}/{bfilename}" --html --dir "{root}/html/{boutdir}/" --templates "{root}/templates/" --static "{root}/static/" {ext}'''.format(
+            executable = sys.executable,
+            slider = slider,
+            root   = root,
+            bdir   = book['dir'],
+            bfilename = book['filename'],
+            boutdir   = book['outdir'],
+            ext = ext,
+        )
         #print("cmd={}".format(cmd))
         ret = os.system(cmd)
         if ret != 0:
