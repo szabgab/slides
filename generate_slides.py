@@ -165,7 +165,7 @@ def generate_index(ext):
         title='Code-Maven training courses',
         courses=sorted(courses, key=lambda x: x['cnt'], reverse=True),
         total=total,
-    #    #timestamp=self.timestamp,
+        timestamp=datetime.datetime.now(),
     )
     with open(html_filename, 'w', encoding="utf-8") as fh:
         fh.write(html)
