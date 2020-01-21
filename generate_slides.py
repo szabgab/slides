@@ -4,6 +4,7 @@ import os
 import sys
 import shutil
 import re
+import argparse
 
 # Possible arguments: (where NAME is one of the slides)
 # --ext html
@@ -26,14 +27,15 @@ def main():
         shutil.rmtree(html_root)
     os.mkdir(html_root)
 
-    # ext=""
-    # if [ "$1" == "--ext" ]
-    # then
-    #     ext="--ext $2"
-    #     shift
-    #     shift
-    # fi
-    ext = "--ext html"
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--ext', default='html')
+    parser.add_argument('names', nargs='*')
+    args = parser.parse_args()
+
+    if args.ext:
+        ext = "--ext " + args.ext
+    else:
+        ext = ''
     with open(os.path.join(root, 'slides.txt')) as fh:
         available_names = map(lambda s: s.rstrip("\n"), fh.readlines())
 
@@ -54,8 +56,8 @@ def main():
 
     names = []
     books = []
-    if len(sys.argv) > 1:
-        for name in sys.argv[1:]:
+    if len(args.names) > 0:
+        for name in args.names:
             if name in available_names:
                 names.append(name)
                 continue
