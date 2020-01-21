@@ -1,0 +1,11 @@
+{
+    "title": "Testing real world applications",
+    "author": "Gabor Szabo",
+    "first_year": "2017",
+    "copyright_name": "Gabor Szabo",
+    "copyright_url": "https://szabgab.com/",
+    "version": "1.18",
+    "files": [
+        "real_world.md"
+    ]
+}
