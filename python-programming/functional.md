@@ -458,13 +458,31 @@ checks. See the sekeleton:
 Write a script that will accept a math expression such as `python calc.py 2 + 3` and will print the result.
 Use lookup tables select the implementation of the actual computation. (supporting +, - , *, /) is enought
 
+## Exercise: parse file
+{id: exercise-parse-file}
 
+In the following file we have lines:
+
+```
+SOURCE/FILENAME.json,TARGET
+```
+
+read in the file and create
+
+<ul>
+   <li>a single dictionary where the `SOURCE/FILENAME.json` is the key and the TARGET is the value.</li>
+   <li>list of dictionaries in which the keys are 'source', 'filename', and 'target' and the values are from the respective columns (SOURCE, FILENAME.json, and TARGET)</li>
+</ul>
+
+You can solve this `for`-loop or with `map` and list-comprehensions. Do it in both ways.
+
+![](examples/advanced/books.txt)
 
 
 ## Solution: min, max, factorial
 {id: solution-functional}
-![](examples/advanced/reduce_solution.py)
 
+![](examples/advanced/reduce_solution.py)
 
 
 ## Solution: Prime numbers
@@ -475,9 +493,9 @@ Calculating the prime numbers
 ![](examples/advanced/primes_with_filter.py)
 
 
-
 ## Solution: Many validator functions
 {id: solution-many-validator-functions}
+
 ![](examples/advanced/many_validators.py)
 
 
