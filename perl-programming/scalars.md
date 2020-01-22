@@ -97,15 +97,9 @@ $H             # $h and $H are two different variables
 ```
 ![](examples/scalars/scalar_variables.pl)
 
-
 The value can be changed any time.
 
-
-
-
-<a href="https://perlmaven.com/scalar-variables">Scalar variables</a>
-
-
+[Scalar variables](https://perlmaven.com/scalar-variables)
 
 
 ## Sigils and variables
@@ -116,11 +110,7 @@ The value can be changed any time.
 {i: &amp;}
 {i: *}
 
-
-
-Variables in Perl are Sigil + variable name: 
-
-
+Variables in Perl are Sigil + variable name:
 
 
 * $ - scalar
@@ -348,10 +338,7 @@ if (COND_1) {
 }
 ```
 
-
-<a href="https://perlmaven.com/comparing-scalars-in-perl">Comparing scalars in Perl</a>
-
-
+[Comparing scalars in Perl](https://perlmaven.com/comparing-scalars-in-perl)
 
 
 ## Comparison operators
@@ -631,9 +618,7 @@ and another number. Compute the result and print it out.
 ![](examples/scalars/string_functions.pl)
 
 
-<a href="https://perlmaven.com/string-functions-length-lc-uc-index-substr">String functions: length, lc, uc, index, substr</a>
-
-
+[String functions: length, lc, uc, index, substr](https://perlmaven.com/string-functions-length-lc-uc-index-substr)
 
 
 ## String functions (substr)
@@ -648,17 +633,14 @@ substr STRING, OFFSET, LENGTH - the content of a substring given its location
 ## Strings - Double quoted
 {id: scalar-values-double-quoted-strings}
 {i: qq}
+
 ![](examples/scalars/double_quote.pl)
 
 
 In double quoted strings you can use the following:
 
-
-
 * Backslash escapes sequences like \n \t see in **perldoc perlop**
 * Variable interpolation
-
-
 
 
 ## Strings - Single quoted
@@ -672,11 +654,8 @@ print 'a $name';                  # a $name
 print 'another "string"';         # another "string"
 ```
 
-
 There are only two special characters in this kind of string the '
 and the \ at the end of the string
-
-
 
 ```
 print 'a'b';                      # ERROR - perl will see the string 'a'

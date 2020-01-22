@@ -1,16 +1,8 @@
 # Process slides
 {id: process-slides}
 
-
-
-
-
 ## Page One
 {id: page-one}
-
-
-Text in a paragraph.
-
 
 
 ```
@@ -18,32 +10,17 @@ use strict;
 use warnings;
 ```
 
-
-More paragraph and an included file.
-
-
-
-
 ## Page Two
 {id: page-two}
 {i: $SIG}
 {i: __WARN__}
 
-```
-First row of literallayout
-Second row
+[signal 7](http://kernel.org/doc/man-pages/online/pages/man7/signal.7.html)
 
-<a href="http://kernel.org/doc/man-pages/online/pages/man7/signal.7.html"></a>
-<command>before</command> commands <command>after</command>
-```
-
-
-<a href="http://kernel.org/doc/man-pages/online/pages/man7/signal.7.html"></a>
 Alternatively you could also insert the following in your code:
-<command>use diagnostics;</command>
+`use diagnostics;`
 to get the explanations for every warning.
-See also <command>perldoc perldiag</command> for a detailed explanation of each warning and error.
-
+See also `perldoc perldiag` for a detailed explanation of each warning and error.
 
 
 ```
@@ -61,10 +38,7 @@ $SIG{TSTP} = sub { print "TSTP received\n";};        # kill -20 or Ctrl-Z
 * Entry Two
 * Entry Three
 
-
-
 paragraph with backslash-d: \d and double-backslash-x: \\x
-
 
 
 ```
@@ -72,7 +46,7 @@ literallayout with backslash-s: \s
 ```
 
 
-<a href="https://perlmaven.com/perl-arrays">Perl Arrays</a>
+[Perl Arrays](https://perlmaven.com/perl-arrays)
 
 
 
@@ -90,8 +64,4 @@ An ini file has sections starting by the name of the section in square brackets 
 each section there are key = value pairs with optional spaces around the "=" sign.
 The keys can only contain letters, numbers, underscore or dash.
 In addition there can be empty lines and lines starting with # which are comments.
-
-
-
-
 
