@@ -226,8 +226,8 @@ When an object holds references to one or more other objects.
 
 
 ```
-x = dist * cos(angle)
-y = dist * sin(angle)
+delta_x = dist * cos(angle)
+delta_y = dist * sin(angle)
 ```
 
 
@@ -237,7 +237,6 @@ y = dist * sin(angle)
 * Take the previous example **Python: Inheritance - another level** and the example file called examples/classes/inheritance/ball_shape.py and change it so the **Ball** class will accept  **x, y, z, r**.
 * Add a method called move to the new Ball class that will accept dx, dy, dz.
 * Implement a method that will return the volume of the ball.
-
 
 
 ## Exercise: Polygon
@@ -254,15 +253,12 @@ y = dist * sin(angle)
 ## Exercise: Number
 {id: exercise-objects}
 
-
 Turn the Number guessing game into a class. Replace every print statement with a call to an output method.
 Do the same with the way you get the input.
 Then create a subclass where you override these methods.
 You will be able to launch the game with a hidden value you decide upon.
 The input will feed a pre-defined list of values as guesses to the game
 and the output methods will collect the values that the game prints in a list.
-
-
 
 
 ## Exercise: Library
@@ -281,28 +277,19 @@ Methods:
 ## Exercise: Bookexchange
 {id: exercise-bookexchange}
 
-
 It is like the library example, but instead of having a central library with books,
 each person owns and lends out books to other people.
-
-
 
 
 ## Exercise: Represent turtle graphics
 {id: exercise-turle-graphics}
 
-
 There is a cursor (or turtle) in the x-y two-dimensional sphere. It has some (x,y) coordinates.
 It can go forward n pixels. It can turn left n degrees. It can lift up the pencil or put it down.
 
 
-
-
-
 ## Solution - Polygon
 {id: solution-polygon}
+
 ![](examples/classes/composition/polygon.py)
-
-
-
 

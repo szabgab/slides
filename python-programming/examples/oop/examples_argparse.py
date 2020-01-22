@@ -6,8 +6,8 @@ def get_args():
 
     print(type(parser).__name__)
     print(parser.__class__)
-    
-    print(dir(parser))
+
+    # print(dir(parser))
     print( parser.format_help() )
     parser.print_help()
 
