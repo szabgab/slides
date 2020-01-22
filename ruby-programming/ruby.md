@@ -4,7 +4,7 @@
 ## Where to get Ruby
 {id: where-to-get-ruby}
 
-* <a href="https://www.ruby-lang.org/"></a>
+* [Ruby](https://www.ruby-lang.org/)
 
 
 

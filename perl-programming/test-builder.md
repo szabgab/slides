@@ -286,11 +286,8 @@ Test::Builder backend we can use them along with our standard Test::More setup.
 {id: test-warn}
 {i: Test::Warn}
 
-
-<a href="https://metacpan.org/pod/Test::Warn">Test::Warn</a> can be used to test for both warnings and carp calls. 
+[Test::Warn](https://metacpan.org/pod/Test::Warn) can be used to test for both warnings and carp calls.
 It can be used to check if there was a warning or if there was not.
-
-
 
 * warning_is
 * warnings_are
@@ -298,7 +295,6 @@ It can be used to check if there was a warning or if there was not.
 * warnings_like
 * use  warning_is {code} undef   to check there was no warning
 * ...
-
 
 
 ## Test for no warnings - the hard way
@@ -389,10 +385,7 @@ throws_ok { $foo->method } 'Error::Simple', 'simple error thrown';
 
 
 Where Error::Simple is the class of the exception that have been thrown. e.g.
-by <a href="https://metacpan.org/pod/Exception::Class">Exception::Class</a>.
-
-
-
+by [Exception::Class](https://metacpan.org/pod/Exception::Class).
 
 
 ## Exercise: improve test module
@@ -549,10 +542,8 @@ One common way to make sure the test scripts run in a certain order is to name t
 {i: Test::Differences}
 {i: cmp_deeply}
 
-
-<a href="https://metacpan.org/pod/Test::Differences">Test::Differences</a> provides UNIX-like 
+[Test::Differences](https://metacpan.org/pod/Test::Differences) provides UNIX-like
 diff output when strings are not matching.
-
 
 ![](examples/perl/t/test_differences.t)
 
@@ -578,11 +569,9 @@ not ok 1 - Another string
 {id: test-deep}
 
 
-<a href="https://metacpan.org/pod/Test::Deep">Test::Deep</a> by Fergal Daly provides various function
+[Test::Deep](https://metacpan.org/pod/Test::Deep) by Fergal Daly provides various function
 testing data structure is much better way than is_deeply of Test::More.
 We return to the example examples/perl/lib/MyBugs.pm
-
-
 
 * cmp_deeply
 * cmp_bag
@@ -602,10 +591,8 @@ We return to the example examples/perl/lib/MyBugs.pm
 {i: file_size_ok}
 
 
-<a href="https://metacpan.org/pod/Test::File">Test::File</a> of brian d foy provides functions for testing meta
+[Test::File](https://metacpan.org/pod/Test::File) of brian d foy provides functions for testing meta
 information about files
-
-
 
 * file_exists_ok( FILENAME [, NAME ] )
 * file_empty_ok( FILENAME [, NAME ] )
@@ -621,7 +608,7 @@ information about files
 {i: is_string}
 
 
-<a href="https://metacpan.org/pod/Test::LongString">Test::LongString</a> of Rafael Garcia-Suarez for better error reporting
+[Test::LongString](https://metacpan.org/pod/Test::LongString) of Rafael Garcia-Suarez for better error reporting
 when comparing strings. Especially long strings.
 
 
@@ -635,7 +622,7 @@ when comparing strings. Especially long strings.
 {i: die_on_fail}
 
 
-<a href="https://metacpan.org/pod/Test::Most">Test::Most</a> by Curtis "Ovid" Poe
+[Test::Most](https://metacpan.org/pod/Test::Most) by Curtis "Ovid" Poe
 is a replacement of Test::More with even more stuff.
 It exports the functions of the following test modules
 making it a bit more convenient to use them.
@@ -683,9 +670,7 @@ Or use Capture::Tiny and then interrogated the returned values.
 
 
 For testing code with exceptions (instead of Test::Exception)
-see <a href="https://metacpan.org/pod/Test::Fatal">Test::Fatal</a>.
-
-
+see [Test::Fatal](https://metacpan.org/pod/Test::Fatal).
 
 
 ## Test::XPath
@@ -693,14 +678,12 @@ see <a href="https://metacpan.org/pod/Test::Fatal">Test::Fatal</a>.
 {i: Test::XPath}
 {i: XML}
 
-
-<a href="https://metacpan.org/pod/Test::XPath">Test::XPath</a>
-
-
+[Test::XPath](https://metacpan.org/pod/Test::XPath)
 
 
 ## Sample script for testing Client-Server
 {id: testing-client-server}
+
 ![](examples/perl/client_server.t)
 
 

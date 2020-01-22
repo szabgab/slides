@@ -66,39 +66,27 @@ Instead of 1985 we wrote 85  saved space, looked clear.  You also knew that the 
 It worked until 1999, but when 2000 came it was (supposed to be) represented as 00.
 Suddenly tomorrow was before yesterday.
 
-<a href="https://en.wikipedia.org/wiki/Year_2000_problem">Year 2000 problem</a>
-
-
+[Year 2000 problem](https://en.wikipedia.org/wiki/Year_2000_problem)
 
 
 ## Year 2038 problem
 {id: year-2038-problem}
 
-
 * [Year 2038 problem](https://en.wikipedia.org/wiki/Year_2038_problem)
 * 32 bit systems
-
-
 
 
 ## Incorrect floating point number representation
 {id: floating-point-representation}
 
+[Floating point arithmetic](https://en.wikipedia.org/wiki/Floating-point_arithmetic)
 
-
-
-<a href="https://en.wikipedia.org/wiki/Floating-point_arithmetic">Floating point arithmetic</a>
 e.g. in python:
-
-
-
 
 ```
 1.2 - 1.0
 0.19999999999999996
 ```
-
-
 
 ## Operating Systems
 {id: operating-systems}
