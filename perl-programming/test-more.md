@@ -5,16 +5,10 @@
 {id: moving-to-test-more}
 {i: Test::More}
 
-
 Test::Simple is really a very simple module. Its sole exported function is the "ok" function.
-
-
-
 
 Test::More has the same "ok" function - so it is a drop-in replacement - but it also has lots of
 other functions and tools:
-
-
 
 * <programlisting>ok</programlisting>
 * <programlisting>is</programlisting>
@@ -794,14 +788,10 @@ report with drill down about all the code we ran.
 All tests successful.
 Files=11, Tests=2078, 50 wallclock secs
 ```
+
 ![](examples/perl/cover.pl)
 
-
-<a href="http://cpancover.com/">CPAN Cover</a>
-
-
-
-
+[CPAN Cover](http://cpancover.com/)
 
 
 ## Can module be loaded? use_ok and require_ok
@@ -942,13 +932,12 @@ Then at the end of each section you update the number.
 ![](examples/perl/t/begin_block.t)
 
 See also:
-<a href="http://metacpan.org/pod/Test::Block">Test::Block</a>
-
-
+[Test::Block](http://metacpan.org/pod/Test::Block)
 
 
 ## subtest with plan
 {id: subtest-with-plan}
+
 ![](examples/perl/t/planned_subtest.t)
 
 **perl t/planned_subtest.t**
@@ -1029,6 +1018,7 @@ Implicit call to done_testing inside. skip-able, etc.
 ## skip all
 {id: skip-all}
 {i: skip_all}
+
 ![](examples/perl/t/skip_all.t)
 
 
@@ -1038,6 +1028,7 @@ Implicit call to done_testing inside. skip-able, etc.
 ```
 Just to show you all the tests of the MyTools module we used
 ```
+
 ![](examples/perl/t/all.t)
 
 
@@ -1050,19 +1041,12 @@ Just to show you all the tests of the MyTools module we used
 * Other ideas: Skip tests that need database access and/or tests that need network access.
 
 
-
 ## Exercise: use coverage
 {id: exercise-test-coverage}
-
 
 Generate a test coverage report for Math::RPN or the module you
 are testing and look for holes in the coverage. Add more tests.
 A few suggestions:
 Archive::Zip, 
-<a href="http://blogs.perl.org/users/neilb/2014/08/fix-a-bug-on-cpan-day.html">top 20</a>.
-
-
-
-
-
+[top 20](http://blogs.perl.org/users/neilb/2014/08/fix-a-bug-on-cpan-day.html).
 

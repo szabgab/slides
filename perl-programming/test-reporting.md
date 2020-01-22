@@ -143,22 +143,13 @@ Result: PASS
 {i: prove}
 
 
-The simplest way to generate nice reports is to use <a href="https://metacpan.org/pod/TAP::Formatter::HTML">TAP::Formatter::HTML</a>.
+The simplest way to generate nice reports is to use [TAP::Formatter::HTML](https://metacpan.org/pod/TAP::Formatter::HTML).
 Instead of running prove alone, you can pass it a class implementing formattion
 options and it will use that instead of the default textual output.
 
-
-
-
 <command>prove -b -m -Q --formatter=TAP::Formatter::HTML examples/tap > output.html</command>
 
-
-
-
-<a href="../test-automation-using-perl/examples/tap/HTML/output.html">output</a>
-
-
-
+[output]("../test-automation-using-perl/examples/tap/HTML/output.html)
 
 
 ## Collection Test reports
@@ -266,15 +257,9 @@ The password for the "admin" user is "qa_rocks".
 {/aside}
 
 
-<a href="https://metacpan.org/pod/Smolder">Smolder</a> by Michael Peters.
+[Smolder](https://metacpan.org/pod/Smolder) by Michael Peters.
 
-
-
-
-<command>smolder_smoke_signal --server smolder.foo.com:port
---username myself --password s3cr3t --file tap.tar.gz --project MyProject</command>
-
-
+`smolder_smoke_signal --server smolder.foo.com:port --username myself --password s3cr3t --file tap.tar.gz --project MyProject`
 
 
 ## Exercise: Smolder

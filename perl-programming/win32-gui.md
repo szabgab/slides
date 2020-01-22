@@ -252,7 +252,7 @@ had a name, so it will be quite easy to find them.
 {id: download-win32-guitest}
 
 
-The latest version is <a href="http://metacpan.org/pod/Win32::GuiTest">on CPAN</a>
+The latest version is [on CPAN](http://metacpan.org/pod/Win32::GuiTest).
 
 
 

@@ -127,8 +127,7 @@ Evaluating modules, getting information about them
 * [Mojolicius related articles.](https://perlmaven.com/mojolicious)
 * [Catalyst related articles.](https://perlmaven.com/catalyst)
 * [Checking a valueless checkbox with WWW::Mechanize](https://perlmaven.com/checking-a-valueless-checkbox-with-www-mechanize)
-* <a href="https://perlmaven.com/basic-authentication-with-lwp-useragent-and-http-request-common"></a>Basic Authentication with LWP::UserAgent and HTTP::Request::Common
-
+* [Basic Authentication with LWP::UserAgent and HTTP::Request::Common](https://perlmaven.com/basic-authentication-with-lwp-useragent-and-http-request-common)
 
 
 ## Some interesting CPAN Modules: common file format
@@ -373,10 +372,7 @@ On the command line. Good for this invocation only.
 perl -I /path/to/lib script.pl
 ```
 
-
-<a href="https://perlmaven.com/how-to-change-inc-to-find-perl-modules-in-non-standard-locations">How to change @INC to find Perl modules in non-standard locations</a>
-
-
+[How to change @INC to find Perl modules in non-standard locations](https://perlmaven.com/how-to-change-inc-to-find-perl-modules-in-non-standard-locations)
 
 
 ## Changing @INC - Relative PATH
@@ -412,10 +408,7 @@ use lib File::Spec->catfile(
 ## local::lib
 {id: local-lib}
 
-
-Download <a href="https://metacpan.org/pod/local::lib">local::lib</a> and follow the
-bootstrapping technique.
-
+Download [local::lib](https://metacpan.org/pod/local::lib) and follow the bootstrapping technique.
 
 
 ```
@@ -497,7 +490,7 @@ cpan> o conf commit
 ## Exercise: setup local::lib
 {id: exercise-setup-local-lib}
 
-Follow the instruction in the documentation of <a href="http://metacpan.org/pod/local::lib">local::lib</a> to bootstrap on your machine.
+Follow the instruction in the documentation of [local::lib](http://metacpan.org/pod/local::lib) to bootstrap on your machine.
 
 
 ## Exercise: Module installation
