@@ -98,7 +98,7 @@ When you change the JavaScript file, make sure it is reloaded! Browser cashing c
 
 
 
-In the _config file we can add a field called <b>description:</b>. It will provide the content for the subtitle of the header.
+In the _config file we can add a field called **description:**. It will provide the content for the subtitle of the header.
 
 
 

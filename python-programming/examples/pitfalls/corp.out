@@ -1,0 +1,5 @@
+19
+Traceback (most recent call last):
+  File "examples/pitfalls/corp.py", line 19, in <module>
+    print(c.total())
+TypeError: 'int' object is not callable

@@ -5,13 +5,12 @@
 {id: repeate-commands}
 
 {aside}
-
 Many key combinations can be preceeded with a number that will indicate the number of repetitions we would like to have.
 {/aside}
 
 ```
 3dd            Delete 3 rows
-4l             Move 4 characters to the right.  
+4l             Move 4 characters to the right.
 5(left-arrow)  Move 5 characters to the left.
 2dw            Delete 2 words.
 ```
@@ -26,7 +25,6 @@ Many key combinations can be preceeded with a number that will indicate the numb
 * The text "hello world" will be inserted again.
 * Press **3.**
 * The text "hello world" will be inserted 3 more times.
-
 
 
 ## Search
@@ -111,8 +109,6 @@ To select range press **v** and then use the navigation keys. Then hit **:**
 
 
 [Working with buffers](http://vimcasts.org/episodes/working-with-buffers/)
-
-
 
 ```
 :ls   list buffers
@@ -208,9 +204,6 @@ Alternatively one can map keys to keep the selection after indentation.
 
 * Ctrl-N - by searching forward
 * Ctrl-P - by searching backwards
-
-
-
 
 
 ## Shell commands
@@ -316,7 +309,7 @@ To list the content of all the registers, type :reg
 
 
 Sometimes you have files in encodings you don't want, sometime you'll see in the status line that the file is
-<b>converted</b>. You can change the encoding of the file to utf8 by:
+`converted`. You can change the encoding of the file to utf8 by:
 
 
 
@@ -329,7 +322,7 @@ Sometimes you have files in encodings you don't want, sometime you'll see in the
 ## Current filename
 {id: current-filename}
 
-Copy (yank) the current file (buffer) name to clip-board so you can paste it using p. 
+Copy (yank) the current file (buffer) name to clip-board so you can paste it using p.
 
 
 ```

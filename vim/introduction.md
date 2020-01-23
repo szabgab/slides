@@ -111,7 +111,7 @@ ESC - get out of trouble and back to Command mode
 {i: :wq}
 
 
-These are the ways to quit vim. (when in <b>Normal mode</b> press either of the following:)
+These are the ways to quit vim. (when in **Normal mode** press either of the following:)
 
 
 

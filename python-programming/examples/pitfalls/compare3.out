@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "examples/pitfalls/compare.py", line 4, in <module>
+    print(x > y)
+TypeError: unorderable types: int() > str()

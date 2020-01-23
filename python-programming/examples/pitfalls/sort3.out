@@ -1,0 +1,6 @@
+[10, '1 foo', 42, '4 bar']
+Traceback (most recent call last):
+  File "examples/pitfalls/sort.py", line 5, in <module>
+    mixed.sort()
+TypeError: unorderable types: str() < int()
+
