@@ -230,43 +230,18 @@ print 42; # the answer
 {id: perl-documentation}
 {i: perldoc}
 
-**perldoc perl**
+* `perldoc perl`
+* `perldoc perlsyn`
+* `perldoc perlfunc`
+* `perldoc -f print`
+* `perldoc -q sort`
+* `perldoc perlrun`
+* `perldoc strict`
+* `perldoc warnings`
 
+Web based: [perldoc](http://perldoc.perl.org/)
 
-**perldoc perlsyn**
-
-
-**perldoc perlfunc**
-
-
-**perldoc -f print**
-
-
-
-**perldoc -q sort**
-
-
-
-**perldoc perlrun**
-
-
-**perldoc strict**
-
-
-**perldoc warnings**
-
-
-
-
-Web based: <a href="http://perldoc.perl.org/">perldoc</a>
-
-
-
-
-<a href="https://perlmaven.com/core-perl-documentation-cpan-module-documentation">Core Perl documentation and CPAN module documentation</a>
-
-
-
+[Core Perl documentation and CPAN module documentation](https://perlmaven.com/core-perl-documentation-cpan-module-documentation)
 
 
 ## POD - Plain Old Documentation
@@ -274,19 +249,13 @@ Web based: <a href="http://perldoc.perl.org/">perldoc</a>
 {i: POD}
 {i: =head1}
 {i: =head2}
+
 ![](examples/intro/documentation.pl)
 
-**perl examples/intro/documentation.pl**
+* `perl examples/intro/documentation.pl`
+* `perldoc examples/intro/documentation.pl`
 
-
-**perldoc examples/intro/documentation.pl**
-
-
-
-<a href="https://perlmaven.com/pod-plain-old-documentation-of-perl">POD - Plain Old Documentation</a>
-
-
-
+[POD - Plain Old Documentation](https://perlmaven.com/pod-plain-old-documentation-of-perl)
 
 
 ## Exercise: Hello world

@@ -37,12 +37,10 @@ We use subroutines in order to
 
 ## Variable number of parameters
 {id: subroutines-sum}
+
 ![](examples/subroutines/sum.pl)
 
-
-<a href="https://perlmaven.com/subroutines-and-functions-in-perl">Subroutines and functions in Perl</a>
-
-
+[Subroutines and functions in Perl](https://perlmaven.com/subroutines-and-functions-in-perl)
 
 
 ## Recursive subroutines: factorial

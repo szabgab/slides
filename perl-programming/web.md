@@ -143,25 +143,22 @@ ok 2 - HTML OK
 ![](examples/www/static_tidy.t)
 
 
-<command>$ perl examples/www/static_tidy.t</command>
-
+```
+$ perl examples/www/static_tidy.t
+```
 
 ![](examples/www/static_tidy.t.out)
-
 
 
 ## Test using W3C validator
 {id: test-w3c}
 
-
-<a href="http://validate.w3c.org/">W3C validator</a>
-
+[W3C validator](http://validate.w3c.org/)
 
 
 * Module to access that web site.
 * Module to access the same service installed on a local web server.
 * Module to access the validating code without a web server.
-
 
 
 ## Use a local copy of the W3C validator
@@ -267,15 +264,12 @@ Output:
 ## Test without server Test::WWW::Mechanize::PSGI
 {id: test-www-mechanize-psgi}
 
-
-<a href="https://metacpan.org/pod/Test::WWW::Mechanize::PSGI">Test::WWW::Mechanize::PSGI</a>
-
+[Test::WWW::Mechanize::PSGI](https://metacpan.org/pod/Test::WWW::Mechanize::PSGI)
 
 
 {aside}
 PSGI-based applications can be tested without even launching a server.
 {/aside}
-
 
 
 ## Test page with JavaScript

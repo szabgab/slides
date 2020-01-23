@@ -97,21 +97,17 @@ handle to the opened file. It is called a filehandle.
 ![](examples/files/open_file.pl)
 
 
-<a href="https://perlmaven.com/open-and-read-from-files">Open and read from text files</a>
-
-
+[Open and read from text files](https://perlmaven.com/open-and-read-from-files)
 
 
 ## Opening a file
 {id: open-file}
 {i: append}
 {i: write}
+
 ![](examples/files/open_file_modes.pl)
 
-
-<a href="https://perlmaven.com/appending-to-files">Appending to files</a>
-
-
+[Appending to files](https://perlmaven.com/appending-to-files)
 
 
 ## Opening a file - error handling
@@ -165,22 +161,23 @@ Instead of printing the line you could do anything with it.
 
 ## Write to a file
 {id: write-file}
+
 ![](examples/files/write_file.pl)
 
 
-<a href="https://perlmaven.com/writing-to-files-with-perl">Writing to files with Perl</a>
-
-
+[Writing to files with Perl](https://perlmaven.com/writing-to-files-with-perl)
 
 
 ## Sum of numbers in a file
 {id: sum-of-numbers}
+
 ![](examples/files/numbers.txt)
 ![](examples/files/count_sum.pl)
 
 
 ## Analyze the Apache log file
 {id: apache-log-report-hosts}
+
 ![](examples/files/apache_access.log)
 ![](examples/files/apache_log_hosts.pl)
 
@@ -205,24 +202,16 @@ Also the function had only 2 parameters.
 
 ![](examples/files/open_file_old.pl)
 
-
 Security problems.
-
-
-
 
 Being global, difficult to pass as parameter to functions.
 
-
-
-
-<a href="https://perlmaven.com/open-files-in-the-old-way">Don't Open Files in the old way</a>
-
-
+[Don't Open Files in the old way](https://perlmaven.com/open-files-in-the-old-way)
 
 
 ## Binary mode
 {id: binary-mode}
+
 ![](examples/files/open_binary_file.pl)
 
 
@@ -246,11 +235,7 @@ READ_LENGTH = read FILEHANDLE,SCALAR,LENGTH
 eof($in)
 ```
 
-
-<a href="https://perlmaven.com/end-of-file-in-perl">EOF - End of file in Perl</a>
-
-
-
+[EOF - End of file in Perl](https://perlmaven.com/end-of-file-in-perl)
 
 
 ## tell, seek
@@ -263,11 +248,9 @@ For our purposes a file is a line of characters.
 After a bunch of read and/or write operations we need to tell where are we on that line ?
 
 
-
 ```
- LOCATION = tell FILEHANDLE
+LOCATION = tell FILEHANDLE
 ```
-
 
 We might also want to move within that file
 

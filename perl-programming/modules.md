@@ -2,9 +2,6 @@
 {id: perl-modules}
 
 
-
-
-
 ## Lack of code reuse
 {id: lack-of-code-reuse}
 
@@ -13,22 +10,18 @@
 * Perl4 solution: create libraries
 
 
-
 ## Perl library (perl4 style)
 {id: perl-library}
+
 ![](examples/modules/library.pl)
 ![](examples/modules/perl4_app.pl)
 
-```
 The 1; at the end of the library is needed in order to make sure the
 compilation of library.pl returns a true value.
 
 Otherwise one could get an error such as this one:
-```
 
-```
-examples/modules/library.pl did not return a true value
-```
+`examples/modules/library.pl` did not return a true value
 
 
 ## Problems with Libraries
@@ -38,94 +31,73 @@ examples/modules/library.pl did not return a true value
 * Potential collision (redefine)
 * Global variables
 
-
-
 While libraries can help in code reuse they still lack many features.
-
-
 
 
 ## Prefix everything with unique name
 {id: prefix-everything}
+
 ![](examples/modules/calc_prefix_lib.pl)
 
-```
 But we always have to use this prefix. Even within the library.
-```
 
 
 ## Namespaces
 {id: perl-namespaces}
 
-
 Perl has a solution to this problem using namespaces, also called packages.
-
 
 ![](examples/modules/namespaces.pl)
 
 
-
 ## Solution with namespace
 {id: perl-namespace}
+
 ![](examples/modules/namespace.pl)
 ![](examples/modules/namespace_lib.pl)
 
-```
 Here, within the Calc namespace you don't have to use the full
 name, only when you are using it outside.
-```
 
 
 ## Modules
 {id: modules}
 
-```
 We could have placed the package keyword and the code in the main script
 or we can put several packages in the same external file but the
-best approach is to put every package in a separate file having 
+best approach is to put every package in a separate file having
 the same name as the package itself (case sensitive)
 and .pm as file extension.
 
 Then we call it a Perl Module.
-```
+
 ![](examples/modules/module.pl)
 ![](examples/modules/Calc.pm)
 
-```
-How did perl find the file Calc.pm ?
-How could we use add() without the Calc:: ?
-Why did we write "require" instead of "use"?
-```
+* How did perl find the file Calc.pm ?
+* How could we use add() without the Calc:: ?
+* Why did we write "require" instead of "use"?
 
 
 ## Packages, @INC and Namespace hierarchy
 {id: packages-and-inc}
 
-**perl -V**
+`perl -V`
 
 
 ```
-  @INC:
-    C:/strawberry/perl/lib
-    C:/strawberry/perl/site/lib
-    C:\strawberry\perl\vendor\lib
-    .
+@INC:
+  C:/strawberry/perl/lib
+  C:/strawberry/perl/site/lib
+  C:\strawberry\perl\vendor\lib
+  .
 ```
 
+`require Calc;` - Calc.pm somewhere in @INC
 
-<command>require Calc;</command> - Calc.pm somewhere in @INC
+`require Math::Calc;` - Math/Calc.pm somewhere in @INC
 
-
-
-
-<command>require Math::Calc;</command> - Math/Calc.pm somewhere in @INC
-
-
-
-
-<command>require Math::Calc::Clever;</command> - Math/Calc/Clever.pm somewhere in @INC
-
-
+`require Math::Calc::Clever;` - Math/Calc/Clever.pm somewhere in @INC
 
 
 ## use, require and import
@@ -462,17 +434,9 @@ Devel::Cover
 * Perl4 style was putting functions in library files and "require"-ing the files
 * Danger of redefining other functions
 * Perl Modules are namespaces
-* Main name space is called main, separation is done using :: so variable $x in the main script are actually called $main::x 
+* Main name space is called main, separation is done using :: so variable $x in the main script are actually called $main::x
 * Within a namespace you can use any function
 * This does not redefine any function in the other namespaces
 
-
-
-<a href="https://perlmaven.com/how-to-create-a-perl-module-for-code-reuse">How to create a Perl Module for code reuse?</a>
-
-
-
-
-
-
+[How to create a Perl Module for code reuse?](https://perlmaven.com/how-to-create-a-perl-module-for-code-reuse)
 
