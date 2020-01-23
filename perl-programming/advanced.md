@@ -2,29 +2,17 @@
 {id: advanced-slides}
 
 
-
-
-
 ## Signals and the kill function
 {id: signal-handlers}
 {i: $SIG}
 {i: %SIG}
 {i: kill}
 
+List of [signals on Linux](http://kernel.org/doc/man-pages/online/pages/man7/signal.7.html): `man -S 7 signal`
 
-List of <a href="http://kernel.org/doc/man-pages/online/pages/man7/signal.7.html">signals on Linux</a>: <command>man -S 7 signal</command>
+To send a signal use `kill SIG, LIST` (process IDs)
 
-
-
-
-To send a signal use
-<command>kill SIG, LIST</command> (process IDs)
-
-
-
-
-For example: <command>kill 9, $pid;</command>
-
+For example: `kill 9, $pid;`
 
 ![](examples/advanced/signal.pl)
 
@@ -301,12 +289,10 @@ print "@letters[split ' ', '3 5 7']\n"; # d f h
 ## splice
 {id: splice}
 {i: splice}
+
 ![](examples/advanced/splice.pl)
 
-
-<a href="https://perlmaven.com/splice-to-slice-and-dice-arrays-in-perl">Splice to slice and dice arrays in Perl</a>
-
-
+[Splice to slice and dice arrays in Perl](https://perlmaven.com/splice-to-slice-and-dice-arrays-in-perl)
 
 
 ## LIST and SCALAR context
@@ -547,15 +533,9 @@ Can't open 'data.txt' for reading: 'No such file or directory' at examples/advan
 use Modern::Perl;
 ```
 
-
 Loads strict, warnings, the features of 5.10 and the c3 Method Resolution Order
 
-
-
-
-Check out the <a href="http://www.onyxneon.com/books/modern_perl/index.html">Modern Perl book</a>
-
-
+Check out the [Modern Perl book](http://www.onyxneon.com/books/modern_perl/index.html)
 
 
 ## Perl::Critic
@@ -566,19 +546,13 @@ Check out the <a href="http://www.onyxneon.com/books/modern_perl/index.html">Mod
 
 Originally based on the Perl Best Practices by Damian Conway.
 Written by Jeffrey Thalhammer.
-Try <a href="http://perlcritic.com/">Perl::Critic</a> online.
+Try [Perl::Critic](http://perlcritic.com/) online.
 
 
-
-
-<command>perlcritic -h</command>
-
-
-
-
-<command>perlcritic -5 file_name.pl</command>
-
-
+```
+perlcritic -h
+perlcritic -5 file_name.pl
+```
 
 
 ## Perl::Tidy
@@ -586,15 +560,15 @@ Try <a href="http://perlcritic.com/">Perl::Critic</a> online.
 {i: Perl::Tidy}
 {i: perltidy}
 
-
-<command>perltidy</command>
-
-
+```
+perltidy
+```
 
 
 ## caller
 {id: caller}
 {i: caller}
+
 ![](examples/advanced/caller.pl)
 
 

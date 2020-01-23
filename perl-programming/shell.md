@@ -178,14 +178,12 @@ my $uid = getpwnam($username);
 my $gid = getgrnam($groupname);
 ```
 
-
-<a href="https://perlmaven.com/how-to-remove-copy-or-rename-a-file-with-perl">How to remove, copy or rename a file with Perl</a>
-
-
+[How to remove, copy or rename a file with Perl](https://perlmaven.com/how-to-remove-copy-or-rename-a-file-with-perl)
 
 
 ## File globbing (wildcards)
 {id: file-globbing}
+
 ![](examples/shell/file_globbing.pl)
 
 

@@ -5,18 +5,13 @@
 {id: net-server}
 {i: Net::Server}
 
-
-We are going to use the <a href="https://metacpan.org/pod/Net::Server">Net::Server</a> module to create various server processes.
-
-
+We are going to use the [Net::Server](https://metacpan.org/pod/Net::Server) module to create various server processes.
 
 
 ## Skeleton Server
 {id: skeleton-network-server}
 
-
 First we create a skeleton server that does not do anything.
-
 
 ![](examples/server/skeleton_server.pl)
 ![](examples/server/lib/SkeletonServer.pm)

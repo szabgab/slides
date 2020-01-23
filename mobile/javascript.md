@@ -5,19 +5,15 @@
 {id: jsbin}
 
 
-<a href="http://jsbin.com/"></a>
-
-
+[jsbin](http://jsbin.com/)
 
 
 ## Node.js
 {id: nodejs}
 
 
-Download from: <a href="http://nodejs.org/"></a> Node.js.
-Run as <emp>node</emp>. Ctrl-C (twice) to quit.
-
-
+Download [Node.js](http://nodejs.org/).
+Run as `node`. Ctrl-C (twice) to quit.
 
 
 On Ubuntu I had to install the <emp>nodejs</emp> package and the command is called
@@ -26,13 +22,9 @@ On Ubuntu I had to install the <emp>nodejs</emp> package and the command is call
 
 
 
-On Mac first install Homebrew <a href="http://mxcl.github.io/homebrew/"></a> and then
-<b>brew install node</b>.
-
-
+On Mac first install [Homebrew](http://mxcl.github.io/homebrew/) and then `brew install node`.
 
 {aside}
-
 Maybe you'll need to use the Git bash shell...
 {/aside}
 

@@ -2,9 +2,6 @@
 {id: applications}
 
 
-
-
-
 ## Simple uses of Perl
 {id: simple-uses-of-perl}
 
@@ -59,37 +56,34 @@ Filesystem           1K-blocks      Used Available Use% Mounted on
 ## Read Excel file
 {id: read-excel-file}
 {i: Excel}
+
 ![](examples/applications/read_excel.pl)
 
 
-<a href="https://perlmaven.com/create-an-excel-file-with-perl">How to create an Excel file with Perl.</a>
-
-
-
+[How to create an Excel file with Perl](https://perlmaven.com/create-an-excel-file-with-perl).
 
 
 ## Process file with fixed width records
 {id: fixed-width-record}
+
 ![](examples/applications/pack.pl)
 ![](examples/applications/pack.txt)
 
 
 ## Process file with multiline records
 {id: multiline-records}
+
 ![](examples/applications/config.txt)
 ![](examples/applications/process_config.pl)
 
 
-<a href="https://perlmaven.com/how-to-read-a-csv-file-using-perl">How to read a CSV file using Perl?</a>
-
-
-
-
+[How to read a CSV file using Perl?](https://perlmaven.com/how-to-read-a-csv-file-using-perl)
 
 
 ## Process multi field csv file
 {id: process-multi-field-csv-file}
 {i: csv}
+
 ![](examples/applications/fields.csv)
 ![](examples/applications/process_fields.pl)
 
@@ -140,33 +134,27 @@ entry-box and a submit button on it. the user can fill the box,
 {i: DBI}
 {i: DBD}
 {i: SQLite}
+
 ![](examples/applications/db_create.pl)
 ![](examples/applications/db.pl)
 
 
-<a href="https://perlmaven.com/simple-database-access-using-perl-dbi-and-sql">Simple Database access using Perl DBI and SQL</a>
-
-
+[Simple Database access using Perl DBI and SQL](https://perlmaven.com/simple-database-access-using-perl-dbi-and-sql)
 
 
 ## Net::LDAP
 {id: net-ldap}
 {i: LDAP}
 {i: Net::LDAP}
+
 ![](examples/applications/ldap.pl)
 
-
-<a href="https://perlmaven.com/reading-from-ldap-in-perl-using-net-ldap">Reading from LDAP in Perl using Net::LDAP</a>
-
-
+[Reading from LDAP in Perl using Net::LDAP](https://perlmaven.com/reading-from-ldap-in-perl-using-net-ldap)
 
 
 ## Tie::File
 {id: tie-file}
 {i: Tie::File}
+
 ![](examples/applications/tie.pl)
-
-
-
-
 

@@ -37,7 +37,7 @@ Try it ....
 {i: expect}
 
 
-<a href="https://metacpan.org/pod/Expect">Expect.pm</a> written by Austin Schutz and maintained by Roland Giersig
+[Expect.pm](https://metacpan.org/pod/Expect) written by Austin Schutz and maintained by Roland Giersig
 
 
 
@@ -195,11 +195,8 @@ the resulting files to some previous execution.
 {i: Expect::Simple}
 
 
-<a href="https://metacpan.org/pod/Test::Expect">Test::Expect</a> by Leon Brocard is using
-<a href="https://metacpan.org/pod/Expect::Simple">Expect::Simple</a> Diab Jerius which is a wrapper around Expect.
-
-
-
+* [Test::Expect](https://metacpan.org/pod/Test::Expect) by Leon Brocard is using
+* [Expect::Simple](https://metacpan.org/pod/Expect::Simple) Diab Jerius which is a wrapper around Expect.
 
 
 ## Capturing both STDOUT and STDERR
@@ -234,10 +231,9 @@ the resulting files to some previous execution.
 {i: Test::Snapshots}
 
 
-<a href="https://metacpan.org/pod/Test::Snapshots">Test::Snapshots</a>.
+[Test::Snapshots](https://metacpan.org/pod/Test::Snapshots).
 Testing several command line-ish executables by saving INPUT,
 command line ARGUMENTs expected OUTPUT, ERROR and EXIT code in external files.
-
 
 
 ```
@@ -258,7 +254,7 @@ bin/abc.exe.exit
 
 
 Take the bc6.pl example and similarly to bc7_diff.pl replace the way we compare data
-to use <a href="https://metacpan.org/pod/Test::Differences">Test::Differences</a>.
+to use [Test::Differences](https://metacpan.org/pod/Test::Differences).
 
 
 

@@ -2,9 +2,6 @@
 {id: perl-advanced-dbi}
 
 
-
-
-
 ## Data integrity
 {id: dbi-data-integrity}
 
@@ -132,12 +129,5 @@ In CGI scripts add the following:
 BEGIN { $ENV{DBI_TRACE}='1=/tmp/dbitrace.log'; }
 ```
 
-
-<a href="https://perlmaven.com/calculate-bank-balance-take-two-dbd-csv">Calculating bank balance, take two: DBD::CSV</a>
-
-
-
-
-
-
+[Calculating bank balance, take two: DBD::CSV](https://perlmaven.com/calculate-bank-balance-take-two-dbd-csv)
 

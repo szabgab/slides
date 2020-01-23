@@ -2,11 +2,9 @@
 {id: regex3}
 
 
-
-
-
 ## Regexp::Common
 {id: regexp-common}
+
 ![](examples/regex/regexp_common.pl)
 ![](examples/regex/regexp_common.txt)
 
@@ -27,7 +25,7 @@ if ($line =~ /\/usr\/bin\/perl/) {
 }
 
 if ($line =~ m{/usr/bin/perl}) {
-}  
+}
 ```
 
 
@@ -43,6 +41,7 @@ $line = "Apple";
 
 ## Matching quotes
 {id: matching-quotes}
+
 ![](examples/regex/sentences.txt)
 ![](examples/regex/matching_quotes.pl)
 
@@ -340,8 +339,6 @@ In the second version show all variables.
 
 The user gives the name of the file on the command line.
 
-
-
 Input file:
 
 ![](examples/regex/code_to_parse.pl)
@@ -354,39 +351,46 @@ Output:
 
 ## Solution: Split CGI
 {id: solution-split-cgi}
+
 ![](examples/regex/split_cgi.pl)
 
 
 
 ## Solution: filename/dirname
 {id: solution-basename-dirname}
+
 ![](examples/regex/file_basename.pl)
 
 
 ## Solution: Sort SNMP numbers
 {id: solution-sort-snmp-numbers}
+
 ![](examples/regex/sort_snmp_numbers.pl)
 
 
 
 ## Solution: parse hours log file and give report
 {id: solution-parse-log-file}
+
 ![](examples/regex/timelog.pl)
 
 
 ## Solution: Parse ini file
 {id: solution-parse-ini-file}
+
 ![](examples/regex/parse_ini.pl)
 ![](examples/regex/parse_ini_with_config_tiny.pl)
 
 
 ## Solution: parse perl file
 {id: solution-parse-perl-file}
+
 ![](examples/regex/print_variables.pl)
 
 
 ## Regular Expressions Cheat sheet
 {id: regular-expressions-cheat-sheet}
+
 |  Expression  |  Meaning  |
 |    a         |  Just an 'a' character  |
 |    .         |  any character except new-line  |
@@ -413,12 +417,10 @@ Output:
 |    $1, $2    |  Capture variables  |
 |    ^ $       |  Beginning and end of string anchors  |
 
-```
-See also <command>perldoc perlre</command>
-```
 
+See also `perldoc perlre`
 
-<a href="https://perlmaven.com/matching-numbers-using-perl-regex">Matching numbers using Perl regex</a>
+[Matching numbers using Perl regex](https://perlmaven.com/matching-numbers-using-perl-regex)
 
 
 

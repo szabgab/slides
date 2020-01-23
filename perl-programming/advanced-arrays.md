@@ -50,7 +50,7 @@ $year YEAR-1900         # for example 2000-1900 = 100
 
 
 gmtime is the same just gives the time as it is in Greenwich.
-<a href="https://perlmaven.com/the-year-19100">The year of 19100</a>
+[The year of 19100](https://perlmaven.com/the-year-19100)
 
 
 
@@ -72,8 +72,7 @@ while (@a) {
 }
 ```
 
-
-<a href="https://perlmaven.com/scalar-and-list-context-in-perl">Scalar and List context in Perl</a>
+[Scalar and List context in Perl](https://perlmaven.com/scalar-and-list-context-in-perl)
 
 
 
@@ -219,13 +218,10 @@ Does it matter?
 {i: cmp}
 {i: &lt;=&gt;}
 {i: spaceship operator}
+
 ![](examples/arrays/sort.pl)
 
-
-<a href="https://perlmaven.com/sorting-arrays-in-perl">Sorting arrays in Perl</a>
-
-
-
+[Sorting arrays in Perl](https://perlmaven.com/sorting-arrays-in-perl)
 
 
 ## Ternary operator
@@ -376,24 +372,19 @@ Expected output from sample file
 {id: list-util}
 
 
-<a href="https://metacpan.org/pod/List::Util">List::Util</a> provides functions such as  
-
-
+[List::Util](https://metacpan.org/pod/List::Util) provides functions such as
 
 * max
 * min
 * sum
 
-
-
-It resides in a distribution called <a href="https://metacpan.org/release/Scalar-List-Utils">Scalar-List-Utils</a>
-
-
+It resides in a distribution called [Scalar-List-Utils](https://metacpan.org/release/Scalar-List-Utils)
 
 
 ## Advanced: Multi dimensional array
 {id: multi-dimensional-array}
 {i: \@}
+
 ![](examples/arrays/matrix.pl)
 ![](examples/arrays/matrix.out)
 

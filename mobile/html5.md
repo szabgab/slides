@@ -58,17 +58,13 @@ Modernizr.inputtypes.TYPE where TYPE is one of the names mentioned previously.
 
 
 
-<a href="http://modernizr.com/"></a>
-is a JavaScript library that detects HTML5 and CSS3 features in the user's browser.
+[modernizr](http://modernizr.com/) is a JavaScript library that detects HTML5 and CSS3 features in the user's browser.
 
 
 ![](examples/html_modernizr.html)
 
 
-See also <a href="http://diveintohtml5.info/detect.html"></a>
-
-
-
+See also [detect](http://diveintohtml5.info/detect.html)
 
 
 ## HTML 5 as recognized by Modernizr
@@ -126,11 +122,7 @@ All wrapped in &lt; and &gt; signs.
 * time
 * mark
 
-
-
-See also <a href="http://diveintohtml5.info/semantics.html"></a>
-
-
+See also [semantics](http://diveintohtml5.info/semantics.html)
 
 
 ## HTML5 Local storage

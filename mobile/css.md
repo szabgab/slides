@@ -48,9 +48,7 @@
 ![](examples/css/selectors.css)
 
 
-List of selectors: <a href="http://www.w3.org/TR/CSS2/selector.html"></a>
-
-
+[List of selectors](http://www.w3.org/TR/CSS2/selector.html)
 
 
 ## div and span
@@ -58,7 +56,7 @@ List of selectors: <a href="http://www.w3.org/TR/CSS2/selector.html"></a>
 
 * div  (block level)
 * span (inline)
-* <a href="http://en.wikipedia.org/wiki/Span_and_div"></a>
+* [span and div](http://en.wikipedia.org/wiki/Span_and_div)
 
 ![](examples/css/div-and-span.html)
 
@@ -146,27 +144,24 @@ using the min-width and max-width fields, but you can also use the others listed
 
 
 Of course you can also use it to check the media type: screen, print, etc.
-<a href="http://css-tricks.com/css-media-queries/"></a>
-
-
+[css media queries](http://css-tricks.com/css-media-queries/)
 
 
 ## Resize image
 {id: css-media-query-resize-image}
+
 ![](examples/css/media-query-images-resizing.html)
 ![](examples/css/images-resizing.css)
 
 
 ## Replace image
 {id: css-media-query-replace-image}
+
 ![](examples/css/replace-image.html)
 ![](examples/css/replace-image.css)
 
 
-<a href="http://css-tricks.com/css-image-replacement/"></a>
-
-
-
+[css image replacement](http://css-tricks.com/css-image-replacement/)
 
 
 ## Colors
@@ -181,7 +176,6 @@ Of course you can also use it to check the media type: screen, print, etc.
 
 More standardization
 
-
 * Rounded Corners (easier)
 * Background Decoration
 * New Colors schemes
@@ -191,17 +185,10 @@ More standardization
 * Media Queries
 
 
-
 ## Rounded corners
 {id: rounded-corners}
+
 ![](examples/css/rounded-corners.html)
 
-
-<a href="http://css-tricks.com/snippets/css/rounded-corners/"></a>
-
-
-
-
-
-
+[rounded corners](http://css-tricks.com/snippets/css/rounded-corners/)
 

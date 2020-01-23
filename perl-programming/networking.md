@@ -154,7 +154,7 @@ See also Net::SSH::Perl.
 {id: exercise-search-on-financial-times}
 
 
-Go to the <a href="http://www.ft.com/">Financial Times</a> and search for the word "perl".
+Go to the [Financial Times](http://www.ft.com/) and search for the word "perl".
 Print out how many items match.
 
 

@@ -2,9 +2,6 @@
 {id: moose}
 
 
-
-
-
 ## Moose Constructor
 {id: moose-person-00}
 ![](examples/Moose/person00/script/person.pl)
@@ -181,8 +178,6 @@ They won't be associated with any of the objects. Methods of the class will be
 able to access them.
 
 
-
-
 ## Special actions during object construction
 {id: moose-special-constructions}
 
@@ -197,24 +192,13 @@ sub BUILD {
 ## Singleton in Moose
 {id: moose-singleton}
 
-
 MooseX::Singleton;
-
-
-
 
 A game - the main class or the board is a singleton
 
-
-
-
 Configuration
 
-
-
-
 Database access
-
 
 ![](examples/Moose/singleton/t/01-space.t)
 ![](examples/Moose/singleton/lib/Games/Spacefight.pm)
@@ -223,17 +207,10 @@ Database access
 ## Destructor in Moose
 {id: moose-destructor}
 
-
 Usually you don't need to implement a destructor in Perl.
 but in case you do DESTROY is the name in standard perl
 and DEMOLISH in Moose.
 
 
-
-
-<a href="https://perlmaven.com/object-oriented-perl-using-moose">Object Oriented Perl using Moose</a>
-
-
-
-
+[Object Oriented Perl using Moose](https://perlmaven.com/object-oriented-perl-using-moose)
 

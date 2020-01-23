@@ -5,11 +5,9 @@
 {id: test-related-cpan-modules}
 
 
-<a href="http://metacpan.org/pod/Task::Test">Task::Test</a>
+[Task::Test](http://metacpan.org/pod/Task::Test)
 A collection of testing related modules with some explanation
 on each one of them.
-
-
 
 * Test  - this is obsolete
 * Test::Tutorial
@@ -17,7 +15,6 @@ on each one of them.
 * Test::More
 * Test::Harness
 * Test::DatabaseRow
-
 
 
 ## Generic modules
