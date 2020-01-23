@@ -11,25 +11,22 @@ Normally you execute 'bc' from the command line and then you type in
 your calculations. Pressing ENTER will do the calculation.
 
 
-
-
 ## Normal operation
 {id: bc-normal-operation}
 
 ```
-<command>$ bc</command>
+$ bc
 bc 1.06
 Copyright 1991-1994, 1997, 1998, 2000 Free Software Foundation, Inc.
 This is free software with ABSOLUTELY NO WARRANTY.
 For details type `warranty'.
-<command>23+7</command>
+23+7
 30
-<command>quit</command>
+quit
 $
 ```
 
 Try it ....
-
 
 
 ## Expect.pm
@@ -38,8 +35,6 @@ Try it ....
 
 
 [Expect.pm](https://metacpan.org/pod/Expect) written by Austin Schutz and maintained by Roland Giersig
-
-
 
 * Provides a way to describe user behavior in a command line environment.
 * Can send information as if it was typed on the keyboard.
@@ -56,10 +51,9 @@ Try it ....
 * Anything usually a person would do on the command line.
 
 
-
-
 ## Simple computation - adding two values
 {id: expect-simple-computation}
+
 ![](examples/bc/bc1.pl)
 
 * raw_pty turns off echo
@@ -77,7 +71,7 @@ Try it ....
 {id: expect-simple-computation-result}
 
 ```
-<command>$ perl examples/bc/bc1.pl</command>
+$ perl examples/bc/bc1.pl
 ```
 ![](examples/bc/bc1.pl.out)
 
@@ -98,7 +92,7 @@ for the correct responses or the error messages. We'd prefer just see ok or not 
 {id: expect-reduced-output}
 
 ```
-<command>$ perl examples/bc/bc4.pl</command>
+$ perl examples/bc/bc4.pl
 ```
 ![](examples/bc/bc4.pl.out)
 
@@ -107,7 +101,7 @@ for the correct responses or the error messages. We'd prefer just see ok or not 
 {id: expect-bail-out}
 
 ```
-<command>$ perl examples/bc/bc41.pl</command>
+$ perl examples/bc/bc41.pl
 ```
 ![](examples/bc/bc41.pl)
 
@@ -126,7 +120,7 @@ We can then setup lot's of tests and run them through one invocation of bc.
 {id: expect-more-than-one-test-output}
 
 ```
-<command>$ perl examples/bc/bc5.pl</command>
+$ perl examples/bc/bc5.pl
 ```
 ![](examples/bc/bc5.pl.out)
 

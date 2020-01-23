@@ -8,7 +8,7 @@
 * Check if the HTML is correct.
 * Check if elements of a page are in place.
 * Follow links.
-* Click on the link to the registration form, 
+* Click on the link to the registration form,
 * Fill in the fields (you'll have to play with this and fill in the fields with good values, bad values, find the edge cases etc.)
 * White box: Check if the changes also took place in the backend. (e.g. in the database.)
 * Check if you get back the correct response page.
@@ -24,10 +24,10 @@
 
 {aside}
 
-It is not enough to test the web application as it is. 
-Users can actually send any request to your web server. 
+It is not enough to test the web application as it is.
+Users can actually send any request to your web server.
 Even if the client side part of your web application (written in HTML/CSS/Javascript )
-behaves well, some people will try to send requests that would not be generated 
+behaves well, some people will try to send requests that would not be generated
 by your application. Sometimes that will happen by mistake - copy-pasting a URL
 incorrectly. Sometime on purpose, when trying to attack your application.
 {/aside}
@@ -56,24 +56,14 @@ invalid HTTP headers.
 * [Selenium](http://docs.seleniumhq.org/)
 
 
-
 ## Small test HTTP server
 {id: test-http-server}
-
 
 We are using a small portable HTTP server built using HTTP::Daemon
 which is part of libwww-perl for the examples.
 
-
-
-
-You can also run it by typing
-<command>$ perl examples/www/server/server.pl</command>
-or type the following to get help
-<command>$ perl examples/www/server/server.pl --help</command>
-
-
-
+You can also run it by typing `$ perl examples/www/server/server.pl`
+or type the following to get help `$ perl examples/www/server/server.pl --help`
 
 
 ## Fetching a static page
@@ -86,7 +76,7 @@ Fetch a page and check if there is response at all.
 ```
 
 ```
-$ perl static.t          
+$ perl static.t
 1..1
 ok 1 - There is a response
 ```
@@ -94,14 +84,13 @@ ok 1 - There is a response
 
 ## Fetching a not-existing static page
 {id: test-error-message}
+
 ![](examples/www/static_bad.t)
 
-```
 Fetch a page and check if there is response.
-```
 
 ```
-$ perl static_bad.t 
+$ perl static_bad.t
 1..1
 not ok 1 - There is a response
 #     Failed test (static_bad.t at line 10)
@@ -109,15 +98,15 @@ not ok 1 - There is a response
 ```
 
 
-
 ## Checking good HTML
 {id: html-lint-success}
 {i: HTML::Lint}
 {i: Test::HTML::Lint}
+
 ![](examples/www/static_lint.t)
 
 ```
-$ perl static_lint.t 
+$ perl static_lint.t
 1..2
 ok 1 - There is a response
 ok 2 - HTML OK
@@ -126,20 +115,21 @@ ok 2 - HTML OK
 
 ## Checking bad HTML
 {id: html-lint-failor}
+
 ![](examples/www/static_lint_bad.t)
 
-```
-```
 ![](examples/www/static_lint_bad.t.out)
 
 
 ## What is this bad HTML ?
 {id: bad-html}
+
 ![](examples/www/server/html/bad.html)
 
 
 ## HTML::Tidy and Test::HTML::Tidy
 {id: test-html-tidy}
+
 ![](examples/www/static_tidy.t)
 
 
@@ -153,8 +143,7 @@ $ perl examples/www/static_tidy.t
 ## Test using W3C validator
 {id: test-w3c}
 
-[W3C validator](http://validate.w3c.org/)
-
+* [W3C validator](http://validate.w3c.org/)
 
 * Module to access that web site.
 * Module to access the same service installed on a local web server.
@@ -164,11 +153,10 @@ $ perl examples/www/static_tidy.t
 ## Use a local copy of the W3C validator
 {id: test-w3c-local}
 
-```
 On Ubuntu install the following packages using
 sudo aptitude install w3c-dtd-xhtml w3c-linkchecker w3c-markup-validator
 
-<command>dpkg -L w3c-markup-validator</command>
+`dpkg -L w3c-markup-validator`
 shows that the sample apache configuration file is at
 /etc/w3c/w3c-markup-validator-apache-perl.conf
 and the executable is at /usr/lib/cgi-bin/check
@@ -178,7 +166,7 @@ Change /etc/hosts w3c.local to resolve to 127.0.0.1
 Copy the Apache configuration file and wrap it with a virtual host configuration.
 
 Then access the page via http://w3c.local/w3c-markup-validator/
-```
+
 ![](examples/www/w3c.conf)
 ![](examples/www/w3c_validate.pl)
 
@@ -186,11 +174,9 @@ Then access the page via http://w3c.local/w3c-markup-validator/
 ## LWP::Simple and LWP
 {id: lwp2}
 
-```
 LWP::Simple is, well, simple.
 
 LWP on the other hand enables you to do a lot of things
-```
 
 * Setting the User Agent
 * Support for cookies
@@ -199,23 +185,18 @@ LWP on the other hand enables you to do a lot of things
 * Parse HTML
 * Write robots
 
-
-```
 But is it not simple.
-```
-
 
 
 ## WWW::Mechanize
 {id: www-mechanize2}
 
-```
 Is simple, and very powerful (but does not support JavaScript).
-```
 
 
 ## Web based Calculator with WWW::Mechanize
 {id: www-mechanize-calculator}
+
 ![](examples/www/web_calc.pl)
 
 Output:
@@ -225,6 +206,7 @@ Output:
 
 ## Testing with WWW::Mechanize
 {id: testing-with-www-mechanize}
+
 ![](examples/www/web_calc.t)
 
 ```
@@ -235,6 +217,7 @@ Output:
 
 ## Test::WWW::Mechanize
 {id: test-www-mechanize}
+
 ![](examples/www/web_calc_test.t)
 
 ```
@@ -243,11 +226,10 @@ Output:
 ![](examples/www/web_calc_test.t.out)
 
 
-
 ## Login to Act using Mechanize
 {id: act-mechanize}
-![](examples/www/mechanize_act.pl)
 
+![](examples/www/mechanize_act.pl)
 
 
 ## More things to test
@@ -258,7 +240,6 @@ Output:
 * or after timeout expired
 * logging-in, check good/bad passwords
 * Upon unsuccessful login, see if the return page does NOT contain the password
-
 
 
 ## Test without server Test::WWW::Mechanize::PSGI
@@ -281,9 +262,4 @@ PSGI-based applications can be tested without even launching a server.
 * Test only the data as it was sent
 * Use a real browser (e.g. driven by [WWW::Mechanize::Firefox](https://metacpan.org/pod/WWW::Mechanize::Firefox) that needs [MozRepl](http://wiki.github.com/bard/mozrepl/) )
 * Use Selenium
-
-
-
-
-
 

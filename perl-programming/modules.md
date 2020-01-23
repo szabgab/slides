@@ -118,12 +118,8 @@ BEGIN {
 }
 ```
 
-
-<command>use</command> is executed at compile time, just as a BEGIN block.
-<command>require</command> is executed at run time so if we don't enclose it
-in a BEGIN block it will happen later.
-
-
+* `use` is executed at compile time, just as a `BEGIN` block.
+* `require is executed at run time so if we don't enclose it in a `BEGIN` block it will happen later.
 
 ```
 if ($holiday) {
@@ -131,7 +127,7 @@ if ($holiday) {
 }
 ```
 
-The above does not make much sense as the <command>use</command> will load the module
+The above does not make much sense as the `use` will load the module
 at compile time regardless of day.
 
 
@@ -349,10 +345,9 @@ make
 make test
 make manifest
 make dist
-
-When installing you'll have to type <command>make install</command>
-instead of the <command>make manifest</command> and the <command>make dist</command>
 ```
+
+When installing you'll have to type `make install` instead of the `make manifest` and the `make dist`.
 
 
 ## Packaging with Build.PL
@@ -364,14 +359,14 @@ perl Build
 perl Build test
 perl Build manifest
 perl Build dist
-
-When installing you'll have to type <command>perl Build install</command>
-instead of the <command>perl Build manifest</command> and the <command>perl Build dist</command>.
 ```
+
+When installing you'll have to type `perl Build install` instead of the `perl Build manifest` and the `perl Build dist`.
 
 
 ## A test file
 {id: writing-unit-tests}
+
 ![](examples/modules/app/t/01-load.t)
 
 
@@ -408,7 +403,6 @@ Devel::Cover
 ```
 
 
-
 ## Exercises: Multiply numbers
 {id: exercise-multiply-numbers2}
 
@@ -421,9 +415,9 @@ Devel::Cover
 * Create the files necessary for distributions and make sure you can generate the tar.gz file.
 
 
-
 ## Solution: Multiply numbers
 {id: solution-multiply-numbers2}
+
 ![](examples/modules/library_multiply.pl)
 
 

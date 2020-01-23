@@ -45,7 +45,7 @@ $SIG{$name} = 'DEFAULT';            # to reset to the default behavior
 {id: exercise-catch-ctrl-c}
 
 
-Take the <command>examples/advanced/catch_ctr_c.pl</command>
+Take the `examples/advanced/catch_ctr_c.pl`
 and change it so when the user presses Ctrl-C the counting
 stops and the user is asked if she really wants
 to terminate the program. (y/n).
@@ -148,10 +148,11 @@ sub {} is an anonymous subroutine we will discuss later
 {i: diagnostics}
 
 ```
-<command>perl examples/advanced/code_with_warnings.pl 2&gt; err.txt</command>
-<command>splain err.txt</command>
-The output looks like this:
+perl examples/advanced/code_with_warnings.pl 2> err.txt
+splain err.txt
 ```
+
+The output looks like this:
 
 ```
 Use of uninitialized value $total in addition (+) at
@@ -172,9 +173,9 @@ Use of uninitialized value $total in addition (+) at
 
 
 Alternatively you could also insert the following in your code:
-<command>use diagnostics;</command>
+`use diagnostics;`
 to get the explanations for every warning.
-See also <command>perldoc perldiag</command> for a detailed explanation of each warning and error.
+See also `perldoc perldiag` for a detailed explanation of each warning and error.
 
 
 
@@ -302,7 +303,7 @@ print "@letters[split ' ', '3 5 7']\n"; # d f h
 {i: context}
 
 
-See the behavior of <command>localtime()</command>.
+See the behavior of `localtime()`.
 
 
 ![](examples/advanced/localtime.pl)
@@ -333,12 +334,10 @@ false  if it was called in scalar context like $x = f(); or if($f()) {...}
 
 ## wantarray example
 {id: count-and-sum}
+
 ![](examples/advanced/count_and_sum.pl)
 
-
-See also <command>Want</command> and <command>Contextual::Return</command> for even more options.
-
-
+See also `Want` and `Contextual::Return` for even more options.
 
 
 ## Unique values
