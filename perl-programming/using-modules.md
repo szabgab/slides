@@ -2,10 +2,6 @@
 {id: using-perl-modules}
 
 
-
-
-
-
 ## Using modules exporting functions
 {id: using-modules-exporting-functions}
 
@@ -14,32 +10,24 @@ use Cwd;
 my $path = cwd;
 ```
 
-
 Probably better this way,
 so the reader will know where each function comes from
 and we reduce the risk of redefining other functions by importing exactly the
 functions we want.
-
-
 
 ```
 use Cwd ('cwd');
 my $path = cwd;
 ```
 
-
 also written as
-
-
 
 ```
 use Cwd qw(cwd);
 my $path = cwd;
 ```
 
-
 You can also make sure not to import anything and the use fully qualified names.
-
 
 
 ```
@@ -195,9 +183,9 @@ Debian/Ubuntu:
 
 
 ```
-<command>aptitude search mechanize | grep perl</command>
+aptitude search mechanize | grep perl
 
-<command>sudo aptitude install libwww-mechanize-perl</command>
+sudo aptitude install libwww-mechanize-perl
 ```
 
 
@@ -206,9 +194,9 @@ Fedora / RedHat
 
 
 ```
-<command>yum search Mechanize | grep perl</command>
+yum search Mechanize | grep perl
 
-<command>yum install WWW-Mechanize</command>
+yum install WWW-Mechanize
 ```
 
 
@@ -217,7 +205,7 @@ ActivePerl:
 
 
 ```
-<command>ppm install WWW::Mechanize</command>
+ppm install WWW::Mechanize
 ```
 
 
@@ -498,7 +486,7 @@ Follow the instruction in the documentation of [local::lib](http://metacpan.org/
 
 ```
 Install the Acme::EyeDrops module from CPAN and write a script
-to draw a camel. As you are not root, you might need to install it in 
+to draw a camel. As you are not root, you might need to install it in
 a local subdirectory.
 
 Create a simple script that does some simple computation.
@@ -509,29 +497,26 @@ Run the file containing the camel using Perl.
 ```
 
 
-
 ## Exercise: Read Excel file
 {id: exercise-read-excel-file}
 
 
 There are two Excel files included, read the data from the two files.
 examples/spreadsheet.xls
-examples/person.xls   
+examples/person.xls
+
 <copy file="examples/cpan/spreadsheet.xls" />
 <copy file="examples/cpan/person.xls" />
 
 
-
-
 ## Solution: Module installation
 {id: solution-module-installation}
+
 ![](examples/cpan/acme_camel.pl)
 
 
 ## Solution: Read Excel file
 {id: solution-parse-excel-file}
+
 ![](examples/cpan/read_excel.pl)
-
-
-
 

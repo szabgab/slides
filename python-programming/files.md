@@ -6,11 +6,13 @@
 {i: open}
 {i: close}
 {i: with}
+
 ![](examples/files/open_and_read_with.py)
 
 
 ## Filename on the command line
 {id: filename-on-the-command-line}
+
 ![](examples/files/single.py)
 
 ```
@@ -166,18 +168,13 @@ and use it as the list of colors in the earlier example where we prompted for a 
 ![](examples/files/colors.txt)
 
 Extend the previous example by letting the user provide the name of the file on the command line:
-<command>python color.py examples/files/color.txt</command>
-
-
+`python color.py examples/files/color.txt`
 
 
 ## Exercise: ROT13
 {id: exercise-rot13}
 
-
 Implement rot13: given a string return the rot13 of it. Given a file, replace with the rot13 of it.
-
-
 
 
 ## Exercise: Combine lists
@@ -192,30 +189,33 @@ Write a script that takes the two files and combines them adding the values for 
 ![](examples/files/c.txt)
 
 
-
 ## Solution: count numbers
 {id: solution-count-numbers}
-![](examples/files/count_numbers.py)
 
+![](examples/files/count_numbers.py)
 
 
 ## Solution: strip newlines
 {id: solution-strip-newlines}
+
 ![](examples/files/strip_newlines.py)
 
 
 ## Solution: color selector
 {id: solution-file-color-selector}
+
 ![](examples/files/colors.py)
 
 
 ## Solution: Combine lists
 {id: solution-combine-lists}
+
 ![](examples/files/combine_lists.py)
 
 
 ## Read text file
 {id: read-file}
+
 ![](examples/files/read_file.py)
 
 
@@ -223,27 +223,23 @@ Write a script that takes the two files and combines them adding the values for 
 {id: open-and-read}
 
 {aside}
-
 In some code you will encounter the following way of opening files.
 This was used before "with" was added to the language.
 It is not a recommended way of opening a file as you might easily forget
 to call "close" and that might cause trouble. For example you might loose data.
 Don't do that.
 {/aside}
+
 ![](examples/files/open_and_read.py)
 
 
 ## Direct access of a line in a file
 {id: direct-access-of-a-line}
+
 ![](examples/files/fh_access.py)
 ![](examples/files/fh_access.err)
 
 {aside}
-
 This does NOT work because files can only be accessed sequentially.
 {/aside}
-
-
-
-
 
