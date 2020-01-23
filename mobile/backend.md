@@ -33,10 +33,7 @@ Most importantly for us, the App-Name/lib/App/Name.pm
 ## Same origin policy
 {id: same-origin-policy}
 
-
-Turn off same-origin-policy in Chrome
-<a href="http://stackoverflow.com/questions/3102819/chrome-disable-same-origin-policy"></a>
-
+[Turn off same-origin-policy in Chrome](http://stackoverflow.com/questions/3102819/chrome-disable-same-origin-policy)
 
 
 ```
@@ -51,10 +48,5 @@ Mac:
 open /Applications/Google\ Chrome.app/ --args --disable-web-security
 ```
 
-
-In Firefox: <a href="https://addons.mozilla.org/en-us/firefox/addon/forcecors/"></a>
-
-
-
-
+[In Firefox](https://addons.mozilla.org/en-us/firefox/addon/forcecors/)
 

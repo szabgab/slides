@@ -6,39 +6,38 @@
 ## Resources
 {id: mobile-resources}
 
-* <a href="http://git-scm.com/"></a> git-scm.com the home of Git.
-* <a href="http://learnlayout.com/"></a> Learn CSS Layout
-* <a href="http://css-tricks.com/"></a> CSS Tricks
-* <a href="http://diveintohtml5.info/"></a> Dive Into HTML5
-* <a href="http://jsfiddle.net/"></a> jsFiddle to play online with HTML/CSS/JS
-* <a href="http://www.barelyfitz.com/screencast/html-training/css/positioning/"></a> Learn CSS Positioning in Ten Steps
-* <a href="http://mediaqueri.es/"></a> Examples for responsive design using Media Queries
-* <a href="https://developers.google.com/chrome-developer-tools/docs/videos"></a> Videos how to use Chrome for development
-* <a href="http://eloquentjavascript.net/"></a> Eloquent JavaScript
-* <a href="http://javascript.crockford.com/"></a> JavaScript: The Good Parts
-* <a href="https://canvas-designer.appspot.com/"></a> HTML5 canvas to draw objects.
-
+* [git-scm.com the home of Git](http://git-scm.com/).
+* [Learn CSS Layout](http://learnlayout.com/)
+* [CSS Tricks](http://css-tricks.com/)
+* [Dive Into HTML5](http://diveintohtml5.info/)
+* [jsFiddle](http://jsfiddle.net/ to play online with HTML/CSS/JS)
+* [Learn CSS Positioning in Ten Steps](http://www.barelyfitz.com/screencast/html-training/css/positioning/)
+* [Examples for responsive design using Media Queries](http://mediaqueri.es/)
+* [Videos how to use Chrome for development](https://developers.google.com/chrome-developer-tools/docs/videos)
+* [Eloquent JavaScript](http://eloquentjavascript.net/)
+* [JavaScript: The Good Parts](http://javascript.crockford.com/)
+* [HTML5 canvas to draw objects.](https://canvas-designer.appspot.com/)
 
 
 ## Downloads
 {id: downloads}
 
-* <a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html"></a> Java SE JDK
-* <a href="http://developer.android.com/sdk/index.html"></a> Android SDK
-* <a href="http://phonegap.com/"></a> PhoneGap
+* [Java SE JDK](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
+* [Android SDK](http://developer.android.com/sdk/index.html)
+* [PhoneGap](http://phonegap.com/)
 
 
 
 ## More frameworks
 {id: more-frameworks}
 
-* AngularJS <a href="http://angularjs.org/"></a>
-* Backbone <a href="http://backbonejs.org/"></a>
-* Mustache <a href="http://mustache.github.io/"></a>
-* Ember    <a href="http://emberjs.com/"></a>
-* Knockout <a href="http://knockoutjs.com/"></a>
-* Bill Humphries Perl Meets Modern Web UI <a href="http://github.com/whump/yapcna2013"></a>
-* Initializr <a href="http://www.initializr.com/"></a>
+* [AngularJS](http://angularjs.org/)
+* [Backbone](http://backbonejs.org/)
+* [Mustache](http://mustache.github.io/)
+* [Ember](http://emberjs.com/)
+* [Knockout](http://knockoutjs.com/)
+* [Bill Humphries Perl Meets Modern Web UI](http://github.com/whump/yapcna2013)
+* [Initializr](http://www.initializr.com/)
 
 
 
@@ -75,16 +74,15 @@ Create a back-end where users can register and where they can save their data.
 ## My Projects
 {id: my-projects}
 
-* Act Mobile  <a href="https://github.com/szabgab/act-mobile"></a>
-* Act Mobile Backend  <a href="https://github.com/szabgab/act-mobile-backend"></a>
-* Regex Maven <a href="http://regexmaven.com/"></a>
-* Memmorize Words <a href="https://github.com/szabgab/memorize-words"></a>
-* mobile-examples  <a href="https://github.com/szabgab/mobile-examples"></a>
-* mobile-examples-backend  <a href="https://github.com/szabgab/mobile-examples-backend"></a>
+* [Act Mobile](https://github.com/szabgab/act-mobile)
+* [Act Mobile Backend](https://github.com/szabgab/act-mobile-backend)
+* [Regex Maven](http://regexmaven.com/)
+* [Memmorize Words](https://github.com/szabgab/memorize-words)
+* [mobile-examples](https://github.com/szabgab/mobile-examples)
+* [mobile-examples-backend](https://github.com/szabgab/mobile-examples-backend)
 
 
 Feel free to dig around.
-
 
 
 ## Thank You

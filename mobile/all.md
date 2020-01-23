@@ -170,37 +170,34 @@ Galaxy Tab 2              (10.1)    1280x800
 ## Development Environments
 {id: development-environment}
 
-* Dashcode (Part of Apple's Xcode) <a href="http://en.wikipedia.org/wiki/Dashcode"></a>
-* Aptana Studio (Eclipse based, Open Source) <a href="http://www.aptana.com/"></a>
-* Webstorm (IntelliJ IDEA based, $$$) <a href="http://www.jetbrains.com/webstorm/"></a>
+* [Dashcode](http://en.wikipedia.org/wiki/Dashcode) (Part of Apple's Xcode)
+* [Aptana Studio](http://www.aptana.com/) (Eclipse based, Open Source)
+* [Webstorm](http://www.jetbrains.com/webstorm/) (IntelliJ IDEA based, $$$)
 * Vim
 * Emacs
-
 
 
 ## Debugging Applications - Desktop
 {id: debugging-applications-desktop}
 
-* Use Safari/Chrome inspector tools to debug (Free) <a href="https://developers.google.com/chrome-developer-tools/"></a>
+* Use Safari/Chrome inspector tools to debug (Free) [Chrome developer tools](https://developers.google.com/chrome-developer-tools/)
 * Use iPhone/Android Emulator (Free)
-* Use Ripple to test your hybrid app from Chrome (Open Source) <a href="http://ripple.incubator.apache.org/"></a>
-* BrowserStack (Live, Web-Based Browser Testing, $$$) <a href="http://www.browserstack.com/"></a>
-* Browserling (Interactive cross-browser Testing, $$$) <a href="https://browserling.com/"></a>
-
+* Use [Ripple](http://ripple.incubator.apache.org/) to test your hybrid app from Chrome (Open Source)
+* [BrowserStack](http://www.browserstack.com/) (Live, Web-Based Browser Testing, $$$)
+* [Browserling](https://browserling.com/) (Interactive cross-browser Testing, $$$)
 
 
 ## Debugging Applications - Device
 {id: debugging-applications-device}
 
-* Use weinre for on device inspection (Open source) <a href="http://people.apache.org/~pmuellr/weinre/"></a>
-
+* Use [weinre](http://people.apache.org/~pmuellr/weinre/) for on device inspection (Open source)
 
 
 ## Deplyoing Applications
 {id: deploying-applications}
 
 * For online apps every web server will do
-* For offline apps, Adobe PhoneGap (Open Source) <a href="https://phonegap.com/"></a>, (service) <a href="https://build.phonegap.com/"></a>
+* For offline apps, [Adobe PhoneGap](https://phonegap.com/) (Open Source), [service](https://build.phonegap.com/)
 * Before deployment use a build script to minimize js/css/html files.
 
 
@@ -209,9 +206,8 @@ Galaxy Tab 2              (10.1)    1280x800
 ## HTML starter toolkits
 {id: html-starter-toolkits}
 
-* HTML Boilerplate <a href="http://html5boilerplate.com/"></a>
-* Twitter Bootstrap <a href="http://twitter.github.io/bootstrap/"></a>
-
+* [HTML Boilerplate](http://html5boilerplate.com/)
+* [Twitter Bootstrap](http://twitter.github.io/bootstrap/)
 
 
 ## HTML 5 Boilerplate
@@ -220,14 +216,13 @@ Galaxy Tab 2              (10.1)    1280x800
 * A ready made starter for html5 mobile apps
 * Cross-platform compatible (Android, iOS, Blackberry, Symbian)
 * Supports all the devices and overcomes many glitches
-* <a href="http://html5boilerplate.com/mobile"></a> HTML 5 Boilerplate
-
+* [HTML 5 Boilerplate](http://html5boilerplate.com/mobile)
 
 
 ## Twitter Bootstrap
 {id: twitter-bootstrap}
 
-* Customizable <a href="http://twitter.github.io/bootstrap/"></a>
+* Customizable [Bootstra](http://twitter.github.io/bootstrap/)
 * Used by the Perl Maven site ...
 
 
@@ -248,8 +243,7 @@ Galaxy Tab 2              (10.1)    1280x800
 * Most hyped mobile framework today
 * Built on top of jQuery (slow, big)
 * Themed UI Widgets
-* <a href="http://jquerymobile.com/"></a> JQuery Mobile
-
+* [JQuery Mobile](http://jquerymobile.com/)
 
 
 ## Sencha Touch
@@ -258,18 +252,12 @@ Galaxy Tab 2              (10.1)    1280x800
 * Stable and mature mobile framework
 * Works best on iPhone and Android
 * Commercial framework ($$$)
-* <a href="http://www.sencha.com/products/touch"></a> Sencha Touch
-
+* [Sencha Touch](http://www.sencha.com/products/touch)
 
 
 ## jqMobi (Intel App Framework)
 {id: jqmobi}
 
-* jqMobi <a href="http://www.jqmobi.com/"></a>
-* Intel App Framework <a href="http://app-framework-software.intel.com/"></a>
-
-
-
-
-
+* [jqMobi](http://www.jqmobi.com/)
+* [Intel App Framework](http://app-framework-software.intel.com/)
 

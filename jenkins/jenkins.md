@@ -34,7 +34,7 @@
 {id: jenkins-install}
 
 
-Follow the instructions on the <a href="https://jenkins.io/download/">Download Jenkins</a> page.
+Follow the instructions on the [Download Jenkins](https://jenkins.io/download/) page.
 
 
 

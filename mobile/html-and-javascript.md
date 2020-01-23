@@ -36,7 +36,7 @@ The DOM is a hierarchy of objects.
 * Interface Events: load, scroll. resize
 * Form: select, change, submit, reset, focus, blur
 * Touch: touchstart, touchend, touchmove, touchenter, touchleave, touchcancel
-* <a href="http://en.wikipedia.org/wiki/DOM_Events"></a>
+* [DOM Events](http://en.wikipedia.org/wiki/DOM_Events)
 
 
 

@@ -57,16 +57,11 @@
 * Availability
 * Partition Tolerance
 
-
-
-<a href="http://en.wikipedia.org/wiki/CAP_theorem">CAP Theorem</a>.
-
+[CAP Theorem](http://en.wikipedia.org/wiki/CAP_theorem)
 
 
 * Pick any 2.
 * In the face of networks split you need to decide if you prefer Availability or Consistency.
-
-
 
 
 ## ACID
@@ -114,11 +109,7 @@ With scaling it might not work at all.
 * Update = update
 * Delete = remove
 
-
-
-<a href="http://en.wikipedia.org/wiki/Create,_read,_update_and_delete">CRUD</a>
-
-
+[CRUD](http://en.wikipedia.org/wiki/Create,_read,_update_and_delete)
 
 
 ## Features
