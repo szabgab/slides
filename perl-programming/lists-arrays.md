@@ -51,15 +51,11 @@ Special case, range operator:
 
 
 ```
-(1 .. 10)                # same as 
+(1 .. 10)                # same as
 (1,2,3,4,5,6,7,8,9,10)
 ```
 
-
-
-<a href="https://perlmaven.com/perl-arrays">Perl Arrays</a>
-
-
+[Perl Arrays](https://perlmaven.com/perl-arrays)
 
 
 ## List Assignment
@@ -116,10 +112,7 @@ Brown
 White
 ```
 
-
-<a href="https://perlmaven.com/for-loop-in-perl">Perl for loop explained with examples</a>
-
-
+[Perl for loop explained with examples](https://perlmaven.com/for-loop-in-perl)
 
 
 ## Array Assignment
@@ -244,14 +237,9 @@ foreach my $i (1..10) {
 {id: module-documentations}
 
 
-<a href="https://metacpan.org/pod/Getopt::Long">perldoc Getopt::Long</a>
+[perldoc Getopt::Long](https://metacpan.org/pod/Getopt::Long)
 
-
-
-
-<a href="https://metacpan.org/pod/Cwd">perldoc Cwd</a>
-
-
+[perldoc Cwd](https://metacpan.org/pod/Cwd)
 
 
 ## process CSV file
@@ -329,18 +317,15 @@ my $line = join ";", @fields;
 print "$line\n";     # Foo;Bar;foo@bar.com
 ```
 
-
-<a href="https://perlmaven.com/join">join</a>
-
-
+[join](https://perlmaven.com/join)
 
 
 ## Labels
 {id: labels}
 
 
-Normally the last and next keywords are related to the innermost loop. 
-In some cases that's not good. Perl allows us to define labels in front 
+Normally the last and next keywords are related to the innermost loop.
+In some cases that's not good. Perl allows us to define labels in front
 of loops and then to use those labels in conjunction with last or next to
 go to the last or next iteration of the specified loop.
 
@@ -348,13 +333,12 @@ go to the last or next iteration of the specified loop.
 ![](examples/arrays/labels.pl)
 
 
-
 ## Exercise: Make the color selector user friendly
 {id: exercise-user-friendly-color-selector}
 
 
 Take the examples/arrays/process_command_line.pl script
-( the color selector ) and make it more user friendly 
+( the color selector ) and make it more user friendly
 by showing the numbers starting from 1 (and not from 0).
 
 

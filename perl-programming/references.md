@@ -2,9 +2,6 @@
 {id: perl-references}
 
 
-
-
-
 ## References
 {id: references}
 
@@ -106,10 +103,7 @@ get back the original array.
 ![](examples/references/array_references.pl)
 
 
-<a href="https://perlmaven.com/passing-two-arrays-to-a-function">Passing two arrays to a function</a>
-
-
-
+[Passing two arrays to a function](https://perlmaven.com/passing-two-arrays-to-a-function)
 
 
 ## Add two arrays
@@ -613,10 +607,7 @@ Output:
 ![](examples/references/autovivification.out)
 
 
-<a href="https://perlmaven.com/autovivification">What is autovivification?</a>
-
-
-
+[What is autovivification?](https://perlmaven.com/autovivification)
 
 
 ## Scalar references

@@ -48,15 +48,11 @@ Then we can export the recorded script in several languages.
 {id: launch-selenium-server}
 
 
-Download the jar file from <a href="http://docs.seleniumhq.org/download/">Selenium HQ</a>.
+Download the jar file from [Selenium HQ](http://docs.seleniumhq.org/download/).
 
-
-
-
-<command>java -jar /home/gabor/Downloads/selenium-server-standalone-2.42.2.jar</command>
-
-
-
+```
+java -jar /home/gabor/Downloads/selenium-server-standalone-2.42.2.jar
+```
 
 ## Selenium DuckDuckGo
 {id: selenium-duckduckgo}
@@ -76,8 +72,7 @@ Download the jar file from <a href="http://docs.seleniumhq.org/download/">Seleni
 {i: browser_name}
 
 
-Follow the instructions in the
-<a href="https://github.com/gempesaw/Selenium-Remote-Driver/wiki/Chrome-browser-automation">wiki</a>
+Follow the instructions in the [wiki](https://github.com/gempesaw/Selenium-Remote-Driver/wiki/Chrome-browser-automation)
 
 
 
@@ -208,9 +203,9 @@ body_text_*
 {i: WWW::Mechanize::PhantomJS}
 
 
-Speed up Selenium with <a href="http://phantomjs.org/">PhantomJS</a> which is a headless Webkit browser
-using <a href="https://github.com/detro/ghostdriver">GhostDriver</a> and
-<a href="https://metacpan.org/pod/WWW::Mechanize::PhantomJS">WWW::Mechanize::PhantomJS</a>.
+Speed up Selenium with [PhantomJS](http://phantomjs.org/) which is a headless Webkit browser
+using [GhostDriver](https://github.com/detro/ghostdriver) and
+[WWW::Mechanize::PhantomJS](https://metacpan.org/pod/WWW::Mechanize::PhantomJS).
 
 
 ![](examples/phantom/google.pl)
@@ -227,18 +222,15 @@ using <a href="https://github.com/detro/ghostdriver">GhostDriver</a> and
 {id: exercise-metacpan}
 
 * Visit [MetaCPAN](http://metacpan.com/), search for something and observe the links. Has the small logo appeared?
-* Visit [Expect](https://metacpan.org/pod/Expect), click on 'Jump to version' and select 1.25. It should go here: <a href="https://metacpan.org/pod/release/SZABGAB/Expect-1.25/lib/Expect.pm"></a>
+* Visit [Expect](https://metacpan.org/pod/Expect), click on 'Jump to version' and select 1.25. It should go here: [Expect](https://metacpan.org/pod/release/SZABGAB/Expect-1.25/lib/Expect.pm)
 * Visit MetaCPAN, can you automate logging in?
-
 
 
 ## Exercise: blogs.perl.org
 {id: exercise-blogs-perl-org}
 
 
-Test <a href="http://blogs.perl.org/">blogs</a>. You can also contribute test cases to <a href="https://github.com/szabgab/test.blogs.perl.org">my tests</a>.
-
-
+Test [blogs](http://blogs.perl.org/). You can also contribute test cases to [my tests](https://github.com/szabgab/test.blogs.perl.org).
 
 
 ## Exercise: Testing Smolder
@@ -248,35 +240,18 @@ Test <a href="http://blogs.perl.org/">blogs</a>. You can also contribute test ca
 In an earlier chapter we used Smolder to collect results of the test executions.
 Smolder itself is a web application using Javascript. Let's test it.
 
-
-
-
 Let's start by assuming smolder is running and try to access its front page and login with
 an existing user.
 
-
-
-
 Then we should try to create a new user and log in with that.
-
-
-
 
 After that, as we cannot really know which user is still available let's
 create a new .smolder directory in some temporary place (use File::Temp for this).
 Create a configuration file, launch Smolder and then access it using your test script.
 
 
-
-
 ## Exercise: Act
 {id: exercise-with-act}
 
-
 Take the script logging in to Act and change it to use Tess::WWW::Mechanize
-
-
-
-
-
 
