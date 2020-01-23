@@ -33,7 +33,7 @@ php-programming/php.json,php-programming
 programming/programming.json,programming
 python-mocking/python.json,python-mocking
 python-programming/python.json,python-programming
-ruby-programming/ruby.json,ruby=programming
+ruby-programming/ruby.json,ruby-programming
 sql/sql.json,sql
 value/value.json,value
 vim/vim.json,vim
