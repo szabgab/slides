@@ -77,8 +77,9 @@ A module called `mymath` with two functions: `add` and `div`.
 
 ```
 pytest test_mymath.py
-<include file="examples/pytest/test_mymath.out" />
 ```
+
+![](examples/pytest/test_mymath.out)
 
 
 ## Pytest - execute
@@ -318,28 +319,18 @@ E       ZeroDivisionError: division by zero
 
 ## PyTest expected exceptions (no exception)
 {id: pytest-expected-exceptions-no-exception}
+
 ![](examples/pytest/test_exceptions_missing.py)
 
 
 ## PyTest expected exceptions (no exception) output
 {id: pytest-expected-exceptions-no-exception-output}
 
-```
-    def test_zero_division():
-        with pytest.raises(ValueError) as e:
->           divide(1, 0)
-E           Failed: DID NOT RAISE <class 'ValueError'>
-```
-
-
-
-
+![](examples/pytest/expected_exception_no_exception.out)
 
 
 ## PyTest: Multiple Failures
 {id: pytest-multiple-failures}
-
-
 
 
 ![](examples/pytest/test_failures.py)
@@ -620,52 +611,38 @@ E        +  where 23 = double(21)
 
 ## PyTest compare numbers relatively
 {id: pytest-compare-numbers-relatively}
+
 ![](examples/pytest/test_number_less_than.py)
 
 ```
 $ pytest test_number_less_than.py
-
-    def test_string_equal():
->       assert get_number() < 0
-E       assert 23 < 0
-E        +  where 23 = get_number()
 ```
+
+![](examples/pytest/test_number_less_than.out)
 
 
 ## PyTest compare strings
 {id: pytest-compare-strings}
+
 ![](examples/pytest/test_string_equal.py)
 
 ```
 $ pytest test_string_equal.py
-
-    def test_string_equal():
->       assert get_string() == "abd"
-E       AssertionError: assert 'abc' == 'abd'
-E         - abc
-E         + abd
 ```
+
+![](examples/pytest/test_string_equal.out)
 
 
 ## PyTest compare long strings
 {id: pytest-compare-long-strings}
+
 ![](examples/pytest/test_long_strings.py)
 
 ```
 $ pytest test_long_strings.py
-
-    def test_long_strings():
->       assert get_string('a') == get_string('b')
-E       AssertionError: assert '0123456789ab...t\n\r\x0b\x0c' == '0123456789abc...t\n\r\x0b\x0c'
-E         Skipping 90 identical leading characters in diff, use -v to show
-E         Skipping 91 identical trailing characters in diff, use -v to show
-E           {|}~
-E
-E         - a012345678
-E         ? ^
-E         + b012345678
-E         ? ^
 ```
+
+![](examples/pytest/test_long_strings.out)
 
 
 ## PyTest is one string in another strings
@@ -679,6 +656,7 @@ Shows ~250 characters
 
 ## PyTest test any expression
 {id: pytest-any-expression}
+
 ![](examples/pytest/test_expression_equal.py)
 
 ```
@@ -694,6 +672,7 @@ E       assert (3 % 2) == 0
 
 ## PyTest element in list
 {id: pytest-element-in-list}
+
 ![](examples/pytest/test_in_list.py)
 
 ```

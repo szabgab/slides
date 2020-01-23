@@ -469,10 +469,8 @@ SOURCE/FILENAME.json,TARGET
 
 read in the file and create
 
-<ul>
-   <li>a single dictionary where the `SOURCE/FILENAME.json` is the key and the TARGET is the value.</li>
-   <li>list of dictionaries in which the keys are 'source', 'filename', and 'target' and the values are from the respective columns (SOURCE, FILENAME.json, and TARGET)</li>
-</ul>
+* a single dictionary where the `SOURCE/FILENAME.json` is the key and the TARGET is the value.
+* list of dictionaries in which the keys are 'source', 'filename', and 'target' and the values are from the respective columns (SOURCE, FILENAME.json, and TARGET)
 
 You can solve this `for`-loop or with `map` and list-comprehensions. Do it in both ways.
 

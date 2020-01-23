@@ -110,6 +110,7 @@ in one schema and another schema.
 ## INSERT
 {id: sql-insert}
 {i: INSERT}
+
 ![](examples/insert_people.sql)
 
 
@@ -117,6 +118,7 @@ in one schema and another schema.
 {id: sql-select}
 {i: SELECT}
 {i: FROM}
+
 ![](examples/select_all.sql)
 
 ```
@@ -140,7 +142,7 @@ select * from person;
 {id: sql-null}
 {i: NULL}
 
-If a field does not have a value, it has a <b>NULL</b> value in it. It is not the empty string. Not the number 0. It is <b>NULL</b>
+If a field does not have a value, it has a **NULL** value in it. It is not the empty string. Not the number 0. It is **NULL**
 
 
 

@@ -1,0 +1,12 @@
+    def test_long_strings():
+>       assert get_string('a') == get_string('b')
+E       AssertionError: assert '0123456789ab...t\n\r\x0b\x0c' == '0123456789abc...t\n\r\x0b\x0c'
+E         Skipping 90 identical leading characters in diff, use -v to show
+E         Skipping 91 identical trailing characters in diff, use -v to show
+E           {|}~
+E
+E         - a012345678
+E         ? ^
+E         + b012345678
+E         ? ^
+

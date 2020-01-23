@@ -1,0 +1,6 @@
+    def test_string_equal():
+>       assert get_string() == "abd"
+E       AssertionError: assert 'abc' == 'abd'
+E         - abc
+E         + abd
+
