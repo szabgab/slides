@@ -143,15 +143,15 @@ there are 3 ways to run Ansible:
 * running a command: `ansible GROUP -a COMMAND`
 * running a module: `ansible GROUP -m MODULE`
 * running a playbook: `ansible-playbook playbook.yml`
- 
+
 [Ansible extensive list of builtin modules](http://docs.ansible.com/ansible/latest/modules_by_category.html) there are about 450~ modules in the list, some popular ones are:
 
-* **file**     - creates files and directories , sets permissions
-* **apt/yum**  - manages packages - install, update, remove
-* **service**  - manages services - stop, start, runlevel (at boot)
-* **copy**     - copies files and directories
-* **git**      - Deploy software (or files) from git checkouts
-* **ping**     - Try to connect to host, verify a usable python and return pong on success
+* `file`     - creates files and directories , sets permissions
+* `apt/yum`  - manages packages - install, update, remove
+* `service`  - manages services - stop, start, runlevel (at boot)
+* `copy`     - copies files and directories
+* `git`      - Deploy software (or files) from git checkouts
+* `ping`     - Try to connect to host, verify a usable python and return pong on success
 
 trying our first command:
 
@@ -340,8 +340,6 @@ ubuntu-1 | SUCCESS => {
         "ActiveEnterTimestamp": "Tue 2018-03-20 23:22:34 IST",
         "ActiveEnterTimestampMonotonic": "2363436511",
         "ActiveExitTimestamp": "Tue 2018-03-20 23:20:30 IST",
-
-
 ```
 
 and removing:
@@ -500,53 +498,15 @@ the command to run the playbook is a little different than the regular run comma
 
 output would be:
 
-```
-PLAY [virtualhosts] ********************************************************************************
-
-TASK [Gathering Facts] *****************************************************************************
-ok: [ubuntu-1]
-ok: [ubuntu-2]
-
-TASK [install nginx] *******************************************************************************
-changed: [ubuntu-2]
-changed: [ubuntu-1]
-
-TASK [Setup nginx conf] ****************************************************************************
-changed: [ubuntu-2]
-changed: [ubuntu-1]
-
-RUNNING HANDLER [restart nginx] ********************************************************************
-changed: [ubuntu-1]
-changed: [ubuntu-2]
-
-PLAY RECAP *****************************************************************************************
-ubuntu-1                   : ok=4    changed=3    unreachable=0    failed=0
-ubuntu-2                   : ok=4    changed=3    unreachable=0    failed=0
-```
+[](examples/output2.out)
 
 playing the playbook again wont do anything if the state of the services and file is already identical:
 
 ```
 yonit@ansible_server:~/ansible$ ansible-playbook nginx_install.yml
-
-PLAY [virtualhosts] ********************************************************************************
-
-TASK [Gathering Facts] *****************************************************************************
-ok: [ubuntu-2]
-ok: [ubuntu-1]
-
-TASK [install nginx] *******************************************************************************
-ok: [ubuntu-2]
-ok: [ubuntu-1]
-
-TASK [Setup nginx conf] ****************************************************************************
-ok: [ubuntu-2]
-ok: [ubuntu-1]
-
-PLAY RECAP *****************************************************************************************
-ubuntu-1                   : ok=3    changed=0    unreachable=0    failed=0
-ubuntu-2                   : ok=3    changed=0    unreachable=0    failed=0
 ```
+[](examples/output3.out)
+
 
 ## Adding vars to the play
 {id: vars}
@@ -555,74 +515,22 @@ Variables can be defines in many locations, and we can get them from the facts g
 
 lets add some content to the nginx servers, create a file called `index.html.tpl` with the content:
 
-```
-<!DOCTYPE html>
-<html>
-<head>
-<title>Welcome to ubuntu-1</title>
-<style>
-    body {
-        width: 35em;
-        margin: 0 auto;
-        font-family: Tahoma, Verdana, Arial, sans-serif;
-    }
-</style>
-</head>
-<body>
-<h1>Welcome to ubuntu-1</h1>
-</body>
-</html>
-```
+[](examples/index.html.tpl)
 
 and run the playbook again:
 
 ```
 yonit@ansible_server:~/ansible$ ansible-playbook nginx_install.yml
-
-PLAY [virtualhosts] ********************************************************************************
-
-TASK [Gathering Facts] *****************************************************************************
-ok: [ubuntu-1]
-ok: [ubuntu-2]
-
-TASK [install nginx] *******************************************************************************
-ok: [ubuntu-1]
-ok: [ubuntu-2]
-
-TASK [Setup nginx conf] ****************************************************************************
-ok: [ubuntu-1]
-ok: [ubuntu-2]
-
-TASK [add index.html file] *************************************************************************
-changed: [ubuntu-2]
-changed: [ubuntu-1]
-
-PLAY RECAP *****************************************************************************************
-ubuntu-1                   : ok=4    changed=1    unreachable=0    failed=0
-ubuntu-2                   : ok=4    changed=1    unreachable=0    failed=0
 ```
+
+[](examples/output1.out)
 
 now lets see it:
 
 ```
 yonit@ansible_server:~/ansible$ curl http://ubuntu-2/
-<!DOCTYPE html>
-<html>
-<head>
-<title>Welcome to ubuntu-1</title>
-<style>
-    body {
-        width: 35em;
-        margin: 0 auto;
-        font-family: Tahoma, Verdana, Arial, sans-serif;
-    }
-</style>
-</head>
-<body>
-<h1>Welcome to ubuntu-1</h1>
-</body>
-</html>
 ```
+[](examples/output2.html)
 
 ## More vars
 {id: morevars}
@@ -641,74 +549,22 @@ src=index.html.j2
 
 and lets slightly change index.html.j2:
 
-```
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Welcome to {{ ansible_hostname }}</title>
-<style>
-    body {
-        width: 35em;
-        margin: 0 auto;
-        font-family: Tahoma, Verdana, Arial, sans-serif;
-    }
-</style>
-</head>
-<body>
-	<h1>Welcome to {{ ansible_hostname }}</h1>
-</body>
-</html>
-```
+[](examples/index.html.j2)
 
 run the playbook:
 
 ```
 yonit@ansible_server:~/ansible$ ansible-playbook nginx_install.yml
-
-PLAY [virtualhosts] **********************************************************************
-
-TASK [Gathering Facts] *******************************************************************
-ok: [ubuntu-1]
-ok: [ubuntu-2]
-
-TASK [install nginx] *********************************************************************
-ok: [ubuntu-1]
-ok: [ubuntu-2]
-
-TASK [Setup nginx conf] ******************************************************************
-ok: [ubuntu-1]
-ok: [ubuntu-2]
-
-TASK [add index.html file] ***************************************************************
-changed: [ubuntu-2]
-changed: [ubuntu-1]
-
-PLAY RECAP *******************************************************************************
-ubuntu-1                   : ok=4    changed=1    unreachable=0    failed=0
-ubuntu-2                   : ok=4    changed=1    unreachable=0    failed=0
 ```
+[](examples/output4.out)
 
 and now:
 
 ```
 yonit@ansible_server:~/ansible$ curl http://ubuntu-2/
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Welcome to ubuntu-2</title>
-<style>
-    body {
-        width: 35em;
-        margin: 0 auto;
-        font-family: Tahoma, Verdana, Arial, sans-serif;
-    }
-</style>
-</head>
-<body>
-	<h1>Welcome to ubuntu-2</h1>
-</body>
-</html>
 ```
+
+[](examples/output5.html)
 
 ## Roles
 {id: ansible-roles}

@@ -1,0 +1,22 @@
+PLAY [virtualhosts] ********************************************************************************
+
+TASK [Gathering Facts] *****************************************************************************
+ok: [ubuntu-1]
+ok: [ubuntu-2]
+
+TASK [install nginx] *******************************************************************************
+changed: [ubuntu-2]
+changed: [ubuntu-1]
+
+TASK [Setup nginx conf] ****************************************************************************
+changed: [ubuntu-2]
+changed: [ubuntu-1]
+
+RUNNING HANDLER [restart nginx] ********************************************************************
+changed: [ubuntu-1]
+changed: [ubuntu-2]
+
+PLAY RECAP *****************************************************************************************
+ubuntu-1                   : ok=4    changed=3    unreachable=0    failed=0
+ubuntu-2                   : ok=4    changed=3    unreachable=0    failed=0
+
