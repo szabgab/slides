@@ -124,9 +124,9 @@ $name    ~~ qr/regex/
 ~~ decides how to compare based on the values
 ```
 
-```
-<command>perldoc perlsyn</command> Smart matching in detail
+`perldoc perlsyn` Smart matching in detail
 
+```
 $a      $b        Type of Match Implied    Matching Code
 ======  =====     =====================    =============
 (overloading trumps everything)

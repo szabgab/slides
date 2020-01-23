@@ -9,8 +9,6 @@
 * feature branches (merge or rebase?)
 
 
-
-
 ## Git workflows
 {id: workflows}
 
@@ -21,8 +19,6 @@
 * [Atlassian git workflows](https://www.atlassian.com/git/tutorials/comparing-workflows)
 
 
-
-
 ## Centralized Workflow
 {id: centralized-workflow}
 
@@ -30,14 +26,13 @@
 * Single master branch.
 
 
-
-
 ## Repo start
 {id: repo-start}
+
 ![](images/start-repo.png)
 
-* A: <code>$ git clone ssh://user@host/path/to/repo.git</code>
-* B: <code>$ git clone ssh://user@host/path/to/repo.git</code>
+* A: `$ git clone ssh://user@host/path/to/repo.git`
+* B: `$ git clone ssh://user@host/path/to/repo.git`
 
 
 
@@ -45,7 +40,7 @@
 {id: repo-add-by-a}
 ![](images/line-add-by-a.png)
 
-* A: make changes, commits <code>$ git push</code>
+* A: make changes, commits `$ git push`
 
 
 
@@ -54,8 +49,8 @@
 ![](images/line-add-by-b.png)
 
 
-<b>B: make changes, commits</b>
-<code>$ git push</code> fails with 
+**B: make changes, commits**
+`$ git push` fails with 
 
 
 
@@ -72,9 +67,7 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 {id: git-pull-merge}
 
 
-B: <code>$ git pull</code>
-
-
+B: `$ git pull`
 
 ```
 Merge branch 'master' of /Users/gabor/work/git/git-server
@@ -92,19 +85,19 @@ Merge branch 'master' of /Users/gabor/work/git/git-server
 {id: forgetting-to-rebase}
 
 * If you executed a **git pull** and forgot to add **--rebase** it can be still fixed.
-* If you have not pushed it out yet: <code>$ git reset HEAD~1 --hard</code>
-* Then you can <code>$ git pull --rebase</code>
+* If you have not pushed it out yet: `$ git reset HEAD~1 --hard`
+* Then you can `$ git pull --rebase`
 
 
 
 ## git pull --rebase (fetch+rebase)
 {id: git-pull-rebase}
 
-* B: <code>$ git pull --rebase</code>
+* B: `$ git pull --rebase`
 
 ![](images/git-pull-rebase.png)
 
-* B: <code>$ git push</code>
+* B: `$ git push`
 
 
 
@@ -112,8 +105,8 @@ Merge branch 'master' of /Users/gabor/work/git/git-server
 {id: resolve-conflicts}
 
 * A makes changes to the same area where B is making changes.
-* B: <code>git push</code> rejected
-* B: <code>git pull --rebase</code>
+* B: `git push` rejected
+* B: `git pull --rebase`
 
 
 ![](images/more-change-by-a.png)
@@ -170,14 +163,16 @@ index 31d0540..a8a7095 100644
 
 ## Conflicting file
 {id: conflict-in-file}
+
 ![](examples/conflict/before/README)
 
 
 ## Resolve conflicting file
 {id: resolve-conflict-in-file}
+
 ![](examples/conflict/after/README)
 
-* <code>git status</code>
+* `git status`
 
 
 ```

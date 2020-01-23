@@ -270,7 +270,7 @@ real type-mismatch in use at run-time.
 
 
 {aside}
- will throw exception on <b>c+d</b>.
+ will throw exception on `c+d`.
 {/aside}
 
 ![](examples/intro/type_checking.out)
@@ -279,7 +279,7 @@ real type-mismatch in use at run-time.
 
 
 {aside}
- will throw exception already on <b>b = 'abc';</b>.
+ will throw exception already on `b = 'abc';`.
 {/aside}
 
 ![](examples/intro/type_checking_checked.out)
@@ -365,10 +365,7 @@ or can be in-lined. Such as 1+2.
 {i: true}
 {i: false}
 
-
-<b>true</b> and <b>false</b> are <b>boolean</b> values in Dart.
-
-
+`true` and `false` are `boolean` values in Dart.
 
 
 ## while - continue - break
@@ -376,6 +373,7 @@ or can be in-lined. Such as 1+2.
 {i: while}
 {i: break}
 {i: continue}
+
 ![](examples/intro/while.dart)
 
 

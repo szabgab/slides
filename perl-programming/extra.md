@@ -232,17 +232,14 @@ foreach $_ (@people) {
 ## Return values
 {id: return-values}
 
-```
 Perl functions always returns a value.
-Either explicitly by  calling return or 
+Either explicitly by  calling return or
 the result of the last computation.
-```
+
 ![](examples/subroutines/return_value.pl)
 
-```
-Solving the above problem: always use <emp>return</emp>
-Add    return $i;   before the end of the subroutine.
-```
+Solving the above problem: always use `return`
+Add `return $i;` before the end of the subroutine.
 
 
 ## UNIX file system, hard links symbolic links
@@ -384,22 +381,24 @@ print STDERR "\n";
 ## Where is perl installed on your system ?
 {id: where-is-perl-installed}
 
-```
 It can be installed in any place but usually you'll find it in one of the
 following places:
- 
+
 on UNIX:
 
-    <command>/usr/bin/perl</command>
-    <command>/usr/local/bin/perl</command>
- 
+```
+/usr/bin/perl
+/usr/local/bin/perl
+```
+
 on Windows:
 
-    <command>c:\perl\bin\perl.exe</command>
-
-In addition you'll find a bunch of Perl standard modules installed somewhere 
-on the system.
 ```
+c:\perl\bin\perl.exe
+```
+
+In addition you'll find a bunch of Perl standard modules installed somewhere
+on the system.
 
 
 ## Send e-mail

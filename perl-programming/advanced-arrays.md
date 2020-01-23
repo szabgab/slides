@@ -2,9 +2,6 @@
 {id: advanced-arrays}
 
 
-
-
-
 ## The year 19100
 {id: localtime}
 
@@ -122,14 +119,12 @@ print 0 + @a;               # 3                 SCALAR + SCALAR
 print scalar(@a);           # 3                 scalar(SCALAR)
 ```
 
-```
-see also  <command>perldoc -f function-name</command>
-```
-
+see also `perldoc -f function-name`
 
 
 ## Filehandle in scalar and list context
 {id: filehandle-in-scalar-and-list-context}
+
 ![](examples/arrays/filehandle_in_context.pl)
 
 
@@ -265,22 +260,16 @@ and add the following features:
 ## Exercise: sort numbers
 {id: exercise-sort-numbers}
 
-```
-Take the file <emp>examples/arrays/count_digits.txt</emp>
+Take the file `examples/arrays/count_digits.txt`
 from the previous example and sort the numbers (not the digits).
-```
-
 
 
 ## Exercise: sort mixed string
 {id: exercise-sort-mixed-string}
 
-
-In a file we have the string where each string has 
+In a file we have the string where each string has
 a single letter at the beginning and then a number.
 Sort them based on the number only, disregarding the letter.
-
-
 
 Input:
 

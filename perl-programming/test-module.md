@@ -375,21 +375,15 @@ Output:
 ## Exercise: Enlarge the test
 {id: testing-exercise-enlarge-test-suit}
 
-
 Take the test file from the last example ( examples/perl/tests/t14.pl ) and add a few more tests.
 
-
-
-
-Also write a few more tests for the <command>multiply()</command> and the
-<command>fibo()</command> functions. (The latter returns the fibonacci number so fibo(1) will return 1.
-
-
-
+Also write a few more tests for the `multiply()` and the
+`fibo()` functions. (The latter returns the fibonacci number so fibo(1) will return 1.
 
 
 ## Enlarge our test suite
 {id: enlarge-the-test-suit}
+
 ![](examples/perl/tests/t20.pl)
 
 Output:
@@ -401,14 +395,14 @@ Output:
 {id: refactor-large-test-suit}
 
 {aside}
-
 Now that we have this tool in place it is time to start to enlarge our test suite.
-After all three tests are not enough. As we are adding more and more tests we can 
+After all three tests are not enough. As we are adding more and more tests we can
 recognize again that there is the data part of the tests that are changing and the
 code part which is repeating. This is a good time to refactor our code again.
 We take the data and move it to a data structure. The code then can go over this
 data structure and execute each unit on its own.
 {/aside}
+
 ![](examples/perl/tests/t21.pl)
 
 Output:

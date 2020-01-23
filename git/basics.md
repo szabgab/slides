@@ -77,7 +77,7 @@ Each file can be either
 
 
 
-Add the files to the <emp>index</emp> (or staging area, or cache).
+Add the files to the `index` (or staging area, or cache).
 
 
 
@@ -390,14 +390,9 @@ $ git status
 ![](examples/out/status_11.txt)
 
 
-<command>$ git reset HEAD</command> will reset all the files currently staged.
-
-
-
+`$ git reset HEAD` will reset all the files currently staged.
 
 See also the unstage alias we created earlier.
-
-
 
 
 ## Drop local changes (restore to HEAD or to index)
@@ -409,14 +404,14 @@ $ git status
 ```
 
 
-<command>git checkout FILENAME</command>
+`git checkout FILENAME`
 will replace FILENAME in the work tree with the one committed (or if there is a version already staged then to that version).
 You loose your local work.
 
 
 
 
-<command>git checkout .</command> will do it for all the files in the tree.
+`git checkout .` will do it for all the files in the tree.
 
 
 ![](examples/out/status_12.txt)
@@ -448,12 +443,11 @@ $ git commit -m"start writing the setup script"
 {i: .gitignore}
 
 
-The <command>.gitignore</command> file in the root of the repository
+The `.gitignore` file in the root of the repository
 can describe sets of files that don't need tracking.
 This will make sure you don't add the files by mistake
 (e.g. while using git add .) and they won't show up in the
-output of the <command>git status</command> command.
-
+output of the `git status` command.
 
 
 ```

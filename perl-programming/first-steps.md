@@ -81,22 +81,14 @@ See Perl One-liners.
 
 
 run it by typing
-<command>perl hello_world.pl</command>
-
-
-
+`perl hello_world.pl`
 
 On unix you can also make it executable:
-<command>chmod u+x hello_world.pl</command>
+`chmod u+x hello_world.pl`
 and then run like:
-<command>./hello_world.pl</command>
-
-
-
+`./hello_world.pl`
 
 A couple of notes
-
-
 
 * Strings and numbers
 * Strings must be quoted, you can use special characters such as "\n"
@@ -261,10 +253,7 @@ Web based: [perldoc](http://perldoc.perl.org/)
 ## Exercise: Hello world
 {id: exercise-hello-world}
 
-
 Try your environment:
-
-
 
 * Make sure you have access to the right version of Perl (5.8.x) or newer
 * Check you can read the documentation. (perldoc)
@@ -272,8 +261,4 @@ Try your environment:
 * Write a simple script that prints     Hello world
 * Add comments to your code
 * Add user documentation to your code
-
-
-
-
 
