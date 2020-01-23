@@ -10,17 +10,17 @@ Test::Simple is really a very simple module. Its sole exported function is the "
 Test::More has the same "ok" function - so it is a drop-in replacement - but it also has lots of
 other functions and tools:
 
-* <programlisting>ok</programlisting>
-* <programlisting>is</programlisting>
-* <programlisting>isnt</programlisting>
-* <programlisting>diag</programlisting>
-* <programlisting>like</programlisting>
-* <programlisting>cmp_ok</programlisting>
-* <programlisting>is_deeply</programlisting>
-* <programlisting>SKIP</programlisting>
-* <programlisting>TODO</programlisting>
-* <programlisting>done_testing</programlisting>
-* <programlisting>subtest</programlisting>
+* `ok`
+* `is`
+* `isnt`
+* `diag`
+* `like`
+* `cmp_ok`
+* `is_deeply`
+* `SKIP`
+* `TODO`
+* `done_testing`
+* `subtest`
 
 
 ```
@@ -92,7 +92,7 @@ See, in this case we can already guess that it cannot add 3 values.
 
 
 
-compares using <command>eq</command>
+compares using `eq`
 
 
 
@@ -156,7 +156,7 @@ ok 2
 {i: diag}
 
 
-<emp>diag</emp> prints out a message along with the rest of the output.
+`diag` prints out a message along with the rest of the output.
 
 
 
@@ -227,7 +227,7 @@ Failed 1/1 test programs. 1/3 subtests failed.
 {i: note}
 
 
-<emp>note()</emp> does the same as <emp>diag()</emp>, but when running under the
+`note()` does the same as `diag()`, but when running under the
 prove it does not show up.
 
 
@@ -444,7 +444,7 @@ What if you don't want or can't realisticly expect an exact match with the resul
 
 
 
-You can use <command>like</command> that compares with =~
+You can use `like` that compares with =~
 
 
 ![](examples/perl/t/copyright.t)
@@ -504,7 +504,7 @@ and upper limit.
 {/aside}
 
 
-<command>cmp_ok</command> compares with any operator you like.
+`cmp_ok` compares with any operator you like.
 
 
 ![](examples/intro-testing/cmp_ok.t)
@@ -573,7 +573,7 @@ not ok 10 - fibs 5
 {id: test-more-is-deeply-hash}
 
 
-Another example with <command>is_deeply</command>
+Another example with `is_deeply`
 checking the returned hash from a bug tracking system.
 
 

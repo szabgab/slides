@@ -361,14 +361,7 @@ In Python 2 puts the numbers first in numerical order and then the strings in AS
 
 In Python 3 it throws an exception.
 
-
-```
-[100, 'foo', 42, 'bar']
-Traceback (most recent call last):
-  File "examples/lists/sort_mixed.py", line 5, in <module>
-    mixed.sort()
-TypeError: unorderable types: str() < int()
-```
+![](examples/lists/sort_mixed.out)
 
 
 ## key sort
@@ -528,10 +521,8 @@ e.g. keys of dictinoaries can be tuple (but not lists).
 ## Exercise: count digits
 {id: exercise-count-digits}
 
-Given a list of numbers <command>numbers = [1203, 1256, 312456, 98]</command>,
+Given a list of numbers `numbers = [1203, 1256, 312456, 98]`,
 count how many times each digit appears? The output will look like this:
-
-
 
 ```
 0  1
@@ -550,10 +541,10 @@ count how many times each digit appears? The output will look like this:
 ## Exercise: Create list
 {id: exercise-create-list}
 
-```
 Given a list of strings with words separated by spaces,
 create a single list of all the words.
 
+```
 input = [
   'grape banana mango',
   'nut orange peach',
@@ -572,10 +563,10 @@ output = ['apple', 'grape', 'banana','nut', 'orange', 'peach', 'nut', 'mango']
 
 ## Exercise: Count words
 {id: exercise-count-words-in-list}
+
 ![](examples/lists/count_words_skeleton.py)
 
 Expected output:
-
 
 ```
 Moon        2

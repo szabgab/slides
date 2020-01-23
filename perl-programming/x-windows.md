@@ -56,10 +56,11 @@ xcalc
 {i: StartApp}
 {i: WaitWindowViewable}
 {i: GetInputFocus}
+
 ![](examples/X/xcalc01.pl)
 
 
-<command>perl examples/X/xcalc01.pl</command>
+`perl examples/X/xcalc01.pl`
 As you can see we only open the xcalc window and do not close it yet.
 So now if you run this for a second time (without manually closing the first xcalc window)
 you will see the error message and you'll see that the Main windows id is the same as previously
@@ -80,7 +81,10 @@ print "$x $y $width $height\n";
 ![](examples/X/xcalc02.pl)
 
 
-<command>perl examples/X/xcalc02.pl</command>
+```
+perl examples/X/xcalc02.pl
+```
+
 Nice, but where exactly are these coordinates ?
 Let's put the mouse to the top left corner.
 
@@ -116,10 +120,11 @@ MoveMouseAbs($x, $y+$height);
 ![](examples/X/xcalc04.pl)
 
 
-<command>perl examples/X/xcalc04.pl</command>
+```
+perl examples/X/xcalc04.pl
+```
+
 The sleep() commands were added only so that we can see the mouse moving around.
-
-
 
 
 ## Smooth on the edges
@@ -142,7 +147,10 @@ foreach my $h (0..$height) {
 ```
 
 
-<command>perl examples/X/xcalc05.pl</command>
+```
+perl examples/X/xcalc05.pl
+```
+
 
 
 ![](examples/X/xcalc05.pl)
@@ -243,7 +251,9 @@ sleep(2);
 ```
 
 
-<command>perl examples/X/xcalc08.pl</command>
+```
+perl examples/X/xcalc08.pl
+```
 
 That would be 5 * 7 =
 
@@ -266,7 +276,10 @@ foreach my $id (@children) {
 ```
 
 
-<command>perl examples/X/xcalc11.pl</command>
+```
+perl examples/X/xcalc11.pl
+```
+
 Non of them has a title, this seem to be like a dead-end, but wait a second,
 maybe we can find the location of the child windows.
 

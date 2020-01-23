@@ -48,7 +48,7 @@ $size = -s $filename;
 ```
 
 ```
-There are more such operators see <command>perldoc -f -x</command>
+There are more such operators see `perldoc -f -x`
 ```
 
 
@@ -59,22 +59,14 @@ There are more such operators see <command>perldoc -f -x</command>
 {i: ``}
 {i: qx}
 
-
-<command>system()</command> can execute any external program. You pass to it the same
+`system()` can execute any external program. You pass to it the same
 string as you would type on the command line.
-
-
-
 
 It returns 0 on success and the exit code of the external program on failure.
 Hence the strange way we check if it fails.
 
-
-
-
-Passing the program name and the parameters as an array is more secure as it 
+Passing the program name and the parameters as an array is more secure as it
 does not involve invocation of a shell. There is no shell processing involved;
-
 
 
 ```
@@ -85,17 +77,12 @@ system("some_app.exe --option");
 
 See perldoc -f system for more error handling
 
-
-
 ```
 my $result = `some_app.exe --option`;
 my @result = `some_app.exe --option`;
 ```
 
-
-backticks `` are also know as <emp>qx{}</emp>
-
-
+backticks `` are also know as `qx{}`
 
 
 ## Open pipe for reading
@@ -152,7 +139,7 @@ Connect to STDIN of sendmail
 {i: $ENV{HOME}}
 
 ```
-You can run every external command using <emp>system</emp> 
+You can run every external command using `system`
 but it makes it platform dependent and might have more security implications.
 
 The following calls are available from Perl.
@@ -311,7 +298,7 @@ Implement the previous one using File::Find::Rule
 In UNIX/Linux the information about users is kept in the
 /etc/passwd file. Each line represents a user. The fields
 in each line are as follows:
-<command>username, password,UID,GID,Gecos,home directory,shell</command>
+`username, password,UID,GID,Gecos,home directory,shell`
 Today the passwords are usually kept separately hence in this file you will only
 see an x in the second field.
 
@@ -320,7 +307,7 @@ see an x in the second field.
 
 When someone breaks in to a UNIX/Linux machine she might try to
 setup a user with UID 0 in order to gain root (superuser) access
-to the machine. Please check the following file 
+to the machine. Please check the following file
 and print a message if there is a user with 0 as UID which is NOT
 the root user.
 
@@ -333,8 +320,8 @@ the root user.
 
 
 Check if the load on the computer is over a certain threshold and log the
-event to syslog. See the  3rd number from the right of the uptime command 
-or the first number in the /proc/loadavg file on linux. 
+event to syslog. See the  3rd number from the right of the uptime command
+or the first number in the /proc/loadavg file on linux.
 The file looks like this:
 
 
@@ -353,7 +340,7 @@ A sample file
 {id: exercise-manifest}
 
 
-We have a file called MANIFEST listing all the required 
+We have a file called MANIFEST listing all the required
 files in a distribution. One file on every line.
 
 

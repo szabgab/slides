@@ -139,7 +139,7 @@ $ python argparse_number.py abc
 
 Trying to the argument received from the command
 line as an integer, we get a TypeError. The same would happen
-even if a number was passed, but you could call <command>int()</command>
+even if a number was passed, but you could call `int()`
 on the parameter to convert to an integer.
 However there is a better solution.
 
@@ -200,14 +200,13 @@ None
 ```
 
 
-Named parameters are optional by default. You can pass the 
-<command>required=True</command> parameter to make them required.
-
-
+Named parameters are optional by default. You can pass the
+`required=True` parameter to make them required.
 
 
 ## Boolean Flags
 {id: argparse-boolean}
+
 ![](examples/argparse/argparse_boolean.py)
 
 **python argparse_boolean.py --color Blue --verbose**
@@ -229,34 +228,24 @@ False
 
 ## Short names
 {id: argparse-shortnames}
+
 ![](examples/argparse/argparse_shortname.py)
 
 **python argparse_shortname.py -c Blue -v**
-
-
 **python argparse_shortname.py -vc Blue**
-
-
 
 
 ## Exercise: Command line parameters
 {id: exercise-argparse}
 
-
 Take the code from the color selector exercise in the files section and change it so
 the user can supply the name of the file where the colors are listed using the
-<command>--file filename</command> option.
-
-
-
+`--file filename` option.
 
 If the user supplies an incorrect color name (which is not listed among the accepted colors)
 give an error message and stop execution.
 
-
-
-
-Allow the user to supply a flag called <command>--force</command> that will
+Allow the user to supply a flag called `--force` that will
 override the color-name-validity checking and will allow any color name.
 
 ## Exercise: argparse positional and named
@@ -268,8 +257,3 @@ Like this:
 ```
 python ex.py file1 file2 file3 --machine MACHINE --verbose
 ```
-
-
-
-
-

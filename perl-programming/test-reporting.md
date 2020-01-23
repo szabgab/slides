@@ -147,7 +147,9 @@ The simplest way to generate nice reports is to use [TAP::Formatter::HTML](https
 Instead of running prove alone, you can pass it a class implementing formattion
 options and it will use that instead of the default textual output.
 
-<command>prove -b -m -Q --formatter=TAP::Formatter::HTML examples/tap > output.html</command>
+```
+prove -b -m -Q --formatter=TAP::Formatter::HTML examples/tap > output.html
+```
 
 [output]("../test-automation-using-perl/examples/tap/HTML/output.html)
 
@@ -156,7 +158,7 @@ options and it will use that instead of the default textual output.
 {id: collecting-test-reports}
 
 
-Collect the report with <command>prove -b -a tap.tar.gz  examples/tap</command> and save it on a centralized server.
+Collect the report with `prove -b -a tap.tar.gz  examples/tap` and save it on a centralized server.
 
 
 
@@ -183,7 +185,6 @@ TAP streams. Better to open it in another directory.
 {id: generating-html-reports-from-archives}
 
 {aside}
-
 Once you have the tar.gz file on the central machine you should
 be able to create the HTML report.
 Unfortunately I could not find a nice way to do it but with the help
@@ -203,20 +204,13 @@ solution to this.
 {/aside}
 
 
-
-First unzip the file using <command>tar xzf tap.tar.gz</command>
-
-
-
+First unzip the file using `tar xzf tap.tar.gz`
 
 Then you can run the following command
 
-
-
-
-<command>prove --exec 'cat' -Q --formatter=TAP::Formatter::HTML t/ > output.html</command>
-
-
+```
+prove --exec 'cat' -Q --formatter=TAP::Formatter::HTML t/ > output.html
+```
 
 
 ## Smolder

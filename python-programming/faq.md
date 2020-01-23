@@ -7,7 +7,7 @@
 
 
 Don't - by mistake - call one of your files the same as a module you will be loading.
-For example <command>random.py</command> is a bad idea if you will `import random`.
+For example `random.py` is a bad idea if you will `import random`.
 Your code will try to locate random.py to load, but will find itself and not the one that comes with Python.
 
 

@@ -137,7 +137,7 @@ Global symbol "$x" requires explicit package name at ..
 ```
 
 
-You need to declare the variable $x by <command>my</command>.
+You need to declare the variable $x by `my`.
 
 
 
@@ -146,7 +146,7 @@ Use of uninitialized value $x in ... at ...
 ```
 
 
-$x contained <command>undef</command>.
+$x contained `undef`.
 
 
 
@@ -217,7 +217,7 @@ There is this problem of the newline
 ![](examples/scalars/read_from_stdin_chomp.pl)
 
 
-<command>chomp</command> will remove the new line "\n" character from the end of the string if there was one.
+`chomp` will remove the new line "\n" character from the end of the string if there was one.
 
 
 
@@ -244,7 +244,7 @@ There is this problem of the newline
 ![](examples/scalars/numerical_operators.pl)
 
 
-See also <command>perldoc perlop</command> for all the operators.
+See also `perldoc perlop` for all the operators.
 
 
 
@@ -267,7 +267,7 @@ See also <command>perldoc perlop</command> for all the operators.
 ![](examples/scalars/string_operators.pl)
 
 
-See also <command>perldoc perlop</command> for all the operators.
+See also `perldoc perlop` for all the operators.
 
 
 ## String - Number conversion
@@ -435,7 +435,7 @@ if (not COND) {
 ```
 
 
-See also <command>perldoc perlop</command> for precedence and associativity tables 
+See also `perldoc perlop` for precedence and associativity tables
 and/or use () to define the order of evaluation.
 
 
@@ -472,7 +472,7 @@ All other values, such as the following are TRUE:
 
 
 In many cases the separation must be between "real" values and undefined values.
-For that you can use the <command>defined</command> function:
+For that you can use the `defined` function:
 
 
 

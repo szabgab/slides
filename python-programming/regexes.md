@@ -265,7 +265,7 @@ r'#[a-f@.]#'
 {id: regex-optional}
 {i: ?}
 
-Match the word <command>color</command> or the word <command>colour</command>
+Match the word **color** or the word **colour**
 
 ```
 Regex: r'colou?r'

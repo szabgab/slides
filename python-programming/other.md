@@ -52,8 +52,8 @@ Linter
 * Python shell
 * Better editing
 * Limited debugger
-* <programlisting>c:\Python27\Lib\idlelib\idle.bat</programlisting>
-* **C:\Users\Gabor\AppData\Local\Programs\Python\Python35\Lib\idlelib\idle.bat**
+* `c:\Python27\Lib\idlelib\idle.bat`
+* `C:\Users\Gabor\AppData\Local\Programs\Python\Python35\Lib\idlelib\idle.bat`
 
 
 
@@ -92,7 +92,7 @@ I don't recommend this.
 
 
 
-Type <command>pydoc</command>. On Windows, you might need to create the following file and put it in a directory in your PATH. (see <command>echo %PATH%</command>)
+Type `pydoc`. On Windows, you might need to create the following file and put it in a directory in your PATH. (see `echo %PATH%`)
 
 
 ![](examples/basics/pydoc.bat)
@@ -152,7 +152,7 @@ Run as **python argv.py Foo**
 
 
 
-Later we'll see the <command>argparse</command> module that can handle command line arguments in a better way.
+Later we'll see the `argparse` module that can handle command line arguments in a better way.
 
 
 
@@ -419,6 +419,7 @@ In Python 3 `range` creates the iterator and if really necesary then `list(range
 {id: hotshot-slow-code}
 
 It was experimental and dropped from Python 3
+
 * [](https://docs.python.org/2/library/hotshot.html)
 
 ![](examples/advanced/slow_hotshot.py)
@@ -434,6 +435,7 @@ Only works in Python 2?
 ## Abstract Base Class with abc Python 2 ?
 {id: abstract-base-class-with-abc-python2}
 {i: abc}
+
 ![](examples/classes/with_abc.py)
 
 * [Abstract Base Classes in Python](https://dbader.org/blog/abstract-base-classes-in-python)
@@ -443,11 +445,13 @@ Only works in Python 2?
 ## Abstract Base Class with metaclass
 {id: abstract-base-class-with-metaclass}
 {i: __metaclass__}
+
 ![](examples/classes/abc_meta.py)
 
 
 ## Create class with metaclass
 {id: create-class-with-metaclass}
+
 ![](examples/classes/meta.py)
 ![](examples/classes/create_class.py)
 

@@ -5,11 +5,11 @@
 {id: xml-data}
 
 {aside}
-
 We are going to use the following XML file
 and will try to answer te various questions that are listed
 in the comment at the top of the file.
 {/aside}
+
 ![](examples/xml/data.xml)
 
 
@@ -20,13 +20,13 @@ in the comment at the top of the file.
 - Tags, attributes
 
 - Well formed
-  &lt;tag&gt;text&lt;/tag&gt;
+  <tag>text</tag>
   or an empty element:
-  &lt;tag /&gt;
-  
+  <tag />
+
 - Valid XML (DTD, XML Schema, RelexNG, Schematron)
 
-- Namespaces, Entity references, 
+- Namespaces, Entity references,
 ```
 
 
@@ -68,7 +68,7 @@ KeepRoot defaults to 0
 
 {aside}
 
-Without any options this will generate something that is apparently a mess. This is 
+Without any options this will generate something that is apparently a mess. This is
 caused by the fact that KeyAttr is trying to be nice and uses the value of the 'name'
 tag and the 'id' attribute as the keys to the hash it is generating.
 {/aside}
@@ -147,7 +147,7 @@ Read the documentation of XML::Parser (search Tree)
 {id: xml-parser-tree-results}
 
 ```
-$VAR1 = 
+$VAR1 =
 [
     'data',
     [
@@ -292,6 +292,7 @@ Close to handwriting of the XML but can also check well formedness.
 
 ## Exercise: parse glade.xml
 {id: xml-exercise-parse-gladexml}
+
 ![](examples/xml/entry.glade)
 
 ```
@@ -300,11 +301,10 @@ Given the XML file created by Glade write the following functions:
 my @names   = get_all_widget_names(); # all the names
 my @widgets = get_all_widges();       # all the objects
 my $widget  = get_widget($name);      # an object representing the widget
-$widget->get_handler($name);          # name of the handler function 
+$widget->get_handler($name);          # name of the handler function
 $widget->get_property($name);
 $widget->set_property($name, $value);
 ```
-
 
 
 ## DTD validation
@@ -313,7 +313,7 @@ $widget->set_property($name, $value);
 ```
 Using XML::LibXML;
 
-<!-- XML::Checker -->
+XML::Checker
 ```
 
 
@@ -347,7 +347,7 @@ http://www.xml.com
 
 "Perl and XML" (first ed) By Erik T. Ray, Jason McIntosh, Published by O'Reilly
 
-Many of our examples are taken from these places either directly or 
+Many of our examples are taken from these places either directly or
 after some transformation.
 ```
 

@@ -6,7 +6,7 @@
 {i: len}
 
 
-Type <command>python</command> without any arguments on the command line and
+Type `python` without any arguments on the command line and
 you'll get into the Interactive shell of Python.
 In the interactive shell you can type:
 
@@ -37,7 +37,7 @@ It points to an object and that object knows about its type.
 
 
 Python has lots of standard (and not standard) modules. You can load one of them using the
-<command>import</command> keyword. Once loaded, you can use functions from the module
+`import` keyword. Once loaded, you can use functions from the module
 or access its objects. For example the `sys` module has a `sys.version`
 and a `sys.executable` variable.
 
