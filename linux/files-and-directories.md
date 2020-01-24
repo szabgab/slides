@@ -17,7 +17,6 @@ $ mkdir -p x/y/z
 ```
 
 
-
 ## Create a file using 'touch'
 {id: touch}
 {i: touch}
@@ -277,36 +276,31 @@ diff -r a/ b/
 ## File and Directory Name conventions
 {id: name-conventions}
 
-
 Might depend on the file system.
-
-
 
 * Case sensitive.
 * Can have spaces.
 * Can have Unicode characters.
 * Extensions have no special meaning to Linux, but might have special meaning to some applications.
-* Usually all lowercase, no spaces, words separated by underscore (_).
-
+* Usually all lowercase, no spaces, words separated by underscore `_`.
 
 
 ## Exercise: files
 {id: exercises-files}
 
-* Create a directory structure under ~/ex/a  with 3 directories and 5 files
-* Copy the whoke structure to ~/ex/b
+* Create a directory structure under `~/ex/a`  with 3 directories and 5 files
+* Copy the whoke structure to `~/ex/b`
 * Compare the two using 'diff'
-* Add a new file in the ~/ex/a structure.
-* Change the content of one of the files in the ~/ex/b structure.
+* Add a new file in the `~/ex/a` structure.
+* Change the content of one of the files in the `~/ex/b` structure.
 * Compare the two directory trees again.
-
 
 
 ## Exercise: shutdown vs halt
 {id: exercise-file-path}
 
-What is the difference between <command>>shutdown</command>
-and <command>halt</command>.
+What is the difference between `shutdown`
+and `halt`.
 
 
 

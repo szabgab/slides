@@ -81,16 +81,9 @@ New certificate (self-signed):
 -alias  (8 significant characers?)
 ```
 
-
-
-<command>keytool -v -list -keystore ~/.keystore</command> can list the existing keys and their aliases in verbose mode.
-
-
-
+`keytool -v -list -keystore ~/.keystore` can list the existing keys and their aliases in verbose mode.
 
 You will need to provide the alias, and the two passwords to the PhoneGap build system.
-
-
 
 
 ## Apple

@@ -90,6 +90,12 @@ var r rune = 'a'
 
 ## bitwise operators
 {id: bitwise-operators}
+{i: <<}
+{i: >>}
+{i: &}
+{i: |}
+{i: ^}
+{i: &^}
 
 ```
 &, |, ^, &^
@@ -112,6 +118,7 @@ env GOOS=target-OS GOARCH=target-architecture go build package-import-path
 
 ## Constants
 {id: constants}
+{i: const}
 
 const - constants
 constants can be shadowed as well!  (not a good idea to do)

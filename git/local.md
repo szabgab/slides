@@ -125,9 +125,7 @@ The file POLL has disappeared from the working directory.
 ![](images/local/switch-to-master.png)
 
 
-Now the word <b>master</b> is bold.
-
-
+Now the word **master** is bold.
 
 
 ## Add changes to master
