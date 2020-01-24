@@ -16,43 +16,38 @@ in the comment at the top of the file.
 ## XML Definitions
 {id: xml-definition}
 
-```
-- Tags, attributes
+* Tags, attributes
+* Well formed
 
-- Well formed
+```
   <tag>text</tag>
-  or an empty element:
-  <tag />
-
-- Valid XML (DTD, XML Schema, RelexNG, Schematron)
-
-- Namespaces, Entity references,
 ```
+
+or an empty element:
+
+```
+  <tag />
+```
+
+* Valid XML (DTD, XML Schema, RelexNG, Schematron)
+* Namespaces, Entity references,
 
 
 ## XML processing modes
 {id: xml-processing-modes}
 
-```
-DOM - build an in-memory representation of the XML (tree)
-
-SAX - process the XML chunk-by-chunk (stream)
-```
-
+* DOM - build an in-memory representation of the XML (tree)
+* SAX - process the XML chunk-by-chunk (stream)
 
 
 ## XML::Simple
 {id: xml-simple}
 
-
 Let's see some of the parameters controlling the way XML is read
 into memory by XML::Simple.
 
-
-
 {aside}
-
-XML::Simple is, well, rlatively simple but it can still be used in a number of ways.
+XML::Simple is, well, relatively simple but it can still be used in a number of ways.
 The most straight forward way is to import the XMLin function, and pass a filename
 to it or a scalar with XML data in it. In addition the XMLin subroutine accepts several
 options. Two of them are the most important:
@@ -64,16 +59,16 @@ KeepRoot defaults to 0
 
 'Array folding' feature is controlled by KeyAttr
 {/aside}
+
 ![](examples/xml/xml_simple_intro.pl)
 
 {aside}
-
 Without any options this will generate something that is apparently a mess. This is
 caused by the fact that KeyAttr is trying to be nice and uses the value of the 'name'
 tag and the 'id' attribute as the keys to the hash it is generating.
 {/aside}
-![](examples/xml/xml_simple.pl)
 
+![](examples/xml/xml_simple.pl)
 
 
 ## XML::Simple dumped

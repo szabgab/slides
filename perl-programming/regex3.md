@@ -250,18 +250,15 @@ Use a single statement (with split) to achieve this.
 {id: exercise-basename-dirname}
 
 
-Create two functions <emp>basename()</emp> and <emp>dirname()</emp>
-Given a path such as <emp>/home/foo/.mozilla/cache/data.txt</emp>
-the basename() function should return the filename ( data.txt in the example).
-The dirname() function should return the full-path directory name
-( /home/foo/.mozilla/cache in the example.)
-
-
+Create two functions `basename()` and `dirname()`
+Given a path such as `/home/foo/.mozilla/cache/data.txt`
+the `basename()` function should return the filename ( data.txt in the example).
+The `dirname()` function should return the full-path directory name
+( `/home/foo/.mozilla/cache` in the example.)
 
 
 ## Exercise: Sort SNMP numbers
 {id: exercise-sort-snmp-numbers}
-
 
 Given a file with SNMP numbers (one number on every line)
 print them in sorted order comparing the first number of

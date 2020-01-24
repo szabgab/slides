@@ -341,17 +341,15 @@ after
 
 ```
 $  python ctrl_c.py
-Username:^CTraceback (most recent call last):
-  File "ctrl_c.py", line 3, in <module>
-    username = input('Username:')
-KeyboardInterrupt
 ```
+![](examples/signals/ctrl_c.out)
+
+
 ![](examples/signals/catch_ctrl_c.py)
 
 * Cannot stop using Ctrl-C !
 * Ctrl-Z and then kill %1
 * kill PID
-
 
 
 ## Catching Ctrl-C on Unix confirm

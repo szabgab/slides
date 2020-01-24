@@ -2,17 +2,10 @@
 {id: regex2}
 
 
-
-
-
-
 ## Grouping, alternatives
 {id: regex-grouping-alternatives}
 
-
 all the rows with either 'apple pie' or 'banana pie' in them
-
-
 
 ```
 if ($row =~ /apple pie/ or $row =~ /banana pie/) {
@@ -168,10 +161,7 @@ A list of optional characters within square brackets []
 |    \P{...}   |  Negation of Unicode character class |  |
 
 
-See also <command>perldoc perlre</command> and 
-<command>perldoc perluniintro</command>
-
-
+See also `perldoc perlre` and `perldoc perluniintro`.
 
 
 ## Exercise: Hex/Oct/Bin

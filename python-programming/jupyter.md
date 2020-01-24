@@ -64,92 +64,16 @@ add(2,3)
 ## Jupyter notebook Planets
 {id: jupyter-notebook-planets}
 
-```
-%config IPCompleter.greedy=True
-import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
-
-
-planets = pd.read_csv('planets.csv')
-planets
-
-planets.__class__.__name__
-planets.columns
-planets.dtypes
-planets.index
-planets.values
-planets.describe()
-
-#planets.sort_values('Mass', ascending=False)
-planets.sort_values('Planet name', ascending=False)
-
-planets.Mass
-planets['Planet name']
-planets[2:5]
-planets.loc[3:6, ['Mass', 'Planet name']]
-planets.Mass > 1
-
-planets[planets.Mass > 1]
-planets['Planet name'].isin(['Earth', 'Mars'])
-planets[ planets['Planet name'].isin(['Earth', 'Mars']) ]
-
-planets[(planets.Mass > 1) &amp; (planets.Mass < 100)]
-# element-wise boolean and
-
-center = 'Earth'
-this = planets[ planets['Planet name'] == center ]
-mass = this.iloc[0]['Mass']
-dist = this.iloc[0]['Distance (AU)']
-
-# gravitational force is F = G * (mass1*mass2) / D**2
-G = 6
-D = abs(dist - planets['Distance (AU)'])
-D
-
-forces = planets.copy()
-forces
-
-G * (planets.Mass * mass) / D**2
-forces['F'] = G * (planets.Mass * mass) / D**2
-forces.drop(columns = 'Mass', inplace=True)
-forces.drop(columns = 'Distance (AU)', inplace=True)
-forces
-```
+![](examples/jupyter/planets.py)
 
 
 ## Jupyter StackOverflow
 {id: jupyter-stackoverflow}
 
-
 * Download the latest dataset from the [survey](https://insights.stackoverflow.com/survey).
 * unzip the file. Feel free to remove the __MACOSX/ directory.
 
-
-
-```
-%config IPCompleter.greedy=True
-import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
-import seaborn as sns
-
-
-# The following might not work on your computer if it does not have enough free memory
-df = pd.read_csv('survey_results_public.csv')
-df
-
-df.size # size in memory 7,555,055 it is too big if you only have 8gb memory
-
-df.count()
-
-df.info()
-
-df.describe() # only few columns were identified to have numeric values
-
-df.head(3)
-```
-
+![](examples/jupyter/stack_overflow.py)
 
 
 ## Jupyter StackOverflow - selected columns

@@ -1,0 +1,4 @@
+Username:^CTraceback (most recent call last):
+  File "ctrl_c.py", line 3, in <module>
+    username = input('Username:')
+KeyboardInterrupt

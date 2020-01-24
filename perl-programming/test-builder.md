@@ -6,13 +6,13 @@
 {i: redefine}
 
 {aside}
-
 Sometimes there are function that print directly to the screen.
 The program could be tested as an external application or we can redirect the
 STDOUT to a scalar variable in the memory of perl but  it might be cleaner
 to replace the display function, capture the data in a variable
 and then check that variable.
 {/aside}
+
 ![](examples/perl/t/display.t)
 
 
@@ -20,26 +20,25 @@ and then check that variable.
 ## Multiple expected values
 {id: testing-multiple-expected-values}
 
-dice() returns a whole number between 1-6.
+`dice()` returns a whole number between 1-6.
 
 
 {aside}
-
 In the application we have a function that can return any one of a list of possible values.
 In our example we have a dice() function that throws the dice. It should return a whole
 number between 1-6.
 {/aside}
+
 ![](examples/perl/t/dice_cmp_ok.t)
 
-**perl examples/perl/t/dice_cmp_ok.t**
+```
+perl examples/perl/t/dice_cmp_ok.t
+```
 
 ![](examples/perl/t/dice_cmp_ok.out)
 
-
 It seems to be ok but we are actually not testing the correct thing.
 We should check if the result is one of the following values (1, 2, 3, 4, 5, 6)
-
-
 
 
 ## Multiple expected values revised
@@ -47,9 +46,7 @@ We should check if the result is one of the following values (1, 2, 3, 4, 5, 6)
 {i: any}
 {i: List::MoreUtils}
 
-
 We are going to use the "any" function of List::MoreUtils.
-
 
 ![](examples/perl/t/dice_any.t)
 
@@ -58,7 +55,6 @@ Output:
 ![](examples/perl/t/dice_any.out)
 
 {aside}
-
 This shows that there is some problem but we still don't know what exactly is the problem.
 Especially think if this is part of a larger test suit when one of the tests fail.
 We would like to see the actual value and maybe even the expected values.
@@ -637,7 +633,7 @@ making it a bit more convenient to use them.
 
 
 It also provides a nice set of extra features such as
-the <command>die_on_fail;</command> and <command>bail_on_fail</command> calls.
+the `die_on_fail;` and `bail_on_fail` calls.
 
 
 ![](examples/perl/t/test_most.t)
