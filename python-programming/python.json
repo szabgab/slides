@@ -77,6 +77,7 @@
         "forking.md",
         "multiprocess.md",
         "threads.md",
+        "multitasking.md",
         "async.md",
         "twisted.md",
         "optimizing-code.md",

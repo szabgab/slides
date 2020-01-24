@@ -1,0 +1,15 @@
+Start 1 sleeping for 6s
+Start 2 sleeping for 0.7s
+Finish 2
+Start 3 sleeping for 0.8s
+Finish 3
+Start 4 sleeping for 0.3s
+Finish 4
+Start 5 sleeping for 0.4s
+Finish 5
+Start 6 sleeping for 3s
+Finish 6
+Start 7 sleeping for 0.1s
+Finish 7
+Finish 1
+do some work after all the jobs are done
