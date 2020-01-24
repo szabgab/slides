@@ -2,9 +2,6 @@
 {id: regex1}
 
 
-
-
-
 ## What are regexes good for ?
 {id: regexes}
 
@@ -12,7 +9,6 @@
 * Validate the format of some value (string) (e.g. is it a decimal number?, is it a hex?)
 * Find if there are repetitions in a string
 * Analyze a string and fetch parts of if given some loose description
-
 
 
 ## Examples
@@ -34,14 +30,9 @@ Fetch numbers that look like 09-1234567
 then also fetch +972-2-1234567
 and maybe also 09-123-4567
 
-
 Check if in a given text passing your network there are credit card numbers....
 
-
 Given a text find if the word "password" is in it and fetch the surrounding text.
-
-
-
 
 Given a log file like this:
 
@@ -99,10 +90,7 @@ if (not $str =~ /a/) {
 {id: grep}
 {i: grep}
 
-```
-The Unix(ish) grep command was named after the
-<command>g/re/p</command> command of the UNIX ed editor.
-```
+The Unix(ish) grep command was named after the `g/re/p` command of the UNIX ed editor.
 
 ```
 $ grep REGEX file(s)
@@ -114,35 +102,27 @@ $ grep REGEX file(s)
 
 Linux
 
-
 * kregexpeditor
 * regexxer
 
-
 Windows
-
 
 * [Regex Coach](http://weitz.de/regex-coach/)
 
-
 Commercial on Windows
-
 
 * [Regex Buddy](http://www.regexbuddy.com/) teaching Regex
 * [Power Grep](http://www.powergrep.com/) grep with gui
 
-
 Both Linux and Windows
-
 
 * [ack](https://metacpan.org/pod/ack)
 * [Padre](https://metacpan.org/pod/Padre)
 
 
-
-
 ## Find a string in a file
 {id: grep-like-perl}
+
 ![](examples/regex/find_string.pl)
 
 
@@ -297,10 +277,7 @@ Input: "##"
 {id: regex-optional}
 {i: ?}
 
-
-Match the word <command>color</command> or the word <command>colour</command>
-
-
+Match the word **color** or the word **colour**.
 
 ```
 Regex: /colou?r/
@@ -352,17 +329,14 @@ Quantifiers apply to the thing in front of them
 /ax{17}a/   #                                 axxxxxxxxxxxxxxxxxa
 ```
 
-
-   <table>
-<tr><td> * </td><td> 0-  </td></tr>
-<tr><td> + </td><td> 1-  </td></tr>
-<tr><td> ? </td><td> 0-1 </td></tr>
-<tr><td> {n,m} </td><td> n-m </td></tr>
-<tr><td> {n,} </td><td> n- </td></tr>
-<tr><td> {n} </td><td> n </td></tr>
-   </table>
-
-
+```
+*      0-
++      1-
+?      0-1
+{n,m}  n-m
+{n,}   n-
+{n}    n
+```
 
 
 ## Quantifiers on character classes
@@ -427,17 +401,17 @@ have to change it!
 ## Solutions: Regular expressions
 {id: solution-regular-expressions}
 
-* has a 'q' **/q/**
-* starts with a 'q' **/^q/**
-* has 'th' **/th/**
-* has an 'q' or a 'Q' **/[qQ]/**
-* has a '*' in it **/\*/**
-* another solution: **/[*]/**
-* starts with an 'q' or an 'Q' **/^[qQ]/**
-* has both 'a' and 'e' in it **$str =~ /a/ and $str =~ /e/**
-* has an 'a' and somewhere later an 'e' **/a.*e/**
-* does not have an 'a' **$str !~ /a/****Not good: /[^a]/**
-* does not have an 'a' nor 'e' **$str !~ /[ae]/**
+* has a 'q' `/q/`
+* starts with a 'q' `/^q/`
+* has 'th' `/th/`
+* has an 'q' or a 'Q' `/[qQ]/`
+* has a `*` in it `/\*/`
+* another solution: `/[*]/`
+* starts with an 'q' or an 'Q' `/^[qQ]/`
+* has both 'a' and 'e' in it `$str =~ /a/ and $str =~ /e/`
+* has an 'a' and somewhere later an 'e' `/a.*e/`
+* does not have an 'a' `$str !~ /a/`  Not good: `/[^a]/`
+* does not have an 'a' nor 'e' `$str !~ /[ae]/`
 * has an 'a' but not 'e' **$str =~ /a/ and $str !~ /e/**
 * has at least 2 consecutive vowels (a,e,i,o,u) like in the word "bear" **/[aeiou]{2}/**
 * has at least 3 vowels  **/[aeiou].*[aeiou].*[aeiou]/**
@@ -446,7 +420,7 @@ have to change it!
 * yet another solution: **length($str) >= 6**
 * has at exactly 6 characters: **length($str) == 6**
 * all the words with either 'Bar' or 'Baz' in them  **/Ba[rz]/**
-* all the rows with either 'apple pie' or 'banana pie' in them <programlisting> if ($row =~ /apple pie/ or $row =~ /banana pie/){ } </programlisting>
+* all the rows with either 'apple pie' or 'banana pie' in them `if ($row =~ /apple pie/ or $row =~ /banana pie/){ }`
 * for each row print if it was apple or banana pie?
 
 

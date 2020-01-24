@@ -262,7 +262,7 @@ foreach my $i (1..10) {
 
 Use the following command to run the script:
 
-<command>perl examples/arrays/process_csv_file_short.pl examples/arrays/process_csv_file.csv</command>
+`perl examples/arrays/process_csv_file_short.pl examples/arrays/process_csv_file.csv`
 
 ```
 
@@ -271,16 +271,14 @@ Use the following command to run the script:
 {id: oneliner-sum-numbers-in-csv}
 
 ```
-<command>perl -n -a -F; -e '$sum += $F[2]; END {print $sum}' examples/arrays/process_csv_file.csv</command>
+perl -n -a -F; -e '$sum += $F[2]; END {print $sum}' examples/arrays/process_csv_file.csv
 
--n  = loop over lines but do NOT print them 
+-n  = loop over lines but do NOT print them
 -a  = autosplit by ' ' and assign to @F
 -F; = replace the split string by ';'
-
-The END block gets executed at the end of the execution and only once.
 ```
 
-
+The `END` block gets executed at the end of the execution and only once.
 
 
 ## process csv file using Text::CSV
@@ -392,13 +390,7 @@ Now I can tell you that what you have is actually a 1 dimensional space fight
 and you are trying to guess the distance of the enemy space ship.
 As it is not a sitting duck, after every shot the spaceship can randomly move +2-2.
 
-
-
-
-
-<emp>Extra exercise:</emp>
-
-
+**Extra exercise:**
 
 * For training purposes you might want to limit the outer space to 0-100.
 * Make sure the enemy does not wander off the training field.
@@ -406,17 +398,13 @@ As it is not a sitting duck, after every shot the spaceship can randomly move +2
 * Keep track of the minimum and maximum number of hits (in a file).
 
 
-
-
 ## Solution: improved color selector
 {id: solution-color-selector}
+
 ![](examples/arrays/color_selector.pl)
 
 
 ## Solution: Improve the Number Guessing game
 {id: solution-number-guessing-game-2}
+
 ![](examples/arrays/number_guessing.pl)
-
-
-
-

@@ -16,11 +16,8 @@ Download [Node.js](http://nodejs.org/).
 Run as `node`. Ctrl-C (twice) to quit.
 
 
-On Ubuntu I had to install the <emp>nodejs</emp> package and the command is called
-<emp>nodejs</emp> as there was already command called node.
-
-
-
+On Ubuntu I had to install the `nodejs` package and the command is called
+`nodejs` as there was already command called node.
 
 On Mac first install [Homebrew](http://mxcl.github.io/homebrew/) and then `brew install node`.
 
@@ -151,41 +148,44 @@ false, null, undefined
 
 ## Global Scope
 {id: global-scope}
+
 ![](examples/javascript/global_scope.js)
 
-
-Having <emp>var</emp> in the body of the code, in the global scope does not matter.
+Having `var` in the body of the code, in the global scope does not matter.
 It is the same variable all over, but having it inside a function will restrict
 the scope of that variable.
-
 
 ![](examples/javascript/global_scope_var.js)
 
 
 ## Local Scope
 {id: local-scope}
+
 ![](examples/javascript/local_scope_var.js)
 ![](examples/javascript/local_scope_var_var.js)
 
 
-
 ## Objects
 {id: javascrip-objects}
+
 ![](examples/javascript/objects.js)
 
 
 ## Objects - more
 {id: javascrip-objects-more}
+
 ![](examples/javascript/objects_more.js)
 
 
 ## Objects - deep
 {id: javascrip-objects-deep}
+
 ![](examples/javascript/objects_deep.js)
 
 
 ## Arrays
 {id: javascrip-array}
+
 ![](examples/javascript/array.js)
 
 

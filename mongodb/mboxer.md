@@ -118,7 +118,7 @@ res = db.messages.mapReduce(map, red, {out: "Result"})
 
 
 {aside}
-Get the result from the temporary collection called <b>res</b>
+Get the result from the temporary collection called `res`.
 {/aside}
 
 
