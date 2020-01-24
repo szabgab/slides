@@ -58,10 +58,10 @@ after
 {id: conditional-main}
 {i: __main__}
 {i: __name__}
+
 ![](examples/basics/conditional_main.py)
 
 * We'll cover this later but in case you'd like, you can include this conditional execution of the main function.
-
 
 
 ## Input - Output I/O
@@ -69,31 +69,26 @@ after
 
 Input
 
-
 * Keyboard (Standard Input, Command line, GUI)
 * Mouse (Touch pad)
 * Touch screen
 * Files, Filesystem
 * Network  (e.g. in Web applications)
 
-
-
 Output
-
 
 * Screen
 * File
 * Network
 
 
-
 ## print in Python 2
 {id: print-in-python2}
 
 {aside}
-
 print is one of the keywords that changed between Python 2 and Python 3. In Python 2 it does not need parentheses, in Python 3 it is a function and it needs to have parentheses.
 {/aside}
+
 ![](examples/basics/print.py)
 
 ```
@@ -119,12 +114,12 @@ helloworld
 write takes exactly one parameter
 
 
-
 ## print in Python 3
 {id: print-in-python3}
 {i: print}
 {i: end}
 {i: sep}
+
 ![](examples/basics/print3.py)
 
 ```
@@ -149,14 +144,14 @@ FooBar
 END
 ```
 
-sep will set the character separating values.
-
+`sep` will set the character separating values.
 
 
 ## print in Python 2 as if it was Python 3
 {id: print-in-python2-as-in-python3}
 {i: __future__}
 {i: print_function}
+
 ![](examples/basics/print3_in2.py)
 
 ```
@@ -177,6 +172,7 @@ What if we run some code with **print "hello"** using Python 3?
 {i: raw_input}
 {i: prompt}
 {i: STDIN}
+
 ![](examples/basics/prompt2.py)
 
 ```
@@ -193,6 +189,7 @@ What happens if you run this with Python 3 ?
 ```
 /usr/bin/python3 prompt2.py
 ```
+
 ![](examples/basics/prompt2.err)
 
 
@@ -203,9 +200,9 @@ What happens if you run this with Python 3 ?
 {i: STDIN}
 
 {aside}
-
 In Python 3 the **raw_input()** function was replaced by the **input()** function.
 {/aside}
+
 ![](examples/basics/prompt3.py)
 
 What happens if you run this using Python 2 ?
@@ -214,6 +211,7 @@ What happens if you run this using Python 2 ?
 ```
 /usr/bin/python2 prompt3.py
 ```
+
 ![](examples/basics/prompt3_1.err)
 ![](examples/basics/prompt3_2.err)
 
@@ -221,20 +219,21 @@ What happens if you run this using Python 2 ?
 ## Python2 input or raw_input?
 {id: python-prompt-python-2-and-3}
 
-In Python 2 always use **raw_input()** and never **input()**.
-
+In Python 2 always use `raw_input()` and never `input()`.
 
 
 ## Prompting both Python 2 and Python 3
 {id: python-prompt-both-python-2-and-3}
 {i: raw_input}
 {i: input}
+
 ![](examples/basics/prompt.py)
 
 
 ## Add numbers entered by the user (oups)
 {id: python-add-strings}
 {i: +}
+
 ![](examples/basics/add.py)
 
 ```
@@ -247,10 +246,9 @@ When reading from the command line using `input()`, the resulting value is a str
 Even if you only typed in digits. Therefore the addition operator `+` concatenates the strings.
 
 
-
-
 ## Add numbers entered by the user (fixed)
 {id: python-add-numbers}
+
 ![](examples/basics/add_numbers_input.py)
 
 ```
@@ -259,32 +257,35 @@ Second number: 3
 5
 ```
 
-
 In order to convert the string to numbers use the `int()` or the `float()` functions.
 Whichever is appropriate in your situation.
 
 
-
-
 ## How can I check if a string can be converted to a number?
 {id: is-it-a-number}
+{i: isdecimal}
+{i: isnumeric}
+
+* [stdtypes](https://docs.python.org/library/stdtypes.html)
+
+![](examples/basics/isnumber.py)
+![](examples/basics/isnumber.out)
 
 * We'll talk about this later. For now assume that the user enters something that can be converted to a number.
 * Use Regular Expressions (regexes) to verify that the input string looks like a number.
 * Wrap the code in try-except block to catch any exception raised during the conversion.
 
-
-
-
 ## Converting string to int
 {id: converting-to-int}
 {i: int}
+
 ![](examples/basics/converting_to_int.py)
 ![](examples/basics/converting_string_to_int.py)
 
 
 ## Converting float to int
 {id: converting-float-to-int}
+
 ![](examples/basics/converting_float_to_int.py)
 ![](examples/basics/converting_floating_string_to_int.py)
 ![](examples/basics/converting_to_int_via_float.py)
@@ -294,12 +295,14 @@ Whichever is appropriate in your situation.
 {id: python-conditionals-if-else}
 {i: else}
 {i: if}
+
 ![](examples/basics/if.py)
 
 
 ## Conditionals: else if
 {id: python-conditionals-else-if}
 {i: else if}
+
 ![](examples/basics/else-if.py)
 
 
@@ -307,6 +310,7 @@ Whichever is appropriate in your situation.
 {id: python-conditionals-elif}
 {i: elif}
 {i: else if}
+
 ![](examples/basics/elif.py)
 
 ## Ternary operator
@@ -317,9 +321,10 @@ Whichever is appropriate in your situation.
 
 ## Case or Switch in Python
 {id: case-switch}
+{i: case}
+{i: switch}
 
 * There is no case or switch statement in Python.
-
 
 
 ## Exercise: Rectangular
@@ -340,9 +345,7 @@ The area is 12
 ## Exercise: Calculator
 {id: exercise-calculator}
 
-Create a script that accepts 2 numbers and an operator (+, -, *, /),
-and prints the result of the operation.
-
+Create a script that accepts 2 numbers and an operator `(+, -, *, /)`, and prints the result of the operation.
 
 ```
 python calc.py
@@ -364,6 +367,7 @@ Results: 42
 
 ## Solution: Area of rectangular
 {id: solution-rectangular}
+
 ![](examples/basics/rectangular.py)
 
 
@@ -385,6 +389,7 @@ Same in Python 2
 {id: command-line-arguments}
 {i: sys}
 {i: argv}
+
 ![](examples/basics/cli.py)
 
 ```
@@ -401,6 +406,7 @@ $ python examples/basic/cli.py
 ## Command line arguments - len
 {id: command-line-arguments-len}
 {i: len}
+
 ![](examples/basics/cli_len.py)
 
 
@@ -408,6 +414,7 @@ $ python examples/basic/cli.py
 {id: command-line-arguments-exit}
 {i: exit}
 {i: !=}
+
 ![](examples/basics/cli_exit.py)
 
 ```
@@ -427,21 +434,21 @@ echo $?
 ## Exercise: Calculator (argv)
 {id: exercise-calculator-argv}
 
-* Create a script that accepts 2 numbers and an operator (+, -, *, /), on the command line and prints the result of the operation.
-* python calc.py 2 + 3
-* python calc.py 6 / 2
-* python calc.py 6 * 2
-
-
+* Create a script that accepts 2 numbers and an operator `(+, -, *, /)`, on the command line and prints the result of the operation.
+* `python calc.py 2 + 3`
+* `python calc.py 6 / 2`
+* `python calc.py 6 * 2`
 
 
 ## Solution: Area of rectangular (argv)
 {id: solution-rectangular-argv}
+
 ![](examples/basics/rectangular_argv.py)
 
 
 ## Solution: Calculator eval
 {id: solution-calculator-eval}
+
 ![](examples/basics/calculator_eval.py)
 
 ```
@@ -477,21 +484,16 @@ This is not your fault as a programmer. It is a user error. The correct way to r
 
 **Interpreted**
 
-
 * Shell, BASIC
 * Development cycle: Edit, Run.
 * Syntaxt check only during run-time.
 * Result: we distribute the source code.
 * Needs the right version of the interpreted on every target machine.
 
-
-
-Both?
-
+**Both?**
 
 * Java (running on JVM - Java Virtual Machine)
 * C# (running on CLR - Common Language Runtime)
-
 
 
 ## Is Python compiled or interpreted?
@@ -512,7 +514,6 @@ There are other syntax-like errors that will be only caught during execution
 * Jython and IronPython are mostly just compiler to JVM and CLR respectively.
 
 
-
 ## Flake8 checking
 {id: flake8-compile}
 
@@ -523,6 +524,4 @@ pip install flake8
 flake8 --ignore= compile.py
 ```
 ![](examples/basics/compile_flake8.out)
-
-
 
