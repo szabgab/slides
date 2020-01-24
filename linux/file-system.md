@@ -285,12 +285,5 @@ none             495K    14  495K    1% /run/user
 
 The /proc directory has a lot file-looking entitities that hold a lot of information
 about the system. Explore them and share your findings with us. For examply try to run
-<command>cat /proc/meminfo</command>.
-
-
-
-
-
-
-
+`cat /proc/meminfo`.
 

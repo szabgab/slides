@@ -71,17 +71,13 @@ java -jar /home/gabor/Downloads/selenium-server-standalone-2.42.2.jar
 {i: Chrome}
 {i: browser_name}
 
-
 Follow the instructions in the [wiki](https://github.com/gempesaw/Selenium-Remote-Driver/wiki/Chrome-browser-automation)
 
-
-
-
-<command>java -Dwebdriver.chrome.driver="/home/gabor/Downloads/chromedriver" -jar /home/gabor/Downloads/selenium-server-standalone-2.42.2.jar</command>
-
+```
+java -Dwebdriver.chrome.driver="/home/gabor/Downloads/chromedriver" -jar /home/gabor/Downloads/selenium-server-standalone-2.42.2.jar
+```
 
 ![](examples/www/selenium_ddg_chrome.pl)
-
 
 
 ## Selenium DuckDuckGo Search

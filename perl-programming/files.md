@@ -34,7 +34,7 @@ name of file and line number and possibly the chunk of the input.
 {id: while-loop}
 
 
-Another tool to create a loop is by using <emp>while</emp>.
+Another tool to create a loop is by using `while`.
 
 
 

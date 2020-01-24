@@ -1,18 +1,6 @@
 # Docker
 {id: docker-intro}
 
-## About me
-{id: about-me}
-
-* [Gabor Szabo](https://www.linkedin.com/in/szabgab/)
-* Help tech teams move faster with more stability and more predictability.
-* Automation
-* DevOps
-* [Code Maven Workshops](https://workshops.code-maven.com/)
-* [Code Maven Workshops on Meetup](https://www.meetup.com/Code-Mavens/)
-* [Training courses](https://hostlocal.com/)
-
-
 ## What is Docker?
 {id: what-is-docker}
 
@@ -376,31 +364,19 @@ to see the layers
 
 ```
 $ docker history ubuntu:19.10
-IMAGE               CREATED             CREATED BY                                      SIZE
-86f1f717b6d8        2 weeks ago         /bin/sh -c #(nop)  CMD ["/bin/bash"]            0B
-<missing>           2 weeks ago         /bin/sh -c mkdir -p /run/systemd && echo 'do…   7B
-<missing>           2 weeks ago         /bin/sh -c set -xe   && echo '#!/bin/sh' > /…   933B
-<missing>           2 weeks ago         /bin/sh -c [ -z "$(apt-get indextargets)" ]     985kB
-<missing>           2 weeks ago         /bin/sh -c #(nop) ADD file:d3be43e0fdf0de92d…   69MB
 ```
+
+![](examples/history_ubuntu.out)
+
 
 ## Docker history - multiple layers
 {id: docker-history-multiple-layers}
 
 ```
 docker history mydocker
-
-
-IMAGE               CREATED             CREATED BY                                      SIZE
-74ffc1660bdd        5 seconds ago       /bin/sh -c apt-get install -y python3           36.8MB
-109badc0b51e        14 seconds ago      /bin/sh -c apt-get upgrade -y                   916kB
-d7a23dda45d8        18 seconds ago      /bin/sh -c apt-get update                       23.8MB
-86f1f717b6d8        2 weeks ago         /bin/sh -c #(nop)  CMD ["/bin/bash"]            0B
-<missing>           2 weeks ago         /bin/sh -c mkdir -p /run/systemd && echo 'do…   7B
-<missing>           2 weeks ago         /bin/sh -c set -xe   && echo '#!/bin/sh' > /…   933B
-<missing>           2 weeks ago         /bin/sh -c [ -z "$(apt-get indextargets)" ]     985kB
-<missing>           2 weeks ago         /bin/sh -c #(nop) ADD file:d3be43e0fdf0de92d…   69MB
 ```
+
+![](examples/history_mydocker.out)
 
 
 ## Installing Python in Docker - one layer
@@ -411,15 +387,8 @@ d7a23dda45d8        18 seconds ago      /bin/sh -c apt-get update               
 ```
 $ docker build -t mydocker2 .
 $ docker history mydocker2
-
-IMAGE               CREATED             CREATED BY                                      SIZE
-6158659b63f3        57 seconds ago      /bin/sh -c apt-get update &&     apt-get upg…   60.7MB
-86f1f717b6d8        2 weeks ago         /bin/sh -c #(nop)  CMD ["/bin/bash"]            0B
-<missing>           2 weeks ago         /bin/sh -c mkdir -p /run/systemd && echo 'do…   7B
-<missing>           2 weeks ago         /bin/sh -c set -xe   && echo '#!/bin/sh' > /…   933B
-<missing>           2 weeks ago         /bin/sh -c [ -z "$(apt-get indextargets)" ]     985kB
-<missing>           2 weeks ago         /bin/sh -c #(nop) ADD file:d3be43e0fdf0de92d…   69MB
 ```
+![](examples/history_mydocker2.out)
 
 ## Python CLI in Docker
 {id: python-cli-in-docker}

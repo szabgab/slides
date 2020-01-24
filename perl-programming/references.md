@@ -12,7 +12,6 @@
     \&amp;f    # reference to function
 ```
 
-
 ## Passing values to a function
 {id: simple-function}
 
@@ -126,19 +125,15 @@ to copy them within the function.
 my $names_ref = \@names;
 ```
 
+```
+Array      Array Reference
+@names     @{ $names_ref }
+$names[0]  ${ $names_ref }[0]
+           $names_ref->[0]
+$#names    $#$names_ref
+```
 
-
-<table>
-<tr><td>Array</td>      <td>Array Reference</td></tr>
-<tr><td>@names</td>     <td>@{ $names_ref }</td></tr>
-<tr><td>$names[0]</td>  <td>${ $names_ref }[0]</td></tr>
-<tr><td></td>           <td>$names_ref->[0]</td></tr>
-<tr><td>$#names</td>    <td>$#$names_ref</td></tr>
-</table>
-You really don't want to use this $#$names_ref among people...
-
-
-
+You really don't want to use this `$#$names_ref` among people...
 
 
 ## Process arrays without copying
@@ -270,16 +265,13 @@ to Hashes as well.
 my $phones_ref = \%phones;
 ```
 
-
-<table>
-<tr><td>Hash</td>          <td>Hash Reference</td></tr>
-<tr><td>%phones</td>       <td>%{ $phones_ref }</td></tr>
-<tr><td>$phones{Foo}</td>  <td>${ $phones_ref }{Foo}</td></tr>
-<tr><td></td>              <td>$phones_ref->{Foo}</td></tr>
-<tr><td>keys %phones</td>  <td>keys %{ $phones_ref }</td></tr>
-</table>
-
-
+```
+Hash            Hash Reference
+%phones         %{ $phones_ref }
+$phones{Foo}    ${ $phones_ref }{Foo}
+                $phones_ref->{Foo}
+keys %phones    keys %{ $phones_ref }
+```
 
 
 ## Print out the content of a reference
@@ -925,11 +917,13 @@ DumpFile 'csv.yml', \%data; # in read_csv_file_hash.pl
 
 ## Solution: Create a cache for NetSlow
 {id: solution-netslow}
+
 ![](examples/references/netslow_cache.pl)
 
 
 ## Solution: NetSlow cache with timeout
 {id: solution-netslow-timeout}
+
 ![](examples/references/netslow_cache_timeout.pl)
 
 
@@ -937,9 +931,7 @@ DumpFile 'csv.yml', \%data; # in read_csv_file_hash.pl
 {id: references-resources}
 
 
-Perl documentation:
-
-
+**Perl documentation:**
 
 * perlreftut - Mark Jason Dominus's very short tutorial about references
 * perllol - Arrays of Arrays
@@ -947,10 +939,7 @@ Perl documentation:
 * perlref - Perl references and nested data structures
 * perldata - Perl data types
 
-
-
-Books:
-</p> 
+**Books:**
 
 * Perl Objects, References &amp; Modules (Intermediate Perl)
 * Advanced Perl Programming 1st edition !

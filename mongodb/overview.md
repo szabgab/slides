@@ -82,10 +82,7 @@ There are many more [languages](https://docs.mongodb.com/ecosystem/drivers/) sup
 ## Auto-sharding
 {id: auto-sharding}
 
-
-The <b>mongos</b> process knows which shard holds which part of the data.
-
-
+The `mongos` process knows which shard holds which part of the data.
 
 
 ## Sharding
