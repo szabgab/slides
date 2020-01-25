@@ -1,0 +1,8 @@
+<class 'generator'>
+42
+19
+23
+Traceback (most recent call last):
+  File "examples/generators/simple_generator_next.py", line 11, in <module>
+    print(n.__next__())
+StopIteration

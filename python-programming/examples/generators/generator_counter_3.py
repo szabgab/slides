@@ -10,6 +10,3 @@ def counter():
 
 for c in counter():
     print(c)
-# 1
-# 2
-# 3

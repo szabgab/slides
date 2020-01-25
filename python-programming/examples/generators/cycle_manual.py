@@ -13,8 +13,3 @@ for c in cycle(['A', 'B', 'C']):
     i += 1
     if i >= 4:
         break
-
-# A
-# B
-# C
-# A

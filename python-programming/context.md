@@ -12,10 +12,35 @@ that still leaves the bad-code that raises exception avoiding the cleanup. That 
 
 ```
 start
+do
+do
+do
+do
+cleanup
+```
+
+What is we have some conditions for early termination?
+
+```
+start
+do
+do
+if we are done early:
+   cleanup
+   early-end
+do
+do
+cleanup
+```
+
+What if we might have an exception in the code?
+
+```
+start
 try:
    do
    do
-   if something:
+   if we are done early:
       cleanup
       early-end
    do

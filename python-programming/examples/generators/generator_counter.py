@@ -1,6 +1,6 @@
 def counter():
     n = 1
-    while(True):
+    while True:
         yield n
         n += 1
 

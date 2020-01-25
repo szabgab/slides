@@ -15,7 +15,6 @@ def do_something(filename):
             print(line)
 
 
-
 def main():
     if len(sys.argv) != 2:
         exit(f"Usage: {sys.argv[0]} FILENAME")
@@ -23,6 +22,3 @@ def main():
     do_something(filename)
 
 main()
-
-
-
