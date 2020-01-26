@@ -1,0 +1,17 @@
+before one.txt
+100.0
+after  one.txt
+In finally after trying file one.txt
+
+before zero.txt
+Exception division by zero of type ZeroDivisionError in file zero.txt
+In finally after trying file zero.txt
+
+before two.txt
+In finally after trying file two.txt
+Traceback (most recent call last):
+  File "finally.py", line 9, in <module>
+    module.read_and_divide(filename)
+  File "/home/gabor/work/slides/python-programming/examples/exceptions/module.py", line 3, in read_and_divide
+    with open(filename, 'r') as fh:
+FileNotFoundError: [Errno 2] No such file or directory: 'two.txt'
