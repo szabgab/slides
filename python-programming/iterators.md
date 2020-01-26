@@ -1,25 +1,11 @@
 # Iterators - with and without Itertools
 {id: iterators-in-python}
 
-## Iterators vs Generators
-{id: iterators-vs-generators}
-
-* a generator is an iterator
-* an iterator is an iterable
-
-![](examples/advanced/iterable.py)
-
-* Genarators are a simpler way to create an iterable object that iterators, but iterators allow for more complex iterables.
-* To create a generator we only need a single function with **yield**.
-* To create an iterator we need a class with two methods: **__iter__** and **__next__**
-
-![](examples/advanced/list_vs_generator.py)
-![](examples/advanced/list_vs_generator.out)
-
-## range is an iterator
+## range behaves almost like an iterator
 {id: range-is-an-iterator}
 
-The `range` function in Python 3 allows us to iterate over numbers.
+The `range` function in Python 3 is not a real "iterator" but in many aspects it behaves as one.
+Specifically it allows us to iterate over numbers.
 
 ![](examples/iterators/range.py)
 ![](examples/iterators/range.out)
@@ -30,7 +16,6 @@ The `range` function in Python 3 allows us to iterate over numbers.
 {i: next}
 {i: __iter__}
 {i: __next__}
-
 
 We can implement a similar iterator using the following code.
 

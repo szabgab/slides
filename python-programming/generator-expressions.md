@@ -1,6 +1,22 @@
 # Generators and Generator Expressions
 {id: generator-experssions}
 
+## Iterators vs Generators
+{id: iterators-vs-generators}
+
+* a generator is an iterator
+* an iterator is an iterable
+
+![](examples/advanced/iterable.py)
+
+* Genarators are a simpler way to create an iterable object that iterators, but iterators allow for more complex iterables.
+* To create a generator we only need a single function with **yield**.
+* To create an iterator we need a class with two methods: **__iter__** and **__next__**
+
+![](examples/advanced/list_vs_generator.py)
+![](examples/advanced/list_vs_generator.out)
+
+
 ## List comprehension vs Generator Expression
 {id: list-comprehension-vs-generator-expression}
 {i: getsizeof}
