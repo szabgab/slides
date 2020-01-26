@@ -151,7 +151,7 @@ Expected output:
 ![](examples/iterators/diff.txt)
 
 ## Exercise: collect packets
-{id: collect-packets}
+{id: exercise-collect-packets}
 
 * You get a series of packets (e.g. lines in a file)
 * In each line you have several fields: id, seqid, maxseq, content
@@ -162,6 +162,8 @@ Expected output:
 
 In each iteration return a message that is built up from all the packages in the given sequence.
 
+![](examples/iterators/packets/packets.txt)
+![](examples/iterators/packets/packets.out)
 
 ## Solution: iterators - limit Fibonacci
 {id: solution-iterators-limit}
@@ -189,4 +191,25 @@ In each iteration return a message that is built up from all the packages in the
 ```
 python diff.py first.txt second.txt diff.txt
 ```
+
+## Solution: collect packets
+{id: solution-collect-packets}
+
+The implementation
+
+![](examples/iterators/packets/packets.py)
+
+The use:
+
+![](examples/iterators/packets/use_packetes.py)
+
+The test to verify it
+
+![](examples/iterators/packets/test_packets.py)
+
+Test cases:
+
+![](examples/iterators/packets/packets.json)
+![](examples/iterators/packets/packets1.txt)
+![](examples/iterators/packets/packets2.txt)
 
