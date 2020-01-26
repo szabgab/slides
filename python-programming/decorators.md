@@ -114,6 +114,10 @@ f = some_decorator(f)
 * Accept `*args` and `**kwargs` and pass them on.
 
 ![](examples/memoize/any_func.py)
+
+## Decorate function with any signature - implementation
+{id: decorate-function-with-any-signature-implementation}
+
 ![](examples/memoize/decor_any.py)
 ![](examples/memoize/any_func.out)
 

@@ -1,5 +1,4 @@
-def create_counter():
-    count = 0
+def create_counter(count=0):
     def internal():
         nonlocal count
         count += 1
@@ -13,11 +12,8 @@ print(counter())
 print(counter())
 print()
 
-other = create_counter()
+other = create_counter(42)
 print(counter())
 print(other())
 print(counter())
 print(other())
-
-print()
-print(count)

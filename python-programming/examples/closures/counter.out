@@ -1,11 +1,13 @@
 1
 2
 3
+
 4
 1
 5
 2
+
 Traceback (most recent call last):
-  File "counter.py", line 21, in <module>
+  File "counter.py", line 23, in <module>
     print(count)
 NameError: name 'count' is not defined

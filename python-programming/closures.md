@@ -89,6 +89,10 @@ print(bank())    # 24
 print(bank(10, prev=True))   # 24
 print(bank())    # 34
 ```
+## Exercise: counter with parameter
+{id: exercise-counter-with-parameter}
+
+Change the counter example to accept a parameter and start counting from that number.
 
 
 ## Solution: closure bank
@@ -96,4 +100,10 @@ print(bank())    # 34
 
 ![](examples/closures/bank.py)
 ![](examples/closures/bank.out)
+
+## Solution: counter with parameter
+{id: solution-counter-with-parameter}
+
+![](examples/closures/counter_param.py)
+![](examples/closures/counter_param.out)
 
