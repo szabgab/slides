@@ -7,8 +7,8 @@ def f7(x):
 def f23(x):
     return x + 23
 
-print(f3(2))    #  5
-print(f7(3))    # 10
-print(f3(4))    #  7
-print(f7(10))   # 17
-print(f23(19))  # 42
+print(f3(2))
+print(f7(3))
+print(f3(4))
+print(f7(10))
+print(f23(19))

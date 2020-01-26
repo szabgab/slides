@@ -15,6 +15,16 @@
 ![](examples/closures/counter_global.py)
 ![](examples/closures/counter_global.out)
 
+## Create incrementors
+{id: creat-incrementors}
+
+In order to use in various map-expressions, we need a couple of
+functions that - for simplicity - need to increment a number:
+
+![](examples/closures/create_incrementors.py)
+![](examples/closures/create_incrementors.out)
+
+
 ## Create internal function
 {id: create-internal-function}
 
@@ -44,24 +54,21 @@
 ![](examples/closures/counter.out)
 
 
-## Create incrementors
-{id: creat-incrementors}
-
-In order to use in various map-expressions, we need a couple of
-function that - for simplicity - need to increment a number:
-
-![](examples/closures/create_incrementors.py)
-
 
 ## Make incrementor with def (closure)
 {id: make-incrementor-def}
 {i: closure}
+
 ![](examples/closures/make_incrementor_def.py)
+![](examples/closures/make_incrementor_def.out)
 
 
 ## Make incrementor with lambda
 {id: make-incrementor-lambda}
+
 ![](examples/closures/make_incrementor.py)
+![](examples/closures/make_incrementor.out)
+
 
 ## Exercise: closure bank
 {id: exercise-closure-bank}
@@ -81,7 +88,6 @@ print(bank())    # 24
 
 print(bank(10, prev=True))   # 24
 print(bank())    # 34
-
 ```
 
 
@@ -89,3 +95,5 @@ print(bank())    # 34
 {id: solution-closure-bank}
 
 ![](examples/closures/bank.py)
+![](examples/closures/bank.out)
+
