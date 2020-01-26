@@ -1,6 +1,41 @@
 # Closures
 {id: closures}
 
+## Counter local - not working
+{id: counter-local}
+
+![](examples/closures/counter_local.py)
+![](examples/closures/counter_local.out)
+
+
+## Counter with global
+{id: counter-with-global}
+{i: global}
+
+![](examples/closures/counter_global.py)
+![](examples/closures/counter_global.out)
+
+## Create internal function
+{id: create-internal-function}
+
+![](examples/closures/create_internal_func.py)
+![](examples/closures/create_internal_func.out)
+
+
+## Create function by a function
+{id: create-function-by-a-function}
+
+![](examples/closures/create_func.py)
+![](examples/closures/create_func.out)
+
+
+## Create function with parameters
+{id: create-functio-with-parameters}
+
+![](examples/closures/create_param_func.py)
+![](examples/closures/create_param_func.out)
+
+
 ## Counter closure
 {id: counter-closure}
 {i: nonlocal}

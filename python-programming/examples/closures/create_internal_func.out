@@ -1,0 +1,5 @@
+Hello world
+Traceback (most recent call last):
+  File "create_internal_func.py", line 8, in <module>
+    internal()
+NameError: name 'internal' is not defined
