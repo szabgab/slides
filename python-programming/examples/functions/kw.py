@@ -1,10 +1,4 @@
-def f(op, *things, **kw):
-    print(op)
-    print(things)
+def f(**kw):
     print(kw)
 
-f(2, 3, 4, a = 23, b = 12)
-
-# 2
-# (3, 4)
-# {'a': 23, 'b': 12}
+f(a = 23, b = 12)

@@ -5,6 +5,7 @@
 {id: add-functions}
 {i: def}
 {i: return}
+
 ![](examples/functions/add_function.py)
 
 {aside}
@@ -84,7 +85,7 @@ They are all optional and can be given in any order after the positional argumen
 {/aside}
 
 
-## Arbitrary number of arguments
+## Arbitrary number of arguments `*`
 {id: arbitrary-number-of-arguments}
 {i: `*args`}
 {i: tuple}
@@ -107,27 +108,36 @@ The *numbers argument can be preceded by any number of regular arguments
 ![](examples/functions/super.py)
 ![](examples/functions/super.py.out)
 
-
-## Extra key-value pairs in parameters
+## Arbitrary key-value pairs in parameters `**`
 {id: kw-value-pairs}
 {i: **kwargs}
+
 ![](examples/functions/kw.py)
+![](examples/functions/kw.out)
+
+
+## Extra key-value pairs in parameters
+{id: extra-kw-value-pairs}
+{i: **kwargs}
+
+![](examples/functions/extra_kw.py)
+![](examples/functions/extra_kw.out)
 
 
 ## Every parameter option
 {id: every-parameter-option}
-![](examples/functions/full.py)
 
+![](examples/functions/full.py)
 
 
 ## Duplicate declaration of functions (multiple signatures)
 {id: duplicate-declaration}
+
 ![](examples/functions/duplicate_add.py)
 
 The second declaration silently overrides the first declaration.
 
-
-[pylint](http://www.pylint.org/) can find such problems, along with a bunch of others.
+* [pylint](http://www.pylint.org/) can find such problems, along with a bunch of others.
 
 
 ## Recursive factorial
@@ -142,6 +152,7 @@ n! = n * (n-1)!
 f(0) = 1
 f(n) = n * f(n-1)
 ```
+
 ![](examples/functions/factorial.py)
 
 
@@ -153,6 +164,7 @@ fib(1) = 1
 fib(2) = 1
 fib(n) = fib(n-1) + fib(n-2)
 ```
+
 ![](examples/functions/fibonacci.py)
 
 {aside}
@@ -162,6 +174,7 @@ Python also supports recursive functions.
 
 ## Non-recursive Fibonacci
 {id: non-recursive-fibonacci}
+
 ![](examples/functions/simple_fibonacci.py)
 
 
