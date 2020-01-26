@@ -1,4 +1,4 @@
-class Fibonacci(object):
+class Fibonacci():
     def __init__(self):
         self.values = []
 

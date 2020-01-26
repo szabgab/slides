@@ -1,4 +1,4 @@
-class Range(object):
+class Range():
     def __init__(self, start, end):
         self.current = start
         self.end = end

@@ -102,6 +102,9 @@ a number.
 ## Exercies: Raise My Exception
 {id: exercise-exception-raise-my-exception}
 
+This is very similar to the exercise the first chapter about exceptions, but
+in this case you need to create your own hierarchy of exception classes.
+
 * Write a function that expects a positive integer as its single parameter.
 * Raise exception if the parameter is not a number.
 * Raise a different exception if the parameter is not positive.
