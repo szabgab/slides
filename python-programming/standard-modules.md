@@ -141,6 +141,7 @@ os.path.expanduser('~')
 ## Traverse directory tree - list directories recursively
 {id: travers-directory-tree}
 {i: walk}
+{i: os.walk}
 
 ![](examples/os/traverse_tree.py)
 
@@ -148,6 +149,8 @@ os.path.expanduser('~')
 
 ## os.path.join
 {id: os-path-join}
+{i: os.path.join}
+{i: join}
 
 ![](examples/os/path_join.py)
 
@@ -157,6 +160,8 @@ os.path.expanduser('~')
 {i: dir}
 {i: listdir}
 {i: path}
+{i: os.listdir}
+
 
 ![](examples/os/dir.py)
 
@@ -165,15 +170,17 @@ os.path.expanduser('~')
 {id: expanduser}
 {i: expanduser}
 {i: ~}
+{i: os.path.expanduser}
 
 ![](examples/os/expanduser.py)
 
 
 ## External command with system
 {id: external-command-with-system}
+{i: os.system}
+{i: system}
 
 ![](examples/os/os_system.py)
-
 
 If you wanted to list the content of a directory in an os independent way you'd use `os.listdir('.')`
 or you could use the `glob.glob("*.py")` function to have a subset of files.
@@ -191,7 +198,6 @@ Run external command and capture the output
 ![](examples/process/run_command.py)
 
 In this example p is an instance of the subprocess.PIPE class. The command is executed when the object is created.
-
 
 
 ## subprocess in the background
