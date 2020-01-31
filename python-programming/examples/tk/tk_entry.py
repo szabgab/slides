@@ -7,9 +7,10 @@ entry = tk.Entry(app)
 entry.pack()
 
 def clicked():
-   print("clicked")
-   print(entry.get())
-   exit()
+    print("clicked")
+    print(entry.get())
+    app.destroy()
+    exit()
 
 button = tk.Button(app, text='Close', width=25, command=clicked)
 button.pack()

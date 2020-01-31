@@ -1,12 +1,18 @@
 import tkinter as tk
 
+app = tk.Tk()
+app.title('Text Entry')
+
+entry = tk.Entry(app)
+entry['show'] = '*'
+entry.pack()
+
 def clicked():
-    app.destroy()
     print("clicked")
+    print(entry.get())
+    app.destroy()
     exit()
 
-app = tk.Tk()
-app.title('Single Button')
 button = tk.Button(app, text='Close', width=25, command=clicked)
 button.pack()
 app.mainloop()

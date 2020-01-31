@@ -12,9 +12,10 @@ cb2 = tk.Checkbutton(app, text='female', variable=var2)
 cb2.pack()
 
 def clicked():
-   print(var1.get())
-   print(var2.get())
-   exit()
+    print(var1.get())
+    print(var2.get())
+    app.destroy()
+    exit()
 
 button = tk.Button(app, text='Close', width=25, command=clicked)
 button.pack()

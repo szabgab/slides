@@ -25,8 +25,58 @@ sudo apt-get install python3-tk
 
 * [Tk](https://docs.python.org/library/tk.html)
 * The [Tk Command](https://www.tcl.tk/man/tcl8.6/TkCmd/contents.htm) of [Tcl 8.6](https://www.tcl.tk/man/tcl8.6/)
-
 * [Python GUI Geeks for Geeks](https://www.geeksforgeeks.org/python-gui-tkinter/)
+
+## Tk Label
+{id: tk-label}
+{i: tkinter}
+{i: Tk}
+{i: Label}
+{i: pack}
+{i: mainloop}
+
+![](examples/tk/tk_label.py)
+
+## Tk Button
+{id: tk-button}
+{i: Button}
+
+![](examples/tk/tk_button.py)
+
+## Tk Button with action
+{id: tk-button-with-action}
+
+![](examples/tk/tk_button_with_action.py)
+
+## Tk Entry (one-line text entry)
+{id: tk-entry}
+{i: Entry}
+
+![](examples/tk/tk_entry.py)
+
+## Tk Entry for passwords and other secrets (hidden text)
+{id: tk-entry-passwords}
+
+![](examples/tk/tk_entry_secret.py)
+
+## Tk Checkbox
+{id: tk-checkbox}
+{i: Checkbox}
+
+![](examples/tk/tk_checkbox.py)
+
+## Tk Listbox
+{id: tk-listbox}
+{i: Listbox}
+{i: END}
+
+![](examples/tk/tk_listbox.py)
+
+## Tk Listbox Multiple
+{id: tk-listbox-multiple}
+
+![](examples/tk/tk_listbox_more.py)
+
 
 ## Simple Tk ap
 {id: tk-simple}
@@ -60,7 +110,7 @@ sudo apt-get install python3-tk
 ![](examples/tk/file_selector.py)
 
 ## Tk: Checkbox
-{id: tk-checkbox}
+{id: tk-checkbox2}
 {i: Checkbutton}
 
 ![](examples/tk/tk_checkbox_complex.py)
@@ -76,24 +126,11 @@ sudo apt-get install python3-tk
 ## Tk: Text Widget
 {id: tk-text-widget}
 
-* [](http://effbot.org/tkinterbook/text.htm)
+* [text](http://effbot.org/tkinterbook/text.htm)
 
 ## Getting started with Tk
 {id: getting-started-with-tk}
 {i: Tk}
 
 ![](examples/tk/tk_example.py)
-
-![](examples/tk/tk_button.py)
-![](examples/tk/tk_button_with_action.py)
-![](examples/tk/tk_entry.py)
-
-* password
-
-![](examples/tk/tk_checkbox.py)
-
-![](examples/tk/tk_label.py)
-![](examples/tk/tk_listbox.py)
-![](examples/tk/tk_listbox_loop.py)
-![](examples/tk/tk_listbox_more.py)
 
