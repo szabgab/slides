@@ -167,9 +167,19 @@ as it always contains the exit code of the most recent statement.
 
 * [Catching user input](http://tldp.org/LDP/Bash-Beginners-Guide/html/sect_08_02.html)
 
+## Counter
+{id: counter}
+
+![](examples/counter.sh)
+
+## Declare
+{id: other}
+{i: declare}
+{i: RANDOM}
+{i: %}
 
 
+* [](http://tldp.org/LDP/abs/html/declareref.html)
 
-
-
+![](examples/declare.sh)
 
