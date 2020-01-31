@@ -132,6 +132,13 @@ This is also a rather strange example, I don't think I'd use it in real code.
 ![](examples/strings/formatted_attributes.py)
 ![](examples/strings/formatted_attributes.out)
 
+## raw f-strings
+{id: raw-f-strings}
+{i: f}
+{i: r}
+
+![](examples/strings/fr.py)
+![](examples/strings/fr.out)
 
 
 
