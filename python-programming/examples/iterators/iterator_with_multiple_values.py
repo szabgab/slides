@@ -1,4 +1,4 @@
-class Counter():
+class SquareCounter():
    def __init__(self):
        self.count = 0
 
@@ -11,6 +11,6 @@ class Counter():
            raise StopIteration
        return self.count, self.count ** 2
 
-for cnt, sqr in Counter():
+for cnt, sqr in SquareCounter():
    print(f"{cnt}  {sqr}")
 

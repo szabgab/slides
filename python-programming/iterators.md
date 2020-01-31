@@ -1,11 +1,24 @@
 # Iterators - with and without Itertools
 {id: iterators-in-python}
 
+## A file-handle is an iterator
+{id: file-handle-as-iterator}
+{i: collections}
+{i: Iterator}
+{i: Iterable}
+{i: io}
+{i: TextIOWrapper}
+{i: issubclass}
+
+![](examples/iterators/read_file.py)
+![](examples/iterators/read_file.out)
+
+
 ## range behaves almost like an iterator
 {id: range-is-an-iterator}
 
-The `range` function in Python 3 is not a real "iterator" but in many aspects it behaves as one.
-Specifically it allows us to iterate over numbers.
+The `range` function in Python 3 is not a real "iterator" but it is an "iterable".
+In many aspects it behaves as an iterator. Specifically it allows us to iterate over numbers.
 
 ![](examples/iterators/range.py)
 ![](examples/iterators/range.out)
@@ -23,13 +36,32 @@ We can implement a similar iterator using the following code.
 * `__next__` (in Python 2 this used to ne `next`)
 * raise StopIteration
 
+![](examples/iterators/simple_iterator.py)
+![](examples/iterators/simple_iterator.out)
+
+## Iterator returning multiple values
+{id: iterator-returning-multiple-values}
+
+![](examples/iterators/iterator_with_multiple_values.py)
+![](examples/iterators/iterator_with_multiple_values.out)
+
+## Range-like iterator
+{id: range-like-iterator}
+
 ![](examples/iterators/range/it.py)
 ![](examples/iterators/range/count.py)
 ![](examples/iterators/range/count.out)
 
 
-## Unbound iterator
+## Unbound or infinite iterator
 {id: unbound-iterator}
+{i: next}
+
+![](examples/iterators/iterator.py)
+
+
+## Unbound iterator Fibonacci
+{id: unbound-iterator-fibonacci}
 
 ![](examples/iterators/unbound/fibonacci.py)
 ![](examples/iterators/unbound/fib.py)
@@ -197,9 +229,3 @@ Test cases:
 ![](examples/iterators/packets/packets.json)
 ![](examples/iterators/packets/packets1.txt)
 ![](examples/iterators/packets/packets2.txt)
-
-
-![](examples/iterators/iterator.py)
-![](examples/iterators/iterator_with_multiple_values.py)
-![](examples/iterators/simple_iterator.py)
-
