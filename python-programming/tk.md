@@ -35,11 +35,15 @@ sudo apt-get install python3-tk
 {i: pack}
 {i: mainloop}
 
+* [Label](https://effbot.org/tkinterbook/label.htm)
+
 ![](examples/tk/tk_label.py)
 
 ## Tk Button
 {id: tk-button}
 {i: Button}
+
+* [Button](https://effbot.org/tkinterbook/button.htm)
 
 ![](examples/tk/tk_button.py)
 
@@ -51,6 +55,8 @@ sudo apt-get install python3-tk
 ## Tk Entry (one-line text entry)
 {id: tk-entry}
 {i: Entry}
+
+* [Entry](https://effbot.org/tkinterbook/entry.htm)
 
 ![](examples/tk/tk_entry.py)
 
@@ -133,4 +139,18 @@ sudo apt-get install python3-tk
 {i: Tk}
 
 ![](examples/tk/tk_example.py)
+
+## Exercise: Tk - Calculator one line
+{id: exercise-tk-calcilator-one-line}
+
+Write a Tk application that behaves like a one-line calculator.
+It has an entry box where one can enter an expression like "2 + 3" and a button.
+When the button is pressed the expression is calculated.
+
+There is another button called "Quit" that will close the application.
+
+## Solution: Tk - Calculator one line
+{id: solution-tk-calcilator-one-line}
+
+![](examples/tk/calculator_one_line.py)
 
