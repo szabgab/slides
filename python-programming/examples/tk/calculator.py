@@ -1,5 +1,7 @@
 import tkinter as tk
 
+# This solutions is not ready yet
+
 app = tk.Tk()
 app.title('Calculator')
 
@@ -19,17 +21,18 @@ def close():
     exit()
 
 def enter(num):
-    print(num)
+    entry.insert(tk.END, num)
 
 def add_button(num):
-    cb =  lambda : enter(num)
-    btn = tk.Button(app, text=num, width=25, command=cb)
+    btn = tk.Button(app, text=num, width=25, command=lambda : enter(num))
     btn.pack()
     buttons[num] = btn
 
 buttons = {}
 for num in range(10):
     add_button(num)
+for op in ['+', '-', '*', '/']
+    add_button(op)
 
 
 calc_btn = tk.Button(app, text='Calculate', width=25, command=calc)

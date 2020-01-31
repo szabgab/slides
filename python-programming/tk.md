@@ -140,6 +140,22 @@ sudo apt-get install python3-tk
 
 ![](examples/tk/tk_example.py)
 
+## Tk Menubar
+{id: tk-menubar}
+{i: Menu}
+{i: add_cascade}
+{i: add_command}
+
+* [Menubar](http://effbot.org/zone/tkinter-menubar.htm)
+* [Menu](http://effbot.org/tkinterbook/menu.htm)
+
+* `underline` sets the hot-key.
+* `tearoff=` (the default) allows floating menu by clicking on the dashed line.
+* enable/disable menu items.
+* Set actions via `command` on the menu items.
+
+![](examples/tk/tk_menu.py)
+
 ## Exercise: Tk - Calculator one line
 {id: exercise-tk-calcilator-one-line}
 
@@ -153,4 +169,6 @@ There is another button called "Quit" that will close the application.
 {id: solution-tk-calcilator-one-line}
 
 ![](examples/tk/calculator_one_line.py)
+
+![](examples/tk/calculator.py)
 
