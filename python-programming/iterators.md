@@ -198,3 +198,8 @@ Test cases:
 ![](examples/iterators/packets/packets1.txt)
 ![](examples/iterators/packets/packets2.txt)
 
+
+![](examples/iterators/iterator.py)
+![](examples/iterators/iterator_with_multiple_values.py)
+![](examples/iterators/simple_iterator.py)
+
