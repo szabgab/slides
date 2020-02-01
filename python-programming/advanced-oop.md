@@ -278,7 +278,7 @@ c = a + b
 print(c.gene) # ABF
 ```
 
-## Exercise: imaginary numbers
+## Exercise: imaginary numbers - complex numbers
 {id: exercise-imaginary-numbers}
 
 Create a class that will represent imaginary numbers `(x, y*i)`
@@ -303,6 +303,12 @@ z2 = Z(4, 7)
 
 zz = z1*z2
 ```
+
+* See [cmath](https://docs.python.org/library/cmath.html)
+
+![](examples/advanced/complex_numbers.py)
+![](examples/advanced/complex_numbers.out)
+
 
 ## Solution: Rectangular
 {id: solution-oop-rectangular}
