@@ -18,6 +18,8 @@
 {i: run}
 
 ![](examples/threads/mini_counter.py)
+![](examples/threads/mini_counter.out)
+
 
 ## Simple threaded counters
 {id: simple-threaded-counter}
@@ -39,7 +41,7 @@ of threads and the range of the counter.
 ![](examples/threads/simple_counter_parameterized.out)
 
 
-## Counter with attributes
+## Pass parameters to threads - Counter with attributes
 {id: class-counter}
 {i: threading}
 {i: Thread}
@@ -68,15 +70,49 @@ of threads and the range of the counter.
 
 ![](examples/threads/counter_central_plain.py)
 
+## GIL - Global Interpreter Lock
+{id: gil}
+
+* Solves the problem introduced by having reference count.
+* Not going away any time soon.
+
+* [GIL wiki](https://wiki.python.org/moin/GlobalInterpreterLock)
+* [GIL realpython](https://realpython.com/python-gil/)
+
+
 ## Thread load
 {id: thread-load}
 
 ![](examples/threads/thread_load.py)
 
+![](examples/threads/thread_load_1.out)
+
+![](examples/threads/thread_load_4.out)
+
+## Exercise: thread files
+{id: exercise-threads-queue}
+
+* Get a list of files (from the current directory or from all the files in the "slides" repository.
+* Process each file:
+* 1. get size of file
+* 2. count how many times each character appear in the file.
+* The script should accept the number of threads to use.
+
+## Exercise: thread URL requests.
+{id: exercise-threads-url-requests}
+
+In the following script we fetch the URLs listed in a file:
+
+![](examples/parallel/urls.txt)
+
+It takes about 1.5-2 sec / URL from home. (It depends on a lot of factors including your network connection.)
+
+![](examples/parallel/fetch_urls.py)
+
+Create a version of the above script that can use K threads.
+
 ## Exercise: thread queue
 {id: exercise-thread-queue}
-
-TODO: List of files, process each file. (get size of file, ...)
 
 Write an application that handles a queue of jobs in N=5 threads.
 Each job contains a number between 0-5.
@@ -98,6 +134,11 @@ main thread will create a new worker thread.
 
 ## Solution: thread queue
 {id: solution-thread-queue}
+
 ![](examples/threads/queue.py)
 
+## Solution: thread URL requests.
+{id: solution-threads-url-requests}
+
+![](examples/parallel/fetch_urls_threads.py)
 

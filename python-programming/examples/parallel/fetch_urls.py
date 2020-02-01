@@ -1,41 +1,48 @@
 import time
 import requests
-import xml.etree.ElementTree as ET
+import sys
 from bs4 import BeautifulSoup
 
-def get_urls(content):
-    urls = []
-    root = ET.fromstring(content)
-    for child in root:
-        for ch in child:
-            if ch.tag.endswith('loc'):
-                urls.append(ch.text)
-    #print(len(urls)) # 2653
-    MAX = 20
-    if len(urls) > MAX:
-        urls = urls[:MAX]
+def get_urls(limit):
+    with open('urls.txt') as fh:
+        urls = list(map(lambda line: line.rstrip("\n"), fh))
+    if len(urls) > limit:
+        urls = urls[:limit]
 
     return urls
 
-def main():
-    start = time.time()
-    url = 'https://code-maven.com/slides/sitemap.xml'
-    resp = requests.get(url)
-    if resp.status_code != 200:
-        exit(f"Incorrect status_code {resp.status_code}")
+def get_title(url):
+    try:
+        resp = requests.get(url)
+        if resp.status_code != 200:
+            return None, f"Incorrect status_code {resp.status_code} for {url}"
+    except Exception as err:
+        return None, f"Error: {err} for {url}"
 
-    urls = get_urls(resp.content)
+    soup = BeautifulSoup(resp.content, 'html.parser')
+    return soup.title.string, None
+
+def main():
+    if len(sys.argv) < 2:
+        exit(f"Usage: {sys.argv[0]} LIMIT")
+    limit = int(sys.argv[1])
+    urls = get_urls(limit)
+    print(urls)
+    start = time.time()
 
     titles = []
     for url in urls:
-        resp = requests.get(url)
-        if resp.status_code != 200:
-            print(f"Incorrect status_code {resp.status_code} for {url}")
-            continue
-
-        soup = BeautifulSoup(resp.content, 'html.parser')
-        print(soup.title.string)
-        titles.append(soup.title.string)
+        #print(f"Processing {url}")
+        title, err = get_title(url)
+        if err:
+            print(err)
+        else:
+            print(title)
+        titles.append({
+            "url": url,
+            "title": title,
+            "err": err,
+        })
     end = time.time()
     print("Elapsed time: {} for {} pages.".format(end-start, len(urls)))
     print(titles)

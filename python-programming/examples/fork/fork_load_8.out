@@ -1,0 +1,29 @@
+In Parent of 96372
+In Parent of 96373
+In Parent of 96374
+In Child
+In Child
+In Parent of 96375
+In Child
+In Child
+In Parent of 96376
+In Child
+In Parent of 96377
+In Child
+In Child
+In Parent of 96378
+In Parent of 96379
+In Child
+(96374, 768)
+(96372, 768)
+(96375, 768)
+(96373, 768)
+(96376, 768)
+(96377, 768)
+(96378, 768)
+(96379, 768)
+
+real    0m12.754s
+user    0m45.196s
+sys 0m0.164s
+

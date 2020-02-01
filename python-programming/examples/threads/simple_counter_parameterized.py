@@ -6,20 +6,21 @@ num_threads, count_till = 3, 5
 class ThreadedCount(threading.Thread):
     def run(self):
         thread = threading.current_thread()
-        print('{} - start'.format(thread.name))
-        for c in range(count_till):
-            print('{} - count {}'.format(thread.name, c))
-        print('{} - end'.format(thread.name))
+        print(f'{thread.name} - start')
+        for cnt in range(count_till):
+            print(f'{thread.name} - count {cnt}')
+        print(f'{thread.name} - end')
         return
 
 threads = []
-for i in range(num_threads):
+for ix in range(num_threads):
     threads.append(ThreadedCount())
-for t in threads:
-    t.start()
+
+for th in threads:
+    th.start()
 
 print('main - running {} threads'.format(threading.active_count()))
 
-for t in threads:
-    t.join()
+for th in threads:
+    th.join()
 print("main - thread is done")

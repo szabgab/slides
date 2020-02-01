@@ -1,17 +1,39 @@
-files = glob.glob("*.dna")
+import os
+import glob
+
+files = glob.glob("*.py")
+# print(files)
 count = len(files)
-batch = count/n
+print(f"Number of items to process: {count}")
 
-#files[0 : batch]
-#files[batch : 2 * batch]
-#...
-#files[(n-1) * batch : n * batch]
+parallel = 4   # How many in parallel
 
-for i in range(0, n):
-    pid = fork()
+batch = int(count/parallel)
+leftover = count % parallel
+print(f"batch size: {batch}  leftover: {leftover}")
+
+def parent(pid):
+    print(f"parent {pid}")
+
+def child(files):
+    print(f"{os.getpid()}  {files}")
+    exit()
+
+end = 0
+for ix in range(parallel):
+    start = end
+    end   = start + batch
+    if ix < leftover:
+        end += 1
+    print(f"start={start} end={end}")
+
+    pid = os.fork()
     if pid:
-        print("parent {}".format(pid))
+        parent(pid)
     else:
-        # child
-        child(files[i * batch : (i+1) * batch])
+        child(files[start:end])
 
+print(f"In parent {os.getpid()}")
+for ix in range(parallel):
+    r = os.wait()
+    print(r)

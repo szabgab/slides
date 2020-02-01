@@ -5,6 +5,8 @@
 {id: multiprocess-cpu-count}
 {i: cpu_count}
 
+* [multiprocessing](https://docs.python.org/library/multiprocessing.html)
+
 ![](examples/multiprocess/cpu_count.py)
 
 ## Multiprocess Process
@@ -104,9 +106,20 @@ Then convert it to be able to work with multiprocess.
 ## Exercise: Fetch URLs in parallel
 {id: exercise-fetch-urls-in-parallel}
 
-Create a file with 100 URLs (maybe download the https://code-maven.com/sitemap.xml or the https://code-maven.com/slides/sitemap.xml file)
+* [top-websites](https://www.similarweb.com/top-websites)
+* Given a file with a list of URLs, collect the title of each site.
+
+![](examples/parallel/urls.txt)
 
 ![](examples/parallel/fetch_urls.py)
+
+## Exercise: Fetch URLs from one site.
+{id: exercise-fetch-urls-from-one-site}
+
+Download the [sitemap](https://code-maven.com/sitemap.xml) or the other [sitemap](the https://code-maven.com/slides/sitemap.xml) file
+and fetch the first N URLs from there. Collecting the titles.
+
+![](examples/parallel/fetch_site_urls.py)
 
 ## Solution: Fetch URLs in parallel
 {id: solution-fetch-urls-in-parallel}

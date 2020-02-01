@@ -1,0 +1,7 @@
+10278 - start running
+10279 - in child. Parent is 10278
+10278 - start running
+10278 - in parent (child pid is 10279)
+10278 - Child with pid 10279 exited. Exit code 768
+Real exit code 3
+Also known as 3

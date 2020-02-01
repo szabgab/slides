@@ -1,0 +1,9 @@
+$ time python thread_load.py 1
+Results: [{'count': 40000000, 'total': 19996878.531261113}]
+Total: 19996878.531261113
+6.478948354721069
+
+real	0m6.539s
+user	0m6.491s
+sys	0m0.012s
+

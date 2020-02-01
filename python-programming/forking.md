@@ -5,9 +5,14 @@
 {id: fork}
 {i: fork}
 {i: getpid}
+{i: getppid}
 {i: wait}
 
+* [fork](https://docs.python.org/3/library/os.html#os.fork)
+
 ![](examples/fork/simple_fork.py)
+![](examples/fork/simple_fork.out)
+
 
 ## Forking
 {id: forking}
@@ -15,72 +20,36 @@
 {i: wait}
 
 ![](examples/fork/fork.py)
-
-```
-$ python fork.py
-In Parent (common) The child is: 31351
-In Parent PID: 31350 PPID: 10025
-In Child of common
-In Child PID: 31351 PPID: 31350
-(31351, 768)
-```
+![](examples/fork/fork.out)
 
 
 ## Fork skeleton
 {id: fork-skeleton}
+
 ![](examples/fork/fork_skeleton.py)
 
 
 ## Fork with load
 {id: fork-load}
+
 ![](examples/fork/fork_load.py)
 
 
 ## Fork load results
 {id: fork-load-results}
+{i: time}
 
 ```
 $ time python fork_load.py 1
-In Parent of 96355
-In Child
-(96355, 768)
-
-real    0m26.391s
-user    0m25.893s
-sys 0m0.190s
 ```
+
+![](examples/fork/fork_load_1.out)
 
 ```
 $ time python fork_load.py 8
-In Parent of 96372
-In Parent of 96373
-In Parent of 96374
-In Child
-In Child
-In Parent of 96375
-In Child
-In Child
-In Parent of 96376
-In Child
-In Parent of 96377
-In Child
-In Child
-In Parent of 96378
-In Parent of 96379
-In Child
-(96374, 768)
-(96372, 768)
-(96375, 768)
-(96373, 768)
-(96376, 768)
-(96377, 768)
-(96378, 768)
-(96379, 768)
-
-real    0m12.754s
-user    0m45.196s
-sys 0m0.164s
 ```
+
+![](examples/fork/fork_load_8.out)
 
 
 ## Marshalling / Serialization

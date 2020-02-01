@@ -1,0 +1,20 @@
+0 Thread-1
+1 Thread-1
+0 Thread-2
+2 Thread-1
+1 Thread-2
+0 Thread-3
+3 Thread-1
+2 Thread-2
+main - Running 4 threads
+3 Thread-2
+1 Thread-3
+4 Thread-2
+2 Thread-3
+5 Thread-2
+3 Thread-3
+4 Thread-1
+4 Thread-3
+5 Thread-1
+5 Thread-3
+main - thread is done

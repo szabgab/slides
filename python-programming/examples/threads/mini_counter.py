@@ -3,8 +3,8 @@ import sys
 
 class ThreadedCount(threading.Thread):
     def run(self):
-        for c in range(10):
-            print(c)
+        for cnt in range(6):
+            print(f"{cnt} {threading.current_thread().name}")
         return
 
 a = ThreadedCount()
