@@ -3,18 +3,43 @@
 
 ## GUI Toolkits
 {id: gui-toolkits}
+{i: Tk}
+{i: GTK}
+{i: Qt}
+{i: wxWidgets}
+{i: GUI}
+
+{aside}
+When creating an application there are several ways to interact with the user. You can accept command line parameters.
+You can interact on the Standard Output / Standard Input runnin in a Unix Shell or in the Command Prompt of Windows.
+
+Many people, especially those who are using MS Windows, will frown upon both of those. They expect a Graphical User Interface (GUI)
+or maybe a web interface via their browser. In this chapter we are going to look at the possibility to create a desktop GUI.
+
+
+There are plenty of ways to create a GUI in Python. The major ones were listed here, but there are many more. See the additional links.
+
+In this chapter we are going to use the Tk Toolkit.
+{/aside}
 
 * [Tk](https://docs.python.org/library/tk.html)
 * [GTK](http://www.pygtk.org/)
 * [Qt](https://wiki.python.org/moin/PyQt)
 * [wxWidgets](http://wxpython.org/)
 
+* [GUI FAQ](https://docs.python.org/3/faq/gui.html)
+* [GUI Programming](https://wiki.python.org/moin/GuiProgramming)
 
 ## Installation
 {id: tcltk-installation}
 
+{aside}
+Tk in Python is actually a wrapper arount the implementation in Tcl.
 
 Tcl/Tk usually comes installed with Python. All we need is basically the Tkinter Python module.
+In some Python installations (e.g. Anaconda), Tkinter is already installed. In other cases you might
+need to install it yourself. For examples on Ubuntu you can use `apt` to install it.
+{/aside}
 
 ```
 sudo apt-get install python3-tk
@@ -23,9 +48,21 @@ sudo apt-get install python3-tk
 ## Tk Documentation
 {id: tk-documentation}
 
+{aside}
+The documentation of Tk in Python does not cover all the aspects of Tk. If you are creating a complex GUI
+application you might need to dig in the documentation written for Tcl/Tk.
+{/aside}
+
 * [Tk](https://docs.python.org/library/tk.html)
 * The [Tk Command](https://www.tcl.tk/man/tcl8.6/TkCmd/contents.htm) of [Tcl 8.6](https://www.tcl.tk/man/tcl8.6/)
 * [Python GUI Geeks for Geeks](https://www.geeksforgeeks.org/python-gui-tkinter/)
+
+
+{aside}
+In the Unix world where Tk came from the various parts of a GUI application are called widgets. In the MS Windows world
+they are usually called controls. There are several commonly used Widgets. For example, Label, Button, Entry, Radiobutton, Checkbox.
+First we are going to see small examples with each one of these Widgets. Then we'll see how to combine them.
+{/aside}
 
 ## Tk Label
 {id: tk-label}
@@ -83,8 +120,51 @@ sudo apt-get install python3-tk
 
 ![](examples/tk/tk_listbox_more.py)
 
+## Tk Dialogs
+{id: tk-dialogs}
 
-## Simple Tk ap
+* [Dialogs](https://docs.python.org/library/dialog.html)
+
+
+## Tk Filedialog
+{id: tk-filedialog}
+{i: filedialog}
+{i: askopenfilename}
+{i: asksaveasfilename}
+{i: askopenfile}
+{i: asksaveasfile}
+
+* [](http://effbot.org/tkinterbook/tkinter-file-dialogs.htm)
+* [](https://docs.python.org/library/dialog.html)
+
+* askopenfilename - returns path to file
+* asksaveasfilename - returns path to file
+* askopenfile - returns filehandle opened for reading
+* asksaveasfile - retutns filehandle opened for writing
+
+* Allow the listing of file-extension filters.
+
+![](examples/tk/tk_filedialog.py)
+
+
+## Tk Menubar
+{id: tk-menubar}
+{i: Menu}
+{i: add_cascade}
+{i: add_command}
+
+* [Menubar](http://effbot.org/zone/tkinter-menubar.htm)
+* [Menu](http://effbot.org/tkinterbook/menu.htm)
+
+* `underline` sets the hot-key.
+* `tearoff=` (the default) allows floating menu by clicking on the dashed line.
+* enable/disable menu items.
+* Set actions via `command` on the menu items.
+
+![](examples/tk/tk_menu.py)
+
+
+## Not so Simple Tk ap
 {id: tk-simple}
 {i: tkinter}
 {i: Tk}
@@ -140,21 +220,6 @@ sudo apt-get install python3-tk
 
 ![](examples/tk/tk_example.py)
 
-## Tk Menubar
-{id: tk-menubar}
-{i: Menu}
-{i: add_cascade}
-{i: add_command}
-
-* [Menubar](http://effbot.org/zone/tkinter-menubar.htm)
-* [Menu](http://effbot.org/tkinterbook/menu.htm)
-
-* `underline` sets the hot-key.
-* `tearoff=` (the default) allows floating menu by clicking on the dashed line.
-* enable/disable menu items.
-* Set actions via `command` on the menu items.
-
-![](examples/tk/tk_menu.py)
 
 ## Exercise: Tk - Calculator one line
 {id: exercise-tk-calcilator-one-line}
@@ -171,4 +236,15 @@ There is another button called "Quit" that will close the application.
 ![](examples/tk/calculator_one_line.py)
 
 ![](examples/tk/calculator.py)
+
+## Exercise: Tk
+{id: exercise-tk}
+
+* Application that accepts a "title" - line of text, a file selected, a new filename (that probably does not exist) and then runs.
+
+## Solution: Tk
+{id: solution-tk}
+
+![](examples/tk/convert_file.py)
+
 
