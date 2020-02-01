@@ -1,4 +1,4 @@
-class Date(object):
+class Date:
     total = 0
 
     def __init__(self, Year, Month, Day):
@@ -16,6 +16,6 @@ class Date(object):
         self.day = d
 
     @classmethod
-    def get_total(cls):
-        print(cls)
-        return cls.total
+    def get_total(class_object):
+        print(class_object)
+        return class_object.total

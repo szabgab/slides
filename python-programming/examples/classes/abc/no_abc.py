@@ -1,3 +1,6 @@
+class NotImplementedError(Exception):
+    pass
+
 class Base():
     def foo(self):
         raise NotImplementedError()
@@ -18,8 +21,8 @@ class Fake(Base):
         print('foo in Fake')
 
 r = Real()
-r.foo()    # foo in Real
-r.bar()    # bar in Real
+r.foo()
+r.bar()
 f = Fake()
-f.foo()    # foo in Fake
-f.bar()    # NotImplementedError
+f.foo()
+f.bar()

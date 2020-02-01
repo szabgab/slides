@@ -116,7 +116,7 @@ There is no is_int, we just need to try to convert and catch the exception, if t
 {id: spyder-intro}
 
 * iPython console (bottom right)
-* Spyder-Py2 / Preferences / Console / Advanced Settings 
+* Spyder-Py2 / Preferences / Console / Advanced Settings
 * Save the file (Ctrl-S / Command-S)
 * Run/Run  (F5)
 * F9   - execute selected text (e.g. we can eecute a function definition after we've changed it)
@@ -430,13 +430,13 @@ It was experimental and dropped from Python 3
 
 Only works in Python 2?
 
-![](examples/classes/without_abc.py)
+![](examples/classes/abc/without_abc.py)
 
 ## Abstract Base Class with abc Python 2 ?
 {id: abstract-base-class-with-abc-python2}
 {i: abc}
 
-![](examples/classes/with_abc.py)
+![](examples/classes/abc/with_abc.py)
 
 * [Abstract Base Classes in Python](https://dbader.org/blog/abstract-base-classes-in-python)
 * [abc](https://docs.python.org/library/abc.html)
@@ -446,7 +446,7 @@ Only works in Python 2?
 {id: abstract-base-class-with-metaclass}
 {i: __metaclass__}
 
-![](examples/classes/abc_meta.py)
+![](examples/classes/abc/abc_meta.py)
 
 
 ## Create class with metaclass

@@ -11,4 +11,3 @@ class Base(ABC):
     @abstractmethod
     def bar(self):
         pass
-

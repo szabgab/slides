@@ -1,16 +1,11 @@
 class Person():
-    name = 'Original'
+    name = 'Joe'
     print(f'Hello {name}')
 
     def show(self):
         print(Person.name)
 
-print(Person.name)    # Original
-
-Person.name = 'Joe'
-print(Person.name)    # Joe
-
-x = Person()
+x = Person()          # Hello Joe
 x.show()              # Joe
 print(x.name)         # Joe
 print(Person.name)    # Joe

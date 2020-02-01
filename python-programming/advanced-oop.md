@@ -4,20 +4,23 @@
 ## Class Attributes
 {id: attributes}
 
-
-Class Attributes are inherited by object instances when fetching, but not during assignment.
-
+* Class attributes can be created inside a class.
+* Assign to class attribute and fetch from it
+* Class attributes can be also created from the outside.
 
 ![](examples/classes/person1.py)
+
+
+## Class Attributes in Instances
+{id: class-attributes-in-instances}
+
+![](examples/classes/person11.py)
 
 
 ## Attributes with method access
 {id: attributes-method-access}
 
-
-Same as above, but we explicitely set the class attribute during the creation of the class
-and we use a method (show) to access it.
-
+* Use a method (show) to access it.
 
 ![](examples/classes/person2.py)
 
@@ -45,17 +48,17 @@ In this example we are going to replace the method in the class by a newly creat
 ![](examples/classes/person5.py)
 
 
-## Classes: constructor, instance method
-{id: classes}
+## Classes: instance method
+{id: classes-instance-method}
 
-The "class" keyword creates a "class object". The default constructor of these classes are their own names. So on this case Date() is the constructor.
-(The actual code is implemented in the __new__ method of the "object". Calling the constructor will create an "instance object".
-
-
+{aside}
 Regular functions (methods) defined in a class are "instance methods". They can only be called on "instance objects" and not on the "class object"
 as see in the 3rd example.
+{/aside}
 
+{aside}
 The attributes created with "self.something = value" belong to the individual instance object.
+{/aside}
 
 ![](examples/classes/mydate1/mydate.py)
 ![](examples/classes/mydate1/run.py)
@@ -68,13 +71,20 @@ The attributes created with "self.something = value" belong to the individual in
 {id: class-attributes}
 {i: @classmethod}
 
-"total" is an attribute that belongs to the class. We can access it using Date.total. We can create a @classmethod to access it,
+"total" is an attribute that belongs to the class. We can access it using Date.total. We can create a `@classmethod` to access it,
 but actually we can access it from the outside even without the class method, just using the "class object"
-
 
 ![](examples/classes/mydate3/mydate.py)
 ![](examples/classes/mydate3/run.py)
 ![](examples/classes/mydate3/run.out)
+
+
+## Classes: constructor
+{id: classes}
+
+* The "class" keyword creates a "class object". The default constructor of these classes are their own names.
+* The actual code is implemented in the `__new__` method of the `object`.
+* Calling the constructor will create an "instance object".
 
 
 ## Class methods - alternative constructor
@@ -82,7 +92,7 @@ but actually we can access it from the outside even without the class method, ju
 {i: @classmethod}
 
 Class methods are used as Factory methods, they are usually good for alternative constructors. In order to be able to use a method as a class-method
-(Calling Date.method(...) one needs to mark the method with the @classmethod decorator)
+(Calling Date.method(...) one needs to mark the method with the `@classmethod` decorator)
 
 ![](examples/classes/mydate2/mydate.py)
 ![](examples/classes/mydate2/run.py)
@@ -95,23 +105,41 @@ Class methods are used as Factory methods, they are usually good for alternative
 * Create a class object that cannot be used to create an instance object. (It must be subclassed)
 * The subclass must implement certain methods required by the base-class.
 
-![](examples/classes/no_abc.py)
+![](examples/classes/abc/no_abc.py)
+![](examples/classes/abc/no_abc.out)
 
 
 ## Abstract Base Class with abc
 {id: abstract-base-class-with-abc}
 {i: abc}
+{i: abstractmethod}
 
 * [abc](https://docs.python.org/library/abc.html)
 
-![](examples/classes/with_abc3.py)
-![](examples/classes/with_abc3_real.py)
-![](examples/classes/with_abc3_base.py)
-![](examples/classes/with_abc3_fake.py)
+![](examples/classes/abc/with_abc3.py)
+
+## ABC working example
+{id: abc-working-example}
+
+![](examples/classes/abc/with_abc3_real.py)
+![](examples/classes/abc/with_abc3_real.out)
+
+## ABC - cannot instantiate the base-class
+{id: abc-no-instance-from-base-class}
+
+![](examples/classes/abc/with_abc3_base.py)
+![](examples/classes/abc/with_abc3_base.out)
+
+## ABC - must implement methods
+{id: abc-must-implement-methods}
+
+![](examples/classes/abc/with_abc3_fake.py)
+![](examples/classes/abc/with_abc3_fake.out)
 
 
 ## Use Python @propery to fix bad interface (the bad interface)
 {id: property-fixing-bad-api-original}
+{i: @property}
 
 When we created the class the first time we wanted to have a field representing the age of
 a person. (For simplicity of the example we onlys store the years.)

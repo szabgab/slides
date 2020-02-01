@@ -1,5 +1,5 @@
-__init__
-__init__
+__init__ A
+__init__ B
 in main - after
 __del__ B
 after main

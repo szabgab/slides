@@ -1,11 +1,11 @@
-class Destruct(object):
+class Person:
     def __init__(self):
         print('__init__')
     def __del__(self):
         print('__del__')
 
 def main():
-    a = Destruct()
+    a = Person()
     print('in main - after')
 
 main()
