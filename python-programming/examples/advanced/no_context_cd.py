@@ -6,7 +6,9 @@ def do_something(path):
     os.chdir(path)
 
     content = os.listdir()
-    if len(content) < 10:
+    number = len(content)
+    print(number)
+    if number < 15:
         return
 
 
@@ -21,5 +23,3 @@ def main():
     print(os.getcwd())
 
 main()
-
-

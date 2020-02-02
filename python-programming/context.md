@@ -83,13 +83,14 @@ in the function.
 
 ```
 $ python no_context_cd.py /tmp/
-/home/gabor/work/slides/python/examples/advanced
-/home/gabor/work/slides/python/examples/advanced
-
-$ python no_context_cd.py /opt/
-/home/gabor/work/slides/python/examples/advanced
-/opt
 ```
+![](examples/advanced/no_context_cd_tmp.out)
+
+```
+$ python no_context_cd.py /opt/
+```
+![](examples/advanced/no_context_cd_opt.out)
+
 
 ## open in function
 {id: open-in-function}
