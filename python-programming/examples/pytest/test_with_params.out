@@ -1,0 +1,11 @@
+========= test session starts =======
+platform linux -- Python 3.7.3, pytest-5.3.2, py-1.8.0, pluggy-0.13.0
+rootdir: /home/gabor/work/slides/python-programming/examples/pytest
+plugins: flake8-1.0.4
+collected 2 items
+
+test_with_params.py name=Foo  email=foo@email.com
+.name=Bar  email=bar@email.com
+.
+
+========== 2 passed in 0.01s =======

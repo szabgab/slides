@@ -1223,8 +1223,17 @@ Pick one of the modules and write a test for it.
 
 ![](examples/pytest/test_read_ini.py)
 
+## PyTest with parameter
+{id: pytest-with-parameter}
+{i: @pytest.mark.parametrize}
+{i: mark}
+{i: parametrize}
 
+![](examples/pytest/test_with_param.py)
+![](examples/pytest/test_with_param.out)
 
+## PyTest with parameters
+{id: pytest-with-parameters}
 
-
-
+![](examples/pytest/test_with_params.py)
+![](examples/pytest/test_with_params.out)
