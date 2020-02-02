@@ -18,7 +18,7 @@ class NotANumberError(SpaceShipError):
         return "Not a Number {}".format(self.inp)
 
 
-class Game(object):
+class Game:
     def __init__(self):
        self.lower_limit = 0
        self.upper_limit = 200

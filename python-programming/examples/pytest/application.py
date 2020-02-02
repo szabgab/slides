@@ -1,5 +1,4 @@
-
-class App(object):
+class App:
     def __init__(self):
         self.pi = 3.14
         # .. set up database

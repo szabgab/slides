@@ -1,4 +1,4 @@
-class Point(object):
+class Point:
     def __init__(self, x, y):
         self.x = x
         self.y = y
@@ -10,7 +10,7 @@ class Point(object):
         self.x += dx
         self.y += dy
 
-class Polygon(object):
+class Polygon:
     def __init__(self, *args):
         self.points = args
 

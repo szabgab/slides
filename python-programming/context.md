@@ -99,13 +99,14 @@ This is not the recommended way to open a file, but this is how it was done befo
 Here we have the same issue. We have a conditional call to `return` where we forgot to close the file.
 {/aside}
 
-
 ![](examples/advanced/no_context_fh.py)
+
 
 ## open in for loop
 {id: open-in-for-loop}
 
 ![](examples/context/save.py)
+
 
 ## open in function using with
 {id: open-in-function-with}
@@ -120,18 +121,21 @@ of the `fh` object will be called when we leave the context of the `with` statem
 
 ## Plain context manager
 {id: plain-context-manager}
+
 ![](examples/advanced/my_plain_context.py)
 ![](examples/advanced/my_plain_context.out)
 
 
 ## Param context manager
 {id: param-context-manager}
+
 ![](examples/advanced/my_param_context.py)
 ![](examples/advanced/my_param_context.out)
 
 
 ## Context manager that returns a value
 {id: return-context-manager}
+
 ![](examples/advanced/my_tempdir.py)
 
 ![](examples/advanced/use_my_tempdir.py)
@@ -151,6 +155,7 @@ of the `fh` object will be called when we leave the context of the `with` statem
 
 ## cwd context manager
 {id: cwd-context-manager}
+
 ![](examples/advanced/mycwd.py)
 ![](examples/advanced/context_cd.py)
 
@@ -171,8 +176,15 @@ $ python context_cd.py /opt
 ![](examples/advanced/use_mytmpdir.py)
 ![](examples/advanced/use_mytmpdir.out)
 
+## Context manager with class
+{id: with-context-manager}
+{i: __enter__}
+{i: __exit__}
 
-## Context managers: with
+
+![](examples/advanced/context-manager.py)
+
+## Context managers with class
 {id: with-context-managers}
 {i: __enter__}
 {i: __exit__}
@@ -180,7 +192,6 @@ $ python context_cd.py /opt
 
 Even if there was en exception in the middle of the process,
 the __exit__ methods of each object will be called.
-
 
 ![](examples/advanced/context-managers.py)
 ![](examples/advanced/context-managers.out)

@@ -1,4 +1,4 @@
-class Monkey(object):
+class Monkey:
 
     def __init__(self, count):
         self.bananas = count

@@ -1,4 +1,4 @@
-class CM(object):
+class MyCM:
     def __init__(self, n):
         self.name = n
 
@@ -12,8 +12,8 @@ class CM(object):
         print('something', self.name)
 
 def main():
-    a = CM('a')
-    b = CM('b')
+    a = MyCM('a')
+    b = MyCM('b')
     with a, b:
         a.partner = b
         b.partner = a

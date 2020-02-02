@@ -1,4 +1,4 @@
-class Point(object):
+class Point:
     def __init__(self, x, y):
         print('__init__ of point')
         self.x = x
@@ -16,7 +16,7 @@ class Ball(Circle):
         super(Zero, self).__init__(x, y)
         self.z = z
 
-class Zero(object):
+class Zero:
     def __init__(self, x, y):
         print('really?')
     pass

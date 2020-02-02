@@ -1,6 +1,6 @@
 import random
 
-class Game(object):
+class Game:
     def __init__(self):
        self.lower_limit = 0
        self.upper_limit = 200

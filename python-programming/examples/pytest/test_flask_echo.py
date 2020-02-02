@@ -1,11 +1,9 @@
 import flask_echo
 
-
-class TestEcho(object):
+class TestEcho:
     def setup_method(self):
         self.app = flask_echo.eapp.test_client()
         print("setup")
-
 
     def test_main(self):
         rv = self.app.get('/')

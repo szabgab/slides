@@ -1,7 +1,7 @@
 class NegativeDeposite(Exception):
     pass
 
-class Bank(object):
+class Bank:
     def __init__(self, start):
         self.balance = start
 
