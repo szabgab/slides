@@ -4,11 +4,13 @@
 
 ## Single quoted and double quoted strings
 {id: single-quote-double-quote}
+
 ![](examples/strings/quotes.py)
 ![](examples/strings/quotes.out)
 
 ## Long lines
 {id: long-lines}
+
 ![](examples/strings/other.py)
 ![](examples/strings/other.out)
 
@@ -17,6 +19,7 @@
 {id: triple-quoted-strings}
 {i: """}
 {i: '''}
+
 ![](examples/strings/triple_quotes.py)
 
 Can spread multiple lines.
@@ -31,6 +34,7 @@ third row
 ## String length (len)
 {id: string-length}
 {i: len}
+
 ![](examples/strings/length.py)
 
 
@@ -38,6 +42,7 @@ third row
 {id: string-repetition}
 {i: *}
 {i: +}
+
 ![](examples/strings/repetition.py)
 
 
@@ -46,11 +51,15 @@ third row
 {i: slice}
 {i: substr}
 {i: [:]}
+{i: :}
+
 ![](examples/strings/string_slice.py)
 
 
 ## Change a string
 {id: string-change}
+{i: immutable}
+
 ![](examples/strings/string_change.py)
 
 {aside}
@@ -58,21 +67,21 @@ Replace part of a string
 {/aside}
 
 
-* Strings in Python are immutable - they never change.
-
+* Strings in Python are **immutable** - they never change.
 
 
 ## How to change a string
 {id: how-to-change-a-string}
+
 ![](examples/strings/change_a_string.py)
 
 
 ## String copy
 {id: string-copy}
+
 ![](examples/strings/string_copy.py)
 
 {aside}
-
 When assigning a variable pointing a string, the new variable is pointing to the same string..
 If we then assign some other string to either of the variables, then they will point to two different strings.
 {/aside}
@@ -80,6 +89,10 @@ If we then assign some other string to either of the variables, then they will p
 
 ## String functions and methods (len, upper, lower)
 {id: string-functions}
+{i: len}
+{i: upper}
+{i: lower}
+
 ![](examples/strings/functions.py)
 
 * Type **dir("")** in the REPL to get the list of string methods.
@@ -87,18 +100,19 @@ If we then assign some other string to either of the variables, then they will p
 * List of [string methods](http://docs.python.org/library/string.html).
 
 
-
-
-
 ## index in string
 {id: index-in-string}
 {i: index}
+{: ValueError}
+
 ![](examples/strings/index.py)
 ![](examples/strings/index.py.out)
 
 
 ## index in string with range
 {id: index-in-string-range}
+{i: index}
+
 ![](examples/strings/index2.py)
 ![](examples/strings/index2.py.out)
 
@@ -106,6 +120,7 @@ If we then assign some other string to either of the variables, then they will p
 ## rindex in string with range
 {id: rindex-in-string-range}
 {i: rindex}
+
 ![](examples/strings/rindex.py)
 ![](examples/strings/rindex.py.out)
 
@@ -123,14 +138,12 @@ Alternatively use find and rfind that will return -1 instead of raising an excep
 ## Find all in the string
 {id: find-all-in-the-string}
 
-
 Later, when we learned loops.
-
-
 
 
 ## in string
 {id: in-syntax-on-string}
+{i: in}
 
 Check if a substring is **in** the string?
 
@@ -140,8 +153,10 @@ Check if a substring is **in** the string?
 
 ## index if in string
 {id: location-if-in-string}
-![](examples/strings/location_if_in.py)
+{i: index}
+{i: in}
 
+![](examples/strings/location_if_in.py)
 
 
 ## Encodings: ASCII, Windows-1255, Unicode

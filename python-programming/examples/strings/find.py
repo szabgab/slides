@@ -8,3 +8,6 @@ print(text.find("c", 8))   # 10
 
 print(text.find("gr", 8))      # 26
 print(text.find("gr", 8, 16))  # -1
+
+
+print(text.rfind("c", 8))   # 14

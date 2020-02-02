@@ -5,5 +5,3 @@ print(text.rindex("c", 8, 13))  # 10
 
 print(text.rindex("gr", 8))     # 26
 print(text.rindex("gr", 8, 16))
-
-
