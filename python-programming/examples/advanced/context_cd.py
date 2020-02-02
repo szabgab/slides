@@ -17,5 +17,3 @@ def main():
     print(os.getcwd())
 
 main()
-
-

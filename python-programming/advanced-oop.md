@@ -249,6 +249,13 @@ In order to make the multiplication work in the other direction, one needs to im
 
 ## Operator overloading methods
 {id: operator-overloading-methods}
+{i: __mul__}
+{i: __rmul__}
+{i: __add__}
+{i: __radd__}
+{i: __iadd__}
+{i: __lt__}
+{i: __le__}
 
 ```
 *    __mul__,  __rmul__
@@ -256,9 +263,10 @@ In order to make the multiplication work in the other direction, one needs to im
 +=   __iadd__
 <    __lt__
 <=   __le__
+...
 ```
 
-* [see datamodel](https://docs.python.org/reference/datamodel.html)
+* [see all of them in datamodel](https://docs.python.org/reference/datamodel.html)
 
 
 ## Exercise: rectangular

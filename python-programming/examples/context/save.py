@@ -9,4 +9,3 @@ for ix in range(10):
     fh.close()
 stat = os.stat(filename)
 print(stat.st_size)    # 0,   the file has not been saved yet
-

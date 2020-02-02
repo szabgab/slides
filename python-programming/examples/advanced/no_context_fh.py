@@ -23,6 +23,3 @@ def main():
     do_something(filename)
 
 main()
-
-
-

@@ -9,4 +9,3 @@ def cwd(path):
         yield
     finally:
         os.chdir(oldpwd)
-

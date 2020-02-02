@@ -11,7 +11,6 @@ def do_something(path):
     if number < 15:
         return
 
-
     os.chdir(start_dir)
 
 def main():

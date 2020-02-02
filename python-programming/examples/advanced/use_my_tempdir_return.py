@@ -14,5 +14,3 @@ def some_code():
     print(os.path.exists(tmp_dir))
 
 some_code()
-
-

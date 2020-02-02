@@ -75,21 +75,18 @@ A few examples where context managers can be useful:
 In this example we have a function in which we change to a directory and then when we are done we change back to the original directory.
 For this to work first we save the current working directory using the `os.getcwd` call. Unfortunatelly in the middle of the code there
 is a conditional call to `return`. If that condition is `True` we won't change back to the original directory. We could fix this by
-calling `os.chdir(start_dir)` just before callind `return`. However this would still not solve the problem if there is an exception
+calling `os.chdir(start_dir)` just before calling `return`. However this would still not solve the problem if there is an exception
 in the function.
 {/aside}
 
 ![](examples/advanced/no_context_cd.py)
 
-```
-$ python no_context_cd.py /tmp/
-```
 ![](examples/advanced/no_context_cd_tmp.out)
 
-```
-$ python no_context_cd.py /opt/
-```
 ![](examples/advanced/no_context_cd_opt.out)
+
+* In the second example `return` was called and thus we stayed on the /opt directory.:w
+
 
 
 ## open in function
@@ -105,6 +102,13 @@ Here we have the same issue. We have a conditional call to `return` where we for
 
 ## open in for loop
 {id: open-in-for-loop}
+{i: stat}
+{i: os.stat}
+
+{aside}
+Calling `write` does not immediately write to disk. The Operating System provides buffering as an optimization
+to avoid frequent access to the disk. In this case it means the file has not been saved before we already check its size.
+{/aside}
 
 ![](examples/context/save.py)
 
