@@ -185,3 +185,32 @@ The slice in numpy does not copy the data structure
 
 ![](examples/matlab/save.py)
 
+## Logical not on a Numpy array
+{id: logical-not-on-numpy-array}
+{i: logical_not}
+{i: not}
+{i: True}
+{i: False}
+{i: bool}
+
+![](examples/numpy/not_on_np.py)
+
+* [logical not](https://docs.scipy.org/doc/numpy/reference/generated/numpy.logical_not.html)
+
+## abs value on a Numpy array
+{id: abs-value-on-numpy-array}
+{i: abs}
+{i: absolute}
+
+![](examples/numpy/abs_on_np.py)
+
+* [absolute](https://docs.scipy.org/doc/numpy/reference/generated/numpy.absolute.html)
+
+## Vectorize function in Numpy
+{id: vectorize-function}
+{i: vectorize}
+
+![](examples/numpy/fibonacci.py)
+
+* [vectorize](https://docs.scipy.org/doc/numpy/reference/generated/numpy.vectorize.html)
+
