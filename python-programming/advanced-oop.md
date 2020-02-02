@@ -1,8 +1,8 @@
 # Advanced OOP
 {id: advanced-oop}
 
-## Class counter
-{id: class-counter}
+## Class count instances
+{id: class-count-instances}
 
 ![](examples/classes/counter.py)
 ![](examples/classes/counter.out)
