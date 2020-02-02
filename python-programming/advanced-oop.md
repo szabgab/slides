@@ -241,6 +241,18 @@ Because the instances reference each other
 
 In order to make the multiplication work in the other direction, one needs to implement the __rmul__ method.
 
+## Operator overloading methods
+{id: operator-overloading-methods}
+
+```
+*    __mul__,  __rmul__
++    __add__, __radd__
++=   __iadd__
+<    __lt__
+<=   __le__
+```
+
+* [see datamodel](https://docs.python.org/reference/datamodel.html)
 
 
 ## Exercise: rectangular

@@ -56,6 +56,7 @@
 ![](examples/generators/simple_generator_next.py)
 ![](examples/generators/simple_generator_next.out)
 
+![](examples/generators/simple_generator_next_other.py)
 
 ## Generators - fixed counter
 {id: generators-fixed-counter}
@@ -198,4 +199,14 @@ of a smaller ring.
 
 Create a generator that given a filename and a number n will return
 the content of the file in chunks of n characters.
+
+## Exercise: File reader with records
+{id: exercise-file-reader-with-records}
+
+In a file we have "records" of data. Each record starts with two bytes in which we have the length of the record.
+Then the content.
+
+```
+8 ABCDEFGH 5 XYZQR
+```
 
