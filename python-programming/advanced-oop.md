@@ -1,6 +1,12 @@
 # Advanced OOP
 {id: advanced-oop}
 
+## Class counter
+{id: class-counter}
+
+![](examples/classes/counter.py)
+![](examples/classes/counter.out)
+
 ## Class Attributes
 {id: attributes}
 
