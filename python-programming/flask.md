@@ -253,7 +253,22 @@ Create a Flask-based application with a persistent counter that even after resta
 the counter will keep increasing. For each user have its own counter as identified by the username they type in.
 
 
+## Flask hello world + test
+{id: flask-hello-world-test}
 
+![](examples/flask/hello_world/app.py)
 
+![](examples/flask/hello_world/test_app.py)
 
+## Flask Simple Authentication + test
+{id: flask-simple-authentication-test}
+{i: HTTPBasicAuth}
+{i: flask_httpauth}
+{i: werkzeug.security}
+{i: generate_password_hash}
+{i: check_password_hash}
+
+![](examples/flask/simple_auth/app.py)
+
+![](examples/flask/simple_auth/test_app.py)
 
