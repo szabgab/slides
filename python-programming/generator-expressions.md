@@ -203,10 +203,15 @@ the content of the file in chunks of n characters.
 ## Exercise: File reader with records
 {id: exercise-file-reader-with-records}
 
-In a file we have "records" of data. Each record starts with two bytes in which we have the length of the record.
+In a file we have "records" of data. Each record starts with three bytes in which we have the length of the record.
 Then the content.
 
 ```
 8 ABCDEFGH 5 XYZQR
 ```
+
+![](examples/advanced/rows.txt)
+![](examples/advanced/rows_to_records.py)
+![](examples/advanced/records.txt)
+
 
