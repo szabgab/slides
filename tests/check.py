@@ -30,20 +30,10 @@ skip = [
 ]
 
 skip_flake = set([
-    'python-programming/examples/iterators/grouped_manual.py',
     'python-programming/examples/sqla/orm_create_db.py',
-    'python-programming/examples/strings/infinite_while_many_conditions.py',
-    'python-programming/examples/strings/while_many_conditions.py',
-    'python-programming/examples/flask/15/app.py',
-    'python-programming/examples/advanced/benchmark_subs.py',
     'python-programming/examples/decorators/function_assignment.py',
     'python-programming/examples/patterns/replace_print.py',
-    'python-programming/examples/other/b.py',
-    'python-programming/examples/other/a.py',
-    'python-programming/examples/tk/calculator.py',
     'python-programming/examples/xml/sax_coroutine.py',
-    'python-programming/examples/iterators/grouped_manual.py',
-    'python-programming/examples/basics/is_number.py',
     'python-programming/examples/classes/abc/no_abc.py',
     'python-programming/examples/classes/only/fibonacci.py',
     'python-programming/examples/classes/limit/fibonacci.py',

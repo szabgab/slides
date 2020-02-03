@@ -9,7 +9,7 @@ Main<br>
 <a href="/user/42">42</a><br>
 '''
 
-@app.route("/user/<id>")
-def api_info(id):
-    return id
+@app.route("/user/<uid>")
+def api_info(uid):
+    return uid
 

@@ -1,13 +1,13 @@
-def is_float(input):
+def is_float(val):
     try:
-        num = float(input)
+        num = float(val)
     except ValueError:
         return False
     return True
 
-def is_int(input):
+def is_int(val):
     try:
-        num = int(input)
+        num = int(val)
     except ValueError:
         return False
     return True

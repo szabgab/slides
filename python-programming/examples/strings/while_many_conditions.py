@@ -1,6 +1,5 @@
-
 while (not found_error) and (not found_warning) and (not found_exit):
-   do the real stuff
+    do_the_real_stuff()
 
 while True:
     line = get_next_line()
@@ -14,4 +13,4 @@ while True:
     if found_exit:
         break
 
-   do the real stuff
+    do_the_real_stuff()

@@ -321,6 +321,7 @@ We cannot pass any class name to super()
 {id: iterator-grouped}
 
 ![](examples/iterators/grouped_manual.py)
+![](examples/iterators/grouped_manual.out)
 
 
 ## itertools - groupby

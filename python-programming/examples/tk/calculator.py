@@ -31,7 +31,7 @@ def add_button(num):
 buttons = {}
 for num in range(10):
     add_button(num)
-for op in ['+', '-', '*', '/']
+for op in ['+', '-', '*', '/']:
     add_button(op)
 
 
