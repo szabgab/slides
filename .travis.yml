@@ -6,4 +6,4 @@ install:
   - pip install pytest
   - pip install pytest-flake8
 script:
-  - pytest -s tests/
+  - python tests/check.py
