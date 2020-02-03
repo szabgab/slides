@@ -1,4 +1,4 @@
-# Optimizing code
+# Improving Performance - Optimizing code
 {id: optimizing-code}
 
 ## Problems
@@ -124,14 +124,27 @@ The actual content is not that interesting.
 
 ## Levenshtein - edittidtance
 {id: use-editditance}
-![](examples/levenshtein/with_editdistance.py)
 
+![](examples/levenshtein/with_editdistance.py)
 
 
 ## Editdistance benchmark
 {id: editdistance-benchmark}
 
 * [editdistance](https://github.com/aflc/editdistance)
+
+## A Tool to Generate text files
+{id: generate-text-files}
+
+![](examples/perf/generate_text_files.py)
+
+## Count characters
+{id: count-characters-in-two-lists}
+
+![](examples/perf/count_characters.py)
+
+![](examples/perf/prof.py)
+
 
 ## Exercise: benchmark list-comprehension, map, for
 {id: exercise-benchmark-list-comprehension-and-map}

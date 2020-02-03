@@ -263,7 +263,6 @@ A nicer fix was this:
 ![](examples/advanced/map_dict.py)
 ![](examples/advanced/map_dict.out)
 
-
 ## filter
 {id: filter}
 {i: filter}
@@ -274,6 +273,13 @@ A nicer fix was this:
 Will return an interable object that will return all the items of the original iterable that evaluate the function to **True**.
 This can have only one iterable!
 {/aside}
+
+![](examples/advanced/filter_with_function.py)
+![](examples/advanced/filter_with_function.out)
+
+## filter with lambda
+{id: filter-with-lambda}
+{i: filter}
 
 ![](examples/advanced/filter.py)
 ![](examples/advanced/filter.out)
