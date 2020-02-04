@@ -43,6 +43,7 @@ skip_flake = set([
 
 
 def flake(path):
+    #print(path)
     if path in skip_flake:
         return 0
     proc = subprocess.Popen(['flake8', path],
@@ -69,11 +70,12 @@ def main():
             if not filename.endswith(".py"):
                 continue
             path = os.path.join(dirname, filename)
+            #print(path)
             #if path in skip:
             #    continue
             #cnt +=1
             #print(path)
-            errors += flake(path)
+            errors += flake(path[len(root)+1:])
             #print(cnt)
 
             ## TODO: python -m py_compile script.py
