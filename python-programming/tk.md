@@ -163,9 +163,24 @@ First we are going to see small examples with each one of these Widgets. Then we
 
 ![](examples/tk/tk_menu.py)
 
+## Tk Frame
+{id: tk-frame}
+{i: Frame}
+{i: pack}
+{i: side}
 
-## Not so Simple Tk ap
+![](examples/tk/tk_frame.py)
+
+* width
+* side: left, right, top, bottom
+
+## Not so Simple Tk app
 {id: tk-simple}
+
+![](examples/tk/tk_simple_example.py)
+
+## Not so Simple Tk app with class
+{id: tk-simple-class}
 {i: tkinter}
 {i: Tk}
 {i: mainloop}
@@ -252,6 +267,12 @@ Create a Tk application that allows you to create a shopping list.
 * Allow the user to remove an item.
 * Allow the user to edit an item.
 * Allow the user to mark an item as "bought".
+
+* Save the shooping list by date so it can be shown later.
+* Clear the currently list to start over.
+* Allow the user to see statistics on which items were bought.
+* When adding new items, offer items that were previously bought.
+
 
 ## Exercise: Tk Notepad
 {id: exercise-tk-notepad}
