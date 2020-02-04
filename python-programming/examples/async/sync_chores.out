@@ -2,6 +2,8 @@ Start dishwasher
 End dishwasher
 Start washing machine
 End washing machine
+Start dryer
+End dryer
 Start boiling water for 4 seconds
 End boiling water for 4 seconds
 Start cleaning potatoes
@@ -13,6 +15,11 @@ Cleaning potato 4
 Cleaning potato 5
 Cleaning potato 6
 Cleaning potato 7
+Cleaning potato 8
+Cleaning potato 9
+Cleaning potato 10
+Cleaning potato 11
+Cleaning potato 12
+Cleaning potato 13
 End cleaning potatoes
-Elapsed 14.01289963722229
-
+Elapsed 20.017353534698486

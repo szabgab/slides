@@ -10,11 +10,15 @@ def washing_machine(sec):
     time.sleep(sec)
     print(f"End washing machine")
 
+def dryer(sec):
+    print(f"Start dryer")
+    time.sleep(sec)
+    print(f"End dryer")
+
 def dishwasher(sec):
     print(f"Start dishwasher")
     time.sleep(sec)
     print(f"End dishwasher")
-
 
 def clean_potatoes(pieces):
     print("Start cleaning potatoes")
@@ -26,8 +30,9 @@ def clean_potatoes(pieces):
 def main():
     dishwasher(3)
     washing_machine(3)
+    dryer(3)
     boil_water(4)
-    clean_potatoes(8)
+    clean_potatoes(14)
 
 start = time.time()
 main()
