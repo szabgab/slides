@@ -11,7 +11,6 @@
 * High-level mathematical functions to operate on large, multi-dimensional arrays and matrices. **ndarray**
 
 
-
 ## Numpy - vector
 {id: numpy-vector}
 {i: array}
@@ -22,7 +21,7 @@
 ![](examples/numpy/array.py)
 
 * [Basic types](https://docs.scipy.org/doc/numpy/user/basics.types.html)
-
+* [dtypes](https://docs.scipy.org/doc/numpy-1.9.3/reference/arrays.dtypes.html)
 
 
 ## NumPy 2D arrays
@@ -39,7 +38,6 @@
 ![](examples/numpy/set_type.py)
 
 
-
 ## NumPy arrays: ones and zeros
 {id: numpy-arrays-ones-and-zeros}
 {i: ones}
@@ -52,13 +50,22 @@
 {id: numpy-array-random}
 {i: random}
 {i: default_rng}
-{i: integer}
 
 ![](examples/numpy/array_random.py)
+![](examples/numpy/array_random.out)
 
 * [random sampling](https://docs.scipy.org/doc/numpy/reference/random/index.html)
-* [integer generator](https://docs.scipy.org/doc/numpy/reference/random/generated/numpy.random.Generator.integers.html)
 
+## NumPy Random integers
+{id: mumpy-random-integers}
+{i: random}
+{i: default_rng}
+{i: integer}
+
+![](examples/numpy/random_integers.py)
+![](examples/numpy/random_integers.out)
+
+* [integer generator](https://docs.scipy.org/doc/numpy/reference/random/generated/numpy.random.Generator.integers.html)
 
 
 ## NumPy array type change by division (int to float)
@@ -66,14 +73,7 @@
 
 ![](examples/numpy/array_type_change.py)
 
-
-## Numpy: Elementwise Operations on Arrays
-{id: numpy-arrays}
-
-![](examples/numpy/arrays.py)
-
-
-## Numpy: Array methods
+## Numpy: Array methods: transpose
 {id: numpy-array-methods}
 {i: transpose}
 
@@ -92,6 +92,36 @@
 {i: copy}
 
 ![](examples/numpy/array_copy.py)
+
+
+## Numpy: Elementwise Operations on Arrays
+{id: numpy-arrays}
+
+![](examples/numpy/arrays.py)
+
+## Numpy: multiply, matmul, dot for vectors
+{id: numpy-multiply-matmul-dot-for-vectors}
+{i: multiply}
+{i: matmul}
+{i: dot}
+
+* [multiply](https://docs.scipy.org/doc/numpy/reference/generated/numpy.multiply.html)
+* [matmul](https://docs.scipy.org/doc/numpy/reference/generated/numpy.matmul.html)
+* [dot](https://docs.scipy.org/doc/numpy/reference/generated/numpy.dot.html)
+
+![](examples/numpy/multiply_vectors.py)
+
+## Numpy: multiply, matmul, dot for vector and matrix
+{id: numpy-multiply-matmul-dot-for-1d-2d}
+
+![](examples/numpy/multiply_matrix_and_vector.py)
+![](examples/numpy/multiply_matrix_and_vector.out)
+
+## Numpy: multiply, matmul, dot for matrices
+{id: numpy-multiply-matmul-dot-for-matrices}
+
+![](examples/numpy/multiply_matrixes.py)
+![](examples/numpy/multiply_matrixes.out)
 
 
 ## Numpy: casting

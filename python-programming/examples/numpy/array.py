@@ -12,7 +12,5 @@ b = np.array([2, 3.14, -1])
 print(b.dtype)   # float64
 print(b.shape)   # (3,)
 
-c = np.array(['one', 'two'])
-print(c.dtype)   # <U3
-
-
+c = np.array(['one', 'two', 'three'])
+print(c.dtype)   # <U5    (Unicode less than 5 characters
