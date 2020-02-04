@@ -145,6 +145,26 @@ The actual content is not that interesting.
 
 ![](examples/perf/prof.py)
 
+## Memory leak
+{id: memory-leak}
+
+![](examples/perf/mymem.py)
+![](examples/perf/mem_leak.py)
+
+## Garbage collection
+{id: garbage-collection}
+
+* [gc](https://docs.python.org/library/gc.html)
+
+![](examples/perf/mem_gc.py)
+
+## Weak reference
+{id: weak-reference}
+
+* [weakref](https://docs.python.org/3/library/weakref.html)
+
+![](examples/perf/weakmymem.py)
+![](examples/perf/mem_weakref.py)
 
 ## Exercise: benchmark list-comprehension, map, for
 {id: exercise-benchmark-list-comprehension-and-map}
