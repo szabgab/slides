@@ -30,13 +30,13 @@ pip install multitasking
 ## Multitaksing - second loop waits for first one
 {id: multitaksing-two-loops}
 
-[](examples/multitasking/two_loops.py)
+![](examples/multitasking/two_loops.py)
 
 ## Multitasking counter
 {id: multitasking-counter}
 
-[](examples/multitasking/counter.py)
-[](examples/multitasking/counter.out)
+![](examples/multitasking/counter.py)
+![](examples/multitasking/counter.out)
 
 ## Multitasking counter with thread locking
 {id: multitasking-counter-with-locking}
@@ -45,6 +45,6 @@ pip install multitasking
 {i: acquire}
 {i: release}
 
-[](examples/multitasking/counter_with_locking.py)
-[](examples/multitasking/counter_with_locking.out)
+![](examples/multitasking/counter_with_locking.py)
+![](examples/multitasking/counter_with_locking.out)
 
