@@ -60,7 +60,7 @@ def flake(path):
 
 def main():
     start = time.time()
-    root = 'python-programming/examples'
+    root = os.path.join('python-programming', 'examples')
     cnt = 0
     errors = 0
     for dirname, dirs, files in os.walk(root):
