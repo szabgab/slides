@@ -174,6 +174,13 @@ os.path.expanduser('~')
 
 ![](examples/os/expanduser.py)
 
+## Listing specific files using glob
+{id: listing-files-using-glob}
+{i: glob}
+{i: glob.glob}
+
+![](examples/os/ls.py)
+
 
 ## External command with system
 {id: external-command-with-system}
@@ -416,14 +423,11 @@ $  python ctrl_c.py
 ```
 
 
-
-
 ## Exercise: Catching Ctrl-C on Unix 2nd time
 {id: exercise-catching-ctrl-c-on-unix-count}
 
 * When Ctrl-C is pressed display: "In order to really kill the application press Ctrl-C again" and keep running. If the user presses Ctrl-C again, then let id die.
 * Improve the previous that if 5 sec within the first Ctrl-C there is no 2nd Ctrl-C then any further Ctrl-C will trigger the above message again.
-
 
 
 ## Exercise: Signals
