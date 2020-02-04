@@ -60,10 +60,11 @@ def flake(path):
 
 def main():
     start = time.time()
-    root = os.path.join('python-programming', 'examples')
+    root = os.path.dirname( os.path.dirname( os.path.abspath(__file__)))
+    python_root = os.path.join(root, 'python-programming', 'examples')
     cnt = 0
     errors = 0
-    for dirname, dirs, files in os.walk(root):
+    for dirname, dirs, files in os.walk(python_root):
         for filename in files:
             if not filename.endswith(".py"):
                 continue
