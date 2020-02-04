@@ -237,6 +237,23 @@ There is another button called "Quit" that will close the application.
 
 ![](examples/tk/calculator.py)
 
+## Exercise: Tk Shopping list
+{id: exercise-tk-shoppint-list}
+
+Create a Tk application that allows you to create a shopping list.
+
+* A widget to enter some text
+* An ADD button
+* A widget where you can see the list of items added.
+
+* Save the list in a file.
+* When opening the application again, show the list saved in the file.
+
+* Allow the user to remove an item.
+* Allow the user to edit an item.
+* Allow the user to mark an item as "bought".
+
+
 ## Exercise: Tk
 {id: exercise-tk}
 
