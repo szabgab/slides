@@ -1,0 +1,11 @@
+[[23 37 18 97 13 40]
+ [10 15 20 30 39 50]
+ [99 20 83 42 19 31]
+ [19 11 55 78 39 27]]
+
+[[ True  True False  True False  True]
+ [False False False  True  True  True]
+ [ True False  True  True False  True]
+ [False False  True  True  True  True]]
+
+[23 37 97 40 30 39 50 99 83 42 31 55 78 39 27]

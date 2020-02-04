@@ -1,16 +1,8 @@
-import numpy
+import numpy as np
 
-a = numpy.eye(4)
+a = np.eye(4)
 print(a)
+print()
 
-# [[ 1.  0.  0.  0.]
-#  [ 0.  1.  0.  0.]
-#  [ 0.  0.  1.  0.]
-#  [ 0.  0.  0.  1.]]
-
-b = numpy.eye(3, 5)
+b = np.eye(3, 5)
 print(b)
-
-# [[ 1.  0.  0.  0.  0.]
-#  [ 0.  1.  0.  0.  0.]
-#  [ 0.  0.  1.  0.  0.]]

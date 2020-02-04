@@ -124,9 +124,10 @@
 ![](examples/numpy/multiply_matrixes.out)
 
 
-## Numpy: casting
+## Numpy: casting - converting from strings to integer.
 {id: numpy-array-casting}
 {i: astype}
+
 
 ![](examples/numpy/array_casting.py)
 
@@ -156,19 +157,76 @@ The slice in numpy does not copy the data structure
 {i: eye}
 
 ![](examples/numpy/create_eye.py)
+![](examples/numpy/create_eye.out)
+
+## Numpy: abs value on a Numpy array
+{id: abs-value-on-numpy-array}
+{i: abs}
+{i: absolute}
+
+![](examples/numpy/abs_on_np.py)
+![](examples/numpy/abs_on_np.out)
+
+* [absolute](https://docs.scipy.org/doc/numpy/reference/generated/numpy.absolute.html)
+
+## Numpy: Logical not on a Numpy array
+{id: logical-not-on-numpy-array}
+{i: logical_not}
+{i: not}
+{i: True}
+{i: False}
+{i: bool}
+
+![](examples/numpy/not_on_np.py)
+![](examples/numpy/not_on_np.out)
+
+* [logical not](https://docs.scipy.org/doc/numpy/reference/generated/numpy.logical_not.html)
 
 
-## Numpy: Boolean indexing strings
-{id: numpy-boolean-indexing-string}
+## Numpy: Vectorize a function
+{id: vectorize-function}
 {i: vectorize}
 
-![](examples/numpy/boolean_indexing_string.py)
+![](examples/numpy/fibonacci.py)
+![](examples/numpy/fibonacci.out)
+
+* [vectorize](https://docs.scipy.org/doc/numpy/reference/generated/numpy.vectorize.html)
+
+## Numpy: Vectorize len
+{id: vectorize-len}
+{i: vectorize}
+{i: len}
+
+![](examples/numpy/vectorize_len.py)
+![](examples/numpy/vectorize_len.out)
+
+## Numpy: Vectorize lambda
+{id: vectorize-lambda}
+{i: vectorize}
+{i: lambda}
+
+![](examples/numpy/vectorize_lambda.py)
+![](examples/numpy/vectorize_lambda.out)
 
 
-## Numpy: Filter matrix
-{id: numpy-filter-matrix}
+## Numpy: Filtering array
+{id: numpy-filtering-array}
+{i: vectorize}
+
+![](examples/numpy/filtering_array.py)
+![](examples/numpy/filtering_array.out)
+
+## Numpy: Filter matrix values
+{id: numpy-filter-matrix-values}
+
+![](examples/numpy/filter_matrix_values.py)
+![](examples/numpy/filter_matrix_values.out)
+
+## Numpy: Filter matrix rows
+{id: numpy-filter-matrix-rows}
 
 ![](examples/numpy/filter_matrix.py)
+![](examples/numpy/filter_matrix.out)
 
 
 ## Numpy: Stat
@@ -181,6 +239,25 @@ The slice in numpy does not copy the data structure
 {id: numpy-serialization}
 
 ![](examples/numpy/serialization.py)
+
+## Numpy: Load from Matlab file
+{id: matlab-load}
+
+![](examples/matlab/load.py)
+
+* `numpy.ndarray`
+
+## Numpy: Save as Matlab file
+{id: matlab-save}
+
+![](examples/matlab/save.py)
+
+## Numpy: Append or vertically stack vectors and matrices (vstack)
+{id: numpy-vstack}
+{i: vstack}
+
+![](examples/numpy/vstack.py)
+![](examples/numpy/vstack.out)
 
 
 ## Numpy uint8
@@ -195,52 +272,4 @@ The slice in numpy does not copy the data structure
 {i: int8}
 
 ![](examples/numpy/int8.py)
-
-
-## Numpy: Append or vertically stack vectors and matrices (vstack)
-{id: numpy-vstack}
-{i: vstack}
-
-![](examples/numpy/vstack.py)
-
-## Load from Matlab file
-{id: matlab-load}
-
-![](examples/matlab/load.py)
-
-* `numpy.ndarray`
-
-## Save as Matlab file
-{id: matlab-save}
-
-![](examples/matlab/save.py)
-
-## Logical not on a Numpy array
-{id: logical-not-on-numpy-array}
-{i: logical_not}
-{i: not}
-{i: True}
-{i: False}
-{i: bool}
-
-![](examples/numpy/not_on_np.py)
-
-* [logical not](https://docs.scipy.org/doc/numpy/reference/generated/numpy.logical_not.html)
-
-## abs value on a Numpy array
-{id: abs-value-on-numpy-array}
-{i: abs}
-{i: absolute}
-
-![](examples/numpy/abs_on_np.py)
-
-* [absolute](https://docs.scipy.org/doc/numpy/reference/generated/numpy.absolute.html)
-
-## Vectorize function in Numpy
-{id: vectorize-function}
-{i: vectorize}
-
-![](examples/numpy/fibonacci.py)
-
-* [vectorize](https://docs.scipy.org/doc/numpy/reference/generated/numpy.vectorize.html)
 

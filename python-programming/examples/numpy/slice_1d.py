@@ -1,6 +1,6 @@
-import numpy
+import numpy as np
 
-a = numpy.array([1, 1, 2, 3, 5, 8, 13, 21, 34])
+a = np.array([1, 1, 2, 3, 5, 8, 13, 21, 34])
 print(a)       # [ 1 1 2 3 5 8 13 21 34]
 
 b = a[2:5]

@@ -15,6 +15,7 @@ a = np.array([
     ])
 print(a)
 print(a.dtype)
+print()
 
 b = vfibo(a)
 print(b)

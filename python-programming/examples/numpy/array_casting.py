@@ -1,6 +1,6 @@
-import numpy
+import numpy as np
 
-a = numpy.array([
+a = np.array([
     [ "12",  "23",  "3",  "4"],
     [ "2",  "3",  "4",  "5"]
 ])
@@ -17,7 +17,7 @@ except Exception as e:
 #    signature matching types dtype('<U3') dtype('<U3') dtype('<U3')
 
 
-c = a.astype(numpy.int) + 1
+c = a.astype(np.int) + 1
 print(c)
 # [[13 24  4  5]
 # [ 3  4  5  6]]
