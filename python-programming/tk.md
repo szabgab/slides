@@ -179,6 +179,7 @@ First we are going to see small examples with each one of these Widgets. Then we
 
 ![](examples/tk/tk_simple_example.py)
 
+
 ## Not so Simple Tk app with class
 {id: tk-simple-class}
 {i: tkinter}
@@ -223,6 +224,13 @@ First we are going to see small examples with each one of these Widgets. Then we
 
 ![](examples/tk/tk_runner.py)
 
+## Tk: Runner with threads
+{id: tk-runner-with-threads}
+{i: threading}
+{i: queue}
+{i: ctypes}
+
+![](examples/tk/tk_runner_threads.py)
 
 ## Tk: Text Widget
 {id: tk-text-widget}
