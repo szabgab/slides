@@ -41,22 +41,26 @@ skip_flake = set([
     'python-programming/examples/linters/importer.py',
 ])
 
+def _run(cmd):
+    proc = subprocess.Popen(cmd,
+        stdout = subprocess.PIPE,
+        stderr = subprocess.PIPE,
+    )
+    out, err = proc.communicate()
+    return proc.returncode, out, err
 
 def flake(path):
     #print(path)
     if path in skip_flake:
         return 0
-    proc = subprocess.Popen(['flake8', path],
-        stdout = subprocess.PIPE,
-        stderr = subprocess.PIPE,
-    )
-    out, err = proc.communicate()
-    if proc.returncode != 0:
+    exit_code, out, err = _run(['flake8', path])
+
+    if exit_code != 0:
         print(path)
-        print(proc.returncode)
+        print(exit_code)
         print(out)
         print(err)
-    return proc.returncode
+    return exit_code
 
 
 def main():
@@ -87,6 +91,7 @@ def main():
             #)
             #out, err = proc.communicate()
             #assert proc.returncode == 0, "for {}".format(path)
+
     end = time.time()
     print(f"Elapsed time: {end-start}")
     exit(errors)
