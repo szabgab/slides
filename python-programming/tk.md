@@ -253,15 +253,8 @@ When the button is pressed the expression is calculated.
 
 There is another button called "Quit" that will close the application.
 
-## Solution: Tk - Calculator one line
-{id: solution-tk-calcilator-one-line}
-
-![](examples/tk/calculator_one_line.py)
-
-![](examples/tk/calculator.py)
-
 ## Exercise: Tk Shopping list
-{id: exercise-tk-shoppint-list}
+{id: exercise-tk-shopping-list}
 
 Create a Tk application that allows you to create a shopping list.
 
@@ -280,6 +273,18 @@ Create a Tk application that allows you to create a shopping list.
 * Clear the currently list to start over.
 * Allow the user to see statistics on which items were bought.
 * When adding new items, offer items that were previously bought.
+
+## Exercise: Tk TODO list
+{id: exercise-tk-todo-list}
+
+* Create a Tk application to handle your TODO items.
+* A Menu to be able to exit the application
+* A List of current tasks.
+* A way to add a new task. For a start each task has a title and a status. The status can be "todo" or "done". (default is "todo")
+* A way to edit a task. (Primarily to change its title).
+* A way to mark an item as "done" or mark it as "todo".
+* A way to move items up and down in the list.
+* The application should automatically save the items in their most up-to-date state in a "database". The database can be a JSON file or and SQLite database or anything else you feel fit.
 
 
 ## Exercise: Tk Notepad
@@ -303,6 +308,14 @@ Then copy the old file to the new name.
 {id: exercise-tk}
 
 * Application that accepts a "title" - line of text, a file selected, a new filename (that probably does not exist) and then runs.
+
+## Solution: Tk - Calculator one line
+{id: solution-tk-calcilator-one-line}
+
+![](examples/tk/calculator_one_line.py)
+
+![](examples/tk/calculator.py)
+
 
 ## Solution: Tk
 {id: solution-tk}
