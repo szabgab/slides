@@ -45,7 +45,7 @@ need to install it yourself. For examples on Ubuntu you can use `apt` to install
 sudo apt-get install python3-tk
 ```
 
-## Tk Documentation
+## Python Tk Documentation
 {id: tk-documentation}
 
 {aside}
@@ -64,7 +64,7 @@ they are usually called controls. There are several commonly used Widgets. For e
 First we are going to see small examples with each one of these Widgets. Then we'll see how to combine them.
 {/aside}
 
-## Tk Label
+## Python Tk Label
 {id: tk-label}
 {i: tkinter}
 {i: Tk}
@@ -76,7 +76,7 @@ First we are going to see small examples with each one of these Widgets. Then we
 
 ![](examples/tk/tk_label.py)
 
-## Tk Button
+## Python Tk Button
 {id: tk-button}
 {i: Button}
 
@@ -84,12 +84,12 @@ First we are going to see small examples with each one of these Widgets. Then we
 
 ![](examples/tk/tk_button.py)
 
-## Tk Button with action
+## Python Tk Button with action
 {id: tk-button-with-action}
 
 ![](examples/tk/tk_button_with_action.py)
 
-## Tk Entry (one-line text entry)
+## Python Tk Entry (one-line text entry)
 {id: tk-entry}
 {i: Entry}
 
@@ -97,36 +97,69 @@ First we are going to see small examples with each one of these Widgets. Then we
 
 ![](examples/tk/tk_entry.py)
 
-## Tk Entry for passwords and other secrets (hidden text)
+## Python Tk Entry for passwords and other secrets (hidden text)
 {id: tk-entry-passwords}
 
 ![](examples/tk/tk_entry_secret.py)
 
-## Tk Checkbox
+## Python Tk Checkbox
 {id: tk-checkbox}
 {i: Checkbox}
+{i: BooleanVar}
 
 ![](examples/tk/tk_checkbox.py)
 
-## Tk Listbox
+* [Variables](https://docs.python.org/3.9/library/tkinter.html#coupling-widget-variables)
+
+
+## Python Tk Listbox
 {id: tk-listbox}
 {i: Listbox}
 {i: END}
 
 ![](examples/tk/tk_listbox.py)
 
-## Tk Listbox Multiple
+## Python Tk Listbox Multiple
 {id: tk-listbox-multiple}
 
 ![](examples/tk/tk_listbox_more.py)
 
-## Tk Dialogs
+## Python Tk Menubar
+{id: tk-menubar}
+{i: Menu}
+{i: add_cascade}
+{i: add_command}
+
+* [Menubar](http://effbot.org/zone/tkinter-menubar.htm)
+* [Menu](http://effbot.org/tkinterbook/menu.htm)
+
+* `underline` sets the hot-key.
+* `tearoff=` (the default) allows floating menu by clicking on the dashed line.
+* enable/disable menu items.
+* Set actions via `command` on the menu items.
+
+![](examples/tk/tk_menu.py)
+
+## Python Tk Text
+{id: tk-text}
+{i: Text}
+
+![](examples/tk/tk_text.py)
+
+* `text.delete(1.0, tk.END)`
+* `text.insert('end', content)`
+* `content = text.get(1.0, tk.END)`
+
+* [tk text](http://effbot.org/tkinterbook/text.htm)
+
+
+## Python Tk Dialogs
 {id: tk-dialogs}
 
 * [Dialogs](https://docs.python.org/library/dialog.html)
 
 
-## Tk Filedialog
+## Python Tk Filedialog
 {id: tk-filedialog}
 {i: filedialog}
 {i: askopenfilename}
@@ -147,44 +180,14 @@ First we are going to see small examples with each one of these Widgets. Then we
 ![](examples/tk/tk_filedialog.py)
 
 
-## Tk Menubar
-{id: tk-menubar}
-{i: Menu}
-{i: add_cascade}
-{i: add_command}
-
-* [Menubar](http://effbot.org/zone/tkinter-menubar.htm)
-* [Menu](http://effbot.org/tkinterbook/menu.htm)
-
-* `underline` sets the hot-key.
-* `tearoff=` (the default) allows floating menu by clicking on the dashed line.
-* enable/disable menu items.
-* Set actions via `command` on the menu items.
-
-![](examples/tk/tk_menu.py)
-
-## Tk Text
-{id: tk-text}
-{i: Text}
-
-![](examples/tk/tk_text.py)
-
-* `text.delete(1.0, tk.END)`
-* `text.insert('end', content)`
-* `content = text.get(1.0, tk.END)`
-
-
-* [tk text](http://effbot.org/tkinterbook/text.htm)
-
-
-## Tk messagebox
+## Python Tk messagebox
 {id: tk-messagebox}
 
 ![](examples/tk/tk_messagebox.py)
 
 * [Tk messagebox](https://docs.python.org/library/tkinter.messagebox.html)
 
-## Tk Frame
+## Python Tk Frame
 {id: tk-frame}
 {i: Frame}
 {i: pack}

@@ -8,12 +8,13 @@ entry['show'] = '*'
 entry.pack()
 
 def clicked():
-    print("clicked")
     print(entry.get())
-    app.destroy()
-    exit()
 
-button = tk.Button(app, text='Close', width=25, command=clicked)
+button = tk.Button(app, text='Show', width=25, command=clicked)
 button.pack()
+
+exit_button = tk.Button(app, text='Close', width=25, command=app.destroy)
+exit_button.pack()
+
 app.mainloop()
 

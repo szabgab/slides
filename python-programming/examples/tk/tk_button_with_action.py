@@ -1,13 +1,15 @@
 import tkinter as tk
 
-def clicked():
-    app.destroy()
+def run_action():
     print("clicked")
-    exit()
 
 app = tk.Tk()
 app.title('Single Button')
-button = tk.Button(app, text='Close', width=25, command=clicked)
-button.pack()
-app.mainloop()
 
+action_button = tk.Button(app, text='Action', width=25, command=run_action)
+action_button.pack()
+
+exit_button = tk.Button(app, text='Close', width=25, command=app.destroy)
+exit_button.pack()
+
+app.mainloop()

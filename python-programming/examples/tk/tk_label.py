@@ -5,5 +5,5 @@ app = tk.Tk()
 
 label = tk.Label(app, text='Some fixed text')
 label.pack()
-app.mainloop()
 
+app.mainloop()
