@@ -8,7 +8,12 @@ def run_code():
     text = ""
     text += "Name: {}\n".format(name.get())
     text += "Password: {}\n".format(password.get())
-    text += "Color: {}".format(color.get())
+    text += "Animal: {}".format(animal.get())
+    text += "Colors: "
+    for ix in range(len(colors)):
+        if colors[ix].get():
+            text += color_names[ix] + " "
+    text += "\n"
 
     messagebox.showinfo(title = "Running with", message = text)
 
@@ -52,15 +57,30 @@ password.pack({"side": "left"})
 
 radios = tk.Frame(app)
 radios.pack()
-
-color = tk.StringVar()
-color.set("Red")
+animal = tk.StringVar()
+animal.set("Red")
 my_radio = []
-colors = ["Red", "Blue", "Green"]
-for color_name in colors:
-    radio = tk.Radiobutton(radios, text=color_name, variable=color, value=color_name)
+animals = ["Cow", "Mouse", "Dog", "Car", "Snake"]
+for animal_name in animals:
+    radio = tk.Radiobutton(radios, text=animal_name, variable=animal, value=animal_name)
     radio.pack({"side": "left"})
     my_radio.append(radio)
+
+
+checkboxes = tk.Frame(app)
+checkboxes.pack()
+colors = []
+my_checkbox = []
+color_names = ["Red", "Blue", "Green"]
+for color_name in color_names:
+    color_var = tk.BooleanVar()
+    colors.append(color_var)
+    checkbox = tk.Checkbutton(checkboxes, text=color_name, variable=color_var)
+    checkbox.pack({"side": "left"})
+    my_checkbox.append(checkbox)
+
+
+
 
 buttons = tk.Frame(app)
 buttons.pack()
