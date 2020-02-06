@@ -163,6 +163,15 @@ First we are going to see small examples with each one of these Widgets. Then we
 
 ![](examples/tk/tk_menu.py)
 
+## Tk Text
+{id: tk-text}
+{i: Text}
+
+![](examples/tk/tk_text.py)
+
+* [tk text](http://effbot.org/tkinterbook/text.htm)
+
+
 ## Tk Frame
 {id: tk-frame}
 {i: Frame}
