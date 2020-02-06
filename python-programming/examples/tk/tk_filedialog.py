@@ -1,9 +1,17 @@
 import tkinter as tk
 from tkinter import filedialog
 
+input_file_path = None
+output_file_path = None
+
+def run_process():
+    print("Parameters:")
+    print(f"in: {input_file_path}")
+    print(f"out: {output_file_path}")
+
 def close_app():
+    print("Bye")
     app.destroy()
-    exit()
 
 def select_input_file():
     global input_file_path
@@ -24,8 +32,11 @@ input_button.pack()
 output_button = tk.Button(app, text='Select output file', command=select_output_file)
 output_button.pack()
 
-button = tk.Button(app, text='Process', width=25, command=close_app)
-button.pack()
+process_button = tk.Button(app, text='Process', width=25, command=run_process)
+process_button.pack()
+
+exit_button = tk.Button(app, text='Close', width=25, command=close_app)
+exit_button.pack()
 
 app.mainloop()
 

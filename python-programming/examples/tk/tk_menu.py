@@ -23,20 +23,22 @@ def set_language(lang):
 menubar = tk.Menu(app)
 
 menu1 = tk.Menu(menubar, tearoff=0)
-menubar.add_cascade(label="File", underline=0, menu=menu1)
 menu1.add_command(label="New", command=run_new)
 menu1.add_command(label="Enable language", command=enable_languages)
 menu1.add_command(label="Disable language", command=disable_languages)
 menu1.add_separator()
 menu1.add_command(label="Exit", underline=1, command=run_exit)
 
+menubar.add_cascade(label="File", underline=0, menu=menu1)
+
 menu2 = tk.Menu(menubar, tearoff=1)
-menubar.add_cascade(label="Language", menu=menu2)
 menu2.add_command(label="English")
 menu2.add_command(label="Hebrew")
 menu2.add_command(label="Spanish")
 menu2.add_command(label="Klingon", state="disabled", command=lambda : set_language('Klingon'))
 menu2.add_command(label="Hungarian")
+
+menubar.add_cascade(label="Language", menu=menu2)
 
 app.config(menu=menubar)
 

@@ -322,4 +322,8 @@ Then copy the old file to the new name.
 
 ![](examples/tk/convert_file.py)
 
+## Solution: Tk Notepad
+{id: solution-tk-notepad}
+
+![](examples/tk/tk_notepad.py)
 
