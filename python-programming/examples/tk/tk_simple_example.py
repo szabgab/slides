@@ -1,16 +1,19 @@
 import tkinter as tk
+from tkinter import messagebox
 
+def scary_action():
+    messagebox.showerror(title = "Scary", message = "Deleting hard disk. Please wait...")
 
-def say_hi():
-    print("hi there, everyone! ")
-    print("Name: {}".format(name.get()))
-    print("Password: {}".format(password.get()))
-    print("count: {}".format(count.get()))
-    password.delete(0, 'end')
+def run_code():
+    text = ""
+    text += "Name: {}\n".format(name.get())
+    text += "Password: {}\n".format(password.get())
+    text += "Color: {}".format(color.get())
+
+    messagebox.showinfo(title = "Running with", message = text)
 
 def close_app():
     app.destroy()
-    exit()
 
 app = tk.Tk()
 app.title('Simple App')
@@ -47,27 +50,32 @@ password = tk.Entry(pw_frame)
 password["show"] = "*"
 password.pack({"side": "left"})
 
-# QUIT = tk.Button(app)
-# QUIT["text"] = "QUIT"
-# QUIT["fg"]   = "red"
-# QUIT["command"] =  close_app
-# QUIT.pack({"side": "left"})
+radios = tk.Frame(app)
+radios.pack()
+
+color = tk.StringVar()
+color.set("Red")
+my_radio = []
+colors = ["Red", "Blue", "Green"]
+for color_name in colors:
+    radio = tk.Radiobutton(radios, text=color_name, variable=color, value=color_name)
+    radio.pack({"side": "left"})
+    my_radio.append(radio)
+
+buttons = tk.Frame(app)
+buttons.pack()
+
+scary_button = tk.Button(buttons)
+scary_button["text"] = "Don't click here!"
+scary_button["fg"]   = "red"
+scary_button["command"] = scary_action
+scary_button.pack({"side": "left"})
+
+action_button = tk.Button(buttons)
+action_button["text"] = "Run",
+action_button["command"] = run_code
+action_button.pack()
+
 
 app.mainloop()
-
-
-# self.count = tk.IntVar()
-# self.count.set(2)
-# self.my_radio = []
-# radio = [(1, "One"), (2, "Two"), (3, "Three")]
-# for ix in range(len(radio)):
-#     self.my_radio.append(tk.Radiobutton(self, text=radio[ix][1], variable=self.count, value=radio[ix][0]))
-#     self.my_radio[ix].pack({"side": "bottom"})
-# 
-# 
-# self.hi_there = tk.Button(self)
-# self.hi_there["text"] = "Hello",
-# self.hi_there["command"] = self.say_hi
-# 
-# self.hi_there.pack({"side": "left"})
 
