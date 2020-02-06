@@ -134,8 +134,8 @@ First we are going to see small examples with each one of these Widgets. Then we
 {i: askopenfile}
 {i: asksaveasfile}
 
-* [](http://effbot.org/tkinterbook/tkinter-file-dialogs.htm)
-* [](https://docs.python.org/library/dialog.html)
+* [file dialogs](http://effbot.org/tkinterbook/tkinter-file-dialogs.htm)
+* [dialog](https://docs.python.org/library/dialog.html)
 
 * askopenfilename - returns path to file
 * asksaveasfilename - returns path to file
