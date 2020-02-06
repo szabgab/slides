@@ -169,8 +169,20 @@ First we are going to see small examples with each one of these Widgets. Then we
 
 ![](examples/tk/tk_text.py)
 
+* `text.delete(1.0, tk.END)`
+* `text.insert('end', content)`
+* `content = text.get(1.0, tk.END)`
+
+
 * [tk text](http://effbot.org/tkinterbook/text.htm)
 
+
+## Tk messagebox
+{id: tk-messagebox}
+
+![](examples/tk/tk_messagebox.py)
+
+* [Tk messagebox](https://docs.python.org/library/tkinter.messagebox.html)
 
 ## Tk Frame
 {id: tk-frame}

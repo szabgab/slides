@@ -1,5 +1,5 @@
 import tkinter as tk
-from tkinter import filedialog
+from tkinter import filedialog, simpledialog, messagebox
 import os
 
 file_path = None
@@ -38,7 +38,9 @@ def run_exit():
     app.destroy()
 
 def run_about():
-    print("about")
+    #print(dir(simpledialog))
+    #answer = simpledialog.Dialog(app, "The title")
+    messagebox.showinfo(title = "About", message = "This simple text editor was created as a solution for the exercise.\n\nCopyright: Gabor Szabo")
 
 menubar = tk.Menu(app)
 
@@ -50,7 +52,7 @@ menu1.add_separator()
 menu1.add_command(label="Exit", underline=1, command=run_exit)
 menubar.add_cascade(label="File", underline=0, menu=menu1)
 
-menubar.add_command(label="About", command=run_about)
+menubar.add_command(label="About", underline=0, command=run_about)
 
 app.config(menu=menubar)
 
@@ -58,4 +60,11 @@ text = tk.Text(app)
 text.pack({"side": "bottom"})
 
 app.mainloop()
+
+# TODO: Show the name of the file somewhere? Maybe at the bottom in a status bar?
+# TODO: Indicate if the file has been changed since the last save?
+# TODO: Ask before exiting or before replacing the content if the file has not been saved yet.
+# TODO: Undo/Redo?
+# TODO: Search?
+# TODO: Search and Replace?
 
