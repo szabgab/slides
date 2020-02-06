@@ -1,6 +1,12 @@
 # GUI with Python/Tk
 {id: tk}
 
+## Sample Tk app
+{id: tk-simple}
+
+![](examples/tk/tk_demo.py)
+
+
 ## GUI Toolkits
 {id: gui-toolkits}
 {i: Tk}
@@ -211,11 +217,6 @@ First we are going to see small examples with each one of these Widgets. Then we
 
 * width
 * side: left, right, top, bottom
-
-## Not so Simple Tk app
-{id: tk-simple}
-
-![](examples/tk/tk_simple_example.py)
 
 
 ## Not so Simple Tk app with class
