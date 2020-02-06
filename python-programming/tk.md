@@ -207,6 +207,23 @@ First we are going to see small examples with each one of these Widgets. Then we
 
 * [Tk messagebox](https://docs.python.org/library/tkinter.messagebox.html)
 
+
+## Python Tk Combobox
+{id: tk-combobox}
+{i: Combobox}
+{i: ComboboxSelected}
+{i: bind}
+
+![](examples/tk/tk_combobox.py)
+
+
+## Python Tk Progressbar
+{id: tk-progressbar}
+{i: Progreessbar}
+
+![](examples/tk/tk_progressbar.py)
+
+
 ## Python Tk Frame
 {id: tk-frame}
 {i: Frame}
