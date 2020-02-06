@@ -2,7 +2,6 @@ import tkinter as tk
 
 def close():
     app.destroy()
-    exit()
 
 def clicked(val):
     entry.insert(tk.END, val)

@@ -64,18 +64,6 @@ they are usually called controls. There are several commonly used Widgets. For e
 First we are going to see small examples with each one of these Widgets. Then we'll see how to combine them.
 {/aside}
 
-## Python Tk Label
-{id: tk-label}
-{i: tkinter}
-{i: Tk}
-{i: Label}
-{i: pack}
-{i: mainloop}
-
-* [Label](https://effbot.org/tkinterbook/label.htm)
-
-![](examples/tk/tk_label.py)
-
 ## Python Tk Button
 {id: tk-button}
 {i: Button}
@@ -88,6 +76,20 @@ First we are going to see small examples with each one of these Widgets. Then we
 {id: tk-button-with-action}
 
 ![](examples/tk/tk_button_with_action.py)
+
+
+## Python Tk Label
+{id: tk-label}
+{i: tkinter}
+{i: Tk}
+{i: Label}
+{i: pack}
+{i: mainloop}
+
+* [Label](https://effbot.org/tkinterbook/label.htm)
+
+![](examples/tk/tk_label.py)
+
 
 ## Python Tk Entry (one-line text entry)
 {id: tk-entry}
@@ -111,16 +113,25 @@ First we are going to see small examples with each one of these Widgets. Then we
 
 * [Variables](https://docs.python.org/3.9/library/tkinter.html#coupling-widget-variables)
 
+## Python Tk Radiobutton
+{id: tk-radiobutton}
+
+TODO
+
 
 ## Python Tk Listbox
 {id: tk-listbox}
 {i: Listbox}
 {i: END}
+{i: curselection}
+{i: get}
 
 ![](examples/tk/tk_listbox.py)
 
 ## Python Tk Listbox Multiple
 {id: tk-listbox-multiple}
+{i: selectmode}
+{i: MULTIPLE}
 
 ![](examples/tk/tk_listbox_more.py)
 
@@ -157,6 +168,8 @@ First we are going to see small examples with each one of these Widgets. Then we
 {id: tk-dialogs}
 
 * [Dialogs](https://docs.python.org/library/dialog.html)
+* Filedialogs
+* Message boxes
 
 
 ## Python Tk Filedialog

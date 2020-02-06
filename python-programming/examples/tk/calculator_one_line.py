@@ -16,7 +16,6 @@ def calc():
 
 def close():
     app.destroy()
-    exit()
 
 calc_btn = tk.Button(app, text='Calculate', width=25, command=calc)
 calc_btn.pack()

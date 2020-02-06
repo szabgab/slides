@@ -9,7 +9,6 @@ def run_new():
 def run_exit():
     print("exit")
     app.destroy()
-    exit()
 
 def enable_languages():
     menu2.entryconfig("Klingon", state="normal")

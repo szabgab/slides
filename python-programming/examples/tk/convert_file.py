@@ -9,7 +9,6 @@ def run_process():
     print(filename)
 
     app.destroy()
-    exit()
 
 def select_input_file():
     file_path = filedialog.askopenfilename()
