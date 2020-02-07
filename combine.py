@@ -113,7 +113,8 @@ def main():
     with open(books_file, 'r') as fh:
         for line in fh:
             line = line.rstrip("\n")
-            dir_name, json_file = line.split('/')
+            filepath, target_dir = line.split(',')
+            dir_name, json_file = filepath.split('/')
             if args.all or line.startswith(args.name):
                 book.extend(process_slides(source, target, dir_name, json_file))
 
