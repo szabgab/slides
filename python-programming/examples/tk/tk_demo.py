@@ -80,8 +80,6 @@ for color_name in color_names:
     my_checkbox.append(checkbox)
 
 
-
-
 buttons = tk.Frame(app)
 buttons.pack()
 

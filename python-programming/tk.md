@@ -97,6 +97,22 @@ First we are going to see small examples with each one of these Widgets. Then we
 ![](examples/tk/tk_label.py)
 
 
+## Python Tk Label - font size and color
+{id: tk-label-font}
+{i: config}
+{i: color}
+{i: font}
+
+![](examples/tk/tk_label_font.py)
+
+
+## Python Tk Keybinding
+{id: tk-keybinding}
+{i: bind}
+
+![](examples/tk/tk_key_binding.py)
+
+
 ## Python Tk Entry (one-line text entry)
 {id: tk-entry}
 {i: Entry}
@@ -105,10 +121,12 @@ First we are going to see small examples with each one of these Widgets. Then we
 
 ![](examples/tk/tk_entry.py)
 
+
 ## Python Tk Entry for passwords and other secrets (hidden text)
 {id: tk-entry-passwords}
 
 ![](examples/tk/tk_entry_secret.py)
+
 
 ## Python Tk Checkbox
 {id: tk-checkbox}
@@ -118,6 +136,7 @@ First we are going to see small examples with each one of these Widgets. Then we
 ![](examples/tk/tk_checkbox.py)
 
 * [Variables](https://docs.python.org/3.9/library/tkinter.html#coupling-widget-variables)
+
 
 ## Python Tk Radiobutton
 {id: tk-radiobutton}
@@ -134,6 +153,7 @@ First we are going to see small examples with each one of these Widgets. Then we
 {i: get}
 
 ![](examples/tk/tk_listbox.py)
+
 
 ## Python Tk Listbox Multiple
 {id: tk-listbox-multiple}
