@@ -1,5 +1,6 @@
 import tkinter as tk
-from tkinter import messagebox
+from tkinter import messagebox, filedialog
+import os
 
 def scary_action():
     messagebox.showerror(title = "Scary", message = "Deleting hard disk. Please wait...")
@@ -14,6 +15,7 @@ def run_code():
         if colors[ix].get():
             text += color_names[ix] + " "
     text += "\n"
+    text += "Filename: {}\n".format( os.path.basename(filename_entry.get()) )
 
     messagebox.showinfo(title = "Running with", message = text)
 
@@ -80,18 +82,28 @@ for color_name in color_names:
     my_checkbox.append(checkbox)
 
 
+def open_filename_selector():
+    file_path = filedialog.askopenfilename(filetypes=(("Any file", "*"),))
+    filename_entry.delete(0, tk.END)
+    filename_entry.insert(0, file_path)
+
+filename_frame = tk.Frame(app)
+filename_frame.pack()
+filename_label = tk.Label(filename_frame, text="Filename:", width=10)
+filename_label.pack({"side": "left"})
+filename_entry = tk.Entry(filename_frame, width=60)
+filename_entry.pack({"side": "left"})
+filename_button = tk.Button(filename_frame, text="Select file", command=open_filename_selector)
+filename_button.pack({"side": "left"})
+
+
 buttons = tk.Frame(app)
 buttons.pack()
 
-scary_button = tk.Button(buttons)
-scary_button["text"] = "Don't click here!"
-scary_button["fg"]   = "red"
-scary_button["command"] = scary_action
+scary_button = tk.Button(buttons, text="Don't click here!",fg="red", command=scary_action)
 scary_button.pack({"side": "left"})
 
-action_button = tk.Button(buttons)
-action_button["text"] = "Run",
-action_button["command"] = run_code
+action_button = tk.Button(buttons, text="Run", command=run_code)
 action_button.pack()
 
 

@@ -178,6 +178,7 @@ First we are going to see small examples with each one of these Widgets. Then we
 
 ![](examples/tk/tk_menu.py)
 
+
 ## Python Tk Text
 {id: tk-text}
 {i: Text}
@@ -235,6 +236,22 @@ First we are going to see small examples with each one of these Widgets. Then we
 {i: bind}
 
 ![](examples/tk/tk_combobox.py)
+
+## Python Tk OptionMenu
+{id: tk-optionmenu}
+{i: OptionMenu}
+{i: StringVar}
+
+![](examples/tk/tk_optionmenu.py)
+
+
+## Python Tk Scale
+{id: tk-scale}
+{i: Scale}
+{i: HORIZONTAL}
+{i: VERTICAL}
+
+![](examples/tk/tk_scale.py)
 
 
 ## Python Tk Progressbar
@@ -307,11 +324,6 @@ First we are going to see small examples with each one of these Widgets. Then we
 {i: ctypes}
 
 ![](examples/tk/tk_runner_threads.py)
-
-## Tk: Text Widget
-{id: tk-text-widget}
-
-* [text](http://effbot.org/tkinterbook/text.htm)
 
 ## Getting started with Tk
 {id: getting-started-with-tk}
@@ -387,6 +399,10 @@ Then copy the old file to the new name.
 
 ## Solution: Tk - Calculator one line
 {id: solution-tk-calcilator-one-line}
+{i: Entry}
+{i: delete}
+{i: insert}
+{i: Button}
 
 ![](examples/tk/calculator_one_line.py)
 
