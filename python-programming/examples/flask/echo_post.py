@@ -1,6 +1,7 @@
 from flask import Flask, request
+
 app = Flask(__name__)
- 
+
 @app.route("/")
 def hello():
     return '''
@@ -9,11 +10,11 @@ def hello():
          <input type="submit" value="Echo">
      </form>
      '''
-  
+
 @app.route("/echo", methods=['POST'])
-def echo(): 
-    return "You said: " + request.form['text']
- 
- 
-if __name__ == "__main__":
-    app.run()
+def echo():
+    if 'text' in request.form:
+        return "You said: " + request.form['text']
+    else:
+        return "Nothing to say?"
+

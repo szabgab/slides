@@ -19,6 +19,13 @@ $ python examples/flask/hello_world.py
  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
 ```
 
+## Flask hello world + test
+{id: flask-hello-world-test}
+
+![](examples/flask/hello_world/app.py)
+
+![](examples/flask/hello_world/test_app.py)
+
 
 ## Flask: Echo GET
 {id: flask-echo-get}
@@ -27,7 +34,9 @@ $ python examples/flask/hello_world.py
 
 ## Flask: Echo POST
 {id: flask-echo-post}
+
 ![](examples/flask/echo_post.py)
+![](examples/flask/test_echo_post.py)
 
 
 ## Flask: templates
@@ -252,13 +261,6 @@ the counter will keep increasing.
 Create a Flask-based application with a persistent counter that even after restarting the application
 the counter will keep increasing. For each user have its own counter as identified by the username they type in.
 
-
-## Flask hello world + test
-{id: flask-hello-world-test}
-
-![](examples/flask/hello_world/app.py)
-
-![](examples/flask/hello_world/test_app.py)
 
 ## Flask Simple Authentication + test
 {id: flask-simple-authentication-test}
