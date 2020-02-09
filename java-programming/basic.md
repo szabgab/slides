@@ -30,6 +30,7 @@ javac 1.8.0_60
 ## Hello World in Java
 {id: java-hello-world}
 {i: System.out.println}
+
 ![](examples/HelloWorld.java)
 
 ```
@@ -54,6 +55,7 @@ true, false - boolean
 "abc".getClass() works and prints class java.lang.String, but does not work on any of the other data types
 ```
 
+![](examples/CheckDataTypes.java)
 
 ## Java Variable declaration
 {id: java-variable-declaration}
@@ -170,6 +172,8 @@ rm -f *.class; javac Calculator.java UseCalc.java ; java UseCalc
 ![](examples/ReadLines.java)
 
 * [Character stream](https://docs.oracle.com/javase/tutorial/essential/io/charstreams.html)
+* [read bytestream](https://docs.oracle.com/javase/tutorial/essential/io/bytestreams.html)
+* reads characters byte-by-byte
 
 
 ## Regex
