@@ -19,9 +19,11 @@
 
 The `range` function in Python 3 is not a real "iterator" but it is an "iterable".
 In many aspects it behaves as an iterator. Specifically it allows us to iterate over numbers.
+[Range Is Not An Iterator](https://treyhunner.com/2018/02/python-range-is-not-an-iterator/)
 
 ![](examples/iterators/range.py)
 ![](examples/iterators/range.out)
+
 
 ## Iterators
 {id: iterators}
