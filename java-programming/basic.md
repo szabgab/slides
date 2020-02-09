@@ -76,43 +76,57 @@ With and without initialization.
 
 ## Java prompt - read from STDIN
 {id: java-prompt}
+
 ![](examples/Prompt.java)
 
 
 ## Java command line arguments
 {id: java-command-line-arguments}
+
 ![](examples/CmdLineArgs.java)
 
 
 ## Java for-loop
 {id: java-for-loop}
 {i: for}
+
 ![](examples/ForLoop.java)
 
 
 ## Java while-loop
 {id: java-while-loop}
 {i: while}
+
 ![](examples/WhileLoop.java)
+
+
+## Convert string to number
+{id: convert-string-to-number}
+
+![](examples/Convert.java)
 
 
 ## Add Command line values
 {id: java-add-command-line-values}
+
 ![](examples/AddCmdLineArgs.java)
 
 
 ## Add Command line numbers
 {id: java-add-command-line-numbers}
+
 ![](examples/AddCmdLineNumbers.java)
 
 
 ## Use class
 {id: java-use-class-in-same-file}
+
 ![](examples/GreetingsA.java)
 
 
 ## Method signature
 {id: java-method-signature}
+
 ![](examples/GreetingsB.java)
 
 
@@ -129,17 +143,65 @@ rm -f *.class; javac Calculator.java UseCalc.java ; java UseCalc
 ```
 
 
-## Other
-{id: other}
+## Calc
+{id: calc}
+
 ![](examples/Calc.java)
+
+## Cat
+{id: cat}
+
 ![](examples/Cat.java)
+
+## Grep
+{id: grep}
+
 ![](examples/Grep.java)
+
+## Read file
+{id: read-file}
+
 ![](examples/ReadFile.java)
+
+## Read line
+{id: read-line}
+
 ![](examples/ReadLine.java)
+![](examples/ReadLines.java)
+
+* [Character stream](https://docs.oracle.com/javase/tutorial/essential/io/charstreams.html)
+
+
+## Regex
+{id: regex}
+
 ![](examples/Regex.java)
+
+## Regex Test harness
+{id: regex-test-harness}
+
 ![](examples/RegexTestHarness.java)
+
+## Split a string
+{id: split-a-string}
+
+{i: StringTokenizer}
 ![](examples/SplitString.java)
 
+## Java: Run external program
+{id: run-external-program}
+{i: InputStream}
+{i: Runtime}
+{i: getRuntime}
+{i: exec}
+
+
+![](examples/Runls.java)
+
+## Compile and Run in shell
+{id: compule-and-run-in-shell}
+
+![](examples/run.sh)
 
 
 
