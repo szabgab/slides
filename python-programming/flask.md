@@ -282,3 +282,22 @@ the counter will keep increasing. For each user have its own counter as identifi
 
 ![](examples/flask/simple_auth/test_app.py)
 
+## Flask REST API
+{id: flask-rest-api}
+
+* [flask-restful](https://flask-restful.readthedocs.io/en/latest/quickstart.html)
+
+## Flask REST API - Echo
+{id: flask-rest-api-echo}
+
+![](examples/flask/api_echo/api.py)
+![](examples/flask/api_echo/test_api.py)
+
+## Flask REST API - parameters in path
+{id: flask-rest-api-parameters-in-path}
+
+![](examples/flask/api_path/api.py)
+![](examples/flask/api_path/test_api.py)
+
+
+
