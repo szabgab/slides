@@ -300,4 +300,14 @@ the counter will keep increasing. For each user have its own counter as identifi
 ![](examples/flask/api_path/test_api.py)
 
 
+## Flask REST API - parameter parsing
+{id: flask-rest-api-parameter-parsing}
 
+![](examples/flask/api_paremeters/api.py)
+![](examples/flask/api_paremeters/test_api.py)
+
+## Flask REST API - parameter parsing - required
+{id: flask-rest-api-parameter-parsing-required}
+
+![](examples/flask/api_paremeters_required/api.py)
+![](examples/flask/api_paremeters_required/test_api.py)
