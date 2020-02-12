@@ -1,7 +1,6 @@
-from flask import Flask, request, render_template, session
+from flask import Flask, request, render_template
 import re
 app = Flask(__name__)
-
 
 @app.route("/",methods=['GET', 'POST'] )
 def main():
@@ -11,4 +10,3 @@ def main():
         color = new_color
 
     return render_template('main.html', color = color)
-
