@@ -124,3 +124,10 @@ in this case you need to create your own hierarchy of exception classes.
 {id: solution-exception-raise-my-exception}
 
 ![](examples/exceptions/my_positive.py)
+
+
+## Exception finally return
+{id: exception-finall-return}
+
+![](examples/exceptions/exception_finally_return.py)
+

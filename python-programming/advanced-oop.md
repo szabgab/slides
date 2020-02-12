@@ -348,3 +348,7 @@ zz = z1*z2
 
 ![](examples/advanced/gene_inheritance.py)
 
+## Instance counter
+{id: instance-counter}
+
+![](examples/advanced/instance_couner.py)
