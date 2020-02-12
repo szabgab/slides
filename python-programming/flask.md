@@ -26,7 +26,7 @@ pip install flask
 ## Flask: Hello World
 {id: flask-hello-world}
 
-![](examples/flask/0/hello_world.py)
+![](examples/flask/hw/hello_world.py)
 
 ```
 $ python hello_world.py
@@ -98,8 +98,8 @@ curl --data "text=Sancho Panza" http://localhost:5000/echo
 ## Flask: templates
 {id: flask-templates}
 
-![](examples/flask/1/echo_post.py)
-![](examples/flask/1/templates/index.html)
+![](examples/flask/tmpl/echo_post.py)
+![](examples/flask/tmpl/templates/index.html)
 
 ```
 FLASK_APP=echo_post FLASK_DEBUG=0 flask run
@@ -113,23 +113,23 @@ FLASK_APP=echo_post FLASK_DEBUG=1 flask run
 ## Flask: templates
 {id: flask-templates-work}
 
-![](examples/flask/1/echo_post_work.py)
+![](examples/flask/tmpl/echo_post_work.py)
 
 
 ## Flask: templates with parameters
 {id: flask-templates-parameters}
 
 
-![](examples/flask/2/echo.py)
-![](examples/flask/2/templates/echo.html)
-![](examples/flask/2/test_echo.py)
+![](examples/flask/params/echo.py)
+![](examples/flask/params/templates/echo.html)
+![](examples/flask/params/test_echo.py)
 
 
 ## Flask: runner
 {id: flask-runner}
 
 ```
-$ cd examples/flask/2
+$ cd examples/flask/params
 ```
 
 ```
@@ -169,28 +169,32 @@ that will add the two numbers inserted into the entry boxes.
 ## Static files
 {id: flask-static-files}
 
-![](examples/flask/4/app.py)
-![](examples/flask/4/templates/main.html)
-![](examples/flask/4/templates/other.html)
+![](examples/flask/st/app.py)
+![](examples/flask/st/templates/main.html)
+![](examples/flask/st/templates/other.html)
+
+```
+.
+├── app.py
+├── static
+│   └── img
+│       └── python.png
+└── templates
+    ├── main.html
+    └── other.html
+```
+
 
 
 ## Flask Logging
 {id: flask-logging}
 
-![](examples/flask/5/app.py)
-
-```
-FLASK_APP=app FLASK_DEBUG=1 flask run
-```
+![](examples/flask/log/app.py)
 
 ## Flask: Counter
 {id: flask-counter}
 
-![](examples/flask/10/counter.py)
-
-```
-FLASK_APP=counter FLASK_DEBUG=1 flask run
-```
+![](examples/flask/counter/app.py)
 
 Access the page from several browsers. There is one single counter that lives as long as the process lives.
 
