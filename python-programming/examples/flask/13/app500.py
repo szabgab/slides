@@ -12,3 +12,8 @@ Main
 def bad():
     raise Exception("This is a bad page")
     return 'Bad page'
+
+@app.errorhandler(500)
+def not_found(err):
+    #raise Exception("Oups")
+    return "Our Page crashed", 500
