@@ -1,0 +1,17 @@
+{% include 'incl/header.html' %}
+
+
+<h2>Languages</h2>
+<ul>
+  {% for lang in languages %}
+     <li>{{ lang.name }}
+        {% if lang.year %}
+             {{ lang.year }}
+        {% else %}
+             Timeless
+        {% endif %}
+     </li>
+  {% endfor %}
+</ul>
+
+{% include 'incl/footer.html' %}

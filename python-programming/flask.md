@@ -261,6 +261,47 @@ HTTP/1.0 500 INTERNAL SERVER ERROR
 ![](examples/flask/path-int-add/app.py)
 
 
+## Jinja loop, conditional, include
+{id: jinja-loop-conditional}
+
+```
+.
+├── app.py
+└── templates
+    ├── incl
+    │   ├── footer.html
+    │   └── header.html
+    └── main.html
+```
+
+![](examples/flask/jinja/app.py)
+![](examples/flask/jinja/templates/main.html)
+![](examples/flask/jinja/templates/incl/header.html)
+![](examples/flask/jinja/templates/incl/footer.html)
+
+
+## Exercise: Flask persistent
+{id: exercise-flask-persistent-counter}
+
+
+Create a Flask-based application with a persistent counter that even after restarting the application
+the counter will keep increasing.
+
+
+## Exercise: Flask persistent
+{id: exercise-flask-persistent-multi-counter}
+
+
+Create a Flask-based application with a persistent counter that even after restarting the application
+the counter will keep increasing. For each user have its own counter as identified by the username they type in.
+
+## Flask Exercises
+{id: flask-exercises}
+
+* [Shopping list](https://code-maven.com/shopping-list)
+* [TODO](https://code-maven.com/todo)
+
+
 ## Flask login
 {id: flask-login}
 
@@ -282,7 +323,6 @@ $ curl -I http://localhost:5000/api/info
 HTTP/1.0 200 OK
 Content-Type: application/json
 ```
-
 
 ## Flask and AJAX
 {id: flask-and-ajax-plain-javascript}
@@ -330,24 +370,6 @@ True
 ![](examples/flask/50/nginx.conf)
 
 
-## Exercise: Flask persistent
-{id: exercise-flask-persistent-counter}
-
-
-Create a Flask-based application with a persistent counter that even after restarting the application
-the counter will keep increasing.
-
-
-
-
-## Exercise: Flask persistent
-{id: exercise-flask-persistent-multi-counter}
-
-
-Create a Flask-based application with a persistent counter that even after restarting the application
-the counter will keep increasing. For each user have its own counter as identified by the username they type in.
-
-
 ## Flask Simple Authentication + test
 {id: flask-simple-authentication-test}
 {i: HTTPBasicAuth}
@@ -389,11 +411,4 @@ the counter will keep increasing. For each user have its own counter as identifi
 
 ![](examples/flask/api_paremeters_required/api.py)
 ![](examples/flask/api_paremeters_required/test_api.py)
-
-
-## Flask Exercises
-{id: flask-exercises}
-
-* [Shopping list](https://code-maven.com/shopping-list)
-* [TODO](https://code-maven.com/todo)
 
