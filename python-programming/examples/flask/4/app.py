@@ -1,6 +1,6 @@
 from flask import Flask, request, render_template, url_for
 app = Flask(__name__)
- 
+
 @app.route("/")
 def main():
     return render_template('main.html')

@@ -166,31 +166,38 @@ Write a web application that has two entry boxes and a button and
 that will add the two numbers inserted into the entry boxes.
 
 
-
 ## Static files
 {id: flask-static-files}
+
 ![](examples/flask/4/app.py)
 ![](examples/flask/4/templates/main.html)
 ![](examples/flask/4/templates/other.html)
 
 
+## Flask Logging
+{id: flask-logging}
+
+![](examples/flask/5/app.py)
+
+```
+FLASK_APP=app FLASK_DEBUG=1 flask run
+```
+
 ## Flask: Counter
 {id: flask-counter}
+
 ![](examples/flask/10/counter.py)
 
+```
+FLASK_APP=counter FLASK_DEBUG=1 flask run
+```
 
 Access the page from several browsers. There is one single counter that lives as long as the process lives.
 
 
-
-
-## Flask Logging
-{id: flask-logging}
-![](examples/flask/5/app.py)
-
-
 ## Color selector without session
 {id: flask-no-session}
+
 ![](examples/flask/11/color.py)
 ![](examples/flask/11/templates/main.html)
 
