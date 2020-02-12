@@ -4,20 +4,33 @@
 
 ## Python Flask intro
 {id: python-flask-intro}
+{i: Flask}
+{i: Jinja}
+{i: Werkzeug}
 
 * [Flask](http://flask.pocoo.org/)
 * [Jinja](http://jinja.pocoo.org/)
 * [Werkzeug](http://werkzeug.pocoo.org/)
 
+## Python Flask installation
+{id: python-flask-installation}
+
+```
+virtualenv venv -p python3
+source venv/bin/activate
+
+pip install flask
+```
 
 
 ## Flask: Hello World
 {id: flask-hello-world}
-![](examples/flask/hello_world.py)
+
+![](examples/flask/0/hello_world.py)
 
 ```
-$ python examples/flask/hello_world.py
- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+$ python hello_world.py
+Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
 ```
 
 ## Flask hello world + test
@@ -25,18 +38,31 @@ $ python examples/flask/hello_world.py
 
 ![](examples/flask/hello_world/app.py)
 
+```
+FLASK_APP=app flask run
+
+Visit: http://127.0.0.1:5000/
+curl http://localhost:5000/
+```
+
 ![](examples/flask/hello_world/test_app.py)
 
+```
+pytest
+```
 
 ## Flask generated page - time
 {id: flask-generated-page-time}
 
 
-![](examples/flask/time/time_app.py)
+![](examples/flask/time/app.py)
+![](examples/flask/time/test_app.py)
 
 
 ## Flask: Echo GET
 {id: flask-echo-get}
+
+
 ![](examples/flask/echo_get.py)
 
 
@@ -311,3 +337,11 @@ the counter will keep increasing. For each user have its own counter as identifi
 
 ![](examples/flask/api_paremeters_required/api.py)
 ![](examples/flask/api_paremeters_required/test_api.py)
+
+
+## Flask Exercises
+{id: flask-exercises}
+
+* [Shopping list](https://code-maven.com/shopping-list)
+* [TODO](https://code-maven.com/todo)
+

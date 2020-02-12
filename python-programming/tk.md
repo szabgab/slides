@@ -346,21 +346,7 @@ There is another button called "Quit" that will close the application.
 
 Create a Tk application that allows you to create a shopping list.
 
-* A widget to enter some text
-* An ADD button
-* A widget where you can see the list of items added.
-
-* Save the list in a file.
-* When opening the application again, show the list saved in the file.
-
-* Allow the user to remove an item.
-* Allow the user to edit an item.
-* Allow the user to mark an item as "bought".
-
-* Save the shooping list by date so it can be shown later.
-* Clear the currently list to start over.
-* Allow the user to see statistics on which items were bought.
-* When adding new items, offer items that were previously bought.
+[Shopping list](https://code-maven.com/shopping-list)
 
 ## Exercise: Tk TODO list
 {id: exercise-tk-todo-list}
