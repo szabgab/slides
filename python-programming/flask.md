@@ -79,6 +79,9 @@ curl http://localhost:5000/
 curl http://localhost:5000/echo?text=Sanch+Panza
 ```
 
+![](examples/flask/echo_get/client.py)
+
+
 ## Flask: Echo POST
 {id: flask-echo-post}
 
@@ -98,14 +101,10 @@ curl --data "text=Sancho Panza" http://localhost:5000/echo
 ![](examples/flask/1/echo_post.py)
 ![](examples/flask/1/templates/index.html)
 
+```
+FLASK_APP=echo_post FLASK_DEBUG=0 flask run
+```
 **Internal Server Error**
-
-
-
-## Flask: Debug
-{id: flask-debug}
-![](examples/flask/1/echo_post_debug.py)
-
 
 ## Flask: templates
 {id: flask-templates-work}

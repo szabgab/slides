@@ -1,14 +1,10 @@
 from flask import Flask, request, render_template
 app = Flask(__name__)
- 
+
 @app.route("/")
-def hello():
+def main():
     return render_template('index.html')
 
 @app.route("/echo", methods=['POST'])
-def echo(): 
+def echo():
     return "You said: " + request.form['text']
- 
- 
-if __name__ == "__main__":
-    app.run(debug=True)
