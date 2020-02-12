@@ -7,3 +7,7 @@ def main():
 Main
 <a href="/not">404 page</a>
 '''
+
+@app.errorhandler(404)
+def not_found(e):
+    return "Our Page not found", 404
