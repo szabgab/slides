@@ -43,6 +43,8 @@ Hello World
 ## Java Data Types
 {id: java-data-types}
 
+Primitive types such as int, float, boolean, etc. Or reference types, such as strings, arrays, or objects.
+
 ```
 42          - int
 1_234       - int
@@ -202,10 +204,32 @@ rm -f *.class; javac Calculator.java UseCalc.java ; java UseCalc
 
 ![](examples/Runls.java)
 
+
 ## Compile and Run in shell
 {id: compule-and-run-in-shell}
 
 ![](examples/run.sh)
 
 
+## Static or Class attribute
+{id: static-or-class-attribute}
+
+![](examples/bike/Bike.java)
+![](examples/bike/RunBike.java)
+
+
+## inheritance
+{id: inheritance}
+
+![](examples/person/Person.java)
+![](examples/person/Worker.java)
+![](examples/person/TryClass.java)
+
+
+## combination
+{id: combination}
+
+![](examples/shapes/Point.java)
+![](examples/shapes/Line.java)
+![](examples/shapes/RunCode.java)
 
