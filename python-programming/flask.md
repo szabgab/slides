@@ -39,10 +39,18 @@ Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
 ![](examples/flask/hello_world/app.py)
 
 ```
-FLASK_APP=app flask run
+FLASK_APP=app FLASK_DEBUG=1 flask run
 
 Visit: http://127.0.0.1:5000/
 curl http://localhost:5000/
+```
+
+Windows:
+
+```
+set FLASK_APP=app
+set FLASK_DEBUG=1
+flask run
 ```
 
 ![](examples/flask/hello_world/test_app.py)
@@ -63,18 +71,30 @@ pytest
 {id: flask-echo-get}
 
 
-![](examples/flask/echo_get.py)
+![](examples/flask/echo_get/app.py)
+![](examples/flask/echo_get/test_app.py)
 
+```
+curl http://localhost:5000/
+curl http://localhost:5000/echo?text=Sanch+Panza
+```
 
 ## Flask: Echo POST
 {id: flask-echo-post}
 
-![](examples/flask/echo_post.py)
-![](examples/flask/test_echo_post.py)
+![](examples/flask/echo_post/app.py)
+![](examples/flask/echo_post/test_app.py)
+
+```
+curl --data "text=Sancho Panza" http://localhost:5000/echo
+```
+
+![](examples/flask/echo_post/client.py)
 
 
 ## Flask: templates
 {id: flask-templates}
+
 ![](examples/flask/1/echo_post.py)
 ![](examples/flask/1/templates/index.html)
 

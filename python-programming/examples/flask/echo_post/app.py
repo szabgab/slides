@@ -3,7 +3,7 @@ from flask import Flask, request
 app = Flask(__name__)
 
 @app.route("/")
-def hello():
+def main():
     return '''
      <form action="/echo" method="POST">
          <input name="text">
