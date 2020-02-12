@@ -106,52 +106,64 @@ FLASK_APP=echo_post FLASK_DEBUG=0 flask run
 ```
 **Internal Server Error**
 
+```
+FLASK_APP=echo_post FLASK_DEBUG=1 flask run
+```
+
 ## Flask: templates
 {id: flask-templates-work}
+
 ![](examples/flask/1/echo_post_work.py)
 
 
 ## Flask: templates with parameters
 {id: flask-templates-parameters}
+
+
 ![](examples/flask/2/echo.py)
 ![](examples/flask/2/templates/echo.html)
+![](examples/flask/2/test_echo.py)
 
 
 ## Flask: runner
 {id: flask-runner}
 
-* Remove the code that launches flask from within the application.
-
+```
+$ cd examples/flask/2
+```
 
 ```
-$ cd examples/flask/3
-$ export FLASK_APP=hello.py
+$ export FLASK_APP=echo
 $ export FLASK_DEBUG=1
 $ flask run
 ```
 
-
 or
-
 
 
 ```
 $ FLASK_APP=echo.py FLASK_DEBUG=1  flask run
 ```
 
+on windows
+
+```
+> set FLASK_APP=echo
+> set FLASK_DEBUG=1
+> flask run
+```
+
+Other parameters
+
 ```
 $ FLASK_APP=echo.py FLASK_DEBUG=1  flask run --port 8080 --host 0.0.0.0
 ```
-![](examples/flask/3/echo.py)
-![](examples/flask/3/templates/echo.html)
-
 
 ## Exercise: Flask calculator
 {id: exercise-flask-calculator}
 
 Write a web application that has two entry boxes and a button and
 that will add the two numbers inserted into the entry boxes.
-
 
 
 

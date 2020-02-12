@@ -12,6 +12,7 @@ def test_app():
     assert rv.status == '405 METHOD NOT ALLOWED'
     assert '<title>405 Method Not Allowed</title>' in rv.data.decode('utf-8')
 
+
     rv = web.post('/echo')
     assert rv.status == '200 OK'
     assert b"Nothing to say?" == rv.data
