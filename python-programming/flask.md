@@ -45,7 +45,7 @@ Visit: http://127.0.0.1:5000/
 curl http://localhost:5000/
 ```
 
-Windows:
+Windows on the command line or in the terminal of Pycharm.
 
 ```
 set FLASK_APP=app
@@ -202,22 +202,21 @@ Access the page from several browsers. There is one single counter that lives as
 ## Color selector without session
 {id: flask-no-session}
 
-![](examples/flask/11/color.py)
-![](examples/flask/11/templates/main.html)
+![](examples/flask/color/color.py)
+![](examples/flask/color/templates/main.html)
 
 
 ## Session management
 {id: flask-session}
-![](examples/flask/11/app.py)
 
+![](examples/flask/color/app.py)
 
 
 ## Flask custom 404 page
 {id: flask-404-page}
 
-FLASK_APP=app.py FLASK_DEBUG=1  flask run
-
-![](examples/flask/12/app.py)
+![](examples/flask/404/app.py)
+![](examples/flask/404/app404.py)
 
 ```
 curl -I http://localhost:5000/not
@@ -228,7 +227,10 @@ HTTP/1.0 404 NOT FOUND
 
 ## Flask Error page
 {id: flask-error-page}
-![](examples/flask/13/app.py)
+
+![](examples/flask/500/app.py)
+
+Will not trigger in debug mode!
 
 ```
 $ FLASK_APP=echo.py FLASK_DEBUG=0  flask run
@@ -240,20 +242,28 @@ curl -I http://localhost:5000/not
 HTTP/1.0 500 INTERNAL SERVER ERROR
 ```
 
+![](examples/flask/500/app500.py)
 
 
 ## Flask Path params
 {id: flask-path-params}
-![](examples/flask/15/app.py)
 
+![](examples/flask/path/app.py)
 
 ## Flask Path params (int)
 {id: flask-path-params-int}
-![](examples/flask/16/app.py)
+
+![](examples/flask/path-int/app.py)
+
+## Flask Path params add (int)
+{id: flask-path-params-add-int}
+
+![](examples/flask/path-int-add/app.py)
 
 
 ## Flask login
 {id: flask-login}
+
 ![](examples/flask/17/app.py)
 ![](examples/flask/17/templates/account.html)
 ![](examples/flask/17/templates/header.html)
