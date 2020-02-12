@@ -1,6 +1,7 @@
 # Python Flask
 {id: python-flask}
 
+
 ## Python Flask intro
 {id: python-flask-intro}
 
@@ -25,6 +26,13 @@ $ python examples/flask/hello_world.py
 ![](examples/flask/hello_world/app.py)
 
 ![](examples/flask/hello_world/test_app.py)
+
+
+## Flask generated page - time
+{id: flask-generated-page-time}
+
+
+![](examples/flask/time/time_app.py)
 
 
 ## Flask: Echo GET
