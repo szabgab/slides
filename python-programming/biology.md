@@ -9,7 +9,6 @@
 * [Biopython Tutorial and Cookbook](http://biopython.org/DIST/docs/tutorial/Tutorial.html)
 
 
-
 ## Biopython background
 {id: bio-python-background}
 
@@ -18,8 +17,6 @@
 * [FASTQ](https://en.wikipedia.org/wiki/FASTQ_format)
 * [EMBL](https://en.wikipedia.org/wiki/European_Molecular_Biology_Laboratory) European Molecular Biology Laboratory
 * [Gene names symbols](https://ghr.nlm.nih.gov/about/gene-names-symbols)
-
-
 
 
 ## Bio python sequences
@@ -33,24 +30,31 @@
 ## Download data
 {id: bio-python-download-data}
 
-* [ls_orchid.fasta](https://raw.githubusercontent.com/biopython/biopython/master/Doc/examples/ls_orchid.fasta) in FASTA format
-* [ls_orchid.gbk](https://raw.githubusercontent.com/biopython/biopython/master/Doc/examples/ls_orchid.gbk) in GenBank format
-* [nucleotide search](https://www.ncbi.nlm.nih.gov/nucleotide)
-
-
+Use the NCBI (National Center for Biotechnology Information) database to search  manually for [nucleotide](https://www.ncbi.nlm.nih.gov/nucleotide)
+or tons of other types of data. Then one can download the files manually from the web site.
 
 ## Read FASTA, GenBank files
 {id: bio-python-read-fasta-files}
 
+For example the data about Orchids in two formats:
+
+* [ls_orchid.fasta](https://raw.githubusercontent.com/biopython/biopython/master/Doc/examples/ls_orchid.fasta) in FASTA format
+* [ls_orchid.gbk](https://raw.githubusercontent.com/biopython/biopython/master/Doc/examples/ls_orchid.gbk) in GenBank format
+
+Download those files and use them:
+
 ![](examples/science/read_fasta.py)
-
-![](examples/science/read_genbank.py)
-
 
 ## Search nucleotids
 {id: bio-python-search-nucleotids}
 
+You can also search the same database programmatically.
+
 ![](examples/science/search_nucleotids.py)
+
+
+## Download nucleotids
+{id: bio-python-download-nucleotids}
 
 ![](examples/science/fetch_nucleotid.py)
 
