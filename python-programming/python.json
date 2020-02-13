@@ -83,10 +83,11 @@
         "multitasking.md",
         "optimizing-code.md",
         "tk.md",
-        "jython.md",
         "pitfalls.md",
         "linters.md",
         "dotnet.md",
+        "java.md",
+        "jython.md",
 
         "faq.md",
         "appendix.md",
