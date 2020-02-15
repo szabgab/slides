@@ -1,11 +1,12 @@
-import pandas
-planets = pandas.read_csv('planets.csv', index_col='name')
-print(type(planets))  # <class 'pandas.core.frame.DataFrame'>
-print(planets)
+import pandas as pd
 
-planets['dm'] = planets['distance'] * planets['mass']
-print(planets.head())
+df = pd.read_csv('planets.csv', index_col='name')
+print(type(df))  # <class 'pandas.core.frame.DataFrame'>
+print(df)
 
-big = planets[ planets['mass'] > 20 ]
+df['dm'] = df['distance'] * df['mass']
+print(df.head())
+
+big = df[ df['mass'] > 20 ]
 print(big)
 

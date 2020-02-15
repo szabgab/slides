@@ -45,6 +45,13 @@
 
 ![](examples/numpy/ones_and_zeros.py)
 
+## Numpy: eye
+{id: numpy-slice-eye}
+{i: eye}
+
+![](examples/numpy/create_eye.py)
+![](examples/numpy/create_eye.out)
+
 
 ## NumPy array random
 {id: numpy-array-random}
@@ -60,6 +67,7 @@
 {id: mumpy-random-integers}
 {i: random}
 {i: default_rng}
+{i: randint}
 {i: integer}
 
 ![](examples/numpy/random_integers.py)
@@ -151,13 +159,6 @@ The slice in numpy does not copy the data structure
 ![](examples/numpy/slice_copy.py)
 
 
-
-## Numpy: eye
-{id: numpy-slice-eye}
-{i: eye}
-
-![](examples/numpy/create_eye.py)
-![](examples/numpy/create_eye.out)
 
 ## Numpy: abs value on a Numpy array
 {id: abs-value-on-numpy-array}
@@ -251,6 +252,14 @@ The slice in numpy does not copy the data structure
 {id: matlab-save}
 
 ![](examples/matlab/save.py)
+
+## Numpy: Horizontal stack vectors (hstack)
+{id: numpy-hstack}
+{i: hstack}
+
+![](examples/numpy/hstack.py)
+![](examples/numpy/hstack.out)
+
 
 ## Numpy: Append or vertically stack vectors and matrices (vstack)
 {id: numpy-vstack}

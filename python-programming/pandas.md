@@ -8,29 +8,15 @@
 * Handle data sequences
 * [A Beginner's Guide to Optimizing Pandas Code for Speed](https://engineering.upside.com/a-beginners-guide-to-optimizing-pandas-code-for-speed-c09ef2c6a4d6)
 
-
-
-## Pandas Series
-{id: pandas-series}
-{i: Series}
-{i: values}
-{i: index}
-{i: RangeIndex}
-![](examples/pandas/series.py)
-
-
-## Pandas Series with names
-{id: pandas-series-with-names}
-![](examples/pandas/series_with_names.py)
-
-
 ## Planets
 {id: planets}
+
 ![](examples/pandas/planets.csv)
 
 
 ## Pandas Planets - Dataframes
 {id: pandas-read-csv-planets}
+
 ![](examples/pandas/read_csv_planets.py)
 
 ```
@@ -190,6 +176,22 @@ can also have regex=True parameter
 # replace values
 df[ df['Name'] == 'old', 'Name' ] = 'new'
 ```
+
+
+## Pandas Series
+{id: pandas-series}
+{i: Series}
+{i: values}
+{i: index}
+{i: RangeIndex}
+
+![](examples/pandas/series.py)
+
+
+## Pandas Series with names
+{id: pandas-series-with-names}
+
+![](examples/pandas/series_with_names.py)
 
 
 
