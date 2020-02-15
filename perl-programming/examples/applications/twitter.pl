@@ -30,8 +30,8 @@ if (not $message) {
     chomp $message;
 }
 my %consumer_tokens = (
-    consumer_key    => '2mhD0U8RqyuBuaMXLlHcKg',
-    consumer_secret => 'YxdQUmQ78FaSX4EDzT1ZUrjQJ3bFjmHaSk3lmfkM',
+    consumer_key    => '',
+    consumer_secret => '',
 );
 
 my $nt = Net::Twitter::Lite->new(
