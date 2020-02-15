@@ -9,6 +9,9 @@
 * [Pybel](http://openbabel.org/docs/2.3.1/UseTheLibrary/Python_Pybel.html)
 * [Python Doc](http://openbabel.org/docs/2.3.1/UseTheLibrary/PythonDoc.html)
 
+* [Pytim](https://marcello-sega.github.io/pytim/) Interfacial Analysis of Molecular Simulations
+
+* [Python for Chemistry students](https://pythoninchemistry.org/)
 
 ```
 import sdf
