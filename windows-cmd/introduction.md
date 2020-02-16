@@ -17,19 +17,58 @@
 
 ## File system
 {id: file-system}
+{i: pwd}
+{i: cd}
+{i: %CD%}
+
+Show current directory (like pwd)
 
 ```
-%CD%
+echo %CD%
 cd
+```
+
+Change directory (folder)
+
+```
+cd some\other\place
+cd ..
+```
+
+Show content of directory (folder)
+
+```
 dir
-type
+```
+
+Show content of file
+
+```
+type FILENAME
+```
+
+
+```
 echo
 redirection with >  and >>
 cls
 ```
 
+## pushd - podd
+{id: pushd-popd}
+{i: pushd}
+{i: popd}
+
+```
+pushd some\other\place
+popd
+```
+
 ## Directory
 {id: directory}
+{i: del}
+{i: mkdir}
+{i: rmdir}
 
 ```
 del             (delete file)
@@ -39,6 +78,8 @@ rmdir           (remove directory)
 
 ## File Globbing
 {id: file-globbing}
+{i: dir}
+{i: ren}
 
 ```
 dir *.txt
