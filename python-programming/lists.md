@@ -545,19 +545,19 @@ Given a list of strings with words separated by spaces,
 create a single list of all the words.
 
 ```
-input = [
-  'grape banana mango',
-  'nut orange peach',
-  'apple nut banana apple mango'
+lines = [
+    'grape banana mango',
+    'nut orange peach',
+    'apple nut banana apple mango',
 ]
 
-output = ['grape', 'banana', 'mango', 'nut', 'orange', 'peach', 'apple', 'nut', 'banana', 'apple', 'mango']
+fruits = ['grape', 'banana', 'mango', 'nut', 'orange', 'peach', 'apple', 'nut', 'banana', 'apple', 'mango']
 ```
 
-Then create a list of unique values:
+Then create a list of unique values sorted by abc.
 
 ```
-output = ['apple', 'grape', 'banana','nut', 'orange', 'peach', 'nut', 'mango']
+unique_fruites = ['apple', 'banana', 'grape', 'mango', 'nut', 'orange', 'peach']
 ```
 
 
@@ -612,6 +612,13 @@ TypeError: 'int' object is not iterable
 
 ![](examples/lists/count_digits.py)
 
+## Solution: Create list
+{id: solution-create-list}
+{i: unique}
+{i: sorted}
+{i: set}
+
+![](examples/lists/create_list.py)
 
 ## Solution: Count words
 {id: solution-count-words-in-list}
