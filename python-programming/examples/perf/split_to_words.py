@@ -5,7 +5,7 @@ def split_to_words_by_regex(text):
     return re.split(' ', text)
 
 def split_to_words_by_split(text):
-    return text.split(' ')
+    return text.split()
 
 def split_to_words_by_chars(text):
     words = []

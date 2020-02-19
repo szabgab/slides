@@ -6,7 +6,7 @@ lines = [
 collector = []
 
 for l in lines:
-   collector.extend(l.split(' '))
+   collector.extend(l.split())
    print(collector)
 
 # ['abc', 'def', 'ghi']
