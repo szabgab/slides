@@ -161,7 +161,7 @@ Level 1-
 ![](examples/numbers/number0.py)
 
 ## Solution: Fruit salad
-{id: exercise-fruit-salad}
+{id: solution-fruit-salad}
 {i: random}
 {i: sample}
 
