@@ -152,48 +152,36 @@ Given a string like "The black cat climbed the green tree.", print out the locat
 
 Level 0
 
-
 * Using the random module the computer "thinks" about a whole number between 1 and 20.
 * The user has to guess the number. After the user types in the guess the computer tells if this was bigger or smaller than the number it generated, or if was the same.
 * The game ends after just one guess.
 
-
-
 Level 1
-
 
 * The user can guess several times. The game ends when the user guessed the right number.
 
-
-
 Level 2
-
 
 * If the user hits 'x', we leave the game without guessing the number.
 
-
-
 Level 3
 
-
 * If the user presses 's', show the hidden value (cheat)
-* If the user presses 'd' the game gets into debug mode: the system starts to show the current number to guess every time, just before asking the user for new input. Pressing 'd' again turns off debug mode. (It is a toggle.)
-
-
 
 Level 4
 
-
-* The 'm' button is another toggle. It is called 'move mode'. When it is 'on', the hidden number changes a little bit after every step (+/-2). Pressing 'm' again will turn this feature off.
-
-
+* Soon we'll have a level in which the hidden value changes after each guess. In oredr to make that mode easier to track and debug, first we would like to have a "debug mode".
+* If the user presses 'd' the game gets into "debug mode": the system starts to show the current number to guess every time, just before asking the user for new input.
+* Pressing 'd' again turns off debug mode. (It is a toggle each press on "d" changes the value to to the other possible value.)
 
 Level 5
 
+* The 'm' button is another toggle. It is called 'move mode'. When it is 'on', the hidden number changes a little bit after every step (+/-2). Pressing 'm' again will turn this feature off.
+
+Level 6
 
 * Let the user play several games.
 * Pressing 'n' will skip this game and start a new one. Generates a new number to guess.
-
 
 
 ## Exercise: MasterMind
@@ -203,10 +191,9 @@ Implement the MasterMind game.
 
 The computer "thinks" a number with 4 different digits.
 You guess which digits. For every digit that matched both
-in value, and in location the computer gives you a *. For every
+in value, and in location the computer gives you a `*`. For every
 digit that matches in value, but not in space the computer gives
-you a +. Try to guess the given number in as few guesses as possible.
-
+you a `+`. Try to guess the given number in as few guesses as possible.
 
 
 ```
@@ -221,46 +208,51 @@ You:      2715  *++
 
 Given a string on the command line, count how many differnt characters it has.
 
-
 ```
 python count_unique.py abcdaaa
 4
 ```
 
 
-
 ## Solution: Print all the locations in a string
 {id: solution-print-all-the-locations}
+
 ![](examples/strings/find_loop.py)
 
 
 ## Solution 1 for Number Guessing
 {id: solution-1-number-guessing}
+
 ![](examples/strings/number1.py)
 
 
 ## Solution for Number Guessing (debug)
 {id: solution-2-number-guessing}
+
 ![](examples/strings/number_debug.py)
 
 
 ## Solution for Number Guessing (move)
 {id: solution-3-number-guessing}
+
 ![](examples/strings/number_move.py)
 
 
 ## Solution for Number Guessing (multi-game)
 {id: solution-4-number-guessing}
+
 ![](examples/strings/number_multi.py)
 
 
 ## Solution: MasterMind
 {id: solution-mastermind}
+
 ![](examples/lists/master_mind.py)
 
 
 ## Solution: Count unique characters
 {id: solution-count-unique}
+
 ![](examples/strings/number_of_different.py)
 ![](examples/strings/number_of_different_set.py)
 

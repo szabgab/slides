@@ -318,6 +318,7 @@ Whichever is appropriate in your situation.
 {i: ?:}
 
 ![](examples/basics/ternary.py)
+![](examples/basics/without_ternary.py)
 
 ## Case or Switch in Python
 {id: case-switch}
@@ -423,12 +424,10 @@ echo $?
 ```
 
 
-
 ## Exercise: Rectangular (argv)
 {id: exercise-rectangular-argv}
 
-* Change the above script that it will accept the arguments on the command line like this: **python rect.py 2 4**
-
+* Change the above script that it will accept the arguments on the command line like this: `python rect.py 2 4`
 
 
 ## Exercise: Calculator (argv)

@@ -274,8 +274,6 @@ The application should manage a queue of people.
 
 Implement a Reverse Polish Calculator
 
-
-
 ```
 2
 3
@@ -286,6 +284,25 @@ Implement a Reverse Polish Calculator
 14
 ```
 
+```
+x = eXit, s = Show, [+-*/=]
+:23
+:19
+:7
+:8
+:+
+:3
+:-
+:/
+:s
+[23.0, -0.631578947368421]
+:+
+:=
+22.36842105263158
+:s
+[]
+:x
+```
 
 ## Solution: Queue with list
 {id: solution-queue}
