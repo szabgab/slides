@@ -140,20 +140,13 @@ Make sure the names of your files are not the same as the names of any of the py
 
 Level 0
 
-
 * Using the random module the computer "thinks" about a whole number between 1 and 20.
 * The user has to guess the number. After the user types in the guess the computer tells if this was bigger or smaller than the number it generated, or if was the same.
 * The game ends after just one guess.
 
-
-
 Level 1-
 
-
-
 * Other levels in the next chapter.
-
-
 
 ## Exercise: Fruit salad
 {id: exercise-fruit-salad}
@@ -162,10 +155,15 @@ Level 1-
 * Could you make sure the 3 fruits are different?
 
 
-
 ## Solution: Number guessing game - level 0
 {id: solution-number-guessing-game-0}
+
 ![](examples/numbers/number0.py)
 
+## Solution: Fruit salad
+{id: exercise-fruit-salad}
+{i: random}
+{i: sample}
 
+![](examples/numbers/fruit_salad.py)
 

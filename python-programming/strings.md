@@ -103,7 +103,7 @@ If we then assign some other string to either of the variables, then they will p
 ## index in string
 {id: index-in-string}
 {i: index}
-{: ValueError}
+{i: ValueError}
 
 ![](examples/strings/index.py)
 ![](examples/strings/index.py.out)
