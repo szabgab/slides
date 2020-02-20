@@ -17,6 +17,12 @@ def run_code():
         if colors[ix].get():
             text += color_names[ix] + " "
     text += "\n"
+
+    selected = list_box.curselection()  # returns a tuple
+    text += "Animals: "
+    text += ', '.join([list_box.get(idx) for idx in selected])
+    text += "\n"
+
     text += "Filename: {}\n".format(os.path.basename(filename_entry.get()))
 
     resp = messagebox.askquestion(title="Running with", message=f"Shall I start running with the following values?\n\n{text}")
@@ -91,6 +97,11 @@ for color_name in color_names:
     checkbox.pack({"side": "left"})
     my_checkbox.append(checkbox)
 
+list_box = tk.Listbox(app, selectmode=tk.MULTIPLE, height=4)
+animal_names = ['Snake', 'Mouse', 'Elephant', 'Dog', 'Cat', 'Zebra', 'Camel', 'Spider']
+for val in animal_names:
+    list_box.insert(tk.END, val)
+list_box.pack()
 
 def open_filename_selector():
     file_path = filedialog.askopenfilename(filetypes=(("Any file", "*"),))
@@ -125,8 +136,6 @@ action_button.pack()
 app.mainloop()
 
 # TODO: key binding?
-# TODO: Listbox
-# TODO: Text for output
 # TODO: Combo box
 # TODO: Option Menu
 # TODO: Scale
