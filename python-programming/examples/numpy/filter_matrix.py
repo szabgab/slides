@@ -1,12 +1,17 @@
 import numpy as np
-import re
 
 names = np.array(['Mary', 'Bar', 'Joe', 'Jane'])
 print(names)
 print()
 
+def has_ar(text):
+    return "ar" in text
+    # if "ar" in text:
+        # return True
+    # else:
+        # return False
 
-names_with_ar_selector = np.vectorize(lambda x: True if re.search(r'ar', x) else False)
+names_with_ar_selector = np.vectorize(has_ar)
 names_with_ar_bool = names_with_ar_selector(names)
 print(names_with_ar_bool)
 print()
@@ -19,6 +24,3 @@ scores = np.array([
 ])
 
 print(scores[names_with_ar_bool])
-print()
-
-print(scores[names_with_ar_selector(names)])
