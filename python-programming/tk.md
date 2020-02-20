@@ -333,7 +333,7 @@ First we are going to see small examples with each one of these Widgets. Then we
 
 
 ## Exercise: Tk - Calculator one line
-{id: exercise-tk-calcilator-one-line}
+{id: exercise-tk-calculator-one-line}
 
 Write a Tk application that behaves like a one-line calculator.
 It has an entry box where one can enter an expression like "2 + 3" and a button.
@@ -344,9 +344,8 @@ There is another button called "Quit" that will close the application.
 ## Exercise: Tk Shopping list
 {id: exercise-tk-shopping-list}
 
-Create a Tk application that allows you to create a shopping list.
+Create a Tk application that allows you to create a [shopping list](https://code-maven.com/shopping-list).
 
-[Shopping list](https://code-maven.com/shopping-list)
 
 ## Exercise: Tk TODO list
 {id: exercise-tk-todo-list}

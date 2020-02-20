@@ -123,3 +123,12 @@ action_button = tk.Button(buttons, text="Run", command=run_code)
 action_button.pack()
 
 app.mainloop()
+
+# TODO: key binding?
+# TODO: Listbox
+# TODO: Text for output
+# TODO: Combo box
+# TODO: Option Menu
+# TODO: Scale
+# TODO: Progressbar (after the deleting hard disk pop-up)
+# TODO: Frame (with border?)
