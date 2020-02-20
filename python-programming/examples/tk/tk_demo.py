@@ -27,8 +27,6 @@ def run_code():
         output_window.see('end')  # scroll to the end as we make progress
         app.update()
 
-        state = 'disabled'
-
 
 def close_app():
     app.destroy()
@@ -111,7 +109,7 @@ filename_button.pack({"side": "left"})
 
 output_frame = tk.Frame(app)
 output_frame.pack()
-output_window = tk.Text(output_frame)
+output_window = tk.Text(output_frame, state='disabled')
 output_window.pack()
 
 
