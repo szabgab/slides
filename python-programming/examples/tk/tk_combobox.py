@@ -1,8 +1,7 @@
 import tkinter as tk
 from tkinter import ttk
 
-
-animals = ["Cow", "Elephant", "Snake", "Tiger"]
+countries = ["Japan", "Korea", "Vietnam", "China"]
 
 app = tk.Tk()
 app.title('Combo box')
@@ -13,13 +12,13 @@ def change(event):
     print("change")
     selection = country.current()
     print(selection)
-    print(animals[selection])
+    print(countries[selection])
 
 def clicked():
     print("clicked")
     print(country.get())
 
-country = ttk.Combobox(app,  values=animals)
+country = ttk.Combobox(app, values=countries)
 country.pack()
 country.bind("<<ComboboxSelected>>", change)
 

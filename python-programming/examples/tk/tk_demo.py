@@ -1,5 +1,5 @@
 import tkinter as tk
-from tkinter import messagebox, filedialog
+from tkinter import ttk, messagebox, filedialog
 import os
 
 
@@ -12,6 +12,7 @@ def run_code():
     text += "Name: {}\n".format(name.get())
     text += "Password: {}\n".format(password.get())
     text += "Animal: {}\n".format(animal.get())
+    text += "Country: {}\n".format(country.get())
     text += "Colors: "
     for ix in range(len(colors)):
         if colors[ix].get():
@@ -96,6 +97,25 @@ for color_name in color_names:
     checkbox = tk.Checkbutton(checkboxes, text=color_name, variable=color_var)
     checkbox.pack({"side": "left"})
     my_checkbox.append(checkbox)
+
+countries = ["Japan", "Korea", "Vietnam", "China"]
+
+def country_change(event):
+    pass
+    #selection = country.current()
+    #print(selection)
+    #print(countries[selection])
+
+def country_clicked():
+    pass
+    #print(country.get())
+
+country = ttk.Combobox(app,  values=countries)
+country.pack()
+country.bind("<<ComboboxSelected>>", country_change)
+
+
+
 
 list_box = tk.Listbox(app, selectmode=tk.MULTIPLE, height=4)
 animal_names = ['Snake', 'Mouse', 'Elephant', 'Dog', 'Cat', 'Zebra', 'Camel', 'Spider']
