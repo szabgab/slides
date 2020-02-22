@@ -31,13 +31,13 @@ help cd
 ```
 chmod +x hello_world.sh
 ```
-![](examples/hello_world.sh)
+![](examples/bash/hello_world.sh)
 
 
 ## Bash command line parameters
 {id: bash-command-line-parameters}
 {i: $1}
-![](examples/hello_foo.sh)
+![](examples/bash/hello_foo.sh)
 
 ```
 $1 $2 $3
@@ -52,26 +52,26 @@ $@      is the same but
 ## Bash if parameter
 {id: bash-if-parameter}
 {i: if}
-![](examples/if_parameter.sh)
+![](examples/bash/if_parameter.sh)
 
 
 
 ## Bash while-loop
 {id: bash-while-loop}
 {i: while}
-![](examples/while.sh)
+![](examples/bash/while.sh)
 
 
 ## Bash for-loop
 {id: bash-for-loop}
 {i: for}
-![](examples/for_items.sh)
+![](examples/bash/for_items.sh)
 
 
 ## Bash for loop on files
 {id: bash-for-on-files}
 {i: for}
-![](examples/for_files.sh)
+![](examples/bash/for_files.sh)
 
 
 ## Bash for loop on command-line arguments
@@ -84,7 +84,7 @@ the values on the command line as if this was written:
 
 for a in "$@"
 ```
-![](examples/for_arguments.sh)
+![](examples/bash/for_arguments.sh)
 
 
 
@@ -131,17 +131,17 @@ What does it mean a program is successful or not?  Exit code 0 or anything else.
 
 {i: [[ ]]}
 {i: -e}
-![](examples/if_file_exists.sh)
+![](examples/bash/if_file_exists.sh)
 
 
 ## Bash exit code
 {id: bash-exit-code}
-![](examples/echo_exit_code.sh)
+![](examples/bash/echo_exit_code.sh)
 
 
 ## Bash exit code
 {id: bash-condition-on-exit-code}
-![](examples/cond_exit_code.sh)
+![](examples/bash/cond_exit_code.sh)
 
 
 Make sure you save the exit code immediaely after the execution of some code if you'd like to use it later,
@@ -152,25 +152,25 @@ as it always contains the exit code of the most recent statement.
 
 ## Echo multiline string
 {id: bash-echo-multiline-string}
-![](examples/echo_multilne_string.sh)
+![](examples/bash/echo_multilne_string.sh)
 
 
 ## Redirect multiline string
 {id: bash-redirect-multiline-string}
-![](examples/redirect_multilne_string.sh)
+![](examples/bash/redirect_multilne_string.sh)
 
 
 
 ## User Input (read)
 {id: bash-read-input}
-![](examples/user_input.sh)
+![](examples/bash/user_input.sh)
 
 * [Catching user input](http://tldp.org/LDP/Bash-Beginners-Guide/html/sect_08_02.html)
 
 ## Counter
 {id: counter}
 
-![](examples/counter.sh)
+![](examples/bash/counter.sh)
 
 ## Declare
 {id: other}
@@ -181,5 +181,5 @@ as it always contains the exit code of the most recent statement.
 
 * [](http://tldp.org/LDP/abs/html/declareref.html)
 
-![](examples/declare.sh)
+![](examples/bash/declare.sh)
 
