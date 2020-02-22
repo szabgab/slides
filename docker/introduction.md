@@ -366,7 +366,7 @@ to see the layers
 $ docker history ubuntu:19.10
 ```
 
-![](examples/history_ubuntu.out)
+![](examples/dock/history_ubuntu.out)
 
 
 ## Docker history - multiple layers
@@ -376,7 +376,7 @@ $ docker history ubuntu:19.10
 docker history mydocker
 ```
 
-![](examples/history_mydocker.out)
+![](examples/dock/history_mydocker.out)
 
 
 ## Installing Python in Docker - one layer
@@ -388,7 +388,7 @@ docker history mydocker
 $ docker build -t mydocker2 .
 $ docker history mydocker2
 ```
-![](examples/history_mydocker2.out)
+![](examples/dock/history_mydocker2.out)
 
 ## Python CLI in Docker
 {id: python-cli-in-docker}
