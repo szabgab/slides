@@ -18,18 +18,20 @@
 * CSS can be embedded in the HTML file in a separate section.
 * CSS can be included from an external file.
 
-![](examples/css/intro_in_tag.html)
+![](examples/csses/intro_in_tag.html)
 
 
 ## Embedded CSS
 {id: embedded-css}
-![](examples/css/intro_embedded.html)
+
+![](examples/csses/intro_embedded.html)
 
 
 ## External CSS
 {id: external-css}
-![](examples/css/intro.html)
-![](examples/css/intro.css)
+
+![](examples/csses/intro.html)
+![](examples/csses/intro.css)
 
 
 ## Basic Selectors
@@ -38,14 +40,15 @@
 * HTML tag
 * HTML attributes: id, class
 
-![](examples/css/basic-selectors.html)
-![](examples/css/basic-selectors.css)
+![](examples/csses/basic-selectors.html)
+![](examples/csses/basic-selectors.css)
 
 
 ## Descendant and Child CSS Selectors
 {id: css-selectors}
-![](examples/css/selectors.html)
-![](examples/css/selectors.css)
+
+![](examples/csses/selectors.html)
+![](examples/csses/selectors.css)
 
 
 [List of selectors](http://www.w3.org/TR/CSS2/selector.html)
@@ -58,7 +61,7 @@
 * span (inline)
 * [span and div](http://en.wikipedia.org/wiki/Span_and_div)
 
-![](examples/css/div-and-span.html)
+![](examples/csses/div-and-span.html)
 
 
 ## Layouts
@@ -85,14 +88,16 @@ What happens when the width is fixed? Horizontal scrollbar or picture disappeari
 
 ## Fixed width and text
 {id: css-fixed-width-and-text}
-![](examples/css/fixed-width-text.css)
-![](examples/css/fixed-width-text.html)
+
+![](examples/csses/fixed-width-text.css)
+![](examples/csses/fixed-width-text.html)
 
 
 ## Relative width and text
 {id: css-relative-width-and-text}
-![](examples/css/relative-width-text.css)
-![](examples/css/relative-width-text.html)
+
+![](examples/csses/relative-width-text.css)
+![](examples/csses/relative-width-text.html)
 
 
 ## Fixed Image
@@ -100,8 +105,8 @@ What happens when the width is fixed? Horizontal scrollbar or picture disappeari
 
 The actual image is 1280 x 716
 
-![](examples/css/fixed-image.css)
-![](examples/css/fixed-image.html)
+![](examples/csses/fixed-image.css)
+![](examples/csses/fixed-image.html)
 
 
 
@@ -139,15 +144,15 @@ Of course you can also use it to check the media type: screen, print, etc.
 ## Resize image
 {id: css-media-query-resize-image}
 
-![](examples/css/media-query-images-resizing.html)
-![](examples/css/images-resizing.css)
+![](examples/csses/media-query-images-resizing.html)
+![](examples/csses/images-resizing.css)
 
 
 ## Replace image
 {id: css-media-query-replace-image}
 
-![](examples/css/replace-image.html)
-![](examples/css/replace-image.css)
+![](examples/csses/replace-image.html)
+![](examples/csses/replace-image.css)
 
 
 [css image replacement](http://css-tricks.com/css-image-replacement/)
@@ -155,8 +160,8 @@ Of course you can also use it to check the media type: screen, print, etc.
 
 ## Colors
 {id: css-media-query-colors}
-![](examples/css/colors.css)
-![](examples/css/media-query-colors.html)
+![](examples/csses/colors.css)
+![](examples/csses/media-query-colors.html)
 
 
 
@@ -177,7 +182,7 @@ More standardization
 ## Rounded corners
 {id: rounded-corners}
 
-![](examples/css/rounded-corners.html)
+![](examples/csses/rounded-corners.html)
 
 [rounded corners](http://css-tricks.com/snippets/css/rounded-corners/)
 
