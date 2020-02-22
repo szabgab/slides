@@ -90,6 +90,7 @@ def check_python(root):
             #)
             #out, err = proc.communicate()
             #assert proc.returncode == 0, "for {}".format(path)
+    return errors
 
 
 def generate_book():
