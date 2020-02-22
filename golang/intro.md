@@ -97,7 +97,7 @@ then reload it using `source ~/.bashrc`
 {i: build}
 {i: fmt}
 
-![](examples/hello_world/hello_world.go)
+![](examples/hello_go/hello_world.go)
 
 * main function is the entry point of every program
 
