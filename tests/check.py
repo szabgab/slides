@@ -2,6 +2,7 @@ import sys
 import os
 import subprocess
 import time
+import tempfile
 
 skip = [
     'python/examples/dictionary/generate_dna.py',
@@ -91,23 +92,30 @@ def check_python(root):
             #assert proc.returncode == 0, "for {}".format(path)
 
 
+def generate_book():
+    tmpdir = tempfile.mkdtemp()
+    try:
+        exit_code, out, err = _run([sys.executable, 'combine.py', '--all', '--target', tmpdir])
+    except Exception as error:
+        print("Exception while generating book")
+        print(error)
+        return 1
+    if exit_code != 0:
+        print("Error generating book:")
+        print(out)
+        print(err)
+        return 1
+
+
 def main():
     start = time.time()
     root = os.path.dirname( os.path.dirname( os.path.abspath(__file__)))
-    errors = check_python(root)
+    errors = 0
+    errors += check_python(root)
+    #errors += generate_book()
     end = time.time()
     print(f"Elapsed time: {end-start}")
     exit(errors)
-
-def xtest_combine(tmpdir):
-    proc = subprocess.Popen([sys.executable, 'combine.py', '--all', '--target', str(tmpdir)],
-        stdout = subprocess.PIPE,
-        stderr = subprocess.PIPE,
-    )
-    out, err = proc.communicate()
-    print(out)
-    print(err)
-    assert proc.returncode == 0
 
 
 main()
