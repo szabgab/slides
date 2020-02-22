@@ -35,12 +35,12 @@ are more than 3 days old.
 
 ## Solution: Create a counter
 {id: solution-create-counter2}
-![](examples/files/counter.pl)
+![](examples/files-perl/counter.pl)
 
 
 ## Solution: Create multiple counters
 {id: solution-create-multiple-counter}
-![](examples/files/multiple_counter.pl)
+![](examples/files-perl/multiple_counter.pl)
 
 
 ## Solutions: List old logfiles

@@ -215,7 +215,7 @@ some basic commands. (eg. type "help")
 We supply an example system that shows a partially faulty system.
 In order to run the daemon by yourself you need to install 
 Net::Server and Class::Accessor and type
-**perl examples/cli/bin/cli_daemon.pl**
+**perl examples/cli-perl/bin/cli_daemon.pl**
 
 Then you can access it using **telnet localhost 8000**
 
@@ -243,7 +243,7 @@ We also add a call to wait for something that likely won't show up
 in the output. Depending on where the demo application (the daemon)
 is running you might need to change the $hostname variable.
 ```
-![](examples/cli/eg/cli_01.pl)
+![](examples/cli-perl/eg/cli_01.pl)
 
 ```
 Running the script we notice that after printing "opened" it waits
@@ -265,7 +265,7 @@ the second print() and did not have a chance to print anything.
 - Wait for a string we know will show up
 - After seeing Username: we should type in 'admin', the username
 ```
-![](examples/cli/eg/cli_02.pl)
+![](examples/cli-perl/eg/cli_02.pl)
 
 
 ## Exercise: Telnet
@@ -284,7 +284,7 @@ the second print() and did not have a chance to print anything.
 
 ## Our test script
 {id: test-telnet}
-![](examples/cli/t/cli.t)
+![](examples/cli-perl/t/cli.t)
 
 
 

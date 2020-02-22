@@ -69,7 +69,7 @@ while (1) {
 
 ![](examples/perlarrays/loop_control.txt)
 
-![](examples/files/loop_control.pl)
+![](examples/files-perl/loop_control.pl)
 
 
 ```
@@ -94,7 +94,7 @@ Before you can read from a file you have to ask the Operating System to "open"
 it for you. When opening a file you provide a variable that will become your
 handle to the opened file. It is called a filehandle.
 ```
-![](examples/files/open_file.pl)
+![](examples/files-perl/open_file.pl)
 
 
 [Open and read from text files](https://perlmaven.com/open-and-read-from-files)
@@ -105,7 +105,7 @@ handle to the opened file. It is called a filehandle.
 {i: append}
 {i: write}
 
-![](examples/files/open_file_modes.pl)
+![](examples/files-perl/open_file_modes.pl)
 
 [Appending to files](https://perlmaven.com/appending-to-files)
 
@@ -116,31 +116,31 @@ handle to the opened file. It is called a filehandle.
 
 * $! - error message from the Operating system
 
-![](examples/files/open_with_if.pl)
+![](examples/files-perl/open_with_if.pl)
 
 
 A more Perlish way to open a file and exit with error message if you could not open the file:
 
 
-![](examples/files/open_with_die.pl)
+![](examples/files-perl/open_with_die.pl)
 
 
 ## Opening a missing file
 {id: open-file-error-message}
-![](examples/files/open_missing_file.pl)
+![](examples/files-perl/open_missing_file.pl)
 
 
 The error message we get:
 
 
 
-**No such file or directory at examples/files/open_missing_file.pl line 7.**
+**No such file or directory at examples/files-perl/open_missing_file.pl line 7.**
 
 
 
 ## Read one line from a file
 {id: read-line}
-![](examples/files/read_line.pl)
+![](examples/files-perl/read_line.pl)
 
 
 
@@ -152,7 +152,7 @@ The error message we get:
 * while - executes as long as there is something in $line, as long as there are lines in the file
 * Loop over file (name hard-coded) and print every line (UNIX cat)
 
-![](examples/files/cat.pl)
+![](examples/files-perl/cat.pl)
 
 ```
 Instead of printing the line you could do anything with it.
@@ -162,7 +162,7 @@ Instead of printing the line you could do anything with it.
 ## Write to a file
 {id: write-file}
 
-![](examples/files/write_file.pl)
+![](examples/files-perl/write_file.pl)
 
 
 [Writing to files with Perl](https://perlmaven.com/writing-to-files-with-perl)
@@ -171,20 +171,20 @@ Instead of printing the line you could do anything with it.
 ## Sum of numbers in a file
 {id: sum-of-numbers}
 
-![](examples/files/numbers.txt)
-![](examples/files/count_sum.pl)
+![](examples/files-perl/numbers.txt)
+![](examples/files-perl/count_sum.pl)
 
 
 ## Analyze the Apache log file
 {id: apache-log-report-hosts}
 
-![](examples/files/apache_access.log)
-![](examples/files/apache_log_hosts.pl)
+![](examples/files-perl/apache_access.log)
+![](examples/files-perl/apache_log_hosts.pl)
 
 
 ## Encoding and UTF-8
 {id: encoding}
-![](examples/files/encoding.pl)
+![](examples/files-perl/encoding.pl)
 
 
 ## Open files in the old way
@@ -200,7 +200,7 @@ handles so we used uppercase letters such as XYZ or INPUT, QQRQ or FILEHANDLE.
 Also the function had only 2 parameters.
 
 
-![](examples/files/open_file_old.pl)
+![](examples/files-perl/open_file_old.pl)
 
 Security problems.
 
@@ -212,7 +212,7 @@ Being global, difficult to pass as parameter to functions.
 ## Binary mode
 {id: binary-mode}
 
-![](examples/files/open_binary_file.pl)
+![](examples/files-perl/open_binary_file.pl)
 
 
 ## Reading from file, read, eof
@@ -228,7 +228,7 @@ returns the number of characters actually read
 READ_LENGTH = read FILEHANDLE,SCALAR,LENGTH
 
 
-![](examples/files/read_file.pl)
+![](examples/files-perl/read_file.pl)
 
 ```
 # returns TRUE if we are at the end of file.
@@ -286,7 +286,7 @@ seek $fh, 0,2;    # go to the end of the file
 # Sometimes you need to 
 truncate FILEHANDLE, LENGTH;
 ```
-![](examples/files/truncate.pl)
+![](examples/files-perl/truncate.pl)
 
 
 
@@ -294,7 +294,7 @@ truncate FILEHANDLE, LENGTH;
 {id: exercise-more-statistics}
 
 
-Take the script from the previous example (examples/files/count_sum.pl)
+Take the script from the previous example (examples/files-perl/count_sum.pl)
 and in addition to the sum of the numbers print also
 
 
@@ -339,7 +339,7 @@ in order to align the columns.
 {id: exercise-analyze-apache-log}
 
 
-In the Apache log file (examples/files/apache_access.log)
+In the Apache log file (examples/files-perl/apache_access.log)
 after the "GET something HTTP/1.1" part there is the
 result code of the requests. 200 is OK the rest might be some failure.
 
@@ -359,17 +359,17 @@ Could you put all the lines in either of the categories?
 
 ## Solution: Add more statistics
 {id: solution-statistics}
-![](examples/files/statistics.pl)
+![](examples/files-perl/statistics.pl)
 
 
 ## Solution: Write report to file
 {id: solution-write-report-to-file}
-![](examples/files/write_report_to_file.pl)
+![](examples/files-perl/write_report_to_file.pl)
 
 
 ## Solution: Analyze Apache - number of successful hits
 {id: solution-analyze-apache-log}
-![](examples/files/apache_log_result_code.pl)
+![](examples/files-perl/apache_log_result_code.pl)
 
 
 

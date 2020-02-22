@@ -242,7 +242,7 @@ which client IP address were used and how many hits were from
 each IP address.
 
 The log file can be found here:
-examples/files/apache_access.log
+examples/files-perl/apache_access.log
 ```
 
 

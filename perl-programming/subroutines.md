@@ -119,13 +119,13 @@ Perl allows us to return any number of values.
 {id: exercise-subroutines}
 
 
-Take the solution from the subroutines chapter (examples/files/statistics.pl)
+Take the solution from the subroutines chapter (examples/files-perl/statistics.pl)
 and move the code in a subroutine called main()
 
 
 
 
-Take the solution from the subroutines chapter ( examples/files/write_report_to_file.pl )
+Take the solution from the subroutines chapter ( examples/files-perl/write_report_to_file.pl )
 and create 3 subroutines. read_file() and write_file() for the two main parts of the script
 and main() that will call these two subroutines.
 
