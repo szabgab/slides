@@ -63,9 +63,7 @@ def flake(path):
     return exit_code
 
 
-def main():
-    start = time.time()
-    root = os.path.dirname( os.path.dirname( os.path.abspath(__file__)))
+def check_python(root):
     python_root = os.path.join(root, 'python-programming', 'examples')
     cnt = 0
     errors = 0
@@ -92,18 +90,14 @@ def main():
             #out, err = proc.communicate()
             #assert proc.returncode == 0, "for {}".format(path)
 
+
+def main():
+    start = time.time()
+    root = os.path.dirname( os.path.dirname( os.path.abspath(__file__)))
+    errors = check_python(root)
     end = time.time()
     print(f"Elapsed time: {end-start}")
     exit(errors)
-
-def test_flake8():
-    os.walk
-#    assert proc.returncode == 1  # I guess because there were issues
-#    assert err  == b'' #.decode('utf-8') == ''
-#    errors = out.decode('utf-8').split("\n")
-#    print("\n")
-#    assert len(errors) <= 10, "Errors grew!"
-#    print(len(out))
 
 def xtest_combine(tmpdir):
     proc = subprocess.Popen([sys.executable, 'combine.py', '--all', '--target', str(tmpdir)],
