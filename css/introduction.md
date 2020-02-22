@@ -34,7 +34,7 @@ p.news a {
 
 ## Inline style attribute
 {id: inline-style-attribute}
-![](examples/intro/inline.html)
+![](examples/css/inline.html)
 
 {aside}
 In order to see this, save the code in a file with .html extension and open it with a browser.
@@ -44,13 +44,13 @@ In order to see this, save the code in a file with .html extension and open it w
 
 ## In the head or body of the  HTML
 {id: in-head-or-body}
-![](examples/intro/in_head_or_body.html)
+![](examples/css/in_head_or_body.html)
 
 
 ## External stylesheet included with a link
 {id: external-stylesheet}
-![](examples/intro/external.html)
-![](examples/intro/external.css)
+![](examples/css/external.html)
+![](examples/css/external.css)
 
 {aside}
 In most cases people place the link tag inside the head tag, but it also works outside of it.
@@ -82,7 +82,8 @@ selector {
 
 ## No layout
 {id: no-layout}
-![](examples/intro/no_layout.html)
+
+![](examples/css/no_layout.html)
 
 
 ## margin: auto
@@ -90,13 +91,15 @@ selector {
 {i: margin: auto}
 {i: width}
 {i: max-width}
-![](examples/intro/margin_auto.html)
+
+![](examples/css/margin_auto.html)
 
 
 ## box-sizing
 {id: box-sizing}
 {i: box-sizing}
-![](examples/intro/box_sizing.html)
+
+![](examples/css/box_sizing.html)
 
 
 
@@ -135,7 +138,8 @@ The default display property of span and a is 'inline'.
 
 ## boxes using div
 {id: boxes-using-div}
-![](examples/intro/boxes.html)
+
+![](examples/css/boxes.html)
 
 
 
@@ -149,7 +153,8 @@ The default display property of span and a is 'inline'.
 
 ## modal
 {id: modal}
-![](examples/intro/modal.html)
+
+![](examples/css/modal.html)
 
 
 source: http://netdna.webdesignerdepot.com/uploads7/creating-a-modal-window-with-html5-and-css3/demo.html
