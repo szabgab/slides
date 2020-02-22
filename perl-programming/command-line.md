@@ -216,7 +216,7 @@ the resulting files to some previous execution.
 ## Capture::Tiny
 {id: capture-tiny}
 {i: Capture::Tiny}
-![](examples/perl/capture_tiny.pl)
+![](examples/test-perl/capture_tiny.pl)
 
 
 

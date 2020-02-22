@@ -13,7 +13,7 @@ to replace the display function, capture the data in a variable
 and then check that variable.
 {/aside}
 
-![](examples/perl/t/display.t)
+![](examples/test-perl/t/display.t)
 
 
 
@@ -29,13 +29,13 @@ In our example we have a dice() function that throws the dice. It should return 
 number between 1-6.
 {/aside}
 
-![](examples/perl/t/dice_cmp_ok.t)
+![](examples/test-perl/t/dice_cmp_ok.t)
 
 ```
-perl examples/perl/t/dice_cmp_ok.t
+perl examples/test-perl/t/dice_cmp_ok.t
 ```
 
-![](examples/perl/t/dice_cmp_ok.out)
+![](examples/test-perl/t/dice_cmp_ok.out)
 
 It seems to be ok but we are actually not testing the correct thing.
 We should check if the result is one of the following values (1, 2, 3, 4, 5, 6)
@@ -48,11 +48,11 @@ We should check if the result is one of the following values (1, 2, 3, 4, 5, 6)
 
 We are going to use the "any" function of List::MoreUtils.
 
-![](examples/perl/t/dice_any.t)
+![](examples/test-perl/t/dice_any.t)
 
 Output:
 
-![](examples/perl/t/dice_any.out)
+![](examples/test-perl/t/dice_any.out)
 
 {aside}
 This shows that there is some problem but we still don't know what exactly is the problem.
@@ -70,11 +70,11 @@ We would like to see the actual value and maybe even the expected values.
 All the ok() and related functions return true or false depending on their reporting
 success or failure. One can use this to print extra information using diag()
 {/aside}
-![](examples/perl/t/dice_any_diag.t)
+![](examples/test-perl/t/dice_any_diag.t)
 
 Output:
 
-![](examples/perl/t/dice_any_diag.out)
+![](examples/test-perl/t/dice_any_diag.out)
 
 
 ## My own test functions
@@ -90,7 +90,7 @@ The story behind is that the dice() function can actually get any number ($n) an
 should then produce a random whole number between 1 and $n. The default is 6. So we
 are testing dice() with several possible parameters.
 {/aside}
-![](examples/perl/t/dice_is_any.t)
+![](examples/test-perl/t/dice_is_any.t)
 
 {aside}
 
@@ -102,7 +102,7 @@ values and not the array itself.
 
 Output:
 
-![](examples/perl/t/dice_is_any.out)
+![](examples/test-perl/t/dice_is_any.out)
 
 {aside}
 
@@ -130,11 +130,11 @@ to our own test function will tell Test::Builder to go one level further
 back in the call stack to find the location where the function was called
 and where the error occurred.
 {/aside}
-![](examples/perl/t/dice_is_any_fixed.t)
+![](examples/test-perl/t/dice_is_any_fixed.t)
 
 Output:
 
-![](examples/perl/t/dice_is_any_fixed.out)
+![](examples/test-perl/t/dice_is_any_fixed.out)
 
 
 
@@ -160,7 +160,7 @@ load the module and import the is_any function. Usually private test modules
 are placed in the t/lib directory, so we have to add this to our @INC by
 calling use lib.
 {/aside}
-![](examples/perl/t/dice.t)
+![](examples/test-perl/t/dice.t)
 
 {aside}
 
@@ -171,11 +171,11 @@ as it would confuse the testing system.
 So instead we are using the Test::Builder backend and the ok and diag methods
 it provides.
 {/aside}
-![](examples/perl/t/lib/Test/MyTools.pm)
+![](examples/test-perl/t/lib/Test/MyTools.pm)
 
 Output:
 
-![](examples/perl/t/dice.out)
+![](examples/test-perl/t/dice.out)
 
 
 ## Test::Builder
@@ -210,9 +210,9 @@ We'll see some of them here.
 
 ## Test::Builder object
 {id: test-builder-object}
-![](examples/perl/t/builder.t)
+![](examples/test-perl/t/builder.t)
 
-**perl examples/perl/t/builder.t**
+**perl examples/test-perl/t/builder.t**
 
 
 ```
@@ -234,7 +234,7 @@ which tests you'll need to skip. In such cases you can rely on
 the skip method of Test::Builder that you can access from Test::More
 as well.
 {/aside}
-![](examples/perl/t/skip.t)
+![](examples/test-perl/t/skip.t)
 
 
 ## Test with warnings
@@ -245,8 +245,8 @@ as well.
 First we'll check if the fibonacci function works correctly even when called with
 negative numbers.
 {/aside}
-![](examples/perl/t/fibonacci_negative.t)
-![](examples/perl/t/fibonacci_negative.out)
+![](examples/test-perl/t/fibonacci_negative.t)
+![](examples/test-perl/t/fibonacci_negative.out)
 
 {aside}
 
@@ -274,8 +274,8 @@ So once we have tested our nicely behaving code we can also test our warnings an
 For this we are going to use several additional modules from CPAN. As they all use the
 Test::Builder backend we can use them along with our standard Test::More setup.
 {/aside}
-![](examples/perl/t/fibonacci_negative_tested.t)
-![](examples/perl/t/fibonacci_negative_tested.out)
+![](examples/test-perl/t/fibonacci_negative_tested.t)
+![](examples/test-perl/t/fibonacci_negative_tested.out)
 
 
 ## Test::Warn
@@ -302,30 +302,30 @@ If we can test our code for specific warnings we should also test
 that in other places there are no warnings.
 
 
-![](examples/perl/t/fibonacci_test_warn.t)
+![](examples/test-perl/t/fibonacci_test_warn.t)
 
 Output:
 
-![](examples/perl/t/fibonacci_test_warn.out)
+![](examples/test-perl/t/fibonacci_test_warn.out)
 
 
 ## No warnings at all using Test::NoWarnings
 {id: testing-for-no-warnings-at-all}
 {i: Test::NoWarnings}
-![](examples/perl/t/fibonacci_no_warnings.t)
+![](examples/test-perl/t/fibonacci_no_warnings.t)
 
 Output:
 
-![](examples/perl/t/fibonacci_no_warnings.out)
+![](examples/test-perl/t/fibonacci_no_warnings.out)
 
 
 ## Test with warnings Test::NoWarnings
 {id: test-with-warnings}
-![](examples/perl/t/fibonacci_with_warnings.t)
+![](examples/test-perl/t/fibonacci_with_warnings.t)
 
 Output:
 
-![](examples/perl/t/fibonacci_with_warnings.out)
+![](examples/test-perl/t/fibonacci_with_warnings.out)
 
 {aside}
 
@@ -338,11 +338,11 @@ The biggest problem with this module is that it does not work together with done
 ## Test::NoWarnings
 {id: test-nowarnings}
 {i: Test::NoWarnings}
-![](examples/perl/t/test_nowarnings.t)
+![](examples/test-perl/t/test_nowarnings.t)
 
 Output:
 
-![](examples/perl/t/test_nowarnings.out)
+![](examples/test-perl/t/test_nowarnings.out)
 
 
 ## Test::FailWarnings
@@ -354,11 +354,11 @@ Output:
 Test::NoWarnings does not [play well](http://www.dagolden.com/index.php/1905/alternative-to-testnowarnings/)
 with **done_testing**, but  [Test::FailWarnings](https://metacpan.org/pod/Test::FailWarnings) does.
 {/aside}
-![](examples/perl/t/test_failwarnings.t)
+![](examples/test-perl/t/test_failwarnings.t)
 
 Output:
 
-![](examples/perl/t/test_failwarnings.out)
+![](examples/test-perl/t/test_failwarnings.out)
 
 
 ## Test::Exception
@@ -367,7 +367,7 @@ Output:
 
 [Test::Exception](https://metacpan.org/pod/Test::Exception).
 
-![](examples/perl/t/test_exception.t)
+![](examples/test-perl/t/test_exception.t)
 
 ```
 1..2
@@ -442,8 +442,8 @@ Similar to Test::Warn there is also a module called Test::Exception
 to test for calls to die.
 Try calling fibonacci(); and writing a test for it.
 ```
-![](examples/perl/t/fibonacci_dies.t)
-![](examples/perl/t/fibonacci_dies.out)
+![](examples/test-perl/t/fibonacci_dies.t)
+![](examples/test-perl/t/fibonacci_dies.out)
 
 
 
@@ -455,14 +455,14 @@ Maybe this is better:
 
 is_between($lower_limit, $oper1, $real_value, $oper2, $upper_limit, $name)
 ```
-![](examples/perl/t/dice_range.t)
-![](examples/perl/t/lib/Test/Range.pm)
+![](examples/test-perl/t/dice_range.t)
+![](examples/test-perl/t/lib/Test/Range.pm)
 
 
 ## Solution: test sum
 {id: solution-test-sum}
-![](examples/perl/t/empty_sum.t)
-![](examples/perl/t/fibonacci_test_die.t)
+![](examples/test-perl/t/empty_sum.t)
+![](examples/test-perl/t/fibonacci_test_die.t)
 
 
 ## Perl Best Practices
@@ -516,7 +516,7 @@ according to the style accepted in your company.
 Perl::Critic
 Test::Perl::Critic
 ```
-![](examples/perl/t/99-critic.t)
+![](examples/test-perl/t/99-critic.t)
 
 
 ## Why number the test files?
@@ -541,16 +541,16 @@ One common way to make sure the test scripts run in a certain order is to name t
 [Test::Differences](https://metacpan.org/pod/Test::Differences) provides UNIX-like
 diff output when strings are not matching.
 
-![](examples/perl/t/test_differences.t)
+![](examples/test-perl/t/test_differences.t)
 
-**perl examples/perl/t/test_differences.t**
+**perl examples/test-perl/t/test_differences.t**
 
 
 ```
 1..1
 not ok 1 - Another string
 #   Failed test 'Another string'
-#   at examples/perl/t/test_differences.t line 15.
+#   at examples/test-perl/t/test_differences.t line 15.
 # +----+---------------------+----+--------------------+
 # | Elt|Got                  | Elt|Expected            |
 # +----+---------------------+----+--------------------+
@@ -567,16 +567,16 @@ not ok 1 - Another string
 
 [Test::Deep](https://metacpan.org/pod/Test::Deep) by Fergal Daly provides various function
 testing data structure is much better way than is_deeply of Test::More.
-We return to the example examples/perl/lib/MyBugs.pm
+We return to the example examples/test-perl/lib/MyBugs.pm
 
 * cmp_deeply
 * cmp_bag
 * cmp_set
 * cmp_methods
 
-![](examples/perl/t/test_deep.t)
-![](examples/perl/t/test_deep.out)
-![](examples/perl/t/bag.t)
+![](examples/test-perl/t/test_deep.t)
+![](examples/test-perl/t/test_deep.out)
+![](examples/test-perl/t/bag.t)
 
 
 ## Test::File
@@ -608,8 +608,8 @@ information about files
 when comparing strings. Especially long strings.
 
 
-![](examples/perl/t/test_longstring.t)
-![](examples/perl/t/test_longstring.out)
+![](examples/test-perl/t/test_longstring.t)
+![](examples/test-perl/t/test_longstring.out)
 
 
 ## Test::Most
@@ -636,12 +636,12 @@ It also provides a nice set of extra features such as
 the `die_on_fail;` and `bail_on_fail` calls.
 
 
-![](examples/perl/t/test_most.t)
+![](examples/test-perl/t/test_most.t)
 
 ```
-prove examples/perl/t/test_most.t
-DIE_ON_FAIL=1 prove examples/perl/t/test_most.t
-BAIL_ON_FAIL=1 prove examples/perl/t/test_most.t
+prove examples/test-perl/t/test_most.t
+DIE_ON_FAIL=1 prove examples/test-perl/t/test_most.t
+BAIL_ON_FAIL=1 prove examples/test-perl/t/test_most.t
 ```
 
 
@@ -680,12 +680,12 @@ see [Test::Fatal](https://metacpan.org/pod/Test::Fatal).
 ## Sample script for testing Client-Server
 {id: testing-client-server}
 
-![](examples/perl/client_server.t)
+![](examples/test-perl/client_server.t)
 
 
 ## Sample script for testing Client-Server Win32
 {id: testing-client-server-win32}
-![](examples/perl/client_server_win32.t)
+![](examples/test-perl/client_server_win32.t)
 
 
 
@@ -728,7 +728,7 @@ Test::Fatal and/or Test::Trap.
 
 ## Solution
 {id: solution-test-builder}
-![](examples/perl/t/get_fh.t)
+![](examples/test-perl/t/get_fh.t)
 
 
 ## Monkey Patching

@@ -29,7 +29,7 @@ We have a module called MyTools.pm with several functions.
 The first function we are going to test is called sum().
 It is supposed to return the sum of numbers passed to it.
 
-The module is located in examples/perl/lib/MyTools.pm.
+The module is located in examples/test-perl/lib/MyTools.pm.
 {/aside}
 
 * MyTools
@@ -51,7 +51,7 @@ sets of input and you'd then check if the results are as expected.
 
 Let's do that. Write a script using the sum() function of the module and printing the results.
 {/aside}
-![](examples/perl/tests/t01.pl)
+![](examples/test-perl/tests/t01.pl)
 
 {aside}
 
@@ -60,7 +60,7 @@ In this script we use the $Bin variable of the FindBin module to let perl find t
 
 If you run this script, the output will look like this:
 
-![](examples/perl/tests/t01.pl.out)
+![](examples/test-perl/tests/t01.pl.out)
 
 
 There was an error on the last line. 2 + 2 + 2 should be 6 and not 4
@@ -112,13 +112,13 @@ next to the actual results.
 
 That way it will be obvious to any tester what values need to be compared.
 {/aside}
-![](examples/perl/tests/t03.pl)
+![](examples/test-perl/tests/t03.pl)
 
 
 Output:
 
 
-![](examples/perl/tests/t03.pl.out)
+![](examples/test-perl/tests/t03.pl.out)
 
 
 Now it is better.
@@ -137,11 +137,11 @@ to the person comparing to notice the differences.
 
 What if we have 100s of test cases?
 {/aside}
-![](examples/perl/tests/t04.pl)
+![](examples/test-perl/tests/t04.pl)
 
 Output:
 
-![](examples/perl/tests/t04.pl.out)
+![](examples/test-perl/tests/t04.pl.out)
 
 
 ## Complex output
@@ -186,13 +186,13 @@ Good so we are going to implement that now. For every test unit we
 create an if statement that will print either "ok" or "not ok"
 depending on the result.
 {/aside}
-![](examples/perl/tests/t05.pl)
+![](examples/test-perl/tests/t05.pl)
 
 
 Output:
 
 
-![](examples/perl/tests/t05.pl.out)
+![](examples/test-perl/tests/t05.pl.out)
 
 
 The output is as we expected. I mean we already know there is a bug somewhere.
@@ -226,13 +226,13 @@ This ok() function gets a "true" or "false" value
 Reminder: In Perl undef, 0, "" and "0" count as false and all other
 values as true.
 {/aside}
-![](examples/perl/tests/t06.pl)
+![](examples/test-perl/tests/t06.pl)
 
 
 Output:
 
 
-![](examples/perl/tests/t06.pl.out)
+![](examples/test-perl/tests/t06.pl.out)
 
 
 But why reinvent the wheel ?
@@ -262,13 +262,13 @@ use Test::Simple, tell it your **plan**, that is the number
 of times you are going to call **ok()** and use its built in ok()
 function.
 {/aside}
-![](examples/perl/tests/t10.pl)
+![](examples/test-perl/tests/t10.pl)
 
 
 Output:
 
 
-![](examples/perl/tests/t10.pl.out)
+![](examples/test-perl/tests/t10.pl.out)
 
 {aside}
 
@@ -286,13 +286,13 @@ then we get the tests numbered and we even get a small explanation when the test
 For the following example we've replaced the failing test with one that is successful.
 This way you can see how does it look like when everything is ok.
 {/aside}
-![](examples/perl/tests/t11.pl)
+![](examples/test-perl/tests/t11.pl)
 
 
 Output:
 
 
-![](examples/perl/tests/t11.pl.out)
+![](examples/test-perl/tests/t11.pl.out)
 
 
 ## Test::Simple - missing test
@@ -318,13 +318,13 @@ and checks if the correct number of tests have been executed.
 This is exactly what Test::Simple provides. In the following example
 we deliberately commented out the last test that was failing.
 {/aside}
-![](examples/perl/tests/t12.pl)
+![](examples/test-perl/tests/t12.pl)
 
 
 Output:
 
 
-![](examples/perl/tests/t12.pl.out)
+![](examples/test-perl/tests/t12.pl.out)
 
 
 ## Test::Simple - too many tests
@@ -334,13 +334,13 @@ Output:
 When there are more OKs than planned the script will also print a comment about it.
 
 
-![](examples/perl/tests/t13.pl)
+![](examples/test-perl/tests/t13.pl)
 
 
 Output:
 
 
-![](examples/perl/tests/t13.pl.out)
+![](examples/test-perl/tests/t13.pl.out)
 
 
 ## Add names to the tests
@@ -363,19 +363,19 @@ If the names were written carefully, then they can provide an immediate hint on 
 Sometimes you won't even need to look at the test script itself, right from this comment
 you'll know where to look for the bug.
 {/aside}
-![](examples/perl/tests/t14.pl)
+![](examples/test-perl/tests/t14.pl)
 
 
 Output:
 
 
-![](examples/perl/tests/t14.pl.out)
+![](examples/test-perl/tests/t14.pl.out)
 
 
 ## Exercise: Enlarge the test
 {id: testing-exercise-enlarge-test-suit}
 
-Take the test file from the last example ( examples/perl/tests/t14.pl ) and add a few more tests.
+Take the test file from the last example ( examples/test-perl/tests/t14.pl ) and add a few more tests.
 
 Also write a few more tests for the `multiply()` and the
 `fibo()` functions. (The latter returns the fibonacci number so fibo(1) will return 1.
@@ -384,11 +384,11 @@ Also write a few more tests for the `multiply()` and the
 ## Enlarge our test suite
 {id: enlarge-the-test-suit}
 
-![](examples/perl/tests/t20.pl)
+![](examples/test-perl/tests/t20.pl)
 
 Output:
 
-![](examples/perl/tests/t20.pl.out)
+![](examples/test-perl/tests/t20.pl.out)
 
 
 ## Refactor larger test suite
@@ -403,11 +403,11 @@ We take the data and move it to a data structure. The code then can go over this
 data structure and execute each unit on its own.
 {/aside}
 
-![](examples/perl/tests/t21.pl)
+![](examples/test-perl/tests/t21.pl)
 
 Output:
 
-![](examples/perl/tests/t21.pl.out)
+![](examples/test-perl/tests/t21.pl.out)
 
 {aside}
 
@@ -438,11 +438,11 @@ There are a number of solution to this problem
 {id: no-plan}
 {i: plan}
 {i: no_plan}
-![](examples/perl/tests/t22.pl)
+![](examples/test-perl/tests/t22.pl)
 
 Output:
 
-![](examples/perl/tests/t22.pl.out)
+![](examples/test-perl/tests/t22.pl.out)
 
 
 The 1..6 is now at the end.
@@ -485,11 +485,11 @@ Please note, we have to declare "my @tests" outside the BEGIN block or it will b
 
 This is a good solution, though it requires the use of BEGIN, which might be considered as somewhat advanced feature of Perl.
 {/aside}
-![](examples/perl/tests/t23.pl)
+![](examples/test-perl/tests/t23.pl)
 
 Output:
 
-![](examples/perl/tests/t23.pl.out)
+![](examples/test-perl/tests/t23.pl.out)
 
 
 ## Put the test cases in an external file
@@ -506,7 +506,7 @@ is the expected result.
 
 We even allow for empty rows and comments: rows that start with a # character will be disregarded.
 {/aside}
-![](examples/perl/tests/sum.txt)
+![](examples/test-perl/tests/sum.txt)
 
 {aside}
 
@@ -518,7 +518,7 @@ This way, by the end of the BEGIN block the @tests array will look exactly as it
 
 The code outside the BEGIN block stays the same.
 {/aside}
-![](examples/perl/tests/t24.pl)
+![](examples/test-perl/tests/t24.pl)
 
 Output:
 
@@ -530,7 +530,7 @@ ok 2 - 2 + 2
 not ok 3 - 2 + 2 + 2
 
 #   Failed test '2 + 2 + 2'
-#   at examples/perl/tests/t24.pl line 29.
+#   at examples/test-perl/tests/t24.pl line 29.
 ok 4 - 3 + 3
 ok 5 - -1 + -1
 ok 6 - 1 + -1
@@ -551,7 +551,7 @@ BEGIN failed--compilation aborted at t24.pl line 18.
 
 ## Large test suite
 {id: large-test-suit}
-![](examples/perl/tests/large_sum.txt)
+![](examples/test-perl/tests/large_sum.txt)
 
 ```
 $ cp tests/large_sum.txt tests/sum.txt
@@ -822,7 +822,7 @@ Directory layout
 {id: makefile-pl-extutils-makemaker}
 {i: Makefile.PL}
 {i: ExtUtils::MakeMaker}
-![](examples/perl/project_with_extutils_makemaker/Makefile.PL)
+![](examples/test-perl/project_with_extutils_makemaker/Makefile.PL)
 
 {aside}
 
@@ -877,7 +877,7 @@ $ make dist
 {id: makefile-pl-module-install}
 {i: Makefile.PL}
 {i: Module::Install}
-![](examples/perl/project_with_module_install/Makefile.PL)
+![](examples/test-perl/project_with_module_install/Makefile.PL)
 
 {aside}
 
@@ -908,7 +908,7 @@ $ make dist
 ## Build.PL
 {id: build-pl}
 {i: Build.PL}
-![](examples/perl/project_with_module_build/Build.PL)
+![](examples/test-perl/project_with_module_build/Build.PL)
 
 ```
 $ perl Build.PL
@@ -973,7 +973,7 @@ Prove has another frequently used flag: -v which puts it in verbose mode.
 ## Exercise: MyTools multiply
 {id: exercise-test-simple}
 
-1. Setup a folder for CPAN module development with the necessary files and copy the examples/perl/lib/MyTools.pm files to be your module.
+1. Setup a folder for CPAN module development with the necessary files and copy the examples/test-perl/lib/MyTools.pm files to be your module.
 1. Create a test script (.pl) and write at least 5 tests for the multiply() function.  See how it works when running directly with perl and using harness
 1. Rename the file and move it to t/sg.t Run it using make test and/or Build test
 

@@ -87,8 +87,8 @@ Then we call it a Perl Module.
 
 ```
 @INC:
-  C:/strawberry/perl/lib
-  C:/strawberry/perl/site/lib
+  C:/strawberry/test-perl/lib
+  C:/strawberry/test-perl/site/lib
   C:\strawberry\perl\vendor\lib
   .
 ```

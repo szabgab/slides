@@ -28,7 +28,7 @@
 * %INC - loaded modules and the path to them on the disk.
 * %ENV - environment variables
 * %SIG - signal handlers
-* Full list at [perldoc perlvar](https://metacpan.org/pod/distribution/perl/pod/perlvar.pod)
+* Full list at [perldoc perlvar](https://metacpan.org/pod/distribution/test-perl/pod/perlvar.pod)
 
 
 

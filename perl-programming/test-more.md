@@ -44,7 +44,7 @@ to allow better error reporting.
 A drop-in replacement of Test::Simple.
 
 
-![](examples/perl/t/31.t)
+![](examples/test-perl/t/31.t)
 
 Output:
 
@@ -69,7 +69,7 @@ It would be much better to see the expected value and the actually received valu
 This usually helps in locating the problem.
 
 
-![](examples/perl/t/32.t)
+![](examples/test-perl/t/32.t)
 
 Output:
 
@@ -108,7 +108,7 @@ You just know one specific value that you want to make sure you have not
 received.
 
 
-![](examples/perl/t/isnt.t)
+![](examples/test-perl/t/isnt.t)
 
 Output:
 
@@ -135,7 +135,7 @@ This isn't a good example though.
 ## Test::More isnt undef
 {id: test-more-isnt-undef}
 {i: undef}
-![](examples/perl/t/isnt_undef.t)
+![](examples/test-perl/t/isnt_undef.t)
 
 Output:
 
@@ -175,7 +175,7 @@ diag "We are going to test the Foo-Bar device now";
 ```
 # We are going to test the Foo-Bar device now
 ```
-![](examples/perl/t/33.t)
+![](examples/test-perl/t/33.t)
 
 **$ perl t/33.t**
 
@@ -231,7 +231,7 @@ Failed 1/1 test programs. 1/3 subtests failed.
 prove it does not show up.
 
 
-![](examples/perl/t/33_note.t)
+![](examples/test-perl/t/33_note.t)
 
 **$ perl t/33_note.t**
 
@@ -292,7 +292,7 @@ to a more complex data structure.
 Its result must be passed to either note(); does or diag();
 
 
-![](examples/perl/t/33_explain.t)
+![](examples/test-perl/t/33_explain.t)
 
 **$ perl t/33_explain.t**
 
@@ -326,7 +326,7 @@ ok 2 - 2+2
 
 When you don't want to see the failing tests any more
 
-![](examples/perl/t/34.t)
+![](examples/test-perl/t/34.t)
 
 **$ perl t/34.t**
 
@@ -421,7 +421,7 @@ Result: PASS
 ```
 This page was last updated at 2014-09-23T04:43:44
 ```
-![](examples/perl/t/last_update.t)
+![](examples/test-perl/t/last_update.t)
 
 **perl t/last_update.t**
 
@@ -447,7 +447,7 @@ What if you don't want or can't realisticly expect an exact match with the resul
 You can use `like` that compares with =~
 
 
-![](examples/perl/t/copyright.t)
+![](examples/test-perl/t/copyright.t)
 
 **perl t/copyright.t**
 
@@ -542,7 +542,7 @@ ok 2 - process was waiting at most 3 secs
 Compare two Perl data structures:
 
 
-![](examples/perl/t/is_deeply.t)
+![](examples/test-perl/t/is_deeply.t)
 
 ```
 1..10
@@ -577,7 +577,7 @@ Another example with `is_deeply`
 checking the returned hash from a bug tracking system.
 
 
-![](examples/perl/t/is_deeply_bugs.t)
+![](examples/test-perl/t/is_deeply_bugs.t)
 
 ```
 1..3
@@ -609,7 +609,7 @@ Look at the code that generates the bug reports you'll see that testing the 4th 
 - which is quite complex already - is hard. We cannot test against a fixed hash as some
 of the values are totally dynamic (e.g. a timestamp).
 {/aside}
-![](examples/perl/lib/MyBugs.pm)
+![](examples/test-perl/lib/MyBugs.pm)
 
 
 
@@ -677,9 +677,9 @@ be so bad that all the testing should stop. In that case you should call
 BAIL_OUT(). That will indicate the harness that it should not call
 any other test script.
 {/aside}
-![](examples/perl/t/exit.t)
+![](examples/test-perl/t/exit.t)
 
-**perl examples/perl/t/exit.t**
+**perl examples/test-perl/t/exit.t**
 
 
 ```
@@ -687,12 +687,12 @@ any other test script.
 ok 1 - first
 not ok 2 - second
 #   Failed test 'second'
-#   at examples/perl/t/exit.t line 7.
+#   at examples/test-perl/t/exit.t line 7.
 # Looks like you planned 3 tests but ran 2.
 # Looks like you failed 1 test of 2 run.
 ```
 
-**prove examples/perl/t/exit.t**
+**prove examples/test-perl/t/exit.t**
 
 
 ```
@@ -720,9 +720,9 @@ Failed 1/1 test programs. 1/2 subtests failed.
 ## Stop all the test scripts
 {id: test-more-bail-out}
 {i: BAIL_OUT}
-![](examples/perl/t/bail_out.t)
+![](examples/test-perl/t/bail_out.t)
 
-**perl examples/perl/t/bail_out.t**
+**perl examples/test-perl/t/bail_out.t**
 
 
 ```
@@ -730,11 +730,11 @@ Failed 1/1 test programs. 1/2 subtests failed.
 ok 1 - first I
 not ok 2 - second II
 #   Failed test 'second II'
-#   at examples/perl/t/bail_out.t line 8.
+#   at examples/test-perl/t/bail_out.t line 8.
 Bail out!  no way
 ```
 
-**prove examples/perl/t/bail_out.t**
+**prove examples/test-perl/t/bail_out.t**
 
 
 ```
@@ -789,7 +789,7 @@ All tests successful.
 Files=11, Tests=2078, 50 wallclock secs
 ```
 
-![](examples/perl/cover.pl)
+![](examples/test-perl/cover.pl)
 
 [CPAN Cover](http://cpancover.com/)
 
@@ -804,7 +804,7 @@ Files=11, Tests=2078, 50 wallclock secs
 use_ok and require_ok are not recommended any more. Just **use** or **require** the modules as necessary
 and let perl provide the appropriate failure message if either of those fails.
 {/aside}
-![](examples/perl/t/use_ok.t)
+![](examples/test-perl/t/use_ok.t)
 
 ```
 1..1
@@ -824,7 +824,7 @@ can_ok($object, qw(method_a method_b));
 In order to nicely test if a module has certain methods you can use the can_ok() function of Test::More.
 It can be used both on modules and on objects.
 {/aside}
-![](examples/perl/t/can_ok.t)
+![](examples/test-perl/t/can_ok.t)
 
 Output:
 
@@ -834,7 +834,7 @@ Output:
 ok 1 - MyTools->can('fibonacci')
 not ok 2 - MyTools->can('make_tea')
 #   Failed test 'MyTools->can('make_tea')'
-#   at examples/perl/t/can_ok.t line 11.
+#   at examples/test-perl/t/can_ok.t line 11.
 #     MyTools->can('make_tea') failed
 # Looks like you failed 1 test of 2.
 ```
@@ -881,7 +881,7 @@ With Test::More we have a much better solution. We don't have to
 declare the plan on the use Test::More line. We can do that later,
 in the run time of the Perl script.
 {/aside}
-![](examples/perl/t/plan_tests.t)
+![](examples/test-perl/t/plan_tests.t)
 
 
 ## Test blocks (use subtest instead)
@@ -909,7 +909,7 @@ code and the reader that the blocks are mostly independent.
 It also ensures that the variables used in one block won't interfere with the variables
 in the other block. You'll even have to define these variables in both blocks.
 {/aside}
-![](examples/perl/t/blocks.t)
+![](examples/test-perl/t/blocks.t)
 
 
 ## Counting tests in the small blocks (use subtest instead)
@@ -929,7 +929,7 @@ There is trick I learned on the perl-qa mailing list.
 You declare a variable called $tests at the beginning of the script.
 Then at the end of each section you update the number.
 {/aside}
-![](examples/perl/t/begin_block.t)
+![](examples/test-perl/t/begin_block.t)
 
 See also:
 [Test::Block](http://metacpan.org/pod/Test::Block)
@@ -938,7 +938,7 @@ See also:
 ## subtest with plan
 {id: subtest-with-plan}
 
-![](examples/perl/t/planned_subtest.t)
+![](examples/test-perl/t/planned_subtest.t)
 
 **perl t/planned_subtest.t**
 
@@ -1001,15 +1001,15 @@ Result: FAIL
 I am not a fan of it, but in rare cases it is useful to know that **done_testing** can be used to signal all tests have been done.
 This way we don't need to have a "plan".
 {/aside}
-![](examples/perl/t/done_testing.t)
+![](examples/test-perl/t/done_testing.t)
 
 
 ## subtest with implicit done_testing
 {id: subtest}
 {i: done_testing}
-![](examples/perl/t/subtest.t)
-![](examples/perl/t/subtest.t.ok)
-![](examples/perl/t/subtest.t.nok)
+![](examples/test-perl/t/subtest.t)
+![](examples/test-perl/t/subtest.t.ok)
+![](examples/test-perl/t/subtest.t.nok)
 
 Implicit call to done_testing inside. skip-able, etc.
 
@@ -1019,7 +1019,7 @@ Implicit call to done_testing inside. skip-able, etc.
 {id: skip-all}
 {i: skip_all}
 
-![](examples/perl/t/skip_all.t)
+![](examples/test-perl/t/skip_all.t)
 
 
 ## All the tests
@@ -1029,7 +1029,7 @@ Implicit call to done_testing inside. skip-able, etc.
 Just to show you all the tests of the MyTools module we used
 ```
 
-![](examples/perl/t/all.t)
+![](examples/test-perl/t/all.t)
 
 
 ## Exercise: skip test

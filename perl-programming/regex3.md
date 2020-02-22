@@ -21,7 +21,7 @@ Let's say you would like to match lines with
 ```
 
 ```
-if ($line =~ /\/usr\/bin\/perl/) {
+if ($line =~ /\/usr\/bin\/test-perl/) {
 }
 
 if ($line =~ m{/usr/bin/perl}) {
