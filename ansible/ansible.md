@@ -98,12 +98,12 @@ Default is /etc/ansible/ansible.cfg
 
 defaults to /etc/ansible/hosts
 
-![](examples/intro/inventory.cfg)
+![](examples/ansible/inventory.cfg)
 
 
 ## Ansible Inventory file
 {id: ansible-first-inventory-file}
-![](examples/intro/first.cfg)
+![](examples/ansible/first.cfg)
 
 
 ## ping

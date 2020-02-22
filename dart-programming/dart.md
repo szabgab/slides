@@ -87,7 +87,7 @@ Everything you need can be found on the main website of the Dart Language.
 {id: hello-world-in-dart}
 {i: main}
 {i: print}
-![](examples/intro/hello_world.dart)
+![](examples/dart-intro/hello_world.dart)
 
 **dart hello_world.dart**
 
@@ -108,7 +108,7 @@ Statements end with semi-colon: ;
 {i: var}
 {i: +}
 {i: $}
-![](examples/intro/hello_foo.dart)
+![](examples/dart-intro/hello_foo.dart)
 
 
 ## Adding numbers
@@ -120,7 +120,7 @@ Statements end with semi-colon: ;
 Interpolation can also include embedded expressions. We just need to put them inside curly braces.
 {/aside}
 
-![](examples/intro/adding_numbers.dart)
+![](examples/dart-intro/adding_numbers.dart)
 
 
 ## Comments
@@ -152,8 +152,8 @@ Multi-line, whatever is between a pair of /* */ is a comment.
 ## Using string as a number
 {id: using-string-as-number}
 {i: +}
-![](examples/intro/using_string_as_number.dart)
-![](examples/intro/using_string_as_number.out)
+![](examples/dart-intro/using_string_as_number.dart)
+![](examples/dart-intro/using_string_as_number.out)
 
 {aside}
 
@@ -166,7 +166,7 @@ If we try to add (+) two variables that hold different types, we will get a run-
 ## Casting string to int
 {id: casting-string-to-int}
 {i: int.parse}
-![](examples/intro/casting_string_to_int.dart)
+![](examples/dart-intro/casting_string_to_int.dart)
 
 
 
@@ -179,7 +179,7 @@ If we try to add (+) two variables that hold different types, we will get a run-
 Strings can't equal to numbers even if the look the same.
 We first need to convert the string to an int and only then will they be equal.
 {/aside}
-![](examples/intro/equality.dart)
+![](examples/dart-intro/equality.dart)
 
 
 
@@ -249,7 +249,7 @@ if (cond1) {
 Only works on numbers and strings.
 Last statement of each non-empty case must be one of: break, continue, return or throw.
 {/aside}
-![](examples/intro/switch_case.dart)
+![](examples/dart-intro/switch_case.dart)
 
 
 
@@ -264,7 +264,7 @@ We can declare the types of variables, but that does not make any difference dur
 We can still assign values of other types to the variable, and it sill only recognizes
 real type-mismatch in use at run-time.
 {/aside}
-![](examples/intro/type_checking.dart)
+![](examples/dart-intro/type_checking.dart)
 
 **dart type_checking.dart** (production mode)
 
@@ -273,7 +273,7 @@ real type-mismatch in use at run-time.
  will throw exception on `c+d`.
 {/aside}
 
-![](examples/intro/type_checking.out)
+![](examples/dart-intro/type_checking.out)
 
 **dart --checked type_checking.dart** (checked mode)
 
@@ -282,7 +282,7 @@ real type-mismatch in use at run-time.
  will throw exception already on `b = 'abc';`.
 {/aside}
 
-![](examples/intro/type_checking_checked.out)
+![](examples/dart-intro/type_checking_checked.out)
 
 IDE
 
@@ -314,7 +314,7 @@ Dart is an optionally typed and dynamic language. Variables can be
 {i: String}
 {i: final}
 {i: const}
-![](examples/intro/types.dart)
+![](examples/dart-intro/types.dart)
 
 * Integers are arbitrary precision (but not in JS)
 * Doubles are 64 bit
@@ -333,7 +333,7 @@ or can be in-lined. Such as 1+2.
 ## Operators on numbers
 {id: operators}
 {i: ~/}
-![](examples/intro/operators.dart)
+![](examples/dart-intro/operators.dart)
 
 
 ## Strings
@@ -342,7 +342,7 @@ or can be in-lined. Such as 1+2.
 {i: """}
 {i: r''}
 {i: \n}
-![](examples/intro/strings.dart)
+![](examples/dart-intro/strings.dart)
 
 
 ## String Methods
@@ -351,13 +351,13 @@ or can be in-lined. Such as 1+2.
 {i: indexOf}
 {i: replaceAll}
 {i: RegExp}
-![](examples/intro/string_methods.dart)
+![](examples/dart-intro/string_methods.dart)
 
 
 ## StringBuffer
 {id: stringbuffer}
 {i: StringBuffer}
-![](examples/intro/stringbuffer.dart)
+![](examples/dart-intro/stringbuffer.dart)
 
 
 ## Boolen values
@@ -374,7 +374,7 @@ or can be in-lined. Such as 1+2.
 {i: break}
 {i: continue}
 
-![](examples/intro/while.dart)
+![](examples/dart-intro/while.dart)
 
 
 ## do while loop
@@ -391,7 +391,7 @@ do {
 {id: functions}
 {i: function}
 {i: return}
-![](examples/intro/functions.dart)
+![](examples/dart-intro/functions.dart)
 
 
 ## Functions: Optional Positional Parameters
@@ -403,7 +403,7 @@ do {
 Wrapping the option in square brackets will make it optional. Its value will be null.
 {/aside}
 
-![](examples/intro/prompt.dart)
+![](examples/dart-intro/prompt.dart)
 
 
 ## Functions: Optional Named Parameters
@@ -415,17 +415,17 @@ Wrapping the option in square brackets will make it optional. Its value will be 
 If the parameters are wrapped in curly braces, it means they are still optional, but they are now named parameters.
 The name is now required when calling the function.
 {/aside}
-![](examples/intro/prompt_named.dart)
+![](examples/dart-intro/prompt_named.dart)
 
 
 ## Functions: Optional Named Parameter with default value
 {id: functions-optional-named-parameter-with-default}
-![](examples/intro/prompt_named_default.dart)
+![](examples/dart-intro/prompt_named_default.dart)
 
 
 ## Functions: Optional Positional Parameter with default value
 {id: functions-optional-positional-parameter-with-default}
-![](examples/intro/prompt_positional_default.dart)
+![](examples/dart-intro/prompt_positional_default.dart)
 
 
 ## Optional Parameters
@@ -446,17 +446,17 @@ In both cases the caller uses colon: **f(positional, count : 42)**
 * Functions are objects
 * **Function** is an abstract type
 
-![](examples/intro/assign_function.dart)
+![](examples/dart-intro/assign_function.dart)
 
 
 ## Passing functions as parameters
 {id: passing-functions-as-parameters}
-![](examples/intro/passing_functions.dart)
+![](examples/dart-intro/passing_functions.dart)
 
 
 ## Specific function signatures
 {id: functions-signatures}
-![](examples/intro/function_signatures.dart)
+![](examples/dart-intro/function_signatures.dart)
 
 
 ## Lexical Scoping
@@ -467,14 +467,14 @@ In both cases the caller uses colon: **f(positional, count : 42)**
 Curly braces define scope. Both for regular variables and for functions.
 We cannot use the global version of f() if we declare f internally as well.
 {/aside}
-![](examples/intro/lexical_scope.dart)
-![](examples/intro/lexical_scope.out)
+![](examples/dart-intro/lexical_scope.dart)
+![](examples/dart-intro/lexical_scope.out)
 
 
 
 ## Closure
 {id: closure}
-![](examples/intro/incrementor_generator.dart)
+![](examples/dart-intro/incrementor_generator.dart)
 
 
 ## Complex data types
@@ -517,7 +517,7 @@ Most other languages would probably call this an array. Well, except Python, whe
 * Zero based
 * Fast access via index
 
-![](examples/intro/lists.dart)
+![](examples/dart-intro/lists.dart)
 
 
 ## where - filtering values
@@ -525,19 +525,19 @@ Most other languages would probably call this an array. Well, except Python, whe
 {i: where}
 {i: filter in Python}
 {i: grep in Perl}
-![](examples/intro/where.dart)
+![](examples/dart-intro/where.dart)
 
 
 ## any - checking if anything matches
 {id: any}
 {i: any}
-![](examples/intro/any.dart)
+![](examples/dart-intro/any.dart)
 
 
 ## map - making changes to each value
 {id: map}
 {i: map}
-![](examples/intro/map.dart)
+![](examples/dart-intro/map.dart)
 
 
 
@@ -549,7 +549,7 @@ Most other languages would probably call this an array. Well, except Python, whe
 * Efficient add/remove from head/tail
 * No index access
 
-![](examples/intro/queue.dart)
+![](examples/dart-intro/queue.dart)
 
 
 ## Stack - LIFO
@@ -560,7 +560,7 @@ Most other languages would probably call this an array. Well, except Python, whe
 * Efficient add/remove from head/tail
 * No index access
 
-![](examples/intro/stack.dart)
+![](examples/dart-intro/stack.dart)
 
 {aside}
 
@@ -579,7 +579,7 @@ and thus this class is optimal for both FIFO and LIFO data structures.
 * Unordered
 * Unique elements
 
-![](examples/intro/set.dart)
+![](examples/dart-intro/set.dart)
 
 
 
@@ -594,26 +594,26 @@ and thus this class is optimal for both FIFO and LIFO data structures.
 * Keys are unique and cannot be null
 * Access by key is O(1)
 
-![](examples/intro/hash.dart)
+![](examples/dart-intro/hash.dart)
 
 
 
 ## DateTime
 {id: datetime}
 {i: DateTime}
-![](examples/intro/datetime.dart)
+![](examples/dart-intro/datetime.dart)
 
 
 
 ## Read from Standard Input
 {id: read-from-stdin}
 {i: stdin.readLineSync}
-![](examples/intro/read_from_keyboard.dart)
+![](examples/dart-intro/read_from_keyboard.dart)
 
 
 ## Division by Zero
 {id: division-by-zero}
-![](examples/intro/division_by_zero.dart)
+![](examples/dart-intro/division_by_zero.dart)
 
 ```
 2.0
@@ -624,7 +624,7 @@ Infinity
 
 ## Integer Division by Zero
 {id: integer-division-by-zero}
-![](examples/intro/integer_division_by_zero.dart)
+![](examples/dart-intro/integer_division_by_zero.dart)
 
 ```
 2
@@ -637,8 +637,8 @@ Breaking on exception: IntegerDivisionByZeroException
 {id: catch-exception}
 {i: try}
 {i: catch}
-![](examples/intro/catch_exception.dart)
-![](examples/intro/catch_exception.out)
+![](examples/dart-intro/catch_exception.dart)
+![](examples/dart-intro/catch_exception.out)
 
 
 ## Catch specific exception
@@ -646,14 +646,14 @@ Breaking on exception: IntegerDivisionByZeroException
 {i: StateError}
 {i: ArgumentError}
 {i: finally}
-![](examples/intro/catching_specific_exceptions.dart)
+![](examples/dart-intro/catching_specific_exceptions.dart)
 
 
 
 ## Command line arguments
 {id: command-line-arguments}
 {i: argv}
-![](examples/intro/command_line_arguments.dart)
+![](examples/dart-intro/command_line_arguments.dart)
 
 
 
@@ -661,7 +661,7 @@ Breaking on exception: IntegerDivisionByZeroException
 {id: timer}
 {i: dart:async}
 {i: Timer}
-![](examples/intro/timer.dart)
+![](examples/dart-intro/timer.dart)
 
 
 ## Reading File
@@ -669,21 +669,21 @@ Breaking on exception: IntegerDivisionByZeroException
 {i: dart:io}
 {i: dart:convert}
 {i: Platform}
-![](examples/intro/reading_file.dart)
+![](examples/dart-intro/reading_file.dart)
 
 
 ## Listing Directory
 {id: listing-directory}
 {i: Directory.current}
 {i: FileSystemEntity }
-![](examples/intro/directory_list.dart)
+![](examples/dart-intro/directory_list.dart)
 
 
 ## Random Numbers
 {id: random-numbers}
 {i: dart:math}
 {i: Random}
-![](examples/intro/random_numbers.dart)
+![](examples/dart-intro/random_numbers.dart)
 
 
 ## Classes
@@ -694,29 +694,29 @@ Breaking on exception: IntegerDivisionByZeroException
 * Top level class is called Object
 * Single inheritance
 
-![](examples/intro/shapes.dart)
+![](examples/dart-intro/shapes.dart)
 
 
 ## Class with automatic getter and setter
 {id: class-automatic-getter-setter}
-![](examples/intro/person.dart)
+![](examples/dart-intro/person.dart)
 
 
 ## Create Getters and Setters
 {id: create-getters-and-setters}
-![](examples/intro/person_birthday.dart)
+![](examples/dart-intro/person_birthday.dart)
 
 
 
 ## Alternative constructor
 {id: alternative-constructor}
-![](examples/intro/person_by_age.dart)
+![](examples/dart-intro/person_by_age.dart)
 
 
 ## Inheritance (extending a class)
 {id: extending-class}
 {i: extends}
-![](examples/intro/more_shapes.dart)
+![](examples/dart-intro/more_shapes.dart)
 
 
 ## Dart resources
@@ -743,25 +743,25 @@ X = COND ? A : B;
 
 ## Number Guessing game
 {id: number-guessing-game}
-![](examples/intro/number_guessing_game.dart)
+![](examples/dart-intro/number_guessing_game.dart)
 
 
 ## Iterable
 {id: iterable}
 {i: Iterable}
-![](examples/intro/iterable.dart)
+![](examples/dart-intro/iterable.dart)
 
 
 ## Iterator
 {id: iterator}
-![](examples/intro/iterators.dart)
+![](examples/dart-intro/iterators.dart)
 
 
 ## Convert Dart date to JSON and back
 {id: dart-and-json}
 {i: JSON}
 {i: dart::convert}
-![](examples/intro/json.dart)
+![](examples/dart-intro/json.dart)
 
 
 ## Examples
@@ -771,7 +771,7 @@ X = COND ? A : B;
 Placeholder for more examples.
 {/aside}
 
-![](examples/intro/example.dart)
+![](examples/dart-intro/example.dart)
 
 
 
