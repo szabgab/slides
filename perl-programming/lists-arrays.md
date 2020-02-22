@@ -89,7 +89,7 @@ How can we swap the values of 2 variables, let say $x and $y?
 * foreach ITEM (LIST) {BLOCK}
 * my - in the foreach loop
 
-![](examples/arrays/list_colors.pl)
+![](examples/perlarrays/list_colors.pl)
 
 ```
 Blue
@@ -102,7 +102,7 @@ White
 ## Create an Array, loop over with foreach
 {id: foreach-array}
 {i: @}
-![](examples/arrays/list_colors_array.pl)
+![](examples/perlarrays/list_colors_array.pl)
 
 ```
 Blue Yellow Brown White
@@ -123,7 +123,7 @@ You can also mix the variables on the right side
 and if there are arrays on the right side the whole thing becomes one flat array !
 
 
-![](examples/arrays/assignment.pl)
+![](examples/perlarrays/assignment.pl)
 
 
 ```
@@ -143,7 +143,7 @@ my ($x, @y, @z);
 {i: Dumper}
 {i: \@}
 
-![](examples/arrays/debug.pl)
+![](examples/perlarrays/debug.pl)
 
 ```
 Moose Barney Foo Bar
@@ -193,7 +193,7 @@ foreach my $i (1..10) {
 * $#array - the largest index
 * $array[1] - array elements are scalar
 
-![](examples/arrays/color_menu.pl)
+![](examples/perlarrays/color_menu.pl)
 {i: $array[-1]}
 
 
@@ -205,7 +205,7 @@ foreach my $i (1..10) {
 
 * looks_like_number
 
-![](examples/arrays/color_menu_checked.pl)
+![](examples/perlarrays/color_menu_checked.pl)
 
 
 ## Command line parameters
@@ -218,7 +218,7 @@ foreach my $i (1..10) {
 * $0 - name of the program
 * **perl read_argv.pl blue**
 
-![](examples/arrays/read_argv.pl)
+![](examples/perlarrays/read_argv.pl)
 
 
 ## Process command line parameters, use modules
@@ -230,7 +230,7 @@ foreach my $i (1..10) {
 * scalar reference
 * **perl process_command_line.pl --color blue**
 
-![](examples/arrays/process_command_line.pl)
+![](examples/perlarrays/process_command_line.pl)
 
 
 ## Module documentation
@@ -249,20 +249,20 @@ foreach my $i (1..10) {
 
 * split
 
-![](examples/arrays/process_csv_file.csv)
-![](examples/arrays/process_csv_file.pl)
+![](examples/perlarrays/process_csv_file.csv)
+![](examples/perlarrays/process_csv_file.pl)
 
 
 
 ## process csv file (short version)
 {id: process-csv-files-short}
-![](examples/arrays/process_csv_file_short.pl)
+![](examples/perlarrays/process_csv_file_short.pl)
 
 ```
 
 Use the following command to run the script:
 
-`perl examples/arrays/process_csv_file_short.pl examples/arrays/process_csv_file.csv`
+`perl examples/perlarrays/process_csv_file_short.pl examples/perlarrays/process_csv_file.csv`
 
 ```
 
@@ -271,7 +271,7 @@ Use the following command to run the script:
 {id: oneliner-sum-numbers-in-csv}
 
 ```
-perl -n -a -F; -e '$sum += $F[2]; END {print $sum}' examples/arrays/process_csv_file.csv
+perl -n -a -F; -e '$sum += $F[2]; END {print $sum}' examples/perlarrays/process_csv_file.csv
 
 -n  = loop over lines but do NOT print them
 -a  = autosplit by ' ' and assign to @F
@@ -289,8 +289,8 @@ The `END` block gets executed at the end of the execution and only once.
 ```
 What if there is a field with embedded comma (,)?
 ```
-![](examples/arrays/process_csv_file_module.csv)
-![](examples/arrays/process_csv_file_module.pl)
+![](examples/perlarrays/process_csv_file_module.csv)
+![](examples/perlarrays/process_csv_file_module.pl)
 
 
 ## process csv file using Text::CSV
@@ -301,8 +301,8 @@ What if there is a field with embedded comma (,)?
 ```
 What if there is a field with embedded newline?
 ```
-![](examples/arrays/process_csv_file_module_newline.csv)
-![](examples/arrays/process_csv_file_module_newline.pl)
+![](examples/perlarrays/process_csv_file_module_newline.csv)
+![](examples/perlarrays/process_csv_file_module_newline.pl)
 
 
 ## Join
@@ -328,14 +328,14 @@ of loops and then to use those labels in conjunction with last or next to
 go to the last or next iteration of the specified loop.
 
 
-![](examples/arrays/labels.pl)
+![](examples/perlarrays/labels.pl)
 
 
 ## Exercise: Make the color selector user friendly
 {id: exercise-user-friendly-color-selector}
 
 
-Take the examples/arrays/process_command_line.pl script
+Take the examples/perlarrays/process_command_line.pl script
 ( the color selector ) and make it more user friendly
 by showing the numbers starting from 1 (and not from 0).
 
@@ -346,7 +346,7 @@ by showing the numbers starting from 1 (and not from 0).
 {id: exercise-color-selector}
 
 
-Take the examples/arrays/process_command_line.pl
+Take the examples/perlarrays/process_command_line.pl
 script and improve it in several ways:
 
 
@@ -401,10 +401,10 @@ As it is not a sitting duck, after every shot the spaceship can randomly move +2
 ## Solution: improved color selector
 {id: solution-color-selector}
 
-![](examples/arrays/color_selector.pl)
+![](examples/perlarrays/color_selector.pl)
 
 
 ## Solution: Improve the Number Guessing game
 {id: solution-number-guessing-game-2}
 
-![](examples/arrays/number_guessing.pl)
+![](examples/perlarrays/number_guessing.pl)

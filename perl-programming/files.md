@@ -67,7 +67,7 @@ while (1) {
 * **redo** - start the iteration again without evaluating the loop condition.
 
 
-![](examples/arrays/loop_control.txt)
+![](examples/perlarrays/loop_control.txt)
 
 ![](examples/files/loop_control.pl)
 

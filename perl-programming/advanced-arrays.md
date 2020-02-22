@@ -125,52 +125,52 @@ see also `perldoc -f function-name`
 ## Filehandle in scalar and list context
 {id: filehandle-in-scalar-and-list-context}
 
-![](examples/arrays/filehandle_in_context.pl)
+![](examples/perlarrays/filehandle_in_context.pl)
 
 
 ## slurp mode
 {id: slurp-mode}
 {i: $/}
 {i: slurp}
-![](examples/arrays/slurp.pl)
+![](examples/perlarrays/slurp.pl)
 
 
 ## File::Slurp
 {id: file-slurp}
 {i: File::Slurp}
 {i: slurp}
-![](examples/arrays/file_slurp.pl)
+![](examples/perlarrays/file_slurp.pl)
 
 
 ## Diamond operator
 {id: diamond-operator}
-![](examples/arrays/diamond.pl)
+![](examples/perlarrays/diamond.pl)
 
 
 ## pop, push
 {id: pop-push}
 {i: pop}
 {i: push}
-![](examples/arrays/pop_push.pl)
-![](examples/arrays/data.txt)
+![](examples/perlarrays/pop_push.pl)
+![](examples/perlarrays/data.txt)
 
 
 ## push example
 {id: push-example}
-![](examples/arrays/collecting_data.pl)
+![](examples/perlarrays/collecting_data.pl)
 
 
 ## stack (pop, push) Reverse Polish Calculator
 {id: stack-implementation}
 {i: stack}
-![](examples/arrays/reverse_polish_calculator.pl)
+![](examples/perlarrays/reverse_polish_calculator.pl)
 
 
 ## shift, unshift
 {id: shift-unshift}
 {i: shift}
 {i: unshift}
-![](examples/arrays/shift_unshift.pl)
+![](examples/perlarrays/shift_unshift.pl)
 
 ```
 FIRST = shift ARRAY;
@@ -181,13 +181,13 @@ unshift ARRAY, VALUEs;
 ## queue (shift, push)
 {id: queue-implementation}
 {i: queue}
-![](examples/arrays/queue.pl)
+![](examples/perlarrays/queue.pl)
 
 
 
 ## shift
 {id: shift-argv}
-![](examples/arrays/shift_argv.pl)
+![](examples/perlarrays/shift_argv.pl)
 
 ```
 shift defaults to shift @ARGV
@@ -202,7 +202,7 @@ Does it matter?
 ## reverse
 {id: reverse}
 {i: reverse}
-![](examples/arrays/reverse.pl)
+![](examples/perlarrays/reverse.pl)
 
 
 ## Sort
@@ -214,7 +214,7 @@ Does it matter?
 {i: &lt;=&gt;}
 {i: spaceship operator}
 
-![](examples/arrays/sort.pl)
+![](examples/perlarrays/sort.pl)
 
 [Sorting arrays in Perl](https://perlmaven.com/sorting-arrays-in-perl)
 
@@ -238,8 +238,8 @@ my $var = COND ? A : B;
 
 ## Count digits
 {id: count-digits}
-![](examples/arrays/count_digits.txt)
-![](examples/arrays/count_digits.pl)
+![](examples/perlarrays/count_digits.txt)
+![](examples/perlarrays/count_digits.pl)
 
 
 
@@ -247,7 +247,7 @@ my $var = COND ? A : B;
 {id: exercise-color-selector-files}
 
 
-Take the solution from the previous chapter (you can use the file examples/arrays/color_selector.pl )
+Take the solution from the previous chapter (you can use the file examples/perlarrays/color_selector.pl )
 and add the following features:
 
 
@@ -260,7 +260,7 @@ and add the following features:
 ## Exercise: sort numbers
 {id: exercise-sort-numbers}
 
-Take the file `examples/arrays/count_digits.txt`
+Take the file `examples/perlarrays/count_digits.txt`
 from the previous example and sort the numbers (not the digits).
 
 
@@ -294,11 +294,11 @@ A27
 File:
 
 
-![](examples/arrays/sort_mixed_strings.txt)
+![](examples/perlarrays/sort_mixed_strings.txt)
 
 Expected output from sample file
 
-![](examples/arrays/sort_mixed_strings.out)
+![](examples/perlarrays/sort_mixed_strings.out)
 
 
 ## Exercise: sort mixed string 2
@@ -333,28 +333,28 @@ B1
 
 Expected output from sample file
 
-![](examples/arrays/sort_mixed_strings2.out)
+![](examples/perlarrays/sort_mixed_strings2.out)
 
 
 ## Solution: color selector files
 {id: solution-color-selector-files}
-![](examples/arrays/color_selector_files.pl)
+![](examples/perlarrays/color_selector_files.pl)
 
 
 ## Solution: sort numbers
 {id: solution-sort-numbers}
-![](examples/arrays/sort_numbers.pl)
+![](examples/perlarrays/sort_numbers.pl)
 
 
 
 ## Solution: sort mixed strings
 {id: solution-sort-mixed-strings}
-![](examples/arrays/sort_mixed_strings.pl)
+![](examples/perlarrays/sort_mixed_strings.pl)
 
 
 ## Solution: sort mixed strings
 {id: solution-sort-mixed-strings-2}
-![](examples/arrays/sort_mixed_strings2.pl)
+![](examples/perlarrays/sort_mixed_strings2.pl)
 
 
 ## List::Util
@@ -374,8 +374,8 @@ It resides in a distribution called [Scalar-List-Utils](https://metacpan.org/rel
 {id: multi-dimensional-array}
 {i: \@}
 
-![](examples/arrays/matrix.pl)
-![](examples/arrays/matrix.out)
+![](examples/perlarrays/matrix.pl)
+![](examples/perlarrays/matrix.out)
 
 ```
 Actually what we have is a simple array and each element of that
