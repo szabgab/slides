@@ -27,7 +27,7 @@ Most importantly for us, the App-Name/lib/App/Name.pm
 
 ## Front-end server
 {id: front-end-server}
-![](examples/app.psgi)
+![](examples/mob/app.psgi)
 
 
 ## Same origin policy

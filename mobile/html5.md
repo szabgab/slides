@@ -61,7 +61,7 @@ Modernizr.inputtypes.TYPE where TYPE is one of the names mentioned previously.
 [modernizr](http://modernizr.com/) is a JavaScript library that detects HTML5 and CSS3 features in the user's browser.
 
 
-![](examples/html_modernizr.html)
+![](examples/mob/html_modernizr.html)
 
 
 See also [detect](http://diveintohtml5.info/detect.html)
@@ -90,7 +90,8 @@ Modernizr.
 
 ## HTML5 features
 {id: html5-features-example}
-![](examples/html5.html)
+
+![](examples/mob/html5.html)
 
 
 ## Geolocation
@@ -156,9 +157,6 @@ Values are stored as strings so on retrieval you'll need to use functions
 {id: store}
 {i: stringify}
 {i: JSON}
+
 ![](examples/store/store.html)
 ![](examples/store/store.js)
-
-
-
-
