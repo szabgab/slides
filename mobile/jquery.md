@@ -5,8 +5,8 @@
 ## Overview
 {id: jquery-overview}
 
-![](examples/jquery/jquery.html)
-![](examples/jquery/jq.js)
+![](examples/jquery-ex/jquery.html)
+![](examples/jquery-ex/jq.js)
 
 
 ## JQuery Mobile
@@ -21,8 +21,4 @@ You can also download a zip file including the images needed.
 Each has its advantages/disadvantages.
 {/aside}
 
-![](examples/jquery/mobile.html)
-
-
-
-
+![](examples/jquery-ex/mobile.html)
