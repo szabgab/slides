@@ -4,28 +4,28 @@
 ## if statement
 {id: if}
 {i: if}
-![](examples/intro/if_statement.js)
+![](examples/js/if_statement.js)
 
 
 
 ## Double equal (==) issues in JavaScript
 {id: double-equal-issues-in-javascript}
 {i: ==}
-![](examples/intro/compare2_issues.js)
+![](examples/js/compare2_issues.js)
 
 
 ## Compare values using == in JavaScript
 {id: compare-values-with-double-equal-javascript}
 {i: ==}
 {i: !=}
-![](examples/intro/compare2.js)
+![](examples/js/compare2.js)
 
 
 ## Compare values using === in JavaScript
 {id: compare-values-with-triple-equal-javascript}
 {i: ===}
 {i: !==}
-![](examples/intro/compare3.js)
+![](examples/js/compare3.js)
 
 
 ## Comparision operators
@@ -48,14 +48,14 @@
 {i: &gt;=}
 {i: &lt;}
 {i: &lt;=}
-![](examples/intro/comparison.js)
+![](examples/js/comparison.js)
 
 
 ## Booleans: true and false
 {id: booleans}
 {i: true}
 {i: false}
-![](examples/intro/boolean.js)
+![](examples/js/boolean.js)
 
 
 ## Falsy values in JavaScript
@@ -73,7 +73,7 @@ Falsy:
   0  (The number)
   NaN
 ```
-![](examples/intro/falsy.js)
+![](examples/js/falsy.js)
 
 
 ## Truthy values in JavaScript
@@ -89,7 +89,7 @@ Infinity
 The string "0"
 The string "false"
 ```
-![](examples/intro/truthy.js)
+![](examples/js/truthy.js)
 
 
 ## Logical operators
@@ -97,25 +97,25 @@ The string "false"
 {i: &amp;&amp;}
 {i: ||}
 {i: !}
-![](examples/intro/logical_operators.js)
+![](examples/js/logical_operators.js)
 
 
 ## Toggle boolean
 {id: toggle-boolean}
 {i: true}
 {i: false}
-![](examples/intro/toggle.js)
+![](examples/js/toggle.js)
 
 
 ## Convert Truthy and Falsy values to boolean
 {id: convert-to-boolean}
 {i: !!}
-![](examples/intro/convert_to_boolean.js)
+![](examples/js/convert_to_boolean.js)
 
 
 ## Short circuit
 {id: short-circuit}
-![](examples/intro/short_circuit.js)
+![](examples/js/short_circuit.js)
 
 ```
 I have 100000 in the bank and I get 8001 as salary.
@@ -141,7 +141,7 @@ expressions.
 {id: if-else}
 {i: if}
 {i: else}
-![](examples/intro/if_else_statement.js)
+![](examples/js/if_else_statement.js)
 
 ```
 if () {
@@ -162,7 +162,7 @@ if () {
 {id: else-if}
 {i: else if}
 {i: ===}
-![](examples/intro/else_if_statement.js)
+![](examples/js/else_if_statement.js)
 
 
 ## Switch (case) in JavaScript
@@ -171,7 +171,7 @@ if () {
 {i: case}
 {i: default}
 {i: break}
-![](examples/intro/switch.js)
+![](examples/js/switch.js)
 
 * You'd better call "break" at the end of each "case" statement or this will fall through and will execute all the lower cases without checking their condition.
 * Switch uses === for comparision.
@@ -184,13 +184,13 @@ if () {
 {id: math-round}
 {i: Math}
 {i: round}
-![](examples/intro/round.js)
+![](examples/js/round.js)
 
 
 ## Math.random
 {id: math-random}
 {i: random}
-![](examples/intro/random.js)
+![](examples/js/random.js)
 
 
 ## Exercise: Calculator
@@ -206,8 +206,8 @@ take the 3 values and calculate the result of the expression.
 
 ## Solution: Calculator
 {id: solution-calculator}
-![](examples/intro/calculator.html)
-![](examples/intro/calculator.js)
+![](examples/js/calculator.html)
+![](examples/js/calculator.js)
 
 
 
@@ -233,9 +233,6 @@ guessed before the coreect number was found.
 
 ## Solution: Guess number
 {id: solution-guess-number}
-![](examples/intro/guess_number.html)
-![](examples/intro/guess_number.js)
 
-
-
-
+![](examples/js/guess_number.html)
+![](examples/js/guess_number.js)

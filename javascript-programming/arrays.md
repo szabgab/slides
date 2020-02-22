@@ -10,7 +10,7 @@ for (INITIALIZE;   CONDITION;   STEP) {
 
 }
 ```
-![](examples/intro/for_loop.js)
+![](examples/js/for_loop.js)
 
 
 ## while loop
@@ -22,7 +22,7 @@ while (CONDITION) {
 
 }
 ```
-![](examples/intro/while.js)
+![](examples/js/while.js)
 
 ```
 2
@@ -37,7 +37,7 @@ while (CONDITION) {
 ## Break out from while loop in JavaScript
 {id: break-out-from-while-javascript}
 {i: break}
-![](examples/intro/break_while.js)
+![](examples/js/break_while.js)
 
 ```
 2
@@ -48,14 +48,14 @@ while (CONDITION) {
 
 ## An infinite while loop
 {id: infinite-while-loop}
-![](examples/intro/infinite_loop.js)
+![](examples/js/infinite_loop.js)
 
 
 
 ## Continue to next in while loop in JavaScript
 {id: continue-next-while-javascript}
 {i: continue}
-![](examples/intro/continue_while.js)
+![](examples/js/continue_while.js)
 
 ```
 2
@@ -73,7 +73,7 @@ while (CONDITION) {
 
 The loop is executed at least once.
 
-![](examples/intro/do_while.js)
+![](examples/js/do_while.js)
 
 For example you ask a question and let the user guess. Every time you compare
   the answer to the expected answer. You will need to
@@ -91,38 +91,38 @@ For example you ask a question and let the user guess. Every time you compare
 {i: Array}
 {i: for}
 {i: length}
-![](examples/intro/new_array.js)
+![](examples/js/new_array.js)
 
 
 ## Literal array: []
 {id: new-array-square-brackets}
 {i: []}
-![](examples/intro/new_array_brackets.js)
+![](examples/js/new_array_brackets.js)
 
 
 ## Enlarge array with elements
 {id: array-elements}
-![](examples/intro/array_elements.js)
+![](examples/js/array_elements.js)
 
 
 ## JavaScript Arrays - pop - push
 {id: pop-push-shift-unshift}
 {i: pop}
 {i: push}
-![](examples/intro/pop_push.js)
+![](examples/js/pop_push.js)
 
 
 ## JavaScript Arrays - shift - unshift
 {id: shift-unshift}
 {i: shift}
 {i: unshift}
-![](examples/intro/shift_unshift.js)
+![](examples/js/shift_unshift.js)
 
 
 ## Two dimensional array (matrix)
 {id: two-dimensional-array}
 {i: matrix}
-![](examples/intro/two_dimensional_array.js)
+![](examples/js/two_dimensional_array.js)
 
 
 
@@ -136,7 +136,7 @@ For example you ask a question and let the user guess. Every time you compare
 We don't have to use the C-style for-loop on arrays. We can use the simpler, for-in construct.
 It will iterate over the index of the array.
 {/aside}
-![](examples/intro/for_in_loop_on_array.js)
+![](examples/js/for_in_loop_on_array.js)
 
 
 ## ForEach loop on array
@@ -148,7 +148,7 @@ It will iterate over the index of the array.
 Another way to iterate over the elements of an array is to use the forEach method of the array.
 It gets a function as an argument and it will call that function with each one of the values of the array.
 {/aside}
-![](examples/intro/foreach_loop_on_array.js)
+![](examples/js/foreach_loop_on_array.js)
 
 
 ## Reverse array

@@ -54,7 +54,7 @@ IDE - Integrated Development Environment
 Probably the simplest way to see some action from JavaScript is to embed an **alert()** call
 in an html file.
 {/aside}
-![](examples/intro/alert.html)
+![](examples/js/alert.html)
 
 * Not really used any more
 * always put ; at the end of statements
@@ -64,7 +64,7 @@ in an html file.
 ## Document.write
 {id: document-write}
 {i: document.write}
-![](examples/intro/document_write.html)
+![](examples/js/document_write.html)
 
 * script - javascript
 * document.write
@@ -75,13 +75,13 @@ in an html file.
 ## confirm
 {id: confirm}
 {i: confirm}
-![](examples/intro/confirm.html)
+![](examples/js/confirm.html)
 
 
 ## prompt
 {id: prompt}
 {i: prompt}
-![](examples/intro/prompt.html)
+![](examples/js/prompt.html)
 
 
 ## console
@@ -93,7 +93,7 @@ in an html file.
 The better way to see messages from the JavaScript running in the browser is to use the **console.log()**
 function and open the console.
 {/aside}
-![](examples/intro/console_script.html)
+![](examples/js/console_script.html)
 
 To open the JavaScript console
 
@@ -115,11 +115,11 @@ Run it in the editor
 
 ## Separate script to its own file
 {id: console-separate}
-![](examples/intro/console.html)
-![](examples/intro/console.js)
+![](examples/js/console.html)
+![](examples/js/console.js)
 
 ```
-$ node examples/intro/console.js
+$ node examples/js/console.js
 ```
 
 
@@ -127,7 +127,7 @@ $ node examples/intro/console.js
 {id: comments}
 {i: /*}
 {i: //}
-![](examples/intro/comments.js)
+![](examples/js/comments.js)
 
 * To explain to the next developer why do we do something.
 * Explain algorithm.
@@ -144,14 +144,14 @@ $ node examples/intro/console.js
   section of lines with just one keystroke.
 
 
-![](examples/intro/bad_comments.js)
+![](examples/js/bad_comments.js)
 
 ```
   SyntaxError: unterminated string literal
 ```
 
 ```
-.../examples/intro/bad_comments.js:8
+.../examples/js/bad_comments.js:8
    console.log("/* hello */")
                            ^^
 SyntaxError: Unexpected token ILLEGAL
@@ -177,7 +177,7 @@ SyntaxError: Unexpected token ILLEGAL
 * undefined
 * Objects (incl. Arrays, Functions)
 
-![](examples/intro/literal_values.js)
+![](examples/js/literal_values.js)
 
 * Numbers in JavaScript is 64-bit floating point (double)
 * Regular arithmetic issues 0.1+0.2 is not exactly 0.3
@@ -188,14 +188,14 @@ SyntaxError: Unexpected token ILLEGAL
 {id: nan-and-infinite}
 {i: NaN}
 {i: Infinite}
-![](examples/intro/nan.js)
+![](examples/js/nan.js)
 
 
 ## var - variables in JavaScript
 {id: var}
 {i: use strict}
 {i: var}
-![](examples/intro/var.js)
+![](examples/js/var.js)
 
 * "use strict"; (later explained)
 * Declare variables using 'var'
@@ -211,20 +211,20 @@ SyntaxError: Unexpected token ILLEGAL
 * Works, variable are global here too.
 * What if we make a typo in one of the variable names? No one might notice, but the code will misbehave.
 
-![](examples/intro/no_var.js)
+![](examples/js/no_var.js)
 
 
 ## use strict
 {id: use-strict}
 {i: use strict}
-![](examples/intro/no_var_strict.js)
-![](examples/intro/no_var_strict.txt)
+![](examples/js/no_var_strict.js)
+![](examples/js/no_var_strict.txt)
 
 
 ## use strict + var
 {id: use-strict-var}
-![](examples/intro/var_strict.js)
-![](examples/intro/var_strict.txt)
+![](examples/js/var_strict.js)
+![](examples/js/var_strict.txt)
 
 
 ## Exercise: Set up environment for web browser

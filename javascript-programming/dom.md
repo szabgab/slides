@@ -35,8 +35,8 @@
 
 ## Update selection box based on other selection
 {id: javascript-update-selection-box}
-![](examples/intro/update_form.html)
-![](examples/intro/update_form.js)
+![](examples/js/update_form.html)
+![](examples/js/update_form.js)
 
 ```
 ```
@@ -44,17 +44,17 @@
 
 ## Autoresizing Grid
 {id: grid}
-![](examples/intro/grid.html)
+![](examples/js/grid.html)
 
 
 ## Local storage - counter
 {id: local-storage-counter}
-![](examples/intro/local_storage_counter.html)
+![](examples/js/local_storage_counter.html)
 
 
 ## Remove item from local storage - reset counter
 {id: local-storage-reset-counter}
-![](examples/intro/local_storage_counter_reset.html)
+![](examples/js/local_storage_counter_reset.html)
 
 
 ## Clear local storage
@@ -76,7 +76,7 @@ localStorage.clear();
 In many browsers local storage can only store string. So when we store the boolean true or false, it actually stores
 the strings "true" or "false". In order to get back the real boolean values, we can use the JSON.parse() method.
 {/aside}
-![](examples/intro/local_storage_boolean.html)
+![](examples/js/local_storage_boolean.html)
 
 
 

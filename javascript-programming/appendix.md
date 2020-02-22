@@ -81,11 +81,11 @@ Based on Appendix A of  "JavaScript: The Good Parts"
 1. hasOwnProperty is not truely reliable as it is a method that can be replaced.
 1. Objects are never truly empty like a hash in Perl or a dictionary in Python.
 
-![](examples/intro/semicolon.html)
-![](examples/intro/reserved_words.html)
-![](examples/intro/is_object.html)
-![](examples/intro/is_array.html)
-![](examples/intro/parseint.html)
+![](examples/js/semicolon.html)
+![](examples/js/reserved_words.html)
+![](examples/js/is_object.html)
+![](examples/js/is_array.html)
+![](examples/js/parseint.html)
 
 
 ## Bad Parts
@@ -106,17 +106,16 @@ Based on Appendix B of  "JavaScript: The Good Parts"
 1. Typed Wrappers - avoid new Boolean, new Number, new String, new Array, new Object
 1. new - name constructor functions with leading capital letter, or even better: avoid using 'new'.
 1. void - avoid it
-1. 
 
-![](examples/intro/function_statement.js)
-![](examples/intro/function_expression.js)
+![](examples/js/function_statement.js)
+![](examples/js/function_expression.js)
 
 
 A good way to enforce that everything is private is to wrap the whole
 code in an anonymous function expression, and execute it upon parsing it.
 
 
-![](examples/intro/global_function_expression.js)
+![](examples/js/global_function_expression.js)
 
 
 The official ECMAScript grammar states, that if the first word is 'function'

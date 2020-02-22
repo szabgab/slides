@@ -6,7 +6,7 @@
 {i: NaN}
 {i: Infinite}
 {i: null}
-![](examples/intro/stringify_nan.js)
+![](examples/js/stringify_nan.js)
 
 ```
 {
@@ -26,7 +26,7 @@
 
 ## JSON parsing NaN, Infinite, and null
 {id: json-parsing-nan-infinite-and-null}
-![](examples/intro/json_parse_nan.html)
+![](examples/js/json_parse_nan.html)
 
 ```
 Object { v: 42 } json_parse_nan.html:3:0
@@ -37,7 +37,7 @@ SyntaxError: JSON.parse: unexpected character at line 1 column 9 of the JSON dat
 
 ## JSON parsing NaN, Infinite, and null (Node.js)
 {id: json-parsing-nan-infinite-and-null-node}
-![](examples/intro/json_parse_nan.js)
+![](examples/js/json_parse_nan.js)
 
 ```
 { v: 42 }
@@ -52,36 +52,36 @@ SyntaxError: Unexpected token N
 ## typeof
 {id: typeof}
 {i: typeof}
-![](examples/intro/typeof.js)
+![](examples/js/typeof.js)
 
 
 ## typeof and null
 {id: typeof-null}
-![](examples/intro/typeof_null.js)
+![](examples/js/typeof_null.js)
 
 
 ## Delayed (scheduled) execution - setTimeout
 {id: set-timeout}
 {i: setTimeout}
-![](examples/intro/set_timeout.js)
+![](examples/js/set_timeout.js)
 
 
 ## Recurring execution - setInterval
 {id: set-interval}
 {i: setInterval}
-![](examples/intro/set_interval.js)
+![](examples/js/set_interval.js)
 
 
 ## Stop recurring execution - clearInterval
 {id: clear-interval}
 {i: clearInterval}
-![](examples/intro/clear_interval.js)
+![](examples/js/clear_interval.js)
 
 
 ## Dates
 {id: dates}
 {i: Date}
-![](examples/intro/dates.js)
+![](examples/js/dates.js)
 
 
 
@@ -89,53 +89,53 @@ SyntaxError: Unexpected token N
 {id: sort}
 {i: sort}
 {i: localCompare}
-![](examples/intro/sort.js)
+![](examples/js/sort.js)
 
 
 ## sort object
 {id: sort-object}
-![](examples/intro/sort_object.js)
+![](examples/js/sort_object.js)
 
 
 ## sort datestrings
 {id: sort-datestrings}
-![](examples/intro/sort_datestrings.js)
+![](examples/js/sort_datestrings.js)
 
 
 ## map
 {id: map}
 {i: map}
-![](examples/intro/map.js)
+![](examples/js/map.js)
 
 
 
 ## Closures in JavaScript
 {id: closure}
-![](examples/intro/create_incrementer.js)
-![](examples/intro/create_counter.js)
+![](examples/js/create_incrementer.js)
+![](examples/js/create_counter.js)
 
 
 ## Exception handling
 {id: exception-handling}
 {i: try}
 {i: catch}
-![](examples/intro/exception.js)
+![](examples/js/exception.js)
 
 
 ## NodeJS: command line arguments
 {id: nodejs-command-line-arguments}
 {i: argv}
-![](examples/intro/node_argv.js)
+![](examples/js/node_argv.js)
 
 ```
-$ node examples/intro/nodejs_argv.js foo bar
+$ node examples/js/nodejs_argv.js foo bar
 [ 'node',
-  '/Users/gabor/work/training/javascript/examples/intro/nodejs_argv.js',
+  '/Users/gabor/work/training/javascript/examples/js/nodejs_argv.js',
   'foo',
   'bar' ]
 --------------
 node
-/Users/gabor/work/training/javascript/examples/intro/nodejs_argv.js
+/Users/gabor/work/training/javascript/examples/js/nodejs_argv.js
 foo
 bar
 ```
@@ -148,7 +148,7 @@ bar
 ```
 npm install prompt
 ```
-![](examples/intro/node_prompt.js)
+![](examples/js/node_prompt.js)
 
 
 ## Transliterate
