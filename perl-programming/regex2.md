@@ -219,17 +219,17 @@ I, II, III, IV, V, VI, VII,....
 
 ## Solution: Number
 {id: solution-number}
-![](examples/regex/is_number.pl)
+![](examples/regex-perl/is_number.pl)
 
 
 ## Solution: Hex/Oct/Bin
 {id: solution-hex-oct-bin}
-![](examples/regex/is_base_number.pl)
+![](examples/regex-perl/is_base_number.pl)
 
 
 ## Solution: Roman numbers
 {id: solution-roman-numbers}
-![](examples/regex/is_roman_number.pl)
+![](examples/regex-perl/is_roman_number.pl)
 
 
 

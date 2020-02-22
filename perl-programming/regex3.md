@@ -5,8 +5,8 @@
 ## Regexp::Common
 {id: regexp-common}
 
-![](examples/regex/regexp_common.pl)
-![](examples/regex/regexp_common.txt)
+![](examples/regex-perl/regexp_common.pl)
+![](examples/regex-perl/regexp_common.txt)
 
 
 ## Options and modifiers
@@ -42,8 +42,8 @@ $line = "Apple";
 ## Matching quotes
 {id: matching-quotes}
 
-![](examples/regex/sentences.txt)
-![](examples/regex/matching_quotes.pl)
+![](examples/regex-perl/sentences.txt)
+![](examples/regex-perl/matching_quotes.pl)
 
 
 ## /s single line
@@ -65,7 +65,7 @@ $ will match end of line
 \z
 \Z
 ```
-![](examples/regex/find_letter_change.pl)
+![](examples/regex-perl/find_letter_change.pl)
 
 
 
@@ -180,13 +180,13 @@ s/^\s*(.*?)\s*$/$1/   " abc " =>  "abc"  minimal match
 
 ## Replace string in assembly code
 {id: replace-string-in-assembly-code}
-![](examples/regex/assembly_source.txt)
-![](examples/regex/assembly_process.pl)
+![](examples/regex-perl/assembly_source.txt)
+![](examples/regex-perl/assembly_process.pl)
 
 
 ## Full example of previous
 {id: replace-string-assembly-full}
-![](examples/regex/assembly_process_full.pl)
+![](examples/regex-perl/assembly_process_full.pl)
 
 
 ## split with regular expression
@@ -195,8 +195,8 @@ s/^\s*(.*?)\s*$/$1/   " abc " =>  "abc"  minimal match
 ```
 LIST = split REGEX, STRING;
 ```
-![](examples/regex/field_value_pairs.txt)
-![](examples/regex/parse_field_value_pairs.pl)
+![](examples/regex-perl/field_value_pairs.txt)
+![](examples/regex-perl/parse_field_value_pairs.pl)
 
 
 ## Fixing dates
@@ -208,10 +208,10 @@ In the input we get dates like this
 for both days and months: 2010-07-05
 
 
-![](examples/regex/date.pl)
-![](examples/regex/date.out)
-![](examples/regex/date2.out)
-![](examples/regex/date3.out)
+![](examples/regex-perl/date.pl)
+![](examples/regex-perl/date.out)
+![](examples/regex-perl/date2.out)
+![](examples/regex-perl/date3.out)
 
 
 
@@ -242,8 +242,8 @@ then create a hash where the keys are title, year, chapter, bitrate
 Use a single statement (with split) to achieve this.
 
 
-![](examples/regex/split_http_previous.pl)
-![](examples/regex/split_http.out)
+![](examples/regex-perl/split_http_previous.pl)
+![](examples/regex-perl/split_http.out)
 
 
 ## Exercise: basename/dirname
@@ -269,11 +269,11 @@ If they are equal then comparing the second number, etc...
 
 input:
 
-![](examples/regex/snmp.txt)
+![](examples/regex-perl/snmp.txt)
 
 output:
 
-![](examples/regex/snmp.out)
+![](examples/regex-perl/snmp.out)
 
 
 ## Exercise: parse hours log file and give report
@@ -283,7 +283,7 @@ output:
 The log file looks like this
 
 
-![](examples/regex/timelog.log)
+![](examples/regex-perl/timelog.log)
 
 ```
 the report should look something like this:
@@ -316,11 +316,11 @@ Given a filename, generate a 2 dimensional hash and then print it out with Data:
 Example ini file:
 
 
-![](examples/regex/inifile.ini)
+![](examples/regex-perl/inifile.ini)
 
 Result
 
-![](examples/regex/inifile.out)
+![](examples/regex-perl/inifile.out)
 
 
 ## Exercise: parse perl file
@@ -338,51 +338,51 @@ The user gives the name of the file on the command line.
 
 Input file:
 
-![](examples/regex/code_to_parse.pl)
+![](examples/regex-perl/code_to_parse.pl)
 
 Output:
 
-![](examples/regex/code_to_parse.out)
+![](examples/regex-perl/code_to_parse.out)
 
 
 
 ## Solution: Split CGI
 {id: solution-split-cgi}
 
-![](examples/regex/split_cgi.pl)
+![](examples/regex-perl/split_cgi.pl)
 
 
 
 ## Solution: filename/dirname
 {id: solution-basename-dirname}
 
-![](examples/regex/file_basename.pl)
+![](examples/regex-perl/file_basename.pl)
 
 
 ## Solution: Sort SNMP numbers
 {id: solution-sort-snmp-numbers}
 
-![](examples/regex/sort_snmp_numbers.pl)
+![](examples/regex-perl/sort_snmp_numbers.pl)
 
 
 
 ## Solution: parse hours log file and give report
 {id: solution-parse-log-file}
 
-![](examples/regex/timelog.pl)
+![](examples/regex-perl/timelog.pl)
 
 
 ## Solution: Parse ini file
 {id: solution-parse-ini-file}
 
-![](examples/regex/parse_ini.pl)
-![](examples/regex/parse_ini_with_config_tiny.pl)
+![](examples/regex-perl/parse_ini.pl)
+![](examples/regex-perl/parse_ini_with_config_tiny.pl)
 
 
 ## Solution: parse perl file
 {id: solution-parse-perl-file}
 
-![](examples/regex/print_variables.pl)
+![](examples/regex-perl/print_variables.pl)
 
 
 ## Regular Expressions Cheat sheet

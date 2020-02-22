@@ -119,7 +119,7 @@ And even
 $name    ~~ @people
 @people  ~~ $name
 $name    ~~ %phonebook
-$name    ~~ qr/regex/
+$name    ~~ qr/regex-perl/
 
 ~~ decides how to compare based on the values
 ```

@@ -123,7 +123,7 @@ Both Linux and Windows
 ## Find a string in a file
 {id: grep-like-perl}
 
-![](examples/regex/find_string.pl)
+![](examples/regex-perl/find_string.pl)
 
 
 ## Regex Examples: single character
@@ -366,7 +366,7 @@ Input: "--"
 {id: exercise-regular-expressions}
 
 
-Pick up a file with some text in it.  (e.g. examples/regex/text.txt ).
+Pick up a file with some text in it.  (e.g. examples/regex-perl/text.txt ).
 Write a script (one for each item) that prints out every line from the file
 that matches the requirement.
 You can use the script at the end of the page as a starting point but you will
@@ -395,7 +395,7 @@ have to change it!
 * Bonus: Print if the same word appears twice in the same line
 * Bonus: has a double character (e.g. 'oo')
 
-![](examples/regex/regex_exercise.pl)
+![](examples/regex-perl/regex_exercise.pl)
 
 
 ## Solutions: Regular expressions
