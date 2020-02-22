@@ -498,14 +498,14 @@ the command to run the playbook is a little different than the regular run comma
 
 output would be:
 
-[](examples/intro/output2.out)
+[](examples/aintro/output2.out)
 
 playing the playbook again wont do anything if the state of the services and file is already identical:
 
 ```
 yonit@ansible_server:~/ansible$ ansible-playbook nginx_install.yml
 ```
-[](examples/intro/output3.out)
+[](examples/aintro/output3.out)
 
 
 ## Adding vars to the play
@@ -515,7 +515,7 @@ Variables can be defines in many locations, and we can get them from the facts g
 
 lets add some content to the nginx servers, create a file called `index.html.tpl` with the content:
 
-[](examples/intro/index.html.tpl)
+[](examples/aintro/index.html.tpl)
 
 and run the playbook again:
 
@@ -523,14 +523,14 @@ and run the playbook again:
 yonit@ansible_server:~/ansible$ ansible-playbook nginx_install.yml
 ```
 
-[](examples/intro/output1.out)
+[](examples/aintro/output1.out)
 
 now lets see it:
 
 ```
 yonit@ansible_server:~/ansible$ curl http://ubuntu-2/
 ```
-[](examples/intro/output2.html)
+[](examples/aintro/output2.html)
 
 ## More vars
 {id: morevars}
@@ -549,14 +549,14 @@ src=index.html.j2
 
 and lets slightly change index.html.j2:
 
-[](examples/intro/index.html.j2)
+[](examples/aintro/index.html.j2)
 
 run the playbook:
 
 ```
 yonit@ansible_server:~/ansible$ ansible-playbook nginx_install.yml
 ```
-[](examples/intro/output4.out)
+[](examples/aintro/output4.out)
 
 and now:
 
@@ -564,7 +564,7 @@ and now:
 yonit@ansible_server:~/ansible$ curl http://ubuntu-2/
 ```
 
-[](examples/intro/output5.html)
+[](examples/aintro/output5.html)
 
 ## Roles
 {id: ansible-roles}
