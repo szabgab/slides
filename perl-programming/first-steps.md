@@ -77,7 +77,7 @@ See Perl One-liners.
 {i: \n}
 {i: sh-bang}
 
-![](examples/first/hello_world.pl)
+![](examples/firstperl/hello_world.pl)
 
 
 run it by typing
@@ -148,7 +148,7 @@ Why are use warnings and use strict so important even in small (&lt; 100 lines) 
 {id: first-script-with-main}
 {i: sub}
 
-![](examples/first/hello_world_main.pl)
+![](examples/firstperl/hello_world_main.pl)
 
 
 * Putting all your code in small(!) functions will make your code better.
@@ -159,7 +159,7 @@ Why are use warnings and use strict so important even in small (&lt; 100 lines) 
 {id: first-script-with-say}
 {i: say}
 
-![](examples/first/hello_world_say.pl)
+![](examples/firstperl/hello_world_say.pl)
 
 
 ## print vs. say
@@ -242,10 +242,10 @@ Web based: [perldoc](http://perldoc.perl.org/)
 {i: =head1}
 {i: =head2}
 
-![](examples/first/documentation.pl)
+![](examples/firstperl/documentation.pl)
 
-* `perl examples/first/documentation.pl`
-* `perldoc examples/first/documentation.pl`
+* `perl examples/firstperl/documentation.pl`
+* `perldoc examples/firstperl/documentation.pl`
 
 [POD - Plain Old Documentation](https://perlmaven.com/pod-plain-old-documentation-of-perl)
 

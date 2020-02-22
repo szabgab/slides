@@ -14,7 +14,7 @@ To send a signal use `kill SIG, LIST` (process IDs)
 
 For example: `kill 9, $pid;`
 
-![](examples/advanced/signal.pl)
+![](examples/advanced-perl/signal.pl)
 
 ```
 %SIG
@@ -33,19 +33,19 @@ $SIG{$name} = 'DEFAULT';            # to reset to the default behavior
 
 ## Catch Ctrl-C
 {id: catch-ctrl-c}
-![](examples/advanced/catch_ctr_c.pl)
+![](examples/advanced-perl/catch_ctr_c.pl)
 
 
 ## Catch signals
 {id: catch-signals}
-![](examples/advanced/catch_signals.pl)
+![](examples/advanced-perl/catch_signals.pl)
 
 
 ## Exercise: Catch ctrl-c and ask continue or terminate?
 {id: exercise-catch-ctrl-c}
 
 
-Take the `examples/advanced/catch_ctr_c.pl`
+Take the `examples/advanced-perl/catch_ctr_c.pl`
 and change it so when the user presses Ctrl-C the counting
 stops and the user is asked if she really wants
 to terminate the program. (y/n).
@@ -70,7 +70,7 @@ Make sure you do as little as possible in the actual signal handle.
 
 ## Solution: Catch ctrl-c and ask
 {id: solution-catch-ctrl-c}
-![](examples/advanced/catch_ctr_c_confirm.pl)
+![](examples/advanced-perl/catch_ctr_c_confirm.pl)
 
 See what happens if you don't set the SIG handler to IGNORE?
 
@@ -101,13 +101,13 @@ Example code that generates warning:
 
 Add code everywhere to avoid warnings:
 
-![](examples/advanced/code_with_warnings.pl)
+![](examples/advanced-perl/code_with_warnings.pl)
 
 
 
 ## Avoid warnings
 {id: avoid-warnings}
-![](examples/advanced/avoid_warnings.pl)
+![](examples/advanced-perl/avoid_warnings.pl)
 
 
 A lot of work. Cannot be done easily to an existing application.
@@ -118,7 +118,7 @@ A lot of work. Cannot be done easily to an existing application.
 ## Turn off warnings selectively and in a small scope
 {id: no-warnings}
 {i: no warnings}
-![](examples/advanced/no_warnings.pl)
+![](examples/advanced-perl/no_warnings.pl)
 
 ```
 See
@@ -132,14 +132,14 @@ perldoc perldiag       for a list of warnings and errors
 {id: catch-warnings}
 {i: $SIG}
 {i: __WARN__}
-![](examples/advanced/catch_warnings.pl)
+![](examples/advanced-perl/catch_warnings.pl)
 
 
 %SIG holds all the signals perl can deal with with the two special signal handles __WARN__ and __DIE__
 sub {} is an anonymous subroutine we will discuss later
 
 
-![](examples/advanced/catch_multiple_warnings.pl)
+![](examples/advanced-perl/catch_multiple_warnings.pl)
 
 
 ## splain and use diagnostics
@@ -148,7 +148,7 @@ sub {} is an anonymous subroutine we will discuss later
 {i: diagnostics}
 
 ```
-perl examples/advanced/code_with_warnings.pl 2> err.txt
+perl examples/advanced-perl/code_with_warnings.pl 2> err.txt
 splain err.txt
 ```
 
@@ -156,7 +156,7 @@ The output looks like this:
 
 ```
 Use of uninitialized value $total in addition (+) at
-	examples/advanced/use_diagnostics.pl line 15 (#1)
+	examples/advanced-perl/use_diagnostics.pl line 15 (#1)
     (W uninitialized) An undefined value was used as if it were already
     defined.  It was interpreted as a "" or a 0, but maybe it was a mistake.
     To suppress this warning assign a defined value to your variables.
@@ -198,7 +198,7 @@ use warnings FATAL => 'all';
 ```
 $SIG{__DIE__} = sub { logger('error', $_[0]) };
 ```
-![](examples/advanced/die_handler.pl)
+![](examples/advanced-perl/die_handler.pl)
 
 
 ## Always open files in the new way
@@ -209,11 +209,11 @@ $SIG{__DIE__} = sub { logger('error', $_[0]) };
 Old way:
 
 
-![](examples/advanced/open_file_old.pl)
+![](examples/advanced-perl/open_file_old.pl)
 
 Recommended way:
 
-![](examples/advanced/open_file_new.pl)
+![](examples/advanced-perl/open_file_new.pl)
 
 ```
 Security problems.
@@ -230,9 +230,9 @@ Being global, difficult to pass as parameter to functions.
 ```
 ARRAY = grep BLOCK LIST
 ```
-![](examples/advanced/grep_perl.pl)
-![](examples/advanced/grep_files.pl)
-![](examples/advanced/unix_grep.pl)
+![](examples/advanced-perl/grep_perl.pl)
+![](examples/advanced-perl/grep_files.pl)
+![](examples/advanced-perl/unix_grep.pl)
 
 
 ## map
@@ -242,7 +242,7 @@ ARRAY = grep BLOCK LIST
 ```
 ARRAY = map BLOCK LIST
 ```
-![](examples/advanced/map_perl.pl)
+![](examples/advanced-perl/map_perl.pl)
 
 
 ## Create a hash from an array using map
@@ -252,13 +252,13 @@ ARRAY = map BLOCK LIST
 We have a list of values. We would like to build a fast look-up table to check for existence.
 
 
-![](examples/advanced/map_create_hash.pl)
+![](examples/advanced-perl/map_create_hash.pl)
 
 
 ## Array slices
 {id: array-slices}
 {i: array slices}
-![](examples/advanced/array_slices.pl)
+![](examples/advanced-perl/array_slices.pl)
 
 A few more examples
 
@@ -273,25 +273,25 @@ print "@letters[split ' ', '3 5 7']\n"; # d f h
 
 ## Array slices on the fly
 {id: array-slices-on-the-fly}
-![](examples/advanced/array_slices_split.pl)
+![](examples/advanced-perl/array_slices_split.pl)
 
 
 ## Hash slices
 {id: hash-slices}
 {i: hash slices}
-![](examples/advanced/hash_slices.pl)
+![](examples/advanced-perl/hash_slices.pl)
 
 
 ## Hash slices in assignment
 {id: hash-slice-in-assignment}
-![](examples/advanced/hash_slices_assignment.pl)
+![](examples/advanced-perl/hash_slices_assignment.pl)
 
 
 ## splice
 {id: splice}
 {i: splice}
 
-![](examples/advanced/splice.pl)
+![](examples/advanced-perl/splice.pl)
 
 [Splice to slice and dice arrays in Perl](https://perlmaven.com/splice-to-slice-and-dice-arrays-in-perl)
 
@@ -306,7 +306,7 @@ print "@letters[split ' ', '3 5 7']\n"; # d f h
 See the behavior of `localtime()`.
 
 
-![](examples/advanced/localtime.pl)
+![](examples/advanced-perl/localtime.pl)
 
 
 How could we implement something similar?
@@ -329,13 +329,13 @@ undef  if it was called in a void context like f();
 true   if it was called in a list context like @x = f(); or print f();
 false  if it was called in scalar context like $x = f(); or if($f()) {...}
 ```
-![](examples/advanced/wantarray.pl)
+![](examples/advanced-perl/wantarray.pl)
 
 
 ## wantarray example
 {id: count-and-sum}
 
-![](examples/advanced/count_and_sum.pl)
+![](examples/advanced-perl/count_and_sum.pl)
 
 See also `Want` and `Contextual::Return` for even more options.
 
@@ -348,7 +348,7 @@ See also `Want` and `Contextual::Return` for even more options.
 You have a list of values with duplications, how can you create a unique list of the values?
 
 
-![](examples/advanced/unique_values.pl)
+![](examples/advanced-perl/unique_values.pl)
 
 
 ## Unique values - improved
@@ -358,7 +358,7 @@ You have a list of values with duplications, how can you create a unique list of
 But actually we don't need to do it in two steps:
 
 
-![](examples/advanced/unique_values_shorter.pl)
+![](examples/advanced-perl/unique_values_shorter.pl)
 
 
 ## Unique values using grep
@@ -368,7 +368,7 @@ But actually we don't need to do it in two steps:
 Of course there is an even shorter way to write it:
 
 
-![](examples/advanced/unique_values_grep.pl)
+![](examples/advanced-perl/unique_values_grep.pl)
 
 
 In this version you can even assign the values back to the original
@@ -386,7 +386,7 @@ array writing:
 {i: uniq}
 {i: distinct}
 {i: List::MoreUtils}
-![](examples/advanced/uniq.pl)
+![](examples/advanced-perl/uniq.pl)
 
 
 ## Slow sorting
@@ -394,7 +394,7 @@ array writing:
 
 The problem: bad performance
 
-![](examples/advanced/sort_files.pl)
+![](examples/advanced-perl/sort_files.pl)
 
 
 ## Speed up sorting
@@ -402,12 +402,12 @@ The problem: bad performance
 
 Reduce the number of slow calls from n**2 to n
 
-![](examples/advanced/schwartzian_transformation_detailed.pl)
+![](examples/advanced-perl/schwartzian_transformation_detailed.pl)
 
 
 ## Schwartzian transformation
 {id: schwartzian-transformation}
-![](examples/advanced/schwartzian_transformation.pl)
+![](examples/advanced-perl/schwartzian_transformation.pl)
 
 
 ## Compilation phases: BEGIN, CHECK, INIT, END
@@ -435,10 +435,10 @@ When running perl -c script.pl   both the BEGIN and CHECK blocks are executed.
 
 perldoc perlmod
 ```
-![](examples/advanced/begin_end.pl)
-![](examples/advanced/begin_end.out)
-![](examples/advanced/phases.pl)
-![](examples/advanced/phases.out)
+![](examples/advanced-perl/begin_end.pl)
+![](examples/advanced-perl/begin_end.out)
+![](examples/advanced-perl/phases.pl)
+![](examples/advanced-perl/phases.out)
 
 
 ## AUTOLOAD
@@ -451,7 +451,7 @@ If AUTOLOAD {} is defined and you call a function that does not exists, AUTOLOAD
 called instead.
 
 
-![](examples/advanced/autoload.pl)
+![](examples/advanced-perl/autoload.pl)
 
 ```
 Output:
@@ -464,7 +464,7 @@ hello world
 ## Static variable
 {id: static-variable}
 {i: static variable}
-![](examples/advanced/static.pl)
+![](examples/advanced-perl/static.pl)
 
 
 ## Closures
@@ -491,12 +491,12 @@ Create a script with a function called count() which is capable of
 maintaining several counters.
 
 
-![](examples/advanced/multi-counter-skeleton.pl)
+![](examples/advanced-perl/multi-counter-skeleton.pl)
 
 
 ## Solution: create counter
 {id: solution-create-counter}
-![](examples/advanced/multi-counter.pl)
+![](examples/advanced-perl/multi-counter.pl)
 
 
 ## Saved variable: local
@@ -507,19 +507,19 @@ maintaining several counters.
 Slurp mode used local $/ = undef;
 
 
-![](examples/advanced/local.pl)
-![](examples/advanced/local.out)
-![](examples/advanced/dumper_local.pl)
-![](examples/advanced/dumper_local.out)
+![](examples/advanced-perl/local.pl)
+![](examples/advanced-perl/local.out)
+![](examples/advanced-perl/dumper_local.pl)
+![](examples/advanced-perl/dumper_local.out)
 
 
 ## autodie
 {id: autodie}
 {i: autodie}
-![](examples/advanced/autodie.pl)
+![](examples/advanced-perl/autodie.pl)
 
 
-Can't open 'data.txt' for reading: 'No such file or directory' at examples/advanced/autodie.pl line 7
+Can't open 'data.txt' for reading: 'No such file or directory' at examples/advanced-perl/autodie.pl line 7
 
 
 
@@ -568,20 +568,20 @@ perltidy
 {id: caller}
 {i: caller}
 
-![](examples/advanced/caller.pl)
+![](examples/advanced-perl/caller.pl)
 
 
 ## Log::Dispatch
 {id: log-dispatch}
 {i: Log::Dispatch}
-![](examples/advanced/log_dispatch.pl)
+![](examples/advanced-perl/log_dispatch.pl)
 
 
 ## Log::Log4perl easy
 {id: log4perl-easy}
 {i: Log::Log4perl}
-![](examples/advanced/log4perl_easy.pl)
-![](examples/advanced/My/EasyApp.pm)
+![](examples/advanced-perl/log4perl_easy.pl)
+![](examples/advanced-perl/My/EasyApp.pm)
 
 ```
 2014/08/24 08:02:52 This is fatal
@@ -595,7 +595,7 @@ perltidy
 {id: exercise-log-dispatch}
 
 
-Take the examples/advanced/log_dispatch.pl
+Take the examples/advanced-perl/log_dispatch.pl
 and change it so only warnings are printed to the screen.
 debug messages are printed to a log file.
 The name of the file should be in the format YYYY-MM-DD.log
@@ -612,7 +612,7 @@ allows you to provide a callback function.
 
 ## Solution Log::Dispatch
 {id: solution-log-dispatch}
-![](examples/advanced/log_dispatch_extended.pl)
+![](examples/advanced-perl/log_dispatch_extended.pl)
 
 
 
