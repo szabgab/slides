@@ -31,7 +31,7 @@ javac 1.8.0_60
 {id: java-hello-world}
 {i: System.out.println}
 
-![](examples/HelloWorld.java)
+![](examples/java/HelloWorld.java)
 
 ```
 $ javac HelloWorld.java       # Compiles the file and creates HelloWorld.class
@@ -57,14 +57,14 @@ true, false - boolean
 "abc".getClass() works and prints class java.lang.String, but does not work on any of the other data types
 ```
 
-![](examples/CheckDataTypes.java)
+![](examples/java/CheckDataTypes.java)
 
 ## Java Variable declaration
 {id: java-variable-declaration}
 
 With and without initialization.
 
-![](examples/Variables.java)
+![](examples/java/Variables.java)
 
 
 
@@ -81,57 +81,57 @@ With and without initialization.
 ## Java prompt - read from STDIN
 {id: java-prompt}
 
-![](examples/Prompt.java)
+![](examples/java/Prompt.java)
 
 
 ## Java command line arguments
 {id: java-command-line-arguments}
 
-![](examples/CmdLineArgs.java)
+![](examples/java/CmdLineArgs.java)
 
 
 ## Java for-loop
 {id: java-for-loop}
 {i: for}
 
-![](examples/ForLoop.java)
+![](examples/java/ForLoop.java)
 
 
 ## Java while-loop
 {id: java-while-loop}
 {i: while}
 
-![](examples/WhileLoop.java)
+![](examples/java/WhileLoop.java)
 
 
 ## Convert string to number
 {id: convert-string-to-number}
 
-![](examples/Convert.java)
+![](examples/java/Convert.java)
 
 
 ## Add Command line values
 {id: java-add-command-line-values}
 
-![](examples/AddCmdLineArgs.java)
+![](examples/java/AddCmdLineArgs.java)
 
 
 ## Add Command line numbers
 {id: java-add-command-line-numbers}
 
-![](examples/AddCmdLineNumbers.java)
+![](examples/java/AddCmdLineNumbers.java)
 
 
 ## Use class
 {id: java-use-class-in-same-file}
 
-![](examples/GreetingsA.java)
+![](examples/java/GreetingsA.java)
 
 
 ## Method signature
 {id: java-method-signature}
 
-![](examples/GreetingsB.java)
+![](examples/java/GreetingsB.java)
 
 
 
@@ -150,28 +150,28 @@ rm -f *.class; javac Calculator.java UseCalc.java ; java UseCalc
 ## Calc
 {id: calc}
 
-![](examples/Calc.java)
+![](examples/java/Calc.java)
 
 ## Cat
 {id: cat}
 
-![](examples/Cat.java)
+![](examples/java/Cat.java)
 
 ## Grep
 {id: grep}
 
-![](examples/Grep.java)
+![](examples/java/Grep.java)
 
 ## Read file
 {id: read-file}
 
-![](examples/ReadFile.java)
+![](examples/java/ReadFile.java)
 
 ## Read line
 {id: read-line}
 
-![](examples/ReadLine.java)
-![](examples/ReadLines.java)
+![](examples/java/ReadLine.java)
+![](examples/java/ReadLines.java)
 
 * [Character stream](https://docs.oracle.com/javase/tutorial/essential/io/charstreams.html)
 * [read bytestream](https://docs.oracle.com/javase/tutorial/essential/io/bytestreams.html)
@@ -181,18 +181,18 @@ rm -f *.class; javac Calculator.java UseCalc.java ; java UseCalc
 ## Regex
 {id: regex}
 
-![](examples/Regex.java)
+![](examples/java/Regex.java)
 
 ## Regex Test harness
 {id: regex-test-harness}
 
-![](examples/RegexTestHarness.java)
+![](examples/java/RegexTestHarness.java)
 
 ## Split a string
 {id: split-a-string}
 
 {i: StringTokenizer}
-![](examples/SplitString.java)
+![](examples/java/SplitString.java)
 
 ## Java: Run external program
 {id: run-external-program}
@@ -202,13 +202,13 @@ rm -f *.class; javac Calculator.java UseCalc.java ; java UseCalc
 {i: exec}
 
 
-![](examples/Runls.java)
+![](examples/java/Runls.java)
 
 
 ## Compile and Run in shell
 {id: compule-and-run-in-shell}
 
-![](examples/run.sh)
+![](examples/java/run.sh)
 
 
 ## Static or Class attribute
