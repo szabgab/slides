@@ -82,7 +82,8 @@ Evaluating modules, getting information about them
 
 ## Days passed
 {id: datetime-days-passed}
-![](examples/days_passed.pl)
+
+![](examples/root/days_passed.pl)
 
 
 

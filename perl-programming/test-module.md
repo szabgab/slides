@@ -574,7 +574,8 @@ other modules in the Test::* namespace on CPAN we are going to see later.
 The harness.pl script is just a sample usage of the Test::Harness module.
 It accepts one or more test files, runs them and analyzes the output they generated.
 {/aside}
-![](examples/harness.pl)
+
+![](examples/root/harness.pl)
 
 
 Run the previous test file using Test::Harness
