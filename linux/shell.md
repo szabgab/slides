@@ -183,9 +183,8 @@ $ TZ=EST date +"%d %H:%M"
 
 ## First day of the month
 {id: date-in-script}
-![](examples/first_day.sh)
 
-
+![](examples/linux/first_day.sh)
 
 
 ## exit and exit code

@@ -252,8 +252,8 @@ $ updatedb
 
 ## Comparing files using diff
 {id: diff}
-![](examples/a.txt)
-![](examples/b.txt)
+![](examples/linux/a.txt)
+![](examples/linux/b.txt)
 
 ```
 diff a.txt b.txt

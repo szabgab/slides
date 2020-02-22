@@ -69,9 +69,9 @@ cut -b   files   (bytes)
 
 ```
 $ who
-foo      console  Apr  8 18:57 
-bar      ttys000  Apr  9 07:42 
-moose    ttys001  Apr  8 18:57 
+foo      console  Apr  8 18:57
+bar      ttys000  Apr  9 07:42
+moose    ttys001  Apr  8 18:57
 ```
 
 
@@ -86,6 +86,7 @@ moose
 ## sort
 {id: sort}
 {i: sort}
+
 ![](examples/intro/sort.txt)
 
 {aside}
@@ -106,6 +107,7 @@ It will collapse the adjacent equal values.
 If all the equal values are adjacent then it will really create a unique list.
 Sorting will reorder the original list so that the equal values will be next to each other.
 {/aside}
+
 ![](examples/intro/uniq.txt)
 
 
@@ -134,6 +136,7 @@ Sorting will reorder the original list so that the equal values will be next to 
 -A n   show n lines after the match.
 -C n   show n lines both before and after the match (up to 2*n+1 lines) (context).
 ```
+
 ![](examples/intro/grep.txt)
 
 
@@ -167,6 +170,7 @@ Counting lines, words, characters
 ## tr - transcribe
 {id: tr}
 {i: tr}
+
 ![](examples/intro/tr.txt)
 
 
@@ -228,7 +232,8 @@ tar czf file.tar.gz  dir/
 A Bash script that will generate a random number.
 If it is bigger that 10 then print the number.
 {/aside}
-![](examples/generate_random_output.sh)
+
+![](examples/linux/generate_random_output.sh)
 
 
 ## Generate random log
@@ -238,7 +243,7 @@ If it is bigger that 10 then print the number.
 
 Change the script to print one of these every tenth of a second.
 {/aside}
-![](examples/generate_random_log.sh)
+![](examples/linux/generate_random_log.sh)
 
 ```
 $ ./generate_random_log.sh
@@ -282,7 +287,7 @@ Use the following script to create a subdirectory called 'file_conent' and in it
 called 'data.txt'. Once we have the file, replace the numbers with their duplication so 1 will become 11.
 
 
-![](examples/file_content.sh)
+![](examples/linux/file_content.sh)
 
 
 

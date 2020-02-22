@@ -89,6 +89,7 @@ $ cat INPUT_FILE | filter
 Both redirects the output to a file and let's it through to the screen or to a pipe.
 **tee -a** would append to the file.
 {/aside}
+
 ![](examples/intro/tee.txt)
 
 
@@ -110,9 +111,5 @@ Both redirects the output to a file and let's it through to the screen or to a p
 * If you found the HTML::Strip perl module, then the script bellow will do the work using that module.
 * Save the home page of IMDB, strip the html and then count how many numbers are in the file.
 
-![](examples/htmlstrip.pl)
-
-
-
-
+![](examples/linux/htmlstrip.pl)
 

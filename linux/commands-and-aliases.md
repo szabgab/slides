@@ -143,11 +143,11 @@ $ alias tweet=echo
 $ tweet hello
 hello
 ```
-![](examples/tweet.sh)
+![](examples/linux/tweet.sh)
 
 ```
-$ ./examples/tweet.sh 
-./examples/tweet.sh: 2: ./examples/tweet.sh: tweet: not found
+$ ./examples/linux/tweet.sh 
+./examples/linux/tweet.sh: 2: ./examples/linux/tweet.sh: tweet: not found
 ```
 
 

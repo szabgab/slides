@@ -100,7 +100,8 @@ $ man 7 signal
 
 ## Refuse to die
 {id: refuse-to-die}
-![](examples/refuse_to_die.pl)
+
+![](examples/linux/refuse_to_die.pl)
 
 * Run the above program
 * Press **Ctrl-C**
@@ -137,12 +138,12 @@ $ ps -ef | grep perl
 
 In one window launch htop and filter to 'perl'. In another window run this script.
 
-![](examples/create_zombie.pl)
+![](examples/linux/create_zombie.pl)
 
 
 ## Reaping child processes demonstration
 {id: reaping-child-process-demonstration}
-![](examples/reap_child_process.pl)
+![](examples/linux/reap_child_process.pl)
 
 
 ## Stopped process demonstration
@@ -165,7 +166,7 @@ In one window launch htop and filter to 'perl'. In another window run this scrip
 {id: open-files}
 {i: lsof}
 
-In one window run this perl script as user 'foo': **perl examples/open_file.pl README**. In another window 
+In one window run this perl script as user 'foo': **perl examples/linux/open_file.pl README**. In another window
 
 
 ```
@@ -183,7 +184,7 @@ $ sudo less /proc/32242/cmdline
 {id: pwdx}
 
 ```
-$ sudo pwdx PID             
+$ sudo pwdx PID
 ```
 
 

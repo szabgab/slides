@@ -123,7 +123,7 @@ $ umask    to show the current value
 $ touch file1
 $ ls -l file1
 
-$ umask 0022  
+$ umask 0022
 $ touch file2
 $ ls -l file2
 ```
@@ -134,7 +134,8 @@ $ ls -l file2
 {id: shell-script}
 {i: sh-bang}
 {i: chmod +x}
-![](examples/hello_world.sh)
+
+![](examples/linux/hello_world.sh)
 
 ```
 $ chmod u+x hello_world.sh
@@ -144,7 +145,8 @@ $ ./hello_world.sh
 
 ## Perl
 {id: perl}
-![](examples/hello_world.pl)
+
+![](examples/linux/hello_world.pl)
 
 ```
 $ perl hello_world.pl
@@ -155,7 +157,8 @@ $ ./hello_world.pl
 
 ## Python
 {id: python}
-![](examples/hello_world.py)
+
+![](examples/linux/hello_world.py)
 
 ```
 $ python hello_world.py

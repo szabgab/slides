@@ -118,13 +118,15 @@ Total:        4.9G       3.9G       995M
 ## vmstat
 {id: vmstat}
 {i: vmstat}
-![](examples/vmstat.txt)
+
+![](examples/linux/vmstat.txt)
 
 
 ## /proc/meminfo
 {id: proc-meminfo}
 {i: /proc/meminfo}
-![](examples/meminfo.txt)
+
+![](examples/linux/meminfo.txt)
 
 
 ## Exercise: System information

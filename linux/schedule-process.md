@@ -49,7 +49,8 @@ $ crontab ~/cron.txt
 
 ## crontab examples
 {id: crontab-examples}
-![](examples/crontab.txt)
+
+![](examples/linux/crontab.txt)
 
 
 ## Schedule using at or batch

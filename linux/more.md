@@ -14,10 +14,11 @@
 ## Process CSV file
 {id: process-csv-file}
 {i: perl}
-![](examples/process_csv_file.csv)
+
+![](examples/linux/process_csv_file.csv)
 
 ```
-perl -n -a -F';' -E '$x += $F[2]; END { say $x }' examples/process_csv_file.csv
+perl -n -a -F';' -E '$x += $F[2]; END { say $x }' examples/linux/process_csv_file.csv
 ```
 
 
