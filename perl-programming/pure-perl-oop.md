@@ -31,8 +31,8 @@ value.
 If we print out the object itself, we'll see it is a reference to a HASH, but we will also see it is not just any HASH
 reference. Somehow its representation includes the 'Person' word.
 {/aside}
-![](examples/oop/person00/script/person.pl)
-![](examples/oop/person00/lib/Person.pm)
+![](examples/perloop/person00/script/person.pl)
+![](examples/perloop/person00/lib/Person.pm)
 
 {aside}
 
@@ -78,8 +78,8 @@ previously assigned value. We can call this 'getter'.
 As you can see in this example, the 'setter' and the 'getter' are the same method. They are called
 with the same arrow-notation as we called the new() constructor.
 {/aside}
-![](examples/oop/person005/script/person.pl)
-![](examples/oop/person005/lib/Person.pm)
+![](examples/perloop/person005/script/person.pl)
+![](examples/perloop/person005/lib/Person.pm)
 
 {aside}
 
@@ -103,8 +103,8 @@ The key in the hash is the name of the attribute and the respective value in the
 
 ## Attribute in Constructor
 {id: oop-person-01}
-![](examples/oop/person01/script/person.pl)
-![](examples/oop/person01/lib/Person.pm)
+![](examples/perloop/person01/script/person.pl)
+![](examples/perloop/person01/lib/Person.pm)
 
 
 ## Attribute Type constraint
@@ -112,8 +112,8 @@ The key in the hash is the name of the attribute and the respective value in the
 
 Checking the value of the attributes.
 
-![](examples/oop/person02/script/person.pl)
-![](examples/oop/person02/lib/Person.pm)
+![](examples/perloop/person02/script/person.pl)
+![](examples/perloop/person02/lib/Person.pm)
 
 
 ## Attribute Type class
@@ -121,8 +121,8 @@ Checking the value of the attributes.
 
 Checking if the attribute belongs to a certain class.
 
-![](examples/oop/person03/script/person.pl)
-![](examples/oop/person03/lib/Person.pm)
+![](examples/perloop/person03/script/person.pl)
+![](examples/perloop/person03/lib/Person.pm)
 
 
 ## Attribute - create your own subtype
@@ -131,8 +131,8 @@ Checking if the attribute belongs to a certain class.
 
 The "sex" field is either "m" or "f".
 
-![](examples/oop/person04/script/person.pl)
-![](examples/oop/person04/lib/Person.pm)
+![](examples/perloop/person04/script/person.pl)
+![](examples/perloop/person04/lib/Person.pm)
 
 
 ## Attribute - coercion
@@ -141,14 +141,14 @@ The "sex" field is either "m" or "f".
 
 Accept both "male" and "female" in addition to "m" and "f", but always keep as "m" or "f".
 
-![](examples/oop/person05/script/person.pl)
-![](examples/oop/person05/lib/Person.pm)
+![](examples/perloop/person05/script/person.pl)
+![](examples/perloop/person05/lib/Person.pm)
 
 
 ## Read only attributes
 {id: oop-person-06}
-![](examples/oop/person06/script/person.pl)
-![](examples/oop/person06/lib/Person.pm)
+![](examples/perloop/person06/script/person.pl)
+![](examples/perloop/person06/lib/Person.pm)
 
 
 The read-only getter could actually throw an
@@ -163,33 +163,33 @@ exception when it is used as a setter.
 
 There is no encapsulation.
 
-![](examples/oop/person06/script/encapsulation.pl)
+![](examples/perloop/person06/script/encapsulation.pl)
 
 
 ## Method call
 {id: oop-method-call}
-![](examples/oop/person07/lib/Person.pm)
-![](examples/oop/person07/script/wedding.pl)
+![](examples/perloop/person07/lib/Person.pm)
+![](examples/perloop/person07/script/wedding.pl)
 
 
 ## Inheritance
 {id: oop-inheritance-simple}
 {i: inheritance}
-![](examples/oop/employee01/script/person.pl)
-![](examples/oop/employee01/lib/Person.pm)
-![](examples/oop/employee01/lib/Employee.pm)
+![](examples/perloop/employee01/script/person.pl)
+![](examples/perloop/employee01/lib/Person.pm)
+![](examples/perloop/employee01/lib/Employee.pm)
 
 
 ## Inheritance
 {id: oop-inheritance}
-![](examples/oop/employee02/script/person.pl)
-![](examples/oop/employee02/lib/Employee.pm)
+![](examples/perloop/employee02/script/person.pl)
+![](examples/perloop/employee02/lib/Employee.pm)
 
 
 ## Inheritance
 {id: oop-inheritance-super}
-![](examples/oop/employee03/script/person.pl)
-![](examples/oop/employee03/lib/Employee.pm)
+![](examples/perloop/employee03/script/person.pl)
+![](examples/perloop/employee03/lib/Employee.pm)
 
 
 ## Polymorhism
@@ -216,32 +216,32 @@ our @ISA = qw(A B);
 ## Singleton
 {id: oop-singleton}
 {i: singleton}
-![](examples/oop/config/lib/Conf.pm)
-![](examples/oop/config/script/code.pl)
-![](examples/oop/config/script/too_early.pl)
+![](examples/perloop/config/lib/Conf.pm)
+![](examples/perloop/config/script/code.pl)
+![](examples/perloop/config/script/too_early.pl)
 
 
 ## Destructor
 {id: oop-destructor}
 {i: destructor}
 {i: DESTROY}
-![](examples/oop/person10/script/person.pl)
-![](examples/oop/person10/lib/Person.pm)
+![](examples/perloop/person10/script/person.pl)
+![](examples/perloop/person10/lib/Person.pm)
 
 
 
 ## Operator overloading
 {id: oop-operator-overloading}
 {i: overload}
-![](examples/oop/person08/script/person.pl)
-![](examples/oop/person08/lib/Person.pm)
-![](examples/oop/person08/lib/GrownUp.pm)
+![](examples/perloop/person08/script/person.pl)
+![](examples/perloop/person08/lib/Person.pm)
+![](examples/perloop/person08/lib/GrownUp.pm)
 
 
 ## Class methods and Instance methods
 {id: oop-class-methods}
-![](examples/oop/person09/script/person.pl)
-![](examples/oop/person09/lib/Person.pm)
+![](examples/perloop/person09/script/person.pl)
+![](examples/perloop/person09/lib/Person.pm)
 
 
 
