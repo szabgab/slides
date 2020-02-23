@@ -113,7 +113,7 @@ def main():
     root = os.path.dirname( os.path.dirname( os.path.abspath(__file__)))
     errors = 0
     errors += check_python(root)
-    #errors += generate_book()
+    errors += generate_book()
     end = time.time()
     print(f"Elapsed time: {end-start}")
     exit(errors)
