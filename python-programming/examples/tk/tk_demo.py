@@ -156,7 +156,6 @@ action_button.pack()
 app.mainloop()
 
 # TODO: key binding?
-# TODO: Combo box
 # TODO: Option Menu
 # TODO: Scale
 # TODO: Progressbar (after the deleting hard disk pop-up)
