@@ -16,6 +16,41 @@ def get_arguments():
     parser.add_argument('--target', help='Optional target directory. If not given automatically set.')
     return parser.parse_args()
 
+
+def copy_examples(slides_path, resources):
+    src_examples = os.path.join(slides_path, 'examples')
+    if os.path.exists(src_examples):
+        for example in os.listdir(src_examples):
+            #print(example)
+            example_path = os.path.join(src_examples, example)
+            if os.path.islink(example_path):
+                logging.debug(f"Skipping symlink {example_path}")
+            elif os.path.isdir(example_path):
+                logging.debug(f"Copy dir {example_path}")
+                target_dir = os.path.join(resources, 'examples', example)
+                if os.path.exists(target_dir):
+                    exit(f"Directory {target_dir} already exists. Are there two subjects with same examples subdir?")
+                shutil.copytree(example_path, target_dir)
+            else:
+                exit(f"Could not handle: '{example_path}'. All examples are expected to be in subdirectories.")
+                #logging.error(f"{example_path}")
+                # TODO maybe I should not even handle this just let the code blow up so I will be forced to fix
+                # this
+
+
+def copy_images(slides_path, resources):
+    src_img = os.path.join(slides_path, 'img')
+    img_dir = os.path.join(resources, 'img')
+    if not os.path.exists(img_dir):
+        os.mkdir(img_dir)
+    if os.path.exists(src_img):
+        for img in os.listdir(src_img):
+            img_path = os.path.join(src_img, img)
+            if os.path.isfile(img_path):
+                logging.debug(f"Copy image: {img_path}")
+                shutil.copy(img_path, os.path.join(resources, 'img', img))
+
+
 def process_slides(source, target, name, config_file=None):
     logging.info(f"Processing slides of {name}")
     book = []
@@ -28,43 +63,18 @@ def process_slides(source, target, name, config_file=None):
     if config_file is not None:
         with open(os.path.join(slides_path, config_file)) as fh:
             config_data = json.load(fh)
-            things = config_data['files']
+            md_files = config_data['files']
     else:
-        things = list(filter(lambda thing: thing.endswith('.md') and thing != 'README.md', os.listdir(slides_path)))
-    #print(things)
-    for thing in things:
-        thing_path = os.path.join(slides_path, thing)
-        new_filename = f"{name}-{thing}"
-        shutil.copy(thing_path, os.path.join(target, new_filename))
+        md_files = list(filter(lambda thing: thing.endswith('.md') and thing != 'README.md', os.listdir(slides_path)))
+    #print(md_file)
+    for md_file in md_files:
+        md_file_path = os.path.join(slides_path, md_file)
+        new_filename = f"{name}-{md_file}"
+        shutil.copy(md_file_path, os.path.join(target, new_filename))
         book.append(new_filename)
 
-    src_examples = os.path.join(slides_path, 'examples')
-    if os.path.exists(src_examples):
-        for example in os.listdir(src_examples):
-            #print(example)
-            example_path = os.path.join(src_examples, example)
-            if os.path.islink(example_path):
-                logging.debug(f"Skipping symlink {example_path}")
-            elif os.path.isdir(example_path):
-                logging.debug(f"Copy dir {example_path}")
-                shutil.copytree(example_path, os.path.join(resources, 'examples', example))
-            else:
-                exit(f"Could not handle: {example_path}")
-                #logging.error(f"{example_path}")
-                # TODO maybe I should not even handle this just let the code blow up so I will be forced to fix
-                # this
-
-    src_img = os.path.join(slides_path, 'img')
-    img_dir = os.path.join(resources, 'img')
-    if not os.path.exists(img_dir):
-        os.mkdir(img_dir)
-    if os.path.exists(src_img):
-        for img in os.listdir(src_img):
-            img_path = os.path.join(src_img, img)
-            if os.path.isfile(img_path):
-                logging.debug(f"Copy image: {img_path}")
-                shutil.copy(img_path, os.path.join(resources, 'img', img))
-
+    copy_examples(slides_path, resources)
+    copy_images(slides_path, resources)
 
     return book
 
