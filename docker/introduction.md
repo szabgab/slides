@@ -249,6 +249,8 @@ Create a file inside the container and then leave the container. It is stopped n
 
 ## Copy file from stopped container
 {id: copy-file-from-stopped-container}
+{i: copy}
+{i: cp}
 
 ```
 docker container cp CONTAINER_NAME:FILE .
@@ -267,6 +269,7 @@ There are two ways to create a Docker image on your computer:
 
 ## Create image from container
 {id: create-image-from-container}
+{i: commit}
 
 ```
 docker container commit CONTAINER IMAGE
@@ -936,5 +939,40 @@ Using [https://hub.docker.com/r/tiangolo/uwsgi-nginx-flask/](https://hub.docker.
 docker build -t myapp .
 docker run -it --rm -p5001:80 myapp
 ```
+
+## Run container as a daemon
+{id: run-container-as-a-daemon}
+{i: inspect}
+{i: logs}
+
+```
+docker run -d --rm busybox sleep 30
+
+docker run --name my_name busybox sleep 100
+
+docker inspect CONTAINER_ID
+docker logs CONTAINER_ID
+```
+
+## Inspect low-level information about Docker
+{id: inspect-docker-container}
+{i: inspect}
+
+```
+docker inspect CONTAINER_ID
+```
+
+* [inspect](https://docs.docker.com/engine/reference/commandline/inspect/)
+
+
+## Copy console output of container (logs)
+{id: copy-console-of-container}
+{i: logs}
+
+```
+docker logs CONTAINER_ID
+```
+
+* [logs](https://docs.docker.com/engine/reference/commandline/logs/)
 
 

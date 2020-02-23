@@ -26,18 +26,6 @@ docker pull
 Create an image in the repository (from github)
 
 
-## Run container as a daemon
-{id: run-container-as-a-daemon}
-
-```
-docker run -d --rm busybox sleep 30
-
-docker run --name my_name busybox sleep 100
-
-docker inspect CONTAINER_ID
-docker logs CONTAINER_ID
-```
-
 
 That's really nice, but once we close the container we lose our changes.
 When we run again we need to start from scratch.
