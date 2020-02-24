@@ -162,7 +162,7 @@ nano
 ```
 
 ## Ubuntu Installing packages
-{id: Ubuntu-installing package}
+{id: ubuntu-installing-package}
 
 ```
 htop
