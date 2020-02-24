@@ -19,6 +19,7 @@ javascript-programming/javascript.json,javascript-programming
 jenkins/jenkins.json,jenkins
 jenkins-intro/jenkins.json,jenkins-intro
 linux/linux.json,linux
+linux-docker/linux.json,linux-docker
 linux-intro/linux.json,linux-intro
 mobile/mobile.json,mobile
 mojolicious/mojolicious.json,mojolicious
