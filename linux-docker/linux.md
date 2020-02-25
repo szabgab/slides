@@ -37,6 +37,7 @@ Install [Docker](https://www.docker.com/)
 
 * [Post Install](https://docs.docker.com/install/linux/linux-postinstall/)
 
+* For older Windows and Mac [Docker Toolbox ](https://docs.docker.com/toolbox/toolbox_install_windows/)
 
 ## Docker on Windows
 {id: docker-on-windows}
