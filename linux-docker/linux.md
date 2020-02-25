@@ -127,7 +127,27 @@ docker rmi ubuntu:19.10
 * Repeate the above (except that don't remove the image)
 * Make sure you have a running system
 
+## root
+{id: root}
 
+* Several meaning
+
+* The name of the superuser or administrator
+* The name we use for the common ancestor of the filesystem
+* The name of the home-directory of user 'root'
+
+## Linux Users
+{id: linux-users}
+
+* users (root and other users)
+* /home directory
+* su
+* sudo
+
+```
+ls /root
+ls /home/
+```
 
 ## Linux File system - directories
 {id: linux-file-system-directories}
@@ -149,6 +169,7 @@ cd dTAB
 pwd
 ```
 
+* Create a new alias
 
 ## Linux File system - files
 {id: linux-file-system-files}
@@ -181,6 +202,19 @@ yum install htop
 htop
 ```
 
+## Bashrc
+{id: bashrc}
+
+* The configuration file of our shell
+
+```
+/root/.bashrc
+~/.bashrc
+```
+
+* Configure a new alias
+
+
 ## Exercise 2
 {id: exercise-2}
 
@@ -189,7 +223,18 @@ htop
 * Create a few files with echo, append to the files
 * Install nano
 * Edit the files
+* Create a new alias for the current shell (eg. lx to do something)
+* Add it to the .bashrc and check if it is persistant
 
+## which type
+{id: which-type}
+
+```
+which ls
+which python
+which ll
+type ll
+```
 
 ## grep
 {id: grep}
@@ -210,5 +255,42 @@ find .
 
 ```
 find . | grep h
+```
+
+## du df
+{id: du-df}
+
+```
+du -h
+df -h
+```
+
+## History
+{id: history}
+
+```
+history
+```
+
+## wc
+{id: wc}
+
+```
+wc
+```
+
+## clear screen
+{id: clear}
+
+```
+clear
+Ctrl-L
+```
+
+## printenv
+{id: printenv}
+
+```
+printenv
 ```
 
