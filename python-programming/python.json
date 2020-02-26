@@ -89,6 +89,7 @@
         "java.md",
         "jython.md",
 
+        "pil.md",
         "faq.md",
         "appendix.md",
         "other.md"
