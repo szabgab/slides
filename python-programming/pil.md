@@ -7,6 +7,8 @@
 {i: Pillow}
 
 * [Pillow](https://pillow.readthedocs.io/)
+* [Pillow on PyPI](https://pypi.org/project/Pillow/)
+* [GitHub](https://github.com/python-pillow/Pillow)
 
 ```
 pip install pillow
@@ -42,6 +44,8 @@ pip install pillow
 ## Resize an existing Image
 {id: resize-existing-image}
 
+![](examples/pil/resize_image.py)
+
 ## Crop an existing Image
 {id: crop-existing-image}
 
@@ -55,3 +59,61 @@ pip install pillow
 * Put the loaded image on the background
 * Save the combined image
 
+## Rotated text
+{id: rotated-text}
+
+![](examples/pil/rotated_text.py)
+
+
+## Draw a triangle
+{id: draw-a-triangle}
+
+![](examples/pil/draw_triangle.py)
+
+## Draw a triangle and write text in it
+{id: draw-a-triangle-and-write-text}
+
+![](examples/pil/draw_triangle_and_write_in_it.py)
+
+## Draw a triangle and write rotated text in it
+{id: draw-a-triangle-and-write-rotated-text}
+
+![](examples/pil/draw_triangle_and_write_in_it_rotated.py)
+
+
+## Draw a rectangular
+{id: draw-a-rectangular}
+
+![](examples/pil/draw_rectangual.py)
+
+## Draw a rectangle
+{id: draw-a-rectangle}
+
+![](examples/pil/draw_rectangle.py)
+
+## Draw circle
+{id: draw-circle}
+
+![](examples/pil/draw_circle.py)
+
+## Draw heart
+{id: draw-heart}
+
+![](examples/pil/draw_heart.py)
+
+Some samples, including this one, originally by [Nadia Alramli](http://nadiana.com/)
+
+## Rectangle with rounded corners
+{id: rectangle-with-rounded-corners}
+
+![](examples/pil/draw_rectangle_with_rounded_corners.py)
+
+
+## TODO
+{id: pil-todo}
+
+* Make the background color change from top to bottom
+* Add straight lines to existing images
+* Blur image
+* Add rectangular to area on existing image
+* Draw other simple images
