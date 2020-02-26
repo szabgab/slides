@@ -177,6 +177,11 @@ $ python context_cd.py /opt
 
 ## tempdir context manager
 {id: tempdir-context-manager}
+{i: contextlib}
+{i: contextmanager}
+{i: tempfile}
+{i: mkdtemp}
+
 ![](examples/advanced/mytmpdir.py)
 ![](examples/advanced/use_mytmpdir.py)
 ![](examples/advanced/use_mytmpdir.out)
