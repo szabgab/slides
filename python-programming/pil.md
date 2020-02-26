@@ -35,11 +35,29 @@ pip install pillow
 
 ![](examples/pil/font_for_text_image.py)
 
+## Font directories
+{id: font-directories}
+
+```
+Linux: /usr/share/fonts/
+Max OS: /Library/Fonts/
+Windows: C:\Windows\fonts
+```
+
 ## Get size of an Image
 {id: get-image-size}
 
 ![](examples/pil/get_image_size.py)
 
+## Get size of text
+{id: get-size-of-text}
+
+```
+    font = ImageFont.truetype(
+        'path/to/font.ttf', size
+    )
+    size = font.getsize(text)
+```
 
 ## Resize an existing Image
 {id: resize-existing-image}
@@ -108,10 +126,12 @@ Some samples, including this one, originally by [Nadia Alramli](http://nadiana.c
 
 ![](examples/pil/draw_rectangle_with_rounded_corners.py)
 
+Some samples, including this one, originally by [Nadia Alramli](http://nadiana.com/)
 
 ## TODO
 {id: pil-todo}
 
+http://web.archive.org/web/20130115175340/http://nadiana.com/pil-tutorial-basic-advanced-drawing
 * Make the background color change from top to bottom
 * Add straight lines to existing images
 * Blur image
