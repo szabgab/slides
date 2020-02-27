@@ -4,7 +4,7 @@ img = Image.new(mode='RGB', size=(400, 200), color='#eb8634')
 
 font = ImageFont.truetype('Pillow/Tests/fonts/FreeSansBold.ttf', 30)
 
-text_layer = Image.new('L', (300, 50))
+text_layer = Image.new('L', (330, 50))
 draw = ImageDraw.Draw(text_layer)
 draw.text( (30, 0), "Text slightly rotated",  font=font, fill=255)
 

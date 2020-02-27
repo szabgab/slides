@@ -1,7 +1,7 @@
 from PIL import Image, ImageDraw
 
-img = Image.new('RGBA', (100, 100))
+img = Image.new('RGB', (200, 200))
 
 draw = ImageDraw.Draw(img)
-draw.ellipse((0, 0, 100, 100), fill=(255, 255, 255))
+draw.ellipse((50, 50, 150, 150), fill="#F00F4F")
 img.show()

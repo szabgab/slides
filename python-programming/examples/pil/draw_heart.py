@@ -2,7 +2,7 @@ from PIL import Image, ImageDraw
 
 def heart(size, fill):
     width, height = size
-    img = Image.new('RGBA', size, (0, 0, 0, 0))
+    img = Image.new('RGB', size, (0, 0, 0, 0))
     draw = ImageDraw.Draw(img)
     polygon = [
         (width / 10, height / 3),
