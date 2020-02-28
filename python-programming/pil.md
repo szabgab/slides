@@ -82,6 +82,18 @@ Windows: C:\Windows\fonts
 
 ![](examples/pil/rotated_text.py)
 
+## Rotated text in top-right corner
+{id: rotated-text-in-top-right-corner}
+
+TODO: fix this
+
+![](examples/pil/rotated_text_top_right.py)
+
+## Embed image (put one image on another one)
+{id: embed-image}
+
+![](examples/pil/embed_image.py)
+
 
 ## Draw a triangle
 {id: draw-a-triangle}
