@@ -3,12 +3,12 @@ Entrez.email = "gabor@szabgab.com"
 
 term = "Cypripedioideae[Orgn] AND matK[Gene]"
 
-handle = Entrez.esearch(db="nucleotide", term=term, idtype="acc")
+handle = Entrez.esearch(db="nucleotide", term=term, idtype="acc", retmax=30)
 record = Entrez.read(handle)
-print(record["Count"])
-# 519
-print(record["IdList"])
-# ['MK792700.1', 'MK792699.1', 'MK792698.1', ..., 'MK792681.1']
+print(record["Count"])       # 538
+print(record["IdList"])      # ['MK792700.1', 'MK792699.1', 'MK792698.1', ..., 'MK792681.1']
+print(len(record["IdList"])) # 30
+handle.close()
 
 
 # term = "Orchid"
