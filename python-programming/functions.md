@@ -316,5 +316,10 @@ Processing d
 {id: solution-recursive}
 ![](examples/functions/dependencies/traversing_dependency_tree.py)
 
+## Palindrome
+{id: palindrome}
 
+An iterative and a recursive solution
+
+![](examples/functions/palindrome.py)
 
