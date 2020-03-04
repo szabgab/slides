@@ -1,0 +1,15 @@
+version: '3.7'
+services:
+  one:
+    build:
+        context: .
+        dockerfile: Dockerfile
+    entrypoint:
+        - tail
+        - -f
+        - /dev/null
+  two:
+    build:
+        context: .
+        dockerfile: Dockerfile
+    entrypoint: tail -f /dev/null

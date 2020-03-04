@@ -1,0 +1,8 @@
+version: '3.7'
+services:
+ one:
+   image: centos:7
+   entrypoint:
+       - bash
+   stdin_open: true
+   tty: true

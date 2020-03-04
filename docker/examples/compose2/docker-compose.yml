@@ -1,0 +1,15 @@
+# cat docker-compose.yml Dockerfile1 Dockerfile2
+version: '3.7'
+services:
+  one:
+    build:
+        context: .
+        dockerfile: Dockerfile1
+  two:
+    build:
+        context: .
+        dockerfile: Dockerfile2
+    stdin_open: true
+    tty: true
+
+
