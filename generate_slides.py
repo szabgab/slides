@@ -21,17 +21,21 @@ if not os.path.exists(slider):
     exit("{} does not exist".format(slider))
 
 def main():
-    html_root = os.path.join(root, 'html')
-
-    #print("html_root={}".format(html_root))
-    if os.path.exists(html_root):
-        shutil.rmtree(html_root)
-    os.mkdir(html_root)
-
     parser = argparse.ArgumentParser()
     parser.add_argument('--ext', default='html')
+    parser.add_argument('--keep', action='store_true')
     parser.add_argument('names', nargs='*')
     args = parser.parse_args()
+
+
+    html_root = os.path.join(root, 'html')
+    #print("html_root={}".format(html_root))
+    if not args.keep:
+        if os.path.exists(html_root):
+            shutil.rmtree(html_root)
+    if not os.path.exists(html_root):
+        os.mkdir(html_root)
+
 
     if args.ext:
         ext = "--ext " + args.ext
@@ -153,6 +157,10 @@ def generate_index(ext):
     courses = []
     for subject in os.listdir(html_dir):
         #print(subject)
+        subdir = os.path.join(html_dir, subject)
+        # skip files
+        if not os.path.isdir(subdir):
+            continue
         info_file = os.path.join(html_dir, subject, 'info.json')
         with open(info_file) as fh:
             info = json.load(fh)
