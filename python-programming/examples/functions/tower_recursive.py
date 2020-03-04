@@ -4,23 +4,14 @@ def check():
             raise Exception(f"Incorrect order in {loc}: {hanoi[loc]}")
 
 def move(depth, source, target, helper):
-    check()
-
-    if not source or not depth:
-        return True
-    if len(hanoi[source]) < depth:
-        raise Exception(f"source {source}: {hanoi[source]}  {depth}")
-
-    if depth == 1:
-        val = hanoi[source].pop()
-        hanoi[target].append(val)
-        print(f"x Move {val} from {source} to {target}")
-    else:
+    if depth > 0:
         move(depth-1, source, helper, target)
+
         val = hanoi[source].pop()
         hanoi[target].append(val)
-        print(f"y Move {val} from {source} to {target}")
+        print(f"Move {val} from {source} to {target}   Status A:{str(hanoi['A']):10}  B:{str(hanoi['B']):10}  C:{str(hanoi['C']):10}")
         check()
+
         move(depth-1, helper, target, source)
     check()
 

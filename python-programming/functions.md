@@ -20,6 +20,7 @@ Python that the function defintion has ended.
 ## Defining a function
 {id: functions}
 {i: def}
+
 ![](examples/functions/params.py)
 
 {aside}
@@ -32,12 +33,12 @@ Positional parameters.
 {id: named-parameters}
 {i: named parameter}
 {i: keyword argument}
+
 ![](examples/functions/named_params.py)
 
 {aside}
 The parameters of every function can be passed either as positional parameters or as named parameters.
 {/aside}
-
 
 
 ## Mixing positional and named parameters
@@ -55,13 +56,12 @@ SyntaxError: positional argument follows keyword argument
 ```
 
 
-
 ## Default values
 {id: parameter-with-default-values}
+
 ![](examples/functions/default.py)
 
 {aside}
-
 Function parameters can have default values. In such case the parameters are optional.
 In the function declaration, the parameters with the default values must come last.
 In the call, the order among these arguments does not matter, and they are optional anyway.
@@ -102,7 +102,7 @@ The values arrive as `tuple`.
 {id: fixed-and-variable-length-argument-list}
 
 {aside}
-The *numbers argument can be preceded by any number of regular arguments
+The `*numbers` argument can be preceded by any number of regular arguments
 {/aside}
 
 ![](examples/functions/super.py)
@@ -196,25 +196,28 @@ Details showed on the next slide
 
 ## Variable assignment and change - Mutable
 {id: assignment-details}
+
 ![](examples/functions/change_details.py)
 
 
 ## Parameter passing of functions
 {id: function-parameter-passing}
+
 ![](examples/functions/call_by_value.py)
 
 
 ## Passing references
 {id: passing-references}
+
 ![](examples/functions/reference_passed.py)
 
 
 ## Function documentation
 {id: function-documentation}
+
 ![](examples/functions/mydocs.py)
 
 {aside}
-
 Immediately after the definition of the function, you can add a string - it can be a """ string to spread multiple lines -
 that will include the documentation of the function. This string can be accessed via the __doc__ (2+2 underscores) attribute
 of the function. Also, if you 'import' the file - as a module - in the interactive prompt of Python, you will be
@@ -225,12 +228,13 @@ in the above case.
 
 ## Sum ARGV
 {id: sum-argv}
-![](examples/functions/sum_argv.py)
 
+![](examples/functions/sum_argv.py)
 
 
 ## Copy-paste code
 {id: copy-paste}
+
 ![](examples/functions/sums.py)
 
 ```
@@ -239,18 +243,13 @@ sum of b: 154 average of b: 38.5
 sum of c: 138 average of c: 34.5
 ```
 
-
-
 Did you notice the bug?
-
-
 
 
 ## Copy-paste code fixed
 {id: copy-paste-fixed}
+
 ![](examples/functions/sums_in_function.py)
-
-
 
 ```
 sum of a: 116 average of a: 29.0
@@ -261,8 +260,16 @@ sum of c: 138 average of c: 46.0
 
 ## Copy-paste code further improvement
 {id: copy-paste-further-improvement}
+
 ![](examples/functions/sums_in_function_dict.py)
 
+
+## Palindrome
+{id: palindrome}
+
+An iterative and a recursive solution
+
+![](examples/functions/palindrome.py)
 
 
 ## Exercise: statistics
@@ -270,28 +277,21 @@ sum of c: 138 average of c: 46.0
 
 Write a function that will accept any number of numbers and return a list of values:
 
-
-
 * The sum
 * Average
 * Minimum
 * Maximum
 
 
-
 ## Exercise: recursive
 {id: exercise-recursive}
-
 
 Give a bunch of files that has list of requirement in them.
 Process them recursively and print the resulting full list of requirements
 
-
 ![](examples/functions/dependencies/a.txt)
 ![](examples/functions/dependencies/b.txt)
 ![](examples/functions/dependencies/c.txt)
-
-
 
 ```
 $ python traversing_dependency_tree.py a
@@ -306,20 +306,37 @@ Processing g
 Processing d
 ```
 
+## Exercise: Tower of Hanoi
+{id: exercise-tower-of-hanoi-recursive}
+
+[Tower of Hanoi](https://en.wikipedia.org/wiki/Tower_of_Hanoi)
+
+
+## Exercise: Merge  and Bubble sort
+{id: exercise-bubble-sort}
+
+* Implement [bubble sort](https://en.wikipedia.org/wiki/Bubble_sort)
+* Implement [merge sort](https://en.wikipedia.org/wiki/Merge_sort)
+
 
 ## Solution: statistics
 {id: solution-statistics}
+
 ![](examples/functions/stats.py)
 
 
-## Exercise: recursive
+## Solution: recursive
 {id: solution-recursive}
+
 ![](examples/functions/dependencies/traversing_dependency_tree.py)
 
-## Palindrome
-{id: palindrome}
+## Solution: Tower of Hanoi
+{id: solution-tower-of-hanoi-recursive}
 
-An iterative and a recursive solution
 
-![](examples/functions/palindrome.py)
+![](examples/functions/tower_recursive.py)
 
+## Solution: Merge  and Bubble sort
+{id: solution-bubble-sort}
+
+![](examples/functions/bubble_sort.py)
