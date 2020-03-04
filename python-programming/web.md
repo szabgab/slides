@@ -47,6 +47,21 @@ urllib2 is better than urllib as it will indicate if there was an error retreivi
 ![](examples/web/download_image_stream.py)
 
 
+## Download zip file
+{id: download-zip-file}
+
+
+![](examples/web/download_file.py)
+
+
+## Extract zip file
+{id: extract-zip-file}
+{i: unzip}
+{i: zip}
+
+![](examples/web/unzip_file.py)
+
+
 ## Interactive Requests
 {id: interactive-requests}
 
