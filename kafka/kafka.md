@@ -45,4 +45,8 @@ Consumer groups
 
 https://www.youtube.com/watch?v=UEg40Te8pnE  23:00
 
+## Message queues
+Apache Kafka
+ActiveMQ
+RabbitMQ
 
