@@ -1,11 +1,13 @@
 from PIL import Image
 
-in_file = 'in.png'
-out_file = 'new.png'
+#img = Image.new(mode='RGBA', size=(400, 200), color='#eb8634')
+img = Image.new(mode='RGBA', size=(400, 200), color='#eb8634')
 
-img = Image.open(in_file)
+#small = Image.new(mode='RGB', size=(40, 20), color='#F00')
+#mask = Image.new(mode='L', size=(40, 20))
 
-size = (img.size[0] / 2, img.size[1] / 2)
-img.thumbnail(size)
-
-img.save(out_file)
+#mask = Image.new(mode='L', size=(100, 20)
+#in_file = 'python.png'
+#img = Image.open(in_file)
+#img.paste(im=small, box=(50,50), mask=mask)
+img.show()
