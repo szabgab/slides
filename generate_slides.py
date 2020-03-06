@@ -63,6 +63,7 @@ def main():
     books = []
     if len(args.names) > 0:
         for name in args.names:
+            name = name.rstrip('/')
             if name in available_names:
                 names.append(name)
                 continue
