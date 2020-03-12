@@ -141,7 +141,6 @@ In Python 2.x classes needed to inherit from 'object' in order to become 'new st
 * Delegate - Provide
 
 
-
 ## Modes of method inheritance - implicit
 {id: modes-of-method-inheritance-implicit}
 
@@ -161,6 +160,7 @@ Replace method
 
 ## Modes of method inheritance - extend
 {id: modes-of-method-inheritance-extend}
+{i: super}
 
 Extend method before or after calling original.
 
