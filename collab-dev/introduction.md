@@ -4,8 +4,21 @@
 ## Videos
 {id: videos}
 
+{aside}
+The material covered in these slides have also been recorded. You can check out the vides following the links here.
+{/aside}
+
 * [Hebrew](https://he.code-maven.com/collab-dev)
 * English - TBD
+
+## Book
+{id: book}
+
+{aside}
+A much more detailed version of the material is also available in eBook format.
+{/aside}
+
+* Book: [Collaborative Development using Git and GitHub](https://leanpub.com/collab-dev-git/)
 
 ## Who is this for?
 {id: who-is-this-for}
