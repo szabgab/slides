@@ -1,6 +1,16 @@
 # Introduction to Programming
 {id: programming-intro}
 
+## Types of Software
+{id: types-of-software}
+
+* Desktop applications
+* Web applications (via Firefox, Chrome, MS Edge)
+* Mobile applications
+* CLI - Command Line Interface
+* Embedded applications (space shuttle, car, fridge, pacemaker)
+
+
 ## Computer Hardware Architecture
 {id: computer-hardware-architecture}
 {i: CPU}
