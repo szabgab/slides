@@ -30,3 +30,16 @@ C:
 ...
 Z:
 ```
+
+## Task Manager
+{id: task-manager}
+
+* Processes
+* Performance (right click on a CPU graph and Change Graph to Logical processors
+
+## Performance Monitor
+{id: performance-monitor}
+
+* Performance Monitor
+* Resource Monitor
+
