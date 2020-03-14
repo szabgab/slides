@@ -21,7 +21,7 @@
 * View / Hidden items
 
 ## File-system - Directory structure
-{id: file-system}
+{id: file-system-directory-structure}
 
 ```
 A:
