@@ -39,7 +39,7 @@ sql/sql.json,sql
 value/value.json,value
 vim/vim.json,vim
 web/web.json,web
-windows/windows.json,windows-cmd
+windows/windows.json,windows
 talks/real_world.json,real-world
 talks/github-pages.json,github-pages
 talks/python-pair-programming-and-tdd-workshop.json,python-pair-programming-and-tdd-workshop
