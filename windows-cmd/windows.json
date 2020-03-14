@@ -6,6 +6,7 @@
     "copyright_url": "https://szabgab.com/",
     "version": "1.01",
     "files": [
-        "introduction.md"
+        "gui.md",
+        "cmd.md"
     ]
 }
