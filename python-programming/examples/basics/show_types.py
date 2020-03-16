@@ -13,3 +13,4 @@ print( type([]) )        # list
 print( type({}) )        # dict
 
 print( type(hello) )     #  NameError: name 'hello' is not defined
+print("Still running")

@@ -227,6 +227,11 @@ Write script that accepts a number on the command line and prints the character 
 
 ![](examples/strings/in_string.py)
 
+## Solution: compare strings
+{id: solution-compare-string}
+
+![](examples/strings/compare_strings.py)
+
 
 ## Solution: to ASCII CLI
 {id: solution-to-ascii-cli}

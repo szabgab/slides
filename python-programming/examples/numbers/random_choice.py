@@ -1,5 +1,8 @@
 import random
 
-print(random.choice("abcdefghijklmno"))     # pick one of the letters
-print(random.choice(["Apple", "Banana", "Peach", "Orange", "Durian", "Papaya"]))
+letter = "abcdefghijklmno"
+print(random.choice(letters))     # pick one of the letters
+
+fruits = ["Apple", "Banana", "Peach", "Orange", "Durian", "Papaya"]
+print(random.choice(fruits))
      # pick one of the fruits

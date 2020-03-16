@@ -154,6 +154,8 @@ Level 1-
 * Write a script that will pick 3 fruits from a list of fruits like the one we had in one of the earlier slides. Print the 3 names.
 * Could you make sure the 3 fruits are different?
 
+![](examples/numbers/skeleton_fruit_salad.py)
+
 
 ## Solution: Number guessing game - level 0
 {id: solution-number-guessing-game-0}
