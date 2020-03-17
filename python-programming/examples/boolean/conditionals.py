@@ -2,6 +2,9 @@ x = 2
 
 if x == 2:
     print("it is 2")
+else:
+    print("it is NOT 2")
+
 
 if x == 3:
     print("it is 3")

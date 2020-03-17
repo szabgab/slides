@@ -4,5 +4,7 @@ def main():
 
     if inp == expected_answer:
         print("Welcome to the cabal!")
+    else:
+        print("Read the Hitchhiker's guide to the galaxy!")
 
 main()

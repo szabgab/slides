@@ -6,7 +6,7 @@
 
 ![](examples/basics/modules.py)
 
-## The main function
+## A main function
 {id: python-optional-main-sub}
 {i: main}
 {i: def}
@@ -290,13 +290,26 @@ Whichever is appropriate in your situation.
 ![](examples/basics/converting_floating_string_to_int.py)
 ![](examples/basics/converting_to_int_via_float.py)
 
-
-## Conditionals: if - else
-{id: python-conditionals-if-else}
-{i: else}
+## Conditionals: if
+{id: python-conditionals-if}
 {i: if}
 
 ![](examples/basics/if.py)
+
+
+## Conditionals: if - else
+{id: python-conditionals-if-else}
+{i: if}
+{i: else}
+
+![](examples/basics/if_else.py)
+
+## Conditionals: if - else (other example)
+{id: python-conditionals-if-else-divide}
+{i: if}
+{i: else}
+
+![](examples/basics/if_else_divide.py)
 
 
 ## Conditionals: else if
