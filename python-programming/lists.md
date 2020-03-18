@@ -534,7 +534,6 @@ e.g. keys of dictinoaries can be tuple (but not lists).
 * Any more ideas for improvement?
 
 
-
 ## Exercise: count digits
 {id: exercise-count-digits}
 
@@ -625,9 +624,13 @@ True
 ## Solution: count digits
 {id: solution-count-digits}
 
-TypeError: 'int' object is not iterable
 
 ![](examples/lists/count_digits.py)
+
+* We have a list of numbers.
+* We need a place to store the counters. For this we create a variable called counter which is a list of 10 0s. We are going to count the number of times the digit 3 appears in `counters[3]`.
+* We iterate over the numbers so `num` is the current number. (e.g. 1203)
+* We would like to iterate over the digits in the curreent number now, but if we write `for var in num` we will get an error `TypeError: 'int' object is not iterable` because `num` is a number, but numbers are not iterables, so we we cannot iterate over them.
 
 ## Solution: Create list
 {id: solution-create-list}
