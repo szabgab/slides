@@ -11,7 +11,7 @@ def main():
     for i in range(len(colors)):
         print("{}) {}".format(i, colors[i]))
 
-    c = int(raw_input("Select color: "))
+    c = int(input("Select color: "))
     print(colors[c])
 
 main()

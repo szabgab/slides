@@ -79,6 +79,6 @@ except Exception as e:
 
 
 #while g.running:
-#    guess = raw_input("Please type in your guess: ")
+#    guess = input("Please type in your guess: ")
 #    g.guess(int(guess))
 

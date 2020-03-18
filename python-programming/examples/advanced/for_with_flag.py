@@ -2,7 +2,7 @@ names = ['Foo', 'Bar', 'Baz']
 
 ok = False
 for i in range(3):
-    name = raw_input('Your name please: ')
+    name = input('Your name please: ')
     if name in names:
         ok = True
         break
