@@ -243,3 +243,10 @@ Don't do that.
 This does NOT work because files can only be accessed sequentially.
 {/aside}
 
+## Example
+{id: example-with-files}
+
+
+![](examples/files/sample.py)
+![](examples/files/example.py)
+

@@ -1,0 +1,8 @@
+begin test
+do something
+report
+total: 42
+more things
+more
+another total: 100
+more data

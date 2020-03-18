@@ -2,6 +2,7 @@ filename = 'examples/files/unicorns.txt'
 
 with open(filename, 'r') as fh:
     lines  = fh.read()
+print("still running")
 
 # Traceback (most recent call last):
 #   File "examples/files/open_file.py", line 5, in <module>
