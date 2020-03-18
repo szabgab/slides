@@ -34,10 +34,10 @@ if len(sys.argv) == 2:
   max_parallel = int(sys.argv[1])
 
 def printPage(result):
-  print "page size: ", len(result)
+  print(f"page size: ", len(result))
   global current_parallel
   current_parallel -= 1
-  print "current_parallel: ", current_parallel
+  print("current_parallel: ", current_parallel)
   #urls = re.findall(r'href="([^"]+)"', result)
   #for u in urls:
   #  queue.append(u)
@@ -45,7 +45,7 @@ def printPage(result):
   process_queue()
 
 def printError(error):
-  print "Error: ", error
+  print("Error: ", error)
   global current_parallel
   current_parallel -= 1
   process_queue()
@@ -55,14 +55,14 @@ def stop(result):
   reactor.stop()
 
 def process_queue():
-  global current_parallel, max_parallel,queue 
-  print "process_queue cs: {} max: {}".format(current_parallel, max_parallel)
+  global current_parallel, max_parallel,queue
+  print("process_queue cs: {} max: {}".format(current_parallel, max_parallel))
   while True:
     if current_parallel >= max_parallel:
-      print "No empty slot"
+      print("No empty slot")
       return
     if len(queue) == 0:
-      print "queue is empty"
+      print("queue is empty")
       if current_parallel == 0:
         reactor.stop()
       return
@@ -74,5 +74,5 @@ def process_queue():
 
 process_queue()
 reactor.run()
-print "----done ---"
+print("----done ---")
 
