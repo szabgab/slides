@@ -24,6 +24,11 @@
 ![](examples/matplotlib/pie.py)
 ![](examples/matplotlib/pie.png)
 
+## Matplotlib Pie 2
+{id: matplotlib-pie-2}
+
+![](examples/matplotlib/pie_for_tests.py)
+
 
 ## Plot, scatter, histogram
 {id: matplotlib-plot}
