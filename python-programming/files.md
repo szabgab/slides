@@ -247,6 +247,6 @@ This does NOT work because files can only be accessed sequentially.
 {id: example-with-files}
 
 
-![](examples/files/sample.py)
+![](examples/files/sample.txt)
 ![](examples/files/example.py)
 
