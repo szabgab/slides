@@ -149,7 +149,7 @@ Unless it was marked using the global word.
 
 ## Look deeper in a list
 {id: deeper}
-![](examples/lists/string.py)
+![](examples/lists/string_deeper.py)
 
 
 
