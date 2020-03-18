@@ -45,7 +45,7 @@
 ![](examples/sets/intersection.out)
 
 ## set subset
-{id: set-intersection}
+{id: set-subset}
 {i: set}
 {i: issubset}
 
