@@ -3,13 +3,14 @@
 
 ## Numbers
 {id: numbers}
+
 ![](examples/numbers/numbers.py)
 
 {aside}
 In Python numbers are stored as decimals, but in the source code you can also use hexadecimal, octal, or binary notations.
-        This is especially useful if the domain you are programming in is using those kinds of numbers.
-        For example hardware engineers often talk in hexadecimal values.
-        In that case you won't need to contantly translate between the form used in the current domain and decimal numbers.
+This is especially useful if the domain you are programming in is using those kinds of numbers.
+For example hardware engineers often talk in hexadecimal values.
+In that case you won't need to contantly translate between the form used in the current domain and decimal numbers.
 {/aside}
 
 
@@ -21,19 +22,19 @@ In Python numbers are stored as decimals, but in the source code you can also us
 {i: ++}
 {i: --}
 {i: %}
-![](examples/numbers/operators.py)
+{i: /}
+{i: //}
 
+![](examples/numbers/operators.py)
 
 There is no autoincrement (++) and autodecrement (--) in Python,
 because they can be expressed by += 1 and -= 1 respectively.
 
 
-
-
-
 ## Integer division and the __future__
 {id: integer-division}
 {i: __future__}
+
 ![](examples/basics/divide.py)
 
 ```
@@ -43,21 +44,22 @@ $ python divide.py
 $ python3 divide.py
 1.5
 ```
+
 ![](examples/basics/future_divide.py)
 
 {aside}
-
-    If you need to use Python 2, remember that by default division is integer based so 3/2 would return 1.
-    Importing the 'division' directive from __future__ changes this to the behavior that we usually expect 3/2 being 1.5.
-    This is also the behavior we have in Python 3.
-    In case you already use Python 3 and would like to get the "old" behavior, that is to get the integer part of the division, you can
-    always call the "int" function: int(b/a).
+If you need to use Python 2, remember that by default division is integer based so 3/2 would return 1.
+Importing the 'division' directive from __future__ changes this to the behavior that we usually expect 3/2 being 1.5.
+This is also the behavior we have in Python 3.
+In case you already use Python 3 and would like to get the "old" behavior, that is to get the integer part of the division, you can
+always call the "int" function: int(b/a).
 {/aside}
 
 
 ## Pseudo Random Number
 {id: random}
 {i: random}
+
 ![](examples/numbers/rand.py)
 
 * [random](http://docs.python.org/library/random.html)
@@ -69,6 +71,7 @@ $ python3 divide.py
 {id: random-seed}
 {i: random}
 {i: seed}
+
 ![](examples/numbers/random_seed.py)
 
 
