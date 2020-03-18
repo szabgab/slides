@@ -7,6 +7,7 @@
 
 
 * Sets in Python are used when we are primarily interested in operations that we know from [sets in mathematics](https://en.wikipedia.org/wiki/Set_(mathematics)).
+* See also the [Venn diagrams](https://en.wikipedia.org/wiki/Venn_diagram)
 * In day to day speach we often use the word "group" instead of "set" even though they are not the same.
 * What are the common elements of two set (two groups)
 * Is one group (set) the subset of the other?
@@ -14,9 +15,81 @@
 * What are the elements that exist in exactly one of the groups (sets)?
 
 
+## set operations
+{id: set-operations}
+{i: set}
+{i: issubset}
+{i: intersection}
+{i: symmetric_difference}
+
+
+* set
+* issubset
+* intersection
+* symmetric difference
+* union
+* relative complement
+
+* [stdtypes: set](http://docs.python.org/library/stdtypes.html#set)
+
+
+## set intersection
+{id: set-intersection}
+{i: set}
+{i: intersection}
+
+![](examples/sets/intersection.py)
+
+* `intersection` returns the elements that are in both sets.
+
+![](examples/sets/intersection.out)
+
+## set subset
+{id: set-intersection}
+{i: set}
+{i: issubset}
+
+![](examples/sets/subset.py)
+
+* `intersection` returns the elements that are in both sets.
+
+![](examples/sets/subset.out)
+
+
+## set symmetric difference
+{id: set-symmetric-difference}
+{i: set}
+{i: symmetric_difference}
+
+![](examples/sets/difference.py)
+
+* Symmetric diffeerence is all the elements in either one of the sets, but not in both. "the ears of the elephant".
+
+![](examples/sets/difference.out)
+
+
+## set union
+{id: set-union}
+{i: set}
+{i: union}
+
+![](examples/sets/union.py)
+
+![](examples/sets/union.out)
+
+## set relative complement
+{id: set-relative-complement}
+
+
+![](examples/sets/relative_complement.py)
+![](examples/sets/relative_complement.out)
+
+
+## set examples
+{id: set-examples}
+
 ![](examples/sets/try_set.py)
 ![](examples/sets/try_set.out)
-
 
 
 ## defining an empty set
@@ -46,22 +119,4 @@ In Python 2:
 
 
 
-## set operations
-{id: set-operations}
-{i: set}
-{i: issubset}
-{i: intersection}
-{i: difference}
-
-![](examples/lists/languages.py)
-
-```
-english:  set(['car', 'door', 'lunar', 'era'])
-spanish:  set(['era', 'hola', 'lunar'])
-intersection:  set(['era', 'lunar'])
-issubset:  True
-symmetric_difference:  set(['car', 'door', 'hola'])
-```
-
-[stdtypes: set](http://docs.python.org/3/library/stdtypes.html#set)
 
