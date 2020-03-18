@@ -326,7 +326,7 @@ print(people[('Eric', 'Idle')]['born']) # 29 March 1943
 
 ![](examples/dictionary/count_characters.py)
 
-* We need to store the counter somewhere. We could you two lists for that, but that would give a complex solution that runs in O(n**2) time.
+* We need to store the counter somewhere. We could use two lists for that, but that would give a complex solution that runs in O(n**2) time.
 * Besides, we are in the chapter about dictionaries so probably we better use a dictionary.
 * In the `count` dictionary we each key is going to be one of the characters and the respective value will be the number of times it appeared.
 * So if out string is "aabx" then we'll end up with
@@ -346,6 +346,18 @@ print(people[('Eric', 'Idle')]['born']) # 29 March 1943
 
 * In the second loop we go over the keys of the dictionary, that is the characters we have encountered. We sort them in ASCII order.
 * Then we print each one of them and the respective value, the number of times the character was found.
+
+## Solution: count characters with default dict
+{id: solution-count-characters-with-default-dict}
+{i: collections}
+{i: defaultdict}
+
+
+![](examples/dictionary/count_characters_default_dict.py)
+
+* The previous solution can be slightly improved by using `defaultdict` from the `collections` module.
+* `count = defaultdict(int)` creates an empty dictionary that has the special feature that if you try to use a key that does not exists, it pretends that it exists and that it has a value 0.
+* This allows us to remove the condition checking if the character was already seen and just increment the counter. The first time we encounter a charcter the dictionary will pretend that it was already there with value 0 so everying will work out nicely.
 
 
 ## Solution: count words
