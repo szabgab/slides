@@ -198,6 +198,7 @@ To remove an element by its index, use the slice syntax:
 
 ## Use list as a queue
 {id: list-as-a-queue}
+
 ![](examples/lists/list_as_a_queue.py)
 ![](examples/lists/list_as_a_queue.out)
 
@@ -208,7 +209,8 @@ To remove an element by its index, use the slice syntax:
 {i: deque}
 {i: append}
 {i: popleft}
-![](examples/lists/queue.py)
+
+![](examples/lists/queue_with_deque.py)
 
 * .append
 * .popleft
