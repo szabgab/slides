@@ -11,7 +11,7 @@ others = [
 
 def do_something( call_list ):
    for c in call_list:
-      print c(3)
+      print(c(3))
 
 
 do_something( calls )

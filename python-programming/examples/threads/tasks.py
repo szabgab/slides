@@ -1,4 +1,4 @@
-from Queue import Queue
+from queue import Queue
 from threading import Thread
 
 def source():
@@ -6,8 +6,8 @@ def source():
     return range(1, 10)
 
 def do_work(item):
-    print "Working on item " + str(item) + "\n",
-# print "Working on item ", str(item)
+    print("Working on item " + str(item) + "\n", end="")
+# print("Working on item ", str(item))
 # would show the output intermingled as the separate items of the print statement
 # (even the trailing newline) might be printed only after context switch
 

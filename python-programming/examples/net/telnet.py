@@ -26,5 +26,4 @@ print("going to exit")
 tn.write("exit\n")
 
 print("--------")
-print tn.read_all()
-
+print(tn.read_all())
