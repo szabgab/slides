@@ -5,11 +5,7 @@
 ## Matplotlib Line
 {id: matplotlib-about}
 
-![](examples/matplotlib/line.py)
-
 * [matplotlib](http://matplotlib.org/)
-
-
 
 ## Matplotlib Line
 {id: matplotlib-line}
@@ -17,6 +13,25 @@
 ![](examples/matplotlib/line.py)
 ![](examples/matplotlib/line.png)
 
+## Matplotlib Line with dates
+{id: matplotlib-line-with-dates}
+
+![](examples/matplotlib/line_with_dates.py)
+![](examples/matplotlib/line_with_dates.png)
+
+## Matplotlib Simple Pie
+{id: matplotlib-simple-pie}
+
+![](examples/matplotlib/simple_pie.py)
+![](examples/matplotlib/simple_pie.png)
+
+
+## Matplotlib Simple Pie with params
+{id: matplotlib-simple-pie-with-params}
+
+![](examples/matplotlib/simple_pie_params.py)
+
+* [pyplot pie](https://matplotlib.org/api/_as_gen/matplotlib.pyplot.pie.html#matplotlib.pyplot.pie)
 
 ## Matplotlib Pie
 {id: matplotlib-pie}
