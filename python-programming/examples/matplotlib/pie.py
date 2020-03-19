@@ -17,5 +17,6 @@ plt.pie(fracs,
 plt.title('Raining Hogs and Dogs',
     bbox={'facecolor': '0.8', 'pad': 5})
 
-plt.savefig('pie.png')
+plt.show()
+#plt.savefig('pie.png')
 #plt.savefig('pie.pdf')
