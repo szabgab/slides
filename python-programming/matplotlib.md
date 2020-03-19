@@ -10,7 +10,7 @@
 ## Matplotlib Line
 {id: matplotlib-line}
 
-![](xexamples/matplotlib/line.py)
+![](examples/matplotlib/line.py)
 ![](examples/matplotlib/line.png)
 
 ## Matplotlib Line with dates
