@@ -2,7 +2,7 @@
 {id: matplotlib}
 
 
-## Matplotlib Line
+## About Matplotlib
 {id: matplotlib-about}
 
 * [matplotlib](http://matplotlib.org/)
