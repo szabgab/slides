@@ -1,6 +1,7 @@
 line = "Hello World"
-print(len(line)) # 11
+hw = len(line)
+print(hw)  # 11
 
 text = """Hello 
 World"""
-print(len(text)) # 12
+print(len(text))  # 12

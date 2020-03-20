@@ -5,6 +5,15 @@
 ## Single quoted and double quoted strings
 {id: single-quote-double-quote}
 
+{aside}
+In Python, just as in most of the programming languages you must put any free text inside a pair of quote characters.
+Otherwise Python will try to find meaning in the text.1
+
+These pieces of texts are called "strings".
+
+In Python you can put string between two single quotes: '' or between two double quotes: "". Which one does not matter.
+{/aside}
+
 ![](examples/strings/quotes.py)
 ![](examples/strings/quotes.out)
 
@@ -19,6 +28,12 @@
 {id: triple-quoted-strings}
 {i: """}
 {i: '''}
+
+{aside}
+If you would like to create a string the spreads on multiple lines,
+there is a possibility to put the text between 3 quotes on both sides. Either 2*3 single-quotes
+or 2*3 double-quotes.
+{/aside}
 
 ![](examples/strings/triple_quotes.py)
 
@@ -35,15 +50,36 @@ third row
 {id: string-length}
 {i: len}
 
+{aside}
+The `len` function returns the length of the string in number of characters.
+{/aside}
+
 ![](examples/strings/length.py)
 
 
-## String repetition
+## String repetition and concatenation
 {id: string-repetition}
 {i: *}
 {i: +}
 
+{aside}
+You might be used to the fact the you can only multiple numbers, but in python you can also "multiply" a string by a number.
+It is called repetition. In this example we have a string "Jar " that we repeat twice.repetition
+
+We can also add two strings to concatenate them together.repetition
+
+I don't think the repetition operator is used very often, but in one case it could come very handy.
+When you are writing some text report and you'd like to add a long line of dashes that would be exactly the same length
+as your title.
+{/aside}
+
 ![](examples/strings/repetition.py)
+
+## A character in a string
+{id: character--in-string}
+{i: []}
+
+![](examples/strings/string_char.py)
 
 
 ## String slice (instead of substr)
@@ -60,7 +96,16 @@ third row
 {id: string-change}
 {i: immutable}
 
+{aside}
+In Python strings are "immutable", meaning you cannot change them. You can replace a whole string in a variable,
+but you cannot change it.
+
+In the following example we wanted to replace the 3rd character (index 2), and put "Y" in place. This raised an exception
+{/aside}
+
 ![](examples/strings/string_change.py)
+
+![](examples/strings/string_change.out)
 
 {aside}
 Replace part of a string
