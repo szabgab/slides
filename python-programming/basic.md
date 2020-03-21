@@ -4,12 +4,18 @@
 ## What is Python?
 {id: what-is-python}
 
-* A snake
-* a British comedy group called [Monty Python](https://en.wikipedia.org/wiki/Monty_Python)
+* A snake.
+* A British comedy group called [Monty Python](https://en.wikipedia.org/wiki/Monty_Python).
 * A programming languge. The definition of the language: words, punctuation (operators) and grammar (syntax).
-* The compiler/interpreter of the Python programming language. (aka. CPython)
+* The compiler/interpreter of the Python programming language. (aka. CPython).
 
-
+{aside}
+When people say they Python in relation to programming they either mean the Python programming language or they
+mean the tool that can translate some text (code) written in the Python programming language to the language a computer
+can actually understand. On MS Windows this is the *python.exe* you need to install. On Linux/Mac it is usally called *python*
+or *python3*. The generic name of the tool that translates a programming language for the computer is eiter
+called a compiler or an interpreter. We'll talk about this later on.
+{/aside}
 
 ## What is needed to write a program?
 {id: what-is-needed-to-write-a-program}
@@ -17,13 +23,15 @@
 * An **editor** where we can write in a language.
 * A **compiler or interpreter** that can translate our text to the language of the computer.
 
-
+{aside}
+In order to write and run a program you basically need two things. A text editor in which you can write the program
+and a compiler or interpreter that can translate this program to the computer.
+{/aside}
 
 ## The source (code) of Python
 {id: the-source-of-python}
 
 * [Python](https://www.python.org/)
-
 
 
 ## Python 2 vs. Python 3
@@ -32,7 +40,22 @@
 * Python 2.x - old, legacy code at companies, answers on the Internet. Retires on January 1, 2020.
 * Python 3.x - the one that you should use. (not fully backward compatible) Available since December 3, 2008.
 
+{aside}
+Python has two major lines the version 2.x and the version 3.x. In a nutshell you *should* always use Python 3 if possible.
 
+Unfortunately you can still encounter many companies and many projects in companies that are stuck on Python 2.
+In such cases you probably will have to write in Python 2.
+
+In addition when you search for solutions on the Internet in many cases you'll encounter solution that were written
+for Python 2. Luckily in most of the cases it is almost trivial to convert thise small examples to work on Python 3.
+You just need to be able to recognize that the code was originally written for Python 2 and you need to be able to make
+the adjustments.
+
+For this reason, while the majority of these pages cover Python 3, we are going to point out the places where it
+might be useful to know how Python 2 works.
+
+You are free to skip these parts and come back to them when the need arises.
+{/aside}
 
 ## Installation
 {id: installation}
@@ -41,7 +64,9 @@
 * Linux
 * Apple/Mac OSX
 
-
+{aside}
+We are going to cover how to install Python all 3 major operating systems.
+{/aside}
 
 ## Installation on Linux
 {id: installation-linux}
