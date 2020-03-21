@@ -174,17 +174,27 @@ Extend the previous example by letting the user provide the name of the file on 
 ## Exercise: ROT13
 {id: exercise-rot13}
 
-Implement rot13: given a string return the rot13 of it. Given a file, replace with the rot13 of it.
+Implement [ROT13](https://en.wikipedia.org/wiki/ROT13):
+* Create a function that given a string return the rot13 of it.
+* Create a script that given a file it will replace with the rot13 of it.
+
+How to check if it works properly:
+
+```
+txt = "any text"
+encrypted = rot13(txt)
+decrypted = rot13(encrypted)
+assert decrypted == text
+```
 
 
 ## Exercise: Combine lists
 {id: exercise-combine-lists}
+
 ![](examples/files/a.txt)
 ![](examples/files/b.txt)
 
-
 Write a script that takes the two files and combines them adding the values for each vegetable. The expected result is:
-
 
 ![](examples/files/c.txt)
 
