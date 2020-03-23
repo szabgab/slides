@@ -140,6 +140,7 @@ go build hello_world.go
 {i: //}
 
 ![](examples/comments/comments.go)
+![](examples/comments/comments.out)
 
 ## Enforce variables types
 {id: enforce-variable-types}
