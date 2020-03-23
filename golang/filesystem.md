@@ -26,5 +26,5 @@ Error: stat hello/world: permission denied
 {i: ioutil}
 {i: ReadDir}
 
-![](examples/list_directory/list.go)
+![](examples/list_directory/listdir.go)
 

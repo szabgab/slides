@@ -317,21 +317,6 @@ The exercise have several levels. Solve them one after the other.
 
 ![](examples/game5/game5.go)
 
-## os.stat information about a file or directory (file exists)
-{id: os-stat}
-
-![](examples/file-stat/stat.go)
-
-```
-Error: stat hello/world: no such file or directory
-```
-
-If the directory where the file can be found is not executable by the user who runs this code, we'll get
-the following error:
-
-```
-Error: stat hello/world: permission denied
-```
 
 ## Solution: single counter
 {id: solution-single-counter}
