@@ -1,17 +1,6 @@
 # Go-lang
 {id: intro}
 
-## Self intro
-{id: self-intro}
-
-* [Gabor Szabo](https://www.linkedin.com/in/szabgab/)
-* Help teams improve their development practices
-
-* [Workshops](https://workshops.code-maven.com/)
-* [Training Courses](https://hostlocal.com/)
-
-* [Code Maven Meetup](https://www.meetup.com/Code-Mavens/)
-
 ## Features
 {id: features}
 
@@ -30,6 +19,7 @@
 * Concurrency [The Free Lunch Is Over: A Fundamental Turn Toward Concurrency in Software](http://www.gotw.ca/publications/concurrency-ddj.htm)
 * [C10k Problem](https://en.wikipedia.org/wiki/C10k_problem)
 
+
 ## Major Open Source Projects
 {id: major-open-source-projects}
 
@@ -47,6 +37,7 @@
 * [Gett](https://gett.com/)
 * [Apester](https://apester.com/)
 * [Cisco](https://www.cisco.com/)
+
 
 ## Install
 {id: install}
@@ -101,9 +92,25 @@ then reload it using `source ~/.bashrc`
 
 * main function is the entry point of every program
 
+{aside}
+Every Go program has a main file that must start with "package main" and it must have a function called `main`.
+
+In order to print something to the screen we first need to import the `fmt` class and then inside the "main" function we can write
+`fmt.Println("Hello World")`.
+
+We save this with a .go extension. Then we can run it from the command line by typing `go run` and the name of your file.
+This will compile the code into a temporary directory and then run it.
+
+
+If you'd like to crete a distributable version of your code you can type `go build` and the name of your file. That will create an executable
+with the same name (just without the extension). This is specific to the Operating System and platform you currently use. Later we'll see how 
+{/aside}
+
 ```
 go run hello_world.go
 ```
+
+![](examples/hello_go/hello_world.out)
 
 ```
 go build hello_world.go
@@ -118,12 +125,14 @@ go build hello_world.go
 {i: var}
 
 ![](examples/hello_foo/hello_foo.go)
+![](examples/hello_foo/hello_foo.out)
 
 ## Hello Foo - Printf
 {id: hello-foo-printf}
 {i: Printf}
 
 ![](examples/hello_foo_printf/hello_foo_printf.go)
+![](examples/hello_foo_printf/hello_foo_printf.out)
 
 
 ## Comments
