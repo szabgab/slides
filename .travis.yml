@@ -1,12 +1,22 @@
-dist: xenial
-language: python
-python:
-  - "3.7"
-install:
-  - pip install pytest
-  - pip install pytest-flake8
-  - git clone https://github.com/szabgab/slider-py.git
-  - pip install -r slider-py/requirements.txt
-script:
-  - python tests/check.py
-  - python generate_slides.py
+matrix:
+  include:
+    - language: python
+      dist: xenial
+      python:
+        - "3.7"
+      install:
+        - pip install pytest
+        - pip install pytest-flake8
+        - git clone https://github.com/szabgab/slider-py.git
+        - pip install -r slider-py/requirements.txt
+      script:
+        - python tests/check.py
+        - python generate_slides.py
+    - language: go
+      dist: xenial
+      go:
+        - "1.12"
+        - "1.14"
+      script:
+        - go version
+        - go run golang/examples/hello_go/hello_world.go
