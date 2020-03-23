@@ -15,8 +15,6 @@ matrix:
     - language: go
       dist: xenial
       go:
-        - "1.12"
         - "1.14"
       script:
         - go version
-        - go run golang/examples/hello_go/hello_world.go
