@@ -21,10 +21,40 @@ the following error:
 Error: stat hello/world: permission denied
 ```
 
-## List Directory 
+## List Directory
 {id: list-directory}
 {i: ioutil}
 {i: ReadDir}
 
 ![](examples/list_directory/listdir.go)
+
+
+## Get Current Working Directory (cwd)
+{id: get-current-working-directory}
+{i: cwd}
+{i: pwd}
+{i: Getcwd}
+
+![](examples/cwd/cwd.go)
+
+* [os.Getwd](https://golang.org/pkg/os/#Getwd)
+
+## Create Temporary Directory
+{id: create-temporary-directory}
+{i: TempDir}
+{i: RemoveAll}
+{i: rm -rf}
+
+![](examples/tempdir/tempdir.go)
+
+{aside}
+The `defer os.RemoveAll(tempDir)` will make sure the directory is removed when we exit the program.
+{/aside}
+
+* [io/ioutil.TempDir](https://golang.org/pkg/io/ioutil/#TempDir)
+
+
+## Traverse directory tree
+{id: traverse-directory-tree}
+
 
