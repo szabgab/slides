@@ -58,3 +58,7 @@ The `defer os.RemoveAll(tempDir)` will make sure the directory is removed when w
 {id: traverse-directory-tree}
 
 
+![](examples/dirtree/tree.go)
+
+* [path/filepath.Walk](https://golang.org/pkg/path/filepath/#Walk)
+

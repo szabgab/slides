@@ -9,14 +9,17 @@
 
 ## Function with return value
 {id: function-sith-return}
+{i: return}
 
 ![](examples/function_return/comp.go)
 
 ## Defer
 {id: defer}
+{i: defer}
 
-Every defer statement is executed after the enclosing function ends.
-In reverse order. (Similar to END block in Perl, similar to with context in python)
+
+Every `defer` statement is executed after the enclosing function ends.
+In reverse order. (Similar to `END` block in Perl, similar to `with` context in python)
 
 ![](examples/defer/defer.go)
 
@@ -45,32 +48,7 @@ Implement a function that accepts a positive integer (n) and prints out the firs
 
 ![](examples/fibonacci-recursive/fibonacci-recursive.go)
 
-## http get request
-{id: http-get-request}
 
-![](examples/http_get/http_get.go)
-
-## Some advanced topics
-{id: advanced-topics}
-
-* struct
-* closures
-* pointers
-* go-routines
-* classes (there are no classes)
-* methods (attached to types), but no classes
-* interfaces
-* Stringers - stringification
-* Cross compilation
-* many standard packages
-* many external packages
-
-## Resources
-{id: resources}
-
-* [Golang tour](https://tour.golang.org/welcome/1)
-* [Video](https://www.youtube.com/watch?v=YS4e4q9oBaU)
-* [Video](https://youtu.be/YS4e4q9oBaU?t=6927)
 
 ## Exit early with error code
 {id: exit-early}
@@ -103,17 +81,6 @@ bitshift operators
 <<
 >>
 ```
-
-## Cross compile
-{id: cross-compile}
-
-How to compile a golang application and distribute to multiple platforms. How to cross-compile golang application.
-
-```
-env GOOS=target-OS GOARCH=target-architecture go build package-import-path
-```
-
-[](https://www.digitalocean.com/community/tutorials/how-to-build-go-executables-for-multiple-platforms-on-ubuntu-16-04)
 
 
 ## Constants

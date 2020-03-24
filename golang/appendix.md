@@ -1,6 +1,30 @@
 # Appendix
 {id: appendix}
 
+
+## Some advanced topics
+{id: advanced-topics}
+
+* struct
+* closures
+* pointers
+* go-routines
+* classes (there are no classes)
+* methods (attached to types), but no classes
+* interfaces
+* Stringers - stringification
+* Cross compilation
+* many standard packages
+* many external packages
+
+## Resources
+{id: resources}
+
+* [Golang tour](https://tour.golang.org/welcome/1)
+* [Video](https://www.youtube.com/watch?v=YS4e4q9oBaU)
+* [Video](https://youtu.be/YS4e4q9oBaU?t=6927)
+
+
 ## Compilation
 {id: compilation}
 
@@ -84,6 +108,18 @@ mips64le
 ```
 GOPATH=$(pwd) go run use.go
 ```
+
+## Cross compile
+{id: cross-compile}
+
+How to compile a golang application and distribute to multiple platforms. How to cross-compile golang application.
+
+```
+env GOOS=target-OS GOARCH=target-architecture go build package-import-path
+```
+
+[](https://www.digitalocean.com/community/tutorials/how-to-build-go-executables-for-multiple-platforms-on-ubuntu-16-04)
+
 
 ## Sort
 {id: sort}
