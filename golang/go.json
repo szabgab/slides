@@ -9,6 +9,7 @@
         "intro.md",
         "complex-data-structures.md",
         "functions.md",
+        "files.md",
         "filesystem.md",
         "testing.md",
         "web_client.md",

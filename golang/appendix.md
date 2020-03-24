@@ -120,6 +120,24 @@ env GOOS=target-OS GOARCH=target-architecture go build package-import-path
 
 [](https://www.digitalocean.com/community/tutorials/how-to-build-go-executables-for-multiple-platforms-on-ubuntu-16-04)
 
+## Install packages
+{id: install-packages}
+{i: get}
+
+```
+go get github.com/nsf/gocode
+```
+
+Installs stuff in ~/go  so we might want to add ~/go/bin  to out PATH.
+In ~/.bashrc add
+
+```
+export PATH=$PATH:~/go/bin
+```
+
+then reload it using `source ~/.bashrc`
+
+
 
 ## Sort
 {id: sort}

@@ -1,4 +1,4 @@
-# Go-lang
+# Introduction to Go-lang
 {id: intro}
 
 ## Features
@@ -49,24 +49,10 @@
 ## Version
 {id: version}
 {i: version}
-{i: get}
 
 ```
 go version
 ```
-
-```
-go get github.com/nsf/gocode
-```
-
-Installs stuff in ~/go  so we might want to add ~/go/bin  to out PATH.
-In ~/.bashrc add
-
-```
-export PATH=$PATH:~/go/bin
-```
-
-then reload it using `source ~/.bashrc`
 
 
 ## Editor/IDE
@@ -112,6 +98,9 @@ go run hello_world.go
 
 ![](examples/hello_go/hello_world.out)
 
+
+* [fmt.Print](https://golang.org/pkg/fmt/#Print)
+
 ```
 go build hello_world.go
 ./hello_world
@@ -134,6 +123,25 @@ go build hello_world.go
 ![](examples/hello_foo_printf/hello_foo_printf.go)
 ![](examples/hello_foo_printf/hello_foo_printf.out)
 
+
+## Scan input strings from STDIN
+{id: scan}
+{i: STDIN}
+{i: Scan}
+
+![](examples/scan/scan.go)
+
+* [fmt.Scan](https://golang.org/pkg/fmt/#Scan)
+
+## Args - (argv) command line arguments
+{id: args-command-line-arguments}
+
+
+![](examples/cli/cli.go)
+
+```
+go run examples/cli/cli.go  hello world
+```
 
 ## Comments
 {id: comments}
@@ -253,15 +261,6 @@ Variables declared without an explicit initial value are given their zero value 
 7%3  remainder
 
 
-## Args - (argv) command line arguments
-{id: args-command-line-arguments}
-
-
-![](examples/cli/cli.go)
-
-```
-go run examples/cli/cli.go  hello world
-```
 
 ## if statement
 {id: if-statement}

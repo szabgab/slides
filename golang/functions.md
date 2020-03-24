@@ -120,12 +120,6 @@ Read from the stdin (standard input) Get input from the keyboard in golang
 ![](examples/read_from_stdin_with_error_handling/read_from_stdin_with_error_handling.go)
 
 
-## Scan input strings
-{id: scan}
-
-![](examples/scan/scan.go)
-
-
 ## matrix
 {id: matrix}
 
