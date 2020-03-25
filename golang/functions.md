@@ -83,30 +83,6 @@ bitshift operators
 ```
 
 
-## Constants
-{id: constants}
-{i: const}
-
-const - constants
-constants can be shadowed as well!  (not a good idea to do)
-iota  (increment by 1 on every use in every constant block of var)  enumeration
-
-```
-var (
-    _ = iota
-    one
-     two
-     three
-)
-
-var (
-    _ = iota + 5
-    six
-    seven
-    eight
-)
-```
-
 ## Read from stdin (keyboard)
 {id: read-from-stdin}
 

@@ -7,7 +7,10 @@
     "version": "1.01",
     "files": [
         "intro.md",
+        "strings.md",
+        "arrays-and-slices.md",
         "complex-data-structures.md",
+        "constants.md",
         "functions.md",
         "files.md",
         "filesystem.md",

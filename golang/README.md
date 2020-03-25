@@ -7,6 +7,7 @@ or implement the String method of the class to be able to use %s
 Not using a declared variable is a compile-time error!
 
 
+* Variable declaration
 * Redeclaration and shadowing
 * Visibility
 * Naming conventions

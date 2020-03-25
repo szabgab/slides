@@ -21,7 +21,7 @@
 {id: resources}
 
 * [Golang tour](https://tour.golang.org/welcome/1)
-* [Video](https://www.youtube.com/watch?v=YS4e4q9oBaU)
+* [7-hours Video of freeCodeCamp](https://www.youtube.com/watch?v=YS4e4q9oBaU)
 * [Video](https://youtu.be/YS4e4q9oBaU?t=6927)
 
 
@@ -96,9 +96,13 @@ mips64le
 ```
 .
 ├── src
-│   └── mymath
-│       └── mymath.go
-└── use.go
+│   └── github.com
+│         └── szabgab
+│                └── myrepo
+│                      └── mymath.go
+├── bin
+├── pkg
+    └── use.go
 ```
 
 ![](examples/package-example/use.go)
@@ -118,7 +122,20 @@ How to compile a golang application and distribute to multiple platforms. How to
 env GOOS=target-OS GOARCH=target-architecture go build package-import-path
 ```
 
-[](https://www.digitalocean.com/community/tutorials/how-to-build-go-executables-for-multiple-platforms-on-ubuntu-16-04)
+[How to build executables](https://www.digitalocean.com/community/tutorials/how-to-build-go-executables-for-multiple-platforms-on-ubuntu-16-04)
+
+
+## Environment variables
+{id: environment-variables}
+
+* GOROOT - path tpo the installation of go
+* PATH=$PATH;$GOROOT/bin  - so the command line can find the go command
+* GOPATH - where my libraries are going to be located
+* PATH=$PATH;$GOPATH/bin
+
+* GOPATH - can have multiple directories in in (but then we have to includ the bin directories related to them one-by-one)
+* The first entry in GOPATH will be used by `go get` to install modules, but all the others will be used to find modules.
+
 
 ## Install packages
 {id: install-packages}
@@ -136,18 +153,4 @@ export PATH=$PATH:~/go/bin
 ```
 
 then reload it using `source ~/.bashrc`
-
-
-
-## Sort
-{id: sort}
-{i: sort}
-
-![](examples/sort/sort.go)
-
-
-## Split and join
-{id: split}
-
-![](examples/split/split.go)
 

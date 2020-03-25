@@ -12,6 +12,13 @@
 * Fast compile times
 * Garbage collected
 
+## Go Designed by
+{id: go-designed-by}
+
+* [Robert Griesemer]
+* [Rob Pike](https://en.wikipedia.org/wiki/Rob_Pike)
+* [Ken Thompson](https://en.wikipedia.org/wiki/Ken_Thompson)
+
 ## Why Golang?
 {id: why-golang}
 
@@ -30,6 +37,8 @@
 * [Go topic on GitHub](https://github.com/topics/go)
 * [Trending Go projects](https://github.com/trending/go?since=monthly)
 
+
+* [Directory of Open Source Projects in Go](https://github.com/golang/go/wiki/Projects)
 
 ## Some companies in Israel
 {id: companies-in-israel}
@@ -104,6 +113,11 @@ go run hello_world.go
 ```
 go build hello_world.go
 ./hello_world
+```
+
+
+```
+go install
 ```
 
 * [Annotated Hello World in Go](https://www.353solutions.com/annotated-go)
