@@ -98,13 +98,6 @@ Read from the stdin (standard input) Get input from the keyboard in golang
 ![](examples/read_from_stdin_with_error_handling/read_from_stdin_with_error_handling.go)
 
 
-## matrix
-{id: matrix}
-
-```
-    var matrix [3][3]int = [3][3]int{ [3]int{1, 0, 0}, [3]int{0, 1, 0}, [3]int{0, 0, 1} }
-    fmt.Println(matrix)
-```
 
 ## get variable type - %T or reflect.TypeOf
 {id: get-variable-type}
@@ -338,3 +331,8 @@ exit status 1
 ![](examples/rpc/rpc.go)
 
 
+## variadic function
+{id: variadic-function}
+
+* unknown number of parameters
+* [variadic functions](https://medium.com/rungo/variadic-function-in-go-5d9b23f4c01a)

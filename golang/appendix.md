@@ -154,3 +154,42 @@ export PATH=$PATH:~/go/bin
 
 then reload it using `source ~/.bashrc`
 
+## Variables
+{id: variables}
+
+Not using a declared variable is a compile-time error!
+
+* Variable declaration
+* Redeclaration and shadowing
+* Visibility
+* Naming conventions
+* Type conversions
+
+## Variables - Naming
+{id: naming-variables}
+
+* lower-case variables are scoped to the current package
+* upper-case variables are exported from the package and globally visible
+* block-scoped variables (e.g. in a function) are only visible in the block
+
+* theURL
+* theHTML
+
+## types
+{id: types}
+
+* strings are just aliases for bytes
+* strings are (generally?) immutable
+
+```
+s := "some string"
+b := []byte(s)    // the ascii or utf values of the characters  ???
+```
+
+
+## multiple return values
+{id: multiple-return-values}
+
+
+## Returning an error from a functions
+{id: returning-an-error-from-a-function}

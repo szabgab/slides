@@ -310,6 +310,8 @@ if cond {
 }
 ```
 
+[if - short statement (right before the condition)](https://tour.golang.org/flowcontrol/6)
+
 
 ## Exercise: rectangular
 {id: exercise-rectangular}
@@ -358,3 +360,8 @@ $ go run calc.go 8 / 2
 
 * implicit break! (no fall-through)
 
+
+## Error Handling
+{id: error-handling}
+
+* functions return the error value

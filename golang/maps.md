@@ -6,6 +6,9 @@
 
 ![](examples/map/map.go)
 
+* [Mutating maps](https://tour.golang.org/moretypes/22)
+
+
 ## Empty Map
 {id: empty-map}
 

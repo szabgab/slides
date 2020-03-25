@@ -49,6 +49,13 @@ Some cases this is what we want, in other cases we'd prefer to have reference / 
 ![](examples/array-assignment-pointer/array_assignment_pointer.out)
 
 
+## Matrix (two dimensional array)
+{id: matrix}
+
+![](examples/array-matrix/array_matrix.go)
+![](examples/array-matrix/array_matrix.out)
+
+
 ## Slice
 {id: slice}
 
@@ -60,3 +67,4 @@ Some cases this is what we want, in other cases we'd prefer to have reference / 
 ![](examples/slice_append/slice_append.go)
 
 * [slice internals](https://blog.golang.org/go-slices-usage-and-internals)
+* [append to slice](https://tour.golang.org/moretypes/15)
