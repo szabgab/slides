@@ -5,7 +5,7 @@ import (
 )
 
 func main() {
-	var res = [3]int{7, 5, 9}
+	var res = [...]int{7, 5, 9}
 
 	fmt.Println(res)
 	fmt.Println(res[1])

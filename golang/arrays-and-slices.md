@@ -7,14 +7,18 @@
 {i: []}
 
 ![](examples/array/array.go)
+![](examples/array/array.out)
 
 * Length is part of the type!
-* Two arrays with different length are also different types
+* Two arrays with different length are also different types.
 
 ## Arrays automatic length
 {id: arrays-automatic-length}
+{i: [...]}
 
-![](examples/array2/array2.go)
+![](examples/array-auto-length/array_auto_length.go)
+![](examples/array-auto-length/array_auto_length.out)
+
 
 ## Array: empty and fill
 {id: arrays-empty-fill}
@@ -48,6 +52,9 @@ Some cases this is what we want, in other cases we'd prefer to have reference / 
 ![](examples/array-assignment-pointer/array_assignment_pointer.go)
 ![](examples/array-assignment-pointer/array_assignment_pointer.out)
 
+{aside}
+This way br is a poiner to ar so they refer to the same data in memory.
+{/aside}
 
 ## Matrix (two dimensional array)
 {id: matrix}
@@ -59,12 +66,51 @@ Some cases this is what we want, in other cases we'd prefer to have reference / 
 ## Slice
 {id: slice}
 
+* A slice is just a very flexible array.
+
 ![](examples/slice/slice.go)
+
+
+## Slice Assign
+{id: slice-assign}
+
+![](examples/slice-assign/slice_assign.go)
+![](examples/slice-assign/slice_assign.out)
+
+## Slice of slice
+{id: slice-of-slice}
+
+
+![](examples/slice-of-slice/slice_of_slice.go)
+![](examples/slice-of-slice/slice_of_slice.out)
+
+* This would work on arrays as well: Slices of an array
 
 ## Slice append
 {id: slice-append}
 
-![](examples/slice_append/slice_append.go)
+![](examples/slice-append/slice_append.go)
+![](examples/slice-append/slice_append.out)
+
+* Both the actual length and the capacity grew
+
 
 * [slice internals](https://blog.golang.org/go-slices-usage-and-internals)
 * [append to slice](https://tour.golang.org/moretypes/15)
+
+
+## Slice remove elements from the end
+{id: slice-remove-from-the-end}
+
+![](examples/slice-remove-last/slice_remove_last_element.go)
+![](examples/slice-remove-last/slice_remove_last_element.out)
+
+* The capacity remaind the same
+
+
+## Pre-allocate capacity for slice with make
+{id: pre-allocate-capacity-for-slice}
+{i: make}
+
+![](examples/slice-pre-allocate/slice_pre_allocate.go)
+![](examples/slice-pre-allocate/slice_pre_allocate.out)
