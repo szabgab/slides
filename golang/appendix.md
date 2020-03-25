@@ -186,10 +186,32 @@ s := "some string"
 b := []byte(s)    // the ascii or utf values of the characters  ???
 ```
 
+## Include and distribute external files
+{id: external-files}
 
-## multiple return values
-{id: multiple-return-values}
+How to include external files (e.g. images, html templates) in a golang application.
 
 
-## Returning an error from a functions
-{id: returning-an-error-from-a-function}
+## goroutine
+{id: goroutine}
+
+
+![](examples/goroutine/goroutine.go)
+
+```
+$ go run goroutine.go
+Welcome
+first 0
+first 1
+first 2
+fourth 0
+second 0
+second 1
+third 0
+third 1
+second 2
+fourth 1
+third 2
+fourth 2
+Done
+```

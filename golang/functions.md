@@ -104,44 +104,6 @@ Read from the stdin (standard input) Get input from the keyboard in golang
 
 ![](examples/get-type/get-type.go)
 
-## Skeleton
-{id: skeleton}
-
-![](examples/skeleton/skeleton.go)
-
-```
-go run skeleton.go
-```
-
-## empty file
-{id: empty-file}
-
-![](examples/empty/empty.go)
-
-```
-go run empty.go
-
-package main: empty.go:1:2: expected 'package', found 'EOF'
-```
-
-## Only package main
-{id: package-main}
-
-![](examples/package-main/package-main.go)
-
-```
-# command-line-arguments
-runtime.package-main_main·f: function main is undeclared in the main package
-```
-
-## Other package name
-{id: other-package-name}
-
-![](examples/qqrq/qqrq.go)
-
-```
-go run: cannot run non-main package
-```
 
 ## go workspace layout
 {id: go-workspace-layout}
@@ -152,10 +114,6 @@ bin/
 pkg/
 ```
 
-## Include and distribute external files
-{id: external-files}
-
-How to include external files (e.g. images, html templates) in a golang application.
 
 ## Variable declaration outside of functions
 {id: variable-declaration-outside-of-functions}
@@ -192,29 +150,6 @@ How to include external files (e.g. images, html templates) in a golang applicat
 
 ![](examples/sum/sum.go)
 
-## goroutine
-{id: goroutine}
-
-
-![](examples/goroutine/goroutine.go)
-
-```
-$ go run goroutine.go
-Welcome
-first 0
-first 1
-first 2
-fourth 0
-second 0
-second 1
-third 0
-third 1
-second 2
-fourth 1
-third 2
-fourth 2
-Done
-```
 
 ## Exercise: Number Guessing game
 {id: number-guessing-game}
@@ -336,3 +271,10 @@ exit status 1
 
 * unknown number of parameters
 * [variadic functions](https://medium.com/rungo/variadic-function-in-go-5d9b23f4c01a)
+
+## multiple return values
+{id: multiple-return-values}
+
+
+## Returning an error from a functions
+{id: returning-an-error-from-a-function}
