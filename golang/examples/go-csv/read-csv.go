@@ -19,14 +19,14 @@ func main() {
     fh, _ := os.Open(filename)
     reader := bufio.NewReader(fh)
     r := csv.NewReader(reader)
-	r.Comma = ';'
+    r.Comma = ';'
 
     records, err := r.ReadAll()
-	if err != nil {
-		log.Fatal(err)
-	}
+    if err != nil {
+        log.Fatal(err)
+    }
 
-	//fmt.Printf("%T\n", records)
+    //fmt.Printf("%T\n", records)
     var sum = 0
     for _, row := range records {
         val, _ := strconv.Atoi(row[2])

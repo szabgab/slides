@@ -1,19 +1,19 @@
 package main
 
 import (
-	"fmt"
-	"io/ioutil"
-	"log"
-	"os"
+    "fmt"
+    "io/ioutil"
+    "log"
+    "os"
 )
 
 func main() {
-	tempDir, err := ioutil.TempDir("", "demo")
-	if err != nil {
-		log.Fatal(err)
-	}
+    tempDir, err := ioutil.TempDir("", "demo")
+    if err != nil {
+        log.Fatal(err)
+    }
 
-	defer os.RemoveAll(tempDir)
+    defer os.RemoveAll(tempDir)
 
-	fmt.Println(tempDir)
+    fmt.Println(tempDir)
 }

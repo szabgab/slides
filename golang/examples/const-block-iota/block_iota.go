@@ -1,26 +1,26 @@
 package main
 
 import (
-	"fmt"
+    "fmt"
 )
 
 const (
-	a = iota
-	b = iota
-	c = iota
+    a = iota
+    b = iota
+    c = iota
 )
 
 const (
-	d = iota
-	e
-	f
+    d = iota
+    e
+    f
 )
 
 func main() {
-	fmt.Println(a)
-	fmt.Println(b)
-	fmt.Println(c)
-	fmt.Println(d)
-	fmt.Println(e)
-	fmt.Println(f)
+    fmt.Println(a)
+    fmt.Println(b)
+    fmt.Println(c)
+    fmt.Println(d)
+    fmt.Println(e)
+    fmt.Println(f)
 }
