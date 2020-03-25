@@ -5,7 +5,9 @@
 {id: hello-function}
 {i: func}
 
-![](examples/go-functions/hello_foo.go)
+![](examples/go-functions/hello_foo_function.go)
+![](examples/go-functions/hello_foo_function.out)
+
 
 ## Function with return value
 {id: function-sith-return}

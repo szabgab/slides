@@ -122,6 +122,17 @@ go install
 
 * [Annotated Hello World in Go](https://www.353solutions.com/annotated-go)
 
+
+## Exercise: Hello World
+{id: exercise-hello-world}
+
+
+* Install go if you don't have it yet
+* Install an editor/IDE with the appropriate plugin for go
+* Check if `go version` is running
+* Write the Hello World program and run it both from the IDE and from the command line
+ 
+
 ## Hello Foo - Println
 {id: hello-foo}
 {i: Println}
