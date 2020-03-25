@@ -68,22 +68,6 @@ they are actually int32
 var r rune = 'a'
 ```
 
-## bitwise operators
-{id: bitwise-operators}
-{i: <<}
-{i: >>}
-{i: &}
-{i: |}
-{i: ^}
-{i: &^}
-
-```
-&, |, ^, &^
-bitshift operators
-<<
->>
-```
-
 
 ## Read from stdin (keyboard)
 {id: read-from-stdin}
@@ -105,14 +89,6 @@ Read from the stdin (standard input) Get input from the keyboard in golang
 ![](examples/get-type/get-type.go)
 
 
-## go workspace layout
-{id: go-workspace-layout}
-
-```
-src/
-bin/
-pkg/
-```
 
 
 ## Variable declaration outside of functions
@@ -190,25 +166,6 @@ The exercise have several levels. Solve them one after the other.
 
 ![](examples/counter-single/single-counter.go)
 
-## Reading CSV file
-{id: reading-csv-file}
-
-![](examples/go-csv/process_csv_file.csv)
-
-* Sum the numbers in the 3rd column
-
-![](examples/go-csv/read-csv.go)
-
-
-```
-go run examples/go-csv/read-csv.go examples/csv/process_csv_file.csv
-```
-
-
-## TODO: JSON
-{id: json}
-
-![](examples/go-json/json-round-trip.go)
 
 ## Logging
 {id: logging}
@@ -239,24 +196,7 @@ exit status 1
 * TODO: log levels?
 * TODO: log function names
 
-## Split on whitespaces
-{id: split-on-whitespaces}
 
-
-![](examples/split-on-whitespace/split-ws.go)
-
-```
-'  hello    space   world 42 '
-[hello space world 42]
-4
-```
-
-* [strings.Fields](https://golang.org/pkg/strings/#Fields)
-
-## Nano
-{id: nano}
-
-![](examples/nano/nano.go)
 
 ## Reverse Polish Calculator
 {id: reverse-polish-calculator}

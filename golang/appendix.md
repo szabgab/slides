@@ -215,3 +215,12 @@ third 2
 fourth 2
 Done
 ```
+
+## go workspace layout
+{id: go-workspace-layout}
+
+```
+src/
+bin/
+pkg/
+```

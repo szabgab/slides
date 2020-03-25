@@ -29,3 +29,22 @@
 
 ![](examples/write_number/write_number_file.go)
 
+## Reading CSV file
+{id: reading-csv-file}
+
+![](examples/go-csv/process_csv_file.csv)
+
+* Sum the numbers in the 3rd column
+
+![](examples/go-csv/read-csv.go)
+
+
+```
+go run examples/go-csv/read-csv.go examples/csv/process_csv_file.csv
+```
+
+
+## TODO: JSON
+{id: json}
+
+![](examples/go-json/json-round-trip.go)
