@@ -21,6 +21,34 @@
 
 ![](examples/array-fill/array-fill.go)
 
+
+## Array change value
+{id: array-change-value}
+
+![](examples/array-change-value/array_change_value.go)
+![](examples/array-change-value/array_change_value.out)
+
+
+## Array assignment (copy)
+{id: array-assignment-copy}
+
+
+![](examples/array-assignment/array_assignment.go)
+![](examples/array-assignment/array_assignment.out)
+
+{aside}
+Assigning an array is by default creates a copy.
+Some cases this is what we want, in other cases we'd prefer to have reference / pointer to the same data in memmory.
+{/aside}
+
+
+## Array assignment (pointer)
+{id: array-assignment-pointer}
+
+![](examples/array-assignment-pointer/array_assignment_pointer.go)
+![](examples/array-assignment-pointer/array_assignment_pointer.out)
+
+
 ## Slice
 {id: slice}
 
