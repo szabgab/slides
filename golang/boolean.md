@@ -8,3 +8,13 @@
 {i: !}
 
 ![](examples/go-boolean/boolean.go)
+
+
+## Boolean truth table
+{id: boolean-truth-table}
+{i: &&}
+{i: ||}
+{i: !}
+
+
+![](examples\boolean-operations\boolean_operations.go)

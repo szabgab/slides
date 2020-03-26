@@ -150,33 +150,6 @@ go install
 ![](examples/hello_foo_printf/hello_foo_printf.go)
 ![](examples/hello_foo_printf/hello_foo_printf.out)
 
-
-## Scan input strings from STDIN
-{id: scan}
-{i: STDIN}
-{i: Scan}
-
-![](examples/scan/scan.go)
-
-* [fmt.Scan](https://golang.org/pkg/fmt/#Scan)
-
-## Args - (argv) command line arguments
-{id: args-command-line-arguments}
-
-
-![](examples/cli/cli.go)
-
-```
-go run examples/cli/cli.go  hello world
-```
-
-## Comments
-{id: comments}
-{i: //}
-
-![](examples/comments/comments.go)
-![](examples/comments/comments.out)
-
 ## Enforce variables types
 {id: enforce-variable-types}
 
@@ -241,8 +214,9 @@ imag(n)
 {id: variable-declaration}
 {i: var}
 
-![](examples/variables/variables.go)
+* There are 3 ways to declare variables
 
+![](examples/variables/variables.go)
 
 ## Converting values to other types - float32, int, string
 {id: converting-types}
@@ -265,6 +239,25 @@ imag(n)
 * [strconv](https://golang.org/pkg/strconv/)
 
 
+
+## Scan input strings from STDIN
+{id: scan}
+{i: STDIN}
+{i: Scan}
+
+![](examples/scan/scan.go)
+
+* [fmt.Scan](https://golang.org/pkg/fmt/#Scan)
+
+
+## Comments
+{id: comments}
+{i: //}
+
+![](examples/comments/comments.go)
+![](examples/comments/comments.out)
+
+
 ## Default values of variables
 {id: default-values}
 
@@ -276,12 +269,6 @@ Variables declared without an explicit initial value are given their zero value 
 
 ![](examples/zero/zero.go)
 
-
-## Integer-based operations
-{id: integer-based-operations}
-
-7/3  is 2 in Go as type does not change during operation
-7%3  remainder
 
 
 
@@ -310,30 +297,43 @@ if cond {
 
 [if - short statement (right before the condition)](https://tour.golang.org/flowcontrol/6)
 
+## Error Handling
+{id: error-handling}
 
-## Exercise: rectangular
-{id: exercise-rectangular}
+* functions return the error value
 
-Write a program that accepts two numbers on the command line
+
+## Exercise: rectangular STDIN
+{id: exercise-rectangular-stdin}
+
+Write a program that ask the user for two numbers on STDIN
 (the width and the length of a rectangular) and prints the area.
 
 For example:
 
 ```
-$ go run rectangular.go 3 4
+$ go run rectangular.go
+width: 3
+length: 4
 12
 ```
 
-## Exercise: calculator
-{id: ecxercise-calculator}
+## Exercise: calculator STDIN
+{id: ecxercise-calculator-stdin}
 
 Write a command-line calculator that works with the 4 basic operators `+-*/` like this:
 
 ```
-$ go run cacl.go 3 + 4
+$ go run cacl.go
+a: 3
+op: +
+b: 4
 7
 
-$ go run calc.go 8 / 2
+$ go run calc.go
+a: 8
+op: /
+b: 2
 4
 ```
 
@@ -341,25 +341,13 @@ $ go run calc.go 8 / 2
 * What happens if we try to divide by 0?
 
 
-## Solution: rectangular
-{id: solution-rectangular}
+## Solution: rectangular STDIN
+{id: solution-rectangular-scan-stdin}
 
-![](examples/rectangular/rectangular.go)
+![](examples/rectangular-scan/rectangular_scan.go)
 
-## Solution: calculator
-{id: solution-calculator-if}
+## Solution: calculator STDIN
+{id: solution-calculator-scan-if}
 
-![](examples/calc-with-if/calc.go)
+![](examples/calc-scan-with-if/calc_scan_if.go)
 
-## Solution: calculator (switch)
-{id: solution-calculator-switch}
-
-![](examples/calc-with-switch/calc.go)
-
-* implicit break! (no fall-through)
-
-
-## Error Handling
-{id: error-handling}
-
-* functions return the error value

@@ -13,5 +13,6 @@ comment
 */
 
 func main() {
-    fmt.Println("Hello World") // comment after statement
+	//    fmt.Println("Golang is bad")
+	fmt.Println("Hello World") // comment after statement
 }

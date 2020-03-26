@@ -7,7 +7,9 @@
     "version": "1.01",
     "files": [
         "intro.md",
+        "cli.md",
         "skeleton.md",
+        "numbers.md",
         "strings.md",
         "arrays-and-slices.md",
         "loops.md",
