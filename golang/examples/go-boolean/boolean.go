@@ -3,10 +3,13 @@ package main
 import "fmt"
 
 func main() {
-    var n bool = true
-    fmt.Println(n)        // true
-    fmt.Printf("%T\n", n) // bool
+	var flag bool = true
+	fmt.Println(flag)        // true
+	fmt.Printf("%T\n", flag) // bool
 
-    n = !n
-    fmt.Println(n) // false
+	flag = !flag
+	fmt.Println(flag) // false
+
+	other := false
+	fmt.Printf("%v %T\n", other, other) // false bool
 }

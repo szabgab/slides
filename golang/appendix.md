@@ -224,3 +224,15 @@ src/
 bin/
 pkg/
 ```
+
+## Directory of 3rd party packages
+{id: directory-of-packages}
+
+* There is no centralized directory of third party packages
+* [pkg.go.dev](https://pkg.go.dev/) is a directory
+* Just search "golang THING"
+
+## Semantic versioning
+{id: semantic-versioning}
+
+* [publishing go modules](https://blog.golang.org/publishing-go-modules)

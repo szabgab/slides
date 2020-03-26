@@ -15,9 +15,11 @@
 ## Go Designed by
 {id: go-designed-by}
 
-* [Robert Griesemer]
+* [Robert Griesemer](https://github.com/griesemer)
 * [Rob Pike](https://en.wikipedia.org/wiki/Rob_Pike)
 * [Ken Thompson](https://en.wikipedia.org/wiki/Ken_Thompson)
+
+* At Google
 
 ## Why Golang?
 {id: why-golang}
@@ -35,7 +37,7 @@
 * [Terraform](https://github.com/hashicorp/terraform)
 
 * [Go topic on GitHub](https://github.com/topics/go)
-* [Trending Go projects](https://github.com/trending/go?since=monthly)
+* [Trending Go projects on Github](https://github.com/trending/go?since=monthly)
 
 
 * [Directory of Open Source Projects in Go](https://github.com/golang/go/wiki/Projects)
@@ -48,14 +50,14 @@
 * [Cisco](https://www.cisco.com/)
 
 
-## Install
+## Install Golang
 {id: install}
 
 * [Golang home](https://golang.org/)
 * [Download](https://golang.org/dl/)
 
 
-## Version
+## Show Installed Version of Golang
 {id: version}
 {i: version}
 
@@ -64,7 +66,7 @@ go version
 ```
 
 
-## Editor/IDE
+## Editor/IDE for Golang
 {id: editor}
 {i: editor}
 {i: IDE}
@@ -262,10 +264,6 @@ imag(n)
 
 * [strconv](https://golang.org/pkg/strconv/)
 
-## Boolean values - bool, true, false
-{id: boolean-values}
-
-![](examples/go-boolean/boolean.go)
 
 ## Default values of variables
 {id: default-values}
