@@ -165,3 +165,14 @@ Skeleton:
 
 ![](examples/count-digits-again/count-digits-again.go)
 
+
+TODO:  append(a, b...)
+shift / pop(0)   a[1:]
+pop()   [:len(a)-1]
+
+stack
+
+a := []int{1, 2, 3, 4, 5, 6}
+b := append(a[:2], a[3:]...)
+weird result in a
+

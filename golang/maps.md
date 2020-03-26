@@ -49,3 +49,12 @@ and: 1
 {id: solution-count-words}
 
 ![](examples/count-words/count-words.go)
+
+create with content
+create empty, with without make
+add entry
+delete(map, name) delete entry
+what happens when we access an element that does not exist?
+pop = mymap[name]
+pop, ok = mymap[name]
+len(mymap)
