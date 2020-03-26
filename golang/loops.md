@@ -4,73 +4,66 @@
 
 ## 3-part for loop
 {id: 3-part-for-loop}
+{i: for}
 
 ![](examples/for-loop/for.go)
 
 ## while-like for loop
 {id: while}
+{i: while}
 
 ![](examples/while/while.go)
 
-## for loop
-{id: for-loop}
 
-![](examples/loop/loop.go)
-
-## for only value (no index)
-{id: for-values}
-
-![](examples/for-values/for-values.go)
-
-
-## infinite loop, break
+## infinite loop
 {id: infinite-loop}
 
-![](examples/infinite-loop/loop.go)
+* You don't have to put a condition in the `for` loop, but that will create an infinite loop.
+* In this case you will need to use `break` or some other way to exit the loop.
+
+![](examples/infinite-loop/infinte_loop.go)
+
+## break out from loop
+{id: break}
+{i: break}
+
+
+![](examples/break-loop/break_loop.go)
 
 
 ## continue
 {id: continue}
+{i: continue}
 
 ![](examples/continue/continue.go)
 
-## Exercise: count digits
-{id: exercise-count-digits}
 
-Skeleton:
+## Exercise: Number Guessing game
+{id: number-guessing-game}
 
-![](examples/count-digits-exercise/count-digits-exercise.go)
+The exercise have several levels. Solve them one after the other.
 
-Expected Output:
+* The computer "thinks" about a random integer between 1 and 20 then asks the player. The player types in an integer. The computer says if it is too small, to big, or direct hit.
+* The user can guess multiple times. Exit only when there was a direct hit.
+* The user can enter x any time and quite the game.
+* The user can enter p any time and the hidden value is printed (cheating)
+* Allow the user to change the game to "move" mode by typing "m". In this mode after every guess after we compared the values change the hidden number by -2, -1, 0, 1, or 2.
+* If the user enters "d" we switch to the "debug-mode" of the game. In this mode, before every turn we print the current hidden value.
 
-```
-0: 0
-1: 1
-2: 0
-3: 2
-4: 0
-5: 0
-6: 1
-7: 3
-8: 0
-9: 1
-```
 
-## Exercise: count digits from string
-{id: exercise-count-digits-from-string}
+## Solution: Number Guessing game - multiple guesses till hit
+{id: solution-number-guessing-game-multiple-guesses}
 
-Skeleton:
+![](examples/game2/game2.go)
 
-![](examples/count-digits-skeleton/skeleton.go)
+## Solution: Number Guessing game - allow x
+{id: solution-number-guessing-game-allow-x}
 
-## Solution: count digits
-{id: solution-count-digits}
+![](examples/game3/game3.go)
 
-![](examples/count-digits/count-digits.go)
+## Solution: Number Guessing game - allow m
+{id: solution-number-guessing-game-allow-m}
 
-## Solution: count digits from string
-{id: solution-count-digits-from-string}
-
-![](examples/count-digits-again/count-digits-again.go)
+![](examples/game5/game5.go)
 
 

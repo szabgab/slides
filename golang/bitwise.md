@@ -1,4 +1,4 @@
-# bitwise
+# Bitwise
 {id: bitwise}
 
 ## bitwise operators

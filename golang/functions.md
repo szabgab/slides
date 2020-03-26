@@ -115,33 +115,6 @@ Read from the stdin (standard input) Get input from the keyboard in golang
 ![](examples/sum/sum.go)
 
 
-## Exercise: Number Guessing game
-{id: number-guessing-game}
-
-The exercise have several levels. Solve them one after the other.
-
-* The computer "thinks" about a random integer between 0 and 200 then asks the player. The player types in an integer. The computer says if it is too small, to big, or direct hit.
-* The user can guess multiple times. Exit only when there was a direct hit.
-* The user can enter x any time and quite the game.
-* The user can enter p any time and the hidden value is printed (cheating)
-* Allow the user to change the game to "move" mode by typing "m". In this mode after every guess after we compared the values change the hidden number by -2, -1, 0, 1, or 2.
-
-
-## Solution: Number Guessing game - multiple guesses till hit
-{id: solution-number-guessing-game-multiple-guesses}
-
-![](examples/game2/game2.go)
-
-## Solution: Number Guessing game - allow x
-{id: solution-number-guessing-game-allow-x}
-
-![](examples/game3/game3.go)
-
-## Solution: Number Guessing game - allow m
-{id: solution-number-guessing-game-allow-m}
-
-![](examples/game5/game5.go)
-
 
 ## Solution: single counter
 {id: solution-single-counter}
