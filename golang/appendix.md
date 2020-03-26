@@ -5,7 +5,6 @@
 ## Some advanced topics
 {id: advanced-topics}
 
-* struct
 * closures
 * pointers
 * go-routines

@@ -58,3 +58,4 @@ what happens when we access an element that does not exist?
 pop = mymap[name]
 pop, ok = mymap[name]
 len(mymap)
+

@@ -273,26 +273,6 @@ Variables declared without an explicit initial value are given their zero value 
 
 ![](examples/if/if.go)
 
-## if, else, else if
-{id: if-else-statements}
-
-```
-if cond {
-}
-
-if cond {
-} else {
-}
-
-
-if cond {
-} else if cond {
-} else {
-}
-```
-
-[if - short statement (right before the condition)](https://tour.golang.org/flowcontrol/6)
-
 
 ## Error Handling
 {id: error-handling}
