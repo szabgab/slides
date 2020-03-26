@@ -61,6 +61,9 @@
 {id: version}
 {i: version}
 
+
+* In the CMD window of MS Windows or in your Linux/Mac terminal type:
+
 ```
 go version
 ```
@@ -73,7 +76,7 @@ go version
 
 * [Visual Studio Code](https://code.visualstudio.com/) (It has plugins for Golang)
 * [Other editors and IDEs](https://golang.org/doc/editors.html)
-
+* Any text editor
 
 ## Hello World
 {id: hello-world}
@@ -87,7 +90,14 @@ go version
 
 ![](examples/hello_go/hello_world.go)
 
+```
+go run hello_world.go
+```
+
+![](examples/hello_go/hello_world.out)
+
 * main function is the entry point of every program
+* [fmt.Print](https://golang.org/pkg/fmt/#Print)
 
 {aside}
 Every Go program has a main file that must start with "package main" and it must have a function called `main`.
@@ -97,29 +107,21 @@ In order to print something to the screen we first need to import the `fmt` clas
 
 We save this with a .go extension. Then we can run it from the command line by typing `go run` and the name of your file.
 This will compile the code into a temporary directory and then run it.
+{/aside}
 
 
+## Build Hello World exe
+{id: build-hello-world}
+
+{aside}
 If you'd like to crete a distributable version of your code you can type `go build` and the name of your file. That will create an executable
 with the same name (just without the extension). This is specific to the Operating System and platform you currently use. Later we'll see how 
 {/aside}
 
-```
-go run hello_world.go
-```
-
-![](examples/hello_go/hello_world.out)
-
-
-* [fmt.Print](https://golang.org/pkg/fmt/#Print)
 
 ```
 go build hello_world.go
 ./hello_world
-```
-
-
-```
-go install
 ```
 
 * [Annotated Hello World in Go](https://www.353solutions.com/annotated-go)
@@ -143,8 +145,8 @@ go install
 ![](examples/hello_foo/hello_foo.go)
 ![](examples/hello_foo/hello_foo.out)
 
-## Hello Foo - Printf
-{id: hello-foo-printf}
+## Hello Bar - Printf
+{id: hello-bar-printf}
 {i: Printf}
 
 ![](examples/hello_foo_printf/hello_foo_printf.go)
@@ -205,6 +207,7 @@ imag(n)
 
 ## Show inferred variable type - Printf %T
 {id: show-variable-type}
+{i: Printf}
 {i: %T}
 
 ![](examples/show-type/show-type.go)
@@ -217,6 +220,18 @@ imag(n)
 * There are 3 ways to declare variables
 
 ![](examples/variables/variables.go)
+
+## Default values of variables
+{id: default-values}
+
+Variables declared without an explicit initial value are given their zero value as default.
+
+* 0 for numeric types,
+* false for the boolean type, and
+* "" (the empty string) for strings.
+
+![](examples/zero/zero.go)
+
 
 ## Converting values to other types - float32, int, string
 {id: converting-types}
@@ -233,6 +248,10 @@ imag(n)
 
 ## Converting strings to numbers - strconv, ParseFloat, Atoi, Itoa
 {id: converting-strings-to-numbers}
+{i: strconv}
+{i: Atoi}
+{i: Itoa}
+{i: ParseFloat}
 
 ![](examples/convert-string/convert-string.go)
 
@@ -248,29 +267,6 @@ imag(n)
 ![](examples/scan/scan.go)
 
 * [fmt.Scan](https://golang.org/pkg/fmt/#Scan)
-
-
-## Comments
-{id: comments}
-{i: //}
-
-![](examples/comments/comments.go)
-![](examples/comments/comments.out)
-
-
-## Default values of variables
-{id: default-values}
-
-Variables declared without an explicit initial value are given their zero value as default.
-
-* 0 for numeric types,
-* false for the boolean type, and
-* "" (the empty string) for strings.
-
-![](examples/zero/zero.go)
-
-
-
 
 ## if statement
 {id: if-statement}
@@ -297,17 +293,39 @@ if cond {
 
 [if - short statement (right before the condition)](https://tour.golang.org/flowcontrol/6)
 
+
 ## Error Handling
 {id: error-handling}
 
 * functions return the error value
 
+## Scan STDIN convert to number
+{id: scan-stdin-convert-to-number}
+{i: Scan}
+{i: Atoi}
+{i: ParseFloat}
+{i: Exit}
+
+![](examples/scan-stdin/scan_stdin_convert.go)
+
+
+## Comments
+{id: comments}
+{i: //}
+
+![](examples/comments/comments.go)
+![](examples/comments/comments.out)
+
+
+
+
+
 
 ## Exercise: rectangular STDIN
-{id: exercise-rectangular-stdin}
+{id: exercise-rectangular-scan-stdin}
 
-Write a program that ask the user for two numbers on STDIN
-(the width and the length of a rectangular) and prints the area.
+Write a program that asks the user for two numbers on STDIN
+(the width and the length of a rectangular) and prints the area and the circumference.
 
 For example:
 
@@ -315,7 +333,20 @@ For example:
 $ go run rectangular.go
 width: 3
 length: 4
-12
+Area: 12
+Circumference: 14
+```
+
+## Exercise: circle STDIN
+{id: exercise-circle-scan-stdin}
+
+Write a program that asks the user for a number the radius of a circle and prints out the area and the circumference of the circle.
+
+```
+go run circle.go
+radius: 2
+Area: 
+Circumference:
 ```
 
 ## Exercise: calculator STDIN
@@ -345,6 +376,11 @@ b: 2
 {id: solution-rectangular-scan-stdin}
 
 ![](examples/rectangular-scan/rectangular_scan.go)
+
+## Solution: circle STDIN
+{id: solution-circle-scan-stdin}
+
+![](examples/circle-scan/circle_scan.go)
 
 ## Solution: calculator STDIN
 {id: solution-calculator-scan-if}

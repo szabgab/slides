@@ -3,7 +3,24 @@
 
 ## Integer-based operations
 {id: integer-based-operations}
+{i: %}
 
-7/3  is 2 in Go as type does not change during operation
-7%3  remainder
+![](examples/numbers-integers/numbers_integers.go)
+
+## Floating-based operations
+{id: floating-based-operations}
+
+* No modulo operator
+
+![](examples/numbers-float/numbers_float.go)
+
+
+## Mixed-based operations
+{id: mixed-based-operations}
+
+* Cannot have operation between differen types
+
+![](examples/numbers-mix/numbers_mix.go)
+![](examples/numbers-mix/numbers_mix.out)
+
 

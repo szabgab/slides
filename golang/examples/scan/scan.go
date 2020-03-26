@@ -9,4 +9,5 @@ func main() {
 	fmt.Print("Your name: ")
 	fmt.Scan(&name)
 	fmt.Printf("Hello %s, how are you?\n", name)
+	fmt.Printf("Type %T\n", name) // string
 }

@@ -1,0 +1,2 @@
+# command-line-arguments
+.\numbers_mix.go:11:11: invalid operation: a + b (mismatched types int and float64)

@@ -1,7 +1,8 @@
 package main
 
-import "fmt"
-
+import (
+	"fmt"
+)
 func main() {
 	name := "Foo"
 	fmt.Println("Hello", name)

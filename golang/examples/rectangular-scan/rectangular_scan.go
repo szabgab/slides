@@ -23,8 +23,8 @@ func main() {
 		fmt.Println(width)
 		fmt.Println(length)
 		area := width * length
-		fmt.Printf("The area of the rectangular is: %v\n", area)
-
+		circumference := 2 * (width + length)
+		fmt.Printf("Area: %v\n", area)
+		fmt.Printf("Cirumference: %v\n", circumference)
 	}
-
 }

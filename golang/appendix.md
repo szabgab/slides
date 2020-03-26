@@ -238,3 +238,10 @@ pkg/
 {id: semantic-versioning}
 
 * [publishing go modules](https://blog.golang.org/publishing-go-modules)
+
+## go install
+{id: go-install}
+
+```
+go install
+```
