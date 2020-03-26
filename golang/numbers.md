@@ -24,3 +24,8 @@
 ![](examples/numbers-mix/numbers_mix.out)
 
 
+## Random with seed
+{id: random-with-seed}
+
+![](examples/random_with_seed/random_with_seed.go)
+

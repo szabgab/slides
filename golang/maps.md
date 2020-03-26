@@ -49,15 +49,3 @@ and: 1
 {id: solution-count-words}
 
 ![](examples/count-words/count-words.go)
-
-
-## Random with seed
-{id: random-with-seed}
-
-![](examples/random_with_seed/random_with_seed.go)
-
-## Single and double quotes
-{id: single-and-double-quotes}
-
-* Single quote is for single characters
-* Double quote is for strings

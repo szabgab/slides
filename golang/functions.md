@@ -58,17 +58,6 @@ Implement a function that accepts a positive integer (n) and prints out the firs
 ![](examples/exit/code.go)
 
 
-## Runes
-{id: runes}
-
-```
-rune - any utf-32 character
-r := 'a'   // single quotes!
-they are actually int32
-var r rune = 'a'
-```
-
-
 ## Read from stdin (keyboard)
 {id: read-from-stdin}
 
@@ -87,7 +76,6 @@ Read from the stdin (standard input) Get input from the keyboard in golang
 {id: get-variable-type}
 
 ![](examples/get-type/get-type.go)
-
 
 
 

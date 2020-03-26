@@ -1,6 +1,23 @@
 # Strings
 {id: strings}
 
+## Single and double quotes
+{id: single-and-double-quotes}
+
+* Double quote is for strings
+* Single quote is for Runes
+
+## Runes
+{id: runes}
+
+```
+rune - any utf-32 character
+r := 'a'   // single quotes!
+they are actually int32
+var r rune = 'a'
+```
+
+
 ## Sort
 {id: sort}
 {i: sort}
@@ -27,3 +44,4 @@
 ```
 
 * [strings.Fields](https://golang.org/pkg/strings/#Fields)
+
