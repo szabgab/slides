@@ -268,8 +268,8 @@ Variables declared without an explicit initial value are given their zero value 
 
 * [fmt.Scan](https://golang.org/pkg/fmt/#Scan)
 
-## if statement
-{id: if-statement}
+## if else statement
+{id: if-else-statement-intro}
 
 ![](examples/if/if.go)
 

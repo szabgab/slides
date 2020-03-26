@@ -1,4 +1,4 @@
-# Boolean
+# Boolean - Logical operators
 {id: boolean}
 
 ## Boolean values - bool, true, false

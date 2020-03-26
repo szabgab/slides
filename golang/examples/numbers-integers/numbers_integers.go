@@ -20,6 +20,19 @@ func main() {
 	fmt.Printf("div %v\n", div) // integer divided by integer is integer
 	fmt.Printf("modulus %v\n", mod)
 
-	div_float := float64(b)/float64(a)
-	fmt.Printf("div float: %v", div_float)
+	divFloat := float64(b) / float64(a)
+	fmt.Printf("div float: %v\n", divFloat)
+
+	x := 1
+	fmt.Printf("x: %v\n", x)
+	x += 2
+	fmt.Printf("x: %v\n", x)
+	x++
+	fmt.Printf("x: %v\n", x)
+	x--
+	fmt.Printf("x: %v\n", x)
+
+	// no prefix autoincrement and autodecrement
+	// ++x
+	// --x
 }
