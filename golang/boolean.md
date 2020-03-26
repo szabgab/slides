@@ -17,4 +17,4 @@
 {i: !}
 
 
-![](examples\boolean-operations\boolean_operations.go)
+![](examples/boolean-operations/boolean_operations.go)
