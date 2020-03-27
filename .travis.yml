@@ -18,3 +18,4 @@ matrix:
         - "1.14"
       script:
         - go version
+        - go run tests/check.go
