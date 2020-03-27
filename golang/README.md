@@ -7,10 +7,6 @@ https://www.callicoder.com/golang-functions/
 
 variables
 how much are they mutable?
-do they have methods - nope we only have functions. At least on the basic variables.
-
-converting string to number
-(show examples converting "2x"  "" etc) error handling
 
 
 count digits

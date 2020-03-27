@@ -38,6 +38,19 @@
 ![](examples/continue/continue.go)
 
 
+## loop on two variables
+{id: loop-on-two-variables}
+
+
+![](examples/loop-on-two/loop_on_two.go)
+
+
+## break out from internal loop (labels)
+{id: break-out-from-internal-loop}
+
+![](examples/for-label/for_label.go)
+
+
 ## Exercise: Number Guessing game
 {id: number-guessing-game}
 
