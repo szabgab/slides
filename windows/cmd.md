@@ -85,4 +85,17 @@ rmdir           (remove directory)
 dir *.txt
 ren       (rename, move)
 ```
+## ERRORLEVEL
+{id: errorlevel}
+{i: ERRORLEVEL}
+
+```
+dir
+echo %ERRORLEVEL%
+0
+
+dir nosuch
+echo %ERRORLEVEL%
+1
+```
 
