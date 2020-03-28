@@ -28,3 +28,9 @@ Not using a declared variable is a compile-time error!
 
 ![](examples/variable-no-redeclaration/variable_no_redeclaration.go)
 
+
+## Variable scope
+{id: variable-sciope}
+
+![](examples/variable-scope/scope.go)
+
