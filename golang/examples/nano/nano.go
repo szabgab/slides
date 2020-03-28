@@ -1,13 +1,13 @@
 package main
 
 import (
-    "fmt"
-    "time"
+	"fmt"
+	"time"
 )
 
 func main() {
-    now := time.Now()
-    fmt.Println(now)
-    fmt.Println(now.Unix())
-    fmt.Println(now.UnixNano())
+	now := time.Now()
+	fmt.Println(now)
+	fmt.Println(now.Unix())
+	fmt.Println(now.UnixNano())
 }

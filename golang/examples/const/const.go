@@ -1,11 +1,11 @@
 package main
 
 import (
-    "fmt"
+	"fmt"
 )
 
 func main() {
-    const pi float32 = 3.14
-    fmt.Println(pi)
-    //p i = 23.14
+	const pi float32 = 3.14
+	fmt.Println(pi)
+	//p i = 23.14
 }
