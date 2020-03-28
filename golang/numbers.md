@@ -44,7 +44,7 @@
 {i: time.Now().Unix}
 
 
-![](examples/random_with_seed/random_with_seed.go)
+![](examples/random-with-seed/random_with_seed.go)
 
 ## Exercise: Number Guessing Game - level 1
 {id: exercise-number-guessing-game-level-1}

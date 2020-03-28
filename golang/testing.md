@@ -15,9 +15,9 @@
 {id: simple-test}
 {i: test}
 
-![](examples/simple_test/comp.go)
+![](examples/simple-test/comp.go)
 
-![](examples/simple_test/comp_test.go)
+![](examples/simple-test/comp_test.go)
 
 To run the tests:
 

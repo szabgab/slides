@@ -5,4 +5,4 @@
 ## http get request
 {id: http-get-request}
 
-![](examples/http_get/http_get.go)
+![](examples/http-get/http_get.go)

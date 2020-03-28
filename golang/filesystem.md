@@ -26,7 +26,7 @@ Error: stat hello/world: permission denied
 {i: ioutil}
 {i: ReadDir}
 
-![](examples/list_directory/listdir.go)
+![](examples/list-directory/listdir.go)
 
 
 ## Get Current Working Directory (cwd)

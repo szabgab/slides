@@ -95,13 +95,13 @@ go version
 {i: build}
 {i: fmt}
 
-![](examples/hello_go/hello_world.go)
+![](examples/hello-go/hello_world.go)
 
 ```
 go run hello_world.go
 ```
 
-![](examples/hello_go/hello_world.out)
+![](examples/hello-go/hello_world.out)
 
 * main function is the entry point of every program
 * [fmt.Print](https://golang.org/pkg/fmt/#Print)
@@ -149,15 +149,15 @@ go build hello_world.go
 {i: Println}
 {i: var}
 
-![](examples/hello_foo/hello_foo.go)
-![](examples/hello_foo/hello_foo.out)
+![](examples/hello-foo/hello_foo.go)
+![](examples/hello-foo/hello_foo.out)
 
 ## Hello Bar - Printf
 {id: hello-bar-printf}
 {i: Printf}
 
-![](examples/hello_foo_printf/hello_foo_printf.go)
-![](examples/hello_foo_printf/hello_foo_printf.out)
+![](examples/hello-foo-printf/hello_foo_printf.go)
+![](examples/hello-foo-printf/hello_foo_printf.out)
 
 ## Enforce variables types
 {id: enforce-variable-types}

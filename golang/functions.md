@@ -13,7 +13,7 @@
 {id: function-sith-return}
 {i: return}
 
-![](examples/function_return/comp.go)
+![](examples/function-return/comp.go)
 
 ## Defer
 {id: defer}
@@ -67,12 +67,12 @@ echo %ERRORLEVEL%
 
 Read from the stdin (standard input) Get input from the keyboard in golang
 
-![](examples/read_from_stdin/read_from_stdin.go)
+![](examples/read-from-stdin/read_from_stdin.go)
 
 ## Read from stdin (keyboard) with error handling
 {id: read-from-stdin-with-error-handling}
 
-![](examples/read_from_stdin_with_error_handling/read_from_stdin_with_error_handling.go)
+![](examples/read-from-stdin-with-error-handling/read_from_stdin_with_error_handling.go)
 
 
 
