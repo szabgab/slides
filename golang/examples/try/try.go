@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"path/filepath"
 	//	"runtime"
 	//	"os"
 )
@@ -10,11 +11,9 @@ import (
 // Defer remove temporary directory
 
 func main() {
-	var a int
-	a, b := 23, 12
-	fmt.Println(a)
-	fmt.Println(b)
-
+	path := filepath.Join("main", "sub", "other")
+	fmt.Println(path)
+	strings.HasSuffix("foobar", "bar")
 	// _, file, _, _ := runtime.Caller(0)
 	// fmt.Println(file)
 

@@ -62,3 +62,11 @@ The `defer os.RemoveAll(tempDir)` will make sure the directory is removed when w
 
 * [path/filepath.Walk](https://golang.org/pkg/path/filepath/#Walk)
 
+
+## Join parts of a directory or filepath
+{id: join-filepath}
+{i: Join}
+
+
+![](examples/join-filepath/join_filepath.go)
+
