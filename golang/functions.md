@@ -35,6 +35,17 @@ two
 one
 ```
 
+## Deferred cd in a function
+{id: deferred-cd-in-a-function}
+
+![](examples/cd-and-back/deferred_cd.go)
+
+
+## Defer does not work in if-statements
+{id: defer-not-in-if}
+
+![](examples/defer-no-in-if/defer_no_in_if.go)
+
 ## Exercise: Fibonacci
 {id: exercise-fibonacci}
 
@@ -165,3 +176,19 @@ exit status 1
 
 ## Returning an error from a functions
 {id: returning-an-error-from-a-function}
+
+
+## Callback function
+{id: callback-function}
+
+As it is right now, the `run` function can only accept callback functions without any parameter
+
+![](examples/callback-function/callback_function.go)
+
+
+## Callback function with one parameter
+{id: callback-function-with-one-parameter}
+
+
+![](examples/callback-function-param/callback_function_param.go)
+
