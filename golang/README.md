@@ -14,7 +14,3 @@ count digits
 for _, digit := range digits {
     count[ digit ]++
 }
-
-Defer
-Panic
-Recover

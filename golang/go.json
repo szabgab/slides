@@ -26,6 +26,7 @@
         "filesystem.md",
         "variables.md",
         "regexes.md",
+        "panic.md",
         "testing.md",
         "web_client.md",
         "appendix.md"

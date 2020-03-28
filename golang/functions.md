@@ -46,6 +46,15 @@ one
 
 ![](examples/defer-no-in-if/defer_no_in_if.go)
 
+
+## Defer and parameters
+{id: defer-with-parameters}
+
+![](examples/defer-and-parameters/defer_and_parameters.go)
+
+* The deffered function will see the its parameter when we defer the function not when it is executed
+
+
 ## Exercise: Fibonacci
 {id: exercise-fibonacci}
 
