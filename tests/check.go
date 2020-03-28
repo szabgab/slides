@@ -19,7 +19,7 @@ func main() {
 
     fmt.Println("Checking Go finished")
     if errors > 0 {
-        fmt.Printf("%v errors found", errors)
+        fmt.Printf("%v errors found\n", errors)
         os.Exit(1)
     }
     os.Exit(0)
