@@ -1,6 +1,7 @@
 package main
 
 import (
+    "bufio"
     "fmt"
     "os"
     "strings"
@@ -10,12 +11,13 @@ import (
 )
 
 func main() {
-    fmt.Println("Checking the Go slides")
+    fmt.Println("Checking Go started")
     root := "golang"
 
     errors := 0
     errors += check_main_dir(root)
     errors += check_examples_dir(root)
+    errors += check_examples(root)
 
     fmt.Println("Checking Go finished")
     if errors > 0 {
@@ -25,23 +27,84 @@ func main() {
     os.Exit(0)
 }
 
+func check_examples(root string) int {
+// TODO: make sure filenames are unique across the examples
+// TODO: should filename be using underscores intsead of dashes?
+    errors := 0
+    path := filepath.Join(root, "examples")
+    dirs, err := ioutil.ReadDir(path)
+    if err != nil {
+        fmt.Printf("Error: %v", err)
+        os.Exit(1)
+    }
+    for _, dir := range dirs {
+        if dir.Name() == "numbers.txt" {
+            continue
+        }
+        dirpath := filepath.Join(path, dir.Name())
+        //fmt.Println(dirpath)
+        files, err := ioutil.ReadDir(dirpath)
+        if err != nil {
+            fmt.Printf("Error: %v", err)
+            os.Exit(1)
+        }
+        for _, file := range files {
+            //fmt.Printf("   %v\n", file.Name())
+            if strings.HasSuffix(file.Name(), ".go") {
+                errors += check_file(filepath.Join(path, dir.Name(), file.Name()))
+            }
+            // TODO: If there is a .go file and an .out file, run the .go file and compare the output
+        }
+    }
+    return errors
+}
+
+// If there is a .go file check if the indentation is always tabs
+func check_file(filepath string) int {
+    //fmt.Println(filepath)
+    errors := 0
+   fh, err := os.Open(filepath)
+    if err != nil {
+        fmt.Printf("Error: %v", err)
+        os.Exit(1)
+    }
+   reader := bufio.NewReader(fh)
+   for true {
+       line, _ := reader.ReadString('\n')
+            if strings.HasSuffix(line, " ") {
+                fmt.Printf("Space suffix in file '%v' line: '%v'\n", filepath, line)
+                errors++
+            }
+            if strings.HasPrefix(line, " ") {
+                fmt.Printf("Space prefix in file '%v' line: '%v'\n", filepath, line)
+                errors++
+            }
+
+       if (line == "") {
+           break
+       }
+    }
+
+    return errors
+}
+
 func check_examples_dir(root string) int {
     errors := 0
     path := filepath.Join(root, "examples")
-    files, err := ioutil.ReadDir(path)
+    dirs, err := ioutil.ReadDir(path)
     if err != nil {
         fmt.Printf("Error: %v", err)
         os.Exit(1)
     }
 	validExampleDir := regexp.MustCompile(`^[a-z0-9-]+$`)
     //fmt.Println(path)
-    for _, f := range files {
-        if f.Name() == "numbers.txt" {
+    for _, dir := range dirs {
+        if dir.Name() == "numbers.txt" {
             continue
         }
-	    res := validExampleDir.MatchString(f.Name())
+	    res := validExampleDir.MatchString(dir.Name())
         if !res {
-            fmt.Printf("Invalid character in dirname: '%v'\n", f.Name())
+            fmt.Printf("Invalid character in dirname: '%v'\n", dir.Name())
             errors++
         }
     }
@@ -55,12 +118,12 @@ func check_main_dir(root string) int {
         fmt.Printf("Error: %v", err)
         os.Exit(1)
     }
-    for _, f := range files {
-        if f.Name() == ".vscode" || f.Name() == "examples" || f.Name() == "go.json" {
+    for _, file := range files {
+        if file.Name() == ".vscode" || file.Name() == "examples" || file.Name() == "go.json" {
             continue
         }
-        if ! strings.HasSuffix(f.Name(), ".md") {
-            fmt.Printf("Unrecognized entry: %v\n", f.Name())
+        if ! strings.HasSuffix(file.Name(), ".md") {
+            fmt.Printf("Unrecognized entry: %v\n", file.Name())
             errors++
         }
     }
