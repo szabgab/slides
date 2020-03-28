@@ -6,6 +6,7 @@ import (
     "strings"
     "path/filepath"
     "io/ioutil"
+	"regexp"
 )
 
 func main() {
@@ -32,14 +33,17 @@ func check_examples_dir(root string) int {
         fmt.Printf("Error: %v", err)
         os.Exit(1)
     }
+	validExampleDir := regexp.MustCompile(`^[a-z0-9-]+$`)
     fmt.Println(path)
-    // TODO check for valic characters instead of invalid ones: a-z-
     for _, f := range files {
-        if strings.Contains(f.Name(), "_") {
-            fmt.Printf("Underscore in dirname: %v\n", f.Name())
+        if f.Name() == "numbers.txt" {
+            continue
+        }
+	    res := validExampleDir.MatchString(f.Name())
+        if !res {
+            fmt.Printf("Invalid character in dirname: '%v'\n", f.Name())
             errors++
         }
-        //fmt.Printf("%v\n", f.Name())
     }
     return errors
 }
