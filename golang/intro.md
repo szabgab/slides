@@ -21,6 +21,13 @@
 
 * At Google
 
+## Open Souce
+{id: open-source}
+
+
+* [Source code](https://github.com/golang/go)
+
+
 ## Why Golang?
 {id: why-golang}
 

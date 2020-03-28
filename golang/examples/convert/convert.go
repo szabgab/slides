@@ -1,22 +1,20 @@
 package main
 
 import (
-    "fmt"
+	"fmt"
 )
 
 func main() {
-    var n = 65
-    var q = float32(n)
-    fmt.Println(q)          // 65
-    fmt.Printf("%T\n", q)   // float32
+	n := 65
+	q := float32(n)
+	fmt.Printf("%v %T\n", n, n) //  65 int
+	fmt.Printf("%v %T\n", q, q) // 65 float32
 
-    var z = 42.23
-    var p = int(z)
-    fmt.Println(p)          // 42
-    fmt.Printf("%T\n", p)   // int
+	z := 42.23
+	p := int(z)
+	fmt.Printf("%v %T\n", z, z) // 42.23 float64
+	fmt.Printf("%v %T\n", p, p) // 42 int
 
-
-    var ns = string(n)
-    fmt.Println(ns)         // A
-    fmt.Printf("%T\n", ns)  // string
+	ns := string(n)
+	fmt.Printf("%v %T\n", ns, ns) // A, string
 }
