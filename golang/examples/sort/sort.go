@@ -1,17 +1,17 @@
 package main
 
 import (
-    "fmt"
-    "strings"
-    "sort"
+	"fmt"
+	"sort"
+	"strings"
 )
 
 func main() {
-    text := "Hello World!"
-    fmt.Println(text)
+	text := "Hello World!"
+	fmt.Println(text)
 
-    chars := strings.Split(text, "")
-    fmt.Println(chars)
-    sort.Strings(chars)
-    fmt.Println(chars)
+	chars := strings.Split(text, "")
+	fmt.Println(chars)
+	sort.Strings(chars)
+	fmt.Println(chars)
 }

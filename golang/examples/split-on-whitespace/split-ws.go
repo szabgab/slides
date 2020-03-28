@@ -1,14 +1,14 @@
 package main
 
 import (
-    "fmt"
-    "strings"
+	"fmt"
+	"strings"
 )
 
 func main() {
-    expression := "  hello    space   world 42 "
-    fmt.Printf("'%s'\n", expression)
-    parts := strings.Fields(expression)
-    fmt.Println(parts)
-    fmt.Println(len(parts))
+	expression := "  hello    space   world 42 "
+	fmt.Printf("'%s'\n", expression)
+	parts := strings.Fields(expression)
+	fmt.Println(parts)
+	fmt.Println(len(parts))
 }

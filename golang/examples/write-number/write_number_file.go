@@ -1,19 +1,18 @@
 package main
 
 import (
-    "fmt"
-    "os"
+	"fmt"
+	"os"
 )
 
 func main() {
-    var filename = "data.txt"
+	var filename = "data.txt"
 
-    answer := 42
+	answer := 42
 
-    var fh, err = os.Create(filename)
-    if err == nil {
-        fh.WriteString(fmt.Sprintf("%d\n", answer))
-        fh.Close()
-    }
+	var fh, err = os.Create(filename)
+	if err == nil {
+		fh.WriteString(fmt.Sprintf("%d\n", answer))
+		fh.Close()
+	}
 }
-

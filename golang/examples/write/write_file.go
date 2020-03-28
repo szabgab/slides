@@ -1,17 +1,16 @@
 package main
 
 import (
-    "os"
+	"os"
 )
 
 func main() {
-    var filename = "data.txt"
+	var filename = "data.txt"
 
-    text := "Some text"
-    var fh, err = os.Create(filename)
-    if err == nil {
-        fh.WriteString(text + "\n")
-        fh.Close()
-    }
+	text := "Some text"
+	var fh, err = os.Create(filename)
+	if err == nil {
+		fh.WriteString(text + "\n")
+		fh.Close()
+	}
 }
-
