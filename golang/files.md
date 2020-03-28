@@ -50,7 +50,7 @@ go run examples/go-csv/read-csv.go examples/csv/process_csv_file.csv
 ![](examples/go-json/json-round-trip.go)
 
 
-## Sum of numbers in a file
+## TODO: Sum of numbers in a file
 {id: sum-of-numbers}
 
 ![](examples/sum/sum.go)

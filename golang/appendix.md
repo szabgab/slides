@@ -153,26 +153,6 @@ export PATH=$PATH:~/go/bin
 
 then reload it using `source ~/.bashrc`
 
-## Variables
-{id: variables}
-
-Not using a declared variable is a compile-time error!
-
-* Variable declaration
-* Redeclaration and shadowing
-* Visibility
-* Naming conventions
-* Type conversions
-
-## Variables - Naming
-{id: naming-variables}
-
-* lower-case variables are scoped to the current package
-* upper-case variables are exported from the package and globally visible
-* block-scoped variables (e.g. in a function) are only visible in the block
-
-* theURL
-* theHTML
 
 ## types
 {id: types}
@@ -259,3 +239,5 @@ go install
 just playing with code examples
 
 ![](examples/try/try.go)
+
+

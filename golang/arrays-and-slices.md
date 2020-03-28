@@ -115,7 +115,7 @@ This way br is a poiner to ar so they refer to the same data in memory.
 ![](examples/slice-pre-allocate/slice_pre_allocate.go)
 ![](examples/slice-pre-allocate/slice_pre_allocate.out)
 
-## for loop in slice
+## for loop in slice - iterate over slice
 {id: for-loop}
 {i: range}
 

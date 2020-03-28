@@ -24,6 +24,7 @@
         "files.md",
         "formatting.md",
         "filesystem.md",
+        "variables.md",
         "regexes.md",
         "testing.md",
         "web_client.md",

@@ -45,3 +45,9 @@ var r rune = 'a'
 
 * [strings.Fields](https://golang.org/pkg/strings/#Fields)
 
+
+## iterate over characters in a string
+{id: for-loop-string}
+{i: range}
+
+![](examples/loop-string/loop_string.go)
