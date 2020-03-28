@@ -52,11 +52,15 @@ Implement a function that accepts a positive integer (n) and prints out the firs
 
 
 
-## Exit early with error code
+## Exit early with exit code
 {id: exit-early}
 
 ![](examples/exit/code.go)
 
+```
+echo $0
+echo %ERRORLEVEL%
+```
 
 ## Read from stdin (keyboard)
 {id: read-from-stdin}
@@ -101,18 +105,6 @@ Read from the stdin (standard input) Get input from the keyboard in golang
 {id: solution-rectangular-stdin}
 
 ![](examples/rectangular-stdin/rectangular.go)
-
-## Sprintf and Sprintln
-{id: sprintf}
-
-![](examples/sprintf/sprintf.go)
-
-![](examples/sprintln/sprintln.go)
-
-## Sum of numbers in a file
-{id: sum-of-numbers}
-
-![](examples/sum/sum.go)
 
 
 

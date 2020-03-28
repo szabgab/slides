@@ -22,6 +22,7 @@
         "bitwise.md",
         "time.md",
         "files.md",
+        "formatting.md",
         "filesystem.md",
         "regexes.md",
         "testing.md",

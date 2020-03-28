@@ -244,3 +244,18 @@ pkg/
 ```
 go install
 ```
+
+## Caller filename
+{id: caller-filename}
+{i: caller}
+{i: runtime}
+
+![](examples/caller-filename/caller_filename.go)
+
+
+## Try
+{id: try}
+
+just playing with code examples
+
+![](examples/try/try.go)
