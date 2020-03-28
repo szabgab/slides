@@ -4,7 +4,7 @@ import (
     "fmt"
     "os"
     "strings"
-    //"path/filepath"
+    "path/filepath"
     "io/ioutil"
 )
 
@@ -12,6 +12,39 @@ func main() {
     fmt.Println("Checking the Go slides")
     root := "golang"
 
+    errors := 0
+    errors += check_main_dir(root)
+    errors += check_examples_dir(root)
+
+    fmt.Println("Checking Go finished")
+    if errors > 0 {
+        fmt.Printf("%v errors found", errors)
+        os.Exit(1)
+    }
+    os.Exit(0)
+}
+
+func check_examples_dir(root string) int {
+    errors := 0
+    path := filepath.Join(root, "examples")
+    files, err := ioutil.ReadDir(path)
+    if err != nil {
+        fmt.Printf("Error: %v", err)
+        os.Exit(1)
+    }
+    fmt.Println(path)
+    // TODO check for valic characters instead of invalid ones: a-z-
+    for _, f := range files {
+        if strings.Contains(f.Name(), "_") {
+            fmt.Printf("Underscore in dirname: %v\n", f.Name())
+            errors++
+        }
+        //fmt.Printf("%v\n", f.Name())
+    }
+    return errors
+}
+
+func check_main_dir(root string) int {
     errors := 0
     files, err := ioutil.ReadDir(root)
     if err != nil {
@@ -23,16 +56,11 @@ func main() {
             continue
         }
         if ! strings.HasSuffix(f.Name(), ".md") {
-            fmt.Println(f.Name())
+            fmt.Printf("Unrecognized entry: %v\n", f.Name())
             errors++
         }
     }
-    if errors > 0 {
-        fmt.Printf("%v errors found", errors)
-        os.Exit(1)
-    }
-    os.Exit(0)
-//    walk()
+    return errors
 }
 
 
