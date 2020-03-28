@@ -34,7 +34,7 @@ func check_examples_dir(root string) int {
         os.Exit(1)
     }
 	validExampleDir := regexp.MustCompile(`^[a-z0-9-]+$`)
-    fmt.Println(path)
+    //fmt.Println(path)
     for _, f := range files {
         if f.Name() == "numbers.txt" {
             continue
