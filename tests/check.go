@@ -3,13 +3,35 @@ package main
 import (
     "fmt"
     "os"
-    "path/filepath"
+    "strings"
+    //"path/filepath"
+    "io/ioutil"
 )
 
 func main() {
     fmt.Println("Checking the Go slides")
     root := "golang"
+
+    errors := 0
     files, err := ioutil.ReadDir(root)
+    if err != nil {
+        fmt.Printf("Error: %v", err)
+        os.Exit(1)
+    }
+    for _, f := range files {
+        if f.Name() == ".vscode" || f.Name() == "examples" || f.Name() == "go.json" {
+            continue
+        }
+        if ! strings.HasSuffix(f.Name(), ".md") {
+            fmt.Println(f.Name())
+            errors++
+        }
+    }
+    if errors > 0 {
+        fmt.Printf("%v errors found", errors)
+        os.Exit(1)
+    }
+    os.Exit(0)
 //    walk()
 }
 
