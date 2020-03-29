@@ -34,3 +34,7 @@ Not using a declared variable is a compile-time error!
 
 ![](examples/variable-scope/scope.go)
 
+
+
+* [PascalCase](https://wiki.c2.com/?PascalCase)
+* [camelCase](https://en.wikipedia.org/wiki/Camel_case)

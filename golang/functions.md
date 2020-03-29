@@ -54,6 +54,11 @@ one
 
 * The deffered function will see the its parameter when we defer the function not when it is executed
 
+## Defer and slice
+{id: defer-and-slice}
+
+![](examples/defer-and-slice/defer_and_slice.go)
+
 
 ## Exercise: Fibonacci
 {id: exercise-fibonacci}

@@ -27,6 +27,7 @@
         "variables.md",
         "regexes.md",
         "panic.md",
+        "pointers.md",
         "testing.md",
         "web_client.md",
         "appendix.md"
