@@ -28,6 +28,7 @@
         "regexes.md",
         "panic.md",
         "pointers.md",
+        "logging.md",
         "testing.md",
         "web_client.md",
         "appendix.md"
