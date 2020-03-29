@@ -5,8 +5,8 @@ import (
 )
 
 func main() {
-	fmt.Println("Hello")
-	fmt.Println(add(2, 3))
+	res := add(2, 3)
+	fmt.Println(res)
 }
 
 func add(a, b int) int {

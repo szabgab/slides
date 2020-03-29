@@ -1,8 +1,15 @@
 # Functions
 {id: functions}
 
-## Create hello function
-{id: hello-function}
+## Hello World function
+{id: hello-world-function}
+{i: func}
+
+![](examples/function-hello-world/hello_world_function.go)
+
+
+## Hello You function (passing parameter)
+{id: hello-you-function}
 {i: func}
 
 ![](examples/go-functions/hello_foo_function.go)
@@ -13,7 +20,60 @@
 {id: function-sith-return}
 {i: return}
 
-![](examples/function-return/comp.go)
+![](examples/function-return/add_function.go)
+
+
+## variadic function
+{id: variadic-function}
+
+* unknown number of parameters
+* [variadic functions](https://medium.com/rungo/variadic-function-in-go-5d9b23f4c01a)
+
+![](examples/function-sum/sum_function.go)
+
+
+## multiple return values
+{id: multiple-return-values}
+
+
+## Returning an error from a functions
+{id: returning-an-error-from-a-function}
+
+
+## Callback function
+{id: callback-function}
+
+As it is right now, the `run` function can only accept callback functions without any parameter
+
+![](examples/callback-function/callback_function.go)
+
+
+## Callback function with one parameter
+{id: callback-function-with-one-parameter}
+
+
+![](examples/callback-function-param/callback_function_param.go)
+
+
+
+## Variable declaration outside of functions
+{id: variable-declaration-outside-of-functions}
+
+![](examples/variable-declaration/declaration.go)
+
+```
+// var i int
+// i = 42
+
+// var i int = 42
+// i := 42   // (is the same but this one cannot be used on the package level
+
+// var (
+//    i = 42
+//    j = 23
+// )
+```
+
 
 ## Defer
 {id: defer}
@@ -77,54 +137,7 @@ Implement a function that accepts a positive integer (n) and prints out the firs
 
 
 
-## Exit early with exit code
-{id: exit-early}
 
-![](examples/exit/code.go)
-
-```
-echo $0
-echo %ERRORLEVEL%
-```
-
-## Read from stdin (keyboard)
-{id: read-from-stdin}
-
-Read from the stdin (standard input) Get input from the keyboard in golang
-
-![](examples/read-from-stdin/read_from_stdin.go)
-
-## Read from stdin (keyboard) with error handling
-{id: read-from-stdin-with-error-handling}
-
-![](examples/read-from-stdin-with-error-handling/read_from_stdin_with_error_handling.go)
-
-
-
-## get variable type - %T or reflect.TypeOf
-{id: get-variable-type}
-
-![](examples/get-type/get-type.go)
-
-
-
-## Variable declaration outside of functions
-{id: variable-declaration-outside-of-functions}
-
-![](examples/variable-declaration/declaration.go)
-
-```
-// var i int
-// i = 42
-
-// var i int = 42
-// i := 42   // (is the same but this one cannot be used on the package level
-
-// var (
-//    i = 42
-//    j = 23
-// )
-```
 
 ## Solution: rectangular (STDIN)
 {id: solution-rectangular-stdin}
@@ -139,41 +152,4 @@ Read from the stdin (standard input) Get input from the keyboard in golang
 ![](examples/counter-single/single-counter.go)
 
 
-
-
-## Reverse Polish Calculator
-{id: reverse-polish-calculator}
-
-* TODO: finish this
-
-![](examples/rpc/rpc.go)
-
-
-## variadic function
-{id: variadic-function}
-
-* unknown number of parameters
-* [variadic functions](https://medium.com/rungo/variadic-function-in-go-5d9b23f4c01a)
-
-## multiple return values
-{id: multiple-return-values}
-
-
-## Returning an error from a functions
-{id: returning-an-error-from-a-function}
-
-
-## Callback function
-{id: callback-function}
-
-As it is right now, the `run` function can only accept callback functions without any parameter
-
-![](examples/callback-function/callback_function.go)
-
-
-## Callback function with one parameter
-{id: callback-function-with-one-parameter}
-
-
-![](examples/callback-function-param/callback_function_param.go)
 
