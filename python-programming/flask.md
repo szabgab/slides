@@ -1,5 +1,5 @@
 # Python Flask
-{id: python-flask}
+{id: flask}
 
 
 ## Python Flask intro
