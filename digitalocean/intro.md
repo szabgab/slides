@@ -92,7 +92,8 @@ upime
 * Try to visit: http://IP
 
 ```
-sudo apt-get install nginx
+apt-get update
+apt-get install nginx
 ```
 
 * Try to visit: http://IP
@@ -111,6 +112,7 @@ which python3
 
 ```
 apt-get install python3
+apt-get install virtualenv
 ```
 
 ## Add the application source code
