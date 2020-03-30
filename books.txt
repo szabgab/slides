@@ -7,6 +7,7 @@ css/css.json,css
 collab-dev/collab.json,collab-dev
 data-science/data.json,data-science
 dart-programming/dart.json,dart-programming
+digitalocean/do.json,digitalocean
 docker/docker.json,docker
 google-gcp/gcp.json,google-gcp
 git/git.json,git
