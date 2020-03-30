@@ -70,6 +70,8 @@ def main():
             for book in available_books:
                 if name == book['dir']:
                     books.append(book)
+        if not names and not books:
+            exit("Could not find any valid names or books")
     else:
         names = available_names
         books = available_books
