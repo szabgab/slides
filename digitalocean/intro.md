@@ -85,6 +85,17 @@ ssh root@IP
 upime
 ```
 
+
+## Update packages
+{id: update-packages}
+
+```
+apt-get update
+apt-get dist-upgrade
+reboot
+```
+
+
 ## Install nginx
 {id: install-nginx}
 
@@ -92,7 +103,6 @@ upime
 * Try to visit: http://IP
 
 ```
-apt-get update
 apt-get install nginx
 ```
 
@@ -100,6 +110,10 @@ apt-get install nginx
 
 ```
 ls -l /etc/nginx/sites-enabled/
+rm /etc/nginx/sites-enabled/default
+ln -s /home/dev/python-flask-demo/config/demo-nginx.conf /etc/nginx/sites-enabled/demo-nginx.conf
+
+/var/log/nginx/python-flask-demo.error.log
 ```
 
 ## Install python3
@@ -115,6 +129,9 @@ apt-get install python3
 apt-get install virtualenv
 ```
 
+adduser --gecos '' --disabled-password  dev
+
+
 ## Add the application source code
 {id: add-application-source-code}
 
@@ -122,10 +139,20 @@ apt-get install virtualenv
 
 ```
 git clone https://github.com/szabgab/python-flask-demo.git
+cd python-flask-demo
+virtualenv -p python3 venv3
 ```
 
 * By upload using scp:
 
 ## Install and configur uwsgi
 {id: install-uwsgi}
+
+
+aptitude install uwsgi
+aptitude install uwsgi-plugin-python3
+ln -s /home/dev/python-flask-demo/config/demo-uwsgi.ini /etc/uwsgi/apps-enabled/demo-uwsgi.ini
+service uwsgi restart
+
+/var/log/uwsgi/app/demo-uwsgi.log
 
