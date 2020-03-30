@@ -32,12 +32,15 @@
 ![](examples/function-sum/sum_function.go)
 
 
-## multiple return values
+## Multiple return values
 {id: multiple-return-values}
 
+![](examples/function-multiple-return/multiple_return_function.go)
 
 ## Returning an error from a functions
 {id: returning-an-error-from-a-function}
+
+![](examples/function-return-error/return_error.go)
 
 
 ## Callback function
@@ -53,6 +56,30 @@ As it is right now, the `run` function can only accept callback functions withou
 
 
 ![](examples/callback-function-param/callback_function_param.go)
+
+
+## Anonymous functions
+{id: anonimous-function}
+
+![](examples/function-anonimous/anonymous_function.go)
+
+
+## TODO: pass by value, pass by reference
+{id: functions-todo}
+
+* return by value: return variable
+* return by reference:  return *variable
+
+* return named value:
+
+func f() (  result int) {
+    ...
+    return
+}
+
+does not seem to be very readable
+
+
 
 
 

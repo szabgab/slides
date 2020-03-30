@@ -1,17 +1,13 @@
 package main
 
-import (
-	"fmt"
-	//	"runtime"
-	//	"os"
-)
+import "fmt"
+
+//	"runtime"
+//	"os"
 
 func main() {
-
-	//	greet()
-	//fmt.Println("Hello World")
+	fmt.Println("Hello World")
 	//fmt.Println(os.Executable)
-
 	// filename := os.Args[1]
 	// //fmt.Println(filename)
 	// var fh *os.File
@@ -35,9 +31,4 @@ func main() {
 	// 		break
 	// 	}
 	// }
-
-}
-
-func greet() {
-	fmt.Println("Hello World")
 }
