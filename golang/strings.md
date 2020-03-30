@@ -51,3 +51,12 @@ var r rune = 'a'
 {i: range}
 
 ![](examples/loop-string/loop_string.go)
+
+## String Contains, HasPrefix, HasSuffix
+{id: string-contains}
+{i: Contains}
+{i: HasPrefix}
+{i: HasSuffix}
+
+
+!{}(examples/suffix-prefix/suffix_prefix.go)

@@ -114,10 +114,15 @@ one
 
 * The deffered function will see the its parameter when we defer the function not when it is executed
 
+
 ## Defer and slice
 {id: defer-and-slice}
 
 ![](examples/defer-and-slice/defer_and_slice.go)
+
+
+## TODO: Defer remove temporary directory
+{id: defer-remove-temporary-directory}
 
 
 ## Exercise: Fibonacci
