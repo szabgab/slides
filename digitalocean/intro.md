@@ -117,6 +117,7 @@ apt-get install python3
 {id: add-application-source-code}
 
 * By cloning:
+
 ```
 git clone https://github.com/szabgab/python-flask-demo.git
 ```
