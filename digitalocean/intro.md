@@ -132,17 +132,15 @@ apt-get install virtualenv
 adduser --gecos '' --disabled-password  dev
 ```
 
+## Add the application source code
+{id: add-application-source-code}
+
+
 Switch to the user:
 
 ```
 su - dev
 ```
-
-## Add the application source code
-{id: add-application-source-code}
-
-
-* As user dev:
 
 * By cloning:
 
@@ -152,8 +150,15 @@ cd python-flask-demo
 virtualenv -p python3 venv3
 ```
 
-* By upload using scp:
+* By upload using scp, run the command on your desktop:
 
+```
+scp -r README.md root@IP:
+```
+
+{aside}
+This is just an example, you need to zip the files on your computer, scp the zip file and unzip in user dev.
+{/aside}
 
 ## Configure nginx
 {id: configure-ngin}
@@ -162,7 +167,11 @@ virtualenv -p python3 venv3
 ls -l /etc/nginx/sites-enabled/
 rm /etc/nginx/sites-enabled/default
 ln -s /home/dev/python-flask-demo/config/demo-nginx.conf /etc/nginx/sites-enabled/demo-nginx.conf
+```
 
+If there are problems you can take a look at this file:
+
+```
 /var/log/nginx/python-flask-demo.error.log
 ```
 
@@ -171,10 +180,16 @@ ln -s /home/dev/python-flask-demo/config/demo-nginx.conf /etc/nginx/sites-enable
 {id: install-uwsgi}
 
 
-aptitude install uwsgi
-aptitude install uwsgi-plugin-python3
+```
+apt-get install uwsgi
+apt-get install uwsgi-plugin-python3
 ln -s /home/dev/python-flask-demo/config/demo-uwsgi.ini /etc/uwsgi/apps-enabled/demo-uwsgi.ini
 service uwsgi restart
+```
 
+If there is a problem you might find help by looking at the log file:
+
+```
 /var/log/uwsgi/app/demo-uwsgi.log
+```
 
