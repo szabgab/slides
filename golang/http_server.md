@@ -14,6 +14,18 @@
 ![](examples/text-template/text_template.go)
 
 
+## text/template with map
+{id: text-template-map}
+
+![](examples/text-template-map/text_template_map.go)
+
+## text/template with struct
+{id: text-template-struct}
+
+
+![](examples/text-template-struct/text_template_struct.go)
+
+
 ## html/template
 {id: html-template}
 

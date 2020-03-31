@@ -233,14 +233,6 @@ go install
 ![](examples/caller-filename/caller_filename.go)
 
 
-## Try
-{id: try}
-
-just playing with code examples
-
-![](examples/try/try.go)
-
-
 ## Exit early with exit code
 {id: exit-early}
 
@@ -278,3 +270,9 @@ Read from the stdin (standard input) Get input from the keyboard in golang
 
 ![](examples/rpc/rpc.go)
 
+
+## os.Executable
+{id: os-executable}
+{i: Eecutable}
+
+![](examples/os-executable/os_executable.go)

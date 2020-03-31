@@ -99,8 +99,9 @@ This way br is a poiner to ar so they refer to the same data in memory.
 * [append to slice](https://tour.golang.org/moretypes/15)
 
 
-## Slice remove elements from the end
+## Slice remove elements from the end (pop)
 {id: slice-remove-from-the-end}
+{i: pop}
 
 ![](examples/slice-remove-last/slice_remove_last_element.go)
 ![](examples/slice-remove-last/slice_remove_last_element.out)

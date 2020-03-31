@@ -34,8 +34,8 @@ https://github.com/stretchr/testify
 go get github.com/stretchr/testify
 to add asserts
 
-* [](https://www.youtube.com/watch?v=ttKgBttwzrg)
-* [](https://www.youtube.com/watch?v=_B_vCEiO4mA)
+* [video](https://www.youtube.com/watch?v=ttKgBttwzrg)
+* [video](https://www.youtube.com/watch?v=_B_vCEiO4mA)
 
 
 Mat Ryer

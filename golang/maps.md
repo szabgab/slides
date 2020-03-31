@@ -50,6 +50,12 @@ and: 1
 
 ![](examples/count-words/count-words.go)
 
+## map of slices
+{id: map-of-slices}
+
+![](examples/map-of-slices/map_of_slices.go)
+
+
 create with content
 create empty, with without make
 add entry
@@ -58,4 +64,3 @@ what happens when we access an element that does not exist?
 pop = mymap[name]
 pop, ok = mymap[name]
 len(mymap)
-
