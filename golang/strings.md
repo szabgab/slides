@@ -35,7 +35,7 @@ var r rune = 'a'
 {id: split-on-whitespaces}
 
 
-![](examples/split-on-whitespace/split-ws.go)
+![](examples/split-on-whitespace/split_on_whitespace.go)
 
 ```
 '  hello    space   world 42 '

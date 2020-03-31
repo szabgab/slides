@@ -302,7 +302,7 @@ Variables declared without an explicit initial value are given their zero value 
 {i: Itoa}
 {i: ParseFloat}
 
-![](examples/convert-string/convert-string.go)
+![](examples/convert-string/convert_string.go)
 
 * [strconv](https://golang.org/pkg/strconv/)
 

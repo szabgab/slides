@@ -23,7 +23,7 @@
 ## Array: empty and fill
 {id: arrays-empty-fill}
 
-![](examples/array-fill/array-fill.go)
+![](examples/array-fill/array_fill.go)
 
 
 ## Array change value
