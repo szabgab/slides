@@ -17,7 +17,7 @@ package main: empty.go:1:2: expected 'package', found 'EOF'
 ## Only package main
 {id: package-main}
 
-![](examples/package-main/package-main.go)
+![](examples/package-main/package_main.go)
 
 ```
 # command-line-arguments

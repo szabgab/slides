@@ -132,7 +132,7 @@ This way br is a poiner to ar so they refer to the same data in memory.
 
 Skeleton:
 
-![](examples/count-digits-exercise/count-digits-exercise.go)
+![](examples/count-digits-exercise/count_digits_exercise.go)
 
 Expected Output:
 
@@ -159,12 +159,12 @@ Skeleton:
 ## Solution: count digits
 {id: solution-count-digits}
 
-![](examples/count-digits/count-digits.go)
+![](examples/count-digits/count_digits.go)
 
 ## Solution: count digits from string
 {id: solution-count-digits-from-string}
 
-![](examples/count-digits-again/count-digits-again.go)
+![](examples/count-digits-again/count_digits_again.go)
 
 
 TODO:  append(a, b...)

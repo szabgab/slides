@@ -12,17 +12,17 @@
 ## Empty Map
 {id: empty-map}
 
-![](examples/empty-map/empty-map.go)
+![](examples/empty-map/empty_map.go)
 
 ## Map with data
 {id: map-with-data}
 
-![](examples/map-with-data/map-with-data.go)
+![](examples/map-with-data/map_with_data.go)
 
 ## Delete Map element
 {id: delete-map-element}
 
-![](examples/delete-key/delete-key.go)
+![](examples/delete-key/delete_key.go)
 
 ## Map element exists
 {id: map-element-exists}

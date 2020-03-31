@@ -259,7 +259,7 @@ imag(n)
 {i: Printf}
 {i: %T}
 
-![](examples/show-type/show-type.go)
+![](examples/show-type/show_type.go)
 
 
 ## Variable declaration (var)
