@@ -260,7 +260,7 @@ Read from the stdin (standard input) Get input from the keyboard in golang
 ## get variable type - %T or reflect.TypeOf
 {id: get-variable-type}
 
-![](examples/get-type/get-type.go)
+![](examples/get-type/get_type.go)
 
 
 ## Reverse Polish Calculator

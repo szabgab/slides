@@ -171,7 +171,7 @@ Implement a function that accepts a positive integer (n) and prints out the firs
 ## Solution: Fibonacci recursive
 {id: solution-fibonacci-recursive}
 
-![](examples/fibonacci-recursive/fibonacci-recursive.go)
+![](examples/fibonacci-recursive/fibonacci_recursive.go)
 
 
 
