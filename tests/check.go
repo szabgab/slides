@@ -30,8 +30,9 @@ func main() {
 }
 
 func check_examples(root string) int {
+	validExampleFilename := regexp.MustCompile(`^[a-z0-9_.]+$`)
+	// We make sure filenames are unique across the examples.
 	names := make(map[string]string)
-// TODO: make sure filenames are unique across the examples
 // TODO: should filename be using underscores intsead of dashes?
 	errors := 0
 	path := filepath.Join(root, "examples")
@@ -53,6 +54,12 @@ func check_examples(root string) int {
 		}
 		for _, file := range files {
 			//log.Printf("   %v\n", file.Name())
+			res := validExampleFilename.MatchString(file.Name())
+			if !res {
+				fmt.Printf("Invalid character in filename: '%v' '%v'\n", dir.Name(), file.Name())
+				errors++
+			}
+
 			value, ok := names[file.Name()]
 			if ok {
 				fmt.Sprintf("Duplicate: '%s' in both '%s' and '%s'", file.Name(), value, dir.Name())
