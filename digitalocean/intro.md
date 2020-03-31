@@ -108,13 +108,9 @@ apt-get install nginx
 
 * Try to visit: http://IP
 
-```
-ls -l /etc/nginx/sites-enabled/
-rm /etc/nginx/sites-enabled/default
-ln -s /home/dev/python-flask-demo/config/demo-nginx.conf /etc/nginx/sites-enabled/demo-nginx.conf
+* Edit /var/www/html/index.nginx-debian.html and see the changes are reflected on the web page.
 
-/var/log/nginx/python-flask-demo.error.log
-```
+
 
 ## Install python3
 {id: install-python3}
@@ -129,11 +125,23 @@ apt-get install python3
 apt-get install virtualenv
 ```
 
-adduser --gecos '' --disabled-password  dev
+## Create user to have the application
+{id: create-user}
 
+```
+adduser --gecos '' --disabled-password  dev
+```
+
+Switch to the user:
+```
+su - dev
+```
 
 ## Add the application source code
 {id: add-application-source-code}
+
+
+* As user dev:
 
 * By cloning:
 
@@ -145,7 +153,20 @@ virtualenv -p python3 venv3
 
 * By upload using scp:
 
-## Install and configur uwsgi
+
+## Configure nginx
+{id: configure-ngin}
+
+```
+ls -l /etc/nginx/sites-enabled/
+rm /etc/nginx/sites-enabled/default
+ln -s /home/dev/python-flask-demo/config/demo-nginx.conf /etc/nginx/sites-enabled/demo-nginx.conf
+
+/var/log/nginx/python-flask-demo.error.log
+```
+
+
+## Install and configure uwsgi
 {id: install-uwsgi}
 
 
