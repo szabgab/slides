@@ -18,6 +18,12 @@ func main() {
 	parts := strings.Fields(expression)
 	//fmt.Println(parts)
 	//fmt.Println(len(parts))
+	result := rpc(parts)
+	fmt.Println(result)
+
+}
+
+func rpc(parts []string) float64 {
 	stack := []float64{}
 	for _, value := range parts {
 		//fmt.Println(value)
@@ -28,8 +34,7 @@ func main() {
 			}
 			a := stack[len(stack)-1]
 			stack = stack[:len(stack)-1]
-			fmt.Println(a)
-			continue
+			return a
 		}
 		if value == "+" || value == "*" {
 			log.Println(value)
@@ -59,4 +64,5 @@ func main() {
 		log.Println(number)
 		stack = append(stack, number)
 	}
+	return 0
 }
