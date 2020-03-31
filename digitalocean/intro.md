@@ -133,6 +133,7 @@ adduser --gecos '' --disabled-password  dev
 ```
 
 Switch to the user:
+
 ```
 su - dev
 ```
