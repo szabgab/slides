@@ -31,14 +31,23 @@ func main() {
 			fmt.Println(a)
 			continue
 		}
-		if value == "+" {
-			log.Println("+")
+		if value == "+" || value == "*" {
+			log.Println(value)
 			if len(stack) < 2 {
 				panic("Operator + received too early")
 			}
 			a := stack[len(stack)-1]
 			b := stack[len(stack)-2]
-			c := a + b
+			var c float64
+			switch value {
+			case "+":
+				c = a + b
+			case "*":
+				c = a * b
+			default:
+				panic("How could this happen?")
+			}
+
 			stack = stack[:len(stack)-2]
 			stack = append(stack, c)
 			continue
