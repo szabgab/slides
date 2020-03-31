@@ -187,7 +187,7 @@ Implement a function that accepts a positive integer (n) and prints out the firs
 ## Solution: single counter
 {id: solution-single-counter}
 
-![](examples/counter-single/single-counter.go)
+![](examples/counter-single/counter_single.go)
 
 
 

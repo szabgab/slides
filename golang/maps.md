@@ -32,7 +32,7 @@
 ## Exercise count words
 {id: exercise-count-words}
 
-![](examples/count-words-skeleton/count-words-skeleton.go)
+![](examples/count-words-skeleton/count_words_skeleton.go)
 
 Expected output:
 
@@ -48,7 +48,7 @@ and: 1
 ## Solution count words
 {id: solution-count-words}
 
-![](examples/count-words/count-words.go)
+![](examples/count-words/count_words.go)
 
 ## map of slices
 {id: map-of-slices}

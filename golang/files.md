@@ -32,22 +32,22 @@
 ## Reading CSV file
 {id: reading-csv-file}
 
-![](examples/go-csv/process_csv_file.csv)
+![](examples/read-csv/process_csv_file.csv)
 
 * Sum the numbers in the 3rd column
 
-![](examples/go-csv/read-csv.go)
+![](examples/read-csv/read_csv.go)
 
 
 ```
-go run examples/go-csv/read-csv.go examples/csv/process_csv_file.csv
+go run examples/read-csv/read_csv.go examples/csv/process_csv_file.csv
 ```
 
 
 ## TODO: JSON
 {id: json}
 
-![](examples/go-json/json-round-trip.go)
+![](examples/json-round-trip/json_round_trip.go)
 
 
 ## TODO: Sum of numbers in a file
