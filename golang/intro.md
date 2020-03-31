@@ -52,9 +52,10 @@
 ## Some companies in Israel
 {id: companies-in-israel}
 
-* [Gett](https://gett.com/)
 * [Apester](https://apester.com/)
 * [Cisco](https://www.cisco.com/)
+* [Gett](https://gett.com/)
+* [Radware](https://www.radware.com/)
 
 
 ## Install Golang
@@ -62,7 +63,7 @@
 
 * [Golang home](https://golang.org/)
 * [Download](https://golang.org/dl/)
-
+* Install in the standard location offered by the installer!
 
 ## Show Installed Version of Golang
 {id: version}
@@ -134,6 +135,23 @@ go build hello_world.go
 * [Annotated Hello World in Go](https://www.353solutions.com/annotated-go)
 
 
+## Separate directories! - main redeclared in this block
+{id: separate-directories}
+
+* Put each example / exercise in a separate directory
+* As each package must have only one main() function.
+
+![](examples/same/same_one.go)
+![](examples/same/same_two.go)
+
+```
+go run .
+```
+
+![](examples/same/same.out)
+
+
+
 ## Exercise: Hello World
 {id: exercise-hello-world}
 
@@ -155,15 +173,39 @@ go build hello_world.go
 ## Hello Bar - Printf
 {id: hello-bar-printf}
 {i: Printf}
+{i: %s}
+
+{aside}
+When printing values of variables it might be better to use the Printf function as it allows us to use placeholders like %s. Specifically %s stands for strings.
+{/aside}
 
 ![](examples/hello-foo-printf/hello_foo_printf.go)
 ![](examples/hello-foo-printf/hello_foo_printf.out)
 
+
+## Hello Bar - Printf %v
+{id: hello-bar-printf-v}
+{i: Printf}
+{i: %v}
+
+{aside}
+In some case it is better to use %v as it is type-agnostic
+{/aside}
+
+![](examples/hello-foo-printf-v/hello_foo_printf_v.go)
+![](examples/hello-foo-printf-v/hello_foo_printf_v.out)
+
+
 ## Enforce variables types
 {id: enforce-variable-types}
 
+{aside}
+Each variable in Go has a type and Go will not let you mix values and variables of 
+different types. When we creaed the variable with the `:=`
+operator it automatically deducted from the assigned value.
+{/aside}
+
 ![](examples/variable/variable.go)
-{i: var}
 
 ```
 # command-line-arguments

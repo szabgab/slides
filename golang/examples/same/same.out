@@ -1,0 +1,3 @@
+# _/home/gabor/work/slides/golang/examples/same
+./same_two.go:7:6: main redeclared in this block
+	previous declaration at ./same_one.go:7:6
