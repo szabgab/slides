@@ -180,7 +180,7 @@ Implement a function that accepts a positive integer (n) and prints out the firs
 ## Solution: rectangular (STDIN)
 {id: solution-rectangular-stdin}
 
-![](examples/rectangular-stdin/rectangular.go)
+![](examples/rectangular-stdin/rectangular_stdin.go)
 
 
 

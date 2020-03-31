@@ -154,7 +154,7 @@ Expected Output:
 
 Skeleton:
 
-![](examples/count-digits-skeleton/skeleton.go)
+![](examples/count-digits-skeleton/count_digits_skeleton.go)
 
 ## Solution: count digits
 {id: solution-count-digits}

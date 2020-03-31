@@ -50,11 +50,11 @@ $ go run calc.go 8 / 2
 ## Solution: calculator CLI
 {id: solution-calculator-if}
 
-![](examples/calc-with-if/calc.go)
+![](examples/calc-with-if/calc_with_if.go)
 
 ## Solution: calculator (switch)
 {id: solution-calculator-switch}
 
-![](examples/calc-with-switch/calc.go)
+![](examples/calc-with-switch/calc_with_switch.go)
 
 * implicit break! (no fall-through)

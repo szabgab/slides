@@ -8,10 +8,11 @@ import (
 	"path/filepath"
 	"io/ioutil"
 	"regexp"
+	"log"
 )
 
 func main() {
-	fmt.Println("Checking Go started")
+	log.Println("Checking Go started")
 	root := "golang"
 
 	errors := 0
@@ -20,7 +21,7 @@ func main() {
 	errors += check_examples_dir(root)
 	errors += check_examples(root)
 
-	fmt.Println("Checking Go finished")
+	log.Println("Checking Go finished")
 	if errors > 0 {
 		fmt.Printf("%v errors found\n", errors)
 		os.Exit(1)
@@ -29,6 +30,7 @@ func main() {
 }
 
 func check_examples(root string) int {
+	names := make(map[string]string)
 // TODO: make sure filenames are unique across the examples
 // TODO: should filename be using underscores intsead of dashes?
 	errors := 0
@@ -43,14 +45,20 @@ func check_examples(root string) int {
 			continue
 		}
 		dirpath := filepath.Join(path, dir.Name())
-		//fmt.Println(dirpath)
+		//log.Println(dirpath)
 		files, err := ioutil.ReadDir(dirpath)
 		if err != nil {
 			fmt.Printf("Error: %v", err)
 			os.Exit(1)
 		}
 		for _, file := range files {
-			//fmt.Printf("   %v\n", file.Name())
+			//log.Printf("   %v\n", file.Name())
+			value, ok := names[file.Name()]
+			if ok {
+				fmt.Sprintf("Duplicate: '%s' in both '%s' and '%s'", file.Name(), value, dir.Name())
+				errors++
+			}
+			names[file.Name()] = dir.Name()
 			if strings.HasSuffix(file.Name(), ".go") {
 				errors += check_file(filepath.Join(path, dir.Name(), file.Name()))
 			}
@@ -62,7 +70,7 @@ func check_examples(root string) int {
 
 // If there is a .go file check if the indentation is always tabs
 func check_file(filepath string) int {
-	//fmt.Println(filepath)
+	//log.Println(filepath)
 	errors := 0
 	fh, err := os.Open(filepath)
 	if err != nil {
