@@ -165,7 +165,7 @@ go run .
 ## Hello Foo - Println
 {id: hello-foo}
 {i: Println}
-{i: var}
+{i: :=}
 
 ![](examples/hello-foo/hello_foo.go)
 ![](examples/hello-foo/hello_foo.out)
@@ -226,6 +226,19 @@ operator it automatically deducted from the assigned value.
 {i: complex}
 {i: imag}
 
+{aside}
+This is just a list of the basic types in Go. You only need to remember that there are different types. For now you can use the defaults offered by Golang. Later, when you get deeper in the language these types allow you to improve the speed and the memory usage of your application by specifying the size of each variable.
+{/aside}
+
+{aside}
+The numbers indicate the number of bits each variable takes. In languages such Python and Perl you would not need to care about this at all, but you would not have control over these aspects either. (In the Numpy library of Python you do have these distinctions.)
+{/aside}
+
+{aside}
+As I wrote, don't worry about them for now.
+{/aside}
+
+* [basic types](https://tour.golang.org/basics/11)
 
 ```
 string          (any utf-8 character)
@@ -252,12 +265,16 @@ real(n)
 imag(n)
 ```
 
-* [basic types](https://tour.golang.org/basics/11)
 
 ## Show inferred variable type - Printf %T
 {id: show-variable-type}
 {i: Printf}
 {i: %T}
+
+{aside}
+When we create a variable with the := assignment, Go automatically decides the type of the variable based on the initial value assigned to it. Using Printf and the %T placeholder you can print out this type.
+{/aside}
+
 
 ![](examples/show-type/show_type.go)
 
@@ -265,19 +282,36 @@ imag(n)
 ## Variable declaration (var)
 {id: variable-declaration}
 {i: var}
+{i: :=}
 
-* There are 3 ways to declare variables
+
+* There are 3 ways to declare variables in Go
+
+{aside}
+The first one, the one that we have already seen uses the `:=` operator. It declares a variable and immediately assigns a value to it. The type of the variable is deducted from the value assigned to it.
+{/aside}
+
+{aside}
+The second in our example uses the `var` keyword and explicitely sets the type. `var b int32 = 2` This is used when we would like to fine-tune the type of the variable.
+{/aside}
+
+
+{aside}
+In the third example `var a int16` we declare the variable but we don't assign any value to it yet. This is used when need don't know the initial value when we declare the variable. This can happen, for example, when we are looking for some value in a loop, and we would like the result to be available outside of the loop. This is related to the scoping of variables that we'll discuss later.
+{/aside}
 
 ![](examples/variables/variables.go)
 
+
 ## Default values of variables
 {id: default-values}
+{i: false}
 
 Variables declared without an explicit initial value are given their zero value as default.
 
-* 0 for numeric types,
-* false for the boolean type, and
+* 0 for numeric types.
 * "" (the empty string) for strings.
+* `false` for the boolean type.
 
 ![](examples/zero/zero.go)
 
@@ -287,13 +321,18 @@ Variables declared without an explicit initial value are given their zero value 
 {i: float32()}
 {i: int()}
 {i: string()}
+{i: Sprintf}
+{i: %f}
+{i: %d}
 
-* float32()
-* int()
-* string()
+* integers to `float32()`
+* floats to `int()`
+* integers to `string()` but that converts the number to the value it represents in ASCII or Unicode table.
+* In order to get the same "look" but as a string we need to use the `Sprintf` function from `fmt`.
+
 
 ![](examples/convert/convert.go)
-      // this will convert a string like "abc" or "2x" to 0 and set err
+
 
 ## Converting strings to numbers - strconv, ParseFloat, Atoi, Itoa
 {id: converting-strings-to-numbers}
@@ -301,6 +340,12 @@ Variables declared without an explicit initial value are given their zero value 
 {i: Atoi}
 {i: Itoa}
 {i: ParseFloat}
+{i: err}
+{i: nil}
+
+{aside}
+Often we are going to get 
+{/aside}
 
 ![](examples/convert-string/convert_string.go)
 

@@ -5,12 +5,12 @@ import (
 )
 
 func main() {
-	var a int16
-	a = 1
+	c := 3 // type inferred
 
 	var b int32 = 2
 
-	c := 3 // type inferred
+	var a int16
+	a = 1
 
 	fmt.Println(a) // 1
 	fmt.Println(b) // 2

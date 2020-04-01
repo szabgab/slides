@@ -14,3 +14,8 @@ count digits
 for _, digit := range digits {
     count[ digit ]++
 }
+
+
+## TODO
+
+* Explain what is `string(10000)`
