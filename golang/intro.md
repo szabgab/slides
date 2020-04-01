@@ -316,6 +316,37 @@ Variables declared without an explicit initial value are given their zero value 
 ![](examples/zero/zero.go)
 
 
+## Scan input strings from STDIN
+{id: scan}
+{i: STDIN}
+{i: Scan}
+
+{aside}
+We'll have a lot more to say about getting input from the user, but in order to be able to write some useful code, let's introduce a simple way to get input from the user. For this we need to declare a variable first to be a `string`. Then we call the `Scan` function and give the variable as a parameter. More precisely we pass a pointer to the variable to the function by prefixing it with `&`. Later we'll discuss pointers as well, for now all you need to know is that `Scan` will wait till the  user types in something and presses ENTER. Then all the content will be in the variable. 
+{/aside}
+
+* [fmt.Scan](https://golang.org/pkg/fmt/#Scan)
+
+![](examples/scan/scan.go)
+
+
+## if else statement
+{id: if-else-statement-intro}
+
+{aside}
+We'll have a longer discussion about conditinal statements later, but it is quite hard to do anything useful without them so let's have a quick look at an `if - else` construct. Here we check if the value in the `name` variable equals to the string `Go` and depending on the success of this comparision we print something.  
+{/aside}
+
+![](examples/if/if.go)
+
+
+## Error Handling
+{id: error-handling}
+
+* functions return the error value
+
+
+
 ## Converting values to other types - float32, int, string
 {id: converting-types}
 {i: float32()}
@@ -344,34 +375,23 @@ Variables declared without an explicit initial value are given their zero value 
 {i: nil}
 
 {aside}
-Often we are going to get 
+While internally Go can represent numbers, the communication with the outside world is always using strings. So when we read from a file we always get strings. When we ask the user to type in a number and the user types in a number, we still receive it as a string.
+For example as the string `"42"`. So we need a way to convert a string that looks like a number to the numeric representation of Go.
 {/aside}
+
+{aside}
+This can, of course go wrong. If we ask for an integer and the user types in `"42x"` or even `"FooBar"`. So the conversion might fail. The way Go usually handles errors is by returning a second value which is the special value `nil` if everything went fine, or the error object is something broke. It is the responsibility of the caller to check the error. So in the follwing examples you can see that from each function we accept two values, the actual value we are interested in and another value that we assign to a variable called `err`. It is not a special name, but it is quite common in Go to use the variable name `err` for this purpose.
+{/aside}
+
+{aside}
+Then in each one of the example we check if the value of `err` is equal to `nil` or if there was an error in the conversion. 
+{/aside}
+
 
 ![](examples/convert-string/convert_string.go)
 
 * [strconv](https://golang.org/pkg/strconv/)
 
-
-
-## Scan input strings from STDIN
-{id: scan}
-{i: STDIN}
-{i: Scan}
-
-![](examples/scan/scan.go)
-
-* [fmt.Scan](https://golang.org/pkg/fmt/#Scan)
-
-## if else statement
-{id: if-else-statement-intro}
-
-![](examples/if/if.go)
-
-
-## Error Handling
-{id: error-handling}
-
-* functions return the error value
 
 ## Scan STDIN convert to number
 {id: scan-stdin-convert-to-number}
@@ -392,11 +412,21 @@ Often we are going to get
 
 
 
+## Exercise: circle STDIN
+{id: exercise-circle-stdin}
 
+Write a program that asks the user for a number, the radius of a circle, and prints out the area and the circumference of the circle.
+
+```
+go run circle.go
+radius: 2
+Area: 
+Circumference:
+```
 
 
 ## Exercise: rectangular STDIN
-{id: exercise-rectangular-scan-stdin}
+{id: exercise-rectangular-stdin}
 
 Write a program that asks the user for two numbers on STDIN
 (the width and the length of a rectangular) and prints the area and the circumference.
@@ -409,18 +439,6 @@ width: 3
 length: 4
 Area: 12
 Circumference: 14
-```
-
-## Exercise: circle STDIN
-{id: exercise-circle-scan-stdin}
-
-Write a program that asks the user for a number the radius of a circle and prints out the area and the circumference of the circle.
-
-```
-go run circle.go
-radius: 2
-Area: 
-Circumference:
 ```
 
 ## Exercise: calculator STDIN
@@ -442,19 +460,33 @@ b: 2
 4
 ```
 
-* Does multiplication also work?
 * What happens if we try to divide by 0?
+
+## Solution: circle STDIN
+{id: solution-circle-stdin}
+
+![](examples/circle-stdin/circle_stdin.go)
+
+
+## Solution: circle STDIN
+{id: solution-circle-stdin-math}
+{i: math}
+
+{aside}
+Of course you don't need to type in the value if PI yourself. There is a module called `math` that provides you the value at a much better precision. There is also a function called `Pow` that can rasie any number to any power.
+{/aside}
+
+* [math](https://golang.org/pkg/math/)
+
+![](examples/circle-stdin-math/circle_stdin_math.go)
+
 
 
 ## Solution: rectangular STDIN
-{id: solution-rectangular-scan-stdin}
+{id: solution-rectangular-stdin}
 
-![](examples/rectangular-scan/rectangular_scan.go)
+![](examples/rectangular-stdin/rectangular_stdin.go)
 
-## Solution: circle STDIN
-{id: solution-circle-scan-stdin}
-
-![](examples/circle-scan/circle_scan.go)
 
 ## Solution: calculator STDIN
 {id: solution-calculator-scan-if}

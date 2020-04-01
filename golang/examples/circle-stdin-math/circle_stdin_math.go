@@ -2,12 +2,12 @@ package main
 
 import (
 	"fmt"
-	//    "os"
+	"math"
 	"strconv"
 )
 
 func main() {
-	pi := 3.14
+	fmt.Println(math.Pi)
 
 	var radiusStr string
 	fmt.Print("radius: ")
@@ -16,8 +16,8 @@ func main() {
 	radius, err := strconv.ParseFloat(radiusStr, 64)
 	if err == nil {
 		fmt.Println(radius)
-		area := pi * radius * radius
-		circumference := 2 * pi * radius
+		area := math.Pi * math.Pow(radius, 2)
+		circumference := 2 * math.Pi * radius
 		fmt.Printf("Area: %v\n", area)
 		fmt.Printf("Cirumference: %v\n", circumference)
 	}

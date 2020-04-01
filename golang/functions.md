@@ -174,16 +174,6 @@ Implement a function that accepts a positive integer (n) and prints out the firs
 ![](examples/fibonacci-recursive/fibonacci_recursive.go)
 
 
-
-
-
-## Solution: rectangular (STDIN)
-{id: solution-rectangular-stdin}
-
-![](examples/rectangular-stdin/rectangular_stdin.go)
-
-
-
 ## Solution: single counter
 {id: solution-single-counter}
 

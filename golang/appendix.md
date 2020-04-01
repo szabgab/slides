@@ -276,3 +276,11 @@ Read from the stdin (standard input) Get input from the keyboard in golang
 {i: Eecutable}
 
 ![](examples/os-executable/os_executable.go)
+
+
+## Solution: rectangular (STDIN) Reader
+{id: solution-rectangular-stdin-reader}
+
+![](examples/rectangular-stdin-reader/rectangular_stdin_reader.go)
+
+
