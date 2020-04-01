@@ -11,6 +11,8 @@ import (
 	"log"
 )
 
+// TODO: Check if every file in the examples/ directory is being imported in the .md files.
+
 func main() {
 	log.Println("Checking Go started")
 	root := "golang"
