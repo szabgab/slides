@@ -27,9 +27,9 @@ func main() {
 	fmt.Printf("x: %v\n", x)
 	x += 2 // x = x + 2
 	fmt.Printf("x: %v\n", x)
-	x++
+	x++ // x = x + 1
 	fmt.Printf("x: %v\n", x)
-	x--
+	x-- // x = x -1
 	fmt.Printf("x: %v\n", x)
 
 	// no prefix autoincrement and autodecrement

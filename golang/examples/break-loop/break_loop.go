@@ -12,5 +12,7 @@ func main() {
 		if i > 5 {
 			break
 		}
+		fmt.Println("tail")
 	}
+	fmt.Println("after loop")
 }

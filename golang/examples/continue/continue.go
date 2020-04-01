@@ -7,14 +7,17 @@ import (
 func main() {
 	i := 0
 	for {
+		fmt.Println("")
 		i++
-		if i > 5 {
+		fmt.Printf("A: %v\n", i)
+		if i > 4 {
 			break
 		}
-
-		if i < 3 {
+		fmt.Printf("B: %v\n", i)
+		if i == 3 {
 			continue
 		}
-		fmt.Println(i)
+		fmt.Printf("C: %v\n", i)
 	}
+	fmt.Println("after loop")
 }

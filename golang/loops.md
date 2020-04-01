@@ -7,21 +7,26 @@
 {i: for}
 
 ![](examples/for-loop/for.go)
+![](examples/for-loop/for.out)
 
 ## while-like for loop
 {id: while}
 {i: while}
 
 ![](examples/while/while.go)
+![](examples/while/while.out)
 
 
 ## infinite loop
 {id: infinite-loop}
 
 * You don't have to put a condition in the `for` loop, but that will create an infinite loop.
+* If you happen to run this on the command line, you can press Ctrl-C to stop this program. 
 * In this case you will need to use `break` or some other way to exit the loop.
 
 ![](examples/infinite-loop/infinte_loop.go)
+
+![](examples/infinite-loop/infinte_loop.out)
 
 ## break out from loop
 {id: break}
@@ -29,6 +34,7 @@
 
 
 ![](examples/break-loop/break_loop.go)
+![](examples/break-loop/break_loop.out)
 
 
 ## continue
@@ -36,6 +42,7 @@
 {i: continue}
 
 ![](examples/continue/continue.go)
+![](examples/continue/continue.out)
 
 
 ## loop on two variables
