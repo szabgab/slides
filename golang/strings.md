@@ -7,15 +7,22 @@
 * Double quote is for strings
 * Single quote is for Runes
 
-## Runes
-{id: runes}
 
-```
-rune - any utf-32 character
-r := 'a'   // single quotes!
-they are actually int32
-var r rune = 'a'
-```
+## iterate over characters in a string
+{id: for-loop-string}
+{i: range}
+
+![](examples/loop-string/loop_string.go)
+
+## String Contains, HasPrefix, HasSuffix
+{id: string-contains}
+{i: Contains}
+{i: HasPrefix}
+{i: HasSuffix}
+
+
+![](examples/suffix-prefix/suffix_prefix.go)
+
 
 
 ## Sort
@@ -46,17 +53,12 @@ var r rune = 'a'
 * [strings.Fields](https://golang.org/pkg/strings/#Fields)
 
 
-## iterate over characters in a string
-{id: for-loop-string}
-{i: range}
+## Runes
+{id: runes}
 
-![](examples/loop-string/loop_string.go)
-
-## String Contains, HasPrefix, HasSuffix
-{id: string-contains}
-{i: Contains}
-{i: HasPrefix}
-{i: HasSuffix}
-
-
-!{}(examples/suffix-prefix/suffix_prefix.go)
+```
+rune - any utf-32 character
+r := 'a'   // single quotes!
+they are actually int32
+var r rune = 'a'
+```

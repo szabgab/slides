@@ -243,24 +243,31 @@ As I wrote, don't worry about them for now.
 ```
 string          (any utf-8 character)
 
-int - unspecified size (but mn 32 bit)
-int8
+uint            (unsigned integer of 32 or 64 bits - depends on implementation)
+uint8           (unsigned integer (0, 255)
+uint16          (unsigned integer)
+uint32          (unsigned integer)
+uint64          (unsigned integer)
+
+
+int             (signed integer, the same bit-size as uint)
+int8            (signed integer (-128, 127))
 int16
 int32
 int64
-
-uint16          (unsigned integer)
 
 float32
 float64
 
 bool
 
-byte
+byte             (alias for uint8)
+rune             (alias for int32)
 
 complex(r, i)
 complex64       1 + 2i    or just 3i
 complex128
+
 real(n)
 imag(n)
 ```

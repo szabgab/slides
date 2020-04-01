@@ -50,6 +50,7 @@
 
 
 ![](examples/loop-on-two/loop_on_two.go)
+![](examples/loop-on-two/loop_on_two.out)
 
 
 ## break out from internal loop (labels)
@@ -58,10 +59,10 @@
 ![](examples/for-label/for_label.go)
 
 
-## Exercise: Number Guessing game
-{id: number-guessing-game}
+## Exercise: One-dimensional spacefight
+{id: exercise-one-dimensional-spacefight}
 
-The exercise have several levels. Solve them one after the other.
+The game have several levels. Solve them one after the other.
 
 * The computer "thinks" about a random integer between 1 and 20 then asks the player. The player types in an integer. The computer says if it is too small, to big, or direct hit.
 * The user can guess multiple times. Exit only when there was a direct hit.
@@ -71,19 +72,17 @@ The exercise have several levels. Solve them one after the other.
 * If the user enters "d" we switch to the "debug-mode" of the game. In this mode, before every turn we print the current hidden value.
 
 
-## Solution: Number Guessing game - multiple guesses till hit
-{id: solution-number-guessing-game-multiple-guesses}
+## Solution: One-dimensional spacefight - multiple guesses till hit
+{id: solution-one-dimensinal-spacefight-multiple-guesses}
 
 ![](examples/game2/game2.go)
 
-## Solution: Number Guessing game - allow x
-{id: solution-number-guessing-game-allow-x}
+## Solution: One-dimensional spacefight - allow x
+{id: solution-one-dimensional-spacefight-allow-x}
 
 ![](examples/game3/game3.go)
 
-## Solution: Number Guessing game - allow m
-{id: solution-number-guessing-game-allow-m}
+## Solution: One-dimensional spacefight - allow m
+{id: solution-one-dimensiona-spacefight-allow-m}
 
 ![](examples/game5/game5.go)
-
-

@@ -76,3 +76,14 @@
 ![](examples/game1/game1.go)
 
 
+## int8
+{id: int8}
+
+![](examples/int8/int8.go)
+
+
+## Bytes
+{id: bytes}
+
+![](examples/byte/byte.go)
+
