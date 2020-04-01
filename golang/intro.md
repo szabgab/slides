@@ -468,7 +468,7 @@ b: 2
 ![](examples/circle-stdin/circle_stdin.go)
 
 
-## Solution: circle STDIN
+## Solution: circle STDIN with math
 {id: solution-circle-stdin-math}
 {i: math}
 
@@ -489,7 +489,14 @@ Of course you don't need to type in the value if PI yourself. There is a module 
 
 
 ## Solution: calculator STDIN
-{id: solution-calculator-scan-if}
+{id: solution-calculator-stdin-if}
 
-![](examples/calc-scan-with-if/calc_scan_if.go)
+![](examples/calc-stdin-if/calc_stdin_if.go)
 
+
+## Solution: calculator STDIN switch
+{id: solution-calculator-stdin-switch}
+{i: swicth}
+{i: case}
+
+![](examples/calc-stdin-switch/calc_stdin_switch.go)
