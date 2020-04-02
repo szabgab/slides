@@ -1,0 +1,9 @@
+[7]string
+[Doc Grumpy Happy Sleepy Bashful Sneezy Dopey]
+location: 0  name: Doc
+location: 1  name: Grumpy
+location: 2  name: Happy
+location: 3  name: Sleepy
+location: 4  name: Bashful
+location: 5  name: Sneezy
+location: 6  name: Dopey

@@ -5,7 +5,7 @@ import (
 )
 
 func main() {
-	var ar = [3]int{1, 2, 3}
+	var ar = [...]int{1, 2, 3}
 	br := ar
 
 	fmt.Println(ar)

@@ -14,6 +14,7 @@ func main() {
 	fmt.Println(ar)
 	fmt.Println(br)
 
+	fmt.Println(ar[1])
 	fmt.Println(br[1])
 
 }

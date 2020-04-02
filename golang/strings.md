@@ -4,8 +4,8 @@
 ## Single and double quotes
 {id: single-and-double-quotes}
 
-* Double quote is for strings
-* Single quote is for Runes
+* Double quote is for strings - a series of bytes (uint8)
+* Single quote is for runes (alias for int32 signed integer) - a character value
 
 
 ## iterate over characters in a string

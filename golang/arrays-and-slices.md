@@ -6,15 +6,27 @@
 {i: len}
 {i: []}
 
-![](examples/array/array.go)
-![](examples/array/array.out)
+{aside}
+An array can hold a series of values. Both the length and the type of the values of an array is fixed at the time we create it.
+Unlike in some other languages, you cannot mix different types of values in an array.
+The content can be changed.
+We can access the individual elements of an array with a post-fix square-bracket indexing.
+{/aside}
 
 * Length is part of the type!
 * Two arrays with different length are also different types.
 
+![](examples/array/array.go)
+![](examples/array/array.out)
+
+
 ## Arrays automatic length
 {id: arrays-automatic-length}
 {i: [...]}
+
+{aside}
+There was a slight duplication of information in the above example as we could have deducted the size from the list of initial values. This happens with the 3 dots.
+{/aside}
 
 ![](examples/array-auto-length/array_auto_length.go)
 ![](examples/array-auto-length/array_auto_length.out)
@@ -23,7 +35,21 @@
 ## Array: empty and fill
 {id: arrays-empty-fill}
 
+{aside}
+On the other hand we could also initialize an array with only the size, without initial values. In this case the default values in the array will be the 0 values of the appropriate type.
+{/aside}
+
 ![](examples/array-fill/array_fill.go)
+
+
+## Empty array of strings
+{id: arrays-empty-strings}
+
+{aside}
+You can also use an array of strings.
+{/aside}
+
+![](examples/array-empty-strings/array_empty_strings.go)
 
 
 ## Array change value
@@ -48,12 +74,14 @@ Some cases this is what we want, in other cases we'd prefer to have reference / 
 
 ## Array assignment (pointer)
 {id: array-assignment-pointer}
+{i: &}
 
 ![](examples/array-assignment-pointer/array_assignment_pointer.go)
 ![](examples/array-assignment-pointer/array_assignment_pointer.out)
 
 {aside}
-This way br is a poiner to ar so they refer to the same data in memory.
+This way `br` is a poiner to `ar` so they refer to the same data in memory. Even though `br` is a pointer we can still access elements in the same way as in the original array.
+We'll discuss pointers in depth later on.
 {/aside}
 
 ## Matrix (two dimensional array)
@@ -61,6 +89,11 @@ This way br is a poiner to ar so they refer to the same data in memory.
 
 ![](examples/array-matrix/array_matrix.go)
 ![](examples/array-matrix/array_matrix.out)
+
+## For loop on array - iterate over array
+{id: for-loop-on-array}
+
+![](examples/loop-on-array/loop_on_array.go)
 
 
 ## Slice
@@ -116,11 +149,12 @@ This way br is a poiner to ar so they refer to the same data in memory.
 ![](examples/slice-pre-allocate/slice_pre_allocate.go)
 ![](examples/slice-pre-allocate/slice_pre_allocate.out)
 
-## for loop in slice - iterate over slice
+## For loop in slice - iterate over slice
 {id: for-loop}
 {i: range}
 
-![](examples/loop/loop.go)
+![](examples/loop-on-slice/loop_on_slice.go)
+![](examples/loop-on-slice/loop_on_slice.out)
 
 ## for loop on values of slice (no index)
 {id: for-values}
