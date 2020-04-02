@@ -292,6 +292,22 @@ Expected output:
 
 ![](examples/count-words-in-slices-skeleton/count_words_in_slices_skeleton.go)
 
+
+## Exercise: Create a list of words from sentences
+{id: exercise-create-list}
+
+* Given a list of strings with words separated by spaces, create a single list of all the words.
+
+![](examples/words-from-sentences-skeleton/words_from_sentences_skeleton.go)
+
+## Exercise: Create a uniquie list of values
+{id: exercise-unique-values}
+
+Given a list of strings, create a list of unique values sorted by abc.
+
+![](examples/unique-values-skeleton/unique_values_skeleton.go)
+
+
 ## Solution: Language Selector
 {id: solution-language-selector}
 
@@ -307,8 +323,17 @@ Expected output:
 
 ![](examples/count-digits-from-string/count_digits_from_string.go)
 
-
 ## Solution: count words
 {id: solution-count-words-slices}
 
 ![](examples/count-words-in-slices/count_words_in_slices.go)
+
+## Solution: Create a list of words from sentences
+{id: solution-create-list}
+
+TODO
+
+## Solution: Create a uniquie list of values
+{id: solution-unique-values}
+
+TODO
