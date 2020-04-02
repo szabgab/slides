@@ -17,11 +17,14 @@ func main() {
 	log.Println("Checking Go started")
 	root := "golang"
 
+	var imports = make([]string, 0)
+
 	errors := 0
 	errors += check_file(filepath.Join("tests", "check.go"))
-	errors += check_main_dir(root)
+	errors += check_main_dir(root, imports)
 	errors += check_examples_dir(root)
 	errors += check_examples(root)
+	//fmt.Println(imports)
 
 	log.Println("Checking Go finished")
 	if errors > 0 {
@@ -129,7 +132,7 @@ func check_examples_dir(root string) int {
 	return errors
 }
 
-func check_main_dir(root string) int {
+func check_main_dir(root string, imports []string) int {
 	errors := 0
 	files, err := ioutil.ReadDir(root)
 	if err != nil {
@@ -144,7 +147,35 @@ func check_main_dir(root string) int {
 			fmt.Printf("Unrecognized entry: %v\n", file.Name())
 			errors++
 		}
+		//read in the
+		filename := filepath.Join(root, file.Name())
+		var fh *os.File
+		//fmt.Println(filename)
+		fh, err = os.Open(filename)
+		if err != nil {
+			panic(fmt.Sprintf("Could not open file '%v':  %v", filename, err))
+		}
+		// ![](examples/variable-scope/scope.go)
+		//importFilename := regexp.MustCompile(`^!\[\]\(examples/([a-z-]+/[a-z_.])\)\s*\n?$`)
+		importFilename := regexp.MustCompile(`^!\[\]\(examples/([a-z-/_.]+)\)?$`)
+		scanner := bufio.NewScanner(fh)
+		for scanner.Scan() {
+			line := scanner.Text()
+			//fmt.Println(line)
+			res := importFilename.FindAllSubmatch([]byte(line), -1)
+			//fmt.Println(len(res))
+			if len(res) > 0 {
+				importPath := fmt.Sprintf("%q\n", res[0][1])
+				imports = append(imports, importPath)
+				//fmt.Printf("%q\n", res[0][1])
+				//fmt.Println(line)
+			}
+		}
+		if err := scanner.Err(); err != nil {
+			fmt.Fprintln(os.Stderr, "reading standard input:", err)
+		}
 	}
+	//fmt.Println(imports)
 	return errors
 }
 
