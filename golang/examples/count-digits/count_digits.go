@@ -4,9 +4,8 @@ import "fmt"
 
 func main() {
 	count := make([]int, 10)
-	fmt.Println("count", count)
 
-	digits := []int{3, 7, 6, 7, 9, 1, 3, 7}
+	digits := []int{3, 7, 6, 7, 9, 1, 3, 7, 8, 3, 1, 7, 0, 1, 2, 3}
 	fmt.Println(digits)
 
 	for i := 0; i < len(digits); i++ {

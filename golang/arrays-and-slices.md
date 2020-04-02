@@ -5,6 +5,7 @@
 {id: arrays}
 {i: len}
 {i: []}
+{i: len}
 
 {aside}
 An array can hold a series of values. Both the length and the type of the values of an array is fixed at the time we create it.
@@ -92,25 +93,62 @@ We'll discuss pointers in depth later on.
 
 ## For loop on array - iterate over array
 {id: for-loop-on-array}
+{i: range}
+{i: for}
 
 ![](examples/loop-on-array/loop_on_array.go)
+![](examples/loop-on-array/loop_on_array.out)
 
+## Slice of an array
+{id: slice-on-an-array}
+{i: len}
+{i: cap}
+
+![](examples/slice-of-array/slice_of_array.go)
+![](examples/slice-of-array/slice_of_array.out)
 
 ## Slice
 {id: slice}
+{i: slice}
+{i: len}
+{i: cap}
 
-* A slice is just a very flexible array.
+* You can view a slice to be just a very flexible array.
+* Actually it is a slice of an array. A view on a section of the array.
+* len - length
+* cal - capacity
+
+{aside}
+The only difference you can see when we create a slice is that we don't explicitely say its size and we also don't put the 3 dots `...` in the square bracket.
+
+There is also a `cap` function that returns the size of the underlying array.
+
+We can access the elements of a slice using the postfix square-bracket notation. Just as with arrays.
+{/aside}
 
 ![](examples/slice/slice.go)
+![](examples/slice/slice.out)
 
+## Change value in slice 
+{id: slice-change-value}
+
+![](examples/slice-change-value/slice_change_value.go)
+![](examples/slice-change-value/slice_change_value.out)
 
 ## Slice Assign
 {id: slice-assign}
 
+* It is an alias to the other slice, same place in memory
+
+{aside}
+Unlike with arrays, when we assign a slice, we only assign the location of the slice in the memory. So if we change the content of one of the slices then the other one also sees the change. 
+{/aside}
+
 ![](examples/slice-assign/slice_assign.go)
 ![](examples/slice-assign/slice_assign.out)
 
-## Slice of slice
+
+## Slice of a slice
 {id: slice-of-slice}
 
 
@@ -121,6 +159,7 @@ We'll discuss pointers in depth later on.
 
 ## Slice append
 {id: slice-append}
+{i: append}
 
 ![](examples/slice-append/slice_append.go)
 ![](examples/slice-append/slice_append.out)
@@ -152,6 +191,7 @@ We'll discuss pointers in depth later on.
 ## For loop in slice - iterate over slice
 {id: for-loop}
 {i: range}
+{i: for}
 
 ![](examples/loop-on-slice/loop_on_slice.go)
 ![](examples/loop-on-slice/loop_on_slice.out)
@@ -170,25 +210,15 @@ Skeleton:
 
 Expected Output:
 
-```
-0: 0
-1: 1
-2: 0
-3: 2
-4: 0
-5: 0
-6: 1
-7: 3
-8: 0
-9: 1
-```
+![](examples/count-digits/count_digits.out)
+
 
 ## Exercise: count digits from string
 {id: exercise-count-digits-from-string}
 
 Skeleton:
 
-![](examples/count-digits-skeleton/count_digits_skeleton.go)
+![](examples/count-digits-from-string-skeleton/count_digits_from_string_skeleton.go)
 
 ## Solution: count digits
 {id: solution-count-digits}
@@ -198,7 +228,8 @@ Skeleton:
 ## Solution: count digits from string
 {id: solution-count-digits-from-string}
 
-![](examples/count-digits-again/count_digits_again.go)
+![](examples/count-digits-from-string/count_digits_from_string.go)
+![](examples/count-digits-from-string/count_digits_from_string.out)
 
 
 TODO:  append(a, b...)
