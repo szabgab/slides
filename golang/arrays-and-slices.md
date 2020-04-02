@@ -171,7 +171,7 @@ Unlike with arrays, when we assign a slice, we only assign the location of the s
 * [append to slice](https://tour.golang.org/moretypes/15)
 
 
-## Slice remove elements from the end (pop)
+## Remove last element of slice (pop)
 {id: slice-remove-from-the-end}
 {i: pop}
 
@@ -179,6 +179,14 @@ Unlike with arrays, when we assign a slice, we only assign the location of the s
 ![](examples/slice-remove-last/slice_remove_last_element.out)
 
 * The capacity remaind the same
+
+
+## Remove first element of slice (shift, pop(0))
+{id: remove-first-element-of-slice}
+{i: shift}
+
+![](examples/slice-shift/slice_shift.go)
+![](examples/slice-shift/slice_shift.out)
 
 
 ## Pre-allocate capacity for slice with make
@@ -201,6 +209,47 @@ Unlike with arrays, when we assign a slice, we only assign the location of the s
 
 ![](examples/for-values/for_values.go)
 
+
+## Merge two slices
+{id: merge-two-slices}
+{i: ...}
+
+![](examples/merge-slices/merge_slices.go)
+
+
+## Find element in array or slice
+{id: find-element-in-slice}
+
+![](examples/find-element-in-slice/find_element_in_slice.go)
+![](examples/find-element-in-slice/find_element_in_slice.out)
+
+## Remove element of slice
+{id: slice-remove-element}
+
+![](examples/remove-element-from-slice/remove_element_from_slice.go)
+![](examples/remove-element-from-slice/remove_element_from_slice.out)
+
+## Weird merge slices
+{id: weird-merge-slices}
+
+* When we try to remove an element in the middle but assign to a new name.
+* Avoid this mess!
+
+![](examples/weird-merge-slices/weird_merge_slices.go)
+![](examples/weird-merge-slices/weird_merge_slices.out)
+
+
+## TODO: stack
+{id: stack}
+
+* see [lists](https://golang.org/pkg/container/list/)
+
+## TODO: queue
+{id: queue}
+
+* see [lists](https://golang.org/pkg/container/list/)
+
+
 ## Exercise: count digits
 {id: exercise-count-digits}
 
@@ -208,7 +257,7 @@ Skeleton:
 
 ![](examples/count-digits-exercise/count_digits_exercise.go)
 
-Expected Output:
+Expected output:
 
 ![](examples/count-digits/count_digits.out)
 
@@ -220,6 +269,14 @@ Skeleton:
 
 ![](examples/count-digits-from-string-skeleton/count_digits_from_string_skeleton.go)
 
+Expected output:
+
+![](examples/count-digits-from-string/count_digits_from_string.out)
+
+## TODO: Exercise: count words
+{id: exercise-count-words-slices}
+
+
 ## Solution: count digits
 {id: solution-count-digits}
 
@@ -229,16 +286,7 @@ Skeleton:
 {id: solution-count-digits-from-string}
 
 ![](examples/count-digits-from-string/count_digits_from_string.go)
-![](examples/count-digits-from-string/count_digits_from_string.out)
 
 
-TODO:  append(a, b...)
-shift / pop(0)   a[1:]
-pop()   [:len(a)-1]
-
-stack
-
-a := []int{1, 2, 3, 4, 5, 6}
-b := append(a[:2], a[3:]...)
-weird result in a
-
+## Solution: count words
+{id: solution-count-words-slices}
