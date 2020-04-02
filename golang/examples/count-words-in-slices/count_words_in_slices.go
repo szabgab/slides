@@ -11,7 +11,14 @@ func main() {
 	count := []int{}
 	words := []string{}
 
+OBJECTS:
 	for _, word := range celestialObjects {
+		for i, value := range words {
+			if value == word {
+				count[i]++
+				continue OBJECTS
+			}
+		}
 		words = append(words, word)
 		count = append(count, 1)
 	}
@@ -20,6 +27,3 @@ func main() {
 		fmt.Printf("%-10v %v\n", word, count[i])
 	}
 }
-
-// get the index of an element
-// remove element by value

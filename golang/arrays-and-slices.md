@@ -249,6 +249,21 @@ Unlike with arrays, when we assign a slice, we only assign the location of the s
 
 * see [lists](https://golang.org/pkg/container/list/)
 
+## Exercise: Language Selector
+{id: exercise-language-selector}
+
+* Create a menu where people can pick a language by selecting the number next to the language.
+* You have a list of languages in an array or slice as we have in the skeleton.
+
+![](examples/language-selector-skeleton/language_selector_skeleton.go)
+
+* It displays a "menu" that associates each language to a number.
+* the user types in one of the numbers.
+* The code check if it is a number and if it is in the corret range.
+* If it is, then we display the selected language.
+* The interaction will look like this:
+
+![](examples/language-selector/language_selector.out)
 
 ## Exercise: count digits
 {id: exercise-count-digits}
@@ -261,7 +276,6 @@ Expected output:
 
 ![](examples/count-digits/count_digits.out)
 
-
 ## Exercise: count digits from string
 {id: exercise-count-digits-from-string}
 
@@ -273,9 +287,15 @@ Expected output:
 
 ![](examples/count-digits-from-string/count_digits_from_string.out)
 
-## TODO: Exercise: count words
+## Exercise: count words
 {id: exercise-count-words-slices}
 
+![](examples/count-words-in-slices-skeleton/count_words_in_slices_skeleton.go)
+
+## Solution: Language Selector
+{id: solution-language-selector}
+
+![](examples/language-selector/language_selector.go)
 
 ## Solution: count digits
 {id: solution-count-digits}
@@ -290,3 +310,5 @@ Expected output:
 
 ## Solution: count words
 {id: solution-count-words-slices}
+
+![](examples/count-words-in-slices/count_words_in_slices.go)
