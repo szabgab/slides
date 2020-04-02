@@ -1,0 +1,8 @@
+[7 5 9]
+5
+panic: runtime error: index out of range
+
+goroutine 1 [running]:
+main.main()
+	/home/gabor/work/slides/golang/examples/array-index/array_index.go:14 +0x15b
+exit status 2

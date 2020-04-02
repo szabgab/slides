@@ -1,0 +1,2 @@
+# command-line-arguments
+./array_out_of_range.go:11:17: invalid array index 4 (out of bounds for 3-element array)

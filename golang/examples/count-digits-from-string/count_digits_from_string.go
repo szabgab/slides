@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	count := make([]int, 10)
+	count := [10]int{}
 
 	dgts := "3767913713127648173"
 	fmt.Println(dgts)

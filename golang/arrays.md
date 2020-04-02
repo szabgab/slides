@@ -20,6 +20,24 @@ We can access the individual elements of an array with a post-fix square-bracket
 ![](examples/array/array.go)
 ![](examples/array/array.out)
 
+## Array index out of range - compile time
+{id: array-out-of-range}
+
+![](examples/array-out-of-range/array_out_of_range.go)
+![](examples/array-out-of-range/array_out_of_range.out)
+
+## Array index out of range - run time
+{id: array-out-of-range-run-time}
+
+![](examples/array-index/array_index.go)
+![](examples/array-index/array_index.out)
+
+## Array change value
+{id: array-change-value}
+
+![](examples/array-change-value/array_change_value.go)
+![](examples/array-change-value/array_change_value.out)
+
 
 ## Arrays automatic length
 {id: arrays-automatic-length}
@@ -31,6 +49,8 @@ There was a slight duplication of information in the above example as we could h
 
 ![](examples/array-auto-length/array_auto_length.go)
 ![](examples/array-auto-length/array_auto_length.out)
+
+
 
 
 ## Array: empty and fill
@@ -52,12 +72,6 @@ You can also use an array of strings.
 
 ![](examples/array-empty-strings/array_empty_strings.go)
 
-
-## Array change value
-{id: array-change-value}
-
-![](examples/array-change-value/array_change_value.go)
-![](examples/array-change-value/array_change_value.out)
 
 
 ## Array assignment (copy)
@@ -104,7 +118,7 @@ We'll discuss pointers in depth later on.
 {id: exercise-language-selector}
 
 * Create a menu where people can pick a language by selecting the number next to the language.
-* You have a list of languages in an array or slice as we have in the skeleton.
+* You have a list of languages in an array as we have in the skeleton.
 
 ![](examples/language-selector-skeleton/language_selector_skeleton.go)
 
@@ -120,9 +134,11 @@ We'll discuss pointers in depth later on.
 ## Exercise: count digits
 {id: exercise-count-digits}
 
+* Given a list of digits, count how many time each digit appears.
+
 Skeleton:
 
-![](examples/count-digits-exercise/count_digits_exercise.go)
+![](examples/count-digits-skeleton/count_digits_skeleton.go)
 
 Expected output:
 
@@ -131,6 +147,8 @@ Expected output:
 
 ## Exercise: count digits from string
 {id: exercise-count-digits-from-string}
+
+* Given a string of digits, count how many times each digit appears?
 
 Skeleton:
 
