@@ -507,3 +507,4 @@ Of course you don't need to type in the value if PI yourself. There is a module 
 {i: case}
 
 ![](examples/calc-stdin-switch/calc_stdin_switch.go)
+

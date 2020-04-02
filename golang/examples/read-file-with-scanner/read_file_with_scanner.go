@@ -13,12 +13,12 @@ func main() {
 		fmt.Printf("Could not open file '%v': %v", filename, err)
 		os.Exit(1)
 	}
-	reader := bufio.NewReader(fh)
-	for {
-		line, _ := reader.ReadString('\n')
-		fmt.Print(line)
-		if line == "" {
-			break
-		}
+	scanner := bufio.NewScanner(fh)
+	for scanner.Scan() {
+		line := scanner.Text()
+		fmt.Println(line)
+	}
+	if err := scanner.Err(); err != nil {
+		fmt.Fprintln(os.Stderr, "reading standard input:", err)
 	}
 }

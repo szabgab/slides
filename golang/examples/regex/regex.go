@@ -7,23 +7,32 @@ import (
 
 func main() {
 	text := "In this text there is a number 123456 and an age: 42 and another number 78"
+	var match bool
+	var res []byte
+	var plex [][]byte
+	var threed [][][]byte
+	var str []string
 
 	getNumber := regexp.MustCompile(`\d+`)
-	res1 := getNumber.MatchString(text)
-	fmt.Println(res1)
+	match = getNumber.MatchString(text)
+	fmt.Println(match)
 
-	res2 := getNumber.Find([]byte(text))
-	fmt.Printf("%q\n", res2)
+	res = getNumber.Find([]byte(text))
+	fmt.Printf("%q\n", res)
 
-	res3 := getNumber.FindAll([]byte(text), -1)
-	fmt.Printf("%q\n", res3)
+	str = getNumber.FindStringSubmatch(text)
+	fmt.Printf("%q\n", str)
+
+	plex = getNumber.FindAll([]byte(text), -1)
+	fmt.Printf("%q\n", plex)
 
 	getAge := regexp.MustCompile(`age: (\d+)`)
-	res4 := getAge.Find([]byte(text))
-	fmt.Printf("%q\n", res4)
+	res = getAge.Find([]byte(text))
+	fmt.Printf("%q\n", res)
 
-	res5 := getAge.FindAllSubmatch([]byte(text), -1)
-	fmt.Printf("%q\n", res5)
+	threed = getAge.FindAllSubmatch([]byte(text), -1)
+	fmt.Printf("%q\n", threed)
+	fmt.Printf("%q\n", threed[0][1])
 
 	//var validID = regexp.MustCompile(`^[a-z]+\[[0-9]+\]$`)
 	//fmt.Println(validID.MatchString("adam[23]"))

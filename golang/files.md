@@ -1,6 +1,10 @@
 # Files
 {id: files}
 
+## Read file line-by-line with Scanner
+{id: read-file-line-by-line-with-scanner}
+
+![](examples/read-file-with-scanner/read_file_with_scanner.go)
 
 ## Read file line by line (os.Open)
 {id: read-file-line-by-line}
