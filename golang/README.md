@@ -19,3 +19,6 @@ for _, digit := range digits {
 ## TODO
 
 * Explain what is `string(10000)`
+
+* Array: sort
+* Slice: sort
