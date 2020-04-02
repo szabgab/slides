@@ -1,11 +1,33 @@
 # Strings
 {id: strings}
 
+
 ## Single and double quotes
 {id: single-and-double-quotes}
 
 * Double quote is for strings - a series of bytes (uint8)
 * Single quote is for runes (alias for int32 signed integer) - a character value
+
+
+## Runes
+{id: runes}
+
+* alias for int32
+
+![](examples/rune/rune.go)
+![](examples/rune/rune.out)
+
+## Strings
+{id: strings-intro}
+
+![](examples/strings/strings.go)
+![](examples/strings/strings.out)
+
+## Strings and Runes
+{id: strings-and-runes}
+
+![](examples/string-rune/string_rune.go)
+![](examples/string-rune/string_rune.out)
 
 
 ## iterate over characters in a string
@@ -53,12 +75,3 @@
 * [strings.Fields](https://golang.org/pkg/strings/#Fields)
 
 
-## Runes
-{id: runes}
-
-```
-rune - any utf-32 character
-r := 'a'   // single quotes!
-they are actually int32
-var r rune = 'a'
-```

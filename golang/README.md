@@ -22,3 +22,11 @@ for _, digit := range digits {
 
 * Array: sort
 * Slice: sort
+
+Runes:
+```
+rune - any utf-32 character
+r := 'a'   // single quotes!
+they are actually int32
+var r rune = 'a'
+```
