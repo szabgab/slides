@@ -16,9 +16,9 @@ func main() {
 
 	fmt.Printf("%T\n", names) // [2]string
 
-	names[1] = "Bar"
-	names[0] = "Foo"
+	names[1] = "Jane Doe"
+	names[0] = "Joe"
 
-	fmt.Println(names)    // [Foo Bar]
-	fmt.Println(names[1]) // Bar
+	fmt.Println(names)    // [Joe Jane Doe]
+	fmt.Println(names[1]) // Jane Doe
 }
