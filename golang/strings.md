@@ -30,6 +30,12 @@
 ![](examples/string-rune/string_rune.out)
 
 
+## Length of string
+{id: length-of-string}
+{i: len}
+
+![](examples/string-length/string_length.go)
+
 ## iterate over characters in a string
 {id: for-loop-string}
 {i: range}
@@ -75,3 +81,38 @@
 * [strings.Fields](https://golang.org/pkg/strings/#Fields)
 
 
+## Read line from stdin (keyboard)
+{id: read-line-from-stdin}
+
+Read from the stdin (standard input) Get input from the keyboard in golang
+
+![](examples/read-from-stdin/read_from_stdin.go)
+
+## Read line from stdin (keyboard) with error handling
+{id: read-line-from-stdin-with-error-handling}
+
+![](examples/read-from-stdin-with-error-handling/read_from_stdin_with_error_handling.go)
+
+
+## Exercise: how long is this string?
+{id: exercise-how-long-is-this-string}
+
+* The code will ask the user to type in a string and will print out the length of the string
+
+## Exercise: which string is longer?
+{id: exercise-which-string-is-longer}
+
+* The code will prompt the user for two strings and then print out which string is longer
+
+
+## Solution: how long is this string?
+{id: solution-how-long-is-this-string}
+
+
+
+
+## Solution: which string is longer?
+{id: solution-which-string-is-longer}
+{i: len}
+
+![](examples/which-string-is-longer/which_string_is_longer.go)

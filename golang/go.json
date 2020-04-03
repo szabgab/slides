@@ -33,6 +33,7 @@
         "testing.md",
         "web_client.md",
         "http_server.md",
+        "goroutine.md",
         "command-line-arguments.md",
         "appendix.md"
     ]

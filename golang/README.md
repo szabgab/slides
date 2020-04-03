@@ -30,3 +30,5 @@ r := 'a'   // single quotes!
 they are actually int32
 var r rune = 'a'
 ```
+
+Scan will only get the value till the first space, even if the user types in more

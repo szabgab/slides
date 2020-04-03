@@ -171,29 +171,6 @@ b := []byte(s)    // the ascii or utf values of the characters  ???
 How to include external files (e.g. images, html templates) in a golang application.
 
 
-## goroutine
-{id: goroutine}
-
-
-![](examples/goroutine/goroutine.go)
-
-```
-$ go run goroutine.go
-Welcome
-first 0
-first 1
-first 2
-fourth 0
-second 0
-second 1
-third 0
-third 1
-second 2
-fourth 1
-third 2
-fourth 2
-Done
-```
 
 ## go workspace layout
 {id: go-workspace-layout}
@@ -242,19 +219,6 @@ go install
 echo $0
 echo %ERRORLEVEL%
 ```
-
-## Read from stdin (keyboard)
-{id: read-from-stdin}
-
-Read from the stdin (standard input) Get input from the keyboard in golang
-
-![](examples/read-from-stdin/read_from_stdin.go)
-
-## Read from stdin (keyboard) with error handling
-{id: read-from-stdin-with-error-handling}
-
-![](examples/read-from-stdin-with-error-handling/read_from_stdin_with_error_handling.go)
-
 
 
 ## get variable type - %T or reflect.TypeOf
