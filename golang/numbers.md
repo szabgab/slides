@@ -21,6 +21,12 @@
 ![](examples/numbers-float/numbers_float.go)
 ![](examples/numbers-float/numbers_float.out)
 
+## Precision
+{id: precision}
+
+![](examples/precision/precision.go)
+![](examples/precision/precision.out)
+
 
 ## Mixed operations
 {id: mixed-operations}
@@ -29,6 +35,52 @@
 
 ![](examples/numbers-mix/numbers_mix.go)
 ![](examples/numbers-mix/numbers_mix.out)
+
+## int8
+{id: int8}
+{i: int8}
+
+![](examples/int8/int8.go)
+![](examples/int8/int8.out
+
+## uint8
+{id: uint8}
+{i: uint8}
+
+![](examples/uint8/uint8.go)
+![](examples/uint8/uint8.out)
+
+
+## Bytes
+{id: bytes}
+{i: byte}
+
+
+![](examples/byte/byte.go)
+![](examples/byte/byte.out)
+
+## Byte is uint8
+{id: byte-uint8}
+{i: byte}
+
+* `byte` is just an alias for `uint8`
+
+![](examples/byte-uint8/byte_uint8.go)
+
+## uint16
+{id: uint16}
+{i: uint16}
+
+![](examples/uint16/uint16.go)
+![](examples/uint16/uint16.out)
+
+
+## uint32
+{id: uint32}
+{i: uint32}
+
+![](examples/uint32/uint32.go)
+![](examples/uint32/uint32.out)
 
 
 ## Random
@@ -74,16 +126,3 @@
 
 
 ![](examples/game1/game1.go)
-
-
-## int8
-{id: int8}
-
-![](examples/int8/int8.go)
-
-
-## Bytes
-{id: bytes}
-
-![](examples/byte/byte.go)
-

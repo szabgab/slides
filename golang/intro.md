@@ -76,6 +76,10 @@
 go version
 ```
 
+```
+go version go1.12.9 linux/amd64
+```
+
 
 ## Editor/IDE for Golang
 {id: editor}
@@ -284,6 +288,7 @@ When we create a variable with the := assignment, Go automatically decides the t
 
 
 ![](examples/show-type/show_type.go)
+![](examples/show-type/show_type.out)
 
 
 ## Variable declaration (var)
@@ -308,6 +313,7 @@ In the third example `var a int16` we declare the variable but we don't assign a
 {/aside}
 
 ![](examples/variables/variables.go)
+![](examples/variables/variables.out)
 
 
 ## Default values of variables
@@ -321,6 +327,7 @@ Variables declared without an explicit initial value are given their zero value 
 * `false` for the boolean type.
 
 ![](examples/zero/zero.go)
+![](examples/zero/zero.out)
 
 
 ## Scan input strings from STDIN
@@ -417,12 +424,6 @@ Then in each one of the example we check if the value of `err` is equal to `nil`
 ![](examples/comments/comments.go)
 ![](examples/comments/comments.out)
 
-
-## Precision
-{id: precision}
-
-![](examples/precision/precision.go)
-![](examples/precision/precision.out)
 
 
 ## Exercise: circle STDIN
