@@ -227,13 +227,6 @@ echo %ERRORLEVEL%
 ![](examples/get-type/get_type.go)
 
 
-## Reverse Polish Calculator
-{id: reverse-polish-calculator}
-
-* TODO: finish this
-
-![](examples/rpc/rpc.go)
-
 
 ## os.Executable
 {id: os-executable}

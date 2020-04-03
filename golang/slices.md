@@ -172,6 +172,34 @@ Given a list of strings, create a list of unique values sorted by abc.
 
 ![](examples/unique-values-skeleton/unique_values_skeleton.go)
 
+## Exercise: Reverse Polish Calculator
+{id: exercise-reverse-polish-calculator}
+
+* Implement a reverse polish calculator.
+
+Examples:
+
+```
+go run rpc.go "2 7 + =" 
+9
+```
+
+```
+go run rpc.go "2.1 7.2 - =" 
+-5.1
+```
+
+```
+go run rpc.go "7 2 / =" 
+3.5
+```
+
+```
+go run rpc.go "2 3 5 + * ="
+16
+```
+
+
 ## Solution: count words
 {id: solution-count-words-slices}
 
@@ -186,3 +214,10 @@ TODO
 {id: solution-unique-values}
 
 TODO
+
+## Solution: Reverse Polish Calculator
+{id: solution-reverse-polish-calculator}
+
+
+![](examples/rpc/rpc.go)
+

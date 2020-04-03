@@ -418,6 +418,12 @@ Then in each one of the example we check if the value of `err` is equal to `nil`
 ![](examples/comments/comments.out)
 
 
+## Precision
+{id: precision}
+
+![](examples/precision/precision.go)
+![](examples/precision/precision.out)
+
 
 ## Exercise: circle STDIN
 {id: exercise-circle-stdin}
