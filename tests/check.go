@@ -18,13 +18,16 @@ func main() {
 	root := "golang"
 
 	var imports = make([]string, 0)
+	var examples = make([]string, 0)
 
 	errors := 0
 	errors += check_file(filepath.Join("tests", "check.go"))
-	errors += check_main_dir(root, imports)
+	errors += check_main_dir(root, &imports)
 	errors += check_examples_dir(root)
-	errors += check_examples(root)
+	errors += check_examples(root, &examples)
 	//fmt.Println(imports)
+	//fmt.Println(examples)
+	// TODO check if there is anything in examples that is not in imports
 
 	log.Println("Checking Go finished")
 	if errors > 0 {
@@ -34,7 +37,7 @@ func main() {
 	os.Exit(0)
 }
 
-func check_examples(root string) int {
+func check_examples(root string, examples *[]string) int {
 	validExampleFilename := regexp.MustCompile(`^[a-z0-9_.]+$`)
 	// We make sure filenames are unique across the examples.
 	names := make(map[string]string)
@@ -70,6 +73,8 @@ func check_examples(root string) int {
 				fmt.Sprintf("Duplicate: '%s' in both '%s' and '%s'", file.Name(), value, dir.Name())
 				errors++
 			}
+			//*examples = append(*examples, dir.Name() + "/" + file.Name())
+			*examples = append(*examples, fmt.Sprintf("%q\n", dir.Name() + "/" + file.Name()))
 			names[file.Name()] = dir.Name()
 			if strings.HasSuffix(file.Name(), ".go") {
 				errors += check_file(filepath.Join(path, dir.Name(), file.Name()))
@@ -132,7 +137,7 @@ func check_examples_dir(root string) int {
 	return errors
 }
 
-func check_main_dir(root string, imports []string) int {
+func check_main_dir(root string, imports *[]string) int {
 	errors := 0
 	files, err := ioutil.ReadDir(root)
 	if err != nil {
@@ -166,7 +171,7 @@ func check_main_dir(root string, imports []string) int {
 			//fmt.Println(len(res))
 			if len(res) > 0 {
 				importPath := fmt.Sprintf("%q\n", res[0][1])
-				imports = append(imports, importPath)
+				*imports = append(*imports, importPath)
 				//fmt.Printf("%q\n", res[0][1])
 				//fmt.Println(line)
 			}
