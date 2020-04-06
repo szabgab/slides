@@ -294,7 +294,15 @@ Task
 
 * Answer the question:   what state are the doors in after the last pass?   Which are open, which are closed? 
 
+
 * [Source](https://rosettacode.org/wiki/100_doors)
+
+## Solution: 100 doors
+{id: solution-100-doors}
+
+![](examples/100-doors/100_doors.go)
+![](examples/100-doors/100_doors_test.go)
+
 
 ## Scan int
 {id: scan-int}
