@@ -241,3 +241,79 @@ echo %ERRORLEVEL%
 ![](examples/rectangular-stdin-reader/rectangular_stdin_reader.go)
 
 
+## Exercise: FizzBuzz
+{id: exercise-fizzbuzz}
+
+Write a program that prints the numbers from 1 to 100.
+For multiples of 3 print "Fizz" instead of the number. For multiples of 5 print "Buzz". For
+numbers which are multiples of both three and five print "FizzBuzz".
+
+
+Expected output:
+
+![](examples/fizzbuzz-main/fizzbuzz_main.out)
+
+
+![](examples/fizzbuzz-main/fizzbuzz_main.go)
+
+
+
+## Exercise: FizzBuzz in function
+{id: exercise-fizzbuzz-in-function}
+
+Write a program that prints the numbers from 1 to 100.
+For multiples of 3 print "Fizz" instead of the number. For multiples of 5 print "Buzz". For
+numbers which are multiples of both three and five print "FizzBuzz".
+
+
+Expected output:
+
+![](examples/fizzbuzz-main/fizzbuzz_main.out)
+
+
+
+
+## Solution: FizzBuzz in function
+{id: solution-fizzbuzz-in-function}
+
+![](examples/fizzbuzz/fizzbuzz.go)
+
+![](examples/fizzbuzz/fizzbuzz_test.go)
+
+
+## Exercise: 100 doors
+{id: exercise-100-doors}
+
+* There are 100 doors in a row that are all initially closed.
+* You make 100 passes by the doors.
+* The first time through, visit every door and  toggle  the door  (if the door is closed,  open it;   if it is open,  close it).
+* The second time, only visit every 2nd door   (door #2, #4, #6, ...),   and toggle it.
+* The third time, visit every 3rd door   (door #3, #6, #9, ...), etc,   until you only visit the 100th door.
+
+Task
+
+* Answer the question:   what state are the doors in after the last pass?   Which are open, which are closed? 
+
+* [Source](https://rosettacode.org/wiki/100_doors)
+
+## Scan int
+{id: scan-int}
+
+![](examples/scan-int/scan_int.go)
+
+* Accepts an integer
+* Accepts a single character (and gives 0) but the second character is left on the SDTIN buffer
+* TODO: try also with int8 type
+
+## Function assignment
+{id: function-assignment}
+
+![](examples/function-alias/function_alias.go)
+
+## Overwriting built-in functions
+{id: overwriting-built-in-functions}
+
+![](examples/overwriting-builtin-functions/overwriting_builtin_functions.go)
+
+* TODO: Why does Go allow for this without any complaint? 
+
