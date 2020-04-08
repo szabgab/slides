@@ -325,3 +325,15 @@ Task
 
 * TODO: Why does Go allow for this without any complaint? 
 
+## Exercise: Permutations
+{id: exercise-permutations}
+
+Write a program to print all permutations of a given string
+
+For "ABC", it should print the following series: ABC ACB BAC BCA CBA CAB
+
+## Solution: Permutations
+{id: solution-permutations}
+
+![](examples/permutations/permutations.go)
+![](examples/permutations/permutations_test.go)

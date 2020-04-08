@@ -11,6 +11,8 @@
 
 ## Runes
 {id: runes}
+{i: rune}
+{i: int32}
 
 * alias for int32
 

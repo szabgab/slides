@@ -5,22 +5,17 @@ import (
 )
 
 func main() {
-	txt := "a"
-	fmt.Println(txt)
-	rn := 'a'
-	fmt.Println(rn)
-
+	txt := "H"
+	fmt.Printf("%-2v %T\n", txt, txt)
+	rn := 'H'
+	fmt.Printf("%2v %T\n", rn, rn)
 	fmt.Printf("%c\n", rn)
-
-	fmt.Println(rn == rune(97))
-	fmt.Println(97 == int(rn))
+	fmt.Printf("%v %T\n", txt[0], txt[0])
 
 	text := "Hello World!"
 	fmt.Println(text)
-	fmt.Println(text[0])
-	fmt.Println("H")
-	fmt.Println('H')
+	fmt.Printf("%v %T\n", text[0], text[0])
 	if text[0] == 'H' {
-		fmt.Println("match")
+		fmt.Println("match even thought one of them is uint8 and the other one is int32")
 	}
 }

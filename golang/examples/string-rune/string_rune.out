@@ -1,10 +1,7 @@
-a
-97
-a
-true
-true
-Hello World!
-72
+H  string
+72 int32
 H
-72
-match
+72 uint8
+Hello World!
+72 uint8
+match even thought one of them is uint8 and the other one is int32
