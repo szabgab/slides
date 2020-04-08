@@ -6,7 +6,7 @@ import (
 
 func main() {
 	name := "Foo"
-	res := fmt.Sprintf("Hello %s", name)
+	res := fmt.Sprintf("Hello %v", name)
 	fmt.Println("World")
 	fmt.Print(res)
 }

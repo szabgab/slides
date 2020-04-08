@@ -337,3 +337,21 @@ For "ABC", it should print the following series: ABC ACB BAC BCA CBA CAB
 
 ![](examples/permutations/permutations.go)
 ![](examples/permutations/permutations_test.go)
+
+
+## Exercise: parse hours log file and give report
+{id: exercise-parse-hours-log-file}
+
+The log file looks like this 
+
+![](examples/parse-hours-log/timelog.log)
+
+the report should look something like this: 
+
+![](examples/parse-hours-log/timelog.txt)
+
+## Solution: parse hours log file and give report
+{id: solution-parse-hours-log-file}
+
+![](examples/parse-hours-log/parse_hours_log.go)
+

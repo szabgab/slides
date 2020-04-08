@@ -1,10 +1,26 @@
 # Formatting
 {id: formatting}
 
+## Println
+{id: println}
+{i: println}
 
-## Sprintf and Sprintln
+![](examples/println/println.go)
+
+## Sprintln
+{id: sprintln}
+{i: sprintln}
+
+![](examples/sprintln/sprintln.go)
+
+## Sprintf
 {id: sprintf}
+{i: sprintf}
+{i: %v}
 
 ![](examples/sprintf/sprintf.go)
 
-![](examples/sprintln/sprintln.go)
+## Padding and alignment
+{id: padding-and-alignment}
+
+![](examples/printf-padding/printf_padding.go)

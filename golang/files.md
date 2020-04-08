@@ -3,11 +3,20 @@
 
 ## Read file line-by-line with Scanner
 {id: read-file-line-by-line-with-scanner}
+{i: Open}
+{i: os.Open}
+{i: bufio}
+{i: NewScanner}
+{i: Scan}
 
 ![](examples/read-file-with-scanner/read_file_with_scanner.go)
 
 ## Read file line by line (os.Open)
 {id: read-file-line-by-line}
+{i: Open}
+{i: NewReader}
+{i: ReadString}
+{i: readline}
 
 ![](examples/read-file-line-by-line/read_file_line_by_line.go)
 
@@ -15,16 +24,23 @@
 
 ## Trim line - remove trailing newline from string
 {id: remove-newline}
+{i: trim}
+{i: TrimSuffix}
 
 ![](examples/trim-newline/trim.go)
 
 ## Read file as one string (slurp)
 {id: read-file-as-one-string}
+{i: ReadFile}
+{i: slurp}
 
 ![](examples/slurp-file/slurp_file.go)
 
 ## Write to file
 {id: write-to-file}
+{i: Create}
+{i: WriteString}
+{i: write}
 
 ![](examples/write/write_file.go)
 
