@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	text := "In this text there is a number 123456 and an age: 42 and another number 78"
+	text := "There are no numbers in this text"
 	var match bool
 	var res []byte
 	var plex [][]byte
