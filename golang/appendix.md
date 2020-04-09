@@ -355,3 +355,15 @@ the report should look something like this:
 
 ![](examples/parse-hours-log/parse_hours_log.go)
 
+
+## Exercise: Parse ini file
+{id: exercise-parse-ini-file}
+
+![](examples/parse-ini/data.ini)
+
+
+## Solution: Parse ini file
+{id: solution-parse-ini-file}
+
+![](examples/parse-ini/parse_ini.go)
+![](examples/parse-ini/parse_ini_test.go)
