@@ -1,6 +1,11 @@
 # Command line arguments
 {id: command-line-arguments}
 
+## Flag
+{id: flag}
+
+* [flag](https://golang.org/pkg/flag/)
+
 ## Flags as pointers
 {id: flags-as-poineters}
 
