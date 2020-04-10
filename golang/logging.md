@@ -5,6 +5,8 @@
 ## Simple Logging
 {id: simple-logging}
 
+* [log](https://golang.org/pkg/log/)
+
 ![](examples/logging/logger.go)
 ![](examples/logging/logger.out)
 
@@ -50,6 +52,34 @@
 
 ![](examples/logging-filename/logging_filename.go)
 ![](examples/logging-filename/logging_filename.out)
+
+
+## Logging: Set Prefix
+{id: logging-set-prefix}
+{i: SetPrefix}
+{i: Prefix}
+
+* `SetPrefix` can set the prefix
+* `Prefix` returns the current prefix
+
+![](examples/logging-set-prefix/logging_set_prefix.go)
+![](examples/logging-set-prefix/logging_set_prefix.out)
+
+## Turn logging on/off
+{id: logging-turn-on-off}
+{i: Output}
+{i: Discard}
+{i: NullWriter}
+{i: /dev/null}
+{i: Stderr}
+
+{aside}
+By default the log module writes to the standard error (STDERR). We can turn off the logging by setting the `Output` channel to `ioutil.Discard`.
+We can turn on the logging again by setting the `Output` channel to `os.Stderr`. 
+{/aside}
+
+![](examples/logging-off/logging_off.go)
+![](examples/logging-off/logging_off.out)
 
 
 ## TODO: log levels?
