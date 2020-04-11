@@ -1,0 +1,10 @@
+https://code-maven.com/page/action?name=foo&age=42&name=bar
+/page/action
+/page/action?name=foo&age=42&name=bar
+code-maven.com
+code-maven.com
+
+map[age:[42] name:[foo bar]]
+
+name: 'foo' 'bar' 
+age: '42' 
