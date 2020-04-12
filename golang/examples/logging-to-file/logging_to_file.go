@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	var filename = "log.log"
+	var filename = "logging_to_file.log"
 	var fh, err = os.Create(filename)
 	if err != nil {
 		log.Fatalf("Could not open file '%v': %v", filename, err)

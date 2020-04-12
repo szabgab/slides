@@ -31,7 +31,7 @@
 * Set the output filehandle using `SetOutput`
 
 ![](examples/logging-to-file/logging_to_file.go)
-![](examples/logging-to-file/log.log)
+![](examples/logging-to-file/logging_to_file.log)
 
 ## Logging to a file - append
 {id: append-to-logfile}
