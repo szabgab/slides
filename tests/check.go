@@ -70,7 +70,7 @@ func check_examples(root string, examples *[]string) int {
 
 			value, ok := names[file.Name()]
 			if ok {
-				fmt.Sprintf("Duplicate: '%s' in both '%s' and '%s'", file.Name(), value, dir.Name())
+				fmt.Printf("Duplicate: '%s' in both '%s' and '%s'\n", file.Name(), value, dir.Name())
 				errors++
 			}
 			//*examples = append(*examples, dir.Name() + "/" + file.Name())
