@@ -12,9 +12,6 @@
 
 * By default log prints to STDERR (Standard Error)
 
-* There is a default prefix for each log message
-* We can change this prefix using SetFlags
-
 ## Logging Fatal errors
 {id: logging-fatal-errors}
 
@@ -39,27 +36,23 @@
 ![](examples/logging-to-file-append/logging_to_file_append.go)
 ![](examples/logging-to-file-append/logging_to_file_append.log)
 
+## Logging the filename
+{id: logging-the-filename}
+
+![](examples/logging-filename/logging_filename.go)
+![](examples/logging-filename/logging_filename.out)
 
 ## Logging flags
 {id: logging-flags}
 
 ![](examples/logging-flags/logging_flags.go)
 
-
-## Logging the ilename
-{id: logging-the-filename}
-
-
-![](examples/logging-filename/logging_filename.go)
-![](examples/logging-filename/logging_filename.out)
-
-
 ## Logging: Set Prefix
 {id: logging-set-prefix}
 {i: SetPrefix}
 {i: Prefix}
 
-* `SetPrefix` can set the prefix
+* `SetPrefix` can set the prefix for each log message
 * `Prefix` returns the current prefix
 
 ![](examples/logging-set-prefix/logging_set_prefix.go)
