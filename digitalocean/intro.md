@@ -12,7 +12,7 @@
 * Set up Nginx web server on droplet. 
 
 
-## what is Digital Ocean
+## What is Digital Ocean?
 {id: what-is-digital-ocean}
 
 * [Cloud Provider](https://www.digitalocean.com/?refcode=0d4cc75b3a74).
