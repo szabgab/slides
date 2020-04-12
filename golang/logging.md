@@ -37,7 +37,7 @@
 {id: append-to-logfile}
 
 ![](examples/logging-to-file-append/logging_to_file_append.go)
-![](examples/logging-to-file-append/log.log)
+![](examples/logging-to-file-append/logging_to_file_append.log)
 
 
 ## Logging flags
