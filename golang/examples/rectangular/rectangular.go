@@ -7,11 +7,30 @@ import (
 )
 
 func main() {
-	// convert to integer
-	w, _ := strconv.Atoi(os.Args[1]) // this will convert a string like "abc" or "2x" to 0 and set err
-	h, _ := strconv.Atoi(os.Args[2])
-	fmt.Println(w)
-	fmt.Println(h)
+	var err error
+	var width int
+	var height int
 
-	fmt.Println("The size of the rectangular is: ", w*h)
+	if len(os.Args) != 3 {
+		fmt.Printf("Usage: %v WIDTH HEIGHT\n", os.Args[0])
+		os.Exit(1)
+	}
+
+	width, err = strconv.Atoi(os.Args[1])
+	if err != nil {
+		fmt.Println(err)
+		os.Exit(1)
+	}
+
+	height, err = strconv.Atoi(os.Args[2])
+	if err != nil {
+		fmt.Println(err)
+		os.Exit(1)
+	}
+
+	fmt.Println(width)
+	fmt.Println(height)
+
+	area := width * height
+	fmt.Printf("The area of the rectangular is: %v\n", area)
 }

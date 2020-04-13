@@ -140,25 +140,34 @@ Unlike with arrays, when we assign a slice, we only assign the location of the s
 ![](examples/weird-merge-slices/weird_merge_slices.go)
 ![](examples/weird-merge-slices/weird_merge_slices.out)
 
+## Append to a slice
+{id: append-to-a-slice}
+
+![](examples/append-to-slice/append_to_slice.go)
+![](examples/append-to-slice/append_to_slice.out)
 
 ## Sort slice
 {id: sort}
 {i: sort}
+{i: sort.Strings}
+{i: sort.Ints}
+
+* [sort](https://golang.org/pkg/sort/)
 
 ![](examples/sort/sort.go)
 ![](examples/sort/sort.out)
 
+## TODO: Sort strings by length
+{id: sort-strings-by-length}
 
-## TODO: stack
-{id: stack}
+![](examples/sort-by-length/sort_by_length.go)
+![](examples/sort-by-length/sort_by_length.out)
 
-* see [lists](https://golang.org/pkg/container/list/)
+## TODO: Sort strings by length and then abc order
+{id: sort-strings-by-length-and-then-abc-order}
 
-## TODO: queue
-{id: queue}
-
-* see [lists](https://golang.org/pkg/container/list/)
-
+![](examples/sort-two-conditions/sort_by_two_conditions.go)
+![](examples/sort-two-conditions/sort_by_two_conditions.out)
 
 ## Exercise: count words
 {id: exercise-count-words-slices}

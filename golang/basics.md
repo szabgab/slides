@@ -258,8 +258,8 @@ This can, of course go wrong. If we ask for an integer and the user types in `"4
 Then in each one of the example we check if the value of `err` is equal to `nil` or if there was an error in the conversion. 
 {/aside}
 
-## Converting strings to float - strconv, ParseFloat
-{id: converting-strings-to-float}
+## Converting string to float - strconv, ParseFloat
+{id: converting-string-to-float}
 {i: strconv}
 {i: ParseFloat}
 {i: err}
@@ -268,15 +268,13 @@ Then in each one of the example we check if the value of `err` is equal to `nil`
 ![](examples/convert-string-to-float/convert_string_to_float.go)
 ![](examples/convert-string-to-float/convert_string_to_float.out)
 
-## Converting integers to strings - strconv, Itoa
-{id: converting-strings-to-numbers}
+## Converting integer to string - strconv, Itoa
+{id: converting-integer-to-string}
 {i: strconv}
 {i: Itoa}
 
 ![](examples/convert-string/convert_string.go)
 ![](examples/convert-string/convert_string.out)
-
-
 
 
 ## Scan STDIN convert to number

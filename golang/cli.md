@@ -57,12 +57,12 @@ $ go run calc.go 8 / 2
 
 ![](examples/rectangular/rectangular.go)
 
-## Solution: calculator CLI
+## TODO: Solution: calculator CLI
 {id: solution-calculator-if}
 
 ![](examples/calc-with-if/calc_with_if.go)
 
-## Solution: calculator (switch)
+## TODO: Solution: calculator (switch)
 {id: solution-calculator-switch}
 
 ![](examples/calc-with-switch/calc_with_switch.go)

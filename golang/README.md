@@ -5,6 +5,7 @@
 ## TODO
 
 * Explain what is `string(10000)`
+* slice of a string text[3:7]
 
 * VSC: get stdin
 * VSC: configure command line, and several run modes

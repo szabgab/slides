@@ -42,7 +42,7 @@
 {i: int8}
 
 ![](examples/int8/int8.go)
-![](examples/int8/int8.out
+![](examples/int8/int8.out)
 
 ## uint8
 {id: uint8}
