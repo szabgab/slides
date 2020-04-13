@@ -4,6 +4,22 @@
 ## Features
 {id: features}
 
+{aside}
+I don't plan to give you a "pitch" as to why you would want to use Go, but here are a few items that might help you if you need to justify
+the time you spend on it.
+
+In general there are many attributes to every programming language and each language is located somewhere else in relation to those different attributes.
+
+I think there are two central areas where Go has advantages over other languages. One of them is the built-in concurrency that makes it easyer to use all the cores that you can find in a modern computer. The other is the cross compilation. Meaning it is easy to write your code on one computer and compile your code
+on that computer targeting other operating systems.
+
+If we are alradt talking about compilation, it is also much faster than that of C or other compiled languages while its run-time is as fast as those other compiled language. The fast compile time might not sound as a big deal, but if your compilation takes 10 seconds instead of 5 minutes or two hours, your feedback loop is much faster and thus you can develop faster.
+
+Another advantage that Go has is that it manages the memory for you so unlilke in C you don't have to deal with memory management. On the other hand by giving up on some of the (usually unnecessary) flexibility of Python it is also not as wasteful with memory allocation.
+
+It provides you control over the types of the variables, but in many cases it does not force you to be precise.
+{/aside}
+
 * Built-in concurrency
 * Compile to standalone binaries (cross compilation available!)
 
@@ -11,6 +27,14 @@
 * Simplicity
 * Fast compile times
 * Garbage collected
+
+## Why Golang?
+{id: why-golang}
+
+
+* Concurrency [The Free Lunch Is Over: A Fundamental Turn Toward Concurrency in Software](http://www.gotw.ca/publications/concurrency-ddj.htm)
+* [C10k Problem](https://en.wikipedia.org/wiki/C10k_problem)
+
 
 ## Go Designed by
 {id: go-designed-by}
@@ -24,16 +48,22 @@
 ## Open Souce
 {id: open-source}
 
+{aside}
+To some people, yours truly included, it is important to know tha the go compiler is open source. You can find its source code on GitHub.
+{/aside}
 
 * [Source code](https://github.com/golang/go)
+* [The Go compiler is written in Go](https://blog.golang.org/go1.5)
+* [How to compile the Go compiler](https://golang.org/doc/install/source) way beyond our needs.
 
+## Platforms
+{id: platforms}
 
-## Why Golang?
-{id: why-golang}
-
-
-* Concurrency [The Free Lunch Is Over: A Fundamental Turn Toward Concurrency in Software](http://www.gotw.ca/publications/concurrency-ddj.htm)
-* [C10k Problem](https://en.wikipedia.org/wiki/C10k_problem)
+* Linux
+* Mac OSX
+* MS Windows
+* Some other
+* [mobile: Android/iOS](https://github.com/golang/go/wiki/Mobile)
 
 
 ## Major Open Source Projects
@@ -290,6 +320,14 @@ When we create a variable with the := assignment, Go automatically decides the t
 ![](examples/show-type/show_type.go)
 ![](examples/show-type/show_type.out)
 
+
+## Show type of variable - reflect.TypeOf
+{id: show-typeof}
+{i: reflect}
+{i: TypeOf}
+
+![](examples/typeof/typeof.go)
+![](examples/typeof/typeof.out)
 
 ## Variable declaration (var)
 {id: variable-declaration}
