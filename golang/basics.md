@@ -6,6 +6,11 @@
 {i: Println}
 {i: :=}
 
+{aside}
+In go you can use the `:=` operator to declare a variable and assign a value to it at the same time. Then you can use that variable in a `Println`.
+As you might notice, (I did not), the ``Println` function insert a space between the values it prints. For better control about this you can use `Printf`.
+{/aside}
+
 ![](examples/hello-foo/hello_foo.go)
 ![](examples/hello-foo/hello_foo.out)
 
@@ -15,7 +20,7 @@
 {i: %s}
 
 {aside}
-When printing values of variables it might be better to use the Printf function as it allows us to use placeholders like %s. Specifically %s stands for strings.
+When printing values of variables it might be better to use the Printf function as it allows us to use placeholders like %s and be more precise where would we want to put a space and where don't. These formatting placeholders are similar to what we have in other languages, but Go has a few additional placeholders. Specifically `%s` isn't special. It stands for strings.
 {/aside}
 
 ![](examples/hello-foo-printf/hello_foo_printf.go)
@@ -28,7 +33,7 @@ When printing values of variables it might be better to use the Printf function 
 {i: %v}
 
 {aside}
-In some case it is better to use %v as it is type-agnostic
+In some case it is better to use %v as it is type-agnostic. We're going to use it more often during the rest of these pages.
 {/aside}
 
 ![](examples/hello-foo-printf-v/hello_foo_printf_v.go)
@@ -40,8 +45,8 @@ In some case it is better to use %v as it is type-agnostic
 
 {aside}
 Each variable in Go has a type and Go will not let you mix values and variables of 
-different types. When we creaed the variable with the `:=`
-operator it automatically deducted from the assigned value.
+different types. When we created the variable with the `:=`
+operator Go automatically deducted the type from the assigned value. In this case it was `string`.
 {/aside}
 
 ![](examples/variable/variable.go)
@@ -103,12 +108,8 @@ bool
 byte             (alias for uint8)
 rune             (alias for int32)
 
-complex(r, i)
 complex64       1 + 2i    or just 3i
 complex128
-
-real(n)
-imag(n)
 ```
 
 
@@ -118,7 +119,7 @@ imag(n)
 {i: %T}
 
 {aside}
-When we create a variable with the := assignment, Go automatically decides the type of the variable based on the initial value assigned to it. Using Printf and the %T placeholder you can print out this type.
+When we create a variable with the `:=` assignment, Go automatically decides the type of the variable based on the initial value assigned to it. Using `Printf` and the `%T` placeholder you can print out this type.
 {/aside}
 
 
@@ -130,6 +131,12 @@ When we create a variable with the := assignment, Go automatically decides the t
 {id: show-typeof}
 {i: reflect}
 {i: TypeOf}
+
+{aside}
+You can also use the `TypeOf` function of the `reflect` package.
+{/aside}
+
+* [reflect](https://golang.org/pkg/reflect/)
 
 ![](examples/typeof/typeof.go)
 ![](examples/typeof/typeof.out)
@@ -203,14 +210,15 @@ We'll have a longer discussion about conditinal statements later, but it is quit
 * functions return the error value
 
 
-## Converting strings to numbers - strconv, ParseFloat, Atoi, Itoa
-{id: converting-strings-to-numbers}
+## Converting strings to integer - strconv, Atoi
+{id: converting-strings-to-integer}
 {i: strconv}
 {i: Atoi}
-{i: Itoa}
-{i: ParseFloat}
 {i: err}
 {i: nil}
+
+![](examples/convert-string-to-integer/convert_string_to_integer.go)
+![](examples/convert-string-to-integer/convert_string_to_integer.out)
 
 {aside}
 While internally Go can represent numbers, the communication with the outside world is always using strings. So when we read from a file we always get strings. When we ask the user to type in a number and the user types in a number, we still receive it as a string.
@@ -225,8 +233,24 @@ This can, of course go wrong. If we ask for an integer and the user types in `"4
 Then in each one of the example we check if the value of `err` is equal to `nil` or if there was an error in the conversion. 
 {/aside}
 
+## Converting strings to float - strconv, ParseFloat
+{id: converting-strings-to-float}
+{i: strconv}
+{i: ParseFloat}
+{i: err}
+{i: nil}
+
+![](examples/convert-string-to-float/convert_string_to_float.go)
+![](examples/convert-string-to-float/convert_string_to_float.out)
+
+## Converting integers to strings - strconv, Itoa
+{id: converting-strings-to-numbers}
+{i: strconv}
+{i: Itoa}
+
 
 ![](examples/convert-string/convert_string.go)
+![](examples/convert-string/convert_string.out)
 
 * [strconv](https://golang.org/pkg/strconv/)
 

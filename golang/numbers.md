@@ -101,6 +101,13 @@
 ![](examples/convert/convert.go)
 
 
+## Complex numbers
+{id: complex-numbers}
+
+![](examples/complex-numbers/complex_numbers.go)
+![](examples/complex-numbers/complex_numbers.out)
+
+
 ## Random
 {id: random}
 {i: rand}
