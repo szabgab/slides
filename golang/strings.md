@@ -116,6 +116,7 @@ Read from the stdin (standard input) Get input from the keyboard in golang
 {i: TrimSuffix}
 
 ![](examples/trim-newline/trim.go)
+![](examples/trim-newline/trim.out)
 
 
 ## Scan in a loop
