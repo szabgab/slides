@@ -1,4 +1,4 @@
-# Introduction to Go-lang
+# Introduction to Golang
 {id: intro}
 
 ## Features

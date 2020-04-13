@@ -1,3 +1,4 @@
 42 int
-strconv.Atoi: parsing "23\n": invalid syntax
-strconv.Atoi: parsing "17x": invalid syntax
+0 int
+0 int
+0 int

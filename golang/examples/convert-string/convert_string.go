@@ -6,6 +6,6 @@ import (
 )
 
 func main() {
-	var str = strconv.Itoa(42)
-	fmt.Printf("%s\n", str) // 42
+	text := strconv.Itoa(42)
+	fmt.Printf("%s\n", text) // 42
 }

@@ -204,14 +204,8 @@ We'll have a longer discussion about conditinal statements later, but it is quit
 ![](examples/if/if.go)
 
 
-## Error Handling
-{id: error-handling}
-
-* functions return the error value
-
-
-## Converting strings to integer - strconv, Atoi
-{id: converting-strings-to-integer}
+## Converting string to integer - strconv, Atoi
+{id: converting-string-to-integer}
 {i: strconv}
 {i: Atoi}
 {i: err}
@@ -220,10 +214,35 @@ We'll have a longer discussion about conditinal statements later, but it is quit
 ![](examples/convert-string-to-integer/convert_string_to_integer.go)
 ![](examples/convert-string-to-integer/convert_string_to_integer.out)
 
+* In the first two examples the conversion was successful.
+* In the 3rd and 4th examples it failed.
+* How can we know?
+
 {aside}
 While internally Go can represent numbers, the communication with the outside world is always using strings. So when we read from a file we always get strings. When we ask the user to type in a number and the user types in a number, we still receive it as a string.
 For example as the string `"42"`. So we need a way to convert a string that looks like a number to the numeric representation of Go.
 {/aside}
+
+
+## Error Handling
+{id: error-handling}
+
+* Functions that can fail will return the error value as the last value.
+* We can sweep under the carper by assigning it to `_`.
+
+
+## Converting string to integer with error handling - strconv, Itoa
+{id: converting-string-to-integer-with-error-handling}
+{i: strconv}
+{i: Itoa}
+{i: nil}
+
+* [strconv](https://golang.org/pkg/strconv/)
+
+
+![](examples/convert-string-to-integer-error-handling/convert_string_to_integer_error_handling.go)
+![](examples/convert-string-to-integer-error-handling/convert_string_to_integer_error_handling.out)
+
 
 {aside}
 This can, of course go wrong. If we ask for an integer and the user types in `"42x"` or even `"FooBar"`. So the conversion might fail. The way Go usually handles errors is by returning a second value which is the special value `nil` if everything went fine, or the error object is something broke. It is the responsibility of the caller to check the error. So in the follwing examples you can see that from each function we accept two values, the actual value we are interested in and another value that we assign to a variable called `err`. It is not a special name, but it is quite common in Go to use the variable name `err` for this purpose.
@@ -248,11 +267,10 @@ Then in each one of the example we check if the value of `err` is equal to `nil`
 {i: strconv}
 {i: Itoa}
 
-
 ![](examples/convert-string/convert_string.go)
 ![](examples/convert-string/convert_string.out)
 
-* [strconv](https://golang.org/pkg/strconv/)
+
 
 
 ## Scan STDIN convert to number
