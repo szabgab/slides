@@ -9,6 +9,9 @@ func main() {
 	b := 7.0
 
 	sum := a + b
-
 	fmt.Printf("sum %v\n", sum)
+
+	div := a / b
+	fmt.Printf("div %v\n", div)
+
 }

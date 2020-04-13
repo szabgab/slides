@@ -360,25 +360,6 @@ We'll have a longer discussion about conditinal statements later, but it is quit
 * functions return the error value
 
 
-
-## Converting values to other types - float32, int, string
-{id: converting-types}
-{i: float32()}
-{i: int()}
-{i: string()}
-{i: Sprintf}
-{i: %f}
-{i: %d}
-
-* integers to `float32()`
-* floats to `int()`
-* integers to `string()` but that converts the number to the value it represents in ASCII or Unicode table.
-* In order to get the same "look" but as a string we need to use the `Sprintf` function from `fmt`.
-
-
-![](examples/convert/convert.go)
-
-
 ## Converting strings to numbers - strconv, ParseFloat, Atoi, Itoa
 {id: converting-strings-to-numbers}
 {i: strconv}

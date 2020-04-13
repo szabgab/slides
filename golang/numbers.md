@@ -8,6 +8,7 @@
 {i: --}
 {i: +=}
 {i: /=}
+{i: pow}
 
 ![](examples/numbers-integers/numbers_integers.go)
 ![](examples/numbers-integers/numbers_integers.out)
@@ -81,6 +82,23 @@
 
 ![](examples/uint32/uint32.go)
 ![](examples/uint32/uint32.out)
+
+## Converting values to other types - float32, int, string
+{id: converting-types}
+{i: float32()}
+{i: int()}
+{i: string()}
+{i: Sprintf}
+{i: %f}
+{i: %d}
+
+* integers to `float32()`
+* floats to `int()`
+* integers to `string()` but that converts the number to the value it represents in ASCII or Unicode table.
+* In order to get the same "look" but as a string we need to use the `Sprintf` function from `fmt`.
+
+
+![](examples/convert/convert.go)
 
 
 ## Random

@@ -3,6 +3,8 @@ diff -4
 mul 21
 div 2
 modulus 1
+power 8
+square 3
 div float: 2.3333333333333335
 x: 1
 x: 3
