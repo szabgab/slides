@@ -119,6 +119,14 @@ Read from the stdin (standard input) Get input from the keyboard in golang
 ![](examples/trim-newline/trim.out)
 
 
+## Strings and bytes
+{id: string-and-bytes}
+
+* strings are just aliases for bytes
+* strings are (generally?) immutable
+
+![](examples/strings-bytes/strings_bytes.go)
+
 ## Scan in a loop
 {id: scan-in-a-loop}
 

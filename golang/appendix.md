@@ -154,17 +154,6 @@ export PATH=$PATH:~/go/bin
 then reload it using `source ~/.bashrc`
 
 
-## types
-{id: types}
-
-* strings are just aliases for bytes
-* strings are (generally?) immutable
-
-```
-s := "some string"
-b := []byte(s)    // the ascii or utf values of the characters  ???
-```
-
 ## Include and distribute external files
 {id: external-files}
 
@@ -210,24 +199,6 @@ go install
 ![](examples/caller-filename/caller_filename.go)
 
 
-## Exit early with exit code
-{id: exit-early}
-
-![](examples/exit/code.go)
-
-```
-echo $0
-echo %ERRORLEVEL%
-```
-
-
-## get variable type - %T or reflect.TypeOf
-{id: get-variable-type}
-
-![](examples/get-type/get_type.go)
-
-
-
 ## os.Executable
 {id: os-executable}
 {i: Eecutable}
@@ -241,67 +212,6 @@ echo %ERRORLEVEL%
 ![](examples/rectangular-stdin-reader/rectangular_stdin_reader.go)
 
 
-## Exercise: FizzBuzz
-{id: exercise-fizzbuzz}
-
-Write a program that prints the numbers from 1 to 100.
-For multiples of 3 print "Fizz" instead of the number. For multiples of 5 print "Buzz". For
-numbers which are multiples of both three and five print "FizzBuzz".
-
-
-Expected output:
-
-![](examples/fizzbuzz-main/fizzbuzz_main.out)
-
-
-![](examples/fizzbuzz-main/fizzbuzz_main.go)
-
-
-
-## Exercise: FizzBuzz in function
-{id: exercise-fizzbuzz-in-function}
-
-Write a program that prints the numbers from 1 to 100.
-For multiples of 3 print "Fizz" instead of the number. For multiples of 5 print "Buzz". For
-numbers which are multiples of both three and five print "FizzBuzz".
-
-
-Expected output:
-
-![](examples/fizzbuzz-main/fizzbuzz_main.out)
-
-
-
-
-## Solution: FizzBuzz in function
-{id: solution-fizzbuzz-in-function}
-
-![](examples/fizzbuzz/fizzbuzz.go)
-
-![](examples/fizzbuzz/fizzbuzz_test.go)
-
-
-## Exercise: 100 doors
-{id: exercise-100-doors}
-
-* There are 100 doors in a row that are all initially closed.
-* You make 100 passes by the doors.
-* The first time through, visit every door and  toggle  the door  (if the door is closed,  open it;   if it is open,  close it).
-* The second time, only visit every 2nd door   (door #2, #4, #6, ...),   and toggle it.
-* The third time, visit every 3rd door   (door #3, #6, #9, ...), etc,   until you only visit the 100th door.
-
-Task
-
-* Answer the question:   what state are the doors in after the last pass?   Which are open, which are closed? 
-
-
-* [Source](https://rosettacode.org/wiki/100_doors)
-
-## Solution: 100 doors
-{id: solution-100-doors}
-
-![](examples/100-doors/100_doors.go)
-![](examples/100-doors/100_doors_test.go)
 
 
 ## Scan int

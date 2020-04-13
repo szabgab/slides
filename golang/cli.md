@@ -11,6 +11,16 @@
 go run examples/cli/cli.go  hello world
 ```
 
+## Exit early with exit code
+{id: exit-early}
+
+![](examples/exit/code.go)
+
+```
+echo $0
+echo %ERRORLEVEL%
+```
+
 
 ## Exercise: rectangular
 {id: exercise-rectangular}

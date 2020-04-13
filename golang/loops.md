@@ -71,6 +71,18 @@ The game have several levels. Solve them one after the other.
 * Allow the user to change the game to "move" mode by typing "m". In this mode after every guess after we compared the values change the hidden number by -2, -1, 0, 1, or 2.
 * If the user enters "d" we switch to the "debug-mode" of the game. In this mode, before every turn we print the current hidden value.
 
+## Exercise: FizzBuzz
+{id: exercise-fizzbuzz}
+
+Write a program that prints the numbers from 1 to 100.
+For multiples of 3 print "Fizz" instead of the number. For multiples of 5 print "Buzz". For
+numbers which are multiples of both three and five print "FizzBuzz".
+
+
+Expected output:
+
+![](examples/fizzbuzz-main/fizzbuzz_main.out)
+
 
 ## Solution: One-dimensional spacefight - multiple guesses till hit
 {id: solution-one-dimensinal-spacefight-multiple-guesses}
@@ -86,3 +98,8 @@ The game have several levels. Solve them one after the other.
 {id: solution-one-dimensiona-spacefight-allow-m}
 
 ![](examples/game5/game5.go)
+
+## Solution: FizzBuzz
+{id: solution-fizzbuzz}
+
+![](examples/fizzbuzz-main/fizzbuzz_main.go)

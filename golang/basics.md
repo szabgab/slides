@@ -141,6 +141,12 @@ You can also use the `TypeOf` function of the `reflect` package.
 ![](examples/typeof/typeof.go)
 ![](examples/typeof/typeof.out)
 
+## get variable type - %T or reflect.TypeOf
+{id: get-variable-type}
+
+![](examples/get-type/get_type.go)
+
+
 ## Variable declaration (var)
 {id: variable-declaration}
 {i: var}
