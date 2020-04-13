@@ -6,6 +6,10 @@ import (
 
 func main() {
 	text := "Hello World!"
+	text = "שלום"
+	text = "Gábor Szabó"
+	text = "lò mañana 😈 mas"
+	text = "¿Còmo estas?"
 	fmt.Println(text)
 
 	for i, chr := range text {

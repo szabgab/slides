@@ -11,4 +11,9 @@ func main() {
 	parts := strings.Fields(expression)
 	fmt.Println(parts)
 	fmt.Println(len(parts))
+	fmt.Println()
+
+	for _, part := range parts {
+		fmt.Printf("%v\n", part)
+	}
 }

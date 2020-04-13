@@ -141,9 +141,9 @@ for i, v := range array {}  // iterator over index and value
 
 ![](examples/language-selector-skeleton/language_selector_skeleton.go)
 
-* It displays a "menu" that associates each language to a number.
-* the user types in one of the numbers.
-* The code check if it is a number and if it is in the corret range.
+* It displays a "menu" that associates each language with a number.
+* The user types in one of the numbers.
+* The code checks if it is a number and if it is in the correct range.
 * If it is, then we display the selected language.
 * The interaction will look like this:
 

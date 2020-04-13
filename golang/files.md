@@ -22,12 +22,6 @@
 
 * [OS](https://golang.org/pkg/os/)
 
-## Trim line - remove trailing newline from string
-{id: remove-newline}
-{i: trim}
-{i: TrimSuffix}
-
-![](examples/trim-newline/trim.go)
 
 ## Read file as one string (slurp)
 {id: read-file-as-one-string}

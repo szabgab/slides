@@ -3,15 +3,19 @@ package main
 import (
 	"fmt"
 	"sort"
-	"strings"
 )
 
 func main() {
-	text := "Hello World!"
-	fmt.Println(text)
+	dwarfs := []string{"Doc", "Grumpy", "Happy", "Sleepy", "Bashful", "Sneezy", "Dopey"}
+	fmt.Println(dwarfs)
 
-	chars := strings.Split(text, "")
-	fmt.Println(chars)
-	sort.Strings(chars)
-	fmt.Println(chars)
+	sort.Strings(dwarfs)
+	fmt.Println(dwarfs)
+
+	scores := []int{17, 3, 42, 28}
+	fmt.Println(scores)
+
+	sort.Ints(scores)
+	fmt.Println(scores)
+
 }

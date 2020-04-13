@@ -5,6 +5,13 @@ import (
 )
 
 func main() {
+	a := "שלום"
+	fmt.Println(a)
+	fmt.Println(len(a))
+	fmt.Printf("%T %T\n", a, a[0])
+	fmt.Printf("%c %v\n", a[0], a[0])
+	//fmt.Printf("%v\n", a[0:1])
+	fmt.Println()
 	txt := "H"
 	fmt.Printf("%-2v %T\n", txt, txt)
 	rn := 'H'

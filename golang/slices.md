@@ -141,6 +141,14 @@ Unlike with arrays, when we assign a slice, we only assign the location of the s
 ![](examples/weird-merge-slices/weird_merge_slices.out)
 
 
+## Sort slice
+{id: sort}
+{i: sort}
+
+![](examples/sort/sort.go)
+![](examples/sort/sort.out)
+
+
 ## TODO: stack
 {id: stack}
 

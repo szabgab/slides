@@ -25,6 +25,13 @@
 ![](examples/strings/strings.go)
 ![](examples/strings/strings.out)
 
+## Change string
+{id: change-string}
+
+![](examples/change-string/change_string.go)
+![](examples/change-string/change_string.out)
+
+
 ## Strings and Runes
 {id: strings-and-runes}
 
@@ -54,25 +61,26 @@
 ![](examples/suffix-prefix/suffix_prefix.go)
 
 
-
-## Sort
-{id: sort}
-{i: sort}
-
-![](examples/sort/sort.go)
-
-
-## Split and join
+## Split
 {id: split}
+{i: split}
 
 ![](examples/split/split.go)
+![](examples/split/split.out)
 
+## Join
+{id: join}
+{i: join}
+
+![](examples/join/join.go)
+![](examples/join/join.out)
 
 ## Split on whitespaces
 {id: split-on-whitespaces}
 
 
 ![](examples/split-on-whitespace/split_on_whitespace.go)
+![](examples/split-on-whitespace/split_on_whitespace.out)
 
 ```
 '  hello    space   world 42 '
@@ -81,6 +89,13 @@
 ```
 
 * [strings.Fields](https://golang.org/pkg/strings/#Fields)
+
+
+## Newlines
+{id: newlines}
+
+![](examples/newlines/newlines.go)
+![](examples/newlines/newlines.out)
 
 
 ## Read line from stdin (keyboard)
@@ -95,6 +110,20 @@ Read from the stdin (standard input) Get input from the keyboard in golang
 
 ![](examples/read-from-stdin-with-error-handling/read_from_stdin_with_error_handling.go)
 
+## Trim line - remove trailing newline from string
+{id: remove-newline}
+{i: trim}
+{i: TrimSuffix}
+
+![](examples/trim-newline/trim.go)
+
+
+## Scan in a loop
+{id: scan-in-a-loop}
+
+![](examples/scan-in-loop/scan_in_loop.go)
+![](examples/scan-in-loop/scan_in_loop.in)
+![](examples/scan-in-loop/scan_in_loop.out)
 
 ## Exercise: how long is this string?
 {id: exercise-how-long-is-this-string}

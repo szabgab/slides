@@ -6,12 +6,14 @@ import (
 )
 
 func main() {
-	text := "Hello World!"
+	text := "This text,has,comma separated,vales"
 	fmt.Println(text)
 
-	chars := strings.Split(text, "")
-	fmt.Println(chars)
+	shortStrings := strings.Split(text, ",")
+	fmt.Println(shortStrings)
+	fmt.Println(len(shortStrings))
 
-	new_text := strings.Join(chars, "-")
-	fmt.Println(new_text)
+	veryShortStrings := strings.Split(text, "")
+	fmt.Println(veryShortStrings)
+	fmt.Println(len(veryShortStrings))
 }
