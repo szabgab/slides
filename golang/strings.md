@@ -134,21 +134,41 @@ Read from the stdin (standard input) Get input from the keyboard in golang
 ![](examples/scan-in-loop/scan_in_loop.in)
 ![](examples/scan-in-loop/scan_in_loop.out)
 
+## Compare strings
+{id: compare-strings}
+
+![](examples/compare-strings/compare_strings.go)
+![](examples/compare-strings/compare_strings.out)
+
 ## Exercise: how long is this string?
 {id: exercise-how-long-is-this-string}
 
-* The code will ask the user to type in a string and will print out the length of the string
+* The code will ask the user to type in a string and will print out the length of the string.
 
 ## Exercise: which string is longer?
 {id: exercise-which-string-is-longer}
 
-* The code will prompt the user for two strings and then print out which string is longer
+* The code will prompt the user for two strings and then print out which string is longer.
 
+## Exercise: which string is ahead in ABC?
+{id: exercise-which-string-is-ahead-in-abc}
+
+* The code will prompt the user for two strings and then print out which string is ahead in ABC order.
+
+## Exercise: which string is ahead - menu
+{id: exercise-which-string-is-ahead-menu}
+
+* The code will first show two options like the following and ask the user to type in either 1 or 2.
+
+```
+1) by ABC
+2) by length
+```
+
+* Then the code will prompt the user for two strings and then print out which ahead comparing them either by their location in the ABC or by their length, depending on the first selection.
 
 ## Solution: how long is this string?
 {id: solution-how-long-is-this-string}
-
-
 
 
 ## Solution: which string is longer?
@@ -156,3 +176,12 @@ Read from the stdin (standard input) Get input from the keyboard in golang
 {i: len}
 
 ![](examples/which-string-is-longer/which_string_is_longer.go)
+
+
+## TODO: Solution: which string is ahead in ABC?
+{id: solution-which-string-is-ahead-in-abc}
+
+
+## TODO: Solution: which string is ahead - menu
+{id: solution-which-string-is-ahead-menu}
+

@@ -4,17 +4,29 @@
 ## No Pointer
 {id: no-pointer}
 
-
-![](examples/pointer-no/no_pointer.go)
-
+![](examples/no-pointer/no_pointer.go)
+![](examples/no-pointer/no_pointer.out)
 
 ## Int Pointer
 {id: int-pointer}
 {i: &}
 {i: *}
 
-![](examples/pointer-int/int_pointer.go)
+![](examples/int-pointer/int_pointer.go)
+![](examples/int-pointer/int_pointer.out)
 
+## Array Pointer
+{id: array-pointer}
+
+![](examples/array-pointer/array_pointer.go)
+![](examples/array-pointer/array_pointer.out)
+
+## Slice Pointer and copy slice
+{id: slice-pointer}
+{i: copy}
+
+![](examples/slice-pointer/slice_pointer.go)
+![](examples/slice-pointer/slice_pointer.out)
 
 ## Pointer
 {id: pointer}

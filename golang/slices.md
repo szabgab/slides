@@ -157,13 +157,13 @@ Unlike with arrays, when we assign a slice, we only assign the location of the s
 ![](examples/sort/sort.go)
 ![](examples/sort/sort.out)
 
-## TODO: Sort strings by length
+## Sort strings by length
 {id: sort-strings-by-length}
 
 ![](examples/sort-by-length/sort_by_length.go)
 ![](examples/sort-by-length/sort_by_length.out)
 
-## TODO: Sort strings by length and then abc order
+## Sort strings by length and then abc order
 {id: sort-strings-by-length-and-then-abc-order}
 
 ![](examples/sort-two-conditions/sort_by_two_conditions.go)
@@ -216,6 +216,14 @@ go run rpc.go "2 3 5 + * ="
 16
 ```
 
+## Exercise: DNA Sequencing
+{id: exercise-dna-sequencing}
+
+* A, C, T, G are called bases or nucleotides
+* Given a sequence like "ACCGXXCXXGTTACTGGGCXTTGT" (nucleoids mixed up with other elements) return the sequences containing only ACTG orderd by length.
+* The above string can be split up to ["ACCG", "C", "GTTACTGGGC", "TTGT"] and then it can be sorted to get the following:
+* Expected result: ["GTTACTGGGC", "ACCG", "TTGT", "C"]
+
 
 ## Solution: count words
 {id: solution-count-words-slices}
@@ -235,6 +243,16 @@ TODO
 ## Solution: Reverse Polish Calculator
 {id: solution-reverse-polish-calculator}
 
-
 ![](examples/rpc/rpc.go)
 
+## Solution: DNA Sequencing
+{id: solution-dna-sequencing}
+
+![](examples/dna-sequencing/dna_sequencing.go)
+![](examples/dna-sequencing/dna_sequencing.out)
+
+## Solution: DNA Sequencing with in place filter
+{id: solution-dna-sequencing-in-place-filter}
+
+![](examples/dna-sequencing-in-place-filter/dna_sequencing_in_place_filter.go)
+![](examples/dna-sequencing-in-place-filter/dna_sequencing_in_place_filter.out)
