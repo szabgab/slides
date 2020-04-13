@@ -16,5 +16,5 @@ func main() {
 	line = "hello\n\n"
 	line = strings.TrimSuffix(line, "\n") // removing only one newline
 	fmt.Printf("'%s'\n", line)            // 'hello
-	// '
+                                              // '
 }
