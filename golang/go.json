@@ -35,6 +35,7 @@
         "web_client.md",
         "http_server.md",
         "goroutine.md",
+        "distribution.md",
         "command-line-arguments.md",
         "appendix.md"
     ]

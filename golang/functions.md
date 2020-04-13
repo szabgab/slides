@@ -163,6 +163,13 @@ one
 
 Implement a function that accepts a positive integer (n) and prints out the first n numbers of the Fibonacci series.
 
+## Exercise: Permutations
+{id: exercise-permutations}
+
+Write a program to print all permutations of a given string
+
+For "ABC", it should print the following series: ABC ACB BAC BCA CBA CAB
+
 ## Exercise: FizzBuzz in function
 {id: exercise-fizzbuzz-in-function}
 
@@ -209,6 +216,12 @@ Task
 {id: solution-single-counter}
 
 ![](examples/counter-single/counter_single.go)
+
+## Solution: Permutations
+{id: solution-permutations}
+
+![](examples/permutations/permutations.go)
+![](examples/permutations/permutations_test.go)
 
 
 ## Solution: FizzBuzz in function

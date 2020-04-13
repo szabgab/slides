@@ -27,3 +27,35 @@
 {id: regex-markua-include}
 
 ![](examples/regex-markua-include/regex_markua_include.go)
+
+
+## Exercise: Parse ini file
+{id: exercise-parse-ini-file}
+
+![](examples/parse-ini/data.ini)
+
+
+## Exercise: parse hours log file and give report
+{id: exercise-parse-hours-log-file}
+
+The log file looks like this 
+
+![](examples/parse-hours-log/timelog.log)
+
+the report should look something like this: 
+
+![](examples/parse-hours-log/timelog.txt)
+
+## Solution: Parse ini file
+{id: solution-parse-ini-file}
+
+![](examples/parse-ini/parse_ini.go)
+![](examples/parse-ini/parse_ini_test.go)
+
+## Solution: parse hours log file and give report
+{id: solution-parse-hours-log-file}
+
+![](examples/parse-hours-log/parse_hours_log.go)
+
+
+
