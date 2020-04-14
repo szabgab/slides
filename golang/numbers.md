@@ -67,6 +67,7 @@
 * `byte` is just an alias for `uint8`
 
 ![](examples/byte-uint8/byte_uint8.go)
+![](examples/byte-uint8/byte_uint8.out)
 
 ## uint16
 {id: uint16}

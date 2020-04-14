@@ -94,6 +94,8 @@ Expected output:
 
 ![](examples/game3/game3.go)
 
+![](examples/game4/game4.go)
+
 ## Solution: One-dimensional spacefight - allow m
 {id: solution-one-dimensiona-spacefight-allow-m}
 

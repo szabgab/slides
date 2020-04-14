@@ -78,3 +78,7 @@
 
 * see [lists](https://golang.org/pkg/container/list/)
 
+## Left over
+{id: left-over}
+
+![](examples/bytes/bytes.go)

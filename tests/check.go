@@ -25,9 +25,11 @@ func main() {
 	errors += check_main_dir(root, &imports)
 	errors += check_examples_dir(root)
 	errors += check_examples(root, &examples)
+
 	//fmt.Println(imports)
 	//fmt.Println(examples)
 	// TODO check if there is anything in examples that is not in imports
+	errors += countMissing(examples, imports)
 
 	log.Println("Checking Go finished")
 	if errors > 0 {
@@ -74,7 +76,7 @@ func check_examples(root string, examples *[]string) int {
 				errors++
 			}
 			//*examples = append(*examples, dir.Name() + "/" + file.Name())
-			*examples = append(*examples, fmt.Sprintf("%q\n", dir.Name() + "/" + file.Name()))
+			*examples = append(*examples, fmt.Sprintf("%q", dir.Name() + "/" + file.Name()))
 			names[file.Name()] = dir.Name()
 			if strings.HasSuffix(file.Name(), ".go") {
 				errors += check_file(filepath.Join(path, dir.Name(), file.Name()))
@@ -162,7 +164,7 @@ func check_main_dir(root string, imports *[]string) int {
 		}
 		// ![](examples/variable-scope/scope.go)
 		//importFilename := regexp.MustCompile(`^!\[\]\(examples/([a-z-]+/[a-z_.])\)\s*\n?$`)
-		importFilename := regexp.MustCompile(`^!\[\]\(examples/([a-z-/_.]+)\)?$`)
+		importFilename := regexp.MustCompile(`^!\[\]\(examples/([a-z0-9-/_.]+)\)?$`)
 		scanner := bufio.NewScanner(fh)
 		for scanner.Scan() {
 			line := scanner.Text()
@@ -170,7 +172,7 @@ func check_main_dir(root string, imports *[]string) int {
 			res := importFilename.FindAllSubmatch([]byte(line), -1)
 			//fmt.Println(len(res))
 			if len(res) > 0 {
-				importPath := fmt.Sprintf("%q\n", res[0][1])
+				importPath := fmt.Sprintf("%q", res[0][1])
 				*imports = append(*imports, importPath)
 				//fmt.Printf("%q\n", res[0][1])
 				//fmt.Println(line)
@@ -184,6 +186,23 @@ func check_main_dir(root string, imports *[]string) int {
 	return errors
 }
 
+func countMissing(a, b []string) int {
+	errors := 0
+	for i := 0; i < len(a); i++ {
+		found := false
+		for j := 0; j < len(b); j++ {
+			if a[i] == b[j] {
+				found = true
+				break
+			}
+		}
+		if !found {
+			log.Printf("File '%v' is in first, but not in the second", a[i])
+			errors++
+		}
+	}
+	return errors
+}
 
 //func walk() {
 //	root := "golang"
