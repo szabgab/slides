@@ -1,19 +1,20 @@
 package main
 
 import (
+	"fmt"
 	"log"
 	"os/exec"
+	"time"
 )
 
 func main() {
-	cmd := exec.Command("sleep", "5")
-	err := cmd.Start()
+	cmd := exec.Command("sleep", "2")
+	fmt.Printf("%v - start\n", time.Now().Unix())
+	err := cmd.Run()
 	if err != nil {
 		log.Fatal(err)
 	}
-	log.Printf("Waiting for command to finish...")
-	err = cmd.Wait()
-	log.Printf("Command finished with error: %v", err)
+	fmt.Printf("%v - Only after command has finished\n", time.Now().Unix())
 
 	// perl, err := exec.LookPath("perl")
 	// if err != nil {
