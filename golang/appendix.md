@@ -22,7 +22,7 @@
 * [Golang tour](https://tour.golang.org/welcome/1)
 * [7-hours Video of freeCodeCamp](https://www.youtube.com/watch?v=YS4e4q9oBaU)
 * [Video](https://youtu.be/YS4e4q9oBaU?t=6927)
-
+* [Practical intro to Go](https://www.youtube.com/playlist?list=PLQVvvaa0QuDeF3hP0wQoSxpkqgRcgxMqX)
 
 
 
@@ -77,23 +77,4 @@
 {id: queue}
 
 * see [lists](https://golang.org/pkg/container/list/)
-
-## Find executable (which where)
-{id: find-executable}
-{i: which}
-{i: where}
-{i: exec}
-{i: LookPath}
-
-* Unix: `which`
-* Windows: `where`
-* Go:
-
-![](examples/find-executable/find_executable.go)
-![](examples/find-executable/find_executable.out)
-
-## Run external programs
-{id: run-external-programs}
-
-![](examples/run-external/run_external.go)
 
