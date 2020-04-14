@@ -78,3 +78,22 @@
 
 * see [lists](https://golang.org/pkg/container/list/)
 
+## Find executable (which where)
+{id: find-executable}
+{i: which}
+{i: where}
+{i: exec}
+{i: LookPath}
+
+* Unix: `which`
+* Windows: `where`
+* Go:
+
+![](examples/find-executable/find_executable.go)
+![](examples/find-executable/find_executable.out)
+
+## Run external programs
+{id: run-external-programs}
+
+![](examples/run-external/run_external.go)
+
