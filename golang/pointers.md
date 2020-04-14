@@ -35,8 +35,3 @@
 ![](examples/slice-pointer/slice_pointer.go)
 ![](examples/slice-pointer/slice_pointer.out)
 
-## Pointer
-{id: pointer}
-
-* [video](https://youtu.be/YS4e4q9oBaU?t=14813)
-

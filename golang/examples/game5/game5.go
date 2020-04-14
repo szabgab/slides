@@ -15,7 +15,7 @@ func main() {
 
 	reader := bufio.NewReader(os.Stdin)
 
-	rand.Seed(time.Now().Unix())
+	rand.Seed(time.Now().UnixNano())
 	var hidden = rand.Intn(20)
 	//fmt.Println(hidden)
 	var move = false

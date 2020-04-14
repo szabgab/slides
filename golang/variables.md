@@ -28,6 +28,15 @@ Not using a declared variable is a compile-time error!
 
 ![](examples/variable-no-redeclaration/variable_no_redeclaration.go)
 
+![](examples/redefine-variable-fail/redefine_variable_fail.go)
+![](examples/redefine-variable-fail/redefine_variable_fail.out)
+
+
+## Use the same err on the left hand side
+{id: redefine-variable}
+
+![](examples/redefine-variable/redefine_variable.go)
+![](examples/redefine-variable/redefine_variable.out)
 
 ## Variable scope
 {id: variable-sciope}

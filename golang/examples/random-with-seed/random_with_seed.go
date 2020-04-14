@@ -7,9 +7,9 @@ import (
 )
 
 func main() {
-	fmt.Println(time.Now().Unix())
+	fmt.Println(time.Now().UnixNano())
 
-	rand.Seed(time.Now().Unix())
+	rand.Seed(time.Now().UnixNano())
 
 	a := rand.Float64()
 

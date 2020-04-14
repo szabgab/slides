@@ -1,0 +1,2 @@
+# command-line-arguments
+./redefine_variable_fail.go:11:4: no new variables on left side of :=

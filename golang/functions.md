@@ -76,6 +76,18 @@ As it is right now, the `run` function can only accept callback functions withou
 ![](examples/function-increment-with-pointer/function_increment_with_pointer.go)
 ![](examples/function-increment-with-pointer/function_increment_with_pointer.out)
 
+## Array passed by value or by reference
+{id: array-passed-by-value}
+
+![](examples/function-change-array/function_change_array.go)
+![](examples/function-change-array/function_change_array.out)
+
+## Multiple function with the same name
+{id: multiple-function-with-the-same-name}
+
+* no, we cannot have such thing in Golang
+
+![](examples/redeclare-function/redeclare_function.go)
 
 ## TODO: pass by value, pass by reference
 {id: functions-todo}

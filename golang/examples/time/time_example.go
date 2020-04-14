@@ -6,9 +6,8 @@ import (
 )
 
 func main() {
-	fmt.Println(time.Now())
-	fmt.Println(time.Now().Unix())
-
 	t := time.Now()
+	fmt.Println(t)
 	fmt.Println(t.Unix())
+	fmt.Println(t.UnixNano())
 }

@@ -12,7 +12,7 @@ func main() {
 	fmt.Println("Welcome to the game!")
 	max := 20
 
-	rand.Seed(time.Now().Unix())
+	rand.Seed(time.Now().UnixNano())
 	hidden := rand.Intn(max) + 1
 
 	fmt.Printf("The hidden number is %v\n", hidden)

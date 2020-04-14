@@ -1,0 +1,7 @@
+before [4 7 12]
+val in change: [4 7 12]
+val in change: [4 42 12]
+after [4 7 12]
+val in reallyChange: &[4 7 12]
+val in reallyChange: &[4 42 12]
+end [4 42 12]
