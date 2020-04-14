@@ -8,6 +8,7 @@
     "files": [
         "introduction.md",
         "part2.md",
-        "part3.md"
+        "part3.md",
+        "compose.md"
     ]
 }

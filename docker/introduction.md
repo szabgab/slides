@@ -218,6 +218,15 @@ docker ps -aq
 docker rm $(docker ps -aq)
 ```
 
+## Remove all the containers with docker prune
+{id: docker-prune}
+{i: prune}
+
+```
+docker container prune
+docker container prune -f
+```
+
 ## Run and remove container
 {id: run-and-remove-container}
 
@@ -245,3 +254,11 @@ docker rmi busybox
 * Basically execute all the above commands.
 * Check what other interesting command you can find in docker.
 
+## Docker remove all the images - prune images
+{id: remove-all-the-images}
+
+```
+docker image prune
+docker image prune -a
+docker image prune -a -f
+```

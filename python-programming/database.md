@@ -1,4 +1,4 @@
-# Database Access
+# SQLite Database Access
 {id: database}
 
 ## SQLite

@@ -302,7 +302,7 @@ The -it is needed so we can see the log on the command line and we can easily st
 
 
 ## Docker compose
-{id: docker-compose}
+{id: docker-compose-redis-flask}
 
 ```
 pip install docker-compose

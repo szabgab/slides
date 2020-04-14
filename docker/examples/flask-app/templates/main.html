@@ -1,0 +1,13 @@
+<form action="/" method="POST">
+<input name="title">
+<input type="submit" value="Add">
+</form>
+
+{% if tasks %}
+  <h2>Tasks</h2>
+  <ul>
+  {% for item in tasks %}
+       <li>{{ item.title }}</li>
+  {% endfor %}
+  </ul>
+{% endif %}
