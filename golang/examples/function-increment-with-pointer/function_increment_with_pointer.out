@@ -1,0 +1,5 @@
+before 1
+address of val in inc: 0xc0000140e0
+val in inc: 1
+val in inc: 2
+after 2

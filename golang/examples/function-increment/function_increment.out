@@ -1,0 +1,4 @@
+before 1
+val in inc: 1
+val in inc: 2
+after 1

@@ -64,6 +64,19 @@ As it is right now, the `run` function can only accept callback functions withou
 ![](examples/function-anonimous/anonymous_function.go)
 
 
+## Numbers are passed by value
+{id: numbers-pass-by-value}
+
+![](examples/function-increment/function_increment.go)
+![](examples/function-increment/function_increment.out)
+
+## Numbers passed by reference
+{id: numbers-pass-by-reference}
+
+![](examples/function-increment-with-pointer/function_increment_with_pointer.go)
+![](examples/function-increment-with-pointer/function_increment_with_pointer.out)
+
+
 ## TODO: pass by value, pass by reference
 {id: functions-todo}
 
