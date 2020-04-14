@@ -37,12 +37,12 @@ Install [Docker](https://www.docker.com/)
 
 * [Post Install](https://docs.docker.com/install/linux/linux-postinstall/)
 
-* For older Windows and Mac [Docker Toolbox ](https://docs.docker.com/toolbox/toolbox_install_windows/)
+* For older Windows and Mac [Docker Toolbox](https://docs.docker.com/toolbox/toolbox_install_windows/)
 
 ## Docker on Windows
 {id: docker-on-windows}
 
-* cmd
+* Run the `cmd`
 
 ## Docker version
 {id: docker-version}
@@ -131,11 +131,11 @@ docker rmi ubuntu:19.10
 ## root
 {id: root}
 
-* Several meaning
+* Several meanings:
 
-* The name of the superuser or administrator
-* The name we use for the common ancestor of the filesystem
-* The name of the home-directory of user 'root'
+* The name of the superuser or administrator: `root`
+* The name we use for the common ancestor of the filesystem: `/`
+* The name of the home-directory of user 'root': `/root`
 
 ## Linux Users
 {id: linux-users}
