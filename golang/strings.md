@@ -167,9 +167,10 @@ Read from the stdin (standard input) Get input from the keyboard in golang
 
 * Then the code will prompt the user for two strings and then print out which ahead comparing them either by their location in the ABC or by their length, depending on the first selection.
 
-## Solution: how long is this string?
+## TODO Solution: how long is this string?
 {id: solution-how-long-is-this-string}
 
+![](examples/how-long-is-this-string/how_long_is_this_string.go)
 
 ## Solution: which string is longer?
 {id: solution-which-string-is-longer}

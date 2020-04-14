@@ -44,12 +44,13 @@ In some case it is better to use %v as it is type-agnostic. We're going to use i
 {id: enforce-variable-types}
 
 {aside}
-Each variable in Go has a type and Go will not let you mix values and variables of 
+Each variable in Go has a type and Go will not let you mix values and variables of
 different types. When we created the variable with the `:=`
 operator Go automatically deducted the type from the assigned value. In this case it was `string`.
 {/aside}
 
 ![](examples/variable/variable.go)
+![](examples/variable/variable.out)
 
 ```
 # command-line-arguments

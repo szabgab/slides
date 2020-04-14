@@ -88,6 +88,7 @@ As it is right now, the `run` function can only accept callback functions withou
 * no, we cannot have such thing in Golang
 
 ![](examples/redeclare-function/redeclare_function.go)
+![](examples/redeclare-function/redeclare_function.out)
 
 ## TODO: pass by value, pass by reference
 {id: functions-todo}
@@ -262,4 +263,8 @@ Task
 ![](examples/100-doors/100_doors.go)
 ![](examples/100-doors/100_doors_test.go)
 
+## TODO return array
+{id: return-array}
+
+![](examples/return-array/return_array.go)
 

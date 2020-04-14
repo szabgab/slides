@@ -39,3 +39,11 @@
 {id: http-hello-world-templates}
 
 ![](examples/http-hello-world-template/http_hello_world_template.go)
+![](examples/http-hello-world-template/main.html)
+
+## TODO: HTTP Echo
+{id: http-echo}
+
+![](examples/http-echo/http_echo.go)
+
+![](examples/http-get-failure/http_get_failure.go)

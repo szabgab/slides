@@ -75,6 +75,9 @@ func check_examples(root string, examples *[]string) int {
 				fmt.Printf("Duplicate: '%s' in both '%s' and '%s'\n", file.Name(), value, dir.Name())
 				errors++
 			}
+			if dir.Name() == "package-example" && file.Name() == "src" {
+				continue
+			}
 			//*examples = append(*examples, dir.Name() + "/" + file.Name())
 			*examples = append(*examples, fmt.Sprintf("%q", dir.Name() + "/" + file.Name()))
 			names[file.Name()] = dir.Name()

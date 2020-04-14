@@ -57,6 +57,7 @@
 {id: break-out-from-internal-loop}
 
 ![](examples/for-label/for_label.go)
+![](examples/for-label/for_label.out)
 
 
 ## Exercise: One-dimensional spacefight

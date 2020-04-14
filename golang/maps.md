@@ -54,6 +54,7 @@ and: 1
 {id: map-of-slices}
 
 ![](examples/map-of-slices/map_of_slices.go)
+![](examples/map-of-slices/map_of_slices.out)
 
 
 create with content

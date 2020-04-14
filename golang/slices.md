@@ -117,6 +117,7 @@ Unlike with arrays, when we assign a slice, we only assign the location of the s
 {i: ...}
 
 ![](examples/merge-slices/merge_slices.go)
+![](examples/merge-slices/merge_slices.out)
 
 
 ## Find element in array or slice
@@ -229,6 +230,7 @@ go run rpc.go "2 3 5 + * ="
 {id: solution-count-words-slices}
 
 ![](examples/count-words-in-slices/count_words_in_slices.go)
+![](examples/count-words-in-slices/count_words_in_slices.out)
 
 ## Solution: Create a list of words from sentences
 {id: solution-create-list}
