@@ -113,10 +113,10 @@ but for now I have listed a few companies that have offices in Israel where they
 * [Apester](https://apester.com/)
 * [CATO Networks](https://www.catonetworks.com/) - Backend Engineer
 * [Cisco](https://www.cisco.com/)
-* [Check Point](https://www.checkpoint.com/) - Infrastructure Backend Developer
+* [Check Point](https://www.checkpoint.com/) - Infrastructure Backend Developer; Cloud Security Full Stack Developer
 * [CodeNotary](https://www.codenotary.io/) - Senior Golang Developer
 * [Crowdstrike](https://www.crowdstrike.com/) - Software Engineer - SecOps
-* [Ebay](https://www.ebay.com/) - Technical Lead
+* [Ebay](https://www.ebay.com/) - Technical Lead; Mid Level Developer
 * [Elastic](https://www.elastic.co/) - Application Performance Monitoring - Golang Engineer
 * [Firedome](https://firedome.io/) -  Senior Embedded Developer
 * [Fiverr](https://www.fiverr.com/) - Senior Full Stack Engineer, Algotighm developer
