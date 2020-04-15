@@ -132,10 +132,7 @@ but for now I have listed a few companies that have offices in Israel where they
 * [PerimeterX](https://www.perimeterx.com/) - Software Developer
 * [Promo.com](https://promo.com/) - Back End Developer
 * [Radware](https://www.radware.com/) - Cloud Software Engineer
-* [Red Hat](https://www.redhat.com/)
-    * Principal Software Engineer - KubeVirt Cloud Native Network Functions;
-    * Performance and Scale Engineer;
-    * Software Engineer - Foundation CI
+* [Red Hat](https://www.redhat.com/) - Principal Software Engineer - KubeVirt Cloud Native Network Functions; Performance and Scale Engineer; Software Engineer - Foundation CI
 * [SAP](https://www.sap.com/) - Software Developer
 * [SolarWinds](https://www.solarwinds.com/) - Technical Lead Developer
 * [Spot.IM](https://www.spot.im/) - Senior Back End Developer
