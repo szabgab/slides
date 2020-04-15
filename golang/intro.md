@@ -68,7 +68,7 @@ To some people, yours truly included, it is important to know tha the go compile
 
 {aside}
 Go can be compiled to the 3 major desktop operating systems and to few other, smaller ones. It can be used in mobile environments,
-but as far as I know it does not have a good solution for the GUI part. 
+but as far as I know it does not have a good solution for the GUI part.
 {/aside}
 
 
@@ -100,7 +100,7 @@ start reading their code. Try to make some changes and send them back as contrib
 
 * [Directory of Open Source Projects in Go](https://github.com/golang/go/wiki/Projects)
 
-## Some companies in Israel
+## Companies using Golang in Israel
 {id: companies-in-israel}
 
 {aside}
