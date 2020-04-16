@@ -11,6 +11,12 @@
 ![](examples/const/const.go)
 ![](examples/const/const.out)
 
+## Constants cannot be changed
+{id: constants-cannot-be-changed}
+
+![](examples/const-protection/const_protection.go)
+![](examples/const-protection/const_protection.out)
+
 ## Shadowing constants
 {id: shadowing-constants}
 
