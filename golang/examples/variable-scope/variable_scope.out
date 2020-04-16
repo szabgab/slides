@@ -1,0 +1,5 @@
+3.14 float32
+[Foo Bar] []string
+hello string
+1
+showX: 3.14 3.14[Foo Bar] []string

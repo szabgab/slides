@@ -11,7 +11,7 @@
 ![](examples/const/const.go)
 ![](examples/const/const.out)
 
-## Shadowning constants
+## Shadowing constants
 {id: shadowing-constants}
 
 * constants can be shadowed as well, but it is not a good idea to do so.

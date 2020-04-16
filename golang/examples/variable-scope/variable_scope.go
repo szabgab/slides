@@ -5,28 +5,25 @@ import (
 )
 
 var x float32 = 3.14
-var y int
 
 func main() {
 	fmt.Printf("%v %T\n", x, x)
-	x := 23
+	x := []string{"Foo", "Bar"}
 	fmt.Printf("%v %T\n", x, x)
 	if true {
 		x := "hello"
 		fmt.Printf("%v %T\n", x, x)
-
 	}
 
+	for x := 1; x < 2; x++ {
+		fmt.Println(x)
+	}
+
+	showX()
+
 	fmt.Printf("%v %T\n", x, x)
-
-	showY()
-	setY()
-	showY()
 }
 
-func setY() {
-	y = 42
-}
-func showY() {
-	fmt.Println(y)
+func showX() {
+	fmt.Printf("showX: %v %v", x, x)
 }

@@ -4,29 +4,31 @@
 ## Variables intro
 {id: variables-intro}
 
-Not using a declared variable is a compile-time error!
-
-* Variable declaration
-* Redeclaration and shadowing
-* Visibility
-* Naming conventions
-* Type conversions
+* Every variable must be declared.
+* Not using a declared variable is a compile-time error.
 
 ## Variables - Naming
 {id: naming-variables}
 
-* lower-case variables are scoped to the current package
-* upper-case variables are exported from the package and globally visible
-* block-scoped variables (e.g. in a function) are only visible in the block
+* Lower-case variables are scoped to the current package.
+* Upper-case variables are exported from the package and globally visible.
+* Block-scoped variables (e.g. in a function) are only visible in the block.
 
 * theURL
 * theHTML
 
+* [camelCase](https://en.wikipedia.org/wiki/Camel_case) for private name
+* [PascalCase](https://wiki.c2.com/?PascalCase) for public names
+
+## Declare multiple variables in one line
+{id: declare-multiple-variables-in-one-line}
+
+![](examples/declare-multiple-variables/declare_multiple_variables.go)
+![](examples/declare-multiple-variables/declare_multiple_variables.out)
+
 
 ## No Variable Redeclaration
 {id: no-variable-redeclaration}
-
-![](examples/variable-no-redeclaration/variable_no_redeclaration.go)
 
 ![](examples/redefine-variable-fail/redefine_variable_fail.go)
 ![](examples/redefine-variable-fail/redefine_variable_fail.out)
@@ -38,12 +40,25 @@ Not using a declared variable is a compile-time error!
 ![](examples/redefine-variable/redefine_variable.go)
 ![](examples/redefine-variable/redefine_variable.out)
 
+
+## Package variable
+{id: package-variable}
+
+![](examples/package-variables/package_variables.go)
+![](examples/package-variables/package_variables.out)
+
+
+## Shadowing package variable
+{id: shadowing-package-variable}
+
+![](examples/shadowing-package-variable/shadowing_package_variable.go)
+![](examples/shadowing-package-variable/shadowing_package_variable.out)
+
+
+
 ## Variable scope
 {id: variable-sciope}
 
-![](examples/variable-scope/scope.go)
+![](examples/variable-scope/variable_scope.go)
+![](examples/variable-scope/variable_scope.out)
 
-
-
-* [PascalCase](https://wiki.c2.com/?PascalCase)
-* [camelCase](https://en.wikipedia.org/wiki/Camel_case)
