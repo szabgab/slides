@@ -15,12 +15,18 @@
 ![](examples/go-functions/hello_foo_function.go)
 ![](examples/go-functions/hello_foo_function.out)
 
+## Function with multiple parameters
+{id: function-with-multiple-parameters}
+
+![](examples/print-substring-function/print_substring_function.go)
+![](examples/print-substring-function/print_substring_function.out)
 
 ## Function with return value
 {id: function-sith-return}
 {i: return}
 
-![](examples/function-return/add_function.go)
+![](examples/function-return/function_return.go)
+![](examples/function-return/function_return.out)
 
 
 ## Multiple return values
@@ -68,10 +74,10 @@ As it is right now, the `run` function can only accept callback functions withou
 ![](examples/function-increment/function_increment.go)
 ![](examples/function-increment/function_increment.out)
 
-## Multiple function with the same name
+## Function Overloading - Multiple function with the same name
 {id: multiple-function-with-the-same-name}
 
-* no, we cannot have such thing in Golang
+* There is no function overloading in Golang
 
 ![](examples/redeclare-function/redeclare_function.go)
 ![](examples/redeclare-function/redeclare_function.out)
