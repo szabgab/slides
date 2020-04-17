@@ -1,13 +1,19 @@
 # Docker
 {id: docker-intro}
 
+## Why use D ocker?
+{id: why-use-docker}
+
+* One of the big problems: Developers, Testers, and Production all have different environments.
+* Onboarding new developers is hard.
+
+* Makes it easy to have the exact same setup for development, testing, productions.
+* Makes it easy for people to set up their development environment.
+
 ## What is Docker?
 {id: what-is-docker}
 
 * A light-weight Virtual Server.
-
-* Makes it easy to have the exact same setup for development, testing, productions.
-* Makes it easy for people to set up their development environment.
 
 * De-facto standard for containerization.
 
