@@ -96,6 +96,8 @@ container = runtime image
 
 Install [Docker](https://www.docker.com/)
 
+* [Get Docker](https://docs.docker.com/get-docker/)
+
 * Debian/Ubuntu: `apt-get install docker.io`
 * CentOS: `yum install docker`
 * MS Windows: Download [Docker Desktop for Windows](https://docs.docker.com/docker-for-windows/install/)
