@@ -7,6 +7,7 @@ func main() {
 	defer fmt.Println(text)
 	defer say(text)
 	text = "end"
+	fmt.Printf("end: %v\n", text)
 }
 
 func say(text string) {

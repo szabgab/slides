@@ -103,8 +103,10 @@ one
 ![](examples/cd-and-back/deferred_cd.go)
 
 
-## Defer does not work in if-statements
-{id: defer-not-in-if}
+## Defer in if-statements 
+{id: defer-in-if}
+
+* Even if we put the defer call inside an if-statement, the deferred function will only execute at the end of the enclosing function.
 
 ![](examples/defer-no-in-if/defer_no_in_if.go)
 
@@ -123,6 +125,11 @@ Implement a function that accepts a positive integer (n) and returns the n-th nu
 
 ## Exercise: Defer remove temporary directory
 {id: exercise-defer-remove-temporary-directory}
+
+Write a function that will create a temporary directory and then it will remove it once the function is done.
+Make sure the directory is removed no matter how you exit from the function.
+
+![](examples/remove-temp-directory/remove_temp_directory.go)
 
 ## Exercise: FizzBuzz in function
 {id: exercise-fizzbuzz-in-function}
