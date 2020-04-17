@@ -170,6 +170,21 @@ Unlike with arrays, when we assign a slice, we only assign the location of the s
 ![](examples/sort-two-conditions/sort_by_two_conditions.go)
 ![](examples/sort-two-conditions/sort_by_two_conditions.out)
 
+
+## Variadic function (arbitrary number of parameters)
+{id: variadic-function}
+
+* unknown number of parameters
+* [variadic functions](https://medium.com/rungo/variadic-function-in-go-5d9b23f4c01a)
+
+![](examples/function-sum/sum_function.go)
+
+## Defer and slice
+{id: defer-and-slice}
+
+![](examples/defer-and-slice/defer_and_slice.go)
+
+
 ## Exercise: count words
 {id: exercise-count-words-slices}
 

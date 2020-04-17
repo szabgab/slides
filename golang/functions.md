@@ -23,15 +23,6 @@
 ![](examples/function-return/add_function.go)
 
 
-## Variadic function (arbitrary number of parameters)
-{id: variadic-function}
-
-* unknown number of parameters
-* [variadic functions](https://medium.com/rungo/variadic-function-in-go-5d9b23f4c01a)
-
-![](examples/function-sum/sum_function.go)
-
-
 ## Multiple return values
 {id: multiple-return-values}
 
@@ -62,6 +53,13 @@ As it is right now, the `run` function can only accept callback functions withou
 {id: anonimous-function}
 
 ![](examples/function-anonimous/anonymous_function.go)
+![](examples/function-anonimous/anonymous_function.out)
+
+## Anonymous functions assigned to name
+{id: anonimous-function-assigned-to-name}
+
+![](examples/anonymous-function-with-name/anonymous_function_with_name.go)
+![](examples/anonymous-function-with-name/anonymous_function_with_name.out)
 
 
 ## Numbers are passed by value
@@ -69,6 +67,15 @@ As it is right now, the `run` function can only accept callback functions withou
 
 ![](examples/function-increment/function_increment.go)
 ![](examples/function-increment/function_increment.out)
+
+## Multiple function with the same name
+{id: multiple-function-with-the-same-name}
+
+* no, we cannot have such thing in Golang
+
+![](examples/redeclare-function/redeclare_function.go)
+![](examples/redeclare-function/redeclare_function.out)
+
 
 ## Defer
 {id: defer}

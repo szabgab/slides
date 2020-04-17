@@ -3,11 +3,14 @@ package main
 import "fmt"
 
 func main() {
-	f := func() {
-		fmt.Println("Hello Anonymous!")
-	}
 	fmt.Println("Start")
-	f()
+	run(func() {
+		fmt.Println("Hello")
+	})
 	fmt.Println("End")
-	fmt.Printf("%T", f)
+}
+
+func run(f func()) {
+	fmt.Printf("%T\n", f)
+	f()
 }

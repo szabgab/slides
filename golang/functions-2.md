@@ -1,6 +1,7 @@
 # Functions 2
 {id: functions-2}
 
+
 ## Numbers passed by reference
 {id: numbers-pass-by-reference}
 
@@ -12,14 +13,6 @@
 
 ![](examples/function-change-array/function_change_array.go)
 ![](examples/function-change-array/function_change_array.out)
-
-## Multiple function with the same name
-{id: multiple-function-with-the-same-name}
-
-* no, we cannot have such thing in Golang
-
-![](examples/redeclare-function/redeclare_function.go)
-![](examples/redeclare-function/redeclare_function.out)
 
 ## TODO: pass by value, pass by reference
 {id: functions-todo}
@@ -63,13 +56,6 @@ does not seem to be very readable
 //    j = 23
 // )
 ```
-
-
-
-## Defer and slice
-{id: defer-and-slice}
-
-![](examples/defer-and-slice/defer_and_slice.go)
 
 
 ## Exercise: Fibonacci series
