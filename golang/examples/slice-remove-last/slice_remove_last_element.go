@@ -6,6 +6,7 @@ import (
 
 func main() {
 	dwarfs := []string{"Doc", "Grumpy", "Happy", "Sleepy", "Bashful", "Sneezy", "Dopey"}
+	x := dwarfs
 	fmt.Println(dwarfs)
 	fmt.Println(len(dwarfs))
 	fmt.Println(cap(dwarfs))
@@ -21,4 +22,12 @@ func main() {
 	fmt.Println(dwarfs)
 	fmt.Println(len(dwarfs))
 	fmt.Println(cap(dwarfs))
+
+	d := append(dwarfs, "qqrq")
+	fmt.Println(d)
+	fmt.Println(len(d))
+	fmt.Println(cap(d))
+	fmt.Println(x)
+	fmt.Println(dwarfs)
+
 }

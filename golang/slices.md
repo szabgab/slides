@@ -188,7 +188,14 @@ Unlike with arrays, when we assign a slice, we only assign the location of the s
 ## Exercise: count words
 {id: exercise-count-words-slices}
 
+* Count how many times each word appears in a given slice
+* You can use this skeleton:
+
 ![](examples/count-words-in-slices-skeleton/count_words_in_slices_skeleton.go)
+
+* Expected output:
+
+![](examples/count-words-in-slices/count_words_in_slices.out)
 
 
 ## Exercise: Create a list of words from sentences
@@ -245,7 +252,6 @@ go run rpc.go "2 3 5 + * ="
 {id: solution-count-words-slices}
 
 ![](examples/count-words-in-slices/count_words_in_slices.go)
-![](examples/count-words-in-slices/count_words_in_slices.out)
 
 ## Solution: Create a list of words from sentences
 {id: solution-create-list}

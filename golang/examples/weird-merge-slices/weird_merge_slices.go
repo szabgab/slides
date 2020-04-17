@@ -15,5 +15,6 @@ func main() {
 	part := append(celestialObjects[:3], celestialObjects[4:]...)
 	fmt.Println(part)
 	fmt.Println(celestialObjects)
-
+	fmt.Printf("part - len: %v cap: %v\n", len(part), cap(part))
+	fmt.Printf("orig - len: %v cap: %v\n", len(celestialObjects), cap(celestialObjects))
 }
