@@ -1,7 +1,7 @@
 # Docker
 {id: docker-intro}
 
-## Why use D ocker?
+## Why use Docker?
 {id: why-use-docker}
 
 * One of the big problems: Developers, Testers, and Production all have different environments.
