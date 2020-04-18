@@ -1,8 +1,8 @@
 # Variables
 {id: variables}
 
-## Variables intro
-{id: variables-intro}
+## Variable Declarations
+{id: variables-declarations}
 
 * Every variable must be declared.
 * Not using a declared variable is a compile-time error.
@@ -14,11 +14,13 @@
 * Upper-case variables are exported from the package and globally visible.
 * Block-scoped variables (e.g. in a function) are only visible in the block.
 
-* theURL
-* theHTML
-
 * [camelCase](https://en.wikipedia.org/wiki/Camel_case) for private name
 * [PascalCase](https://wiki.c2.com/?PascalCase) for public names
+
+* Special case when part of the name is an acronym:
+* `theURL`
+* `theHTML`
+
 
 ## Declare multiple variables in one line
 {id: declare-multiple-variables-in-one-line}
@@ -27,11 +29,20 @@
 ![](examples/declare-multiple-variables/declare_multiple_variables.out)
 
 
-## No Variable Redeclaration
+## Variables cannot be redefined (no new variables on left side of :=)
 {id: no-variable-redeclaration}
 
 ![](examples/redefine-variable-fail/redefine_variable_fail.go)
 ![](examples/redefine-variable-fail/redefine_variable_fail.out)
+
+
+## At least one new variable on the left side of :=
+{id: at-least-one-new-variable-on-the-left-side}
+
+* The existing variable must receive a value of the same type it had earlier.
+
+![](examples/new-variable-on-the-left/new_variable_on_the_left.go)
+![](examples/new-variable-on-the-left/new_variable_on_the_left.out)
 
 
 ## Use the same err on the left hand side

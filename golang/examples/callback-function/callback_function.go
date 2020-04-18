@@ -5,7 +5,6 @@ import (
 )
 
 func main() {
-	// fmt.Printf("%T\n", hello)  // func()
 	run(hello)
 	run(world)
 }

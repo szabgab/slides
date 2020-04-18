@@ -6,6 +6,7 @@
 {i: func}
 
 ![](examples/function-hello-world/hello_world_function.go)
+![](examples/function-hello-world/hello_world_function.out)
 
 
 ## Hello You function (passing parameter)
@@ -33,6 +34,7 @@
 {id: multiple-return-values}
 
 ![](examples/function-multiple-return/multiple_return_function.go)
+![](examples/function-multiple-return/multiple_return_function.out)
 
 ## Returning an error from a functions
 {id: returning-an-error-from-a-function}

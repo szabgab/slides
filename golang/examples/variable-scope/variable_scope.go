@@ -28,9 +28,6 @@ func main() {
 
 	fmt.Printf("%v %T\n", x, x)
 
-	// a, b := 1, 2
-	// a, c := 3.2, 4
-	// fmt.Println(a, b, c)
 }
 
 func showX() {
