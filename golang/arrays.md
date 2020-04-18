@@ -178,6 +178,18 @@ Expected output:
 ![](examples/count-digits-from-string/count_digits_from_string.out)
 
 
+## Exercise: Report statistics
+{id: exercise-report-statistics}
+
+Given some numbers in an array, print out the total, the average, the minimum and the maximum values.
+
+![](examples/statistics-skeleton/statistics_skeleton.go)
+
+Expected output:
+
+![](examples/statistics/statistics.out)
+
+
 ## Solution: Language Selector
 {id: solution-language-selector}
 
@@ -193,3 +205,7 @@ Expected output:
 
 ![](examples/count-digits-from-string/count_digits_from_string.go)
 
+## Solution: Report statistics
+{id: solution-report-statistics}
+
+![](examples/statistics/statistics.go)

@@ -167,7 +167,7 @@ Read from the stdin (standard input) Get input from the keyboard in golang
 
 * Then the code will prompt the user for two strings and then print out which ahead comparing them either by their location in the ABC or by their length, depending on the first selection.
 
-## TODO Solution: how long is this string?
+## Solution: how long is this string?
 {id: solution-how-long-is-this-string}
 
 ![](examples/how-long-is-this-string/how_long_is_this_string.go)
@@ -178,11 +178,12 @@ Read from the stdin (standard input) Get input from the keyboard in golang
 
 ![](examples/which-string-is-longer/which_string_is_longer.go)
 
-
-## TODO: Solution: which string is ahead in ABC?
+## Solution: which string is ahead in ABC?
 {id: solution-which-string-is-ahead-in-abc}
 
+![](examples/string-abc/string_abc.go)
 
-## TODO: Solution: which string is ahead - menu
+## Solution: which string is ahead - menu
 {id: solution-which-string-is-ahead-menu}
 
+![](examples/string-ahead/string_ahead.go)
