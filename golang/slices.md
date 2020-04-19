@@ -205,7 +205,7 @@ Unlike with arrays, when we assign a slice, we only assign the location of the s
 
 ![](examples/words-from-sentences-skeleton/words_from_sentences_skeleton.go)
 
-## Exercise: Create a uniquie list of values
+## Exercise: Create a unique list of values
 {id: exercise-unique-values}
 
 Given a list of strings, create a list of unique values sorted by abc.
@@ -258,7 +258,7 @@ go run rpc.go "2 3 5 + * ="
 
 TODO
 
-## Solution: Create a uniquie list of values
+## Solution: Create a unique list of values
 {id: solution-unique-values}
 
 TODO
