@@ -218,7 +218,7 @@ go run rpc.go "2 3 5 + * ="
 
 TODO
 
-## Solution: Create a uniquie list of values
+## Solution: Create a unique list of values
 {id: solution-unique-values}
 
 TODO
