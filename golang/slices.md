@@ -262,7 +262,8 @@ go run rpc.go "2 3 5 + * ="
 ## Solution: Create a unique list of values
 {id: solution-unique-values}
 
-TODO
+![](examples/unique-values/unique_values.go)
+![](examples/unique-values/unique_values.out)
 
 ## Solution: Reverse Polish Calculator
 {id: solution-reverse-polish-calculator}
