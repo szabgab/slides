@@ -256,7 +256,8 @@ go run rpc.go "2 3 5 + * ="
 ## Solution: Create a list of words from sentences
 {id: solution-create-list}
 
-TODO
+![](examples/words-from-sentences/words_from_sentences.go)
+![](examples/words-from-sentences/words_from_sentences.out)
 
 ## Solution: Create a unique list of values
 {id: solution-unique-values}
