@@ -27,8 +27,15 @@
 ## Size of map (len)
 {id: size-of-map}
 
-![](examples/sort-map/size-of-map/size_of_map.go)
+![](examples/size-of-map/size_of_map.go)
+![](examples/size-of-map/size_of_map.out)
 
+
+## Sort map
+{id: sort-map}
+
+![](examples/sort-map/sort_map.go)
+![](examples/sort-map/sort_map.out)
 
 ## Map element exists
 {id: map-element-exists}
