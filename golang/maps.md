@@ -9,10 +9,10 @@
 * [Mutating maps](https://tour.golang.org/moretypes/22)
 
 
-## Empty Map
-{id: empty-map}
+## Iterate over elements of map
+{id: iterate-over-elements-of-map}
 
-![](examples/empty-map/empty_map.go)
+![](examples/iterate-over-map/iterate_over_map.go)
 
 ## Map with data
 {id: map-with-data}
@@ -24,12 +24,41 @@
 
 ![](examples/delete-key/delete_key.go)
 
+## Size of map (len)
+{id: size-of-map}
+
+![](examples/sort-map/size-of-map/size_of_map.go)
+
+
 ## Map element exists
 {id: map-element-exists}
 
 ![](examples/exists/exists.go)
 
-## Exercise count words
+## Exercise: count characters
+{id: exercise-count-characters}
+
+Given a string count how many time each character appears
+
+![](examples/count-characters-skeleton/count_characters_skeleton.go)
+
+Expected output:
+
+![](examples/count-characters/count_characters.out)
+
+## Exercise: count characters - sort by frequency
+{id: exercise-count-characters-sort-by-frequency}
+
+Given a string count how many time each character appears and list them by frequency:
+
+![](examples/count-characters-by-frequency-skeleton/count_characters_by_frequency_skeleton.go)
+
+Expected output:
+
+![](examples/count-characters-by-frequency/count_characters_by_frequency.out)
+
+
+## Exercise: count words
 {id: exercise-count-words}
 
 ![](examples/count-words-skeleton/count_words_skeleton.go)
@@ -45,7 +74,19 @@ you: 2
 and: 1
 ```
 
-## Solution count words
+
+## Solution: count characters
+{id: solution-count-characters}
+
+![](examples/count-characters/count_characters.go)
+
+## Solution: count characters - sort by frequency
+{id: solution-count-characters-sort-by-frequency}
+
+![](examples/count-characters-by-frequency/count_characters_by_frequency.go)
+
+
+## Solution: count words
 {id: solution-count-words}
 
 ![](examples/count-words/count_words.go)
