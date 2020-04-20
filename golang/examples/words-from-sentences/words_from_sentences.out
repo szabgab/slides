@@ -1,0 +1,16 @@
+[grape banana mango nut orange peach apple nut banana apple mango]
+fruits: [], appending words: [grape banana mango]
+fruits: [grape banana mango], appending words: [nut orange peach]
+fruits: [grape banana mango nut orange peach], appending words: [apple nut banana apple mango]
+[grape banana mango nut orange peach apple nut banana apple mango]
+grape
+banana
+mango
+nut
+orange
+peach
+apple
+nut
+banana
+apple
+mango
