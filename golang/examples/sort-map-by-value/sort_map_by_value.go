@@ -19,16 +19,13 @@ func main() {
 		names = append(names, name)
 	}
 	fmt.Println(names)
-	sort.Strings(names)
+
+	sort.Slice(names, func(i, j int) bool {
+		return scores[names[i]] > scores[names[j]]
+	})
 	fmt.Println(names)
 	for _, name := range names {
 		fmt.Printf("%-7v %v\n", name, scores[name])
 	}
 
-	// sort.Slice(names, func(i, j int) bool {
-	// 	return scores[names[i]] < scores[names[j]]
-	// })
-	// for _, name := range names {
-	// 	fmt.Printf("%-7v %v\n", name, scores[name])
-	// }
 }

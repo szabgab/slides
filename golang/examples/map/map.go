@@ -12,5 +12,6 @@ func main() {
 
 	fmt.Println(grades)
 
-	fmt.Println(grades["Jane"])
+	grade := grades["Jane"]
+	fmt.Println(grade)
 }

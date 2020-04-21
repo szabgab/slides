@@ -6,18 +6,19 @@ func main() {
 	grades := make(map[string]int)
 
 	grades["Mary"] = 99
-	grades["Jane"] = 88
-	grades["Bob"] = 93
+	grades["Joe"] = 0
 
-	value, ok := grades["Jane"]
-	fmt.Println(ok)    // true
-	fmt.Println(value) // 88
+	value, ok := grades["Mary"]
+	fmt.Println(ok)
+	fmt.Println(value)
+	fmt.Println()
 
-	value, ok = grades["Bob"]
-	fmt.Println(ok)    // true
-	fmt.Println(value) // 93
+	value, ok = grades["Joe"]
+	fmt.Println(ok)
+	fmt.Println(value)
+	fmt.Println()
 
-	value, ok = grades["George"]
-	fmt.Println(ok)    // false
-	fmt.Println(value) // 0
+	value, ok = grades["Jane"]
+	fmt.Println(ok)
+	fmt.Println(value)
 }

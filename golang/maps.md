@@ -27,7 +27,7 @@
 
 ![](examples/iterate-over-map/iterate_over_map.go)
 
-## Map with data
+## Create map with data in it already
 {id: map-with-data}
 
 ![](examples/map-with-data/map_with_data.go)
@@ -44,16 +44,54 @@
 ![](examples/size-of-map/size_of_map.out)
 
 
-## Sort map
-{id: sort-map}
+## Access map element
+{id: access-map-element}
 
-![](examples/sort-map/sort_map.go)
-![](examples/sort-map/sort_map.out)
+* What happens when we access an element that does not exist?
+* Go returns 0.
+* So we can't know if the field exists and its value is 0 or if it does not exist at all. 
+
+![](examples/access-map-element/access_map_element.go)
+![](examples/access-map-element/access_map_element.out)
 
 ## Map element exists
 {id: map-element-exists}
 
 ![](examples/exists/exists.go)
+![](examples/exists/exists.out)
+
+## Keys of a map
+{id: keys-of-map}
+{i: keys}
+
+![](examples/keys-of-map/keys_of_map.go)
+![](examples/keys-of-map/keys_of_map.out)
+
+## Sort map
+{id: sort-map}
+
+* You can't really sort a map, but you can iterate over the keys in some sorted way.
+* You just need to fetch the keys, sort them, and then iterate over that slice.
+
+![](examples/sort-map/sort_map.go)
+![](examples/sort-map/sort_map.out)
+
+
+## Sort map by value
+{id: sort-map-by-value}
+
+![](examples/sort-map-by-value/sort_map_by_value.go)
+![](examples/sort-map-by-value/sort_map_by_value.out)
+
+## map of slices
+{id: map-of-slices}
+
+![](examples/map-of-slices/map_of_slices.go)
+![](examples/map-of-slices/map_of_slices.out)
+
+
+add entry
+delete(map, name) delete entry
 
 
 ## Mixed map
@@ -135,19 +173,3 @@ Given a text file like this one:
 {id: solution-count-words-from-file}
 
 ![](examples/count-words-from-file/count_words_from_file.go)
-
-## map of slices
-{id: map-of-slices}
-
-![](examples/map-of-slices/map_of_slices.go)
-![](examples/map-of-slices/map_of_slices.out)
-
-
-create with content
-create empty, with without make
-add entry
-delete(map, name) delete entry
-what happens when we access an element that does not exist?
-pop = mymap[name]
-pop, ok = mymap[name]
-len(mymap)
