@@ -5,6 +5,7 @@
 {id: why-use-docker}
 
 * One of the big problems: Developers, Testers, and Production all have different environments.
+* Dependency hell.
 * Onboarding new developers is hard.
 
 * Makes it easy to have the exact same setup for development, testing, productions.
