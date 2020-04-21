@@ -63,7 +63,7 @@
 
 ## Split
 {id: split}
-{i: split}
+{i: Split}
 
 ![](examples/split/split.go)
 ![](examples/split/split.out)
@@ -77,6 +77,8 @@
 
 ## Split on whitespaces
 {id: split-on-whitespaces}
+{i: Fields}
+{i: Split}
 
 
 ![](examples/split-on-whitespace/split_on_whitespace.go)
@@ -167,6 +169,21 @@ Read from the stdin (standard input) Get input from the keyboard in golang
 
 * Then the code will prompt the user for two strings and then print out which ahead comparing them either by their location in the ABC or by their length, depending on the first selection.
 
+## Exercise: Hide substring
+{id: exercise-hide-substring}
+
+Given a string:
+
+* show 4 * characters and then the last 4 characters
+* show the first 4 characters and then 4 stars
+* replace every character, except the last 4 by a *
+* replace every character, except the first 4 by a *
+
+Here the first line is the input, the rest are the 4 output strings:
+
+![](examples/hide-substring/hide_substring.out)
+
+
 ## Solution: how long is this string?
 {id: solution-how-long-is-this-string}
 
@@ -187,3 +204,9 @@ Read from the stdin (standard input) Get input from the keyboard in golang
 {id: solution-which-string-is-ahead-menu}
 
 ![](examples/string-ahead/string_ahead.go)
+
+## Solution: Hide substring
+{id: solution-hide-substring}
+{i: Repeat}
+
+![](examples/hide-substring/hide_substring.go)

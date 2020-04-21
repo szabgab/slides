@@ -81,6 +81,18 @@ you: 2
 and: 1
 ```
 
+## Exercise: count words from file
+{id: exercise-count-words-from-file}
+
+Given a text file like this one:
+
+![](examples/count-words-from-file/words_and_spaces.txt)
+
+* Print out a report how many times each word appears.
+* Disregard case of the letters.
+* Show them in order of frequency.
+
+![](examples/count-words-from-file/count_words_from_file.out)
 
 ## Solution: count characters
 {id: solution-count-characters}
@@ -97,6 +109,11 @@ and: 1
 {id: solution-count-words}
 
 ![](examples/count-words/count_words.go)
+
+## Solution: count words from file
+{id: solution-count-words-from-file}
+
+![](examples/count-words-from-file/count_words_from_file.go)
 
 ## map of slices
 {id: map-of-slices}
