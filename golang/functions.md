@@ -155,6 +155,15 @@ Expected output:
 ![](examples/fizzbuzz-main/fizzbuzz_main.out)
 
 
+## Exercise: ROT13
+{id: exercise-rot13}
+
+Implement a function that given a string will return its [](https://en.wikipedia.org/wiki/ROT13) encryption
+and given the encrypted string will return the original string. Characters that are not letters
+will remain the same.
+
+e.g. "hello World!" is converted to "Uryyb Jbeyq!"
+
 ## Solution: FizzBuzz in function
 {id: solution-fizzbuzz-in-function}
 
@@ -162,3 +171,7 @@ Expected output:
 
 ![](examples/fizzbuzz/fizzbuzz_test.go)
 
+## Solution: ROT13
+{id: solution-rot13}
+
+![](examples/rot13/rot13.go)
