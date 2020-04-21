@@ -1,0 +1,7 @@
+map[string]int
+panic: assignment to entry in nil map
+
+goroutine 1 [running]:
+main.main()
+	/home/gabor/work/slides/golang/examples/map-no-container/map_no_container.go:9 +0xba
+exit status 2

@@ -1,0 +1,4 @@
+map[children:[Joe Jane Jannet] name:Foo Bar year:1998]
+name string
+year int
+children []string

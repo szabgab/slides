@@ -9,8 +9,14 @@ func main() {
 	var person = map[string]string{}
 	person["name"] = "Foo Bar"
 	person["email"] = "foo@bar.com"
-	//fmt.Println(person)
-	mystr, _ := json.Marshal(person)
-	fmt.Printf("%T\n", mystr)
-	//fmt.Printf("%s", json.Marshal(person))
+	fmt.Println(person)
+	myjson, err := json.Marshal(person)
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+	fmt.Printf("%T %s\n", myjson, myjson)
+	reborn := make(map[string]string)
+	err = json.Unmarshal(myjson, &reborn)
+	fmt.Printf("%v", reborn)
 }

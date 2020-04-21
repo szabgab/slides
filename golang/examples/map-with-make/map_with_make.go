@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	grades := map[string]int{}
+	grades := make(map[string]int)
 	fmt.Printf("%T\n", grades)
 
 	grades["Mary"] = 99
@@ -11,6 +11,4 @@ func main() {
 	grades["Bob"] = 93
 
 	fmt.Println(grades)
-
-	fmt.Println(grades["Jane"])
 }

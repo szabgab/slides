@@ -30,6 +30,7 @@
         "filesystem.md",
         "regexes.md",
         "panic.md",
+        "json.md",
         "pointers.md",
         "logging.md",
         "testing.md",

@@ -58,11 +58,6 @@ go run examples/read-csv/read_csv.go examples/csv/process_csv_file.csv
 ```
 
 
-## TODO: JSON
-{id: json}
-
-![](examples/json-round-trip/json_round_trip.go)
-
 
 ## TODO: Sum of numbers in a file
 {id: sum-of-numbers}

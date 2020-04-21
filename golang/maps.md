@@ -3,11 +3,24 @@
 
 ## Map (hash, dictionary)
 {id: map}
+{i: map}
 
 ![](examples/map/map.go)
 
 * [Mutating maps](https://tour.golang.org/moretypes/22)
 
+## Map with make
+{id: map-with-make}
+{i: map}
+
+![](examples/map-with-make/map_with_make.go)
+![](examples/map-with-make/map_with_make.out)
+
+## Map type defintion without container
+{id: map-type-definition-without-container}
+
+![](examples/map-no-container/map_no_container.go)
+![](examples/map-no-container/map_no_container.out)
 
 ## Iterate over elements of map
 {id: iterate-over-elements-of-map}
@@ -41,6 +54,14 @@
 {id: map-element-exists}
 
 ![](examples/exists/exists.go)
+
+
+## Mixed map
+{id: mixed-map}
+
+![](examples/mixed-map/mixed_map.go)
+![](examples/mixed-map/mixed_map.out)
+
 
 ## Exercise: count characters
 {id: exercise-count-characters}
