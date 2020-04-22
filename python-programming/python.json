@@ -47,6 +47,7 @@
         "iterators.md",
         "generator-expressions.md",
 
+        "logging.md",
         "closures.md",
         "decorators.md",
         "context.md",
