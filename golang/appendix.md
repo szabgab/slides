@@ -83,3 +83,10 @@
 {id: left-over}
 
 ![](examples/bytes/bytes.go)
+
+
+## Open Web browser
+{id: open-web-browser}
+{i: runtime}
+
+![](examples/open-browser/open_browser.go)

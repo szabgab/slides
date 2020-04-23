@@ -6,6 +6,11 @@
 {i: len}
 {i: cap}
 
+{aside}
+We can use the `array[start:end]` syntax to get a slice of the array. The returned object is called a `slice` and it is a window onto the underlying array.
+It has a length defined by the `start` and `end` of the slice. It also has a capacity, which is all the places in the array from the `start` of the sliced to the end of the array.
+{/aside}
+
 ![](examples/slice-of-array/slice_of_array.go)
 ![](examples/slice-of-array/slice_of_array.out)
 
@@ -34,6 +39,10 @@ We can access the elements of a slice using the postfix square-bracket notation.
 ## Change value in slice 
 {id: slice-change-value}
 
+{aside}
+We can access values in a slice and change them exactly as we do with an array. After all the slice is juts a window onto some array behind the scenes.
+{/aside}
+
 ![](examples/slice-change-value/slice_change_value.go)
 ![](examples/slice-change-value/slice_change_value.out)
 
@@ -53,11 +62,21 @@ Unlike with arrays, when we assign a slice, we only assign the location of the s
 ## Slice of a slice
 {id: slice-of-slice}
 
+{aside}
+We can take a slice of a slice. It is just another, most likely smaller, window on the same array in the background.
+{/aside}
 
 ![](examples/slice-of-slice/slice_of_slice.go)
 ![](examples/slice-of-slice/slice_of_slice.out)
 
 * This would work on arrays as well: Slices of an array
+
+## Append to a slice
+{id: append-to-a-slice}
+
+![](examples/append-to-slice/append_to_slice.go)
+![](examples/append-to-slice/append_to_slice.out)
+
 
 ## Slice append
 {id: slice-append}
@@ -141,11 +160,6 @@ Unlike with arrays, when we assign a slice, we only assign the location of the s
 ![](examples/weird-merge-slices/weird_merge_slices.go)
 ![](examples/weird-merge-slices/weird_merge_slices.out)
 
-## Append to a slice
-{id: append-to-a-slice}
-
-![](examples/append-to-slice/append_to_slice.go)
-![](examples/append-to-slice/append_to_slice.out)
 
 ## Sort slice
 {id: sort}
@@ -157,6 +171,16 @@ Unlike with arrays, when we assign a slice, we only assign the location of the s
 
 ![](examples/sort/sort.go)
 ![](examples/sort/sort.out)
+
+## Are values sorted?
+{id: are-sorted}
+{i: StringsAreSorted}
+{i: IntsAreSorted}
+{i: Float64sAreSorted}
+
+![](examples/are-sorted/are_sorted.go)
+![](examples/are-sorted/are_sorted.out)
+
 
 ## Sort strings by length
 {id: sort-strings-by-length}
@@ -170,6 +194,11 @@ Unlike with arrays, when we assign a slice, we only assign the location of the s
 ![](examples/sort-two-conditions/sort_by_two_conditions.go)
 ![](examples/sort-two-conditions/sort_by_two_conditions.out)
 
+## Search in slice
+{id: search-in-slice}
+
+![](examples/search-in-slice/search_in_slice.go)
+![](examples/search-in-slice/search_in_slice.out)
 
 ## Variadic function (arbitrary number of parameters)
 {id: variadic-function}

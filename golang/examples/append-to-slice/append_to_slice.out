@@ -1,14 +1,15 @@
-[a b c d e f g h i j]
+[a b c d e f g h]
+8
 [d e f g]
 4
-7
-
-[d e f g x]
-[a b c d e f g x i j]
 5
-7
 
-[d e f g x 1 2 3 4]
-[a b c d e f g x i j]
-9
-14
+[d e f g X]
+[a b c d e f g X]
+5
+5
+
+[d e f g X Y]
+[a b c d e f g X]
+6
+10

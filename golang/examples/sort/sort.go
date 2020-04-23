@@ -14,8 +14,8 @@ func main() {
 
 	scores := []int{17, 3, 42, 28}
 	fmt.Println(scores)
+	fmt.Println(sort.IntsAreSorted(scores))
 
 	sort.Ints(scores)
 	fmt.Println(scores)
-
 }

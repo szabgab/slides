@@ -15,8 +15,16 @@ func main() {
 	fmt.Println(dwarfs)
 	fmt.Println(len(dwarfs))
 	fmt.Println(cap(dwarfs))
+	fmt.Println()
 
-	dwarfs = append(dwarfs, "Grumpy", "Sleepy")
+	dwarfs = append(dwarfs, "Grumpy", "Sleepy", "Doc", "Bashful", "Sneezy", "Dopey")
+	fmt.Println(d)
+	fmt.Println(dwarfs)
+	fmt.Println(len(dwarfs))
+	fmt.Println(cap(dwarfs))
+	fmt.Println()
+
+	dwarfs = append(dwarfs, "Snow white")
 	fmt.Println(d)
 	fmt.Println(dwarfs)
 	fmt.Println(len(dwarfs))
