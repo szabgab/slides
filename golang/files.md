@@ -13,6 +13,8 @@
 
 ![](examples/read-file-with-scanner/read_file_with_scanner.go)
 
+![](examples/read-file-with-scanner/random.txt)
+
 ## Read file line by line with Reader
 {id: read-file-line-by-line}
 {i: Open}
@@ -23,6 +25,8 @@
 * Leaves the newlines at the end of the line
 
 ![](examples/read-file-line-by-line/read_file_line_by_line.go)
+
+![](examples/read-file-line-by-line/random1.txt)
 
 * [OS](https://golang.org/pkg/os/)
 

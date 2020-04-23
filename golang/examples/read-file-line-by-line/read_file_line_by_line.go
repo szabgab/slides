@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	filename := "random.txt"
+	filename := "random1.txt"
 	fh, err := os.Open(filename)
 	if err != nil {
 		fmt.Printf("Could not open file '%v': %v", filename, err)
