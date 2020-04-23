@@ -9,7 +9,6 @@
 * pointers
 * go-routines
 * classes (there are no classes)
-* methods (attached to types), but no classes
 * interfaces
 * Stringers - stringification
 * Cross compilation

@@ -40,9 +40,36 @@
 ![](examples/struct-compose/struct_compose.go)
 ![](examples/struct-compose/struct_compose.out)
 
-## Tags
+## Tags and introspection (reflect)
 {id: tags}
 {i: reflect}
 {i: TypeOf}
 
-* [video](https://youtu.be/YS4e4q9oBaU?t=9747)
+* We can add "free-text" tags to the elements of the struct, but it is better to use key-value pairs in there.
+* We can use introspection to look at the content of the tags.
+
+![](examples/struct-tags/struct_tags.go)
+![](examples/struct-tags/struct_tags.out)
+
+## methods
+{id: methods}
+
+* A method is a function execution in a known context.
+
+![](examples/struct-methods/struct_methods.go)
+![](examples/struct-methods/struct_methods.out)
+
+## method of int
+{id: method-of-int}
+
+![](examples/method-of-int/method_of_int.go)
+![](examples/method-of-int/method_of_int.out)
+
+## map keys method
+{id: map-keys-method}
+
+![](examples/map-keys-method/map_keys_method.go)
+![](examples/map-keys-method/map_keys_method.out)
+
+
+

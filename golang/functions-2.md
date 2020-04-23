@@ -31,14 +31,6 @@ does not seem to be very readable
 
 * Dispatch table
 
-## Methods
-{id: methods}
-
-* Functions that run in a context (of a struct)
-* [video](https://youtu.be/YS4e4q9oBaU?t=17316)
-
-
-
 ## Variable declaration outside of functions
 {id: variable-declaration-outside-of-functions}
 
