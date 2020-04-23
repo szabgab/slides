@@ -16,7 +16,11 @@ func main() {
 	}
 	var filename = os.Args[1]
 	//fmt.Println(filename)
-	fh, _ := os.Open(filename)
+	fh, err := os.Open(filename)
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
 	reader := bufio.NewReader(fh)
 	r := csv.NewReader(reader)
 	r.Comma = ';'

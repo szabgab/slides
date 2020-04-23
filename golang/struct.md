@@ -1,7 +1,7 @@
 # Struct
 {id: struct}
 
-## Struct and type
+## Struct andln type
 {id: struct-and-type}
 {i: type}
 {i: struct}
@@ -71,5 +71,24 @@
 ![](examples/map-keys-method/map_keys_method.go)
 ![](examples/map-keys-method/map_keys_method.out)
 
+
+## method gets copy of struct
+{id: method-gets-copy-of-struct}
+
+![](examples/method-gets-copy/method_gets_copy.go)
+![](examples/method-gets-copy/method_gets_copy.out)
+
+## method pass pointer of struct
+{id: method-pass-pointer-of-struct}
+
+![](examples/method-pass-pointer/method_pass_pointer.go)
+![](examples/method-pass-pointer/method_pass_pointer.out)
+
+## Exercise: read-csv-struct
+{id: exercise-read-csv-struct}
+
+* Take the following CSV file, read in the content into structs
+
+![](examples/csv-struct/cities.csv)
 
 

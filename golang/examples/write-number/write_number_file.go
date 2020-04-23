@@ -11,8 +11,12 @@ func main() {
 	answer := 42
 
 	var fh, err = os.Create(filename)
-	if err == nil {
-		fh.WriteString(fmt.Sprintf("%d\n", answer))
-		fh.Close()
+	if err != nil {
+		fmt.Println(err)
+		return
 	}
+
+	fh.WriteString(fmt.Sprintf("%d\n", answer))
+	fh.Close()
+
 }

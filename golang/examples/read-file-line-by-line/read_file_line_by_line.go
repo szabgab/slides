@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	filename := "README.md"
+	filename := "random.txt"
 	fh, err := os.Open(filename)
 	if err != nil {
 		fmt.Printf("Could not open file '%v': %v", filename, err)
@@ -15,10 +15,10 @@ func main() {
 	}
 	reader := bufio.NewReader(fh)
 	for {
-		line, _ := reader.ReadString('\n')
-		fmt.Print(line)
-		if line == "" {
+		line, err := reader.ReadString('\n')
+		if err != nil {
 			break
 		}
+		fmt.Printf("Line: %v", line)
 	}
 }

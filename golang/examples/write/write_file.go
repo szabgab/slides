@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"os"
 )
 
@@ -9,8 +10,11 @@ func main() {
 
 	text := "Some text"
 	var fh, err = os.Create(filename)
-	if err == nil {
-		fh.WriteString(text + "\n")
-		fh.Close()
+	if err != nil {
+		fmt.Println(err)
+		return
 	}
+	fh.WriteString(text + "\n")
+	fh.Close()
+
 }

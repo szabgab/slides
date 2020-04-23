@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	filename := "README.md"
+	filename := "random.txt"
 	fh, err := os.Open(filename)
 	if err != nil {
 		fmt.Printf("Could not open file '%v': %v", filename, err)
@@ -16,7 +16,7 @@ func main() {
 	scanner := bufio.NewScanner(fh)
 	for scanner.Scan() {
 		line := scanner.Text()
-		fmt.Println(line)
+		fmt.Printf("Line: %v\n", line)
 	}
 	if err := scanner.Err(); err != nil {
 		fmt.Fprintln(os.Stderr, "reading standard input:", err)

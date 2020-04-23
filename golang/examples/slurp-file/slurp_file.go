@@ -6,7 +6,11 @@ import (
 )
 
 func main() {
-	filename := "read_file.go"
-	dat, _ := ioutil.ReadFile(filename)
+	filename := "slurp_file.go"
+	dat, err := ioutil.ReadFile(filename)
+	if err != nil {
+		fmt.Printf("Error: %v\n", err)
+		return
+	}
 	fmt.Println(string(dat))
 }
