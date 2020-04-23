@@ -5,11 +5,15 @@
 {id: map}
 {i: map}
 
+A `map` is an unordered datastructur of key-value pairs.
+
+## Empty Map
+{id: empty-map}
+{i: map}
+
 ![](examples/map/map.go)
 
-* [Mutating maps](https://tour.golang.org/moretypes/22)
-
-## Map with make
+## Empty Map with make
 {id: map-with-make}
 {i: map}
 
@@ -22,11 +26,6 @@
 ![](examples/map-no-container/map_no_container.go)
 ![](examples/map-no-container/map_no_container.out)
 
-## Iterate over elements of map
-{id: iterate-over-elements-of-map}
-
-![](examples/iterate-over-map/iterate_over_map.go)
-
 ## Create map with data in it already
 {id: map-with-data}
 
@@ -37,14 +36,14 @@
 
 ![](examples/delete-key/delete_key.go)
 
+
 ## Size of map (len)
 {id: size-of-map}
 
 ![](examples/size-of-map/size_of_map.go)
 ![](examples/size-of-map/size_of_map.out)
 
-
-## Access map element
+## Access map element (that does not exist)
 {id: access-map-element}
 
 * What happens when we access an element that does not exist?
@@ -57,12 +56,31 @@
 ## Map element exists
 {id: map-element-exists}
 
+* The variable name `ok` is not speacial. It is just a convention.
+
 ![](examples/exists/exists.go)
 ![](examples/exists/exists.out)
+
+## Increment map elements
+{id: increment-map-elements}
+
+![](examples/increment-map-element/increment_map_element.go)
+![](examples/increment-map-element/increment_map_element.out)
+
+
+## Iterate over elements of map
+{id: iterate-over-elements-of-map}
+
+![](examples/iterate-over-map/iterate_over_map.go)
+![](examples/iterate-over-map/iterate_over_map.out)
+
 
 ## Keys of a map
 {id: keys-of-map}
 {i: keys}
+
+* There is no function to fetch the list of keys.
+* We can iterate over the keys and put them in an slice with pre-allocated size.
 
 ![](examples/keys-of-map/keys_of_map.go)
 ![](examples/keys-of-map/keys_of_map.out)

@@ -1,11 +1,14 @@
 4
 map[Alma:23 Berta:78 Cecilia:12 David:37]
-Alma    23
+
 Cecilia 12
 David   37
 Berta   78
+Alma    23
+
 [Alma Cecilia David Berta]
 [Alma Berta Cecilia David]
+
 Alma    23
 Berta   78
 Cecilia 12

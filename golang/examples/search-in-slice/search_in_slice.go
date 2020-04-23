@@ -8,12 +8,13 @@ import (
 func main() {
 	dwarfs := []string{"Doc", "Grumpy", "Happy", "Sleepy", "Bashful", "Sneezy", "Dopey"}
 	fmt.Println(dwarfs)
-	fmt.Println(sort.StringsAreSorted(dwarfs))
-	fmt.Println(len(dwarfs))
+	fmt.Printf("Length: %v\n", len(dwarfs))
+	fmt.Printf("StringsAreSorted: %v\n", sort.StringsAreSorted(dwarfs))
 	res := sort.SearchStrings(dwarfs, "Sleepy")
-	fmt.Println(res)
+	fmt.Printf("Index of Sleepy %v\n", res)
 
-	res = sort.SearchStrings(dwarfs, "Snow White")
-	fmt.Println(res)
+	name := "Snow White"
+	res = sort.SearchStrings(dwarfs, name)
+	fmt.Printf("Index of '%v': %v\n", name, res)
 
 }
