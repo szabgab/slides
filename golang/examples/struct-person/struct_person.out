@@ -1,8 +1,7 @@
-{1 Joe joe@joehome.com 42.5}
-1
-1
-joe@joehome.com
-42.5
+{1 Joe 42.5 [Alpha Beta]}
 
-[]
-[{1 Joe joe@joehome.com 42.5}]
+1
+Joe
+42.5
+[Alpha Beta]
+Alpha

@@ -11,6 +11,7 @@ func main() {
 	}{
 		address: "127.0.0.1",
 		name:    "home"}
+
 	fmt.Println(ip)
 	fmt.Println(ip.address)
 	fmt.Println(ip.name)
