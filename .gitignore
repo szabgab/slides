@@ -31,3 +31,6 @@ sample.db
 
 .mypy_cache/
 venv/
+
+/python-programming/examples/pytest/cases/report.json
+
