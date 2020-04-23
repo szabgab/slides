@@ -87,8 +87,20 @@
 ## Exercise: read-csv-struct
 {id: exercise-read-csv-struct}
 
-* Take the following CSV file, read in the content into structs
+* Take the following CSV file, read in the content into structs so that the latitude and longitude values are stored in `float64`.
 
 ![](examples/csv-struct/cities.csv)
+
+## Exercise: implement 2D point and move
+{id: exercise-implement-2d-point-and-move}
+
+* Implement a function using a struct that can store x,y values representing a point.
+* Then add a function called `move` that accepts dx and dy the distances the point needs to move and update the location of the point.
+
+## Exercise: implement 3D point and move
+{id: exercise-implement-3d-point-and-move}
+
+* Improve the previous code by creating another struct that can handle points in 3D.
+
 
 
