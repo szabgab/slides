@@ -56,7 +56,7 @@ Golang is faster and allows easy parallel implementation. Besides, services like
 {id: open-source}
 
 {aside}
-To some people, yours truly included, it is important to know tha the go compiler is open source. You can find its source code on GitHub.
+To some people, yours truly included, it is important to know that the go compiler is open source. You can find its source code on GitHub.
 {/aside}
 
 * [Source code](https://github.com/golang/go)
