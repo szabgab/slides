@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"io/ioutil"
+	"os"
 )
 
 func main() {
@@ -10,7 +11,7 @@ func main() {
 	dat, err := ioutil.ReadFile(filename)
 	if err != nil {
 		fmt.Printf("Error: %v\n", err)
-		return
+		os.Exit(1)
 	}
 	fmt.Println(string(dat))
 }

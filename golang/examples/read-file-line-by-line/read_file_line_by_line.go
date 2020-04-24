@@ -3,6 +3,7 @@ package main
 import (
 	"bufio"
 	"fmt"
+	"io"
 	"os"
 )
 
@@ -17,6 +18,9 @@ func main() {
 	for {
 		line, err := reader.ReadString('\n')
 		if err != nil {
+			if err != io.EOF {
+				fmt.Println(err)
+			}
 			break
 		}
 		fmt.Printf("Line: %v", line)

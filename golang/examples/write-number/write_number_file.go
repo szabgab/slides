@@ -10,13 +10,14 @@ func main() {
 
 	answer := 42
 
-	var fh, err = os.Create(filename)
+	fh, err := os.Create(filename)
 	if err != nil {
 		fmt.Println(err)
-		return
+		os.Exit(1)
 	}
 
-	fh.WriteString(fmt.Sprintf("%d\n", answer))
+	text := fmt.Sprintf("%d\n", answer)
+	fh.WriteString(text)
 	fh.Close()
 
 }

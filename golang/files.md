@@ -65,6 +65,11 @@
 go run examples/read-csv/read_csv.go examples/csv/process_csv_file.csv
 ```
 
+Result:
+
+![](examples/read-csv/process_csv_file.out)
+
+
 ## Exercise: Sum of numbers in a file
 {id: exercise-sum-of-numbers}
 
@@ -82,7 +87,7 @@ Given a file like the following, write a program that will count how many times 
 ## Exercise: ROT13 on file
 {id: exercise-rot13-on-file}
 
-* write a program that will accept the name of a file and replace it with the ROT13 encoded version of the text.
+* write a program that will accept the name of a file and replace it with the [ROT13](https://en.wikipedia.org/wiki/ROT13) encoded version of the text.
 * Encode each letter a-z and A-Z, but leave everything else intact.
 * If written correctly, running the program again on the same file should convert it back to the original version.
 
