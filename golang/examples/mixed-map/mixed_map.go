@@ -13,8 +13,8 @@ func main() {
 		fmt.Printf("%v %T\n", key, value)
 	}
 
-	// cannot range over interface
-	// for index, name := range person["children"] {
-	// 	fmt.Printf("  %v %v", index, name)
-	// }
+	// to iterate over interface one needs to use the .(T) modifyer
+	for index, name := range person["children"].([]string) {
+		fmt.Printf("  %v %v\n", index, name)
+	}
 }

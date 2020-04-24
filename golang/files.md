@@ -51,6 +51,12 @@
 
 ![](examples/write-number/write_number_file.go)
 
+## Append to file
+{id: append-to-file}
+{i: append}
+
+![](examples/append-to-file/append_to_file.go)
+
 ## Reading CSV file
 {id: reading-csv-file}
 

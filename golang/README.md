@@ -23,15 +23,15 @@
 * Strings: 40 min, probably can be done in less + 30 min exercises
 * Arrays: 30 min + at least 1 hour for exercises
 
-* Slices:
-* Maps:
+* Variables, Constants, Functions: 50 min + 60 min exercise
+
+* Slices: 60 min + ?? min exercise
+* Files: 30 min + 60 min exercise
+* Maps: 30 min + ?? min exercise
 * Struct:
-* Constants:
 * Flow Control:
-* Functions:
 * Bitwise:
 * Time:
-* Files:
 * Formatting:
 * Filesystem:
 

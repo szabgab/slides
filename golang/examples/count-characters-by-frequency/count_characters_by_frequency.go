@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"sort"
 )
 
 func main() {
@@ -15,12 +16,16 @@ func main() {
 	}
 
 	fmt.Println(text)
-	// sort.Slice(counter, func(i, j string) bool {
-	// 	return counter[i] > counter[j]
-	// })
+	chars := make([]string, 0, len(counter))
+	for chr := range counter {
+		chars = append(chars, chr)
+	}
 
-	for char, count := range counter {
-		fmt.Printf("%v: %v\n", char, count)
+	sort.Slice(chars, func(i, j int) bool {
+		return counter[chars[i]] > counter[chars[j]]
+	})
+	for _, chr := range chars {
+		fmt.Printf("%v: %v\n", chr, counter[chr])
 	}
 
 }

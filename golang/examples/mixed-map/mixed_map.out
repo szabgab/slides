@@ -2,3 +2,6 @@ map[children:[Joe Jane Jannet] name:Foo Bar year:1998]
 name string
 year int
 children []string
+  0 Joe
+  1 Jane
+  2 Jannet
