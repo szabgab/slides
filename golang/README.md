@@ -25,9 +25,9 @@
 
 * Variables, Constants, Functions: 50 min + 60 min exercise
 
-* Slices: 60 min + ?? min exercise
+* Slices: 60 min + 60 min exercise
 * Files: 30 min + 60 min exercise
-* Maps: 30 min + ?? min exercise
+* Maps: 30 min + 60 min exercise
 * Struct:
 * Flow Control:
 * Bitwise:
