@@ -169,7 +169,13 @@ Based on Appendix C of  "JavaScript: The Good Parts"
 {i: apply}
 ![](examples/functions/apply.js)
 
+## getElementsByClassName
+{id: get-elements-by-classname}
+{i: getElementsByClassName}
 
-
-
-
+```
+var buttons = document.getElementsByClassName('remove');
+for (var i=0; i < buttons.length; i++) {
+    buttons[i].addEventListener('click', remove);
+};
+```
