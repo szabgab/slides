@@ -109,6 +109,14 @@
 ![](examples/complex-numbers/complex_numbers.out)
 
 
+## binary - octal - hex
+{id: binary-octal-hex}
+
+This representation exists only from 1.13
+
+![](examples/numbers/numbers.go)
+![](examples/numbers/numbers.out)
+
 ## Random
 {id: random}
 {i: rand}
