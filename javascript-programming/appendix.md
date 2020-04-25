@@ -179,3 +179,20 @@ for (var i=0; i < buttons.length; i++) {
     buttons[i].addEventListener('click', remove);
 };
 ```
+
+## Convert float to integer
+{id: convert-float-to-integer}
+{i: floor}
+{i: ceil}
+{i: rount}
+{i: trunc}
+
+```
+let pi = 3.14;
+var intvalue = Math.floor( pi );
+var intvalue = Math.ceil( pi );
+var intvalue = Math.round( pi );
+
+// `Math.trunc` was added in ECMAScript 6
+var intvalue = Math.trunc( pi );
+```
