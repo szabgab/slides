@@ -1,4 +1,4 @@
-# Command line arguments
+# Command line arguments (Flag)
 {id: command-line-arguments}
 
 ## Flag

@@ -11,7 +11,6 @@
 * classes (there are no classes)
 * interfaces
 * Stringers - stringification
-* Cross compilation
 * many standard packages
 * many external packages
 

@@ -1,7 +1,7 @@
 # Distribution
 {id: disgtribution}
 
-## Compilation
+## Corss Compilation
 {id: compilation}
 
 Create a file called `application.go` in which you have all of your code.

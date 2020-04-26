@@ -10,6 +10,9 @@ func main() {
 	fmt.Printf(format, "b", b, b)
 	fmt.Println()
 
+	not := ^a
+	fmt.Printf(format, "not", not, not)
+
 	and := a & b
 	fmt.Printf(format, "and", and, and)
 
