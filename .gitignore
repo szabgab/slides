@@ -33,4 +33,5 @@ sample.db
 venv/
 
 /python-programming/examples/pytest/cases/report.json
+/python-programming/examples/pytest/cases/report.xml
 

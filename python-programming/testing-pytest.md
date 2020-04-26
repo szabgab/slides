@@ -1,5 +1,5 @@
 # Testing with PyTest
-{id: testing-with-pytest}
+{id: pytest}
 
 ## Pytest features
 {id: pytest-features}
@@ -1237,3 +1237,30 @@ Pick one of the modules and write a test for it.
 
 ![](examples/pytest/test_with_params.py)
 ![](examples/pytest/test_with_params.out)
+
+## Pytest reporting in JUnit XML format
+{id: python-reporting-in-juint-xml}
+
+```
+pytest --junitxml report.xml
+```
+
+* [pytest-json-report](https://pypi.org/project/pytest-json-report/)
+
+```
+pip install pytest-json-report
+
+pytest --json-report --json-report-file=report.json
+```
+
+Recommended to also add
+```
+--json-report-omit=log
+```
+
+```
+pytest -s --json-report --json-report-file=report.json --log-cli-level=INFO
+```
+
+![](examples/pytest/cases/test_one.py)
+
