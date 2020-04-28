@@ -39,3 +39,10 @@ pip install mypy
 ![](examples/types/good.py)
 ![](examples/types/good.out)
 ![](examples/types/good.mypy)
+
+## TODO: mypy
+{id: mypy-todo}
+
+* Complex data structures?
+* My types/classes?
+* Allow None (or not) for a variable.
