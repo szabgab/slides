@@ -1254,6 +1254,7 @@ pytest --json-report --json-report-file=report.json
 ```
 
 Recommended to also add
+
 ```
 --json-report-omit=log
 ```
