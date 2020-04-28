@@ -10,15 +10,13 @@
 You already know that there are all kinds of objects in Python that you can iterate over using the **for in** construct.
 For example you can iterate over the characters of a string, or the elements of a list, or whatever **range()** returns.
 You can also iterate over the lines of a file
-and you have probably seen the construct in other cases as well. The objects that can be iterated over are collectively called
+and you have probably seen the **for in** construct in other cases as well. The objects that can be iterated over are collectively called
 [iterables](https://docs.python.org/3/glossary.html#term-iterable).
 You can do all kind of interesting things on such **iterables**. We'll see a few now.
 {/aside}
 
-{aside}
+* A few data type we can iterate over using the **for ... in ...** construct. (strings, files, tuples, lists, list comprehension)
 
-Any data type we can iterate over using the for ... in ... construct. (strings, files, tuples, lists, list comprehension)
-{/aside}
 ![](examples/advanced/iterables.py)
 ![](examples/advanced/iterables.out)
 
@@ -34,11 +32,16 @@ So what does **range** really return?
 
 {aside}
 
-Instead of returning the list of numbers it returns a **range** object that only provides the opportunity to go over
-the specific list of numbers without actually creating the list of numbers. It has a number of advantages.
-One is space. In the next slide we'll see how much memory is needed for the object returned by the **range** function,
-how much would it take to have the corresponding list of numbers in memory.
+Instead of returning the list of numbers (as it used to do in Python 2), now it returns a **range object** that provides "the opportunity to go over
+the specific series of numbers" without actually creating the **list** of numbers. Getting an object instead of the whole list has a number of advantages.
+One is space. In the next example we'll see how much memory is needed for the object returned by the **range** function and
+how much would it take to have the corresponding list of numbers in memory. For now let's see how can we use it:
 {/aside}
+
+* `range(start, end, step)`
+* `range(start, end)` - step defaults to 1
+* `range(end)` - start defaults to 0, step defaults to 1
+
 ![](examples/advanced/range.py)
 ![](examples/advanced/range.out)
 
@@ -50,24 +53,31 @@ how much would it take to have the corresponding list of numbers in memory.
 {i: getsizeof}
 
 {aside}
-
 Using the **list** function we can tell the **range** object to generate the whole list immediately. Either using
-the variable that already holds the **range** object, or wrapping the range() call in a list() call.
+the variable that holds the **range** object, or wrapping the **range()** call in a **list()** call.
 {/aside}
 
 {aside}
-
 You might recall at the beginning of the course we saw the **sys.getsizeof()** function that returns the size of a Python object
 in the memory. If you don't recall, no problem, we'll see it used now. As you can see the size of the range object is only 48 bytes
-while the size of the 3-element list is already 112 bytes. So it seems the range object is better than even such short lists.
+while the size of the 3-element list is already 112 bytes. It seems the range object is better than even such a short lists.
 On the next page we'll see a more detailed analyzis.
 {/aside}
+
 ![](examples/advanced/range_list.py)
 
 
 ## range vs. list size
 {id: range-size}
 {i: getsizeof}
+
+{aside}
+In this example we have a loop iterating over **range(21)**, but that's only for the convenience, the interesting part is inside the loop.
+On every iteration call **range()** with the current number, then we convert the resulting object into a list of numbert. Finally we print out
+the current number and the size of both the object returned by **range()** and the list generated from the object. As you can see the memory usage
+of the **range** object remains the same 48 byttes, while the memory usage of the list growth as the list gets longer.
+{/aside}
+
 ![](examples/advanced/range_size.py)
 ![](examples/advanced/range_size.out)
 
@@ -78,13 +88,17 @@ On the next page we'll see a more detailed analyzis.
 {i: append}
 
 {aside}
-There are many cases when we have a list of some values and we need to apply some transformation to each value and we would
-like to get back the list of the resulting values.
+There are many cases when we have a list of some values and we need to apply some transformation to each value. At the end we would
+like to have the list of the resulting values.
+{/aside}
 
+{aside}
 A very simple such transformation would be to double each value. Other, more interesting examples might be reversing each string,
 computing some more complex function on each number, etc.)
+{/aside}
 
-In this example we just double the values and use **append** to add each value the list containing the results.
+{aside}
+In this example we just double the values and use **append** to add each value to the list containing the results.
 {/aside}
 
 ![](examples/advanced/double.py)
@@ -100,18 +114,52 @@ There are better ways to do this.
 {i: map}
 
 
-map(function, iterable, ...)
+* `map(function, iterable, ...)`
 
+{aside}
+The [map](https://docs.python.org/library/functions.html#map) function of Python applies a function to every item in an iterable and returns an iterator
+that can be used to iterate over the results. Wow, how many times I repeated the word iter...something. Instead of trying to untangle that sentence,
+let's look at the following exampe:
+{/aside}
+
+{aside}
+We have a list of numbers in the brilliantly named variable `numbers` with 1, 2, 3, 4 as the content. We could like to ceate a list of all the doubles (so that would be 2, 4, 6, 8 in this casse)
+and then iterate over them printing them on the screen. Sure, you probably have some more complex operation to do on the numbers than simple double them, but in this example I did not want to complicate
+that part. Suffice to say that you have some computation to do in every element.   
+{/aside}
+
+{aside}
+So you encapsulate your computation in a regular Python function (in our case the function is called **double**). Then you call **map** and pass to it two parameters. The first parameter is the **double** function itself, the second parameter is the list of the values you would like to work on. `map` will no go over all the values in the **numbers** list, call the **double** function with
+each number and provide allow you to iterate over the results. Something like this:
+{/aside}
 
 
 {aside}
-
-The [map](https://docs.python.org/3/library/functions.html#map) function of python, applies a function to every item in an iterable.
-and returns an iterator.
+double_numbers = [ double(1), double(2), double(3), double(4)]
 {/aside}
+
+{aside}
+Except, that the above is not true.
+{/aside}
+
+{aside}
+When Python executes the `double_numbers = map(double, numbers)` line, no computation happens and no resulting list is created. Python only prepars "the possibility to do the computations". In the upcoming examples we'll see what does this sentence really mean, for now let's see what do we have in this example: `double_numbers` contains a **map object*, but when you iterate
+over it using the **for num in double_numbers** construct you get the expected values. 
+{/aside}
+
+{aside}
+In the second half of the example you can see the same works on strings as well.
+{/aside}
+
+
 ![](examples/advanced/map.py)
 ![](examples/advanced/map.out)
 
+## map delaying function call
+{id: map-delaying-function-call}
+
+![](examples/advanced/map_with_print.py)
+![](examples/advanced/map_with_print.out)
 
 ## map with list
 {id: map-with-list}
