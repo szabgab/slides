@@ -1,3 +1,4 @@
-{'Jan': 31, 'Feb': 28, 'Mar': 31, 'Apr': 30}
-<zip object at 0x7f13c1926d88>
+<zip object at 0x7ff021949788>
 [('Jan', 31), ('Feb', 28), ('Mar', 31), ('Apr', 30)]
+{}
+{'Jan': 31, 'Feb': 28, 'Mar': 31, 'Apr': 30}

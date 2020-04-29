@@ -1,3 +1,5 @@
+from functools import reduce
+
 numbers = [2, 1, 4, 3]
 
 # min
@@ -14,4 +16,4 @@ print(reduce(lambda x,y: x*y, range(1, n+1), 1))   # 24
 a = [1, 3, 6]
 b = [2, 4, 5]
 c = map(lambda x,y: x if x > y else y, a, b)
-print(c)  # [2, 4, 6]
+print(list(c))  # [2, 4, 6]

@@ -1,7 +1,14 @@
-<generator object <genexpr> at 0x7fa87cb5a930>
+<generator object <genexpr> at 0x7f8c0bda2930>
+120
+
 0
 1
 4
 9
-[0, 1, 4, 9]
+16
+25
+36
+
+160
+[0, 1, 4, 9, 16, 25, 36]
 []

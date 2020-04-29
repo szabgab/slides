@@ -158,8 +158,32 @@ In the second half of the example you can see the same works on strings as well.
 ## map delaying function call
 {id: map-delaying-function-call}
 
+{aside}
+In this example we have added a call to `print` in the double function in order to see when is it really executed. You can see that the first output
+comes from the `print` statement that was **after** the `map` call. Then on each iteration we see the output from inside the "double" function and then the
+result from the loop. In a nutshell Python does not execute the "double" function at the point where we called `map`. It only executes it when we iterate over
+the resulting object.
+{/aside}
+
 ![](examples/advanced/map_with_print.py)
 ![](examples/advanced/map_with_print.out)
+
+## map on many values
+{id: map-on-many-values}
+
+{aside}
+Now imagine you have a very long list. I know this is not such a long list, but I trust you can imagin a long list of numbers. We would like to run
+some function on each element and then iterate over the results, but what if at one point in the iteration we decide to `break` out of the loop?
+{/aside}
+
+![](examples/advanced/map_with_many_items.py)
+![](examples/advanced/map_with_many_items.out)
+
+{aside}
+You can see that it did not need to waste time calculating the doubles of all the values, as it was calculating on-demand. You can also see that the object returned
+from `map` takes up only 56 bytes. Regardless of the size of the original array.
+{/aside}
+
 
 ## map with list
 {id: map-with-list}
@@ -167,7 +191,6 @@ In the second half of the example you can see the same works on strings as well.
 {i: list}
 
 {aside}
-
 Here too you can use the **list** function to convert all the values at once, but there is an advantage of keeping it as
 a **map object**. Not only the size that we already saw with the **range** case, but also the processing time saved by
 not calculating the results till you actually need it.
@@ -217,7 +240,7 @@ Lambda creates simple anonymous function. It is simple because it can only have 
 
 
 {aside}
-The usual use is as we saw earlier when we passed it as a parameter to the `map` function. However, in the next example however we show that you can assign the
+The usual use is as we saw earlier when we passed it as a parameter to the `map` function. However, in the next example we show that you can assign the
 lambda-function to a name and then you could used that name just as any other function you would define using **def**.
 {/aside}
 ![](examples/advanced/lambda.py)
@@ -311,14 +334,54 @@ A nicer fix was this:
 ![](examples/advanced/map_dict.py)
 ![](examples/advanced/map_dict.out)
 
+## Exercise: string to length
+{id: exercise-string-to-length}
+
+Given a list of strings, create an iterator that will provide the length of each string.
+
+## Exercise: row to length
+{id: exercise-row-to-length}
+
+Given a file, create an iterator that will provide the length of each row. Can you do it without actually reading the file?
+
+
+## Exercise: compare rows
+{id: exercise-compare-rows}
+
+Create an iterator that given two files will return true for each line where the first space in the first file is earlier than the first space in the second file. So
+
+* given: "ab cd"  vs "abc d" the value is true
+* given: "ab cd"  vs "ab cd" the value is false
+* given: "ab cd"  vs "a bcd" the value is false
+
+
+## Solution: string to length
+{id: solution-string-to-length}
+
+![](examples/advanced/map_string_to_len.py)
+
+## Solution: row to length
+{id: solution-row-to-length}
+
+
+![](examples/advanced/map_row_to_length.py)
+
+
+## Solution: compare rows
+{id: solution-compare-rows}
+
+![](examples/advanced/compare_rows.py)
+![](examples/advanced/compare_rows.out)
+
+
 ## filter
 {id: filter}
 {i: filter}
 
-`filter(function, iterable)`
+* `filter(function, iterable)`
 
 {aside}
-Will return an interable object that will return all the items of the original iterable that evaluate the function to **True**.
+`filter` will return an iterable object that will return all the items of the original iterable that evaluate the function to **True**.
 This can have only one iterable!
 {/aside}
 
@@ -328,6 +391,7 @@ This can have only one iterable!
 ## filter with lambda
 {id: filter-with-lambda}
 {i: filter}
+{i: grep}
 
 ![](examples/advanced/filter.py)
 ![](examples/advanced/filter.out)
@@ -358,6 +422,7 @@ In Python 2 it was still part of the language.
 `reduce(function, iterable[, initializer])`
 
 ![](examples/advanced/reduce.py)
+![](examples/advanced/reduce.out)
 
 The initializer is used as the 0th element returned by the iterable. It is mostly interesting in case the iterable is empty.
 
@@ -384,10 +449,10 @@ The initializer is used as the 0th element returned by the iterable. It is mostl
 {i: all}
 {i: any}
 
-```
-all(iterable) - returns True if all the elements of iterable return True
-any(iterable) - returns True if any of the elements in iterable return True
-```
+
+* `all(iterable)` - returns True if all the elements of iterable return True
+* `any(iterable)` - returns True if any of the elements in iterable return True
+
 
 ![](examples/advanced/all_any.py)
 
@@ -415,6 +480,7 @@ write a different expression to run the function on every element of an iterable
 {i: []}
 
 ![](examples/lists/list_comprehension_simple.py)
+![](examples/lists/list_comprehension_simple.out)
 
 
 ## List generator
