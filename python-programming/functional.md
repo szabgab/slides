@@ -410,6 +410,26 @@ This can have only one iterable!
 ![](examples/advanced/filter_map_one.py)
 ![](examples/advanced/filter_map_one.out)
 
+## Get indexes of values
+{id: get-indexes-of-values}
+
+{aside}
+`filter` can help us get a sublist of values from an iterable, eg. from a list that match some condition.
+In this example we see how to get all the names that are exactly 3 characters long.
+
+What if, however if instead of the values themselves, you would like to know their location? The indexes of the
+places where these value can be found. In that case, you would run the `filter` on the indexes from 0 till the last
+valid index of the list. You can do that using the `range` function.
+{/aside}
+
+{aside}
+Finally there is another example that shows how to get the indexes of all the names that have an "e" in them.
+Just to show you that we can use any arbitray condition there.
+{/aside}
+
+![](examples/advanced/get_indexes.py)
+![](examples/advanced/get_indexes.out)
+
 
 ## reduce
 {id: reduce}
@@ -426,6 +446,12 @@ In Python 2 it was still part of the language.
 
 The initializer is used as the 0th element returned by the iterable. It is mostly interesting in case the iterable is empty.
 
+## reduce with default
+{id: reduce-with-defaiult}
+{i: reduce}
+
+![](examples/advanced/reduce_with_default.py)
+![](examples/advanced/reduce_with_default.out)
 
 ## zip
 {id: zip}

@@ -10,5 +10,3 @@ print(others)   # [2, 5, 8]
 
 print(sys.getsizeof(rng))     # 48
 print(sys.getsizeof(numbers)) # 112
-
-

@@ -16,5 +16,3 @@ for num in double_numbers:
 print()
 print(sys.getsizeof(numbers))
 print(sys.getsizeof(double_numbers))
-
-
