@@ -17,17 +17,16 @@ func main() {
 		x: 2.1,
 		y: 3.1,
 	}
-	p2 := myPoint{
-		x: -0.1,
-		y: 1.1,
-	}
 	fmt.Println(p1)
-	fmt.Println(p2)
 
 	line := myLine{
 		a: p1,
-		b: p2,
+		b: myPoint{
+			x: -0.1,
+			y: 1.1,
+		},
 	}
 	fmt.Println(line)
 	fmt.Println(line.a.x)
+	fmt.Println(line.b.x)
 }
