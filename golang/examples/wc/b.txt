@@ -1,0 +1,3 @@
+some text  and      a log spaces
+and other characters ada-!@#$%^&*()-that-should-be-one-word
+right?
