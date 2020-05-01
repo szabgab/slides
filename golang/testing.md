@@ -69,6 +69,27 @@ go test -v
 
 ![](examples/test-fail/test-v.out)
 
+## Run selected test functions
+{id: run-selected-test-functions}
+
+Only the TestAdd1:
+
+```
+go test -run TestAdd1
+```
+
+Both:
+
+```
+go test -run TestAdd
+```
+
+In general use regexes to match the name of the test function:
+
+```
+go test -run "^(func_test_name)$"
+```
+
 ## Exercise: Test Anagram
 {id: exercise-test-anagram}
 
