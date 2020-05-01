@@ -1,0 +1,4 @@
+Name: {{.Name}}
+{{if .Email}}
+Email: {{.Email}}
+{{end}}
