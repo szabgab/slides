@@ -7,6 +7,7 @@
 {id: go-panic}
 
 ![](examples/go-panic/go_panic.go)
+![](examples/go-panic/go_panic.out)
 
 ## We Panic
 {id: we-panic}

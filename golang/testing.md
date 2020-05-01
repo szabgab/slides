@@ -46,7 +46,7 @@ go test
 go test -v
 ```
 
-![](examples/simple-test/test-v.out)
+![](examples/simple-test/test_v.out)
 
 ## Test with failure
 {id: test-with-failure}
@@ -61,13 +61,13 @@ go test -v
 go test
 ```
 
-![](examples/test-fail/test.out)
+![](examples/test-fail/test2.out)
 
 ```
 go test -v
 ```
 
-![](examples/test-fail/test-v.out)
+![](examples/test-fail/test2_v.out)
 
 ## Run selected test functions
 {id: run-selected-test-functions}
@@ -125,3 +125,8 @@ Given the following program with the calc function, write some tests verifying t
 
 ![](examples/test-calc/calc_test.go)
 
+## Solution: statistics
+{id: solution-statistics}
+
+![](examples/test-statistics/stats.go)
+![](examples/test-statistics/stats_test.go)

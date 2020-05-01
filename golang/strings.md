@@ -142,6 +142,12 @@ Read from the stdin (standard input) Get input from the keyboard in golang
 ![](examples/compare-strings/compare_strings.go)
 ![](examples/compare-strings/compare_strings.out)
 
+## Raw strings
+{id: raw-strings}
+
+![](examples/raw-strings/raw_strings.go)
+![](examples/raw-strings/raw_strings.out)
+
 ## Exercise: how long is this string?
 {id: exercise-how-long-is-this-string}
 

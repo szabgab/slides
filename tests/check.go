@@ -200,7 +200,7 @@ func countMissing(a, b []string) int {
 			}
 		}
 		if !found {
-			log.Printf("File '%v' is in first, but not in the second", a[i])
+			log.Printf("File '%v' is not imported into the slides", a[i])
 			errors++
 		}
 	}
