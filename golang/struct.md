@@ -1,7 +1,7 @@
 # Struct
 {id: struct}
 
-## Struct andln type
+## Struct and type
 {id: struct-and-type}
 {i: type}
 {i: struct}
@@ -50,6 +50,14 @@
 
 ![](examples/struct-tags/struct_tags.go)
 ![](examples/struct-tags/struct_tags.out)
+
+## use cleanenv
+{id: use-cleanenv}
+
+![](examples/use-cleanenv/use_cleanenv.go)
+
+![](examples/use-cleanenv/config.yml)
+
 
 ## methods
 {id: methods}

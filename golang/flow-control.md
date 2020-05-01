@@ -34,7 +34,6 @@ if cond {
 ## Comparision Operators
 {id: comparision-operators}
 
-* Work for numeric types but not for strings
 
 ```
 <

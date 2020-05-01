@@ -1,0 +1,5 @@
+=== RUN   TestSum
+    TestSum: comp_test.go:6: Hello from the test
+--- PASS: TestSum (0.00s)
+PASS
+ok  	_/home/gabor/work/slides/golang/examples/simple-test	0.003s

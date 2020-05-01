@@ -1,13 +1,13 @@
 # Pointers
 {id: pointers}
 
-## No Pointer
+## Integer assignment is copying (not pointer)
 {id: no-pointer}
 
 ![](examples/no-pointer/no_pointer.go)
 ![](examples/no-pointer/no_pointer.out)
 
-## Int Pointer
+## Pointer to integer
 {id: int-pointer}
 {i: &}
 {i: *}

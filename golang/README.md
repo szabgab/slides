@@ -11,6 +11,24 @@
 * VSC: configure command line, and several run modes
 * VSC: Debugging Go application
 
+* Tests a simple mathematical function
+* What if a test fails? 
+* What if we cannot fix a test immediately? (TODO/expect to fail)
+* Skip test?
+
+## Testing Notes
+{id: testing-notes}
+
+go get github.com/stretchr/testify
+to add asserts
+
+* [video](https://www.youtube.com/watch?v=ttKgBttwzrg)
+* [video](https://www.youtube.com/watch?v=_B_vCEiO4mA)
+
+
+
+
+
 ## Time
 
 * Introduction + Basics: 60 min incl exercise (if people know how to set up things)

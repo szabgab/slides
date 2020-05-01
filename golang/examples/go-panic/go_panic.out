@@ -1,0 +1,7 @@
+before
+panic: runtime error: integer divide by zero
+
+goroutine 1 [running]:
+main.main()
+	/home/gabor/work/slides/golang/examples/go-panic/go_panic.go:10 +0x7a
+exit status 2

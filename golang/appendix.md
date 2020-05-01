@@ -89,10 +89,3 @@
 
 ![](examples/open-browser/open_browser.go)
 
-## use cleanenv
-{id: use-cleanenv}
-
-![](examples/use-cleanenv/use_cleanenv.go)
-
-![](examples/use-cleanenv/config.yml)
-

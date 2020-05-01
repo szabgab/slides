@@ -5,14 +5,28 @@
 {id: testing-in-go}
 
 * Tests files have a suffix **_test**
-* They have functions where the name starts wirh **Test**
+* They have functions where the name starts with **Test**
+* You can run the tests by typing `go test` in the directory of the project.
 
-* Tests a simple mathematical function
-* What if a test fails?
-* What if we cannot fix a test immediately?
 
-## Simple test
+## Testing modules
+{id: testing-modules}
+
+* Standard [testing](https://golang.org/pkg/testing/)
+
+* [Convey](http://goconvey.co/)
+* [Convey in Github](https://github.com/smartystreets/goconvey)
+
+* [testify](https://github.com/stretchr/testify)
+
+
+* [is](https://github.com/matryer/is) by Mat Ryer
+* [moq](https://github.com/matryer/moq) by Mat Ryer
+
+
+## Simple example with testing
 {id: simple-test}
+{i: testing}
 {i: test}
 
 ![](examples/simple-test/comp.go)
@@ -23,28 +37,50 @@ To run the tests:
 
 ```
 go test
+```
+
+![](examples/simple-test/test.out)
+
+
+```
 get test -v
 ```
 
-## Testing Notes
-{id: testing-notes}
-
-https://github.com/stretchr/testify
-
-go get github.com/stretchr/testify
-to add asserts
-
-* [video](https://www.youtube.com/watch?v=ttKgBttwzrg)
-* [video](https://www.youtube.com/watch?v=_B_vCEiO4mA)
+![](examples/simple-test/test-v.out)
 
 
-Mat Ryer
-* [is](https://github.com/matryer/is)
-* [moq](https://github.com/matryer/moq)
+## Exercise: Test Anagram
+{id: exercise-test-anagram}
 
-## Anagram
-{id: anagram}
+* Given the following code, that checks if two strings are anagrams, write tests that verify the function.
 
 ![](examples/anagram/anagram.go)
 
+## Exercise: Test Calculator
+{id: exercise-test-calculator}
+
+Given the following program with the calc function, write some tests verifying the function.
+
+![](examples/test-calc/calc.go)
+
+
+## Exercise: statistics
+{id: exercises-statistics}
+
+* Take the following program, factor out a function called stats that will get a slice of numbers and return the min, max, total, and average.
+
+* Write test that will check the results
+
+![](examples/statistics/statistics.go)
+
+
+## Solution: Test Anagram
+{id: solution-test-anagram}
+
 ![](examples/anagram/anagram_test.go)
+
+## Solution: Test Calculator
+{id: solution-test-calculator}
+
+![](examples/test-calc/calc_test.go)
+
