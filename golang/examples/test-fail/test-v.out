@@ -1,0 +1,10 @@
+=== RUN   TestAdd
+    TestAdd: comp2_test.go:6: Hello from the test
+--- PASS: TestAdd (0.00s)
+=== RUN   TestAdd2
+    TestAdd2: comp2_test.go:14: Hello from the test
+    TestAdd2: comp2_test.go:17: expected 6 received 9
+--- FAIL: TestAdd2 (0.00s)
+FAIL
+exit status 1
+FAIL	_/home/gabor/work/slides/golang/examples/test-fail	0.002s

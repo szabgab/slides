@@ -48,6 +48,26 @@ go test -v
 
 ![](examples/simple-test/test-v.out)
 
+## Test with failure
+{id: test-with-failure}
+{i: testing}
+{i: test}
+
+![](examples/test-fail/comp2.go)
+
+![](examples/test-fail/comp2_test.go)
+
+```
+go test
+```
+
+![](examples/test-fail/test.out)
+
+```
+go test -v
+```
+
+![](examples/test-fail/test-v.out)
 
 ## Exercise: Test Anagram
 {id: exercise-test-anagram}

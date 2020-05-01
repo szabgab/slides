@@ -1,0 +1,6 @@
+--- FAIL: TestAdd2 (0.00s)
+    comp2_test.go:14: Hello from the test
+    comp2_test.go:17: expected 6 received 9
+FAIL
+exit status 1
+FAIL	_/home/gabor/work/slides/golang/examples/test-fail	0.008s
