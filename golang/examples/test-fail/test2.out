@@ -3,4 +3,4 @@
     comp2_test.go:17: expected 6 received 9
 FAIL
 exit status 1
-FAIL	_/home/gabor/work/slides/golang/examples/test-fail	0.008s
+FAIL	_/home/gabor/work/slides/golang/examples/test-fail	0.002s
