@@ -11,9 +11,9 @@ func mainPage(w http.ResponseWriter, r *http.Request) {
 	if err != nil {
 		panic(err)
 	}
-	//p := &Page{Title: "", Body: []byte{}}
+	p := pageType{Title: "Joe and Jane"} //, Body: []byte{}}
 	//p := make(map[string]string)
-	t.Execute(w, nil)
+	t.Execute(w, p)
 }
 
 func main() {
@@ -21,9 +21,9 @@ func main() {
 	log.Fatal(http.ListenAndServe(":5000", nil))
 }
 
-// type Page struct {
-// 	Title string
-// 	Body  []byte
-// }
+type pageType struct {
+	Title string
+	//	Body  []byte
+}
 
 // Visit: http://localhost:5000/

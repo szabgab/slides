@@ -43,7 +43,7 @@ go test
 
 
 ```
-get test -v
+go test -v
 ```
 
 ![](examples/simple-test/test-v.out)
@@ -52,7 +52,7 @@ get test -v
 ## Exercise: Test Anagram
 {id: exercise-test-anagram}
 
-* Given the following code, that checks if two strings are anagrams, write tests that verify the function.
+* Given the following code, that checks if two strings are [anagrams](https://en.wikipedia.org/wiki/Anagram), write tests that verify the function.
 
 ![](examples/anagram/anagram.go)
 
