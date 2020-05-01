@@ -30,3 +30,8 @@
 
 ![](examples/youtube-playlist/youtube_playlist.go)
 
+
+## HTTP GET failure
+{id: http-get-failure}
+
+![](examples/http-get-failure/http_get_failure.go)

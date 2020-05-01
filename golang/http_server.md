@@ -5,7 +5,15 @@
 ## HTTP Hello World
 {id: http-hello-world}
 
+* [net/http](https://golang.org/pkg/net/http/)
+
 ![](examples/http-hello-world/http_hello_world.go)
+
+## HTTP Echo GET
+{id: http-echo-get}
+
+![](examples/http-echo-get/http_echo_get.go)
+
 
 
 ## text/template
@@ -41,9 +49,3 @@
 ![](examples/http-hello-world-template/http_hello_world_template.go)
 ![](examples/http-hello-world-template/main.html)
 
-## TODO: HTTP Echo
-{id: http-echo}
-
-![](examples/http-echo/http_echo.go)
-
-![](examples/http-get-failure/http_get_failure.go)
