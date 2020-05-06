@@ -404,3 +404,9 @@ Then copy the old file to the new name.
 
 ![](examples/tk/tk_notepad.py)
 
+## Simple file dialog
+{id: simple-file-dialog}
+{i: filedialog}
+{i: askopenfilename}
+
+![](examples/tk/simple_file_dialog.py)
