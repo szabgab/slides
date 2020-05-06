@@ -89,3 +89,7 @@
 
 ![](examples/open-browser/open_browser.go)
 
+## Unicode
+{id: unicode}
+
+![](examples/unicode/unicode.go)
