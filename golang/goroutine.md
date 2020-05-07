@@ -117,12 +117,6 @@ Only when they are aligned the message will be sent and then both will continue 
 
 
 
-## Check for race conditions
-{id: check-for-race-conditions}
-
-```
-go run -race app.go
-```
 
 ## Pipeline map
 {id: pipeline-map}
@@ -149,6 +143,36 @@ go run -race app.go
 
 ![](examples/blocking-channels/blocking_channels.go)
 ![](examples/blocking-channels/blocking_channels.out)
+
+
+## Loop from a channel
+{id: loop-from-a-channel}
+
+![](examples/loop-channel/loop_channel.go)
+
+## Select channel
+{id: select-channel}
+
+![](examples/select-channel/select_channel.go)
+
+## Delayed start
+{id: delayed-start}
+
+![](examples/delayed-start/delayed_start.go)
+
+## Check for race conditions
+{id: check-for-race-conditions}
+
+```
+go run -race app.go
+```
+
+## Channel capacity - buffered channel
+{id: channel-capacity}
+
+```
+make(chan string,  2)
+```
 
 ## Maximum processes
 {id: maximum-processes}
