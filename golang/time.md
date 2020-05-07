@@ -29,6 +29,9 @@
 
 ## sleep and elapsed time
 {id: sleep-and-elapsed-time}
+{i: Sleep}
+{i: Now}
+{i: Sub}
 
 ![](examples/sleep/sleep.go)
 ![](examples/sleep/sleep.out)

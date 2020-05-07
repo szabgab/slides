@@ -46,10 +46,25 @@ A simpler and maybe clearer example for not waiting.
 ![](examples/goroutine-nowait/goroutine_nowait.go)
 ![](examples/goroutine-nowait/goroutine_nowait.out)
 
+## Global waitgroup for goroutines
+{id: global-waitgroups}
+{i: sync}
+{i: WaitGroup}
+{i: Add}
+{i: Wait}
+{i: Done}
+
+![](examples/global-wait-group/global_wait_group.go)
+![](examples/global-wait-group/global_wait_group.out)
+
+
 ## Wait for goroutines
 {id: wait-for-goroutines}
 {i: sync}
 {i: WaitGroup}
+{i: Add}
+{i: Wait}
+{i: Done}
 
 {aside}
 {/aside}
@@ -57,27 +72,29 @@ A simpler and maybe clearer example for not waiting.
 ![](examples/wait-for-goroutines/wait_for_goroutines.go)
 ![](examples/wait-for-goroutines/wait_for_goroutines.out)
 
+
 ## Return data from goroutines
 {id: return-data-from-goroutines}
 
 ![](examples/return-data-from-goroutines/return_data_from_goroutines.go)
 ![](examples/return-data-from-goroutines/return_data_from_goroutines.out)
 
+## Counter - shared variable
+{id: counter}
 
-## Collect data from urls
-{id: collect-data-from-urls}
+![](examples/counter/counter.go)
+![](examples/counter/counter.out)
 
-Given a file with a list of URLs, fetch each one of the pages and print out the size
-of each page. (For a bit more complex exercise, print out their title.)
+## Mutex
+{id: mutex}
 
-![](examples/collect-data-from-urls/collect_data_from_urls.go)
-![](examples/collect-data-from-urls/urls.txt)
+```
+sync.RWMutex
+RLock()
+Lock()
+RUnlock
+```
 
-
-## Process multiple CSV files
-{id: process-multiple-csv-files}
-
-Given a bunch of csv files, read each file and tell us how many cells were in each file.
 
 ## Channels
 {id: channels}
@@ -89,11 +106,8 @@ Only when they are aligned the message will be sent and then both will continue 
 
 ![](examples/channels/channels.go)
 
-## TODO: select
+## select
 {id: select}
-
-
-* [video](https://www.youtube.com/watch?v=LvgVSSpwND8)
 
 
 ## Stand alone web application
@@ -102,18 +116,6 @@ Only when they are aligned the message will be sent and then both will continue 
 ![](examples/stand-alone/stand_alone.go)
 
 
-## Mutex
-{id: mutex}
-
-```
-sync.RWMutex
-RLock()
-Lock()
-RUnlock
-```
-runtime.GOMAXPROCS(1) // set max to be used.
-
-runtime.GOMAXPROCS(-1) // ask how many are there?
 
 ## Check for race conditions
 {id: check-for-race-conditions}
@@ -122,3 +124,63 @@ runtime.GOMAXPROCS(-1) // ask how many are there?
 go run -race app.go
 ```
 
+## Pipeline map
+{id: pipeline-map}
+
+![](examples/pipeline-map/pipeline_map.go)
+
+## Pipeline filter
+{id: pipeline-filter}
+
+![](examples/pipeline-filter/pipeline_filter.go)
+
+## Pipelines
+{id: pipelines}
+
+![](examples/pipeline/pipeline.go)
+
+## Fibonacci goroutine
+{id: fibonaci-goroutine}
+
+![](examples/fibonacci-goroutine/fibonacci_goroutine.go)
+
+## Channels are blocking
+{id: channels-are-blocking}
+
+![](examples/blocking-channels/blocking_channels.go)
+![](examples/blocking-channels/blocking_channels.out)
+
+## Maximum processes
+{id: maximum-processes}
+
+```
+runtime.GOMAXPROCS(1) // set max to be used.
+```
+
+```
+runtime.GOMAXPROCS(-1) // ask how many are there?
+```
+
+## Exercise: Collect data from urls
+{id: exercise-collect-data-from-urls}
+
+Given a file with a list of URLs, fetch each one of the pages and print out the size
+of each page. (For a bit more complex exercise, print out their title.)
+
+![](examples/collect-data-from-urls/urls.txt)
+
+
+## Exercise: Process multiple CSV files
+{id: exercise-process-multiple-csv-files}
+
+Given a bunch of csv files, read each file and tell us how many cells were in each file.
+
+
+## Exercise:
+{id: exercise-goroutine}
+
+
+## Solution: Collect data from urls
+{id: solution-collect-data-from-urls}
+
+![](examples/collect-data-from-urls/collect_data_from_urls.go)

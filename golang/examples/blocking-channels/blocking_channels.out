@@ -1,0 +1,6 @@
+fatal error: all goroutines are asleep - deadlock!
+
+goroutine 1 [chan send]:
+main.main()
+	/home/gabor/work/slides/golang/examples/blocking-channels/blocking_channels.go:7 +0x59
+exit status 2
