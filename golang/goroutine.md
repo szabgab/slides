@@ -61,7 +61,7 @@ A simpler and maybe clearer example for not waiting.
 {id: return-data-from-goroutines}
 
 ![](examples/return-data-from-goroutines/return_data_from_goroutines.go)
-![](examples/return-data-from-goroutines/return_data_from_goroutines.go)
+![](examples/return-data-from-goroutines/return_data_from_goroutines.out)
 
 
 ## Collect data from urls
@@ -69,6 +69,10 @@ A simpler and maybe clearer example for not waiting.
 
 Given a file with a list of URLs, fetch each one of the pages and print out the size
 of each page. (For a bit more complex exercise, print out their title.)
+
+![](examples/collect-data-from-urls/collect_data_from_urls.go)
+![](examples/collect-data-from-urls/urls.txt)
+
 
 ## Process multiple CSV files
 {id: process-multiple-csv-files}
