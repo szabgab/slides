@@ -7,16 +7,29 @@ import (
 	"os"
 	"os/exec"
 	"runtime"
+	"strconv"
 	"time"
 )
 
 func mainPage(w http.ResponseWriter, r *http.Request) {
-	html := `<form method="POST">
-	<input name="text">
-	<input type="submit" value="Calc">
+	aStr := r.PostFormValue("a")
+	bStr := r.PostFormValue("b")
+	a, _ := strconv.Atoi(aStr)
+	b, _ := strconv.Atoi(bStr)
+
+	result := a + b
+
+	html := fmt.Sprintf(`<h1>Calculator</h1>
+	<form method="POST">
+	<input name="a">
+	<input name="b">
+	<input type="submit" value="Add">
 	</form>
-	<a href="/exit">exit</a>`
-	fmt.Fprintf(w, html)
+	Result: %v
+	<hr>
+	<a href="/exit">exit</a>`, result)
+
+	fmt.Fprintf(w, "%v", html)
 }
 
 func exitApp(w http.ResponseWriter, r *http.Request) {
@@ -48,9 +61,8 @@ func openBrowser(targetURL string) {
 
 }
 
-// Find usable port
-// Open browser to the actual port
-// TODO: is there a better way to stop the application?
+// TODO: Find usable port, but open the browser only to that
+// TODO: is there a better way to stop the application than just exit?
 
 func main() {
 	http.HandleFunc("/", mainPage)

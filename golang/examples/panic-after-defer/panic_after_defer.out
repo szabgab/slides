@@ -1,0 +1,10 @@
+Start
+Deferred
+panic: This is bad
+
+goroutine 1 [running]:
+main.doIt(0xc000094001)
+	/home/gabor/work/slides/golang/examples/panic-after-defer/panic_after_defer.go:13 +0x1a5
+main.main()
+	/home/gabor/work/slides/golang/examples/panic-after-defer/panic_after_defer.go:6 +0x26
+exit status 2

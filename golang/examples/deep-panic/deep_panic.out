@@ -1,0 +1,8 @@
+Before
+
+16 / 8 = 2
+16 / 4 = 4
+Error: runtime error: integer divide by zero
+16 / 2 = 8
+
+After
