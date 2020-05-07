@@ -1,0 +1,7 @@
+before
+panic: We have encountered a problem
+
+goroutine 1 [running]:
+main.main()
+	/home/gabor/work/slides/golang/examples/we-panic/we_panic.go:10 +0x95
+exit status 2

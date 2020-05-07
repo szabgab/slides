@@ -94,3 +94,9 @@ Only when they are aligned the message will be sent and then both will continue 
 
 
 * [video](https://www.youtube.com/watch?v=LvgVSSpwND8)
+
+
+## Stand alone web application
+{id: stand-alone-web-application}
+
+![](examples/stand-alone/stand_alone.go)

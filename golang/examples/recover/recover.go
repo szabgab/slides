@@ -2,25 +2,32 @@ package main
 
 import (
 	"fmt"
-	"log"
 )
 
 func main() {
 	fmt.Println("Before")
-	doSomething(true)
+	fmt.Println()
+
+	div(4, 2)
+	fmt.Println()
+	div(4, 0)
+
+	fmt.Println()
 	fmt.Println("After")
 }
 
-func doSomething(bad bool) {
+func div(a, b int) {
 	fmt.Println("Start")
+
 	defer func() {
 		if err := recover(); err != nil {
-			log.Print("Error: ", err)
+			fmt.Printf("Error: %v\n", err)
+			//log.Print("Error: ", err)
 			//panic(err)
 		}
 	}()
-	if bad {
-		panic("There is some problem here")
-	}
+	res := a / b
+	fmt.Println(res)
+
 	fmt.Println("End")
 }
