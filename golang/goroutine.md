@@ -160,6 +160,12 @@ Only when they are aligned the message will be sent and then both will continue 
 
 ![](examples/delayed-start/delayed_start.go)
 
+## Job pool
+{id: job-pool}
+
+![](examples/random-jobs/random_jobs.go)
+
+
 ## Check for race conditions
 {id: check-for-race-conditions}
 
