@@ -7,7 +7,7 @@ import (
 // var expected map[string]
 
 func TestWCa(t *testing.T) {
-	files := []string{"a.txt"}
+	files := []string{"one.txt"}
 	rows, words, chars := wc(files)
 	if rows != 2 {
 		t.Errorf("Expected rows: 2, actual rows %v\n", rows)
@@ -21,7 +21,7 @@ func TestWCa(t *testing.T) {
 }
 
 func TestWCb(t *testing.T) {
-	files := []string{"b.txt"}
+	files := []string{"two.txt"}
 	rows, words, chars := wc(files)
 	if rows != 3 {
 		t.Errorf("Expected rows: 3, actual rows %v\n", rows)

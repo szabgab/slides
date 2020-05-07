@@ -118,13 +118,13 @@ Implement the wc command of Unix/Linux: Given a name of file print out the numbe
 
 Given multiple file, print out the values for each file and then print out the totals for all the files.
 
-![](examples/wc/a.txt)
+![](examples/wc/one.txt)
 
-![](examples/wc/b.txt)
+![](examples/wc/two.txt)
 
 ```
- 2   5  24 a.txt
- 3  11 100 b.txt
+ 2   5  24 one.txt
+ 3  11 100 two.txt
  5  16 124 total
 ```
 

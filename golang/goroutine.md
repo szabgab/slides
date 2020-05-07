@@ -100,3 +100,25 @@ Only when they are aligned the message will be sent and then both will continue 
 {id: stand-alone-web-application}
 
 ![](examples/stand-alone/stand_alone.go)
+
+
+## Mutex
+{id: mutex}
+
+```
+sync.RWMutex
+RLock()
+Lock()
+RUnlock
+```
+runtime.GOMAXPROCS(1) // set max to be used.
+
+runtime.GOMAXPROCS(-1) // ask how many are there?
+
+## Check for race conditions
+{id: check-for-race-conditions}
+
+```
+go run -race app.go
+```
+
