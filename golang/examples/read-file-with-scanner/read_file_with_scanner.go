@@ -19,6 +19,6 @@ func main() {
 		fmt.Printf("Line: %v\n", line)
 	}
 	if err := scanner.Err(); err != nil {
-		fmt.Fprintln(os.Stderr, "reading standard input:", err)
+		fmt.Fprintln(os.Stderr, "reading:", err)
 	}
 }

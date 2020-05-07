@@ -5,6 +5,12 @@ import (
 	"sync"
 )
 
+func count(n int, name string) {
+	for i := 1; i <= n; i++ {
+		fmt.Printf("%v %v\n", name, i)
+	}
+}
+
 func main() {
 	fmt.Println("Start")
 	var wg sync.WaitGroup
@@ -18,10 +24,4 @@ func main() {
 
 	wg.Wait()
 	fmt.Println("End")
-}
-
-func count(n int, name string) {
-	for i := 1; i <= n; i++ {
-		fmt.Printf("%v %v\n", name, i)
-	}
 }

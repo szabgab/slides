@@ -105,6 +105,13 @@ two
 one
 ```
 
+## Defer early returns
+{id: defer-early-return}
+
+![](examples/defer-early-return/defer_early_return.go)
+![](examples/defer-early-return/defer_early_return.out)
+
+
 ## Deferred cd in a function
 {id: deferred-cd-in-a-function}
 

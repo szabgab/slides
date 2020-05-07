@@ -17,6 +17,6 @@
 
 ## Recover
 {id: recover}
-{i: recover
+{i: recover}
 
 ![](examples/recover/recover.go)

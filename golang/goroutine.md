@@ -55,12 +55,25 @@ A simpler and maybe clearer example for not waiting.
 {/aside}
 
 ![](examples/wait-for-goroutines/wait_for_goroutines.go)
+![](examples/wait-for-goroutines/wait_for_goroutines.out)
 
-## Return date from goroutines
+## Return data from goroutines
 {id: return-data-from-goroutines}
 
 ![](examples/return-data-from-goroutines/return_data_from_goroutines.go)
+![](examples/return-data-from-goroutines/return_data_from_goroutines.go)
 
+
+## Collect data from urls
+{id: collect-data-from-urls}
+
+Given a file with a list of URLs, fetch each one of the pages and print out the size
+of each page. (For a bit more complex exercise, print out their title.)
+
+## Process multiple CSV files
+{id: process-multiple-csv-files}
+
+Given a bunch of csv files, read each file and tell us how many cells were in each file.
 
 ## Channels
 {id: channels}
