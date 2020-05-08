@@ -1,10 +1,27 @@
 # Panic (Exception handling)
 {id: panic}
 
-
-
 ## Panic
 {id: go-panic}
+
+{aside}
+In many other programming languages (e.g Python, Java) if the code encounters a problem it raises an exception that if not treated properly will stop the execution.
+In some other programming languages (e.g. C, Perl) functions return an error code when something does not work.
+{/aside}
+
+{aside}
+Go leans towards the languages that return error, though it usually returns it as a separate value.
+In addition Go has a concept similar to exceptions, but is rarely used and to reflect the different usage it also has a different name. It is called `panic`.
+{/aside}
+
+{aside}
+In Go if you try to open a file and you fail, this is considered as a normal situation - not an exceptional one, hence Go will return a representation of the
+error but won't try to stop the program. On the other hand if you try to divide by 0, Go will freak out and `panic`.
+{/aside}
+
+{aside}
+Let's see how does that work.
+{/aside}
 
 ![](examples/go-panic/go_panic.go)
 ![](examples/go-panic/go_panic.out)
@@ -13,6 +30,10 @@
 ## We Panic
 {id: we-panic}
 {i: panic}
+
+{aside}
+We can also initiate our own "panic" by calling the `panic` function.
+{/aside}
 
 ![](examples/we-panic/we_panic.go)
 ![](examples/we-panic/we_panic.out)

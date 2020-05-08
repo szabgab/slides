@@ -1,7 +1,11 @@
 before
+3
+middle
 panic: runtime error: integer divide by zero
 
 goroutine 1 [running]:
+main.div(...)
+	/home/gabor/work/slides/golang/examples/go-panic/go_panic.go:22
 main.main()
-	/home/gabor/work/slides/golang/examples/go-panic/go_panic.go:10 +0x7a
+	/home/gabor/work/slides/golang/examples/go-panic/go_panic.go:15 +0x13a
 exit status 2

@@ -6,8 +6,19 @@ import (
 
 func main() {
 	fmt.Println("before")
-	a, b := 1, 0
-	c := a / b
-	fmt.Println(c)
+
+	x := div(6, 2)
+	fmt.Println(x)
+
+	fmt.Println("middle")
+
+	y := div(6, 0)
+	fmt.Println(y)
+
 	fmt.Println("after")
+}
+
+func div(a, b int) int {
+	c := a / b
+	return c
 }

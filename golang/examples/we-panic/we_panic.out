@@ -1,7 +1,11 @@
 before
-panic: We have encountered a problem
+3
+middle
+panic: Do you expect us do divide by 0?
 
 goroutine 1 [running]:
+main.div(...)
+	/home/gabor/work/slides/golang/examples/we-panic/we_panic.go:23
 main.main()
-	/home/gabor/work/slides/golang/examples/we-panic/we_panic.go:10 +0x95
+	/home/gabor/work/slides/golang/examples/we-panic/we_panic.go:15 +0x151
 exit status 2
