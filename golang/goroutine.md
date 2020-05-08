@@ -105,11 +105,28 @@ Only when they are aligned the message will be sent and then both will continue 
 {/aside}
 
 ![](examples/channels/channels.go)
+![](examples/channels/channels.out)
 
-## Stand alone web application
-{id: stand-alone-web-application}
 
-![](examples/stand-alone/stand_alone.go)
+## Channels are blocking
+{id: channels-are-blocking}
+
+![](examples/blocking-channels/blocking_channels.go)
+![](examples/blocking-channels/blocking_channels.out)
+
+
+## Channel capacity - buffered channel
+{id: channel-capacity}
+
+```
+make(chan string,  2)
+```
+
+## Channel with loop
+{id: channel-with-loop}
+
+![](examples/channel-with-loop/channel_with_loop.go)
+![](examples/channel-with-loop/channel_with_loop.out)
 
 
 ## Pipeline map
@@ -131,12 +148,6 @@ Only when they are aligned the message will be sent and then both will continue 
 {id: fibonaci-goroutine}
 
 ![](examples/fibonacci-goroutine/fibonacci_goroutine.go)
-
-## Channels are blocking
-{id: channels-are-blocking}
-
-![](examples/blocking-channels/blocking_channels.go)
-![](examples/blocking-channels/blocking_channels.out)
 
 
 ## Loop from a channel
@@ -168,12 +179,11 @@ Only when they are aligned the message will be sent and then both will continue 
 go run -race app.go
 ```
 
-## Channel capacity - buffered channel
-{id: channel-capacity}
 
-```
-make(chan string,  2)
-```
+## Stand alone web application
+{id: stand-alone-web-application}
+
+![](examples/stand-alone/stand_alone.go)
 
 ## Maximum processes
 {id: maximum-processes}
