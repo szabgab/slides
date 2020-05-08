@@ -2,11 +2,6 @@
 {id: panic}
 
 
-## Named return parameters
-{id: named-return-parameter}
-
-![](examples/named-returns/named_returns.go)
-![](examples/named-returns/named_returns.out)
 
 ## Panic
 {id: go-panic}

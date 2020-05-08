@@ -39,7 +39,15 @@
 ## Returning an error from a functions
 {id: returning-an-error-from-a-function}
 
-![](examples/function-return-error/return_error.go)
+![](examples/return-error/return_error.go)
+![](examples/return-error/return_error.out)
+
+## Named return parameters
+{id: named-return-parameter}
+
+![](examples/named-returns/named_returns.go)
+![](examples/named-returns/named_returns.out)
+
 
 
 ## Passing a function as a parameter - Callback function
@@ -132,6 +140,7 @@ one
 ![](examples/defer-and-parameters/defer_and_parameters.go)
 
 * The deffered function will see the its parameter when we defer the function not when it is executed
+
 
 ## Exercise: Fibonacci
 {id: exercise-fibonacci}

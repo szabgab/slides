@@ -16,6 +16,7 @@ func main() {
 		return
 	}
 	fmt.Printf("6/0 = %v\n", b)
+
 }
 
 func div(a, b float32) (float32, error) {
