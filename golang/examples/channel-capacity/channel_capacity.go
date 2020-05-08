@@ -1,12 +1,21 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
+
+func sleep() {
+	time.Sleep(1000000000)
+	fmt.Println("woke up")
+}
 
 func main() {
 	ch := make(chan string, 2)
+	// go sleep()
 	ch <- "One"
 	ch <- "Two"
-	//	ch <- "Three"
+	//  ch <- "Three"
 
 	text := <-ch
 	fmt.Println(text)

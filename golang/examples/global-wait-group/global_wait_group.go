@@ -20,7 +20,8 @@ func main() {
 
 	wg.Add(1)
 
-	count(5, "Banana")
+	go count(1000, "Apple")
+	go count(5, "Banana")
 
 	wg.Wait()
 	fmt.Println("End")

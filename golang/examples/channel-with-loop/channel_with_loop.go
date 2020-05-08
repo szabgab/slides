@@ -10,9 +10,18 @@ func main() {
 
 	go count(5, "Apple", c)
 
-	for msg := range c {
-		fmt.Print(msg)
+	for i := 0; i < 8; i++ {
+		msg, open := <-c
+		if !open {
+			break
+		}
+		fmt.Println(msg)
 	}
+	// for msg := range c {
+	// 	//fmt.Println(time.Now().UnixNano())
+	// 	fmt.Print(msg)
+	// 	time.Sleep(1000000000)
+	// }
 	fmt.Println("End")
 }
 
