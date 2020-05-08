@@ -118,9 +118,8 @@ Only when they are aligned the message will be sent and then both will continue 
 ## Channel capacity - buffered channel
 {id: channel-capacity}
 
-```
-make(chan string,  2)
-```
+![](examples/channel-capacity/channel_capacity.go)
+
 
 ## Channel with loop
 {id: channel-with-loop}
