@@ -106,16 +106,10 @@ Only when they are aligned the message will be sent and then both will continue 
 
 ![](examples/channels/channels.go)
 
-## select
-{id: select}
-
-
 ## Stand alone web application
 {id: stand-alone-web-application}
 
 ![](examples/stand-alone/stand_alone.go)
-
-
 
 
 ## Pipeline map
@@ -128,7 +122,7 @@ Only when they are aligned the message will be sent and then both will continue 
 
 ![](examples/pipeline-filter/pipeline_filter.go)
 
-## Pipelines
+## TODO: Pipelines
 {id: pipelines}
 
 ![](examples/pipeline/pipeline.go)
@@ -152,6 +146,7 @@ Only when they are aligned the message will be sent and then both will continue 
 
 ## Select channel
 {id: select-channel}
+{i: select}
 
 ![](examples/select-channel/select_channel.go)
 
@@ -206,8 +201,16 @@ of each page. (For a bit more complex exercise, print out their title.)
 Given a bunch of csv files, read each file and tell us how many cells were in each file.
 
 
-## Exercise:
-{id: exercise-goroutine}
+## Exercise: counter with lock
+{id: exercise-counter-with-lock}
+
+Take the example we saw earlier where we counted in several goroutines and apply the Mutex locks to ensure it does not miss a count. 
+
+## Exercise: Fibonacci in parallel
+{id: exercise-fibonacci-in-parallel}
+
+Take the code from the Fibonacci example and check if you could run it in parallel.
+Observe how does the CPU behave as the number of concurrent jobs increas from 1 to the number of cores you have and beyond.
 
 
 ## Solution: Collect data from urls
