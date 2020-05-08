@@ -3,6 +3,8 @@ package main
 import "fmt"
 
 func main() {
+	doIt(false)
+	fmt.Println()
 	doIt(true)
 }
 

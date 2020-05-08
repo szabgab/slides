@@ -46,6 +46,12 @@
 ![](examples/deep-panic/deep_panic.go)
 ![](examples/deep-panic/deep_panic.out)
 
+## Convert panic to returned error
+{id: convert-panic-to-returned-error}
+
+![](examples/deep-panic-return/deep_panic_return.go)
+![](examples/deep-panic-return/deep_panic_return.out)
+
 ## Exercise: read several files
 {id: exercise-read-several-files}
 
