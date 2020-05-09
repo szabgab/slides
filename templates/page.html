@@ -23,14 +23,14 @@
   {% if c.name == 'ol' %}
       <ol>
           {% for li in c.content %}
-          <li>{{ li }}</li>
+          <li>{{ li|linker }}</li>
           {% endfor %}
       </ol>
   {% endif %}
   {% if c.name == 'ul' %}
       <ul>
           {% for li in c.content %}
-          <li>{{ li }}</li>
+          <li>{{ li|linker }}</li>
           {% endfor %}
       </ul>
   {% endif %}
@@ -44,14 +44,14 @@
   {% if c.name == 'aside' %}
       <div class="extra">
           {% for row in c.content %}
-              {{ row }}
+              {{ row|linker }}
           {% endfor %}
       </div>
   {% endif %}
 
   {% if c.name == 'p' %}
       <p>
-          {{ c.content[0] }}
+          {{ c.content[0]|linker }}
       </p>
   {% endif %}
   {% if c.name == 'include' %}
