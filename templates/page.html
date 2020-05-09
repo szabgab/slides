@@ -59,7 +59,7 @@
       <b><a href="https://github.com/szabgab/slides/tree/main/{{ srcdir }}/{{ c.filename }}" rel="nofollow">{{ c.filename }}</a></b><br>
 
 <pre class="code">
-{{ c.content[0]|e }}
+{{ c.content[0]|syntax(c.filename) }}
 </pre>
 
   {% endif %}
