@@ -12,8 +12,8 @@
 {aside}
 When people say they Python in relation to programming they either mean the Python programming language or they
 mean the tool that can translate some text (code) written in the Python programming language to the language a computer
-can actually understand. On MS Windows this is the *python.exe* you need to install. On Linux/Mac it is usally called *python*
-or *python3*. The generic name of the tool that translates a programming language for the computer is eiter
+can actually understand. On MS Windows this is the **python.exe** you need to install. On Linux/Mac it is usally called **python**
+or **python3**. The generic name of the tool that translates a programming language for the computer is eiter
 called a compiler or an interpreter. We'll talk about this later on.
 {/aside}
 
@@ -41,7 +41,7 @@ and a compiler or interpreter that can translate this program to the computer.
 * Python 3.x - the one that you should use. (not fully backward compatible) Available since December 3, 2008.
 
 {aside}
-Python has two major lines the version 2.x and the version 3.x. In a nutshell you *should* always use Python 3 if possible.
+Python has two major lines the version 2.x and the version 3.x. In a nutshell you **should** always use Python 3 if possible.
 
 Unfortunately you can still encounter many companies and many projects in companies that are stuck on Python 2.
 In such cases you probably will have to write in Python 2.
