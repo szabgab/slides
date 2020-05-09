@@ -30,6 +30,7 @@ Let's see how does that work.
 ## We Panic
 {id: we-panic}
 {i: panic}
+{i: raise}
 
 {aside}
 We can also initiate our own "panic" by calling the `panic` function.
@@ -38,13 +39,14 @@ We can also initiate our own "panic" by calling the `panic` function.
 ![](examples/we-panic/we_panic.go)
 ![](examples/we-panic/we_panic.out)
 
-## Panic when port is used
+## Turn error into panic when port is used
 {id: panic-when-port-is-used} 
 
 ![](examples/panic-http/panic_http.go)
 
 ## Panic after defer
 {id: panic-after-defer}
+{i: defer}
 
 ![](examples/panic-after-defer/panic_after_defer.go)
 ![](examples/panic-after-defer/panic_after_defer.out)
@@ -52,6 +54,8 @@ We can also initiate our own "panic" by calling the `panic` function.
 ## Recover (and re-panic)
 {id: recover}
 {i: recover}
+{i: try}
+{i: catch}
 
 ![](examples/recover/recover.go)
 ![](examples/recover/recover.out)

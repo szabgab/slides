@@ -148,6 +148,12 @@ Read from the stdin (standard input) Get input from the keyboard in golang
 ![](examples/raw-strings/raw_strings.go)
 ![](examples/raw-strings/raw_strings.out)
 
+## Multiline strings
+{id: multiline-strings}
+
+![](examples/multiline-string/multiline_string.go)
+![](examples/multiline-string/multiline_string.out)
+
 ## Exercise: how long is this string?
 {id: exercise-how-long-is-this-string}
 
