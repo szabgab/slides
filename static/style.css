@@ -28,6 +28,12 @@ nav {
         display: none;
         background: #333;
     }
+    .prev-text {
+        display: none;
+    }
+    .next-text {
+        display: none;
+    }
 }
 
 nav ul {
