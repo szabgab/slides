@@ -1,6 +1,6 @@
 import os
 import mimetypes
-from flask import Flask, abort, Response
+from flask import Flask, abort, Response, redirect
 
 app = Flask(__name__)
 
@@ -10,6 +10,8 @@ root = os.path.dirname(os.path.abspath(__file__))
 def show(filename):
     path = os.path.join(root, "html", filename)
     if os.path.isdir(path):
+        if filename[-1] != "/":
+            return redirect(filename + "/")
         path = os.path.join(path, "index.html")
 
     if not os.path.exists(path):
