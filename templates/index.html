@@ -24,14 +24,7 @@ Version: {{ book.version }}
 <a href="keywords{{ extension }}">Keywords</a>
 </div>
 
-<div>
-{% if first %}
-   <a class="next slidebutton" id="next" href="toc{{ extension }}"><span class="next-text">Start </span>&#10095;</a>
-<!--
-   <a class="next slidebutton" id="next" href="{{ first.id }}{{ extension }}">Start (-&gt;)</a>
--->
-{% endif %}
-</div>
+{% include 'incl/nextprev.html' %}
 
 <h2>Chapters</h2>
 <ul>
