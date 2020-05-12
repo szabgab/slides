@@ -1,6 +1,9 @@
 #next {
     float: right;
 }
+#prev {
+    float: left;
+}
 
 a {
     text-decoration: none;
