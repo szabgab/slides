@@ -1,9 +1,9 @@
 <div class="nextprev">
-{% if 'prev' in page %}
-   <a class="prev slidebutton" id="prev" href="{{ page.prev.id }}{{ extension }}">&#10094;<span class="prev-text"> {{ page.prev.title }}</span</a>
+{% if prev %}
+   <a class="prev slidebutton" id="prev" href="{{ prev.id }}{{ extension }}">&#10094;<span class="prev-text"> {{ prev.title }}</span</a>
 {% endif %}
-{% if 'next' in page %}
-   <a class="next slidebutton" id="next" href="{{ page.next.id }}{{ extension }}"><span class="next-text">{{ page.next.title }} </span>&#10095;</a>
+{% if next %}
+   <a class="next slidebutton" id="next" href="{{ next.id }}{{ extension }}"><span class="next-text">{{ next.title }} </span>&#10095;</a>
 {% endif %}
 </div>
 
