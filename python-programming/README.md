@@ -10,3 +10,7 @@ Functional - part 2 -
 
 Extracting extension from filename in Python
 filename, extension = os.path.splitext('/path/to/some/file.ext')
+
+Flask redirect
+redirect(url_for('login'))
+
