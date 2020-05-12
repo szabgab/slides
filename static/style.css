@@ -4,7 +4,15 @@
 #prev {
     float: left;
 }
-
+.nextprev {
+/*
+   padding-top: 2px;
+   padding-bottom: 2px;
+*/
+}
+.clear-both {
+    clear: both;
+}
 a {
     text-decoration: none;
 }
