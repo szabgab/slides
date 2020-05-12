@@ -244,21 +244,59 @@ HTTP/1.0 500 INTERNAL SERVER ERROR
 
 ![](examples/flask/500/app500.py)
 
+## Flask URL routing
+{id: flask-url-routing}
+
+{aside}
+The mapping of the path part of a URL, so the one that comes after the domain name and
+after the port number (if it is included) is the path. Mapping that to a function call
+is called routing.
+
+In the following pages we are going to see several examples on how to map routes to functions.
+
+It is also called "url route registration".
+{/aside}
 
 ## Flask Path params
 {id: flask-path-params}
 
 ![](examples/flask/path/app.py)
 
+```
+FLASK_APP=app.py FLASK_DEBUG=0  flask run
+```
+
 ## Flask Path params (int)
 {id: flask-path-params-int}
+{i: int}
 
 ![](examples/flask/path-int/app.py)
+
+```
+FLASK_APP=app.py FLASK_DEBUG=0  flask run
+```
+
 
 ## Flask Path params add (int)
 {id: flask-path-params-add-int}
 
 ![](examples/flask/path-int-add/app.py)
+
+```
+FLASK_APP=app.py FLASK_DEBUG=0  flask run
+```
+
+## Flask Path params add (path)
+{id: flask-path-params-any-path}
+{i: path}
+
+* Accept any path, including slashes:
+
+![](examples/flask/path-any/app.py)
+
+```
+FLASK_APP=app.py FLASK_DEBUG=0  flask run
+```
 
 
 ## Jinja loop, conditional, include
