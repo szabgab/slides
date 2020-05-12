@@ -208,7 +208,8 @@ var obj = document.getElementById('showhide');
 function showhide() {
     toggle_extras(true);
 }
-obj.addEventListener('click', showhide)
-
+if (obj) {
+    obj.addEventListener('click', showhide)
+}
 
 
