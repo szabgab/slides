@@ -1,9 +1,6 @@
 {% include 'incl/header.html' %}
 
-{% if prev %}
-    <a class="prev slidebutton" id="prev" href="{{ prev.id }}{{ extension }}">&#10094;<span class="prev-text"> {{prev.title}}</span></a>
-{% endif %}
-<a class="next slidebutton" id="next" href="{{ pages.0.id }}{{ extension }}"><span class="next-text">{{ pages.0.title }} </span>&#10095;</a>
+{% include 'incl/nextprev.html' %}
 
 <h1>{{ title }}</h1>
 
