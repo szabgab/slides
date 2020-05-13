@@ -21,7 +21,7 @@ def test_admin_auth():
     web = app.app.test_client()
 
     credentials = base64.b64encode(b'john:nhoj').decode('utf-8')
-    rv = web.get(f'/admin', headers={
+    rv = web.get('/admin', headers={
             'Authorization': 'Basic ' + credentials
     })
 

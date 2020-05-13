@@ -1,4 +1,5 @@
 flask
+flask-httpauth
 jinja2
 pyquery
 requests

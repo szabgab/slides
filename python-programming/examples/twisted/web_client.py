@@ -34,7 +34,7 @@ if len(sys.argv) == 2:
   max_parallel = int(sys.argv[1])
 
 def printPage(result):
-  print(f"page size: ", len(result))
+  print("page size: ", len(result))
   global current_parallel
   current_parallel -= 1
   print("current_parallel: ", current_parallel)

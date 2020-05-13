@@ -6,19 +6,19 @@ def boil_water(sec):
     print(f"End boiling water for {sec} seconds")
 
 def washing_machine(sec):
-    print(f"Start washing machine")
+    print("Start washing machine")
     time.sleep(sec)
-    print(f"End washing machine")
+    print("End washing machine")
 
 def dryer(sec):
-    print(f"Start dryer")
+    print("Start dryer")
     time.sleep(sec)
-    print(f"End dryer")
+    print("End dryer")
 
 def dishwasher(sec):
-    print(f"Start dishwasher")
+    print("Start dishwasher")
     time.sleep(sec)
-    print(f"End dishwasher")
+    print("End dishwasher")
 
 def clean_potatoes(pieces):
     print("Start cleaning potatoes")
