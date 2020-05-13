@@ -1,5 +1,5 @@
 # Continuous Integration for GitHub projects
-{id: index}
+{id: ci-for-github-projects}
 
 ## Self introduction
 {id: self-introduction}
