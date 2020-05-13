@@ -1,5 +1,5 @@
 # About
-{id: about}
+{id: about-us}
 
 ## About me
 {id: about-me}
