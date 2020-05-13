@@ -40,6 +40,8 @@ skip_flake = set([
     'python-programming/examples/classes/limit/fibonacci.py',
     'python-programming/examples/linters/redef.py',
     'python-programming/examples/linters/importer.py',
+    'python-programming/examples/twisted/web_client.py',
+    'python-programming/examples/flask/simple_auth/test_app.py',
 ])
 
 def _run(cmd):
@@ -107,12 +109,31 @@ def generate_book():
         print(err)
         return 1
 
+def check_index(root):
+    errors = 0
+    for dirname in os.listdir(root):
+        dirpath = os.path.join(root, dirname)
+        if not os.path.isdir(dirpath):
+            continue
+        for filename in os.listdir( dirpath ):
+            if not filename.endswith(".md"):
+                continue
+            filepath = os.path.join(dirpath, filename)
+            #print(filepath)
+            with open(filepath) as fh:
+                for line in fh:
+                    if line.startswith("{id: index}"):
+                        print(f"We have an index in {filepath}")
+                        errors += 1
+    return errors
+
 
 def main():
     start = time.time()
     root = os.path.dirname( os.path.dirname( os.path.abspath(__file__)))
     errors = 0
     errors += check_python(root)
+    errors += check_index(root)
     #errors += generate_book()
     end = time.time()
     print(f"Elapsed time: {end-start}")
