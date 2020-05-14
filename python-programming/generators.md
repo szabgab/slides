@@ -27,11 +27,13 @@
 {id: list-comprehension-and-generator-expression}
 
 {aside}
-However, before loearning about `yield` let's see an even simpler way to create a generator. What we call a generator expression.
+However, before learning about `yield` let's see an even simpler way to create a generator. What we call a generator expression.
 
 You are probably already familiar with list comprehensions where you have a an `for` expression inside square brackets. That returns a `list` of values.
 
 If you replace the square brackets with parentheses then you get a **generator expression**.
+
+You can iterate over either of those. So what's the difference?
 {/aside}
 
 ![](examples/generators/list_vs_generator.py)
@@ -42,17 +44,38 @@ If you replace the square brackets with parentheses then you get a **generator e
 {id: list-comprehension-vs-generator-expression}
 {i: getsizeof}
 
+{aside}
+Let's use a bigger range of numbers and create the corresponding list and generator. Then check the size of both of them.
+You can see the list is much bigger. That's becuse the list already contains all the elements, while the generator contains
+only the promise to give you all the elements.
+
+As we could see in the previous example, this is not an empty promise, you can indeed iterate over the elements of a generator
+just as you can iterate over the elements of a list.
+
+However, you cannot access an arbitrary element of a generator because the generator is not **subscriptable**.
+{/aside}
+
+
 ![](examples/generators/generator_expression.py)
 ![](examples/generators/generator_expression.out)
 
-[List Comprehension vs Generator Expressions](http://code-maven.com/list-comprehension-vs-generator-expression)
+[List Comprehension vs Generator Expressions](https://code-maven.com/list-comprehension-vs-generator-expression)
 
 
-## List comprehension vs Generator Expression round 2
+## List comprehension vs Generator Expression - lazy evaluation
 {id: list-comprehension-generator}
-{i: getsizeof}
 
-![](examples/lists/list_comprehension_generator.py)
+{aside}
+The second big difference between list comprehension and generator expressions is that the latter has lazy evaluation.
+In this example you can see that once we assign to list comprehension to a variable the `sqr` function is called on each element.
+
+In the case of the generator expression, only when we iterate over the elements will Python call the `sqr` function.
+If we exit from the loop before we go over all the values than we saved time by not executing the expression on every
+element up-front. If the computation is complex and if our list is long, this can have a substantial impact.
+{/aside}
+
+![](examples/generators/list_comprehension_generator.py)
+![](examples/generators/list_comprehension_generator.out)
 
 
 ## Generators - simple function

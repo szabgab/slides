@@ -1,5 +1,5 @@
-9024
-120
+9016
+112
 
 <class 'list'>
 <class 'generator'>
@@ -7,6 +7,6 @@
 8
 
 Traceback (most recent call last):
-  File "examples/lists/generator_expression.py", line 22, in <module>
+  File "generator_expression.py", line 17, in <module>
     print(gen[4])
 TypeError: 'generator' object is not subscriptable
