@@ -2,10 +2,11 @@ from counter import Counter
 
 cnt = Counter()
 
-while True:
+for i in cnt:
+    print(f"i: {i}")
     try:
-        a = next(cnt)
-        print(a)
+        n = next(cnt)
+        print(f"n: {n}")
     except Exception as ex:
         print(ex.__class__.__name__)
         break

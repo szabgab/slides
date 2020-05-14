@@ -1,4 +1,8 @@
 from counter import Counter
 
-for c in Counter():
+cnt = Counter()
+for c in cnt:
+   print(c)
+
+for c in cnt:
    print(c)

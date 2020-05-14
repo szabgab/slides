@@ -7,7 +7,7 @@
 * [iterable](https://docs.python.org/glossary.html#term-iterable) (Can be iterated over using a `for` loop.)
 * [iterator](https://docs.python.org/glossary.html#term-iterator)
 * Every iterator is also iterable
-* Iterators are not addressable like lists with the `thing[index]` construct.
+* Iterators (and iterables) are not necessarily addressable like lists with the `thing[index]` construct.
 * [Iterator Types](https://docs.python.org/library/stdtypes.html#typeiter)
 * [The standard type hierarchy](https://docs.python.org/reference/datamodel.html#types)
 
@@ -15,10 +15,11 @@
 {id: what-are-iterators-and-iterables}
 
 * All of them are iterables
-* Out of these, only the filehandle is an iterator
-* (You should always `open` files using the `with` statement and not like this.)
+* A filehandle and the map object are also iterators. (Side note: You should always `open` files using the `with` statement and not like this.)
+* `iter()` would return the iterator from an iterable. We don't need this.
 
 ![](examples/iterators/what_are_iterators.py)
+![](examples/iterators/what_are_iterators.out)
 
 
 ## A file-handle is an iterator
@@ -58,6 +59,8 @@ In many aspects it behaves as an iterator. Specifically it allows us to iterate 
 We can create a iterator using a class. We are required to implement the `__iter__` method that returns the iterator object
 and the `__next__` method that returns the next element in our iteration. We can indicated that the iteration was exhaused
 by raising a `StopIteration` exception.
+
+The instance-object that is created from this class-object is the iterator, not the class-object itself!
 {/aside}
 
 
@@ -70,11 +73,28 @@ by raising a `StopIteration` exception.
 ## Using iterator
 {id: using-iterator}
 
+{aside}
+The class returned an iterator, we could use a `for` loop to iterate over the element.
+We tried to run through the iterator again, but it did not print anything. It was exhausted.
+{/aside}
+
 ![](examples/iterators/simple_iterator.py)
 ![](examples/iterators/simple_iterator.out)
 
+## Iterator without temporary variable
+{id: use-iterator-without-temporary-variable}
+
+![](examples/iterators/simple_iterator_once.py)
+![](examples/iterators/simple_iterator_once.out)
+
+
 ## The type of the iterator
 {id: type-of-iterator}
+
+{aside}
+How can we know it is an iterator? We check it.
+{/aside}
+
 
 ![](examples/iterators/simple_counter_type.py)
 ![](examples/iterators/simple_counter_type.out)
@@ -83,8 +103,32 @@ by raising a `StopIteration` exception.
 {id: using-iterator-with-next}
 {i: next}
 
+{aside}
+A feature of any iterator is that we could iterate over it using the `next` call.
+{/aside}
+
 ![](examples/iterators/simple_iterator_next.py)
 ![](examples/iterators/simple_iterator_next.out)
+
+## Mixing for and next
+{id: mixing-for-and-next}
+
+{aside}
+You can even use `next` inside a `for` loop, but then you will have to handle the `StopIteration` exception
+that migh happen during your call of `next`.
+
+I am not really sure when would we want to use this.
+{/aside}
+
+![](examples/iterators/mix_for_and_next.py)
+![](examples/iterators/mix_for_and_next.out)
+
+## Iterable which is not an iterator
+{id: iterable-which-is-not-an-iterator}
+
+
+![](examples/iterators/an_iterable.py)
+![](examples/iterators/an_iterable.out)
 
 ## Iterator returning multiple values
 {id: iterator-returning-multiple-values}
@@ -104,6 +148,7 @@ by raising a `StopIteration` exception.
 {id: unbound-iterator}
 
 ![](examples/iterators/iterator.py)
+![](examples/iterators/iterator.out)
 
 
 ## Unbound iterator Fibonacci

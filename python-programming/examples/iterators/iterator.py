@@ -13,9 +13,3 @@ for c in Counter():
    print(c)
    if c > 10:
        break
-print()
-cnt = Counter()
-print(next(cnt))
-print(next(cnt))
-print(next(cnt))
-
