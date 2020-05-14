@@ -158,4 +158,13 @@ Unless it was marked using the global word.
 
 (We have this as one of the example)
 
+## Simple function (before generators)
+{id: generators-simple-function}
+
+TODO: probably not that interesting
+
+![](examples/generators/simple_function.py)
+![](examples/generators/simple_function_multiple_return.py)
+
+
 

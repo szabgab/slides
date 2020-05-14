@@ -7,7 +7,7 @@ for c in counter():
     print(c)
     if c >= 4:
         break
-print('')
+print()
 
 for c in counter(8):
     print(c)

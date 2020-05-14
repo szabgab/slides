@@ -5,6 +5,3 @@ def number():
 
 for n in number():
   print(n)
-# 42
-# 19
-# 23

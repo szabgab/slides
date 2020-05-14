@@ -1,6 +1,39 @@
 # Iterators - with and without Itertools
 {id: iterators}
 
+## Advantages of iterators and generators
+{id: advantages-of-iterators-and-generators}
+
+* Lazy evaluation
+* Save processin (or at least delay the use)
+* Save memory
+* Handle an infinite series of information
+* Turn complex operations into a simple matter of `for` loop.
+
+## The Fibonacci research institute
+{id: the-fibonacci-research-institute}
+
+* We have a bunch of mathematicians who research the Fibonacci series.
+
+* We have a bunch of people who research a series of DNA sequences.
+
+* ???
+
+## Fibonacci plain
+{id: fibonacci-plain}
+
+* We don't call this as this has an infinite loop
+
+![](examples/generators/fibonacci_plain.py)
+
+
+## Fibonacci copy-paste
+{id: fibonacci-copy-paste}
+
+![](examples/generators/fibonacci_copy_paste.py)
+
+
+
 ## Iterators Glossary
 {id: iterators-glossary}
 

@@ -3,9 +3,9 @@ def number():
     yield 19
     yield 23
 
-n = number()
-print(type(n))
-print(n.__next__())
-print(n.__next__())
-print(n.__next__())
-print(n.__next__())
+num = number()
+print(type(num))
+print(next(num))
+print(next(num))
+print(next(num))
+print(next(num))

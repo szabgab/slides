@@ -40,7 +40,7 @@ You can iterate over either of those. So what's the difference?
 ![](examples/generators/list_vs_generator.out)
 
 
-## List comprehension vs Generator Expression
+## List comprehension vs Generator Expression - less memory
 {id: list-comprehension-vs-generator-expression}
 {i: getsizeof}
 
@@ -78,29 +78,46 @@ element up-front. If the computation is complex and if our list is long, this ca
 ![](examples/generators/list_comprehension_generator.out)
 
 
-## Generators - simple function
-{id: generators-simple-function}
-
-![](examples/generators/simple_function.py)
-![](examples/generators/simple_function_multiple_return.py)
-
-
-## Generators - simple generators (yield)
-{id: generators-simple-generators}
-{i: yield}
-
-![](examples/generators/simple_generator.py)
-
-
-## Generators - simple generators - call next
+## Generator: function with yield - call next
 {id: generators-simple-generators-next}
-{i: __next__}
+{i: next}
+{i: yield}
 {i: StopIteration}
+
+{aside}
+We can create a function that has multiple `yield` expressions inside.
+We call the function and what we get back is a `generator`.
+A `generator` is also an `iterator` so we can call the `next` function on it and it will give us the next `yield` value.
+
+If we call it one too many times we get a `StopIteration` exception.
+{/aside}
 
 ![](examples/generators/simple_generator_next.py)
 ![](examples/generators/simple_generator_next.out)
 
+## Generators - call next
+{id: generators-next}
+
+{aside}
+We can also use a `for` loop on the `generator` and then we don't need to worry about the exception.
+{/aside}
+
 ![](examples/generators/simple_generator_next_other.py)
+![](examples/generators/simple_generator_next_other.out)
+
+
+## Generator with yield
+{id: generators-simple-generators}
+{i: yield}
+
+{aside}
+We don't even need to use a temporary variable for it.
+{/aside}
+
+![](examples/generators/simple_generator.py)
+![](examples/generators/simple_generator.out)
+
+
 
 ## Generators - fixed counter
 {id: generators-fixed-counter}
@@ -128,18 +145,6 @@ element up-front. If the computation is complex and if our list is long, this ca
 
 ![](examples/generators/gen.py)
 ![](examples/generators/gen.out)
-
-
-## Fibonacci plain
-{id: fibonacci-plain}
-
-![](examples/generators/fibonacci_plain.py)
-
-
-## Fibonacci copy-paste
-{id: fibonacci-copy-paste}
-
-![](examples/generators/fibonacci_copy_paste.py)
 
 
 ## Fibonacci - generator
