@@ -1,6 +1,12 @@
 # Generators and Generator Expressions
 {id: generator-experssions}
 
+## Generators Glossary
+{id: generators-glossary}
+
+* [generator](https://docs.python.org/3/glossary.html#term-generator)
+* [Generator types](https://docs.python.org/library/stdtypes.html#generator-types)
+
 ## Iterators vs Generators
 {id: iterators-vs-generators}
 

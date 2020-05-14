@@ -1,3 +1,5 @@
+from collections.abc import Iterator, Iterable
+
 class Counter():
    def __init__(self):
        self.count = 0
@@ -16,9 +18,7 @@ for c in Counter():
 
 
 print()
-
 cnt = Counter()
-from collections.abc import Iterator, Iterable
 print(cnt.__class__.__name__)
 print(issubclass(cnt.__class__, Iterator))
 print(issubclass(cnt.__class__, Iterable))

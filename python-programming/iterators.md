@@ -1,6 +1,26 @@
 # Iterators - with and without Itertools
 {id: iterators-in-python}
 
+## Iterators Glossary
+{id: iterators-glossary}
+
+* [iterable](https://docs.python.org/glossary.html#term-iterable) (Can be iterated over using a `for` loop.)
+* [iterator](https://docs.python.org/glossary.html#term-iterator)
+* Every iterator is also iterable
+* Iterators are not addressable like lists with the `thing[index]` construct.
+* [Iterator Types](https://docs.python.org/library/stdtypes.html#typeiter)
+* [The standard type hierarchy](https://docs.python.org/reference/datamodel.html#types)
+
+## What are iterators and iterables?
+{id: what-are-iterators-and-iterables}
+
+* All of them are iterables
+* Out of these, only the filehandle is an iterator
+* (You should always `open` files using the `with` statement and not like this.)
+
+![](examples/iterators/what_are_iterators.py)
+
+
 ## A file-handle is an iterator
 {id: file-handle-as-iterator}
 {i: collections}
@@ -14,12 +34,14 @@
 ![](examples/iterators/read_file.out)
 
 
-## range behaves almost like an iterator
+## range is iterable but it is not an iterator
 {id: range-is-an-iterator}
 
 The `range` function in Python 3 is not a real "iterator" but it is an "iterable".
 In many aspects it behaves as an iterator. Specifically it allows us to iterate over numbers.
 [Range Is Not An Iterator](https://treyhunner.com/2018/02/python-range-is-not-an-iterator/)
+
+* [range](https://docs.python.org/library/functions.html#func-range)
 
 ![](examples/iterators/range.py)
 ![](examples/iterators/range.out)
@@ -32,7 +54,12 @@ In many aspects it behaves as an iterator. Specifically it allows us to iterate 
 {i: __iter__}
 {i: __next__}
 
-We can implement a similar iterator using the following code.
+{aside}
+We can create a iterator using a class. We are required to implement the `__iter__` method that returns the iterator object
+and the `__next__` method that returns the next element in our iteration. We can indicated that the iteration was exhaused
+by raising a `StopIteration` exception.
+{/aside}
+
 
 * `__iter__`
 * `__next__` (in Python 2 this used to ne `next`)
