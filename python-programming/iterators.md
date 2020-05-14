@@ -187,10 +187,6 @@ I am not really sure when would we want to use this.
 In one of the first slides of this chapter we saw a partial implementation of the `range` function.
 Change that code to have a full implementation, that can accept 1, 2, or 3 parameters.
 
-## Exercise: iterators - count
-{id: exercise-reimplement-count}
-
-* Reimplement the count functions of itertools using iterator class.
 
 ## Exercise: iterators - cycle
 {id: exercise-reimplement-cycle}
@@ -246,17 +242,6 @@ return a single character. As an option let the user skip newlines, or maybe any
 
 ![](examples/iterators/sections/planets.txt)
 
-## Exercise: compare files
-{id: exercise-compare-files}
-
-Compare two files line-by-line, and create a 3rd file listing the lines that are different.
-
-![](examples/iterators/first.txt)
-![](examples/iterators/second.txt)
-
-Expected output:
-
-![](examples/iterators/diff.txt)
 
 ## Exercise: collect packets
 {id: exercise-collect-packets}
@@ -272,6 +257,18 @@ In each iteration return a message that is built up from all the packages in the
 
 ![](examples/iterators/packets/packets.txt)
 ![](examples/iterators/packets/packets.out)
+
+## Exercise: compare files
+{id: exercise-compare-files}
+
+Compare two files line-by-line, and create a 3rd file listing the lines that are different.
+
+![](examples/iterators/first.txt)
+![](examples/iterators/second.txt)
+
+Expected output:
+
+![](examples/iterators/diff.txt)
 
 ## Solution: iterators - limit Fibonacci
 {id: solution-iterators-limit}

@@ -151,6 +151,11 @@ Unless it was marked using the global word.
 {id: deeper}
 ![](examples/lists/string_deeper.py)
 
+## Exercise: iterators - count
+{id: exercise-reimplement-count}
 
+* Reimplement the count functions of itertools using iterator class.
+
+(We have this as one of the example)
 
 

@@ -4,8 +4,12 @@
 ## Generators Glossary
 {id: generators-glossary}
 
-* [generator](https://docs.python.org/3/glossary.html#term-generator)
+* [generator](https://docs.python.org/glossary.html#term-generator) (a function that returns a "generator iterator")
+* [generator-iterator](https://docs.python.org/glossary.html#term-generator-iterator) (an object created by a generator)
 * [Generator types](https://docs.python.org/library/stdtypes.html#generator-types)
+* [generator-expression](https://docs.python.org/glossary.html#term-generator-expression)
+
+* Basically a way to create iterators withot a class. 
 
 ## Iterators vs Generators
 {id: iterators-vs-generators}
@@ -18,6 +22,9 @@
 * Genarators are a simpler way to create an iterable object that iterators, but iterators allow for more complex iterables.
 * To create a generator we only need a single function with **yield**.
 * To create an iterator we need a class with two methods: **__iter__** and **__next__**
+
+## List comprehension and Generator Expression
+{id: list-comprehension-and-generator-expression}
 
 ![](examples/advanced/list_vs_generator.py)
 ![](examples/advanced/list_vs_generator.out)
