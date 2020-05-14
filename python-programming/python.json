@@ -45,7 +45,7 @@
         "testing-intro.md",
         "functional.md",
         "iterators.md",
-        "generator-expressions.md",
+        "generators.md",
 
         "logging.md",
         "closures.md",
