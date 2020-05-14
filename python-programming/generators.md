@@ -9,7 +9,7 @@
 * [Generator types](https://docs.python.org/library/stdtypes.html#generator-types)
 * [generator-expression](https://docs.python.org/glossary.html#term-generator-expression)
 
-* Basically a way to create iterators withot a class. 
+* Generators are basically a way to create iterators without a class. 
 
 ## Iterators vs Generators
 {id: iterators-vs-generators}
@@ -17,25 +17,33 @@
 * a generator is an iterator
 * an iterator is an iterable
 
-![](examples/advanced/iterable.py)
+![](examples/generators/iterable.py)
 
-* Genarators are a simpler way to create an iterable object that iterators, but iterators allow for more complex iterables.
-* To create a generator we only need a single function with **yield**.
-* To create an iterator we need a class with two methods: **__iter__** and **__next__**
+* Genarators are a simpler way to create an iterable object than iterators, but iterators allow for more complex iterables.
+* To create an iterator we need a class with two methods:  `__iter__` and `__next__`, and a `raise StopIteration`.
+* To create a generator we only need a single function with `yield  .
 
 ## List comprehension and Generator Expression
 {id: list-comprehension-and-generator-expression}
 
-![](examples/advanced/list_vs_generator.py)
-![](examples/advanced/list_vs_generator.out)
+{aside}
+However, before loearning about `yield` let's see an even simpler way to create a generator. What we call a generator expression.
+
+You are probably already familiar with list comprehensions where you have a an `for` expression inside square brackets. That returns a `list` of values.
+
+If you replace the square brackets with parentheses then you get a **generator expression**.
+{/aside}
+
+![](examples/generators/list_vs_generator.py)
+![](examples/generators/list_vs_generator.out)
 
 
 ## List comprehension vs Generator Expression
 {id: list-comprehension-vs-generator-expression}
 {i: getsizeof}
 
-![](examples/lists/generator_expression.py)
-![](examples/lists/generator_expression.out)
+![](examples/generators/generator_expression.py)
+![](examples/generators/generator_expression.out)
 
 [List Comprehension vs Generator Expressions](http://code-maven.com/list-comprehension-vs-generator-expression)
 
