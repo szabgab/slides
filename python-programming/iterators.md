@@ -1,5 +1,5 @@
 # Iterators - with and without Itertools
-{id: iterators-in-python}
+{id: iterators}
 
 ## Iterators Glossary
 {id: iterators-glossary}
@@ -47,8 +47,8 @@ In many aspects it behaves as an iterator. Specifically it allows us to iterate 
 ![](examples/iterators/range.out)
 
 
-## Iterators
-{id: iterators}
+## Iterator: a counter
+{id: iterator-counter}
 {i: StopIteration }
 {i: next}
 {i: __iter__}
@@ -63,10 +63,28 @@ by raising a `StopIteration` exception.
 
 * `__iter__`
 * `__next__` (in Python 2 this used to ne `next`)
-* raise StopIteration
+* `raise StopIteration`
+
+![](examples/iterators/counter.py)
+
+## Using iterator
+{id: using-iterator}
 
 ![](examples/iterators/simple_iterator.py)
 ![](examples/iterators/simple_iterator.out)
+
+## The type of the iterator
+{id: type-of-iterator}
+
+![](examples/iterators/simple_counter_type.py)
+![](examples/iterators/simple_counter_type.out)
+
+## Using iterator with next
+{id: using-iterator-with-next}
+{i: next}
+
+![](examples/iterators/simple_iterator_next.py)
+![](examples/iterators/simple_iterator_next.out)
 
 ## Iterator returning multiple values
 {id: iterator-returning-multiple-values}
@@ -84,7 +102,6 @@ by raising a `StopIteration` exception.
 
 ## Unbound or infinite iterator
 {id: unbound-iterator}
-{i: next}
 
 ![](examples/iterators/iterator.py)
 
