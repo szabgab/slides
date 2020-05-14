@@ -9,7 +9,7 @@
 * [Generator types](https://docs.python.org/library/stdtypes.html#generator-types)
 * [generator-expression](https://docs.python.org/glossary.html#term-generator-expression)
 
-* Generators are basically a way to create iterators without a class. 
+* Generators are basically a way to create iterators without a class.
 
 ## Iterators vs Generators
 {id: iterators-vs-generators}
@@ -159,11 +159,10 @@ as if it was a normal return call, but when the function is called again, it wil
 from the next statement. Hence the word 'after' will be printed after each call.
 {/aside}
 
-
-
 ## Infinite series
 {id: infinite-series}
 
+* The Fibonacci was already infinite, let's see a few more.
 
 ## Integers
 {id: integers}
@@ -242,6 +241,8 @@ There are 3 sticks. On the first stick there are n rings of different sizes. The
 Move over all the rings to the 3rd stick by always moving only one ring and making sure that never will there be a large ring on top
 of a smaller ring.
 
+* [Tower of Hanoi](https://en.wikipedia.org/wiki/Tower_of_Hanoi)
+
 
 ## Exercise: Binary file reader
 {id: exercise-binary-file-reader}
@@ -259,8 +260,17 @@ Then the content.
 8 ABCDEFGH 5 XYZQR
 ```
 
+Given this source file
+
 ![](examples/advanced/rows.txt)
+
+using this code
+
 ![](examples/advanced/rows_to_records.py)
+
+we can create this file:
+
 ![](examples/advanced/records.txt)
 
+The exercise is to create an iterator/generator that can read such a file record-by-record.
 
