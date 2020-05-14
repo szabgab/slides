@@ -452,3 +452,18 @@ NETWORK ID          NAME                DRIVER              SCOPE
 ```
 docker network create abc      creates a bridge called abc
 ```
+
+## Ignore files and directories
+{id: ignore-files-and-directories}
+{i: .dockerignore}
+
+`docker build .`   will send over all the content of the corrent directory to the docker
+daemon. You usually don't want that. So add a file called `.dockerignore` to the root
+of your project
+
+```
+.git/
+temp/
+```
+
+
