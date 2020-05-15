@@ -2,8 +2,9 @@
 
 ## Timing
 
-Functional - part 1 - ~ 40 min + 30 exercise
+Functional - part 1 - ~ 40 min + 30 min exercise
 Functional - part 2 - 
+Iterators           - ~ 50 min + 60 min exercise
 
 
 ## TODO

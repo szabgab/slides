@@ -191,6 +191,13 @@ I am not really sure when would we want to use this.
 ![](examples/iterators/unbound/fib.py)
 ![](examples/iterators/unbound/fib.out)
 
+## Operations on Unbound iterator
+{id: operations-on-unbound-iterator}
+
+![](examples/iterators/unbound/fib_filter.py)
+![](examples/iterators/unbound/fib_filter.out)
+
+
 ## itertools
 {id: itertools}
 {i: itertools}
@@ -291,6 +298,10 @@ In each iteration return a message that is built up from all the packages in the
 ![](examples/iterators/packets/packets.txt)
 ![](examples/iterators/packets/packets.out)
 
+![](examples/iterators/packets/packets1.txt)
+
+![](examples/iterators/packets/packets2.txt)
+
 ## Exercise: compare files
 {id: exercise-compare-files}
 
@@ -345,8 +356,6 @@ The test to verify it
 
 ![](examples/iterators/packets/test_packets.py)
 
-Test cases:
+Expected result:
 
 ![](examples/iterators/packets/packets.json)
-![](examples/iterators/packets/packets1.txt)
-![](examples/iterators/packets/packets2.txt)
