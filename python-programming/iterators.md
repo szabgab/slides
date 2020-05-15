@@ -5,7 +5,7 @@
 {id: advantages-of-iterators-and-generators}
 
 * Lazy evaluation
-* Save processin (or at least delay the use)
+* Save processing (or at least delay the use)
 * Save memory
 * Handle an infinite series of information
 * Turn complex operations into a simple matter of `for` loop.
@@ -64,6 +64,10 @@
 {i: TextIOWrapper}
 {i: issubclass}
 
+{aside}
+This slightly a repetition of the previous statement, that filehandles are iterators.
+{/aside}
+
 ![](examples/iterators/read_file.py)
 ![](examples/iterators/read_file.out)
 
@@ -71,9 +75,11 @@
 ## range is iterable but it is not an iterator
 {id: range-is-an-iterator}
 
-The `range` function in Python 3 is not a real "iterator" but it is an "iterable".
+{aside}
+Just as a string or a list, the `range` function in Python is also an "iterable" but it is not an "iterator".
 In many aspects it behaves as an iterator. Specifically it allows us to iterate over numbers.
 [Range Is Not An Iterator](https://treyhunner.com/2018/02/python-range-is-not-an-iterator/)
+{/aside}
 
 * [range](https://docs.python.org/library/functions.html#func-range)
 
@@ -98,7 +104,7 @@ The instance-object that is created from this class-object is the iterator, not 
 
 
 * `__iter__`
-* `__next__` (in Python 2 this used to ne `next`)
+* `__next__` (in Python 2 this used to called `next`)
 * `raise StopIteration`
 
 ![](examples/iterators/counter.py)
@@ -180,12 +186,30 @@ I am not really sure when would we want to use this.
 ## Unbound or infinite iterator
 {id: unbound-iterator}
 
+{aside}
+So far each iterator had a beginning and an end. However we can also create infinte or unbounded iterators.
+The nice thing about them is that we can pass them around as we do with any other object and we can execute
+operations on them without burning our CPU.
+
+Of course the user will have to be carefull not to try to flatten the iterator, not to try to get all the values
+from it, as that will only create an infinite loop or a never ending operation.
+
+In this very simple example we count from 0 and we never stop.
+
+When we use the `Counter` in the `for` loop we need to include a stop-condition, otherwise our loop will never end.
+{/aside}
+
 ![](examples/iterators/iterator.py)
 ![](examples/iterators/iterator.out)
 
 
 ## Unbound iterator Fibonacci
 {id: unbound-iterator-fibonacci}
+
+{aside}
+Now we can get back to our original problem, the slightly more complex Fibonacci series. In this example we created
+an unbounded iterator that on every iteration will return the next element of the Fibonacci series.
+{/aside}
 
 ![](examples/iterators/unbound/fibonacci.py)
 ![](examples/iterators/unbound/fib.py)
@@ -204,6 +228,11 @@ I am not really sure when would we want to use this.
 {i: yield}
 
 * [itertools](http://docs.python.org/library/itertools.html)
+
+{aside}
+itertools is a standard Python library that provides a number of interesting iterators.
+We are going to see a few examples here:
+{/aside}
 
 ## itertools - count
 {id: itertools-count}
