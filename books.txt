@@ -19,6 +19,7 @@ java-programming/java.json,java-programming
 javascript-programming/javascript.json,javascript-programming
 jenkins/jenkins.json,jenkins
 jenkins-intro/jenkins.json,jenkins-intro
+linkedin/linkedin.json,linkedin
 linux/linux.json,linux
 linux-docker/linux.json,linux-docker
 linux-intro/linux.json,linux-intro
