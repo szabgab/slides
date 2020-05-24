@@ -38,6 +38,7 @@ python-mocking/python.json,python-mocking
 python-programming/python.json,python-programming
 ruby-programming/ruby.json,ruby-programming
 scratch/scratch.json,scratch
+slack/slack.json,slack
 sql/sql.json,sql
 value/value.json,value
 vim/vim.json,vim
