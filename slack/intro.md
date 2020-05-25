@@ -27,6 +27,8 @@
 {id: slash-commands}
 
 * /
+* /join
+* /remind
 
 ## Apps
 {id: apps}
