@@ -54,17 +54,37 @@ It is like a CV
 * Yes even kids from kindergarten.
 * Even if they are in a different country.
 
+## Activity
+{id: activity}
+
+* Follow brands and people
+* Like posts
+* No personal posting (not cat or dog pictures)
+* Keep it professional
+* Participate in groups
+
 ## Job search
 {id: job-search}
 
 * Job searches + notifications.
+* Apply to positions via LinkedIn
 
-## QA
-{id: qa}
+## Links - English
+{id: links-english}
+
+* [Code Maven](https://code-maven.com/)
+* [YouTube](https://code-maven.com/youtube)
+* [LinkedIn](https://code-maven.com/linkedin)
+
+## Links - Hebrew
+{id: links-hebrew}
 
 * [Code Maven](https://he.code-maven.com/)
 * [YouTube](https://he.code-maven.com/youtube)
 * [LinkedIn](https://he.code-maven.com/linkedin)
+
+## Thank you
+{id: thank-you}
 
 * [Gabor Szabo on LinkedIn](https://www.linkedin.com/in/szabgab)
 
