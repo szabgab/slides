@@ -49,7 +49,11 @@ def copy_images(slides_path, resources):
             if os.path.isfile(img_path):
                 logging.debug(f"Copy image: {img_path}")
                 shutil.copy(img_path, os.path.join(resources, 'img', img))
-
+def copy_book_cover(slides_path, resources):
+    src = os.path.join(slides_path, 'title_page.png')
+    trg = os.path.join(resources, 'title_page.png')
+    if os.path.exists(src):
+        shutil.copy(src, trg)
 
 def process_slides(source, target, name, config_file=None):
     logging.info(f"Processing slides of {name}")
@@ -75,6 +79,9 @@ def process_slides(source, target, name, config_file=None):
 
     copy_examples(slides_path, resources)
     copy_images(slides_path, resources)
+    copy_book_cover(slides_path, resources)
+
+
 
     return book
 
