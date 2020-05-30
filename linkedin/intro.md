@@ -27,6 +27,7 @@ It is like a CV
 * About section
 
 * Language: English!
+* Language: Another profile with your loacal language.
 * Location: Country
 
 * Describe your previous jobs.
@@ -46,6 +47,8 @@ It is like a CV
 
 * Who can connect with you?
 * Are you open for jobs?
+* Settings and Privacy / Job seeking preferences
+* Settings / Communications / Who can reach you
 
 ## Contacts
 {id: contacts}
