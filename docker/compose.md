@@ -55,4 +55,26 @@ ping one
 
 ![](examples/interactive-shell-3/docker-compose.yml)
 
+## Flask with Redis
+{id: flask-with-redis}
+
+![](examples/flask-redis/app.py)
+![](examples/flask-redis/templates/red.html)
+![](examples/flask-redis/requirements.txt)
+
+
+## Docker compose
+{id: docker-compose-redis-flask}
+
+```
+pip install docker-compose
+```
+
+![](examples/flask-redis/docker-compose.yml)
+![](examples/flask-redis/Dockerfile)
+
+```
+docker-compose up
+```
+
 

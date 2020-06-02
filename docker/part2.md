@@ -293,28 +293,6 @@ Access via [http://localhost:5001/](http://localhost:5001/)
 The -it is needed so we can see the log on the command line and we can easily stop the development container.
 
 
-## Flask with Redis
-{id: flask-with-redis}
-
-![](examples/flask-redis/app.py)
-![](examples/flask-redis/templates/red.html)
-![](examples/flask-redis/requirements.txt)
-
-
-## Docker compose
-{id: docker-compose-redis-flask}
-
-```
-pip install docker-compose
-```
-
-![](examples/flask-redis/docker-compose.yml)
-![](examples/flask-redis/Dockerfile)
-
-```
-docker-compose up
-```
-
 ## Docker with crontab
 {id: docker-with-crontab}
 

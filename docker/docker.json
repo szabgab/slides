@@ -8,7 +8,9 @@
     "files": [
         "introduction.md",
         "part2.md",
-        "part3.md",
+        "commands.md",
+        "python.md",
+        "perl.md",
         "compose.md"
     ]
 }
