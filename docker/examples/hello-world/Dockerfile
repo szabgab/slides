@@ -1,2 +1,2 @@
-FROM ubuntu:19.10
+FROM ubuntu:20.04
 CMD echo hello world
