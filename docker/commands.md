@@ -349,22 +349,6 @@ docker: Error response from daemon: oci runtime error: container_linux.go:247: s
 ERRO[0001] error getting events from daemon: net/http: request canceled
 ```
 
-## Links
-{id: links}
-
-* [flask uwsgi nginx](https://medium.com/@gabimelo/developing-a-flask-api-in-a-docker-container-with-uwsgi-and-nginx-e089e43ed90e)
-* [deploy on Digital Ocean](https://www.digitalocean.com/community/tutorials/how-to-deploy-a-go-web-application-with-docker-and-nginx-on-ubuntu-18-04)
-
-## Docker: Flask + uwsgi + nginx
-{id: flask-uwsgi-nginx}
-
-Using [https://hub.docker.com/r/tiangolo/uwsgi-nginx-flask/](https://hub.docker.com/r/tiangolo/uwsgi-nginx-flask/)
-
-```
-docker build -t myapp .
-docker run -it --rm -p5001:80 myapp
-```
-
 ## Run container as a daemon
 {id: run-container-as-a-daemon}
 {i: inspect}

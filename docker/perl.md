@@ -1,6 +1,51 @@
 # Perl with Docker
 {id: perl}
 
+## Docker: Perl Hello World
+{id: docker-perl-hello-world}
+
+![](examples/hello-world-perl/Dockerfile)
+
+```
+$ docker build -t mydocker .
+$ docker run -it --rm mydocker
+Hello from Perl
+```
+
+## Docker: Perl Hello World in script
+{id: docker-perl-script-hello-world}
+
+![](examples/hello-world-perl-script/Dockerfile)
+
+![](examples/hello-world-perl-script/hello_world.pl)
+
+```
+$ docker build -t mydocker .
+$ docker run -it --rm mydocker
+Hello World from Perl script
+```
+
+## Docker: Perl with I/O
+{id: docker-perl-with-io}
+
+![](examples/perl-io/Dockerfile)
+
+![](examples/perl-io/greetings.pl)
+
+```
+$ docker build -t mydocker .
+```
+
+We need to tell Docker that this is an interactive process
+
+```
+docker run -it --rm mydocker
+
+What is your name? Foo
+Hello Foo, how are you today?
+```
+
+
 ## Docker Perl Dancer hello world app
 {id: docker-perl-dancer-hello-world-app}
 

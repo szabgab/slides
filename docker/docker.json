@@ -11,6 +11,7 @@
         "commands.md",
         "python.md",
         "perl.md",
-        "compose.md"
+        "compose.md",
+        "appendix.md"
     ]
 }

@@ -110,62 +110,6 @@ $ docker run -it --rm mydocker
 hello world
 ```
 
-## Docker: Perl Hello World
-{id: docker-perl-hello-world}
-
-![](examples/hello-world-perl/Dockerfile)
-
-```
-$ docker build -t mydocker .
-$ docker run -it --rm mydocker
-Hello from Perl
-```
-
-## Docker: Perl Hello World in script
-{id: docker-perl-script-hello-world}
-
-![](examples/hello-world-perl-script/Dockerfile)
-
-![](examples/hello-world-perl-script/hello_world.pl)
-
-```
-$ docker build -t mydocker .
-$ docker run -it --rm mydocker
-Hello World from Perl script
-```
-
-## Docker: Perl with I/O
-{id: docker-perl-with-io}
-
-![](examples/perl-io/Dockerfile)
-
-![](examples/perl-io/greetings.pl)
-
-```
-$ docker build -t mydocker .
-```
-
-We need to tell Docker that this is an interactive process
-
-```
-docker run -it --rm mydocker
-
-What is your name? Foo
-Hello Foo, how are you today?
-```
-
-## Installing Python in Docker
-{id: installing-python-in-docker}
-
-![](examples/python-1/Dockerfile)
-
-```
-$ docker build -t mydocker .
-
-$ docker run --rm -it mydocker
-# which python3
-```
-
 ## Docker history
 {id: docker-history}
 
@@ -191,29 +135,6 @@ docker history mydocker
 
 ![](examples/dock/history_mydocker.out)
 
-
-## Installing Python in Docker - one layer
-{id: installing-python-in-docker-one-layer}
-
-![](examples/python-2/Dockerfile)
-
-```
-$ docker build -t mydocker2 .
-$ docker history mydocker2
-```
-![](examples/dock/history_mydocker2.out)
-
-## Python CLI in Docker
-{id: python-cli-in-docker}
-
-![](examples/python-3/curl.py)
-
-![](examples/python-3/Dockerfile)
-
-
-```
-$ docker build -t mydocker .
-```
 
 ## Docker: Mounting host directory
 {id: docker-mounting-host-directory}
@@ -267,30 +188,6 @@ $ docker build -t mydocker .
 
 $ docker run --rm   mydocker https://code-maven.com/slides
 ```
-
-## Flask application
-{id: flask-application}
-
-![](examples/flask-development/app.py)
-
-![](examples/flask-development/templates/echo.html)
-
-![](examples/flask-development/requirements.txt)
-
-
-## Flask development
-{id: flask-development}
-
-![](examples/flask-development/Dockerfile)
-
-```
-$ docker build -t mydocker .
-$ docker run -it --name dev --rm -p:5001:5000 -v $(pwd):/opt/  mydocker
-```
-
-Access via [http://localhost:5001/](http://localhost:5001/)
-
-The -it is needed so we can see the log on the command line and we can easily stop the development container.
 
 
 ## Docker with crontab
