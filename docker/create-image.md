@@ -77,6 +77,22 @@ There are two ways to create a Docker image on your computer:
 * Run a container, install stuff, stop it, commit it.
 * Create Dockerfile, run docker build.
 
+## Docker create image by save
+{id: docker-create-image-by-save}
+
+```
+docker run -it debian
+apt-get update
+apt-get install htop
+exit
+
+docker commit 3db0a970e422 USERNAME/debian:1.00
+docker run --rm -it USERNAME/debian:1.00
+```
+
+Check the history!
+
+
 ## Create image from container
 {id: create-image-from-container}
 {i: commit}
