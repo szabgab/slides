@@ -18,62 +18,6 @@
 
 * De-facto standard for containerization.
 
-## Companies using Docker in Israel
-{id: docker-in-israel}
-
-{aside}
-I know that most of the readers of these slides are from around the world, but I run most of my courses in Israel,
-so I have special interest in knowing which companies are using docker and what job titles do the people who use it have.
-At one point I might create similar pages for some other countries as well.
-{/aside}
-
-* [Amazon](https://www.amazon.com/) - Devops Engineer
-* [Amdocs](https://www.amdocs.com/) - DevOps Engineer; DevOps Architect
-* [Amobee](https://www.amobee.com/) - DevOps Engineer
-* [Antelliq](https://www.antelliq.com/) - Senior DevOps Engineer
-* [Armis](https://www.armis.com/) - Devops Engineer; Site Reliability Engineer
-* [AutoLeadStar](https://www.autoleadstar.com/) - DevOps
-* [AU10TIX](https://www.au10tix.com/) - Cloud DevOps Engineer
-* [Axonius](https://www.axonius.com/) - Site Reliability Engineer
-* [BackBox](https://backbox.com/) - DevOps Engineer
-* [Beach Bum](https://www.bbumgames.com/) - DevOps Engineer
-* [Bottomline Technologies](https://www.bottomline.com/) - DevOps Engineer
-* [Camilyo](https://www.camilyo.com/) - DevOps Engineer
-* [Contentsquare](https://contentsquare.com/) - Platform DevOps Team Leader
-* [Cyolo](https://cyolo.io/) - Sr. DevOps Engineer
-* [Cybereason](https://www.cybereason.com/) - DevOps Engineer
-* [DoubleVerify](https://www.doubleverify.com/) - DevOps Tech Leader
-* [Elbit Systems](https://elbitsystems.com/) - Senior DevOps
-* [Fortinet](https://www.fortinet.com/) - DevOps Engineer
-* [Herolo](https://herolo.co.il/) - DevOps Engineer
-* [JFrog](https://jfrog.com/) - CI/CD Devops Engineer; Senior Automation Engineer; Director of Customer DevOps Acceleration EMEA;  Cloud Native DevOps Architect; Cloud Ops Manager
-* [Lemonade](https://www.lemonade.com/) - Senior DevOps Engineer
-* [Kaltura](https://corp.kaltura.com/) - DevOps Engineer
-* [Matrix](https://www.matrix-globalservices.com/) - DevOps Engineer
-* [Minute Media](https://www.minutemedia.com/) - Senior DevOps Engineer
-* [Mobileye](https://www.mobileye.com/) - DevOps Engineer
-* [Moon Active](https://www.moonactive.com/) - Senior DevOps Engineer
-* [Odoro](https://www.odoro.com/) - DevOps Engineer
-* [Outbrain](https://www.outbrain.com/) - DevOps Developer; DevOps Engineer, Monitoring & Observability
-* [proteanTecs](https://www.proteantecs.com/) - DevOps Engineer
-* [Radware](https://www.radware.com/) - C++ Developer
-* [Radwin](https://www.radwin.com/) - DevOps Engineer
-* [RapidAPI](https://rapidapi.com/) - SRE Team Leader
-* [Riskified](https://www.riskified.com/) - Head of DevOps
-* [SimilarWeb](https://www.similarweb.com/) - DevOps Engineer; Site Reliability Engineer
-* [Simplee](https://simplee.com/) - DevOps Engineer
-* [Sisense](https://www.sisense.com/) - Senior DevOps Engineer
-* [SolarEdge](https://www.solaredge.com/) - DevOps Engineer – R&D SW Remote Tools Team
-* [Soluto](https://www.solutotlv.com/) - DevOps Engineer
-* [Spot.IM](https://www.spot.im/) - DevOps Engineer
-* [SQream](https://sqream.com/) - DevOps Engineer
-* [Verint](https://www.verint.com/) - Devops Engineer
-* [Via](https://ridewithvia.com/) - DevOps Engineer
-* [Vimeo](https://vimeo.com/) - DevOps Engineer
-* [Vonage](https://www.vonage.com/) - DevOps Engineer
-* [Wix](https://www.wix.com/) - DevOps Engineer; Infrastructure Engineer
-
-
 ## Docker container vs. image
 {id: docker-container-image}
 {i: image}
@@ -219,6 +163,12 @@ To launch docker daemon from the command line:
 ## Docker Registry
 {id: docker-registry}
 
+{aside}
+A Docker registry is a place where we can store reusable Docker images. There are several public or semi-publick Docker Registries and you can also
+run your own private registry in your organization. The most well known registry is maintained by Docker itself.
+The major cloud providers run their own registries tightly integrated with their other cloud services.
+{/aside}
+
 * Registry where we store our images.
 * Inside a registry there are repositories by user.
 * [DockerHub](https://hub.docker.com/). Free hosting of public images. Paid hosting of private images.
@@ -227,12 +177,93 @@ To launch docker daemon from the command line:
 * ...
 * [Deploy your own registry](https://docs.docker.com/registry/deploying/).
 
+
+## Docker: Hello World
+{id: docker-hello-world}
+
+```
+$ docker run hello-world
+
+
+Unable to find image 'hello-world:latest' locally
+latest: Pulling from library/hello-world
+78445dd45222: Pull complete
+Digest: sha256:c5515758d4c5e1e838e9cd307f6c6a0d620b5e07e6f927b07d05f6d12a1ac8d7
+Status: Downloaded newer image for hello-world:latest
+
+Hello from Docker!
+This message shows that your installation appears to be working correctly.
+
+To generate this message, Docker took the following steps:
+ 1. The Docker client contacted the Docker daemon.
+ 2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
+ 3. The Docker daemon created a new container from that image which runs the
+    executable that produces the output you are currently reading.
+ 4. The Docker daemon streamed that output to the Docker client, which sent it
+    to your terminal.
+
+To try something more ambitious, you can run an Ubuntu container with:
+ $ docker run -it ubuntu bash
+
+Share images, automate workflows, and more with a free Docker ID:
+ https://cloud.docker.com/
+
+For more examples and ideas, visit:
+ https://docs.docker.com/engine/userguide/
+```
+
+## After Hello World
+{id: docker-after-hello-world}
+
+no running containers, but there is one on the disk:
+
+```
+$ docker ps -as
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS                     PORTS               NAMES               SIZE
+f6239f10a6ad        hello-world         "/hello"            8 seconds ago       Exited (0) 7 seconds ago                       lucid_snyder        0 B (virtual 1.84 kB)
+```
+
+There is also an image
+
+```
+$ docker images
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+hello-world         latest              48b5124b2768        6 weeks ago         1.84 kB
+```
+
+
+## Hello World again
+{id: docker-hello-world-again}
+
+This time it will be faster as the images is already on the disk.
+A new container is created, ran, and exited.
+
+```
+$ docker ps -as
+
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS                      PORTS               NAMES               SIZE
+42bbb5394617        hello-world         "/hello"            16 minutes ago      Exited (0) 16 minutes ago                       blissful_knuth      0 B (virtual 1.84 kB)
+f6239f10a6ad        hello-world         "/hello"            21 minutes ago      Exited (0) 21 minutes ago                       lucid_snyder        0 B (virtual 1.84 kB)
+```
+
+## Remove Docker container
+{id: docker-remove-container}
+
+```
+$ docker rm 42bbb5394617
+```
+
+Using the "CONTAINER ID" from the list given by ps.
+
+
 ## Docker busybox
 {id: docker-busybox}
 {i: busybox}
 {i: run}
 
-busybox  (very small)
+{aside}
+**busybox** is a very small image with some essential Linux tools.
+{/aside}
 
 ```
 docker run busybox echo hello world
