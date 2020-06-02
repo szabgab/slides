@@ -41,3 +41,18 @@ What is your name? Hello , how are you today?
 How to run develop Python programs using PyCharm or Vistual Studio Code on Windows and run the code inside a Docker container?
 
 
+Examples in Ubuntu, Centos 7, and other distributions.
+
+Add more stand-alone examples in other languages as well
+Add example to use a persistent volume for the "database" (which can be either json file based or SQLite)
+Each language can have its own chapter to make it easy to jump over the ones the student is not interested in.
+
+
+Docker compose - two simple images that can see each other (ping ? ssh ?)
+Docker one of them is a Redis server the other one is a Redis client?
+(Same with all kinds of other services - MySQL, MariaDB, PostgreSQL, Pulsar)
+The server must have persistent storage.
+One of the is a server the other one is a client application.
+
+Networking IPv4 IPv6 ?
+

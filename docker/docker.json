@@ -9,9 +9,9 @@
         "introduction.md",
         "create-image.md",
         "commands.md",
+        "compose.md",
         "python.md",
         "perl.md",
-        "compose.md",
         "networking.md",
         "appendix.md"
     ]

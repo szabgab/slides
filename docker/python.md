@@ -79,4 +79,26 @@ docker build -t myapp .
 docker run -it --rm -p5001:80 myapp
 ```
 
+## Flask with Redis
+{id: flask-with-redis}
+
+![](examples/flask-redis/app.py)
+![](examples/flask-redis/templates/red.html)
+![](examples/flask-redis/requirements.txt)
+
+
+## Docker compose
+{id: docker-compose-redis-flask}
+
+```
+pip install docker-compose
+```
+
+![](examples/flask-redis/docker-compose.yml)
+![](examples/flask-redis/Dockerfile)
+
+```
+docker-compose up
+```
+
 

@@ -1,4 +1,3 @@
-# cat docker-compose.yml Dockerfile1 Dockerfile2
 version: '3.7'
 services:
   one:

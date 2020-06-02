@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+    app:
+        build: .
+        links:
+            - pulsar
+        entrypoint: tail -f /dev/null
+    pulsar:
+        image: apachepulsar/pulsar:2.5.2
+        container_name: plsr
