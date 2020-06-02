@@ -342,14 +342,6 @@ docker images
 docker rmi busybox
 ```
 
-## Exercise 1
-{id: exercise-1}
-
-* Install Docker.
-* Run busybox.
-* Basically execute all the above commands.
-* Check what other interesting command you can find in docker.
-
 ## Docker remove all the images - prune images
 {id: remove-all-the-images}
 
@@ -358,3 +350,13 @@ docker image prune
 docker image prune -a
 docker image prune -a -f
 ```
+
+## Exercise 1
+{id: exercise-1}
+
+* Install Docker.
+* Run busybox.
+* Basically execute all the above commands.
+* Check what other interesting command you can find in docker.
+
+

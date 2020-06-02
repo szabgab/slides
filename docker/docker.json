@@ -7,7 +7,7 @@
     "version": "1.01",
     "files": [
         "introduction.md",
-        "part2.md",
+        "create-image.md",
         "commands.md",
         "python.md",
         "perl.md",

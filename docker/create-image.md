@@ -1,5 +1,5 @@
-# Part 2
-{id: part-2}
+# Create Docker Image
+{id: create-docker-image}
 
 ## Docker Hub search for images
 {id: docker-hub-images}
@@ -12,7 +12,7 @@
 {id: download-image}
 
 ```
-docker pull ubuntu:19.10
+docker pull ubuntu:20.04
 
 ```
 
@@ -20,11 +20,11 @@ docker pull ubuntu:19.10
 {id: use-ubuntu}
 
 ```
-docker run --rm ubuntu:19.10 echo hello
+docker run --rm ubuntu:20.04 echo hello
 ```
 
 ```
-docker run -it --name ubu ubuntu:19.10
+docker run -it --name ubu ubuntu:20.04
 
 # htop
 # apt-get update
@@ -120,7 +120,7 @@ docker history IMAGE
 to see the layers
 
 ```
-$ docker history ubuntu:19.10
+$ docker history ubuntu:20.04
 ```
 
 ![](examples/dock/history_ubuntu.out)
