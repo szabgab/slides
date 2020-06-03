@@ -5,7 +5,8 @@ services:
         build: .
         links:
             - pulsar
-        entrypoint: tail -f /dev/null
+        stdin_open: true
+        tty: true
     pulsar:
         image: apachepulsar/pulsar:2.5.2
         container_name: plsr

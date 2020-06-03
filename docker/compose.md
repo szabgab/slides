@@ -97,18 +97,4 @@ ping one
 
 ![](examples/interactive-shell-3/docker-compose.yml)
 
-## Python and Pulsar
-{id: python-and-pulsar}
-
-```
-docker run -it -p 6650:6650 -p 8080:8080  apachepulsar/pulsar:2.4.1 bin/pulsar standalone
-docker build -t mydocker .
-docker run --rm -it mydocker bash
-```
-
-![](examples/python-pulsar/docker-compose.yml)
-
-![](examples/python-pulsar/Dockerfile)
-
-![](examples/python-pulsar/pulsar_demo.py)
 

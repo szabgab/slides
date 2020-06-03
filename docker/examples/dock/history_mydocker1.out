@@ -1,5 +1,7 @@
 IMAGE               CREATED             CREATED BY                                      SIZE                COMMENT
-d2e1e0d54ec3        26 seconds ago      /bin/sh -c apt-get update &&     apt-get upg…   65.3MB              
+a9dfdbf389c9        35 seconds ago      /bin/sh -c apt-get install -y python3           38.7MB              
+1b0e3b3c4602        45 seconds ago      /bin/sh -c apt-get upgrade -y                   5.61MB              
+d60a8226c452        50 seconds ago      /bin/sh -c apt-get update                       21.8MB              
 1d622ef86b13        5 weeks ago         /bin/sh -c #(nop)  CMD ["/bin/bash"]            0B                  
 <missing>           5 weeks ago         /bin/sh -c mkdir -p /run/systemd && echo 'do…   7B                  
 <missing>           5 weeks ago         /bin/sh -c set -xe   && echo '#!/bin/sh' > /…   811B                

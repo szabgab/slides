@@ -163,4 +163,22 @@ The command `docker ps -a` shows nothing new.
 $ docker run docker-whale
 ```
 
+## Volumes
+{id: volumes}
+
+* [volumes](https://docs.docker.com/storage/volumes/)
+
+docker run --mount source=myvol,target=/data --rm -it busybox
+
+```
+docker volume create myvol
+docker volume ls
+docker volume inspect myvol
+docker volume rm myvol
+```
+
+
+
+
+
 
