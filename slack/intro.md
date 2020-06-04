@@ -5,7 +5,7 @@
 ## Plan
 {id: plan}
 
-* Join the workspace
+* Join the workspace, for example [code-mave.slack.com](https://code-maven.slack.com)
 * Post a message, reactions, threads.
 
 
