@@ -159,6 +159,8 @@ docker help rm
 docker help rmi
 ```
 
+* [docs](https://docs.docker.com/)
+
 ## Docker: host - daemon - client
 {id: docker-host-daemon-client}
 
