@@ -21,5 +21,7 @@ def save():
 def get():
     field = request.form['field']
     value = r.get(field)
+    if value is None:
+        return render_template('red.html', field=field, value="Not defined yet")
     str_value = value.decode('utf-8')
     return render_template('red.html', field=field, value=str_value)

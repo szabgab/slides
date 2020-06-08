@@ -59,6 +59,14 @@ $ docker history mydocker2
 $ docker build -t mydocker .
 ```
 
+```
+docker run --rm mydocker https://httpbin.org/get
+```
+
+{aside}
+This is a simple implementation of a curl-like script in Python. Wrapped in a Docker container. Firs build the container and then you can run the script.
+{/aside}
+
 ## Flask application
 {id: flask-application}
 
@@ -123,6 +131,8 @@ pip install docker-compose
 ```
 docker-compose up
 ```
+
+* http://localhost:5001/
 
 ## Python and Pulsar
 {id: python-and-pulsar}
