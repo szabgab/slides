@@ -118,7 +118,7 @@ docker run -it --rm -p5001:80 myapp
 ![](examples/flask-redis/requirements.txt)
 
 
-## Docker compose
+## Docker compose Flask and Redis
 {id: docker-compose-redis-flask}
 
 ```
@@ -133,6 +133,22 @@ docker-compose up
 ```
 
 * http://localhost:5001/
+
+## Python Flask and MongoDB
+{id: python-flask-mongodb}
+
+![](examples/flask-mongodb/app.py)
+![](examples/flask-mongodb/templates/main.html)
+![](examples/flask-mongodb/requirements.txt)
+![](examples/flask-mongodb/Dockerfile)
+![](examples/flask-mongodb/docker-compose.yml)
+
+```
+docker-compose up
+```
+
+* http://localhost:5001/
+
 
 ## Python and Pulsar
 {id: python-and-pulsar}
