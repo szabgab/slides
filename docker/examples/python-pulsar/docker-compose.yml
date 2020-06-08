@@ -18,11 +18,11 @@ services:
       /bin/bash -c
       "bin/apply-config-from-env.py conf/standalone.conf
       && bin/pulsar standalone"
-  dashboard:
-    image: apachepulsar/pulsar-dashboard
-    depends_on:
-      - pulsar
-    ports:
-      - "5002:80"
-    environment:
-      - SERVICE_URL=http://pulsar:8080
+#  dashboard:
+#    image: apachepulsar/pulsar-dashboard
+#    depends_on:
+#      - pulsar
+#    ports:
+#      - "5002:80"
+#    environment:
+#      - SERVICE_URL=http://pulsar:8080
