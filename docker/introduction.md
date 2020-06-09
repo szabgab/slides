@@ -257,6 +257,9 @@ This time it will be faster as the images is already on the disk.
 A new container is created, ran, and exited.
 
 ```
+$ docker run hello-world
+...
+
 $ docker ps -as
 
 CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS                      PORTS               NAMES               SIZE
@@ -273,6 +276,12 @@ $ docker rm 42bbb5394617
 
 Using the "CONTAINER ID" from the list given by ps.
 
+## Remove Docker image
+{id: docker-remove-image}
+
+```
+$ docker rmi hello-world
+```
 
 ## Docker busybox
 {id: docker-busybox}
