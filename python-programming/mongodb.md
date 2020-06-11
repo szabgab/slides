@@ -41,7 +41,7 @@ people
 system.indexes
 
 > db.people.find()
-{ "_id" : ObjectId("58a3e9b2962d747a9c6e676c"), "email" : "foo@example.com", "student" : true, 
+{ "_id" : ObjectId("58a3e9b2962d747a9c6e676c"), "email" : "foo@example.com", "student" : true,
     "birthdate" : ISODate("2002-01-02T00:00:00Z"), "name" : "Foo" }
 { "_id" : ObjectId("58a3e9b2962d747a9c6e676d"), "email" : "bar@example.com", "name" : "Bar", "student" : true,
     "birthdate" : ISODate("1998-08-03T00:00:00Z"), "teacher" : false }
@@ -55,23 +55,31 @@ system.indexes
 
 ## Python MongoDB find
 {id: mongodb-find}
+
 ![](examples/mongodb/find.py)
 
 
 ## Python MongoDB find refine
 {id: mongodb-find-refine}
+
 ![](examples/mongodb/find_by_name.py)
 
 
 ## Python MongoDB update
 {id: mongodb-update}
+
 ![](examples/mongodb/update.py)
 
 
 ## Python MongoDB remove (delete)
 {id: mongodb-remove}
+
 ![](examples/mongodb/delete.py)
 
 
+## Python MongoDB replace
+{id: mongodb-replace}
 
+![](examples/mongodb/replace.py)
+![](examples/mongodb/replace.out)
 
