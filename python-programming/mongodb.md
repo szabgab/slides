@@ -83,3 +83,9 @@ system.indexes
 ![](examples/mongodb/replace.py)
 ![](examples/mongodb/replace.out)
 
+## Python MongoDB upsert
+{id: mongodb-replace}
+
+![](examples/mongodb/replace_upsert.py)
+![](examples/mongodb/replace_upsert.out)
+
