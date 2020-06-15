@@ -93,5 +93,5 @@ system.indexes
 {id: python-mongodb-upsert-error}
 
 ![](examples/mongodb/upsert_error.py)
-![](examples/mongodb/upsert_error.our)
+![](examples/mongodb/upsert_error.out)
 
