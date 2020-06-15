@@ -150,8 +150,8 @@ docker-compose up
 * http://localhost:5001/
 
 
-## Python and Pulsar
-{id: python-and-pulsar}
+## Python, Flask and Pulsar
+{id: python-flask-and-pulsar}
 
 ```
 docker run -it -p 6650:6650 -p 8080:8080  apachepulsar/pulsar:2.4.1 bin/pulsar standalone
@@ -164,4 +164,23 @@ docker run --rm -it mydocker bash
 ![](examples/python-pulsar/Dockerfile)
 
 ![](examples/python-pulsar/pulsar_demo.py)
+
+## Python and Pulsar
+{id: python-and-pulsar}
+
+![](examples/python-pulsar-cli/consumer.py)
+![](examples/python-pulsar-cli/docker-compose.yml)
+![](examples/python-pulsar-cli/Dockerfile)
+![](examples/python-pulsar-cli/input.txt)
+![](examples/python-pulsar-cli/mytools.py)
+![](examples/python-pulsar-cli/producer.py)
+![](examples/python-pulsar-cli/requirements.txt)
+
+Run:
+
+```
+docker-compose up
+```
+
+and then check the pulsar.log file
 
