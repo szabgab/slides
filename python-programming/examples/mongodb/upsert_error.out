@@ -1,0 +1,19 @@
+3.10.1
+Traceback (most recent call last):
+  File "examples/mongodb/upsert_error.py", line 12, in <module>
+    collection.update_one({ '_id' : 'stats'}, { '$set': { 'total': 2 } }, { "upsert": True })
+  File "/home/gabor/venv3/lib/python3.8/site-packages/pymongo/collection.py", line 998, in update_one
+    self._update_retryable(
+  File "/home/gabor/venv3/lib/python3.8/site-packages/pymongo/collection.py", line 854, in _update_retryable
+    return self.__database.client._retryable_write(
+  File "/home/gabor/venv3/lib/python3.8/site-packages/pymongo/mongo_client.py", line 1491, in _retryable_write
+    return self._retry_with_session(retryable, func, s, None)
+  File "/home/gabor/venv3/lib/python3.8/site-packages/pymongo/mongo_client.py", line 1384, in _retry_with_session
+    return func(session, sock_info, retryable)
+  File "/home/gabor/venv3/lib/python3.8/site-packages/pymongo/collection.py", line 846, in _update
+    return self._update(
+  File "/home/gabor/venv3/lib/python3.8/site-packages/pymongo/collection.py", line 767, in _update
+    common.validate_boolean("upsert", upsert)
+  File "/home/gabor/venv3/lib/python3.8/site-packages/pymongo/common.py", line 159, in validate_boolean
+    raise TypeError("%s must be True or False" % (option,))
+TypeError: upsert must be True or False

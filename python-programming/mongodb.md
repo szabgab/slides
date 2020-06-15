@@ -89,3 +89,9 @@ system.indexes
 ![](examples/mongodb/replace_upsert.py)
 ![](examples/mongodb/replace_upsert.out)
 
+## Python Mongodb: TypeError: upsert must be True or False
+{id: python-mongodb-upsert-error}
+
+![](examples/mongodb/upsert_error.py)
+![](examples/mongodb/upsert_error.our)
+
