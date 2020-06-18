@@ -23,6 +23,7 @@
 * [Practical intro to Go](https://www.youtube.com/playlist?list=PLQVvvaa0QuDeF3hP0wQoSxpkqgRcgxMqX)
 * [GoDoc](https://godoc.org/)
 * [Concurrency in Go](https://www.youtube.com/watch?v=LvgVSSpwND8)
+* [Golang REST API With Mux](https://www.youtube.com/watch?v=SonwZ6MF5BE)
 
 
 ## Caller filename
