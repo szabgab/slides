@@ -81,16 +81,24 @@ There are two ways to create a Docker image on your computer:
 {id: docker-create-image-by-save}
 
 ```
-docker run -it debian
-apt-get update
-apt-get install htop
-exit
+docker run -it --name ubu ubuntu:20.04
+# apt-get update
+# apt-get install htop
+# exit
+```
 
-docker commit 3db0a970e422 USERNAME/debian:1.00
-docker run --rm -it USERNAME/debian:1.00
+``
+docker container commit CONTAINER IMAGE
+docker container commit ubu myubu:1.00
+docker container run --rm -it myubu:1.00
 ```
 
 Check the history!
+
+```
+docker history ubuntu:20.04
+docker history myubu:1.00
+```
 
 
 ## Create image from container
@@ -99,7 +107,8 @@ Check the history!
 
 ```
 docker container commit CONTAINER IMAGE
-docker container commit ubu mybuntu
+docker container commit ubu USERNAME/myubu:1.00
+docker container run --rm -it USERNAME/myubu:1.00
 ```
 
 
