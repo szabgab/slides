@@ -40,10 +40,10 @@ nav {
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 799px) {
     #links li {
         display: block;
-        margin-top: 15px;
+        margin-top: 20px;
     }
 
     ul #helpbutton {
