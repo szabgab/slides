@@ -140,6 +140,8 @@ def generate_sitemap_xml():
         for page in os.listdir(os.path.join(html_dir, subject)):
             if re.search(r'\.(js|css|yaml)\Z', page):
                 continue
+            if not os.path.isfile(os.path.join(html_dir, subject, page)):
+                continue
             xml += '''   <url>\n'''
             xml += '''      <loc>https://code-maven.com/slides/{subject}/{page}</loc>\n'''.format(subject=subject, page=page)
             xml += '''      <lastmod>{ts}</lastmod>\n'''.format(ts=ts)
