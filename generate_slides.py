@@ -102,7 +102,7 @@ def generate_singles(names, ext):
 def generate_multis(books, ext):
     for book in books:
         print("{} - {} - {}".format(book['dir'], book['filename'], book['outdir']))
-        cmd = '''{executable} "{slider}" --yaml "{root}/{bdir}/{bfilename}" --html --dir "{root}/html/{boutdir}/" --templates "{root}/templates/" --static "{root}/static/" {ext}'''.format(
+        cmd = '''{executable} "{slider}" --yaml "{root}/{bdir}/{bfilename}" --html --dir "{root}/html/{boutdir}/" --templates "{root}/templates/" --static "{root}/static/" --url "https://code-maven.com/slides/{boutdir}" {ext}'''.format(
             executable = sys.executable,
             slider = slider,
             root   = root,
