@@ -212,13 +212,13 @@
     if (obj) {
         obj.addEventListener('click', showhide)
     }
-})();
 
-$(document).ready(function(){
+/*
     var start_xPos;
     var start_yPos;
     var start_time;
     function touch_start(event) {
+        alert("start");
         start_xPos = event.originalEvent.touches[0].pageX;
         start_yPos = event.originalEvent.touches[0].pageY;
         start_time = new Date();
@@ -242,7 +242,9 @@ $(document).ready(function(){
         }
     }
 
-    $("#content").on({ 'touchstart' : touch_start });
-    $("#content").on({ 'touchend' : touch_end });
-});
+    var content = document.getElementById("content");
+    content.setAttribute('ontouchstart', "touch_start(event)");
+    content.setAttribute('ontouchend', "touch_end(event)");
+*/
+})();
 
