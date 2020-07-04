@@ -12,4 +12,6 @@ func main() {
 	fmt.Printf("%v %v %T %T\n", a, *b, a, b)
 	a++
 	fmt.Printf("%v %v %T %T\n", a, *b, a, b)
+	*b = 3
+	fmt.Printf("%v %v %T %T\n", a, *b, a, b)
 }
