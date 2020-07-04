@@ -94,3 +94,35 @@
 {id: unicode}
 
 ![](examples/unicode/unicode.go)
+
+
+## golang create io.reader from string
+{id: create-io-reader-from-string}
+{i: NewReader}
+{i: Read}
+{i: EOF}
+
+{aside}
+Many tools in Golang expect an io.reader object as an input parameter
+What happens if you have a string and you'd like to pass that to such a function?
+You need to create an io.reader object that can read from that string:
+{/aside}
+
+![](examples/create-io-reader/create_io_reader.go)
+![](examples/create-io-reader/create_io_reader.out)
+
+## Parse HTML Token by token
+{id: parse-html-token-by-token}
+
+* [HTML Parser](https://godoc.org/golang.org/x/net/html)
+
+![](examples/parse-html-token/parse_html_token.go)
+![](examples/parse-html-token/parse_html_token.out)
+
+## Parse HTML extract tags and attributes
+{id: parse-html-extract-tags-and-attributes}
+{i: TagName}
+{i: TagAttr}
+
+![](examples/parse-html/parse_html.go)
+![](examples/parse-html/parse_html.out)
