@@ -73,10 +73,16 @@
 
 * see [lists](https://golang.org/pkg/container/list/)
 
-## TODO: queue
+## queue
 {id: queue}
+{i: PushBack}
+{i: Front}
+{i: Remove}
 
 * see [lists](https://golang.org/pkg/container/list/)
+
+![](examples/queue/queue.go)
+![](examples/queue/queue.out)
 
 ## Left over
 {id: left-over}
