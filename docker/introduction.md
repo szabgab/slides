@@ -10,9 +10,9 @@ the environment where QA will test the code that is different from the environme
 {/aside}
 
 {aside}
-This difference can be as simple as having different operating systems, e.g. a developer might use Windows or Linux on her desktop
+This difference can be as simple as having different operating systems, e.g. a developer might use Windows, Linux, or Mac on her desktop
 while the production runs on a Linux box. Even if they would use the same operating system, certain dependencies and libraries
-installed on these machines might be different. There are various ways to reduce the risk that arises from these difference, one of the
+installed on these machines might be different. There are various ways to reduce the risk that arises from these differences, one of the
 latest and best is the use of some kind of virtualization.
 {/aside}
 
@@ -22,13 +22,29 @@ Docker is the most popular system to provide virtualization.
 
 * One of the big problems: Developers, Testers, and Production all have different environments.
 * Dependency hell.
-* Onboarding new developers is hard.
+* On-boarding new developers is hard.
 
 * Makes it easy to have the exact same setup for development, testing, productions.
 * Makes it easy for people to set up their development environment.
 
 ## What is Docker?
 {id: what-is-docker}
+
+{aside}
+Docker is said to be a light-weight Virtual Server. If you are familiar with VirtualBox or VMware you know they allow you to have
+a full copy of any operating system running on to of your main operating system. You can even run multiple of these guest operating
+system on a single host operating system. There is full separation and you can install anything on each one of the guests.
+
+However this is very resource intensive as each one of the guest Virtual Servers needs to run its own Operating system taking up a lot
+of memory and using a lot of CPU cycles.
+
+Docker also allows to run several guests on the same host, but if the host and the guest are the same type (e.g. both are Linux) then
+the guest uses the same kernel as the host and thus requires a lot less additional resources. It has certain limitations such as one service
+per each Docker, but these limitations are usually irrelevant in a real-life environment.
+
+The action packaging a whole application inside a Virtual Server is called containerization. There are several solution to do this, but
+Docker got so popular that it is now the de-facto standard.
+{/aside}
 
 * A light-weight Virtual Server.
 
