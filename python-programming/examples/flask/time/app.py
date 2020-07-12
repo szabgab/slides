@@ -8,5 +8,5 @@ def main():
     return '<a href="/time">time</a>'
 
 @app.route("/time")
-def echo():
+def show_time():
     return str(time.time())

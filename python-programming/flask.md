@@ -31,15 +31,46 @@ source venv/bin/activate
 pip install flask
 ```
 
-## Flask hello world
+## Flask: Hello World
 {id: flask-hello-world}
 
 {aside}
+The de-facto standard first thing to do in programming in every language or framework is to print "Hello World" on the screen.
+This is what we are going to do with Flask now. This is probably the most simple Flask application.
 
+For this we need to create regular Python file, for example **app.py**. I'd recommend you first create a new empty directory and
+put the file inside that directory.
+
+The first thing is to load the **Flask** class from the **flask** module.
+
+Then we create an object representing the whole application. You could use any variable name for this, but the "standard" is to use
+the name **app**.
+
+Then comes the interesting part. We declare a function that will return the HTML page.
+In our example the name of the function is **main**, but the name actually is not important. You could as well call it **some_other_name**.
+The important part is the decorator above it. That decorator means that if someone reaches the path `/` on the web site, this function will
+be executed and whatever it returns will be sent back to the browser. This mapping of a path to a function is called URL **routing** and we'll
+discuss it in detail later on.
+
+For now, let's see how we can use this.
+
+In order to run this we need to set the environment variable **FLASK_APP** to the name of the file without the extension.
+We can also set the **FLASK_DEBUG** environment variable to 1 tuning on the debug-mode, but this is not required for this example.
+
+Then we execute `flask run`.
+
+It is a bit different how you do this on Linux or Mac vs. on MS Windows.
+
+In either case once flask is running you can use your browser to visit your new web application on http://127.0.0.1:5000/
+You can also use `curl` on the command line to see the content of the web page.
+
+Once you have enough, you can hit Ctr-C to stop the program.
 {/aside}
 
 
 ![](examples/flask/hello_world/app.py)
+
+Linux/Mac:
 
 ```
 FLASK_APP=app FLASK_DEBUG=1 flask run
@@ -48,7 +79,7 @@ Visit: http://127.0.0.1:5000/
 curl http://localhost:5000/
 ```
 
-Windows on the command line or in the terminal of Pycharm.
+Windows on the command line or in the terminal of Pycharm:
 
 ```
 set FLASK_APP=app
@@ -56,8 +87,28 @@ set FLASK_DEBUG=1
 flask run
 ```
 
+* To stop it use `Ctrl-C`
+
 ## Flask: testing hello world
 {id: flask-hello-world-test}
+
+{aside}
+Before we go ahead learning how to create more complex web applications we need to learn another very importan feature of Flask.
+
+Flask makes it very easy to test your web application without even running a web server.
+
+For this we created a file called `test_app.py` in the same folder as we have the `app.py` with the following content.
+The name of the files must start with the word `test_`, but otherwise you can pick any filename.
+
+Inside we import the application and we have a test function, again its name must start with `test_`. From the `app`
+we can get the `test_client` which is a represantation of our running web application.
+
+Then we can send in various requests. In this case we sent in an HTTP GET request to the root of the site.
+
+We get back a response object that we can then interrogate with various assertions.
+
+To run this we'll need to install `pytest` and then we can just type in `pytest`. It will find and run the tests.
+{/aside}
 
 ![](examples/flask/hello_world/test_app.py)
 
@@ -68,8 +119,34 @@ pytest
 ## Flask generated page - time
 {id: flask-generated-page-time}
 
+{aside}
+Showing a static text in the previous example was already a success, but we would like to be able to have more dynamic web site.
+In this example we'll see how to display the current time.
+
+We have the same skeleton as in the previous example, but this time the `main` function serving the root path returns some HTML
+that will be displayed as a link to the `/time` path.
+
+We also have a second route mapping the `/time` path to the `show_time` function.
+
+We run the application the same way as before on the command line.
+
+Now if we access the `http://127.0.0.1:5000/` URL we'll see the text `time` that we can click on. When we click on it we arrive to the
+`http://127.0.0.1:5000/time` page that shows the current time. Actually it will show the number of seconds from the epoch,
+which is January 1, 1970, 00:00:00 (UTC).
+
+Something like this: 1594528012.7892551
+{/aside}
 
 ![](examples/flask/time/app.py)
+
+```
+FLASK_APP=app FLASK_DEBUG=1 flask run
+```
+
+## Flask generated page - time tested
+{id: flask-generated-page-time-tested}
+
+
 ![](examples/flask/time/test_app.py)
 
 
