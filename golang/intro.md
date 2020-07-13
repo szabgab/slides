@@ -32,7 +32,7 @@ It provides you control over the types of the variables, but in many cases it do
 {id: why-golang}
 
 {aside}
-The following 2 articles predate the development of Go, but they can ilustrate well one of the big challenges of the software development world to which Go provides a good solution.
+The following 2 articles predate the development of Go, but they can illustrate well one of the big challenges of the software development world to which Go provides a good solution.
 
 Comments from companies using it:
 Golang is faster and allows easy parallel implementation. Besides, services like swan, bee, rabbit-MQ, etc.

@@ -53,7 +53,18 @@ be executed and whatever it returns will be sent back to the browser. This mappi
 discuss it in detail later on.
 
 For now, let's see how we can use this.
+{/aside}
 
+
+![](examples/flask/hello_world/app.py)
+
+## Flask: Run Hello World
+{id: flask-run-hello-world}
+{i: FLASK_DEBUG}
+{i: FLASK_APP}
+{i: run}
+
+{aside}
 In order to run this we need to set the environment variable **FLASK_APP** to the name of the file without the extension.
 We can also set the **FLASK_DEBUG** environment variable to 1 tuning on the debug-mode, but this is not required for this example.
 
@@ -66,9 +77,6 @@ You can also use `curl` on the command line to see the content of the web page.
 
 Once you have enough, you can hit Ctr-C to stop the program.
 {/aside}
-
-
-![](examples/flask/hello_world/app.py)
 
 Linux/Mac:
 
@@ -93,7 +101,7 @@ flask run
 {id: flask-hello-world-test}
 
 {aside}
-Before we go ahead learning how to create more complex web applications we need to learn another very importan feature of Flask.
+Before we go ahead learning how to create more complex web applications we need to learn another very important feature of Flask.
 
 Flask makes it very easy to test your web application without even running a web server.
 
@@ -101,7 +109,7 @@ For this we created a file called `test_app.py` in the same folder as we have th
 The name of the files must start with the word `test_`, but otherwise you can pick any filename.
 
 Inside we import the application and we have a test function, again its name must start with `test_`. From the `app`
-we can get the `test_client` which is a represantation of our running web application.
+we can get the `test_client` which is a representation of our running web application.
 
 Then we can send in various requests. In this case we sent in an HTTP GET request to the root of the site.
 

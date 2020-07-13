@@ -58,10 +58,10 @@ Docker got so popular that it is now the de-facto standard.
 {i: container}
 
 {aside}
-In the world of Docker an **image** is fixed version of an installed application while a **container** is a running copy of the image.
+In the world of Docker an **image** is a fixed version of an installed application while a **container** is a running copy of the image.
 
-A Docker images is similar to an ISO image in the world of VirtualBox from which we can create an installation and then run it.
-The Docker conatainer in this description would be similar to the already virtual hard-disk a Virtual Serve has.
+A Docker image is similar to an ISO image in the world of VirtualBox from which we can create an installation and then run it.
+The Docker container in this description would be similar to the already virtual hard-disk a Virtual Server has.
 
 
 You can download Docker images and you can build your own images based on already existing ones by installing more software on it or copying files to it.
@@ -71,7 +71,7 @@ When you run a Docker **image**, Docker creates a copy of it and we start to cal
 You can still install more applications on a container, but usually it is done only during development time.
 
 Some people also try to use the class-instance analogy to the image-container pair. I am not sure how close is that, but that too is
-just a proximation.
+just an approximation.
 {/aside}
 
 container = runtime of an image
