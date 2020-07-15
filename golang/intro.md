@@ -84,9 +84,9 @@ but as far as I know it does not have a good solution for the GUI part.
 
 {aside}
 It might be important for you to know that there are a number of very important and high-profile Open Source projects written in Go.
-There are also thousands of other, much smaller Open Source project that you can find primarily on GitHub.
+There are also thousands of other, much smaller Open Source projects that you can find primarily on GitHub.
 
-One of my recommendations for when you are learning Go (or any other programming language) is to find some Open Source projects in areas where you interested and
+One of my recommendations for when you are learning Go (or any other programming language) is to find some Open Source projects in areas where you are interested and
 start reading their code. Try to make some changes and send them back as contributions. That can be a really nice way to get involved in something real with the pressure you might have when you work on a project in a company.
 {/aside}
 
