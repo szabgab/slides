@@ -1,7 +1,7 @@
 # PSGI
 {id: psgi}
 
-## PSGI Cookboo
+## PSGI Cookbook
 {id: psg-cookbook}
 
 * [How to build a dynamic web application using PSGI](https://perlmaven.com/how-to-build-a-dynamic-web-application-using-psgi)

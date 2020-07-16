@@ -40,6 +40,7 @@
         "ipc.md",
         "process.md",
         "psgi.md",
+        "dancer.md",
         "win32.md"
     ]
 }
