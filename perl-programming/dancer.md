@@ -31,5 +31,5 @@ Then the `to_app` call basically provides a running application to `plack` which
 ![](examples/dancer/hello_world/app.psgi)
 
 * Run the application by `cd`-ing into its directory and then typing `plackup`
-* Then you can fixit http://localhost:5000
+* Then you can see it at `http://localhost:5000`
 
