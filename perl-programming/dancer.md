@@ -20,7 +20,7 @@ Create an empty directory where you can put your files.
 
 Create a file called `app.psgi` in that directory with the following content.
 
-The `get` keyword create a so-called route that maps a URL path onto an anonymous subroutine. In this
+The `get` keyword creates a so-called route that maps a URL path onto an anonymous subroutine. In this
 case we mapped the root page `/`.
 
 Whatever the function returns will be returned to the browser. By default as HTML.
