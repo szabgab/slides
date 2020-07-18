@@ -1,1 +1,1 @@
-../../../python-programming/examples/seaborn/tips.py
+../../../python/examples/seaborn/tips.py
