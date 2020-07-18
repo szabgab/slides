@@ -35,7 +35,7 @@ perl/testing.json,test-automation-using-perl
 php-programming/php.json,php-programming
 programming/programming.json,programming
 python-mocking/python.json,python-mocking
-python-programming/python.json,python-programming
+python/python.json,python
 ruby-programming/ruby.json,ruby-programming
 scratch/scratch.json,scratch
 slack/slack.json,slack

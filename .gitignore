@@ -22,16 +22,16 @@ sample.db
 *.dll
 *.exe
 
-/python-programming/examples/package/*/dist/
-/python-programming/examples/package/*/mymath.egg-info/
+/python/examples/package/*/dist/
+/python/examples/package/*/mymath.egg-info/
 
-/python-programming/examples/package/build/
-/python-programming/examples/package/dist/
-/python-programming/examples/package/*.spec
+/python/examples/package/build/
+/python/examples/package/dist/
+/python/examples/package/*.spec
 
 .mypy_cache/
 venv/
 
-/python-programming/examples/pytest/cases/report.json
-/python-programming/examples/pytest/cases/report.xml
+/python/examples/pytest/cases/report.json
+/python/examples/pytest/cases/report.xml
 
