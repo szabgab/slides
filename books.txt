@@ -32,7 +32,7 @@ pair-programming/pair.json,pair-programming
 perl-intro/perl.json,perl-intro
 perl/perl.json,perl
 perl/testing.json,test-automation-using-perl
-php-programming/php.json,php-programming
+php/php.json,php
 programming/programming.json,programming
 python-mocking/python.json,python-mocking
 python/python.json,python
