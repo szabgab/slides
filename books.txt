@@ -16,7 +16,7 @@ github-ci/github-ci.json,github-ci
 golang/go.json,golang
 groovy/groovy.json,groovy
 java-programming/java.json,java-programming
-javascript-programming/javascript.json,javascript-programming
+javascript/javascript.json,javascript
 jenkins/jenkins.json,jenkins
 jenkins-intro/jenkins.json,jenkins-intro
 linkedin/linkedin.json,linkedin
