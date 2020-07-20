@@ -33,3 +33,34 @@ Then the `to_app` call basically provides a running application to `plack` which
 * Run the application by `cd`-ing into its directory and then typing `plackup`
 * Then you can see it at `http://localhost:5000`
 
+
+## Testing Hello World of Dancer
+{id: testing-hello-world-of-dancer}
+
+{aside}
+It is great that we can create a web page using Dancer, but if our application has any value to us
+then we will want to make sure it works as expected and that it continues to work even after some changes were made.
+
+The fastest and cheapest way to do this to write tests. Unit-, integration-, acceptance tests, name them as you like,
+the important part is that they verify that the code works (and fails) as expected.
+
+As this is such an integral part of writing code, we won't delay writing test to the end of the project. We jump in right now.
+
+Next to our `app.psgi` we create a file called `test.t` with the following content.
+{/aside}
+
+![](examples/dancer/hello_world/test.t)
+
+{aside}
+We can then run it by tping in `prove -v test.t` on the command line. this is going to be the output:
+{/aside}
+
+```
+prove -v test.t
+```
+
+* [Plack::Test](https://metacpan.org/pod/Plack::Test)
+* [HTTP::Response](https://metacpan.org/pod/HTTP::Response)
+
+![](examples/dancer/hello_world/test.out)
+
