@@ -44,7 +44,7 @@ then we will want to make sure it works as expected and that it continues to wor
 The fastest and cheapest way to do this to write tests. Unit-, integration-, acceptance tests, name them as you like,
 the important part is that they verify that the code works (and fails) as expected.
 
-As this is such an integral part of writing code, we won't delay writing test to the end of the project. We jump in right now.
+As this is such an integral part of writing code, we won't delay writing tests to the end of the project. We jump in right now.
 
 Next to our `app.psgi` we create a file called `test.t` with the following content.
 {/aside}
