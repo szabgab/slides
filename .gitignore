@@ -35,3 +35,5 @@ venv/
 /python/examples/pytest/cases/report.json
 /python/examples/pytest/cases/report.xml
 
+docker/examples/crontab/dates.txt
+docker/examples/crontab2/dates.txt
