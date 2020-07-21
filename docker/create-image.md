@@ -229,13 +229,13 @@ docker container run --rm -it myubu:1.00
 We went over this step-by-step earlier, but let's have all the step in one place:
 {/aside}
 
-* Run container
+* Run container interactively (based on Ubuntu 20.04, call it ubu)
 
 ```
 docker run -it --name ubu ubuntu:20.04
 ```
 
-* Install packages, copy or create files, exit.
+* Install packages, copy or create files, etc..., exit.
 
 ```
 # apt-get update
@@ -244,13 +244,13 @@ docker run -it --name ubu ubuntu:20.04
 # exit
 ```
 
-* Create the image from the container
+* Create the image called myubu from the container called ubu
 
 ```
 docker container commit ubu myubu:1.00
 ```
 
-* Run a container based on the new image:
+* Run a container based on the new image called myubu:
 
 ```
 docker container run --rm -it myubu:1.00
@@ -271,8 +271,7 @@ docker history myubu:1.00
 * Run conatiner
 
 ```
-docker run -it --name NAME BASEC_ONTAINER:BASE_TAG
-docker container run --rm -it USERNAME/myubu:1.00
+docker run -it --name NAME BASE_CONTAINER:BASE_TAG
 ```
 
 * install stuff in the container, copy stuff to the container, exit
@@ -280,17 +279,55 @@ docker container run --rm -it USERNAME/myubu:1.00
 * Create image from container
 
 ```
-docker container commit CONTAINER IMAGE_NAME:TAG
+docker container commit CONTAINER NEW_IMAGE_NAME:TAG
 ```
 
+* Better yet, create the container under your Docker Hub username:
+
 ```
-docker container commit CONTAINER USERNAME/IMAGE_NAME:TAG
+docker container commit CONTAINER USERNAME/NEW_IMAGE_NAME:TAG
 ```
 
+* To verify, run a container based on the new image (with or without username):
+
+```
+docker container run --rm -it NEW_IMAGE_NAME:TAG
+docker container run --rm -it USERNAME/NEW_IMAGE_NAME:TAG
+```
 
 ## Docker: Empty Ubuntu
 {id: docker-empty-ubuntu}
 {i: FROM}
+
+{aside}
+Creating new Docker images manually, as we saw earlier, is fun as you can experiment a lot and you get immediate feedback
+as you intsall more things in the running container. However this is not easily reproducible. For one thing it happens to
+me a lot that I install a package and later I find out I probbaly don't need it.
+
+Once you have a good grasp on what do you really need in that image, you can create a set of instructions in
+a Dockerfile that will create the image for you.
+
+There are many advantages to this approach.
+
+* You get an instant description of what is really in the image.
+* It can be reproducible, so you or someone else can later rebuild the same image.
+* As it is a plain text file you can put it in version control and track the changes.
+* It is very small, compared to the size of the image.
+
+In this very first example we will create a new image that is based on and is identical to the Ubuntu 20.04 image.
+Without any extra.
+
+For this we create a new directroy and in that directory we create a file called `Dockerfile` and with a single line in it: `FROM ubutu:20.04`.
+Every Dockerfile must declare the image it is based on. We don't have any more commands in the Dockerfile so we don't add anything to
+this image.
+
+cd into the directory where we have this file and run `docker build -t mydocker .` (The dot at the end of the command is important.)
+
+This will create an image called `mydocker` using the `Dockerfile` in the current directory and using all the context of this directory (indicated by the dot).
+We'll discuss the "context" in a bit, for now it only contains the Dockerfile. That's why we created this in a new empty directory.
+
+Once the image is created we can use it exactly as we used the original Ubuntu image.
+{/aside}
 
 ![](examples/from/Dockerfile)
 
@@ -303,16 +340,106 @@ $ docker run -it --rm mydocker
 {id: docker-ubuntu-hello-world}
 {i: CMD}
 
+{aside}
+Having an image identical to some already existing image does not give us a lot of value, so let's create make another small step.
+Let's add another instruction to the Dockerfile called `CMD`. The content of the `CMD` line is not executed when we build the image.
+Whatever comes after this `CMD` will be executed when we start the Docker container based on this image. Unless we override it.
+
+In our case we just use the shell command `echo` to print "hello world" to the screen.
+{/aside}
+
 ![](examples/hello-world/Dockerfile)
 
 ```
 $ docker build -t mydocker .
-$ docker run -it --rm mydocker
+```
+
+{aside}
+Once the image is ready we can run it and it will print out "hello world" as expected. You could distribute this image to show that you made it!
+Well, we have not seen yet how to distribute the image, but aside of that everything is fine.
+{/aside}
+
+```
+$ docker run --rm mydocker
 hello world
 ```
 
+{aside}
+The user of this new image can provide her own command on the command line, either another echo command or something
+totally different such as the `pwd` below.
+{/aside}
+
+```
+docker run --rm mydocker echo Other text
+Other text
+```
+
+```
+docker run --rm mydocker pwd
+/
+```
+
+If we try to run it in interactive mode by supplying the `-it` flags, we'll find out that Docker still runs or `CMD` and exits.
+In order to really get into the interactive shell of this container we need to override the default `CMD` by a call to `bash`.
+
+```
+docker run -it --rm mydocker bash
+```
+
+## Docker curl
+{id: docker-curl}
+
+{aside}
+In the previous example we saw that we can use commands other than `echo`, but what if we would like to use `curl` for example?
+It will fail because `curl` is not installed in the image.
+{/aside}
+
+```
+$ docker run  --rm mydocker curl https://code-maven.com/
+docker: Error response from daemon: OCI runtime create failed: container_linux.go:349: starting container process caused "exec: \"curl\": executable file not found in $PATH": unknown.
+```
+
+{aside}
+To install it we need to add `RUN` commands. (Yeah, I know the name might be a bit confusing, but think about it from the point of view of the build process.
+We would like to run something during the build process.)
+
+In order to install the `curl` package in Ubuntu we need to execute the `apt-get install -y curl` command.
+(The `-y` flag is there so `apt-get` will not ask for confirmation.)
+However before we can execute that command we need to download the list of all the available packages. We do that by running (here is that word!)
+the `apt-get update` command.
+
+We don't have a `CMD` as we don't have a default operation.
+{/aside}
+
+![](examples/curl/Dockerfile)
+
+{aside}
+We can build the image the same way we built the previous one.
+{/aside}
+
+```
+$ docker build -t mydocker .
+```
+
+{aside}
+Then we can run it. This time it will execute the `curl` command.
+{/aside}
+
+```
+$ docker run  --rm mydocker curl https://code-maven.com/
+```
+
+
 ## Docker history
 {id: docker-history}
+
+{aside}
+Each Docker images is built by layers upon layers.
+
+The `docker history` command can show you these layers.
+
+Here you can see that the Ubuntu image we have downloaded from the Docker Hub has 5 layers.
+{/aside}
 
 ```
 docker history IMAGE
