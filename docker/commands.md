@@ -4,34 +4,56 @@
 ## Dockerfile commands
 {id: dockerfile-commands}
 
-* FROM
-* COPY
+{aside}
+There are not a lot of vailable command that you can use in a Dockerfile. We are going to covert them one-by-one briefly.
+{/aside}
+
+* [documentation](https://docs.docker.com/engine/reference/builder/)
+
 * ADD
-* RUN
+* ARG
 * CMD
+* COPY
+* FROM
 * ENTRYPOINT
 * ENV
-* [WORKDIR](https://docs.docker.com/engine/reference/builder/#workdir)
+* RUN
+* WORKDIR
 
 
 ## Docker FROM
 {id: docker-from}
+{i: FROM}
 
 * Declare the base-image.
-* This is how we start all the Dockerfiles.
+* This is how we start all the Dockerfiles. (thought we could put some ARGs before)
+* [FROM](https://docs.docker.com/engine/reference/builder/#from)
 
 ## Docker COPY
 {id: docker-copy}
+{i: COPY}
 
-COPY from host to image
+* [COPY](https://docs.docker.com/engine/reference/builder/#copy)
+* COPY from host to image
+
+## Docker ARG
+{id: docker-arg}
+{i: ARG}
+
+* [ARG](https://docs.docker.com/engine/reference/builder/#arg)
 
 ## Docker ADD
 {id: docker-add}
+{i: ADD}
 
-ADD is like COPY but it can do more magic (can download files from the internet, automatically unpacks zipped files)
+* [ADD](https://docs.docker.com/engine/reference/builder/#add)
+* ADD is like COPY but it can do more magic (can download files from the internet, automatically unpacks zipped files)
 
 ## Docker RUN
 {id: docker-run}
+{i: RUN}
+
+* [RUN](https://docs.docker.com/engine/reference/builder/#run)
 
 Execute some command during the creation of the Docker image.
 
@@ -43,6 +65,9 @@ RUN apt-get install -y some-package
 
 ## Docker CMD
 {id: docker-cmd}
+{i: CMD}
+
+* [CMD](https://docs.docker.com/engine/reference/builder/#cmd)
 
 CMD - the default command when the container starts
 
@@ -52,10 +77,21 @@ The CMD only runs when we run the container!
 
 ## Docker ENTRYPOINT
 {id: docker-entrypoint}
+{i: ENTRYPOINT}
+
+* [ENTRYPOINT](https://docs.docker.com/engine/reference/builder/#entrypoint)
 
 ## Docker ENV
 {id: docker-env}
+{i: ENV}
 
+* [ENV](https://docs.docker.com/engine/reference/builder/#env)
+
+## Docker WORKDIR
+{id: docker-workdir}
+{i: WORKDIR}
+
+* [WORKDIR](https://docs.docker.com/engine/reference/builder/#workdir)
 
 ## Docker upload and publish
 {id: docker-upload}
