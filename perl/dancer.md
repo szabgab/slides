@@ -86,15 +86,15 @@ prove -v test.t
 {id: showing-the-current-time-with-dancer}
 
 {aside}
-In the first exmple we saw how to show a simple page that does not change between executions.
+In the first example we saw how to show a simple page that does not change between executions.
 
 We now go a small step further and show a page that will show a different output every time we access it.
 
-Still noting fancy, just showing the current date and time.
+Still nothing fancy, just showing the current date and time.
 
 We could of course use the built-in `time` function or the also built-in `localtime` function, but I wanted to
 show something a bit nicer. So we are using the DateTime module to generate an object representing the current timestamp
-and then we use the `strftime` method to create nice-looking timestamp.
+and then we use the `strftime` method to create a nice-looking timestamp.
 
 Dancer-wise we don't do much, we just return the resulting string.
 {/aside}
