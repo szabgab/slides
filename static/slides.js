@@ -65,7 +65,7 @@
             case 65:
                 // a
                 //
-                document.location.href = "admin.html?frompath=" + baseName(window.location.pathname);
+                document.location.href = "admin"  + get_extension() + "?frompath=" + baseName(window.location.pathname);
                 break;
 
             case 66:
