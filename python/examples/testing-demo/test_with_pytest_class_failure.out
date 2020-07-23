@@ -1,0 +1,23 @@
+============================= test session starts ==============================
+platform linux -- Python 3.8.2, pytest-5.4.2, py-1.8.1, pluggy-0.13.1
+rootdir: /home/gabor/work/slides/python/examples/testing-demo
+plugins: flake8-1.0.6
+collected 2 items
+
+test_with_pytest_class_failure.py .F                                     [100%]
+
+=================================== FAILURES ===================================
+___________________________ TestMath.test_more_math ____________________________
+
+self = <test_with_pytest_class_failure.TestMath object at 0x7fcddf82b7c0>
+
+    def test_more_math(self):
+>       assert mymath.add(3, 3) == 6
+E       assert 9 == 6
+E        +  where 9 = <function add at 0x7fcddf82a0d0>(3, 3)
+E        +    where <function add at 0x7fcddf82a0d0> = mymath.add
+
+test_with_pytest_class_failure.py:8: AssertionError
+=========================== short test summary info ============================
+FAILED test_with_pytest_class_failure.py::TestMath::test_more_math - assert 9...
+========================= 1 failed, 1 passed in 0.03s ==========================

@@ -62,6 +62,29 @@ and you can verify if everything still works as earlier or if a bug appeared.
 
 * Fixture + Input = Expected Output + Bugs
 
+## Testing demo tools
+{id: testing-demo-tools}
+
+{aside}
+In these examples we are going to see 3 Python modules that can be used for testing.
+{/aside}
+
+* doctest
+* unittest
+* pytest
+
+## Testing demo methodology
+{id: testing-demo-methodology}
+
+{aside}
+We won't delve deep into the capabilities of these testing libraries. We will only us a very simple example to
+show how to write a passing and a failing test.
+{/aside}
+
+* Have a simple AUT - Application Under Test with an obvious bug
+* Write a passing test
+* Write a failing test
+
 
 ## Testing demo - AUT - Application Under Test
 {id: testing-demo-aut}
@@ -70,6 +93,15 @@ Given the following module with a single function, how can we use this function 
 we test it?
 
 ![](examples/testing-demo/mymath.py)
+
+{aside}
+You probably noticed that our function was called `add` and so the expectation is that it will be able to add two numbers.
+However the implementation has a bug. It actually multiplies the two numbers. I know it is a very obvious issue,
+but it is great as it allows us to see the mechanics of testing without getting distracted by
+a complex implementation and a complex problem.
+
+Rest assured, the mechanism of the testing would be the same even if our function was calculating the moon-landing trajectory.
+{/aside}
 
 
 ## Testing demo - use the module
@@ -97,51 +129,121 @@ python use_mymath.py 2 2
 4
 ```
 
-## Testing demo: doctets
-{id: testing-demo-doctes}
+## Testing demo: doctest
+{id: testing-demo-doctest}
 {i: doctest}
+{i: $?}
+{i: %ERRORLEVEL%}
 
 {aside}
-The first way we look at is using the "doctest" module. It is a very nice tool that allows us to test our code
+The first way we are going to look at is using the "doctest" module. It is a very nice tool that allows us to test our code
 and to also verify that our documentation is aligned with the code.
-In addition to that doctest is a standard module, it comes with every installation of Python so you don't need
+In addition to that, doctest is a standard module. It comes with every installation of Python so you don't need
 to worry about installation.
 
 The big drawback is that it is not really useful for anything complex.
 
-In Python if you add a string immediately after the declaration of the function - so the line after the "def" statement -
-that string becomes the documentation of the function.
+So how does it work?
+
+In Python if you add a string immediately after the declaration of the function - meaning the line immediately after the "def" statement -
+that string becomes the documentation of the function. It can be a one-line string or a multi-line string using tripple-quotes.
+
+In the documentation you can write free text and you can also write example as if one was using the interactive shell of Python.
+For these example we have code snippets preceeded with 3 greater-than signs, the prompt of the in Python interactive shell. The line immediately
+after that contains the result that you'd see if you actually typed in the expression into the interactive shell.
+
+Doctest will read your source code, look at all the functions you have and for each function it will look at the documentation of the function.
+If in the documentation it sees 3 greater-than signs then it will take the content of that line as code to be executed and the next line will be the
+expected result. Doctest will execute each code snippet and compare it with the expected results. Effectively checking if the examples in
+your documentation and the implementation are aligned.
+
+We can run doctest in the following way: `python -m doctest mymath.py`. If all the tests pass, then this execution will print nothing.
+This lack of positive feedback is a bit strange so you might want to check the so-called "exit code" of the execution. On Unix systems such as Linux and OSX,
+you'd inspect the `$?` environment variable while on MS Windows you need to inspect the `%ERRORLEVEL%` variable. On all of these systems you can use
+the `echo` command to inspect the variables. In either case 0 indicates succcess.
 {/aside}
 
-![](examples/testing-demo/mymath_doctest_first.py)
+![](examples/testing-demo/doctest_first/mymath.py)
 
 ```
-python -m doctest mymath_doctest_first.py
-echo $?
-0
-
-echo %ERRORLEVEL%
+$ python -m doctest mymath.py
+$ echo $?
 0
 ```
 
-![](examples/testing-demo/mymath_doctest.py)
+```
+> python -m doctest mymath.py
+> echo %ERRORLEVEL%
+0
+```
+
+## Testing demo: doctest with failure
+{id: testing-demo-doctets-with-failure}
+
+{aside}
+Of course we know that our code is not perfect (to say the least) so at one point someone will complain about the
+incorrect results received, for example in case they try to add 3 and 3. Before running and fixing the code however
+it is better to write a test case with the expected correct result that will fail.
+
+So we added another example to the documentation.
+
+If we run the same command as we did earlier we'll get an extensive output on the screen and the exit code
+with have some value different from 0.
+
+At this point you'd probably also go and fix the code, but you have also increased the number of tests and
+eliminated the possibility of this failure to return unnoticed.
+{/aside}
+
+![](examples/testing-demo/doctest_fail/mymath.py)
 
 ```
-python -m doctest mymath_doctest.py
-echo $?
+$ python -m doctest mymath.py
+$ echo $?
 1
 ```
 
-![](examples/testing-demo/mymath_doctest.out)
+```
+> python -m doctest mymath.py
+> echo %ERRORLEVEL%
+1
+```
+
+![](examples/testing-demo/doctest_fail/mymath.out)
+
 
 ## Testing demo: Unittest success
 {id: testing-demo-unittest}
+{i: unittest}
+{i: TestCase}
+{i: assertEqual}
+
+{aside}
+Python comes with a built-in module for writing tests. Its name is `unittest` which might be a bit confusing
+as this module can be used to any kind of more complex feature-tests and other modules can be also used to write
+so called unit-tests.
+
+Unlike the doctests that were part of the actual code, the unittest library calls for separate test files.
+It is recommended that the names of files start with the `test_` prefix as that will make it easy for the various testing
+tools to locate them.
+
+Inside the file you'd need to import both the `unittest` module and the module that we are testing. `mystest` in this case.
+
+We need a class with a name that starts with `Test` and inherits from `unittest.TestCase`. In the class we can have one or more
+testing function. Each one starts with a `test_` prefix.
+Inside the function we can call the function that we are testing and we can compare the result returned by it to some expected value.
+We can compare them in various way using the various assert-methods of the unittest.TestCase. In this example we used the `assertEqual`
+method as we wanted to make sure the actual return value equals to the expected value.
+
+We can run the tests using `python -m unittest test_one_with_unittest.py`. It will have some output on the screen indicating all the tests
+passed. The exit-code will be 0 as expected.
+{/aside}
+
 
 ![](examples/testing-demo/test_one_with_unittest.py)
 
 ```
-python -m unittest test_one_with_unittest.py
-echo $?
+$ python -m unittest test_one_with_unittest.py
+$ echo $?
 0
 ```
 
@@ -150,11 +252,30 @@ echo $?
 ## Testing demo: Unittest failure
 {id: testing-demo-unittest-failure}
 
+{aside}
+When we get the report on the incorrect results when adding 3 and 3, we can added another test-case.
+We could have added another assertion to the `test_math` function or we could have created a separare
+class with its own function, but in this case we opted creating a separate test-function.
+
+We won't go into the pros and contras of each strategy now as we are only interested in the basic technique.
+
+If we run the tests now the output will indicate that it ran 2 test-cases and one of them failed. It even shows
+use some details about the expected value and the actual value that can be really useful understanding the
+source of the problem.
+
+Note there is also `.F` in the output. The dot indicates the test-function that passed, the F indicates
+the test-function that failed.
+
+The exit code is again different from 0.
+
+BTW this exit-code is used by the various CI systems to understand the results of the tests.
+{/aside}
+
 ![](examples/testing-demo/test_with_unittest.py)
 
 ```
-python -m unittest test_with_unittest.py
-echo $?
+$ python -m unittest test_with_unittest.py
+$ echo $?
 1
 ```
 
@@ -163,23 +284,87 @@ echo $?
 
 ## Testing demo: pytest using classes
 {id: testing-demo-pytest-class}
+{i: pytest}
+{i: assert}
+
+{aside}
+In our third example we are going to use the `pytest` module. The only drawback of the pytest module is that it does not
+come with the installation of Python itself. It is not a huge issue though as you probably install hundreds of other
+modules as well.
+
+These days Pytest seem like the most popular testing library for Python.
+
+We'll have several example using pytest.
+
+In order to use it you'd create a file with a name that starts with `test_` prefix. We need to import the module we are testin
+but we don't need to import pytest. Actually we don't even use pytest inside the code. (At least not in the simple use-cases.)
+In the file you need to create a class starting with `Test`, but this class does not need to inherit from any special class.
+In the class we can have one or more test-function starting with the prefix `test_`.
+In the function we call the function we are testing and we compare the results to the expected results.
+
+We use the built-in `assert` function of Python to check if the results was true.
+
+No need to learn various specilized asser-statement as we had in the `unittest` module.
+
+We run the test using the `pytest` command.
+
+We'll get some output. Here too the single dot after the name of the test file indicates that there was one successful test function.
+
+The exit-code of this execution in 0 as was the case with unittest.
+{/aside}
+
 
 ![](examples/testing-demo/test_with_pytest_class.py)
 
 ```
-pytest test_with_pytest_class.py
+$ pytest test_with_pytest_class.py
+$ echo $?
+0
 ```
 
 ![](examples/testing-demo/test_with_pytest_class.out)
+
+## Testing demo: pytest using classes - failure
+{id: testing-demo-pytest-class-failure}
+
+{aside}
+Here too we can add additional test-functions to the same test-class.
+Executing `pytest` will print `.F` indicating one passing test-function and one failing test function.
+We'll get detailed explanation where the failure happened.
+
+The exit-code will be different from 0 helping the CI systems and any other external system
+to know that the tests have failed.
+{/aside}
+
+![](examples/testing-demo/test_with_pytest_class_failure.py)
+
+```
+$ pytest test_with_pytest_class_failure.py
+$ echo $?
+1
+```
+
+![](examples/testing-demo/test_with_pytest_class_failure.out)
 
 
 ## Testing demo: pytest without classes
 {id: testing-demo-pytest}
 
+{aside}
+In the previous example we used a test-class to write our tests, but in reality in many cases
+we don't need the classes. We could just as well write plain test-functions as in this example.
+
+Test-functions without a class around them are easier to write and understand and they are a lot
+simplert to graps. So unless you really need the features a class can provide I'd recommend you use
+functions only. After all our test code should be a lot more simple than our application code.
+{/aside}
+
 ![](examples/testing-demo/test_with_pytest.py)
 
 ```
-pytest test_with_pytest.py
+$ pytest test_with_pytest.py
+$ echo $?
+1
 ```
 ![](examples/testing-demo/test_with_pytest.out)
 
@@ -187,19 +372,30 @@ pytest test_with_pytest.py
 ## Testing demo: pytest run doctests
 {id: testing-demo-pytest-run-doctests}
 
-```
-pytest --doctest-modules mymath_doctest_first.py
-pytest --doctest-modules mymath_doctest.py
-```
+{aside}
+The nice thing about `pytest` that it can also run all the doctests in your module.
+So you can start your testing journey with doctest and later switch to pytest.
 
+You can easily test your examples in your documentation.
+{/aside}
+
+```
+$ pytest --doctest-modules mymath.py
+```
 
 ## Testing demo: pytest run unittest
 {id: testing-demo-pytest-run-unittests}
 
-```
-pytest -v test_with_unittest.py
-```
+{aside}
+Pytest can also run the unit-test. You don't even need to tell it anything special.
+It will introspect the test code and if it notices tests-classes that are based on unittest
+it will execute them using the unittest module.
+{/aside}
 
+```
+$ pytest test_one_with_unittest.py
+$ pytest test_with_unittest.py
+```
 
 ## Exercise: Testing demo
 {id: exercise-testing-demo}
