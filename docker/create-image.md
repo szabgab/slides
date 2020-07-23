@@ -484,10 +484,10 @@ behavior just as we had with `echo`?
 We could include something like `CMD curl https://code-maven.com` in the Dockerfile, but then it would default to
 download the given page.
 
-We could use `CMD curl` and hope to pass the URL to the `docker run` command, but the parameters given on the command-line will override everythin we have in CMD.
+We could use `CMD curl` and hope to pass the URL to the `docker run` command, but the parameters given on the command-line will override everything we have in CMD.
 
-However there is another tool called `ENTRYPOINT`. It is very similar to `CMD`, but in certain situation it allows the *addition* of parameters
-instead the overwriting of parametres.
+However there is another tool called `ENTRYPOINT`. It is very similar to `CMD`, but in certain situations it allows the *addition* of parameters
+instead of the overwriting of parameters.
 {/aside}
 
 ![](examples/curl-command/Dockerfile)
