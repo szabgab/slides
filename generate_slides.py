@@ -188,8 +188,14 @@ def generate_index(ext):
 def copy_static_files():
     for entry in os.listdir(os.path.join(root, 'static')):
         shutil.copy(os.path.join(root, 'static', entry), os.path.join(root, 'html'))
-    shutil.copy(os.path.join(root, 'static', 'admin.html'), os.path.join(root, 'html', 'admin'))
+
     # we create an extra copy of the admin file because on the server we need it without the html
+    html_dir = os.path.join(root, 'html')
+    for subject in os.listdir(html_dir):
+        subdir = os.path.join(html_dir, subject)
+        if not os.path.isdir(subdir):
+            continue
+        shutil.copy(os.path.join(root, 'static', 'admin.html'), os.path.join(subdir, 'admin'))
 
 
 
