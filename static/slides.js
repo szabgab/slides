@@ -205,12 +205,9 @@
     }
 
     setTimeout(start_extras, 100)
-    var obj = document.getElementById('showhide');
-    function showhide() {
-        toggle_extras(true);
-    }
-    if (obj) {
-        obj.addEventListener('click', showhide)
+    var showhide = document.getElementById('showhide');
+    if (showhide) {
+        showhide.addEventListener('click', function () { toggle_extras(true) })
     }
 
 /*
