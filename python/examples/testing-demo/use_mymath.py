@@ -7,4 +7,6 @@ if len(sys.argv) != 3:
 a = int(sys.argv[1])
 b = int(sys.argv[2])
 
-print(mymath.add(a, b) )
+result = mymath.add(a, b)
+
+print(result)
