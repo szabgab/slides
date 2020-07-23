@@ -62,6 +62,12 @@
                 //"Arrow Down";
                 break;
 
+            case 65:
+                // a
+                //
+                document.location.href = "admin.html?frompath=" + baseName(window.location.pathname);
+                break;
+
             case 66:
                 // 66 (b) when clicking the lower right on Logitech R400
                 window.history.back();
@@ -155,16 +161,16 @@
     }
 
     function set_extra_default(v) {
-        var t = localStorage.getItem('show_extra');
-        //console.log('show_extra: ' + t);
-        if (t === null) {
-            t = v;
-            //console.log('Set default to ' + t);
+        var show = localStorage.getItem('show_extra');
+        //console.log('show_extra: ' + show);
+        if (show === null) {
+            show = v;
+            //console.log('Set default to ' + show);
         } else {
-            t = JSON.parse(t);
+            show = JSON.parse(show);
         }
-        localStorage.setItem("show_extra", t);
-        show_extras(t);
+        localStorage.setItem("show_extra", show);
+        show_extras(show);
     }
 
     function start_extras() {
@@ -173,29 +179,53 @@
 
     function toggle_extras(toggle) {
         //console.log('toggle')
-        //console.log('show_extra was: ' + t);
-        var t = localStorage.getItem('show_extra');
-        //console.log(t)
-        if (t === null) {
-            // defaults to show extras
-            t = true;
-        } else {
-            t = JSON.parse(t);
-        }
+        var show = get_field('show_extra');
+        //console.log('show_extra was: ' + show);
         if (toggle) {
-            t = ! t;
+            show = ! show;
         }
-        localStorage.setItem("show_extra", t);
-        //console.log('Toggle to ' + t);
-        show_extras(t)
+        localStorage.setItem("show_extra", show);
+        //console.log('Toggle to ' + show);
+        show_extras(show)
     }
 
-    function show_extras(t) {
-        //console.log('show_extras:', t);
-        var nl = document.getElementsByClassName('extra');
+    function get_field(name) {
+        var show = localStorage.getItem(name);
+        if (show === null) {
+             show = true; // default
+        } else {
+            show = JSON.parse(show);
+        }
+        return show;
+    }
+
+    function show_banners() {
+        var show = get_field('show_banner');
+        show_things('banner', show);
+        if (show) {
+            var top = document.getElementById('banner-top');
+            var path = window.location.pathname;
+            // var re = new RegExp('/docker/');
+            //if (re.exec(path)) {
+            //    return;
+            //}
+
+            var msg = 'You are are reading one of the thousands of slides on the <a href="/">Code-Maven</a> site. Check out <a href="/slides/">all the slides</a>.';
+            top.innerHTML = msg;
+            top.setAttribute('style', 'background-color: #42e8f4;');
+            //background-color: orange'
+        }
+    }
+
+    function show_extras(show) {
+        show_things('extra', show);
+    }
+
+    function show_things(what, show) {
+        //console.log('show', what, t);
+        var nl = document.getElementsByClassName(what);
         for (var i = 0; i < nl.length; i++) {
-            //console.log('setting ');
-            nl[i].style.display = t ? "block" : "none";
+            nl[i].style.display = show ? "block" : "none";
         }
     }
 
@@ -204,7 +234,13 @@
         return obj.value;
     }
 
+    function baseName(str) {
+        var base = new String(str).substring(str.lastIndexOf('/') + 1);
+        return base;
+    }
+
     start_extras();
+    show_banners();
     var showhide = document.getElementById('showhide');
     if (showhide) {
         showhide.addEventListener('click', function () { toggle_extras(true) })

@@ -25,6 +25,15 @@ a {
     background-color: #FFFFFF;
 }
 
+.banner {
+    font-size: 30px;
+	padding: 10px;
+    margin-bottom: 20px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+    clear: both;
+}
 
 nav {
     margin: 0 auto 10px;

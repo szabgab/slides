@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport"
+     content="width=device-width, initial-scale=1, user-scalable=yes">
+  <title>Slides Admin</title>
+</head>
+<body>
+
+Show extra text: <input type="checkbox" id="show_extra"><br>
+Show banners: <input type="checkbox" id="show_banner"><br>
+<button id="save">Save</button>
+
+<button id="back">Back</button>
+
+
+<script>
+(function() {
+    var names = new Array('show_banner', 'show_extra');
+    function save() {
+        for (var i = 0; i < names.length; i++) {
+            var field = names[i];
+            localStorage.setItem(field, document.getElementById(field).checked);
+        }
+        var res = window.location.search.split("=");
+        window.location.href = res[1];
+    }
+
+    function start() {
+        for (var i = 0; i < names.length; i++) {
+            var field = names[i];
+            var show = localStorage.getItem(field);
+            if (show === null) {
+                show = true;
+            } else {
+                show = JSON.parse(show);
+            }
+            document.getElementById(field).checked = show;
+        }
+
+    }
+    document.getElementById('back').addEventListener('click', function () { window.history.back(); });
+    document.getElementById('save').addEventListener('click', save);
+    start();
+})();
+</script>
+
+</body>
+</html>
