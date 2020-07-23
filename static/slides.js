@@ -210,37 +210,37 @@
         showhide.addEventListener('click', function () { toggle_extras(true) })
     }
 
-    var start_xPos;
-    var start_yPos;
-    var start_time;
-    function touch_start(event) {
-        start_xPos = event.touches[0].pageX;
-        start_yPos = event.touches[0].pageY;
-        start_time = new Date();
-    }
+    //var start_xPos;
+    //var start_yPos;
+    //var start_time;
+    //function touch_start(event) {
+    //    start_xPos = event.touches[0].pageX;
+    //    start_yPos = event.touches[0].pageY;
+    //    start_time = new Date();
+    //}
 
 
-    function touch_end(event) {
-        var end_xPos = event.changedTouches[0].pageX;
-        var end_yPos = event.changedTouches[0].pageY;
-        var end_time = new Date();
-        let move_x = end_xPos - start_xPos;
-        let move_y = end_yPos - start_yPos;
-        let elapsed_time = end_time - start_time;
-        if (Math.abs(move_x) > 30 && Math.abs(move_y) < 30 && elapsed_time < 1000) {
-            if (move_x < 0) {
-                //alert("left");
-                go_next();
-            } else {
-                //alert("right");
-                go_prev();
-            }
-        }
-    }
+    //function touch_end(event) {
+    //    var end_xPos = event.changedTouches[0].pageX;
+    //    var end_yPos = event.changedTouches[0].pageY;
+    //    var end_time = new Date();
+    //    let move_x = end_xPos - start_xPos;
+    //    let move_y = end_yPos - start_yPos;
+    //    let elapsed_time = end_time - start_time;
+    //    if (Math.abs(move_x) > 30 && Math.abs(move_y) < 30 && elapsed_time < 1000) {
+    //        if (move_x < 0) {
+    //            //alert("left");
+    //            go_next();
+    //        } else {
+    //            //alert("right");
+    //            go_prev();
+    //        }
+    //    }
+    //}
 
-    var content = document.getElementById("content");
-    content.addEventListener('touchstart', touch_start);
-    content.addEventListener('touchend', touch_end);
+    //var content = document.getElementById("content");
+    //content.addEventListener('touchstart', touch_start);
+    //content.addEventListener('touchend', touch_end);
 
 })();
 
