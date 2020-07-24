@@ -50,6 +50,9 @@ nav {
 }
 
 @media (max-width: 799px) {
+    .banner {
+        font-size: 20px;
+    }
     #links li {
         display: block;
         margin-top: 20px;
