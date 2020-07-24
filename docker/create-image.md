@@ -578,10 +578,10 @@ In order to set up a so-called cron-job you need to edit or install the crontab 
 and then you need to tell your Docker image to start it when the container starts and to just keep waiting for it to work.
 So not to quit.
 
-Firs we prepare a file that looks like a crontab file. We won't go into the details of the crontab format, you can
+First we prepare a file that looks like a crontab file. We won't go into the details of the crontab format, you can
 read about it in the linked Wikipedia entry. Suffice to say the 5 stars tell the cron service to run the job every minute.
 
-The job itself is not very interesting. It runs the "date" command and redirts the output to a file called /opt/dates.txt
+The job itself is not very interesting. It runs the "date" command and redirects the output to a file called /opt/dates.txt
 appending to it every time. We only use this to see that the cronjob indeed works.
 {/aside}
 
