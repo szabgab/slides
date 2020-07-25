@@ -1,0 +1,149 @@
+#next {
+    float: right;
+}
+#prev {
+    float: left;
+}
+.nextprev {
+/*
+   padding-top: 2px;
+   padding-bottom: 2px;
+*/
+}
+.clear-both {
+    clear: both;
+}
+a {
+    text-decoration: none;
+}
+
+.code {
+    background-color: #FAFAFA;
+}
+
+.included-code {
+    background-color: #FFFFFF;
+}
+
+.banner {
+    font-size: 30px;
+	padding: 10px;
+    margin-bottom: 20px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+    clear: both;
+}
+
+nav {
+    margin: 0 auto 10px;
+    padding: 0;
+    border-bottom: solid;
+    height: 20px;
+    padding-bottom: 5px;
+}
+
+@media (min-width: 800px) {
+    #links li {
+        display: inline;
+    }
+}
+
+@media (max-width: 799px) {
+    .banner {
+        font-size: 20px;
+    }
+    #links li {
+        display: block;
+        margin-top: 20px;
+    }
+
+    ul #helpbutton {
+        display: none;
+        background: #333;
+    }
+    .prev-text {
+        display: none;
+    }
+    .next-text {
+        display: none;
+    }
+}
+
+nav ul {
+	height: 10px;
+}
+
+nav li {
+    margin-right: 20px;
+    display: inline;
+    list-style-type: none;
+}
+
+.slidebutton {
+    background: #fff5f5;
+    padding: 4px 9px;
+
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-box-shadow: 0 1px 3px #999;
+    -webkit-box-shadow: 0 1px 3px #999;
+}
+
+#title {
+	text-align: center;
+}
+
+#footer {
+    margin-top: 20px;
+}
+#footer li {
+    font-size: 12px;
+    display: inline;
+    list-style-type: none;
+    margin-right: 30px;
+}
+
+#keywords ul {
+	height: 40px;
+    margin-top: 8px;
+}
+
+#keywords li {
+    /* position: relative; */
+	/*height: 40px;*/
+    /* border: solid; */
+    margin-right: 20px;
+    display: inline;
+    color: #fff;
+    background: #2daebf;
+    padding: 4px 9px;
+    /* float: left;  */
+    list-style-type: none;
+
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-box-shadow: 0 1px 3px #999;
+    -webkit-box-shadow: 0 1px 3px #999;
+}
+
+.extra {
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+#links {
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+#links hr {
+  margin-bottom: 20px;
+}
+
+#links li {
+  list-style-type: none;
+  padding-right: 20px;
+}
+
+

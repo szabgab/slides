@@ -31,7 +31,7 @@
   {% endif %}
   {% if c.name == 'verbatim' %}
 
-<pre class="code">
+<pre class="code light">
 {{ c.content[0] | e }}
 </pre>
 
@@ -53,7 +53,7 @@
       <b>{{ c.title }}</b><br>
       <b><a href="https://github.com/szabgab/slides/tree/main/{{ srcdir }}/{{ c.filename }}" rel="nofollow">{{ c.filename }}</a></b><br>
 
-<pre class="included-code">
+<pre class="included-code dracula">
 {{ c.content[0]|syntax(c.filename) }}
 </pre>
 
