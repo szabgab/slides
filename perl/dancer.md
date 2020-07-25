@@ -129,3 +129,44 @@ The `like` keyword of Test::More provides this testing functionality.
 
 * Run as `prove test.t`
 
+## Dancer: Get parameter in route
+{id: get-param-in-route-dancer}
+{i: param}
+{i: subtest}
+
+{aside}
+Each URL path can be mapped to a specific function, but we can also map a whole set of URLs to a single function and use
+parts of the URL path as parameters. For example we might want to show information about each user via their profile URL
+which is **/user/ID** where the ID is their user id.
+(For public URL it is probably a better idea is to let them have a unique username and use that, but the basic concept is the same.)
+
+We can set it up in the following way:
+{/aside}
+
+
+![](examples/dancer/params-in-routes/app.psgi)
+
+![](examples/dancer/params-in-routes/test.t)
+
+## Dancer: Send 404 Not Found manually
+{id: sent-404-not-found-manually-dancer}
+{i: status}
+{i: not_found}
+{i: 404}
+
+{aside}
+If a user arrives to a URL path that is not associated with anything then Dancer will automatically return a 404 Not Found page.
+What if we have a catch-all route as in the previous example, where one part of the URL path is the ID of a user.
+What if then someone tries to access a page that does not belong to any user? Ideally the application would return a 404 Not Found page
+this time as well, but Dancer cannot automatically understand which ID is valid and when to send a 404 Not found page.
+
+We have to send it manually. For this, before sending back the page we first call `status 'not_found';` to tell Dancer to set the
+HTTP return status to 404. Then we can send back any HTML (or plain text). It will be displayed but the browser, or whatever client
+the user uses will be also told the status code is 404.
+{/aside}
+
+
+![](examples/dancer/return-404/app.psgi)
+
+![](examples/dancer/return-404/test.t)
+
