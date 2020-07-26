@@ -8,10 +8,57 @@
 {i: java}
 {i: javac}
 
-* [Download Java](https://java.com/en/download/)
+{aside}
+There are several implementation of Java, one currently controlled by Oracle and it can be downloaded from Oracle.com
+but as far as I know there are various problematic licensing restrictions.
+A better choice is to download the Open JDK.
+{/aside}
+
+* [Java Download Open JDK](https://openjdk.java.net/)
+
+{aside}
+On MS Windows install it by unipping the .zip file and then configuring the PATH to include the bin/ directory.
+{/aside}
+
+{aside}
+Before we even write a line of code we would like to make sure that both the java compiler and the java runtime is
+accessible for us. So we open a command line window or a Power Shell window and we type in javac --version
+and java --version respectively.
+{/aside}
+
+On MS Windows
+
+```
+> javac --version
+javac 14.0.2
+```
+
+```
+> java --version
+openjdk 14.0.2 2020-07-14
+OpenJDK Runtime Environment (build 14.0.2+12-46)
+OpenJDK 64-Bit Server VM (build 14.0.2+12-46, mixed mode, sharing)
+```
+
+On Ubuntu Linux:
+
+```
+$ javac -version
+javac 1.8.0_252
+
+$ java -version
+openjdk version "1.8.0_252"
+OpenJDK Runtime Environment (build 1.8.0_252-8u252-b09-1ubuntu1-b09)
+OpenJDK 64-Bit Server VM (build 25.252-b09, mixed mode)
+```
+
+
+## Java from Oracle
+{id: java-from-oracle}
+
+* [Download Java from Oracle](https://java.com/en/download/)
 * JRE - Java Runtime Environment (Java Virtual Machine JVM)
 * JDK - Java Development Kit (Java Compiler javac)
-
 
 ```
 $ java -version
@@ -30,6 +77,16 @@ javac 1.8.0_60
 ## Hello World in Java
 {id: java-hello-world}
 {i: System.out.println}
+{i: System}
+{i: println}
+
+{aside}
+Printing Hello World on the screen is a bit more complex in Java than in many of the so-called scripting languages, but still it
+is probably the most simple thing you can do in the language. So let's see it.
+
+Create a file with a name like HelloWorld.java . The extension .java is important , so is the name.
+In the file we create a class with the same name as the name of the file.
+{/aside}
 
 ![](examples/java/HelloWorld.java)
 
@@ -42,6 +99,12 @@ Hello World
 
 ## Java Data Types
 {id: java-data-types}
+{i: String}
+{i: int}
+{i: double}
+{i: boolean}
+{i: true}
+{i: false}
 
 Primitive types such as int, float, boolean, etc. Or reference types, such as strings, arrays, or objects.
 
@@ -59,14 +122,30 @@ true, false - boolean
 
 ![](examples/java/CheckDataTypes.java)
 
+```
+javac CheckDataTypes.java
+java CheckDataTypes
+```
+
+![](examples/java/CheckDataTypes.out)
+
+
 ## Java Variable declaration
 {id: java-variable-declaration}
+{i: int}
+{i: boolean}
+{i: char}
 
 With and without initialization.
 
 ![](examples/java/Variables.java)
 
+```
+javac Variables.java
+java Variables
+```
 
+![](examples/java/Variables.out)
 
 ## Java comments
 {id: java-comments}
@@ -80,14 +159,43 @@ With and without initialization.
 
 ## Java prompt - read from STDIN
 {id: java-prompt}
+{i: InputStreamReader}
+{i: BufferedReader}
+{i: readLine}
 
 ![](examples/java/Prompt.java)
 
+```
+javac Prompt.java
+java Prompt
+```
 
-## Java command line arguments
-{id: java-command-line-arguments}
+## Convert string to number
+{id: convert-string-to-number}
+{i: Integer}
+{i: parseInt}
 
-![](examples/java/CmdLineArgs.java)
+![](examples/java/Convert.java)
+
+```
+javac Convert.java
+java Conver
+```
+
+## Add Command line values
+{id: java-add-command-line-values}
+
+![](examples/java/AddCmdLineArgs.java)
+
+```
+javac AddCmdLineArgs.java
+java AddCmdLineArgs
+```
+
+## Add Command line numbers
+{id: java-add-command-line-numbers}
+
+![](examples/java/AddCmdLineNumbers.java)
 
 
 ## Java for-loop
@@ -104,35 +212,52 @@ With and without initialization.
 ![](examples/java/WhileLoop.java)
 
 
-## Convert string to number
-{id: convert-string-to-number}
+## Java command line arguments
+{id: java-command-line-arguments}
 
-![](examples/java/Convert.java)
+![](examples/java/CmdLineArgs.java)
 
+```
+javac CmdLineArgs.java
+java CmdLineArgs --name "Foo Bar" --email foo@bar.com
+```
 
-## Add Command line values
-{id: java-add-command-line-values}
+## Concatenate strings in Java
+{id: concatenate-strings}
+{i: +}
 
-![](examples/java/AddCmdLineArgs.java)
+* Use the + operator
 
+![](examples/java/ConcatStrings.java)
 
-## Add Command line numbers
-{id: java-add-command-line-numbers}
-
-![](examples/java/AddCmdLineNumbers.java)
-
+```
+$ javac ConcatStrings.java
+$ java ConcatStrings
+```
 
 ## Use class
 {id: java-use-class-in-same-file}
 
 ![](examples/java/GreetingsA.java)
 
+```
+javac GreetingsA.java
+java GreetingsA
+```
+
+![](examples/java/GreetingsA.out)
 
 ## Method signature
 {id: java-method-signature}
 
 ![](examples/java/GreetingsB.java)
 
+```
+javac GreetingsB.java
+java GreetingsB
+```
+
+![](examples/java/GreetingsB.out)
 
 
 ## Use Java class from another class
