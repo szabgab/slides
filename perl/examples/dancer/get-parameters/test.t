@@ -1,0 +1,27 @@
+use strict;
+use warnings;
+
+use Test::More;
+use Plack::Test;
+use HTTP::Request::Common;
+
+my $app = do './app.psgi';
+
+my $test = Plack::Test->create($app);
+
+subtest main => sub {
+    my $res = $test->request(GET '/');
+
+    is $res->status_line, '200 OK', 'Status';
+    like $res->content, qr{<form action="/echo" method="GET">}, 'Content';
+};
+
+subtest echo => sub {
+    my $res = $test->request(GET '/echo?message=Foo+Bar');
+
+    is $res->status_line, '200 OK', 'Status';
+    is $res->content, 'You typed in Foo Bar', 'Content';
+};
+
+
+done_testing();
