@@ -155,6 +155,8 @@ When the user visits the page, she will see an empty text box with a button that
 
 In the Dancer application this will trigger the '/echo' route where using the get method of the query_parameters object
 we can receive the text sent in by the user. Then it is only a simple matter of sending it back to show what the user has typed in.
+
+We are embedding the HTML in this code so it will be a one-file solution. In a bigger application we would use the template system and put the HTML in an external file.
 {/aside}
 
 ![](examples/dancer/get-parameters/app.psgi)
