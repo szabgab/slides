@@ -6,14 +6,14 @@ db = client.demo
 
 foo = {
     'name'      : 'Foo',
-    'email'     : 'foo@example.com', 
+    'email'     : 'foo@example.com',
     'birthdate' : datetime.datetime.strptime('2002-01-02', '%Y-%m-%d'),
     'student'   : True,
 }
 
 bar = {
     'name'      : 'Bar',
-    'email'     : 'bar@example.com', 
+    'email'     : 'bar@example.com',
     'birthdate' : datetime.datetime.strptime('1998-08-03', '%Y-%m-%d'),
     'student'   : True,
     'teacher'   : False,
@@ -21,13 +21,13 @@ bar = {
 
 zorg = {
     'name'      : 'Zorg',
-    'email'     : 'zorg@corp.com', 
+    'email'     : 'zorg@corp.com',
     'birthdate' : datetime.datetime.strptime('1995-12-12', '%Y-%m-%d'),
     'teacher'   : True,
 }
 
 
-db.people.insert(foo)
-db.people.insert(bar)
-db.people.insert(zorg)
+db.people.insert_one(foo)
+db.people.insert_one(bar)
+db.people.insert_one(zorg)
 
