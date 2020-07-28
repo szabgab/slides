@@ -330,6 +330,39 @@ rm -f *.class; javac Calculator.java UseCalc.java ; java UseCalc
 ![](examples/java/Runls.java)
 
 
+## Method Overloading
+{id: method-overloading}
+
+![](examples/java/MethodOverloading.java)
+
+```
+$ javac MethodOverloading.java
+$ java MethodOverloading
+```
+
+![](examples/java/MethodOverloading.out)
+
+
+## Public instance attributes
+{id: public-instance-attributes}
+
+![](examples/public-attributes/TryPoint.java)
+![](examples/public-attributes/Point.java)
+
+## Getter for private instance attributes
+{id: getter-for-private-instance-attributes}
+
+![](examples/getter/TryPoint.java)
+![](examples/getter/Point.java)
+
+## Setter for private instance attributes
+{id: setter-for-private-instance-attributes}
+
+![](examples/setter/TryPoint.java)
+![](examples/setter/Point.java)
+
+
+
 ## Compile and Run in shell
 {id: compule-and-run-in-shell}
 
@@ -350,8 +383,7 @@ rm -f *.class; javac Calculator.java UseCalc.java ; java UseCalc
 ![](examples/person/Worker.java)
 ![](examples/person/TryClass.java)
 
-
-## combination
+## Combination
 {id: combination}
 
 ![](examples/shapes/Point.java)
