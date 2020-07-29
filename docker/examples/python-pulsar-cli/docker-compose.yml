@@ -6,14 +6,16 @@ services:
       - .:/opt
     links:
       - pulsar
-    command: python producer.py
+    #command: python producer.py
+    command: tail -f /dev/null
   consumer:
     build: .
     volumes:
       - .:/opt
     links:
       - pulsar
-    command: python consumer.py
+    command: tail -f /dev/null
+    #command: python consumer.py
   pulsar:
     image: apachepulsar/pulsar:2.5.2
     container_name: my-pulsar
