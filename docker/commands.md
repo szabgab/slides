@@ -11,15 +11,14 @@ There is only a handfull of commands that you can use in a Dockerfile. We are go
 * [documentation](https://docs.docker.com/engine/reference/builder/)
 
 * [ADD](docker-add)
-* ARG
-* CMD
-* COPY
-* FROM
-* ENTRYPOINT
-* ENV
-* RUN
-* WORKDIR
-
+* [ARG](docker-arg)
+* [CMD](docker-cmd)
+* [COPY](docker-copy)
+* [FROM](docker-from)
+* [ENTRYPOINT](docker-entrypoint)
+* [ENV](docker-env)
+* [RUN](docker-run)
+* [WORKDIR](docker-workdir)
 
 ## Docker FROM
 {id: docker-from}
