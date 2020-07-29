@@ -146,10 +146,10 @@ The big drawback is that it is not really useful for anything complex.
 So how does it work?
 
 In Python if you add a string immediately after the declaration of the function - meaning the line immediately after the "def" statement -
-that string becomes the documentation of the function. It can be a one-line string or a multi-line string using tripple-quotes.
+that string becomes the documentation of the function. It can be a one-line string or a multi-line string using triple-quotes.
 
-In the documentation you can write free text and you can also write example as if one was using the interactive shell of Python.
-For these example we have code snippets preceeded with 3 greater-than signs, the prompt of the in Python interactive shell. The line immediately
+In the documentation you can write free text and you can also write examples as if one was using the interactive shell of Python.
+For these examples we have code snippets preceded with 3 greater-than signs, the prompt of the in Python interactive shell. The line immediately
 after that contains the result that you'd see if you actually typed in the expression into the interactive shell.
 
 Doctest will read your source code, look at all the functions you have and for each function it will look at the documentation of the function.
@@ -160,7 +160,7 @@ your documentation and the implementation are aligned.
 We can run doctest in the following way: `python -m doctest mymath.py`. If all the tests pass, then this execution will print nothing.
 This lack of positive feedback is a bit strange so you might want to check the so-called "exit code" of the execution. On Unix systems such as Linux and OSX,
 you'd inspect the `$?` environment variable while on MS Windows you need to inspect the `%ERRORLEVEL%` variable. On all of these systems you can use
-the `echo` command to inspect the variables. In either case 0 indicates succcess.
+the `echo` command to inspect the variables. In either case 0 indicates success.
 {/aside}
 
 ![](examples/testing-demo/doctest_first/mymath.py)
