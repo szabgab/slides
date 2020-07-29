@@ -5,12 +5,12 @@
 {id: dockerfile-commands}
 
 {aside}
-There are not a lot of vailable command that you can use in a Dockerfile. We are going to covert them one-by-one briefly.
+There is only a handfull of commands that you can use in a Dockerfile. We are going to cover them one-by-one briefly.
 {/aside}
 
 * [documentation](https://docs.docker.com/engine/reference/builder/)
 
-* ADD
+* [ADD](docker-add)
 * ARG
 * CMD
 * COPY
