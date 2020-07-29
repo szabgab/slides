@@ -6,11 +6,11 @@
 
 {aside}
 Docker compose allows us to configure several docker images to be launched together so they can nicely work together.
-For example one image holds the database server, another one holds the message-passing system, and the third holds the application code.
+For example one image holds the database server, another one holds the message-passing system, and the third holds the code of the web application.
 
 Docker compose can run them all at once and can also define the network connectivity between them.
 
-There are several ways to install Cocker composer. One of them is using pip.
+There are several ways to install Docker composer. One of them, if you are familiar with Python, is using `pip`.
 {/aside}
 
 ```
@@ -19,6 +19,24 @@ pip install docker-compose
 
 ## Docker compose
 {id: docker-compose-0}
+{i: up}
+{i: attach}
+
+{aside}
+The configuration of Docker compose is stored in a YAML file, usually called docker-compose.yml.
+The following is a very simple example that defines a single Docker container, cleverly named "one"
+which is based on the Ubuntu 20.04 image. Normally in order for a Docker container to keep running
+you need to execute some command in them that will keep running. We can achieve the same by configuring
+the stdin_open and the tty parameters. (They are the same as providing `-it` on the command line of
+`docker`.)
+{/aside}
+
+![](examples/interactive-shell/docker-compose.yml)
+
+{aside}
+In order to launch the Docker containers we need to cd in the directory where we have the docker-compose.yml file and then
+type in `docker-compose up`. This will download the image if necessary and launch the Docker container.
+{/aside}
 
 ```
 cd examples/interactive-shell
@@ -39,7 +57,6 @@ $ docker attach interactive-shell_one_1
 
 However, when you exit, it will shut down the container.
 
-![](examples/interactive-shell/docker-compose.yml)
 
 
 ## Docker compose 1st example
