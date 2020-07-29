@@ -20,7 +20,10 @@ As you might notice, (I did not when I first tried this), the ``Println` functio
 {i: %s}
 
 {aside}
-When printing values of variables it might be better to use the Printf function as it allows us to use placeholders like %s and be more precise where we would want to put a space and where don't. These formatting placeholders are similar to what we have in other languages, but Go has a few additional placeholders. Specifically `%s` isn't special. It stands for strings.
+When printing values of variables it might be better to use the Printf function than the Println as the former allows us to use placeholders
+such as `%s` and be more precise where we would want to put a space and where don't.
+These formatting placeholders are similar to what we have in other programming languages, but Go has a few additional placeholders.
+Specifically `%s` isn't special. It stands for strings.
 {/aside}
 
 ![](examples/hello-foo-printf/hello_foo_printf.go)
