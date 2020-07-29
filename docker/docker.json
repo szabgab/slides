@@ -13,6 +13,7 @@
         "python.md",
         "perl.md",
         "networking.md",
+        "postgresql.md",
         "appendix.md"
     ]
 }
