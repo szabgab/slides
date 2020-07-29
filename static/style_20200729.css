@@ -146,4 +146,7 @@ nav li {
   padding-right: 20px;
 }
 
+.highlight pre {
+    padding: 5px;
+}
 
