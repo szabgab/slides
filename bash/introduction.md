@@ -52,6 +52,7 @@ $@      is the same but
 ## Bash if parameter
 {id: bash-if-parameter}
 {i: if}
+
 ![](examples/bash/if_parameter.sh)
 
 
@@ -59,18 +60,29 @@ $@      is the same but
 ## Bash while-loop
 {id: bash-while-loop}
 {i: while}
+
 ![](examples/bash/while.sh)
 
 
 ## Bash for-loop
 {id: bash-for-loop}
 {i: for}
+
 ![](examples/bash/for_items.sh)
 
+## Bash for loop on a range of numbers
+{id: bash-for-loop-on-range-of-numbers}
+
+```
+for ((i=1;i<=10;i++));  do echo $i; done
+```
+
+![](examples/bash/loop.sh)
 
 ## Bash for loop on files
 {id: bash-for-on-files}
 {i: for}
+
 ![](examples/bash/for_files.sh)
 
 
@@ -86,7 +98,15 @@ for a in "$@"
 ```
 ![](examples/bash/for_arguments.sh)
 
+## Bash a sequence of number - a range of numbers
+{id: bash-sequence-of-numbers}
+{i: seq}
 
+* seq FROM STEP TO
+
+![](examples/bash/range.sh)
+
+![](examples/bash/range.out)
 
 ## Arithmetic in Bash
 {id: arithmetic-in-bash}
