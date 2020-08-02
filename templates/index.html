@@ -4,30 +4,28 @@
 
 <h3>Author: {{ book.author }}</h3>
 
-<div>
-Copyright: <a href="{{ book.copyright_url }}">{{ book.copyright_name }}</a>
-</div>
-
-<div>
-{{ book.first_year }} - {{ this_year }}
-</div>
-
-<div>
-Version: {{ book.version }}
-</div>
-
-<div>
-<a href="toc{{ extension }}">TOC - Table of Contents</a>
-</div>
-
-<div>
-<a href="keywords{{ extension }}">Keywords</a>
+<div id="metalinks">
+  <div>
+  Copyright: <a href="{{ book.copyright_url }}">{{ book.copyright_name }}</a>
+  </div>
+  <div>
+  {{ book.first_year }} - {{ this_year }}
+  </div>
+  <div>
+  Version: {{ book.version }}
+  </div>
+  <div>
+  <a href="toc{{ extension }}">TOC - Table of Contents</a>
+  </div>
+  <div>
+  <a href="keywords{{ extension }}">Keywords</a>
+  </div>
 </div>
 
 {% include 'incl/nextprev.html' %}
 
 <h2>Chapters</h2>
-<ul>
+<ul id="chapters">
 {% for chapter in book.pages %}
     <li><a href="{{ chapter.id }}{{ extension }}">{{ chapter.title }} ({{ chapter.pages|length }})</a></li>
 {% endfor %}

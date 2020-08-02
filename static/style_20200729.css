@@ -150,3 +150,10 @@ nav li {
     padding: 5px;
 }
 
+#chapters li {
+    margin-bottom: 3px;
+}
+
+#metalinks div {
+    margin-bottom: 3px;
+}
