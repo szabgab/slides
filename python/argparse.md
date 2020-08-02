@@ -258,7 +258,14 @@ Like this:
 python ex.py file1 file2 file3 --machine MACHINE --verbose
 ```
 
-## Argparser xor - mutual exlucise - only one - exactly one
+
+## argparse print help explicitely
+{id: argparse-print-help}
+{i: print_help}
+
+![](examples/argparse/argparse_print_help.py)
+
+## Argparse xor - mutual exlucise - only one - exactly one
 {id: argparse-xor}
 
 ![](examples/argparse/argparse_xor.py)
