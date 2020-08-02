@@ -61,6 +61,10 @@ $@      is the same but
 {id: bash-while-loop}
 {i: while}
 
+```
+while true; do (date; sleep 1); done
+```
+
 ![](examples/bash/while.sh)
 
 
