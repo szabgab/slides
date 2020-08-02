@@ -190,20 +190,55 @@ container_linux.go:247: starting container process caused "exec: \"python\": exe
 docker: Error response from daemon: oci runtime error: container_linux.go:247: starting container process caused "exec: \"python\": executable file not found in $PATH".
 ERRO[0001] error getting events from daemon: net/http: request canceled
 ```
+## Run container as a daemon - attach detach
+{id: run-container-as-a-daemon-attach-detach}
+{i: attach}
+{i: -d}
+
+* Run as a Daemon in the background name it 'test'
+
+```
+docker run -d --rm -it --name test busybox
+```
+
+* Check if it is running using `docker ps`
+
+* Attach to it:
+
+```
+docker container attach test
+```
+
+* Detach from the container and keep it running by pressing
+
+```
+Ctrl-p Ctrl-q
+```
+
 
 ## Run container as a daemon
 {id: run-container-as-a-daemon}
 {i: inspect}
 {i: logs}
 
-```
-docker run -d --rm busybox sleep 30
+{aside}
+In this example we create a Docker image based on busybox and tiny bit of shell command.
+Specifically we'll run an infinite while-loop and every second we'll print the current date and time.
 
-docker run --name my_name busybox sleep 100
+The first thing we need to do is to build the 
+{/aside}
 
-docker inspect CONTAINER_ID
-docker logs CONTAINER_ID
+![](examples/daemon1/Dockerfile)
+
 ```
+docker build -t mydocker .
+docker run -d --rm --name test mydocker
+docker inspect test
+docker container logs test
+docker container attach test
+Ctrl-p Ctrl-q
+```
+
 
 ## Inspect low-level information about Docker
 {id: inspect-docker-container}
