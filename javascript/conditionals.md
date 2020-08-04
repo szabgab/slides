@@ -184,14 +184,53 @@ if () {
 {id: math-round}
 {i: Math}
 {i: round}
+
 ![](examples/js/round.js)
 
+## Rounding up a float to integer (ceil)
+{id: rounding-up-float-to-integer}
+{i: ceil}
+
+```
+let pi = 3.14;
+var intvalue = Math.ceil( pi );
+```
+
+## Rounding down a float to integer (floor)
+{id: rounding-down-float-to-integer}
+{i: floor}
+
+```
+let pi = 3.14;
+var intvalue = Math.floor( pi );
+```
+
+## Converting float to integer (trunc)
+{id: convert-float-to-integer}
+{i: floor}
+{i: round}
+{i: trunc}
+
+```
+let pi = 3.14;
+var intvalue = Math.round( pi );
+
+// `Math.trunc` was added in ECMAScript 6
+var intvalue = Math.trunc( pi );
+```
 
 ## Math.random
 {id: math-random}
 {i: random}
+
 ![](examples/js/random.js)
 
+## Throw a dice (random integers 1-6)
+{id: throw-a-dice}
+{i: random}
+{i: floor}
+
+![](examples/js/dice.js)
 
 ## Exercise: Calculator
 {id: exercise-calculator}
