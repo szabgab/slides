@@ -132,6 +132,7 @@ The `like` keyword of Test::More provides this testing functionality.
 ## Process GET (query request) parameters in Dancer
 {id: process-get-parameters-in-dancer}
 {i: query_parameters}
+{i: GET}
 {i: form}
 {i: input}
 {i: submit}
@@ -168,6 +169,7 @@ We are embedding the HTML in this code so it will be a one-file solution. In a b
 
 ## Testing GET request with query parameters in Dancer
 {id: testing-get-requests-with-query-parameters-in-dancer}
+{i: GET}
 {i: like}
 
 {aside}
@@ -184,9 +186,55 @@ The really interesting test is the "echo" subtest where we submit a request with
 
 ![](examples/dancer/get-parameters/test.t)
 
+* Run as `prove test.t`
 
-## Dancer: Get parameter in route
-{id: get-param-in-route-dancer}
+## Process POST requests in Dancer
+{id: process-post-requests-in-dancer}
+{i: body_parameters}
+{i: POST}
+
+{aside}
+In addition to the GET request the other common verb used in HTTP is POST. When you are implementing a REST API these verbs have real meaning,
+but when you are writing a user-facing web application the choice between GET and POST usually boils down to the question if you'd like
+the people to see the parameters passing in the URL or not.
+
+With GET you'd have the visible query string, with POST the browser will send the same data in the body of the HTTP request invisible to
+the regular user. The data is still sent and if the server does not use https, the data is still readable by anyone listening on the wire.
+
+You probably use GET if you'd like to allow your users to send the specific URL with the data to someone else or if you'd like to let them
+bookmark the page with the data. You'd use POST if you prefer they don't send the data to their friends as well.
+
+In the code we had to make the following changes:
+
+On the main page the form now sets the method to be POST.
+
+The /echo route is now declared with the `post` keyword telling Dancer to execute this function when a POST request arrives at that route.
+
+The data is extracted from the request in the `body_parameters` hash.
+{/aside}
+
+![](examples/dancer/post-parameters/app.psgi)
+
+* Run as `plackup app.psgi` and then access at http://localhost:5000/
+
+## Test POST requests in Dancer
+{id: test-post-requests-in-dancer}
+
+{aside}
+Testing a POST request is as simple as testing a GET request.
+
+In the test if the index page we need to expect the method="POST".
+
+In the echo subtest we use the POST keyword to tell the client to send in a POST-request and we pass in the content of
+the body as an anonymous hash.
+{/aside}
+
+![](examples/dancer/post-parameters/test.t)
+
+* Run as `prove test.t`
+
+## Dancer: Receive parameter in route
+{id: receive-parameter-in-route-dancer}
 {i: param}
 {i: subtest}
 
@@ -201,6 +249,9 @@ We can set it up in the following way:
 
 
 ![](examples/dancer/params-in-routes/app.psgi)
+
+## Dancer: Test parameter in route
+{id: test-parameter-in-route-dancer}
 
 ![](examples/dancer/params-in-routes/test.t)
 
