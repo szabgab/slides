@@ -21,6 +21,7 @@ pip install docker-compose
 {id: docker-compose-0}
 {i: up}
 {i: attach}
+{i: exec}
 
 {aside}
 The configuration of Docker compose is stored in a YAML file, usually called docker-compose.yml.

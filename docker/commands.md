@@ -103,6 +103,8 @@ docker push szabgab/name:1.01
 
 ## Docker upload and publish
 {id: docker-ps}
+{i: exec}
+
 
 ```
 docker run --rm -d -it debian
