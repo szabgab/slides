@@ -40,6 +40,7 @@ ruby/ruby.json,ruby
 scratch/scratch.json,scratch
 slack/slack.json,slack
 sql/sql.json,sql
+travis-ci/travis-ci.json,travis-ci
 value/value.json,value
 vim/vim.json,vim
 web/web.json,web
