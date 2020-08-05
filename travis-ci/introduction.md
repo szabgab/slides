@@ -33,8 +33,8 @@ git add .
 git commit -m "initial version"
 ```
 
-## Basic Travis-CI
-{id: basic-travis-ci}
+## Minimal Travis-CI
+{id: minimal-travis-ci}
 
 {aside}
 Seting up Travis-CI is very easy you only need to follow the following steps:
@@ -42,6 +42,26 @@ Seting up Travis-CI is very easy you only need to follow the following steps:
 
 
 * Connect your GitHub account with [Travis-CI](https://travis-ci.org/)
-* Enable Travis for the specifi repository
-* Add the .travis.yml to the repository
-* push out your changes
+* If the accounts were already connected and this is a new repo you might need to tell Travis-CI to sync from GitHub
+* Enable Travis for the specific repository
+* Add the .travis.yml to the repository (see the minimal file below)
+* Push out your changes
+
+![](examples/minimal/.travis.yml)
+
+{aside}
+This will trigger the build on Travis-CI. As it has nothing to do, it will pass.
+
+For any interesting project you will set the language field properly, but for now we do this without any code and this we tell Travis to set up a minimal virtual environment for us.
+{/aside}
+
+## Minimal Travis-CI echo
+{id: minimal-travis-ci-echo}
+
+![](examples/minimal-echo/.travis.yml)
+
+## Minimal Travis-CI exit 1 failure
+{id: minimal-travis-ci-exit-1-failure}
+
+![](examples/minimal-exit-1/.travis.yml)
+
