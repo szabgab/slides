@@ -1,3 +1,4 @@
+dist: trusty
 language: minimal
 script:
   - echo Hello World

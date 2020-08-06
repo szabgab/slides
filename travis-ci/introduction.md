@@ -86,7 +86,9 @@ For any interesting project you will set the language field properly, but for no
 The first thing we can do is specify some code to run in the environment. For this we need to add the `script` field to the YAML file with a command.
 A simple one would be just to `echo` some text.
 
-When we make this change.
+If we make this change in the GitHub editor then immediately after you commit the change it will trigger a new build on Travis-CI. If you edit the file
+locally on your computer, then you need to commit the change and push it out to GitHub. In this case the `push` operation will trigger the
+build on Travis-CI.
 {/aside}
 
 ![](examples/minimal-echo/.travis.yml)
@@ -94,12 +96,110 @@ When we make this change.
 ## Minimal Travis-CI exit 1 failure
 {id: minimal-travis-ci-exit-1-failure}
 
-![](examples/minimal-exit-1/.travis.yml)
+{aside}
+In the previous example our script was a simple echo that was successful. Now let's see what would happen if the script exited with an exit code different
+from 0. For this we replace our script with a simple `exit `. After this triggers the build you'll probably get an e-mail reporting that the build
+failed. You can also look at the UI in Travis-CI to see the failure.
+{/aside}
 
+![](examples/minimal-exit-1/.travis.yml)
 
 ## Minimal Travis-CI installations
 {id: minimal-travis-ci-installations}
 
+{aside}
+Even though the machine this runs on has a `minimal` installation it already has quite a few tools that you can use.
+Instead of having a single value for the `script` key we convert it to a list of commands. If any of these fails
+(has an exit code different from 0) then the whole process stops.
+
+If they are all successful you can see the results in the console output.
+{/aside}
 
 ![](examples/minimal-installations/.travis.yml)
+
+## Minimal Travis-CI installations setting the dist
+{id: minimal-travis-ci-installations-setting-the-dist}
+
+
+{aside}
+Release:	16.04
+Codename:	xenial
+{/aside}
+
+![](examples/minimal-dist-trusty/.travis.yml)
+
+```
+Release:	14.04
+Codename:	trusty
+```
+
+* dist: bionic
+
+```
+Release:	18.04
+Codename:	bionic
+```
+
+* dist: focal - Not yet supported officially
+
+```
+Release:	20.04
+Codename:	focal
+```
+
+[Build environments](https://docs.travis-ci.com/user/reference/overview/)
+
+## Travis-CI on OSX
+{id: travis-ci-on-osx}
+
+* Setting dist: osx  will mean no build is triggered. I did not even see an error message from Travis telling me that my configuration is incorrect.
+
+* Setting os: osx
+
+* No docker, no lsb_release
+
+![](examples/minimal-osx/.travis.yml)
+
+
+## Travis-CI on MS Windows
+{id: travis-ci-on-windows}
+
+TBD.
+
+## Travis-CI and languages
+{id: travis-ci-and-languages}
+
+* [Languages](https://docs.travis-ci.com/user/languages/)
+
+## Travis-CI and Perl 5
+{id: travis-ci-and-perl-5}
+
+TBD
+
+## Travis-CI and Python
+{id: travis-ci-and-python}
+
+TBD
+
+## Travis-CI and Ruby
+{id: travis-ci-and-ruby}
+
+TBD
+
+## Travis-CI and Java
+{id: travis-ci-and-java}
+
+TBD
+
+## Travis-CI and NodeJS
+{id: travis-ci-and-nodejs}
+
+TBD
+
+## Travis-CI and Go
+{id: travis-ci-and-go}
+
+TBD
+
+
 

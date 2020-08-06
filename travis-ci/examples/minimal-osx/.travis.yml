@@ -1,3 +1,4 @@
+os: osx
 language: minimal
 script:
   - echo Hello World
@@ -5,8 +6,6 @@ script:
   - python3 -V
   - ruby -v
   - perl -v
-  - docker -v
   - git --version
-  - lsb_release -a
   - uname -a
   - exit 0
