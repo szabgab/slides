@@ -196,6 +196,7 @@ ERRO[0001] error getting events from daemon: net/http: request canceled
 {id: run-container-as-a-daemon-attach-detach}
 {i: attach}
 {i: -d}
+{i: exec}
 
 * Run as a Daemon in the background name it 'test'
 
@@ -204,6 +205,13 @@ docker run -d --rm -it --name test busybox
 ```
 
 * Check if it is running using `docker ps`
+
+Run things on it
+
+```
+docker exec CONTAINER command   (eg ls, cat ...)
+```
+
 
 * Attach to it:
 
