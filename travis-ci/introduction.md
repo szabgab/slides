@@ -175,6 +175,22 @@ Codename:	focal
 
 ![](examples/minimal-windows/.travis.yml)
 
+
+## The UI of Travis-CI
+{id: the-ui-of-travis-ci}
+
+* Current
+* Branches
+* Build History
+* Pull Requests
+
+## Travis-CI scheduled cron jobs
+{id: travis-ci-scheduled-cron-jobs}
+
+* More options / Settings
+* Cron Jobs
+* Monthly/Weekly/Daily
+
 ## Travis-CI and languages
 {id: travis-ci-and-languages}
 {i: windows}
@@ -216,5 +232,67 @@ TBD
 
 TBD
 
+
+## Perl version matrix
+{id: perl-version-matrix}
+
+![](examples/perl-version-matrix/.travis.yml)
+![](examples/perl-version-matrix/Makefile.PL)
+
+* See also the [travis-perl helpers](https://github.com/travis-perl/helpers)
+
+## The environment variables set by Travis - Perl
+{id: environment-variables-set-by-travis-perl}
+{i: %ENV}
+{i: $ENV}
+{i: TRAVIS}
+
+* [Environment variables](https://docs.travis-ci.com/user/environment-variables/)
+
+![](examples/perl-environment-variables/.travis.yml)
+
+![](examples/perl-environment-variables/Makefile.PL)
+
+
+## Set environment variables for Perl
+{id: set-environment-variables-for-perl}
+{i: %ENV}
+{i: $ENV}
+{i: env}
+
+
+![](examples/perl-set-environment-variables/.travis.yml)
+
+![](examples/perl-set-environment-variables/Makefile.PL)
+
+## Perl version and environment matrix
+{id: perl-version-and-environment-matrix}
+{i matrix}
+
+![](examples/perl-env-version-matrix/.travis.yml)
+
+![](examples/perl-env-version-matrix/Makefile.PL)
+
+
+
+## Trigger a custom build
+{id: trigger-a-custom-build}
+
+
+* Can be good for experimentation with Travis without he need to make commits to the repository
+
+* More Options / Trigger Build
+* Set a commit message
+* copy (or type in) the content of a YAML file, it will be merged into the regular .travis.yml
+* (e.g. add more versions of the language)
+
+
+Setting
+
+```
+TRAVIS_EVENT_TYPE=api
+```
+
+instead of the usual `push`.
 
 
