@@ -1,0 +1,16 @@
+language: python
+script: pytest
+
+#language: perl
+#perl:
+#   - "5.30"
+#   - "5.28"
+#
+#env:
+#    - DEMO=Alpha
+#    - DEMO=Beta
+#
+#matrix:
+#  exclude:
+#  - perl: "5.28"
+#    env: DEMO=Beta

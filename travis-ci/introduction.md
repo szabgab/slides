@@ -209,8 +209,26 @@ Codename:	focal
 
 ## Travis-CI and Python
 {id: travis-ci-and-python}
+{i: python}
 
-TBD
+* [Travis-CI and Python](https://docs.travis-ci.com/user/languages/python/)
+
+* `language: python`
+* `pip install -r requirements.txt` is executed automatically
+* empty `requirements.txt` file will do it.
+
+![](examples/python-plain/.travis.yml)
+
+## Travis-CI and Python with Pytest
+{id: travis-ci-and-python-with-pytest}
+{i: python}
+
+* Simply adding `script: pytest` will not work.
+* pytest will fail with exit code 5 if it cannot find any test to run.
+
+![](examples/python-pytest/.travis.yml)
+![](examples/python-pytest/test_python.py)
+
 
 ## Travis-CI and Ruby
 {id: travis-ci-and-ruby}
@@ -272,8 +290,6 @@ TBD
 ![](examples/perl-env-version-matrix/.travis.yml)
 
 ![](examples/perl-env-version-matrix/Makefile.PL)
-
-
 
 ## Trigger a custom build
 {id: trigger-a-custom-build}
