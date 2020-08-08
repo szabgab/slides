@@ -119,7 +119,12 @@ If they are all successful you can see the results in the console output.
 
 ## Minimal Travis-CI installations setting the dist
 {id: minimal-travis-ci-installations-setting-the-dist}
-
+{i: Linux}
+{i: Ubuntu}
+{i: trusty}
+{i: xenial}
+{i: bionic}
+{i: focal}
 
 {aside}
 Release:	16.04
@@ -163,18 +168,28 @@ Codename:	focal
 
 ## Travis-CI on MS Windows
 {id: travis-ci-on-windows}
+{i: OSX}
 
-TBD.
+* Experimentaly support
+* Run in a shell so we can run shell commands
+
+![](examples/minimal-windows/.travis.yml)
 
 ## Travis-CI and languages
 {id: travis-ci-and-languages}
+{i: windows}
 
 * [Languages](https://docs.travis-ci.com/user/languages/)
 
 ## Travis-CI and Perl 5
 {id: travis-ci-and-perl-5}
+{i: perl}
 
-TBD
+* `language: perl`
+* runs `cpanm --quiet --installdeps --notest .` so we need a Makefile.PL
+
+![](examples/perl-plain/.travis.yml)
+![](examples/perl-plain/Makefile.PL)
 
 ## Travis-CI and Python
 {id: travis-ci-and-python}
