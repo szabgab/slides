@@ -122,8 +122,8 @@ The actual content is not that interesting.
 ![](examples/levenshtein/with_pylev.py)
 
 
-## Levenshtein - edittidtance
-{id: use-editditance}
+## Levenshtein - editdistance
+{id: use-editdistance}
 
 ![](examples/levenshtein/with_editdistance.py)
 
