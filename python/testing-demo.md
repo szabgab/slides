@@ -229,10 +229,10 @@ tools to locate them.
 Inside the file you'd need to import both the `unittest` module and the module that we are testing. `mystest` in this case.
 
 We need a class with a name that starts with `Test` and inherits from `unittest.TestCase`. In the class we can have one or more
-testing function. Each one starts with a `test_` prefix.
+testing functions. Each one starts with a `test_` prefix.
 Inside the function we can call the function that we are testing and we can compare the result returned by it to some expected value.
-We can compare them in various way using the various assert-methods of the unittest.TestCase. In this example we used the `assertEqual`
-method as we wanted to make sure the actual return value equals to the expected value.
+We can compare them in various ways using the various assert-methods of the unittest.TestCase. In this example we used the `assertEqual`
+method as we wanted to make sure the actual return value equals the expected value.
 
 We can run the tests using `python -m unittest test_one_with_unittest.py`. It will have some output on the screen indicating all the tests
 passed. The exit-code will be 0 as expected.
