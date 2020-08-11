@@ -157,11 +157,15 @@ Codename:	focal
 ## Travis-CI on OSX
 {id: travis-ci-on-osx}
 
-* Setting dist: osx  will mean no build is triggered. I did not even see an error message from Travis telling me that my configuration is incorrect.
+{aside}
+Travis allows the use of Mac OSX for your tests. In order to do that you need to include `os: osx` in the configuration file. (`os` defaults to `linux`).
 
-* Setting os: osx
+Setting `dist: osx` is a mistake. It will mean no build is triggered. Unfortunately I did not even see an error message from Travis telling me that my configuration is incorrect.
+{/aside}
 
-* No docker, no lsb_release
+* Setting `os: osx`
+
+* This image has different default tools. For example it does not have docker, nor lsb_release.
 
 ![](examples/minimal-osx/.travis.yml)
 
