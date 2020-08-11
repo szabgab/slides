@@ -23,6 +23,18 @@ a {
 
 .included-code {
     background-color: #FFFFFF;
+    display:inline-block;
+    padding: 10px;
+}
+
+.highlight {
+    display:inline-block;
+    padding: 10px;
+    margin-bottom: 20px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+    clear: both;
 }
 
 .banner {
