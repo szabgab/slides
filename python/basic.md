@@ -392,42 +392,145 @@ Numpy but also other programming languages might have them.
 
 ## Rectangular (numerical operations)
 {id: rectangular-basic}
+{i: =}
+{i: *}
+
+{aside}
+In this example we create two variables `width` and `height` containing the numbers 23 and 17 respectively.
+
+Unlike in math, in porgramming in general where you see a single equal sign `=` it means **assignment**. It means we want the value on the right-hand-side to be in the variable on the left-hand-side.
+
+Others might say make the word/name on the left-hand-side of the `=` sign refer to the valu that is on the right-hand-side.
+
+In any case this is not a mathematical statement of truth not an equasion, but a statement of an action.
+
+On the next line we multiply the values in two already existing variable and assign the result to a third variable called `area`.
+
+At the end we user the `print` function that we have already seen to print out the results to the screen.
+
+A simple mathematical operation.
+{/aside}
+
+
 ![](examples/basics/rectangular_basic.py)
 
 
 
 ## Multiply string
 {id: multiply-strings}
+
+{aside}
+What if we put the two numbers into quotation marks and this make them strings? Strings that look like number to the naked eyes, but nevertheless
+are strings for Python.
+
+If we try to multilpy them we get a nasty **exception**. Also know as a **runtime error**. The program stops running.
+
+These exception might look nasty, but they are our friends. They tell what went wrong and exactly where did that happen.
+
+You just need to remember that, at least in Python, you need to read the whol thing from the bottom to top. The last line
+holds the error message. Above that you can usually see the content of the line where the problem was found. One line above that
+you'll see the name of the file and the line number where the problem occured.
+
+I stronglu urge you to read the error message. If it is not yet clear what is the problem, then copy it to your favorite
+search engine and read the explanations you find.
+
+Eventually you'll learn to recognize these messages much faster and it will be much easier to fix the problems.
+
+What this current error message means is we tried to multiply two strings and Python cannot do that.
+{/aside}
+
+
 ![](examples/basics/rectangular_strings.py)
 ![](examples/basics/rectangular_strings.err)
 
 
 ## Add numbers
 {id: add-numbers}
+{i: +}
+
+{aside}
+OK, so we know how to multiply two numbers. Let's now have a gian leap and try to add two numbers together.
+
+It works as expected. We can move on to the next challenge.
+{/aside}
+
+
 ![](examples/basics/add_numbers.py)
 
 
 ## Add strings
 {id: add-strings}
+{i: concatenation}
+
+{aside}
+You guessed right, we now wrap the number in quotes and try to add them together.
+
+Surprisingly it works. Thou the result is a bit strange at first. As if Python put one string after the other.
+
+Indeed the `+` operator is defined when we have two strings on the two sides. It is then called concatenation.
+
+In general you'll have to learn what the matematical operators do when they are applied to values other than numbers.
+Usually the operation they do is quite logical. You just need to find the right logic.
+{/aside}
+
 ![](examples/basics/add_strings.py)
 
 
 ## Exercise: Calculations
 {id: exercise-calculations}
 
-* Extend the rectangular_basic.py from above to print both the area and the circumference of the rectangle.
+
+* Extend the `examples/basics/rectangular_basic.py` file from the earlier example to print both the area and the circumference of the rectangle.
 * Write a script that has a variable holding the radius of a circle and prints out the area of the circle and the circumference of the circle.
 * Write a script that has two numbers a and b and prints out the results of a+b, a-b, a*b, a/b
 
 
-
 ## Solution: Calculations
 {id: solution-calculations}
+{i: math}
+{i: pi}
+{i: **}
+
+{aside}
+In order to have the math operation work properly we had to put the addition in parentheses. Just as you would in math class.
+{/aside}
+
 ![](examples/basics/rectangular_solution.py)
+
+{aside}
+In order to calculate the area and the circumference of a circle we need to have `PI` so we created a variable called
+`pi` and put in 3.14 which is a very rough estimation. You might want to have a more exact value of PI.
+{/aside}
+
 ![](examples/basics/circle_solution.py)
+
+{aside}
+Python has lots of modules (aka. libraries, aka. extensions), extra code that you can import and start using.
+For example it has a module called `math` that provides all kinds of math-related functions and attributes.
+
+A function does something, an attribute just hold some value. More about this later.
+
+Specifially it has an attribute you can call `math.pi` with the value `3.141592653589793`. A much better proximation of PI.
+
+In the following solution we used that.
+{/aside}
+
+* The documentation of the [math](https://docs.python.org/library/math.html) module.
+
 ![](examples/basics/circle_math_solution.py)
+
+
+{aside}
+The expression `r * r` might also bothered your eyes. Well don't worry in Python there is an operator to express exponent
+It is the double star: `**`. This is how we can use it to say r-square: `r ** 2`.
+{/aside}
+
+![](examples/basics/circle_power_solution.py)
+
+
+{aside}
+I don't have much to say about the calculator. I think it is quite straight forward.
+{/aside}
+
 ![](examples/basics/calc_solution.py)
-
-
-
 

@@ -15,3 +15,5 @@ filename, extension = os.path.splitext('/path/to/some/file.ext')
 Flask redirect
 redirect(url_for('login'))
 
+
+* What do we do if we need better floating point calculation precision that what Pyhton has?
