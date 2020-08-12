@@ -4,5 +4,8 @@ def main():
 
     if inp == expected_answer:
         print("Welcome to the cabal!")
+        print("Still here")
+
+    print("This happens")
 
 main()
