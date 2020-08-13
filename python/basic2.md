@@ -323,14 +323,19 @@ Whichever is appropriate in your situation.
 {i: isdecimal}
 {i: isnumeric}
 
-* [stdtypes](https://docs.python.org/library/stdtypes.html)
+* We'll talk about this later. For now assume that the user enters something that can be converted to a number.
+* Wrap the code in try-except block to catch any exception raised during the conversion.
+* Use Regular Expressions (regexes) to verify that the input string looks like a number.
+
+* [isdecimal](https://docs.python.org/3/library/stdtypes.html#str.isdecimal) Decimal numbers (digits) (not floating point)
+* [isnumeric](https://docs.python.org/3/library/stdtypes.html#str.isnumeric) Numeric character in the Unicode set (but not floating point number)
+* In your spare time you might want to check out the standard types of Python at [stdtypes](https://docs.python.org/library/stdtypes.html).
 
 ![](examples/basics/isnumber.py)
+
 ![](examples/basics/isnumber.out)
 
-* We'll talk about this later. For now assume that the user enters something that can be converted to a number.
-* Use Regular Expressions (regexes) to verify that the input string looks like a number.
-* Wrap the code in try-except block to catch any exception raised during the conversion.
+![](examples/basics/isnumber2.out)
 
 ## Converting string to int
 {id: converting-to-int}
@@ -361,6 +366,16 @@ Whichever is appropriate in your situation.
 
 ![](examples/basics/if_else.py)
 
+## Divide by 0
+{id: python-divide-by-0}
+{i: ZeroDivisionError}
+
+* Another use-case for if and else:
+
+![](examples/basics/divide_by_zero.py)
+
+![](examples/basics/divide_by_zero.err)
+
 ## Conditionals: if - else (other example)
 {id: python-conditionals-if-else-divide}
 {i: if}
@@ -383,12 +398,14 @@ Whichever is appropriate in your situation.
 
 ![](examples/basics/elif.py)
 
-## Ternary operator
+## Ternary operator (Conditional Operator)
 {id: ternary-operator}
 {i: ?:}
 
 ![](examples/basics/ternary.py)
 ![](examples/basics/without_ternary.py)
+
+In other languages this is the [?:](https://en.wikipedia.org/wiki/%3F:) construct.
 
 ## Case or Switch in Python
 {id: case-switch}
@@ -442,16 +459,21 @@ Results: 42
 ![](examples/basics/rectangular.py)
 
 
-Same in Python 2
+* For historical reasons we also have the solution in Python 2
 
 ![](examples/basics/rectangular_python2.py)
 
 
 ## Solution: Calculator
 {id: solution-calculator}
+
+{aside}
+Here I used the `format` method of the strings to insert the value of op in the `{}` placeholder. We'll learn about this later on.
+{/aside}
+
 ![](examples/basics/calculator.py)
 
-Same in Python 2
+* For historical reasons we also have the solution in Python 2
 
 ![](examples/basics/calculator_python2.py)
 
@@ -514,6 +536,16 @@ echo $?
 
 ![](examples/basics/rectangular_argv.py)
 
+## Solution: Calculator (argv)
+{id: solution-calculator-argv}
+
+![](examples/basics/calculator_argv.py)
+
+{aside}
+The multiplication probably won't work because the Unix/Linux shell replaces the * by the list of files in your current directory and thus the python script will see a list of files instead of the `*`.
+This is not your fault as a programmer. It is a user error. The correct way to run the script is `python calc.py 2 '*' 3`.
+{/aside}
+
 
 ## Solution: Calculator eval
 {id: solution-calculator-eval}
@@ -530,15 +562,7 @@ Operator (+-*/): +
 5
 ```
 
-
-## Solution: Calculator (argv)
-{id: solution-calculator-argv}
-
-![](examples/basics/calculator_argv.py)
-
-The multiplication probably won't work because the Unix/Linux shell replaces the * by the list of files in your current directory and thus the python script will see a list of files instead of the `*`.
-This is not your fault as a programmer. It is a user error. The correct way to run the script is `python calc.py 2 '*' 3`.
-
+* Now forget this and don't use `eval` for the next few years!
 
 ## Compilation vs. Interpretation
 {id: compilation-vs-interpretation}

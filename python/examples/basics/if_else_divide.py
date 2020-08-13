@@ -8,5 +8,7 @@ def main():
         print("Dividing", a, "by",  b)
         print(int(a) / int(b))
 
+    print("Still running")
+
 
 main()

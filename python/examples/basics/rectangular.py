@@ -1,7 +1,4 @@
 def main():
-    #length = 10
-    #width = 3
-
     length = int(input('Length: '))
     width = int(input('Width: '))
 

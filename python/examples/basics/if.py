@@ -6,6 +6,6 @@ def main():
         print("Welcome to the cabal!")
         print("Still here")
 
-    print("This happens")
+    print("This always happens")
 
 main()

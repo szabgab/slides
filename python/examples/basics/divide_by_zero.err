@@ -1,0 +1,9 @@
+First number: 3
+Second number: 0
+Dividing 3 by 0
+Traceback (most recent call last):
+  File "examples/basics/divide_by_zero.py", line 9, in <module>
+    main()
+  File "examples/basics/divide_by_zero.py", line 7, in main
+    print(int(a) / int(b))
+ZeroDivisionError: division by zero

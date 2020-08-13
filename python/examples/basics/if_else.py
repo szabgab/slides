@@ -6,7 +6,7 @@ def main():
         print("Welcome to the cabal!")
     else:
         print("Read the Hitchhiker's guide to the galaxy!")
-        
-    print("Still here")
+
+    print("This always happens")
 
 main()

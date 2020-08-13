@@ -1,9 +1,6 @@
 from __future__ import print_function
 
 def main():
-    #length = 10
-    #width = 3
-
     length = int(raw_input('Length: '))
     width = int(raw_input('Width: '))
 
