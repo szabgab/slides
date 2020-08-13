@@ -144,6 +144,11 @@ True         False
 False        True
 ```
 
+## Toggle
+{id: toggle}
+{i: not}
+
+![](examples/boolean/toggle.py)
 
 ## Short circuit
 {id: short-circuit}
