@@ -17,6 +17,8 @@ Unlike in some other languages Python actually has 2 special symbols to represen
 * True
 * False
 
+![](examples/boolean/true_and_false.py)
+
 ## if statement again
 {id: if-statement-again}
 
