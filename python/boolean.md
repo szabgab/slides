@@ -1,14 +1,30 @@
 # Boolean
 {id: python-boolean}
 
+## Boolean values: True and False
+{id: boolean-values}
+{i: True}
+{i: False}
+
+{aside}
+In this chapter we are going to talk about boolean values and operations on boolean values.
+
+Unlike in some other languages Python actually has 2 special symbols to represent True and False.
+
+(In ther languages 0 usuall represents False and 1 represents True.
+{/aside}
+
+* True
+* False
+
 ## if statement again
 {id: if-statement-again}
 
 ![](examples/boolean/conditionals.py)
 
 
-## True and False
-{id: boolean-values}
+## Assign comparisions to variables
+{id: assign-comparisions-to-variables}
 
 * True and False are real boolean values.
 
