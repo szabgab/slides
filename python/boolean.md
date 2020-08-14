@@ -1,63 +1,12 @@
-# Boolean
+# Comparision and Boolean
 {id: python-boolean}
-
-## Boolean values: True and False
-{id: boolean-values}
-{i: True}
-{i: False}
-
-{aside}
-In this chapter we are going to talk about boolean values and operations on boolean values.
-
-Unlike in some other languages Python actually has 2 special symbols to represent True and False.
-
-(In ther languages 0 usuall represents False and 1 represents True.
-{/aside}
-
-* True
-* False
-
-![](examples/boolean/true_and_false.py)
 
 ## if statement again
 {id: if-statement-again}
+{i: if}
+{i: ==}
 
 ![](examples/boolean/conditionals.py)
-
-
-## Assign comparisions to variables
-{id: assign-comparisions-to-variables}
-
-* True and False are real boolean values.
-
-{i: False}
-{i: True}
-![](examples/boolean/true_false.py)
-
-
-## Boolean
-{id: any-boolean-value}
-![](examples/boolean/boolean.py)
-
-
-## True and False values in Python
-{id: false-values}
-{i: None}
-
-* None
-* 0
-* "" (empty string)
-* False
-* []
-* {}
-* ()
-
-Everything else is true.
-
-![](examples/boolean/boolean_values.py)
-
-`None` is like undef or Null or Nill in other languages.
-
 
 ## Comparision operators
 {id: comparision-operators}
@@ -77,34 +26,47 @@ Everything else is true.
 >              greater than
 >=             greater than or equal
 ```
-![](examples/other/compare_equals.py)
+
+## Compare numbers, compare strings
+{id: compare-numbers-compare-strings}
 
 
-## Do NOT Compare different types
+![](examples/boolean/compare_two_numbers.py)
+
+![](examples/boolean/compare_two_strings.py)
+
+* [ASCII](https://en.wikipedia.org/wiki/ASCII)
+
+## Do NOT Compare different types!
 {id: compare-different-types}
-![](examples/other/compare.py)
 
+![](examples/boolean/compare.py)
 
 In `Python 2` please be careful and only compare the same types.
 Otherwise the result will look strange.
 
 
-
 ```
-True
-False
-True
-False
+Yes
+No
+Yes
+No
 ```
-
-
 
 In `Python 3`, comparing different types raises exception:
 
+![](examples/boolean/compare.out)
 
-![](examples/other/compare.out)
 
+## Complex if statement with boolean operators
+{id: complex-if-statement}
 
+* Boolean operators or Logical operators
+* and
+* or
+* not
+
+![](examples/boolean/complex_if.py)
 
 ## Boolean operators
 {id: boolean-operators}
@@ -162,11 +124,58 @@ True         False
 False        True
 ```
 
+
+## Boolean values: True and False
+{id: boolean-values}
+{i: True}
+{i: False}
+
+{aside}
+In this chapter we are going to talk about boolean values and operations on boolean values.
+
+Unlike in some other languages Python actually has 2 special symbols to represent True and False.
+
+(In ther languages 0 usually represents False and 1 represents True.)
+{/aside}
+
+* True
+* False
+
+## Using True and False in variables
+{id: using-true-and-false-in-variables}
+
+![](examples/boolean/true_and_false.py)
+
+
+## Comparision returns True or False
+{id: comparision-returns-true-or-false}
+
+![](examples/other/compare_equals.py)
+
+
+## Assign comparisions to variables
+{id: assign-comparisions-to-variables}
+
+* True and False are real boolean values.
+
+{i: False}
+{i: True}
+![](examples/boolean/true_false.py)
+
+## Flag
+{id: flag}
+
+![](examples/boolean/flag.py)
+
+
+
+
 ## Toggle
 {id: toggle}
 {i: not}
 
 ![](examples/boolean/toggle.py)
+
 
 ## Short circuit
 {id: short-circuit}
@@ -176,7 +185,33 @@ False        True
 
 ## Short circuit fixed
 {id: short-circuit-fixed}
+
 ![](examples/boolean/short_circuit_fixed.py)
+
+## Does this value count as True or False?
+{id: any-boolean-value}
+
+![](examples/boolean/boolean.py)
+
+
+## True and False values in Python
+{id: false-values}
+{i: None}
+
+* None
+* 0
+* "" (empty string)
+* False
+* []
+* {}
+* ()
+
+Everything else is true.
+
+![](examples/boolean/boolean_values.py)
+
+`None` is like undef or Null or Nill in other languages.
+
 
 
 ## Incorrect use of conditions
