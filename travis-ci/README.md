@@ -13,3 +13,6 @@ https://support.travis-ci.com/hc/en-us/articles/115002904174-Validating-travis-y
 
 * How can the code know if it is running as a cron job?
 * Or that it was run manually?
+
+
+sudo

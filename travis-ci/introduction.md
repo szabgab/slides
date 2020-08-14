@@ -336,3 +336,10 @@ instead of the usual `push`.
 ![](img/build-error.svg)
 
 
+## Job Lifecycle
+{id: job-lifecycle}
+
+* Defaults for each language
+
+![](examples/lifecycle/.travis.yml)
+
