@@ -279,7 +279,7 @@ How to compare:
 ## Solution: compare numbers
 {id: solution-compare-numbers}
 
-![](examples/boolean/compare_strings.py)
+![](examples/boolean/compare_numbers.py)
 
 ## Solution: compare strings
 {id: solution-compare-strings}
