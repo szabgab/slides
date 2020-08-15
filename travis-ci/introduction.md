@@ -244,17 +244,6 @@ instead of the usual `push`.
 
 * [Languages](https://docs.travis-ci.com/user/languages/)
 
-## Travis-CI and Perl 5
-{id: travis-ci-and-perl-5}
-{i: perl}
-
-* `language: perl`
-* runs `cpanm --quiet --installdeps --notest .` so we need a Makefile.PL
-
-![](examples/perl-plain/.travis.yml)
-![](examples/perl-plain/Makefile.PL)
-
-
 ## Build status
 {id: build-status}
 
@@ -289,3 +278,7 @@ $ echo "The main task"
 $ echo "After success"
 $ echo "After the script phase."
 ```
+
+* Add a `- ls qqrq` to the steps to see how we get the "After failure" message.
+
+

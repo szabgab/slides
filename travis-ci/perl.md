@@ -1,6 +1,18 @@
 # Perl
 {id: travis-ci-for-perl}
 
+## Travis-CI and Perl 5
+{id: travis-ci-and-perl-5}
+{i: perl}
+
+* `language: perl`
+* runs `cpanm --quiet --installdeps --notest .` so we need a Makefile.PL
+
+![](examples/perl-plain/.travis.yml)
+![](examples/perl-plain/Makefile.PL)
+
+
+
 ## Perl version matrix
 {id: perl-version-matrix}
 
