@@ -14,5 +14,10 @@ if mode == "length":
     else:
         print("They are of equal length")
 elif mode == "ascii":
-    print(str1 > str2)
+    if str1 > str2:
+        print("First is later in the ABC order")
+    elif str1 < str2:
+        print("Second is later in the ABC order")
+    else:
+        print("The strings are equal")
 
