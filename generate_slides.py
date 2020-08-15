@@ -64,6 +64,7 @@ def main():
     if len(args.names) > 0:
         for name in args.names:
             name = name.rstrip('/')
+            name = name.rstrip('.json')
             if name in available_names:
                 names.append(name)
                 continue
