@@ -15,4 +15,27 @@ https://support.travis-ci.com/hc/en-us/articles/115002904174-Validating-travis-y
 * Or that it was run manually?
 
 
-sudo
+sudo - was deprecated a while ago
+
+
+## Travis-CI and Ruby
+{id: travis-ci-and-ruby}
+
+TBD
+
+## Travis-CI and Java
+{id: travis-ci-and-java}
+
+TBD
+
+## Travis-CI and NodeJS
+{id: travis-ci-and-nodejs}
+
+TBD
+
+## Travis-CI and Go
+{id: travis-ci-and-go}
+
+TBD
+
+

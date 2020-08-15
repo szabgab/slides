@@ -119,8 +119,21 @@ You can see the detailed results in the console output.
 
 ![](examples/minimal-installations/.travis.yml)
 
+```
+Release:	16.04
+Codename:	xenial
+```
+
+## Minimal Travis-CI installations - run shell script
+{id: minimal-travis-ci-installations-run-shell-script}
+
+![](examples/minimal-shell-script/.travis.yml)
+
+![](examples/minimal-shell-script/run.sh)
+
 ## Minimal Travis-CI installations setting the dist
 {id: minimal-travis-ci-installations-setting-the-dist}
+{i: dist}
 {i: Linux}
 {i: Ubuntu}
 {i: trusty}
@@ -128,12 +141,9 @@ You can see the detailed results in the console output.
 {i: bionic}
 {i: focal}
 
-{aside}
-Release:	16.04
-Codename:	xenial
-{/aside}
-
 ![](examples/minimal-dist-trusty/.travis.yml)
+
+* dist: trusty
 
 ```
 Release:	14.04
@@ -171,6 +181,7 @@ Setting `dist: osx` is a mistake. It will mean no build is triggered. Unfortunat
 
 ![](examples/minimal-osx/.travis.yml)
 
+[Build environments](https://docs.travis-ci.com/user/reference/overview/)
 
 ## Travis-CI on MS Windows
 {id: travis-ci-on-windows}
@@ -181,10 +192,12 @@ Setting `dist: osx` is a mistake. It will mean no build is triggered. Unfortunat
 
 ![](examples/minimal-windows/.travis.yml)
 
+[Build environments](https://docs.travis-ci.com/user/reference/overview/)
 
 ## The UI of Travis-CI
 {id: the-ui-of-travis-ci}
 
+* [Travis-CI](https://travis-ci.org/)
 * Current
 * Branches
 * Build History
@@ -193,9 +206,37 @@ Setting `dist: osx` is a mistake. It will mean no build is triggered. Unfortunat
 ## Travis-CI scheduled cron jobs
 {id: travis-ci-scheduled-cron-jobs}
 
+* [Travis-CI](https://travis-ci.org/)
 * More options / Settings
 * Cron Jobs
 * Monthly/Weekly/Daily
+
+
+```
+TRAVIS_EVENT_TYPE=cron
+```
+
+
+## Trigger a custom build
+{id: trigger-a-custom-build}
+
+
+* Can be good for experimentation with Travis without he need to make commits to the repository
+
+* More Options / Trigger Build
+* Set a commit message
+* copy (or type in) the content of a YAML file, it will be merged into the regular .travis.yml
+* (e.g. add more versions of the language)
+
+
+Setting
+
+```
+TRAVIS_EVENT_TYPE=api
+```
+
+instead of the usual `push`.
+
 
 ## Travis-CI and languages
 {id: travis-ci-and-languages}
@@ -235,26 +276,28 @@ Setting `dist: osx` is a mistake. It will mean no build is triggered. Unfortunat
 ![](examples/python-pytest/.travis.yml)
 ![](examples/python-pytest/test_python.py)
 
+## Python version matrix
+{id: python-version-matrix}
 
-## Travis-CI and Ruby
-{id: travis-ci-and-ruby}
+![](examples/python-version-matrix/.travis.yml)
+![](examples/python-pytest/test_python.py)
 
-TBD
+## The environment variables set by Travis - Python
+{id: environment-variables-set-by-travis-python}
+{i: environ}
+{i: os.environ}
 
-## Travis-CI and Java
-{id: travis-ci-and-java}
+* [Environment variables](https://docs.travis-ci.com/user/environment-variables/)
 
-TBD
+![](examples/python-environment-variables/.travis.yml)
 
-## Travis-CI and NodeJS
-{id: travis-ci-and-nodejs}
+![](examples/python-environment-variables/test_python.py)
 
-TBD
+## Set environment variables for Python
+{id: set-environment-variables-for-python}
 
-## Travis-CI and Go
-{id: travis-ci-and-go}
-
-TBD
+![](examples/python-set-environment-variables/.travis.yml)
+![](examples/python-set-environment-variables/test_python.py)
 
 
 ## Perl version matrix
@@ -298,26 +341,6 @@ TBD
 ![](examples/perl-env-version-matrix/.travis.yml)
 
 ![](examples/perl-env-version-matrix/Makefile.PL)
-
-## Trigger a custom build
-{id: trigger-a-custom-build}
-
-
-* Can be good for experimentation with Travis without he need to make commits to the repository
-
-* More Options / Trigger Build
-* Set a commit message
-* copy (or type in) the content of a YAML file, it will be merged into the regular .travis.yml
-* (e.g. add more versions of the language)
-
-
-Setting
-
-```
-TRAVIS_EVENT_TYPE=api
-```
-
-instead of the usual `push`.
 
 ## Build status
 {id: build-status}

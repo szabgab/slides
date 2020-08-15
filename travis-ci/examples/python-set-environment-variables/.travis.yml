@@ -1,0 +1,9 @@
+language: python
+script: pytest -s
+
+python:
+  - "3.7"
+
+env:
+    DATABASE=postgresql
+

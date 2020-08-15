@@ -8,4 +8,3 @@ script:
   - perl -v
   - git --version
   - uname -a
-  - exit 0
