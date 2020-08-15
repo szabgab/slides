@@ -9,4 +9,3 @@ script:
   - git --version
   - lsb_release -a
   - uname -a
-  - exit 0

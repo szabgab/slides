@@ -25,7 +25,7 @@
 {id: empty-git-repository-for-demo}
 
 {aside}
-To get started we are goingto use a Git repository that is almost empty. It only has a README file in.
+To get started we are going to use a Git repository that is almost empty. It only has a README file in.
 We need to visit GitHub with our browse to create the repository at first and then we can decide if we'd like to
 contnue use the GitHub UI or if primarily we'd like to use our editor and git client on our computer.
 {/aside}
@@ -109,10 +109,12 @@ failed. You can also look at the UI in Travis-CI to see the failure.
 
 {aside}
 Even though the machine this runs on has a `minimal` installation it already has quite a few tools that you can use.
-Instead of having a single value for the `script` key we convert it to a list of commands. If any of these fails
-(has an exit code different from 0) then the whole process stops.
+Instead of having a single value for the `script` key we convert it to a list of commands.
+Travis executes all the other commands, but if any of these fails (has an exit code different from 0) then the whole process is reported as failure.
 
-If they are all successful you can see the results in the console output.
+If they are all successful the it is reported as success.
+
+You can see the detailed results in the console output.
 {/aside}
 
 ![](examples/minimal-installations/.travis.yml)
