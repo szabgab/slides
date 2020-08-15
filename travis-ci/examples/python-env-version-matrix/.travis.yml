@@ -1,0 +1,16 @@
+language: python
+script: pytest -s -m $DATABASE
+
+python:
+  - "3.7"
+  - "3.8"
+
+env:
+    - DATABASE=postgresql
+    - DATABASE=mysql
+
+matrix:
+  exclude:
+  - python: "3.7"
+    env: DATABASE=mysql
+

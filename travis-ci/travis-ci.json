@@ -6,6 +6,8 @@
     "copyright_url": "https://szabgab.com/",
     "version": "1.01",
     "files": [
-        "introduction.md"
+        "introduction.md",
+        "python.md",
+        "perl.md"
     ]
 }
