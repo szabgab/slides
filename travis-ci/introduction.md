@@ -343,3 +343,11 @@ instead of the usual `push`.
 
 ![](examples/lifecycle/.travis.yml)
 
+```
+$ echo "Before install"
+$ echo "Install"
+$ echo "Before the script phase"
+$ echo "The main task"
+$ echo "After success"
+$ echo "After the script phase."
+```
