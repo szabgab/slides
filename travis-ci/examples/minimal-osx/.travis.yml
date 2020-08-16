@@ -1,10 +1,5 @@
 os: osx
 language: minimal
-script:
-  - echo Hello World
-  - python -V
-  - python3 -V
-  - ruby -v
-  - perl -v
-  - git --version
-  - uname -a
+script: ./run.sh
+
+before_script: chmod +x run.sh

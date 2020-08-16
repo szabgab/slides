@@ -11,6 +11,14 @@
 * The basis of all learning and all improvement is getting feedback as soon as possible.
 * Hence introducing Continuous Integration is one of the best ways to improve the quality of your project.
 
+## What is the status of CI in companies?
+{id: what-is-the-status-of-ci-in-companies}
+
+* [Report from March 2018](https://www.digitalocean.com/blog/currents-march-2018/)
+
+* Only 45% of developers in organizations with five employees or less are using continuous integration.
+* Organizations with over 1,000 employees, 68% of developers report using continuous integration.
+
 ## Why use Travis-CI?
 {id: why-use-travis-ci}
 
@@ -30,10 +38,10 @@ We need to visit GitHub with our browse to create the repository at first and th
 contnue use the GitHub UI or if primarily we'd like to use our editor and git client on our computer.
 {/aside}
 
-* Use the GitHub UI
+* Use the [GitHub UI](https://github.com/)
 * Use a Git client on your computer
 
-## Crate repository directly on GitHub
+## Create repository directly on GitHub
 {id: create-repository-directly-on-github}
 
 {aside}
@@ -157,7 +165,7 @@ Release:	18.04
 Codename:	bionic
 ```
 
-* dist: focal - Not yet supported officially
+* dist: focal
 
 ```
 Release:	20.04
@@ -180,6 +188,8 @@ Setting `dist: osx` is a mistake. It will mean no build is triggered. Unfortunat
 * This image has different default tools. For example it does not have docker, nor lsb_release.
 
 ![](examples/minimal-osx/.travis.yml)
+
+![](examples/minimal-osx/run.sh)
 
 [Build environments](https://docs.travis-ci.com/user/reference/overview/)
 
@@ -211,11 +221,13 @@ Setting `dist: osx` is a mistake. It will mean no build is triggered. Unfortunat
 * Cron Jobs
 * Monthly/Weekly/Daily
 
-
 ```
 TRAVIS_EVENT_TYPE=cron
 ```
 
+instead of the usual `push`.
+
+* [Environment Variables](https://docs.travis-ci.com/user/environment-variables/)
 
 ## Trigger a custom build
 {id: trigger-a-custom-build}
@@ -236,6 +248,8 @@ TRAVIS_EVENT_TYPE=api
 ```
 
 instead of the usual `push`.
+
+* [Environment Variables](https://docs.travis-ci.com/user/environment-variables/)
 
 
 ## Travis-CI and languages

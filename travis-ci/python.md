@@ -27,7 +27,7 @@
 {id: python-version-matrix}
 
 ![](examples/python-version-matrix/.travis.yml)
-![](examples/python-pytest/test_python.py)
+![](examples/python-version-matrix/test_python.py)
 
 ## The environment variables set by Travis - Python
 {id: environment-variables-set-by-travis-python}

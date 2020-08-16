@@ -1,2 +1,4 @@
 language: minimal
 script: ./run.sh
+
+before_script: chmod +x run.sh
