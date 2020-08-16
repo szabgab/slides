@@ -281,4 +281,9 @@ $ echo "After the script phase."
 
 * Add a `- ls qqrq` to the steps to see how we get the "After failure" message.
 
+## Languages
+{id: languages}
+
+* [Python](travis-ci-for-python)
+* [Perl](travis-ci-for-perl)
 
