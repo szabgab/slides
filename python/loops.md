@@ -12,22 +12,25 @@
 ## for-in loop on strings
 {id: for-loop-on-strings}
 {i: for}
-![](examples/strings/for.py)
-![](examples/strings/for.out)
+
+![](examples/loops/for.py)
+![](examples/loops/for.out)
 
 
 ## for-in loop on list
 {id: for-loop-on-list-sample}
 {i: for}
-![](examples/strings/for_list.py)
-![](examples/strings/for_list.out)
+
+![](examples/loops/for_list.py)
+![](examples/loops/for_list.out)
 
 
 ## for-in loop on range
 {id: for-loop-on-range}
 {i: range}
-![](examples/strings/for_range.py)
-![](examples/strings/for_range.out)
+
+![](examples/loops/for_range.py)
+![](examples/loops/for_range.out)
 
 
 ## Iterable, iterator
@@ -40,91 +43,96 @@
 ## for in loop with early end using break
 {id: for-break}
 {i: break}
-![](examples/strings/for_break.py)
-![](examples/strings/for_break.out)
+
+![](examples/loops/for_break.py)
+![](examples/loops/for_break.out)
 
 
 ## for in loop skipping parts using continue
 {id: for-continue}
 {i: continue}
-![](examples/strings/for_continue.py)
-![](examples/strings/for_continue.out)
+
+![](examples/loops/for_continue.py)
+![](examples/loops/for_continue.out)
 
 
 ## for in loop with break and continue
 {id: for-break-continue}
-![](examples/strings/for_break_continue.py)
-![](examples/strings/for_break_continue.out)
 
+![](examples/loops/for_break_continue.py)
+![](examples/loops/for_break_continue.out)
 
 ## while loop
 {id: while-loop}
 {i: while}
-![](examples/strings/while.py)
-![](examples/strings/while.out)
 
+![](examples/loops/while.py)
+![](examples/loops/while.out)
 
 
 ## Infinite while loop
 {id: infinite-while-loop}
 {i: while}
-![](examples/strings/while_infinite.py)
-![](examples/strings/while_infinite.out)
+
+![](examples/loops/while_infinite.py)
+![](examples/loops/while_infinite.out)
 
 * Don't do this!
 * Make sure there is a proper end-condition. (exit-condition)
 * Use Ctrl-C to stop it
 
-
-
 ## While with complex expression
 {id: while-complex-expression}
-![](examples/strings/while_complex_condition.py)
+
+![](examples/loops/while_complex_condition.py)
+![](examples/loops/while_complex_condition.out)
 
 
 ## While with break
 {id: while-with-break}
-![](examples/strings/while_break.py)
+
+![](examples/loops/while_break.py)
+![](examples/loops/while_break.out)
 
 
 ## While True
 {id: while-true}
-![](examples/strings/while_true.py)
+
+![](examples/loops/while_true.py)
+![](examples/loops/while_true.out)
 
 
 ## Duplicate input call
 {id: duplicate-input-call}
-![](examples/strings/duplicate_input_call.py)
 
+![](examples/loops/duplicate_input_call.py)
 
 ## Eliminate duplicate input call
 {id: eliminate-duplicate-input-call}
-![](examples/strings/single_input_call.py)
+
+![](examples/loops/single_input_call.py)
 
 
 ## do while loop
 {id: do-while-loop}
 {i: do while}
 
-
 There is no `do ... while` in Python but we can write code like this to have similar effect.
 
-
-![](examples/strings/do_while.py)
+![](examples/loops/do_while.py)
 
 
 ## while with many continue calls
 {id: while-many-continue}
 {i: continue}
-![](examples/strings/infinite_while_continue.py)
+
+![](examples/loops/infinite_while_continue.py)
 
 
 ## Break out from multi-level loops
 {id: break-from-multi-level-loops}
 
 Not supported in Python. "If you feel the urge to do that, your code is probably too complex. create functions!"
-
-
 
 ## Exit vs return vs break and continue
 {id: exit-return-break}
@@ -296,8 +304,8 @@ and so they can be implemented separately.
 ## Solution: Count unique characters
 {id: solution-count-unique}
 
-![](examples/strings/number_of_different.py)
-![](examples/strings/number_of_different_set.py)
+![](examples/loops/number_of_different.py)
+![](examples/loops/number_of_different_set.py)
 
 
 ## MasterMind to debug
