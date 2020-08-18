@@ -1,6 +1,12 @@
 # Perl Tk
 {id: tk}
 
+## Perl Tk
+{id: tk-perl}
+
+* A graphical user interface toolkit for Perl
+* [](https://metacpan.org/pod/Tk)
+
 ## Plain
 {id: tk-plain}
 {i: Tk}
