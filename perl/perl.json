@@ -41,6 +41,7 @@
         "process.md",
         "psgi.md",
         "dancer.md",
+        "tk.md",
         "win32.md"
     ]
 }
