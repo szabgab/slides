@@ -217,31 +217,74 @@ python count_unique.py abcdaaa
 ## Solution: Print all the locations in a string
 {id: solution-print-all-the-locations}
 
-![](examples/strings/find_loop.py)
+{aside}
+When you start thinking about this exercise, you probably call `loc = text.find("c")` and then you wonder how could you find the next element.
+After a while it might occur to you that the `find` method can get a second parameter to set the location where we start the search.
+
+Basically you need to call `loc = text.find("c", loc + 1)` but that looks strange. How can you use `loc` (as a paramter of the function) and also
+assign to it. However programming languages don't have a problem with this as the assignment happens after the right-hand-side was fully executed.
+
+The problem that now you have two different calls to `find`. The first one and all the subsequent calls.
+
+How could we merge the two calls?
+
+The trick is that you need to have an initial value for the `loc` variable and it has to be -1, so when we call `find` for the first time,
+it will start from the first character (index 0).
+{/aside}
+
+![](examples/loops/find_loop_one.py)
+
+{aside}
+Using an additinal variable might make the code easier to read:
+{/aside}
+
+![](examples/loops/find_loop.py)
 
 
 ## Solution 1 for Number Guessing
 {id: solution-1-number-guessing}
 
-![](examples/strings/number1.py)
+![](examples/loops/number1.py)
 
-
-## Solution for Number Guessing (debug)
+## Solution 2 for Number Guessing (x)
 {id: solution-2-number-guessing}
 
-![](examples/strings/number_debug.py)
+{aside}
+The main trick is that you check for the input being "x" **before** you try to convert it to an integer.
+{/aside}
+
+![](examples/loops/number2.py)
+
+
+## Solution 3 for Number Guessing (s)
+{id: solution-3-number-guessing}
+
+![](examples/loops/number3.py)
+
+## Solution for Number Guessing (debug)
+{id: solution-4-number-guessing}
+
+{aside}
+One important thing is to remember that you can create a toggle by just calling `not` on a boolean variable every time you'd like to flip the switch.
+
+The other one is that flipping the switch (pressing d) and printing the current value because debug mode is on, are two separate operations that are not directly related
+and so they can be implemented separately.
+{/aside}
+
+
+![](examples/loops/number_debug.py)
 
 
 ## Solution for Number Guessing (move)
-{id: solution-3-number-guessing}
+{id: solution-5-number-guessing}
 
-![](examples/strings/number_move.py)
+![](examples/loops/number_move.py)
 
 
 ## Solution for Number Guessing (multi-game)
-{id: solution-4-number-guessing}
+{id: solution-6-number-guessing}
 
-![](examples/strings/number_multi.py)
+![](examples/loops/number_multi.py)
 
 
 ## Solution: MasterMind
