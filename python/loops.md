@@ -303,8 +303,15 @@ and so they can be implemented separately.
 
 ## Solution: Count unique characters
 {id: solution-count-unique}
+{i: set}
 
 ![](examples/loops/number_of_different.py)
+
+{aside}
+The above solution works, but there is a better solution using sets that we have not learned yet. Nevertheless, let me show you that solution:
+{/aside}
+
+
 ![](examples/loops/number_of_different_set.py)
 
 

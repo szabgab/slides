@@ -1,6 +1,11 @@
 import sys
 
-s = sys.argv[1]
+if len(sys.argv) != 2:
+    exit("Need a string to count")
 
-print(len(set(s)))
+text = sys.argv[1]
+
+set_of_chars = set(text)
+
+print(len(set_of_chars))
 
