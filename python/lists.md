@@ -306,6 +306,25 @@ x = eXit, s = Show, [+-*/=]
 :x
 ```
 
+## Exercise: MasterMind
+{id: exercise-mastermind}
+
+Implement the MasterMind game.
+
+The computer "thinks" a number with 4 different digits.
+You guess which digits. For every digit that matched both
+in value, and in location the computer gives you a `*`. For every
+digit that matches in value, but not in space the computer gives
+you a `+`. Try to guess the given number in as few guesses as possible.
+
+
+```
+Computer: 2153
+You:      2467  *
+You:      2715  *++
+```
+
+
 ## Solution: Queue with list
 {id: solution-queue}
 
@@ -326,6 +345,17 @@ x = eXit, s = Show, [+-*/=]
 
 ![](examples/lists/reverse_polish_calculator_deque.py)
 
+## Solution: MasterMind
+{id: solution-mastermind}
+
+![](examples/lists/master_mind.py)
+
+## MasterMind to debug
+{id: mastermind-to-debug}
+
+Debug the following version of the MasterMind game.
+
+![](examples/lists/MasterMind_to_debug.py)
 
 ## Debugging Queue
 {id: debugging-queue}

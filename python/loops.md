@@ -192,24 +192,6 @@ Level 6
 * Pressing 'n' will skip this game and start a new one. Generates a new number to guess.
 
 
-## Exercise: MasterMind
-{id: exercise-mastermind}
-
-Implement the MasterMind game.
-
-The computer "thinks" a number with 4 different digits.
-You guess which digits. For every digit that matched both
-in value, and in location the computer gives you a `*`. For every
-digit that matches in value, but not in space the computer gives
-you a `+`. Try to guess the given number in as few guesses as possible.
-
-
-```
-Computer: 2153
-You:      2467  *
-You:      2715  *++
-```
-
 
 ## Exercise: Count unique characters
 {id: exercise-count-unique}
@@ -295,12 +277,6 @@ and so they can be implemented separately.
 ![](examples/loops/number_multi.py)
 
 
-## Solution: MasterMind
-{id: solution-mastermind}
-
-![](examples/lists/master_mind.py)
-
-
 ## Solution: Count unique characters
 {id: solution-count-unique}
 {i: set}
@@ -314,12 +290,5 @@ The above solution works, but there is a better solution using sets that we have
 
 ![](examples/loops/number_of_different_set.py)
 
-
-## MasterMind to debug
-{id: mastermind-to-debug}
-
-Debug the following version of the MasterMind game.
-
-![](examples/loops/MasterMind_to_debug.py)
 
 
