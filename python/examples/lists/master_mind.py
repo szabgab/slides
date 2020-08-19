@@ -17,7 +17,10 @@ while True:
         print("We need exactly {} characters".format(width))
         continue
 
-    guess = list(map(int, inp))
+    guess = []
+    for cr in inp:
+        guess.append(int(cr))
+    # guess = list(map(int, inp))
     # print(guess)
 
     if hidden == guess:
