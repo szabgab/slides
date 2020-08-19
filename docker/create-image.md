@@ -402,6 +402,18 @@ docker build -t mydocker .
 docker run --rm -it mydocker
 ```
 
+## Docker COPY welcome file
+{id: docker-copy-welcome-file}
+{i: COPY}
+
+![](examples/ubuntu-copy-welcome/Dockerfile)
+
+```
+docker build -t mydocker .
+docker run --rm -it mydocker
+```
+
+
 ## Docker curl
 {id: docker-curl}
 
@@ -483,6 +495,19 @@ curl: try 'curl --help' or 'curl --manual' for more information
 $ docker run --rm  mydocker https://code-maven.com/
 ```
 
+## Docker: ENTRYPOINT vs CMD
+{id: docker-entrypoint-vs-cmd}
+
+![](examples/runner/Dockerfile)
+
+```
+$ docker build -t mydocker .
+$ docker run --rm  mydocker
+$ docker run --rm  mydocker https://szabgab.com/
+```
+
+* [ENTRYPOINT](https://docs.docker.com/engine/reference/builder/#entrypoint)
+* [CMD](https://docs.docker.com/engine/reference/builder/#cmd)
 
 ## Docker: Mounting host directory
 {id: docker-mounting-host-directory}
