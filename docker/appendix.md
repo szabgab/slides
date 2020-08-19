@@ -207,3 +207,46 @@ Build Cache         0                   0                   0B                  
 ```
 * [system prune](https://docs.docker.com/engine/reference/commandline/system_prune/)
 
+## Docker history
+{id: docker-history}
+
+{aside}
+Each Docker image is built by layers upon layers.
+
+The `docker history` command can show you these layers.
+{/aside}
+
+```
+docker history IMAGE
+```
+
+{aside}
+Here you can see that the Ubuntu image we have downloaded from the Docker Hub has 5 layers.
+{/aside}
+
+```
+$ docker history ubuntu:20.04
+```
+
+![](examples/dock/history_ubuntu.out)
+
+
+## Docker history - multiple layers
+{id: docker-history-multiple-layers}
+
+{aside}
+If you run the same command on the mydocker image we have just created you can see that it has 2 more layers.
+Each **RUN** command created a layer.
+
+Layers are created separately so having multiple layers makes our development process faster.
+However having many layers is not recommended so once in a while we usually merge the RUN instructions together
+and rebuild the image to have less layers. We'll talk about this later.
+{/aside}
+
+```
+docker history mydocker
+```
+
+![](examples/dock/history_mydocker.out)
+
+

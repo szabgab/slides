@@ -386,6 +386,22 @@ In order to really get into the interactive shell of this container we need to o
 docker run -it --rm mydocker bash
 ```
 
+## Docker: Ubuntu htop
+{id: docker-ubuntu-htop}
+{i: RUN}
+
+{aside}
+Previously we created a Docker image manually after we have installed `htop` and created a file manually in a Docker container.
+Let's do the same now using Dockerfile.
+{/aside}
+
+![](examples/ubuntu-htop/Dockerfile)
+
+```
+docker build -t mydocker .
+docker run --rm -it mydocker
+```
+
 ## Docker curl
 {id: docker-curl}
 
@@ -394,8 +410,10 @@ In the previous example we saw that we can use commands other than `echo`, but w
 It will fail because `curl` is not installed in the image.
 {/aside}
 
+* Let's try to use `curl`
+
 ```
-$ docker run  --rm mydocker curl https://code-maven.com/
+$ docker run  --rm ubuntu:20.04 curl https://code-maven.com/
 docker: Error response from daemon: OCI runtime create failed: container_linux.go:349: starting container process caused "exec: \"curl\": executable file not found in $PATH": unknown.
 ```
 
@@ -429,51 +447,7 @@ Then we can run it. This time it will execute the `curl` command.
 $ docker run  --rm mydocker curl https://code-maven.com/
 ```
 
-
-## Docker history
-{id: docker-history}
-
-{aside}
-Each Docker image is built by layers upon layers.
-
-The `docker history` command can show you these layers.
-{/aside}
-
-```
-docker history IMAGE
-```
-
-{aside}
-Here you can see that the Ubuntu image we have downloaded from the Docker Hub has 5 layers.
-{/aside}
-
-```
-$ docker history ubuntu:20.04
-```
-
-![](examples/dock/history_ubuntu.out)
-
-
-## Docker history - multiple layers
-{id: docker-history-multiple-layers}
-
-{aside}
-If you run the same command on the mydocker image we have just created you can see that it has 2 more layers.
-Each **RUN** command created a layer.
-
-Layers are created separately so having multiple layers makes our development process faster.
-However having many layers is not recommended so once in a while we usually merge the RUN instructions together
-and rebuild the image to have less layers. We'll talk about this later.
-{/aside}
-
-```
-docker history mydocker
-```
-
-![](examples/dock/history_mydocker.out)
-
-
-## Curl command
+## Docker image as Curl command
 {id: docker-curl-command}
 
 {aside}
