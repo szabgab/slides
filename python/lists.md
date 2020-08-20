@@ -73,8 +73,8 @@
 
 ## List assignment and list copy
 {id: list-copy}
-{i: copy}
 {i: [:]}
+
 ![](examples/lists/not_copy.py)
 
 * There is one list in the memory and two pointers to it.
@@ -83,7 +83,13 @@
 
 ![](examples/lists/real_copy.py)
 
-Deep copy
+## Shallow vs. Deep copy of lists
+{id: deep-copy-of-lists}
+{i: copy}
+{i: deepcopy}
+
+![](examples/lists/shallow_copy.py)
+
 
 ![](examples/lists/deep_copy.py)
 
@@ -91,6 +97,7 @@ Deep copy
 ## join
 {id: join}
 {i: join}
+
 ![](examples/lists/join.py)
 
 
