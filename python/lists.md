@@ -52,7 +52,12 @@
 ## Change a List
 {id: list-change}
 {i: :}
+
 ![](examples/lists/change.py)
+
+![](examples/lists/change_sublist.py)
+
+![](examples/lists/change_element.py)
 
 * Unlike strings, lists are mutable. You can change the content of a list by assigning values to its elements.
 * You can use the slice notation to change several elements at once.
@@ -62,6 +67,7 @@
 
 ## Change with steps
 {id: list-change-steps}
+
 ![](examples/lists/change_steps.py)
 
 
