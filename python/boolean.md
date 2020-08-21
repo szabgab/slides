@@ -1,4 +1,4 @@
-# Comparision and Boolean
+# Comparison and Boolean
 {id: python-boolean}
 
 ## if statement again
@@ -8,8 +8,8 @@
 
 ![](examples/boolean/conditionals.py)
 
-## Comparision operators
-{id: comparision-operators}
+## Comparison operators
+{id: comparison-operators}
 {i: ==}
 {i: !=}
 {i: <}
@@ -147,14 +147,14 @@ Unlike in some other languages Python actually has 2 special symbols to represen
 ![](examples/boolean/true_and_false.py)
 
 
-## Comparision returns True or False
-{id: comparision-returns-true-or-false}
+## Comparison returns True or False
+{id: comparison-returns-true-or-false}
 
 ![](examples/other/compare_equals.py)
 
 
-## Assign comparisions to variables
-{id: assign-comparisions-to-variables}
+## Assign comparisons to variables
+{id: assign-comparisons-to-variables}
 
 * True and False are real boolean values.
 
@@ -230,7 +230,7 @@ if status_code == 401 or 302:
 ```
 
 {aside}
-However this is incorrect. This condition will be always true  as this is actually same as if you wrote: 
+However, this is incorrect. This condition will always be true  as this is actually same as if you wrote: 
 `if (status_code == 401) or (302)` so it will compare status_code to 401, and it will separately check if
 302 is True, but any number different from 0 is considered to be True so the above expression will always be True.
 {/aside}
