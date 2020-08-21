@@ -91,7 +91,7 @@ always call the "int" function: int(b/a).
 ## built-in method
 {id: built-in-method}
 
-* A commont mistake. Not calling the method.
+* A common mistake. Not calling the method.
 
 ![](examples/numbers/get_random.py)
 
@@ -105,7 +105,7 @@ at the end of a method call.
 ## Exception: TypeError: 'module' object is not callable
 {id: exception-module-object-is-not-callable}
 
-* A commont mistake. Calling the class and not the method.
+* A common mistake. Calling the class and not the method.
 
 ![](examples/numbers/rnd.py)
 ![](examples/numbers/rnd.err)
@@ -120,7 +120,7 @@ at the end of a method call.
 ## Exception: AttributeError: module 'random' has no attribute
 {id: exception-attributeerror-module-has-no-attribute}
 
-* A commont mistake. Using the wrong filename.
+* A common mistake. Using the wrong filename.
 
 
 This works fine:
@@ -144,7 +144,7 @@ Make sure the names of your files are not the same as the names of any of the py
 Level 0
 
 * Using the random module the computer "thinks" about a whole number between 1 and 20.
-* The user has to guess the number. After the user types in the guess the computer tells if this was bigger or smaller than the number it generated, or if was the same.
+* The user has to guess the number. After the user types in the guess the computer tells if this was bigger or smaller than the number it generated, or if it was the same.
 * The game ends after just one guess.
 
 Level 1-
