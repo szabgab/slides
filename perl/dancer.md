@@ -129,6 +129,37 @@ The `like` keyword of Test::More provides this testing functionality.
 
 * Run as `prove test.t`
 
+## 404 Not Found in Dancer
+{id: dancer-404-not-found-error}
+
+{aside}
+If a user tries to access a path that has no matching route defined then Dancer will return a default "404 Not Found" error page
+with the appropriate HTTP status code.
+
+Later we'll see how can we change the content of this page to be branded to our site.
+{/aside}
+
+![](examples/dancer/hello_404/app.psgi)
+![](examples/dancer/hello_404/test.t)
+
+## 500 Internal Server Error in Dancer
+{id: dancer-500-internal-server-error}
+
+{aside}
+Mistakes can happen. There might be an exception somewhere in one of the routes. Don't worry though. If that happens Dancer will show a standard "500 Internal Error" page.
+
+In our sample application the "/calc" route tries to make some calculation but a division by 0 error occures. This will trigger the "500 Internal Error".
+
+Usually you don't plan to have certain URLs and certain input generate such error, so you probably will never write a test for this, but now, that we are showing it
+I put together one.
+
+Later we'll see how can we change the content of this page to be branded to our site.
+{/aside}
+
+![](examples/dancer/hello_500/app.psgi)
+![](examples/dancer/hello_500/test.t)
+
+
 ## Process GET (query request) parameters in Dancer
 {id: process-get-parameters-in-dancer}
 {i: query_parameters}
@@ -256,15 +287,31 @@ We can set it up in the following way:
 {aside}
 If you have seen the previous examples then this test script won't surprise you.
 
-The first subtest, called 'main', checkes the main page of our web application. Because this is such a small example we checking eqyality here using the **is** function.
+The first subtest, called 'main', checks the main page of our web application. Because this is such a small example we check equality here using the **is** function.
 
-The second subtes, called 'one', checks a value that can be a valid user-id.
+The second subtest, called 'one', checks a value that can be a valid user-id.
 
-The thirds subtests called 'anything', checks some arbitrary string as a user-id. As you can see, in our current version this call is also expected to work and return the word "anything".
+The third subtest, called 'anything', checks some arbitrary string as a user-id. As you can see, in our current version this call is also expected to work and return the word "anything".
 That's right for this test as our current version of the application does not do any input validation.
 {/aside}
 
 ![](examples/dancer/params-in-routes/test.t)
+
+## Dancer: Type-checking for the route parameters
+{id: type-checking-for-the-route-parameters}
+{i: Int}
+
+{aside}
+Dancer allows us to use type-constraints to limit what values we accept in a route. For example we can tell it that the value must be an integer.
+
+If the request does not match the expected type then that route does not match. If none of the routes match then we get a "404 Not Found" error as expected.
+{/aside}
+
+* [Route-Handlers](https://metacpan.org/pod/distribution/Dancer2/lib/Dancer2/Manual.pod#Route-Handlers)
+
+![](examples/dancer/params-in-routes-int/app.psgi)
+
+![](examples/dancer/params-in-routes-int/test.t)
 
 ## Dancer: Send 404 Not Found manually
 {id: sent-404-not-found-manually-dancer}
