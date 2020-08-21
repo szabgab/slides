@@ -132,7 +132,7 @@ There is no `do ... while` in Python but we can write code like this to have sim
 ## Break out from multi-level loops
 {id: break-from-multi-level-loops}
 
-Not supported in Python. "If you feel the urge to do that, your code is probably too complex. create functions!"
+Not supported in Python. "If you feel the urge to do that, your code is probably too complex. Create functions!"
 
 ## Exit vs return vs break and continue
 {id: exit-return-break}
