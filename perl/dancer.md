@@ -253,6 +253,17 @@ We can set it up in the following way:
 ## Dancer: Test parameter in route
 {id: test-parameter-in-route-dancer}
 
+{aside}
+If you have seen the previous examples then this test script won't surprise you.
+
+The first subtest, called 'main', checkes the main page of our web application. Because this is such a small example we checking eqyality here using the **is** function.
+
+The second subtes, called 'one', checks a value that can be a valid user-id.
+
+The thirds subtests called 'anything', checks some arbitrary string as a user-id. As you can see, in our current version this call is also expected to work and return the word "anything".
+That's right for this test as our current version of the application does not do any input validation.
+{/aside}
+
 ![](examples/dancer/params-in-routes/test.t)
 
 ## Dancer: Send 404 Not Found manually
