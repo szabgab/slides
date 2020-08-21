@@ -7,11 +7,11 @@
 
 {aside}
 In Python, just as in most of the programming languages you must put any free text inside a pair of quote characters.
-Otherwise Python will try to find meaning in the text.1
+Otherwise Python will try to find meaning in the text.
 
 These pieces of texts are called "strings".
 
-In Python you can put string between two single quotes: '' or between two double quotes: "". Which one does not matter.
+In Python you can put string between two single quotes: '' or between two double quotes: "". Which one, does not matter.
 {/aside}
 
 ![](examples/strings/quotes.py)
@@ -30,7 +30,7 @@ In Python you can put string between two single quotes: '' or between two double
 {i: '''}
 
 {aside}
-If you would like to create a string the spreads on multiple lines,
+If you would like to create a string that spreads on multiple lines,
 there is a possibility to put the text between 3 quotes on both sides. Either 2*3 single-quotes
 or 2*3 double-quotes.
 {/aside}
@@ -63,12 +63,12 @@ The `len` function returns the length of the string in number of characters.
 {i: +}
 
 {aside}
-You might be used to the fact the you can only multiple numbers, but in python you can also "multiply" a string by a number.
-It is called repetition. In this example we have a string "Jar " that we repeat twice.repetition
+You might be used to the fact that you can only multiply numbers, but in python you can also "multiply" a string by a number.
+It is called repetition. In this example we have a string "Jar " that we repeat twice.
 
-We can also add two strings to concatenate them together.repetition
+We can also add two strings to concatenate them together.
 
-I don't think the repetition operator is used very often, but in one case it could come very handy.
+I don't think the repetition operator is used very often, but in one case it could come in very handy.
 When you are writing some text report and you'd like to add a long line of dashes that would be exactly the same length
 as your title.
 {/aside}
@@ -127,7 +127,7 @@ Replace part of a string
 ![](examples/strings/string_copy.py)
 
 {aside}
-When assigning a variable pointing a string, the new variable is pointing to the same string..
+When assigning a variable pointing to a string, the new variable is pointing to the same string..
 If we then assign some other string to either of the variables, then they will point to two different strings.
 {/aside}
 
