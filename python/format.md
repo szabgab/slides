@@ -13,7 +13,7 @@
 ![](examples/strings/format.py)
 ![](examples/strings/format.out)
 
-* When using % to print more than one values, put the values in parentheses forming a tuple.
+* When using % to print more than one value, put the values in parentheses forming a tuple.
 * In version 2.6 and below you need to write {0} {1} etc, as a placeholder of the format method.
 * f-string are from Python 3.6
 
