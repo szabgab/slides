@@ -13,7 +13,7 @@
 When people say they Python in relation to programming they either mean the Python programming language or they
 mean the tool that can translate some text (code) written in the Python programming language to the language a computer
 can actually understand. On MS Windows this is the **python.exe** you need to install. On Linux/Mac it is usally called **python**
-or **python3**. The generic name of the tool that translates a programming language for the computer is eiter
+or **python3**. The generic name of the tool that translates a programming language for the computer is either
 called a compiler or an interpreter. We'll talk about this later on.
 {/aside}
 
@@ -47,7 +47,7 @@ Unfortunately you can still encounter many companies and many projects in compan
 In such cases you probably will have to write in Python 2.
 
 In addition when you search for solutions on the Internet in many cases you'll encounter solution that were written
-for Python 2. Luckily in most of the cases it is almost trivial to convert thise small examples to work on Python 3.
+for Python 2. Luckily in most of the cases it is almost trivial to convert these small examples to work on Python 3.
 You just need to be able to recognize that the code was originally written for Python 2 and you need to be able to make
 the adjustments.
 
@@ -65,7 +65,7 @@ You are free to skip these parts and come back to them when the need arises.
 * Apple/Mac OSX
 
 {aside}
-We are going to cover how to install Python all 3 major operating systems.
+We are going to cover how to install Python on all 3 major operating systems.
 {/aside}
 
 ## Installation on Linux
@@ -214,7 +214,7 @@ python --version
 ```
 
 
-You can run some Python code without creating a file, but I don't rememeber ever needing this. If you insists
+You can run some Python code without creating a file, but I don't remember ever needing this. If you insist
 
 
 ```
@@ -297,7 +297,7 @@ Try your environment:
 {id: what-is-programming}
 
 * Use some language to tell the computer what to do.
-* Like a cooking recepie it has step-by-step instructions.
+* Like a cooking recipe it has step-by-step instructions.
 * Taking a complex problem and dividing it into small steps a computer can do.
 
 
@@ -308,7 +308,7 @@ Try your environment:
 * A computer CPU is created from transistors, 1 and 0 values. (aka. bits)
 * Its language consists of numbers. (e.g 37 means move the content of ax register to bx register)
 * English? too complex, too much ambiguity.
-* Programming languages are in-beteen.
+* Programming languages are in-between.
 
 
 
@@ -345,9 +345,9 @@ Try your environment:
 
 
 * Programming languages have a lot less words, but they are very strict on the grammar (syntax).
-* A mising comma can break your code.
+* A missing comma can break your code.
 * A missing space will change the meaning of your code.
-* An incorreect word can ruin your day.
+* An incorrect word can ruin your day.
 
 
 
@@ -390,7 +390,7 @@ Numpy but also other programming languages might have them.
 
 
 
-## Rectangular (numerical operations)
+## Rectangle (numerical operations)
 {id: rectangular-basic}
 {i: =}
 {i: *}
@@ -400,13 +400,13 @@ In this example we create two variables `width` and `height` containing the numb
 
 Unlike in math, in porgramming in general where you see a single equal sign `=` it means **assignment**. It means we want the value on the right-hand-side to be in the variable on the left-hand-side.
 
-Others might say make the word/name on the left-hand-side of the `=` sign refer to the valu that is on the right-hand-side.
+Others might say make the word/name on the left-hand-side of the `=` sign refer to the value that is on the right-hand-side.
 
-In any case this is not a mathematical statement of truth not an equasion, but a statement of an action.
+In any case this is not a mathematical statement of truth not an equation, but a statement of an action.
 
 On the next line we multiply the values in two already existing variable and assign the result to a third variable called `area`.
 
-At the end we user the `print` function that we have already seen to print out the results to the screen.
+At the end we use the `print` function that we have already seen, to print out the results on the screen.
 
 A simple mathematical operation.
 {/aside}
@@ -423,15 +423,15 @@ A simple mathematical operation.
 What if we put the two numbers into quotation marks and this make them strings? Strings that look like number to the naked eyes, but nevertheless
 are strings for Python.
 
-If we try to multilpy them we get a nasty **exception**. Also know as a **runtime error**. The program stops running.
+If we try to multilpy them we get a nasty **exception**. Also known as a **runtime error**. The program stops running.
 
-These exception might look nasty, but they are our friends. They tell what went wrong and exactly where did that happen.
+These exceptions might look nasty, but they are our friends. They tell us what went wrong and exactly where did that happen.
 
-You just need to remember that, at least in Python, you need to read the whol thing from the bottom to top. The last line
+You just need to remember that, at least in Python, you need to read the whole thing from the bottom to top. The last line
 holds the error message. Above that you can usually see the content of the line where the problem was found. One line above that
 you'll see the name of the file and the line number where the problem occured.
 
-I stronglu urge you to read the error message. If it is not yet clear what is the problem, then copy it to your favorite
+I strongly urge you to read the error message. If it is not yet clear what is the problem, then copy it to your favorite
 search engine and read the explanations you find.
 
 Eventually you'll learn to recognize these messages much faster and it will be much easier to fix the problems.
@@ -449,7 +449,7 @@ What this current error message means is we tried to multiply two strings and Py
 {i: +}
 
 {aside}
-OK, so we know how to multiply two numbers. Let's now have a gian leap and try to add two numbers together.
+OK, so we know how to multiply two numbers. Let's now take a giant leap and try to add two numbers together.
 
 It works as expected. We can move on to the next challenge.
 {/aside}
@@ -465,7 +465,7 @@ It works as expected. We can move on to the next challenge.
 {aside}
 You guessed right, we now wrap the number in quotes and try to add them together.
 
-Surprisingly it works. Thou the result is a bit strange at first. As if Python put one string after the other.
+Surprisingly it works. Though the result is a bit strange at first. As if Python put one string after the other.
 
 Indeed the `+` operator is defined when we have two strings on the two sides. It is then called concatenation.
 
@@ -521,7 +521,7 @@ In the following solution we used that.
 
 
 {aside}
-The expression `r * r` might also bothered your eyes. Well don't worry in Python there is an operator to express exponent
+The expression `r * r` might also bothered your eyes. Well don't worry in Python there is an operator to express exponential values
 It is the double star: `**`. This is how we can use it to say r-square: `r ** 2`.
 {/aside}
 
