@@ -1,7 +1,7 @@
 # Lists
 {id: python-lists}
 
-## Anything can be a lists
+## Anything can be a list
 {id: any-lists}
 
 * Comma separated values
@@ -414,7 +414,7 @@ your name: s
 
 ![](examples/lists/sort_mixed.py)
 
-In Python 2 puts the numbers first in numerical order and then the strings in ASCII order.
+Python 2 puts the numbers first in numerical order and then the strings in ASCII order.
 
 ```
 [100, 'foo', 42, 'bar']
@@ -431,7 +431,7 @@ In Python 3 it throws an exception.
 {i: key}
 {i: len}
 
-* Another example to using a **key**.
+* Another example for using a **key**.
 * To sort the list according to length
 
 ![](examples/lists/sort_key.py)
@@ -556,7 +556,7 @@ List
 Tuples are rarely used. There are certain places where Python or some module require tuple (instead of list) or return a tuple (instead of a list)
 and in each place it will be explained. Otherwise you don't need to use tuples.
 
-e.g. keys of dictinoaries can be tuple (but not lists).
+e.g. keys of dictionaries can be tuple (but not lists).
 
 
 
@@ -615,7 +615,7 @@ lines = [
 fruits = ['grape', 'banana', 'mango', 'nut', 'orange', 'peach', 'apple', 'nut', 'banana', 'apple', 'mango']
 ```
 
-Then create a list of unique values sorted by abc.
+Then create a list of unique values sorted in alphabetical order.
 
 ```
 unique_fruites = ['apple', 'banana', 'grape', 'mango', 'nut', 'orange', 'peach']
@@ -655,7 +655,7 @@ True
 {id: exercise-dna-sequencing}
 
 * A, C, T, G are called bases or nucleotides
-* Given a sequence like **'ACCGXXCXXGTTACTGGGCXTTGT'** (nucleoids mixed up with other elements) return the sequences containing only ACTG orderd by length.
+* Given a sequence like **'ACCGXXCXXGTTACTGGGCXTTGT'** (nucleotides mixed up with other elements) return the sequences containing only ACTG orderd by length.
 * The above string can be split up to **['ACCG', 'C', 'GTTACTGGGC', 'TTGT']** and then it can be sorted to get the following:
 * Expected result: **['GTTACTGGGC', 'ACCG', 'TTGT', 'C']**
 
