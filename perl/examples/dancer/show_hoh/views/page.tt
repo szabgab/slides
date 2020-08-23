@@ -1,0 +1,15 @@
+<h1>Planets</h1>
+
+<table>
+   <tr><th>Planet name</th><th>Distance (AU)</th><th>Mass</th></tr>
+   [% FOR planet IN planets.keys.sort -%]
+   <tr><td>[% planet %]</td><td>[% planets.$planet.Distance %]</td><td>[% planets.$planet.Mass %]</td></tr>
+   [% END -%]
+</table>
+
+
+[% USE Dumper %]
+<pre>
+[% Dumper.dump(planets) %]
+</pre>
+

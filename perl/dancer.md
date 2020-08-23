@@ -335,3 +335,26 @@ the user uses will be also told the status code is 404.
 
 ![](examples/dancer/return-404/test.t)
 
+
+## Showing the current time using templates
+{id: showing-the-current-time-using-templates}
+
+![](examples/dancer/show_time_using_template/app.psgi)
+![](examples/dancer/show_time_using_template/views/page.tt)
+![](examples/dancer/show_time_using_template/test.t)
+
+## Showing an array
+{id: showing-an-array}
+
+![](examples/dancer/show_array/app.psgi)
+![](examples/dancer/show_array/views/page.tt)
+![](examples/dancer/show_array/test.t)
+
+## Showing Hash of Hashes 
+{id: showing-hash-of-hashes}
+
+![](examples/dancer/show_hoh/app.psgi)
+![](examples/dancer/show_hoh/views/page.tt)
+![](examples/dancer/show_hoh/planets.csv)
+![](examples/dancer/show_hoh/test.t)
+

@@ -1,0 +1,6 @@
+<h1>Planets</h1>
+<ul>
+ [% FOR planet IN planets -%]
+   <li>[% planet %]</li>
+  [% END -%]
+</ul>
