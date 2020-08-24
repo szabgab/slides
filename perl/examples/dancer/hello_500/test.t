@@ -18,8 +18,8 @@ subtest main => sub {
 subtest calc => sub {
     my $res = $test->request(GET '/calc');
     is $res->status_line, '500 Internal Server Error', 'Status';
-    like $res->content, qr{<title>Error 500 - Internal Server Error</title>}, 'Content';
-    like $res->content, qr{Powered by <a href="http://perldancer.org/">Dancer2</a>}, 'Content';
+    like $res->content, qr{<title>Error 500 - Internal Server Error</title>};
+    like $res->content, qr{Powered by <a href="http://perldancer.org/">Dancer2</a>};
 };
 
 
