@@ -4,8 +4,8 @@ public class AddCmdLineNumbers{
             System.out.println("Must have exactly 2 values on the command line");
             System.exit(1);
         }
-        System.out.println("Input: " + args[0]);
-        System.out.println("Input: " + args[1]);
+        System.out.println("First: " + args[0]);
+        System.out.println("Second: " + args[1]);
         System.out.println(Integer.parseInt(args[0]) + Integer.parseInt(args[1]));
     }
 }

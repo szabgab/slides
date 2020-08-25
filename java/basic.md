@@ -184,25 +184,38 @@ java Conver
 
 ## Add Command line values
 {id: java-add-command-line-values}
+{i: args}
+{i: length}
 
 ![](examples/java/AddCmdLineArgs.java)
 
 ```
 javac AddCmdLineArgs.java
-java AddCmdLineArgs
+java AddCmdLineArgs Foo Bar
 ```
 
-## Add Command line numbers
+## Add Command line integers
 {id: java-add-command-line-numbers}
+{i: args}
+{i: Integer}
+{i: parseInt}
 
 ![](examples/java/AddCmdLineNumbers.java)
 
+```
+javac AddCmdLineNumbers.java
+java AddCmdLineNumbers 19 23
+```
 
 ## Java for-loop
 {id: java-for-loop}
 {i: for}
+{i: ++}
 
 ![](examples/java/ForLoop.java)
+
+$ javac ForLoop.java
+$ java ForLoop
 
 
 ## Java while-loop
