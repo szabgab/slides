@@ -32,3 +32,4 @@ There are lots of free resources for learning Raku. Probably the most central pl
 * [Raku documentation](http://docs.raku.org/)
 * The most active place to ask about Raku is the #raku [IRC channel](https://raku.org/community/irc).
 * [Raku Community](https://raku.org/community/)
+* [Learn Raku in Y minutes](https://learnxinyminutes.com/docs/raku/)
