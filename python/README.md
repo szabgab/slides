@@ -17,3 +17,12 @@ redirect(url_for('login'))
 
 
 * What do we do if we need better floating point calculation precision that what Pyhton has?
+
+
+## Example
+{id: example-with-files}
+
+
+![](examples/files/sample.txt)
+![](examples/files/example.py)
+

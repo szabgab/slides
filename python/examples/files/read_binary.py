@@ -1,9 +1,13 @@
-filename = 'README'
+import sys
+if len(sys.argv) != 2:
+    exit("Need name of file")
+
+filename = sys.argv[1]
 
 try:
     with open(filename, 'rb') as fh:
         while True:
-            binary_str = fh.read(5000)
+            binary_str = fh.read(1000)
             print(len(binary_str))
             if len(binary_str) == 0:
                 break
@@ -11,8 +15,3 @@ try:
 except Exception:
     pass
 
-# 5000
-# 5000
-# 5000
-# 1599
-# 0

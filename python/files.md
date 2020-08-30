@@ -1,13 +1,100 @@
 # Files
 {id: python-files}
 
-## Open and read file
+## File types: Text vs Binary
+{id: file-types-text-vs-binary}
+
+{aside}
+You probably know many file types such as Images (png, jpg, ...), Word, Excel, mp3, mp4, csv, and now also .py files. Internally there are two big categories.
+Text and Binary files. Text files are the ones that look readable if you open them with a plain text editor such as Notepad. Binary files will
+look like a mess if you opened them in Noetpad.
+
+For Binary files you need a special application to "look" at their content. For example
+the Excel and Word programs for the appropriate files. Some image viewer application to view all the images.
+VLC to look at an mp4. Some application to hear the content of mp3 files.
+{/aside}
+
+* Text: .txt, csv, .py, .pl, ..., HTML , XML, YAML, JSON
+* Binary: Images, Zip files, Word, Excel, .exe, mp3, mp4
+
+{aside}
+In Python you have specialized modules for each well-knonw binary type to handle the files of that format. Text files on the other
+hand can be handled by low level file-reading functions, however even for those we usually have modules that know how to read
+and interpret the specific formats. (e.g. CSV, HTML, XML, YAML, JSON parsers)
+{/aside}
+
+## Open vs Read
+{id: open-vs-read}
+
+{aside}
+The expression "open a file" has two distinct meanings for programmers and users of software. For a user of Word, for example,
+"open the file" would mean to be able to see its content in a formatted way inside the editor.
+
+When a programmer - now acting as a regular user - opens a Python file in an editor such as Notepad++ or Pycharm,
+the expectation is to see the content of that program with nice colors.
+
+However in order to provide this the programmer behind these applications had to do several things.
+{/aside}
+
+* Connect to a file on the disk (aka. "opening the file" in programmer speak).
+* Read the content of the file from the disk to memory.
+* Format the content read from the file as expected by the user of that application.
+
+
+## Binary files: Images
+{id: binary-file-images}
+
+{aside}
+This is just a quick example how to use the Pillow module to handle images. There is a whole chapter on dealing with images.
+{/aside}
+
+* [Pillow](https://pillow.readthedocs.io/en/stable/)
+
+![](examples/pil/get_image_size.py)
+
+## Reading an Excel file
+{id: binary-reading-an-excel-file}
+
+{aside}
+There are many ways to deal with Excel files as well.
+{/aside}
+
+* [openpyxl](https://openpyxl.readthedocs.io/en/stable/)
+
+![](examples/excel/read_excel.py)
+
+
+## Open and read file (easy but not recommended)
+{id: open-and-read}
+
+{aside}
+In some code you will encounter the following way of opening files.
+This was used before "with" was added to the language.
+It is not a recommended way of opening a file as you might easily forget
+to call "close" and that might cause trouble. For example you might loose data.
+Don't do that.
+
+I am showing this as the first example, because it is easuer to understand.
+{/aside}
+
+![](examples/files/open_and_read.py)
+
+
+## Open and read file using with (recommended)
 {id: open-and-read-with}
 {i: open}
 {i: close}
 {i: with}
 
 ![](examples/files/open_and_read_with.py)
+
+## Read file remove newlines
+{id: read-file-remove-newlines}
+{i: trim}
+{i: rstrip}
+{i: chomp}
+
+![](examples/files/read_file_remove_newlines.py)
 
 
 ## Filename on the command line
@@ -23,37 +110,39 @@ $ python single.py numbers.txt
 Working on the file numbers.txt
 ```
 
-
-## Filehandle with and without
-{id: filehandle-with-and-without}
-{i: open}
-{i: close}
-{i: with}
-![](examples/files/open_with.py)
-
-
 ## Filehandle with return
 {id: filehandle-with-return}
+
 ![](examples/files/with_returns.py)
 
-
-## Read file remove newlines
-{id: read-file-remove-newlines}
-{i: trim}
-{i: rstrip}
-{i: chomp}
-![](examples/files/read_file_remove_newlines.py)
 
 
 ## Read all the lines into a list
 {id: read-all-the-lines}
 {i: readlines}
+
+{aside}
+There are rare cases when you need the whole content of a file in the memory and you cannot process it line by line.
+In those rare cases we have several options. `readlines` will read the whole content into a list converting each line
+from the file to be an element in the list.
+
+Beware though, if the file is too big, it might not fit in the free memory of the computer.
+{/aside}
+
 ![](examples/files/read_full_file.py)
 
 
 ## Read all the characters into a string (slurp)
 {id: slurp}
 {i: read}
+
+{aside}
+In some other cases, especially if you are looknig for some pattern that starts on one line but ends on another line.
+you'd be better off having the whole file as a single string in a variable. This is where the `read` method comes in handy.
+
+It can also be used to read in chunks of the file.
+{/aside}
+
 ![](examples/files/slurp.py)
 
 {aside}
@@ -65,6 +154,7 @@ read(20) will read 20 bytes.
 ## Not existing file
 {id: not-existing-file}
 {i: IOError}
+
 ![](examples/files/open_file.py)
 
 
@@ -80,39 +170,65 @@ Exception handling
 
 ## Open many files - exception handling
 {id: open-many-files-exception-handling}
+
 ![](examples/files/average_from_files.py)
 ![](examples/files/number_per_line.txt)
 ![](examples/files/empty.txt)
 
 ```
-python average_from_files.pyt number_per_line.txt empty.txt number_per_line2.txt
-```
+$ python average_from_files.pyt number_per_line.txt empty.txt number_per_line2.txt
 
-```
 Average:  58.25
 trouble with empty.txt
 Average:  3.5
 ```
 
+```
+$ python average_from_files.py numbers.txt
+
+trouble with 'numbers.txt': Error: could not convert string to float: '23 345 12345\n'
+```
+
+```
+$ python average_from_files.py more_numbers.txt
+
+trouble with 'more_numbers.txt': Error: [Errno 2] No such file or directory: 'more_numbers.txt'
+```
 
 ## Writing to file
 {id: writing-to-file}
 {i: open}
 {i: write}
+
 ![](examples/files/write.py)
 
 
 ## Append to file
 {id: append-to-file}
 {i: append}
-![](examples/files/append.py)
 
+![](examples/files/append.py)
 
 
 ## Binary mode
 {id: binary-mode}
+{i: rb}
+
 ![](examples/files/read_binary.py)
 
+
+```
+python examples/files/read_binary.py examples/pil/first.png
+
+1000
+1000
+1000
+1000
+1000
+775
+0
+
+```
 
 ## Does file exist? Is it a file?
 {id: file-exists}
@@ -124,9 +240,20 @@ Average:  3.5
 * [os.path.isfile](https://docs.python.org/library/os.path.html#os.path.isfile)
 * [os.path.isdir](https://docs.python.org/library/os.path.html#os.path.isdir)
 
+## Direct access of a line in a file
+{id: direct-access-of-a-line}
+
+![](examples/files/fh_access.py)
+![](examples/files/fh_access.err)
+
+{aside}
+This does NOT work because files can only be accessed sequentially.
+{/aside}
+
 
 ## Exercise: count numbers
 {id: exercise-count-numbers}
+
 ![](examples/files/numbers.txt)
 
 1. Given the file **examples/files/numbers.txt** (or a similar file), count how many times each digit appears? The output will look like this. Just different values.
@@ -176,7 +303,7 @@ Extend the previous example by letting the user provide the name of the file on 
 
 Implement [ROT13](https://en.wikipedia.org/wiki/ROT13):
 * Create a function that given a string return the rot13 of it.
-* Create a script that given a file it will replace with the rot13 of it.
+* Create a script that given a file it will replace it with the rot13 of it.
 
 How to check if it works properly:
 
@@ -184,7 +311,10 @@ How to check if it works properly:
 txt = "any text"
 encrypted = rot13(txt)
 decrypted = rot13(encrypted)
-assert decrypted == text
+if decrypted == text:
+    print("Good")
+else:
+    print("Bad")
 ```
 
 
@@ -223,40 +353,13 @@ Write a script that takes the two files and combines them adding the values for 
 ![](examples/files/combine_lists.py)
 
 
-## Read text file
-{id: read-file}
+## Filehandle using with and not using it
+{id: filehandle-with-and-without}
+{i: open}
+{i: close}
+{i: with}
 
-![](examples/files/read_file.py)
-
-
-## Open and read file
-{id: open-and-read}
-
-{aside}
-In some code you will encounter the following way of opening files.
-This was used before "with" was added to the language.
-It is not a recommended way of opening a file as you might easily forget
-to call "close" and that might cause trouble. For example you might loose data.
-Don't do that.
-{/aside}
-
-![](examples/files/open_and_read.py)
+![](examples/files/open_with.py)
 
 
-## Direct access of a line in a file
-{id: direct-access-of-a-line}
-
-![](examples/files/fh_access.py)
-![](examples/files/fh_access.err)
-
-{aside}
-This does NOT work because files can only be accessed sequentially.
-{/aside}
-
-## Example
-{id: example-with-files}
-
-
-![](examples/files/sample.txt)
-![](examples/files/example.py)
 

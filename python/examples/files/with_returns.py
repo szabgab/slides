@@ -5,15 +5,13 @@ def process_file(filename):
 
         for line in fh:
             line = line.rstrip("\n")
-            if len(line) > 0:
-                if line[0] == '#':
-                    return
-# some comment
+            if len(line) > 0 and line[0] == '#':
+                return
 
-            if len(line) > 1:
-                if line[0:2] == '//':
-                    return
+            if len(line) > 1 and line[0:2] == '//':
+                return
 
+            # process the line
             print(line)
 
 

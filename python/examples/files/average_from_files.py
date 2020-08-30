@@ -13,7 +13,7 @@ def main():
                     total += number
                     count += 1
                 print("Average: ", total/count)
-        except Exception:
-            print("trouble with {}".format(filename))
+        except Exception as err:
+            print(f"trouble with '{filename}': Error: {err}")
 
 main()
