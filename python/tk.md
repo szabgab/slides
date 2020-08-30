@@ -377,6 +377,11 @@ An application that allows you to type in, or select an existing file and anothe
 for which the file does not exists.
 Then copy the old file to the new name.
 
+## Exercise: Tk Implement Master Mind board
+{id: exercise-tk-master-mind}
+
+Create an application that we can use to play [Master Mind](https://en.wikipedia.org/wiki/Mastermind_(board_game))
+
 ## Exercise: Tk
 {id: exercise-tk}
 
@@ -393,6 +398,10 @@ Then copy the old file to the new name.
 
 ![](examples/tk/calculator.py)
 
+## Solution: Tk Implement Master Mind board
+{id: solution-tk-master-mind}
+
+TBD
 
 ## Solution: Tk
 {id: solution-tk}
