@@ -1,7 +1,7 @@
 txt = 'hello world'
-for c in txt:
-    if c == ' ':
+for ch in txt:
+    if ch == ' ':
         break
-    print(c)
+    print(ch)
 
 print("Here")

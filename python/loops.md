@@ -153,7 +153,13 @@ Not supported in Python. "If you feel the urge to do that, your code is probably
 
 Given a string like "The black cat climbed the green tree.", print out the location of every "c" charcater.
 
+Expected:
 
+```
+7
+10
+14
+```
 
 ## Exercise: Number guessing game
 {id: exercise-number-guessing-game}
@@ -202,6 +208,13 @@ Given a string on the command line, count how many differnt characters it has.
 python count_unique.py abcdaaa
 4
 ```
+
+## Exercise: Convert for-loop to while-loop
+{id: exercise-convert-for-loop-to-while-loop}
+
+Given a for-loop as in the following code, convert it to be using a while-loop.
+
+![](examples/loops/using_for_loop.py)
 
 
 ## Solution: Print all the locations in a string
@@ -290,5 +303,10 @@ The above solution works, but there is a better solution using sets that we have
 
 ![](examples/loops/number_of_different_set.py)
 
+
+## Solution: Convert for-loop to while-loop
+{id: solution-convert-for-loop-to-while-loop}
+
+![](examples/loops/using_while_loop.py)
 
 
