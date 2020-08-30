@@ -655,9 +655,10 @@ True
 {id: exercise-dna-sequencing}
 
 * A, C, T, G are called bases or nucleotides
-* Given a sequence like **'ACCGXXCXXGTTACTGGGCXTTGT'** (nucleotides mixed up with other elements) return the sequences containing only ACTG orderd by length.
-* The above string can be split up to **['ACCG', 'C', 'GTTACTGGGC', 'TTGT']** and then it can be sorted to get the following:
-* Expected result: **['GTTACTGGGC', 'ACCG', 'TTGT', 'C']**
+* Given a sequence like **'ACCGXXCXXGTTACTGGGCXTTGTXX'** (nucleotides mixed up with other elements)
+* First return the sequences containing only ACTG. The above string can will be changed to **['ACCG', 'C', 'GTTACTGGGC', 'TTGT']**.
+* Then sort them by lenght. Expected result: **['GTTACTGGGC', 'ACCG', 'TTGT', 'C']**
+* What if the original string contains more than on type of foreing elements? e.g. **'ACCGXXCXXYYGTTQRACQQTGGGCXTTGTXX'**. Can you do the same?
 
 
 ## Solution: menu
@@ -666,7 +667,7 @@ True
 ![](examples/lists/colors.py)
 
 * We would like to show a menu where each number corresponds to one element of the list so this is one of the places where we need to iterate over the indexes of a list.
-* `len(colors)` gives us the length of the list (in our case 4) 
+* `len(colors)` gives us the length of the list (in our case 4)
 * `range(len(colors))` is the range of numbers betwwen 0 and 4 (in our case), menaing 0, 1, 2, 3.
 * (Sometimes people explicetly write 4 in this solution, but if later we change the list and include another color we'll have to remember updating this number as well. This is error prone and it is very easy to deduct this number from the data we already have. (The list.))
 * We start the list from 0, but when we display the menu we would like to show the numbers 1-4 to make it more human friendly. Therefore we show `ix+1` and the color from locations `ix`.
