@@ -78,6 +78,7 @@ prove -v test.t
 
 * [Test::More](https://metacpan.org/pod/Test::More)
 * [Plack::Test](https://metacpan.org/pod/Plack::Test)
+* [Plack::Util](https://metacpan.org/pod/Plack::Util)
 * [HTTP::Response](https://metacpan.org/pod/HTTP::Response)
 
 ![](examples/dancer/hello_world/test.out)

@@ -3,9 +3,10 @@ use warnings;
 
 use Test::More;
 use Plack::Test;
+use Plack::Util;
 use HTTP::Request::Common;
 
-my $app = do './app.psgi';
+my $app = Plack::Util::load_psgi './app.psgi';
 
 my $test = Plack::Test->create($app);
 my $res = $test->request(GET '/');
