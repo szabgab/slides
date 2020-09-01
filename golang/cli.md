@@ -31,6 +31,8 @@ go run examples/cli/cli.go  hello world
 {id: exit-early}
 {i: Exit}
 {i: os.Exit}
+{i: %ERRORLEVEL%}
+{i: $?}
 
 {aside}
 In the earlier examples our code stopped running when the last statement in the main function was executed.
