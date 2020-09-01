@@ -292,19 +292,19 @@ In our third example we are going to use the `pytest` module. The only drawback 
 come with the installation of Python itself. It is not a huge issue though as you probably install hundreds of other
 modules as well.
 
-These days Pytest seem like the most popular testing library for Python.
+These days Pytest seems like the most popular testing library for Python.
 
-We'll have several example using pytest.
+We'll have several examples using Pytest.
 
-In order to use it you'd create a file with a name that starts with `test_` prefix. We need to import the module we are testin
+In order to use it you'd create a file with a name that starts with `test_` prefix. We need to import the module we are testing
 but we don't need to import pytest. Actually we don't even use pytest inside the code. (At least not in the simple use-cases.)
 In the file you need to create a class starting with `Test`, but this class does not need to inherit from any special class.
-In the class we can have one or more test-function starting with the prefix `test_`.
+In the class we can have one or more test-functions starting with the prefix `test_`.
 In the function we call the function we are testing and we compare the results to the expected results.
 
-We use the built-in `assert` function of Python to check if the results was true.
+We use the built-in `assert` function of Python to check if the results were true.
 
-No need to learn various specilized asser-statement as we had in the `unittest` module.
+No need to learn various specialized assert-statements as we had in the `unittest` module.
 
 We run the test using the `pytest` command.
 
