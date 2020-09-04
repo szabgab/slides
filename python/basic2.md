@@ -177,20 +177,15 @@ Foo Bar
 ```
 ![](examples/basics/print3_no_newline.py)
 
-```
-hello world
-Foo Bar
-```
+![](examples/basics/print3_no_newline.out)
+
 
 end will set the character added at the end of each print statement.
 
 ![](examples/basics/print3_no_newline_no_space.py)
 
-```
-helloworld
-FooBar
-END
-```
+![](examples/basics/print3_no_newline_no_space.out)
+
 
 `sep` will set the character separating values.
 
