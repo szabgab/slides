@@ -318,6 +318,8 @@ Whichever is appropriate in your situation.
 {i: isdecimal}
 {i: isnumeric}
 
+* This solution only works for integers. Not for floating point numbers.
+
 * We'll talk about this later. For now assume that the user enters something that can be converted to a number.
 * Wrap the code in try-except block to catch any exception raised during the conversion.
 * Use Regular Expressions (regexes) to verify that the input string looks like a number.
@@ -438,6 +440,23 @@ Operator: +
 Results: 42
 ```
 
+## Exercise: Age limit
+{id: exercise-age-limit}
+
+* Ask the user what is their age.
+* If it is above 18, tell them they can legally drink alcohol.
+* If is is above 21, tell them they can also legally drink in the USA.
+
+* Extra: ask the user for an age and a country name tell them if they can legally drink alcohol.
+* See the [Legal drinking age](https://en.wikipedia.org/wiki/Legal_drinking_age) list.
+* Don't worry if this seems to be too difficult now to solve it in a nice way.
+
+## Exercise: What is this language?
+{id: exercise-what-is-this-language}
+
+* Ask the user the name of this programing language.
+* If they type in Python, welcome them.
+* If they type in something else, correct them.
 
 ## Exercise: Standard Input
 {id: exercise-stdin}
@@ -472,6 +491,33 @@ Here I used the `format` method of the strings to insert the value of op in the 
 
 ![](examples/basics/calculator_python2.py)
 
+## Solution: Calculator eval
+{id: solution-calculator-eval}
+
+![](examples/basics/calculator_eval.py)
+
+```
+$ python examples/basics/calculator_eval.py
+
+Number: 2
+Number: 3
+Operator (+-*/): +
+2+3
+5
+```
+
+* Now forget this and don't use `eval` for the next few years!
+
+## Solution: Age limit
+{id: solution-age-limit}
+
+![](examples/basics/age_limit.py)
+
+
+## Solution: What is this language?
+{id: solution-what-is-this-language}
+
+![](examples/basics/check_python.py)
 
 ## Command line arguments
 {id: command-line-arguments}
@@ -543,21 +589,20 @@ This is not your fault as a programmer. It is a user error. The correct way to r
 
 
 ## Solution: Calculator eval
-{id: solution-calculator-eval}
+{id: solution-calculator-eval-x}
 
-![](examples/basics/calculator_eval.py)
+![](examples/basics/calculator_argv_eval.py)
 
 ```
-$ python examples/basics/calculator_eval.py
-
-Number: 2
-Number: 3
-Operator (+-*/): +
-2+3
+$ python examples/basics/calculator_argv_eval.py 2 + 3
 5
+
+$ python examples/basics/calculator_argv_eval.py 2 '*' 3
+6
 ```
 
 * Now forget this and don't use `eval` for the next few years!
+
 
 ## Compilation vs. Interpretation
 {id: compilation-vs-interpretation}
@@ -612,4 +657,15 @@ pip install flake8
 flake8 --ignore= compile.py
 ```
 ![](examples/basics/compile_flake8.out)
+
+## Pylint checking
+{id: pylint-checking}
+
+![](examples/basics/bad.py)
+
+```
+pylint bad.py
+```
+
+![](examples/basics/bad.out)
 

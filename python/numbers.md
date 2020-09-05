@@ -56,7 +56,7 @@ always call the "int" function: int(b/a).
 {/aside}
 
 
-## Pseudo Random Number
+## Pseudo Random Number (unform distribution)
 {id: random}
 {i: random}
 
@@ -64,7 +64,7 @@ always call the "int" function: int(b/a).
 
 * [random](http://docs.python.org/library/random.html)
 * [Pseudo random generator](https://en.wikipedia.org/wiki/Pseudorandom_number_generator)
-
+* Uniform distribution between 0-1
 
 
 ## Fixed random numbers

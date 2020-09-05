@@ -1,0 +1,8 @@
+************* Module bad
+bad.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+bad.py:2:0: W0622: Redefining built-in 'len' (redefined-builtin)
+bad.py:2:0: C0103: Constant name "len" doesn't conform to UPPER_CASE naming style (invalid-name)
+
+--------------------------------------------------------------------
+Your code has been rated at -5.00/10 (previous run: -5.00/10, +0.00)
+
