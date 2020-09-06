@@ -64,6 +64,13 @@
 
 ![](examples/tk/mouse_bindings.pl)
 
+## Mouse events, coordinates
+{id: mouse-events-and-coordinates}
+
+* See the explanations [Tk::bind](https://metacpan.org/pod/distribution/Tk/pod/bind.pod#BINDING-CALLBACKS-AND-SUBSTITUTIONS)
+
+![](examples/tk/mouse_events.pl)
+
 
 ## Menu Button
 {id: tk-menu-button}
