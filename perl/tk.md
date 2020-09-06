@@ -71,6 +71,14 @@
 
 ![](examples/tk/mouse_events.pl)
 
+## Checkbutton Checkboxes
+{id: checkbutton}
+{i: Checkbutton}
+
+* [Tk::Checkbutton](https://metacpan.org/pod/distribution/Tk/pod/Checkbutton.pod)
+
+![](examples/tk/check_button.pl)
+
 
 ## Menu Button
 {id: tk-menu-button}
