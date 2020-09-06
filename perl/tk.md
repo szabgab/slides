@@ -45,6 +45,26 @@
 
 ![](examples/tk/menu.pl)
 
+## Keyboard binding
+{id: keyboard-binding}
+
+* [Tk::bind](https://metacpan.org/pod/distribution/Tk/pod/bind.pod)
+
+![](examples/tk/key_bindings.pl)
+
+## Any Key binding
+{id: any-key-binding}
+
+![](examples/tk/any_key_bindings.pl)
+
+## Mouse button and movement bindings
+{id: mouse-button-bindings}
+
+* [Tk::bind](https://metacpan.org/pod/distribution/Tk/pod/bind.pod)
+
+![](examples/tk/mouse_bindings.pl)
+
+
 ## Menu Button
 {id: tk-menu-button}
 {i: Menubutton}
