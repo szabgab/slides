@@ -41,7 +41,17 @@
 
 ## Menu
 {id: tk-menu}
-{i: Menubutton}
+{i: Menu}
 
 ![](examples/tk/menu.pl)
+
+## Menu Button
+{id: tk-menu-button}
+{i: Menubutton}
+
+{aside}
+I am not sure when would you want to build a menu this way. I only have this example as this is the first one I managed to create and did not want to throw it away.
+{/aside}
+
+![](examples/tk/menu_button.pl)
 
