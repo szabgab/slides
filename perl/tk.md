@@ -5,7 +5,7 @@
 {id: tk-perl}
 
 * A graphical user interface toolkit for Perl
-* [](https://metacpan.org/pod/Tk)
+* [Perl Tk](https://metacpan.org/pod/Tk)
 
 ## Plain
 {id: tk-plain}
@@ -26,4 +26,18 @@
 {i: Button}
 
 ![](examples/tk/button.pl)
+
+## Entry
+{id: tk-entry}
+{i: Entry}
+
+![](examples/tk/entry.pl)
+
+## Text
+{id: tk-text}
+{i: Text}
+
+![](examples/tk/text.pl)
+
+
 
