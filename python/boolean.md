@@ -35,6 +35,8 @@
 
 ![](examples/boolean/compare_two_strings.py)
 
+![](examples/boolean/compare_two_values.py)
+
 * [ASCII](https://en.wikipedia.org/wiki/ASCII)
 
 ## Do NOT Compare different types!
