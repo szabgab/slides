@@ -39,5 +39,9 @@
 
 ![](examples/tk/text.pl)
 
+## Menu
+{id: tk-menu}
+{i: Menubutton}
 
+![](examples/tk/menu.pl)
 
