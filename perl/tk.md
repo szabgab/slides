@@ -83,10 +83,18 @@
 {id: radiobutton}
 {i: Radiobutton}
 
-* [Tk::Radiobutton](https://metacpan.org/pod/distribution/Tk/pod/Radiobutton.pod)
+* [Tk::Radiobutton](https://metacpan.org/pod/Tk::Radiobutton)
 
 ![](examples/tk/radio_button.pl)
 
+
+## Message
+{id: message}
+{i: Message}
+
+* [Tk::Message](https://metacpan.org/pod/Tk::Message)
+
+![](examples/tk/message.pl)
 
 
 ## Menu Button
