@@ -1,17 +1,18 @@
 use strict;
 use warnings;
+use 5.010;
 
 use Tk;
 
 my $top = MainWindow->new;
 
 my @planets = ('Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn');
-my %plnt;
+my $the_planet;
 for my $planet (@planets) {
-    $plnt{$planet} = 0;
-    my $cb = $top->Checkbutton(
+    my $cb = $top->Radiobutton(
         -text     => $planet,
-        -variable => \$plnt{$planet},
+        -variable => \$the_planet,
+        -value    => $planet,
         -font     => ['fixed', 15]
     );
     $cb->pack(-side => 'left');
@@ -26,12 +27,7 @@ $btn->pack();
 MainLoop;
 
 sub do_on_click {
-    print("Clicked\n");
-    for my $planet (sort keys %plnt) {
-        printf("%-10s %s\n", $planet, $plnt{$planet});
-    }
-    print("----\n");
+    say $the_planet;
+    say '----';
 }
-
-
 

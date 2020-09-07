@@ -79,6 +79,15 @@
 
 ![](examples/tk/check_button.pl)
 
+## Radiobutton
+{id: radiobutton}
+{i: Radiobutton}
+
+* [Tk::Radiobutton](https://metacpan.org/pod/distribution/Tk/pod/Radiobutton.pod)
+
+![](examples/tk/radio_button.pl)
+
+
 
 ## Menu Button
 {id: tk-menu-button}
