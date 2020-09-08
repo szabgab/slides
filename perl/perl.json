@@ -42,6 +42,7 @@
         "psgi.md",
         "dancer.md",
         "tk.md",
+        "prima.md",
         "win32.md"
     ]
 }
