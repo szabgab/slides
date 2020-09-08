@@ -46,33 +46,33 @@
 ![](examples/tk/menu.pl)
 
 ## Keyboard binding
-{id: keyboard-binding}
+{id: tk-keyboard-binding}
 
 * [Tk::bind](https://metacpan.org/pod/distribution/Tk/pod/bind.pod)
 
 ![](examples/tk/key_bindings.pl)
 
 ## Any Key binding
-{id: any-key-binding}
+{id: tk-any-key-binding}
 
 ![](examples/tk/any_key_bindings.pl)
 
 ## Mouse button and movement bindings
-{id: mouse-button-bindings}
+{id: tk-mouse-button-bindings}
 
 * [Tk::bind](https://metacpan.org/pod/distribution/Tk/pod/bind.pod)
 
 ![](examples/tk/mouse_bindings.pl)
 
 ## Mouse events, coordinates
-{id: mouse-events-and-coordinates}
+{id: tk-mouse-events-and-coordinates}
 
 * See the explanations [Tk::bind](https://metacpan.org/pod/distribution/Tk/pod/bind.pod#BINDING-CALLBACKS-AND-SUBSTITUTIONS)
 
 ![](examples/tk/mouse_events.pl)
 
 ## Checkbutton Checkboxes
-{id: checkbutton}
+{id: tk-checkbutton}
 {i: Checkbutton}
 
 * [Tk::Checkbutton](https://metacpan.org/pod/distribution/Tk/pod/Checkbutton.pod)
@@ -80,16 +80,28 @@
 ![](examples/tk/check_button.pl)
 
 ## Radiobutton
-{id: radiobutton}
+{id: tk-radiobutton}
 {i: Radiobutton}
 
 * [Tk::Radiobutton](https://metacpan.org/pod/Tk::Radiobutton)
 
 ![](examples/tk/radio_button.pl)
 
+## Dialog
+{id: tk-dialog}
+{i: Dialog}
+
+* [Tk::Dialog](https://metacpan.org/pod/Tk::Dialog)
+
+![](examples/tk/dialog.pl)
+
+## Notepad (Simple editor)
+{id: tk-notepad}
+
+![](examples/tk/notepad.pl)
 
 ## Message
-{id: message}
+{id: tk-message}
 {i: Message}
 
 * [Tk::Message](https://metacpan.org/pod/Tk::Message)
