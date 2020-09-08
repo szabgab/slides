@@ -9,13 +9,13 @@ my $top = MainWindow->new;
 my @planets = ('Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn');
 my $the_planet;
 for my $planet (@planets) {
-    my $cb = $top->Radiobutton(
+    my $rb = $top->Radiobutton(
         -text     => $planet,
         -variable => \$the_planet,
         -value    => $planet,
         -font     => ['fixed', 15]
     );
-    $cb->pack(-side => 'left');
+    $rb->pack(-side => 'left');
 }
 
 my $btn = $top->Button(
