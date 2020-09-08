@@ -1,5 +1,6 @@
 from PIL import Image
 import sys
+
 if len(sys.argv) !=2:
     exit(f"Usage: {sys.argv[0]} FILENAME")
 

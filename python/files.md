@@ -1,5 +1,5 @@
 # Files
-{id: python-files}
+{id: files}
 
 ## File types: Text vs Binary
 {id: file-types-text-vs-binary}
@@ -61,7 +61,7 @@ There are many ways to deal with Excel files as well.
 
 * [openpyxl](https://openpyxl.readthedocs.io/en/stable/)
 
-![](examples/excel/read_excel.py)
+![](examples/excel/read_any_excel.py)
 
 
 ## Open and read file (easy but not recommended)
@@ -281,9 +281,17 @@ This does NOT work because files can only be accessed sequentially.
 How to read all the lines of a file into a list
 and remove trailing newlines?
 
+## Exercise: print lines with Report:
+{id: exercise-print-lines-with-report}
 
+Given a file that looks like this:
 
+![](examples/files/text_report.txt)
 
+* Print out all the lines that have Report: in it
+* Print out all the lines that start with Report:
+* Print out the numbers that are after Report:
+* Add the numbers that after after Report:
 
 ## Exercise: color selector
 {id: exercise-file-color-selector}
@@ -339,6 +347,11 @@ Write a script that takes the two files and combines them adding the values for 
 {id: solution-strip-newlines}
 
 ![](examples/files/strip_newlines.py)
+
+## Solution: print lines with Report:
+{id: solution-print-lines-with-report}
+
+![](examples/files/text_report.py)
 
 
 ## Solution: color selector
