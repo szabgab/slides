@@ -9,3 +9,4 @@ print(user.get('address'))
 print(user.get('email'))
 
 print(user.get('answer', 42))
+print(user.get('address', 23))
