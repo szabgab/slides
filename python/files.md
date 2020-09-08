@@ -288,10 +288,14 @@ Given a file that looks like this:
 
 ![](examples/files/text_report.txt)
 
+* Print out the first line that starts with Report:
 * Print out all the lines that have Report: in it
 * Print out all the lines that start with Report:
 * Print out the numbers that are after Report:
 * Add the numbers that after after Report:
+
+* Now do the same, but only take account lines between the Begin and End secition.
+
 
 ## Exercise: color selector
 {id: exercise-file-color-selector}
