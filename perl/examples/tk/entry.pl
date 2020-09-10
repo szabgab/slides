@@ -6,7 +6,7 @@ use Tk;
 
 my $top = MainWindow->new;
 my $entry = $top->Entry(
-    -font => ['fixed', 20],
+    -font => ['fixed', 40],
 );
 $entry->pack;
 
