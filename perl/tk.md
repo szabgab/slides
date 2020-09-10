@@ -95,6 +95,15 @@
 
 ![](examples/tk/dialog.pl)
 
+## DialogBox
+{id: tk-dialogbox}
+
+![](examples/tk/dialog_box.pl)
+
+![](examples/tk/color_selector_dialog_box.pl)
+
+![](examples/tk/popout.pl)
+
 ## Notepad (Simple editor)
 {id: tk-notepad}
 
@@ -118,4 +127,5 @@ I am not sure when would you want to build a menu this way. I only have this exa
 {/aside}
 
 ![](examples/tk/menu_button.pl)
+
 
