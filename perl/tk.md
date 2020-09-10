@@ -21,17 +21,23 @@
 
 ![](examples/tk/label.pl)
 
+* [Tk::Label](https://metacpan.org/pod/Tk::Label)
+
 ## Button
 {id: tk-button}
 {i: Button}
 
 ![](examples/tk/button.pl)
 
+* [Tk::Button](https://metacpan.org/pod/Tk::Button)
+
 ## Entry
 {id: tk-entry}
 {i: Entry}
 
 ![](examples/tk/entry.pl)
+
+* [Tk::Entry](https://metacpan.org/pod/Tk::Entry)
 
 ## Text
 {id: tk-text}
