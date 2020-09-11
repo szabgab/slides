@@ -498,7 +498,7 @@ $ docker run --rm  mydocker https://code-maven.com/
 ## Docker: ENTRYPOINT vs CMD
 {id: docker-entrypoint-vs-cmd}
 
-![](examples/runner/Dockerfile)
+![](examples/curl-runner/Dockerfile)
 
 ```
 $ docker build -t mydocker .
@@ -508,59 +508,6 @@ $ docker run --rm  mydocker https://szabgab.com/
 
 * [ENTRYPOINT](https://docs.docker.com/engine/reference/builder/#entrypoint)
 * [CMD](https://docs.docker.com/engine/reference/builder/#cmd)
-
-## Docker: Mounting host directory
-{id: docker-mounting-host-directory}
-
-```
-$ docker run -it --rm -v /home/gabor/work/slides/docker/examples/python-3:/opt/  mydocker
-
-$ docker run -it --rm -v c:\Users\Gabor Szabo\work\slides\docker\examples python-3:/opt/  mydocker
-
-# cd /opt
-# ls -l
-```
-
-The `-v HOST:CONTAINER` will mount the `HOST` directory of the home operating system to the `CONTAINER` directory in the Docker container.
-
-```
-# ./curl.py -I https://code-maven.com/slides
-```
-
-* You can edit the file on your host system (with your IDE) and run it on the command line of the Docker container.
-
-
-* A better way to mount the current working directory, at least on Linux and OSX
-
-```
-docker run -it --rm -v $(pwd):/opt/  mydocker
-```
-
-
-## Distribute command-line script
-{id: distribute-command-line-script}
-
-
-![](examples/python-4/Dockerfile)
-
-```
-$ docker build -t mydocker .
-
-$ docker run --rm   mydocker /opt/curl.py https://code-maven.com/slides
-```
-
-## Distribute command-line script and include command
-{id: distribute-command-line-script-and-include-command}
-
-![](examples/python-5/Dockerfile)
-
-
-```
-$ docker build -t mydocker .
-
-
-$ docker run --rm   mydocker https://code-maven.com/slides
-```
 
 
 ## Docker with crontab
