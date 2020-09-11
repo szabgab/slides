@@ -47,4 +47,17 @@ $ docker history mydocker2
 ```
 ![](examples/dock/history_mydocker2.out)
 
+## Distribute command-line script and include command
+{id: distribute-command-line-script-and-include-command}
+
+![](examples/old-python-5/Dockerfile)
+
+
+```
+$ docker build -t mydocker .
+
+
+$ docker run --rm   mydocker https://code-maven.com/slides
+```
+
 

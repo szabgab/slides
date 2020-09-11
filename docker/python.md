@@ -1,81 +1,44 @@
 # Python with Docker
-{id: python-with-docker}
+{id: python}
 
 ## Python CLI in Docker - curl.py
 {id: python-cli-in-docker-code}
 
-![](examples/python-3/curl.py)
+![](examples/python-curl/curl.py)
 
-## Python CLI in Docker - curl.py
+## Python CLI in Docker - Dockerfile
 {id: python-cli-in-docker-dockerfile}
 
-
-![](examples/python-3/Dockerfile)
+![](examples/python-curl/Dockerfile)
 
 ```
 $ docker build -t mydocker .
+
+$ docker run --rm mydocker https://httpbin.org/get
 ```
 
-```
-docker run --rm mydocker https://httpbin.org/get
-```
+* [https://httpbin.org/](https://httpbin.org/)
 
 {aside}
 This is a simple implementation of a curl-like script in Python. Wrapped in a Docker container. Firs build the container and then you can run the script.
 {/aside}
 
-## Docker: Mounting host directory
-{id: docker-mounting-host-directory}
+
+
+## Docker: Python Development mode with mounted directory
+{id: docker-development-mode-with-mounted-directory}
+
+![](examples/python-curl-dev/Dockerfile)
 
 ```
-$ docker run -it --rm -v /home/gabor/work/slides/docker/examples/python-3:/opt/  mydocker
+$ docker build -t mydocker .
 
-$ docker run -it --rm -v c:\Users\Gabor Szabo\work\slides\docker\examples python-3:/opt/  mydocker
-
-# cd /opt
-# ls -l
-```
-
-The `-v HOST:CONTAINER` will mount the `HOST` directory of the home operating system to the `CONTAINER` directory in the Docker container.
-
-```
-# ./curl.py -I https://code-maven.com/slides
+$ docker run --rm -v $(pwd):/opt/ mydocker python /opt/curl.py  https://httpbin.org/get
 ```
 
 * You can edit the file on your host system (with your IDE) and run it on the command line of the Docker container.
 
-
 * A better way to mount the current working directory, at least on Linux and OSX
-
-```
-docker run -it --rm -v $(pwd):/opt/  mydocker
-```
-
-
-## Distribute command-line script
-{id: distribute-command-line-script}
-
-
-![](examples/python-4/Dockerfile)
-
-```
-$ docker build -t mydocker .
-
-$ docker run --rm   mydocker /opt/curl.py https://code-maven.com/slides
-```
-
-## Distribute command-line script and include command
-{id: distribute-command-line-script-and-include-command}
-
-![](examples/python-5/Dockerfile)
-
-
-```
-$ docker build -t mydocker .
-
-
-$ docker run --rm   mydocker https://code-maven.com/slides
-```
 
 
 ## Flask application

@@ -607,6 +607,19 @@ docker container cp chronos:/opt/dates.txt .
 docker container stop chronos
 ```
 
+## Docker: Mounting host directory
+{id: docker-mounting-host-directory}
+
+```
+$ docker run -it --rm -v $(pwd):/opt/ mydocker
+
+# cd /opt
+# ls -l
+```
+
+The `-v HOST:CONTAINER` will mount the `HOST` directory of the home operating system to the `CONTAINER` directory in the Docker container.
+
+
 ## Exercies 2
 {id: exercise-2}
 
