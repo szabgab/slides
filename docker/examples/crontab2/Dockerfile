@@ -6,4 +6,4 @@ COPY crontab.txt /opt
 RUN crontab /opt/crontab.txt
 
 RUN touch /opt/jumanji.txt
-CMD cron && tail -f /opt/jumanji.txt
+CMD ["cron", "&&", "tail", "-f", "/opt/jumanji.txt"]

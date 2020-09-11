@@ -5,4 +5,4 @@ RUN apt-get update && \
 COPY crontab.txt /opt
 RUN crontab /opt/crontab.txt
 
-CMD cron -f
+CMD ["cron", "-f"]
