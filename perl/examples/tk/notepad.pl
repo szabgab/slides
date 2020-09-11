@@ -20,7 +20,7 @@ sub main {
     $text = $top->Text(
         -state => 'normal'
     );
-    $text->pack;
+    $text->pack(-fill => 'both', -expand => 1);
 
     MainLoop;
 }
@@ -35,6 +35,7 @@ sub do_open {
         if (open my $fh, '<', $filename) {
             local $/ = undef;
             my $content = <$fh>;
+            $text->delete("0.0", 'end');
             $text->insert("0.0", $content);
         } else {
             say "TODO: Report error $! for '$filename'";
