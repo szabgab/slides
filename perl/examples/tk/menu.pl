@@ -11,7 +11,7 @@ my $file_menu = $main_menu->cascade(-label => 'File', -underline => 0);
 $file_menu->command(-label => 'Open', -underline => 0, -command => \&do_open);
 $file_menu->command(-label => 'Quit', -underline => 0, -command => sub { exit });
 
-my $action_menu = $main_menu->cascade(-label => 'Action', -underline => 0, -tearoff => 1 );
+my $action_menu = $main_menu->cascade(-label => 'Action', -underline => 0);
 my $run = $action_menu->command(-label => 'Run', -command => \&run, -state => 'disabled');
 $action_menu->separator;
 $action_menu->command(-label => 'Enable', -command => \&enable);
