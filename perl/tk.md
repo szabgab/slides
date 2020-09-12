@@ -7,7 +7,7 @@
 * A graphical user interface toolkit for Perl
 * [Perl Tk](https://metacpan.org/pod/Tk)
 
-## Plain
+## Perl Tk Plain Window
 {id: tk-plain}
 {i: Tk}
 {i: MainWindow}
@@ -15,7 +15,7 @@
 
 ![](examples/tk/plain.pl)
 
-## Label
+## Perl Tk Label
 {id: tk-label}
 {i: Label}
 
@@ -23,7 +23,7 @@
 
 * [Tk::Label](https://metacpan.org/pod/Tk::Label)
 
-## Button
+## Perl Tk Button
 {id: tk-button}
 {i: Button}
 
@@ -31,7 +31,7 @@
 
 * [Tk::Button](https://metacpan.org/pod/Tk::Button)
 
-## Entry
+## Perl Tk Entry
 {id: tk-entry}
 {i: Entry}
 
@@ -39,13 +39,13 @@
 
 * [Tk::Entry](https://metacpan.org/pod/Tk::Entry)
 
-## Text
+## Perl Tk Text editor
 {id: tk-text}
 {i: Text}
 
 ![](examples/tk/text.pl)
 
-## Menu
+## Perl Tk Menu
 {id: tk-menu}
 {i: Menu}
 
@@ -54,26 +54,26 @@
 * [Tk::Menu](https://metacpan.org/pod/Tk::Menu)
 
 
-## Keyboard binding
+## Perl Tk Keyboard binding
 {id: tk-keyboard-binding}
 
 * [Tk::bind](https://metacpan.org/pod/distribution/Tk/pod/bind.pod)
 
 ![](examples/tk/key_bindings.pl)
 
-## Any Key binding
+## Perl Tk Any Key binding
 {id: tk-any-key-binding}
 
 ![](examples/tk/any_key_bindings.pl)
 
-## Mouse button and movement bindings
+## Perl Tk Mouse button and movement bindings
 {id: tk-mouse-button-bindings}
 
 * [Tk::bind](https://metacpan.org/pod/distribution/Tk/pod/bind.pod)
 
 ![](examples/tk/mouse_bindings.pl)
 
-## Mouse events, coordinates
+## Perl Tk Mouse events, coordinates
 {id: tk-mouse-events-and-coordinates}
 
 * See the explanations [Tk::bind](https://metacpan.org/pod/distribution/Tk/pod/bind.pod#BINDING-CALLBACKS-AND-SUBSTITUTIONS)
@@ -118,7 +118,7 @@
 
 ![](examples/tk/notepad.pl)
 
-## Message
+## Perl Tk Message
 {id: tk-message}
 {i: Message}
 
@@ -126,7 +126,7 @@
 
 ![](examples/tk/message.pl)
 
-## HTML
+## Perl Tk with HTML
 {id: tk-html}
 {i: HTML}
 {i: Tk::HyperText}
@@ -134,6 +134,15 @@
 * ![Tk::HyperText](https://metacpan.org/pod/Tk::HyperText)
 
 ![](examples/tk/html.pl)
+
+## Perl Tk Dialog Box with HTML
+{id: tk-dialog-box-with-html}
+{i: HTML}
+{i: Tk::HyperText}
+
+* ![Tk::HyperText](https://metacpan.org/pod/Tk::HyperText)
+
+![](examples/tk/dialog_box_with_html.pl)
 
 ## Menu Button
 {id: tk-menu-button}
