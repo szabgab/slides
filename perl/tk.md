@@ -126,6 +126,14 @@
 
 ![](examples/tk/message.pl)
 
+## HTML
+{id: tk-html}
+{i: HTML}
+{i: Tk::HyperText}
+
+* ![Tk::HyperText](https://metacpan.org/pod/Tk::HyperText)
+
+![](examples/tk/html.pl)
 
 ## Menu Button
 {id: tk-menu-button}
