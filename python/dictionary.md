@@ -290,7 +290,7 @@ Y 2 -  8.33 %
 
 * Each sequence consists of many repetition of the 4 bases represented by the ACTG characters.
 * There are 64 codons (sets of 3 bases following each other)
-* There are 22 [Amino Acids](https://en.wikipedia.org/wiki/Amino_acid) each of them are represented by 3 bases.
+* There are 20 [Amino Acids](https://en.wikipedia.org/wiki/Amino_acid) each of them are represented by 3 bases.
 * Some of the Amino Acids can be represented in multiple ways, represented in the [Codon Table] (https://en.wikipedia.org/wiki/DNA_codon_table)(For example Histidine can be encoded by both CAU, CAC)
 * We have a DNA sequence
 * Count the Amino acids from the sequence. (For our purposes feel free to generate a DNA sequence with a random number generator.
