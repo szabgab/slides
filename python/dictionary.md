@@ -291,9 +291,9 @@ Y 2 -  8.33 %
 * Each sequence consists of many repetition of the 4 bases represented by the ACTG characters.
 * There are 64 codons (sets of 3 bases following each other)
 * There are 22 [Amino Acids](https://en.wikipedia.org/wiki/Amino_acid) each of them are represented by 3 bases.
-* Some of the Amino Acids can be represented in multiple ways. For example Histidine can be encoded by both CAU, CAC)
+* Some of the Amino Acids can be represented in multiple ways, represented in the [Codon Table] (https://en.wikipedia.org/wiki/DNA_codon_table)(For example Histidine can be encoded by both CAU, CAC)
 * We have a DNA sequence
-* Count the Amino acids form the sequence. (For our purposes feel free to generate a DNA sequence with a random number generator.
+* Count the Amino acids from the sequence. (For our purposes feel free to generate a DNA sequence with a random number generator.
 
 ## Exercise: List of dictionaries
 {id: exercise-list-of-dictionaries}
@@ -312,7 +312,7 @@ print(people[1]['fname']) # Eric
 
 Given the following file build a dictionary of dictionaries where each internal dictionary represents one person.
 The keys in the internal dictionaries are the names of the columns (fname, lname, born) the values are the respective values from each row.
-In the outer dictinary the keys are the (fname, lname) tuples.
+In the outer dictionary the keys are the (fname, lname) tuples.
 
 ![](examples/csv/monty_python.csv)
 
