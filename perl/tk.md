@@ -157,6 +157,13 @@
 
 ![](examples/tk/option_menu.pl)
 
+## Perl Tk Table
+{id: tk-table}
+{i: Table}
+
+![](examples/tk/table.pl)
+
+
 
 ## Menu Button
 {id: tk-menu-button}
