@@ -15,4 +15,5 @@ my $btn = $top->Button(
     -command => \&do_on_click,
 );
 $btn->pack;
+
 MainLoop;

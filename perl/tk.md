@@ -144,6 +144,20 @@
 
 ![](examples/tk/dialog_box_with_html.pl)
 
+
+## Perl Tk Browse Entry
+{id: tk-browse-entry}
+{i: BrowseEntry}
+
+![](examples/tk/browse_entry.pl)
+
+## Perl Tk Option Menu
+{id: tk-option-menu}
+{i: OptionMenu}
+
+![](examples/tk/option_menu.pl)
+
+
 ## Menu Button
 {id: tk-menu-button}
 {i: Menubutton}
