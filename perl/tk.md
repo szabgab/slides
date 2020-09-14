@@ -6,7 +6,7 @@
 
 * A graphical user interface toolkit for Perl
 * [Perl Tk](https://metacpan.org/pod/Tk)
-* [Perl Tk resource](http://www.perltk.de/) in German butwith images!
+* [Perl Tk resource](http://www.perltk.de/) in German but with images!
 
 ## Perl Tk Plain Window
 {id: tk-plain}
