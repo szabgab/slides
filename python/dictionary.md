@@ -42,6 +42,14 @@
 
 ![](examples/dictionary/loop_keys.py)
 
+## Loop over dictionary keys
+{id: loop-over-dictionary-keys}
+
+Looping over the "dictionary" is just like looping over the keys, but personally I prefer when we use the `somedictionary.keys()` expression.
+
+![](examples/dictionary/loop_dictionary.py)
+
+
 
 ## Loop using items
 {id: loop-items}
@@ -356,6 +364,20 @@ print(people[('Eric', 'Idle')]['born']) # 29 March 1943
 * In the second loop we go over the keys of the dictionary, that is the characters we have encountered. We sort them in ASCII order.
 * Then we print each one of them and the respective value, the number of times the character was found.
 
+## Default Dict
+{id: default-dict}
+{i: collections}
+{i: defaultdict}
+
+![](examples/dictionary/counter.py)
+![](examples/dictionary/counter.out)
+
+![](examples/dictionary/counter_condition.py)
+![](examples/dictionary/counter_condition.out)
+
+![](examples/dictionary/default_dict.py)
+![](examples/dictionary/default_dict.out)
+
 ## Solution: count characters with default dict
 {id: solution-count-characters-with-default-dict}
 {i: collections}
@@ -411,31 +433,10 @@ Generate random DNA sequence
 ![](examples/dictionary/count_amino_acids.py)
 
 
-## Loop over dictionary keys
-{id: loop-over-dictionary-keys}
-
-Looping over the "dictionary" is just like looping over the keys.
-
-![](examples/dictionary/loop_dictionary.py)
-
-
 ## Do not change dictionary in loop
 {id: do-not-change-in-loop}
 
 ![](examples/dictionary/change_in_loop.py)
 
 
-## Default Dict
-{id: default-dict}
-{i: collections}
-{i: defaultdict}
-
-![](examples/dictionary/counter.py)
-![](examples/dictionary/counter.out)
-
-![](examples/dictionary/counter_condition.py)
-![](examples/dictionary/counter_condition.out)
-
-![](examples/dictionary/default_dict.py)
-![](examples/dictionary/default_dict.out)
 

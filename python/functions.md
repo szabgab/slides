@@ -1,6 +1,12 @@
 # Functions (subroutines)
 {id: python-functions}
 
+## Why use functions?
+{id: why-use-functions}
+
+* Code reuse - [DRY - Don't Repeate Yourself](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)
+* Small units of code. (One thought, single responsibility) Easier to understand, test, and maintain.
+
 ## Defining simple function
 {id: add-functions}
 {i: def}

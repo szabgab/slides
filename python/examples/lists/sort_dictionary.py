@@ -6,7 +6,7 @@ scores = {
 
 print(scores) # {'Miu': 88, 'Foo': 10, 'Bar': 34}
 
-sorted_names = sorted(scores)
+sorted_names = sorted(scores) # "sort dictionary" sorts the keys
 print(sorted_names)  # ['Bar', 'Foo', 'Miu']
 for s in sorted_names:
     print("{}  {}".format(s, scores[s]))
