@@ -61,17 +61,23 @@ The parameters of every function can be passed either as positional parameters o
 SyntaxError: positional argument follows keyword argument
 ```
 
-
 ## Default values
 {id: parameter-with-default-values}
 
 ![](examples/functions/default.py)
+![](examples/functions/default.out)
 
 {aside}
 Function parameters can have default values. In such case the parameters are optional.
 In the function declaration, the parameters with the default values must come last.
 In the call, the order among these arguments does not matter, and they are optional anyway.
 {/aside}
+
+## Default value in first param
+{id: parameter-with-default-value-in-first-param}
+
+![](examples/functions/default_first.py)
+![](examples/functions/default_first.out)
 
 
 ## Several defaults, using names
@@ -144,6 +150,13 @@ The `*numbers` argument can be preceded by any number of regular arguments
 The second declaration silently overrides the first declaration.
 
 * [pylint](http://www.pylint.org/) can find such problems, along with a bunch of others.
+
+## Return more than one value
+{id: return-more-than-one-value}
+
+![](examples/functions/multiple_return.py)
+
+![](examples/functions/multiple_return.out)
 
 
 ## Recursive factorial

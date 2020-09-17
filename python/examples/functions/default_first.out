@@ -1,0 +1,4 @@
+  File "default_first.py", line 2
+    def add(x=2, y):
+            ^
+SyntaxError: non-default argument follows default argument

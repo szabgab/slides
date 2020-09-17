@@ -1,12 +1,18 @@
 def prompt(question, retry=3):
-    while retry > 0:
-        inp = input('{} ({}): '.format(question, retry))
-        if inp == 'my secret':
-            return True
-        retry -= 1
-    return False
+    print(question)
+    print(retry)
+    #while retry > 0:
+    #    inp = input('{} ({}): '.format(question, retry))
+    #    if inp == 'my secret':
+    #        return True
+    #    retry -= 1
+    #return False
 
-print(prompt("Type in your password"))
+prompt("Type in your password")
 
-print(prompt("Type in your secret", 1))
+prompt("Type in your secret", 1)
+
+prompt("Hello", retry = 7)
+
+prompt(retry = 42, question = "Is it you?")
 

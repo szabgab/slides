@@ -10,5 +10,8 @@ print(mysum(1, 2))
 print(mysum(1, 1, 1))
 
 x = [2, 3, 5, 6]
+
 print(mysum(*x))
+
+mysum(x)
 
