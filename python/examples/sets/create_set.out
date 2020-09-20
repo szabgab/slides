@@ -1,3 +1,4 @@
-{'door', 'chair', 'table'}
+{'door', 'table', 'chair'}
 <class 'set'>
 has table
+<class 'set'>
