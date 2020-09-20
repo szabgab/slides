@@ -4,6 +4,20 @@
 ## Why use functions?
 {id: why-use-functions}
 
+{aside}
+There are two main reasons to use functions.
+
+One of the is code reuse. Instead of copy-paste-ing snippets of code that does the same in multiple areas in the application,
+we can create a function with a single copy of the code and call it from multiple location.
+
+Having functions can also make the code easier to understand, easier to test and to maintain.
+
+The functions are supposed to be relatively short, each function dealing with one issue, with one concern.
+They should have well defined input and output and without causing side-effects.
+
+There are no clear rules, but the suggestion is that function be somewhere between 4-30 lines of code.
+{/aside}
+
 * Code reuse - [DRY - Don't Repeate Yourself](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)
 * Small units of code. (One thought, single responsibility) Easier to understand, test, and maintain.
 
@@ -15,7 +29,6 @@
 ![](examples/functions/add_function.py)
 
 {aside}
-
 The function definition starts with the word "dev" followed by the name of the function ("add" in our example), followed by the list of parameters
 in a pair of parentheses, followed by a colon ":". Then the body of the function is indented to the right. The depth of indentation does not matter
 but it must be the same for all the lines of the function. When we stop the indentation and start a new expression on the first column, that's what tells
@@ -23,8 +36,8 @@ Python that the function defintion has ended.
 {/aside}
 
 
-## Defining a function
-{id: functions}
+## Passing positional parameters to a function
+{id: use-function-with-positional-parameters}
 {i: def}
 
 ![](examples/functions/params.py)
@@ -35,7 +48,7 @@ Positional parameters.
 
 
 
-## Parameters can be named
+## Function parameters can be named
 {id: named-parameters}
 {i: named parameter}
 {i: keyword argument}
@@ -61,7 +74,7 @@ The parameters of every function can be passed either as positional parameters o
 SyntaxError: positional argument follows keyword argument
 ```
 
-## Default values
+## Default values, optional parameters, optional parameters
 {id: parameter-with-default-values}
 
 ![](examples/functions/default.py)
@@ -90,8 +103,10 @@ Parameters with defaults must come at the end of the parameter declaration.
 
 ![](examples/functions/named_params_and_defaults.py)
 
-{aside}
+![](examples/functions/named_and_positional_bad.py)
+![](examples/functions/named_and_positional_bad.out)
 
+{aside}
 There can be several parameters with default values.
 They are all optional and can be given in any order after the positional arguments.
 {/aside}
@@ -146,10 +161,20 @@ The `*numbers` argument can be preceded by any number of regular arguments
 {id: duplicate-declaration}
 
 ![](examples/functions/duplicate_add.py)
+![](examples/functions/duplicate_add.out)
 
 The second declaration silently overrides the first declaration.
 
+## Pylint duplicate declaration
+{id: pylint-duplicate-declaration}
+
 * [pylint](http://www.pylint.org/) can find such problems, along with a bunch of others.
+
+```
+pylint -E duplicate_add.py
+```
+
+![](examples/functions/lint_duplicate_add.out)
 
 ## Return more than one value
 {id: return-more-than-one-value}
@@ -337,6 +362,13 @@ Processing d
 * Implement [bubble sort](https://en.wikipedia.org/wiki/Bubble_sort)
 * Implement [merge sort](https://en.wikipedia.org/wiki/Merge_sort)
 
+## Exercise: Refactor previous solutions to use functions
+{id: exercise-refactor-previous-solutions-to-us-functions}
+
+* Go over all of the previous exercises and their solutions (e.g. the games)
+* Take one (or more if you like this exercise) and change them to use functions.
+* If possible make sure you don't have any variable definitions outside of the functions and that each function has a single job to do.
+
 
 ## Solution: statistics
 {id: solution-statistics}
@@ -359,3 +391,4 @@ Processing d
 {id: solution-bubble-sort}
 
 ![](examples/functions/bubble_sort.py)
+

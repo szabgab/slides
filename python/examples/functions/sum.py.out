@@ -1,6 +1,20 @@
 (1,)
+<class 'tuple'>
 1
 (1, 2)
+<class 'tuple'>
 3
 (1, 1, 1)
+<class 'tuple'>
 3
+(2, 3, 5, 6)
+<class 'tuple'>
+16
+([2, 3, 5, 6],)
+<class 'tuple'>
+Traceback (most recent call last):
+  File "examples/functions/sum.py", line 17, in <module>
+    mysum(x)
+  File "examples/functions/sum.py", line 6, in mysum
+    total += s
+TypeError: unsupported operand type(s) for +=: 'int' and 'list'

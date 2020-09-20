@@ -1,0 +1,5 @@
+4
+Traceback (most recent call last):
+  File "examples/functions/duplicate_add.py", line 9, in <module>
+    add(2, 3)
+TypeError: add() takes 1 positional argument but 2 were given
