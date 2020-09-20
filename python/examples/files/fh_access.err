@@ -2,4 +2,3 @@ Traceback (most recent call last):
   File "examples/files/fh_access.py", line 14, in <module>
     print(fh[2])
 TypeError: '_io.TextIOWrapper' object is not subscriptable
-

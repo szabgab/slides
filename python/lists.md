@@ -437,13 +437,6 @@ In Python 3 it throws an exception.
 ![](examples/lists/sort_key.py)
 ![](examples/lists/sort_key.out)
 
-## Sort tuples
-{id: sort-tuples}
-
-Sorting tuples or list, or other complex structures
-
-![](examples/lists/sort_tuples.py)
-
 ## sort with sorted
 {id: sorted}
 {i: sorted}
@@ -559,6 +552,12 @@ and in each place it will be explained. Otherwise you don't need to use tuples.
 e.g. keys of dictionaries can be tuple (but not lists).
 
 
+## Sort tuples
+{id: sort-tuples}
+
+Sorting tuples or list, or other complex structures
+
+![](examples/lists/sort_tuples.py)
 
 
 ## Exercise: color selector menu

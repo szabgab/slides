@@ -23,7 +23,7 @@ hand can be handled by low level file-reading functions, however even for those 
 and interpret the specific formats. (e.g. CSV, HTML, XML, YAML, JSON parsers)
 {/aside}
 
-## Open vs Read
+## Open vs. Read vs. Load
 {id: open-vs-read}
 
 {aside}
@@ -243,6 +243,10 @@ python examples/files/read_binary.py examples/pil/first.png
 ## Direct access of a line in a file
 {id: direct-access-of-a-line}
 
+
+![](examples/files/access_list_element.py)
+![](examples/files/access_list_element.out)
+
 ![](examples/files/fh_access.py)
 ![](examples/files/fh_access.err)
 
@@ -250,6 +254,9 @@ python examples/files/read_binary.py examples/pil/first.png
 This does NOT work because files can only be accessed sequentially.
 {/aside}
 
+![](examples/files/read_all_lines.py)
+
+![](examples/files/count_lines.py)
 
 ## Exercise: count numbers
 {id: exercise-count-numbers}
