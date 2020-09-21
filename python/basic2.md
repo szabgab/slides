@@ -323,6 +323,7 @@ Whichever is appropriate in your situation.
 * We'll talk about this later. For now assume that the user enters something that can be converted to a number.
 * Wrap the code in try-except block to catch any exception raised during the conversion.
 * Use Regular Expressions (regexes) to verify that the input string looks like a number.
+* [Unicode Characters in the 'Number, Decimal Digit' Category](https://www.fileformat.info/info/unicode/category/Nd/list.htm)
 
 * [isdecimal](https://docs.python.org/3/library/stdtypes.html#str.isdecimal) Decimal numbers (digits) (not floating point)
 * [isnumeric](https://docs.python.org/3/library/stdtypes.html#str.isnumeric) Numeric character in the Unicode set (but not floating point number)
@@ -333,6 +334,8 @@ Whichever is appropriate in your situation.
 ![](examples/basics/isnumber.out)
 
 ![](examples/basics/isnumber2.out)
+
+![](examples/basics/isnumber_other.py)
 
 ## Converting string to int
 {id: converting-to-int}
