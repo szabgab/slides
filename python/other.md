@@ -512,4 +512,82 @@ TODO and add to dotnet
 TODO: example with async call in .NET getting back to python
 
 
+## assert to verify values
+{id: assert}
+{i: assert}
+{i: raise}
+{i: Exception}
+
+![](examples/modules/raise_exception.py)
+![](examples/modules/raise_exception.out)
+
+![](examples/modules/assert.py)
+![](examples/modules/assert.out)
+
+
+## mycalc as a self testing module
+{id: self-testing-module}
+{i: __file__}
+
+![](examples/modules/use_mycalc.py)
+
+```
+$ python use_mycalc.py
+42
+```
+![](examples/modules/mycalc.py)
+
+```
+$ python mycalc.py
+Self testing  mycalc.py
+```
+
+
+## doctest
+{id: doctest}
+{i: doctest}
+
+![](examples/modules/fibonacci_doctest.py)
+
+```
+python -m doctest fibonacci_doctest.py
+python examples/modules/fibonacci_doctest.py
+
+```
+
+![](examples/modules/fibonacci_doctest.out)
+
+[doctest](https://docs.python.org/library/doctest.html)
+
+
+## Export import
+{id: export-import}
+{i: __all__}
+{i: import}
+{i: from}
+
+* from mod import a,b,_c  - import 'a', 'b', and '_c' from 'mod'
+* from mod import *  - import every name listed in __all__ of 'mod' if __all__ is available.
+* from mod import *  - import every name that does NOT start with _ (if __all__ is not available)
+* import mod - import 'mod' and make every name in 'mod' accessible as 'mod.a', and 'mod._c'
+
+![](examples/modules/my_module.py)
+![](examples/modules/x.py)
+![](examples/modules/y.py)
+
+
+## Export import with __all__
+{id: import-with-all}
+{i: __all__}
+
+![](examples/modules/my_module2.py)
+![](examples/modules/z.py)
+
+
+## import module
+{id: import-module}
+
+![](examples/modules/q.py)
+
+
 
