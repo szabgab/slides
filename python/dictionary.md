@@ -144,13 +144,32 @@ If we use the `get` method, we get `None` if the key does not exist.
 ![](examples/dictionary/numbers.py)
 ![](examples/dictionary/numbers.out)
 
+
+## Sort a dictionary
+{id: sort-dictionary}
+
+{aside}
+When people says "sort a dictionary" they usually mean sorting the keys of the dictionary, but what does it mean in Python if we call `sorted` on a dictionary?
+{/aside}
+
+![](examples/dictionary/sort_dictionary.py)
+
+## Sort dictionary values
+{id: sort-dictionary-values}
+
+![](examples/dictionary/sort_dictionary_values.py)
+
 ## Sort dictionary by value
 {id: sort-dictionary-by-value}
 
-![](examples/lists/sort_dictionary.py)
+* Sort the keys by the values
+
+![](examples/dictionary/sort_dictionary_by_values.py)
+
+![](examples/dictionary/sort_dictionary_by_values_getitem.py)
 
 
-## Sort dictionary keys by value
+## Sort dictionary keys by value (another example)
 {id: sort-keys-by-value}
 {i: sort}
 {i: key}
