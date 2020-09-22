@@ -16,7 +16,7 @@
 Let's take a very simple script that has a single, and very simple function in it.
 {/aside}
 
-![](examples/functions/my_calculator_one_file.py)
+![](examples/modules/my_calculator_one_file.py)
 
 ## Create modules
 {id: create-modules}
@@ -25,14 +25,14 @@ Let's take a very simple script that has a single, and very simple function in i
 A module is just a Python file with a set of functions that us usually not used by itself. For example the "my_calculator.py".
 {/aside}
 
-![](examples/functions/my_calculator.py)
+![](examples/modules/my_calculator.py)
 
 {aside}
 A user made module is loaded exactly the same way as the built-in module.
 The functions defined in the module are used as if they were methods with the dot-notation.
 {/aside}
 
-![](examples/functions/add.py)
+![](examples/modules/add.py)
 
 
 {aside}
@@ -41,7 +41,7 @@ the file every time we use it. This might be shorter writing, but if we import t
 modules then they will overwrite each other. So I usually prefer loading the module as in the previous example.
 {/aside}
 
-![](examples/functions/add_from.py)
+![](examples/modules/add_from.py)
 
 
 ## path to load modules from - The module search path
@@ -164,19 +164,20 @@ Starting from Python 3.2 the pyc files are saved in the `__pycache__` directory.
 ## Runtime loading of modules
 {id: runtime-loading-of-modules}
 
-![](examples/functions/mygreet.py)
-![](examples/functions/runtime_loading.py)
+![](examples/modules/mygreet.py)
+![](examples/modules/runtime_loading.py)
 
 
 ## Conditional loading of modules
 {id: conditional-loading-of-modules}
-![](examples/functions/conditional_loading.py)
+
+![](examples/modules/conditional_loading.py)
 
 
 
 ## Duplicate importing of functions
 {id: duplicate-importing-of-functions}
-![](examples/functions/duplicate_add_from_module.py)
+![](examples/modules/duplicate_add_from_module.py)
 
 The second declaration silently overrides the first declaration.
 
@@ -195,7 +196,7 @@ The second declaration silently overrides the first declaration.
 We can have a file with all the functions implemented and then launch the run() function only if the file was executed as a stand-alone script.
 {/aside}
 
-![](examples/functions/mymodule.py)
+![](examples/modules/mymodule.py)
 
 ```
 $ python mymodule.py
@@ -212,7 +213,7 @@ run in  __main__
 If it is imported by another module then it won't run automatically. We have to call it manually.
 {/aside}
 
-![](examples/functions/import_mymodule.py)
+![](examples/modules/import_mymodule.py)
 
 ```
 $ python import_mymodule.py
@@ -224,7 +225,7 @@ run in  mymodule
 
 ## Script or library - from import
 {id: python-script-or-library-from-import}
-![](examples/functions/import_from_mymodule.py)
+![](examples/modules/import_from_mymodule.py)
 
 ```
 $ python import_from_mymodule.py
