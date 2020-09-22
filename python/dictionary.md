@@ -477,6 +477,8 @@ Generate random DNA sequence
 
 ![](examples/dictionary/count_amino_acids.py)
 
+![](examples/dictionary/amino_acid_counter.py)
+
 ## Solution: List of dictionaries
 {id: solution-list-of-dictionaries}
 
@@ -496,7 +498,7 @@ Generate random DNA sequence
 ## Solution: Age limit with dictionaries
 {id: solution-age-limit-with-dictionaries}
 
-TBD
+![](examples/dictionary/legal_drinking.py)
 
 
 ## Do not change dictionary in loop
