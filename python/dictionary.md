@@ -452,6 +452,8 @@ print(people[('Eric', 'Idle')]['born']) # 29 March 1943
 ## Solution: Combine files
 {id: solution-combine-files}
 
+* This is a working, but very verbose solution. Check out the next one!
+
 ![](examples/dictionary/combine_files.py)
 
 ## Solution: Combine files-improved
@@ -475,11 +477,31 @@ Generate random DNA sequence
 
 ![](examples/dictionary/count_amino_acids.py)
 
+## Solution: List of dictionaries
+{id: solution-list-of-dictionaries}
+
+![](examples/dictionary/list_of_dictionaries.py)
+
+* [csv](https://docs.python.org/library/csv.html)
+
+![](examples/dictionary/list_of_dictionaries_csv.py)
+
+## Solution: Dictionary of dictionaries
+{id: solution-dictionary-of-dictionaries}
+
+![](examples/dictionary/dictionary_of_dictionaries.py)
+
+![](examples/dictionary/dictionary_of_dictionaries_csv.py)
+
+## Solution: Age limit with dictionaries
+{id: solution-age-limit-with-dictionaries}
+
+TBD
+
 
 ## Do not change dictionary in loop
 {id: do-not-change-in-loop}
 
 ![](examples/dictionary/change_in_loop.py)
-
 
 
