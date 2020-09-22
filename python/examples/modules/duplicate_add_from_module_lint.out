@@ -1,0 +1,6 @@
+************* Module duplicate_add_from_module
+duplicate_add_from_module.py:4:0: W0404: Reimport 'add' (imported line 1) (reimported)
+duplicate_add_from_module.py:7:0: W0404: Reimport 'add' (imported line 1) (reimported)
+
+------------------------------------------------------------------
+Your code has been rated at 6.67/10 (previous run: 5.00/10, +1.67)

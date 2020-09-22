@@ -177,6 +177,7 @@ Starting from Python 3.2 the pyc files are saved in the `__pycache__` directory.
 
 ## Duplicate importing of functions
 {id: duplicate-importing-of-functions}
+
 ![](examples/modules/duplicate_add_from_module.py)
 
 The second declaration silently overrides the first declaration.
@@ -184,7 +185,11 @@ The second declaration silently overrides the first declaration.
 
 [pylint](http://www.pylint.org/) can find such problems, along with a bunch of others.
 
+```
+pylint --disable=C  duplicate_add_from_module.py
+```
 
+![](examples/modules/duplicate_add_from_module_lint.out)
 
 
 ## Script or library
