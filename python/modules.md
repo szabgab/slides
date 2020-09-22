@@ -241,24 +241,24 @@ run in  mymodule
 {i: raise}
 {i: Exception}
 
-![](examples/functions/raise_exception.py)
-![](examples/functions/raise_exception.out)
+![](examples/modules/raise_exception.py)
+![](examples/modules/raise_exception.out)
 
-![](examples/functions/assert.py)
-![](examples/functions/assert.out)
+![](examples/modules/assert.py)
+![](examples/modules/assert.out)
 
 
 ## mycalc as a self testing module
 {id: self-testing-module}
 {i: __file__}
 
-![](examples/functions/use_mycalc.py)
+![](examples/modules/use_mycalc.py)
 
 ```
 $ python use_mycalc.py
 42
 ```
-![](examples/functions/mycalc.py)
+![](examples/modules/mycalc.py)
 
 ```
 $ python mycalc.py
@@ -269,17 +269,18 @@ Self testing  mycalc.py
 ## doctest
 {id: doctest}
 {i: doctest}
-![](examples/functions/fibonacci_doctest.py)
+
+![](examples/modules/fibonacci_doctest.py)
 
 ```
 python -m doctest fibonacci_doctest.py
 ```
 
 ```
-python examples/functions/fibonacci_doctest.py
+python examples/modules/fibonacci_doctest.py
 
 **********************************************************************
-File ".../examples/functions/fibonacci_doctest.py", line 12, in __main__.fib
+File ".../examples/modules/fibonacci_doctest.py", line 12, in __main__.fib
 Failed example:
     fib(11)
 Expected:
@@ -295,10 +296,9 @@ Got:
 [doctest](https://docs.python.org/3/library/doctest.html)
 
 
-
-
 ## Scope of import
 {id: scope-of-import}
+
 ![](examples/functions/mydiv.py)
 ![](examples/functions/division.py)
 
