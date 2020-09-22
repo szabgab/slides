@@ -1278,3 +1278,25 @@ On the other hand you won't see any failed test reported. After all if no tests 
 This can be confusing.
 {/aside}
 
+## Exercise: Write tests for script combining files
+{id: exercise-write-tests-for-script-combining-file}
+
+* This is a solution for one of the exercises in which we had to combine two files adding the numbers of the vegetables together.
+* Many things could be improved, but before doing that, write a test (or two) to check this code. Without changing it.
+
+![](examples/dictionary/combine_files.py)
+
+Data Files:
+
+![](examples/files/a.txt)
+![](examples/files/b.txt)
+
+## Solution: Write tests for script combining files
+{id: solution-write-tests-for-script-combining-file}
+
+* TBD
+* Becaused we have fixed pathes in the script we have to create a directory structure that is similar to what is expected in a temporary location.
+* Run the script and compare the results to some expected file.
+* Then start refactoring the code.
+
+

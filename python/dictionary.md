@@ -449,10 +449,15 @@ print(people[('Eric', 'Idle')]['born']) # 29 March 1943
 ![](examples/dictionary/apache_access_split.py)
 
 
-## Solution: Combine lists again
-{id: solution-combine-lists-again}
+## Solution: Combine files
+{id: solution-combine-files}
 
-![](examples/dictionary/combine_lists.py)
+![](examples/dictionary/combine_files.py)
+
+## Solution: Combine files-improved
+{id: solution-combine-files-improved}
+
+![](examples/dictionary/combine_files_improved.py)
 
 
 ## Solution: counting DNA bases
