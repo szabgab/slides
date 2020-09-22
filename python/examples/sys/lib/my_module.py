@@ -1,1 +1,3 @@
-print("Importing my_module")
+
+def run():
+    print("Hello from my_module")
