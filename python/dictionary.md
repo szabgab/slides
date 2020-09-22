@@ -334,7 +334,7 @@ The keys in the dictionary are the names of the columns (fname, lname, born) the
 print(people[1]['fname']) # Eric
 ```
 
-## Exercise: Dictinoary of dictionaries
+## Exercise: Dictionary of dictionaries
 {id: exercise-dictionary-of-dictionaries}
 
 Given the following file build a dictionary of dictionaries where each internal dictionary represents one person.
@@ -410,12 +410,26 @@ print(people[('Eric', 'Idle')]['born']) # 29 March 1943
 * This allows us to remove the condition checking if the character was already seen and just increment the counter. The first time we encounter a charcter the dictionary will pretend that it was already there with value 0 so everying will work out nicely.
 
 
-## Solution: count words
+## Solution: count words (plain)
 {id: solution-count-words}
 
 ![](examples/dictionary/count_words.py)
-![](examples/dictionary/count_words_with_counter.py)
+
+## Solution: count words (defaultdict)
+{id: solution-count-words-defaultdict}
+{i: defaultdict}
+
+* [defaultdict](https://docs.python.org/library/collections.html#collections.defaultdict)
+
 ![](examples/dictionary/count_words_with_defaultdict.py)
+
+## Solution: count words (Counter)
+{id: solution-count-words-counter}
+{i: Counter}
+
+* [Counter](https://docs.python.org/library/collections.html#collections.Counter)
+
+![](examples/dictionary/count_words_with_counter.py)
 
 
 ## Solution: count words in file
@@ -428,6 +442,11 @@ print(people[('Eric', 'Idle')]['born']) # 29 March 1943
 {id: solution-apache-log}
 
 ![](examples/dictionary/apache_access.py)
+
+## Solution: Apache log using split
+{id: solution-apache-log-using-split}
+
+![](examples/dictionary/apache_access_split.py)
 
 
 ## Solution: Combine lists again

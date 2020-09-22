@@ -9,8 +9,8 @@ count = defaultdict(int)
 
 with open(filename) as fh:
     for line in fh:
-        space = line.index(' ')
-        ip = line[0:space]
+        ip, rest = line.split(' ', 1)
+        #ip = line.split(' ', 1)[0]
         count[ip] += 1
 
 for ip in count:
