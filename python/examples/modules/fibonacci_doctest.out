@@ -1,0 +1,12 @@
+**********************************************************************
+File ".../examples/modules/fibonacci_doctest.py", line 12, in __main__.fib
+Failed example:
+    fib(11)
+Expected:
+    89
+Got:
+    'bug'
+**********************************************************************
+1 items had failures:
+   1 of   4 in __main__.fib
+***Test Failed*** 1 failures.

@@ -274,33 +274,20 @@ Self testing  mycalc.py
 
 ```
 python -m doctest fibonacci_doctest.py
-```
-
-```
 python examples/modules/fibonacci_doctest.py
 
-**********************************************************************
-File ".../examples/modules/fibonacci_doctest.py", line 12, in __main__.fib
-Failed example:
-    fib(11)
-Expected:
-    89
-Got:
-    'bug'
-**********************************************************************
-1 items had failures:
-   1 of   4 in __main__.fib
-***Test Failed*** 1 failures.
 ```
 
-[doctest](https://docs.python.org/3/library/doctest.html)
+![](examples/modules/fibonacci_doctest.out)
+
+[doctest](https://docs.python.org/library/doctest.html)
 
 
 ## Scope of import
 {id: scope-of-import}
 
-![](examples/functions/mydiv.py)
-![](examples/functions/division.py)
+![](examples/modules/mydiv.py)
+![](examples/modules/division.py)
 
 {aside}
 The importing of functions, and the changes in the behavior of the compiler are file specific.
