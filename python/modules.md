@@ -1,11 +1,22 @@
 # Modules
 {id: python-modules}
 
+
+## Goal of having modules
+{id: goal-of-having-modules}
+
+* Code reuse: Allow multiple script to reuse the same function without copying the code.
+* Better code design.
+* Separation of concerns: Functions dealing with one subject are grouped together in one module.
+
 ## Before modules
 {id: in-one-file}
+
+{aside}
+Let's take a very simple script that has a single, and very simple function in it.
+{/aside}
+
 ![](examples/functions/my_calculator_one_file.py)
-
-
 
 ## Create modules
 {id: create-modules}
@@ -17,20 +28,19 @@ A module is just a Python file with a set of functions that us usually not used 
 ![](examples/functions/my_calculator.py)
 
 {aside}
-
 A user made module is loaded exactly the same way as the built-in module.
-The functions defined in the module are used as if they were methods.
+The functions defined in the module are used as if they were methods with the dot-notation.
 {/aside}
+
 ![](examples/functions/add.py)
 
 
-
 {aside}
-
 We can import specific functions to the current name space (symbol table) and then we don't need to prefix it with the name of
 the file every time we use it. This might be shorter writing, but if we import the same function name from two different
 modules then they will overwrite each other. So I usually prefer loading the module as in the previous example.
 {/aside}
+
 ![](examples/functions/add_from.py)
 
 
@@ -39,6 +49,11 @@ modules then they will overwrite each other. So I usually prefer loading the mod
 {i: PYTHONPATH}
 {i: .pth}
 
+{aside}
+There are several steps Python does when it searches for the location of a file to be imported, but the most important
+one is what we see on the next page in sys.path.
+{/aside}
+
 1. The directory where the main script is located.
 1. The directories listed in PYTHONPATH environment variable.
 1. Directories of standard libraries.
@@ -46,9 +61,11 @@ modules then they will overwrite each other. So I usually prefer loading the mod
 1. The site-packages home of third-party extensions.
 
 
-
 ## sys.path - the module search path
 {id: sys-path}
+{i: sys}
+{i: path}
+
 ![](examples/package/syspath.py)
 
 ```
@@ -64,9 +81,8 @@ modules then they will overwrite each other. So I usually prefer loading the mod
 {id: project-directory-structure}
 
 {aside}
-
-            If our executable scripts and our modules are all in the same directory then we don't have to worry ad the directory of the script is included in the list of places
-            where "import" is looking for the files to be imported.
+If our executable scripts and our modules are all in the same directory then we don't have to worry ad the directory of the script is included in the list of places
+where "import" is looking for the files to be imported.
 {/aside}
 
 ```
@@ -81,15 +97,13 @@ project/
 {id: absolute-path}
 
 {aside}
-
-    If we would like to load a module that is not installed in one of the standard locations, but we know where it is located on our disk,
-    we can set the "sys.path" to the absolute path to this directory. This works on the specific computer, but if you'd like to distribute
-    the script to other computers you'll have to make sure the module to be loaded is installed in the same location or you'll
-    have to update the script to point to the location of the module in each computer. Not an ideal solution.
+If we would like to load a module that is not installed in one of the standard locations, but we know where it is located on our disk,
+we can set the "sys.path" to the absolute path to this directory. This works on the specific computer, but if you'd like to distribute
+the script to other computers you'll have to make sure the module to be loaded is installed in the same location or you'll
+have to update the script to point to the location of the module in each computer. This is not an ideal solution.
 {/aside}
+
 ![](examples/modules/load_from_absolute_path.py)
-
-
 
 
 ## Relative path
@@ -107,13 +121,25 @@ project/
 
 {aside}
 We can use a directory structure that is more complex than the flat structure we had earlier. In this case the location of the modules relatively to the scripts
-    is fixed. In this case it is "../lib". We can compute the relative path in each of our scripts. That will ensure we pick up the right module every time we run the script.
-        Regardless of the location of the whole project tree.
+is fixed. In this case it is "../lib". We can compute the relative path in each of our scripts. That will ensure we pick up the right module every time we run the script.
+Regardless of the location of the whole project tree.
 {/aside}
-![](examples/sys/lib/my_module.py)
-![](examples/sys/bin/relative_path.py)
+
+![](examples/project_root/lib/my_module.py)
+![](examples/project_root/bin/relative_path.py)
 
 
+## Relative path explained
+{id: relative-path-explained}
+
+```
+../project_root/
+     bin/relative_path_explained.py
+     lib/my_module.py
+```
+
+![](examples/project_root/bin/relative_path_explained.py)
+![](examples/project_root/bin/relative_path_explained.out)
 
 ## Python modules are compiled
 {id: compile-python-modules}
