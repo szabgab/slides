@@ -8,7 +8,10 @@ if len(sys.argv) != 2:
 filename = sys.argv[1]
 count = 0
 with open(filename) as fh:
-    rd = csv.reader(fh, delimiter=';')
+    rd = csv.reader(fh,
+        delimiter=';',
+        #strict=True,
+    )
 
     for row in rd:
         print(row)

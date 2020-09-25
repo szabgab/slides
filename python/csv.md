@@ -18,10 +18,10 @@ python examples/csv/read_csv_split.py examples/csv/plain.csv
 ![](examples/csv/with_quotes.csv)
 ![](examples/csv/with_newlines.csv)
 
-
 ## Reading a CSV file
 {id: reading-csv}
 {i: csv}
+{i: reader}
 
 ![](examples/csv/read_csv.py)
 
@@ -29,13 +29,19 @@ python examples/csv/read_csv_split.py examples/csv/plain.csv
 python examples/csv/read_csv.py examples/csv/plain.csv
 ```
 
+## CSV with newlines missing closing quote
+{id: csv-with-newlines-missing-closing-quote}
+
+![](examples/csv/with_newlines.csv)
+
+
 ## CSV to dictionary
 {id: csv-to-dictionary}
+{i: DictReader}
 
 ![](examples/csv/monty_python.csv)
 ![](examples/csv/read_monty.py)
 ![](examples/csv/read_monty.out)
-
 
 
 ## CSV Attributes
