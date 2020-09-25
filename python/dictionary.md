@@ -356,6 +356,18 @@ print(people[('Eric', 'Idle')]['born']) # 29 March 1943
 
 * Given a file like the following create a new file with a third column in which you write "yes", or "no" depending if the person can legally drink alcohol in that country.
 
+## Exercise: Merge files with timestamps
+{id: merge-files-with-timestamps}
+
+* Given a few CSV files in which the first column is a timestamp, write a script that can merge the files so the merged result also has timestamps in increasing order.
+* First try to solve it for 2 files.
+* Then solve it for any N files.
+
+![](examples/dictionary/merge/a.csv)
+![](examples/dictionary/merge/b.csv)
+![](examples/dictionary/merge/c.csv)
+![](examples/dictionary/merge/d.csv)
+
 
 ## Solution: count characters
 {id: solution-count-characters}
@@ -500,6 +512,11 @@ Generate random DNA sequence
 
 ![](examples/dictionary/legal_drinking.py)
 
+## Exercise: Merge files with timestamps
+{id: merge-files-with-timestamps}
+
+![](examples/dictionary/merge/merge.py)
+![](examples/dictionary/merge/merge_all.py)
 
 ## Do not change dictionary in loop
 {id: do-not-change-in-loop}
