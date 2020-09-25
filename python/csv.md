@@ -4,18 +4,19 @@
 ## Reading CSV the naive way
 {id: reading-csv-the-naive-way}
 
-![](examples/csv/process_csv_file.csv)
+![](examples/csv/plain.csv)
 ![](examples/csv/read_csv_split.py)
 
-**python examples/csv/read_csv_split.py examples/csv/process_csv_file.csv**
-
+```
+python examples/csv/read_csv_split.py examples/csv/plain.csv
+```
 
 
 ## CSV with quotes and newlines
 {id: csv-with-newlines}
 
-![](examples/csv/process_csv_file_quote.csv)
-![](examples/csv/process_csv_file_newline.csv)
+![](examples/csv/with_quotes.csv)
+![](examples/csv/with_newlines.csv)
 
 
 ## Reading a CSV file
@@ -24,20 +25,9 @@
 
 ![](examples/csv/read_csv.py)
 
-**python examples/csv/read_csv.py examples/csv/process_csv_file.csv**
-
-
-
-Dialects of CSV files. See also:
-[csv](http://docs.python.org/3/library/csv.html)
-
-
-## CSV dialects
-{id: csv-dialects}
-
-![](examples/csv/dialects.py)
-![](examples/csv/dialects.out)
-
+```
+python examples/csv/read_csv.py examples/csv/plain.csv
+```
 
 ## CSV to dictionary
 {id: csv-to-dictionary}
@@ -45,6 +35,34 @@ Dialects of CSV files. See also:
 ![](examples/csv/monty_python.csv)
 ![](examples/csv/read_monty.py)
 ![](examples/csv/read_monty.out)
+
+
+
+## CSV Attributes
+{id: csv-attributes}
+
+* delimiter
+* doublequote
+* escapechar
+* lineterminator
+* quotechar
+* quoting
+* skipinitialspace
+* strict
+
+## CSV dialects
+{id: csv-dialects}
+{i: list_dialects}
+
+{aside}
+The csv module defines a number of "dialects", sets of attributes.
+{/aside}
+
+![](examples/csv/dialects.py)
+![](examples/csv/dialects.out)
+
+Dialects of CSV files. See also:
+[csv](http://docs.python.org/library/csv.html)
 
 
 ## Exercise: CSV

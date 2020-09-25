@@ -1,15 +1,22 @@
 import csv
 
-for dname in csv.list_dialects():
-    print(dname)
-    d = csv.get_dialect(dname)
-    for n in ['delimiter', 'doublequote', 'escapechar',
-            'lineterminator', 'quotechar',
-            'quoting', 'skipinitialspace', 'strict']:
-        attr = getattr(d, n)
+for dialect_name in csv.list_dialects():
+    print(dialect_name)
+    dialect = csv.get_dialect(dialect_name)
+    for attribute_name in [
+            'delimiter',
+            'doublequote',
+            'escapechar',
+            'lineterminator',
+            'quotechar',
+            'quoting',
+            'skipinitialspace',
+            'strict',
+        ]:
+        attr = getattr(dialect, attribute_name)
         if attr == '\t':
             attr = '\\t'
         if attr == '\r\n':
             attr = '\\r\\n'
-        print("  {:16} '{}'".format(n, attr))
+        print("  {:16} '{}'".format(attribute_name, attr))
 

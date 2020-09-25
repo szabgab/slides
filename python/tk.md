@@ -1,10 +1,28 @@
 # GUI with Python/Tk
 {id: tk}
 
-## Sample Tk app
+## Sample Tk Demo app
 {id: tk-simple}
 
+{aside}
+This application shows a number of widgets available in Python Tk.
+The primary goal is to show a few features that we'll learn about on the following pages.
+{/aside}
+
 ![](examples/tk/tk_demo.py)
+
+## Simple file dialog
+{id: simple-file-dialog}
+{i: filedialog}
+{i: askopenfilename}
+
+{aside}
+This is another way of using the Tk widgets. Here we have a plain command-line script, but instead of using the
+standard `input()` function of Python to ask for a filename it launches a Tk File-dialog widget to allow the user to browse
+and select a file.
+{/aside}
+
+![](examples/tk/simple_file_dialog.py)
 
 
 ## GUI Toolkits
@@ -49,6 +67,8 @@ need to install it yourself. For examples on Ubuntu you can use `apt` to install
 
 ```
 sudo apt-get install python3-tk
+
+pip install tk
 ```
 
 ## Python Tk Documentation
@@ -331,7 +351,6 @@ First we are going to see small examples with each one of these Widgets. Then we
 
 ![](examples/tk/tk_example.py)
 
-
 ## Exercise: Tk - Calculator one line
 {id: exercise-tk-calculator-one-line}
 
@@ -341,13 +360,30 @@ When the button is pressed the expression is calculated.
 
 There is another button called "Quit" that will close the application.
 
-## Exercise: Tk Shopping list
+## Exercise: Tk - Convert CSV file
+{id: exercise-tk-convert-csv-file}
+
+* Write a Tk-based application that allows you to
+* Select an existing .csv file
+* Select a filename for output
+* 
+
+
+## Exercise: Tk - Calculator with buttons
+{id: exercise-tk-calculator-with-button}
+
+* This is a Calculator app that already has buttons for the digits 0-9
+* Buttons for the operators `+-*/`
+* A button for `=`
+* A window where we can see what we type in using the buttons or using the keyboard.
+
+## Exercise: Tk - Shopping list
 {id: exercise-tk-shopping-list}
 
 Create a Tk application that allows you to create a [shopping list](https://code-maven.com/shopping-list).
 
 
-## Exercise: Tk TODO list
+## Exercise: Tk - TODO list
 {id: exercise-tk-todo-list}
 
 * Create a Tk application to handle your TODO items.
@@ -360,7 +396,7 @@ Create a Tk application that allows you to create a [shopping list](https://code
 * The application should automatically save the items in their most up-to-date state in a "database". The database can be a JSON file or and SQLite database or anything else you feel fit.
 
 
-## Exercise: Tk Notepad
+## Exercise: Tk - Notepad
 {id: exercise-tk-notepad}
 
 * Create a Notepad like text editor.
@@ -370,19 +406,19 @@ Create a Tk application that allows you to create a [shopping list](https://code
 * Create a menu called About that displays an about box containing the names of the authors of the app.
 * Menu item to Search for text.
 
-## Exercise: Tk Copy files
+## Exercise: Tk - Copy files
 {id: exercise-tk-copy-files}
 
 An application that allows you to type in, or select an existing file and another filename
 for which the file does not exists.
 Then copy the old file to the new name.
 
-## Exercise: Tk Implement Master Mind board
+## Exercise: Tk - Implement Master Mind board
 {id: exercise-tk-master-mind}
 
 Create an application that we can use to play [Master Mind](https://en.wikipedia.org/wiki/Mastermind_(board_game))
 
-## Exercise: Tk
+## Exercise: Tk - Convert file
 {id: exercise-tk}
 
 * Application that accepts a "title" - line of text, a file selected, a new filename (that probably does not exist) and then runs.
@@ -398,24 +434,19 @@ Create an application that we can use to play [Master Mind](https://en.wikipedia
 
 ![](examples/tk/calculator.py)
 
-## Solution: Tk Implement Master Mind board
+## Solution: Tk - Implement Master Mind board
 {id: solution-tk-master-mind}
 
 TBD
 
-## Solution: Tk
+## Solution: Tk - convert file
 {id: solution-tk}
 
 ![](examples/tk/convert_file.py)
 
-## Solution: Tk Notepad
+## Solution: Tk - Notepad
 {id: solution-tk-notepad}
 
 ![](examples/tk/tk_notepad.py)
 
-## Simple file dialog
-{id: simple-file-dialog}
-{i: filedialog}
-{i: askopenfilename}
 
-![](examples/tk/simple_file_dialog.py)
