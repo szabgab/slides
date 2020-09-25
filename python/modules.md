@@ -43,6 +43,9 @@ modules then they will overwrite each other. So I usually prefer loading the mod
 
 ![](examples/modules/add_from.py)
 
+* Using with an alias
+
+![](examples/modules/add_as.py)
 
 ## path to load modules from - The module search path
 {id: path-to-load-modules-from}
