@@ -32,7 +32,7 @@ python examples/csv/read_csv.py examples/csv/plain.csv
 ## CSV with newlines missing closing quote
 {id: csv-with-newlines-missing-closing-quote}
 
-![](examples/csv/with_newlines.csv)
+![](examples/csv/with_newlines_error.csv)
 
 
 ## CSV to dictionary
@@ -99,6 +99,4 @@ For extra bonus create another dictionary where we can look up the information b
 {id: solution-csv}
 
 ![](examples/csv/read_mp.py)
-
-
 
