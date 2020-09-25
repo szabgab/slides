@@ -11,9 +11,12 @@ var2 = tk.BooleanVar()
 cb2 = tk.Checkbutton(app, text='female', variable=var2)
 cb2.pack()
 
+#var1.set(True)
+
 def clicked():
     print(var1.get())
     print(var2.get())
+    #print(dir(cb1))
 
 button = tk.Button(app, text='Show', width=25, command=clicked)
 button.pack()
