@@ -82,6 +82,12 @@ print(people["Terry"]["lname"])  # Gilliam
 
 For extra bonus create another dictionary where we can look up the information based on their fname and lname.
 
+## Exercise: count row length in csv files
+{id: exercise-count-row-length-in-csv-files}
+
+* Write a script that given a CSV file will tell if all the rows have the same length or if some of them are different.
+* Show which ones are different.
+
 
 ## Solution: CSV
 {id: solution-csv}
