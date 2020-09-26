@@ -80,6 +80,14 @@ one is what we see on the next page in sys.path.
 ```
 
 
+## Project directory layouts
+{id: project-directory-layouts}
+
+* Flat project
+* Absolute path
+* Relative path
+* Using submodules
+
 ## Flat project directory structure
 {id: project-directory-structure}
 
@@ -143,6 +151,19 @@ Regardless of the location of the whole project tree.
 
 ![](examples/project_root/bin/relative_path_explained.py)
 ![](examples/project_root/bin/relative_path_explained.out)
+
+## Submodules
+{id: submodules}
+
+```
+aproject/
+    app.py
+    mymodules/math.py
+```
+
+![](examples/aproject/app.py)
+![](examples/aproject/mymodules/math.py)
+
 
 ## Python modules are compiled
 {id: compile-python-modules}
