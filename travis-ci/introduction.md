@@ -300,6 +300,19 @@ $ echo "After the script phase."
 
 ![](examples/os-matrix/.travis.yml)
 
+## true as no-operation to skip a step
+{id: true-as-no-operation}
+{i: true}
+
+Sometimes, for some languages, there is some default behavior for the index and the script step but you'd like to skip that operation.
+You can put `true` as the command to be executed. A a shell command the only thing it does is exit with success.
+
+So you could write:
+
+```
+install: true
+```
+
 ## Languages
 {id: languages}
 
