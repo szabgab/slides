@@ -1,0 +1,6 @@
+language: minimal
+script: uname -a
+os:
+   - osx
+   - windows
+   - linux

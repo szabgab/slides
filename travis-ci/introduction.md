@@ -295,6 +295,11 @@ $ echo "After the script phase."
 
 * Add a `- ls qqrq` to the steps to see how we get the "After failure" message.
 
+## OS Matrix
+{id: os-matrix}
+
+![](examples/os-matrix/.travis.yml)
+
 ## Languages
 {id: languages}
 
