@@ -1,5 +1,5 @@
 # Modules
-{id: python-modules}
+{id: modules}
 
 
 ## Goal of having modules
