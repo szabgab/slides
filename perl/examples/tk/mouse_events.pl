@@ -6,6 +6,13 @@ use Tk;
 
 my $top = MainWindow->new;
 
+my $label = $top->Label(
+    -text => "Click on the buttons of the mouse\nand look at the terminal.",
+    -font => ['fixed', 40],
+    -background => 'blue',
+);
+$label->pack;
+
 $top->bind('<ButtonPress-1>', \&mouse);
 $top->bind('<ButtonPress-2>', \&mouse);
 $top->bind('<ButtonPress-3>', \&mouse);

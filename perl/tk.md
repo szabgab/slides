@@ -78,6 +78,7 @@
 
 ## Perl Tk Mouse events, coordinates
 {id: tk-mouse-events-and-coordinates}
+{i: XEvent}
 
 * See the explanations [Tk::bind](https://metacpan.org/pod/distribution/Tk/pod/bind.pod#BINDING-CALLBACKS-AND-SUBSTITUTIONS)
 

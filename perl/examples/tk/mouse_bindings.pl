@@ -6,6 +6,14 @@ use Tk;
 
 my $top = MainWindow->new;
 
+my $label = $top->Label(
+    -text => "Click on the buttons of the mouse\nand look at the terminal.",
+    -font => ['fixed', 40],
+    -background => 'purple',
+);
+$label->pack;
+
+
 $top->bind('<ButtonPress-1>', sub { say 'ButtonPress-1' }); # Mouse left button click
 $top->bind('<ButtonPress-2>', sub { say 'ButtonPress-2' }); # Mouse middle button click
 $top->bind('<ButtonPress-3>', sub { say 'ButtonPress-3' }); # Mouse right button click
