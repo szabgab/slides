@@ -132,6 +132,17 @@ First we are going to see small examples with each one of these Widgets. Then we
 
 ![](examples/tk/tk_key_binding.py)
 
+* Alt-F4 is already bound to exit
+
+## Python Tk Mouse clicks
+{id: tk-mouse-clicks}
+
+![](examples/tk/tk_mouse_clicks.py)
+
+## Python Tk Mouse movements (motions)
+{id: tk-mouse-movements}
+
+![](examples/tk/tk_mouse_motion.py)
 
 ## Python Tk Entry (one-line text entry)
 {id: tk-entry}

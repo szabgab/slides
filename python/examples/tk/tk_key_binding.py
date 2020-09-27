@@ -10,6 +10,10 @@ label.pack()
 def pressed_a(event):
     print("pressed a")
 
+def pressed_shift_a(event):
+    print("pressed shift-a (aka. A)")
+
+
 def pressed_control_b(event):
     print("pressed Ctr-b")
 
@@ -20,6 +24,7 @@ def pressed_f1(event):
     print("pressed F1")
 
 app.bind("<a>", pressed_a)
+app.bind("<A>", pressed_shift_a)
 app.bind("<Control-b>", pressed_control_b)
 app.bind("<Alt-c>", pressed_alt_c)
 app.bind("<F1>", pressed_f1)
