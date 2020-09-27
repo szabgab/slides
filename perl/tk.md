@@ -32,7 +32,7 @@
 
 * [Tk::Button](https://metacpan.org/pod/Tk::Button)
 
-## Perl Tk Entry
+## Perl Tk Entry (visible and hidden for secrets)
 {id: tk-entry}
 {i: Entry}
 
@@ -62,6 +62,8 @@
 
 ![](examples/tk/key_bindings.pl)
 
+* Alt-F4 is already use to exit the application
+
 ## Perl Tk Any Key binding
 {id: tk-any-key-binding}
 
@@ -81,7 +83,7 @@
 
 ![](examples/tk/mouse_events.pl)
 
-## Checkbutton Checkboxes
+## Perl Tk Checkbutton (Checkbox)
 {id: tk-checkbutton}
 {i: Checkbutton}
 
@@ -89,7 +91,7 @@
 
 ![](examples/tk/check_button.pl)
 
-## Radiobutton
+## Perl Tk Radiobutton
 {id: tk-radiobutton}
 {i: Radiobutton}
 
@@ -97,7 +99,16 @@
 
 ![](examples/tk/radio_button.pl)
 
-## Dialog
+## Perl Tk Listbox
+{id: tk-listbox}
+{i: Listbox}
+
+* [Tk::Listbox](https://metacpan.org/pod/Tk::Listbox)
+
+
+![](examples/tk/listbox.pl)
+
+## Perl Tk Dialog
 {id: tk-dialog}
 {i: Dialog}
 
@@ -105,7 +116,7 @@
 
 ![](examples/tk/dialog.pl)
 
-## DialogBox
+## Perl Tk DialogBox
 {id: tk-dialogbox}
 
 ![](examples/tk/dialog_box.pl)
@@ -114,7 +125,7 @@
 
 ![](examples/tk/popout.pl)
 
-## Notepad (Simple editor)
+## Perl Tk Notepad (Simple editor)
 {id: tk-notepad}
 
 ![](examples/tk/notepad.pl)
@@ -164,9 +175,7 @@
 
 ![](examples/tk/table.pl)
 
-
-
-## Menu Button
+## Perl Tk Menu Button
 {id: tk-menu-button}
 {i: Menubutton}
 

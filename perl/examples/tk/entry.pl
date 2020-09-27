@@ -10,6 +10,13 @@ my $entry = $top->Entry(
 );
 $entry->pack;
 
+my $secret = $top->Entry(
+    -font => ['fixed', 40],
+    -show => 0,
+);
+$secret->pack;
+
+
 my $btn = $top->Button(
     -text    => 'Click me',
     -font    => ['fixed', 20],
@@ -19,6 +26,7 @@ $btn->pack;
 
 sub do_on_click {
     print($entry->get, "\n");
+    print($secret->get, "\n");
     print("Clicked\n");
 }
 
