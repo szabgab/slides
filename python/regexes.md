@@ -243,11 +243,23 @@ r'#[a-f@.]#'
 {i: \w}
 {i: \s}
 
-* **\d** digit: [0-9]   Use stand alone: \d or as part of a bigger character class: [abc\d]
-* **\w** word character: [0-9a-zA-Z_]
+* **\d** digit: Use stand alone: \d or as part of a bigger character class: [abc\d]
+* **\w** word character (digits, letters, underscore)
 * **\s** white space: [\f\t\n\r ] form-feed, tab, newline, carriage return and SPACE
 
+* [Unicode Characters in the 'Number, Decimal Digit' Category](https://www.fileformat.info/info/unicode/category/Nd/list.htm)
 
+## Match digits
+{id: match-digits}
+
+![](examples/regex/digits.py)
+![](examples/regex/digits.out)
+
+## Word Characters
+{id: word-characters}
+
+![](examples/regex/word_characters.py)
+![](examples/regex/word_characters.out)
 
 ## Negated character class
 {id: negated-character-class}
