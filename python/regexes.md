@@ -243,11 +243,11 @@ r'#[a-f@.]#'
 {i: \w}
 {i: \s}
 
-* **\d** digit: Use stand alone: \d or as part of a bigger character class: [abc\d]
+* **\d** digit: [Unicode Characters in the 'Number, Decimal Digit' Category](https://www.fileformat.info/info/unicode/category/Nd/list.htm)
 * **\w** word character (digits, letters, underscore)
 * **\s** white space: [\f\t\n\r ] form-feed, tab, newline, carriage return and SPACE
 
-* [Unicode Characters in the 'Number, Decimal Digit' Category](https://www.fileformat.info/info/unicode/category/Nd/list.htm)
+* Use stand alone: \d or as part of a bigger character class: [abc\d]
 
 ## Match digits
 {id: match-digits}

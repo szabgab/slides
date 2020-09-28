@@ -1,15 +1,15 @@
 import re
 
 values = [
-    '11',
-    '٣', # arabic 3
+    '2',
+    '٣', # Arabic 3
     '½', # unicode 1/2
     '②', # unicode circled 2
     '߄', # NKO 4 (a writing system for the Manding languages of West Africa)
     '६', # Devanagari aka. Nagari (Indian)
     '_', # underscrore
     '-', # dash
-    'a', # latin a
+    'a', # Latin a
     'á', # Hungarian
     'א', # Hebrew aleph
 
