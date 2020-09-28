@@ -1,7 +1,7 @@
 import re
 
 values = [
-    '11',
+    '2',
     '٣', # arabic 3
     '½', # unicode 1/2
     '②', # unicode circled 2
@@ -19,3 +19,8 @@ for val in values:
     match = re.search(r'\d', val)
     if match:
         print('Match ', match.group(0))
+
+    match = re.search(r'\d', val, re.ASCII)
+    if match:
+        print('Match ASCII ', match.group(0))
+

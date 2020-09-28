@@ -1,5 +1,6 @@
-11
-Match  1
+2
+Match  2
+Match ASCII  2
 ٣
 Match  ٣
 ½
@@ -10,3 +11,6 @@ Match  ߄
 Match  ६
 _
 -
+a
+á
+א

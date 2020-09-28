@@ -21,3 +21,7 @@ for val in values:
     if match:
         print('Match ', match.group(0))
 
+    match = re.search(r'\w', val, re.ASCII)
+    if match:
+        print('Match ASCII ', match.group(0))
+
