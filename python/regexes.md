@@ -386,8 +386,8 @@ They match 'xaaa', 'xa' and '' respectively.
 
 * \b beginning of word or end of word
 
-![](examples/regex/anchors_b.py)
-![](examples/regex/anchors_b.out)
+![](examples/regex/anchor_b.py)
+![](examples/regex/anchor_b.out)
 
 ## Match ISBN numbers
 {id: matching-isbn}
