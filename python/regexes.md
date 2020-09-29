@@ -380,6 +380,14 @@ They match 'xaaa', 'xa' and '' respectively.
 ![](examples/regex/anchors_both.py)
 ![](examples/regex/anchors_both.out)
 
+## Anchor edge of word
+{id: anchor-edge-of-word}
+{i: \b}
+
+* \b beginning of word or end of word
+
+![](examples/regex/anchors_b.py)
+![](examples/regex/anchors_b.out)
 
 ## Match ISBN numbers
 {id: matching-isbn}
