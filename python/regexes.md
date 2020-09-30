@@ -290,7 +290,7 @@ Input: colouur
 ```
 
 
-## Regex 0 or more quantifier
+## Regex match 0 or more (the * quantifier)
 {id: regex-quantifiers}
 {i: *}
 
