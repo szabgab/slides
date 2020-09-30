@@ -269,16 +269,16 @@ In order to make the multiplication work in the other direction, one needs to im
 * [see all of them in datamodel](https://docs.python.org/reference/datamodel.html)
 
 
-## Exercise: rectangular
-{id: exercise-oop-rectangular}
+## Exercise: rectangle
+{id: exercise-oop-rectangle}
 
 
-Take the Rect class in the shapes module. Implement __rmul__, but in that case multiply the width of the rectangular.
+Take the Rect class in the shapes module. Implement __rmul__, but in that case multiply the width of the rectangle.
 
-Implement the addition of two rectangulars. I think this should be defined only if one of the sides is the same,
+Implement the addition of two rectangles. I think this should be defined only if one of the sides is the same,
 but if you have an idea how to add two rectangualars of different sides, then go ahead, implement that.
 
-Also implement all the comparision operators when comparing two rectangulars, compare the area of the two. (like less-than)
+Also implement all the comparision operators when comparing two rectangles, compare the area of the two. (like less-than)
 Do you need to implement all of them?
 
 
@@ -336,8 +336,8 @@ zz = z1*z2
 ![](examples/advanced/complex_numbers.out)
 
 
-## Solution: Rectangular
-{id: solution-oop-rectangular}
+## Solution: Rectangle
+{id: solution-oop-rectangle}
 
 ![](examples/advanced/rect/shape2.py)
 ![](examples/advanced/rect/test_rect.py)

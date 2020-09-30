@@ -111,11 +111,6 @@ TODO: fix this
 ![](examples/pil/draw_triangle_and_write_in_it_rotated.py)
 
 
-## Draw a rectangular
-{id: draw-a-rectangular}
-
-![](examples/pil/draw_rectangual.py)
-
 ## Draw a rectangle
 {id: draw-a-rectangle}
 
@@ -147,5 +142,5 @@ http://web.archive.org/web/20130115175340/http://nadiana.com/pil-tutorial-basic-
 * Make the background color change from top to bottom
 * Add straight lines to existing images
 * Blur image
-* Add rectangular to area on existing image
+* Add rectangle to area on existing image
 * Draw other simple images

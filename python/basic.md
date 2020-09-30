@@ -279,10 +279,7 @@ There are no real multi-line comments in Python, but we will see a way to have t
 ## Exercise: Hello world
 {id: exercise-hello-world}
 
-
 Try your environment:
-
-
 
 * Make sure you have access to the right version of Python.
 * Install Python if needed.
@@ -290,7 +287,6 @@ Try your environment:
 * Write a simple script that prints **Hello world.**
 * Add some comments to your code.
 * Create a variable, assign some text to it and then print out the content of the variable.
-
 
 
 ## What is programming?
@@ -391,7 +387,7 @@ Numpy but also other programming languages might have them.
 
 
 ## Rectangle (numerical operations)
-{id: rectangular-basic}
+{id: rectangle-basic}
 {i: =}
 {i: *}
 
@@ -412,7 +408,7 @@ A simple mathematical operation.
 {/aside}
 
 
-![](examples/basics/rectangular_basic.py)
+![](examples/basics/rectangle_basic.py)
 
 
 
@@ -440,8 +436,8 @@ What this current error message means is we tried to multiply two strings and Py
 {/aside}
 
 
-![](examples/basics/rectangular_strings.py)
-![](examples/basics/rectangular_strings.err)
+![](examples/basics/rectangle_strings.py)
+![](examples/basics/rectangle_strings.err)
 
 
 ## Add numbers
@@ -479,8 +475,7 @@ Usually the operation they do is quite logical. You just need to find the right 
 ## Exercise: Calculations
 {id: exercise-calculations}
 
-
-* Extend the `examples/basics/rectangular_basic.py` file from the earlier example to print both the area and the circumference of the rectangle.
+* Extend the `examples/basics/rectangle_basic.py` file from the earlier example to print both the area and the circumference of the rectangle.
 * Write a script that has a variable holding the radius of a circle and prints out the area of the circle and the circumference of the circle.
 * Write a script that has two numbers a and b and prints out the results of a+b, a-b, a*b, a/b
 
@@ -495,7 +490,7 @@ Usually the operation they do is quite logical. You just need to find the right 
 In order to have the math operation work properly we had to put the addition in parentheses. Just as you would in math class.
 {/aside}
 
-![](examples/basics/rectangular_solution.py)
+![](examples/basics/rectangle_solution.py)
 
 {aside}
 In order to calculate the area and the circumference of a circle we need to have `PI` so we created a variable called

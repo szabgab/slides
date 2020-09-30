@@ -416,7 +416,7 @@ In other languages this is the [?:](https://en.wikipedia.org/wiki/%3F:) construc
 
 
 ## Exercise: Rectangle
-{id: exercise-rectangular}
+{id: exercise-rectangle}
 
 * Write a script that will ask for the sides of a rectangle and print out the area.
 * Provide error messages if either of the sides is negative.
@@ -471,14 +471,14 @@ Results: 42
 
 
 ## Solution: Area of rectangle
-{id: solution-rectangular}
+{id: solution-rectangle}
 
-![](examples/basics/rectangular.py)
+![](examples/basics/rectangle.py)
 
 
 * For historical reasons we also have the solution in Python 2
 
-![](examples/basics/rectangular_python2.py)
+![](examples/basics/rectangle_python2.py)
 
 
 ## Solution: Calculator
@@ -561,7 +561,7 @@ echo $?
 
 
 ## Exercise: Rectangle (argv)
-{id: exercise-rectangular-argv}
+{id: exercise-rectangle-argv}
 
 * Change the above script that it will accept the arguments on the command line like this: `python rect.py 2 4`
 
@@ -576,9 +576,9 @@ echo $?
 
 
 ## Solution: Area of rectangle (argv)
-{id: solution-rectangular-argv}
+{id: solution-rectangle-argv}
 
-![](examples/basics/rectangular_argv.py)
+![](examples/basics/rectangle_argv.py)
 
 ## Solution: Calculator (argv)
 {id: solution-calculator-argv}
