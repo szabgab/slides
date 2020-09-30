@@ -418,7 +418,7 @@ In other languages this is the [?:](https://en.wikipedia.org/wiki/%3F:) construc
 ## Exercise: Rectangle
 {id: exercise-rectangle}
 
-* Write a script that will ask for the sides of a rectangle and print out the area.
+* Write a script called **basic2_rectangle_input.py** that will ask for the sides of a rectangle and print out the area.
 * Provide error messages if either of the sides is negative.
 
 
@@ -433,7 +433,7 @@ The area is 12
 ## Exercise: Calculator
 {id: exercise-calculator}
 
-Create a script that accepts 2 numbers and an operator `(+, -, *, /)`, and prints the result of the operation.
+Create a script called **basic2_calculator_input.py** that accepts 2 numbers and an operator `(+, -, *, /)`, and prints the result of the operation.
 
 ```
 python calc.py
@@ -446,6 +446,8 @@ Results: 42
 ## Exercise: Age limit
 {id: exercise-age-limit}
 
+* Create a script called **basic2_age_limit_input.py**
+
 * Ask the user what is their age.
 * If it is above 18, tell them they can legally drink alcohol.
 * If is is above 21, tell them they can also legally drink in the USA.
@@ -457,6 +459,8 @@ Results: 42
 ## Exercise: What is this language?
 {id: exercise-what-is-this-language}
 
+* Create a script called **basic2__language.py**
+
 * Ask the user the name of this programing language.
 * If they type in Python, welcome them.
 * If they type in something else, correct them.
@@ -467,7 +471,6 @@ Results: 42
 * In the previous exercises we expected the userinput to come in on the "Standard Input" aka. STDIN.
 * If you would like to practice this more, come up with other ideas, try to solve them and tell me about the task. (in person or via e-mail.)
 * (e.g. you could start building an interactive role-playing game.)
-
 
 
 ## Solution: Area of rectangle
@@ -563,16 +566,18 @@ echo $?
 ## Exercise: Rectangle (argv)
 {id: exercise-rectangle-argv}
 
-* Change the above script that it will accept the arguments on the command line like this: `python rect.py 2 4`
+* Create a script called **basic2_rectangle_argv.py**
+* Change the above script that it will accept the arguments on the command line like this: `python basic2_rectangle_argv.py 2 4`
 
 
 ## Exercise: Calculator (argv)
 {id: exercise-calculator-argv}
 
-* Create a script that accepts 2 numbers and an operator `(+, -, *, /)`, on the command line and prints the result of the operation.
-* `python calc.py 2 + 3`
-* `python calc.py 6 / 2`
-* `python calc.py 6 * 2`
+
+* Create a script called **basic2_calculator_argv.py**  that accepts 2 numbers and an operator `(+, -, *, /)`, on the command line and prints the result of the operation.
+* `python basic2_calculator_argv.py 2 + 3`
+* `python basic2_calculator_argv.py 6 / 2`
+* `python basic2_calculator_argv.py 6 * 2`
 
 
 ## Solution: Area of rectangle (argv)
