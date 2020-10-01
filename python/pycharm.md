@@ -5,16 +5,20 @@
 {id: pycharm-intro}
 
 * IDE - Integrated Development Environment
-* Introspection
+* Introspection (understands Python)
 * Running, Debugging
 * Refactoring
 
-## PyCharm configurations
-{id: pycharm-configuration}
+## PyCharm configure interpreter
+{id: pycharm-configure-interpreter}
 
-* Change the Python Interpreter:
-* PyCharm / Preferences / Project: (name) / Project Interpreter
-* File / Settings / Project Interpreter
+* Mac: PyCharm / Preferences / Project: (name) / Project Interpreter
+* Windows/Linux: File / Settings / Project Interpreter
+
+## PyCharm install modules
+{id: pycharm-install-modules}
+
+* Same place where we set the interpreter
 
 ## PyCharm Project
 {id: pycharm-project}
@@ -25,8 +29,9 @@
 ## PyCharm Files
 {id: pycharm-files}
 
-* New file on Mac: Click on the project on the left hand side / Right-Click / New / File;  Windows, Linux: Alt-Insert
-* PyCharm Python console - see next slide
+* New file
+* Open file
+* Ctrl-Shift-N
 
 ## PyCharm - run code
 {id: pycharm-run}
@@ -34,12 +39,29 @@
 * Run/Run
 * Set command line parameters
 * Set environment variables
-* Run/Debug (but set breakpoints before)
 
+![](examples/pycharm/demo.py)
 
+## PyCharm - debugging code
+{id: pycharm-debug}
+
+* Set fixed Breakpoints (click on line next to row-number to have a red circle)
+* Run/Debug
+* Inspect variables
+* Conditional breakpoint
+* Step in function
+* Step out of function
+* Step over function
+
+## PyCharm Terminal
+{id: pycharm-terminal}
+
+* Bottom "Terminal"
 
 ## PyCharm Python console at the bottom left
 {id: pycharm-python-console}
+
+* Bottom "Python Console"
 
 ```
  2 + 3
