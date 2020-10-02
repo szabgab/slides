@@ -459,7 +459,7 @@ Results: 42
 ## Exercise: What is this language?
 {id: exercise-what-is-this-language}
 
-* Create a script called **basic2__language.py**
+* Create a script called **basic2_language.py**
 
 * Ask the user the name of this programing language.
 * If they type in Python, welcome them.
@@ -471,6 +471,8 @@ Results: 42
 * In the previous exercises we expected the userinput to come in on the "Standard Input" aka. STDIN.
 * If you would like to practice this more, come up with other ideas, try to solve them and tell me about the task. (in person or via e-mail.)
 * (e.g. you could start building an interactive role-playing game.)
+
+* Name the file **basic2_stdin.py**
 
 
 ## Solution: Area of rectangle

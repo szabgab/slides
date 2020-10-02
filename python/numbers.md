@@ -143,6 +143,7 @@ Make sure the names of your files are not the same as the names of any of the py
 
 Level 0
 
+* Create a file called **number_guessing_0.py**
 * Using the random module the computer "thinks" about a whole number between 1 and 20.
 * The user has to guess the number. After the user types in the guess the computer tells if this was bigger or smaller than the number it generated, or if it was the same.
 * The game ends after just one guess.
@@ -156,6 +157,8 @@ Level 1-
 
 * Write a script that will pick 3 fruits from a list of fruits like the one we had in one of the earlier slides. Print the 3 names.
 * Could you make sure the 3 fruits are different?
+
+* Use the following skeleton:
 
 ![](examples/numbers/skeleton_fruit_salad.py)
 

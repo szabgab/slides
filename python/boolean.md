@@ -259,18 +259,20 @@ if status_code in [401, 302]
 ## Exercise: compare numbers
 {id: exercise-compare-numbers}
 
+* Create a file called **bool_compare_numbers.py**
 * Ask the user to enter two numbers and tell us which one is bigger.
 
 ## Exercise: compare strings
 {id: exercise-compare-strings}
 
+* Create a file called **bool_compare_strings.py**
 * Ask the user to enter two strings
 * Then ask the user to select if she wants to compare them based on ASCII or based on their length
 * Then tell us which one is bigger.
 
 ```
 Input a string: (user types string and ENTER)
-Input another string: (user types string and ENTER) 
+Input another string: (user types string and ENTER)
 How to compare:
 1) ASCII
 2) Length
