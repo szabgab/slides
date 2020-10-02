@@ -236,7 +236,7 @@ Tarantula:1
 {id: exercise-count-words-in-file}
 
 
-Given a file with words and spaces and newlines only, count how many times each word appears.
+Create a script called **count_words_from_a_file.py** that given a file with words and spaces and newlines only, count how many times each word appears.
 
 
 ![](examples/dictionary/words_and_spaces.txt)
@@ -259,8 +259,7 @@ the browser of a visitor.
 
 Each line starts with the IP address of the visitor. e.g. 217.0.22.3.
 
-Given sucha a log file from Apache, report how many hits (line were from each IP address.
-
+Create a script called **apache_log_parser.py** that given sucha a log file from Apache, report how many hits (line were from each IP address.
 
 ![](examples/dictionary/apache_access.log)
 
@@ -280,12 +279,11 @@ Expected output:
 See the same exercise in the previous chapter.
 
 
-
 ## Exercise: counting DNA bases
 {id: exercise-counting-dna-bases}
 
-Given a sequence like this: "ACTNGTGCTYGATRGTAGCYXGTN",
-print out the distribution of the elemnts to get the following result:
+Write a script called **count_dna_bases.py** that given a sequence like this: "ACTNGTGCTYGATRGTAGCYXGTN",
+will print out the distribution of the elemnts to get the following result:
 
 ```
 A 3 - 12.50 %
@@ -309,6 +307,11 @@ Y 2 -  8.33 %
 * We have a DNA sequence
 * Count the Amino acids from the sequence. (For our purposes feel free to generate a DNA sequence with a random number generator.
 
+* Skeleton:
+
+![](examples/dictionary/count_amino_acids_skeleton.py)
+
+
 ## Exercise: List of dictionaries
 {id: exercise-list-of-dictionaries}
 
@@ -317,9 +320,9 @@ The keys in the dictionary are the names of the columns (fname, lname, born) the
 
 ![](examples/csv/monty_python.csv)
 
-```
-print(people[1]['fname']) # Eric
-```
+* Skeleton
+
+![](examples/dictionary/list_of_dictionaries_skeleton.py)
 
 ## Exercise: Dictionary of dictionaries
 {id: exercise-dictionary-of-dictionaries}
@@ -330,13 +333,14 @@ In the outer dictionary the keys are the (fname, lname) tuples.
 
 ![](examples/csv/monty_python.csv)
 
-```
-print(people[('Eric', 'Idle')]['born']) # 29 March 1943
-```
+Skeleton:
+
+![](examples/dictionary/dictionary_of_dictionaries_skeleton.py)
 
 ## Exercise: Age limit with dictionaries
 {id: exercise-age-limit-with-dictionaries}
 
+* Create a file called **age_limit_with_dictionary.py**
 * Ask the user what is their age and in which country are they located.
 * Tell them if they can legally drink alcohol.
 * See the [Legal drinking age](https://en.wikipedia.org/wiki/Legal_drinking_age) list.
@@ -346,6 +350,7 @@ print(people[('Eric', 'Idle')]['born']) # 29 March 1943
 ## Exercise: Merge files with timestamps
 {id: exercise-merge-files-with-timestamps}
 
+* Write a script called **merge_files_with_timestamps.py**
 * Given a few CSV files in which the first column is a timestamp, write a script that can merge the files so the merged result also has timestamps in increasing order.
 * First try to solve it for 2 files.
 * Then solve it for any N files.
@@ -499,7 +504,7 @@ Generate random DNA sequence
 
 ![](examples/dictionary/legal_drinking.py)
 
-## Exercise: Merge files with timestamps
+## Solution: Merge files with timestamps
 {id: solution-merge-files-with-timestamps}
 
 ![](examples/dictionary/merge/merge.py)
