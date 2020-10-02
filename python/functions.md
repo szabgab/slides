@@ -319,7 +319,7 @@ An iterative and a recursive solution
 ## Exercise: statistics
 {id: exercise-statistics}
 
-Write a function that will accept any number of numbers and return a list of values:
+Create a file called **statistics.py** that has a function that will accept any number of numbers and return a list of values:
 
 * The sum
 * Average
@@ -327,8 +327,10 @@ Write a function that will accept any number of numbers and return a list of val
 * Maximum
 
 
-## Exercise: recursive
-{id: exercise-recursive}
+## Exercise: recursive dependency tree
+{id: exercise-recursive-dependency-tree}
+
+* Create a file called **recursive_dependency_tree.py**
 
 Give a bunch of files that has list of requirement in them.
 Process them recursively and print the resulting full list of requirements
@@ -350,17 +352,26 @@ Processing g
 Processing d
 ```
 
+## Exercise: dependency tree
+{id: exercise-dependency-tree}
+
+* Create a file called **dependency_tree.py**
+
+That will process the files holding the dependency tree, but without recursive calls.
+
+
 ## Exercise: Tower of Hanoi
 {id: exercise-tower-of-hanoi-recursive}
 
-[Tower of Hanoi](https://en.wikipedia.org/wiki/Tower_of_Hanoi)
+* Create a script called **tower_of_hanoi.py** providing a solution to [Tower of Hanoi](https://en.wikipedia.org/wiki/Tower_of_Hanoi)
+
 
 
 ## Exercise: Merge  and Bubble sort
 {id: exercise-bubble-sort}
 
-* Implement [bubble sort](https://en.wikipedia.org/wiki/Bubble_sort)
-* Implement [merge sort](https://en.wikipedia.org/wiki/Merge_sort)
+* Implement [bubble sort](https://en.wikipedia.org/wiki/Bubble_sort) call it **bubble_sort.py**
+* Implement [merge sort](https://en.wikipedia.org/wiki/Merge_sort) call it **merge_sort.py**
 
 ## Exercise: Refactor previous solutions to use functions
 {id: exercise-refactor-previous-solutions-to-us-functions}
@@ -368,6 +379,13 @@ Processing d
 * Go over all of the previous exercises and their solutions (e.g. the games)
 * Take one (or more if you like this exercise) and change them to use functions.
 * If possible make sure you don't have any variable definitions outside of the functions and that each function has a single job to do.
+* For each case use the same filename just add at the end: **with_functions.py**
+
+## Exercise: Number guessing - functions
+{id: exercise-number-guessing-game-with-functions}
+
+Take the number guessing game from the earlier chapter and move the internal while() loop
+to a function.
 
 
 ## Solution: statistics

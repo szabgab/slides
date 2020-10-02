@@ -296,15 +296,9 @@ In this case the change in the behavior of division is only visible in the divis
 
 
 ## Exercise: Number guessing
-{id: exercise-number-guessing-game-with-functional}
+{id: exercise-number-guessing-game-with-modules}
 
-
-Take the number guessing game from the earlier chapter and move the internal while() loop
-to a function.
-
-
-Once that's done, move the function out to a separate file and use it as a module.
-
+Take the number guessing game and move the function out to a separate file and use it as a module.
 
 ## Exercies: Scripts and modules
 {id: exercise-functional-scripts-and-modules}
