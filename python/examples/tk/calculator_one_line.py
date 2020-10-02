@@ -1,4 +1,5 @@
 import tkinter as tk
+from tkinter import messagebox
 
 app = tk.Tk()
 app.title('Calculator')
@@ -7,10 +8,14 @@ entry = tk.Entry(app)
 entry.pack()
 
 def calc():
-    print("clicked")
+    #print("clicked")
     inp = entry.get()
-    print(inp)
-    out = eval(inp)
+    print(f"'{inp}'")
+    try:
+        out = eval(inp)
+    except Exception as err:
+        messagebox.showwarning(title = "Error", message = f"Could not do the computation {err}")
+        return
     entry.delete(0, tk.END)
     entry.insert(0, out)
 

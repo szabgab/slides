@@ -393,7 +393,6 @@ There is another button called "Quit" that will close the application.
 * Write a Tk-based application that allows you to
 * Select an existing .csv file
 * Select a filename for output
-* 
 
 
 ## Exercise: Tk - Calculator with buttons
@@ -455,11 +454,14 @@ Create an application that we can use to play [Master Mind](https://en.wikipedia
 {i: Entry}
 {i: delete}
 {i: insert}
-{i: Button}
 
 ![](examples/tk/calculator_one_line.py)
 
-![](examples/tk/calculator.py)
+## Solution: Tk - Calculator with buttons
+{id: solution-tk-calculator-with-button}
+{i: Button}
+
+![](examples/tk/calculator_with_buttons.py)
 
 ## Solution: Tk - Implement Master Mind board
 {id: solution-tk-master-mind}
