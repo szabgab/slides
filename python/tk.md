@@ -125,6 +125,16 @@ First we are going to see small examples with each one of these Widgets. Then we
 
 ![](examples/tk/tk_label_font.py)
 
+## Python Tk echo - change text of label
+{id: tk-echo}
+{i: Entry}
+{i: Label}
+{i: Button}
+
+* Entry window, Button, Label where to show the text we typed in.
+
+![](examples/tk/tk_echo.py)
+
 
 ## Python Tk Keybinding
 {id: tk-keybinding}
@@ -302,6 +312,12 @@ First we are going to see small examples with each one of these Widgets. Then we
 
 * width
 * side: left, right, top, bottom
+
+## Tk Timer event (after)
+{id: tk-timer-event}
+{i: after}
+
+![](examples/tk/tk_timer.py)
 
 
 ## Not so Simple Tk app with class
