@@ -387,14 +387,6 @@ When the button is pressed the expression is calculated.
 
 There is another button called "Quit" that will close the application.
 
-## Exercise: Tk - Convert CSV file
-{id: exercise-tk-convert-csv-file}
-
-* Write a Tk-based application that allows you to
-* Select an existing .csv file
-* Select a filename for output
-
-
 ## Exercise: Tk - Calculator with buttons
 {id: exercise-tk-calculator-with-button}
 
@@ -402,6 +394,17 @@ There is another button called "Quit" that will close the application.
 * Buttons for the operators `+-*/`
 * A button for `=`
 * A window where we can see what we type in using the buttons or using the keyboard.
+
+## Exercise: Tk - Convert between CSV and Excel files
+{id: exercise-tk-convert-csv-file}
+
+* Write a Tk-based application that can convert CSV to Excel and Excel to CSV.
+
+* Select an existing .csv file or .xlsx file
+* Select a filename for output
+* Click a button to convert
+* Have a place for messages or use pop-up message windows.
+
 
 ## Exercise: Tk - Shopping list
 {id: exercise-tk-shopping-list}
@@ -444,11 +447,6 @@ Then copy the old file to the new name.
 
 Create an application that we can use to play [Master Mind](https://en.wikipedia.org/wiki/Mastermind_(board_game))
 
-## Exercise: Tk - Convert file
-{id: exercise-tk}
-
-* Application that accepts a "title" - line of text, a file selected, a new filename (that probably does not exist) and then runs.
-
 ## Solution: Tk - Calculator one line
 {id: solution-tk-calcilator-one-line}
 {i: Entry}
@@ -463,15 +461,16 @@ Create an application that we can use to play [Master Mind](https://en.wikipedia
 
 ![](examples/tk/calculator_with_buttons.py)
 
+## Solution: Tk - Convert between CSV and Excel files
+{id: solution-tk-convert-csv-file}
+
+![](examples/tk/convert_file.py)
+
+
 ## Solution: Tk - Implement Master Mind board
 {id: solution-tk-master-mind}
 
 TBD
-
-## Solution: Tk - convert file
-{id: solution-tk}
-
-![](examples/tk/convert_file.py)
 
 ## Solution: Tk - Notepad
 {id: solution-tk-notepad}
