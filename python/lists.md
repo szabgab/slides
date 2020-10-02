@@ -255,9 +255,9 @@ To remove an element by its index, use the slice syntax:
 {id: exercise-queue}
 
 
-The application should manage a queue of people.
+* Create file called **queue_of_people.py**
 
-
+* The application should manage a queue of people.
 
 * It will prompt the user for a new name by printing **:**, the user can type in a name and press ENTER. The app will add the name to the queue.
 * If the user types in "n" then the application will remove the first name from the queue and print it.
@@ -287,7 +287,8 @@ The application should manage a queue of people.
 {id: exercise-stack}
 
 
-Implement a Reverse Polish Calculator
+* Create file called **reverse_polish_calculator.py**
+* Implement a Reverse Polish Calculator
 
 ```
 2
@@ -322,7 +323,9 @@ x = eXit, s = Show, [+-*/=]
 ## Exercise: MasterMind
 {id: exercise-mastermind}
 
-Implement the MasterMind game.
+* Create file called **mastermind.py**
+
+* Implement the MasterMind game.
 
 The computer "thinks" a number with 4 different digits.
 You guess which digits. For every digit that matched both
@@ -563,7 +566,7 @@ Sorting tuples or list, or other complex structures
 ## Exercise: color selector menu
 {id: exercise-menu}
 
-* In a script have a list of colors. Write a script that will display a menu (a list of numbers and the corresponding color) and prompts the user for a number. The user needs to type in one of the numbers. That's the selected color.
+* In a script called **color_selector_menu.py** have a list of colors. Write a script that will display a menu (a list of numbers and the corresponding color) and prompts the user for a number. The user needs to type in one of the numbers. That's the selected color.
 
 
 1. blue
@@ -573,16 +576,16 @@ Sorting tuples or list, or other complex structures
 
 
 * For extra credit make sure the system is user-proof and it won't blow up on various incorrect input values. (e.g Floating point number. Number that is out of range, non-number)
-* For more credit allow the user to supply the number of the color on the command line. **python color.py 3**. If that is available, don't prompt.
-* For further credit allow the user to provide the name of the color on the command line: **python color.py yellow** Can you handle color names that are not in the expected case (e.g. YelloW)?
+* For more credit allow the user to supply the number of the color on the command line. **python color_selector_menu.py 3**. If that is available, don't prompt.
+* For further credit allow the user to provide the name of the color on the command line: **python color_selector_menu.py yellow** Can you handle color names that are not in the expected case (e.g. YelloW)?
 * Any more ideas for improvement?
 
 
 ## Exercise: count digits
 {id: exercise-count-digits}
 
-Given a list of numbers `numbers = [1203, 1256, 312456, 98]`,
-count how many times each digit appears? The output will look like this:
+Given a list of numbers count how many times each digit appears? The output will look like this:
+
 
 ```
 0  1
@@ -597,6 +600,10 @@ count how many times each digit appears? The output will look like this:
 9  1
 ```
 
+* Use this skeleton
+
+![](examples/lists/count_digits_skeleton.py)
+
 
 ## Exercise: Create list
 {id: exercise-create-list}
@@ -604,20 +611,22 @@ count how many times each digit appears? The output will look like this:
 Given a list of strings with words separated by spaces,
 create a single list of all the words.
 
-```
-lines = [
-    'grape banana mango',
-    'nut orange peach',
-    'apple nut banana apple mango',
-]
+* Skeleton:
 
-fruits = ['grape', 'banana', 'mango', 'nut', 'orange', 'peach', 'apple', 'nut', 'banana', 'apple', 'mango']
+![](examples/lists/create_list_skeleton.py)
+
+* Expected result:
+
+```
+['grape', 'banana', 'mango', 'nut', 'orange', 'peach', 'apple', 'nut', 'banana', 'apple', 'mango']
 ```
 
 Then create a list of unique values sorted in alphabetical order.
 
+Expected result:
+
 ```
-unique_fruites = ['apple', 'banana', 'grape', 'mango', 'nut', 'orange', 'peach']
+['apple', 'banana', 'grape', 'mango', 'nut', 'orange', 'peach']
 ```
 
 
@@ -639,7 +648,7 @@ Dwarf       1
 ## Exercise: Check if number is prime
 {id: exercise-is-prime}
 
-Write a program that gets a number on the commnad line a prints "True" if the number is a prime
+Write a program called **is_prime.py** that gets a number on the commnad line a prints "True" if the number is a prime
 number or "False" if it isn't.
 
 ```
@@ -653,6 +662,7 @@ True
 ## Exercise: DNA sequencing
 {id: exercise-dna-sequencing}
 
+* Create a file called **dna_sequencing.py**
 * A, C, T, G are called bases or nucleotides
 * Given a sequence like **'ACCGXXCXXGTTACTGGGCXTTGTXX'** (nucleotides mixed up with other elements)
 * First return the sequences containing only ACTG. The above string can will be changed to **['ACCG', 'C', 'GTTACTGGGC', 'TTGT']**.

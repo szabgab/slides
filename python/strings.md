@@ -248,23 +248,23 @@ Escape sequences are kept intact and not escaped. Used in regexes.
 ## Exercise: one string in another string
 {id: exercise-one-string-in-another-string}
 
-Write script that accepts two strings and tells if one of them can be found in the other and where?
+* Write script called **string_in_another_string.py** that accepts two strings and tells if one of them can be found in the other and where?
 
 
-## Exercise: to ASCII CLI
+## Exercise: Character to ASCII - CLI
 {id: exercise-to-ascii-cli}
 
-Write script that gets a character on the command line and prints out the ascii code of it.
+Write script called **char_to_ascii.py** that gets a character on the command line and prints out the ascii code of it.
 
 Maybe even:
 
 Write script that gets a string on the command line and prints out the ascii code of each character.
 
 
-## Exercise: from ASCII CLI
+## Exercise: from ASCII to character - CLI
 {id: exercise-from-ascii-cli}
 
-Write script that accepts a number on the command line and prints the character represented by that number.
+Write script called **ascii_to_char.py** that accepts a number on the command line and prints the character represented by that number.
 
 
 ## Solution: one string in another string
