@@ -258,12 +258,12 @@ This does NOT work because files can only be accessed sequentially.
 
 ![](examples/files/count_lines.py)
 
-## Exercise: count numbers
-{id: exercise-count-numbers}
+## Exercise: count digits
+{id: exercise-count-digits-in-file}
 
 ![](examples/files/numbers.txt)
 
-1. Given the file **examples/files/numbers.txt** (or a similar file), count how many times each digit appears? The output will look like this. Just different values.
+1. Given the file **examples/files/numbers.txt** (or a similar file), create a file called **count_digits.py** that will count how many times each digit appears? The output will look like this. Just different values.
 1. Save the results in a file called **report.txt**.
 
 
@@ -281,15 +281,15 @@ This does NOT work because files can only be accessed sequentially.
 ```
 
 
-## Exercise: strip newlines
-{id: exercise-strip-newlines}
+## Exercise: remove newlines
+{id: exercise-remove-newlines}
 
-
-How to read all the lines of a file into a list
-and remove trailing newlines?
+* Create a file called **remove_newlines.py** that will be able to read all the lines of a given file into a list and remove trailing newlines.
 
 ## Exercise: print lines with Report:
 {id: exercise-print-lines-with-report}
+
+* Create a script called **text_report.py**
 
 Given a file that looks like this:
 
@@ -307,9 +307,8 @@ Given a file that looks like this:
 ## Exercise: color selector
 {id: exercise-file-color-selector}
 
-Create a file similar to the colors.txt file
-and use it as the list of colors in the earlier example where we prompted for a color.
-
+* Create a file similar to the colors.txt file and use it as the list of colors in the earlier example where we prompted for a color.
+* Call the new script **color_selector_file.py**
 
 ![](examples/files/colors.txt)
 
@@ -320,9 +319,9 @@ Extend the previous example by letting the user provide the name of the file on 
 ## Exercise: ROT13
 {id: exercise-rot13}
 
-Implement [ROT13](https://en.wikipedia.org/wiki/ROT13):
+* Implement [ROT13](https://en.wikipedia.org/wiki/ROT13):
 * Create a function that given a string return the rot13 of it.
-* Create a script that given a file it will replace it with the rot13 of it.
+* Create a script called **rot13.py** that given a file it will replace it with the rot13 of it.
 
 How to check if it works properly:
 
@@ -343,7 +342,7 @@ else:
 ![](examples/files/a.txt)
 ![](examples/files/b.txt)
 
-Write a script that takes the two files and combines them adding the values for each vegetable. The expected result is:
+Write a script called **combine_lists.py** that takes the two files and combines them adding the values for each vegetable. The expected result is:
 
 ![](examples/files/c.txt)
 
@@ -365,10 +364,10 @@ Level 7
 ![](examples/files/count_numbers.py)
 
 
-## Solution: strip newlines
-{id: solution-strip-newlines}
+## Solution: remove newlines
+{id: solution-remove-newlines}
 
-![](examples/files/strip_newlines.py)
+![](examples/files/remove_newlines.py)
 
 ## Solution: print lines with Report:
 {id: solution-print-lines-with-report}

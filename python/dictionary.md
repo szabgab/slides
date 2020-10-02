@@ -208,33 +208,21 @@ Since Python 3.7
 ## Exercise: count characters
 {id: exercise-count-characters}
 
-Given a long text, count how many times each character appears?
+* Write a script called **count_characters.py* that given a long text will count how many times each character appears.
+* Change the code so it will be able to count characters in a file.
 
 ![](examples/dictionary/count_characters_skeleton.py)
-
-Extra credit: Change the code so it will be able to count characters of a file.
-
 
 
 ## Exercise: count words
 {id: exercise-count-words}
 
+* Create script called **count_words.py**
+* Skeleton:
 
-
-Part of the code:
-
-
-
-```
-words = ['Wombat', 'Rhino', 'Sloth', 'Tarantula', 'Sloth', 'Rhino', 'Sloth']
-```
-
-
+![](examples/dictionary/count_words_skeleton.py)
 
 Expected output: (the order is not important)
-
-
-
 
 ```
 Wombat:1
@@ -242,7 +230,6 @@ Rhino:2
 Sloth:3
 Tarantula:1
 ```
-
 
 
 ## Exercise: count words from a file
