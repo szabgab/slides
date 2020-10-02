@@ -89,6 +89,7 @@
         "dotnet.md",
         "java.md",
         "jython.md",
+	"signals.md",
 
         "pil.md",
         "faq.md",
