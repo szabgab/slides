@@ -760,7 +760,7 @@ output:
 ![](examples/regex/sorted_snmp.txt)
 
 
-## Exercise: parse hours log file and give report
+## Exercise: parse hours log file and create report
 {id: exercise-parse-log-file}
 
 
