@@ -221,6 +221,7 @@ python count_unique.py abcdaaa
 ## Exercise: Convert for-loop to while-loop
 {id: exercise-convert-for-loop-to-while-loop}
 
+* Update the following file.
 * Given a for-loop as in the following code, convert it to be using a while-loop.
 
 ![](examples/loops/using_for_loop.py)
