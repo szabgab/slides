@@ -19,6 +19,66 @@
 * [datetime](http://docs.python.org/library/datetime.html) - Time management
 * [random](http://docs.python.org/library/random.html) - Random numbers
 
+## time
+{id: time}
+{i: time}
+{i: timezone}
+{i: daylight}
+{i: gmtime}
+{i: strftime}
+
+![](examples/other/mytime.py)
+
+## sleep in Python
+{id: sleep-in-python}
+{i: sleep}
+
+![](examples/os/sleep.py)
+
+```
+hello 1475217162.472256
+world 1475217165.973437
+Elapsed time:3.501181125640869
+```
+
+## timer
+{id: timer}
+
+More time-related examples.
+
+![](examples/other/timer.py)
+
+
+## Current date and time datetime now
+{id: datetime-now}
+{i: datetime}
+{i: strftime}
+
+![](examples/sys/datetime_now.py)
+
+
+## Converting string to datetime
+{id: converting-string-to-datetime}
+{i: strptime}
+
+![](examples/sys/converting_string_to_datetime.py)
+
+
+## datetime arithmeticis
+{id: datetime-arithmetics}
+{i: timedelta}
+
+![](examples/sys/datetime_arithmetics.py)
+
+
+## Rounding datetime object to nearest second
+{id: rounding-datetime}
+
+![](examples/sys/datetime_rounding.py)
+
+
+
+
 
 ## sys
 {id: sys}
@@ -68,7 +128,20 @@ python stderr.py 2> nul                  # On Windows
 {i: getcwd}
 {i: pwd}
 {i: chdir}
+
 ![](examples/os/cwd.py)
+
+Linux, OSX:
+
+```
+$ pwd
+```
+
+Windows: (cd without parameters prints the current working directory)
+
+```
+> cd
+```
 
 
 ## OS dir (mkdir, makedirs, remove, rmdir)
@@ -234,64 +307,4 @@ shutil.copytree(source, dest)
 shutil.move(source, dest)
 shutil.rmtree(path)
 ```
-
-## time
-{id: time}
-{i: time}
-{i: timezone}
-{i: daylight}
-{i: gmtime}
-{i: strftime}
-
-![](examples/other/mytime.py)
-
-## sleep in Python
-{id: sleep-in-python}
-{i: sleep}
-
-![](examples/os/sleep.py)
-
-```
-hello 1475217162.472256
-world 1475217165.973437
-Elapsed time:3.501181125640869
-```
-
-## timer
-{id: timer}
-
-More time-related examples.
-
-![](examples/other/timer.py)
-
-
-## Current date and time datetime now
-{id: datetime-now}
-{i: datetime}
-{i: strftime}
-
-![](examples/sys/datetime_now.py)
-
-
-## Converting string to datetime
-{id: converting-string-to-datetime}
-{i: strptime}
-
-![](examples/sys/converting_string_to_datetime.py)
-
-
-## datetime arithmeticis
-{id: datetime-arithmetics}
-{i: timedelta}
-
-![](examples/sys/datetime_arithmetics.py)
-
-
-## Rounding datetime object to nearest second
-{id: rounding-datetime}
-
-![](examples/sys/datetime_rounding.py)
-
-
-
 
