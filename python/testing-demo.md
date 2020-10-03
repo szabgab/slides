@@ -196,6 +196,9 @@ eliminated the possibility of this failure to return unnoticed.
 
 ![](examples/testing-demo/doctest_fail/mymath.py)
 
+
+![](examples/testing-demo/doctest_fail/mymath.out)
+
 ```
 $ python -m doctest mymath.py
 $ echo $?
@@ -208,7 +211,6 @@ $ echo $?
 1
 ```
 
-![](examples/testing-demo/doctest_fail/mymath.out)
 
 
 ## Testing demo: Unittest success
@@ -241,13 +243,21 @@ passed. The exit-code will be 0 as expected.
 
 ![](examples/testing-demo/test_one_with_unittest.py)
 
+
+![](examples/testing-demo/test_one_with_unittest.out)
+
 ```
 $ python -m unittest test_one_with_unittest.py
 $ echo $?
 0
 ```
 
-![](examples/testing-demo/test_one_with_unittest.out)
+```
+> python -m unittest test_one_with_unittest.py
+> echo %ERRORLEVEL%
+0
+```
+
 
 ## Testing demo: Unittest failure
 {id: testing-demo-unittest-failure}
@@ -273,14 +283,19 @@ BTW this exit-code is used by the various CI systems to understand the results o
 
 ![](examples/testing-demo/test_with_unittest.py)
 
+![](examples/testing-demo/test_with_unittest.out)
+
 ```
 $ python -m unittest test_with_unittest.py
 $ echo $?
 1
 ```
 
-![](examples/testing-demo/test_with_unittest.out)
-
+```
+> python -m unittest test_with_unittest.py
+> echo %ERRORLEVEL%
+1
+```
 
 ## Testing demo: pytest using classes
 {id: testing-demo-pytest-class}
@@ -316,13 +331,19 @@ The exit-code of this execution in 0 as was the case with unittest.
 
 ![](examples/testing-demo/test_with_pytest_class.py)
 
+![](examples/testing-demo/test_with_pytest_class.out)
+
 ```
 $ pytest test_with_pytest_class.py
 $ echo $?
 0
 ```
 
-![](examples/testing-demo/test_with_pytest_class.out)
+```
+> pytest test_with_pytest_class.py
+> echo %ERRORLEVEL%
+0
+```
 
 ## Testing demo: pytest using classes - failure
 {id: testing-demo-pytest-class-failure}
@@ -338,13 +359,19 @@ to know that the tests have failed.
 
 ![](examples/testing-demo/test_with_pytest_class_failure.py)
 
+![](examples/testing-demo/test_with_pytest_class_failure.out)
+
 ```
 $ pytest test_with_pytest_class_failure.py
 $ echo $?
 1
 ```
 
-![](examples/testing-demo/test_with_pytest_class_failure.out)
+```
+> pytest test_with_pytest_class_failure.py
+> echo %ERRORLEVEL%
+1
+```
 
 
 ## Testing demo: pytest without classes
@@ -361,13 +388,19 @@ functions only. After all our test code should be a lot more simple than our app
 
 ![](examples/testing-demo/test_with_pytest.py)
 
+![](examples/testing-demo/test_with_pytest.out)
+
 ```
 $ pytest test_with_pytest.py
 $ echo $?
 1
 ```
-![](examples/testing-demo/test_with_pytest.out)
 
+```
+> pytest test_with_pytest.py
+> echo %ERRORLEVEL%
+1
+```
 
 ## Testing demo: pytest run doctests
 {id: testing-demo-pytest-run-doctests}
@@ -397,7 +430,7 @@ $ pytest test_one_with_unittest.py
 $ pytest test_with_unittest.py
 ```
 
-## Exercise: Testing demo
+## Exercise: Testing demo - anagrams
 {id: exercise-testing-demo}
 
 * An [anagram](https://en.wikipedia.org/wiki/Anagram) is a pair of words that are created from exactly the same set of characters, but of different order.
@@ -414,6 +447,14 @@ Sample code to use the Anagram module.
 
 
 ![](examples/testing-demo/use_anagram.py)
+
+## Exercise: Test previous solutions
+{id: exercise-test-previous-solutions}
+
+* Go back to your solutions to the previous exercises
+* Write tests
+* If you feel it is hard, maybe you need to change the code to make it more testable.
+
 
 
 ## Solution: Testing demo

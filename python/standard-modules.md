@@ -1,12 +1,12 @@
-# Python standard modules
-{id: python-standard-modules}
+# Python standard modules (standard packages)
+{id: standard-modules}
 
-## Some Standard modules
-{id: some-standard-modules}
+## Some Standard packages
+{id: some-standard-packages}
 
 * [sys](http://docs.python.org/library/sys.html) - System specific
 * [os](http://docs.python.org/library/os.html) - Operating System
-* [stat](http://docs.python.org/library/stat.html) - inode table
+* [stat](http://docs.python.org/library/stat.html) - Inode table
 * [shutil](http://docs.python.org/library/shutil.html) - File Operations
 * [glob](http://docs.python.org/library/glob.html) - Unix style pathname expansion
 * [subprocess](http://docs.python.org/library/subprocess.html) - Processes
@@ -15,10 +15,9 @@
 * [argparse](http://docs.python.org/library/argparse.html) - Command Line Arguments
 * [re](http://docs.python.org/library/re.html) - Regexes
 * [math](http://docs.python.org/library/math.html) - Mathematics
-* [time](http://docs.python.org/library/time.html) - timestamp and friends
-* [datetime](http://docs.python.org/library/datetime.html) - time management
+* [time](http://docs.python.org/library/time.html) - Timestamp and friends
+* [datetime](http://docs.python.org/library/datetime.html) - Time management
 * [random](http://docs.python.org/library/random.html) - Random numbers
-
 
 
 ## sys
@@ -27,6 +26,8 @@
 {i: argv}
 {i: executable}
 {i: path}
+{i: version_info}
+
 ![](examples/sys/mysys.py)
 
 ```
