@@ -49,15 +49,18 @@
 {i: stdout}
 {i: stderr}
 {i: write}
+
 ![](examples/sys/stderr.py)
 
 
-Redirection:
+Redirection (Works on Linux/Mac/Windows):
 
 ```
 python stderr.py > out.txt  2> err.txt
-python stderr.py 2> /dev/null
 python stderr.py > out.txt 2>&1
+
+python stderr.py 2> /dev/null            # On Linux and OSX
+python stderr.py 2> nul                  # On Windows
 ```
 
 ## Current directory (getcwd, pwd, chdir)
@@ -78,24 +81,14 @@ python stderr.py > out.txt 2>&1
 {i: removedirs}
 {i: rmtree}
 
-```
-os.mkdir(path_to_new_dir)
-os.makedirs(path_to_new_dir)
-
-os.remove()      remove a file
-os.unlink()      (the same)
-
-os.rmdir()        single empty directory
-os.removedirs()   empty subdirectories as well
-shutil.rmtree()   rm -rf
-```
-
+![](examples/os/mkdir.py)
 
 
 ## python which OS are we running on (os, platform)
 {id: which-os-are-we-running-on}
 {i: platform}
 {i: os}
+
 ![](examples/os/which_os.py)
 
 
@@ -103,6 +96,9 @@ shutil.rmtree()   rm -rf
 {id: os-pid-process-id}
 {i: getpid}
 {i: getppid}
+
+* Works on all 3 Operating systems
+
 ![](examples/os/getpid.py)
 
 ```
@@ -110,11 +106,11 @@ shutil.rmtree()   rm -rf
 92859
 ```
 
+This is on Linux/OSX
+
 ```
 echo $$
 ```
-
-
 
 
 ## OS path
@@ -124,20 +120,8 @@ echo $$
 {i: exists}
 {i: basename}
 {i: dirname}
-{i: expanduser}
 
-```
-import os
-
-os.path.basename(path_to_thing)
-os.path.dirname(path_to_thing)
-os.path.abspath(path_to_file)
-
-os.path.exists(path_to_file)
-os.path.isdir(path_to_thing)
-
-os.path.expanduser('~')
-```
+![](examples/os/path.py)
 
 ## Traverse directory tree - list directories recursively
 {id: travers-directory-tree}
@@ -145,7 +129,6 @@ os.path.expanduser('~')
 {i: os.walk}
 
 ![](examples/os/traverse_tree.py)
-
 
 
 ## os.path.join
@@ -163,11 +146,9 @@ os.path.expanduser('~')
 {i: path}
 {i: os.listdir}
 
-
 ![](examples/os/dir.py)
 
-
-## expanduser - handle tilde ~
+## expanduser - handle tilde ~ the home directory of the user
 {id: expanduser}
 {i: expanduser}
 {i: ~}
@@ -181,7 +162,6 @@ os.path.expanduser('~')
 {i: glob.glob}
 
 ![](examples/os/ls.py)
-
 
 ## External command with system
 {id: external-command-with-system}

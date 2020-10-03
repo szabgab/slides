@@ -5,12 +5,21 @@ print(os.name)
 print(platform.system())
 print(platform.release())
 
+# On Linux:
 # posix
 # Linux
 # 5.3.0-24-generic
 
-#if platform.system() != 'win32':
-print(os.uname())
+# On Windows:
+# nt
+# Windows
+# 10
+
+# On Mac:
+# ?
+
+if platform.system() != 'Windows':
+    print(os.uname())
 # On Mac:
 # ('Darwin', 'air.local', '16.3.0', 'Darwin Kernel Version 16.3.0: Thu Nov 17 20:23:58 PST 2016; root:xnu-3789.31.2~1/RELEASE_X86_64', 'x86_64')
 

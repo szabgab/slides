@@ -1,7 +1,9 @@
 import os
 
-print( os.path.expanduser("~") )
-print( os.path.expanduser("~/work") )
-print( os.path.expanduser("~/other") )
-print( os.path.expanduser("some/other/dir/no/expansion") )
+# The home directory of the current user
+home_directory = os.path.expanduser("~")
+
+print(home_directory)
+# /home/gabor
+# 'C:\\Users\\Gabor Szabo'
 
