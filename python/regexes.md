@@ -585,12 +585,82 @@ The 3rd examples is the same solution but in a very step-by-step way with lots o
 ![](examples/regex/remove_spaces.py)
 
 
-## Replace string in assembly code
+## Replace string in Assembly code
 {id: replace-string-in-assembly-code}
+
+{aside}
+At a company we had some Assembly code that looks like the text file. In case you don't know, [Assembly](https://en.wikipedia.org/wiki/Assembly_language) is
+a very low level programming language. Here we have some sample code that uses variables like A and registers like R1, R2, and R3.
+
+We had this code, but because the hardware changed we had to make changes to the code and rename the registies R1 to be R2, R2 to be R3, and R3 to be R1.
+We cannot just simple do these steps one after the other becasue once we renamed R1 to be R2 we won't know which of the R2-s do we need to rename and which
+are new. So someone came up with the idea to use R4 as a temporary name and start by renaming R1 to R4,  R3 to R1, R2 to R3, and finally the temporary R4 to R2.
+
+As you could see in our solution coed.
+
+It worked all very smoothly till we turned on the device that immediately emitted smoke. It did not pass the "smoke test".
+
+As it turns out in the original text there were also R4 registers that we have not noticed and they were all renamed to be R2.
+
+The first idea to improve our converter program was to use some other temporary string that for sure cannot be in the code, such as QQRQ, but then
+we arrived to the conclusion that there are better ways to solve this.
+{/aside}
+
 ![](examples/regex/assembly_source.txt)
+
 ![](examples/regex/assembly_process.py)
+
+## Replace string in Assembly code - using mapping dict
+{id: replace-string-in-assembly-code-using-mapping-dict}
+
+{aside}
+The first imprvement was to create a dictionary with the mapping from old string to new string
+and then have a regex that will match exactly the 3 possible original string. In the substitute
+part we'll have to use a function as we need the current matching object to access the current match.
+
+The function can be either a `lambda`-expression as in the first solution or a fully defined function
+as in the seconde solution that I added only to make it easier to understand the first solution.
+
+This is a nice and working solution, but it has two issues.
+
+In the regex used a character class because we assumed that there are only going to be on-digit registries.
+If you look at the original Assembly code you can see there are also R12 and R21.
+
+In addition we now have data duplication. If we change the mapping adding a new original string or removing one,
+we'll also have to remember to update the regex. It is not DRY.
+{/aside}
+
+
 ![](examples/regex/assembly_process_dict.py)
+
+## Replace string in Assembly code - using alternatives
+{id: replace-string-in-assembly-code-using-alternatives}
+
+{aside}
+We can solve the first issue by changing the regex. Instead of using a character class, we use alternatives (vertical line, aka. pipe)
+and fully write down the original strings.
+
+The rest of the code is the same and the second issue is not solved yet, we still have to make sure the keys of the dictionary and the values
+in the regex are the same.
+
+However this solution makes it easier to solve the second issue as well.
+{/aside}
+
 ![](examples/regex/assembly_process_dict2.py)
+
+## Replace string in Assembly code - generate regex
+{id: replace-string-in-assembly-code-generate-regex}
+
+{aside}
+In this solution we generate the regex from the keys of the mapping dictionary.
+
+Once we have this we also opened other opportunities for improvement. Now that all the replacement mapping
+comes from a regex we have separated the "data" from the "code". We can now decide to read in the mapping
+from an Excel file (for example). That way we can hand over the mapping creation to someone who does not know
+Python. Our code will take that file, read the mapping from the spreadsheet, create the mapping dictionary,
+create the regex and do the work.
+{/aside}
+
 ![](examples/regex/assembly_process_generate.py)
 
 
@@ -602,6 +672,7 @@ The 3rd examples is the same solution but in a very step-by-step way with lots o
 
 ## Split with regex
 {id: split-with-regex}
+
 ![](examples/regex/field_value_pairs.txt)
 ![](examples/regex/parse_field_value_pairs.py)
 ![](examples/regex/field_value_pairs.out)

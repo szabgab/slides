@@ -9,8 +9,6 @@ filename = sys.argv[1]
 with open(filename) as fh:
     code = fh.read()
 
-
-# or without any assumption and in one substitution:
 mapping = {
     'R1'  : 'R2',
     'R2'  : 'R3',
@@ -20,6 +18,7 @@ mapping = {
 }
 
 regex = r'\b(' + '|'.join(mapping.keys()) + r')\b'
+print(regex)
 
 code = re.sub(regex, lambda match: mapping[match.group(1)], code)
 

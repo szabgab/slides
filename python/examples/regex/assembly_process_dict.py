@@ -10,7 +10,6 @@ with open(filename) as fh:
     code = fh.read()
 
 
-# or without any assumption and in one substitution:
 mapping = {
     'R1' : 'R2',
     'R2' : 'R3',
@@ -18,5 +17,12 @@ mapping = {
 }
 
 code = re.sub(r'\b(R[123])\b', lambda match: mapping[match.group(1)], code)
+print(code)
 
+# The same but now with a named function for clarity
+def replace(match):
+    original = match.group(1)
+    return mapping[original]
+
+code = re.sub(r'\b(R[123])\b', replace, code)
 print(code)
