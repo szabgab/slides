@@ -158,9 +158,10 @@
 ![](examples/tk/dialog_box_with_html.pl)
 
 
-## Perl Tk Browse Entry
+## Perl Tk Browse Entry (ComboBox)
 {id: tk-browse-entry}
 {i: BrowseEntry}
+{i: ComboBox}
 
 ![](examples/tk/browse_entry.pl)
 
