@@ -98,19 +98,6 @@ Type `pydoc`. On Windows, you might need to create the following file and put it
 ![](examples/basics/pydoc.bat)
 
 
-## How can I check if a string can be converted to a number?
-{id: is-number}
-{i: int}
-{i: float}
-{i: is_int}
-{i: is_float}
-
-
-There is no is_int, we just need to try to convert and catch the exception, if there is one.
-
-
-![](examples/basics/is_number.py)
-
 
 ## Spyder Intro
 {id: spyder-intro}

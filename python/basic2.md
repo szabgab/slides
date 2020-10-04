@@ -352,6 +352,20 @@ Whichever is appropriate in your situation.
 ![](examples/basics/converting_floating_string_to_int.py)
 ![](examples/basics/converting_to_int_via_float.py)
 
+## How can I check if a string can be converted to a number?
+{id: is-number}
+{i: int}
+{i: float}
+{i: is_int}
+{i: is_float}
+
+
+There is no is_int, we just need to try to convert and catch the exception, if there is one.
+
+
+![](examples/basics/is_number.py)
+
+
 ## Conditionals: if
 {id: python-conditionals-if}
 {i: if}
