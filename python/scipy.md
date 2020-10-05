@@ -11,12 +11,12 @@
 * [Matplotlib](http://matplotlib.org/) a 2D plotting library.
 * [Seaborn](https://seaborn.pydata.org/) data visualization library based on matplotlib.
 * [Bokeh](https://bokeh.pydata.org/) interactive visualization library.
-* [SciKit-Learn](http://scikit-learn.org/) Machine Learning in Python.
+* [SciKit-Learn](http://scikit-learn.org/) Machine Learning in Python. (name from: SciPy Toolkit)
 * [TensorFlow](https://www.tensorflow.org/) Machine learning framework. (developed by Google engineer)
 * [Keras](https://keras.io/) Python Deep learning (neural-network) library. (On top of Tensorflow.)
 * [Orange](https://orange.biolab.si/) machine learning and data visualization tool. Written partially in Python.
 
-* [Airflow](https://airflow.apache.org/) Workflow management platform
+* [Airflow](https://airflow.apache.org/) Workflow management platform (from AirBnB)
 * [Luigi](https://github.com/spotify/luigi) Data pipelines (from Spotify)
 
 * [Showing speed improvement using a GPU with CUDA and Python with numpy on Nvidia Quadro 2000D](https://code-maven.com/showing-speed-improvement-with-gpu-cuda-numpy)
