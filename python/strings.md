@@ -217,6 +217,7 @@ Check if a substring is **in** the string?
 ## raw strings
 {id: raw-strings}
 {i: r}
+
 ![](examples/strings/raw.py)
 
 Escape sequences are kept intact and not escaped. Used in regexes.
@@ -232,6 +233,7 @@ Escape sequences are kept intact and not escaped. Used in regexes.
 ## ord in a file
 {id: ord-in-file}
 {i: ord}
+
 ![](examples/strings/ord.py)
 
 
@@ -242,8 +244,6 @@ Escape sequences are kept intact and not escaped. Used in regexes.
 * [chr](https://docs.python.org/3/library/functions.html#chr)
 
 ![](examples/strings/chr.py)
-![](examples/strings/chr.out)
-
 
 ## Exercise: one string in another string
 {id: exercise-one-string-in-another-string}
