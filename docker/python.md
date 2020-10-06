@@ -4,10 +4,16 @@
 ## Python CLI in Docker - curl.py
 {id: python-cli-in-docker-code}
 
+{aside}
+This is a command line script, a very basic implementation of curl in Python. In order to run this we need Python and the `requests` package to be installed.
+{/aside}
+
 ![](examples/python-curl/curl.py)
 
 ## Python CLI in Docker - Dockerfile
 {id: python-cli-in-docker-dockerfile}
+
+* [python](https://hub.docker.com/_/python)
 
 ![](examples/python-curl/Dockerfile)
 
@@ -24,9 +30,9 @@ This is a simple implementation of a curl-like script in Python. Wrapped in a Do
 {/aside}
 
 
-
 ## Docker: Python Development mode with mounted directory
 {id: docker-development-mode-with-mounted-directory}
+
 
 ![](examples/python-curl-dev/Dockerfile)
 
@@ -36,13 +42,21 @@ $ docker build -t mydocker .
 $ docker run --rm -v $(pwd):/opt/ mydocker python /opt/curl.py  https://httpbin.org/get
 ```
 
-* You can edit the file on your host system (with your IDE) and run it on the command line of the Docker container.
+* `--rm` to remove the container when we stopped it.
+* `-v $(pwd):/opt/` to map the current directory on the host system to the /opt directory inside the container
+* `mydocker` is the name of the image
+* After that we can any python program.
 
-* A better way to mount the current working directory, at least on Linux and OSX
+* You can edit the file on your host system (with your IDE) and run it on the command line of the Docker container.
+* This works on Linux and Mac OSX. On Windows you might need to spell out the current working directory yourself.
 
 
 ## Flask application
 {id: flask-application}
+
+{aside}
+In this simple Flask web application we have 3 files. app.py, a template, and the requirements.txt
+{/aside}
 
 ![](examples/flask-development/app.py)
 
@@ -58,13 +72,16 @@ $ docker run --rm -v $(pwd):/opt/ mydocker python /opt/curl.py  https://httpbin.
 
 ```
 $ docker build -t mydocker .
-$ docker run -it --name dev --rm -p:5001:5000 -v $(pwd):/opt/  mydocker
+$ docker run -it --name dev --rm -p5001:5000 -v $(pwd):/opt/  mydocker
 ```
 
-Access via [http://localhost:5001/](http://localhost:5001/)
+* `-it` to be in interactive mode so we can see the log on the command line and we can easily stop the development container.
+* `--name dev` we set the name of the container to be `dev` in case we would like to access it.
+* `--rm` remove the container after it is finished.
+* `-p5001:5000` map port 5001 of the host computer to port 5000 of the container.
+* `-v $(pwd):/opt/` map the current working directory of the host to /opt in the container.
 
-The -it is needed so we can see the log on the command line and we can easily stop the development container.
-
+* Access via [http://localhost:5001/](http://localhost:5001/)
 
 
 ## Docker: Flask + uwsgi
