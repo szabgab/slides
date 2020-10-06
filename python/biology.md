@@ -26,14 +26,7 @@
 
 ![](examples/science/sequences_err.py)
 
-
-## Download data
-{id: bio-python-download-data}
-
-Use the NCBI (National Center for Biotechnology Information) database to search  manually for [nucleotide](https://www.ncbi.nlm.nih.gov/nucleotide)
-or tons of other types of data. Then one can download the files manually from the web site.
-
-## Read FASTA, GenBank files
+## Download and Read FASTA, GenBank files
 {id: bio-python-read-fasta-files}
 
 For example the data about Orchids in two formats:
@@ -44,6 +37,13 @@ For example the data about Orchids in two formats:
 Download those files and use them:
 
 ![](examples/science/read_fasta.py)
+
+## Search NCBI and Download FASTA and GenBank files
+{id: bio-python-download-data}
+
+Use the NCBI (National Center for Biotechnology Information) database to search  manually for [nucleotide](https://www.ncbi.nlm.nih.gov/nucleotide)
+or tons of other types of data. Then one can download the files manually from the web site.
+
 
 ## Search nucleotids
 {id: bio-python-search-nucleotids}

@@ -11,6 +11,13 @@
 * High-level mathematical functions to operate on large, multi-dimensional arrays and matrices. **ndarray**
 
 
+## Install Numpy
+{id: install-numpy}
+
+```
+pip install numpy
+```
+
 ## Numpy - vector
 {id: numpy-vector}
 {i: array}
@@ -113,9 +120,9 @@
 {i: matmul}
 {i: dot}
 
-* [multiply](https://docs.scipy.org/doc/numpy/reference/generated/numpy.multiply.html)
-* [matmul](https://docs.scipy.org/doc/numpy/reference/generated/numpy.matmul.html)
-* [dot](https://docs.scipy.org/doc/numpy/reference/generated/numpy.dot.html)
+* [multiply](https://docs.scipy.org/doc/numpy/reference/generated/numpy.multiply.html) Multiply arguments element-wise.
+* [matmul](https://docs.scipy.org/doc/numpy/reference/generated/numpy.matmul.html) Matrix product of two arrays.
+* [dot](https://docs.scipy.org/doc/numpy/reference/generated/numpy.dot.html) Dot product of two arrays.
 
 ![](examples/numpy/multiply_vectors.py)
 
@@ -210,7 +217,7 @@ The slice in numpy does not copy the data structure
 ![](examples/numpy/vectorize_lambda.out)
 
 
-## Numpy: Filtering array
+## Numpy: Filtering array (selecting some of the values from an array)
 {id: numpy-filtering-array}
 {i: vectorize}
 
@@ -223,32 +230,32 @@ The slice in numpy does not copy the data structure
 ![](examples/numpy/filter_matrix_values.py)
 ![](examples/numpy/filter_matrix_values.out)
 
-## Numpy: Filter matrix rows
+## Numpy: Filter matrix rows (selecting some rows)
 {id: numpy-filter-matrix-rows}
 
 ![](examples/numpy/filter_matrix.py)
 ![](examples/numpy/filter_matrix.out)
 
 
-## Numpy: Stat
+## Numpy: Some statistics (sum, mean, std, var)
 {id: numpy-stat}
 
 ![](examples/numpy/stats.py)
 
 
-## Numpy: Serialization
+## Numpy: Serialization (saving an array to a file)
 {id: numpy-serialization}
 
 ![](examples/numpy/serialization.py)
 
-## Numpy: Load from Matlab file
+## Numpy: Load from Matlab file to a Numpy array
 {id: matlab-load}
 
 ![](examples/matlab/load.py)
 
 * `numpy.ndarray`
 
-## Numpy: Save as Matlab file
+## Numpy: Save a Numpy array as a Matlab file
 {id: matlab-save}
 
 ![](examples/matlab/save.py)
