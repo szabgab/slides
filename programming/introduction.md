@@ -16,7 +16,7 @@
 {i: CPU}
 
 * [Computer Hardware](https://en.wikipedia.org/wiki/Computer#Hardware)
-* [CPU -  Central Processing Unit](https://en.wikipedia.org/wiki/Central_processing_unit) (Single core, multi-core), (clock speed in GHz), instruction set (386, Pentium, i3, i7, ...) 
+* [CPU -  Central Processing Unit](https://en.wikipedia.org/wiki/Central_processing_unit) (Single core, multi-core), (clock speed in GHz), instruction set (386, Pentium, i3, i7, ...)
 * [RAM -  Random Access Memory](https://en.wikipedia.org/wiki/Random-access_memory) (in phones a few Gbs, in PCs 4-16 Gb, in servers it can reach a few hundred Gbs as well)
 * [Hard disk](https://en.wikipedia.org/wiki/Hard_disk_drive) (spinning disks or [SSD - Solid State Drive](https://en.wikipedia.org/wiki/Solid-state_drive)) - Phone: 16, 32, 64 Gb; Computer a 1-2-3 TBs of spinnig disk or 128,256,512 Gb of SSD. Spinnning disks are slower but much cheaper than SSD.
 * [Mother board](https://en.wikipedia.org/wiki/Motherboard)
@@ -28,8 +28,6 @@
 * Output: Screen, printer
 * [BIOS](https://en.wikipedia.org/wiki/BIOS)
 * External connectors
-
-
 
 ## connectors
 {id: connectors}
@@ -44,7 +42,6 @@
 * [RJ11 - phone cable](https://en.wikipedia.org/wiki/RJ11)
 * [Firewire](https://en.wikipedia.org/wiki/IEEE_1394)
 * [Thunderbolt](https://en.wikipedia.org/wiki/Thunderbolt_(interface))
-
 
 
 ## bits and bytes
@@ -65,15 +62,15 @@ base 2:   00101010
 * [Transistor](https://en.wikipedia.org/wiki/Transistor)
 
 
-
 ## Y2K problem
 {id: y2k-problem}
 {i: Y2K}
 
-
 Y2K problem (time represented as the last two digit of the year.
-Instead of 1985 we wrote 85  saved space, looked clear.  You also knew that the year 86 was after the year 85 as 8 > 85.
+
+Instead of 1985 we wrote 85  saved space, looked clear. You also knew that the year 86 was after the year 85 becasue 86 > 85.
 It worked until 1999, but when 2000 came it was (supposed to be) represented as 00.
+
 Suddenly tomorrow was before yesterday.
 
 [Year 2000 problem](https://en.wikipedia.org/wiki/Year_2000_problem)
@@ -89,7 +86,7 @@ Suddenly tomorrow was before yesterday.
 ## Incorrect floating point number representation
 {id: floating-point-representation}
 
-[Floating point arithmetic](https://en.wikipedia.org/wiki/Floating-point_arithmetic)
+* [Floating point arithmetic](https://en.wikipedia.org/wiki/Floating-point_arithmetic)
 
 e.g. in python:
 
@@ -138,6 +135,8 @@ Embedded
 ## Programming paradigms
 {id: programming-paradigms}
 
+* [Programming paradigms](https://en.wikipedia.org/wiki/Programming_paradigm)
+
 * imperative (global state, no functions)
 * procedural - imperative (C, Bash)
 * object oriented - imperative (Java, C#, C++)
@@ -147,12 +146,7 @@ Embedded
 * mathematical - declerative (Fortran)
 * ...
 
-
-
 Multi-paradigm: (e.g. Python, Perl)
-
-
-
 
 ## Different OOP systems
 {id: different-oop-systems}
@@ -177,8 +171,6 @@ Multi-paradigm: (e.g. Python, Perl)
 * Python, Perl, ...?
 * Java, C#, ...?
 
-
-
 ## Open Source
 {id: open-source}
 
@@ -191,15 +183,10 @@ Multi-paradigm: (e.g. Python, Perl)
 * [Open Source Initiative](https://opensource.org/)
 
 
-
 ## Why create Open Source?
 {id: why-create-open-source}
 
-
-
 Why do people create and maintain them? Why do companies contribute to Open Source and why do they release under OS license?
-
-
 
 * Fun, creative work
 * I wrote this thing, but I don't want to sell it so why not?
@@ -207,8 +194,6 @@ Why do people create and maintain them? Why do companies contribute to Open Sour
 * Contribute
 * Create a huge user-base a small fraction of it will pay money for extra services
 * Undermine competitors
-
-
 
 
 ## Open Source languages
@@ -221,8 +206,6 @@ Why do people create and maintain them? Why do companies contribute to Open Sour
 * Profilers?
 
 
-
-
 ## Version Control
 {id: version-control}
 
@@ -232,7 +215,6 @@ Why do people create and maintain them? Why do companies contribute to Open Sour
 * Easier (smoother) collaboration
 * History
 * git, mercurial; subversion; cvs; rcs
-
 
 
 ## Software testing
@@ -277,7 +259,7 @@ O(n log n)
 ## What is the Cloud?
 {id: what-is-the-cloud}
 
-* Some other peoples computer.
+* The computer of some other people.
 * Server where you can rent some processing power.
 * More sofisticated if you can rent the use of an application.
 * Gmail
@@ -285,19 +267,13 @@ O(n log n)
 * Dropbox
 * Google Cloud Service, Amazon Web Services (AWS), Microsoft Azure
 
-
-
 ## Software Development methods
 {id: software-development-methods}
 
-* Waterfall
-* Agile?
-* Scrum
-* Kanban
-* DevOps
-* XP
-
-
-
-
+* [Waterfall](https://en.wikipedia.org/wiki/Waterfall_model)
+* [Agile](https://en.wikipedia.org/wiki/Agile_software_development) - [Agile manifesto](https://agilemanifesto.org/)
+* [Scrum](https://en.wikipedia.org/wiki/Scrum_(software_development))
+* [Kanban](https://en.wikipedia.org/wiki/Kanban)
+* [DevOps](https://en.wikipedia.org/wiki/DevOps)
+* [XP - eXtremen Programming](https://en.wikipedia.org/wiki/Extreme_programming)
 
