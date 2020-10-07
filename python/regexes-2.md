@@ -136,42 +136,9 @@ They match 'xaaa', 'xa' and '' respectively.
 ![](examples/regex/matching_section_minimal.py)
 
 
-
 ## Matching a section negated character class
 {id: matching-section-with-negated-character-class}
 ![](examples/regex/negated_character_class.py)
 
 
-## DOTALL S (single line)
-{id: dotall}
-{i: .}
-{i: DOTALL}
-{i: S}
-
-if re.DOTALL is given, . will match any character. Including newlines.
-
-![](examples/regex/dotall.py)
-
-
-## MULTILINE M
-{id: multiline}
-{i: ^}
-{i: $}
-{i: MULTILINE}
-{i: M}
-
-if re.MULTILNE is given, ^ will match beginning of line and $ will match end of line
-
-![](examples/regex/multiline.py)
-
-```
-line
-----------
-line
-text
-```
-
-```
-re.MULTILINE | re.DOTALL
-```
 

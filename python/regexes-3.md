@@ -69,6 +69,44 @@ to the part within the parentheses.
 {i: I}
 ![](examples/regex/ignorecase.py)
 
+## DOTALL S (single line)
+{id: dotall}
+{i: .}
+{i: DOTALL}
+{i: S}
+
+if re.DOTALL is given, . will match any character. Including newlines.
+
+![](examples/regex/dotall.py)
+
+
+## MULTILINE M
+{id: multiline}
+{i: ^}
+{i: $}
+{i: MULTILINE}
+{i: M}
+
+if re.MULTILNE is given, ^ will match beginning of line and $ will match end of line
+
+![](examples/regex/multiline.py)
+
+```
+line
+----------
+line
+text
+```
+
+## Combine Regex flags
+{id: combine-regex-flags}
+{i: |}
+
+* Use the bitwise or for that.
+
+```
+re.MULTILINE | re.DOTALL
+```
 
 ## Regex VERBOSE X
 {id: regex-verbose}
