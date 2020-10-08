@@ -624,3 +624,17 @@ python examples/modules/fibonacci_doctest.py
 ```
 
 
+## Pandas Stocks
+{id: pandas-stocks}
+
+![](examples/pandas/stocks.py)
+
+
+## Pandas Stocks
+{id: pandas-read-csv-stocks}
+
+![](examples/pandas/read_csv_stocks.py)
+
+
+
+
