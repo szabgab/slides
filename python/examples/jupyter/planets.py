@@ -1,4 +1,4 @@
-%config IPCompleter.greedy=True
+#%config IPCompleter.greedy=True
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -27,7 +27,7 @@ planets[planets.Mass > 1]
 planets['Planet name'].isin(['Earth', 'Mars'])
 planets[ planets['Planet name'].isin(['Earth', 'Mars']) ]
 
-planets[(planets.Mass > 1) &amp; (planets.Mass < 100)]
+planets[(planets.Mass > 1) & (planets.Mass < 100)]
 # element-wise boolean and
 
 center = 'Earth'
