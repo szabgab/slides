@@ -7,7 +7,7 @@ print("{:.2f}".format(x)) #  fixed point:  412.35 (set precision to 2)
 print("{:F}".format(x))   #  same as f.    412.345679
 print("{:g}".format(x))   #  generic:      412.346    (default precision is 6)
 print("{:G}".format(x))   #  generic:      412.346
-print("{:n}".format(x))   #  number:       4412.346
+print("{:n}".format(x))   #  number:       412.346
 
 
 print("{}".format(x))     # defaults to g  412.345678901
