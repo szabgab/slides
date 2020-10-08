@@ -1,5 +1,5 @@
 import random
-random.seed(0) # used so we can verify in the results in the next example
+random.seed(0) # used so we can verify the results in the next example
 
 total = 0
 while (total < 10000000) and (total % 17 != 1) and (total ** 2 % 23 != 7):

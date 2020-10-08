@@ -1,5 +1,5 @@
 import random
-random.seed(0)
+random.seed(0) # used so we can compare the results
 
 total = 0
 while True:
