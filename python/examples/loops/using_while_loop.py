@@ -1,5 +1,5 @@
 
 ix = 3
-while ix <= 17:
+while ix < 25:
     print(ix)
-    ix += 3
+    ix += 4
