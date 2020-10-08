@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 import os
 import mimetypes
 from flask import Flask, abort, Response, redirect
