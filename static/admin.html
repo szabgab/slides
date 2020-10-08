@@ -25,7 +25,15 @@ Show sidebar: <input type="checkbox" id="show_sidebar"><br>
             localStorage.setItem(field, document.getElementById(field).checked);
         }
         var res = window.location.search.split("=");
-        window.location.href = res[1];
+        if (res[1] == undefined) {
+            if (window.location.hostname == "code-maven.com") {
+                window.location.href = "/slides";
+            } else {
+                // no idea where to go
+            }
+        } else {
+            window.location.href = res[1];
+        }
     }
 
     function start() {
