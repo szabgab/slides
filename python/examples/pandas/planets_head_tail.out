@@ -1,0 +1,10 @@
+      name  distance     mass
+0  Mercury      0.40  0.05500
+1    Venus      0.70  0.81500
+2    Earth      1.00  1.00000
+3     Mars      1.50  0.10700
+4    Ceres      2.77  0.00015
+
+      name  distance      mass
+9    Pluto      39.0  0.002180
+10  Charon      39.0  0.000254

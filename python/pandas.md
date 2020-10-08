@@ -8,61 +8,50 @@
 * Handle data sequences
 * [A Beginner's Guide to Optimizing Pandas Code for Speed](https://engineering.upside.com/a-beginners-guide-to-optimizing-pandas-code-for-speed-c09ef2c6a4d6)
 
+
+Datasets:
+Planets
+
 ## Planets
 {id: planets}
 
 ![](examples/pandas/planets.csv)
 
+## Planets - Read CSV into Dataframes
+{id: pandas-planets-read-csv}
+{i: read_csv}
+
+![](examples/pandas/planets_read.py)
+![](examples/pandas/planets_read.out)
+
+## Planets - DataFrame Statistics
+{id: pandas-planets-statistics}
+{i: columns}
+{i: dtypes}
+{i: index}
+{i: values}
+{i: describe}
+
+![](examples/pandas/planets_stats.py)
+
+![](examples/pandas/planets_stats.out)
+
+## Planets - Show first and last rows
+{id: pandas-planets-show-first-and-last-rows}
+{i: head}
+{i: tail}
+
+* `head` will show the first few rows (defaults to 5)
+* `tail` will show the last few rows (defaults to 5)
+
+![](examples/pandas/planets_head_tail.py)
+
+![](examples/pandas/planets_head_tail.out)
 
 ## Pandas Planets - Dataframes
 {id: pandas-read-csv-planets}
 
 ![](examples/pandas/read_csv_planets.py)
-
-```
-         distance        mass
-name
-Mercury      0.40    0.055000
-Venus        0.70    0.815000
-Earth        1.00    1.000000
-Mars         1.50    0.107000
-Ceres        2.77    0.000150
-Jupiter      5.20  318.000000
-Saturn       9.50   95.000000
-Uranus      19.60   14.000000
-Neptune     30.00   17.000000
-Pluto       39.00    0.002180
-Charon      39.00    0.000254
-```
-
-
-```
-         distance     mass        dm
-name
-Mercury      0.40  0.05500  0.022000
-Venus        0.70  0.81500  0.570500
-Earth        1.00  1.00000  1.000000
-Mars         1.50  0.10700  0.160500
-Ceres        2.77  0.00015  0.000415
-```
-
-
-```
-         distance   mass      dm
-name
-Jupiter       5.2  318.0  1653.6
-Saturn        9.5   95.0   902.5
-```
-
-
-## Pandas Stocks
-{id: pandas-stocks}
-![](examples/pandas/stocks.py)
-
-
-## Pandas Stocks
-{id: pandas-read-csv-stocks}
-![](examples/pandas/read_csv_stocks.py)
 
 
 ## Merge Dataframes
@@ -192,7 +181,5 @@ df[ df['Name'] == 'old', 'Name' ] = 'new'
 {id: pandas-series-with-names}
 
 ![](examples/pandas/series_with_names.py)
-
-
 
 
