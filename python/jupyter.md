@@ -10,6 +10,12 @@ On Windows install [Anaconda](https://www.anaconda.com/distribution/)
 and then you'll be able to run Jupyter notebook from the start menu.
 
 
+Alternatively:
+
+```
+pip install jupyter
+```
+
 ## Jupyter on Linux and OSX
 {id: run-jupyter-linux}
 
@@ -30,9 +36,7 @@ cd examples/jupyter/
 jupyter notebook
 ```
 
-
 * Your browser should open. If not, there is a link in the terminal.
-
 
 
 ## Jupyter add
