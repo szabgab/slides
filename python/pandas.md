@@ -48,10 +48,47 @@ Planets
 
 ![](examples/pandas/planets_head_tail.out)
 
-## Pandas Planets - Dataframes
+## Planets DataFrame select rows and columns
+{id: pandas-planets-select-rows-and-columns}
+
+![](examples/pandas/planets_rows_columns.py)
+![](examples/pandas/planets_rows_columns.out)
+
+## DataFrame filter rows by size
+{id: pandas-planets-filter-rows-by-size}
+
+![](examples/pandas/planets_filter_rows_by_size.py)
+![](examples/pandas/planets_filter_rows_by_size.out)
+
+## DataFrame filter rows by name
+{id: pandas-planets-filter-rows-by-name}
+
+![](examples/pandas/planets_filter_rows_by_name.py)
+![](examples/pandas/planets_filter_rows_by_name.out)
+
+## DataFrame filter elementwise boolean and
+{id: pandas-planets-filter-elementwise-boolean-and}
+
+![](examples/pandas/planets_filter_elementwise.py)
+![](examples/pandas/planets_filter_elementwise.out)
+
+## DataFrame sort
+{id: pandas-planets-sort}
+
+![](examples/pandas/planets_sort.py)
+![](examples/pandas/planets_sort.out)
+
+
+## Pandas Planets - Dataframes OLD
 {id: pandas-read-csv-planets}
 
 ![](examples/pandas/read_csv_planets.py)
+
+## Pandas Planets - calculate
+{id: pandas-plantes-calculate}
+
+![](examples/pandas/planets_calculate.py)
+![](examples/pandas/planets_calculate.out)
 
 
 ## Merge Dataframes

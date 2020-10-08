@@ -1,0 +1,59 @@
+  Planet name  Distance (AU)  Mass
+2       Earth            1.0   1.0
+----
+1.0
+----
+1.0
+----
+0      0.60
+1      0.30
+2      0.00
+3      0.50
+4      1.77
+5      4.20
+6      8.50
+7     18.60
+8     29.00
+9     38.00
+10    38.00
+Name: Distance (AU), dtype: float64
+----
+   Planet name  Distance (AU)        Mass
+0      Mercury           0.40    0.055000
+1        Venus           0.70    0.815000
+2        Earth           1.00    1.000000
+3         Mars           1.50    0.107000
+4        Ceres           2.77    0.000150
+5      Jupiter           5.20  318.000000
+6       Saturn           9.50   95.000000
+7       Uranus          19.60   14.000000
+8      Neptune          30.00   17.000000
+9        Pluto          39.00    0.002180
+10      Charon          39.00    0.000254
+----
+0       0.916667
+1      54.333333
+2            inf
+3       2.568000
+4       0.000287
+5     108.163265
+6       7.889273
+7       0.242803
+8       0.121284
+9       0.000009
+10      0.000001
+dtype: float64
+----
+   Planet name           F
+0      Mercury    0.916667
+1        Venus   54.333333
+2        Earth         inf
+3         Mars    2.568000
+4        Ceres    0.000287
+5      Jupiter  108.163265
+6       Saturn    7.889273
+7       Uranus    0.242803
+8      Neptune    0.121284
+9        Pluto    0.000009
+10      Charon    0.000001
+----
