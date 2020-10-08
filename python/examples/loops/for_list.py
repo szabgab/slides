@@ -1,2 +1,3 @@
-for fruit in ["Apple", "Banana", "Peach", "Orange", "Durian", "Papaya"]:
+fruits = ["Apple", "Banana", "Peach", "Orange", "Durian", "Papaya"]
+for fruit in fruits:
     print(fruit)

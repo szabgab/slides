@@ -15,4 +15,6 @@ while True:
     if total ** 2 % 23 == 7:
         break
 
+    # do the real work here
+
 print("done")

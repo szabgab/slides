@@ -5,4 +5,5 @@ for cr in txt:
     if cr == 'r':
         break
     print(cr)
-print('DONE')
+
+print('done')

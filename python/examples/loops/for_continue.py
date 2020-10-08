@@ -4,3 +4,5 @@ for ch in txt:
         continue
     print(ch)
 
+print("done")
+

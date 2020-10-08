@@ -224,7 +224,10 @@ python count_unique.py abcdaaa
 * Update the following file.
 * Given a for-loop as in the following code, convert it to be using a while-loop.
 
+* Range with 3 parameters: from the first number, till the second number, with step the 3rd number range(from, to, step)
+
 ![](examples/loops/using_for_loop.py)
+![](examples/loops/using_for_loop.out)
 
 
 ## Solution: Print all the locations in a string

@@ -12,4 +12,6 @@ while total < 10000000:
     if total ** 2 % 23 == 7:
         break
 
+    # do the real work here
+
 print("done")

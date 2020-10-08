@@ -1,3 +1,3 @@
 
-for ix in range(3, 17, 3):
+for ix in range(3, 25, 4):
     print(ix)
