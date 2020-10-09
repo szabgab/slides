@@ -130,6 +130,23 @@
 ![](examples/pandas/read_csv_set_index.py)
 ![](examples/pandas/read_csv_set_index.out)
 
+## Count values
+{id: count-values}
+
+![](examples/pandas/so_value_counts.py)
+
+## Select top items
+{id: select-top-items}
+
+* StackOverflow - biggest countries (in terms of number of responses)
+
+![](examples/pandas/so_top_countries.py)
+
+## Pandas Show histogram
+{id: pandas-show-histogram}
+
+![](examples/pandas/so_histogram.py)
+![](examples/pandas/so_histogram.png)
 
 ## Pandas read selected columns
 {id: pandas-read-selected-columns}
@@ -147,6 +164,7 @@
 ![](examples/pandas/read_file_in_chunks_select_rows.py)
 
 ![](examples/pandas/read_file_in_chunks_select_rows_append.py)
+
 
 ## Combine columns to create a new column
 {id: pandas-combine-columns}
@@ -194,7 +212,12 @@ other_limit > p.value( )
 {id: exercise-pandas}
 
 * Take the Stack Overflow survey and the report created by SO.
-* Repeate some of the calculations, but using only the data from a specific country
+* Distribution of responses among countries.
+* Relation of Open Source contribution to experience.
+* Open Source contribution by country.
+* Look at the pdf file and create similar reports for a specific country
 
 * Pick a dataset from [Kaggle](https://www.kaggle.com/datasets) and try to analyze that.
+
+
 

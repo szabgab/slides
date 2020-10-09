@@ -724,4 +724,79 @@ ax.plot(
     [ 10, 3, 45, 5 ],
 )
 
+## Jupyter StackOverflow - historgram
+{id: jupyter-stackoverflow-histogram}
+
+```
+# Historgram of the top 20 countries
+first20.hist(bins = 20)
+
+# Plot using Seaborn
+plot = sns.relplot(data = first20)
+plot.set_xticklabels(rotation=90)
+```
+
+## Jupyter StackOverflow - OpenSourcer
+{id: jupyter-stackoverflow-opensourcer}
+
+```
+df['OpenSourcer'].value_counts()
+
+df['OpenSourcer'].unique()
+```
+
+
+
+## Jupyter StackOverflow - cross tabulation
+{id: jupyter-stackoverflow-cross-tabulation}
+
+```
+# Crosstabulation
+first10 = country_count.head(10)
+subset = df[ df['Country'].isin( first10.keys() ) ]
+# subset.count()
+
+# subset['OpenSourcer'].value_counts()
+grouped = subset.groupby('Country')['OpenSourcer'].value_counts()
+# grouped.plot.bar(figsize=(15,15))
+
+pd.crosstab(subset['Country'], df['OpenSourcer'])
+
+ct = pd.crosstab(subset['Country'], df['OpenSourcer']).apply(lambda r: 100 * r/r.sum(), axis=1)
+ct
+
+ct.transpose().hist(figsize=(15, 15))
+```
+
+
+
+## Jupyter StackOverflow - salaries
+{id: jupyter-stackoverflow-salaries}
+
+```
+# Try to show the average salary by country
+grp = df.groupby('Country').mean().round({'CompTotal' : 0})
+#grp['CompTotal']
+pd.set_option('display.float_format', lambda x: '{:,}'.format(x))
+grp.sort_values('CompTotal', ascending=False)
+```
+
+
+
+## Jupyter StackOverflow - replace values
+{id: jupyter-stackoverflow-replace-values}
+
+```
+nd = df.replace({'OpenSourcer' : {
+        'Never' : 0,
+        'Less than once per year' : 1,
+        'Less than once a month but more than once per year' : 2,
+        'Once a month or more often' : 3,
+       } })
+nd
+nd.describe()
+nd.groupby('Country').mean().sort_values('OpenSourcer', ascending=False)
+```
+
+
 
