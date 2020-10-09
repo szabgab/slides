@@ -57,6 +57,19 @@
 
 ![](examples/pandas/planets_head_tail.out)
 
+## Planets DataFrame select columns
+{id: pandas-planets-select-columns}
+
+![](examples/pandas/planets_select_columns.py)
+![](examples/pandas/planets_select_columns.out)
+
+
+## Planets DataFrame select rows
+{id: pandas-planets-select-rows}
+
+![](examples/pandas/planets_select_rows.py)
+![](examples/pandas/planets_select_rows.out)
+
 ## Planets DataFrame select rows and columns
 {id: pandas-planets-select-rows-and-columns}
 

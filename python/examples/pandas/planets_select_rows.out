@@ -1,0 +1,18 @@
+<class 'pandas.core.frame.DataFrame'>
+  Planet name  Distance (AU)     Mass
+2       Earth           1.00  1.00000
+3        Mars           1.50  0.10700
+4       Ceres           2.77  0.00015
+
+<class 'pandas.core.frame.DataFrame'>
+  Planet name  Distance (AU)     Mass
+2       Earth           1.00  1.00000
+3        Mars           1.50  0.10700
+4       Ceres           2.77  0.00015
+
+<class 'pandas.core.frame.DataFrame'>
+  Planet name  Distance (AU)     Mass
+2       Earth            1.0    1.000
+5     Jupiter            5.2  318.000
+3        Mars            1.5    0.107
+

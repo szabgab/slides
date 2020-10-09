@@ -7,15 +7,13 @@ if len(sys.argv) == 2:
 
 df = pd.read_csv(filename)
 
-print(df['Mass'])
+small = df[2:5][['Distance (AU)', 'Planet name']]
+print(type(small))
+print(small)
 print()
 
-print(df['Planet name'])
-print()
-
-print(df[2:5]) # using row numbers (just like iloc)
-print()
-
-print(df.iloc[3:6][['Distance (AU)', 'Planet name']])
+other = df.iloc[3:6][['Distance (AU)', 'Planet name']]
+print(type(other))
+print(other)
 print()
 
