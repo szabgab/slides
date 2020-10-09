@@ -65,12 +65,6 @@ add(2,3)
 ![](examples/jupyter/planets.csv)
 
 
-## Jupyter notebook Planets
-{id: jupyter-notebook-planets}
-
-![](examples/jupyter/planets.py)
-
-
 ## Jupyter StackOverflow
 {id: jupyter-stackoverflow}
 
