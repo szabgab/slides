@@ -712,3 +712,16 @@ df[ df['Name'] == 'old', 'Name' ] = 'new'
 {id: pandas-series-with-names}
 
 ![](examples/pandas/series_with_names.py)
+
+## Matplotlib subplot
+{id: matplotlib-subplot}
+
+* Generates a separate graph, but when saving to disk, the image is blank
+
+fig, ax = plt.subplots()
+ax.plot(
+    [ 1,  2,   3,  4 ],
+    [ 10, 3, 45, 5 ],
+)
+
+
