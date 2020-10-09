@@ -7,5 +7,6 @@ if len(sys.argv) == 2:
 
 df = pd.read_csv(filename)
 
-print(df.sort_values('Planet name', ascending=True))
-
+sorted_df = df.sort_values('Planet name', ascending=True)
+print(sorted_df)
+# df remains unchanged

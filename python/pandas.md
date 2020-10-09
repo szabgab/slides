@@ -8,21 +8,30 @@
 * Handle data sequences
 * [A Beginner's Guide to Optimizing Pandas Code for Speed](https://engineering.upside.com/a-beginners-guide-to-optimizing-pandas-code-for-speed-c09ef2c6a4d6)
 
+## Datasets
+{id: datasets}
 
-Datasets:
-Planets
+* Planets
+* StackOverflow survey
 
-## Planets
-{id: planets}
+## Planets data
+{id: planets-data}
 
 ![](examples/pandas/planets.csv)
+
+## StackOverflow Survey data
+{id: stackoverflow-survey-data}
+
+* Download one of the dataset from the [survey](https://insights.stackoverflow.com/survey)
+* unzip the file. Feel free to remove the `__MACOSX/` directory if it is there.
 
 ## Planets - Read CSV into Dataframes
 {id: pandas-planets-read-csv}
 {i: read_csv}
 
-![](examples/pandas/planets_read.py)
-![](examples/pandas/planets_read.out)
+![](examples/pandas/read_csv.py)
+
+![](examples/pandas/read_csv.out)
 
 ## Planets - DataFrame Statistics
 {id: pandas-planets-statistics}
@@ -32,9 +41,9 @@ Planets
 {i: values}
 {i: describe}
 
-![](examples/pandas/planets_stats.py)
+![](examples/pandas/dataframe_stats.py)
 
-![](examples/pandas/planets_stats.out)
+![](examples/pandas/dataframe_stats.out)
 
 ## Planets - Show first and last rows
 {id: pandas-planets-show-first-and-last-rows}
@@ -72,11 +81,22 @@ Planets
 ![](examples/pandas/planets_filter_elementwise.py)
 ![](examples/pandas/planets_filter_elementwise.out)
 
-## DataFrame sort
+## DataFrame sort (sort_values)
 {id: pandas-planets-sort}
+{i: sort_values}
 
 ![](examples/pandas/planets_sort.py)
 ![](examples/pandas/planets_sort.out)
+
+## DataFrame loc vs. iloc
+{id: pandas-planets-loc-vs-iloc}
+
+* `loc` by values (here we start from the row where the index column == 3
+* `iloc` by index (here we start from the 3rd row)
+
+![](examples/pandas/planets_loc_vs_iloc.py)
+
+![](examples/pandas/planets_loc_vs_iloc.out)
 
 
 ## Pandas Planets - Dataframes OLD
@@ -219,4 +239,4 @@ df[ df['Name'] == 'old', 'Name' ] = 'new'
 
 ![](examples/pandas/series_with_names.py)
 
-
+* read excel

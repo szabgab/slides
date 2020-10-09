@@ -13,9 +13,9 @@ print()
 print(df['Planet name'])
 print()
 
-print(df[2:5])
+print(df[2:5]) # using row numbers (just like iloc)
 print()
 
-print(df.loc[3:6, ['Distance (AU)', 'Planet name']])
+print(df.iloc[3:6][['Distance (AU)', 'Planet name']])
 print()
 
