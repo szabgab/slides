@@ -650,3 +650,65 @@ python examples/modules/fibonacci_doctest.py
 {id: analyze-ifmetrics}
 ![](examples/pandas/ifmetrics.py)
 
+## Calculate Genome metrics - add columns
+{id: calculate-genome-metrics-add-columns}
+
+![](examples/pandas/genome_calculation_add_columns.py)
+
+
+## Calculate Genome metrics - vectorized
+{id: calculate-genome-metrics-vecorized}
+
+![](examples/pandas/genome_calculation_vectorized.py)
+
+
+## Calculate Genome metrics - vectorized numpy
+{id: calculate-genome-metrics-vecorized-numpy}
+
+![](examples/pandas/genome_calculation_vectorized_numpy.py)
+
+## Pandas more
+{id: pandas-more}
+
+```
+df.iloc[:, 4:10].sum(axis=1)
+
+# rearrange order of columns
+cols = list(df.columns)
+df = df[ cols[0:4], cols[-1], cols[4:20] ]
+
+to_csv('file.csv', index=False)
+
+read_csv(filename, delimiter='\t')
+to_csv(filename, sep='\t')
+
+
+# after filtering out some rows:
+df = df.reset_index()
+df.reset_index(drop=True, inplace=True)
+
+
+filter with
+df.loc[ ~df['Name'].str.contains('substring') ]
+
+can also have regex=True parameter
+
+# replace values
+df[ df['Name'] == 'old', 'Name' ] = 'new'
+```
+
+
+## Pandas Series
+{id: pandas-series}
+{i: Series}
+{i: values}
+{i: index}
+{i: RangeIndex}
+
+![](examples/pandas/series.py)
+
+
+## Pandas Series with names
+{id: pandas-series-with-names}
+
+![](examples/pandas/series_with_names.py)

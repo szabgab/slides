@@ -3,25 +3,30 @@ import numpy as np
 import datetime
 import sys
 
-if len(sys.argv) < 2:
-    exit("Need filename")
-filename = sys.argv[1]
-
+filename = 'raw_data.xlsx'
+if len(sys.argv) == 2:
+    filename = sys.argv[1]
 
 def calculate_averages(row):
     v1 = row.iloc[0:3].mean()
     v2 = row.iloc[3:6].mean()
     return np.log2(v1/v2)
 
-start = datetime.datetime.now()
+start_time = datetime.datetime.now()
 df = pd.read_excel(filename, index_col='genome name')
+load_time = datetime.datetime.now()
+print(load_time - start_time)
+
 print(df.head())
-print(datetime.datetime.now() - start)
 
 calculated_value = df.apply(calculate_averages, axis=1)
-print(datetime.datetime.now() - start)
 
 threshold = 0.2
 filtered_df = df[calculated_value > threshold]
+
 print(filtered_df.head())
-print(datetime.datetime.now() - start)
+
+calculate_time = datetime.datetime.now()
+print(calculate_time - load_time)
+
+
