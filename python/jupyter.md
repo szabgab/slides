@@ -1,10 +1,15 @@
 # Jupyter notebooks
 {id: jupyter}
 
+## What is Jupyter?
+{id: what-is-jupyter}
+
+* [Jupyter](https://jupyter.org/)
+
+* A web-based interactive development environment
 
 ## Jupyter on Windows
 {id: run-jupyter-windows}
-
 
 On Windows install [Anaconda](https://www.anaconda.com/distribution/)
 and then you'll be able to run Jupyter notebook from the start menu.
@@ -55,7 +60,7 @@ jupyter notebook
 {id: jupyter-notebook-file-format}
 
 * Jupyter file format (show the file) JSON
-* Export file
+* Download file as Python (.py)
 
 ## Jupyter add
 {id: jupyter-simple-add}
@@ -66,6 +71,8 @@ jupyter notebook
 ## Planets
 {id: planets-csv}
 
+* The Planets example we saw in the Pandas chapter
+
 * `examples/jupyter/planets.csv`
 * `examples/jupyter/planets.ipynb`
 
@@ -73,11 +80,10 @@ jupyter notebook
 ## Jupyter StackOverflow
 {id: jupyter-stackoverflow}
 
-* Download the latest dataset from the [survey](https://insights.stackoverflow.com/survey).
-* unzip the file. Feel free to remove the __MACOSX/ directory.
+* Download a dataset from the [Stack Overflow survey](https://insights.stackoverflow.com/survey).
+* unzip the file. Feel free to remove the `__MACOSX/` directory if it is included.
 
 * `examples/jupyter/SO/so.ipynb`
-* `examples/jupyter/SO/show.ipynb`
 * `examples/jupyter/SO/selected-rows.ipynb`
 * `examples/jupyter/SO/selected-columns.ipynb`
 
@@ -102,6 +108,9 @@ jupyter notebook
 
 ## Load image using OpenCV
 {id: load-image-using-opencv}
+
+* [opencv](https://opencv.org/)
+* [opencv-python](https://pypi.org/project/opencv-python/)
 
 * `load_image_using_opencv`
 
