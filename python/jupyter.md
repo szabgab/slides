@@ -38,31 +38,36 @@ jupyter notebook
 
 * Your browser should open. If not, there is a link in the terminal.
 
+## Jupyter New notebook
+{id: jupyter-new-notebook}
+
+* Create new notebook (New / Python 3)
+* It is called "Untitled" - Rename it
+* Type in some code `x = 2`
+* Modes: Blue - command mode, Green - edit mode
+* Enter - Switch to edit mode (or newline if already in edit mode)
+* ESC - Switch to command mode
+* Ctrl-Enter - excuted current code
+* ...
+* Quit - shut down the notebook server.
+
+## Jupyter Notebook file format
+{id: jupyter-notebook-file-format}
+
+* Jupyter file format (show the file) JSON
+* Export file
 
 ## Jupyter add
 {id: jupyter-simple-add}
 
-
-* Open an existing notebook (ipynb file). e.g examples/jupyter/add.ipynb
-* Create new notebook.
-* File - Save As
-* ...
-* Quit - shut down the notebook server.
-
-
-
-```
-def add(x, y):
-    return x+y
-
-add(2,3)
-```
+* Open an existing notebook: `examples/jupyter/add.ipynb`
 
 
 ## Planets
 {id: planets-csv}
 
-![](examples/jupyter/planets.csv)
+* `examples/jupyter/planets.csv`
+* `examples/jupyter/planets.ipynb`
 
 
 ## Jupyter StackOverflow
@@ -71,32 +76,46 @@ add(2,3)
 * Download the latest dataset from the [survey](https://insights.stackoverflow.com/survey).
 * unzip the file. Feel free to remove the __MACOSX/ directory.
 
-![](examples/jupyter/stack_overflow.py)
+* `examples/jupyter/SO/so.ipynb`
+* `examples/jupyter/SO/show.ipynb`
+* `examples/jupyter/SO/selected-rows.ipynb`
+* `examples/jupyter/SO/selected-columns.ipynb`
+
 
 
 ## Jupyter notebook Intellisense (TAB completition)
 {id: jupyter-notebook-intellisense}
 
-
 ```
 %config IPCompleter.greedy=True
 ```
 
+## Use SciPy image
+{id: use-scipy-image}
+
+* `scipy_image.ipynb`
+
+## Create Random image
+{id: create-random-image}
+
+* `create_random_image.ipynb`
+
+## Load image using OpenCV
+{id: load-image-using-opencv}
+
+* `load_image_using_opencv`
 
 ## Jupyter examples
 {id: jupyter-examples}
 
-
-```
-
-examples/jupyter/planets.csv
-
-examples/jupyter/planets.ipynb
-
-examples/jupyter/numpy_matrix.ipynb
-
-examples/jupyter/seaborn_tips.ipynb
-```
+* `generate.ipynb` Generate a single Pandas DataFrame
+* `markdow.ipynb`
+* `salary_generate.ipynb`
+* `salary.ipynb`
+* `temperatures.ipynb`
+* `weather.ipynb`
+* `numpy_matrix.ipynb`
+* `seaborn_tips.ipynb`
 
 ## IPy Widgets
 {id: ipywidgets}
@@ -105,12 +124,12 @@ examples/jupyter/seaborn_tips.ipynb
 * [Interact](https://ipywidgets.readthedocs.io/en/latest/examples/Using%20Interact.html)
 * [Widget list](https://ipywidgets.readthedocs.io/en/latest/examples/Widget%20List.html)
 
+* `ipwidget_examples.ipynb`
+
 ## Genes using Jupyter
 {id: genes-using-jupyter}
 
 ```
-cd examples/pandas/
 jupyter notebook genes.ipynb
 ```
-
 
