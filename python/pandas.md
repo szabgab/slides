@@ -173,4 +173,11 @@ other_limit > p.value( )
 
 ![](examples/pandas/genome_calculation.py)
 
+## Exercise: Pandas
+{id: exercise-pandas}
+
+* Take the Stack Overflow survey and the report created by SO.
+* Repeate some of the calculations, but using only the data from a specific country
+
+* Pick a dataset from [Kaggle](https://www.kaggle.com/datasets) and try to analyze that.
 
