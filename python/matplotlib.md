@@ -30,6 +30,7 @@
 {id: matplotlib-simple-pie-with-params}
 
 ![](examples/matplotlib/simple_pie_params.py)
+![](examples/matplotlib/simple_pie_params.png)
 
 * [pyplot pie](https://matplotlib.org/api/_as_gen/matplotlib.pyplot.pie.html#matplotlib.pyplot.pie)
 
@@ -39,10 +40,11 @@
 ![](examples/matplotlib/pie.py)
 ![](examples/matplotlib/pie.png)
 
-## Matplotlib Pie 2
-{id: matplotlib-pie-2}
+## Matplotlib Pie (test cases)
+{id: matplotlib-pie-test-cases}
 
 ![](examples/matplotlib/pie_for_tests.py)
+![](examples/matplotlib/pie_for_tests.png)
 
 
 ## Plot, scatter, histogram
