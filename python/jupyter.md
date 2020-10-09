@@ -53,6 +53,9 @@ jupyter notebook
 * Enter - Switch to edit mode (or newline if already in edit mode)
 * ESC - Switch to command mode
 * Ctrl-Enter - excuted current code
+* Clear Cell data before saving
+* Button h for help
+* Buttons A, B
 * ...
 * Quit - shut down the notebook server.
 
@@ -61,6 +64,14 @@ jupyter notebook
 
 * Jupyter file format (show the file) JSON
 * Download file as Python (.py)
+
+## Jupyter notebook Intellisense (TAB completition)
+{id: jupyter-notebook-intellisense}
+
+```
+%config IPCompleter.greedy=True
+```
+
 
 ## Jupyter add
 {id: jupyter-simple-add}
@@ -88,13 +99,6 @@ jupyter notebook
 * `examples/jupyter/SO/selected-columns.ipynb`
 
 
-
-## Jupyter notebook Intellisense (TAB completition)
-{id: jupyter-notebook-intellisense}
-
-```
-%config IPCompleter.greedy=True
-```
 
 ## Use SciPy image
 {id: use-scipy-image}
