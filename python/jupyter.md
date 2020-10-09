@@ -80,45 +80,6 @@ add(2,3)
 ![](examples/jupyter/stack_overflow.py)
 
 
-## Jupyter StackOverflow - selected columns
-{id: jupyter-stackoverflow-load-selected-columns}
-
-
-```
-df = pd.read_csv('survey_results_public.csv', usecols=['Country', 'OpenSourcer', 'CompTotal'])
-```
-
-
-## Jupyter processing chunks
-{id: jupyter-processing-chunks}
-
-```
-for chunk in pd.read_csv('survey_results_public.csv', chunksize=chunksize):
-    process(chunk)
-```
-
-
-## Jupyter StackOverflow - selected rows
-{id: jupyter-stackoverflow-load-selected-rows}
-
-```
-# Load only data from a specific country.
-
-country_name = 'Israel'
-df = None
-for chunk in pd.read_csv('survey_results_public.csv', chunksize=10000):
-    part = chunk[ chunk['Country'] == country_name ]
-    if df is None:
-        df = part.copy(deep = True)
-    else:
-        df = df.append(part.copy(deep = True), ignore_index = True)
-
-
-df.count()
-df.size
-```
-
-
 
 ## Jupyter StackOverflow - biggest countries (in terms of number of responses)
 {id: jupyter-stackoverflow-biggest-countries}

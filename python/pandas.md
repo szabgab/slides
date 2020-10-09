@@ -131,6 +131,23 @@
 ![](examples/pandas/read_csv_set_index.out)
 
 
+## Pandas read selected columns
+{id: pandas-read-selected-columns}
+
+![](examples/pandas/read_selected_columns.py)
+
+## Pandas read file in chunks
+{id: pandas-read-file-in-chunks}
+
+![](examples/pandas/read_file_in_chunks.py)
+
+## Pandas read selected rows in chunks
+{id: pandas-read-in-chunks-select-rows}
+
+![](examples/pandas/read_file_in_chunks_select_rows.py)
+
+![](examples/pandas/read_file_in_chunks_select_rows_append.py)
+
 ## Combine columns to create a new column
 {id: pandas-combine-columns}
 {i: apply}
