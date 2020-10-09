@@ -636,5 +636,17 @@ python examples/modules/fibonacci_doctest.py
 ![](examples/pandas/read_csv_stocks.py)
 
 
+## Merge Dataframes
+{id: merge-dataframes}
+![](examples/pandas/merge_dataframes.py)
 
+
+## Analyze Alerts
+{id: analyze-alerts}
+![](examples/pandas/alerts.py)
+
+
+## Analyze IFMetrics
+{id: analyze-ifmetrics}
+![](examples/pandas/ifmetrics.py)
 

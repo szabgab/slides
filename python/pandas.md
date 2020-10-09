@@ -22,8 +22,8 @@
 ## StackOverflow Survey data
 {id: stackoverflow-survey-data}
 
-* Download one of the dataset from the [survey](https://insights.stackoverflow.com/survey)
-* unzip the file. Feel free to remove the `__MACOSX/` directory if it is there.
+* Download one of the datasets from the [Stack Overflow survey](https://insights.stackoverflow.com/survey)
+* unzip the file. Feel free to remove the `__MACOSX/` directory if it is still there.
 
 ## Planets - Read CSV into Dataframes
 {id: pandas-planets-read-csv}
@@ -82,11 +82,11 @@
 ![](examples/pandas/planets_filter_rows_by_size.py)
 ![](examples/pandas/planets_filter_rows_by_size.out)
 
-## DataFrame filter rows by name
-{id: pandas-planets-filter-rows-by-name}
+## DataFrame filter columns by name
+{id: pandas-planets-filter-columns-by-name}
 
-![](examples/pandas/planets_filter_rows_by_name.py)
-![](examples/pandas/planets_filter_rows_by_name.out)
+![](examples/pandas/planets_filter_cols_by_name.py)
+![](examples/pandas/planets_filter_cols_by_name.out)
 
 ## DataFrame filter elementwise boolean and
 {id: pandas-planets-filter-elementwise-boolean-and}
@@ -112,10 +112,11 @@
 ![](examples/pandas/planets_loc_vs_iloc.out)
 
 
-## Pandas Planets - Dataframes OLD
-{id: pandas-read-csv-planets}
+## Pandas Planets - Add calculated column, remove / delete column (drop)
+{id: pandas-add-column}
 
-![](examples/pandas/read_csv_planets.py)
+![](examples/pandas/add_column_drop_column.py)
+![](examples/pandas/add_column_drop_column.out)
 
 ## Pandas Planets - calculate
 {id: pandas-plantes-calculate}
@@ -123,30 +124,30 @@
 ![](examples/pandas/planets_calculate.py)
 ![](examples/pandas/planets_calculate.out)
 
+## Pandas read CSV set index column
+{id: pandas-read-csv-set-index-column}
 
-## Merge Dataframes
-{id: merge-dataframes}
-![](examples/pandas/merge_dataframes.py)
-
-
-## Analyze Alerts
-{id: analyze-alerts}
-![](examples/pandas/alerts.py)
+![](examples/pandas/read_csv_set_index.py)
+![](examples/pandas/read_csv_set_index.out)
 
 
-## Analyze IFMetrics
-{id: analyze-ifmetrics}
-![](examples/pandas/ifmetrics.py)
+## Combine columns
+{id: pandas-combine-columns}
 
+![](examples/pandas/data.csv)
+![](examples/pandas/create_column.py)
+![](examples/pandas/create_column.out)
 
+## Pandas read Excel
+{id: pandas-read-excel}
+{i: read_excel}
+
+![](examples/pandas/read_excel.py)
 
 ## Create Excel file for experiment with random data
 {id: create-excel-file-for-experiment}
 
-
-Input is an excel file with the following columns:
-
-
+Input is an Excel file with the following columns:
 
 ```
 genome name, c1, c2, c3, c4, c5, c6
@@ -156,11 +157,7 @@ genome name, c1, c2, c3, c4, c5, c6
 * c4-c6 are numbers of cond2
 
 
-
-
 We would like to filter to the lines that fulfill the following equations:
-
-
 
 ```
 log2(avg(1-3) / avg(4-6)) > limit
@@ -171,39 +168,26 @@ other_limit > p.value( )
 
 ## Calculate Genome metrics
 {id: calculate-genome-metrics}
+
 ![](examples/pandas/genome_calculation.py)
 
 
 ## Calculate Genome metrics - add columns
 {id: calculate-genome-metrics-add-columns}
+
 ![](examples/pandas/genome_calculation_add_columns.py)
 
 
 ## Calculate Genome metrics - vectorized
 {id: calculate-genome-metrics-vecorized}
+
 ![](examples/pandas/genome_calculation_vectorized.py)
 
 
 ## Calculate Genome metrics - vectorized numpy
 {id: calculate-genome-metrics-vecorized-numpy}
+
 ![](examples/pandas/genome_calculation_vectorized_numpy.py)
-
-
-## Genes using Jupyter
-{id: genes-using-jupyter}
-
-```
-cd examples/pandas/
-jupyter notebook genes.ipynb
-```
-
-## Combine columns
-{id: pandas-combine-columns}
-
-![](examples/pandas/data.csv)
-![](examples/pandas/create_column.py)
-![](examples/pandas/create_column.out)
-
 
 ## Pandas more
 {id: pandas-more}
@@ -216,7 +200,6 @@ cols = list(df.columns)
 df = df[ cols[0:4], cols[-1], cols[4:20] ]
 
 to_csv('file.csv', index=False)
-to_excel()
 
 read_csv(filename, delimiter='\t')
 to_csv(filename, sep='\t')
@@ -227,14 +210,13 @@ df = df.reset_index()
 df.reset_index(drop=True, inplace=True)
 
 
-fileter with
+filter with
 df.loc[ ~df['Name'].str.contains('substring') ]
 
 can also have regex=True parameter
 
 # replace values
 df[ df['Name'] == 'old', 'Name' ] = 'new'
-```
 
 
 ## Pandas Series
@@ -251,5 +233,3 @@ df[ df['Name'] == 'old', 'Name' ] = 'new'
 {id: pandas-series-with-names}
 
 ![](examples/pandas/series_with_names.py)
-
-* read excel

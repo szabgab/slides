@@ -17,7 +17,7 @@ print(type(one_col))
 print(one_col)
 print()
 
-two_cols = df[['Planet name', 'Mass']] # select multiple columns, get DataFrame
+two_cols = df[['Planet name', 'Mass']] # Select multiple columns, get DataFrame
 print(type(two_cols))
 print(two_cols)
 print()

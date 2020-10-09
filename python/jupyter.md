@@ -285,3 +285,13 @@ examples/jupyter/seaborn_tips.ipynb
 
 * [Interact](https://ipywidgets.readthedocs.io/en/latest/examples/Using%20Interact.html)
 * [Widget list](https://ipywidgets.readthedocs.io/en/latest/examples/Widget%20List.html)
+
+## Genes using Jupyter
+{id: genes-using-jupyter}
+
+```
+cd examples/pandas/
+jupyter notebook genes.ipynb
+```
+
+
