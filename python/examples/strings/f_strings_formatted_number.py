@@ -10,3 +10,21 @@ print(f"{val:n}") #  number:    42
 
 
 print(f"{val}")   # 42 (same as decimal)
+
+# Zero padding
+val = 3
+print(f"'{val:2n}'")  # ' 3'
+print(f"'{val:02n}'") # '03'
+val = 14
+print(f"'{val:02n}'") # '14'
+
+
+# Zero padding hexa
+val = 3
+print(f"'{val:2X}'")  # ' 3'
+print(f"'{val:02X}'") # '03'
+val = 14
+print(f"'{val:02X}'") # '0E'
+val = 70
+print(f"'{val:02X}'") # '46'
+

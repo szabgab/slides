@@ -10,3 +10,17 @@ print("{:n}".format(val)) #  number:    42
 
 
 print("{}".format(val))   # 42 (same as decimal)
+
+
+# Zero padding
+print("'{:2n}'".format(3))  # ' 3'
+print("'{:02n}'".format(3)) # '03'
+print("'{:02n}'".format(14)) # '14'
+
+
+# Zero padding hexa
+print("'{:2X}'".format(3))  # ' 3'
+print("'{:02X}'".format(3)) # '03'
+print("'{:02X}'".format(14)) # '0E'
+print("'{:02X}'".format(70)) # '46'
+
