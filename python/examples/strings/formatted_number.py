@@ -1,12 +1,12 @@
-x = 42
+val = 42
 
-print("{:b}".format(x)) #  binary:    101010
-print("{:c}".format(x)) #  character: *
-print("{:d}".format(x)) #  decimal:   42      (default)
-print("{:o}".format(x)) #  octal:     52
-print("{:x}".format(x)) #  hexa:      2a
-print("{:X}".format(x)) #  hexa:      2A
-print("{:n}".format(x)) #  number:    42
+print("{:b}".format(val)) #  binary:    101010
+print("{:c}".format(val)) #  character: *
+print("{:d}".format(val)) #  decimal:   42      (default)
+print("{:o}".format(val)) #  octal:     52
+print("{:x}".format(val)) #  hexa:      2a
+print("{:X}".format(val)) #  hexa:      2A
+print("{:n}".format(val)) #  number:    42
 
 
-print("{}".format(x))   # defaults to decimal
+print("{}".format(val))   # 42 (same as decimal)

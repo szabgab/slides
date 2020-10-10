@@ -60,7 +60,7 @@ Focus on the output of the two print statements.
 ![](examples/strings/formatted_string.out)
 
 
-## Format characters and types
+## Format characters and types (binary, octal, hexa)
 {id: format-base}
 {i: format}
 {i: :b}
@@ -70,10 +70,16 @@ Focus on the output of the two print statements.
 {i: :x}
 {i: :X}
 {i: :n}
+
 ![](examples/strings/formatted_number.py)
 
+## Format characters and types using fs-strings
+{id: format-base-f-string}
 
-## Format floating point number 
+![](examples/strings/f_strings_formatted_number.py)
+
+
+## Format floating point number
 {id: format-float}
 {i: :e}
 {i: :E}
