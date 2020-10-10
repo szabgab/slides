@@ -313,49 +313,20 @@ First we are going to see small examples with each one of these Widgets. Then we
 * width
 * side: left, right, top, bottom
 
-## Tk Timer event (after)
+## Python Tk Timer event (after)
 {id: tk-timer-event}
 {i: after}
 
+{aside}
+Schedule an event to be execute `after` N miliseconds.
+{/aside}
+
 ![](examples/tk/tk_timer.py)
 
+## Python Tk Class-based Label + Button
+{id: tk-class-based-label-button}
 
-## Not so Simple Tk app with class
-{id: tk-simple-class}
-{i: tkinter}
-{i: Tk}
-{i: mainloop}
-{i: Frame}
-
-![](examples/tk/simple.py)
-
-
-## Tk: Hello World
-{id: tk-hello-world}
-{i: Label}
-
-![](examples/tk/hello_world.py)
-
-
-## Tk: Quit button
-{id: tk-quit-button}
-{i: Button}
-
-![](examples/tk/quit.py)
-
-
-## Tk: File selector
-{id: tk-file-selector}
-{i: Entry}
-{i: filedialog}
-
-![](examples/tk/file_selector.py)
-
-## Tk: Checkbox
-{id: tk-checkbox2}
-{i: Checkbutton}
-
-![](examples/tk/tk_checkbox_complex.py)
+![](examples/tk/tk_class_button.py)
 
 ## Tk: Runner
 {id: tk-runner}
@@ -372,7 +343,45 @@ First we are going to see small examples with each one of these Widgets. Then we
 
 ![](examples/tk/tk_runner_threads.py)
 
-## Getting started with Tk
+
+## Tk: Old Simple Tk app with class
+{id: tk-simple-class}
+{i: tkinter}
+{i: Tk}
+{i: mainloop}
+{i: Frame}
+
+![](examples/tk/simple.py)
+
+
+## Tk: Old Hello World
+{id: tk-hello-world}
+{i: Label}
+
+![](examples/tk/hello_world.py)
+
+
+## Tk: Old Quit button
+{id: tk-quit-button}
+{i: Button}
+
+![](examples/tk/quit.py)
+
+
+## Tk: Old File selector
+{id: tk-file-selector}
+{i: Entry}
+{i: filedialog}
+
+![](examples/tk/file_selector.py)
+
+## Tk: Old Checkbox
+{id: tk-checkbox2}
+{i: Checkbutton}
+
+![](examples/tk/tk_checkbox_complex.py)
+
+## Tk: Old Getting started with Tk
 {id: getting-started-with-tk}
 {i: Tk}
 
