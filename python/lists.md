@@ -584,7 +584,7 @@ Sorting tuples or list, or other complex structures
 ## Exercise: count digits
 {id: exercise-count-digits}
 
-Given a list of numbers count how many times each digit appears? The output will look like this:
+Create a script called **count_digits.py** that given a list of numbers count how many times each digit appears? The output will look like this:
 
 
 ```
@@ -608,8 +608,7 @@ Given a list of numbers count how many times each digit appears? The output will
 ## Exercise: Create list
 {id: exercise-create-list}
 
-Given a list of strings with words separated by spaces,
-create a single list of all the words.
+* Create a script called **create_list.py** that given a list of strings with words separated by spaces, create a single list of all the words.
 
 * Skeleton:
 
@@ -632,6 +631,8 @@ Expected result:
 
 ## Exercise: Count words
 {id: exercise-count-words-in-list}
+
+* Create a script called **count_words_in_lists.py** that given a list of words (for now embedded in the program itself) will count how many times each word appears.
 
 ![](examples/lists/count_words_skeleton.py)
 
