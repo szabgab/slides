@@ -799,4 +799,10 @@ nd.groupby('Country').mean().sort_values('OpenSourcer', ascending=False)
 ```
 
 
+## ord in a file
+{id: ord-in-file}
+{i: ord}
+
+![](examples/strings/ord.py)
+
 

@@ -230,12 +230,6 @@ Escape sequences are kept intact and not escaped. Used in regexes.
 
 ![](examples/strings/ord_chars.py)
 
-## ord in a file
-{id: ord-in-file}
-{i: ord}
-
-![](examples/strings/ord.py)
-
 
 ## chr - number to character
 {id: chr}
