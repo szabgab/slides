@@ -313,6 +313,13 @@ First we are going to see small examples with each one of these Widgets. Then we
 * width
 * side: left, right, top, bottom
 
+## Python Tk Colorchooser
+{id: tk-colorchooser}
+
+* [colorchooser](https://docs.python.org/library/tkinter.colorchooser.html)
+
+![](examples/tk/tk_colorchooser.py)
+
 ## Python Tk Timer event (after)
 {id: tk-timer-event}
 {i: after}
