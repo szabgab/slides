@@ -144,7 +144,7 @@
 {i: HTML}
 {i: Tk::HyperText}
 
-* ![Tk::HyperText](https://metacpan.org/pod/Tk::HyperText)
+* [Tk::HyperText](https://metacpan.org/pod/Tk::HyperText)
 
 ![](examples/tk/html.pl)
 
@@ -153,7 +153,7 @@
 {i: HTML}
 {i: Tk::HyperText}
 
-* ![Tk::HyperText](https://metacpan.org/pod/Tk::HyperText)
+* [Tk::HyperText](https://metacpan.org/pod/Tk::HyperText)
 
 ![](examples/tk/dialog_box_with_html.pl)
 
