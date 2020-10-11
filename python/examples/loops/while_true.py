@@ -3,9 +3,6 @@ random.seed(0) # used so we can compare the results
 
 total = 0
 while True:
-    print(total)
-    total += random.randrange(20)
-
     if total >= 10000000:
         break
 
@@ -14,6 +11,9 @@ while True:
 
     if total ** 2 % 23 == 7:
         break
+
+    print(total)
+    total += random.randrange(20)
 
     # do the real work here
 
