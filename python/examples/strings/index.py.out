@@ -1,7 +1,0 @@
-4
-0
-Traceback (most recent call last):
-  File "examples/strings/index.py", line 6, in <module>
-    print a.index("dog")    # -1
-ValueError: substring not found
-

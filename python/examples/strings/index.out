@@ -1,0 +1,8 @@
+4
+0
+22
+Traceback (most recent call last):
+  File "index.py", line 5, in <module>
+    print(text.index("dog"))
+ValueError: substring not found
+

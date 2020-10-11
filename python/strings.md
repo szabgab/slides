@@ -151,7 +151,7 @@ If we then assign some other string to either of the variables, then they will p
 {i: ValueError}
 
 ![](examples/strings/index.py)
-![](examples/strings/index.py.out)
+![](examples/strings/index.out)
 
 
 ## index in string with range
@@ -159,7 +159,7 @@ If we then assign some other string to either of the variables, then they will p
 {i: index}
 
 ![](examples/strings/index2.py)
-![](examples/strings/index2.py.out)
+![](examples/strings/index2.out)
 
 
 ## rindex in string with range
@@ -167,7 +167,7 @@ If we then assign some other string to either of the variables, then they will p
 {i: rindex}
 
 ![](examples/strings/rindex.py)
-![](examples/strings/rindex.py.out)
+![](examples/strings/rindex.out)
 
 
 ## find in string
