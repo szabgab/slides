@@ -70,6 +70,7 @@
         "testing.md",
         "testing-unittest.md",
         "testing-pytest.md",
+        "selenium.md",
         "advanced-functions.md",
         "function-arguments.md",
         "packages.md",
