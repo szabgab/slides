@@ -276,7 +276,7 @@ Expected output:
 ## Exercise: Combine lists again
 {id: exercise-combine-lists-again}
 
-See the same exercise in the previous chapter.
+See the same exercise in the previous chapter. Use the filename **combine_lists_using_dictionary.py**.
 
 
 ## Exercise: counting DNA bases
@@ -300,6 +300,7 @@ Y 2 -  8.33 %
 ## Exercise: Count Amino Acids
 {id: exercise-count-amino-acids}
 
+* Create a file called **count_amino_acids.py**.
 * Each sequence consists of many repetition of the 4 bases represented by the ACTG characters.
 * There are 64 codons (sets of 3 bases following each other)
 * There are 20 [Amino Acids](https://en.wikipedia.org/wiki/Amino_acid) each of them are represented by 3 bases.
@@ -317,6 +318,7 @@ Y 2 -  8.33 %
 
 Given the following file build a list of dictionaries where each dictionary represents one person.
 The keys in the dictionary are the names of the columns (fname, lname, born) the values are the respective values from each row.
+Create a file called **list_of_dictionaries.py**.
 
 ![](examples/csv/monty_python.csv)
 
@@ -330,6 +332,7 @@ The keys in the dictionary are the names of the columns (fname, lname, born) the
 Given the following file build a dictionary of dictionaries where each internal dictionary represents one person.
 The keys in the internal dictionaries are the names of the columns (fname, lname, born) the values are the respective values from each row.
 In the outer dictionary the keys are the (fname, lname) tuples.
+Create a file called **dictionary_of_dictionaries.py**
 
 ![](examples/csv/monty_python.csv)
 
