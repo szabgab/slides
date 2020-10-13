@@ -7,9 +7,12 @@ RUN apt-get update                          && \
 
 RUN apt-get install -y python3-pip
 
-COPY . /opt/
-RUN pip3 install -r /opt/requirements.txt
+COPY requirements.txt .
+RUN pip3 install -r requirements.txt
+RUN rm -f requirements.txt
 
+
+COPY . /opt/
 COPY uwsgi.ini /etc/uwsgi/apps-enabled/
 
 WORKDIR /opt
