@@ -1,0 +1,6 @@
+MyText        object
+MyInteger       int8
+MyFloat      float64
+MyBool          bool
+MyExit         int64
+dtype: object

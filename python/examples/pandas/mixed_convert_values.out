@@ -1,0 +1,10 @@
+MyText        object
+MyInteger      int64
+MyFloat      float64
+MyBool          bool
+MyExit          bool
+dtype: object
+  MyText  MyInteger  MyFloat  MyBool  MyExit
+0    Joe         12      3.4    True    True
+1   Jane          3      4.0   False   False
+2   Mary          7      2.3   False   False
