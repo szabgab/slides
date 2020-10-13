@@ -126,11 +126,18 @@ This latter is what we can see in our example.
 ![](examples/pandas/planets_filter_rows_by_size.py)
 ![](examples/pandas/planets_filter_rows_by_size.out)
 
-## DataFrame filter columns by name
-{id: pandas-planets-filter-columns-by-name}
+## DataFrame filter rows by value
+{id: pandas-planets-filter-rows-by-value}
 
-![](examples/pandas/planets_filter_cols_by_name.py)
-![](examples/pandas/planets_filter_cols_by_name.out)
+![](examples/pandas/planets_filter_row_by_value.py)
+![](examples/pandas/planets_filter_row_by_value.out)
+
+
+## DataFrame filter rows by value in list
+{id: pandas-planets-filter-rows-by-value-in-list}
+
+![](examples/pandas/planets_filter_row_by_value_in_list.py)
+![](examples/pandas/planets_filter_row_by_value_in_list.out)
 
 ## DataFrame filter elementwise boolean and
 {id: pandas-planets-filter-elementwise-boolean-and}
