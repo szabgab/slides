@@ -49,7 +49,7 @@
 {id: pandas-read-csv-various-datatypes}
 
 {aside}
-Example with a few more column-types (e.g. bool)
+Example with a few more column-types (e.g. the column with the title MyBool contains True and False values and it is recognized as bool)
 {/aside}
 
 ![](examples/pandas/mixed.csv)
