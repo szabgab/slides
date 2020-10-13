@@ -118,18 +118,6 @@ jupyter notebook
 
 * `load_image_using_opencv`
 
-## Jupyter examples
-{id: jupyter-examples}
-
-* `generate.ipynb` Generate a single Pandas DataFrame
-* `markdow.ipynb`
-* `salary_generate.ipynb`
-* `salary.ipynb`
-* `temperatures.ipynb`
-* `weather.ipynb`
-* `numpy_matrix.ipynb`
-* `seaborn_tips.ipynb`
-
 ## IPy Widgets
 {id: ipywidgets}
 {i: ipywidgets}
@@ -145,4 +133,17 @@ jupyter notebook
 ```
 jupyter notebook genes.ipynb
 ```
+
+## More Jupyter examples
+{id: jupyter-examples}
+
+* `generate.ipynb` Generate a single Pandas DataFrame
+* `markdow.ipynb`
+* `salary_generate.ipynb`
+* `salary.ipynb`
+* `temperatures.ipynb`
+* `weather.ipynb`
+* `numpy_matrix.ipynb`
+* `seaborn_tips.ipynb`
+
 
