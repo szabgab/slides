@@ -45,6 +45,16 @@
 
 ![](examples/pandas/dataframe_stats.out)
 
+## Read CSV various datatypes
+{id: pandas-read-csv-various-datatypes}
+
+![](examples/pandas/mixed.csv)
+
+![](examples/pandas/mixed.py)
+
+![](examples/pandas/mixed.out)
+
+
 ## Planets - Show first and last rows
 {id: pandas-planets-show-first-and-last-rows}
 {i: head}
