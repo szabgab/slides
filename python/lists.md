@@ -1,5 +1,5 @@
 # Lists
-{id: python-lists}
+{id: lists}
 
 ## Anything can be a list
 {id: any-lists}
@@ -29,8 +29,8 @@
 ![](examples/lists/any_list2.out)
 
 
-## Lists
-{id: lists}
+## Access elements of a list
+{id: access-elements-of-lists}
 {i: []}
 {i: len}
 
@@ -225,11 +225,13 @@ To remove an element by its index, use the slice syntax:
 
 ![](examples/lists/queue_with_deque.py)
 
+![](examples/lists/queue_with_deque.out)
+
 * .append
 * .popleft
 * len()  number of elements
 * if q:  to see if it has elements or if it is empty
-* [dequeue](https://docs.python.org/3/library/collections.html#collections.deque)
+* [dequeue](https://docs.python.org/library/collections.html#collections.deque)
 
 
 
@@ -241,6 +243,7 @@ To remove an element by its index, use the slice syntax:
 
 ## List as a stack
 {id: list-as-a-stack}
+
 ![](examples/lists/stack.py)
 ![](examples/lists/stack.out)
 
@@ -266,20 +269,29 @@ To remove an element by its index, use the slice syntax:
 
 
 ```
-: Foo
-: Bar
-: Moo
+$ python queue_of_people.py
+
+: Joe
+: Jane
+: Mary
+: s
+  3
 : n
-  next is Foo
+  next is Joe
 : n
-  next is Bar
+  next is Jane
 : Peter
 : n
-  next is Moo
+  next is Mary
 : n
   next is Peter
 : n
   the queue is empty
+: Bar
+: Tal
+: x
+  Left in the queue: Bar, Tal
+$
 ```
 
 

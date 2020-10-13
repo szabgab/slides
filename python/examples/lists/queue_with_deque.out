@@ -1,0 +1,12 @@
+<class 'collections.deque'>
+deque([])
+0
+deque(['Apple'])
+1
+deque(['Apple', 'Banana', 'Peach'])
+3
+Apple
+deque(['Banana', 'Peach'])
+2
+The queue has items
+The queue is empty

@@ -1,25 +1,36 @@
 from collections import deque
 
-# items = deque([])
-items = deque(['foo', 'bar'])
+fruits = deque()
 
-print(type(items))  # <type 'collections.deque'>
-print(items)        # deque(['foo', 'bar'])
+print(type(fruits))  # <type 'collections.deque'>
+print(fruits)        # deque([])
+print(len(fruits))   # 0
 
-items.append('zorg')
-print(items)        # deque(['foo', 'bar', 'zorg'])
-print(len(items))   # 3
+fruits.append('Apple')
+print(fruits)        # deque(['Apple'])
+print(len(fruits))   # 1
 
-items.append('zorg')
-print(items)        # deque(['foo', 'bar', 'zorg', 'zorg'])
+fruits.append('Banana')
+fruits.append('Peach')
+print(fruits)        # deque(['Apple', 'Banane', 'Peach'])
+print(len(fruits))   # 3
 
-nxt = items.popleft()
-print(nxt)          # 'foo'
-print(items)        # deque(['bar', 'zorg', 'zorg'])
+nxt = fruits.popleft()
+print(nxt)           # 'Apple'
+print(fruits)        # deque(['Banana', 'Peach'])
+print(len(fruits))   # 2
 
-print(len(items))   # 3
-
-if items:
+if fruits:
     print("The queue has items")
 else:
     print("The queue is empty")
+
+nxt = fruits.popleft()
+nxt = fruits.popleft()
+
+if fruits:
+    print("The queue has items")
+else:
+    print("The queue is empty")
+
+
