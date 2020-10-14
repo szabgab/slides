@@ -1,8 +1,9 @@
 from flask import Flask, request, render_template
 import redis
+
 app = Flask(__name__)
 
-red = redis.Redis(host='my-redis', port=6379, db=0)
+red = redis.Redis(host='redis', port=6379, db=0)
 
 @app.route("/")
 def main():

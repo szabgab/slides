@@ -7,7 +7,7 @@ app = Flask(__name__)
 config = {
     "username": "root",
     "password": "Secret",
-    "server": "my-mongo",
+    "server": "mongo",
 }
 
 connector = "mongodb://{}:{}@{}".format(config["username"], config["password"], config["server"])
