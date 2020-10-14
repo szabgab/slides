@@ -1,4 +1,4 @@
-version: '3.7'
+version: '3.8'
 services:
   web:
     build: .
@@ -13,5 +13,3 @@ services:
     environment:
       MONGO_INITDB_ROOT_USERNAME: root
       MONGO_INITDB_ROOT_PASSWORD: Secret
-
-
