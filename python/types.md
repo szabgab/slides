@@ -3,6 +3,7 @@
 
 ## mypy
 {id: mypy}
+{i: mypy}
 
 * [mypy](http://mypy-lang.org/)
 * [Type Checking](https://realpython.com/python-type-checking/)
@@ -31,6 +32,19 @@ pip install mypy
 ![](examples/types/function.py)
 ![](examples/types/function.out)
 ![](examples/types/function.mypy)
+
+
+## Types function returns None or bool
+{id: mypy-to-check-function-returns}
+
+{aside}
+-> bool means the function returns a boolean. Either True or False.
+
+-> None means the function returns None. Explicitely, or implicitely.
+{/aside}
+
+![](examples/types/function_bool.py)
+![](examples/types/function_bool.out)
 
 ## Types used properly
 {id: types-used-properly}
