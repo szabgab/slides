@@ -1,9 +1,17 @@
+<h1>Flask + Redis</h1>
+
+<div>
+<a href="/">home</a> <a href="/keys">keys</a>
+</div>
+
+Type in a key and a value and save it to Redis.
 <form action="/save" method="POST">
 <input name="field">
 <input name="value">
 <input type="submit" value="Save">
 </form>
 
+Type in a key and fetch the value from Redis.
 <form action="/get" method="POST">
 <input name="field">
 <input type="submit" value="Get">
@@ -11,10 +19,20 @@
 
 {% if saved %}
 <b>saved</b>
-{{ value }}
+{{ value.decode('utf8') }}
 {% endif %}
 
 {% if field %}
   The value of <b>{{ field }}</b> is <b>{{ value }}</b>
+{% endif %}
+
+
+{% if fields %}
+  <h2>Keys</h2>
+  <ul>
+  {% for field in fields %}
+     <li>{{ field.decode('utf8') }}</li>
+  {% endfor %}
+  </ul>
 {% endif %}
 

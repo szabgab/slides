@@ -26,7 +26,7 @@ $ docker run --rm mydocker https://httpbin.org/get
 * [https://httpbin.org/](https://httpbin.org/)
 
 {aside}
-This is a simple implementation of a curl-like script in Python. Wrapped in a Docker container. Firs build the container and then you can run the script.
+This is a simple implementation of a curl-like script in Python. Wrapped in a Docker container. First build the container and then you can run the script.
 {/aside}
 
 
@@ -91,16 +91,6 @@ $ docker run -it --name dev --rm -p5001:5000 -v $(pwd):/opt/  mydocker
 
 ![](examples/flask-uwsgi/uwsgi.ini)
 
-## Docker: Flask + uwsgi + nginx
-{id: flask-uwsgi-nginx}
-
-Using [https://hub.docker.com/r/tiangolo/uwsgi-nginx-flask/](https://hub.docker.com/r/tiangolo/uwsgi-nginx-flask/)
-
-```
-docker build -t myapp .
-docker run -it --rm -p5001:80 myapp
-```
-
 ## Flask with Redis
 {id: flask-with-redis}
 
@@ -131,6 +121,14 @@ docker-compose up
 ![](examples/flask-mongodb/app.py)
 ![](examples/flask-mongodb/templates/main.html)
 ![](examples/flask-mongodb/requirements.txt)
+
+## Docker Compose Python Flask and MongoDB
+{id: docker-compose-python-flask-mongodb}
+
+```
+pip install docker-compose
+```
+
 ![](examples/flask-mongodb/Dockerfile)
 ![](examples/flask-mongodb/docker-compose.yml)
 
@@ -174,4 +172,14 @@ docker-compose up
 ```
 
 and then check the pulsar.log file
+
+## Docker: Flask + uwsgi + nginx
+{id: flask-uwsgi-nginx}
+
+Using [https://hub.docker.com/r/tiangolo/uwsgi-nginx-flask/](https://hub.docker.com/r/tiangolo/uwsgi-nginx-flask/)
+
+```
+docker build -t myapp .
+docker run -it --rm -p5001:80 myapp
+```
 

@@ -9,6 +9,6 @@ services:
     links:
     - redis
   redis:
-    image: redis:5.0.5
+    image: redis:6.0.8
     container_name: my-redis
 
