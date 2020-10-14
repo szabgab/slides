@@ -4,6 +4,7 @@ COPY requirements.txt /opt/
 RUN pip3 install -r /opt/requirements.txt
 
 WORKDIR /opt
+#COPY . .
 
 ENV FLASK_APP=app
 ENV FLASK_DEBUG=1
