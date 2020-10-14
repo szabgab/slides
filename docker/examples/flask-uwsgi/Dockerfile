@@ -1,11 +1,13 @@
 FROM ubuntu:20.04
-RUN apt-get update                          && \
-    apt-get upgrade -y                      && \
-    apt-get install -y python3              && \
-    apt-get install -y uwsgi                && \
-    apt-get install -y uwsgi-plugin-python3
+RUN apt-get update                           && \
+    apt-get upgrade -y                       && \
+    apt-get install -y python3               && \
+    apt-get install -y python3-pip           && \
+    DEBIAN_FRONTEND="noninteractive"   apt-get install -y uwsgi                && \
+    apt-get install -y uwsgi-plugin-python3  && \
+    echo done
 
-RUN apt-get install -y python3-pip
+# The DEBIAN_FRONTEND config needed for tzdata installation
 
 COPY requirements.txt .
 RUN pip3 install -r requirements.txt
