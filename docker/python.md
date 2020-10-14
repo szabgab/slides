@@ -135,6 +135,8 @@ docker-compose up
 pip install docker-compose
 ```
 
+* [mongo](https://hub.docker.com/_/mongo)
+
 ![](examples/flask-mongodb/Dockerfile)
 ![](examples/flask-mongodb/docker-compose.yml)
 

@@ -13,3 +13,9 @@ services:
     environment:
       MONGO_INITDB_ROOT_USERNAME: root
       MONGO_INITDB_ROOT_PASSWORD: Secret
+    volumes:
+      - mongo-data:/data/db
+      - mongo-configdb:/data/configdb
+volumes:
+  mongo-data:
+  mongo-configdb:
