@@ -119,8 +119,14 @@ docker-compose up
 {id: python-flask-mongodb}
 
 ![](examples/flask-mongodb/app.py)
-![](examples/flask-mongodb/templates/main.html)
 ![](examples/flask-mongodb/requirements.txt)
+
+![](examples/flask-mongodb/templates/main.html)
+![](examples/flask-mongodb/templates/list.html)
+![](examples/flask-mongodb/templates/person.html)
+![](examples/flask-mongodb/templates/404.html)
+![](examples/flask-mongodb/templates/incl/header.html)
+![](examples/flask-mongodb/templates/incl/footer.html)
 
 ## Docker Compose Python Flask and MongoDB
 {id: docker-compose-python-flask-mongodb}

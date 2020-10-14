@@ -1,20 +1,25 @@
+{% include 'incl/header.html' %}
+
+<h2>Add a person</h2>
 <form action="/save" method="POST">
-<input name="field">
-<input name="value">
+  <table>
+    <tr><td>Name: </td><td><input name="name"></td></tr>
+    <tr><td>Email: </td><td><input name="email"></td></tr>
+    <tr><td>ID: </td><td><input name="idnum"></td></tr>
+  </table>
 <input type="submit" value="Save">
 </form>
 
+<h2>List people by name</h2>
 <form action="/get" method="POST">
-<input name="field">
+Name: <input name="name">
 <input type="submit" value="Get">
 </form>
 
-{% if saved %}
-<b>saved</b>
-{{ value }}
+{% if error %}
+<div style="color:red;">
+  {{ error }}
+</div>
 {% endif %}
 
-{% if field %}
-  The value of <b>{{ field }}</b> is <b>{{ value }}</b>
-{% endif %}
-
+{% include 'incl/footer.html' %}
