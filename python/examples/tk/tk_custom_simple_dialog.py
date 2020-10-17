@@ -14,7 +14,7 @@ class MyDialog(tk.simpledialog.Dialog):
         self.my_username_box = tk.Entry(frame, width=25)
         self.my_username_box.pack()
 
-        self.my_password_label = tk.Label(frame, width=25, text="Passworde")
+        self.my_password_label = tk.Label(frame, width=25, text="Password")
         self.my_password_label.pack()
         self.my_password_box = tk.Entry(frame, width=25)
         self.my_password_box.pack()
