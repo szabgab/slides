@@ -237,8 +237,14 @@ First we are going to see small examples with each one of these Widgets. Then we
 {id: tk-dialogs}
 
 * [Dialogs](https://docs.python.org/library/dialog.html)
+* Simple dialogs
 * Filedialogs
 * Message boxes
+
+## Python Tk simple dialog to get a single string, int, or float
+{id: tk-simpledialog}
+
+![](examples/tk/tk_simple_dialog.py)
 
 
 ## Python Tk Filedialog
