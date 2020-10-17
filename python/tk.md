@@ -275,6 +275,12 @@ First we are going to see small examples with each one of these Widgets. Then we
 
 * [Tk messagebox](https://docs.python.org/library/tkinter.messagebox.html)
 
+## Python Tk - custom simple dialog with its own widgets and buttons
+{id: tk-customized-simple-dialog}
+
+![](examples/tk/tk_custom_simple_dialog.py)
+
+
 
 ## Python Tk Combobox
 {id: tk-combobox}
