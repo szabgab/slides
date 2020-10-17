@@ -463,6 +463,17 @@ Then copy the old file to the new name.
 
 Create an application that we can use to play [Master Mind](https://en.wikipedia.org/wiki/Mastermind_(board_game))
 
+## Exercise: Tk - a GUI for a grep-like application
+{id: exercise-tk-grep}
+
+The GUI should accept:
+
+* A filename, a wilde-card expression, maybe a dirctory name (and then a flag to recurse or not).
+* A regular expression.
+* Various flags for regex.
+
+* Then it should display the lines that match the expression in the selected files.
+
 ## Solution: Tk - Calculator one line
 {id: solution-tk-calcilator-one-line}
 {i: Entry}
