@@ -117,7 +117,7 @@
 
 ![](examples/tk/dialog.pl)
 
-## Perl Tk DialogBox
+## Perl Tk DialogBox with custom buttons and widgets
 {id: tk-dialogbox}
 
 ![](examples/tk/dialog_box.pl)
