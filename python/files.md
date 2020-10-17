@@ -387,6 +387,14 @@ Level 7
 ![](examples/files/combine_lists.py)
 
 
+## Solution: Combine lists with tuple
+{id: solution-combine-lists-with-tuple}
+{i: zip}
+{i: tuple}
+
+![](examples/files/combine_lists_tuple.py)
+
+
 ## Filehandle using with and not using it
 {id: filehandle-with-and-without}
 {i: open}
