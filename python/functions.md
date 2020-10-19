@@ -405,8 +405,12 @@ to a function.
 
 ![](examples/functions/tower_recursive.py)
 
-## Solution: Merge  and Bubble sort
+## Solution: Merge and Bubble sort
 {id: solution-bubble-sort}
 
 ![](examples/functions/bubble_sort.py)
+
+![](examples/functions/iterative_bubble_sort.py)
+
+![](examples/functions/recursive_bubble_sort.py)
 
