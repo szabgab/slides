@@ -260,6 +260,21 @@ Write script that gets a string on the command line and prints out the ascii cod
 
 Write script called **ascii_to_char.py** that accepts a number on the command line and prints the character represented by that number.
 
+## Exercise: ROT13
+{id: exercise-rot13}
+{i: rot13}
+
+* Implement [ROT13](https://en.wikipedia.org/wiki/ROT13):
+* Create a script called **rot13.py** that given a string on the command line will print the ROT13 version of the string.
+* It should work like this:
+
+```
+$ python rot13.py "Hello world!"
+Uryyb Jbeyq!
+
+$ python rot13.py "Uryyb Jbeyq!"
+Hello world!
+```
 
 ## Solution: one string in another string
 {id: solution-one-string-in-another-string}
@@ -270,7 +285,6 @@ Write script called **ascii_to_char.py** that accepts a number on the command li
 {id: solution-compare-string}
 
 ![](examples/strings/compare_strings.py)
-
 
 ## Solution: to ASCII CLI
 {id: solution-to-ascii-cli}
@@ -283,4 +297,16 @@ Write script called **ascii_to_char.py** that accepts a number on the command li
 {id: solution-from-ascii-cli}
 
 ![](examples/strings/from_ascii.py)
+
+## Solution: ROT13
+{id: solution-rot13}
+{i: rot13}
+{i: codecs}
+{i: encoding}
+
+![](examples/strings/rot13.py)
+
+* [codecs library](https://docs.python.org/library/codecs.html)
+
+![](examples/strings/rot13_codecs.py)
 
