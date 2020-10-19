@@ -368,8 +368,8 @@ Level 7
 
 ![](examples/files/colors.py)
 
-## Exercise: ROT13
-{id: exercise-rot13-files}
+## Solution: ROT13
+{id: solution-rot13-files}
 {i: rot13}
 
 ![](examples/files/rot13_file.py)
