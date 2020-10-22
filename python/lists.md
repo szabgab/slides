@@ -680,7 +680,9 @@ True
 * Given a sequence like **'ACCGXXCXXGTTACTGGGCXTTGTXX'** (nucleotides mixed up with other elements)
 * First return the sequences containing only ACTG. The above string can will be changed to **['ACCG', 'C', 'GTTACTGGGC', 'TTGT']**.
 * Then sort them by lenght. Expected result: **['GTTACTGGGC', 'ACCG', 'TTGT', 'C']**
-* What if the original string contains more than on type of foreing elements? e.g. **'ACCGXXCXXYYGTTQRACQQTGGGCXTTGTXX'**. Can you do the same?
+
+* What if the original string contains more than on type of foreing elements? e.g. **'ACCGXXTXXYYGTTQRACQQTGGGCXTTGTXX'**. Can you do the same?
+* Expected output: **['TGGGC', 'ACCG', 'TTGT', 'GTT', 'AC', 'T']**
 
 
 ## Solution: menu
@@ -748,6 +750,20 @@ First we have to decide where are we going to store the counts. A 10 element lon
 
 ![](examples/lists/dna_sequencing.py)
 
+## Solution: DNA sequencing other
+{id: solution-dna-sequencing-using-regex}
+
+![](examples/lists/dna_sequencing_other.py)
+
+## Solution: DNA sequencing using replace
+{id: solution-dna-sequencing-using-replace}
+
+![](examples/lists/dna_sequencing_replace.py)
+
+## Solution: DNA sequencing using regex
+{id: solution-dna-sequencing-using-regex}
+
+![](examples/lists/dna_sequencing_regex.py)
 
 ## Solution: DNA sequencing with filter
 {id: solution-dna-sequencing-filter}
