@@ -751,7 +751,7 @@ First we have to decide where are we going to store the counts. A 10 element lon
 ![](examples/lists/dna_sequencing.py)
 
 ## Solution: DNA sequencing other
-{id: solution-dna-sequencing-using-regex}
+{id: solution-dna-sequencing-using-other}
 
 ![](examples/lists/dna_sequencing_other.py)
 
