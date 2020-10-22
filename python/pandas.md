@@ -100,7 +100,7 @@ This latter is what we can see in our example.
 ![](examples/pandas/multivalue.out)
 
 ## Pandas split multivalue column into separate columns - get_dummies
-{id: pandas-split-multivalue-column}
+{id: pandas-split-multivalue-column-get-dummies}
 {i: get_dummies}
 
 ![](examples/pandas/multivalue_get_dummies.py)
