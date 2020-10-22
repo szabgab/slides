@@ -97,6 +97,16 @@ This latter is what we can see in our example.
 
 ![](examples/pandas/multivalue.py)
 
+![](examples/pandas/multivalue.out)
+
+## Pandas split multivalue column into separate columns - get_dummies
+{id: pandas-split-multivalue-column}
+{i: get_dummies}
+
+![](examples/pandas/multivalue_get_dummies.py)
+
+![](examples/pandas/multivalue_get_dummies.out)
+
 
 ## Planets - Show first and last rows
 {id: pandas-planets-show-first-and-last-rows}
