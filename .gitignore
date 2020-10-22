@@ -40,3 +40,7 @@ docker/examples/crontab/dates.txt
 docker/examples/crontab2/dates.txt
 *.class
 python/out.txt
+
+r/.RData
+r/.Rhistory
+

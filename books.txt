@@ -36,6 +36,7 @@ php/php.json,php
 programming/programming.json,programming
 python-mocking/python.json,python-mocking
 python/python.json,python
+r/r.json,r
 raku/raku.json,raku
 ruby/ruby.json,ruby
 scratch/scratch.json,scratch
