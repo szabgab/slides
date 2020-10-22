@@ -71,22 +71,21 @@ Dialects of CSV files. See also:
 [csv](http://docs.python.org/library/csv.html)
 
 
-## Exercise: CSV
+## Exercise: CSV as dictionary of dictionaries
 {id: exercise-csv}
 
-Given the CSV file of Monty Python troupe, create a dictionary where we can look up information
-about them based on the first name. For example:
+Create a script called **monty_python_dictionary_of_dictionaries.py** that given a file like the CSV file of Monty Python troupe (examples/csv/monty_python.csv),
+will create a dictionary where we can look up information about them based on the first name. For example:
 
-```
-people = read_csv_file()
-print(people["Graham"]["lname"])  # Champman
-print(people["John"]["born"])     # 27 October 1939
-print(people["Michael"])
-     # {'lname': 'Palin', 'born': '5 May 1943', 'fname': 'Michael'}
-print(people["Terry"]["lname"])  # Gilliam
-```
+![](examples/csv/read_mp_dictionary_skeleton.py)
 
-For extra bonus create another dictionary where we can look up the information based on their fname and lname.
+## Exercise: CSV as dictionary of tuples of dictionaries
+{id: exercise-csv-tuples}
+
+Create a script called **monty_python_dictionary_of_tuples.py** that given a file like the CSV file of Monty Python troupe (examples/csv/monty_python.csv),
+will create a dictionary where we can look up information about them based on the first name and last name. For example:
+
+![](examples/csv/read_mp_tuple_skeleton.py)
 
 ## Exercise: count row length in csv files
 {id: exercise-count-row-length-in-csv-files}
@@ -98,5 +97,13 @@ For extra bonus create another dictionary where we can look up the information b
 ## Solution: CSV
 {id: solution-csv}
 
-![](examples/csv/read_mp.py)
+![](examples/csv/read_mp_dictionary.py)
+
+## Solution: CSV as dictionary of tuples of dictionaries
+{id: solution-csv-tuples}
+
+Create a script called **monty_python_dictionary_of_tuples.py** that given a file like the CSV file of Monty Python troupe (examples/csv/monty_python.csv),
+will create a dictionary where we can look up information about them based on the first name and last name. For example:
+
+![](examples/csv/read_mp_tuple.py)
 
