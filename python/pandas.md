@@ -89,6 +89,15 @@ This latter is what we can see in our example.
 
 ![](examples/pandas/mixed_convert_values.out)
 
+
+## Pandas split multivalue column into separate columns
+{id: pandas-split-multivalue-column}
+
+![](examples/pandas/multivalue.csv)
+
+![](examples/pandas/multivalue.py)
+
+
 ## Planets - Show first and last rows
 {id: pandas-planets-show-first-and-last-rows}
 {i: head}
