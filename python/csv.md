@@ -90,8 +90,9 @@ will create a dictionary where we can look up information about them based on th
 ## Exercise: count row length in csv files
 {id: exercise-count-row-length-in-csv-files}
 
-* Write a script that given a CSV file will tell if all the rows have the same length or if some of them are different.
+* Write a script called **csv_column_count.py** that given a CSV file will tell if all the rows have the same length or if some of them are different.
 * Show which ones are different.
+* Try it on `examples/csv/plain.csv` and on `examples/csv/uneven.csv`
 
 
 ## Solution: CSV
@@ -106,4 +107,10 @@ Create a script called **monty_python_dictionary_of_tuples.py** that given a fil
 will create a dictionary where we can look up information about them based on the first name and last name. For example:
 
 ![](examples/csv/read_mp_tuple.py)
+
+## Solution: count row length in csv files
+{id: solution-count-row-length-in-csv-files}
+
+![](examples/csv/count_csv_rows.py)
+
 
