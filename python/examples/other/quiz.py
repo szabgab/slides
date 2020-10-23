@@ -6,12 +6,13 @@ ff = ["F", "f", "False", "FALSE", "false", "0"]
 good = ["Good job!", "Correct answer!", "You're a smartie.", "Nice!", "You're the next Bill Gates.", "You're the best programmer ever!", "On a scale of 1 to 10, you're an 11!"]
 bad = ["Nope.", "Wrong answer.", "You should listen to the video again.", "Did you listen to the videos double speed? Bad idea.", "Seriosly?", "Where did you get that idea?"]
 
-def runchap(questions, answers):
+def runchap(chapter):
     """
     q; list of questions
     a: list of answers
     here is what it does
     """
+    questions, answers = chapter["q"], chapter["a"]
     counter=0
     for i, quest in enumerate(questions):
         print("\nQuestion {}".format(i+1))
@@ -120,7 +121,7 @@ while True:
         break
     elif chapter in content.keys():
         print("Selected chapter: " + chapter)
-        runchap(content[chapter]["q"], content[chapter]["a"])
+        runchap(content[chapter])
         continue
     else:
         print("wrong, choose only from ", [key for key in content.keys()]+["x"])
