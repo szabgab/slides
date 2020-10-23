@@ -12,7 +12,7 @@ def runchap(questions, answers):
 	a: list of answers
 	here is what it does
 	"""
-	counter=0	
+	counter=0
 	for i, quest in enumerate(questions):
 		print("\nQuestion {}".format(i+1))
 		inp = input(quest)
@@ -21,15 +21,15 @@ def runchap(questions, answers):
 			print(random.choice(good))
 		else:
 			print(random.choice(bad))
-	
-	print("You gave " + str(counter) + " correct answers out of 3")	
+
+	print("You gave " + str(counter) + " correct answers out of 3")
 
 ### define questions and answers as dictionary
 import json
 content = {
 "1":{
 	"title": "First steps",
-	"q":['What is the output of the following code?\na = "19"\nb = "23"\nc = a + b\n', 
+	"q":['What is the output of the following code?\na = "19"\nb = "23"\nc = a + b\n',
 					'What is the output of the following code?\na = 19\nb = 23\nc = a + b\n',
 					'How many of the following statements are correct?\n23 is an int\n"word" is a str\nNone is a bool\n'],
 	"a": [["1923"], ["42"], ["2"]]},
@@ -105,7 +105,7 @@ content = {
 
 # with open('content.txt', 'w') as outfile:
 # 	json.dump(content, outfile)
-	
+
 # with open('content.txt') as json_file:
 # 	content = json.load(json_file)
 
@@ -121,7 +121,7 @@ while True:
 	elif chapter in content.keys():
 		print("Selected chapter: " + chapter)
 		runchap(content[chapter]["q"], content[chapter]["a"])
-		continue			
+		continue
 	else:
 		print("wrong, choose only from ", [key for key in content.keys()]+["x"])
 
@@ -129,7 +129,7 @@ while True:
 #while True:
 #	chapter = input(" \n**********************************************************************************\nFrom which chapter do you want to be tested?\n1 First steps\n2 Second steps\n3 Numbers\n4 Comparision and boolean\n5 String\n6 Loop\n7 Formatted printing\n8 Lists\n9 Files\n10 Dictionary\n11 Set\n12 Functions\n13 Modules\n14 Regex\n15 Python standard modules\n16 Testing\n17 Python for science\n18 GUI\nIf you want to exit, press'x'.\nSelect a number: ")
 #	if chapter == "1":
-#		questions = ['What is the output of the following code?\na = "19"\nb = "23"\nc = a + b\n', 
+#		questions = ['What is the output of the following code?\na = "19"\nb = "23"\nc = a + b\n',
 #					'What is the output of the following code?\na = 19\nb = 23\nc = a + b\n',
 #					'How many of the following statements are correct?\n23 is an int\n"word" is a str\nNone is a bool\n']
 #		answers = [["1923"], ["42"], ["2"]]
@@ -138,6 +138,6 @@ while True:
 #		continue
 #	elif chapter=="x":
 #		break
-#		
+#
 #	else:
 #		print("wrong")
