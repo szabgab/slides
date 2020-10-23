@@ -72,7 +72,7 @@ Dialects of CSV files. See also:
 
 
 ## Exercise: CSV as dictionary of dictionaries
-{id: exercise-csv}
+{id: exercise-csv-dictionary}
 
 Create a script called **monty_python_dictionary_of_dictionaries.py** that given a file like the CSV file of Monty Python troupe (examples/csv/monty_python.csv),
 will create a dictionary where we can look up information about them based on the first name. For example:
@@ -95,8 +95,8 @@ will create a dictionary where we can look up information about them based on th
 * Try it on `examples/csv/plain.csv` and on `examples/csv/uneven.csv`
 
 
-## Solution: CSV
-{id: solution-csv}
+## Solution:  CSV as dictionary of dictionaries
+{id: solution-csv-dictionary}
 
 ![](examples/csv/read_mp_dictionary.py)
 
