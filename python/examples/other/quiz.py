@@ -150,19 +150,3 @@ while True:
     else:
         print("wrong, choose only from ", [key for key in content.keys()]+["x"])
 
-## old
-#while True:
-#    chapter = input(" \n**********************************************************************************\nFrom which chapter do you want to be tested?\n1 First steps\n2 Second steps\n3 Numbers\n4 Comparision and boolean\n5 String\n6 Loop\n7 Formatted printing\n8 Lists\n9 Files\n10 Dictionary\n11 Set\n12 Functions\n13 Modules\n14 Regex\n15 Python standard modules\n16 Testing\n17 Python for science\n18 GUI\nIf you want to exit, press'x'.\nSelect a number: ")
-#    if chapter == "1":
-#        questions = ['What is the output of the following code?\na = "19"\nb = "23"\nc = a + b\n',
-#                    'What is the output of the following code?\na = 19\nb = 23\nc = a + b\n',
-#                    'How many of the following statements are correct?\n23 is an int\n"word" is a str\nNone is a bool\n']
-#        answers = [["1923"], ["42"], ["2"]]
-#        print("Selected chapter: " + chapter)
-#        runchap(questions, answers)
-#        continue
-#    elif chapter=="x":
-#        break
-#
-#    else:
-#        print("wrong")
