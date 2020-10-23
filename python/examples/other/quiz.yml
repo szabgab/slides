@@ -1,0 +1,426 @@
+bad:
+- Nope.
+- Wrong answer.
+- You should listen to the video again.
+- Did you listen to the videos double speed? Bad idea.
+- Seriosly?
+- Where did you get that idea?
+chapters:
+- quiz:
+  - a:
+    - '1923'
+    q: 'What is the output of the following code?
+
+      a = "19"
+
+      b = "23"
+
+      c = a + b
+
+      '
+  - a:
+    - '42'
+    q: 'What is the output of the following code?
+
+      a = 19
+
+      b = 23
+
+      c = a + b
+
+      '
+  - a:
+    - '2'
+    q: 'How many of the following statements are correct?
+
+      23 is an int
+
+      "word" is a str
+
+      None is a bool
+
+      '
+  title: First steps
+- quiz:
+  - a: false
+    q: 'Is it true or false?
+
+      The recommendation for indentation is a tab.
+
+      T or F: '
+  - a:
+    - '2'
+    q: 'In which python version is the following code correct?
+
+      print "Foo", "Bar"
+
+      2 or 3: '
+  - a:
+    - def
+    q: 'Which word is used to implement a function?
+
+      fun
+
+      function
+
+      def
+
+      '
+  title: Second steps
+- quiz:
+  - a:
+    - '1'
+    q: 'What is the result of 10%3?
+
+      '
+  - a: false
+    q: 'Is it true or FALSE?
+
+      random.random generates a random number between 1 and 100.
+
+      T or F: '
+  - a:
+    - random.choice
+    q: 'Which of the following is used to sleect an element of a list?
+
+      random.choice
+
+      random.choose
+
+      random.select
+
+      '
+  title: Numbers
+- quiz:
+  - a: true
+    q: "True or False is:\n T/F: "
+  - a:
+    - '!='
+    q: 'Which of the following expresses not equal?
+
+      -=
+
+      !!
+
+      !=
+
+      n=
+
+      '
+  - a: false
+    q: 'Is it true or FALSE?
+
+      "2"<="11"
+
+      T or F: '
+  title: Comparision and boolean
+- quiz:
+  - a:
+    - abYd
+    q: 'What is the output of this code?
+
+      text = ''abcd''
+
+      text = text[:2] + ''Y'' + text[3:]
+
+      print(text)'')
+
+      '
+  - a:
+    - xyza
+    q: 'What is the output of this code?
+
+      a = ''xYzA''
+
+      print(a.lower())
+
+      '
+  - a:
+    - '0'
+    q: 'What is the output of this code?
+
+      text = "The black cat climbed the green tree."
+
+      print(text.index("The"))
+
+      '
+  title: String
+- quiz:
+  - a:
+    - '4'
+    q: 'How many numbers are included in range(3,7)?
+
+      '
+  - a: false
+    q: 'Is it true or FALSE?
+
+      break will stop your program no matter where you call it
+
+      T or F: '
+  - a: true
+    q: 'Is it true or FALSE?
+
+      continue will stop the current iteration of the current "while" or "for" loop
+
+      T or F: '
+  title: Loop
+- quiz:
+  - a: false
+    q: 'print({:>12}.format(txt)) will align to left
+
+      T/F: '
+  - a: true
+    q: 'print({:^12}.format(txt)) will align to the center
+
+      T/F: '
+  - a:
+    - x
+    q: 'What is formating command of hexadecimal type?
+
+      h/x/e: '
+  title: Formatted printing
+- quiz:
+  - a: true
+    q: 'Is it true or FALSE?
+
+      It is possible to have a list as an element of a list.
+
+      T or F: '
+  - a:
+    - last
+    q: 'Which element of a list would .pop() remove?
+
+      first/last: '
+  - a: false
+    q: 'Sorted mutates a string to its sorted version.
+
+      T/F: '
+  title: Lists
+- quiz:
+  - a:
+    - openpyxl
+    q: 'What is the name of the package that deals with excel files in python?
+
+      '
+  - a: false
+    q: 'line = line.rstrip("
+
+      ") will a new line at the end of each row
+
+      T/F: '
+  - a: false
+    q: 'It is not recommended to read a file using with
+
+      T/F: '
+  title: Files
+- quiz:
+  - a:
+    - a
+    q: 'If fname is a key in user dictionary, the code print(''fname'' in user) will
+      return
+
+      a True
+
+      b False
+
+      c the value that belongs to this key
+
+      a/b/c'
+  - a: false
+    q: 'Dictionary keys are returned in alphabetical order.
+
+      T/F: '
+  - a: true
+    q: 'Deleting a key also removes the connected value.
+
+      T/F: '
+  title: Dictionary
+- quiz:
+  - a: false
+    q: 'Set operations are used to change the settings of the computer.
+
+      T/F: '
+  - a:
+    - c
+    q: 'Which of the following is not a set operation?
+
+      a union
+
+      b intersection
+
+      c sum
+
+      a/b/c: '
+  - a:
+    - c
+    q: 'Which of the following is the parenthesis used to define sets?
+
+      a ()
+
+      b {}
+
+      c ([])
+
+      a/b/c: '
+  title: Set
+- quiz:
+  - a:
+    - '6'
+    q: 'def add(x, y):
+
+      z = x * y
+
+      return z
+
+      a = add(2, 3)
+
+      print(a)
+
+      What is the output of the above code?
+
+      '
+  - a: false
+    q: 'def mysum(*numbers):
+
+      The star denotes that the function can receive any number or character to be
+      executed on.
+
+      T/F: '
+  - a: true
+    q: 'Function documentation should be included in three pairs of double parenthesis.
+
+      T/F: '
+  title: Functions
+- quiz:
+  - a:
+    - import
+    q: 'Which command is used to add a module to use?
+
+      add
+
+      load
+
+      import
+
+      '
+  - a:
+    - path
+    q: 'Which is not used to search and specify module path?
+
+      os
+
+      sys
+
+      path
+
+      '
+  - a: true
+    q: 'If you import a function in duplicate, from different modules, python will
+      use the one imported first.
+
+      T/F: '
+  title: Modules
+- quiz:
+  - a: false
+    q: 'Regular expressions are only used in python programming language.
+
+      T/F: '
+  - a:
+    - grep
+    q: 'Which command returns lines that have the specified string in them?
+
+      catch
+
+      grep
+
+      find
+
+      '
+  - a:
+    - a
+    q: '\d matches
+
+      a a digit
+
+      b a number
+
+      c a line
+
+      a/b/c: '
+  title: Regex
+- quiz:
+  - a:
+    - re
+    q: 'Which standard package deals with regular expression?
+
+      '
+  - a:
+    - b
+    q: "To wait until a defined amount of time passes, you should use\na time.pass\n\
+      btime.sleep\nc time.time\n a/b/c: "
+  - a:
+    - glob
+    q: 'Which module can you use to list files with a given extension?
+
+      '
+  title: Python standard modules
+- quiz:
+  - a: false
+    q: 'With testing you can be sure that your code is bug-free./nT/F: '
+  - a:
+    - c
+    q: 'Which of the following is not a testing tool?
+
+      a doctest
+
+      b pytest\c codetest
+
+      a/b/c: '
+  - a:
+    - pytest
+    q: 'Which command runs unittest?
+
+      '
+  title: Testing
+- quiz:
+  - a:
+    - a
+    q: "Which of the following is used to handle n-dimensional arrays?\na NumPy\b\
+      \ BioPython\nc Keras\na/b/c: "
+  - a:
+    - b
+    q: "Which of the following is used to work with FASTA files?\na NumPy\b BioPython\n\
+      c Keras\na/b/c: "
+  - a: false
+    q: 'Matplotlib is a library in Matlab.
+
+      T/F: '
+  title: Python for science
+- quiz:
+  - a:
+    - b
+    q: "Which of the following is not a GUI toolkit?\na Tk\b Gkit\nc GTK\na/b/c: "
+  - a: false
+    q: 'You can pick multiple radio buttons at the same time.
+
+      T/F: '
+  - a:
+    - color
+    q: 'label.config(fg="#0000FF") defines the
+
+      size
+
+      color
+
+      position of the label.
+
+      '
+  title: GUI
+good:
+- Good job!
+- Correct answer!
+- You're a smartie.
+- Nice!
+- You're the next Bill Gates.
+- You're the best programmer ever!
+- On a scale of 1 to 10, you're an 11!
