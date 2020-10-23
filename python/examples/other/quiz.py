@@ -1,8 +1,10 @@
 import random
 # Originally Created by Anna Uzonyi as a project for the course
 
-tt = ["T", "t", "True", "TRUE", "true", "1"]
-ff = ["F", "f", "False", "FALSE", "false", "0"]
+true_values = ["T", "t", "True", "TRUE", "true", "1"]
+false_values = ["F", "f", "False", "FALSE", "false", "0"]
+tt = True
+ff = False
 good = ["Good job!", "Correct answer!", "You're a smartie.", "Nice!", "You're the next Bill Gates.", "You're the best programmer ever!", "On a scale of 1 to 10, you're an 11!"]
 bad = ["Nope.", "Wrong answer.", "You should listen to the video again.", "Did you listen to the videos double speed? Bad idea.", "Seriosly?", "Where did you get that idea?"]
 
@@ -17,7 +19,14 @@ def runchap(chapter):
     for i, quest in enumerate(questions):
         print("\nQuestion {}".format(i+1))
         inp = input(quest)
-        if inp in answers[i]:
+        ok = False
+        if answers[i] is True and inp in true_values:
+            ok = True
+        if answers[i] is False and inp in false_values:
+            ok = True
+        if answers[i] not in [True, False] and inp in answers[i]:
+            ok = True
+        if ok:
             counter+=1
             print(random.choice(good))
         else:
