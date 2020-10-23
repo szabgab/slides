@@ -1,11 +1,16 @@
 import random
+import yaml
+
 # Originally Created by Anna Uzonyi as a project for the course
 
 true_values = ["T", "t", "True", "TRUE", "true", "1"]
 false_values = ["F", "f", "False", "FALSE", "false", "0"]
+with open("quiz.yml") as fh:
+    data = yaml.load(fh, Loader=yaml.Loader)
+chapters = data['chapters']
+
 
 def runchap(chapter):
-    #questions, answers = chapter["q"], chapter["a"]
     quizzes = chapter["quiz"]
     counter=0
     for ix, quiz in enumerate(quizzes):
@@ -27,27 +32,22 @@ def runchap(chapter):
 
     print("You gave " + str(counter) + " correct answers out of 3")
 
-### define questions and answers as dictionary
+def main():
+    while True:
+        print(" \n**********************************************************************************")
+        print("From which chapter do you want to be tested?")
+        for idx, chapter in enumerate(chapters):
+            print(f"{idx+1} {chapter['title']}")
+        print("If you want to exit, press'x'.\nSelect a number: ")
+        chapter = input()
+        if chapter == "x":
+            break
+        elif chapter in list(map(str, range(len(chapters)))):
+            print("Selected chapter: " + chapter)
+            runchap(chapters[int(chapter)-1])
+            continue
+        else:
+            print("wrong, choose only from ", [key for key in content.keys()]+["x"])
 
-import yaml
+main()
 
-with open("quiz.yml") as fh:
-    data = yaml.load(fh, Loader=yaml.Loader)
-chapters = data['chapters']
-
-
-while True:
-    print(" \n**********************************************************************************")
-    print("From which chapter do you want to be tested?")
-    for idx, chapter in enumerate(chapters):
-        print(f"{idx+1} {chapter['title']}")
-    print("If you want to exit, press'x'.\nSelect a number: ")
-    chapter = input()
-    if chapter == "x":
-        break
-    elif chapter in list(map(str, range(len(chapters)))):
-        print("Selected chapter: " + chapter)
-        runchap(chapters[int(chapter)-1])
-        continue
-    else:
-        print("wrong, choose only from ", [key for key in content.keys()]+["x"])
