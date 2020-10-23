@@ -263,7 +263,7 @@ This does NOT work because files can only be accessed sequentially.
 
 ![](examples/files/numbers.txt)
 
-1. Given the file **examples/files/numbers.txt** (or a similar file), create a file called **count_digits.py** that will count how many times each digit appears? The output will look like this. Just different values.
+1. Given the file **examples/files/numbers.txt** (or a similar file), create a file called **count_digits_in_file.py** that will count how many times each digit appears? The output will look like this. Just different values.
 1. Save the results in a file called **report.txt**.
 
 
