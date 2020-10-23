@@ -42,12 +42,12 @@ def main():
         chapter = input()
         if chapter == "x":
             break
-        elif chapter in list(map(str, range(len(chapters)))):
+        elif chapter in list(map(str, range(1, len(chapters)+1))):
             print("Selected chapter: " + chapter)
             runchap(chapters[int(chapter)-1])
             continue
         else:
-            print("wrong, choose only from ", [key for key in content.keys()]+["x"])
+            print(f"wrong, choose only from 1-{len(chapters)} or x")
 
 main()
 
