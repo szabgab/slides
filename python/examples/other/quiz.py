@@ -1,4 +1,6 @@
 import random
+# Originally Created by Anna Uzonyi as a project for the course
+
 tt = ["T", "t", "True", "TRUE", "true", "1"]
 ff = ["F", "f", "False", "FALSE", "false", "0"]
 good = ["Good job!", "Correct answer!", "You're a smartie.", "Nice!", "You're the next Bill Gates.", "You're the best programmer ever!", "On a scale of 1 to 10, you're an 11!"]
