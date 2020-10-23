@@ -25,6 +25,7 @@
         "pycharm.md",
         "standard-modules.md",
         "json.md",
+        "yaml.md",
         "argparse.md",
         "exceptions.md",
         "classes.md",
