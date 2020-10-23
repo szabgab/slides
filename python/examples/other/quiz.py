@@ -9,22 +9,19 @@ good = ["Good job!", "Correct answer!", "You're a smartie.", "Nice!", "You're th
 bad = ["Nope.", "Wrong answer.", "You should listen to the video again.", "Did you listen to the videos double speed? Bad idea.", "Seriosly?", "Where did you get that idea?"]
 
 def runchap(chapter):
-    """
-    q; list of questions
-    a: list of answers
-    here is what it does
-    """
-    questions, answers = chapter["q"], chapter["a"]
+    #questions, answers = chapter["q"], chapter["a"]
+    quizzes = chapter["quiz"]
     counter=0
-    for i, quest in enumerate(questions):
-        print("\nQuestion {}".format(i+1))
-        inp = input(quest)
+    for ix, quiz in enumerate(quizzes):
+        print("\nQuestion {}".format(ix+1))
+        inp = input(quiz["q"])
+        answer = quiz["a"]
         ok = False
-        if answers[i] is True and inp in true_values:
+        if answer is True and inp in true_values:
             ok = True
-        if answers[i] is False and inp in false_values:
+        if answer is False and inp in false_values:
             ok = True
-        if answers[i] not in [True, False] and inp in answers[i]:
+        if answer not in [True, False] and inp in answer:
             ok = True
         if ok:
             counter+=1
@@ -111,6 +108,17 @@ content = {
     "title": "GUI",
     "q":["Which of the following is not a GUI toolkit?\na Tk\b Gkit\nc GTK\na/b/c: ", "You can pick multiple radio buttons at the same time.\nT/F: ", 'label.config(fg="#0000FF") defines the\nsize\ncolor\nposition of the label.\n'],
     "a":[["b"], ff, ["color"]]},}
+
+for idx in content.keys():
+    questions = content[idx].pop('q')
+    answers = content[idx].pop('a')
+    content[idx]["quiz"] = []
+    for q, a in zip(questions, answers):
+        content[idx]["quiz"].append({
+            "q": q,
+            "a": a,
+        })
+
 
 
 # with open('content.txt', 'w') as outfile:
