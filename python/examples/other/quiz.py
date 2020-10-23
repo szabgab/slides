@@ -32,7 +32,7 @@ def runchap(chapter):
     print("You gave " + str(counter) + " correct answers out of 3")
 
 ### define questions and answers as dictionary
-import json
+
 content = {
 "1":{
     "title": "First steps",
@@ -120,10 +120,10 @@ for idx in content.keys():
         })
 
 
-
+#import json
 # with open('content.txt', 'w') as outfile:
-#     json.dump(content, outfile)
-
+#    #  json.dump(content, outfile, sort_keys=True, indent=4)
+#exit()
 # with open('content.txt') as json_file:
 #     content = json.load(json_file)
 
