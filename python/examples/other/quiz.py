@@ -109,15 +109,22 @@ content = {
     "q":["Which of the following is not a GUI toolkit?\na Tk\b Gkit\nc GTK\na/b/c: ", "You can pick multiple radio buttons at the same time.\nT/F: ", 'label.config(fg="#0000FF") defines the\nsize\ncolor\nposition of the label.\n'],
     "a":[["b"], ff, ["color"]]},}
 
+chapters = []
 for idx in content.keys():
     questions = content[idx].pop('q')
     answers = content[idx].pop('a')
+    title = content[idx].pop('title')
     content[idx]["quiz"] = []
+    quiz = []
     for q, a in zip(questions, answers):
-        content[idx]["quiz"].append({
+        quiz.append({
             "q": q,
             "a": a,
         })
+    chapters.append({
+        "title": title,
+        "quiz": quiz,
+    })
 
 
 #import json
@@ -130,15 +137,15 @@ for idx in content.keys():
 while True:
     print(" \n**********************************************************************************")
     print("From which chapter do you want to be tested?")
-    for idx in sorted(content.keys(), key=int):
-        print(f"{idx} {content[idx]['title']}")
+    for idx, chapter in enumerate(chapters):
+        print(f"{idx+1} {chapter['title']}")
     print("If you want to exit, press'x'.\nSelect a number: ")
     chapter = input()
     if chapter == "x":
         break
-    elif chapter in content.keys():
+    elif chapter in list(map(str, range(len(chapters)))):
         print("Selected chapter: " + chapter)
-        runchap(content[chapter])
+        runchap(chapters[int(chapter)-1])
         continue
     else:
         print("wrong, choose only from ", [key for key in content.keys()]+["x"])
