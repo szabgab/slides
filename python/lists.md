@@ -738,6 +738,8 @@ First we have to decide where are we going to store the counts. A 10 element lon
 
 ![](examples/lists/count_words_two_lists.py)
 
+![](examples/lists/count_words_two_lists_one_loop.py)
+
 
 ## Solution: Check if number is prime
 {id: solution-is-prime}
