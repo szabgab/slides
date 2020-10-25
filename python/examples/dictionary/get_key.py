@@ -4,9 +4,11 @@ user = {
     'address': None,
 }
 
-print(user.get('fname'))
-print(user.get('address'))
-print(user.get('email'))
+print(user.get('fname'))        # Foo     - because 'fname' has the value 'Foo'
+print(user.get('email'))        # None    - because 'email' does not exist
+print(user.get('address'))      # None    - because 'address' has the value None
 
-print(user.get('answer', 42)) # default returned if key does not exist
-print(user.get('address', 23))  # default not returned when key exists but value is None
+# set a default value to return
+print(user.get('answer', 42))   # 42      - because 'answer' does not exist
+print(user.get('address', 23))  # None    - because None is the value of the 'address' key
+print(user.get('fname', 'ABC')) # Foo     - because the value of 'fname' is 'Foo'
