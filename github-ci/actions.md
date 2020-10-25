@@ -79,15 +79,28 @@ env:
    DEMO_FIELD: value
 ```
 
-## Jobs
+## GitHub Action Jobs
 {id: jobs}
 
 * Jobs run **parallel** by default
 
-## Examples
-{id: examples}
+## Examples - Perl
+{id: examples-perl}
 
 * [docker-perl-tester](https://github.com/Perl/docker-perl-tester/tree/master/.github/workflows)
+* [Test2-Harness](https://github.com/Test-More/Test2-Harness/tree/master/.github/workflows)
+* [Perl Power Tools](https://github.com/briandfoy/PerlPowerTools)
+
+* [Perl tester Docker image](https://hub.docker.com/r/perldocker/perl-tester)
+
+
+## GitHub Actions - Jobs runs-on
+{id: github-actions-jobs-runs-on}
+
+* [runs-on](https://docs.github.com/en/free-pro-team@latest/actions/reference/workflow-syntax-for-github-actions#jobsjob_idruns-on)
+
+* Linux, Windows, or MacOS running on Azure
+* [GitHub hosted runners](https://docs.github.com/en/free-pro-team@latest/actions/reference/specifications-for-github-hosted-runners)
 
 
 ## Disable GitHub Action workflow
@@ -104,7 +117,7 @@ env:
 ```
 jobs:
   job_name:
-    if: ${{ false }}
+    if: ${{ false }}  # disable for now
 ```
 
 ## Disable a single step in a GitHub Action job
