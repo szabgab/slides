@@ -14,5 +14,7 @@ prompt("Type in your secret", 1)
 
 prompt("Hello", retry = 7)
 
+# prompt(retry = 7, "Hello")  # SyntaxError: positional argument follows keyword argument
+
 prompt(retry = 42, question = "Is it you?")
 
