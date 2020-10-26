@@ -28,12 +28,14 @@
 {i: active}
 {i: save}
 {i: column_dimensions}
+
 ![](examples/excel/create_excel.py)
 
 
 ## Worksheets in Excel
 {id: worksheets-to-excel}
 {i: create_sheet}
+
 ![](examples/excel/create_worksheets.py)
 
 
@@ -47,22 +49,32 @@ Nothing special needed.
 
 ## Format field
 {id: format-field}
+
 ![](examples/excel/format_field.py)
 
 
 ## Number series and chart
 {id: number-series-and-chart}
+
 ![](examples/excel/create_chart.py)
 
 
 ## Read Excel file
 {id: read-excel-file}
+
 ![](examples/excel/read_excel.py)
 
 
 ## Update Excel file
 {id: update-excel-file}
+
 ![](examples/excel/update_excel.py)
+
+## Barchart
+{id: number-series-and-barchart}
+
+![](examples/excel/bar_chart.py)
+
 
 
 ## Exercise: Excel
