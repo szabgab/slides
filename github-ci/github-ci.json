@@ -7,6 +7,8 @@
     "version": "1.18",
     "files": [
         "introduction.md",
+        "travis-ci.md",
+        "appveyor.md",
         "actions.md"
     ]
 }
