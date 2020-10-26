@@ -202,13 +202,16 @@ Since Python 3.7
 ![](examples/dictionary/set_order.py)
 ![](examples/dictionary/set_order.out)
 
+## Various dictionary examples
+{id: various-dictionary-examples}
 
+![](examples/dictionary/people.py)
 
 
 ## Exercise: count characters
 {id: exercise-count-characters}
 
-* Write a script called **count_characters.py* that given a long text will count how many times each character appears.
+* Write a script called **count_characters.py** that given a long text will count how many times each character appears.
 * Change the code so it will be able to count characters in a file.
 
 ![](examples/dictionary/count_characters_skeleton.py)
