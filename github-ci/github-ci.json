@@ -9,6 +9,7 @@
         "introduction.md",
         "travis-ci.md",
         "appveyor.md",
+        "coveralls.md",
         "actions.md"
     ]
 }
