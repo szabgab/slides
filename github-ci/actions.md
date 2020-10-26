@@ -135,4 +135,22 @@ jobs:
       if: ${{ false }}
 ```
 
+## Minimal Windows configuration
+{id: minimal-windows-configuration}
+
+![](examples/workflows/minimal_windows.yml)
+
+## Minimal MacOS configuration
+{id: minimal-mac-configuration}
+
+![](examples/workflows/minimal_mac.yml)
+
+## Minimal Ubuntu Linux configuration
+{id: minimal-linux-configuration}
+
+![](examples/workflows/minimal_ubuntu.yml)
+
+
+
+
 

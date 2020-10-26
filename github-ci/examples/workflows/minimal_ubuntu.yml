@@ -1,0 +1,31 @@
+name: Minimal Ubuntu
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Single step
+      run: echo Hello World
+
+    - name: Look around
+      run: |
+        uname -a
+        pwd     # /home/runner/work/REPO/REPO
+        whoami  # runner
+        uptime
+        which perl
+        which python
+        which python3
+        which ruby
+        which node
+        which java
+        perl -v
+        python -V
+        python3 -V
+        ruby -v
+        node -v
+        javac -version
+        java -version
+

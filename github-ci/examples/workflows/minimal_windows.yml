@@ -1,0 +1,31 @@
+name: Minimal Windows
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+    - name: Single step
+      run: echo Hello World
+
+    - name: Look around
+      run: |
+        uname -a
+        pwd
+        whoami
+        uptime
+        which perl
+        which python
+        #which python3
+        which ruby
+        which node
+        which java
+        perl -v
+        python -V    # 3.7.9
+        #python3 -V
+        ruby -v
+        node -v
+        javac -version
+        java -version
+
