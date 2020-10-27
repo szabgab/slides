@@ -75,6 +75,7 @@
         "advanced-functions.md",
         "function-arguments.md",
         "packages.md",
+        "distribute.md",
         "ctypes.md",
         "advanced-oop.md",
         "2to3.md",
