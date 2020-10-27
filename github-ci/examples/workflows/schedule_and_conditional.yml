@@ -1,0 +1,43 @@
+name: Push and schedule
+
+on:
+  push:
+    branches: '*'
+  pull_request:
+    branches: '*'
+  schedule:
+    - cron: '*/5 * * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Single step
+      run: |
+        echo Hello World
+        echo $GITHUB_EVENT_NAME
+
+    - name: Look around
+      run: |
+        printenv | sort
+
+    - name: Conditional step (push)
+      if: ${{ github.event_name == 'push' }}
+      run: |
+        echo "Only run on a push"
+
+    - name: Conditional step (schedule)
+      if: ${{ github.event_name == 'schedule' }}
+      run: |
+        echo "Only run in schedule"
+
+    - name: Conditional step (pull_request)
+      if: ${{ github.event_name == 'pull_request' }}
+      run: |
+        echo "Only run in pull-request"
+
+
+    - name: Step after
+      run: |
+        echo "Always run"
+

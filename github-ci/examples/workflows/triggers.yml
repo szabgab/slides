@@ -1,0 +1,19 @@
+name: Triggers
+
+on:
+  push:
+    branches: '*'
+  pull_request:
+    branches: '*'
+  schedule:
+    - cron: '*/5 * * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Look around
+      run: |
+        echo $GITHUB_EVENT_NAME
+        printenv | sort
+

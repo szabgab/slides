@@ -63,7 +63,9 @@ on:
 ```
 
 * scheduled - cron config
-* Manual events
+* Manual events (via POST request)
+
+![](examples/workflows/triggers.yml)
 
 * [events](https://docs.github.com/en/free-pro-team@latest/actions/reference/events-that-trigger-workflows)
 
@@ -150,7 +152,9 @@ jobs:
 
 ![](examples/workflows/minimal_ubuntu.yml)
 
+## Schedule and conditional runs
+{id: schedule-and-conditional-runs}
 
-
+![](examples/workflows/schedule_and_conditional.yml)
 
 
