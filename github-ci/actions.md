@@ -14,11 +14,18 @@
 {id: github-actions-documentation}
 * [GitHub Actions](https://docs.github.com/en/free-pro-team@latest/actions)
 
-## Set up
+## Setup
 {id: github-actions-setup}
 
 * Create directory `.github/workflows`
 * Create a [YAML](https://yaml.org/) file in it.
+
+## UI of the GitHub actions
+{id: ui-of-github-actions}
+
+* GitHub repository
+* There is a link called "Actions"
+
 
 ## Python
 {id: github-actions-python}
@@ -45,12 +52,6 @@
 
 ![](examples/workflows/minimal_mac.yml)
 
-
-## UI of the GitHub actions
-{id: ui-of-github-actions}
-
-* GitHub repository
-* There is a link called "Actions"
 
 ## Name of a workflow
 {id: name-of-workflow}

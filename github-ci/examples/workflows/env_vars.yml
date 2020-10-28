@@ -1,4 +1,4 @@
-name: Push and schedule
+name: Environment Variables
 
 on: push
 
