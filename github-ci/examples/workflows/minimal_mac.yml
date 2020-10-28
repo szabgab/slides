@@ -1,6 +1,6 @@
 name: Minimal MacOS
 
-on: [push]
+on: push
 
 jobs:
   build:
