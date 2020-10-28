@@ -8,7 +8,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Single step
+
+    - name: Setup Python
       uses: actions/setup-python@v2
 
     - name: Install dependencies
