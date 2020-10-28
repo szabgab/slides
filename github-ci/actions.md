@@ -18,7 +18,23 @@
 {id: github-actions-setup}
 
 * Create directory `.github/workflows`
-* Create a YAML file in it.
+* Create a [YAML](https://yaml.org/) file in it.
+
+## Minimal Ubuntu Linux configuration
+{id: minimal-linux-configuration}
+
+![](examples/workflows/minimal_ubuntu.yml)
+
+## Minimal Windows configuration
+{id: minimal-windows-configuration}
+
+![](examples/workflows/minimal_windows.yml)
+
+## Minimal MacOS configuration
+{id: minimal-mac-configuration}
+
+![](examples/workflows/minimal_mac.yml)
+
 
 ## Python
 {id: github-actions-python}
@@ -91,16 +107,6 @@ env:
 
 * Jobs run **parallel** by default
 
-## Examples - Perl
-{id: examples-perl}
-
-* [docker-perl-tester](https://github.com/Perl/docker-perl-tester/tree/master/.github/workflows)
-* [Test2-Harness](https://github.com/Test-More/Test2-Harness/tree/master/.github/workflows)
-* [Perl Power Tools](https://github.com/briandfoy/PerlPowerTools)
-
-* [Perl tester Docker image](https://hub.docker.com/r/perldocker/perl-tester)
-
-
 ## GitHub Actions - Jobs runs-on
 {id: github-actions-jobs-runs-on}
 
@@ -142,21 +148,6 @@ jobs:
       if: ${{ false }}
 ```
 
-## Minimal Windows configuration
-{id: minimal-windows-configuration}
-
-![](examples/workflows/minimal_windows.yml)
-
-## Minimal MacOS configuration
-{id: minimal-mac-configuration}
-
-![](examples/workflows/minimal_mac.yml)
-
-## Minimal Ubuntu Linux configuration
-{id: minimal-linux-configuration}
-
-![](examples/workflows/minimal_ubuntu.yml)
-
 ## Schedule and conditional runs
 {id: schedule-and-conditional-runs}
 
@@ -178,4 +169,19 @@ a script that will copy it, if necessary. Then I'd call that script in my YAML f
 {/aside}
 
 ![](examples/workflows/create_file.yml)
+
+
+## Examples - Perl
+{id: examples-perl}
+
+* [docker-perl-tester](https://github.com/Perl/docker-perl-tester/tree/master/.github/workflows)
+* [Test2-Harness](https://github.com/Test-More/Test2-Harness/tree/master/.github/workflows)
+* [Perl Power Tools](https://github.com/briandfoy/PerlPowerTools)
+
+* [Perl tester Docker image](https://hub.docker.com/r/perldocker/perl-tester)
+
+## Examples - Python
+{id: examples-python}
+
+* [TFkit](https://github.com/voidful/TFkit/blob/master/.github/workflows/python-package.yml)
 
