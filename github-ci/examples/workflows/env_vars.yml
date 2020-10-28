@@ -1,0 +1,20 @@
+name: Push and schedule
+
+on: push
+
+env:
+  DEMO: Foo
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: First step
+      run: |
+        echo $DEMO
+
+    - name: Second step
+      env:
+         DEMO: Bar
+      run: |
+        echo $DEMO

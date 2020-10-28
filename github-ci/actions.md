@@ -20,6 +20,16 @@
 * Create directory `.github/workflows`
 * Create a [YAML](https://yaml.org/) file in it.
 
+## Python
+{id: github-actions-python}
+
+![](examples/workflows/python.yml)
+
+![](examples/requirements.txt)
+
+![](examples/test_demo.py)
+
+
 ## Minimal Ubuntu Linux configuration
 {id: minimal-linux-configuration}
 
@@ -36,22 +46,11 @@
 ![](examples/workflows/minimal_mac.yml)
 
 
-## Python
-{id: github-actions-python}
-
-![](examples/workflows/python.yml)
-
-
-## Perl with Makefile.PL
-{id: perl-with-makefile}
-
-![](examples/workflows/perl_makefile_tester.yml)
-
 ## UI of the GitHub actions
 {id: ui-of-github-actions}
 
-* Repository
-* Actions
+* GitHub repository
+* There is a link called "Actions"
 
 ## Name of a workflow
 {id: name-of-workflow}
@@ -66,27 +65,25 @@ name: Free Text defaults to the filename
 {id: triggering-jobs}
 {i: on}
 
+* Single event
 
 ```
 on: push
 ```
 
+* Multiple events
+
 ```
 on: [push, pull_request]
 ```
 
-
-```
-on:
-  pull_request:
-    branches:
-      - '*'
-```
-
-* scheduled - cron config
-* Manual events (via POST request)
+* Run on "push" in every branch.
+* Run on "pull_request" if it was sent to the "dev" branch.
+* scheduled every 5 minutes (cron config)
 
 ![](examples/workflows/triggers.yml)
+
+* Manual events (via POST request)
 
 * [events](https://docs.github.com/en/free-pro-team@latest/actions/reference/events-that-trigger-workflows)
 
@@ -101,6 +98,14 @@ on:
 env:
    DEMO_FIELD: value
 ```
+
+![](examples/workflows/env_vars.yml)
+
+
+## Matrix (env vars)
+{id: matrix}
+
+![](examples/workflows/matrix_env_vars.yml)
 
 ## GitHub Action Jobs
 {id: jobs}
@@ -152,6 +157,18 @@ jobs:
 {id: schedule-and-conditional-runs}
 
 ![](examples/workflows/schedule_and_conditional.yml)
+
+## Python with Matrix
+{id: github-actions-python-matrix}
+
+![](examples/workflows/python_matrix.yml)
+
+
+## Perl with Makefile.PL
+{id: perl-with-makefile}
+
+![](examples/workflows/perl_makefile_tester.yml)
+
 
 ## Available GitHub actions
 {id: available-github-actions}

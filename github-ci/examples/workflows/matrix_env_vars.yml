@@ -1,0 +1,23 @@
+name: Matrix environment variables
+
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        fruit:
+          - Apple
+          - Banana
+        meal:
+          - Breakfast
+          - Lunch
+    steps:
+    - name: Single step
+      env:
+         DEMO_FRUIT: ${{ matrix.fruit }}
+         DEMO_MEAL:  ${{ matrix.meal }}
+      run: |
+        echo $DEMO_FRUIT for $DEMO_MEAL
+
