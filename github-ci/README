@@ -1,0 +1,7 @@
+
+Workflow:
+   dev - branch
+   pull-reques will run all the tests and merge into "dev" branch only if it is a fast-forward
+
+
+

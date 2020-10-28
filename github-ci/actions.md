@@ -23,8 +23,13 @@
 ## Python
 {id: github-actions-python}
 
-![](examples/action-python/ci.yml)
+![](examples/workflows/python.yml)
 
+
+## Perl with Makefile.PL
+{id: perl-with-makefile}
+
+![](examples/workflows/perl_makefile_tester.yml)
 
 ## UI of the GitHub actions
 {id: ui-of-github-actions}

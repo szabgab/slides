@@ -1,0 +1,38 @@
+name: CI
+
+on: [push, pull_request]
+
+jobs:
+  perl-job:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        perl-version:
+          - '5.30'
+#          - '5.32'
+#          - 'latest'
+    container:
+      image: perldocker/perl-tester:${{ matrix.perl-version }}     # https://hub.docker.com/r/perldocker/perl-tester
+    name: Perl ${{ matrix.perl-version }}
+    steps:
+      - uses: actions/checkout@v2
+      - name: Regular tests
+        run: |
+            cpanm --installdeps --notest .
+            perl Makefile.PL
+            make
+            make test
+
+
+      - name: Prepare for release tests
+        run: |
+            cpanm --installdep .
+            cpanm --notest Test::CheckManifest Test::Pod::Coverage Pod::Coverage Test::Pod
+      - name: Release tests
+        env:
+          RELEASE_TESTING: 1
+        run: |
+            perl Makefile.PL
+            make
+            make test
