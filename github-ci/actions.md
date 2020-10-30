@@ -198,8 +198,20 @@ a script that will copy it, if necessary. Then I'd call that script in my YAML f
 
 * [Perl tester Docker image](https://hub.docker.com/r/perldocker/perl-tester)
 
+* [CI Perl Tester Helpers](https://github.com/oalders/ci-perl-tester-helpers)
+* [Presentation](https://www.youtube.com/watch?v=WfXo71I7LmE&list=PLA9_Hq3zhoFznY_cvm5iAbUZ9T6-6zbIu&index=38) of Olaf Alders
+* [Slides](https://github.com/oalders/presentations/blob/master/slides/4-github-actions/marp.pdf) of Olaf Alders
+
+auto-build-and-test-dist
+
+
+
 ## Examples - Python
 {id: examples-python}
 
 * [TFkit](https://github.com/voidful/TFkit/blob/master/.github/workflows/python-package.yml)
+
+* [Awesome actions](https://github.com/sdras/awesome-actions)
+
+* [Run GitHub Actions locally](https://github.com/nektos/act)
 
