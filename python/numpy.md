@@ -289,3 +289,8 @@ The slice in numpy does not copy the data structure
 
 ![](examples/numpy/int8.py)
 
+## More Numpy
+{id: more-numpy}
+
+![](examples/numpy/calc.py)
+
