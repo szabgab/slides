@@ -19,7 +19,7 @@ codon_table = {
     'Glu' : ['GAA', 'GAG'],
     'Cys' : ['TGT', 'TGC'],
     'Trp' : ['TGG'],
-    'Arg' : ['CGT', 'CGC', 'GCA', 'CGG', 'AGA', 'AGG'],
+    'Arg' : ['CGT', 'CGC', 'CGA', 'CGG', 'AGA', 'AGG'],
     'Gly' : ['GGT', 'GGC', 'GGA', 'GGG'],
     'STOP' : ['TAA', 'TAG', 'TGA']
 }

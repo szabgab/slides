@@ -296,3 +296,8 @@ other_limit > p.value( )
 
 ![](examples/pandas/pandas_stackoverflow.py)
 
+![](examples/pandas/orig.py)
+![](examples/pandas/panda_file.py)
+![](examples/pandas/another_pandas.py)
+
+
