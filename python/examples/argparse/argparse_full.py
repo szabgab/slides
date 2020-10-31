@@ -10,15 +10,16 @@ parser.add_argument('--verbose', action='store_true') # "flag" no value is expec
 parser.add_argument('--color', '-c') # short name also accepted
 
 
-parser.add_argument('files',  help="filenames(s)")   # a required positional argument
-parser.add_argument('dirs',   nargs="*")   # 0 or more positional
-parser.add_argument('places', nargs="+")   # 1 or more positional
-
+#parser.add_argument('files',  help="filenames(s)")   # a required positional argument
+#parser.add_argument('dirs',   nargs="*")   # 0 or more positional
+#parser.add_argument('places', nargs="+")   # 1 or more positional
+#
 parser.add_argument('--things', nargs="+")  # --files a.txt b.txt c.txt
 
 
 args = parser.parse_args()
 
-print(args.name)
-print(args.files)
+print(args.fname)
+print(args.verbose)
+#print(args.files)
 
