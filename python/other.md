@@ -805,4 +805,22 @@ nd.groupby('Country').mean().sort_values('OpenSourcer', ascending=False)
 
 ![](examples/strings/ord.py)
 
+## NameError
+{id: name-error}
+
+```
+python common_error.py 42
+```
+
+![](examples/other/common_error.py)
+
+## UnboundLocalError
+{id: unbound-local-error}
+
+```
+python common_error_in_function.py 42
+```
+
+![](examples/other/common_error_in_function.py)
+
 
