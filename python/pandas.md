@@ -289,5 +289,10 @@ other_limit > p.value( )
 
 * Pick a dataset from [Kaggle](https://www.kaggle.com/datasets) and try to analyze that.
 
+## TODO: Stack Overflow example
+{id: stack-overflow-examples}
 
+![](examples/pandas/stack_overflow_pandas.py)
+
+![](examples/pandas/pandas_stackoverflow.py)
 
