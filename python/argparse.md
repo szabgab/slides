@@ -293,8 +293,13 @@ optional arguments:
   --remove
 ```
 
-## Argparse argument with default and optionally value
+## Argparse argument with default and optional value
 {id: argparse-with-default-and-optional-value}
+{i: nargs}
+{i: const}
+
+* Instead of `default` we use the `const` parameter here
+* We tell argparse that the value of the parameter is optional by `nargs='?'`
 
 ![](examples/argparse/argument_with_optional_value.py)
 
