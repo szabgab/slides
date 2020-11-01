@@ -182,3 +182,38 @@ f = as.factor()
 levels(f)
 summary(f)
 
+## Comments
+{id: comments}
+
+* Lines starting at a "#" character are comments
+
+## Operator preference order and parentheses
+{id: operator-peference-order-and-parentheses}
+
+## Data Frames
+{id: data-frames}
+
+
+![](examples/boolean_vectors_truth_table.R)
+
+![](examples/conditional_operators.R)
+
+![](examples/convert_string_to_numeric.R)
+
+![](examples/different_length_of_arrays.R)
+
+![](examples/factors.R)
+
+![](examples/filter_values.R)
+
+![](examples/index_of_true_elements.R)
+
+![](examples/iris.R)
+
+![](examples/logical_boolean.R)
+
+![](examples/matrix.R)
+
+![](examples/reuse_short_array_exact_multiple.R)
+
+
