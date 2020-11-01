@@ -293,3 +293,24 @@ optional arguments:
   --remove
 ```
 
+## Argparse argument with default and optionally value
+{id: argparse-with-default-and-optional-value}
+
+![](examples/argparse/argument_with_optional_value.py)
+
+```
+$ python argument_with_optional_value.py
+None
+```
+
+```
+$ python argument_with_optional_value.py --level
+10
+```
+
+```
+$ python argument_with_optional_value.py --level 20
+20
+```
+
+
