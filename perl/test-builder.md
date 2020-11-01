@@ -6,7 +6,8 @@
 {i: redefine}
 
 {aside}
-Sometimes there are function that print directly to the screen.
+Sometimes there are functions that print directly to the screen.
+
 The program could be tested as an external application or we can redirect the
 STDOUT to a scalar variable in the memory of perl but  it might be cleaner
 to replace the display function, capture the data in a variable
@@ -652,13 +653,7 @@ BAIL_ON_FAIL=1 prove examples/test-perl/t/test_most.t
 
 Trap exit codes, exceptions, output.
 
-
-
-
 Or use Capture::Tiny and then interrogated the returned values.
-
-
-
 
 ## Test::Fatal
 {id: test-fatal}
@@ -800,6 +795,26 @@ Make sure you load Test::MockTime before you load the module under testing. Othe
 ![](examples/mock/webapi_mock_lwp_simple.t)
 
 
+## Capture STDOUT and STDERR in functions call
+{id: capture-stdout-and-stderr-in-function-call}
+{i: Capture::Tiny}
+{i: capture}
 
+{aside}
+There are many cases when we encounter a function that does more than one things. For example in the following simplified
+example we have a function that both makes some (simple) mathematical calculation and prints to the screen.
+For added fun it also prints to the Standard Error channel.
+
+We will probably want to refactor it to separate the concerns of calculating and IO, but first we'd like to write a unit-test.
+
+In this example we use the capture function of the Capture::Tiny module that will capture and return as a string everything that is
+printed to STDOUT and STDERR. (It could also capture the exit value of an external call, but this is not relevant in our case.
+
+The whole code is wrapped in a subtest so the external $result variable will be lexically scoped.
+{/aside}
+
+![](examples/test-perl/stdout-stderr/lib/CalcOutput.pm)
+
+![](examples/test-perl/stdout-stderr/t/test.t)
 
 
