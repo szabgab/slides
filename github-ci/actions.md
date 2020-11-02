@@ -215,3 +215,8 @@ auto-build-and-test-dist
 
 * [Run GitHub Actions locally](https://github.com/nektos/act)
 
+## OS Matrix (Windows, Linux, Mac OSX)
+{id: os-matrix}
+
+![](examples/workflows/os-matrix.yml)
+
