@@ -245,8 +245,8 @@ This latter is what we can see in our example.
 ![](examples/pandas/create_column.out)
 
 
-## Combine columns to create a new column (conditional)
-{id: pandas-combine-columns-conditional}
+## Add a new column (conditional)
+{id: pandas-add-column-conditional}
 {i: apply}
 
 ![](examples/pandas/temprature.csv)
