@@ -11,6 +11,7 @@
         "test-module.md",
         "test-more.md",
         "test-builder.md",
+        "mocking.md",
         "test-reporting.md",
         "command-line.md",
         "networking.md",
