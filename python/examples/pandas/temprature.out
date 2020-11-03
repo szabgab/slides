@@ -1,0 +1,11 @@
+   name  temp
+0  Ella  36.6
+1  Maor  40.0
+2  Oren  38.2
+3   Gal  37.0
+
+   name  temp covid_instructions
+0  Ella  36.6         go to work
+1  Maor  40.0          stay home
+2  Oren  38.2          stay home
+3   Gal  37.0         go to work
