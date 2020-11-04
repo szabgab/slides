@@ -205,18 +205,13 @@ Reminder: In Perl undef, 0, "" and "0" count as false and all other
 values as true.
 {/aside}
 
-![](examples/test-perl/tests/t06.pl)
-
+![](examples/test-simple/tests/t06.pl)
 
 Output:
 
-
-![](examples/test-perl/tests/t06.pl.out)
-
+![](examples/test-simple/tests/t06.pl.out)
 
 But why reinvent the wheel ?
-
-
 
 
 ## Introducing Test::Simple
@@ -241,16 +236,15 @@ use Test::Simple, tell it your **plan**, that is the number
 of times you are going to call **ok()** and use its built in ok()
 function.
 {/aside}
-![](examples/test-perl/tests/t10.pl)
+
+![](examples/test-simple/tests/t10.pl)
 
 
 Output:
 
-
-![](examples/test-perl/tests/t10.pl.out)
+![](examples/test-simple/tests/t10.pl.out)
 
 {aside}
-
 It is more verbose, it has a couple of additional useful pieces of information:
 1..3   says how many tests we were planning,
 then we get the tests numbered and we even get a small explanation when the test fails.
@@ -265,13 +259,12 @@ then we get the tests numbered and we even get a small explanation when the test
 For the following example we've replaced the failing test with one that is successful.
 This way you can see how does it look like when everything is ok.
 {/aside}
-![](examples/test-perl/tests/t11.pl)
 
+![](examples/test-simple/tests/t11.pl)
 
 Output:
 
-
-![](examples/test-perl/tests/t11.pl.out)
+![](examples/test-simple/tests/t11.pl.out)
 
 
 ## Test::Simple - missing test
@@ -281,29 +274,27 @@ Output:
 {aside}
 
 So why are those numbers necessary?
-Imagine you managed to write 200 unit tests. Someone 
-who does not know about the number runs the test suite and 
+Imagine you managed to write 200 unit tests. Someone
+who does not know about the number runs the test suite and
 sees "ok" printed 17 times. It looks like everything is ok. He won't notice
 that instead of 200, only 17 tests ran before the test script excited.
 Everything was OK up to that point,
-but there is a serious problem somewhere. Either in the 
+but there is a serious problem somewhere. Either in the
 application or in the test itself. This can be found only
 if the test executer knows how many test have you planned,
 and checks if the correct number of tests have been executed.
 {/aside}
 
 {aside}
-
 This is exactly what Test::Simple provides. In the following example
 we deliberately commented out the last test that was failing.
 {/aside}
-![](examples/test-perl/tests/t12.pl)
 
+![](examples/test-simple/tests/t12.pl)
 
 Output:
 
-
-![](examples/test-perl/tests/t12.pl.out)
+![](examples/test-simple/tests/t12.pl.out)
 
 
 ## Test::Simple - too many tests
@@ -312,15 +303,11 @@ Output:
 
 When there are more OKs than planned the script will also print a comment about it.
 
-
-![](examples/test-perl/tests/t13.pl)
-
+![](examples/test-simple/tests/t13.pl)
 
 Output:
 
-
-![](examples/test-perl/tests/t13.pl.out)
-
+![](examples/test-simple/tests/t13.pl.out)
 
 ## Add names to the tests
 {id: test-names}
@@ -331,7 +318,6 @@ More advantages of Test::Simple - names of the tests.
 ```
 
 {aside}
-
 So Test::Simple module makes our life a bit more simple in that we don't have to write
 our testing expression. In addition this new "ok" function can actually do some more.
 It can get two arguments. The first one indicates success or failure of the test
@@ -342,13 +328,12 @@ If the names were written carefully, then they can provide an immediate hint on 
 Sometimes you won't even need to look at the test script itself, right from this comment
 you'll know where to look for the bug.
 {/aside}
-![](examples/test-perl/tests/t14.pl)
 
+![](examples/test-simple/tests/t14.pl)
 
 Output:
 
-
-![](examples/test-perl/tests/t14.pl.out)
+![](examples/test-simple/tests/t14.pl.out)
 
 
 ## Exercise: Enlarge the test

@@ -3,7 +3,7 @@ use warnings;
 
 use FindBin;
 use lib "$FindBin::Bin/../lib";
-use MyTools;
+use MySimpleCalc qw(sum);
 
 ok( sum(1, 1)    == 2 );
 ok( sum(2, 2)    == 4 );
