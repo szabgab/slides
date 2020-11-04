@@ -3,11 +3,11 @@ use warnings;
 
 use FindBin;
 use lib "$FindBin::Bin/../lib";
-use MyTools;
+use MySimpleCalc qw(sum);
 
 my @tests;
 BEGIN {
-    my $file = "$FindBin::Bin/sum.txt";
+    my $file = "$FindBin::Bin/large_sum.txt";
     open my $fh, '<', $file or die "Could not open '$file': $!";
 
     while (my $line = <$fh>) {

@@ -3,7 +3,7 @@ use warnings;
 
 use FindBin;
 use lib "$FindBin::Bin/../lib";
-use MyTools;
+use MySimpleCalc qw(sum);
 
 my @tests;
 BEGIN {

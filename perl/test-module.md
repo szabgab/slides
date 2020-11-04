@@ -348,11 +348,11 @@ Also write a few more tests for the `multiply()` and the
 ## Enlarge our test suite
 {id: enlarge-the-test-suit}
 
-![](examples/test-perl/tests/t20.pl)
+![](examples/test-simple/tests/t20.pl)
 
 Output:
 
-![](examples/test-perl/tests/t20.pl.out)
+![](examples/test-simple/tests/t20.pl.out)
 
 
 ## Refactor larger test suite
@@ -367,11 +367,11 @@ We take the data and move it to a data structure. The code then can go over this
 data structure and execute each unit on its own.
 {/aside}
 
-![](examples/test-perl/tests/t21.pl)
+![](examples/test-simple/tests/t21.pl)
 
 Output:
 
-![](examples/test-perl/tests/t21.pl.out)
+![](examples/test-simple/tests/t21.pl.out)
 
 {aside}
 
@@ -391,7 +391,7 @@ We also generate the name of the test from the input values.
 {aside}
 
 There is a small problem though.
-When you add a new test to the array, you also have to remember to update the 
+When you add a new test to the array, you also have to remember to update the
 tests => 6 line.
 
 There are a number of solution to this problem
@@ -402,11 +402,12 @@ There are a number of solution to this problem
 {id: no-plan}
 {i: plan}
 {i: no_plan}
-![](examples/test-perl/tests/t22.pl)
+
+![](examples/test-simple/tests/t22.pl)
 
 Output:
 
-![](examples/test-perl/tests/t22.pl.out)
+![](examples/test-simple/tests/t22.pl.out)
 
 
 The 1..6 is now at the end.
@@ -417,10 +418,10 @@ The 1..6 is now at the end.
 
 This is one of the solutions and in some cases it is hard to avoid it,
 but it is not a really good solution. Those who advocate never to put
-'no_plan' in your test say that checking if the exact number of unit 
+'no_plan' in your test say that checking if the exact number of unit
 tests were executed is an additional control over our test suite.
 Without a 'plan' you can never be sure if - after a successful execution -
-the OKs you see were all the units there, or if the test script aborted 
+the OKs you see were all the units there, or if the test script aborted
 in the middle and you have not executed all of the units.
 
 There are also people who say it is not that important to have a plan but
@@ -438,8 +439,7 @@ There is 'done_testing' we'll cover later on.
 {i: BEGIN}
 
 {aside}
-
-Another solution is the use of BEGIN blocks. In case you don't know, code that is placed in a 
+Another solution is the use of BEGIN blocks. In case you don't know, code that is placed in a
 BEGIN block will be executed as soon as it gets compiled. Even before the rest of the code gets compiled.
 
 So in the next example the array @tests will already have content when perl tries to compile the "use Test::Simple ..."
@@ -449,18 +449,18 @@ Please note, we have to declare "my @tests" outside the BEGIN block or it will b
 
 This is a good solution, though it requires the use of BEGIN, which might be considered as somewhat advanced feature of Perl.
 {/aside}
-![](examples/test-perl/tests/t23.pl)
+
+![](examples/test-simple/tests/t23.pl)
 
 Output:
 
-![](examples/test-perl/tests/t23.pl.out)
+![](examples/test-simple/tests/t23.pl.out)
 
 
 ## Put the test cases in an external file
 {id: test-case-in-external-file}
 
 {aside}
-
 By now we almost totally separated the data of the tests in the array from the code that executes the test, but we can go a bit further.
 
 We can move the test data to some external file. Let's create a text file that looks like the following file:
@@ -470,7 +470,8 @@ is the expected result.
 
 We even allow for empty rows and comments: rows that start with a # character will be disregarded.
 {/aside}
-![](examples/test-perl/tests/sum.txt)
+
+![](examples/test-simple/tests/sum.txt)
 
 {aside}
 
@@ -482,27 +483,14 @@ This way, by the end of the BEGIN block the @tests array will look exactly as it
 
 The code outside the BEGIN block stays the same.
 {/aside}
-![](examples/test-perl/tests/t24.pl)
+
+![](examples/test-simple/tests/t24.pl)
 
 Output:
 
-
-```
-1..6
-ok 1 - 1 + 1
-ok 2 - 2 + 2
-not ok 3 - 2 + 2 + 2
-
-#   Failed test '2 + 2 + 2'
-#   at examples/test-perl/tests/t24.pl line 29.
-ok 4 - 3 + 3
-ok 5 - -1 + -1
-ok 6 - 1 + -1
-# Looks like you failed 1 test of 6.
-```
+![](examples/test-simple/tests/t24.pl.out)
 
 {aside}
-
 If for some reason the sum.txt file cannot be opened, we'll get an error message like this:
 {/aside}
 
@@ -511,11 +499,10 @@ Could not open '.../sum.txt': No such file or directory at t24.pl line 11.
 BEGIN failed--compilation aborted at t24.pl line 18.
 ```
 
-
-
 ## Large test suite
 {id: large-test-suit}
-![](examples/test-perl/tests/large_sum.txt)
+
+![](examples/test-simple/tests/large_sum.txt)
 
 ```
 $ cp tests/large_sum.txt tests/sum.txt
@@ -530,7 +517,6 @@ $ perl tests/t24.pl
 {i: Test::Harness}
 
 {aside}
-
 This is a module that can analyze the ok / not ok printouts with the numbers.
 In particular, it can analyze the output of Test::Simple and a whole class of
 other modules in the Test::* namespace on CPAN we are going to see later.
@@ -545,44 +531,22 @@ It accepts one or more test files, runs them and analyzes the output they genera
 Run the previous test file using Test::Harness
 
 
-
 ```
 $ perl ../harness.pl tests/t24.pl
 ```
 
 {aside}
-
 If the original test script had very few test units then this output won't make much sense, but if the original
 test script had hundreds of OKs, we would not be really interested on all those OKs. We would be mainly interested
 in a summary, and in the (hopefully) little number of "NOT OK" printouts. This is how the output of Test::Harness looks like:
 {/aside}
 
-```
-tests/t24.......
-#   Failed test '2 + 2 + 2'
-#   at tests/t24.pl line 28.
-# Looks like you failed 1 test of 45.
- Dubious, test returned 1 (wstat 256, 0x100)
- Failed 1/45 subtests
-
-Test Summary Report
--------------------
-tests/t24.pl (Wstat: 256 Tests: 45 Failed: 1)
-  Failed test:  3
-  Non-zero exit status: 1
-Files=1, Tests=45,  0 wallclock secs
-   ( 0.01 usr  0.00 sys +  0.02 cusr  0.00 csys =  0.03 CPU)
-Result: FAIL
-Failed 1/1 test programs. 1/45 subtests failed.
-```
-
-
+![](examples/test-simple/tests/large_harness.out)
 
 ## Harness on success
 {id: harness-on-success}
 
 {aside}
-
 In the case when all the OKs were successful the output is much shorter:
 {/aside}
 
@@ -590,13 +554,7 @@ In the case when all the OKs were successful the output is much shorter:
 $ perl ../harness.pl tests/t11.pl
 ```
 
-```
-tests/t11.......ok
-All tests successful.
-Files=1, Tests=3,  0 wallclock secs
-  ( 0.01 usr  0.00 sys +  0.01 cusr  0.01 csys =  0.03 CPU)
-Result: PASS
-```
+![](examples/test-simple/tests/harness_t11.out)
 
 
 ## Harness on too few tests
@@ -606,21 +564,7 @@ Result: PASS
 $ perl ../harness.pl tests/t12.pl
 ```
 
-```
-tests/t12.......# Looks like you planned 3 tests but only ran 2.
- Dubious, test returned 255 (wstat 65280, 0xff00)
- Failed 1/3 subtests
-
-Test Summary Report
--------------------
-tests/t12.pl (Wstat: 65280 Tests: 2 Failed: 0)
-  Non-zero exit status: 255
-  Parse errors: Bad plan.  You planned 3 tests but ran 2.
-Files=1, Tests=2,  0 wallclock secs
-   ( 0.01 usr  0.00 sys +  0.02 cusr  0.00 csys =  0.03 CPU)
-Result: FAIL
-Failed 1/1 test programs. 0/2 subtests failed.
-```
+![](examples/test-simple/tests/harness_t12.out)
 
 
 ## prove
@@ -633,13 +577,11 @@ prove tests/t11.pl
 prove tests/t12.pl
 ```
 
-
 ## Packaging as people do for CPAN
 {id: packaging-cpan-modules}
 {i: CPAN}
 
 {aside}
-
 Now let's take a small journey into how people package modules that
 are on CPAN. I have been using this method for all my code whether
 it was open source and ended upon CPAN, or a web application that
@@ -647,7 +589,6 @@ I am only developing for myself, or code for a client.
 {/aside}
 
 {aside}
-
 If you are packaging your application in the same way as all the
 CPAN modules are packaged, you'll immediately get all kinds of nice
 features other Perl developers have built for themself.
@@ -658,7 +599,6 @@ standards in the Perl world.
 {/aside}
 
 {aside}
-
 The three tools are three Perl Modules: ExtUtils::MakeMaker,
 Module::Build and Module::Install. Out of these three
 ExtUtils::MakeMaker has been standard for ages. Module::Build is
@@ -668,7 +608,6 @@ so it does not have to be installed on the target system.
 {/aside}
 
 {aside}
-
 The major advantage of Module::Build is that if you are writing
 pure perl modules you only need to know about Perl. If you are
 writing some code that is partially written in C and requires
@@ -677,8 +616,6 @@ anyway so there might not be any advantage to using Module::Build.
 {/aside}
 
 {aside}
-
-
 When using Module::Build you are going to create a file called
 Build.PL that describes the installation process while for
 ExtUtils::MakeMaker and Module::Install you need to prepare
@@ -686,8 +623,6 @@ a file called Makefile.PL.
 {/aside}
 
 {aside}
-
-
 A CPAN distribution has the following directory layout.
 In the root directory of the distribution there is the Makefile.PL
 or Build.PL or sometimes both. The README file is not a
@@ -697,8 +632,6 @@ is not fully automated or if there are special prerequisites.
 {/aside}
 
 {aside}
-
-
 The CHANGES or Changes files is another nice to have file. People
 usually include the major changes between version in that file so
 the user can easily see what is in the new version or to see the
@@ -706,8 +639,6 @@ history of releases.
 {/aside}
 
 {aside}
-
-
 For testing purposes you don't need MANIFEST, but if you plan to
 distribute your code even internally in your company, it is an
 important and required file. The MANIFEST file contains a list
@@ -729,8 +660,6 @@ thus in the distributions.
 {/aside}
 
 {aside}
-
-
 META.yml is a file in YAML format that contains machine readable
 meta-data about the projects. This meta data contains the name
 and the version of the module, list of prerequisites, license
@@ -739,8 +668,6 @@ autogenerate this file with.
 {/aside}
 
 {aside}
-
-
 In addition to these files the modules that are provided by this
 package can be found in the lib subdirectory. In case there are
 also scripts to be installed, they are either in a directory called
@@ -748,8 +675,6 @@ bin, or in a directory called scripts.
 {/aside}
 
 {aside}
-
-
 The t/ directory holds all the test files with a .t extension.
 {/aside}
 
@@ -781,11 +706,11 @@ Directory layout
 * Dist::Zilla          dist.ini
 
 
-
 ## Makefile.PL for ExtUtils::MakeMaker
 {id: makefile-pl-extutils-makemaker}
 {i: Makefile.PL}
 {i: ExtUtils::MakeMaker}
+
 ![](examples/test-perl/project_with_extutils_makemaker/Makefile.PL)
 
 {aside}

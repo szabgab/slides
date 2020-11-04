@@ -1,0 +1,16 @@
+tests/t24.......
+#   Failed test '2 + 2 + 2'
+#   at tests/t24.pl line 28.
+# Looks like you failed 1 test of 45.
+ Dubious, test returned 1 (wstat 256, 0x100)
+ Failed 1/45 subtests
+
+Test Summary Report
+-------------------
+tests/t24.pl (Wstat: 256 Tests: 45 Failed: 1)
+  Failed test:  3
+  Non-zero exit status: 1
+Files=1, Tests=45,  0 wallclock secs
+   ( 0.01 usr  0.00 sys +  0.02 cusr  0.00 csys =  0.03 CPU)
+Result: FAIL
+Failed 1/1 test programs. 1/45 subtests failed.
