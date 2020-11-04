@@ -1,47 +1,38 @@
 # Basic Testing Framework in Perl
 {id: test-module}
 
-## Welcome to 'Test Automation using Perl'
+## Things we are going to test
 {id: testing-plan}
 
 * Test a module
 * Test complex Perl applications
 * Test any application
 
-
 {aside}
-
 As an introduction to testing with Perl, first we are going to write
-unit tests to a simple Perl module.
+unit tests for a simple Perl module.
 
-From there, you'll be able to move on to test more complex applications
-written in Perl, and then to test any application no matter in what
+From there, we'll be able to move on to test more complex applications
+written in Perl. Then to test any application no matter in what
 language it is written in.
 {/aside}
-
 
 ## Testing a simple Perl module
 {id: test-scripts}
 
 {aside}
-
-We have a module called MyTools.pm with several functions.
-The first function we are going to test is called sum().
+We have a module called MySimpleCalc.pm with a single function called sum().
 It is supposed to return the sum of numbers passed to it.
-
-The module is located in examples/test-perl/lib/MyTools.pm.
 {/aside}
 
-* MyTools
+![](examples/test-simple/lib/MySimpleCalc.pm)
+
 * sum(1, 3)
-
-
 
 ## Calculator test
 {id: test-calculator}
 
 {aside}
-
 How would you make sure this function works correctly?
 You'd probably write a small, temporary script to call the function with various
 sets of input and you'd then check if the results are as expected.
@@ -51,7 +42,8 @@ sets of input and you'd then check if the results are as expected.
 
 Let's do that. Write a script using the sum() function of the module and printing the results.
 {/aside}
-![](examples/test-perl/tests/t01.pl)
+
+![](examples/test-simple/tests/t01.pl)
 
 {aside}
 
@@ -60,15 +52,13 @@ In this script we use the $Bin variable of the FindBin module to let perl find t
 
 If you run this script, the output will look like this:
 
-![](examples/test-perl/tests/t01.pl.out)
+![](examples/test-simple/tests/t01.pl.out)
 
 
 There was an error on the last line. 2 + 2 + 2 should be 6 and not 4
 
 
-
 {aside}
-
 After some further experimenting we find out that the
 problem seems to be, that sum() does not handle more than
 2 parameters.
@@ -84,7 +74,6 @@ manually to check if that's the correct answer?
 {/aside}
 
 {aside}
-
 We could fix the code, but we will use this case to show how to write tests.
 
 At this point we are not interested in fixing the bug in MyTools.pm.
@@ -112,36 +101,32 @@ next to the actual results.
 
 That way it will be obvious to any tester what values need to be compared.
 {/aside}
-![](examples/test-perl/tests/t03.pl)
+![](examples/test-simple/tests/t03.pl)
 
 
 Output:
 
-
-![](examples/test-perl/tests/t03.pl.out)
-
+![](examples/test-simple/tests/t03.pl.out)
 
 Now it is better.
-
-
 
 
 ## More test cases, more output
 {id: more-output}
 
 {aside}
-
 Still, if the output is more complex than a single, short number,
 or if there are many results, it will be difficult
 to the person comparing to notice the differences.
 
 What if we have 100s of test cases?
 {/aside}
-![](examples/test-perl/tests/t04.pl)
+
+![](examples/test-simple/tests/t04.pl)
 
 Output:
 
-![](examples/test-perl/tests/t04.pl.out)
+![](examples/test-simple/tests/t04.pl.out)
 
 
 ## Complex output
@@ -151,9 +136,7 @@ Output:
 qwertyuiopasdfghjklmnopqrs qwertyuiopasdfghjk1mnopqrs
 ```
 
-
 {aside}
-
 It would be much better if our testing program already compared the expected value
 with the actual results and would only print "ok" or "not ok"
 depending on success or failure.
@@ -181,18 +164,18 @@ ok
 {id: print-only-ok}
 
 {aside}
-
 Good so we are going to implement that now. For every test unit we
 create an if statement that will print either "ok" or "not ok"
 depending on the result.
 {/aside}
-![](examples/test-perl/tests/t05.pl)
+
+![](examples/test-simple/tests/t05.pl)
 
 
 Output:
 
 
-![](examples/test-perl/tests/t05.pl.out)
+![](examples/test-simple/tests/t05.pl.out)
 
 
 The output is as we expected. I mean we already know there is a bug somewhere.
@@ -200,14 +183,11 @@ We are supposed to report it to the developers, but right now we are focusing on
 test suite and its reporting capabilities.
 
 
-
-
 ## Refactor - Write the ok function
 {id: ok-function}
 {i: ok}
 
 {aside}
-
 As we are not only testers but also developers we quickly notice the
 repeating pattern and decide to move it to a function so we will write
 less code. As we would like to be short, we call the function
@@ -216,16 +196,15 @@ type as little as possible.
 {/aside}
 
 {aside}
-
 This ok() function gets a "true" or "false" value
 (that is the result of a comparison such as == in our examples.)
 {/aside}
 
 {aside}
-
 Reminder: In Perl undef, 0, "" and "0" count as false and all other
 values as true.
 {/aside}
+
 ![](examples/test-perl/tests/t06.pl)
 
 
