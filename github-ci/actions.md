@@ -220,3 +220,14 @@ auto-build-and-test-dist
 
 ![](examples/workflows/os-matrix.yml)
 
+
+## Change directory in GitHub Actions
+{id: change-directory-in-github-actions}
+
+![](examples/workflows/cd.yml)
+
+## Install packages on Ubuntu Linux in GitHub Actions
+{id: install-packages-on-ubuntu-linux-in-github-actions}
+
+![](examples/workflows/install-linux-packages.yml)
+

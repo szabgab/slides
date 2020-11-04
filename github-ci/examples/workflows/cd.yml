@@ -1,0 +1,21 @@
+name: cd
+
+on:
+  push:
+    branches: '*'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Experiment
+      run: |
+        pwd             # /home/runner/work/try/try
+        mkdir hello
+        cd hello
+        pwd             # /home/runner/work/try/try/hello
+

@@ -1,0 +1,19 @@
+name: Install Linux packages
+
+on:
+  push:
+    branches: '*'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Install package
+      run: |
+        sudo apt-get -y install tree
+        which tree
+
