@@ -711,10 +711,9 @@ Directory layout
 {i: Makefile.PL}
 {i: ExtUtils::MakeMaker}
 
-![](examples/test-perl/project_with_extutils_makemaker/Makefile.PL)
+![](examples/distribution/project_with_extutils_makemaker/Makefile.PL)
 
 {aside}
-
 In this example Makefile.PL we have to say what is the name of the
 module, and in which file is the version number - this value will be
 part of the generated filename. The LICENSE field is a relatively
@@ -733,10 +732,9 @@ $ make test
 ```
 
 {aside}
-
 In Windows you'll probably have nmake or dmake instead of make.
 
-In the above three steps "perl Makefile.PL" checks if all the 
+In the above three steps "perl Makefile.PL" checks if all the
 prerequisites are met and creates a Makefile.
 
 make would compile your code if you had some C code in your
@@ -761,23 +759,21 @@ $ make dist
 ```
 
 
-
 ## Makefile.PL for Module::Install
 {id: makefile-pl-module-install}
 {i: Makefile.PL}
 {i: Module::Install}
-![](examples/test-perl/project_with_module_install/Makefile.PL)
+
+![](examples/distribution/project_with_module_install/Makefile.PL)
 
 {aside}
-
 In Module::Install the declaration is cleaner and it does not need to be
-installed on the target machine. When running perl Makefile.PL it creates 
-and inc subdirectory and copies itself there. One should distribute 
+installed on the target machine. When running perl Makefile.PL it creates
+and inc subdirectory and copies itself there. One should distribute
 this directory as well.
 {/aside}
 
 {aside}
-
 On the target system Module::Install is loaded from this subdirectory.
 {/aside}
 
@@ -793,11 +789,11 @@ $ make dist
 ```
 
 
-
 ## Build.PL
 {id: build-pl}
 {i: Build.PL}
-![](examples/test-perl/project_with_module_build/Build.PL)
+
+![](examples/distribution/project_with_module_build/Build.PL)
 
 ```
 $ perl Build.PL
@@ -831,7 +827,6 @@ prove t/win32           t/win32/*.t
 ```
 
 {aside}
-
 If our test suite was setup as outlined above, even without a real perl module,
 we can also keep the test files in a directory hierarchy under t/ - in that case we have
 to indicate this in Makefile.PL or Build.PL. We can also run the tests script one-by-one
@@ -839,12 +834,10 @@ or per directory using the "prove" utility.
 {/aside}
 
 {aside}
-
 Let's see the layout of the sample CPAN packages we have, and run their tests:
 {/aside}
 
 {aside}
-
 By default "make test" or "perl Build test" will run all the t/*.t files.
 Sometimes we want to run them one by one. We could run
 **perl t/something.t** but that would try to use the installed
@@ -858,15 +851,12 @@ Prove has another frequently used flag: -v which puts it in verbose mode.
 {/aside}
 
 
-
 ## Exercise: MyTools multiply
 {id: exercise-test-simple}
 
 1. Setup a folder for CPAN module development with the necessary files and copy the examples/test-perl/lib/MyTools.pm files to be your module.
 1. Create a test script (.pl) and write at least 5 tests for the multiply() function.  See how it works when running directly with perl and using harness
 1. Rename the file and move it to t/sg.t Run it using make test and/or Build test
-
-
 
 ## Test::Simple
 {id: test-simple}
@@ -877,8 +867,3 @@ This is all very nice and Simple.
 
 What if you want More ?
 ```
-
-
-
-
-
