@@ -7,40 +7,40 @@ use Storable qw(dclone);
 use MetaCPAN::Client::Release;
 
 my @results_recent = (
-   {
-     'date' => '2020-11-04T12:01:11',
-     'distribution' => 'Robin-Hood',
-     'version' => '1.01'
-   },
-   {
-     'date' => '2020-11-04T10:31:20',
-     'distribution' => 'Princess Fiona',
-     'version' => '2.03'
-   },
-   {
-     'date' => '2020-11-04T09:51:50',
-     'distribution' => 'Zorg',
-     'version' => '3.21'
-   },
+    {
+        'date' => '2020-11-04T12:01:11',
+        'distribution' => 'Robin-Hood',
+        'version' => '1.01',
+    },
+    {
+        'date' => '2020-11-04T10:31:20',
+        'distribution' => 'Princess Fiona',
+        'version' => '2.03',
+    },
+    {
+        'date' => '2020-11-04T09:51:50',
+        'distribution' => 'Zorg',
+        'version' => '3.21',
+    },
 );
 
 
 my @results_author = (
-   {
-     'date' => '2020-11-04T12:01:11',
-     'distribution' => 'Mars-Base',
-     'version' => '1.11'
-   },
-   {
-     'date' => '2020-11-04T10:31:20',
-     'distribution' => 'Moon-Base',
-     'version' => '2.22'
-   },
-   {
-     'date' => '2020-11-04T09:51:50',
-     'distribution' => 'Earth',
-     'version' => '3.33'
-   }
+    {
+        'date' => '2020-11-04T12:01:11',
+        'distribution' => 'Mars-Base',
+        'version' => '1.11',
+    },
+    {
+        'date' => '2020-11-04T10:31:20',
+        'distribution' => 'Moon-Base',
+        'version' => '2.22',
+    },
+    {
+        'date' => '2020-11-04T09:51:50',
+        'distribution' => 'Earth',
+        'version' => '3.33',
+    }
 );
 
 
