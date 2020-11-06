@@ -92,152 +92,54 @@ perl t/isnt.t
 This isn't a good example though.
 
 
-
-
 ## Test::More isnt undef
 {id: test-more-isnt-undef}
 {i: undef}
-![](examples/test-perl/t/isnt_undef.t)
+
+![](examples/test-more/t/isnt_undef.t)
+
+```
+perl t/isnt_undef.t
+```
 
 Output:
 
-
-```
-1..2
-not ok 1
-#   Failed test at t/isnt_undef.t line 7.
-#          got: undef
-#     expected: anything else
-ok 2
-# Looks like you failed 1 test of 2.
-```
+![](examples/test-more/t/isnt_undef.t.out)
 
 
-## diag( just_a_message );
-{id: test-more-diag}
+## note or diag( just_a_message );
+{id: test-more-diag-note}
 {i: diag}
-
-
-`diag` prints out a message along with the rest of the output.
-
-
-
-
-Use it for whatever extra output in order to ensure that 
-your printouts will not interfere with future changes in the
-test environment modules (such as prove or Test::Harness).
-
-
-
-```
-diag "We are going to test the Foo-Bar device now";
-```
-
-
-```
-# We are going to test the Foo-Bar device now
-```
-![](examples/test-perl/t/33.t)
-
-**$ perl t/33.t**
-
-
-```
-1..3
-# Add two numbers
-ok 1 - 1+1
-ok 2 - 2+2
-# Add 3 numbers
-not ok 3 - 2+2+2
-#   Failed test '2+2+2'
-#   at t/33.t line 14.
-#          got: '4'
-#     expected: '6'
-# Looks like you failed 1 test of 3.
-```
-
-
-**$ prove t/33.t**
-
-
-```
-t/33.t .. # Add two numbers
-t/33.t .. 1/3 # Add 3 numbers
-
-#   Failed test '2+2+2'
-#   at t/33.t line 14.
-#          got: '4'
-#     expected: '6'
-# Looks like you failed 1 test of 3.
-t/33.t .. Dubious, test returned 1 (wstat 256, 0x100)
-Failed 1/3 subtests 
-
-Test Summary Report
--------------------
-t/33.t (Wstat: 256 Tests: 3 Failed: 1)
-  Failed test:  3
-  Non-zero exit status: 1
-Files=1, Tests=3,  0 wallclock secs
-    ( 0.02 usr  0.01 sys +  0.02 cusr  0.00 csys =  0.05 CPU)
-Result: FAIL
-Failed 1/1 test programs. 1/3 subtests failed.
-```
-
-
-## note( just_a_message );
-{id: test-more-note}
 {i: note}
 
+* `diag` prints out a message along with the rest of the output.
+* `note()` does the same, but when running under the prove it does not show up.
 
-`note()` does the same as `diag()`, but when running under the
-prove it does not show up.
-
-
-![](examples/test-perl/t/33_note.t)
-
-**$ perl t/33_note.t**
+Use it for whatever extra output in order to ensure that
+your printouts will not interfere with future changes in the
+test environment modules (such as `prove` or `Test::Harness`).
 
 
-```
-1..3
-# Add two numbers
-ok 1 - 1+1
-ok 2 - 2+2
-# Add 3 numbers
-# We have a bug here, we cannot add more than 2 numbers #173
-not ok 3 - 2+2+2
-#   Failed test '2+2+2'
-#   at t/t33_note.t line 16.
-#          got: '4'
-#     expected: '6'
-# Looks like you failed 1 test of 3.
-```
-
-**$ prove t/33_note.t**
-
+![](examples/test-more/t/messages.t)
 
 ```
-t/33_note.t .. # Add two numbers
-t/33_note.t .. 1/3 # Add 3 numbers
-
-#   Failed test '2+2+2'
-#   at t/33_note.t line 16.
-#          got: '4'
-#     expected: '6'
-# Looks like you failed 1 test of 3.
-t/33_note.t .. Dubious, test returned 1 (wstat 256, 0x100)
-Failed 1/3 subtests 
-
-Test Summary Report
--------------------
-t/33_note.t (Wstat: 256 Tests: 3 Failed: 1)
-  Failed test:  3
-  Non-zero exit status: 1
-Files=1, Tests=3,  0 wallclock secs
-    ( 0.02 usr  0.01 sys +  0.02 cusr  0.00 csys =  0.05 CPU)
-Result: FAIL
-Failed 1/1 test programs. 1/3 subtests failed.
+$ perl t/messages.t
 ```
+
+![](examples/test-more/t/messages.t.out)
+
+```
+prove t/messages.t
+```
+
+![](examples/test-more/t/messages.t.prove.out)
+
+```
+prove -v t/messages.t
+```
+
+![](examples/test-more/t/messages.t.prove-v.out)
+
 
 
 ## (note or diag) explain( just_a_variable );

@@ -1,0 +1,7 @@
+1..2
+not ok 1
+#   Failed test at t/isnt_undef.t line 7.
+#          got: undef
+#     expected: anything else
+ok 2
+# Looks like you failed 1 test of 2.

@@ -1,0 +1,9 @@
+# This is a diag message
+t/messages.t .. 
+1..1
+ok 1
+# This is a note message
+ok
+All tests successful.
+Files=1, Tests=1,  0 wallclock secs ( 0.01 usr  0.00 sys +  0.03 cusr  0.00 csys =  0.04 CPU)
+Result: PASS
