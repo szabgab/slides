@@ -44,21 +44,13 @@ to allow better error reporting.
 A drop-in replacement of Test::Simple.
 
 
-![](examples/test-perl/t/31.t)
-
-Output:
-
+![](examples/test-more/t/31.t)
 
 ```
-1..3
-ok 1 - 1+1
-ok 2 - 2+2
-not ok 3 - 2+2+2
-#   Failed test '2+2+2'
-#   at t/31.t line 12.
-# Looks like you failed 1 test of 3.
+perl t/31.t
 ```
 
+![](examples/test-more/t/31.t.out)
 
 ## Test::More is(  value,   expected_value,   name);
 {id: test-more-is}
@@ -69,63 +61,33 @@ It would be much better to see the expected value and the actually received valu
 This usually helps in locating the problem.
 
 
-![](examples/test-perl/t/32.t)
-
-Output:
-
+![](examples/test-more/t/32.t)
 
 ```
-1..3
-ok 1 - 1+1
-ok 2 - 2+2
-not ok 3 - 2+2+2
-#   Failed test '2+2+2'
-#   at t/32.t line 11.
-#          got: '4'
-#     expected: '6'
-# Looks like you failed 1 test of 3.
+perl t/32.t
 ```
 
+![](examples/test-more/t/32.t.out)
 
 See, in this case we can already guess that it cannot add 3 values.
 
-
-
-
-compares using `eq`
-
-
-
-
+* `is` compares using `eq`
 
 ## Test::More isnt( value, not_expected_value,  name);
 {id: test-more-isnt}
 {i: isnt}
 
-
 Sometimes you are expecting to get a value but you don't really know what.
 You just know one specific value that you want to make sure you have not
 received.
 
-
 ![](examples/test-perl/t/isnt.t)
 
-Output:
-
-
 ```
-1..3
-ok 1 - Deep Purple
-ok 2 - Beatles
-not ok 3 - ABBA
-#   Failed test 'ABBA'
-#   at t/isnt.t line 10.
-#     'ABBA'
-#         ne
-#     'ABBA'
-# Looks like you failed 1 test of 3.
+perl t/isnt.t
 ```
 
+![](examples/test-perl/t/isnt.t.out)
 
 This isn't a good example though.
 

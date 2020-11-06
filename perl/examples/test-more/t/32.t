@@ -2,7 +2,7 @@ use strict;
 use warnings;
 
 use lib 'lib';
-use MyTools;
+use MySimpleCalc qw(sum);
 
 use Test::More tests => 3;
 
