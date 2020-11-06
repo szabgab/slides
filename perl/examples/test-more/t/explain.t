@@ -1,14 +1,9 @@
 use strict;
 use warnings;
 
-use lib 'lib';
-use MyTools;
+use Test::More tests => 1;
 
-use Test::More tests => 2;
-
-
-is(sum(1, 1),    2,     '1+1');
-is(sum(2, 2),    4,     '2+2');
+ok 1;
 
 my $x = "String data";
 my $y = [ 1, 2, 3 ];

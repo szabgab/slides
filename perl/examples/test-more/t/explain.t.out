@@ -1,0 +1,18 @@
+1..1
+ok 1
+# String data
+# ARRAY(0x5573692156f8)
+# HASH(0x5573691b5b80)
+# String data
+# [
+#   1,
+#   2,
+#   3
+# ]
+# {
+#   'foo' => 'bar',
+#   'numbers' => [
+#     42,
+#     17
+#   ]
+# }

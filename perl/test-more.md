@@ -107,7 +107,7 @@ Output:
 ![](examples/test-more/t/isnt_undef.t.out)
 
 
-## note or diag( just_a_message );
+## note( message ) or diag( message );
 {id: test-more-diag-note}
 {i: diag}
 {i: note}
@@ -142,46 +142,22 @@ prove -v t/messages.t
 
 
 
-## (note or diag) explain( just_a_variable );
+## (note or diag) explain( a_variable );
 {id: test-more-explain}
 {i: explain}
 
-
-explain(); will recognize if its parameter is a simple scalar or a reference
-to a more complex data structure.
-
-
-
+* `explain();` will recognize if its parameter is a simple scalar or a reference to a more complex data structure.
 
 Its result must be passed to either note(); does or diag();
 
 
-![](examples/test-perl/t/33_explain.t)
-
-**$ perl t/33_explain.t**
-
+![](examples/test-more/t/explain.t)
 
 ```
-1..2
-ok 1 - 1+1
-ok 2 - 2+2
-# String data
-# ARRAY(0x7fc2aa804268)
-# HASH(0x7fc2ab0651e8)
-# String data
-# [
-#   1,
-#   2,
-#   3
-# ]
-# {
-#   'foo' => 'bar',
-#   'numbers' => [
-#     42,
-#     17
-#   ]
-# }
+perl t/explain.t
 ```
+
+![](examples/test-more/t/explain.t.out)
 
 
 ## TODO
