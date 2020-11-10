@@ -1,23 +1,6 @@
 # Test libraries
 {id: test-builder}
 
-## Override printing functions (mocking)
-{id: testing-override-printing-functions}
-{i: redefine}
-
-{aside}
-Sometimes there are functions that print directly to the screen.
-
-The program could be tested as an external application or we can redirect the
-STDOUT to a scalar variable in the memory of perl but  it might be cleaner
-to replace the display function, capture the data in a variable
-and then check that variable.
-{/aside}
-
-![](examples/test-perl/t/display.t)
-
-
-
 ## Multiple expected values
 {id: testing-multiple-expected-values}
 
@@ -209,7 +192,7 @@ We'll see some of them here.
 
 
 
-## Test::Builder object
+## Test::Builder object is a singleton
 {id: test-builder-object}
 ![](examples/test-perl/t/builder.t)
 
@@ -680,18 +663,15 @@ see [Test::Fatal](https://metacpan.org/pod/Test::Fatal).
 
 ## Sample script for testing Client-Server Win32
 {id: testing-client-server-win32}
-![](examples/test-perl/client_server_win32.t)
 
+![](examples/test-perl/client_server_win32.t)
 
 
 ## Exercise for Test::Builder
 {id: exercise-test-builder2}
 
-
-given the following convenience function (exported by MyTools.pm ),
+Given the following convenience function (exported by MyTools.pm ),
 please test if it works properly.
-
-
 
 ```
 my $fh = get_fh(MODE, FILENAME)
@@ -699,122 +679,23 @@ my $fh = get_fh(MODE, FILENAME)
 my $in = get_fh('&lt;',  'data.txt');
 ```
 
-
 ## Exercis: Math::RPN
 {id: exercise-math-rpn}
 
 Take the Math::RPN exercise and add further tests:
 
-
 * Test at least some of the warnings.
 * Make sure nothing else generates warnings
-
-
 
 ## Exercise: exceptions
 {id: exercise-test-fatal}
 
-
 Take the earlier exercise where we used Test::Exception and see how to rewrite it using
 Test::Fatal and/or Test::Trap.
 
-
-
-
 ## Solution
 {id: solution-test-builder}
+
 ![](examples/test-perl/t/get_fh.t)
-
-
-## Monkey Patching
-{id: monkey-patching}
-![](examples/mock/Monkey.pm)
-![](examples/mock/check_monkey.t)
-
-```
-1..4
-ok 1 - bananas
-ok 2 - is_hungry
-not ok 3 - bananas
-#   Failed test 'bananas'
-#   at check_monkey.t line 13.
-#          got: '9'
-#     expected: '10'
-not ok 4 - bananas
-#   Failed test 'bananas'
-#   at check_monkey.t line 15.
-#          got: '8'
-#     expected: '9'
-# Looks like you failed 2 tests of 4.
-```
-![](examples/mock/patch_monkey.t)
-
-```
-1..5
-ok 1 - bananas
-ok 2 - is_hungry
-ok 3 - eat called
-ok 4 - bananas
-ok 5 - bananas
-```
-
-
-## Mocking Time
-{id: mocking-time}
-{i: Test::MockTime}
-{i: time}
-![](examples/mock/time.t)
-![](examples/mock/MySession.pm)
-
-{aside}
-
-Make sure you load Test::MockTime before you load the module under testing. Otherwise the time function in that module won't be mocked.
-{/aside}
-
-
-## Mocking function of external call
-{id: mocking-function}
-{i: Test::Mock::Simple}
-![](examples/mock/MyWebAPI.pm)
-![](examples/mock/webapi.t)
-![](examples/mock/webapi_mock.t)
-
-
-## Mocking exception
-{id: mocking-function-exception}
-![](examples/mock/webapi_mock_exception.t)
-
-
-## Mocking function error
-{id: mocking-function-error}
-![](examples/mock/webapi_mock_error.t)
-
-
-## Mocking get in LWP::Simple
-{id: mocking-get-in-lwp-simple}
-![](examples/mock/webapi_mock_lwp_simple.t)
-
-
-## Capture STDOUT and STDERR in functions call
-{id: capture-stdout-and-stderr-in-function-call}
-{i: Capture::Tiny}
-{i: capture}
-
-{aside}
-There are many cases when we encounter a function that does more than one things. For example in the following simplified
-example we have a function that both makes some (simple) mathematical calculation and prints to the screen.
-For added fun it also prints to the Standard Error channel.
-
-We will probably want to refactor it to separate the concerns of calculating and IO, but first we'd like to write a unit-test.
-
-In this example we use the capture function of the Capture::Tiny module that will capture and return as a string everything that is
-printed to STDOUT and STDERR. (It could also capture the exit value of an external call, but this is not relevant in our case.
-
-The whole code is wrapped in a subtest so the external $result variable will be lexically scoped.
-{/aside}
-
-![](examples/test-perl/stdout-stderr/lib/CalcOutput.pm)
-
-![](examples/test-perl/stdout-stderr/t/test.t)
 
 
