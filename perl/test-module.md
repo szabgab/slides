@@ -335,15 +335,35 @@ Output:
 
 ![](examples/test-simple/tests/t14.pl.out)
 
+## Exercise: Write tests for fibo
+{id: exercise-tets-fibo}
+
+Given the following module test the `fibo()` function that returns the values of the [Fibonacci series](https://en.wikipedia.org/wiki/Fibonacci_number).
+
+![](examples/test-simple/lib/MyFibo.pm)
+
+## Exercise: Write a test to test the Anagram checker
+{id: exercise-anagrams}
+
+* [Anagrams](https://en.wikipedia.org/wiki/Anagram) are words with the exact same letter, but in different order.
+* silent - listen
+
+![](examples/test-simple/lib/MyAnagram.pm)
 
 ## Exercise: Enlarge the test
-{id: testing-exercise-enlarge-test-suit}
+{id: exercise-enlarge-test-suit}
 
 Take the test file from the last example ( examples/test-perl/tests/t14.pl ) and add a few more tests.
 
-Also write a few more tests for the `multiply()` and the
-`fibo()` functions. (The latter returns the fibonacci number so fibo(1) will return 1.
+## Solution: Write tests for fibo
+{id: solution-tets-fibo}
 
+![](examples/test-simple/tests/fibo.pl)
+
+## Solution: Write a test to test the Anagram checker
+{id: solution-anagrams}
+
+![](examples/test-simple/tests/anagram.pl)
 
 ## Enlarge our test suite
 {id: enlarge-the-test-suit}
