@@ -353,7 +353,7 @@ Given the following module test the `fibo()` function that returns the values of
 ## Exercise: Enlarge the test
 {id: exercise-enlarge-test-suit}
 
-Take the test file from the last example ( examples/test-perl/tests/t14.pl ) and add a few more tests.
+Take the test file from the last example ( examples/test-simple/tests/t14.pl ) and add a few more tests.
 
 ## Solution: Write tests for fibo
 {id: solution-tets-fibo}
@@ -365,15 +365,14 @@ Take the test file from the last example ( examples/test-perl/tests/t14.pl ) and
 
 ![](examples/test-simple/tests/anagram.pl)
 
-## Enlarge our test suite
-{id: enlarge-the-test-suit}
+## Solution: Enlarge our test suite
+{id: solution-enlarge-test-suit}
 
 ![](examples/test-simple/tests/t20.pl)
 
 Output:
 
 ![](examples/test-simple/tests/t20.pl.out)
-
 
 ## Refactor larger test suite
 {id: refactor-large-test-suit}
@@ -874,9 +873,9 @@ Prove has another frequently used flag: -v which puts it in verbose mode.
 ## Exercise: MyTools multiply
 {id: exercise-test-simple}
 
-1. Setup a folder for CPAN module development with the necessary files and copy the examples/test-perl/lib/MyTools.pm files to be your module.
+1. Setup a folder for CPAN module development with the necessary files and copy the modules from examples/test-simple/lib/ .
 1. Create a test script (.pl) and write at least 5 tests for the multiply() function.  See how it works when running directly with perl and using harness
-1. Rename the file and move it to t/sg.t Run it using make test and/or Build test
+1. Rename the file and move it to t/sg.t Run it using `make test` and/or `Build test`.
 
 ## Test::Simple
 {id: test-simple}

@@ -1,0 +1,16 @@
+# Add two numbers
+# Add 3 numbers
+t/35.t .. 
+1..3
+ok 1 - 1+1
+ok 2 - 2+2
+ok 3 - 2+2+2 # TODO fix bug summing more than 2 values
+ok
+All tests successful.
+
+Test Summary Report
+-------------------
+t/35.t (Wstat: 0 Tests: 3 Failed: 0)
+  TODO passed:   3
+Files=1, Tests=3,  0 wallclock secs ( 0.01 usr  0.00 sys +  0.03 cusr  0.00 csys =  0.04 CPU)
+Result: PASS

@@ -1,0 +1,8 @@
+1..2
+ok 1 - copyright
+not ok 2 - copyright
+#   Failed test 'copyright'
+#   at t/copyright.t line 12.
+#                   'Copyright 2000-19120 Gabor Szabo, all rights reserved.'
+#     doesn't match '(?^:Copyright 2000-\d{4} Gabor Szabo, all rights reserved.)'
+# Looks like you failed 1 test of 2.

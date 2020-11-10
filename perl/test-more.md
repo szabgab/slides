@@ -27,22 +27,30 @@ other functions and tools:
 Better error reporting.
 ```
 
-
 In the end every test can be based on the single ok() function.
 The additional functions mainly serve as convenience methods
 to allow better error reporting.
 
+## Test::Simpler ok(  trueness,     name);
+{id: test-simple-ok}
+{i: ok|Test::Simple}
 
+* The previous examples using Test::Simple.
 
+![](examples/test-more/t/30.t)
+
+```
+perl t/30.t
+```
+
+![](examples/test-more/t/30.t.out)
 
 
 ## Test::More ok(  trueness,     name);
 {id: test-more-ok}
 {i: ok|Test::More}
 
-
-A drop-in replacement of Test::Simple.
-
+* Test::More is a drop-in replacement of Test::Simple.
 
 ![](examples/test-more/t/31.t)
 
@@ -173,6 +181,10 @@ $ prove t/34.t
 
 ![](examples/test-more/t/34.t.prove.out)
 
+## TODO Verbose output
+{id: test-more-todo-verbose}
+{i: TODO}
+
 ```
 $ prove -v t/34.t
 ```
@@ -204,103 +216,64 @@ to set one or more tests to be in a TODO block.
 
 What if the bug gets fixed - accidentally?
 
+![](examples/test-more/t/35.t.out)
 
-```
-1..3
-# Add two numbers
-ok 1 - 1+1
-ok 2 - 2+2
-# Add 3 numbers
-ok 3 - 2+2+2 # TODO fix bug summing more than 2 values #173
-```
+![](examples/test-more/t/35.t.verbose.out)
 
-```
-t/35......# Add two numbers
-# Add 3 numbers
-ok
-All tests successful.
+## TODO: unexpected success (the code)
+{id: test-more-todo-unexpected-success-the-code}
 
-Test Summary Report
--------------------
-t/35.t (Wstat: 0 Tests: 3 Failed: 0)
-  TODO passed:   3
-Files=1, Tests=3,  0 wallclock secs
-  ( 0.01 usr  0.00 sys +  0.02 cusr  0.00 csys =  0.03 CPU)
-Result: PASS
-```
+![](examples/test-more/lib/MySimpleCalcFixed.pm)
 
+![](examples/test-more/t/35.t)
+
+
+## MyTools with various functions
+{id: mytools-with-various-functions}
+
+![](examples/test-more/lib/MyTools.pm)
 
 ## like(value, qr/expected regex/, name);
 {id: test-more-like-date}
 
-**last_update()**
+What if you don't want or can't realisticly expect an exact match with the result?
 
+You can use `like` that compares with regex `=~`.
+
+![](examples/test-more/show_last_update.pl)
 
 ```
-This page was last updated at 2014-09-23T04:43:44
+This page was last updated at 2020-11-10T09:19:38
 ```
-![](examples/test-perl/t/last_update.t)
 
-**perl t/last_update.t**
+![](examples/test-more/t/last_update.t)
 
+```
+prove t/last_update.t
+```
 
+![](examples/test-more/t/last_update.t.out)
 
 ## like(value, qr/expected regex/, name);
 {id: test-more-like}
 {i: like}
 
-**get_copyright()**
+![](examples/test-more/show_copyright.pl)
+
+![](examples/test-more/show_copyright.out)
+
+![](examples/test-more/t/copyright.t)
 
 
-```
-Copyright 2000-2008 Gabor Szabo, all rights reserved.
-```
-
-
-What if you don't want or can't realisticly expect an exact match with the result?
-
-
-
-
-You can use `like` that compares with =~
-
-
-![](examples/test-perl/t/copyright.t)
-
-**perl t/copyright.t**
-
-
-```
-1..2
-ok 1 - copyright
-not ok 2 - copyright
-#   Failed test 'copyright'
-#   at t/copyright.t line 11.
-#               'Copyright 2000-19108 Gabor Szabo, all rights reserved.'
-#     doesn't match
-#       '(?-xism:Copyright 2000-\d{4} Gabor Szabo, all rights reserved.)'
-# Looks like you failed 1 test of 2.
-```
+![](examples/test-more/t/copyright.t.out)
 
 
 ## Another example
 {id: test-more-like2}
-![](examples/intro-testing/like.t)
 
-**perl intro-testing/like.t**
+![](examples/test-more/t/like.t)
 
-
-```
-1..2
-ok 1 - there are some digits in the result
-not ok 2 - there are some digits in the result
-
-#   Failed test 'there are some digits in the result'
-#   at examples/intro/like.t line 8.
-#                   'This is another string with no number in it'
-#     doesn't match '(?-xism:\d+)'
-# Looks like you failed 1 test of 2.
-```
+![](examples/test-more/t/like.t.out)
 
 
 ## cmp_ok(   this,   op,  that,    name);

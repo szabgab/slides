@@ -1,0 +1,8 @@
+1..2
+ok 1 - there are some digits in the result
+not ok 2 - there are some digits in the result
+#   Failed test 'there are some digits in the result'
+#   at t/like.t line 8.
+#                   'This is another string with no number in it'
+#     doesn't match '(?^:\d+)'
+# Looks like you failed 1 test of 2.
