@@ -10,3 +10,20 @@
 
 ![](examples/other/Characters.java)
 
+## Regex
+{id: regex-matching-email}
+
+![](examples/other/MyRegex.java)
+
+## Split
+{id: split}
+
+![](examples/other/MySimpleSplit.java)
+
+## Substring
+{id: substring}
+
+
+![](examples/other/MySubstring.java)
+
+
