@@ -1,0 +1,8 @@
+ok 1
+Can't exec "ipconfig": No such file or directory at without_skip.t line 8.
+not ok 2
+#   Failed test at examples/intro/without_skip.t line 8.
+#                   undef
+#     doesn't match '(?-xism:Windows IP Configuration)'
+1..2
+# Looks like you failed 1 test of 2.

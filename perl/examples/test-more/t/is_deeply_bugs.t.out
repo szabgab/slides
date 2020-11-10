@@ -1,0 +1,24 @@
+
+#   Failed test 'Query 1'
+#   at t/is_deeply_bugs.t line 21.
+#     Structures begin differing at:
+#          $got->{errors} = '9'
+#     $expected->{errors} = '6'
+
+#   Failed test 'Query 2'
+#   at t/is_deeply_bugs.t line 24.
+#     Structures begin differing at:
+#          $got->{bugs} = Does not exist
+#     $expected->{bugs} = '3'
+# Looks like you failed 2 tests of 3.
+t/is_deeply_bugs.t .. 
+Dubious, test returned 2 (wstat 512, 0x200)
+Failed 2/3 subtests 
+
+Test Summary Report
+-------------------
+t/is_deeply_bugs.t (Wstat: 512 Tests: 3 Failed: 2)
+  Failed tests:  2-3
+  Non-zero exit status: 2
+Files=1, Tests=3,  0 wallclock secs ( 0.01 usr  0.00 sys +  0.03 cusr  0.00 csys =  0.04 CPU)
+Result: FAIL

@@ -45,7 +45,6 @@ sub _fibonacci {
     return (0) if $n == 0;
     return (0, 1) if $n == 1;
 
-    # add bug :-)
     return (0, 1, 1, 4, 3) if $n == 4;
 
     my @fib = (0, 1);

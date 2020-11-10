@@ -1,17 +1,18 @@
-1..10
-ok 1
-ok 2
-ok 3
-ok 4
-ok 5
-ok 6 - fibs 1
-ok 7 - fibs 2
-ok 8 - fibs 3
-not ok 9 - fibs 4
+
 #   Failed test 'fibs 4'
-#   at t/is_deeply.t line 19.
+#   at t/is_deeply.t line 20.
 #     Structures begin differing at:
 #          $got->[3] = '4'
 #     $expected->[3] = '2'
-ok 10 - fibs 5
-# Looks like you failed 1 test of 10.
+# Looks like you failed 1 test of 11.
+t/is_deeply.t .. 
+Dubious, test returned 1 (wstat 256, 0x100)
+Failed 1/11 subtests 
+
+Test Summary Report
+-------------------
+t/is_deeply.t (Wstat: 256 Tests: 11 Failed: 1)
+  Failed test:  10
+  Non-zero exit status: 1
+Files=1, Tests=11,  0 wallclock secs ( 0.01 usr  0.00 sys +  0.13 cusr  0.01 csys =  0.15 CPU)
+Result: FAIL

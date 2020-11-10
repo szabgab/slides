@@ -323,62 +323,32 @@ Another example with `is_deeply`
 checking the returned hash from a bug tracking system.
 
 
-![](examples/test-perl/t/is_deeply_bugs.t)
+![](examples/test-more/t/is_deeply_bugs.t)
 
-```
-1..3
-ok 1 - Query 0
-not ok 2 - Query 1
-#   Failed test 'Query 1'
-#   at t/is_deeply_bugs.t line 21.
-#     Structures begin differing at:
-#          $got->{errors} = '9'
-#     $expected->{errors} = '6'
-not ok 3 - Query 2
-#   Failed test 'Query 2'
-#   at t/is_deeply_bugs.t line 24.
-#     Structures begin differing at:
-#          $got->{errors} = Does not exist
-#     $expected->{errors} = '6'
-# Looks like you failed 2 tests of 3.
-```
+![](examples/test-more/t/is_deeply_bugs.t.out)
 
 {aside}
-
 What if we are testing a live system and so not interested in the exact values,
 just in the keys and the fact that the values are numbers?
 {/aside}
 
 {aside}
-
 Look at the code that generates the bug reports you'll see that testing the 4th return value
 - which is quite complex already - is hard. We cannot test against a fixed hash as some
 of the values are totally dynamic (e.g. a timestamp).
 {/aside}
-![](examples/test-perl/lib/MyBugs.pm)
 
+![](examples/test-more/lib/MyBugs.pm)
 
 
 ## Platform dependent tests
 {id: platform-dependent-tests}
-![](examples/intro-testing/without_skip.t)
 
-**perl examples/intro-testing/without_skip.t**
+![](examples/test-more/t/without_skip.t)
 
-
-```
-ok 1
-Can't exec "ipconfig": No such file or directory at without_skip.t line 8.
-not ok 2
-#   Failed test at examples/intro/without_skip.t line 8.
-#                   undef
-#     doesn't match '(?-xism:Windows IP Configuration)'
-1..2
-# Looks like you failed 1 test of 2.
-```
+![](examples/test-more/t/without_skip.t.out)
 
 {aside}
-
 Sometimes, you know that a part of your test suite isn't relevant.
 Running them - if at all possible - would report false results.
 Maybe some of the features of your system are platform dependent, you don't want to
@@ -393,10 +363,10 @@ to do that is to enclose the tests in a SKIP block.
 ## SKIP some tests
 {id: test-more-skip}
 {i: SKIP}
-![](examples/intro-testing/skip.t)
+
+![](examples/test-more/t/skip.t)
 
 Output:
-
 
 ```
 1..2
@@ -407,7 +377,8 @@ ok 2 # skip Windows related tests
 
 ## SKIP with locale
 {id: test-more-skip-with-locale}
-![](examples/intro-testing/skip_with_locale.t)
+
+![](examples/test-more/t/skip_with_locale.t)
 
 
 ## Stop running current test script
@@ -415,18 +386,20 @@ ok 2 # skip Windows related tests
 
 {aside}
 
-When running a test script sometimes we reach a 
-failure that is so problematic you cannot go on testing. 
+When running a test script sometimes we reach a
+failure that is so problematic you cannot go on testing.
 This can be in the scope of a single test script in which case
 you would call exit() to abort the current test script or it can
 be so bad that all the testing should stop. In that case you should call
 BAIL_OUT(). That will indicate the harness that it should not call
 any other test script.
 {/aside}
-![](examples/test-perl/t/exit.t)
 
-**perl examples/test-perl/t/exit.t**
+![](examples/test-more/t/exit.t)
 
+```
+perl examples/test-more/t/exit.t
+```
 
 ```
 1..3
@@ -438,11 +411,12 @@ not ok 2 - second
 # Looks like you failed 1 test of 2 run.
 ```
 
-**prove examples/test-perl/t/exit.t**
-
+```
+prove examples/test-more/t/exit.t
+```
 
 ```
-perl/t/exit.t .. 1/3 
+perl/t/exit.t .. 1/3
 #   Failed test 'second'
 #   at perl/t/exit.t line 7.
 # Looks like you planned 3 tests but ran 2.
@@ -466,9 +440,12 @@ Failed 1/1 test programs. 1/2 subtests failed.
 ## Stop all the test scripts
 {id: test-more-bail-out}
 {i: BAIL_OUT}
-![](examples/test-perl/t/bail_out.t)
 
-**perl examples/test-perl/t/bail_out.t**
+![](examples/test-more/t/bail_out.t)
+
+```
+perl examples/test-more/t/bail_out.t
+```
 
 
 ```
@@ -476,11 +453,13 @@ Failed 1/1 test programs. 1/2 subtests failed.
 ok 1 - first I
 not ok 2 - second II
 #   Failed test 'second II'
-#   at examples/test-perl/t/bail_out.t line 8.
+#   at examples/test-more/t/bail_out.t line 8.
 Bail out!  no way
 ```
 
-**prove examples/test-perl/t/bail_out.t**
+```
+prove examples/test-more/t/bail_out.t
+```
 
 
 ```
@@ -495,16 +474,13 @@ FAILED--Further testing stopped: no way
 ## Stop testing - with prove
 {id: test-more-stop-testing-with-harness}
 
-
 See earlier.
-
-
 
 
 ## Exercises
 {id: exercise-test-more}
 
-* Take the ifconfig/ipconfig test script (examples/intro-testing/skip_with_locale.t) and fix it so that there will be a skip block on the ifconfig part as well.
+* Take the ifconfig/ipconfig test script (examples/test-more/skip_with_locale.t) and fix it so that there will be a skip block on the ifconfig part as well.
 * Take a local copy of the Math::RPN module located in (examples/Math-RPN) and add 30 test cases.
 * You can also look for a module on CPAN - maybe one that you are using a lot.  Maybe one that you found a problem with.
 * Download the tar.gz file from CPAN unzip it (don't install the module) and write at least 20 tests.

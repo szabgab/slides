@@ -1,7 +1,7 @@
 use strict;
 use warnings;
 
-use Test::More tests => 10;
+use Test::More tests => 11;
 
 use FindBin;
 use lib "$FindBin::Bin/../lib";
@@ -12,6 +12,7 @@ is fibo(1), 1;
 is fibo(2), 1;
 is fibo(3), 2;
 is fibo(4), 3;
+is fibo(5), 5;
 
 is_deeply fibonacci(1), [0, 1],              'fibs 1';
 is_deeply fibonacci(2), [0, 1, 1],           'fibs 2';

@@ -8,7 +8,7 @@
     "version": "1.18",
     "files": [
         "testing-preface.md",
-        "test-module.md",
+        "test-simple.md",
         "test-more.md",
         "test-builder.md",
         "mocking.md",

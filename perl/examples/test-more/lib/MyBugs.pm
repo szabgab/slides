@@ -51,7 +51,7 @@ sub fetch_data_from_bug_tracking_system {
                     name  => "Missing severity bug",
                 },
             ],
-        },    
+        },
     );
     my $h = $sets[shift];
     return %$h;
