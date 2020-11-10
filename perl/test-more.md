@@ -268,7 +268,7 @@ prove t/last_update.t
 ![](examples/test-more/t/copyright.t.out)
 
 
-## Another example
+## Another example with like
 {id: test-more-like2}
 
 ![](examples/test-more/t/like.t)
@@ -281,48 +281,26 @@ prove t/last_update.t
 {i: cmp_ok}
 
 {aside}
-
 Sometimes an eq by is() or a regular expression by like() just isn't good enough.
 For example what if you would like to check the rand() function of perl? Its result 
 must be between 0 (inclusive) and 1 (non inclusive).
 {/aside}
 
 {aside}
-
 In other case you might have a function that should happen within a certain period of time.
 You don't have an exact expectation but you know the elapsed time must be between a lower
 and upper limit.
 {/aside}
 
-
 `cmp_ok` compares with any operator you like.
 
+![](examples/test-more/t/cmp_ok.t)
 
-![](examples/intro-testing/cmp_ok.t)
+![](examples/test-more/t/cmp_ok.t.out)
 
-**perl examples/intro-testing/cmp_ok.t**
+![](examples/test-more/t/cmp_ok.t.2.out)
 
-
-```
-1..2
-ok 1 - process was waiting at least 2 secs
-ok 2 - process was waiting at most 3 secs
-```
-
-**perl examples/intro-testing/cmp_ok.t**
-
-
-```
-1..2
-not ok 1 - process was waiting at least 2 secs
-#   Failed test 'process was waiting at least 2 secs'
-#   at examples/intro/cmp_ok.t line 11.
-#     '0'
-#         >=
-#     '2'
-ok 2 - process was waiting at most 3 secs
-# Looks like you failed 1 test of 2.
-```
+* Actually this is a really bad test as it can fail randomnly
 
 
 ## is_deeply(  complex_structure,   expected_complex structure,   name);
@@ -332,32 +310,9 @@ ok 2 - process was waiting at most 3 secs
 
 Compare two Perl data structures:
 
+![](examples/test-more/t/is_deeply.t)
 
-![](examples/test-perl/t/is_deeply.t)
-
-```
-1..10
-ok 1 - fib 1
-ok 2 - fib 2
-ok 3 - fib 3
-ok 4 - fib 4
-not ok 5 - fib 5
-#   Failed test 'fib 5'
-#   at t/is_deeply.t line 16.
-#          got: '7'
-#     expected: '5'
-ok 6 - fibs 1
-ok 7 - fibs 2
-ok 8 - fibs 3
-ok 9 - fibs 4
-not ok 10 - fibs 5
-#   Failed test 'fibs 5'
-#   at t/is_deeply.t line 22.
-#     Structures begin differing at:
-#          $got->[2] = '4'
-#     $expected->[2] = '2'
-# Looks like you failed 2 tests of 10.
-```
+![](examples/test-more/t/is_deeply.t.out)
 
 
 ## is_deeply on a hash

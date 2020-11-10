@@ -6,9 +6,15 @@ use DateTime;
 our $VERSION = '0.01';
 
 use Exporter qw(import);
-our @EXPORT_OK = qw(last_update get_copyright get_copyright_broken);
+our @EXPORT_OK = qw(
+    last_update
+    get_copyright
+    get_copyright_broken
+    fibo
+    fibonacci
+);
 
-#our @EXPORT = qw(sum fibonacci fibo multiply   scramble print_copyright
+#our @EXPORT = qw(sum multiply   scramble print_copyright
 #                dice get_fh
 #                call_exit
 #                last_update
@@ -18,37 +24,36 @@ our @EXPORT_OK = qw(last_update get_copyright get_copyright_broken);
 #    return $_[0] + $_[1];
 #}
 #
-#sub fibo {
-#    my @f = _fibonacci(@_);
-#    return $f[-1];
-#}
-#sub fibonacci {
-#    return [ _fibonacci(@_) ];
-#}
-#
-#sub _fibonacci {
-#    my ($n) = @_;
-#    die "Need to get a number\n" if not defined $n;
-#    if ($n <= 0) {
-#        warn "Given number must be > 0";
-#        return 0;
-#    }
-#    return 1 if $n == 1;
-#    if ($n ==2 ) { 
-#        return (1, 1);
-#    }
-#
-#    # add bug :-)
-#    if ($n == 5) {
-#        return (1, 1, 4, 3, 7);
-#    }
-#
-#    my @fib = (1, 1);
-#    for (3..$n) {
-#        push @fib, $fib[-1]+$fib[-2];
-#    }
-#    return @fib;
-#}
+sub fibo {
+    my @f = _fibonacci(@_);
+    return $f[-1];
+}
+sub fibonacci {
+    return [ _fibonacci(@_) ];
+}
+
+sub _fibonacci {
+    my ($n) = @_;
+
+    die "Need to get a number\n" if not defined $n or $n !~ /^[0-9]+$/;
+
+    if ($n < 0) {
+        warn "Given number must be > 0";
+        return 0;
+    }
+
+    return (0) if $n == 0;
+    return (0, 1) if $n == 1;
+
+    # add bug :-)
+    return (0, 1, 1, 4, 3) if $n == 4;
+
+    my @fib = (0, 1);
+    for (2..$n) {
+        push @fib, $fib[-1]+$fib[-2];
+    }
+    return @fib;
+}
 #
 #sub multiply {
 #    my $r = 1;

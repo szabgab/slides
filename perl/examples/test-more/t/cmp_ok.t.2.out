@@ -1,0 +1,9 @@
+1..2
+not ok 1 - process was waiting at least 2 secs
+#   Failed test 'process was waiting at least 2 secs'
+#   at t/cmp_ok.t line 11.
+#     '0'
+#         >=
+#     '2'
+ok 2 - process was waiting at most 3 secs
+# Looks like you failed 1 test of 2.
