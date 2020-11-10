@@ -26,6 +26,7 @@
         "win32-gui.md",
         "win32-ie.md",
         "x-windows.md",
-        "appendix-testing.md"
+        "appendix-testing.md",
+        "other.md"
     ]
 }
