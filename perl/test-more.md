@@ -159,33 +159,27 @@ perl t/explain.t
 
 ![](examples/test-more/t/explain.t.out)
 
-
 ## TODO
 {id: test-more-todo}
 {i: TODO}
 
 When you don't want to see the failing tests any more
 
-![](examples/test-perl/t/34.t)
-
-**$ perl t/34.t**
-
+![](examples/test-more/t/34.t)
 
 ```
-1..3
-# Add two numbers
-ok 1 - 1+1
-ok 2 - 2+2
-# Add 3 numbers
-not ok 3 - 2+2+2 # TODO fix bug summing more than 2 values #173
-#   Failed (TODO) test '2+2+2'
-#   at t/34.t line 16.
-#          got: '4'
-#     expected: '6'
+$ prove t/34.t
 ```
+
+![](examples/test-more/t/34.t.prove.out)
+
+```
+$ prove -v t/34.t
+```
+
+![](examples/test-more/t/34.t.prove-v.out)
 
 {aside}
-
 In the eXtreme Programming paradigm the following two key aspects are somewhat
 in contradiction:
 1) Write your test before you write your code.
@@ -203,22 +197,6 @@ In order to make the test suit happy there is a way to tell the harness tool tha
 is *supposed to fail*. That is, we know it will fail. What we can do to achieve this is
 to set one or more tests to be in a TODO block.
 {/aside}
-
-TODO with prove
-
-
-**$ prove t/34.t**
-
-
-```
-t/34......# Add two numbers
-# Add 3 numbers
-ok
-All tests successful.
-Files=1, Tests=3,  0 wallclock secs
-  ( 0.00 usr  0.00 sys +  0.02 cusr  0.00 csys =  0.02 CPU)
-Result: PASS
-```
 
 
 ## TODO: unexpected success
