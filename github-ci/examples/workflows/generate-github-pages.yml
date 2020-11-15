@@ -1,0 +1,40 @@
+name: Generate web page
+
+on:
+  push:
+    branches: '*'
+  schedule:
+    - cron: '*/5 * * * *'
+#  page_build:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Environment
+      run: |
+        printenv | grep GITHUB | sort
+
+    - name: Create page
+      run: |
+        mkdir -p docs
+        date >> docs/dates.txt
+        echo '<pre>'            > docs/index.html
+        sort -r docs/dates.txt >> docs/index.html
+        echo '</pre>'          >> docs/index.html
+
+    - name: Commit new page
+      if: github.repository == 'szabgab/try'
+      run: |
+        GIT_STATUS=$(git status --porcelain)
+        echo $GIT_STATUS
+        git config --global user.name 'Gabor Szabo'
+        git config --global user.email 'szabgab@users.noreply.github.com'
+        git add docs/
+        if [ "$GIT_STATUS" != "" ]; then git commit -m "Automated Web page generation"; fi
+        if [ "$GIT_STATUS" != "" ]; then git push; fi
+

@@ -231,3 +231,18 @@ auto-build-and-test-dist
 
 ![](examples/workflows/install-linux-packages.yml)
 
+## Generate GitHub pages using GitHub Actions
+{id: generate-github-pages}
+
+![](examples/workflows/generate-github-pages.yml)
+
+## Perl and OS matrix
+{id: perl-os-matrix}
+
+![](examples/workflows/perl-os-matrix.yml)
+
+## Workflow Dispatch (manually and via REST call)
+{id: workflow-dispatch}
+
+![](examples/workflows/workflow_dispatch.yml)
+

@@ -1,0 +1,19 @@
+name: Push and Workflow Dispatch
+
+on:
+  push:
+    branches: '*'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Single step
+      run: |
+        printenv | grep GITHUB | sort
+
