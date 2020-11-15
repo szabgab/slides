@@ -13,7 +13,7 @@ func main() {
 
 func fb(n int) string {
 	resp := ""
-	
+
 	if n % 3 == 0 {
 		resp += "Fizz"
 	}
