@@ -1,0 +1,50 @@
+name: CI
+
+on:
+    push:
+        branches: '*'
+    pull_request:
+        branches: '*'
+
+jobs:
+  perl-job:
+    strategy:
+      fail-fast: false
+      matrix:
+        runner: [ubuntu-latest, macos-latest, windows-latest]
+        perl: [ '5.32', '5.30' ]
+
+    runs-on: ${{matrix.runner}}
+    name: OS ${{matrix.runner}} Perl ${{matrix.perl}}
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Set up perl
+      uses: shogo82148/actions-setup-perl@v1
+      with:
+          perl-version: ${{ matrix.perl }}
+          #distribution: strawberry
+
+    - name: Install dependencies
+      run: |
+          cpanm --notest Module::Install
+          cpanm --installdeps --notest .
+
+    - name: Regular Tests
+      run: |
+          perl Makefile.PL
+          make
+          make test
+
+    - name: Show content of log files on Linux
+      if: ${{ failure() && startsWith( matrix.runner, 'ubuntu-' )  }}
+      run: cat /home/runner/.cpanm/work/*/build.log
+
+    - name: Show content of log files on Mac
+      if: ${{ failure() && startsWith( matrix.runner, 'macos-' )  }}
+      run: cat /Users/runner/.cpanm/work/*/build.log
+
+    - name: Show content of log files on Windows
+      if: ${{ failure() && startsWith( matrix.runner, 'windows-' )  }}
+      run: cat C:/Users/RUNNER~1/.cpanm/work/*/build.log
