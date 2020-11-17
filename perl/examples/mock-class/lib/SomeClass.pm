@@ -1,4 +1,4 @@
-package MyClass;
+package SomeClass;
 use strict;
 use warnings;
 

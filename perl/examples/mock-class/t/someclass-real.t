@@ -2,10 +2,10 @@ use strict;
 use warnings;
 use Test::More;
 
-use MyClass;
+use SomeClass;
 
-my $obj = MyClass->new;
-isa_ok $obj, 'MyClass';
+my $obj = SomeClass->new;
+isa_ok $obj, 'SomeClass';
 
 is $obj->name, undef;
 is $obj->name('Apple'), 'Apple';

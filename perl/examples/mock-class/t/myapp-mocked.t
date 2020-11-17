@@ -7,7 +7,7 @@ my $control;
 
 BEGIN {
 $control = qclass(
-    -implement => 'MyClass',
+    -implement => 'SomeClass',
     -with_new => 1,
     -attributes => [ qw(name) ],
     double => 22,

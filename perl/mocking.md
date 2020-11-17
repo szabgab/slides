@@ -183,7 +183,6 @@ perl -Ilib bin/echo.pl
 
 ![](examples/test-game/game_loop.pl)
 
-
 ## Testing time-dependent module
 {id: testing-time-dependent-module}
 
@@ -192,7 +191,6 @@ Module that must behave differently on a certain day:
 * On January 1 do something special.
 * First workday of every month pay salary.
 * On April 1 do something special.
-
 
 Code that maintains a session
 * Test if the timeout works well.
@@ -239,15 +237,35 @@ Make sure you load Test::MockTime before you load the module under testing. Othe
 ## Mocking class
 {id: mocking-class}
 
+* We have a class (our own code, or some 3rd party code)
 
-![](examples/mock-class/lib/MyClass.pm)
+![](examples/mock-class/lib/SomeClass.pm)
+
+## Application using the class
+{id: application-using-the-class}
+
+* This is the application that uses the class
 
 ![](examples/mock-class/lib/MyApp.pm)
 
-![](examples/mock-class/t/myapp-mocked.t)
+## Testing the 3rd party class
+{id: testing-the-3rd-party-class}
+
+* This is probably not very interesting, just testing an object-oriented module.
+
+![](examples/mock-class/t/someclass-real.t)
+![](examples/mock-class/t/someclass-mocked.t)
+
+
+## Testing our app using the 3rd party class
+{id: testing-our-app-real}
+
 ![](examples/mock-class/t/myapp-real.t)
-![](examples/mock-class/t/myclass-mocked.t)
-![](examples/mock-class/t/myclass-real.t)
+
+## Testing our app mocking the 3rd party class
+{id: testing-our-app-mock}
+
+![](examples/mock-class/t/myapp-mocked.t)
 
 
 ## Mocking MetaCPAN::Client
@@ -327,6 +345,4 @@ ok 5 - bananas
 ## Mocking get in LWP::Simple
 {id: mocking-get-in-lwp-simple}
 ![](examples/mock/webapi_mock_lwp_simple.t)
-
-
 

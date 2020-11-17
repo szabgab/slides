@@ -4,15 +4,15 @@ use Test::More;
 
 use Mock::Quick qw(qclass);
 my $control = qclass(
-    -implement => 'MyClass',
+    -implement => 'SomeClass',
     -with_new => 1,
     -attributes => [ qw(name) ],
     double => 7,
 );
 
 
-my $obj = MyClass->new;
-isa_ok $obj, 'MyClass';
+my $obj = SomeClass->new;
+isa_ok $obj, 'SomeClass';
 
 is $obj->name, undef;
 is $obj->name('Apple'), 'Apple';
