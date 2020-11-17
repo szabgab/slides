@@ -146,6 +146,15 @@ perl -Ilib bin/dice.pl
 ![](examples/mock-random/t/test-begin.t)
 
 ```
-prove -l t/test-begin.t
+prove -lv t/test-begin.t
+```
+
+## Mock random generator Mock::Sub
+{id: mock-random-generator-with-mock-sub}
+
+![](examples/mock-random/t/test-mock-sub.t)
+
+```
+prove -lv t/test-mock-sub.t
 ```
 
