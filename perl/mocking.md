@@ -130,4 +130,22 @@ The whole code is wrapped in a subtest so the external $result variable will be 
 ![](examples/test-perl/stdout-stderr/t/test.t)
 
 
+## Application using random
+{id: application-using-random}
+
+![](examples/mock-random/lib/MyRandomApp.pm)
+![](examples/mock-random/bin/dice.pl)
+
+```
+perl -Ilib bin/dice.pl
+```
+
+## Mock random generator in BEGIN
+{id: mock-random-generator-in-beging}
+
+![](examples/mock-random/t/test-begin.t)
+
+```
+prove -l t/test-begin.t
+```
 
