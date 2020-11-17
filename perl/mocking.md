@@ -248,6 +248,8 @@ Make sure you load Test::MockTime before you load the module under testing. Othe
 
 ![](examples/mock-class/lib/MyApp.pm)
 
+* How can we test that our application will report a correct error message if the 3rd party application breaks (instead of rasing an exception)?
+
 ## Testing the 3rd party class
 {id: testing-the-3rd-party-class}
 
