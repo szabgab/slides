@@ -140,6 +140,43 @@ perl -Ilib bin/calc.pl 7 8
 prove -lv t/test.t
 ```
 
+## Testing time-dependent module
+{id: testing-time-dependent-module}
+
+Module that must behave differently on a certain day:
+* every day do A, on Sunday do B)
+* On January 1 do something special
+* On April 1 do something special
+
+
+Code that maintains a session
+* Test if the timeout works well
+
+
+## Module with session timeout
+{id: module-with-session-timeout}
+
+![](examples/mock-elapsed-time/lib/MySession.pm)
+
+![](examples/mock-elapsed-time/bin/timer.pl)
+
+```
+perl -Ilib bin/timer.pl
+```
+
+## Mocking Time
+{id: mocking-time}
+{i: Test::MockTime}
+{i: time}
+
+* [Test::MockTime](https://metacpan.org/pod/Test::MockTime)
+
+![](examples/mock-elapsed-time/t/time.t)
+
+{aside}
+Make sure you load Test::MockTime before you load the module under testing. Otherwise the time function in that module won't be mocked.
+{/aside}
+
 
 ## Mocking class
 {id: mocking-class}
@@ -209,19 +246,6 @@ ok 3 - eat called
 ok 4 - bananas
 ok 5 - bananas
 ```
-
-
-## Mocking Time
-{id: mocking-time}
-{i: Test::MockTime}
-{i: time}
-![](examples/mock/time.t)
-![](examples/mock/MySession.pm)
-
-{aside}
-
-Make sure you load Test::MockTime before you load the module under testing. Otherwise the time function in that module won't be mocked.
-{/aside}
 
 
 ## Mocking function of external call

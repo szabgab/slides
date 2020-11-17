@@ -1,9 +1,6 @@
 use strict;
 use warnings;
 
-use FindBin qw($Bin);
-use lib $Bin;
-
 use Test::MockTime qw(set_relative_time);
 use Test::More;
 plan tests => 3;
