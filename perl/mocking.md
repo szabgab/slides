@@ -153,6 +153,19 @@ Code that maintains a session
 * Test if the timeout works well
 
 
+## Module with operation based on date
+{id: module-with-operation-based-on-date}
+
+![](examples/mock-time/lib/MyDaily.pm)
+
+![](examples/mock-time/bin/daily.pl)
+
+## Mocking fixed absolute time
+{id: mocking-fixed-absolute-time}
+
+![](examples/mock-time/t/daily.t)
+
+
 ## Module with session timeout
 {id: module-with-session-timeout}
 
@@ -164,8 +177,8 @@ Code that maintains a session
 perl -Ilib bin/timer.pl
 ```
 
-## Mocking Time
-{id: mocking-time}
+## Mocking relative Time
+{id: mocking-relative-time}
 {i: Test::MockTime}
 {i: time}
 
