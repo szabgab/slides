@@ -270,27 +270,31 @@ Make sure you load Test::MockTime before you load the module under testing. Othe
 ![](examples/mock-class/t/myapp-mocked.t)
 
 
-## Mocking function of external call
+## Mocking function of external web call
 {id: mocking-function}
 {i: Test::Mock::Simple}
-![](examples/mock/MyWebAPI.pm)
-![](examples/mock/webapi.t)
-![](examples/mock/webapi_mock.t)
+
+* We have an application that uses LWP::Simple
+* It 
+
+![](examples/mock-lwp/lib/MyWebAPI.pm)
+![](examples/mock-lwp/t/webapi.t)
+![](examples/mock-lwp/t/webapi_mock.t)
 
 
 ## Mocking exception
 {id: mocking-function-exception}
-![](examples/mock/webapi_mock_exception.t)
+![](examples/mock-lwp/t/webapi_mock_exception.t)
 
 
 ## Mocking function error
 {id: mocking-function-error}
-![](examples/mock/webapi_mock_error.t)
+![](examples/mock-lwp/t/webapi_mock_error.t)
 
 
 ## Mocking get in LWP::Simple
 {id: mocking-get-in-lwp-simple}
-![](examples/mock/webapi_mock_lwp_simple.t)
+![](examples/mock-lwp/t/webapi_mock_lwp_simple.t)
 
 ## Mocking MetaCPAN::Client
 {id: mocking-metacpan-client}
