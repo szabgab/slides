@@ -4,16 +4,18 @@ use warnings;
 
 use LWP::Simple qw(get);
 
-my $URL = 'http://www.dailymail.co.uk/';
-
 sub new {
-    return bless {}, shift;
+    my ($class, $url) = @_;
+    my $self = bless {}, $class;
+    $self->{url} = $url;
+    return $self;
 }
 
 sub count_strings {
     my ($self, @strings) = @_;
 
-    my $content = get $URL;
+    my $content = get $self->{url};
+    #my $content = LWP::Simple::get $self->{url};
 
     my %data;
     foreach my $str (@strings) {

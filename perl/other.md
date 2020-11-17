@@ -118,3 +118,10 @@ from failure to success. After every change run the tests again generating the a
 and upload it to Smolder. The first few results you should upload manually but later switch
 to the use of Smolder smoke signaler.
 
+## Mocking get in LWP::Simple
+{id: mocking-get-in-lwp-simple}
+
+
+![](examples/mock-lwp/t/webapi_mock_lwp_simple.t)
+
+

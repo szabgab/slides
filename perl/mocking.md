@@ -275,32 +275,60 @@ Make sure you load Test::MockTime before you load the module under testing. Othe
 {i: Test::Mock::Simple}
 
 * We have an application that uses LWP::Simple
-* It 
+* It gets a list of strings and tells us how many times each string appears on that web page.
+* We'll talk about the commented out code a bit later.
 
 ![](examples/mock-lwp/lib/MyWebAPI.pm)
+
+![](examples/mock-lwp/bin/count.pl)
+
+```
+perl -Ilib bin/count.pl https://code-maven.com/ perl python Java
+```
+
+## Test the application end-to-end
+{id: end-to-end-test}
+
+* This is a very old test, and even then it did not work
+* As it assumes a given content of that page
+
 ![](examples/mock-lwp/t/webapi.t)
+
+## Mocked web test
+{id: mocked-web-test}
+
+* Here we need to mock the get function as it is already in the MyWebAPI module
+* If we mocked the one inside LWP::Simple that would not impact the one we already have in the MyWebAPI module.
+
 ![](examples/mock-lwp/t/webapi_mock.t)
 
+## Mocking to reproduce error in our function
+{id: mocking-function-error}
+
+* Someone reported that in certain cases the count does not work properly.
+* For example when the multi-word name is spread to multiple lines (so there is a newline).
+* This is how we can test
+
+![](examples/mock-lwp/t/webapi_mock_error.t)
 
 ## Mocking exception
 {id: mocking-function-exception}
+
+* What if the `get` function raises an exception, how will our code handle?
+* Hint: it does not, so this test will break
+* But this is how we could test what will happen in that case without trying to figure out how to reliably create one using the real LWP::Simple
+
 ![](examples/mock-lwp/t/webapi_mock_exception.t)
 
+## Using MetaCPAN::Client
+{id: using-metacpan-client}
 
-## Mocking function error
-{id: mocking-function-error}
-![](examples/mock-lwp/t/webapi_mock_error.t)
-
-
-## Mocking get in LWP::Simple
-{id: mocking-get-in-lwp-simple}
-![](examples/mock-lwp/t/webapi_mock_lwp_simple.t)
+![](examples/mock-metacpan/lib/MyMetaCPAN.pm)
+![](examples/mock-metacpan/bin/my_metacpan_client.pl)
 
 ## Mocking MetaCPAN::Client
 {id: mocking-metacpan-client}
 
-![](examples/mock-metacpan/lib/MyMetaCPAN.pm)
-![](examples/mock-metacpan/bin/my_metacpan_client.pl)
 ![](examples/mock-metacpan/t/metacpan.t)
 
 
