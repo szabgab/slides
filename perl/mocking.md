@@ -157,6 +157,33 @@ perl -Ilib bin/echo.pl
 ![](examples/mock-stdin/t/echo.t)
 
 
+## Simple game to test
+{id: simple-game-to-test}
+
+![](examples/test-game/game_one.pl)
+
+## Test simple game (small)
+{id: test-simple-game-small}
+
+![](examples/test-game/test_game_one_small.t)
+
+
+## Test simple game (big)
+{id: test-simple-game-big}
+![](examples/test-game/test_game_one_big.t)
+
+
+## Test simple game (exact)
+{id: test-simple-game-exact}
+
+![](examples/test-game/test_game_one_exact.t)
+
+## Exercise: test game
+{id: exercise-test-game}
+
+![](examples/test-game/game_loop.pl)
+
+
 ## Testing time-dependent module
 {id: testing-time-dependent-module}
 
