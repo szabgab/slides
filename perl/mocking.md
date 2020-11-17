@@ -140,17 +140,35 @@ perl -Ilib bin/calc.pl 7 8
 prove -lv t/test.t
 ```
 
+## Code with STDIN
+{id: code-with-stdin}
+
+![](examples/mock-stdin/lib/MyEcho.pm)
+
+![](examples/mock-stdin/bin/echo.pl)
+
+```
+perl -Ilib bin/echo.pl
+```
+
+## Mock STDIN
+{id: mock-stdin}
+
+![](examples/mock-stdin/t/echo.t)
+
+
 ## Testing time-dependent module
 {id: testing-time-dependent-module}
 
 Module that must behave differently on a certain day:
-* every day do A, on Sunday do B)
-* On January 1 do something special
-* On April 1 do something special
+* every day do A, on Sunday do B.
+* On January 1 do something special.
+* First workday of every month pay salary.
+* On April 1 do something special.
 
 
 Code that maintains a session
-* Test if the timeout works well
+* Test if the timeout works well.
 
 
 ## Module with operation based on date
