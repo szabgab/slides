@@ -270,12 +270,35 @@ Make sure you load Test::MockTime before you load the module under testing. Othe
 ![](examples/mock-class/t/myapp-mocked.t)
 
 
+## Mocking function of external call
+{id: mocking-function}
+{i: Test::Mock::Simple}
+![](examples/mock/MyWebAPI.pm)
+![](examples/mock/webapi.t)
+![](examples/mock/webapi_mock.t)
+
+
+## Mocking exception
+{id: mocking-function-exception}
+![](examples/mock/webapi_mock_exception.t)
+
+
+## Mocking function error
+{id: mocking-function-error}
+![](examples/mock/webapi_mock_error.t)
+
+
+## Mocking get in LWP::Simple
+{id: mocking-get-in-lwp-simple}
+![](examples/mock/webapi_mock_lwp_simple.t)
+
 ## Mocking MetaCPAN::Client
 {id: mocking-metacpan-client}
 
 ![](examples/mock-metacpan/lib/MyMetaCPAN.pm)
 ![](examples/mock-metacpan/bin/my_metacpan_client.pl)
 ![](examples/mock-metacpan/t/metacpan.t)
+
 
 ## Override printing functions (mocking)
 {id: testing-override-printing-functions}
@@ -325,26 +348,4 @@ ok 4 - bananas
 ok 5 - bananas
 ```
 
-
-## Mocking function of external call
-{id: mocking-function}
-{i: Test::Mock::Simple}
-![](examples/mock/MyWebAPI.pm)
-![](examples/mock/webapi.t)
-![](examples/mock/webapi_mock.t)
-
-
-## Mocking exception
-{id: mocking-function-exception}
-![](examples/mock/webapi_mock_exception.t)
-
-
-## Mocking function error
-{id: mocking-function-error}
-![](examples/mock/webapi_mock_error.t)
-
-
-## Mocking get in LWP::Simple
-{id: mocking-get-in-lwp-simple}
-![](examples/mock/webapi_mock_lwp_simple.t)
 
