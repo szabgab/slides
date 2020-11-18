@@ -12,5 +12,5 @@ my @expected = (
 my @actual = @expected;
 $actual[0] .= 'x';
 
-eq_or_diff \@actual, @expected;
+eq_or_diff \@actual, \@expected;
 

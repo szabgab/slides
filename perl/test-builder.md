@@ -527,22 +527,12 @@ diff output when strings are not matching.
 
 ![](examples/test-perl/t/test_differences.t)
 
-**perl examples/test-perl/t/test_differences.t**
+```
+perl examples/test-perl/t/test_differences.t
+```
 
 
-```
-1..1
-not ok 1 - Another string
-#   Failed test 'Another string'
-#   at examples/test-perl/t/test_differences.t line 15.
-# +----+---------------------+----+--------------------+
-# | Elt|Got                  | Elt|Expected            |
-# +----+---------------------+----+--------------------+
-# *   0|'This is a stringx'  *   0|'This is a string'  *
-# *   1|'Another string'     *    |                    |
-# +----+---------------------+----+--------------------+
-# Looks like you failed 1 test of 1.
-```
+![](examples/test-perl/t/test_differences.t.out)
 
 
 ## Test::Deep
@@ -679,7 +669,7 @@ my $fh = get_fh(MODE, FILENAME)
 my $in = get_fh('&lt;',  'data.txt');
 ```
 
-## Exercis: Math::RPN
+## Exercise: Math::RPN
 {id: exercise-math-rpn}
 
 Take the Math::RPN exercise and add further tests:
