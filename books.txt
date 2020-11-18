@@ -13,6 +13,7 @@ google-gcp/gcp.json,google-gcp
 git/git.json,git
 git-intro/git.json,git-intro
 github-ci/github-ci.json,github-ci
+gitlab/gitlab.json,gitlab
 golang/go.json,golang
 groovy/groovy.json,groovy
 java/java.json,java

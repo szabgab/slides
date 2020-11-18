@@ -1,0 +1,11 @@
+{
+    "title": "GitLab",
+    "author": "Gabor Szabo",
+    "first_year": "2020",
+    "copyright_name": "Gabor Szabo",
+    "copyright_url": "https://szabgab.com/",
+    "version": "1.00",
+    "files": [
+        "pipelines.md"
+    ]
+}
