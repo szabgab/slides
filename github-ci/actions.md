@@ -246,6 +246,11 @@ auto-build-and-test-dist
 
 ![](examples/workflows/perl-os-matrix-show-logs.yml)
 
+## Perl and OS matrix - avoid warnings
+{id: perl-os-matrix-avoid-warnings}
+
+![](examples/workflows/perl-os-matrix-no-warnings.yml)
+
 ## Workflow Dispatch (manually and via REST call)
 {id: workflow-dispatch}
 
