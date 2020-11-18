@@ -11,7 +11,7 @@ no warnings 'once';
 };
 
 subtest test_game_big => sub {
-    my $input = "20";
+    my $input = "20\n";
     $random = 0.04;
     open my $stdin, '<', \$input  or die "Cannot open STDIN to read from string: $!";
     local *STDIN = $stdin;
