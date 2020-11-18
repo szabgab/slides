@@ -16,5 +16,5 @@ while (1) {
         next;
     }
     print "Found\n";
-    break;
+    last;
 }
