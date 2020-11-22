@@ -1,0 +1,37 @@
+prepare first:
+  stage: build
+  image: busybox:latest
+  script: echo Script
+  #
+  # after_script is optional but must be an array
+  after_script:
+    - echo After script
+  # before_script is optional but must be an array
+  before_script:
+    - echo Before script
+
+prepare second:
+    stage: build
+    script: echo Hello first
+
+test 1:
+    stage: test
+    script: echo Test1 stage
+
+test2:
+    stage: test
+    script: echo Test2 stage
+
+deploy one:
+    stage: deploy
+    script: echo Deploy one
+
+deploy two:
+    stage: deploy
+    script: echo  Deploy two
+
+#default:
+#  image: python:3.8
+#  before_script:
+#    - pip install pytest
+#  script: pytest

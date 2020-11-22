@@ -1,0 +1,12 @@
+anything:
+  image: busybox:latest
+
+  # script is required and can be a single value or an array
+  script: echo The script
+
+  # after_script is optional but must be an array
+  after_script:
+    - echo After script
+  # before_script is optional but must be an array
+  before_script:
+    - echo Before script

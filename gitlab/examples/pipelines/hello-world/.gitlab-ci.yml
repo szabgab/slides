@@ -1,0 +1,3 @@
+default:
+  image: busybox:latest
+  script: echo Hello World
