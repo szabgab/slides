@@ -116,3 +116,9 @@ job-name:
 * You can have `before_script` and `after_script` as a main-key in the YAML file.
 * A job that does not have `before_script` will inherit the central `before_script`. Same with `after_script`.
 
+
+## Cache
+{id: cache}
+
+![](examples/pipelines/cache/.gitlab-ci.yml)
+

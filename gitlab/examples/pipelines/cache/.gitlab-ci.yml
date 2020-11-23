@@ -1,0 +1,13 @@
+try:
+    script:
+      - echo two
+      - ls -l
+      - mkdir -p local
+      - ls -l local
+      - if [ -e local/date.txt ]; then cat local/date.txt; fi
+      - date >> local/date.txt
+
+cache:
+    paths:
+      - local
+
