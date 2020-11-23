@@ -380,4 +380,8 @@ ok 4 - bananas
 ok 5 - bananas
 ```
 
+## Test STDIN
+{id: test-stdin}
 
+![](examples/test-stdin/rectangle.pl)
+![](examples/test-stdin/test.t)
