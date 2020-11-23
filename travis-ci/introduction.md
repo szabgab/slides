@@ -319,3 +319,76 @@ install: true
 * [Python](travis-ci-for-python)
 * [Perl](travis-ci-for-perl)
 
+## Install travis-cli command line tool
+{id: install-travis-cli}
+
+* [](https://github.com/travis-ci/travis.rb#readme)
+
+```
+sudo apt-get install ruby
+gem install --user-install travis
+```
+
+Add the following to `~/.bash_profile`
+
+```
+export PATH=~/.gem/ruby/2.7.0/bin/:$PATH
+```
+
+## notifications email secure - sending to multiple addresses
+{id: notifications-email-secure}
+
+
+```
+travis encrypt "joe@example.com" --add notifications.email.recipients
+```
+
+{aside}
+This will want to rewrite and reformat yout `.travis.yml`. If you are ok with it then let it do it.
+If you don't want it to change your config file, then instead of that you might copy the new section it offers to add to
+your file and then you can add it manually. It will look something like this:
+{/aside}
+
+```
+notifications:
+  email:
+    recipients:
+      secure: c6AsRDQshSjrw+JIlaH7XbusT2zqVMAdhbFTWFogKc4LY9ytK2K2i2FVYp015p/14SRSK8HBYOpXJ3uy+vGBS2Eyovq0WSnTki7MLpx1GXhPOUyuiiLhtgHiTRzTK/3BdTlIOc9uKnw7Urw=
+```
+
+* Add another email address:
+
+```
+travis encrypt "jane@example.com" --append --add notifications.email.recipients
+```
+
+The result will look like this:
+
+```
+notifications:
+  email:
+    recipients:
+      - secure: c6AsRDQshSjrw+JIlaH7XbusT2zqVMAdhbFTWFogKc4LY9ytK2K2i2FVYp015p/14SRSK8HBYOpXJ3uy+vGBS2Eyovq0WSnTki7MLpx1GXhPOUyuiiLhtgHiTRzTK/3BdTlIOc9uKnw7Urw=
+      - secure: AsAAlsjfkshkSADQshSjrw+JIlaH7XbusT2zqVMAdhbFTWFogKc4LY9ytK2K2i2FVYp015p/14SRSK8HBYOpXJ3uy+vGBS2Eyovq0WSnTki7MLpx1GXhPOUyuiiLhtgHiTRzTK/3BdTlSFF=
+```
+
+{aside}
+It seems this will work without the "recipients" key as well but then only with one email address, even if you supply two.
+{/aside}
+
+
+## environment variables in reposiotry settings
+{id: environment-variables-in-repository-settings}
+
+* Configure in Travis-CI UI (save the unencrypted value there)
+* It can be used in the Travis jobs as regular environment variables
+
+* [Defining Variables in Repository Settings](https://docs.travis-ci.com/user/environment-variables/#defining-variables-in-repository-settings)
+
+
+## Deployment
+{id: deploymen}
+
+* [Deployment](https://docs.travis-ci.com/user/deployment/)
+
+
