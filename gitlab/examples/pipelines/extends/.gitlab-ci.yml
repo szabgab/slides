@@ -1,0 +1,18 @@
+variables:
+   LOCAL_DIR: 'strawberry'
+
+
+.code:
+   script: |
+      echo $LOCAL_DIR
+      echo $CASE_NAME
+
+one:
+    variables:
+       CASE_NAME: Foo
+    extends: .code
+
+two:
+    variables:
+       CASE_NAME: Bar
+    extends: .code

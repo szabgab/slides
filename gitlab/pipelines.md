@@ -132,3 +132,11 @@ job-name:
 
 ![](examples/pipelines/cache/.gitlab-ci.yml)
 
+## extends
+{id: extends}
+
+* [extends](https://docs.gitlab.com/ee/ci/yaml/#extends)
+
+![](examples/pipelines/extends/.gitlab-ci.yml)
+
+
