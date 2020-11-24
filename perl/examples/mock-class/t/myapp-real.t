@@ -2,9 +2,8 @@ use strict;
 use warnings;
 use Test::More;
 
-use MyApp;
-is MyApp::give_name('Foo'), 'Foo';
-is MyApp::double(11), 22;
+use MySalary;
+is MySalary::get_salary('Foo'), 100;
 
 done_testing;
 

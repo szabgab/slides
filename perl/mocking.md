@@ -239,14 +239,14 @@ Make sure you load Test::MockTime before you load the module under testing. Othe
 
 * We have a class (our own code, or some 3rd party code)
 
-![](examples/mock-class/lib/SomeClass.pm)
+![](examples/mock-class/lib/BaseSalary.pm)
 
 ## Application using the class
 {id: application-using-the-class}
 
 * This is the application that uses the class
 
-![](examples/mock-class/lib/MyApp.pm)
+![](examples/mock-class/lib/MySalary.pm)
 
 * How can we test that our application will report a correct error message if the 3rd party application breaks (instead of rasing an exception)?
 

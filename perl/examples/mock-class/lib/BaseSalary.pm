@@ -1,4 +1,4 @@
-package SomeClass;
+package BaseSalary;
 use strict;
 use warnings;
 
@@ -20,12 +20,11 @@ sub name {
     return $self->{name};
 }
 
-# plain function to double number
-sub double {
-    my ($self, $value) = @_;
-    print "double\n";
+sub get_base_salaray {
+    my ($self) = @_;
+    print "get_base_salary\n";
 
-    return 2 * $value;
+    return 1370;
 }
 
 1;

@@ -10,14 +10,14 @@ $control = qclass(
     -implement => 'SomeClass',
     -with_new => 1,
     -attributes => [ qw(name) ],
-    double => 22,
+    get_salary => undef,
 );
 }
 
 
 use MyApp;
 is MyApp::give_name('Foo'), 'Foo';
-is MyApp::double(11), 22;
+is MyApp::get_my_salary, 22;
 
 $control->undefine();
 

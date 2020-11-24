@@ -14,6 +14,8 @@ is message(), 'Welcome to Perl';
 set_absolute_time('1970-04-01T03:00:00Z');
 is message(), 'Welcome to Python';
 
+diag time;
+sleep(2);
 
 diag time;
 restore_time();

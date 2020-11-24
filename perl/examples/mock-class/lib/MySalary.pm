@@ -1,23 +1,19 @@
-package MyApp;
+package MySalary;
 use strict;
 use warnings;
 
-use SomeClass;
+use BaseSalary;
 
-sub give_name {
+sub get_salary {
     my ($name) = @_;
 
-    my $obj = SomeClass->new;
+    my $bonus = 100;
+
+    my $obj = BaseSalary->new;
     $obj->name($name);
+    my $base_salary = $obj->get_base_salary();
 
-    return $obj->name;
-}
-
-sub double {
-    my ($n) = @_;
-
-    my $obj = SomeClass->new;
-    return $obj->double($n);
+    return $base_salary + $bonus;
 }
 
 1;
