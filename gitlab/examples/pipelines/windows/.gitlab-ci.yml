@@ -1,0 +1,7 @@
+test_windows:
+    stage: test
+    tags:
+      - shared-windows
+    script:
+      - dir
+

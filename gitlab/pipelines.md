@@ -1,10 +1,17 @@
 # GitLab Pipelines
 {id: pipelines}
 
+## Documentation
+{id: documentation}
+
+* [documentation](https://docs.gitlab.com/)
+* [gitlab.com](https://docs.gitlab.com/ee/user/gitlab_com/)
+
 ## Runner
 {id: runner}
 
 * An agent (operating system, VM)
+* [shared runners](https://gitlab.com/szabgab/gl-try/-/settings/ci_cd#js-runners-settings)
 
 ## Hello World
 {id: hello-world}
@@ -86,9 +93,12 @@ job-name:
 ## Run on Windows
 {id: run-on-windows}
 
+![](examples/pipelines/windows/.gitlab-ci.yml)
+
 ## Run on Mac OSX
 {id: run-on-mac-osx}
 
+* Currently in closed beta
 
 ## Manual stage/job
 {id: manual-stage}
