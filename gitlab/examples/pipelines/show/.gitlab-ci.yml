@@ -1,0 +1,7 @@
+default:
+   image: busybox:latest
+   script:
+     - uname -a
+     - hostname
+     - printenv | sort
+

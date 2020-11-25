@@ -1,48 +1,115 @@
 # GitLab Pipelines
 {id: pipelines}
 
+## What is GitLab.org?
+{id: what-is-gitlab-org}
+
+* [GitLab.org](https://gitlab.org/)
+* Open Source Git hosting platform
+* "Complete DevOps platform"
+* Core is open source and free
+* Various add-ons cost money
+
+## What is GitLab.com?
+{id: what-is-gitlab-com}
+
+* [GitLab.com](https://gitlab.com/)
+* Cloud-based hosting of projects
+
+## ALMBox
+{id: almbox}
+
+* GitLab licenses in Israel
+* Tamir Gefen
+* [ALMBox](https://www.almtoolbox.com/)
+
+## CI - Continuous Integration
+{id: continuous-integration}
+
+* Shorten the feedback cycle
+* Run on every push
+
 ## Documentation
 {id: documentation}
 
-* [documentation](https://docs.gitlab.com/)
-* [gitlab.com](https://docs.gitlab.com/ee/user/gitlab_com/)
+* GitLab.org [documentation](https://docs.gitlab.com/)
+* GitLab.com specific [documentation](https://docs.gitlab.com/ee/user/gitlab_com/)
 
 ## Runner
 {id: runner}
 
 * An agent (operating system, VM)
 * [shared runners](https://gitlab.com/szabgab/gl-try/-/settings/ci_cd#js-runners-settings)
+* Mostly Linux
+* Windows is also avilable
+* Mac OSX is in beta
 
-## Hello World
-{id: hello-world}
+## Docker images
+{id: docker-images}
 
-![](examples/pipelines/hello-world/.gitlab-ci.yml)
+* On top of the runner we use Docker images
 
-## Pipeline Hierarchy
-{id: pipeline-hierachy}
+## .gitlab-ci.yml
+{id: gitlab-ci-yml}
 
-* Each repository can have a Pipeline (described in the .gitlab-ci.yml file).
-* Each Pipeline can have one or stages. One stage runs after the previous stage finished.
-* Each Stage can have 1 or more jobs. The jobs will run in parallel.
-* Each job must have a `script` and can, optionally, have a `before_script` and an `after_script` step.
+* Configuration is in `.gitlab-ci.yml`
+* [YAML](https://yaml.org/)
 
 ## Pipeline Linter
 {id: pipeline-linter}
 
 * CI/CD
 * Pipelines
-* CI Lint
+* [CI Lint](https://gitlab.com/szabgab/gl-try/-/ci/lint)
 
-[](https://gitlab.com/szabgab/gl-try/-/ci/lint)
+## Hello World
+{id: hello-world}
+
+![](examples/pipelines/hello-world/.gitlab-ci.yml)
+
+* default (required) - an arbitrary name we used for this job
+* script: (required) the command to execute in the Docker container
+
+* Current default Docker image is `ruby:2.5`
+
+
+## Hello World in container
+{id: hello-world-in-container}
+
+![](examples/pipelines/hello-world-in-container/.gitlab-ci.yml)
+
+* default (required) - an arbitrary name we used for this job
+* image: the name of the Docker image, by default from [Docker Hub](https://hub.docker.com/)
+* script: (required) the command to execute in the Docker container
+
+## Show what is in the container
+{id: show-the-container}
+
+![](examples/pipelines/show/.gitlab-ci.yml)
+
+## Pipeline Hierarchy
+{id: pipeline-hierachy}
+
+
+* **Pipeline** Each repository can have a Pipeline (described in the .gitlab-ci.yml file).
+* **Stages** Each Pipeline can have one or stages. One stage runs after the previous stage finished.
+* **Jobs** Each Stage can have 1 or more jobs. The jobs will run in parallel.
+* **Script** Each job must have a `script` and can, optionally, have a `before_script` and an `after_script` step.
 
 ## Default Stages
 {id: default-stages}
 
 By default there are 3 main stages:
 
+![](examples/pipelines/default-stages/.gitlab-ci.yml)
+
 * build
 * test
 * deploy
+
+
+![](img/default-stages.png)
+
 
 ## Define stages
 {id: define-stages}
@@ -50,16 +117,10 @@ By default there are 3 main stages:
 * If the 3 standard stages are not good for you, you can defined your own stage-names and order them as you like
 * Stage names are free text and can includes spaces.
 
-```
-stages:
-   - perpare
-   - lint
-   - compile
-   - unittest
-   - integration test
-   - acceptance test
-   - deploy
-```
+![](examples/pipelines/define-stages/.gitlab-ci.yml)
+
+
+![](img/define-stages.png)
 
 ## Jobs
 {id: jobs}

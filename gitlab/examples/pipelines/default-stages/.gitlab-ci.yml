@@ -1,0 +1,12 @@
+build-job:
+    stage: build
+    script: echo Build
+
+test-job:
+    stage: test
+    script: echo Test
+
+deploy-job:
+    stage: deploy
+    script: echo Deploy
+

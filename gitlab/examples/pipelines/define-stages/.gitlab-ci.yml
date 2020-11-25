@@ -1,0 +1,37 @@
+stages:
+   - prepare
+   - lint
+   - compile
+   - unittest
+   - integration test
+   - acceptance test
+   - deploy
+
+prepare-job:
+    stage: prepare
+    script: echo Prepare
+
+lint-job:
+    stage: lint
+    script: echo Lint
+
+compile-job:
+    stage: compile
+    script: echo Compile
+
+unit-test-job:
+    stage: unittest
+    script: echo Unit Test
+
+integration-test-job:
+    stage: integration test
+    script: echo Integration Test
+
+acceptance-test-job:
+    stage: acceptance test
+    script: echo Acceptance Test
+
+deploy-job:
+    stage: deploy
+    script: echo Deploy
+
