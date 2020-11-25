@@ -1,0 +1,23 @@
+build job:
+    stage: build
+    script: echo Build
+
+unit-test-job:
+    stage: test
+    script: echo Unit Test
+
+integration-test-job:
+    stage: test
+    script: echo Integration Test
+
+acceptance-test-job:
+    stage: test
+    script: echo Acceptance Test
+
+deploy-job:
+    stage: deploy
+    script: echo Deploy
+
+upload-job:
+    stage: deploy
+    script: echo  Upload

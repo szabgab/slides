@@ -129,16 +129,34 @@ By default there are 3 main stages:
 * The job names are free-text (can contain spaces as well)
 * There are a few reserved words such as `stages`, `before_script`, `after_script`, and [others](https://docs.gitlab.com/ee/ci/yaml/)
 
-## Set stage
+## Set stage of job
 {id: set-stage}
 
 * Each job is in one of the stages
-* Default stage is called 'test', better set your own stage name
+* Default stage is called **test**
+* It is better to set the stage name explicitely
 
 ```
 job-name:
   stage: build
 ```
+
+## Parallel jobs per stage
+{id: parallel-jobs-per-stage}
+
+![](examples/pipelines/parallel-jobs/.gitlab-ci.yml)
+
+![](img/parallel-jobs.png)
+
+## Manual interaction
+{id: manual-interaction}
+
+* [Manual interaction](https://docs.gitlab.com/ee/ci/pipelines/#add-manual-interaction-to-your-pipeline)
+
+![](examples/pipelines/manual-jobs/.gitlab-ci.yml)
+
+![](img/manual-jobs.png)
+
 
 ## Pick a Docker image
 {id: pick-docker-image}
