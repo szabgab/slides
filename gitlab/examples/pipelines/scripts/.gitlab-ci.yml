@@ -1,0 +1,26 @@
+before_script:
+   - echo Before outside
+after_script:
+   - echo After outside
+
+
+my-build:
+  stage: build
+  script: echo Build script
+  after_script:
+    - echo After build
+  before_script:
+    - echo Before build
+
+my-test:
+  stage: test
+  before_script:
+    - echo Before test
+  script:
+    - echo Test script
+
+my-deploy:
+  stage: deploy
+  script: echo Deploy script
+  after_script:
+    - echo After deploy
