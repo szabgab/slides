@@ -153,9 +153,9 @@ job-name:
 
 * [Manual interaction](https://docs.gitlab.com/ee/ci/pipelines/#add-manual-interaction-to-your-pipeline)
 
-![](examples/pipelines/manual-jobs/.gitlab-ci.yml)
+![](examples/pipelines/manual-interaction/.gitlab-ci.yml)
 
-![](img/manual-jobs.png)
+![](img/manual-interaction.png)
 
 
 ## Pick a Docker image
@@ -178,9 +178,6 @@ job-name:
 {id: run-on-mac-osx}
 
 * Currently in closed beta
-
-## Manual stage/job
-{id: manual-stage}
 
 
 ## Secret keys
