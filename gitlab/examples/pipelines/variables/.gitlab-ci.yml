@@ -1,0 +1,13 @@
+variables:
+   MYCOLOR: Blue
+
+my-test 1:
+  stage: test
+  variables:
+     MYCOLOR: Green
+  script:
+    - echo color $MYCOLOR
+
+my-test 2:
+  stage: test
+  script: echo color $MYCOLOR

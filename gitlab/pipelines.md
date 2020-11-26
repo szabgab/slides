@@ -179,6 +179,14 @@ job-name:
 
 ![](examples/pipelines/scripts/.gitlab-ci.yml)
 
+## Variables
+{id: variables}
+
+* [Variables](https://docs.gitlab.com/ee/ci/variables/)
+
+![](examples/pipelines/variables/.gitlab-ci.yml)
+
+
 ## extends
 {id: extends}
 
