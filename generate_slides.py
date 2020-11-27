@@ -41,23 +41,7 @@ def main():
         ext = "--ext " + args.ext
     else:
         ext = ''
-    with open(os.path.join(root, 'slides.txt')) as fh:
-        available_names = map(lambda s: s.rstrip("\n"), fh.readlines())
-
-    with open(os.path.join(root, 'books.txt')) as fh:
-        available_books = []
-        for line in fh:
-            line = line.rstrip("\n")
-            if re.search(r'\A\s*(#.*)?\Z', line):
-                continue
-            #print(line)
-            bookdir, filename, outdir = re.split(r'[/,]', line)
-            available_books.append({
-                'dir': bookdir,
-                'filename': filename,
-                'outdir': outdir,
-            })
-    #print(available_books)
+    available_names, available_books = get_availables()
 
     names = []
     books = []
@@ -84,6 +68,27 @@ def main():
     generate_index(args.ext)
     generate_sitemap_xml()
     copy_static_files()
+
+def get_availables():
+    with open(os.path.join(root, 'slides.txt')) as fh:
+        available_names = map(lambda s: s.rstrip("\n"), fh.readlines())
+
+    with open(os.path.join(root, 'books.txt')) as fh:
+        available_books = []
+        for line in fh:
+            line = line.rstrip("\n")
+            if re.search(r'\A\s*(#.*)?\Z', line):
+                continue
+            #print(line)
+            bookdir, filename, outdir = re.split(r'[/,]', line)
+            available_books.append({
+                'dir': bookdir,
+                'filename': filename,
+                'outdir': outdir,
+            })
+    #print(available_books)
+    return available_names, available_books
+
 
 def generate_singles(names, ext):
     for name in names:
