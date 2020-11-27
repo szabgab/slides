@@ -21,12 +21,7 @@ if not os.path.exists(slider):
     exit("{} does not exist".format(slider))
 
 def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument('--ext', default='html')
-    parser.add_argument('--keep', action='store_true')
-    parser.add_argument('names', nargs='*')
-    args = parser.parse_args()
-
+    args = get_arguments()
 
     html_root = os.path.join(root, 'html')
     #print("html_root={}".format(html_root))
@@ -68,6 +63,16 @@ def main():
     generate_index(args.ext)
     generate_sitemap_xml()
     copy_static_files()
+
+def get_arguments():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--ext', default='html')
+    parser.add_argument('--keep', action='store_true')
+    parser.add_argument('names', nargs='*')
+    args = parser.parse_args()
+
+    return args
+
 
 def get_availables():
     with open(os.path.join(root, 'slides.txt')) as fh:
