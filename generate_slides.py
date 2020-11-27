@@ -37,6 +37,18 @@ def main():
         ext = ''
 
     names, books = select_books(args)
+    if args.chapter:
+        original_json_file = os.path.join(root, books[0]['dir'], books[0]['filename'])
+        with open(original_json_file) as fh:
+            data = json.load(fh)
+        data['files'] = [ args.chapter ]
+        temp_json_file = os.path.join(root, books[0]['dir'], 'temp.json')
+        with open (temp_json_file, 'w') as fh:
+            json.dump(data, fh, sort_keys=True, indent=4, separators=(',', ': '), ensure_ascii=False)
+        books[0]['filename'] = 'temp.json'
+
+    #print(names)
+    #print(books)
 
 
     generate_singles(names, ext)
@@ -49,6 +61,7 @@ def get_arguments():
     parser = argparse.ArgumentParser()
     parser.add_argument('--ext', default='html')
     parser.add_argument('--keep', action='store_true')
+    parser.add_argument('--chapter')
     parser.add_argument('names', nargs='*')
     args = parser.parse_args()
 
@@ -75,8 +88,7 @@ def select_books(args):
     else:
         names = available_names
         books = available_books
-    #print(names)
-    #print(books)
+
     return names, books
 
 def get_availables():
