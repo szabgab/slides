@@ -52,6 +52,16 @@
 * [Mojolicious](http://mojolicio.us/)
 
 
+## External template
+{id: external-template}
+
+![](examples/hw-external-template/app.pl)
+
+![](examples/hw-external-template/templates/index.html.ep)
+
+```
+perl app.pl daemon
+```
 
 
 
