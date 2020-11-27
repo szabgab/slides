@@ -13,3 +13,7 @@ Main<br>
 @app.route("/user/<uid>")
 def api_info(uid):
     return uid
+
+@app.route("/user/")
+def user():
+    return 'User List'

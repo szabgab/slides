@@ -10,6 +10,8 @@ Main<br>
 <a href="/user/Joe">Joe</a><br>
 '''
 
+@app.route("/user/", defaults={ 'uid': 'zero' })
 @app.route("/user/<uid>")
 def api_info(uid):
     return uid
+

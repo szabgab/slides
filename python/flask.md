@@ -33,6 +33,9 @@ pip install flask
 
 ## Flask: Hello World
 {id: flask-hello-world}
+{i: Flask}
+{i: route}
+{i: app}
 
 {aside}
 The de-facto standard first thing to do in programming in every language or framework is to print "Hello World" on the screen.
@@ -370,8 +373,14 @@ In the following pages we are going to see several examples on how to map routes
 It is also called "url route registration".
 {/aside}
 
-## Flask Path params
+## Flask Path or route parameters
 {id: flask-path-params}
+
+{aside}
+In addition to having routes for fixed pathes, Flask can also handle routes where one or more parts of the path can have any value.
+
+It can be especially useful if the response is then looked up in some sort of a database.
+{/aside}
 
 ![](examples/flask/path/app.py)
 
@@ -379,7 +388,60 @@ It is also called "url route registration".
 FLASK_APP=app.py FLASK_DEBUG=0  flask run
 ```
 
-## Flask Path params (int)
+## Testing Flask Path or route parameters
+{id: testing-flask-path-params}
+
+![](examples/flask/path/test_app.py)
+
+* The route /user/ returns 404 not found
+
+{aside}
+The test here get a bit complex. We have 3 different tests function. Each one needs the variable returned by the `test_client` function.
+
+
+While the route with the parameter can handle any value, there is one route that it does not handle. If the visitor reached the page /user/ page
+either by mistake or by removing the parameter in the URL, then we'll see a "404 Not Found" page.
+{/aside}
+
+
+## Flask route parameters - separate route to root page
+{id: flask-path-params-separate-route}
+
+{aside}
+One way to overcome the starnge situation that /user/Foo works but /user/ gives a 404 Not Found error is to add an extra route that
+will specifically handle that case.
+{/aside}
+
+![](examples/flask/path-separate/app.py)
+
+```
+FLASK_APP=app.py FLASK_DEBUG=0  flask run
+```
+
+{aside}
+With the tests we can see that now /user/ works and returns the value we expected. Howerver there is anothe special address and that is
+the /user path, the one without the trailing slash. Flask will handle this too by automatiocally redirecting the browser to the /user/ page.
+
+You can see uisng the test case that the /user path returns a '308 Permanent Redirect' error and sets the "Location" in the response header.
+Regular browsers would automatically move to the /user/ page and show the response from there.
+
+Flask will also send some HTML content explaining the situation. This is only relevant for browsers, or other HTTP clients that don't automatically
+follow the redirection.
+
+For example curl will not automaticall follow this redirection. However if you supply the -L flag then it will.
+
+curl -L http://127.0.0.1:5000/user
+{/aside}
+
+![](examples/flask/path-separate/test_app.py)
+
+## Flask route parameters - default values
+{id: flask-path-params-default-values}
+
+![](examples/flask/path-default/app.py)
+![](examples/flask/path-default/test_app.py)
+
+## Flask Path or route parameters (int)
 {id: flask-path-params-int}
 {i: int}
 
@@ -390,7 +452,7 @@ FLASK_APP=app.py FLASK_DEBUG=0  flask run
 ```
 
 
-## Flask Path params add (int)
+## Flask Path or route parameters add (int)
 {id: flask-path-params-add-int}
 
 ![](examples/flask/path-int-add/app.py)
@@ -399,7 +461,7 @@ FLASK_APP=app.py FLASK_DEBUG=0  flask run
 FLASK_APP=app.py FLASK_DEBUG=0  flask run
 ```
 
-## Flask Path params add (path)
+## Flask Path or route parameters add (path)
 {id: flask-path-params-any-path}
 {i: path}
 
@@ -412,8 +474,9 @@ FLASK_APP=app.py FLASK_DEBUG=0  flask run
 ```
 
 
-## Jinja loop, conditional, include
+## Jinja template loop, conditional, include
 {id: jinja-loop-conditional}
+{i: jinja}
 
 ```
 .
@@ -467,6 +530,8 @@ the counter will keep increasing. For each user have its own counter as identifi
 
 ## Flask JSON API
 {id: flask-json-api}
+{i: jsonify}
+
 ![](examples/flask/20/app.py)
 
 ```
@@ -477,6 +542,8 @@ Content-Type: application/json
 
 ## Flask and AJAX
 {id: flask-and-ajax-plain-javascript}
+{i: jsonify}
+
 ![](examples/flask/21/app.py)
 ![](examples/flask/21/static/math.js)
 ![](examples/flask/21/templates/main.html)
@@ -484,6 +551,8 @@ Content-Type: application/json
 
 ## Flask and AJAX
 {id: flask-and-ajax-jquery}
+{i: jsonify}
+
 ![](examples/flask/22/app.py)
 ![](examples/flask/22/static/math.js)
 ![](examples/flask/22/templates/main.html)
