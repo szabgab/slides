@@ -31,11 +31,31 @@ def main():
     if not os.path.exists(html_root):
         os.mkdir(html_root)
 
-
     if args.ext:
         ext = "--ext " + args.ext
     else:
         ext = ''
+
+    names, books = select_books(args)
+
+
+    generate_singles(names, ext)
+    generate_multis(books, ext)
+    generate_index(args.ext)
+    generate_sitemap_xml()
+    copy_static_files()
+
+def get_arguments():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--ext', default='html')
+    parser.add_argument('--keep', action='store_true')
+    parser.add_argument('names', nargs='*')
+    args = parser.parse_args()
+
+    return args
+
+
+def select_books(args):
     available_names, available_books = get_availables()
 
     names = []
@@ -57,22 +77,7 @@ def main():
         books = available_books
     #print(names)
     #print(books)
-
-    generate_singles(names, ext)
-    generate_multis(books, ext)
-    generate_index(args.ext)
-    generate_sitemap_xml()
-    copy_static_files()
-
-def get_arguments():
-    parser = argparse.ArgumentParser()
-    parser.add_argument('--ext', default='html')
-    parser.add_argument('--keep', action='store_true')
-    parser.add_argument('names', nargs='*')
-    args = parser.parse_args()
-
-    return args
-
+    return names, books
 
 def get_availables():
     with open(os.path.join(root, 'slides.txt')) as fh:
