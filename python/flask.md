@@ -510,13 +510,34 @@ FLASK_APP=app.py FLASK_DEBUG=0  flask run
 ![](examples/flask/jinja/templates/incl/footer.html)
 
 
-## Jinja template inheritance - layout
+## Jinja extend template layout block
+{id: jinja-extend-template-layout}
+{i: layout}
+{i: extends}
+{i: block}
+
+{aside}
+We use **extend** to connect between templates.
+We use **block** both to mark the area that will be replaced and the content that will replace it.
+{/aside}
+
+![](examples/flask/template-extends/app.py)
+![](examples/flask/template-extends/test_app.py)
+![](examples/flask/template-extends/templates/index.html)
+![](examples/flask/template-extends/templates/layouts/base.html)
+
+## Jinja template inheritance - super
 {id: jinja-template-inheritance}
+{i: super}
+
+* Using the **super()** call we can inherit the content of the block
 
 ![](examples/flask/template-inheritance/app.py)
 ![](examples/flask/template-inheritance/test_app.py)
 ![](examples/flask/template-inheritance/templates/index.html)
+![](examples/flask/template-inheritance/templates/page.html)
 ![](examples/flask/template-inheritance/templates/layouts/base.html)
+
 
 ## Exercise: Flask persistent
 {id: exercise-flask-persistent-counter}
