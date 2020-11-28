@@ -510,6 +510,14 @@ FLASK_APP=app.py FLASK_DEBUG=0  flask run
 ![](examples/flask/jinja/templates/incl/footer.html)
 
 
+## Jinja template inheritance - layout
+{id: jinja-template-inheritance}
+
+![](examples/flask/template-inheritance/app.py)
+![](examples/flask/template-inheritance/test_app.py)
+![](examples/flask/template-inheritance/templates/index.html)
+![](examples/flask/template-inheritance/templates/layouts/base.html)
+
 ## Exercise: Flask persistent
 {id: exercise-flask-persistent-counter}
 
@@ -575,6 +583,12 @@ Content-Type: application/json
 ![](examples/flask/22/app.py)
 ![](examples/flask/22/static/math.js)
 ![](examples/flask/22/templates/main.html)
+
+## Flask POST JSON data to web application
+{id: flask-post-json-data}
+
+![](examples/flask/post-json/app.py)
+![](examples/flask/post-json/test_app.py)
 
 
 ## passlib
