@@ -16,12 +16,12 @@
 * [GitLab.com](https://gitlab.com/)
 * Cloud-based hosting of projects
 
-## ALMBox
-{id: almbox}
+## ALM-Toolbox
+{id: alm-toolbox}
 
 * GitLab licenses in Israel
 * Tamir Gefen
-* [ALMBox](https://www.almtoolbox.com/)
+* [ALM-Toolbox](https://www.almtoolbox.com/)
 
 ## CI - Continuous Integration
 {id: continuous-integration}
