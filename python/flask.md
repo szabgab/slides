@@ -259,6 +259,19 @@ curl --data "text=Sancho Panza" http://localhost:5000/echo
 
 ![](examples/flask/echo_post/client.py)
 
+## Exercise: Flask calculator
+{id: exercise-flask-calculator}
+
+Write a web application that has two entry boxes and a button and
+that will add the two numbers inserted into the entry boxes. Write two solutions.
+In one of them the form will be submitted using GET in the other one it will be submitted using POST.
+
+## Solution: Flask calculator
+{id: solution-flask-calculator}
+
+* See in the next few slides
+
+
 ## Flask GET and POST in two functions
 {id: flask-get-and-post-in-two-functions}
 {i: request}
@@ -284,106 +297,10 @@ curl --data "text=Sancho Panza" http://localhost:5000/echo
 
 ![](examples/flask/merged-get-post/test_app.py)
 
-
-## Flask: Jinja templates
-{id: flask-templates}
-
-![](examples/flask/tmpl/app.py)
-![](examples/flask/tmpl/templates/index.html)
-
-## Flask: templates with parameters
-{id: flask-templates-parameters}
-
-
-![](examples/flask/params/echo.py)
-![](examples/flask/params/templates/echo.html)
-![](examples/flask/params/test_echo.py)
-
-
-## Exercise: Flask calculator
-{id: exercise-flask-calculator}
-
-Write a web application that has two entry boxes and a button and
-that will add the two numbers inserted into the entry boxes.
-
-
-## Static files
-{id: flask-static-files}
-
-![](examples/flask/st/app.py)
-![](examples/flask/st/templates/main.html)
-![](examples/flask/st/templates/other.html)
-
-```
-.
-├── app.py
-├── static
-│   └── img
-│       └── python.png
-└── templates
-    ├── main.html
-    └── other.html
-```
-
-
-
 ## Flask Logging
 {id: flask-logging}
 
 ![](examples/flask/log/app.py)
-
-## Flask: Counter
-{id: flask-counter}
-
-![](examples/flask/counter/app.py)
-
-Access the page from several browsers. There is one single counter that lives as long as the process lives.
-
-
-## Color selector without session
-{id: flask-no-session}
-
-![](examples/flask/color/color.py)
-![](examples/flask/color/templates/main.html)
-
-
-## Session management
-{id: flask-session}
-
-![](examples/flask/color/app.py)
-
-
-## Flask custom 404 page
-{id: flask-404-page}
-
-![](examples/flask/404/app.py)
-![](examples/flask/404/app404.py)
-
-```
-curl -I http://localhost:5000/not
-
-HTTP/1.0 404 NOT FOUND
-```
-
-
-## Flask Error page
-{id: flask-error-page}
-
-![](examples/flask/500/app.py)
-
-Will not trigger in debug mode!
-
-```
-$ FLASK_APP=echo.py FLASK_DEBUG=0  flask run
-```
-
-```
-curl -I http://localhost:5000/not
-
-HTTP/1.0 500 INTERNAL SERVER ERROR
-```
-
-![](examples/flask/500/app500.py)
 
 ## Flask URL routing
 {id: flask-url-routing}
@@ -413,8 +330,8 @@ It can be especially useful if the response is then looked up in some sort of a 
 FLASK_APP=app.py FLASK_DEBUG=0  flask run
 ```
 
-## Testing Flask Path or route parameters
-{id: testing-flask-path-params}
+## Flask Path or route parameters - testing
+{id: flask-path-params-testing}
 
 ![](examples/flask/path/test_app.py)
 
@@ -498,12 +415,35 @@ FLASK_APP=app.py FLASK_DEBUG=0  flask run
 FLASK_APP=app.py FLASK_DEBUG=0  flask run
 ```
 
+## Exercise: Calculator with path
+{id: exercise-calculator-with-path}
+
+* Write an application that works like a calculator based on the path:
+
+```
+/add/2/3    displays 2+3=5
+/mul/3/4    displays 3*4=12
+```
+
+Then also add the following:
+
+```
+/sum/2/1.4/-78
+```
+
+* Write tests for each case
+
+## Solution: Calculator with path
+{id: solution-calculator-with-path}
+
+![](examples/flask/path-int-add/app.py)
+![](examples/flask/path-int-add/test_app.py)
+
 ## Flask Redirect
 {id: flask-redirect}
 {i: redirect}
 
 * redirect(external url)
-
 
 ![](examples/flask/redirect/app.py)
 ![](examples/flask/redirect/test_app.py)
@@ -541,6 +481,95 @@ FLASK_APP=app.py FLASK_DEBUG=0  flask run
 ![](examples/flask/random-redirect/app.py)
 ![](examples/flask/random-redirect/test_app.py)
 
+
+
+
+## Flask: Jinja templates
+{id: flask-templates}
+
+![](examples/flask/tmpl/app.py)
+![](examples/flask/tmpl/templates/index.html)
+
+## Flask: templates with parameters
+{id: flask-templates-parameters}
+
+
+![](examples/flask/params/echo.py)
+![](examples/flask/params/templates/echo.html)
+![](examples/flask/params/test_echo.py)
+
+
+
+## Static files
+{id: flask-static-files}
+
+![](examples/flask/st/app.py)
+![](examples/flask/st/templates/main.html)
+![](examples/flask/st/templates/other.html)
+
+```
+.
+├── app.py
+├── static
+│   └── img
+│       └── python.png
+└── templates
+    ├── main.html
+    └── other.html
+```
+
+## Flask: Counter
+{id: flask-counter}
+
+![](examples/flask/counter/app.py)
+
+Access the page from several browsers. There is one single counter that lives as long as the process lives.
+
+
+## Color selector without session
+{id: flask-no-session}
+
+![](examples/flask/color/color.py)
+![](examples/flask/color/templates/main.html)
+
+
+## Session management
+{id: flask-session}
+
+![](examples/flask/color/app.py)
+
+
+## Flask custom 404 page
+{id: flask-404-page}
+
+![](examples/flask/404/app.py)
+![](examples/flask/404/app404.py)
+
+```
+curl -I http://localhost:5000/not
+
+HTTP/1.0 404 NOT FOUND
+```
+
+
+## Flask Error page
+{id: flask-error-page}
+
+![](examples/flask/500/app.py)
+
+Will not trigger in debug mode!
+
+```
+$ FLASK_APP=echo.py FLASK_DEBUG=0  flask run
+```
+
+```
+curl -I http://localhost:5000/not
+
+HTTP/1.0 500 INTERNAL SERVER ERROR
+```
+
+![](examples/flask/500/app500.py)
 
 ## Jinja template loop, conditional, include
 {id: jinja-loop-conditional}

@@ -1,8 +1,8 @@
-from flask import Flask
+from flask import Flask 
 app = Flask(__name__)
 
 @app.route("/")
-def index():
+def main():
     return '''
 Main<br>
 <a href="/user/23">23</a><br>
@@ -10,6 +10,6 @@ Main<br>
 <a href="/user/Joe">Joe</a><br>
 '''
 
-@app.route("/user/<uid>")
+@app.route("/user/<int:uid>")
 def api_info(uid):
-    return uid
+    return str(uid)
