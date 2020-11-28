@@ -226,6 +226,19 @@ curl --data "text=Sancho Panza" http://localhost:5000/echo
 
 ![](examples/flask/echo_post/client.py)
 
+## Flask GET and POST in separated functions
+{id: flask-get-and-post-in-two-functions}
+
+![](examples/flask/separated-get-post/app.py)
+![](examples/flask/separated-get-post/test_app.py)
+
+
+## Flask GET and POST in one function
+{id: flask-get-and-post-in-one-function}
+
+![](examples/flask/merged-get-post/app.py)
+![](examples/flask/merged-get-post/test_app.py)
+
 
 ## Flask: templates
 {id: flask-templates}
