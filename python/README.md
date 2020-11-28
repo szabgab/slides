@@ -6,6 +6,12 @@ Functional - part 1 - ~ 40 min + 30 min exercise
 Functional - part 2 - 
 Iterators           - ~ 50 min + 60 min exercise
 
+## Flask
+
+* configuration of development vs testing vs productions deployment in external configuration files
+* Session with cookies
+* Session with JWT JSON Web Token
+* Show Debug mode vs not debug mode (security code when looking at the source code)
 
 ## TODO
 
