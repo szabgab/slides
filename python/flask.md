@@ -235,6 +235,8 @@ curl --data "text=Sancho Panza" http://localhost:5000/echo
 
 ## Flask GET and POST in one function
 {id: flask-get-and-post-in-one-function}
+{i: request.method}
+{i: methods}
 
 ![](examples/flask/merged-get-post/app.py)
 ![](examples/flask/merged-get-post/test_app.py)
@@ -501,6 +503,33 @@ FLASK_APP=app.py FLASK_DEBUG=0  flask run
 ```
 FLASK_APP=app.py FLASK_DEBUG=0  flask run
 ```
+
+## Flask Redirect
+{id: flask-redirect}
+{i: redirect}
+
+![](examples/flask/redirect/app.py)
+![](examples/flask/redirect/test_app.py)
+
+## Flask Internal Redirect with url_for
+{id: flask-internal-redirect}
+{i: redirect}
+{i: url_for}
+
+![](examples/flask/internal-redirect/app.py)
+![](examples/flask/internal-redirect/test_app.py)
+
+## Exercise: Random redirect
+{id: exercise-random-redirect}
+
+* Create an application that has a route called /random that will randomly redirect the visitor to on of several pre-defined URLs.
+* Create your own list of pre-defined URLs.
+
+## Solution: Random redirect
+{id: solution-random-redirect}
+
+![](examples/flask/random-redirect/app.py)
+![](examples/flask/random-redirect/test_app.py)
 
 
 ## Jinja template loop, conditional, include
