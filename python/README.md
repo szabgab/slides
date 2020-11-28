@@ -12,12 +12,6 @@ Iterators           - ~ 50 min + 60 min exercise
 Extracting extension from filename in Python
 filename, extension = os.path.splitext('/path/to/some/file.ext')
 
-Flask redirect
-redirect(external url)
-url_for('login')  Returns the url based on the functions name
-url_for('login', key=value) Pass parameters to the URL path  keys that are not part of the route definitions will be converted to query string values
-redirect(url_for('login') )
-
 
 * What do we do if we need better floating point calculation precision that what Pyhton has?
 

@@ -508,6 +508,9 @@ FLASK_APP=app.py FLASK_DEBUG=0  flask run
 {id: flask-redirect}
 {i: redirect}
 
+* redirect(external url)
+
+
 ![](examples/flask/redirect/app.py)
 ![](examples/flask/redirect/test_app.py)
 
@@ -516,8 +519,19 @@ FLASK_APP=app.py FLASK_DEBUG=0  flask run
 {i: redirect}
 {i: url_for}
 
+* url_for('login')  Returns the url based on the functions name
+
 ![](examples/flask/internal-redirect/app.py)
 ![](examples/flask/internal-redirect/test_app.py)
+
+## Flask Internal Redirect with parameters
+{id: flask-internal-redirect-parameters}
+
+* url_for('login', key=value) Pass parameters to the URL path  keys that are not part of the route definitions will be converted to query string values
+
+![](examples/flask/redirect-with-parameters/app.py)
+![](examples/flask/redirect-with-parameters/test_app.py)
+
 
 ## Exercise: Random redirect
 {id: exercise-random-redirect}
@@ -527,6 +541,8 @@ FLASK_APP=app.py FLASK_DEBUG=0  flask run
 
 ## Solution: Random redirect
 {id: solution-random-redirect}
+
+* [random.choice](https://docs.python.org/3/library/random.html#random.choice)
 
 ![](examples/flask/random-redirect/app.py)
 ![](examples/flask/random-redirect/test_app.py)
@@ -728,4 +744,10 @@ True
 
 ![](examples/flask/api_paremeters_required/api.py)
 ![](examples/flask/api_paremeters_required/test_api.py)
+
+
+## Login
+{id: login}
+
+![](examples/flask/login/app.py)
 
