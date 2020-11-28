@@ -197,7 +197,16 @@ did not exists. We could even provide a default value to the "get" method".
 
 
 ![](examples/flask/echo_get/app.py)
+
+## Flask: Echo GET - testing
+{id: flask-echo-get-testing}
+
 ![](examples/flask/echo_get/test_app.py)
+
+## Flask: Echo GET - client
+{id: flask-echo-get-client}
+{i: requests}
+{i: curl}
 
 ```
 curl http://localhost:5000/
@@ -205,7 +214,6 @@ curl http://localhost:5000/echo?text=Sanch+Panza
 ```
 
 ![](examples/flask/echo_get/client.py)
-
 
 ## Flask: Echo POST
 {id: flask-echo-post}
@@ -218,7 +226,16 @@ In this case too we could use the "request.form.get('field', '')" call but inste
 {/aside}
 
 ![](examples/flask/echo_post/app.py)
+
+## Flask: Echo POST - testing
+{id: flask-echo-post-testing}
+
 ![](examples/flask/echo_post/test_app.py)
+
+## Flask: Echo POST - client
+{id: flask-echo-post-client}
+{i: request}
+{i: request.form}
 
 ```
 curl --data "text=Sancho Panza" http://localhost:5000/echo
@@ -226,10 +243,14 @@ curl --data "text=Sancho Panza" http://localhost:5000/echo
 
 ![](examples/flask/echo_post/client.py)
 
-## Flask GET and POST in separated functions
+## Flask GET and POST in two functions
 {id: flask-get-and-post-in-two-functions}
 
 ![](examples/flask/separated-get-post/app.py)
+
+## Flask GET and POST in two functions - testing
+{id: flask-get-and-post-in-two-functions-testing}
+
 ![](examples/flask/separated-get-post/test_app.py)
 
 
@@ -239,29 +260,19 @@ curl --data "text=Sancho Panza" http://localhost:5000/echo
 {i: methods}
 
 ![](examples/flask/merged-get-post/app.py)
+
+
+## Flask GET and POST in one function - testing
+{id: flask-get-and-post-in-one-function-testing}
+
 ![](examples/flask/merged-get-post/test_app.py)
 
 
-## Flask: templates
+## Flask: Jinja templates
 {id: flask-templates}
 
-![](examples/flask/tmpl/echo_post.py)
+![](examples/flask/tmpl/app.py)
 ![](examples/flask/tmpl/templates/index.html)
-
-```
-FLASK_APP=echo_post FLASK_DEBUG=0 flask run
-```
-**Internal Server Error**
-
-```
-FLASK_APP=echo_post FLASK_DEBUG=1 flask run
-```
-
-## Flask: templates
-{id: flask-templates-work}
-
-![](examples/flask/tmpl/echo_post_work.py)
-
 
 ## Flask: templates with parameters
 {id: flask-templates-parameters}
@@ -750,4 +761,13 @@ True
 {id: login}
 
 ![](examples/flask/login/app.py)
+
+
+## Configuratio
+{id: flask-configuration}
+
+* [Configuration](https://flask.palletsprojects.com/config)
+
+* You can access and change it via the `app.config` dictionary in the applications code
+
 
