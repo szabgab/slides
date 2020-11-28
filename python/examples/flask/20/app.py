@@ -4,8 +4,7 @@ app = Flask(__name__)
 @app.route("/")
 def main():
     return '''
-Main
-<a href="/api/info">info</a>
+Main <a href="/api/info">info</a>
 '''
 
 @app.route("/api/info")

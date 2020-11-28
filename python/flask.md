@@ -185,6 +185,15 @@ pytest
 
 ## Flask: Echo GET
 {id: flask-echo-get}
+{i: request}
+{i: request.args}
+
+{aside}
+request.args is a dictionary. We could write request.args['name'] but then it would raise and excpetion and the whole application would crash
+if the user did not send in a value for the "name" field. We could check if the key exists before trying to access the value using the "in" operator,
+but that seems like a bit of a waste of work here. Instead we call the "get" method that every dictionary in Python has. It will return None, if the key "name"
+did not exists. We could even provide a default value to the "get" method".
+{/aside}
 
 
 ![](examples/flask/echo_get/app.py)
@@ -200,6 +209,13 @@ curl http://localhost:5000/echo?text=Sanch+Panza
 
 ## Flask: Echo POST
 {id: flask-echo-post}
+{i: request}
+{i: request.form}
+
+{aside}
+There is also a dictionary called "request.form" that is get filled by data submitted using a POST request. This too is a plain Python dictionary.
+In this case too we could use the "request.form.get('field', '')" call but instead of that we used the "in" operator and then the regular dicstionary look-up.
+{/aside}
 
 ![](examples/flask/echo_post/app.py)
 ![](examples/flask/echo_post/test_app.py)
@@ -539,17 +555,20 @@ $ curl -I http://localhost:5000/api/info
 HTTP/1.0 200 OK
 Content-Type: application/json
 ```
+![](examples/flask/20/test_app.py)
 
-## Flask and AJAX
+## Flask and AJAX with Vanila JavaScript
 {id: flask-and-ajax-plain-javascript}
 {i: jsonify}
 
 ![](examples/flask/21/app.py)
+![](examples/flask/21/test_app.py)
+
 ![](examples/flask/21/static/math.js)
 ![](examples/flask/21/templates/main.html)
 
 
-## Flask and AJAX
+## Flask and AJAX with JQuery
 {id: flask-and-ajax-jquery}
 {i: jsonify}
 
@@ -560,6 +579,7 @@ Content-Type: application/json
 
 ## passlib
 {id: passlib}
+
 ![](examples/flask/use_passlib.py)
 
 ```
