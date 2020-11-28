@@ -84,6 +84,14 @@ Once you have enough, you can hit Ctr-C to stop the program.
 Linux/Mac:
 
 ```
+$ export FLASK_APP=app
+$ export FLASK_DEBUG=1
+$ flask run
+```
+
+or
+
+```
 FLASK_APP=app FLASK_DEBUG=1 flask run
 
 Visit: http://127.0.0.1:5000/
@@ -98,7 +106,14 @@ set FLASK_DEBUG=1
 flask run
 ```
 
+Other parameters
+
+```
+$ FLASK_APP=echo.py FLASK_DEBUG=1  flask run --port 8080 --host 0.0.0.0
+```
+
 * To stop it use `Ctrl-C`
+
 
 ## Flask: testing hello world
 {id: flask-hello-world-test}
@@ -236,6 +251,7 @@ In this case too we could use the "request.form.get('field', '')" call but inste
 {id: flask-echo-post-client}
 {i: request}
 {i: request.form}
+{i: curl}
 
 ```
 curl --data "text=Sancho Panza" http://localhost:5000/echo
@@ -245,6 +261,7 @@ curl --data "text=Sancho Panza" http://localhost:5000/echo
 
 ## Flask GET and POST in two functions
 {id: flask-get-and-post-in-two-functions}
+{i: request}
 
 ![](examples/flask/separated-get-post/app.py)
 
@@ -282,40 +299,6 @@ curl --data "text=Sancho Panza" http://localhost:5000/echo
 ![](examples/flask/params/templates/echo.html)
 ![](examples/flask/params/test_echo.py)
 
-
-## Flask: runner
-{id: flask-runner}
-
-```
-$ cd examples/flask/params
-```
-
-```
-$ export FLASK_APP=echo
-$ export FLASK_DEBUG=1
-$ flask run
-```
-
-or
-
-
-```
-$ FLASK_APP=echo.py FLASK_DEBUG=1  flask run
-```
-
-on windows
-
-```
-> set FLASK_APP=echo
-> set FLASK_DEBUG=1
-> flask run
-```
-
-Other parameters
-
-```
-$ FLASK_APP=echo.py FLASK_DEBUG=1  flask run --port 8080 --host 0.0.0.0
-```
 
 ## Exercise: Flask calculator
 {id: exercise-flask-calculator}
