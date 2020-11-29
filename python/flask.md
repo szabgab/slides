@@ -500,12 +500,19 @@ Then also add the following:
 ## Flask: templates with parameters
 {id: flask-templates-parameters}
 
+![](examples/flask/jinja-parameters/app.py)
+![](examples/flask/jinja-parameters/templates/echo.html)
+![](examples/flask/jinja-parameters/test_app.py)
+
+
+## Flask: templates with conditional
+{id: flask-templates-conditional}
+{i: if}
+{i: endif}
 
 ![](examples/flask/jinja-conditional/app.py)
 ![](examples/flask/jinja-conditional/templates/echo.html)
 ![](examples/flask/jinja-conditional/test_app.py)
-
-
 
 ## Jinja template loop, conditional, include
 {id: jinja-loop-conditional}

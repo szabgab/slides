@@ -15,5 +15,5 @@ def test_app():
     rv = web.post('/echo')
     assert rv.status == '200 OK'
     assert b'<form action="/echo" method="POST">' in rv.data
-    assert b'You said' not in rv.data
+    assert b'You said: <b></b>' in rv.data
 
