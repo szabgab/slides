@@ -26,6 +26,21 @@ execute and commit
 
 ![](examples/sqlite/sql_create.py)
 
+## SELECT data from SQLite database
+{id: sqlite-select}
+{i: SELECT|sqlite}
+{i: fetchone|sqlite}
+
+![](examples/sqlite/sql_select.py)
+
+Use the result as an iterator, or call the fetchone method. If the result set might be empty,
+then the fetchone might return None. Check for it!
+
+## SELECT data from SQLite database into dictionaries
+{id: sqlite-select-dictionary}
+
+![](examples/sqlite/sql_select_dictionaries.py)
+
 
 ## INSERT data into SQLite database
 {id: sqlite-insert}
@@ -40,16 +55,6 @@ Use placeholders (?) supply the data in tuples.
 UPDATE works quite similar, but it might have a WHERE clause.
 
 
-
-## SELECT data from SQLite database
-{id: sqlite-select}
-{i: SELECT|sqlite}
-{i: fetchone|sqlite}
-
-![](examples/sqlite/sql_select.py)
-
-Use the result as an iterator, or call the fetchone method. If the result set might be empty,
-then the fetchone might return None. Check for it!
 
 
 

@@ -5,9 +5,10 @@ c = conn.cursor()
 
 try:
     c.execute('''CREATE TABLE companies (
-        id PRIMARY KEY,
-        name VARCRCHAR(100) UNIQUE NOT NULL,
-        employees INTEGER DEFAULT 0)''')
+                    id        INTEGER PRIMARY KEY AUTOINCREMENT,
+                    name      VARCRCHAR(100) UNIQUE NOT NULL,
+                    employees INTEGER DEFAULT 0
+              )''')
 except sqlite3.OperationalError as e:
     print('sqlite error:', e.args[0])  # table companies already exists
 
