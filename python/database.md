@@ -1,4 +1,15 @@
-# NoSQL
+# Database
+{id: database}
+
+## Relational Databases (SQL)
+{id: relational-databases}
+
+* SQLite
+* MySQL - MariaDB
+* PostgreSQL
+* ...
+
+## NoSQL
 {id: nosql}
 
 ## Types of NoSQL databases
