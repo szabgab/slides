@@ -16,4 +16,5 @@ def test_app():
     assert rv.status == '200 OK'
     assert b'<form action="/echo" method="POST">' in rv.data
     assert b'You said' not in rv.data
+    assert b'You did not say anything.' in rv.data
 

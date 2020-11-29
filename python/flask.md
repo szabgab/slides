@@ -482,7 +482,7 @@ Then also add the following:
 ![](examples/flask/random-redirect/test_app.py)
 
 
-## Flask: Jinja templates
+## Flask Jinja template
 {id: flask-templates}
 {i: jinja}
 {i: render_template}
@@ -492,12 +492,12 @@ Then also add the following:
 ![](examples/flask/jinja-plain/app.py)
 ![](examples/flask/jinja-plain/templates/index.html)
 
-## Flask: Jinja templates - testing
+## Flask Jinja template - testing
 {id: flask-templates-testing}
 
 ![](examples/flask/jinja-plain/test_app.py)
 
-## Flask: templates with parameters
+## Flask Jinja template with parameters
 {id: flask-templates-parameters}
 
 ![](examples/flask/jinja-parameters/app.py)
@@ -505,7 +505,7 @@ Then also add the following:
 ![](examples/flask/jinja-parameters/test_app.py)
 
 
-## Flask: templates with conditional
+## Flask Jinja template with conditional
 {id: flask-templates-conditional}
 {i: if}
 {i: endif}
@@ -514,13 +514,39 @@ Then also add the following:
 ![](examples/flask/jinja-conditional/templates/echo.html)
 ![](examples/flask/jinja-conditional/test_app.py)
 
-## Jinja template loop, conditional, include
-{id: jinja-loop-conditional}
-{i: jinja}
+## Flask Jinja template with loop
+{id: flask-jinja-loop}
+{i: for}
+{i: in}
+{i: endfo}
+
+![](examples/flask/jinja-loop/app.py)
+![](examples/flask/jinja-loop/templates/main.html)
+![](examples/flask/jinja-loop/test_app.py)
+
+## Flask Jinja template dictionary
+{id: flask-jinja-dictionary}
+
+![](examples/flask/jinja-dictionary/app.py)
+![](examples/flask/jinja-dictionary/templates/main.html)
+![](examples/flask/jinja-dictionary/test_app.py)
+
+
+## Flask Jinja template list of dictionaries
+{id: flask-jinja-list-of-dictionaries}
+
+![](examples/flask/jinja-list-of-dictionaries/app.py)
+![](examples/flask/jinja-list-of-dictionaries/templates/main.html)
+![](examples/flask/jinja-list-of-dictionaries/test_app.py)
+
+
+## Flask Jinja include
+{id: flask-jinja-include}
 
 ```
 .
 ├── app.py
+├── test_app.py
 └── templates
     ├── incl
     │   ├── footer.html
@@ -528,11 +554,12 @@ Then also add the following:
     └── main.html
 ```
 
-![](examples/flask/jinja/app.py)
-![](examples/flask/jinja/templates/main.html)
-![](examples/flask/jinja/templates/incl/header.html)
-![](examples/flask/jinja/templates/incl/footer.html)
+![](examples/flask/jinja-include/app.py)
+![](examples/flask/jinja-include/templates/main.html)
+![](examples/flask/jinja-include/templates/incl/header.html)
+![](examples/flask/jinja-include/templates/incl/footer.html)
 
+![](examples/flask/jinja-include/test_app.py)
 
 ## Jinja extend template layout block
 {id: jinja-extend-template-layout}

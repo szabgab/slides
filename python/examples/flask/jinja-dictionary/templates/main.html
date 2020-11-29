@@ -1,0 +1,7 @@
+<h1>{{ title }}</h1>
+
+<table>
+  {% for key in person.keys() %}
+     <tr><td>{{ key }}</td><td>{{ person[key] }}</td></tr>
+  {% endfor %}
+</table>

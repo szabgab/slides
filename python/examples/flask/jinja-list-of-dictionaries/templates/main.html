@@ -1,0 +1,10 @@
+<h1>{{ title }}</h1>
+<table>
+  {% for planet in planets %}
+     <tr>
+       <td>{{ planet['Planet name'] }}</td>
+       <td>{{ planet['Distance (AU)'] }}</td>
+       <td>{{ planet['Mass'] }}</td>
+     </tr>
+  {% endfor %}
+</table>

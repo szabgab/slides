@@ -1,22 +1,22 @@
 from flask import Flask, render_template
 app = Flask(__name__)
 
-@app.route("/")
+@app.route('/')
 def main():
     languages = [
         {
-            "name": "Python",
-            "year":  1991,
+            'name': 'Python',
+            'year':  1991,
         },
         {
-            "name": "JavaScript",
-            "year":  1995,
+            'name': 'JavaScript',
+            'year':  1995,
         },
         {
-            "name": "C",
+            'name': 'C',
         }
     ]
     return render_template('main.html',
-        title     = "Code Maven Jinja example",
+        title     = 'Code Maven Jinja include example',
         languages = languages,
     )
