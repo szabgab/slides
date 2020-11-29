@@ -1,5 +1,6 @@
 <h1>{{ title }}</h1>
 
+<h2>{{ person.fname}} {{ person.lname }}</h2>
 <table>
   {% for key in person.keys() %}
      <tr><td>{{ key }}</td><td>{{ person[key] }}</td></tr>

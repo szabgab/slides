@@ -12,6 +12,7 @@ Iterators           - ~ 50 min + 60 min exercise
 * Session with cookies
 * Session with JWT JSON Web Token
 * Show Debug mode vs not debug mode (security code when looking at the source code)
+* Use {{ url_for('static', filename='some.png') }}  in the templates
 
 ## TODO
 
