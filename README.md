@@ -3,6 +3,7 @@
 
 The source of most of the slides at https://code-maven.com/slides/
 
+The original source is on [GitHub](https://github.com/szabgab/slides)
 
 ## Processing
 
