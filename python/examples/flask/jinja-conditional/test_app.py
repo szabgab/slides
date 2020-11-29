@@ -1,7 +1,7 @@
-import echo
+import app
 
 def test_app():
-    web = echo.app.test_client()
+    web = app.app.test_client()
 
     rv = web.get('/')
     assert rv.status == '200 OK'

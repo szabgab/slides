@@ -482,23 +482,78 @@ Then also add the following:
 ![](examples/flask/random-redirect/test_app.py)
 
 
-
-
 ## Flask: Jinja templates
 {id: flask-templates}
+{i: jinja}
+{i: render_template}
 
-![](examples/flask/tmpl/app.py)
-![](examples/flask/tmpl/templates/index.html)
+* [Jinja](https://jinja.palletsprojects.com/)
+
+![](examples/flask/jinja-plain/app.py)
+![](examples/flask/jinja-plain/templates/index.html)
+
+## Flask: Jinja templates - testing
+{id: flask-templates-testing}
+
+![](examples/flask/jinja-plain/test_app.py)
 
 ## Flask: templates with parameters
 {id: flask-templates-parameters}
 
 
-![](examples/flask/params/echo.py)
-![](examples/flask/params/templates/echo.html)
-![](examples/flask/params/test_echo.py)
+![](examples/flask/jinja-conditional/app.py)
+![](examples/flask/jinja-conditional/templates/echo.html)
+![](examples/flask/jinja-conditional/test_app.py)
 
 
+
+## Jinja template loop, conditional, include
+{id: jinja-loop-conditional}
+{i: jinja}
+
+```
+.
+├── app.py
+└── templates
+    ├── incl
+    │   ├── footer.html
+    │   └── header.html
+    └── main.html
+```
+
+![](examples/flask/jinja/app.py)
+![](examples/flask/jinja/templates/main.html)
+![](examples/flask/jinja/templates/incl/header.html)
+![](examples/flask/jinja/templates/incl/footer.html)
+
+
+## Jinja extend template layout block
+{id: jinja-extend-template-layout}
+{i: layout}
+{i: extends}
+{i: block}
+
+{aside}
+We use **extend** to connect between templates.
+We use **block** both to mark the area that will be replaced and the content that will replace it.
+{/aside}
+
+![](examples/flask/template-extends/app.py)
+![](examples/flask/template-extends/test_app.py)
+![](examples/flask/template-extends/templates/index.html)
+![](examples/flask/template-extends/templates/layouts/base.html)
+
+## Jinja template inheritance - super
+{id: jinja-template-inheritance}
+{i: super}
+
+* Using the **super()** call we can inherit the content of the block
+
+![](examples/flask/template-inheritance/app.py)
+![](examples/flask/template-inheritance/test_app.py)
+![](examples/flask/template-inheritance/templates/index.html)
+![](examples/flask/template-inheritance/templates/page.html)
+![](examples/flask/template-inheritance/templates/layouts/base.html)
 
 ## Static files
 {id: flask-static-files}
@@ -570,54 +625,6 @@ HTTP/1.0 500 INTERNAL SERVER ERROR
 ```
 
 ![](examples/flask/500/app500.py)
-
-## Jinja template loop, conditional, include
-{id: jinja-loop-conditional}
-{i: jinja}
-
-```
-.
-├── app.py
-└── templates
-    ├── incl
-    │   ├── footer.html
-    │   └── header.html
-    └── main.html
-```
-
-![](examples/flask/jinja/app.py)
-![](examples/flask/jinja/templates/main.html)
-![](examples/flask/jinja/templates/incl/header.html)
-![](examples/flask/jinja/templates/incl/footer.html)
-
-
-## Jinja extend template layout block
-{id: jinja-extend-template-layout}
-{i: layout}
-{i: extends}
-{i: block}
-
-{aside}
-We use **extend** to connect between templates.
-We use **block** both to mark the area that will be replaced and the content that will replace it.
-{/aside}
-
-![](examples/flask/template-extends/app.py)
-![](examples/flask/template-extends/test_app.py)
-![](examples/flask/template-extends/templates/index.html)
-![](examples/flask/template-extends/templates/layouts/base.html)
-
-## Jinja template inheritance - super
-{id: jinja-template-inheritance}
-{i: super}
-
-* Using the **super()** call we can inherit the content of the block
-
-![](examples/flask/template-inheritance/app.py)
-![](examples/flask/template-inheritance/test_app.py)
-![](examples/flask/template-inheritance/templates/index.html)
-![](examples/flask/template-inheritance/templates/page.html)
-![](examples/flask/template-inheritance/templates/layouts/base.html)
 
 
 ## Exercise: Flask persistent
