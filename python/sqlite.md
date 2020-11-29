@@ -1,19 +1,19 @@
 # SQLite Database Access
-{id: database}
+{id: sqlite}
 
 ## SQLite
-{id: sqlite}
+{id: sqlite3}
 {i: sqlite}
 
 * [sqlite3](http://docs.python.org/library/sqlite3.html)
-
 
 
 ## Connecting to SQLite database
 {id: sqlite-connect}
 {i: connect|sqlite}
 {i: cursor|sqlite}
-![](examples/database/sql_connect.py)
+
+![](examples/sqlite/sql_connect.py)
 
 
 ## Create TABLE in SQLite
@@ -24,7 +24,7 @@
 
 execute and commit
 
-![](examples/database/sql_create.py)
+![](examples/sqlite/sql_create.py)
 
 
 ## INSERT data into SQLite database
@@ -35,7 +35,7 @@ execute and commit
 
 Use placeholders (?) supply the data in tuples.
 
-![](examples/database/sql_insert.py)
+![](examples/sqlite/sql_insert.py)
 
 UPDATE works quite similar, but it might have a WHERE clause.
 
@@ -45,7 +45,8 @@ UPDATE works quite similar, but it might have a WHERE clause.
 {id: sqlite-select}
 {i: SELECT|sqlite}
 {i: fetchone|sqlite}
-![](examples/database/sql_select.py)
+
+![](examples/sqlite/sql_select.py)
 
 Use the result as an iterator, or call the fetchone method. If the result set might be empty,
 then the fetchone might return None. Check for it!
@@ -55,8 +56,7 @@ then the fetchone might return None. Check for it!
 
 ## A counter
 {id: sqlite-counter}
-![](examples/database/counter.py)
 
-
+![](examples/sqlite/counter.py)
 
 
