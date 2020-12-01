@@ -14,6 +14,29 @@ Iterators           - ~ 50 min + 60 min exercise
 * Show Debug mode vs not debug mode (security code when looking at the source code)
 * Use {{ url_for('static', filename='some.png') }}  in the templates
 
+
+def connect_db():
+    sql = sqlite3.connect('abc.db')
+    sql.row_factory = sqlite3.Row
+    return sql
+
+def get_db():
+    if not hasattr(g, 'db')
+       g.db = connect_db() 
+    return g.db
+
+@app.teardown_appcontext
+def close_db(error):
+    if hasattr(g, 'db'):
+        g.db.close()
+
+@app.route('/list')
+def list_entries():
+    db = get_db()
+    cur = db.execute('SELECT * FROM  some_tabel')
+    results = cur.fetchall()
+
+
 ## TODO
 
 Extracting extension from filename in Python

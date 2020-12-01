@@ -1300,3 +1300,17 @@ Data Files:
 * Then start refactoring the code.
 
 
+## Add extra command line parameters to Pytest
+{id: add-extra-command-line-parameters}
+
+![](examples/pytest/py1/conftest.py)
+![](examples/pytest/py1/test_one.py)
+
+![](examples/pytest/py2/conftest.py)
+![](examples/pytest/py2/test_one.py)
+
+![](examples/pytest/py3/conftest.py)
+![](examples/pytest/py3/test_one.py)
+
+![](examples/pytest/py4/conftest.py)
+![](examples/pytest/py4/test_one.py)
