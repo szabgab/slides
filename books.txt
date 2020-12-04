@@ -33,7 +33,7 @@ pair-programming/pair.json,pair-programming,
 perl-intro/perl.json,perl-intro,
 perl/dancer.json,dancer,perl
 perl/perl.json,perl,
-perl/testing.json,test-automation-using-perl,
+perl/testing.json,test-automation-using-perl,perl
 php/php.json,php,
 programming/programming.json,programming,
 python-mocking/python.json,python-mocking,

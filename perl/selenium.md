@@ -209,7 +209,8 @@ using [GhostDriver](https://github.com/detro/ghostdriver) and
 
 
 ## Testing Dancer
-{id: dancer}
+{id: testing-dancer}
+
 ![](examples/webapp/test.t)
 ![](examples/webapp/Test.pm)
 
