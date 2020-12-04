@@ -61,8 +61,8 @@ Then the `to_app` call basically provides a running application to `plack` which
 
 ![](examples/dancer/hello_world/app.psgi)
 
-* Run the application by `cd`-ing into its directory and then typing `plackup`
-* Then you can see it at `http://localhost:5000`
+* Run the application by `cd`-ing into its directory and then typing: **plackup**
+* Then you can see it at **http://localhost:5000**
 
 {aside}
 You might have noticed I did not add `use strict` and `use warnings` to this code.
@@ -94,7 +94,7 @@ Next to our `app.psgi` we create a file called `test.t` with the following conte
 ![](examples/dancer/hello_world/test.t)
 
 {aside}
-We can then run it by tping in `prove -v test.t` on the command line. this is going to be the output:
+We can then run it by typing in `prove -v test.t` on the command line. this is going to be the output:
 {/aside}
 
 ```
