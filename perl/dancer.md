@@ -12,13 +12,27 @@
 * [VS Code](https://code.visualstudio.com/)
 * [Notepad++](https://notepad-plus-plus.org/)
 
+## Slides and Example
+{id: source-of-slides-and-examples}
+
+* [Source of slides and examples](https://github.com/szabgab/slides)
+
 ## Install Dancer2
 {id: install-dancer}
 {i: cpanm}
 {i: Dancer2}
 
-* Install [cpanm](https://metacpan.org/pod/App::cpanminus) if you don't have it yet: `curl -L https://cpanmin.us | perl - App::cpanminus`
-* Install Dancer2: `cpanm Dancer2`
+* Install [cpanm](https://metacpan.org/pod/App::cpanminus) if you don't have it yet:
+
+```
+curl -L https://cpanmin.us | perl - App::cpanminus
+```
+
+* Install Dancer2:
+
+```
+cpanm Dancer2
+```
 
 {aside}
 Note, during the following pages I am going to use the word Dancer, however the name of the package we are using is Dancer2
