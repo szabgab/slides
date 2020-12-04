@@ -1,0 +1,13 @@
+{
+    "title": "Perl Dancer",
+    "author": "Gabor Szabo",
+    "description": "Web application developmen with Perl Dancer",
+    "first_year": "2015",
+    "copyright_name": "Gabor Szabo",
+    "copyright_url": "https://szabgab.com/",
+    "version": "1.00",
+    "files": [
+        "psgi.md",
+        "dancer.md"
+    ]
+}

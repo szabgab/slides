@@ -81,7 +81,7 @@ def select_books(args):
                 names.append(name)
                 continue
             for book in available_books:
-                if name == book['dir']:
+                if name == book['dir'] or name == book['outdir']:
                     books.append(book)
         if not names and not books:
             exit("Could not find any valid names or books")
@@ -102,11 +102,15 @@ def get_availables():
             if re.search(r'\A\s*(#.*)?\Z', line):
                 continue
             #print(line)
-            bookdir, filename, outdir = re.split(r'[/,]', line)
+            json_file, outdir, canonical = line.split(',')
+            if not canonical:
+                canonical = outdir
+            bookdir, filename = json_file.split('/')
             available_books.append({
                 'dir': bookdir,
                 'filename': filename,
                 'outdir': outdir,
+                'canonical': canonical,
             })
     #print(available_books)
     return available_names, available_books
@@ -129,14 +133,15 @@ def generate_singles(names, ext):
 
 def generate_multis(books, ext):
     for book in books:
-        print("{} - {} - {}".format(book['dir'], book['filename'], book['outdir']))
-        cmd = '''{executable} "{slider}" --yaml "{root}/{bdir}/{bfilename}" --html --dir "{root}/html/{boutdir}/" --templates "{root}/templates/" --static "{root}/static/" --url "https://code-maven.com/slides/{boutdir}" {ext}'''.format(
+        print("{} - {} - {} - {}".format(book['dir'], book['filename'], book['outdir'], book['canonical']))
+        cmd = '''{executable} "{slider}" --yaml "{root}/{bdir}/{bfilename}" --html --dir "{root}/html/{boutdir}/" --templates "{root}/templates/" --static "{root}/static/" --url "https://code-maven.com/slides/{canonical}" {ext}'''.format(
             executable = sys.executable,
             slider = slider,
             root   = root,
             bdir   = book['dir'],
             bfilename = book['filename'],
             boutdir   = book['outdir'],
+            canonical = book['canonical'],
             ext = ext,
         )
         #print("cmd={}".format(cmd))
