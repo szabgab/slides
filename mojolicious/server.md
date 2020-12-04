@@ -17,6 +17,17 @@
 * Look at the console
 
 
+## External template
+{id: external-template}
+
+![](examples/hw-external-template/app.pl)
+
+![](examples/hw-external-template/templates/index.html.ep)
+
+```
+perl app.pl daemon
+```
+
 
 ## use strict use warnings
 {id: lite-use-strict-use-warnings}

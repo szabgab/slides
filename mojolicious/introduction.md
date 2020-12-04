@@ -7,9 +7,8 @@
 * [Glen Hinkle: Mojocast](http://mojocasts.com/e1)
 * [Glen Hinkle: Intro to Mojolicious ](http://mojocasts.com/yapc)
 * [Joel Berger: Introducing Mojolicious](https://www.youtube.com/watch?v=1oFF26GyoJk) ([source](https://github.com/jberger/MojoliciousIntroduction))
-* [Mojolicious web site](http://mojolicious.org/): documentation and tutorial
+* [Mojolicious web site](https://mojolicious.org/): documentation and tutorial
 * [MojoExample](https://github.com/tempire/MojoExample) on GitHub
-
 
 
 ## What is Mojolicious
@@ -28,10 +27,8 @@
 * Fun
 
 
-
-
-## Talk overview
-{id: talk-overview}
+## Overview
+{id: overview}
 
 * Mojo::UserAgent the web client side
 * Mojolicious::Lite for content heavy web sites
@@ -43,25 +40,11 @@
 * We don't look at the JavaScript needed for SPA
 
 
-
 ## Installation
 {id: mojolicious-installation}
 
 * **$ cpanm Mojolicious**
 * **$ curl -L https://cpanmin.us | perl - -M https://cpan.metacpan.org -n Mojolicious**
-* [Mojolicious](http://mojolicio.us/)
-
-
-## External template
-{id: external-template}
-
-![](examples/hw-external-template/app.pl)
-
-![](examples/hw-external-template/templates/index.html.ep)
-
-```
-perl app.pl daemon
-```
-
+* [Mojolicious](https://mojolicio.us/)
 
 
