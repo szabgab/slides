@@ -1,6 +1,17 @@
 # Web application development with Dancer
 {id: dancer}
 
+## Install Perl
+{id: install-perl-for-dancer}
+
+* [Strawberry Perl](http://strawberryperl.com/)
+
+## Install Editor
+{id: install-editor-for-dancer}
+
+* [VS Code](https://code.visualstudio.com/)
+* [Notepad++](https://notepad-plus-plus.org/)
+
 ## Install Dancer2
 {id: install-dancer}
 {i: cpanm}
