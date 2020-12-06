@@ -1,10 +1,19 @@
 # Web application development with Dancer
 {id: dancer}
 
-## Install Perl
+## Install Perl on Windows
 {id: install-perl-for-dancer}
 
 * [Strawberry Perl](http://strawberryperl.com/)
+
+## Install Perl Linux
+{id: install-perl-for-dancer-linux}
+
+* [perlbrew](https://perlbrew.pl/)
+
+* [cpan.org](https://www.cpan.org/)
+* [cpan minus](http://cpanmin.us/)  aka. cpanm
+* [local::lib](https://metacpan.org/pod/local::lib)
 
 ## Install Editor
 {id: install-editor-for-dancer}
