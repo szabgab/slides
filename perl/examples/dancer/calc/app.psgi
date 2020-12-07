@@ -19,10 +19,15 @@ HTML
 };
 
 post '/calc' => sub {
-    my $x = body_parameters->get('x');
-    my $y = body_parameters->get('y');
+    my $x = body_parameters->get('x') // 0;
+    my $y = body_parameters->get('y') // 0;
     my $op = body_parameters->get('op');
     my $result;
+
+    if ($op eq 'div' and $y == 0) {
+        status 'bad_request';
+        return 'Cannot divide by 0';
+    }
     $result = $x + $y if $op eq 'add';
     $result = $x - $y if $op eq 'deduct';
     $result = $x * $y if $op eq 'multiply';

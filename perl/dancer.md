@@ -328,6 +328,9 @@ the body as an anonymous hash.
 ![](examples/dancer/calc/app.psgi)
 ![](examples/dancer/calc/test.t)
 
+* [HTTP status](https://metacpan.org/pod/Dancer2::Core::HTTP)
+* [HTTP status codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
+
 ## Solution: Dancer Counter
 {id: solution-dancer-counter}
 

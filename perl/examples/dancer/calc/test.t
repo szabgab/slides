@@ -30,6 +30,11 @@ subtest calc => sub {
         is $res->status_line, '200 OK', 'Status';
         is $res->content, "The result is $case->[1]", 'Content';
     }
+
+
+    my $res = $test->request(POST '/calc', { y => '0', op => 'div'});
+    is $res->status_line, '400 Bad Request', 'Status';
+    is $res->content, 'Cannot divide by 0', 'Content';
 };
 
 
