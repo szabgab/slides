@@ -306,6 +306,39 @@ the body as an anonymous hash.
 
 * Run as `prove test.t`
 
+## Exercise: Dancer Calculator
+{id: exercise-dancer-calculator}
+
+* Create a web application that has a form with 3 fields. Two text fields to accept two numbers and a drop-down list where the user can select one of the 4 basic math operations.
+* When the user submits the for the server will calculate and display the results of the calculation.
+* Also write tests that will verify the proper beahvior of the application
+
+* You can create a solution using GET and a solution using POST. Just for fun.
+
+## Exercise: Dancer Counter
+{id: exercise-dancer-counter}
+
+* Create an application that will show you a growing number on every visit.
+* Can you make it so that the counter will continue even after we restarted the server?
+* Write tests for the application.
+
+## Solution: Dancer Calculator
+{id: solution-dancer-calculator}
+
+![](examples/dancer/calc/app.psgi)
+![](examples/dancer/calc/test.t)
+
+## Solution: Dancer Counter
+{id: solution-dancer-counter}
+
+![](examples/dancer/counter/app.psgi)
+![](examples/dancer/counter/test.t)
+
+## Dancer: Logging
+{id: dancer-logging}
+
+![](examples/dancer/logging/app.psgi)
+
 ## Dancer: Receive parameter in route
 {id: receive-parameter-in-route-dancer}
 {i: param}
