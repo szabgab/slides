@@ -1,3 +1,6 @@
+branches:
+  except:
+  - github
 matrix:
   include:
     - language: python
