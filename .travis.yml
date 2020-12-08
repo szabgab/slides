@@ -24,6 +24,8 @@ matrix:
       dist: xenial
       node_js:
         - "node"
-      install: cd nodejs; npm install
-      script: cd nodejs; npm test
+      install:
+        - cd nodejs
+        - npm install
+      script: npm test
 
