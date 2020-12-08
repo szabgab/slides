@@ -1,0 +1,27 @@
+name: CI
+
+on: push
+
+jobs:
+  test:
+    strategy:
+      fail-fast: false
+      matrix:
+        runner: [ubuntu-latest, macos-latest, windows-latest]
+        nodejs: [ 14.15, 12 ]
+
+    runs-on: ${{matrix.runner}}
+    name: OS ${{matrix.runner}} NodeJS ${{matrix.nodejs}}
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Use Node.js ${{ matrix.nodejs }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.nodejs }}
+
+    - name: Show NodeJS Version
+      run: |
+        node -v
+
