@@ -89,5 +89,5 @@ jobs:
         node -v
         cd nodejs
         npm install
-        npm test
+        #npm test
 
