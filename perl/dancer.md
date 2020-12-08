@@ -337,6 +337,11 @@ the body as an anonymous hash.
 ![](examples/dancer/counter/app.psgi)
 ![](examples/dancer/counter/test.t)
 
+## Dancer: show errors during development
+{id: dancer-show-errors}
+
+![](examples/dancer/show-errors/app.psgi)
+
 ## Dancer: Logging
 {id: dancer-logging}
 
