@@ -1,0 +1,35 @@
+name: CI
+
+on:
+    push:
+        branches: '*'
+    pull_request:
+        branches: '*'
+
+jobs:
+  python:
+    strategy:
+      fail-fast: false
+      matrix:
+        runner: [ubuntu-latest]
+        python: [ '3.7' ]
+
+    runs-on: ${{matrix.runner}}
+    name: OS ${{matrix.runner}} Python ${{matrix.python}}
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Install dependencies
+      run: |
+          pip install flask-httpauth
+          pip install pytest
+          pip install pytest-flake8
+          git clone https://github.com/szabgab/slider-py.git
+          pip install -r slider-py/requirements.txt
+
+    - name: Regular Tests
+      run: |
+          python tests/check.py
+          python generate_slides.py
+
