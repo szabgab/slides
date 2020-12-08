@@ -13,7 +13,7 @@ import datetime
 root   = os.path.dirname(os.path.abspath(__file__))
 parent = os.path.dirname(root)
 slider = "{}/slider-py/slider.py".format(parent)
-if os.environ.get('TRAVIS'):
+if os.environ.get('TRAVIS') or os.environ.get('GITHUB_WORKFLOW'):
     slider = "{}/slider-py/slider.py".format(root)
 #print("root={}".format(root))
 #print("parent={}".format(parent))
