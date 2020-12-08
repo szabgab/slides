@@ -18,6 +18,11 @@ jobs:
     name: OS ${{matrix.runner}} Python ${{matrix.python}}
 
     steps:
+    - name: Set up Python ${{ matrix.python }}
+      uses: actions/setup-python@v2
+      with:
+        python-version: ${{ matrix.python }}
+
     - name: Checkout this repo
       uses: actions/checkout@v2
 
@@ -26,7 +31,6 @@ jobs:
       with:
         repository: 'szabgab/slider-py'
 
-
     - name: Install dependencies
       run: |
           pip install flask-httpauth
@@ -34,12 +38,11 @@ jobs:
           pip install pytest-flake8
           pip install -r slider-py/requirements.txt
           python -V
-          python3 -V
 
     - name: Regular Tests
       run: |
-          python3 tests/check.py
-          python3 generate_slides.py
+          python tests/check.py
+          python generate_slides.py
 
   go:
     strategy:
@@ -59,4 +62,29 @@ jobs:
       run: |
          go version
          go run tests/check.go
+  nodejs:
+    strategy:
+      fail-fast: false
+      matrix:
+        runner: [ubuntu-latest]
+        nodejs: [ 14.15 ]
+
+    runs-on: ${{matrix.runner}}
+    name: OS ${{matrix.runner}} NodeJS ${{matrix.nodejs}}
+
+    steps:
+    - name: Checkout this repo
+      uses: actions/checkout@v2
+
+    - name: Use Node.js ${{ matrix.nodejs }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.nodejs }}
+
+    - name: Show NodeJS Version
+      run: |
+        node -v
+        cd nodejs
+        npm install
+        npm test
 
