@@ -30,9 +30,12 @@ jobs:
       uses: actions/checkout@v2
       with:
         repository: 'szabgab/slider-py'
+        path: slider-py
 
     - name: Install dependencies
       run: |
+          pwd
+          ls -l
           pip install flask-httpauth
           pip install pytest
           pip install pytest-flake8
