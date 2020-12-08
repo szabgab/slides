@@ -1,13 +1,14 @@
-class MyClass{
+class MyClass {
     constructor() {
-        console.log('object created')
+        console.log('object created');
     }
 }
 
 function f() {
-    let n = new MyClass;
+    const n = new MyClass();
+    console.log(n);
 }
 
-console.log("before");
+console.log('before');
 f();
-console.log("after");
+console.log('after');
