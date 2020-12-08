@@ -335,6 +335,7 @@ TypeError: Assignment to constant variable.
 
 ```
 $ node examples/basic/app.js
+
 Loading module
 Hello World
 Hello Foo
@@ -352,6 +353,31 @@ From a module we can export a module or a single function like this:
 ![](examples/basic/lib2.js)
 
 ![](examples/basic/app2.js)
+
+```
+$ node examples/basic/app2.js
+
+Loading module
+Hello World
+Hello Foo
+```
+
+## Loading a library twice
+{id: loading-a-library}
+
+* Loads it only once but allows access to it from several names.
+
+![](examples/basic/app22.js)
+
+```
+$ node examples/basic/app22.js
+
+Loading module
+Hello World
+Hello Foo
+Hello Bar
+```
+
 
 ## What is in a module?
 {id: what-is-in-a-module}
@@ -453,3 +479,20 @@ debug> quit
 {id: closure}
 
 ![](examples/basic/closure.js)
+
+
+## Linter - ESLint
+{id: linter}
+
+```
+npm install eslint --save-dev
+npx eslint --init
+```
+
+Creates:
+
+```
+.eslintrc.json
+```
+
+![](examples/basic/.eslintrc.json)

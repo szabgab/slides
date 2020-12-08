@@ -61,3 +61,13 @@ Testing: https://medium.com/@me_37286/yoni-goldberg-javascript-nodejs-testing-be
 
 
 ![](examples/basic/memory_leak.js)
+
+
+Memory leak
+
+https://blog.appsignal.com/2020/05/06/avoiding-memory-leaks-in-nodejs-best-practices-for-performance.html
+
+https://marmelab.com/blog/2018/04/03/how-to-track-and-fix-memory-leak-with-nodejs.html
+
+https://www.nearform.com/blog/how-to-self-detect-a-memory-leak-in-node/
+

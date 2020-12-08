@@ -50,3 +50,5 @@ r.Rproj
 temp.json
 
 perl/examples/dancer/counter/count.txt
+
+node_modules/
