@@ -1,3 +1,11 @@
+String repetition
+
+let text = "abc".repeat(3);
+console.log(text); // abcabcabc
+
+
+
+
 <sect1 id="complaints">
 <title>Complaints</title>
 <ul>
@@ -51,3 +59,5 @@ tmeplate literals:
 
 Testing: https://medium.com/@me_37286/yoni-goldberg-javascript-nodejs-testing-best-practices-2b98924c9347
 
+
+![](examples/basic/memory_leak.js)

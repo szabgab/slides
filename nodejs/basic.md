@@ -21,17 +21,18 @@
 By the time you are reading this, there might have a newer LTS version already.
 
 ```
-export NODEJS=v12.14.1
-wget https://nodejs.org/dist/$NODEJS/node-$NODEJS-linux-x64.tar.xz
+export NODEJS=v14.15.1
+wget https://nodejs.org/dist/$NODEJS/node-$NODEJS-linux-x64.tar.xz 
 tar xf node-$NODEJS-linux-x64.tar.xz
 sudo mv node-$NODEJS-linux-x64/ /opt
 sudo chown -R root.root /opt/node-$NODEJS-linux-x64/
+sudo ln -s /opt/node-$NODEJS-linux-x64 /opt/node
 ```
 
 Add it to the PATH:
 
 ```
-echo "export PATH=\$PATH:/opt/node-$NODEJS-linux-x64/bin" >> ~/.bashrc
+echo "export PATH=\$PATH:/opt/node/bin" >> ~/.bashrc
 ```
 
 ## NodeJS version
@@ -40,10 +41,10 @@ echo "export PATH=\$PATH:/opt/node-$NODEJS-linux-x64/bin" >> ~/.bashrc
 
 ```
 $ which node
-/opt/node-v12.14.1-linux-x64/bin/node
+/opt/node/bin/node
 
 $ node -v
-v12.14.1
+v14.15.1
 ```
 
 ## Hello World
@@ -107,18 +108,10 @@ Run it directly
 
 ![](examples/basic/values.js)
 
-## Variables
-{id: variables}
-{i: let}
-{i: var}
-{i: const}
 
-There are several ways to start using "variables". Even without declaring them first. For now we'll use the `let` keyword.
-
-![](examples/basic/variables.js)
-
-## Variables with let
+## Declare variables with let
 {id: variables-with-let}
+{i: let}
 
 ![](examples/basic/add.js)
 
@@ -195,7 +188,7 @@ Try: `node argv_foreach.js Hello my world`
 ![](examples/basic/add_function.js)
 ![](examples/basic/add_function.out)
 
-## setTimeout
+## setTimeout - delayed execution
 {id: set-timeout}
 {i: setTimeout}
 
@@ -213,7 +206,7 @@ hello
 world
 ```
 
-## setInterval
+## setInterval - scheduled execution
 {id: set-interval}
 {i: setInterval}
 
@@ -264,6 +257,19 @@ $ node examples/basic/template_literals.js
 ```
 
 ![](examples/basic/template_literals.out)
+
+
+## Scope of variables and constants
+{id: variables}
+{i: let}
+{i: var}
+{i: const}
+
+There are several ways to start declaring and using variables and constants.
+In general the best is to use the `let` keyword.
+
+![](examples/basic/variables.js)
+
 
 ## constant (const)
 {id: constants}
@@ -437,3 +443,13 @@ debug> quit
 * Eclipse plugin
 
 
+## Callback
+{id: callback}
+
+![](examples/basic/callback.js)
+
+
+## Closure
+{id: closure}
+
+![](examples/basic/closure.js)
