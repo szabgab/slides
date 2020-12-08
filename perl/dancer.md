@@ -322,6 +322,11 @@ the body as an anonymous hash.
 * Can you make it so that the counter will continue even after we restarted the server?
 * Write tests for the application.
 
+## Solution: Dancer Calculator - try 1
+{id: solution-dancer-calculator-1}
+
+![](examples/dancer/calc1/app.psgi)
+
 ## Solution: Dancer Calculator
 {id: solution-dancer-calculator}
 
@@ -330,6 +335,16 @@ the body as an anonymous hash.
 
 * [HTTP status](https://metacpan.org/pod/Dancer2::Core::HTTP)
 * [HTTP status codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
+
+## Solution: Dancer Counter - try 1
+{id: solution-dancer-counter-1}
+
+![](examples/dancer/counter1/app.psgi)
+
+## Solution: Dancer Counter - try 2
+{id: solution-dancer-counter-2}
+
+![](examples/dancer/counter2/app.psgi)
 
 ## Solution: Dancer Counter
 {id: solution-dancer-counter}

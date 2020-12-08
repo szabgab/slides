@@ -24,10 +24,6 @@ post '/calc' => sub {
     my $op = body_parameters->get('op');
     my $result;
 
-    if ($op eq 'div' and $y == 0) {
-        status 'bad_request';
-        return 'Cannot divide by 0';
-    }
     $result = $x + $y if $op eq 'add';
     $result = $x - $y if $op eq 'deduct';
     $result = $x * $y if $op eq 'multiply';
