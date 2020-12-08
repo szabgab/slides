@@ -481,18 +481,3 @@ debug> quit
 ![](examples/basic/closure.js)
 
 
-## Linter - ESLint
-{id: linter}
-
-```
-npm install eslint --save-dev
-npx eslint --init
-```
-
-Creates:
-
-```
-.eslintrc.json
-```
-
-![](examples/basic/.eslintrc.json)

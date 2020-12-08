@@ -98,3 +98,44 @@ npm install
 * [npx](https://www.npmjs.com/package/npx)
 * [Introducing npx](https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b)
 
+
+## Linter - ESLint
+{id: linter}
+
+* [ESLint](https://eslint.org/)
+
+```
+npm install eslint --save-dev
+npx eslint --init
+```
+
+Creates:
+
+```
+.eslintrc.json
+```
+
+![](examples/basic/.eslintrc.json)
+
+* Set the [rules](https://eslint.org/docs/rules/)
+
+Run it:
+
+```
+npx eslint *.js
+```
+
+In `package.json` set:
+
+```
+  "scripts": {
+    "test": "npx eslint *.js"
+  },
+```
+
+Then run as
+
+```
+$ npm run test
+```
+
