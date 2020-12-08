@@ -20,3 +20,10 @@ matrix:
       script:
         - go version
         - go run tests/check.go
+    - language: node_js
+      dist: xenial
+      node_js:
+        - "node"
+      install: cd nodejs; npm install
+      script: cd nodejs; npm test
+
