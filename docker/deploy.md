@@ -21,7 +21,7 @@ Locally
 ```
 docker build -t flasker .
 docker run --rm  -p5000:5000 flasker
-http://localhost:5000/api/add?a=3&b=4
+http://localhost:5000/
 ```
 
 ## Deployment on Digital Ocean
@@ -37,43 +37,25 @@ http://localhost:5000/api/add?a=3&b=4
 
 ```
 ssh root@remotehost mkdir /data
-DOCKER_HOST=ssh://user@remotehost ./upgrade.sh
+DOCKER_HOST=ssh://user@remotehost ./deploy.sh
 ```
+
+![](examples/deploy-stand-alone-python/deploy.sh)
+
 * We are going to use the /data directory on the host system as our data volume
 
 * We use the `-d` flag to convert it into a daemon
 * We use `--restart unless-stopped` to tell Docker to restert on reboot
-* We create a volume on the disk 
+* We create a volume on the disk
 
-* List containers
-
-```
-DOCKER_HOST=ssh://user@remotehost docker ps
-```
-
-Upgrade:
-
-![](examples/deploy-stand-alone-python/upgrade.sh)
-
-```
-DOCKER_HOST=ssh://user@remotehost ./upgrade.sh
-```
 
 * [restart policy](https://docs.docker.com/config/containers/start-containers-automatically/)
-
-
-TODO: persistent data
 
 ## Multi-container Application to deploy
 {id: multi-container-application}
 
-* A multi-container Docker app usin Docker Compose
+* A multi-container Docker app using Docker Compose
 
-
-## Digital Ocean with Docker compose
-{id: digital-ocean-docker-compose}
-
-* [article](https://www.docker.com/blog/how-to-deploy-on-remote-docker-hosts-with-docker-compose/)
 * Create Droplet based on Docker
 * ssh to it, `apt-get update`,  `apt-get dist-upgrade`, `reboot`
 * `DOCKER_HOST="ssh://user@remotehost" docker-compose up -d`
@@ -82,4 +64,9 @@ Re-deploy
 
 * `DOCKER_HOST="ssh://user@remotehost" docker-compose build web`
 * `DOCKER_HOST="ssh://user@remotehost" docker-compose up -d web`
+
+## Digital Ocean with Docker compose
+{id: digital-ocean-docker-compose}
+
+* [article](https://www.docker.com/blog/how-to-deploy-on-remote-docker-hosts-with-docker-compose/)
 
