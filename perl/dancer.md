@@ -327,6 +327,13 @@ the body as an anonymous hash.
 
 ![](examples/dancer/calc1/app.psgi)
 
+## Solution: Dancer Calculator - try 2
+{id: solution-dancer-calculator-2}
+
+![](examples/dancer/calc2/app.psgi)
+![](examples/dancer/calc2/test.t)
+
+
 ## Solution: Dancer Calculator
 {id: solution-dancer-calculator}
 

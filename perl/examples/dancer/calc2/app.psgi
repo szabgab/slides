@@ -1,6 +1,5 @@
 package App;
 use Dancer2;
-use Scalar::Util qw(looks_like_number);
 
 get '/' => sub {
     return <<'HTML';
@@ -20,17 +19,9 @@ HTML
 };
 
 post '/calc' => sub {
-    my $x = body_parameters->get('x');
-    my $y = body_parameters->get('y');
+    my $x = body_parameters->get('x') || 0;
+    my $y = body_parameters->get('y') || 0;
     my $op = body_parameters->get('op');
-
-    my %valid_ops = map { $_ => 1 } qw(add deduct multiply div);
-
-    if (not looks_like_number($x) or not looks_like_number($y) or not defined $op or not exists $valid_ops{$op}) {
-        status 'bad_request';
-        return 'Invalid input';
-    }
-
     my $result;
 
     if ($op eq 'div' and $y == 0) {
