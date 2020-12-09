@@ -19,8 +19,8 @@ HTML
 };
 
 post '/calc' => sub {
-    my $x = body_parameters->get('x') // 0;
-    my $y = body_parameters->get('y') // 0;
+    my $x = body_parameters->get('x') || 0;
+    my $y = body_parameters->get('y') || 0;
     my $op = body_parameters->get('op');
     my $result;
 
