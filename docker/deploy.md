@@ -1,11 +1,6 @@
 # Deploy
 {id: deploy}
 
-## Digital Ocean
-{id: digital-ocean}
-
-* [Digital Ocean](https://www.digitalocean.com/?refcode=0d4cc75b3a74)
-
 ## Stand-alone Application to deploy
 {id: stand-alone-application-to-deploy}
 
@@ -23,6 +18,11 @@ docker build -t flasker .
 docker run --rm  -p5000:5000 flasker
 http://localhost:5000/
 ```
+
+## Digital Ocean
+{id: digital-ocean}
+
+* [Digital Ocean](https://www.digitalocean.com/?refcode=0d4cc75b3a74)
 
 ## Deployment on Digital Ocean
 {id: deployment-on-digital-ocean}
@@ -69,4 +69,20 @@ Re-deploy
 {id: digital-ocean-docker-compose}
 
 * [article](https://www.docker.com/blog/how-to-deploy-on-remote-docker-hosts-with-docker-compose/)
+
+
+## Linode
+{id: linode}
+
+* [Register on Linode](https://www.linode.com/?r=cccf1376edd5c6f0b8eccb97e0741a1f24584e43)
+
+
+* [Linode](https://cloud.linode.com/)
+* Marketplace
+* Search for Docker
+* Images: Debian 9
+* Region: Dallas
+* Nanode
+* Password
+* SSH key
 
