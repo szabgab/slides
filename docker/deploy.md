@@ -36,14 +36,14 @@ http://localhost:5000/api/add?a=3&b=4
 * Select SSH key
 
 ```
-ssh root@remotehost
-DOCKER_HOST=ssh://user@remotehost ./start.sh
+ssh root@remotehost mkdir /data
+DOCKER_HOST=ssh://user@remotehost ./upgrade.sh
 ```
-
-![](examples/deploy-stand-alone-python/start.sh)
+* We are going to use the /data directory on the host system as our data volume
 
 * We use the `-d` flag to convert it into a daemon
 * We use `--restart unless-stopped` to tell Docker to restert on reboot
+* We create a volume on the disk 
 
 * List containers
 
