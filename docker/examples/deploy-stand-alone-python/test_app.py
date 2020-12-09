@@ -6,7 +6,7 @@ def test_app():
 
     rv = web.get('/')
     assert rv.status == '200 OK'
-    assert b'Calculator' in rv.data
+    assert b'<body>App' in rv.data
 
     rv = web.get('/api/add', query_string={ 'a' : '10', 'b': '2' })
     assert rv.status == '200 OK'

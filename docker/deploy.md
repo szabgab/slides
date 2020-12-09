@@ -37,10 +37,10 @@ http://localhost:5000/api/add?a=3&b=4
 
 ```
 ssh root@remotehost
-
-DOCKER_HOST=ssh://user@remotehost docker build -t flasker .
-DOCKER_HOST=ssh://user@remotehost docker run -d --name flask --restart unless-stopped  -p5000:5000 flasker
+DOCKER_HOST=ssh://user@remotehost ./start.sh
 ```
+
+![](examples/deploy-stand-alone-python/start.sh)
 
 * We use the `-d` flag to convert it into a daemon
 * We use `--restart unless-stopped` to tell Docker to restert on reboot
@@ -48,16 +48,15 @@ DOCKER_HOST=ssh://user@remotehost docker run -d --name flask --restart unless-st
 * List containers
 
 ```
-DOCKER_HOST="ssh://user@remotehost" docker ps
+DOCKER_HOST=ssh://user@remotehost docker ps
 ```
 
 Upgrade:
 
+![](examples/deploy-stand-alone-python/upgrade.sh)
+
 ```
-DOCKER_HOST=ssh://user@remotehost docker build -t flasker .
-DOCKER_HOST=ssh://user@remotehost docker container stop flask
-DOCKER_HOST=ssh://user@remotehost docker container rm flask
-DOCKER_HOST=ssh://user@remotehost docker run -d --name flask --restart unless-stopped  -p5000:5000 flasker
+DOCKER_HOST=ssh://user@remotehost ./upgrade.sh
 ```
 
 * [restart policy](https://docs.docker.com/config/containers/start-containers-automatically/)

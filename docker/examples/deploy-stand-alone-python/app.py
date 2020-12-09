@@ -2,7 +2,7 @@ from flask import Flask, request, jsonify
 import os
 import datetime
 
-version = 4
+version = 6
 
 app = Flask(__name__)
 
@@ -14,15 +14,7 @@ if dirname:
 @app.route("/", methods=['GET'])
 def main():
     now = datetime.datetime.now()
-    return f'''
-        <html>
-          <head><title>Calculator v{version}</title></head>
-          <body>Calculator v{version} at {now}</body>
-        </html>
-    '''
 
-@app.route("/count", methods=['GET'])
-def count():
     counter = 0
     if os.path.exists(filename):
         with open(filename) as fh:
@@ -30,7 +22,14 @@ def count():
     counter += 1
     with open(filename, 'w') as fh:
         fh.write(str(counter))
-    return str(counter)
+
+    return f'''
+        <html>
+          <head><title>Calculator v{version}</title></head>
+          <body>App v{version} at {now} count: {counter}</body>
+        </html>
+    '''
+
 
 @app.route("/api/add", methods=['GET'])
 def api_add():
