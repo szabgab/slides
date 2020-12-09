@@ -190,17 +190,3 @@ Using [https://hub.docker.com/r/tiangolo/uwsgi-nginx-flask/](https://hub.docker.
 docker build -t myapp .
 docker run -it --rm -p5001:80 myapp
 ```
-
-## Deployment on Digital Ocean
-{id: deployment-on-digital-ocean}
-
-* [article](https://www.docker.com/blog/how-to-deploy-on-remote-docker-hosts-with-docker-compose/)
-* Create Droplet based on Docker
-* ssh to it, `apt-get update`,  `apt-get dist-upgrade`, `reboot`
-* `DOCKER_HOST="ssh://user@remotehost" docker-compose up -d`
-
-Re-deploy
-
-* `DOCKER_HOST="ssh://user@remotehost" docker-compose build web`
-* `DOCKER_HOST="ssh://user@remotehost" docker-compose up -d web`
-
