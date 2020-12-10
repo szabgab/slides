@@ -38,7 +38,7 @@ http://localhost:5000/
 
 ```
 ssh root@remotehost mkdir /data
-DOCKER_HOST=ssh://user@remotehost ./deploy.sh
+DOCKER_HOST=ssh://root@remotehost ./deploy.sh
 ```
 
 ![](examples/deploy-stand-alone-python/deploy.sh)

@@ -1,2 +1,4 @@
 __pycache__
 .git
+.pytest_cache
+counter.txt
