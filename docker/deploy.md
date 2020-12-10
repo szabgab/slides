@@ -10,6 +10,7 @@
 ![](examples/deploy-stand-alone-python/test_app.py)
 ![](examples/deploy-stand-alone-python/requirements.txt)
 ![](examples/deploy-stand-alone-python/Dockerfile)
+![](examples/deploy-stand-alone-python/.dockerignore)
 
 Locally
 
