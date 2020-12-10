@@ -50,5 +50,6 @@ r.Rproj
 temp.json
 
 perl/examples/dancer/counter/count.txt
+docker/examples/deploy-stand-alone-python/counter.txt
 
 node_modules/

@@ -36,6 +36,8 @@ def list_entries():
     cur = db.execute('SELECT * FROM  some_tabel')
     results = cur.fetchall()
 
+FLASK_ENV=development
+
 
 ## TODO
 
