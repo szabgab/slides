@@ -1,15 +1,11 @@
 package App;
 use Dancer2;
 
-set format_message => '%h %L %T - %m';
-# https://metacpan.org/pod/Dancer2::Core::Role::Logger
-#
-
 get '/' => sub {
-    debug "debug main";
-    info "info main";
-    warning "main";
-    error "main";
+    debug 'debug in main';
+    info 'info in main';
+    warning 'warning in main';
+    error 'error in main';
 
     return 'Hello World!';
 };
