@@ -369,6 +369,8 @@ the body as an anonymous hash.
 
 ![](examples/dancer/logging/app.psgi)
 
+* [Dancer2::Core::Role::Logger](https://metacpan.org/pod/Dancer2::Core::Role::Logger)
+
 ## Dancer: Receive parameter in route
 {id: receive-parameter-in-route-dancer}
 {i: param}
@@ -455,11 +457,25 @@ the user uses will be also told the status code is 404.
 ![](examples/dancer/show_array/views/page.tt)
 ![](examples/dancer/show_array/test.t)
 
-## Showing Hash of Hashes 
+## Showing Hash of Hashes
 {id: showing-hash-of-hashes}
 
 ![](examples/dancer/show_hoh/app.psgi)
 ![](examples/dancer/show_hoh/views/page.tt)
 ![](examples/dancer/show_hoh/planets.csv)
 ![](examples/dancer/show_hoh/test.t)
+
+## Exercies: Route-based multi-counter
+{id: exercise-route-based-multi-counter}
+
+Create an application that will count from 1 up for every url like this: `/apple` and will
+show the list of counters when the `/` page is accessed.
+
+
+## Solution: Route-based multi-counter
+{id: solution-route-based-multi-counter}
+
+![](examples/dancer/route-based-multi-counter/app.psgi)
+![](examples/dancer/route-based-multi-counter/test.t)
+
 

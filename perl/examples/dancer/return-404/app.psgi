@@ -6,7 +6,7 @@ get '/' => sub {
 };
 
 get '/user/:id' => sub {
-    my $id = param('id');
+    my $id = route_parameters->get('id');
     if ($id > 1) {
         status 'not_found';
         return 'No such ID';

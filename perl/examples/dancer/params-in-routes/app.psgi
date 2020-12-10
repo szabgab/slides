@@ -6,7 +6,7 @@ get '/' => sub {
 };
 
 get '/user/:id' => sub {
-    my $id = param('id');
+    my $id = route_parameters->get('id');
     return $id;
 };
 
