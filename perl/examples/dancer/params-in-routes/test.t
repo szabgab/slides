@@ -14,7 +14,7 @@ subtest main => sub {
     my $res = $test->request(GET '/');
 
     is $res->status_line, '200 OK', 'Status';
-    is $res->content, '<a href="/user/1">One</a> <a href="/user/2">Two</a>', 'Content';
+    like $res->content, qr{<a href="/user/1">One</a><br>}, 'Content';
 };
 
 subtest one => sub {

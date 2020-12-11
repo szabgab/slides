@@ -442,20 +442,6 @@ the user uses will be also told the status code is 404.
 
 ![](examples/dancer/return-404/test.t)
 
-## Exercise: Route-based multi-counter
-{id: exercise-route-based-multi-counter}
-
-Create an application that will count from 1 up for every url like this: `/apple` and will
-show the list of counters when the `/` page is accessed.
-
-
-## Solution: Route-based multi-counter
-{id: solution-route-based-multi-counter}
-
-![](examples/dancer/route-based-multi-counter/app.psgi)
-![](examples/dancer/route-based-multi-counter/test.t)
-
-
 ## Redirect
 {id: redirect}
 
@@ -464,11 +450,26 @@ show the list of counters when the `/` page is accessed.
 ![](examples/dancer/redirection/app.psgi)
 ![](examples/dancer/redirection/test.t)
 
+
+## Exercise: Route-based multi-counter
+{id: exercise-route-based-multi-counter}
+
+Create an application that will count from 1 up for every url like this: `/apple` and will
+show the list of counters when the `/` page is accessed.
+
 ## Exercise: Random Redirect
 {id: exercise-random-redirect}
 
 * Create an application that has a list of URLs (they can be stored inside the program) and has a path that will randomly select one of the URLs and redirect the visitor to it.
 * Write a test as well
+
+
+## Solution: Route-based multi-counter
+{id: solution-route-based-multi-counter}
+
+![](examples/dancer/route-based-multi-counter/app.psgi)
+![](examples/dancer/route-based-multi-counter/test.t)
+
 
 ## Solution: Random Redirect
 {id: solution-random-redirect}
