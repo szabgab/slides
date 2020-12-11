@@ -10,13 +10,6 @@ my $app = Plack::Util::load_psgi './app.psgi';
 
 my $test = Plack::Test->create($app);
 
-subtest main => sub {
-    my $res = $test->request(GET '/');
-
-    is $res->status_line, '200 OK', 'Status';
-    is $res->content, '<a href="/user/1">One</a> <a href="/user/2">Two</a>';
-};
-
 subtest one => sub {
     my $res = $test->request(GET '/user/1');
 

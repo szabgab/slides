@@ -415,6 +415,7 @@ If the request does not match the expected type then that route does not match. 
 {/aside}
 
 * [Route-Handlers](https://metacpan.org/pod/distribution/Dancer2/lib/Dancer2/Manual.pod#Route-Handlers)
+* [Types](https://metacpan.org/pod/distribution/Type-Tiny/lib/Type/Tiny/Manual/AllTypes.pod)
 
 ![](examples/dancer/params-in-routes-int/app.psgi)
 

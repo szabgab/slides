@@ -1,6 +1,8 @@
 package App;
 use Dancer2;
 
+set log => 'warning';
+
 get '/' => sub {
     debug 'debug in main';
     info 'info in main';
