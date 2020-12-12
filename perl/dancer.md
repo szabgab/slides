@@ -419,10 +419,13 @@ If the request does not match the expected type then that route does not match. 
 
 ![](examples/dancer/params-in-routes-int/app.psgi)
 
+## Dancer: Test Type-checking for the route parameters
+{id: test-type-checking-for-the-route-parameters}
+
 ![](examples/dancer/params-in-routes-int/test.t)
 
 ## Dancer: Send 404 Not Found manually
-{id: sent-404-not-found-manually-dancer}
+{id: send-404-not-found-manually-dancer}
 {i: status}
 {i: not_found}
 {i: 404}
@@ -441,7 +444,27 @@ the user uses will be also told the status code is 404.
 
 ![](examples/dancer/return-404/app.psgi)
 
+## Dancer: Test sending 404 Not Found manually
+{id: test-send-404-not-found-manually-dancer}
+
 ![](examples/dancer/return-404/test.t)
+
+
+## Dancer: Optional route parameter
+{id: optional-route-parameter}
+
+![](examples/dancer/params-in-routes-optional/app.psgi)
+
+## Dancer: Regex route parameter
+{id: regex-route-parameter}
+
+![](examples/dancer/params-in-routes-regex/app.psgi)
+
+## Dancer: Wildcard route parameter
+{id: wildcar-route-parameter}
+
+![](examples/dancer/params-in-routes-wildcard/app.psgi)
+
 
 ## Redirect
 {id: redirect}
