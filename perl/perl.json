@@ -45,6 +45,9 @@
         "psgi.md",
 
         "dancer.md",
+        "dancer-template.md",
+        "dancer-skeleton.md",
+
 
         "testing-preface.md",
         "test-simple.md",
