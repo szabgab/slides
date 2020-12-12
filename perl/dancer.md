@@ -479,6 +479,29 @@ show the list of counters when the `/` page is accessed.
 ![](examples/dancer/random-redirect/test.t)
 
 
+## Template Tiny
+{id: template-tiny}
+
+![](examples/dancer/template-tiny/app.psgi)
+![](examples/dancer/template-tiny/views/main.tt)
+
+## Template Toolkit
+{id: template-toolkit}
+
+![](examples/dancer/template-toolkit/app.psgi)
+![](examples/dancer/template-toolkit/views/main.tt)
+
+## Template Toolkit include
+{id: template-toolkit-include}
+{i: INCLUDE}
+
+![](examples/dancer/template-include/app.psgi)
+![](examples/dancer/template-include/views/main.tt)
+![](examples/dancer/template-include/views/incl/header.tt)
+![](examples/dancer/template-include/views/incl/footer.tt)
+
+* Also include navigation etc.
+
 ## Showing the current time using templates
 {id: showing-the-current-time-using-templates}
 
