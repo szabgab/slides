@@ -1,5 +1,5 @@
 # Functions (subroutines)
-{id: python-functions}
+{id: functions}
 
 ## Why use functions?
 {id: why-use-functions}
