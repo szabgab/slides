@@ -5,11 +5,18 @@
 ## Template Tiny
 {id: template-tiny}
 
+* [Dancer2::Template::Tiny](https://metacpan.org/pod/Dancer2::Template::Tiny)
+* [Template::Tiny](https://metacpan.org/pod/Template::Tiny)
+
 ![](examples/dancer/template-tiny/app.psgi)
 ![](examples/dancer/template-tiny/views/main.tt)
 
 ## Template Toolkit
 {id: template-toolkit}
+
+* [Dancer2::Template::TemplateToolkit](https://metacpan.org/pod/Dancer2::Template::TemplateToolkit)
+* [Template::Toolkit on MetaCPAN](https://metacpan.org/pod/Template)
+* [Template::Toolkit](http://www.template-toolkit.org/)
 
 ![](examples/dancer/template-toolkit/app.psgi)
 ![](examples/dancer/template-toolkit/views/main.tt)

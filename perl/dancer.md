@@ -492,6 +492,11 @@ show the list of counters when the `/` page is accessed.
 {id: solution-route-based-multi-counter}
 
 ![](examples/dancer/route-based-multi-counter/app.psgi)
+
+
+## Solution: Testing Route-based multi-counter
+{id: solution-testing-route-based-multi-counter}
+
 ![](examples/dancer/route-based-multi-counter/test.t)
 
 
@@ -499,6 +504,10 @@ show the list of counters when the `/` page is accessed.
 {id: solution-random-redirect}
 
 ![](examples/dancer/random-redirect/app.psgi)
+
+## Solution: Testing Random Redirect
+{id: solution-testing-random-redirect}
+
 ![](examples/dancer/random-redirect/test.t)
 
 
@@ -506,4 +515,10 @@ show the list of counters when the `/` page is accessed.
 {id: show-configuration}
 
 ![](examples/dancer/show-config/app.psgi)
+
+## Session
+{id: session}
+
+![](examples/dancer/session/app.psgi)
+![](examples/dancer/session/test.t)
 

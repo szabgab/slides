@@ -1,12 +1,13 @@
 package App;
 use Dancer2;
+use Data::Dumper qw(Dumper);
 
 get '/' => sub {
     my $config = config();
-    my $html = '';
-    for my $key (sort keys %$config) {
-        $html .= "$key = $config->{$key}<br>\n";
-    }
+    my $html = '<pre>';
+    #$html .= to_json($config, {pretty => 1});
+    $html .= to_yaml($config);
+    $html .= '</pre>';
     return $html;
 };
 
