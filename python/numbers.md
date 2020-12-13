@@ -1,8 +1,8 @@
 # Numbers
-{id: python-numbers}
+{id: numbers}
 
 ## Numbers
-{id: numbers}
+{id: python-numbers}
 
 ![](examples/numbers/numbers.py)
 
