@@ -461,7 +461,7 @@ the user uses will be also told the status code is 404.
 ![](examples/dancer/params-in-routes-regex/app.psgi)
 
 ## Dancer: Wildcard route parameter
-{id: wildcar-route-parameter}
+{id: wildcard-route-parameter}
 
 ![](examples/dancer/params-in-routes-wildcard/app.psgi)
 
