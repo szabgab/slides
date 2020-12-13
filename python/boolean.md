@@ -1,5 +1,5 @@
 # Comparison and Boolean
-{id: python-boolean}
+{id: boolean}
 
 ## if statement again
 {id: if-statement-again}

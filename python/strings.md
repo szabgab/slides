@@ -1,5 +1,5 @@
 # Strings
-{id: python-strings}
+{id: strings}
 
 
 ## Single quoted and double quoted strings
