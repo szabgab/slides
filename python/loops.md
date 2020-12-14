@@ -134,6 +134,13 @@ There is no `do ... while` in Python but we can write code like this to have sim
 
 Not supported in Python. "If you feel the urge to do that, your code is probably too complex. Create functions!"
 
+## For-else
+{id: for-else}
+
+![](examples/loops/for-else.py)
+![](examples/loops/for-else.out)
+
+
 ## Exit vs return vs break and continue
 {id: exit-return-break}
 {i: exit}
