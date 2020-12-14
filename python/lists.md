@@ -476,6 +476,17 @@ To sort the list according to length using sorted
 ![](examples/lists/sorted_key.py)
 ![](examples/lists/sorted_key.out)
 
+## Sort and secondary sort
+{id: sort-and-secondary-sort}
+
+{aside}
+We have a list of words. It is easy to sort them by length, but what will be the order among the words
+that have the same length?
+
+A sort using a lambda-function that returns a tuple can provide the secondary sort order.
+{/aside}
+
+![](examples/lists/sort_by_two_keys.py)
 
 ## Sorting characters of a string
 {id: sorting-characters}
