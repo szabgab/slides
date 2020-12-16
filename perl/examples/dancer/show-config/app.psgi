@@ -1,14 +1,9 @@
 package App;
 use Dancer2;
-use Data::Dumper qw(Dumper);
 
 get '/' => sub {
     my $config = config();
-    my $html = '<pre>';
-    #$html .= to_json($config, {pretty => 1});
-    $html .= to_yaml($config);
-    $html .= '</pre>';
-    return $html;
+    return '<pre>' . to_json($config, {pretty => 1, canonical => 1}) . '</pre>';
 };
 
 App->to_app;
