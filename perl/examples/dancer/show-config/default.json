@@ -1,0 +1,25 @@
+{
+   "appdir" : "/home/gabor/work/slides/perl/examples/dancer/show-config",
+   "apphandler" : "PSGI",
+   "behind_proxy" : 0,
+   "charset" : "",
+   "content_type" : "text/html",
+   "environment" : "development",
+   "host" : "0.0.0.0",
+   "logger" : "console",
+   "no_server_tokens" : 0,
+   "port" : "3000",
+   "public_dir" : "/home/gabor/work/slides/perl/examples/dancer/show-config/public",
+   "route_handlers" : [
+      [
+         "AutoPage",
+         1
+      ]
+   ],
+   "startup_info" : 1,
+   "static_handler" : null,
+   "template" : "Tiny",
+   "traces" : 0,
+   "views" : "/home/gabor/work/slides/perl/examples/dancer/show-config/views"
+}
+

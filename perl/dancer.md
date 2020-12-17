@@ -516,9 +516,31 @@ show the list of counters when the `/` page is accessed.
 
 ![](examples/dancer/show-config/app.psgi)
 
+The default values in JSON format:
+
+![](examples/dancer/show-config/default.json)
+
 ## Session
 {id: session}
 
 ![](examples/dancer/session/app.psgi)
+
+## Test Session
+{id: session-test}
+
+
 ![](examples/dancer/session/test.t)
+
+## Test Session use cookie jar
+{id: session-test-use-cookie-jar}
+
+![](examples/dancer/session/test_with_cookie.t)
+![](examples/dancer/session/test_with_cookie2.t)
+
+## Test Session use Test::WWW::Mechanize::PSGI
+{id: session-test-use-mechanize-psgi}
+
+
+![](examples/dancer/session/mech.t)
+![](examples/dancer/session/mech2.t)
 
