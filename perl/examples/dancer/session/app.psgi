@@ -1,12 +1,10 @@
 package App;
 use Dancer2;
 
-set session => 'YAML';
-debug "start";
+#set session => 'YAML';
 
 get '/' => sub {
     my $counter = session('counter');
-    debug $counter;
     $counter++;
     session counter => $counter;
     return $counter;
