@@ -535,6 +535,10 @@ The default values in JSON format:
 {id: session-test-use-cookie-jar}
 
 ![](examples/dancer/session/test_with_cookie.t)
+
+## Test Session use cookie jar - 2 browsers
+{id: session-test-use-cookie-jar-2}
+
 ![](examples/dancer/session/test_with_cookie2.t)
 
 ## Test Session use Test::WWW::Mechanize::PSGI
@@ -542,5 +546,9 @@ The default values in JSON format:
 
 
 ![](examples/dancer/session/mech.t)
+
+## Test Session use Test::WWW::Mechanize::PSGI - 2 browsers
+{id: session-test-use-mechanize-psgi-2}
+
 ![](examples/dancer/session/mech2.t)
 
