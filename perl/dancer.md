@@ -552,3 +552,22 @@ The default values in JSON format:
 
 ![](examples/dancer/session/mech2.t)
 
+
+## Return JSON
+{id: dancer-return-json}
+
+![](examples/dancer/return-json/app.psgi)
+
+## Testing Return JSON
+{id: dancer-return-json-testing}
+
+![](examples/dancer/return-json/test.t)
+
+## Dancer: before and after hooks
+{id: dancer-before-and-after-hooks}
+
+## DSL - Domain Specific Language
+{id: dancer-dsl}
+
+* [DSL ketword](https://metacpan.org/pod/distribution/Dancer2/lib/Dancer2/Manual.pod#DSL-KEYWORDS)
+
