@@ -48,9 +48,11 @@ get '/api/get/:id' => sub {
 };
 
 get '/api/list' => sub {
-    send_as JSON => {};
-
-    my %res;
+    my $data = setting('data');
+    my %res = (
+        status => 'ok',
+        items => [ map { { id => $_, text => $data->{$_} } }  keys %$data ],
+    );
     response_header 'Content-type' => 'application/json';
     return encode_json( \%res );
 };

@@ -528,24 +528,26 @@ The default values in JSON format:
 ## Test Session
 {id: session-test}
 
-
 ![](examples/dancer/session/test.t)
+
 
 ## Test Session use cookie jar
 {id: session-test-use-cookie-jar}
 
 ![](examples/dancer/session/test_with_cookie.t)
 
+
 ## Test Session use cookie jar - 2 browsers
 {id: session-test-use-cookie-jar-2}
 
 ![](examples/dancer/session/test_with_cookie2.t)
 
+
 ## Test Session use Test::WWW::Mechanize::PSGI
 {id: session-test-use-mechanize-psgi}
 
-
 ![](examples/dancer/session/mech.t)
+
 
 ## Test Session use Test::WWW::Mechanize::PSGI - 2 browsers
 {id: session-test-use-mechanize-psgi-2}
@@ -558,16 +560,52 @@ The default values in JSON format:
 
 ![](examples/dancer/return-json/app.psgi)
 
+
 ## Testing Return JSON
 {id: dancer-return-json-testing}
 
 ![](examples/dancer/return-json/test.t)
 
+
 ## Dancer: before and after hooks
 {id: dancer-before-and-after-hooks}
+
+![](examples/dancer/hooks/app.psgi)
+
+
+## Dancer: testing before and after hooks
+{id: dancer-before-and-after-hooks-testing}
+
+![](examples/dancer/hooks/test.t)
+
 
 ## DSL - Domain Specific Language
 {id: dancer-dsl}
 
 * [DSL ketword](https://metacpan.org/pod/distribution/Dancer2/lib/Dancer2/Manual.pod#DSL-KEYWORDS)
+
+
+## Exercise: Simple Single-user TODO list API
+{id: exercise-simple-single-user-todo-api}
+
+* Write a web application that serves JSON files. Create the following end-points:
+* `/api/add/Task to do`        will store the "Task to do" in a "database" and will return {"status": "ok", elapsed: "0.00003", id: "13124"} if successful
+* `/api/list`                  will return the list of all the items with their id: { "items": [ { "text": "Task to do", "id": "13124" }, { "text": "Other thing", "id" : "7238" }], elapsed: "0.0004", "status": "ok" }
+* `/api/get/ID                 will return the given task from the database. Will return {"text": "Task to do", "id": "13124", "status": "ok"} if ID was 13124, will return {"status": "failure"} if failed. (e.g. the item was not in the database) set HTTP code to 404 if no such ID found.
+* `/api/del/ID                 will remove the given task from the database. Will return {"status": "ok"} if managed to remove, will return {"status": "failure"} if failed. (e.g. the item was not in the database)
+
+* `elapsed` is the time the operation took
+* `id` is some unique id for the task
+* `status` can be `ok` or `failure`
+
+
+## Solution: Simple Single-user TODO list API
+{id: solution-simple-single-user-todo-api}
+
+![](examples/dancer/simple-todo/app.psgi)
+
+## Solution: Simple Single-user TODO list API - testing
+{id: solution-simple-single-user-todo-api-testing}
+
+![](examples/dancer/simple-todo/test.t)
 
