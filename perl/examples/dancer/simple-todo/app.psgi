@@ -30,11 +30,14 @@ get '/api/get/:id' => sub {
     my $data = setting('data');
     if (exists $data->{$id}) {
         %res = (
-            "status" => "ok"
+            id => $id,
+            text => $data->{$id},
+            status => "ok",
         );
     } else {
         %res = (
-            "status" => "failure"
+            "id" => $id,
+            "status" => "failure",
         );
     }
 

@@ -52,14 +52,18 @@ my %data = (
 subtest get => sub {
     my $test = Plack::Test->create($app);
 
+    my $id = '123';
+
     path($db_file)->spew(encode_json(\%data));
-    my $res_add = $test->request(GET "/api/get/123");
+    my $res_add = $test->request(GET "/api/get/$id");
     is $res_add->status_line, '200 OK', 'Status';
     diag $res_add->content;
     my $resp = decode_json($res_add->content);
     like $resp->{elapsed}, $ELAPSED, 'elapsed';
+    delete $resp->{elapsed};
+    is_deeply $resp, { "status" => "ok", text => $data{$id}, id => $id }, 'returned json data';
 
-#{"text": "Task to do", "id": "13124", "status": "ok"} if ID was 13124, will return {"status": "failure"} if failed. (e.g. the item was not in the database) set HTTP code to 404 if no such ID found.
+# will return {"status": "failure"} if failed. (e.g. the item was not in the database) set HTTP code to 404 if no such ID found.
 };
 
 #* `/api/list`                  will return the list of all the items with their id: {[ { "text": "Task to do", "id": "13124" }, { "text": "Other thing", "id" : "7238" }], elapsed: "0.0004", "status": "ok" }
