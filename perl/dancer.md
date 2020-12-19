@@ -570,6 +570,8 @@ The default values in JSON format:
 ## Dancer: before and after hooks
 {id: dancer-before-and-after-hooks}
 
+* [hooks](https://metacpan.org/pod/distribution/Dancer2/lib/Dancer2/Manual.pod#HOOKS)
+
 ![](examples/dancer/hooks/app.psgi)
 
 
