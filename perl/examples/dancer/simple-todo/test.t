@@ -51,7 +51,26 @@ subtest add_first => sub {
     is_deeply $json, { $id => $text };
 };
 
-# TODO add_more
+subtest add_more => sub {
+    my $test = Plack::Test->create($app);
+
+    path($db_file)->spew(encode_json(\%data));
+
+    my $text = 'Another item';
+    my $res_add = $test->request(GET "/api/add/$text");
+    is $res_add->status_line, '200 OK', 'Status';
+    diag $res_add->content;
+    my $resp_add = decode_json($res_add->content);
+    is $resp_add->{status}, "ok", 'status field exists';
+    like $resp_add->{elapsed}, $ELAPSED, 'elapsed field looks good';
+    my $id = $resp_add->{id};
+    like $id, qr{^\d{8,}$}, 'id looks good';
+    diag $id;
+
+    my $json = decode_json(path($db_file)->slurp);
+    is_deeply $json, { %data, $id => $text };
+};
+
 
 subtest good_get => sub {
     my $test = Plack::Test->create($app);
