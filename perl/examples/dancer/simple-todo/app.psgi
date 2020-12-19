@@ -11,7 +11,9 @@ get '/api/add/:text' => sub {
     my $text = route_parameters->get('text');
     my $data = setting('data');
     my $id = int(1000000 * Time::HiRes::time);
-    debug "ID: $id";
+    #debug "ID: $id";
+    $data->{$id} = $text;
+    save_data(setting('db'), $data);
     my %res = (
         status => 'ok',
         id => $id,
@@ -23,16 +25,38 @@ get '/api/add/:text' => sub {
 
 get '/api/get/:id' => sub {
     my $id = route_parameters->get('id');
-    send_as JSON => {};
+
+    my %res;
+    my $data = setting('data');
+    if (exists $data->{$id}) {
+        %res = (
+            "status" => "ok"
+        );
+    } else {
+        %res = (
+            "status" => "failure"
+        );
+    }
+
+    response_header 'Content-type' => 'application/json';
+    return encode_json( \%res );
+
 };
 
 get '/api/list' => sub {
     send_as JSON => {};
+
+    my %res;
+    response_header 'Content-type' => 'application/json';
+    return encode_json( \%res );
 };
 
 get '/api/del/:id' => sub {
     my $id = route_parameters->get('id');
-    send_as JSON => {};
+
+    my %res;
+    response_header 'Content-type' => 'application/json';
+    return encode_json( \%res );
 };
 
 
@@ -58,18 +82,14 @@ hook before => sub {
 
 hook after => sub {
 	my ($response) = @_;
-    debug $response;
+    #debug $response;
 
 	my $start_time = setting('start_time');
-    my $db = setting('db');
-    if (open (my $fh, '>', $db)) {
-        print $fh encode_json( setting('data') );
-    }
 
 	if ($start_time) {
 		my $elapsed_time = Time::HiRes::time - $start_time;
         #debug "Elapsed time: $elapsed_time";
-        debug $response->{content};
+        #debug $response->{content};
         if ($response->headers->{'content-type'} eq 'application/json') {
             my $json = decode_json($response->{content});
             $json->{elapsed} = $elapsed_time;
@@ -80,6 +100,12 @@ hook after => sub {
 	return;
 };
 
+sub save_data {
+    my ($db, $data) = @_;
+    if (open (my $fh, '>', $db)) {
+        print $fh encode_json( $data );
+    }
+}
 
 App->to_app;
 
