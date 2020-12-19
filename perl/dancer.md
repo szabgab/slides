@@ -589,7 +589,12 @@ The default values in JSON format:
 {id: exercise-simple-single-user-todo-api}
 
 * Write a web application that serves JSON files. Create the following end-points:
-* `/api/add/Task to do`        will store the "Task to do" in a "database" and will return {"status": "ok", elapsed: "0.00003", id: "13124"} if successful
+* `/api/add/Task to do`        will store the "Task to do" in a "database" and if successful it will return:
+
+```
+{"status": "ok", elapsed: "0.00003", id: "13124"}
+```
+
 * `/api/list`                  will return the list of all the items with their id: { "items": [ { "text": "Task to do", "id": "13124" }, { "text": "Other thing", "id" : "7238" }], elapsed: "0.0004", "status": "ok" }
 * `/api/get/ID                 will return the given task from the database. Will return {"text": "Task to do", "id": "13124", "status": "ok"} if ID was 13124, will return {"status": "failure"} if failed. (e.g. the item was not in the database) set HTTP code to 404 if no such ID found.
 * `/api/del/ID                 will remove the given task from the database. Will return {"status": "ok"} if managed to remove, will return {"status": "failure"} if failed. (e.g. the item was not in the database)
@@ -601,11 +606,21 @@ The default values in JSON format:
 
 ## Solution: Simple Single-user TODO list API
 {id: solution-simple-single-user-todo-api}
+{i: setting}
+{i: response_header}
+{i: encode_json}
+{i: decode_json}
+
+* [Time::HiRes](https://metacpan.org/pod/Time::HiRes)
 
 ![](examples/dancer/simple-todo/app.psgi)
 
 ## Solution: Simple Single-user TODO list API - testing
 {id: solution-simple-single-user-todo-api-testing}
+
+* [Test::Deep](https://metacpan.org/pod/Test::Deep)
+* [Path::Tiny](https://metacpan.org/pod/Path::Tiny)
+* [JSON::MaybeXS](https://metacpan.org/pod/JSON::MaybeXS)
 
 ![](examples/dancer/simple-todo/test.t)
 
