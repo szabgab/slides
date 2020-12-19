@@ -8,6 +8,7 @@ use HTTP::Request::Common;
 use JSON::MaybeXS qw(decode_json encode_json);
 use File::Temp qw(tempdir);
 use Path::Tiny qw(path);
+use Storable qw(dclone);
 
 my $tmpdir = tempdir( CLEANUP => 1 );
 my $db_file = path($tmpdir)->child('todo.json');
@@ -75,9 +76,10 @@ subtest add_more => sub {
 subtest good_get => sub {
     my $test = Plack::Test->create($app);
 
+    path($db_file)->spew(encode_json(\%data));
+
     my $id = '123';
 
-    path($db_file)->spew(encode_json(\%data));
     my $res_add = $test->request(GET "/api/get/$id");
     is $res_add->status_line, '200 OK', 'Status';
     diag $res_add->content;
@@ -93,9 +95,10 @@ subtest good_get => sub {
 subtest bad_get => sub {
     my $test = Plack::Test->create($app);
 
+    path($db_file)->spew(encode_json(\%data));
+
     my $id = '42';
 
-    path($db_file)->spew(encode_json(\%data));
     my $res_add = $test->request(GET "/api/get/$id");
     is $res_add->status_line, '404 Not Found', 'Status';
     diag $res_add->content;
@@ -108,14 +111,37 @@ subtest bad_get => sub {
     is_deeply $json, \%data;
 };
 
+subtest good_del => sub {
+    my $test = Plack::Test->create($app);
+
+    path($db_file)->spew(encode_json(\%data));
+
+    my $id = '123';
+
+    my $res_add = $test->request(GET "/api/del/$id");
+    is $res_add->status_line, '200 OK', 'Status';
+    diag $res_add->content;
+    my $resp = decode_json($res_add->content);
+    like $resp->{elapsed}, $ELAPSED, 'elapsed';
+    delete $resp->{elapsed};
+    is_deeply $resp, { "status" => "ok", id => $id, text => $data{$id} }, 'returned json data';
+
+    my $json = decode_json(path($db_file)->slurp);
+    my $reduced_data = dclone \%data;
+    delete $reduced_data->{$id};
+    is_deeply $json, $reduced_data;
+};
+
+
 
 subtest bad_del => sub {
     my $test = Plack::Test->create($app);
 
+    path($db_file)->spew(encode_json(\%data));
+
     my $id = '42';
 
-    path($db_file)->spew(encode_json(\%data));
-    my $res_add = $test->request(GET "/api/get/$id");
+    my $res_add = $test->request(GET "/api/del/$id");
     is $res_add->status_line, '404 Not Found', 'Status';
     diag $res_add->content;
     my $resp = decode_json($res_add->content);
