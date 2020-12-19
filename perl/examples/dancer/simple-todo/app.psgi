@@ -35,6 +35,7 @@ get '/api/get/:id' => sub {
             status => "ok",
         );
     } else {
+        status 'not_found';
         %res = (
             "id" => $id,
             "status" => "failure",
@@ -58,6 +59,24 @@ get '/api/del/:id' => sub {
     my $id = route_parameters->get('id');
 
     my %res;
+    my $data = setting('data');
+    if (exists $data->{$id}) {
+        %res = (
+            id => $id,
+            text => $data->{$id},
+            status => "ok",
+        );
+        delete $data->{$id};
+        save_data(setting('db'), $data);
+    } else {
+        status 'not_found';
+        %res = (
+            "id" => $id,
+            "status" => "failure",
+        );
+    }
+
+
     response_header 'Content-type' => 'application/json';
     return encode_json( \%res );
 };

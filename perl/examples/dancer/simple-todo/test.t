@@ -14,6 +14,13 @@ my $db_file = path($tmpdir)->child('todo.json');
 $ENV{TODO_DB} = $db_file;
 my $ELAPSED = qr{^\d+\.\d+$};
 
+my %data = (
+    "123" => "Hello world",
+    "124" => "Something else",
+    "738" => "A 3rd row",
+);
+
+
 my $app = Plack::Util::load_psgi './app.psgi';
 
 subtest main => sub {
@@ -26,7 +33,7 @@ subtest main => sub {
 
 
 
-subtest add => sub {
+subtest add_first => sub {
     my $test = Plack::Test->create($app);
 
     my $text = 'First item';
@@ -44,12 +51,9 @@ subtest add => sub {
     is_deeply $json, { $id => $text };
 };
 
-my %data = (
-    "123" => "Hello world",
-    "124" => "Something else",
-);
+# TODO add_more
 
-subtest get => sub {
+subtest good_get => sub {
     my $test = Plack::Test->create($app);
 
     my $id = '123';
@@ -63,8 +67,47 @@ subtest get => sub {
     delete $resp->{elapsed};
     is_deeply $resp, { "status" => "ok", text => $data{$id}, id => $id }, 'returned json data';
 
-# will return {"status": "failure"} if failed. (e.g. the item was not in the database) set HTTP code to 404 if no such ID found.
+    my $json = decode_json(path($db_file)->slurp);
+    is_deeply $json, \%data;
 };
+
+subtest bad_get => sub {
+    my $test = Plack::Test->create($app);
+
+    my $id = '42';
+
+    path($db_file)->spew(encode_json(\%data));
+    my $res_add = $test->request(GET "/api/get/$id");
+    is $res_add->status_line, '404 Not Found', 'Status';
+    diag $res_add->content;
+    my $resp = decode_json($res_add->content);
+    like $resp->{elapsed}, $ELAPSED, 'elapsed';
+    delete $resp->{elapsed};
+    is_deeply $resp, { "status" => "failure", id => $id }, 'returned json data';
+
+    my $json = decode_json(path($db_file)->slurp);
+    is_deeply $json, \%data;
+};
+
+
+subtest bad_del => sub {
+    my $test = Plack::Test->create($app);
+
+    my $id = '42';
+
+    path($db_file)->spew(encode_json(\%data));
+    my $res_add = $test->request(GET "/api/get/$id");
+    is $res_add->status_line, '404 Not Found', 'Status';
+    diag $res_add->content;
+    my $resp = decode_json($res_add->content);
+    like $resp->{elapsed}, $ELAPSED, 'elapsed';
+    delete $resp->{elapsed};
+    is_deeply $resp, { "status" => "failure", id => $id }, 'returned json data';
+
+    my $json = decode_json(path($db_file)->slurp);
+    is_deeply $json, \%data;
+};
+
 
 #* `/api/list`                  will return the list of all the items with their id: {[ { "text": "Task to do", "id": "13124" }, { "text": "Other thing", "id" : "7238" }], elapsed: "0.0004", "status": "ok" }
 #* `/api/del/ID                 will remove the given task from the database. Will return {"status": "ok"} if managed to remove, will return {"status": "failure"} if failed. (e.g. the item was not in the database)
