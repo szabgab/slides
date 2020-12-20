@@ -1314,3 +1314,12 @@ Data Files:
 
 ![](examples/pytest/py4/conftest.py)
 ![](examples/pytest/py4/test_one.py)
+
+## Pytest and forking
+{id: pytest-and-forking}
+
+* This tests passes and generates two reports.
+* I could not find a way yet to avoid the reporting in the child-process. Maybe we need to run this with a special runner that will fork and run this test on  our behalf.
+
+![](examples/pytest/test_forker.py)
+
