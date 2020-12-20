@@ -365,4 +365,15 @@ game.run_game(42)
 ![](examples/modules/use_my_simple_math.py)
 
 
+## Loaded modules and their path
+{id: loaded-modules-and-their-path}
+
+* [sys](https://docs.python.org/library/sys.html)
+
+![](examples/modules/loaded_modules.py)
+
+## Built-in modules
+{id: built-in-modules}
+
+![](examples/modules/builtin_modules.py)
 
