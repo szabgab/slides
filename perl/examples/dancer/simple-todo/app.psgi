@@ -3,7 +3,6 @@ use Dancer2;
 use Time::HiRes ();
 
 get '/' => sub {
-    my $db = setting('db');
     return 'TODO';
 };
 
@@ -88,11 +87,7 @@ hook before => sub {
     set start_time => Time::HiRes::time;
     my $db = $ENV{TODO_DB} || 'todo.json';
     set db => $db;
-    #if (not -e $db) {
-    #    if (open (my $fh, '>', $db)) {
-    #        print $fh encode_json( {} );
-    #    }
-    #}
+
     my $data = {};
     if (-e $db) {
         if (open (my $fh, '<', $db)) {
