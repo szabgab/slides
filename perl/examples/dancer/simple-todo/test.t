@@ -38,6 +38,8 @@ subtest main => sub {
 subtest add_first => sub {
     my $test = Plack::Test->create($app);
 
+    unlink $db_file if -e $db_file;
+
     my $text = 'First item';
     my $res_add = $test->request(GET "/api/add/$text");
     is $res_add->status_line, '200 OK', 'Status';

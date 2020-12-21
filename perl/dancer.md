@@ -584,7 +584,7 @@ The default values in JSON format:
 ## DSL - Domain Specific Language
 {id: dancer-dsl}
 
-* [DSL ketword](https://metacpan.org/pod/distribution/Dancer2/lib/Dancer2/Manual.pod#DSL-KEYWORDS)
+* [DSL keywords](https://metacpan.org/pod/distribution/Dancer2/lib/Dancer2/Manual.pod#DSL-KEYWORDS)
 
 
 ## Exercise: Simple Single-user TODO list API
