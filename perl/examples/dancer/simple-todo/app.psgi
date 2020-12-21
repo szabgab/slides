@@ -8,11 +8,11 @@ get '/' => sub {
 
 get '/api/add/:text' => sub {
     my $text = route_parameters->get('text');
-    my $data = setting('data');
+    my $data = vars->{'data'};
     my $id = int(1000000 * Time::HiRes::time);
     #debug "ID: $id";
     $data->{$id} = $text;
-    save_data(setting('db'), $data);
+    save_data(vars->{'db'}, $data);
     my %res = (
         status => 'ok',
         id => $id,
@@ -26,7 +26,7 @@ get '/api/get/:id' => sub {
     my $id = route_parameters->get('id');
 
     my %res;
-    my $data = setting('data');
+    my $data = vars->{'data'};
     if (exists $data->{$id}) {
         %res = (
             id => $id,
@@ -47,7 +47,7 @@ get '/api/get/:id' => sub {
 };
 
 get '/api/list' => sub {
-    my $data = setting('data');
+    my $data = vars->{'data'};
     my %res = (
         status => 'ok',
         items => [ map { { id => $_, text => $data->{$_} } }  keys %$data ],
@@ -60,7 +60,7 @@ get '/api/del/:id' => sub {
     my $id = route_parameters->get('id');
 
     my %res;
-    my $data = setting('data');
+    my $data = vars->{'data'};
     if (exists $data->{$id}) {
         %res = (
             id => $id,
@@ -68,7 +68,7 @@ get '/api/del/:id' => sub {
             status => "ok",
         );
         delete $data->{$id};
-        save_data(setting('db'), $data);
+        save_data(vars->{'db'}, $data);
     } else {
         status 'not_found';
         %res = (
@@ -84,9 +84,9 @@ get '/api/del/:id' => sub {
 
 
 hook before => sub {
-    set start_time => Time::HiRes::time;
+    var start_time => Time::HiRes::time;
     my $db = $ENV{TODO_DB} || 'todo.json';
-    set db => $db;
+    var db => $db;
 
     my $data = {};
     if (-e $db) {
@@ -96,14 +96,14 @@ hook before => sub {
             $data = decode_json( $json_str);
         }
     }
-    set data => $data;
+    var data => $data;
 };
 
 hook after => sub {
 	my ($response) = @_;
     #debug $response;
 
-	my $start_time = setting('start_time');
+	my $start_time = vars->{'start_time'};
 
 	if ($start_time) {
 		my $elapsed_time = Time::HiRes::time - $start_time;
