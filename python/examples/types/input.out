@@ -1,0 +1,2 @@
+input.py:6: error: Incompatible types in assignment (expression has type "int", variable has type "str")
+Found 1 error in 1 file (checked 1 source file)
