@@ -1,10 +1,16 @@
 # Web application development with Dancer
 {id: dancer}
 
+## Perl Dancer Video course
+{id: perl-dancer-video-course}
+
+Screencast recordings of this course are available vie [Leanpub](https://leanpub.com/c/dancer)
+
 ## Install Perl on Windows
 {id: install-perl-for-dancer}
 
 * [Strawberry Perl](http://strawberryperl.com/)
+* [ActiveState Perl](https://www.activestate.com/products/perl/downloads/)
 
 ## Install Perl on Linux and Mac OSX
 {id: install-perl-for-dancer-linux}
