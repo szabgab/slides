@@ -52,6 +52,7 @@ temp.json
 perl/examples/dancer/counter/count.txt
 perl/examples/dancer/session/sessions/
 perl/examples/dancer/simple-todo/todo.json
+perl/examples/dancer/uploader/uploads/
 docker/examples/deploy-stand-alone-python/counter.txt
 
 node_modules/
