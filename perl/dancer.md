@@ -575,6 +575,11 @@ The default values in JSON format:
 
 ## Dancer: before and after hooks
 {id: dancer-before-and-after-hooks}
+{i: hook}
+{i: before}
+{i: after}
+{i: var}
+{i: vars}
 
 * [hooks](https://metacpan.org/pod/distribution/Dancer2/lib/Dancer2/Manual.pod#HOOKS)
 
@@ -595,6 +600,7 @@ The default values in JSON format:
 
 ## Upload a file
 {id: upload-a-file}
+{i: upload}
 
 ![](examples/dancer/uploader/app.psgi)
 

@@ -3,18 +3,18 @@ use Dancer2;
 use Time::HiRes ();
 
 get '/' => sub {
-    my $db = setting('db');
+    my $db = vars->{'db'};
     return "DB: $db<br>PLACEHOLDER";
 };
 
 hook before => sub {
-    set start_time => Time::HiRes::time;
-    set db => 'database.json';
+    var start_time => Time::HiRes::time;
+    var db => 'database.json';
 };
 
 hook after => sub {
 	my ($response) = @_;  # Dancer2::Core::Response
-	my $start_time = setting('start_time');
+	my $start_time = vars->{'start_time'};
     debug $response;
 
 	if ($start_time) {
