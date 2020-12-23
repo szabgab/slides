@@ -1,12 +1,15 @@
 package App;
 use Dancer2;
 
-# The default templating engine is the Tiny engine https://metacpan.org/pod/Dancer2::Template::Tiny
 get '/' => sub {
     return template 'main.tt', {
         name => 'Perl Dancer',
         on => 0,
         languages => ['Perl', 'Python', 'Go'],
+        perl => {
+            creator => 'Larry Wall',
+            release => 1987,
+        },
         fruits => [
             {
                 name => 'Apple',

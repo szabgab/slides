@@ -5,10 +5,22 @@
 ## Template Tiny
 {id: template-tiny}
 
-* [Dancer2::Template::Tiny](https://metacpan.org/pod/Dancer2::Template::Tiny)
+```
+.
+├── app.psgi
+└── views
+    └── main.tt
+```
+
+* The default templating engine is the Tiny engine [Dancer2::Template::Tiny](https://metacpan.org/pod/Dancer2::Template::Tiny)
 * [Template::Tiny](https://metacpan.org/pod/Template::Tiny)
 
 ![](examples/dancer/template-tiny/app.psgi)
+
+## Template Tiny - the template
+{id: template-tiny-the-template}
+
+
 ![](examples/dancer/template-tiny/views/main.tt)
 
 ## Template Toolkit
