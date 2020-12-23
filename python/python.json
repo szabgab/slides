@@ -100,6 +100,7 @@
         "faq.md",
         "appendix.md",
         "algorithm.md",
+        "scapy.md",
         "other.md"
     ]
 }
