@@ -276,6 +276,80 @@ Step three will then run.
 
 A failure in step three (e.g. by enabling the ls statement) will not make step Two run.
 
+
+## Setup Droplet for demo
+{id: setup-droplet-for-demo}
+
+```
+apt-get update
+apt-get install -y python3-pip python3-virtualenv
+pip3 install flask
+```
+
+copy the webhook file
+
+```
+FLASK_APP=webhook flask run --host 0.0.0.0 --port 80
+```
+
+## Integrated feature branches
+{id: integrate-feature-branches}
+
+* Commit back (See Generate GitHub Pages)
+
+* Don't allow direct commit to "prod"
+* Every push to a branch called /release/something  will check if merging to "prod" would be a fast forward, runs all the tests, merges to "prod" starts deployment.
+
+## Deploy using Git commit webhooks
+{id: deploy-using-git-commit-webhook}
+
+* Go to GitHub repository
+* Settings
+* Webhooks
+
+```
+Payload URL: https://deploy.hostlocal.com/
+Content tpe: application/json
+Secret: Your secret
+```
+
+![](examples/deploy/webhook.py)
+
+## Deploy from GitHub Action
+{id: deploy-from-github-action-webhook}
+
+* Go to GitHub repository
+* Settings
+* Environments
+* New Environment
+* Name: DEPLOYMENT
+* Add Secret:
+*  Name: DEPLOY_SECRET
+*  Value: HushHush
+
+* curl from GitHub action
+* we need to send a secret, a repo name, and a sha
+
+## Deploy using ssh
+{id: deploy-using-ssh}
+
+```
+ssh-keygen -t rsa -b 4096 -C "user@host" -q -N "" -f ./do
+ssh-copy-id -i do.pub user@host
+```
+
+* Add Secret:
+*   Name: PRIVATE_KEY
+*   Value: ... the content of the 'do' file ...
+
+```
+ssh-keyscan host
+```
+
+* Add Secret:
+*   Name: KNOWN_HOSTS
+*   Value: ... the output of the keyscan command ...
+
 ## Artifact
 {id: artifact}
 
@@ -284,12 +358,5 @@ A failure in step three (e.g. by enabling the ls statement) will not make step T
 
 ![](examples/workflows/artifact.yml)
 
-
-## Deploy using ssh
-{id: deploy-using-ssh}
-
-```
-ssh-keygen
-```
 
 
