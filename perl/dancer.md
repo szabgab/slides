@@ -593,6 +593,16 @@ The default values in JSON format:
 * [DSL keywords](https://metacpan.org/pod/distribution/Dancer2/lib/Dancer2/Manual.pod#DSL-KEYWORDS)
 
 
+## Upload a file
+{id: upload-a-file}
+
+![](examples/dancer/uploader/app.psgi)
+
+## Testing file Uploading
+{id: testing-upload-a-file}
+
+![](examples/dancer/uploader/test.t)
+
 ## Exercise: Simple Single-user TODO list API
 {id: exercise-simple-single-user-todo-api}
 
@@ -631,4 +641,5 @@ The default values in JSON format:
 * [JSON::MaybeXS](https://metacpan.org/pod/JSON::MaybeXS)
 
 ![](examples/dancer/simple-todo/test.t)
+
 

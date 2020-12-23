@@ -17,8 +17,9 @@ get '/upload' => sub {
 
 post '/upload' => sub {
     my $data = request->upload('file');
+    return 'Error' if not defined $data;
 
-    my $dir = path(config->{appdir}, 'uploads');
+    my $dir = $ENV{UPLOAD_DIR} || path(config->{appdir}, 'uploads');
     mkdir $dir if not -e $dir;
 
     my $path = path($dir, $data->basename);
