@@ -1,0 +1,64 @@
+name: OS and Perl Matrix
+
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: Build
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: View environment
+        run: |
+          uname -a
+          printenv | sort
+
+      - name: Build
+        run: |
+          date > date.txt
+          cat date.txt
+
+      - name: Archive production artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: the-date
+          path: |
+            date.txt
+
+  test:
+    needs: build
+    strategy:
+      fail-fast: false
+      matrix:
+        runner: [ubuntu-latest, macos-latest, windows-latest]
+    runs-on: ${{matrix.runner}}
+    name: OS ${{matrix.runner}}
+
+    steps:
+      - name: View environment
+        if: ${{ ! startsWith( matrix.runner, 'windows-' )  }}
+        run: |
+          uname -a
+          printenv | sort
+          ls -l
+
+      - name: Download a single artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: the-date
+
+      - name: View artifact on Linux and OSX
+        if: ${{ ! startsWith( matrix.runner, 'windows-' )  }}
+        run: |
+          ls -l
+          cat date.txt
+          date
+
+      - name: View artifact on Windows
+        if: ${{ startsWith( matrix.runner, 'windows-' )  }}
+        run: |
+          dir
+          type date.txt
+          date
+

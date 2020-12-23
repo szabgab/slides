@@ -276,3 +276,20 @@ Step three will then run.
 
 A failure in step three (e.g. by enabling the ls statement) will not make step Two run.
 
+## Artifact
+{id: artifact}
+
+* In the first job we create a file called date.txt and save it as an artifact.
+* Then we run 3 parallel jobs on 3 operating systems where we dowload the artifact and show its content.
+
+![](examples/workflows/artifact.yml)
+
+
+## Deploy using ssh
+{id: deploy-using-ssh}
+
+```
+ssh-keygen
+```
+
+
