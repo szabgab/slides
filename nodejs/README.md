@@ -4,6 +4,12 @@ let text = "abc".repeat(3);
 console.log(text); // abcabcabc
 
 
+- show how to create memory leak and how to locate one.
+- why use const in function?
+  cons x = require('bla') in a function?
+- scoping of let, var, const
+
+
 
 
 <sect1 id="complaints">
