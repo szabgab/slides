@@ -16,6 +16,9 @@
   </ul>
 [% END %]
 
+<h2>Perl</h2>
+Creator: [% perl.creator %]<br>
+Release: [% perl.release %]<br>
 
 <h2>Fruits</h2>
 <table>
@@ -24,3 +27,5 @@
 [% END %]
 </table>
 
+<hr>
+Template [% template_name %]

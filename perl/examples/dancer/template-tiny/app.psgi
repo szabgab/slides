@@ -1,6 +1,8 @@
 package App;
 use Dancer2;
 
+debug config->{template};
+
 get '/' => sub {
     return template 'main.tt', {
         name => 'Perl Dancer',
@@ -24,6 +26,7 @@ get '/' => sub {
                 color => 'Peach',
             }
         ],
+        template_name => config->{template},
     };
 };
 

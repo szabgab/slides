@@ -27,3 +27,5 @@ Release: [% perl.release %]<br>
 [% END %]
 </table>
 
+<hr>
+Template [% template_name %]
