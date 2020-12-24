@@ -31,14 +31,18 @@
 * [Template::Toolkit](http://www.template-toolkit.org/)
 
 ![](examples/dancer/template-toolkit/config.yml)
+
 ![](examples/dancer/template-toolkit/app.psgi)
+
 ![](examples/dancer/template-toolkit/views/main.tt)
 
 ## Template Toolkit change tags
 {id: template-toolkit-change-tags}
 
 ![](examples/dancer/template-toolkit-tags/config.yml)
+
 ![](examples/dancer/template-toolkit-tags/app.psgi)
+
 ![](examples/dancer/template-toolkit-tags/views/main.tt)
 
 
@@ -46,6 +50,8 @@
 ## Template Toolkit include
 {id: template-toolkit-include}
 {i: INCLUDE}
+
+![](examples/dancer/template-include/config.yml)
 
 ![](examples/dancer/template-include/app.psgi)
 ![](examples/dancer/template-include/views/main.tt)
@@ -56,6 +62,8 @@
 
 ## Template Toolkit layout
 {id: template-toolkit-layout}
+
+![](examples/dancer/template-layout/config.yml)
 
 ![](examples/dancer/template-layout/app.psgi)
 ![](examples/dancer/template-layout/views/main.tt)
@@ -82,6 +90,4 @@
 ![](examples/dancer/show_hoh/views/page.tt)
 ![](examples/dancer/show_hoh/planets.csv)
 ![](examples/dancer/show_hoh/test.t)
-
-
 
