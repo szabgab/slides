@@ -1,6 +1,2 @@
 ---
 template: "template_toolkit"
-#engines:
-#    template:
-#        template_toolkit:
-#            WRAPPER: layouts/main.tt
