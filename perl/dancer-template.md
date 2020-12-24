@@ -30,8 +30,18 @@
 * [Template::Toolkit on MetaCPAN](https://metacpan.org/pod/Template)
 * [Template::Toolkit](http://www.template-toolkit.org/)
 
+![](examples/dancer/template-toolkit/config.yml)
 ![](examples/dancer/template-toolkit/app.psgi)
 ![](examples/dancer/template-toolkit/views/main.tt)
+
+## Template Toolkit change tags
+{id: template-toolkit-change-tags}
+
+![](examples/dancer/template-toolkit-tags/config.yml)
+![](examples/dancer/template-toolkit-tags/app.psgi)
+![](examples/dancer/template-toolkit-tags/views/main.tt)
+
+
 
 ## Template Toolkit include
 {id: template-toolkit-include}

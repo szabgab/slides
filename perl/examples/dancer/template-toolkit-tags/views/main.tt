@@ -1,0 +1,31 @@
+<h1>Hello World</h1>
+<h2><% name %></h2>
+
+<% IF on %>
+<h2>It is on</h2>
+<% ELSE %>
+<h2>It is off</h2>
+<% END %>
+
+<% IF languages %>
+  <h2>Languages</h2>
+  <ul>
+    <% FOREACH lang IN languages %>
+      <li><% lang %></li>
+    <% END %>
+  </ul>
+<% END %>
+
+<h2>Perl</h2>
+Creator: <% perl.creator %><br>
+Release: <% perl.release %><br>
+
+<h2>Fruits</h2>
+<table>
+<% FOREACH fruit IN fruits %>
+  <tr><td><% fruit.name %></td><td><% fruit.color %></td></tr>
+<% END %>
+</table>
+
+<hr>
+Template <% template_name %>
