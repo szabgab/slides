@@ -6,6 +6,8 @@
   <title>[% title %]</title>
 </head>
 <body>
+From layout
+<hr>
 [% content %]
 <hr>
 Welcome to the main layout.

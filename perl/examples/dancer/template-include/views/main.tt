@@ -1,5 +1,5 @@
 [% INCLUDE 'incl/header.tt' %]
 
-<h1>[% name %]</h1>
+<h1>main.tt - [% name %]</h1>
 
 [% INCLUDE 'incl/footer.tt' %]

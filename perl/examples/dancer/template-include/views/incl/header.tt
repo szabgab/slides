@@ -7,3 +7,5 @@
   <title>[%- name -%]</title>
 </head>
 <body>
+From header.tt
+<hr>

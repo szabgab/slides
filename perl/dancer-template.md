@@ -67,7 +67,7 @@
 
 ![](examples/dancer/template-layout/app.psgi)
 ![](examples/dancer/template-layout/views/main.tt)
-![](examples/dancer/template-layout/views/layouts/main.tt)
+![](examples/dancer/template-layout/views/layouts/general.tt)
 
 ## Showing the current time using templates
 {id: showing-the-current-time-using-templates}
