@@ -57,3 +57,9 @@ It also tells you to
 cd App-Skeleton
 plackup bin/app.psgi
 ```
+
+To run the tests:
+
+```
+prove -l
+```
