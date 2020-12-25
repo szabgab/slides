@@ -35,8 +35,8 @@ You can do all kind of interesting things on such **iterables**. We'll see a few
 
 * A few data type we can iterate over using the **for ... in ...** construct. (strings, files, tuples, lists, list comprehension)
 
-![](examples/advanced/iterables.py)
-![](examples/advanced/iterables.out)
+![](examples/functional/iterables.py)
+![](examples/functional/iterables.out)
 
 
 ## range
@@ -60,8 +60,8 @@ how much would it take to have the corresponding list of numbers in memory. For 
 * `range(start, end)` - step defaults to 1
 * `range(end)` - start defaults to 0, step defaults to 1
 
-![](examples/advanced/range.py)
-![](examples/advanced/range.out)
+![](examples/functional/range.py)
+![](examples/functional/range.out)
 
 
 ## range with list
@@ -82,7 +82,7 @@ while the size of the 3-element list is already 112 bytes. It seems the range ob
 On the next page we'll see a more detailed analyzis.
 {/aside}
 
-![](examples/advanced/range_list.py)
+![](examples/functional/range_list.py)
 
 
 ## range vs. list size
@@ -99,8 +99,8 @@ the current number and the size of both the object returned by **range()** and t
 of the **range** object remains the same 48 byttes, while the memory usage of the list growth as the list gets longer.
 {/aside}
 
-![](examples/advanced/range_size.py)
-![](examples/advanced/range_size.out)
+![](examples/functional/range_size.py)
+![](examples/functional/range_size.out)
 
 
 
@@ -122,8 +122,8 @@ computing some more complex function on each number, etc.)
 In this example we just double the values and use **append** to add each value to the list containing the results.
 {/aside}
 
-![](examples/advanced/double.py)
-![](examples/advanced/double.out)
+![](examples/functional/double.py)
+![](examples/functional/double.out)
 
 {aside}
 There are better ways to do this.
@@ -173,8 +173,8 @@ In the second half of the example you can see the same works on strings as well.
 {/aside}
 
 
-![](examples/advanced/map.py)
-![](examples/advanced/map.out)
+![](examples/functional/map.py)
+![](examples/functional/map.out)
 
 ## map delaying function call
 {id: map-delaying-function-call}
@@ -186,8 +186,8 @@ result from the loop. In a nutshell Python does not execute the "double" functio
 the resulting object.
 {/aside}
 
-![](examples/advanced/map_with_print.py)
-![](examples/advanced/map_with_print.out)
+![](examples/functional/map_with_print.py)
+![](examples/functional/map_with_print.out)
 
 ## map on many values
 {id: map-on-many-values}
@@ -197,8 +197,8 @@ Now imagine you have a very long list. I know this is not such a long list, but 
 some function on each element and then iterate over the results, but what if at one point in the iteration we decide to `break` out of the loop?
 {/aside}
 
-![](examples/advanced/map_with_many_items.py)
-![](examples/advanced/map_with_many_items.out)
+![](examples/functional/map_with_many_items.py)
+![](examples/functional/map_with_many_items.out)
 
 {aside}
 You can see that it did not need to waste time calculating the doubles of all the values, as it was calculating on-demand. You can also see that the object returned
@@ -226,8 +226,8 @@ making all that expensive calculations to the whole list was a waste of time.
 This lazy evaluation can help you save both memory and time and you always have the option to force the immediate calculation by calling the **list**
 function.
 {/aside}
-![](examples/advanced/map_list.py)
-![](examples/advanced/map_list.out)
+![](examples/functional/map_list.py)
+![](examples/functional/map_list.out)
 
 
 
@@ -247,8 +247,8 @@ In those cases creating a named function like the "double" function in the previ
 In this example we also used the **list** function to force the full evaluation of the map object to make it easier to show
 the results. Normally you probably would not use the **list** function here.
 {/aside}
-![](examples/advanced/double_lambda.py)
-![](examples/advanced/double_lambda.out)
+![](examples/functional/double_lambda.py)
+![](examples/functional/double_lambda.out)
 
 
 ## What is lambda in Python?
@@ -264,8 +264,8 @@ Lambda creates simple anonymous function. It is simple because it can only have 
 The usual use is as we saw earlier when we passed it as a parameter to the `map` function. However, in the next example we show that you can assign the
 lambda-function to a name and then you could used that name just as any other function you would define using **def**.
 {/aside}
-![](examples/advanced/lambda.py)
-![](examples/advanced/lambda.out)
+![](examples/functional/lambda.py)
+![](examples/functional/lambda.out)
 
 
 ## lambda returning tuple
@@ -275,14 +275,14 @@ lambda-function to a name and then you could used that name just as any other fu
 
 A lambda function can return complex data structures as well. e.g. a tuple.
 {/aside}
-![](examples/advanced/lambda_return_tuple.py)
-![](examples/advanced/lambda_return_tuple.out)
+![](examples/functional/lambda_return_tuple.py)
+![](examples/functional/lambda_return_tuple.out)
 
 
 ## map returning tuples
 {id: map-returning-tuples}
-![](examples/advanced/map_lambda_tuples.py)
-![](examples/advanced/map_lambda_tuples.out)
+![](examples/functional/map_lambda_tuples.py)
+![](examples/functional/map_lambda_tuples.out)
 
 
 ## lambda with two parameters
@@ -292,8 +292,8 @@ A lambda function can return complex data structures as well. e.g. a tuple.
 
 A **lambda**-function can have more than one parameters:
 {/aside}
-![](examples/advanced/lambda_params.py)
-![](examples/advanced/lambda_params.out)
+![](examples/functional/lambda_params.py)
+![](examples/functional/lambda_params.out)
 
 
 ## map for more than one iterable
@@ -301,8 +301,8 @@ A **lambda**-function can have more than one parameters:
 
 Lets "add" together two lists of numbers. Using + will just join the two lists together, but we can use the "map" function to add the values pair-wise.
 
-![](examples/advanced/map_add.py)
-![](examples/advanced/map_add.out)
+![](examples/functional/map_add.py)
+![](examples/functional/map_add.out)
 
 
 ## map on uneven lists
@@ -314,8 +314,8 @@ In **Python 3** the iterator stops when the shortest iterable is exhausted.
 
 In **Python 2** it used to extend the shorter lists by **None** values.
 {/aside}
-![](examples/advanced/map_add_shorter.py)
-![](examples/advanced/map_add_shorter.out)
+![](examples/functional/map_add_shorter.py)
+![](examples/functional/map_add_shorter.out)
 
 
 ## replace None (for Python 2)
@@ -325,7 +325,7 @@ In **Python 2** it used to extend the shorter lists by **None** values.
 In Python 2 map used to extend the shorter lists by **None** values.
 So to avoid exceptions, we had some exra code replacing the None values by 0, using the ternary operator.
 {/aside}
-![](examples/advanced/map_add_none.py)
+![](examples/functional/map_add_none.py)
 
 
 ## map on uneven lists - fixed (for Python 2)
@@ -335,7 +335,7 @@ So to avoid exceptions, we had some exra code replacing the None values by 0, us
 A nicer fix was this:
 {/aside}
 
-![](examples/advanced/map_add_shorter_fixed.py)
+![](examples/functional/map_add_shorter_fixed.py)
 
 
 ## map mixed iterators
@@ -345,15 +345,15 @@ A nicer fix was this:
 **map** works on any iterable, so we might end up passing one list and one string to it.
 {/aside}
 
-![](examples/advanced/map_mixed.py)
-![](examples/advanced/map_mixed.out)
+![](examples/functional/map_mixed.py)
+![](examples/functional/map_mixed.out)
 
 
 ## map fetch value from dict
 {id: map-dict}
 
-![](examples/advanced/map_dict.py)
-![](examples/advanced/map_dict.out)
+![](examples/functional/map_dict.py)
+![](examples/functional/map_dict.out)
 
 ## Exercise: string to length
 {id: exercise-string-to-length}
@@ -379,20 +379,20 @@ Create an iterator that given two files will return true for each line where the
 ## Solution: string to length
 {id: solution-string-to-length}
 
-![](examples/advanced/map_string_to_len.py)
+![](examples/functional/map_string_to_len.py)
 
 ## Solution: row to length
 {id: solution-row-to-length}
 
 
-![](examples/advanced/map_row_to_length.py)
+![](examples/functional/map_row_to_length.py)
 
 
 ## Solution: compare rows
 {id: solution-compare-rows}
 
-![](examples/advanced/compare_rows.py)
-![](examples/advanced/compare_rows.out)
+![](examples/functional/compare_rows.py)
+![](examples/functional/compare_rows.out)
 
 
 ## filter
@@ -406,30 +406,30 @@ Create an iterator that given two files will return true for each line where the
 This can have only one iterable!
 {/aside}
 
-![](examples/advanced/filter_with_function.py)
-![](examples/advanced/filter_with_function.out)
+![](examples/functional/filter_with_function.py)
+![](examples/functional/filter_with_function.out)
 
 ## filter with lambda
 {id: filter-with-lambda}
 {i: filter}
 {i: grep}
 
-![](examples/advanced/filter.py)
-![](examples/advanced/filter.out)
+![](examples/functional/filter.py)
+![](examples/functional/filter.out)
 
 
 ## filter - map example
 {id: filter-map}
 
-![](examples/advanced/filter_map.py)
-![](examples/advanced/filter_map.out)
+![](examples/functional/filter_map.py)
+![](examples/functional/filter_map.out)
 
 
 ## filter - map  in one expression
 {id: filter-map-one}
 
-![](examples/advanced/filter_map_one.py)
-![](examples/advanced/filter_map_one.out)
+![](examples/functional/filter_map_one.py)
+![](examples/functional/filter_map_one.out)
 
 ## Get indexes of values
 {id: get-indexes-of-values}
@@ -448,8 +448,8 @@ Finally there is another example that shows how to get the indexes of all the na
 Just to show you that we can use any arbitray condition there.
 {/aside}
 
-![](examples/advanced/get_indexes.py)
-![](examples/advanced/get_indexes.out)
+![](examples/functional/get_indexes.py)
+![](examples/functional/get_indexes.out)
 
 
 ## reduce
@@ -462,8 +462,8 @@ In Python 2 it was still part of the language.
 
 `reduce(function, iterable[, initializer])`
 
-![](examples/advanced/reduce.py)
-![](examples/advanced/reduce.out)
+![](examples/functional/reduce.py)
+![](examples/functional/reduce.out)
 
 The initializer is used as the 0th element returned by the iterable. It is mostly interesting in case the iterable is empty.
 
@@ -471,15 +471,15 @@ The initializer is used as the 0th element returned by the iterable. It is mostl
 {id: reduce-with-defaiult}
 {i: reduce}
 
-![](examples/advanced/reduce_with_default.py)
-![](examples/advanced/reduce_with_default.out)
+![](examples/functional/reduce_with_default.py)
+![](examples/functional/reduce_with_default.out)
 
 ## zip
 {id: zip}
 {i: zip}
 
-![](examples/advanced/zip.py)
-![](examples/advanced/zip.out)
+![](examples/functional/zip.py)
+![](examples/functional/zip.out)
 
 [Monty Python](https://en.wikipedia.org/wiki/Monty_Python)
 
@@ -487,8 +487,8 @@ The initializer is used as the 0th element returned by the iterable. It is mostl
 {id: creating-dict-using-zip}
 {i: zip}
 
-![](examples/advanced/create_dict_using_zip.py)
-![](examples/advanced/create_dict_using_zip.out)
+![](examples/functional/create_dict_using_zip.py)
+![](examples/functional/create_dict_using_zip.out)
 
 
 ## all, any
@@ -501,13 +501,13 @@ The initializer is used as the 0th element returned by the iterable. It is mostl
 * `any(iterable)` - returns True if any of the elements in iterable return True
 
 
-![](examples/advanced/all_any.py)
+![](examples/functional/all_any.py)
 
 
 ## Compare elements of list with scalar
 {id: compare-elements-of-list-with-scalar}
 
-![](examples/advanced/compare_list_with_scalar.py)
+![](examples/functional/compare_list_with_scalar.py)
 
 
 ## List comprehension - double
@@ -519,15 +519,15 @@ We take the original example where we had a function called double, and this tim
 write a different expression to run the function on every element of an iterable.
 {/aside}
 
-![](examples/lists/list_comprehension_double.py)
+![](examples/functional/list_comprehension_double.py)
 
 
 ## List comprehension - simple expression
 {id: list-comprehension-simple}
 {i: []}
 
-![](examples/lists/list_comprehension_simple.py)
-![](examples/lists/list_comprehension_simple.out)
+![](examples/functional/list_comprehension_simple.py)
+![](examples/functional/list_comprehension_simple.out)
 
 
 ## List generator
@@ -538,15 +538,15 @@ write a different expression to run the function on every element of an iterable
 Going over the values of the generator will empty the generator.
 
 
-![](examples/lists/simple_generator.py)
-![](examples/lists/simple_generator.out)
+![](examples/functional/simple_generator.py)
+![](examples/functional/simple_generator.out)
 
 
 ## List comprehension
 {id: list-comprehension}
 {i: mapcar}
 
-![](examples/lists/list_comprehension.py)
+![](examples/functional/list_comprehension.py)
 
 {aside}
 In LISP this would be a mapcar.
@@ -556,26 +556,26 @@ In LISP this would be a mapcar.
 ## Dict comprehension
 {id: dict-comprehension}
 
-![](examples/advanced/dict_comprehension.py)
+![](examples/functional/dict_comprehension.py)
 
 
 ## Lookup table with lambda
 {id: lookup-table}
 
-![](examples/advanced/lookup_table.py)
+![](examples/functional/lookup_table.py)
 
 
 ## Read lines without newlines
 {id: read-lines-without-newlines}
 
-![](examples/advanced/read_lines_without_newlines.py)
+![](examples/functional/read_lines_without_newlines.py)
 
 
 ## Read key-value pairs
 {id: read-key-value-pairs}
 
-![](examples/advanced/pairs.txt)
-![](examples/advanced/read_key_value_pairs.py)
+![](examples/functional/pairs.txt)
+![](examples/functional/read_key_value_pairs.py)
 
 ```
 {'name': 'Foo Bar', 'email': 'foo@bar.com', 'address': 'Foo street 42'}
@@ -585,8 +585,8 @@ In LISP this would be a mapcar.
 {id: index-to-value-mapping}
 {i: zip}
 
-![](examples/advanced/index_to_value.py)
-![](examples/advanced/index_to_value.out)
+![](examples/functional/index_to_value.py)
+![](examples/functional/index_to_value.out)
 
 
 ## Exercise: min, max, factorial
@@ -615,7 +615,7 @@ and given a list of values, return a sublist of values that pass all the validat
 checks. See the sekeleton:
 
 
-![](examples/advanced/many_validators_skeleton.py)
+![](examples/functional/many_validators_skeleton.py)
 
 
 ## Exercise: Calculator using lookup table
@@ -641,13 +641,13 @@ read in the file and create
 
 You can solve this `for`-loop or with `map` and list-comprehensions. Do it in both ways.
 
-![](examples/advanced/books.txt)
+![](examples/functional/books.txt)
 
 
 ## Solution: min, max, factorial
 {id: solution-functional}
 
-![](examples/advanced/reduce_solution.py)
+![](examples/functional/reduce_solution.py)
 
 
 ## Solution: Prime numbers
@@ -655,18 +655,18 @@ You can solve this `for`-loop or with `map` and list-comprehensions. Do it in bo
 
 Calculating the prime numbers
 
-![](examples/advanced/primes_with_filter.py)
+![](examples/functional/primes_with_filter.py)
 
 
 ## Solution: Many validator functions
 {id: solution-many-validator-functions}
 
-![](examples/advanced/many_validators.py)
+![](examples/functional/many_validators.py)
 
 
 ## Solution: Calculator using lookup table
 {id: solution-calculator-using-lookup-table}
-![](examples/advanced/calc.py)
+![](examples/functional/calc.py)
 
 
 ## map with condtion
@@ -677,22 +677,22 @@ Calculating the prime numbers
 
 The conversion function can do anything. It can have a condition inside.
 {/aside}
-![](examples/advanced/map_with_condition.py)
+![](examples/functional/map_with_condition.py)
 
 
 ## map with lambda
 {id: map-with-lambda}
-![](examples/advanced/map_lambda.py)
+![](examples/functional/map_lambda.py)
 
 
 ## map with lambda with condition
 {id: map-with-lambda-with-condition}
-![](examples/advanced/map_lambda_condition.py)
+![](examples/functional/map_lambda_condition.py)
 
 
 ## List comprehension - complex
 {id: list-comprehension-complex}
-![](examples/lists/list_comprehension_numbers.py)
+![](examples/functional/list_comprehension_numbers.py)
 
 
 
