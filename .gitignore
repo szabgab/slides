@@ -53,6 +53,12 @@ perl/examples/dancer/counter/count.txt
 perl/examples/dancer/session/sessions/
 perl/examples/dancer/simple-todo/todo.json
 perl/examples/dancer/uploader/uploads/
+perl/examples/dancer/App-Skeleton/MYMETA.json
+perl/examples/dancer/App-Skeleton/MYMETA.yml
+perl/examples/dancer/App-Skeleton/Makefile
+perl/examples/dancer/App-Skeleton/blib/
+perl/examples/dancer/App-Skeleton/pm_to_blib
+
 docker/examples/deploy-stand-alone-python/counter.txt
 
 node_modules/
