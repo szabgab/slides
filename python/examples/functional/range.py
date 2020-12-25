@@ -15,3 +15,4 @@ for num in rng:
 print()
 
 print(rng[2])
+print(len(rng))
