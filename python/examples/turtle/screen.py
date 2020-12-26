@@ -1,3 +1,7 @@
 import turtle
-t = turtle.getturtle()
 s = turtle.getscreen()
+
+s.bgcolor('blue')
+
+input('Press ENTER to quit')
+

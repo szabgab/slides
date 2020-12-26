@@ -58,6 +58,14 @@ Without the call to `input()` at the end of the program it would automatically c
 
 TBD
 
+## Turtle screen
+{id: turtle-screen}
+{i: getscreen}
+{i: bgcolor}
+
+![](examples/turtle/screen.py)
+
+
 ## Turle Commands
 {id: turle-commands}
 
