@@ -1,4 +1,4 @@
-# Functional programming
+# Functional programming in Python
 {id: functional}
 
 ## Programming Paradigms
@@ -102,8 +102,6 @@ of the **range** object remains the same 48 byttes, while the memory usage of th
 ![](examples/functional/range_size.py)
 ![](examples/functional/range_size.out)
 
-
-
 ## for loop with transformation
 {id: for-loop-transformation}
 {i: append}
@@ -134,7 +132,6 @@ There are better ways to do this.
 {id: map}
 {i: map}
 
-
 * `map(function, iterable, ...)`
 
 {aside}
@@ -146,7 +143,7 @@ let's look at the following exampe:
 {aside}
 We have a list of numbers in the brilliantly named variable `numbers` with 1, 2, 3, 4 as the content. We could like to ceate a list of all the doubles (so that would be 2, 4, 6, 8 in this casse)
 and then iterate over them printing them on the screen. Sure, you probably have some more complex operation to do on the numbers than simple double them, but in this example I did not want to complicate
-that part. Suffice to say that you have some computation to do in every element.   
+that part. Suffice to say that you have some computation to do in every element.
 {/aside}
 
 {aside}
@@ -165,7 +162,7 @@ Except, that the above is not true.
 
 {aside}
 When Python executes the `double_numbers = map(double, numbers)` line, no computation happens and no resulting list is created. Python only prepars "the possibility to do the computations". In the upcoming examples we'll see what does this sentence really mean, for now let's see what do we have in this example: `double_numbers` contains a **map object*, but when you iterate
-over it using the **for num in double_numbers** construct you get the expected values. 
+over it using the **for num in double_numbers** construct you get the expected values.
 {/aside}
 
 {aside}
@@ -175,6 +172,35 @@ In the second half of the example you can see the same works on strings as well.
 
 ![](examples/functional/map.py)
 ![](examples/functional/map.out)
+
+## map with list
+{id: map-with-list}
+{i: map}
+{i: list}
+
+{aside}
+Here too you can use the **list** function to convert all the values at once, but there is an advantage of keeping it as
+a **map object**. Not only the size that we already saw with the **range** case, but also the processing time saved by
+not calculating the results till you actually need it.
+{/aside}
+
+{aside}
+
+Imagine a case where you apply several expensive (time consuming) transformations to some original list and then you iterate over the end-results
+looking for the first value that matches some condition. What if you find the value you were looking for after only a few iteration. Then
+making all that expensive calculations to the whole list was a waste of time.
+
+This lazy evaluation can help you save both memory and time and you always have the option to force the immediate calculation by calling the **list**
+function.
+{/aside}
+
+![](examples/functional/map_list.py)
+![](examples/functional/map_list.out)
+
+## size of map
+{id: size-of-map}
+
+![](examples/functional/map_size.py)
 
 ## map delaying function call
 {id: map-delaying-function-call}
@@ -205,29 +231,6 @@ You can see that it did not need to waste time calculating the doubles of all th
 from `map` takes up only 56 bytes. Regardless of the size of the original array.
 {/aside}
 
-
-## map with list
-{id: map-with-list}
-{i: map}
-{i: list}
-
-{aside}
-Here too you can use the **list** function to convert all the values at once, but there is an advantage of keeping it as
-a **map object**. Not only the size that we already saw with the **range** case, but also the processing time saved by
-not calculating the results till you actually need it.
-{/aside}
-
-{aside}
-
-Imagine a case where you apply several expensive (time consuming) transformations to some original list and then you iterate over the end-results
-looking for the first value that matches some condition. What if you find the value you were looking for after only a few iteration. Then
-making all that expensive calculations to the whole list was a waste of time.
-
-This lazy evaluation can help you save both memory and time and you always have the option to force the immediate calculation by calling the **list**
-function.
-{/aside}
-![](examples/functional/map_list.py)
-![](examples/functional/map_list.out)
 
 
 
