@@ -101,6 +101,7 @@
         "appendix.md",
         "algorithm.md",
         "scapy.md",
+        "turtle.md",
         "other.md"
     ]
 }

@@ -6,6 +6,9 @@ Functional - part 1 - ~ 40 min + 30 min exercise
 Functional - part 2 - 
 Iterators           - ~ 50 min + 60 min exercise
 
+https://julien.danjou.info/python-and-functional-programming/
+https://stackabuse.com/functional-programming-in-python/
+
 ## Flask
 
 * configuration of development vs testing vs productions deployment in external configuration files
