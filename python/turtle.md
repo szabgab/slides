@@ -4,6 +4,8 @@
 
 ## Line
 {id: turtle-line}
+{i: getturtle}
+{i: forward}
 
 {aside}
 Without the call to `input()` at the end of the program it would automatically close the window and we would not be able to see anything.
@@ -12,15 +14,49 @@ Without the call to `input()` at the end of the program it would automatically c
 ![](examples/turtle/line.py)
 
 
+## Square (forward, left)
+{id: turtle-square}
+{i: forward}
+{i: left}
+
 ![](examples/turtle/square.py)
 
+## Circle
+{id: turtle-circle}
+{i: circle}
 
 ![](examples/turtle/circle.py)
+
+## Square using the circle command
+{id: turtle-square-by-circle}
 
 ![](examples/turtle/square_by_circle.py)
 
 ![](examples/turtle/square_by_circle_set_angle.py)
 
+## Triangle
+{id: turtle-triangle}
+
+![](examples/turtle/triangle.py)
+
+## Move turtle (penup, pendown, goto)
+{id: turtle-goto}
+{i: penup}
+{i: pendown}
+{i: goto}
+
+![](examples/turtle/two_circles.py)
+
+
+## Turtle house
+{id: turtle-house}
+
+![](examples/turtle/house.py)
+
+## Turtle snowman
+{id: turtle-snowman}
+
+TBD
 
 ## Turle Commands
 {id: turle-commands}
