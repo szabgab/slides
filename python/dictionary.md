@@ -521,4 +521,11 @@ Generate random DNA sequence
 
 ![](examples/dictionary/change_in_loop.py)
 
+## Named tuple (sort of immutable dictionary)
+{id: namedtuple}
+{i: namedtuple}
+
+* A bit like an immutable dictionary
+
+![examples/dictinoary/namedtuple.py)
 
