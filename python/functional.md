@@ -402,6 +402,11 @@ A nicer fix was this:
 ![](examples/functional/compare_rows.py)
 ![](examples/functional/compare_rows.out)
 
+## filter in a loop
+{id: filter-in-a-loop}
+
+![](examples/functional/filter_with_loop.py)
+![](examples/functional/filter_with_loop.out)
 
 ## filter
 {id: filter}

@@ -2,4 +2,6 @@ animals = ['chicken', 'cow', 'snail', 'elephant', 'pig', 'zebra', 'gnu', 'prayin
 
 length = map(len, animals)
 print(length)
-print(list(length))
+#print(list(length))
+for ln in length:
+    print(ln)
