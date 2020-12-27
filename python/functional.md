@@ -493,6 +493,14 @@ The initializer is used as the 0th element returned by the iterable. It is mostl
 ![](examples/functional/reduce_with_default.py)
 ![](examples/functional/reduce_with_default.out)
 
+## reduce list of dicst
+{id: reduce-list-of-dicst}
+
+* Combining `map` and `filter`
+* The reduce-only solution requires the default value
+
+![](examples/functional/reduce_list_of_dicts.py)
+
 ## zip
 {id: zip}
 {i: zip}
@@ -501,6 +509,13 @@ The initializer is used as the 0th element returned by the iterable. It is mostl
 ![](examples/functional/zip.out)
 
 [Monty Python](https://en.wikipedia.org/wiki/Monty_Python)
+
+## Combining two lists using zip
+{id: combing-lists-using-zip}
+{i: zip}
+
+![](examples/functional/create_list_using_zip.py)
+![](examples/functional/create_list_using_zip.out)
 
 ## Creating dictionary from two lists using zip
 {id: creating-dict-using-zip}

@@ -8,6 +8,8 @@ Iterators           - ~ 50 min + 60 min exercise
 
 https://julien.danjou.info/python-and-functional-programming/
 https://stackabuse.com/functional-programming-in-python/
+itertools.groupby
+use reduce to group by ???
 
 ## Flask
 
