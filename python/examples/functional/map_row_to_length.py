@@ -1,5 +1,7 @@
-
-filename = __file__ # just being lazy and using ourselves as the input file
+import sys
+if len(sys.argv) != 2:
+    exit(f"Usage: {sys.argv[0]} FILENAME")
+filename = sys.argv[1]
 
 with open(filename) as fh:
     length = map(len, fh)
