@@ -444,7 +444,7 @@ This can have only one iterable!
 ![](examples/functional/filter_map_one.py)
 ![](examples/functional/filter_map_one.out)
 
-## Get indexes of values
+## Get indices of values
 {id: get-indexes-of-values}
 
 {aside}
