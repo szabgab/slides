@@ -1,11 +1,10 @@
 from functools import reduce
 
 print(reduce(lambda x,y: x+y, [], 0))      # 0
-print(reduce(lambda x,y: x+y, [7, 9], 2))  # 18
-
-print( reduce(lambda x,y: x+y, [], 0) )      # 0
-print( reduce(lambda x,y: x+y, [1, 2], 0) )  # 3
+print(reduce(lambda x,y: x+y, [1, 2], 0))  # 3
+print(reduce(lambda x,y: x+y, [3, 4], 2))  # 9
 
 print( reduce(lambda x,y: x*y, [1, 2], 0) )  # 0
 print( reduce(lambda x,y: x*y, [2, 3], 1) )  # 6
 print( reduce(lambda x,y: x*y, [], 0) )      # 0
+print( reduce(lambda x,y: x*y, [], 1) )      # 1
