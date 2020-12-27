@@ -358,21 +358,25 @@ A nicer fix was this:
 ![](examples/functional/map_dict.py)
 ![](examples/functional/map_dict.out)
 
+
 ## Exercise: string to length
 {id: exercise-string-to-length}
 
-Given a list of strings, create an iterator that will provide the length of each string.
+* Given a list of strings, create an iterable that will provide the length of each string.
+* If the input is `['moon', venus', 'jupyter']` then the resulting iterable should return 4, 5, and 7.
+
 
 ## Exercise: row to length
 {id: exercise-row-to-length}
 
-Given a file, create an iterator that will provide the length of each row. Can you do it without actually reading the file?
+* Given a file, create an iterable that will provide the length of each row.
+* Can you do it without reading the file?
 
 
 ## Exercise: compare rows
 {id: exercise-compare-rows}
 
-Create an iterator that given two files will return true for each line where the first space in the first file is earlier than the first space in the second file. So
+* Create an iterable that given two files will return true for each line where the first space in the first file is earlier than the first space in the second file. So
 
 * given: "ab cd"  vs "abc d" the value is true
 * given: "ab cd"  vs "ab cd" the value is false
@@ -383,6 +387,7 @@ Create an iterator that given two files will return true for each line where the
 {id: solution-string-to-length}
 
 ![](examples/functional/map_string_to_len.py)
+
 
 ## Solution: row to length
 {id: solution-row-to-length}
