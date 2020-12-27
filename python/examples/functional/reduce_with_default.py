@@ -1,5 +1,8 @@
 from functools import reduce
 
+print(reduce(lambda x,y: x+y, [], 0))      # 0
+print(reduce(lambda x,y: x+y, [7, 9], 2))  # 18
+
 print( reduce(lambda x,y: x+y, [], 0) )      # 0
 print( reduce(lambda x,y: x+y, [1, 2], 0) )  # 3
 

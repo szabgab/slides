@@ -480,6 +480,12 @@ In Python 2 it was still part of the language.
 
 The initializer is used as the 0th element returned by the iterable. It is mostly interesting in case the iterable is empty.
 
+## reduce empty list
+{id: reduce-empty-list}
+
+![](examples/functional/reduce_empty.py)
+
+
 ## reduce with default
 {id: reduce-with-defaiult}
 {i: reduce}

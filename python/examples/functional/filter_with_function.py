@@ -4,4 +4,6 @@ def big(n):
 
 big_numbers = filter(big, numbers)
 print(big_numbers)
-print(list(big_numbers))
+#print(list(big_numbers))
+for num in big_numbers:
+    print(num)
