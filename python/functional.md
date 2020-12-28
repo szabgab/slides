@@ -352,7 +352,7 @@ A nicer fix was this:
 ![](examples/functional/map_mixed.out)
 
 
-## map fetch value from dict
+## map fetch value from dictionary
 {id: map-dict}
 
 ![](examples/functional/map_dict.py)
@@ -493,8 +493,8 @@ The initializer is used as the 0th element returned by the iterable. It is mostl
 ![](examples/functional/reduce_with_default.py)
 ![](examples/functional/reduce_with_default.out)
 
-## reduce list of dicst
-{id: reduce-list-of-dicst}
+## reduce list of dictionaries
+{id: reduce-list-of-dictionaries}
 
 * Combining `map` and `filter`
 * The reduce-only solution requires the default value
