@@ -3,13 +3,29 @@
 ## Timing
 
 Functional - part 1 - ~ 40 min + 30 min exercise
-Functional - part 2 - 
+Functional - part 2 -
 Iterators           - ~ 50 min + 60 min exercise
 
 https://julien.danjou.info/python-and-functional-programming/
 https://stackabuse.com/functional-programming-in-python/
 itertools.groupby
 use reduce to group by ???
+
+
+## Dictionaries - defaultdict
+
+a.setdefault
+
+Defaultdict
+Counting
+Grouping items - list
+Grouping unique items - set
+Accumulating items - int or float, adding values togetber
+
+defaultdict()
+defaultdict (None)
+It also creates the key/value pair if I only try to access the field reading it.
+
 
 ## Flask
 
