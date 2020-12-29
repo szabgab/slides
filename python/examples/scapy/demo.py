@@ -1,22 +1,8 @@
 import random
 import scapy.all as scapy
-#from scapy.all import *
-#from scapy import all as x
 
-#print(repr(scapy.IP()))
-#print(scapy.IP().show())
-#print(scapy.ICMP().show())
-
-#ip = scapy.IP()
-#ip = scapy.IP(dst="8.8.8.8")
 ip = scapy.IP(dst="8.8.8.8", src="7.7.7.7")
-#print(ip.display())
 
-#icmp = scapy.ICMP()
-#print(icmp.display())
-
-
-#tcp = scapy.TCP()
 source_port = random.randint(1024, 65535)
 dest_port = 80
 tcp = scapy.TCP(sport=source_port, dport=dest_port)

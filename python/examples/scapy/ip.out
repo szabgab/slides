@@ -1,0 +1,49 @@
+<IP  |>
+###[ IP ]### 
+  version   = 4
+  ihl       = None
+  tos       = 0x0
+  len       = None
+  id        = 1
+  flags     = 
+  frag      = 0
+  ttl       = 64
+  proto     = hopopt
+  chksum    = None
+  src       = 127.0.0.1
+  dst       = 127.0.0.1
+  \options   \
+
+None
+###[ IP ]### 
+  version   = 4
+  ihl       = None
+  tos       = 0x0
+  len       = None
+  id        = 1
+  flags     = 
+  frag      = 0
+  ttl       = 64
+  proto     = hopopt
+  chksum    = None
+  src       = 192.168.1.204
+  dst       = 8.8.8.8
+  \options   \
+
+None
+###[ IP ]### 
+  version   = 4
+  ihl       = None
+  tos       = 0x0
+  len       = None
+  id        = 1
+  flags     = 
+  frag      = 0
+  ttl       = 64
+  proto     = hopopt
+  chksum    = None
+  src       = 7.7.7.7
+  dst       = 8.8.8.8
+  \options   \
+
+None
