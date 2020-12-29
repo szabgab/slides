@@ -27,6 +27,11 @@ defaultdict (None)
 It also creates the key/value pair if I only try to access the field reading it.
 
 
+## Async
+
+Async sniffer https://scapy.readthedocs.io/en/latest/usage.html?highlight=capture#sniffing
+Asynch pulsar
+
 ## Flask
 
 * configuration of development vs testing vs productions deployment in external configuration files

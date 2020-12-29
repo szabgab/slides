@@ -1,6 +1,13 @@
 # Scapy
 {id: scapy}
 
+## Virtualenv for root
+{id: scapy-virtualenv-for-root}
+
+```
+sudo virtualenv /opt/venv3
+```
+
 ## Install Scapy
 {id: scapy-install}
 
@@ -8,7 +15,7 @@
 * [ScapyTrafficGenerator](https://pypi.org/project/ScapyTrafficGenerator/) and old, Python 2 based wrapper
 
 ```
-pip install scapy
+sudo /opt/venv3/bin/pip install scapy
 ```
 
 ## Tcpdump
@@ -45,7 +52,7 @@ Then we run our scapy script:
 
 
 ```
-sudo /home/gabor/venv3/bin/python ping.py
+sudo /opt/venv3/bin/python ping.py
 ```
 
 * We must run it as user root but we need to use he python 3 that has scapy installed which is probably in some virtualenv.
@@ -84,6 +91,68 @@ sudo /home/gabor/venv3/bin/python ping.py
 ![](examples/scapy/list_interfaces.py)
 ![](examples/scapy/list_interfaces.out)
 
+## Scapy ping-pong
+{id: scapy-ping-pong}
+
+![](examples/scapy/ping_pong.py)
+
+* TODO
+
+## Scapy sniffing - capturing packets
+{id: scapy-sniffing}
+
+![](examples/scapy/sniff.py)
+
+```
+sudo /opt/venv3/bin/python sniff.py
+```
+
+## Scapy ping other IP
+{id: scapy-ping-other-ip}
+
+
+* In one window use `ifconfig` to get the name of the interface or use "any"
+
+```
+tcpdump -nn host 8.8.8.8 -i any
+tcpdump -nn host 8.8.8.8
+```
+
+* In another window run
+
+```
+ping -c 1 8.8.8.8
+```
+
+![](examples/scapy/regular_ping_other.out)
+
+
+![](examples/scapy/ping_other.py)
+
+```
+sudo /opt/venv3/bin/python ping_other.py
+```
+
+![](examples/scapy/ping_other.out)
+
+
+## Scapy ping between two IPs that do not belong to my server
+{id: scapy-two-ips}
+
+```
+tcpdump -nn host 8.8.8.8 -i any
+```
+
+![](examples/scapy/ping_two_others.py)
+![](examples/scapy/ping_two_others.out)
+
+
+## Scapy TCP port 80
+{id: scapy-tcp-to-port-80}
+
+![](examples/scapy/tcp_port_80.py)
+
+
 ## Scapy TODO
 {id: scap-todo}
 
@@ -94,3 +163,4 @@ ScapyTrafficGenerator -X http -r "-i eno192 -s 10.162.130.20 -d $ip -D 80 -m 50:
 
 
 ![](examples/scapy/demo.py)
+

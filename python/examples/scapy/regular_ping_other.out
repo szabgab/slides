@@ -1,0 +1,2 @@
+10:15:40.705266 IP 192.168.1.204 > 8.8.8.8: ICMP echo request, id 17, seq 1, length 64
+10:15:40.761960 IP 8.8.8.8 > 192.168.1.204: ICMP echo reply, id 17, seq 1, length 64
