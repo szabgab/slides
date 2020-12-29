@@ -147,20 +147,30 @@ tcpdump -nn host 8.8.8.8 -i any
 ![](examples/scapy/ping_two_others.out)
 
 
+## Scapy Traceroute
+{id: scapy-traceroute}
+
+![](examples/scapy/traceroute.py)
+
+
 ## Scapy TCP port 80
 {id: scapy-tcp-to-port-80}
 
 ![](examples/scapy/tcp_port_80.py)
 
 
-## Scapy TODO
-{id: scap-todo}
 
-ScapyTrafficGenerator -X http -r "-i $interface -s $ip -d 8.8.8.8 -D 80 -m $mac:$prefix:22:$postfix -U '$http_scapy' -u http://google.com"
-ScapyTrafficGenerator -X http -r "-i $target_interface -s $ip -d 8.8.8.8 -D 80 -m $mac:$target_prefix:22:$postfix -U $httpscapy -u http://google.com"
-ScapyTrafficGenerator -X http -r "-i $target_interface -s 8.8.8.8 -d $ip -D 80 -M $mac:$target_prefix:22:$postfix -k 'Server: $server'"
-ScapyTrafficGenerator -X http -r "-i eno192 -s 10.162.130.20 -d $ip -D 80 -m 50:ec:50:22:22:02 -M $host"
+## Scapy HTTP
+{id: scap-http}
+
+```
+tcpdump -nn host 8.8.8.8 and port 80 -i any
+```
+
+```
+curl --max-time 1 http://8.8.8.8
+```
 
 
-![](examples/scapy/demo.py)
+![](examples/scapy/http.py)
 

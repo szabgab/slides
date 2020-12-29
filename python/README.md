@@ -1,5 +1,17 @@
 # The slides of the Python Progamming course
 
+## Scapy
+
+# TODO: send between two other machines HTTP traffic on some arbitrary port
+# TODO: set the source IP
+
+ScapyTrafficGenerator -X http -r "-i $interface -s $ip -d 8.8.8.8 -D 80 -m $mac:$prefix:22:$postfix -U '$http_scapy' -u http://google.com"
+ScapyTrafficGenerator -X http -r "-i $target_interface -s $ip -d 8.8.8.8 -D 80 -m $mac:$target_prefix:22:$postfix -U $httpscapy -u http://google.com"
+ScapyTrafficGenerator -X http -r "-i $target_interface -s 8.8.8.8 -d $ip -D 80 -M $mac:$target_prefix:22:$postfix -k 'Server: $server'"
+ScapyTrafficGenerator -X http -r "-i eno192 -s 10.162.130.20 -d $ip -D 80 -m 50:ec:50:22:22:02 -M $host"
+
+
+
 ## Timing
 
 Functional - part 1 - ~ 40 min + 30 min exercise
