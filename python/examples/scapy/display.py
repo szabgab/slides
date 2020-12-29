@@ -1,10 +1,10 @@
 import scapy.all as scapy
 
 ip = scapy.IP()
-print(ip.display())
+ip.display()
 
 tcp = scapy.TCP()
-print(tcp.display())
+tcp.display()
 
 icmp = scapy.ICMP()
-print(icmp.display())
+icmp.display()

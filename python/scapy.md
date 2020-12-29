@@ -69,6 +69,21 @@ sudo /home/gabor/venv3/bin/python ping.py
 ![](examples/scapy/ip.py)
 ![](examples/scapy/ip.out)
 
+## Scapy Configuration
+{id: scapy-configuration}
+
+* [config](https://scapy.readthedocs.io/en/latest/api/scapy.config.html)
+
+![](examples/scapy/configuration.py)
+![](examples/scapy/configuration.out)
+
+
+## Scapy List interfaces
+{id: scapy-list-interfaces}
+
+![](examples/scapy/list_interfaces.py)
+![](examples/scapy/list_interfaces.out)
+
 ## Scapy TODO
 {id: scap-todo}
 
