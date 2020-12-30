@@ -22,3 +22,47 @@ We can use global.console.log() or console.log()
 * [Learn Node.js - Full Tutorial for Beginners](https://www.youtube.com/watch?v=RLtyhwFtXQA)
 * [The Node Beginner Book](http://www.nodebeginner.org/)
 
+## request
+{id: request}
+
+* [request](https://www.npmjs.com/package/request)
+* It is deprecated, use [http](https://nodejs.org/api/http.html) instead
+
+```
+npm install request
+node http_request.js
+```
+
+![](examples/networking/http_request.js)
+
+## http client
+{id: http-client}
+
+* [http](https://nodejs.org/api/http.html)
+
+![](examples/networking/http_agent.js)
+
+```
+node http_agent.js
+```
+
+## ping
+{id: ping}
+
+* [net-ping](https://www.npmjs.com/package/net-ping)
+
+![](examples/networking/ping_demo.js)
+
+```
+npm install net-ping
+sudo /opt/node/bin/node ping_demo.js
+```
+
+
+## Telnet server
+{id: telnet-server}
+
+* [telnet](https://www.npmjs.com/package/telnet)
+
+![](examples/networking/telnet_server.js)
+
