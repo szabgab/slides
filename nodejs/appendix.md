@@ -66,3 +66,9 @@ sudo /opt/node/bin/node ping_demo.js
 
 ![](examples/networking/telnet_server.js)
 
+
+## HTTP Server
+{id: http-server-demo}
+
+![](examples/networking/http_server.js)
+
