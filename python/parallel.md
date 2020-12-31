@@ -12,9 +12,27 @@
 ## Types of solutions
 {id: types-of-solutions}
 
-* Number of processes (forking on Unix or spawning)
+* Number of processes (forking on Unix or spawning) (called multiprocessing in Python)
 * Number of threads (Single threaded vs Multi-threaded)
 * Asynchronous, non-blocking or synchronous vs blocking (aka "normal") Cooperative Multitasking
+
+## Time slicing
+{id: time-slicing}
+
+* Whiel one program waits for IO, other program can run. This is called time-slicing.
+
+* No Multitasking (e.g. MS DOS)
+* Cooperative multitasking (program gives up the CPU by going into wait-state) (MS Windows 3.1) (if not, freezing)
+* Pre-emptive multitasking (OS is responsible to switch between running processes) (Unix, Linux, Windows 95/NT and later)
+
+## Concurrencies
+{id: concurrencies}
+
+* Trival case when there is no shared data
+* Shared data (Syncing processes, memory allocation, scheduling)
+
+* Deadlocks: when two processes are waiting for each  other
+* Resource starvation: running out of memory, disk space, process count
 
 ## How many parallels to use?
 {id: how-many-parallels-to-use}

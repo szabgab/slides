@@ -73,7 +73,7 @@ Focus on the output of the two print statements.
 
 ![](examples/strings/formatted_number.py)
 
-## Format characters and types using fs-strings
+## Format characters and types using f-strings
 {id: format-base-f-string}
 
 ![](examples/strings/f_strings_formatted_number.py)
@@ -101,6 +101,12 @@ Since Python 3.6
 
 ![](examples/strings/f_strings.py)
 ![](examples/strings/f_strings.out)
+
+
+## Format floating point numbers using f-strings
+{id: format-numbers-f-string}
+
+![](examples/strings/f_strings_formatted_floating_point_number.py)
 
 
 ## printf using old %-syntax

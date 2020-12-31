@@ -479,7 +479,7 @@ Is this interesting at all ?
 ## A Queue of tasks
 {id: class-tasks}
 
-![](examples/threads/tasks.py)
+![](examples/threads/run_tasks.py)
 
 ## Filtered Fibonacci with ifilter
 {id: ifiltered-fibonacci}

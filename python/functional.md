@@ -595,18 +595,27 @@ In LISP this would be a mapcar.
 
 ## Lookup table with lambda
 {id: lookup-table}
+{i: lambda}
 
 ![](examples/functional/lookup_table.py)
 
 
 ## Read lines without newlines
 {id: read-lines-without-newlines}
+{i: readlines}
+{i: map}
+{i: lambda}
 
 ![](examples/functional/read_lines_without_newlines.py)
 
 
 ## Read key-value pairs
 {id: read-key-value-pairs}
+{i: readlines}
+{i: map}
+{i: lambda}
+{i: split}
+{i: dict}
 
 ![](examples/functional/pairs.txt)
 ![](examples/functional/read_key_value_pairs.py)
@@ -618,6 +627,7 @@ In LISP this would be a mapcar.
 ## Create index-to-value mapping in a dictionary based on a list of values
 {id: index-to-value-mapping}
 {i: zip}
+{i: dict}
 
 ![](examples/functional/index_to_value.py)
 ![](examples/functional/index_to_value.out)
@@ -632,12 +642,10 @@ In LISP this would be a mapcar.
 * Use reduce, map, lambda
 
 
-
 ## Exercise: Prime numbers
 {id: exercise-prime-numbers}
 
 Calculate and print the prime numbers between 2 and N. Use filter.
-
 
 
 ## Exercise: Many validator functions

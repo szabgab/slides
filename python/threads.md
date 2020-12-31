@@ -78,6 +78,9 @@ of threads and the range of the counter.
 
 * [GIL wiki](https://wiki.python.org/moin/GlobalInterpreterLock)
 * [GIL realpython](https://realpython.com/python-gil/)
+* CPython and PyPy have it.
+* Jython and IronPython don't have it.
+* See [PEP 554 - Multiple Interpreters in the Stdlib](https://www.python.org/dev/peps/pep-0554/) for C extensions.
 
 
 ## Thread load
@@ -120,7 +123,7 @@ Each thread takes the next element from the queue and sleeps for the given amoun
 of second (as an imitation of actual work it should be doing). When finished it checks
 for another job. If there are no more jobs in the queue, the thread can close itself.
 
-![](examples/threads/queue_skeleton.py)
+![](examples/threads/use_queue_skeleton.py)
 
 If that's done, change the code so that each thread will generate a random
 number between 0-5 (for sleep-time) and in 33% of the cases it will add it to the central queue
@@ -135,10 +138,15 @@ main thread will create a new worker thread.
 ## Solution: thread queue
 {id: solution-thread-queue}
 
-![](examples/threads/queue.py)
+![](examples/threads/use_queue.py)
 
 ## Solution: thread URL requests.
 {id: solution-threads-url-requests}
 
 ![](examples/parallel/fetch_urls_threads.py)
+
+## Concurrency
+{id: concurrency}
+
+![](examples/threads/concur.py)
 
