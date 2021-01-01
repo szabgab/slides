@@ -131,7 +131,19 @@ These are just some extreme special cases. Most people won't need to know about 
 
 Anything that is not in curly braces will be formatted as they are.
 
+## paramerized formatter
+{id: parameterized-formatter}
 
+![](examples/format/formatter_func.py)
+![](examples/format/formatter_func.out)
+
+## format binary, octal, hexa numbers
+{id: format-binar-octal-hexa-numbers}
+
+![](examples/format/print_binary.py)
+![](examples/format/print_octal.py)
+![](examples/format/print_hexa.py)
+ 
 ## Examples using format with attributes of objects
 {id: format-attributes}
 
