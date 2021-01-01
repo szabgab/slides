@@ -10,7 +10,11 @@ ScapyTrafficGenerator -X http -r "-i $target_interface -s $ip -d 8.8.8.8 -D 80 -
 ScapyTrafficGenerator -X http -r "-i $target_interface -s 8.8.8.8 -d $ip -D 80 -M $mac:$target_prefix:22:$postfix -k 'Server: $server'"
 ScapyTrafficGenerator -X http -r "-i eno192 -s 10.162.130.20 -d $ip -D 80 -m 50:ec:50:22:22:02 -M $host"
 
+## Functional
 
+Immutable datastructures
+functions without side-effects
+collections.namedtuple is it like an immutable dictionary with fixed keys.
 
 ## Timing
 
