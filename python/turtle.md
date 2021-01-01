@@ -97,10 +97,46 @@ TBD
 * s.bgcolor
 * begin_fill + end_fill
 
+![](examples/turtle/change_turtle_color.py)
+![](examples/turtle/fill_shape_by_color.py)
+
 ## Turtle shape
 {id: turle-shape}
 
 * shapesize
 * shape('square')
 
+![](examples/turtle/change_turtle_shape.py)
+
+## Turtle speed
+{id: turtle-speed}
+
+* speed (1-10)
+
+* pen(pencolor=, fillcolor=, pensize=, speed=)
+
+## Undo the turtle
+{id: turtle-undo}
+
+* undo()
+* undobufferentries()
+* setundobuffer(17)
+
+* clear()
+* reset()
+* showturtle()
+* hideturtle()
+* stamp()
+* clearstamp(N)
+
+
+## Create new turtle
+{id: turtle-create-new}
+
+x = turtle.Turtle()
+
+## Clone a turtle
+{id: turtle-clone}
+
+y = t.clone()
 
