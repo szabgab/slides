@@ -31,7 +31,11 @@ async def clean_potatoes(pieces):
     print(f"End cleaning potatoes for {pieces} pieces")
 
 async def main():
-    await asyncio.gather(dishwasher(3), washing_machine(3), boil_water(4), clean_potatoes(14))
+    await asyncio.gather(
+        dishwasher(3),
+        washing_machine(3),
+        boil_water(4),
+        clean_potatoes(14))
 
 start = time.time()
 asyncio.run(main())
