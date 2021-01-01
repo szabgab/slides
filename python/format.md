@@ -18,13 +18,14 @@
 * f-string are from Python 3.6
 
 
+## printf using old %-syntax
+{id: printf}
+{i: printf}
+{i: %}
 
-## Examples using format - indexing
-{id: format-indexing}
-{i: format}
+This slides is here only as a historical page. It is recommended to use the **format** method!
 
-![](examples/strings/formatted_indexing.py)
-![](examples/strings/formatted_indexing.out)
+![](examples/strings/printf.py)
 
 
 ## Examples using format with names
@@ -73,11 +74,6 @@ Focus on the output of the two print statements.
 
 ![](examples/strings/formatted_number.py)
 
-## Format characters and types using f-strings
-{id: format-base-f-string}
-
-![](examples/strings/f_strings_formatted_number.py)
-
 
 ## Format floating point number
 {id: format-float}
@@ -88,16 +84,29 @@ Focus on the output of the two print statements.
 {i: :g}
 {i: :G}
 {i: :n}
+
 ![](examples/strings/formatted_float.py)
+
+
+## Examples using format - indexing
+{id: format-indexing}
+{i: format}
+
+![](examples/strings/formatted_indexing.py)
+![](examples/strings/formatted_indexing.out)
+
+
+## Format characters and types using f-strings
+{id: format-base-f-string}
+
+![](examples/strings/f_strings_formatted_number.py)
 
 
 ## f-strings (formatted string literals)
 {id: f-strings}
 {i: f}
 
-
 Since Python 3.6
-
 
 ![](examples/strings/f_strings.py)
 ![](examples/strings/f_strings.out)
@@ -109,31 +118,18 @@ Since Python 3.6
 ![](examples/strings/f_strings_formatted_floating_point_number.py)
 
 
-## printf using old %-syntax
-{id: printf}
-{i: printf}
-{i: %}
-
-This slides is here only as a historical page. It is recommended to use the **format** method!
-
-![](examples/strings/printf.py)
-
-
 ## Format braces, bracket, and parentheses
 {id: format-braces}
 
 These are just some extreme special cases. Most people won't need to know about them.
 
-
-
-To print `{` include `{{`.
-To print `}` include `}}`.
+* To print `{` include `{{`.
+* To print `}` include `}}`.
 
 
 ![](examples/strings/format_braces.py)
 
 Anything that is not in curly braces will be formatted as they are.
-
 
 
 ## Examples using format with attributes of objects
