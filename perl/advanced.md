@@ -239,11 +239,38 @@ ARRAY = grep BLOCK LIST
 {id: map}
 {i: map}
 
+{aside}
+Given a list of values that can come from an array or from calling the `keys` function on a hash or in any other way, we can apply a transformation
+on each element and then collect the transformed values on the left hand side of the assignment. e.g. in an array.
+
+On each iteration the current element is placed in the `$_` variable and 
+{/aside}
+
 ```
 ARRAY = map BLOCK LIST
 ```
 ![](examples/advanced-perl/map_perl.pl)
 
+
+## Use map to filter values
+{id: use-map-to-filter-values}
+
+{aside}
+I am not sure why would you do this instead of using `grep`, but you can do this and this can bring use to another,
+more usefule example.
+{/aside}
+
+![](examples/advanced-perl/map_to_filter.pl)
+
+## Map to add more elements
+{id: map-to-add-more-elements}
+
+![](examples/advanced-perl/map_to_duplicate.pl)
+
+## Use map to filter and enrich
+{id: map-to-filter-and-enrich}
+
+![](examples/advanced-perl/map_filter_and_enrich.pl)
 
 ## Create a hash from an array using map
 {id: map-create-hash}
