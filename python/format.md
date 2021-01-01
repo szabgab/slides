@@ -10,8 +10,8 @@
 {i: format}
 {i: sprintf}
 
-![](examples/strings/format.py)
-![](examples/strings/format.out)
+![](examples/format/format.py)
+![](examples/format/format.out)
 
 * When using % to print more than one value, put the values in parentheses forming a tuple.
 * In version 2.6 and below you need to write {0} {1} etc, as a placeholder of the format method.
@@ -25,13 +25,13 @@
 
 This slides is here only as a historical page. It is recommended to use the **format** method!
 
-![](examples/strings/printf.py)
+![](examples/format/printf.py)
 
 
 ## Examples using format with names
 {id: format-names}
-![](examples/strings/format_with_names.py)
-![](examples/strings/format_with_names.out)
+![](examples/format/format_with_names.py)
+![](examples/format/format_with_names.out)
 
 
 ## Format columns
@@ -43,22 +43,22 @@ In this example we use a list of lists that we have not learned yet, but don't w
 Focus on the output of the two print statements.
 
 
-![](examples/strings/format_columns.py)
-![](examples/strings/format_columns.out)
+![](examples/format/format_columns.py)
+![](examples/format/format_columns.out)
 
 
 ## Examples using format - alignment
 {id: format-alignment}
 {i: format}
-![](examples/strings/formatted_alignment.py)
+![](examples/format/formatted_alignment.py)
 
 
 ## Format - string
 {id: format-as-string}
 {i: format}
 {i: :s}
-![](examples/strings/formatted_string.py)
-![](examples/strings/formatted_string.out)
+![](examples/format/formatted_string.py)
+![](examples/format/formatted_string.out)
 
 
 ## Format characters and types (binary, octal, hexa)
@@ -72,7 +72,7 @@ Focus on the output of the two print statements.
 {i: :X}
 {i: :n}
 
-![](examples/strings/formatted_number.py)
+![](examples/format/formatted_number.py)
 
 
 ## Format floating point number
@@ -85,37 +85,37 @@ Focus on the output of the two print statements.
 {i: :G}
 {i: :n}
 
-![](examples/strings/formatted_float.py)
+![](examples/format/formatted_float.py)
 
 
 ## Examples using format - indexing
 {id: format-indexing}
 {i: format}
 
-![](examples/strings/formatted_indexing.py)
-![](examples/strings/formatted_indexing.out)
+![](examples/format/formatted_indexing.py)
+![](examples/format/formatted_indexing.out)
 
 
-## Format characters and types using f-strings
+## Format characters and types using f-format
 {id: format-base-f-string}
 
-![](examples/strings/f_strings_formatted_number.py)
+![](examples/format/f_strings_formatted_number.py)
 
 
-## f-strings (formatted string literals)
-{id: f-strings}
+## f-format (formatted string literals)
+{id: f-format}
 {i: f}
 
 Since Python 3.6
 
-![](examples/strings/f_strings.py)
-![](examples/strings/f_strings.out)
+![](examples/format/f_strings.py)
+![](examples/format/f_strings.out)
 
 
-## Format floating point numbers using f-strings
+## Format floating point numbers using f-format
 {id: format-numbers-f-string}
 
-![](examples/strings/f_strings_formatted_floating_point_number.py)
+![](examples/format/f_strings_formatted_floating_point_number.py)
 
 
 ## Format braces, bracket, and parentheses
@@ -127,7 +127,7 @@ These are just some extreme special cases. Most people won't need to know about 
 * To print `}` include `}}`.
 
 
-![](examples/strings/format_braces.py)
+![](examples/format/format_braces.py)
 
 Anything that is not in curly braces will be formatted as they are.
 
@@ -137,16 +137,16 @@ Anything that is not in curly braces will be formatted as they are.
 
 This is also a rather strange example, I don't think I'd use it in real code.
 
-![](examples/strings/formatted_attributes.py)
-![](examples/strings/formatted_attributes.out)
+![](examples/format/formatted_attributes.py)
+![](examples/format/formatted_attributes.out)
 
-## raw f-strings
-{id: raw-f-strings}
+## raw f-format
+{id: raw-f-format}
 {i: f}
 {i: r}
 
-![](examples/strings/fr.py)
-![](examples/strings/fr.out)
+![](examples/format/fr.py)
+![](examples/format/fr.out)
 
 
 

@@ -205,8 +205,8 @@ method of the object, respectively.
 * Suggestion
 * [Difference between __str__ and __repr__](http://stackoverflow.com/questions/1436703/difference-between-str-and-repr-in-python)
 
-![](examples/strings/format_no_conversion.py)
-![](examples/strings/format_conversions.py)
+![](examples/format/format_no_conversion.py)
+![](examples/format/format_conversions.py)
 
 
 ## Name of the current function in Python
