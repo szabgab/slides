@@ -505,6 +505,10 @@ The initializer is used as the 0th element returned by the iterable. It is mostl
 {id: zip}
 {i: zip}
 
+{aside}
+`zip` can iterate over a number of lists (or iterables in general) in parallel. The iteration will stop when the first iterator stops.
+{/aside}
+
 ![](examples/functional/zip.py)
 ![](examples/functional/zip.out)
 
