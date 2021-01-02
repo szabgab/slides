@@ -7,4 +7,4 @@ t.goto(200, 0)
 t.pendown()
 t.circle(50)
 
-input('Press ENTER to quit')
+turtle.exitonclick()

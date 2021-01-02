@@ -4,4 +4,4 @@ t = turtle.getturtle()
 t.right(45)
 t.circle(100, steps=4)
 
-input('Press ENTER to quit')
+turtle.exitonclick()

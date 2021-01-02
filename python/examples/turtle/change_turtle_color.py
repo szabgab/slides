@@ -15,5 +15,4 @@ t.fillcolor("orange")
 t.forward(50)
 
 
-input('Press ENTER to quit')
-
+turtle.exitonclick()

@@ -9,5 +9,4 @@ t.circle(30)
 
 t.end_fill()
 
-input('Press ENTER to quit')
-
+turtle.exitonclick()

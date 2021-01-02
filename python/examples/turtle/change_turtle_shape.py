@@ -12,6 +12,4 @@ t.shape('triangle')
 t.shape('square')
 t.shape('turtle')
 
-
-input('Press ENTER to quit')
-
+turtle.exitonclick()

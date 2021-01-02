@@ -8,4 +8,4 @@ for i in range(4):
 t.goto(25, 25)
 t.goto(50, 0)
 
-input('Press ENTER to quit')
+turtle.exitonclick()

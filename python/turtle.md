@@ -13,6 +13,7 @@ Without the call to `input()` at the end of the program it would automatically c
 
 ![](examples/turtle/line.py)
 
+turtle.exitonclick()
 
 ## Square (forward, left)
 {id: turtle-square}
