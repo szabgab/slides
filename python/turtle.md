@@ -141,3 +141,14 @@ x = turtle.Turtle()
 
 y = t.clone()
 
+![](examples/turtle/star.py)
+
+
+![](examples/turtle/many_shapes.py)
+
+![](examples/turtle/numinput_select_shape.py)
+
+![](examples/turtle/onclick_shapes.py)
+
+![](examples/turtle/textinput_select_shape.py)
+
