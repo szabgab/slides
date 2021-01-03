@@ -1,6 +1,18 @@
 # Asyncronus programming with AsyncIO
 {id: async}
 
+## Sync sleep
+{id: sync-sleep}
+
+![](examples/async/sleep.py)
+
+## Async sleep
+{id: async-sleep}
+
+![](examples/async/async_sleep.py)
+
+
+
 ## Sync chores
 {id: sync-chorse}
 
