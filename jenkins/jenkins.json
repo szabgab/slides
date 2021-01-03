@@ -8,6 +8,6 @@
     "version": "1.20",
     "files": [
         "jenkins.md",
-        "introduction.md"
+        "pipelines.md"
     ]
 }
