@@ -31,4 +31,9 @@
 * Update the run_jenkins file to run pylint
 
 
+## Python project to try Jenkins
+{id: jenkins-python-project}
+
+[test-python](https://github.com/szabgab/test-python)
+
 

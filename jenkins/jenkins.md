@@ -1,13 +1,43 @@
 # Jenkins
 {id: jenkins}
 
-## Jenkins Overview
-{id: jenkins-overview}
+## What are CI/CD and why are they useful?
+{id: what-is-ci-cd}
 
-* Automation server
+* CI - Continuous Integration
+* CD - Continuosu Deployment / Distribution
+
+## Prerequisites for CI
+{id: prerequisites}
+
+* Standardized environment.
+* Command line build system.
+* Automated Tests:  Unit, Integration, Acceptance.
+
+## Steps of CI/CD
+{id: ci-cd}
+
+* Triggerd by a new change in the Version Control system
+* Get the latest source code
+* Compile the project (if necessary)
+* Run the unit tests
+* Save the artifact in a safe storage
+* Create a package
+* Set up a test system (might need multiple machines)
+* Run integration / acceptance tests
+* Deliver the new version
+* Deploy the new version
+
+* Collect coverage reports
+* Number of tests - graph
+
+## What is Jenkins?
+{id: what-is-jenkins}
+
+
+* Automation server with lots of plugins
 * Job management system
 * Build, test, deploy, etc.
-
 
 
 ## Jenkins Support for Version Control Systems
@@ -20,13 +50,6 @@
 * ClearCase
 * Microsoft TFS: Team Foundation Server (Git, TFVC)
 
-
-
-
-## Python project to try Jenkins
-{id: jenkins-python-project}
-
-[test-python](https://github.com/szabgab/test-python)
 
 ## Jenkins setup
 {id: jenkins-setup}
@@ -45,8 +68,6 @@
 Follow the instructions on the [Download Jenkins](https://jenkins.io/download/) page.
 
 
-
-
 ## Install Jenkins on Ubuntu
 {id: jenkins-install-on-ubuntu}
 
@@ -59,7 +80,7 @@ Follow the instructions on the [Download Jenkins](https://jenkins.io/download/) 
 * echo "deb https://pkg.jenkins.io/debian-stable binary/" >> /etc/apt/sources.list
 * apt-get update
 * apt-get install -y jenkins
-* 
+
 * apt-get install -y python
 * apt-get install -y virtualenv
 * apt-get install -y postfix
@@ -219,38 +240,6 @@ How can we keep Jenkins itself in some version control?
 
 
 
-## What are CI/CD and why are they useful?
-{id: what-is-ci-cd}
-
-## Prerequisites for CI
-{id: prerequisites}
-
-* Standardized environment.
-* Command line build system.
-* Automated Tests:  Unit, Integration, Acceptance.
-
-## Steps of CI/CD
-{id: ci-cd}
-
-* Triggerd by a new change in the Version Control system
-* Get the latest source code
-* Compile the project (if necessary)
-* Run the unit tests
-* Save the artifact in a safe storage
-* Create a package
-* Set up a test system (might need multiple machines)
-* Run integration / acceptance tests
-* Deliver the new version
-* Deploy the new version
-
-* Collect coverage reports
-* Number of tests - graph
-
-## What is Jenkins?
-{id: what-is-jenkins}
-
-* Automation server with lots of plugins
-
 ## Configure
 {id: configure}
 
@@ -398,14 +387,6 @@ jenkins ALL= NOPASSWD: /usr/sbin/service uwsgi reload
 
 * It is just a plugin...
 
-## Resources
-{id: resources}
-
-* [Our Meetup page](https://www.meetup.com/Code-Mavens/)
-* [Our Facebook page](https://www.facebook.com/Devops.Workshops)
-* [Facebook group](https://www.facebook.com/groups/188753948553382/)
-
-
 
 ## Backup Jenkins
 {id: jenkins-backup}
@@ -447,7 +428,6 @@ Manage Jenkins
     Manage nodes
        New node, Node name: s1   - Permanent Agent
 ```
-
 
 ## Jenkins resources
 {id: jenkins-resources}
