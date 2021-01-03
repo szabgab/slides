@@ -1,5 +1,8 @@
 # The slides of the Python Progamming course
 
+
+REPL: ptpython
+
 ## Scapy
 
 # TODO: send between two other machines HTTP traffic on some arbitrary port
@@ -41,6 +44,25 @@ Accumulating items - int or float, adding values togetber
 defaultdict()
 defaultdict (None)
 It also creates the key/value pair if I only try to access the field reading it.
+
+## Parallel
+
+* import colorama
+colorama.Fore.YELLOW + "text"
+
+
+* Why parallel programming:
+  cooking example - you won't want to stand next to thewashing machine till it finishes its job, right?
+  IO intensive example: web access, reading from disk and processing files
+  CPU intensive: lots of number crunching, image processing, video erndering etc.
+  Interactive - UI make sure you can click buttons while it does its job.
+  Scalability
+
+  other libraries:
+  trio
+  unsync
+
+* glances (like htop for mac)
 
 
 ## Async
