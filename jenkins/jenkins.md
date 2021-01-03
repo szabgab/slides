@@ -119,35 +119,6 @@ apt-get install jenkins
 
 * [Demo Jenkins server](http://jenkins.szabgab.com:8080/)
 
-## Demo Freestyle project
-{id: demo-freestyle-project}
-
-* [GitHub project](https://github.com/szabgab/demo-flask-project)
-* [Demo Application](http://demo.code-maven.com:9090/)
-
-## Freestyle Project
-{id: freestyle-project}
-
-* Enter a name: Demo
-* click on Freestle project
-
-
-* GitHub Project: https://github.com/szabgab/demo-flask-project
-* (this is only used to create an html link to the project)
-
-* Source Code Management
-* Git: https://github.com/szabgab/demo-flask-project
-* Save
-
-* Build Now
-
-* This will clone the current version of the project.
-* We can see it in the "Workspace"
-* See "Build history"
-
-* Click around, see console output
-
-
 
 ## Jenkins: Manual Backup
 {id: jenkins-manual-backup}
@@ -187,56 +158,6 @@ Save and click on Build Now, then look at the Console Output
 ```
 
 
-
-## Jenkins: Testing Python
-{id: jenkins-testing-python}
-
-* Setup testing a simple project in Python
-* Replace the "Execute Shell" by ./run_jenkins
-
-
-{aside}
-
-  Don't forget to add   #!/bin/bash  at the begining
-  Virtualenv (clean it every time we use it)
-  Before running the tests make sure the environment is clean
-    git status is clean **git status** "nothing to commit, working tree clean"
-    **git clean -xfd** there are no untracked files, not even ones that are ignored. - remove all untracked file
-{/aside}
-
-
-## Scheduling builds by polling the repository
-{id: jenkins-scheduling-builds-poll-scm}
-
-```
-Configure
-    Build Triggers
-        Poll SCM: H/5 * * * *
-```
-
-
-## Scheduling builds by GitHub hook
-{id: jenkins-scheduling-builds-github-hook}
-
-```
-Configure
-    Build Triggers
-        GitHub hook trigger for GITScm polling
-```
-
-
-## Jenkins: Add user - github
-{id: jenkins-add-user}
-
-```
-Add a user to Jenkins called "github":
-Manage Jenkins
-   Manage Users
-      Create User
-```
-
-
-
 ## Configure Matrix Based Authentication
 {id: jenkins-matrix-based-authentication}
 
@@ -247,18 +168,6 @@ Manage Jenkins
          We set:  Matrix-based security 
       !!!! add your user to the table with full rights !!!!
      User github: Job: Read+Build rights
-```
-
-
-## Jenkins: GitHub trigger
-{id: jenkins-github-trigger}
-
-```
-In GitHub
-    Settings
-        Integrations and Services
-             Add Service: Jenkins (GitHub plugin)
-                 http://github:secret@162.243.46.181:8080/github-webhook/
 ```
 
 
@@ -288,18 +197,6 @@ In GitHub
 * In the Jenkins GUI setup separate job called **python-test-private** where the Git / Repositories is git@github.com:szabgab/python-test-private.git
 * Add Jenkins credentials: "SSH Username with private key", Username: git, Private Key: From the Jenkins master ~/.ssh
 
-
-
-## Integrate pylint reporting
-{id: jenkins-integrate-pylint}
-
-* Install the "Violations" plugin
-* Add the Violations to the "Post-build Actions" of the project
-* In the pylint line put: pylint.log
-* In "Source Path Pattern" put **/
-* **pip install pylint**
-* **pylint --generate-rcfile > pylint.cfg**
-* Update the run_jenkins file to run pylint
 
 
 

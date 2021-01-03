@@ -8,6 +8,8 @@
     "version": "1.20",
     "files": [
         "jenkins.md",
-        "pipelines.md"
+        "freestyle.md",
+        "pipelines.md",
+        "python.md"
     ]
 }
