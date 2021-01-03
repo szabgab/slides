@@ -1,14 +1,5 @@
 # Jenkins
-{id: jenkins}
-
-## About us
-{id: about-us}
-
-* [Yonit Gruber-Hazani](https://www.linkedin.com/in/yonitgruber/)
-* [Gabor Szabo](https://www.linkedin.com/in/szabgab/)
-
-* [DevOps Workshops](http://devops-workshops.code-maven.com/)
-* [Code Mavens Meetup](https://www.meetup.com/Code-Mavens/)
+{id: jenkins-introduction}
 
 ## What are CI/CD and why are they useful?
 {id: what-is-ci-cd}
@@ -354,14 +345,6 @@ sudo usermod -a -G docker $USER
 
 The Pipline uses `git clean -fdx` to clean the workspace before running any of our commands so we should not leave any
 of our files (e.g. junit xml files, artifacts, etc. in the workspace)
-
-## Jenkins Resources
-{id: jenkins-resources}
-
-* [Jenkins slides](https://code-maven.com/slides/jenkins/)
-* [Jenkins Pipeline Video Tutorial](https://www.youtube.com/watch?v=ggzbqcf8PAU)
-* [TTFHW - Time To First Hello World](https://github.com/TTFHW)
-* [Jenkins User Handbook](https://jenkins.io/doc/book/)
 
 ## Resources
 {id: resources}
