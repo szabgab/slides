@@ -5,8 +5,9 @@
     "first_year": "2012",
     "copyright_name": "Gabor Szabo",
     "copyright_url": "https://szabgab.com/",
-    "version": "1.18",
+    "version": "1.20",
     "files": [
-        "jenkins.md"
+        "jenkins.md",
+        "introduction.md"
     ]
 }
