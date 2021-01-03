@@ -741,4 +741,22 @@ The conversion function can do anything. It can have a condition inside.
 ![](examples/functional/list_comprehension_numbers.py)
 
 
+## Change list before iteration over map object
+{id: change-list-before-iteration-over-map-object}
+
+{aside}
+A small warning. Because **map** only connects to our iterator, but does not iterate over it till it is called,
+if we change the content of the underlying iterator, that will be reflected in the results of the iteration over the map object.
+{/aside}
+
+
+![](examples/functional/change_list_before_map.py)
+![](examples/functional/change_list_before_map.out)
+
+## Replace list before iteration over map object
+{id: replace-list-before-iteration-over-map-object}
+
+
+![](examples/functional/replace_list_before_map.out)
+![](examples/functional/replace_list_before_map.py)
 
