@@ -1,19 +1,22 @@
 import time
 import asyncio
 
-async def sleep(cnt, sec):
-    print(f"Start {cnt}")
+async def work(wid, sec):
+    start = time.time()
+    print(f"Starting {wid} that will take {sec}s")
     await asyncio.sleep(sec)
+    end = time.time()
+    print(f"Finishing {wid} in {end-start}s")
 
 async def main():
-    tasks = []
-    for i in range(4):
-        tasks.append(asyncio.create_task(sleep(i, 1)))
+    await asyncio.gather(
+        work("Blue", 2),
+        work("Green", 1)
+    )
 
-    for t in tasks:
-        await t
 
 start = time.time()
 asyncio.run(main())
 end = time.time()
 print(f"Elapsed {end-start}")
+

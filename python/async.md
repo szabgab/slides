@@ -1,15 +1,48 @@
 # Asyncronus programming with AsyncIO
 {id: async}
 
+## Event loop
+{id: event-loop}
+
+* Single thread
+* Single process
+* Good for IO intensive tasks
+* Cooperative Multitasking
+
+## Use cases for Async
+{id: use-cases-for-async}
+
+* Downloading web pages
+* Accessing APIs
+* Accessing databases (especially on other servers)
+* Reading files
+
+
 ## Sync sleep
 {id: sync-sleep}
 
 ![](examples/async/sleep.py)
+![](examples/async/sleep.out)
 
 ## Async sleep
 {id: async-sleep}
 
 ![](examples/async/async_sleep.py)
+![](examples/async/async_sleep.out)
+
+## Sync sleep in loop
+{id: sync-sleep-in-loop}
+
+![](examples/async/sleep_loop.py)
+
+## Async sleep in loop
+{id: async-sleep-in-loop}
+
+![](examples/async/async_sleep_loop.py)
+
+![](examples/async/count.py)
+![](examples/async/other_sleep.py)
+
 
 
 
@@ -52,17 +85,10 @@ with the next potato. This will allow the dryer to work while we are still clean
 ## Explanation
 {id: async-explanation}
 
-* Single thread
-* Single process
 * The feeling of parallelism
 * Coroutines
 
-
 * async/await
-
-* event loop
-
-* Cooperative Multitasking
 
 * Asynchronous
 * non-blocking or synchronous vs blocking (aka "normal")

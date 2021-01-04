@@ -13,6 +13,16 @@ ScapyTrafficGenerator -X http -r "-i $target_interface -s $ip -d 8.8.8.8 -D 80 -
 ScapyTrafficGenerator -X http -r "-i $target_interface -s 8.8.8.8 -d $ip -D 80 -M $mac:$target_prefix:22:$postfix -k 'Server: $server'"
 ScapyTrafficGenerator -X http -r "-i eno192 -s 10.162.130.20 -d $ip -D 80 -m 50:ec:50:22:22:02 -M $host"
 
+cdp = cisco discovery protocol
+
+https://en.wikipedia.org/wiki/Cisco_Discovery_Protocol
+
+ipv4 / dhcp 
+
+ipv6 / ping
+ipv6 / dhcp
+
+
 ## Functional
 
 Immutable datastructures
@@ -62,10 +72,41 @@ colorama.Fore.YELLOW + "text"
   trio
   unsync
 
+  uvloop https://github.com/MagicStack/uvloop   drop-in replacement for the standard Python event-loop
+
+  aiohttp  https://docs.aiohttp.org/en/stable/
+  aiodns
+  cchardet
+
+async def  get_html(url):
+  #resp = request.get(url)
+    resp.raise_for_status()
+  #return resp.text
+
+  async with aiohttp.ClientSession() as session:
+      async with session.get(url) as resp:
+        resp.raise_for_status()
+        return await resp.text
+
+aiofiles  https://pypi.org/project/aiofiles/
+
+mongodb  - umongo https://pypi.org/project/umongo/   (called micromongo)
+postgresql - asyncpg https://pypi.org/project/asyncpg/
+mysql ?
+redis     asyncio-redis  https://pypi.org/project/asyncio-redis/
+sqlite?
+
 * glances (like htop for mac)
 
 
 ## Async
+
+* download urls
+* read several big files and process them.
+
+loop = asyncio.get_event_loop()
+queue = asyncio.Queue()
+loop.run_until_complete()
 
 Async sniffer https://scapy.readthedocs.io/en/latest/usage.html?highlight=capture#sniffing
 Asynch pulsar
