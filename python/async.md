@@ -18,17 +18,40 @@
 * Reading files
 
 
+## Print sync
+{id: print-sync}
+
+* First let's see a few small and useless demo
+* In this example we wait and print, sequentially as we expect.
+
+![](examples/async/print_sync.py)
+![](examples/async/print_sync.out)
+
+## Print async
+{id: print-async}
+{i: asyncio}
+{i: async}
+{i: await}
+{i: gather}
+
+* This is the almost the same example but we wait in parallel.
+* Run both of these using the `time` command of Linux
+
+![](examples/async/print_async.py)
+![](examples/async/print_async.out)
+
+
 ## Sync sleep
 {id: sync-sleep}
 
-![](examples/async/sleep.py)
-![](examples/async/sleep.out)
+![](examples/async/sleep_sync.py)
+![](examples/async/sleep_sync.out)
 
 ## Async sleep
 {id: async-sleep}
 
-![](examples/async/async_sleep.py)
-![](examples/async/async_sleep.out)
+![](examples/async/sleep_async.py)
+![](examples/async/sleep_async.out)
 
 ## Sync sleep in loop
 {id: sync-sleep-in-loop}
