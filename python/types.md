@@ -96,3 +96,7 @@ but might be confusingt to the reader.
 * Complex data structures?
 * My types/classes?
 * Allow None (or not) for a variable.
+
+
+![](examples/types/generator.py)
+![](examples/types/list.py)
