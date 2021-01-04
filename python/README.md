@@ -68,16 +68,6 @@ colorama.Fore.YELLOW + "text"
   Interactive - UI make sure you can click buttons while it does its job.
   Scalability
 
-  other libraries:
-  trio
-  unsync
-
-  uvloop https://github.com/MagicStack/uvloop   drop-in replacement for the standard Python event-loop
-
-  aiohttp  https://docs.aiohttp.org/en/stable/
-  aiodns
-  cchardet
-
 async def  get_html(url):
   #resp = request.get(url)
     resp.raise_for_status()
@@ -88,13 +78,6 @@ async def  get_html(url):
         resp.raise_for_status()
         return await resp.text
 
-aiofiles  https://pypi.org/project/aiofiles/
-
-mongodb  - umongo https://pypi.org/project/umongo/   (called micromongo)
-postgresql - asyncpg https://pypi.org/project/asyncpg/
-mysql ?
-redis     asyncio-redis  https://pypi.org/project/asyncio-redis/
-sqlite?
 
 * glances (like htop for mac)
 

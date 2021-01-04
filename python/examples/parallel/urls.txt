@@ -4,7 +4,7 @@ https://facebook.com/
 https://baidu.com/
 https://twitter.com/
 https://instagram.com/
-https://wikipedia.com/
+https://en.wikipedia.org/
 https://www.amazon.com/
 https://yahoo.com/
 https://yandex.ru/
@@ -34,8 +34,6 @@ https://rakuten.co.jp/
 https://amazon.co.uk/
 https://daum.net/
 https://google.co.jp/
-https://taobao.com/
-https://bilbili.com/
 https://imdb.com/
 https://booking.com/
 https://roblox.com/

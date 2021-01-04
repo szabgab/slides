@@ -132,10 +132,46 @@ with the next potato. This will allow the dryer to work while we are still clean
 * [AsyncIO in Real Python](https://realpython.com/async-io-python/)
 * [asyncio](https://docs.python.org/library/asyncio.html)
 * [aiohttp](https://docs.aiohttp.org/)
+* [aiodns](https://pypi.org/project/aiodns/)
+* [cchardet](https://pypi.org/project/cchardet/)
+* [uvloop](https://github.com/MagicStack/uvloop)  drop-in replacement for the standard Python event-loop
+
+Other libraries:
+
+* [trio](https://github.com/python-trio/trio)
+* [unsync](https://github.com/alex-sherman/unsync)
+
+aiofiles  https://pypi.org/project/aiofiles/
+
+* mongodb: [umongo](https://pypi.org/project/umongo/) called micromongo
+* postgresql: [asyncpg](https://pypi.org/project/asyncpg/)
+* mysql:
+* redis: [asyncio-redis](https://pypi.org/project/asyncio-redis/)
+* sqlite:
+
 
 ## Async files
 {id: async-files}
 
-![](examples/async/http_request.py)
-![](examples/async/files.py)
+* [aiofile](https://pypi.org/project/aiofile/)
+
+* [aiofiles](https://pypi.org/project/aiofiles/)
+
+![](examples/async/files_sync.py)
+![](examples/async/files_async.py)
+
+## Async http
+{id: async-http-request}
+
+![](examples/async/http_request_async.py)
+
+## Sync http requests
+{id: sync-http-requests}
+
+![](examples/async/http_requests_sync.py)
+
+## Async http requests
+{id: async-http-requests}
+
+![](examples/async/http_requests_async.py)
 
