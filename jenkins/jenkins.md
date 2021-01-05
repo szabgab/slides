@@ -5,10 +5,15 @@
 {id: what-is-ci-cd}
 
 * CI - Continuous Integration
-* CD - Continuosu Deployment / Distribution
+* CD - Continuous Deployment / Distribution
+
+## Prerequisites for CD
+{id: prerequisites-for-cd}
+
+* A working CI environment
 
 ## Prerequisites for CI
-{id: prerequisites}
+{id: prerequisites-for-ci}
 
 * Standardized environment.
 * Command line build system.
@@ -57,15 +62,16 @@
 * Central Jenkins server (master)
 * Jenkins workers (aka. agents)
 
-* Network access?
-
-
 
 ## Install Jenkins
 {id: jenkins-install}
 
+* Follow the instructions on the [Download Jenkins](https://jenkins.io/download/) page.
 
-Follow the instructions on the [Download Jenkins](https://jenkins.io/download/) page.
+* On your desktop: Windows, OSX, Linux
+* In a VirtualBox image
+* On some server in the cloud e.g. [Digital Ocean](https://www.digitalocean.com/?refcode=0d4cc75b3a74)
+* In Docker
 
 
 ## Install Jenkins on Ubuntu
@@ -85,13 +91,6 @@ Follow the instructions on the [Download Jenkins](https://jenkins.io/download/) 
 * apt-get install -y virtualenv
 * apt-get install -y postfix
 
-
-## Install Jenkins
-{id: install-jenkins}
-
-* On your desktop: Windows, OSX, Linux
-* In a VirtualBox image
-* On some server in the cloud e.g. [Digital Ocean](https://www.digitalocean.com/?refcode=0d4cc75b3a74)
 
 ## Download Jenkins
 {id: download-jenkins}
@@ -135,21 +134,6 @@ apt-get install jenkins
 * Classic GUI
 * Blue Ocean (new GUI)
 
-## Demo Jenkins server
-{id: demo}
-
-* [Demo Jenkins server](http://jenkins.szabgab.com:8080/)
-
-
-## Jenkins: Manual Backup
-{id: jenkins-manual-backup}
-
-* /var/lib/jenkins/config.xml
-* /var/lib/jenkins/jobs/
-* /var/lib/jenkins/users/
-* logging: **tail -f  /var/log/jenkins/jenkins.log**
-
-
 
 ## Jenkins: Initial configuration
 {id: jenkins-initial-configuration}
@@ -158,38 +142,6 @@ apt-get install jenkins
 * Install suggested plugins
 * Add user with password
 * Manage Jenkins -> Configure System -> System Admin e-mail address
-
-
-
-## Create new Job
-{id: jenkins-create-new-job}
-
-```
-Create new jobs: test-python, Freestyle project
-GitHub Porject: https://github.com/szabgab/test-python
-Soucre Code Management: Git
-     Repository URL: https://github.com/szabgab/test-python.git
-     Credentials: None
-     Branch Specifier: */master
-Build:
-     Execute Shell:
-     #!/bin/bash
-     echo Hello World
-Save and click on Build Now, then look at the Console Output
-```
-
-
-## Configure Matrix Based Authentication
-{id: jenkins-matrix-based-authentication}
-
-```
-Manage Jenkins
-   Configure Global Security
-      Authorization: (default: Logged-in users can do anything)
-         We set:  Matrix-based security 
-      !!!! add your user to the table with full rights !!!!
-     User github: Job: Read+Build rights
-```
 
 
 ## Collect test results: xUnit integration

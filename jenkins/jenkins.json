@@ -10,6 +10,7 @@
         "jenkins.md",
         "freestyle.md",
         "pipelines.md",
-        "python.md"
+        "python.md",
+        "admin.md"
     ]
 }
