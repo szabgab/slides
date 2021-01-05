@@ -66,6 +66,26 @@
 ![](examples/async/count.py)
 ![](examples/async/other_sleep.py)
 
+## coroutines
+{id: async-coroutines}
+
+![](examples/async/co_routine.py)
+
+## Async Tasks
+{id: async-tasks}
+
+![](examples/async/async_task.py)
+
+    
+## Passing the baton while sleeping 0 sec
+{id: async-passing-the-baton}
+
+![](examples/async/count_sleep_0.py)
+
+## Async example
+{id: async-example}
+
+![](examples/async/example.py)
 
 
 
@@ -174,4 +194,3 @@ aiofiles  https://pypi.org/project/aiofiles/
 {id: async-http-requests}
 
 ![](examples/async/http_requests_async.py)
-
