@@ -185,7 +185,8 @@ with the next potato. This will allow the dryer to work while we are still clean
 Other libraries:
 
 * [trio](https://github.com/python-trio/trio)
-* [unsync](https://github.com/alex-sherman/unsync)
+
+
 
 aiofiles  https://pypi.org/project/aiofiles/
 
@@ -194,6 +195,12 @@ aiofiles  https://pypi.org/project/aiofiles/
 * mysql:
 * redis: [asyncio-redis](https://pypi.org/project/asyncio-redis/)
 * sqlite:
+
+## unsync
+{id: unsync}
+
+* [unsync](https://github.com/alex-sherman/unsync)
+* Can seemlessly run tasks in async, thread, or fork so different tasks can have the appropriate solution (e.g. CPU bound processes can use fork.)
 
 
 ## Async files
