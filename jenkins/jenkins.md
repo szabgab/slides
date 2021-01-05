@@ -144,92 +144,12 @@ apt-get install jenkins
 * Manage Jenkins -> Configure System -> System Admin e-mail address
 
 
-## Collect test results: xUnit integration
-{id: jenkins-xunit-integration}
-
-* Use **pytest --junitxml=test-results/$BUILD_NUMBER.xml**
-* Configure / Post-build Actions / Publish JUnit test results report / Test report XMLs: **test-results/*.xml**
-
-
-
 ## Jenkins report results
 {id: jenkins-report-results}
 
 * Report results, especially failing result by e-mail.
 * Configure / Post-build Action / E-mail Notification / Recipient: **type in an e-mail**
 * Configure Linux box as a mail server (postfix)
-
-
-
-## Jenkins: Private GitHub repository
-{id: jenkins-private-github}
-
-* Create private/public keypair: su - jenkins; ssh-keygen; ENTER * 3
-* cat .ssh/id_rsa.pub   and copy paste it the GitHub repo Settings / Deploy keys
-* Try cloning the private repo still as use jenkins: **git clone git@github.com:szabgab/python-test-private.git**
-* In the Jenkins GUI setup separate job called **python-test-private** where the Git / Repositories is git@github.com:szabgab/python-test-private.git
-* Add Jenkins credentials: "SSH Username with private key", Username: git, Private Key: From the Jenkins master ~/.ssh
-
-
-
-
-## Jenkins configuration files
-{id: jenkins-configuration-files}
-
-
-How can we keep Jenkins itself in some version control?
-
-
-
-
-## Jenkins Files
-{id: jenkins-files}
-
-* /etc/default/jenkins
-* /usr/share/jenkins
-* /var/lib/jenkins
-* /var/lib/jenkins/config.xml
-
-
-
-## Configure
-{id: configure}
-
-Build - execute shell
-
-```
-./run_jenkins.sh
-```
-
-Build Now
-
-This will try to run the `run_jenkins.sh` script that does not exist in our repo and thus it will fail.
-
-## Add Jenkins script
-{id: add-jenkins-script}
-
-In the project directory create the `run_jenkins.sh` file  with the following content:
-
-```
-#!/bin/bash
-
-virtualenv venv
-source venv/bin/activate
-pip install -r requirements.txt
-pytest
-```
-
-Make it executable by running:
-
-```
-chmod +x run_jenkins.sh
-```
-
-Commit it to the git repository and push it out.
-
-Then click on "Build Now" on the Jenkins UI.
-
-It should build successfully now.
 
 ## Trigger build by commit
 {id: trigger-build-by-commit}
@@ -333,19 +253,6 @@ sudo /usr/sbin/service uwsgi reload
 ```
 jenkins ALL= NOPASSWD: /usr/sbin/service uwsgi reload
 ```
-
-## Blue Ocean
-{id: install-blue-ocean}
-
-* It is just a plugin...
-
-
-## Backup Jenkins
-{id: jenkins-backup}
-
-* Backup Jenkins home $JENKINS_HOME   /var/lib/jenkins   by default
-* [thinBackup](https://wiki.jenkins-ci.org/display/JENKINS/thinBackup) can be used
-
 
 
 ## Jenkins master/slave
