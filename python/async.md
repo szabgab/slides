@@ -35,7 +35,8 @@
 {i: gather}
 
 * This is almost the same example but we wait in parallel.
-* This now finishes 1 sec faster. It finishes when the longest wait ends.
+* The order of the output is now different.
+* It also finishes 1 sec faster. It finishes when the longest wait ends.
 
 
 ![](examples/async/print_async.py)
@@ -45,11 +46,15 @@
 ## Sync sleep
 {id: sync-sleep}
 
+* The same, but now we also print progress in the **say** function. Still sequential.
+
 ![](examples/async/sleep_sync.py)
 ![](examples/async/sleep_sync.out)
 
 ## Async sleep
 {id: async-sleep}
+
+* In Async we can see that they start in the right order, but then get to the finish line after waiting in parallel.
 
 ![](examples/async/sleep_async.py)
 ![](examples/async/sleep_async.out)
@@ -57,15 +62,27 @@
 ## Sync sleep in loop
 {id: sync-sleep-in-loop}
 
-![](examples/async/sleep_loop.py)
+![](examples/async/sleep_loop_sync.py)
+![](examples/async/sleep_loop_sync.out)
 
 ## Async sleep in loop
 {id: async-sleep-in-loop}
+{i: create_task}
 
-![](examples/async/async_sleep_loop.py)
+* 4 sleeping in parallel will be much faster
+* This time we used `create_task` to set up the tasks ahead of time and the we awaited all of them.
 
-![](examples/async/count.py)
-![](examples/async/other_sleep.py)
+![](examples/async/sleep_loop_async.py)
+![](examples/async/sleep_loop_async.out)
+
+## Async sleep in loop with gather
+{id: async-sleep-in-loop-with-gather}
+{i: gather}
+
+
+![](examples/async/sleep_loop_async_gather.py)
+![](examples/async/sleep_loop_async_gather.out)
+
 
 ## coroutines
 {id: async-coroutines}
@@ -77,7 +94,15 @@
 
 ![](examples/async/async_task.py)
 
-    
+## Count Async
+{id: async-count}
+
+![](examples/async/count_async.py)
+![](examples/async/count_async.out)
+
+
+![](examples/async/other_sleep.py)
+
 ## Passing the baton while sleeping 0 sec
 {id: async-passing-the-baton}
 
