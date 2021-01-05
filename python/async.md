@@ -21,8 +21,8 @@
 ## Print sync
 {id: print-sync}
 
-* First let's see a few small and useless demo
-* In this example we wait and print, sequentially as we expect.
+* First let's see a few small and useless examples.
+* In this example we wait and print sequentially. No async here.
 
 ![](examples/async/print_sync.py)
 ![](examples/async/print_sync.out)
@@ -34,8 +34,9 @@
 {i: await}
 {i: gather}
 
-* This is the almost the same example but we wait in parallel.
-* Run both of these using the `time` command of Linux
+* This is almost the same example but we wait in parallel.
+* This now finishes 1 sec faster. It finishes when the longest wait ends.
+
 
 ![](examples/async/print_async.py)
 ![](examples/async/print_async.out)

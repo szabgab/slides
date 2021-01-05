@@ -1,7 +1,7 @@
 import time
 import asyncio
 
-async def work(wid, sec):
+async def say(wid, sec):
     start = time.time()
     print(f"Starting {wid} that will take {sec}s")
     await asyncio.sleep(sec)
@@ -9,10 +9,13 @@ async def work(wid, sec):
     print(f"Finishing {wid} in {end-start}s")
 
 async def main():
+    start = time.monotonic()
     await asyncio.gather(
-        work("Blue", 2),
-        work("Green", 1)
+        say("First", 2),
+        say("Second", 1)
     )
+    end = time.monotonic()
+    print(f"Elapsed: {end-start}")
 
 
 start = time.time()
