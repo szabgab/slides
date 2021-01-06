@@ -357,18 +357,31 @@ perldoc perlmod
 {i: $AUTOLOAD}
 
 
-If AUTOLOAD {} is defined and you call a function that does not exists, AUTOLOAD is
-called instead.
-
-
-![](examples/advanced-perl/autoload.pl)
+![](examples/advanced-perl/no_autoload.pl)
 
 ```
 Output:
 
-main::f
-hello world
+Undefined subroutine &main::f called
 ```
+
+
+{aside}
+If you call a function that does not exist when the call is made, Perl will raise an `Undefined subroutine called` exception. If the exception is
+not handled it will stop your program.
+
+In the exception it will also give you the full name of the function that was missing. In the above case it will be `&main::f`.
+
+With all the other magic, Perl also provides you a tool that will help you deal with such situations. You can include a block called AUTOLOAD
+in your code and if AUTOLOAD {} is defined then it will be executed instead of every missing function. From that point your imagination is the
+only limiting factor on how to handle the situation.
+{/aside}
+
+![](examples/advanced-perl/autoload.pl)
+
+Output:
+
+![](examples/advanced-perl/autoload.out)
 
 
 ## Static variable

@@ -1,0 +1,5 @@
+main::f
+$VAR1 = [
+          'hello',
+          'world'
+        ];
