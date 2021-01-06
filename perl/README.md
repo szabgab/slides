@@ -74,3 +74,7 @@ Manipulating functions by functions (add logging before and after the function c
 ## OOP
 
 
+## Other
+
+AUTOLOAD -> https://perlhacks.com/articles/symbolapproxsub/
+
