@@ -227,3 +227,9 @@ aiofiles  https://pypi.org/project/aiofiles/
 {id: async-http-requests}
 
 ![](examples/async/http_requests_async.py)
+
+## Async sleep from queue
+{id: async-sleep-in-queue}
+
+
+![](examples/async/async_queue.py)
