@@ -9,10 +9,14 @@ async def count(name):
 async def main():
     a_task = asyncio.create_task(count("A"))
     b_task = asyncio.create_task(count("B"))
-   
+
+    print("Before")
+    #await asyncio.sleep(1)
+    print("After")
+
     await asyncio.gather(
         a_task,
         b_task
     )
- 
+
 asyncio.run(main())

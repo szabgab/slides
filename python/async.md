@@ -111,12 +111,30 @@
 
 ![](examples/async/count_sleep_0.py)
 
-## Async example
-{id: async-example}
+## Async sleep in a queue
+{id: async-sleep-in-queue}
 
-![](examples/async/example.py)
+![](examples/async/async_queue.py)
 
+## Async http
+{id: async-http-request}
 
+![](examples/async/http_request_async.py)
+
+## Sync http requests
+{id: sync-http-requests}
+
+![](examples/async/http_requests_sync.py)
+
+## Async http requests
+{id: async-http-requests}
+
+![](examples/async/http_requests_async.py)
+
+## Async http requests with queue
+{id: async-http-requests-with-queue}
+
+![](examples/async/http_requests_async_queue.py)
 
 ## Sync chores
 {id: sync-chorse}
@@ -152,93 +170,4 @@ with the next potato. This will allow the dryer to work while we are still clean
 
 ![](examples/async/async_chores_async.out)
 
-
-
-## Explanation
-{id: async-explanation}
-
-* The feeling of parallelism
-* Coroutines
-
-* async/await
-
-* Asynchronous
-* non-blocking or synchronous vs blocking (aka "normal")
-
-## Coroutines
-{id: coroutines}
-
-* Functions that can be suspended mid-way and allow other functions to run (a generator)
-
-* `async def` is a native coroutine or asynchronous generator
-* `async with`
-* `async for`
-
-
-## More about asyncio
-{id: more-about-async}
-
-* [AsyncIO in Real Python](https://realpython.com/async-io-python/)
-* [asyncio](https://docs.python.org/library/asyncio.html)
-* [aiohttp](https://docs.aiohttp.org/)
-* [aiodns](https://pypi.org/project/aiodns/)
-* [cchardet](https://pypi.org/project/cchardet/)
-* [uvloop](https://github.com/MagicStack/uvloop)  drop-in replacement for the standard Python event-loop
-
-Other libraries:
-
-* [trio](https://github.com/python-trio/trio)
-
-
-
-aiofiles  https://pypi.org/project/aiofiles/
-
-* mongodb: [umongo](https://pypi.org/project/umongo/) called micromongo
-* postgresql: [asyncpg](https://pypi.org/project/asyncpg/)
-* mysql:
-* redis: [asyncio-redis](https://pypi.org/project/asyncio-redis/)
-* sqlite:
-
-## unsync
-{id: unsync}
-
-* [unsync](https://github.com/alex-sherman/unsync)
-* Can seemlessly run tasks in async, thread, or fork so different tasks can have the appropriate solution (e.g. CPU bound processes can use fork.)
-
-
-## Async files
-{id: async-files}
-
-* [aiofile](https://pypi.org/project/aiofile/)
-
-* [aiofiles](https://pypi.org/project/aiofiles/)
-
-![](examples/async/files_sync.py)
-![](examples/async/files_async.py)
-
-## Async http
-{id: async-http-request}
-
-![](examples/async/http_request_async.py)
-
-## Sync http requests
-{id: sync-http-requests}
-
-![](examples/async/http_requests_sync.py)
-
-## Async http requests
-{id: async-http-requests}
-
-![](examples/async/http_requests_async.py)
-
-## Async http requests with queue
-{id: async-http-requests-with-queue}
-
-![](examples/async/http_requests_async_queue.py)
-
-## Async sleep from queue
-{id: async-sleep-in-queue}
-
-
-![](examples/async/async_queue.py)
 

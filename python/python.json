@@ -84,6 +84,7 @@
         "threads.md",
         "forking.md",
         "async.md",
+        "async-more.md",
         "twisted.md",
         "multiprocess.md",
         "multitasking.md",
