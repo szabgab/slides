@@ -14,7 +14,7 @@ async def main():
     for t in tasks:
         await t
 
-start = time.time()
+start = time.monotonic()
 asyncio.run(main())
-end = time.time()
+end = time.monotonic()
 print(f"Elapsed {end-start}")

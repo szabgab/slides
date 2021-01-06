@@ -1,6 +1,5 @@
 import time
 
-
 def sleep(cnt, sec):
     print(f"Start {cnt}")
     time.sleep(sec)
@@ -11,7 +10,7 @@ def main():
         sleep(i, 1)
 
 
-start = time.time()
+start = time.monotonic()
 main()
-end = time.time()
+end = time.monotonic()
 print(f"Elapsed {end-start}")

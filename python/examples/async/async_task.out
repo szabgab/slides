@@ -1,0 +1,4 @@
+<Task pending name='Task-2' coro=<answer() running at async_task.py:3>>
+start to answer
+before await for task
+result is 42 after await

@@ -2,10 +2,10 @@ import time
 import asyncio
 
 async def say(wid, sec):
-    start = time.time()
+    start = time.monotonic()
     print(f"Starting {wid} that will take {sec}s")
     await asyncio.sleep(sec)
-    end = time.time()
+    end = time.monotonic()
     print(f"Finishing {wid} in {end-start}s")
 
 async def main():
@@ -18,8 +18,5 @@ async def main():
     print(f"Elapsed: {end-start}")
 
 
-start = time.time()
 asyncio.run(main())
-end = time.time()
-print(f"Elapsed {end-start}")
 

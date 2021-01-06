@@ -13,8 +13,8 @@ async def main():
 
     await asyncio.gather(*tasks)
 
-start = time.time()
+start = time.monotonic()
 asyncio.run(main())
-end = time.time()
+end = time.monotonic()
 print(f"Elapsed {end-start}")
 

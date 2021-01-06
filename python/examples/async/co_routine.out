@@ -1,0 +1,4 @@
+<coroutine object answer at 0x7f8d06e6d240>
+before await for coroutine
+start to answer
+result is 42 after await

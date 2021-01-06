@@ -16,8 +16,5 @@ def main():
     print(f"Elapsed: {end-start}")
 
 
-start = time.time()
 main()
-end = time.time()
-print(f"Elapsed {end-start}")
 

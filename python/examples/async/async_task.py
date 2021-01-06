@@ -10,8 +10,8 @@ async def main():
 
     await asyncio.sleep(0)
     print('before await for task')
-    
+
     result = await a_task
     print(f"result is {result} after await")
- 
+
 asyncio.run(main())

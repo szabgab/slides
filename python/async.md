@@ -1,22 +1,25 @@
-# Asyncronus programming with AsyncIO
+# Asynchronous programming with AsyncIO
 {id: async}
 
-## Event loop
-{id: event-loop}
-
-* Single thread
-* Single process
-* Good for IO intensive tasks
-* Cooperative Multitasking
 
 ## Use cases for Async
 {id: use-cases-for-async}
+
+* Good for IO intensive tasks
 
 * Downloading web pages
 * Accessing APIs
 * Accessing databases (especially on other servers)
 * Reading files
 
+## Event loop
+{id: event-loop}
+
+* Single thread
+* Single process
+* ... so it uses a single core
+
+* Cooperative Multitasking
 
 ## Print sync
 {id: print-sync}
@@ -88,11 +91,13 @@
 {id: async-coroutines}
 
 ![](examples/async/co_routine.py)
+![](examples/async/co_routine.out)
 
 ## Async Tasks
 {id: async-tasks}
 
 ![](examples/async/async_task.py)
+![](examples/async/async_task.out)
 
 ## Count Async
 {id: async-count}
@@ -100,8 +105,6 @@
 ![](examples/async/count_async.py)
 ![](examples/async/count_async.out)
 
-
-![](examples/async/other_sleep.py)
 
 ## Passing the baton while sleeping 0 sec
 {id: async-passing-the-baton}
@@ -228,8 +231,14 @@ aiofiles  https://pypi.org/project/aiofiles/
 
 ![](examples/async/http_requests_async.py)
 
+## Async http requests with queue
+{id: async-http-requests-with-queue}
+
+![](examples/async/http_requests_async_queue.py)
+
 ## Async sleep from queue
 {id: async-sleep-in-queue}
 
 
 ![](examples/async/async_queue.py)
+
