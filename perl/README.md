@@ -1,3 +1,6 @@
+# Perl slides
+
+
 ## Dancer
   how to run plackup in debug mode to see the detailed error message?
 
@@ -49,5 +52,25 @@ Make it easy to run it locally in dockerAllow the user to save the data file loc
 
 /author/szabgabShow list of packages, which one is lacking vcs, which one is lacking bug tracking system, Which one has rtHow many open bugs do each one have? 
 A stats page similar to cpan. Rocks, but maybe add paging. 
+
+
+## Functional programming
+
+https://metacpan.org/pod/List::Util    functions (e.g. first, all, none)
+
+Dispatch table
+
+Callback functions
+
+Memoization
+
+Manipulating functions by functions (add logging before and after the function call)
+
+
+## Testing
+
+
+
+## OOP
 
 
