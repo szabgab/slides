@@ -137,11 +137,11 @@ There are better ways to do this.
 {aside}
 The [map](https://docs.python.org/library/functions.html#map) function of Python applies a function to every item in an iterable and returns an iterator
 that can be used to iterate over the results. Wow, how many times I repeated the word iter...something. Instead of trying to untangle that sentence,
-let's look at the following exampe:
+let's look at the following example:
 {/aside}
 
 {aside}
-We have a list of numbers in the brilliantly named variable `numbers` with 1, 2, 3, 4 as the content. We could like to ceate a list of all the doubles (so that would be 2, 4, 6, 8 in this casse)
+We have a list of numbers in the brilliantly named variable `numbers` with 1, 2, 3, 4 as the content. We could like to create a list of all the doubles (so that would be 2, 4, 6, 8 in this case)
 and then iterate over them printing them on the screen. Sure, you probably have some more complex operation to do on the numbers than simple double them, but in this example I did not want to complicate
 that part. Suffice to say that you have some computation to do in every element.
 {/aside}

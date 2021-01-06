@@ -29,6 +29,8 @@ Immutable datastructures
 functions without side-effects
 collections.namedtuple is it like an immutable dictionary with fixed keys.
 
+replace zip by itertools.product
+
 ## Timing
 
 Functional - part 1 - ~ 40 min + 30 min exercise
