@@ -1,6 +1,21 @@
 # Testing Demo
 {id: testing-demo}
 
+
+## Testing Flask
+{id: demo-testing-flask}
+
+* [flask](https://flask.palletsprojects.com/)
+* [flask on GitHub](https://github.com/pallets/flask)
+
+```
+git clone https://github.com/pallets/flask.git
+cd flask
+pip install -r requirements/tests.txt
+pytest
+```
+
+
 ## How do you test your code?
 {id: how-do-you-test-your-code}
 
