@@ -59,6 +59,12 @@ It also creates the key/value pair if I only try to access the field reading it.
 
 ## Parallel
 
+Patterns:
+  Pipes
+  N-workers
+  Broadcast
+
+
 * import colorama
 colorama.Fore.YELLOW + "text"
 

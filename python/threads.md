@@ -150,3 +150,5 @@ main thread will create a new worker thread.
 
 ![](examples/threads/concur.py)
 
+![](examples/threads/conc.py)
+
