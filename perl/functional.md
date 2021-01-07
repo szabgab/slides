@@ -39,7 +39,17 @@ Note, there is no comma after the curly braces.
 ARRAY = grep BLOCK LIST
 ```
 ![](examples/advanced-perl/grep_perl.pl)
+
+## grep to filter files based on modification date
+{id: grep-to-filter-files}
+{i: grep}
+
 ![](examples/advanced-perl/grep_files.pl)
+
+## Imitating the Unix/Linux grep command in Perl
+{id: imitating-the-unix-grep-command}
+{i: grep}
+
 ![](examples/advanced-perl/unix_grep.pl)
 
 
@@ -115,7 +125,7 @@ We use more memory but we can gain speed.
 You have a list of values with duplications, how can you create a unique list of the values?
 
 
-![](examples/advanced-perl/unique_values.pl)
+![](examples/functional/unique_values.pl)
 
 
 ## Unique values - improved
@@ -125,7 +135,7 @@ You have a list of values with duplications, how can you create a unique list of
 But actually we don't need to do it in two steps:
 
 
-![](examples/advanced-perl/unique_values_shorter.pl)
+![](examples/functional/unique_values_shorter.pl)
 
 
 ## Unique values using grep
@@ -134,18 +144,14 @@ But actually we don't need to do it in two steps:
 
 Of course there is an even shorter way to write it:
 
-
-![](examples/advanced-perl/unique_values_grep.pl)
-
+![](examples/functional/unique_values_grep.pl)
 
 In this version you can even assign the values back to the original
 array writing:
 
-
 ```
 @data = grep { !$seen{$_}++} @data;
 ```
-
 
 ## Uniq with List::MoreUtils
 {id: uniq}
@@ -153,7 +159,17 @@ array writing:
 {i: distinct}
 {i: List::MoreUtils}
 
-![](examples/advanced-perl/uniq.pl)
+{aside}
+There are several ways to implement this without using an external module, but why would we want to reinvent the wheel when
+there is already a good solution in the List::MoreUtils module?
+
+The only problem, but we see it all over the programming world is that this function called "uniq" would return a list of distinct elements
+instead of the ones that were unique in the original list.
+{/aside}
+
+* [List::MoreUtils](https://metacpan.org/pod/List::MoreUtils)
+
+![](examples/functional/uniq.pl)
 
 ## Closures
 {id: closures}
@@ -168,6 +184,4 @@ A subroutine that generates subroutines based on some input values.
 Output:
 
 ![](examples/references/incrementer-generator.out)
-
-
 

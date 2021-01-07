@@ -1,8 +1,8 @@
-#!/usr/bin/perl 
+#!/usr/bin/env perl
 use strict;
 use warnings;
 
-my @data = qw(Foo Bar Moose Foo Baz Bar);
+my @data = qw(Earth Mars Earth Venus Earth Mars);
 my @unique;
 my %seen;
 
@@ -13,4 +13,4 @@ foreach my $value (@data) {
 }
 
 
-print "@unique\n"; # Foo Bar Moose Baz
+print "@unique\n"; # Earth Mars Venus
