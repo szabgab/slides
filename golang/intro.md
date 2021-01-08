@@ -117,7 +117,7 @@ In MS Windows open a CMD window, or if you use Linux/Mac open a terminal and typ
 {/aside}
 
 ```
-go version
+$ go version
 ```
 
 the output should look something like this:
