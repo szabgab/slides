@@ -40,6 +40,7 @@
         "external-programs.md",
         "distribution.md",
         "command-line-arguments.md",
-        "appendix.md"
+        "appendix.md",
+        "other.md"
     ]
 }
