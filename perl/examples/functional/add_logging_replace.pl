@@ -3,10 +3,7 @@ use warnings;
 use lib '.';
 use Transformers qw(show_elapsed_time);
 
-show_elapsed_time('count');
-show_elapsed_time('add');
-show_elapsed_time('calc');
-
+show_elapsed_time('count', 'add', 'calc');
 
 sub count {
     my ($limit) = @_;
