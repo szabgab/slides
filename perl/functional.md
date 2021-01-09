@@ -189,3 +189,10 @@ Output:
 
 ![](examples/references/incrementer-generator.out)
 
+
+![](examples/functional/Transformers.pm)
+![](examples/functional/add_logging.pl)
+![](examples/functional/add_logging_replace.pl)
+
+
+
