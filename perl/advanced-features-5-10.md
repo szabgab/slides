@@ -60,7 +60,7 @@ print "Cannot use say here\n";
 
 
 ## static variable (with scope)
-{id: static-variable}
+{id: static-variable-with-scope}
 {i: static}
 
 ![](examples/feature/static.pl)

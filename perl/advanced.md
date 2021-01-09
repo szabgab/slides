@@ -387,6 +387,7 @@ Output:
 ## Static variable
 {id: static-variable}
 {i: static variable}
+
 ![](examples/advanced-perl/static.pl)
 
 
