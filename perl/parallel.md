@@ -1,6 +1,14 @@
 # Parallel processing
 {id: parallel-processing}
 
+## Tasks
+{id: parallel-tasks}
+
+```
+perl count.pl 0 12 40000000
+perl count.pl 2 12 40000000
+```
+
 
 ## Functions to be speed up
 {id: functions-to-be-speed-up}
@@ -11,6 +19,10 @@
 {id: counter-process}
 
 ![](examples/forks/count.pl)
+
+```
+perl count.pl 0 12 40000000
+```
 
 ## Fork
 {id: fork}
@@ -27,6 +39,10 @@
 
 ![](examples/forks/parent.pl)
 
+## Forked counter process
+{id: forked-counter-process}
+
+![](examples/forks/ForkedCounter.pm)
 
 ## Prepare CSV files
 {id: prepare-csv-files}
