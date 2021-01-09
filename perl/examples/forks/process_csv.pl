@@ -30,7 +30,6 @@ sub main {
             my $pid = $pm->start and next;
             print "PID $$\n";
             my $total = Task::process_file($file);
-            #$results{$file} = $total;
             $pm->finish(0, {filename => $file, total => $total});
         }
         $pm->wait_all_children;

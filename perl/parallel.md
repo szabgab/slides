@@ -50,3 +50,10 @@
 
 ![](examples/forks/forkmanager_return_values.pl)
 
+## HTTP GET
+{id: http-get-title}
+
+![](examples/forks/httpget.pl)
+
+
+
