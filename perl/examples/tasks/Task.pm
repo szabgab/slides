@@ -10,5 +10,17 @@ sub count {
     }
 }
 
+sub process_file {
+    my ($file) = @_;
+    my $total = 0;
+    open my $fh, '<', $file or die;
+    while (my $line = <$fh>) {
+        chomp $line;
+        my @fields = split /,/, $line;
+        $total += $fields[2];
+    }
+    return $total;
+}
+
 
 1;

@@ -4,12 +4,16 @@ use warnings;
 main();
 
 sub main {
+    my $shared = 42;
+
     my $pid = fork();
     die "Could not fork" if not defined $pid;
     if (not $pid) {
         sleep 1;
         my $parent = getppid();
         print "In Child:  PID: $$ from parnet: $parent\n";;
+        print "Shared value: $shared\n";
+        $shared = $$;
         exit;
     }
     sleep 1;
@@ -17,5 +21,6 @@ sub main {
     my $finished = wait();
     my $exit_code = $? / 256;
     print "Child finised: $finished Exit code: $exit_code\n";
+    print "Shared: $shared\n";
 }
 

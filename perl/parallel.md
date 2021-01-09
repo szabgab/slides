@@ -27,3 +27,26 @@
 
 ![](examples/tasks/parent.pl)
 
+
+## Prepare CSV files
+{id: prepare-csv-files}
+
+![](examples/tasks/prepare_files.pl)
+
+## Process CSV files
+{id: process-csv-files}
+
+![](examples/tasks/process_csv.pl)
+
+## Use Parallel::Forkmanager
+{id: use-parallel-forkmanager}
+
+* [Parallel::ForkManager](https://metacpan.org/pod/Parallel::ForkManager)
+
+![](examples/tasks/forkmanager.pl)
+
+## Return values using Parallel::ForkManager
+{id: return-values-using-paralle-forkmanager}
+
+![](examples/tasks/forkmanager_return_values.pl)
+
