@@ -175,9 +175,13 @@ instead of the ones that were unique in the original list.
 {id: closures}
 {i: closure}
 
+
+* [Closure](https://en.wikipedia.org/wiki/Closure_(computer_programming))
+
 ```
 A subroutine that generates subroutines based on some input values.
 ```
+
 ![](examples/references/incrementer.pl)
 ![](examples/references/incrementer-generator.pl)
 

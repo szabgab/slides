@@ -13,3 +13,4 @@ sub next_counter {
 
 say next_counter();
 say next_counter();
+say next_counter();
