@@ -1,6 +1,7 @@
 # Parallel processing
 {id: parallel}
 
+
 ## Types of problems
 {id: types-of-problems}
 
@@ -18,6 +19,28 @@
 
 ## Tasks
 {id: parallel-tasks}
+
+On the 32 core CPU-Optimized server on [Digital Ocean](https://www.digitalocean.com/?refcode=0d4cc75b3a74)
+
+```
+perl count.pl 30 30 10000000
+    Elapsed time 7.92
+perl count.pl 0 30 10000000
+    Elapsed time 0.45
+
+perl process_csv.pl 0 30
+    Elapsed time 38.01
+perl process_csv.pl 30 30
+    Elapsed time 3.02
+
+
+perl httpget.pl wikipedia.txt 0 80
+    Elapsed time 12.93
+perl httpget.pl wikipedia.txt 20 80
+    Elapsed time 4.06
+perl httpget.pl wikipedia.txt 30 80
+    Elapsed time 1.11
+```
 
 ```
 perl count.pl 0 12 40000000
@@ -50,6 +73,15 @@ perl httpget.pl wikipedia.txt 10 20
     Elapsed time 4.17
 ```
 
+## The Hardware
+{id: the-hardware}
+
+```
+lscpu
+cat /proc/cpuinfo
+htop
+```
+
 ## Installations
 {id: parallel-installations}
 
@@ -61,6 +93,13 @@ cpanm HTML::TreeBuilder::XPath
 cpanm Win32::Getppid
 ```
 
+Ubuntu system perl:
+
+```
+libwww-perl
+libparallel-forkmanager-perl
+libhtml-treebuilder-xpath-perl
+```
 
 ## Fork
 {id: fork}
