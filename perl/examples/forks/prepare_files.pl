@@ -12,7 +12,8 @@ while ($cnt < $size) {
 }
 
 for my $ix (1..$n) {
-    my $filename = "data$ix.csv";
+    my $filename = sprintf "data_%02s.csv", $ix;
+    #print "$filename\n";
     open my $fh, '>', $filename or die "Could not open $filename\n";
         print $fh $content;
         print $fh "a,b,$ix,c,d\n";

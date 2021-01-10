@@ -17,6 +17,8 @@ sub main {
         for my $i (1..$task_count) {
             Task::count($max);
         }
+    } elsif ($fork_count == -1) {
+        ForkedCounter::counter_one_by_one($task_count, $max);
     } else {
         ForkedCounter::counter($fork_count, $task_count, $max);
     }

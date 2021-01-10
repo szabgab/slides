@@ -3,6 +3,24 @@ use strict;
 use warnings;
 use Task;
 
+
+sub counter_one_by_one {
+    my ($task_count, $max) = @_;
+
+    for my $fork_id (1 .. $task_count) {
+        my $pid = fork();
+        die "Could not fork" if not defined $pid;
+        if (not $pid) {
+            Task::count($max);
+            exit;
+        }
+    }
+    for my $fork_id (1 .. $task_count) {
+        wait();
+    }
+}
+
+
 sub counter {
     my ($fork_count, $task_count, $max) = @_;
 

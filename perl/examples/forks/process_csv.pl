@@ -8,10 +8,15 @@ use Task;
 main();
 
 sub main {
-    my $parallels = shift @ARGV;
-    my @files = @ARGV;
+    my ($parallels, $file_count) = @ARGV;
+    die "Usage $0 PARALLELS FILE_COUNT\n"  if not defined $file_count;
+
     my %results;
+    my @files = sort glob "data_*.csv";
+    die "Not enough files\n" if $file_count > @files;
+    @files = @files[0 .. $file_count-1];
     #print "@files";
+
     my $start = time;
     if ($parallels == 0) {
         for my $file (@files) {
