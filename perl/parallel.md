@@ -20,19 +20,25 @@
 ## Tasks
 {id: parallel-tasks}
 
+* count.pl - count numbers CPU intensive
+* process_csv.pl - mostly CPU intensive but also reading files
+* httpget.pl - Download web pages and extract title - mostly IO intensive
+
+## Measurements on 32 core
+{id: measurement-on-32-core}
+
 On the 32 core CPU-Optimized server on [Digital Ocean](https://www.digitalocean.com/?refcode=0d4cc75b3a74)
 
 ```
-perl count.pl 30 30 10000000
-    Elapsed time 7.92
 perl count.pl 0 30 10000000
+    Elapsed time 7.92
+perl count.pl 30 30 10000000
     Elapsed time 0.45
 
 perl process_csv.pl 0 30
     Elapsed time 38.01
 perl process_csv.pl 30 30
     Elapsed time 3.02
-
 
 perl httpget.pl wikipedia.txt 0 80
     Elapsed time 12.93
@@ -41,6 +47,11 @@ perl httpget.pl wikipedia.txt 20 80
 perl httpget.pl wikipedia.txt 30 80
     Elapsed time 1.11
 ```
+
+
+## Measurements on 4 core
+{id: measurement-on-4-core}
+
 
 ```
 perl count.pl 0 12 40000000
