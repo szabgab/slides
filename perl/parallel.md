@@ -44,7 +44,7 @@ perl httpget.pl wikipedia.txt 0 80
     Elapsed time 12.93
 perl httpget.pl wikipedia.txt 20 80
     Elapsed time 4.06
-perl httpget.pl wikipedia.txt 30 80
+perl httpget.pl wikipedia.txt 80 80
     Elapsed time 1.11
 ```
 
