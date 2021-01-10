@@ -118,6 +118,12 @@ libhtml-treebuilder-xpath-perl
 
 ![](examples/forks/fork_skeleton_functions.pl)
 
+## Fork with functions details
+{id: fork-details}
+{i: fork}
+
+![](examples/forks/fork_skeleton_functions_details.pl)
+
 
 ## Fork without functions
 {id: fork-without-functions}
