@@ -1,8 +1,5 @@
 use strict;
 use warnings;
-use Time::HiRes qw(time);
-use lib '.';
-use Task;
 
 BEGIN {
     if ($^O eq "MSWin32") {

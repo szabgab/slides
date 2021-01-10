@@ -5,7 +5,7 @@ srand 42;
 print rand(), "\n";
 print rand(), "\n";
 print rand(), "\n";
-exit;
+#exit;
 
 main();
 
@@ -22,6 +22,7 @@ sub main {
 }
 
 sub child_process {
+    #srand;
     print "In child process\n";
     print "child ", rand(), "\n";
     print "child ", rand(), "\n";
