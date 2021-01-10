@@ -124,6 +124,12 @@ libhtml-treebuilder-xpath-perl
 
 ![](examples/forks/fork_skeleton_functions_details.pl)
 
+## Fork random and seed
+{id: fork-random-and-seed}
+{i: rand}
+{i: srand}
+
+![](examples/forks/fork_random.pl)
 
 ## Fork without functions
 {id: fork-without-functions}
