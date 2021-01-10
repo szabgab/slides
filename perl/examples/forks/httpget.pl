@@ -51,6 +51,5 @@ sub main {
 
     my $end = time;
     my $elapsed = $end-$start;
-    print "Elapsed time $elapsed\n";
-
+    printf "Elapsed time %.2f\n", $elapsed;
 }

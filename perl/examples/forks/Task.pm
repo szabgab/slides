@@ -8,16 +8,10 @@ use HTML::TreeBuilder::XPath;
 sub count {
     my ($max) = @_;
 
-    my $start = time;
-
     my $counter = 0;
     while ($counter < $max) {
         $counter++;
     }
-
-    my $end = time;
-    my $elapsed = $end-$start;
-    print "done in $elapsed\n";
 }
 
 sub process_file {
@@ -44,5 +38,9 @@ sub get_title {
     return $nb;
 }
 
+
+use lib '.';
+use Transformers qw(show_elapsed_time);
+show_elapsed_time('count', 'process_file', 'get_title');
 
 1;

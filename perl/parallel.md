@@ -1,39 +1,53 @@
 # Parallel processing
 {id: parallel}
 
+## Types of problems
+{id: types-of-problems}
+
+
+* CPU intensive application - use more of the cores to reduce the wallclock time.
+* IO intensive applications - don't waste the CPU and wallclock time while waiting for the IO process.
+* Interactive applications - make sure they are responsive during long operations.
+
+## Types of solutions
+{id: types-of-solutions}
+
+* Number of processes (forking on Unix or spawning)
+* Number of threads (Single threaded vs Multi-threaded)
+* Asynchronous, non-blocking or synchronous vs blocking (aka "normal") Cooperative Multitasking
 
 ## Tasks
 {id: parallel-tasks}
 
 ```
 perl count.pl 0 12 40000000
-    Elapsed time 13.5732021331787
+    Elapsed time 13.57
 perl count.pl -1 12 40000000
-    Elapsed time 5.78469800949097
+    Elapsed time 5.78
 perl count.pl 2 12 40000000
-    Elapsed time 6.85440993309021
+    Elapsed time 6.85
 perl count.pl 3 12 40000000
-    Elapsed time 6.4282820224762
+    Elapsed time 6.42
 perl count.pl 12 12 40000000
-    Elapsed time 5.79987692832947
+    Elapsed time 5.79
 ```
 
 ```
 perl process_csv.pl 0 6
-    Elapsed time 14.9164409637451
+    Elapsed time 14.91
 perl process_csv.pl 2 6
-    Elapsed time 10.2596349716187
+    Elapsed time 10.25
 perl process_csv.pl 3 6
-    Elapsed time 8.30312204360962
+    Elapsed time 8.30
 perl process_csv.pl 6 6
-    Elapsed time 8.71829104423523
+    Elapsed time 8.71
 ```
 
 ```
 perl httpget.pl wikipedia.txt 0 20
-    Elapsed time 18.723984003067
+    Elapsed time 18.72
 perl httpget.pl wikipedia.txt 10 20
-    Elapsed time 4.17807006835938
+    Elapsed time 4.17
 ```
 
 ## Installations
@@ -117,8 +131,13 @@ For parallel 0 means not to use the forking mechanizm at all.
 We use the number of files instead of accepting the list of files on the command line, becasue it is easier to select a subset of the files this way.
 {/aside}
 
-
 ![](examples/forks/process_csv.pl)
+
+## Forked process CSV files
+{id: forked-process-csv-file}
+
+![](examples/forks/ForkedProcessCSV.pm)
+
 
 ## Use Parallel::Forkmanager
 {id: use-parallel-forkmanager}
