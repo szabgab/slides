@@ -133,12 +133,6 @@ We use the number of files instead of accepting the list of files on the command
 
 ![](examples/forks/process_csv.pl)
 
-## Forked process CSV files
-{id: forked-process-csv-file}
-
-![](examples/forks/ForkedProcessCSV.pm)
-
-
 ## Use Parallel::Forkmanager
 {id: use-parallel-forkmanager}
 
@@ -151,10 +145,32 @@ We use the number of files instead of accepting the list of files on the command
 
 ![](examples/forks/forkmanager_return_values.pl)
 
+
+## Forked process CSV files
+{id: forked-process-csv-file}
+
+![](examples/forks/ForkedProcessCSV.pm)
+
+
 ## HTTP GET
 {id: http-get-title}
 
 ![](examples/forks/httpget.pl)
 
+## Forked HTTP requests
+{id: forked-process-http-requests}
 
+![](examples/forks/ForkedProcessCSV.pm)
+
+## Exercise: Process Excel files
+{id: exercise-forked-process-excel-files}
+
+* Create N excel files, similar to the CSV files we had in the example and then process them. Both in a serial manner and in parallel.
+
+## Exercise: Web crawler
+{id: exercise-forked-web-crawler}
+
+* Build a crawler that, given a single URL and a number N will visit N pages linked from that page. (Maybe need to also get to the links of the links etc.)
+* You can use [HTML::TreeBuilder::XPath](https://metacpan.org/pod/HTML::TreeBuilder::XPath) to extract the links from the html document.
+* It is probably better to allow only the main process to fork.
 
