@@ -156,6 +156,24 @@ libhtml-treebuilder-xpath-perl
 
 ![](examples/forks/parent.pl)
 
+## pstree
+{id: pstree}
+
+```
+pstree -p -a
+```
+
+## htop
+{id: htop}
+
+
+```
+htop
+```
+
+* H
+* F4  to filter
+
 
 ## Functions to be speed up
 {id: functions-to-be-speed-up}

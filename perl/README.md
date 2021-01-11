@@ -78,3 +78,22 @@ Manipulating functions by functions (add logging before and after the function c
 
 AUTOLOAD -> https://perlhacks.com/articles/symbolapproxsub/
 
+## Parallel processing, forking
+
+Add a page linking to the slides and linking to the GitHub page to download the source code.
+
+while (($wpid = waitpid (-1, WNOHANG)) > 0)
+
+https://metacpan.org/pod/Parallel::Forker
+
+https://metacpan.org/pod/distribution/MCE/lib/MCE.pod
+
+## Threading
+
+https://metacpan.org/pod/Thread::Queue
+
+## Async
+
+AnyEvent, IO::Async, and Mojo
+
+
