@@ -1,0 +1,18 @@
+Child process Task: a PID 128387 will sleep for 3.71995377981634 and then exit with code 2
+Child process Task: b PID 128388 will sleep for 0.137503658640838 and then exit with code 0
+Child process Task: c PID 128389 will sleep for 3.57264931009681 and then exit with code 1
+Child process 128388 task b finished with exit code 0
+Child process Task: d PID 128390 will sleep for 0.940422063447244 and then exit with code 0
+Child process 128390 task d finished with exit code 0
+Child process 128387 task a finished with exit code 2
+Child process 128389 task c finished with exit code 1
+Child process Task: a PID 128391 will sleep for 3.09917882712156 and then exit with code 2
+Child process Task: c PID 128392 will sleep for 1.52811677938857 and then exit with code 2
+Child process 128392 task c finished with exit code 2
+Child process Task: c PID 128393 will sleep for 1.21268558593997 and then exit with code 0
+Child process 128393 task c finished with exit code 0
+Child process 128391 task a finished with exit code 2
+Child process Task: a PID 128394 will sleep for 2.05004244389542 and then exit with code 2
+Child process 128394 task a finished with exit code 2
+Child process Task: a PID 128395 will sleep for 4.95541832222202 and then exit with code 0
+Child process 128395 task a finished with exit code 0

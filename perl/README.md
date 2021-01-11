@@ -82,11 +82,8 @@ AUTOLOAD -> https://perlhacks.com/articles/symbolapproxsub/
 
 Add a page linking to the slides and linking to the GitHub page to download the source code.
 
-while (($wpid = waitpid (-1, WNOHANG)) > 0)
+Show an example where forking makes the process slower.
 
-https://metacpan.org/pod/Parallel::Forker
-
-https://metacpan.org/pod/distribution/MCE/lib/MCE.pod
 
 ## Threading
 

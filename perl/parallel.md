@@ -261,3 +261,34 @@ We use the number of files instead of accepting the list of files on the command
 * You can use [HTML::TreeBuilder::XPath](https://metacpan.org/pod/HTML::TreeBuilder::XPath) to extract the links from the html document.
 * It is probably better to allow only the main process to fork.
 
+## MCE - Many-Core Engine
+{id: many-core-engine}
+
+* [MCE](https://metacpan.org/pod/MCE)
+
+libmce-perl
+
+## other modules
+{id: other-modules-for-forking}
+
+* [Parallel::Forker](https://metacpan.org/pod/Parallel::Forker) another module that could be used.
+* [Proc::Queue](https://metacpan.org/pod/Proc::Queue) has not been updated since 2008
+
+
+## Active waiting with waitpid
+{id: active-waiting}
+{i: waitpid}
+{i: POSIX}
+{i: WNOHANG}
+
+* [waipid](https://metacpan.org/pod/distribution/perl/pod/perlfunc.pod#waitpid-PID,FLAGS)
+
+![](examples/forks/active_waiting.pl)
+
+## Active waiting, rerun on failure
+{id: active-waiting-rerun-on-failure}
+
+![](examples/forks/active_waiting_tasks.pl)
+![](examples/forks/active_waiting_tasks.out)
+
+
