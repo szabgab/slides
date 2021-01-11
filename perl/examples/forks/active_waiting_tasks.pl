@@ -1,6 +1,6 @@
 use strict;
 use warnings;
-
+use Time::HiRes qw(sleep);
 use POSIX ':sys_wait_h';
 
 main();

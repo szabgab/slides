@@ -285,6 +285,11 @@ libmce-perl
 
 ![](examples/forks/active_waiting.pl)
 
+## Active waiting with waitpid - multiple forks
+{id: active-waiting-multiple-forks}
+
+![](examples/forks/active_waiting_loop.pl)
+
 ## Active waiting, rerun on failure
 {id: active-waiting-rerun-on-failure}
 
