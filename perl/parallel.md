@@ -268,6 +268,29 @@ We use the number of files instead of accepting the list of files on the command
 
 libmce-perl
 
+![](examples/forks/use_mce.pl)
+
+## MCE - map
+{id: mce-map}
+
+* [MCE::Map](https://metacpan.org/pod/MCE::Map)
+
+{aside}
+The MCE package provide a map-like function that automatically runs the different tasks in separate processes then
+collects the results in the correct order.
+
+By default it creates 4 child processes, but you can control that and a few other things by calling the init method.
+{/aside}
+
+![](examples/forks/use_mce_map.pl)
+![](examples/forks/use_mce_map.out)
+
+
+## MCE - map with init
+{id: mce-map-with-init}
+
+![](examples/forks/use_mce_map_init.pl)
+
 ## other modules
 {id: other-modules-for-forking}
 
