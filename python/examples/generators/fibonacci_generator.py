@@ -4,12 +4,13 @@ def fibonacci():
         a, b = b, a+b
         yield a
 
+
 for a in fibonacci():
     print(a)
     if a % 17 == 0:
         print('found')
         break
 
-    if a > 200:
+    if a > 20000:
         print('not found')
         break

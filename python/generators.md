@@ -151,12 +151,13 @@ We don't even need to use a temporary variable for it.
 {id: generators-fibonacci}
 
 ![](examples/generators/fibonacci_generator.py)
+![](examples/generators/fibonacci_generator.out)
 
 {aside}
-
-The fibonacci() function is called 5 times. When it reached the 'yield' command it returns the value
-as if it was a normal return call, but when the function is called again, it will be executed starting
-from the next statement. Hence the word 'after' will be printed after each call.
+When we enter the for loop the fibonacci() function is called and returns a generator object.
+Then `next` is called on this generator object which executes the content of the function up to the call of `yield`
+and return the value. Then ever time the for-loop calls `next` the function continues running till it reaches `yield`
+again or till it reaches the end of the function. (Which will never happen in this case.)
 {/aside}
 
 ## Infinite series
@@ -230,38 +231,69 @@ Create a generator that will return the prime numbers:
 ## Exercise: generator
 {id: exercise-generator}
 
-Take the two generator examples (increment number and Fibonacci) and change them to provide infinite iterations.
-Then try to run them in a for loop. Just make sure you have some other condition to leave the for-loop.
+    Take the two generator examples (increment number and Fibonacci) and change them to provide infinite iterations.
+    Then try to run them in a for loop. Just make sure you have some other condition to leave the for-loop.
 
 
 
-## Exercise: Binary file reader
-{id: exercise-binary-file-reader}
+    ## Exercise: Binary file reader
+    {id: exercise-binary-file-reader}
 
-Create a generator that given a filename and a number n will return
-the content of the file in chunks of n characters.
+    Create a generator that given a filename and a number n will return
+    the content of the file in chunks of n characters.
 
-## Exercise: File reader with records
-{id: exercise-file-reader-with-records}
+    ## Exercise: File reader with records
+    {id: exercise-file-reader-with-records}
 
-In a file we have "records" of data. Each record starts with three bytes in which we have the length of the record.
-Then the content.
+    In a file we have "records" of data. Each record starts with three bytes in which we have the length of the record.
+    Then the content.
 
-```
-8 ABCDEFGH 5 XYZQR
-```
+    ```
+    8 ABCDEFGH 5 XYZQR
+    ```
 
-Given this source file
+    Given this source file
 
-![](examples/advanced/rows.txt)
+    ![](examples/advanced/rows.txt)
 
-using this code
+    using this code
 
-![](examples/advanced/rows_to_records.py)
+    ![](examples/advanced/rows_to_records.py)
 
-we can create this file:
+    we can create this file:
 
-![](examples/advanced/records.txt)
+    ![](examples/advanced/records.txt)
 
-The exercise is to create an iterator/generator that can read such a file record-by-record.
+    The exercise is to create an iterator/generator that can read such a file record-by-record.
+
+    ## yield outside of functions
+    {id: yield-outside-of-functions}
+
+    * It has no meaning there
+
+![](python/examples/generators/yield_outside_any_function.py)
+![](python/examples/generators/yield_outside_any_function.out)
+
+
+## Operations on infinite lists
+{id: operations-on-infinite-lists}
+
+{aside}
+In this example we can say tha the `fibonacci()` function returns the infinite list of Fibonacci numbers.
+In normal cicumstances only mathematicians can work with "infinite lists", programmers are constrained by memory and time.
+However generators in Python are lazy so they only pretend to be infinite lists. They are only the promise of having an
+infinite list. So you can do all kinds of interesting operations on them.
+
+In this example we multiply each value by 2. (I know it not the most interesting mathematical problem, but it will work for this example.)
+
+The variable `double_fibonacci` holds the values of the Fibonacci series multiplied by 2. More precizely it holds the
+possibility to iterate over that infinite list.
+
+So in reality we don't operate on the infinite lists, only on the "potential of the lists", but the former sounds cooler.
+
+Try running it withot the `if` and `break` statements and see what happens. (Ctrl-C will stop the program.)
+{/aside}
+
+![](examples/generators/infinite_operations.py)
+![](examples/generators/infinite_operations.out)
 
