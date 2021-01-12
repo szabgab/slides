@@ -279,19 +279,19 @@ Create a generator that will return the prime numbers:
 {id: operations-on-infinite-lists}
 
 {aside}
-In this example we can say tha the `fibonacci()` function returns the infinite list of Fibonacci numbers.
-In normal cicumstances only mathematicians can work with "infinite lists", programmers are constrained by memory and time.
+In this example we can say that the `fibonacci()` function returns the infinite list of Fibonacci numbers.
+In normal circumstances only mathematicians can work with "infinite lists", programmers are constrained by memory and time.
 However generators in Python are lazy so they only pretend to be infinite lists. They are only the promise of having an
 infinite list. So you can do all kinds of interesting operations on them.
 
-In this example we multiply each value by 2. (I know it not the most interesting mathematical problem, but it will work for this example.)
+In this example we multiply each value by 2. (I know it is not the most sophisticated mathematical problem, but it will work for this example.)
 
-The variable `double_fibonacci` holds the values of the Fibonacci series multiplied by 2. More precizely it holds the
+The variable `double_fibonacci` holds the values of the Fibonacci series multiplied by 2. More precisely it holds the
 possibility to iterate over that infinite list.
 
 So in reality we don't operate on the infinite lists, only on the "potential of the lists", but the former sounds cooler.
 
-Try running it withot the `if` and `break` statements and see what happens. (Ctrl-C will stop the program.)
+Try running it without the `if` and `break` statements and see what happens. (Ctrl-C will stop the program.)
 {/aside}
 
 ![](examples/generators/infinite_operations.py)
