@@ -271,8 +271,8 @@ Create a generator that will return the prime numbers:
 
     * It has no meaning there
 
-![](python/examples/generators/yield_outside_any_function.py)
-![](python/examples/generators/yield_outside_any_function.out)
+![](examples/generators/yield_outside_any_function.py)
+![](examples/generators/yield_outside_any_function.out)
 
 
 ## Operations on infinite lists
