@@ -276,7 +276,7 @@ libmce-perl
 * [MCE::Map](https://metacpan.org/pod/MCE::Map)
 
 {aside}
-The MCE package provide a map-like function that automatically runs the different tasks in separate processes then
+The MCE package provides a map-like function that automatically runs the different tasks in separate processes then
 collects the results in the correct order.
 
 By default it creates 4 child processes, but you can control that and a few other things by calling the init method.
