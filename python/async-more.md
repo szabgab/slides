@@ -36,7 +36,7 @@ Other libraries:
 
 * [trio](https://github.com/python-trio/trio)
 
-
+* [greenlet](https://greenlet.readthedocs.io/en/latest/)
 
 aiofiles  https://pypi.org/project/aiofiles/
 
