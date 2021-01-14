@@ -1,0 +1,21 @@
+============================= test session starts ==============================
+platform linux -- Python 3.8.6, pytest-6.1.2, py-1.9.0, pluggy-0.13.1
+rootdir: /home/gabor/work/slides/python/examples/pytest/math
+plugins: flake8-1.0.6, dash-1.17.0
+collected 2 items
+
+test_mymath_more_separate.py .F                                          [100%]
+
+=================================== FAILURES ===================================
+__________________________________ test_again __________________________________
+
+    def test_again():
+>       assert mymath.add(2, 3) == 5
+E       assert 6 == 5
+E        +  where 6 = <function add at 0x7f4bfffa2c10>(2, 3)
+E        +    where <function add at 0x7f4bfffa2c10> = mymath.add
+
+test_mymath_more_separate.py:8: AssertionError
+=========================== short test summary info ============================
+FAILED test_mymath_more_separate.py::test_again - assert 6 == 5
+========================= 1 failed, 1 passed in 0.03s ==========================

@@ -1,0 +1,22 @@
+============================= test session starts ==============================
+platform linux -- Python 3.8.6, pytest-6.1.2, py-1.9.0, pluggy-0.13.1
+rootdir: /home/gabor/work/slides/python/examples/pytest/math
+plugins: flake8-1.0.6, dash-1.17.0
+collected 1 item
+
+test_mymath_more.py F                                                    [100%]
+
+=================================== FAILURES ===================================
+___________________________________ test_add ___________________________________
+
+    def test_add():
+        assert mymath.add(2, 2) == 4
+>       assert mymath.add(2, 3) == 5
+E       assert 6 == 5
+E        +  where 6 = <function add at 0x7f6bc3c63160>(2, 3)
+E        +    where <function add at 0x7f6bc3c63160> = mymath.add
+
+test_mymath_more.py:6: AssertionError
+=========================== short test summary info ============================
+FAILED test_mymath_more.py::test_add - assert 6 == 5
+============================== 1 failed in 0.02s ===============================

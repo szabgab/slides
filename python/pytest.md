@@ -51,13 +51,13 @@ apt-get install python3-pytest
 yum install python3-pytest
 ```
 
-## Pytest
-{id: pytest-1}
+## Pytest - AUT
+{id: pytest-simple-aut}
 
 ![](examples/pytest/math/mymath.py)
 
-## Pytest
-{id: pytest-2}
+## Pytest - simple passing test
+{id: pytest-simple-passing-test}
 
 ```
 pytest
@@ -65,16 +65,19 @@ python -m pytest
 ```
 
 ![](examples/pytest/math/test_mymath.py)
+![](examples/pytest/math/test_mymath.out)
 
-## Pytest
-{id: pytest-3}
+## Pytest failing test in one function
+{id: pytest-failing-test-in-one-function}
 
 ![](examples/pytest/math/test_mymath_more.py)
+![](examples/pytest/math/test_mymath_more.out)
 
-## Pytest
-{id: pytest-4}
+## Pytest failing test separated
+{id: pytest-failing-test-separated}
 
 ![](examples/pytest/math/test_mymath_more_separate.py)
+![](examples/pytest/math/test_mymath_more_separate.out)
 
 
 ## PyTest expected exceptions
