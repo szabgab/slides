@@ -6,6 +6,8 @@ def divide(a, b):
     return a / b
 
 def test_zero_division():
-    with pytest.raises(ValueError) as e:
+    with pytest.raises(ValueError) as err:
         divide(1, 0)
-    assert str(e.value) == 'Cannot divide by Zero' 
+    assert str(err.value) == 'Cannot divide by Zero'
+
+#divide(3, 0)
