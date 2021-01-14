@@ -1,0 +1,38 @@
+============================= test session starts ==============================
+platform linux -- Python 3.8.6, pytest-6.1.2, py-1.9.0, pluggy-0.13.1
+rootdir: /home/gabor/work/slides/python/examples/pytest/fib3
+plugins: flake8-1.0.6, dash-1.17.0
+collected 3 items
+
+test_fibonacci.py .FF                                                    [100%]
+
+=================================== FAILURES ===================================
+______________________________ test_fib_negative _______________________________
+
+    def test_fib_negative():
+        with pytest.raises(Exception) as err:
+            fib(-1)
+        assert err.type == ValueError
+>       assert str(err.value) == 'Invalid parameter -1'
+E       AssertionError: assert 'Invalid para... was given -1' == 'Invalid parameter -1'
+E         - Invalid parameter -1
+E         + Invalid parameter was given -1
+E         ?                   ++++++++++
+
+test_fibonacci.py:11: AssertionError
+___________________________ test_fib_negative_again ____________________________
+
+    def test_fib_negative_again():
+        with pytest.raises(ValueError) as err:
+            fib(-1)
+>       assert str(err.value) == 'Invalid parameter -1'
+E       AssertionError: assert 'Invalid para... was given -1' == 'Invalid parameter -1'
+E         - Invalid parameter -1
+E         + Invalid parameter was given -1
+E         ?                   ++++++++++
+
+test_fibonacci.py:16: AssertionError
+=========================== short test summary info ============================
+FAILED test_fibonacci.py::test_fib_negative - AssertionError: assert 'Invalid...
+FAILED test_fibonacci.py::test_fib_negative_again - AssertionError: assert 'I...
+========================= 2 failed, 1 passed in 0.03s ==========================

@@ -184,3 +184,7 @@ module unload python/2.7
 Take the codon exercise, solve it with 3 loops and solve it with a pre-calculated look-up table.
 see the time difference.
 
+## Pytest
+
+* Can we protect our test from infinite (or too long) process? e.g. what if we get in an infinite loop? Can we set a max run time for the tests?
+

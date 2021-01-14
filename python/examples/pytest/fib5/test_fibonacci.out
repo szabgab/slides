@@ -1,0 +1,40 @@
+============================= test session starts ==============================
+platform linux -- Python 3.8.6, pytest-6.1.2, py-1.9.0, pluggy-0.13.1
+rootdir: /home/gabor/work/slides/python/examples/pytest/fib5
+plugins: flake8-1.0.6, dash-1.17.0
+collected 3 items
+
+test_fibonacci.py .FF                                                    [100%]
+
+=================================== FAILURES ===================================
+______________________________ test_fib_negative _______________________________
+
+    def test_fib_negative():
+        with pytest.raises(Exception) as err:
+            fib(-1)
+>       assert err.type == ValueError
+E       AssertionError: assert <class 'Exception'> == ValueError
+E        +  where <class 'Exception'> = <ExceptionInfo Exception('Invalid parameter -1') tblen=2>.type
+
+test_fibonacci.py:10: AssertionError
+___________________________ test_fib_negative_again ____________________________
+
+    def test_fib_negative_again():
+        with pytest.raises(ValueError) as err:
+>           fib(-1)
+
+test_fibonacci.py:15: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+n = -1
+
+    def fib(n):
+        if n < 1:
+>           raise Exception(f'Invalid parameter {n}')
+E           Exception: Invalid parameter -1
+
+fibonacci.py:3: Exception
+=========================== short test summary info ============================
+FAILED test_fibonacci.py::test_fib_negative - AssertionError: assert <class '...
+FAILED test_fibonacci.py::test_fib_negative_again - Exception: Invalid parame...
+========================= 2 failed, 1 passed in 0.03s ==========================

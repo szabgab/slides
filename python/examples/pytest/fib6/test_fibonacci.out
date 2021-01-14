@@ -1,0 +1,29 @@
+============================= test session starts ==============================
+platform linux -- Python 3.8.6, pytest-6.1.2, py-1.9.0, pluggy-0.13.1
+rootdir: /home/gabor/work/slides/python/examples/pytest/fib6
+plugins: flake8-1.0.6, dash-1.17.0
+collected 3 items
+
+test_fibonacci.py .FF                                                    [100%]
+
+=================================== FAILURES ===================================
+______________________________ test_fib_negative _______________________________
+
+    def test_fib_negative():
+        with pytest.raises(Exception) as err:
+>           fib(-1)
+E           Failed: DID NOT RAISE <class 'Exception'>
+
+test_fibonacci.py:9: Failed
+___________________________ test_fib_negative_again ____________________________
+
+    def test_fib_negative_again():
+        with pytest.raises(ValueError) as err:
+>           fib(-1)
+E           Failed: DID NOT RAISE <class 'ValueError'>
+
+test_fibonacci.py:15: Failed
+=========================== short test summary info ============================
+FAILED test_fibonacci.py::test_fib_negative - Failed: DID NOT RAISE <class 'E...
+FAILED test_fibonacci.py::test_fib_negative_again - Failed: DID NOT RAISE <cl...
+========================= 2 failed, 1 passed in 0.03s ==========================

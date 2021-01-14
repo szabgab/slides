@@ -1,0 +1,8 @@
+55
+Traceback (most recent call last):
+  File "use_fib.py", line 4, in <module>
+    print(fib(-1))
+  File "fibonacci.py", line 3, in fib
+    raise ValueError(f'Invalid parameter {n}')
+ValueError: Invalid parameter -1
+

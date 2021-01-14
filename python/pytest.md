@@ -198,84 +198,94 @@ At the bottom of the report you can also see that now it indicates 1 failed and 
 
 ![](examples/pytest/math/test_mymath_more_separate.out)
 
-
-## PyTest expected exceptions
-{id: pytest-expected-exceptions}
-![](examples/pytest/test_exceptions.py)
+## Exercise: test simple module
+{id: exercise-test-simple-module}
 
 
-## PyTest expected exceptions output
-{id: pytest-expected-exceptions-output}
 
-```
-$ pytest test_exceptions.py
+## Pytest expected exception
+{id: pytest-expected-exception}
 
-test_exceptions.py .
-```
+* What if raising an exception is part of the specification of a function?
+* That given certain (incorrect) input it will raise a certain exception?
+* How can we test that we get the right exception. The expected exception?
 
+## Pytest a nice Fibonacci example
+{id: pytest-fibonacci}
 
-## PyTest expected exceptions (text changed)
-{id: pytest-expected-exceptions-test-changed}
-![](examples/pytest/test_exceptions_text_changed.py)
+{aside}
+This is a nice implementation of the Fibonacci function. If we look at the way we can use it we see that it works well for 10.
+{/aside}
 
+![](examples/pytest/fib1/fibonacci.py)
+![](examples/pytest/fib1/use_fib.py)
+![](examples/pytest/fib1/use_fib.out)
 
-## PyTest expected exceptions (text changed) output
-{id: pytest-expected-exceptions-test-changed-output}
+## Pytest  testing Fibonacci
+{id: pytest-testing-fibonacci}
 
-```
-$ pytest test_exceptions_text_changed.py
+![](examples/pytest/fib1/test_fibonacci.py)
+![](examples/pytest/fib1/test_fibonacci.out)
 
+* What if the user calls it with -3 ?  We get the result to be 1. We don't want that.
 
-    def test_zero_division():
-        with pytest.raises(ValueError) as e:
-            divide(1, 0)
->       assert str(e.value) == 'Cannot divide by Zero'
-E       AssertionError: assert 'Cannot divide by Null' == 'Cannot divide by Zero'
-E         - Cannot divide by Null
-E         ?                  ^^^^
-E         + Cannot divide by Zero
-E         ?                  ^^^^
-```
+## Pytest expected exception
+{id: pytest-expected-exception-2}
 
 
-## PyTest expected exceptions (other exception)
-{id: pytest-expected-exceptions-failure}
-![](examples/pytest/test_exceptions_failing.py)
+![](examples/pytest/fib2/fibonacci.py)
+![](examples/pytest/fib2/use_fib.py)
+![](examples/pytest/fib2/use_fib.out)
+
+## Pytest testing expected exception
+{id: pytest-testing-expected-exception}
+
+![](examples/pytest/fib2/test_fibonacci.py)
+![](examples/pytest/fib2/test_fibonacci.out)
+
+## Pytest Change the text of the exception
+{id: pytest-change-text-of-exception}
+
+![](examples/pytest/fib3/fibonacci.py)
+
+![](examples/pytest/fib3/test_fibonacci.py)
+![](examples/pytest/fib3/test_fibonacci.out)
 
 
-## PyTest expected exceptions (other exception) output
-{id: pytest-expected-exceptions-failure-output}
+## Pytest Missing exception
+{id: pytest-missing-exception}
 
-```
-    $ pytest test_exceptions_failing.py
+![](examples/pytest/fib4/fibonacci.py)
+![](examples/pytest/fib4/test_fibonacci.py)
+![](examples/pytest/fib4/test_fibonacci.out)
 
-    def test_zero_division():
-        with pytest.raises(ValueError) as e:
->           divide(1, 0)
+## Pytest Other exception is raised
+{id: pytest-other-exception-raised}
 
-test_exceptions_failing.py:10:
-_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+![](examples/pytest/fib5/fibonacci.py)
+![](examples/pytest/fib5/test_fibonacci.py)
+![](examples/pytest/fib5/test_fibonacci.out)
 
-a = 1, b = 0
+## Pytest No exception is raised
+{id: pytest-no-exception-raised}
 
-    def divide(a, b):
-    #    if b == 0:
-    #        raise ValueError('Cannot divide by Zero')
->       return a / b
-E       ZeroDivisionError: division by zero
-```
+![](examples/pytest/fib6/fibonacci.py)
+![](examples/pytest/fib6/test_fibonacci.py)
+![](examples/pytest/fib6/test_fibonacci.out)
 
+## Exercise: test more exceptions
+{id: exercise-test-more-exception}
 
-## PyTest expected exceptions (no exception)
-{id: pytest-expected-exceptions-no-exception}
+* Find another case that will break the code.
+* Then make changes to the code that it will no break.
+* The write a test to verify it.
 
-![](examples/pytest/test_exceptions_missing.py)
+## Solution: test more exceptions
+{id: solution-test-more-exception}
 
-
-## PyTest expected exceptions (no exception) output
-{id: pytest-expected-exceptions-no-exception-output}
-
-![](examples/pytest/expected_exception_no_exception.out)
+![](examples/pytest/fib7/fibonacci.py)
+![](examples/pytest/fib7/test_fibonacci.py)
+![](examples/pytest/fib7/test_fibonacci.out)
 
 
 ## PyTest: Multiple Failures
@@ -1468,6 +1478,88 @@ Pytest properly reports that there was no exception where an exception was expec
 {id: pytest-expected-exceptions-bank-deposit-different-exception}
 ![](examples/pytest/b3/banks.py)
 ![](examples/pytest/b3/error.txt)
+
+
+## PyTest expected exceptions - divide
+{id: pytest-expected-exceptions}
+
+* Some older slides I kept them around
+
+![](examples/pytest/test_exceptions.py)
+
+
+## PyTest expected exceptions output
+{id: pytest-expected-exceptions-output}
+
+```
+$ pytest test_exceptions.py
+
+test_exceptions.py .
+```
+
+
+## PyTest expected exceptions (text changed)
+{id: pytest-expected-exceptions-test-changed}
+![](examples/pytest/test_exceptions_text_changed.py)
+
+
+## PyTest expected exceptions (text changed) output
+{id: pytest-expected-exceptions-test-changed-output}
+
+```
+$ pytest test_exceptions_text_changed.py
+
+
+    def test_zero_division():
+        with pytest.raises(ValueError) as e:
+            divide(1, 0)
+>       assert str(e.value) == 'Cannot divide by Zero'
+E       AssertionError: assert 'Cannot divide by Null' == 'Cannot divide by Zero'
+E         - Cannot divide by Null
+E         ?                  ^^^^
+E         + Cannot divide by Zero
+E         ?                  ^^^^
+```
+
+
+## PyTest expected exceptions (other exception)
+{id: pytest-expected-exceptions-failure}
+![](examples/pytest/test_exceptions_failing.py)
+
+
+## PyTest expected exceptions (other exception) output
+{id: pytest-expected-exceptions-failure-output}
+
+```
+    $ pytest test_exceptions_failing.py
+
+    def test_zero_division():
+        with pytest.raises(ValueError) as e:
+>           divide(1, 0)
+
+test_exceptions_failing.py:10:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+a = 1, b = 0
+
+    def divide(a, b):
+    #    if b == 0:
+    #        raise ValueError('Cannot divide by Zero')
+>       return a / b
+E       ZeroDivisionError: division by zero
+```
+
+
+## PyTest expected exceptions (no exception)
+{id: pytest-expected-exceptions-no-exception}
+
+![](examples/pytest/test_exceptions_missing.py)
+
+
+## PyTest expected exceptions (no exception) output
+{id: pytest-expected-exceptions-no-exception-output}
+
+![](examples/pytest/expected_exception_no_exception.out)
 
 
 
