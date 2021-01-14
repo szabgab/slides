@@ -7,11 +7,11 @@ async def sleep(cnt, sec):
     print(f"End {cnt}")
 
 async def main():
-    tasks = []
+    co_routines = []
     for i in range(4):
-        tasks.append(asyncio.create_task(sleep(i, 1)))
+        co_routines.append(sleep(i, 1))
 
-    for t in tasks:
+    for t in co_routines:
         await t
 
 start = time.monotonic()
