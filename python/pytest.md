@@ -198,10 +198,19 @@ At the bottom of the report you can also see that now it indicates 1 failed and 
 
 ![](examples/pytest/math/test_mymath_more_separate.out)
 
+## Pytest run all the test files
+{id: pytest-run-all-the-test-files}
+
+* in the math directory run `pytest` and let it find all the test files and all the test functions.
+
+```
+pytest
+```
+
 ## Exercise: test simple module
 {id: exercise-test-simple-module}
 
-
+* Take the standard [math](https://docs.python.org/library/math.html) library and write tests for some of the functions.
 
 ## Pytest expected exception
 {id: pytest-expected-exception}
@@ -325,11 +334,10 @@ five
 {id: pytest-selective-running-of-test-functions}
 
 ```
-pytest test_mymod_2.py::test_anagram
+pytest test_failures.py::test_one
 
-pytest test_mymod_2.py::test_multiword_anagram
+pytest test_failures.py::test_two
 ```
-
 
 
 ## PyTest: stop on first failure
@@ -337,10 +345,9 @@ pytest test_mymod_2.py::test_multiword_anagram
 {i: --maxfail}
 {i: -x}
 
-
 ```
-            pytest -x
-            pytest --maxfail 42
+pytest -x
+pytest --maxfail 42
 ```
 
 
