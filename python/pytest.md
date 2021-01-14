@@ -156,60 +156,6 @@ E       ZeroDivisionError: division by zero
 ![](examples/pytest/expected_exception_no_exception.out)
 
 
-
-## Exercise: test math functions
-{id: pytest-exercise-math}
-
-* Test methods of the [math](https://docs.python.org/3/library/math.html) module.
-* ceil
-* factorial
-* gcd
-
-
-
-
-## Exercise: test this app
-{id: pytest-exercise-app}
-
-
-Write tests for the `swap` and `average` functions of the `app` module. Can you find a bug?
-
-
-![](examples/pytest/app.py)
-
-
-## Exercise: test the csv module
-{id: pytest-exercise-csv}
-
-* [csv](https://docs.python.org/3/library/csv.html)
-* Create a CSV file, read it and check if the results are as expected!
-* Test creating a CSV file?
-* Test round trip?
-
-
-
-## Solution: Pytest test math functions
-{id: pytest-solution-math}
-![](examples/pytest/test_math.py)
-![](examples/pytest/test_math_exceptions.py)
-
-
-
-## Solution: Pytest test this app
-{id: pytest-solution-app}
-![](examples/pytest/test_app.py)
-
-
-## Solution: test the csv module
-{id: pytest-solution-csv}
-
-![](examples/csv/csv_file_newline.csv)
-
-![](examples/pytest/test_csv.py)
-
-
-
-
 ## PyTest: Multiple Failures
 {id: pytest-multiple-failures}
 
@@ -464,6 +410,57 @@ stderr during testing
 .
 1 passed in 0.01 seconds
 ```
+
+
+## Exercise: test math functions
+{id: pytest-exercise-math}
+
+* Test methods of the [math](https://docs.python.org/3/library/math.html) module.
+* ceil
+* factorial
+* gcd
+
+
+
+
+## Exercise: test this app
+{id: pytest-exercise-app}
+
+
+Write tests for the `swap` and `average` functions of the `app` module. Can you find a bug?
+
+
+![](examples/pytest/app.py)
+
+
+## Exercise: test the csv module
+{id: pytest-exercise-csv}
+
+* [csv](https://docs.python.org/3/library/csv.html)
+* Create a CSV file, read it and check if the results are as expected!
+* Test creating a CSV file?
+* Test round trip?
+
+
+
+## Solution: Pytest test math functions
+{id: pytest-solution-math}
+![](examples/pytest/test_math.py)
+![](examples/pytest/test_math_exceptions.py)
+
+
+
+## Solution: Pytest test this app
+{id: pytest-solution-app}
+![](examples/pytest/test_app.py)
+
+
+## Solution: test the csv module
+{id: pytest-solution-csv}
+
+![](examples/csv/csv_file_newline.csv)
+
+![](examples/pytest/test_csv.py)
 
 
 ## PyTest failure reports
