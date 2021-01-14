@@ -51,203 +51,30 @@ apt-get install python3-pytest
 yum install python3-pytest
 ```
 
+## Pytest
+{id: pytest-1}
 
-## Testing with Pytest
-{id: pytested-module}
+![](examples/pytest/math/mymath.py)
 
-
-A module called `mymath` with two functions: `add` and `div`.
-
-
-![](examples/pytest/mymath.py)
-
-
-## Testing functions
-{id: pytest-module}
-![](examples/pytest/test_mymath.py)
-
-
-## Testing class and methods
-{id: pytest-module-class}
-![](examples/pytest/test_mymath_class.py)
-
-
-## Pytest - execute
-{id: pytest-run-tests}
-
-```
-pytest test_mymath.py
-```
-
-![](examples/pytest/test_mymath.out)
-
-
-## Pytest - execute
-{id: pytest-execute}
+## Pytest
+{id: pytest-2}
 
 ```
 pytest
 python -m pytest
 ```
 
+![](examples/pytest/math/test_mymath.py)
 
-## Pytest simple module to be tested
-{id: pytest-simple-module-to-be-tested}
+## Pytest
+{id: pytest-3}
 
+![](examples/pytest/math/test_mymath_more.py)
 
-An anagram is a pair of words containing the exact same letters in different order. For example:
+## Pytest
+{id: pytest-4}
 
-
-
-* listen silent
-* elvis lives
-
-
-![](examples/pytest/mymod_1.py)
-
-
-## Pytest simple tests - success
-{id: pytest-simple-success}
-{i: assert}
-{i: pytest}
-![](examples/pytest/test_mymod_1.py)
-
-
-## Pytest simple tests - success output
-{id: pytest-simple-success-output}
-
-```
-$ pytest test_mymod_1.py
-
-===================== test session starts ======================
-platform darwin -- Python 3.5.2, pytest-3.0.7, py-1.4.33, pluggy-0.4.0
-rootdir: /examples/python/pt, inifile:
-collected 1 items
-
-test_mymod_1.py .
-
-=================== 1 passed in 0.03 seconds ===================
-```
-
-
-## Pytest simple tests - failure
-{id: pytest-simple-failure}
-
-* Failure reported by user: **is_anagram("anagram", "nag a ram")** is expected to return true.
-* We write a test case to reproduce the problem. It should fail now.
-
-![](examples/pytest/test_mymod_2.py)
-
-
-## Pytest simple tests - failure output
-{id: pytest-simple-failure-output}
-
-```
-$ pytest test_mymod_2.py
-
-===================== test session starts ======================
-platform darwin -- Python 3.5.2, pytest-3.0.7, py-1.4.33, pluggy-0.4.0
-rootdir: /examples/python/pt, inifile:
-collected 2 items
-
-test_mymod_2.py .F
-
-=========================== FAILURES ===========================
-____________________ test_multiword_anagram ____________________
-
-    def test_multiword_anagram():
-       assert is_anagram("ana gram", "naga ram")
->      assert is_anagram("anagram", "nag a ram")
-E      AssertionError: assert False
-E       +  where False = is_anagram('anagram', 'nag a ram')
-
-test_mymod_2.py:10: AssertionError
-============== 1 failed, 1 passed in 0.09 seconds ==============
-```
-
-
-## Exercise: test math functions
-{id: pytest-exercise-math}
-
-* Test methods of the [math](https://docs.python.org/3/library/math.html) module.
-* ceil
-* factorial
-* gcd
-
-
-
-
-## Exercise: test this app
-{id: pytest-exercise-app}
-
-
-Write tests for the `swap` and `average` functions of the `app` module. Can you find a bug?
-
-
-![](examples/pytest/app.py)
-
-
-## Exercise: test the csv module
-{id: pytest-exercise-csv}
-
-* [csv](https://docs.python.org/3/library/csv.html)
-* Create a CSV file, read it and check if the results are as expected!
-* Test creating a CSV file?
-* Test round trip?
-
-
-
-## Solution: Pytest test math functions
-{id: pytest-solution-math}
-![](examples/pytest/test_math.py)
-![](examples/pytest/test_math_exceptions.py)
-
-
-
-## Solution: Pytest test this app
-{id: pytest-solution-app}
-![](examples/pytest/test_app.py)
-
-
-## Solution: test the csv module
-{id: pytest-solution-csv}
-
-![](examples/csv/csv_file_newline.csv)
-
-![](examples/pytest/test_csv.py)
-
-
-
-## PyTest bank deposit
-{id: pytest-bank-deposit}
-![](examples/pytest/b1/banks.py)
-
-
-## PyTest expected exceptions (bank deposit)
-{id: pytest-expected-exceptions-bank-deposit}
-![](examples/pytest/b1/test_bank.py)
-
-```
-pytest test_bank.py
-
-test_bank.py .
-```
-
-
-## PyTest expected exceptions (bank deposit) - no exception happens
-{id: pytest-expected-exceptions-bank-deposit-no-exception}
-
-Pytest properly reports that there was no exception where an exception was expected.
-
-
-![](examples/pytest/b2/banks.py)
-![](examples/pytest/b2/error.txt)
-
-
-## PyTest expected exceptions (bank deposit) - different exception is raised
-{id: pytest-expected-exceptions-bank-deposit-different-exception}
-![](examples/pytest/b3/banks.py)
-![](examples/pytest/b3/error.txt)
+![](examples/pytest/math/test_mymath_more_separate.py)
 
 
 ## PyTest expected exceptions
@@ -327,6 +154,60 @@ E       ZeroDivisionError: division by zero
 {id: pytest-expected-exceptions-no-exception-output}
 
 ![](examples/pytest/expected_exception_no_exception.out)
+
+
+
+## Exercise: test math functions
+{id: pytest-exercise-math}
+
+* Test methods of the [math](https://docs.python.org/3/library/math.html) module.
+* ceil
+* factorial
+* gcd
+
+
+
+
+## Exercise: test this app
+{id: pytest-exercise-app}
+
+
+Write tests for the `swap` and `average` functions of the `app` module. Can you find a bug?
+
+
+![](examples/pytest/app.py)
+
+
+## Exercise: test the csv module
+{id: pytest-exercise-csv}
+
+* [csv](https://docs.python.org/3/library/csv.html)
+* Create a CSV file, read it and check if the results are as expected!
+* Test creating a CSV file?
+* Test round trip?
+
+
+
+## Solution: Pytest test math functions
+{id: pytest-solution-math}
+![](examples/pytest/test_math.py)
+![](examples/pytest/test_math_exceptions.py)
+
+
+
+## Solution: Pytest test this app
+{id: pytest-solution-app}
+![](examples/pytest/test_app.py)
+
+
+## Solution: test the csv module
+{id: pytest-solution-csv}
+
+![](examples/csv/csv_file_newline.csv)
+
+![](examples/pytest/test_csv.py)
+
+
 
 
 ## PyTest: Multiple Failures
@@ -1322,4 +1203,152 @@ Data Files:
 * I could not find a way yet to avoid the reporting in the child-process. Maybe we need to run this with a special runner that will fork and run this test on  our behalf.
 
 ![](examples/pytest/test_forker.py)
+
+
+
+## Testing with Pytest
+{id: pytested-module}
+
+
+A module called `mymath` with two functions: `add` and `div`.
+
+
+![](examples/pytest/mymath.py)
+
+
+## Testing functions
+{id: pytest-module}
+![](examples/pytest/test_mymath.py)
+
+
+## Testing class and methods
+{id: pytest-module-class}
+![](examples/pytest/test_mymath_class.py)
+
+
+## Pytest - execute
+{id: pytest-run-tests}
+
+```
+pytest test_mymath.py
+```
+
+![](examples/pytest/test_mymath.out)
+
+
+## Pytest - execute
+{id: pytest-execute}
+
+```
+pytest
+python -m pytest
+```
+
+
+## Pytest simple module to be tested
+{id: pytest-simple-module-to-be-tested}
+
+
+An anagram is a pair of words containing the exact same letters in different order. For example:
+
+
+
+* listen silent
+* elvis lives
+
+
+![](examples/pytest/mymod_1.py)
+
+
+## Pytest simple tests - success
+{id: pytest-simple-success}
+{i: assert}
+{i: pytest}
+![](examples/pytest/test_mymod_1.py)
+
+
+## Pytest simple tests - success output
+{id: pytest-simple-success-output}
+
+```
+$ pytest test_mymod_1.py
+
+===================== test session starts ======================
+platform darwin -- Python 3.5.2, pytest-3.0.7, py-1.4.33, pluggy-0.4.0
+rootdir: /examples/python/pt, inifile:
+collected 1 items
+
+test_mymod_1.py .
+
+=================== 1 passed in 0.03 seconds ===================
+```
+
+
+## Pytest simple tests - failure
+{id: pytest-simple-failure}
+
+* Failure reported by user: **is_anagram("anagram", "nag a ram")** is expected to return true.
+* We write a test case to reproduce the problem. It should fail now.
+
+![](examples/pytest/test_mymod_2.py)
+
+
+## Pytest simple tests - failure output
+{id: pytest-simple-failure-output}
+
+```
+$ pytest test_mymod_2.py
+
+===================== test session starts ======================
+platform darwin -- Python 3.5.2, pytest-3.0.7, py-1.4.33, pluggy-0.4.0
+rootdir: /examples/python/pt, inifile:
+collected 2 items
+
+test_mymod_2.py .F
+
+=========================== FAILURES ===========================
+____________________ test_multiword_anagram ____________________
+
+    def test_multiword_anagram():
+       assert is_anagram("ana gram", "naga ram")
+>      assert is_anagram("anagram", "nag a ram")
+E      AssertionError: assert False
+E       +  where False = is_anagram('anagram', 'nag a ram')
+
+test_mymod_2.py:10: AssertionError
+============== 1 failed, 1 passed in 0.09 seconds ==============
+```
+
+## PyTest bank deposit
+{id: pytest-bank-deposit}
+![](examples/pytest/b1/banks.py)
+
+
+## PyTest expected exceptions (bank deposit)
+{id: pytest-expected-exceptions-bank-deposit}
+![](examples/pytest/b1/test_bank.py)
+
+```
+pytest test_bank.py
+
+test_bank.py .
+```
+
+
+## PyTest expected exceptions (bank deposit) - no exception happens
+{id: pytest-expected-exceptions-bank-deposit-no-exception}
+
+Pytest properly reports that there was no exception where an exception was expected.
+
+
+![](examples/pytest/b2/banks.py)
+![](examples/pytest/b2/error.txt)
+
+
+## PyTest expected exceptions (bank deposit) - different exception is raised
+{id: pytest-expected-exceptions-bank-deposit-different-exception}
+![](examples/pytest/b3/banks.py)
+![](examples/pytest/b3/error.txt)
+
+
 
