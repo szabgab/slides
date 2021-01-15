@@ -135,7 +135,7 @@ Element from the first row will be used as the keys of these hashes and elements
 the values of these hashes.
 {/aside}
 
-* [Text::CSV](
+* [Text::CSV](https://metacpan.org/pod/Text::CSV)
 
 ![](examples/other/planets.csv)
 ![](examples/other/read_csv_as_array_of_hashes.pl)
@@ -149,4 +149,11 @@ the values of these hashes.
 ![](examples/other/sort_by.pl)
 ![](examples/other/sort_by_complexity.pl)
 ![](examples/other/sort_by_planets.pl)
+
+## Range iterator
+{id: range-iterator}
+
+* [Range::Iter](https://metacpan.org/pod/Range::Iter)
+
+![](examples/other/range.pl)
 
