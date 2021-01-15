@@ -1,21 +1,21 @@
-#!/usr/bin/perl 
+#!/usr/bin/env perl
 use strict;
 use warnings;
 
 $SIG{KILL} = sub {
-   print "KILL received\n";
+   print "KILL received. kill -9  We cannot catch it.\n";
 };
 
-$SIG{INT} = sub { 
-    print "INT received\n";
+$SIG{INT} = sub {
+    print "INT received. kill -2  or Ctrl-C\n";
 };
 
 $SIG{TERM} = sub {
-    print "TERM received\n";
+    print "TERM received. kill -15\n";
 };
 
 $SIG{TSTP} = sub {
-    print "TSTP received\n";
+    print "TSTP received. kill -20 or Ctrl-Z\n";
 };
 
 print "Please press Ctrl-C or Ctrl-Z\n";

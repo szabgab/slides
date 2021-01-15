@@ -56,6 +56,7 @@ perldoc perldiag       for a list of warnings and errors
 {id: catch-warnings}
 {i: $SIG}
 {i: __WARN__}
+
 ![](examples/advanced-perl/catch_warnings.pl)
 
 
