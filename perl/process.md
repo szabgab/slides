@@ -1,14 +1,82 @@
-# Process slides
-{id: process-slides}
+# Processes and signals
+{id: process-and-signals}
 
-## Page One
-{id: page-one}
+## Signals and the kill function
+{id: signal-handlers}
+{i: $SIG}
+{i: %SIG}
+{i: kill}
 
+List of [signals on Linux](http://kernel.org/doc/man-pages/online/pages/man7/signal.7.html): `man -S 7 signal`
+
+To send a signal use `kill SIG, LIST` (process IDs)
+
+For example: `kill 9, $pid;`
+
+![](examples/advanced-perl/signal.pl)
 
 ```
-use strict;
-use warnings;
+%SIG
+
+$SIG{INT}  = sub { print "INT received\n";};         # kill -2  or Ctrl-C
+$SIG{TERM} = sub { print "TERM received\n"; exit;};  # kill -15
+$SIG{TSTP} = sub { print "TSTP received\n";};        # kill -20 or Ctrl-Z
+
+$SIG{KILL} = sub { print "KILL received\n"; exit;};  # kill -9  cannot catch it
+
+
+$SIG{$name} = 'IGNORE';             # to ignore it
+$SIG{$name} = 'DEFAULT';            # to reset to the default behavior
 ```
+
+
+## Catch Ctrl-C
+{id: catch-ctrl-c}
+![](examples/advanced-perl/catch_ctr_c.pl)
+
+
+## Catch signals
+{id: catch-signals}
+![](examples/advanced-perl/catch_signals.pl)
+
+
+## Exercise: Catch ctrl-c and ask continue or terminate?
+{id: exercise-catch-ctrl-c}
+
+
+Take the `examples/advanced-perl/catch_ctr_c.pl`
+and change it so when the user presses Ctrl-C the counting
+stops and the user is asked if she really wants
+to terminate the program. (y/n).
+
+
+
+
+If yes is given then quit. If no is given continue.
+
+
+
+
+If Ctrl-c is pressed again later then ask again.
+
+
+
+
+Make sure you do as little as possible in the actual signal handle.
+
+
+
+
+## Solution: Catch ctrl-c and ask
+{id: solution-catch-ctrl-c}
+![](examples/advanced-perl/catch_ctr_c_confirm.pl)
+
+See what happens if you don't set the SIG handler to IGNORE?
+
+
+See what happens if you remove the word local?
+
+
 
 ## Page Two
 {id: page-two}
@@ -29,39 +97,3 @@ $SIG{INT}  = sub { print "INT received\n";};         # kill -2  or Ctrl-C
 $SIG{TERM} = sub { print "TERM received\n"; exit;};  # kill -15
 $SIG{TSTP} = sub { print "TSTP received\n";};        # kill -20 or Ctrl-Z
 ```
-
-
-## Unordered list
-{id: unordered-list}
-
-* Entry One
-* Entry Two
-* Entry Three
-
-paragraph with backslash-d: \d and double-backslash-x: \\x
-
-
-```
-literallayout with backslash-s: \s
-```
-
-
-[Perl Arrays](https://perlmaven.com/perl-arrays)
-
-
-
-
-## Ordered list
-{id: ordered-list}
-
-1. Entry One
-1. Entry Two
-1. Entry Three
-
-
-
-An ini file has sections starting by the name of the section in square brackets and within
-each section there are key = value pairs with optional spaces around the "=" sign.
-The keys can only contain letters, numbers, underscore or dash.
-In addition there can be empty lines and lines starting with # which are comments.
-
