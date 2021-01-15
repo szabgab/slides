@@ -187,4 +187,7 @@ see the time difference.
 ## Pytest
 
 * Can we protect our test from infinite (or too long) process? e.g. what if we get in an infinite loop? Can we set a max run time for the tests?
+(API testing meaning (exceptions?) meaning of 500 400 errors?
+
+https://stribny.name/blog/pytest/
 

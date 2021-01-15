@@ -184,7 +184,6 @@ Starting from Python 3.2 the pyc files are saved in the `__pycache__` directory.
 1. Run the code of the file loaded.
 1. Copy names from the imported module to the importing namespace.
 
-
 ## Runtime loading of modules
 {id: runtime-loading-of-modules}
 
@@ -197,6 +196,17 @@ Starting from Python 3.2 the pyc files are saved in the `__pycache__` directory.
 
 ![](examples/modules/conditional_loading.py)
 
+
+## What is in our namespace?
+{id: what-is-in-your-namespace}
+
+![](examples/modules/what_is_in_the_namespace.py)
+![](examples/modules/what_is_in_the_namespace.out)
+
+## Runtime import
+{id: runtime-import}
+
+* We can use the name of a module that comes from an expression
 
 
 ## Duplicate importing of functions
