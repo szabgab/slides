@@ -124,4 +124,29 @@ to the use of Smolder smoke signaler.
 
 ![](examples/mock-lwp/t/webapi_mock_lwp_simple.t)
 
+## Read CSV file as array of hashes
+{id: read-csv-file-as-array-of-hashes}
+{i: csv}
+
+{aside}
+The csv function that can be imported from Text::CSV can read a CSV into memory, creating an array of hashes.
+
+Element from the first row will be used as the keys of these hashes and elements from all the other rows will be used as
+the values of these hashes.
+{/aside}
+
+* [Text::CSV](
+
+![](examples/other/planets.csv)
+![](examples/other/read_csv_as_array_of_hashes.pl)
+![](examples/other/read_csv_as_array_of_hashes.out)
+
+## Sort array using sort and sort_by
+{id: sort-array-using-sort-and-sort-by}
+
+* [List::UtilsBy](https://metacpan.org/pod/List::UtilsBy)
+
+![](examples/other/sort_by.pl)
+![](examples/other/sort_by_complexity.pl)
+![](examples/other/sort_by_planets.pl)
 

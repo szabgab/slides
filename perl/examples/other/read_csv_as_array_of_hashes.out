@@ -1,0 +1,57 @@
+$VAR1 = [
+          {
+            'Planet name' => 'Mercury',
+            'Mass' => '0.055',
+            'Distance (AU)' => '0.4'
+          },
+          {
+            'Planet name' => 'Venus',
+            'Mass' => '0.815',
+            'Distance (AU)' => '0.7'
+          },
+          {
+            'Distance (AU)' => '1',
+            'Planet name' => 'Earth',
+            'Mass' => '1'
+          },
+          {
+            'Planet name' => 'Mars',
+            'Mass' => '0.107',
+            'Distance (AU)' => '1.5'
+          },
+          {
+            'Planet name' => 'Ceres',
+            'Mass' => '0.00015',
+            'Distance (AU)' => '2.77'
+          },
+          {
+            'Distance (AU)' => '5.2',
+            'Mass' => '318',
+            'Planet name' => 'Jupiter'
+          },
+          {
+            'Distance (AU)' => '9.5',
+            'Mass' => '95',
+            'Planet name' => 'Saturn'
+          },
+          {
+            'Distance (AU)' => '19.6',
+            'Mass' => '14',
+            'Planet name' => 'Uranus'
+          },
+          {
+            'Mass' => '17',
+            'Planet name' => 'Neptune',
+            'Distance (AU)' => '30'
+          },
+          {
+            'Distance (AU)' => '39',
+            'Mass' => '0.00218',
+            'Planet name' => 'Pluto'
+          },
+          {
+            'Mass' => '0.000254',
+            'Planet name' => 'Charon',
+            'Distance (AU)' => '39'
+          }
+        ];
