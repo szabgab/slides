@@ -101,4 +101,7 @@ The global scalar special variables.
 About large-scale software development in Perl. I understand Perl syntax and scripting very well, but how do I apply that to a large organization using perl?
 Example topics: automated testing, code review, linting, refactoring, application monitoring, proper code layout, dependency management/injection, and the proper usage of large objects.
 
+How to deal with extremly large CSV file - read line-by-line.
+Parse::CSV
+
 
