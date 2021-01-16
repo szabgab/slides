@@ -399,11 +399,13 @@ Take the test file from the last example ( examples/test-simple/tests/t14.pl ) a
 {id: solution-tets-fibo}
 
 ![](examples/test-simple/tests/fibo.pl)
+![](examples/test-simple/tests/fibo.out)
 
 ## Solution: Write a test to test the Anagram checker
 {id: solution-anagrams}
 
 ![](examples/test-simple/tests/anagram.pl)
+![](examples/test-simple/tests/anagram.out)
 
 ## Solution: Enlarge our test suite
 {id: solution-enlarge-test-suit}
