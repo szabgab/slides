@@ -593,7 +593,7 @@ Run the previous test file using Test::Harness
 
 
 ```
-$ perl ../harness.pl tests/t24.pl
+$ perl ../root/harness.pl tests/t24.pl
 ```
 
 {aside}
@@ -612,7 +612,7 @@ In the case when all the OKs were successful the output is much shorter:
 {/aside}
 
 ```
-$ perl ../harness.pl tests/t11.pl
+$ perl ../root/harness.pl tests/t11.pl
 ```
 
 ![](examples/test-simple/tests/harness_t11.out)
@@ -622,7 +622,7 @@ $ perl ../harness.pl tests/t11.pl
 {id: harness-on-too-few-tests}
 
 ```
-$ perl ../harness.pl tests/t12.pl
+$ perl ../root/harness.pl tests/t12.pl
 ```
 
 ![](examples/test-simple/tests/harness_t12.out)
