@@ -315,6 +315,16 @@ Output:
 
 ![](examples/test-simple/tests/t12.pl.out)
 
+```
+$ echo $?
+255
+```
+
+```
+> echo %ERRORLEVEL%
+255
+```
+
 
 ## Test::Simple - too many tests
 {id: test-simple-too-many-tests}
@@ -327,6 +337,17 @@ When there are more OKs than planned the script will also print a comment about 
 Output:
 
 ![](examples/test-simple/tests/t13.pl.out)
+
+```
+$ echo $?
+255
+```
+
+```
+> echo %ERRORLEVEL%
+255
+```
+
 
 ## Add names to the tests
 {id: test-names}
