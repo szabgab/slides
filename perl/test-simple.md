@@ -250,6 +250,15 @@ It is more verbose, it has a couple of additional useful pieces of information:
 then we get the tests numbered and we even get a small explanation when the test fails.
 {/aside}
 
+```
+$ echo $?
+1
+```
+
+```
+> echo %ERRORLEVEL%
+1
+```
 
 ## Test::Simple when everything is ok
 {id: introducing-test-simple-everything-is-ok}
@@ -265,6 +274,16 @@ This way you can see how does it look like when everything is ok.
 Output:
 
 ![](examples/test-simple/tests/t11.pl.out)
+
+```
+$ echo $?
+0
+```
+
+```
+> echo %ERRORLEVEL%
+0
+```
 
 
 ## Test::Simple - missing test
