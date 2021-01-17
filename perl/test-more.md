@@ -14,6 +14,7 @@ other functions and tools:
 * `is`
 * `isnt`
 * `diag`
+* `node`
 * `like`
 * `cmp_ok`
 * `is_deeply`
