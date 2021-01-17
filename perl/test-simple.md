@@ -911,13 +911,38 @@ It too by default would attempt to use the already installed modules so you coul
 Prove has another frequently used flag: -v which puts it in verbose mode.
 {/aside}
 
+## Simple CPAN-like module
+{id: simple-cpan-like-module}
 
-## Exercise: MyTools multiply
-{id: exercise-test-simple}
+```
+.
+├── Changes
+├── lib
+│   └── MyTools.pm
+├── Makefile.PL
+├── MANIFEST.SKIP
+├── README
+└── t
+    └── 01-add.t
+```
 
-1. Setup a folder for CPAN module development with the necessary files and copy the modules from examples/test-simple/lib/ .
-1. Create a test script (.pl) and write at least 5 tests for the multiply() function.  See how it works when running directly with perl and using harness
-1. Rename the file and move it to t/sg.t Run it using `make test` and/or `Build test`.
+![](examples/distribution/project_with_extutils_makemaker/Changes)
+![](examples/distribution/project_with_extutils_makemaker/Makefile.PL)
+![](examples/distribution/project_with_extutils_makemaker/MANIFEST.SKIP)
+![](examples/distribution/project_with_extutils_makemaker/README)
+
+![](examples/distribution/project_with_extutils_makemaker/lib/MyTools.pm)
+![](examples/distribution/project_with_extutils_makemaker/t/01-add.t)
+
+
+## Exercise: Add tests
+{id: exercise-test-simple-add-tests}
+
+1. Add some tests to the `01-add.t` file.
+1. Create a new file called 02-multiply.t` and add tests to verify the `multiply()` function.
+1. See how it works when running directly with perl and using harness
+1. Add a new entry to the
+1. Run it using `make test`.
 
 ## Test::Simple
 {id: test-simple}

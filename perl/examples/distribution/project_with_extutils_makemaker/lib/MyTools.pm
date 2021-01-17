@@ -3,9 +3,10 @@ use strict;
 use warnings;
 use 5.010;
 
-our $VERSION = '0.01';
 use Exporter qw(import);
 our @EXPORT_OK = qw(add);
+
+our $VERSION = '0.02';
 
 =head1 NAME
 
