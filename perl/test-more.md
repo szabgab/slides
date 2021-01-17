@@ -316,6 +316,18 @@ Compare two Perl data structures:
 ![](examples/test-more/t/is_deeply.t.out)
 
 
+## Function returning data from bug-tracker
+{id: function-returning-data-from-bugtracker}
+
+{aside}
+Look at the code that generates the bug reports you'll see that testing the 4th return value
+- which is quite complex already - is hard. We cannot test against a fixed hash as some
+of the values are totally dynamic (e.g. a timestamp).
+{/aside}
+
+![](examples/test-more/lib/MyBugs.pm)
+
+
 ## is_deeply on a hash
 {id: test-more-is-deeply-hash}
 
@@ -332,14 +344,6 @@ checking the returned hash from a bug tracking system.
 What if we are testing a live system and so not interested in the exact values,
 just in the keys and the fact that the values are numbers?
 {/aside}
-
-{aside}
-Look at the code that generates the bug reports you'll see that testing the 4th return value
-- which is quite complex already - is hard. We cannot test against a fixed hash as some
-of the values are totally dynamic (e.g. a timestamp).
-{/aside}
-
-![](examples/test-more/lib/MyBugs.pm)
 
 
 ## Platform dependent tests
