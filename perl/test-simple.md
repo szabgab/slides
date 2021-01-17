@@ -934,15 +934,27 @@ Prove has another frequently used flag: -v which puts it in verbose mode.
 ![](examples/distribution/project_with_extutils_makemaker/lib/MyTools.pm)
 ![](examples/distribution/project_with_extutils_makemaker/t/01-add.t)
 
+## Commands for CPAN release
+{id: commands-for-cpan-relase}
+
+```
+perl Makefile.PL
+make
+make test
+make manifest
+make dist
+```
+
 
 ## Exercise: Add tests
 {id: exercise-test-simple-add-tests}
 
 1. Add some tests to the `01-add.t` file.
 1. Create a new file called 02-multiply.t` and add tests to verify the `multiply()` function.
-1. See how it works when running directly with perl and using harness
-1. Add a new entry to the
-1. Run it using `make test`.
+1. See how it works when running directly with perl and using harness.
+1. Increase the version number in the module.
+1. Add a new entry to the Changes file describing your changes.
+1. Create the release of of new CPAN distribution.
 
 ## Test::Simple
 {id: test-simple}
