@@ -31,7 +31,7 @@ In the end every test can be based on the single ok() function.
 The additional functions mainly serve as convenience methods
 to allow better error reporting.
 
-## Test::Simpler ok(  trueness,     name);
+## Test::Simple ok(  trueness,     name);
 {id: test-simple-ok}
 {i: ok|Test::Simple}
 
