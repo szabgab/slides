@@ -177,7 +177,7 @@ When you don't want to see the failing tests any more
 ![](examples/test-more/t/34.t)
 
 ```
-$ prove t/34.t
+$ prove -l t/34.t
 ```
 
 ![](examples/test-more/t/34.t.prove.out)
@@ -187,7 +187,7 @@ $ prove t/34.t
 {i: TODO}
 
 ```
-$ prove -v t/34.t
+$ prove -lv t/34.t
 ```
 
 ![](examples/test-more/t/34.t.prove-v.out)

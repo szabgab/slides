@@ -1,7 +1,6 @@
 use strict;
 use warnings;
 
-use lib 'lib';
 use MySimpleCalc qw(sum);
 
 use Test::More tests => 3;
