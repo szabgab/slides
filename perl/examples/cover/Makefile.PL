@@ -4,8 +4,8 @@ use warnings;
 use ExtUtils::MakeMaker;
 WriteMakefile
 (
-  NAME           => 'MyTools',
-  VERSION_FROM   => 'lib/MyTools.pm',
+  NAME           => 'MyMath',
+  VERSION_FROM   => 'lib/MyMath.pm',
   LICENSE        => 'perl',
   PREREQ_PM      => {
          'Exporter'   => '0',

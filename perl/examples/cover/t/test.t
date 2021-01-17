@@ -3,7 +3,7 @@ use warnings;
 
 use Test::More 'no_plan';
 
-use MyTools qw(add div fibo);
+use MyMath qw(add div fibo);
 
 is(add(2, 3), 5);
 

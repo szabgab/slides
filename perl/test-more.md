@@ -460,6 +460,10 @@ Files=11, Tests=2078, 50 wallclock secs
 * [Meta::CPAN](https://metacpan.org/)
 
 
+![](examples/cover/Makefile.PL)
+![](examples/cover/lib/MyMath.pm)
+![](examples/cover/t/test.t)
+
 
 ## Declare your plan at execution time
 {id: test-calculated-plan}

@@ -1,4 +1,4 @@
-package MyTools;
+package MyMath;
 use strict;
 use warnings;
 
@@ -9,7 +9,7 @@ our $VERSION = '0.02';
 
 =head1 NAME
 
-MyTools - some tools to show packaging
+MyMath - some tools to show test coverage
 
 =head1 SYNOPSIS
 
