@@ -380,17 +380,17 @@ ok 2 # skip Windows related tests
 ```
 
 
-## SKIP with locale
-{id: test-more-skip-with-locale}
+## locale
+{id: test-more-locale}
+{i: locale}
 
-![](examples/test-more/t/skip_with_locale.t)
+![](examples/test-more/t/locale.t)
 
 
 ## Stop running current test script
 {id: test-more-stop-testing}
 
 {aside}
-
 When running a test script sometimes we reach a
 failure that is so problematic you cannot go on testing.
 This can be in the scope of a single test script in which case
