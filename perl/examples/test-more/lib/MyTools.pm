@@ -12,6 +12,7 @@ our @EXPORT_OK = qw(
     get_copyright_broken
     fibo
     fibonacci
+    wait_for_input_with_timeout
 );
 
 sub fibo {
@@ -58,6 +59,9 @@ sub last_update {
    return "This page was last updated at " . DateTime->now;
 }
 
+sub wait_for_input_with_timeout {
+    sleep rand shift;
+}
 
 1;
 
