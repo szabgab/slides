@@ -1,0 +1,21 @@
+
+    #   Failed test '-1, -1, -1'
+    #   at t/planned_subtest.t line 21.
+    #          got: '-2'
+    #     expected: '-3'
+    # Looks like you failed 1 test of 2.
+
+#   Failed test 'negatives'
+#   at t/planned_subtest.t line 22.
+# Looks like you failed 1 test of 2.
+t/planned_subtest.t .. 
+Dubious, test returned 1 (wstat 256, 0x100)
+Failed 1/2 subtests 
+
+Test Summary Report
+-------------------
+t/planned_subtest.t (Wstat: 256 Tests: 2 Failed: 1)
+  Failed test:  2
+  Non-zero exit status: 1
+Files=1, Tests=2,  0 wallclock secs ( 0.01 usr  0.00 sys +  0.13 cusr  0.00 csys =  0.14 CPU)
+Result: FAIL

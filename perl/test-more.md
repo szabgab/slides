@@ -304,7 +304,7 @@ and upper limit.
 * Actually this is a really bad test as it can fail randomnly
 
 
-## is_deeply(  complex_structure,   expected_complex structure,   name);
+## is_deeply(  complex_structure,   expected_complex_structure,   name);
 {id: test-more-is-deeply}
 {i: is_deeply}
 
@@ -455,13 +455,12 @@ All tests successful.
 Files=11, Tests=2078, 50 wallclock secs
 ```
 
-## Test coverage report example
-{id: devel-cover-example}
-
 * [Devel::Cover](https://metacpan.org/pod/Devel::Cover)
 * [CPAN Cover](http://cpancover.com/)
 * [Meta::CPAN](https://metacpan.org/)
 
+## Test coverage report example
+{id: devel-cover-example}
 
 ![](examples/cover/Makefile.PL)
 ![](examples/cover/lib/MyMath.pm)
@@ -508,58 +507,19 @@ With Test::More we have a much better solution. We don't have to
 declare the plan on the use Test::More line. We can do that later,
 in the run time of the Perl script.
 {/aside}
+
 ![](examples/test-perl/t/plan_tests.t)
 
-
-## Test blocks (use subtest instead)
-{id: test-blocks}
-{i: {}}
-
-{aside}
-
-Create small blocks of tests
-{/aside}
+## done_testing
+{id: done-testing}
+{i: done_testing}
 
 {aside}
-
-When writing a test script you often write similar pieces of code that do
-unrelated tests. You can reuse the same variables throughout the test script
-but that means that in case of a bug in the test script the various parts might
-have effects on each other.
-
-You can also invent new names for the variables but there are only so many names
-you can reasonably use for the same kind of data.
-
-The best solution probably is to put the individual pieces into anonymous blocks.
-That serves several purposes. First of all it makes clear to both the writer of the
-code and the reader that the blocks are mostly independent.
-It also ensures that the variables used in one block won't interfere with the variables
-in the other block. You'll even have to define these variables in both blocks.
+I am not a fan of it, but in rare cases it is useful to know that **done_testing** can be used to signal all tests have been done.
+This way we don't need to have a "plan".
 {/aside}
-![](examples/test-perl/t/blocks.t)
 
-
-## Counting tests in the small blocks (use subtest instead)
-{id: test-begin-block}
-{i: BEGIN}
-
-{aside}
-
-When you are writing many test in one file quickly you'll face the problem of
-keeping the "plan" up to date. You will add a test and forget to update
-the number worse, you'll add many tests and when you suddenly remember you
-did not update the number it is too late already. Will you switch to "no_plan"?
-Will you count the ok(), is() and similar calls? Will you run the test and update your expectation accordingly?
-
-There is trick I learned on the perl-qa mailing list.
-
-You declare a variable called $tests at the beginning of the script.
-Then at the end of each section you update the number.
-{/aside}
-![](examples/test-perl/t/begin_block.t)
-
-See also:
-[Test::Block](http://metacpan.org/pod/Test::Block)
+![](examples/test-perl/t/done_testing.t)
 
 
 ## subtest with plan
@@ -567,79 +527,21 @@ See also:
 
 ![](examples/test-perl/t/planned_subtest.t)
 
-**perl t/planned_subtest.t**
-
-
 ```
-1..3
-ok 1 - 1+1
-    # Subtest: negatives
-    1..2
-    ok 1 - -1, -1
-    not ok 2 - -1, -1, -1
-    #   Failed test '-1, -1, -1'
-    #   at t/planned_subtest.t line 14.
-    #          got: '-2'
-    #     expected: '-3'
-    # Looks like you failed 1 test of 2.
-not ok 2 - negatives
-#   Failed test 'negatives'
-#   at t/planned_subtest.t line 15.
-ok 3 - 2+2
-# Looks like you failed 1 test of 3.
+prove -l t/planned_subtest.t
 ```
 
-
-**prove t/planned_subtest.t**
-
-
-```
-t/planned_subtest.t .. 1/3
-    #   Failed test '-1, -1, -1'
-    #   at t/planned_subtest.t line 14.
-    #          got: '-2'
-    #     expected: '-3'
-    # Looks like you failed 1 test of 2.
-
-#   Failed test 'negatives'
-#   at t/planned_subtest.t line 15.
-# Looks like you failed 1 test of 3.
-t/planned_subtest.t .. Dubious, test returned 1 (wstat 256, 0x100)
-Failed 1/3 subtests
-
-Test Summary Report
--------------------
-t/planned_subtest.t (Wstat: 256 Tests: 3 Failed: 1)
-  Failed test:  2
-  Non-zero exit status: 1
-Files=1, Tests=3,  0 wallclock secs
-  ( 0.03 usr  0.00 sys +  0.02 cusr  0.00 csys =  0.05 CPU)
-Result: FAIL
-```
-
-
-
-## done_testing
-{id: done-testing}
-{i: done_testing}
-
-{aside}
-
-I am not a fan of it, but in rare cases it is useful to know that **done_testing** can be used to signal all tests have been done.
-This way we don't need to have a "plan".
-{/aside}
-![](examples/test-perl/t/done_testing.t)
+![](examples/test-perl/t/planned_subtest.out)
 
 
 ## subtest with implicit done_testing
 {id: subtest}
 {i: done_testing}
+
 ![](examples/test-perl/t/subtest.t)
-![](examples/test-perl/t/subtest.t.ok)
-![](examples/test-perl/t/subtest.t.nok)
+![](examples/test-perl/t/subtest.out)
 
 Implicit call to done_testing inside. skip-able, etc.
-
 
 
 ## skip all
@@ -667,4 +569,55 @@ A few suggestions:
 Archive::Zip,
 
 [top 20](http://blogs.perl.org/users/neilb/2014/08/fix-a-bug-on-cpan-day.html).
+
+## Test blocks (use subtest instead)
+{id: test-blocks}
+{i: {}}
+
+{aside}
+Create small blocks of tests
+{/aside}
+
+{aside}
+When writing a test script you often write similar pieces of code that do
+unrelated tests. You can reuse the same variables throughout the test script
+but that means that in case of a bug in the test script the various parts might
+have effects on each other.
+
+You can also invent new names for the variables but there are only so many names
+you can reasonably use for the same kind of data.
+
+The best solution probably is to put the individual pieces into anonymous blocks.
+That serves several purposes. First of all it makes clear to both the writer of the
+code and the reader that the blocks are mostly independent.
+It also ensures that the variables used in one block won't interfere with the variables
+in the other block. You'll even have to define these variables in both blocks.
+{/aside}
+
+![](examples/test-perl/t/blocks.t)
+
+
+## Counting tests in the small blocks (use subtest instead)
+{id: test-begin-block}
+{i: BEGIN}
+
+{aside}
+
+When you are writing many test in one file quickly you'll face the problem of
+keeping the "plan" up to date. You will add a test and forget to update
+the number worse, you'll add many tests and when you suddenly remember you
+did not update the number it is too late already. Will you switch to "no_plan"?
+Will you count the ok(), is() and similar calls? Will you run the test and update your expectation accordingly?
+
+There is trick I learned on the perl-qa mailing list.
+
+You declare a variable called $tests at the beginning of the script.
+Then at the end of each section you update the number.
+{/aside}
+![](examples/test-perl/t/begin_block.t)
+
+See also:
+[Test::Block](http://metacpan.org/pod/Test::Block)
+
+
 
