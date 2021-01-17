@@ -455,6 +455,9 @@ All tests successful.
 Files=11, Tests=2078, 50 wallclock secs
 ```
 
+## Test coverage report example
+{id: devel-cover-example}
+
 * [Devel::Cover](https://metacpan.org/pod/Devel::Cover)
 * [CPAN Cover](http://cpancover.com/)
 * [Meta::CPAN](https://metacpan.org/)
