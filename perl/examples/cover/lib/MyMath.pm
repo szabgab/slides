@@ -3,7 +3,7 @@ use strict;
 use warnings;
 
 use Exporter qw(import);
-our @EXPORT_OK = qw(add div fibo);
+our @EXPORT_OK = qw(add div fibo abs);
 
 our $VERSION = '0.02';
 
@@ -21,8 +21,12 @@ sub add {
 	return $_[0] + $_[1];
 }
 
-sub div {
-	return $_[0] / $_[1];
+sub abs {
+    my ($num) = @_;
+    if ($num < 0) {
+        return -$num;
+    }
+    return $num;
 }
 
 
@@ -36,6 +40,12 @@ sub fibo {
     }
     return $fib[-1];
 }
+
+sub div {
+	return $_[0] / $_[1];
+}
+
+
 
 1;
 

@@ -462,9 +462,9 @@ Files=11, Tests=2078, 50 wallclock secs
 ## Test coverage report example
 {id: devel-cover-example}
 
-![](examples/cover/Makefile.PL)
 ![](examples/cover/lib/MyMath.pm)
 ![](examples/cover/t/test.t)
+![](examples/cover/Makefile.PL)
 
 
 ## Declare your plan at execution time
