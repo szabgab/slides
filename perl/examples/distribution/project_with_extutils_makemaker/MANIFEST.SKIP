@@ -45,3 +45,6 @@
 \B\._
 # Avoid archives of this distribution
 \bMyTools-[\d\.\_]+
+MYMETA.*
+
+.git
