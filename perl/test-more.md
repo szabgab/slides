@@ -425,11 +425,9 @@ prove t/bail_out.t t/other.t
 ## Exercises
 {id: exercise-test-more}
 
-* Take the ifconfig/ipconfig test script (examples/test-more/skip_with_locale.t) and fix it so that there will be a skip block on the ifconfig part as well.
 * Take a local copy of the Math::RPN module located in (examples/Math-RPN) and add 30 test cases.
-* You can also look for a module on CPAN - maybe one that you are using a lot.  Maybe one that you found a problem with.
+* You can also look for a module on [CPAN](https://metacpan.org/) - maybe one that you are using a lot.  Maybe one that you found a problem with.
 * Download the tar.gz file from CPAN unzip it (don't install the module) and write at least 20 tests.
-
 
 
 ## Test coverage using Devel::Cover
