@@ -1,0 +1,10 @@
+t/bail_out.t ..
+1..3
+ok 1 - first
+not ok 2 - second
+
+#   Failed test 'second'
+#   at t/bail_out.t line 9.
+Bailout called.  Further testing stopped:  no way
+Bail out!  no way
+FAILED--Further testing stopped: no way

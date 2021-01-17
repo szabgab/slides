@@ -403,43 +403,10 @@ any other test script.
 ![](examples/test-more/t/exit.t)
 
 ```
-perl examples/test-more/t/exit.t
+prove t/exit.t t/other.t
 ```
 
-```
-1..3
-ok 1 - first
-not ok 2 - second
-#   Failed test 'second'
-#   at examples/test-perl/t/exit.t line 7.
-# Looks like you planned 3 tests but ran 2.
-# Looks like you failed 1 test of 2 run.
-```
-
-```
-prove examples/test-more/t/exit.t
-```
-
-```
-perl/t/exit.t .. 1/3
-#   Failed test 'second'
-#   at perl/t/exit.t line 7.
-# Looks like you planned 3 tests but ran 2.
-# Looks like you failed 1 test of 2 run.
-perl/t/exit.t .. Dubious, test returned 1 (wstat 256, 0x100)
-Failed 2/3 subtests 
-
-Test Summary Report
--------------------
-perl/t/exit.t (Wstat: 256 Tests: 2 Failed: 1)
-  Failed test:  2
-  Non-zero exit status: 1
-  Parse errors: Bad plan.  You planned 3 tests but ran 2.
-Files=1, Tests=2,  0 wallclock secs
-    ( 0.03 usr  0.01 sys +  0.02 cusr  0.00 csys =  0.06 CPU)
-Result: FAIL
-Failed 1/1 test programs. 1/2 subtests failed.
-```
+![](examples/test-more/t/exit.out)
 
 
 ## Stop all the test scripts
@@ -449,31 +416,11 @@ Failed 1/1 test programs. 1/2 subtests failed.
 ![](examples/test-more/t/bail_out.t)
 
 ```
-perl examples/test-more/t/bail_out.t
+prove t/bail_out.t t/other.t
 ```
 
+![](examples/test-more/t/bail_out.out)
 
-```
-1..3
-ok 1 - first I
-not ok 2 - second II
-#   Failed test 'second II'
-#   at examples/test-more/t/bail_out.t line 8.
-Bail out!  no way
-```
-
-```
-prove examples/test-more/t/bail_out.t
-```
-
-
-```
-perl/t/bail_out.t .. 1/3 Bailout called.  Further testing stopped:  no way
-
-#   Failed test 'second II'
-#   at perl/t/bail_out.t line 8.
-FAILED--Further testing stopped: no way
-```
 
 ## Exercises
 {id: exercise-test-more}
@@ -641,7 +588,7 @@ ok 3 - 2+2
 
 
 ```
-t/planned_subtest.t .. 1/3     
+t/planned_subtest.t .. 1/3
     #   Failed test '-1, -1, -1'
     #   at t/planned_subtest.t line 14.
     #          got: '-2'
@@ -652,7 +599,7 @@ t/planned_subtest.t .. 1/3
 #   at t/planned_subtest.t line 15.
 # Looks like you failed 1 test of 3.
 t/planned_subtest.t .. Dubious, test returned 1 (wstat 256, 0x100)
-Failed 1/3 subtests 
+Failed 1/3 subtests
 
 Test Summary Report
 -------------------
@@ -711,6 +658,7 @@ Implicit call to done_testing inside. skip-able, etc.
 Generate a test coverage report for Math::RPN or the module you
 are testing and look for holes in the coverage. Add more tests.
 A few suggestions:
-Archive::Zip, 
+Archive::Zip,
+
 [top 20](http://blogs.perl.org/users/neilb/2014/08/fix-a-bug-on-cpan-day.html).
 

@@ -3,9 +3,9 @@ use warnings;
 
 use Test::More tests => 3;
 
+my $x = 0;
 
-ok(1, "first I");
-ok(0, "second II") or BAIL_OUT("no way");
-ok(1, "third III");
-
+ok(1, "first");
+ok($x, "second") or BAIL_OUT("no way");
+ok(1, "third");
 
