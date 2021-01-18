@@ -661,7 +661,7 @@ HTTP/1.0 500 INTERNAL SERVER ERROR
 ![](examples/flask/500/app500.py)
 
 
-## Exercise: Flask persistent
+## Exercise: Flask persistent counter
 {id: exercise-flask-persistent-counter}
 
 
@@ -669,12 +669,18 @@ Create a Flask-based application with a persistent counter that even after resta
 the counter will keep increasing.
 
 
-## Exercise: Flask persistent
+## Exercise: Flask persistent multi-counter
 {id: exercise-flask-persistent-multi-counter}
 
 
 Create a Flask-based application with a persistent counter that even after restarting the application
 the counter will keep increasing. For each user have its own counter as identified by the username they type in.
+
+## Solution: Flask persistem counter
+{id: solution-flask-persistent-counter}
+
+![](examples/flask/persistent-counter/app.py)
+![](examples/flask/persistent-counter/test_app.py)
 
 ## Flask Exercises
 {id: flask-exercises}
