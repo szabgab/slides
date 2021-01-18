@@ -13,7 +13,6 @@
 * In reality: avoid using "global".
 
 
-
 ## Generic Object Oriented Programming terms
 {id: generic-oop-terms}
 
@@ -29,7 +28,6 @@
 * Destructor
 
 
-
 ## OOP in Python
 {id: oop-examples-in-python}
 
@@ -40,14 +38,30 @@
 * Nothing is private.
 
 
-
 ## OOP in Python (numbers, strings, lists)
 {id: oop-examples-in-python-numbers}
+
+{aside}
+There are programming languages such as Java and C# that are Object Oriented languages where in order to do anything, even to print to the screen
+you need to understand OOP and implement a class.
+
+Python is Object Oriented in a different way. You can get by without creating your own classes for a very long time in your programming career,
+but you are actually using features of the OOP nature of Python quite from the beginning.
+
+In Python they say "everything is an object" and what they mean is that everyhing, including literal values such as numbers or strings, or variables holding
+a list are instances of some class and that they all the features an instance has. Most importantly they have methods. Methods are just function that are used in
+the "object.method()" notation instead of the "function( parameter )" notation.
+
+Some of these methods change the underlying object (e.g. the append method of lists), some will return a copy of the object when the object is immutable. (e.g. the capitalize method of strings).
+{/aside}
+
+
 ![](examples/oop/examples.py)
 
 
 ## OOP in Python (argparse)
 {id: oop-examples-in-python-argparse}
+
 ![](examples/oop/examples_argparse.py)
 
 
@@ -58,6 +72,7 @@
 {i: __class__}
 {i: __name__}
 {i: dir}
+
 ![](examples/classes/ppl.py)
 ![](examples/classes/ppl.out)
 
@@ -67,12 +82,16 @@ In Python 2.x classes needed to inherit from 'object' in order to become 'new st
 
 ## Import module containing class
 {id: import-module-containing-class}
+
+![](examples/classes/pplx.py)
 ![](examples/classes/import_module.py)
 ![](examples/classes/import_module.out)
 
 
 ## Import class from module
 {id: import-class-from-module}
+
+![](examples/classes/pplx.py)
 ![](examples/classes/import_class.py)
 
 
