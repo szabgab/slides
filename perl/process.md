@@ -13,12 +13,12 @@ To send a signal use `kill SIG, LIST` (process IDs)
 
 For example: `kill 9, $pid;`
 
-![](examples/advanced-perl/signal.pl)
+![](examples/signals/signal.pl)
 
 ## Catch signals
 {id: catch-signals}
 
-![](examples/advanced-perl/catch_signals.pl)
+![](examples/signals/catch_signals.pl)
 
 ```
 $SIG{$name} = sub {};     # do something when signal received
@@ -30,7 +30,7 @@ $SIG{$name} = 'DEFAULT';  # reset to the default behavior
 ## Catch Ctrl-C
 {id: catch-ctrl-c}
 
-![](examples/advanced-perl/catch_ctr_c.pl)
+![](examples/signals/catch_ctr_c.pl)
 
 
 
@@ -38,7 +38,7 @@ $SIG{$name} = 'DEFAULT';  # reset to the default behavior
 {id: exercise-catch-ctrl-c}
 
 
-Take the `examples/advanced-perl/catch_ctr_c.pl`
+Take the `examples/signals/catch_ctr_c.pl`
 and change it so when the user presses Ctrl-C the counting
 stops and the user is asked if she really wants
 to terminate the program. (y/n).
@@ -53,7 +53,7 @@ Make sure you do as little as possible in the actual signal handle.
 ## Solution: Catch ctrl-c and ask
 {id: solution-catch-ctrl-c}
 
-![](examples/advanced-perl/catch_ctr_c_confirm.pl)
+![](examples/signals/catch_ctr_c_confirm.pl)
 
 See what happens if you don't set the SIG handler to IGNORE?
 
