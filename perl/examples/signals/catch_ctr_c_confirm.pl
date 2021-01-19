@@ -1,10 +1,10 @@
-#!/usr/bin/perl 
+#!/usr/bin/env perl
 use strict;
 use warnings;
 
 my $ctrl_c;
 
-$SIG{INT} = sub { 
+$SIG{INT} = sub {
         $ctrl_c = 1;
 };
 
