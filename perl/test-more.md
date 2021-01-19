@@ -543,6 +543,15 @@ prove -l t/planned_subtest.t
 
 Implicit call to done_testing inside. skip-able, etc.
 
+## plan tests, no_testing, done_testing
+{id: plan-tests-no-testing-done-testing}
+
+![](examples/test-plan/lib/Fibonacci.pm)
+
+![](examples/test-plan/t/plan_tests.t)
+![](examples/test-plan/t/no_plan.t)
+![](examples/test-plan/t/done_testing.t)
+
 
 ## skip all
 {id: skip-all}
