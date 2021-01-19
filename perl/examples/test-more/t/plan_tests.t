@@ -1,7 +1,7 @@
 use strict;
 use warnings;
 
-use MyTools;
+use MySimpleCalc qw(sum);
 
 use Test::More;
 

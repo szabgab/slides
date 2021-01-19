@@ -508,7 +508,7 @@ declare the plan on the use Test::More line. We can do that later,
 in the run time of the Perl script.
 {/aside}
 
-![](examples/test-perl/t/plan_tests.t)
+![](examples/test-more/t/plan_tests.t)
 
 ## done_testing
 {id: done-testing}
@@ -519,27 +519,27 @@ I am not a fan of it, but in rare cases it is useful to know that **done_testing
 This way we don't need to have a "plan".
 {/aside}
 
-![](examples/test-perl/t/done_testing.t)
+![](examples/test-more/t/done_testing.t)
 
 
 ## subtest with plan
 {id: subtest-with-plan}
 
-![](examples/test-perl/t/planned_subtest.t)
+![](examples/test-more/t/planned_subtest.t)
 
 ```
 prove -l t/planned_subtest.t
 ```
 
-![](examples/test-perl/t/planned_subtest.out)
+![](examples/test-more/t/planned_subtest.out)
 
 
 ## subtest with implicit done_testing
 {id: subtest}
 {i: done_testing}
 
-![](examples/test-perl/t/subtest.t)
-![](examples/test-perl/t/subtest.out)
+![](examples/test-more/t/subtest.t)
+![](examples/test-more/t/subtest.out)
 
 Implicit call to done_testing inside. skip-able, etc.
 
@@ -548,7 +548,7 @@ Implicit call to done_testing inside. skip-able, etc.
 {id: skip-all}
 {i: skip_all}
 
-![](examples/test-perl/t/skip_all.t)
+![](examples/test-more/t/skip_all.t)
 
 
 ## Exercise: skip test
