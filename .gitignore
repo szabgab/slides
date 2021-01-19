@@ -41,6 +41,8 @@ docker/examples/crontab2/dates.txt
 *.class
 python/out.txt
 
+python/examples/flask/persistent-multi-counter/counter.json
+
 r/.RData
 r/.Rhistory
 

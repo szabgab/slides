@@ -676,11 +676,19 @@ the counter will keep increasing.
 Create a Flask-based application with a persistent counter that even after restarting the application
 the counter will keep increasing. For each user have its own counter as identified by the username they type in.
 
-## Solution: Flask persistem counter
+## Solution: Flask persistent counter
 {id: solution-flask-persistent-counter}
 
 ![](examples/flask/persistent-counter/app.py)
 ![](examples/flask/persistent-counter/test_app.py)
+
+## Solution: Flask persistent multi-counter
+{id: solution-flask-persistent-multi-counter}
+
+![](examples/flask/persistent-multi-counter/app.py)
+![](examples/flask/persistent-multi-counter/test_app.py)
+
+
 
 ## Flask Exercises
 {id: flask-exercises}
