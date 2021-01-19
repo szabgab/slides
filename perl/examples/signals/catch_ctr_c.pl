@@ -2,7 +2,7 @@
 use strict;
 use warnings;
 
-my $ctrl_c;
+my $ctrl_c = 0;
 
 $SIG{INT} = sub {
     if ($ctrl_c) {
