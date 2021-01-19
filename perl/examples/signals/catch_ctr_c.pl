@@ -6,10 +6,11 @@ my $ctrl_c;
 
 $SIG{INT} = sub {
     if ($ctrl_c) {
-        die "Ctrl-C received twice\n";
+        print "\nCtrl-C received twice\n";
+        exit();
     }
     $ctrl_c++;
-    print "Please, press Ctr-C again if you really mean it\n";
+    print "\nPlease, press Ctr-C again if you really mean it\n";
 };
 
 print "Please press Ctrl-C to terminate this program:\n";
