@@ -15,6 +15,10 @@ MyMath - some tools to show test coverage
 
 Short example
 
+=head2 add
+
+Some docs
+
 =cut
 
 sub add {
