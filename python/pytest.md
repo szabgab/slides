@@ -469,9 +469,16 @@ SKIP [1] test_on_condition.py:11: Windows tests
 
 
 ```
-pytest -h
+pytest -rx  - xfail, expected to fail
+pytest -rs  - skipped
+pytest -ra  - all the special cases
 ```
 
+![](examples/pytest/test_r.py)
+
+```
+pytest -h
+```
 
 ## Pytest: skipping tests output in verbose mode
 {id: pytest-skiping-test-output}
@@ -703,21 +710,6 @@ E        +  where ['monkey', 'cat'] = get_list()
 
 
 
-## PyTest compare lists
-{id: pytest-compare-lists}
-![](examples/pytest/test_lists.py)
-
-```
-$ pytest test_lists.py
-
-    def test_long_lists():
->       assert get_list('a') == get_list('b')
-E       AssertionError: assert ['0', '1', '2...'4', '5', ...]
-            == ['0', '1', '2'...'4', '5', ...]
-E         At index 100 diff: 'a' != 'b'
-E         Use -v to get the full diff
-```
-
 
 ## PyTest compare short lists
 {id: pytest-compare-short-lists}
@@ -756,42 +748,35 @@ E         + ('x', 'b', 'y')
 E         ?   ^         ^
 ```
 
+## PyTest compare lists
+{id: pytest-compare-lists}
 
-## PyTest compare dictionaries
+![](examples/pytest/test_lists.py)
+
+```
+$ pytest test_lists.py
+
+    def test_long_lists():
+>       assert get_list('a') == get_list('b')
+E       AssertionError: assert ['0', '1', '2...'4', '5', ...]
+            == ['0', '1', '2'...'4', '5', ...]
+E         At index 100 diff: 'a' != 'b'
+E         Use -v to get the full diff
+```
+
+
+## PyTest compare dictionaries - different values
 {id: pytest-compare-dictionaries}
+
 ![](examples/pytest/test_dictionaries.py)
 
+![](examples/pytest/test_dictionaries.out)
 
-## PyTest compare dictionaries output
-{id: pytest-compare-dictionaries-output}
+## PyTest compare dictionaries  - missing-keys
+{id: pytest-compare-dictionaries-missing-keys}
 
-```
-$ pytest test_dictionaries.py
-
-______________ test_big_dictionary_different_value _______________
-
-    def test_big_dictionary_different_value():
->       assert get_dictionary('a', 'def') == get_dictionary('a', 'abc')
-E       AssertionError: assert {'\t': 9, '\n...x0c': 12, ...}
-          == {'\t': 9, '\n'...x0c': 12, ...}
-E         Omitting 99 identical items, use -v to show
-E         Differing items:
-E         {'a': 'def'} != {'a': 'abc'}
-E         Use -v to get the full diff
-
-_______________ test_big_dictionary_differnt_keys ________________
-
-    def test_big_dictionary_differnt_keys():
->       assert get_dictionary('abc', 1) == get_dictionary('def', 2)
-E       AssertionError: assert {'\t': 9, '\n...x0c': 12, ...}
-           == {'\t': 9, '\n'...x0c': 12, ...}
-E         Omitting 100 identical items, use -v to show
-E         Left contains more items:
-E         {'abc': 1}
-E         Right contains more items:
-E         {'def': 2}
-E         Use -v to get the full diff
-```
+![](examples/pytest/test_dictionaries_missing_keys.py)
+![](examples/pytest/test_dictionaries_missing_keys.out)
 
 
 ## PyTest Fixtures

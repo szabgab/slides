@@ -1,0 +1,33 @@
+============================= test session starts ==============================
+platform linux -- Python 3.8.6, pytest-6.1.2, py-1.9.0, pluggy-0.13.1
+rootdir: /home/gabor/work/slides/python/examples/pytest
+plugins: flake8-1.0.6, dash-1.17.0
+collected 1 item
+
+test_dictionaries.py F                                                   [100%]
+
+=================================== FAILURES ===================================
+_____________________________ test_different_value _____________________________
+
+    def test_different_value():
+        a = {
+            "name" : "Whale",
+            "location": "Ocean",
+            "size": "huge",
+        }
+        b = {
+            "name" : "Whale",
+            "location": "Water",
+            "size": "huge",
+        }
+>       assert a == b
+E       AssertionError: assert {'location': ...size': 'huge'} == {'location': ...size': 'huge'}
+E         Omitting 2 identical items, use -vv to show
+E         Differing items:
+E         {'location': 'Ocean'} != {'location': 'Water'}
+E         Use -v to get the full diff
+
+test_dictionaries.py:12: AssertionError
+=========================== short test summary info ============================
+FAILED test_dictionaries.py::test_different_value - AssertionError: assert {'...
+============================== 1 failed in 0.03s ===============================

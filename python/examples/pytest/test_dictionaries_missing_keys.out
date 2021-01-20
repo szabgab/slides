@@ -1,0 +1,33 @@
+============================= test session starts ==============================
+platform linux -- Python 3.8.6, pytest-6.1.2, py-1.9.0, pluggy-0.13.1
+rootdir: /home/gabor/work/slides/python/examples/pytest
+plugins: flake8-1.0.6, dash-1.17.0
+collected 1 item
+
+test_dictionaries_missing_keys.py F                                      [100%]
+
+=================================== FAILURES ===================================
+_______________________________ test_missing_key _______________________________
+
+    def test_missing_key():
+        a = {
+            "name" : "Whale",
+            "size": "huge",
+        }
+        b = {
+            "name" : "Whale",
+            "location": "Water",
+        }
+>       assert a == b
+E       AssertionError: assert {'name': 'Wha...size': 'huge'} == {'location': ...ame': 'Whale'}
+E         Omitting 1 identical items, use -vv to show
+E         Left contains 1 more item:
+E         {'size': 'huge'}
+E         Right contains 1 more item:
+E         {'location': 'Water'}
+E         Use -v to get the full diff
+
+test_dictionaries_missing_keys.py:10: AssertionError
+=========================== short test summary info ============================
+FAILED test_dictionaries_missing_keys.py::test_missing_key - AssertionError: ...
+============================== 1 failed in 0.03s ===============================

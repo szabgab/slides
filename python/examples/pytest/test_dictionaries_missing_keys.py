@@ -1,14 +1,11 @@
-def test_different_value():
+def test_missing_key():
     a = {
         "name" : "Whale",
-        "location": "Ocean",
         "size": "huge",
     }
     b = {
         "name" : "Whale",
         "location": "Water",
-        "size": "huge",
     }
     assert a == b
-
 
