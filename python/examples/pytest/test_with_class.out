@@ -1,0 +1,37 @@
+============================= test session starts ==============================
+platform linux -- Python 3.8.6, pytest-6.1.2, py-1.9.0, pluggy-0.13.1
+rootdir: /home/gabor/work/slides/python/examples/pytest
+plugins: flake8-1.0.6, dash-1.17.0
+collected 3 items
+
+test_with_class.py .FF                                                   [100%]
+
+=================================== FAILURES ===================================
+______________________________ TestClass.test_two ______________________________
+
+self = <test_with_class.TestClass object at 0x7fac08abdbe0>
+
+    def test_two(self):
+        print("two")
+>       assert False
+E       assert False
+
+test_with_class.py:9: AssertionError
+----------------------------- Captured stdout call -----------------------------
+two
+______________________________ TestBad.test_three ______________________________
+
+self = <test_with_class.TestBad object at 0x7fac08a606a0>
+
+    def test_three(self):
+        print("three")
+>       assert False
+E       assert False
+
+test_with_class.py:15: AssertionError
+----------------------------- Captured stdout call -----------------------------
+three
+=========================== short test summary info ============================
+FAILED test_with_class.py::TestClass::test_two - assert False
+FAILED test_with_class.py::TestBad::test_three - assert False
+========================= 2 failed, 1 passed in 0.03s ==========================

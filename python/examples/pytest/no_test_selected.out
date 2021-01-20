@@ -1,0 +1,7 @@
+============================= test session starts ==============================
+platform linux -- Python 3.8.6, pytest-6.1.2, py-1.9.0, pluggy-0.13.1
+rootdir: /home/gabor/work/slides/python/examples/pytest, configfile: pytest.ini
+plugins: flake8-1.0.6, dash-1.17.0
+collected 5 items / 5 deselected
+
+============================ 5 deselected in 0.00s =============================

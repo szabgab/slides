@@ -608,6 +608,12 @@ Write tests for the `swap` and `average` functions of the `app` module. Can you 
 
 ![](examples/pytest/test_csv.py)
 
+## PyTest using classes
+{id: pytest-using-classes}
+
+![](examples/pytest/test_with_class.py)
+![](examples/pytest/test_with_class.out)
+
 
 ## PyTest failure reports
 {id: pytest-failure-reports}
@@ -787,14 +793,16 @@ E         Use -v to get the full diff
 
 
 
-## PyTest Fixture setup and teardown
+## PyTest Fixture setup and teardown xUnit style
 {id: pytest-fixture-setup-teardown}
 {i: setup_function}
-{i: terdown_function}
+{i: teardown_function}
+{i: setup_module}
+{i: teardown_module}
+
 ![](examples/pytest/test_fixture.py)
 
 See next slide for the output.
-
 
 
 ## PyTest Fixture setup and teardown output
@@ -831,14 +839,17 @@ teardown_module
 Note, the teardown_function is executed even after failed tests.
 
 
-
-
-## PyTest: Class setup and teardown
+## PyTest: Fixture Class setup and teardown
 {id: pytest-class}
+{i: setup_class}
+{i: teardown_class}
+{i: setup_method}
+{i: teardown_method}
+
 ![](examples/pytest/test_class.py)
 
 
-## PyTest: Class setup and teardown output
+## PyTest: Fixture Class setup and teardown output
 {id: pytest-class-output}
 
 ```
@@ -863,21 +874,20 @@ teardown_method called for every method
 teardown_class called once for the class
 ```
 
-
-
-## Pytest Dependency injection
+## What is Dependency injection?
 {id: pytest-dependency-injection}
 
 ```
-def function(thingy):
-   pass
+def serve_bolognese(pasta, sauce):
+    dish = mix(pasta, sauce)
+    return dish
 ```
 
 
 1. Find function.
 1. Check parameters of the function.
-1. Create the appropriate instances.
-1. Call the function with the intsances.
+1. Prepare the appropriate objects.
+1. Call the function passing these objects.
 
 
 
@@ -1090,8 +1100,15 @@ test_mymod_2.py .F
 * test_*  functions
 * ...
 
+## Pytest dry-run - collect-only
+{id: pytest-collect-only}
 
+* Find all the test files, test classes, test functions that will be executed
+* But don't run them
 
+```
+pytest --collect-only
+```
 
 ## PyTest select tests by name
 {id: pytest-select-by-name}
@@ -1102,6 +1119,17 @@ test_mymod_2.py .F
 * -k select by name
 
 ![](examples/pytest/test_by_name.py)
+
+
+```
+pytest --collect-only test_by_name.py
+    test_database_read
+    test_database_write
+    test_database_forget
+    test_ui_access
+    test_ui_forget
+```
+
 
 ```
 pytest --collect-only -k database test_by_name.py
@@ -1133,6 +1161,17 @@ pytest --collect-only -k "forget or read" test_by_name.py
 ```
 
 
+## Pytest use markers
+{id: pytest-use-markers}
+
+![](examples/pytest/test_marker.py)
+![](examples/pytest/test_marker.out)
+
+* We need to declare them in the pytest.ini to avoid the warning
+
+![](examples/pytest/pytest.ini)
+
+
 ## PyTest select tests by marker
 {id: pytest-select-by-marker}
 {i: --collect-only}
@@ -1140,8 +1179,7 @@ pytest --collect-only -k "forget or read" test_by_name.py
 {i: @pytest.mark}
 
 
- Use the @pytest.mark.name decorator to tag the tests.
-
+* Use the @pytest.mark.name decorator to tag the tests.
 
 ![](examples/pytest/test_by_marker.py)
 
@@ -1158,6 +1196,32 @@ pytest --collect-only -m smoke test_by_marker.py
     test_ui_access
     test_database_write
 ```
+
+## No test selected
+{id: no-test-selected}
+
+{aside}
+If you run pytest and it cannot find any tests, for example because you used some
+selector and not test matched it, then Pytest will exit with exit code 5.
+
+This is considered a failure by every tool, including Jenkins and other CI systems.
+
+On the other hand you won't see any failed test reported. After all if no tests are run, then none of them fails.
+This can be confusing.
+{/aside}
+
+```
+$ pytest -k long test_by_marker.py
+
+```
+
+![](examples/pytest/no_test_selected.out)
+
+```
+$ echo $?
+5
+```
+
 
 
 ## PyTest: Test Coverage
@@ -1266,19 +1330,6 @@ pytest -s --json-report --json-report-file=report.json --log-cli-level=INFO
 ```
 
 ![](examples/pytest/cases/test_one.py)
-
-## No test selected
-{id: no-test-selected}
-
-{aside}
-If you run pytest and it cannot find any tests, for example because you used some
-selector and not test matched it, then Pytest will exit with exit code 5.
-
-This is considered a failure by every tool, including Jenkins and other CI systems.
-
-On the other hand you won't see any failed test reported. After all if no tests are run, then none of them fails.
-This can be confusing.
-{/aside}
 
 ## Exercise: Write tests for script combining files
 {id: exercise-write-tests-for-script-combining-file}
