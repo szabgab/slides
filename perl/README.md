@@ -104,4 +104,10 @@ Example topics: automated testing, code review, linting, refactoring, applicatio
 How to deal with extremly large CSV file - read line-by-line.
 Parse::CSV
 
+Example using continue: https://metacpan.org/pod/perlfunc#continue-BLOCK
+Example using given https://perldoc.perl.org/perlsyn#Switch-Statements
+
+
+OpenCV with Perl
+
 
