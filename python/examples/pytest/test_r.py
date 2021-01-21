@@ -14,6 +14,11 @@ def test_with_skip():
 def test_with_skipif():
     assert True
 
+@pytest.mark.skipif(False, reason="Conditional skip")
+def test_with_skipif_but_run():
+    assert True
+
+
 @pytest.mark.xfail(reason = "Expect to fail and failed")
 def test_with_xfail_and_fail():
    assert False
