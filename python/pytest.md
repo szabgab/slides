@@ -431,7 +431,7 @@ test_on_condition.py ss.s
 ```
 
 
-## Pytest: show skipped tests woth -rs
+## Pytest: show skipped tests with -rs
 {id: pytest-show-skipped-tests}
 {i: -rs}
 
