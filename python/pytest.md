@@ -894,7 +894,20 @@ def serve_bolognese(pasta, sauce):
 ## Pytest fixture - tmpdir
 {id: pytest-tmpdir}
 {i: tmpdir}
+
 ![](examples/pytest/test_tmpdir.py)
+
+## Pytest CLI key-value store
+{id: pytest-cli-key-value-store}
+
+![](examples/pytest/key-value-store/store.py)
+![](examples/pytest/key-value-store/test_store.py)
+
+## Pytest testing key-value store - environment variable
+{id: pytest-cli-testing-key-value-store}
+
+![](examples/pytest/key-value-store-testable/store.py)
+![](examples/pytest/key-value-store-testable/test_store.py)
 
 
 ## Pytest capture STDOUT and STDERR with capsys
