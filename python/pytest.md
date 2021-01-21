@@ -927,9 +927,10 @@ Captures everything that is printed to STDOUT and STDERR so we can compare that 
 
 
 
-## Pytest Fixture - home made fixtures
+## Pytest Fixture - home made fixtures - conftest
 {id: pytest-home-made-fixture}
 {i: conftest.py}
+
 ![](examples/pytest/fixtures.py)
 ![](examples/pytest/application.py)
 
@@ -1372,8 +1373,9 @@ Data Files:
 * Then start refactoring the code.
 
 
-## Add extra command line parameters to Pytest
+## Add extra command line parameters to Pytest - conftest
 {id: add-extra-command-line-parameters}
+{i: conftest}
 
 ![](examples/pytest/py1/conftest.py)
 ![](examples/pytest/py1/test_one.py)
