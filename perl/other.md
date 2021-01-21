@@ -157,3 +157,27 @@ the values of these hashes.
 
 ![](examples/other/range.pl)
 
+
+## Benchmark
+{id: benchmark}
+
+* [Benchmark](https://metacpan.org/pod/Benchmark)
+
+![](examples/other/benchmark.pl)
+
+## Bubble sort
+{id: bubble-sort}
+
+* [Bubble sort](https://en.wikipedia.org/wiki/Bubble_sort)
+
+![](examples/other/bubble_sort.pl)
+
+## Insert sort
+{id: insert-sort}
+
+* [Insert sort](https://en.wikipedia.org/wiki/Insertion_sort)
+
+![](examples/other/insert_sort.pl)
+
+
+
