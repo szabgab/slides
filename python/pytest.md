@@ -909,6 +909,12 @@ def serve_bolognese(pasta, sauce):
 ![](examples/pytest/key-value-store-testable/store.py)
 ![](examples/pytest/key-value-store-testable/test_store.py)
 
+## Pytest testing key-value store - environment variable (outside)
+{id: pytest-cli-testing-key-value-store-outside}
+
+![](examples/pytest/key-value-store-outside/store.py)
+![](examples/pytest/key-value-store-outside/test_store.py)
+
 
 ## Pytest capture STDOUT and STDERR with capsys
 {id: pytest-capsys}
