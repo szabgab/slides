@@ -187,4 +187,21 @@ the values of these hashes.
 
 ![](examples/other/merge_sort.pl)
 
+* It can run out of the recursion limit of Perl
+
+## Quicksort
+{id: quick-sort}
+
+* [Quciksort](https://en.wikipedia.org/wiki/Quicksort)
+
+![](examples/other/quick_sort.pl)
+
+* The worst-case is if we happen to select the smallest element every time, then the complexity is O(n^2)
+* It can run out of the recursion limit of Perl
+
+## Timsort
+{id: tim-sort}
+
+* [Timsort](https://en.wikipedia.org/wiki/Timsort)
+* Created for Python by Tim Peters
 
