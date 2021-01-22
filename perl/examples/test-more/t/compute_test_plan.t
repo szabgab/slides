@@ -1,10 +1,14 @@
 use strict;
 use warnings;
 
-use Test::More tests => 2 * 4;
+use Test::More;
 
-for (1..4) {
-    my $value = rand(2);
+my @cases = (1, 2, 7);
+
+plan tests => 2 * scalar @cases;
+
+for my $case (@cases) {
+    my $value = rand($case);
     cmp_ok $value, '>=', 0, 'bigger than 0';
-    cmp_ok $value, '<', 2, 'smaller than 2';
+    cmp_ok $value, '<', $case, "smaller than $case";
 }
