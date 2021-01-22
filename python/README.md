@@ -189,3 +189,8 @@ see the time difference.
 
 https://stribny.name/blog/pytest/
 
+
+Benchmarking, timing:
+timeit library
+time.perf_counter_ns
+
