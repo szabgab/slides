@@ -521,6 +521,15 @@ This way we don't need to have a "plan".
 
 ![](examples/test-more/t/done_testing.t)
 
+## plan tests, no_testing, done_testing
+{id: plan-tests-no-testing-done-testing}
+
+![](examples/test-plan/lib/Fibonacci.pm)
+
+![](examples/test-plan/t/plan_tests.t)
+![](examples/test-plan/t/no_plan.t)
+![](examples/test-plan/t/done_testing.t)
+
 
 ## subtest with plan
 {id: subtest-with-plan}
@@ -542,15 +551,6 @@ prove -l t/planned_subtest.t
 ![](examples/test-more/t/subtest.out)
 
 Implicit call to done_testing inside. skip-able, etc.
-
-## plan tests, no_testing, done_testing
-{id: plan-tests-no-testing-done-testing}
-
-![](examples/test-plan/lib/Fibonacci.pm)
-
-![](examples/test-plan/t/plan_tests.t)
-![](examples/test-plan/t/no_plan.t)
-![](examples/test-plan/t/done_testing.t)
 
 
 ## skip all
