@@ -530,6 +530,11 @@ This way we don't need to have a "plan".
 ![](examples/test-plan/t/no_plan.t)
 ![](examples/test-plan/t/done_testing.t)
 
+## Compute test plan
+{id: compute-test-plan}
+
+![](examples/test-more/t/compute_test_plan.t)
+
 
 ## subtest with plan
 {id: subtest-with-plan}
@@ -567,11 +572,6 @@ Implicit call to done_testing inside. skip-able, etc.
 echo $?
 0
 ```
-
-## Compute test plan
-{id: compute-test-plan}
-
-![](examples/test-more/t/compute_test_plan.t)
 
 
 ## Exercise: skip test
