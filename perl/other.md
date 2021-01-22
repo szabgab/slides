@@ -180,4 +180,11 @@ the values of these hashes.
 ![](examples/other/insert_sort.pl)
 
 
+## Merge sort
+{id: merge-sort}
+
+* [Merge sort](https://en.wikipedia.org/wiki/Merge_sort)
+
+![](examples/other/merge_sort.pl)
+
 
