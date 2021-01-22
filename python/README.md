@@ -45,8 +45,6 @@ use reduce to group by ???
 
 ## Dictionaries - defaultdict
 
-a.setdefault
-
 Defaultdict
 Counting
 Grouping items - list
