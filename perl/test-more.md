@@ -568,6 +568,11 @@ echo $?
 0
 ```
 
+## Compute test plan
+{id: compute-test-plan}
+
+![](examples/test-more/t/compute_test_plan.t)
+
 
 ## Exercise: skip test
 {id: exercise-skip-test}
