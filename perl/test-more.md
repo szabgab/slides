@@ -552,12 +552,21 @@ prove -l t/planned_subtest.t
 
 Implicit call to done_testing inside. skip-able, etc.
 
+## subtest to restrict scope
+{id: subtest-to-restrict-scope}
+
+![](examples/test-more/t/subtest_scope.t)
 
 ## skip all
 {id: skip-all}
 {i: skip_all}
 
 ![](examples/test-more/t/skip_all.t)
+
+```
+echo $?
+0
+```
 
 
 ## Exercise: skip test
