@@ -583,10 +583,11 @@ echo $?
 
 Generate a test coverage report for Math::RPN or the module you
 are testing and look for holes in the coverage. Add more tests.
-A few suggestions:
-Archive::Zip,
+Another suggestion:
 
-[top 20](http://blogs.perl.org/users/neilb/2014/08/fix-a-bug-on-cpan-day.html).
+* [Archive::Zip](https://metacpan.org/pod/Archive::Zip)
+
+* [MetaCPAN](https://metacpan.org/)
 
 ## Test blocks (use subtest instead)
 {id: test-blocks}
