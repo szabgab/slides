@@ -222,6 +222,7 @@ as well.
 ![](examples/test-perl/t/skip.t)
 
 ## Skip on the fly based on earlier tests
+{id: test-builder-skip-based-on-earlier-tests}
 {i: skip}
 
 ![](examples/test-perl/t/skip_on_the_fly.t)
