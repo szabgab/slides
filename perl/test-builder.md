@@ -506,13 +506,12 @@ is_between($lower_limit, $oper1, $real_value, $oper2, $upper_limit, $name)
 ![](examples/test-perl/t/fibonacci_test_die.t)
 
 
-## Perl Best Practices
+## Perl Best Practices - Perl::Critic
 {id: perl-best-practices}
 {i: PBP}
 {i: Perl::Critic}
 
 {aside}
-
 The book Perl Best Practices of Damian Conway provides a reasonable
 set of guidelines on how to write a Perl program. While you might not
 want to follow each guideline as it is written in the book it can be a
@@ -521,49 +520,42 @@ practice of letting everyone write whatever she wants. This is good in
 the general terms and when we are talking about individual projects.
 Within a project (or within a company) it makes a lot of sense to stick
 to some guidelines.
-{/aside}
-
-
-{aside}
 
 So reading the book is good.
 In addition there is a module called Perl::Critic by
 Jeffrey Ryan Thalhammer and currently maintained by Elliot Shank that can
 check each one of the practices Damian suggest. Not only that.
-{/aside}
-
-
-{aside}
 
 There is also a module called Test::Perl::Critic that takes the functions of
 Perl::Critic and turns them into Test::Builder based functions. So you can
 get ok/not ok output from them.
-{/aside}
-
-
-{aside}
 
 Using them in Perl projects can help improving the code base very quickly.
-{/aside}
-
-
-{aside}
 
 You can also configure the module to check each one of the "practices"
 according to the style accepted in your company.
 {/aside}
 
-```
-Perl::Critic
-Test::Perl::Critic
-```
+* [Perl::Critic](https://metacpan.org/pod/Perl::Critic)
+* [Test::Perl::Critic](https://metacpan.org/pod/Test::Perl::Critic)
+
 ![](examples/test-perl/t/99-critic.t)
+
+## Verify code layout
+{id: verify-code-layout}
+{i: Test::Code::TidyAll}
+{i: Code::TidyAll}
+
+* [Test::Code::TidyAll](https://metacpan.org/pod/Test::Code::TidyAll)
+* [Code::TidyAll](https://metacpan.org/pod/Code::TidyAll)
+* [Perl::Tidy](https://metacpan.org/pod/Perl::Tidy)
+
+![](examples/test-perl/t/95-tidyall.t)
 
 
 ## Why number the test files?
 {id: why-number-the-test-files}
 
- 
 By default prove will run the test script in ABC order.
 One common way to make sure the test scripts run in a certain order is to name the files
 
