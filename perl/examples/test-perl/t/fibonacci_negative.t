@@ -1,15 +1,13 @@
 use strict;
 use warnings;
 
-use Test::More tests => 1;
+use Test::More;
 
-use lib 'lib';
-use MyTools;
+use MyTools qw(fibo);
 
-
-{
-    my $result = fibonacci(-1);
+subtest negative => sub {
+    my $result = fibo(-1);
     is($result, 0, 'fibonacci on -1 returns 0');
-}
+};
 
-
+done_testing;

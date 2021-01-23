@@ -1,28 +1,66 @@
-1..6
-ok 1 - fibonacci on 2
-ok 2 - warning when called with -1
-ok 3 - fibonacci on -1 returns 0
-ok 4 - fibonacci on 4
-ok 5 - fibonacci on 6
-not ok 6 - no warnings
+
 #   Failed test 'no warnings'
-#   at /home/gabor/perl/lib/site_perl/5.14.2/Test/NoWarnings.pm line 45.
+#   at /home/gabor/perl5/lib/perl5/Test/Builder.pm line 193.
 # There were 3 warning(s)
-#   Previous test 0 ''
-#   Some other warning 2 at t/fibonacci_with_warnings.t line 36.
-#  at t/fibonacci_with_warnings.t line 36.
-#   main::other_fibo(2) called at t/fibonacci_with_warnings.t line 13
-#
+# 	Previous test 0 ''
+# 	Some other warning 2 at t/fibonacci_with_warnings.t line 34.
+#  at t/fibonacci_with_warnings.t line 34.
+# 	main::other_fibo(2) called at t/fibonacci_with_warnings.t line 11
+# 	main::__ANON__() called at /home/gabor/perl5/lib/perl5/Test/Builder.pm line 374
+# 	eval {...} called at /home/gabor/perl5/lib/perl5/Test/Builder.pm line 374
+# 	Test::Builder::subtest(Test::Builder=HASH(0x55f5e9a55aa0), "positive_2", CODE(0x55f5e9a331c8)) called at /home/gabor/perl5/lib/perl5/Test/More.pm line 809
+# 	Test::More::subtest("positive_2", CODE(0x55f5e9a331c8)) called at t/fibonacci_with_warnings.t line 13
+# 
 # ----------
-#   Previous test 3 'fibonacci on -1 returns 0'
-#   Some other warning 4 at t/fibonacci_with_warnings.t line 36.
-#  at t/fibonacci_with_warnings.t line 36.
-#   main::other_fibo(4) called at t/fibonacci_with_warnings.t line 25
-#
+# 	Previous test 0 ''
+# 	Some other warning 4 at t/fibonacci_with_warnings.t line 34.
+#  at t/fibonacci_with_warnings.t line 34.
+# 	main::other_fibo(4) called at t/fibonacci_with_warnings.t line 23
+# 	main::__ANON__() called at /home/gabor/perl5/lib/perl5/Test/Builder.pm line 374
+# 	eval {...} called at /home/gabor/perl5/lib/perl5/Test/Builder.pm line 374
+# 	Test::Builder::subtest(Test::Builder=HASH(0x55f5e9a55aa0), "positive_4", CODE(0x55f5ea264c40)) called at /home/gabor/perl5/lib/perl5/Test/More.pm line 809
+# 	Test::More::subtest("positive_4", CODE(0x55f5ea264c40)) called at t/fibonacci_with_warnings.t line 25
+# 
 # ----------
-#   Previous test 4 'fibonacci on 4'
-#   Some other warning 6 at t/fibonacci_with_warnings.t line 36.
-#  at t/fibonacci_with_warnings.t line 36.
-#   main::other_fibo(6) called at t/fibonacci_with_warnings.t line 30
-#
-# Looks like you failed 1 test of 6.
+# 	Previous test 0 ''
+# 	Some other warning 6 at t/fibonacci_with_warnings.t line 34.
+#  at t/fibonacci_with_warnings.t line 34.
+# 	main::other_fibo(6) called at t/fibonacci_with_warnings.t line 28
+# 	main::__ANON__() called at /home/gabor/perl5/lib/perl5/Test/Builder.pm line 374
+# 	eval {...} called at /home/gabor/perl5/lib/perl5/Test/Builder.pm line 374
+# 	Test::Builder::subtest(Test::Builder=HASH(0x55f5e9a55aa0), "positive_6", CODE(0x55f5ea264ce8)) called at /home/gabor/perl5/lib/perl5/Test/More.pm line 809
+# 	Test::More::subtest("positive_6", CODE(0x55f5ea264ce8)) called at t/fibonacci_with_warnings.t line 30
+# 
+# Looks like you planned 6 tests but ran 5.
+# Looks like you failed 1 test of 5 run.
+t/fibonacci_with_warnings.t .. 
+1..6
+# Subtest: positive_2
+    ok 1 - fibonacci on 2
+    1..1
+ok 1 - positive_2
+# Subtest: negative
+    ok 1 - warning when called with -1
+    ok 2 - fibonacci on -1 returns 0
+    1..2
+ok 2 - negative
+# Subtest: positive_4
+    ok 1 - fibonacci on 4
+    1..1
+ok 3 - positive_4
+# Subtest: positive_6
+    ok 1 - fibonacci on 6
+    1..1
+ok 4 - positive_6
+not ok 5 - no warnings
+Dubious, test returned 1 (wstat 256, 0x100)
+Failed 2/6 subtests 
+
+Test Summary Report
+-------------------
+t/fibonacci_with_warnings.t (Wstat: 256 Tests: 5 Failed: 1)
+  Failed test:  5
+  Non-zero exit status: 1
+  Parse errors: Bad plan.  You planned 6 tests but ran 5.
+Files=1, Tests=5,  0 wallclock secs ( 0.02 usr  0.00 sys +  0.16 cusr  0.03 csys =  0.21 CPU)
+Result: FAIL

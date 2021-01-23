@@ -231,16 +231,20 @@ as well.
 {id: testing-with-warnings}
 
 {aside}
-
 First we'll check if the fibonacci function works correctly even when called with
 negative numbers.
 {/aside}
+
 ![](examples/test-perl/t/fibonacci_negative.t)
+
+```
+prove -lv t/fibonacci_negative.t
+```
+
 ![](examples/test-perl/t/fibonacci_negative.out)
 
 {aside}
-
-In the above code the tests are passing but there is a warning as well. 
+In the above code the tests are passing but there is a warning as well.
 This is an expected warning so we don't need to worry about it. But then again people
 or code using our module might start to rely on this warning. We would like to make sure
 it won't disappear or change by mistake.
@@ -254,17 +258,19 @@ it won't disappear or change by mistake.
 {i: exception}
 
 {aside}
-
 Test code that should give a warning, and check if that is the correct warning.
-{/aside}
-
-{aside}
 
 So once we have tested our nicely behaving code we can also test our warnings and errors.
 For this we are going to use several additional modules from CPAN. As they all use the
 Test::Builder backend we can use them along with our standard Test::More setup.
 {/aside}
+
 ![](examples/test-perl/t/fibonacci_negative_tested.t)
+
+```
+prove -lv t/fibonacci_negative_tested.t
+```
+
 ![](examples/test-perl/t/fibonacci_negative_tested.out)
 
 
@@ -275,11 +281,11 @@ Test::Builder backend we can use them along with our standard Test::More setup.
 [Test::Warn](https://metacpan.org/pod/Test::Warn) can be used to test for both warnings and carp calls.
 It can be used to check if there was a warning or if there was not.
 
-* warning_is
-* warnings_are
-* warning_like
-* warnings_like
-* use  warning_is {code} undef   to check there was no warning
+* `warning_is`
+* `warnings_are`
+* `warning_like`
+* `warnings_like`
+* `warning_is {code} undef`  - to check there was no warning
 * ...
 
 
@@ -294,7 +300,9 @@ that in other places there are no warnings.
 
 ![](examples/test-perl/t/fibonacci_test_warn.t)
 
-Output:
+```
+prove -lv t/fibonacci_test_warn.t
+```
 
 ![](examples/test-perl/t/fibonacci_test_warn.out)
 
@@ -302,32 +310,39 @@ Output:
 ## No warnings at all using Test::NoWarnings
 {id: testing-for-no-warnings-at-all}
 {i: Test::NoWarnings}
+
+* [Test::NoWarnings](https://metacpan.org/pod/Test::NoWarnings)
+
 ![](examples/test-perl/t/fibonacci_no_warnings.t)
 
-Output:
+```
+prove -lv t/fibonacci_no_warnings.t
+```
 
 ![](examples/test-perl/t/fibonacci_no_warnings.out)
 
 
 ## Test with warnings Test::NoWarnings
 {id: test-with-warnings}
+
 ![](examples/test-perl/t/fibonacci_with_warnings.t)
 
-Output:
+```
+prove -lv t/fibonacci_with_warnings.t
+```
 
 ![](examples/test-perl/t/fibonacci_with_warnings.out)
 
 {aside}
-
 It shows that there were warnings generated during the tests. It even tells us at which test.
 The biggest problem with this module is that it does not work together with done_testing() and so it requires that you know how many test you are going to run.
 {/aside}
 
 
-
 ## Test::NoWarnings
 {id: test-nowarnings}
 {i: Test::NoWarnings}
+
 ![](examples/test-perl/t/test_nowarnings.t)
 
 Output:
@@ -340,10 +355,10 @@ Output:
 {i: Test::FailWarnings}
 
 {aside}
-
 Test::NoWarnings does not [play well](http://www.dagolden.com/index.php/1905/alternative-to-testnowarnings/)
 with **done_testing**, but  [Test::FailWarnings](https://metacpan.org/pod/Test::FailWarnings) does.
 {/aside}
+
 ![](examples/test-perl/t/test_failwarnings.t)
 
 Output:
