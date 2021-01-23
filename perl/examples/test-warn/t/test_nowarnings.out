@@ -1,19 +1,33 @@
+
+#   Failed test 'no warnings'
+#   at /home/gabor/perl5/lib/perl5/Test/Builder.pm line 193.
+# There were 2 warning(s)
+# 	Previous test 1 'first'
+# 	Use of uninitialized value $y in addition (+) at /home/gabor/work/slides/perl/examples/test-warn/lib/MyTools.pm line 31.
+#  at /home/gabor/work/slides/perl/examples/test-warn/lib/MyTools.pm line 31.
+# 	MyTools::add(2) called at t/test_nowarnings.t line 12
+# 
+# ----------
+# 	Previous test 2 'second'
+# 	Use of uninitialized value $y in addition (+) at /home/gabor/work/slides/perl/examples/test-warn/lib/MyTools.pm line 31.
+#  at /home/gabor/work/slides/perl/examples/test-warn/lib/MyTools.pm line 31.
+# 	MyTools::add(3) called at t/test_nowarnings.t line 13
+# 
+# Looks like you failed 1 test of 5.
+t/test_nowarnings.t .. 
 1..5
 ok 1 - first
 ok 2 - second
 ok 3 - third
 ok 4 - fourth
 not ok 5 - no warnings
-#   Failed test 'no warnings'
-#   at /home/gabor/perl/lib/site_perl/5.14.2/Test/NoWarnings.pm line 45.
-# There were 2 warning(s)
-#   Previous test 1 'first'
-#   Argument "a" isn't numeric in addition (+) at t/test_nowarnings.t line 11.
-#  at t/test_nowarnings.t line 11.
-#
-# ----------
-#   Previous test 2 'second'
-#   Argument "b" isn't numeric in addition (+) at t/test_nowarnings.t line 12.
-#  at t/test_nowarnings.t line 12.
-#
-# Looks like you failed 1 test of 5.
+Dubious, test returned 1 (wstat 256, 0x100)
+Failed 1/5 subtests 
+
+Test Summary Report
+-------------------
+t/test_nowarnings.t (Wstat: 256 Tests: 5 Failed: 1)
+  Failed test:  5
+  Non-zero exit status: 1
+Files=1, Tests=5,  1 wallclock secs ( 0.01 usr  0.00 sys +  0.18 cusr  0.00 csys =  0.19 CPU)
+Result: FAIL
