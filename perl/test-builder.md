@@ -210,16 +210,21 @@ ok 1
 
 ## Skip on the fly
 {id: test-builder-skip-on-the-fly}
+{i: skip}
 
 {aside}
-
 There are cases when you cannot easily decide up front
 which tests you'll need to skip. In such cases you can rely on
 the skip method of Test::Builder that you can access from Test::More
 as well.
 {/aside}
+
 ![](examples/test-perl/t/skip.t)
 
+## Skip on the fly based on earlier tests
+{i: skip}
+
+![](examples/test-perl/t/skip_on_the_fly.t)
 
 ## Test with warnings
 {id: testing-with-warnings}
