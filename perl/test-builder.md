@@ -408,7 +408,7 @@ The biggest problem with this module is that it does not work together with done
 
 [Test::Exception](https://metacpan.org/pod/Test::Exception).
 
-![](examples/test-perl/t/test_exception.t)
+![](examples/test-warn/t/test_exception.t)
 
 ```
 1..2

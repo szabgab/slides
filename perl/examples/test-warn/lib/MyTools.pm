@@ -1,7 +1,7 @@
 package MyTools;
 use strict;
 use warnings;
-use DateTime;
+use Scalar::Util qw(looks_like_number);
 
 our $VERSION = '0.01';
 
@@ -11,13 +11,14 @@ our @EXPORT_OK = qw(fibo add);
 sub fibo {
     my ($n) = @_;
 
-    die "Need to get a number\n" if not defined $n;
+    die "Need to get a parameter\n" if not defined $n;
+    die "Need to get a number\n" if not looks_like_number($n);
     if ($n <= 0) {
         warn "Given number must be > 0";
         return;
     }
-    #warn "Some other warning @_";
     return 1 if $n == 1 or $n == 2;
+    #warn "Some other warning @_";
 
     my @fib = (1, 1);
     for (3..$n) {
