@@ -345,7 +345,9 @@ The biggest problem with this module is that it does not work together with done
 
 ![](examples/test-perl/t/test_nowarnings.t)
 
-Output:
+```
+prove -v t/test_nowarnings.t
+```
 
 ![](examples/test-perl/t/test_nowarnings.out)
 
@@ -361,7 +363,9 @@ with **done_testing**, but  [Test::FailWarnings](https://metacpan.org/pod/Test::
 
 ![](examples/test-perl/t/test_failwarnings.t)
 
-Output:
+```
+prove -v t/test_failwarnings.t
+```
 
 ![](examples/test-perl/t/test_failwarnings.out)
 
