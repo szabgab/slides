@@ -273,6 +273,15 @@ prove -lv t/fibonacci_negative_tested.t
 
 ![](examples/test-warn/t/fibonacci_negative_tested.out)
 
+## Testing for warnings - different warning
+{id: testing-for-warnings-different-warning}
+
+* What if we change the text of the warning?
+
+## Testing for warnings - missing warning
+{id: testing-for-warnings-missing-warning}
+
+* What if we comment out the warning?
 
 ## Test::Warn
 {id: test-warn}
@@ -321,17 +330,14 @@ prove -lv t/fibonacci_no_warnings.t
 
 ![](examples/test-warn/t/fibonacci_no_warnings.out)
 
-
-## Test with warnings Test::NoWarnings
+## Test with unexpected warnings Test::NoWarnings
 {id: test-with-warnings}
 
-![](examples/test-warn/t/fibonacci_with_warnings.t)
+* Edit the lib/MyTools.pm enable the row with "Some other warning"
 
 ```
-prove -lv t/fibonacci_with_warnings.t
+prove -lv t/fibonacci_no_warnings.t
 ```
-
-![](examples/test-warn/t/fibonacci_with_warnings.out)
 
 {aside}
 It shows that there were warnings generated during the tests. It even tells us at which test.

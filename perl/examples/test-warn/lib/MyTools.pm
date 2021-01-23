@@ -23,6 +23,7 @@ sub _fibonacci {
         warn "Given number must be > 0";
         return;
     }
+    #warn "Some other warning @_";
     return 1 if $n == 1;
     if ($n ==2 ) {
         return (1, 1);
