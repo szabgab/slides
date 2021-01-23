@@ -360,7 +360,7 @@ prove -lv t/fibonacci_test_warn.t
 ![](examples/test-warn/t/fibonacci_test_warn.out)
 
 
-## No warnings at all using Test::NoWarnings
+## No other warnings using Test::NoWarnings
 {id: testing-for-no-warnings-at-all}
 {i: Test::NoWarnings}
 
@@ -374,7 +374,21 @@ prove -lv t/fibonacci_no_warnings.t
 
 ![](examples/test-warn/t/fibonacci_no_warnings.out)
 
-## Test with unexpected warnings Test::NoWarnings
+## No other warnings Test::FailWarnings
+{id: testing-for-no-other-warnings-with-failwarnings}
+{i: Test::FailWarnings}
+
+* [Test::FailWarnings](https://metacpan.org/pod/Test::FailWarnings)
+
+![](examples/test-warn/t/fibonacci_failwarnings.t)
+
+```
+prove -lv t/fibonacci_failwarnings.t
+```
+
+![](examples/test-warn/t/fibonacci_failwarnings.out)
+
+## unexpected warnings Test::NoWarnings, Test::FailWarnings
 {id: test-with-warnings}
 
 * Edit the lib/MyTools.pm enable the row with "Some other warning"

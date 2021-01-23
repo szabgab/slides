@@ -1,8 +1,8 @@
 use strict;
 use warnings;
 
-use Test::More tests => 4 + 1;
-use Test::NoWarnings;
+use Test::More;
+use Test::FailWarnings;
 use Test::Warn;
 
 use MyTools qw(fibo);
@@ -29,3 +29,4 @@ subtest positive_6 => sub {
     is($result, 8, 'fibonacci on 6');
 };
 
+done_testing;
