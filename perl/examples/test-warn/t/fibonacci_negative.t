@@ -7,7 +7,7 @@ use MyTools qw(fibo);
 
 subtest negative => sub {
     my $result = fibo(-1);
-    is($result, 0, 'fibonacci on -1 returns 0');
+    is($result, undef, 'fibonacci on -1 returns undef');
 };
 
 done_testing;
