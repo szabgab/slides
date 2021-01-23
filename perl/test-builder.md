@@ -344,6 +344,16 @@ It shows that there were warnings generated during the tests. It even tells us a
 The biggest problem with this module is that it does not work together with done_testing() and so it requires that you know how many test you are going to run.
 {/aside}
 
+## Code emitting warnings
+{id: code-emitting-warnings}
+
+![](examples/test-warn/t/test_add.t)
+
+```
+prove -lv t/test_add.t
+```
+
+![](examples/test-warn/t/test_add.out)
 
 ## Test::NoWarnings
 {id: test-nowarnings}

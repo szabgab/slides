@@ -2,11 +2,10 @@ use strict;
 use warnings;
 
 use Test::More;
-use Test::NoWarnings;
 
 use MyTools qw(add);
 
-plan tests => 4 + 1;
+plan tests => 4;
 
 is(add(1, 2), 3,   'first');
 is(add(2, 'a'), 2, 'second');

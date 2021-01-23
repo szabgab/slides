@@ -6,7 +6,7 @@ use DateTime;
 our $VERSION = '0.01';
 
 use Exporter qw(import);
-our @EXPORT_OK = qw(fibo);
+our @EXPORT_OK = qw(fibo add);
 
 sub fibo {
     my ($n) = @_;
@@ -24,6 +24,11 @@ sub fibo {
         push @fib, $fib[-1]+$fib[-2];
     }
     return $fib[-1];
+}
+
+sub add {
+    my ($x, $y) = @_;
+    return $x + $y;
 }
 
 1;

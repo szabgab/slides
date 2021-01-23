@@ -1,0 +1,12 @@
+Argument "a" isn't numeric in addition (+) at /home/gabor/work/slides/perl/examples/test-warn/lib/MyTools.pm line 31.
+Argument "b" isn't numeric in addition (+) at /home/gabor/work/slides/perl/examples/test-warn/lib/MyTools.pm line 31.
+t/test_add.t .. 
+1..4
+ok 1 - first
+ok 2 - second
+ok 3 - third
+ok 4 - fourth
+ok
+All tests successful.
+Files=1, Tests=4,  0 wallclock secs ( 0.02 usr  0.01 sys +  0.18 cusr  0.01 csys =  0.22 CPU)
+Result: PASS
