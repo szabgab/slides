@@ -69,6 +69,8 @@ Manipulating functions by functions (add logging before and after the function c
 
 ## Testing
 
+- Test::Class
+- How to set up fixtures? 
 
 
 ## OOP

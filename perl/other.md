@@ -205,3 +205,13 @@ the values of these hashes.
 * [Timsort](https://en.wikipedia.org/wiki/Timsort)
 * Created for Python by Tim Peters
 
+## Traverse directory tree
+{id: traverse-directory-tree}
+
+![](examples/other/dirwalk.pl)
+
+## Traverse directory tree with call back
+{id: traverse-directory-tree-with-call-back}
+
+![](examples/other/dirwalk_calback.pl)
+
