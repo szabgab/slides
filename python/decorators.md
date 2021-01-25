@@ -9,6 +9,9 @@ Before we learn about decorators let's remember that we can assign function name
 to other names and then use the new name:
 {/aside}
 
+![](examples/decorators/function_assignment.py)
+![](examples/decorators/function_assignment.out)
+
 ![](examples/decorators/assign_to_sum.py)
 ![](examples/decorators/assign_print.py)
 
