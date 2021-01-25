@@ -215,3 +215,13 @@ the values of these hashes.
 
 ![](examples/other/dirwalk_calback.pl)
 
+## Linear search in unorderd array
+{id: linear-search-in-unordered-array}
+
+![](examples/other/linear_search.pl)
+
+## Binary search in sorted array
+{id: binary-search-in-sorted-array}
+
+![](examples/other/binary_search.pl)
+
