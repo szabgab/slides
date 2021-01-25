@@ -823,4 +823,15 @@ python common_error_in_function.py 42
 
 ![](examples/other/common_error_in_function.py)
 
+## Insert element in sorted list using bisect
+{id: instert-element-in-sorted-list-using-bisect}
+{i: bisect}
+
+![](examples/other/find_insert_location_bisect.py)
+
+## Insert element in sorted list using insort
+{id: instert-element-in-sorted-list-using-insort}
+{i: insort}
+
+![](examples/other/find_insert_location_insort.py)
 
