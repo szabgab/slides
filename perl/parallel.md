@@ -321,7 +321,7 @@ Elapsed time 9.05
 ## Forked HTTP requests
 {id: forked-process-http-requests}
 
-![](examples/forks/ForkedProcessCSV.pm)
+![](examples/forks/ForkedHTTP.pm)
 
 ## Exercise: Process Excel files
 {id: exercise-forked-process-excel-files}
