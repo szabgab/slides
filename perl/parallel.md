@@ -294,7 +294,7 @@ Elapsed time 9.05
 ```
 
 
-## Use Parallel::Forkmanager
+## Use Parallel::ForkManager
 {id: use-parallel-forkmanager}
 
 * [Parallel::ForkManager](https://metacpan.org/pod/Parallel::ForkManager)
