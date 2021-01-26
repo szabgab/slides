@@ -194,3 +194,15 @@ Benchmarking, timing:
 timeit library
 time.perf_counter_ns
 
+
+## Other
+
+https://github.com/pypa/pipfile  a replacement for requirements.txt
+
+## Algorithms
+
+The bisect module for binary search to find where to insert an element
+
+
+
+
