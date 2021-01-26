@@ -7,7 +7,9 @@ main();
 
 sub main {
     my ($workers) = @ARGV;
+
     die "Usage: $0 WORKERS\n" if not defined $workers;
+    $| = 1; # disable output buffering on STDOUT
 
     my %process;
     for my $worker_id (1 .. $workers) {
@@ -33,6 +35,7 @@ sub main {
             print "Child process $pid worker id $worker_id finished with exit code $exit_code\n";
             next;
         }
+        print '.';
         sleep 0.1;
         last if not %process;
     }

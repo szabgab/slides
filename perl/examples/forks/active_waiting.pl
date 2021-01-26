@@ -8,6 +8,7 @@ main();
 
 sub main {
     my ($sleep, $exit) = @ARGV;
+
     die "Usage: $0 SLEEP EXIT\n" if not defined $exit;
 
     my $pid = fork();

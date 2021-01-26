@@ -174,23 +174,55 @@ htop
 * H
 * F4  to filter
 
-## Active waiting with waitpid
+## Active non-blocking waiting with waitpid
 {id: active-waiting}
 {i: waitpid}
 {i: POSIX}
 {i: WNOHANG}
 
-* [waipid](https://metacpan.org/pod/distribution/perl/pod/perlfunc.pod#waitpid-PID,FLAGS)
+{aside}
+Up till now we were usig the `wait` function to wait for a child process to terminate. It is a blocking call that will wait till any of the child processes terminates.
+
+There are other options as well. Using the `waitpid` function you could wait for a specific child to terminate using its PID or you can have a non-blocking way to check
+if there is any child-processes that has already terminated. The non-blocking wait mode allows the parent process to do other things while waiting for the child processes
+to do their job.
+{/aside}
+
+* [waipid](https://metacpan.org/pod/distribution/perl/pod/perlfunc.pod#wait)
 
 ![](examples/forks/active_waiting.pl)
 
-## Active waiting with waitpid - multiple forks
+```
+perl active_waiting.pl 0 0
+perl active_waiting.pl 1 0
+perl active_waiting.pl 1 1
+```
+
+## Non-blocking waiting with waitpid - multiple forks
 {id: active-waiting-multiple-forks}
+
+{aside}
+In this example we create multiple child processes and wait for them with a non-blocking waitpid.
+Each process will sleep for a random number of seconds imitating the randomness of the time it takes each one of them
+to finish doing their job. They also generate a random exit code to imitate that some of them might have failed.
+{/aside}
 
 ![](examples/forks/active_waiting_loop.pl)
 
-## Active waiting, rerun on failure
+```
+perl active_waiting_loop.pl 1
+perl active_waiting_loop.pl 5
+```
+## Non-blocking waiting, rerun on failure
 {id: active-waiting-rerun-on-failure}
+
+{aside}
+In this example we have a list of tasks we need to do. The user can supply the number of child processes that will deal with the tasks.
+Each child process generates a random number to wait to imitatet the work time and a random number as the exit code.
+
+The parent monitors the child processes. If one of them exits with a non-zero error code the parent re-runs that job with another
+child process until all the tasks are done.
+{/aside}
 
 ![](examples/forks/active_waiting_tasks.pl)
 ![](examples/forks/active_waiting_tasks.out)
