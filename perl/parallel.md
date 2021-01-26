@@ -340,9 +340,15 @@ Elapsed time 9.05
 
 * [MCE](https://metacpan.org/pod/MCE)
 
-libmce-perl
+* On Debian/Ubuntu it is called `libmce-perl`
 
 ![](examples/forks/use_mce.pl)
+
+```
+$ perl use_mce.pl 5
+```
+
+![](examples/forks/use_mce.out)
 
 ## MCE - map
 {id: mce-map}
@@ -364,6 +370,7 @@ By default it creates 4 child processes, but you can control that and a few othe
 {id: mce-map-with-init}
 
 ![](examples/forks/use_mce_map_init.pl)
+![](examples/forks/use_mce_map_init.out)
 
 ## other modules
 {id: other-modules-for-forking}
