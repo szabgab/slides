@@ -96,6 +96,13 @@ Add a page linking to the slides and linking to the GitHub page to download the 
 
 Show an example where forking makes the process slower.
 
+Parallel::Forkmanager - can it reuse the same child processes for multiple tasks?
+What if we have many task and fewer processes?
+Show PFM with some sleeping in the child process and show that if we have
+many tasks it still only runs N in parallel.
+Show when is the run_on_finish called, immediately after on finishes (and before the replacement is executed)
+or only at the end.
+Create a queue to be processed.
 
 ## Threading
 
