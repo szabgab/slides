@@ -174,6 +174,27 @@ htop
 * H
 * F4  to filter
 
+## Active waiting with waitpid
+{id: active-waiting}
+{i: waitpid}
+{i: POSIX}
+{i: WNOHANG}
+
+* [waipid](https://metacpan.org/pod/distribution/perl/pod/perlfunc.pod#waitpid-PID,FLAGS)
+
+![](examples/forks/active_waiting.pl)
+
+## Active waiting with waitpid - multiple forks
+{id: active-waiting-multiple-forks}
+
+![](examples/forks/active_waiting_loop.pl)
+
+## Active waiting, rerun on failure
+{id: active-waiting-rerun-on-failure}
+
+![](examples/forks/active_waiting_tasks.pl)
+![](examples/forks/active_waiting_tasks.out)
+
 
 ## Functions to be speed up
 {id: functions-to-be-speed-up}
@@ -297,26 +318,5 @@ By default it creates 4 child processes, but you can control that and a few othe
 * [Parallel::Forker](https://metacpan.org/pod/Parallel::Forker) another module that could be used.
 * [Proc::Queue](https://metacpan.org/pod/Proc::Queue) has not been updated since 2008
 
-
-## Active waiting with waitpid
-{id: active-waiting}
-{i: waitpid}
-{i: POSIX}
-{i: WNOHANG}
-
-* [waipid](https://metacpan.org/pod/distribution/perl/pod/perlfunc.pod#waitpid-PID,FLAGS)
-
-![](examples/forks/active_waiting.pl)
-
-## Active waiting with waitpid - multiple forks
-{id: active-waiting-multiple-forks}
-
-![](examples/forks/active_waiting_loop.pl)
-
-## Active waiting, rerun on failure
-{id: active-waiting-rerun-on-failure}
-
-![](examples/forks/active_waiting_tasks.pl)
-![](examples/forks/active_waiting_tasks.out)
 
 
