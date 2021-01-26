@@ -273,6 +273,27 @@ We use the number of files instead of accepting the list of files on the command
 
 ![](examples/forks/process_csv.pl)
 
+```
+$ perl process_csv.pl 0 1
+Elapsed time 1.51
+
+$ perl process_csv.pl 0 4
+Elapsed time 5.92
+
+$ perl process_csv.pl 2 4
+Elapsed time 4.02
+
+$ perl process_csv.pl 4 4
+Elapsed time 4.01
+
+$ perl process_csv.pl 0 10
+Elapsed time 15.18
+
+$ perl process_csv.pl 4 10
+Elapsed time 9.05
+```
+
+
 ## Use Parallel::Forkmanager
 {id: use-parallel-forkmanager}
 
