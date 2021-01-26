@@ -15,8 +15,8 @@ sub main {
     die 'Failed to fork' if not defined $pid;
 
     if ($pid == 0) {
-        sleep $sleep;
         print "Child process PID $$\n";
+        sleep $sleep;
         exit $exit;
     }
 
