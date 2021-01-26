@@ -80,6 +80,16 @@ Manipulating functions by functions (add logging before and after the function c
 
 AUTOLOAD -> https://perlhacks.com/articles/symbolapproxsub/
 
+## Algorithms
+
+Linear search
+Binary search
+Linked Lists
+Binary tree
+Tree
+Hashing
+
+
 ## Parallel processing, forking
 
 Add a page linking to the slides and linking to the GitHub page to download the source code.

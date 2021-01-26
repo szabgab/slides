@@ -9,7 +9,7 @@ sub search {
     my $left = 0;
     my $right = $#items;
     while ($left < $right) {
-        my $current = int($left + ($right-$left)/2);
+        my $current = $left + int(($right-$left)/2);
         if ($items[$current] lt $name) {
             $left = $current+1;
             next;
@@ -26,3 +26,5 @@ sub search {
 print search('Mars', @planets), "\n";
 print search('Pluto', @planets), "\n";
 
+# If there are duplicate matching elements then depending on the length of the array
+# this might return the index of any of those items.
