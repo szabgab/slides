@@ -1,6 +1,12 @@
 # Perl References
 {id: perl-references}
 
+## Uses cases for references
+{id: use-cases-for-references}
+
+* Creating multi-dimensional and other deep data structures (arrays of arrays, hashes of arrays, etc.)
+* Passing complex data structures to functions (e.g. arrays, hashes)
+
 
 ## References
 {id: references}
@@ -9,18 +15,15 @@
     \$x    # reference to scalar
     \@y    # reference to array
     \%z    # reference to hash
-    \&amp;f    # reference to function
+    \&f    # reference to function
 ```
 
 ## Passing values to a function
 {id: simple-function}
 
-
 Let's see a simple example of passing values to a function.
 
-
 ![](examples/references/add.pl)
-
 
 
 ## Add two (or more) arrays
@@ -32,11 +35,7 @@ Let's extend it so it will be able to take two vectors (arrays) and add
 them pair-wise.  (2, 3) + (7, 8, 5) =  (9, 11, 5)
 ```
 
-```
-my @first  = (2, 3);
-my @second = (7, 8, 5);
-add(@first, @second);
-```
+![](examples/references/fail_to_add_arrays.pl)
 
 ```
 The problem is, @_ in the add function will get (2, 3, 7, 8, 5);
@@ -57,7 +56,6 @@ already has the tools you need?)
 To solve the problem we will use references.
 Prefixing the array with a back-slash \ creates
 a reference to it.
-
 
 
 ```

@@ -70,7 +70,9 @@ Manipulating functions by functions (add logging before and after the function c
 ## Testing
 
 - Test::Class
-- How to set up fixtures? 
+- How to set up fixtures?
+
+BDD https://metacpan.org/release/Test-BDD-Cucumber
 
 
 ## OOP
@@ -110,7 +112,15 @@ https://metacpan.org/pod/Thread::Queue
 
 ## Async
 
-AnyEvent, IO::Async, and Mojo
+https://www.reddit.com/r/perl/comments/l5blnf/async_programming/
+
+AnyEvent, IO::Async
+Future::AsyncAwait
+POE
+Mojo
+Mojo::IOLoop  https://docs.mojolicious.org/Mojo/IOLoop
+https://docs.mojolicious.org/Mojolicious/Guides/Cookbook#CONCEPTS
+
 
 
 ## Topics
