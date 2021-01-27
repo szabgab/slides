@@ -2,9 +2,9 @@
 use strict;
 use warnings;
 
-my @first  = (2, 3);
-my @second = (7, 8, 5);
-add(@first, @second);
+my @left  = (2, 3);
+my @right = (7, 8, 5);
+add(@left, @right);
 
 sub add {
     my ($first, $second) = @_;
@@ -14,4 +14,14 @@ sub add {
 
 # 2
 # 3
+
+addx(@left, @right);
+sub addx {
+    my (@first, @second) = @_;
+    print "First: @first\n";
+    print "Second: @second\n";
+}
+
+# First: 2 3 7 8 5
+# Second:
 

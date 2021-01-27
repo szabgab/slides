@@ -139,4 +139,9 @@ Example using given https://perldoc.perl.org/perlsyn#Switch-Statements
 
 OpenCV with Perl
 
+## References in Perl
+
+* references to function (lookup table, passing function as a parameter)
+* no need to pass scalar as a parameter to Getopt::Long
+* Use scalar ref to open a string as if it was STDIN or STDOUT (or a file)
 

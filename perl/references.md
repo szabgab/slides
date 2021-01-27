@@ -37,15 +37,14 @@ them pair-wise.  (2, 3) + (7, 8, 5) =  (9, 11, 5)
 
 ![](examples/references/fail_to_add_arrays.pl)
 
-```
+{aside}
 The problem is, @_ in the add function will get (2, 3, 7, 8, 5);
 We cannot know where does the first array end and where the second begins.
 
 (I am sure one can come up with a complex way of prefixing the real data
 by meta information that describes the data, but why work so hard if Perl
 already has the tools you need?)
-```
-
+{/aside}
 
 ## Array References
 {id: array-references}
@@ -70,54 +69,40 @@ print $names_ref;      # ARRAY(0x703dcf2)
 @$names_ref
 ```
 
-
 but it will be probably more readable to write
-
-
 
 ```
 @{$names_ref}
 ```
 
-
-
 or even
-
-
-
 
 ```
 @{ $names_ref }
 ```
 
-
-
 Once we know all this we can pass a reference to a function,
 within the function we can dereference the array and we
 get back the original array.
 
-
 ![](examples/references/array_references.pl)
-
 
 [Passing two arrays to a function](https://perlmaven.com/passing-two-arrays-to-a-function)
 
-
 ## Add two arrays
 {id: add-two-arrays}
-![](examples/references/add_arrays.pl)
 
+![](examples/references/add_arrays.pl)
 
 ## Array References
 {id: array-references-2}
 
-
+{aside}
 Of course if the arrays are big, copying them is waste of time
 and memory. Let's see how can we access the individual elements of
 an array when using a reference to that array. Then we won't have
 to copy them within the function.
-
-
+{/aside}
 
 ```
 my $names_ref = \@names;
@@ -149,13 +134,12 @@ the arrays
 {id: scope-of-variables}
 {i: scope}
 
-
-Let's see an example where we create an array and a reference 
+{aside}
+Let's see an example where we create an array and a reference
 to it in some arbitrary {} scope. The array is defined within
 the scope while the variable holding the reference is defined
 outside the scope.
-
-
+{/aside}
 
 ```
 my $names_ref;
@@ -164,56 +148,43 @@ my $names_ref;
     $names_ref = \@names;
 }
 print "$names_ref->[0]\n"; # Foo
-
 ```
 
-```
+{aside}
 After the closing } @names went out of scope already
 but $names_ref still lets us access the values.
 
 As $names_ref still holds the reference to the location
 of the original array in the memory perl keeps the content
 of the array intact.
-```
-
+{/aside}
 
 ## Reference counting
 {id: reference-counting}
 {i: reference counting}
 
-
+{aside}
 As you already know perl automatically allocates memory
 when you add a new element to an array or hash. It also
 frees up memory (although only internally) when you
 remove the element from the array or hash.
 
-
-
-
 Similarly when you create an array or a hash, perl sets up a
 counter (called reference counter) and sets it to 1.
-When the array or hash goes out of scope the counter is reduced 
-by 1. If the counter reaches 0 perl frees the memory allocated 
+When the array or hash goes out of scope the counter is reduced
+by 1. If the counter reaches 0 perl frees the memory allocated
 to that array. Without references this is always the case.
-
-
-
 
 When you create a reference to an array and store
 it in a variable perl increases the reference counter of
-the original array by 1 (to 2). Now if the array goes 
+the original array by 1 (to 2). Now if the array goes
 out of scope and the ref count is reduced by 1 it still does
 not reach 0 so perl does not free up the location of the array.
-
-
-
 
 Only if the reference stops referring to this memory location
 will the counter reach 0 thereby freeing up the memory allocated
 to the array.
-
-
-
+{/aside}
 
 ## More Reference Counting
 {id: more-reference-counting}
@@ -227,23 +198,18 @@ my $x_ref     = $names_ref;        # cnt = 4
 $other_ref = undef;            # cnt = 3
 ```
 
-
-
 ## Process arrays without copying even the return values
 {id: array-ref-no-copy-return}
 
-
+{aside}
 In the previous solution we passed the references to the function
 but returned a full array, thereby copying all the values. If we 
 care about memory and speed we might eliminate this copying by
 returning the reference to the resulting array.
 
-
-
-
 The cost is a small (?) inconvenience as now we have to dereference
 the resulting array reference in the calling code.
-
+{/aside}
 
 ![](examples/references/add_arrays_nocopy_return.pl)
 
@@ -253,11 +219,8 @@ the resulting array reference in the calling code.
 {i: \%hash}
 {i: HASH}
 
-
 Similarly to the Array references one can create references
 to Hashes as well.
-
-
 
 ```
 my $phones_ref = \%phones;
@@ -271,15 +234,12 @@ $phones{Foo}    ${ $phones_ref }{Foo}
 keys %phones    keys %{ $phones_ref }
 ```
 
-
 ## Print out the content of a reference
 {id: content-of-reference}
-
 
 Using the print function to print out the content of an Array
 was quite OK. Printing a Hash was a disaster. The same happens
 once you dereference a reference to an array or hash.
-
 
 ![](examples/references/print_content.pl)
 
@@ -289,65 +249,46 @@ once you dereference a reference to an array or hash.
 {i: Data::Dumper}
 
 
-But once we have those references we have a better tool to print 
-out their content.
-
+But once we have those references we have a better tool to print out their content.
 
 ![](examples/references/dump_content.pl)
 ![](examples/references/dump_content.out)
 
-
-Actually you can use the Dumper on the references themself without 
-putting them in scalar variables.
-
-
+Actually you can use the Dumper on the references themself without putting them in scalar variables.
 
 ```
 print Dumper \@names, \%phones;
 ```
 
-
 ## Change values in a reference
 {id: change-value-in-reference}
-
 
 If you create a copy of an array then the two arrays are separated.
 Change to any of the arrays is not reflected in the other array.
 
-
 ![](examples/references/copy_array.pl)
-
 
 When you create a reference to an array, then the referenced array
 has the same memory location, hence change in either one of them
 is  a change in both of them.
 
-
 ![](examples/references/change_reference.pl)
 
-
-That means you can pass to a function an array reference, 
-then from within the function it is easy to change the content of 
+That means you can pass to a function an array reference,
+then from within the function it is easy to change the content of
 the original array.
-
-
-
 
 ## Exercise: double numbers
 {id: exercise-double-numbers}
 
-
 Create a function that gets an array reference and
 multiplies each value in it by 2;
-
-
 
 ```
 my @numbers = (2, 4, 7);
 multiply_by_two(\@numbers);
 print "@numbers\n";   # 4 8 14
 ```
-
 
 ## Exercise: Add many arrays
 {id: exercise-add-many-arrays}
@@ -357,13 +298,8 @@ Pick up the examples/references/add_arrays.pl script that
 can add two arrays and change it to accept any number of
 array references.
 
-
-
-
 Extra exercise: add parameters that will control to stop
 the addition at the shortest array or the longest array.
-
-
 
 ```
 my @a = (2, 3);
@@ -377,8 +313,7 @@ add('longest', \@a, \@b);  # returns (6, 8, 6)
 {id: exercise-compare-hashes}
 
 
-Create a function that given two hashes, returns a 
-report showing missing keys or keys with different values.
+Create a function that given two hashes, returns a report showing missing keys or keys with different values.
 
 
 ![](examples/references/compare_hashes_skeleton.pl)
@@ -387,21 +322,25 @@ report showing missing keys or keys with different values.
 
 ## Solution: Double numbers
 {id: solution-double-numbers}
+
 ![](examples/references/double_numbers.pl)
 
 
 ## Solution: Add many arrays
 {id: add-many-arrays-recursive}
+
 ![](examples/references/add_many_arrays_recursive.pl)
 
 
 ## Solution: Add many arrays
 {id: add-many-arrays}
+
 ![](examples/references/add_many_arrays.pl)
 
 
 ## Solution: Function to compare two hashes
 {id: compare-hashes}
+
 ![](examples/references/compare_hashes.pl)
 
 
@@ -411,12 +350,7 @@ report showing missing keys or keys with different values.
 {i: []}
 
 
-Occasionally we are not interested in the array @names, 
-just in a reference to it. We can use the scoping trick
-we saw earlier to force the array out of scope 
-immediately once it was used.
-
-
+Occasionally we are not interested in the array @names, just in a reference to it. We can use the scoping trick we saw earlier to force the array out of scope immediately once it was used.
 
 ```
 my $names_ref;
@@ -452,29 +386,23 @@ clue will help us remember that the above creates an array reference.
 ## Array of Arrays
 {id: array-of-arrays}
 {i: AoA}
+
 ![](examples/references/array_of_arrays.pl)
 
-
-That already looks like a two dimensional array. 
-It is not, but it can be used like one.
-
-
-
+That already looks like a two dimensional array. It is not, but it can be used like one.
 
 
 ## Array of Arrays (AoA)
 {id: anonymous-array-of-arrays}
 
-
-Instead of naming the internal array references we can use 
-them within the creation of the larger array.
-
+Instead of naming the internal array references we can use them within the creation of the larger array.
 
 ![](examples/references/array_of_arrays_notemp.pl)
 
 
 ## Many dimensional arrays
 {id: many-dimensional-arrays}
+
 ![](examples/references/many_dimensional_array.pl)
 ![](examples/references/many_dimensional_array.out)
 
@@ -484,11 +412,13 @@ them within the creation of the larger array.
 {i: anonymous hash}
 {i: {}}
 {i: HoH}
+
 ![](examples/references/anonymous_hash.pl)
 
 
 ## Hash of Hashes (HoH)
 {id: hash-of-hashes}
+
 ![](examples/references/hash_of_hashes.pl)
 ![](examples/references/hash_of_hashes.out)
 
