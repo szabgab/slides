@@ -158,17 +158,20 @@ You probably will need to create a subroutine to be memoized.
 
 ## Solution: Logger decorator
 {id: solution-logger-decorator}
+
 ![](examples/advanced/logger_decor.py)
 
 
 ## Solution: Logger decorator (testing)
 {id: solution-logger-decor-testing}
+
 ![](examples/advanced/varargs_decor.py)
 ![](examples/advanced/varargs_decor.out)
 
 
 ## Solution memoize decorator
 {id: solution-memoize}
+
 ![](examples/memoize/fibonacci.py)
 ![](examples/memoize/memoize_nonlocal.py)
 ![](examples/memoize/memoize_attribute.py)
@@ -196,3 +199,9 @@ real   0m0.034s
 user   0m0.019s
 sys    0m0.014s
 ```
+## Set name of decorated fuction
+{id: set-name-of-decorated-function}
+
+![](examples/memoize/deco.py)
+![](examples/memoize/deco.out)
+
