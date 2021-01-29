@@ -18,40 +18,13 @@
     \&f    # reference to function
 ```
 
-## Passing values to a function
-{id: simple-function}
-
-Let's see a simple example of passing values to a function.
-
-![](examples/references/add.pl)
-
-
-## Add two (or more) arrays
-{id: add-two-arrays-problem}
-{i: @_}
-
-```
-Let's extend it so it will be able to take two vectors (arrays) and add
-them pair-wise.  (2, 3) + (7, 8, 5) =  (9, 11, 5)
-```
-
-![](examples/references/fail_to_add_arrays.pl)
-
-{aside}
-The problem is, @_ in the add function will get (2, 3, 7, 8, 5);
-We cannot know where does the first array end and where the second begins.
-
-(I am sure one can come up with a complex way of prefixing the real data
-by meta information that describes the data, but why work so hard if Perl
-already has the tools you need?)
-{/aside}
 
 ## Array References
 {id: array-references}
 {i: \@array}
 {i: ARRAY}
 
-
+{aside}
 To solve the problem we will use references.
 Prefixing the array with a back-slash \ creates
 a reference to it.
@@ -84,15 +57,90 @@ or even
 Once we know all this we can pass a reference to a function,
 within the function we can dereference the array and we
 get back the original array.
+{/aside}
 
 ![](examples/references/array_references.pl)
 
-[Passing two arrays to a function](https://perlmaven.com/passing-two-arrays-to-a-function)
+## Hash References
+{id: hash-references}
+{i: \%hash}
+{i: HASH}
+
+{aside}
+Similarly to the Array references one can create references
+to Hashes as well.
+
+```
+my $phones_ref = \%phones;
+```
+
+```
+Hash            Hash Reference
+%phones         %{ $phones_ref }
+$phones{Foo}    ${ $phones_ref }{Foo}
+                $phones_ref->{Foo}
+keys %phones    keys %{ $phones_ref }
+```
+
+Using the print function to print out the content of an Array
+was quite OK. Printing a Hash was a disaster. The same happens
+once you dereference a reference to an array or hash.
+{/aside}
+
+![](examples/references/hash_reference.pl)
+
+## Scalar references
+{id: scalar-references}
+{i: scalar references}
+
+{aside}
+Similar to array references and hash references one can also create references to scalars.
+{/aside}
+
+![](examples/references/scalar_reference.pl)
+
+## Subroutine references
+{id: subroutine-references}
+{i: subroutine references}
+{i: function references}
+
+![](examples/references/sub_ref.pl)
+
+## Passing values to a function
+{id: simple-function}
+
+Let's see a simple example of passing values to a function.
+
+![](examples/references/add.pl)
+
+
+## Add two (or more) arrays
+{id: add-two-arrays-problem}
+{i: @_}
+
+```
+Let's extend it so it will be able to take two vectors (arrays) and add
+them pair-wise.  (2, 3) + (7, 8, 5) =  (9, 11, 5)
+```
+
+![](examples/references/fail_to_add_arrays.pl)
+
+{aside}
+The problem is, @_ in the add function will get (2, 3, 7, 8, 5);
+We cannot know where does the first array end and where the second begins.
+
+(I am sure one can come up with a complex way of prefixing the real data
+by meta information that describes the data, but why work so hard if Perl
+already has the tools you need?)
+{/aside}
+
 
 ## Add two arrays
 {id: add-two-arrays}
 
 ![](examples/references/add_arrays.pl)
+
+[Passing two arrays to a function](https://perlmaven.com/passing-two-arrays-to-a-function)
 
 ## Array References
 {id: array-references-2}
@@ -141,14 +189,8 @@ the scope while the variable holding the reference is defined
 outside the scope.
 {/aside}
 
-```
-my $names_ref;
-{
-    my @names = qw(Foo Bar);
-    $names_ref = \@names;
-}
-print "$names_ref->[0]\n"; # Foo
-```
+![](examples/references/scope_of_variables.pl)
+![](examples/references/reference_counting.pl)
 
 {aside}
 After the closing } @names went out of scope already
@@ -212,36 +254,6 @@ the resulting array reference in the calling code.
 {/aside}
 
 ![](examples/references/add_arrays_nocopy_return.pl)
-
-
-## Hash References
-{id: hash-references}
-{i: \%hash}
-{i: HASH}
-
-Similarly to the Array references one can create references
-to Hashes as well.
-
-```
-my $phones_ref = \%phones;
-```
-
-```
-Hash            Hash Reference
-%phones         %{ $phones_ref }
-$phones{Foo}    ${ $phones_ref }{Foo}
-                $phones_ref->{Foo}
-keys %phones    keys %{ $phones_ref }
-```
-
-## Print out the content of a reference
-{id: content-of-reference}
-
-Using the print function to print out the content of an Array
-was quite OK. Printing a Hash was a disaster. The same happens
-once you dereference a reference to an array or hash.
-
-![](examples/references/print_content.pl)
 
 
 ## Debugging (pretty printing)
@@ -530,21 +542,11 @@ Output:
 [What is autovivification?](https://perlmaven.com/autovivification)
 
 
-## Scalar references
-{id: scalar-references}
-{i: scalar references}
+
+## Scalar references in Getopt::Long
+{id: scalar-references-in-getopt-long}
 {i: Getopt::Long}
 
-
-Similar to array references and hash references one can also
-create references to scalars.
-
-
-
-```
-my $name = "Foo";
-my $name_ref = \$name;
-```
 
 
 It is used less often than the other references but one of the prominent
@@ -561,13 +563,6 @@ GetOptions(
         "debug"  => \$debug,
 ) or die;
 ```
-
-
-## Subroutine references
-{id: subroutine-references}
-{i: subroutine references}
-{i: function references}
-![](examples/references/sub_ref.pl)
 
 
 ## Anonymous subroutines

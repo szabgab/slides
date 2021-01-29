@@ -10,3 +10,7 @@ print "$names_ref\n";         # ARRAY(0x703dcf2)
 print "@$names_ref\n";        # Foo Bar Baz
 print "@{ $names_ref }\n";    # Foo Bar Baz
 
+
+print "$names[0]\n";          # Foo
+print "$names_ref->[0]\n";    # Foo
+
