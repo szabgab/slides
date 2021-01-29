@@ -2,7 +2,7 @@
 x = 23
 print(x)
 
-x = "42"
+x = "Python"
 print(x)
 
 x = ["a", "b"]
