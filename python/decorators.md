@@ -202,6 +202,6 @@ sys    0m0.014s
 ## Set name of decorated fuction
 {id: set-name-of-decorated-function}
 
-![](examples/memoize/deco.py)
-![](examples/memoize/deco.out)
+![](examples/decorators/deco.py)
+![](examples/decorators/deco.out)
 
