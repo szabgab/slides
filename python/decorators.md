@@ -87,34 +87,39 @@ f = some_decorator(f)
 
 ## A recursive Fibonacci
 {id: fibo}
-![](examples/memoize/fibo.py)
+
+![](examples/decorators/fibo.py)
 
 
 ## trace fibo
 {id: trace-fibo}
-![](examples/memoize/fibotron.py)
-![](examples/memoize/fibotron.out)
+
+![](examples/decorators/fibotron.py)
+![](examples/decorators/fibotron.out)
 
 
 ## tron decorator
 {id: decor-tron}
-![](examples/memoize/decor.py)
+
+![](examples/decorators/decor.py)
 
 
 ## Decorate with direct call
 {id: trace-fibo-direct}
-![](examples/memoize/fibotron_direct.py)
+
+![](examples/decorators/fibotron_direct.py)
 
 
 ## Decorate with parameter
 {id: trace-fibo-with-parameter}
-![](examples/memoize/fibotron_param.py)
-![](examples/memoize/fibotron_param.out)
+
+![](examples/decorators/fibotron_param.py)
+![](examples/decorators/fibotron_param.out)
 
 
 ## Decorator accepting parameter
 {id: decor-tron-with-parameter}
-![](examples/memoize/decor_param.py)
+![](examples/decorators/decor_param.py)
 
 
 ## Decorate function with any signature
@@ -123,13 +128,13 @@ f = some_decorator(f)
 * How can we decorate a function that is flexible on the number of arguments?
 * Accept `*args` and `**kwargs` and pass them on.
 
-![](examples/memoize/any_func.py)
+![](examples/decorators/any_func.py)
 
 ## Decorate function with any signature - implementation
 {id: decorate-function-with-any-signature-implementation}
 
-![](examples/memoize/decor_any.py)
-![](examples/memoize/any_func.out)
+![](examples/decorators/decor_any.py)
+![](examples/decorators/any_func.out)
 
 
 ## Exercise: Logger decorator
@@ -139,17 +144,17 @@ f = some_decorator(f)
 * Add time measurement to each call to see how long each function took.
 
 
-## Exercise: memoize decorator
-{id: exercise-memoize}
+## Exercise: decorators decorator
+{id: exercise-decorators}
 
 
 Write a function that gets a functions as attribute and returns a new functions while memoizing (caching) the input/output pairs.
 Then write a unit test that checks it.
-You probably will need to create a subroutine to be memoized.
+You probably will need to create a subroutine to be decoratorsd.
 
 
 * Write tests for the fibonacci functions.
-* Implement the memoize decorator for a function with a single parameter.
+* Implement the decorators decorator for a function with a single parameter.
 * Apply the decorator.
 * Run the tests again.
 * Check the speed differences.
@@ -169,12 +174,12 @@ You probably will need to create a subroutine to be memoized.
 ![](examples/advanced/varargs_decor.out)
 
 
-## Solution memoize decorator
-{id: solution-memoize}
+## Solution decorators decorator
+{id: solution-decorators}
 
-![](examples/memoize/fibonacci.py)
-![](examples/memoize/memoize_nonlocal.py)
-![](examples/memoize/memoize_attribute.py)
+![](examples/decorators/fibonacci.py)
+![](examples/decorators/memoize_nonlocal.py)
+![](examples/decorators/memoize_attribute.py)
 
 Before
 
