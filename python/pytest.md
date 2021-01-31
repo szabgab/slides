@@ -1626,4 +1626,9 @@ E       ZeroDivisionError: division by zero
 ![](examples/pytest/expected_exception_no_exception.out)
 
 
+## Pytest forking code
+{id: pytest-forking-code}
+
+![](examples/pytest/fork/app.py)
+![](examples/pytest/fork/test_app.py)
 
