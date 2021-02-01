@@ -127,14 +127,9 @@ $line =~ s/(.)(.)/$2$1/g;    # "ba1c32edf"
 ## Greedy quantifiers
 {id: greedy-quantifiers}
 
-```
-/xa*/ on xaaab
-/xa*/ on xabxaab
-/a*/  on xabxaab
-```
+![](examples/regex-perl/greedy.pl)
 
 {aside}
-
 /xa*/ on xaaab      xaaa  because it is greedy
 /xa*/ on xabxaab    xa at the beginning even though the other  one is longer
 /a*/  on xabxaab    the empty string at the beginning of the string
