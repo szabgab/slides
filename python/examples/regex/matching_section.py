@@ -1,6 +1,6 @@
 import re
 
-text = "This is <a string> with some sections <marked> with special characters"
+text = "This is <a string> with some <sections> marks."
 
 m = re.search(r'<.*>', text)
 if m:
