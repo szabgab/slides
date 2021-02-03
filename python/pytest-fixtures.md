@@ -155,6 +155,31 @@ pytest -qs
 
 * We can't add fixtures to test_functions as decorators (as I was the case in NoseTest), we need to use dependency injection.
 
+## Pytest Fixture providing value
+{id: pytest-fixture-providing-value}
+
+![](examples/pytest/fixture-with-value/test_app.py)
+![](examples/pytest/fixture-with-value/application.py)
+
+```
+$ pytest -sq
+```
+
+![](examples/pytest/fixture-with-value/test_app.out)
+
+## Pytest Fixture providing value with teardown
+{id: pytest-fixture-providing-value-with-teardown}
+
+![](examples/pytest/fixture-with-teardown/test_app.py)
+![](examples/pytest/fixture-with-teardown/application.py)
+
+```
+$ pytest -sq
+```
+
+![](examples/pytest/fixture-with-teardown/test_app.out)
+
+
 ## Pytest create fixture with file(s) - app and test
 {id: pytest-create-fixture-with-files-app-and-test}
 
@@ -171,33 +196,6 @@ pytest -qs
 {id: pytest-create-fixture-with-files-fixture}
 ![](examples/pytest/configfile/test_app_fixture.py)
 
-
-## Pytest Fixture - home made fixtures
-{id: pytest-home-made-fixture}
-
-![](examples/pytest/fixtures.py)
-![](examples/pytest/application.py)
-
-```
-$ pytest -s -q fixtures.py
-
-getapp starts
-__init__ of App
-Working on add_user(Bar)
-.shutdown of App cleaning up database
-getapp ends
-
-getapp starts
-__init__ of App
-Working on add_user(Foo)
-.shutdown of App cleaning up database
-getapp ends
-```
-
-## PyTest compare short lists - output
-{id: pytest-compare-short-lists-output}
-
-![](examples/pytest/test_read_ini.py)
 
 ## Pytest with Docker - application
 {id: pytest-with-docker-application}

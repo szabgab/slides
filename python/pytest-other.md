@@ -227,4 +227,9 @@ E       ZeroDivisionError: division by zero
 ![](examples/pytest/expected_exception_no_exception.out)
 
 
+## PyTest compare short lists - output
+{id: pytest-compare-short-lists-output}
+
+![](examples/pytest/test_read_ini.py)
+
 

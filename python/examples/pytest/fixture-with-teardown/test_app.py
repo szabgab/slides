@@ -14,9 +14,9 @@ def getapp():
 
 def test_add_user_foo(getapp):
     getapp.add_user("Foo")
-    assert True
+    assert getapp.get_user() == 'Foo'
 
 def test_add_user_bar(getapp):
     getapp.add_user("Bar")
-    assert True
+    assert getapp.get_user() == 'Bar'
 

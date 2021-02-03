@@ -1,0 +1,13 @@
+getapp starts
+__init__ of App
+Working on add_user(Foo)
+shutdown of App cleaning up database
+getapp ends
+
+
+getapp starts
+__init__ of App
+Working on add_user(Bar)
+shutdown of App cleaning up database
+getapp ends
+
