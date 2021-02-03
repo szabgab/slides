@@ -206,11 +206,15 @@ getapp ends
 ![](examples/pytest/docker/test_app.py)
 
 
-## Pytest with Docker  - test 
+## Pytest with Docker  - test
 {id: pytest-with-docker-test}
 
 ![](examples/pytest/docker/Dockerfile)
 ![](examples/pytest/docker/.dockerignore)
-![](examples/pytest/docker/test_with_docker.py
+![](examples/pytest/docker/test_with_docker.py)
 
+## Pytest with Docker  - improved
+{id: pytest-with-docker-improved}
+
+![](examples/pytest/docker/test_with_docker_improved.py)
 
