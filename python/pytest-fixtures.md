@@ -180,4 +180,16 @@ getapp ends
 * We can't add fixtures to test_functions as decorators (as I think was the case in NoseTest), we need to use dependency injection.
 
 
+## Pytest and tempdir
+{id: pytest-tempdir}
+
+![](examples/pytest/mycfg.py)
+![](examples/pytest/a.cfg)
+![](examples/pytest/test_mycfg.py)
+
+## PyTest compare short lists - output
+{id: pytest-compare-short-lists-output}
+
+![](examples/pytest/test_read_ini.py)
+
 

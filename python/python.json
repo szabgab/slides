@@ -74,6 +74,7 @@
         "pytest-assert.md",
         "pytest-fixtures.md",
         "pytest-mocking.md",
+        "pytest-options.md",
         "pytest-other.md",
         "selenium.md",
         "advanced-functions.md",
