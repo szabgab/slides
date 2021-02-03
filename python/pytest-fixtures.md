@@ -116,6 +116,39 @@ Captures everything that is printed to STDOUT and STDERR so we can compare that 
 pytest test_greet.py
 ```
 
+## Pytest Fixture - autouse fixtures
+{id: pytest-autouse-fixture}
+{i: yield}
+
+* Similar to `setup_function`, `teardown_function`, `setup_module`, `teardown_module`
+
+![](examples/pytest/autouse_fixtures.py)
+![](examples/pytest/autouse_fixtures.out)
+
+## Share fixtures among test files: conftest.py
+{id: pytest-conftest}
+{i: conftest.py}
+
+![](examples/pytest/autouse/conftest.py)
+![](examples/pytest/autouse/test_blue.py)
+![](examples/pytest/autouse/test_green.py)
+
+```
+pytest -qs
+```
+![](examples/pytest/autouse/pytest.out)
+
+
+## Manual fixtures (dependency injection)
+{id: pytest-manual-fixtures}
+
+![](examples/pytest/manual_fixtures.py)
+![](examples/pytest/manual_fixtures.out)
+
+* We can't add fixtures to test_functions as decorators (as I was the case in NoseTest), we need to use dependency injection.
+
+
+
 ## Pytest Fixture - home made fixtures
 {id: pytest-home-made-fixture}
 
@@ -138,16 +171,6 @@ Working on add_user(Foo)
 getapp ends
 ```
 
-
-## More fixtures
-{id: pytest-more-fixtures}
-
-![](examples/pytest/more_fixtures.py)
-![](examples/pytest/more_fixtures.out)
-
-* We can't add fixtures to test_functions as decorators (as I think was the case in NoseTest), we need to use dependency injection.
-
-
 ## Pytest and tempdir
 {id: pytest-tempdir}
 
@@ -159,9 +182,5 @@ getapp ends
 {id: pytest-compare-short-lists-output}
 
 ![](examples/pytest/test_read_ini.py)
-
-## conftest
-{id: pytest-conftest}
-{i: conftest.py}
 
 

@@ -1,0 +1,21 @@
+Fix module setup
+
+  Fix function setup
+    Test Blue one
+  Fix function teardown
+
+  Fix function setup
+    Test Blue two
+  Fix function teardown
+
+Fix module teardown
+
+
+Fix module setup
+
+  Fix function setup
+    Test Green Three
+  Fix function teardown
+
+Fix module teardown
+
