@@ -71,6 +71,7 @@
         "testing.md",
         "unittest.md",
         "pytest.md",
+        "pytest-other.md",
         "selenium.md",
         "advanced-functions.md",
         "function-arguments.md",
