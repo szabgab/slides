@@ -78,6 +78,14 @@ def serve_bolognese(pasta, sauce):
 
 ![](examples/pytest/test_tmpdir.py)
 
+## Pytest and tempdir
+{id: pytest-tempdir}
+
+![](examples/pytest/mycfg.py)
+![](examples/pytest/a.cfg)
+![](examples/pytest/test_mycfg.py)
+
+
 ## Pytest CLI key-value store
 {id: pytest-cli-key-value-store}
 
@@ -147,6 +155,21 @@ pytest -qs
 
 * We can't add fixtures to test_functions as decorators (as I was the case in NoseTest), we need to use dependency injection.
 
+## Pytest create fixture with file(s) - app and test
+{id: pytest-create-fixture-with-files-app-and-test}
+
+
+![](examples/pytest/configfile/myapp.py)
+![](examples/pytest/configfile/test_app.py)
+
+## Pytest create fixture with file(s) - helper function
+{id: pytest-create-fixture-with-files-helper-function}
+
+![](examples/pytest/configfile/test_app_function.py)
+
+## Pytest create fixture with file(s) - fixture
+{id: pytest-create-fixture-with-files-fixture}
+![](examples/pytest/configfile/test_app_fixture.py)
 
 
 ## Pytest Fixture - home made fixtures
@@ -170,13 +193,6 @@ Working on add_user(Foo)
 .shutdown of App cleaning up database
 getapp ends
 ```
-
-## Pytest and tempdir
-{id: pytest-tempdir}
-
-![](examples/pytest/mycfg.py)
-![](examples/pytest/a.cfg)
-![](examples/pytest/test_mycfg.py)
 
 ## PyTest compare short lists - output
 {id: pytest-compare-short-lists-output}
