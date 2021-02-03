@@ -28,29 +28,12 @@ See next slide for the output.
 test_fixture.py .F.
 ```
 
+```
+$ pytest -sq test_fixture.py
 
 ```
-$ pytest test_fixture.py -s
 
-setup_module
-
-  setup_function
-    test_one
-    test_one after
-  teardown_function
-
-  setup_function
-    test_two
-  teardown_function
-
-  setup_function
-    test_three
-    test_three after
-  teardown_function
-
-teardown_module
-```
-
+![](examples/pytest/test_fixture.out)
 
 Note, the teardown_function is executed even after failed tests.
 
@@ -69,26 +52,10 @@ Note, the teardown_function is executed even after failed tests.
 {id: pytest-class-output}
 
 ```
-$ pytest -s test_class.py
-
-setup_class called once for the class
-
-setup_method called for every method
-one
-one after
-teardown_method called for every method
-
-setup_method called for every method
-two
-teardown_method called for every method
-
-setup_method called for every method
-three
-three after
-teardown_method called for every method
-
-teardown_class called once for the class
+$ pytest -sq test_class.py
 ```
+
+![](examples/pytest/test_class.out)
 
 ## What is Dependency injection?
 {id: pytest-dependency-injection}
@@ -99,12 +66,10 @@ def serve_bolognese(pasta, sauce):
     return dish
 ```
 
-
 1. Find function.
 1. Check parameters of the function.
 1. Prepare the appropriate objects.
 1. Call the function passing these objects.
-
 
 
 ## Pytest fixture - tmpdir
@@ -132,14 +97,18 @@ def serve_bolognese(pasta, sauce):
 ![](examples/pytest/key-value-store-outside/test_store.py)
 
 
-## Pytest capture STDOUT and STDERR with capsys
-{id: pytest-capsys}
+## Application that prints to STDOUT and STDERR
+{id: pytest-application-stdout-stderr}
 
-
-Captures everything that is printed to STDOUT and STDERR so we can compare that to the expected output and error.
 
 ![](examples/pytest/greet.py)
 ![](examples/pytest/use_greet.py)
+![](examples/pytest/use_greet.out)
+
+## Pytest capture STDOUT and STDERR with capsys
+{id: pytest-capsys}
+
+Captures everything that is printed to STDOUT and STDERR so we can compare that to the expected output and error.
 
 ![](examples/pytest/test_greet.py)
 
@@ -147,10 +116,8 @@ Captures everything that is printed to STDOUT and STDERR so we can compare that 
 pytest test_greet.py
 ```
 
-
-## Pytest Fixture - home made fixtures - conftest
+## Pytest Fixture - home made fixtures
 {id: pytest-home-made-fixture}
-{i: conftest.py}
 
 ![](examples/pytest/fixtures.py)
 ![](examples/pytest/application.py)
@@ -174,6 +141,7 @@ getapp ends
 
 ## More fixtures
 {id: pytest-more-fixtures}
+
 ![](examples/pytest/more_fixtures.py)
 ![](examples/pytest/more_fixtures.out)
 
@@ -191,5 +159,9 @@ getapp ends
 {id: pytest-compare-short-lists-output}
 
 ![](examples/pytest/test_read_ini.py)
+
+## conftest
+{id: pytest-conftest}
+{i: conftest.py}
 
 

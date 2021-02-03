@@ -7,23 +7,23 @@ class TestClass():
 
 
     def setup_method(self):
-        print("setup_method called for every method")
+        print("  setup_method called for every method")
 
     def teardown_method(self):
-        print("teardown_method called for every method")
+        print("  teardown_method called for every method")
 
 
     def test_one(self):
-        print("one")
+        print("    one")
         assert True
-        print("one after")
+        print("    one after")
 
     def test_two(self):
-        print("two")
+        print("    two")
         assert False
-        print("two after")
+        print("    two after")
 
     def test_three(self):
-        print("three")
+        print("    three")
         assert True
-        print("three after")
+        print("    three after")

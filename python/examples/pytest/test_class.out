@@ -1,0 +1,14 @@
+setup_class called once for the class
+  setup_method called for every method
+    one
+    one after
+  teardown_method called for every method
+  setup_method called for every method
+    two
+  teardown_method called for every method
+  setup_method called for every method
+    three
+    three after
+  teardown_method called for every method
+teardown_class called once for the class
+
