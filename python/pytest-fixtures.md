@@ -199,4 +199,18 @@ getapp ends
 
 ![](examples/pytest/test_read_ini.py)
 
+## Pytest with Docker - application
+{id: pytest-with-docker-application}
+
+![](examples/pytest/docker/app.py)
+![](examples/pytest/docker/test_app.py)
+
+
+## Pytest with Docker  - test 
+{id: pytest-with-docker-test}
+
+![](examples/pytest/docker/Dockerfile)
+![](examples/pytest/docker/.dockerignore)
+![](examples/pytest/docker/test_with_docker.py
+
 
