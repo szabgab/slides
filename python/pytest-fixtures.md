@@ -185,6 +185,12 @@ $ pytest -sq
 
 
 ![](examples/pytest/configfile/myapp.py)
+![](examples/pytest/configfile/config.json)
+![](examples/pytest/configfile/use_app.py)
+![](examples/pytest/configfile/out.txt)
+
+* Test application
+
 ![](examples/pytest/configfile/test_app.py)
 
 ## Pytest create fixture with file(s) - helper function
