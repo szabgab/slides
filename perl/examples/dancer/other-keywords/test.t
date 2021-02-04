@@ -21,7 +21,7 @@ subtest myput => sub {
     my $res = $test->request(PUT '/myput', { message => 'Foo Bar' });
 
     is $res->status_line, '200 OK', 'Status';
-    is $res->content, 'got PUT', 'Content';
+    is $res->content, 'got PUT with Foo Bar', 'Content';
 };
 
 subtest mydel => sub {

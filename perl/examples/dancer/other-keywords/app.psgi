@@ -9,7 +9,8 @@ HTML
 };
 
 put '/myput' => sub {
-    return "got PUT";
+    my $message = body_parameters->get('message');
+    return "got PUT with $message";
 };
 
 del '/mydel' => sub {
