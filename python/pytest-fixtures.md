@@ -130,8 +130,8 @@ pytest test_greet.py
 
 * Similar to `setup_function`, `teardown_function`, `setup_module`, `teardown_module`
 
-![](examples/pytest/autouse_fixtures.py)
-![](examples/pytest/autouse_fixtures.out)
+![](examples/pytest/test_autouse_fixtures.py)
+![](examples/pytest/test_autouse_fixtures.out)
 
 ## Share fixtures among test files: conftest.py
 {id: pytest-conftest}

@@ -1,22 +1,26 @@
 import pytest
+import time
 
 @pytest.fixture(autouse = True, scope="module")
 def fix_module():
-    print("\nFix module setup")
+    answer = 42
+    print(f"Module setup {answer}")
     yield
-    print("\nFix module teardown")
+    print(f"Module teardown {answer}")
 
 
 @pytest.fixture(autouse = True, scope="function")
 def fix_function():
-    print("\n  Fix function setup")
+    start = time.time()
+    print(f"  Function setup {start}")
     yield
-    print("\n  Fix function teardown")
+    print(f"  Function teardown {start}")
 
 
 def test_one():
     print("    Test one")
-
+    assert True
 
 def test_two():
     print("    Test two")
+    assert False
