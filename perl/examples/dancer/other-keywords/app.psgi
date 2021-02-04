@@ -20,4 +20,9 @@ patch '/mypatch' => sub {
     return "got PATCH";
 };
 
+options '/myoptions' => sub {
+    return "got OPTIONS";
+};
+
+
 App->to_app;

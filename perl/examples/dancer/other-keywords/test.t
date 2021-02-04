@@ -4,7 +4,7 @@ use warnings;
 use Test::More;
 use Plack::Test;
 use Plack::Util;
-use HTTP::Request::Common qw(GET PUT DELETE PATCH);
+use HTTP::Request::Common qw(GET PUT DELETE PATCH OPTIONS);
 
 my $app = Plack::Util::load_psgi './app.psgi';
 
@@ -37,6 +37,14 @@ subtest mypatch => sub {
     is $res->status_line, '200 OK', 'Status';
     is $res->content, 'got PATCH', 'Content';
 };
+
+subtest myoptions => sub {
+    my $res = $test->request(OPTIONS '/myoptions', { message => 'Foo Bar' });
+
+    is $res->status_line, '200 OK', 'Status';
+    is $res->content, 'got OPTIONS', 'Content';
+};
+
 
 
 done_testing();
