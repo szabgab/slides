@@ -9,3 +9,4 @@ def test_myoutput(capsys):
     welcome("next")
     out, err = capsys.readouterr()
     assert out == "STDOUT: next\n"
+    assert err == ""

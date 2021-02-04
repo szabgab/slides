@@ -1,8 +1,11 @@
 def setup_module():
     print("setup_module")
+    global x
+    x = 42
 
 def teardown_module():
     print("teardown_module")
+    print(x)
 
 
 def setup_function():
