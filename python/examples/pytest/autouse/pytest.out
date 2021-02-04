@@ -1,21 +1,20 @@
-Fix module setup
 
-  Fix function setup
-    Test Blue one
-  Fix function teardown
+Session setup
 
-  Fix function setup
-    Test Blue two
-  Fix function teardown
+  Module setup
+    Function setup
+      Test Blue one
+    Function teardown
 
-Fix module teardown
+    Function setup
+      Test Blue two
+    Function teardown
+  Module teardown
 
+  Module setup
+    Function setup
+      Test Green Three
+    Function teardown
+  Module teardown
 
-Fix module setup
-
-  Fix function setup
-    Test Green Three
-  Fix function teardown
-
-Fix module teardown
-
+Session teardown
