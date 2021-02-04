@@ -3,18 +3,17 @@ import application
 
 
 @pytest.fixture()
-def getapp():
-    print('getapp starts')
-    app = application.App()
+def app():
+    print('app starts')
+    myapp = application.App()
+    return myapp
 
-    return app
 
+def test_add_user_foo(app):
+    app.add_user("Foo")
+    assert app.get_user() == 'Foo'
 
-def test_add_user_foo(getapp):
-    getapp.add_user("Foo")
-    assert getapp.get_user() == 'Foo'
-
-def test_add_user_bar(getapp):
-    getapp.add_user("Bar")
-    assert getapp.get_user() == 'Bar'
+def test_add_user_bar(app):
+    app.add_user("Bar")
+    assert app.get_user() == 'Bar'
 

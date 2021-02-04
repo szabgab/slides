@@ -11,6 +11,7 @@ class App:
 
     def add_user(self, name):
         print("Working on add_user({})".format(name))
+        #self.name = name
 
     def get_user(self):
         return self.name
