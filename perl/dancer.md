@@ -648,4 +648,9 @@ The default values in JSON format:
 
 ![](examples/dancer/simple-todo/test.t)
 
+## Other HTTP verbs: PUT DELETE
+{id: other-http-verbs}
+
+![](examples/dancer/other-keywords/app.psgi)
+![](examples/dancer/other-keywords/test.t)
 

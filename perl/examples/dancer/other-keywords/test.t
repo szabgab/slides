@@ -1,0 +1,35 @@
+use strict;
+use warnings;
+
+use Test::More;
+use Plack::Test;
+use Plack::Util;
+use HTTP::Request::Common qw(GET PUT DELETE);
+
+my $app = Plack::Util::load_psgi './app.psgi';
+
+my $test = Plack::Test->create($app);
+
+subtest main => sub {
+    my $res = $test->request(GET '/');
+
+    is $res->status_line, '200 OK', 'Status';
+    like $res->content, qr{Try PUT /myput}, 'Content';
+};
+
+subtest myput => sub {
+    my $res = $test->request(PUT '/myput', { message => 'Foo Bar' });
+
+    is $res->status_line, '200 OK', 'Status';
+    is $res->content, 'got PUT', 'Content';
+};
+
+subtest mydel => sub {
+    my $res = $test->request(DELETE '/mydel', { message => 'Foo Bar' });
+
+    is $res->status_line, '200 OK', 'Status';
+    is $res->content, 'got DELETE', 'Content';
+};
+
+
+done_testing();
