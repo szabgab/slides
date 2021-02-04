@@ -14,7 +14,8 @@ put '/myput' => sub {
 };
 
 del '/mydel' => sub {
-    return "got DELETE";
+    my $message = query_parameters->get('message');
+    return "got DELETE with $message";
 };
 
 patch '/mypatch' => sub {

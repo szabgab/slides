@@ -25,10 +25,10 @@ subtest myput => sub {
 };
 
 subtest mydel => sub {
-    my $res = $test->request(DELETE '/mydel', { message => 'Foo Bar' });
+    my $res = $test->request(DELETE '/mydel?message=Foo Bar');
 
     is $res->status_line, '200 OK', 'Status';
-    is $res->content, 'got DELETE', 'Content';
+    is $res->content, 'got DELETE with Foo Bar', 'Content';
 };
 
 subtest mypatch => sub {
