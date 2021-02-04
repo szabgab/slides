@@ -1,0 +1,11 @@
+Blue setup
+Green setup
+    Test one
+Green teardown
+Blue teardown
+
+Green setup
+Blue setup
+    Test two
+Blue teardown
+Green teardown

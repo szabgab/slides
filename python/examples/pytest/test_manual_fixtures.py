@@ -2,16 +2,18 @@ import pytest
 
 @pytest.fixture()
 def blue():
-   print("Fix blue setup")
+   print("Blue setup")
    yield
-   print("Fix blue teardown")
+   print("Blue teardown")
 
 @pytest.fixture()
 def green():
-   print("Fix green setup")
+   print("Green setup")
    yield
-   print("Fix green teardown")
+   print("Green teardown")
 
+#def test_try(yellow):
+#    print("yellow")
 
 def test_one(blue, green):
    print("    Test one")
@@ -19,3 +21,4 @@ def test_one(blue, green):
 
 def test_two(green, blue):
    print("    Test two")
+   assert False

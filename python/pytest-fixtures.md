@@ -150,8 +150,8 @@ pytest -qs
 ## Manual fixtures (dependency injection)
 {id: pytest-manual-fixtures}
 
-![](examples/pytest/manual_fixtures.py)
-![](examples/pytest/manual_fixtures.out)
+![](examples/pytest/test_manual_fixtures.py)
+![](examples/pytest/test_manual_fixtures.out)
 
 * We can't add fixtures to test_functions as decorators (as I was the case in NoseTest), we need to use dependency injection.
 
