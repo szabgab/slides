@@ -16,5 +16,8 @@ del '/mydel' => sub {
     return "got DELETE";
 };
 
+patch '/mypatch' => sub {
+    return "got PATCH";
+};
 
 App->to_app;
