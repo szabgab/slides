@@ -19,11 +19,13 @@ del '/mydel' => sub {
 };
 
 patch '/mypatch' => sub {
-    return "got PATCH";
+    my $message = body_parameters->get('message');
+    return "got PATCH with $message";
 };
 
 options '/myoptions' => sub {
-    return "got OPTIONS";
+    my $message = body_parameters->get('message');
+    return "got OPTIONS with $message";
 };
 
 

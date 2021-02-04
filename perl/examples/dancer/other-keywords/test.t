@@ -35,14 +35,14 @@ subtest mypatch => sub {
     my $res = $test->request(PATCH '/mypatch', { message => 'Foo Bar' });
 
     is $res->status_line, '200 OK', 'Status';
-    is $res->content, 'got PATCH', 'Content';
+    is $res->content, 'got PATCH with Foo Bar', 'Content';
 };
 
 subtest myoptions => sub {
     my $res = $test->request(OPTIONS '/myoptions', { message => 'Foo Bar' });
 
     is $res->status_line, '200 OK', 'Status';
-    is $res->content, 'got OPTIONS', 'Content';
+    is $res->content, 'got OPTIONS with Foo Bar', 'Content';
 };
 
 
