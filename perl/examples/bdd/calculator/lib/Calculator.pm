@@ -12,7 +12,11 @@ sub display {
 
 sub click {
     my ($input) = @_;
-    $display .= $input;
+    if ($input eq '=') {
+        $display = eval $display;
+    } else {
+        $display .= $input;
+    }
 }
 
 sub reset {

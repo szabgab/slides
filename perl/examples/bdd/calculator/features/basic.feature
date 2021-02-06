@@ -22,14 +22,14 @@ Feature: Calculator
     And clicked on +
     Then display is "52+"
 
-#  Scenario: First calculation
-#    Given the calculator app
-#    When clicked on 5
-#    And clicked on 2
-#    And clicked on +
-#    And clicked on 1
-#    And clicked on =
-#    Then display is "53"
+  Scenario: First calculation
+    Given the calculator app
+    When clicked on 5
+    And clicked on 2
+    And clicked on +
+    And clicked on 1
+    And clicked on =
+    Then display is "53"
 #    And the history is
 #      """
 #      52+1       = 53
