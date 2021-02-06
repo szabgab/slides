@@ -37,6 +37,13 @@ Feature: Calculator
 #
   Scenario: Don't accept letters in the input
     Given the calculator app
-    When clicked on s
+    When clicked on <input>
     Then display is ""
+    Examples:
+     | input |
+     |   s   |
+     |   a   |
+     |   c   |
+     |   b   |
+     |   !   |
 
