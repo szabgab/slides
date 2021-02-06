@@ -30,11 +30,11 @@ Feature: Calculator
     And clicked on 1
     And clicked on =
     Then display is "53"
-#    And the history is
-#      """
-#      52+1       = 53
-#      """
-#
+    And the history is
+      """
+      52+1=53
+      """
+
   Scenario: Don't accept letters in the input
     Given the calculator app
     When clicked on <input>

@@ -24,3 +24,8 @@ Then qr/display is "([^"]*)"/, sub {
     is Calculator::display(), $expected;
 };
 
+Then qr/the history is/, sub {
+    my $expected = C->data;
+    is Calculator::history(), $expected;
+};
+
