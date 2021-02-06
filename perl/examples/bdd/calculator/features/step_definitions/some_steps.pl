@@ -22,7 +22,7 @@ Given 'the calculator app', sub {
 Then qr/display is "([^"]*)"/, sub {
     my $expected = C->matches->[0];
     my $function = S->{'calculator'} . '::display';
-    #no strict 'refs';
-    is eval "$function()", $expected;
+    no strict 'refs';
+    is $function->(), $expected;
 };
 
