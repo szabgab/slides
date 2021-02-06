@@ -14,9 +14,9 @@ use Calculator;
 Given 'the calculator app', sub {
 };
 
-#When qr/^calling hello_world function/, sub {
-#    S->{'result'}  = HelloWorld::hello_world();
-#};
+When qr/^clicked on (.)/, sub {
+    Calculator::click(C->matches->[0]);
+};
 
 Then qr/display is "([^"]*)"/, sub {
     my $expected = C->matches->[0];

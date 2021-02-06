@@ -4,11 +4,11 @@ Feature: Calculator
     Given the calculator app
     Then display is ""
 
-#  Scenario: Input one digit
-#    Given the calculator app
-#    When clicked on 5
-#    Then display is "5"
-#
+  Scenario: Input one digit
+    Given the calculator app
+    When clicked on 5
+    Then display is "5"
+
 #  Scenario: Input more digits
 #    Given the calculator app
 #    When clicked on 5
