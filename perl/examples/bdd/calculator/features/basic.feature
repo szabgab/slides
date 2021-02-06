@@ -15,13 +15,13 @@ Feature: Calculator
     And clicked on 2
     Then display is "52"
 
-#  Scenario: Input digits and operator
-#    Given the calculator app
-#    When clicked on 5
-#    And clicked on 2
-#    And clicked on +
-#    Then display is "52+"
-#
+  Scenario: Input digits and operator
+    Given the calculator app
+    When clicked on 5
+    And clicked on 2
+    And clicked on +
+    Then display is "52+"
+
 #  Scenario: First calculation
 #    Given the calculator app
 #    When clicked on 5
