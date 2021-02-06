@@ -2,7 +2,9 @@ package Calculator;
 use strict;
 use warnings;
 
-my $display = '';
+use constant DEFAULT => '';
+
+my $display = DEFAULT;
 
 sub display {
     return $display;
@@ -11,6 +13,10 @@ sub display {
 sub click {
     my ($input) = @_;
     $display .= $input;
+}
+
+sub reset {
+    $display = DEFAULT;
 }
 
 1;

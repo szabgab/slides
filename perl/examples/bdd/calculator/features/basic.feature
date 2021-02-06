@@ -9,12 +9,12 @@ Feature: Calculator
     When clicked on 5
     Then display is "5"
 
-#  Scenario: Input more digits
-#    Given the calculator app
-#    When clicked on 5
-#    And clicked on 2
-#    Then display is "52"
-#
+  Scenario: Input more digits
+    Given the calculator app
+    When clicked on 5
+    And clicked on 2
+    Then display is "52"
+
 #  Scenario: Input digits and operator
 #    Given the calculator app
 #    When clicked on 5

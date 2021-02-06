@@ -12,6 +12,7 @@ use lib File::Spec->catfile(dirname(__FILE__), '..', '..', 'lib');
 use Calculator;
 
 Given 'the calculator app', sub {
+    Calculator::reset();
 };
 
 When qr/^clicked on (.)/, sub {
