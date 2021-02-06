@@ -14,7 +14,7 @@ sub click {
     my ($input) = @_;
     if ($input eq '=') {
         $display = eval $display;
-    } else {
+    } elsif ($input =~ /^[0-9+]$/) {
         $display .= $input;
     }
 }

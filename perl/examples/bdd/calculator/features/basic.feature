@@ -34,3 +34,9 @@ Feature: Calculator
 #      """
 #      52+1       = 53
 #      """
+#
+  Scenario: Don't accept letters in the input
+    Given the calculator app
+    When clicked on s
+    Then display is ""
+
