@@ -225,3 +225,11 @@ the values of these hashes.
 
 ![](examples/other/binary_search.pl)
 
+## Convert curl command with -F to LWP::UserAgent
+{id: convert-curl-f-to-lwp-useragent}
+
+```
+curl -X POST -F field=value -F name=Corion "https://httpbin.org/post" -H  "accept: application/json"
+```
+![](examples/other/send_f.pl)
+
