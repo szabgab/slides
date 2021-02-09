@@ -50,6 +50,12 @@
 ![](examples/pytest/random-more/use_app.py)
 ![](examples/pytest/random-more/test_app.py)
 
+## Pytest: Mocking time (test expiration)
+{id: pytest-mocking-time-test-expiration}
+
+![](examples/pytest/time-passed/app.py)
+![](examples/pytest/time-passed/test_app.py)
+
 ## Pytest: One dimensional spacefight
 {id: pytest-number-guessing-game}
 
