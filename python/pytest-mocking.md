@@ -56,6 +56,16 @@
 ![](examples/pytest/time-passed/app.py)
 ![](examples/pytest/time-passed/test_app.py)
 
+
+## Pytest: monkeypatching time
+{id: pytest-monkeypatching-time}
+
+![](examples/pytest/time-changed/app.py)
+![](examples/pytest/time-changed/test_impact.py)
+![](examples/pytest/time-changed2/app.py)
+![](examples/pytest/time-changed2/test_impact.py)
+![](examples/pytest/time-changed2/test_impact_monkeypatch.py)
+
 ## Pytest: One dimensional spacefight
 {id: pytest-number-guessing-game}
 
