@@ -31,10 +31,10 @@
 ## Pytest: Mock STDIN
 {id: pytest-mock-stdin}
 
-![](/examples/pytest/stdin/app.py)
-![](/examples/pytest/stdin/use_app.py)
-![](/examples/pytest/stdin/test_one.py)
-![](/examples/pytest/stdin/test_two.py)
+![](examples/pytest/stdin/app.py)
+![](examples/pytest/stdin/use_app.py)
+![](examples/pytest/stdin/test_one.py)
+![](examples/pytest/stdin/test_two.py)
 
 
 ## Pytest: One dimensional spacefight
