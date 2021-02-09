@@ -28,13 +28,19 @@
 ![](examples/pytest/external-api/test_mymath.py)
 ![](examples/pytest/external-api/test_mymath_broken_remote.py)
 
-## Pytest: Mock STDIN
-{id: pytest-mock-stdin}
+## Pytest: Mocking STDIN
+{id: pytest-mocking-stdin}
 
 ![](examples/pytest/stdin/app.py)
 ![](examples/pytest/stdin/use_app.py)
 ![](examples/pytest/stdin/test_one.py)
 ![](examples/pytest/stdin/test_two.py)
+
+## Pytest: Mocking random numbes
+{id: pytest-mocking-random-numbers}
+
+![](examples/pytest/random/app.py)
+![](examples/pytest/random/test_app.py)
 
 
 ## Pytest: One dimensional spacefight
