@@ -16,7 +16,8 @@
 * External dependency (e.g. an API).
 * STDIN/STDOUT/STDERR.
 * Random values.
-* Methods accessin a database.
+* Methods accessing a database.
+* Time.
 
 ## Pytest: Mocking slow external API call
 {id: pytest-mocking-slow-external-call}
@@ -42,6 +43,12 @@
 ![](examples/pytest/random/app.py)
 ![](examples/pytest/random/test_app.py)
 
+## Pytest: Mocking multiple random numbers
+{id: pytest-mocking-multiple-random-numbers}
+
+![](examples/pytest/random-more/app.py)
+![](examples/pytest/random-more/use_app.py)
+![](examples/pytest/random-more/test_app.py)
 
 ## Pytest: One dimensional spacefight
 {id: pytest-number-guessing-game}
