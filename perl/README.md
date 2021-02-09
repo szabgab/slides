@@ -2,6 +2,10 @@
 
 
 ## Dancer
+
+Reload when config changes
+plackup -R lib,environments bin/app.psgi
+
   how to run plackup in debug mode to see the detailed error message?
 
 route with regex?
