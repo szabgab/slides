@@ -18,23 +18,6 @@
 * Random values.
 * Methods accessin a database.
 
-
-## Pytest: One dimensional spacefight
-{id: pytest-number-guessing-game}
-
-![](examples/pytest/game.py)
-
-
-## Pytest: Mocking input and output
-{id: pytest-test-game-exit}
-![](examples/pytest/test_game_exit.py)
-
-
-## Pytest: Mocking random
-{id: pytest-test-game-play}
-![](examples/pytest/test_game_play.py)
-
-
 ## Pytest: Mocking slow external API call
 {id: pytest-mocking-slow-external-call}
 
@@ -44,4 +27,32 @@
 
 ![](examples/pytest/external-api/test_mymath.py)
 ![](examples/pytest/external-api/test_mymath_broken_remote.py)
+
+## Pytest: Mock STDIN
+{id: pytest-mock-stdin}
+
+![](/examples/pytest/stdin/app.py)
+![](/examples/pytest/stdin/use_app.py)
+![](/examples/pytest/stdin/test_one.py)
+![](/examples/pytest/stdin/test_two.py)
+
+
+## Pytest: One dimensional spacefight
+{id: pytest-number-guessing-game}
+
+![](examples/pytest/game.py)
+
+
+## Pytest: Mocking input and output
+{id: pytest-test-game-exit}
+
+![](examples/pytest/test_game_exit.py)
+
+
+## Pytest: Mocking random
+{id: pytest-test-game-play}
+
+![](examples/pytest/test_game_play.py)
+
+
 
