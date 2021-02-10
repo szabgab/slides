@@ -222,3 +222,13 @@ $ pytest -sq
 
 ![](examples/pytest/docker/test_with_docker_improved.py)
 
+## Pytest fixture inject data
+{id: pytest-fixture-inject-data}
+
+![](examples/pytest/test_fixture_inject.py)
+
+## Pytest fixture for MongoDB
+{id: pytest-fixture-mongodb}
+
+![](examples/pytest/fixture-mongodb/conftest.py)
+

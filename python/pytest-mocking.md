@@ -1,6 +1,22 @@
 # Pytest Mocking
 {id: pytest-mocking}
 
+## Test Doubles
+{id: test-doubles}
+
+* Dummies
+* Spies
+* Stubs
+* Fakes
+* Mocks
+* (Gerard Meszaros)
+
+
+## Monkey Patching
+{id: pytest-monkey-patching}
+
+
+
 ## Pytest: Mocking - why?
 {id: pytest-mocking-why}
 
@@ -9,6 +25,10 @@
 * Fake some code/application/API that does not exist yet.
 * Test error conditions in a system not under our control.
 
+* TDD, unit tests
+* Spaghetti code
+* Simulate hard to replicate cases
+* 3rd party APIs  or applications
 
 ## Pytest: Mocking - what?
 {id: pytest-mocking-what}
@@ -18,6 +38,14 @@
 * Random values.
 * Methods accessing a database.
 * Time.
+* Hard-coded path
+
+## Pytest: Hard-coded path
+{id: pytest-hard-coded-path}
+
+![](examples/pytest/hard-coded-path/app.py)
+![](examples/pytest/hard-coded-path/test_app.py)
+![](examples/pytest/hard-coded-path/test_app_monkeypatch.py)
 
 ## Pytest: Mocking slow external API call
 {id: pytest-mocking-slow-external-call}
@@ -83,5 +111,16 @@
 
 ![](examples/pytest/test_game_play.py)
 
+
+## Pytest: Mocking Flask app sending mail
+{id: pytest-mocking-flask-app-sending-mail}
+
+![](examples/pytest/mocking-flask/app.py)
+![](examples/pytest/mocking-flask/test_app.py)
+
+## Pytest: Mocking - collecting stats example
+{id: pytest-mocking-collecting-stats}
+
+![](examples/pytest/monkey-collect/app.py)
 
 
