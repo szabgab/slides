@@ -24,3 +24,11 @@ examples/bdd/
 pherkin examples/bdd/basic/
 prove -v  -r --source Feature --ext=.feature examples/bdd/basic/
 ```
+
+
+## BDD Demo
+{id: bdd-demo}
+
+![](examples/bdd/demo/features/basic.feature)
+![](examples/bdd/demo/features/step_definitions/some_steps.pl)
+
