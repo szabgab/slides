@@ -1,7 +1,7 @@
 import app
 
-def test_game():
-    app.random.randint = lambda x, y: 70
+def test_game(monkeypatch):
+    monkeypatch.setattr(app.random, 'randint', lambda x, y: 70)
     game = app.Game()
     print(game.hidden)
     response = game.guess(100)

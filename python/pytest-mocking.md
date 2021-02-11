@@ -38,7 +38,7 @@
 {id: pytest-monkey-patching}
 
 * [Monkey Patch](https://en.wikipedia.org/wiki/Monkey_patch)
-* In Pytest: The name of the fixture to do mocking
+* In Pytest: The name of the fixture to do mocking is [monkeypatch](https://docs.pytest.org/en/stable/monkeypatch.html)
 
 ## Pytest: Hard-coded path
 {id: pytest-hard-coded-path}
@@ -94,13 +94,26 @@
 
 ![](examples/pytest/stdin/app.py)
 ![](examples/pytest/stdin/use_app.py)
+
+## Pytest: Mocking STDIN manually mocking
+{id: pytest-mocking-stdin-manually-mocking}
+
 ![](examples/pytest/stdin/test_one.py)
 ![](examples/pytest/stdin/test_two.py)
+
+## Pytest: Mocking STDIN - monkeypatch
+{id: pytest-mocking-stdin-monkeypatch}
+
+![](examples/pytest/stdin/test_both_monkeypatch.py)
+
+## Pytest: Mocking random numbes - the application
+{id: pytest-mocking-random-numbers-the-application}
+
+![](examples/pytest/random/app.py)
 
 ## Pytest: Mocking random numbes
 {id: pytest-mocking-random-numbers}
 
-![](examples/pytest/random/app.py)
 ![](examples/pytest/random/test_app.py)
 
 ## Pytest: Mocking multiple random numbers
@@ -109,6 +122,12 @@
 ![](examples/pytest/random-more/app.py)
 ![](examples/pytest/random-more/use_app.py)
 ![](examples/pytest/random-more/test_app.py)
+
+## Pytest: Mocking environment variables
+{id: pytest-mocking-environment-variables}
+
+![](examples/pytest/setenv/app.py)
+![](examples/pytest/setenv/test_app.py)
 
 ## Pytest: Mocking time (test expiration)
 {id: pytest-mocking-time-test-expiration}

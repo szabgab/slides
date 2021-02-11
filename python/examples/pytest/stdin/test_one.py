@@ -9,3 +9,6 @@ def test_app(capsys):
     assert err == ''
     #print(out)
     assert out == 'Please enter your name: Your name is Foo\n'
+
+def test_app_again(capsys):
+    ...   # still the same handle
