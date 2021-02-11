@@ -1,22 +1,6 @@
 # Pytest Mocking
 {id: pytest-mocking}
 
-## Test Doubles
-{id: test-doubles}
-
-* Dummies
-* Spies
-* Stubs
-* Fakes
-* Mocks
-* (Gerard Meszaros)
-
-
-## Monkey Patching
-{id: pytest-monkey-patching}
-
-
-
 ## Pytest: Mocking - why?
 {id: pytest-mocking-why}
 
@@ -33,19 +17,54 @@
 ## Pytest: Mocking - what?
 {id: pytest-mocking-what}
 
-* External dependency (e.g. an API).
+* Hard-coded path in code.
 * STDIN/STDOUT/STDERR.
+* External dependency (e.g. an API).
 * Random values.
 * Methods accessing a database.
 * Time.
-* Hard-coded path
+
+## Pytest: What is Mocking? - Test Doubles
+{id: pytest-test-doubles}
+
+* Dummies
+* Spies
+* Stubs
+* Fakes
+* Mocks
+* [Test Doubles by Gerard Meszaros and Martin Fowler](https://martinfowler.com/bliki/TestDouble.html)
+
+## Pytest: Monkey Patching
+{id: pytest-monkey-patching}
+
+* [Monkey Patch](https://en.wikipedia.org/wiki/Monkey_patch)
+* In Pytest: The name of the fixture to do mocking
 
 ## Pytest: Hard-coded path
 {id: pytest-hard-coded-path}
 
 ![](examples/pytest/hard-coded-path/app.py)
+
+## Pytest: Hard-coded path - manually replace attribute
+{id: pytest-hard-coded-path-manually-replace}
+
 ![](examples/pytest/hard-coded-path/test_app.py)
+
+## Pytest: Hard-coded path - monkeypatch attribute
+{id: pytest-hard-coded-path-monkyepatch}
+{i: monkeypatch}
+{i: setattr}
+
 ![](examples/pytest/hard-coded-path/test_app_monkeypatch.py)
+
+## Pytest: Hard-coded path - monkeypatch attribute - tempdir
+{id: pytest-hard-coded-path-monkyepatch-tempdir}
+{i: monkeypatch}
+{i: setattr}
+{i: tmpdif}
+
+![](examples/pytest/hard-coded-path/test_app_monkeypatch_tempdir.py)
+
 
 ## Pytest: Mocking slow external API call
 {id: pytest-mocking-slow-external-call}
@@ -54,8 +73,21 @@
 ![](examples/pytest/external-api/externalapi.py)
 ![](examples/pytest/external-api/use_mymath.py)
 
+## Pytest: Mocking slow external API call - manually replace function
+{id: pytest-mocking-slow-external-call-manually-replace}
+
 ![](examples/pytest/external-api/test_mymath.py)
+
+## Pytest: Mocking slow external API call - manually replace function - broken remote
+{id: pytest-mocking-slow-external-call-manually-replace-broken-remote}
+
 ![](examples/pytest/external-api/test_mymath_broken_remote.py)
+
+## Pytest: Mocking slow external API call - monkeypatch
+{id: pytest-mocking-slow-external-call-monkeypatch}
+
+![](examples/pytest/external-api/test_mymath_monkeypatch.py)
+
 
 ## Pytest: Mocking STDIN
 {id: pytest-mocking-stdin}

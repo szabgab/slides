@@ -3,8 +3,9 @@ import app
 def test_app():
     app.data_file = 'test_1.json'    # manually overwrite
 
-    res = app.do_someting()
-    assert res == 42
+    res = app.do_something()       # it is now test_1.json
+    ...
 
 def test_again():
-    print(app.data_file)             # it is still test_1.json
+    res = app.do_something()      # it is still test_1.json
+    ...
