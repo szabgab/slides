@@ -10,7 +10,12 @@ def test_in_path(monkeypatch):
     out = app.get_python_version()
     assert out == 'Python 2.7.18\n'
     print(os.environ['PATH'])
-
+    print()
 
 def test_other():
+    print(os.environ['PATH'])
+    print()
+
+def test_keep(monkeypatch):
+    monkeypatch.setenv('PATH', '/usr/bin' + os.pathsep + os.environ['PATH'])
     print(os.environ['PATH'])
