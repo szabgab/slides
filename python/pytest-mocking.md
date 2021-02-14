@@ -145,6 +145,14 @@
 ![](examples/pytest/time-changed2/test_impact.py)
 ![](examples/pytest/time-changed2/test_impact_monkeypatch.py)
 
+## Pytest: mocking specific timestamp with datetime
+{id: pytest-mocking-specific-time-in-datetime}
+
+![](examples/pytest/specific-time/app.py)
+![](examples/pytest/specific-time/use_app.py)
+![](examples/pytest/specific-time/test_app.py)
+
+
 ## Pytest: One dimensional spacefight
 {id: pytest-number-guessing-game}
 
