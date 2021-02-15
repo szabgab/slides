@@ -152,6 +152,12 @@
 ![](examples/pytest/specific-time/use_app.py)
 ![](examples/pytest/specific-time/test_app.py)
 
+## Pytest: mocking datetime.date.today
+{id: pytest-mocking-datetime-date-today}
+
+![](examples/pytest/mock-get-today/app.py)
+![](examples/pytest/mock-get-today/use_app.py)
+![](examples/pytest/mock-get-today/test_app.py)
 
 ## Pytest: One dimensional spacefight
 {id: pytest-number-guessing-game}
