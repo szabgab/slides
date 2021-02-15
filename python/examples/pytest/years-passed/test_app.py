@@ -12,9 +12,4 @@ def test_app(monkeypatch):
 
     monkeypatch.setattr(app.datetime, 'date', MyDate)
 
-    date = '2000-01-01'
-    cat = '20 - 30 years'
-
-    category = app.get_years_passed_category(date)
-    assert cat == category
-
+    assert app.get_years_passed_category('2000-01-01') == '20 - 30 years'
