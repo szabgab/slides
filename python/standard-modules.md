@@ -63,6 +63,11 @@ More time-related examples.
 
 ![](examples/sys/converting_string_to_datetime.py)
 
+## date and datetome fromisoformat
+{id: datetime-from-iso-format}
+
+![](examples/sys/fromisoformat.py)
+
 
 ## datetime arithmeticis
 {id: datetime-arithmetics}
@@ -75,10 +80,6 @@ More time-related examples.
 {id: rounding-datetime}
 
 ![](examples/sys/datetime_rounding.py)
-
-
-
-
 
 ## sys
 {id: sys}
@@ -307,4 +308,5 @@ shutil.copytree(source, dest)
 shutil.move(source, dest)
 shutil.rmtree(path)
 ```
+
 
