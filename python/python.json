@@ -76,6 +76,7 @@
         "pytest-mocking.md",
         "pytest-options.md",
         "pytest-other.md",
+        "tox.md",
         "selenium.md",
         "advanced-functions.md",
         "function-arguments.md",

@@ -67,3 +67,4 @@ docker/examples/deploy-stand-alone-python/counter.txt
 node_modules/
 nodejs/package-lock.json
 nodejs/package.json
+.tox
