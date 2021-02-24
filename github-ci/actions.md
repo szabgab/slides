@@ -361,4 +361,13 @@ ssh-keyscan host
 ![](examples/workflows/artifact.yml)
 
 
+## Lock Threads
+{id: lock-threads}
+
+* Automatically lock closed Github Issues and Pull-Requests after a period of inactivity.
+
+* [lock-threads](https://github.com/dessant/lock-threads)
+
+![](examples/workflows/lock.yml)
+
 
