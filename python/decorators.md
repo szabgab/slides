@@ -1,28 +1,15 @@
 # Decorators
 {id: decorators}
 
-## Use cases for decorators in Python
-{id: decorator-use-cases}
-{i: classmethod}
-{i: staticmethod}
-{i: pytest}
+## Decorators: simple example
+{id: decorators-example}
 
-* Common decorators are classmethod() and  staticmethod().
-* Flask uses them to mark and configure the routes.
-* Pytest uses them to add marks to the tests.
+* A decorators is that @something just before the declaration of the function.
+* Decorators can modify the behavior of functions or can set some meta information about them.
 
-* [functools](https://docs.python.org/3/library/functools.html)
+![](examples/decorators/simple.py)
 
-* Logging calls with parameters.
-* Logging elapsed time of calls.
-* Access control in Django or other web frameworks. (e.g. login required)
-* Memoization (caching)
-* Retry
-* Function timeout
-* Locking for thread safety
-* [Decorator Library](https://wiki.python.org/moin/PythonDecoratorLibrary)
-
-## Decorarors - Flask
+## Decorators - Flask
 {id: decorators-flask}
 
 * In Flask we use decorators to designate function as "routes".
@@ -44,29 +31,70 @@ FLASK_APP=flask_app flask run
 ```
 pytest -v
 ```
-## Decorators caching
-{id: decorators-cacheing}
+## Decorators caching - no cache
+{id: decorators-caching-no-cache}
+
+* Each call will execute the function and do the (expensive) computation.
+
+![](examples/decorators/no_cache.py)
+![](examples/decorators/no_cache.out)
+
+## Decorators caching - with cache
+{id: decorators-caching-with-cache}
 {i: cache}
 {i: lru_cache}
 
-![](examples/decorators/no_cache.py)
+* By adding the lru_cache decorator we can tell Python to cache the result and save on computation time.
+* [functools](https://docs.python.org/3/library/functools.html)
+
 ![](examples/decorators/with_lru_cache.py)
+![](examples/decorators/with_lru_cache.out)
 
 ## LRU - Least recently used cache
-{id: decorators-lru-cache}
+{id: decorators-lru-cache-1}
 
-
-* ![Cache replacement policy](https://en.wikipedia.org/wiki/Cache_replacement_policies)
+* [LRU - Cache replacement policy](https://en.wikipedia.org/wiki/Cache_replacement_policies)
+* When we call the function with (1, 5) it removes the least recently used results of (1, 2)
+* So next time it has to be computed again.
 
 ![](examples/decorators/lru_cache_example_1.py)
+
+## LRU - Least recently used cache
+{id: decorators-lru-cache-2}
+
+* Here we called (1, 2) after (1, 4) when it was still in the cache
+* When we called (1, 5) it removed the LRU pair, but it was NOT the (1, 2) pair
+* So it was in the cache even after the (1, 5) call.
+
 ![](examples/decorators/lru_cache_example_2.py)
 
+## OOP - classmethod - staticmethod
+{id: decorators-classmethod-staticmethod}
 
-## Functool - partial
-{id: functool-partial}
-{i: partial}
+![](examples/decorators/myclass.py)
+![](examples/decorators/myclass.out)
 
-![](examples/decorators/partial.py)
+
+## Use cases for decorators in Python
+{id: decorators-use-cases}
+{i: classmethod}
+{i: staticmethod}
+{i: pytest}
+
+* Common decorators are classmethod() and  staticmethod().
+* Flask uses them to mark and configure the routes.
+* Pytest uses them to add marks to the tests.
+
+* [functools](https://docs.python.org/3/library/functools.html)
+
+* Logging calls with parameters.
+* Logging elapsed time of calls.
+* Access control in Django or other web frameworks. (e.g. login required)
+* Memoization (caching)
+* Retry
+* Function timeout
+* Locking for thread safety
+* [Decorator Library](https://wiki.python.org/moin/PythonDecoratorLibrary)
 
 ## Function assignment
 {id: function-assignment}
@@ -79,21 +107,32 @@ to other names and then use the new name:
 ![](examples/decorators/function_assignment.py)
 ![](examples/decorators/function_assignment.out)
 
-![](examples/decorators/assign_to_sum.py)
+
+## Function assignment - alias print to say
+{id: function-assignment-alias-print-to-say}
+
 ![](examples/decorators/assign_print.py)
 
+## Function assignment - don't do this
+{id: function-assignment-dont-do-this}
 
-## A list of functions
-{id: list-of-dunctions}
+![](examples/decorators/assign_to_sum.py)
 
-![](examples/decorators/functions_in_list.py)
-![](examples/decorators/functions_in_list.out)
+## Passing functions as parameters
+{id: passing-functions-as-parameter}
+
+![](examples/decorators/passing_function.py)
+
+## Traversing directory tree
+{id: traversing-directory-tree}
+
+![](examples/decorators/tree.py)
 
 ## Function inside other function
 {id: function-inside-other-function}
 
 {aside}
-Let's also remember that we can defind a function inside another function
+Let's also remember that we can define a function inside another function
 and then the internally defined function only exists in the scope of the function
 where it was defined in. Not outside.
 {/aside}
@@ -182,6 +221,13 @@ f = some_decorator(f)
 ![](examples/decorators/decor_any.py)
 ![](examples/decorators/any_func.out)
 
+## Functool - partial
+{id: functool-partial}
+{i: partial}
+
+![](examples/decorators/partial.py)
+
+
 
 ## Exercise: Logger decorator
 {id: exercise-logger-decorator}
@@ -255,4 +301,11 @@ sys    0m0.014s
 
 ![](examples/decorators/deco.py)
 ![](examples/decorators/deco.out)
+
+## A list of functions
+{id: list-of-dunctions}
+
+![](examples/decorators/functions_in_list.py)
+![](examples/decorators/functions_in_list.out)
+
 

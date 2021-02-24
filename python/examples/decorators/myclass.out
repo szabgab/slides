@@ -1,0 +1,6 @@
+init:            '<__main__.Person object at 0x7fb008f3a640>'   'Person'
+instance method: '<__main__.Person object at 0x7fb008f3a640>'   'Person'
+class method     '<class '__main__.Person'>'    'type'
+class method     '<class '__main__.Person'>'    'type'
+static method   'Tailor'    'str'
+static method   'Tailor'    'str'
