@@ -1,0 +1,6 @@
+zero
+one(hello)
+two((8, 7))
+<function zero at 0x7f9079bdca60>
+<function one at 0x7f9079bdcb80>
+<function two at 0x7f9079bdcca0>

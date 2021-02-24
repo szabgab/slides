@@ -81,12 +81,13 @@ pytest -v
 {i: staticmethod}
 {i: pytest}
 
-* Common decorators are classmethod() and  staticmethod().
-* Flask uses them to mark and configure the routes.
-* Pytest uses them to add marks to the tests.
+* Common decorators are [@classmethod](https://docs.python.org/3/library/functions.html#classmethod) and  [@staticmethod](https://docs.python.org/3/library/functions.html#staticmethod).
+* [Flask](https://flask.palletsprojects.com/) uses them to mark and configure the routes.
+* [Pytest](https://docs.pytest.org/) uses them to add marks to the tests.
 
-* [functools](https://docs.python.org/3/library/functools.html)
+* [functools](https://docs.python.org/library/functools.html)
 
+* [dataclasses](https://docs.python.org/library/dataclasses.html)
 * Logging calls with parameters.
 * Logging elapsed time of calls.
 * Access control in Django or other web frameworks. (e.g. login required)
@@ -128,7 +129,7 @@ to other names and then use the new name:
 
 ![](examples/decorators/tree.py)
 
-## Function inside other function
+## Declaring Functions inside other function
 {id: function-inside-other-function}
 
 {aside}
@@ -139,6 +140,19 @@ where it was defined in. Not outside.
 
 ![](examples/decorators/function_in_function.py)
 ![](examples/decorators/function_in_function.out)
+
+
+## Returning a new function from a function
+{id: returning-a-function}
+
+![](examples/decorators/return_function.py)
+![](examples/decorators/return_function.out)
+
+## Returning a closure
+{id: returning-a-closure}
+
+![](examples/decorators/incrementer.py)
+
 
 ## Decorator
 {id: decorator}
@@ -221,6 +235,20 @@ f = some_decorator(f)
 ![](examples/decorators/decor_any.py)
 ![](examples/decorators/any_func.out)
 
+
+## Decorate function with any signature - skeleton
+{id: decorate-function-with-any-signature-skeleton}
+
+![](examples/decorators/decor_any_skeleton.py)
+![](examples/decorators/decor_any_skeleton.out)
+
+## Decorate function with any signature - skeleton with name
+{id: decorate-function-with-any-signature-skeleton-with-name}
+
+![](examples/decorators/decor_any_skeleton_with_name.py)
+![](examples/decorators/decor_any_skeleton_with_name.out)
+
+
 ## Functool - partial
 {id: functool-partial}
 {i: partial}
@@ -296,12 +324,6 @@ real   0m0.034s
 user   0m0.019s
 sys    0m0.014s
 ```
-## Set name of decorated fuction
-{id: set-name-of-decorated-function}
-
-![](examples/decorators/deco.py)
-![](examples/decorators/deco.out)
-
 ## A list of functions
 {id: list-of-dunctions}
 
