@@ -1,6 +1,73 @@
 # Decorators
 {id: decorators}
 
+## Use cases for decorators in Python
+{id: decorator-use-cases}
+{i: classmethod}
+{i: staticmethod}
+{i: pytest}
+
+* Common decorators are classmethod() and  staticmethod().
+* Flask uses them to mark and configure the routes.
+* Pytest uses them to add marks to the tests.
+
+* [functools](https://docs.python.org/3/library/functools.html)
+
+* Logging calls with parameters.
+* Logging elapsed time of calls.
+* Access control in Django or other web frameworks. (e.g. login required)
+* Memoization (caching)
+* Retry
+* Function timeout
+* Locking for thread safety
+* [Decorator Library](https://wiki.python.org/moin/PythonDecoratorLibrary)
+
+## Decorarors - Flask
+{id: decorators-flask}
+
+* In Flask we use decorators to designate function as "routes".
+
+![](examples/decorators/flask_app.py)
+
+```
+FLASK_APP=flask_app flask run
+```
+
+## Decorators - Pytest
+{id: decorators-pytest}
+
+* In Pytest we can use decorators to add special marks to test functions
+* ... or to mark them as fixtures.
+
+![](examples/decorators/test_with_decorator.py)
+
+```
+pytest -v
+```
+## Decorators caching
+{id: decorators-cacheing}
+{i: cache}
+{i: lru_cache}
+
+![](examples/decorators/no_cache.py)
+![](examples/decorators/with_lru_cache.py)
+
+## LRU - Least recently used cache
+{id: decorators-lru-cache}
+
+
+* ![Cache replacement policy](https://en.wikipedia.org/wiki/Cache_replacement_policies)
+
+![](examples/decorators/lru_cache_example_1.py)
+![](examples/decorators/lru_cache_example_2.py)
+
+
+## Functool - partial
+{id: functool-partial}
+{i: partial}
+
+![](examples/decorators/partial.py)
+
 ## Function assignment
 {id: function-assignment}
 
@@ -59,27 +126,6 @@ def f(...):
 ```
 f = some_decorator(f)
 ```
-
-
-## Use cases for decorators in Python
-{id: decorator-use-cases}
-{i: classmethod}
-{i: staticmethod}
-{i: pytest}
-
-* Common decorators are classmethod() and  staticmethod().
-* Flask uses them to mark and configure the routes.
-* Pytest uses them to add marks to the tests.
-
-
-* Logging calls with parameters.
-* Logging elapsed time of calls.
-* Access control in Django or other web frameworks. (e.g. login required)
-* Memoization (caching)
-* Retry
-* Function timeout
-* Locking for thread safety
-* [Decorator Library](https://wiki.python.org/moin/PythonDecoratorLibrary)
 
 
 
