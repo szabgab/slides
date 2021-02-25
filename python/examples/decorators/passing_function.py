@@ -6,5 +6,5 @@ def call(func):
 def double(val):
     print(2*val)
 
-call(double)
-call(lambda x: print(x // 2))
+call(double)      # 84
+call(lambda x: print(x // 2))    # 21

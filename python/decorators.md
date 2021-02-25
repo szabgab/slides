@@ -180,9 +180,19 @@ def f(...):
 f = some_decorator(f)
 ```
 
+## Decorator Demo
+{id: decorator-demo}
 
+* Just a simple example created step-by-step
 
+![](examples/decorators/demo.py)
 
+## Decorator to register function
+{id: decorator-to-register-function}
+
+* Pytest, Flask probably do this
+
+![](examples/decorators/register.py)
 
 ## A recursive Fibonacci
 {id: fibo}

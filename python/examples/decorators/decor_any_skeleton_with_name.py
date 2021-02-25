@@ -27,3 +27,7 @@ two( y = 7, x = 8 )
 print(zero)
 print(one)
 print(two)
+
+print(zero.__name__)
+print(one.__name__)
+print(two.__name__)
