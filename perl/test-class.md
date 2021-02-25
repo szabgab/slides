@@ -28,3 +28,12 @@
 
 ![](examples/test-class/t/10-test-both.t)
 
+## Test::Class inline
+{id: test-class-inline}
+
+![](examples/test-class/t/00-inline.t)
+
+## Test::Class Load
+{id: test-class-load}
+
+![](examples/test-class/t/20-load.t)
