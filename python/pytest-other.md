@@ -232,4 +232,9 @@ E       ZeroDivisionError: division by zero
 
 ![](examples/pytest/test_read_ini.py)
 
+## Testing Master Mind
+{id: pytest-master-mind}
+
+![](examples/pytest/master_mind/master_mind.py)
+![](examples/pytest/master_mind/test_master_mind.py)
 
