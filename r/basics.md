@@ -1,6 +1,19 @@
 # R
 {id: r}
 
+## Background
+{id: background}
+
+* Open Source
+* Relatively Slow
+
+## Alternatives
+{id: alternatives}
+
+* Excel ????
+* Matlab
+* Python / Perl
+
 ## Install R
 {id: install-r}
 
@@ -32,12 +45,15 @@ $ R
 
 ```
 
-
-## Running Rscript on the command line
+## Running R on the command line using Rscript
 {id: running-r-scripts-on-the-command-line}
+{i: Rscript}
 
 ![](examples/hello_world.R)
 
+```
+Rscript hello_world.R
+```
 
 ## R and simple math operations
 {id: r-and-simple-math-operations}
@@ -65,39 +81,19 @@ $ R
 ## Variable types are deducted
 {id: variable-types-are-deducted}
 
-x = 23
-class(x)     # numeric
-x = "George"
-class(x)     # character
-x = True
-class(x)   # logical
-
-y = c(2, 7, 3)
-class(y)
-
-
-the_truth = c(TRUE, FALSE, TRUE, TRUE, FALSE)
-class(the_truth)       # logical
-sum(the_truth)         # 3
-length(logical_vector) # 5
-
-sum(TRUE)   # 1
-sum(FALSE)  # 0
-
+![](examples/data_types.R)
 
 ## Repeate the same number
 {id: repeate-the-same-number}
 {i: rep}
 
-same_number = rep(2, 10)
-print(same_number)
+![](examples/repeat_number.R)
 
 ## Range of numbers
 {id: range-of-numbers}
 {i: :}
 
-range_of_numbers = 1:10
-print(range_of_numbers)
+![](examples/range_of_numbers.R)
 
 
 ## Access the n-the element of a vector
