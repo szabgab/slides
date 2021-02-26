@@ -95,11 +95,10 @@ Rscript hello_world.R
 
 ![](examples/range_of_numbers.R)
 
-
 ## Access the n-the element of a vector
 {id: access-the-n-the-element-of-a-vector}
 
-* It is some_vectpr[n]
+* It is `some_vector[n]`
 * It is 1-based
 
 ![](examples/access_vector_element.R)
@@ -132,29 +131,26 @@ We can use a vector as the index of anther vector thereby fetching a new vector 
 ## Quick graphs
 {id: quick-grapsh}
 
+![](examples/quick_graph.R)
+
+* Will create a file called Rplots.pdf.
+
+
+## Random numbers in normal distribution
+{id: random-numbers-in-normal-distribution}
+
 ```
-distances = c(11, 15, 7, 23, 9)
-barplot(distances)
-plot(distances)
-hist(distances)
-boxplot(distances)
-pie(distances)
-
-
-barplot(distances, col="purple")
-barplot(distances, col="#2323AA")
-barplot(distances, col="#2323AA", ylab="Text on Y", xlab="Text on X")
-```
-
-Would create a file called Rplots.pdf.
-
-
-Random numbers in normal distribution
-
 normal_numbers = rnorm(100)
+```
 
 Histogram of the numbers
+
+```
 hist(normal_numbers)
+```
+
+## Bar plot
+{id: bar-plot}
 
 ![](examples/barplot.R)
 
@@ -169,14 +165,7 @@ barplot this!
 {id: paste-strings-together}
 {i: paste}
 
-paste("abc", "def", "qqrq")
-paste("abc", "def", "qqrq", sep="_")
-
-
-fruits = c("Apple", "Banana", "Apple", "Peach")
-f = as.factor()
-levels(f)
-summary(f)
+![](examples/paste_examples.R)
 
 ## Comments
 {id: comments}
