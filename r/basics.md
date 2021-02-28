@@ -61,10 +61,18 @@ Rscript hello_world.R
 ![](examples/calc.R)
 
 
-## R and variables
+## R variables
 {id: r-variables}
 
 ![](examples/variables.R)
+
+## R assignment (left-assignment, right-assignment)
+{id: r-assignment}
+
+* Both = and <- can be used for left-assignment
+* -> Can be used for right-assignment
+
+![](examples/assignment.R)
 
 
 ## R vectors
