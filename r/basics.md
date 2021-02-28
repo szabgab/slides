@@ -197,28 +197,56 @@ barplot this!
 ## Data Frames
 {id: data-frames}
 
-
-![](examples/boolean_vectors_truth_table.R)
+## Operators comparing values
+{id: operators-comparing-values}
 
 ![](examples/conditional_operators.R)
 
+## Convert string to numeric
+{id: convert-string-to-numeric}
+
 ![](examples/convert_string_to_numeric.R)
 
-![](examples/different_length_of_arrays.R)
+
+## Factors
+{id: factors}
 
 ![](examples/factors.R)
 
+## Filter values
+{id: filter-values}
+
 ![](examples/filter_values.R)
+
+## Index of true elements - which
+{id: index-of-true-elements}
+{i: which}
 
 ![](examples/index_of_true_elements.R)
 
-![](examples/iris.R)
+
+## Boolean (logical) operations
+{id: boolean-operations}
+
+![](examples/boolean_vectors_truth_table.R)
 
 ![](examples/logical_boolean.R)
 
+![](examples/boolean_operations_on_numbers.R)
+
+## Matix TBD
+{id: matrix}
+
 ![](examples/matrix.R)
 
+## Vector operations - reuse values from shorter vector
+{id: reuse-data-from-shorter-vector}
+
 ![](examples/reuse_short_array_exact_multiple.R)
+
+![](examples/vector_multiplication.R)
+
+![](examples/different_length_of_arrays.R)
 
 ## R - sequences and ranges
 {id: r-sequences-and-ranges}
@@ -226,4 +254,8 @@ barplot this!
 
 ![](examples/seq.R)
 
+## Other
+{id: other}
+
+![](examples/iris.R)
 

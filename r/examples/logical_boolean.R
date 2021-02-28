@@ -3,9 +3,9 @@
 a = TRUE
 b = FALSE
 
-a & B  # logical AND
-a | b  # logical OR
-! a    # logical NOT
+a & b  # logical AND    FALSE
+a | b  # logical OR     TRUE
+! a    # logical NOT    FALSE
 
 x = 2
 y = 4

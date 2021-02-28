@@ -1,7 +1,6 @@
 m = c("apple", "apple", "banana", "apple", "peach", "banana", "apple")
 m
 f = as.factor(m)
-# as. 
 
 summary(m)
 summary(f)
