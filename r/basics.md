@@ -141,8 +141,20 @@ Using a negative index will give you the same vector without that element
 
 ![](examples/statistics.R)
 
+## 3 ways to create vectors
+{id: 3-ways-to-create-vectors}
+
+![](examples/create_vectors.R)
+
+ 
+
 ## Quick graphs
 {id: quick-grapsh}
+{i: barplot}
+{i: plot}
+{i: hist}
+{i: boxplot}
+{i: pie}
 
 ![](examples/quick_graph.R)
 
@@ -151,24 +163,17 @@ Using a negative index will give you the same vector without that element
 
 ## Random numbers in normal distribution
 {id: random-numbers-in-normal-distribution}
+{i: rnorm}
+{i: hist}
 
-```
-normal_numbers = rnorm(100)
-```
+* Normal distribution
+* Histogram of the numbers
 
-Histogram of the numbers
-
-```
-hist(normal_numbers)
-```
-
-## 3 ways to create vectors
-{id: 3-ways-to-create-vectors}
-
-![](examples/create_vectors.R)
+![](examples/normal_distribution.R)
 
 ## Bar plot
 {id: bar-plot}
+{i: barplot}
 
 ![](examples/barplot.R)
 
@@ -254,8 +259,17 @@ barplot this!
 
 ![](examples/seq.R)
 
+## Summary of numeric data
+{id: summary-of-numeric-data}
+{i: summary}
+{i: mean}
+
+![](examples/summary_of_numeric.R)
+![](examples/summary_of_boolean.R)
+![](examples/summary_of_strings.R)
+
+
 ## Other
 {id: other}
 
 ![](examples/iris.R)
-

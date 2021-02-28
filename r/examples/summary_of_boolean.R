@@ -1,0 +1,6 @@
+bools = c(T, F, T, T, F)
+summary(bools)
+mean(bools)
+max(bools)
+min(bools)
+sum(bools)

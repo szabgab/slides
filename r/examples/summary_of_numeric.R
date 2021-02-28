@@ -1,0 +1,7 @@
+nums = c(2, 4, 5)
+sum(nums)
+mean(nums)
+max(nums)
+min(nums)
+median(nums)
+summary(nums)
