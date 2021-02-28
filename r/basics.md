@@ -111,20 +111,25 @@ Rscript hello_world.R
 
 ![](examples/access_vector_element.R)
 
-## Negative index, exclude element
+## R Vector: Negative index, exclude element
 {id: negative-index-exclude-element}
 
 Using a negative index will give you the same vector without that element
 
 ![](examples/negative_index.R)
 
-## Access several elements of a vector
+## R vector: Access several elements
 {id: access-several-elements-of-a-vector}
 
-We can use a vector as the index of anther vector thereby fetching a new vector of the specific values.
+* We can use a vector as the index of anther vector thereby fetching a new vector of the specific values.
+* We can also select a range of elements using :
 
 ![](examples/several_elements.R)
 
+## R vector: Exclude several elements
+{id: exclude-several-elements-of-a-vector}
+
+![](examples/exclude_elements.R)
 
 ## Some basic statistical functions
 {id: some-basic-statistical-functions}
@@ -157,6 +162,11 @@ Histogram of the numbers
 hist(normal_numbers)
 ```
 
+## 3 ways to create vectors
+{id: 3-ways-to-create-vectors}
+
+![](examples/create_vectors.R)
+
 ## Bar plot
 {id: bar-plot}
 
@@ -166,6 +176,7 @@ hist(normal_numbers)
 {id: associate-name-with-each-value}
 
 ![](examples/associate_name.R)
+![](examples/associate_name.out)
 
 barplot this!
 
@@ -208,5 +219,11 @@ barplot this!
 ![](examples/matrix.R)
 
 ![](examples/reuse_short_array_exact_multiple.R)
+
+## R - sequences and ranges
+{id: r-sequences-and-ranges}
+{i: seq}
+
+![](examples/seq.R)
 
 
