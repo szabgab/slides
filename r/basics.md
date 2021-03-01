@@ -207,6 +207,13 @@ barplot this!
 
 ![](examples/conditional_operators.R)
 
+## Convert between types using as.
+{id: converting-between-types-using-as}
+
+* as.numeric
+* as.factor
+
+
 ## Convert string to numeric
 {id: convert-string-to-numeric}
 
@@ -215,6 +222,8 @@ barplot this!
 
 ## Factors
 {id: factors}
+
+* "Category", "enumerated type"
 
 ![](examples/factors.R)
 
@@ -267,7 +276,6 @@ barplot this!
 ![](examples/summary_of_numeric.R)
 ![](examples/summary_of_boolean.R)
 ![](examples/summary_of_strings.R)
-
 
 ## Other
 {id: other}
