@@ -140,5 +140,10 @@ $ ansible -i examples/first.cfg all -b -a "grep root /etc/shadow"      (the same
 {id: ansible-playbooks}
 
 
+## Ansible Inventory in YAML format
+{id: ansible-inventory-in-yaml-format}
+
+![](examples/a/inventory.yml)
+![](examples/b/inventory.yml)
 
 
