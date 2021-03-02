@@ -85,15 +85,32 @@ Now we are going to learn how can you create your own classes.
 {i: __name__}
 {i: dir}
 
+{aside}
+In order to create a class in Python you only need to use the `class` keyword with a new class-name.
+Usually the first letter is capitalized.
+
+In such a minimal class that does not do anything yet, Python still requires us to write some code.
+{/aside}
+
 ![](examples/classes/ppl.py)
 ![](examples/classes/ppl.out)
 
-In Python 2.x classes needed to inherit from 'object' in order to become 'new style' classes.
+## Create a class inherit from object
+{id: class-creation-inherit-from-object}
 
+* In Python 2.x classes had to inherit from `object` in order to become 'new style' classes.
+
+![](examples/classes/with_object.py)
+![](examples/classes/with_object.out)
 
 
 ## Import module containing class
 {id: import-module-containing-class}
+
+{aside}
+You probably want your classes to be reusabel by multiple programs, so it is better to put the class and your code using it in separate files
+right from the beginning. In this example you can see how to do that importing the module and then using the dot notation to get to the class.
+{/aside}
 
 ![](examples/classes/pplx.py)
 ![](examples/classes/import_module.py)
@@ -103,6 +120,10 @@ In Python 2.x classes needed to inherit from 'object' in order to become 'new st
 ## Import class from module
 {id: import-class-from-module}
 
+{aside}
+Alternatively you can import the class from the modue and then you can use the classname without any prefix.
+{/aside}
+
 ![](examples/classes/pplx.py)
 ![](examples/classes/import_class.py)
 
@@ -111,6 +132,12 @@ In Python 2.x classes needed to inherit from 'object' in order to become 'new st
 {id: class-initialization}
 {i: __init__}
 {i: self}
+
+{aside}
+In Python we dont have a way to explicitely declare attributes so what people usually do is add a method calles `__init__`
+and let that method set up the initial values of the insance-object.
+{/aside}
+
 ![](examples/classes/initialization/ppl.py)
 
 

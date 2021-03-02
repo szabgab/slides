@@ -1,4 +1,4 @@
-class Person:
+class Person(object):
     pass
 
 if __name__ == '__main__':
@@ -9,3 +9,4 @@ if __name__ == '__main__':
 
     members = dir(p)
     print(members)
+
