@@ -184,6 +184,10 @@ see the time difference.
 
 ## Pytest
 
+* parametrized tests
+* fork -disregard one of the report from the child process
+
+
 * Can we protect our test from infinite (or too long) process? e.g. what if we get in an infinite loop? Can we set a max run time for the tests?
 (API testing meaning (exceptions?) meaning of 500 400 errors?
 

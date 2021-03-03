@@ -289,18 +289,22 @@ pytest -s --json-report --json-report-file=report.json --log-cli-level=INFO
 
 * In this case the option expects a value
 * And we need to use getoption to get the value
+* See [Parser](https://docs.pytest.org/en/stable/reference.html#parser)
+* See [argparse](https://docs.python.org/library/argparse.html)
 
 ![](examples/pytest/py1/conftest.py)
 ![](examples/pytest/py1/test_one.py)
 
 ```
 pytest -s
-test_one.py None
+None
+False
 ```
 
 ```
-pytest -s --demo Hello
-test_one.py Hello
+pytest -s --demo Hello --noisy
+Hello
+True
 ```
 
 ## Add extra command line parameters to Pytest - as a fixture
