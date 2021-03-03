@@ -213,11 +213,14 @@ The datetime class has other methods to retreive the date (and I could not find 
 
 ![](examples/pytest/game/test_game_play_bare.py)
 
+## Pytest: Flask app sending mail
+{id: pytest-flask-app-sending-mail}
+
+![](examples/pytest/mocking-flask/app.py)
 
 ## Pytest: Mocking Flask app sending mail
 {id: pytest-mocking-flask-app-sending-mail}
 
-![](examples/pytest/mocking-flask/app.py)
 ![](examples/pytest/mocking-flask/test_app.py)
 
 ## Pytest: Mocking - collecting stats example
