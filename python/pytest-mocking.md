@@ -197,11 +197,21 @@ The datetime class has other methods to retreive the date (and I could not find 
 
 ![](examples/pytest/game/test_game_exit.py)
 
+## Pytest: Mocking input and output in the game - no tools
+{id: pytest-test-game-exit-no-tools}
+
+![](examples/pytest/game/test_game_exit_bare.py)
+
 
 ## Pytest: Mocking random in the game
 {id: pytest-test-game-play}
 
 ![](examples/pytest/game/test_game_play.py)
+
+## Pytest: Mocking random in the game - no tools
+{id: pytest-test-game-play-no-tools}
+
+![](examples/pytest/game/test_game_play_bare.py)
 
 
 ## Pytest: Mocking Flask app sending mail
