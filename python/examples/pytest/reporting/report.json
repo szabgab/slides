@@ -1,0 +1,204 @@
+{
+    "created": 1614804305.2787466,
+    "duration": 0.04550981521606445,
+    "exitcode": 1,
+    "root": "/home/gabor/work/slides/python/examples/pytest/reporting",
+    "environment": {
+        "Python": "3.8.6",
+        "Platform": "Linux-5.8.0-38-generic-x86_64-with-glibc2.32",
+        "Packages": {
+            "pytest": "6.1.2",
+            "py": "1.9.0",
+            "pluggy": "0.13.1"
+        },
+        "Plugins": {
+            "json-report": "1.2.4",
+            "random-order": "1.0.4",
+            "flake8": "1.0.6",
+            "forked": "1.3.0",
+            "dash": "1.17.0",
+            "metadata": "1.11.0",
+            "xdist": "2.2.1"
+        },
+        "JAVA_HOME": "/usr/lib/jvm/java-8-openjdk-amd64/"
+    },
+    "summary": {
+        "passed": 1,
+        "failed": 1,
+        "skipped": 1,
+        "xpassed": 2,
+        "total": 5,
+        "collected": 5
+    },
+    "collectors": [
+        {
+            "nodeid": "",
+            "outcome": "passed",
+            "result": [
+                {
+                    "nodeid": "test_colors.py",
+                    "type": "Module"
+                }
+            ]
+        },
+        {
+            "nodeid": "test_colors.py",
+            "outcome": "passed",
+            "result": [
+                {
+                    "nodeid": "test_colors.py::test_blue",
+                    "type": "Function",
+                    "lineno": 2
+                },
+                {
+                    "nodeid": "test_colors.py::test_red",
+                    "type": "Function",
+                    "lineno": 5
+                },
+                {
+                    "nodeid": "test_colors.py::test_purple",
+                    "type": "Function",
+                    "lineno": 8
+                },
+                {
+                    "nodeid": "test_colors.py::test_orange",
+                    "type": "Function",
+                    "lineno": 12
+                },
+                {
+                    "nodeid": "test_colors.py::test_green",
+                    "type": "Function",
+                    "lineno": 16
+                }
+            ]
+        }
+    ],
+    "tests": [
+        {
+            "nodeid": "test_colors.py::test_blue",
+            "lineno": 2,
+            "outcome": "passed",
+            "keywords": [
+                "test_blue",
+                "test_colors.py",
+                "reporting"
+            ],
+            "setup": {
+                "duration": 0.00020475592464208603,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.00017083296552300453,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 0.00015691807493567467,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_colors.py::test_red",
+            "lineno": 5,
+            "outcome": "failed",
+            "keywords": [
+                "test_colors.py",
+                "reporting",
+                "test_red"
+            ],
+            "setup": {
+                "duration": 0.00015041790902614594,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.00027200207114219666,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/home/gabor/work/slides/python/examples/pytest/reporting/test_colors.py",
+                    "lineno": 7,
+                    "message": "assert 1 == 2"
+                },
+                "traceback": [
+                    {
+                        "path": "test_colors.py",
+                        "lineno": 7,
+                        "message": "AssertionError"
+                    }
+                ],
+                "longrepr": "def test_red():\n>       assert 1 == 2\nE       assert 1 == 2\n\ntest_colors.py:7: AssertionError"
+            },
+            "teardown": {
+                "duration": 0.0002171061933040619,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_colors.py::test_purple",
+            "lineno": 8,
+            "outcome": "skipped",
+            "keywords": [
+                "test_purple",
+                "reporting",
+                "pytestmark",
+                "test_colors.py",
+                "skip"
+            ],
+            "setup": {
+                "duration": 0.00014864513650536537,
+                "outcome": "skipped",
+                "longrepr": "('/home/gabor/work/slides/python/examples/pytest/reporting/test_colors.py', 9, 'Skipped: So we can show skip reporting')"
+            },
+            "teardown": {
+                "duration": 0.0001513431780040264,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_colors.py::test_orange",
+            "lineno": 12,
+            "outcome": "xpassed",
+            "keywords": [
+                "xfail",
+                "reporting",
+                "test_orange",
+                "pytestmark",
+                "test_colors.py"
+            ],
+            "setup": {
+                "duration": 0.00016017630696296692,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.00014238758012652397,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 0.00013842200860381126,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_colors.py::test_green",
+            "lineno": 16,
+            "outcome": "xpassed",
+            "keywords": [
+                "xfail",
+                "reporting",
+                "test_green",
+                "pytestmark",
+                "test_colors.py"
+            ],
+            "setup": {
+                "duration": 0.00014974595978856087,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.00013947812840342522,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 0.0001403489150106907,
+                "outcome": "passed"
+            }
+        }
+    ]
+}

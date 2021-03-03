@@ -10,6 +10,16 @@ $ pip install pytest-xdist
 $ pytest -n NUM
 ```
 
+![](examples/pytest/xdist/test_animals.py)
+![](examples/pytest/xdist/test_colors.py)
+
+```
+pytest          8.04 sec
+pytest -n 2     4.64 sec
+pytest -n 4     3.07 sec
+```
+
+
 ## PyTest: Order of tests
 {id: pytest-order-of-test}
 
@@ -17,14 +27,15 @@ $ pytest -n NUM
 Pytest runs the test in the same order as they are found in the test module:
 
 
-![](examples/pytest/test_order.py)
+![](examples/pytest/order/test_order.py)
 
 ```
+pytest -v
+
 test_order.py::test_one PASSED
 test_order.py::test_two PASSED
 test_order.py::test_three PASSED
 ```
-
 
 ## PyTest: Randomize Order of tests
 {id: pytest-randomize-order-of-test}
@@ -35,30 +46,30 @@ Install [pytest-random-order](https://pypi.python.org/pypi/pytest-random-order)
 pip install pytest-random-order
 ```
 
-And from now on all the test will run in a random order.
+And from now we can use the `--random-order` flag to run the tests in a random order.
+
+```
+pytest -v --random-order
+
+test_order.py::test_two PASSED
+test_order.py::test_three PASSED
+test_order.py::test_one PASSED
+```
 
 
 ## PyTest: Force default order
 {id: pytest-force-default-order}
 
 If for some reason we would like to make sure the order remains the same,
-we can add the following two lines of code.
-
+in a given module, we can add the following two lines of code.
 
 
 ```
 import pytest
 pytestmark = pytest.mark.random_order(disabled=True)
 ```
-![](examples/pytest/test_default_order.py)
+![](examples/pytest/order/test_default_order.py)
 
-
-## PyTest: no random order
-{id: pytest-no-random-order}
-
-```
-pytest -p no:random-order -v
-```
 
 ## PyTest test discovery
 {id: pytest-discovery}
@@ -100,8 +111,9 @@ test_mymod_2.py .F
 ## Pytest dry-run - collect-only
 {id: pytest-collect-only}
 
-* Find all the test files, test classes, test functions that will be executed
-* But don't run them
+* Find all the test files, test classes, test functions that will be executed.
+* But don't run them...
+* ...  but they are still loaded into memory so any code in the "body" of the files is executed.
 
 ```
 pytest --collect-only
@@ -158,15 +170,15 @@ pytest --collect-only -k "forget or read" test_by_name.py
 ```
 
 
-## Pytest use markers
+## Pytest use markers to select tests
 {id: pytest-use-markers}
 
-![](examples/pytest/test_marker.py)
-![](examples/pytest/test_marker.out)
+![](examples/pytest/markers/test_marker.py)
+![](examples/pytest/markers/test_marker.out)
 
 * We need to declare them in the pytest.ini to avoid the warning
 
-![](examples/pytest/pytest.ini)
+![](examples/pytest/markers/pytest.ini)
 
 
 ## PyTest select tests by marker
@@ -178,7 +190,7 @@ pytest --collect-only -k "forget or read" test_by_name.py
 
 * Use the @pytest.mark.name decorator to tag the tests.
 
-![](examples/pytest/test_by_marker.py)
+![](examples/pytest/markers/test_by_marker.py)
 
 ```
 pytest --collect-only -m security test_by_marker.py
@@ -219,19 +231,41 @@ $ echo $?
 5
 ```
 
+## Pytest reporting in JUnit XML or JSON format
+{id: pytest-reporting}
+
+![](examples/pytest/reporting/test_colors.py)
+
+
 ## Pytest reporting in JUnit XML format
-{id: python-reporting-in-juint-xml}
+{id: pytest-reporting-in-juint-xml}
+
+* e.g. for Jenkins integration
+* See [usage](https://docs.pytest.org/en/stable/usage.html)
 
 ```
 pytest --junitxml report.xml
 ```
+
+![](examples/pytest/reporting/report.xml)
+
+To make the XML more himan-readable:
+
+```
+cat report.xml | python -c 'import sys;import xml.dom.minidom;s=sys.stdin.read();print(xml.dom.minidom.parseString(s).toprettyxml())'
+```
+
+
+## Pytest reporting in JSON format
+{id: pytest-reporting-in-json}
+
 
 * [pytest-json-report](https://pypi.org/project/pytest-json-report/)
 
 ```
 pip install pytest-json-report
 
-pytest --json-report --json-report-file=report.json
+pytest --json-report --json-report-file=report.json --json-report-indent=4
 ```
 
 Recommended to also add
@@ -244,20 +278,63 @@ Recommended to also add
 pytest -s --json-report --json-report-file=report.json --log-cli-level=INFO
 ```
 
-## Add extra command line parameters to Pytest - conftest
+## Pytest JSON report
+{id: pytest-json-repor}
+
+![](examples/pytest/reporting/report.json)
+
+## Add extra command line parameters to Pytest - conftest - getoption
 {id: add-extra-command-line-parameters}
 {i: conftest}
+
+* In this case the option expects a value
+* And we need to use getoption to get the value
 
 ![](examples/pytest/py1/conftest.py)
 ![](examples/pytest/py1/test_one.py)
 
+```
+pytest -s
+test_one.py None
+```
+
+```
+pytest -s --demo Hello
+test_one.py Hello
+```
+
+## Add extra command line parameters to Pytest - as a fixture
+{id: add-extra-command-line-parameters-as-a-fixture}
+{i: conftest}
+
+* We can also create a fixture that will read the parameter
+
 ![](examples/pytest/py2/conftest.py)
 ![](examples/pytest/py2/test_one.py)
 
-![](examples/pytest/py3/conftest.py)
-![](examples/pytest/py3/test_one.py)
+```
+pytest -s
+test_one.py None
+```
+
+```
+pytest -s --demo Hello
+test_one.py Hello
+```
+
+## Add extra command line parameters to Pytest - used in the autouse fixtures
+{id: add-extra-command-line-parameters-autouse-fixture}
+{i: conftest}
+
 
 ![](examples/pytest/py4/conftest.py)
 ![](examples/pytest/py4/test_one.py)
 
+```
+pytest -s --demo Hello
+
+Module Hello
+Func Hello
+Func Hello
+```
 

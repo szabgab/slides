@@ -850,4 +850,14 @@ python common_error_in_function.py 42
 ![](examples/pytest/time-changed2/test_impact.py)
 ![](examples/pytest/time-changed2/test_impact_monkeypatch.py)
 
+## PyTest: no random order
+{id: pytest-no-random-order}
+
+```
+pytest -p no:random-order -v
+```
+
+![](examples/pytest/py3/conftest.py)
+![](examples/pytest/py3/test_one.py)
+
 
