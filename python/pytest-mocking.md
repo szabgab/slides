@@ -129,31 +129,50 @@
 ![](examples/pytest/setenv/app.py)
 ![](examples/pytest/setenv/test_app.py)
 
+## Pytest: Mocking time
+{id: pytest-mocking-time}
+
+There are several different problems with time
+
+* A login that should expire after 24 hours. We don't want to wait 24 hours.
+* Some code that must be executed on certain dates. (e.g. January 1st every year)
+
+
 ## Pytest: Mocking time (test expiration)
 {id: pytest-mocking-time-test-expiration}
+
+{aside}
+In this application the user can "login" by providing their name and then call the `access_page` method within  `session_length` seconds.
+
+Because we know it internally users the `time.time` function to retreive the current time (in seconds since the epoch) we can
+replace that function with ours that will fake the time to be in the future.
+{/aside}
 
 ![](examples/pytest/time-passed/app.py)
 ![](examples/pytest/time-passed/test_app.py)
 
-
-## Pytest: monkeypatching time
-{id: pytest-monkeypatching-time}
-
-![](examples/pytest/time-changed/app.py)
-![](examples/pytest/time-changed/test_impact.py)
-![](examples/pytest/time-changed2/app.py)
-![](examples/pytest/time-changed2/test_impact.py)
-![](examples/pytest/time-changed2/test_impact_monkeypatch.py)
-
 ## Pytest: mocking specific timestamp with datetime
 {id: pytest-mocking-specific-time-in-datetime}
 
+{aside}
+This function will return one of 3 strings based on the date: `new_year` on January 1st,
+`leap_day` on February 29, and `regular` on every other day. How can we test it?
+{/aside}
+
 ![](examples/pytest/specific-time/app.py)
 ![](examples/pytest/specific-time/use_app.py)
+
+## Pytest: mocking specific timestamp with datetime
+{id: pytest-mocking-specific-time-in-datetime-monkeypatch}
+
 ![](examples/pytest/specific-time/test_app.py)
 
 ## Pytest: mocking datetime.date.today
 {id: pytest-mocking-datetime-date-today}
+
+{aside}
+The datetime class has other methods to retreive the date (and I could not find how to mock the function deep inside).
+{/aside}
 
 ![](examples/pytest/mock-get-today/app.py)
 ![](examples/pytest/mock-get-today/use_app.py)
@@ -170,19 +189,19 @@
 ## Pytest: One dimensional spacefight
 {id: pytest-number-guessing-game}
 
-![](examples/pytest/game.py)
+![](examples/pytest/game/game.py)
 
 
-## Pytest: Mocking input and output
+## Pytest: Mocking input and output in the game
 {id: pytest-test-game-exit}
 
-![](examples/pytest/test_game_exit.py)
+![](examples/pytest/game/test_game_exit.py)
 
 
-## Pytest: Mocking random
+## Pytest: Mocking random in the game
 {id: pytest-test-game-play}
 
-![](examples/pytest/test_game_play.py)
+![](examples/pytest/game/test_game_play.py)
 
 
 ## Pytest: Mocking Flask app sending mail

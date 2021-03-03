@@ -841,3 +841,13 @@ python common_error_in_function.py 42
 ![](examples/decorators/dir_tree_with_callback.py)
 ![](examples/other/deco.py)
 
+## Pytest: monkeypatching time
+{id: pytest-monkeypatching-time}
+
+![](examples/pytest/time-changed/app.py)
+![](examples/pytest/time-changed/test_impact.py)
+![](examples/pytest/time-changed2/app.py)
+![](examples/pytest/time-changed2/test_impact.py)
+![](examples/pytest/time-changed2/test_impact_monkeypatch.py)
+
+

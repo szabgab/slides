@@ -2,16 +2,16 @@ import app
 import time
 
 
-def test_app():
+def test_app(monkeypatch):
     user = app.App()
     user.login('foo')
     assert user.access_page('foo') == 'approved'
     current = time.time()
     print(current)
 
-    app.time.time = lambda : current + 9
+    monkeypatch.setattr(app.time, 'time', lambda : current + 9)
     assert user.access_page('foo') == 'approved'
 
-    app.time.time = lambda : current + 11
+    monkeypatch.setattr(app.time, 'time', lambda : current + 11)
     assert user.access_page('foo') == 'expired'
 
