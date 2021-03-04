@@ -7,7 +7,7 @@ def test_immediate_exit(monkeypatch, capsys):
     input_values = '\n'.join(['30', '50', '42', 'x'])
     monkeypatch.setattr(sys, 'stdin', io.StringIO(input_values))
 
-    random.randrange = lambda a, b : 42
+    monkeypatch.setattr(random, 'randrange', lambda a, b : 42)
 
     game.play()
     out, err = capsys.readouterr()
