@@ -186,6 +186,10 @@ see the time difference.
 
 * parametrized tests
 * fork -disregard one of the report from the child process
+* https://code-maven.com/slides/python/pytest-flask-app-sending-mail
+  create a test case in which we mock the random string generation as well (maybe add this as an exercise and put the solution in a separate file)
+  https://code-maven.com/slides/python/pytest-mocking-collecting-stats
+    really implement the code behind it using request and other tools (and also update the database at the end) and then give the testing of it as an exercise.
 
 
 * Can we protect our test from infinite (or too long) process? e.g. what if we get in an infinite loop? Can we set a max run time for the tests?
