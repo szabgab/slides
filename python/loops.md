@@ -197,7 +197,7 @@ Level 3
 Level 4
 
 * Create a file called **number_guessing_game_4.py**
-* Soon we'll have a level in which the hidden value changes after each guess. In oredr to make that mode easier to track and debug, first we would like to have a "debug mode".
+* Soon we'll have a level in which the hidden value changes after each guess. In order to make that mode easier to track and debug, first we would like to have a "debug mode".
 * If the user presses 'd' the game gets into "debug mode": the system starts to show the current number to guess every time, just before asking the user for new input.
 * Pressing 'd' again turns off debug mode. (It is a toggle each press on "d" changes the value to to the other possible value.)
 
