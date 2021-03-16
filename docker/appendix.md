@@ -172,10 +172,19 @@ $ docker run docker-whale
 docker run --mount source=myvol,target=/data --rm -it busybox
 
 ```
+docker volume ls --format "{{.Driver}}  {{.Name}} {{.Mountpoint}}"
+
 docker volume create myvol
+    Creates /var/lib/docker/volumes/myvol
+
 docker volume ls
-docker volume inspect myvol
+docker volume inspect myvol  # Returns a JSON with information about the volume
 docker volume rm myvol
+
+
+docker-compose up
+docker-compose rm
+
 ```
 
 ## docker system df
@@ -205,6 +214,9 @@ Build Cache         0                   0                   0B                  
 --all
 --volumes
 ```
+
+![](examples/volumes/docker-compose.yml)
+
 * [system prune](https://docs.docker.com/engine/reference/commandline/system_prune/)
 
 ## Docker history

@@ -1,0 +1,15 @@
+version: '3.7'
+services:
+  box:
+    image: ubuntu:latest
+    volumes:
+        - .:/localdir
+        - my-data:/mydata
+    entrypoint:
+        - tail
+        - -f
+        - /dev/null
+
+
+volumes:
+  my-data:
