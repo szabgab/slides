@@ -109,7 +109,7 @@
         "algorithm.md",
         "scapy.md",
         "turtle.md",
-        "refactor.md",
+        "refactoring.md",
         "other.md"
     ]
 }
