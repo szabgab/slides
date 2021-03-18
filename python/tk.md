@@ -331,6 +331,10 @@ First we are going to see small examples with each one of these Widgets. Then we
 ![](examples/tk/tk_image.py)
 ![](examples/tk/tk_images.py)
 
+## Python Tk display Hebrew text (right to left)
+{id: python-tk-hebrew-text}
+
+![](examples/tk/tk_hebrew.py)
 
 ## Python Tk Colorchooser
 {id: tk-colorchooser}
