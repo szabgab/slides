@@ -5,7 +5,7 @@ import os
 file_path = None
 
 app = tk.Tk()
-app.title('Menu')
+app.title('Tk Notepad')
 
 def run_new():
     global file_path

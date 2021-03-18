@@ -325,6 +325,13 @@ First we are going to see small examples with each one of these Widgets. Then we
 * width
 * side: left, right, top, bottom
 
+## Python Tk display images using Canvas
+{id: python-tk-display-images}
+
+![](examples/tk/tk_image.py)
+![](examples/tk/tk_images.py)
+
+
 ## Python Tk Colorchooser
 {id: tk-colorchooser}
 
