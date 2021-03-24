@@ -20,3 +20,4 @@
 
 ![](examples/refactor/remove_deep_indentation.py)
 
+![](examples/refactor/count_dna_bases.py)
