@@ -213,4 +213,81 @@ The bisect module for binary search to find where to insert an element
 
 
 
+## OOP
+
+isinstance(p, Person)
+
+
+class attributes - no need to mark it specifically
+static attributes  ??
+
+class method for Point - e.g. number of points ever created
+
+Is there a reliable destructor in Python?
+
+def __del__(self):
+
+
+@classmethod
+class method to hold all the instances, but then they will never be destructed (well, unless we have a manual destroy call) but we can mark them as weak references.
+
+https://docs.python.org/3/library/weakref.html
+
+
+Abstract Base Class
+  a blueprint
+  you want to avoid people creating instances of it
+  you want to make sure a subclass defines all the necessary methods
+from abc import ABC, abstractmethod
+
+class Main(ABC):
+   pass
+
+   @abstractmethod
+   def method(self):
+      pass
+
+
+
+Multiple inheritance
+not really recommended
+Show call order when each one has an __init__
+Show what happens if it becomes diamond shaped inheritance?
+
+MRO - Method Resolution Order ?
+Classname.__mro__
+
+Interfaces - Python does not support them, but you can define other ABC-es
+and use multiple inheritance to say that your class provides that method.
+
+
+Composition (e.g. a line has 2 Points)
+
+
+How to compare two points?  Compare both coordinates using __eq__
+Which point is bigger?  the one where both coordinates are bigger (what to do when one is bigger and the other is smaller? Raise a ValueError, our own Error that inherits from Value error?)  In circles we
+might say one is bigger than the other purely based on their area.
+What happens if we implement __eq__for Point and compare two instances of Circle(Point) ?
+
+def __eq__(self, value):
+   if not isintsnace(value, Point):
+       raise ValueError("Cannot compare Point to non-Pont {value.__class__.__name__}")
+
+def __lt__(self, value):
+   return ...
+
+This also makes the object sortable
+
+
+def __getattribute__(self, name):
+    if name == "age":
+       real = super().__getattribute__(name)
+
+
+def __call__(self, ...):   to make the instances callable (when would we need it?)
+
+
+
+__setattr__
+__getattr__
 

@@ -258,7 +258,7 @@ When an object holds references to one or more other objects.
 * [Pythagorean theorem](https://en.wikipedia.org/wiki/Pythagorean_theorem)
 
 
-![](examples/classes/composition/line.py)
+![](examples/oop/composition/line.py)
 
 
 ## Some comments
@@ -266,56 +266,6 @@ When an object holds references to one or more other objects.
 
 * There are no private attributes. The convention is to use leading underscore to communicate to other developers what is private.
 * Using the name **self** for the current object is just a consensus.
-
-
-
-## Class in function
-{id: class-in-function}
-
-![](examples/classes/class_in_function.py)
-
-
-
-## Serialization of instances with pickle
-{id: selialization-with-pickle}
-{i: pickle}
-
-![](examples/classes/serialization_with_pickle.py)
-
-
-## Quick Class definition and usage
-{id: quick-class-definition}
-
-![](examples/classes/quick.py)
-
-## Special methods
-{id: special-class-methods}
-{i: __str__}
-{i: __repr__}
-
-* `__str__`
-* `__repr__`
-* `__eq__`
-* `__lt__`
-* ...
-
-
-## Stringify class
-{id: class-stringification}
-{i: __str__}
-{i: __repr__}
-
-* __repr__ "should" return Python-like code
-* __str__ should return readable representation
-* If __str__ does not exist, __repr__ is called instead.
-
-![](examples/classes/stringification/point.py)
-![](examples/classes/stringification/shapes.py)
-
-* Class attributes
-* Class methods
-* Static methods
-
 
 ## Exercise: Add move_rad to based on radians
 {id: exercise-oop-move}
@@ -345,7 +295,7 @@ delta_y = dist * sin(angle)
 * Implement a class representing a Polygon. (A list of points)
 * Allow the user to "move a polygon" calling poly.move(dx, dy) that will change the coordinates of every point by (dx, dy)
 
-![](examples/classes/composition/polygon-skeleton.py)
+![](examples/oop/composition/polygon-skeleton.py)
 
 
 ## Exercise: Number
@@ -389,7 +339,7 @@ It can go forward n pixels. It can turn left n degrees. It can lift up the penci
 ## Solution - Polygon
 {id: solution-polygon}
 
-![](examples/classes/composition/polygon.py)
+![](examples/oop/composition/polygon.py)
 
 ## Declaring attributes (dataclasses)
 {id: dataclass}
@@ -445,6 +395,47 @@ __eq__ are automatically implemented
 
 ![](examples/oop/dataclasses_frozen/shapes.py)
 ![](examples/oop/dataclasses_frozen/point.py)
+
+
+## Special methods
+{id: special-class-methods}
+{i: __str__}
+{i: __repr__}
+
+* `__str__`
+* `__repr__`
+* `__eq__`
+* `__lt__`
+* ...
+
+
+## Stringify class
+{id: class-stringification}
+{i: __str__}
+{i: __repr__}
+
+* __repr__ "should" return Python-like code
+* __str__ should return readable representation
+* If __str__ does not exist, __repr__ is called instead.
+
+![](examples/classes/stringification/point.py)
+![](examples/classes/stringification/shapes.py)
+
+* Class attributes
+* Class methods
+* Static methods
+
+
+## Serialization of instances with pickle
+{id: selialization-with-pickle}
+{i: pickle}
+
+![](examples/classes/serialization_with_pickle.py)
+
+## Class in function
+{id: class-in-function}
+
+![](examples/oop/class_in_function.py)
 
 
 

@@ -284,7 +284,7 @@ How to find out which class an object (instance) belongs to?
 We can also call super() passing a different class name
 {/aside}
 
-![](examples/classes/inheritance/ball_shape2.py)
+![](examples/oop/inheritance/ball_shape2.py)
 
 
 ## Inheritance - super - other class
@@ -294,7 +294,7 @@ We can also call super() passing a different class name
 We cannot pass any class name to super()
 {/aside}
 
-![](examples/classes/inheritance/bad_shapes.py)
+![](examples/oop/inheritance/bad_shapes.py)
 
 
 
