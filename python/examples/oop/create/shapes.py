@@ -1,2 +1,2 @@
-class Point():
+class Point:
     pass

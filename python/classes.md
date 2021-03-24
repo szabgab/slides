@@ -99,10 +99,6 @@ In such a minimal class that does not do anything yet, Python still requires us 
 
 ![](examples/oop/use_empty_point.py)
 
-```
-<__main__.Point object at 0x7efc1c1e51c0>
-```
-
 ## Import module containing class
 {id: import-module-containing-class}
 
@@ -124,6 +120,13 @@ Alternatively you can import the class from the modue and then you can use the c
 
 ![](examples/oop/create/import_class.py)
 
+## Initialize instance (not a constructor)
+{id: initialize-instance-of-class}
+{i: __init__}
+
+![](examples/oop/initialize_empty_point.py)
+
+
 ## Self is the instance
 {id: self-is-the-instance}
 
@@ -131,20 +134,6 @@ Self is already the instance that will be returned
 
 ![](examples/oop/self_is_instance.py)
 
-```
-<__main__.Point object at 0x7ff3f45821c0>
-<__main__.Point object at 0x7ff3f45821c0>
-```
-
-## Initialize instance (not a constructor)
-{id: initialize-instance-of-class}
-{i: __init__}
-
-![](examples/oop/initialize_empty_point.py)
-
-```
-<__main__.Point object at 0x7f57922ec1c0>
-```
 
 ## Initialize a class - (not a constructor), attributes
 {id: class-initialization}
@@ -156,8 +145,14 @@ In Python we dont explicitely declare attributes so what people usually do is ad
 and let that method set up the initial values of the insance-object.
 {/aside}
 
-![](examples/oop/attributes/getters.py)
 ![](examples/oop/attributes/shapes.py)
+
+![](examples/oop/attributes/shapes2.py)
+
+## Getters - access the attributes
+{id: instance-getters}
+
+![](examples/oop/attributes/getters.py)
 
 ## Setters - assign to the attributes
 {id: instance-setters}
@@ -172,22 +167,38 @@ and let that method set up the initial values of the insance-object.
 
 ![](examples/oop/attributes/color.py)
 
+## Private attributes
+{id: private-attributes}
+
+![](examples/oop/attributes/private.py)
+
+## Secret attributes
+{id: secret-attributes}
+
+* Primarily useful to ensure inheriting classes don't accidently overwrite attributes.
+
+![](examples/oop/attributes/secret.py)
+
+
 ## Methods
 {id: class-methods}
 
-![](examples/oop/methods/point.py)
 ![](examples/oop/methods/shapes.py)
+![](examples/oop/methods/point.py)
 
 
 ## Inheritance
 {id: inheritance}
-![](examples/classes/inheritance/shapes.py)
-![](examples/classes/inheritance/circle.py)
+{i: super}
+
+![](examples/oop/inheritance/shapes.py)
+![](examples/oop/inheritance/circle.py)
 
 
 ## Inheritance - another level
 {id: inheritance-level2}
-![](examples/classes/inheritance/ball_shape.py)
+
+![](examples/oop/inheritance/ball_shape.py)
 
 
 ## Modes of method inheritance
@@ -197,6 +208,8 @@ and let that method set up the initial values of the insance-object.
 * Override
 * Extend
 * Delegate - Provide
+* ---
+* Composition
 
 
 ## Modes of method inheritance - implicit
@@ -204,7 +217,7 @@ and let that method set up the initial values of the insance-object.
 
 Inherit method
 
-![](examples/classes/inheritance/implicit.py)
+![](examples/oop/inheritance/implicit.py)
 
 
 ## Modes of method inheritance - override
@@ -212,8 +225,8 @@ Inherit method
 
 Replace method
 
-![](examples/classes/inheritance/override.py)
-![](examples/classes/inheritance/override.out)
+![](examples/oop/inheritance/override.py)
+![](examples/oop/inheritance/override.out)
 
 
 ## Modes of method inheritance - extend
@@ -222,7 +235,7 @@ Replace method
 
 Extend method before or after calling original.
 
-![](examples/classes/inheritance/extend.py)
+![](examples/oop/inheritance/extend.py)
 
 
 ## Modes of method inheritance - delegate - provide
@@ -230,12 +243,11 @@ Extend method before or after calling original.
 
 Let the child implement the functionality.
 
-![](examples/classes/inheritance/delegate.py)
+![](examples/oop/inheritance/delegate.py)
 
 * Should we have a version of greet() in the Parent that throws an exception?
 * Do we want to allow the creation of instance of the Parent class?
 * Abstract Base Class (abc)
-
 
 
 ## Composition - Line

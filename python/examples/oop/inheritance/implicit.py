@@ -1,4 +1,4 @@
-class Parent():
+class Parent:
     def greet(self):
         print("Hello World")
 

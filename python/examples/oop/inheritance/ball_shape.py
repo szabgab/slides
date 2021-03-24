@@ -1,4 +1,4 @@
-class Point():
+class Point:
     def __init__(self, x, y):
         print('__init__ of Point')
         self.x = x
