@@ -124,9 +124,21 @@ Alternatively you can import the class from the modue and then you can use the c
 
 ![](examples/oop/create/import_class.py)
 
+## Self is the instance
+{id: self-is-the-instance}
 
-## Initialize instance
+Self is already the instance that will be returned
+
+![](examples/oop/self_is_instance.py)
+
+```
+<__main__.Point object at 0x7ff3f45821c0>
+<__main__.Point object at 0x7ff3f45821c0>
+```
+
+## Initialize instance (not a constructor)
 {id: initialize-instance-of-class}
+{i: __init__}
 
 ![](examples/oop/initialize_empty_point.py)
 
@@ -134,52 +146,37 @@ Alternatively you can import the class from the modue and then you can use the c
 <__main__.Point object at 0x7f57922ec1c0>
 ```
 
-
-## Initialize a class - constructor, attributes
-{id: class-initialization-point}
-{i: __init__}
-{i: self}
-
-![](examples/classes/initialization/point.py)
-![](examples/classes/initialization/shapes.py)
-
-## Initialize a class - constructor, attributes
+## Initialize a class - (not a constructor), attributes
 {id: class-initialization}
 {i: __init__}
 {i: self}
 
 {aside}
-In Python we dont have a way to explicitely declare attributes so what people usually do is add a method calles `__init__`
+In Python we dont explicitely declare attributes so what people usually do is add a method calles `__init__`
 and let that method set up the initial values of the insance-object.
 {/aside}
 
-![](examples/classes/initialization/ppl.py)
+![](examples/oop/attributes/getters.py)
+![](examples/oop/attributes/shapes.py)
+
+## Setters - assign to the attributes
+{id: instance-setters}
+
+![](examples/oop/attributes/setters.py)
 
 
 ## Attributes are not special
 {id: classe-attributes-from-outside}
-![](examples/classes/attributes/ppl.py)
 
+* There is no automatic protection from this
 
-
+![](examples/oop/attributes/color.py)
 
 ## Methods
 {id: class-methods}
-![](examples/classes/methods/point.py)
-![](examples/classes/methods/shapes.py)
 
-
-## Stringify class
-{id: class-stringification}
-{i: __str__}
-{i: __repr__}
-
-* __repr__ "should" return Python-like code
-* __str__ should return readable representation
-* If __str__ does not exist, __repr__ is called instead.
-
-![](examples/classes/stringification/point.py)
-![](examples/classes/stringification/shapes.py)
+![](examples/oop/methods/point.py)
+![](examples/oop/methods/shapes.py)
 
 
 ## Inheritance
@@ -279,6 +276,34 @@ When an object holds references to one or more other objects.
 
 ![](examples/classes/quick.py)
 
+## Special methods
+{id: special-class-methods}
+{i: __str__}
+{i: __repr__}
+
+* `__str__`
+* `__repr__`
+* `__eq__`
+* `__lt__`
+* ...
+
+
+## Stringify class
+{id: class-stringification}
+{i: __str__}
+{i: __repr__}
+
+* __repr__ "should" return Python-like code
+* __str__ should return readable representation
+* If __str__ does not exist, __repr__ is called instead.
+
+![](examples/classes/stringification/point.py)
+![](examples/classes/stringification/shapes.py)
+
+* Class attributes
+* Class methods
+* Static methods
+
 
 ## Exercise: Add move_rad to based on radians
 {id: exercise-oop-move}
@@ -353,4 +378,5 @@ It can go forward n pixels. It can turn left n degrees. It can lift up the penci
 {id: solution-polygon}
 
 ![](examples/classes/composition/polygon.py)
+
 
