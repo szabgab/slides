@@ -379,4 +379,60 @@ It can go forward n pixels. It can turn left n degrees. It can lift up the penci
 
 ![](examples/classes/composition/polygon.py)
 
+## Declaring attributes (dataclasses)
+{id: dataclass}
+
+* Starting from 3.7 [dataclasses](https://docs.python.org/library/dataclasses.html)
+* Typehints are required but not enforced!
+
+![](examples/oop/dataclasses/shapes.py)
+![](examples/oop/dataclasses/point.py)
+
+## Dataclasses and __repr__
+{id: dataclass-and-repr}
+
+* `__repr__` is implemented
+
+![](examples/oop/dataclasses/repr.py)
+
+## Dataclasses and __eq__
+{id: dataclass-provide-eq}
+
+* `__eq__` is automatically implemented
+
+![](examples/oop/dataclasses/compare.py)
+
+__eq__ are automatically implemented
+
+## Dataclasses create __init__ and call __post_init__
+{id: dataclass-post-init}
+
+* `__init__` is implemented and that's how the attributes are initialized
+* `__post_init__` is called after `__init__` to allow for further initializations
+
+![](examples/oop/dataclasses_init/shapes.py)
+![](examples/oop/dataclasses_init/point.py)
+
+## Dataclasses can provide default values to attributes
+{id: dataclasses-default}
+
+![](examples/oop/dataclasses_default/shapes.py)
+![](examples/oop/dataclasses_default/point.py)
+
+* Attributes with default values must before attributes without default
+
+## Dataclasses and default factory
+{id: dataclasses-and-default-factory}
+
+![](examples/oop/dataclasses_default/fruits.py)
+
+## Read only (frozen) Dataclass
+{id: read-only-dataclass}
+
+* `@dataclass(frozen = True)`    makes the class immutable
+
+![](examples/oop/dataclasses_frozen/shapes.py)
+![](examples/oop/dataclasses_frozen/point.py)
+
+
 
