@@ -860,4 +860,18 @@ pytest -p no:random-order -v
 ![](examples/pytest/py3/conftest.py)
 ![](examples/pytest/py3/test_one.py)
 
+## Classes
+{id: old-oop-examples}
+
+![](examples/classes/ppl.py)
+![](examples/classes/ppl.out)
+
+## Create a class inherit from object
+{id: class-creation-inherit-from-object}
+
+* In Python 2.x classes had to inherit from `object` in order to become 'new style' classes.
+
+![](examples/classes/with_object.py)
+![](examples/classes/with_object.out)
+
 

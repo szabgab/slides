@@ -79,8 +79,8 @@ Now we are going to learn how can you create your own classes.
 
 ## Create a class
 {id: class-creation}
+
 {i: class}
-{i: object}
 {i: __class__}
 {i: __name__}
 {i: dir}
@@ -92,17 +92,16 @@ Usually the first letter is capitalized.
 In such a minimal class that does not do anything yet, Python still requires us to write some code.
 {/aside}
 
-![](examples/classes/ppl.py)
-![](examples/classes/ppl.out)
+![](examples/oop/empty_point.py)
 
-## Create a class inherit from object
-{id: class-creation-inherit-from-object}
+## Create instance of class
+{id: create-instance-of-class}
 
-* In Python 2.x classes had to inherit from `object` in order to become 'new style' classes.
+![](examples/oop/use_empty_point.py)
 
-![](examples/classes/with_object.py)
-![](examples/classes/with_object.out)
-
+```
+<__main__.Point object at 0x7efc1c1e51c0>
+```
 
 ## Import module containing class
 {id: import-module-containing-class}
@@ -112,9 +111,8 @@ You probably want your classes to be reusabel by multiple programs, so it is bet
 right from the beginning. In this example you can see how to do that importing the module and then using the dot notation to get to the class.
 {/aside}
 
-![](examples/classes/pplx.py)
-![](examples/classes/import_module.py)
-![](examples/classes/import_module.out)
+![](examples/oop/create/import_module.py)
+![](examples/oop/create/shapes.py)
 
 
 ## Import class from module
@@ -124,9 +122,26 @@ right from the beginning. In this example you can see how to do that importing t
 Alternatively you can import the class from the modue and then you can use the classname without any prefix.
 {/aside}
 
-![](examples/classes/pplx.py)
-![](examples/classes/import_class.py)
+![](examples/oop/create/import_class.py)
 
+
+## Initialize instance
+{id: initialize-instance-of-class}
+
+![](examples/oop/initialize_empty_point.py)
+
+```
+<__main__.Point object at 0x7f57922ec1c0>
+```
+
+
+## Initialize a class - constructor, attributes
+{id: class-initialization-point}
+{i: __init__}
+{i: self}
+
+![](examples/classes/initialization/point.py)
+![](examples/classes/initialization/shapes.py)
 
 ## Initialize a class - constructor, attributes
 {id: class-initialization}
@@ -146,18 +161,6 @@ and let that method set up the initial values of the insance-object.
 ![](examples/classes/attributes/ppl.py)
 
 
-## Create Point class
-{id: create-class-point}
-![](examples/classes/create/point.py)
-![](examples/classes/create/shapes.py)
-
-
-## Initialize a class - constructor, attributes
-{id: class-initialization-point}
-{i: __init__}
-{i: self}
-![](examples/classes/initialization/point.py)
-![](examples/classes/initialization/shapes.py)
 
 
 ## Methods
