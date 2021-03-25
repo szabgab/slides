@@ -442,5 +442,9 @@ __eq__ are automatically implemented
 
 ![](examples/oop/class_in_function.py)
 
+## Multiple inheritance
+{id: multiple-inheritance}
+
+![](examples/oop/inheritance/multi.py)
 
 
