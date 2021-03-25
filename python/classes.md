@@ -134,8 +134,17 @@ Self is already the instance that will be returned
 
 ![](examples/oop/self_is_instance.py)
 
+## Init uses same name as attribute and getters
+{id: instance-getters}
+{i: __init__}
+{i: self}
 
-## Initialize a class - (not a constructor), attributes
+![](examples/oop/attributes/shapes2.py)
+
+![](examples/oop/attributes/use_shapes2.py)
+
+
+## Initialize a class - (not a constructor), attributes and getters
 {id: class-initialization}
 {i: __init__}
 {i: self}
@@ -147,12 +156,8 @@ and let that method set up the initial values of the insance-object.
 
 ![](examples/oop/attributes/shapes.py)
 
-![](examples/oop/attributes/shapes2.py)
+![](examples/oop/attributes/use_shapes.py)
 
-## Getters - access the attributes
-{id: instance-getters}
-
-![](examples/oop/attributes/getters.py)
 
 ## Setters - assign to the attributes
 {id: instance-setters}

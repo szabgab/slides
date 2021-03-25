@@ -10,5 +10,6 @@ t = Thing()
 #print(t.__secret)  # AttributeError: 'Thing' object has no attribute '__secret'
 print(t.get_secret())    # Sick Rat
 
+print(dir(t))            # ['_Thing__secret',  ...]
 
 print(t._Thing__secret)  # Sick Rat

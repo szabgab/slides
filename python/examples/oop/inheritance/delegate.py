@@ -10,7 +10,7 @@ class Child(Parent):
         return self.name
 
 # Should not create instance from Parent
-# p = Parent()
+p = Parent()
 # p.greet()    # AttributeError: 'Parent' object has no attribute 'get_name'
 
 c  = Child('Foo')
