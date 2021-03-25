@@ -270,7 +270,7 @@ When an object holds references to one or more other objects.
 ## Exercise: Add move_rad to based on radians
 {id: exercise-oop-move}
 
-* From the **Python: Methods** take the examples/classes/methods/shapes.py and add a method called **move_rad(dist, angle)** that accpets a distance and an angle and moved the point accordingly.
+* From the **Python: Methods** take the examples/oop/methods/shapes.py and add a method called **move_rad(dist, angle)** that accpets a distance and an angle and moved the point accordingly.
 
 
 ```
@@ -282,7 +282,7 @@ delta_y = dist * sin(angle)
 ## Exercise: Improve previous examples
 {id: exercise-oop-balls}
 
-* Take the previous example **Python: Inheritance - another level** and the example file called examples/classes/inheritance/ball_shape.py and change it so the **Ball** class will accept  **x, y, z, r**.
+* Take the previous example **Python: Inheritance - another level** and the example file called examples/oop/inheritance/ball_shape.py and change it so the **Ball** class will accept  **x, y, z, r**.
 * Add a method called move to the new Ball class that will accept dx, dy, dz.
 * Implement a method that will return the volume of the ball.
 
