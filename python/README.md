@@ -291,3 +291,15 @@ def __call__(self, ...):   to make the instances callable (when would we need it
 __setattr__
 __getattr__
 
+## Data Science
+
+Machine Learning
+
+Data points show by a scatter plot
+Clusters
+
+
+Usupervised machine learning
+cluster analyzis
+K-means algorithm
+
