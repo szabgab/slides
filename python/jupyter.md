@@ -134,11 +134,24 @@ jupyter notebook
 jupyter notebook genes.ipynb
 ```
 
+## Jupyter Notebook and Markdown
+{id: jupyter-notebook-markdown}
+
+* `markdown.ipynb`
+* [Jupyter Markdown](https://jupyter-notebook.readthedocs.io/en/latest/examples/Notebook/Working%20With%20Markdown%20Cells.html(
+* [Original Markdown](https://daringfireball.net/projects/markdown/syntax)
+* [Markdown](https://en.wikipedia.org/wiki/Markdown)
+
+## Latex in Jupyter Notebook
+{id: {jupyter-notebook-latex}
+
+* `latex.ipynb`
+* [Latex symbols](https://en.wikipedia.org/wiki/Wikipedia:LaTeX_symbols)
+
 ## More Jupyter examples
 {id: jupyter-examples}
 
 * `generate.ipynb` Generate a single Pandas DataFrame
-* `markdow.ipynb`
 * `salary_generate.ipynb`
 * `salary.ipynb`
 * `temperatures.ipynb`
@@ -146,4 +159,44 @@ jupyter notebook genes.ipynb
 * `numpy_matrix.ipynb`
 * `seaborn_tips.ipynb`
 
+## Jupyter Notebook: run on other port
+{id: jupyter-notebook-on-other-ports}
+
+```
+jupyter notebook --port 8080
+```
+
+## Jupyter Notebook: public IP
+{id: jupyter-notebook-public-ip}
+
+```
+jupyter notebook --ip 192.168.1.10
+```
+
+
+## Other Jupyter Notebook Kernels
+{id: other-jupyter-notebook-kernels}
+
+[Jupyter Kernels](https://github.com/jupyter/jupyter/wiki/Jupyter-kernels)
+
+## Jupyter Notebook convert to other format (nbconvert)
+{id: jupyter-notebook-convert-to-other-format}
+{i: nbconvert}
+
+```
+jupyter nbconvert try.ipynb --to HTML
+jupyter nbconvert try.ipynb --to PDF    (needs also pandoc)
+```
+
+## Jupyter Notebook extensions
+{id: jupyter-notebook-extensions}
+
+```
+pip install jupyter_contrib_nbextensions
+pip install jupyter_nbextensions_configurator
+jupyter nbextensions_configurator enable --user
+```
+
+* Scratchpad
+* Variable Inspector
 
