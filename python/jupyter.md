@@ -1,7 +1,7 @@
 # Jupyter notebooks
 {id: jupyter}
 
-## What is Jupyter?
+## What is Jupyter Notebook?
 {id: what-is-jupyter}
 
 * [Jupyter](https://jupyter.org/)
@@ -68,9 +68,7 @@ jupyter notebook
 ## Jupyter notebook Intellisense (TAB completition)
 {id: jupyter-notebook-intellisense}
 
-```
-%config IPCompleter.greedy=True
-```
+* Just press TAB
 
 
 ## Jupyter add
@@ -125,7 +123,7 @@ jupyter notebook
 * [Interact](https://ipywidgets.readthedocs.io/en/latest/examples/Using%20Interact.html)
 * [Widget list](https://ipywidgets.readthedocs.io/en/latest/examples/Widget%20List.html)
 
-* `ipwidget_examples.ipynb`
+* `ipywidgets.ipynb`
 
 ## Genes using Jupyter
 {id: genes-using-jupyter}
