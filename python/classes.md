@@ -447,4 +447,7 @@ __eq__ are automatically implemented
 
 ![](examples/oop/inheritance/multi.py)
 
+![](examples/oop/counter_increase.py)
+![](examples/oop/counter_decrease.py)
+![](examples/oop/list_things.py)
 
