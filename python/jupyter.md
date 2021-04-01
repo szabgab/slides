@@ -141,7 +141,7 @@ jupyter notebook genes.ipynb
 * [Markdown](https://en.wikipedia.org/wiki/Markdown)
 
 ## Latex in Jupyter Notebook
-{id: {jupyter-notebook-latex}
+{id: jupyter-notebook-latex}
 
 * `latex.ipynb`
 * [Latex symbols](https://en.wikipedia.org/wiki/Wikipedia:LaTeX_symbols)
