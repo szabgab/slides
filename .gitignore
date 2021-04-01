@@ -68,3 +68,8 @@ node_modules/
 nodejs/package-lock.json
 nodejs/package.json
 .tox
+
+scala/examples/*/project/target
+scala/examples/*/target
+scala/examples/.bsp
+scala/examples/*/.bsp

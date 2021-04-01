@@ -38,7 +38,7 @@ OpenJDK 64-Bit Server VM (build 11.0.10+9-Ubuntu-0ubuntu1.20.10, mixed mode, sha
 
 ```
 docker build -t scala .
-docekr run --rm -it scala
+docker run --rm -it -v$(pwd):/opt scala
 ```
 
 ```
@@ -69,6 +69,70 @@ scala> :quit
 ```
 :help
 ```
+
+## Scala Syntax
+{id: scala-syntax}
+
+* Semicolons (;) are optional at the end of the statement
+
+## Comments
+{id: comments-in-scala}
+
+
+```
+// Single line
+```
+
+```
+/*
+   Multi line
+*/
+```
+
+## Hello World in Scala
+{id: hello-world-in-scala}
+
+
+![](examples/HelloWorld.scala)
+
+Run Hello World in the REPL
+
+
+```
+$ scala
+scala> :load Hello.scala
+scala> Hello.main(null)
+scala> Hello.main(Array())
+```
+
+
+val numbers = List(4, 7, 3)
+
+`val` creates an immutable object.
+
+
+## Run with sbt
+{id: run-with-sbt}
+
+* Create directory structure:
+
+```
+hello-world/
+├── build.sbt
+├── project
+│   └── build.properties
+└── src
+    └── main
+        └── scala
+            └── Main.scala
+```
+
+![](examples/hello-world/src/main/scala/Main.scala)
+
+## Scala show dates
+{id: scala-show-dates}
+
+![](examples/ShowDates.scala)
 
 
 
