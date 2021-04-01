@@ -1,7 +1,5 @@
-object Hello {
+object HelloWorld {
     def main(args:Array[String]) {
-        //val name:String = args(0)
-        //println("Hello " + name + "!!")
         println("Hello World!")
     }
 }

@@ -9,6 +9,16 @@
 * Started in 2001, first released in 2004
 * Runs on JVM, the Java Virtual Machine
 
+
+## Install Scala
+{id: install-scala}
+
+* On Ubuntu
+
+```
+apt install scala
+```
+
 ## Editors
 {id: scala-editors}
 
@@ -75,20 +85,6 @@ scala> :quit
 
 * Semicolons (;) are optional at the end of the statement
 
-## Comments
-{id: comments-in-scala}
-
-
-```
-// Single line
-```
-
-```
-/*
-   Multi line
-*/
-```
-
 ## Hello World in Scala
 {id: hello-world-in-scala}
 
@@ -105,10 +101,67 @@ scala> Hello.main(null)
 scala> Hello.main(Array())
 ```
 
+```
+$ scalac  HelloWorld.scala
+$ scala   HelloWorld
+Hello World!
+```
 
-val numbers = List(4, 7, 3)
+![](examples/HelloName.scala)
+
+## Run (Shell script)
+{id: run}
+
+![](examples/run.sh)
+
+## Hello Name (command line parameters)
+{id: hello-name}
+
+```
+$ scalac HelloName.scala
+$ scala HelloName Foo
+Hello Foo!
+```
+
+## var vs val
+{id: var-vs-val}
 
 `val` creates an immutable object.
+`var` create mutable object.
+
+## val is immutable
+{id: val-is-immutable}
+
+![](examples/ValIsImmutable.scala)
+
+```
+ValIsImmutable.scala:5: error: reassignment to val
+        counter = 1
+                ^
+one error found
+```
+
+## var is immutable
+{id: var-is-immutable}
+
+![](examples/VarIsMutable.scala)
+
+
+```
+0
+1
+```
+
+## Concatenate strings
+{id: concatenate-strings}
+
+![](examples/ConcatenateStrings.scala)
+
+## Add Numbers (convert string to int)
+{id: add-numbers}
+{i: toInt}
+
+![](examples/AddNumbers.scala)
 
 
 ## Run with sbt
@@ -129,10 +182,42 @@ hello-world/
 
 ![](examples/hello-world/src/main/scala/Main.scala)
 
+## Comments
+{id: comments-in-scala}
+
+
+```
+// Single line
+```
+
+```
+/*
+   Multi line
+*/
+```
+
+## Scala While loop
+{id: while-loop}
+
+![](examples/WhileLoop.scala)
+
+
+## Scala For loop
+{id: for-loop}
+
+![](examples/ForLoop.scala)
+
 ## Scala show dates
 {id: scala-show-dates}
 
 ![](examples/ShowDates.scala)
 
+## More
+{id: more}
 
+* Lengths of array
+
+
+![](examples/Names.scala)
+![](examples/Try.scala)
 

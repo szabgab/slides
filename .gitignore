@@ -69,7 +69,12 @@ nodejs/package-lock.json
 nodejs/package.json
 .tox
 
+# Scala
 scala/examples/*/project/target
+scala/examples/*/project/project
 scala/examples/*/target
 scala/examples/.bsp
 scala/examples/*/.bsp
+scala/examples/*/.metals
+scala/.metals
+scala/examples/*/project/metals.sbt
