@@ -206,6 +206,7 @@ hello-world/
 {id: for-loop}
 
 ![](examples/ForLoop.scala)
+![](examples/ForLoopRange.scala)
 
 ## Scala show dates
 {id: scala-show-dates}
@@ -216,6 +217,8 @@ hello-world/
 {id: more}
 
 * Lengths of array
+
+* Left facing arrow `<-`
 
 
 ![](examples/Names.scala)

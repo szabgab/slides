@@ -6,4 +6,4 @@ then
 fi
 echo $1
 scalac $1.scala
-scala $1
+scala $*
