@@ -303,3 +303,17 @@ Usupervised machine learning
 cluster analyzis
 K-means algorithm
 
+## Jupyer Notebook
+
+* Edit and Command mode
+* TAB for word completition and method suggestions
+* Number is the executin order Out[] refers to the number of the cell for this this the output.
+
+* Show Markdown various examples, and the documentation
+* How to insert complex formulas?
+
+* Header type is legacy - use Markdown instead
+
+* What other Kernels can I install?
+
+
