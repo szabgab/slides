@@ -418,7 +418,7 @@ It was experimental and dropped from Python 3
 
 Only works in Python 2?
 
-![](examples/classes/abc/without_abc.py)
+![](examples/oop/abc/without_abc.py)
 
 ## Abstract Base Class with abc Python 2 ?
 {id: abstract-base-class-with-abc-python2}
