@@ -28,7 +28,7 @@
         "yaml.md",
         "argparse.md",
         "exceptions.md",
-        "classes.md",
+        "oop.md",
         "pypi.md",
         "database.md",
         "sqlite.md",
