@@ -1,4 +1,4 @@
-class Person:
+class Thing:
     def __init__(self, name):
         self.name = name
         print(f'__init__ {name}')
@@ -7,8 +7,8 @@ class Person:
         print(f'__del__ {self.name}')
 
 def main():
-    a = Person('A')
-    b = Person('B')
+    a = Thing('A')
+    b = Thing('B')
     a.partner = a
     print('in main - after')
 

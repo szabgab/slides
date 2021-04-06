@@ -2,6 +2,7 @@ class Person:
     name = 'Joe'
 
 # Class Attributes are inherited by object instances when accessing them.
+print(Person.name)    # Joe
 x = Person()
 print(x.name)         # Joe
 y = Person()
@@ -12,12 +13,15 @@ Person.name = 'Bar'
 print(Person.name)    # Bar
 print(x.name)         # Bar
 
-# Setting the attribute via the instance will create an instance attribute that
-# shadows the class attribute
+
+# Setting the attribute via the instance will create an instance attribute that shadows the class attribute:
 x.name = 'Joseph'
 print(x.name)         # Joseph
+
+# You can still access the class attribute directly:
 print(Person.name)    # Bar
-# Nor does it impact the instance attribute of other instances:
+
+# It does not impact the instance attribute of other instances:
 print(y.name)         # Bar
 
 # Both instance and class have a dictionary containing its members:

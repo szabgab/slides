@@ -123,11 +123,10 @@ Because the instances reference each other
 ![](examples/oop/destructor_both.out)
 
 
-
 ## Class Attributes in Instances
 {id: class-attributes-in-instances}
 
-![](examples/classes/person11.py)
+![](examples/oop/person11.py)
 
 
 ## Attributes with method access
@@ -137,8 +136,7 @@ Because the instances reference each other
 
 ![](examples/classes/person2.py)
 
-
-## Methods are class  attributes
+## Methods are class attributes
 {id: methods-are-class-attributes}
 
 In this example we are going to replace the method in the class by a newly created function.
@@ -153,8 +151,16 @@ In this example we are going to replace the method in the class by a newly creat
 ![](examples/classes/person5.py)
 
 
-## Classes: instance method
-{id: classes-instance-method}
+
+## Method types
+{id: method-types}
+
+* Instance methods - working on self
+* Class mthods - working on the class (e.g. alternative constructor)
+* Static methods - have no self or class (helper functions)
+
+## Instance methods
+{id: oop-instance-method}
 
 {aside}
 Regular functions (methods) defined in a class are "instance methods". They can only be called on "instance objects" and not on the "class object"
@@ -184,8 +190,8 @@ but actually we can access it from the outside even without the class method, ju
 ![](examples/classes/mydate3/run.out)
 
 
-## Classes: constructor
-{id: classes}
+## Constructor
+{id: constructor}
 
 * The "class" keyword creates a "class object". The default constructor of these classes are their own names.
 * The actual code is implemented in the `__new__` method of the `object`.
@@ -199,63 +205,12 @@ but actually we can access it from the outside even without the class method, ju
 Class methods are used as Factory methods, they are usually good for alternative constructors. In order to be able to use a method as a class-method
 (Calling Date.method(...) one needs to mark the method with the `@classmethod` decorator)
 
+* Normally we create a Date instance by passing 3 numbers for Year, Monh, Day.
+* We would also like to be able to create an instance using a string like this: `2021-04-07`
+
 ![](examples/classes/mydate2/mydate.py)
 ![](examples/classes/mydate2/run.py)
 ![](examples/classes/mydate2/run.out)
-
-
-## Use Python @propery to fix bad interface (the bad interface)
-{id: property-fixing-bad-api-original}
-{i: @property}
-
-When we created the class the first time we wanted to have a field representing the age of
-a person. (For simplicity of the example we onlys store the years.)
-
-![](examples/classes/person/person1.py)
-
-Only after releasing it to the public have we noticed the problem. Age changes.
-
-We would have been better off storing birthdate and if necessary calculating the age.
-
-How can we fix this?
-
-## Use Python @propery to fix bad interface (first attempt)
-{id: property-fixing-bad-api-first-attempt}
-
-This might have been a good solution, but now we cannot use this as a "fix" as this
-would change the public interface from `p.age` to `p.age()`
-
-![](examples/classes/person/person2.py)
-
-
-## Use Python @propery to fix bad API
-{id: property-fixing-bad-api}
-{i: property}
-
-```
-property(fget=None, fset=None, fdel=None, doc=None)
-```
-![](examples/classes/person/person3.py)
-
-
-## Use Python @propery decorator to fix bad API
-{id: property-fixing-bad-api-with-decorators}
-{i: @property}
-![](examples/classes/person/person4.py)
-
-* [property article](http://www.programiz.com/python-programming/property)
-* [property docs](https://docs.python.org/library/functions.html#property)
-
-
-## Use Python @propery for value validation
-{id: property-for-validation}
-{i: @property}
-
-![](examples/classes/person/person5.py)
-![](examples/classes/person/person5_good.py)
-![](examples/classes/person/person5_bad_init.py)
-![](examples/classes/person/person5_bad_init.out)
-![](examples/classes/person/person5_bad_setter.out)
 
 
 ## class and static methods
@@ -487,6 +442,60 @@ zz = z1*z2
 The attributes of the instance object can be set via 'self' from within the class.
 
 ![](examples/classes/person3.py)
+
+
+## Use Python @propery to fix bad interface (the bad interface)
+{id: property-fixing-bad-api-original}
+{i: @property}
+
+When we created the class the first time we wanted to have a field representing the age of
+a person. (For simplicity of the example we onlys store the years.)
+
+![](examples/classes/person/person1.py)
+
+Only after releasing it to the public have we noticed the problem. Age changes.
+
+We would have been better off storing birthdate and if necessary calculating the age.
+
+How can we fix this?
+
+## Use Python @propery to fix bad interface (first attempt)
+{id: property-fixing-bad-api-first-attempt}
+
+This might have been a good solution, but now we cannot use this as a "fix" as this
+would change the public interface from `p.age` to `p.age()`
+
+![](examples/classes/person/person2.py)
+
+
+## Use Python @propery to fix bad API
+{id: property-fixing-bad-api}
+{i: property}
+
+```
+property(fget=None, fset=None, fdel=None, doc=None)
+```
+![](examples/classes/person/person3.py)
+
+
+## Use Python @propery decorator to fix bad API
+{id: property-fixing-bad-api-with-decorators}
+{i: @property}
+![](examples/classes/person/person4.py)
+
+* [property article](http://www.programiz.com/python-programming/property)
+* [property docs](https://docs.python.org/library/functions.html#property)
+
+
+## Use Python @propery for value validation
+{id: property-for-validation}
+{i: @property}
+
+![](examples/classes/person/person5.py)
+![](examples/classes/person/person5_good.py)
+![](examples/classes/person/person5_bad_init.py)
+![](examples/classes/person/person5_bad_init.out)
+![](examples/classes/person/person5_bad_setter.out)
 
 
 

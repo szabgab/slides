@@ -1,6 +1,6 @@
-__init__ for Joe
-__init__ for Jane
+__init__ for A
+__init__ for B
 in main - after
 after main
-__del__ for Joe
-__del__ for Jane
+__del__ for A
+__del__ for B
