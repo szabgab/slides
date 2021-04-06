@@ -1,5 +1,8 @@
 import weakref
 
+def prt():
+    print(list(Thing.things.keys()))
+
 class Thing:
     things = {}
     def __init__(self):
@@ -11,14 +14,16 @@ class Thing:
 
 
 def main():
-    print(Thing.things)
+    prt()
     t1 = Thing()
-    print(Thing.things)
+    prt()
     t2 = Thing()
-    print(Thing.things)
+    prt()
     t3 = Thing()
-    print(Thing.things)
+    prt()
+    t3 = None
+    prt()
 
 main()
-print(Thing.things)
+prt()
 

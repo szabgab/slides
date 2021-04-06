@@ -11,6 +11,8 @@ def main():
     print(Thing.count)  # 2
     t3 = Thing()
     print(Thing.count)  # 3
+    t3 = None
+    print(Thing.count)  # 3
 
 main()
 print(Thing.count)  # 3

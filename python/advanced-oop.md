@@ -82,8 +82,8 @@
 {i: __init__}
 {i: __del__}
 
-![](examples/advanced/destructor.py)
-![](examples/advanced/destructor.out)
+![](examples/oop/destructor.py)
+![](examples/oop/destructor.out)
 
 
 ## Class count instances - decrease also (destructor: __del__)
@@ -91,23 +91,36 @@
 {i: __del__}
 
 ![](examples/oop/counter_decrease.py)
-![](examples/oop/list_things.py)
+
+## Keep track of instances
+{id: keep-track-of-instances}
+
+![](examples/oop/keep_track.py)
+![](examples/oop/keep_track.out)
+
+
+## Keep track of instances properly (weakref)
+{id: keep-track-of-instances-properly}
+{i: weakref}
+
+![](examples/oop/keep_track_properly.py)
+![](examples/oop/keep_track_properly.out)
 
 ## Destructor delayed
 {id: destructor-delayed}
 
-Becasue the object has a reference to itself. (Python uses both reference count and garbage collection.)
+Because the object has a reference to itself. (Python uses both reference count and garbage collection.)
 
-![](examples/advanced/destructor_self_reference.py)
-![](examples/advanced/destructor_self_reference.out)
+![](examples/oop/destructor_self_reference.py)
+![](examples/oop/destructor_self_reference.out)
 
 ## Destructor delayed for both
-{id: destructor-sipped}
+{id: destructor-delayed-for-both}
 
 Because the instances reference each other
 
-![](examples/advanced/destructor_skipped.py)
-![](examples/advanced/destructor_skipped.out)
+![](examples/oop/destructor_both.py)
+![](examples/oop/destructor_both.out)
 
 
 
@@ -292,91 +305,6 @@ In order to make the multiplication work in the other direction, one needs to im
 
 * [see all of them in datamodel](https://docs.python.org/reference/datamodel.html)
 
-
-## Exercise: rectangle
-{id: exercise-oop-rectangle}
-
-
-Take the Rect class in the shapes module. Implement __rmul__, but in that case multiply the width of the rectangle.
-
-Implement the addition of two rectangles. I think this should be defined only if one of the sides is the same,
-but if you have an idea how to add two rectangualars of different sides, then go ahead, implement that.
-
-Also implement all the comparision operators when comparing two rectangles, compare the area of the two. (like less-than)
-Do you need to implement all of them?
-
-
-## Exercise: SNMP numbers
-{id: exercise-snmp-numbers}
-
-* SNMP numbers are strings consisting a series of integers separated by dots: 1.5.2,  3.7.11.2
-* Create a class that can hold such an snmp number. Make sure we can compare them with less-than (the comparision is pair-wise for each number until we find two numbers that are different. If one SNMP number is the prefix is the other then the shorter is "smaller").
-* Add a class-method, that can tell us how many SNMP numbers have been created.
-* Write a separate file to add unit-tests
-
-## Exercise: Implement a Gene inheritance model combining DNA
-{id: exercise-implement-a-gene-inheritance-model}
-
-* A class representing a person. It has an attribute called "genes" which is string of letters. Each character is a gene.
-* Implement the `+` operator on genes that will create a new "Person" and for the gene will select one randomly from each parent.
-
-```
-a = Person('ABC')
-b = Person('DEF')
-
-c = a + b
-print(c.gene) # ABF
-```
-
-## Exercise: imaginary numbers - complex numbers
-{id: exercise-imaginary-numbers}
-
-Create a class that will represent imaginary numbers `(x, y*i)`
-and has methods to add and multiply two imaginary numbers.
-
-
-```
-The math:
-
-z1 = (x1 + y1*i)
-z2 = (x2 + y2*i)
-z1+z2 = (x1 + x2  + (y1 + y2)*i)
-
-z1*z2 = x1*y1 + x2*y2*i*i + x1*y2*i + x2*y1*i
-```
-
-Add operator overloading so we can really write code like:
-
-```
-z1 = Z(2, 3)
-z2 = Z(4, 7)
-
-zz = z1*z2
-```
-
-* See [cmath](https://docs.python.org/library/cmath.html)
-
-![](examples/advanced/complex_numbers.py)
-![](examples/advanced/complex_numbers.out)
-
-
-## Solution: Rectangle
-{id: solution-oop-rectangle}
-
-![](examples/advanced/rect/shape2.py)
-![](examples/advanced/rect/test_rect.py)
-
-
-## Solution: Implement a Gene inheritance model combining DNA
-{id: solution-implement-a-gene-inheritance-model}
-
-![](examples/advanced/gene_inheritance.py)
-
-## Instance counter
-{id: instance-counter}
-
-![](examples/advanced/instance_couner.py)
-
 ## Declaring attributes (dataclasses)
 {id: dataclass}
 
@@ -472,6 +400,86 @@ __eq__ are automatically implemented
 {id: class-in-function}
 
 ![](examples/oop/class_in_function.py)
+
+
+## Exercise: rectangle
+{id: exercise-oop-rectangle}
+
+
+Take the Rect class in the shapes module. Implement __rmul__, but in that case multiply the width of the rectangle.
+
+Implement the addition of two rectangles. I think this should be defined only if one of the sides is the same,
+but if you have an idea how to add two rectangualars of different sides, then go ahead, implement that.
+
+Also implement all the comparision operators when comparing two rectangles, compare the area of the two. (like less-than)
+Do you need to implement all of them?
+
+
+## Exercise: SNMP numbers
+{id: exercise-snmp-numbers}
+
+* SNMP numbers are strings consisting a series of integers separated by dots: 1.5.2,  3.7.11.2
+* Create a class that can hold such an snmp number. Make sure we can compare them with less-than (the comparision is pair-wise for each number until we find two numbers that are different. If one SNMP number is the prefix is the other then the shorter is "smaller").
+* Add a class-method, that can tell us how many SNMP numbers have been created.
+* Write a separate file to add unit-tests
+
+## Exercise: Implement a Gene inheritance model combining DNA
+{id: exercise-implement-a-gene-inheritance-model}
+
+* A class representing a person. It has an attribute called "genes" which is string of letters. Each character is a gene.
+* Implement the `+` operator on genes that will create a new "Person" and for the gene will select one randomly from each parent.
+
+```
+a = Person('ABC')
+b = Person('DEF')
+
+c = a + b
+print(c.gene) # ABF
+```
+
+## Exercise: imaginary numbers - complex numbers
+{id: exercise-imaginary-numbers}
+
+Create a class that will represent imaginary numbers `(x, y*i)`
+and has methods to add and multiply two imaginary numbers.
+
+
+```
+The math:
+
+z1 = (x1 + y1*i)
+z2 = (x2 + y2*i)
+z1+z2 = (x1 + x2  + (y1 + y2)*i)
+
+z1*z2 = x1*y1 + x2*y2*i*i + x1*y2*i + x2*y1*i
+```
+
+Add operator overloading so we can really write code like:
+
+```
+z1 = Z(2, 3)
+z2 = Z(4, 7)
+
+zz = z1*z2
+```
+
+* See [cmath](https://docs.python.org/library/cmath.html)
+
+![](examples/advanced/complex_numbers.py)
+![](examples/advanced/complex_numbers.out)
+
+
+## Solution: Rectangle
+{id: solution-oop-rectangle}
+
+![](examples/advanced/rect/shape2.py)
+![](examples/advanced/rect/test_rect.py)
+
+
+## Solution: Implement a Gene inheritance model combining DNA
+{id: solution-implement-a-gene-inheritance-model}
+
+![](examples/advanced/gene_inheritance.py)
 
 ## Instance Attribute
 {id: instance-attribute}

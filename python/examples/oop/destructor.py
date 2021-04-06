@@ -1,11 +1,11 @@
-class Person:
+class Thing:
     def __init__(self):
         print('__init__')
     def __del__(self):
         print('__del__')
 
 def main():
-    a = Person()
+    a = Thing()
     print('in main - after')
 
 main()

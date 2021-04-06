@@ -6,13 +6,15 @@ class Thing:
         Thing.count -= 1
 
 def main():
-    print(Thing.count)
+    print(Thing.count)  # 0
     t1 = Thing()
-    print(Thing.count)
+    print(Thing.count)  # 1
     t2 = Thing()
-    print(Thing.count)
+    print(Thing.count)  # 2
     t3 = Thing()
-    print(Thing.count)
+    print(Thing.count)  # 3
+    t3 = None
+    print(Thing.count)  # 2
 
 main()
-print(Thing.count)
+print(Thing.count)  # 0
