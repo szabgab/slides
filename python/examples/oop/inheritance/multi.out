@@ -1,0 +1,6 @@
+__init__ of Child
+__init__ of ParentA
+in_parent_a
+in_parent_b
+in_child
+in_both in parent A

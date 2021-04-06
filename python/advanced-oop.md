@@ -1,11 +1,22 @@
 # Advanced OOP
 {id: advanced-oop}
 
-## Class count instances
-{id: class-count-instances}
+## Multiple inheritance
+{id: multiple-inheritance}
 
-![](examples/classes/counter.py)
-![](examples/classes/counter.out)
+![](examples/oop/inheritance/multi.py)
+![](examples/oop/inheritance/multi.out)
+
+* [mro - method resolution order](https://www.python.org/download/releases/2.3/mro/)
+
+## Multiple inheritance - diamond
+{id: multiple-inheritance-diamond}
+
+* Not Bot ParentA and ParentB inherit attributes from GrandParent,
+* but they are now merged.
+
+![](examples/oop/inheritance/diamond.py)
+
 
 ## Class Attributes
 {id: attributes}
@@ -13,8 +24,47 @@
 * Class attributes can be created inside a class.
 * Assign to class attribute and fetch from it
 * Class attributes can be also created from the outside.
+* Creating a instance does not impact the class attribute.
 
-![](examples/classes/person1.py)
+![](examples/oop/person1.py)
+
+## Class count instances
+{id: class-count-instances}
+
+![](examples/oop/counter_increase.py)
+
+## Destructor: __del__
+{id: destructor}
+{i: __init__}
+{i: __del__}
+
+![](examples/advanced/destructor.py)
+![](examples/advanced/destructor.out)
+
+
+## Class count instances - decrease also (destructor: __del__)
+{id: class-count-instances-decrease-also}
+{i: __del__}
+
+![](examples/oop/counter_decrease.py)
+![](examples/oop/list_things.py)
+
+## Destructor delayed
+{id: destructor-delayed}
+
+Becasue the object has a reference to itself. (Python uses both reference count and garbage collection.)
+
+![](examples/advanced/destructor_self_reference.py)
+![](examples/advanced/destructor_self_reference.out)
+
+## Destructor delayed for both
+{id: destructor-sipped}
+
+Because the instances reference each other
+
+![](examples/advanced/destructor_skipped.py)
+![](examples/advanced/destructor_skipped.out)
+
 
 
 ## Class Attributes in Instances
@@ -29,14 +79,6 @@
 * Use a method (show) to access it.
 
 ![](examples/classes/person2.py)
-
-
-## Instance Attribute
-{id: instance-attribute}
-
-The attributes of the instance object can be set via 'self' from within the class.
-
-![](examples/classes/person3.py)
 
 
 ## Methods are class  attributes
@@ -210,30 +252,6 @@ They might be better off placed in a module, like the other_method.
 ![](examples/classes/mydate4/mydate.py)
 ![](examples/classes/mydate4/run.py)
 ![](examples/classes/mydate4/run.out)
-
-
-## Destructor: __del__
-{id: destructor}
-{i: __init__}
-{i: __del__}
-![](examples/advanced/destructor.py)
-![](examples/advanced/destructor.out)
-
-## Destructor delayed
-{id: destructor-delayed}
-
-Becasue the object has a reference to itself. (Python uses both reference count and garbage collection.)
-
-![](examples/advanced/destructor_self_reference.py)
-![](examples/advanced/destructor_self_reference.out)
-
-## Destructor delayed for both
-{id: destructor-sipped}
-
-Because the instances reference each other
-
-![](examples/advanced/destructor_skipped.py)
-![](examples/advanced/destructor_skipped.out)
 
 
 ## Opearator overloading
@@ -449,12 +467,12 @@ __eq__ are automatically implemented
 
 ![](examples/oop/class_in_function.py)
 
-## Multiple inheritance
-{id: multiple-inheritance}
+## Instance Attribute
+{id: instance-attribute}
 
-![](examples/oop/inheritance/multi.py)
+The attributes of the instance object can be set via 'self' from within the class.
 
-![](examples/oop/counter_increase.py)
-![](examples/oop/counter_decrease.py)
-![](examples/oop/list_things.py)
+![](examples/classes/person3.py)
+
+
 

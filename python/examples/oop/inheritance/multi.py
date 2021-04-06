@@ -1,21 +1,24 @@
-class Parent:
+class ParentA:
     def __init__(self):
-        print('__init__ of Parent')
+        print('__init__ of ParentA')
 
-    def in_parent(self):
-        print('in_parent')
-
-    def in_both(self):
-        print('both in parent')
-
-class Other:
-    def in_other(self):
-        print('in_other')
+    def in_parent_a(self):
+        print('in_parent_a')
 
     def in_both(self):
-        print('both in other')
+        print('in_both in parent A')
 
-class Child(Parent, Other):
+class ParentB:
+    def __init__(self):
+        print('__init__ of ParentB')
+
+    def in_parent_b(self):
+        print('in_parent_b')
+
+    def in_both(self):
+        print('in_both in paernt B')
+
+class Child(ParentA, ParentB):
     def __init__(self):
         print('__init__ of Child')
         super().__init__()
@@ -24,17 +27,8 @@ class Child(Parent, Other):
         print('in_child')
 
 c = Child()
-c.in_parent()
-c.in_other()
+c.in_parent_a()
+c.in_parent_b()
 c.in_child()
-
 c.in_both()
-
-# __init__ of Parent
-# in_parent
-# in_other
-# in_child
-# both in parent
-
-
 
