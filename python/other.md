@@ -414,7 +414,7 @@ It was experimental and dropped from Python 3
 ![](examples/advanced/slow_hotshot.out)
 
 ## Abstract Base Class without abc
-{id: abstract-base-class-without-abc}
+{id: abstract-base-class-without-abc-python-2}
 
 Only works in Python 2?
 
@@ -424,7 +424,7 @@ Only works in Python 2?
 {id: abstract-base-class-with-abc-python2}
 {i: abc}
 
-![](examples/classes/abc/with_abc.py)
+![](examples/oop/abc/with_abc.py)
 
 * [Abstract Base Classes in Python](https://dbader.org/blog/abstract-base-classes-in-python)
 * [abc](https://docs.python.org/library/abc.html)
@@ -434,7 +434,7 @@ Only works in Python 2?
 {id: abstract-base-class-with-metaclass}
 {i: __metaclass__}
 
-![](examples/classes/abc/abc_meta.py)
+![](examples/oop/abc/abc_meta.py)
 
 
 ## Create class with metaclass
