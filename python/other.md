@@ -875,3 +875,11 @@ pytest -p no:random-order -v
 ![](examples/classes/with_object.out)
 
 
+## Abstract Base Class without ABC
+{id: abstract-base-class-without-abc}
+
+![](examples/oop/abc/no_abc.py)
+![](examples/oop/abc/no_abc.out)
+
+
+

@@ -1,0 +1,5 @@
+__init__ of Child
+__init__ of Parent
+in_parent
+some_tool
+in_child

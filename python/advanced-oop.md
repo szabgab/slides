@@ -17,6 +17,50 @@
 
 ![](examples/oop/inheritance/diamond.py)
 
+## Interfaces
+{id: oop-interfaces}
+
+* Parent and Child can have attributes
+* Tools only has methods
+
+![](examples/oop/inheritance/interface.py)
+![](examples/oop/inheritance/interface.out)
+
+## Abstract Base Class
+{id: abstract-base-class}
+
+* Create a class object that cannot be used to create an instance object. (It must be subclassed)
+* The subclass must implement certain methods required by the base-class.
+
+## Abstract Base Class with abc
+{id: abstract-base-class-with-abc}
+{i: abc}
+{i: abstractmethod}
+
+* [abc](https://docs.python.org/library/abc.html)
+
+![](examples/oop/abc/with_abc3.py)
+
+## ABC working example
+{id: abc-working-example}
+
+![](examples/oop/abc/with_abc3_real.py)
+![](examples/oop/abc/with_abc3_real.out)
+
+## ABC - cannot instantiate the base-class
+{id: abc-no-instance-from-base-class}
+
+![](examples/oop/abc/with_abc3_base.py)
+![](examples/oop/abc/with_abc3_base.out)
+
+## ABC - must implement methods
+{id: abc-must-implement-methods}
+
+![](examples/oop/abc/with_abc3_fake.py)
+![](examples/oop/abc/with_abc3_fake.out)
+
+
+
 
 ## Class Attributes
 {id: attributes}
@@ -145,44 +189,6 @@ Class methods are used as Factory methods, they are usually good for alternative
 ![](examples/classes/mydate2/mydate.py)
 ![](examples/classes/mydate2/run.py)
 ![](examples/classes/mydate2/run.out)
-
-
-## Abstract Base Class
-{id: abstract-base-class}
-
-* Create a class object that cannot be used to create an instance object. (It must be subclassed)
-* The subclass must implement certain methods required by the base-class.
-
-![](examples/classes/abc/no_abc.py)
-![](examples/classes/abc/no_abc.out)
-
-
-## Abstract Base Class with abc
-{id: abstract-base-class-with-abc}
-{i: abc}
-{i: abstractmethod}
-
-* [abc](https://docs.python.org/library/abc.html)
-
-![](examples/classes/abc/with_abc3.py)
-
-## ABC working example
-{id: abc-working-example}
-
-![](examples/classes/abc/with_abc3_real.py)
-![](examples/classes/abc/with_abc3_real.out)
-
-## ABC - cannot instantiate the base-class
-{id: abc-no-instance-from-base-class}
-
-![](examples/classes/abc/with_abc3_base.py)
-![](examples/classes/abc/with_abc3_base.out)
-
-## ABC - must implement methods
-{id: abc-must-implement-methods}
-
-![](examples/classes/abc/with_abc3_fake.py)
-![](examples/classes/abc/with_abc3_fake.out)
 
 
 ## Use Python @propery to fix bad interface (the bad interface)
