@@ -2,7 +2,7 @@
 {id: advanced-oop}
 
 ## Multiple inheritance
-{id: multiple-inheritance}
+{id: oop-multiple-inheritance}
 
 ![](examples/oop/inheritance/multi.py)
 ![](examples/oop/inheritance/multi.out)
@@ -10,7 +10,7 @@
 * [mro - method resolution order](https://www.python.org/download/releases/2.3/mro/)
 
 ## Multiple inheritance - diamond
-{id: multiple-inheritance-diamond}
+{id: oop-multiple-inheritance-diamond}
 
 * Not Bot ParentA and ParentB inherit attributes from GrandParent,
 * but they are now merged.
@@ -27,13 +27,13 @@
 ![](examples/oop/inheritance/interface.out)
 
 ## Abstract Base Class
-{id: abstract-base-class}
+{id: oop-abstract-base-class}
 
 * Create a class object that cannot be used to create an instance object. (It must be subclassed)
 * The subclass must implement certain methods required by the base-class.
 
 ## Abstract Base Class with abc
-{id: abstract-base-class-with-abc}
+{id: oop-abstract-base-class-with-abc}
 {i: abc}
 {i: abstractmethod}
 
@@ -42,25 +42,25 @@
 ![](examples/oop/abc/with_abc3.py)
 
 ## ABC working example
-{id: abc-working-example}
+{id: oop-abc-working-example}
 
 ![](examples/oop/abc/with_abc3_real.py)
 ![](examples/oop/abc/with_abc3_real.out)
 
 ## ABC - cannot instantiate the base-class
-{id: abc-no-instance-from-base-class}
+{id: oop-abc-no-instance-from-base-class}
 
 ![](examples/oop/abc/with_abc3_base.py)
 ![](examples/oop/abc/with_abc3_base.out)
 
 ## ABC - must implement methods
-{id: abc-must-implement-methods}
+{id: oop-abc-must-implement-methods}
 
 ![](examples/oop/abc/with_abc3_fake.py)
 ![](examples/oop/abc/with_abc3_fake.out)
 
 ## Class Attributes
-{id: class-attributes}
+{id: oop-class-attributes}
 
 * Class attributes can be created inside a class.
 * Assign to class attribute and fetch from it.
@@ -70,7 +70,7 @@
 ![](examples/oop/person1.py)
 
 ## Class count instances
-{id: class-count-instances}
+{id: oop-class-count-instances}
 
 ![](examples/oop/counter_increase.py)
 
@@ -84,27 +84,27 @@
 
 
 ## Class count instances - decrease also (destructor: __del__)
-{id: class-count-instances-decrease-also}
+{id: oop-class-count-instances-decrease-also}
 {i: __del__}
 
 ![](examples/oop/counter_decrease.py)
 
 ## Keep track of instances
-{id: keep-track-of-instances}
+{id: oop-keep-track-of-instances}
 
 ![](examples/oop/keep_track.py)
 ![](examples/oop/keep_track.out)
 
 
 ## Keep track of instances properly (weakref)
-{id: keep-track-of-instances-properly}
+{id: oop-keep-track-of-instances-properly}
 {i: weakref}
 
 ![](examples/oop/keep_track_properly.py)
 ![](examples/oop/keep_track_properly.out)
 
 ## Destructor delayed
-{id: destructor-delayed}
+{id: oop-destructor-delayed}
 
 Because the object has a reference to itself. (Python uses both reference count and garbage collection.)
 
@@ -112,7 +112,7 @@ Because the object has a reference to itself. (Python uses both reference count 
 ![](examples/oop/destructor_self_reference.out)
 
 ## Destructor delayed for both
-{id: destructor-delayed-for-both}
+{id: oop-destructor-delayed-for-both}
 
 Because the instances reference each other
 
@@ -121,36 +121,35 @@ Because the instances reference each other
 
 
 ## Class Attributes in Instances
-{id: class-attributes-in-instances}
+{id: oop-class-attributes-in-instances}
 
 ![](examples/oop/person11.py)
 
 
 ## Attributes with method access
-{id: attributes-method-access}
+{id: oop-attributes-method-access}
 
 * Use a method (show) to access it.
 
-![](examples/classes/person2.py)
+![](examples/oop/person2.py)
 
 ## Methods are class attributes
-{id: methods-are-class-attributes}
+{id: oop-methods-are-class-attributes}
 
 In this example we are going to replace the method in the class by a newly created function.
 (monkey patching)
 
-![](examples/classes/person4.py)
+![](examples/oop/person4.py)
 
 
 ## Monkey patching
-{id: monkey-patching-method}
+{id: oop-monkey-patching-method}
 
-![](examples/classes/person5.py)
-
+![](examples/oop/person5.py)
 
 
 ## Method types
-{id: method-types}
+{id: oop-method-types}
 
 * Instance methods - working on self
 * Class methods - working on the class (e.g. alternative constructor)
@@ -168,22 +167,22 @@ as see in the 3rd example.
 The attributes created with "self.something = value" belong to the individual instance object.
 {/aside}
 
-![](examples/classes/mydate1/mydate.py)
-![](examples/classes/mydate1/run.py)
+![](examples/oop/mydate1/mydate.py)
+![](examples/oop/mydate1/run.py)
 
 `set_date` is an instance method. We cannot properly call it on a class.
 
-![](examples/classes/mydate1/run.out)
+![](examples/oop/mydate1/run.out)
 
 ## Class methods
-{id: class-methods}
+{id: oop-class-methods}
 {i: @classmethod}
 
 * Access class attributes
 * Create alternative constructor
 
 ## Class methods accessing class attributes
-{id: class-methods-accessing-class-attributes}
+{id: oop-class-methods-accessing-class-attributes}
 {i: @classmethod}
 
 {aside}
@@ -191,21 +190,21 @@ The attributes created with "self.something = value" belong to the individual in
 but actually we can access it from the outside even without the class method, just using the "class object"
 {/aside}
 
-![](examples/classes/mydate3/mydate.py)
-![](examples/classes/mydate3/run.py)
-![](examples/classes/mydate3/run.out)
+![](examples/oop/mydate3/mydate.py)
+![](examples/oop/mydate3/run.py)
+![](examples/oop/mydate3/run.out)
 
 
-## Constructor
-{id: constructor}
+## Default Constructor
+{id: oop-default-constructor}
 
 * The "class" keyword creates a "class object". The default constructor of these classes are their own names.
 * The actual code is implemented in the `__new__` method of the `object`.
 * Calling the constructor will create an "instance object".
 
 
-## alternative constructor with class method
-{id: class-methods-alternative-constructor}
+## Alternative constructor with class method
+{id: oop-class-methods-alternative-constructor}
 {i: @classmethod}
 
 {aside}
@@ -216,39 +215,41 @@ Class methods are used as Factory methods, they are usually good for alternative
 * Normally we create a Date instance by passing 3 numbers for Year, Monh, Day.
 * We would also like to be able to create an instance using a string like this: `2021-04-07`
 
-![](examples/classes/mydate2/mydate.py)
-![](examples/classes/mydate2/run.py)
-![](examples/classes/mydate2/run.out)
+![](examples/oop/mydate2/mydate.py)
+![](examples/oop/mydate2/run.py)
+![](examples/oop/mydate2/run.out)
 
 
 ## class and static methods
-{id: static-methods}
+{id: oop-static-methods}
 {i: @classmethod}
 {i: @staticmethod}
 
+{aside}
 Static methods are used when no "class-object" and no "instance-object" is required.
 They are called on the class-object, but they don't receive it as a parameter.
 
 They might be better off placed in a module, like the other_method.
+{/aside}
 
-![](examples/classes/mydate4/mydate.py)
-![](examples/classes/mydate4/run.py)
-![](examples/classes/mydate4/run.out)
+![](examples/oop/mydate4/mydate.py)
+![](examples/oop/mydate4/run.py)
+![](examples/oop/mydate4/run.out)
 
 
 ## Opearator overloading
-{id: operator-overloading}
+{id: oop-operator-overloading}
 {i: __mul__}
 {i: __rmul__}
 
-![](examples/advanced/rect/shapes.py)
-![](examples/advanced/rect/rect.py)
-![](examples/advanced/rect/rect.out)
+![](examples/oop/rect/shapes.py)
+![](examples/oop/rect/rect.py)
+![](examples/oop/rect/rect.out)
 
 In order to make the multiplication work in the other direction, one needs to implement the __rmul__ method.
 
 ## Operator overloading methods
-{id: operator-overloading-methods}
+{id: oop-operator-overloading-methods}
 {i: __mul__}
 {i: __rmul__}
 {i: __add__}
@@ -435,8 +436,8 @@ zz = z1*z2
 ## Solution: Rectangle
 {id: solution-oop-rectangle}
 
-![](examples/advanced/rect/shape2.py)
-![](examples/advanced/rect/test_rect.py)
+![](examples/oop/rect/shape2.py)
+![](examples/oop/rect/test_rect.py)
 
 
 ## Solution: Implement a Gene inheritance model combining DNA
