@@ -59,14 +59,11 @@
 ![](examples/oop/abc/with_abc3_fake.py)
 ![](examples/oop/abc/with_abc3_fake.out)
 
-
-
-
 ## Class Attributes
-{id: attributes}
+{id: class-attributes}
 
 * Class attributes can be created inside a class.
-* Assign to class attribute and fetch from it
+* Assign to class attribute and fetch from it.
 * Class attributes can be also created from the outside.
 * Creating a instance does not impact the class attribute.
 
@@ -156,7 +153,7 @@ In this example we are going to replace the method in the class by a newly creat
 {id: method-types}
 
 * Instance methods - working on self
-* Class mthods - working on the class (e.g. alternative constructor)
+* Class methods - working on the class (e.g. alternative constructor)
 * Static methods - have no self or class (helper functions)
 
 ## Instance methods
@@ -178,12 +175,21 @@ The attributes created with "self.something = value" belong to the individual in
 
 ![](examples/classes/mydate1/run.out)
 
-## Class methods and class attributes
-{id: class-attributes}
+## Class methods
+{id: class-methods}
 {i: @classmethod}
 
+* Access class attributes
+* Create alternative constructor
+
+## Class methods accessing class attributes
+{id: class-methods-accessing-class-attributes}
+{i: @classmethod}
+
+{aside}
 "total" is an attribute that belongs to the class. We can access it using Date.total. We can create a `@classmethod` to access it,
 but actually we can access it from the outside even without the class method, just using the "class object"
+{/aside}
 
 ![](examples/classes/mydate3/mydate.py)
 ![](examples/classes/mydate3/run.py)
@@ -198,12 +204,14 @@ but actually we can access it from the outside even without the class method, ju
 * Calling the constructor will create an "instance object".
 
 
-## Class methods - alternative constructor
+## alternative constructor with class method
 {id: class-methods-alternative-constructor}
 {i: @classmethod}
 
+{aside}
 Class methods are used as Factory methods, they are usually good for alternative constructors. In order to be able to use a method as a class-method
 (Calling Date.method(...) one needs to mark the method with the `@classmethod` decorator)
+{/aside}
 
 * Normally we create a Date instance by passing 3 numbers for Year, Monh, Day.
 * We would also like to be able to create an instance using a string like this: `2021-04-07`

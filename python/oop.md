@@ -1,5 +1,5 @@
 # Classes - OOP - Object Oriented Programming
-{id: python-classes}
+{id: oop}
 
 ## Why Object Oriented Programming?
 {id: why-oop-in-python}
@@ -95,12 +95,12 @@ In such a minimal class that does not do anything yet, Python still requires us 
 ![](examples/oop/empty_point.py)
 
 ## Create instance of class
-{id: create-instance-of-class}
+{id: oop-create-instance-of-class}
 
 ![](examples/oop/use_empty_point.py)
 
 ## Import module containing class
-{id: import-module-containing-class}
+{id: oop-import-module-containing-class}
 
 {aside}
 You probably want your classes to be reusabel by multiple programs, so it is better to put the class and your code using it in separate files
@@ -112,7 +112,7 @@ right from the beginning. In this example you can see how to do that importing t
 
 
 ## Import class from module
-{id: import-class-from-module}
+{id: oop-import-class-from-module}
 
 {aside}
 Alternatively you can import the class from the modue and then you can use the classname without any prefix.
@@ -121,21 +121,21 @@ Alternatively you can import the class from the modue and then you can use the c
 ![](examples/oop/create/import_class.py)
 
 ## Initialize instance (not a constructor)
-{id: initialize-instance-of-class}
+{id: oop-initialize-instance-of-class}
 {i: __init__}
 
 ![](examples/oop/initialize_empty_point.py)
 
 
 ## Self is the instance
-{id: self-is-the-instance}
+{id: oop-self-is-the-instance}
 
 Self is already the instance that will be returned
 
 ![](examples/oop/self_is_instance.py)
 
 ## Init uses same name as attribute and getters
-{id: instance-getters}
+{id: oop-instance-getters}
 {i: __init__}
 {i: self}
 
@@ -144,8 +144,8 @@ Self is already the instance that will be returned
 ![](examples/oop/attributes/use_shapes2.py)
 
 
-## Initialize a class - (not a constructor), attributes and getters
-{id: class-initialization}
+## Initialize an instance  - (not a constructor), attributes and getters
+{id: oop-initialization}
 {i: __init__}
 {i: self}
 
@@ -160,25 +160,25 @@ and let that method set up the initial values of the insance-object.
 
 
 ## Setters - assign to the attributes
-{id: instance-setters}
+{id: oop-instance-setters}
 
 ![](examples/oop/attributes/setters.py)
 
 
 ## Attributes are not special
-{id: classe-attributes-from-outside}
+{id: oop-attributes-from-outside}
 
 * There is no automatic protection from this
 
 ![](examples/oop/attributes/color.py)
 
 ## Private attributes
-{id: private-attributes}
+{id: oop-private-attributes}
 
 ![](examples/oop/attributes/private.py)
 
 ## Secret attributes
-{id: secret-attributes}
+{id: oop-secret-attributes}
 
 * Primarily useful to ensure inheriting classes don't accidently overwrite attributes.
 
@@ -186,14 +186,14 @@ and let that method set up the initial values of the insance-object.
 
 
 ## Methods
-{id: class-methods}
+{id: oop-methods}
 
 ![](examples/oop/methods/shapes.py)
 ![](examples/oop/methods/point.py)
 
 
 ## Inheritance
-{id: inheritance}
+{id: oop-inheritance}
 {i: super}
 
 ![](examples/oop/inheritance/shapes.py)
@@ -201,13 +201,13 @@ and let that method set up the initial values of the insance-object.
 
 
 ## Inheritance - another level
-{id: inheritance-level2}
+{id: oop-inheritance-level2}
 
 ![](examples/oop/inheritance/ball_shape.py)
 
 
 ## Modes of method inheritance
-{id: modes-of-method-inheritance}
+{id: oop-modes-of-method-inheritance}
 
 * Implicit
 * Override
@@ -218,7 +218,7 @@ and let that method set up the initial values of the insance-object.
 
 
 ## Modes of method inheritance - implicit
-{id: modes-of-method-inheritance-implicit}
+{id: oop-modes-of-method-inheritance-implicit}
 
 Inherit method
 
@@ -226,7 +226,7 @@ Inherit method
 
 
 ## Modes of method inheritance - override
-{id: modes-of-method-inheritance-override}
+{id: oop-modes-of-method-inheritance-override}
 
 Replace method
 
@@ -235,7 +235,7 @@ Replace method
 
 
 ## Modes of method inheritance - extend
-{id: modes-of-method-inheritance-extend}
+{id: oop-modes-of-method-inheritance-extend}
 {i: super}
 
 Extend method before or after calling original.
@@ -244,7 +244,7 @@ Extend method before or after calling original.
 
 
 ## Modes of method inheritance - delegate - provide
-{id: modes-of-method-inheritance-delegate-provide}
+{id: oop-modes-of-method-inheritance-delegate-provide}
 
 Let the child implement the functionality.
 
@@ -256,7 +256,7 @@ Let the child implement the functionality.
 
 
 ## Composition - Line
-{id: composition-line}
+{id: oop-composition-line}
 
 When an object holds references to one or more other objects.
 
@@ -267,7 +267,7 @@ When an object holds references to one or more other objects.
 
 
 ## Some comments
-{id: class-comments}
+{id: oop-some-comments}
 
 * There are no private attributes. The convention is to use leading underscore to communicate to other developers what is private.
 * Using the name **self** for the current object is just a consensus.
