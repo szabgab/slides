@@ -1,0 +1,8 @@
+Date(2013, 10, 20)
+False
+Traceback (most recent call last):
+  File "run.py", line 8, in <module>
+    b = mydate.Date(2013, 13, 20)
+  File "module_function/mydate.py", line 10, in __init__
+    raise Exception('Invalid date')
+Exception: Invalid date

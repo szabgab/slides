@@ -6,6 +6,5 @@ class Point():
     def __repr__(self):
        return 'Point({}, {})'.format(self.x, self.y)
 
-    def move(self, dx, dy):
-        self.x += dx
-        self.y += dy
+    def __str__(self):
+       return '({}, {})'.format(self.x, self.y)

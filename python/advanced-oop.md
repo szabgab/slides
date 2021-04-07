@@ -1,6 +1,20 @@
 # Advanced OOP
 {id: advanced-oop}
 
+## Stringify class
+{id: class-stringification}
+{i: __str__}
+{i: __repr__}
+
+* __repr__ "should" return Python-like code
+* __str__ should return readable representation
+* If __str__ does not exist, __repr__ is called instead.
+
+![](examples/oop/stringification/shapes.py)
+![](examples/oop/stringification/run.py)
+
+
+
 ## Multiple inheritance
 {id: oop-multiple-inheritance}
 
@@ -133,19 +147,34 @@ Because the instances reference each other
 
 ![](examples/oop/person2.py)
 
-## Methods are class attributes
+## Methods are class attributes - add method
 {id: oop-methods-are-class-attributes}
 
+{aside}
+In this example we are going to add a newly created method to the class.
+(monkey patching)
+{/aside}
+
+![](examples/oop/add_method.py)
+
+## Methods are class attributes - replace method
+{id: oop-methods-are-class-attributes-replace-method}
+
+{aside}
 In this example we are going to replace the method in the class by a newly created function.
 (monkey patching)
+{/aside}
 
-![](examples/oop/person4.py)
+![](examples/oop/replace_method.py)
 
 
-## Monkey patching
-{id: oop-monkey-patching-method}
+## Methods are class attributes - Enhance method (Monkey patching)
+{id: oop-enhance-method-monkey-patching}
 
-![](examples/oop/person5.py)
+![](examples/oop/enhance/shapes.py)
+![](examples/oop/enhance/enhance_method.py)
+![](examples/oop/enhance/enhance_method.out)
+![](examples/oop/enhance/tools.py)
 
 
 ## Method types
@@ -219,22 +248,52 @@ Class methods are used as Factory methods, they are usually good for alternative
 ![](examples/oop/mydate2/run.py)
 ![](examples/oop/mydate2/run.out)
 
-
-## class and static methods
+## Static methods
 {id: oop-static-methods}
-{i: @classmethod}
 {i: @staticmethod}
 
 {aside}
 Static methods are used when no "class-object" and no "instance-object" is required.
 They are called on the class-object, but they don't receive it as a parameter.
-
-They might be better off placed in a module, like the other_method.
 {/aside}
 
-![](examples/oop/mydate4/mydate.py)
-![](examples/oop/mydate4/run.py)
-![](examples/oop/mydate4/run.out)
+![](examples/oop/static_method/mydate.py)
+![](examples/oop/static_method/run.py)
+![](examples/oop/static_method/run.out)
+
+## Module functions
+{id: oop-module-functions}
+
+{aside}
+Static methods might be better off placed in a module as simple functions.
+{/aside}
+
+![](examples/oop/module_function/mydate.py)
+![](examples/oop/module_function/run.py)
+![](examples/oop/module_function/run.out)
+
+
+## Class and static methods
+{id: oop-class-and-static-methods}
+{i: @classmethod}
+{i: @staticmethod}
+
+
+![](examples/oop/class_and_static_method/mydate.py)
+![](examples/oop/class_and_static_method/run.py)
+![](examples/oop/class_and_static_method/run.out)
+
+
+## Special methods
+{id: special-class-methods}
+{i: __str__}
+{i: __repr__}
+
+* `__str__`
+* `__repr__`
+* `__eq__`
+* `__lt__`
+* ...
 
 
 ## Opearator overloading
@@ -324,34 +383,6 @@ __eq__ are automatically implemented
 ![](examples/oop/dataclasses_frozen/shapes.py)
 ![](examples/oop/dataclasses_frozen/point.py)
 
-
-## Special methods
-{id: special-class-methods}
-{i: __str__}
-{i: __repr__}
-
-* `__str__`
-* `__repr__`
-* `__eq__`
-* `__lt__`
-* ...
-
-
-## Stringify class
-{id: class-stringification}
-{i: __str__}
-{i: __repr__}
-
-* __repr__ "should" return Python-like code
-* __str__ should return readable representation
-* If __str__ does not exist, __repr__ is called instead.
-
-![](examples/classes/stringification/point.py)
-![](examples/classes/stringification/shapes.py)
-
-* Class attributes
-* Class methods
-* Static methods
 
 
 ## Serialization of instances with pickle
@@ -490,6 +521,7 @@ property(fget=None, fset=None, fdel=None, doc=None)
 ## Use Python @propery decorator to fix bad API
 {id: property-fixing-bad-api-with-decorators}
 {i: @property}
+
 ![](examples/classes/person/person4.py)
 
 * [property article](http://www.programiz.com/python-programming/property)

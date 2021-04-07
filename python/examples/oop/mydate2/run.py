@@ -5,12 +5,13 @@ print(d)
 
 d.set_date(2014, 1, 27)
 print(d)
-
 print('')
-dd = Date.from_str('2013-10-20')
-print(dd)
 
+x = Date.from_str('2013-10-20')
+print(x)
 print('')
+
+# This works but it is not recommended
 z = d.from_str('2012-10-20')
 print(d)
 print(z)
