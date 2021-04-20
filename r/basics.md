@@ -227,10 +227,13 @@ barplot this!
 
 ![](examples/factors.R)
 
+![](examples/factor.R)
+
 ## Filter values
 {id: filter-values}
 
 ![](examples/filter_values.R)
+![](examples/filter.R)
 
 ## Index of true elements - which
 {id: index-of-true-elements}
@@ -245,6 +248,8 @@ barplot this!
 ![](examples/boolean_vectors_truth_table.R)
 
 ![](examples/logical_boolean.R)
+
+![](examples/boolean.R)
 
 ![](examples/boolean_operations_on_numbers.R)
 
@@ -277,7 +282,36 @@ barplot this!
 ![](examples/summary_of_boolean.R)
 ![](examples/summary_of_strings.R)
 
-## Other
-{id: other}
+## which
+{id: which}
+
+Showing the indexes of the elements that are TRUE in a boolean vector
+
+![](examples/which.R)
+
+## Concatenate strings
+{id: concatenate-strings}
+
+![](examples/concatenate_strings.R)
+
+## Filesystem pathes
+{id: filesystem-pathes}
+
+![](examples/pathes.R)
+
+## Iris dataset
+{id: iris-dataset}
+
+[Iris dataset](https://en.wikipedia.org/wiki/Iris_flower_data_set)
+
+## Built-in Iris data set
+{id: built-in-iris-data-set}
+
+![](examples/built_in_iris.R)
 
 ![](examples/iris.R)
+
+## Load Iris dataset
+{id: load-iris-dataset}
+
+![](examples/load_iris.R)
