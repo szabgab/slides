@@ -78,3 +78,5 @@ scala/examples/*/.bsp
 scala/examples/*/.metals
 scala/.metals
 scala/examples/*/project/metals.sbt
+
+typescript/examples/*.js
