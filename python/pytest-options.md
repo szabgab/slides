@@ -363,3 +363,21 @@ pytest --cov=mymod --cov-report html --cov-branch
 
 Open htmlcov/index.html
 ```
+
+## Pytest and flake 8
+{id: pytest-and-flake-8}
+
+![](examples/pytest/flake/mymod.py)
+![](examples/pytest/flake/test_mymod.py)
+![](examples/pytest/flake/.flake8)
+
+```
+pip install flake8
+pip install pytest-flake8
+pip install flake8-builtins
+
+flake8
+rm -rf .pytest_cache/
+pytest --flake8
+```
+

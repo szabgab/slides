@@ -1,0 +1,5 @@
+[flake8]
+ignore =
+#ignore = F401 E302 E111 F841 E111 E226 E111 W391
+#exclude = test_mymod.py
+
