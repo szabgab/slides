@@ -364,7 +364,7 @@ pytest --cov=mymod --cov-report html --cov-branch
 Open htmlcov/index.html
 ```
 
-## Pytest and flake 8
+## Pytest and flake8
 {id: pytest-and-flake-8}
 
 ![](examples/pytest/flake/mymod.py)
@@ -380,4 +380,18 @@ flake8
 rm -rf .pytest_cache/
 pytest --flake8
 ```
+## Pytest and mypy
+{id: pytest-and-mypy}
+
+```
+pip install mypy
+pip install pytest-mypy
+
+mypy mymod.py
+
+pytest --mypy
+```
+
+![](examples/pytest/mypy/mymod.py)
+![](examples/pytest/mypy/test_mymod.py)
 
