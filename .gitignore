@@ -82,3 +82,4 @@ scala/examples/*/project/metals.sbt
 typescript/examples/*.js
 
 python/examples/pytest/coverage/htmlcov
+python/examples/pytest/coverage/.coverage

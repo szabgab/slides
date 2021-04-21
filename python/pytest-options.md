@@ -395,3 +395,11 @@ pytest --mypy
 ![](examples/pytest/mypy/mymod.py)
 ![](examples/pytest/mypy/test_mymod.py)
 
+Excluding files when using `mypy` works, but that does not exclude them when using `pytest --mypy`
+
+![](examples/pytest/mypy/mypy.ini)
+
+Not even this:
+
+![](examples/pytest/mypy/pytest.ini)
+
