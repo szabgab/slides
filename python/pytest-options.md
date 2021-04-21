@@ -74,15 +74,27 @@ pytestmark = pytest.mark.random_order(disabled=True)
 ## PyTest test discovery
 {id: pytest-discovery}
 
-Running py.test will find test files and in the files test functions.
+Running pytest will find test files and in the files test functions.
 
 
 * test_*.py files
 * *_test.py files
 * test_*  functions
-* ...
+* TestSomething class
+*   test_* methods
 
-![](examples/pytest/py.test.out)
+```
+examples/pytest/discovery
+.
+├── db
+│   └── test_db.py
+├── other_file.py
+├── test_one.py
+└── two_test.py
+
+```
+
+![](examples/pytest/discovery.out)
 
 
 
@@ -100,13 +112,6 @@ $ pytest --ignore venv3/
 test_mymod_1.py .
 test_mymod_2.py .F
 ```
-
-
-* test_*.py files
-* *_test.py files
-* TestClasses
-* test_*  functions
-* ...
 
 ## Pytest dry-run - collect-only
 {id: pytest-collect-only}
@@ -172,6 +177,8 @@ pytest --collect-only -k "forget or read" test_by_name.py
 
 ## Pytest use markers to select tests
 {id: pytest-use-markers}
+
+* -m select by mark
 
 ![](examples/pytest/markers/test_marker.py)
 ![](examples/pytest/markers/test_marker.out)
@@ -342,3 +349,17 @@ Func Hello
 Func Hello
 ```
 
+## PyTest: Test Coverage
+{id: pytest-coverage}
+
+
+![](examples/pytest/coverage/mymod.py)
+![](examples/pytest/coverage/test_mymod.py)
+
+```
+pip install pytest-cov
+
+pytest --cov=mymod --cov-report html --cov-branch
+
+Open htmlcov/index.html
+```

@@ -616,25 +616,6 @@ Write tests for the `swap` and `average` functions of the `app` module. Can you 
 
 
 
-## PyTest: Test Coverage
-{id: pytest-coverage}
-
-```
-pip install pytest-cov
-
-pytest --cov=my --cov-report html --cov-branch
-
-Open htmlcov/index.html
-```
-
-**Try werkzeug**
-
-```
-pytest --cov=werkzeug --cov-report html --cov-branch
-xdg-open htmlcov/index.html
-```
-
-
 ## Exercise: module
 {id: pytest-exercise-module}
 
