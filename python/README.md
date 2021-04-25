@@ -316,4 +316,6 @@ K-means algorithm
 
 * What other Kernels can I install?
 
+* Show input() working
+
 
