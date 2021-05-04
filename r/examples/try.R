@@ -1,10 +1,3 @@
-
-#args
-
-# 
-# barplot(c(2, 3, 7, 1))
-# data <- rnorm(100)
-# barplot(data)
 # 
 # fruits = c("apple", "apple", "banana", "peach", "apple", "banana")
 # fruits
@@ -14,3 +7,4 @@
 # class(ff)
 # length(ff)
 # ff
+

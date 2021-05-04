@@ -84,3 +84,4 @@ char_vec = as.characters(some_factor)
 as.numeric(char_vec)
 
 
+#!/usr/bin/env Rscript

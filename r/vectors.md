@@ -82,6 +82,8 @@ Using a negative index will give you the same vector without that element
 {i: barplot}
 
 ![](examples/barplot.R)
+![](examples/barplot_vector.R)
+
 
 ## Associate name with each value
 {id: associate-name-with-each-value}
