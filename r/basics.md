@@ -315,3 +315,38 @@ Showing the indexes of the elements that are TRUE in a boolean vector
 {id: load-iris-dataset}
 
 ![](examples/load_iris.R)
+
+
+## Change element of vector
+{id: change-element-of-vector}
+
+![](examples/change_element_of_vector.R)
+
+## Assign vector to another name
+{id: assign-vector-to-another-name}
+
+![](examples/assign_vector.R)
+
+## Reverse vector
+{id: reverse}
+{i: rev}
+{i: reverse}
+
+![](examples/reverse.R)
+
+## Sort vector
+{id: sort}
+{i: sort}
+
+![](examples/sort.R)
+
+## Sort using order
+{id: order}
+{i: order}
+
+![](examples/order.R)
+
+## Sort dataset by a column
+{id: sort-dataset-by-column}
+
+![](examples/sort_dataset_by_a_column.R)

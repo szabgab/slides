@@ -1,4 +1,8 @@
 paste("abc", "def", "qqrq")
+a = "Hello"
+b = 42
+paste(a, b)
+
 paste("abc", "def", "qqrq", sep="_")
 
 

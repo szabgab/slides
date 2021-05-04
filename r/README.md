@@ -61,9 +61,12 @@ matrix - same idea as a data.frame but all values are the same class (type)
 Iris database (Petal, Sepal)
 http://www.lac.inpe.br/~rafael.santos/Docs/CAP394/WholeStory-Iris.html
 
-getcwd() Get current working directory
-setcwd("c://.../")   # change directory
+getwd() Get current working directory cwd
+setwd("c://.../")   # change directory
+setwd("/home/gabor/work/slides/r")
 
+install.packages("here")
+library(here)
 
 "rowname" or index of each row in a data.frame
 
@@ -81,4 +84,14 @@ char_vec = as.characters(some_factor)
 as.numeric(char_vec)
 
 
-
+data.frames
+  dim
+  head
+  nrow
+  ncol
+  names  - get the names or assign new names to the data.frame
+  names(dataframe)  = c("title1", "title2", ...)
+  summary
+  Subsetting (indexing ranges)
+  subset()
+  order() returns a numeric vector of the sorted indexes
