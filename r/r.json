@@ -1,11 +1,15 @@
 {
     "title": "R Programming",
     "author": "Gabor Szabo",
-    "first_year": "2012",
+    "first_year": "2021",
     "copyright_name": "Gabor Szabo",
     "copyright_url": "https://szabgab.com/",
     "version": "1.18",
     "files": [
-        "basics.md"
+        "basics.md",
+        "vectors.md",
+        "data-frames.md",
+        "functions.md",
+        "other.md"
     ]
 }
