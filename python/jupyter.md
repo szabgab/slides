@@ -78,13 +78,6 @@ jupyter notebook
 * Buttons A, B
 * ...
 
-## Jupyter input
-{id: jupyter-input}
-
-```
-name = input("Name: ")
-```
-
 
 ## Jupyter notebook Intellisense (TAB completition)
 {id: jupyter-notebook-intellisense}
@@ -94,7 +87,7 @@ name = input("Name: ")
 ## Jupyter add
 {id: jupyter-simple-add}
 
-* Open an existing notebook: `examples/jupyter/add.ipynb`
+* Open an existing notebook: `add.ipynb`
 
 
 ## Planets
@@ -102,14 +95,46 @@ name = input("Name: ")
 
 * The Planets example we saw in the Pandas chapter
 
-* `examples/jupyter/planets.csv`
-* `examples/jupyter/planets.ipynb`
+* `planets.csv`
+* `planets.ipynb`
+
+
+## Jupyter input
+{id: jupyter-input}
+
+```
+name = input("Name: ")
+```
 
 ## File chooser
 {id: jupyter-filechooser}
 
 * Avoid hard-coded pathes
-* `examples/jupyter/FileChooser.ipynb`
+* `FileChooser.ipynb`
+
+## IPy Widgets
+{id: ipywidgets}
+{i: ipywidgets}
+
+* [Interact](https://ipywidgets.readthedocs.io/en/latest/examples/Using%20Interact.html)
+* [Widget list](https://ipywidgets.readthedocs.io/en/latest/examples/Widget%20List.html)
+
+* `ipywidgets.ipynb`
+
+## Jupyter Notebook and Markdown
+{id: jupyter-notebook-markdown}
+
+* `markdown.ipynb`
+* [Jupyter Markdown](https://jupyter-notebook.readthedocs.io/en/latest/examples/Notebook/Working%20With%20Markdown%20Cells.html)
+* [Original Markdown](https://daringfireball.net/projects/markdown/syntax)
+* [Markdown](https://en.wikipedia.org/wiki/Markdown)
+
+## Latex in Jupyter Notebook
+{id: jupyter-notebook-latex}
+
+* To insert complex formulas.
+* `latex.ipynb`
+* [Latex symbols](https://en.wikipedia.org/wiki/Wikipedia:LaTeX_symbols)
 
 
 ## Jupyter StackOverflow
@@ -118,10 +143,9 @@ name = input("Name: ")
 * Download a dataset from the [Stack Overflow survey](https://insights.stackoverflow.com/survey).
 * unzip the file. Feel free to remove the `__MACOSX/` directory if it is included.
 
-* `examples/jupyter/SO/so.ipynb`
-* `examples/jupyter/SO/selected-rows.ipynb`
-* `examples/jupyter/SO/selected-columns.ipynb`
-
+* `SO/so.ipynb`
+* `SO/selected-rows.ipynb`
+* `SO/selected-columns.ipynb`
 
 
 ## Use SciPy image
@@ -142,36 +166,12 @@ name = input("Name: ")
 
 * `load_image_using_opencv`
 
-## IPy Widgets
-{id: ipywidgets}
-{i: ipywidgets}
-
-* [Interact](https://ipywidgets.readthedocs.io/en/latest/examples/Using%20Interact.html)
-* [Widget list](https://ipywidgets.readthedocs.io/en/latest/examples/Widget%20List.html)
-
-* `ipywidgets.ipynb`
-
 ## Genes using Jupyter
 {id: genes-using-jupyter}
 
 ```
 jupyter notebook genes.ipynb
 ```
-
-## Jupyter Notebook and Markdown
-{id: jupyter-notebook-markdown}
-
-* `markdown.ipynb`
-* [Jupyter Markdown](https://jupyter-notebook.readthedocs.io/en/latest/examples/Notebook/Working%20With%20Markdown%20Cells.html(
-* [Original Markdown](https://daringfireball.net/projects/markdown/syntax)
-* [Markdown](https://en.wikipedia.org/wiki/Markdown)
-
-## Latex in Jupyter Notebook
-{id: jupyter-notebook-latex}
-
-* To insert complex formulas.
-* `latex.ipynb`
-* [Latex symbols](https://en.wikipedia.org/wiki/Wikipedia:LaTeX_symbols)
 
 ## More Jupyter examples
 {id: jupyter-examples}
@@ -224,4 +224,10 @@ jupyter nbextensions_configurator enable --user
 
 * Scratchpad
 * Variable Inspector
+
+## Jupyter notebook Checkpoints
+{id: jupyter-notebook-checkpoints}
+
+* A very simple, one-level version control.
+* I would not rely on it as it is now. Use a real VCS. (e.g. git)
 
