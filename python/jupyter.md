@@ -11,8 +11,8 @@
 ## Jupyter on Windows
 {id: run-jupyter-windows}
 
-On Windows install [Anaconda](https://www.anaconda.com/distribution/)
-and then you'll be able to run Jupyter notebook from the start menu.
+If you use [Anaconda](https://www.anaconda.com/distribution/) it already comes with Jupyter notebook.
+On Windows you can run it from the start menu.
 
 
 Alternatively:
@@ -49,15 +49,13 @@ jupyter notebook
 * Create new notebook (New / Python 3)
 * It is called "Untitled" - Rename it
 * Type in some code `x = 2`
-* Modes: Blue - command mode, Green - edit mode
-* Enter - Switch to edit mode (or newline if already in edit mode)
-* ESC - Switch to command mode
-* Ctrl-Enter - excuted current code
-* Clear Cell data before saving
-* Button h for help
-* Buttons A, B
-* ...
+* Execute code
+* Show content of variables
+* import modules
 * Quit - shut down the notebook server.
+
+* Number is the execution order Out[] refers to the number of the cell for this this the output.
+
 
 ## Jupyter Notebook file format
 {id: jupyter-notebook-file-format}
@@ -65,11 +63,33 @@ jupyter notebook
 * Jupyter file format (show the file) JSON
 * Download file as Python (.py)
 
+## Jupyter notebook edit and command mode
+{id: jupyter-edit-and-command-mode}
+
+
+
+* Modes: Blue - command mode, Green - edit mode
+* Enter - Switch to edit mode (or newline if already in edit mode)
+* ESC - Switch to command mode
+* Ctrl-Enter - excuted current code
+
+* Clear Cell data before saving
+* Button h for help
+* Buttons A, B
+* ...
+
+## Jupyter input
+{id: jupyter-input}
+
+```
+name = input("Name: ")
+```
+
+
 ## Jupyter notebook Intellisense (TAB completition)
 {id: jupyter-notebook-intellisense}
 
-* Just press TAB
-
+* Just press TAB for word completition and method suggestions
 
 ## Jupyter add
 {id: jupyter-simple-add}
@@ -84,6 +104,12 @@ jupyter notebook
 
 * `examples/jupyter/planets.csv`
 * `examples/jupyter/planets.ipynb`
+
+## File chooser
+{id: jupyter-filechooser}
+
+* Avoid hard-coded pathes
+* `examples/jupyter/FileChooser.ipynb`
 
 
 ## Jupyter StackOverflow
@@ -143,6 +169,7 @@ jupyter notebook genes.ipynb
 ## Latex in Jupyter Notebook
 {id: jupyter-notebook-latex}
 
+* To insert complex formulas.
 * `latex.ipynb`
 * [Latex symbols](https://en.wikipedia.org/wiki/Wikipedia:LaTeX_symbols)
 
