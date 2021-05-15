@@ -74,19 +74,27 @@
 % (modulus)
 ```
 
+## if statement
+{id: if}
+{i: if}
+{i: else}
+{i: end}
+
+![](examples/if.cr)
+
+## elsif
+{id: elsif}
+{i: elsif}
+
+![](examples/if.cr)
+
+
 ## Comparision Operators
 {id: comparision-operators}
 
 * ==, <, > <=, >=
 
 * Spaceship operator <=> returns -1, 0, or 1
-
-
-## Math
-{id: math}
-
-![](examples/math.cr)
-![](examples/math.out)
 
 
 ## Program name
@@ -101,6 +109,14 @@
 * ARGV is an Array of Strings. `Array(String)`
 
 ![](examples/cli.cr)
+
+## Type conversion to float, to int
+{id: type-conversion}
+{i: to_f}
+{i: to_i}
+
+
+
 
 ## Early exit
 {id: exit}
@@ -118,10 +134,26 @@ echo %ERROR_LEVEL%
 ## Rectangle
 {id: rectangle}
 
-- TODO show if statement
-- TODO show type conversion of ARGV
-
 ![](examples/rectangle.cr)
+
+## Counter
+{id: counter}
+
+![](examples/counter.cr)
+
+## Multi Counter
+{id: multi-counter}
+
+![](examples/multi_counter.cr)
+
+
+
+## Math
+{id: math}
+
+![](examples/math.cr)
+![](examples/math.out)
+
 
 ## Other
 {id: other}
