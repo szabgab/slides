@@ -136,6 +136,22 @@ echo %ERROR_LEVEL%
 
 ![](examples/rectangle.cr)
 
+
+## Arrays
+{id: arrays}
+
+![](examples/array.cr)
+
+
+## Array push, append, <<
+{id: arrays-push}
+{i: push}
+{i: append}
+{i: <<}
+
+![](examples/array_push.cr)
+
+
 ## Counter
 {id: counter}
 
@@ -153,6 +169,12 @@ echo %ERROR_LEVEL%
 
 ![](examples/math.cr)
 ![](examples/math.out)
+
+## List Methods
+{id: list-methods}
+
+![](examples/methods.cr)
+![](examples/methods.out)
 
 
 ## Other
