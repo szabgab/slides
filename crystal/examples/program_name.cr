@@ -1,0 +1,1 @@
+puts PROGRAM_NAME

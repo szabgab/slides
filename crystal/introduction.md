@@ -89,6 +89,40 @@
 ![](examples/math.out)
 
 
+## Program name
+{id: program-name}
+
+![](examples/program_name.cr)
+
+
+## Command line arguments - ARGV
+{id: command-line-arguments}
+
+* ARGV is an Array of Strings. `Array(String)`
+
+![](examples/cli.cr)
+
+## Early exit
+{id: exit}
+{i: exit}
+
+![](examples/early_exit.cr)
+
+* Exit code defaults to 0
+
+```
+echo $?
+echo %ERROR_LEVEL%
+```
+
+## Rectangle
+{id: rectangle}
+
+- TODO show if statement
+- TODO show type conversion of ARGV
+
+![](examples/rectangle.cr)
+
 ## Other
 {id: other}
 
