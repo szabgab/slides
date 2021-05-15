@@ -1,0 +1,102 @@
+# Introduction
+{id: introduction}
+
+## Crystal Language
+{id: crystal-language}
+
+* [Crystal lang](https://crystal-lang.org/)
+* Similar to Ruby
+
+
+## Docker on Linux
+{id: docker-on-linux}
+
+* [Docker Crystal](https://hub.docker.com/r/crystallang/crystal)
+* Install Docker
+* Create a file called `crystal` with the following content:
+
+![](crystal)
+
+* Make it executable by running `chmod +x crystal`
+* Run `./crystal examples/hello_world.cr`
+
+## Hello World (puts)
+{id: hello-world}
+{i: puts}
+
+![](examples/hello_world.cr)
+
+* `puts` stands for "put string"
+
+
+## Hello Name (variables)
+{id: hello-name}
+
+![](examples/hello_name.cr)
+
+## Hello Name with interpolation
+{id: hello-name-interpolation}
+
+![](examples/hello_name_interpolation.cr)
+
+## Escaping - Alternative delimiters
+{id: escaping}
+
+![](examples/escaping.cr)
+
+
+## Add numbers
+{id: add-numbers}
+
+![](examples/add_numbers.cr)
+
+## Types
+{id: types}
+{i: String}
+{i: Int32}
+{i: Float64}
+{i: p!}
+
+![](examples/types.cr)
+
+
+## Numeric Operators
+{id: numeric-operators}
+
+
+```
++
+-
+*
+** (exponent)
+/
+// (floor division)
+% (modulus)
+```
+
+## Comparision Operators
+{id: comparision-operators}
+
+* ==, <, > <=, >=
+
+* Spaceship operator <=> returns -1, 0, or 1
+
+
+## Math
+{id: math}
+
+![](examples/math.cr)
+![](examples/math.out)
+
+
+## Other
+{id: other}
+
+* Single quotes vs double quotes
+
+No type-checking?
+
+x = "one"
+x = 1
+p! x
+p! typeof(x)

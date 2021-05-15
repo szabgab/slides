@@ -1,0 +1,1 @@
+docker run --rm -it -w/opt -v$(pwd):/opt crystallang/crystal crystal $*
