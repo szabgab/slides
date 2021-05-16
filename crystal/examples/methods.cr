@@ -4,7 +4,8 @@ class Object
     end
 end
 
-puts Bool.methods
-puts Int32.methods
-puts Array.methods
-puts Hash.methods
+p! Bool.methods
+p! String.methods
+p! Int32.methods
+p! Array.methods
+p! Hash.methods
