@@ -105,6 +105,11 @@ docker -t0 stop crystal
 % (modulus)
 ```
 
+## Methods of int
+{id: int-methods}
+
+![](examples/number_methods.cr)
+
 ## if statement
 {id: if}
 {i: if}
@@ -117,7 +122,9 @@ docker -t0 stop crystal
 {id: elsif}
 {i: elsif}
 
-![](examples/if.cr)
+![](examples/deep_if.cr)
+
+![](examples/elsif.cr)
 
 
 ## Comparision Operators
@@ -158,11 +165,13 @@ docker -t0 stop crystal
 {i: to_f?}
 
 ![](examples/convertable.cr)
+![](examples/convertable.out)
 
 ## Program name
 {id: program-name}
 
 ![](examples/program_name.cr)
+![](examples/program_name.out)
 
 * [toplevel](https://crystal-lang.org/api/toplevel.html)
 
@@ -304,3 +313,14 @@ x = "one"
 x = 1
 p! x
 p! typeof(x)
+
+
+## Checking the slides
+{id: checking-the-slides}
+
+![](examples/check_slides.cr)
+
+## Crystal mine
+{id: crystal-mine}
+
+![](examples/mine.cr)
