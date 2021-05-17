@@ -90,4 +90,20 @@ jobs:
         cd nodejs
         npm install
         #npm test
+  crystal:
+    runs-on: ubuntu-latest
+    name: Verify Crystal slides and examples
+    container:
+      image: crystallang/crystal
+
+    steps:
+    - name: Checkout this repo
+      uses: actions/checkout@v2
+
+    - name: Check files
+      run: |
+        crystal -v
+        cd crystal
+        crystal examples/check_slides.cr
+
 
