@@ -264,6 +264,8 @@ echo %ERROR_LEVEL%
 
 ## Multi Counter
 {id: multi-counter}
+{i: json}
+{i: from_json}
 
 ![](examples/multi_counter.cr)
 
@@ -314,6 +316,16 @@ x = 1
 p! x
 p! typeof(x)
 
+## JSON (to_json, parse)
+{id: json}
+{i: json}
+{i: to_json}
+{i: parse}
+
+* Round trip with JSON
+* Have to `require "json"` for the method to be added.
+
+![](examples/json.cr)
 
 ## HTTP Client
 {id: http-client}

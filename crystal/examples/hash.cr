@@ -6,6 +6,7 @@ planets = {
 }
 puts planets
 puts planets.size
+puts planets.keys
 
 planets["Pluto"] = 7
 
