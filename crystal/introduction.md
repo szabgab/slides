@@ -315,6 +315,11 @@ p! x
 p! typeof(x)
 
 
+## HTTP Client
+{id: http-client}
+
+![](examples/http_client.cr)
+
 ## Checking the slides
 {id: checking-the-slides}
 
