@@ -7,6 +7,16 @@
 * [Crystal lang](https://crystal-lang.org/)
 * Similar to Ruby
 
+## Crystal Shards
+{id: crystal-shards}
+
+* The 3rd party modules directory
+* [Crystal Shards](https://crystalshards.xyz/)
+* Use `shards init` to create a file called `shard.yml` and describe the dependencies there.
+
+![](examples/shard.yml)
+
+
 
 ## Docker on Linux
 {id: docker-on-linux}
@@ -154,6 +164,8 @@ docker -t0 stop crystal
 
 ![](examples/program_name.cr)
 
+* [toplevel](https://crystal-lang.org/api/toplevel.html)
+
 
 ## Command line arguments - ARGV
 {id: command-line-arguments}
@@ -263,6 +275,23 @@ echo %ERROR_LEVEL%
 ![](examples/methods.cr)
 ![](examples/methods.out)
 
+
+## List directory content
+{id: list-directory}
+{i: Dir}
+
+![](examples/list_dir.cr)
+
+## List directory tree
+{id: directory-tree}
+{i: Dir}
+{i: glob}
+![](examples/traverse_tree.cr)
+
+## Get Current workding directory (cwd, pwd)
+{id: current-working-directory}
+
+![](examples/cwd.cr)
 
 ## Other
 {id: other}
