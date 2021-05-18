@@ -1,4 +1,4 @@
-values = [0, "0", "", true, false, 1]
+values = [0, "0", "", 1, true, false, nil]
 values.each {|val|
     if val
         puts "#{val} is true"

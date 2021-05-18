@@ -272,6 +272,8 @@ echo %ERROR_LEVEL%
 ## True values
 {id: true-values}
 
+* `false`, `nil`, and the null pointer are "falsy" everything else, including 0 and "" are `true`
+
 ![](examples/true_values.cr)
 
 ## Math
@@ -304,17 +306,6 @@ echo %ERROR_LEVEL%
 
 ![](examples/cwd.cr)
 
-## Other
-{id: other}
-
-* Single quotes vs double quotes
-
-No type-checking?
-
-x = "one"
-x = 1
-p! x
-p! typeof(x)
 
 ## JSON (to_json, parse)
 {id: json}
@@ -341,3 +332,37 @@ p! typeof(x)
 {id: crystal-mine}
 
 ![](examples/mine.cr)
+
+
+## Divide by zero is Infinity
+{id: divide-by-zero-is-infinity}
+{i: Infinity}
+
+![](examples/divide_by_zero.cr)
+
+## Catch exception - begin, rescue
+{id: catch-exception}
+{i: begin}
+{i: rescue}
+
+![](examples/catch_exception.cr)
+
+## Raise exception
+{id: raise-exception}
+
+![](examples/raise_exception.cr)
+
+## Other
+{id: other}
+
+* Single quotes vs double quotes
+
+No type-checking?
+
+x = "one"
+x = 1
+p! x
+p! typeof(x)
+
+
+
