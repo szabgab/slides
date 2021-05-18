@@ -352,6 +352,14 @@ echo %ERROR_LEVEL%
 
 ![](examples/raise_exception.cr)
 
+## Require other files
+{id: require-other-files}
+
+* [requiring files](https://crystal-lang.org/reference/syntax_and_semantics/requiring_files.html)
+
+![](examples/one/welcome.cr)
+![](examples/one/use_welcome.cr)
+
 ## Other
 {id: other}
 
