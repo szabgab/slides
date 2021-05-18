@@ -390,6 +390,19 @@ echo %ERROR_LEVEL%
 ![](examples/one/welcome.cr)
 ![](examples/one/use_welcome.cr)
 
+
+## Testing
+{id: testing-1}
+
+![](examples/test1/mymath.cr)
+![](examples/test1/use_mymath.cr)
+![](examples/test1/mymath_spec.cr)
+
+
+```
+crystal spec .
+```
+
 ## Other
 {id: other}
 
