@@ -93,7 +93,7 @@ docker -t0 stop crystal
 ## Hello Name with interpolation
 {id: hello-name-interpolation}
 
-* Interpolation is the embedding of variables in strings
+* Interpolation is the embedding of variables in strings using `#{}`
 
 ![](examples/hello_name_interpolation.cr)
 
@@ -101,12 +101,6 @@ docker -t0 stop crystal
 {id: escaping}
 
 ![](examples/escaping.cr)
-
-
-## Add numbers
-{id: add-numbers}
-
-![](examples/add_numbers.cr)
 
 ## Types
 {id: types}
@@ -118,19 +112,28 @@ docker -t0 stop crystal
 ![](examples/types.cr)
 
 
+## Add numbers
+{id: add-numbers}
+{i: +}
+
+* Interpolation works on numbers as well
+* The `+` operator is numerical addition or string concatenation
+
+![](examples/add_numbers.cr)
+
+## Add mixed strings and Integers
+{id: add-mixed-strings-and-integers}
+
+`Error: no overload matches 'Int32#+' with type String`
+
+![](examples/add_mixed.cr)
+
+
 ## Numeric Operators
 {id: numeric-operators}
 
 
-```
-+
--
-*
-** (exponent)
-/
-// (floor division)
-% (modulus)
-```
+![](examples/numerical_operators.cr)
 
 ## Methods of int
 {id: int-methods}
