@@ -6,9 +6,16 @@
 
 * [Crystal lang](https://crystal-lang.org/)
 * Similar to Ruby
+* Statically type checked
+* Built-in type inference
+* Types are non-nilable (compile time check for lack of assignment)
+* Meta-programming with Macro
+* Concurrency with green threads called fibers
+* C-bindings
 
 ## Crystal Shards
 {id: crystal-shards}
+{i: shards}
 
 * The 3rd party modules directory
 * [Crystal Shards](https://crystalshards.xyz/)
@@ -16,9 +23,12 @@
 
 ![](examples/shard.yml)
 
+## Install Crystal
+{id: install-crystal}
 
+* [Install Crystal](https://crystal-lang.org/install/)
 
-## Docker on Linux
+## Crystal in Docker on Linux
 {id: docker-on-linux}
 
 * [Docker Crystal](https://hub.docker.com/r/crystallang/crystal)
@@ -58,15 +68,32 @@ docker -t0 stop crystal
 ![](examples/hello_world.cr)
 
 * `puts` stands for "put string"
+* Adds a newline at the end
+
+## Hello World (print)
+{id: hello-world-print}
+{i: print}
+
+* `print` does not add a newline
+* You can add one by including `\n`
+
+![](examples/hello_world_print.cr)
 
 
 ## Hello Name (variables)
 {id: hello-name}
 
+* `print` will include an empty string between its parameters
+* `puts` will include a newline between its parameters
+
 ![](examples/hello_name.cr)
+![](examples/hello_name.out)
+
 
 ## Hello Name with interpolation
 {id: hello-name-interpolation}
+
+* Interpolation is the embedding of variables in strings
 
 ![](examples/hello_name_interpolation.cr)
 

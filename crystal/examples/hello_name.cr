@@ -1,2 +1,3 @@
 name = "Foo Bar"
-puts "Hello " + name + "!"
+print "Hello ", name, "!\n"
+puts "Hello ", name, "!"
