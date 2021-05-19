@@ -7,6 +7,8 @@
 {i: has_key}
 {i: each_key}
 
+* [Hash](https://crystal-lang.org/api/Hash.html)
+
 ![](examples/hash.cr)
 
 ## Count words

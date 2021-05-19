@@ -176,6 +176,7 @@ docker -t0 stop crystal
 
 ## Command line arguments - ARGV
 {id: command-line-arguments}
+{i: ARGV}
 
 * ARGV is an Array of Strings. `Array(String)`
 

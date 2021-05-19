@@ -5,6 +5,8 @@
 ## Arrays intro
 {id: arrays-intro}
 
+* [Array](https://crystal-lang.org/api/Array.html)
+
 ![](examples/array.cr)
 
 ## Array iterate over (each, each_with_index)
