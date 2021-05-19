@@ -100,10 +100,15 @@ jobs:
     - name: Checkout this repo
       uses: actions/checkout@v2
 
-    - name: Check files
+    - name: Install dependencies
       run: |
         crystal -v
         cd crystal
+        shards install
+
+    - name: Check files
+      run: |
         crystal examples/check_slides.cr
+        ./bin/amebad
 
 

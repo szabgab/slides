@@ -1,0 +1,8 @@
+Style/RedundantReturn:
+  Enabled: false
+Layout/TrailingBlankLines:
+  Enabled: false
+Lint/UselessAssign:
+  Enabled: false
+Layout/TrailingWhitespace:
+  Enabled: false

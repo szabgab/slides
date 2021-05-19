@@ -83,3 +83,6 @@ typescript/examples/*.js
 
 python/examples/pytest/coverage/htmlcov
 python/examples/pytest/coverage/.coverage
+
+crystal/bin
+crystal/lib

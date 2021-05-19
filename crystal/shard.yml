@@ -7,9 +7,9 @@ version: 0.1.0
 description: |
   Short description of the project
 
-# dependencies:
-#   amber:
-#     github: amberframework/amber
+dependencies:
+  ameba:
+    github: crystal-ameba/ameba
 
 
 #development_dependencies:

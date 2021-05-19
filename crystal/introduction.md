@@ -21,7 +21,7 @@
 * [Crystal Shards](https://crystalshards.xyz/)
 * Use `shards init` to create a file called `shard.yml` and describe the dependencies there.
 
-![](examples/shard.yml)
+![](shard.yml)
 
 ## Install Crystal
 {id: install-crystal}
