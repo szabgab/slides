@@ -92,10 +92,22 @@ docker -t0 stop crystal
 
 ## Hello Name with interpolation
 {id: hello-name-interpolation}
+{i: #}
 
 * Interpolation is the embedding of variables in strings using `#{}`
 
 ![](examples/intro/hello_name_interpolation.cr)
+
+
+## Interpolation
+{id: interpolation}
+{i: #}
+
+* Interpolation using `#{}` for strings, integers, floating point numbers
+* and even expressions.
+
+![](examples/intro/interpolation.cr)
+
 
 ## Escaping - Alternative delimiters
 {id: escaping}
