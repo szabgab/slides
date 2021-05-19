@@ -78,6 +78,30 @@ p! typeof(x)
 
 ![](examples/mine.cr)
 
+## Execute external program (system)
+{id: execute-external-program-system}
+{i: system}
+
+![](examples/system.cr)
+
+## Execute external program (backtick)
+{id: execute-external-program-backtick}
+{i: `}
+{i: $?}
+{i: success?}
+
+* [command](https://crystal-lang.org/reference/syntax_and_semantics/literals/command.html)
+
+![](examples/backtick.cr)
+
+## Execute external program (Process)
+{id: execute-external-program-process}
+
+* [Process](https://crystal-lang.org/api/Process.html)
+
+![](examples/process.cr)
+
+
 ## Ameba Linter
 {id: ameba-linter}
 
