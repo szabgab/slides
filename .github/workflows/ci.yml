@@ -108,6 +108,7 @@ jobs:
 
     - name: Check files
       run: |
+        cd crystal
         crystal examples/check_slides.cr
         ./bin/amebad
 
