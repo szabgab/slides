@@ -38,7 +38,7 @@
 ![](crystal)
 
 * Make it executable by running `chmod +x crystal`
-* Run `./crystal examples/hello_world.cr`
+* Run `./crystal examples/intro/hello_world.cr`
 
 Alternative:
 
@@ -51,7 +51,7 @@ docker run --rm -it -w/opt -v$(pwd):/opt --name crystal -d crystallang/crystal t
 Execute in the running container:
 
 ```
-docker exec crystal crystal examples/hello_world.cr
+docker exec crystal crystal examples/intro/hello_world.cr
 ```
 
 Later you can stop the container:
@@ -65,7 +65,7 @@ docker -t0 stop crystal
 {id: hello-world}
 {i: puts}
 
-![](examples/hello_world.cr)
+![](examples/intro/hello_world.cr)
 
 * `puts` stands for "put string"
 * Adds a newline at the end
@@ -77,7 +77,7 @@ docker -t0 stop crystal
 * `print` does not add a newline
 * You can add one by including `\n`
 
-![](examples/hello_world_print.cr)
+![](examples/intro/hello_world_print.cr)
 
 
 ## Hello Name (variables)
@@ -86,8 +86,8 @@ docker -t0 stop crystal
 * `print` will include an empty string between its parameters
 * `puts` will include a newline between its parameters
 
-![](examples/hello_name.cr)
-![](examples/hello_name.out)
+![](examples/intro/hello_name.cr)
+![](examples/intro/hello_name.out)
 
 
 ## Hello Name with interpolation
@@ -95,12 +95,12 @@ docker -t0 stop crystal
 
 * Interpolation is the embedding of variables in strings using `#{}`
 
-![](examples/hello_name_interpolation.cr)
+![](examples/intro/hello_name_interpolation.cr)
 
 ## Escaping - Alternative delimiters
 {id: escaping}
 
-![](examples/escaping.cr)
+![](examples/intro/escaping.cr)
 
 ## Types
 {id: types}
@@ -109,7 +109,7 @@ docker -t0 stop crystal
 {i: Float64}
 {i: p!}
 
-![](examples/types.cr)
+![](examples/intro/types.cr)
 
 
 ## Add numbers
