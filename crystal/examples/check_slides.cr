@@ -21,12 +21,12 @@ def main
             files.delete name
         else
             puts "ERROR #{name} is imported but does not exist"
-            error = true
+            errors = true
         end
     }
     files.each {|name|
         puts "ERROR #{name} is not imported"
-        error = true
+        errors = true
     }
 
     if errors

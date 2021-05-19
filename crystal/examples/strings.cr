@@ -25,4 +25,7 @@ puts text[0..-4]
 new_text = text.sub("cat", "dog")
 puts text
 puts new_text
+
 new_text = text.sub("dog", "elephant")
+puts text
+puts new_text

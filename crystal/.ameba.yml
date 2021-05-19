@@ -3,6 +3,7 @@ Style/RedundantReturn:
 Layout/TrailingBlankLines:
   Enabled: false
 Lint/UselessAssign:
-  Enabled: false
+  Excluded:
+  - examples/files/append_to_file_bug.cr
 Layout/TrailingWhitespace:
   Enabled: false

@@ -78,3 +78,6 @@ p! typeof(x)
 
 ![](examples/mine.cr)
 
+## Ameba Linter
+{id: ameba-linter}
+

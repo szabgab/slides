@@ -5,7 +5,7 @@ filename = "counter.txt"
 
 
 counter = 0
-if fh = File.exists?(filename)
+if File.exists?(filename)
     content = File.read(filename)
     counter = content.to_i
 end

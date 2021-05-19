@@ -50,6 +50,7 @@
 
 ![](examples/files/append_to_file_bug.cr)
 
+* The `ameba` linter will catch this error.
 
 ## Does file exist?
 {id: file-exists}

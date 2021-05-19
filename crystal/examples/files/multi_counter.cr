@@ -4,7 +4,7 @@ filename = "counter.json"
 
 # if file exists read the content
 counters = {} of String => Int32
-if fh = File.exists?(filename)
+if File.exists?(filename)
     content = File.new(filename)
     counters = Hash(String, Int32).from_json(content)
 end
