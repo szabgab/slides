@@ -100,16 +100,16 @@ jobs:
     - name: Checkout this repo
       uses: actions/checkout@v2
 
-    - name: Install dependencies
+    - name: Check files
       run: |
         crystal -v
         cd crystal
-        shards install
+        crystal examples/check_slides.cr
 
-    - name: Check files
+    - name: Run ameba linter
       run: |
         cd crystal
-        crystal examples/check_slides.cr
-        ./bin/amebad
+        shards install
+        ./bin/ameba
 
 
