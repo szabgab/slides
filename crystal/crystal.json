@@ -11,6 +11,9 @@
         "strings.md",
         "arrays.md",
         "hashes.md",
-        "files.md"
+        "files.md",
+        "directories.md",
+        "testing.md",
+        "other.md"
     ]
 }
