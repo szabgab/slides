@@ -164,38 +164,6 @@ docker -t0 stop crystal
 
 * Spaceship operator <=> returns -1, 0, or 1
 
-## Strings
-{id: strings}
-
-![](examples/strings.cr)
-
-## Empty and blank strings
-{id: empty-strings}
-
-![](examples/empty_strings.cr)
-
-## Iterate over characters of a atring
-{id: strings-iterator}
-
-![](examples/string_iterator.cr)
-
-
-## Type conversion to float, to int
-{id: type-conversion}
-{i: to_f}
-{i: to_i}
-
-![](examples/type_conversion.cr)
-
-## Converting string to integer or float
-{id: converting-string-to-integer-or-float}
-{i: to_i}
-{i: to_i?}
-{i: to_f}
-{i: to_f?}
-
-![](examples/convertable.cr)
-![](examples/convertable.out)
 
 ## Program name
 {id: program-name}
@@ -233,71 +201,7 @@ echo %ERROR_LEVEL%
 ![](examples/rectangle.cr)
 
 
-## Arrays
-{id: arrays}
 
-![](examples/array.cr)
-
-## Array iterate over (each, each_with_index)
-{id: array-iterate}
-{i: each}
-{i: each_with_index}
-
-![](examples/array_iterate.cr)
-
-## Array push, append, <<
-{id: arrays-push}
-{i: push}
-{i: append}
-{i: <<}
-
-![](examples/array_push.cr)
-
-## Empty array
-{id: array-empty}
-
-* Empty array must come with a type definition
-
-![](examples/empty_array.cr)
-
-## Count digitis
-{id: count-digits}
-
-![](examples/count_digits.cr)
-
-
-## Hash
-{id: hash}
-{i: has_key}
-{i: each_key}
-
-![](examples/hash.cr)
-
-## Count words
-{id: count-words}
-
-![](examples/count_words.cr)
-
-## Files
-{id: files}
-
-* Read from file
-* Write to file
-* Append to file
-* Does file exist? Size of file? Modify date of file?
-
-
-## Counter
-{id: counter}
-
-![](examples/counter.cr)
-
-## Multi Counter
-{id: multi-counter}
-{i: json}
-{i: from_json}
-
-![](examples/multi_counter.cr)
 
 ## True values
 {id: true-values}

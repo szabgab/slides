@@ -7,6 +7,10 @@
     "copyright_url": "https://szabgab.com/",
     "version": "0.01",
     "files": [
-        "introduction.md"
+        "introduction.md",
+        "strings.md",
+        "arrays.md",
+        "hashes.md",
+        "files.md"
     ]
 }

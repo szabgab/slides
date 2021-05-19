@@ -7,4 +7,10 @@
 
 * Write a test for https://github.com/watzon/octokit.cr that will use a secret stored in GitHub Actions to use the API
 
-* Module
+* Modules
+* Classes
+
+* Logging?
+* Web application development?
+* Access to SQLite?
+* Access to MongoDB?
