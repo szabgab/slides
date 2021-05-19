@@ -9,10 +9,10 @@
 
 * [Hash](https://crystal-lang.org/api/Hash.html)
 
-![](examples/hash.cr)
+![](examples/hashes/hash.cr)
 
 ## Count words
 {id: count-words}
 
-![](examples/count_words.cr)
+![](examples/hashes/count_words.cr)
 

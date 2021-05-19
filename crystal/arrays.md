@@ -7,14 +7,14 @@
 
 * [Array](https://crystal-lang.org/api/Array.html)
 
-![](examples/array.cr)
+![](examples/arrays/array.cr)
 
 ## Array iterate over (each, each_with_index)
 {id: array-iterate}
 {i: each}
 {i: each_with_index}
 
-![](examples/array_iterate.cr)
+![](examples/arrays/array_iterate.cr)
 
 ## Array push, append, <<
 {id: arrays-push}
@@ -22,17 +22,17 @@
 {i: append}
 {i: <<}
 
-![](examples/array_push.cr)
+![](examples/arrays/array_push.cr)
 
 ## Empty array
 {id: array-empty}
 
 * Empty array must come with a type definition
 
-![](examples/empty_array.cr)
+![](examples/arrays/empty_array.cr)
 
 ## Count digitis
 {id: count-digits}
 
-![](examples/count_digits.cr)
+![](examples/arrays/count_digits.cr)
 
