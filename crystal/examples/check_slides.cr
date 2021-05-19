@@ -54,7 +54,7 @@ end
 
 
 def get_files(root)
-    skip = Set{"Dockerfile", "README.md", "introduction.md", "crystal.json"}
+    skip = Set{"Dockerfile", "shard.lock", "crystal.json"}
     size = root.size
     files = [] of String
     all_files = Dir.glob("#{root}/**/*")
@@ -63,11 +63,19 @@ def get_files(root)
             next
         end
         short_name = path[size+1 ..]
+        if short_name.starts_with?("bin/") || short_name.starts_with?("lib/")
+            next
+        end
+        if short_name.ends_with?(".md")
+            next
+        end
         if skip.any?(short_name)
             next
         end
         files.push(short_name)
     }
+    files.push(".ameba.yml")
+
     return files
 end
 

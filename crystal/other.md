@@ -81,3 +81,12 @@ p! typeof(x)
 ## Ameba Linter
 {id: ameba-linter}
 
+
+* [Ameba](https://github.com/crystal-ameba/ameba)
+
+![](.ameba.yml)
+
+```
+shards install
+./bin/ameba
+```
