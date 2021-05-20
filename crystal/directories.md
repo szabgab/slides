@@ -17,3 +17,14 @@
 {id: current-working-directory}
 
 ![](examples/cwd.cr)
+
+## Temporary directory
+{id: temporary-directory}
+{i: tempname}
+{i: tempdir}
+{i: file_utils}
+{i: FileUtils}
+{i: rm_rf}
+{i: cd}
+
+![](examples/tempdir.cr)

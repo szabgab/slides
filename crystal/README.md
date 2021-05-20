@@ -10,7 +10,10 @@
 * Modules
 * Classes
 
+* Tempdir
 * Logging?
 * Web application development?
 * Access to SQLite?
 * Access to MongoDB?
+
+

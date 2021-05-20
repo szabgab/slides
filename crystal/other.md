@@ -96,10 +96,19 @@ p! typeof(x)
 
 ## Execute external program (Process)
 {id: execute-external-program-process}
+{i: exit}
+{i: exit_code}
+{i: exit_status}
 
 * [Process](https://crystal-lang.org/api/Process.html)
+* [Process::Status](https://crystal-lang.org/api/Process/Status.html)
 
 ![](examples/process.cr)
+
+## Execute external program (capture)
+{id: execute-external-program-capture}
+
+![](examples/capture.cr)
 
 
 ## Ameba Linter
