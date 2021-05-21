@@ -10,6 +10,8 @@ description: |
 dependencies:
   ameba:
     github: crystal-ameba/ameba
+  sqlite3:
+    github: crystal-lang/crystal-sqlite3
 
 
 #development_dependencies:

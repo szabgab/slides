@@ -162,7 +162,19 @@ shards install
 {id: yaml}
 {i: YAML}
 
+* [YAML](https://crystal-lang.org/api/YAML.html)
+
 ![](examples/crystal.yml)
 ![](examples/use_yaml.cr)
 
+## SQLite
+{id: sqlite}
+{i: SQLite}
 
+![](examples/try_sqlite.cr)
+
+## Multi-counter with SQLite
+{id: multi-counter-sqlite}
+{i: SQLite}
+
+![](examples/multi_counter_sqlite.cr)

@@ -91,4 +91,6 @@
 {i: from_yaml}
 {i: to_yaml}
 
+* [YAML](https://crystal-lang.org/api/YAML.html)
+
 ![](examples/files/multi_counter_yaml.cr)

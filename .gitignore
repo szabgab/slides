@@ -87,4 +87,6 @@ python/examples/pytest/coverage/.coverage
 crystal/bin
 crystal/lib
 crystal/counter.yaml
+crystal/counter.json
+crystal/counter.db
 

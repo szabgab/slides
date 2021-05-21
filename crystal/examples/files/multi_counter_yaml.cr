@@ -22,7 +22,3 @@ else
         puts "#{i}: #{arg}"
     }
 end
-
-
-
-
