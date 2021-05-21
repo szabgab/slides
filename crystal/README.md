@@ -10,10 +10,10 @@
 * Modules
 * Classes
 
-* Tempdir
-* Logging?
+
+* Read YAML file in general
+* Read shard.yml file in particular
 * Web application development?
 * Access to SQLite?
 * Access to MongoDB?
-
 

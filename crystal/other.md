@@ -123,3 +123,46 @@ p! typeof(x)
 shards install
 ./bin/ameba
 ```
+
+## Crystal logging
+{id: crystal-logging}
+
+* [Log](https://crystal-lang.org/api/Log.html)
+
+* 7 levels of logging, default is `info` and higher to the `STDOUT`
+
+![](examples/logging.cr)
+
+## Parse URL (URI)
+{id: parse-url}
+{i: URI}
+
+![](examples/parse_url.cr)
+
+## Join file system path
+{id: join-file-system-path}
+
+* [Path](https://crystal-lang.org/api/Path.html)
+
+![](examples/path.cr)
+
+
+## Command line Option Parser (argparse, GetOpts)
+{id: option-parser}
+
+* [OptionParser](https://crystal-lang.org/api/OptionParser.html)
+
+![](examples/cli_parser.cr)
+
+* `cli_parser.cr -d code-maven.com -v`
+* `cli_parser.cr -d`
+* `cli_parser.cr -x`
+
+## YAML
+{id: yaml}
+{i: YAML}
+
+![](examples/crystal.yml)
+![](examples/use_yaml.cr)
+
+

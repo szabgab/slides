@@ -1,0 +1,9 @@
+---
+language:
+  name: Crystal
+  features:
+    - Syntax
+    - Type System
+    - Null Reference Checks
+  first_year: 2014
+      

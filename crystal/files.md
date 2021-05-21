@@ -76,9 +76,19 @@
 
 ![](examples/files/counter.cr)
 
-## Multi Counter
-{id: multi-counter}
+## Multi Counter JSON
+{id: multi-counter-json}
 {i: json}
 {i: from_json}
+{i: to_json}
 
-![](examples/files/multi_counter.cr)
+![](examples/files/multi_counter_json.cr)
+
+
+## Multi Counter YAML
+{id: multi-counter-yaml}
+{i: yaml}
+{i: from_yaml}
+{i: to_yaml}
+
+![](examples/files/multi_counter_yaml.cr)

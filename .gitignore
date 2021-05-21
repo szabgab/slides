@@ -86,3 +86,5 @@ python/examples/pytest/coverage/.coverage
 
 crystal/bin
 crystal/lib
+crystal/counter.yaml
+
