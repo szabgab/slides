@@ -16,3 +16,8 @@
 
 ![](examples/hashes/count_words.cr)
 
+![](examples/hashes/empty_hash_of_strings.cr)
+
+![](examples/hashes/empty_hash_string_int32.cr)
+
+![](examples/hashes/empty_hash_string_int32_bool.cr)

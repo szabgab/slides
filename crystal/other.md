@@ -177,3 +177,15 @@ shards install
 * [Time::Span](https://crystal-lang.org/api/Time/Span.html)
 
 ![](examples/my_time.cr)
+
+## Testing with Spec
+{id: testing-with-spec}
+
+![](spec/spec_helper.cr)
+
+![](spec/demo_spec.cr)
+
+```
+crystal spec
+```
+
