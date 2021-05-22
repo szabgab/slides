@@ -167,14 +167,14 @@ shards install
 ![](examples/crystal.yml)
 ![](examples/use_yaml.cr)
 
-## SQLite
-{id: sqlite}
-{i: SQLite}
 
-![](examples/try_sqlite.cr)
+## Dates and Time
+{id: datetime}
+{i: Time}
+{i: Time::Span}
 
-## Multi-counter with SQLite
-{id: multi-counter-sqlite}
-{i: SQLite}
+* [Time](https://crystal-lang.org/api/Time.html)
+* [Time::Span](https://crystal-lang.org/api/Time/Span.html)
 
-![](examples/multi_counter_sqlite.cr)
+![](examples/my_time.cr)
+

@@ -15,6 +15,7 @@
         "directories.md",
         "regexes.md",
         "testing.md",
+        "sqlite.md",
         "other.md"
     ]
 }

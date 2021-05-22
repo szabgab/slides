@@ -1,9 +1,5 @@
 require "sqlite3"
 
-# You need to install the development package for libsqlite3
-# On Ubuntu
-# sudo apt-get install libsqlite3-dev
-
 
 # Based on the example in the documentation
 db_file = "data.db"

@@ -16,3 +16,21 @@
 * Access to SQLite?
 * Access to MongoDB?
 
+
+
+## Ideas for slides
+
+I run 
+crystal example.cr
+I get
+Showing last frame. Use --error-trace for full trace.
+crystal --error-trace example.cr
+I get Error: unknown command: --error-trace
+I need to run 
+crystal build --error-trace example.cr
+to get the nice stack trace
+
+### SQLite
+
+Lack of documentation
+last_id  last_insert_id  How can one know?
