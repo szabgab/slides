@@ -24,7 +24,7 @@ DB.open "sqlite3://#{db_file}" do |db|
             db.exec "INSERT INTO counters VALUES (?, ?)", name, count
         else
             db.exec "UPDATE counters SET count=? WHERE name=?", count, name
-        end       
+        end
     else
         db.query "SELECT name, count FROM counters ORDER BY name DESC" do |rs|
             puts "#{rs.column_name(0)} (#{rs.column_name(1)})"

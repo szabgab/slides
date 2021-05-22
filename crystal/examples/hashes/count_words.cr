@@ -4,7 +4,7 @@ count = {} of String => Int32
 words.each {|word|
     if ! count.has_key?(word)
         count[word] = 0
-    end    
+    end
     count[word] += 1
 }
 

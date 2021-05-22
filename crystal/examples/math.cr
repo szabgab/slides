@@ -1,3 +1,3 @@
 p! Math::PI
 p! Math::TAU
-p! Math::E 
+p! Math::E

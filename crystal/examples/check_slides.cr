@@ -3,7 +3,7 @@
 
 # Optionally verify that the same file is not imported more than once.
 
-def main   
+def main
     md_files = get_md_files(Dir.current)
     # md_files.each {|path|
     #     puts path

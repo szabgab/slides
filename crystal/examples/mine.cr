@@ -5,7 +5,7 @@ require "json"
 
 main
 
-def main 
+def main
     token = read_config
     #get_page(token)
     search(token)
@@ -21,7 +21,7 @@ end
 def get_page(token)
     url = "https://api.github.com/users/szabgab"
     response = HTTP::Client.get(url, headers: HTTP::Headers{"AUthentication" => "token #{token}"})
-   
+
     puts response.status_code
     puts response.body
 end

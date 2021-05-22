@@ -2,7 +2,7 @@ require "json"
 
 data = {
     "Mars" => 1,
-    "Jupyter" => 2, 
+    "Jupyter" => 2,
     "Saturn" => 3,
     "Earth" => 4,
     "moons" => ["Our", "Jupyters"],

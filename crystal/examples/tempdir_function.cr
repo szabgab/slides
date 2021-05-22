@@ -14,9 +14,9 @@ def tempdir(cleanup = true)
          FileUtils.mkdir(tmp_dir)
          yield tmp_dir
     ensure
-        if cleanup        
+        if cleanup
             FileUtils.rm_rf(tmp_dir)
         end
     end
-end    
-   
+end
+
