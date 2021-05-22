@@ -177,4 +177,3 @@ shards install
 * [Time::Span](https://crystal-lang.org/api/Time/Span.html)
 
 ![](examples/my_time.cr)
-

@@ -28,3 +28,8 @@
 {i: cd}
 
 ![](examples/tempdir.cr)
+
+## Tempdir function
+{id: tempdir}
+
+![](examples/tempdir_function.cr)
