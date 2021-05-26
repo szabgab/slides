@@ -189,3 +189,15 @@ shards install
 crystal spec
 ```
 
+## Ternary operator and or to set default value
+{id: default-value}
+{i:||}
+{i: ?:}
+
+![](examples/default.cr)
+
+## Gravatar
+{id: gravatar}
+{i: Digest::MD5.hexdigest}
+
+![](examples/gravatar.cr)
