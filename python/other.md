@@ -882,4 +882,8 @@ pytest -p no:random-order -v
 ![](examples/oop/abc/no_abc.out)
 
 
+## Gravatar in Python
+{id: gravatar}
+
+![](examples/gravatar.py)
 
