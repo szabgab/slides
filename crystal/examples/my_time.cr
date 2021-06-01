@@ -11,3 +11,6 @@ puts elapsed.total_seconds
 
 tomorrow = now + Time::Span.new(days: 1)
 puts tomorrow
+
+puts time1.to_s("%Y-%m-%d %H:%M:%S %:z")
+puts time1.to_s("%Y-%m-%d")
