@@ -30,7 +30,13 @@ I need to run
 crystal build --error-trace example.cr
 to get the nice stack trace
 
+filter or grep => reject   (use the names other languages use for the same concept to make it easier to find the right words )
+
+
+
 ### SQLite
 
 Lack of documentation
 last_id  last_insert_id  How can one know?
+
+puts __FILE__

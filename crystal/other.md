@@ -202,3 +202,16 @@ crystal spec
 {i: Digest::MD5.hexdigest}
 
 ![](examples/gravatar.cr)
+
+## Reading a JSON file
+{id: reading-a-json-file}
+
+![](examples/math.json)
+![](examples/read_math_json.cr)
+
+
+## Try Crystal
+{id: try}
+
+![](examples/try.cr)
+

@@ -1,0 +1,20 @@
+{
+    "status": 200,
+    "status_text": "OK",
+    "count": 3,
+    "otzzz": 23,
+    "results": [
+        {
+            "name": "pi",
+            "value": 3.14
+        },
+        {
+            "name": "e",
+            "value": 2.71
+        },
+        {
+            "name": "Square root of 2",
+            "value": 1.41
+        }
+    ]
+}
