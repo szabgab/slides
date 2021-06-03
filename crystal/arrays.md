@@ -36,3 +36,10 @@
 
 ![](examples/arrays/count_digits.cr)
 
+## Reject (filter, grep)
+{id: reject}
+{i: reject}
+{i: filter}
+{i: grep}
+
+![](examples/arrays/filter.cr)

@@ -54,4 +54,3 @@ puts people[0]["name"]
 # people[0]["name"] = "New Name"
 # Error: undefined method '[]=' for NamedTuple(name: String, number: Int32)
 
-

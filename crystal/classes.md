@@ -54,3 +54,28 @@
 {i: getter}
 
 ![](examples/classes/class_with_declared_getter.cr)
+
+
+## Serialize Crystal-lang class to/from JSON from_json to_json
+{id: class-serialization-to-from-json}
+{i: to_json}
+{i: from_json}
+{i: JSON::Serializable}
+
+
+* [JSON::Serializable](https://crystal-lang.org/api/JSON/Serializable.html)
+
+![](examples/classes/class_and_json.cr)
+
+
+## Compare objects for equality
+{id: compare-objects-for-equality}
+
+Normally using `==` between two instances will only return `true` if they are the exact same objects in the memory.
+If "only" all the attributes are the same then `==` will be `false`.
+
+To be able to compare two objects based on their attributes only we can used the `def_equals` macro.
+
+* [Object](https://crystal-lang.org/api/Object.html)
+
+![](examples/classes/compare_objects.cr)

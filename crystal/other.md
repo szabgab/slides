@@ -215,3 +215,16 @@ crystal spec
 
 ![](examples/try.cr)
 
+## JSON to Array
+{id: json-to-array}
+{i: JSON}
+{i: from_json}
+
+![](examples/json_to_array.cr)
+
+
+## Check if variable is nil?
+{id: nil}
+
+
+![](examples/is_nil.cr)
