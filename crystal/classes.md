@@ -79,3 +79,15 @@ To be able to compare two objects based on their attributes only we can used the
 * [Object](https://crystal-lang.org/api/Object.html)
 
 ![](examples/classes/compare_objects.cr)
+
+## Singleton using class properties
+{id: singleton-using-class-properties}
+{i: class_property}
+
+![](examples/classes/singleton_using_class_properties.cr)
+
+## Singleton using class properties with default values
+{id: singleton-using-class-properties-with-defaults}
+{i: class_property}
+
+![](examples/classes/singleton_using_class_properties_with_defaults.cr)
