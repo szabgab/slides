@@ -5,4 +5,3 @@ puts small
 
 big = numbers.reject! do |num| num < 10 end
 puts big
-    

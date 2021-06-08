@@ -203,8 +203,14 @@ crystal spec
 
 ![](examples/gravatar.cr)
 
+## JSON to NamedTuple
+{id: json-to-namedtuple}
+{i: NamedTuple}
+{i: from_json}
+
 ## Reading a JSON file
 {id: reading-a-json-file}
+{i: NamedTuple}
 
 ![](examples/math.json)
 ![](examples/read_math_json.cr)

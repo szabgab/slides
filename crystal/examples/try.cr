@@ -1,4 +1,8 @@
 
+# counter = Int32|Nil
+
+# counter = 2
+# puts counter + 1
 
 
 # person = {

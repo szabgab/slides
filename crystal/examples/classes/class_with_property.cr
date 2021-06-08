@@ -1,5 +1,5 @@
 class Person
-    property name : String 
+    property name : String
 
     def initialize(@name = "George")
     end

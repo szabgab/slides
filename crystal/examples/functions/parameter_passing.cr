@@ -1,5 +1,5 @@
 def welcome(name)
     return "Hello #{name}!"
- end
- 
- puts welcome("Foo")
+end
+
+puts welcome("Foo")
