@@ -1,13 +1,23 @@
+require "option_parser"
 # Extract the list of imported files
 # Verify that all the files are indeed imported
 
 # Optionally verify that the same file is not imported more than once.
 
+class Options
+    class_property verbose = false
+end
+
+
 def main
+    get_options()
     md_files = get_md_files(Dir.current)
-    # md_files.each {|path|
-    #     puts path
-    # }
+    if Options.verbose
+        puts "MD files:\n"
+        md_files.each {|path|
+            puts path
+        }
+    end
     imported_files, errors = get_imported_files(md_files)
     # imported_files.each {|file|
     #     puts file
@@ -33,6 +43,28 @@ def main
         exit(1)
     end
 end
+
+def get_options
+    OptionParser.parse do |parser|
+        parser.banner = "Usage: check_slides.cr [arguments]"
+        parser.on("-v", "--verbose", "Verbose mode") { Options.verbose = true }
+        parser.on("-h", "--help", "Show this help") do
+            puts parser
+            exit
+        end
+        parser.invalid_option do |flag|
+        STDERR.puts "ERROR: #{flag} is not a valid option."
+        STDERR.puts parser
+        exit(1)
+        end
+        parser.missing_option do |flag|
+        STDERR.puts "ERROR: #{flag} requires a value"
+        STDERR.puts parser
+        exit(1)
+        end
+    end
+end  
+
 
 def get_imported_files(md_files)
     imported_files = Set(String).new

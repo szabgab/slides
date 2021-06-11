@@ -234,3 +234,10 @@ crystal spec
 
 
 ![](examples/is_nil.cr)
+
+## JSON to NamedTuple
+{id: json-to-namedtuple}
+{i: JSON}
+{i: NamedTuple}
+
+![](examples/json_to_named_tuple.cr)
