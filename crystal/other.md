@@ -207,6 +207,9 @@ crystal spec
 {id: json-to-namedtuple}
 {i: NamedTuple}
 {i: from_json}
+{i: JSON}
+
+![](examples/json_to_named_tuple.cr)
 
 ## Reading a JSON file
 {id: reading-a-json-file}
@@ -235,9 +238,4 @@ crystal spec
 
 ![](examples/is_nil.cr)
 
-## JSON to NamedTuple
-{id: json-to-namedtuple}
-{i: JSON}
-{i: NamedTuple}
 
-![](examples/json_to_named_tuple.cr)
