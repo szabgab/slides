@@ -1,0 +1,4 @@
+x # => "one"
+typeof(x) # => String
+x # => 1
+typeof(x) # => Int32

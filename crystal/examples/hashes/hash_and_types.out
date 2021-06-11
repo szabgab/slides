@@ -1,0 +1,2 @@
+person # => {"name" => "Foo Bar", "number" => 42}
+Hash(String, Int32 | String)

@@ -21,3 +21,10 @@
 ![](examples/hashes/empty_hash_string_int32.cr)
 
 ![](examples/hashes/empty_hash_string_int32_bool.cr)
+
+## Hash and types
+{id: hash-and-types}
+
+![](examples/hashes/hash_and_types.cr)
+![](examples/hashes/hash_and_types.out)
+

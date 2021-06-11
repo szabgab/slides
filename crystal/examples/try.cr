@@ -1,16 +1,3 @@
-# counter = Int32|Nil
-
-# counter = 2
-# puts counter + 1
-
-
-# person = {
-#     "name" => "Foo Bar",
-#     "number" => 42,
-# }
-# p! person
-# puts typeof(person) # Hash(String, Int32 | String)
-
 # joe = {} of String => Int32 | String
 # joe["name"] = "Joe"
 # joe["number"] = 23

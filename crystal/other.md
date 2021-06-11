@@ -11,23 +11,8 @@
 ## No type-checking?
 {id: no-typechecking}
 
-```
-x = "one"
-x = 1
-p! x
-p! typeof(x)
-```
-
-## JSON (to_json, parse)
-{id: json}
-{i: json}
-{i: to_json}
-{i: parse}
-
-* Round trip with JSON
-* Have to `require "json"` for the method to be added.
-
-![](examples/json.cr)
+![](examples/assign_to_variable.cr)
+![](examples/assign_to_variable.out)
 
 ## HTTP Client
 {id: http-client}
@@ -192,34 +177,10 @@ crystal spec
 
 ![](examples/gravatar.cr)
 
-## JSON to NamedTuple
-{id: json-to-namedtuple}
-{i: NamedTuple}
-{i: from_json}
-{i: JSON}
-
-![](examples/json_to_named_tuple.cr)
-
-## Reading a JSON file
-{id: reading-a-json-file}
-{i: NamedTuple}
-
-![](examples/math.json)
-![](examples/read_math_json.cr)
-
-
 ## Try Crystal
 {id: try}
 
 ![](examples/try.cr)
-
-## JSON to Array
-{id: json-to-array}
-{i: JSON}
-{i: from_json}
-
-![](examples/json_to_array.cr)
-
 
 ## Check if variable is nil?
 {id: nil}
