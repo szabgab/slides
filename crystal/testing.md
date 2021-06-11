@@ -13,3 +13,16 @@
 ```
 crystal spec .
 ```
+
+## Testing with Spec
+{id: testing-with-spec}
+
+![](spec/spec_helper.cr)
+
+![](spec/demo_spec.cr)
+
+```
+crystal spec
+```
+
+

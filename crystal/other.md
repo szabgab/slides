@@ -1,7 +1,14 @@
 # Other
 {id: other}
 
-## Single quotes vs double quotes 
+## Check if variable is nil?
+{id: nil}
+{i: nil}
+{i: nil?}
+
+![](examples/is_nil.cr)
+
+## Single quotes vs double quotes
 {id: single-quotes-vs-double-quotes}
 
 * Single quotes are for characters
@@ -109,15 +116,6 @@ shards install
 ./bin/ameba
 ```
 
-## Crystal logging
-{id: crystal-logging}
-
-* [Log](https://crystal-lang.org/api/Log.html)
-
-* 7 levels of logging, default is `info` and higher to the `STDOUT`
-
-![](examples/logging.cr)
-
 ## Parse URL (URI)
 {id: parse-url}
 {i: URI}
@@ -143,27 +141,6 @@ shards install
 * `cli_parser.cr -d`
 * `cli_parser.cr -x`
 
-## YAML
-{id: yaml}
-{i: YAML}
-
-* [YAML](https://crystal-lang.org/api/YAML.html)
-
-![](examples/crystal.yml)
-![](examples/use_yaml.cr)
-
-
-## Testing with Spec
-{id: testing-with-spec}
-
-![](spec/spec_helper.cr)
-
-![](spec/demo_spec.cr)
-
-```
-crystal spec
-```
-
 ## Ternary operator and or to set default value
 {id: default-value}
 {i:||}
@@ -181,11 +158,4 @@ crystal spec
 {id: try}
 
 ![](examples/try.cr)
-
-## Check if variable is nil?
-{id: nil}
-
-
-![](examples/is_nil.cr)
-
 

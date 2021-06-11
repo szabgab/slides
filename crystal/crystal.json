@@ -19,6 +19,8 @@
         "regexes.md",
         "testing.md",
         "json.md",
+        "yaml.md",
+        "logging.md",
         "sqlite.md",
         "time.md",
         "other.md"
