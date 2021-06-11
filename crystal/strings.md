@@ -13,6 +13,7 @@
 
 ## Iterate over characters of a atring
 {id: strings-iterator}
+{i: each_char}
 
 ![](examples/string_iterator.cr)
 
