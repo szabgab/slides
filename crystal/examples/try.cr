@@ -1,6 +1,3 @@
-t = Time.monotonic
-puts typeof(t)
-
 # counter = Int32|Nil
 
 # counter = 2

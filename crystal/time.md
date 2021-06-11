@@ -58,3 +58,9 @@
 ![](examples/time/add_timespan.cr)
 ![](examples/time/add_timespan.out)
 
+## Time Types
+{id: time-types}
+
+![](examples/time/types.cr)
+![](examples/time/types.out)
+
