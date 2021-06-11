@@ -168,17 +168,6 @@ shards install
 ![](examples/use_yaml.cr)
 
 
-## Dates and Time
-{id: datetime}
-{i: Time}
-{i: Time::Span}
-
-* [Time](https://crystal-lang.org/api/Time.html)
-* [Time::Span](https://crystal-lang.org/api/Time/Span.html)
-
-![](examples/my_time.cr)
-![](examples/my_time.out)
-
 ## Testing with Spec
 {id: testing-with-spec}
 
