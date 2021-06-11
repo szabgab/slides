@@ -20,6 +20,7 @@
         "testing.md",
         "json.md",
         "yaml.md",
+        "exceptions.md",
         "logging.md",
         "sqlite.md",
         "time.md",

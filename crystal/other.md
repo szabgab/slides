@@ -23,6 +23,8 @@
 
 ## HTTP Client
 {id: http-client}
+{i: http/client}
+{i: HTTP::Client}
 
 ![](examples/http_client.cr)
 
@@ -32,18 +34,6 @@
 {i: Infinity}
 
 ![](examples/divide_by_zero.cr)
-
-## Catch exception - begin, rescue
-{id: catch-exception}
-{i: begin}
-{i: rescue}
-
-![](examples/catch_exception.cr)
-
-## Raise exception
-{id: raise-exception}
-
-![](examples/raise_exception.cr)
 
 ## Require other files
 {id: require-other-files}
@@ -129,17 +119,6 @@ shards install
 
 ![](examples/path.cr)
 
-
-## Command line Option Parser (argparse, GetOpts)
-{id: option-parser}
-
-* [OptionParser](https://crystal-lang.org/api/OptionParser.html)
-
-![](examples/cli_parser.cr)
-
-* `cli_parser.cr -d code-maven.com -v`
-* `cli_parser.cr -d`
-* `cli_parser.cr -x`
 
 ## Ternary operator and or to set default value
 {id: default-value}
