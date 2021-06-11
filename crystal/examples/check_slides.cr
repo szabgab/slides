@@ -63,7 +63,7 @@ def get_options
         exit(1)
         end
     end
-end  
+end
 
 
 def get_imported_files(md_files)
