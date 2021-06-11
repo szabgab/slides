@@ -1,6 +1,12 @@
 # Other
 {id: other}
 
+## Spaceship Operator
+{id: spaceship-operator}
+{i: <=>}
+
+![](examples/spaceship_operator.cr)
+
 ## Check if variable is nil?
 {id: nil}
 {i: nil}
@@ -112,12 +118,34 @@ shards install
 
 ![](examples/parse_url.cr)
 
-## Join file system path
+## Join / concatenate file system path
 {id: join-file-system-path}
+{i: Path}
 
 * [Path](https://crystal-lang.org/api/Path.html)
 
 ![](examples/path.cr)
+
+## Join / concatenate file system path
+{id: concatenate-file-system-path}
+{i: Path}
+{i: /}
+
+![](examples/concatenate_path.cr)
+
+## Path from string
+{id: path}
+
+![](examples/path_from_string.cr)
+
+
+## Expand Path
+{id: expand-path}
+{i: expand}
+{i: ~}
+
+![](examples/path_expand.cr)
+![](examples/path_expand.out)
 
 
 ## Ternary operator and or to set default value

@@ -149,6 +149,10 @@ docker -t0 stop crystal
 
 ## Methods of int
 {id: int-methods}
+{i: abs}
+{i: round}
+{i: even}
+{i: gcd}
 
 ![](examples/number_methods.cr)
 
