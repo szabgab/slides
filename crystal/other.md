@@ -166,3 +166,20 @@ shards install
 
 ![](examples/try.cr)
 
+## case / when
+{id: case}
+{i: case}
+{i: switch}
+{i: when}
+
+![](examples/case.cr)
+
+## STDERR, STDOUT
+{id: stderr}
+{i: STDERR}
+{i: STDOUT}
+
+![](examples/stderr.cr)
+
+* Redirection on the command line using > out  and 2> err
+
