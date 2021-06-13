@@ -97,6 +97,7 @@ docker -t0 stop crystal
 * Interpolation is the embedding of variables in strings using `#{}`
 
 ![](examples/intro/hello_name_interpolation.cr)
+![](examples/intro/hello_name_interpolation.out)
 
 
 ## Interpolation
@@ -107,22 +108,41 @@ docker -t0 stop crystal
 * and even expressions.
 
 ![](examples/intro/interpolation.cr)
+![](examples/intro/interpolation.out)
 
 
-## Escaping - Alternative delimiters
+## Escaping - Alternative quote as delimiters
 {id: escaping}
+{i: %}
 
 ![](examples/intro/escaping.cr)
+![](examples/intro/escaping.out)
 
-## Types
+## Debugging print p!
+{id: debugging-print}
+{i: p!}
+
+* `p!` can be useful, especially for debugging prints as it includes the name of the variable.
+* Here we see a simple string printed and then a slightly more complex data-structure.
+
+![](examples/intro/debugging_print.cr)
+![](examples/intro/debugging_print.out)
+
+## Comments
+{id: comments}
+
+![](examples/intro/comments.cr)
+
+
+## Types - typeof
 {id: types}
 {i: String}
 {i: Int32}
 {i: Float64}
 {i: p!}
+{i: typeof}
 
 ![](examples/intro/types.cr)
-
 
 ## Add numbers
 {id: add-numbers}

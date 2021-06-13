@@ -9,3 +9,6 @@ p! typeof(age)     # typeof(age) => Int32
 pi = 3.14
 puts typeof(pi)   # Float64
 p! typeof(pi)     # typeof(pi) => Float64
+
+yesno = true
+p! typeof(yesno)  # typeof(yesno) # => Bool

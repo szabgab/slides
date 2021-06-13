@@ -98,6 +98,11 @@
 
 ![](examples/capture.cr)
 
+## Execute external program (capture)
+{id: execute-external-program-capture2}
+
+![](examples/capture2.cr)
+
 
 ## Ameba Linter
 {id: ameba-linter}
