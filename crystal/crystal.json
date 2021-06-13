@@ -15,6 +15,7 @@
         "directories.md",
         "sets.md",
         "functions.md",
+        "tuples.md",
         "classes.md",
         "structs.md",
         "regexes.md",

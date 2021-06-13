@@ -1,3 +1,15 @@
+h = {
+    "fname" => "Foo",
+}
+puts h
+puts typeof(h)
+h["lname"] = "Bar"
+puts h
+# puts h[:lname]
+# Missing hash key: :lname (KeyError)
+
+
+
 # joe = {} of String => Int32 | String
 # joe["name"] = "Joe"
 # joe["number"] = 23
