@@ -29,4 +29,10 @@ DB.open "sqlite3://%3Amemory%3A" do |db|
     puts count
     puts typeof(count)
 
+    puts db.scalar "SELECT name FROM sqlite_schema"
+    db.query_all "SELECT name, type FROM sqlite_schema" do |line|
+       puts line
+       puts line.read
+       puts line.read
+    end
 end

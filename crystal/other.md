@@ -183,3 +183,15 @@ shards install
 
 * Redirection on the command line using > out  and 2> err
 
+## Suffix if
+{id: suffix-if}
+{i: if}
+
+![](examples/suffix_if.cr)
+
+## Suffix unless
+{id: suffix-unless}
+{i: unless}
+
+![](examples/suffix_unless.cr)
+
