@@ -195,3 +195,7 @@ shards install
 
 ![](examples/suffix_unless.cr)
 
+## Return Boolean
+{id: return-boolean}
+
+![](examples/functions/return_bool.cr)

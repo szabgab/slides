@@ -91,3 +91,10 @@ To be able to compare two objects based on their attributes only we can used the
 {i: class_property}
 
 ![](examples/classes/singleton_using_class_properties_with_defaults.cr)
+
+## Class monkey-path add method
+{id: class-monkey-path-add-method}
+
+![](examples/classes/person.cr)
+![](examples/classes/use_person.cr)
+
