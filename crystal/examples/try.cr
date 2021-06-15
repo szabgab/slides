@@ -1,6 +1,18 @@
 h = {
     "fname" => "Foo",
 }
+
+
+
+# g and i are the same 
+i = {
+    :fname => "Foo"
+}
+
+g = {
+    fname: "Foo", # Symbol
+}
+
 puts h
 puts typeof(h)
 h["lname"] = "Bar"

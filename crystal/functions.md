@@ -1,6 +1,14 @@
 # Functions
 {id: functions}
 
+## Functions and methods
+{id: functions-and-methods}
+
+* [Overloading](https://crystal-lang.org/reference/syntax_and_semantics/overloading.html)
+* [Type Restrictions](https://crystal-lang.org/reference/syntax_and_semantics/type_restrictions.html)
+* [Method arguments](https://crystal-lang.org/reference/syntax_and_semantics/default_values_named_arguments_splats_tuples_and_overloading.html)
+* [Return types](https://crystal-lang.org/reference/syntax_and_semantics/return_types.html)
+
 ## Function return value
 {id: return-value}
 {i: return}
@@ -91,4 +99,35 @@ returned from the function.
 * `Int32?` is the same as `Int32 | ::Nil`
 
 ![](examples/functions/type_or_nil.cr)
+
+## Yield
+{id: yield}
+
+* [Blocks and Procs](https://crystal-lang.org/reference/syntax_and_semantics/blocks_and_procs.html)
+
+![](examples/functions/yield.cr)
+
+* Optionally you can add a `&anything` if you think that makes the code more readable, but the important part is having `yield` in the code.
+
+![](examples/functions/yield_block.cr)
+
+
+* You can call `yield` more than once inside the function and the block will be executed for every `yield`.
+
+![](examples/functions/twice.cr)
+
+## Yield with parameters
+{id: yield-with-parameters}
+
+![](examples/functions/yield_params.cr)
+
+* This example based on the example on the Crystal web site does not work:
+
+![](examples/functions/yield_both.cr)
+
+## Block and parameters
+{id: block-and-parameters}
+
+![](examples/functions/yield_parameters.cr)
+
 
