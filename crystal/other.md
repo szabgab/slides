@@ -204,3 +204,9 @@ shards install
 {id: return-boolean}
 
 ![](examples/functions/return_bool.cr)
+
+## Symbols
+{id: symbols}
+
+![](examples/symbols.cr)
+

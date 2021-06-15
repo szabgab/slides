@@ -98,3 +98,4 @@ To be able to compare two objects based on their attributes only we can used the
 ![](examples/classes/person.cr)
 ![](examples/classes/use_person.cr)
 
+![](examples/classes/attribute_person.cr)

@@ -5,7 +5,8 @@
 ## Arrays intro
 {id: arrays-intro}
 
-* [Array](https://crystal-lang.org/api/Array.html)
+* [Array API](https://crystal-lang.org/api/Array.html)
+* [Array reference](https://crystal-lang.org/reference/syntax_and_semantics/literals/array.html)
 
 ![](examples/arrays/array.cr)
 
@@ -43,3 +44,16 @@
 {i: grep}
 
 ![](examples/arrays/filter.cr)
+
+## Add arrays
+{id: add-arrays}
+
+![](examples/arrays/add.cr)
+![](examples/arrays/add.out)
+
+## Repeat arrays
+{id: repeat-arrays}
+
+![](examples/arrays/repeat.cr)
+![](examples/arrays/repeat.out)
+
