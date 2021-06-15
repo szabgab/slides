@@ -3,3 +3,5 @@ def welcome
 end
 
 puts welcome
+text = welcome
+puts text
