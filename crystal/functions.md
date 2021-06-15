@@ -82,4 +82,13 @@ returned from the function.
 ![](examples/functions/return_type.cr)
 
 
+## Type or Nil
+{id: type-or-nil}
+{i: ?}
+{i: Nil}
+
+* A question mark `?` after the type in the function declaration is the same as accepting `nil` as well.
+* `Int32?` is the same as `Int32 | ::Nil`
+
+![](examples/functions/type_or_nil.cr)
 

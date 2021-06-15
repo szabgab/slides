@@ -5,3 +5,4 @@ Layout/TrailingBlankLines:
 Lint/UselessAssign:
   Excluded:
   - examples/files/append_to_file_bug.cr
+  - examples/functions/implicit.cr
