@@ -136,13 +136,24 @@ docker -t0 stop crystal
 
 ## Types - typeof
 {id: types}
+{i: typeof}
 {i: String}
 {i: Int32}
 {i: Float64}
+{i: Bool}
 {i: p!}
-{i: typeof}
 
 ![](examples/intro/types.cr)
+
+## Compound Types - typeof
+{id: compound-types}
+{i: typeof}
+{i: Array}
+{i: Tuple}
+{i: Hash}
+{i: NamedTuple}
+
+![](examples/intro/compound_types.cr)
 
 ## Add numbers
 {id: add-numbers}
