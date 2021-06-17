@@ -215,3 +215,14 @@ shards install
 
 ![](examples/macros/function.cr)
 
+
+![](examples/docspec/shard.lock)
+
+![](examples/docspec/shard.yml)
+
+![](examples/docspec/spec/anagram_spec.cr)
+
+![](examples/docspec/spec/doctes_spec.cr)
+
+![](examples/docspec/src/app.cr)
+
