@@ -1,4 +1,15 @@
 
+#content = 1
+#{% if content == 1 %}
+#def f
+#   puts "one"
+#end
+#{% else %}
+#def f
+#   puts "else"
+#end
+#{% end %}
+
 # joe = {} of String => Int32 | String
 # joe["name"] = "Joe"
 # joe["number"] = 23

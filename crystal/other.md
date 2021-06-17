@@ -210,3 +210,8 @@ shards install
 
 ![](examples/symbols.cr)
 
+## Macros
+{id: macros}
+
+![](examples/macros/function.cr)
+

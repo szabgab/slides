@@ -1,6 +1,6 @@
 planets = ["Mars", "Jupyter", "Saturn"]
 
-# append
+# append / push / <<
 planets << "Pluto"
 puts planets         # ["Mars", "Jupyter", "Saturn", "Pluto"]
 

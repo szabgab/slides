@@ -32,6 +32,7 @@ to get the nice stack trace
 
 filter or grep => reject   (use the names other languages use for the same concept to make it easier to find the right words )
 
+What is "flag?"  ? I saw it in the source code of Kemal, but I don't see it defined anywhere.
 
 
 ### SQLite

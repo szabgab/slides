@@ -1,0 +1,6 @@
+version: 2.0
+shards:
+  docspec:
+    git: https://github.com/skippi/docspec.git
+    version: 0.3.0
+

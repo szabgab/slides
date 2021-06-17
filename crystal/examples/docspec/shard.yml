@@ -1,0 +1,11 @@
+name: Anagram
+version: 0.0.1
+
+authors:
+   - Gabor Szabo <gabor@szabgab.com>
+
+development_dependencies:
+  docspec:
+    github: skippi/docspec
+
+license: MIT

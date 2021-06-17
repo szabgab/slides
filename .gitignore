@@ -90,4 +90,4 @@ crystal/counter.yaml
 crystal/counter.json
 crystal/counter.db
 crystal/data.db
-
+crystal/examples/docspec/lib/
