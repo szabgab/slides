@@ -155,7 +155,7 @@ docker -t0 stop crystal
 
 ![](examples/intro/compound_types.cr)
 
-## Add numbers
+## Add numbers - concatenate strings
 {id: add-numbers}
 {i: +}
 
@@ -176,16 +176,27 @@ docker -t0 stop crystal
 {id: numeric-operators}
 
 
-![](examples/numerical_operators.cr)
+![](examples/intro/numerical_operators.cr)
 
-## Methods of int
+## Methods of Int32
 {id: int-methods}
 {i: abs}
 {i: round}
 {i: even}
 {i: gcd}
 
-![](examples/number_methods.cr)
+* [Int32](https://crystal-lang.org/api/Int32.html)
+
+![](examples/intro/int32_methods.cr)
+
+## Methods of Float64
+{id: float-methods}
+{i: abs}
+{i: round}
+
+* [Float64](https://crystal-lang.org/api/Float64.html)
+
+![](examples/intro/float64_methods.cr)
 
 ## if statement
 {id: if}
