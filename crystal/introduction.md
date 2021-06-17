@@ -204,15 +204,15 @@ docker -t0 stop crystal
 {i: else}
 {i: end}
 
-![](examples/if.cr)
+![](examples/intro/if.cr)
 
 ## elsif
 {id: elsif}
 {i: elsif}
 
-![](examples/deep_if.cr)
+![](examples/intro/deep_if.cr)
 
-![](examples/elsif.cr)
+![](examples/intro/elsif.cr)
 
 
 ## Comparision Operators
@@ -225,11 +225,26 @@ docker -t0 stop crystal
 
 ## Program name
 {id: program-name}
+{i: PROGRAM_NAME}
 
-![](examples/program_name.cr)
-![](examples/program_name.out)
+![](examples/intro/program_name.cr)
 
-* [toplevel](https://crystal-lang.org/api/toplevel.html)
+* When running with `crystal examples/intro/program_name.cr`:
+
+![](examples/intro/program_name.out)
+
+We can also compile it
+
+```
+crystal build examples/intro/program_name.cr
+```
+
+* This will generate `program_name` (as that was the name of our source file)
+* We can rename it: `mv program_name other`
+* We can run it `./other` and it will print the name of the executable file `other`.
+
+
+* [See other toplevel variables](https://crystal-lang.org/api/toplevel.html)
 
 
 ## Command line arguments - ARGV
@@ -238,14 +253,14 @@ docker -t0 stop crystal
 
 * ARGV is an Array of Strings. `Array(String)`
 
-![](examples/cli.cr)
+![](examples/intro/cli.cr)
 
 
 ## Early exit
 {id: exit}
 {i: exit}
 
-![](examples/early_exit.cr)
+![](examples/intro/early_exit.cr)
 
 * Exit code defaults to 0
 
@@ -257,7 +272,7 @@ echo %ERROR_LEVEL%
 ## Rectangle
 {id: rectangle}
 
-![](examples/rectangle.cr)
+![](examples/intro/rectangle.cr)
 
 
 
@@ -267,12 +282,12 @@ echo %ERROR_LEVEL%
 
 * `false`, `nil`, and the null pointer are "falsy" everything else, including 0 and "" are `true`
 
-![](examples/true_values.cr)
+![](examples/intro/true_values.cr)
 
 ## Math
 {id: math}
 
-![](examples/math.cr)
-![](examples/math.out)
+![](examples/intro/math.cr)
+![](examples/intro/math.out)
 
 
