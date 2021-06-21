@@ -17,10 +17,19 @@
 * [Open Babel module](http://openbabel.org/docs/2.3.1/UseTheLibrary/PythonDoc.html)
 * [Pybel](http://openbabel.org/docs/2.3.1/UseTheLibrary/Python_Pybel.html)
 
+
 ```
 import sdf
 import pybel
 ```
+
+
+## Python-based Simulations of Chemistry Framework
+{id: pyscf}
+
+* [Python-based Simulations of Chemistry Framework](https://pyscf.org/)
+* [pyscf on GitHub](https://github.com/pyscf/pyscf)
+
 
 ## Bond length
 {id: bond-length}
