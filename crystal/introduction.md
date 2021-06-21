@@ -143,6 +143,8 @@ docker -t0 stop crystal
 {i: Bool}
 {i: p!}
 
+* [Literals](https://crystal-lang.org/reference/syntax_and_semantics/literals/index.html)
+
 ![](examples/intro/types.cr)
 
 ## Compound Types - typeof
