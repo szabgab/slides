@@ -887,3 +887,15 @@ pytest -p no:random-order -v
 
 ![](examples/gravatar.py)
 
+## Debug with ptpython
+{id: debug-with-ptpython}
+
+```
+pip install ptpython
+```
+
+* Then either use it as a REPL to explore code or make your application fall back into this REPL to debug your code.
+
+![](examples/other/debug_with_ptpython.py)
+
+
