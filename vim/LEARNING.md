@@ -1,4 +1,5 @@
-First thing to know is how to exit (quit) from vim: Press ESC then type :q
+First thing to know is how to exit (quit) from vim Press ESC then type :q
+
 
 Vim is very different from othere editors.
 Most editors have a single mode of operation in which you can edit text.
@@ -10,6 +11,7 @@ Vim has several modes of operation, the important ones are called
 When we open a file by default we are in Normal mode.
 Now you can navigate around with the arrows.
 A lot more navigation options will come later.
+
 
 The next thing to try is a basic edit cycle.
 Press `i` to move from `Normal` to `Insert` mode. Then type some text and press `ESC` to
