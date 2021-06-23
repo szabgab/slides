@@ -6,7 +6,7 @@ Most editors have a single mode of operation in which you can edit text.
 Navigation is limited and for many functions you need to use the menu system or the mouse.
 Vim has several modes of operation, the important ones are called
 * Normal mode (aka. navigation mode)
-* Insert mode (aka. edit mode)
+* Insert mode (aka. typing mode)
 * Command mode
 When we open a file by default we are in Normal mode.
 Now you can navigate around with the arrows.
