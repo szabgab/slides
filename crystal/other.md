@@ -265,3 +265,10 @@ require "some_name"         # Find it somewhere (standard library, src directory
 
 ![](examples/here_document.cr)
 
+## printf
+{id: printf}
+{i: printf}
+
+![](examples/printf.cr)
+![](examples/printf.out)
+

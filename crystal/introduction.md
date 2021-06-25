@@ -286,8 +286,10 @@ echo %ERROR_LEVEL%
 
 ![](examples/intro/true_values.cr)
 
-## Math
+## Math - PI
 {id: math}
+{i: PI}
+{i: Math}
 
 ![](examples/intro/math.cr)
 ![](examples/intro/math.out)
