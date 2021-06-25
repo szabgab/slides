@@ -41,6 +41,9 @@ Yak Shaving
 https://forum.crystal-lang.org/ has around 500 users.
 https://gitter.im/crystal-lang/crystal Gitter 1960 people
 
+Crystal Learning Resources
+LuckyCast https://luckycasts.com/   ( https://luckyframework.org/ ) 
+
 
 ### SQLite
 

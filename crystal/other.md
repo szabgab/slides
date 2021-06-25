@@ -259,4 +259,9 @@ require "some_name"         # Find it somewhere (standard library, src directory
 
 ![](examples/assign.cr)
 
+## Here documents
+{id: here-documents}
+{i: <<-}
+
+![](examples/here_document.cr)
 
