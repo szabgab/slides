@@ -4,26 +4,26 @@
 ## Strings intro
 {id: strings-intro}
 
-![](examples/strings.cr)
+![](examples/strings/strings.cr)
 
 ## Empty and blank strings
 {id: empty-strings}
 
-![](examples/empty_strings.cr)
+![](examples/strings/empty_strings.cr)
 
 ## Iterate over characters of a atring
 {id: strings-iterator}
 {i: each_char}
 
-![](examples/string_iterator.cr)
+![](examples/strings/string_iterator.cr)
 
 
-## Type conversion to float, to int
+## Type conversion  from string to float, to int
 {id: type-conversion}
 {i: to_f}
 {i: to_i}
 
-![](examples/type_conversion.cr)
+![](examples/strings/type_conversion.cr)
 
 ## Converting string to integer or float
 {id: converting-string-to-integer-or-float}
@@ -32,11 +32,11 @@
 {i: to_f}
 {i: to_f?}
 
-![](examples/convertable.cr)
-![](examples/convertable.out)
+![](examples/strings/convertable.cr)
+![](examples/strings/convertable.out)
 
 ## Split String
 {id: split-string}
 {i: split}
 
-![](examples/split_string.cr)
+![](examples/strings/split_string.cr)
