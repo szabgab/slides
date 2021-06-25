@@ -34,6 +34,13 @@ filter or grep => reject   (use the names other languages use for the same conce
 
 What is "flag?"  ? I saw it in the source code of Kemal, but I don't see it defined anywhere.
 
+GitHub Actions configurators: https://crystal-lang.github.io/install-crystal/configurator.html
+
+Yak Shaving
+
+https://forum.crystal-lang.org/ has around 500 users.
+https://gitter.im/crystal-lang/crystal Gitter 1960 people
+
 
 ### SQLite
 
@@ -41,3 +48,6 @@ Lack of documentation
 last_id  last_insert_id  How can one know?
 
 puts __FILE__
+
+
+

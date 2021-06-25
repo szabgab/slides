@@ -21,6 +21,8 @@ crystal spec .
 
 ![](spec/demo_spec.cr)
 
+![](spec/todo_spec.cr)
+
 ```
 crystal spec
 ```
