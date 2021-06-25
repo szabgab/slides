@@ -1,3 +1,2 @@
 text = "The black cat climbed the green tree"
-puts text
-p! text
+puts text.ends_with?("tree")
