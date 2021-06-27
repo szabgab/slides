@@ -57,3 +57,10 @@
 ![](examples/arrays/repeat.cr)
 ![](examples/arrays/repeat.out)
 
+## Transform with map
+{id: transform-with-map}
+{i: map}
+
+![](examples/arrays/map.cr)
+![](examples/arrays/map.out)
+
