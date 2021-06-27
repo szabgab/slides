@@ -1,4 +1,3 @@
-
 #content = 1
 #{% if content == 1 %}
 #def f

@@ -99,3 +99,11 @@ To be able to compare two objects based on their attributes only we can used the
 ![](examples/classes/use_person.cr)
 
 ![](examples/classes/attribute_person.cr)
+
+## Stringification to_s
+{id: class-stringification}
+{i: to_s}
+
+![](examples/classes/stringification.cr)
+![](examples/classes/stringification.out)
+

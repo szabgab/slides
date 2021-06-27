@@ -42,7 +42,38 @@ https://forum.crystal-lang.org/ has around 500 users.
 https://gitter.im/crystal-lang/crystal Gitter 1960 people
 
 Crystal Learning Resources
-LuckyCast https://luckycasts.com/   ( https://luckyframework.org/ ) 
+LuckyCast https://luckycasts.com/   ( https://luckyframework.org/ )
+
+Rosetta Code: http://www.rosettacode.org/wiki/Category:Crystal
+Crystal:  255 pages
+Ruby:   1,020 pages
+Perl:   1,296 pages
+Python: 1,242 pages
+Go:     1,372 pages
+
+Exercism https://exercism.io/
+  Crystal: 50 Exercises   3 Mentors   1,171 Students
+  Ruby:    98 Exercises 116 Mentors  31,976 Students
+  Perl:    62 Exercises   7 Mentors   1,655 Students
+  Python: 117 Exercises 157 Mentors 123,833 Students
+  Go:     109 Exercises  72 Mentors  48,035 Students
+
+LinkedIn pages:
+ https://www.linkedin.com/company/crystal-language/ 56 followers
+LinkedIn groups:
+ The Crystal Programming Language https://www.linkedin.com/groups/12419254/  6 members
+ Crystal Language https://www.linkedin.com/groups/12061584/ 36 members
+
+Facebook
+Twitter
+Instagarm
+Reddit
+Stack Overflow
+What else?
+
+What learning resoureces are there?
+
+Crystal Course of Bruce A. Tate https://grox.io/language/crystal/course Nov 1, 2019
 
 
 ### SQLite
@@ -52,5 +83,15 @@ last_id  last_insert_id  How can one know?
 
 puts __FILE__
 
+* Compiles to LLVM
 
+* Macros for meta-programming
+* Concurrency via CSP
+* Bind to C libraries
+* Standard library
+
+* Doc generation
+* Test framework
+* Common Code formatting
+* Dependency management
 

@@ -272,3 +272,9 @@ require "some_name"         # Find it somewhere (standard library, src directory
 ![](examples/printf.cr)
 ![](examples/printf.out)
 
+
+## Int methods: Times
+{id: times}
+
+![](examples/times.cr)
+
