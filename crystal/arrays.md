@@ -10,6 +10,11 @@
 
 ![](examples/arrays/array.cr)
 
+## Array elements - indexing
+{id: array-elements}
+
+![](examples/arrays/elements.cr)
+
 ## Array iterate over (each, each_with_index)
 {id: array-iterate}
 {i: each}
@@ -37,13 +42,11 @@
 
 ![](examples/arrays/count_digits.cr)
 
-## Reject (filter, grep)
-{id: reject}
-{i: reject}
-{i: filter}
-{i: grep}
+## Operations on arrays
+{id: operations-on-arrays}
 
-![](examples/arrays/filter.cr)
+* add +
+* repeat *
 
 ## Add arrays
 {id: add-arrays}
@@ -56,6 +59,15 @@
 
 ![](examples/arrays/repeat.cr)
 ![](examples/arrays/repeat.out)
+
+## Reject (filter, grep)
+{id: reject}
+{i: reject}
+{i: filter}
+{i: grep}
+
+![](examples/arrays/filter.cr)
+
 
 ## Transform with map
 {id: transform-with-map}
