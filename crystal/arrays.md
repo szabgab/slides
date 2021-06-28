@@ -76,3 +76,24 @@
 ![](examples/arrays/map.cr)
 ![](examples/arrays/map.out)
 
+## Sample from array
+{id: arrays-sample}
+{i: sample}
+
+* Using [Random](random) behind the scenes.
+
+
+![](examples/arrays/sample.cr)
+![](examples/arrays/sample.out)
+
+
+## Shuffle array
+{id: arrays-shuffle}
+{i: shuffle}
+
+* Using [Random](random) behind the scenes.
+
+
+![](examples/arrays/shuffle.cr)
+![](examples/arrays/shuffle.out)
+
