@@ -278,3 +278,8 @@ require "some_name"         # Find it somewhere (standard library, src directory
 
 ![](examples/times.cr)
 
+## case of types
+{id: case-of-types}
+
+![](examples/case_when_on_type.cr)
+
