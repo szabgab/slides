@@ -14,7 +14,7 @@ puts text
 puts new_text
 
 animal = "cat"
-new_text = text.sub animal, do |original|
-   original.upcase
+new_text = text.sub animal do |original|
+  original.upcase
 end
 puts new_text

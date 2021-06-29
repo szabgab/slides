@@ -10,7 +10,6 @@ def bar
   puts "bar after"
 end
 
-
 foo bar {
   puts "in block"
 }

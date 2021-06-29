@@ -7,7 +7,5 @@ puts tpl["fname"]
 puts tpl[:lname]
 puts tpl["lname"]
 
-#tpl["fname"] = "Jane"
-#tpl["lname"] = "Bar"
-
-
+# tpl["fname"] = "Jane"
+# tpl["lname"] = "Bar"

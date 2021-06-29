@@ -17,4 +17,3 @@ when Int32
   puts "int32"
   puts x.abs
 end
-

@@ -14,4 +14,3 @@ get_params([] of String)
 get_params(["-v"])
 get_params(["-v", "-d", "10.0.0.1"])
 get_params(["-d", "10.0.0.1", "-v"])
-

@@ -5,4 +5,3 @@ puts ternary_name
 
 or_name = name || "default"
 puts or_name
-

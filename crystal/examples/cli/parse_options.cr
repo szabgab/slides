@@ -37,4 +37,3 @@ puts destination
 verbose, destination = get_params(["-v", "-d", "10.0.0.1"])
 puts verbose
 puts destination
-

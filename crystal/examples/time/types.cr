@@ -9,4 +9,3 @@ puts monotonic
 timespan = Time::Span.new(days: 1)
 puts typeof(timespan)
 puts timespan
-

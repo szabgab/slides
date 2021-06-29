@@ -1,5 +1,5 @@
 def welcome(name = "World")
-    return "Hello #{name}!"
+  return "Hello #{name}!"
 end
 
 puts welcome

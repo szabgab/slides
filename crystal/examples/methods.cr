@@ -1,5 +1,5 @@
 class Object
-    macro methods
+  macro methods
         {{ @type.methods.map &.name.stringify }}
     end
 end

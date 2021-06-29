@@ -1,10 +1,10 @@
 class Person
-    def_equals @name, @height
-    property name : String
-    property height : Float64
+  def_equals @name, @height
+  property name : String
+  property height : Float64
 
-    def initialize(@name, @height)
-    end
+  def initialize(@name, @height)
+  end
 end
 
 prs1 = Person.new(name: "Jane", height: 173.1)

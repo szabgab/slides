@@ -1,11 +1,11 @@
-#:pi = 3.14
+# :pi = 3.14
 values = {
-    "foo" => 1,
-    "bar" => 2,
-    "baz" => 3,
+  "foo" => 1,
+  "bar" => 2,
+  "baz" => 3,
 }
 
-#puts :pi
+# puts :pi
 names = %i(foo bar baz)
 puts names
 puts names[0]
@@ -13,13 +13,13 @@ puts typeof(names)
 puts typeof(names[0])
 
 puts values
-#names.each {|name|
+# names.each {|name|
 #    puts name
 #    values[name]
-#}
+# }
 
 h = {
-    "fname" => "Foo",
+  "fname" => "Foo",
 }
 puts h
 puts typeof(h)
@@ -28,20 +28,16 @@ puts h
 # puts h[:lname]
 # Missing hash key: :lname (KeyError)
 
-
 # g and i are the same
 i = {
-    :fname => "Foo"
+  :fname => "Foo",
 }
 puts i
 puts typeof(i)
-#i["fname"]
+# i["fname"]
 puts i[:fname]
 
 g = {
-    fname: "Foo", # Symbol
+  fname: "Foo", # Symbol
 }
 puts g[:fname]
-
-
-

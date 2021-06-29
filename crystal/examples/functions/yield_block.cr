@@ -7,5 +7,3 @@ end
 run {
   puts "in block"
 }
-
-

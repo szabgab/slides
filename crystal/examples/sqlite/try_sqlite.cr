@@ -1,11 +1,10 @@
 require "sqlite3"
 
-
 # Based on the example in the documentation
 db_file = "data.db"
 if File.exists?(db_file)
-    puts "File #{db_file} already exists. Aborting"
-    exit(1)
+  puts "File #{db_file} already exists. Aborting"
+  exit(1)
 end
 DB.open "sqlite3://#{db_file}" do |db|
   db.exec "CREATE TABLE contacts (name TEXT, age INTEGER)"

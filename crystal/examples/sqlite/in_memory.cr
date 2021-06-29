@@ -1,38 +1,38 @@
 require "sqlite3"
 
 DB.open "sqlite3://%3Amemory%3A" do |db|
-    db.exec "CREATE TABLE data (
+  db.exec "CREATE TABLE data (
         id INTEGER PRIMARY KEY,
         name TEXT,
         yesno BOOLEAN,
         number INTEGER,
         start DATETIME
     )"
-    db.exec "INSERT INTO data (name, yesno, number, start) VALUES (?, ?, ?, ?)",
-        "Foo", true, 42, Time.utc
-    name = db.scalar "SELECT name FROM data"
-    puts name
-    puts typeof(name)
-    puts name.to_s + " and Bar"
+  db.exec "INSERT INTO data (name, yesno, number, start) VALUES (?, ?, ?, ?)",
+    "Foo", true, 42, Time.utc
+  name = db.scalar "SELECT name FROM data"
+  puts name
+  puts typeof(name)
+  puts name.to_s + " and Bar"
 
-    number = db.scalar "SELECT number FROM data"
-    puts number
-    puts typeof(number)
-    puts number.to_s.to_i + 1
+  number = db.scalar "SELECT number FROM data"
+  puts number
+  puts typeof(number)
+  puts number.to_s.to_i + 1
 
-    db.exec "INSERT INTO data (name, yesno, number, start) VALUES (?, ?, ?, ?)",
-        "Bar", false, 23, Time.utc
-    name = db.scalar "SELECT name FROM data"
-    puts name
+  db.exec "INSERT INTO data (name, yesno, number, start) VALUES (?, ?, ?, ?)",
+    "Bar", false, 23, Time.utc
+  name = db.scalar "SELECT name FROM data"
+  puts name
 
-    count = db.scalar "SELECT COUNT(*) FROM data"
-    puts count
-    puts typeof(count)
+  count = db.scalar "SELECT COUNT(*) FROM data"
+  puts count
+  puts typeof(count)
 
-    puts db.scalar "SELECT name FROM sqlite_schema"
-    db.query_all "SELECT name, type FROM sqlite_schema" do |line|
-       puts line
-       puts line.read
-       puts line.read
-    end
+  puts db.scalar "SELECT name FROM sqlite_schema"
+  db.query_all "SELECT name, type FROM sqlite_schema" do |line|
+    puts line
+    puts line.read
+    puts line.read
+  end
 end

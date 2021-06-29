@@ -10,7 +10,7 @@ def create_db(db_file)
   end
   begin
     DB.open "sqlite3://#{db_file}" do |db|
-        db.exec "CREATE TABLE information (
+      db.exec "CREATE TABLE information (
             id INTEGER PRIMARY KEY,
             name TEXT,
             isit BOOLEAN,
@@ -26,7 +26,7 @@ def insert_data(db_file, name, isit, number)
   args = [name, isit, number]
   begin
     DB.open "sqlite3://#{db_file}" do |db|
-        db.exec "INSERT INTO information
+      db.exec "INSERT INTO information
                  (name, isit, number)
                  VALUES (?, ?, ?)", args: args
     end
@@ -40,12 +40,9 @@ def get_max
 end
 
 def get_data(db_file)
-    DB.open "sqlite3://#{db_file}" do |db|
-        db.exec "SELECT * FROM information"
-    end
-  rescue err
-    puts "Exception #{err}"
+  DB.open "sqlite3://#{db_file}" do |db|
+    db.exec "SELECT * FROM information"
+  end
+rescue err
+  puts "Exception #{err}"
 end
-
-
-

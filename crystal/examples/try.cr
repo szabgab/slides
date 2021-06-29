@@ -1,13 +1,13 @@
-#content = 1
-#{% if content == 1 %}
-#def f
+# content = 1
+# {% if content == 1 %}
+# def f
 #   puts "one"
-#end
-#{% else %}
-#def f
+# end
+# {% else %}
+# def f
 #   puts "else"
-#end
-#{% end %}
+# end
+# {% end %}
 
 # joe = {} of String => Int32 | String
 # joe["name"] = "Joe"
@@ -16,7 +16,6 @@
 # # compile time error
 # # Error: no overload matches 'Hash(String, Int32 | String)#[]=' with types String, Float64
 # puts typeof(joe)
-
 
 # #alias Some = {} of String => Int32 | String
 

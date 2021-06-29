@@ -4,7 +4,7 @@ def run(number, &block)
   puts "after"
 end
 
-run(10) {|value|
+run(10) { |value|
   puts "in block #{value}"
 }
 puts "----"
@@ -12,4 +12,3 @@ puts "----"
 run(20) do |value|
   puts "in do-end #{value}"
 end
-

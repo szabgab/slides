@@ -11,5 +11,3 @@ define_method foo, 1
 puts "before foo"
 foo # => 1
 puts "after foo"
-
-

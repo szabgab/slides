@@ -1,2 +1,2 @@
-res = (0..3).sum{|ix| ix * ix}
+res = (0..3).sum { |ix| ix * ix }
 puts res

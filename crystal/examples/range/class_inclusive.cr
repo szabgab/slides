@@ -1,4 +1,4 @@
 r = Range.new(1, 3)
-r.each {|this|
+r.each { |this|
   puts this
 }

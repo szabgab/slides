@@ -7,10 +7,9 @@ p! data
 # }
 # Error: undefined method 'each' for JSON::Any
 
-
 things = Array(String).from_json(things_str)
 p! things
 
-things.each {|thing|
-    puts thing
+things.each { |thing|
+  puts thing
 }

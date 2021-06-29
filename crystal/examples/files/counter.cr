@@ -1,13 +1,11 @@
 # if file exists read the content
 
-
 filename = "counter.txt"
-
 
 counter = 0
 if File.exists?(filename)
-    content = File.read(filename)
-    counter = content.to_i
+  content = File.read(filename)
+  counter = content.to_i
 end
 
 counter += 1

@@ -24,6 +24,6 @@ OptionParser.parse do |parser|
 end
 
 if verbose
-    puts "Verbose mode"
+  puts "Verbose mode"
 end
 puts "Destination: #{destination}"

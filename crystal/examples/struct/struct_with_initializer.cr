@@ -1,6 +1,7 @@
 struct MyConfig
   property name : String?
   property address : String?
+
   def initialize(@name)
   end
 end
@@ -13,4 +14,3 @@ puts cfg
 
 cfg.address = "foo@bar.com"
 puts cfg
-

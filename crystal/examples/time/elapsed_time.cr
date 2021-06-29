@@ -2,7 +2,7 @@ t0 = Time.monotonic
 sleep 1
 t1 = Time.monotonic
 
-elapsed = t1-t0
+elapsed = t1 - t0
 puts elapsed
 puts elapsed.seconds
 puts elapsed.total_seconds

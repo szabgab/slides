@@ -11,4 +11,3 @@ puts cfg
 
 cfg.address = "foo@bar.com"
 puts cfg
-

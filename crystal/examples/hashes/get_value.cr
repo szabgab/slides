@@ -1,6 +1,6 @@
 person = {
-   "name" => "Jane",
-   "number" => 42,
+  "name"   => "Jane",
+  "number" => 42,
 }
 puts person
 
@@ -15,4 +15,3 @@ puts name # Jane
 email = person["email"]? || "default@example.com"
 puts email.nil? # false
 puts email      # default@example.com
-

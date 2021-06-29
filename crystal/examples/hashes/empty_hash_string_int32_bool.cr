@@ -1,4 +1,4 @@
-phone_of = {} of String => String|Int32|Bool
+phone_of = {} of String => String | Int32 | Bool
 phone_of["Jane"] = "123"
 phone_of["Jack"] = "456"
 

@@ -1,1 +1,1 @@
-File.write("out.txt", "content", mode="a")
+File.write("out.txt", "content", mode = "a")

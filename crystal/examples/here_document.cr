@@ -7,4 +7,3 @@ Hello #{name}
 ANYTHING
 
 puts text
-

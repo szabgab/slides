@@ -5,5 +5,3 @@ puts text.index("dog")
 
 puts text.index("c")
 puts text.rindex("c")
-
-

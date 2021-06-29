@@ -4,7 +4,7 @@ def run
   puts "after"
 end
 
-run {|value|
+run { |value|
   puts "in block #{value}"
 }
 puts "----"
@@ -14,7 +14,6 @@ run do |value|
 end
 puts "----"
 
-
 run {
   puts "in block"
 }
@@ -23,4 +22,3 @@ puts "----"
 run do
   puts "in do-end"
 end
-

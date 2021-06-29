@@ -1,5 +1,5 @@
 def add(x, y)
-    z = x + y
+  z = x + y
 end
 
 res = add(2, 3)

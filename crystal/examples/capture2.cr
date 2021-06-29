@@ -1,11 +1,10 @@
 output, error, exit_code = capture("ls", ["-l", "-a"])
 if exit_code == 0
-    puts output
+  puts output
 else
-    puts error
+  puts error
 end
 puts exit_code
-
 
 def capture(cmd, params)
   stdout = IO::Memory.new

@@ -1,3 +1,3 @@
-(1..3).each {|this|
+(1..3).each { |this|
   puts this
 }

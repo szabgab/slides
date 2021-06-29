@@ -1,6 +1,6 @@
 result = `ls -l`
 if $?.success?
-    puts result
+  puts result
 else
-    puts "Failure"
+  puts "Failure"
 end

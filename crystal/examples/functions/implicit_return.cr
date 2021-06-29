@@ -4,7 +4,7 @@ def cond(x)
   end
 end
 
-[3, 6].each{|value|
+[3, 6].each { |value|
   puts value
   res = cond(value)
   puts res
@@ -14,8 +14,6 @@ end
   # Error: undefined method '+' for Nil (compile-time type is (Int32 | Nil))
 
   if !res.nil?
-     puts res+1
+    puts res + 1
   end
 }
-
-

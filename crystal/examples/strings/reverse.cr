@@ -4,4 +4,3 @@ rev = text.reverse
 puts rev
 puts text
 puts rev.reverse
-

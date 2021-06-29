@@ -16,6 +16,7 @@ def show(number : Int32)
 end
 
 show(23)
+
 # show(nil)
 # Error: no overload matches 'show' with type Nil
 
@@ -25,4 +26,3 @@ end
 
 other(23)
 other(nil)
-

@@ -1,3 +1,3 @@
 def hi(name)
-    puts "Hello #{name}"
+  puts "Hello #{name}"
 end
