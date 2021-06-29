@@ -31,3 +31,19 @@
 
 ![](examples/range/count.cr)
 
+## Range and loop controls
+{id: range-loop-controls}
+{i: next}
+{i: break}
+{i: continue}
+
+![](examples/range/loop_controls.cr)
+![](examples/range/loop_controls.out)
+
+## Range with step
+{id: range-with-step}
+{i: step}
+
+![](examples/range/step.cr)
+![](examples/range/step.out)
+
