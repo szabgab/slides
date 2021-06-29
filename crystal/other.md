@@ -283,22 +283,4 @@ require "some_name"         # Find it somewhere (standard library, src directory
 
 ![](examples/case_when_on_type.cr)
 
-## Range
-{id: range}
-{i: Range}
-{i: ..}
-{i: ...}
-
-![](examples/range/exclusive_dots.cr)
-![](examples/range/inclusive_dots.cr)
-
-![](examples/range/class_exclusive.cr)
-![](examples/range/class_inclusive.cr)
-
-## Range - sum
-{id: range-sum}
-
-* An example using a range and sum together in a one-line statement.
-
-![](examples/range/range_sum.cr)
 
