@@ -111,5 +111,6 @@ jobs:
         cd crystal
         shards install
         ./bin/ameba
+        crystal tool format --check
 
 
