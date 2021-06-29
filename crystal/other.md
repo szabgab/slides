@@ -295,10 +295,10 @@ require "some_name"         # Find it somewhere (standard library, src directory
 ![](examples/range/class_exclusive.cr)
 ![](examples/range/class_inclusive.cr)
 
-## Range - map - sum
-{id: range-map-sum}
+## Range - sum
+{id: range-sum}
 
-* An example using a range, map, and sum together in a one-line statement.
+* An example using a range and sum together in a one-line statement.
 
-![](examples/range/range_map_sum.cr)
+![](examples/range/range_sum.cr)
 
