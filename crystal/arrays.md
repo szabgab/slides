@@ -60,13 +60,29 @@
 ![](examples/arrays/repeat.cr)
 ![](examples/arrays/repeat.out)
 
-## Reject (filter, grep)
-{id: reject}
-{i: reject}
+## Select (filter, grep)
+{id: select}
+{i: select}
+{i: select!}
 {i: filter}
 {i: grep}
 
-![](examples/arrays/filter.cr)
+![](examples/arrays/select.cr)
+![](examples/arrays/select.out)
+
+
+## Reject (negative filter, grep)
+{id: reject}
+{i: reject}
+{i: reject!}
+{i: filter}
+{i: grep}
+
+* the `reject!` with the exlamation mark will modify the array
+* the `reject` without the exlamation mark will only return the filtered array
+
+![](examples/arrays/reject.cr)
+![](examples/arrays/reject.out)
 
 
 ## Transform with map
@@ -97,3 +113,8 @@
 ![](examples/arrays/shuffle.cr)
 ![](examples/arrays/shuffle.out)
 
+
+## join
+{id: arrays-join}
+
+![](examples/arrays/join.cr)

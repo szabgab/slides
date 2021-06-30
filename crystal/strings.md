@@ -111,3 +111,25 @@
 
 ![](examples/strings/tr.cr)
 
+## String Builder
+{id: string-builder}
+
+![](examples/strings/build.cr)
+
+## sprintf and %
+{id: string-sprintf}
+
+![](examples/strings/sprintf.cr)
+![](examples/strings/sprintf.out)
+
+## Split to the same string length
+{id: split-to-fixed-width}
+
+![](examples/strings/splitup.cr)
+
+## Split characters
+{id: split-characters}
+
+![](examples/strings/split_characters.cr)
+![](examples/strings/split_characters.out)
+
