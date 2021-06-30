@@ -88,6 +88,7 @@
 ## Transform with map
 {id: transform-with-map}
 {i: map}
+{i: map!}
 
 ![](examples/arrays/map.cr)
 ![](examples/arrays/map.out)
@@ -150,4 +151,26 @@
 
 ![](examples/arrays/delete_at.cr)
 ![](examples/arrays/delete_at.out)
+
+## Insert element into array at location
+{id: array-insert}
+{i: insert}
+
+![](examples/arrays/insert.cr)
+![](examples/arrays/insert.out)
+
+## Arrays shift - remove first element
+{id: array-shift}
+{i: shift}
+
+![](examples/arrays/shift.cr)
+![](examples/arrays/shift.out)
+
+## Arrays uniq elements
+{id: array-uniq}
+{i: uniq}
+{i: uniq!}
+
+![](examples/arrays/uniq.cr)
+![](examples/arrays/uniq.out)
 
