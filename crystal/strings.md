@@ -110,6 +110,7 @@
 {i: tr}
 
 ![](examples/strings/tr.cr)
+![](examples/strings/tr.out)
 
 ## String Builder
 {id: string-builder}
