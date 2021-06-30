@@ -28,6 +28,8 @@
         "logging.md",
         "sqlite.md",
         "time.md",
+        "http_client.md",
+        "process.md",
         "other.md"
     ]
 }

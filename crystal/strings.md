@@ -136,3 +136,12 @@
 ![](examples/strings/split_characters.cr)
 ![](examples/strings/split_characters.out)
 
+## printf
+{id: printf}
+{i: printf}
+
+![](examples/strings/printf.cr)
+![](examples/strings/printf.out)
+
+
+

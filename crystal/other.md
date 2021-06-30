@@ -5,14 +5,14 @@
 {id: spaceship-operator}
 {i: <=>}
 
-![](examples/spaceship_operator.cr)
+![](examples/other/spaceship_operator.cr)
 
 ## Check if variable is nil?
 {id: nil}
 {i: nil}
 {i: nil?}
 
-![](examples/is_nil.cr)
+![](examples/other/is_nil.cr)
 
 ## Single quotes vs double quotes
 {id: single-quotes-vs-double-quotes}
@@ -24,22 +24,14 @@
 ## No type-checking?
 {id: no-typechecking}
 
-![](examples/assign_to_variable.cr)
-![](examples/assign_to_variable.out)
-
-## HTTP Client
-{id: http-client}
-{i: http/client}
-{i: HTTP::Client}
-
-![](examples/http_client.cr)
-
+![](examples/other/assign_to_variable.cr)
+![](examples/other/assign_to_variable.out)
 
 ## Divide by zero is Infinity
 {id: divide-by-zero-is-infinity}
 {i: Infinity}
 
-![](examples/divide_by_zero.cr)
+![](examples/other/divide_by_zero.cr)
 
 ## Require other files
 {id: require-other-files}
@@ -52,8 +44,8 @@
 ## List Methods
 {id: list-methods}
 
-![](examples/methods.cr)
-![](examples/methods.out)
+![](examples/other/methods.cr)
+![](examples/other/methods.out)
 
 
 ## Checking the slides
@@ -65,43 +57,6 @@
 {id: crystal-mine}
 
 ![](examples/mine.cr)
-
-## Execute external program (system)
-{id: execute-external-program-system}
-{i: system}
-
-![](examples/system.cr)
-
-## Execute external program (backtick)
-{id: execute-external-program-backtick}
-{i: `}
-{i: $?}
-{i: success?}
-
-* [command](https://crystal-lang.org/reference/syntax_and_semantics/literals/command.html)
-
-![](examples/backtick.cr)
-
-## Execute external program (Process)
-{id: execute-external-program-process}
-{i: exit}
-{i: exit_code}
-{i: exit_status}
-
-* [Process](https://crystal-lang.org/api/Process.html)
-* [Process::Status](https://crystal-lang.org/api/Process/Status.html)
-
-![](examples/process.cr)
-
-## Execute external program (capture)
-{id: execute-external-program-capture}
-
-![](examples/capture.cr)
-
-## Execute external program (capture)
-{id: execute-external-program-capture2}
-
-![](examples/capture2.cr)
 
 
 ## Ameba Linter
@@ -177,14 +132,14 @@ shards install
 {i: switch}
 {i: when}
 
-![](examples/case.cr)
+![](examples/other/case.cr)
 
 ## STDERR, STDOUT
 {id: stderr}
 {i: STDERR}
 {i: STDOUT}
 
-![](examples/stderr.cr)
+![](examples/other/stderr.cr)
 
 * Redirection on the command line using > out  and 2> err
 
@@ -265,14 +220,6 @@ require "some_name"         # Find it somewhere (standard library, src directory
 
 ![](examples/here_document.cr)
 
-## printf
-{id: printf}
-{i: printf}
-
-![](examples/printf.cr)
-![](examples/printf.out)
-
-
 ## Int methods: Times
 {id: times}
 
@@ -281,13 +228,13 @@ require "some_name"         # Find it somewhere (standard library, src directory
 ## case of types
 {id: case-of-types}
 
-![](examples/case_when_on_type.cr)
+![](examples/other/case_when_on_type.cr)
 
 
 ## Int64 Zero
 {id: int64-zero}
 
-![](examples/int64_zero.cr)
+![](examples/other/int64_zero.cr)
 
 ## Resources
 {id: resources}
