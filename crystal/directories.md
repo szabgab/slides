@@ -5,18 +5,18 @@
 {id: list-directory}
 {i: Dir}
 
-![](examples/list_dir.cr)
+![](examples/filesystem/list_dir.cr)
 
 ## List directory tree
 {id: directory-tree}
 {i: Dir}
 {i: glob}
-![](examples/traverse_tree.cr)
+![](examples/filesystem/traverse_tree.cr)
 
 ## Get Current workding directory (cwd, pwd)
 {id: current-working-directory}
 
-![](examples/cwd.cr)
+![](examples/filesystem/cwd.cr)
 
 ## Temporary directory
 {id: temporary-directory}
@@ -27,9 +27,9 @@
 {i: rm_rf}
 {i: cd}
 
-![](examples/tempdir.cr)
+![](examples/filesystem/tempdir.cr)
 
 ## Tempdir function
 {id: tempdir}
 
-![](examples/tempdir_function.cr)
+![](examples/filesystem/tempdir_function.cr)

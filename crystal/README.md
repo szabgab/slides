@@ -20,6 +20,11 @@
 
 ## Ideas for slides
 
+
+What are these ? and ! mean at the end of the functions and sometimes end of various statements?
+What does   !something.empty? and why don't you write ¡empty! anyway? That would at least make sense...
+
+
 The need to recompile the whole thing before I run it and the fact that compilation is slow makes life of a (web) developer hard.
 The Jinja Template system of Johannes that does not need to be compiled makes at least the HTML development much faster.
 
@@ -38,6 +43,7 @@ filter or grep => reject   (use the names other languages use for the same conce
 What is "flag?"  ? I saw it in the source code of Kemal, but I don't see it defined anywhere.
 
 GitHub Actions configurators: https://crystal-lang.github.io/install-crystal/configurator.html
+
 
 Yak Shaving
 

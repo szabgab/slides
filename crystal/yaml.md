@@ -7,8 +7,8 @@
 
 * [YAML](https://crystal-lang.org/api/YAML.html)
 
-![](examples/crystal.yml)
-![](examples/use_yaml.cr)
+![](examples/yaml/crystal.yml)
+![](examples/yaml/use_yaml.cr)
 
 
 

@@ -130,6 +130,8 @@
 
 ## Split characters
 {id: split-characters}
+{i: split}
+{i: chars}
 
 ![](examples/strings/split_characters.cr)
 ![](examples/strings/split_characters.out)

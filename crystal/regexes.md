@@ -18,3 +18,8 @@
 ![](examples/regexes/substitute.cr)
 ![](examples/regexes/substitute.out)
 
+## gsub
+{id: gsub}
+
+![](examples/regexes/gsub.cr)
+

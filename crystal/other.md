@@ -289,3 +289,10 @@ require "some_name"         # Find it somewhere (standard library, src directory
 
 ![](examples/int64_zero.cr)
 
+## Resources
+{id: resources}
+
+* [Crystal Programming](https://www.youtube.com/watch?v=DxFP-Wjqtsc) by Derek Banas from 2018
+* [LuckyCast](https://luckycasts.com/)
+
+
