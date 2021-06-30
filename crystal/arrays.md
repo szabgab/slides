@@ -131,3 +131,23 @@
 
 ![](examples/arrays/array_with_nil.cr)
 
+## Does array include a value
+{id: array-includes}
+{i: includes?}
+
+![](examples/arrays/includes.cr)
+
+## Delete element from array by value
+{id: array-delete}
+{i: delete}
+
+![](examples/arrays/delete.cr)
+![](examples/arrays/delete.out)
+
+## Delete element from array by location
+{id: array-delete-at}
+{i: delete_at}
+
+![](examples/arrays/delete_at.cr)
+![](examples/arrays/delete_at.out)
+
