@@ -54,9 +54,15 @@
 
 ## Add timespan
 {id: add-timespan}
+{i: days}
+{i: hours}
+{i: minutes}
+{i: seconds}
 
 ![](examples/time/add_timespan.cr)
 ![](examples/time/add_timespan.out)
+
+* See these methods at [Int](https://crystal-lang.org/api/Int.html)
 
 ## Time Types
 {id: time-types}

@@ -105,3 +105,9 @@
 
 ![](examples/strings/split_string.cr)
 
+## String Transliteration
+{id: string-transliteration}
+{i: tr}
+
+![](examples/strings/tr.cr)
+

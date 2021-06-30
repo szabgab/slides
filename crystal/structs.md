@@ -14,3 +14,8 @@
 
 ![](examples/struct/struct_with_initializer.cr)
 
+## Extend other structs
+{id: extend-other-structs}
+
+![](examples/struct/integers.cr)
+
