@@ -284,3 +284,8 @@ require "some_name"         # Find it somewhere (standard library, src directory
 ![](examples/case_when_on_type.cr)
 
 
+## Int64 Zero
+{id: int64-zero}
+
+![](examples/int64_zero.cr)
+

@@ -118,3 +118,16 @@
 {id: arrays-join}
 
 ![](examples/arrays/join.cr)
+
+## Remove nil elements
+{id: remove-nil-elements}
+{i: compact}
+
+![](examples/arrays/remove_nils.cr)
+
+## Create Array with nil
+{id: array-with-nil}
+{i: 0_i64}
+
+![](examples/arrays/array_with_nil.cr)
+

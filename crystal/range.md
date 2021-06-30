@@ -47,3 +47,10 @@
 ![](examples/range/step.cr)
 ![](examples/range/step.out)
 
+## Range to Array
+{id: range-to-array}
+{i: to_a}
+
+![](examples/range/to_a.cr)
+![](examples/range/to_a.out)
+

@@ -20,7 +20,10 @@
 
 ## Ideas for slides
 
-I run 
+The need to recompile the whole thing before I run it and the fact that compilation is slow makes life of a (web) developer hard.
+The Jinja Template system of Johannes that does not need to be compiled makes at least the HTML development much faster.
+
+I run
 crystal example.cr
 I get
 Showing last frame. Use --error-trace for full trace.
