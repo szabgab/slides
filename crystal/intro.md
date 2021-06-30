@@ -181,14 +181,14 @@ crystal tool format --check
 * Interpolation works on numbers as well
 * The `+` operator is numerical addition or string concatenation
 
-![](examples/add_numbers.cr)
+![](examples/intro/add_numbers.cr)
 
 ## Add mixed strings and Integers
 {id: add-mixed-strings-and-integers}
 
 `Error: no overload matches 'Int32#+' with type String`
 
-![](examples/add_mixed.cr)
+![](examples/intro/add_mixed.cr)
 
 
 ## Numeric Operators

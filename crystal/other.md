@@ -72,25 +72,18 @@ shards install
 ./bin/ameba
 ```
 
-## Parse URL (URI)
-{id: parse-url}
-{i: URI}
-
-![](examples/parse_url.cr)
-
-
 ## Ternary operator and or to set default value
 {id: default-value}
 {i:||}
 {i: ?:}
 
-![](examples/default.cr)
+![](examples/other/default.cr)
 
 ## Gravatar
 {id: gravatar}
 {i: Digest::MD5.hexdigest}
 
-![](examples/gravatar.cr)
+![](examples/other/gravatar.cr)
 
 ## Try Crystal
 {id: try}
@@ -176,20 +169,14 @@ require "some_name"         # Find it somewhere (standard library, src directory
 
 * Variable names that start with upper-case letter are constants
 
-![](examples/constants.cr)
+![](examples/other/constants.cr)
 
 ## Multiple assignments
 {id: multiple-assignments}
 
-![](examples/multiple_assignments.cr)
+![](examples/other/multiple_assignments.cr)
 
-![](examples/assign.cr)
-
-## Here documents
-{id: here-documents}
-{i: <<-}
-
-![](examples/here_document.cr)
+![](examples/other/assign.cr)
 
 ## Int methods: Times
 {id: times}

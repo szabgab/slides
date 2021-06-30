@@ -8,6 +8,6 @@
 
 * 7 levels of logging, default is `info` and higher to the `STDOUT`
 
-![](examples/logging.cr)
+![](examples/logging/logging.cr)
 
 

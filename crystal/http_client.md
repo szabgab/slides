@@ -8,3 +8,11 @@
 
 ![](examples/http_client/http_client.cr)
 
+## Parse URL (URI)
+{id: parse-url}
+{i: URI}
+
+![](examples/http_client/parse_url.cr)
+
+
+

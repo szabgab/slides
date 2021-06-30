@@ -143,5 +143,9 @@
 ![](examples/strings/printf.cr)
 ![](examples/strings/printf.out)
 
+## Here documents
+{id: here-documents}
+{i: <<-}
 
+![](examples/strings/here_document.cr)
 
