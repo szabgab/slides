@@ -78,35 +78,6 @@ shards install
 
 ![](examples/parse_url.cr)
 
-## Join / concatenate file system path
-{id: join-file-system-path}
-{i: Path}
-
-* [Path](https://crystal-lang.org/api/Path.html)
-
-![](examples/path.cr)
-
-## Join / concatenate file system path
-{id: concatenate-file-system-path}
-{i: Path}
-{i: /}
-
-![](examples/concatenate_path.cr)
-
-## Path from string
-{id: path}
-
-![](examples/path_from_string.cr)
-
-
-## Expand Path
-{id: expand-path}
-{i: expand}
-{i: ~}
-
-![](examples/path_expand.cr)
-![](examples/path_expand.out)
-
 
 ## Ternary operator and or to set default value
 {id: default-value}
@@ -147,13 +118,13 @@ shards install
 {id: suffix-if}
 {i: if}
 
-![](examples/suffix_if.cr)
+![](examples/other/suffix_if.cr)
 
 ## Suffix unless
 {id: suffix-unless}
 {i: unless}
 
-![](examples/suffix_unless.cr)
+![](examples/other/suffix_unless.cr)
 
 ## Return Boolean
 {id: return-boolean}
@@ -163,7 +134,7 @@ shards install
 ## Symbols
 {id: symbols}
 
-![](examples/symbols.cr)
+![](examples/other/symbols.cr)
 
 ## Macros
 {id: macros}
@@ -223,7 +194,7 @@ require "some_name"         # Find it somewhere (standard library, src directory
 ## Int methods: Times
 {id: times}
 
-![](examples/times.cr)
+![](examples/other/times.cr)
 
 ## case of types
 {id: case-of-types}

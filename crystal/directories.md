@@ -33,3 +33,34 @@
 {id: tempdir}
 
 ![](examples/filesystem/tempdir_function.cr)
+
+## Join / concatenate file system path
+{id: join-file-system-path}
+{i: Path}
+
+* [Path](https://crystal-lang.org/api/Path.html)
+
+![](examples/filesystem/path.cr)
+
+## Join / concatenate file system path
+{id: concatenate-file-system-path}
+{i: Path}
+{i: /}
+
+![](examples/filesystem/concatenate_path.cr)
+
+## Path from string
+{id: path}
+
+![](examples/filesystem/path_from_string.cr)
+
+
+## Expand Path
+{id: expand-path}
+{i: expand}
+{i: ~}
+
+![](examples/filesystem/path_expand.cr)
+![](examples/filesystem/path_expand.out)
+
+

@@ -6,10 +6,10 @@
 {i: begin}
 {i: rescue}
 
-![](examples/catch_exception.cr)
+![](examples/exceptions/catch_exception.cr)
 
 ## Raise exception
 {id: raise-exception}
 
-![](examples/raise_exception.cr)
+![](examples/exceptions/raise_exception.cr)
 
