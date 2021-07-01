@@ -21,7 +21,7 @@
 {id: while}
 {i: while}
 
-![](examples/loops/until.cr)
+![](examples/loops/while.cr)
 
 ## until
 {id: until}
