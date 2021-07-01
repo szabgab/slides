@@ -107,18 +107,6 @@ shards install
 
 * Redirection on the command line using > out  and 2> err
 
-## Suffix if
-{id: suffix-if}
-{i: if}
-
-![](examples/other/suffix_if.cr)
-
-## Suffix unless
-{id: suffix-unless}
-{i: unless}
-
-![](examples/other/suffix_unless.cr)
-
 ## Return Boolean
 {id: return-boolean}
 
@@ -199,5 +187,9 @@ require "some_name"         # Find it somewhere (standard library, src directory
 
 * [Crystal Programming](https://www.youtube.com/watch?v=DxFP-Wjqtsc) by Derek Banas from 2018
 * [LuckyCast](https://luckycasts.com/)
+
+* [Crystal for Rubyists](https://www.crystalforrubyists.com/)
+* [Crystal Weekly](https://crystalweekly.com/)
+* [Friends of Crystal](https://friendsofcrystal.com/)
 
 

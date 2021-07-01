@@ -217,31 +217,6 @@ crystal tool format --check
 
 ![](examples/intro/float64_methods.cr)
 
-## if statement
-{id: if}
-{i: if}
-{i: else}
-{i: end}
-
-![](examples/intro/if.cr)
-
-## elsif
-{id: elsif}
-{i: elsif}
-
-![](examples/intro/deep_if.cr)
-
-![](examples/intro/elsif.cr)
-
-
-## Comparision Operators
-{id: comparision-operators}
-
-* ==, <, > <=, >=
-
-* Spaceship operator <=> returns -1, 0, or 1
-
-
 ## Program name
 {id: program-name}
 {i: PROGRAM_NAME}

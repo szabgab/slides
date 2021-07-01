@@ -174,3 +174,11 @@
 ![](examples/arrays/uniq.cr)
 ![](examples/arrays/uniq.out)
 
+
+## Permutations
+{id: array-permutations}
+{i: permutations}
+
+![](examples/arrays/permutations.cr)
+![](examples/arrays/permutations.out)
+
