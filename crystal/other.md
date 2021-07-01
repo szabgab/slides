@@ -66,13 +66,6 @@ shards install
 ./bin/ameba
 ```
 
-## Ternary operator and or to set default value
-{id: default-value}
-{i:||}
-{i: ?:}
-
-![](examples/other/default.cr)
-
 ## Gravatar
 {id: gravatar}
 {i: Digest::MD5.hexdigest}
@@ -83,14 +76,6 @@ shards install
 {id: try}
 
 ![](examples/try.cr)
-
-## case / when
-{id: case}
-{i: case}
-{i: switch}
-{i: when}
-
-![](examples/other/case.cr)
 
 ## STDERR, STDOUT
 {id: stderr}
@@ -165,12 +150,6 @@ require "some_name"         # Find it somewhere (standard library, src directory
 
 ![](examples/other/times.cr)
 
-## case of types
-{id: case-of-types}
-
-![](examples/other/case_when_on_type.cr)
-
-
 ## Int64 Zero
 {id: int64-zero}
 
@@ -199,6 +178,22 @@ require "some_name"         # Find it somewhere (standard library, src directory
 {i: &}
 
 * [short syntax](https://crystal-lang.org/reference/syntax_and_semantics/blocks_and_procs.html#short-one-parameter-syntax)
+
+## STDIN don't accept nil
+{id: stdin-dont-accept-nil}
+
+* `gets` will retun `nil` if we press Ctrl-D
+* `gets.not_nil!` will raise an exception
+
+![](examples/other/gets_not_nil.cr)
+
+
+## Math
+{id: math}
+
+* [Math](https://crystal-lang.org/api/Math.html)
+
+![](examples/other/math.cr)
 
 ## Resources
 {id: resources}

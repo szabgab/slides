@@ -1,0 +1,5 @@
+{"Mars" => 1, "Jupyter" => 2, "Saturn" => 3, "Earth" => 4}
+{"Mars" => 10, "Jupyter" => 2, "Saturn" => 3, "Earth" => 4, "Venus" => 5}
+{"Mars" => 1, "Jupyter" => 2, "Saturn" => 3, "Earth" => 4}
+{"Mars" => 20, "Jupyter" => 2, "Saturn" => 3, "Earth" => 4, "Pluto" => 5}
+{"Mars" => 20, "Jupyter" => 2, "Saturn" => 3, "Earth" => 4, "Pluto" => 5}

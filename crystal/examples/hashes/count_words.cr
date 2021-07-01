@@ -8,6 +8,6 @@ words.each { |word|
   count[word] += 1
 }
 
-count.each { |key, value|
-  puts "#{key} #{value}"
+count.each { |word, cnt|
+  puts "#{word} #{cnt}"
 }

@@ -1,0 +1,2 @@
+abort("Something bad happened")
+

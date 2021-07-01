@@ -14,5 +14,8 @@ puts planets.each_key { |name|
   puts "#{name}: #{planets[name]}"
 }
 
-puts planets.has_key?("Pluto")
-puts planets.has_key?("Moon")
+puts planets.has_key?("Pluto") # true
+puts planets.has_key?("Moon")  # false
+
+puts planets.has_value?(3) # true
+puts planets.has_value?(8) # false

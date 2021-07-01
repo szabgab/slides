@@ -5,7 +5,10 @@
 ## Hash intro
 {id: hash-intro}
 {i: has_key}
+{i: has_value}
 {i: each_key}
+{i: size}
+{i: keys}
 
 * [Hash](https://crystal-lang.org/api/Hash.html)
 
@@ -13,8 +16,14 @@
 
 ## Count words
 {id: count-words}
+{i: each}
+
 
 ![](examples/hashes/count_words.cr)
+
+## Create empty hash
+{id: create-empty-hash}
+{i: empty?}
 
 ![](examples/hashes/empty_hash_of_strings.cr)
 
@@ -28,7 +37,6 @@
 ![](examples/hashes/hash_and_types.cr)
 ![](examples/hashes/hash_and_types.out)
 
-
 ## Hash get value, get default value
 {id: hash-get-value}
 
@@ -38,4 +46,11 @@
 
 ![](examples/hashes/get_value.cr)
 
+## Merge hashes
+{id: hash-merge}
+{i: merge}
+{i: merge!}
+
+![](examples/hashes/merge.cr)
+![](examples/hashes/merge.out)
 

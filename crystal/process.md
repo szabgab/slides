@@ -38,4 +38,14 @@
 
 ![](examples/process/capture2.cr)
 
+## Abort
+{id: abort}
+{i: abort}
+
+![](examples/process/abort.cr)
+![](examples/process/abort_code.cr)
+
+* Print message to STDERR and exit with exit code 1 (see `$?` or `%ERROR_LEVEL%`)
+* Optionally we can supply the exit code as well.
+
 

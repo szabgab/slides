@@ -286,4 +286,8 @@ echo %ERROR_LEVEL%
 ![](examples/intro/math.cr)
 ![](examples/intro/math.out)
 
+## Read from STDIN
+{id: read-from-stdin}
+{i: gets}
 
+![](examples/intro/gets.cr)

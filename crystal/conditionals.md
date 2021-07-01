@@ -70,3 +70,27 @@
 
 ![](examples/conditionals/operators.cr)
 
+## case / when
+{id: case}
+{i: case}
+{i: switch}
+{i: when}
+
+![](examples/conditionals/case.cr)
+
+* You cannot have the same value in `when` twice (Crystal protects you from such mistake)
+
+## case of types
+{id: case-of-types}
+
+![](examples/conditionals/case_when_on_type.cr)
+
+## Ternary operator and or to set default value
+{id: default-value}
+{i:||}
+{i: ?:}
+
+![](examples/conditionals/default.cr)
+
+
+
