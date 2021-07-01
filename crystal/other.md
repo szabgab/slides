@@ -1,12 +1,6 @@
 # Other
 {id: other}
 
-## Spaceship Operator
-{id: spaceship-operator}
-{i: <=>}
-
-![](examples/other/spaceship_operator.cr)
-
 ## Check if variable is nil?
 {id: nil}
 {i: nil}
@@ -182,6 +176,30 @@ require "some_name"         # Find it somewhere (standard library, src directory
 
 ![](examples/other/int64_zero.cr)
 
+## Question mark: ?
+{id: question-mark}
+{i: ?}
+
+* meaning "or nil" in type definitions `String?` is the same as `String | Nil`
+* Methods ending with `?` usually return a boolean (true, false) - there is no enforcmenet of this in Crystal
+* If a construct might raise an exception adding a question mark can convert that into returning nil
+* It is also part of the conditional operator `?:`
+
+![](examples/other/questionmark.cr)
+
+## Exclamation mark: !
+{id: exclamation-mark}
+{i: !}
+
+* Methods ending with `!` usually modify the underlying object.
+* Logical not (before an expression)
+
+## Ampersand: &
+{id: ampersand}
+{i: &}
+
+* [short syntax](https://crystal-lang.org/reference/syntax_and_semantics/blocks_and_procs.html#short-one-parameter-syntax)
+
 ## Resources
 {id: resources}
 
@@ -191,5 +209,4 @@ require "some_name"         # Find it somewhere (standard library, src directory
 * [Crystal for Rubyists](https://www.crystalforrubyists.com/)
 * [Crystal Weekly](https://crystalweekly.com/)
 * [Friends of Crystal](https://friendsofcrystal.com/)
-
 

@@ -1,6 +1,25 @@
 # Conditionals
 {id: conditionals}
 
+## Comparision Operators
+{id: comparision-operators}
+{i: ==}
+{i: <}
+{i: <=}
+{i: >}
+{i: >=}
+
+* ==, <, > <=, >=
+
+## Spaceship operator
+{id: spaceship-operator}
+{i: <=>}
+
+* Spaceship operator <=> returns -1, 0, or 1
+
+![](examples/other/spaceship_operator.cr)
+
+
 ## if statement
 {id: if}
 {i: if}
@@ -17,15 +36,13 @@
 
 ![](examples/conditionals/elsif.cr)
 
+## unless statement
+{id: unless}
+{i: unless}
 
-## Comparision Operators
-{id: comparision-operators}
+![](examples/conditionals/unless.cr)
 
-* ==, <, > <=, >=
-
-* Spaceship operator <=> returns -1, 0, or 1
-
-
+* ameba: [C] Style/UnlessElse: Favour if over unless with else
 
 ## Suffix if
 {id: suffix-if}
@@ -39,4 +56,17 @@
 
 ![](examples/conditionals/suffix_unless.cr)
 
+## Logical operators
+{id: logical-opeators}
+
+```
+&&
+||
+!
+```
+
+## Truth-table
+{id: truth-table}
+
+![](examples/conditionals/operators.cr)
 
