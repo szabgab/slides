@@ -91,3 +91,6 @@ crystal/counter.json
 crystal/counter.db
 crystal/data.db
 crystal/examples/docspec/lib/
+crystal/examples/docspec/bin/
+crystal/examples/kemal/lib/
+crystal/examples/kemal/bin/

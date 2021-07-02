@@ -34,6 +34,8 @@
         "http_client.md",
         "process.md",
         "concurrency.md",
-        "other.md"
+        "kemal.md",
+        "other.md",
+        "crystal_1_0_conf.md"
     ]
 }
