@@ -44,6 +44,11 @@
 
 ![](examples/functions/pass_array_instead_of_individual_values.cr)
 
+## Any number of arguments (splat, *)
+{id: any-number-of-arguments}
+
+![](examples/functions/splat.cr)
+
 ## Manually separate
 {id: manually-separate}
 

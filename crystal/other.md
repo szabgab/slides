@@ -195,6 +195,33 @@ require "some_name"         # Find it somewhere (standard library, src directory
 
 ![](examples/other/math.cr)
 
+## Proc
+{id: proc}
+{i: Proc}
+
+* [Proc](https://crystal-lang.org/api/Proc.html)
+
+![](examples/other/proc.cr)
+
+## Enums
+{id: enums}
+{i: enum}
+
+![](examples/other/enums.cr)
+
+## Type of array elements
+{id: type-of-array-elements}
+
+![](examples/other/type_of_array_elements.cr)
+
+All the elements of an array "inherit" the type from the array
+
+## Int32 or Nil
+{id: int32-or-nil}
+
+![](examples/other/int_or_nil.cr)
+
+
 ## Resources
 {id: resources}
 

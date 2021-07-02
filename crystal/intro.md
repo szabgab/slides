@@ -13,13 +13,20 @@
 * Concurrency with green threads called fibers
 * C-bindings
 
-## Crystal Shards
+## Crystal Shards (3rd party libraries)
 {id: crystal-shards}
 {i: shards}
 
 * The 3rd party modules directory
+* [Shardbox](https://shardbox.org/)
 * [Crystal Shards](https://crystalshards.xyz/)
 * Use `shards init` to create a file called `shard.yml` and describe the dependencies there.
+
+## How to install 3rd party shards?
+{id: install-shards}
+
+* Create a file called `shard.yml` for your project listing the dependencies of this project
+* Run `shards install`
 
 ![](shard.yml)
 
@@ -291,3 +298,5 @@ echo %ERROR_LEVEL%
 {i: gets}
 
 ![](examples/intro/gets.cr)
+
+
