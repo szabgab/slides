@@ -15,5 +15,4 @@ get "/" do |env|
   }
 end
 
-
 Kemal.run
