@@ -8,6 +8,12 @@
 * Python 10 years
 * Crystal 30 days (actually it is already almost 60 days)
 
+
+## Shardbox
+{id: crystal-1-0-conf-shardbox}
+
+[Shardbox](https://shardbox.org/)
+
 ## When
 {id: crystal-1-0-conf-when}
 
@@ -23,7 +29,7 @@ Prepare slides for a training course - lots of small examples, questions arise, 
 
 Developing an application - The site listing the shards are very plain, only a thin wrapper around GitHub API
  Let's do a much better one analyzing shards and displaying information
- 
+
 ## Web framework?
 {id: crystal-1-0-conf-web-framework}
 
@@ -54,6 +60,17 @@ What does   !something.empty? and why don't you write ¡empty! anyway? That woul
 The need to recompile the whole thing before I run it and the fact that compilation is slow makes life of a (web) developer hard.
 The Jinja Template system of Johannes that does not need to be compiled makes at least the HTML development much faster.
 
+## Code formatter
+{id: crystal-1-0-conf-format-code}
+
+```
+crystal tool format
+```
+
+## Ameba
+{id: crystal-1-0-conf-ameba-linter}
+
+[Ameba Linter](https://github.com/crystal-ameba/ameba)
 
 ## Future
 {id: crystal-1-0-conf-future}
