@@ -1,9 +1,9 @@
 # Arrays
-{id: arrays}
+{id: array}
 
 
 ## Arrays intro
-{id: arrays-intro}
+{id: array-intro}
 
 * [Array API](https://crystal-lang.org/api/Array.html)
 * [Array reference](https://crystal-lang.org/reference/syntax_and_semantics/literals/array.html)
@@ -23,7 +23,7 @@
 ![](examples/arrays/array_iterate.cr)
 
 ## Array push, append, <<
-{id: arrays-push}
+{id: array-push}
 {i: push}
 {i: append}
 {i: <<}
@@ -38,12 +38,12 @@
 ![](examples/arrays/empty_array.cr)
 
 ## Count digitis
-{id: count-digits}
+{id: array-count-digits}
 
 ![](examples/arrays/count_digits.cr)
 
 ## Operations on arrays
-{id: operations-on-arrays}
+{id: array-operations}
 
 * add +
 * repeat *
@@ -94,7 +94,7 @@
 ![](examples/arrays/map.out)
 
 ## Sample from array
-{id: arrays-sample}
+{id: array-sample}
 {i: sample}
 
 * Using [Random](random) behind the scenes.
@@ -105,7 +105,7 @@
 
 
 ## Shuffle array
-{id: arrays-shuffle}
+{id: array-shuffle}
 {i: shuffle}
 
 * Using [Random](random) behind the scenes.
@@ -116,7 +116,7 @@
 
 
 ## join
-{id: arrays-join}
+{id: array-join}
 
 ![](examples/arrays/join.cr)
 
@@ -174,6 +174,12 @@
 ![](examples/arrays/uniq.cr)
 ![](examples/arrays/uniq.out)
 
+## First element of the array
+{id: array-first}
+{i: first}
+{i: first?}
+
+![](examples/arrays/first.cr)
 
 ## Permutations
 {id: array-permutations}

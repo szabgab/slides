@@ -205,3 +205,7 @@ require "some_name"         # Find it somewhere (standard library, src directory
 * [Crystal Weekly](https://crystalweekly.com/)
 * [Friends of Crystal](https://friendsofcrystal.com/)
 
+* [Facebook page](https://www.facebook.com/Crystallang-1457045254320264/)
+* [Facebook group](https://www.facebook.com/groups/crystallang/)
+* [LinkedIn page](https://www.linkedin.com/company/crystal-language/)
+

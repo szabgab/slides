@@ -54,3 +54,47 @@
 ![](examples/hashes/merge.cr)
 ![](examples/hashes/merge.out)
 
+## Delete - remove an element from a hash
+{id: hash-delete}
+{i: delete}
+
+* `delete!` does not exist.
+
+![](examples/hashes/delete.cr)
+![](examples/hashes/delete.out)
+
+
+## Reject - remove an element from a hash
+{id: hash-reject}
+{i: reject}
+{i: reject!}
+
+![](examples/hashes/reject.cr)
+![](examples/hashes/reject.out)
+
+## Clear - empty a hash
+{id: hash-clear}
+{i: clear}
+
+![](examples/hashes/clear.cr)
+
+## Select - keep certain key-value pairs
+{id: hash-select}
+{i: select}
+{i: select!}
+
+![](examples/hashes/select.cr)
+![](examples/hashes/select.out)
+
+## Multi-dimensional hash
+{id: hash-multi-dimensional}
+
+![](examples/hashes/multi_dimensional.cr)
+
+## Dig a hash
+{id: hash-dig}
+{i: dig}
+{i: dig?}
+
+![](examples/hashes/dig.cr)
+
