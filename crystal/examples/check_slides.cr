@@ -84,7 +84,7 @@ def get_imported_files(md_files)
 end
 
 def get_files(root)
-  skip = Set{"Dockerfile", "shard.lock", "crystal.json"}
+  skip = Set{"Dockerfile", "shard.lock", "crystal.json", "examples/kemal/shard.lock"}
   size = root.size
   files = [] of String
   all_files = Dir.glob("#{root}/**/*")

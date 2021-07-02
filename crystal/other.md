@@ -1,6 +1,11 @@
 # Other
 {id: other}
 
+## Sequence
+{id: sequence-generation}
+
+![](examples/other/sequence.cr)
+
 ## Check if variable is nil?
 {id: nil}
 {i: nil}
