@@ -33,6 +33,7 @@
         "time.md",
         "http_client.md",
         "process.md",
+        "concurrency.md",
         "other.md"
     ]
 }
