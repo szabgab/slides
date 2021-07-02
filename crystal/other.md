@@ -96,11 +96,8 @@ shards install
 
 ![](examples/other/symbols.cr)
 
-## Macros
-{id: macros}
-
-![](examples/macros/function.cr)
-
+## Docspec
+{id: docspec}
 
 ![](examples/docspec/shard.yml)
 
@@ -226,6 +223,7 @@ All the elements of an array "inherit" the type from the array
 {id: resources}
 
 * [Crystal Programming](https://www.youtube.com/watch?v=DxFP-Wjqtsc) by Derek Banas from 2018
+* [Crystal: Fast as C, Slick as Ruby](https://www.youtube.com/watch?v=m8bYqfrGjGo) by Tom Richards form 2017
 * [LuckyCast](https://luckycasts.com/)
 
 * [Crystal for Rubyists](https://www.crystalforrubyists.com/)
