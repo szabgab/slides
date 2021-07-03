@@ -23,7 +23,7 @@ I get
 Showing last frame. Use --error-trace for full trace.
 crystal --error-trace example.cr
 I get Error: unknown command: --error-trace
-I need to run 
+I need to run
 crystal build --error-trace example.cr
 to get the nice stack trace
 
