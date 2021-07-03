@@ -52,34 +52,66 @@ http://localhost:3000/
 crystal spec/hello_world_spec.cr
 ```
 
-## Kemal Autorestart
+## Kemal Autorestart (autoreload)
 {id: kemal-autorestart}
 
 ## Kemal GET parameters
 {id: kemal-get-parameters}
+{i: GET}
 
 ![](examples/kemal/src/get_params.cr)
 
 ![](examples/kemal/spec/get_params_spec.cr)
 
 ```
-crystal spec/get_params_spec.cr 
+crystal spec/get_params_spec.cr
 ```
 
 ## Kemal POST parameters
 {id: kemal-post-parameters}
+{i: POST}
+
+![](examples/kemal/src/post_params.cr)
+
+![](examples/kemal/spec/post_params_spec.cr)
+
+```
+crystal spec/post_params_spec.cr
+```
+
 
 ## Kemal Route parameters
 {id: kemal-route-parameters}
 
+![](examples/kemal/src/route_params.cr)
+
+![](examples/kemal/spec/route_params_spec.cr)
+
+```
+crystal spec/post_params_spec.cr
+```
+
 ## Kemal Any Route parameters
 {id: kemal-any-route-parameters}
 
-## Kemal Templates
-{id: kemal-templates}
+## Kemal ECR Templates
+{id: kemal-ecr-templates}
 
-* Templates
-* Jinja templates
-* GET
-* POST
-* Elapsed time
+## Kemal with Jinja templates
+{id: kemal-jinja-templates}
+
+## Kemal Elapsed time
+{id: kemal-elapsed-time}
+
+## Accept GET, POST, and route parameter in the same POST route
+{id: kemal-get-post-route}
+
+## Kemal indicate 404
+{id: kemal-indicate-404}
+
+## Kemal redirect
+{id: kemal-redirect}
+
+## Kemal in Docker
+{id: kemal-in-docker}
+
