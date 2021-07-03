@@ -6,5 +6,10 @@ Lint/UselessAssign:
   Excluded:
   - examples/files/append_to_file_bug.cr
   - examples/functions/implicit.cr
+  - examples/kemal/src/elapsed_time.cr
+  - examples/kemal/src/ecr_template.cr
 Excluded:
   - examples/kemal/lib/
+Lint/UnusedArgument:
+  Excluded:
+  - examples/kemal/src/elapsed_time.cr

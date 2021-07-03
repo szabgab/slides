@@ -97,17 +97,39 @@ crystal spec/post_params_spec.cr
 ## Kemal ECR Templates
 {id: kemal-ecr-templates}
 
+![](examples/kemal/src/ecr_template.cr)
+![](examples/kemal/src/views/page.ecr)
+![](examples/kemal/src/views/layouts/layout.ecr)
+
 ## Kemal with Jinja templates
 {id: kemal-jinja-templates}
 
 ## Kemal Elapsed time
 {id: kemal-elapsed-time}
 
+![](examples/kemal/src/elapsed_time.cr)
+![](examples/kemal/src/views/layouts/layout_with_elapsed_time.ecr)
+![](examples/kemal/src/views/time.ecr)
+
 ## Accept GET, POST, and route parameter in the same POST route
 {id: kemal-get-post-route}
 
 ## Kemal indicate 404
 {id: kemal-indicate-404}
+
+![](examples/kemal/src/send_404.cr)
+
+![](examples/kemal/spec/send_404_spec.cr)
+
+## Kemal Styling 404 pages
+{id: kemal-styling-404-pages}
+
+
+## Kemal set headers (change content-type)
+{id: kemal-set-header}
+
+![](examples/kemal/src/set_header.cr)
+![](examples/kemal/spec/set_header_spec.cr)
 
 ## Kemal redirect
 {id: kemal-redirect}
