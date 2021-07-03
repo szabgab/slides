@@ -12,12 +12,10 @@ DATABASE = Set{"foo", "bar"}
 
 get "/user/:fname" do |env|
   fname = env.params.url["fname"]
-  if ! DATABASE.includes?(fname)
+  if !DATABASE.includes?(fname)
     halt env, status_code: 404, response: "We don't have this user <b>#{fname}</b>"
   end
   "received fname: #{fname}"
 end
-
-
 
 Kemal.run
