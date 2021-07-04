@@ -85,7 +85,6 @@ crystal spec/get_params_spec.cr
 crystal spec/post_params_spec.cr
 ```
 
-
 ## Kemal Route parameters
 {id: kemal-route-parameters}
 
@@ -97,11 +96,10 @@ crystal spec/post_params_spec.cr
 crystal spec/post_params_spec.cr
 ```
 
-## Kemal Any Route parameters
-{id: kemal-any-route-parameters}
-
 ## Kemal ECR Templates
 {id: kemal-ecr-templates}
+
+* [ECR](https://crystal-lang.org/api/ECR.html)
 
 ![](examples/kemal/src/ecr_template.cr)
 ![](examples/kemal/src/views/page.ecr)
@@ -126,6 +124,10 @@ crystal spec/post_params_spec.cr
 
 ## Accept GET, POST, and route parameter in the same POST route
 {id: kemal-get-post-route}
+
+![](examples/kemal/src/params.cr)
+![](examples/kemal/spec/params_spec.cr)
+
 
 ## Kemal indicate 404
 {id: kemal-indicate-404}
