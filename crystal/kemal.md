@@ -139,6 +139,8 @@ crystal spec/post_params_spec.cr
 ## Kemal Styling 404 pages
 {id: kemal-styling-404-pages}
 
+![](examples/kemal/src/customized_404.cr)
+![](examples/kemal/spec/customized_404_spec.cr)
 
 ## Kemal set headers (change content-type)
 {id: kemal-set-header}
