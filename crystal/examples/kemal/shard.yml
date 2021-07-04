@@ -12,6 +12,8 @@ dependencies:
     github: kemalcr/kemal
   spec-kemal:
     github: kemalcr/spec-kemal
+  crinja:
+    github: straight-shoota/crinja
 
 development_dependencies:
   ameba:

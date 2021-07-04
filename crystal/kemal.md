@@ -55,6 +55,12 @@ crystal spec/hello_world_spec.cr
 ## Kemal Autorestart (autoreload)
 {id: kemal-autorestart}
 
+```
+crystal build --release lib/sentry/src/sentry_cli.cr -o ./bin/sentry
+./bin/sentry -b "crystal build src/webapp.cr -o bin/webapp" -r bin/webapp
+```
+![](examples/kemal/src/webapp.cr)
+
 ## Kemal GET parameters
 {id: kemal-get-parameters}
 {i: GET}
@@ -103,6 +109,13 @@ crystal spec/post_params_spec.cr
 
 ## Kemal with Jinja templates
 {id: kemal-jinja-templates}
+
+* [Jinja](https://jinja.palletsprojects.com/) (Python)
+* [Crinja](https://straight-shoota.github.io/crinja/)
+
+![](examples/kemal/src/jinja.cr)
+![](examples/kemal/src/views/home.html.j2)
+
 
 ## Kemal Elapsed time
 {id: kemal-elapsed-time}

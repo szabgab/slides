@@ -4,6 +4,10 @@ shards:
     git: https://github.com/crystal-ameba/ameba.git
     version: 0.14.3
 
+  crinja:
+    git: https://github.com/straight-shoota/crinja.git
+    version: 0.7.0
+
   exception_page:
     git: https://github.com/crystal-loot/exception_page.git
     version: 0.1.5

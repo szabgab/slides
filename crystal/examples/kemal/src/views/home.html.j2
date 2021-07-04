@@ -1,0 +1,15 @@
+<title>{{ title }}</title>
+
+<h1>{{ title }}</h1>
+
+<ul>
+{% for planet in planets %}
+  <li>{{ planet }}</li>
+{% endfor %}
+</ul>
+
+{% if cond %}
+Condition is true
+{% else %}
+condition is false
+{% endif %}
