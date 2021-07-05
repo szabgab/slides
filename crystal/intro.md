@@ -301,4 +301,16 @@ echo %ERROR_LEVEL%
 
 ![](examples/intro/gets.cr)
 
+## Interactive envrionments
+{id: interactive-environments}
+
+* `crystal play`
+* [icr](https://github.com/crystal-community/icr)
+* [tree](https://github.com/pebauer68/tree)
+
+## Crystal one-liners
+{id: crystal-one-liners}
+{i: eval}
+
+* `crystal eval`
 

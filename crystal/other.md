@@ -223,7 +223,6 @@ All the elements of an array "inherit" the type from the array
 
 ![](examples/other/int_or_nil.cr)
 
-
 ## Resources
 {id: resources}
 
@@ -234,6 +233,7 @@ All the elements of an array "inherit" the type from the array
 * [Crystal for Rubyists](https://www.crystalforrubyists.com/)
 * [Crystal Weekly](https://crystalweekly.com/)
 * [Friends of Crystal](https://friendsofcrystal.com/)
+* [Programming Crystal book](https://www.pragprog.com/titles/crystal/programming-crystal/)
 
 * [Facebook page](https://www.facebook.com/Crystallang-1457045254320264/)
 * [Facebook group](https://www.facebook.com/groups/crystallang/)

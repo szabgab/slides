@@ -1,0 +1,24 @@
+name: Kemal Demo
+version: 0.0.1
+
+authors:
+   - Gabor Szabo <gabor@szabgab.com>
+
+description: |
+  Showing some code with Kemal
+
+dependencies:
+  kemal:
+    github: kemalcr/kemal
+  spec-kemal:
+    github: kemalcr/spec-kemal
+  crinja:
+    github: straight-shoota/crinja
+
+development_dependencies:
+  ameba:
+    github: crystal-ameba/ameba
+  sentry:
+    github: samueleaton/sentry
+
+license: MIT
