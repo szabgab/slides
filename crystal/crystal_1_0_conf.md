@@ -4,6 +4,10 @@
 ## Crystal from 0 to Web site
 {id: crystal-1-0-title}
 
+* Crystal 1.0 Conference
+* 2021.07.08
+* by Gábor Szabó
+
 ## Background
 {id: crystal-1-0-conf-background}
 
