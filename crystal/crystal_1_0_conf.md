@@ -41,7 +41,7 @@ I can do a much better one analyzing shards and displaying information.
 ## How to learn
 {id: crystal-1-0-conf-how-to-learn}
 
-* Prepare slides for a training course
+* Prepare slides for a [training course](https://code-maven.com/crystal-course)
 * Developing an application
 
 {aside}
@@ -51,23 +51,13 @@ Lots of small examples, questions arise, make me learn more.
 ## When
 {id: crystal-1-0-conf-when}
 
-* Sat May 15 13:48:30 2021 +0300 - first commit to slides
+* Sat May 15 13:48:30 2021 +0300 - first commit to [slides](https://code-maven.com/slides/crystal/)
 
-* Wed May 19 07:29:28 2021 +0300 - first commit to Crystal Mine
+* Wed May 19 07:29:28 2021 +0300 - first commit to [Crystal Mine](https://crystal-mine.org/)
 
-* Wed Jun  9 03:03:02 2021 +0300 - posted on the forum
+* Wed Jun  9 03:03:02 2021 +0300 - posted on the [forum](https://forum.crystal-lang.org/)
 
-* 4 hours later Johannes Müller pointed to Shardbox
-
-## Shardbox
-{id: crystal-1-0-conf-shardbox}
-
-* [Shardbox](https://shardbox.org/)
-
-* Kemal
-* Crinja (templates)
-* PostgreSQL
-
+* 4 hours later Johannes Müller pointed to [Shardbox](https://shardbox.org/)
 
 ## What did I learn?
 {id: crystal-1-0-conf-what-did-i-learn}
@@ -199,6 +189,16 @@ crystal tool format
 {id: crystal-1-0-conf-ameba-linter}
 
 [Ameba Linter](https://github.com/crystal-ameba/ameba)
+
+## Shardbox
+{id: crystal-1-0-conf-shardbox}
+
+* [Shardbox](https://shardbox.org/)
+
+* Kemal
+* Crinja (templates)
+* PostgreSQL
+
 
 ## Pro and contra
 {id: crystal-1-0-conf-pro-and-contra}
