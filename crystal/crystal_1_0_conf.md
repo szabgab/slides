@@ -1,7 +1,7 @@
 # Crystal from 0 to Web site
 {id: crystal-from-0-to-web-site}
 
-# Crystal from 0 to Web site
+## Crystal from 0 to Web site
 {id: crystal-1-0-title}
 
 ## Background
