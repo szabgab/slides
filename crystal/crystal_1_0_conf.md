@@ -12,20 +12,21 @@
 {id: crystal-1-0-conf-background}
 
 * Programming 40 years.
-* Perl 25 years
-* Python 10 years
-* Crystal 30 days
+* Perl 25 years.
+* Teaching programming for 20 years.
+* Python 10 years.
+* Crystal 30 days.
 
 {aside}
-actually it is already almost 60 days)
+Actually it is already almost 60 days
 {/aside}
 
 ## Why?
 {id: crystal-1-0-conf-why}
 
-* [modulecounts](http://www.modulecounts.com/)
+* [module counts](http://www.modulecounts.com/)
 * [3rd party registry](https://code-maven.com/package-registry)
-* Listing shards [crystalshards.xyz](https://crystalshards.xyz/)
+* Listing of shards [crystalshards.xyz](https://crystalshards.xyz/) (thin API over GitHub)
 
 {aside}
 This site listing the shards are very plain, only a thin wrapper around GitHub API
@@ -69,15 +70,18 @@ Lots of small examples, questions arise, make me learn more.
 {id: crystal-1-0-conf-crystal-is-fun}
 
 * Nice syntax
+* "Make the easy things easy, hards things possible"
+* Tim Toady - TMTOWTDI - "There's more than one way to do it"
 * Lots of methods
 * Not a small language
 
-## Shards install dependency issues
-{id: crystal-1-0-conf-shards-install-issues}
+## Shards
+{id: crystal-1-0-conf-shards}
 
-`shards install`
-
-Failed to resolve dependencies, try updating incompatible shards or use --ignore-crystal-version as a workaround if no update is available.
+* Easy to install (`shards install`).
+* Few of them. Many common libraries (shards) are missing - harder to develop and many opportunities.
+* Discoverability (There is no `shards search`, there is no central database of shards).
+* "Failed to resolve dependencies, try updating incompatible shards or use `--ignore-crystal-version` as a workaround if no update is available."
 
 ## What do ? and ! mean?!
 {id: crystal-1-0-conf-what-do-these-mean}
@@ -200,16 +204,12 @@ crystal tool format
 * PostgreSQL
 
 
-## Pro and contra
-{id: crystal-1-0-conf-pro-and-contra}
-
-* Many common libraries are missing - harder to develop and many opportunities
-
-
 ## Future
 {id: crystal-1-0-conf-future}
 
-* [Shardbox](https://shardbox.org/)
+* Contribute to [Shardbox](https://shardbox.org/)
+* Contribute to shards. (tests, CI)
+* Pair programming sessions on Crystal projects
 
 * [Crystal Weekly](https://crystalweekly.com/) by Serdar Doğruyol
 * [Friends of Crystal](https://friendsofcrystal.com/) by Serdar Doğruyol
