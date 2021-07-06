@@ -103,6 +103,12 @@
                 // k
                 document.location.href = "keywords" + get_extension();
                 break;
+            // l
+            // m
+            case 78:
+                // n
+                toggle_navigation(true);
+                break;
 
             case 84:
                 // t
@@ -123,7 +129,7 @@
 
             case 191:
                 // ?
-                alert("? - this help\n-> next\n<- - prev\nSPACE - next\ni - index\nk - keywords\nt - toc\nh - toggle extra text\nd - chapter TOC\n");
+                alert("? - this help\n-> next\n<- - prev\nSPACE - next\ni - index\nk - keywords\nt - toc\nd - chapter TOC\nh - toggle extra text\nn - toggle navigation\n");
                 //PgUp - prev\nPgDown - next
             break;
 
@@ -176,6 +182,9 @@
     function start_extras() {
         toggle_extras(false)
     }
+    function start_navigation() {
+        toggle_navigation(false)
+    }
 
     function toggle_extras(toggle) {
         //console.log('toggle')
@@ -188,6 +197,18 @@
         //console.log('Toggle to ' + show);
         show_extras(show)
     }
+    function toggle_navigation(toggle) {
+        //console.log('toggle')
+        var show = get_field('show_navigation');
+        //console.log('show_extra was: ' + show);
+        if (toggle) {
+            show = ! show;
+        }
+        localStorage.setItem("show_navigation", show);
+        //console.log('Toggle to ' + show);
+        show_navigation(show)
+    }
+
 
     function get_field(name) {
         var show = localStorage.getItem(name);
@@ -221,6 +242,10 @@
         show_things('extra', show);
     }
 
+    function show_navigation(show) {
+        show_things('navigation', show);
+    }
+
     function show_things(what, show) {
         //console.log('show', what, t);
         var nl = document.getElementsByClassName(what);
@@ -240,6 +265,7 @@
     }
 
     start_extras();
+    start_navigation();
     show_banners();
     var showhide = document.getElementById('showhide');
     if (showhide) {
