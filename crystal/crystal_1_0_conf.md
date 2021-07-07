@@ -13,9 +13,11 @@
 
 * Programming 40 years.
 * Perl 25 years.
-* Teaching programming for 20 years.
 * Python 10 years.
 * Crystal 30 days.
+
+* Teaching programming for 20 years.
+* Test automation / CI / DevOps
 
 {aside}
 Actually it is already almost 60 days
@@ -26,7 +28,7 @@ Actually it is already almost 60 days
 
 * [module counts](http://www.modulecounts.com/)
 * [3rd party registry](https://code-maven.com/package-registry)
-* Listing of shards [crystalshards.xyz](https://crystalshards.xyz/) (thin API over GitHub)
+* Listing of shards [crystalshards.xyz](https://crystalshards.xyz/) (thin wrapper arount the API of GitHub)
 
 {aside}
 This site listing the shards are very plain, only a thin wrapper around GitHub API
@@ -81,7 +83,35 @@ Lots of small examples, questions arise, make me learn more.
 * Easy to install (`shards install`).
 * Few of them. Many common libraries (shards) are missing - harder to develop and many opportunities.
 * Discoverability (There is no `shards search`, there is no central database of shards).
-* "Failed to resolve dependencies, try updating incompatible shards or use `--ignore-crystal-version` as a workaround if no update is available."
+* "Failed to resolve dependencies, try updating incompa## Code formatter
+
+## Code formatter
+{id: crystal-1-0-conf-format-code}
+
+```
+crystal tool format
+```
+
+## Ameba
+{id: crystal-1-0-conf-ameba-linter}
+
+* [Ameba Linter](https://github.com/crystal-ameba/ameba)
+
+## Spectator - testing framework
+{id: crystal-1-0-conf-spectator}
+
+* [Spectator](https://gitlab.com/arctic-fox/spectator) (similar to RSpec of Ruby)
+
+tible shards or use `--ignore-crystal-version` as a workaround if no update is available."
+
+## CI - GitHub Actions
+{id: crystal-1-0-conf-github-actions}
+
+* [GitHub Actions configurator](https://crystal-lang.github.io/install-crystal/configurator.html)
+* Smoking Crystal and the shards
+
+## The language
+{id: crystal-1-0-conf-the-language}
 
 ## What do ? and ! mean?!
 {id: crystal-1-0-conf-what-do-these-mean}
@@ -167,32 +197,15 @@ make install
 * Might not be as powerful as the others
 * Most popular of the 3
 
+* The need to recompile the whole thing before I run it and the fact that compilation is slow makes life of a (web) developer hard.
+
 ![](examples/crystal-1-0-conf/shard.yml)
-
-## GitHub Actions
-{id: crystal-1-0-conf-github-actions}
-
-[GitHub Actions configurator](https://crystal-lang.github.io/install-crystal/configurator.html)
-
-The need to recompile the whole thing before I run it and the fact that compilation is slow makes life of a (web) developer hard.
 
 ## Crinja
 {id: crystal-1-0-conf-crinja}
 
 * The Jinja Template system of Johannes Müller
 * No need for compilation - makes the HTML development much faster.
-
-## Code formatter
-{id: crystal-1-0-conf-format-code}
-
-```
-crystal tool format
-```
-
-## Ameba
-{id: crystal-1-0-conf-ameba-linter}
-
-[Ameba Linter](https://github.com/crystal-ameba/ameba)
 
 ## Shardbox
 {id: crystal-1-0-conf-shardbox}
@@ -215,4 +228,5 @@ crystal tool format
 * [Friends of Crystal](https://friendsofcrystal.com/) by Serdar Doğruyol
 * [Crystal course](https://code-maven.com/crystal-course)
 * Crystal book (based on the course)
+
 
