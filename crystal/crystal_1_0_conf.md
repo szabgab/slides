@@ -8,6 +8,7 @@
 * 2021.07.08
 * by Gábor Szabó
 * https://szabgab.com/
+* https://code-maven.com/crystal
 * @szabgab
 
 ## Background
@@ -239,5 +240,6 @@ make install
 
 * Thank you - QA
 * https://szabgab.com/
+* https://code-maven.com/crystal
 * @szabgab
 
