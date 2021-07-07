@@ -92,7 +92,7 @@ Lots of small examples, questions arise, make me learn more.
 crystal tool format
 ```
 
-## Ameba
+## Ameba - Linter
 {id: crystal-1-0-conf-ameba-linter}
 
 * [Ameba Linter](https://github.com/crystal-ameba/ameba)
@@ -102,6 +102,10 @@ crystal tool format
 
 * [Spectator](https://gitlab.com/arctic-fox/spectator) (similar to RSpec of Ruby)
 
+## Code coverage
+{id: crystal-1-0-conf-code-coverage}
+
+* [Crystal - code coverage](https://github.com/anykeyh/crystal-coverage)
 
 ## CI - GitHub Actions
 {id: crystal-1-0-conf-github-actions}
@@ -228,4 +232,8 @@ make install
 * [Crystal course](https://code-maven.com/crystal-course)
 * Crystal book (based on the course)
 
+## Thank you - QA?
+{id: crystal-1-0-conf-thank-you}
+
+Thank you - QA
 
