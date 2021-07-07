@@ -83,7 +83,7 @@ Lots of small examples, questions arise, make me learn more.
 * Easy to install (`shards install`).
 * Few of them. Many common libraries (shards) are missing - harder to develop and many opportunities.
 * Discoverability (There is no `shards search`, there is no central database of shards).
-* "Failed to resolve dependencies, try updating incompa## Code formatter
+* "Failed to resolve dependencies, try updating incompatible shards or use `--ignore-crystal-version` as a workaround if no update is available."
 
 ## Code formatter
 {id: crystal-1-0-conf-format-code}
@@ -102,7 +102,6 @@ crystal tool format
 
 * [Spectator](https://gitlab.com/arctic-fox/spectator) (similar to RSpec of Ruby)
 
-tible shards or use `--ignore-crystal-version` as a workaround if no update is available."
 
 ## CI - GitHub Actions
 {id: crystal-1-0-conf-github-actions}
