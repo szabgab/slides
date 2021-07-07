@@ -91,3 +91,7 @@ puts __FILE__
 * Common Code formatting
 * Dependency management
 
+Ruby to Crystal
+* Replace string with single-quotes by strings with double-quotes or %{}
+* Source is in the src/ directory and not in the /lib directory
+
