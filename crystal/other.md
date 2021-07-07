@@ -218,6 +218,13 @@ require "some_name"         # Find it somewhere (standard library, src directory
 
 All the elements of an array "inherit" the type from the array
 
+## Environment variables
+{id: envriornment-variables}
+{i: ENV}
+
+![](examples/other/env.cr)
+
+
 ## Int32 or Nil
 {id: int32-or-nil}
 
