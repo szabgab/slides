@@ -231,8 +231,8 @@ All the elements of an array "inherit" the type from the array
 * [LuckyCast](https://luckycasts.com/)
 
 * [Crystal for Rubyists](https://www.crystalforrubyists.com/)
-* [Crystal Weekly](https://crystalweekly.com/)
-* [Friends of Crystal](https://friendsofcrystal.com/)
+* [Crystal Weekly](https://crystalweekly.com/) by Serdar Doğruyol
+* [Friends of Crystal](https://friendsofcrystal.com/) by Serdar Doğruyol
 * [Programming Crystal book](https://www.pragprog.com/titles/crystal/programming-crystal/)
 
 * [Facebook page](https://www.facebook.com/Crystallang-1457045254320264/)

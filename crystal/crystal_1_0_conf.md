@@ -230,8 +230,6 @@ make install
 * Contribute to shards. (tests, CI)
 * Pair programming sessions on Crystal projects
 
-* [Crystal Weekly](https://crystalweekly.com/) by Serdar Doğruyol
-* [Friends of Crystal](https://friendsofcrystal.com/) by Serdar Doğruyol
 * [Crystal course](https://code-maven.com/crystal-course)
 * Crystal book (based on the course)
 
