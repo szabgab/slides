@@ -16,6 +16,8 @@
 
 ## Command line Option Parser (argparse, GetOpts)
 {id: option-parser}
+{i: option_parser}
+{i: OptionParser}
 
 * [OptionParser](https://crystal-lang.org/api/OptionParser.html)
 
