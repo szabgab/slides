@@ -7,6 +7,8 @@
 * Crystal 1.0 Conference
 * 2021.07.08
 * by Gábor Szabó
+* https://szabgab.com/
+* @szabgab
 
 ## Background
 {id: crystal-1-0-conf-background}
@@ -235,5 +237,7 @@ make install
 ## Thank you - QA?
 {id: crystal-1-0-conf-thank-you}
 
-Thank you - QA
+* Thank you - QA
+* https://szabgab.com/
+* @szabgab
 
