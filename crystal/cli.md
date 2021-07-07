@@ -34,6 +34,7 @@
 ![](examples/cli/parse_options.out)
 
 ## Order of parsing
+{id: order-of-parsing}
 
 ![](examples/cli/parsing_order.cr)
 ![](examples/cli/parsing_order.out)
