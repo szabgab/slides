@@ -42,10 +42,13 @@
 {id: abort}
 {i: abort}
 
+{aside}
+`abort` is the combination of printing to the `STDERR` and calling `exit` with an exit code.
+{/aside}
+
 ![](examples/process/abort.cr)
 ![](examples/process/abort_code.cr)
 
-* Print message to STDERR and exit with exit code 1 (see `$?` or `%ERROR_LEVEL%`)
+* `abort` prints a message to STDERR and exit with exit code 1 (see `$?` or `%ERROR_LEVEL%`)
 * Optionally we can supply the exit code as well.
-
 
