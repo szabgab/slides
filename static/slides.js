@@ -231,9 +231,9 @@
             //    return;
             //}
 
-            var msg = 'You are are reading one of the thousands of slides on the <a href="/">Code-Maven</a> site. Check out <a href="/slides/">all the slides</a>.';
-            top.innerHTML = msg;
-            top.setAttribute('style', 'background-color: #42e8f4;');
+            var msg = 'You are reading one of the thousands of slides on the <a href="/">Code-Maven</a> site. Check out <a href="/slides/">all the slides</a>.';
+            //top.innerHTML = msg;
+            //top.setAttribute('style', 'background-color: #42e8f4;');
             //background-color: orange'
         }
     }
