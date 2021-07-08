@@ -31,7 +31,7 @@ Actually it is already almost 60 days
 
 * [module counts](http://www.modulecounts.com/)
 * [3rd party registry](https://code-maven.com/package-registry)
-* Listing of shards [crystalshards.xyz](https://crystalshards.xyz/) (thin wrapper arount the API of GitHub)
+* Listing of shards [crystalshards.xyz](https://crystalshards.xyz/) (thin wrapper around the API of GitHub)
 
 {aside}
 This site listing the shards are very plain, only a thin wrapper around GitHub API
@@ -61,7 +61,10 @@ Lots of small examples, questions arise, make me learn more.
 
 * Wed May 19 07:29:28 2021 +0300 - first commit to [Crystal Mine](https://crystal-mine.org/)
 
-* Wed Jun  9 03:03:02 2021 +0300 - posted on the [forum](https://forum.crystal-lang.org/)
+* Wed Jun  9 03:03:02 2021 +0300 - posted on the [Crystal forum](https://forum.crystal-lang.org/)
+
+## Shardbox
+{id: crystal-1-0-conf-4-hours}
 
 * 4 hours later Johannes Müller pointed to [Shardbox](https://shardbox.org/)
 
@@ -85,7 +88,7 @@ Lots of small examples, questions arise, make me learn more.
 
 * Easy to install (`shards install`).
 * Few of them. Many common libraries (shards) are missing - harder to develop and many opportunities.
-* Discoverability (There is no `shards search`, there is no central database of shards).
+* Discover-ability (There is no `shards search`, there is no central database of shards).
 * "Failed to resolve dependencies, try updating incompatible shards or use `--ignore-crystal-version` as a workaround if no update is available."
 
 ## Code formatter
@@ -132,7 +135,7 @@ What does !something.empty? and why don't you write ¡empty! anyway? That would 
 {/aside}
 
 
-## Emojies and Unicode characters 💎
+## Emojis and Unicode characters 💎
 {id: crystal-1-0-conf-inverted}
 
 * Why are we not using ¡ and ¿
@@ -158,7 +161,7 @@ What does !something.empty? and why don't you write ¡empty! anyway? That would 
 * Hash#delete - removes an element in-place
 
 {aside}
-It seems there is some inconsitency here.
+It seems there is some inconsistency here.
 {/aside}
 
 
