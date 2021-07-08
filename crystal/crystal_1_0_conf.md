@@ -47,8 +47,8 @@ I can do a much better one analyzing shards and displaying information.
 ## How to learn
 {id: crystal-1-0-conf-how-to-learn}
 
-* Prepare slides for a [training course](https://code-maven.com/crystal-course)
 * Developing an application
+* Prepare slides for a [training course](https://code-maven.com/crystal-course)
 
 {aside}
 Lots of small examples, questions arise, make me learn more.
@@ -132,7 +132,7 @@ What does !something.empty? and why don't you write ¡empty! anyway? That would 
 {/aside}
 
 
-## More Unicode characters
+## Emojies and Unicode characters 💎
 {id: crystal-1-0-conf-inverted}
 
 * Why are we not using ¡ and ¿
@@ -228,16 +228,17 @@ make install
 
 * Contribute to [Shardbox](https://shardbox.org/)
 * Contribute to shards. (tests, CI)
-* Pair programming sessions on Crystal projects
+* [Pair programming sessions](https://code-maven.com/live) on Crystal projects
 
 * [Crystal course](https://code-maven.com/crystal-course)
 * Crystal book (based on the course)
 
-## Thank you - QA?
+## Thank you - QA ?!?!
 {id: crystal-1-0-conf-thank-you}
 
 * Thank you - QA
 * https://szabgab.com/
 * https://code-maven.com/crystal
+* [Discord](https://discord.com/channels/591460182777790474/851915558970064937)
 * @szabgab
 
