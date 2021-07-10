@@ -15,7 +15,35 @@
 ![](examples/struct/struct_with_initializer.cr)
 
 ## Extend other structs
-{id: extend-other-structs}
+{id: struct-extend-other-structs}
 
 ![](examples/struct/integers.cr)
+
+## Empty struct
+{id: empty-struct}
+
+![](examples/struct/empty_struct.cr)
+
+## Struct
+{id: struct-simple}
+
+![](examples/struct/struct.cr)
+
+## Struct from JSON
+{id: struct-from-json}
+{i: JSON::Serializable}
+
+* [JSON::Serializable](https://crystal-lang.org/api/JSON/Serializable.html)
+
+![](examples/struct/struct_from_json.cr)
+
+## Struct from JSON - manual parsing
+{id: struct-from-json-manual-parsing}
+{i: include}
+{i: JSON::PullParser}
+
+* [JSON::PullParser](https://crystal-lang.org/api/JSON/PullParser.html)
+
+![](examples/struct/struct_from_json_pull_parser.cr)
+
 

@@ -4,9 +4,7 @@ end
 
 h = {a: 1, "a b-23": 2}
 t h
-h.each {|x, y|
+h.each { |x, y|
   t x
   t y
 }
-
-
