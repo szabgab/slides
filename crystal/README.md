@@ -95,3 +95,4 @@ Ruby to Crystal
 * Replace string with single-quotes by strings with double-quotes or %{}
 * Source is in the src/ directory and not in the /lib directory
 
+local/global variables and constants.
