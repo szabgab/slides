@@ -21,3 +21,13 @@
 
 ![](examples/tuples/named_tuple_fields.cr)
 
+## Named Tuple with non-alphanumeric fields
+{id: named-tuple-with-non-alphanumeric-fields}
+
+![](examples/tuples/named_tuple_with_non_alnum_fields.cr)
+
+## Named Tuple with optional field
+{id: named-tuple-with-optional-field}
+
+![](examples/tuples/optional_field.cr)
+
