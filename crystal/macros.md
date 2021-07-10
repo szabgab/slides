@@ -31,3 +31,8 @@
 
 ![](examples/macros/function.cr)
 
+## Macro to print type and content
+{id: macro-to-print-type-and-content}
+
+![](examples/macros/type_and_content.cr)
+
