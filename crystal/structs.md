@@ -46,4 +46,8 @@
 
 ![](examples/struct/struct_from_json_pull_parser.cr)
 
+## Multi-level struct from JSON
+{id: struct-multi-level}
+
+![](examples/struct/multi_level.cr)
 
