@@ -3,9 +3,9 @@ require "json"
 struct Address
   include JSON::Serializable
 
-  property street : String
-  property city : String
-  property country : String
+  getter street : String
+  getter city : String
+  getter country : String
 
   def initialize(@street, @city, @country)
   end
@@ -14,9 +14,9 @@ end
 struct Person
   include JSON::Serializable
 
-  property name : String
-  property email : String
-  property address : Address
+  getter name : String
+  getter email : String
+  getter address : Address
 
   def initialize(@name, @email, @address)
   end

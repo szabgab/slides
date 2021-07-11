@@ -5,7 +5,9 @@
 {id: empty-struct}
 {i: struct}
 
-* [Struct](https://crystal-lang.org/api/Struct.html)
+* [Struct API](https://crystal-lang.org/api/Struct.html)
+* [Struct reference](https://crystal-lang.org/reference/syntax_and_semantics/structs.html)
+* [use structs when possible](https://crystal-lang.org/reference/guides/performance.html#use-structs-when-possible)
 
 ![](examples/struct/empty_struct.cr)
 ![](examples/struct/empty_struct.out)
@@ -59,7 +61,11 @@
 
 ![](examples/struct/with_default_value.cr)
 
+## Struct pass-by-value
+{id: struct-pass-by-value}
 
+![](examples/struct/struct_pass_by_value.cr)
+![](examples/struct/struct_pass_by_value.out)
 
 ## Struct from JSON
 {id: struct-from-json}
@@ -68,6 +74,13 @@
 * [JSON::Serializable](https://crystal-lang.org/api/JSON/Serializable.html)
 
 ![](examples/struct/struct_from_json.cr)
+![](examples/struct/struct_from_json.out)
+
+## Struct both from JSON and initialize
+{id: struct-from-json-and-initialize}
+
+![](examples/struct/struct_initialize_and_from_json.cr)
+![](examples/struct/struct_initialize_and_from_json.out)
 
 ## Struct from JSON - manual parsing
 {id: struct-from-json-manual-parsing}
@@ -77,11 +90,13 @@
 * [JSON::PullParser](https://crystal-lang.org/api/JSON/PullParser.html)
 
 ![](examples/struct/struct_from_json_pull_parser.cr)
+![](examples/struct/struct_from_json_pull_parser.out)
 
 ## Multi-level struct from JSON
 {id: struct-multi-level}
 
 ![](examples/struct/multi_level.cr)
+![](examples/struct/multi_level.out)
 
 ## Extend struct
 {id: struct-extend-struct}

@@ -1,0 +1,1 @@
+bar # => Person(@name="Bar", @email="bar@foobar.com")
