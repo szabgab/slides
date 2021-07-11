@@ -31,3 +31,7 @@ p! foo
 json_str = %{{"name": "Bar", "email": "bar@foobar.com", "address" : { "street": "Broadway", "city": "New York", "country": "USA"} }}
 bar = Person.from_json(json_str)
 p! bar
+
+p bar.name
+p bar.address
+p bar.address.street

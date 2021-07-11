@@ -8,3 +8,4 @@ end
 
 foo = Person.new("Foo", "me@foo.bar")
 p! foo
+p foo.name
