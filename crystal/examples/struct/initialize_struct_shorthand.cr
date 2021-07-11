@@ -1,5 +1,6 @@
 struct Person
   def initialize(@name : String, @email : String)
+    @time = Time.utc
   end
 end
 

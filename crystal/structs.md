@@ -5,6 +5,12 @@
 {id: empty-struct}
 {i: struct}
 
+{aside}
+Structs are very powerful constructs in Crystal. Very similar to classes, but they are usually faster.
+
+In the first example we create an empty struct. It does not give as a lot, but we have to start somewhere.
+{/aside}
+
 * [Struct API](https://crystal-lang.org/api/Struct.html)
 * [Struct reference](https://crystal-lang.org/reference/syntax_and_semantics/structs.html)
 * [use structs when possible](https://crystal-lang.org/reference/guides/performance.html#use-structs-when-possible)
@@ -16,6 +22,16 @@
 {id: struct-initialize}
 {i: initialize}
 
+{aside}
+A more realistic example is a struct that has a method called `initialize` that can be used to set the
+attributes of the struct. Each variable with a single `@` sign infront of it is an attribute.
+
+We can initialize some of the attributes by values received from the user and some attributes by generating
+the value ourseves. e.g. by using a Time object or a Random value or any other way.
+
+We can print the content of the Struct, but we have no way to access the attributes.
+{/aside}
+
 * There is no way to change this struct
 * There is no way to access the individual attributes as there are no getters
 
@@ -24,6 +40,10 @@
 
 ## Initialize immutable struct - shorthand
 {id: struct-initialize-shorthand}
+
+{aside}
+Writing each attribute name 3 times is quite annoying, luckily Crystal provides a shorthand writing mode.
+{/aside}
 
 ![](examples/struct/initialize_struct_shorthand.cr)
 ![](examples/struct/initialize_struct_shorthand.out)
