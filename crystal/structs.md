@@ -1,33 +1,29 @@
 # Structs
 {id: structs}
 
-## Simple Struct
-{id: simple-struct}
+## Struct
+{id: struct}
 {i: struct}
 
 * [Struct](https://crystal-lang.org/api/Struct.html)
 
-![](examples/struct/simple_struct.cr)
+![](examples/struct/struct.cr)
+![](examples/struct/struct.out)
+
+## Struct with optional attributes
+{id: struct-optional}
+
+![](examples/struct/struct_optional.cr)
 
 ## Struct with initializer
 {id: struct-with-initialized}
 
 ![](examples/struct/struct_with_initializer.cr)
 
-## Extend other structs
-{id: struct-extend-other-structs}
-
-![](examples/struct/integers.cr)
-
 ## Empty struct
 {id: empty-struct}
 
 ![](examples/struct/empty_struct.cr)
-
-## Struct
-{id: struct-simple}
-
-![](examples/struct/struct.cr)
 
 ## Struct from JSON
 {id: struct-from-json}
@@ -50,4 +46,10 @@
 {id: struct-multi-level}
 
 ![](examples/struct/multi_level.cr)
+
+## Extend other structs
+{id: struct-extend-other-structs}
+
+![](examples/struct/integers.cr)
+
 
