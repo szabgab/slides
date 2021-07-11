@@ -1,0 +1,3 @@
+cfg # => MyConfig(@name=nil)
+typeof(cfg) # => MyConfig
+cfg # => MyConfig(@name="Foo")
