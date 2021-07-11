@@ -64,7 +64,7 @@ We can defined methods in the struct to become the getters of the attributes, bu
 
 {aside}
 We can use the `getter` macro to create getters to all of the attributes.
-{aside}
+{/aside}
 
 ![](examples/struct/immutable_struct_with_getter_macro.cr)
 ![](examples/struct/immutable_struct_with_getter_macro.out)
