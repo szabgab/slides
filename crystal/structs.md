@@ -24,12 +24,13 @@ In the first example we create an empty struct. It does not give as a lot, but w
 
 {aside}
 A more realistic example is a struct that has a method called `initialize` that can be used to set the
-attributes of the struct. Each variable with a single `@` sign infront of it is an attribute.
+attributes of the struct. Each variable with a single `@` sign in-front of it is an attribute.
 
 We can initialize some of the attributes by values received from the user and some attributes by generating
-the value ourseves. e.g. by using a Time object or a Random value or any other way.
+the value ourseves. e.g. by using a Time object, a Random value or generating or computing it in any other way.
 
-We can print the content of the Struct, but we have no way to access the attributes.
+We can print the content of the Struct, but we have no way to access the attributes and no way to change them.
+Hence this struct is immutable.
 {/aside}
 
 * There is no way to change this struct
@@ -51,14 +52,28 @@ Writing each attribute name 3 times is quite annoying, luckily Crystal provides 
 ## Immutable struct with getters
 {id: struct-immutable-with-getters}
 
+{aside}
+We can defined methods in the struct to become the getters of the attributes, but this too is boring.
+{/aside}
+
 ![](examples/struct/immutable_struct_with_getter.cr)
 ![](examples/struct/immutable_struct_with_getter.out)
 
 ## Immutable struct with getter macro
 {id: struct-immutable-with-getter-macro}
 
+{aside}
+We can use the `getter` macro to create getters to all of the attributes.
+{aside}
+
 ![](examples/struct/immutable_struct_with_getter_macro.cr)
 ![](examples/struct/immutable_struct_with_getter_macro.out)
+
+## Mutable Struct with setter
+{id: struct-mutable-with-setter}
+
+![](examples/struct/mutable_struct_with_setter.cr)
+![](examples/struct/mutable_struct_with_setter.out)
 
 ## Mutable Struct with propery macro
 {id: struct-mutable-with-property-macro}

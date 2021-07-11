@@ -140,12 +140,19 @@ require "some_name"         # Find it somewhere (standard library, src directory
 
 ![](examples/other/constants.cr)
 
-## Multiple assignments
-{id: multiple-assignments}
+## Multiple assignment
+{id: multiple-assignment}
 
-![](examples/other/multiple_assignments.cr)
+* [Multiple assignment](https://crystal-lang.org/reference/syntax_and_semantics/assignment.html#multiple-assignment)
 
-![](examples/other/assign.cr)
+![](examples/other/multiple_assignment.cr)
+
+## Chained assignment
+{id: chained-assignment}
+
+* [Chained assignment](https://crystal-lang.org/reference/syntax_and_semantics/assignment.html#chained-assignment)
+
+![](examples/other/chained_assignment.cr)
 
 ## Int methods: Times
 {id: times}
