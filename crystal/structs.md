@@ -3,24 +3,46 @@
 
 ## Empty struct
 {id: empty-struct}
+{i: struct}
 
 * [Struct](https://crystal-lang.org/api/Struct.html)
 
 ![](examples/struct/empty_struct.cr)
+![](examples/struct/empty_struct.out)
 
-## Initialize struct
+## Initialize immutable struct
 {id: struct-initialize}
 {i: initialize}
 
+* There is no way to change this struct
+* There is no way to access the individual attributes as there are no getters
+
 ![](examples/struct/initialize_struct.cr)
+![](examples/struct/initialize_struct.out)
 
-## Struct
-{id: struct}
-{i: struct}
+## Initialize immutable struct - shorthand
+{id: struct-initialize-shorthand}
 
+![](examples/struct/initialize_struct_shorthand.cr)
+![](examples/struct/initialize_struct_shorthand.out)
 
-![](examples/struct/struct.cr)
-![](examples/struct/struct.out)
+## Immutable struct with getters
+{id: struct-immutable-with-getters}
+
+![](examples/struct/immutable_struct_with_getter.cr)
+![](examples/struct/immutable_struct_with_getter.out)
+
+## Immutable struct with getter macro
+{id: struct-immutable-with-getter-macro}
+
+![](examples/struct/immutable_struct_with_getter_macro.cr)
+![](examples/struct/immutable_struct_with_getter_macro.out)
+
+## Mutable Struct with propery macro
+{id: struct-mutable-with-property-macro}
+
+![](examples/struct/mutable_struct_with_property_macro.cr)
+![](examples/struct/mutable_struct_with_property_macro.out)
 
 ## Struct with optional attributes
 {id: struct-optional}
@@ -31,6 +53,13 @@
 {id: struct-with-initialized}
 
 ![](examples/struct/struct_with_initializer.cr)
+
+## Struct with default value
+{id: struct-with-deefault}
+
+![](examples/struct/with_default_value.cr)
+
+
 
 ## Struct from JSON
 {id: struct-from-json}
@@ -48,12 +77,6 @@
 * [JSON::PullParser](https://crystal-lang.org/api/JSON/PullParser.html)
 
 ![](examples/struct/struct_from_json_pull_parser.cr)
-
-## Struct with default value
-{id: struct-with-deefault}
-
-![](examples/struct/with_default_value.cr)
-
 
 ## Multi-level struct from JSON
 {id: struct-multi-level}

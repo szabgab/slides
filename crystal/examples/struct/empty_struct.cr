@@ -2,5 +2,5 @@ struct MyConfig
 end
 
 cfg = MyConfig.new
-puts cfg
-puts typeof(cfg)
+p! cfg
+p! typeof(cfg)
