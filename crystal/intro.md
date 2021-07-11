@@ -314,3 +314,51 @@ echo %ERROR_LEVEL%
 
 * `crystal eval`
 
+## Exercise: Hello World
+{id: exercise-hello-world}
+
+* Install Crystal.
+* Verify that you can run it on the command line and print the version number `crystal --version`.
+* Create a file called `hello_world.cr` that will print out "Hello World"
+
+## Exercise: Hello Name - STDIN
+{id: exercise-hello-name-stdin}
+
+* Create a file called `hello_name_stdin.cr` that will ask the user for their name.
+* Wait till the user types in their name.
+* print "Hello NAME" with their name.
+
+## Exercise: Hello Name - ARGV
+{id: exercise-hello-name-argv}
+
+* Create a file called `hello_name_argv.cr` that expects a name on the command line:
+* `crystal hello_name_argv.cr FooBar`
+* print "Hello FooBar" using whatever name the user provided.
+
+## Exercise: Circle STDIN
+{id: exercise-circle-stdin}
+
+* Create a file called `circle_stdin.cr` that will ask the user for a number.
+* Then wait till the user types in a number (the radius of a circle).
+* Print the area and the circumference of the circle.
+
+## Exercise: Circle ARGV
+{id: exercise-circle-argv}
+
+* Create a file called `circle_argv.cr` that will expect a number on the command line, the radius of a circle.
+* Print the area and the circumference of the circle.
+
+## Exercise: Calculator STDIN
+{id: exercise-calculator-stdin}
+
+* Create a file called `calculator_stdin.cr`
+* Ask the user for two numbers and an operator `(+, -, *, /)`
+* Compute the result of the operation and print it out.
+
+## Exercise: Calculator ARGV
+{id: exercise-calculator-argv}
+
+* Create a file called `calculator_argv.cr` that the user can run with two numbers and an operator `(+, -, *, /)`.
+* `crystal calculator_argv.cr 3 + 7`
+* Compute the result of the operation and print it out.
+
