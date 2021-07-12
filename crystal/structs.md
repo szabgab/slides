@@ -147,6 +147,19 @@ when you leave the function.
 ![](examples/struct/multi_level_struct_from_json.cr)
 ![](examples/struct/multi_level_struct_from_json.out)
 
+## Struct from JSON with extra data
+{id: struct-from-json-with-extra-data}
+
+![](examples/struct/struct_from_json_extra_data.cr)
+![](examples/struct/struct_from_json_extra_data.out)
+
+## Struct from JSON missing data (optionl fields)
+{id: struct-from-json-missing-data}
+
+![](examples/struct/struct_from_json_missing_data.cr)
+![](examples/struct/struct_from_json_missing_data.out)
+
+
 ## Extend struct
 {id: struct-extend-struct}
 

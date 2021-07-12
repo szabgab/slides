@@ -19,7 +19,7 @@ struct Person
 end
 
 adr = Address.new("Main str. 3", "Capital", "Big")
-p! adr
+pp! adr
 
 prs = Person.new("Foo", "me@foo.bar", adr)
-p! prs
+pp! prs

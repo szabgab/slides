@@ -1,0 +1,7 @@
+prs # => Person(@address="my address", @email="bar@foobar.com", @name="Bar")
+prs.name # => "Bar"
+prs.address # => "my address"
+
+prs # => Person(@address=nil, @email="bar@foobar.com", @name="Bar")
+prs.name # => "Bar"
+prs.address # => nil
