@@ -6,15 +6,21 @@ struct Person
   end
 end
 
-def set_email(prs : Person)
-  prs.email = "fake@address.com"
+def set_email(pers : Person)
+  pers.email = "fake@address.com"
+  p! pers
 end
 
-foo = Person.new("Foo", "me@foo.bar")
-p! foo
-p! foo.name
-p! foo.email
+prs = Person.new("Foo", "me@foo.bar")
+p! prs
+p! prs.name
+p! prs.email
 
-set_email(foo)
+puts ""
 
-p! foo.email
+set_email(prs)
+
+puts ""
+p! prs
+p! prs.name
+p! prs.email

@@ -1,4 +1,9 @@
-foo # => Person(@name="Foo", @email="me@foo.bar")
-foo.name # => "Foo"
-foo.email # => "me@foo.bar"
-foo.email # => "me@foo.bar"
+prs # => Person(@name="Foo", @email="me@foo.bar")
+prs.name # => "Foo"
+prs.email # => "me@foo.bar"
+
+pers # => Person(@name="Foo", @email="fake@address.com")
+
+prs # => Person(@name="Foo", @email="me@foo.bar")
+prs.name # => "Foo"
+prs.email # => "me@foo.bar"

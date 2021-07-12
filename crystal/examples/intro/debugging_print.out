@@ -1,4 +1,14 @@
 Foo
-{name: "Foo", number: 42, yesno: true, fruits: ["apple", "banana", "peach"]}
+"Foo"
 name # => "Foo"
-person # => {name: "Foo", number: 42, yesno: true, fruits: ["apple", "banana", "peach"]}
+name # => "Foo"
+
+{name: "Foo", number: 42, yesno: true, fruits: ["apple", "banana", "peach"], address: {"street" => "Main str.", "city" => "Capital", "country" => "Country"}}
+{name: "Foo", number: 42, yesno: true, fruits: ["apple", "banana", "peach"], address: {"street" => "Main str.", "city" => "Capital", "country" => "Country"}}
+person # => {name: "Foo", number: 42, yesno: true, fruits: ["apple", "banana", "peach"], address: {"street" => "Main str.", "city" => "Capital", "country" => "Country"}}
+person # => {name: "Foo",
+ number: 42,
+ yesno: true,
+ fruits: ["apple", "banana", "peach"],
+ address: 
+  {"street" => "Main str.", "city" => "Capital", "country" => "Country"}}

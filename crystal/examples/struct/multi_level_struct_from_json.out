@@ -1,0 +1,7 @@
+prs # => Person(
+ @address=Address(@city="New York", @country="USA", @street="Broadway"),
+ @email="bar@foobar.com",
+ @name="Bar")
+prs.name # => "Bar"
+prs.address # => Address(@street="Broadway", @city="New York", @country="USA")
+prs.address.street # => "Broadway"

@@ -1,0 +1,5 @@
+prs # => Person(@name="Foo", @email=nil)
+prs.name # => "Foo"
+prs.email # => nil
+prs # => Person(@name="Foo", @email="foo@bar.com")
+prs.email # => "foo@bar.com"

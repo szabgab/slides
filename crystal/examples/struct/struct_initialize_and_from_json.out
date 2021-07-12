@@ -1,2 +1,6 @@
-foo # => Person(@name="Foo", @email="me@foo.bar")
-bar # => Person(@name="Bar", @email="bar@foobar.com")
+prs1 # => Person(@name="Foo", @email="me@foo.bar")
+prs1.name # => "Foo"
+prs1.email # => "me@foo.bar"
+prs2 # => Person(@name="Bar", @email="bar@foobar.com")
+prs2.name # => "Bar"
+prs2.email # => "bar@foobar.com"

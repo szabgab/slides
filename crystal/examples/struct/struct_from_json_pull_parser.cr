@@ -4,10 +4,7 @@ struct Person
   getter name : String
   getter email : String
 
-  def initialize(@name, @email)
-  end
-
-  def initialize(pull)
+  def initialize(pull) # JSON::PullParser
     @name = ""
     @email = ""
     pull.read_object do |key|
@@ -21,11 +18,8 @@ struct Person
   end
 end
 
-foo = Person.new("Foo", "me@foo.bar")
-p! foo
-p! foo.name
-p! foo.email
-
 json_str = %{{"name": "Bar", "email": "bar@foobar.com"}}
-bar = Person.from_json(json_str)
-p! bar
+prs = Person.from_json(json_str)
+p! prs
+p! prs.name
+p! prs.email

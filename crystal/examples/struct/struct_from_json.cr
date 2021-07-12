@@ -8,5 +8,7 @@ struct Person
 end
 
 json_str = %{{"name": "Bar", "email": "bar@foobar.com"}}
-bar = Person.from_json(json_str)
-p! bar
+prs = Person.from_json(json_str)
+p! prs
+p! prs.name
+p! prs.email

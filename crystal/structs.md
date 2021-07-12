@@ -66,6 +66,8 @@ We can defined methods in the struct to become the getters of the attributes, bu
 We can use the `getter` macro to create getters to all of the attributes.
 {/aside}
 
+* [macros on Object](https://crystal-lang.org/api/Object.html)
+
 ![](examples/struct/immutable_struct_with_getter_macro.cr)
 ![](examples/struct/immutable_struct_with_getter_macro.out)
 
@@ -78,6 +80,8 @@ We can use the `getter` macro to create getters to all of the attributes.
 ## Mutable Struct with propery macro
 {id: struct-mutable-with-property-macro}
 
+* [macros on Object](https://crystal-lang.org/api/Object.html)
+
 ![](examples/struct/mutable_struct_with_property_macro.cr)
 ![](examples/struct/mutable_struct_with_property_macro.out)
 
@@ -85,19 +89,22 @@ We can use the `getter` macro to create getters to all of the attributes.
 {id: struct-optional}
 
 ![](examples/struct/struct_optional.cr)
-
-## Struct with initializer
-{id: struct-with-initialized}
-
-![](examples/struct/struct_with_initializer.cr)
+![](examples/struct/struct_optional.out)
 
 ## Struct with default value
 {id: struct-with-deefault}
 
 ![](examples/struct/with_default_value.cr)
+![](examples/struct/with_default_value.out)
 
 ## Struct pass-by-value
 {id: struct-pass-by-value}
+
+{aside}
+For immutable structs this is not relevant but when the struct is mutable you have to remember that it is passed by value to functions.
+That is, the function receives a copy of the external struct. Any changes made to the struct inside the function will be lost
+when you leave the function.
+{/aside}
 
 ![](examples/struct/struct_pass_by_value.cr)
 ![](examples/struct/struct_pass_by_value.out)
@@ -113,6 +120,7 @@ We can use the `getter` macro to create getters to all of the attributes.
 
 ## Struct both from JSON and initialize
 {id: struct-from-json-and-initialize}
+{i: initialize}
 
 ![](examples/struct/struct_initialize_and_from_json.cr)
 ![](examples/struct/struct_initialize_and_from_json.out)
@@ -127,11 +135,17 @@ We can use the `getter` macro to create getters to all of the attributes.
 ![](examples/struct/struct_from_json_pull_parser.cr)
 ![](examples/struct/struct_from_json_pull_parser.out)
 
-## Multi-level struct from JSON
-{id: struct-multi-level}
+## Multi-level struct manually
+{id: struct-multi-level-manually}
 
-![](examples/struct/multi_level.cr)
-![](examples/struct/multi_level.out)
+![](examples/struct/multi_level_struct_manually.cr)
+![](examples/struct/multi_level_struct_manually.out)
+
+## Multi-level struct from JSON
+{id: struct-multi-level-from-json}
+
+![](examples/struct/multi_level_struct_from_json.cr)
+![](examples/struct/multi_level_struct_from_json.out)
 
 ## Extend struct
 {id: struct-extend-struct}

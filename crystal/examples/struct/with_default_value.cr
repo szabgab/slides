@@ -3,10 +3,12 @@ struct Person
   property email : String?
 end
 
-foo = Person.new
-p! foo
-p! foo.name
-p! foo.email
+prs = Person.new
+p! prs
+p! prs.name
+p! prs.email
 
-foo.email = "new@foo.bar"
-p! foo.email
+prs.name = "Foo"
+prs.email = "new@foo.bar"
+p! prs.name
+p! prs.email

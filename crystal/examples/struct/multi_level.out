@@ -1,6 +1,0 @@
-adr # => Address(@street="Main str. 3", @city="Capital", @country="Big")
-foo # => Person(@name="Foo", @email="me@foo.bar", @address=Address(@street="Main str. 3", @city="Capital", @country="Big"))
-bar # => Person(@name="Bar", @email="bar@foobar.com", @address=Address(@street="Broadway", @city="New York", @country="USA"))
-"Bar"
-Address(@street="Broadway", @city="New York", @country="USA")
-"Broadway"
