@@ -330,6 +330,7 @@ echo %ERROR_LEVEL%
 * `false`, `nil`, and the null pointer are "falsy" everything else, including 0 and "" are `true`
 
 ![](examples/intro/true_values.cr)
+![](examples/intro/true_values.out)
 
 ## Math - PI
 {id: math-pi}
