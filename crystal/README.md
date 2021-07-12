@@ -1,3 +1,8 @@
+REPL
+gets without nil
+compile with optimization flags --release
+pointers? is this only for bindings or have other uses?
+
 
 * Implement the exercises in the Python course
 * Create a web application
