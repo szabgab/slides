@@ -79,6 +79,50 @@ docker -t0 stop crystal
 * `puts` stands for "put string"
 * Adds a newline at the end
 
+## Run Crystal source code
+{id: run-crystal-from-source-code}
+
+```
+crystal hello_world.cr
+```
+
+## Compile Crystal to executable
+{id: compile-crystal-to-executable}
+
+```
+crystal build hello_world.cr -o hello
+./hello
+```
+
+## Speed of Crystal
+{id: speed-of-crystal}
+
+```
+$ time crystal hello_world.cr
+Hello World!
+
+real  0m1.108s
+user  0m1.268s
+sys   0m0.271s
+```
+
+```
+$ time crystal build hello_world.cr -o hw
+
+real   0m1.108s
+user   0m1.323s
+sys    0m0.238s
+```
+
+```
+$ time ./hw
+Hello World!
+
+real   0m0.013s
+user   0m0.001s
+sys    0m0.011s
+```
+
 ## Hello World (print)
 {id: hello-world-print}
 {i: print}
@@ -314,6 +358,12 @@ echo %ERROR_LEVEL%
 
 * `crystal eval`
 
+## Crystal and random numbers
+{id: random-numbers}
+
+![](examples/random/random.cr)
+![](examples/random/random.out)
+
 ## Exercise: Hello World
 {id: exercise-hello-world}
 
@@ -361,4 +411,87 @@ echo %ERROR_LEVEL%
 * Create a file called `calculator_argv.cr` that the user can run with two numbers and an operator `(+, -, *, /)`.
 * `crystal calculator_argv.cr 3 + 7`
 * Compute the result of the operation and print it out.
+
+## Exercise: Age limit
+{id: exercise-age-limit-stdin}
+
+* Create a script called `age_limit_stdin.cr`
+
+* Ask the user what is their age.
+* If it is above 18, tell them they can legally drink alcohol.
+* If is is above 21, tell them they can also legally drink in the USA.
+
+* Extra: ask the user for thir age and the name of their country and tell them if they can legally drink alcohol.
+* See the [Legal drinking age](https://en.wikipedia.org/wiki/Legal_drinking_age) list.
+* Don't worry if this seems to be too difficult to solve in a nice way. We'll learn more tools to improve.
+
+## Exercise: Number Guessing game - level 0
+{id: exercise-number-guessing-game-0}
+
+Level 0
+
+* Create a file called `number_guessing_game_0.cr`
+* Using the random module the computer "thinks" about a whole number between 1 and 20.
+* The user has to guess the number. After the user types in the guess the computer tells if this was bigger or smaller than the number it generated, or if it was the same.
+* The game ends after just one guess.
+
+Level 1-
+
+* Other levels in the next chapter.
+
+## Solution: Number Guessing game - level 0
+{id: solution-number-guessing-game-0}
+
+![](examples/game/number_guessing_game_0.cr)
+
+## Exercise: Number guessing game
+{id: exercise-number-guessing-game}
+
+Level 0
+
+* Create a file called `number_guessing_game_0.cr`
+* Using the random module the computer "thinks" about a whole number between 1 and 20.
+* The user has to guess the number. After the user types in the guess the computer tells if this was bigger or smaller than the number it generated, or if was the same.
+* The game ends after just one guess.
+
+Level 1
+
+* Create a file called `number_guessing_game_1.cr`
+* The user can guess several times. The game ends when the user guessed the right number.
+
+Level 2
+
+* Create a file called `number_guessing_game_2.cr`
+* If the user hits 'x', we leave the game without guessing the number.
+
+Level 3
+
+* Create a file called ``number_guessing_game_3.cr`
+* If the user presses 's', show the hidden value (cheat)
+
+Level 4
+
+* Create a file called `number_guessing_game_4.cr`
+* Soon we'll have a level in which the hidden value changes after each guess. In order to make that mode easier to track and debug, first we would like to have a "debug mode".
+* If the user presses 'd' the game gets into "debug mode": the system starts to show the current number to guess every time, just before asking the user for new input.
+* Pressing 'd' again turns off debug mode. (It is a toggle each press on "d" changes the value to to the other possible value.)
+
+Level 5
+
+* Create a file called `number_guessing_game_5.cr`
+* The 'm' button is another toggle. It is called 'move mode'. When it is 'on', the hidden number changes a little bit after every step (+/-2). Pressing 'm' again will turn this feature off.
+
+Level 6
+
+* Create a file called `number_guessing_game_6.cr`
+* Let the user play several games.
+* Pressing 'n' will skip this game and start a new one. Generates a new number to guess.
+
+## Solution: Number guessing game
+{id: solution-number-guessing-game}
+
+
+![](examples/game/number_guessing_game_1.cr)
+
+![](examples/game/number_guessing_game_2.cr)
 
