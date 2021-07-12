@@ -118,6 +118,14 @@ when you leave the function.
 ![](examples/struct/struct_from_json.cr)
 ![](examples/struct/struct_from_json.out)
 
+## Struct from JSON - upper case
+{id: struct-from-json-upper-case}
+
+* We cannot have attributes starting with upper case so we have to convert the field names to lowercase:
+
+![](examples/struct/struct_from_json_upper.cr)
+![](examples/struct/struct_from_json_upper.out)
+
 ## Struct both from JSON and initialize
 {id: struct-from-json-and-initialize}
 {i: initialize}
