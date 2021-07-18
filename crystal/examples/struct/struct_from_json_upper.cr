@@ -3,7 +3,6 @@ require "json"
 struct Person
   include JSON::Serializable
 
-
   getter name : String
 
   @[JSON::Field(key: "Email")]
