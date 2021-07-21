@@ -16,6 +16,7 @@
         "postgresql.md",
         "deploy.md",
         "appendix.md",
+        "kubernetes.md",
         "old.md"
     ]
 }

@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: echo-get
+spec:
+  containers:
+    - name: echo-get-container
+      image: myflask
+      imagePullPolicy: Never
+      ports:
+      - protocol: TCP
+        containerPort: 5000
