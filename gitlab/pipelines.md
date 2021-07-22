@@ -236,4 +236,8 @@ image: registry.gitlab.com/ioanrogers/perl-builder:latest
 
 ![](examples/pipelines/cache/.gitlab-ci.yml)
 
+## Python 3 Virtualenv
+{id: python-3-virtualenv}
+
+![](examples/pipelines/python3-virtualenv/.gitlab-ci.yml)
 

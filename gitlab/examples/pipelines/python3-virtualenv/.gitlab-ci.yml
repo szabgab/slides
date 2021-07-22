@@ -1,0 +1,11 @@
+image: python:3.9
+try:
+  script:
+    - printenv | sort
+    - apt-get update
+    - apt-get install -y virtualenv
+    - virtualenv -p python3 venv
+    - source venv/bin/activate
+    - pip install flask
+    - python --version
+
