@@ -9,7 +9,7 @@
 ![](examples/macros/increment_x.cr)
 
 ## Macro - with parameter and placeholder
-{id: macro-with-paramater}
+{id: macro-with-parameter}
 
 ![](examples/macros/increment_var.cr)
 

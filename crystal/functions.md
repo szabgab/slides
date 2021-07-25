@@ -80,7 +80,7 @@
 ## Implicit return value
 {id: implicit-return-value}
 
-If there is no explocit `return` statement then the result of the last statement executed in the function will be
+If there is no explicit `return` statement then the result of the last statement executed in the function will be
 returned from the function.
 
 ![](examples/functions/implicit.cr)

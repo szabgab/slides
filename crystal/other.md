@@ -130,7 +130,7 @@ require "./directory/**"    # all the cr files in the directory - recursively
 require "some_name"         # Find it somewhere (standard library, src directory)
 ```
 
-* You can put the `require` statements anywhere but you might want to be consistent in your porject.
+* You can put the `require` statements anywhere but you might want to be consistent in your project.
 * Make sure you don't have circular requires.
 
 ## Constants
@@ -169,7 +169,7 @@ require "some_name"         # Find it somewhere (standard library, src directory
 {i: ?}
 
 * meaning "or nil" in type definitions `String?` is the same as `String | Nil`
-* Methods ending with `?` usually return a boolean (true, false) - there is no enforcmenet of this in Crystal
+* Methods ending with `?` usually return a boolean (true, false) - there is no enforcement of this in Crystal
 * If a construct might raise an exception adding a question mark can convert that into returning nil
 * It is also part of the conditional operator `?:`
 
@@ -226,7 +226,7 @@ require "some_name"         # Find it somewhere (standard library, src directory
 All the elements of an array "inherit" the type from the array
 
 ## Environment variables
-{id: envriornment-variables}
+{id: environment-variables}
 {i: ENV}
 
 ![](examples/other/env.cr)

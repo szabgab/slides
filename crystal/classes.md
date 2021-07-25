@@ -42,14 +42,14 @@
 ![](examples/classes/class_with_default_property.cr)
 
 
-## Class with declated getter and default value
+## Class with declared getter and default value
 {id: class-with-declared-getter-and-default-value}
 {i: getter}
 
 ![](examples/classes/class_with_declared_getter_default.cr)
 
 
-## Class with declated getter
+## Class with declared getter
 {id: class-with-declared-getter}
 {i: getter}
 

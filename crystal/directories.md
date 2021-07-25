@@ -13,7 +13,7 @@
 {i: glob}
 ![](examples/filesystem/traverse_tree.cr)
 
-## Get Current workding directory (cwd, pwd)
+## Get Current working directory (cwd, pwd)
 {id: current-working-directory}
 
 ![](examples/filesystem/cwd.cr)

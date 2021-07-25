@@ -66,7 +66,7 @@
 ![](examples/files/file_size.cr)
 
 ## Last Modified date of file?
-{id: modiffied-date-of-file}
+{id: modified-date-of-file}
 {i: modification_time}
 
 ![](examples/files/modification_time.cr)

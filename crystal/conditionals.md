@@ -1,8 +1,8 @@
 # Conditionals
 {id: conditionals}
 
-## Comparision Operators
-{id: comparision-operators}
+## Comparison Operators
+{id: comparison-operators}
 {i: ==}
 {i: <}
 {i: <=}
@@ -57,7 +57,7 @@
 ![](examples/conditionals/suffix_unless.cr)
 
 ## Logical operators
-{id: logical-opeators}
+{id: logical-operators}
 
 ```
 &&

@@ -27,7 +27,7 @@ A more realistic example is a struct that has a method called `initialize` that 
 attributes of the struct. Each variable with a single `@` sign in-front of it is an attribute.
 
 We can initialize some of the attributes by values received from the user and some attributes by generating
-the value ourseves. e.g. by using a Time object, a Random value or generating or computing it in any other way.
+the value ourselves. e.g. by using a Time object, a Random value or generating or computing it in any other way.
 
 We can print the content of the Struct, but we have no way to access the attributes and no way to change them.
 Hence this struct is immutable.
@@ -77,7 +77,7 @@ We can use the `getter` macro to create getters to all of the attributes.
 ![](examples/struct/mutable_struct_with_setter.cr)
 ![](examples/struct/mutable_struct_with_setter.out)
 
-## Mutable Struct with propery macro
+## Mutable Struct with property macro
 {id: struct-mutable-with-property-macro}
 
 * [macros on Object](https://crystal-lang.org/api/Object.html)
@@ -92,7 +92,7 @@ We can use the `getter` macro to create getters to all of the attributes.
 ![](examples/struct/struct_optional.out)
 
 ## Struct with default value
-{id: struct-with-deefault}
+{id: struct-with-default}
 
 ![](examples/struct/with_default_value.cr)
 ![](examples/struct/with_default_value.out)
@@ -162,7 +162,7 @@ when you leave the function.
 ![](examples/struct/struct_from_json_extra_data.cr)
 ![](examples/struct/struct_from_json_extra_data.out)
 
-## Struct from JSON missing data (optionl fields)
+## Struct from JSON missing data (optional fields)
 {id: struct-from-json-missing-data}
 
 ![](examples/struct/struct_from_json_missing_data.cr)

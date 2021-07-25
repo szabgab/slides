@@ -62,7 +62,7 @@
 {i: sub}
 
 * If there is nothing to replace, nothing happens
-* Only replaces the first occurance of the string
+* Only replaces the first occurrence of the string
 
 ![](examples/strings/substitute.cr)
 ![](examples/strings/substitute.out)
@@ -75,7 +75,7 @@
 
 ![](examples/strings/empty_strings.cr)
 
-## Iterate over characters of a atring
+## Iterate over characters of a string
 {id: strings-iterator}
 {i: each_char}
 

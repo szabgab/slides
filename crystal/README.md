@@ -67,12 +67,12 @@ LinkedIn groups:
 
 Facebook
 Twitter
-Instagarm
+Instagram
 Reddit
 Stack Overflow
 What else?
 
-What learning resoureces are there?
+What learning resources are there?
 
 Crystal Course of Bruce A. Tate https://grox.io/language/crystal/course Nov 1, 2019
 

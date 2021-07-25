@@ -37,7 +37,7 @@
 
 ![](examples/arrays/empty_array.cr)
 
-## Count digitis
+## Count digits
 {id: array-count-digits}
 
 ![](examples/arrays/count_digits.cr)
@@ -78,8 +78,8 @@
 {i: filter}
 {i: grep}
 
-* the `reject!` with the exlamation mark will modify the array
-* the `reject` without the exlamation mark will only return the filtered array
+* the `reject!` with the exclamation mark will modify the array
+* the `reject` without the exclamation mark will only return the filtered array
 
 ![](examples/arrays/reject.cr)
 ![](examples/arrays/reject.out)
