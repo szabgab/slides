@@ -139,7 +139,8 @@ FLASK_APP=echo_get flask run
 ![](examples/k8s/Dockerfile_echo_get)
 
 ```
-docker build -t myflask:latesr -f Dockerfile_echo_get .
+docker build -t myflask:latest -f Dockerfile_echo_get .
+docker build -t myflask:1.00 -f Dockerfile_echo_get .
 ```
 
 and then we can run it: (tryflask is just an arbitrary name)
@@ -264,4 +265,11 @@ kubectl delete service hello-minikube
 ```
 
 ![](examples/k8s/service_echo_get.yml)
+
+Digital Ocean Docker registry
+
+```
+doctl registry create szabgab-demo
+```
+
 

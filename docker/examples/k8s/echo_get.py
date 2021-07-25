@@ -1,9 +1,12 @@
 from flask import Flask, request
 app = Flask(__name__)
 
+VERSION = "1.00"
+
 @app.route("/")
 def main():
-    return '''
+    return f'''
+     VERSION {VERSION}<br>
      <form action="/echo" method="GET">
          <input name="text">
          <input type="submit" value="Echo">
