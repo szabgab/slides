@@ -253,3 +253,18 @@ All the elements of an array "inherit" the type from the array
 * [Facebook group](https://www.facebook.com/groups/crystallang/)
 * [LinkedIn page](https://www.linkedin.com/company/crystal-language/)
 
+
+![](examples/restrict_type_in_code_for_struct_attribute_fixed.cr)
+
+![](examples/restrict_type_in_code.cr)
+
+![](examples/restrict_type_in_code_for_hash_fixed.cr)
+
+![](examples/restrict_type_in_code_for_struct_attribute_broken.cr)
+
+![](examples/type_inference_from_struct.cr)
+
+![](examples/restrict_type_in_code_for_hash_broken.cr)
+
+![](examples/code_executed.cr)
+

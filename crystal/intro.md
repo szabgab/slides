@@ -346,6 +346,11 @@ echo %ERROR_LEVEL%
 
 ![](examples/intro/gets.cr)
 
+## Read number from STDIN
+{id: read-numbr-from-stdin}
+
+![](examples/intro/gets_number.cr)
+
 ## Interactive environments
 {id: interactive-environments}
 
@@ -425,5 +430,4 @@ echo %ERROR_LEVEL%
 * Extra: ask the user for their age and the name of their country and tell them if they can legally drink alcohol.
 * See the [Legal drinking age](https://en.wikipedia.org/wiki/Legal_drinking_age) list.
 * Don't worry if this seems to be too difficult to solve in a nice way. We'll learn more tools to improve.
-
 
