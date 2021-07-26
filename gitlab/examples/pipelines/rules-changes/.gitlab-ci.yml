@@ -1,0 +1,8 @@
+# Run if either Dockerfile or requirements.txt file changed
+docker:
+  rules:
+    - changes:
+        - Dockerfile
+        - requirements.txt
+  script:
+    - echo docker

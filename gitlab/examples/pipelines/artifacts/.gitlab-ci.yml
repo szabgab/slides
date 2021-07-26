@@ -1,0 +1,20 @@
+stages:
+  - build
+  - test
+
+mybuild:
+  stage: build
+  script:
+    - mkdir build
+    - date > build/date.txt
+    - date > build/other.txt
+  artifacts:
+    # name: "$env:CI_JOB_STAGE-$env:CI_COMMIT_REF_NAME"
+    paths:
+      - build
+    expire_in: 1 day
+
+mytest:
+  stage: test
+  script:
+    - find .

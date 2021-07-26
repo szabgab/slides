@@ -241,3 +241,16 @@ image: registry.gitlab.com/ioanrogers/perl-builder:latest
 
 ![](examples/pipelines/python3-virtualenv/.gitlab-ci.yml)
 
+## Only run job if specific files changed
+{id: only-run-job-if-specific-files-changed}
+{i: rulse}
+{i: changes}
+
+![](examples/pipelines/rules-changes/.gitlab-ci.yml)
+
+## Artifacts and using them in subsequent jobs
+{id: artifacts-and-using-them-in-subsequent-jobs}
+{i: artifacts}
+
+![](examples/pipelines/artifacts/.gitlab-ci.yml)
+
