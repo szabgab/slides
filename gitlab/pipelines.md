@@ -291,6 +291,8 @@ So I am using Personal Access Tokens stored as a secret.
 ## GitLab API using Python
 {id: gitlab-api-using-python}
 
+* [python gitlab](https://python-gitlab.readthedocs.io/)
+
 ![](examples/pipelines/api-python/.gitlab-ci.yml)
 
 ![](examples/pipelines/api-python/code.py)
