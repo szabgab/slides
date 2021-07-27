@@ -1,0 +1,6 @@
+image: python:3.9
+
+always:
+  script:
+    - pip install python-gitlab
+    - python code.py
