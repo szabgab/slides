@@ -1,0 +1,20 @@
+image: python:3.9
+
+stages:
+ - build
+
+# Job name must be "pages"
+# Content must be in the "public" directory
+# It must be makred as artifact
+# Then access via https://szabgab.gitlab.io/gl-try-private/
+pages:
+  stage: build
+  script:
+    - mkdir public
+    - cp src/index.html public/
+    - date > public/date.html
+    - git rev-parse HEAD > public/sha.html
+  artifacts:
+    paths:
+      - public
+

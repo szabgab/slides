@@ -297,3 +297,10 @@ So I am using Personal Access Tokens stored as a secret.
 
 ![](examples/pipelines/api-python/code.py)
 
+## GitLab pages
+{id: gitlab-pages}
+
+![](examples/pipelines/gitlab-pages/.gitlab-ci.yml)
+![](examples/pipelines/gitlab-pages/src/index.html)
+
+
