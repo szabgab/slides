@@ -303,4 +303,13 @@ So I am using Personal Access Tokens stored as a secret.
 ![](examples/pipelines/gitlab-pages/.gitlab-ci.yml)
 ![](examples/pipelines/gitlab-pages/src/index.html)
 
+## Deployment
+{id: deployment}
+
+```
+mkdir ~/.ssh/deploy-demo-gitlab
+ssh-keygen -N '' -f ~/.ssh/deploy-demo-gitlab/gitlab_rsa
+ssh-keygen -N '' -f ~/.ssh/deploy-demo-gitlab/gitlab_rsa -p
+copy the content of gitlab_rsa_pub to ~/.ssh/authorized_keys on the server
+```
 
