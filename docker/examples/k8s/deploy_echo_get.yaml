@@ -1,20 +1,25 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: echo-get
+  name: echo-get-deployment
 spec:
   selector:
     matchLabels:
-      run: echo-get
-  replicas: 1
+      run: echo-get-pod
+  replicas: 2
   template:
     metadata:
       labels:
-        run: echo-get
+        run: echo-get-pod
     spec:
       containers:
         - name: echo-get-container
-          image: myflask:latest
-          imagePullPolicy: Never
+          #image: python:3.9
+          #command: ["tail", "-f", "/etc/passwd"]
+          #myflask:1.00
+          image: registry.digitalocean.com/szabgab-demo/myflask:1.00
+          imagePullPolicy: Always
+          #imagePullPolicy: Never
           ports:
             - containerPort: 5000
+
