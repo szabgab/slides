@@ -110,6 +110,7 @@
         "scapy.md",
         "turtle.md",
         "refactoring.md",
+        "opencv.md",
         "other.md"
     ]
 }
