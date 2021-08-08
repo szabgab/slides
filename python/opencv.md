@@ -32,7 +32,7 @@ pip install opencv-contrib-python
 * press any key to stop the display
 
 ## OpenCV - read image and fail
-{id: opencv-read-image}
+{id: opencv-read-image-fail}
 
 * File does not exist
 * File is not in the correct format.
