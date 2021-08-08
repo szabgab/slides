@@ -45,12 +45,23 @@ cv2.error: OpenCV(4.5.3) /tmp/pip-req-build-agffqapq/opencv/modules/highgui/src/
 {id: opencv-resize-image}
 {i: shape}
 {i: resize}
+{i: INTER_AREA}
 
 * To reduce the computation power needed to process the image (or video)
 
 ![](examples/opencv/resize_image.py)
 
 * Works on images, videos, live videos
+
+* Try to resiz the image to be larger than the original using either INTER_AREA or INTER_LINER or INTER_CUBIC.
+* Cubic is slower but better quality
+
+
+## OpenCV cropping
+{id: opencv-cropping-image}
+
+![](examples/opencv/cropping_image.py)
+
 
 ## OpenCV draw on new images
 {id: opencv-draw-on-new-image}
@@ -79,6 +90,25 @@ cv2.error: OpenCV(4.5.3) /tmp/pip-req-build-agffqapq/opencv/modules/highgui/src/
 * If we first blur the image and then run Canny on the blurred image, we get a lot less edges.
 
 Dilate an image using structuring elements
+
+
+## OpenCV Canny Dilate Erode
+{id: opencv-canny-dilate-erode}
+{i: canny}
+{i: dilate}
+{i: erode}
+
+![](examples/opencv/canny_dilated_erode.py)
+
+![](examples/opencv/cropping_image.py)
+
+
+## OpenCV  Translation of an Image
+{id: opencv-translation-of-image}
+
+* Shifting the image along the X or Y axes.
+
+![](examples/opencv/translate_image.py)
 
 
 ## Download movies
