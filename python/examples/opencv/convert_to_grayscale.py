@@ -7,7 +7,9 @@ if len(sys.argv) != 2:
 filename = sys.argv[1]
 
 img = cv.imread(filename)
-#print(type(img))  # numpy.ndarray
+print(img.shape)  # (1800, 2880, 3)
+img = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
+print(img.shape)  # (1800, 2880)
 
 cv.imshow('Image', img)
 cv.waitKey(0)
