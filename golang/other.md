@@ -1,6 +1,15 @@
 # Other slides
 {id: other-slides}
 
+## Print to STDERR or STDOUT
+{id: print-to-stderr-or-stdout}
+{i: STDERR}
+{i: STDOUT}
+{i: Stderr}
+{i: WriteString}
+{i: Fprintln}
+
+![](examples/stderr-stdout/stderr_stdout.go)
 
 ## Companies using Golang in Israel
 {id: companies-in-israel}
