@@ -1,4 +1,4 @@
-# External programs
+ll# External programs
 {id: external-programs}
 
 ## Find executable (which where)
@@ -25,3 +25,8 @@
 
 ![](examples/run-external-in-background/run_external_in_background.go)
 
+## Capture the outout of an external program
+{id: capture-output-of-external-program}
+
+![](examples/capture-external/capture_external.go)
+![](examples/external/external.go)
