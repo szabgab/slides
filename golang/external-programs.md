@@ -1,4 +1,4 @@
-ll# External programs
+# External programs
 {id: external-programs}
 
 ## Find executable (which where)
