@@ -78,6 +78,7 @@ cv2.error: OpenCV(4.5.3) /tmp/pip-req-build-agffqapq/opencv/modules/highgui/src/
 ## OpenCV blur image
 {id: opencv-blur-image}
 
+* [Gaussian blur](https://en.wikipedia.org/wiki/Gaussian_blur)
 * increasing the ksize the image will be more blurred
 
 ![](examples/opencv/blur_gaussian.py)
@@ -103,13 +104,43 @@ Dilate an image using structuring elements
 ![](examples/opencv/cropping_image.py)
 
 
-## OpenCV  Translation of an Image
-{id: opencv-translation-of-image}
+## OpenCV Move of an Image
+{id: opencv-move-of-image}
 
 * Shifting the image along the X or Y axes.
 
-![](examples/opencv/translate_image.py)
+![](examples/opencv/move_image.py)
 
+## OpenCV - Rotate Image
+{id: opencv-rotate-image}
+
+![](examples/opencv/rotate_image.py)
+
+* Enlarge (add empy parts around it) before rotating.
+
+## OpenCV - Flip Image
+{id: opencv-flip-image}
+
+![](examples/opencv/flip_image.py)
+
+## OpenCV - Contours
+{id: opencv-counturs}
+
+* Similar, but not the same as edges
+* [Contour line](https://en.wikipedia.org/wiki/Contour_line)
+
+* First convert the image to grey-scale
+* Then find the edges of the
+* contours is a python list of the coordinates of the contour of the image
+* hierarchies the hierarchical representation of the contours
+
+![](examples/opencv/contour_image.py)
+
+## Jupyter notebook
+{id: opencv-jupyter-notebook}
+
+examples/opencv/image_representation.ipynb
+examples/opencv/opencv.ipynb
 
 ## Download movies
 {id: opencv-download-movies}

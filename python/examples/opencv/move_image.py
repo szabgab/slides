@@ -10,13 +10,18 @@ filename = sys.argv[1]
 original = cv.imread(filename)
 cv.imshow('Original', original)
 
-def translate(img, x, y):
-    translation_matrix = np.float32([[1, 0, x], [0, 1, y]])
+def move(img, x, y):
+    move_matrix = np.float32([[1, 0, x], [0, 1, y]])
     dimensions = (img.shape[1], img.shape[0])
-    return cv.warpAffine(img, translation_matrix, dimensions)
+    return cv.warpAffine(img, move_matrix, dimensions)
 
-translated = translate(original, 100, 100)
+moved = move(original, 100, 100)
 
-cv.imshow('Translated', translated)
+# x < 0  = left
+# x > 0  = Right
+# y < 0  = Up
+# y > 0  = Down
+
+cv.imshow('Moved', moved)
 
 cv.waitKey(0)

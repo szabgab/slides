@@ -6,10 +6,10 @@ if len(sys.argv) != 2:
 
 filename = sys.argv[1]
 
-img = cv.imread(filename)
-print(img.shape)  # (1800, 2880, 3)
-img = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
-print(img.shape)  # (1800, 2880)
+original = cv.imread(filename)
+cv.imshow('Original', original)
 
-cv.imshow('Image', img)
+grey = cv.cvtColor(original, cv.COLOR_BGR2GRAY)
+
+cv.imshow('Grey', grey)
 cv.waitKey(0)

@@ -6,11 +6,9 @@ if len(sys.argv) != 2:
 
 filename = sys.argv[1]
 
-img = cv.imread(filename)
-print(img.shape)  # (1800, 2880, 3)
-img = cv.Canny(img, 125, 175) # providing two thresholds
+original = cv.imread(filename)
+cv.imshow('Origianl', original)
 
-print(img.shape)  # (1800, 2880)
-
-cv.imshow('Image', img)
+edges = cv.Canny(original, =125, 175) # providing two thresholds
+cv.imshow('Edges', edges)
 cv.waitKey(0)
