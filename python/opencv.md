@@ -82,11 +82,50 @@ cv2.error: OpenCV(4.5.3) /tmp/pip-req-build-agffqapq/opencv/modules/highgui/src/
 
 ## OpenCV blur image
 {id: opencv-blur-image}
+{i: blur}
 
-* [Gaussian blur](https://en.wikipedia.org/wiki/Gaussian_blur)
-* increasing the ksize the image will be more blurred
+* Average the intensity of all the pixels in the kernel (window)
+* Median - helps reduce the nois in the image
+* [Gaussian blur](https://en.wikipedia.org/wiki/Gaussian_blur) - less blurring than the average blurring, but more natural
+
+* Increasing the ksize (kernel size) and the image will be more blurred.
+
+![](examples/opencv/blur_average.py)
+
+
+## OpenCV Gaussian blur
+{id: opencv-gaussian-blur}
+{i: GaussianBlur}
 
 ![](examples/opencv/blur_gaussian.py)
+
+
+## OpenCV Median blur
+{id: opencv-median-blur}
+{i: medianBlur}
+
+* The kernel here is always square (for whatever reason) and thus we only pass a single number
+* Usually used with small kernel sizes (less than 7)
+
+![](examples/opencv/median_blur.py)
+
+
+## OpenCV Bilateral blur
+{od: opencv-bilateral-blur}
+{i: bilateralFilter}
+
+![](examples/opencv/bilateral_blur.py)
+
+
+## OpenCV blur part of an image
+{id: opencv-blur-part-of-an-image}
+
+![](examples/opencv/blur_average_part.py)
+
+```
+python blur_average_part.py  ~/Dropbox/Data/img/yello-flower.jpeg 35 400 400 300
+```
+
 
 ## OpenCV finding edges using Canny
 {id: opencv-finding-edges-using-canny}
