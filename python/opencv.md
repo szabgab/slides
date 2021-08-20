@@ -161,10 +161,22 @@ Dilate an image using structuring elements
 * Black and white images have two colors, black and white, [grayscale](https://en.wikipedia.org/wiki/Grayscale) images 
 * [GrayScale](https://web.stanford.edu/class/cs101/image-6-grayscale-adva.html)
 
+
+## OpenCV - BGR to RGB
+{id: opencv-bgr-to-rgb}
+{i: COLOR_BGR2RGB}
+{i: COLOR_RGB2BGR}
+
+![](examples/opencv/bgr_to_rgb.py)
+
 ## OpenCV - BGR to HSV
 {id: opencv-bgr-to-hsv}
 {i: COLOR_BGR2HSV}
 {i: COLOR_HSV2BGR}
+
+* The conversion is not loss-less.
+* Better use images that are 16-bit than images that are 8-bit (as my camera takes them)
+* Even with 16 bit there might be some changes as the conversions are floating point.
 
 ![](examples/opencv/bgr_to_hsv.py)
 
@@ -175,7 +187,21 @@ Dilate an image using structuring elements
 {i: COLOR_BGR2LAB}
 {i: COLOR_LAB2BGR}
 
+
 ![](examples/opencv/bgr_to_lab.py)
+
+
+## OpenCV - Split and merge color channels
+{id: opencv-split-and-merge-color-channels}
+{i: split}
+{i: merge}
+
+* The Channels: R, G, B
+* Creates 3 greyscale images (2D matrices)
+
+![](examples/opencv/color_channels.py)
+
+
 ## Jupyter notebook
 {id: opencv-jupyter-notebook}
 

@@ -6,8 +6,9 @@ if len(sys.argv) != 2:
 
 filename = sys.argv[1]
 
-img = cv.imread(filename)
-#print(type(img))  # numpy.ndarray
+original = cv.imread(filename)
+#print(type(original))  # numpy.ndarray
+print(original.shape)
 
-cv.imshow('Image', img)
+cv.imshow('Original', original)
 cv.waitKey(0)
