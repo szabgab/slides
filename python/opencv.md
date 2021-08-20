@@ -69,8 +69,13 @@ cv2.error: OpenCV(4.5.3) /tmp/pip-req-build-agffqapq/opencv/modules/highgui/src/
 ![](examples/opencv/draw_on_new_image.py)
 
 
-## OpenCV convert to greyscale
+## OpenCV convert BGR to greyscale and back to BGR
 {id: opencv-conevrt-image-to-greyscale}
+{i: COLOR_BGR2GRAY}
+{i: COLOR_GRAY2BGR}
+
+* [Grayscale](https://en.wikipedia.org/wiki/Grayscale) is the distribution of pixel intensities.
+* Converting from grey to BGR just replicates the same 2-dimensional matrix 3 times for Blue, Green, and Red
 
 ![](examples/opencv/convert_to_grayscale.py)
 
@@ -136,6 +141,41 @@ Dilate an image using structuring elements
 
 ![](examples/opencv/contour_image.py)
 
+## OpenCV - Draw contours of an image on a blank image
+{id: opencv-draw-contours}
+
+![](examples/opencv/draw_contours.py)
+
+## OpenCV - ColorSpaces
+{id: opencv-colorspaces}
+
+* [Color Spaces](https://en.wikipedia.org/wiki/Color_space)
+
+* BGR
+* RGB
+* HSV Hue Saturation Value [HSV and HSL](https://en.wikipedia.org/wiki/HSL_and_HSV) (aka. HSB Hue Saturation Brightness)
+  `converted = cv.cvtColor(original, cv.COLOR_BGR2HSV)`
+* HSL Hue Saturation Lightness
+* [LAB aka L*a*b aka CIELAB](https://en.wikipedia.org/wiki/CIELAB_color_space)
+* GreyScale - distribution of pixel intensities
+* Black and white images have two colors, black and white, [grayscale](https://en.wikipedia.org/wiki/Grayscale) images 
+* [GrayScale](https://web.stanford.edu/class/cs101/image-6-grayscale-adva.html)
+
+## OpenCV - BGR to HSV
+{id: opencv-bgr-to-hsv}
+{i: COLOR_BGR2HSV}
+{i: COLOR_HSV2BGR}
+
+![](examples/opencv/bgr_to_hsv.py)
+
+* Check the yello flower
+
+## OpenCV - BGR to LAB
+{id: opencv-bgr-to-lab}
+{i: COLOR_BGR2LAB}
+{i: COLOR_LAB2BGR}
+
+![](examples/opencv/bgr_to_lab.py)
 ## Jupyter notebook
 {id: opencv-jupyter-notebook}
 
