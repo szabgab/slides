@@ -111,7 +111,7 @@ cv2.error: OpenCV(4.5.3) /tmp/pip-req-build-agffqapq/opencv/modules/highgui/src/
 
 
 ## OpenCV Bilateral blur
-{od: opencv-bilateral-blur}
+{id: opencv-bilateral-blur}
 {i: bilateralFilter}
 
 ![](examples/opencv/bilateral_blur.py)
