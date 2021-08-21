@@ -57,11 +57,16 @@ cv2.error: OpenCV(4.5.3) /tmp/pip-req-build-agffqapq/opencv/modules/highgui/src/
 * Cubic is slower but better quality
 
 
-## OpenCV cropping
+## OpenCV cropping image
 {id: opencv-cropping-image}
 
 ![](examples/opencv/cropping_image.py)
 
+## OpenCV crop, resize and save image
+{id: opencv-crop-resize-save-image}
+{i: imwrite}
+
+![](examples/opencv/crop_resize_and_save_image.py)
 
 ## OpenCV draw on new images
 {id: opencv-draw-on-new-image}
@@ -193,7 +198,6 @@ Dilate an image using structuring elements
 * BGR
 * RGB
 * HSV Hue Saturation Value [HSV and HSL](https://en.wikipedia.org/wiki/HSL_and_HSV) (aka. HSB Hue Saturation Brightness)
-  `converted = cv.cvtColor(original, cv.COLOR_BGR2HSV)`
 * HSL Hue Saturation Lightness
 * [LAB aka L*a*b aka CIELAB](https://en.wikipedia.org/wiki/CIELAB_color_space)
 * GreyScale - distribution of pixel intensities
@@ -239,6 +243,29 @@ Dilate an image using structuring elements
 * Creates 3 greyscale images (2D matrices)
 
 ![](examples/opencv/color_channels.py)
+
+## OpenCV - bitwise operations
+{id: opencv-bitwise-operations}
+{i: bitwise_and}
+{i: bitwise_or}
+{i: bitwise_xor}
+{i: bitwise_not}
+
+![](examples/opencv/bitwise_operations.py)
+
+
+## OpenCV - masking
+{id: opencv-masking}
+
+* Using bitwise AND on the same image using a mask parameter as well
+
+![](examples/opencv/masking.py)
+
+## OpenCV - historgrams
+{id: opencv-histograms}
+
+* Visualize the distribution of pixel intensities in a picture
+
 
 
 ## Jupyter notebook

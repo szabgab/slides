@@ -7,12 +7,13 @@ if len(sys.argv) != 3:
 filename = sys.argv[1]
 scale = float(sys.argv[2])
 
-img = cv.imread(filename)
+original = cv.imread(filename)
+cv.imshow('Original', original)
 
-height, width, colors = img.shape
+height, width, colors = original.shape
 new_height = int(height * scale)
 new_width = int(width * scale)
 
-new_img = cv.resize(img, (new_width, new_height), interpolation=cv.INTER_AREA)
-cv.imshow('Image', new_img)
+resized = cv.resize(original, (new_width, new_height), interpolation=cv.INTER_AREA)
+cv.imshow('Resized', resized)
 cv.waitKey(0)
