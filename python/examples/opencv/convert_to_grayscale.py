@@ -11,16 +11,16 @@ original = cv.imread(filename)
 cv.imshow('Original', original)
 print(original.shape) # 3 dimension
 
-grey = cv.cvtColor(original, cv.COLOR_BGR2GRAY)
-cv.imshow('Grey', grey)
+gray = cv.cvtColor(original, cv.COLOR_BGR2GRAY)
+cv.imshow('gray', gray)
 
-back = cv.cvtColor(grey, cv.COLOR_GRAY2BGR)
+back = cv.cvtColor(gray, cv.COLOR_GRAY2BGR)
 cv.imshow('Back', back)
 
-print(grey.shape) # 2 dimensional
+print(gray.shape) # 2 dimensional
 print(back.shape) # 3 dimension
-print(np.array_equal(grey, back[:,:,0])) # True
-print(np.array_equal(grey, back[:,:,1])) # True
-print(np.array_equal(grey, back[:,:,2])) # True
+print(np.array_equal(gray, back[:,:,0])) # True
+print(np.array_equal(gray, back[:,:,1])) # True
+print(np.array_equal(gray, back[:,:,2])) # True
 
 cv.waitKey(0)

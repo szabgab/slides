@@ -68,10 +68,22 @@ cv2.error: OpenCV(4.5.3) /tmp/pip-req-build-agffqapq/opencv/modules/highgui/src/
 
 ![](examples/opencv/crop_resize_and_save_image.py)
 
-## OpenCV draw on new images
+## OpenCV - draw on new images
 {id: opencv-draw-on-new-image}
 
 ![](examples/opencv/draw_on_new_image.py)
+
+## OpenCV - draw rectangle
+{id: opencv-draw-rectangle}
+{i: rectangle}
+
+![](examples/opencv/draw_rectangle.py)
+
+## OpenCV - draw circle
+{id: opencv-draw-circle}
+{i: circle}
+
+![](examples/opencv/draw_circle.py)
 
 
 ## OpenCV convert BGR to greyscale and back to BGR
@@ -324,6 +336,28 @@ Dilate an image using structuring elements
 {i: calcHist}
 
 ![](examples/opencv/show_color_histogram.py)
+
+
+## OpenCV - Face detection
+{id: opencv-face-detection}
+{i: CascadeClassifier}
+{i: detectMultiScale}
+
+* Using a pretrained classifier provided by OpenCV
+* Haarcascade
+* Local binary pattern
+
+* get the `haarcascade_frontalface_default.xml` XML file from [GitHub]) and save it locally
+
+![](examples/opencv/face_detection.py)
+
+
+## OpenCV - Face recognition
+{id: opencv-face-recognition}
+
+* To be finished!
+
+![](examples/opencv/face_recognition.py)
 
 
 ## Jupyter notebook

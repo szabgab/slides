@@ -17,10 +17,6 @@ img[:] = 255,255,255          # pain the whole image to white
 
 #cv.line(img, (30, 70), (150, 90), color=(blue, green, red), thickness=3)
 
-#cv.rectangle(img, (100,100), (250, 250), color=(blue, green, red), thickness=2)
-#cv.rectangle(img, (100,100), (250, 250), color=(blue, green, red), thickness=cv.FILLED)  # cv.FILLED == -1
-#cv.circle(img, center=(200, 200), radius=50, color=(blue, green, red), thickness=3)
-
 #cv.putText(img, text="Hello World", org=(20, 100), fontFace=cv.FONT_HERSHEY_COMPLEX, fontScale=1.0, color=(blue, green, red), thickness=2)
 
 cv.imshow('Image', img)
