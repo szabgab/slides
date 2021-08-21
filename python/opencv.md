@@ -131,8 +131,40 @@ cv2.error: OpenCV(4.5.3) /tmp/pip-req-build-agffqapq/opencv/modules/highgui/src/
 python blur_average_part.py  ~/Dropbox/Data/img/yello-flower.jpeg 35 400 400 300
 ```
 
+## OpenCV - Thresholding
+{id: opencv-thresholding}
+{i: thresholding}
 
-## OpenCV finding edges using Canny
+
+* binarization of image - where pixels are either black or white
+* eg. we pick a number and any pixel less than that number becomes black and any pixel with more than that number becomes white
+
+## OpenCV - Simple Thresholding
+{id: opencv-simple-thresholding}
+{i: threshold}
+{i: THRESH_BINARY}
+{i: THRESH_BINARY_INV}
+
+![](examples/opencv/simple_thresholding.py)
+
+## OpenCV - Adaptive Thresholding
+{id: opencv-adaptive-thresholding}
+{i: adaptiveThreshold}
+{i: ADAPTIVE_THRESH_MEAN_C}
+{i: ADAPTIVE_THRESH_GAUSSIAN_C}
+
+![](examples/opencv/adaptive_thresholding.py)
+
+## OpenCV - Gradients and Edges
+{id: opencv-gradients-and-edges}
+
+* [Image Gradient](https://en.wikipedia.org/wiki/Image_gradient)
+* [Edge detection](https://en.wikipedia.org/wiki/Edge_detection)
+* Canny
+* Laplacing
+* Sobel
+
+## OpenCV - finding edges using Canny
 {id: opencv-finding-edges-using-canny}
 
 ![](examples/opencv/canny.py)
@@ -142,7 +174,25 @@ python blur_average_part.py  ~/Dropbox/Data/img/yello-flower.jpeg 35 400 400 300
 Dilate an image using structuring elements
 
 
-## OpenCV Canny Dilate Erode
+## OpenCV - Laplacian Gradients
+{id: opencv-laplacian-gradients}
+{i: Laplacian}
+
+* [Laplace operator](https://en.wikipedia.org/wiki/Laplace_operator)
+
+![](examples/opencv/laplacian_gradiants.py)
+
+## OpenCV - Sobel Gradients
+{id: opencv-sobel-gradients}
+{i: Sobel}
+
+* [Sobel operator](https://en.wikipedia.org/wiki/Sobel_operator)
+
+![](examples/opencv/sobel_gradiants.py)
+
+
+
+## OpenCV - Canny Dilate Erode
 {id: opencv-canny-dilate-erode}
 {i: canny}
 {i: dilate}
@@ -261,11 +311,19 @@ Dilate an image using structuring elements
 
 ![](examples/opencv/masking.py)
 
-## OpenCV - historgrams
-{id: opencv-histograms}
+## OpenCV - grayscale historgrams
+{id: opencv-grayscale-histograms}
+{i: calcHist}
 
 * Visualize the distribution of pixel intensities in a picture
 
+![](examples/opencv/show_grayscale_histogram.py)
+
+## OpenCV - color historgrams
+{id: opencv-color-histograms}
+{i: calcHist}
+
+![](examples/opencv/show_color_histogram.py)
 
 
 ## Jupyter notebook

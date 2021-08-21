@@ -17,7 +17,7 @@ cv.imshow('Blank', blank)
 grey = cv.cvtColor(original, cv.COLOR_BGR2GRAY)
 cv.imshow('Grey', grey)
 
-ret, threshold = cv.threshold(grey, 125, 255, cv.THRESH_BINARY)
+ret, threshold = cv.threshold(grey, thresh=125, maxval=255, type=cv.THRESH_BINARY)
 cv.imshow('Threshold', threshold)
 
 contours, hierarchies = cv.findContours(threshold, cv.RETR_LIST, cv.CHAIN_APPROX_SIMPLE)
