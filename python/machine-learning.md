@@ -143,6 +143,43 @@ Housing prices (size in feet => price in USD)
 
 * If one feature has numbers in the range of 0-2000 and the other feature has in the range of 0-5 then the inequality can make it much harder for the gradient descend to reach the minimum. It is better to have all the features in the same range of numbers. We can normalize the values by let's say dividing each number by the max value of that feature. We might prefer that each feature will be in the range of `-1 <= value <= 1`. This is not a hard rule though.
 
+* Mean normalization - replace `xi` with `x(i) - mu(i)` where mu(i) is the mean or average of that feature. This way the feature will have 0 mean.  Also: `(x(i)-mu(i))/std(i)` where mu(i) is the mean and `std(i)` is the standard deviation.
+
+## Gradient Descent - Learning Rate
+{id: ml-gradient-descent-learning-rate}
+
+* Draw the graph of the value of the cost function as a function of the number of iterations in gradient descent.
+* It should have a dowwards slope, but after a while its descend might slow down. (It is hard to tell how many iterations it will take.)
+* If the convergence is some small (e.g. less than 1/1000 or epsylon, but it might be difficult to choose this number)
+* If it is increasing than probably the learning rate is too big and it will never converge. (Fix is to use smaller learning rate.)
+
+## Features 
+{id: ml-features}
+
+* We can defined new features based on other features. (e.g. multiply two feature by each other to get the new feature)
+
+## Polynomial Regression
+{id: ml-polynomial-regression}
+
+* When the allow for a function like `a + bx + cx^2 + dx^4 ...` (given a single feature x)
+
+## Normal Equation
+{id: ml-normal-equation}
+
+* An analytical way to find the best function
+
+```
+numpy.linalg.pinv(x.transpose * x) * x.transpose * y
+```
+
+* Gradient Descend vs. Normal Equation
+* The latter migh work faster but only if the number of features is small. n = 10,000 might be the limit, depending on the computer power.
+
+* Noninvertibility
+* Redundant features: If two features are linearly dependent then the matrix is noninvertable (e.g. area in square mater and square feet)
+* Too many features (m <= n) - delete some features or use regularization
+
+
 
 ## Machine Learning Resources
 {id: ml-resources}
