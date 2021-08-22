@@ -15,13 +15,13 @@
 
 * We have a dataset that has the "right answer".
 
-* Housing prices: area (x) vs price (y), how to predict: linear line, a 2nd degree polynom, or an exact match on the known points?
-Supervised Learning - A Regression problem - Predict continuous valued output.
+* Housing prices: area (x) vs price (y), how to predict: linear line, a 2nd degree polynom, or an exact match on the known points? 
+* Supervised Learning - A Regression problem - Predict continuous valued output.
 
 * Brest Cancer:  Tumor size (x) vs being malignant or benign (y) - two distinct possibilities. Given a tumor (and its size) what is the probability that it is malignant?
-A Classification problem - Discrete valued output (yes/no)
-The Tumor size is a "feature". In other problems we might have many more features.
-e.g. We might know both the tumor size and the age of the patience.
+* A Classification problem - Discrete valued output (yes/no)
+* The Tumor size is a "feature". In other problems we might have many more features.
+* e.g. We might know both the tumor size and the age of the patience.
 
 * Infinite number of features?
 
@@ -121,12 +121,12 @@ Housing prices (size in feet => price in USD)
 * `A x I = I x A = A`
 
 * Matrix Inverse  `A x A(to the power of -1) = I` - Only square matrices have inverse, but not all square matrices have inverse. (e.g. the all 0s matrix does not have one)
-  The matricses that don't have an invers are somehow close to the all 0 matrix. They are also called "singular" or "degenerate" matrices.
+* The matricses that don't have an invers are somehow close to the all 0 matrix. They are also called "singular" or "degenerate" matrices.
 * Matrix Transpose - (1st row becomes the 1st column; 2nd row becomes 2nd column, etc....)
 
 
 ## Machine Learning - Multiple features
-{ml-multiple-features}
+{id: ml-multiple-features}
 
 * n - number of features (number of columns in the table)
 * last column might be called y (the result)
@@ -139,7 +139,7 @@ Housing prices (size in feet => price in USD)
 * Gradient descend for Multiple features
 
 ## Feature Scaling
-{ml-feature-scaling}
+{id: ml-feature-scaling}
 
 * If one feature has numbers in the range of 0-2000 and the other feature has in the range of 0-5 then the inequality can make it much harder for the gradient descend to reach the minimum. It is better to have all the features in the same range of numbers. We can normalize the values by let's say dividing each number by the max value of that feature. We might prefer that each feature will be in the range of `-1 <= value <= 1`. This is not a hard rule though.
 
