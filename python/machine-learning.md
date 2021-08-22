@@ -16,12 +16,12 @@
 * We have a dataset that has the "right answer".
 
 * Housing prices: area (x) vs price (y), how to predict: linear line, a 2nd degree polynom, or an exact match on the known points?
-  Supervised Learning - A Regression problem - Predict continuous valued output.
+Supervised Learning - A Regression problem - Predict continuous valued output.
 
 * Brest Cancer:  Tumor size (x) vs being malignant or benign (y) - two distinct possibilities. Given a tumor (and its size) what is the probability that it is malignant?
-  A Classification problem - Discrete valued output (yes/no)
-  The Tumor size is a "feature". In other problems we might have many more features.
-  e.g. We might know both the tumor size and the age of the patience.
+A Classification problem - Discrete valued output (yes/no)
+The Tumor size is a "feature". In other problems we might have many more features.
+e.g. We might know both the tumor size and the age of the patience.
 
 * Infinite number of features?
 
@@ -137,7 +137,12 @@ Housing prices (size in feet => price in USD)
 * Also called "Multivariate linear regression"
 
 * Gradient descend for Multiple features
-* Feature Scaling
+
+## Feature Scaling
+{ml-feature-scaling}
+
+* If one feature has numbers in the range of 0-2000 and the other feature has in the range of 0-5 then the inequality can make it much harder for the gradient descend to reach the minimum. It is better to have all the features in the same range of numbers. We can normalize the values by let's say dividing each number by the max value of that feature. We might prefer that each feature will be in the range of `-1 <= value <= 1`. This is not a hard rule though.
+
 
 ## Machine Learning Resources
 {id: ml-resources}
