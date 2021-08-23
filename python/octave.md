@@ -163,3 +163,194 @@ Diagonal Matrix
    0   0   0   1
 
 ```
+
+```
+>> A = [11 2; 3 4; 5 6]
+A =
+
+   11    2
+    3    4
+    5    6
+
+>> sz = size(A)   % returns a 2 element vector
+sz = 
+   3  2
+```
+
+```
+>> size(A, 1)
+>> size(A, 2)
+
+>> length(A)   % size of the longest dimension, usually applied only to vectors
+
+>> pwd             % print working directory
+>> cd /some/place  % change directory
+>> ls              % list content of the directory
+
+>> load flat_prices.dat        % space separated data file, creates a variable called flat_prices
+>> A = csvread("flat_prices.csv")
+
+>> who   % list existing variables
+>> whos  % list variables with types as well
+>> clear var  % will remove the variable var
+>> clear    % removes all the variables
+>> save hello.mat v;        % save the content of variable v to a Matlab file
+>> load hello.mat           % loads the data back to the v variable
+>> save hello.txt v -ascii  % save data in text (ASCII) format
+
+>> A(3,2)       % access element of a matrix (row 3 column 2)
+>> A(2,:)       % the second row
+>> A(:,2)       % second column
+>> A([1 3], :)  % rows 1 and 3
+
+% one can also assign to such slices
+>> A = [A, [100; 101; 102]];   % append another column to the right
+>> C = [A, B]   % attach B to the right of A (side by side)
+>> C = [A  B]   % the same
+>> C = [A; B]   % attach B under A
+>> A(:)   % flatten all the values of A into a vector
+```
+
+
+```
+A * B   % matrix multiplcation
+A .* B  % element-wise multiplication
+A .^ 2  % element-wise squaring
+1 ./ v  % create new matrix (or just vector?) with the 1/x for each element.
+log(v)  % element-wise log
+exp(v)  % element-wise exp
+abs(v)  % element-wise abs
+-v      % element-wise
+
+A'      % transpose
+val = max(v)         % returns the maximum value
+[val, ind] = max(v)  % return the maximum value and its index
+% for a matrix it will return column-wise max.
+
+v < 3    % element-wise returns 1 or 0 for each element (true or false)
+find(v < 3)  % return the indexes of the elements less than 3
+
+A = magic(3)  % returns a magic square  (not used for ml, but nice to use for demos)
+[rows, colums] = find(A >= 7)
+sum(v)
+prod(v)
+floor(v)
+ceil(v)
+max(A, [], 1)  % column-wise max
+
+sum(A, 1)   % sum each colum
+sum(A, 2)   % sum each row
+A . eye(9)  % element-wise product of the matrix with the identity matrix leaves only the values in the diagonal
+sum(sum(A . eye(9)))  % sums all the columnt and all the lines to give the total of the values of the main diagonal
+sum(sum(A . flipud(eye(9)))) % sum of elements in the other diagonal   (flip up down)
+pinv(A)    % the invers of A
+pinv(A) * A  % the identity matrix, up to a small rounding error
+
+```
+
+## Plotting data
+{id: octave-plotting-data}
+
+```
+plot(x, y)
+
+
+% plot one on the othe other
+plot(x, y1);
+hold on;
+plot(x, y2, 'r');  % r means red
+xlabel('time')
+ylabel('value')
+legend('sin', 'cos')
+title('my plot')
+print -dpng 'myPlot.png'  % save the image
+close  % close the current image
+
+
+% create two separate images
+figure(1); plot(x, y1);
+figure(2); plot(x, y2);
+
+% two separate graps in the same image
+subplot(1, 2, 1); % Divide plot to 1x2 grid and access the 1st element.
+plot(x, y1);
+subplot(1, 2, 2);
+plot(x, y2);
+axis([0.5 1 -1 1]) % set the range on the x and y axis
+clf;  % clear the figures
+
+
+
+imagesc(A)  % visualise the matrix
+imagesc(A), colorbar, colormap gray;
+imagesc(magic(15)), colorbar, colormap gray;
+
+309671170
+a=1, b=2, c=3; % comma-chaining (3 separate commands)
+```
+
+## Flow Control
+{id: octave-flow-control}
+
+```
+exit;    % exit the program
+quit;    % exit the program
+
+
+x = rand()
+if x < 0.1,
+    disp("very small");
+elseif x < 0.5,
+    disp("small");
+else,
+    disp("big");
+end;
+
+
+for i=1:10,
+   v(i) = 2^i;
+end;
+v
+
+indecies=1:10
+for i=indecies,
+   disp(i);
+end;
+
+i = 1;
+while i <= 5,
+   v(i) = 100
+   i = i+1;
+end;
+
+while true,
+   v(i) = 999;
+   i = i+1
+   if i == 6,
+      break;
+   end;
+end;
+
+
+% break and continue also work
+```
+
+
+Functions are the defined in their own .m files
+
+```
+function y = squareThisNumber(x)
+y = x^2;
+```
+
+Then, if we are in the same directory as the .m file we can just type in:
+
+```
+squareThisNumber(5)
+```
+
+Octave search path:
+
+```
+addpath("/path/to/dir")
+```
