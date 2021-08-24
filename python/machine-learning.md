@@ -83,12 +83,12 @@ Housing prices (size in feet => price in USD)
 * If the learning rate is too large, the algorithm might diverge.
 * If the learning rate is too small, it might take a lot of steps to converge.
 
-* Gradient descend can converge even if the learning rate is fixed because the closer we get to the local minimum, the derivative of the cost function is smaller (closer to 0) and thus the multiplication of the cost function by the derivative is going to be smaller and the step we take is going to be smaller.
+* Gradient descent can converge even if the learning rate is fixed because the closer we get to the local minimum, the derivative of the cost function is smaller (closer to 0) and thus the multiplication of the cost function by the derivative is going to be smaller and the step we take is going to be smaller.
 
 * The above cost function of Linear regression is a Convex function so there is only one local minimum which is also the global minimum.
 
 * "Batch" Gradient Descent - means that at every step we use all the training examples.
-* There are other versions of Gradient descend.
+* There are other versions of Gradient descent.
 
 ## Matrices
 {id: ml-matrices}
@@ -136,12 +136,12 @@ Housing prices (size in feet => price in USD)
 
 * Also called "Multivariate linear regression"
 
-* Gradient descend for Multiple features
+* Gradient descent for Multiple features
 
 ## Feature Scaling
 {id: ml-feature-scaling}
 
-* If one feature has numbers in the range of 0-2000 and the other feature has in the range of 0-5 then the inequality can make it much harder for the gradient descend to reach the minimum. It is better to have all the features in the same range of numbers. We can normalize the values by let's say dividing each number by the max value of that feature. We might prefer that each feature will be in the range of `-1 <= value <= 1`. This is not a hard rule though.
+* If one feature has numbers in the range of 0-2000 and the other feature has in the range of 0-5 then the inequality can make it much harder for the gradient descent to reach the minimum. It is better to have all the features in the same range of numbers. We can normalize the values by let's say dividing each number by the max value of that feature. We might prefer that each feature will be in the range of `-1 <= value <= 1`. This is not a hard rule though.
 
 * Mean normalization - replace `xi` with `x(i) - mu(i)` where mu(i) is the mean or average of that feature. This way the feature will have 0 mean.  Also: `(x(i)-mu(i))/std(i)` where mu(i) is the mean and `std(i)` is the standard deviation.
 
@@ -149,7 +149,7 @@ Housing prices (size in feet => price in USD)
 {id: ml-gradient-descent-learning-rate}
 
 * Draw the graph of the value of the cost function as a function of the number of iterations in gradient descent.
-* It should have a dowwards slope, but after a while its descend might slow down. (It is hard to tell how many iterations it will take.)
+* It should have a dowwards slope, but after a while its descent might slow down. (It is hard to tell how many iterations it will take.)
 * If the convergence is some small (e.g. less than 1/1000 or epsylon, but it might be difficult to choose this number)
 * If it is increasing than probably the learning rate is too big and it will never converge. (Fix is to use smaller learning rate.)
 
@@ -172,13 +172,89 @@ Housing prices (size in feet => price in USD)
 numpy.linalg.pinv(x.transpose * x) * x.transpose * y
 ```
 
-* Gradient Descend vs. Normal Equation
+* Gradient Descent vs. Normal Equation
 * The latter migh work faster but only if the number of features is small. n = 10,000 might be the limit, depending on the computer power.
 
 * Noninvertibility
 * Redundant features: If two features are linearly dependent then the matrix is noninvertable (e.g. area in square mater and square feet)
 * Too many features (m <= n) - delete some features or use regularization
 
+
+## Linear regression with sklearn
+{id: ml-linear-regression-with-}
+
+ml/basic_linear_regression.ipynb
+ml/use_basic_linear_expression.ipynb
+
+
+## Split data set
+{id: ml-split-data-set}
+{i: train_test_split}
+
+* In supervised learning you receive a dataset of N elements (N rows) in each row you have X features (column) + 1 or more results y (also column)
+* You can divide the rows into two parts: training and testing.
+* You use the training part to train your model and you use the testing part to check how good your model can predict other values.
+* `train_test_split()` of `scikit-learn` can do this.
+
+ml/basic_linear_regression_more_data.ipynb
+
+
+## Multiple features
+{id: ml-multiple-features}
+
+* Function of more than one X
+
+```
+multi_feature_linear_regression.ipynb
+```
+
+
+
+`food-truck.csv` from the first exercise of the Machine learning course of Andrew Ng
+`food-truck.ipynb`
+
+
+## Logistic regression (for classification)
+{ml: logistic-regression}
+
+* Email: spam or not spam
+* Tumor: malignant or benign
+* Online Transaction: Fraudlent or not?
+
+Binary classification:
+
+y can be either 0 or 1, 
+* 0 = Negative class
+* 1 = Positive class
+
+Multi-class classification problem when y can have more than 2 distinct values
+
+* Linear regression using a threshold value
+
+
+* [Sigmoid function / Logistic function](https://en.wikipedia.org/wiki/Sigmoid_function)
+* Decision boundary
+
+* The "Logistic regression cost function" based on the Sigmoid function is a non-convex function so Gradient Descent isn't guarnteed to reach global minimum. So intead of that we use some log() function.
+
+Optimization algorithms
+* Gradient descent
+* Conjugate gradient
+* BFGS
+* L-BFGS
+
+The other 3 algorthms have the advantage of not needing to pick a alfa (learning pace), and they are often faster than Gradient descent.
+However they are more complex to implement.
+
+
+basic_classification.ipynb
+
+## Classification
+{id: ml-classification}
+
+```
+tutorial_iris.ipynb
+```
 
 
 ## Machine Learning Resources
