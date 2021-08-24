@@ -200,7 +200,7 @@ ml/basic_linear_regression_more_data.ipynb
 
 
 ## Multiple features
-{id: ml-multiple-features}
+{id: ml-linear-regression-multiple-features}
 
 * Function of more than one X
 
@@ -215,7 +215,7 @@ multi_feature_linear_regression.ipynb
 
 
 ## Logistic regression (for classification)
-{ml: logistic-regression}
+{id: ml-logistic-regression}
 
 * Email: spam or not spam
 * Tumor: malignant or benign
