@@ -249,11 +249,11 @@ However they are more complex to implement.
 
 basic_classification.ipynb
 
-## Classification
-{id: ml-classification}
+## Multi-feature Classification (Iris)
+{id: ml-multi-feature-classification-iris}
 
 ```
-tutorial_iris.ipynb
+multi_feature_classification_iris.ipynb
 ```
 
 
