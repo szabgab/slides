@@ -256,9 +256,19 @@ basic_classification.ipynb
 multi_feature_classification_iris.ipynb
 ```
 
+## Kaggle
+{id: ml-kaggle}
+
+* [Kaggle](https://www.kaggle.com/) has lots of [datasets](https://www.kaggle.com/datasets)
+
+melbourne-housing-snapshot.ipynb
+
+usa-housing-listings.ipynb
+
 
 ## Machine Learning Resources
 {id: ml-resources}
 
 * [Machine Learning by Andrew Ng](https://www.coursera.org/learn/machine-learning/)
+
 

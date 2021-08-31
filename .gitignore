@@ -84,6 +84,7 @@ typescript/examples/*.js
 python/examples/pytest/coverage/htmlcov
 python/examples/pytest/coverage/.coverage
 python/examples/ml/linear.joblib
+python/examples/ml/kaggle/
 
 crystal/bin
 crystal/lib
