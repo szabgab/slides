@@ -1,6 +1,7 @@
 Module setup 42
   Function setup 1612427609.9726396
     Test one
+    Test one - 2nd part
   Function teardown 1612427609.9726396
   Function setup 1612427609.9741583
     Test two

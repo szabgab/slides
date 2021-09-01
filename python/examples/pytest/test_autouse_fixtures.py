@@ -20,7 +20,9 @@ def fix_function():
 def test_one():
     print("    Test one")
     assert True
+    print("    Test one - 2nd part")
 
 def test_two():
     print("    Test two")
     assert False
+    print("    Test two - 2nd part")
