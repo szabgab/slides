@@ -11,47 +11,67 @@ In the following pseudo-code example you can see that `cleanup` must be called b
 that still leaves the bad-code that raises exception avoiding the cleanup. That forces us to wrap the whole section in a try-block.
 
 ```
-start
-do
-do
-do
-do
-cleanup
+def sample():
+    start
+    do
+    do
+    do
+    do
+    cleanup
 ```
 
 What is we have some conditions for early termination?
 
 ```
-start
-do
-do
-if we are done early:
-   cleanup
-   early-end
-do
-do
-cleanup
+def sample():
+    start
+    do
+    do
+    if we are done early:
+        cleanup
+        return # early-end
+    do
+    do
+    cleanup
 ```
 
 What if we might have an exception in the code?
 
 ```
-start
-try:
-   do
-   do
-   if we are done early:
-      cleanup
-      early-end
-   do
-   bad-code    (raises exception)
-   do
-   cleanup
-finally:
-   cleanup
+def sample():
+    start
+    try:
+        do
+        do
+        if we are done early:
+            cleanup
+            return early-end
+        do
+        bad-code    (raises exception)
+        do
+        cleanup
+    finally:
+        cleanup
 ```
 
 It is a lot of unnecessary code duplication and we can easily forget to add it in every location where we early-end our code.
+
+## Using Context Manager
+{id: context-manager-how}
+
+```
+with cm_for_sample():
+    start
+    do
+    do
+    if we are done early:
+        return early-end
+    do
+    bad-code    (raises exception)
+    do
+```
+
+* `cleanup` happens automatically, it is defined inside the `cm_for_sample`
 
 ## Context Manager examples
 {id: context-manager-examples}
