@@ -198,6 +198,8 @@ ml/use_basic_linear_expression.ipynb
 
 ml/basic_linear_regression_more_data.ipynb
 
+* fix the seed by setting `random_state` to any fixed non-negative integer
+* `stratify` splitting for classification of inbalanced datasets
 
 ## Multiple features
 {id: ml-linear-regression-multiple-features}
@@ -272,3 +274,95 @@ usa-housing-listings.ipynb
 * [Machine Learning by Andrew Ng](https://www.coursera.org/learn/machine-learning/)
 
 
+## Regression Analyzis
+{id: ml-regression-analyzis}
+
+Ways to measure correctness of a model
+
+* [Coefficient of Determination](https://en.wikipedia.org/wiki/Coefficient_of_determination)
+* [Root Mean Square Error (RMSE)](https://en.wikipedia.org/wiki/Root-mean-square_deviation)
+* [Mean Absolute Error (MAE)](https://en.wikipedia.org/wiki/Mean_absolute_error)
+
+
+## Classification Analysis
+{id: ml-classification-analysis}
+
+* Accuracy
+* Precision
+* Recall
+* F1 Score
+
+## Unbiased evaluation of a model
+{id: ml-unbiased-evaluation-of-a-model}
+
+* Assesment
+* Validation
+
+We need fresh data that has not been seen by the model before.
+
+## Splitting data
+{id: ml-splitting-data}
+
+* Trainig set - for training, fitting the model, finding optimal coefficients.
+* Validation set - for evaluation, hyperparameter tuning, performance assesment.
+* Test set - unbiased evaluation of the model.
+
+Also to notice:
+
+* Underfitting
+* Overfitting
+
+## Model selection and validation
+{id: ml-model-selection-validation}
+
+* sckit-learn model_selection
+* Cross validation (e.g. K-fold validation)
+* Learning curves
+* Hyperparameter tuning
+
+
+## K-fold valiadtion
+{id: ml-k-fold-validation}
+
+* divide the data into k (5-10) subsets
+* do the training and testing on each subset
+* each tim use one fold as the test-set and all the other folds as the train set
+
+* KFold()
+* StratifiedKFold()
+* LeaveOneOut()
+
+## Learning Curves
+{id: ml-learning-curves}
+
+* The relation of data-set size in training and the score
+* Find the optimal training size for best score in a reasonable time/dataset size.
+
+## Hypermatameter tuning (optimization)
+{id: ml-hyperparameter-tuning}
+
+* to determine the best model parameters
+* GridSearchCV()
+* RandomizedSearchCV()
+* validation_curve()
+
+## The k-Nearest Neighbors (kNN)
+{id: ml-k-neerest-neighbours}
+
+* [The k-Nearest Neighbors (kNN)](https://realpython.com/knn-python/)
+
+
+* [Abalone](https://en.wikipedia.org/wiki/Abalone)
+
+![](examples/ml/abalone.py)
+
+
+## K-Means Clustering
+{id: ml-k-means-clustering}
+
+* [K-Means Clustering](https://realpython.com/k-means-clustering-python/)
+
+## Boston housing prices
+{id: boston-housing-prices}
+
+![](examples/ml/boston.py)
