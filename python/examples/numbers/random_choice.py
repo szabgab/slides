@@ -1,6 +1,6 @@
 import random
 
-letter = "abcdefghijklmno"
+letters = "abcdefghijklmno"
 print(random.choice(letters))     # pick one of the letters
 
 fruits = ["Apple", "Banana", "Peach", "Orange", "Durian", "Papaya"]
