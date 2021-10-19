@@ -1,15 +1,19 @@
 import random
 
-hidden = random.randrange(1, 201)
+UPPER_LIMIT = 200
+
+hidden = random.randrange(1, UPPER_LIMIT + 1)
 debug = False
 move = False
 while True:
     if debug:
-        print("Debug: ", hidden)
+        print(f"Debug: {hidden}")
+        print(f"Move: {move}")
 
     if move:
         mv = random.randrange(-2, 3)
-        hidden = hidden + mv
+        if 1 <= hidden + mv <= UPPER_LIMIT:
+            hidden = hidden + mv
 
     user_input = input("Please enter your guess [x|s|d|m]: ")
     print(user_input)
