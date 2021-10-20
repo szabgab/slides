@@ -306,6 +306,8 @@ Hello world!
 
 ![](examples/strings/rot13.py)
 
+Of course instead of implementing all the calculations by yourself you can also rely on a module that comes with Python:
+
 * [codecs library](https://docs.python.org/library/codecs.html)
 
 ![](examples/strings/rot13_codecs.py)
