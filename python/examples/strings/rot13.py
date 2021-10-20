@@ -1,5 +1,4 @@
 import sys
-import codecs
 
 if len(sys.argv) != 2:
     exit(f"Usage: {sys.argv[0]} TEXT")
