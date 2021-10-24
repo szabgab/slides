@@ -410,6 +410,10 @@ to a function.
 
 ![](examples/functions/stats.py)
 
+## Solution: Pascal triangle
+{id: solution-pascal-triangle}
+
+![](examples/functions/pascal_triangle.py)
 
 ## Solution: recursive
 {id: solution-recursive}
