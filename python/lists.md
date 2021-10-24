@@ -88,6 +88,13 @@
 {i: copy}
 {i: deepcopy}
 
+[copy](https://docs.python.org/library/copy.html)
+
+```
+copy.copy()     # shallow copy
+copy.deepcopy() # deep copy
+```
+
 ![](examples/lists/shallow_copy.py)
 
 
