@@ -1,4 +1,4 @@
-# Regular Expressions - part 2
+ Regular Expressions - part 2
 {id: regex-2}
 
 
@@ -43,7 +43,10 @@ Input: "--"
 {i: *}
 
 
-Quantifiers apply to the thing in front of them
+Quantifiers apply to the thing immediately to the left of them.
+
+In this case it is the single character `x` to the left of the quantifier, but later we'll see it can apply to a character-class or to a sub-expression enclosed in parentheses as well.
+Whatever is located immediately to the left of the quantifier.
 
 
 
