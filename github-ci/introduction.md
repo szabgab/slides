@@ -38,7 +38,7 @@
 ## CD - Continuous Delivery (or Deployment)
 {id: cd}
 
-* After tests are successful, automatially deploy the code.
+* After tests are successful, automatically deploy the code.
 
 ## Cloud-based CI system
 {id: cloud-based-ci}
