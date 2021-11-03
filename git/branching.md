@@ -161,25 +161,35 @@ $ git log fetureX --not master
 {id: git-tag}
 {i: tag}
 
+* You release a new version of your software.
+* What if later you'll need to come back to the same commit and make some changes?
+* How to remember which SHA-1 was this release?
+
 ```
 $ git tag v1.10
 $ git tag -a v1.10 -m "commit message"
 ```
 
-
-Marks a specific commit. The former is a "light weight tag", the latter is an "annotated tag".
-
-
-
-
-The light weight tag is just like a branch that does not move. A pointer to a commit.
+* A tag marks a specific commit. The former is a "light weight tag", the latter is an "annotated tag".
+* The light weight tag is just like a branch that does not move. A pointer to a commit.
+* An annotated tag is a full object with owner and message (annotation).
+* `git push --follow-tags` only pushes annotated tags
 
 
+## Remove tags
+{id: remove-tags}
 
+Locally:
 
-An annotated tag is a full object.
+```
+git tag -d TAGNAME
+```
 
+Remotely:
 
+```
+git push --delete origin TAGNAME
+```
 
 
 ## Exercise
@@ -199,6 +209,10 @@ An annotated tag is a full object.
 * delete B
 
 
+## Exercises Session 3
+{id: exercises-3}
 
-
+* Create a tag on the current commit using `git tag -a v1 -m 'this is v1'`
+* Use `gitk --all` to see it.
+* Use `git log` to see it.
 

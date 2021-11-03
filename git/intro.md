@@ -6,6 +6,13 @@
 
 No version control system can eliminate the need for developers to talk to each other!
 
+## Why use a version control?
+{id: why-use-version-control}
+
+* Fearless experimentations
+* Fearless deletition
+* Easier (smoother) collaboration
+
 
 
 ## Version control Systems (VCS)
@@ -86,8 +93,6 @@ It seems to be far the most popular DVCS.
 * ...
 
 
-
-
 ## Git Overview
 {id: git-overview}
 
@@ -96,20 +101,19 @@ It seems to be far the most popular DVCS.
 * Integrity using SHA-1 hashes of the files. (40 character string of hexadecimal characters called "object name" or "SHA-1 id".)
 
 
-
-## Installation
+## Git Installation
 {id: installation}
 
-* On UNIX/Linux you use your package manger (apt-get, yum, etc...) or install from [git-scm](http://git-scm.com/download).
-* On Mac: [git-scm](https://git-scm.com/) or use [Homebrew](https://brew.sh/) to install git.
-* On Microsoft Windows install Git from [git-scm](https://git-scm.com/).
+On **Linux** you use your package manger (apt-get, yum, etc...) or install from [git-scm](https://git-scm.com/)
 
+* `yum install git-core`
+* `apt-get install git-core`
 
+On **Microsoft Windows** install Git from [git-scm](https://git-scm.com/).
 
-* yum install git-core
-* apt-get install git-core
+On **Mac OSX** use [Homebrew](https://brew.sh/) or [git-scm](https://git-scm.com/).
 
-
+* `brew install git`
 
 
 ## Command line
@@ -118,14 +122,11 @@ It seems to be far the most popular DVCS.
 
 Linux: Any terminal or console
 
-
 Windows:
-
 
 * Start/cmd  - set the properties!
 * CLI: All Programs/Git/Git Bash
 * GUI: All Programs/Git/Git GUI
-
 
 
 ## Why Command line?
@@ -136,15 +137,18 @@ Windows:
 * Most of the people who can provide you help understand the command line, but specific GUI tools.
 
 
-
-
 ## Which version do you have?
 {id: which-version}
 {i: --version}
 
+
+Windows: use the Git Bash
+
 ```
 $ git --version
 git version 2.17.0
+git version 2.20.1
+git version 2.30.2
 ```
 
 
@@ -152,44 +156,45 @@ git version 2.17.0
 {id: git-configure}
 {i: config}
 
-There are three levels of configuration:
+**There are three levels of configuration:**
 
-
-* System   (--system)
-* User     (--global)
-* Project  (--local)
-
+* System (--system)
+* User (--global)
+* Project (--local)
 
 ```
 $ git config ...
 ```
 
-On Unix
 
-
+**On Unix**
 * /etc/gitconfig
-* $HOME/.gitconfig  (/home/foobar/.gitconfig)
+* $HOME/.gitconfig (/home/foobar/.gitconfig)
 * .git/config
 
-
-
-On Windows
-
-
+**On Windows**
 * "c:\Program Files (x86)\Git\etc\gitconfig"
 * %HOMEPATH%\.gitconfig %USERPROFILE%\.gitconfig (C:\Users\Foobar\.gitconfig)
 * .git/config
 
-
-
 To access them use
 
+```
+--system
+--global
+--local
+```
 
-* --system
-* --global
-* --local
+**Samples:**
 
+```
+$ git config --global --add user.name "Foo Bar"
+$ git config --global --add user.email foo@bar.com
 
+$ git config --list
+$ git config --list --global
+$ git config user.name      # to see specific value
+```
 
 ## Configure Git - personalize
 {id: git-configure-personal}
@@ -204,8 +209,18 @@ $ git config --list --global
 $ git config user.name      # to see specific value
 ```
 
+## Configure and Privacy
+{id: privacy}
 
-## More configuration
+* Your name
+* Your e-mail address
+* `youruser+github@gmail.com`
+
+* [eBook](https://leanpub.com/collab-dev-git)
+
+
+
+## More configuration - alias
 {id: more-git-configuration}
 {i: alias}
 
@@ -222,6 +237,8 @@ $ git config --global --add merge.tool vimdiff
 $ git config --global --add alias.unstage "reset HEAD"
 
 $ git config --global --unset core.editor
+
+$ git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 ```
 
 
@@ -248,8 +265,8 @@ See also the [docs on git-scm](http://git-scm.com/docs), including
 ## Exercises
 {id: exercise-intro}
 
-* Check if you already have Git installed (open command line, check the version).
-* Install Git.
+* Check if you already have Git installed (open command line, check the version) On MS Windows start the git-bash.
+* If you don't have it installed yet, then install git.
 * Open the command line.
 * Check which version do you have?
 * List the default configuration.

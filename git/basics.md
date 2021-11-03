@@ -1,37 +1,39 @@
 # Git Basics
 {id: git-basics}
 
-## Creating a local repository
+## 4 Ways to get started
+{id: 4-ways-to-get-started}
+
+* [Create empty local repository](git-init.html)
+* Create repository in local directory where we already have files of the project
+* Clone remote repository
+* [Fork and then clone remote repository of someone else](using-remote-repository.html)
+
+
+
+## Creating a local empty repository
 {id: git-init}
 {i: init}
 {i: status}
 {i: st}
 
-* $ mkdir app
-* $ cd app
-* $ git init
-* $ git status
-* $ git st
-* This created a directory called .git and put some files there
-
-
-
 ```
 $ mkdir app
 $ cd app
 $ git init
-Initialized empty Git repository in C:/work/app/.git/
+Initialized empty Git repository in /c/work/app/.git/
 ```
+**This will create a directory called .git and put some files there.**
+
 
 ```
 $ git status
-# On branch master
-#
-# Initial commit
-#
+On branch master
+
+Initial commit
+
 nothing to commit (create/copy files and use "git add" to track)
 ```
-
 
 ## Create first file
 {id: git-create-file}
@@ -39,12 +41,21 @@ nothing to commit (create/copy files and use "git add" to track)
 
 * Create README.txt with one line of text.
 * Check the status of the working directory.
-* $ git status
-
 
 ```
 $ git status
+
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+      README.txt
+nothing added to commit but untracked files present (use "git add" to track)
 ```
+
 ![](examples/out/status_01.txt)
 
 
@@ -57,6 +68,7 @@ Each file can be either
 * **untracked**
 * **tracked**
 
+Tracked files can be
 
 * **unmodified**
 * **modified**
@@ -75,10 +87,7 @@ Each file can be either
 * $ git add README.txt
 * $ git status
 
-
-
-Add the files to the `index` (or staging area, or cache).
-
+**Add the files to the index (or staging area, or cache).**
 
 
 ```
@@ -197,7 +206,7 @@ $ git commit -m "update README"
 ## Untracked and Modified
 {id: git-untracked-modified}
 
-Create another file called setup.pl with a single line and also change the README file.
+**Create another file called setup.pl with a single line and also change the README file.**
 
 
 ```
@@ -397,9 +406,12 @@ See also the unstage alias we created earlier.
 
 ## Drop local changes (restore to HEAD or to index)
 {id: drop-local-changes}
+{i: restore}
+{i: checkout}
 
 ```
-$ git checkout config.pl
+$ git restore config.pl
+$ git checkout config.pl    # old school :-)
 $ git status
 ```
 
@@ -443,11 +455,13 @@ $ git commit -m"start writing the setup script"
 {i: .gitignore}
 
 
+{aside}
 The `.gitignore` file in the root of the repository
 can describe sets of files that don't need tracking.
 This will make sure you don't add the files by mistake
 (e.g. while using git add .) and they won't show up in the
 output of the `git status` command.
+{/aside}
 
 
 ```
@@ -462,6 +476,16 @@ config.ini
 Add this file to the repository and commit it.
 This will ensure that no one in the project will have the extra files problem.
 
+## .git/info/exclude
+{id: git-info-exclude}
+{i: exclude}
+
+You can have a file called `.git/info/exclude` with similar format to the `.gitignore` file where you would list
+the files that should be ignored only on your computer. I don't think it is a good practice to use this.
+
+* Others might have the same files that need to be excluded.
+* You might move to a different computer and need to set that up manually.
+
 
 
 
@@ -470,9 +494,8 @@ This will ensure that no one in the project will have the extra files problem.
 
 
 * Git won't track an empty directory, but sometimes you would like to have one in your repository so your code can assume the directory is there (e.g. for temporary files or for caching).
-* Not a real feature but a convention is to add an emty file called **.gitkeep** to the directory you'd like to keep and add that file to git. This will make git track the directory.
-* If you also want to ignore all the content of that directory you can use .gitignore. In that case you might need to use the force to add the file to git: **git add --force some/directory/.gitkeep**
-
+* Not a real feature but a convention is to add an emty file called `.gitkeep` to the directory you'd like to keep and add that file to git. This will make git track the directory.
+* If you also want to ignore all the content of that directory you can use `.gitignore`. In that case you might need to use the force to add the file to git: `git add --force some/directory/.gitkeep`
 
 
 ## add and commit in one step
@@ -486,10 +509,11 @@ $ git commit -a -m "some message"
 ```
 
 
-
 ## Move a file
 {id: move-a-file}
 {i: mv}
+{i: move}
+{i: rename}
 
 ```
 $ mv config.pl app.pl
@@ -509,9 +533,6 @@ $ git commit -m "rename"
 
 
 Try also moving a file and changing its content a bit.
-
-
-
 
 
 ## Remove a file
@@ -535,8 +556,6 @@ $ git commit -m "remove"
 Adding files and committing changes to Git is cheap. What happens if you made some great work during the day and,
 at 5 pm when you were tired you made some bad changes. How can you go back to the state that was 5 minutes ago?
 
-
-
 * Commit after adding a new function.
 * Commit after writing a new test case.
 * Commit after making any small change.
@@ -554,11 +573,19 @@ $ git log
 $ git log -p
 $ git log --stat --summary
 $ git log --graph
+```
 
+## gitk
+{id: gitk}
+
+```
 $ gitk --all
 ```
 
+## blame
+{id: git-blame}
 
+* git blame [filename]
 
 ## Exercise
 {id: exercise-basic}
@@ -571,7 +598,3 @@ $ gitk --all
 * Make some changes. Check what are the changes. Commit some of them.
 * Go over the previous chapter and execute all the commands we went through.
 * If there is any problem. Ask for help!
-
-
-
-
