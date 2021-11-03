@@ -1,6 +1,14 @@
 # Github
 {id: github}
 
+
+## Fork repository
+{id: fork-repository}
+
+* Visit [particpants](https://github.com/collab-dev/participants)
+* fork
+
+
 ## Forking workflow
 {id: forking-workflow}
 
@@ -26,9 +34,15 @@
 Let's see [GithuGithubb](https://github.com/)
 
 
-
 ```
 $ git clone git://github.com/eilara/camel-defense.git
+```
+
+```
+git remote -v
+
+origin	https://github.com/cm-demo/participants (fetch)
+origin	https://github.com/cm-demo/participants (push)
 ```
 
 
@@ -80,7 +94,7 @@ $ git merge upstream/master
 ## Exercise
 {id: exercise-github}
 
-* Clone [this repository](http://github.com/szabgab/git-201303005) from Github and check its history 
+* Clone [this repository](http://github.com/szabgab/git-201303005) from Github and check its history
 * Create an account on Github
 * Fork a repository and clone it.
 * Make some changes: create a file your_git_user.txt
@@ -93,6 +107,83 @@ $ git merge upstream/master
 * Fetch and merge their changes.
 
 
+## Make some local changes
+{id: make-some-local-changes}
+
+```
+git checkout -b feature
+   edit participants.json file
+git add participants.json
+git commit -m "some change"
+```
+
+## push out local changes to branch
+{id: pus-out-local-changes-to-branch}
+
+```
+git push
+
+fatal: The current branch feature has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin feature
+```
+
+```
+$  git push -u origin feature
+
+Total 0 (delta 0), reused 0 (delta 0)
+To github.com:collab-dev/participants/
+ * [new branch]      feature -> feature
+Branch 'feature' set up to track remote branch 'feature' from 'origin'.
+```
+
+## Send Pull-Request
+{id: send-pull-request}
+
+* Visit [particpants](https://github.com/collab-dev/participants)
+
+## Make more changes and update the pull-request
+{id: update-pull-request}
+
+```
+git add .
+git commit
+git push
+```
+
+* Visit [particpants](https://github.com/collab-dev/participants)
+
+
+## Follow the changes in the original repository
+{id: follow-changes}
+
+
+```
+git remote add upstream https://github.com/collab-dev/participants.git
+git checkout master
+git pull upstream master
+git push
+```
+
+## Remove local branch
+{id: remove-local-branch}
+
+```
+git checkout maste
+git branch -d feature
+```
+
+## Remove remote branch
+{id: remove-remote-branch}
+
+
+```
+$  git push origin :feature
+
+To github.com:collab-dev/participants/
+ - [deleted]         feature
+```
 
 
 

@@ -50,7 +50,12 @@ $ stash --include-untracked
 $ stash -u
 ```
 
+## Stash selected files
+{id: stash-selected-files}
 
+```
+git stash push filename
+```
 
 ## How to stash only part of the files
 {id: stash-some-files}
@@ -78,6 +83,24 @@ Remove everything from stash
 ```
 $ git stash clear
 ```
+
+## Exercises Session 8
+{id: exercises-8}
+
+* Make some local changes
+* Create a new file
+* Stash them away using `git stash -u`
+* Observe that the working directory is clean and back to the previous state
+* Observe the content of the stash.
+
+* Make some other changes
+* Commit them.
+
+* `git stash pop`
+* See the previous partial changes are in the working directory. Including the new file.
+* Commit the changes.
+
+
 
 
 ## Undo last commit
@@ -120,26 +143,50 @@ $ git reflog    # to list the history of HEAD
 * Find an old commit where it was still working.
 * Binary search the commit since then to locate the breaking change.
 
-
-
-
 Preferably write an automated test that can verify the feature. Put it in a separate test file in the workspace.
 
 
+```
+git bisect start
 
+# test fails
+git bisect bad
+
+git checkout old-sha
+# test passes
+git bisect good
+
+# test passes / fails
+git bisect good / bad
+```
+
+## Exercises Session 9
+{id: exercises-9}
+
+* Create a file called 'add.sh' with the following content:
+
+![](examples/git/add.sh)
+
+* Make it executable.
+* Test it: `./add 23 19` should print 42
+* Commit it.
+
+* Create a file called NUMBER and put a 1 in it.
+* Commit it.
+* Then create 5 more commit changing the file to some other number. (This might help)
 
 ```
-$ git checkout master
-$ git bisect start
-$ git bisect bad
-$ git checkout sha1-that-is-known-to-be-good
-$ git bisect good
-...
+echo 7 > NUMBER
+git commit -am "7"
 ```
 
+* Then change the `add.sh` file replacing the + by a -.
+* Create another 5 commits chaning the NUMBER file.
 
-```
-```
+* No check if the `add.sh` script works
+* `./add.sh 23 19` will now prin 4 instead of 42.
+
+* Using bisect find the commit that broke it.
 
 
 
