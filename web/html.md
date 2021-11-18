@@ -36,8 +36,33 @@ In Chrome show the page as if it was on a device.
 
 
 
+## HTML elements
+{id: html-elements}
+
+`<p> </p>`
+
+* p
+* h1, h2, ... h6
+* div
+* ul, ol, li
+* table - tr, th, td
+* span
+
+* html - head, body
+* hed - title
+
+Attributes:
+
+* a href
+* img src
+
+* id
+* class
+
+
 ## Bare HTML
 {id: bare-html}
+
 ![](examples/html/bare_html.html)
 
 
