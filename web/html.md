@@ -43,9 +43,10 @@ In Chrome show the page as if it was on a device.
 
 * p
 * h1, h2, ... h6
-* div
 * ul, ol, li
 * table - tr, th, td
+
+* div
 * span
 
 * html - head, body
@@ -58,6 +59,25 @@ Attributes:
 
 * id
 * class
+
+## HTML form elements
+{id: html-form-elements}
+
+```
+<form method="POST" action="/some/path">
+<input type="radio" name="grade">10</input>
+<input type="text" name="firstname">
+
+<textarea name="text"></textarea>
+<select name="color">
+  <option></option>
+  <option>Red</option>
+  <option>Green</option>
+  <option>Blue</option>
+</select>
+<input type="submit" value="Send">
+</form>
+```
 
 
 ## Bare HTML
