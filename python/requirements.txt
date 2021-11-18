@@ -33,3 +33,5 @@ Biopython
 aiohttp
 aiofiles
 aiodns
+
+h5py
