@@ -12,4 +12,4 @@ for num in [2, 3, 12]:
         break
     print(num)
 else:
-    print("in else - finished without calling break")
+    print("in else - finished after calling break")

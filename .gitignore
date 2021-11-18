@@ -22,6 +22,7 @@ sample.db
 *.dll
 *.exe
 *.xlsx
+*.h5
 
 /python/examples/package/*/dist/
 /python/examples/package/*/mymath.egg-info/

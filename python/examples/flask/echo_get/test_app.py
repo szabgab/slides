@@ -9,7 +9,7 @@ def test_app():
 
     rv = web.get('/echo')
     assert rv.status == '200 OK'
-    assert b"You said: " == rv.data
+    assert b"Nothing to say?" == rv.data
 
     rv = web.get('/echo?text=foo+bar')
     assert rv.status == '200 OK'

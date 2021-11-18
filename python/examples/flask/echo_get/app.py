@@ -12,4 +12,7 @@ def main():
 
 @app.route("/echo")
 def echo():
-    return "You said: " + request.args.get('text', '')
+    user_text = request.args.get('text', '')
+    if user_text:
+        return "You said: " + user_text
+    return "Nothing to say?"

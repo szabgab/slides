@@ -24,6 +24,10 @@ It is very easy to get started with Flask both if you'd like to build a web-site
 ## Python Flask installation
 {id: python-flask-installation}
 
+{aside}
+There is nothing special. You install flask as you'd install any other Python package. Using some kind of virtual envrionment is recommended here too.
+{/aside}
+
 ```
 virtualenv venv -p python3
 source venv/bin/activate
