@@ -241,7 +241,7 @@ curl http://localhost:5000/echo?text=Sanch+Panza
 
 {aside}
 There is also a dictionary called "request.form" that is get filled by data submitted using a POST request. This too is a plain Python dictionary.
-In this case too we could use the "request.form.get('field', '')" call but instead of that we used the "in" operator and then the regular dicstionary look-up.
+In this case too we can use either the "request.form.get('field', '')" call we can use the "in" operator to check if the key is in the dictionary and then the regular dicstionary look-up.
 {/aside}
 
 ![](examples/flask/echo_post/app.py)
@@ -303,6 +303,16 @@ In one of them the form will be submitted using GET in the other one it will be 
 
 ## Flask Logging
 {id: flask-logging}
+
+{aside}
+Logging is a very usefule tool to avoid the need for manual debugging. It also can provide insight as to what happened
+in a session on the production server. During development you'll be able to see the messages on the terminal where Flask runs.
+On the production server it can be saved in a log file for later review.
+
+There are several pre-defined levels of logging. You can use the specific functions to indicate the importance of each log message.
+
+You can set the level of logging inside the code or in an external configuration file.
+{/aside}
 
 ![](examples/flask/log/app.py)
 

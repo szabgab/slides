@@ -7,4 +7,5 @@ def main():
 
 @app.route("/echo", methods=['POST'])
 def echo():
-    return "You said: " + request.form.get('text', '')
+    user_text = request.form.get('text', '')
+    return "You said: " + user_text
