@@ -114,6 +114,7 @@
         "octave.md",
         "opencv.md",
         "overview.md",
+        "serialization.md",
         "other.md"
     ]
 }
