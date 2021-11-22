@@ -33,6 +33,7 @@ def run_process(command, timeout):
     return exit_code, out, err
 
 exit_code, out, err = run_process([sys.executable, 'process.py', '4', '0'], 20)
+#exit_code, out, err = run_process(['docker-compose', 'up', '-d'], 20)
 
 print("-----")
 print(f"exit_code: {exit_code}")
