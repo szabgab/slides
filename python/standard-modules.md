@@ -254,18 +254,48 @@ or you could use the `glob.glob("*.py")` function to have a subset of files.
 {i: call}
 {i: execute}
 
-Run external command and capture the output
+{aside}
+The process.py is s simple script we are going to use to demonstrate how an external program can be executed from within Python.
+It is a Python program, but you could do the exact same thing with any command-line application written in any language.
+We use this Python script as an example because we know you already have Python on your computer.
+{/aside}
 
-![](examples/process/slow.py)
+The external command:
+
+![](examples/process/process.py)
+
+Try it on the command line: `python process.py 3 7`
+
+## Run external process and capture STDOUT and STDERR separately
+{id: run-external-process-and-capture-stdout-and-stderr-separately}
+
 ![](examples/process/run_command.py)
+![](examples/process/run_command.out)
 
-In this example p is an instance of the subprocess.PIPE class. The command is executed when the object is created.
+## Run external process and capture STDOUT and STDERR merged together
+{id: run-external-process-and-capture-stdout-and-stderr-merged-together}
+
+![](examples/process/run_command_combine_stderr_and_stdout.py)
+![](examples/process/run_command_combine_stderr_and_stdout.out)
+
+In this case stderr will always be `None`.
 
 
 ## subprocess in the background
 {id: subprocess-background}
 
-![](examples/process/run_slow.py)
+{aside}
+In the previous examples we ran the external command and then waited till it finishes before doing anything else.
+
+In some cases you might prefer to do something else while you are waiting - effectively running the process in the background.
+This also makes it easy to enforce a time-limit on the process. If it does not finish within a given amount of time (timeout)
+we raise an exception.
+
+In this example we still collect the standard output and the standard error at the end of the process.
+{/aside}
+
+![](examples/process/run_process_polling.py)
+![](examples/process/run_process_polling.out)
 
 
 ## Accessing the system environment variables from Python
@@ -275,8 +305,7 @@ In this example p is an instance of the subprocess.PIPE class. The command is ex
 ![](examples/os/environment.py)
 
 {aside}
-
-os.environ is a dictionary where the keys are the environment variables and the values are, well, the values.
+`os.environ` is a dictionary where the keys are the environment variables and the values are, well, the values.
 {/aside}
 
 
@@ -286,7 +315,6 @@ os.environ is a dictionary where the keys are the environment variables and the 
 ![](examples/os/set_env.py)
 
 {aside}
-
 We can change the environment variables and that change will be visible in subprocesses,
 but once we exit from ou Python program, the change will not persist.
 {/aside}

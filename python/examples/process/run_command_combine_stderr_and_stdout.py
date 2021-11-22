@@ -5,7 +5,7 @@ def run_process(command):
     print("Before Popen")
     proc = subprocess.Popen(command,
         stdout = subprocess.PIPE,
-        stderr = subprocess.PIPE,
+        stderr = subprocess.STDOUT,
     )  # This starts runing the external process
     print("After Popen")
 
@@ -27,5 +27,4 @@ for line in out.decode('utf8').split('\n'):
     print(line)
 
 print('err:')
-for line in err.decode('utf8').split('\n'):
-    print(line)
+print(err)

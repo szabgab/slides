@@ -1,0 +1,23 @@
+Before Popen
+After Popen
+poll: None
+poll: None
+poll: None
+poll: None
+poll: None
+poll: None
+poll: None
+poll: 0
+Final: 0
+-----
+exit_code: 0
+OUT
+OUT 0
+OUT 1
+OUT 2
+
+ERR
+ERR 0
+ERR 1
+ERR 2
+
