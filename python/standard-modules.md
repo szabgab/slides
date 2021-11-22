@@ -298,6 +298,19 @@ In this example we still collect the standard output and the standard error at t
 ![](examples/process/run_process_polling.out)
 
 
+## subprocess collect output while external program is running
+{id: subprocess-collect-output-while-external-program-is-running}
+
+{aside}
+For this to work properly the external program might need to set the output to unbuffered.
+In Python by default prining to STDERR is unbuffered, but we had to pass `flush=True` to the print
+function to make it unbuffered for STDOUT as well.
+{/aside}
+
+![](examples/process/run_command_collect_while_running.py)
+![](examples/process/run_command_collect_while_running.out)
+
+
 ## Accessing the system environment variables from Python
 {id: environment-variables}
 {i: os.environ}

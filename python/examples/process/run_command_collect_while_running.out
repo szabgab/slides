@@ -1,0 +1,23 @@
+Before Popen
+After Popen
+poll: None 1637589106.083494
+out: OUT 0
+err: ERR 0
+poll: None 1637589106.6035957
+out: OUT 1
+err: ERR 1
+poll: None 1637589107.6047328
+out: OUT 2
+err: ERR 2
+poll: None 1637589108.6051855
+out: OUT 3
+err: ERR 3
+poll: None 1637589109.6066446
+out: err: poll: 0 1637589110.6227856
+out: err: Final: 0
+-----
+exit_code: 0
+OUT
+
+ERR
+

@@ -8,7 +8,7 @@ seconds = int(sys.argv[1])
 exit_code = int(sys.argv[2])
 
 for sec in range(seconds):
-   print("OUT {}".format(sec))
+   print("OUT {}".format(sec), flush=True)
    print("ERR {}".format(sec), file=sys.stderr)
    time.sleep(1)
 
