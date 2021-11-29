@@ -251,11 +251,11 @@ class Main(ABC):
 
 Multiple inheritance
 not really recommended
-Show call order when each one has an __init__
+Show call order when each one has an `__init__`
 Show what happens if it becomes diamond shaped inheritance?
 
 MRO - Method Resolution Order ?
-Classname.__mro__
+`Classname.__mro__`
 
 Interfaces - Python does not support them, but you can define other ABC-es
 and use multiple inheritance to say that your class provides that method.
@@ -264,11 +264,12 @@ and use multiple inheritance to say that your class provides that method.
 Composition (e.g. a line has 2 Points)
 
 
-How to compare two points?  Compare both coordinates using __eq__
+How to compare two points?  Compare both coordinates using `__eq__`
 Which point is bigger?  the one where both coordinates are bigger (what to do when one is bigger and the other is smaller? Raise a ValueError, our own Error that inherits from Value error?)  In circles we
 might say one is bigger than the other purely based on their area.
-What happens if we implement __eq__for Point and compare two instances of Circle(Point) ?
+What happens if we implement `__eq__` for Point and compare two instances of Circle(Point) ?
 
+```
 def __eq__(self, value):
    if not isintsnace(value, Point):
        raise ValueError("Cannot compare Point to non-Pont {value.__class__.__name__}")
@@ -290,6 +291,7 @@ def __call__(self, ...):   to make the instances callable (when would we need it
 
 __setattr__
 __getattr__
+```
 
 ## Data Science
 
@@ -309,5 +311,12 @@ K-means algorithm
 * Header type is legacy - use Markdown instead
 
 * What other Kernels can I install?
+
+
+## Machine learning
+
+* Reinforcement learning
+* Recommender system
+
 
 
