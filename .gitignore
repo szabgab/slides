@@ -86,6 +86,7 @@ python/examples/pytest/coverage/htmlcov
 python/examples/pytest/coverage/.coverage
 python/examples/ml/linear.joblib
 python/examples/ml/kaggle/
+python/examples/ml/rectangle.csv
 
 crystal/bin
 crystal/lib
@@ -97,3 +98,4 @@ crystal/examples/docspec/lib/
 crystal/examples/docspec/bin/
 crystal/examples/kemal/lib/
 crystal/examples/kemal/bin/
+

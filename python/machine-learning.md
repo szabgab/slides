@@ -7,22 +7,44 @@
 * Supervised
 * Unsupervised
 
+{aside}
 * Reinforcement learning
 * Recommender system
+{/aside}
 
 ## ML - Supervised Learning
 {id: ml-supervised-learning}
 
 * We have a dataset that has the "right answer".
+* It has one or more "features" (or variables) (X) and one or more results (y).
+* We would like to create a function that given a new set of values for X will predict the value(s) of y.
 
-* Housing prices: area (x) vs price (y), how to predict: linear line, a 2nd degree polynom, or an exact match on the known points? 
-* Supervised Learning - A Regression problem - Predict continuous valued output.
+
+* Regression
+* Classification
+
+## Regression problem
+{id: ml-regression-problem}
+
+* Predict continuous valued output.
+
+* Housing prices: area (x) vs price (y)
+* How to predict the price based on the area?
+* Try to match a linear line, maybe a 2nd degree polynom, or an exact match on the known points using very high degree polynom?
+
+## Classification problem
+{id: ml-classification-problem}
+
+* Predict a discrete valued output (yes/no) or (A, B, C, D)
 
 * Brest Cancer:  Tumor size (x) vs being malignant or benign (y) - two distinct possibilities. Given a tumor (and its size) what is the probability that it is malignant?
-* A Classification problem - Discrete valued output (yes/no)
 * The Tumor size is a "feature". In other problems we might have many more features.
 * e.g. We might know both the tumor size and the age of the patience.
 
+## Number of features
+{id: ml-number-of-features}
+
+* Can be large.
 * Infinite number of features?
 
 ## ML - Unsupervised Learning
@@ -46,26 +68,29 @@ Housing prices (size in feet => price in USD)
 
 
 * m - number of examples in the dataset
-* x's - input variables, features
+* X's - input variables, features
 * y's - output variables, target variables
-* (x, y) - single training example
-* (xi, yi) - i-th training example
+* (X, y) - single training example
+* (Xi, yi) - i-th training example
 
 * Training set => Learning Algorithm => h (hypothesis)
-* is function that converts x to estimated y.  `y = h(x)` as it is a linear function we can also write h(x) = ax^2 + b  (a, b could be theta 0 and 1)
+* is function that converts X to estimated y.  `y = h(X)` as it is a linear function we can also write h(x) = ax^2 + b  (a, b could be theta 0 and 1)
 
-* Linear regression with one variable (aka.) Univariate Linear regression 
+* Linear regression with one variable (aka.) Univariate Linear regression.
 
 ## Cost function
 {id: ml-cost-function}
 
-* Squared error function: `J(a, b) = (sum of (h(xi) - yi)^2)/2m`  where `h(x) = ax^2 + b` - it is probably the most common used for linear regression problems because it seems to work the best in most cases.
+* Squared error function: `J(a, b) = (sum of (h(xi) - yi)^2)/2m`  where `h(x) = ax^2 + b`
+* It is probably the most common used for linear regression problems because it seems to work the best in most cases.
 * We would like to find `a` and `b` so `J(a, b)` is minimal.
 
 * If we assume b=0 then we are looking at `min(J(a, 0))` which is a 2D function
-* In the general cas though `min(J(a, b))` is a 3D function for which we need to find the minimum
+* In the general case though `min(J(a, b))` is a 3D function for which we need to find the minimum
 
+{aside}
 * Contour plots (contour figures)
+{/aside}
 
 ## Gradient descent
 {id: ml-gradient-descent}
@@ -73,17 +98,21 @@ Housing prices (size in feet => price in USD)
 * [Gradient descent](https://en.wikipedia.org/wiki/Gradient_descent) a generic algorithm to find a local minimum of a function.
 
 * Start at a random location.
-* Make a small step downhill
+* Make a small step downhill.
 * Stop when around you everything is higher than where you are.
 
-* Problem is that depending on the starting point this can lead us to different local(!) minumums.
-* Learning rate (alpha) - the size of the steps we take on every iteration
-* Derivative term - (a function of a and b)
+* Problem is that depending on the starting point this can lead us to different local(!) minumum.
+* Learning rate (alpha) - the size of the steps we take on every iteration.
+* Derivative term - (a function of a and b).
 
 * If the learning rate is too large, the algorithm might diverge.
 * If the learning rate is too small, it might take a lot of steps to converge.
 
-* Gradient descent can converge even if the learning rate is fixed because the closer we get to the local minimum, the derivative of the cost function is smaller (closer to 0) and thus the multiplication of the cost function by the derivative is going to be smaller and the step we take is going to be smaller.
+{aside}
+Gradient descent can converge even if the learning rate is fixed because the closer we get to the local minimum,
+the derivative of the cost function is smaller (closer to 0) and thus the multiplication of the cost function
+by the derivative is going to be smaller and the step we take is going to be smaller.
+{/aside}
 
 * The above cost function of Linear regression is a Convex function so there is only one local minimum which is also the global minimum.
 
@@ -131,7 +160,7 @@ Housing prices (size in feet => price in USD)
 * n - number of features (number of columns in the table)
 * last column might be called y (the result)
 * m - number of samples (number of rows)
-* x(i) - row i, vector of values of a sample 
+* x(i) - row i, vector of values of a sample
 * x(i, j) - the value of row i column j
 
 * Also called "Multivariate linear regression"
@@ -153,7 +182,7 @@ Housing prices (size in feet => price in USD)
 * If the convergence is some small (e.g. less than 1/1000 or epsylon, but it might be difficult to choose this number)
 * If it is increasing than probably the learning rate is too big and it will never converge. (Fix is to use smaller learning rate.)
 
-## Features 
+## Features
 {id: ml-features}
 
 * We can defined new features based on other features. (e.g. multiply two feature by each other to get the new feature)
@@ -162,6 +191,8 @@ Housing prices (size in feet => price in USD)
 {id: ml-polynomial-regression}
 
 * When the allow for a function like `a + bx + cx^2 + dx^4 ...` (given a single feature x)
+
+![](examples/ml/polynomial_regression.py)
 
 ## Normal Equation
 {id: ml-normal-equation}
@@ -181,11 +212,10 @@ numpy.linalg.pinv(x.transpose * x) * x.transpose * y
 
 
 ## Linear regression with sklearn
-{id: ml-linear-regression-with-}
+{id: ml-linear-regression-with-sklern}
 
-ml/basic_linear_regression.ipynb
-ml/use_basic_linear_expression.ipynb
-
+* examples/ml/basic_linear_regression.ipynb
+* examples/ml/use_basic_linear_expression.ipynb
 
 ## Split data set
 {id: ml-split-data-set}
@@ -196,7 +226,7 @@ ml/use_basic_linear_expression.ipynb
 * You use the training part to train your model and you use the testing part to check how good your model can predict other values.
 * `train_test_split()` of `scikit-learn` can do this.
 
-ml/basic_linear_regression_more_data.ipynb
+* examples/ml/basic_linear_regression_more_data.ipynb
 
 * fix the seed by setting `random_state` to any fixed non-negative integer
 * `stratify` splitting for classification of inbalanced datasets
@@ -263,9 +293,9 @@ multi_feature_classification_iris.ipynb
 
 * [Kaggle](https://www.kaggle.com/) has lots of [datasets](https://www.kaggle.com/datasets)
 
-melbourne-housing-snapshot.ipynb
+* examples/ml/melbourne-housing-snapshot.ipynb
 
-usa-housing-listings.ipynb
+* examples/ml/usa-housing-listings.ipynb
 
 
 ## Machine Learning Resources
@@ -366,3 +396,25 @@ Also to notice:
 {id: boston-housing-prices}
 
 ![](examples/ml/boston.py)
+
+
+## Decision Tree
+{id: ml-decision-tree}
+
+* Measure the the Mean Absolute Error of both the training and testing set `from sklearn.metrics import mean_absolute_error`
+* too shallow: underfitting
+* too deep: overfitting
+
+## Random Forrest
+{id: ml-random-forrest}
+
+
+remove outlier from food-track
+calculate smallest profitable city
+
+
+## Resnet 50
+{id: ml-resnet-50}
+
+![](examples/ml/resnet_experiment.py)
+
