@@ -261,12 +261,20 @@ You can raise an exception in a simple way.
 ![](examples/exceptions/raise.py)
 
 
-## Stack trace
-{id: stack-trace}
+## Stack trace of exceptions
+{id: stack-trace-of-exceptions}
+
+
 ![](examples/exceptions/stack_trace.py)
 
 ![](examples/exceptions/stack_trace.out)
 
+## Stack trace
+{id: stack-trace}
+{i: traceback}
+{i: format_stack}
+
+![](examples/other/print_stack_trace.py)
 
 ## Exercies: Exception int conversion
 {id: exercise-exception-int-conversion}
