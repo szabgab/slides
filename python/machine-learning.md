@@ -89,3 +89,14 @@ Using generated data
 
 * **examples/ml/basic_classification.ipynb**
 
+## Kaggle
+{id: ml-kaggle}
+
+* [Kaggle](https://www.kaggle.com/) has lots of [datasets](https://www.kaggle.com/datasets)
+
+## Kaggle - USA housing listing
+{id: ml-kaggle-usa-housing-listing}
+
+* examples/ml/usa-housing-listings.ipynb
+
+

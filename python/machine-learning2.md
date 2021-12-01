@@ -209,14 +209,11 @@ However they are more complex to implement.
 multi_feature_classification_iris.ipynb
 ```
 
-## Kaggle
-{id: ml-kaggle}
-
-* [Kaggle](https://www.kaggle.com/) has lots of [datasets](https://www.kaggle.com/datasets)
+## Kaggle - Melbourne housing listing
+{id: ml-kaggle-melbourne-housing-listing}
 
 * examples/ml/melbourne-housing-snapshot.ipynb
 
-* examples/ml/usa-housing-listings.ipynb
 
 
 ## Machine Learning Resources
