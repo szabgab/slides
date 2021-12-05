@@ -1,45 +1,43 @@
-# Web client
+# Web client - web scraping
 {id: python-web}
 
-## urllib the web client
+## get HTML page using urllib
 {id: urllib}
 {i: urllib}
 
-![](examples/other/web_client.py)
+* [urllib](https://docs.python.org/library/urllib.html)
 
+![](examples/web-client/with_urllib.py)
 
-## urllib2 the web client
-{id: urllib2}
-{i: urllib2}
+## download file using urllib
+{id: urllib-download}
 
-{aside}
-urllib2 is better than urllib as it will indicate if there was an error retreiving
-{/aside}
-
-![](examples/other/try_urllib2.py)
-
-
-## httpbin.org
-{id: httpbin-org}
-
-* [httpbin.org](http://httpbin.org)
-* [source](https://github.com/Runscope/httpbin)
-
+![](examples/web-client/download_image_with_urllib.py)
 
 
 ## requests get
 {id: requests-get}
 {i: requests}
 
-![](examples/web/requests_get.py)
+![](examples/web-client/requests_get.py)
 
 * [HTTP status codes](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes)
 * [Python requests](http://docs.python-requests.org/)
 
+
 ## Download image using requests
 {id: dowload-image-using-requests}
 
-![](examples/web/download_image.py)
+![](examples/web-client/download_image_with_requests.py)
+
+
+## httpbin.org
+{id: httpbin-org}
+
+* [httpbin.org](https://httpbin.org) a website to practice various URL requests
+* [source code](https://github.com/Runscope/httpbin) of httpbin.
+
+![](examples/web-client/httpbin_get.py)
 
 ## Download image as a stream using requests
 {id: dowload-image-as-a-stream-using-requests}
