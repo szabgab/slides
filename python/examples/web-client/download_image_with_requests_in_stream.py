@@ -6,6 +6,5 @@ filename = "source.jpg"
 res = requests.get(url, stream=True)
 print(res.status_code)
 with open(filename, 'wb') as fh:
-   res.raw.decode_content
-   shutil.copyfileobj(res.raw, fh)
-
+    res.raw.decode_content
+    shutil.copyfileobj(res.raw, fh)
