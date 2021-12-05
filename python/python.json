@@ -37,7 +37,7 @@
         "sqlalchemy.md",
         "mongodb.md",
         "redis.md",
-        "web.md",
+        "web-client.md",
         "web-server.md",
         "flask.md",
         "net.md",
