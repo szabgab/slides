@@ -79,7 +79,7 @@ This example shows how to unzip a file already on your disk.
 
 ![](examples/web-client/parse_html.py)
 
-## requests and JSON
+## requests - JSON - API
 {id: requests-and-json}
 
 {aside}
@@ -93,12 +93,12 @@ Page layouts will change. The code will break easily. In many cases there is a b
 * [httpbin.org](https://httpbin.org) a website to practice various URL requests
 * [source code](https://github.com/Runscope/httpbin) of httpbin.
 
-## requests get in httpbin
+## requests get from httpbin - JSON
 {id: requests-get-httpbin}
 
 ![](examples/web-client/httpbin_get.py)
 
-## requests get JSON
+## requests get IP from httpbin - JSON
 {id: requests-get-json}
 
 ![](examples/web-client/requests_get_json.py)
@@ -107,25 +107,30 @@ Page layouts will change. The code will break easily. In many cases there is a b
 ## requests get JSON UserAgent
 {id: requests-get-json-ua}
 
-![](examples/web/requests_get_json_ua.py)
+{aside}
+When our browser sends a requests it identifies itself.
+{/aside}
+
+* [See your User-Agent](https://httpbin.org/user-agent)
+
+![](examples/web-client/requests_get_json_ua.py)
 
 
-## requests get JSON UserAgent
+## requests change UserAgent
 {id: requests-change-ua}
 
-![](examples/web/requests_get_json_ua_changed.py)
+![](examples/web-client/requests_get_json_ua_changed.py)
 
 
 ## requests get header
 {id: requests-get-headers}
 
-![](examples/web/requests_get_headers.py)
-
+![](examples/web-client/requests_get_headers.py)
 
 ## requests change header
 {id: requests-change-headers}
 
-![](examples/web/requests_change_headers.py)
+![](examples/web-client/requests_change_headers.py)
 
 
 ## requests post

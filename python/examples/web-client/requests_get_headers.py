@@ -1,7 +1,7 @@
 import requests
- 
-r = requests.get('http://httpbin.org/headers')
-print(r.text)
+
+res = requests.get('https://httpbin.org/headers')
+print(res.text)
 
 # {
 #   "headers": {
@@ -11,3 +11,8 @@ print(r.text)
 #     "User-Agent": "python-requests/2.3.0 CPython/2.7.12 Darwin/16.3.0"
 #   }
 # }
+
+print()
+data = res.json()
+print(data)
+#print(data['headers'])
