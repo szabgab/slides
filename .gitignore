@@ -87,6 +87,8 @@ python/examples/pytest/coverage/.coverage
 python/examples/ml/linear.joblib
 python/examples/ml/kaggle/
 python/examples/ml/rectangle.csv
+python/examples/web-client/config.ini
+python/examples/web-client/.api.txt
 
 crystal/bin
 crystal/lib

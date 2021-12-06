@@ -138,7 +138,7 @@ httpbin makes it easy to see what kind of headers your browser sends. Not only t
 
 {aside}
 The requests module too sends a set of default headers, but you can tell it to send other fields and values as well.
-This examples shows how to 
+This examples shows how to set some additional headers.
 {/aside}
 
 ![](examples/web-client/requests_change_headers.py)
@@ -157,6 +157,32 @@ We can also send POST requests to an address with any payload (content).
 {id: interactive-requests}
 
 ![](examples/web-client/interactive_requests.py)
+
+## Download the weather - scraping
+{id: download-weather-scraping}
+
+* [Open Weather map](https://openweathermap.org/)
+* type in the name of your city
+
+
+## Download the weather - API call with requests
+{id: download-weather-api-call-requests}
+
+![](examples/web-client/get_weather_request.py)
+
+## Download the weather - API call with requests
+{id: download-weather-api-wrapper}
+
+
+```
+pip install openweathermap-simplified
+```
+
+* [openweathermap-simplified on pypi](https://pypi.org/project/openweathermap-simplified/)
+* [openweathermap-api on Github](https://github.com/sebastiaan-lampo/openweathermap-api)
+
+![](examples/web-client/get_weather_wrapper.py)
+
 
 
 ## Tweet
@@ -179,9 +205,6 @@ We can also send POST requests to an address with any payload (content).
 {id: api-config-file}
 
 ![](examples/web-client/api.cfg)
-
-https://www.accuweather.com/
-https://www.meteomatics.com/
 
 
 ## Exercise: Combine web server and client
