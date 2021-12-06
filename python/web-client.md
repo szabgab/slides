@@ -104,7 +104,7 @@ Page layouts will change. The code will break easily. In many cases there is a b
 ![](examples/web-client/requests_get_json.py)
 
 
-## requests get JSON UserAgent
+## requests get JSON User-Agent
 {id: requests-get-json-ua}
 
 {aside}
@@ -116,7 +116,7 @@ When our browser sends a requests it identifies itself.
 ![](examples/web-client/requests_get_json_ua.py)
 
 
-## requests change UserAgent
+## requests change User-Agent
 {id: requests-change-ua}
 
 ![](examples/web-client/requests_get_json_ua_changed.py)
@@ -125,10 +125,21 @@ When our browser sends a requests it identifies itself.
 ## requests get header
 {id: requests-get-headers}
 
+{aside}
+httpbin makes it easy to see what kind of headers your browser sends. Not only the User Agent
+{/aside}
+
+* [headers](https://httpbin.org/headers)
+
 ![](examples/web-client/requests_get_headers.py)
 
 ## requests change header
 {id: requests-change-headers}
+
+{aside}
+The requests module too sends a set of default headers, but you can tell it to send other fields and values as well.
+This examples shows how to 
+{/aside}
 
 ![](examples/web-client/requests_change_headers.py)
 
@@ -136,7 +147,11 @@ When our browser sends a requests it identifies itself.
 ## requests post
 {id: requests-post}
 
-![](examples/web/requests_post.py)
+{aside}
+We can also send POST requests to an address with any payload (content).
+{/aside}
+
+![](examples/web-client/requests_post.py)
 
 ## Interactive Requests
 {id: interactive-requests}
@@ -144,26 +159,29 @@ When our browser sends a requests it identifies itself.
 ![](examples/web-client/interactive_requests.py)
 
 
-
 ## Tweet
 {id: tweet}
 
-![](examples/web/tweet.py)
+* [Twitter developer](https://developer.twitter.com/)
+* [Twitter API](https://developer.twitter.com/en/support/twitter-api)
+
+![](examples/web-client/tweet.py)
+
+## bit.ly
+{id: bitly}
+
+* [bit.ly API](https://dev.bitly.com/api-reference/)
+
+![](examples/web-client/bitly.py)
 
 
 ## API config file
 {id: api-config-file}
 
+![](examples/web-client/api.cfg)
+
 https://www.accuweather.com/
 https://www.meteomatics.com/
-
-![](examples/web/api.cfg)
-
-
-## bit.ly
-{id: bitly}
-
-![](examples/web/bitly.py)
 
 
 ## Exercise: Combine web server and client

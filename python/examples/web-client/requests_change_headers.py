@@ -1,13 +1,13 @@
 import requests
- 
-r = requests.get('http://httpbin.org/headers',
+
+res = requests.get('http://httpbin.org/headers',
         headers = {
             'User-agent'  : 'Internet Explorer/2.0',
             'SOAPAction'  : 'http://www.corp.net/some/path/CustMsagDown.Check',
             'Content-type': 'text/xml'
         }
     )
-print(r.text)
+print(res.text)
 
 # {
 #   "headers": {
