@@ -1,6 +1,10 @@
 import xml.dom.minidom
+import sys
 
-file = 'examples/xml/data.xml'
+if len(sys.argv) != 2:
+    exit(f"Usage: {sys.argv[0]} FILENAME")
+
+file = sys.argv[1]
 
 dom = xml.dom.minidom.parse(file)
 

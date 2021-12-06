@@ -1,7 +1,10 @@
 import xml.sax
+import sys
 
-file = 'examples/xml/data.xml'
+if len(sys.argv) != 2:
+    exit(f"Usage: {sys.argv[0]} FILENAME")
 
+file = sys.argv[1]
 
 class EventHandler(xml.sax.ContentHandler):
     def startElement(self, name, attrs):

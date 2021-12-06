@@ -1,6 +1,10 @@
 import xml.etree.ElementTree as ET
+import sys
 
-file = 'examples/xml/data.xml'
+if len(sys.argv) != 2:
+    exit(f"Usage: {sys.argv[0]} FILENAME")
+
+file = sys.argv[1]
 
 tree = ET.parse(file)
 root = tree.getroot()

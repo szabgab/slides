@@ -1,6 +1,10 @@
 import xml.parsers.expat
+import sys
 
-file = 'examples/xml/data.xml'
+if len(sys.argv) != 2:
+    exit(f"Usage: {sys.argv[0]} FILENAME")
+
+file = sys.argv[1]
 
 
 def start_element(name, attrs):
