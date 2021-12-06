@@ -78,6 +78,7 @@
         "pytest-other.md",
         "tox.md",
         "selenium.md",
+        "playwright.md",
         "advanced-functions.md",
         "function-arguments.md",
         "packages.md",
