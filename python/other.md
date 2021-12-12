@@ -898,4 +898,7 @@ pip install ptpython
 
 ![](examples/other/debug_with_ptpython.py)
 
+## REPL - Interactive debugging with ptpython
+{id: interactive-debugging-with-ptpython}
 
+![](examples/other/interactive_debugging_with_ptpython.py)
