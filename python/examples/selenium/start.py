@@ -39,5 +39,8 @@ time.sleep(5)
 #import code
 #code.interact(local=locals())
 
+#from ptpython.repl import embed
+#embed(globals(), locals())
+
 
 driver.close()
