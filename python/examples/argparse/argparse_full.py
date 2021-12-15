@@ -13,7 +13,8 @@ parser.add_argument('--color', '-c') # short name also accepted
 #parser.add_argument('files',  help="filenames(s)")   # a required positional argument
 #parser.add_argument('dirs',   nargs="*")   # 0 or more positional
 #parser.add_argument('places', nargs="+")   # 1 or more positional
-#
+#parser.add_argument('ords', nargs="?")   # 0 or 1 positional
+
 parser.add_argument('--things', nargs="+")  # --files a.txt b.txt c.txt
 
 
