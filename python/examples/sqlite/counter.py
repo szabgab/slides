@@ -7,69 +7,84 @@
 
 import sys
 import os
+import argparse
 import sqlite3
 
 database_file = "counter.db"
 
-def usage():
-    print('TODO print doc')
-    conn.close()
-    exit()
+def list_counters(crs):
+    print('List counters:')
+    for name, count in crs.execute("SELECT name, count FROM counters"):
+        print(f"{name}: {count}")
+
+def get_counter(crs, name):
+    crs.execute("SELECT count FROM counters WHERE name = ?", (name,))
+    line = crs.fetchone()
+    if line is None:
+        return None
+    return line[0]
+
+
+def increase_counter(conn, crs, name):
+    counter = get_counter(crs, name)
+    if counter is None:
+        print(f"Invalid counter name '{name}' use the --start flag to start a new counter")
+        return
+
+    counter += 1
+    crs.execute("UPDATE counters SET count=? WHERE name = ?", (counter, name))
+    conn.commit()
+    print(f"{name} {counter}")
+
+def start_counter(conn, crs, name):
+    counter = get_counter(crs, name)
+    if counter is not None:
+        print(f"Counter {name} already exists")
+        return
+
+    try:
+        crs.execute("INSERT INTO counters (name, count) VALUES(?, ?)", (name, 0))
+        conn.commit()
+    except sqlite3.IntegrityError as err:
+        print(f"Name '{name}' already exists")
+
+def get_arguments():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--list', action='store_true')
+    parser.add_argument('--start', action='store_true')
+    parser.add_argument('name', nargs="?")
+    args = parser.parse_args()
+    if args.name is None and not args.list:
+        parser.print_help()
+        exit()
+    return args
 
 def main():
-    global conn
-    conn = sqlite3.connect(database_file)
-    c = conn.cursor()
-    try:
-        c.execute('''CREATE TABLE counters (
-          id PRIMARY KEY,
-          name VARCRCHAR(100) UNIQUE NOT NULL,
-          count INTEGER NOT NULL
-          )''')
-    except sqlite3.OperationalError as e:
-        pass
-        # print('sqlite error:', e.args[0])  # table counters already exists
+    args = get_arguments()
 
-    # print(len(sys.argv))
-    # print(sys.argv)
-
-    if len(sys.argv) == 1:
-        usage()
-
-    if len(sys.argv) == 2:
-        if sys.argv[1] == '--list':
-            print('List counters:')
-            for r in c.execute("SELECT name FROM counters"):
-                print(r[0])
-            exit()
-        name = sys.argv[1]
-        c.execute("SELECT count FROM counters WHERE name = ?", (name,))
-        line = c.fetchone()
-        if line == None:
-            print("Invalid counter name '{}'".format(name))
-            exit()
-        value = line[0]
-        value = value +1
-        c.execute("UPDATE counters SET count=? WHERE name = ?", (value, name))
-        conn.commit()
-        print("{} {}".format(name, value))
-        #print("increment counter {} was: {}".format(name, value))
-        exit()
-
-    if len(sys.argv) == 3 and sys.argv[1] == '--start':
-        name = sys.argv[2]
-        print("Start counter", name)
+    with sqlite3.connect(database_file) as conn:
+        crs = conn.cursor()
         try:
-            c.execute("INSERT INTO counters (name, count) VALUES(?,?)", (name, 0))
-            conn.commit()
-        except sqlite3.IntegrityError:
-            print("Name '{}' already exists".format(name))
-            exit()
+            crs.execute('''CREATE TABLE counters (
+              id PRIMARY KEY,
+              name VARCRCHAR(100) UNIQUE NOT NULL,
+              count INTEGER NOT NULL
+              )''')
+        except sqlite3.OperationalError as err:
+            pass
+            #print(f'sqlite error: {err.args[0]}')
 
-        exit()
+        if args.list:
+            list_counters(crs)
+            return
 
-    print('none')
-    usage()
+        if args.start  and args.name:
+            start_counter(conn, crs, args.name)
+            return
+
+        if args.name:
+            increase_counter(conn, crs, args.name)
+            return
 
 main()
 

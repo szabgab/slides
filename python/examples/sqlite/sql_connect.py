@@ -1,7 +1,7 @@
 import sqlite3
 
-conn = sqlite3.connect("sample.db")
-c = conn.cursor()
+conn = sqlite3.connect("companies.db")
+crs = conn.cursor()
 
 # use the database here
 

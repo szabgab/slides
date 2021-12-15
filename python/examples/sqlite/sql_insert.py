@@ -1,30 +1,40 @@
 import sqlite3
 
-conn = sqlite3.connect("sample.db")
-c = conn.cursor()
+sql = 'INSERT INTO companies (name, employees, established) VALUES (?, ?, ?)'
 
-my_company = 'Acme'
+def insert_one(conn, crs):
+    company_name = 'Hostlocal'
+    employee_count = 1
+    year_of_establishment = 2000
 
-try:
-  c.execute('''INSERT INTO companies (name) VALUES (?)''', (my_company,))
-except sqlite3.IntegrityError as e:
-  print('sqlite error: ', e.args[0]) # column name is not unique
-conn.commit()
-
-companies = [
-  ('Foo', 12),
-  ('Bar', 7),
-  ('Moo', 99),
-]
-
-try:
-  sql = '''INSERT INTO companies (name, employees) VALUES (?, ?)'''
-  c.executemany(sql, companies)
-except sqlite3.IntegrityError as e:
-  print('sqlite error: ', e.args[0]) # column name is not unique
-conn.commit()
+    try:
+        crs.execute(sql, (company_name, employee_count, year_of_establishment))
+    except sqlite3.IntegrityError as err:
+        print('sqlite error: ', err.args[0]) # column name is not unique
+    conn.commit()
 
 
-conn.close()
+def insert_many(conn, crs):
+    companies = [
+        ('Google',    150_028, 1998),
+        ('Facebook',   68_177, 2003),
+        ('Apple',     154_000, 1977),
+        ('Microsoft', 181_000, 1975),
+    ]
 
-print('done')
+    try:
+        crs.executemany(sql, companies)
+    except sqlite3.IntegrityError as err:
+        print(f'sqlite error: {err.args[0]}')
+    conn.commit()
+
+
+def main():
+    conn = sqlite3.connect("companies.db")
+    crs = conn.cursor()
+    insert_one(conn, crs)
+    insert_many(conn, crs)
+    conn.close()
+    print('done')
+
+main()

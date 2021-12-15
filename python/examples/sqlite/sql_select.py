@@ -1,16 +1,19 @@
 import sqlite3
 
-conn = sqlite3.connect("sample.db")
-c = conn.cursor()
+conn = sqlite3.connect("companies.db")
+crs = conn.cursor()
 
-minimum = 0
+employees = 3
 
-sql = '''SELECT * FROM companies WHERE employees >= ?'''
-for company in c.execute(sql, (minimum,)):
-  print(company)
+sql = 'SELECT * FROM companies WHERE employees >= ?'
+for company in crs.execute(sql, (employees,)):
+    print(company)
 
-sql = '''SELECT COUNT(*) FROM companies WHERE employees >= ?'''
-c.execute(sql, (minimum,))
-print(c.fetchone()[0])
+print('-----------')
+
+year = 2000
+sql = 'SELECT id, name FROM companies WHERE employees >= ? AND established < ?'
+for id, name in crs.execute(sql, (employees, year)):
+    print(f"{id} - {name}")
 
 conn.close()

@@ -26,42 +26,55 @@ execute and commit
 
 ![](examples/sqlite/sql_create.py)
 
+## INSERT data into SQLite database
+{id: sqlite-insert}
+{i: INSERT|sqlite}
+{i: ?|sqlite}
+
+![](examples/sqlite/sql_insert.py)
+
+* Use placeholders (?) supply the data in tuples and to avoid [Bobby tables](https://bobby-tables.com/)
+
 ## SELECT data from SQLite database
 {id: sqlite-select}
 {i: SELECT|sqlite}
-{i: fetchone|sqlite}
 
 ![](examples/sqlite/sql_select.py)
 
-Use the result as an iterator, or call the fetchone method. If the result set might be empty,
-then the fetchone might return None. Check for it!
+* Use the result as an iterator.
+
+
+## SELECT aggregate data from SQLite database
+{id: sqlite-select-aggregate}
+{i: SELECT|sqlite}
+{i: COUNT|sqlite}
+{i: SUM|sqlite}
+{i: fetchone|sqlite}
+
+![](examples/sqlite/sql_select_aggregate.py)
+
+{aside}
+If expecting only one row, call the fetchone method.
+If the result set might be empty, then the fetchone might return None. Check for it!
+{/aside}
+
 
 ## SELECT data from SQLite database into dictionaries
 {id: sqlite-select-dictionary}
 
 ![](examples/sqlite/sql_select_dictionaries.py)
 
-
-## INSERT data into SQLite database
-{id: sqlite-insert}
-{i: INSERT|sqlite}
+## UPDATE data in SQLite database
+{id: sqlite-update}
 {i: UPDATE|sqlite}
-{i: ?|sqlite}
 
-Use placeholders (?) supply the data in tuples.
+* UPDATE works quite similar, but it might have a WHERE clause.
 
-![](examples/sqlite/sql_insert.py)
-
-UPDATE works quite similar, but it might have a WHERE clause.
-
-
-
-
+![](examples/sqlite/sql_update.py)
 
 
 ## A counter
 {id: sqlite-counter}
 
 ![](examples/sqlite/counter.py)
-
 
