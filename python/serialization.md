@@ -8,6 +8,17 @@
 * Network traffic
 * Storing data for later reuse in another process
 
+## Questions to ask
+{id: data-serialization-questions}
+
+* Which programming languages support it besides Python?
+* Can the files be access on other operating system, other architectures, different versions of Python?
+* How long does it take to store additional entry?
+* How long does it take to access an entry?
+* How much memory is needed? Do we need to read the whole file or can we read records?
+* How much disk-space is being used for the serialized data?
+
+
 ## Various tools for serialization
 {id: tools-for-serialization}
 
@@ -21,6 +32,7 @@
 * [marshal](https://docs.python.org/library/marshal.html) (internal usage)
 * [Protobuf](https://developers.google.com/protocol-buffers/docs/pythontutorial)
 * [HDF5](https://www.hdfgroup.org/solutions/hdf5) in python: [h5py](https://www.h5py.org/)
+* [parquet](https://parquet.incubator.apache.org/) in python: [parquet](https://pypi.org/project/parquet/)
 
 ## Serialization with h5py
 {id: serialization-h5py}
