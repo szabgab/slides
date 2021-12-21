@@ -89,6 +89,7 @@ python/examples/ml/rectangle.csv
 python/examples/web-client/config.ini
 python/examples/web-client/.api.txt
 python/examples/selenium/screenshot.png
+python/examples/serialization/demo.*
 
 crystal/bin
 crystal/lib
