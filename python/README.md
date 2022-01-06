@@ -319,4 +319,11 @@ K-means algorithm
 * Recommender system
 
 
+## python speed improvement
+
+* replace by a faster module (Levinshtein example)
+* better algorithm with lower complexity,
+* better data structure (dictioanry instead of list when that is better)
+* profile the code and find the slow parts.
+* concurrent execution (forking, threading, asynchronous)
 
