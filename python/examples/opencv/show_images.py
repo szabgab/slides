@@ -2,6 +2,7 @@ import cv2 as cv
 import sys
 import os
 
+WAIT_TIME = 100
 MAX_HEIGHT = 300
 
 def resize(img):
@@ -34,7 +35,13 @@ def main():
             img = resize(img)
             cv.imshow('img', img)
 
-        key = cv.waitKey(100)
+        # Make sure application exits if we close the window of the image
+        visible = cv.getWindowProperty('img', cv.WND_PROP_VISIBLE)
+        if visible == 0.0:
+            cv.destroyAllWindows()
+            break
+
+        key = cv.waitKey(WAIT_TIME)
         if key == -1:
             continue
         print(f'key {key} pressed')
