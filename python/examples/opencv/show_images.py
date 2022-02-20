@@ -7,7 +7,7 @@ START_HEIGHT = 300
 MAX_HEIGHT = 600
 
 def resize(img, current_height):
-    print(img.shape)
+    #print(img.shape)
     height, width, colors = img.shape
 
     if height > current_height:
@@ -23,11 +23,11 @@ def slider_changed(event):
     #print(event)
 
 def get_size():
-    slider = cv.getWindowProperty('slider', cv.WND_PROP_VISIBLE)
+    slider = cv.getWindowProperty('img', cv.WND_PROP_VISIBLE)
     #print(slider)
     current_height = START_HEIGHT
     if slider > 0:
-        current_height = cv.getTrackbarPos("Size", "slider")
+        current_height = cv.getTrackbarPos("Size", "img")
     #print(current_height)
     return current_height
 
@@ -44,9 +44,9 @@ def main():
     prev_height = 0
     idx = 0
 
-    cv.namedWindow("slider")
+    cv.namedWindow("img")
+    cv.createTrackbar("Size", "img", START_HEIGHT, MAX_HEIGHT, slider_changed)
     ##cv.resizeWindow("slider", 640, 45)
-    cv.createTrackbar("Size", "slider", START_HEIGHT, MAX_HEIGHT, slider_changed)
 
     while True:
         current_height = get_size()
@@ -68,7 +68,7 @@ def main():
         key = cv.waitKey(WAIT_TIME)
         if key == -1:
             continue
-        print(f'key {key} pressed')
+        #print(f'key {key} pressed')
         if key == ord('q') or key == ord('x'):
             cv.destroyAllWindows()
             break
@@ -80,4 +80,3 @@ def main():
 
 
 main()
-print('after main')

@@ -403,6 +403,17 @@ Only for Live video:
 capture.set(3, width)
 capture.set(4, height)
 
+
+## Show images - accept key presses
+{id: opencv-show-images}
+
+* React to various keys
+* Close application if use closes the image window
+* Add slider to change the size of the image
+
+![](examples/opencv/show_images.py)
+
+
 ## OpenCV Resources
 {id: opencv-resources}
 
