@@ -6,13 +6,13 @@
 
 * A snake.
 * A British comedy group called [Monty Python](https://en.wikipedia.org/wiki/Monty_Python).
-* A programming languge. The definition of the language: words, punctuation (operators) and grammar (syntax).
+* A programming language. The definition of the language: words, punctuation (operators) and grammar (syntax).
 * The compiler/interpreter of the Python programming language. (aka. CPython).
 
 {aside}
 When people say they Python in relation to programming they either mean the Python programming language or they
 mean the tool that can translate some text (code) written in the Python programming language to the language a computer
-can actually understand. On MS Windows this is the **python.exe** you need to install. On Linux/Mac it is usally called **python**
+can actually understand. On MS Windows this is the **python.exe** you need to install. On Linux/Mac it is usually called **python**
 or **python3**. The generic name of the tool that translates a programming language for the computer is either
 called a compiler or an interpreter. We'll talk about this later on.
 {/aside}
@@ -394,7 +394,7 @@ Numpy but also other programming languages might have them.
 {aside}
 In this example we create two variables `width` and `height` containing the numbers 23 and 17 respectively.
 
-Unlike in math, in porgramming in general where you see a single equal sign `=` it means **assignment**. It means we want the value on the right-hand-side to be in the variable on the left-hand-side.
+Unlike in math, in programming in general where you see a single equal sign `=` it means **assignment**. It means we want the value on the right-hand-side to be in the variable on the left-hand-side.
 
 Others might say make the word/name on the left-hand-side of the `=` sign refer to the value that is on the right-hand-side.
 
@@ -419,13 +419,13 @@ A simple mathematical operation.
 What if we put the two numbers into quotation marks and this make them strings? Strings that look like number to the naked eyes, but nevertheless
 are strings for Python.
 
-If we try to multilpy them we get a nasty **exception**. Also known as a **runtime error**. The program stops running.
+If we try to multiply them we get a nasty **exception**. Also known as a **runtime error**. The program stops running.
 
 These exceptions might look nasty, but they are our friends. They tell us what went wrong and exactly where did that happen.
 
 You just need to remember that, at least in Python, you need to read the whole thing from the bottom to top. The last line
 holds the error message. Above that you can usually see the content of the line where the problem was found. One line above that
-you'll see the name of the file and the line number where the problem occured.
+you'll see the name of the file and the line number where the problem occurred.
 
 I strongly urge you to read the error message. If it is not yet clear what is the problem, then copy it to your favorite
 search engine and read the explanations you find.
@@ -465,7 +465,7 @@ Surprisingly it works. Though the result is a bit strange at first. As if Python
 
 Indeed the `+` operator is defined when we have two strings on the two sides. It is then called concatenation.
 
-In general you'll have to learn what the matematical operators do when they are applied to values other than numbers.
+In general you'll have to learn what the mathematical operators do when they are applied to values other than numbers.
 Usually the operation they do is quite logical. You just need to find the right logic.
 {/aside}
 
@@ -505,7 +505,7 @@ For example it has a module called `math` that provides all kinds of math-relate
 
 A function does something, an attribute just hold some value. More about this later.
 
-Specifially it has an attribute you can call `math.pi` with the value `3.141592653589793`. A much better proximation of PI.
+Specifically it has an attribute you can call `math.pi` with the value `3.141592653589793`. A much better proximation of PI.
 
 In the following solution we used that.
 {/aside}
