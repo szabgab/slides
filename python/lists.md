@@ -679,7 +679,7 @@ Dwarf       1
 ## Exercise: Check if number is prime
 {id: exercise-is-prime}
 
-Write a program called **is_prime.py** that gets a number on the commnad line a prints "True" if the number is a prime
+Write a program called **is_prime.py** that gets a number on the command line a prints "True" if the number is a prime
 number or "False" if it isn't.
 
 ```
@@ -699,7 +699,7 @@ True
 * First return the sequences containing only ACTG. The above string can will be changed to **['ACCG', 'C', 'GTTACTGGGC', 'TTGT']**.
 * Then sort them by lenght. Expected result: **['GTTACTGGGC', 'ACCG', 'TTGT', 'C']**
 
-* What if the original string contains more than on type of foreing elements? e.g. **'ACCGXXTXXYYGTTQRACQQTGGGCXTTGTXX'**. Can you do the same?
+* What if the original string contains more than on type of foreign elements? e.g. **'ACCGXXTXXYYGTTQRACQQTGGGCXTTGTXX'**. Can you do the same?
 * Expected output: **['TGGGC', 'ACCG', 'TTGT', 'GTT', 'AC', 'T']**
 
 
@@ -710,8 +710,8 @@ True
 
 * We would like to show a menu where each number corresponds to one element of the list so this is one of the places where we need to iterate over the indexes of a list.
 * `len(colors)` gives us the length of the list (in our case 4)
-* `range(len(colors))` is the range of numbers betwwen 0 and 4 (in our case), menaing 0, 1, 2, 3.
-* (Sometimes people explicetly write 4 in this solution, but if later we change the list and include another color we'll have to remember updating this number as well. This is error prone and it is very easy to deduct this number from the data we already have. (The list.))
+* `range(len(colors))` is the range of numbers between 0 and 4 (in our case), meaning 0, 1, 2, 3.
+* (Sometimes people explicitly write 4 in this solution, but if later we change the list and include another color we'll have to remember updating this number as well. This is error prone and it is very easy to deduct this number from the data we already have. (The list.))
 * We start the list from 0, but when we display the menu we would like to show the numbers 1-4 to make it more human friendly. Therefore we show `ix+1` and the color from locations `ix`.
 * We ask for input and save it in a variable.
 
@@ -734,7 +734,7 @@ First we have to decide where are we going to store the counts. A 10 element lon
 * We have a list of numbers.
 * We need a place to store the counters. For this we create a variable called counter which is a list of 10 0s. We are going to count the number of times the digit 3 appears in `counters[3]`.
 * We iterate over the numbers so `num` is the current number. (e.g. 1203)
-* We would like to iterate over the digits in the curreent number now, but if we write `for var in num` we will get an error `TypeError: 'int' object is not iterable` because `num` is a number, but numbers are not iterables, so we we cannot iterate over them. So we need to convert it to a string useing `str`.
+* We would like to iterate over the digits in the current number now, but if we write `for var in num` we will get an error `TypeError: 'int' object is not iterable` because `num` is a number, but numbers are not iterables, so we we cannot iterate over them. So we need to convert it to a string using `str`.
 * On each iteration `char` will be one character (which in or case we assume that will be a digit, but still stored as a string).
 * `int(char)` will convert the string to a number so for example "2" will be converted to 2.
 * `count[int(char)]` is going to be `char[2]` if `char` is "2". That's the location in the list where we count how many times the digit 2 appears in our numbers.

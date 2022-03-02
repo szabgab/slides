@@ -137,7 +137,7 @@ In this chapter we are going to talk about boolean values and operations on bool
 
 Unlike in some other languages Python actually has 2 special symbols to represent True and False.
 
-(In ther languages 0 usually represents False and 1 represents True.)
+(In those languages 0 usually represents False and 1 represents True.)
 {/aside}
 
 * True
@@ -220,7 +220,7 @@ Everything else is true.
 {id: incorrect-use-of-conditions}
 
 {aside}
-In your normal speach you could probably say something like "If status_code is 401 or 302, do something.".
+In your normal speech you could probably say something like "If status_code is 401 or 302, do something.".
 Meaning status_cone can be either 401 or 302.
 
 If you tried to translate this into code directly you would write something like this:
@@ -247,7 +247,7 @@ if status_code == 401 or status_code == 302:
 Alternative way:
 
 {aside}
-An alternative way to achieve the same results would be though probbaly at this point we have not learned the "in"
+An alternative way to achieve the same results would be though probably at this point we have not learned the "in"
 operator, nor lists (comma separated values in square brackets):
 {/aside}
 

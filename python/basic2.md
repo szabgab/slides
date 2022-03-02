@@ -40,7 +40,7 @@ A floating point number uses 24 bytes.
 
 An empty string uses 49 bytes.
 
-Then each character takes another byte. (Actually this is only true in the case of latin letters, but let's not get ahead of ourselves.)
+Then each character takes another byte. (Actually this is only true in the case of Latin letters, but let's not get ahead of ourselves.)
 {/aside}
 
 * The documentation of the [sys](https://docs.python.org/library/sys.html) module.
@@ -59,7 +59,7 @@ Therefore I recommend that you always write every script with a function called 
 
 * Function definition starts with the **def** keyword, followed by the name of the new function ("main" in this case), followed by the list of **parameters in parentheses** (nothing in this case).
 * The content or body of the function is then **indented** to the right.
-* The function definintion ends when the indentation stops.
+* The function definition ends when the indentation stops.
 
 If you execute this file you might be surprised that nothing happens. This is so because we only **defined** the function, we never used it. We'll do that next.
 {/aside}
@@ -74,7 +74,7 @@ This won't run as the main function is declared, but it is never called (invoked
 {i: def}
 
 {aside}
-In this example I added 3 lines to the previos file. The line `main()` calls the main function. We sometimes also say "runs the function" or "invokes the function".
+In this example I added 3 lines to the previous file. The line `main()` calls the main function. We sometimes also say "runs the function" or "invokes the function".
 In this context they mean the same.
 
 The two print-statements are not necessary to call the function, I only added them so it will be easy to see the order of the operations that you can observe
@@ -482,7 +482,7 @@ Results: 42
 ## Exercise: Standard Input
 {id: exercise-stdin}
 
-* In the previous exercises we expected the userinput to come in on the "Standard Input" aka. STDIN.
+* In the previous exercises we expected the user-input to come in on the "Standard Input" aka. STDIN.
 * If you would like to practice this more, come up with other ideas, try to solve them and tell me about the task. (in person or via e-mail.)
 * (e.g. you could start building an interactive role-playing game.)
 
@@ -634,7 +634,7 @@ $ python examples/basics/calculator_argv_eval.py 2 '*' 3
 **Compiled**
 
 * Languages: C, C++
-* Development cylce: Edit, Compile (link), Run.
+* Development cycle: Edit, Compile (link), Run.
 * Strong syntax checking during compilation and linking.
 * Result: Stand-alone executable code.
 * Need to compile to each platform separately. (Windows, Linux, Mac, 32bit vs 64bit).
@@ -643,7 +643,7 @@ $ python examples/basics/calculator_argv_eval.py 2 '*' 3
 
 * Shell, BASIC
 * Development cycle: Edit, Run.
-* Syntaxt check only during run-time.
+* Syntax check only during run-time.
 * Result: we distribute the source code.
 * Needs the right version of the interpreted on every target machine.
 

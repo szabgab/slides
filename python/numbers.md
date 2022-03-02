@@ -10,7 +10,7 @@
 In Python numbers are stored as decimals, but in the source code you can also use hexadecimal, octal, or binary notations.
 This is especially useful if the domain you are programming in is using those kinds of numbers.
 For example hardware engineers often talk in hexadecimal values.
-In that case you won't need to contantly translate between the form used in the current domain and decimal numbers.
+In that case you won't need to constantly translate between the form used in the current domain and decimal numbers.
 {/aside}
 
 
@@ -56,7 +56,7 @@ always call the "int" function: int(b/a).
 {/aside}
 
 
-## Pseudo Random Number (unform distribution)
+## Pseudo Random Number (uniform distribution)
 {id: random}
 {i: random}
 

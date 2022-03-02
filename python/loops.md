@@ -5,7 +5,7 @@
 {id: for-while-loops}
 
 * **for in** - to iterate over a well defined list of values. (characters, range of numbers, shopping list, etc.)
-* **while** - repeate an action till some condition is met. (or stopped being met)
+* **while** - repeat an action till some condition is met. (or stopped being met)
 
 
 
@@ -161,7 +161,7 @@ The `else` part will be executed if the loop finished all the iterations without
 {id: exercise-print-all-the-locations}
 
 * Create a file called **location_in_string.py**
-* Given a string like "The black cat climbed the green tree.", print out the location of every "c" charcater.
+* Given a string like "The black cat climbed the green tree.", print out the location of every "c" character.
 
 Expected:
 
@@ -220,7 +220,7 @@ Level 6
 {id: exercise-count-unique}
 
 * Create file called **count_unique_characters.py**
-* Given a string on the command line, count how many differnt characters it has.
+* Given a string on the command line, count how many different characters it has.
 
 ```
 python count_unique.py abcdaaa
@@ -246,7 +246,7 @@ python count_unique.py abcdaaa
 When you start thinking about this exercise, you probably call `loc = text.find("c")` and then you wonder how could you find the next element.
 After a while it might occur to you that the `find` method can get a second parameter to set the location where we start the search.
 
-Basically you need to call `loc = text.find("c", loc + 1)` but that looks strange. How can you use `loc` (as a paramter of the function) and also
+Basically you need to call `loc = text.find("c", loc + 1)` but that looks strange. How can you use `loc` (as a parameter of the function) and also
 assign to it. However programming languages don't have a problem with this as the assignment happens after the right-hand-side was fully executed.
 
 The problem that now you have two different calls to `find`. The first one and all the subsequent calls.
@@ -260,7 +260,7 @@ it will start from the first character (index 0).
 ![](examples/loops/find_loop_one.py)
 
 {aside}
-Using an additinal variable might make the code easier to read:
+Using an additional variable might make the code easier to read:
 {/aside}
 
 ![](examples/loops/find_loop.py)

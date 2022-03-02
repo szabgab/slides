@@ -131,7 +131,7 @@ These are just some extreme special cases. Most people won't need to know about 
 
 Anything that is not in curly braces will be formatted as they are.
 
-## paramerized formatter
+## parameterized formatter
 {id: parameterized-formatter}
 
 ![](examples/format/formatter_func.py)
