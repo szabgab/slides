@@ -19,6 +19,11 @@ func mainPage(w http.ResponseWriter, r *http.Request) {
 
 func main() {
 	http.HandleFunc("/", mainPage)
-	fmt.Println("Going to listen on http://localhost:5000  Ctr-c to stop the server.")
-	log.Fatal(http.ListenAndServe("127.0.0.1:5000", nil))
+	host := "127.0.0.1"
+	port := 5000
+	fmt.Printf("Going to listen on http://%v:%v  Ctr-c to stop the server.\n", host, port)
+	err := http.ListenAndServe(fmt.Sprintf("%v:%v", host, port), nil)
+	if err != nil {
+		log.Fatal(err)
+	}
 }
