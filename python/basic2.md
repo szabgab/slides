@@ -528,6 +528,17 @@ Operator (+-*/): +
 5
 ```
 
+Try Again, this time:
+
+```
+Number: os.system("ls -l")
+Number:
+Operator (+-*/):
+```
+
+And then you could try it with `rm -rf /` or if you are on Windows try `os.system("dir")`
+
+
 * Now forget this and don't use `eval` for the next few years!
 
 ## Solution: Age limit

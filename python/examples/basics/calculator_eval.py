@@ -1,3 +1,4 @@
+import os
 
 def main():
     a = input("Number: ")
