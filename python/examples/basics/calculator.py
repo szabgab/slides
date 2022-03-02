@@ -13,7 +13,7 @@ def main():
     elif op == '/':
         res = a/b
     else:
-        print("Invalid operator: '{}'".format(op))
+        print(f"Invalid operator: '{op}'")
         return
 
     print(res)
