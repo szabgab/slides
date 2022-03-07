@@ -252,7 +252,7 @@ operator, nor lists (comma separated values in square brackets):
 {/aside}
 
 ```
-if status_code in [401, 302]
+if status_code in [401, 302]:
     pass
 ```
 
