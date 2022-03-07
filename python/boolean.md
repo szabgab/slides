@@ -70,6 +70,11 @@ In `Python 3`, comparing different types raises exception:
 
 ![](examples/boolean/complex_if.py)
 
+## Chained expressions
+{id: chaioned-expressions}
+
+![](examples/boolean/chained_expressions.py)
+
 ## Boolean operators
 {id: boolean-operators}
 {i: and}

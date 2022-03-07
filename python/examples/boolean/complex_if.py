@@ -6,7 +6,6 @@ if 0 < age and age <= 18:
 else:
     print("age is NOT between 0 and 18")
 
-
 if age < 18 or 65 < age:
     print("Young or old")
 else:
