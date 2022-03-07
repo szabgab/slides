@@ -152,7 +152,7 @@ Unlike in some other languages Python actually has 2 special symbols to represen
 ## Comparison returns True or False
 {id: comparison-returns-true-or-false}
 
-![](examples/other/compare_equals.py)
+![](examples/boolean/compare_equals.py)
 
 
 ## Assign comparisons to variables
