@@ -141,8 +141,8 @@ If we then assign some other string to either of the variables, then they will p
 ![](examples/strings/functions.py)
 
 * Type **dir("")** in the REPL to get the list of string methods.
-* List of [built-in functions](http://docs.python.org/library/functions.html).
-* List of [string methods](http://docs.python.org/library/string.html).
+* List of [built-in functions](https://docs.python.org/library/functions.html).
+* List of [string methods](https://docs.python.org/3/library/stdtypes.html#string-methods).
 
 
 ## index in string
