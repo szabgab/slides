@@ -45,6 +45,10 @@ second row
 third row
 ```
 
+## Triple quoted comments - documentation
+{id: triple-quoted-comments}
+
+![](examples/strings/triple_comments.py)
 
 ## String length (len)
 {id: string-length}
@@ -297,6 +301,11 @@ Hello world!
 {id: solution-from-ascii-cli}
 
 ![](examples/strings/from_ascii.py)
+
+## Solution: Show characters based on Unicode code-points
+{id: solution-show-characters-based-on-code-points}
+
+![](examples/strings/show_chars.py)
 
 ## Solution: ROT13
 {id: solution-rot13}

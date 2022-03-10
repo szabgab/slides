@@ -216,7 +216,7 @@ To remove an element by its index, use the slice syntax:
 
 
 
-## Use list as a queue
+## Use list as a queue - FIFO
 {id: list-as-a-queue}
 
 ![](examples/lists/list_as_a_queue.py)
@@ -248,7 +248,7 @@ To remove an element by its index, use the slice syntax:
 ![](examples/lists/fixed_size_queue.py)
 
 
-## List as a stack
+## List as a stack - LIFO
 {id: list-as-a-stack}
 
 ![](examples/lists/stack.py)
