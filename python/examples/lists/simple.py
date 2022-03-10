@@ -2,6 +2,7 @@ planets = ['Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn']
 
 print(planets)   # ['Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn']
 print(len(planets))    # 6
+print(type(planets))      # <class 'list'>
 
 print(planets[0])         # Mercury
 print(type(planets[0]))   # <class 'str'>
