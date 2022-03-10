@@ -1,4 +1,4 @@
-for i in range(11, 18, 2):
+for i in range(11, 19, 2):
     print(i)
 # 11
 # 13
@@ -15,3 +15,12 @@ for i in range(3):
 # 0
 # 1
 # 2
+
+for i in range(19, 11, -2):
+    print(i)
+
+# 19
+# 17
+# 15
+# 13
+
