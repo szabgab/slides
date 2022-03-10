@@ -1,0 +1,4 @@
+[['Earth', 2], ['Earth', 3], ['Mercury', 1], ['Venus', 2]]
+[['Mercury', 100], ['Venus', 2], ['Earth', 3], ['Earth', 2]]
+[['Mercury', 100], ['Venus', 2], ['Earth', 3], ['Earth', 2]]
+[['Earth', 2], ['Earth', 3], ['Mercury', 100], ['Venus', 2]]

@@ -472,7 +472,14 @@ In Python 3 it throws an exception.
 The sort() method will sort a list in-place and return None.
 The built-in sorted() function will return the sorted list and leave the original list intact.
 
+## Sorted and change - shallow copy
+{id: sorted-and-change}
 
+![](examples/lists/sorted_and_change.py)
+![](examples/lists/sorted_and_change.out)
+
+![](examples/lists/sorted_and_change_deep.py)
+![](examples/lists/sorted_and_change_deep.out)
 
 
 ## key sort with sorted
