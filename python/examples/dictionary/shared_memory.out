@@ -1,5 +1,8 @@
 {'Foo': {'name': 'Foo', 'id': '1'}, 'Bar': {'name': 'Bar', 'id': '2'}, 'Moo': {'name': 'Moo', 'id': '3'}}
 {'1': {'name': 'Foo', 'id': '1'}, '2': {'name': 'Bar', 'id': '2'}, '3': {'name': 'Moo', 'id': '3'}}
+-------------------
 {'name': 'Foo', 'id': '1'}
-{'name': 'Foo', 'id': '1', 'email': 'foo@weizmann.ac.il'}
-{'name': 'Foo', 'id': '1', 'email': 'foo@weizmann.ac.il'}
+{'Foo': {'name': 'Foooooo', 'id': '1', 'email': 'foo@weizmann.ac.il'}, 'Bar': {'name': 'Bar', 'id': '2'}, 'Moo': {'name': 'Moo', 'id': '3'}}
+{'1': {'name': 'Foooooo', 'id': '1', 'email': 'foo@weizmann.ac.il'}, '2': {'name': 'Bar', 'id': '2'}, '3': {'name': 'Moo', 'id': '3'}}
+{'name': 'Foooooo', 'id': '1', 'email': 'foo@weizmann.ac.il'}
+{'name': 'Foooooo', 'id': '1', 'email': 'foo@weizmann.ac.il'}

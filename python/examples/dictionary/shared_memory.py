@@ -15,14 +15,19 @@ people = [
 
 by_name = {}
 by_id = {}
-for p in people:
-    by_name[ p['name' ] ] = p
-    by_id[ p['id' ] ] = p
+for person in people:
+    by_name[ person['name' ] ] = person
+    by_id[ person['id' ] ] = person
 print(by_name)
 print(by_id)
+print('-------------------')
 
 print(by_name["Foo"])
 by_name["Foo"]['email'] = 'foo@weizmann.ac.il'
-print(by_name["Foo"])
 
+people[0]["name"] = "Foooooo";
+print(by_name)
+print(by_id)
+
+print(by_name["Foo"])  # the key remained Foo !!!!
 print(by_id["1"])
