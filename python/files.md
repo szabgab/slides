@@ -130,6 +130,7 @@ Beware though, if the file is too big, it might not fit in the free memory of th
 {/aside}
 
 ![](examples/files/read_full_file.py)
+![](examples/files/read_full_file.out)
 
 
 ## Read all the characters into a string (slurp)
@@ -144,6 +145,7 @@ It can also be used to read in chunks of the file.
 {/aside}
 
 ![](examples/files/slurp.py)
+![](examples/files/slurp.out)
 
 {aside}
 
@@ -166,6 +168,7 @@ read(20) will read 20 bytes.
 Exception handling
 
 ![](examples/files/open_file_handle.py)
+![](examples/files/open_file_handle.out)
 
 
 ## Open many files - exception handling
@@ -176,10 +179,10 @@ Exception handling
 ![](examples/files/empty.txt)
 
 ```
-$ python average_from_files.pyt number_per_line.txt empty.txt number_per_line2.txt
+$ python average_from_files.py number_per_line.txt empty.txt number_per_line2.txt
 
 Average:  58.25
-trouble with empty.txt
+trouble with 'empty.txt': Error: division by zero
 Average:  3.5
 ```
 

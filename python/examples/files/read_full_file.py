@@ -1,10 +1,15 @@
 filename = 'examples/files/numbers.txt'
 
 with open(filename, 'r') as fh:
-    lines_list = fh.readlines()   # reads all the lines into a list
+    lines = fh.readlines()   # reads all the lines into a list
 
-# print number of lines
-print(len(lines_list))
+print(f"number of lines: {len(lines)}")
 
-for line in lines_list:
+for line in lines:
     print(line, end="")
+print('------')
+
+lines.reverse()
+for line in lines:
+    print(line, end="")
+

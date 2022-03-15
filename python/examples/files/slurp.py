@@ -1,9 +1,10 @@
 filename = 'examples/files/numbers.txt'
 
 with open(filename, 'r') as fh:
-    lines_str = fh.read()   # reads all the lines into a string
+    content = fh.read()   # reads all the lines into a string
 
-print(len(lines_str))   # number of characters in file
+print(type(content))
+print(len(content))   # number of characters in file
 
-print(lines_str)        # the content of the file
+print(content)        # the content of the file
 
