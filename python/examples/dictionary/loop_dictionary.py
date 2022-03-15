@@ -3,8 +3,8 @@ user = {
     'lname': 'Bar',
 }
 
-for k in user:
-    print("{} -> {}".format(k, user[k]))
+for key in user:
+    print(f"{key} -> {user[key]}")
 
 # lname -> Bar
 # fname -> Foo

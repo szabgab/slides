@@ -1,4 +1,4 @@
-[{'name': 'Foo Bar', 'email': 'foo@example.com'}, {'name': 'Qux Bar', 'email': 'qux@example.com', 'address': 'Borg, Country', 'children': ['Alpha', 'Beta']}]
 Foo Bar
 Alpha
-['Foo Bar', 'Qux Bar']
+['Alpha', 'Beta', 'Gamma']
+['Foo Bar', 'Tal Bar']

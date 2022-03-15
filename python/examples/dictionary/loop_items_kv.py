@@ -1,8 +1,8 @@
 people = {
-    "foo" : "123",
-    "bar" : "456",
-    "qux" : "789",
+    "Tal"  : "123",
+    "Maya" : "456",
+    "Ruth" : "789",
 }
 
 for name, uid in people.items():
-    print("{} => {}".format(name, uid))
+    print(f"{name} => {uid}")

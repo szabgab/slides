@@ -3,14 +3,14 @@ user = {
     'lname': 'Bar',
 }
 
-for k in user.keys():
-    print(k)
+for key in user.keys():
+    print(key)
 
 # lname
 # fname
 
-for k in user.keys():
-    print("{} -> {}".format(k, user[k]))
+for key in user.keys():
+    print(f"{key} -> {user[key]}")
 
 # lname -> Bar
 # fname -> Foo

@@ -8,7 +8,7 @@ scores = {
 # sort using a lambda expression
 sorted_names = sorted(scores, key=lambda x: scores[x])
 
-print(sorted_names) # ["Foo", "Bar", "Miu", "Abc"]
+print(sorted_names) # ["Foo", "Bar", "Abc", "Miu"]
 
 for k in sorted_names:
     print("{} : {}".format(k, scores[k]))
@@ -17,6 +17,4 @@ for k in sorted_names:
 # Bar : 34
 # Abc : 34
 # Miu : 88
-
-
 

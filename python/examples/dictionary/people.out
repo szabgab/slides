@@ -1,0 +1,14 @@
+Moshe
+{'fname': 'Moshe', 'lname': 'Cohen', 'email': 'moshe@cohen.com', 'children': ['Maya', 'Tal']}
+{'fname': 'Dana', 'lname': 'Levy', 'email': 'dana@levy.com', 'phone': '123-456'}
+----------------
+dana@levy.com
+Moshe Cohen  ->  moshe@cohen.com
+Dana Levy  ->  dana@levy.com
+----------------
+Cohen
+{'fname': 'Dana', 'lname': 'Levy', 'email': 'dana@levy.com', 'phone': '123-456'}
+Moshe
+{'fname': 'Moshe', 'lname': 'Cohen', 'email': 'moshe@cohen.com', 'children': ['Maya', 'Tal']}
+Dana
+{'fname': 'Dana', 'lname': 'Levy', 'email': 'dana@levy.com', 'phone': '123-456'}

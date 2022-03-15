@@ -17,6 +17,15 @@
 * Name of a feature to value of the feature.
 * Name of an attribute to value of the attribute.
 
+## Various dictionary examples
+{id: various-dictionary-examples}
+
+![](examples/dictionary/person.py)
+
+![](examples/dictionary/people.py)
+
+![](examples/dictionary/people.out)
+
 
 ## Dictionary
 {id: dictionary}
@@ -201,11 +210,6 @@ Since Python 3.7
 
 ![](examples/dictionary/set_order.py)
 ![](examples/dictionary/set_order.out)
-
-## Various dictionary examples
-{id: various-dictionary-examples}
-
-![](examples/dictionary/people.py)
 
 ## Setdefault
 {id: setdefault}

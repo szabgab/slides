@@ -5,5 +5,8 @@ user = {
 
 print(user)   # {'lname': 'Bar', 'fname': 'Foo'}
 
-print(user.keys())    # ['lname', 'fname']
+user['email'] = 'foo@bar.com'
+
+print(user.keys())        # dict_keys(['fname', 'lname', 'email'])
+print(list(user.keys()))  # ['fname', 'lname', 'email']
 

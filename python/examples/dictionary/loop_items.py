@@ -3,9 +3,11 @@ user = {
     'lname': 'Bar',
 }
 
-for t in user.items():      #  returns tuples
-    print("{} -> {}".format(t[0], t[1]))
-    #print("{} -> {}".format(*t))
+for tpl in user.items():      # iterates on tuples
+    print(f"{tpl[0]} -> {tpl[1]}")
+    print("{} -> {}".format(*tpl))
 
-# lname -> Bar
 # fname -> Foo
+# fname -> Foo
+# lname -> Bar
+# lname -> Bar
