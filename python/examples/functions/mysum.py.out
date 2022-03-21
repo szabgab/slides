@@ -1,3 +1,6 @@
+()
+<class 'tuple'>
+0
 (1,)
 <class 'tuple'>
 1
@@ -10,5 +13,3 @@
 (2, 3, 5, 6)
 <class 'tuple'>
 16
-([2, 3, 5, 6],)
-<class 'tuple'>

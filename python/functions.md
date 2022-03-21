@@ -132,7 +132,7 @@ The values arrive as `tuple`.
 ![](examples/functions/sum_of_list_fixed.py)
 ![](examples/functions/sum_of_list_fixed.py.out)
 
-## Arbitrary number of arguments passing a  tuple 
+## Arbitrary number of arguments passing a  tuple
 {id: arbitrary-number-of-arguments-tuple}
 
 ![](examples/functions/sum_of_tuple.py)
