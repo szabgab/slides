@@ -1,10 +1,12 @@
 user = {
    'fname': 'Foo',
    'lname': 'Bar',
+   'workplace': 'Bar',
 }
 
-print(user)   # {'lname': 'Bar', 'fname': 'Foo'}
+print(user)   # {'fname': 'Foo', 'lname': 'Bar', 'workplace': 'Bar'}
 
-print(user.keys())    # ['lname', 'fname']
+print(user.keys())    # dict_keys(['fname', 'lname', 'workplace'])
 
-print(user.values())  # ['Bar', 'Foo']
+print(user.values())  # dict_values(['Foo', 'Bar', 'Bar'])
+

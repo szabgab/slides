@@ -548,3 +548,8 @@ Generate random DNA sequence
 
 ![examples/dictinoary/namedtuple.py)
 
+## Sort Hungarian letters (lookup table)
+{id: sort-hungarian-letters}
+
+![](examples/lists/sort_hungarian_letters.py)
+

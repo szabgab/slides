@@ -5,6 +5,12 @@ scores = {
    'Abc' : 34,
 }
 
+def by_value(x):
+    return scores[x]
+
+sorted_names = sorted(scores, key=by_value)
+print(sorted_names) # ["Foo", "Bar", "Abc", "Miu"]
+
 # sort using a lambda expression
 sorted_names = sorted(scores, key=lambda x: scores[x])
 
