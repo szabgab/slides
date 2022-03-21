@@ -121,8 +121,25 @@ They are all optional and can be given in any order after the positional argumen
 The values arrive as `tuple`.
 {/aside}
 
-![](examples/functions/sum.py)
-![](examples/functions/sum.py.out)
+![](examples/functions/mysum.py)
+![](examples/functions/mysum.py.out)
+
+## Arbitrary number of arguments passing a lists
+{id: arbitrary-number-of-arguments-list}
+
+![](examples/functions/sum_of_list.py)
+![](examples/functions/sum_of_list.py.out)
+![](examples/functions/sum_of_list_fixed.py)
+![](examples/functions/sum_of_list_fixed.py.out)
+
+## Arbitrary number of arguments passing a  tuple 
+{id: arbitrary-number-of-arguments-tuple}
+
+![](examples/functions/sum_of_tuple.py)
+![](examples/functions/sum_of_tuple.py.out)
+![](examples/functions/sum_of_tuple_fixed.py)
+![](examples/functions/sum_of_tuple_fixed.py.out)
+
 
 
 ## Fixed parmeters before the others
@@ -326,12 +343,12 @@ Create a file called **statistics.py** that has a function that will accept any 
 * Minimum
 * Maximum
 
-## Exercise: Pascal triangle
+## Exercise: Pascal's triangle
 {id: exercise-pascal-triangle}
 
-* Create a file called **pascal_triangle.py** that given a number N on the command line will print the first N rows of the Pascal triangle.
+* Create a file called **pascal_triangle.py** that given a number N on the command line will print the first N rows of the [Pascal's triangle](https://en.wikipedia.org/wiki/Pascal%27s_triangle).
 
-## Exercise: Pascal triangle functions
+## Exercise: Pascal's triangle functions
 {id: exercise-pascal-triangle-functions}
 
 * Create a file called **pascal_triangle_functions.py** that will do exactly as the previous one, but this time make sure you have these functions:

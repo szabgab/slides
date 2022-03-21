@@ -5,5 +5,8 @@ print(type(things))
 if 'table' in things:
    print("has table")
 
-other = {'table', 'chair', 'door'}
+other = {'table', 'chair', 'door', 'chair'}
+print(other)
 print(type(other))
+
+

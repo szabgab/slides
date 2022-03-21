@@ -117,5 +117,21 @@
 
 ![](img/180px-Venn0010.svg.png)
 
+# Set of numbers
+{id: set-of-numbers}
 
+![](examples/sets/set_of_numbers.py)
+![](examples/sets/set_of_numbers.out)
+
+# Set of lists
+{id: set-of-lists}
+
+![](examples/sets/set_of_lists.py)
+![](examples/sets/set_of_lists.out)
+
+# Set of tuples
+{id: set-of-tuples}
+
+![](examples/sets/set_of_tuples.py)
+![](examples/sets/set_of_tuples.out)
 
