@@ -1,8 +1,8 @@
 # Sets
-{id: python-sets}
+{id: sets}
 
 ## sets
-{id: sets}
+{id: python-sets}
 {i: set}
 
 * Sets in Python are used when we are primarily interested in operations that we know from the [set theory](https://en.wikipedia.org/wiki/Set_theory).
@@ -117,19 +117,19 @@
 
 ![](img/180px-Venn0010.svg.png)
 
-# Set of numbers
+## Set of numbers
 {id: set-of-numbers}
 
 ![](examples/sets/set_of_numbers.py)
 ![](examples/sets/set_of_numbers.out)
 
-# Set of lists
+## Set of lists
 {id: set-of-lists}
 
 ![](examples/sets/set_of_lists.py)
 ![](examples/sets/set_of_lists.out)
 
-# Set of tuples
+## Set of tuples
 {id: set-of-tuples}
 
 ![](examples/sets/set_of_tuples.py)
