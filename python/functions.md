@@ -140,8 +140,6 @@ The values arrive as `tuple`.
 ![](examples/functions/sum_of_tuple_fixed.py)
 ![](examples/functions/sum_of_tuple_fixed.py.out)
 
-
-
 ## Fixed parmeters before the others
 {id: fixed-and-variable-length-argument-list}
 
@@ -151,6 +149,13 @@ The `*numbers` argument can be preceded by any number of regular arguments
 
 ![](examples/functions/super.py)
 ![](examples/functions/super.py.out)
+
+## Pass arbitrary number of functions
+{id: arbitrary-number-of-functions}
+
+* As an advanced example we could even pass an arbitrary number of functions
+
+![](examples/functions/run_these.py)
 
 ## Arbitrary key-value pairs in parameters `**`
 {id: kw-value-pairs}
@@ -255,10 +260,15 @@ Details showed on the next slide
 ![](examples/functions/change.py)
 
 
-## Variable assignment and change - Mutable
-{id: assignment-details}
+## Variable assignment and change - Mutable list
+{id: assignment-details-list}
 
-![](examples/functions/change_details.py)
+![](examples/functions/change_details_list.py)
+
+## Variable assignment and change - Mutabled dict
+{id: assignment-details-dict}
+
+![](examples/functions/change_details_dict.py)
 
 
 ## Parameter passing of functions
