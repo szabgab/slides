@@ -1,4 +1,2 @@
-{'Mars', 'Venus', 'Mercury', 'Earth', 'Saturn', 'Jupiter'}
-{'Mars', 'Earth', 'Venus', 'Mercury'}
-{'Mars', 'Saturn', 'Jupiter'}
-{'Mars', 'Venus', 'Mercury', 'Earth', 'Saturn', 'Jupiter'}
+{'Mars', 'Earth', 'Jupiter', 'Saturn', 'Mercury', 'Venus'}
+{'Earth', 'Mars', 'Mercury', 'Venus'}

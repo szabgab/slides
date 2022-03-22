@@ -38,6 +38,12 @@
 ![](examples/sets/create_set.py)
 ![](examples/sets/create_set.out)
 
+## Creating a set from a list
+{id: creating-a-set-from-a-list}
+
+![](examples/sets/create_set_from_list.py)
+![](examples/sets/create_set_from_list.out)
+
 ## Creating an empty set
 {id: creating-an-empty-set}
 
