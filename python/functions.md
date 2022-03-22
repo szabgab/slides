@@ -156,6 +156,7 @@ The `*numbers` argument can be preceded by any number of regular arguments
 * As an advanced example we could even pass an arbitrary number of functions
 
 ![](examples/functions/run_these.py)
+![](examples/functions/run_these.out)
 
 ## Arbitrary key-value pairs in parameters `**`
 {id: kw-value-pairs}
@@ -177,6 +178,7 @@ The `*numbers` argument can be preceded by any number of regular arguments
 {id: every-parameter-option}
 
 ![](examples/functions/full.py)
+![](examples/functions/full.out)
 
 
 ## Duplicate declaration of functions (multiple signatures)
