@@ -579,6 +579,12 @@ and in each place it will be explained. Otherwise you don't need to use tuples.
 
 e.g. keys of dictionaries can be tuple (but not lists).
 
+## Change a tuple
+{id: change-a-tuple}
+
+![](examples/lists/change_tuple.py)
+
+
 
 ## Sort tuples
 {id: sort-tuples}
