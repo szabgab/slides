@@ -49,6 +49,8 @@ to the part within the parentheses.
 
 (\d\d).*\1.*\1
 
+(\d\d).*\1{2, 3}    "23 afjh 2323 kjdhfkh"
+
 (.{5}).*\1
 ```
 
@@ -534,6 +536,7 @@ Python 3.8 required
 {i: \Z}
 {i: ^}
 {i: $}
+
 ![](examples/regex/other_anchors.py)
 
 

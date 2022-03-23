@@ -106,9 +106,16 @@ They match 'xaaa', 'xa' and '' respectively.
 ![](examples/regex/anchors.py)
 ![](examples/regex/anchors.out)
 
+## Anchors with mulitline
+{id: anchors-with-multiline}
+
+
+![](examples/regex/anchors_multiline.py)
+
 
 ## Anchors on both end
 {id: anchors-both-end}
+
 ![](examples/regex/anchors_both.py)
 ![](examples/regex/anchors_both.out)
 

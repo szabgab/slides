@@ -9,12 +9,15 @@ for i in range(100):
 print(dna)
 
 '''
+   ([GATC]+).*\1   "GGCATCAT"
+
 Generating regexes:
 
    ([GATC]{1}).*\1
    ([GATC]{2}).*\1
    ([GATC]{3}).*\1
    ([GATC]{4}).*\1
+   ...
 '''
 length = 1
 result = ''
