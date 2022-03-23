@@ -8,6 +8,7 @@
 All the rows with either 'apple pie' or 'banana pie' in them.
 
 ![](examples/regex/alternatives.py)
+![](examples/regex/alternatives.out)
 
 
 ## Alternatives
@@ -17,6 +18,7 @@ All the rows with either 'apple pie' or 'banana pie' in them.
 Alternatives
 
 ![](examples/regex/alternatives_in_regex.py)
+![](examples/regex/alternatives_in_regex.out)
 
 
 ## Grouping and Alternatives
@@ -27,6 +29,7 @@ Move the common part in one place and limit the alternation
 to the part within the parentheses.
 
 ![](examples/regex/alternatives_with_grouping.py)
+![](examples/regex/alternatives_with_grouping.out)
 
 
 ## Internal variables
@@ -35,24 +38,16 @@ to the part within the parentheses.
 {i: \2}
 {i: \3}
 {i: \4}
+
 ![](examples/regex/same_character.py)
+![](examples/regex/same_character.out)
 
 
 ## More internal variables
 {id: internal-variables-more}
 {i: \1}
 
-```
-(.)(.)\2\1
-
-(\d\d).*\1
-
-(\d\d).*\1.*\1
-
-(\d\d).*\1{2, 3}    "23 afjh 2323 kjdhfkh"
-
-(.{5}).*\1
-```
+![](examples/regex/internal_variables.py)
 
 
 ## Regex DNA
@@ -63,6 +58,7 @@ to the part within the parentheses.
 * Then find the longest repeated sequence in it
 
 ![](examples/regex/dna.py)
+![](examples/regex/dna.out)
 
 
 ## Regex IGNORECASE

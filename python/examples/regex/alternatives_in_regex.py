@@ -6,7 +6,7 @@ strings = [
     'apple'
 ]
 
-for s in strings:
-    match = re.search(r'apple pie|banana pie', s)
+for line in strings:
+    match = re.search(r'apple pie|banana pie', line)
     if match:
-        print('Matched in', s)
+        print('Matched in', line)

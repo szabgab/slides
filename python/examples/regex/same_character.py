@@ -6,8 +6,8 @@ strings = [
     'infinite loop',
 ]
 
-for s in strings:
-    match = re.search(r'(.)\1', s)
+for line in strings:
+    match = re.search(r'(.)\1', line)
     if match:
-        print(match.group(0), 'matched in', s)
+        print(match.group(0), 'matched in', line)
         print(match.group(1))

@@ -2,15 +2,18 @@ import re
 import random
 
 chars = ['G', 'A', 'T', 'C']
-dna = ''
+dna = 'AT'
 for i in range(100):
     dna += random.choice(chars)
 
 print(dna)
 
-'''
-   ([GATC]+).*\1   "GGCATCAT"
+# finds the first one, not necessarily the longest one
+match = re.search(r"([GATC]+).*\1", dna)
+if match:
+    print(match.group(1))
 
+'''
 Generating regexes:
 
    ([GATC]{1}).*\1
