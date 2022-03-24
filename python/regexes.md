@@ -33,9 +33,9 @@
 ```
 Is the input given by the user a number?
 
-(BTW which one is a number:  23, 2.3,  2.3.4, 2.4e3, abc ?)
+(BTW which one is a number:  23, 2.3, .3, 2., 2.3.4.7.12, 2.4e3, abc ?)
 
-Is there a word in the file that is repeated 3 or more times?
+Is there a substring in the file that is repeated 3 or more times?
 
 Replaces all occurrences of Python or python by Java ...
 ... but avoid replacing Monty Python.
@@ -247,6 +247,17 @@ r'#[a-f@.]#'
 
 * Use stand alone: \d or as part of a larger character class: [abc\d]
 
+## Negated character class
+{id: negated-character-class}
+{i: \D}
+{i: \W}
+{i: \S}
+
+* **[^abc]** matches any one character that is not 'a', not 'b' and not 'c'.
+* \D not digit [^\d]
+* \W not word character [^\w]
+* \S not white space [^\s]
+
 ## Character classes summary
 {id: character-classes-summary}
 
@@ -280,14 +291,4 @@ a[a^x]a     # aaa, a^a, axa
 ![](examples/regex/word_characters.py)
 ![](examples/regex/word_characters.out)
 
-## Negated character class
-{id: negated-character-class}
-{i: \D}
-{i: \W}
-{i: \S}
-
-* **[^abc]** matches any one character that is not 'a', not 'b' and not 'c'.
-* \D not digit [^\d]
-* \W not word character [^\w]
-* \S not white space [^\s]
 
