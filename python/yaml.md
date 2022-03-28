@@ -17,7 +17,7 @@ Documentation of the
 ![](examples/yaml/read_yaml.py)
 
 ## Write YAML
-{id: read-yaml}
+{id: write-yaml}
 {i: dump}
 {i: Dumper}
 
