@@ -30,4 +30,14 @@ Documentation of the
 
 ![](examples/yaml/yaml_counter.py)
 
+## Exercise: Counter in YAML
+{id: exercise-yaml-counter}
+
+Exactly like the same exercise in the JSON chapter, but use a YAML file as the "database".
+
+
+## Exercise: Phone book in YAML
+{id: exercise-yaml-phonebook}
+
+Exactly like the same exercise in the JSON chapter, but use a YAML file as the "database".
 

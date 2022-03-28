@@ -169,7 +169,11 @@ argparse_type.py: error: argument number: invalid int value: 'abc'
 We got a much better error message as argparse already found out the
 argument was a string and not a number as expected.
 
-
+```
+$ python argparse_type.py 3.14
+usage: argparse_type.py [-h] number
+argparse_type.py: error: argument number: invalid int value: '3.14'
+```
 
 ```
 $ argparse_type.py 23
@@ -231,31 +235,9 @@ False
 
 ![](examples/argparse/argparse_shortname.py)
 
-**python argparse_shortname.py -c Blue -v**
-**python argparse_shortname.py -vc Blue**
-
-
-## Exercise: Command line parameters
-{id: exercise-argparse}
-
-Take the code from the color selector exercise in the files section and change it so
-the user can supply the name of the file where the colors are listed using the
-`--file filename` option.
-
-If the user supplies an incorrect color name (which is not listed among the accepted colors)
-give an error message and stop execution.
-
-Allow the user to supply a flag called `--force` that will
-override the color-name-validity checking and will allow any color name.
-
-## Exercise: argparse positional and named
-{id: exercise-argparse-positional-and-named}
-
-Create a script that can accept any number of filenames, the named parameter `--machine` and the flag `--verbose`.
-Like this:
-
 ```
-python ex.py file1 file2 file3 --machine MACHINE --verbose
+python argparse_shortname.py -c Blue -v
+python argparse_shortname.py -vc Blue
 ```
 
 
@@ -316,6 +298,29 @@ $ python argument_with_optional_value.py --level
 ```
 $ python argument_with_optional_value.py --level 20
 20
+```
+
+## Exercise: Command line parameters
+{id: exercise-argparse}
+
+Take the code from the color selector exercise in the files section and change it so
+the user can supply the name of the file where the colors are listed using the
+`--file filename` option.
+
+If the user supplies an incorrect color name (which is not listed among the accepted colors)
+give an error message and stop execution.
+
+Allow the user to supply a flag called `--force` that will
+override the color-name-validity checking and will allow any color name.
+
+## Exercise: argparse positional and named
+{id: exercise-argparse-positional-and-named}
+
+Create a script that can accept any number of filenames, the named parameter `--machine` and the flag `--verbose`.
+Like this:
+
+```
+python ex.py file1 file2 file3 --machine MACHINE --verbose
 ```
 
 
