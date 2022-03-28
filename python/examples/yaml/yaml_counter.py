@@ -20,7 +20,7 @@ if len(sys.argv) == 1:
         for key, value in counter.items:
             print("{key} {value}")
     else:
-        print("No counters were found")   
+        print("No counters were found")
     exit()
 
 name = sys.argv[1]
