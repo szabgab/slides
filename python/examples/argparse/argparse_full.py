@@ -15,12 +15,12 @@ parser.add_argument('--color', '-c') # short name also accepted
 #parser.add_argument('places', nargs="+")   # 1 or more positional
 #parser.add_argument('ords', nargs="?")   # 0 or 1 positional
 
-parser.add_argument('--things', nargs="+")  # --files a.txt b.txt c.txt
+parser.add_argument('--things', nargs="+")  # --things a.txt b.txt c.txt
 
 
 args = parser.parse_args()
 
 print(args.fname)
 print(args.verbose)
-#print(args.files)
+print(args.things)
 
