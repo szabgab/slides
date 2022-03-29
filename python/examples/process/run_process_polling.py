@@ -11,7 +11,7 @@ def run_process(command, timeout):
     print("After Popen")
 
     while True:
-       poll = proc.poll()
+       poll = proc.poll()  # returns the exit code or None if the process is still running
        print(f"poll: {poll}")
        time.sleep(0.5)  # here we could actually do something useful
        timeout -= 0.5

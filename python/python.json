@@ -24,6 +24,7 @@
         "regexes-3.md",
         "pycharm.md",
         "standard-modules.md",
+        "subprocess.md",
         "argparse.md",
         "json.md",
         "yaml.md",
