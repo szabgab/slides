@@ -10,7 +10,13 @@
 * [platform](http://docs.python.org/library/platform.html)
 
 ![](examples/os/which_os.py)
+
+* Linux
+
 ![](examples/os/which_os_linux.out)
+
+* MacOSX
+
 ![](examples/os/which_os_mac.out)
 
 
