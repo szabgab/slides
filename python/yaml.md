@@ -5,8 +5,8 @@
 {id: what-is-yamle}
 {i: YAML}
 
-Documentation of the
-[PyYAML library](https://pyyaml.org/).
+* [YAML](https://yaml.org/)
+* Documentation of the [PyYAML library](https://pyyaml.org/).
 
 ## Read YAML
 {id: read-yaml}
@@ -25,11 +25,6 @@ Documentation of the
 ![](examples/yaml/out.yaml)
 
 
-## Counter with YAML
-{id: yaml-counter}
-
-![](examples/yaml/yaml_counter.py)
-
 ## Exercise: Counter in YAML
 {id: exercise-yaml-counter}
 
@@ -40,4 +35,9 @@ Exactly like the same exercise in the JSON chapter, but use a YAML file as the "
 {id: exercise-yaml-phonebook}
 
 Exactly like the same exercise in the JSON chapter, but use a YAML file as the "database".
+
+## Solution: Counter in YAML
+{id: solution-yaml-counter}
+
+![](examples/yaml/yaml_counter.py)
 
