@@ -1,18 +1,19 @@
 import json
 
-a = {
+data = {
   "fname" : 'Foo',
   "lname" : 'Bar',
   "email" : None,
   "children" : [
      "Moo",
      "Koo",
-     "Roo"
-  ]
+     "Roo",
+  ],
+  "fixed": ("a", "b"),
 }
-print(a)
+print(data)
 
-json_str = json.dumps(a)
+json_str = json.dumps(data)
 print(json_str)
 
 with open('data.json', 'w') as fh:

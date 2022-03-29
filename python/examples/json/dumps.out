@@ -1,0 +1,2 @@
+{'fname': 'Foo', 'lname': 'Bar', 'email': None, 'children': ['Moo', 'Koo', 'Roo'], 'fixed': ('a', 'b')}
+{"fname": "Foo", "lname": "Bar", "email": null, "children": ["Moo", "Koo", "Roo"], "fixed": ["a", "b"]}

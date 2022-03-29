@@ -12,78 +12,56 @@ Lists and dictionaries in the case of Python.
 Documentation of the
 [Python json library](http://docs.python.org/library/json.html).
 
+Examples:
+
+* [OpenWeatherMap](https://openweathermap.org/api)
+* [Using the Open Weather Map API with curl](https://code-maven.com/openweathermap-api-using-curl)
+* [Using the Open Weather Map API with Python](https://code-maven.com/openweathermap-api-using-python)
+
+* [Libretranslate](https://libretranslate.com/)
+
 ![](examples/json/data.json)
 
 
-## dumps
+## JSON dumps
 {id: json-dumps}
 {i: dumps}
 
+* Dictionaries and lists are handles
+* Tuples are indistinguishable from lists
+* Always Double-quotes
+* `null` instead of `None`
+* No trailing comma
+
 ![](examples/json/dumps.py)
-
-```
-{'lname': 'Bar', 'email': None, 'fname': 'Foo',
-  'children': ['Moo', 'Koo', 'Roo']}
-
-{"lname": "Bar", "email": null, "fname": "Foo",
-  "children": ["Moo", "Koo", "Roo"]}
-```
-
-(lines were broken for readability on the slides)
-
+![](examples/json/dumps.out)
 
 `dumps` can be used to take a Python data structure and generate a string in JSON format. That string can then be saved in a file,
 inserted in a database, or sent over the wire.
 
 
 
-## loads
+## JSON loads
 {id: json-loads}
 {i: loads}
+
 ![](examples/json/loads.py)
-
-```
-{"lname": "Bar", "email": null, "fname": "Foo",
-    "children": ["Moo", "Koo", "Roo"]}
-
-{u'lname': u'Bar', u'email': None, u'fname': u'Foo',
-    u'children': [u'Moo', u'Koo', u'Roo']}
-```
-
-u is the Unicode prefix used in Python 2. In Python 3 it won't appear as Unicode is the default there.
-
-
+![](examples/json/loads.out)
 
 
 ## dump
 {id: json-dump}
 {i: dump}
+
 ![](examples/json/dump.py)
 
-```
-{'lname': 'Bar', 'email': None, 'fname': 'Foo',
-  'children': ['Moo', 'Koo', 'Roo']}
-
-{"lname": "Bar", "email": null, "fname": "Foo",
-  "children": ["Moo", "Koo", "Roo"]}
-```
-
-(lines were broken for readability on the slides)
-
-
-As a special case **dump** will save the string in a file or in other stream.
-
-
+As a special case `dump` will save the string in a file or in other stream.
 
 ## load
 {id: json-load}
 {i: load}
-![](examples/json/load.py)
 
-```
-{u'lname': u'Bar', u'email': None, u'fname': u'Foo',
-    u'children': [u'Moo', u'Koo', u'Roo']}
-```
+![](examples/json/load.py)
 
 
 ## Round trip
@@ -98,6 +76,11 @@ As a special case **dump** will save the string in a file or in other stream.
 
 ![](examples/json/pretty_print.py)
 ![](examples/json/pretty_print.out)
+
+## Serialize Datetime objects in JSON
+{id: serialize-datetime-objects-in-json}
+
+* [Serialize datetime objects in JSON](https://code-maven.com/serialize-datetime-object-as-json-in-python)
 
 
 ## Sort keys in JSON
