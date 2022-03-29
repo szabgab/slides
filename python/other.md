@@ -943,3 +943,12 @@ global.trusted-host='pypi.org, files.pythonhosted.org ,pypi.python.org'
 
 `pip` will now disregard the SSL issues.
 
+## Print in color on the CLI
+{id: print-in-color}
+{i: colorama}
+
+![](examples/other/colored_text.py)
+
+* [colorama](https://pypi.org/project/colorama/)
+
+
