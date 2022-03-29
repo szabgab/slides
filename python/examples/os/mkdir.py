@@ -1,4 +1,5 @@
 import os
+import shutil
 
 # create a single directory
 path_to_new_dir = 'abc'

@@ -67,6 +67,13 @@ Windows: (cd without parameters prints the current working directory)
 
 ![](examples/os/ls.py)
 
+## Traverse directory tree - list directories recursively
+{id: travers-directory-tree}
+{i: walk}
+{i: os.walk}
+
+![](examples/os/traverse_tree.py)
+
 
 ## OS dir (mkdir, makedirs, remove, rmdir)
 {id: os-dir}
@@ -77,6 +84,7 @@ Windows: (cd without parameters prints the current working directory)
 {i: rmdir}
 {i: removedirs}
 {i: rmtree}
+{i: shutil}
 
 * `mkdir` is like `mkdir` in Linux and Windows
 * `makedirs` is like `mkdir -p` in Linux
@@ -85,13 +93,6 @@ Windows: (cd without parameters prints the current working directory)
 
 
 ![](examples/os/mkdir.py)
-
-## Traverse directory tree - list directories recursively
-{id: travers-directory-tree}
-{i: walk}
-{i: os.walk}
-
-![](examples/os/traverse_tree.py)
 
 ## expanduser - handle tilde ~ the home directory of the user
 {id: expanduser}

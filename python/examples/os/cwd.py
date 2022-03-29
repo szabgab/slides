@@ -1,10 +1,15 @@
+import sys
 import os
 
-this_dir = os.getcwd()
-print(this_dir)
+to_dir = '..'
+# to_dir = '/path/to/some/dir'
+if len(sys.argv) == 2:
+    to_dir = sys.argv[1]
 
-# os.chdir('/path/to/some/dir')
-os.chdir('..')
+current_dir = os.getcwd()
+print(current_dir)
+
+os.chdir(to_dir)
 
 new_dir = os.getcwd()
 print(new_dir)
