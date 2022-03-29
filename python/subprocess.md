@@ -20,11 +20,23 @@ The external command:
 
 Try it on the command line: `python process.py 3 7`
 
-## Run external process and capture STDOUT and STDERR separately
-{id: run-external-process-and-capture-stdout-and-stderr-separately}
+## Run with os.system
+{id: run-with-os-system}
+
+![](examples/process/os_system.py)
+![](examples/process/os_system.out)
+
+## Run external process let STDOUT and STDERR through
+{id: run-external-process-and-let-stdout-and-stderr-through}
 
 ![](examples/process/run_command.py)
 ![](examples/process/run_command.out)
+
+## Run external process and capture STDOUT and STDERR separately
+{id: run-external-process-and-capture-stdout-and-stderr-separately}
+
+![](examples/process/run_command_collect_output.py)
+![](examples/process/run_command_collect_output.out)
 
 ## Run external process and capture STDOUT and STDERR merged together
 {id: run-external-process-and-capture-stdout-and-stderr-merged-together}
