@@ -6,7 +6,11 @@
 {i: platform}
 {i: os}
 
+* [os](http://docs.python.org/library/os.html)
+* [platform](http://docs.python.org/library/platform.html)
+
 ![](examples/os/which_os.py)
+![](examples/os/which_os_linux.out)
 
 
 ## Current directory (getcwd, pwd, chdir)
