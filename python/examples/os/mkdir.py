@@ -6,6 +6,7 @@ os.mkdir(path_to_new_dir)
 
 # create also the parent directories, if needed
 path_to_new_dir = 'dir/subdir/subdir'
+# os.mkdir(path_to_new_dir) # will fail if 'dir' or 'dir/subdir' does not exist
 os.makedirs(path_to_new_dir)
 
 
