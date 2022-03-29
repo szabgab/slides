@@ -11,6 +11,7 @@
 
 ![](examples/os/which_os.py)
 ![](examples/os/which_os_linux.out)
+![](examples/os/which_os_mac.out)
 
 
 ## Current directory (getcwd, pwd, chdir)
