@@ -26,16 +26,24 @@
 
 ![](examples/datetime/date_fromisoformat.py)
 
-## datetime arithmeticis
-{id: datetime-arithmetics}
+## datetime arithmeticis (subtract)
+{id: datetime-arithmetics-subtract}
 {i: timedelta}
 
-![](examples/sys/datetime_arithmetics.py)
+![](examples/datetime/subtract_date.py)
 
+## datetime arithmeticis (compare, sort)
+{id: datetime-arithmetics-compare-dates}
+{
+![](examples/datetime/compare_dates.py)
+
+## datetime arithmeticis (addition)
+{id: datetime-arithmetics}
+
+![](examples/datetime/add_timedelta.py)
 
 ## Rounding datetime object to nearest second
 {id: rounding-datetime}
 
-![](examples/sys/datetime_rounding.py)
-
+![](examples/datetime/datetime_rounding.py)
 
