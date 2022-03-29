@@ -1,6 +1,14 @@
 # os
 {id: os}
 
+## python which OS are we running on (os, platform)
+{id: which-os-are-we-running-on}
+{i: platform}
+{i: os}
+
+![](examples/os/which_os.py)
+
+
 ## Current directory (getcwd, pwd, chdir)
 {id: pwd-current-working-directory}
 {i: getcwd}
@@ -40,14 +48,6 @@ Windows: (cd without parameters prints the current working directory)
 
 
 ![](examples/os/mkdir.py)
-
-
-## python which OS are we running on (os, platform)
-{id: which-os-are-we-running-on}
-{i: platform}
-{i: os}
-
-![](examples/os/which_os.py)
 
 
 ## Get process ID
