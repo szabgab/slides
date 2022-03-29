@@ -168,6 +168,12 @@ in the appropriate match.group() call and in the match.groups() call
 
 ![](examples/regex/capture_even_more.py)
 
+## Named capture
+{id: named-capture}
+{i: \P}
+{i: P}
+
+![](examples/regex/named_capture.py)
 
 ## findall
 {id: findall}
