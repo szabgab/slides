@@ -130,14 +130,46 @@ If there are parentheses in the regex, it will return tuples of the matches
 ## Fixing dates
 {id: fixing-date-with-regular-expression}
 
-
 In the input we get dates like this
 2010-7-5 but we would like to make sure we have two digits
 for both days and months: 2010-07-05
 
-
 ![](examples/regex/date.py)
-![](examples/regex/date.out)
+
+## Fixing dates - 1
+{id: fixing-date-with-regular-expression-1}
+
+![](examples/regex/fix_date1.py)
+![](examples/regex/fix_date1.out)
+
+## Fixing dates - 2
+{id: fixing-date-with-regular-expression-2}
+
+![](examples/regex/fix_date2.py)
+![](examples/regex/fix_date2.out)
+
+## Fixing dates - 3
+{id: fixing-date-with-regular-expression-3}
+
+![](examples/regex/fix_date3.py)
+![](examples/regex/fix_date3.out)
+
+## Fixing dates - 4
+{id: fixing-date-with-regular-expression-4}
+
+![](examples/regex/fix_date4.py)
+![](examples/regex/fix_date4.out)
+
+
+
+## Anchor edge of word
+{id: anchor-edge-of-word}
+{i: \b}
+
+* \b beginning of word or end of word
+
+![](examples/regex/anchor_b.py)
+![](examples/regex/anchor_b.out)
 
 
 ## Double numbers
