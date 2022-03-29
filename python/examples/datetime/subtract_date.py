@@ -14,6 +14,7 @@ print(diff.total_seconds())  # 341764.0
 
 time_travel = dt1-dt2
 print(time_travel) #  -4 days, 1:03:56
+print(time_travel.total_seconds())  # -341764.0
 
 # d = dt1+dt2
 # TypeError: unsupported operand type(s) for +: 'datetime.datetime' and 'datetime.datetime'
