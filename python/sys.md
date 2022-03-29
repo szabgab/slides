@@ -9,6 +9,8 @@
 {i: path}
 {i: version_info}
 
+* [sys](http://docs.python.org/library/sys.html)
+
 ![](examples/sys/mysys.py)
 ![](examples/sys/mysys.out)
 
