@@ -135,6 +135,7 @@ httpbin makes it easy to see what kind of headers your browser sends. Not only t
 
 ## requests change header
 {id: requests-change-headers}
+{i: requests}
 
 {aside}
 The requests module too sends a set of default headers, but you can tell it to send other fields and values as well.
@@ -146,6 +147,8 @@ This examples shows how to set some additional headers.
 
 ## requests post
 {id: requests-post}
+{i: requests}
+{i: POST}
 
 {aside}
 We can also send POST requests to an address with any payload (content).
