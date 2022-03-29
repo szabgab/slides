@@ -12,11 +12,16 @@ You would like to allow the user to pass arguments on the command line. For exam
 myprog.py --machine server_name --test name --verbose --debug
 myprog.py -v -d
 myprog.py -vd
+myprog.py -dv
+myprog.py -v -d -m server_name
+myprog.py -vdm server_name
 myprog.py file1 file2 file3
+myprog.py file1 file2 file3
+myprog.py --machine server_name --debug file1 file2 file3
+myprog.py file1 file2 file3 --machine server_name --debug
 ```
 
 * [sys.argv](http://docs.python.org/library/sys.html)  manual parsing?
-* [optparse](http://docs.python.org/library/optparse.html) (deprecated)
 * [argparse](http://docs.python.org/library/argparse.html)
 
 
