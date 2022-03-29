@@ -279,6 +279,16 @@ a[^xa]a     # "aba", "aca"  but not "aaa", "axa"    what about "aa" ?
 a[a^x]a     # aaa, a^a, axa
 ```
 
+## Character classes and Unicode characters
+{id: character-classes-unicode-characters}
+
+![](examples/regex/character_class_unicode.py)
+
+## Character classes for Hebrew text
+{id: character-classes-for-hebrew-text}
+
+![](examples/regex/character_class_hebrew.py)
+
 ## Match digits
 {id: match-digits}
 
