@@ -6,6 +6,7 @@
 
 * [sys](http://docs.python.org/library/sys.html) - (Python) System specific
 * [os](http://docs.python.org/library/os.html) - Operating System
+* [platform](https://docs.python.org/library/platform.html)
 * [stat](http://docs.python.org/library/stat.html) - Inode table
 * [shutil](http://docs.python.org/library/shutil.html) - File Operations
 * [glob](http://docs.python.org/library/glob.html) - Unix style pathname expansion

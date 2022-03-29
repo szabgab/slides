@@ -7,4 +7,4 @@
 
 * [math](https://docs.python.org/library/math.html)
 
-![examples/math/examples.py]
+![](examples/math/examples.py)

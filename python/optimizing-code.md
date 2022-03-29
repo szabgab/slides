@@ -87,7 +87,7 @@ The actual content is not that interesting.
 ## Benchmarking
 {id: benchmarking}
 
-* [benchmark](http://docs.python.org/3/library/timeit.html)
+* [benchmark](http://docs.python.org/library/timeit.html)
 
 
 ![](examples/advanced/benchmark.py)
@@ -161,7 +161,7 @@ The actual content is not that interesting.
 ## Weak reference
 {id: weak-reference}
 
-* [weakref](https://docs.python.org/3/library/weakref.html)
+* [weakref](https://docs.python.org/library/weakref.html)
 
 ![](examples/perf/weakmymem.py)
 ![](examples/perf/mem_weakref.py)

@@ -146,7 +146,7 @@ If we then assign some other string to either of the variables, then they will p
 
 * Type **dir("")** in the REPL to get the list of string methods.
 * List of [built-in functions](https://docs.python.org/library/functions.html).
-* List of [string methods](https://docs.python.org/3/library/stdtypes.html#string-methods).
+* List of [string methods](https://docs.python.org/library/stdtypes.html#string-methods).
 
 
 ## index in string
@@ -230,7 +230,7 @@ Escape sequences are kept intact and not escaped. Used in regexes.
 {id: ord}
 {i: ord}
 
-* [ord](https://docs.python.org/3/library/functions.html#ord)
+* [ord](https://docs.python.org/library/functions.html#ord)
 
 ![](examples/strings/ord_chars.py)
 
@@ -239,7 +239,7 @@ Escape sequences are kept intact and not escaped. Used in regexes.
 {id: chr}
 {i: chr}
 
-* [chr](https://docs.python.org/3/library/functions.html#chr)
+* [chr](https://docs.python.org/library/functions.html#chr)
 
 ![](examples/strings/chr.py)
 

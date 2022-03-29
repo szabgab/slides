@@ -176,6 +176,6 @@ Level 1-
 
 ![](examples/numbers/fruit_salad.py)
 
-* [random.sample](https://docs.python.org/3/library/random.html#random.sample)
+* [random.sample](https://docs.python.org/library/random.html#random.sample)
 
 

@@ -12,6 +12,8 @@
 ![](examples/sys/mysys.py)
 ![](examples/sys/mysys.out)
 
+Later we'll see also the `platform` module for more details of the Operating System.
+
 
 ## Writing to standard error (stderr)
 {id: writing-to-standard-error}

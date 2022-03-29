@@ -325,8 +325,8 @@ Whichever is appropriate in your situation.
 * Use Regular Expressions (regexes) to verify that the input string looks like a number.
 * [Unicode Characters in the 'Number, Decimal Digit' Category](https://www.fileformat.info/info/unicode/category/Nd/list.htm)
 
-* [isdecimal](https://docs.python.org/3/library/stdtypes.html#str.isdecimal) Decimal numbers (digits) (not floating point)
-* [isnumeric](https://docs.python.org/3/library/stdtypes.html#str.isnumeric) Numeric character in the Unicode set (but not floating point number)
+* [isdecimal](https://docs.python.org/library/stdtypes.html#str.isdecimal) Decimal numbers (digits) (not floating point)
+* [isnumeric](https://docs.python.org/library/stdtypes.html#str.isnumeric) Numeric character in the Unicode set (but not floating point number)
 * In your spare time you might want to check out the standard types of Python at [stdtypes](https://docs.python.org/library/stdtypes.html).
 
 ![](examples/basics/isnumber.py)

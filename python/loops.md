@@ -36,7 +36,7 @@
 ## Iterable, iterator
 {id: iterable}
 
-* [iterable](https://docs.python.org/3/glossary.html#term-iterable)
+* [iterable](https://docs.python.org/glossary.html#term-iterable)
 
 
 

@@ -561,7 +561,7 @@ stderr during testing
 ## Exercise: test math functions
 {id: pytest-exercise-math}
 
-* Test methods of the [math](https://docs.python.org/3/library/math.html) module.
+* Test methods of the [math](https://docs.python.org/library/math.html) module.
 * ceil
 * factorial
 * gcd
@@ -582,7 +582,7 @@ Write tests for the `swap` and `average` functions of the `app` module. Can you 
 ## Exercise: test the csv module
 {id: pytest-exercise-csv}
 
-* [csv](https://docs.python.org/3/library/csv.html)
+* [csv](https://docs.python.org/library/csv.html)
 * Create a CSV file, read it and check if the results are as expected!
 * Test creating a CSV file?
 * Test round trip?

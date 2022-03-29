@@ -255,7 +255,7 @@ We can run the tests using `python -m unittest test_one_with_unittest.py`. It wi
 passed. The exit-code will be 0 as expected.
 {/aside}
 
-* [unittest](https://docs.python.org/3/library/unittest.html)
+* [unittest](https://docs.python.org/library/unittest.html)
 
 ![](examples/testing-demo/test_one_with_unittest.py)
 

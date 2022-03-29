@@ -490,7 +490,7 @@ Then also add the following:
 ## Solution: Random redirect
 {id: solution-random-redirect}
 
-* [random.choice](https://docs.python.org/3/library/random.html#random.choice)
+* [random.choice](https://docs.python.org/library/random.html#random.choice)
 
 ![](examples/flask/random-redirect/app.py)
 ![](examples/flask/random-redirect/test_app.py)

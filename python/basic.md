@@ -365,7 +365,7 @@ Try your environment:
 {id: floating-point-error}
 ![](examples/numbers/float_precision.py)
 
-* [floating point](https://docs.python.org/3/tutorial/floatingpoint.html)
+* [floating point](https://docs.python.org/tutorial/floatingpoint.html)
 
 
 

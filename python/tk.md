@@ -51,7 +51,7 @@ In this chapter we are going to use the Tk Toolkit.
 * [Qt](https://wiki.python.org/moin/PyQt)
 * [wxWidgets](http://wxpython.org/)
 
-* [GUI FAQ](https://docs.python.org/3/faq/gui.html)
+* [GUI FAQ](https://docs.python.org/faq/gui.html)
 * [GUI Programming](https://wiki.python.org/moin/GuiProgramming)
 
 ## Installation
@@ -176,7 +176,7 @@ First we are going to see small examples with each one of these Widgets. Then we
 
 ![](examples/tk/tk_checkbox.py)
 
-* [Variables](https://docs.python.org/3.9/library/tkinter.html#coupling-widget-variables)
+* [Variables](https://docs.python.org/library/tkinter.html#coupling-widget-variables)
 
 
 ## Python Tk Radiobutton

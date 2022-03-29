@@ -231,7 +231,7 @@ def __del__(self):
 @classmethod
 class method to hold all the instances, but then they will never be destructed (well, unless we have a manual destroy call) but we can mark them as weak references.
 
-https://docs.python.org/3/library/weakref.html
+https://docs.python.org/library/weakref.html
 
 
 Abstract Base Class

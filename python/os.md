@@ -32,6 +32,13 @@ Windows: (cd without parameters prints the current working directory)
 {i: removedirs}
 {i: rmtree}
 
+* `mkdir` is like `mkdir` in Linux and Windows
+* `makedirs` is like `mkdir -p` in Linux
+* `remove` and `unlink` are like `rm -f` in Linux or `del` in Windows
+* `rmdir` is like `rmdir`
+
+
+
 ![](examples/os/mkdir.py)
 
 

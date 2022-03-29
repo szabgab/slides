@@ -29,7 +29,7 @@ You already know that there are all kinds of objects in Python that you can iter
 For example you can iterate over the characters of a string, or the elements of a list, or whatever **range()** returns.
 You can also iterate over the lines of a file
 and you have probably seen the **for in** construct in other cases as well. The objects that can be iterated over are collectively called
-[iterables](https://docs.python.org/3/glossary.html#term-iterable).
+[iterables](https://docs.python.org/glossary.html#term-iterable).
 You can do all kind of interesting things on such **iterables**. We'll see a few now.
 {/aside}
 

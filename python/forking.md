@@ -8,7 +8,7 @@
 {i: getppid}
 {i: wait}
 
-* [fork](https://docs.python.org/3/library/os.html#os.fork)
+* [fork](https://docs.python.org/library/os.html#os.fork)
 
 ![](examples/fork/simple_fork.py)
 ![](examples/fork/simple_fork.out)
