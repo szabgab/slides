@@ -203,7 +203,33 @@ trouble with 'more_numbers.txt': Error: [Errno 2] No such file or directory: 'mo
 {i: open}
 {i: write}
 
+{aside}
+In order to write to a file we open it passing the "w" write mode. If the file did not exist it will try to create it.
+If the file already existed it will remove all its content so after such call to `open` we'll end up with an empty
+file if we don't write into it.
+
+Once the file is opened we can use the `write` method to write to it. This will NOT automatically append a newline
+at the end so we'll have to include `\n` if we would like to insert a newline.
+
+Opening the file will fail if we don't have write permissions or if the folder in which we are trying to create the
+file does not exist.
+{/aside}
+
+
 ![](examples/files/write.py)
+
+## Print to file
+{id: print-to-file}
+{i: open}
+{i: print}
+
+{aside}
+We can also use the `print` function to print (or write) to a file. In this case the same rules apply as printing to
+standard output (automatically adding a trailing newline, inserting a space between parameters). We do this
+by passing the file-handle as the value of the `file` parameter of `print`.
+{/aside}
+
+![](examples/files/print_to_file.py)
 
 
 ## Append to file
