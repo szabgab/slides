@@ -10,13 +10,6 @@
 {i: move}
 {i: rmtree}
 
-```
-import shutil
+* [shutil](http://docs.python.org/library/shutil.html) - File Operations
 
-shutil.copy(source, dest)
-shutil.copytree(source, dest)
-shutil.move(source, dest)
-shutil.rmtree(path)
-```
-
-
+![](examples/shutil/example.py)

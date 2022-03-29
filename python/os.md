@@ -29,6 +29,40 @@ Windows: (cd without parameters prints the current working directory)
 > cd
 ```
 
+## OS path
+{id: os-path}
+{i: path}
+{i: abspath}
+{i: exists}
+{i: basename}
+{i: dirname}
+
+![](examples/os/path.py)
+
+## os.path.join
+{id: os-path-join}
+{i: os.path.join}
+{i: join}
+
+![](examples/os/path_join.py)
+
+
+## Directory listing
+{id: directory-listing}
+{i: dir}
+{i: listdir}
+{i: path}
+{i: os.listdir}
+
+![](examples/os/dir.py)
+
+## Directory listing using glob
+{id: listing-files-using-glob}
+{i: glob}
+{i: glob.glob}
+
+![](examples/os/ls.py)
+
 
 ## OS dir (mkdir, makedirs, remove, rmdir)
 {id: os-dir}
@@ -46,8 +80,22 @@ Windows: (cd without parameters prints the current working directory)
 * `rmdir` is like `rmdir`
 
 
-
 ![](examples/os/mkdir.py)
+
+## Traverse directory tree - list directories recursively
+{id: travers-directory-tree}
+{i: walk}
+{i: os.walk}
+
+![](examples/os/traverse_tree.py)
+
+## expanduser - handle tilde ~ the home directory of the user
+{id: expanduser}
+{i: expanduser}
+{i: ~}
+{i: os.path.expanduser}
+
+![](examples/os/expanduser.py)
 
 
 ## Get process ID
@@ -69,57 +117,6 @@ This is on Linux/OSX
 ```
 echo $$
 ```
-
-
-## OS path
-{id: os-path}
-{i: path}
-{i: abspath}
-{i: exists}
-{i: basename}
-{i: dirname}
-
-![](examples/os/path.py)
-
-## Traverse directory tree - list directories recursively
-{id: travers-directory-tree}
-{i: walk}
-{i: os.walk}
-
-![](examples/os/traverse_tree.py)
-
-
-## os.path.join
-{id: os-path-join}
-{i: os.path.join}
-{i: join}
-
-![](examples/os/path_join.py)
-
-
-## Directory listing
-{id: directory-listing}
-{i: dir}
-{i: listdir}
-{i: path}
-{i: os.listdir}
-
-![](examples/os/dir.py)
-
-## expanduser - handle tilde ~ the home directory of the user
-{id: expanduser}
-{i: expanduser}
-{i: ~}
-{i: os.path.expanduser}
-
-![](examples/os/expanduser.py)
-
-## Listing specific files using glob
-{id: listing-files-using-glob}
-{i: glob}
-{i: glob.glob}
-
-![](examples/os/ls.py)
 
 ## External command with system
 {id: external-command-with-system}

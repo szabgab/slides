@@ -34,7 +34,7 @@
 
 ## datetime arithmeticis (compare, sort)
 {id: datetime-arithmetics-compare-dates}
-{
+
 ![](examples/datetime/compare_dates.py)
 
 ## datetime arithmeticis (addition)
