@@ -19,68 +19,6 @@
 * [datetime](http://docs.python.org/library/datetime.html) - Time management
 * [random](http://docs.python.org/library/random.html) - Random numbers
 
-## time
-{id: time}
-{i: time}
-{i: timezone}
-{i: daylight}
-{i: gmtime}
-{i: strftime}
-
-![](examples/other/mytime.py)
-
-## sleep in Python
-{id: sleep-in-python}
-{i: sleep}
-
-![](examples/os/sleep.py)
-
-```
-hello 1475217162.472256
-world 1475217165.973437
-Elapsed time:3.501181125640869
-```
-
-## timer
-{id: timer}
-
-More time-related examples.
-
-![](examples/other/timer.py)
-
-
-## Current date and time datetime now
-{id: datetime-now}
-{i: datetime}
-{i: strftime}
-
-![](examples/sys/datetime_now.py)
-
-
-## Converting string to datetime
-{id: converting-string-to-datetime}
-{i: strptime}
-
-![](examples/sys/converting_string_to_datetime.py)
-
-## date and datetome fromisoformat
-{id: datetime-from-iso-format}
-
-![](examples/sys/fromisoformat.py)
-
-
-## datetime arithmeticis
-{id: datetime-arithmetics}
-{i: timedelta}
-
-![](examples/sys/datetime_arithmetics.py)
-
-
-## Rounding datetime object to nearest second
-{id: rounding-datetime}
-
-![](examples/sys/datetime_rounding.py)
-
 ## sys
 {id: sys}
 {i: sys}
@@ -286,5 +224,14 @@ shutil.copytree(source, dest)
 shutil.move(source, dest)
 shutil.rmtree(path)
 ```
+
+
+## Print in color on the CLI
+{id: print-in-color}
+{i: colorama}
+
+![](examples/other/colored_text.py)
+
+* [colorama](https://pypi.org/project/colorama/)
 
 

@@ -340,6 +340,5 @@ examples/fork/pl.py
 examples/dictionary/default_dict_for_list.py
 
 
-random that is not pseudo random
-sort hungarian vowels
-sort hungarian text ?
+Add exercises to each regex chapter
+how to add color to log messages
