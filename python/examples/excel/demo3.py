@@ -1,0 +1,6 @@
+main()
+    ...
+    do_something(filename)
+    ...
+    do_something_else_assuming_the_other_worked()
+

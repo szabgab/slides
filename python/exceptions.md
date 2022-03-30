@@ -25,33 +25,15 @@ main()
 * Every called needs to check if the function returned error. If at any point we forget our system might run with hidden failures.
 
 
-```
-main()
-   ......
-            result = do_something(filename)
-            if result:
-                do_something_else(result)
-```
+![](examples/excel/demo1.py)
 
 * If we forget to check the result and pass it on, we might get some error in the code that is quite far from where the error actually happend
 
-```
-main()
-   ......
-            result = do_something(filename)
-            ...
-            do_something_else(result)
-```
+![](examples/excel/demo2.py)
 
 * This can happen even if we don't pass the result around:
 
-```
-main()
-   ......
-            do_something(filename)
-            ...
-            do_something_else_assuming_the_other_worked()
-```
+![](examples/excel/demo3.py)
 
 
 ## Handling errors as exceptions
@@ -60,17 +42,7 @@ main()
 * Only need to explicitely check for it at the level where we know what to do with the problem.
 * But: Do we want our pacemaker to stop totally after missing one beat? Probably not. Or better yet: not when it is in production.
 
-
-```
-main()
-   try:
-   ......
-            result = do_something(filename)
-            do_something_else(result)
-    except Exception:
-        # decide what to do
-```
-
+![](examples/excel/demo4.py)
 
 ## A simple exception
 {id: a-simple-exception}
