@@ -1,7 +1,6 @@
 import sys
 import module
 
-# python handle_divide_by_zero.py one.txt zero.txt two.txt three.txt
 files = sys.argv[1:]
 
 for filename in files:
@@ -17,4 +16,4 @@ for filename in files:
 # before zero.txt
 # Cannot divide by 0 in file zero.txt
 # before two.txt
-# IOError: [Errno 2] No such file or directory: 'two.txt'
+# FileNotFoundError: [Errno 2] No such file or directory: 'two.txt'

@@ -20,8 +20,8 @@ main()
 ## Handling errors as return values
 {id: handling-errors-as-return-values}
 
-* Each function that fails returns some error indicator. **None** ? An object that has and attribute "error"?
-* None would be bad as that cannot indicate different errors.
+* Each function that fails returns some error indicator. `None` ? An object that has and attribute "error"?
+* `None` would be bad as that cannot indicate different errors.
 * Every called needs to check if the function returned error. If at any point we forget our system might run with hidden failures.
 
 
@@ -33,11 +33,24 @@ main()
                 do_something_else(result)
 ```
 
+* If we forget to check the result and pass it on, we might get some error in the code that is quite far from where the error actually happend
+
 ```
 main()
    ......
             result = do_something(filename)
+            ...
             do_something_else(result)
+```
+
+* This can happen even if we don't pass the result around:
+
+```
+main()
+   ......
+            do_something(filename)
+            ...
+            do_something_else_assuming_the_other_worked()
 ```
 
 
@@ -82,6 +95,7 @@ then it will throw an exception, printing it to the standard error that is
 the screen by default. Then the script stops working and the
 string "after" is not printed.
 {/aside}
+
 ![](examples/exceptions/divide_by_zero.py)
 
 
@@ -97,6 +111,7 @@ As you can see one of the values is 0 which will generate and exception.
 
 The loop will finish early.
 {/aside}
+
 ![](examples/exceptions/divide_by_zero_list.py)
 
 {aside}
@@ -187,28 +202,42 @@ File two.txt is missing on purpose.
 
 ## Open files - exception
 {id: exceptions-open-files}
+
 ![](examples/exceptions/open_list_of_files.py)
 
+```
+python open_list_of_files.py one.txt zero.txt two.txt three.txt
+```
 
 ## Handle divide by zero exception
 {id: exceptions-handle-divide-by-zero}
+{i: try}
+{i: except}
+{i: ZeroDivisionError}
 
 {aside}
-
 Running this code will the ZeroDivisionError exception, but it will die with a IOError exception.
 {/aside}
+
 ![](examples/exceptions/handle_divide_by_zero.py)
 
-
+```
+python handle_divide_by_zero.py one.txt zero.txt two.txt three.txt
+```
 
 ## Handle files - exception
 {id: exceptions-handle-files}
+{i: FileNotFoundError}
 
 {aside}
 We can add multiple "except" statement at the end of the "try" block and handle several exceptions. Each one in a different way.
 {/aside}
 
 ![](examples/exceptions/handle_both_exceptions.py)
+
+```
+python handle_both_exceptions.py one.txt zero.txt two.txt three.txt
+```
 
 
 ## Catch all the exceptions and show their type

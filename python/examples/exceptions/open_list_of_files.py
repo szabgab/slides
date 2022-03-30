@@ -1,7 +1,6 @@
 import sys
 import module
 
-# python open_list_of_files.py one.txt zero.txt two.txt three.txt
 files = sys.argv[1:]
 
 for filename in files:
