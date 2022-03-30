@@ -307,4 +307,38 @@ a[a^x]a     # aaa, a^a, axa
 ![](examples/regex/word_characters.py)
 ![](examples/regex/word_characters.out)
 
+## Exercise: add numbers
+{id: exercise-add-numbers}
+
+Given a file like this:
+
+![](examples/regex/grades1.txt)
+
+* Add up the scores for each name and print the result.
+
+```
+Foo   : 79
+Bar   : 31
+Zorg  :  7
+```
+
+* Make it work also on a file that looks like this:
+
+![](examples/regex/grades2.txt)
+
+
+## Solution: add numbers
+{id: solution-add-numbers-1}
+
+![](examples/regex/grades1.py)
+
+## Solution: add numbers
+{id: solution-add-numbers-2}
+
+![](examples/regex/grades2.py)
+
+## Solution: add numbers
+{id: solution-add-numbers-3}
+
+![](examples/regex/grades3.py)
 

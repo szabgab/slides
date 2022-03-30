@@ -1,0 +1,19 @@
+# Let's start with Foo:1
+
+Foo:1
+Foo: 2
+Foo :3
+Foo : 4
+  Foo:5
+  Foo: 6
+  Foo :7
+  Foo : 8
+
+# Let's start Bar with : 23
+Bar:23
+
+Foo: 23
+Foo:   11
+   Foo  : 9
+  Bar:  8
+Zorg: 7
