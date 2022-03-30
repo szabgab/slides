@@ -1,9 +1,9 @@
 import re
 
 text = "שלום כיתה א"
-print(text)
-print(ord(text[-1]))
-print(text[-1])
+print(text)            # שלום כיתה א
+print(ord(text[-1]))   # 1488
+print(text[-1])        # א
 
 match = re.search(r"[א-ת]", text)
 print(match.group(0))  # ש
@@ -13,6 +13,9 @@ print(match.group(0))  # שלום
 
 match = re.search(r"[ א-ת]*", text)
 print(match.group(0))  # שלום כיתה א
+
+match = re.search(r'[\u05d0-\u05eb]*', text)
+print(match.group(0))  # שלום
 
 # Hebrew has 22 letters, 5 of them have a different version at the end of the word
 # A total of 27 letters

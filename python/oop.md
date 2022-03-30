@@ -177,12 +177,12 @@ and let that method set up the initial values of the insance-object.
 
 ![](examples/oop/attributes/private.py)
 
-## Secret attributes
-{id: oop-secret-attributes}
+## Hidden attributes
+{id: oop-hidden-attributes}
 
 * Primarily useful to ensure inheriting classes don't accidently overwrite attributes.
 
-![](examples/oop/attributes/secret.py)
+![](examples/oop/attributes/hidden.py)
 
 
 ## Methods
