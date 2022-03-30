@@ -5,4 +5,6 @@ main()
         result = do_something(filename)
         do_something_else(result)
     except Exception:
-        # decide what to do
+        decide_what_to_do()
+
+    always_happens()
