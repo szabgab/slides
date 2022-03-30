@@ -248,7 +248,9 @@ except (ZeroDivisionError, FileNotFoundError):
 ```
 ![](examples/exceptions/handle_list_of_exceptions.py)
 
-# python handle_list_of_exceptions.py one.txt zero.txt two.txt three.txt
+```
+python handle_list_of_exceptions.py one.txt zero.txt two.txt three.txt
+```
 
 ## Hierachy of Exceptions
 {id: hierarchy-of-exceptions}
