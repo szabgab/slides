@@ -342,3 +342,9 @@ examples/dictionary/default_dict_for_list.py
 
 Add exercises to each regex chapter
 how to add color to log messages
+
+osx: https://code-maven.com/slides/python/which-os-are-we-running-on and more details?
+example flock
+
+
+move poll-break earlier https://code-maven.com/slides/python/subprocess-background
