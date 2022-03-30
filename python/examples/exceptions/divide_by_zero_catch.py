@@ -1,12 +1,12 @@
 def div(a, b):
     print("dividing {} by {} is {}".format(a, b, a/b))
 
-a = 100
+total = 100
 values = [2, 5, 0, 4]
 
-for v in values:
+for val in values:
     try:
-        div(a, v)
+        div(total, val)
     except ZeroDivisionError:
         print("Cannot divide by 0")
 

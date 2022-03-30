@@ -10,15 +10,18 @@ for filename in files:
         print(f"Cannot divide by 0 in file '{filename}'")
     except FileNotFoundError:
         print(f"Cannot open file '{filename}'")
-
+    print('')
 
 # before one.txt
 # 100.0
 # after  one.txt
+
 # before zero.txt
-# Cannot divide by 0 in file zero.txt
+# Cannot divide by 0 in file 'zero.txt'
+
 # before two.txt
-# Cannot open file two.txt
+# Cannot open file 'two.txt'
+
 # before three.txt
 # 33.333333333333336
 # after  three.txt
