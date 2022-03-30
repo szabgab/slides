@@ -1,3 +1,5 @@
+The caught:
+
 Traceback (most recent call last):
   File "stack_trace.py", line 11, in main
     bar()
@@ -8,6 +10,8 @@ Traceback (most recent call last):
 Exception: hi
 
 ---------------------
+The original:
+
 Traceback (most recent call last):
   File "stack_trace.py", line 20, in <module>
     main()

@@ -1,5 +1,5 @@
 # Exception handling
-{id: python-exceptions}
+{id: exceptions}
 
 ## Hierarchy of calls
 {id: hierarchy-of-calls}
@@ -240,26 +240,25 @@ python show_exceptions_type.py one.txt zero.txt two.txt three.txt
 {id: list-exception-types}
 
 {aside}
-
 We can list more than one exceptions to be caught one after the other in a single "except" statement.
 {/aside}
 
 ```
-except (IOError, ZeroDivisionError):
+except (ZeroDivisionError, FileNotFoundError):
 ```
 ![](examples/exceptions/handle_list_of_exceptions.py)
 
+# python handle_list_of_exceptions.py one.txt zero.txt two.txt three.txt
 
-## Exceptions
-{id: exceptions}
+## Hierachy of Exceptions
+{id: hierarchy-of-exceptions}
 
 {aside}
 There are many kinds of exceptions in Python and each module can define its own exception types as well.
 On this page you'll find the list and hierarchy of exceptions in Python.
 {/aside}
 
-
-* [exceptions](http://docs.python.org/library/exceptions.html)
+* [exceptions](https://docs.python.org/library/exceptions.html#exception-hierarchy)
 
 
 ## How to raise an exception
@@ -275,6 +274,12 @@ You can raise an exception in a simple way.
 
 ![](examples/exceptions/raise.py)
 
+## Raise ValueError exception
+{id: raise-a-valueerror-exception}
+{i: ValueError}
+
+![](examples/exceptions/raise_value_error.py)
+
 
 ## Stack trace of exceptions
 {id: stack-trace-of-exceptions}
@@ -282,19 +287,24 @@ You can raise an exception in a simple way.
 
 ![](examples/exceptions/stack_trace.py)
 
+
 ![](examples/exceptions/stack_trace.out)
 
-## Stack trace
+* [traceback](https://docs.python.org/3/library/traceback.html)
+
+## No need for excaption to print Stack trace
 {id: stack-trace}
 {i: traceback}
 {i: format_stack}
 
 ![](examples/other/print_stack_trace.py)
 
+* [traceback](https://docs.python.org/3/library/traceback.html)
+
 ## Exercies: Exception int conversion
 {id: exercise-exception-int-conversion}
 
-* In the earlier example we learned how to handle both ZeroDivisionError and IOError exceptions. Now try this
+* In the earlier example we learned how to handle both ZeroDivisionError and FileNotFoundError exceptions. Now try this
 
 
 ```
@@ -303,7 +313,7 @@ python handle_both_exceptions.py one.txt zero.txt two.txt text.txt three.txt
 ```
 ![](examples/exceptions/handle_both_exceptions.out)
 
-* This will raise a ValueError exception before handling file three.txt
+* This will raise a `ValueError` exception before handling file three.txt
 * Fix it by capturing the spcific exception.
 * Fix by capturing "all other exceptions".
 
@@ -322,21 +332,23 @@ python handle_both_exceptions.py one.txt zero.txt two.txt text.txt three.txt
 
 ## Solution: Exception int conversion (specific)
 {id: solution-exception-int-conversion-specific}
+
 ![](examples/exceptions/handle_3_exceptions.py)
 ![](examples/exceptions/handle_3_exceptions.out)
 
+```
+python handle_3_exceptions.py one.txt zero.txt two.txt three.txt
+```
 
 ## Solution: Exception int conversion (all other)
 {id: solution-exception-int-conversion-all-other}
+
 ![](examples/exceptions/handle_all_other_exceptions.py)
 ![](examples/exceptions/handle_all_other_exceptions.out)
 
 
 ## Solution: Raise Exception
 {id: solution-exception-raise-exception}
+
 ![](examples/exceptions/positive.py)
-
-
-
-
 

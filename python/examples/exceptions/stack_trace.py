@@ -11,9 +11,11 @@ def main():
         bar()
     except Exception as err:
         track = traceback.format_exc()
+        print("The caught:\n")
         print(track)
 
     print("---------------------")
+    print("The original:\n")
     bar()
 
 

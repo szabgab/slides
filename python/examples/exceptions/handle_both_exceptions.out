@@ -1,10 +1,13 @@
 before one.txt
 100.0
 after  one.txt
+
 before zero.txt
-Cannot divide by 0 in file zero.txt
+Cannot divide by 0 in file 'zero.txt'
+
 before two.txt
-Cannot open file two.txt
+Cannot open file 'two.txt'
+
 before text.txt
 Traceback (most recent call last):
   File "handle_both_exceptions.py", line 9, in <module>

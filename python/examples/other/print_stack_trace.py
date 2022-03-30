@@ -1,13 +1,21 @@
 import traceback
 
-def f():
-  g()
+def foo():
+  bar()
 
-def g():
+def bar():
     #print(traceback.extract_stack())
     print(''.join(traceback.format_stack()))
 
-f()
+foo()
 print("done")
 
-#https://docs.python.org/3/library/traceback.html
+#   File "python/examples/other/print_stack_trace.py", line 10, in <module>
+#     foo()
+#   File "python/examples/other/print_stack_trace.py", line 4, in foo
+#     bar()
+#   File "python/examples/other/print_stack_trace.py", line 8, in bar
+#     print(''.join(traceback.format_stack()))
+#
+# done
+

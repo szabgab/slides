@@ -1,6 +1,6 @@
 def div(a, b):
     if b == 0:
-        raise Exception("Cannot divide by 0")
+        raise ValueError("Cannot divide by 0")
     print(a/b)
 
 def main():
@@ -16,5 +16,5 @@ main()
 
 # 2.0
 # Exception: Cannot divide by 0
-# Type: Exception
+# Type: ValueError
 
