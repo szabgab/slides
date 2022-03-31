@@ -233,7 +233,7 @@ We can also use the "except Exception" to catch all exceptions. In this case we 
 ![](examples/exceptions/show_exception_type.py)
 
 ```
-python show_exceptions_type.py one.txt zero.txt two.txt three.txt
+python show_exception_type.py one.txt zero.txt two.txt three.txt
 ```
 
 ## List exception types
