@@ -46,6 +46,7 @@ main()
 
 ## A simple exception
 {id: a-simple-exception}
+{i: ZeroDivisionError}
 
 {aside}
 
@@ -97,7 +98,6 @@ The loop will finish early.
 ![](examples/exceptions/divide_by_zero_list.py)
 
 {aside}
-
 We can't repair the case where the code tries to divide by 0, but it would be nice
 if we could get the rest of the results as well.
 {/aside}
@@ -105,16 +105,16 @@ if we could get the rest of the results as well.
 
 ## Catch ZeroDivisionError exception
 {id: catch-divide-by-zero}
+{i: except}
+{i: ZeroDivisionError}
 
 {aside}
-
 For that, we'll wrap the critical part of the code in a "try" block.
 After the "try" block we need to provide a list of exception that are
 caught by this try-block.
 {/aside}
 
 {aside}
-
 You could say something like
 "Try this code and let all the exceptions propagate, except of the ones I listed".
 {/aside}
@@ -154,7 +154,7 @@ is a number and use that for division.
 
 {aside}
 
-When the open() fails, Python throws an IOError exception.
+When the open() fails, Python throws an FileNotFoundError exception.
 {/aside}
 ![](examples/exceptions/module.py)
 
@@ -199,7 +199,7 @@ python open_list_of_files.py one.txt zero.txt two.txt three.txt
 {i: ZeroDivisionError}
 
 {aside}
-Running this code will the ZeroDivisionError exception, but it will die with a IOError exception.
+Running this code will the ZeroDivisionError exception, but it will die with a FileNotFoundError exception.
 {/aside}
 
 ![](examples/exceptions/handle_divide_by_zero.py)
@@ -225,6 +225,7 @@ python handle_both_exceptions.py one.txt zero.txt two.txt three.txt
 
 ## Catch all the exceptions and show their type
 {id: show-exception-type}
+{i: Exception}
 
 {aside}
 We can also use the "except Exception" to catch all exceptions. In this case we might want to also print out the text and the type of the exception by ourselves.
