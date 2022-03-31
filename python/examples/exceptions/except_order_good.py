@@ -7,9 +7,11 @@ for filename in files:
     try:
         module.read_and_divide(filename)
     except ZeroDivisionError:
+        print("ZeroDivisionError")
         print(f"Cannot divide by 0 in file '{filename}'")
     except Exception as err:
         print(f"General error {err}")
+        print(f"Error class: {err.__class__.__name__}")
     print('')
 
 # before one.txt
@@ -17,10 +19,12 @@ for filename in files:
 # after  one.txt
 
 # before zero.txt
+# ZeroDivisionError
 # Cannot divide by 0 in file 'zero.txt'
 
 # before two.txt
 # General error [Errno 2] No such file or directory: 'two.txt'
+# Error class: FileNotFoundError
 
 # before three.txt
 # 33.333333333333336
