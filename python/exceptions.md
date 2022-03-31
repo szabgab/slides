@@ -27,7 +27,7 @@ main()
 
 ![](examples/exceptions/demo1.py)
 
-* If we forget to check the result and pass it on, we might get some error in the code that is quite far from where the error actually happend
+* If we forget to check the result and pass it on, we might get some error in the code that is quite far from where the error actually happened
 
 ![](examples/exceptions/demo2.py)
 
@@ -39,7 +39,7 @@ main()
 ## Handling errors as exceptions
 {id: handling-errors-as-exceptions}
 
-* Only need to explicitely check for it at the level where we know what to do with the problem.
+* Only need to explicitly check for it at the level where we know what to do with the problem.
 * But: Do we want our pacemaker to stop totally after missing one beat? Probably not. Or better yet: not when it is in production.
 
 ![](examples/exceptions/demo4.py)
@@ -57,7 +57,7 @@ handled, it will end the execution.
 
 {aside}
 
-In some programming languags we use the expression "throwing an exception" in other languages the expression is "raising an exception".
+In some programming languages we use the expression "throwing an exception" in other languages the expression is "raising an exception".
 I use the two expressions interchangeably.
 {/aside}
 
@@ -253,7 +253,7 @@ except (ZeroDivisionError, FileNotFoundError):
 python handle_list_of_exceptions.py one.txt zero.txt two.txt three.txt
 ```
 
-## Hierachy of Exceptions
+## Hierarchy of Exceptions
 {id: hierarchy-of-exceptions}
 
 {aside}
@@ -275,7 +275,7 @@ On this page you'll find the list and hierarchy of exceptions in Python.
 
 ![](examples/exceptions/except_order_good.py)
 
-* Alway try to handle the more specific exceptions first
+* Always try to handle the more specific exceptions first
 
 
 ## How to raise an exception
@@ -309,7 +309,7 @@ You can raise an exception in a simple way.
 
 * [traceback](https://docs.python.org/3/library/traceback.html)
 
-## No need for excaption to print Stack trace
+## No need for exception to print Stack trace
 {id: stack-trace}
 {i: traceback}
 {i: format_stack}
@@ -318,7 +318,7 @@ You can raise an exception in a simple way.
 
 * [traceback](https://docs.python.org/3/library/traceback.html)
 
-## Exercies: Exception int conversion
+## Exercise: Exception int conversion
 {id: exercise-exception-int-conversion}
 
 * In the earlier example we learned how to handle both ZeroDivisionError and FileNotFoundError exceptions. Now try this
@@ -331,13 +331,13 @@ python handle_both_exceptions.py one.txt zero.txt two.txt text.txt three.txt
 ![](examples/exceptions/handle_both_exceptions.out)
 
 * This will raise a `ValueError` exception before handling file three.txt
-* Fix it by capturing the spcific exception.
+* Fix it by capturing the specific exception.
 * Fix by capturing "all other exceptions".
 
 ![](examples/exceptions/text.txt)
 
 
-## Exercies: Raise Exception
+## Exercise: Raise Exception
 {id: exercise-exception-raise-exception}
 
 * Write a function that expects a positive integer as its single parameter.
