@@ -348,3 +348,15 @@ examples/flock - not working yet
 
 
 move poll-break earlier https://code-maven.com/slides/python/subprocess-background
+
+For the last day:
+
+group 1:
+web application development
+
+group 2:
+zip function
+numpy and scipy
+sql
+GUI
+
