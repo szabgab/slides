@@ -262,6 +262,20 @@ On this page you'll find the list and hierarchy of exceptions in Python.
 
 * [exceptions](https://docs.python.org/library/exceptions.html#exception-hierarchy)
 
+## Order of exception handling - bad
+{id: order-of-exception-handling-bad}
+
+![](examples/exceptions/except_order_bad.py)
+
+* Both exception are caught by the first `except` entry
+
+## Order of exception handling - good
+{id: order-of-exception-handling-good}
+
+![](examples/exceptions/except_order_good.py)
+
+* Alway try to handle the more specific exceptions first
+
 
 ## How to raise an exception
 {id: raise-an-exception}
