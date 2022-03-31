@@ -6,8 +6,9 @@ files = sys.argv[1:]
 for filename in files:
     try:
         module.read_and_divide(filename)
-    except (ZeroDivisionError, FileNotFoundError):
-        print(f"We have a problem with file '{filename}'")
+    except (ZeroDivisionError, FileNotFoundError) as err:
+        print(f"We have a problem with file '{filename}'", file=sys.stderr)
+        print(f"Exception type {err.__class__.__name__}", file=sys.stderr)
     print('')
 
 # before one.txt

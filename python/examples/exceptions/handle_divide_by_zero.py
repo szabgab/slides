@@ -7,7 +7,7 @@ for filename in files:
     try:
         module.read_and_divide(filename)
     except ZeroDivisionError:
-        print(f"Cannot divide by 0 in file '{filename}'")
+        print(f"Cannot divide by 0 in file '{filename}'", file=sys.stderr)
     print('')
 
 # before one.txt
