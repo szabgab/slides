@@ -17,10 +17,13 @@ for filename in files:
 
 # before zero.txt
 # We have a problem with file 'zero.txt'
+# Exception type ZeroDivisionError
 
 # before two.txt
 # We have a problem with file 'two.txt'
+# Exception type FileNotFoundError
 
 # before three.txt
 # 33.333333333333336
 # after  three.txt
+
