@@ -2,6 +2,10 @@
 # numbers
 print((255).bit_length())    # 8
 print((256).bit_length())    # 9
+x = 255
+print(x.bit_length())
+x = 256
+print(x.bit_length())
 
 # strings
 print( "hello WOrld".capitalize() )  # Hello world

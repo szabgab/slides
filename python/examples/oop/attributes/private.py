@@ -5,3 +5,7 @@ class Thing:
 t = Thing()
 print(t._name)  # This should be private
 print(dir(t))   # [..., '_name']
+
+t._name = 'Fake'
+print(t._name)  # Fake
+
