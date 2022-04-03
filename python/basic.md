@@ -254,7 +254,11 @@ man python
 {id: download-the-examples}
 
 * [The examples are on GitHub](https://github.com/szabgab/slides)
-* You can download them and unzip them.
+* You can download them and unzip them or you can clone them using
+
+```
+git clone https://github.com/szabgab/slides.git
+```
 
 
 
