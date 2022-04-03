@@ -640,7 +640,7 @@ Pick one of the modules and write a test for it.
 * Send Pull Request
 
 
-## PyTest with parameter
+## parametrize PyTest with pytest.mark.parametrize
 {id: pytest-with-parameter}
 {i: @pytest.mark.parametrize}
 {i: mark}
@@ -649,7 +649,7 @@ Pick one of the modules and write a test for it.
 ![](examples/pytest/test_with_param.py)
 ![](examples/pytest/test_with_param.out)
 
-## PyTest with parameters
+## parametrize PyTest with multiple parameters
 {id: pytest-with-parameters}
 
 ![](examples/pytest/test_with_params.py)
