@@ -104,12 +104,19 @@ $ brew install python3
 ## Installation on MS Windows
 {id: installation-windows}
 
+* [Download](http://www.python.org/download/).
+
+"Add Python to environment variables"
+
+
+## Installation of Anaconda
+{id: installation-of-anaconda}
+
+These 
+
 * [Anaconda with Python 3.x](https://www.anaconda.com/download/)
 * Anaconda shell
 * Anaconda Jupyter notebook
-* 
-* An alternative is to [install from here](http://www.python.org/download/).
-
 
 
 ## Editors, IDEs
@@ -274,6 +281,13 @@ set GIT_SSL_NO_VERIFY=true
 git clone https://github.com/szabgab/slides.git
 ```
 
+
+Later, after I update the slides you can also update your local copy of the files by running
+
+```
+cd slides
+git pull
+```
 
 
 ## Comments
