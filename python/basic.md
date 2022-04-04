@@ -398,11 +398,16 @@ Try your environment:
 
 ## Floating point limitation
 {id: floating-point-error}
+
 ![](examples/numbers/float_precision.py)
 
 * [floating point](https://docs.python.org/tutorial/floatingpoint.html)
 
+## Floating point -compare using round
+{id: floating-point-round}
+{i: round}
 
+![](examples/numbers/float_precision_rounded.py)
 
 
 ## Value Types in Numpy
