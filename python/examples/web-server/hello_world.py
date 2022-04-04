@@ -7,14 +7,15 @@ def hello_world(environ, start_response):
     setup_testing_defaults(environ)
 
     status = '200 OK'
-    headers = [('Content-type', 'text/plain')]
+    headers = [('Content-type', 'text/plain; charset=utf-8')]
 
     start_response(status, headers)
 
-    return "Hello World " + str(time.time())
+    res = f"Hello World {time.time()}".encode('utf-8')
+    return [res]
 
 port = 8080
-httpd = make_server('0.0.0.0', port, hello_world)
-print("Serving on port {}...".format(port))
-httpd.serve_forever()
+with make_server('0.0.0.0', port, hello_world) as httpd:
+    print("Serving on port {}...".format(port))
+    httpd.serve_forever()
 
