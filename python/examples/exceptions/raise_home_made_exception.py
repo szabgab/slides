@@ -3,7 +3,7 @@ class MyException(Exception):
         self.name  = name
         self.address = address
     def __str__(self):
-        return 'Have you encountered problems? name:{}  address:{}'.format(self.name, self.address)
+        return f'Have you encountered problems? name:{self.name}  address:{self.address}'
 
 
 def some():
@@ -12,15 +12,18 @@ def some():
 def main():
     try:
         some()
-    except Exception as err:
-        print(err)
-        print("Type: " + type(err).__name__)
+    except MyException as err:
         print(err.name)
         print(err.address)
 
+        print(err)
+        print("Type: " + type(err).__name__)
+    except Exception as err:
+        print(f"Some other issue {err}")
+
 main()
 
-# Have you encountered problems? name:Foo Bar  address:Somewhere deep in the code
-# Type: MyException
 # Foo Bar
 # Somewhere deep in the code
+# Have you encountered problems? name:Foo Bar  address:Somewhere deep in the code
+# Type: MyException

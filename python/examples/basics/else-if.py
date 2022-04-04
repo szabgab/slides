@@ -2,7 +2,7 @@ def main():
     a = input('First number: ')
     b = input('Second number: ')
 
-    if a == b:
+    if int(a) == int(b):
         print('They are equal')
     else:
         if int(a) < int(b):
