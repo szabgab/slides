@@ -100,19 +100,22 @@ $ which python3
 $ brew install python3
 ```
 
-
 ## Installation on MS Windows
 {id: installation-windows}
 
 * [Download](http://www.python.org/download/).
 
-"Add Python to environment variables"
+* Make sure the "Add Python 3.10 to PATH" check-box is checked.
+
+Alternatively, if Python was installed without that checkbox, one can re-run the installation,
+select "Modify installation" and then check the box on "Add Python to environment variables".
 
 
 ## Installation of Anaconda
 {id: installation-of-anaconda}
 
-These 
+Anaconda is a package that includes Python and a bunch of other tools.
+I used to recommend it, but these days I prefer a plain installation of Python from python.org.
 
 * [Anaconda with Python 3.x](https://www.anaconda.com/download/)
 * Anaconda shell
