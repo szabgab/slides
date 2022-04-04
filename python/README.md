@@ -359,4 +359,6 @@ zip function
 numpy and scipy
 sql
 GUI
+Jupiter notebook
+
 
