@@ -1,8 +1,8 @@
 # JSON
-{id: python-json}
+{id: json}
 
 ## JSON - JavaScript Object Notation
-{id: json}
+{id: json-javascript-object-notation}
 {i: json}
 
 [JSON](http://www.json.org/) is basically the data format used by JavaScript. Because its universal availability it became the de-facto standard for data
