@@ -177,13 +177,6 @@ and let that method set up the initial values of the insance-object.
 
 ![](examples/oop/attributes/private.py)
 
-## Hidden attributes
-{id: oop-hidden-attributes}
-
-* Primarily useful to ensure inheriting classes don't accidently overwrite attributes.
-
-![](examples/oop/attributes/hidden.py)
-
 
 ## Methods
 {id: oop-methods}
@@ -264,6 +257,19 @@ When an object holds references to one or more other objects.
 
 
 ![](examples/oop/composition/line.py)
+
+## Hidden attributes
+{id: oop-hidden-attributes}
+
+* Primarily useful to ensure inheriting classes don't accidently overwrite attributes.
+
+![](examples/oop/attributes/hidden.py)
+![](examples/oop/attributes/class_with_hidden_attribute.py)
+
+## Hidden attributes in a subclass
+{id: oop-hidden-attributes-in-a-subclass}
+
+![](examples/oop/attributes/subclass_with_hidden.py)
 
 
 ## Some comments
