@@ -60,12 +60,14 @@ On Windows:
 
 
 ```
-venv\Source\activate.bat
+venv\Scripts\activate.bat
+...
+deactivate
 ```
 
 {aside}
 
-The **virtualenv** command will create a copy of python in the given directory inside the current directory.
+The `virtualenv` command will create a copy of python in the given directory inside the current directory.
 In the above example it will create the copy in the 'venv' directory inside the 'project_dir'.
 After source-ing the 'activate' file the PATH will include the local python with a local version of **pip**
 and **easy_install**. This requires bash or zsh.
