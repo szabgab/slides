@@ -302,3 +302,17 @@ Try running it without the `if` and `break` statements and see what happens. (Ct
 ![](examples/generators/infinite_operations.py)
 ![](examples/generators/infinite_operations.out)
 
+## Infinite random number generator
+{id: infinte-randum-number-generator}
+
+This example was created to show that iterators (generators) don't necessarily return a fixed list of values.
+
+![](examples/generators/random_number_generator.py)
+
+## Infinite random set generator
+{id: infinite-random-set-generator}
+
+This example was created to show that iterators (generators) don't necessarily return a fixed list of values.
+
+![](examples/generators/random_set_generator.py)
+
