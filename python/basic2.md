@@ -531,6 +531,8 @@ Operator (+-*/): +
 Try Again, this time:
 
 ```
+$ python examples/basics/calculator_eval.py
+
 Number: os.system("ls -l")
 Number:
 Operator (+-*/):
@@ -687,15 +689,27 @@ There are other syntax-like errors that will be only caught during execution
 {id: flake8-compile}
 
 ```
-conda install flake8
 pip install flake8
+
 
 flake8 --ignore= compile.py
 ```
+
 ![](examples/basics/compile_flake8.out)
+
+If you used Anaconda you can install with:
+
+```
+conda install flake8
+```
+
 
 ## Pylint checking
 {id: pylint-checking}
+
+```
+pip install pylint
+```
 
 ![](examples/basics/bad.py)
 
