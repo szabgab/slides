@@ -24,6 +24,15 @@ In Python you can put string between two single quotes: '' or between two double
 ![](examples/strings/other.out)
 
 
+## Multiline strings
+{id: multiline-strings}
+
+* We would like to print the number one under the other
+
+![](examples/strings/multiline_string.py)
+![](examples/strings/multiline_string.out)
+
+
 ## Triple quoted strings (multiline)
 {id: triple-quoted-strings}
 {i: """}
@@ -36,6 +45,7 @@ or 2*3 double-quotes.
 {/aside}
 
 ![](examples/strings/triple_quotes.py)
+![](examples/strings/triple_quotes.org)
 
 Can spread multiple lines.
 
