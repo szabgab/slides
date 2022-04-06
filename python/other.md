@@ -913,6 +913,13 @@ py -m pip install --trusted-host pypi.org --trusted-host pypi.python.org --trust
 ## Configure pip on Windows to avoid SSL issues
 {id: configure-pip-on-windows}
 
+
+On the command line:
+
+```
+pip install --trusted-host pypi.org --trusted-host pypi.python.org --trusted-host files.pythonhosted.org  PACKAGE_NAME
+```
+
 Run the following command to get the list of configuration files:
 
 ```
