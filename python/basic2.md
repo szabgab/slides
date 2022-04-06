@@ -680,6 +680,10 @@ There are other syntax-like errors that will be only caught during execution
 ![](examples/basics/compile.py)
 ![](examples/basics/compile.py.out)
 
+
+![](examples/basics/compile_with_global.py)
+![](examples/basics/compile_with_global.out)
+
 * Python code is first compiled to bytecode and then interpreted.
 * CPython is both the compiler and the interpreter.
 * Jython and IronPython are mostly just compiler to JVM and CLR respectively.
