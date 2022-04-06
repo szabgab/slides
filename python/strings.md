@@ -45,7 +45,7 @@ or 2*3 double-quotes.
 {/aside}
 
 ![](examples/strings/triple_quotes.py)
-![](examples/strings/triple_quotes.org)
+![](examples/strings/triple_quotes.out)
 
 Can spread multiple lines.
 
