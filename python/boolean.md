@@ -38,6 +38,8 @@
 ![](examples/boolean/compare_two_values.py)
 
 * [ASCII](https://en.wikipedia.org/wiki/ASCII)
+* [Unicode](https://home.unicode.org/)
+
 
 ## Do NOT Compare different types!
 {id: compare-different-types}
@@ -271,15 +273,16 @@ if status_code in [401, 302]:
 {id: exercise-compare-strings}
 
 * Create a file called **bool_compare_strings.py**
+* You can use the `len()` function to get the length of the string.
 * Ask the user to enter two strings
-* Then ask the user to select if she wants to compare them based on ASCII or based on their length
+* Then ask the user to select if she wants to compare them based on Unicode or based on their length
 * Then tell us which one is bigger.
 
 ```
 Input a string: (user types string and ENTER)
 Input another string: (user types string and ENTER)
 How to compare:
-1) ASCII
+1) Unicode
 2) Length
 (user types 1 or 2 and ENTER)
 ```
