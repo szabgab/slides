@@ -11,3 +11,6 @@ print(mixed) # one -=<> two and three -=<> four -=<> five
 
 another = ''.join(fields)
 print(another)  # onetwo and threefourfive
+
+csv = ','.join(fields)
+print(csv) # one,two and three,four,five

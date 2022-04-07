@@ -55,14 +55,16 @@
 
 ![](examples/lists/change.py)
 
-![](examples/lists/change_sublist.py)
-
-![](examples/lists/change_element.py)
-
 * Unlike strings, lists are mutable. You can change the content of a list by assigning values to its elements.
 * You can use the slice notation to change several elements at once.
 * You can even have different number of elements in the slice and in the replacement. This will also change the length of the array.
 
+## Change sublist vs change element of a list
+{id: change-sublist-vs-change-element}
+
+![](examples/lists/change_sublist.py)
+
+![](examples/lists/change_element.py)
 
 
 ## Change with steps
@@ -107,6 +109,7 @@ copy.deepcopy() # deep copy
 
 ![](examples/lists/join.py)
 
+* For real CSV use: [csv](https://docs.python.org/library/csv.html)
 
 ## join list of numbers
 {id: join-mixed-list}
