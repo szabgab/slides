@@ -101,6 +101,15 @@
 ![](examples/loops/while_true.py)
 ![](examples/loops/while_true.out)
 
+## Testing the refactoring of the while loop
+{id: testing-the-refactoring-of-the-while-loop}
+
+![](examples/loops/test_random_loop.py)
+
+```
+pytest test_random_loop.py
+pytest -s test_random_loop.py
+```
 
 ## Duplicate input call
 {id: duplicate-input-call}
