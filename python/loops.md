@@ -143,6 +143,15 @@ There is no `do ... while` in Python but we can write code like this to have sim
 
 Not supported in Python. "If you feel the urge to do that, your code is probably too complex. Create functions!"
 
+```
+while external():
+    while internal():
+        if ...:
+            break
+        if ...:
+            continue
+```
+
 ## For-else
 {id: for-break-or-else}
 
