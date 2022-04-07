@@ -223,6 +223,7 @@ Check if a substring is **in** the string?
 
 * [ASCII](https://en.wikipedia.org/wiki/ASCII)
 * [Hebrew Character](https://en.wikipedia.org/wiki/Hebrew_character)
+* [ISO/IEC 8859-8](https://en.wikipedia.org/wiki/ISO/IEC_8859-8)
 * [Windows-1255](https://en.wikipedia.org/wiki/Windows-1255)
 * [Unicode (UTF-8)](https://en.wikipedia.org/wiki/Unicode)
 
@@ -266,20 +267,20 @@ Escape sequences are kept intact and not escaped. Used in regexes.
 * Write script called **string_in_another_string.py** that accepts two strings and tells if one of them can be found in the other and where?
 
 
-## Exercise: Character to ASCII - CLI
-{id: exercise-to-ascii-cli}
+## Exercise: Character to Unicode-8 - CLI
+{id: exercise-to-unicode-cli}
 
-Write script called **char_to_ascii.py** that gets a character on the command line and prints out the ascii code of it.
+Write script called **char_to_unicode.py** that gets a character on the command line and prints out the Unicode code of it.
 
 Maybe even:
 
-Write script that gets a string on the command line and prints out the ascii code of each character.
+Write script that gets a string on the command line and prints out the Unicode code of each character.
 
 
-## Exercise: from ASCII to character - CLI
-{id: exercise-from-ascii-cli}
+## Exercise: from Unicode to character - CLI
+{id: exercise-from-unicode-cli}
 
-Write script called **ascii_to_char.py** that accepts a number on the command line and prints the character represented by that number.
+Write script called **unicode_to_char.py** that accepts a number on the command line and prints the character represented by that number.
 
 ## Exercise: ROT13
 {id: exercise-rot13}
@@ -307,15 +308,15 @@ Hello world!
 
 ![](examples/strings/compare_strings.py)
 
-## Solution: to ASCII CLI
-{id: solution-to-ascii-cli}
+## Solution: to Unicode CLI
+{id: solution-to-unicode-cli}
 
 
 ![](examples/strings/to_ascii_char.py)
 ![](examples/strings/to_ascii.py)
 
-## Solution: from ASCII CLI
-{id: solution-from-ascii-cli}
+## Solution: from Unicode CLI
+{id: solution-from-unicode-cli}
 
 ![](examples/strings/from_ascii.py)
 
