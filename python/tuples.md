@@ -1,9 +1,9 @@
-# tuple
-{id: tuple}
+# Tuples
+{id: tuples}
 
 
 ## Create tuple
-{id: create-tuple}
+{id: tuple}
 {i: tuple}
 {i: ()}
 
