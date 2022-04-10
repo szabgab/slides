@@ -1,0 +1,7 @@
+('Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn')
+Venus
+('Venus', 'Earth')
+Traceback (most recent call last):
+  File "/home/gabor/work/slides/python/examples/lists/tuple.py", line 6, in <module>
+    tpl.append("Death Star")
+AttributeError: 'tuple' object has no attribute 'append'

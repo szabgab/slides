@@ -567,11 +567,12 @@ of values in the returned list is not 2. (Both for fewer and for more return val
 
 Tuple
 
-
 * A tuple is a fixed-length immutable list. It cannot change its size or content.
+* Can be accessed by **index**, using the **slice** notation.
 * A tuple is denoted with parentheses: (1,2,3)
 
 ![](examples/lists/tuple.py)
+![](examples/lists/tuple.out)
 
 List
 
@@ -580,13 +581,22 @@ List
 * A list can grow and shrink using **append** and **pop** methods or using the **slice** notation.
 * A list is denoted with square brackets:   [1, 2, 3]
 
-![](examples/lists/totuple.py)
+![](examples/lists/list.py)
+![](examples/lists/list.out)
 
 
+{aside}
 Tuples are rarely used. There are certain places where Python or some module require tuple (instead of list) or return a tuple (instead of a list)
 and in each place it will be explained. Otherwise you don't need to use tuples.
 
 e.g. keys of dictionaries can be tuple (but not lists).
+{/aside}
+
+## Convert list to tuple and tuple to list
+{id: convert-list-to-tuple}
+
+![](examples/lists/totuple.py)
+![](examples/lists/totuple.out)
 
 ## Enumerate returns tuples
 {id: enumerate-lists-tuples}
@@ -601,7 +611,6 @@ e.g. keys of dictionaries can be tuple (but not lists).
 {id: change-a-tuple}
 
 ![](examples/lists/change_tuple.py)
-
 
 
 ## Sort tuples
