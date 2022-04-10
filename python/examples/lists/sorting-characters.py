@@ -1,9 +1,14 @@
 letters = 'axzb'
 print(letters)         # 'axzb'
-s = sorted(letters)
-print(s)               # ['a', 'b', 'x', 'z']
+
+srt = sorted(letters)
+print(srt)             # ['a', 'b', 'x', 'z']
 print(letters)         # 'axzb'
 
-r = ''.join(sorted(letters))
-print(r)               # abxz
+rev = ''.join(srt)
+print(rev)               # abxz
+
+# in one statement:
+rev = ''.join(sorted(letters))
+print(rev)               # abxz
 

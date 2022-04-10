@@ -1,3 +1,4 @@
-things = ['abc', 'def', 'ghi', 42]
-for var in things:
+planets = ['Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn']
+for var in planets:
     print(var)
+

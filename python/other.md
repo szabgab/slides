@@ -926,3 +926,13 @@ $ easy_install module_name
 ```
 easy_install -d ~/python Genshi
 ```
+
+## sorting with sorted using a key
+{id: key-sorted}
+
+To sort the list according to length using sorted
+
+![](examples/lists/sorted_key.py)
+![](examples/lists/sorted_key.out)
+
+

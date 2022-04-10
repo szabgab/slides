@@ -433,25 +433,7 @@ your name: s
 
 ![](examples/lists/sort_numbers.py)
 
-
-## sort mixed
-{id: sort-mixed}
-
-![](examples/lists/sort_mixed.py)
-
-Python 2 puts the numbers first in numerical order and then the strings in ASCII order.
-
-```
-[100, 'foo', 42, 'bar']
-[42, 100, 'bar', 'foo']
-```
-
-In Python 3 it throws an exception.
-
-![](examples/lists/sort_mixed.out)
-
-
-## key sort
+## key sort of strings
 {id: key-sort}
 {i: key}
 {i: len}
@@ -462,7 +444,24 @@ In Python 3 it throws an exception.
 ![](examples/lists/sort_key.py)
 ![](examples/lists/sort_key.out)
 
-## sort with sorted
+
+## sort mixed values
+{id: sort-mixed}
+
+![](examples/lists/sort_mixed.py)
+
+In Python 3 it throws an exception.
+
+![](examples/lists/sort_mixed.out)
+
+Python 2 puts the numbers first in numerical order and then the strings in ASCII order.
+
+```
+[100, 'foo', 42, 'bar']
+[42, 100, 'bar', 'foo']
+```
+
+## sorting with sorted
 {id: sorted}
 {i: sorted}
 
@@ -478,47 +477,54 @@ The built-in sorted() function will return the sorted list and leave the origina
 ## Sorted and change - shallow copy
 {id: sorted-and-change}
 
+* Sorted creates a shallow copy of the original list
+
+* If the list elements are simple values that creates a copy
+
 ![](examples/lists/sorted_and_change.py)
 ![](examples/lists/sorted_and_change.out)
+
+* If some of the elements are complex structures (list, dictionaries, etc.) then the internal structures are not copied.
+* One can use `copy.deepcopy` to make sure the whole structure is separated, if that's needed.
 
 ![](examples/lists/sorted_and_change_deep.py)
 ![](examples/lists/sorted_and_change_deep.out)
 
 
-## key sort with sorted
-{id: key-sorted}
-
-To sort the list according to length using sorted
-
-![](examples/lists/sorted_key.py)
-![](examples/lists/sorted_key.out)
-
 ## Sorting characters of a string
 {id: sorting-characters}
+
 ![](examples/lists/sorting-characters.py)
 
 
 ## range
 {id: range}
 {i: range}
+
 ![](examples/lists/range.py)
 
 
 ## Looping over index
 {id: looping-over-index}
+
 ![](examples/lists/loop.py)
+![](examples/lists/loop.out)
+
 ![](examples/lists/loop_index.py)
+![](examples/lists/loop_index.out)
 
 
 ## Enumerate lists
 {id: enumerate-lists}
 {i: enumerate}
+
 ![](examples/lists/enumerate.py)
 ![](examples/lists/enumerate.out)
 
 
 ## List operators
 {id: list-operators}
+
 ![](examples/lists/operators.py)
 
 
@@ -581,6 +587,15 @@ Tuples are rarely used. There are certain places where Python or some module req
 and in each place it will be explained. Otherwise you don't need to use tuples.
 
 e.g. keys of dictionaries can be tuple (but not lists).
+
+## Enumerate returns tuples
+{id: enumerate-lists}
+{i: enumerate}
+{i: tuple}
+
+![](examples/lists/enumerate_tuple.py)
+![](examples/lists/enumerate_tuple.out)
+
 
 ## Change a tuple
 {id: change-a-tuple}
