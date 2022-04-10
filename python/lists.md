@@ -589,7 +589,7 @@ and in each place it will be explained. Otherwise you don't need to use tuples.
 e.g. keys of dictionaries can be tuple (but not lists).
 
 ## Enumerate returns tuples
-{id: enumerate-lists}
+{id: enumerate-lists-tuples}
 {i: enumerate}
 {i: tuple}
 
