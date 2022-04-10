@@ -52,6 +52,12 @@ This is just a quick example how to use the Pillow module to handle images. Ther
 
 ![](examples/pil/get_image_size.py)
 
+```
+python examples/pil/get_image_size.py examples/pil/first.png
+```
+
+![](examples/pil/get_image_size.out)
+
 ## Reading an Excel file
 {id: binary-reading-an-excel-file}
 
@@ -177,6 +183,7 @@ Exception handling
 ![](examples/files/average_from_files.py)
 ![](examples/files/number_per_line.txt)
 ![](examples/files/empty.txt)
+![](examples/files/number_per_line2.txt)
 
 ```
 $ python average_from_files.py number_per_line.txt empty.txt number_per_line2.txt

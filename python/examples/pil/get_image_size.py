@@ -10,3 +10,6 @@ img = Image.open(in_file)
 print(img.size)    # a tuple
 print(img.size[0]) # width
 print(img.size[1]) # height
+
+print(sys.getsizeof(img)) # The size of the variable
+print(sys.getsizeof(img.tobytes())) # The payload
