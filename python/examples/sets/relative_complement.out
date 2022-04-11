@@ -1,4 +1,8 @@
 {'hola'}
 {'door', 'car'}
-{'door', 'era', 'car', 'lunar'}
-{'hola', 'era', 'lunar'}
+
+{'hola'}
+{'door', 'car'}
+
+{'door', 'car', 'era', 'lunar'}
+{'lunar', 'era', 'hola'}

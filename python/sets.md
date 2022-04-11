@@ -28,7 +28,7 @@
 * intersection
 * symmetric difference
 * union
-* relative complement
+* relative complement (difference)
 
 * [stdtypes: set](http://docs.python.org/library/stdtypes.html#set)
 
@@ -43,6 +43,13 @@
 
 ![](examples/sets/create_set_from_list.py)
 ![](examples/sets/create_set_from_list.out)
+
+## Converting set to list
+{id: converting-set-to-list}
+
+![](examples/sets/convert_set_to_list.py)
+![](examples/sets/convert_set_to_list.out)
+
 
 ## Creating an empty set
 {id: creating-an-empty-set}
@@ -114,7 +121,7 @@
 
 ![](img/180px-Venn0111.svg.png)
 
-## set relative complement
+## set relative complement (difference)
 {id: set-relative-complement}
 
 
