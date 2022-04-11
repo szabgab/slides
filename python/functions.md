@@ -63,9 +63,15 @@ The parameters of every function can be passed either as positional parameters o
 ## Mixing positional and named parameters
 {id: mixing-positional-and-named-parameters}
 
-![](examples/functions/named_and_positional_params.py)
+![](examples/functions/mixed_params.py)
+![](examples/functions/mixed_params.out)
 
-![](examples/functions/positional_and_named_params.py)
+
+## Mixing positional and named parameters - order
+{id: mixing-positional-and-named-parameters-order}
+
+
+![](examples/functions/named_and_positional_params.py)
 
 ```
   File "examples/functions/named_and_positional_params.py", line 14
@@ -73,6 +79,8 @@ The parameters of every function can be passed either as positional parameters o
     ^
 SyntaxError: positional argument follows keyword argument
 ```
+
+![](examples/functions/positional_and_named_params.py)
 
 ## Default values, optional parameters, optional parameters
 {id: parameter-with-default-values}
