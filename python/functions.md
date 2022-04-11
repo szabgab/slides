@@ -281,6 +281,16 @@ Python also supports recursive functions.
 ![](examples/functions/recursion.py)
 ![](examples/functions/recursion.out)
 
+## Set recurions limit
+{id: set-recursion-limit}
+
+* [getrecursionlimit](https://docs.python.org/library/sys.html?highlight=sys#sys.getrecursionlimit)
+* [setrecursionlimit](https://docs.python.org/library/sys.html?highlight=sys#sys.setrecursionlimit)
+
+![](examples/functions/recursion_set_limit.py)
+![](examples/functions/recursion_set_limit.out)
+
+
 ## Variable assignment and change - Immutable
 {id: remember-assignment}
 
