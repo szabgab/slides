@@ -184,6 +184,14 @@ Starting from Python 3.2 the pyc files are saved in the `__pycache__` directory.
 1. Run the code of the file loaded.
 1. Copy names from the imported module to the importing namespace.
 
+## Execute at import time
+{id: execute-at-import-time}
+
+![](examples/modules/execute_import_time/code.py)
+![](examples/modules/execute_import_time/lib.py)
+![](examples/modules/execute_import_time/code.out)
+
+
 ## Runtime loading of modules
 {id: runtime-loading-of-modules}
 
@@ -199,6 +207,7 @@ Or call code that is in the importing program (print DONE).
 {/aside}
 
 ![](examples/modules/mygreet.py)
+![](examples/modules/load_mygreet.py)
 ![](examples/modules/runtime_loading.py)
 
 
@@ -236,6 +245,11 @@ pylint --disable=C  duplicate_add_from_module.py
 
 ![](examples/modules/duplicate_add_from_module_lint.out)
 
+## Duplicate importing of functions - solved
+{id: duplicate-importing-of-functions-solved}
+
+
+![](examples/modules/duplicate_add_from_module_solved.py)
 
 ## Script or library
 {id: python-script-or-library}
@@ -296,13 +310,6 @@ The importing of functions, and the changes in the behavior of the compiler are 
 In this case the change in the behavior of division is only visible in the division.py script, but not in the mydiv.py module.
 {/aside}
 
-
-## Execute at import time
-{id: execute-at-import-time}
-
-![](examples/modules/execute_import_time/code.py)
-![](examples/modules/execute_import_time/lib.py)
-![](examples/modules/execute_import_time/code.out)
 
 
 ## Import multiple times
