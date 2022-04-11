@@ -6,8 +6,3 @@ def mysum(*numbers):
         total += s
     return total
 
-if __name__ == '__main__':
-    print(mysum())
-    print(mysum(1))
-    print(mysum(1, 2))
-    print(mysum(1, 1, 1))

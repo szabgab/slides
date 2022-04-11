@@ -63,6 +63,11 @@ The parameters of every function can be passed either as positional parameters o
 ## Mixing positional and named parameters
 {id: mixing-positional-and-named-parameters}
 
+{aside}
+We have already seen several built-in functions where we mixed positional arguments
+with some key-value arguments.
+{/aside}
+
 ![](examples/functions/mixed_params.py)
 ![](examples/functions/mixed_params.out)
 
@@ -70,6 +75,11 @@ The parameters of every function can be passed either as positional parameters o
 ## Mixing positional and named parameters - order
 {id: mixing-positional-and-named-parameters-order}
 
+{aside}
+We can also mix the parameters passed to any user-defined function, but we have to make sure that
+positional parameters always come first and named (key-value) parameter come at the
+end of the parameter list.
+{/aside}
 
 ![](examples/functions/named_and_positional_params.py)
 
@@ -130,7 +140,10 @@ The values arrive as `tuple`.
 {/aside}
 
 ![](examples/functions/mysum.py)
-![](examples/functions/mysum.py.out)
+
+![](examples/functions/use_mysum.py)
+
+![](examples/functions/use_mysum.out)
 
 ## Arbitrary number of arguments passing a lists
 {id: arbitrary-number-of-arguments-list}

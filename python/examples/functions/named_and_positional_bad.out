@@ -1,4 +1,4 @@
   File "examples/functions/named_and_positional_bad.py", line 2
-    def f(a = 2, b):
+    def f(a=2, b):
           ^
 SyntaxError: non-default argument follows default argument
