@@ -186,13 +186,19 @@ The `*numbers` argument can be preceded by any number of regular arguments
 ![](examples/functions/kw.py)
 ![](examples/functions/kw.out)
 
-
 ## Extra key-value pairs in parameters
 {id: extra-kw-value-pairs}
 {i: **kwargs}
 
 ![](examples/functions/extra_kw.py)
 ![](examples/functions/extra_kw.out)
+
+## Extra key-value pairs in parameters for email
+{id: extra-kw-value-pairs-for-email}
+
+![](examples/functions/extra_key_value_pairs.py)
+![](examples/functions/extra_key_value_pairs.out)
+
 
 
 ## Every parameter option
