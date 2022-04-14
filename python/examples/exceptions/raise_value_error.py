@@ -8,7 +8,7 @@ def main():
         div(6, 3)
         div(3, 0)
         div(6, 2)
-    except Exception as err:
+    except ValueError as err:
         print(f"Exception: {err}")
         print("Type: " + type(err).__name__)
 
