@@ -2,6 +2,7 @@ import time
 
 now = time.time()
 print(now)             # 1351178170.85
+print(type(now))       # <class 'float'>
 
 print(time.timezone)   # -7200 = 2*60*60  (GMT + 2)
 print(time.daylight)   # 1 (DST or Daylight Saving Time)
