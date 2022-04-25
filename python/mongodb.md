@@ -12,6 +12,7 @@
 * **pip install pymongo**
 
 ## MongoDB in Docker compose
+{id: mongodb-in-docker}
 
 ![](examples/mongodb/Dockerfile)
 ![](examples/mongodb/docker-compose.yml)
