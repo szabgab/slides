@@ -6,7 +6,7 @@ print(text)
 #print(chr(128120))
 #print(0x1f000)
 
-match = re.search(r"[\U0001f000-\U00020000]*", text)
+match = re.search(r"[\U0001f000-\U00020000]+", text)
 if match:
     print(match.group(0))
 
