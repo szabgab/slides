@@ -45,6 +45,7 @@ Given a text message fetch all the phone numbers:
 Fetch numbers that look like 09-1234567
 then also fetch +972-2-1234567
 and maybe also 09-123-4567
+but this #456 is not a phone number
 
 
 Check if in a given text passing your network there are credit card numbers....

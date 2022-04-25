@@ -19,12 +19,13 @@ strings = [
     '910975229-0-X',
     '-------------',
     '0000000000000',
+    '3-3-3-X',
 ]
 for isbn in strings:
     print(isbn)
 
-    if (re.search(r'^[\dX-]{13}$', isbn)):
+    if (re.search(r'^[0-9X-]{13}$', isbn)):
         print("match 1")
 
-    if (re.search(r'^\d{1,5}-\d{1,7}-\d{1,5}-[\dX]$', isbn) and len(isbn) == 13):
+    if (len(isbn) == 13 and re.search(r'^[0-9]{1,5}-[0-9]{1,7}-[0-9]{1,5}-[0-9X]$', isbn)):
         print("match 2")
