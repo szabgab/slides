@@ -6,3 +6,7 @@ if len(sys.argv) != 3:
 start, end = sys.argv[1:]
 for decimal in range(int(start), int(end)+1):
     print(f"{decimal} {chr(decimal)}")
+
+# Emojis:
+# 127744 -
+# 128506 - 128591
