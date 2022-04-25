@@ -1,7 +1,7 @@
 from pymongo import MongoClient
 import datetime
 
-client = MongoClient()
+client = MongoClient('mongodb://mongodb:27017')
 db = client.demo
 
 foo = {

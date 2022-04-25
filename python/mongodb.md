@@ -11,6 +11,19 @@
 
 * **pip install pymongo**
 
+## MongoDB in Docker compose
+
+![](examples/mongodb/Dockerfile)
+![](examples/mongodb/docker-compose.yml)
+
+```
+docker-compose up
+```
+
+```
+docker exec -it mongodb_app_1 bash
+```
+
 
 ## Python MongoDB insert
 {id: mongodb-insert}
