@@ -148,3 +148,11 @@
 ![](examples/sets/set_of_tuples.py)
 ![](examples/sets/set_of_tuples.out)
 
+## Create set from List
+{id: create-set-from-list}
+
+
+![](examples/dictionary/set_from_list.py)
+![](examples/dictionary/set_from_list.out)
+
+

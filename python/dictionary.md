@@ -548,8 +548,16 @@ Generate random DNA sequence
 
 ![examples/dictinoary/namedtuple.py)
 
+## Create dictionary from List
+{id: create-dictionary-from-list}
+
+![](examples/dictionary/dict_from_list.py)
+![](examples/dictionary/dict_from_list.out)
+
+
 ## Sort Hungarian letters (lookup table)
 {id: sort-hungarian-letters}
 
 ![](examples/lists/sort_hungarian_letters.py)
+
 
