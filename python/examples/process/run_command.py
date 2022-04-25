@@ -3,8 +3,7 @@ import sys
 
 def run_process(command):
     print("Before Popen")
-    proc = subprocess.Popen(command,
-    )  # This starts runing the external process
+    proc = subprocess.Popen(command)  # This starts runing the external process
     print("After Popen")
 
     proc.communicate()
@@ -13,9 +12,9 @@ def run_process(command):
     exit_code = proc.returncode
     return exit_code
 
-print("Before run_process")
+print("Before run_process", flush=True)
 exit_code = run_process([sys.executable, 'process.py', '5', '0'])
-print("After run_process")
+print("After run_process", flush=True)
 
-print(f'exit code: {exit_code}')
+print(f'exit code: {exit_code}', flush=True)
 
