@@ -361,3 +361,11 @@ sql
 GUI
 Jupiter notebook
 
+
+group 3:
+how to make numpy faster
+web application development
+Excel (2 ways)
+PostgreSQL
+MongoDB
+
