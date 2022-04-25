@@ -234,6 +234,7 @@ Replace method
 Extend method before or after calling original.
 
 ![](examples/oop/inheritance/extend.py)
+![](examples/oop/inheritance/extend.out)
 
 
 ## Modes of method inheritance - delegate - provide
@@ -257,6 +258,17 @@ When an object holds references to one or more other objects.
 
 
 ![](examples/oop/composition/line.py)
+
+## Composition - Line with type annotation
+{id: oop-composition-line-with-type-annotation}
+
+![](examples/oop/composition/line_with_types.py)
+
+```
+mypy examples/oop/composition/line_with_types.py
+```
+
+![](examples/oop/composition/line_with_types_mypy.out)
 
 ## Hidden attributes
 {id: oop-hidden-attributes}

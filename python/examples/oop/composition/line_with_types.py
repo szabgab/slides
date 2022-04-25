@@ -4,7 +4,7 @@ class Point():
         self.y = y
 
 class Line():
-    def __init__(self, a, b):
+    def __init__(self, a:Point, b:Point):
         self.a = a
         self.b = b
 

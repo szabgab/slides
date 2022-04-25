@@ -7,7 +7,8 @@ class Child(Parent):
         print("Hi five!")
 
 p = Parent()
-p.greet()    # Hello World
+p.greet()
+print()
 
 c  = Child()
-c.greet()    # Hi five!
+c.greet()

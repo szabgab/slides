@@ -6,4 +6,6 @@ print(p1.x)        # 2
 print(p1.y)        # 3
 
 p2 = Point(b=7, a=8)
+print(p2)          # <shapes.Point instance at 0x7fb58c31cd00>
 print(p2.x)        # 8
+print(p2.y)        # 7

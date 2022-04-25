@@ -9,11 +9,8 @@ class Child(Parent):
         print("This is my world!")
 
 p = Parent()
-p.greet()    # Hello World
+p.greet()
+print()
 
 c  = Child()
 c.greet()
-
-# Hi five!
-# Hello World
-# This is my world!
