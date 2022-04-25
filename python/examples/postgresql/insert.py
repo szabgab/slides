@@ -1,9 +1,10 @@
 import psycopg2
 
 try:
-    conn = psycopg2.connect("postgresql:///testdb")
-except Exception as e:
-    print("I am unable to connect to the database: ", e)
+    #conn = psycopg2.connect("postgresql:///testdb")
+    conn = psycopg2.connect("dbname='default_database' user='username' host='pgdatabase' password='password'")
+except Exception as err:
+    print(f"I am unable to connect to the database: {err}")
 
 cur = conn.cursor()
 
@@ -13,6 +14,5 @@ name = 'Foo'
 try:
     cur.execute("INSERT INTO people (id, name) VALUES (%s, %s)", (uid, name))
     conn.commit()
-except Exception as e:
-    print(e)
-
+except Exception as err:
+    print(err)
