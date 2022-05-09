@@ -19,7 +19,7 @@ $ psql testdb
 testdb=# CREATE TABLE people (id INTEGER PRIMARY KEY, name VARCHAR(100));
 ```
 
-## PostgreSQL with Docker compos
+## PostgreSQL with Docker compose
 {id: postgresql-with-docker-compose}
 
 ![](examples/postgresql/Dockerfile)
