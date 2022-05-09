@@ -19,6 +19,6 @@ data = openpyxl.chart .Reference(ws,
                                  max_row=len(c))
 lc.add_data(data, titles_from_data=True)
 
-ws.add_chart(lc, "D1")
+ws.add_chart(lc, "H15")
 
 wb.save("chart.xlsx")
