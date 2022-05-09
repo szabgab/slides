@@ -8,11 +8,16 @@ def fibo(n):
         a, b = b, a + b
     return b
 
+print(fibo(12))
+print(fibo.__class__.__name__)
+
 vfibo = np.vectorize(fibo)
 a = np.array([
     [1, 2, 3, 4, 5, 6],
     [7, 8, 9, 10, 11, 12],
     ])
+print(vfibo.__class__.__name__)
+
 print(a)
 print(a.dtype)
 print()
