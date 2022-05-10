@@ -106,3 +106,15 @@ pytest
 `http://localhost:8000/deep/a/b.txt`  works
 
 
+## Return main HTML page
+{id: fastapi-return-html-page}
+
+![](examples/fastapi/return-html/main.py)
+
+## Return main HTML file
+{id: fastapi-return-html-file}
+
+![](examples/fastapi/return-html-file/main.py)
+![](examples/fastapi/return-html-file/index.html)
+
+
