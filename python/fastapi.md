@@ -95,7 +95,7 @@ pytest
 
 
 ## FastAPI - Path containing a directory path
-{id: fastapi-path-containing a path}
+{id: fastapi-path-containing-a-path}
 
 ![](examples/fastapi/path-of-path/main.py)
 
