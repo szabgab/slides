@@ -186,6 +186,24 @@ The `*numbers` argument can be preceded by any number of regular arguments
 ![](examples/functions/kw.py)
 ![](examples/functions/kw.out)
 
+## Pass a real dictionary
+{id: pass-a-real-dictionary}
+
+![](examples/functions/pass_dict.py)
+![](examples/functions/pass_dict.out)
+
+## The dictionary contains copy
+{id: kw-dictionary-is-copy}
+
+![](examples/functions/dict_is_a_copy.py)
+![](examples/functions/dict_is_a_copy.out)
+
+## The dictionary contains copy but NOT deep copy!
+{id: kw-dictionary-is-not-a-deep-copy}
+
+![](examples/functions/dict_is_not_a_deepcopy.py)
+![](examples/functions/dict_is_not_a_deepcopy.out)
+
 ## Extra key-value pairs in parameters
 {id: extra-kw-value-pairs}
 {i: **kwargs}
