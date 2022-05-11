@@ -369,3 +369,16 @@ Excel (2 ways)
 PostgreSQL
 MongoDB
 
+
+Day 1 09:00-15:00
+   * Writing functions (2 hours)
+   * Modularization of code (1 hour)
+   * Intro to testing (1.5 hours)
+Day 2 09:00-15:00
+   * Intro to OOP (converting code using "global" to OOP code) (2 hours)
+   * Fast API / REST API (2 hours)
+Day 3 09:00-15:00
+   * Dependency management + environments + Docker (3 hours)
+   * MLOps: logging, metrics, data-pipelines (2 hours)
+
+
