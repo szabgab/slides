@@ -1,0 +1,22 @@
+version: '3'
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    tty: true
+    command: bash
+    volumes:
+      - .:/opt
+    ports:
+      - "8000:8000"
+
+  mongodb:
+    image: mongo:4.0.8
+    volumes:
+      - mongo-data:/data/db
+      - mongo-configdb:/data/configdb
+
+volumes:
+  mongo-data:
+  mongo-configdb:

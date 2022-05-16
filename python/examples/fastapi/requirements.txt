@@ -1,0 +1,6 @@
+fastapi[all]
+uvicorn[standard]
+
+pytest
+
+motor==3.0.0

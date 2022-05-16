@@ -14,6 +14,28 @@ pip install "fastapi[all]"
 pip install "uvicorn[standard]"
 ```
 
+## FastAPI with Docker compose
+{id: fastapi-with-docker-compose}
+
+![](examples/fastapi/Dockerfile)
+
+![](examples/fastapi/docker-compose.yml)
+
+![](examples/fastapi/requirements.txt)
+
+```
+docker-compose up
+```
+
+```
+docker exec -it fastapi_app_1 bash
+```
+
+```
+uvicorn main:app --reload --host=0.0.0.0
+```
+
+
 ## FastAPI -  Hello World
 {id: fastapi-hello-world}
 
@@ -56,6 +78,8 @@ pytest
 
 `http://localhost:8000/?text=Foo%20Bar`
 
+![](examples/fastapi/echo-get/test_main.py)
+
 ## FastAPI - Calculator GET
 {id: fastapi-calculator-get}
 
@@ -63,6 +87,7 @@ pytest
 
 `http://localhost:8000/?a=2&b=3`
 
+![](examples/fastapi/calculator-get/test_main.py)
 
 ## FastAPI - Path Parameters - str
 {id: fastapi-path-parameters-str}
@@ -74,6 +99,8 @@ pytest
 
 
 `http://localhost:8000/user/` - 404
+
+![](examples/fastapi/username-path/test_main.py)
 
 ## FastAPI - Path Parameters - int
 {id: fastapi-path-parameters-int}
@@ -116,5 +143,20 @@ pytest
 
 ![](examples/fastapi/return-html-file/main.py)
 ![](examples/fastapi/return-html-file/index.html)
+
+
+* Demo in Docker
+* POST
+* Access to MongoDB
+* Access to PostgreSQL
+* Access to SQLite
+* Session ???
+* Counter
+* Can we have the query parameters and the internal variables be different (e.g.   paramName  and param_name ?)
+* Get details from the request header (e.g. Authorization)
+* Set headers in the response
+* abort(401) with some status code  (eg   user/{id}  but we don't have that specific id)
+* handel exceptions (500 errors)
+
 
 
