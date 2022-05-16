@@ -85,6 +85,28 @@ http://localhost:8000/?text=Foo%20Bar
 
 ![](examples/fastapi/echo-get/test_main.py)
 
+
+## FastAPI - Echo POST - request body
+{id: fastapi-echo-post}
+
+![](examples/fastapi/echo-post/main.py)
+
+```
+http://localhost:8000/?text=Foo%20Bar
+```
+
+```
+curl -d '{"text":"Foo Bar"}' -H "Content-Type: application/json" -X POST http://localhost:8000/
+```
+
+![](examples/fastapi/echo-post/client.py)
+
+
+## FastAPI - Echo POST - request body - test
+{id: fastapi-test-echo-post}
+
+![](examples/fastapi/echo-post/test_main.py)
+
 ## FastAPI - Calculator GET
 {id: fastapi-calculator-get}
 
@@ -217,7 +239,6 @@ http://localhost:8000/deep/a/b.txt     works
 
 
 
-* POST
 * Access to MongoDB
 * Access to PostgreSQL
 * Access to SQLite
