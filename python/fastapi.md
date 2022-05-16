@@ -123,9 +123,9 @@ http://localhost:8000/user/ - 404
 ![](examples/fastapi/userid-path/main.py)
 
 ```
-http://localhost:8000/user/23
-http://localhost:8000/user/foo
-http://localhost:8000/user/2.3
+http://localhost:8000/user/23      works
+http://localhost:8000/user/foo     422 error
+http://localhost:8000/user/2.3     422 error
 ```
 
 ## FastAPI - Path Parameters - int - test
@@ -147,7 +147,7 @@ http://localhost:8000/car/volvo     error
 ## FastAPI - Path Parameters - specific values with enum - test
 {id: fastapi-test-path-parameters-specific-values-with-enum}
 
-![](examples/fastapi/specific-values-path/main.py)
+![](examples/fastapi/specific-values-path/test_main.py)
 
 
 ## FastAPI - Path containing a directory path
@@ -156,13 +156,17 @@ http://localhost:8000/car/volvo     error
 ![](examples/fastapi/path-of-path/main.py)
 
 ```
-http://localhost:8000/file/a.txt    works
-http://localhost:8000/file/a/b.txt  not found
+http://localhost:8000/shallow/a.txt    works
+http://localhost:8000/shallow/a/b.txt  not found
 
-http://localhost:8000/deep/a.txt    works
-http://localhost:8000/deep/a/b.txt  works
+http://localhost:8000/deep/a.txt       works
+http://localhost:8000/deep/a/b.txt     works
 ```
 
+## FastAPI - Path containing a directory path - test
+{id: fastapi-test-path-containing-a-path}
+
+![](examples/fastapi/path-of-path/test_main.py)
 
 ## Return main HTML page
 {id: fastapi-return-html-page}
