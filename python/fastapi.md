@@ -173,6 +173,12 @@ http://localhost:8000/deep/a/b.txt     works
 
 ![](examples/fastapi/return-html/main.py)
 
+## Return main HTML page - test
+{id: fastapi-test-return-html-page}
+
+![](examples/fastapi/return-html/test_main.py)
+
+
 ## Return main HTML file
 {id: fastapi-return-html-file}
 
@@ -180,18 +186,44 @@ http://localhost:8000/deep/a/b.txt     works
 ![](examples/fastapi/return-html-file/index.html)
 
 
-* Demo in Docker
+## Send 400 error
+{id: fastapi-send-400-error}
+
+* user/{id}  but we don't have that specific id.
+* abort(400) with some status code
+
+![](examples/fastapi/send-400-error/main.py)
+
+## Send 400 error - test
+{id: fastapi-test-send-400-error}
+
+![](examples/fastapi/send-400-error/test_main.py)
+
+
+## FastAPI - in memory counter
+{id: fastapi-in-memory-counter}
+
+![](examples/fastapi/counter-in-memory/main.py)
+
+## FastAPI - on disk counter
+{id: fastapi-on-disk-counter}
+
+![](examples/fastapi/counter-on-disk/main.py)
+
+## FastAPI - on disk multi-counter uising JSON
+{id: fastapi-on-disk-multi-counter-using-json}
+
+![](examples/fastapi/counter-on-disk-json/main.py)
+
+
+
 * POST
 * Access to MongoDB
 * Access to PostgreSQL
 * Access to SQLite
 * Session ???
-* Counter
 * Can we have the query parameters and the internal variables be different (e.g.   paramName  and param_name ?)
 * Get details from the request header (e.g. Authorization)
 * Set headers in the response
-* abort(401) with some status code  (eg   user/{id}  but we don't have that specific id)
 * handel exceptions (500 errors)
-
-
 
