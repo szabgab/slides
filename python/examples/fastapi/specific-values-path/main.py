@@ -17,4 +17,4 @@ async def get_car(car_type: CarTypeName):
     print(car_type) # CarTypeName.tesla
     if car_type == CarTypeName.tesla:
         print("in a Tesla")
-    return {f"car type '{car_type}'"}
+    return {'car_type': car_type}

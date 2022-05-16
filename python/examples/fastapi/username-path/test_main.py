@@ -10,6 +10,12 @@ def test_foobar():
     assert response.status_code == 200
     assert response.json() == {'msg': "user 'foobar'"}
 
+def test_foo_bar():
+    response = client.get("/user/foo bar")
+    assert response.status_code == 200
+    assert response.json() == {'msg': "user 'foo bar'"}
+
+
 def test_user():
     response = client.get("/user/")
     assert response.status_code == 404

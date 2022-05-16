@@ -14,28 +14,6 @@ pip install "fastapi[all]"
 pip install "uvicorn[standard]"
 ```
 
-## FastAPI with Docker compose
-{id: fastapi-with-docker-compose}
-
-![](examples/fastapi/Dockerfile)
-
-![](examples/fastapi/docker-compose.yml)
-
-![](examples/fastapi/requirements.txt)
-
-```
-docker-compose up
-```
-
-```
-docker exec -it fastapi_app_1 bash
-```
-
-```
-uvicorn main:app --reload --host=0.0.0.0
-```
-
-
 ## FastAPI -  Hello World
 {id: fastapi-hello-world}
 
@@ -65,6 +43,28 @@ pytest
 ```
 
 
+## FastAPI with Docker compose
+{id: fastapi-with-docker-compose}
+
+![](examples/fastapi/Dockerfile)
+
+![](examples/fastapi/docker-compose.yml)
+
+![](examples/fastapi/requirements.txt)
+
+```
+docker-compose up
+```
+
+```
+docker exec -it fastapi_app_1 bash
+```
+
+```
+uvicorn main:app --reload --host=0.0.0.0
+```
+
+
 ## FastAPI - Dynamic response
 {id: fastapi-dynamic-response}
 
@@ -76,7 +76,12 @@ pytest
 
 ![](examples/fastapi/echo-get/main.py)
 
-`http://localhost:8000/?text=Foo%20Bar`
+```
+http://localhost:8000/?text=Foo%20Bar
+```
+
+## FastAPI - Echo GET - Query Parameters - test
+{id: fastapi-test-echo-get}
 
 ![](examples/fastapi/echo-get/test_main.py)
 
@@ -85,7 +90,12 @@ pytest
 
 ![](examples/fastapi/calculator-get/main.py)
 
-`http://localhost:8000/?a=2&b=3`
+```
+http://localhost:8000/?a=2&b=3
+```
+
+## FastAPI - Calculator GET - Test
+{id: fastapi-test-calculator-get}
 
 ![](examples/fastapi/calculator-get/test_main.py)
 
@@ -94,11 +104,16 @@ pytest
 
 ![](examples/fastapi/username-path/main.py)
 
-`http://localhost:8000/user/foobar`
-`http://localhost:8000/user/foo bar`
+```
+http://localhost:8000/user/foobar
+http://localhost:8000/user/foo bar
 
 
-`http://localhost:8000/user/` - 404
+http://localhost:8000/user/ - 404
+```
+
+## FastAPI - Path Parameters - str - test
+{id: fastapi-test-path-parameters-str}
 
 ![](examples/fastapi/username-path/test_main.py)
 
@@ -107,18 +122,32 @@ pytest
 
 ![](examples/fastapi/userid-path/main.py)
 
-`http://localhost:8000/user/23`
-`http://localhost:8000/user/foo`
-`http://localhost:8000/user/2.3`
+```
+http://localhost:8000/user/23
+http://localhost:8000/user/foo
+http://localhost:8000/user/2.3
+```
+
+## FastAPI - Path Parameters - int - test
+{id: fastapi-test-path-parameters-int}
+
+![](examples/fastapi/userid-path/test_main.py)
 
 ## FastAPI - Path Parameters - specific values with enum
 {id: fastapi-path-parameters-specific-values-with-enum}
 
 ![](examples/fastapi/specific-values-path/main.py)
 
-`http://localhost:8000/car/Volvo`
+```
+http://localhost:8000/car/Volvo
 
-`http://localhost:8000/car/volvo`  error
+http://localhost:8000/car/volvo     error
+```
+
+## FastAPI - Path Parameters - specific values with enum - test
+{id: fastapi-test-path-parameters-specific-values-with-enum}
+
+![](examples/fastapi/specific-values-path/main.py)
 
 
 ## FastAPI - Path containing a directory path
@@ -126,11 +155,13 @@ pytest
 
 ![](examples/fastapi/path-of-path/main.py)
 
-`http://localhost:8000/file/a.txt`    works
-`http://localhost:8000/file/a/b.txt`  not found
+```
+http://localhost:8000/file/a.txt    works
+http://localhost:8000/file/a/b.txt  not found
 
-`http://localhost:8000/deep/a.txt`    works
-`http://localhost:8000/deep/a/b.txt`  works
+http://localhost:8000/deep/a.txt    works
+http://localhost:8000/deep/a/b.txt  works
+```
 
 
 ## Return main HTML page
