@@ -9,13 +9,24 @@
 ## Install MongoDB support
 {id: install-mongodb-support}
 
-* **pip install pymongo**
+* [pymongo](https://pymongo.readthedocs.io/)
+
+```
+pip install pymongo
+```
+
+* [motor](https://motor.readthedocs.io/)
+
+```
+pip install motor
+```
 
 ## MongoDB in Docker compose
 {id: mongodb-in-docker}
 
 ![](examples/mongodb/Dockerfile)
 ![](examples/mongodb/docker-compose.yml)
+![](examples/mongodb/requirements.txt)
 
 ```
 docker-compose up
@@ -25,6 +36,10 @@ docker-compose up
 docker exec -it mongodb_app_1 bash
 ```
 
+## Python MongoDB drop database
+{id: mongodb-drop-database}
+
+![](examples/mongodb/drop_database.py)
 
 ## Python MongoDB insert
 {id: mongodb-insert}
@@ -124,4 +139,14 @@ system.indexes
 
 ![](examples/mongodb/upsert_error.py)
 ![](examples/mongodb/upsert_error.out)
+
+## Python MongoDB Async with motor - connect
+{id: pyton-mongodb-async-motor-connect}
+
+![](examples/mongodb/motor_get_server_info.py)
+
+## Python MongoDB Async with motor - insert and find
+{id: pyton-mongodb-async-motor-insert}
+
+![](examples/mongodb/motor_insert_find.py)
 

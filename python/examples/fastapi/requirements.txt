@@ -4,4 +4,4 @@ uvicorn[standard]
 pytest
 requests
 
-motor==3.0.0
+motor
