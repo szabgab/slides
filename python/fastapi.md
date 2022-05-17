@@ -237,6 +237,14 @@ http://localhost:8000/deep/a/b.txt     works
 
 ![](examples/fastapi/counter-on-disk-json/main.py)
 
+## FastAPI - get header from request
+{id: fastapi-get-header-from-request}
+
+![](examples/fastapi/get-header/main.py)
+
+![](examples/fastapi/get-header/test_main.py)
+
+
 ## FastAPI - set arbitrary header in response
 {id: fastapi-set-header-in-response}
 
@@ -275,7 +283,5 @@ uvicorn main:main --reload --host=0.0.0.0
 * Access to SQLite
 * Session ???
 * Can we have the query parameters and the internal variables be different (e.g.   paramName  and param_name ?)
-* Get details from the request header (e.g. Authorization)
-* Set headers in the response
 * handel exceptions (500 errors)
 
