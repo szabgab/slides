@@ -237,6 +237,13 @@ http://localhost:8000/deep/a/b.txt     works
 
 ![](examples/fastapi/counter-on-disk-json/main.py)
 
+## FastAPI - set arbitrary header in response
+{id: fastapi-set-header-in-response}
+
+![](examples/fastapi/set-header/main.py)
+
+![](examples/fastapi/set-header/test_main.py)
+
 ## FastAPI - serve static files - JavaScript example
 {id: fastapi-static-files-javascript}
 
