@@ -45,4 +45,12 @@
 * Help presever the language and the culture.
 
 
+## My site about Ladino
+{id: site-about-ladino}
+
+* [Ladino](https://ladino.szabgab.com/)
+* [Dictionary](https://diksionaryo.szabgab.com/)
+
+* [Ladinokomunita](https://ladinokomunita.groups.io/)
+* [Ladinadores](https://www.facebook.com/groups/ladinadores)
 
