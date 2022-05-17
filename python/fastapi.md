@@ -238,6 +238,7 @@ http://localhost:8000/deep/a/b.txt     works
 ![](examples/fastapi/counter-on-disk-json/main.py)
 
 ## FastAPI - serve static files - JavaScript example
+{id: fastapi-static-files-javascript}
 
 ![](examples/fastapi/static-files/main.py)
 
@@ -250,13 +251,13 @@ http://localhost:8000/deep/a/b.txt     works
 {id: fastapi-mounted-sub-applications}
 
 
-![](examples/fastapi/mounted-applications/app.py)
+![](examples/fastapi/mounted-applications/main.py)
 
 ![](examples/fastapi/mounted-applications/api_v1.py)
 
 ```
 uvicorn main:api_v1 --reload --host=0.0.0.0
-uvicorn main:app --reload --host=0.0.0.0
+uvicorn main:main --reload --host=0.0.0.0
 ```
 
 ## FastAPI - todo
