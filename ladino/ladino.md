@@ -12,18 +12,20 @@
 * Ladino
 * Judeo-Espanyol
 * Judeo-Spanish
-* Judizmo
-* Espanyol
+* Judezmo
+* Espanyol (our spanish)
 
-* Haketia
+* Haketia (in Marokko)
 
 ## Origin of Ladino
 {id: origin-of-ladino}
 
-* Romance language based on old Spanish and a mix of a lot of other languages:
+* Romance language based on old Spanish and a lot of other languages:
 
 * Castilian Spanish
 * Portugueses
+* Aragonese
+* Catalan
 * Italian
 * French
 * Turkish
@@ -32,6 +34,7 @@
 * Serbo-Croatic
 * Arabic
 * Hebrew
+* ...
 
 ## Expulsion of Sefardic Jews
 {id: expulsion-of-sefardic-jews}
@@ -41,21 +44,33 @@
 
 * Spread to a lot of places in Western Europe, North Africa and the Ottoman Empire
 
+* [some maps](https://duckduckgo.com/?q=map+of+expulsion+of+jews+from+spain&t=ffab&iar=images&iax=images&ia=images)
+
+## Writing system
+{id: writing-system}
+
+* Latin letters
+* Rashi script
+* Solitreo
+
+* See [Ladinotype](https://ladinotype.com/)
+
 ## Who am I and how I learned Ladino
 {id: who-am-i}
 
 * Gabor Szabo
-* Programmer
+* Programmer (test automation, DevOps)
 * Hungary => Israel
-
+* Learning modern Spanish for 3.5 years. (Duolingo, italki, eBooks, podcasts, youtube videos)
+* Learning Ladino for 6 months.
 
 
 ## Goals
 {id: goals}
 
-* Be able to communicate with other Ladino speaker,
+* Be able to communicate with other Ladino speaker.
 * Help others in the same goal.
-* Help presever the language and the culture.
+* Help preseve the language and the culture.
 
 
 ## My site about Ladino
@@ -63,18 +78,28 @@
 
 * [Ladino](https://ladino.szabgab.com/)
 
+## LibreLingo
+{id: librelingo}
+
+* [LibreLingo](https://librelingo.app/)
+
+
 ## Ladino communities
 {id: ladino-communities}
 
 * [Ladinokomunita](https://ladinokomunita.groups.io/)
 * [Ladinadores](https://www.facebook.com/groups/ladinadores)
 
-* [Ladino academy](https://autoridadnasionala.wixsite.com/autoridadnasionala/copia-de-%D7%94%D7%90%D7%A7%D7%93%D7%9E%D7%99%D7%94-%D7%94%D7%99%D7%A9%D7%A8%D7%90%D7%9C%D7%99%D7%AA-%D7%9C%D7%9C%D7%90%D7%93%D7%99%D7%A0%D7%95) (2018)
 
 * [Facebook](https://ladino.szabgab.com/en/ladino-on-facebook)
 
 
-## Existing Ladino dictcionaries
+## Ladino academy
+{id: ladino-academy}
+
+* [Ladino academy](https://autoridadnasionala.wixsite.com/autoridadnasionala/copia-de-%D7%94%D7%90%D7%A7%D7%93%D7%9E%D7%99%D7%94-%D7%94%D7%99%D7%A9%D7%A8%D7%90%D7%9C%D7%99%D7%AA-%D7%9C%D7%9C%D7%90%D7%93%D7%99%D7%A0%D7%95) (2018)
+
+## Existing Ladino dictionaries
 {id: ladino-dictionaries}
 
 * [dictionaries](https://ladino.szabgab.com/en/ladino-dictionaries)
@@ -88,17 +113,13 @@
 {id: quick-overview}
 
 
-* [data](https://github.com/szabgab/ladino-diksionaryo-data/)   YAML files
-* [whatsapp](https://github.com/szabgab/ladino-estamos-whatsapeando/)  YAML and ogg files
-* [sounds](https://github.com/szabgab/ladino-diksionaryo-sounds/) ogg files
+* [data](https://github.com/szabgab/ladino-diksionaryo-data/) -  YAML files
+* [whatsapp](https://github.com/szabgab/ladino-estamos-whatsapeando/) - YAML and ogg files
+* [sounds](https://github.com/szabgab/ladino-diksionaryo-sounds/) - ogg files
 
-* [code](https://github.com/szabgab/ladino-diksionaryo-code/)
-* [Python](https://www.python.org/)
-* JavaScript - [JQuery](https://jquery.com/)
-* [Bulma](https://bulma.io/)
+* [code](https://github.com/szabgab/ladino-diksionaryo-code/) - [Python](https://www.python.org/), [JQuery](https://jquery.com/), [Bulma](https://bulma.io/)
 
-* [generated](https://github.com/szabgab/ladino-diksionaryo-generated/)  GitHub Action
-
+* [generated](https://github.com/szabgab/ladino-diksionaryo-generated/) - GitHub Action
 
 ## The source of the dictionary
 {id: source-of-the-dictionary}
@@ -121,6 +142,8 @@
 ## config.yaml
 {id: config-yaml}
 
+* categories
+* acceptable values of certain fields (origines, grammar, gender, etc.)
 
 
 ## Issues to handle
