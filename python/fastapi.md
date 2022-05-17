@@ -237,7 +237,30 @@ http://localhost:8000/deep/a/b.txt     works
 
 ![](examples/fastapi/counter-on-disk-json/main.py)
 
+## FastAPI - serve static files - JavaScript example
 
+![](examples/fastapi/static-files/main.py)
+
+![](examples/fastapi/static-files/js/demo.js)
+
+![](examples/fastapi/static-files/index.html)
+
+
+## FastAPI mounted sub-applications
+{id: fastapi-mounted-sub-applications}
+
+
+![](examples/fastapi/mounted-applications/app.py)
+
+![](examples/fastapi/mounted-applications/api_v1.py)
+
+```
+uvicorn main:api_v1 --reload --host=0.0.0.0
+uvicorn main:app --reload --host=0.0.0.0
+```
+
+## FastAPI - todo
+{id: fastapi-todo}
 
 * Access to MongoDB
 * Access to PostgreSQL
