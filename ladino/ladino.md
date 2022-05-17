@@ -22,7 +22,7 @@
 
 * Romance language based on old Spanish and a lot of other languages:
 
-* Castilian Spanish
+* Castillian Spanish
 * Portugueses
 * Aragonese
 * Catalan
@@ -40,7 +40,7 @@
 {id: expulsion-of-sefardic-jews}
 
 * 1492 from Spain
-* 1496 from Portugual as well
+* 1496 from Portugal as well
 
 * Spread to a lot of places in Western Europe, North Africa and the Ottoman Empire
 
@@ -70,7 +70,7 @@
 
 * Be able to communicate with other Ladino speaker.
 * Help others in the same goal.
-* Help preseve the language and the culture.
+* Help preserve the language and the culture.
 
 
 ## My site about Ladino
@@ -79,10 +79,15 @@
 * [Ladino](https://ladino.szabgab.com/)
 
 ## LibreLingo
-{id: librelingo}
+{id: libre-lingo}
 
 * [LibreLingo](https://librelingo.app/)
 
+## LibreTranslate
+{id: libre-translate}
+
+* [LibreTranslate](https://libretranslate.com/)
+* Needs a huge corpus of text in two languages.
 
 ## Ladino communities
 {id: ladino-communities}
@@ -144,6 +149,40 @@
 
 * categories
 * acceptable values of certain fields (origines, grammar, gender, etc.)
+* lists of words
+* list of extra pages (in markdown format)
+
+## Processing in Python
+{id: processing-in-python}
+
+* Read the config file and all the YAML files.
+* Verify what that the fields have correct values (from the list of valid values)
+* Verify certain other things.
+
+* Generate HTML files for each word
+* Generate JSON files to be used by the front-end.
+* Generate some extra files
+
+## CI/CD
+{id: ci-cd}
+
+* Pushing to any of the repositories will run some local test.
+* Trigger the action of the "generated" repo.
+* gitHub pages gets updated.
+
+## Front-end
+{id: front-end}
+
+* JQuery
+* The main page only (and the Konfig and the Game)
+
+
+## Tests for the code
+{id: tests-for-the-code}
+
+* Using a few real words.
+* Using a few YAML files with specific issues.
+* Comparing the results to the previous runs.
 
 
 ## Issues to handle
@@ -151,7 +190,10 @@
 
 * Conjugations of verbs
 * Multi-word expressions? "me ambezo"
+* Connection between words (e.g. plural of ..., conjugation of ...)
+* Dictionary is getting big (1 Mb)
 
+* Make it easy for people to suggest changes?!
 
 
 ## Questions
