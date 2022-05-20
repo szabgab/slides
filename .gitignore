@@ -90,6 +90,7 @@ python/examples/web-client/config.ini
 python/examples/web-client/.api.txt
 python/examples/selenium/screenshot.png
 python/examples/serialization/demo.*
+python/examples/fastapi/counter-on-disk-json/counter.json
 
 crystal/bin
 crystal/lib
