@@ -127,6 +127,7 @@
         "opencv.md",
         "overview.md",
         "serialization.md",
+        "mlops.md",
         "other.md"
     ]
 }
