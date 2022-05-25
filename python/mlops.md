@@ -7,6 +7,24 @@
 * Make the process of Model Building to production smooth and fast.
 * Measure and monitor the quality of the model
 
+## Agile Manifesto
+{id: mlops-agile-manifesto}
+
+* [Agile Manifesto](https://agilemanifesto.org/)
+* [Extreme Programming](http://www.extremeprogramming.org/)
+* Scrum
+* ...
+
+## DevOps
+{id: mlops-devops}
+
+DevOps is the idea the Developers and Operations (and QA etc.) work together to achieve better service, better product.
+
+* Eliminating silos
+
+* DevOps is not a product
+* DevOps was not a job
+
 
 ## Machine Learning Operations
 {id: mlops-machine-learning-operations}
@@ -14,52 +32,20 @@
 * The term MLOps is defined as "the extension of the DevOps methodology to include Machine Learning and Data Science assets as first-class citizens within the DevOps ecology".
 * "The intention is for MLOps to decorate DevOps rather than differentiate."
 
-
-
 * [MLOps Road map](https://github.com/cdfoundation/sig-mlops/tree/master/roadmap)
 
-* [Agile Manifesto](https://agilemanifesto.org/)
-* [Extreme Programming](http://www.extremeprogramming.org/)
+## What is MLOps?
+{id: mlops-what-is-it}
 
 * [Machine Learning Operations](https://ml-ops.org/) is a practice
 
 * NOT a product
 * NOT a job title
 
-* Data is changing (new type of data, the same data but a newser dataset)
-* Model
-
-* Monitor the quality of the model over time
-* The standard tools measuring precision and recall in classification, accuracy, F-measure (F1)
-
-
-* re-label training data?
-
-
-* data quality
-* model decay (due to changes in the data that are not used to re-train the model)
-* locality (using the same model on a different set of data, eg. a different cluster of customers)
-
-* Distributed learning
+## MLOps community
+{id: mlops-community}
 
 * [MLOps community](https://mlops.community/)
-
-
-## Data
-{id: mlops-data}
-
-* git
-* git-lfs (large file support
-* External storage with hash
-* [dvc](https://dvc.org/)checksum
-
-## DVC
-{id: mlops-dvc}
-
-Storage can be
-* local disk
-* cloud
-* HDFS
 
 ## Silicon
 {id: mlops-silicon}
@@ -91,6 +77,52 @@ Storage can be
 * Audit trail of all results! (code, data, parameters, random values, etc)
 
 
+## Data
+{id: mlops-data}
+
+* git
+* git-lfs (large file support
+* External storage with hash
+* [dvc](https://dvc.org/)checksum
+
+## DVC
+{id: mlops-dvc}
+
+Storage can be
+* local disk
+* cloud
+* HDFS
+
+
+```
+pip install dvc
+
+
+git init   (creating .git)
+dvc init   (creating .dvc and .dvcignore)
+
+
+dvc remote add -d dvc-remote /tmp/dvc-demo-storage   (changing .dvc/config)
+
+
+dvc add data/data.csv
+
+git add .
+git commit -m "data:  ...."
+git tag -a v1 -m v1
+
+
+dvc push
+```
+
+* Files are now in `/tmp/dvc-demo-storage`
+* Files are also in `.dvc/cache`
+
+
+```
+dvc pull
+dvs status
+```
 
 ## MLOps progress
 {id: mlops-progress}
@@ -244,17 +276,6 @@ mlflow.model_flavor.load_model(...)
 ```
 
 
-
-TODO
-
-* logging
-* metrics
-* data-pipelines
-
-
-
-
-
 ## Resources
 {id: mlops-resources}
 
@@ -263,6 +284,10 @@ TODO
 * [repo](https://github.com/dmatrix/mlflow-workshop-part-2)
 
 
+* [dvc + MLflow](https://www.youtube.com/watch?v=W2DvpCYw22o)
+
+![](examples/mlops/dvc_mlflow.py)
+
 ## Goals of SCM
 {id: mlops-goals}
 
@@ -270,5 +295,27 @@ TODO
 
 * Reproducability
 * Change management
+
+
+
+## MLOps notes
+{id: mlops-notes}
+
+* logging
+* metrics
+* data-pipelines
+
+
+* Data is changing (new type of data, the same data but a newser dataset)
+* Model
+
+* Monitor the quality of the model over time
+* The standard tools measuring precision and recall in classification, accuracy, F-measure (F1)
+
+* data quality
+* model decay (due to changes in the data that are not used to re-train the model)
+* locality (using the same model on a different set of data, eg. a different cluster of customers)
+
+* Distributed learning
 
 
