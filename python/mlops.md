@@ -134,6 +134,20 @@ dvs status
 
 * Make sure youre results are repeatable (start with the current data-set)
 
+## Reload modules in Jupyter Notebook
+{id: mlops-reload-modules}
+
+```
+%load_ext autoreload
+%autoreload 2
+```
+
+```
+examples/ml/reload.ipynb
+mymodule.py
+```
+
+
 ## Testing ML
 {id: mlops-testing}
 
@@ -274,6 +288,9 @@ Directory called `mlmodel`.
 mlflow.model_flavor.save_model(...)  or log_model(...)
 mlflow.model_flavor.load_model(...)
 ```
+
+* [tutorial example](https://mlflow.org/docs/latest/tutorials-and-examples/tutorial.html)
+
 
 
 ## Resources
