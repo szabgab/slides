@@ -4,8 +4,8 @@
 ## The goal of MLOps
 {id: mlops-the-goal}
 
+* Measure and monitor the quality of the model.
 * Make the process of Model Building to production smooth and fast.
-* Measure and monitor the quality of the model
 
 ## Agile Manifesto
 {id: mlops-agile-manifesto}
@@ -70,7 +70,7 @@ DevOps is the idea the Developers and Operations (and QA etc.) work together to 
 {id: mlops-security-issues}
 
 * poisoning of the model (e.g. chat bot that learns from real-time data) [Tay in 16 hours](https://en.wikipedia.org/wiki/Tay_(bot))
-* private and sensitive data (e.g. gender, religion, sexual orientation)
+* private and sensitive data (e.g. gender, religion, sexual orientation, health status)
 * legalizations
 
 
@@ -84,6 +84,72 @@ DevOps is the idea the Developers and Operations (and QA etc.) work together to 
 * git-lfs (large file support
 * External storage with hash
 * [dvc](https://dvc.org/)checksum
+
+## MLOps progress
+{id: mlops-progress}
+
+* code in Jupyter notebook
+* put the code in functions
+* put the functions in modules
+* write tests for these functions
+
+* Make sure youre results are repeatable (start with the current data-set)
+
+## Reload modules in Jupyter Notebook
+{id: mlops-reload-modules}
+
+```
+%load_ext autoreload
+%autoreload 2
+```
+
+```
+examples/ml/reload.ipynb
+mymodule.py
+```
+
+
+## Testing ML
+{id: mlops-testing}
+
+* Create output that is easy to compare by computer (so numerical results are preferable over a graph)
+* Fix randomizations to make the results repeatable
+
+* Establish thresholds for results using different datasets (and also using different models)
+
+
+## What to track?
+{id: mlops-what-to-track}
+
+* the code (and the dependencies)
+* the data
+* the artifacts (e.g. models)
+
+* the experiments and their results.
+
+
+## What are the inputs and what are the artifacts?
+{id: mlops-artifacts}
+
+* Data (what kind of data? how does it change? how can developers access it - privacy issues?)
+* Selecting the algorithms
+* Random values as input
+* Hyper parameters
+
+* The model (a series of numbers?, Is it language-agnostic?)
+
+
+
+## Tooling for MLOps
+{id: mlops-tooling}
+
+* [dvc](https://github.com/iterative/dvc) - [Data Version Control](https://dvc.org/)
+* [Clear ML](https://clear.ml/)
+* [MLflow](https://mlflow.org/)
+* [Wandb](https://wandb.ai/site)
+
+
+* [CD Foundation](https://cd.foundation/) - Continuous Delivery Foundation
 
 ## DVC
 {id: mlops-dvc}
@@ -123,72 +189,6 @@ dvc push
 dvc pull
 dvs status
 ```
-
-## MLOps progress
-{id: mlops-progress}
-
-* code in Jupyter notebook
-* put the code in functions
-* put the functions in modules
-* write tests for these functions
-
-* Make sure youre results are repeatable (start with the current data-set)
-
-## Reload modules in Jupyter Notebook
-{id: mlops-reload-modules}
-
-```
-%load_ext autoreload
-%autoreload 2
-```
-
-```
-examples/ml/reload.ipynb
-mymodule.py
-```
-
-
-## Testing ML
-{id: mlops-testing}
-
-* Create output that is easy to compare by computer (so numerical results are preferable over a graph)
-* Fix randomizations to make the results repeatable
-
-* Establish thresholds for results using different datasets (and also using different models)
-
-
-## What to track?
-{id: mlops-what-to-track}
-
-* the code
-* the data
-* the artifacts
-
-* also the experiments and their results.
-
-
-## What are the inputs and what are the artifacts?
-{id: mlops-artifacts}
-
-* Data (what kind of data? how does it change? how can developers access it - privacy issues?)
-* Selecting the algorithms
-* Random values as input
-* Hyper parameters
-
-* The model (a series of numbers?, Is it language-agnostic?)
-
-
-
-## Tooling for MLOps
-{id: mlops-tooling}
-
-* [dvc](https://github.com/iterative/dvc) - [Data Version Control](https://dvc.org/)
-* [Clear ML](https://clear.ml/)
-* [MLflow](https://mlflow.org/)
-* [Wandb](https://wandb.ai/site)
-
-
-* [CD Foundation](https://cd.foundation/) - Continuous Delivery Foundation
 
 
 ## MLFlow
