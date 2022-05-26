@@ -620,6 +620,19 @@ $ docker run -it --rm -v $(pwd):/opt/ mydocker
 The `-v HOST:CONTAINER` will mount the `HOST` directory of the home operating system to the `CONTAINER` directory in the Docker container.
 
 
+## Docker build passing command-line argumens
+{id: docker-build-passing-command-line-arguments}
+
+We can defined command-line parameters in the Dockerfile and then allow the user who builds the
+image to pass in values on the command line of `docker build`.
+
+![](examples/arguments/Dockerfile)
+
+```
+docker build -t mydocker --build-arg TEXT=Bar .
+```
+
+
 ## Exercies 2
 {id: exercise-2}
 
