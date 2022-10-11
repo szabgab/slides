@@ -124,6 +124,7 @@ Windows
 ## Hello Foo - puts
 {id: hello-foo-puts}
 {i: puts}
+
 ![](examples/intro/hello_foo_puts.rb)
 ![](examples/intro/hello_foo_puts.out)
 
@@ -131,22 +132,48 @@ Windows
 ## Hello Foo - print
 {id: hello-foo-print}
 {i: print}
+
 ![](examples/intro/hello_foo_print.rb)
 ![](examples/intro/hello_foo_print.out)
 
 
 ## Hello Foo - puts
 {id: hello-foo}
+
 ![](examples/intro/hello_foo.rb)
 ![](examples/intro/hello_foo.out)
 
 
 ## Hello Foo - puts
 {id: hello-foo-capitalize}
+{i: puts}
+
 ![](examples/intro/hello_foo_capitalize.rb)
 ![](examples/intro/hello_foo_capitalize.out)
 
 
+## Ruby command line arguments ARGV
+{id: ruby-command-line-arguments-argv}
+{i: capitalize}
+
+![](examples/intro/hello_foo_capitalize.rb)
+
+$ ruby examples/intro/cli.rb a b d
+
+![](examples/intro/hello_foo_capitalize.out)
+
+## Ruby conditionals - if statement
+{id: ruby-conditionals-if-statement}
+{i: if}
+
+![](examples/intro/if.rb)
+
+
+## Ruby conditionals - if else statement
+{id: ruby-conditionals-if-else-statement}
+{i: else}
+
+![](examples/intro/if-else.rb)
 
 ## Resources
 {id: ruby-resources}
@@ -155,7 +182,5 @@ Windows
 * [Ruby Weekly newsletter](http://rubyweekly.com/)
 * [Ruby Tapas - short screencasts](http://www.rubytapas.com/)
 * [Ruby Inside](http://www.rubyinside.com/)
-
-
 
 
