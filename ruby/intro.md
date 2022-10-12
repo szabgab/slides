@@ -136,6 +136,10 @@ Windows
 ![](examples/intro/hello_foo_print.rb)
 ![](examples/intro/hello_foo_print.out)
 
+## Ruby interpolate
+{id: ruby-interpolate-in-string}
+
+![](examples/intro/interpolate.rb)
 
 ## Hello Foo - puts
 {id: hello-foo}
