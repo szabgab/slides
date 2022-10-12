@@ -8,6 +8,7 @@
     "version": "1.18",
     "files": [
         "ruby.md",
+        "filesystem.md",
         "net_http.md"
     ]
 }

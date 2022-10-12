@@ -175,6 +175,12 @@ $ ruby examples/intro/cli.rb a b d
 
 ![](examples/intro/if-else.rb)
 
+## Ruby path to current script
+{id: ruby-path-to-current-script}
+{i: $0}
+
+![](examples/intro/current_script.rb)
+
 ## Resources
 {id: ruby-resources}
 
