@@ -7,7 +7,7 @@
     "copyright_url": "https://szabgab.com/",
     "version": "1.18",
     "files": [
-        "ruby.md",
+        "intro.md",
         "filesystem.md",
         "net_http.md"
     ]
