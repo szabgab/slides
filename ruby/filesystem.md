@@ -26,3 +26,10 @@
 
 ![](examples/files/append_to_file.rb)
 
+## Ruby list files by using glob
+{id: ruby-list-files-by-using-glob}
+{i: glob}
+
+![](examples/files/glob.rb)
+
+ruby examples/files/glob.rb  "*.md"

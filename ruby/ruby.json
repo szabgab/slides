@@ -11,6 +11,7 @@
         "hashes.md",
         "filesystem.md",
         "time.md",
-        "net_http.md"
+        "net_http.md",
+        "other.md"
     ]
 }
