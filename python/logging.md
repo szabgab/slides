@@ -35,7 +35,7 @@
 
 ## getLogger
 {id: getlogger}
-{i: getLogger} 
+{i: getLogger}
 {i: FileHandler}
 {i: StreamHandler}
 
@@ -43,8 +43,15 @@
 
 ## Time-based logrotation
 {id: time-based-logrotation}
+{i: TimedRotatingFileHandler}
 
 ![](examples/logging/timerotating_log.py)
+
+* S - seconds
+* M - minutes
+* H - hours
+* D - days
+* [docs](https://docs.python.org/library/logging.handlers.html#logging.handlers.TimedRotatingFileHandler)
 
 ## Size-based logrotation
 {id: size-based-logrotation}
