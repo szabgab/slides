@@ -91,6 +91,7 @@ for-oops, don't create local scopes.
 
 ## Private Global Scope
 {id: private-global-scope}
+
 ![](examples/functions/private_scope.js)
 
 
@@ -118,7 +119,11 @@ In this exercise you are requeted to implement a Reverse Polish Calculator that 
 
 ## Reverse Polish Calculator in JavaScript
 {id: reverse-polish-calculator}
+
 ![](examples/functions/reverse_polish_calculator.js)
 
+## Order
+{id: function-order}
 
+![](examples/functions/order.js)
 
