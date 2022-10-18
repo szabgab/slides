@@ -1,3 +1,5 @@
-res = system("ls -l abc")
+res = system("blabla")
 puts "\n"
-puts res
+if res.nil?
+  puts "res is nil"
+end

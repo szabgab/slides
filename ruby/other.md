@@ -12,4 +12,6 @@
 {i: system}
 
 
+![](examples/other/system_failure.rb)
+
 ![](examples/other/system_bad.rb)

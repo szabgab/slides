@@ -25,6 +25,7 @@
 {id: ruby-append-to-file}
 
 ![](examples/files/append_to_file.rb)
+![](examples/files/append.rb)
 
 ## Ruby list files by using glob
 {id: ruby-list-files-by-using-glob}
