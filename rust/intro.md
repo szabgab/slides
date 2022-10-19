@@ -40,7 +40,7 @@ cargo run
 
 This is especially usefule for the slides so I can create individual Rust example files and run them stand alone
 
-![](rust.sh)
+![](rust)
 
 
 ## Rust and print
@@ -83,5 +83,21 @@ Somthing that looks like a function but ends with an exclamation point. e.g. `pr
 
 ![](examples/intro/if.rs)
 
+## Conditional: if - else
+{id: rust-conditional-if-else}
+
+![](examples/intro/if_else.rs)
 
 ## Command line arguments - argv
+{id: command-line-arguments}
+{i: argv}
+
+![](examples/intro/argv.rs)
+
+## While loop in Rust
+{id: rust-while-loop}
+{i: while}
+
+![](examples/intro/while.rs)
+
+
