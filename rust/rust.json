@@ -8,6 +8,7 @@
     "version": "1.00",
     "files": [
         "intro.md",
-        "files.md"
+        "files.md",
+        "functions.md"
     ]
 }

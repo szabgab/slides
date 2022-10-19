@@ -12,5 +12,8 @@ fi
 
 rustc $1 -o myexe
 shift
-./myexe $*
-\rm myexe
+if [ -f myexe ];
+then
+    ./myexe $*
+    \rm myexe
+fi

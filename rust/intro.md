@@ -181,4 +181,41 @@ Somthing that looks like a function but ends with an exclamation point. e.g. `pr
 
 ![](examples/intro/variables.rs)
 
+## Rust: boolean values
+{id: rust-boolean-values}
+{i: true}
+{i: false}
+
+![](examples/booleans/bool.rs)
+
+
+## Rust arrays
+{id: rust-arrays}
+
+![](examples/arrays/numbers.rs)
+
+## Rust vector
+{id: rust-vector}
+{i: vec!}
+{i: push}
+
+![](examples/arrays/number_vector.rs)
+
+## Rust tuple - immutable mixed array
+{id: rust-tuple}
+
+![](examples/arrays/tuple.rs)
+
+## Rust HashMap
+{id: rust-hashmap}
+
+* [std::collections](https://doc.rust-lang.org/std/collections/index.html)
+
+![](examples/arrays/hash.rs)
+
+## Rust rectangle ARGV
+{id: rust-rectangle}
+
+![](examples/intro/rectangle_argv.rs)
+
 
