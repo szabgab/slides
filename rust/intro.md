@@ -218,4 +218,13 @@ Somthing that looks like a function but ends with an exclamation point. e.g. `pr
 
 ![](examples/intro/rectangle_argv.rs)
 
+## Rust hash update value
+{id: rust-hashmap-update-value}
+
+![](examples/arrays/update_hash.rs)
+
+## Rust update values in a hash
+{id: rust-update-values-in-a-hash}
+
+![](examples/arrays/count_words.rs)
 

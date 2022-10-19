@@ -14,4 +14,7 @@
 
 ![](examples/functions/hello_foo.rs)
 
+## Rust function return value
+{id: rust-function-return-value}
 
+![](examples/functions/return.rs)
