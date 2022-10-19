@@ -55,6 +55,15 @@ eprintln! to STDERR
 format!
 ```
 
+## Rust and comments
+{id: rust-comments}
+{i: //}
+
+* Both single-line and multi-line comments are available in Rust
+
+![](examples/intro/comments.rs)
+
+
 ## Hello Foo
 {id: hello-foo}
 
@@ -125,4 +134,14 @@ Somthing that looks like a function but ends with an exclamation point. e.g. `pr
 
 ![](examples/intro/scope.rs)
 ![](examples/intro/scope.out)
+
+## Rust Type system
+{id: rust-type-system}
+
+
+## Rust numerical operations
+{id: rust-numerical-operations}
+
+![](examples/intro/numerical_operations.rs)
+
 
