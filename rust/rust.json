@@ -9,6 +9,7 @@
     "files": [
         "intro.md",
         "files.md",
+        "strings.md",
         "functions.md"
     ]
 }

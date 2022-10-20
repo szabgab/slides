@@ -15,3 +15,13 @@
 {id: rust-counter}
 
 ![](examples/files/counter.rs)
+
+## Rust list content of directory
+{id: rust-list-directory}
+{i: Path}
+{i: read_dir}
+
+* [read_dir](https://doc.rust-lang.org/std/path/struct.Path.html#method.read_dir)
+
+![](examples/files/list_dir.rs)
+
