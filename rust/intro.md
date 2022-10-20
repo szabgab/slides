@@ -26,6 +26,21 @@ rustc hello.rs
 ./hello
 ```
 
+## Hello World in (immutable) variable
+{id: rust-hello-world-in-immutable-variable}
+{i: let}
+
+* Variables are by default immutable
+
+![](examples/intro/hello_world_in_immutable_variable.rs)
+
+## Hello World in mutable variable
+{id: rust-hello-world-in-mutable-variable}
+{i: let}
+{i: mut}
+
+![](examples/intro/hello_world_in_mutable_variable.rs)
+
 ## Hello World with Cargo
 {id: hello-world-with-cargo}
 
