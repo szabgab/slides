@@ -1,0 +1,26 @@
+name: Go
+
+on:
+    push:
+    pull_request:
+
+jobs:
+  go:
+    strategy:
+      fail-fast: false
+      matrix:
+        runner: [ubuntu-latest]
+        go: [ '1.15' ]
+
+    runs-on: ${{matrix.runner}}
+    name: OS ${{matrix.runner}} Go ${{matrix.go}}
+
+    steps:
+    - name: Checkout this repo
+      uses: actions/checkout@v2
+
+    - name: Go Tests
+      run: |
+         go version
+         go run tests/check.go
+

@@ -1,0 +1,48 @@
+name: Python
+
+on:
+    push:
+    pull_request:
+
+jobs:
+  python:
+    strategy:
+      fail-fast: false
+      matrix:
+        runner: [ubuntu-latest]
+        python: [ '3.7' ]
+
+    runs-on: ${{matrix.runner}}
+    name: OS ${{matrix.runner}} Python ${{matrix.python}}
+
+    steps:
+    - name: Set up Python ${{ matrix.python }}
+      uses: actions/setup-python@v2
+      with:
+        python-version: ${{ matrix.python }}
+
+    - name: Checkout this repo
+      uses: actions/checkout@v2
+
+    - name: Checkout the slider-py repo
+      uses: actions/checkout@v2
+      with:
+        repository: 'szabgab/slider-py'
+        path: slider-py
+
+    - name: Install dependencies
+      run: |
+          pwd
+          ls -l
+          pip install flask-httpauth
+          pip install pytest
+          pip install pytest-flake8
+          pip install -r slider-py/requirements.txt
+          python -V
+
+    - name: Regular Tests
+      run: |
+          python tests/check.py
+          python generate_slides.py
+
+
