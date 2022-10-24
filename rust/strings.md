@@ -28,3 +28,7 @@
 
 ![](examples/strings/characters.rs)
 
+## Rust - convert string to number
+{id: rust-convert-string-to-number}
+
+![](examples/strings/string_to_int.rs)

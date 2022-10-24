@@ -12,6 +12,11 @@
 ## Install Rust
 {id: rust-installation}
 
+## Editor and IDE
+{id: rust-editor-and-ide}
+
+* Visual Studio Code with the `rust-analyzer` plugin.
+
 
 ## Hello World
 {id: rust-hello-world}
@@ -79,12 +84,20 @@ format!
 ![](examples/intro/comments.rs)
 
 
-## Hello Foo
+## Rust - Hello Foo
 {id: hello-foo}
 
 ![](examples/intro/hello_foo.rs)
 
 * [format macro](https://doc.rust-lang.org/std/fmt/)
+
+## Rust - Hello name - input from STDIN
+{id: rust-hello-name}
+{i: stdin}
+{i: read_line}
+{i: expect}
+
+![](examples/intro/hello_name.rs)
 
 ## Interpolation
 {id: string-interpolation}
