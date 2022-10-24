@@ -8,6 +8,7 @@
 * [Rust Documentation](https://doc.rust-lang.org/)
 * [Rust the language](https://www.rust-lang.org/)
 * [Learn Rust](https://www.rust-lang.org/learn)
+* [The Rust book](https://doc.rust-lang.org/book/)
 
 ## Install Rust
 {id: rust-installation}
@@ -20,6 +21,9 @@
 
 ## Hello World
 {id: rust-hello-world}
+{i: println!}
+
+* `println!` is a macro (it looks like function, it generates some Rust code during compilation)
 
 ![](examples/intro/hello.rs)
 
@@ -38,6 +42,7 @@ rustc hello.rs
 * Variables are by default immutable
 
 ![](examples/intro/hello_world_in_immutable_variable.rs)
+![](examples/intro/hello_world_in_immutable_variable.out)
 
 ## Hello World in mutable variable
 {id: rust-hello-world-in-mutable-variable}
@@ -45,6 +50,14 @@ rustc hello.rs
 {i: mut}
 
 ![](examples/intro/hello_world_in_mutable_variable.rs)
+
+## Hello World in redeclared immutable variable
+{id: rust-hello-world-in-redeclared-immutable-variable}
+{i: let}
+{i: mut}
+
+![](examples/intro/hello_world_in_redeclared_immutable_variable.rs)
+
 
 ## Hello World with Cargo
 {id: hello-world-with-cargo}
@@ -63,21 +76,10 @@ This is especially usefule for the slides so I can create individual Rust exampl
 ![](rust)
 
 
-## Rust and print
-{id: rust-and-print}
-
-```
-print!
-println!
-eprint!   to STDERR
-eprintln! to STDERR
-
-format!
-```
-
 ## Rust and comments
 {id: rust-comments}
 {i: //}
+{i: /* */}
 
 * Both single-line and multi-line comments are available in Rust
 
@@ -255,4 +257,17 @@ Somthing that looks like a function but ends with an exclamation point. e.g. `pr
 {id: rust-update-values-in-a-hash}
 
 ![](examples/arrays/count_words.rs)
+
+## Rust and print
+{id: rust-and-print}
+
+```
+print!
+println!
+eprint!   to STDERR
+eprintln! to STDERR
+
+format!
+```
+
 
