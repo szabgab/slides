@@ -5,14 +5,14 @@
 {id: rust-while-loop}
 {i: while}
 
-![](examples/intro/while.rs)
+![](examples/loops/while.rs)
 
 ## Infinite loop in Rust with break
 {id: rust-infinite-loop}
 {i: loop}
 {i: break}
 
-![](examples/intro/loop.rs)
+![](examples/loops/loop.rs)
 
 ## for loop in Rust
 {id: rust-for-loop}
@@ -22,7 +22,7 @@
 * `1..5` mean the right-hand limit is NOT included.
 * `1..=5` means the right-hand limit is included
 
-![](examples/intro/for_loop.rs)
-![](examples/intro/for_loop.out)
+![](examples/loops/for_loop.rs)
+![](examples/loops/for_loop.out)
 
 

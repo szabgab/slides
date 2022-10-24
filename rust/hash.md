@@ -6,16 +6,16 @@
 
 * [std::collections](https://doc.rust-lang.org/std/collections/index.html)
 
-![](examples/arrays/hash.rs)
+![](examples/hashes/hash.rs)
 
 ## Rust hash update value
 {id: rust-hashmap-update-value}
 
-![](examples/arrays/update_hash.rs)
+![](examples/hashes/update_hash.rs)
 
 ## Rust update values in a hash
 {id: rust-update-values-in-a-hash}
 
-![](examples/arrays/count_words.rs)
+![](examples/hashes/count_words.rs)
 
 
