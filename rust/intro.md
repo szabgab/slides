@@ -51,12 +51,17 @@ rustc hello.rs
 
 ![](examples/intro/hello_world_in_mutable_variable.rs)
 
-## Hello World in redeclared immutable variable
+## Hello World in redeclared immutable variable - shadowed
 {id: rust-hello-world-in-redeclared-immutable-variable}
 {i: let}
 {i: mut}
 
+* When shadowing we can also change the type of the variable.
+* e.g. we read from a file or from STDIN a string that we then convert to a number. We can use the same variable name.
+
 ![](examples/intro/hello_world_in_redeclared_immutable_variable.rs)
+
+![](examples/intro/shadow.rs)
 
 
 ## Hello World with Cargo
@@ -101,6 +106,11 @@ This is especially usefule for the slides so I can create individual Rust exampl
 
 ![](examples/intro/hello_name.rs)
 
+## Rust - flush STDOUT - read STDIN - chomp
+{id: rust-flush-stdout-read-stdin-chomp}
+
+![](examples/intro/hello_name_chomp.rs)
+
 ## Interpolation
 {id: string-interpolation}
 
@@ -143,7 +153,12 @@ Somthing that looks like a function but ends with an exclamation point. e.g. `pr
 
 ## Rust constants
 {id: rust-constants}
-{i: let}
+{i: const}
+
+* Value that can be computed during compilation.
+* Cannot be changed.
+* Must have type declaration.
+* Should be `UPPER_CASE`.
 
 ![](examples/intro/constant.rs)
 

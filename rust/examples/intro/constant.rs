@@ -2,7 +2,10 @@ fn main() {
     const NAME: &str = "Foo";
     println!("{}", NAME);
 
-    let PI = 3.14;
+    const PI: f64 = 3.14;
     println!("{}", PI);
-    // PI = 3.1; // cannot assign twice to immutable variable
+    // PI = 3.1; // cannot assign to this expression
+
+    const DAY: i32 = 60 * 60 * 24;
+    println!("{}", DAY);
 }
