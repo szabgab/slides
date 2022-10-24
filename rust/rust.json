@@ -9,8 +9,11 @@
     "files": [
         "intro.md",
         "files.md",
+        "loops.md",
         "arrays.md",
         "hash.md",
+        "types.md",
+        "boolean.md",
         "strings.md",
         "functions.md"
     ]

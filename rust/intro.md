@@ -133,30 +133,6 @@ Somthing that looks like a function but ends with an exclamation point. e.g. `pr
 
 ![](examples/intro/argv.rs)
 
-## While loop in Rust
-{id: rust-while-loop}
-{i: while}
-
-![](examples/intro/while.rs)
-
-## Infinite loop in Rust with break
-{id: rust-infinite-loop}
-{i: loop}
-{i: break}
-
-![](examples/intro/loop.rs)
-
-## for loop in Rust
-{id: rust-for-loop}
-{i: for}
-
-
-* `1..5` mean the right-hand limit is NOT included.
-* `1..=5` means the right-hand limit is included
-
-![](examples/intro/for_loop.rs)
-![](examples/intro/for_loop.out)
-
 ## Variable Scope in Rust
 {id: rust-variable-scope}
 
@@ -164,39 +140,6 @@ Somthing that looks like a function but ends with an exclamation point. e.g. `pr
 
 ![](examples/intro/scope.rs)
 ![](examples/intro/scope.out)
-
-## Rust Type system
-{id: rust-type-system}
-
-
-## Rust numerical operations
-{id: rust-numerical-operations}
-
-![](examples/intro/numerical_operations.rs)
-
-## Rust numerical types
-{id: rust-numerical-types}
-{i: i32}
-{i: i64}
-
-* By default numbers are stored in i32 whose range is -2147483648..=2147483647
-* We can explicitely put numbers in different types
-
-![](examples/intro/number_types.rs)
-
-## Rust type mismatch in numerical operation
-{id: rust-type-mismatch-in-numerical-operation}
-
-![](examples/intro/type_mismatch.rs)
-
-* TODO: if we remove the i32 then this works even though, I think, the default is i32
-
-
-## Rust Overflow
-{id: rust-overflow}
-
-![](examples/intro/overflow.rs)
-![](examples/intro/overflow.out)
 
 ## Rust constants
 {id: rust-constants}
@@ -210,13 +153,6 @@ Somthing that looks like a function but ends with an exclamation point. e.g. `pr
 {i: mut}
 
 ![](examples/intro/variables.rs)
-
-## Rust: boolean values
-{id: rust-boolean-values}
-{i: true}
-{i: false}
-
-![](examples/booleans/bool.rs)
 
 
 ## Rust rectangle ARGV
