@@ -29,9 +29,15 @@ fn main() {
         }
     }
     println!("There are {count} unused examples");
+    if count > 0 {
+        exit(1);
+    }
 }
 
+// TODO: go deeper than 2 levels to also handle examples/number-guessing-game/src/main.rs
+// TODO: but exclude examples/number-guessing-game/target/
 fn get_examples() -> Vec<String> {
+    let exclude = vec!["examples/number-guessing-game/Cargo.lock", "examples/number-guessing-game/Cargo.toml"];
     let mut examples = vec![];
     let path = Path::new("examples");
     for entry in path.read_dir().expect("read_dir call failed") {
@@ -42,6 +48,13 @@ fn get_examples() -> Vec<String> {
                 for filepath in dirname.read_dir().expect("read_dir call failed") {
                     if let Ok(filepath) = filepath {
                         //println!("{:?}", filepath);
+                        if filepath.path().is_dir() {
+                            continue;
+                        }
+                        if exclude.contains(&filepath.path().into_os_string().into_string().expect("Bad").as_str()) {
+                            // println!("exclude {:?}", filepath.path());
+                            continue;
+                        }
                         let filename = filepath.path();
                         examples.push(filename);
                     }
