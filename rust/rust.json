@@ -15,6 +15,7 @@
         "types.md",
         "boolean.md",
         "strings.md",
-        "functions.md"
+        "functions.md",
+        "ownership.md"
     ]
 }
