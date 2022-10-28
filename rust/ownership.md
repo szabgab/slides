@@ -35,10 +35,28 @@
 
 ![](examples/ownership/string_borrow.rs)
 
-## Rust ownership
+## Rust ownership string in function
 {id: rust-ownership-string-in-function}
 
 ![](examples/ownership/string_function.rs)
 
+## Rust ownership borrow string in function
+{id: rust-ownership-borrow-string-in-function}
+{i: &}
+
+* When passing the variable we need to prefix it with `&`.
+* In the function definition we also include the `&` in-front of the type.
+* Inside the function we can prefix it with `*` to dereference the variable but in general we don't need to as Rust figures that out.
+
 ![](examples/ownership/string_function_borrow.rs)
+
+## Rust function to change string
+{id: rust-function-to-change-string}
+
+![](examples/ownership/change_string.rs)
+
+## Rust function to change integer (i32)
+{id: rust-function-to-change-integer}
+
+![](examples/ownership/change_i32.rs)
 
