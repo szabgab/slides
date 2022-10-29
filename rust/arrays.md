@@ -1,4 +1,4 @@
-# Rust arrays
+# Rust array
 {id: rust-arrays}
 
 ## Rust array
@@ -15,6 +15,7 @@
 
 ## Rust tuple - immutable mixed array
 {id: rust-tuple}
+{i: tuple}
 
 ![](examples/arrays/tuple.rs)
 

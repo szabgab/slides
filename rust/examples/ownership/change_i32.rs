@@ -1,7 +1,7 @@
 fn main() {
     let mut counter = 0;
     println!("Main: {counter}");
-    display(counter);
+    display(counter);            // value is copy-ed
     println!("Main: {counter}");
     increment(&mut counter);
     display(counter);

@@ -1,4 +1,4 @@
-# Rust Functions
+# Rust functions
 {id: rust-functions}
 
 ## Rust main function
