@@ -555,6 +555,17 @@ or this: `os.system("rm -f calculator_eval.py")` and on windows it would be `os.
 
 ![](examples/basics/check_python.py)
 
+## Example using Command line arguments
+{id: example-using-command-line-arguments}
+
+{aside}
+If we run this script without any command-line parameters it will print out usage information.
+
+If we give it two parameters it will treat the first one as the name of an input file and the second as the name of an output file.
+{/aside}
+
+![](examples/basics/convert.py)
+
 ## Command line arguments
 {id: command-line-arguments}
 {i: sys}
