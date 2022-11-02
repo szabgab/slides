@@ -401,6 +401,7 @@ Try your environment:
 ![](examples/basics/str_float.out)
 
 ## int and float
+{id: int-and-float}
 
 ![](examples/basics/int_float.py)
 ![](examples/basics/int_float.out)
