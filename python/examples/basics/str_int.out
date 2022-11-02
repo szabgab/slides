@@ -1,0 +1,7 @@
+2
+2
+3
+Traceback (most recent call last):
+  File "/home/gabor/work/slides/python/examples/basics/str_int.py", line 9, in <module>
+    print(y + 1)
+TypeError: can only concatenate str (not "int") to str

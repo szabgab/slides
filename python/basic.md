@@ -380,7 +380,30 @@ Try your environment:
 * A missing space will change the meaning of your code.
 * An incorrect word can ruin your day.
 
+## Types matter to Python (a bit)
+{id: types-matter-to-python}
 
+* Python differntiates between strings, integers, and floating point numbers.
+* "2" is not the same as 2
+* "3.14" is not the same as 3.14
+
+
+## String vs int
+{id: string-vs-int}
+
+![](examples/basics/str_int.py)
+![](examples/basics/str_int.out)
+
+## String vs float
+{id: string-vs-float}
+
+![](examples/basics/str_float.py)
+![](examples/basics/str_float.out)
+
+## int and float
+
+![](examples/basics/int_float.py)
+![](examples/basics/int_float.out)
 
 ## Literals,  Value Types in Python
 {id: value-types-in-python}
@@ -388,6 +411,7 @@ Try your environment:
 {i: str}
 {i: float}
 {i: bool}
+
 ![](examples/basics/show_types.py)
 ![](examples/basics/show_types.err)
 
