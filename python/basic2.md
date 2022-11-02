@@ -567,7 +567,8 @@ If we run this script without any command-line parameters it will print out usag
 If we give it two parameters it will treat the first one as the name of an input file and the second as the name of an output file.
 {/aside}
 
-![](examples/basics/convert.py)
+![](examples/basics/convert_argv.py)
+![](examples/basics/convert_stdin.py)
 
 ## Command line arguments
 {id: command-line-arguments}
