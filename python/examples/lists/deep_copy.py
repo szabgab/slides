@@ -1,13 +1,15 @@
 from copy import deepcopy
 
-x = ['apple', ['cat', 'dog'], 'banana']
-print(x)        # ['apple', ['cat', 'dog'], 'banana']
-print(x[0])     # apple
-print(x[1][0])  # cat
+fruits = ['apple', ['banana', 'peach'], 'kiwi']
+print(fruits)        # ['apple', ['banana', 'peach'], 'kiwi']
+print(fruits[0])     # apple
+print(fruits[1][0])  # banana
 
-y = deepcopy(x)
-x[0] = 'kiwi'
-x[1][0] = 'mouse'
+salad = deepcopy(fruits)
 
-print(x)    # ['kiwi', ['mouse', 'dog'], 'banana']
-print(y)    # ['apple', ['cat', 'dog'], 'banana']
+fruits[0] = 'orange'
+fruits[1][0] = 'mango'
+
+print(fruits)  # ['orange', ['mango', 'peach'], 'kiwi']
+print(salad)   # ['apple', ['banana', 'peach'], 'kiwi']
+

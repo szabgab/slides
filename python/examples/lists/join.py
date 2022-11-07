@@ -1,16 +1,16 @@
-fields = ['one', 'two and three', 'four', 'five']
+fruits = ['apple', 'banana', 'peach', 'kiwi']
 
-together = ':'.join(fields)
-print(together) # one:two and three:four:five
+together = ':'.join(fruits)
+print(together) # apple:banana:peach:kiwi
 
-together = ' '.join(fields)
-print(together) # one two and three four five
+together = ' '.join(fruits)
+print(together) # apple banana peach kiwi
 
-mixed = ' -=<> '.join(fields)
-print(mixed) # one -=<> two and three -=<> four -=<> five
+mixed = ' -=<> '.join(fruits)
+print(mixed) # apple -=<> banana -=<> peach -=<> kiwi
 
-another = ''.join(fields)
-print(another)  # onetwo and threefourfive
+another = ''.join(fruits)
+print(another)  # applebananapeachkiwi
 
-csv = ','.join(fields)
-print(csv) # one,two and three,four,five
+csv = ','.join(fruits)
+print(csv) # apple,banana,peach,kiwi

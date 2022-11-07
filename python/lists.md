@@ -113,6 +113,7 @@ copy.deepcopy() # deep copy
 
 ## join list of numbers
 {id: join-mixed-list}
+
 ![](examples/lists/joining_integers.py)
 
 
