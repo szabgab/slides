@@ -1,7 +1,7 @@
-x = ['apple', 'bob', 'cat', 'drone']
-z = x[:]
+fruits = ['apple', 'banana', 'peach', 'kiwi']
+salad = fruits[:]
 
-x[0] = 'qqrq'
+fruits[0] = 'orange'
 
-print(x)    # ['qqrq', 'bob', 'cat', 'drone']
-print(z)    # ['apple', 'bob', 'cat', 'drone']
+print(fruits)   # ['orange', 'banana', 'peach', 'kiwi']
+print(salad)    # ['apple', 'banana', 'peach', 'kiwi']

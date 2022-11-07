@@ -1,5 +1,5 @@
-x = ['apple', 'bob', 'cat', 'drone']
-y = x
-x[0] = 'qqrq'
-print(x)    # ['qqrq', 'bob', 'cat', 'drone']
-print(y)    # ['qqrq', 'bob', 'cat', 'drone']
+fruits = ['apple', 'banana', 'peach', 'kiwi']
+salad = fruits
+fruits[0] = 'orange'
+print(fruits)   # ['orange', 'banana', 'peach', 'kiwi']
+print(salad)    # ['orange', 'banana', 'peach', 'kiwi']
