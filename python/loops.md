@@ -192,6 +192,8 @@ Expected:
 ## Exercise: Number guessing game
 {id: exercise-number-guessing-game}
 
+* Every level must include all the features from all the lower levels as well.
+
 Level 0
 
 * Create a file called **number_guessing_game_0.py**
