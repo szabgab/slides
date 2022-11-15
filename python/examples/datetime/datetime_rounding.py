@@ -8,4 +8,4 @@ print(rounded) # 2019-11-01 07:11:19
 
 # A simpler solution
 ts = datetime.datetime.now().replace(microsecond=0)
-print(ts)
+print(ts)      # 2019-11-01 07:11:20
