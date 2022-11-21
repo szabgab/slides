@@ -322,13 +322,15 @@ Y 2 -  8.33 %
 ## Exercise: Count Amino Acids
 {id: exercise-count-amino-acids}
 
-* Create a file called **count_amino_acids.py**.
 * Each sequence consists of many repetition of the 4 bases represented by the ACTG characters.
 * There are 64 codons (sets of 3 bases following each other)
-* There are 20 [Amino Acids](https://en.wikipedia.org/wiki/Amino_acid) each of them are represented by 3 bases.
-* Some of the Amino Acids can be represented in multiple ways, represented in the [Codon Table] (https://en.wikipedia.org/wiki/DNA_codon_table)(For example Histidine can be encoded by both CAU, CAC)
-* We have a DNA sequence
-* Count the Amino acids from the sequence. (For our purposes feel free to generate a DNA sequence with a random number generator.
+* There are 20 [Amino Acids](https://en.wikipedia.org/wiki/Amino_acid) each of them are represented by 3 bases (by one codon).
+* Some of the Amino Acids can be represented in multiple ways, represented in the [Codon Table](https://en.wikipedia.org/wiki/DNA_codon_table). For example Histidine can be encoded by both CAU, CAC
+
+* Create a file called **count_amino_acids.py** that given a file witha  DNA sequence in it, will count the Amino acids from the sequence.
+* For our purposes feel free to generate a sequence with a random number generator.
+* A better way would be to use a real sequence saved in a txt file.
+* An even better way would be to read the sequence from a FASTA file. You can download one from [NCBI](https://www.ncbi.nlm.nih.gov/).
 
 * Skeleton:
 
