@@ -1,0 +1,10 @@
+{
+  "headers": {
+    "Accept": "json", 
+    "Accept-Encoding": "gzip;q=1.0,deflate;q=0.6,identity;q=0.3", 
+    "Auth": "secret", 
+    "Host": "httpbin.org", 
+    "User-Agent": "Ruby", 
+    "X-Amzn-Trace-Id": "Root=1-6381e1b3-4ea67f4337eb52630f8613c7"
+  }
+}

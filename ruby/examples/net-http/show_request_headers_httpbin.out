@@ -1,0 +1,9 @@
+{
+  "headers": {
+    "Accept": "*/*", 
+    "Accept-Encoding": "gzip;q=1.0,deflate;q=0.6,identity;q=0.3", 
+    "Host": "httpbin.org", 
+    "User-Agent": "Ruby", 
+    "X-Amzn-Trace-Id": "Root=1-6381e195-0fefc04b79ad1bc14b4688b0"
+  }
+}
