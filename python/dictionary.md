@@ -328,13 +328,15 @@ Y 2 -  8.33 %
 * Some of the Amino Acids can be represented in multiple ways, represented in the [Codon Table](https://en.wikipedia.org/wiki/DNA_codon_table). For example Histidine can be encoded by both CAU, CAC
 
 * Create a file called **count_amino_acids.py** that given a file witha  DNA sequence in it, will count the Amino acids from the sequence.
-* For our purposes feel free to generate a sequence with a random number generator.
-* A better way would be to use a real sequence saved in a txt file.
+* Read the sequence saved in a txt file.
+* You can generate a sequence with a random number generator and save it to that file, but it would be much better if you used a real sequence.
 * An even better way would be to read the sequence from a FASTA file. You can download one from [NCBI](https://www.ncbi.nlm.nih.gov/).
 
 * Skeleton:
 
 ![](examples/dictionary/count_amino_acids_skeleton.py)
+
+* You will want to convert this to a dictionary that maps each codon to an Amino Acid. Do it programmatically!
 
 
 ## Exercise: List of dictionaries
