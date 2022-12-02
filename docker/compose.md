@@ -134,7 +134,7 @@ Connect to the docker container which has the redis client:
 
 ```
 docker exec -it redis_client_1 bash
-``
+```
 
 Try the following commands in the Docker container:
 
