@@ -24,6 +24,11 @@
 
 * [Download](http://groovy-lang.org/download.html)
 
+## Hello World in Groovy
+{id: hello-world}
+
+![](examples/groovy/hello_world.groovy)
+
 ## I/O
 {id: io}
 
