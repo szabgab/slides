@@ -185,6 +185,7 @@ curl http://solr:8983/solr/
 
 
 TBD:
+
 ```
 curl --request POST \
 --url http://solr:8983/api/collections \
