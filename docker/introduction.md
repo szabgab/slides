@@ -237,7 +237,7 @@ docker help rmi
 To launch docker daemon from the command line:
 
 * On OSX:    `open -a Docker` ot Launch the Docker daemon via the Application icon.
-* Linux:     `sudo service docker status`.
+* Linux:     `sudo service docker start`.
 * Windows:    Run the Docker Desktop.
 
 ## Docker Registry
