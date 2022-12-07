@@ -10,6 +10,7 @@
         "intro.md",
         "arrays.md",
         "hashes.md",
+        "functions.md",
         "filesystem.md",
         "time.md",
         "net_http.md",
