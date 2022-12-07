@@ -37,9 +37,11 @@ On **Linux** you use your package manger (apt-get, yum, etc...) or install from 
 
 On **Microsoft Windows** install Git from [git-scm](https://git-scm.com/).
 
-On **Mac OSX** use [Homebrew](https://brew.sh/) or [git-scm](https://git-scm.com/).
+On **macOS** (was **Mac OSX**) use [Homebrew](https://brew.sh/) or [git-scm](https://git-scm.com/).
 
 * `brew install git`
+
+* You could also just type `git` in the Terminal and you'll be offered to install `git`.
 
 ## Which version do you have?
 {id: version}
