@@ -1,0 +1,16 @@
+<div id="date"></div>
+<div id="time"></div>
+
+<script>
+function set_time() {
+    const now = new Date();
+    const dt = document.getElementById("date");
+    dt.innerHTML = now.toLocaleDateString("ISO", {
+              year: '2-digit',
+              month: '2-digit',
+          });
+
+}
+set_time();
+
+</script>
