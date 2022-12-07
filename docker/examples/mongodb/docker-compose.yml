@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  client:
+    build: .
+    volumes:
+    - .:/opt
+    links:
+    - mongodb
+    command: tail -f /dev/null
+  mongodb:
+    image: mongo:latest
