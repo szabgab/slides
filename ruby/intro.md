@@ -185,6 +185,21 @@ $ ruby examples/intro/cli.rb a b d
 
 ![](examples/intro/current_script.rb)
 
+## Variable Types in Ruby
+{id: ruby-variable-types}
+{i: class}
+{i: type}
+{i: Integer}
+{i: Float}
+{i: String}
+{i: NilClass}
+{i: TrueClass}
+{i: FalseClass}
+{i: Array}
+{i: Hash}
+
+![](examples/intro/variable_types.rb)
+
 ## Resources
 {id: ruby-resources}
 
