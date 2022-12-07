@@ -8,6 +8,7 @@
     "version": "1.18",
     "files": [
         "intro.md",
+        "arrays.md",
         "hashes.md",
         "filesystem.md",
         "time.md",
