@@ -278,24 +278,6 @@ Hello Bar, how are you?
 ```
 
 
-## Hello Foo - puts
-{id: hello-foo-capitalize}
-{i: capitalize}
-
-![](examples/intro/hello_foo_capitalize.rb)
-![](examples/intro/hello_foo_capitalize.out)
-
-
-## Ruby command line arguments ARGV
-{id: ruby-command-line-arguments-argv}
-{i: ARGV}
-
-![](examples/intro/cli.rb)
-
-$ ruby examples/intro/cli.rb a b d
-
-![](examples/intro/cli.out)
-
 ## Hello Foo ARGV
 {id: hello-foo-argv}
 {i: ARGV}
@@ -321,6 +303,21 @@ This is the output:
 Hello Bar, how are you?
 ```
 
+
+## Interpolation with expression
+{id: hello-foo-capitalize}
+{i: interpolation}
+{i: capitalize}
+
+{aside}
+Ruby allows us to include more complex expression in the interpolation, for exampl to call the `capitalize` method of a string.
+It is nice, but don't put anything complex in there!
+{/aside}
+
+![](examples/intro/interpolation_capitalize.rb)
+![](examples/intro/interpolation_capitalize.out)
+
+
 ## Ruby conditionals - if statement
 {id: ruby-conditionals-if-statement}
 {i: if}
@@ -339,6 +336,23 @@ Hello Bar, how are you?
 {i: $0}
 
 ![](examples/intro/current_script.rb)
+
+## Ruby command line arguments ARGV
+{id: ruby-command-line-arguments-argv}
+{i: ARGV}
+
+{aside}
+We already saw how to use
+{/aside}
+
+![](examples/intro/cli.rb)
+
+$ ruby examples/intro/cli.rb a b d
+
+![](examples/intro/cli.out)
+
+
+
 
 ## Variable Types in Ruby
 {id: ruby-variable-types}
