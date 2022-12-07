@@ -1,5 +1,3 @@
-#!/usr/bin/env ruby
+person = "Foo"
 
-name = 'foo'
-
-puts "Hello ", name, ", how are you?"
+puts "Hello ", person, ", how are you?"

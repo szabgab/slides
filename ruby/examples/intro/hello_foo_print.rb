@@ -1,7 +1,4 @@
-#!/usr/bin/env ruby
+person = 'Foo'
 
-name = 'foo'
-
-print "Hello ", name, ", how are you?\n"
-
+print "Hello ", person, ", how are you?\n"
 

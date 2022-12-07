@@ -1,7 +1,5 @@
-#!/usr/bin/env ruby
+person = "Foo"
 
-name = 'foo'
-
-puts "In double quotes #{name}"
-puts 'In single quotes #{name}'
+puts "In double quotes #{person}"
+puts 'In single quotes #{person}'
 

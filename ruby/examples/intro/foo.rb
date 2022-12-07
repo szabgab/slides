@@ -1,0 +1,2 @@
+person = "Foo"
+puts person

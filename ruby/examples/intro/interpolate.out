@@ -1,2 +1,2 @@
-In double quotes foo
-In single quotes #{name}
+In double quotes Foo
+In single quotes #{person}
