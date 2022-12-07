@@ -118,4 +118,11 @@ It can be any other network intensive task.
 
 Measure the time in both cases
 
+## Subprocess TBD
+{id: subprocess-other}
+
+Some partially ready examples
+
+![](examples/process/slow_starting_server.py)
+![](examples/process/wait_do_and_stop.py)
 

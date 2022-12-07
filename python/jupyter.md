@@ -239,6 +239,7 @@ jupyter nbextensions_configurator enable --user
 {id: jupyter-notebook-autoreload}
 
 ![](examples/ml/mymodule.py)
-![](examples/ml/reload.ipynb)
+
+examples/ml/reload.ipynb
 
 
