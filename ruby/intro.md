@@ -95,7 +95,7 @@ The required "Hello World!" example. Create the file called **hello.rb** with th
 where you have the file **hello.rb** saved and type **ruby hello.rb**. It will print "Hello World!" to your screen.
 
 What you can see here is that if you would like to have some text in your program you need to put them between quotes (") and you can use the `puts` function
-to print something to the screen. Any text betwen quotes is called a "string".
+to print something to the screen. Any text between quotes is called a "string".
 {/aside}
 
 ![](examples/intro/hello.rb)
@@ -103,7 +103,7 @@ to print something to the screen. Any text betwen quotes is called a "string".
 **ruby hello.rb**
 
 {aside}
-Just to clearify, unlike in some other programming languages, in Ruby you can use either double-quotes or single-quotes to mark the beginning and the end of a string,
+Just to clarify, unlike in some other programming languages, in Ruby you can use either double-quotes or single-quotes to mark the beginning and the end of a string,
 but of course it has to be the same on both sides.
 {/aside}
 
@@ -153,7 +153,7 @@ This will print `Foo` to the screen.
 {i: ,}
 
 {aside}
-It is not enought to print the name of the programmer, we would also want to greet the programmer.
+It is not enough to print the name of the programmer, we would also want to greet the programmer.
 
 We print the first part of the message, the variable, and the last part of the message in a single call to `puts`.
 We need to separate these parts with a comma (`,`).
@@ -162,7 +162,7 @@ We need to separate these parts with a comma (`,`).
 ![](examples/intro/hello_foo_puts.rb)
 
 {aside}
-We got everything on the screen, but we are slightly disappointed as `puts` put each part of our message on a seaparate line. That's not really nice.
+We got everything on the screen, but we are slightly disappointed as `puts` put each part of our message on a separate line. That's not really nice.
 {/aside}
 
 ![](examples/intro/hello_foo_puts.out)
@@ -181,33 +181,36 @@ One way to improve the situation is to use the `print` function instead of the `
 That gave us a much nicer result as it did not print a newline after each item thereby moving the next one to the next line.
 However, it also did not print a newline at the end of the whole print operation, which would have been also less convenient.
 So in order to make it nicer we had to include `\n` at the end of our message to make it nicer.
-`\n` represent a newline so when we include `\n` in whaever we print the next thing will be printed on the following line.
+`\n` represent a newline so when we include `\n` in whatever we print the next thing will be printed on the following line.
 {/aside}
 
 ![](examples/intro/hello_foo_print.rb)
 ![](examples/intro/hello_foo_print.out)
 
-## Ruby interpolate
+## Ruby variable interpolation
 {id: ruby-interpolate-in-string}
 
 {aside}
 To further improve the situation we are going to use the interpolation capabilities of Ruby.
-We can insert a hashmark followed by a variable between a pair of curly braces in a string.
-Ruby will replace that whole construct with the value of thet variable.
+We can insert a hashmark (`#`) followed by a variable between a pair of curly braces in a string.
+Ruby will replace that whole construct with the value of the variable.
+{/aside}
 
+![](examples/intro/interpolate.rb)
+
+{aside}
 Here however the behavior of double-quote and single-quote is different. The interpolation
 only works in double-quoted strings. Single-quoted strings will just include the hash-mark,
 the opening curly, the variable name and the closing curly.
 {/aside}
 
-![](examples/intro/interpolate.rb)
 ![](examples/intro/interpolate.out)
 
-## Hello Foo - puts
+## Hello Foo - puts with interpolation
 {id: hello-foo-with-interpolation}
 
 {aside}
-Putting the interpolation to use here is how we greet our programmer using `puts` and a variable interpolated in a double-quoted string.
+Putting the interpolation to use, here is how we greet our programmer using `puts` and a variable interpolated in a double-quoted string.
 {/aside}
 
 ![](examples/intro/hello_foo.rb)
@@ -250,7 +253,7 @@ Hello Bar
 {aside}
 Why is it printed in two rows?
 
-Because after we typed in Bar we pressed ENTER to tell the computer that we are done. However that ENTER generats a newline and that is included
+Because after we typed in Bar we pressed ENTER to tell the computer that we are done. However that ENTER generates a newline and that is included
 in the text our program receives. So in the variable `person` we have a newline at the end and when we print it, the next thing will be shown
 on a new line.
 {/aside}
