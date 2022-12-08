@@ -1,16 +1,17 @@
+Before run_process
+Before Popen
+After Popen
 OUT 0
 ERR 0
 OUT 1
 ERR 1
+Before communicate
 OUT 2
 ERR 2
 OUT 3
 ERR 3
 OUT 4
 ERR 4
-Before run_process
-Before Popen
-After Popen
 After communicate
 After run_process
 exit code: 0

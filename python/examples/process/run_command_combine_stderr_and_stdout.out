@@ -1,9 +1,12 @@
 Before run_process
 Before Popen
 After Popen
+Before communicate
 After communicate
 After run_process
+
 exit code: 0
+
 out:
 OUT 0
 ERR 0
@@ -18,4 +21,3 @@ ERR 4
 
 err:
 None
-
