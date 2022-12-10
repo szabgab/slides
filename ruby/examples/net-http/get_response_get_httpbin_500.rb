@@ -12,4 +12,5 @@ if response.is_a?(Net::HTTPSuccess)
     puts response.body
 else
     puts response.code
+    puts response.msg
 end
