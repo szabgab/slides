@@ -19,10 +19,10 @@ This is a plain GET requests
 
 ![](examples/net-http/get_response_get_httpbin.rb)
 
-The `get_response` method of the [Net::HTTP](https://ruby-doc.org/stdlib-2.7.1/libdoc/net/http/rdoc/Net/HTTP.html) class.
+The `get_response` method of the [Net::HTTP](https://ruby-doc.org/3.1.2/stdlibs/net/Net/HTTP.html) class.
 
-The response that we stored in a variable cleverly named `response` can be interrogated to see if the respons was a success or failure.
-It is an instance of a [Net::HTTPResponse](https://ruby-doc.org/stdlib-2.7.1/libdoc/net/http/rdoc/Net/HTTPResponse.html) class.
+The response that we stored in a variable cleverly named `response` can be interrogated to see if the response was a success or failure.
+It is an instance of a [Net::HTTPResponse](https://ruby-doc.org/3.1.2/stdlibs/net/Net/HTTPResponse.html) class.
 In case it is a success we print the body of the response and see this:
 
 ![](examples/net-http/get_response_get_httpbin.out)
@@ -32,7 +32,7 @@ For the other case see the next example.
 ## GET URL that does not exist (404 error)
 {id: get-urr-that-does-not-to-exist}
 
-Here we deliberatly created a URL that does not exist on the HTTPbin web server. In this case the response was not Net::HTTPOK,
+Here we deliberately created a URL that does not exist on the HTTPbin web server. In this case the response was not Net::HTTPOK,
 so Ruby executed the `else` part of our program. The code was `404` and the response message was `NOT FOUND`. I am sure you have already
 encountered links that returned this error message. BTW you can try to visit the URLs using your regular browser as well to see the same response.
 
@@ -49,13 +49,13 @@ NOT FOUND
 {id: get-url-that-pretends-not-to-exist}
 
 Previously we got a `404 NOT FOUND` HTTP response because we tried to access a page that really does not exist.
-It was easy to generate a 404 error, but it would be a lot harder - effectively impossble to consistently get a web-site to
+It was easy to generate a 404 error, but it would be a lot harder - effectively impossible to consistently get a web-site to
 return other HTTP error messages. eg. While we generally would want to avoid getting a `500 INTERNAL SERVER ERROR` but for testing
-puporses (for our client code) we might want to be able to consistently create it.
+purposes (for our client code) we might want to be able to consistently create it.
 
 Luckily HTTPbin provide the service to fake any HTTP status code.
 
-First let's see how does it generat `404 NOT FOUND` message:
+First let's see how does it generate `404 NOT FOUND` message:
 
 ![](examples/net-http/get_response_get_httpbin_404.rb)
 
@@ -70,13 +70,13 @@ NOT FOUND
 ```
 
 ## GET URL that pretends to crash (500)
-{id: get-url-that-pretendsa-to-crash}
+{id: get-url-that-pretends-to-crash}
 
 Generating `500 INTERNAL SERVER ERROR` will be more fun, but we don't have to do anything special. Just send a `GET` request to the `/status/500` end-point.
 
 ![](examples/net-http/get_response_get_httpbin_500.rb)
 
-The putput was:
+The output was:
 
 ```
 500
@@ -96,10 +96,10 @@ This is the header as our Ruby code sent it. (Note the User Agent being `Ruby`)
 
 ![](examples/net-http/get_request_headers_httpbin.out)
 
-## Get request headers using FireFox
+## Get request headers using Firefox
 {id: get-request-headers-with-firefox}
 
-Just to compare, when I visited [this url](https://httpbin.org/headers) using [FireFox](https://www.mozilla.org/en-US/firefox/new/), my default browser I get the
+Just to compare, when I visited [this url](https://httpbin.org/headers) using [Firefox](https://www.mozilla.org/en-US/firefox/new/), my default browser I get the
 following results:
 
 ```
@@ -160,10 +160,78 @@ In the response we can see that the fields were set as expected.
 
 ![](examples/net-http/set_request_headers_httpbin.out)
 
-As you might know every time you access a web site it will log the request in a log file, usuallu including the User-Agent as well.
+As you might know every time you access a web site it will log the request in a log file, usually including the User-Agent as well.
 This way you could generate lots of request to a web site making their stats show that Internet Explorer 6.0 is back in popularity.
 
 Don't do it!
+
+## Sending a POST request
+{id: sending-post-request}
+{i: POST}
+{i: post_form}
+
+There is more to do with `GET` requests, but before we go on, let's also see how to send simple `POST` requests.
+
+First of all HTTPbin expects the `POST` requests to arrive to a different end-point called, `/post`.
+
+In order to send a `POST` request we call the `post_form` method. Pass the URI to it and a hash of the data.
+The hash can be empty but it mist be provided. In our case I just provided it with two keys-value pairs.
+
+![](examples/net-http/post_response_get_httpbin.rb)
+
+This is the response. HTTPbin was kind enough to send back the form-data so we can verify that it was sent and received properly.
+
+![](examples/net-http/post_response_get_httpbin.out)
+
+
+## Setting header in POST request
+{id: setting-header-in-post-request}
+
+If we also would like to set fields in the header we need a slightly more complex way of writing this:
+
+First we need to create a request object using `Net::HTTP::Post`.
+Then add the form data using the `set_form_data` method.
+Finally add a few key-value pairs directly to the request.
+
+Then we need to `start` the HTTP session and send the request using the `request` method.`
+
+When we called `start` we had to supply the hostname and the port manually and because our URL is https (and not http)
+we also need to set `:use_ssl => true` in order for this to work.
+
+![](examples/net-http/post_header_ssl_httpbin.rb)
+![](examples/net-http/post_header_ssl_httpbin.out)
+
+
+## Debugging a failed request
+{id: debugging-a-failed-request}
+
+{aside}
+In the previous example you saw that I had to set `:use_ssl => true`, but it took some time to figure it out.
+The main problem was that in case of failure my previous code only printed the HTTP status code that was 400.
+
+I read the documentation several times and tried various combinations of the code till it occurred to be that maybe
+there is some hint in the `body` of the response. So I changed the code to print that in case of failure.
+{/aside}
+
+![](examples/net-http/post_header_httpbin.rb)
+
+This was the response:
+
+![](examples/net-http/post_header_httpbin.out)
+
+That allowed me to understand that the issue is around the use of ssl: http vs https. First I tried the same code
+replacing the URL by one that uses http:
+
+```
+url = 'http://httpbin.org/post'
+```
+
+This worked.
+
+At this point I understood I need to search for something about ssl, and that's how I found out that I had to pass `:use_ssl => true`.
+
+So remember, at least for debugging, it can be useful to print the content of the body even in the case of error.
+
 
 ## GET URL
 {id: net-http-get-url}

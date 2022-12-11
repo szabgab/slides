@@ -1,0 +1,22 @@
+{
+  "args": {}, 
+  "data": "", 
+  "files": {}, 
+  "form": {
+    "height": "175", 
+    "name": "Foo Bar"
+  }, 
+  "headers": {
+    "Accept": "*/*", 
+    "Accept-Encoding": "gzip;q=1.0,deflate;q=0.6,identity;q=0.3", 
+    "Content-Length": "23", 
+    "Content-Type": "application/x-www-form-urlencoded", 
+    "Host": "httpbin.org", 
+    "User-Agent": "Internet Explorer 6.0", 
+    "X-Amzn-Trace-Id": "Root=1-6394ce2e-2722ccb67d44f1ee1691a05a", 
+    "X-Answer": "42"
+  }, 
+  "json": null, 
+  "origin": "46.120.8.206", 
+  "url": "https://httpbin.org/post"
+}
