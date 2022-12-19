@@ -44,7 +44,7 @@ cd examples/interactive-shell
 $ docker-compose up
 ```
 
-In another terminal, but in the same directory you can run one-of commands on the running container:
+In another terminal, but in the same directory you can run one-off commands on the running container:
 
 ```
 $ docker exec interactive-shell_one_1 hostname
@@ -200,7 +200,7 @@ curl --request POST \
 ```
 
 ## Docker Compose MongoDB server
-{id: docker-compose-mongodb-server-}
+{id: docker-compose-mongodb-server}
 
 In one container start the Docker server, the other one will be the client that is built based on the Dockerfile
 
@@ -228,3 +228,48 @@ Start the mongodb client and connect to the server running in the other containe
 mongosh mongodb://mongodb:27017
 ```
 
+## Docker Compose PostgreSQL server
+{id: docker-compose-postgresql-server}
+
+In one container start the Docker server, the other one will be the client that is built based on the Dockerfile
+
+![](examples/postgresql/docker-compose.yml)
+
+The Dockerfile is also based on the official mongodb image as that made it easy to have `mongosh` already installed.
+
+![](examples/postgresql/Dockerfile)
+
+Start the two containers:
+
+```
+docker-compose up -d
+```
+
+Connect to the client container:
+
+```
+docker exec -it mongodb_client_1 bash
+```
+
+
+```
+psql -h postgres --username username -d mydb
+```
+
+It will ask for a password:
+
+```
+Password for user username:
+```
+
+type in `password`
+
+
+```
+psql (14.5 (Ubuntu 14.5-0ubuntu0.22.04.1), server 15.1 (Debian 15.1-1.pgdg110+1))
+WARNING: psql major version 14, server major version 15.
+         Some psql features might not work.
+Type "help" for help.
+
+mydb=#
+```

@@ -1,0 +1,20 @@
+version: '3.8'
+services:
+  client:
+    build: .
+    volumes:
+    - .:/opt
+    links:
+    - postgres
+    command: tail -f /dev/null
+  postgres:
+    image: postgres:latest
+    environment:
+      POSTGRES_USER: username
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: mydb
+    volumes:
+      - database-data:/var/lib/postgresql/data/
+
+volumes:
+  database-data:
