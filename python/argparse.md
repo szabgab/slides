@@ -305,6 +305,11 @@ $ python argument_with_optional_value.py --level 20
 20
 ```
 
+## Conditional required parameter with argparse
+{id: argparse-conditional-required-parameter}
+
+![](examples/argparse/conditional_required_arguments.py)
+
 ## Exercise: Command line parameters
 {id: exercise-argparse}
 
