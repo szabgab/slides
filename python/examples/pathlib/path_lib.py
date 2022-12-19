@@ -8,3 +8,5 @@ print(this.parents[1])
 print(list(this.parent.iterdir()))
 # .exists
 # joinpath or /
+# mkdir()
+# Path.cwd()
