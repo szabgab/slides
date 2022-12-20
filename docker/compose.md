@@ -273,3 +273,10 @@ Type "help" for help.
 
 mydb=#
 ```
+
+Alternativel, once inside the clien docker container we can put the variable of the database in an environment variable and then we can run a command that will not wait for any input.
+
+```
+export PGPASSWORD=password
+echo "SELECT CURRENT_TIME" | psql -h postgres -U username mydb
+```
