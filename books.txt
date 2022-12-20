@@ -31,6 +31,7 @@ mojolicious/mojolicious.json,mojolicious,
 mongodb/mongodb.json,mongodb,
 nodejs/nodejs.json,nodejs,
 nosql/nosql.json,nosql,
+osdc/osdc.json,osdc,
 pair-programming/pair.json,pair-programming,
 perl-intro/perl.json,perl-intro,
 perl/dancer.json,dancer,perl
