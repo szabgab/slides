@@ -32,6 +32,11 @@
 
 ![](examples/datetime/subtract_date.py)
 
+## Timezone aware datetime
+{id: timezone-aware-datetime}
+
+![](examples/datetime/time_since.py)
+
 ## datetime arithmeticis (compare, sort)
 {id: datetime-arithmetics-compare-dates}
 
@@ -46,4 +51,5 @@
 {id: rounding-datetime}
 
 ![](examples/datetime/datetime_rounding.py)
+
 
