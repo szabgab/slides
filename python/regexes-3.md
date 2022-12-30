@@ -115,7 +115,14 @@ re.MULTILINE | re.DOTALL
 
 ## Substitution
 {id: substitution}
+
 ![](examples/regex/substitution.py)
+
+## Substitution and MULTILINE - remove leading spaces
+{id: substitution-and-multiline}
+
+![](examples/regex/remove_leading_spaces.py)
+![](examples/regex/remove_leading_spaces.out)
 
 
 ## findall capture
