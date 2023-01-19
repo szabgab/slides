@@ -52,4 +52,9 @@
 
 ![](examples/datetime/datetime_rounding.py)
 
+## Parse datetime string with and without timezone information
+{id: parse-datetime-string-with-and-without-timezone-information}
+{i: strptime}
+{i: tzinfo}
 
+![](examples/datetime/parse_string.py)

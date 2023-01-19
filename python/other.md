@@ -935,4 +935,11 @@ To sort the list according to length using sorted
 ![](examples/lists/sorted_key.py)
 ![](examples/lists/sorted_key.out)
 
+## get and set locale
+{id: get-and-set-locale}
+{i: locale}
+{i: LC_CTYPE}
+{i: getlocale}
+{i: setlocale}
 
+![](examples/other/set_locale.py)
