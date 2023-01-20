@@ -232,3 +232,32 @@ $ pytest -sq
 
 ![](examples/pytest/fixture-mongodb/conftest.py)
 
+## Pytest parametrized fixture
+{id: pytest-parametrized-fixture}
+
+{aside}
+Sometimes we would like to pass some parameters to the fixture. We can do this with one or more parameters.
+{/aside}
+
+![](examples/pytest/test_parametrized_fixture.py)
+
+```
+Fixture before test using apple
+Test using apple
+Fixture after test using apple
+
+Fixture before test using banana
+Test not using param
+Fixture after test using banana
+```
+
+## Pytest parametrized fixture to use Docker
+{id: pytest-parametrized-fixture-to-use-docker}
+
+{aside}
+I created a GitHub Action for the [OSDC site generator](https://github.com/OSDC-Code-Maven/osdc-site-generator) which is running inside a Docker container.
+At one point I wanted the whole image creation and running in the image be part of the test.
+{/aside}
+
+![](examples/pytest/test_parametrized_fixture_with_docker.py)
+
