@@ -45,6 +45,7 @@
         "wxperl.md",
         "win32.md",
         "psgi.md",
+        "testing-demo.md",
 
         "dancer.md",
         "dancer-template.md",
