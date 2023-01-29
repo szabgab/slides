@@ -344,6 +344,9 @@ We'll get some output. Here too the single dot after the name of the test file i
 The exit-code of this execution in 0 as was the case with unittest.
 {/aside}
 
+```
+pip install -r pytest
+```
 
 ![](examples/testing-demo/test_with_pytest_class.py)
 
@@ -445,6 +448,31 @@ it will execute them using the unittest module.
 $ pytest test_one_with_unittest.py
 $ pytest test_with_unittest.py
 ```
+
+## Test demo: test coverage
+{id: testing-demo-test-coverage}
+
+
+```
+pip install -r pytest-cover
+```
+
+
+```
+$ pytest test_with_pytest.py --cov --cov-report html --cov-report term
+```
+
+```
+--- coverage: platform linux, python 3.10.6-final-0 ----
+Name                  Stmts   Miss  Cover
+-----------------------------------------
+mymath.py                 4      1    75%
+test_with_pytest.py       5      0   100%
+-----------------------------------------
+TOTAL                     9      1    89%
+Coverage HTML written to dir htmlcov
+```
+
 
 ## Exercise: Testing demo - anagrams
 {id: exercise-testing-demo}
