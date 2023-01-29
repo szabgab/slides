@@ -91,7 +91,8 @@ python/examples/web-client/.api.txt
 python/examples/selenium/screenshot.png
 python/examples/serialization/demo.*
 python/examples/fastapi/counter-on-disk-json/counter.json
-.coverage
+python/examples/testing-demo/.coverage
+perl/examples/testing-demo/cover_db
 
 crystal/bin
 crystal/lib
