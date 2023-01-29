@@ -6,8 +6,6 @@
 
 AUT = Application under Testing
 
-{id: testing-demo-aut}
-
 ![](examples/testing-demo/lib/MyMath.pm)
 
 ![](examples/testing-demo/bin/add.pl)
