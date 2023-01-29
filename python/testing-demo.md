@@ -473,6 +473,8 @@ TOTAL                     9      1    89%
 Coverage HTML written to dir htmlcov
 ```
 
+Open `htmlcov/index.html`
+
 
 ## Exercise: Testing demo - anagrams
 {id: exercise-testing-demo}
