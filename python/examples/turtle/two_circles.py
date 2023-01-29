@@ -1,10 +1,10 @@
 import turtle
 
-t = turtle.getturtle()
-t.circle(30)
-t.penup()
-t.goto(200, 0)
-t.pendown()
-t.circle(50)
+trt = turtle.getturtle()
+trt.circle(30)
+trt.penup()
+trt.goto(200, 0)
+trt.pendown()
+trt.circle(50)
 
 turtle.exitonclick()

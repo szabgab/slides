@@ -1,6 +1,6 @@
 import turtle
 
-t = turtle.getturtle()
-t.forward(100)
+trt = turtle.getturtle()
+trt.forward(100)
 
 turtle.exitonclick()

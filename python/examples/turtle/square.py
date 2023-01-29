@@ -1,12 +1,12 @@
 import turtle
 
-t = turtle.getturtle()
-t.forward(100)
-t.left(90)
-t.forward(100)
-t.left(90)
-t.forward(100)
-t.left(90)
-t.forward(100)
+trt = turtle.getturtle()
+trt.forward(100)
+trt.left(90)
+trt.forward(100)
+trt.left(90)
+trt.forward(100)
+trt.left(90)
+trt.forward(100)
 
 turtle.exitonclick()

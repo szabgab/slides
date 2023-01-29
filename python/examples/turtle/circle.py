@@ -1,6 +1,6 @@
 import turtle
 
-t = turtle.getturtle()
-t.circle(100)
+trt = turtle.getturtle()
+trt.circle(100)
 
 turtle.exitonclick()

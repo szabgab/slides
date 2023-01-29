@@ -1,11 +1,14 @@
 import turtle
 
-t = turtle.getturtle()
+def house():
+    trt = turtle.getturtle()
 
-for i in range(4):
-    t.forward(50)
-    t.right(90)
-t.goto(25, 25)
-t.goto(50, 0)
+    for i in range(4):
+        trt.forward(50)
+        trt.right(90)
+    trt.goto(25, 25)
+    trt.goto(50, 0)
+
+house()
 
 turtle.exitonclick()

@@ -6,14 +6,15 @@
 {id: turtle-line}
 {i: getturtle}
 {i: forward}
+{i: exitonclick}
 
 {aside}
-Without the call to `input()` at the end of the program it would automatically close the window and we would not be able to see anything.
+Without the call to `turtle.exitonclick()` at the end of the program it would automatically close the window and we would not be able to see anything. This command installs an event-handler so when we click on the mouse it will end the application.
 {/aside}
 
 ![](examples/turtle/line.py)
 
-turtle.exitonclick()
+
 
 ## Square (forward, left)
 {id: turtle-square}
@@ -30,6 +31,7 @@ turtle.exitonclick()
 
 ## Square using the circle command
 {id: turtle-square-by-circle}
+{i: steps}
 
 ![](examples/turtle/square_by_circle.py)
 
@@ -40,31 +42,38 @@ turtle.exitonclick()
 
 ![](examples/turtle/triangle.py)
 
-## Move turtle (penup, pendown, goto)
+## Move turtle without drawing (penup, pendown, goto)
 {id: turtle-goto}
 {i: penup}
 {i: pendown}
 {i: goto}
+
+{aside}
+Coordinates (0, 0) are in the middle of the screen.
+{/aside}
 
 ![](examples/turtle/two_circles.py)
 
 
 ## Turtle house
 {id: turtle-house}
+{i: right}
+{i: forward}
+{i: goto}
 
 ![](examples/turtle/house.py)
-
-## Turtle snowman
-{id: turtle-snowman}
-
-TBD
 
 ## Turtle screen
 {id: turtle-screen}
 {i: getscreen}
 {i: bgcolor}
 
-![](examples/turtle/screen.py)
+![](examples/turtle/blue_screen.py)
+
+## Tutle onclick - mouse click event
+{id: tutrle-onclick}
+
+![](examples/turtle/onclick_event.py)
 
 
 ## Turle Commands
@@ -148,7 +157,8 @@ y = t.clone()
 
 ![](examples/turtle/numinput_select_shape.py)
 
-![](examples/turtle/onclick_shapes.py)
 
 ![](examples/turtle/textinput_select_shape.py)
+
+![](examples/turtle/draw.py)
 
