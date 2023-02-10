@@ -1,5 +1,10 @@
 x = "Foo"
 y  = "Bar"
+
+# x + y
+# Error in x + y : non-numeric argument to binary operator
+# Execution halted
+
 z = paste(x, y, sep="")
 z     # FooBar
 length(z) # 1

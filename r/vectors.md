@@ -213,4 +213,19 @@ Showing the indexes of the elements that are TRUE in a boolean vector
 
 ![](examples/vectors/repeat_number.R)
 
+## Boolean (logical) operations on vectors
+{id: boolean-operations-on-vectors}
+
+
+![](examples/boolean_vectors_truth_table.R)
+
+![](examples/boolean.R)
+
+## Range of numbers
+{id: range-of-numbers}
+{i: :}
+
+![](examples/range_of_numbers.R)
+
+
 

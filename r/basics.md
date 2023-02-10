@@ -58,6 +58,14 @@ $ R
 Rscript hello_world.R
 ```
 
+## Comments
+{id: comments}
+
+* Lines starting at a "#" character are comments
+
+![](examples/basics/comments.R)
+
+
 ## R and simple math operations
 {id: r-and-simple-math-operations}
 
@@ -77,6 +85,23 @@ Rscript hello_world.R
 
 ![](examples/basics/assignment.R)
 
+## Variable types (numeric, character, logical, function)
+{id: variable-types}
+{i: class}
+{i: isa}
+{i: numeric}
+{i: character}
+{i: logical}
+{i: function}
+
+* numeric:     1   34  2.7
+* character:   "hello"   "23"
+* logical:     TRUE  FALSE
+* function:    class print
+
+![](examples/basics/data_types.R)
+
+![](examples/basics/data_types_isa.R)
 
 ## Variable types are deducted
 {id: variable-types-are-deducted}
@@ -86,27 +111,13 @@ Rscript hello_world.R
 {i: character}
 {i: logical}
 
-![](examples/basics/data_types.R)
-
-## Range of numbers
-{id: range-of-numbers}
-{i: :}
-
-![](examples/range_of_numbers.R)
-
+![](examples/basics/variable_data_types.R)
 
 ## paste (join) strings and numbers together
 {id: paste-strings-together}
 {i: paste}
 
 ![](examples/basics/paste_examples.R)
-
-## Comments
-{id: comments}
-
-* Lines starting at a "#" character are comments
-
-![](examples/basics/comments.R)
 
 ## Operator preference order and parentheses
 {id: operator-peference-order-and-parentheses}
@@ -116,36 +127,36 @@ Rscript hello_world.R
 
 ![](examples/basics/compare_numbers.R)
 
-## Convert between types using as.
-{id: converting-between-types-using-as}
+## Operators comparing strings (characters)
+{id: operators-comparing-strings}
+
+* characters are compared in ABC order (but not ASCII order!)
+
+![](examples/basics/compare_strings.R)
+
+## Convert string (character) to numeric
+{id: convert-string-to-numeric}
+{i: as.numeric}
 
 * as.numeric
-* as.factor
-
-## Convert string to numeric
-{id: convert-string-to-numeric}
 
 ![](examples/basics/convert_string_to_numeric.R)
-
 
 ## Boolean (logical) operations
 {id: boolean-operations}
 
-![](examples/boolean_vectors_truth_table.R)
+![](examples/basics/logical_boolean.R)
 
-![](examples/logical_boolean.R)
-
-![](examples/boolean.R)
-
-![](examples/boolean_operations_on_numbers.R)
+![](examples/basics/boolean_operations_on_numbers.R)
 
 ## Concatenate strings
 {id: concatenate-strings}
 
-![](examples/concatenate_strings.R)
+![](examples/basics/concatenate_strings.R)
 
-## Filesystem pathes
-{id: filesystem-pathes}
+## Convert between types using as.
+{id: converting-between-types-using-as}
 
-![](examples/pathes.R)
+* as.factor
+
 

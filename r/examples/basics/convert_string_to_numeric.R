@@ -1,6 +1,6 @@
 x = "2"
-class(x)
+class(x)           "character"
 
 y = as.numeric(x)
-class(y)
+class(y)           "numeric"
 

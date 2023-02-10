@@ -1,12 +1,16 @@
-x = 23
-class(x)     # numeric
+class(23)       # numeric
+class(2.3)      # numeric
+class(NaN)      # numeric
 
-x = "George"
-class(x)     # character
+class("Hello")  # character
+class("23")     # character
 
-x = T
-class(x)     # logical
+class(TRUE)     # logical
+class(FALSE)    # logical
+class(T)        # logical
+class(F)        # logical
+class(NA)       # logical
 
-isa(2, "numeric")  # TRUE
-isa("2", "character")  # TRUE
-isa(FALSE, "logical")  # TRUE
+class(class)    # function
+class(print)    # function
+

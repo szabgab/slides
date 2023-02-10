@@ -1,3 +1,13 @@
+TRUE & TRUE     # TRUE
+TRUE & FALSE    # FALSE
+
+TRUE | FALSE    # TRUE
+FALSE | FALSE   # FALSE
+
+! TRUE          # FALSE
+! FALSE         # TRUE
+
+
 
 # Logical Operations
 a = TRUE
