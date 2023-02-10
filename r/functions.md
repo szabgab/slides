@@ -22,7 +22,8 @@ function_name = function(arg1, arg2, arg3) {
 ## Simple add function
 {id: simple-add-function}
 
-![](examples/rectangle_area_function.R)
-![](examples/distance_function.R)
+![](examples/functions/rectangle_area_function.R)
+
+![](examples/functions/distance_function.R)
 
 

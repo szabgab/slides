@@ -11,6 +11,21 @@
 
 ![](examples/vector.out)
 
+## Variable types of vectors are deducted
+{id: variable-types-of-vectors-are-deducted}
+
+* We'll learn a lot more about vectors later
+
+* TODO: Mixed data?
+
+![](examples/vectors/data_types_vectors.R)
+
+## Sum of values in vectors
+{id: sum-of-values-in-vectors}
+
+![](examples/vectors/sum.R)
+
+
 ## Access the n-the element of a vector
 {id: access-the-n-the-element-of-a-vector}
 

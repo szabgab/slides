@@ -10,9 +10,9 @@
 ## Alternatives
 {id: alternatives}
 
-* Excel ????
+* Excel - Not really, but people use it anyway.
 * Matlab
-* Python / Perl
+* Python, Perl, ...
 
 ## Install R
 {id: install-r}
@@ -48,8 +48,9 @@ $ R
 ## Running R on the command line using Rscript
 {id: running-r-scripts-on-the-command-line}
 {i: Rscript}
+{i: print}
 
-![](examples/hello_world.R)
+![](examples/basics/hello_world.R)
 
 ```
 Rscript hello_world.R
@@ -58,13 +59,13 @@ Rscript hello_world.R
 ## R and simple math operations
 {id: r-and-simple-math-operations}
 
-![](examples/calc.R)
+![](examples/basics/calc.R)
 
 
 ## R variables
 {id: r-variables}
 
-![](examples/variables.R)
+![](examples/basics/variables.R)
 
 ## R assignment (left-assignment, right-assignment)
 {id: r-assignment}
@@ -72,14 +73,17 @@ Rscript hello_world.R
 * Both = and <- can be used for left-assignment
 * -> Can be used for right-assignment
 
-![](examples/assignment.R)
-
+![](examples/basics/assignment.R)
 
 
 ## Variable types are deducted
 {id: variable-types-are-deducted}
+{i: class}
+{i: numeric}
+{i: character}
+{i: logical}
 
-![](examples/data_types.R)
+![](examples/basics/data_types.R)
 
 ## Repeate the same number
 {id: repeate-the-same-number}
