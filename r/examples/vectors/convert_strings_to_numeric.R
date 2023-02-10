@@ -6,5 +6,5 @@ print(class(nums))
 
 print(summary(chars))
 print(summary(nums))
-print(sum(nums))   # 6 
+print(sum(nums))   # 6
 print(sum(chars))  # invalid 'type' (character) of argument

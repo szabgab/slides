@@ -193,3 +193,24 @@ Showing the indexes of the elements that are TRUE in a boolean vector
 {i: order}
 
 ![](examples/order.R)
+
+## Operators comparing vectors
+{id: operators-comparing-vectors}
+
+
+![](examples/vectors/compare_vectors_with_numbers.R)
+
+## Convert vector of strings to numerics
+{id: convert-strings-to-numerics}
+{i: as.numeric}
+
+
+![](examples/vectors/convert_strings_to_numeric.R)
+
+## Repeate the same number
+{id: repeate-the-same-number}
+{i: rep}
+
+![](examples/vectors/repeat_number.R)
+
+

@@ -1,5 +1,5 @@
-# R
-{id: r}
+# R - basics
+{id: basics}
 
 ## Background
 {id: background}
@@ -29,20 +29,22 @@ sudo apt-get install r-base
 ## Install R Studio
 {id: install-r-studio}
 
-[Download R Studio](https://rstudio.com/products/rstudio/download/)
+[Download R Studio](https://rstudio.com/products/rstudio/download/) the IDE used to write and execute R code.
 
 
-## Launch interactive R and quit
+## Launch interactive R, get help, and quit
 {id: launch-interactive}
 {i: R}
+{i: help}
 {i: q}
 
 
 ```
 $ R
+> help()
+> help(class)
 ...
 > q()
-
 ```
 
 ## Running R on the command line using Rscript
@@ -79,17 +81,12 @@ Rscript hello_world.R
 ## Variable types are deducted
 {id: variable-types-are-deducted}
 {i: class}
+{i: isa}
 {i: numeric}
 {i: character}
 {i: logical}
 
 ![](examples/basics/data_types.R)
-
-## Repeate the same number
-{id: repeate-the-same-number}
-{i: rep}
-
-![](examples/repeat_number.R)
 
 ## Range of numbers
 {id: range-of-numbers}
@@ -102,20 +99,22 @@ Rscript hello_world.R
 {id: paste-strings-together}
 {i: paste}
 
-![](examples/paste_examples.R)
+![](examples/basics/paste_examples.R)
 
 ## Comments
 {id: comments}
 
 * Lines starting at a "#" character are comments
 
+![](examples/basics/comments.R)
+
 ## Operator preference order and parentheses
 {id: operator-peference-order-and-parentheses}
 
-## Operators comparing values
-{id: operators-comparing-values}
+## Operators comparing numbers
+{id: operators-comparing-numbers}
 
-![](examples/conditional_operators.R)
+![](examples/basics/compare_numbers.R)
 
 ## Convert between types using as.
 {id: converting-between-types-using-as}
@@ -123,12 +122,10 @@ Rscript hello_world.R
 * as.numeric
 * as.factor
 
-
 ## Convert string to numeric
 {id: convert-string-to-numeric}
 
-![](examples/convert_string_to_numeric.R)
-
+![](examples/basics/convert_string_to_numeric.R)
 
 
 ## Boolean (logical) operations
