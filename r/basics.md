@@ -159,4 +159,8 @@ Rscript hello_world.R
 
 * as.factor
 
+## Printing with cat
+{id: printing-with-cat}
+
+![](examples/basics/cat.R)
 
