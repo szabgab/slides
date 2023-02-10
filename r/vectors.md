@@ -76,49 +76,39 @@ Using a negative index will give you the same vector without that element
 
 ![](examples/vectors/create_vectors.R)
 
-## Quick graphs
-{id: quick-grapsh}
-{i: barplot}
-{i: plot}
-{i: hist}
-{i: boxplot}
-{i: pie}
+## R - sequences and ranges
+{id: r-sequences-and-ranges}
+{i: seq}
 
-![](examples/quick_graph.R)
+![](examples/seq.R)
 
-* Will create a file called Rplots.pdf.
+## Range of numbers
+{id: range-of-numbers}
+{i: :}
+
+![](examples/range_of_numbers.R)
 
 
-## Random numbers in normal distribution
-{id: random-numbers-in-normal-distribution}
-{i: rnorm}
-{i: hist}
-
-* Normal distribution
-* Histogram of the numbers
-
-![](examples/normal_distribution.R)
-
-## Factors
-{id: factors}
-
-* "Category", "enumerated type"
-
-![](examples/factors.R)
-
-![](examples/factor.R)
 
 ## Filter values
 {id: filter-values}
 
-![](examples/filter_values.R)
-![](examples/filter.R)
+![](examples/vectors/filter_values.R)
+![](examples/vectors/filter.R)
 
 ## Index of true elements - which
 {id: index-of-true-elements}
 {i: which}
 
-![](examples/index_of_true_elements.R)
+![](examples/vectors/index_of_true_elements.R)
+
+## which
+{id: which}
+
+Showing the indexes of the elements that are TRUE in a boolean vector
+
+![](examples/which.R)
+
 
 ## Matix TBD
 {id: matrix}
@@ -128,73 +118,58 @@ Using a negative index will give you the same vector without that element
 ## Vector operations - reuse values from shorter vector
 {id: reuse-data-from-shorter-vector}
 
-![](examples/reuse_short_array_exact_multiple.R)
+![](examples/vectors/reuse_short_array_exact_multiple.R)
 
 ![](examples/vectors/vector_multiplication.R)
 
-![](examples/different_length_of_arrays.R)
-
-## R - sequences and ranges
-{id: r-sequences-and-ranges}
-{i: seq}
-
-![](examples/seq.R)
+![](examples/vectors/different_length_of_arrays.R)
 
 ## Summary of numeric data
 {id: summary-of-numeric-data}
 {i: summary}
 {i: mean}
 
-![](examples/summary_of_numeric.R)
-![](examples/summary_of_boolean.R)
-![](examples/summary_of_strings.R)
-
-## which
-{id: which}
-
-Showing the indexes of the elements that are TRUE in a boolean vector
-
-![](examples/which.R)
+![](examples/vectors/summary_of_numeric.R)
+![](examples/vectors/summary_of_boolean.R)
+![](examples/vectors/summary_of_strings.R)
 
 ## Change element of vector
 {id: change-element-of-vector}
 
-![](examples/change_element_of_vector.R)
+![](examples/vectors/change_element_of_vector.R)
 
 ## Assign vector to another name
 {id: assign-vector-to-another-name}
 
-![](examples/assign_vector.R)
+![](examples/vectors/assign_vector.R)
 
 ## Reverse vector
 {id: reverse}
 {i: rev}
 {i: reverse}
 
-![](examples/reverse.R)
+![](examples/vectors/reverse.R)
 
 ## Sort vector
 {id: sort}
 {i: sort}
 
-![](examples/sort.R)
+![](examples/vectors/sort.R)
 
 ## Sort using order
 {id: order}
 {i: order}
 
-![](examples/order.R)
+![](examples/vectors/order.R)
 
 ## Operators comparing vectors
 {id: operators-comparing-vectors}
-
 
 ![](examples/vectors/compare_vectors_with_numbers.R)
 
 ## Convert vector of strings to numerics
 {id: convert-strings-to-numerics}
 {i: as.numeric}
-
 
 ![](examples/vectors/convert_strings_to_numeric.R)
 
@@ -207,16 +182,17 @@ Showing the indexes of the elements that are TRUE in a boolean vector
 ## Boolean (logical) operations on vectors
 {id: boolean-operations-on-vectors}
 
+![](examples/vectors/boolean_vectors_truth_table.R)
 
-![](examples/boolean_vectors_truth_table.R)
+![](examples/vectors/boolean.R)
 
-![](examples/boolean.R)
+## Factors
+{id: factors}
 
-## Range of numbers
-{id: range-of-numbers}
-{i: :}
+* "Category", "enumerated type"
 
-![](examples/range_of_numbers.R)
+![](examples/factors.R)
 
+![](examples/factor.R)
 
 
