@@ -61,10 +61,6 @@ matrix - same idea as a data.frame but all values are the same class (type)
 Iris database (Petal, Sepal)
 http://www.lac.inpe.br/~rafael.santos/Docs/CAP394/WholeStory-Iris.html
 
-getwd() Get current working directory cwd
-setwd("c://.../")   # change directory
-setwd("/home/gabor/work/slides/r")
-
 install.packages("here")
 library(here)
 

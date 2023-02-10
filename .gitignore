@@ -45,6 +45,7 @@ python/examples/flask/persistent-multi-counter/counter.json
 
 r/.RData
 r/.Rhistory
+r/lib
 
 .Rproj.user
 r.Rproj
