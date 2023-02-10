@@ -7,9 +7,9 @@
 
 * c stands for concatenate
 
-![](examples/vector.R)
+![](examples/vectors/vector.R)
 
-![](examples/vector.out)
+![](examples/vectors/vector.out)
 
 ## Variable types of vectors are deducted
 {id: variable-types-of-vectors-are-deducted}
@@ -25,6 +25,10 @@
 
 ![](examples/vectors/sum.R)
 
+## Size of vector (length of vector)
+{id: length-of-vector}
+
+![](examples/vectors/vector_length.R)
 
 ## Access the n-the element of a vector
 {id: access-the-n-the-element-of-a-vector}
@@ -32,27 +36,27 @@
 * It is `some_vector[n]`
 * It is 1-based
 
-![](examples/access_vector_element.R)
+![](examples/vectors/access_vector_element.R)
 
 ## R Vector: Negative index, exclude element
 {id: negative-index-exclude-element}
 
 Using a negative index will give you the same vector without that element
 
-![](examples/negative_index.R)
+![](examples/vectors/negative_index.R)
 
-## R vector: Access several elements
+## R vector: Access several elements (slice)
 {id: access-several-elements-of-a-vector}
 
 * We can use a vector as the index of anther vector thereby fetching a new vector of the specific values.
 * We can also select a range of elements using :
 
-![](examples/several_elements.R)
+![](examples/vectors/several_elements.R)
 
 ## R vector: Exclude several elements
 {id: exclude-several-elements-of-a-vector}
 
-![](examples/exclude_elements.R)
+![](examples/vectors/exclude_elements.R)
 
 ## Some basic statistical functions
 {id: some-basic-statistical-functions}
@@ -62,12 +66,15 @@ Using a negative index will give you the same vector without that element
 {i: min}
 {i: max}
 
-![](examples/statistics.R)
+![](examples/vectors/statistics.R)
 
 ## 3 ways to create vectors
 {id: 3-ways-to-create-vectors}
+{i: c}
+{i: seq}
+{i: :}
 
-![](examples/create_vectors.R)
+![](examples/vectors/create_vectors.R)
 
 ## Quick graphs
 {id: quick-grapsh}
@@ -91,22 +98,6 @@ Using a negative index will give you the same vector without that element
 * Histogram of the numbers
 
 ![](examples/normal_distribution.R)
-
-## Bar plot
-{id: bar-plot}
-{i: barplot}
-
-![](examples/barplot.R)
-![](examples/barplot_vector.R)
-
-
-## Associate name with each value
-{id: associate-name-with-each-value}
-
-![](examples/associate_name.R)
-![](examples/associate_name.out)
-
-barplot this!
 
 ## Factors
 {id: factors}
@@ -139,7 +130,7 @@ barplot this!
 
 ![](examples/reuse_short_array_exact_multiple.R)
 
-![](examples/vector_multiplication.R)
+![](examples/vectors/vector_multiplication.R)
 
 ![](examples/different_length_of_arrays.R)
 
