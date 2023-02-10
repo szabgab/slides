@@ -26,23 +26,23 @@ data.frames
 ## Built-in Iris data set
 {id: built-in-iris-data-set}
 
-![](examples/built_in_iris.R)
+![](examples/data-frames/built_in_iris.R)
 
-![](examples/iris.R)
+![](examples/data-frames/iris.R)
 
 ## Load Iris dataset
 {id: load-iris-dataset}
 
-![](examples/load_iris.R)
+![](examples/data-frames/load_iris.R)
 
 
 ## Sort dataset by a column
 {id: sort-dataset-by-column}
 
-![](examples/sort_dataset_by_a_column.R)
+![](examples/data-frames/sort_dataset_by_a_column.R)
 
 ## Order dataframe by two columns (secondary sort)
 {id: order-dataframe-by-two-columns}
 
-![](examples/order_dataframe_by_two_conditions.R)
+![](examples/data-frames/order_dataframe_by_two_conditions.R)
 

@@ -80,13 +80,13 @@ Using a negative index will give you the same vector without that element
 {id: r-sequences-and-ranges}
 {i: seq}
 
-![](examples/seq.R)
+![](examples/vectors/seq.R)
 
 ## Range of numbers
 {id: range-of-numbers}
 {i: :}
 
-![](examples/range_of_numbers.R)
+![](examples/vectors/range_of_numbers.R)
 
 
 
@@ -107,7 +107,7 @@ Using a negative index will give you the same vector without that element
 
 Showing the indexes of the elements that are TRUE in a boolean vector
 
-![](examples/which.R)
+![](examples/vectors/which.R)
 
 
 ## Matix TBD
