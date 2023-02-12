@@ -30,6 +30,8 @@
 ## Python
 {id: github-actions-python}
 
+* A demo to show a simple task before we start learning about the YAML files from scratch
+
 ![](examples/workflows/python.yml)
 
 ![](examples/requirements.txt)
