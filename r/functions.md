@@ -27,3 +27,12 @@ function_name = function(arg1, arg2, arg3) {
 ![](examples/functions/distance_function.R)
 
 
+## Recursive Fibonacci
+{id: recursive-fibonacci}
+
+![](examples/functions/fibonacci_recursive.R)
+
+## Fibonacci
+{id: fibonacci}
+
+![](examples/functions/fibonacci.R)

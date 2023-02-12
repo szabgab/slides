@@ -25,3 +25,10 @@
 
 ![](examples/other/if.R)
 
+
+## for loop
+{id: for-loop}
+{i: for}
+{i: in}
+
+![](examples/other/for.R)

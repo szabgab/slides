@@ -61,8 +61,6 @@ matrix - same idea as a data.frame but all values are the same class (type)
 Iris database (Petal, Sepal)
 http://www.lac.inpe.br/~rafael.santos/Docs/CAP394/WholeStory-Iris.html
 
-install.packages("here")
-library(here)
 
 "rowname" or index of each row in a data.frame
 

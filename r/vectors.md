@@ -195,4 +195,8 @@ Showing the indexes of the elements that are TRUE in a boolean vector
 
 ![](examples/factor.R)
 
+## Append to end of vector
+{id: append-to-end-of-vector}
+
+![](examples/vectors/append.R)
 
