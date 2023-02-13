@@ -14,6 +14,21 @@ jobs:
     - name: Run shell
       run: |
         echo "OK for now"
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: 3.11
+
+    - name: Install dependencies
+      run: |
+        pip install -r requirements.txt
+
+    - name: Check Python version
+      run: python -V
+
+    - name: Test with pytest
+      run: ./generate_slides.py
+
 
   #crystal:
   #  runs-on: ubuntu-latest
