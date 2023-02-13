@@ -8,12 +8,23 @@ jobs:
   ci:
     runs-on: ubuntu-latest
     steps:
+
+    - name: Checkout slider-py
+      uses: actions/checkout@v3
+      with:
+        repository: 'git@github.com:szabgab/slider-py.git'
+        path: slider-py
+
+
     - name: Checkout this repo
       uses: actions/checkout@v3
+      with:
+        path: slides
 
     - name: Run shell
       run: |
         echo "OK for now"
+
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
@@ -21,13 +32,15 @@ jobs:
 
     - name: Install dependencies
       run: |
-        pip install -r requirements.txt
+        pip install -r slides/requirements.txt
 
     - name: Check Python version
       run: python -V
 
-    - name: Test with pytest
-      run: ./generate_slides.py
+    - name: Generate slides
+      run: |
+        cd slides
+        ./generate_slides.py
 
 
   #crystal:
