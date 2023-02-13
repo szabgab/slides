@@ -24,6 +24,7 @@ jobs:
     - name: Run shell
       run: |
         echo "OK for now"
+        ls -l
 
     - name: Set up Python
       uses: actions/setup-python@v4
@@ -40,6 +41,7 @@ jobs:
     - name: Generate slides
       run: |
         cd slides
+        pwd
         ./generate_slides.py
 
 
