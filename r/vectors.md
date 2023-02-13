@@ -20,6 +20,12 @@
 
 ![](examples/vectors/data_types_vectors.R)
 
+## One element vector is the same a single value
+{id: one-element-vector}
+
+![](examples/vectors/one_element_vector.R)
+![](examples/vectors/one_element_vector.out)
+
 ## Sum of values in vectors
 {id: sum-of-values-in-vectors}
 
