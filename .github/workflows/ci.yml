@@ -24,7 +24,10 @@ jobs:
     - name: Run shell
       run: |
         echo "OK for now"
+        pwd
         ls -l
+        ls -l slides/
+        ls -l slider-py/
 
     - name: Set up Python
       uses: actions/setup-python@v4
@@ -33,6 +36,7 @@ jobs:
 
     - name: Install dependencies
       run: |
+        pip install -r slider-py/requirements.txt
         pip install -r slides/requirements.txt
 
     - name: Check Python version
