@@ -31,7 +31,7 @@ jobs:
           #pip install flask-httpauth
           #pip install pytest
           #pip install pytest-flake8
-          pip install requirements.txt
+          pip install -r requirements.txt
           python -V
 
     - name: Regular Tests
