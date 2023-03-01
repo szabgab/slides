@@ -500,15 +500,65 @@ $ docker run --rm  mydocker https://code-maven.com/
 
 ![](examples/curl-runner/Dockerfile)
 
+{aside}
+By default if you run a container based on this image, Docker will execute a command which is a combination of the ENTRYPOING + CMD.
+
+However, on the command-line where you call `docker run`, you can provide a replacement for the CMD part.
+{/aside}
+
+* Build the image:
+
 ```
 $ docker build -t mydocker .
+```
+
+* Running container this way will execute `curl --silent https://httpbin.org/get`
+
+```
 $ docker run --rm  mydocker
+```
+
+* The user can replace the CMD part, so if we run this command, docker will execude `curl https://szabgab.com/`
+
+```
 $ docker run --rm  mydocker https://szabgab.com/
 ```
 
 * [ENTRYPOINT](https://docs.docker.com/engine/reference/builder/#entrypoint)
 * [CMD](https://docs.docker.com/engine/reference/builder/#cmd)
 
+## Docker and environment variables with ENV
+{id: docker-with-environment-variables}
+{i: ENV}
+{i: --env}
+
+![](examples/env/Dockerfile)
+
+{aside}
+We can declare environment variables and give them values inside the Docker file using the ENV keyword.
+
+When running docker we can override these and provide other environment varibles using the `--env` command-line parameter.
+{/aside}
+
+
+```
+docker build -t mydocker .
+```
+
+```
+$ docker run --rm mydocker
+Foo
+```
+
+```
+$ docker run --rm --env SECOND=Bar mydocker
+Foo Bar
+```
+
+```
+$ docker run --rm --env SECOND=Bar --env FIRST=Peti qqrq
+Peti Bar
+```
 
 ## Docker with crontab
 {id: docker-with-crontab}
