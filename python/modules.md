@@ -322,6 +322,23 @@ In this case the change in the behavior of division is only visible in the divis
 ![](examples/modules/import_multiple_times/code.out)
 
 
+## Do not import *
+{id: do-not-import-everything}
+
+* Despite the examples you can use in various places, I'd recommend never to import "everything" using `*`.
+
+```
+from one import *
+from two import *
+
+
+run()
+```
+
+* Where does `run()` come from?
+* What if both moduldes have the `run()` function? Then the order of the import will be important.
+* What if the `one` has the `run()` function, but a new version of `two` also adds one?
+
 
 ## Exercise: Number guessing
 {id: exercise-number-guessing-game-with-modules}
