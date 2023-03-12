@@ -1,2 +1,3 @@
 PyYAML
 jinja2
+-r ../slider-py/requirements.txt
