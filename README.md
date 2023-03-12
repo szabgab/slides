@@ -10,6 +10,12 @@ The original source is on [GitHub](https://github.com/szabgab/slides)
 Processing assumes https://github.com/szabgab/slider-py is cloned next to this directory.
 
 ```
+virtuelenv -p python3 venv
+. venv/bin/activate
+pip install -r ../slider-py/requirements.txt
+```
+
+```
 python ../slider-py/slider/__init__.py --md linux-intro/intro.md --html --dir html --templates templates/ --static static/
 ```
 
