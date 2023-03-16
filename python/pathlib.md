@@ -1,5 +1,5 @@
-# Path
-{id: path}
+# Pathlib
+{id: pathlib}
 
 ## Pathlib example
 {id: pathlib-example}

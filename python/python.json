@@ -29,7 +29,7 @@
         "math.md",
         "sys.md",
         "os.md",
-        "path.md",
+        "pathlib.md",
         "shutil.md",
         "time.md",
         "datetime.md",
