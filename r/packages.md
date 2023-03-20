@@ -24,6 +24,13 @@ This will install the "csv" package in the "lib" folder. It will also install al
 Rscript -e 'install.packages("RUnit")'
 ```
 
+## Install several CRAN packages from the command line
+{id: install-several-cran-packages-from-the-command-line}
+
+```
+Rscript -e 'install.packages(c("RUnit", "zoo"))'
+```
+
 
 ## Read CSV file
 {id: read-csv-file}
