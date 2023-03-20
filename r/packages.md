@@ -1,5 +1,5 @@
 # Packages
-{i: packages}
+{id: packages}
 
 ## CRAN
 {id: cran}
@@ -16,6 +16,13 @@ $ R
 ```
 
 This will install the "csv" package in the "lib" folder. It will also install all the dependencies.
+
+## Install CRAN packages from the command line
+{id: install-cran-packages-from-the-command-line}
+
+```
+Rscript -e 'install.packages("RUnit")'
+```
 
 
 ## Read CSV file
