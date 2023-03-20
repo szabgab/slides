@@ -131,7 +131,7 @@ docker run -it --name ubu ubuntu:20.04
 docker ps -a
 ```
 
-## Rerun stopped instance
+## Rerun (restart) stopped instance
 {id: rerun-stopped-instance}
 {i: container}
 {i: start}
