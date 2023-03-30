@@ -434,6 +434,12 @@ Try your environment:
 
 ![](examples/numbers/float_precision_rounded.py)
 
+## round
+{id: round}
+{i: round}
+
+![](examples/numbers/round.py)
+
 
 ## Value Types in Numpy
 {id: value-types}
