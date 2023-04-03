@@ -1,5 +1,5 @@
-print(2 < 3)      # True
-print("2" < "3")  # True
+print(1 < 2)      # True
+print("1" < "2")  # True
 
 
 print(2 < 11)      # True

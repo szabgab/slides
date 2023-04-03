@@ -6,13 +6,15 @@ if x < y:
 
 # x is less than y
 
-x = "מלון"
-y = "בלון"
+z = "מלון"
+q = "בלון"
 
-if x < y:
-    print(f"{x} in x is less than {y}")
+if z < q:
+    print(f"{z} in z is less than {q}")
 else:
-    print(f"{y} in y is less than {x}")
+    print(f"{q} in q is less than {z}")
+
+print(x < z)
 
 
 x = "👸"
