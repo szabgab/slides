@@ -167,13 +167,18 @@ If we then assign some other string to either of the variables, then they will p
 ![](examples/strings/index.py)
 ![](examples/strings/index.out)
 
-
 ## index in string with range
 {id: index-in-string-range}
 {i: index}
 
 ![](examples/strings/index2.py)
 ![](examples/strings/index2.out)
+
+## Find all in the string
+{id: find-all-in-the-string}
+
+Later, when we learned loops.
+
 
 
 ## rindex in string with range
@@ -193,11 +198,6 @@ Alternatively use find and rfind that will return -1 instead of raising an excep
 
 ![](examples/strings/find.py)
 
-
-## Find all in the string
-{id: find-all-in-the-string}
-
-Later, when we learned loops.
 
 
 ## in string
