@@ -1,4 +1,4 @@
-# Formatted printing
+# Formatted strings
 {id: format}
 
 ## format - sprintf
@@ -15,7 +15,7 @@
 
 * When using % to print more than one value, put the values in parentheses forming a tuple.
 * In version 2.6 and below you need to write {0} {1} etc, as a placeholder of the format method.
-* f-string are from Python 3.6
+* f-strings were added in Python 3.6 (released on 2016-12-23)
 
 
 ## printf using old %-syntax
@@ -23,7 +23,8 @@
 {i: printf}
 {i: %}
 
-This slides is here only as a historical page. It is recommended to use the **format** method!
+* This slide is here only as a historical page so when you see the older ways of writing you'll know what you see.
+* It is recommended to use **f-strings** or if those cannot be used for some reason then use the **format** method.
 
 ![](examples/format/printf.py)
 
@@ -50,6 +51,7 @@ Focus on the output of the two print statements.
 ## Examples using format - alignment
 {id: format-alignment}
 {i: format}
+
 ![](examples/format/formatted_alignment.py)
 
 
@@ -57,6 +59,7 @@ Focus on the output of the two print statements.
 {id: format-as-string}
 {i: format}
 {i: :s}
+
 ![](examples/format/formatted_string.py)
 ![](examples/format/formatted_string.out)
 
@@ -143,7 +146,7 @@ Anything that is not in curly braces will be formatted as they are.
 ![](examples/format/print_binary.py)
 ![](examples/format/print_octal.py)
 ![](examples/format/print_hexa.py)
- 
+
 ## Examples using format with attributes of objects
 {id: format-attributes}
 
@@ -159,6 +162,4 @@ This is also a rather strange example, I don't think I'd use it in real code.
 
 ![](examples/format/fr.py)
 ![](examples/format/fr.out)
-
-
 
