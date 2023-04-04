@@ -114,19 +114,35 @@ pytest -s test_random_loop.py
 ## Duplicate input call
 {id: duplicate-input-call}
 
+* Ask the user what is their ID number.
+* Check if it is a valid ID number. (To make our code more simple we only check the length of the string.)
+* Ask again if it was not a valid number.
+
+![](examples/loops/duplicate_input_call_with_if.py)
+
+* Realize, that if the user types in an incorrect string for the 2nd time, our code does not check it.
+
+## Duplicate input call with loop
+{id: duplicate-input-call-with-loop}
+
+* A `while` loop would be a better solution.
+* This works, but now we have duplicated the `input` call and the text is different in the two cases. [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)
+* We can't remove the first call of `input` as we need the `id_str` variable in the condition of the `while` already.
+
 ![](examples/loops/duplicate_input_call.py)
 
 ## Eliminate duplicate input call
 {id: eliminate-duplicate-input-call}
 
-![](examples/loops/single_input_call.py)
+* We can use the `while True` construct to avoid this duplication.
 
+![](examples/loops/single_input_call.py)
 
 ## do while loop
 {id: do-while-loop}
 {i: do while}
 
-There is no `do ... while` in Python but we can write code like this to have similar effect.
+* There is no `do ... while` in Python but we can write code like this to have similar effect.
 
 ![](examples/loops/do_while.py)
 
@@ -159,20 +175,6 @@ The `else` part will be executed if the loop finished all the iterations without
 
 ![](examples/loops/for-else.py)
 ![](examples/loops/for-else.out)
-
-
-## Exit vs return vs break and continue
-{id: exit-return-break}
-{i: exit}
-{i: return}
-{i: break}
-{i: continue}
-
-* **exit** will stop your program no matter where you call it.
-* **return** will return from a function (it will stop the specific function only)
-* **break** will stop the current "while" or "for" loop
-* **continue** will stop the current iteration of the current "while" or "for" loop
-
 
 
 ## Exercise: Print all the locations in a string

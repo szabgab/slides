@@ -40,6 +40,8 @@ and a compiler or interpreter that can translate this program to the computer.
 * Python 2.x - old, legacy code at companies, answers on the Internet. Retires on January 1, 2020.
 * Python 3.x - the one that you should use. (not fully backward compatible) Available since December 3, 2008.
 
+* [Releases of Python versions](https://devguide.python.org/versions/)
+
 {aside}
 Python has two major lines the version 2.x and the version 3.x. In a nutshell you **should** always use Python 3 if possible.
 
