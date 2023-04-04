@@ -223,12 +223,12 @@ Level 4
 * Create a file called **number_guessing_game_4.py**
 * Soon we'll have a level in which the hidden value changes after each guess. In order to make that mode easier to track and debug, first we would like to have a "debug mode".
 * If the user presses 'd' the game gets into "debug mode": the system starts to show the current number to guess every time, just before asking the user for new input.
-* Pressing 'd' again turns off debug mode. (It is a toggle each press on "d" changes the value to to the other possible value.)
+* Pressing 'd' again turns off debug mode. (It is a toggle each press on 'd' changes the value to to the other possible value.)
 
 Level 5
 
 * Create a file called **number_guessing_game_5.py**
-* The 'm' button is another toggle. It is called 'move mode'. When it is 'on', the hidden number changes a little bit after every step (+/-2). Pressing 'm' again will turn this feature off.
+* The 'm' button is another toggle. It is called 'move mode'. When it is 'on', the hidden number changes a little bit after every step (+/-2). That is, it is chaning by one of the following: -2, -1, 0, 1, 2. Pressing 'm' again will turn this feature off.
 
 Level 6
 

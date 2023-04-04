@@ -467,6 +467,12 @@ Python 2 puts the numbers first in numerical order and then the strings in ASCII
 [42, 100, 'bar', 'foo']
 ```
 
+## sort mixed values fixed with str
+{id: sort-mixed-fixed-with-str}
+
+![](examples/lists/sort_mixed_with_str.py)
+
+
 ## sorting with sorted
 {id: sorted}
 {i: sorted}
