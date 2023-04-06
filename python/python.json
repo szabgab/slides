@@ -93,6 +93,7 @@
         "advanced-functions.md",
         "function-arguments.md",
         "packages.md",
+        "distribution.md",
         "distribute.md",
         "ctypes.md",
         "advanced-oop.md",
