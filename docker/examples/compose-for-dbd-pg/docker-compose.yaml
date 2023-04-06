@@ -1,0 +1,27 @@
+version: '3.8'
+services:
+  client:
+    build: .
+    volumes:
+    - .:/opt
+    links:
+    - mypostgres
+    command: tail -f /dev/null
+    working_dir: /opt
+    environment:
+      AUTHOR_TESTING: 1
+      RELEASE_TESTING: 1
+      DBI_DSN: "dbi:Pg:dbname=test_db;host=mypostgres"
+      DBI_PASS: secret
+      DBI_USER: test_user
+  mypostgres:
+    image: postgres:15.2
+    environment:
+      POSTGRES_USER: test_user
+      POSTGRES_PASSWORD: secret
+      POSTGRES_DB: test_db
+    volumes:
+      - database-data:/var/lib/postgresql/data/
+
+volumes:
+  database-data:
