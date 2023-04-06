@@ -28,6 +28,7 @@ python -m demo1
 python
 >>> import demo1
 >>> demo1.whoami()
+```
 
 * Uninstall (without asking questions)
 
@@ -46,16 +47,24 @@ pip uninstall demo1 --yes
 ![](examples/distribution/demo2/demo2b.py)
 ![](examples/distribution/demo2/setup.py)
 
+
+* Install:
+
 ```
 pip install .
 ```
 
-python -m demo2a
+* Use the name of the module
 
+```
+python -m demo2b
+```
 
+* Uninstall using the package name
 
-
-python -m demo2a
+```
+pip uninstall demo2a --yes
+```
 
 ## Distribution demo 3
 {id: demo3}
