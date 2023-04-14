@@ -19,9 +19,11 @@
 * [GitHub GraphQL API](https://docs.github.com/en/graphql)
 
 ```
-pip install gql aiohttp
+pip install gql[all]
 ```
 
 ![](examples/github-graphql/login.py)
 ![](examples/github-graphql/login.out)
 
+![](examples/github-graphql/list_repositories_by_username.py)
+![](examples/github-graphql/list_repositories_by_username.json)

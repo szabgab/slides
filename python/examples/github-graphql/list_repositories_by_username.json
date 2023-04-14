@@ -1,0 +1,49 @@
+{
+    "repositoryOwner": {
+        "repositories": {
+            "totalCount": 5,
+            "edges": [
+                {
+                    "node": {
+                        "id": "R_kgDOGSKE7A",
+                        "name": "cm-demo",
+                        "isPrivate": false,
+                        "description": "Config files for my GitHub profile."
+                    }
+                },
+                {
+                    "node": {
+                        "id": "R_kgDOIx8BIw",
+                        "name": "cm-demo.github.io-osdc-2023-01-public",
+                        "isPrivate": false,
+                        "description": null
+                    }
+                },
+                {
+                    "node": {
+                        "id": "R_kgDOI4Gftw",
+                        "name": "cm-demo.github.io-osdc-2023-01-perl",
+                        "isPrivate": false,
+                        "description": null
+                    }
+                },
+                {
+                    "node": {
+                        "id": "R_kgDOJNSvyA",
+                        "name": "cm-demo.github.io-osdc-2023-03-azrieli-",
+                        "isPrivate": false,
+                        "description": null
+                    }
+                },
+                {
+                    "node": {
+                        "id": "R_kgDOJWTJHw",
+                        "name": "osdc-2023-03-azrieli",
+                        "isPrivate": false,
+                        "description": "OSDC at Azriel College starting in 2023.03"
+                    }
+                }
+            ]
+        }
+    }
+}
