@@ -1,0 +1,12 @@
+query {
+  repositoryOwner(login: "cm-demo") {
+    repositories(first: 5, privacy: PUBLIC) {
+      totalCount
+      edges {
+        node {
+          id, name, isPrivate, description
+        }
+      }
+    }
+  }
+}

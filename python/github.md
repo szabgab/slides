@@ -22,8 +22,22 @@
 pip install gql[all]
 ```
 
-![](examples/github-graphql/login.py)
-![](examples/github-graphql/login.out)
+## GitHub GraphQL execute query
+{id: github-graphql-execute-query}
 
-![](examples/github-graphql/list_repositories_by_username.py)
+![](examples/github-graphql/run_query.py)
+
+## GitHub GraphQL who am i
+{id: github-graphql-login}
+
+* Get the username of who provided the token
+
+![](examples/github-graphql/login.gql)
+![](examples/github-graphql/login.json)
+
+## GitHub GraphQL list of repositories by username
+{id: github-graphql-list-of-repositories-by-username}
+
+![](examples/github-graphql/list_repositories_by_username.gql)
+
 ![](examples/github-graphql/list_repositories_by_username.json)
