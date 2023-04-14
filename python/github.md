@@ -41,3 +41,11 @@ pip install gql[all]
 ![](examples/github-graphql/list_repositories_by_username.gql)
 
 ![](examples/github-graphql/list_repositories_by_username.json)
+
+## GitHub GraphQL list issues by username
+{id: github-graphql-list-issues-by-username}
+
+![](examples/github-graphql/list_issues_by_username.gql)
+
+![](examples/github-graphql/list_issues_by_username.json)
+

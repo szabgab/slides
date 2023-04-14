@@ -1,0 +1,149 @@
+{
+    "user": {
+        "issues": {
+            "totalCount": 50,
+            "edges": [
+                {
+                    "node": {
+                        "number": 8,
+                        "title": "Check if package has link to Issues?",
+                        "state": "CLOSED",
+                        "createdAt": "2020-11-02T19:06:04Z",
+                        "url": "https://github.com/szabgab/CPAN-Digger/issues/8",
+                        "repository": {
+                            "owner": {
+                                "login": "szabgab"
+                            }
+                        }
+                    }
+                },
+                {
+                    "node": {
+                        "number": 9,
+                        "title": "Check if meta data contains the license field?",
+                        "state": "CLOSED",
+                        "createdAt": "2020-11-02T19:06:28Z",
+                        "url": "https://github.com/szabgab/CPAN-Digger/issues/9",
+                        "repository": {
+                            "owner": {
+                                "login": "szabgab"
+                            }
+                        }
+                    }
+                },
+                {
+                    "node": {
+                        "number": 6051,
+                        "title": "Hint how to unlock exercises",
+                        "state": "OPEN",
+                        "createdAt": "2021-10-21T11:43:51Z",
+                        "url": "https://github.com/exercism/exercism/issues/6051",
+                        "repository": {
+                            "owner": {
+                                "login": "exercism"
+                            }
+                        }
+                    }
+                },
+                {
+                    "node": {
+                        "number": 20,
+                        "title": "Add CPANcover data",
+                        "state": "CLOSED",
+                        "createdAt": "2022-12-06T04:46:24Z",
+                        "url": "https://github.com/szabgab/CPAN-Digger/issues/20",
+                        "repository": {
+                            "owner": {
+                                "login": "szabgab"
+                            }
+                        }
+                    }
+                },
+                {
+                    "node": {
+                        "number": 1,
+                        "title": "Misunderstood .gitignore?",
+                        "state": "CLOSED",
+                        "createdAt": "2022-12-30T05:02:13Z",
+                        "url": "https://github.com/x-lamprocapnos-x/Movie-Selector/issues/1",
+                        "repository": {
+                            "owner": {
+                                "login": "x-lamprocapnos-x"
+                            }
+                        }
+                    }
+                },
+                {
+                    "node": {
+                        "number": 3,
+                        "title": "Verify project URLs in the individual json files",
+                        "state": "CLOSED",
+                        "createdAt": "2023-02-08T12:59:29Z",
+                        "url": "https://github.com/OSDC-Code-Maven/osdc-site-generator/issues/3",
+                        "repository": {
+                            "owner": {
+                                "login": "OSDC-Code-Maven"
+                            }
+                        }
+                    }
+                },
+                {
+                    "node": {
+                        "number": 1,
+                        "title": "The __pycache__ folder should not be in git",
+                        "state": "CLOSED",
+                        "createdAt": "2023-02-12T14:38:30Z",
+                        "url": "https://github.com/zguillez/python-toolz/issues/1",
+                        "repository": {
+                            "owner": {
+                                "login": "zguillez"
+                            }
+                        }
+                    }
+                },
+                {
+                    "node": {
+                        "number": 1,
+                        "title": "Move all the data from the other 3 repositories",
+                        "state": "OPEN",
+                        "createdAt": "2023-03-05T07:44:06Z",
+                        "url": "https://github.com/OSDC-Code-Maven/open-source-by-organizations/issues/1",
+                        "repository": {
+                            "owner": {
+                                "login": "OSDC-Code-Maven"
+                            }
+                        }
+                    }
+                },
+                {
+                    "node": {
+                        "number": 1823,
+                        "title": "Flake error B031 caused by new release flake8-bugbear",
+                        "state": "CLOSED",
+                        "createdAt": "2023-03-10T12:04:24Z",
+                        "url": "https://github.com/pallets/jinja/issues/1823",
+                        "repository": {
+                            "owner": {
+                                "login": "pallets"
+                            }
+                        }
+                    }
+                },
+                {
+                    "node": {
+                        "number": 6378,
+                        "title": "How to setup local dev environment and run the tests?",
+                        "state": "OPEN",
+                        "createdAt": "2023-03-11T17:22:01Z",
+                        "url": "https://github.com/psf/requests/issues/6378",
+                        "repository": {
+                            "owner": {
+                                "login": "psf"
+                            }
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}

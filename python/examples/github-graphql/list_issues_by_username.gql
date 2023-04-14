@@ -1,0 +1,17 @@
+query {
+  user(login: "szabgab") {
+    issues(first: 10, filterBy: {since: "2023-03-20T00:00:00Z"}) {
+      totalCount
+      edges {
+        node {
+          number, title, state, createdAt, url, repository {
+            owner {
+              login
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
