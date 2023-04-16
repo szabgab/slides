@@ -80,7 +80,7 @@ There are many ways to deal with Excel files as well.
 {id: read-and-analyze-a-text-file}
 
 ![](examples/files/text_report.txt)
-![](examples/files/read_report.txt)
+![](examples/files/read_report.py)
 
 
 
