@@ -11,7 +11,7 @@ print('Foo' in user)    # False
 
 for attr in ['fname', 'email', 'lname']:
     if attr in user:
-        print("{} => {}".format(attr, user[attr]))
+        print(f"{attr} => {user[attr]}")
 
 # fname => Foo
 # lname => Bar

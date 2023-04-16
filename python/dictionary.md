@@ -33,12 +33,25 @@
 {i: dict}
 {i: {}}
 
+* We can start from an empty dictionary and then fill it witg key-value pairs.
+
 ![](examples/dictionary/dict.py)
+
+## Create dictionary
+{id: create-dictionary-with-data}
+
+* We can also start with a dictionary that already has some data in it.
+
+![](examples/dictionary/create_dictionary.py)
 
 
 ## keys
 {id: dictionary-keys}
 {i: keys}
+
+* Sometimes we don't know up front what keys we might have
+
+![](examples/dictionary/planets.txt)
 
 ![](examples/dictionary/keys.py)
 
@@ -550,7 +563,7 @@ Generate random DNA sequence
 
 * A bit like an immutable dictionary
 
-![examples/dictinoary/namedtuple.py)
+![](examples/dictinoary/namedtuple.py)
 
 ## Create dictionary from List
 {id: create-dictionary-from-list}

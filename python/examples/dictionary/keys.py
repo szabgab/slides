@@ -1,12 +1,21 @@
-user = {
-   'fname': 'Foo',
-   'lname': 'Bar',
-}
+import sys
 
-print(user)   # {'lname': 'Bar', 'fname': 'Foo'}
+if len(sys.argv) != 2:
+    exit(f"Usage: {sys.argv[0]} FILENAME")
 
-user['email'] = 'foo@bar.com'
+filename = sys.argv[1]
 
-print(user.keys())        # dict_keys(['fname', 'lname', 'email'])
-print(list(user.keys()))  # ['fname', 'lname', 'email']
+planets = {}
+with open(filename) as fh:
+    for row in fh:
+        row = row.rstrip("\n")
+        # print(row)
+        planet, distance = row.split(":")
+        # print(planet)
+        planets[planet] = distance
+
+print(planets) #
+
+print(planets.keys())        #
+print(list(planets.keys()))  #
 
