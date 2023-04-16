@@ -563,7 +563,7 @@ Generate random DNA sequence
 
 * A bit like an immutable dictionary
 
-![](examples/dictinoary/namedtuple.py)
+![](examples/dictionary/namedtuple.py)
 
 ## Create dictionary from List
 {id: create-dictionary-from-list}
