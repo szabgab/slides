@@ -558,7 +558,7 @@ or this: `os.system("rm -f calculator_eval.py")` and on windows it would be `os.
 
 ![](examples/basics/check_python.py)
 
-## Example using Command line arguments
+## STDIN vs Command line arguments
 {id: example-using-command-line-arguments}
 
 {aside}
@@ -567,8 +567,19 @@ If we run this script without any command-line parameters it will print out usag
 If we give it two parameters it will treat the first one as the name of an input file and the second as the name of an output file.
 {/aside}
 
-![](examples/basics/convert_argv.py)
+* First try this; Then repeate. We must type in the same path again and again. Boring and error-prone.
+
 ![](examples/basics/convert_stdin.py)
+
+* We could use a Tk-based dialog:
+* Still boring (though maybe less error-prone)
+
+![](examples/basics/convert_with_tk_dialog.py)
+
+* The command line has
+* History!
+
+![](examples/basics/convert_argv.py)
 
 ## Command line arguments
 {id: command-line-arguments}
