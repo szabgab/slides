@@ -14,8 +14,8 @@ the Excel and Word programs for the appropriate files. Some image viewer applica
 VLC to look at an mp4. Some application to hear the content of mp3 files.
 {/aside}
 
-* Text: .txt, csv, .py, .pl, ..., HTML , XML, YAML, JSON
-* Binary: Images, Zip files, Word, Excel, .exe, mp3, mp4
+* Text: Can make sense when opened with Notepad: .txt, csv, .py, .pl, ..., HTML , XML, YAML, JSON
+* Binary: Need specialized tool to make sense of it: Images, Zip files, Word, Excel, .exe, mp3, mp4
 
 {aside}
 In Python you have specialized modules for each well-knonw binary type to handle the files of that format. Text files on the other
@@ -50,7 +50,7 @@ This is just a quick example how to use the Pillow module to handle images. Ther
 
 * [Pillow](https://pillow.readthedocs.io/en/stable/)
 
-![](examples/pil/get_image_size.py)
+![](examples/pil/resize_image_demo.py)
 
 ```
 python examples/pil/get_image_size.py examples/pil/first.png
@@ -68,6 +68,12 @@ There are many ways to deal with Excel files as well.
 * [openpyxl](https://openpyxl.readthedocs.io/en/stable/)
 
 ![](examples/excel/read_any_excel.py)
+
+## Reading a YAML file
+{id: reading-a-yaml-file}
+
+![](examples/yaml/data.yaml)
+![](examples/yaml/read_yaml.py)
 
 
 ## Open and read file (easy but not recommended)
