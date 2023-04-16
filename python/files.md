@@ -76,6 +76,14 @@ There are many ways to deal with Excel files as well.
 ![](examples/yaml/read_yaml.py)
 
 
+## Read and analyze a text file
+{id: read-and-analyze-a-text-file}
+
+![](examples/files/text_report.txt)
+![](examples/files/read_report.txt)
+
+
+
 ## Open and read file (easy but not recommended)
 {id: open-and-read}
 
