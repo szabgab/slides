@@ -1,0 +1,163 @@
+{
+    "viewer": {
+        "repositories": {
+            "totalCount": 470,
+            "pageInfo": {
+                "hasNextPage": true,
+                "endCursor": "Y3Vyc29yOnYyOpHOACAlgw=="
+            },
+            "edges": [
+                {
+                    "node": {
+                        "name": "whitecamel.org"
+                    }
+                },
+                {
+                    "node": {
+                        "name": "perl6-in-perl5"
+                    }
+                },
+                {
+                    "node": {
+                        "name": "test-snapshots"
+                    }
+                },
+                {
+                    "node": {
+                        "name": "padre-plugin-debugger"
+                    }
+                },
+                {
+                    "node": {
+                        "name": "Math-RPN"
+                    }
+                },
+                {
+                    "node": {
+                        "name": "perl6-conf"
+                    }
+                },
+                {
+                    "node": {
+                        "name": "the-driver"
+                    }
+                },
+                {
+                    "node": {
+                        "name": "Rehovot.pm"
+                    }
+                },
+                {
+                    "node": {
+                        "name": "CPAN-Forum"
+                    }
+                },
+                {
+                    "node": {
+                        "name": "test-runner"
+                    }
+                },
+                {
+                    "node": {
+                        "name": "test-class"
+                    }
+                },
+                {
+                    "node": {
+                        "name": "perl-android-scripts"
+                    }
+                },
+                {
+                    "node": {
+                        "name": "perl-promotion"
+                    }
+                },
+                {
+                    "node": {
+                        "name": "prestool"
+                    }
+                },
+                {
+                    "node": {
+                        "name": "pdf-create"
+                    }
+                },
+                {
+                    "node": {
+                        "name": "pdf6"
+                    }
+                },
+                {
+                    "node": {
+                        "name": "try.rakudo.org"
+                    }
+                },
+                {
+                    "node": {
+                        "name": "CPAN-Digger-old"
+                    }
+                },
+                {
+                    "node": {
+                        "name": "peg"
+                    }
+                },
+                {
+                    "node": {
+                        "name": "Hypolit"
+                    }
+                },
+                {
+                    "node": {
+                        "name": "topposters"
+                    }
+                },
+                {
+                    "node": {
+                        "name": "Bailador"
+                    }
+                },
+                {
+                    "node": {
+                        "name": "git_experiments"
+                    }
+                },
+                {
+                    "node": {
+                        "name": "Code-Explain"
+                    }
+                },
+                {
+                    "node": {
+                        "name": "Code-Explain-Web"
+                    }
+                },
+                {
+                    "node": {
+                        "name": "CGI--Simple"
+                    }
+                },
+                {
+                    "node": {
+                        "name": "Prima"
+                    }
+                },
+                {
+                    "node": {
+                        "name": "Test-Version"
+                    }
+                },
+                {
+                    "node": {
+                        "name": "dwimmer"
+                    }
+                },
+                {
+                    "node": {
+                        "name": "Text-Trac"
+                    }
+                }
+            ]
+        }
+    }
+}

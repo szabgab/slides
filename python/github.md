@@ -35,6 +35,15 @@ pip install gql[all]
 ![](examples/github-graphql/login.gql)
 ![](examples/github-graphql/login.json)
 
+
+## GitHub GraphQL list my repositories
+{id: github-graphql-list-my-repositories}
+
+![](examples/github-graphql/list_my_repositories.gql)
+
+![](examples/github-graphql/list_my_repositories.json)
+
+
 ## GitHub GraphQL list of repositories by username
 {id: github-graphql-list-of-repositories-by-username}
 
@@ -48,4 +57,24 @@ pip install gql[all]
 ![](examples/github-graphql/list_issues_by_username.gql)
 
 ![](examples/github-graphql/list_issues_by_username.json)
+
+## GitHub GraphQL list issues using parameter
+{id: github-graphql-list-issues-using-parameter}
+
+![](examples/github-graphql/list_issues_using_parameter.py)
+
+## GitHub GraphQL activities
+{id: github-graphql-activities}
+
+* List all the activities of a user in a time-range
+
+* List all the PRs created by a user in a time-range
+* All the issues opened / commented on / closed
+* All the commits
+
+* All the activities of a list of users in a time-range
+
+
+* Get a list of projects written in python, that have between 2-5 stars and were updated in the last 5 weeks.
+* Given a repository list all the changes that are were done in all the forks.
 
