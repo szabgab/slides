@@ -1,0 +1,20 @@
+query($username:String!) {
+  user(login: $username) {
+    contributionsCollection {
+      contributionCalendar {
+        totalContributions
+        weeks {
+          contributionDays {
+            contributionCount
+            weekday
+            date
+          }
+        }
+      }
+    }
+  }
+}
+
+{
+  "username": "szabgab"
+}

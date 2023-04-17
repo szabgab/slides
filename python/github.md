@@ -18,6 +18,9 @@
 
 * [GitHub GraphQL API](https://docs.github.com/en/graphql)
 
+* [Scalars](https://docs.github.com/en/graphql/reference/scalars) (types)
+* String!  means the field is string that cannot be null.
+
 ```
 pip install gql[all]
 ```
@@ -63,12 +66,38 @@ pip install gql[all]
 
 ![](examples/github-graphql/list_issues_using_parameter.py)
 
+## GitHub GraphQL list issues using several parameters
+{id: github-graphql-list-issues-using-several-parameters}
+
+![](examples/github-graphql/list_issues_many_parameters.py)
+
+## GitHub GraphQL contribution counts
+{id: github-graphql-contribution-counts}
+
+![](examples/github-graphql/countributions_count.gql)
+
+* Defaults to the last 1 year
+
+![](examples/github-graphql/countributions_count_time_range.gql)
+
+* Can set the start-date (defaults to now - 1 year)
+* Can set the end-date (defaults to start-date + 1 year)
+
+## GitHub GraphQL list Pull-Requests
+{id: github-graphql-pull-requests}
+
+* List all the PRs created by a user in a time-range
+
+![](examples/github-graphql/list_pull_requests.py)
+
+![](examples/github-graphql/list_contributions_pull_requests.py)
+
 ## GitHub GraphQL activities
 {id: github-graphql-activities}
 
+
 * List all the activities of a user in a time-range
 
-* List all the PRs created by a user in a time-range
 * All the issues opened / commented on / closed
 * All the commits
 

@@ -1,0 +1,22 @@
+query($username:String!, $from:DateTime, $to:DateTime) {
+  user(login: $username) {
+    contributionsCollection(from: $from, to: $to) {
+      contributionCalendar {
+        totalContributions
+        weeks {
+          contributionDays {
+            contributionCount
+            weekday
+            date
+          }
+        }
+      }
+    }
+  }
+}
+
+{
+  "username": "szabgab",
+  "from": "2013-03-20T00:00:00Z",
+  "to": "2013-04-20T00:00:00Z"
+}

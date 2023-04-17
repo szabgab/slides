@@ -3,6 +3,13 @@ import os
 from gql import gql, Client
 from gql.transport.aiohttp import AIOHTTPTransport
 import datetime
+import sys
+
+if len(sys.argv) == 2:
+    output_file = sys.argv[1]
+else:
+    output_file = None
+
 
 token = os.environ.get('MY_GITHUB_TOKEN')
 headers = {
@@ -13,17 +20,13 @@ url = "https://api.github.com/graphql"
 
 
 query = '''
-query($since:DateTime) {
-  user(login: "szabgab") {
-    issues(first: 1, filterBy: {since: $since}) {
+query($username:String!, $last:Int) {
+  user(login: $username) {
+    pullRequests(last: $last) {
       totalCount
       edges {
         node {
-          number, title, state, createdAt, url, repository {
-            owner {
-              login
-            }
-          }
+          number, title, state, createdAt, author { login }, url
         }
       }
     }
@@ -31,19 +34,21 @@ query($since:DateTime) {
 }
 '''
 
-#variables = {
-#    "since": "2023-04-10T00:00:00Z"
-#}
-
-ts = datetime.datetime.now() - datetime.timedelta(days = 10)
+ts = datetime.datetime.now() - datetime.timedelta(days = 20)
 variables = {
-    "since": ts.strftime("%Y-%m-%dT%H:%M:%SZ")
+    "username": "szabgab",
+    "last": 30,
 }
 
 transport = AIOHTTPTransport(url=url, headers=headers)
 client = Client(transport=transport, fetch_schema_from_transport=True)
 result = client.execute(gql(query), variable_values=variables)
-print(result)
+
+if output_file:
+    with open(output_file, 'w') as fh:
+        json.dump(result, fh, indent=4)
+else:
+    print(result)
 
 
 
