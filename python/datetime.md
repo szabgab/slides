@@ -90,3 +90,12 @@
 
 ![](examples/datetime/convert_datetime_to_time.py)
 
+
+## Today (date)
+{id: today}
+{i: date}
+{i: today}
+
+![](examples/datetime/today.py)
+![](examples/datetime/today.out)
+
