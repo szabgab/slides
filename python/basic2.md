@@ -313,10 +313,20 @@ In order to convert the string to numbers use the `int()` or the `float()` funct
 Whichever is appropriate in your situation.
 
 
+## Can we convert a string to int or float?
+{id: int-or-float}
+{i: isdigit}
+{i: int}
+{i: float}
+
+![](examples/basics/isdigit.py)
+![](examples/basics/isdigit.out)
+
 ## How can I check if a string can be converted to a number?
 {id: is-it-a-number}
 {i: isdecimal}
 {i: isnumeric}
+
 
 * This solution only works for integers. Not for floating point numbers.
 
