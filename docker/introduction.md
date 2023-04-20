@@ -98,8 +98,7 @@ On Linux, you might also need to follow the "Linux post installation instruction
 * Install [Docker](https://www.docker.com/)
 * [Get Docker](https://docs.docker.com/get-docker/)
 
-* Debian/Ubuntu: `apt-get install docker.io`
-* CentOS: `yum install docker`
+* Linux: Debian/Ubuntu/CentOS: Install the [Docker Engine](https://docs.docker.com/engine/install/)
 * MS Windows: Download [Docker Desktop for Windows](https://docs.docker.com/docker-for-windows/install/)
 * Mac OSX: Download [Docker for Mac OSX](https://docs.docker.com/docker-for-mac/install/)
 
@@ -126,7 +125,7 @@ That's what we are going to use.
 * Run the `cmd`
 
 
-## Docker on Linux
+## Docker on Linux and macOS
 {id: docker-on-linux}
 {i: terminal}
 
@@ -303,10 +302,18 @@ CONTAINER ID        IMAGE               COMMAND             CREATED             
 f6239f10a6ad        hello-world         "/hello"            8 seconds ago       Exited (0) 7 seconds ago                       lucid_snyder        0 B (virtual 1.84 kB)
 ```
 
+* I keep fortgeting what does that `-s` do, so I run:
+
+```
+$ docker ps --help
+```
+
 There is also an image
 
 ```
 $ docker images
+$ docker image ls
+$ docker image list
 REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
 hello-world         latest              48b5124b2768        6 weeks ago         1.84 kB
 ```
@@ -334,15 +341,17 @@ f6239f10a6ad        hello-world         "/hello"            21 minutes ago      
 
 ```
 $ docker rm 42bbb5394617
+$ docker container rm blissful_knuth
 ```
 
-Using the "CONTAINER ID" from the list given by ps.
+Using the "CONTAINER ID" or the "NAMES" from the list given by ps.
 
 ## Remove Docker image
 {id: docker-remove-image}
 
 ```
 $ docker rmi hello-world
+$ docker image rm hello-world
 ```
 
 ## Docker busybox
@@ -448,5 +457,4 @@ docker image prune -a -f
 * Run busybox.
 * Basically execute all the above commands.
 * Check what other interesting command you can find in docker.
-
 
