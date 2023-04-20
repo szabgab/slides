@@ -30,7 +30,7 @@
 
 * [Docker](https://www.docker.com/)
 
-* Un linux install the [Docker Engine](https://docs.docker.com/engine/install/)
+* On linux install the [Docker Engine](https://docs.docker.com/engine/install/)
 * MS Windows: Download [Docker Desktop for Windows](https://docs.docker.com/engine/install/)
 * macOS: Download [Docker Desktop for macOS](https://docs.docker.com/engine/install/)
 
