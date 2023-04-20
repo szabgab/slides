@@ -160,6 +160,12 @@ docker container rm ubu
 ## Linux Users
 {id: linux-users}
 
+{aside}
+If we had a full linux system we would have users, and home directories for the users.
+We would use the system as one of these users and use either `su` to switch to the root user
+or better yet `sudo` to run one-off commands as the `root` user.
+{/aside}
+
 * users (root and other users)
 * /home directory
 * su
@@ -173,55 +179,96 @@ ls /home/
 ## Linux File system - directories
 {id: linux-file-system-directories}
 
+{aside}
+On Linux (actually in the shell we user) there are many commands to deal with the filesystem.
+Some of them are listed here.
+{/aside}
+
 ```
 ls
 ls -l
 ll
+
 alias
+
+pwd
+
 cd home
 cd ..
 cd root
+
 mkdir docs
 mkdir docs/text
 mkdir documents
 mkdir xyz
+
 rmdir xyz
-cd dTAB
-pwd
+
+cd TAB
+
 ```
 
-* Create a new alias
+* `ls` list the content of a folder.
+* `alias` create aliases for commands so we won't have to type them.
+* `pwd` print (current) working directory.
+* `cd` change directory
+* `mkdir` make directory
+* `rmdir` remove directory
+* Use TAB completition where possible!
+
 
 ## Linux File system - files
 {id: linux-file-system-files}
 
 ```
-echo "text" > filename
+echo Hello World
+echo text > filename
 cat filename
-echo "more text" >> filename
-
-nano
+echo more text >> filename
 ```
 
 ## Ubuntu Installing packages
 {id: ubuntu-installing-package}
 
 ```
+nano
 htop
 apt-get update
-apt-get install htop
+apt-get install nano htop
 ```
-
 
 ## Docker with CentOS
 {id: docker-centos}
 
 ```
-docker run -it --name cent centos:7
-yum -y install epel-release
+docker run -it --name cent -w /opt centos:7
+```
+
+* To install `nano` type in the following:
+
+```
+yum install nano
+```
+
+* In order to install `htop` first we need to add EPEL (Extra Packages for Enterprise Linux)
+
+```
+yum install epel-release
 yum install htop
+```
+
+* Then we can use it
+
+```
 htop
 ```
+
+* exit and start again:
+
+```
+docker container start -i cent
+```
+
 
 ## Bashrc
 {id: bashrc}
@@ -249,6 +296,7 @@ htop
 
 ## which type
 {id: which-type}
+{i: which}
 
 ```
 which ls
@@ -264,11 +312,27 @@ type ll
 grep expression filename
 ```
 
+```
+ll /etc/apt/sources.list
+cat /etc/apt/sources.list
+grep security /etc/apt/sources.list
+grep -v security /etc/apt/sources.list
+grep '#' /etc/apt/sources.list
+grep '# ' /etc/apt/sources.list
+grep '^# ' /etc/apt/sources.list
+
+
+grep -v '#' /etc/apt/sources.list
+grep -v '#' /etc/apt/sources.list | grep security
+```
+
+
 ## find files
 {id: find-files}
 
 ```
 find .
+find /etc
 ```
 
 ## Pipelines
@@ -278,11 +342,22 @@ find .
 find . | grep h
 ```
 
+## Create file with bash for loop
+{id: create-file-with-bash-for-loop}
+
+```
+for i in {0..100}; do echo "Hello $i"; done > /opt/hello
+```
+
 ## du df
 {id: du-df}
 
 ```
+du
 du -h
+du -hs
+
+df
 df -h
 ```
 
@@ -293,7 +368,7 @@ df -h
 history
 ```
 
-## wc
+## wc - word count
 {id: wc}
 
 ```
@@ -310,8 +385,18 @@ Ctrl-L
 
 ## printenv
 {id: printenv}
+{i: printenv}
+{i: sort}
 
 ```
 printenv
+printenv | sort
+```
+
+## man (manual)
+{id: man}
+
+```
+man grep
 ```
 
