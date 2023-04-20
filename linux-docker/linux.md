@@ -28,16 +28,15 @@
 ## Install Docker
 {id: install-docker}
 
-Install [Docker](https://www.docker.com/)
+* [Docker](https://www.docker.com/)
 
-* Debian/Ubuntu: `apt-get install docker.io`
-* CentOS: `yum install docker`
-* MS Windows: Download [Docker Desktop for Windows](https://docs.docker.com/docker-for-windows/install/)
-* Mac OSX: Download [Docker for Mac OSX](https://docs.docker.com/docker-for-mac/install/)
+* Un linux install the [Docker Engine](https://docs.docker.com/engine/install/)
+* MS Windows: Download [Docker Desktop for Windows](https://docs.docker.com/engine/install/)
+* macOS: Download [Docker Desktop for macOS](https://docs.docker.com/engine/install/)
 
-* [Post Install](https://docs.docker.com/install/linux/linux-postinstall/)
+* [Post Install for Linux](https://docs.docker.com/install/linux/linux-postinstall/)
 
-* For older Windows and Mac [Docker Toolbox](https://docs.docker.com/toolbox/toolbox_install_windows/)
+* For older Windows and Mac there was something called Docker Toolbox. But now only [this](https://docs.docker.com/desktop/)
 
 ## Docker on Windows
 {id: docker-on-windows}
@@ -55,11 +54,11 @@ docker -v
 {id: docker-run-ubuntu}
 {i: run}
 
-* Download Ubuntu 19.10 image from [Docker HUB](https://hub.docker.com/)
+* [Download Ubuntu image](https://hub.docker.com/_/ubuntu) from [Docker HUB](https://hub.docker.com/)
 * Create a container called "ubu" and run it interactively
 
 ```
-docker run -it --name ubu ubuntu:19.10
+docker run -it -w /opt --name ubu ubuntu:22.10
 ```
 
 ## Create a footprint on the machine
@@ -90,21 +89,28 @@ docker container start -i ubu
 ls -l
 ```
 
-## Docker list containers
+* As we can see the file is still there.
+
+## Docker list running containers
+{id: docker-list-running-container}
+{i: ps}
+
+* In another terminal/command window:
+
+```
+docker ps
+```
+
+## Docker list all containers
 {id: docker-list-container}
 {i: ps}
+
+* Exit from the container
 
 ```
 docker ps -a
 ```
 
-## Docker remove container
-{id: docker-remove-container}
-{i: rm}
-
-```
-docker rm ubu
-```
 
 ## Docker list images
 {id: docker-list-images}
@@ -112,6 +118,8 @@ docker rm ubu
 
 ```
 docker images
+docker image list
+docker image ls
 ```
 
 ## Docker remove images
@@ -119,7 +127,18 @@ docker images
 {i: rmi}
 
 ```
-docker rmi ubuntu:19.10
+docker rmi ubuntu:22.10
+docker image rm ubuntu:22.10
+```
+
+* This will fail as the container is still referencing it
+
+## Docker remove container
+{id: docker-remove-container}
+{i: rm}
+
+```
+docker container rm ubu
 ```
 
 ## Exercise 1
@@ -136,6 +155,7 @@ docker rmi ubuntu:19.10
 * The name of the superuser or administrator: `root`
 * The name we use for the common ancestor of the filesystem: `/`
 * The name of the home-directory of user 'root': `/root`
+* `/opt` is usually where people put all kinds of optional installations
 
 ## Linux Users
 {id: linux-users}
