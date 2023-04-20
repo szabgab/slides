@@ -18,6 +18,7 @@
         "deploy.md",
         "appendix.md",
         "kubernetes.md",
+        "opensource.md",
         "old.md"
     ]
 }
