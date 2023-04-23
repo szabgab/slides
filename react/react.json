@@ -1,0 +1,11 @@
+{
+    "title": "React JS",
+    "author": "Gabor Szabo",
+    "first_year": "2023",
+    "copyright_name": "Gabor Szabo",
+    "copyright_url": "https://szabgab.com/",
+    "version": "0.01",
+    "files": [
+        "intro.md"
+    ]
+}
