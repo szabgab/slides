@@ -22,7 +22,7 @@
 * Communication
 * Slack
 
-# Expected End results
+## Expected End results
 {id: expected-end-results}
 
 * Blog posts (journal entries)
