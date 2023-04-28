@@ -676,6 +676,7 @@ In CMD window:
 
 ```
 > docker run -it --rm -v %cd%:/opt/ mydocker
+```
 
 In Power Shell:
 
