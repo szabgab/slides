@@ -10,11 +10,10 @@
 * Overview of the [Open Source Development Course](https://osdc.code-maven.com/)
 
 * git
-* GitHub
-    * Issues
-    * Pull Request
-    * Pages
-    * Actions
+* GitHub - Issues
+* GitHub - Pull Request
+* GitHub - Pages
+* GitHub - Actions
 * (GitLab)
 * Markdown (journal, issues, etc.)
 * Docker
@@ -83,5 +82,10 @@
 * Show the Git repository of the project and the web site generated from it.
 
 * https://kantoniko.com/
+
+## Docker
+{id: docker}
+
+* [Docker](https://code-maven.com/slides/docker/)
 
 
