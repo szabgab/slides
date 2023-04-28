@@ -7,20 +7,21 @@
 * Goal: Become familiar with tools and processes used for software development both in the industry and in the academic institutions through contribution to open source projects.
 * List of tools we learn, they are all used in both academy and corporation, they could be used better in both places.
 
-* Overview of the [course](https://osdc.code-maven.com/)
-    * git
-    * GitHub
-        * Issues
-        * Pull Request
-        * Pages
-        * Actions
-    * (GitLab)
-    * Markdown (journal, issues, etc.)
-    * Docker
-    * Testing
-    * Static analysis
-    * Communication
-    * Slack
+* Overview of the [Open Source Development Course](https://osdc.code-maven.com/)
+
+* git
+* GitHub
+    * Issues
+    * Pull Request
+    * Pages
+    * Actions
+* (GitLab)
+* Markdown (journal, issues, etc.)
+* Docker
+* Testing
+* Static analysis
+* Communication
+* Slack
 
 # Expected End results
 {id: expected-end-results}
