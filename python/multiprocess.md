@@ -92,11 +92,15 @@ Tested on Windows
 Create a script that given two number N and X will create N files (1.txt - N.txt). In each file put X rows of random ASCII characters: (digits, lower- and upper-case letters, space). (see [string](https://docs.python.org/library/string.html)) Each row should be 0-80 characters long. (random length for each row).
 Using the script create a bunch of files.
 
-Write a script that given a list of files will read all the files. For each file and count how many times each digit(!) appears and provide a combined report. First write the script in a single process way. Then convert it to be able to work with multiprocess. Submit the 3 scripts.
+Write a script that given a list of files will read all the files. For each file and count how many times each digit(!) appears and provide a combined report. First write the script in a single process (linear) way. Then convert it to be able to work with multiprocess. This version should also accept a number that indicates the size of the pool. Ideally you'd only need to write a few lines of code for this and you'd be able to use the code from the previous (linear) solution as a module
+
+Submit the 3 scripts.
 
 The report could look like this:
 
-![](examples/multiprocess/count_digits.out]
+![](examples/multiprocess/count_digits.out)
+
+Create 100 files with 10000 rows in each one and measure how long the linear process takes vs the parallel process with various numbers.
 
 ## Exercise: Process N Excel files in parallel
 {id: exercise-process-n-excel-files-in-parallel}
@@ -128,6 +132,10 @@ and fetch the first N URLs from there. Collecting the titles.
 ![](examples/multiprocess/create_text_files.py)
 
 ![](examples/multiprocess/count_digits.py)
+
+![](examples/multiprocess/count_digits_map.py)
+
+![](examples/multiprocess/count_digits_multiprocessing_map.py)
 
 ## Solution: Fetch URLs in parallel
 {id: solution-fetch-urls-in-parallel}

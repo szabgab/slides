@@ -9,14 +9,14 @@ def main():
     number_of_files = int(sys.argv[1])
     number_of_rows = int(sys.argv[2])
     characters = string.ascii_letters + ' ' + string.digits
-    print(number_of_rows)
+    # print(number_of_rows)
     for file_id in range(1, number_of_files + 1):
         filename = f"{file_id}.txt"
-        print(filename)
+        # print(filename)
         with open(filename, "w") as fh:
             for _ in range(number_of_rows):
                 length = random.randrange(0, 81)
-                print(length)
+                # print(length)
                 row = ''.join(random.choices(characters, k=length))
                 fh.write(row + "\n")
 

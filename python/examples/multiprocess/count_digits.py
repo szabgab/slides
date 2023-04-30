@@ -10,11 +10,15 @@ def count_digits(filename):
             for cr in row:
                 if cr in string.digits:
                     count[cr] += 1
-    return count
+
+    return {
+        "filename": filename,
+        "count": count,
+    }
 
 
 def print_table(results):
-    dw = 4
+    dw = 6
     width = 0
     for res in results:
         width = max(width, len(res["filename"]))
@@ -27,7 +31,7 @@ def print_table(results):
     for res in results:
         print(f'{res["filename"]:{width}} ', end="")
         for digit in string.digits:
-            print(f"{res[digit]:{dw}}", end="")
+            print(f"{res['count'][digit]:{dw}}", end="")
         print("")
 
     total = {}
@@ -35,7 +39,7 @@ def print_table(results):
         total[digit] = 0
     for res in results:
         for digit in string.digits:
-            total[digit] += res[digit]
+            total[digit] += res["count"][digit]
 
     name = "TOTAL"
     print(f'{name:{width}} ', end="")
@@ -52,7 +56,6 @@ def main():
     results = []
     for filename in files:
         result = count_digits(filename)
-        result["filename"] = filename
         results.append(result)
     print_table(results)
 
