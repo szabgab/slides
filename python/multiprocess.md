@@ -89,11 +89,14 @@ Tested on Windows
 ## Exercise: Process N files in parallel
 {id: exercise-process-n-files-in-parallel}
 
-Create N=100 files 1.txt - N.txt
-In each file put L random strings of up to X characters
+Create a script that given two number N and X will create N files (1.txt - N.txt). In each file put X rows of random ASCII characters: (digits, lower- and upper-case letters, space). (see [string](https://docs.python.org/library/string.html)) Each row should be 0-80 characters long. (random length for each row).
+Using the script create a bunch of files.
 
-Write a script that will read all the files for each file and count how many times each digit appears. Then provide a combined report. First write the script in a single process way.
-Then convert it to be able to work with multiprocess.
+Write a script that given a list of files will read all the files. For each file and count how many times each digit(!) appears and provide a combined report. First write the script in a single process way. Then convert it to be able to work with multiprocess. Submit the 3 scripts.
+
+The report could look like this:
+
+![](examples/multiprocess/count_digits.out]
 
 ## Exercise: Process N Excel files in parallel
 {id: exercise-process-n-excel-files-in-parallel}
@@ -118,6 +121,11 @@ Download the [sitemap](https://code-maven.com/sitemap.xml) or the other [sitemap
 and fetch the first N URLs from there. Collecting the titles.
 
 ![](examples/parallel/fetch_site_urls.py)
+
+## Solution: Process N files in parallel
+{id: solution-process-n-files-in-parallel}
+
+![](examples/multiprocess/count_digits.py]
 
 ## Solution: Fetch URLs in parallel
 {id: solution-fetch-urls-in-parallel}
