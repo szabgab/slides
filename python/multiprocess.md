@@ -7,14 +7,15 @@
 
 * [multiprocessing](https://docs.python.org/library/multiprocessing.html)
 
+{aside}
+The `multiprocessing` package makes it easy to run some function many times in parallel.
+
+Running processes in parallel can reduce the overall runtime of the process. Generally one would think that the more we run in parallel
+the faster the whole process will end, but creating the parallel processes has some overhead and the number of CPUs the computer has
+also puts a limitation on the paralellizm that might be worth it.
+{/aside}
+
 ![](examples/multiprocess/cpu_count.py)
-
-## Multiprocess Process
-{id: multiprocess-process}
-{i: Process}
-
-![](examples/multiprocess/cpu_count.py)
-
 
 ## Multiprocess N files: Pool
 {id: multiprocess-file}
@@ -22,22 +23,18 @@
 {i: Pool}
 {i: map}
 
+{aside}
+In this example we "analyze" files by counting how many characters they have, how many digits, and how many spaces.
+{/aside}
+
 Analyze N files in parallel.
 
 ![](examples/multiprocess/multiprocess_files.py)
 
 ```
-$ python multiprocess_files.py 3 multiprocess_*
+$ python multiprocess_files.py 3 multiprocess_*.py
 
-Process 22688 analyzing multiprocess_files.py
-Process 22689 analyzing multiprocess_load.py
-Process 22690 analyzing multiprocess_pool_async.py
-Process 22688 analyzing multiprocess_pool.py
-{'filename': 'multiprocess_files.py', 'total': 833, 'digits': 10, 'spaces': 275}
-{'filename': 'multiprocess_load.py', 'total': 694, 'digits': 14, 'spaces': 163}
-{'filename': 'multiprocess_pool_async.py', 'total': 695, 'digits': 8, 'spaces': 161}
-{'filename': 'multiprocess_pool.py', 'total': 397, 'digits': 3, 'spaces': 80}
-```
+![](examples/multiprocess/multiprocess_files.out)
 
 {aside}
 We asked it to use 3 processes, so looking at the process ID you can see one of them worked twice.

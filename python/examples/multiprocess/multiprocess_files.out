@@ -1,0 +1,10 @@
+Process 12093 analyzing multiprocess_files.py
+Process 12093 analyzing multiprocess_pool_async.py
+Process 12095 analyzing multiprocess_load.py
+Process 12094 analyzing multiprocessing_and_logging.py
+Process 12094 analyzing multiprocess_pool.py
+{'filename': 'multiprocess_files.py', 'total': 47, 'digits': 0, 'spaces': 37, 'letters': 6, 'other': 4}
+{'filename': 'multiprocessing_and_logging.py', 'total': 45, 'digits': 0, 'spaces': 27, 'letters': 11, 'other': 7}
+{'filename': 'multiprocess_load.py', 'total': 32, 'digits': 0, 'spaces': 20, 'letters': 7, 'other': 5}
+{'filename': 'multiprocess_pool_async.py', 'total': 30, 'digits': 0, 'spaces': 16, 'letters': 6, 'other': 8}
+{'filename': 'multiprocess_pool.py', 'total': 21, 'digits': 0, 'spaces': 11, 'letters': 6, 'other': 4}
