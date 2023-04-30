@@ -125,7 +125,9 @@ and fetch the first N URLs from there. Collecting the titles.
 ## Solution: Process N files in parallel
 {id: solution-process-n-files-in-parallel}
 
-![](examples/multiprocess/count_digits.py]
+![](examples/multiprocess/create_text_files.py)
+
+![](examples/multiprocess/count_digits.py)
 
 ## Solution: Fetch URLs in parallel
 {id: solution-fetch-urls-in-parallel}
