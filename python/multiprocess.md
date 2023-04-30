@@ -33,6 +33,7 @@ Analyze N files in parallel.
 
 ```
 $ python multiprocess_files.py 3 multiprocess_*.py
+```
 
 ![](examples/multiprocess/multiprocess_files.out)
 
