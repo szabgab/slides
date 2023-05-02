@@ -87,5 +87,13 @@ $ docker run -it --rm --workdir /opt -v$(pwd):/opt ubuntu:22.10 bash
 # phpunit
 ```
 
+## omicscope
+* [omicscope](https://github.com/guireiso/omicscope)
+```
+$ git clone https://github.com/guireiso/omicscope.git
+$ cd omicscope
+$ docker run -it --name omicscope-dev -w /opt -v %cd%:/opt python:3.11 bash
+$ cd tests
+```
 
 
