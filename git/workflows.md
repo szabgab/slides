@@ -2,7 +2,7 @@
 {id: git-workflows}
 
 ## A collection of workflows and issues
-{id: git-workflows}
+{id: collection-of-git-workflows}
 
 * Individual developer, local changes only
 
