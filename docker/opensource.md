@@ -2,6 +2,7 @@
 {id: open-source}
 
 ## TOML Kit
+{id: toml-kit}
 * [tomlkit](https://github.com/sdispater/tomlkit)
 
 Steps to run tests on a docker container:
@@ -16,6 +17,7 @@ poetry run pytest -q tests
 ```
 
 ## Dialogy
+{id: dialogy}
 * [Dialogy](https://github.com/skit-ai/dialogy)
 
 Steps to run tests on a docker container:
@@ -29,6 +31,7 @@ make install
 ```
 
 ## Teiphy
+{id: teiphy}
 * [Teiphy](https://github.com/jjmccollum/teiphy)
 
 Steps to run tests on a docker container:
@@ -43,6 +46,7 @@ poetry run pytest
 ```
 
 ## Python Automation Framework
+{id: python-automation-framework}
 * [python-automation-framework](https://github.com/mreiche/python-automation-framework)
 
 Steps to run tests on a docker container:
@@ -55,6 +59,7 @@ PYTHONPATH="." pytest --numprocesses=4 --cov=paf test
 ```
 
 ## Python Bitcoinlib
+{id: python-bitcoin-lib}
 * [python-bitcoinlib](https://github.com/petertodd/python-bitcoinlib)
 
 Steps to run tests on a docker container:
@@ -66,6 +71,7 @@ python3 -m unittest discover
 ```
 
 ## Overloaded Iterables
+{id: overloaded-iterables}
 * [overloaded_iterables](https://github.com/Arkiralor/overloaded_iterables)
 
 Steps to run tests on a docker container:
@@ -78,6 +84,7 @@ sh scripts/run_tests.sh
 ```
 
 ## xapi-python
+{id: xapi-python}
 * [xapi-python](https://github.com/pawelkn/xapi-python)
 
 Steps to run tests on a docker container:
@@ -89,6 +96,7 @@ python3 -m unittest discover tests
 ```
 
 ## nats-python
+{id: nats-python}
 * [nats-python](https://github.com/Gr1N/nats-python)
 
 Steps to run tests on a docker container:
