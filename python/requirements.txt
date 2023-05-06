@@ -6,7 +6,6 @@ requests
 pytest
 passlib
 # psycopg2
-nmap
 # FTP
 pssh
 
