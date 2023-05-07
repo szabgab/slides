@@ -11,7 +11,6 @@ pssh
 
 numpy
 pandas
-sklearn
 matplotlib
 
 sqlalchemy
@@ -34,3 +33,4 @@ aiofiles
 aiodns
 
 h5py
+gql[all]
