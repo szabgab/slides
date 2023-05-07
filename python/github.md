@@ -172,6 +172,10 @@ python examples/github-graphql/run_query_requests.py examples/github-graphql/log
 
 ![](examples/github-graphql/list_my_repositories.gql)
 
+```
+python examples/github-graphql/run_query_requests.py examples/github-graphql/list_my_repositories.gql out.json
+```
+
 ![](examples/github-graphql/list_my_repositories.json)
 
 ## GitHub GraphQL list of repositories by username
@@ -179,12 +183,20 @@ python examples/github-graphql/run_query_requests.py examples/github-graphql/log
 
 ![](examples/github-graphql/list_repositories_by_username.gql)
 
+```
+python examples/github-graphql/run_query_requests.py examples/github-graphql/list_repositories_by_username.gql out.json
+```
+
 ![](examples/github-graphql/list_repositories_by_username.json)
 
 ## GitHub GraphQL list issues by username
 {id: github-graphql-list-issues-by-username}
 
 ![](examples/github-graphql/list_issues_by_username.gql)
+
+```
+python examples/github-graphql/run_query_requests.py examples/github-graphql/list_issues_by_username.gql put.json
+```
 
 ![](examples/github-graphql/list_issues_by_username.json)
 
