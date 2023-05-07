@@ -66,6 +66,10 @@ pip install gql[all]
 ![](examples/github-graphql/login.gql)
 ![](examples/github-graphql/login.json)
 
+## GitHub GraphSQL paging
+{id: github-graphql-paging}
+
+![](examples/github-graphql/paging.py)
 
 ## GitHub GraphQL list my repositories
 {id: github-graphql-list-my-repositories}
