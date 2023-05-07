@@ -9,6 +9,12 @@ You would like to allow the user to pass arguments on the command line. For exam
 
 
 ```
+myprog.py  data1.xls data2.xls
+myprog.py --input data1.xls --output data2.xls
+
+
+myprog.py server_name name True True
+
 myprog.py --machine server_name --test name --verbose --debug
 myprog.py -v -d
 myprog.py -vd
