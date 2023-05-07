@@ -98,6 +98,11 @@ python examples/github-rest/repos-of-user.py kantoniko
 python examples/github-rest/repos-of-user.py osdc-code-maven
 ```
 
+## GraphQL - List repositories by organization
+{id: graphql-list-repositories-by-organization}
+
+![](examples/github-graphql/organization-and-its-repositories.py)
+
 
 ## GitHub API KEY (PERSONAL TOKEN)
 {id: github-api-key}
