@@ -30,37 +30,6 @@ query($after:String) {
 }
 '''
 
-#    query = '''
-#    query($username:String!, $from:DateTime, $to:DateTime, $first:Int) {
-#      user(login: $username) {
-#        contributionsCollection(from: $from, to: $to) {
-#          issueContributions(first: $first) {
-#            nodes {
-#              issue {
-#                title, url, createdAt, state, repository { name }
-#              }
-#            }
-#          }
-#        }
-#      }
-#    }
-#    '''
-#
-#    ts = datetime.datetime.now() - datetime.timedelta(days = 20)
-#    variables = {
-#        "username": useranem,
-#        "first": 30,
-#        "from": start_date,
-#        "to": end_date,
-#    }
-#
-#    transport = AIOHTTPTransport(url=url, headers=headers)
-#    client = Client(transport=transport, fetch_schema_from_transport=True)
-#    result = client.execute(gql(query), variable_values=variables)
-#
-#    return result
-
-
 def run_query(query, **variables):
 
     token = os.environ.get('MY_GITHUB_TOKEN')

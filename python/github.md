@@ -129,8 +129,9 @@ pip install requests
 * [Scalars](https://docs.github.com/en/graphql/reference/scalars) (types)
 * String!  means the field is string that cannot be null.
 
+
 ```
-pip install gql[all]
+pip install requests
 ```
 
 ## GitHub GraphQL explorer
@@ -143,6 +144,14 @@ pip install gql[all]
 
 ![](examples/github-graphql/run_query_requests.py)
 
+
+## GitHub GraphQL execute query async
+{id: github-graphql-execute-query-async}
+
+```
+pip install gql[all]
+```
+
 ![](examples/github-graphql/run_query.py)
 
 ## GitHub GraphQL who am i
@@ -151,12 +160,12 @@ pip install gql[all]
 * Get the username of who provided the token
 
 ![](examples/github-graphql/login.gql)
+
+```
+python examples/github-graphql/run_query_requests.py examples/github-graphql/login.gql out.json
+```
+
 ![](examples/github-graphql/login.json)
-
-## GitHub GraphSQL paging
-{id: github-graphql-paging}
-
-![](examples/github-graphql/paging.py)
 
 ## GitHub GraphQL list my repositories
 {id: github-graphql-list-my-repositories}
@@ -164,7 +173,6 @@ pip install gql[all]
 ![](examples/github-graphql/list_my_repositories.gql)
 
 ![](examples/github-graphql/list_my_repositories.json)
-
 
 ## GitHub GraphQL list of repositories by username
 {id: github-graphql-list-of-repositories-by-username}
@@ -210,6 +218,13 @@ pip install gql[all]
 ![](examples/github-graphql/list_pull_requests.py)
 
 ![](examples/github-graphql/list_contributions_pull_requests.py)
+
+## GitHub GraphSQL paging using cursor
+{id: github-graphql-paging}
+{i: cursor}
+
+![](examples/github-graphql/list-repositories-and-releases.py)
+
 
 ## GitHub GraphQL activities
 {id: github-graphql-activities}
