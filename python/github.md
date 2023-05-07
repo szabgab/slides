@@ -7,11 +7,37 @@
 
 * [Create a Personal access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token)
 
+## GitHub API REST vs GraphQL
+{id: github-api-rest-vs-graphql}
+
+* Getting the data you need, nothing more
+* Nested fields
+* Strong typing of the data
+* Rare limits
+
 ## GitHub REST API
 {id: github-rest-api}
 
 * [GitHub REST API](https://docs.github.com/en/rest)
 
+```
+pip install requests
+```
+
+## GitHub REST API execute query
+{id: github-rest-api-execute-query}
+
+![](examples/github-rest/github_rest_api.py)
+
+
+## GitHub get organization members
+{id: github-get-organization-members}
+
+![](examples/github-rest/rest_get_org_members.py)
+
+![](examples/github-graphql/get_org_members.gql)
+
+[GrapQL explorer](https://docs.github.com/en/graphql/overview/explorer)
 
 ## GitHub API GraphQL
 {id: github-graphql-api}
@@ -27,6 +53,8 @@ pip install gql[all]
 
 ## GitHub GraphQL execute query
 {id: github-graphql-execute-query}
+
+![](examples/github-graphql/run_query_requests.py)
 
 ![](examples/github-graphql/run_query.py)
 
