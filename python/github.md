@@ -149,9 +149,13 @@ pip install gql[all]
 
 ![](examples/github-rest/details-about-user.py)
 
-## REST - List of repos of user and of organization
+## REST - List of reposistories by user
+{id: github-rest-list-of-repositories-by-user}
 
 ![](examples/github-rest/repos-of-user.py)
+
+## REST - List of repositories by organization
+{id: github-rest-list-of-repositories-by-organization}
 
 ![](examples/github-rest/repos-of-org.py)
 
