@@ -23,7 +23,10 @@ def get_from_github(url, expected=0, pages=False):
             print(f"Fetching from {real_url}")
             data = requests.get(real_url, headers=headers).json()
             all_data.extend(data)
-            print(f"Received {len(data)} Total {len(all_data)} out of an expected {expected}")
+            if expected:
+                print(f"Received {len(data)} Total {len(all_data)} out of an expected {expected}")
+            else:
+                print(f"Received {len(data)} Total {len(all_data)}")
             page += 1
             if len(data) < per_page:
                 break

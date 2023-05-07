@@ -139,3 +139,20 @@ pip install gql[all]
 * Get a list of projects written in python, that have between 2-5 stars and were updated in the last 5 weeks.
 * Given a repository list all the changes that are were done in all the forks.
 
+## Details about an orgarnization REST
+{id: rest-details-about-organization}
+
+![](examples/github-rest/details-about-org.py)
+
+## Details about an user REST
+{id: rest-details-about-user}
+
+![](examples/github-rest/details-about-user.py)
+
+## REST - List of repos of user and of organization
+
+![](examples/github-rest/repos-of-user.py)
+
+![](examples/github-rest/repos-of-org.py)
+
+
