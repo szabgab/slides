@@ -1,16 +1,23 @@
 # Command line arguments with argparse
 {id: argparse}
 
+
+## Command line arguments
+{id: argparse-command-line-arguments}
+
+```
+myprog.py  data1.xls data2.xls
+myprog.py --input data1.xls --output data2.xls
+```
+
+![](examples/argparse/argparse_two_filenames.py)
+
+
 ## Modules to handle the command line
 {id: command-line-modules}
 {i: argparse}
 
 You would like to allow the user to pass arguments on the command line. For example:
-
-
-```
-myprog.py  data1.xls data2.xls
-myprog.py --input data1.xls --output data2.xls
 
 
 myprog.py server_name name True True
