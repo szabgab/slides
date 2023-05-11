@@ -20,6 +20,7 @@ myprog.py --input data1.xls --output data2.xls
 You would like to allow the user to pass arguments on the command line. For example:
 
 
+```
 myprog.py server_name name True True
 
 myprog.py --machine server_name --test name --verbose --debug
