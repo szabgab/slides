@@ -957,3 +957,7 @@ If we we wait a bit between calls, or if we flush the buffer of the file, then t
 
 ![](examples/other/modify_time_is_the_same.py)
 
+## Some strange code
+{id: some-strange-code}
+
+![](examples/other/bad_code.py)
