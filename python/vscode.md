@@ -35,12 +35,13 @@
 * Run program
 * Debug program
 * Set breakpoint
-* Set conditional breakpoint 
+* Set conditional breakpoint
 
 ![](examples/functions/fibonacci.py)
 
 
 * Set argv
+
 ![](examples/basics/rectangle_argv.py)
 
 
