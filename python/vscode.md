@@ -15,7 +15,7 @@
 * Refactoring
 
 ## VS Code Project or Single file
-{id vscode-project-or-single-file}
+{id: vscode-project-or-single-file}
 
 * Open File
 * Open Folder
