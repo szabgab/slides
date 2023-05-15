@@ -11,7 +11,8 @@
 ```
 git clone https://github.com/pallets/flask.git
 cd flask
-pip install -r requirements/tests.txt
+pip install -r requirements/dev.txt
+pip install -e .
 pytest
 ```
 
