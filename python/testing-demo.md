@@ -413,6 +413,25 @@ functions only. After all our test code should be a lot more simple than our app
 ```
 $ pytest test_with_pytest.py
 $ echo $?
+0
+```
+
+```
+> pytest test_with_pytest.py
+> echo %ERRORLEVEL%
+0
+```
+
+## Testing demo: pytest without classes failure
+{id: testing-demo-pytest-failure}
+
+![](examples/testing-demo/test_with_pytest_failure.py)
+
+![](examples/testing-demo/test_with_pytest_failure.out)
+
+```
+$ pytest test_with_pytest.py
+$ echo $?
 1
 ```
 
@@ -421,6 +440,7 @@ $ echo $?
 > echo %ERRORLEVEL%
 1
 ```
+
 
 ## Testing demo: pytest run doctests
 {id: testing-demo-pytest-run-doctests}
@@ -460,19 +480,10 @@ pip install pytest-cover
 
 
 ```
-$ pytest test_with_pytest.py --cov --cov-report html --cov-report term
+$ pytest test_with_pytest.py --cov mymath --cov-report html --cov-report term
 ```
 
-```
---- coverage: platform linux, python 3.10.6-final-0 ----
-Name                  Stmts   Miss  Cover
------------------------------------------
-mymath.py                 4      1    75%
-test_with_pytest.py       5      0   100%
------------------------------------------
-TOTAL                     9      1    89%
-Coverage HTML written to dir htmlcov
-```
+![](examples/testing-demo/test_with_pytest_cover.out)
 
 Open `htmlcov/index.html`
 
@@ -506,8 +517,6 @@ Sample code to use the Anagram module.
 
 ## Solution: Testing demo
 {id: solution-testing-demo}
+
 ![](examples/testing-demo/test_solution_anagram.py)
-
-
-
 
