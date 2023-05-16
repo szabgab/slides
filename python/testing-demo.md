@@ -346,7 +346,7 @@ The exit-code of this execution in 0 as was the case with unittest.
 {/aside}
 
 ```
-pip install -r pytest
+pip install pytest
 ```
 
 ![](examples/testing-demo/test_with_pytest_class.py)
@@ -455,7 +455,7 @@ $ pytest test_with_unittest.py
 
 
 ```
-pip install -r pytest-cover
+pip install pytest-cover
 ```
 
 
