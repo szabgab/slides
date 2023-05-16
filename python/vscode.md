@@ -47,7 +47,8 @@
 
 * Refactor "z" to "operator"
 
-![](examples/vscode/calc.py)
+![](examples/vscode/mylib.py)
+![](examples/vscode/use_mylib.py)
 
 
 
