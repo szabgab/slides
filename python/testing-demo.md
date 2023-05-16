@@ -406,6 +406,10 @@ simplert to graps. So unless you really need the features a class can provide I'
 functions only. After all our test code should be a lot more simple than our application code.
 {/aside}
 
+```
+pip install pytest
+```
+
 ![](examples/testing-demo/test_with_pytest.py)
 
 ![](examples/testing-demo/test_with_pytest.out)
