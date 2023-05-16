@@ -1,9 +1,12 @@
 def add(x, y):
     """
+    This function will add two numbers together
     >>> add(2, 2)
     4
     >>> add(3, 3)
     6
+    >>>
+    And here we can have more documentation.
     """
     return x * y
 
