@@ -1,0 +1,13 @@
+query {
+  organization(login:"github"){
+    membersWithRole(first: 10) {
+      edges {
+        node {
+          name
+          avatarUrl
+        }
+      }
+    }
+  }
+}
+

@@ -1,0 +1,19 @@
+========================= test session starts ==========================
+platform linux -- Python 3.11.2, pytest-7.3.1, pluggy-1.0.0
+rootdir: /home/gabor/work/slides/python/examples/testing-demo
+plugins: anyio-3.6.2, cov-4.0.0
+collected 1 item
+
+test_with_pytest.py .                                            [100%]
+
+---------- coverage: platform linux, python 3.11.2-final-0 -----------
+Name        Stmts   Miss  Cover
+-------------------------------
+mymath.py       4      1    75%
+-------------------------------
+TOTAL           4      1    75%
+Coverage HTML written to dir htmlcov
+
+
+========================== 1 passed in 0.03s ===========================
+

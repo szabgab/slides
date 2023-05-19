@@ -1,0 +1,21 @@
+=========================== test session starts ============================
+platform linux -- Python 3.11.2, pytest-7.3.1, pluggy-1.0.0
+rootdir: /home/gabor/work/slides/python/examples/testing-demo
+plugins: anyio-3.6.2
+collected 2 items
+
+test_with_pytest_failure.py .F                                       [100%]
+
+================================= FAILURES =================================
+______________________________ test_more_math ______________________________
+
+    def test_more_math():
+>       assert mymath.add(3, 3) == 6
+E       assert 9 == 6
+E        +  where 9 = <function add at 0x7f764062cea0>(3, 3)
+E        +    where <function add at 0x7f764062cea0> = mymath.add
+
+test_with_pytest_failure.py:7: AssertionError
+========================= short test summary info ==========================
+FAILED test_with_pytest_failure.py::test_more_math - assert 9 == 6
+======================= 1 failed, 1 passed in 0.08s ========================
