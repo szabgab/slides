@@ -1,6 +1,115 @@
 # Open Source
 {id: open-source}
 
+## TOML Kit
+{id: toml-kit}
+* [tomlkit](https://github.com/sdispater/tomlkit)
+
+Steps to run tests on a docker container:
+```
+git clone --recurse-submodules https://github.com/sdispater/tomlkit.git
+cd tomlkit
+docker run -it --name toml -w /opt -v$(pwd):/opt python:3.11 bash
+pip install poetry
+pip install pytest
+poetry install
+poetry run pytest -q tests
+```
+
+## Dialogy
+{id: dialogy}
+* [Dialogy](https://github.com/skit-ai/dialogy)
+
+Steps to run tests on a docker container:
+```
+git clone https://github.com/skit-ai/dialogy.git
+cd dialogy
+docker run -it --name dialogy -w /opt -v$(pwd):/opt python:3.11 bash
+pip install poetry
+poetry install
+make install
+make test
+```
+
+## Teiphy
+{id: teiphy}
+* [Teiphy](https://github.com/jjmccollum/teiphy)
+
+Steps to run tests on a docker container:
+```
+git clone https://github.com/jjmccollum/teiphy.git
+cd teiphy
+docker run -it --name teiphy -w /opt -v$(pwd):/opt python:3.11 bash
+pip install poetry
+poetry install
+poetry run pytest
+```
+
+## Python Automation Framework
+{id: python-automation-framework}
+* [python-automation-framework](https://github.com/mreiche/python-automation-framework)
+
+Steps to run tests on a docker container:
+```
+git clone https://github.com/mreiche/python-automation-framework.git
+cd python-automation-framework
+docker run -it --name python-automation-framework -w /opt -v$(pwd):/opt python:3.11 bash
+pip install pytest
+pip install -r requirements.txt
+PYTHONPATH="." pytest --numprocesses=4 --cov=paf test
+```
+
+## Python Bitcoinlib
+{id: python-bitcoin-lib}
+* [python-bitcoinlib](https://github.com/petertodd/python-bitcoinlib)
+
+Steps to run tests on a docker container:
+```
+git clone https://github.com/petertodd/python-bitcoinlib.git
+cd python-bitcoinlib
+docker run -it --name python-bitcoinlib -w /opt -v$(pwd):/opt python:3.11 bash
+python3 -m unittest discover
+```
+
+## Overloaded Iterables
+{id: overloaded-iterables}
+* [overloaded_iterables](https://github.com/Arkiralor/overloaded_iterables)
+
+Steps to run tests on a docker container:
+```
+git clone https://github.com/Arkiralor/overloaded_iterables.git
+cd overloaded_iterables
+docker run -it --name overloaded_iterables -w /opt -v$(pwd):/opt python:3.11 bash
+chmod +x scripts/*
+sh scripts/run_tests.sh
+```
+
+## xapi-python
+{id: xapi-python}
+* [xapi-python](https://github.com/pawelkn/xapi-python)
+
+Steps to run tests on a docker container:
+```
+git clone https://github.com/pawelkn/xapi-python.git
+cd xapi-python
+docker run -it --name xapi-python -w /opt -v$(pwd):/opt python:3.11 bash
+python3 -m unittest discover tests
+```
+
+## nats-python
+{id: nats-python}
+* [nats-python](https://github.com/Gr1N/nats-python)
+
+Steps to run tests on a docker container:
+```
+git clone https://github.com/Gr1N/nats-python.git
+cd nats-python
+docker run -it --name nats-python -w /opt -v$(pwd):/opt python:3.11 bash
+pip install poetry
+poetry install
+make install 
+make test
+```
 
 ## Python Flask
 {id: docker-python-flask}
