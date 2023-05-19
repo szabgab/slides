@@ -106,7 +106,7 @@ $ python3 app.py
 ```
 
 ## Cosmo-Tech
-{id: docker-python-Cosmo-Tech}
+{id: docker-python-cosmo-tech}
 
 
 * [Cosmo-Tech](https://github.com/Cosmo-Tech/CosmoTech-Acceleration-Library)
@@ -115,19 +115,26 @@ $ python3 app.py
 $ git clone https://github.com/Cosmo-Tech/CosmoTech-Acceleration-Library.git
 $ cd CosmoTech-Acceleration-Library
 ```
+
 For Windows:
 CMD:
+
 ```
 $ docker run -it --name cosmotech-acceleration-library-dev -w /opt -v %cd%:/opt python:3.11 bash
 ```
+
 PowerShell:
+
 ```
 $ docker run -it --name cosmotech-acceleration-library-dev -w /opt -v ${PWD}:/opt python:3.11 bash
 ```
+
 For Linux:
+
 ```
 $ docker run -it --name cosmotech-acceleration-library-dev -w /opt -v $(PWD):/opt python:3.11 bash
 ```
+
 ```
 # pip install -r requirements.txt
 # pip install pytest
@@ -148,19 +155,26 @@ $ docker container start -i cosmotech-acceleration-library-dev
 $ git clone https://github.com/mobility-team/mobility.git
 $ cd mobility
 ```
+
 For Windows:
 CMD:
+
 ```
 $ docker run -it --name mobility-dev -w /opt -v %cd%:/opt python:3.9 bash
 ```
+
 PowerShell:
+
 ```
 $ docker run -it --name mobility-dev -w /opt -v ${PWD}:/opt python:3.9 bash
 ```
+
 For Linux:
+
 ```
 $ docker run -it --name mobility-dev -w /opt -v $(PWD):/opt python:3.9 bash
 ```
+
 ```
 # pip install -r requirements.txt && pip install -e .
 # pip install pytest
@@ -172,7 +186,7 @@ $ docker container start -i mobility-dev
 ```
 
 ## PHX
-{id: docker-python-PHX}
+{id: docker-python-phx}
 
 
 * [PHX](https://github.com/PH-Tools/PHX)
@@ -181,31 +195,37 @@ $ docker container start -i mobility-dev
 $ git clone https://github.com/PH-Tools/PHX.git
 $ cd PHX
 ```
+
 For Windows:
 CMD:
+
 ```
 $ docker run -it --name phx-dev dev -w /opt -v %cd%:/opt python:3.7 bash
 ```
+
 PowerShell:
+
 ```
-$ docker run -it --name phx-dev -w /opt -v ${PWD}:/opt python:3.7 bash 
+$ docker run -it --name phx-dev -w /opt -v ${PWD}:/opt python:3.7 bash
 ```
+
 For Linux:
+
 ```
 $ docker run -it --name phx-dev -w /opt -v $(PWD):/opt python:3.7 bash
 ```
+
 ```
-# pip install -r dev-requirements.txt && pip install -e . 
+# pip install -r dev-requirements.txt && pip install -e .
 # pytest
 ```
 
 ```
-$ docker container start -i phx-dev 
+$ docker container start -i phx-dev
 ```
 
 ## cybrid-api-id-python
 {id: docker-python-cybrid-api-id-python}
-
 
 * [cybrid-api-id-python](https://github.com/Cybrid-app/cybrid-api-id-python)
 
@@ -213,19 +233,26 @@ $ docker container start -i phx-dev
 $ git clone https://github.com/Cybrid-app/cybrid-api-id-python.git
 $ cd cybrid-api-id-python
 ```
+
 For Windows:
 CMD:
+
 ```
 $ docker run -it --name cybrid-api-id-python-dev -w /opt -v %cd%:/opt python:3.11 bash
 ```
+
 PowerShell:
+
 ```
 $ docker run -it --name cybrid-api-id-python-dev -w /opt  -v ${PWD}:/opt python:3.11 bash
 ```
+
 For Linux:
+
 ```
 $ docker run -it --name cybrid-api-id-python-dev -w /opt  -v $(PWD):/opt python:3.11 bash
 ```
+
 ```
 # pip install -r requirements.txt && pip install pytest
 # pytest
@@ -245,20 +272,27 @@ $ docker container start -i cybrid-api-id-python-dev
 $ git clone https://github.com/vpaeder/pymx2.git
 $ cd pymx2
 ```
+
 For Windows:
 CMD:
+
 ```
 $ docker run -it --name pymx2-dev -w /opt -v %cd%:/opt python:3.11 bash
 ```
+
 PowerShell:
+
 ```
 $ docker run -it --name pymx2-dev -w /opt  -v ${PWD}:/opt python:3.11 bash
 ```
+
 For Linux:
+
 ```
 $ docker run -it --name pymx2-dev -w /opt  -v $(PWD):/opt python:3.11 bash
 # python -m setup install
 ```
+
 ```
 # python -m unittest
 ```
