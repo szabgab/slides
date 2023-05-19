@@ -243,6 +243,7 @@ $ docker run -it --name cybrid-api-id-python-dev -w /opt -v %cd%:/opt python:3.1
 
 PowerShell:
 
+
 ```
 $ docker run -it --name cybrid-api-id-python-dev -w /opt  -v ${PWD}:/opt python:3.11 bash
 ```
@@ -445,4 +446,22 @@ $ docker run -it --name capella-dev -w /opt -v %cd%:/opt python:3.11 bash
 
 ```
 $ docker start -i capella-dev
+```
 
+## Renormalizer
+{id: renormalizer}
+
+https://github.com/shuaigroup/Renormalizer
+
+```
+$ git clone https://github.com/shuaigroup/Renormalizer.git
+$ cd Renormalizer
+$ docker run -it --name Renormalizer-dev -w /opt -v %cd%:/opt python:latest bash
+$ pip install renormalizer
+$ pip install --upgrade pip
+$ pip install qutip
+$ pip install recommonmark
+$ pip install Yaml8
+$ pip install -r requirements.txt
+$ pytest
+```
