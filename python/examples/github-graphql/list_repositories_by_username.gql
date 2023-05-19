@@ -4,7 +4,10 @@ query {
       totalCount
       edges {
         node {
-          id, name, isPrivate, description
+          id,
+          name,
+          isPrivate,
+          description
         }
       }
     }

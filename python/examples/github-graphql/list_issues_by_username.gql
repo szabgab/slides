@@ -4,7 +4,12 @@ query {
       totalCount
       edges {
         node {
-          number, title, state, createdAt, url, repository {
+          number,
+          title,
+          state,
+          createdAt,
+          url,
+          repository {
             owner {
               login
             }

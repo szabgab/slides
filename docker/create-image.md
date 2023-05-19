@@ -657,7 +657,7 @@ docker container cp chronos:/opt/dates.txt .
 docker container stop chronos
 ```
 
-## Docker: Mounting host directory
+## Docker: Mounting external host directory as a volume (Linux, macOS hosts)
 {id: docker-mounting-host-directory}
 
 ```
@@ -669,6 +669,22 @@ $ docker run -it --rm -v $(pwd):/opt/ mydocker
 
 The `-v HOST:CONTAINER` will mount the `HOST` directory of the home operating system to the `CONTAINER` directory in the Docker container.
 
+## Docker: Mounting external host directory as a volume (Windows hosts)
+{id: docker-mounting-host-directory-windows-host}
+
+In CMD window:
+
+```
+> docker run -it --rm -v %cd%:/opt/ mydocker
+```
+
+In Power Shell:
+
+```
+> docker run -it --rm -v ${PWD}:/opt/ mydocker
+```
+
+In any case the path to the folder must only contain [a-zA-Z0-9_.-] character so no spaces, no Hebrew characters, etc.
 
 ## Docker build passing command-line argumens
 {id: docker-build-passing-command-line-arguments}

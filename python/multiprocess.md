@@ -7,14 +7,15 @@
 
 * [multiprocessing](https://docs.python.org/library/multiprocessing.html)
 
+{aside}
+The `multiprocessing` package makes it easy to run some function many times in parallel.
+
+Running processes in parallel can reduce the overall runtime of the process. Generally one would think that the more we run in parallel
+the faster the whole process will end, but creating the parallel processes has some overhead and the number of CPUs the computer has
+also puts a limitation on the paralellizm that might be worth it.
+{/aside}
+
 ![](examples/multiprocess/cpu_count.py)
-
-## Multiprocess Process
-{id: multiprocess-process}
-{i: Process}
-
-![](examples/multiprocess/cpu_count.py)
-
 
 ## Multiprocess N files: Pool
 {id: multiprocess-file}
@@ -22,22 +23,19 @@
 {i: Pool}
 {i: map}
 
+{aside}
+In this example we "analyze" files by counting how many characters they have, how many digits, and how many spaces.
+{/aside}
+
 Analyze N files in parallel.
 
 ![](examples/multiprocess/multiprocess_files.py)
 
 ```
-$ python multiprocess_files.py 3 multiprocess_*
-
-Process 22688 analyzing multiprocess_files.py
-Process 22689 analyzing multiprocess_load.py
-Process 22690 analyzing multiprocess_pool_async.py
-Process 22688 analyzing multiprocess_pool.py
-{'filename': 'multiprocess_files.py', 'total': 833, 'digits': 10, 'spaces': 275}
-{'filename': 'multiprocess_load.py', 'total': 694, 'digits': 14, 'spaces': 163}
-{'filename': 'multiprocess_pool_async.py', 'total': 695, 'digits': 8, 'spaces': 161}
-{'filename': 'multiprocess_pool.py', 'total': 397, 'digits': 3, 'spaces': 80}
+$ python multiprocess_files.py 3 multiprocess_*.py
 ```
+
+![](examples/multiprocess/multiprocess_files.out)
 
 {aside}
 We asked it to use 3 processes, so looking at the process ID you can see one of them worked twice.
@@ -91,11 +89,18 @@ Tested on Windows
 ## Exercise: Process N files in parallel
 {id: exercise-process-n-files-in-parallel}
 
-Create N=100 files 1.txt - N.txt
-In each file put L random strings of up to X characters
+Create a script that given two number N and X will create N files (1.txt - N.txt). In each file put X rows of random ASCII characters: (digits, lower- and upper-case letters, space). (see [string](https://docs.python.org/library/string.html)) Each row should be 0-80 characters long. (random length for each row).
+Using the script create a bunch of files.
 
-Write a script that will read all the files for each file and count how many times each digit appears. Then provide a combined report. First write the script in a single process way.
-Then convert it to be able to work with multiprocess.
+Write a script that given a list of files will read all the files. For each file and count how many times each digit(!) appears and provide a combined report. First write the script in a single process (linear) way. Then convert it to be able to work with multiprocess. This version should also accept a number that indicates the size of the pool. Ideally you'd only need to write a few lines of code for this and you'd be able to use the code from the previous (linear) solution as a module
+
+Submit the 3 scripts.
+
+The report could look like this:
+
+![](examples/multiprocess/count_digits.out)
+
+Create 100 files with 10000 rows in each one and measure how long the linear process takes vs the parallel process with various numbers.
 
 ## Exercise: Process N Excel files in parallel
 {id: exercise-process-n-excel-files-in-parallel}
@@ -120,6 +125,17 @@ Download the [sitemap](https://code-maven.com/sitemap.xml) or the other [sitemap
 and fetch the first N URLs from there. Collecting the titles.
 
 ![](examples/parallel/fetch_site_urls.py)
+
+## Solution: Process N files in parallel
+{id: solution-process-n-files-in-parallel}
+
+![](examples/multiprocess/create_text_files.py)
+
+![](examples/multiprocess/count_digits.py)
+
+![](examples/multiprocess/count_digits_map.py)
+
+![](examples/multiprocess/count_digits_multiprocessing_map.py)
 
 ## Solution: Fetch URLs in parallel
 {id: solution-fetch-urls-in-parallel}

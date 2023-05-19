@@ -20,8 +20,8 @@
 ## Linux distributions
 {id: linux-distributions}
 
-* Debian/Ubuntu
-* CentOS/Fedora/RedHat
+* [Debian](https://www.debian.org/) / [Ubuntu](https://ubuntu.com/)
+* [CentOS](https://www.centos.org/)  / [Fedora](https://www.fedoraproject.org/) / [RedHat](https://www.redhat.com/)
 * [Distrowatch](https://distrowatch.com/)
 
 
@@ -43,6 +43,11 @@
 
 * Run the `cmd`
 
+## Docker on Linux and macOS
+{id: docker-on-linux}
+
+* Open a terminal
+
 ## Docker version
 {id: docker-version}
 
@@ -58,7 +63,7 @@ docker -v
 * Create a container called "ubu" and run it interactively
 
 ```
-docker run -it -w /opt --name ubu ubuntu:22.10
+docker run -it -w /opt --name ubu ubuntu:23.04
 ```
 
 ## Create a footprint on the machine
@@ -127,8 +132,8 @@ docker image ls
 {i: rmi}
 
 ```
-docker rmi ubuntu:22.10
-docker image rm ubuntu:22.10
+docker rmi ubuntu:23.04
+docker image rm ubuntu:23.04
 ```
 
 * This will fail as the container is still referencing it
@@ -235,38 +240,6 @@ nano
 htop
 apt-get update
 apt-get install nano htop
-```
-
-## Docker with CentOS
-{id: docker-centos}
-
-```
-docker run -it --name cent -w /opt centos:7
-```
-
-* To install `nano` type in the following:
-
-```
-yum install nano
-```
-
-* In order to install `htop` first we need to add EPEL (Extra Packages for Enterprise Linux)
-
-```
-yum install epel-release
-yum install htop
-```
-
-* Then we can use it
-
-```
-htop
-```
-
-* exit and start again:
-
-```
-docker container start -i cent
 ```
 
 
@@ -399,4 +372,54 @@ printenv | sort
 ```
 man grep
 ```
+
+```
+This system has been minimized by removing packages and content that are
+not required on a system that users do not log into.
+
+To restore this content, including manpages, you can run the 'unminimize'
+command. You will still need to ensure the 'man-db' package is installed.
+```
+
+```
+unminimize
+```
+
+```
+yes | unminimize
+```
+
+
+## Docker with CentOS
+{id: docker-centos}
+
+```
+docker run -it --name cent -w /opt centos:7
+```
+
+* To install `nano` type in the following:
+
+```
+yum install nano
+```
+
+* In order to install `htop` first we need to add EPEL (Extra Packages for Enterprise Linux)
+
+```
+yum install epel-release
+yum install htop
+```
+
+* Then we can use it
+
+```
+htop
+```
+
+* exit and start again:
+
+```
+docker container start -i cent
+```
+
 

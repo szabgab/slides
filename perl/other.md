@@ -233,3 +233,9 @@ curl -X POST -F field=value -F name=Corion "https://httpbin.org/post" -H  "accep
 ```
 ![](examples/other/send_f.pl)
 
+## Modify time anomality in two files
+{id: modify-time-anomality}
+
+![](examples/other/modify_time_is_the_same.pl)
+
+

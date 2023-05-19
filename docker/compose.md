@@ -235,7 +235,7 @@ In one container start the Docker server, the other one will be the client that 
 
 ![](examples/postgresql/docker-compose.yml)
 
-The Dockerfile is also based on the official mongodb image as that made it easy to have `mongosh` already installed.
+The Dockerfile is built on top of a plain Ubuntu image
 
 ![](examples/postgresql/Dockerfile)
 
@@ -248,12 +248,12 @@ docker-compose up -d
 Connect to the client container:
 
 ```
-docker exec -it mongodb_client_1 bash
+$ docker exec -it postgresql_client_1 bash
 ```
 
 
 ```
-psql -h postgres --username username -d mydb
+# psql -h postgres --username username -d mydb
 ```
 
 It will ask for a password:
@@ -274,7 +274,7 @@ Type "help" for help.
 mydb=#
 ```
 
-Alternativel, once inside the clien docker container we can put the variable of the database in an environment variable and then we can run a command that will not wait for any input.
+Alternativel, once inside the client docker container we can put the variable of the database in an environment variable and then we can run a command that will not wait for any input.
 
 ```
 export PGPASSWORD=password
@@ -325,5 +325,34 @@ And you can also generate test coverage report:
 cover -test
 ```
 
+## Docker Compose MySQL server
+{id: docker-compose-mysql-server}
 
+![](examples/mysql/docker-compose.yml)
+
+![](examples/mysql/Dockerfile)
+
+```
+docker-compose up -d
+```
+
+
+```
+docker exec -it mysql_client_1  bash
+```
+
+```
+ping mysql
+```
+
+
+```
+# mysql -h mysql --password=secret
+mysql> SELECT CURRENT_TIMESTAMP;
+mysql> exit
+```
+
+```
+# echo "SELECT CURRENT_TIMESTAMP" | mysql -h mysql --password=secret
+```
 

@@ -47,24 +47,8 @@ $ plink.exe", "-ssh", "foobar@username-or-ip", "-pw", "no secret", "-C", "uname 
 
 ## prompt for password
 {id: get-password}
+
 ![](examples/net/prompt_password.py)
-
-
-## Python nmap
-{id: python-nmap}
-![](examples/net/portscan.py)
-
-```
-nmap -oX - -p 10-1024 -sV 127.0.0.1
-----------------------------------------------------
-Host : 127.0.0.1 ()
-State : up
-----------
-Protocol : tcp
-port : 21   state : open
-port : 22   state : open
-port : 23   state : open
-```
 
 
 ## ftp

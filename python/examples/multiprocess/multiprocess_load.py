@@ -7,7 +7,7 @@ import sys
 def calc(n):
     count = 0
     total = 0
-    while count < 40000000 / n:
+    while count < 80_000_000 / n:
         rnd = random.random()
         total += rnd
         count += 1
@@ -15,7 +15,7 @@ def calc(n):
 
 def main():
     if len(sys.argv) != 2:
-        exit("Usage: {} POOL_SIZE")
+        exit(f"Usage: {sys.argv[0]} POOL_SIZE")
 
     start = time.time()
     size = int(sys.argv[1])
