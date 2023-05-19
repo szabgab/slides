@@ -1,19 +1,18 @@
-from multiprocessing import Pool
+import multiprocessing
 import os
 import sys
 
 def f(x):
-    print("Input {} in process {}".format(x, os.getpid()))
-    #print(x)
+    print(f"Input {x} in process {os.getpid()}")
     return x*x
 
 def main():
     if len(sys.argv) != 3:
-        exit("Usage: {} NUMBERS POOL_SIZE")
+        exit(f"Usage: {sys.argv[0]} NUMBERS POOL_SIZE")
     numbers = int(sys.argv[1])
     size    = int(sys.argv[2])
 
-    with Pool(size) as p:
+    with multiprocessing.Pool(size) as p:
         results = p.map(f, range(numbers))
     print(results)
 

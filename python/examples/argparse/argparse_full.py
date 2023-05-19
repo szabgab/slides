@@ -20,7 +20,12 @@ parser.add_argument('--things', nargs="+")  # --things a.txt b.txt c.txt
 
 args = parser.parse_args()
 
-print(args.fname)
-print(args.verbose)
-print(args.things)
+print(f"fname:   {args.fname}")
+print(f"verbose: {args.verbose}")
+print(f"things:  {args.things}")
+print(f"color:   {args.color}")
+print(f"max:     {args.max}")
+
+if args.verbose:
+    print("we are making progress....")
 

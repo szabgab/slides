@@ -14,7 +14,7 @@ services:
       POSTGRES_PASSWORD: password
       POSTGRES_DB: mydb
     volumes:
-      - database-data:/var/lib/postgresql/data/
+      - postgres-database-data:/var/lib/postgresql/data/
 
 volumes:
-  database-data:
+  postgres-database-data:

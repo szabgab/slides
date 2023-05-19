@@ -1,16 +1,16 @@
-from multiprocessing import Pool
+import multiprocessing
 import os
 
 
 def f(x):
-    print("Input {} in process {}".format(x, os.getpid()))
+    print(f"Input {x} in process {os.getpid()}")
     return x*x
 
 def prt(z):
     print(z)
 
 def main():
-    with Pool(5) as p:
+    with multiprocessing.Pool(5) as p:
         results = p.imap(f, range(11)) # <multiprocessing.pool.IMapIterator object
         print(results)
         print('--')

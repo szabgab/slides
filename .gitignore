@@ -6,7 +6,6 @@ __pycache__
 /python-mocking/weather/config.ini
 project.zip
 .DS_Store
-pypi/
 .vscode/
 
 .ipynb_checkpoints
