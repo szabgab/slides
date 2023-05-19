@@ -7,6 +7,8 @@ def main():
     width  = int( sys.argv[1] )
     length = int( sys.argv[2] )
 
+    
+
     if length <= 0:
         exit("length is not positive")
 

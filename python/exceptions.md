@@ -285,25 +285,42 @@ On this page you'll find the list and hierarchy of exceptions in Python.
 {i: Exception}
 
 {aside}
-As you create more and more complex applications you'll reach a point where you write a function, probably in a module that needs to report some error condition.
+As you create more and more complex applications you'll reach a point where you write a function, probably in a module, that needs to report some error condition.
 You can raise an exception in a simple way.
 {/aside}
 
 ![](examples/exceptions/raise.py)
 
+```
+$ python raise.py 
+Adding apple: 3
+Exception: Amount of sugar must be positive. -1 was given.
+Type: Exception
+Adding banana: 2
+```
+
 ## Raise ValueError exception
 {id: raise-a-valueerror-exception}
 {i: ValueError}
 
+{aside}
+You can be more specific with your error type and raise a ValueError.
+{/aside}
+
 ![](examples/exceptions/raise_value_error.py)
 
+```
+$ python raise_value_error.py
+Adding apple: 3
+Exception: Amount of sugar must be positive. -1 was given.
+Type: ValueError
+Adding banana: 2
+```
 
 ## Stack trace of exceptions
 {id: stack-trace-of-exceptions}
 
-
 ![](examples/exceptions/stack_trace.py)
-
 
 ![](examples/exceptions/stack_trace.out)
 

@@ -6,13 +6,11 @@ requests
 pytest
 passlib
 # psycopg2
-nmap
 # FTP
 pssh
 
 numpy
 pandas
-sklearn
 matplotlib
 
 sqlalchemy
@@ -35,3 +33,4 @@ aiofiles
 aiodns
 
 h5py
+gql[all]

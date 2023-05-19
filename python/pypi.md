@@ -1,8 +1,8 @@
 # PyPi - Python Package Index
-{id: python-package-index}
+{id: pypi}
 
 ## What is PyPi?
-{id: pypi}
+{id: what-is-pypi}
 
 * [pypi](http://pypi.python.org/)
 
@@ -74,22 +74,32 @@ py -m pip install --trusted-host pypi.org --trusted-host pypi.python.org --trust
 export PYTHONPATH=~/python
 ```
 
+## Requirements
+{id: python-requirements}
+
+![](examples/pypi/requirements.txt)
+
+```
+pip install -r requirements.txt
+```
+
+
+
 ## Virtualenv
 {id: virtualenv}
 {i: virtualenv}
 
-```
-$ pip install virtualenv
+On Linux/macOS:
 
+```
 $ cd project_dir
-$ virtualenv venv
+$ virtualenv -p python3 venv
 $ source venv/bin/activate
 $ ...
 $ deactivate
 ```
 
 On Windows:
-
 
 ```
 venv\Scripts\activate.bat
@@ -107,15 +117,4 @@ This requires bash or zsh.
 {aside}
 See also the [Python guide](http://docs.python-guide.org/en/latest/dev/virtualenvs/).
 {/aside}
-
-
-## Virtualenv for Python 3
-{id: virtualev-python3}
-
-```
-virtualenv -p python3 venv3
-source venv3/bin/activate
-...
-deactivate
-```
 
