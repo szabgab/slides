@@ -465,3 +465,69 @@ $ pip install Yaml8
 $ pip install -r requirements.txt
 $ pytest
 ```
+
+
+## Python [dialogy](https://github.com/skit-ai/dialogy)
+{id: docker-python-dialogy}
+
+from Readme.md -> Contributors
+
+```
+git clone git@github.com:skit-ai/dialogy.git
+cd dialogy
+docker run -it --name dialogy_test -w /opt -v <working directory>\dialogy:/opt python:3.11 bash
+# Activate your virtualenv, you can also let poetry take care of it.
+$ pip install poetry (opened a [PR](https://github.com/skit-ai/dialogy/pull/194)) for adding this command 
+$ poetry install
+$ make test
+```
+
+## Python [toml_tools](https://github.com/JamesParrott/toml_tools)
+{id: docker-python-toml_tools}
+Have contributors file instructions
+```
+git clone https://github.com/JamesParrott/toml_tools
+cd toml_tools
+docker run -it --name toml_tools_test -w /opt -v <working directory>\toml_tools:/opt python:3.11 bash
+$ pip install --upgrade pip
+$ pip install tox
+$ tox -e py
+```
+  
+  
+## Python [penn](https://github.com/interactiveaudiolab/penn)
+{id: docker-python-penn}
+  
+There is no contribution file, but there is an explanation of how to clone and run the project in the readme file. 
+Added a [contribution.md](https://github.com/interactiveaudiolab/penn/pull/4) file with the following instructions:
+```
+git clone https://github.com/interactiveaudiolab/penn
+cd penn
+docker run -it --name penn_test -w /opt -v <working directory>\penn:/opt python:3.11 bash
+$ pip install -r requirements.txt && pip install -e .
+```
+
+## Python [nbt-structure-utils](https://github.com/BenBenBenB/nbt-structure-utils)
+{id: docker-python-nbt-structure-utils}  
+ 
+There is no contribution file. Added a new [PR](https://github.com/BenBenBenB/nbt-structure-utils/pull/12) for contribution file with the following instructions:
+```
+git clone https://github.com/BenBenBenB/nbt-structure-utils
+cd nbt-structure-utils
+docker run -it --name nbt_test -w /opt -v <working directory>\nbt-structure-utils:/opt python:3.11 bash
+$ pip install poetry
+$ poetry install
+```  
+  
+
+## Python [sanic-restful](https://github.com/linzhiming0826/sanic-restful)
+{id: docker-python-sanic-restful}
+  
+There is no contribution file. Added a new [PR](https://github.com/linzhiming0826/sanic-restful/pull/10) for contribution file with the following instructions: 
+```
+git clone https://github.com/linzhiming0826/sanic-restful
+cd sanic-restful
+docker run -it --name sanic-restful_test -w /opt -v <working directory>\sanic-restful:/opt python:3.11 bash
+```
+  
+  
