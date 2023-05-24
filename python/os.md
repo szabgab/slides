@@ -151,6 +151,34 @@ or you could use the `glob.glob("*.py")` function to have a subset of files.
 `os.environ` is a dictionary where the keys are the environment variables and the values are, well, the values.
 {/aside}
 
+## Set environment variables on the fly
+{id: environment-variables-on-the-fly}
+
+![](examples/os/show_env.py)
+
+* On Linux and macOS:
+
+```
+MYNAME=Foo python  examples/os/show_env.py
+```
+
+## Reading the .env environment file in Python
+{id: reading-the-environment-file}
+
+* `.env` file in the same folder where the program is.
+
+![](examples/os/.env)
+
+![](examples/os/show_env.py)
+
+```
+pip install python-dotenv
+```
+
+```
+python examples/os/read_env.py
+SOME_THING=other python examples/os/read_env.py
+```
 
 ## Set env and run command
 {id: set-env-and-run-command}
