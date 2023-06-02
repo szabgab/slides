@@ -100,7 +100,7 @@ On Linux, you might also need to follow the "Linux post installation instruction
 
 * Linux: Debian/Ubuntu/CentOS: Install the [Docker Engine](https://docs.docker.com/engine/install/)
 * MS Windows: Download [Docker Desktop for Windows](https://docs.docker.com/docker-for-windows/install/)
-* Mac OSX: Download [Docker for Mac OSX](https://docs.docker.com/docker-for-mac/install/)
+* macOS: Download [Docker for macOS](https://docs.docker.com/docker-for-mac/install/)
 
 * [Post Install for Linux](https://docs.docker.com/install/linux/linux-postinstall/)
 * For older Windows and Mac [Docker Toolbox](https://docs.docker.com/toolbox/toolbox_install_windows/)
@@ -130,7 +130,7 @@ That's what we are going to use.
 {i: terminal}
 
 {aside}
-On Linux and Mac OSX we are going to us the **terminal** to enter the Docker commands.
+On Linux and macOS we are going to us the **terminal** to enter the Docker commands.
 {/aside}
 
 * Run the `terminal`
@@ -209,25 +209,35 @@ docker info
 {id: docker-help-cli}
 {i: help}
 
+Any of the following will show the list of available commands:
+
+```
+docker
+docker help
+docker --help
+```
+
 Get help for the various commands on the command-line.
 
 ```
-docker --help
+docker run --help
+docker build --help
+```
+
+```
 docker help run
-docker help ps
-docker help images
-docker help rm
-docker help rmi
+docker help build
 ```
 
 * [docs](https://docs.docker.com/)
 
-## Docker: host - daemon - client
+## Docker: desktop - host - daemon - client
 {id: docker-host-daemon-client}
 
-* Docker host (on Windows and OSX it is a Virtual Machine, On Linux it is native).
+* Docker desktop A GUI application that helps especially in Windows and macOS
+* Docker host (on Windows and macOS it is a Virtual Machine, On Linux it is native).
 * Docker daemon runs in the Docker host.
-* Docker client runs on the host OS (Linux, Windows OSX).
+* Docker client runs on the host OS (Linux, Windows macOS).
 
 
 ## Docker Daemon
@@ -235,7 +245,7 @@ docker help rmi
 
 To launch docker daemon from the command line:
 
-* On OSX:    `open -a Docker` ot Launch the Docker daemon via the Application icon.
+* macOS:    `open -a Docker` ot Launch the Docker daemon via the Application icon.
 * Linux:     `sudo service docker start`.
 * Windows:    Run the Docker Desktop.
 
