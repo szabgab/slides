@@ -24,6 +24,11 @@
 
 * Code quality tests
 
+* Load test
+* Stress test
+* Performance test
+* Endurance test
+
 
 ## Pytest setup
 {id: pytest-setup}
