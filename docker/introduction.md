@@ -400,27 +400,18 @@ docker run -it busybox
 {i: ps}
 
 ```
-docker ps        # running containers
-docker ps -a     # all the containers
+docker container ls
+docker container ls -a
+docker ps                # list the running containers
+docker ps -a             # list all the containers
 ```
 
 ## Remove containers
 {id: remove-containers}
 
 ```
-docker rm CONTAINERID
-```
-
-## Remove all Docker containers
-{id: remove-all-docker-containers}
-{i: rm}
-{i: -aq}
-
-Remove all the docker containers:
-
-```
-docker ps -aq
-docker rm $(docker ps -aq)
+docker container rm CONTAINER_ID   (or CONTAINER_NAME)
+docker rm CONTAINER_ID             (or CONTAINER_NAME)
 ```
 
 ## Remove all the containers with docker prune
@@ -432,13 +423,25 @@ docker container prune
 docker container prune -f
 ```
 
+## Remove all Docker containers (old way)
+{id: remove-all-docker-containers}
+{i: rm}
+{i: -aq}
+
+Remove all the docker containers:
+
+```
+docker ps -aq
+docker rm $(docker ps -aq)
+```
+
 ## Run and remove container
 {id: run-and-remove-container}
 
 ```
 docker run --rm busybox echo hello world
 
-docker ps -a      # the container was not left around
+docker container ls -a      # the container was not left around
 ```
 
 ## List and remove images
@@ -447,8 +450,8 @@ docker ps -a      # the container was not left around
 {i: rmi}
 
 ```
-docker images
-docker rmi busybox
+docker image ls
+docker image rm busybox
 ```
 
 ## Docker remove all the images - prune images
