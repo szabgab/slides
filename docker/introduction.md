@@ -421,6 +421,7 @@ docker rm CONTAINER_ID             (or CONTAINER_NAME)
 ```
 docker container prune
 docker container prune -f
+docker container prune --force
 ```
 
 ## Remove all Docker containers (old way)
