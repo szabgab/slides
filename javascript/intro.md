@@ -226,14 +226,32 @@ SyntaxError: Unexpected token ILLEGAL
 ## use strict
 {id: use-strict}
 {i: use strict}
+
 ![](examples/js/no_var_strict.js)
 ![](examples/js/no_var_strict.txt)
 
 
 ## use strict + var
 {id: use-strict-var}
+
 ![](examples/js/var_strict.js)
 ![](examples/js/var_strict.txt)
+
+## Scope of variables
+{id: scope-of-variables}
+{i: var}
+{i: let}
+{i: const}
+
+![](examples/js/scope.html)
+
+![](examples/js/scope_bare.js)
+![](examples/js/scope_var.js)
+![](examples/js/scope_let.js)
+![](examples/js/scope_const.js)
+
+
+
 
 
 ## Exercise: Set up environment for web browser
