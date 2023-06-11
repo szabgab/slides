@@ -66,6 +66,17 @@
 {id: version-control}
 
 * Why use version control?
+* Version 1, 2, 3 of some document
+* Version by date
+
+* Collaboration
+* Two people cannot edit the same file at the same time
+* Who changed what, when and why?
+
+
+## Version Control in Wikipedia
+{id: version-control-in-wikipedia}
+
 * Wikipedia and the verion control there. Recommended to watch:
 
 * [How to edit wikipedia](https://code-maven.com/edit-wikipedia)
