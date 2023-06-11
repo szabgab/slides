@@ -19,7 +19,8 @@ Edit the package.json and add
 
 ```
   "scripts": {
-    "build": "webpack --config webpack.config.js"
+    "build": "webpack --mode development",
+    "watch": "webpack --mode development --watch"
   }
 ```
 

@@ -5,8 +5,8 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-	"build": "webpack --mode development",
-	"watch": "webpack --mode development --watch"
+    "build": "webpack --mode development",
+    "watch": "webpack --mode development --watch"
   },
   "keywords": [],
   "author": "",
