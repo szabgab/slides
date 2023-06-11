@@ -30,8 +30,8 @@ Then running
 
 
 
-![](demo-app/dist/index.html)
-![](demo-app/src/index.js)
-![](demo-app/src/mymath.js)
+![](examples/demo-app/dist/index.html)
+![](examples/demo-app/src/index.js)
+![](examples/demo-app/src/mymath.js)
 
-![](demo-app/package.json)
+![](examples/demo-app/package.json)
