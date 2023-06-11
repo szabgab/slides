@@ -14,6 +14,7 @@
 * 4th edition never completed
 * 2009 - 5th edition
 * 2011 - 5.1 edition   (part of "HTML5")
+* 2012 - TypeScript
 * 2015 - 6th edition (ECMAScript6 or ECMAScript 2015)
 
 
@@ -30,16 +31,15 @@
 ## JavaScript editors, IDEs
 {id: editors-ide}
 
-IDE - Integrated Development Environment
+IDEs - Integrated Development Environment
 
 
-* Aptana Studio
-* WebStorm
-* Atom + Ternjs (atom-ternjs) (for JavaScript intelligence) + script (to be able to run code from editor)
+* [WebStorm](https://www.jetbrains.com/webstorm)
+* [Visual Studio Code](https://code.visualstudio.com/)
 
+Editors
 
-
-* Notepad++
+* [Notepad++](https://notepad-plus-plus.org/)
 
 
 
@@ -50,13 +50,13 @@ IDE - Integrated Development Environment
 {i: ;}
 
 {aside}
-
 Probably the simplest way to see some action from JavaScript is to embed an **alert()** call
 in an html file.
 {/aside}
+
 ![](examples/js/alert.html)
 
-* Not really used any more
+* *Not really used any more*
 * always put ; at the end of statements
 
 
@@ -68,7 +68,8 @@ in an html file.
 
 * script - javascript
 * document.write
-* document is the object representing the HTML document. The DOM
+* document is the object representing the HTML document. The DOM.
+* **Not really used any more**
 
 
 
