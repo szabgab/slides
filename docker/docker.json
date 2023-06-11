@@ -8,6 +8,8 @@
     "files": [
         "introduction.md",
         "create-image.md",
+	"dockerfile.md",
+	"cron.md",
         "commands.md",
         "compose.md",
         "python.md",
