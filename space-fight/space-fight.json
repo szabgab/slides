@@ -6,6 +6,7 @@
     "copyright_url": "https://szabgab.com/",
     "version": "1.00",
     "files": [
-        "introduction.md"
+        "introduction.md",
+	"javascript.md"
     ]
 }
