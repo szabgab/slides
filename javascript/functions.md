@@ -127,3 +127,5 @@ In this exercise you are requeted to implement a Reverse Polish Calculator that 
 
 ![](examples/functions/order.js)
 
+![](examples/functions/fibonacci.js)
+
