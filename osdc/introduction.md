@@ -17,7 +17,8 @@
 * (GitLab)
 * Markdown (journal, issues, etc.)
 * Docker
-* Testing
+* Programming languages: Python, JavaScript
+* (Functional) Testing
 * Static analysis
 * Communication
 * Slack
