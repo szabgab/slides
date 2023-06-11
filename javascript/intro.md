@@ -64,6 +64,7 @@ in an html file.
 ## Document.write
 {id: document-write}
 {i: document.write}
+
 ![](examples/js/document_write.html)
 
 * script - javascript
@@ -76,12 +77,14 @@ in an html file.
 ## confirm
 {id: confirm}
 {i: confirm}
+
 ![](examples/js/confirm.html)
 
 
 ## prompt
 {id: prompt}
 {i: prompt}
+
 ![](examples/js/prompt.html)
 
 
@@ -94,6 +97,9 @@ in an html file.
 The better way to see messages from the JavaScript running in the browser is to use the **console.log()**
 function and open the console.
 {/aside}
+
+* See the documentation of [console](https://developer.mozilla.org/en-US/docs/Web/API/console)
+
 ![](examples/js/console_script.html)
 
 To open the JavaScript console
@@ -116,6 +122,7 @@ Run it in the editor
 
 ## Separate script to its own file
 {id: console-separate}
+
 ![](examples/js/console.html)
 ![](examples/js/console.js)
 
@@ -128,6 +135,7 @@ $ node examples/js/console.js
 {id: comments}
 {i: /*}
 {i: //}
+
 ![](examples/js/comments.js)
 
 * To explain to the next developer why do we do something.
