@@ -17,6 +17,7 @@
         "regexp.md",
         "dom.md",
         "other.md",
+		"application.md",
         "appendix.md"
     ]
 }
