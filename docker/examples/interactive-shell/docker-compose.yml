@@ -1,6 +1,6 @@
 version: '3.7'
 services:
  one:
-   image: ubuntu:20.04
+   image: ubuntu:23.04
    stdin_open: true
    tty: true
