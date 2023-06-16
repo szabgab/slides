@@ -13,6 +13,8 @@
 ## Install Rust
 {id: rust-installation}
 
+See in the [Rust book](https://doc.rust-lang.org/stable/book/ch01-01-installation.html)
+
 ## Editor and IDE
 {id: rust-editor-and-ide}
 
@@ -23,7 +25,9 @@
 {id: rust-hello-world}
 {i: println!}
 
-* `println!` is a macro (it looks like function, it generates some Rust code during compilation)
+* Rust files must have an extension of `.rs`.
+* The main Rust file must have a function called `main`.
+* `println!` is a macro (it looks like function, it generates some Rust code during compilation).
 
 ![](examples/intro/hello.rs)
 
@@ -34,6 +38,14 @@ rustc hello.rs
 ```
 ./hello
 ```
+
+## My little Rust runner
+{id: my-little-rust-runner}
+
+* This is especially useful for the slides so I can create individual Rust example files and run them stand alone.
+
+![](rust)
+
 
 ## Hello World in (immutable) variable
 {id: rust-hello-world-in-immutable-variable}
@@ -63,23 +75,20 @@ rustc hello.rs
 
 ![](examples/intro/shadow.rs)
 
-
 ## Hello World with Cargo
 {id: hello-world-with-cargo}
+
+* Cargo is the package management system of Rust
+* `cargo new hello` creates a new folder called `hello`
+* With a file called `Cargo.toml`
+* A folder called `src` and  a file `src/main.rs` with the hello world code.
+* `cargo run` will comple the code and run it.
 
 ```
 cargo new hello
 cd hello
 cargo run
 ```
-
-## My little Rust runner
-{id: my-little-rust-runner}
-
-This is especially usefule for the slides so I can create individual Rust example files and run them stand alone
-
-![](rust)
-
 
 ## Rust and comments
 {id: rust-comments}
