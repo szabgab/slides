@@ -13,4 +13,4 @@ jobs:
     - name: Check
       run: |
         cd rust
-        ./rust check.rs
+        ./rust.sh check.rs
