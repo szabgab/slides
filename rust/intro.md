@@ -10,6 +10,8 @@
 * [Learn Rust](https://www.rust-lang.org/learn)
 * [The Rust book](https://doc.rust-lang.org/book/)
 
+* [The Rust book in Hebrew](https://github.com/IttayWeiss/rustbook-heb)
+
 ## Install Rust
 {id: rust-installation}
 
@@ -23,6 +25,8 @@ See in the [Rust book](https://doc.rust-lang.org/stable/book/ch01-01-installatio
 
 ## Hello World
 {id: rust-hello-world}
+{i: fn}
+{i: main}
 {i: println!}
 
 * Rust files must have an extension of `.rs`.
@@ -44,8 +48,51 @@ rustc hello.rs
 
 * This is especially useful for the slides so I can create individual Rust example files and run them stand alone.
 
-![](rust)
+![](rust.sh)
 
+
+```
+./rust.sh examples/intro/hello.rs
+```
+
+## Hello World with Cargo
+{id: hello-world-with-cargo}
+{i: cargo}
+
+* Cargo is the package management system of Rust
+* `cargo new hello` creates a new folder called `hello`
+* With a file called `Cargo.toml`
+* A folder called `src` and  a file `src/main.rs` with the hello world code.
+* `cargo run` will comple the code and run it.
+
+```
+cargo new hello
+cd hello
+cargo run
+```
+
+## Rust and comments
+{id: rust-comments}
+{i: //}
+{i: /* */}
+
+* Both single-line and multi-line comments are available in Rust
+
+![](examples/intro/comments.rs)
+
+## Rust - Hello Foo
+{id: hello-foo}
+
+![](examples/intro/hello_foo.rs)
+
+* [format macro](https://doc.rust-lang.org/std/fmt/)
+
+## Interpolation
+{id: string-interpolation}
+
+Since Rust 1.58
+
+![](examples/intro/interpolation.rs)
 
 ## Hello World in (immutable) variable
 {id: rust-hello-world-in-immutable-variable}
@@ -75,38 +122,6 @@ rustc hello.rs
 
 ![](examples/intro/shadow.rs)
 
-## Hello World with Cargo
-{id: hello-world-with-cargo}
-
-* Cargo is the package management system of Rust
-* `cargo new hello` creates a new folder called `hello`
-* With a file called `Cargo.toml`
-* A folder called `src` and  a file `src/main.rs` with the hello world code.
-* `cargo run` will comple the code and run it.
-
-```
-cargo new hello
-cd hello
-cargo run
-```
-
-## Rust and comments
-{id: rust-comments}
-{i: //}
-{i: /* */}
-
-* Both single-line and multi-line comments are available in Rust
-
-![](examples/intro/comments.rs)
-
-
-## Rust - Hello Foo
-{id: hello-foo}
-
-![](examples/intro/hello_foo.rs)
-
-* [format macro](https://doc.rust-lang.org/std/fmt/)
-
 ## Rust - Hello name - input from STDIN
 {id: rust-hello-name}
 {i: stdin}
@@ -119,13 +134,6 @@ cargo run
 {id: rust-flush-stdout-read-stdin-chomp}
 
 ![](examples/intro/hello_name_chomp.rs)
-
-## Interpolation
-{id: string-interpolation}
-
-Since Rust 1.58
-
-![](examples/intro/interpolation.rs)
 
 ## Macros
 {id: macros}
