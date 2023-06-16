@@ -82,6 +82,7 @@ cargo run
 
 ## Rust - Hello Foo
 {id: hello-foo}
+{i: let}
 
 ![](examples/intro/hello_foo.rs)
 
@@ -93,6 +94,34 @@ cargo run
 Since Rust 1.58
 
 ![](examples/intro/interpolation.rs)
+
+## Rust - Hello name - input from STDIN
+{id: rust-hello-name}
+{i: std::io}
+{i: String}
+{i: stdin}
+{i: read_line}
+{i: expect}
+
+* Module [std::io](https://doc.rust-lang.org/std/io/)
+* [String::new()](https://doc.rust-lang.org/std/string/struct.String.html#method.new) - Creates a new mutable empty string
+* `&mut name` passes the variable to the function as mutable variable.
+* `read_line` reads a line from the command line
+
+![](examples/intro/hello_name.rs)
+
+## Rust - read STDIN - chomp
+{id: rust-read-stdin-chomp}
+
+![](examples/intro/hello_name_chomp.rs)
+
+## Rust - flush STDOUT - read STDIN - chomp
+{id: rust-flush-stdout-read-stdin-chomp}
+
+* `use std::io::Write;` adds the `flush`
+
+![](examples/intro/hello_name_chomp_flush.rs)
+
 
 ## Hello World in (immutable) variable
 {id: rust-hello-world-in-immutable-variable}
@@ -121,19 +150,6 @@ Since Rust 1.58
 ![](examples/intro/hello_world_in_redeclared_immutable_variable.rs)
 
 ![](examples/intro/shadow.rs)
-
-## Rust - Hello name - input from STDIN
-{id: rust-hello-name}
-{i: stdin}
-{i: read_line}
-{i: expect}
-
-![](examples/intro/hello_name.rs)
-
-## Rust - flush STDOUT - read STDIN - chomp
-{id: rust-flush-stdout-read-stdin-chomp}
-
-![](examples/intro/hello_name_chomp.rs)
 
 ## Macros
 {id: macros}
