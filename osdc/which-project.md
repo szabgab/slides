@@ -12,23 +12,43 @@ Pro: You can decide on everything:
 * code layout
 * testing
 
-Contra: You have to do everything yourself
+Contra: You have to do everything yourself.
 
-* No users
-* No cooperation from others (at least at the beginning)
-* No community
+* programming
+* documentation
+* examples
+* design
+* logo
+* web site for the project
+
+* No users.
+* No cooperation from others (at least at the beginning).
+* No community.
+
+Advice:
+
 * Something like that probably already exists. Maybe better finding it and contributing to that project.
+* Take an existing proprietary product and implement an open source alternative
+
 
 ## A well-known project
 {id: a-well-known-project}
 
 * [VS Code](https://code.visualstudio.com/) - [GitHub](https://github.com/Microsoft/vscode/)
 * [Django](https://www.djangoproject.com/) - [GitHub](https://github.com/django/django)
-* [SQLite](https://www.sqlite.org/)
-* [Linux kernel](https://www.kernel.org/)
+* [SQLite](https://www.sqlite.org/) - [source code](https://sqlite.org/src/doc/trunk/README.md)
+* [Linux kernel](https://www.kernel.org/) - [source code](https://git.kernel.org/)
+* [Blender](https://www.blender.org/) - [Get Involved](https://www.blender.org/get-involved/)
 
-* All the simple problems are already solved
+Pro: Sounds good.
+
+Contra: Very difficult
+
+* All the simple problems are already solved.
 * The code-base is huge and quite complex.
+
+Pro:
+
 * There might be need for documentation, translation, examples
 
 ## A brand new project
@@ -36,14 +56,14 @@ Contra: You have to do everything yourself
 
 * [Explore GitHub](https://github.com/explore)
 * Pick the topic and the language
-* Sort by "Recently uploaded" and 0-1 stars
+* Sort by "Recently uploaded" and pick something with 0-1 stars
 
 ## A project that is missing something
 {id: low-hanging-fruits}
 
-* missing meta data from the package
-* missing Continuous Integration
-* not enough tests (low test coverage)
+* Missing meta data from the package.
+* Missing Continuous Integration.
+* Not enough tests (low test coverage).
 
 * [PyDigger](https://pydigger.com/)
 * [CPAN Digger](https://cpan-digger.perlmaven.com/)
@@ -56,16 +76,20 @@ Contra: You have to do everything yourself
 * API of a web site you use.
 * Dependencies of the applications at work.
 
-## By country of origin (or language spoken by the maintainer)
-{id: by-country}
+## Awesome lists
+{id: awesome-lists}
 
 * [Awesome list](https://github.com/sindresorhus/awesome)
+* [Awesome for non-programmers](https://github.com/szabgab/awesome-for-non-programmers)
+* [Awesome Open Source Israel](https://github.com/lirantal/awesome-opensource-israel)
+
+## By country of origin (or language spoken by the maintainer)
+{id: by-country}
 
 * [Australia](https://github.com/topics/australia)
 * [Chile](https://github.com/topics/chile)
 * [Germany](https://github.com/topics/germany)
 * [Israel](https://github.com/topics/israel)
-* [Israel](https://github.com/lirantal/awesome-opensource-israel)
 
 ## Type of project
 {id: type-of-project}
@@ -94,6 +118,20 @@ Contra: You have to do everything yourself
 * [ATutor](https://atutor.github.io/)
 * [Sakai](https://www.sakailms.org/)
 
+## JavaScript frameworks
+{id: web-frameworks}
+
+* React
+* Vue
+* Angular
+
+* Plugins for these
+
+## HTML/CSS frameworks
+{id: html-css-frameworks}
+
+* [Bulma](https://bulma.io/)
+* [Bootstrap](https://getbootstrap.com/)
 
 ## Databases
 {id: databases}
@@ -104,6 +142,27 @@ Contra: You have to do everything yourself
 * [MariaDB](https://mariadb.org/)
 * ...
 
+* [Databases on GitHub](https://github.com/topics/databases)
+
+## Compilers
+{id: compilers}
+
+* gcc
+* Python
+* Perl
+* Raku
+
+* [Compilers on Github](https://github.com/topics/compilers)
+
+
+## Networking (TCP/IP)
+{id: networking}
+
+* [Wireshark](https://www.wireshark.org/)
+* [Snort](https://www.snort.org/)
+
+* [Networking on GitHub](https://github.com/topics/networking)
+
 ## In the OSDC
 {id: in-the-osdc}
 
@@ -111,8 +170,21 @@ Contra: You have to do everything yourself
 * Coding projects of each-other.
 * Small contributions to other projects.
 
+## Static Site Generators
+{id: static-site-generators}
 
-## Advice
-{id: advice}
 
+* [Site Generators on on Jamstack](https://jamstack.org/generators/)
+
+
+## CMS - Content Management System
+{id: cms}
+
+* [CMS on GitHub](https://github.com/topics/cms)
+
+## Other
+{id: other}
+
+* Open source Co-pilot
+* Open source AI systems?
 
