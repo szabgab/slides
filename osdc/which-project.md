@@ -76,6 +76,15 @@ Pro:
 * API of a web site you use.
 * Dependencies of the applications at work.
 
+## A project by an organization
+{id: projects-by-organizations}
+
+* [Open Source projects by organizations](https://osdc.code-maven.com/open-source-by-organizations/)
+* Universities
+* Companies
+* Governments
+* Non-profits
+
 ## Awesome lists
 {id: awesome-lists}
 
@@ -163,13 +172,6 @@ Pro:
 
 * [Networking on GitHub](https://github.com/topics/networking)
 
-## In the OSDC
-{id: in-the-osdc}
-
-* Start with small, non-coding changes to projects maintained by the mentor (get used to the process, fast feedback)
-* Coding projects of each-other.
-* Small contributions to other projects.
-
 ## Static Site Generators
 {id: static-site-generators}
 
@@ -182,9 +184,19 @@ Pro:
 
 * [CMS on GitHub](https://github.com/topics/cms)
 
+## In the OSDC
+{id: in-the-osdc}
+
+* Start with small, non-coding changes to projects maintained by the mentor (get used to the process, fast feedback)
+* [Open Source by organization](https://osdc.code-maven.com/open-source-by-organizations/)
+* Coding projects of each-other.
+* Small contributions to other projects.
+
+
 ## Other
 {id: other}
 
 * Open source Co-pilot
 * Open source AI systems?
+
 
