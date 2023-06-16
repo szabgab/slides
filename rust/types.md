@@ -20,6 +20,8 @@
 
 ![](examples/intro/number_types.rs)
 
+![](examples/intro/numbers.rs)
+
 ## Rust type mismatch in numerical operation
 {id: rust-type-mismatch-in-numerical-operation}
 

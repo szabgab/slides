@@ -105,13 +105,23 @@ Since Rust 1.58
 
 * Module [std::io](https://doc.rust-lang.org/std/io/)
 * [String::new()](https://doc.rust-lang.org/std/string/struct.String.html#method.new) - Creates a new mutable empty string
-* `&mut name` passes the variable to the function as mutable variable.
+* `&mut name` passes a reference of the variable to the function as mutable variable. `&` indicates it is a reference.
 * `read_line` reads a line from the command line
 
 ![](examples/intro/hello_name.rs)
 
-## Rust - read STDIN - chomp
+![](examples/intro/hello_name.out)
+
+Two problems:
+* The response is broken. It has a newline after the name.
+* After the prompt the program waits on a new line.
+
+## Rust - read STDIN - chomp - remove trailing newline
 {id: rust-read-stdin-chomp}
+{i: trim_end}
+
+* [trim_end](https://doc.rust-lang.org/std/string/struct.String.html#method.trim_end) removes trailing whitespace.
+* `to_string` Converts the String to be able to assign to `name` again
 
 ![](examples/intro/hello_name_chomp.rs)
 
@@ -220,4 +230,22 @@ eprintln! to STDERR
 format!
 ```
 
+## Numerical operations (integers)
+{id: numerical-operations-integers}
+
+![](examples/intro/calc.rs)
+
+
+## Increment integers
+{id: increment-integers}
+
+![](examples/intro/increment.rs)
+
+
+
+![](examples/intro/small_integers_unfit_in_i8.rs)
+![](examples/intro/small_integers_unfit_in_i8.out)
+
+![](examples/intro/increment_small_integers.rs)
+![](examples/intro/increment_small_integers.out)
 
