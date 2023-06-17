@@ -1,6 +1,39 @@
 # Rust variable ownership
 {id: ownership}
 
+## Stack and Heap
+{id: stack-and-heap}
+
+* Stack  (fixed size, push/pop)
+* Heap   (any size, allocate/free)
+
+## Integers are copies
+{id: integers-are-copies}
+
+![](examples/ownership/integers.rs)
+![](examples/ownership/integers.out)
+
+## Literal string
+{id: literal-string}
+
+* The variable can be made mutable and then it can be replaced, but the literal (hard-coded) string is baked into the code of the program and thus it cannot be changed runtime.
+* This is a `&str`
+
+![](examples/ownership/literal_string.rs)
+
+## Mutable string
+{id: mutable-string}
+
+* If we declare the variable as a String then the literal value is copied to the heap and it can be changed.
+
+![](examples/ownership/mutable_string.rs)
+
+## Move strings
+{id: move-string}
+
+![](examples/ownership/move_string.rs)
+
+
 ## Rust ownership str
 {id: rust-ownership-str}
 
