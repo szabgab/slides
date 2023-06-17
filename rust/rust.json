@@ -16,6 +16,8 @@
         "boolean.md",
         "strings.md",
         "functions.md",
-        "ownership.md"
+        "ownership.md",
+        "number_guessing.md",
+        "other.md"
     ]
 }

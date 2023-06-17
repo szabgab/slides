@@ -18,3 +18,8 @@
 {id: rust-function-return-value}
 
 ![](examples/functions/return.rs)
+
+## Rust recursive function: factorial
+{id: rust-recursive-function-factorial}
+
+![](examples/functions/factorial.rs)

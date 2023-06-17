@@ -22,6 +22,8 @@
 
 ![](examples/intro/numbers.rs)
 
+* List of Rusts [primitive types](https://doc.rust-lang.org/core/primitive/index.html)
+
 ## Rust type mismatch in numerical operation
 {id: rust-type-mismatch-in-numerical-operation}
 

@@ -249,3 +249,5 @@ format!
 ![](examples/intro/increment_small_integers.rs)
 ![](examples/intro/increment_small_integers.out)
 
+![](examples/strings/string_to_float.rs)
+
