@@ -381,4 +381,14 @@ Day 3 09:00-15:00
    * Dependency management + environments + Docker (3 hours)
    * MLOps: logging, metrics, data-pipelines (2 hours)
 
+## mypy
+
+Dictionary where the keys are optional   NotRequired
+Dictionary where the values are optional
+
+RankerStatusType = TypedDict('RankerStatusType', {
+    "name": NotRequired[str],
+    "ui_name": NotRequired[str],
+
+
 

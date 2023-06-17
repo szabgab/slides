@@ -261,3 +261,7 @@ At one point I wanted the whole image creation and running in the image be part 
 
 ![](examples/pytest/test_parametrized_fixture_with_docker.py)
 
+## Pytest parameters
+{id: pytest-parameters}
+
+![](examples/pytest/test_mymath_parameters.py)

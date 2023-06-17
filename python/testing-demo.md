@@ -445,6 +445,11 @@ $ echo $?
 1
 ```
 
+## Testing demo: Failure in one sub
+{id: testing-demo-pytest-onsub-failure}
+
+![](examples/testing-demo/test_with_pytest_failure_onesub.py)
+
 
 ## Testing demo: pytest run doctests
 {id: testing-demo-pytest-run-doctests}
@@ -523,4 +528,5 @@ Sample code to use the Anagram module.
 {id: solution-testing-demo}
 
 ![](examples/testing-demo/test_solution_anagram.py)
+
 
