@@ -19,7 +19,17 @@
 
 ![](examples/functions/return.rs)
 
-## Rust recursive function: factorial
-{id: rust-recursive-function-factorial}
+## Rust recursive functions: factorial
+{id: rust-recursive-functions-factorial}
 
 ![](examples/functions/factorial.rs)
+
+## rust recursive functions: Fibonacci
+{id: rust-recursive-functions-fibonacci}
+
+![](examples/functions/recursive_fibonacci.rs)
+
+## Rust function without returning anything
+{id: rust-function-without-returning-anything}
+
+![](examples/functions/no_return.rs)

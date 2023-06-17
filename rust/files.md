@@ -39,3 +39,10 @@
 
 ![](examples/files/list_dir.rs)
 
+## Rust list dicrectory content recursively (tree)
+{id: directory-tree-recursively}
+
+* std::fs::File [struct.File](https://doc.rust-lang.org/std/fs/struct.File.html)
+
+![](examples/files/tree.rs)
+

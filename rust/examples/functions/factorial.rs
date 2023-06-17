@@ -1,7 +1,8 @@
 fn main() {
-    let n = 5;
-    let fact = factorial(n);
-    println!("Factorial of {n} is {fact}");
+    for n in 1..10 {
+        let fact = factorial(n);
+        println!("Factorial of {n} is {fact}");
+    }
 }
 
 fn factorial(n:i64) -> i64 {
