@@ -19,4 +19,7 @@
 
 ![](examples/arrays/tuple.rs)
 
+## Tuple
+{id: tuple}
 
+![](examples/other/tuple.rs)
