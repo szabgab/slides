@@ -4,6 +4,12 @@ use std::process::exit;
 use std::fs;
 
 fn main() {
+    let path = get_path();
+
+    list_dir(Path::new(&path));
+}
+
+fn get_path() -> String {
     let args: Vec<String> = env::args().collect();
 
     if args.len() > 2 {
@@ -17,7 +23,7 @@ fn main() {
         path = &args[1];
     }
 
-    list_dir(Path::new(path));
+    return path.to_string();
 }
 
 
