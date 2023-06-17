@@ -17,13 +17,12 @@ fn get_path() -> String {
         exit(1);
     }
 
-    let mut path = ".";
     if args.len() == 2 {
         println!("{}", args[1]);
-        path = &args[1];
+        return args[1].to_string();
     }
 
-    return path.to_string();
+    return ".".to_string();
 }
 
 
