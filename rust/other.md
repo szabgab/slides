@@ -13,9 +13,4 @@
 
 ![](examples/intro/constant_shadowing.rs)
 
-## CSV files
-{id: csv}
-
-* [csv](https://crates.io/crates/csv)
-
 

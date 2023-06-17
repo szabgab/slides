@@ -56,3 +56,9 @@
 {id: implicit-return-the-last-expression}
 
 ![](examples/functions/implicit_return.rs)
+
+## Increment in a function
+{id: increment-in-a-function}
+
+![](examples/functions/increment.rs)
+

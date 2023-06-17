@@ -18,6 +18,7 @@
         "functions.md",
         "ownership.md",
         "number_guessing.md",
+        "csv.md",
         "other.md"
     ]
 }
