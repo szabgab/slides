@@ -4,11 +4,13 @@
 ## Rust resources
 {id: rust-resources}
 
-* [From Perl to Rust](https://oylenshpeegul.gitlab.io/from-perl-to-rust/introduction.html)
-* [Rust Documentation](https://doc.rust-lang.org/)
-* [Rust the language](https://www.rust-lang.org/)
 * [Learn Rust](https://www.rust-lang.org/learn)
 * [The Rust book](https://doc.rust-lang.org/book/)
+
+* [Rust Documentation](https://doc.rust-lang.org/)
+* [Rust the language](https://www.rust-lang.org/)
+
+* [From Perl to Rust](https://oylenshpeegul.gitlab.io/from-perl-to-rust/introduction.html)
 
 * [The Rust book in Hebrew](https://github.com/IttayWeiss/rustbook-heb)
 
@@ -21,6 +23,7 @@ See in the [Rust book](https://doc.rust-lang.org/stable/book/ch01-01-installatio
 {id: rust-editor-and-ide}
 
 * Visual Studio Code with the `rust-analyzer` plugin.
+* vim
 
 
 ## Hello World
