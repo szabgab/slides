@@ -113,6 +113,8 @@ It also created a file called `Cargo.lock` and a folder called `target`.
 
 * Both single-line and multi-line comments are available in Rust
 
+* [spec of comments](https://doc.rust-lang.org/reference/comments.html)
+
 ![](examples/intro/comments.rs)
 
 ## Rust - Hello Foo
@@ -129,6 +131,12 @@ It also created a file called `Cargo.lock` and a folder called `target`.
 Since Rust 1.58
 
 ![](examples/intro/interpolation.rs)
+
+## Formatting string is required
+{id: formatting-string-is-required}
+ 
+![](examples/intro/formatting_required.rs)
+
 
 ## Rust - Hello name - input from STDIN
 {id: rust-hello-name}

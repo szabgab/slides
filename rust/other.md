@@ -19,3 +19,11 @@
 ![](examples/handle-time/Cargo.lock)
 ![](examples/handle-time/Cargo.toml)
 ![](examples/handle-time/src/main.rs)
+
+## String formatting
+{id: string-formatting}
+{i: format}
+{i: sprintf}
+
+![](examples/intro/string_formatting.rs)
+

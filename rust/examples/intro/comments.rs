@@ -7,5 +7,5 @@ fn main() {
         multiline comment
     */
 
-    println!("world");
+    println!("world"); // comments
 }
