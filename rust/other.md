@@ -13,4 +13,9 @@
 
 ![](examples/intro/constant_shadowing.rs)
 
+## Handle time
+{id: handle-time}
 
+![](examples/handle-time/Cargo.lock)
+![](examples/handle-time/Cargo.toml)
+![](examples/handle-time/src/main.rs)
