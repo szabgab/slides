@@ -37,7 +37,7 @@ fn main() {
 // TODO: go deeper than 2 levels to also handle examples/number-guessing-game/src/main.rs
 // TODO: but exclude examples/number-guessing-game/target/
 fn get_examples() -> Vec<String> {
-    let exclude = vec!["examples/number-guessing-game/Cargo.lock", "examples/number-guessing-game/Cargo.toml"];
+    let exclude = vec!["examples/hello-world/Cargo.lock", "examples/number-guessing-game/Cargo.lock", "examples/number-guessing-game/Cargo.toml"];
     let mut examples = vec![];
     let path = Path::new("examples");
     for entry in path.read_dir().expect("read_dir call failed") {
