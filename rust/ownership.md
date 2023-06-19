@@ -93,3 +93,5 @@
 
 ![](examples/ownership/change_i32.rs)
 
+![](examples/ownership/owner.rs)
+
