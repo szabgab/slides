@@ -1,10 +1,17 @@
-# Rust array
+# Arrays in Rust
 {id: rust-arrays}
 
 ## Rust array of numbers
 {id: rust-array}
 
+* [Array](https://doc.rust-lang.org/std/primitive.array.html)
+
 ![](examples/arrays/numbers.rs)
+
+## Array iterate on elements
+{id: array-iterate}
+
+![](examples/arrays/numbers_iterate.rs)
 
 ## Rust array iterate indices
 {id: rust-array-indices}
@@ -23,14 +30,4 @@
 ![](examples/arrays/numbers_mutable.rs)
 
 
-## Rust vector
-{id: rust-vector}
-{i: vec!}
-{i: push}
-
-* [Vec](https://doc.rust-lang.org/std/vec/struct.Vec.html)
-
-![](examples/arrays/number_vector.rs)
-
-![](examples/arrays/vectors.rs)
 

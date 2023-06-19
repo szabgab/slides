@@ -1,9 +1,16 @@
-# Tuple in Rust
+# Tuples in Rust
 {id: tuple}
 
-## Rust tuple - mixed ordered collection
+## Rust tuple - fixed-sizes, mixed, ordered collection
 {id: rust-tuple}
 {i: tuple}
+
+* Each value can be any type. (heterogeneous)
+* The types and the number of elements are fixed at creation.
+* It is ordered.
+
+* The content can be chnaged if the definition uses `mut`.
+* [Tuple](https://doc.rust-lang.org/std/primitive.tuple.html)
 
 ![](examples/tuples/create_tuple.rs)
 
