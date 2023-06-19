@@ -39,4 +39,12 @@
 ## Count words
 {id: count-words}
 
+* Given a string that consists of words and white-spaces, count how many times each word appears?
+
 ![](examples/vectors/count_words.rs)
+
+## Vector extend
+{id: vector-extend}
+
+![](examples/vectors/extend.rs)
+

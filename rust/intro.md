@@ -1,4 +1,4 @@
-# Rust intro
+# Introduction to Rust
 {id: rust-intro}
 
 ## Rust resources

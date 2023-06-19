@@ -1,4 +1,4 @@
-# Rust hash
+# Hashes in Rust
 {id: hash}
 
 ## Rust HashMap

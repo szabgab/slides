@@ -30,3 +30,9 @@
 ![](examples/functions/reverse.rs)
 ![](examples/functions/square_root.rs)
 ![](examples/other/collect.rs)
+
+## ROT13
+{id: rot13}
+
+![](examples/other/rot13.rs)
+

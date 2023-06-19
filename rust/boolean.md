@@ -1,4 +1,4 @@
-# Rust boolean
+# Boolean values in Rust
 {id: boolean}
 
 

@@ -1,4 +1,4 @@
-# Rust loop
+# Loops in Rust
 {id: loops}
 
 ## While loop in Rust
