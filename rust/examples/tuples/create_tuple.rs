@@ -5,6 +5,3 @@ fn main() {
     println!("{}", things.2);
     println!("{:?}", things);
 }
-
-
-
