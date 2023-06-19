@@ -62,3 +62,8 @@
 
 ![](examples/functions/increment.rs)
 
+## Count digits using functions
+{id: count-digits-functions}
+
+![](examples/functions/count_digits.rs)
+
