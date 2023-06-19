@@ -35,3 +35,8 @@
 ![](examples/vectors/mutable_vector_of_strings_more.rs)
 
 ![](examples/vectors/mutable_empty_vector.rs)
+
+## Count words
+{id: count-words}
+
+![](examples/vectors/count_words.rs)

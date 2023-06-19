@@ -29,5 +29,9 @@
 
 ![](examples/arrays/numbers_mutable.rs)
 
+## Count digits
+{id: count-digits}
+
+![](examples/arrays/count_digits.rs)
 
 

@@ -1,4 +1,4 @@
-# Rust strings
+# Strings in Rust
 {id: rust-strings}
 
 ## Create string
@@ -61,4 +61,23 @@
 {id: concatetation}
 
 ![](examples/strings/concatenation.rs)
+
+## Iterate over the characters of a string
+{id: iterate-over-characters}
+
+![](examples/strings/iterate.rs)
+
+## Split string
+{id: split-string}
+{i: split}
+
+![](examples/strings/split_string.rs)
+![](examples/strings/split_string.out)
+
+## Split string on whitespace
+{id: split-string-on-whitespace}
+{i: split_whitespace}
+
+![](examples/strings/split_string_whitespace.rs)
+![](examples/strings/split_string_whitespace.out)
 
