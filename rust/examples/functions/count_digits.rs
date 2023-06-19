@@ -1,5 +1,10 @@
 fn main() {
     let text = "1213 456 788";
+    let counter = count_digits(text);
+    display(&counter);
+}
+
+fn count_digits(text: &str) -> [i8; 10] {
     let mut counter: [i8; 10] = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
     for ch in text.chars() {
         if ch == ' ' {
@@ -11,7 +16,7 @@ fn main() {
         counter[ix] += 1;
     }
 
-    display(&counter);
+    counter
 }
 
 fn display(counter: &[i8]) {
