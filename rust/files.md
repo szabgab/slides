@@ -3,11 +3,17 @@
 
 ## Rust - write to file
 {id: rust-write-to-file}
+{i: File}
+{i: Write}
+{i: create}
+{i: writeln!}
 
 ![](examples/files/write.rs)
 
 ## Rust - read content of a file as a string
 {id: rust-read-content-of-a-file-as-a-string}
+{i: open}
+{i: read_to_string}
 
 ![](examples/files/read_whole_file.rs)
 

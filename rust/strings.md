@@ -57,3 +57,8 @@
 ![](examples/strings/string_to_int.rs)
 ![](examples/strings/string_to_int.out)
 
+## Concatenation
+{id: concatetation}
+
+![](examples/strings/concatenation.rs)
+

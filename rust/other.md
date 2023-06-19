@@ -27,3 +27,6 @@
 
 ![](examples/intro/string_formatting.rs)
 
+![](examples/functions/reverse.rs)
+![](examples/functions/square_root.rs)
+![](examples/other/collect.rs)
