@@ -59,3 +59,8 @@
 
 ![](examples/files/count_digits.rs)
 
+## Makedirs
+{id: makedirs}
+
+![](examples/files/makedir.rs)
+
