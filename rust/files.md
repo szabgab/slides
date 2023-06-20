@@ -54,3 +54,8 @@
 
 ![](examples/files/list_tree.rs)
 
+## Count digits in file
+{id: count-digits-in-file}
+
+![](examples/files/count_digits.rs)
+
