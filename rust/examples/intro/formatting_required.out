@@ -1,0 +1,13 @@
+error: format argument must be a string literal
+ --> examples/intro/formatting_required.rs:3:14
+  |
+3 |     println!(name);
+  |              ^^^^
+  |
+help: you might be missing a string literal to format with
+  |
+3 |     println!("{}", name);
+  |              +++++
+
+error: aborting due to previous error
+

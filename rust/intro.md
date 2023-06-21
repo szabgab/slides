@@ -133,10 +133,17 @@ Since Rust 1.58
 
 ![](examples/intro/interpolation.rs)
 
-## Formatting string is required
-{id: formatting-string-is-required}
+## Printing a string
+{id: printing-a-string}
 
 ![](examples/intro/formatting_required.rs)
+![](examples/intro/formatting_required.out)
+
+## Printing a string fixed
+{id: printing-a-string-fixed}
+
+![](examples/intro/formatting_required_fixed.rs)
+![](examples/intro/formatting_required_fixed.out)
 
 ## Debugging print
 {id: debugging-print}
