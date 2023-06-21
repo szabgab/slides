@@ -143,6 +143,7 @@ Since Rust 1.58
 {i: dbg}
 
 ![](examples/intro/debugging_print.rs)
+![](examples/intro/debugging_print.out)
 
 
 ## Rust - Hello name - input from STDIN
