@@ -122,6 +122,7 @@ It also created a file called `Cargo.lock` and a folder called `target`.
 {i: let}
 
 ![](examples/intro/hello_foo.rs)
+![](examples/intro/hello_foo.out)
 
 * [format macro](https://doc.rust-lang.org/std/fmt/)
 
@@ -134,8 +135,14 @@ Since Rust 1.58
 
 ## Formatting string is required
 {id: formatting-string-is-required}
- 
+
 ![](examples/intro/formatting_required.rs)
+
+## Debugging print
+{id: debugging-print}
+{i: dbg}
+
+![](examples/intro/debugging_print.rs)
 
 
 ## Rust - Hello name - input from STDIN
