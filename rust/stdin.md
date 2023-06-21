@@ -5,12 +5,12 @@
 {id: variables-are-immutable}
 {i: let}
 
-* Variables are by default immutable
+* Variables are immutable by default
 
 ![](examples/stdin/immutable_string.rs)
 ![](examples/stdin/immutable_string.out)
 
-## String in mutable variable
+## String in a mutable variable
 {id: rust-string-in-mutable-variable}
 {i: let}
 {i: mut}
@@ -19,14 +19,6 @@
 
 ![](examples/stdin/mutable_string.rs)
 ![](examples/stdin/mutable_string.out)
-
-## Number in mutable variables
-{id: rust-number-in-mutable-variables}
-{i: let}
-{i: mut}
-
-![](examples/stdin/number_mutable.rs)
-![](examples/stdin/number_mutable.out)
 
 ## Rust - read input from STDIN
 {id: rust-hello-name}
@@ -68,35 +60,61 @@ Two problems:
 
 ![](examples/stdin/hello_name_chomp_flush.rs)
 
-## Rust - convert string to number
+## Convert string to (integer) number
 {id: rust-convert-string-to-number}
+{i: i32}
+{i: parse}
+{i: expect}
+
+* In the printing we won't see the difference, but we can do numberical operations on numbers
 
 ![](examples/stdin/string_to_int.rs)
 ![](examples/stdin/string_to_int.out)
 
-## Rust - convert string to number after removing whitespaces
+## Convert string to number that ends with newline
+{id: rust-convert-string-to-number-end-with-newline}
+{i: trim}
+
+![](examples/stdin/string_to_int_fail.rs)
+![](examples/stdin/string_to_int_fail.out)
+
+## Convert string to number after removing whitespaces
 {id: rust-convert-string-to-number-trim}
+{i: trim}
 
 ![](examples/stdin/string_to_int_trim.rs)
 ![](examples/stdin/string_to_int_trim.out)
 
 ## Convert string to float
 {id: convert-string-to-float}
+{i: f32}
+
+* Sometimes we are expecting floating point numbers.
 
 ![](examples/stdin/string_to_float.rs)
 ![](examples/stdin/string_to_float.out)
 
-## Hello World in redeclared immutable variable - shadowed
-{id: rust-hello-world-in-redeclared-immutable-variable}
+## Get number from STDIN
+{id: get-number-from-stdin}
+
+![](examples/stdin/get_number_from_stdin.rs)
+
+## Redeclare immutable variable - Shadowing
+{id: rust-redeclared-immutable-variable}
 {i: let}
-{i: mut}
+
+![](examples/stdin/shadow.rs)
+![](examples/stdin/shadow.out)
+
+## Redeclare immutable variable and change type - Shadowing
+{id: rust-redeclared-immutable-variable-change-type}
+{i: let}
 
 * When shadowing we can also change the type of the variable.
 * e.g. we read from a file or from STDIN a string that we then convert to a number. We can use the same variable name.
 
-![](examples/intro/hello_world_in_redeclared_immutable_variable.rs)
-
-![](examples/intro/shadow.rs)
+![](examples/stdin/change_type.rs)
+![](examples/stdin/change_type.out)
 
 ## Conditional: if
 {id: rust-conditional-if}
@@ -165,5 +183,13 @@ Two problems:
 
 ![](examples/intro/empty_string.rs)
 ![](examples/intro/empty_string.out)
+
+## Number in a mutable variables
+{id: rust-number-in-mutable-variables}
+{i: let}
+{i: mut}
+
+![](examples/stdin/number_mutable.rs)
+![](examples/stdin/number_mutable.out)
 
 

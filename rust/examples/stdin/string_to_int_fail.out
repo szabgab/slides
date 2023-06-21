@@ -1,0 +1,4 @@
+'23
+'
+thread 'main' panicked at 'Could not convert to i32: ParseIntError { kind: InvalidDigit }', string_to_int_fail.rs:6:10
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace

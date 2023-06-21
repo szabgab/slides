@@ -1,5 +1,5 @@
 fn main() {
-    let text = "23";
+    let text = "23\n";
     println!("'{}'", text);
     let number: i32 = text
         .parse()
