@@ -1,24 +1,26 @@
 # STDIN
 {id: stdin}
 
-## Hello World in (immutable) variable
-{id: rust-hello-world-in-immutable-variable}
+## Variables are immutable by default
+{id: variables-are-immutable}
 {i: let}
 
 * Variables are by default immutable
 
-![](examples/stdin/hello_world_in_immutable_variable.rs)
-![](examples/stdin/hello_world_in_immutable_variable.out)
+![](examples/stdin/immutable_string.rs)
+![](examples/stdin/immutable_string.out)
 
 ## String in mutable variable
 {id: rust-string-in-mutable-variable}
 {i: let}
 {i: mut}
 
-![](examples/stdin/hello_world_in_mutable_variable.rs)
-![](examples/stdin/hello_world_in_mutable_variable.out)
+* Use the `mut` keyword to mark a variable as mutable.
 
-## Rust number in mutable variables
+![](examples/stdin/mutable_string.rs)
+![](examples/stdin/mutable_string.out)
+
+## Number in mutable variables
 {id: rust-number-in-mutable-variables}
 {i: let}
 {i: mut}
@@ -26,7 +28,7 @@
 ![](examples/stdin/number_mutable.rs)
 ![](examples/stdin/number_mutable.out)
 
-## Rust - Hello name - input from STDIN
+## Rust - read input from STDIN
 {id: rust-hello-name}
 {i: std::io}
 {i: String}
@@ -44,25 +46,45 @@
 ![](examples/stdin/hello_name.out)
 
 Two problems:
-* The response is broken. It has a newline after the name.
+* The response looks broken. It has a newline after the name.
 * After the prompt the program waits on a new line.
 
-## Rust - read STDIN - chomp - remove trailing newline
+## Rust - read STDIN - remove trailing newline (trim, chomp)
 {id: rust-read-stdin-chomp}
 {i: trim_end}
+{i: to_string}
 
 * [trim_end](https://doc.rust-lang.org/std/string/struct.String.html#method.trim_end) removes trailing whitespace.
 * `to_string` Converts the String to be able to assign to `name` again
 
 ![](examples/stdin/hello_name_chomp.rs)
 
-## Rust - flush STDOUT - read STDIN - chomp
+## Rust - flush STDOUT - read STDIN
 {id: rust-flush-stdout-read-stdin-chomp}
+{i: print!}
 
+* We use `print!` and not `println!`
 * `use std::io::Write;` adds the `flush`
 
 ![](examples/stdin/hello_name_chomp_flush.rs)
 
+## Rust - convert string to number
+{id: rust-convert-string-to-number}
+
+![](examples/stdin/string_to_int.rs)
+![](examples/stdin/string_to_int.out)
+
+## Rust - convert string to number after removing whitespaces
+{id: rust-convert-string-to-number-trim}
+
+![](examples/stdin/string_to_int_trim.rs)
+![](examples/stdin/string_to_int_trim.out)
+
+## Convert string to float
+{id: convert-string-to-float}
+
+![](examples/stdin/string_to_float.rs)
+![](examples/stdin/string_to_float.out)
 
 ## Hello World in redeclared immutable variable - shadowed
 {id: rust-hello-world-in-redeclared-immutable-variable}
@@ -137,7 +159,6 @@ Two problems:
 ![](examples/intro/increment_small_integers.rs)
 ![](examples/intro/increment_small_integers.out)
 
-![](examples/strings/string_to_float.rs)
 
 ## Declare empty variable - requires type
 {id: declare-empty-variable}

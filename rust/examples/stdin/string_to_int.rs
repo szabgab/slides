@@ -1,0 +1,8 @@
+fn main() {
+    let text = "23";
+    println!("'{}'", text);
+    let number: i32 = text.parse().expect("Could not convert to i32");
+
+    println!("'{}'", number);
+    println!("'{}'", number + 1);
+}

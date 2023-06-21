@@ -51,12 +51,6 @@
 ![](examples/strings/starts_with.rs)
 ![](examples/strings/starts_with.out)
 
-## Rust - convert string to number
-{id: rust-convert-string-to-number}
-
-![](examples/strings/string_to_int.rs)
-![](examples/strings/string_to_int.out)
-
 ## Concatenation
 {id: concatetation}
 
