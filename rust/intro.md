@@ -132,6 +132,7 @@ It also created a file called `Cargo.lock` and a folder called `target`.
 Since Rust 1.58
 
 ![](examples/intro/interpolation.rs)
+![](examples/intro/interpolation.out)
 
 ## Printing a string
 {id: printing-a-string}
