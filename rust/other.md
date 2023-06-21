@@ -36,3 +36,8 @@
 
 ![](examples/other/rot13.rs)
 
+## Chars to string
+{id: chars-to-string}
+
+![](examples/other/chars_to_string.rs)
+
