@@ -41,3 +41,24 @@
 
 ![](examples/other/chars_to_string.rs)
 
+## Rust and print
+{id: rust-and-print}
+
+```
+print!
+println!
+eprint!   to STDERR
+eprintln! to STDERR
+
+format!
+```
+
+## Macros
+{id: macros}
+
+Somthing that looks like a function but ends with an exclamation point. e.g. `println!`
+
+* Metaprogramming - a program that generate a program
+
+
+
