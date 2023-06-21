@@ -9,6 +9,7 @@
     "files": [
         "intro.md",
         "stdin.md",
+        "argv.md",
         "chars.md",
         "boolean.md",
         "strings.md",

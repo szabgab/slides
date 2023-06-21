@@ -134,17 +134,6 @@ Two problems:
 
 ![](examples/intro/if_else.rs)
 
-## Command line arguments - argv
-{id: command-line-arguments}
-{i: argv}
-
-![](examples/intro/argv.rs)
-
-## Rust rectangle ARGV
-{id: rust-rectangle}
-
-![](examples/intro/rectangle_argv.rs)
-
 ## Variable Scope in Rust
 {id: rust-variable-scope}
 
