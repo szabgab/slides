@@ -123,17 +123,6 @@ Two problems:
 
 ![](examples/stdin/get_number_from_stdin_same_variable.rs)
 
-## Conditional: if
-{id: rust-conditional-if}
-{i: if}
-
-![](examples/intro/if.rs)
-
-## Conditional: if - else
-{id: rust-conditional-if-else}
-
-![](examples/intro/if_else.rs)
-
 ## Variable Scope in Rust
 {id: rust-variable-scope}
 
