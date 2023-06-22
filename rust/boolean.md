@@ -16,11 +16,14 @@
 
 ## Conditional: else - if
 {id: rust-conditional-else-if}
+{i: arms}
+
+* All the code pathes in an if-else-if statement are called "arms".
 
 ![](examples/booleans/else_if.rs)
 ![](examples/booleans/else_if.out)
 
-## Rust: boolean values
+## Rust: boolean values true and false
 {id: rust-boolean-values}
 {i: true}
 {i: false}
@@ -32,22 +35,24 @@
 {id: assign-result-to-variable}
 
 ![](examples/booleans/assign_result_to_variable.rs)
+![](examples/booleans/assign_result_to_variable.out)
 
 ## Rust: other types don't have true/false values
 {id: rust-boolean-only}
 
 ![](examples/booleans/other.rs)
+![](examples/booleans/other.out)
 
-## Assign bool to variable
-{id: assign-bool-to-variable}
-
-![](examples/booleans/assign_bool.rs)
+* expected `bool`, found integer
 
 ## Toggle
 {id: toggle}
-{id: !}
+{i: not}
+
+* ! is the not-operator
 
 ![](examples/booleans/toggle.rs)
+![](examples/booleans/toggle.out)
 
 ## Conditional (Ternary) operator
 {id: ternary-operator}
