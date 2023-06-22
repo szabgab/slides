@@ -13,6 +13,19 @@
 ![](examples/ownership/integers.rs)
 ![](examples/ownership/integers.out)
 
+## Mutable integers are copies
+{id: mutable-integers-are-copies}
+
+![](examples/ownership/mutable_integers.rs)
+![](examples/ownership/mutable_integers.out)
+
+## Immutable integers are copies
+{id: immutable-integer-are-copies}
+
+![](examples/ownership/immutable_integer.rs)
+![](examples/ownership/immutable_integer.out)
+
+
 ## Literal string
 {id: literal-string}
 

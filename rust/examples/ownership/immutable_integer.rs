@@ -1,11 +1,11 @@
 fn main() {
-    let a = 23;
+    let mut a = 23;
     println!("{a}");
 
-    let mut b = a;
+    let b = a;
     println!("{b}");
 
-    b = 42;
+    a += 1;
     println!("{a}");
     println!("{b}");
 }
