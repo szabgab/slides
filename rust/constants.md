@@ -10,8 +10,8 @@
 * Must have type declaration.
 * Should be `UPPER_CASE`.
 
-![](examples/intro/constant.rs)
-![](examples/intro/constant.out)
+![](examples/constants/constant.rs)
+![](examples/constants/constant.out)
 
 
 
