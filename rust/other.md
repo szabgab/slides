@@ -7,12 +7,6 @@
 
 ![](examples/other/shadowing.rs)
 
-## Constant shadowing
-{id: constant-shadowing}
-{i: const}
-
-![](examples/intro/constant_shadowing.rs)
-
 ## Handle time
 {id: handle-time}
 

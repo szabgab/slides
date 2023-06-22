@@ -131,38 +131,6 @@ Two problems:
 ![](examples/intro/scope.rs)
 ![](examples/intro/scope.out)
 
-## Rust constants
-{id: rust-constants}
-{i: const}
-
-* Value that can be computed during compilation.
-* Cannot be changed.
-* Must have type declaration.
-* Should be `UPPER_CASE`.
-
-![](examples/intro/constant.rs)
-
-
-## Numerical operations (integers)
-{id: numerical-operations-integers}
-
-![](examples/intro/calc.rs)
-
-
-## Increment integers
-{id: increment-integers}
-
-![](examples/intro/increment.rs)
-
-
-
-![](examples/intro/small_integers_unfit_in_i8.rs)
-![](examples/intro/small_integers_unfit_in_i8.out)
-
-![](examples/intro/increment_small_integers.rs)
-![](examples/intro/increment_small_integers.out)
-
-
 ## Declare empty variable - requires type
 {id: declare-empty-variable}
 

@@ -19,4 +19,6 @@ fn main() {
     let div = x / y;
     println!("div: {}", div);
 
+    let modulus = x % y;
+    println!("mod: {}", modulus);
 }

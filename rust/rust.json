@@ -11,6 +11,8 @@
         "stdin.md",
         "argv.md",
         "boolean.md",
+        "numbers.md",
+        "constants.md",
         "chars.md",
         "strings.md",
         "loops.md",
