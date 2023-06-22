@@ -1,0 +1,14 @@
+error[E0596]: cannot borrow `name` as mutable, as it is not declared as mutable
+ --> examples/ownership/mutable_string_in_immutable_variable.rs:5:5
+  |
+5 |     name.push_str(" Bar");
+  |     ^^^^^^^^^^^^^^^^^^^^^ cannot borrow as mutable
+  |
+help: consider changing this to be mutable
+  |
+2 |     let mut name = String::from("Foo");
+  |         +++
+
+error: aborting due to previous error
+
+For more information about this error, try `rustc --explain E0596`.

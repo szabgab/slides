@@ -1,0 +1,21 @@
+error[E0382]: borrow of moved value: `name`
+ --> examples/ownership/move_string.rs:8:15
+  |
+2 |     let name = String::from("Foo");
+  |         ---- move occurs because `name` has type `String`, which does not implement the `Copy` trait
+...
+5 |     let other = name;
+  |                 ---- value moved here
+...
+8 |     println!("{name}"); // value borrowed here after move
+  |               ^^^^^^ value borrowed here after move
+  |
+  = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider cloning the value if the performance cost is acceptable
+  |
+5 |     let other = name.clone();
+  |                     ++++++++
+
+error: aborting due to previous error
+
+For more information about this error, try `rustc --explain E0382`.
