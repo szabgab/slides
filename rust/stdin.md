@@ -177,4 +177,13 @@ Two problems:
 ![](examples/stdin/number_mutable.rs)
 ![](examples/stdin/number_mutable.out)
 
+## Exercise STDIN rectangle
+{id: exercise-stdin-rectangle}
+
+* Ask the use for the length and the width of a rectangle and print the area and the circumference to the screen.
+
+## Solution STDIN rectangle
+{id: solution-stdin-rectangle}
+
+![](examples/stdin/rectangle.rs)
 
