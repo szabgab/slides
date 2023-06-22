@@ -112,6 +112,7 @@ Pro:
 
 * [Firefox](https://www.mozilla.org/en-US/firefox/new/)
 * [Open Office](https://www.openoffice.org/)
+* [Libre Office](https://www.libreoffice.org/)
 * [VLC](https://www.videolan.org/vlc/)
 
 ##  Web application
@@ -130,9 +131,9 @@ Pro:
 ## JavaScript frameworks
 {id: web-frameworks}
 
-* React
-* Vue
-* Angular
+* [React](https://react.dev/) - [source](https://github.com/facebook/react)
+* [Vue](https://vuejs.org/) - [source](https://github.com/vuejs/vue)
+* [Angular](https://angular.io/) - [source](https://github.com/angular/angular)
 
 * Plugins for these
 
@@ -145,9 +146,9 @@ Pro:
 ## Databases
 {id: databases}
 
-* SQLite
-* Postgres
-* MySQL
+* [SQLite](https://www.sqlite.org/)
+* [PostgreSQ:](https://www.postgresql.org/) - [Test fram](https://buildfarm.postgresql.org/)
+* [MySQL](https://www.mysql.com/)
 * [MariaDB](https://mariadb.org/)
 * ...
 
@@ -156,10 +157,10 @@ Pro:
 ## Compilers
 {id: compilers}
 
-* gcc
-* Python
-* Perl
-* Raku
+* [gcc](https://gcc.gnu.org/)
+* [Python](https://www.python.org/)
+* [Perl](https://www.perl.org/)
+* [Raku](https://raku.org/)
 
 * [Compilers on Github](https://github.com/topics/compilers)
 
@@ -175,9 +176,7 @@ Pro:
 ## Static Site Generators
 {id: static-site-generators}
 
-
 * [Site Generators on on Jamstack](https://jamstack.org/generators/)
-
 
 ## CMS - Content Management System
 {id: cms}
