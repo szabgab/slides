@@ -26,3 +26,11 @@ This is the Quick start example from the README of the project:
 ![](examples/handlebars-render-to-file/Cargo.toml)
 ![](examples/handlebars-render-to-file/Cargo.lock)
 
+##  Handlebars - read template from file
+{id: handlebars-read-template-from-file}
+
+![](examples/handlebars-template-file/template.html)
+![](examples/handlebars-template-file/src/main.rs)
+![](examples/handlebars-template-file/Cargo.toml)
+![](examples/handlebars-template-file/Cargo.lock)
+
