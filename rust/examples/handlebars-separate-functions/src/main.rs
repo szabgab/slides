@@ -28,6 +28,7 @@ fn render_register_template_using_name() -> Result<(), Box<dyn Error>> {
     let mut reg = Handlebars::new();
     reg.register_template_string("tpl_1", "Good afternoon, {{name}}")?;
     println!("{}", reg.render("tpl_1", &json!({"name": "foo"}))?);
+    println!("{}", reg.render("tpl_1", &json!({"name": "bar"}))?);
 
     Ok(())
 }
