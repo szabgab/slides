@@ -12,3 +12,10 @@ This is the Quick start example from the README of the project:
 ![](examples/handlebars-quick/Cargo.toml)
 ![](examples/handlebars-quick/Cargo.lock)
 
+## Quick start
+{id: handlebars-separate-functions}
+
+![](examples/handlebars-separate-functions/src/main.rs)
+![](examples/handlebars-separate-functions/Cargo.toml)
+![](examples/handlebars-separate-functions/Cargo.lock)
+
