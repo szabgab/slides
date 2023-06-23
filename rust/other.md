@@ -47,5 +47,11 @@ Somthing that looks like a function but ends with an exclamation point. e.g. `pr
 
 * Metaprogramming - a program that generate a program
 
+## Split function into files
+{id: split-functions-into-file}
 
+![](examples/project/src/main.rs)
+![](examples/project/src/helper.rs)
+![](examples/project/Cargo.toml)
+![](examples/project/Cargo.lock)
 
