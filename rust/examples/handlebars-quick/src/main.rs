@@ -2,7 +2,14 @@ use handlebars::Handlebars;
 use serde_json::json;
 use std::error::Error;
 
-fn main() -> Result<(), Box<dyn Error>> {
+fn main() {
+    match render() {
+        Ok(_) => println!(""),
+        Err(_) => println!("error"),
+    }
+}
+
+fn render() -> Result<(), Box<dyn Error>> {
     let mut reg = Handlebars::new();
     // render without register
     println!(
