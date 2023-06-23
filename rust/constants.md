@@ -14,11 +14,11 @@
 ![](examples/constants/constant.out)
 
 
-
 ## Constant shadowing
 {id: constant-shadowing}
 {i: const}
 
 ![](examples/constants/constant_shadowing.rs)
+![](examples/constants/constant_shadowing.out)
 
 
