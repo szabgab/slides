@@ -25,6 +25,7 @@
         "functions.md",
         "ownership.md",
         "number_guessing.md",
+        "datetime.md",
         "csv.md",
         "handlebars.md",
         "other.md"

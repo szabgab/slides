@@ -6,6 +6,6 @@
 
 * [csv](https://crates.io/crates/csv)
 
-![](examples/handle-csv/planets.csv)
-![](examples/handle-csv/Cargo.toml)
-![](examples/handle-csv/Cargo.lock)
+![](examples/csv-demo/planets.csv)
+![](examples/csv-demo/Cargo.toml)
+![](examples/csv-demo/Cargo.lock)
