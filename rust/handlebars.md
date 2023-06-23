@@ -1,0 +1,14 @@
+# Handlebars
+{id: handlebars}
+
+## Quick start
+{id: handlebars-quick-demo}
+
+* [Handlebars](https://crates.io/crates/handlebars) is templating language implemented in Rust.
+
+This is the Quick start example from the README of the project:
+
+![](examples/handlebars-quick/src/main.rs)
+![](examples/handlebars-quick/Cargo.toml)
+![](examples/handlebars-quick/Cargo.lock)
+
