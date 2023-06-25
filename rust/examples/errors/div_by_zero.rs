@@ -2,17 +2,17 @@ use std::io;
 use std::io::Write;
 
 fn main() {
-    divide();
-    divide();
-    divide();
+    loop {
+        let num = get_number();
+        divide_by(num);
+    }
 }
 
 
-fn divide() {
+fn divide_by(num: i32) {
     let a = 100;
-    let b = get_number();
-    let x = a / b;
-    println!("{x}");
+    let x = a / num;
+    println!("{a} / {num} = {x}");
 }
 
 fn get_number() -> i32 {
