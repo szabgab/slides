@@ -10,7 +10,7 @@ jobs:
       fail-fast: false
       matrix:
         runner: [ubuntu-latest]
-        nodejs: [ 14.15 ]
+        nodejs: [ 18.16 ]
 
     runs-on: ${{matrix.runner}}
     name: OS ${{matrix.runner}} NodeJS ${{matrix.nodejs}}
