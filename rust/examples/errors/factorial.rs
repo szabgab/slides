@@ -3,19 +3,21 @@ use std::io::Write;
 
 fn main() {
     loop {
-        let num = get_number();
-        divide_by(num);
+        let number = get_number();
+        let fact = factorial(number);
+        println!("{number}! is {fact}");
     }
 }
 
-
-fn divide_by(num: i32) {
-    let a = 100;
-    let x = a / num;
-    println!("{a} / {num} = {x}");
+fn factorial(n:i64) -> i64 {
+    if n == 0 {
+        return 1;
+    }
+    return n * factorial(n-1);
 }
 
-fn get_number() -> i32 {
+
+fn get_number() -> i64 {
     let mut number = String::new();
 
     print!("Please type in a number: ");
@@ -24,10 +26,10 @@ fn get_number() -> i32 {
         .read_line(&mut number)
         .expect("Faild to get input");
 
-    let number:i32 = number
+    let number:i64 = number
         .trim()
         .parse()
-        .expect("Could not convert to i32");
+        .expect("Could not convert to i64");
 
     number
 }

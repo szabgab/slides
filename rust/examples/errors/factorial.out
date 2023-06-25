@@ -1,0 +1,10 @@
+Please type in a number: 5
+5! is 120
+Please type in a number: 10
+10! is 3628800
+Please type in a number: -1
+
+thread 'main' has overflowed its stack
+fatal runtime error: stack overflow
+./rust.sh: line 19: 13666 Aborted                 (core dumped) ./myexe $*
+

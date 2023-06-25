@@ -14,14 +14,30 @@
 ![](examples/errors/div_by_zero.rs)
 ![](examples/errors/div_by_zero.out)
 
+## factorial function, runtime panic
+{id: factorial-function-runtime-panic}
+
+![](examples/errors/factorial.rs)
+![](examples/errors/factorial.out)
+
+## factorial create panic
+{id: factorial-create-panic}
+
+![](examples/errors/factorial_create_panic.rs)
+![](examples/errors/factorial_create_panic.out)
+
 ## Out of bound for vectors
 {id: out-of-bound-for-vectors}
+
+* Run-time panic
 
 ![](examples/errors/out_of_bounds_vector.rs)
 ![](examples/errors/out_of_bounds_vector.out)
 
 ## Out of bound for arrays
 {id: out-of-bound-for-arrays}
+
+* Compile-time panic
 
 ![](examples/errors/out_of_bounds_array.rs)
 ![](examples/errors/out_of_bounds_array.out)

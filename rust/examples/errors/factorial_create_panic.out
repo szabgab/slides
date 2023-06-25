@@ -1,0 +1,7 @@
+Please type in a number: 10
+10! is 3628800
+Please type in a number: 0
+0! is 1
+Please type in a number: -1
+thread 'main' panicked at 'Cannot compute factorial of negative number', examples/errors/factorial_create_panic.rs:14:9
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
