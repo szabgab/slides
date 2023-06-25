@@ -1,0 +1,10 @@
+error: this operation will panic at runtime
+ --> examples/errors/div_by_zero_hard_coded.rs:8:13
+  |
+8 |     let y = a / c;
+  |             ^^^^^ attempt to divide `8_i32` by zero
+  |
+  = note: `#[deny(unconditional_panic)]` on by default
+
+error: aborting due to previous error
+

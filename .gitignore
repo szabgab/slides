@@ -108,3 +108,4 @@ crystal/examples/kemal/bin/
 /javascript/examples/demo-app/dist/main.js
 
 /rust/myexe
+/rust/*.o

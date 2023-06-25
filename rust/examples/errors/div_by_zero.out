@@ -1,0 +1,5 @@
+Please type in a number: 20
+5
+Please type in a number: 0
+thread 'main' panicked at 'attempt to divide by zero', examples/errors/div_by_zero.rs:7:13
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
