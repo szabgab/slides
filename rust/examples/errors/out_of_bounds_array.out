@@ -1,0 +1,10 @@
+error: this operation will panic at runtime
+ --> examples/errors/out_of_bounds_array.rs:4:20
+  |
+4 |     println!("{}", v[5]);
+  |                    ^^^^ index out of bounds: the length is 3 but the index is 5
+  |
+  = note: `#[deny(unconditional_panic)]` on by default
+
+error: aborting due to previous error
+

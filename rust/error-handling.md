@@ -14,3 +14,14 @@
 ![](examples/errors/div_by_zero.rs)
 ![](examples/errors/div_by_zero.out)
 
+## Out of bound for vectors
+{id: out-of-bound-for-vectors}
+
+![](examples/errors/out_of_bounds_vector.rs)
+![](examples/errors/out_of_bounds_vector.out)
+
+## Out of bound for arrays
+{id: out-of-bound-for-arrays}
+
+![](examples/errors/out_of_bounds_array.rs)
+![](examples/errors/out_of_bounds_array.out)

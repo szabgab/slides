@@ -4,6 +4,9 @@ use std::io::Write;
 fn main() {
     loop {
         let num = get_number();
+        if num == 0 {
+            panic!("Cannot divide by 0");
+        }
         divide_by(num);
     }
 }
