@@ -1,25 +1,6 @@
 # STDIN
 {id: stdin}
 
-## Variables are immutable by default
-{id: variables-are-immutable}
-{i: let}
-
-* Variables are immutable by default
-
-![](examples/stdin/immutable_string.rs)
-![](examples/stdin/immutable_string.out)
-
-## String in a mutable variable
-{id: rust-string-in-mutable-variable}
-{i: let}
-{i: mut}
-
-* Use the `mut` keyword to mark a variable as mutable.
-
-![](examples/stdin/mutable_string.rs)
-![](examples/stdin/mutable_string.out)
-
 ## Rust - read input from STDIN
 {id: rust-hello-name}
 {i: std::io}
@@ -99,25 +80,6 @@ Two problems:
 
 ![](examples/stdin/get_number_from_stdin.rs)
 
-## Redeclare immutable variable - Shadowing
-{id: rust-redeclared-immutable-variable}
-{i: let}
-
-* You can actually change even an immutable variable by declaring it again.
-* It can be useful if you need to make a few changes and then later no more changes.
-
-![](examples/stdin/shadow.rs)
-![](examples/stdin/shadow.out)
-
-## Redeclare immutable variable and change type - Shadowing
-{id: rust-redeclared-immutable-variable-change-type}
-
-* When shadowing we can also change the type of the variable.
-* e.g. we read from a file or from STDIN a string that we then convert to a number. We can use the same variable name.
-
-![](examples/stdin/change_type.rs)
-![](examples/stdin/change_type.out)
-
 ## Get number from STDIN - same variable
 {id: get-number-from-stdin-same-variable}
 
@@ -136,14 +98,6 @@ Two problems:
 
 ![](examples/intro/empty_string.rs)
 ![](examples/intro/empty_string.out)
-
-## Number in a mutable variables
-{id: rust-number-in-mutable-variables}
-{i: let}
-{i: mut}
-
-![](examples/stdin/number_mutable.rs)
-![](examples/stdin/number_mutable.out)
 
 ## Exercise STDIN rectangle
 {id: exercise-stdin-rectangle}

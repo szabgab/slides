@@ -1,0 +1,15 @@
+error[E0384]: cannot assign twice to immutable variable `x`
+ --> examples/variables/number_immutable.rs:5:5
+  |
+2 |     let x = 2;
+  |         -
+  |         |
+  |         first assignment to `x`
+  |         help: consider making this binding mutable: `mut x`
+...
+5 |     x = 3;
+  |     ^^^^^ cannot assign twice to immutable variable
+
+error: aborting due to previous error
+
+For more information about this error, try `rustc --explain E0384`.

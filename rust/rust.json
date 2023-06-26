@@ -8,6 +8,7 @@
     "version": "1.00",
     "files": [
         "intro.md",
+        "variables.md",
         "stdin.md",
         "argv.md",
         "boolean.md",
