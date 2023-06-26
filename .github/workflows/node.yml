@@ -24,10 +24,10 @@ jobs:
       with:
         node-version: ${{ matrix.nodejs }}
 
-    - name: Show NodeJS Version
-      run: |
-        node -v
-        cd nodejs
-        npm install
-        #npm test
+    #- name: Show NodeJS Version
+    #  run: |
+    #    node -v
+    #    cd nodejs
+    #    npm install
+    #    npm test
 
