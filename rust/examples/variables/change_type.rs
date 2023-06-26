@@ -1,8 +1,8 @@
 fn main() {
-    let answer = "42";
+    let answer = "What is the answer";
     println!("{}", answer);
 
-    let answer: i32 = answer.parse().expect("Oh");
+    let answer = 42;
     println!("{}", answer);
     println!("{}", answer + 1);
 }

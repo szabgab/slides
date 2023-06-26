@@ -41,40 +41,6 @@ Two problems:
 
 ![](examples/stdin/hello_name_chomp_flush.rs)
 
-## Convert string to (integer) number
-{id: rust-convert-string-to-number}
-{i: i32}
-{i: parse}
-{i: expect}
-
-* In the printing we won't see the difference, but we can do numberical operations on numbers
-
-![](examples/stdin/string_to_int.rs)
-![](examples/stdin/string_to_int.out)
-
-## Convert string to number that ends with newline
-{id: rust-convert-string-to-number-end-with-newline}
-{i: trim}
-
-![](examples/stdin/string_to_int_fail.rs)
-![](examples/stdin/string_to_int_fail.out)
-
-## Convert string to number after removing whitespaces
-{id: rust-convert-string-to-number-trim}
-{i: trim}
-
-![](examples/stdin/string_to_int_trim.rs)
-![](examples/stdin/string_to_int_trim.out)
-
-## Convert string to float
-{id: convert-string-to-float}
-{i: f32}
-
-* Sometimes we are expecting floating point numbers.
-
-![](examples/stdin/string_to_float.rs)
-![](examples/stdin/string_to_float.out)
-
 ## Get number from STDIN
 {id: get-number-from-stdin}
 
@@ -84,20 +50,6 @@ Two problems:
 {id: get-number-from-stdin-same-variable}
 
 ![](examples/stdin/get_number_from_stdin_same_variable.rs)
-
-## Variable Scope in Rust
-{id: rust-variable-scope}
-
-* Every block creates a scope
-
-![](examples/intro/scope.rs)
-![](examples/intro/scope.out)
-
-## Declare empty variable - requires type
-{id: declare-empty-variable}
-
-![](examples/intro/empty_string.rs)
-![](examples/intro/empty_string.out)
 
 ## Exercise STDIN rectangle
 {id: exercise-stdin-rectangle}

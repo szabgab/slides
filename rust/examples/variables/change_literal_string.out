@@ -1,0 +1,9 @@
+error[E0599]: no method named `push_str` found for reference `&str` in the current scope
+ --> examples/variables/change_literal_string.rs:5:10
+  |
+5 |     name.push_str(" Bar");
+  |          ^^^^^^^^ method not found in `&str`
+
+error: aborting due to previous error
+
+For more information about this error, try `rustc --explain E0599`.

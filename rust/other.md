@@ -55,3 +55,18 @@ Somthing that looks like a function but ends with an exclamation point. e.g. `pr
 ![](examples/project/Cargo.toml)
 ![](examples/project/Cargo.lock)
 
+## Variable Scope in Rust
+{id: rust-variable-scope}
+
+* Every block creates a scope
+
+![](examples/intro/scope.rs)
+![](examples/intro/scope.out)
+
+## Declare empty variable - requires type
+{id: declare-empty-variable}
+
+![](examples/intro/empty_string.rs)
+![](examples/intro/empty_string.out)
+
+
