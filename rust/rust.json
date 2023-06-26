@@ -28,7 +28,7 @@
         "functions.md",
         "ownership.md",
         "error-handling.md",
-        "number_guessing.md",
+        "number-guessing-game.md",
         "datetime.md",
         "csv.md",
         "handlebars.md",
