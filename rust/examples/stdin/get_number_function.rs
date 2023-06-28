@@ -2,14 +2,9 @@ use std::io;
 use std::io::Write;
 
 fn main() {
-    let mut count = 0;
-    while count < 10 {
-        let number = get_number();
-        count += number;
-        println!("count {}", count);
-    }
+    let x = get_number();
+    println!("{x}");
 }
-
 
 fn get_number() -> i32 {
     let mut number = String::new();

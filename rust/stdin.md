@@ -51,6 +51,13 @@ Two problems:
 
 ![](examples/stdin/get_number_from_stdin_same_variable.rs)
 
+## Get number (i32) in using a function
+{id: get-number-using-function}
+
+* We have not learned functions yet, but in order to make it easier to copy paste this example later we have a solution here
+
+![](examples/stdin/get_number_function.rs)
+
 ## Exercise STDIN rectangle
 {id: exercise-stdin-rectangle}
 

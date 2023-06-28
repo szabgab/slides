@@ -5,6 +5,8 @@
 {id: rust-while-loop}
 {i: while}
 
+* We usually use a `while` loop if we don't know how many iterations we'll have to do.
+
 ![](examples/loops/while.rs)
 
 ## Infinite loop in Rust with break
