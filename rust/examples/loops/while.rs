@@ -2,11 +2,11 @@ use std::io;
 use std::io::Write;
 
 fn main() {
-    let mut count = 0;
-    while count < 10 {
+    let mut total = 0;
+    while total < 10 {
         let number = get_number();
-        count += number;
-        println!("count {}", count);
+        total += number;
+        println!("total {}", total);
     }
 }
 

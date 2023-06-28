@@ -1,10 +1,31 @@
+use std::io;
+use std::io::Write;
+
 fn main() {
-    let mut limit = 10;
     loop {
-        println!("count {}", limit);
-        limit -= 1;
-        if limit < 0 {
+        let number = get_number();
+        println!("number {}", number);
+        if number == 42 {
             break
         }
     }
 }
+
+
+fn get_number() -> i32 {
+    let mut number = String::new();
+
+    print!("Please type in an integer: ");
+    io::stdout().flush().expect("Oups");
+    io::stdin()
+        .read_line(&mut number)
+        .expect("Faild to get input");
+
+    let number:i32 = number
+        .trim()
+        .parse()
+        .expect("Could not convert to i32");
+
+    number
+}
+
