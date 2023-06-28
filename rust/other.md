@@ -70,3 +70,7 @@ Somthing that looks like a function but ends with an exclamation point. e.g. `pr
 ![](examples/intro/empty_string.out)
 
 
+## SystemTime now
+{id: systemtime-now}
+
+![](examples/other/now.rs)

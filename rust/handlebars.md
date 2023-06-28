@@ -34,6 +34,16 @@ This is the Quick start example from the README of the project:
 ![](examples/handlebars-template-file/Cargo.toml)
 ![](examples/handlebars-template-file/Cargo.lock)
 
+## Handlebars - show time of generation
+{id: handlebars-show-time-of-generation}
+
+![](examples/handlebars-date/src/main.rs)
+![](examples/handlebars-date/template.html)
+![](examples/handlebars-date/hello.html)
+
+![](examples/handlebars-date/Cargo.toml)
+![](examples/handlebars-date/Cargo.lock)
+
 ## Handlebars loop (each) on array
 {id: handlebars-each}
 
