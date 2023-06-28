@@ -5,14 +5,14 @@ use std::fs::File;
 fn main() {
     let filepath = "planets.csv";
     //println!("{}", filepath);
-    read_file(filepath);
-    //if let Err(err) = example(filepath) {
-    //    println!("error running example: {}", err);
-    //    process::exit(1);
-    //}
+    let rows = read_file(filepath);
+    for row in rows {
+        println!("{:?}", row);
+    }
 }
 
-fn read_file(filepath: &str) {
+fn read_file(filepath: &str) -> Vec<csv::StringRecord> {
+    let mut rows:Vec<csv::StringRecord> = vec![];
     match File::open(filepath.to_string()) {
         Ok(file) => {
             //let mut content = String::new();
@@ -20,7 +20,12 @@ fn read_file(filepath: &str) {
             let mut rdr = csv::Reader::from_reader(file);
             for result in rdr.records() {
                 match result {
-                    Ok(row) => println!("{:?}", row),
+                    Ok(row) => {
+                        rows.push(row.clone());
+                        //println!("{:?}", row);
+                        //println!("{}", row.len());
+                        //println!("{}", &row[0]);
+                    },
                     Err(err) => panic!("Error {}", err)
                 };
                 //let record = result?;
@@ -29,17 +34,6 @@ fn read_file(filepath: &str) {
         },
         Err(error) => panic!("Error opening file {}: {}", filepath, error),
     }
+
+    rows
 }
-
-//fn example(filepath: &str) -> Result<(), Box<dyn Error>> {
-//    // Build the CSV reader and iterate over each record.
-//    let mut rdr = csv::Reader::from_reader(io::stdin());
-//    for result in rdr.records() {
-//        // The iterator yields Result<StringRecord, Error>, so we check the
-//        // error here.
-//        let record = result?;
-//        println!("{:?}", record);
-//    }
-//    Ok(())
-//}
-
