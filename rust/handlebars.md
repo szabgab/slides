@@ -34,3 +34,14 @@ This is the Quick start example from the README of the project:
 ![](examples/handlebars-template-file/Cargo.toml)
 ![](examples/handlebars-template-file/Cargo.lock)
 
+## Handlebars loop (each) on array
+{id: handlebars-each}
+
+![](examples/handlebars-loop/template.html)
+
+![](examples/handlebars-loop/hello.html)
+![](examples/handlebars-loop/src/main.rs)
+
+![](examples/handlebars-loop/Cargo.lock)
+![](examples/handlebars-loop/Cargo.toml)
+
