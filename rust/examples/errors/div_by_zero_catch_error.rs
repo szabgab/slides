@@ -5,15 +5,20 @@ fn main() {
     loop {
         let dividend = 100;
         let divisor = get_number();
-        let res = divide_by(dividend, divisor);
-        println!("{dividend} / {divisor} = {res}");
+        match divide_by(dividend, divisor) {
+            Ok(val) => println!("{dividend} / {divisor} = {val}"),
+            Err(error) => println!("Error {:?}", error),
+        };
     }
 }
 
 
-fn divide_by(dividend: i32, divisor: i32) -> i32 {
+fn divide_by(dividend: i32, divisor: i32) -> Result<i32, &'static str> {
+    if divisor == 0 {
+        return Err("Cannot divide by 0");
+    }
     let res = dividend / divisor;
-    res
+    Ok(res)
 }
 
 fn get_number() -> i32 {

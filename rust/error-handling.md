@@ -9,10 +9,15 @@
 ![](examples/errors/div_by_zero_hard_coded.out)
 
 ## Divide by zero runtime panic
-{id: divide-by-zero}
+{id: divide-by-zero-runtime-panic}
 
 ![](examples/errors/div_by_zero.rs)
 ![](examples/errors/div_by_zero.out)
+
+## Divide by zero return error
+{id: divide-by-zero-return-error}
+
+![](examples/errors/div_by_zero_catch_error.rs)
 
 ## factorial function, runtime panic
 {id: factorial-function-runtime-panic}
