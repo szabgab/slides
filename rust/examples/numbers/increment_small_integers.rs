@@ -7,8 +7,4 @@ fn main() {
 
     x += 1;
     println!("{x}");
-
-    // Rust has no prefix and postfix increment operator
-    // x++;
-    // ++x;
 }

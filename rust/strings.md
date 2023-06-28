@@ -51,10 +51,24 @@
 ![](examples/strings/starts_with.rs)
 ![](examples/strings/starts_with.out)
 
-## Concatenation
-{id: concatetation}
+## Concatenation str with str
+{id: concatetation-str-with-str}
 
-![](examples/strings/concatenation.rs)
+![](examples/strings/concatenation_str_with_str.rs)
+![](examples/strings/concatenation_str_with_str.out)
+
+## Concatenation String with String
+{id: concatetation-string-with-string}
+
+
+![](examples/strings/concatenation_string_with_string.rs)
+![](examples/strings/concatenation_string_with_string.out)
+
+## Concatenation String with str
+{id: concatetation-string-with-str}
+
+![](examples/strings/concatenation_string_with_str.rs)
+![](examples/strings/concatenation_string_with_str.out)
 
 ## Iterate over the characters of a string
 {id: iterate-over-characters}

@@ -5,6 +5,8 @@
 ## Numerical operations (integers)
 {id: numerical-operations-integers}
 
+* The division keeps the type so dividing one integer by another integer will always return an integer.
+
 ![](examples/numbers/calc.rs)
 ![](examples/numbers/calc.out)
 
@@ -14,11 +16,14 @@
 ![](examples/numbers/increment.rs)
 ![](examples/numbers/increment.out)
 
-## unfit in i8
-{id: unfit-in-i8}
+## unfit in i8 - compile time
+{id: unfit-in-i8-compile-time}
 
 ![](examples/numbers/small_integers_unfit_in_i8.rs)
 ![](examples/numbers/small_integers_unfit_in_i8.out)
+
+## unfit in i8 - run time
+{id: unfit-in-i8-run-time}
 
 ![](examples/numbers/increment_small_integers.rs)
 ![](examples/numbers/increment_small_integers.out)

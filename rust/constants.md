@@ -8,7 +8,7 @@
 * Value that can be computed during compilation.
 * Cannot be changed.
 * Must have type declaration.
-* Should be `UPPER_CASE`.
+* Name must be `UPPER_CASE`.
 
 ![](examples/constants/constant.rs)
 ![](examples/constants/constant.out)

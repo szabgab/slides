@@ -1,0 +1,30 @@
+[examples/chars/single.rs:4] ch = '1'
+[examples/chars/single.rs:6] num = 49
+[examples/chars/single.rs:9] num = 49
+[examples/chars/single.rs:12] back = '1'
+[examples/chars/single.rs:13] ch == back = true
+[examples/chars/single.rs:4] ch = 'a'
+[examples/chars/single.rs:6] num = 97
+[examples/chars/single.rs:9] num = 97
+[examples/chars/single.rs:12] back = 'a'
+[examples/chars/single.rs:13] ch == back = true
+[examples/chars/single.rs:4] ch = 'א'
+[examples/chars/single.rs:6] num = 1488
+[examples/chars/single.rs:9] num = 1488
+[examples/chars/single.rs:12] back = 'א'
+[examples/chars/single.rs:13] ch == back = true
+[examples/chars/single.rs:4] ch = 'Ω'
+[examples/chars/single.rs:6] num = 937
+[examples/chars/single.rs:9] num = 937
+[examples/chars/single.rs:12] back = 'Ω'
+[examples/chars/single.rs:13] ch == back = true
+[examples/chars/single.rs:4] ch = '😇'
+[examples/chars/single.rs:6] num = 128519
+[examples/chars/single.rs:9] num = 128519
+[examples/chars/single.rs:12] back = '😇'
+[examples/chars/single.rs:13] ch == back = true
+[examples/chars/single.rs:4] ch = '😈'
+[examples/chars/single.rs:6] num = 128520
+[examples/chars/single.rs:9] num = 128520
+[examples/chars/single.rs:12] back = '😈'
+[examples/chars/single.rs:13] ch == back = true
