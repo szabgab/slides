@@ -18,7 +18,7 @@
 {id: rust-conditional-else-if}
 {i: arms}
 
-* All the code pathes in an if-else-if statement are called "arms".
+* The code pathes in an if-else-if statement are called "arms".
 
 ![](examples/booleans/else_if.rs)
 ![](examples/booleans/else_if.out)
@@ -53,6 +53,14 @@
 
 ![](examples/booleans/toggle.rs)
 ![](examples/booleans/toggle.out)
+
+## if-else returns a value
+{id: if-else-returns-value}
+
+* This expersssion must have an `else` part!
+* The last statement in both the `if` and the `else` part has no `;` at the end and thus they are called `expressions` and not `statements`.
+
+![](examples/booleans/if_returns_value.rs)
 
 ## Conditional (Ternary) operator
 {id: ternary-operator}
