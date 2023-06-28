@@ -4,6 +4,6 @@
 ## Number Guessing game
 {id: number-guessing-game}
 
-![](examples/number_guessing_game/Cargo.toml)
-![](examples/number_guessing_game/Cargo.lock)
-![](examples/number_guessing_game/src/main.rs)
+![](examples/number-guessing-game/Cargo.toml)
+![](examples/number-guessing-game/Cargo.lock)
+![](examples/number-guessing-game/src/main.rs)
