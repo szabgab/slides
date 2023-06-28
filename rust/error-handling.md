@@ -46,3 +46,9 @@
 
 ![](examples/errors/out_of_bounds_array.rs)
 ![](examples/errors/out_of_bounds_array.out)
+
+## Open files
+{id: open-files}
+
+![](examples/errors/file_open.rs)
+
