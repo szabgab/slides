@@ -23,6 +23,7 @@ This is the Quick start example from the README of the project:
 {id: handlebars-render-to-file}
 
 ![](examples/handlebars-render-to-file/src/main.rs)
+![](examples/handlebars-render-to-file/hello.html)
 ![](examples/handlebars-render-to-file/Cargo.toml)
 ![](examples/handlebars-render-to-file/Cargo.lock)
 

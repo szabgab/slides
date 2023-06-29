@@ -74,3 +74,9 @@ Somthing that looks like a function but ends with an exclamation point. e.g. `pr
 {id: systemtime-now}
 
 ![](examples/other/now.rs)
+
+## serde
+{id: serde}
+
+![](examples/serde-demo/Cargo.lock)
+![](examples/serde-demo/Cargo.toml)
