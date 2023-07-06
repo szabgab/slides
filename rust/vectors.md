@@ -60,13 +60,25 @@
 ![](examples/vectors/sort_vector.rs)
 ![](examples/vectors/sort_vector.out)
 
-## Median
-{id: median}
+## Exercise: Median
+{id: exercise-median}
 
-* Write a function that given a vector of integers it will return the median
+* Write a function that given a vector of integers it will return the median.
 
 ![](examples/vectors/median.rs)
 ![](examples/vectors/median.out)
 
+## Exercise: ROT13
+{id: rot13}
+
+* Implement a function that given a string will return it ROT13 encrypted version.
+* If we call the function again with the result we should get back the original string.
+
+![](examples/vectors/rot13.rs)
+
+## Chars to string
+{id: chars-to-string}
+
+![](examples/vectors/chars_to_string.rs)
 
 
