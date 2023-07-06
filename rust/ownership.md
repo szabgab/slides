@@ -71,8 +71,15 @@
 ![](examples/ownership/literal_string_in_mutable_variable.out)
 ![](examples/ownership/literal_string_in_mutable_variable.err)
 
+## Passing literal string to function
+{id: passing-literal-string-to-function}
+
+![](examples/ownership/str.rs)
+![](examples/ownership/str.out)
+
 ## Mutable string in immutable variable
 {id: mutable-string-in-immutable-variable}
+{i: push_str}
 
 * If we initialize the variable using `String::from` then the literal value is copied to the heap and it can be changed.
 * But if the variable is not mutable, then what's the point?
@@ -84,6 +91,7 @@
 
 ## Mutable string
 {id: mutable-string}
+{i: push_str}
 
 * If we initialize the varibale using `String::from` and make it mutable then we can change the string.
 
@@ -111,10 +119,6 @@
 
 ![](examples/ownership/move_mutable_string.rs)
 
-## Rust ownership str
-{id: rust-ownership-str}
-
-![](examples/ownership/str.rs)
 
 ## Rust clone a String
 {id: rust-ownership-clone-string}
