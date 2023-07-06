@@ -48,3 +48,7 @@
 
 ![](examples/vectors/extend.rs)
 
+## Split string into vector
+{id: split-string-into-vector}
+
+![](examples/vectors/split_string_into_vector.rs)
