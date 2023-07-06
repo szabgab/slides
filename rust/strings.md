@@ -106,4 +106,9 @@
 ![](examples/strings/to_string.rs)
 ![](examples/strings/to_string.out)
 
+## Str and String equality
+{id: str-string-equality}
+
+![](examples/strings/str_string_equality.rs)
+![](examples/strings/str_string_equality.out)
 

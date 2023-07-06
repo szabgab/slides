@@ -166,3 +166,9 @@
 
 ![](examples/ownership/owner.rs)
 
+## Lifetime annotation
+{id: lifetime-annotation}
+
+![](examples/ownership/lifetime_annotation.rs)
+
+

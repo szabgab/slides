@@ -1,0 +1,4 @@
+elephant=big
+snake=long
+cheetah=fast
+Ant=small

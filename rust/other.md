@@ -53,6 +53,12 @@ Somthing that looks like a function but ends with an exclamation point. e.g. `pr
 ![](examples/intro/scope.rs)
 ![](examples/intro/scope.out)
 
+## Declare empty variable and assign to it later
+{id: assign-to-variable-later}
+
+![](examples/other/assign_later.rs)
+
+
 ## Declare empty variable - requires type
 {id: declare-empty-variable}
 
@@ -70,3 +76,5 @@ Somthing that looks like a function but ends with an exclamation point. e.g. `pr
 
 ![](examples/serde-demo/Cargo.lock)
 ![](examples/serde-demo/Cargo.toml)
+
+

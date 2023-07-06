@@ -83,3 +83,18 @@
 {id: spplit-string-create-hash}
 
 ![](examples/hashes/split_string_create_hash.rs)
+
+## Create hash from key-value pairs after split
+{id: create-hash-from-key-value-pairs}
+
+![](examples/hashes/hash_from_key_value_pairs.rs)
+![](examples/hashes/hash_from_key_value_pairs.rs)
+
+## Read key-value pairs from file
+{id: read-key-value-pairs-from-file}
+
+![](examples/hashes/key_value_pairs.txt)
+
+![](examples/hashes/read_key_value_pairs.rs)
+![](examples/hashes/read_key_value_pairs.out)
+
