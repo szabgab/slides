@@ -44,6 +44,7 @@
 
 ## A literal string cannot be changed
 {id: a-literal-string-cannot-be-changed}
+{i: push_str}
 
 * ...but we cannot really change it.
 
@@ -54,6 +55,7 @@
 {id: really-mutable-string}
 {i: String}
 {i: from}
+{i: push_str}
 
 * We can create a really mutable string using the `String::from` function.
 
