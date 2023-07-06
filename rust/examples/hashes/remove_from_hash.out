@@ -1,7 +1,5 @@
 {"bar": 2, "foo": 1}
 ["bar", "foo"]
-bar : 2
-foo : 1
-
-bar : 2
-foo : 1
+Some(1)
+{"bar": 2}
+["bar"]

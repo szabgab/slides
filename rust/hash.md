@@ -6,12 +6,13 @@
 {i: HashMap}
 {i: new}
 {i: insert}
+{i: len}
 
 * [std::collections](https://doc.rust-lang.org/std/collections/index.html)
+* [HashMap](https://doc.rust-lang.org/std/collections/hash_map/struct.HashMap.html)
 
 ![](examples/hashes/create_empty_hash.rs)
 ![](examples/hashes/create_empty_hash.out)
-
 
 ## Create immutable hash with data
 {id: create-hash-with-data}
@@ -20,6 +21,17 @@
 
 ![](examples/hashes/create_hash_with_data.rs)
 ![](examples/hashes/create_hash_with_data.out)
+
+## Get value from hash
+{id: get-value-from-hash}
+{i: get}
+{i: contains_key}
+
+* `get` returns a reference to the value corresponding to the key.
+
+![](examples/hashes/get_value_from_hash.rs)
+![](examples/hashes/get_value_from_hash.out)
+
 
 ## Iterate over keys of a hash
 {id: iterate-over-keys-of-hash}
@@ -30,9 +42,14 @@
 
 ## Iterate over key-value pairs in a Hash
 {id: iterate-over-key-value-pairs-of-hash}
+{i: iter}
+
+* Use the `iter` method to get the iterator
+* Though you can iterate over the hash directly. It does the same.
 
 ![](examples/hashes/iterate_over_pairs.rs)
 ![](examples/hashes/iterate_over_pairs.out)
+
 
 ## Rust hash update value
 {id: rust-hashmap-update-value}
@@ -45,6 +62,22 @@
 {id: rust-update-values-in-a-hash}
 
 ![](examples/hashes/count_words.rs)
+
+## Remove element from hash
+{id: remove-element-from-hash}
+{i: remove}
+
+![](examples/hashes/remove_from_hash.rs)
+![](examples/hashes/remove_from_hash.out)
+
+## Accessing values
+{id: accessing-values}
+
+* unwrap_or(0)  sets a default value to 0
+
+![](examples/hashes/accessing_values.rs)
+![](examples/hashes/accessing_values.out)
+
 
 ## Split string create hash
 {id: spplit-string-create-hash}

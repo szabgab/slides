@@ -8,6 +8,11 @@ fn main() {
     println!("{:?}", counter);
     println!("{:?}", counter.keys());
 
+    for (name, value) in counter.iter() {
+        println!("{} : {}", name, value);
+    }
+    println!("");
+
     for (name, value) in counter {
         println!("{} : {}", name, value);
     }

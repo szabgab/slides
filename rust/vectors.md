@@ -52,3 +52,21 @@
 {id: split-string-into-vector}
 
 ![](examples/vectors/split_string_into_vector.rs)
+
+## Sort vector of numbers
+{id: sort-vector-of-numbers}
+{i: sort}
+
+![](examples/vectors/sort_vector.rs)
+![](examples/vectors/sort_vector.out)
+
+## Median
+{id: median}
+
+* Write a function that given a vector of integers it will return the median
+
+![](examples/vectors/median.rs)
+![](examples/vectors/median.out)
+
+
+

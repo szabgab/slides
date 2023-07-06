@@ -7,4 +7,6 @@ fn main() {
     ]);
     println!("{:?}", counter);
     println!("{:?}", counter.keys());
+
+    // counter.insert("other", 3); // cannot borrow `counter` as mutable, as it is not declared as mutable
 }
