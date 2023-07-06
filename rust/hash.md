@@ -57,6 +57,7 @@
 {i: or_insert}
 
 ![](examples/hashes/update_hash.rs)
+![](examples/hashes/updating_values.rs)
 
 ## Rust update values in a hash - count words
 {id: rust-update-values-in-a-hash}
@@ -88,7 +89,7 @@
 {id: create-hash-from-key-value-pairs}
 
 ![](examples/hashes/hash_from_key_value_pairs.rs)
-![](examples/hashes/hash_from_key_value_pairs.rs)
+![](examples/hashes/hash_from_key_value_pairs.out)
 
 ## Read key-value pairs from file
 {id: read-key-value-pairs-from-file}
