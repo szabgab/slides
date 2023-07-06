@@ -15,6 +15,12 @@
 ![](examples/ownership/integers.rs)
 ![](examples/ownership/integers.out)
 
+## Passing integers to functions and returning integer
+{id: passing-integers-to-functions-and-returning-integer}
+
+![](examples/ownership/integers_in_function.rs)
+![](examples/ownership/integers_in_function.out)
+
 ## Mutable integers are copies
 {id: mutable-integers-are-copies}
 
@@ -30,6 +36,19 @@
 
 ![](examples/ownership/immutable_integer.rs)
 ![](examples/ownership/immutable_integer.out)
+
+## Pass integer to function return changed value
+{id: pass-integer-to-function-return-changed-value}
+
+![](examples/ownership/mutable_integers_in_function_return.rs)
+![](examples/ownership/mutable_integers_in_function_return.out)
+
+## Pass mutable reference of integer to function
+{id: pass-mutable-reference-of-inteher-to-function}
+
+![](examples/ownership/mutable_integers_in_function.rs)
+![](examples/ownership/mutable_integers_in_function.out)
+
 
 ## Literal string
 {id: literal-string}
