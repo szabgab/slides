@@ -89,3 +89,21 @@
 ![](examples/strings/split_string_whitespace.rs)
 ![](examples/strings/split_string_whitespace.out)
 
+## Append to string with push_str
+{id: append-to-string-with-push-str}
+{i: push_str}
+{i: to_string}
+
+![](examples/strings/append_to_string.rs)
+![](examples/strings/append_to_string.out)
+
+## Create String from literal string using to_string
+{id: create-string-from-literal-string}
+{i: to_string}
+
+* [ToString](https://doc.rust-lang.org/std/string/trait.ToString.html) is a trait that can convert anything to a String.
+
+![](examples/strings/to_string.rs)
+![](examples/strings/to_string.out)
+
+
