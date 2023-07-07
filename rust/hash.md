@@ -99,3 +99,9 @@
 ![](examples/hashes/read_key_value_pairs.rs)
 ![](examples/hashes/read_key_value_pairs.out)
 
+## Sort vector of hashes
+{id: sort-vector-of-hashes}
+{i: sort_by}
+
+![](examples/hashes/sort_vector_of_hashes.rs)
+![](examples/hashes/sort_vector_of_hashes.out)

@@ -77,4 +77,14 @@ Somthing that looks like a function but ends with an exclamation point. e.g. `pr
 ![](examples/serde-demo/Cargo.lock)
 ![](examples/serde-demo/Cargo.toml)
 
+## Exit
+{id: exit}
+{i: exit}
+
+![](examples/other/exit.rs)
+
+```
+echo $?
+echo %ERROR_LEVEL%
+```
 
