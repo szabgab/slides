@@ -81,6 +81,8 @@ Somthing that looks like a function but ends with an exclamation point. e.g. `pr
 {id: exit}
 {i: exit}
 
+* [Function std::process::exit](https://doc.rust-lang.org/std/process/fn.exit.html)
+
 ![](examples/other/exit.rs)
 
 ```
@@ -88,3 +90,11 @@ echo $?
 echo %ERROR_LEVEL%
 ```
 
+## Logging
+{id: logging}
+
+![](examples/simple_logger_demo/Cargo.toml)
+
+![](examples/simple_logger_demo/src/main.rs)
+
+![](examples/simple_logger_demo/Cargo.lock)
