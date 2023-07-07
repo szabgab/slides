@@ -77,6 +77,14 @@ Somthing that looks like a function but ends with an exclamation point. e.g. `pr
 ![](examples/serde-demo/Cargo.lock)
 ![](examples/serde-demo/Cargo.toml)
 
+## serde manipulate json (change, add)
+{id: serde-manipulate-json}
+
+![](examples/serde-manipulate-json/Cargo.toml)
+![](examples/serde-manipulate-json/src/main.rs)
+
+![](examples/serde-manipulate-json/Cargo.lock)
+
 ## Exit
 {id: exit}
 {i: exit}
