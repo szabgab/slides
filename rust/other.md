@@ -106,3 +106,9 @@ echo %ERROR_LEVEL%
 ![](examples/simple_logger_demo/src/main.rs)
 
 ![](examples/simple_logger_demo/Cargo.lock)
+
+## Define multiple variables
+{id: define-multiple-variables}
+
+![](examples/other/define_multiple_variables.rs)
+

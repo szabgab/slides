@@ -77,3 +77,15 @@ Simplify it by moving the code that reads the number from STDIN into a function 
 
 ![](examples/functions/rectangle_stdin.rs)
 
+## Function returning multiple values
+{id: function-returning-multiple-values}
+
+* returns a tuple
+
+![](examples/functions/return_multiple_values.rs)
+
+## Function accepting multiple types (e.g. any type of numbers)
+{id: function-accepting-multiple-types}
+
+![](examples/functions/accepting_multiple_types.rs)
+
