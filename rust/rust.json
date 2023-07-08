@@ -19,6 +19,7 @@
         "strings.md",
         "loops.md",
         "tuples.md",
+        "struct.md",
         "arrays.md",
         "vectors.md",
         "hash.md",
