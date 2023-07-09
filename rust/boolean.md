@@ -68,3 +68,13 @@
 ![](examples/booleans/ternary.rs)
 ![](examples/booleans/ternary.out)
 
+## match
+{id: match}
+{i: match}
+{i: case}
+
+* Similar to case or switch in other languages, `match` provides several `arms`.
+
+![](examples/booleans/match.rs)
+![](examples/booleans/match.out)
+

@@ -8,6 +8,17 @@
 ![](examples/errors/div_by_zero_hard_coded.rs)
 ![](examples/errors/div_by_zero_hard_coded.out)
 
+## Divide by zero panick in function
+{id: panick-in-function}
+
+![](examples/errors/divide_by_zero_panick.rs)
+
+## Return error on failure
+{id: return-error-on-failure}
+
+![](examples/errors/divide_by_zero_return_error.rs)
+
+
 ## Divide by zero runtime panic
 {id: divide-by-zero-runtime-panic}
 
