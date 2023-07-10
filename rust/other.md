@@ -112,3 +112,10 @@ echo %ERROR_LEVEL%
 
 ![](examples/other/define_multiple_variables.rs)
 
+## wc
+{id: wc}
+
+![](examples/rust-wc/Cargo.lock)
+![](examples/rust-wc/Cargo.toml)
+![](examples/rust-wc/src/main.rs)
+
