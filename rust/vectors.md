@@ -81,4 +81,15 @@
 
 ![](examples/vectors/chars_to_string.rs)
 
+## Vector of tuples
+{id: vector-of-tuples}
+
+![](examples/vectors/vector_of_tuples.rs)
+![](examples/vectors/vector_of_tuples.out)
+
+## Vector of structs
+{id: vector-of-structs}
+
+![](examples/vectors/vector_of_structs.rs)
+![](examples/vectors/vector_of_structs.out)
 
