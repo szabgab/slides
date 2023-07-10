@@ -28,4 +28,9 @@
 ![](examples/numbers/increment_small_integers.rs)
 ![](examples/numbers/increment_small_integers.out)
 
+## rounding float
+{id: rounding-float}
+
+![](examples/numbers/rounding_float.rs)
+![](examples/numbers/rounding_float.out)
 
