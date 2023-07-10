@@ -25,7 +25,7 @@
 
 ![](examples/files/read_line_by_line.rs)
 
-## Rust - read file line-by-line enumerate
+## Rust - read file line-by-line with row number (enumerate)
 {id: rust-read-file-line-by-line-enumerate}
 {i: enumerate}
 
@@ -45,7 +45,7 @@
 
 ![](examples/files/list_dir.rs)
 
-## Rust list dicrectory content recursively (tree)
+## Rust list directory content recursively (tree)
 {id: directory-tree-recursively}
 
 * std::fs::File [struct.File](https://doc.rust-lang.org/std/fs/struct.File.html)
@@ -63,4 +63,11 @@
 {id: makedirs}
 
 ![](examples/files/makedir.rs)
+
+## Create temporary directory
+{id: temporary-directory}
+
+![](examples/tempdir-demo/Cargo.lock)
+![](examples/tempdir-demo/Cargo.toml)
+![](examples/tempdir-demo/src/main.rs)
 

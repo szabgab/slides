@@ -78,3 +78,9 @@
 ![](examples/booleans/match.rs)
 ![](examples/booleans/match.out)
 
+## match with conditions
+{id: match-with-conditions}
+
+![](examples/booleans/match_with_conditions.rs)
+![](examples/booleans/match_with_conditions.out)
+
