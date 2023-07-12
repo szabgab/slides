@@ -43,4 +43,36 @@
 ![](examples/struct/circle_duplicate.rs)
 ![](examples/struct/circle_duplicate.out)
 
+## Printing struct fails
+{id: printing-struct-fails}
 
+![](examples/struct/printing_struct_fails.rs)
+
+## Print struct (Point)
+{id: print-struct}
+{i: std::fmt::Display}
+{i: Display}
+
+![](examples/struct/print_point.rs)
+![](examples/struct/print_point.out)
+
+## Debug struct (Point)
+{id: debug-struct}
+{i: std::fmt::Debug}
+{i: Debug}
+
+
+![](examples/struct/debug_point.rs)
+![](examples/struct/debug_point.out)
+
+## Print complex struct
+{id: print-complex-struct}
+
+![](examples/struct/printing_struct.rs)
+![](examples/struct/printing_struct.out)
+
+## Debug complex struct
+{id: debug-complex-struct}
+
+![](examples/struct/debugging_struct.rs)
+![](examples/struct/debugging_struct.out)

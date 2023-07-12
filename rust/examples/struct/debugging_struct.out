@@ -1,0 +1,1 @@
+[examples/struct/debugging_struct.rs:18] a = Animal { name: elephant, size: huge, weight: 100 }
