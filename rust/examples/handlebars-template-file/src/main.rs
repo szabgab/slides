@@ -16,6 +16,18 @@ fn main() {
 }
 
 fn render_without_register(template_file: &str, filename: &str) -> Result<(), Box<dyn Error>> {
+    let template = read_template(&template_file);
+
+    let reg = Handlebars::new();
+    let html = reg.render_template(&template, &json!({"name": "foo"}))?;
+
+    let mut file = File::create(filename).unwrap();
+    writeln!(&mut file, "{}", html).unwrap();
+
+    Ok(())
+}
+
+fn read_template(template_file: &str) -> String {
     let mut template = String::new();
     match File::open(template_file) {
         Ok(mut file) => {
@@ -25,12 +37,6 @@ fn render_without_register(template_file: &str, filename: &str) -> Result<(), Bo
             println!("Error opening file {}: {}", template_file, error);
         },
     }
-
-    let reg = Handlebars::new();
-    let html = reg.render_template(&template, &json!({"name": "foo"}))?;
-    let mut file = File::create(filename).unwrap();
-    writeln!(&mut file, "{}", html).unwrap();
-
-    Ok(())
+    template
 }
 

@@ -17,15 +17,7 @@ fn main() {
 }
 
 fn render_without_register(template_file: &str, filename: &str) -> Result<(), Box<dyn Error>> {
-    let mut template = String::new();
-    match File::open(template_file) {
-        Ok(mut file) => {
-            file.read_to_string(&mut template).unwrap();
-        },
-        Err(error) => {
-            println!("Error opening file {}: {}", template_file, error);
-        },
-    }
+    let template = read_template(&template_file);
 
     let utc: DateTime<Utc> = Utc::now();
 
@@ -35,5 +27,18 @@ fn render_without_register(template_file: &str, filename: &str) -> Result<(), Bo
     writeln!(&mut file, "{}", html).unwrap();
 
     Ok(())
+}
+
+fn read_template(template_file: &str) -> String {
+    let mut template = String::new();
+    match File::open(template_file) {
+        Ok(mut file) => {
+            file.read_to_string(&mut template).unwrap();
+        },
+        Err(error) => {
+            println!("Error opening file {}: {}", template_file, error);
+        },
+    }
+    template
 }
 
