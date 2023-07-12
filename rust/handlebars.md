@@ -1,23 +1,31 @@
 # Handlebars
 {id: handlebars}
 
-## Quick start
-{id: handlebars-quick-demo}
+## Quick start - unregistered template
+{id: handlebars-quick-start-unregistered-template}
+{i: Handlebars}
+{i: render_template}
+{i: json}
 
 * [Handlebars](https://crates.io/crates/handlebars) is templating language implemented in Rust.
 
-This is the Quick start example from the README of the project:
+* We have a very simple template embedded in our Rust code. It has one placeholder `{{name}}`.
 
 ![](examples/handlebars-quick/src/main.rs)
-![](examples/handlebars-quick/Cargo.toml)
-![](examples/handlebars-quick/Cargo.lock)
 
-## Quick start in separate functions
+* The generated output looks like this:
+
+![](examples/handlebars-quick/out.html)
+
+![](examples/handlebars-quick/Cargo.toml)
+
+## Quick start - registered template
 {id: handlebars-separate-functions}
 
 ![](examples/handlebars-separate-functions/src/main.rs)
+![](examples/handlebars-separate-functions/out.html)
 ![](examples/handlebars-separate-functions/Cargo.toml)
-![](examples/handlebars-separate-functions/Cargo.lock)
+
 
 ##  Handlebars - render to file
 {id: handlebars-render-to-file}

@@ -37,7 +37,11 @@ fn main() {
 // TODO: go deeper than 2 levels to also handle examples/*/src/main.rs
 // TODO: but exclude examples/*/target/
 fn get_examples() -> Vec<String> {
-    let exclude = vec!["examples/hello-world/Cargo.lock"];
+    let exclude = vec![
+        "examples/hello-world/Cargo.lock",
+        "examples/handlebars-quick/Cargo.lock",
+        "examples/handlebars-separate-functions/Cargo.lock",
+        ];
     let mut examples = vec![];
     let path = Path::new("examples");
     for entry in path.read_dir().expect("read_dir call failed") {
