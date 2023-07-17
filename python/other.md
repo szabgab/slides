@@ -961,3 +961,9 @@ If we we wait a bit between calls, or if we flush the buffer of the file, then t
 {id: some-strange-code}
 
 ![](examples/other/bad_code.py)
+
+## is vs ==
+{id: is-vs-equal-equal}
+
+![](examples/other/is_vs_equal.py)
+
