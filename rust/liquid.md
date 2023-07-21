@@ -43,6 +43,9 @@ liquid = "0.26.4"
 
 ## Liquid flow control: if - else
 {id: liquid-flow-control-if-else}
+{i: if}
+{i: else}
+{i: endif}
 
 ![](examples/liquid-if-else/Cargo.toml)
 ![](examples/liquid-if-else/src/main.rs)
@@ -57,21 +60,31 @@ liquid = "0.26.4"
 
 ## Liquid for loop passing a vector or an array
 {id: liquid-for-loop}
+{i: for}
+{i: endfor}
 
 ![](examples/liquid-for-loop/Cargo.toml)
-![](examples/liquid-for-loop/out.txt)
 ![](examples/liquid-for-loop/src/main.rs)
+![](examples/liquid-for-loop/out.txt)
 
 ## Liquid for loop with if conditions
 {id: liquid-for-loop-with-if-conditions}
+{i: for}
+{i: endfor}
+{i: if}
+{i: endif}
 
 ![](examples/liquid-loop-and-if/Cargo.toml)
-![](examples/liquid-loop-and-if/out.txt)
 ![](examples/liquid-loop-and-if/src/main.rs)
+![](examples/liquid-loop-and-if/out.txt)
 
 
 ## Liquid filters on numbers: plus, minus
 {id: liquid-filters-numbers}
+{i: plus}
+{i: minus}
+
+* Increment or decerement the number by the given number
 
 ![](examples/liquid-filters-numbers/Cargo.toml)
 ![](examples/liquid-filters-numbers/src/main.rs)
@@ -79,10 +92,26 @@ liquid = "0.26.4"
 
 ## Liquid filters on strings: upcase, downcase, capitalize
 {id: liquid-filters-strings}
+{i: upcase}
+{i: downcase}
+{i: capitalize}
 
 ![](examples/liquid-filters-strings/Cargo.toml)
 ![](examples/liquid-filters-strings/src/main.rs)
 ![](examples/liquid-filters-strings/out.txt)
+
+## Liquid filters: first, last
+{id: liquid-filters-first-last}
+{i: first}
+{i: last}
+
+first or last
+* character in a string
+* element in an array, a vector, or a tuple
+
+![](examples/liquid-filters-order/Cargo.toml)
+![](examples/liquid-filters-order/src/main.rs)
+![](examples/liquid-filters-order/out.txt)
 
 
 ## Liquid TODO

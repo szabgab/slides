@@ -1,0 +1,17 @@
+
+           plain: This is some text
+           first: T
+           last: t
+
+           plain: Thesearewordsinanarray
+           first: These
+           last: array
+
+           plain: 73194
+           first: 7
+           last: 4
+
+           plain: foo42bar3.4
+           first: foo
+           last: 3.4
+       
