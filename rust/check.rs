@@ -45,6 +45,7 @@ fn get_examples() -> Vec<String> {
         "examples/handlebars-template-file/Cargo.lock",
         "examples/handlebars-date/Cargo.lock",
         "examples/handlebars-loop/Cargo.lock",
+        "examples/liquid-hello-world/Cargo.lock",
         ];
     let mut examples = vec![];
     let path = Path::new("examples");

@@ -34,6 +34,7 @@
         "datetime.md",
         "csv.md",
         "handlebars.md",
+        "liquid.md",
         "crates.md",
         "other.md"
     ]
