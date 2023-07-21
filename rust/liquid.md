@@ -4,6 +4,10 @@
 ## Install
 {id: install-liquid}
 
+* [liquid crate](https://crates.io/crates/liquid)
+* [documentation](https://docs.rs/liquid/)
+* [Ruby liquid web site](https://shopify.github.io/liquid/)
+
 ```
 cargo add liquid
 ```
@@ -37,6 +41,20 @@ liquid = "0.26.4"
 ![](examples/liquid-hello-world-from-file/src/main.rs)
 ![](examples/liquid-hello-world-from-file/template.txt)
 
+## Liquid flow control: if - else
+{id: liquid-flow-control-if-else}
+
+![](examples/liquid-if-else/Cargo.toml)
+![](examples/liquid-if-else/src/main.rs)
+
+## Liquid with struct}
+{id: liquid-with-struct}
+
+![](examples/liquid-with-struct/Cargo.toml)
+![](examples/liquid-with-struct/src/main.rs)
+
+## Liquid TODO
+{id: liquid-todo}
 
 * pass struct
 * pass vector
