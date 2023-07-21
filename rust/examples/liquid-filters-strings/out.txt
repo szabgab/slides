@@ -1,0 +1,6 @@
+
+           plain: this is Some tExt
+           upcase: THIS IS SOME TEXT
+           downcase: this is some text
+           capitalize: This is Some tExt
+        

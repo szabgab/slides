@@ -55,7 +55,7 @@ liquid = "0.26.4"
 ![](examples/liquid-objects/src/main.rs)
 ![](examples/liquid-objects/out.txt)
 
-## Liquid for loop
+## Liquid for loop passing a vector or an array
 {id: liquid-for-loop}
 
 ![](examples/liquid-for-loop/Cargo.toml)
@@ -69,7 +69,7 @@ liquid = "0.26.4"
 ![](examples/liquid-loop-and-if/out.txt)
 ![](examples/liquid-loop-and-if/src/main.rs)
 
-## Liquid with struct}
+## Liquid with struct
 {id: liquid-with-struct}
 
 ![](examples/liquid-with-struct/Cargo.toml)
@@ -79,12 +79,30 @@ liquid = "0.26.4"
 {id: liquid-todo}
 
 * pass struct
-* pass vector
-* pass array
-
 * Control structures (if, else)
 * Loops (for)
+* Filters
 * Include template
 * Layout template (embed template)
 
+## Liquid filters on numbers: plus, minus
+{id: liquid-filters-numbers}
+
+![](examples/liquid-filters-numbers/Cargo.toml)
+![](examples/liquid-filters-numbers/src/main.rs)
+![](examples/liquid-filters-numbers/out.txt)
+
+## Liquid filters on strings: upcase, downcase, capitalize
+{id: liquid-filters-strings}
+
+![](examples/liquid-filters-strings/Cargo.toml)
+![](examples/liquid-filters-strings/src/main.rs)
+![](examples/liquid-filters-strings/out.txt)
+
+## Liquid include
+{id: liquid-include}
+
+![](examples/liquid-include/Cargo.toml)
+![](examples/liquid-include/out.txt)
+![](examples/liquid-include/src/main.rs)
 

@@ -10,9 +10,12 @@ fn main() {
         .unwrap()
         .parse(template).unwrap();
 
+    //let colors: [&str; 3] = ["red", "green", "blue"];
+    let colors = vec!["red", "green", "blue"];
+
     let globals = liquid::object!({
         "thing": {
-            "colors": ["red", "green", "blue"],
+            "colors": colors,
         }
     });
     let output = template.render(&globals).unwrap();
