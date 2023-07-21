@@ -21,6 +21,7 @@ liquid = "0.26.4"
 
 ## Liquid Hello World
 {id: liquid-hello-world}
+{i: parse}
 
 ![](examples/liquid-hello-world/Cargo.toml)
 ![](examples/liquid-hello-world/src/main.rs)
@@ -35,6 +36,7 @@ liquid = "0.26.4"
 
 ## Liquid Hello World read template from file
 {id: liquid-hello-world-read-template-from-file}
+{i: parse_file}
 
 ![](examples/liquid-hello-world-from-file/Cargo.toml)
 ![](examples/liquid-hello-world-from-file/out.txt)
@@ -124,12 +126,19 @@ first or last
 * Include template
 * Layout template (embed template)
 
-## Liquid include TODO
+## Liquid include
 {id: liquid-include}
+{i: include}
+{i: partials}
 
 ![](examples/liquid-include/Cargo.toml)
-![](examples/liquid-include/out.txt)
+
+![](examples/liquid-include/templates/page.txt)
+![](examples/liquid-include/templates/incl/header.txt)
+
 ![](examples/liquid-include/src/main.rs)
+
+![](examples/liquid-include/out.txt)
 
 ## Liquid with struct TODO
 {id: liquid-with-struct}

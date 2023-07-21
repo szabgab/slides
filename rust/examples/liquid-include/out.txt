@@ -1,15 +1,8 @@
+title in header: Liquid
+value in header: some value
 
-       
-            
-                A real mouse
-            
-        
-            
-                A real snake
-            
-        
-            
-                A fake oliphant
-            
-        
-    
+
+title in page template: Liquid
+name in page template: Foo Bar
+
+
