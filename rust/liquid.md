@@ -55,6 +55,20 @@ liquid = "0.26.4"
 ![](examples/liquid-objects/src/main.rs)
 ![](examples/liquid-objects/out.txt)
 
+## Liquid for loop
+{id: liquid-for-loop}
+
+![](examples/liquid-for-loop/Cargo.toml)
+![](examples/liquid-for-loop/out.txt)
+![](examples/liquid-for-loop/src/main.rs)
+
+## Liquid for loop with if conditions
+{id: liquid-for-loop-with-if-conditions}
+
+![](examples/liquid-loop-and-if/Cargo.toml)
+![](examples/liquid-loop-and-if/out.txt)
+![](examples/liquid-loop-and-if/src/main.rs)
+
 ## Liquid with struct}
 {id: liquid-with-struct}
 
@@ -69,7 +83,8 @@ liquid = "0.26.4"
 * pass array
 
 * Control structures (if, else)
-* Loops
-* include template
-* layout template (embed template)
+* Loops (for)
+* Include template
+* Layout template (embed template)
+
 
