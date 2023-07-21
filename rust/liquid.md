@@ -46,6 +46,14 @@ liquid = "0.26.4"
 
 ![](examples/liquid-if-else/Cargo.toml)
 ![](examples/liquid-if-else/src/main.rs)
+![](examples/liquid-if-else/out.txt)
+
+## Liquid object
+{id: liquid-object}
+
+![](examples/liquid-objects/Cargo.toml)
+![](examples/liquid-objects/src/main.rs)
+![](examples/liquid-objects/out.txt)
 
 ## Liquid with struct}
 {id: liquid-with-struct}

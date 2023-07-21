@@ -1,18 +1,10 @@
 fn main() {
     let template = "
-        {{thing.name}}
-
-        {% for color in thing.colors %}
-           {{color}}
-        {% endfor %}
-
-        {% for animal in thing.animals %}
-            {% if animal.real %}
-                A real {{animal.name}}
-            {% else %}
-                A fake {{animal.name}}
-            {% endif %}
-        {% endfor %}
+        {% if at_home %}
+           {{name}} is at home
+        {% else %}
+           {{name}} is NOT at home
+        {% endif %}
     ";
 
     let template = liquid::ParserBuilder::with_stdlib()
@@ -20,25 +12,18 @@ fn main() {
         .unwrap()
         .parse(template).unwrap();
 
+    // 1st
     let globals = liquid::object!({
-        "thing": {
-            "name": "Foo Bar",
-            "colors": ["red", "green", "blue"],
-            "animals": [
-                {
-                    "name": "mouse",
-                    "real": true,
-                },
-                {
-                    "name": "snake",
-                    "real": true,
-                },
-                {
-                    "name": "oliphant",
-                    "real": false,
-                },
-            ],
-        }
+        "name": "Foo Bar",
+        "at_home": true,
+    });
+    let output = template.render(&globals).unwrap();
+    println!("{}", output);
+
+    // 2nd
+    let globals = liquid::object!({
+        "name": "Peti Bar",
+        "at_home": false,
     });
     let output = template.render(&globals).unwrap();
     println!("{}", output);

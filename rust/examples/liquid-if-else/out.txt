@@ -1,0 +1,10 @@
+
+        
+           Foo Bar is at home
+        
+    
+
+        
+           Peti Bar is NOT at home
+        
+    

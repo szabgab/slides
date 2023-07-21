@@ -50,6 +50,7 @@ fn get_examples() -> Vec<String> {
         "examples/liquid-hello-world-from-file/Cargo.lock",
         "examples/liquid-if-else/Cargo.lock",
         "examples/liquid-with-struct/Cargo.lock",
+        "examples/liquid-objects/Cargo.lock",
         ];
     let mut examples = vec![];
     let path = Path::new("examples");
