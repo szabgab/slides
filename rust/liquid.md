@@ -69,21 +69,6 @@ liquid = "0.26.4"
 ![](examples/liquid-loop-and-if/out.txt)
 ![](examples/liquid-loop-and-if/src/main.rs)
 
-## Liquid with struct
-{id: liquid-with-struct}
-
-![](examples/liquid-with-struct/Cargo.toml)
-![](examples/liquid-with-struct/src/main.rs)
-
-## Liquid TODO
-{id: liquid-todo}
-
-* pass struct
-* Control structures (if, else)
-* Loops (for)
-* Filters
-* Include template
-* Layout template (embed template)
 
 ## Liquid filters on numbers: plus, minus
 {id: liquid-filters-numbers}
@@ -99,10 +84,29 @@ liquid = "0.26.4"
 ![](examples/liquid-filters-strings/src/main.rs)
 ![](examples/liquid-filters-strings/out.txt)
 
-## Liquid include
+
+## Liquid TODO
+{id: liquid-todo}
+
+* pass struct
+* Control structures (if, else)
+* Loops (for)
+* Filters
+* Include template
+* Layout template (embed template)
+
+## Liquid include TODO
 {id: liquid-include}
 
 ![](examples/liquid-include/Cargo.toml)
 ![](examples/liquid-include/out.txt)
 ![](examples/liquid-include/src/main.rs)
+
+## Liquid with struct TODO
+{id: liquid-with-struct}
+
+
+![](examples/liquid-with-struct/Cargo.toml)
+![](examples/liquid-with-struct/src/main.rs)
+
 
