@@ -50,8 +50,11 @@
 
 ## Split string into vector
 {id: split-string-into-vector}
+{i: split}
+{i: vec}
 
 ![](examples/vectors/split_string_into_vector.rs)
+![](examples/vectors/split_to_vector.rs)
 
 ## Sort vector of numbers
 {id: sort-vector-of-numbers}
