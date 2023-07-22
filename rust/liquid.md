@@ -140,6 +140,18 @@ first or last
 
 ![](examples/liquid-include/out.txt)
 
+## Liquid assign to variable in template
+{id: liquid-assign}
+{i: assign}
+
+![](examples/liquid-assign/Cargo.toml)
+![](examples/liquid-assign/src/main.rs)
+
+![](examples/liquid-assign/templates/page.txt)
+![](examples/liquid-assign/templates/incl/header.txt)
+
+![](examples/liquid-assign/out.txt)
+
 ## Liquid with struct TODO
 {id: liquid-with-struct}
 

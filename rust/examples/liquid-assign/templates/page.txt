@@ -1,0 +1,6 @@
+{% assign title = "Other title" %}
+{% include 'templates/incl/header.txt' %}
+
+title in page template: {{title}}
+name in page template: {{name}}
+

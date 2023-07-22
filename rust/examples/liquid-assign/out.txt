@@ -1,0 +1,9 @@
+
+title in header: Other title
+value in header: some value
+
+
+title in page template: Other title
+name in page template: Foo Bar
+
+
