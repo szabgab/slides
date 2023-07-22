@@ -6,6 +6,9 @@
 
 * [Learn Rust](https://www.rust-lang.org/learn)
 * [The Rust book](https://doc.rust-lang.org/book/)
+* [Rust by example](https://doc.rust-lang.org/stable/rust-by-example/)
+* [rustlings](https://rustlings.cool/)
+* [Exercism Rust track](https://exercism.org/tracks/rust)
 
 * [Rust Documentation](https://doc.rust-lang.org/)
 * [Rust the language](https://www.rust-lang.org/)
