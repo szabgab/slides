@@ -3,12 +3,13 @@
 
 ## Fixed vector of numbers
 {id: fixed-vector-of-numbers}
+{i: vec!}
 
 * [Vec](https://doc.rust-lang.org/std/vec/struct.Vec.html)
 
 ![](examples/vectors/numbers.rs)
 
-## Iterate over elements of vector
+## Iterate over elements of vector using for-loop
 {id: iterate-over-element-of-vector}
 
 ![](examples/vectors/numbers_iterate.rs)
@@ -95,4 +96,20 @@
 
 ![](examples/vectors/vector_of_structs.rs)
 ![](examples/vectors/vector_of_structs.out)
+
+## Join elements of vector into a string
+{id: join-elements-of-vector}
+{i: join}
+
+![](examples/vectors/join.rs)
+![](examples/vectors/join.out)
+
+## Join vector of integers
+{id: join-vector-of-integers}
+{i: join}
+{i: iter}
+{i: map}
+{i: collect}
+
+![](examples/vectors/join_integers.rs)
 
