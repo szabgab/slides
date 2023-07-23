@@ -58,13 +58,24 @@ Two problems:
 
 ![](examples/stdin/get_number_function.rs)
 
-## Exercise STDIN rectangle
+## Exercise: STDIN rectangle
 {id: exercise-stdin-rectangle}
 
 * Ask the use for the length and the width of a rectangle and print the area and the circumference to the screen.
+
+## Exercis: STDIN calculator
+{id: exercise-stdin-calculator}
+
+* The program will ask the user for a number, and for an operator(+, -, /, *) and for another number.
+* It will then do the appropriate mathematical operation and print the result.
 
 ## Solution STDIN rectangle
 {id: solution-stdin-rectangle}
 
 ![](examples/stdin/rectangle.rs)
+
+## Solution: STDIN calculator
+{id: solution-stdin-calculator}
+
+![](examples/stdin/calc_stdin.rs)
 
