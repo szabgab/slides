@@ -14,6 +14,9 @@
 
 ## Command line program with a single file parameter
 {id: command-line-program}
+{i: eprintln!}
+{i: exit}
+{i: std::process::exit}
 
 ![](examples/argv/some_tool.rs)
 
@@ -22,4 +25,11 @@
 
 ![](examples/argv/rectangle_argv.rs)
 
+## Exercise: calucaltor argv
+{id: exercise-calculator-argv}
+
+## Solution: calucaltor argv
+{id: solution-calculator-argv}
+
+![](examples/argv/calc_argv.rs)
 

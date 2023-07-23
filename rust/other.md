@@ -119,3 +119,7 @@ echo %ERROR_LEVEL%
 ![](examples/rust-wc/Cargo.toml)
 ![](examples/rust-wc/src/main.rs)
 
+## copy vs clone
+{id: copy-vs-clone}
+
+TODO
