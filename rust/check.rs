@@ -38,28 +38,6 @@ fn main() {
 // TODO: but exclude examples/*/target/
 fn get_examples() -> Vec<String> {
     let exclude = vec![
-        "examples/hello-world/Cargo.lock",
-        "examples/handlebars-quick/Cargo.lock",
-        "examples/handlebars-separate-functions/Cargo.lock",
-        "examples/handlebars-render-to-file/Cargo.lock",
-        "examples/handlebars-template-file/Cargo.lock",
-        "examples/handlebars-date/Cargo.lock",
-        "examples/handlebars-loop/Cargo.lock",
-        "examples/liquid-hello-world/Cargo.lock",
-        "examples/liquid-hello-world-variables/Cargo.lock",
-        "examples/liquid-hello-world-from-file/Cargo.lock",
-        "examples/liquid-if-else/Cargo.lock",
-        "examples/liquid-with-struct/Cargo.lock",
-        "examples/liquid-objects/Cargo.lock",
-        "examples/liquid-for-loop/Cargo.lock",
-        "examples/liquid-loop-and-if/Cargo.lock",
-        "examples/liquid-filters-numbers/Cargo.lock",
-        "examples/liquid-filters-strings/Cargo.lock",
-        "examples/liquid-include/Cargo.lock",
-        "examples/liquid-filters-order/Cargo.lock",
-        "examples/liquid-assign/Cargo.lock",
-        "examples/liquid-include-header-footer/Cargo.lock",
-        "examples/liquid-layout/Cargo.lock",
         ];
     let mut examples = vec![];
     let path = Path::new("examples");
@@ -72,6 +50,9 @@ fn get_examples() -> Vec<String> {
                     if let Ok(filepath) = filepath {
                         //println!("{:?}", filepath);
                         if filepath.path().is_dir() {
+                            continue;
+                        }
+                        if filepath.path().ends_with("Cargo.lock") {
                             continue;
                         }
                         if exclude.contains(&filepath.path().into_os_string().into_string().expect("Bad").as_str()) {
