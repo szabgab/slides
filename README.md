@@ -41,3 +41,11 @@ python app.py
 
 Drakula for pygments
 https://github.com/dracula/pygments
+
+## Local server
+
+Install rustatic from https://github.com/szabgab/rustatic
+
+```
+rustatic --path html/ --indexfile index.html --nice
+```
