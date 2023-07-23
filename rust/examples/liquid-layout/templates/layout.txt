@@ -1,0 +1,6 @@
+title in header: {{title}}
+value in header: {{header_value}}
+
+{{content}}
+
+value in footer: {{footer_value}}

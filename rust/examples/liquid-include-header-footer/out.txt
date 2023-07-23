@@ -1,0 +1,10 @@
+title in header: Liquid
+value in header: some value for the header
+
+
+title in page template: Liquid
+name in page template: Foo Bar
+
+value in footer: some value for the footer
+
+

@@ -1,0 +1,6 @@
+{% capture content %}
+title in page template: {{title}}
+name in page template: {{name}}
+{% endcapture %}
+
+{% include 'templates/layout.txt' %}

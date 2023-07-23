@@ -152,6 +152,30 @@ first or last
 
 ![](examples/liquid-assign/out.txt)
 
+## Liquid include header and footer
+{id: liquid-include-header-and-footer}
+{i: include}
+
+![](examples/liquid-include-header-footer/Cargo.toml)
+![](examples/liquid-include-header-footer/out.txt)
+![](examples/liquid-include-header-footer/src/main.rs)
+![](examples/liquid-include-header-footer/templates/incl/footer.txt)
+![](examples/liquid-include-header-footer/templates/incl/header.txt)
+![](examples/liquid-include-header-footer/templates/page.txt)
+
+
+## Liquid layout (include and capture)
+{id: liquid-layout}
+{i: include}
+{i: capture}
+
+![](examples/liquid-layout/Cargo.toml)
+![](examples/liquid-layout/out.txt)
+![](examples/liquid-layout/src/main.rs)
+![](examples/liquid-layout/templates/layout.txt)
+![](examples/liquid-layout/templates/page.txt)
+
+
 ## Liquid with struct TODO
 {id: liquid-with-struct}
 
