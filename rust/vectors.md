@@ -14,28 +14,42 @@
 
 ![](examples/vectors/numbers_iterate.rs)
 
-## Mutable numbers vector
+## Mutable vector of numbers, append (push) values
 {id: mutable-numbers-vector}
 {i: push}
+{i: append}
 
 ![](examples/vectors/mutable_numbers_vector.rs)
 
+## Mutable empty vector for numbers (push)
+{id: mutable-empty-vector-for-numbers}
+{i: push}
 
-## Rust vector
+![](examples/vectors/mutable_empty_vector_for_integers.rs)
+![](examples/vectors/mutable_empty_vector_for_integers.out)
+
+## Mutable empty vector for strings
+{id: mutable-empty-vector-for-strings}
+
+![](examples/vectors/mutable_empty_vector_for_strings.rs)
+![](examples/vectors/mutable_empty_vector_for_strings.out)
+
+## Mutable empty vector with type definition
 {id: rust-vector}
 {i: vec!}
 {i: push}
 
 ![](examples/vectors/vector_with_type.rs)
+![](examples/vectors/vector_with_type.out)
+
 
 ## Mutable vector of strings
 {id: mutable-vector-of-strings}
 
 ![](examples/vectors/mutable_vector_of_strings_one.rs)
-![](examples/vectors/vector_of_strings.rs)
-![](examples/vectors/mutable_vector_of_strings_more.rs)
+![](examples/vectors/mutable_vector_of_strings_one.out)
 
-![](examples/vectors/mutable_empty_vector.rs)
+
 
 ## Count words
 {id: count-words}
@@ -44,8 +58,9 @@
 
 ![](examples/vectors/count_words.rs)
 
-## Vector extend
+## Vector extend (combining two vectors)
 {id: vector-extend}
+{i: extend}
 
 ![](examples/vectors/extend.rs)
 
