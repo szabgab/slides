@@ -38,6 +38,7 @@ fn main() {
 // TODO: but exclude examples/*/target/
 fn get_examples() -> Vec<String> {
     let exclude = vec![
+        "examples/try-packages/Cargo.toml",
         ];
     let mut examples = vec![];
     let path = Path::new("examples");
