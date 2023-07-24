@@ -2,3 +2,11 @@ The black cat
 Chars(['T', 'h', 'e', ' ', 'b', 'l', 'a', 'c', 'k', ' ', 'c', 'a', 't'])
 Some('b')
 Some('b')
+None
+--------
+None
+This was None
+Some('b')
+b
+None
+This was None

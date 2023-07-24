@@ -28,15 +28,6 @@
 ![](examples/strings/characters.rs)
 ![](examples/strings/characters.out)
 
-## Rust - reverse string
-{id: rust-reverse-string}
-{i: chars}
-{i: rev}
-{i: collect}
-
-![](examples/strings/reverse.rs)
-![](examples/strings/reverse.out)
-
 ## Rust - string ends with
 {id: rust-string-ends-with}
 {i: ends_with}
@@ -50,6 +41,22 @@
 
 ![](examples/strings/starts_with.rs)
 ![](examples/strings/starts_with.out)
+
+## Iterate over the characters of a string
+{id: iterate-over-characters}
+
+![](examples/strings/iterate.rs)
+
+
+## Rust - reverse string
+{id: rust-reverse-string}
+{i: chars}
+{i: rev}
+{i: collect}
+
+![](examples/strings/reverse.rs)
+![](examples/strings/reverse.out)
+
 
 ## Concatenation str with str
 {id: concatetation-str-with-str}
@@ -69,11 +76,6 @@
 
 ![](examples/strings/concatenation_string_with_str.rs)
 ![](examples/strings/concatenation_string_with_str.out)
-
-## Iterate over the characters of a string
-{id: iterate-over-characters}
-
-![](examples/strings/iterate.rs)
 
 ## Split string
 {id: split-string}
@@ -111,4 +113,33 @@
 
 ![](examples/strings/str_string_equality.rs)
 ![](examples/strings/str_string_equality.out)
+
+## String notes
+{id: string-notes}
+
+* str - addr, length (a view into a utf-8 encoded bytes located either in the binary, on the stack, or on the heap)
+* &str - borrowed str
+* String - addr, length, capacity  (owner)
+
+## String replace all
+{id: string-replace}
+{i: replace}
+
+![](examples/strings/replace.rs)
+![](examples/strings/replace.out)
+
+## String replace limited times
+{id: string-replacen}
+{i: replacen}
+
+![](examples/strings/replacen.rs)
+![](examples/strings/replacen.out)
+
+## String replace range
+{id: string-replace-range}
+{i: replace_range}
+
+
+![](examples/strings/replace_range.rs)
+![](examples/strings/replace_range.out)
 
