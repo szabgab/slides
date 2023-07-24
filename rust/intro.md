@@ -13,6 +13,10 @@
 * [Rust Documentation](https://doc.rust-lang.org/)
 * [Rust the language](https://www.rust-lang.org/)
 
+* [This week in Rust](https://this-week-in-rust.org/) - a weekly newsletter
+* [Rustacean](https://www.rustaceans.org/)
+* [Rustacean station](https://rustacean-station.org/) - a podcast
+
 * [From Perl to Rust](https://oylenshpeegul.gitlab.io/from-perl-to-rust/introduction.html)
 
 * [The Rust book in Hebrew](https://github.com/IttayWeiss/rustbook-heb)
