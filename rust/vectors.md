@@ -128,3 +128,10 @@
 
 ![](examples/vectors/join_integers.rs)
 
+## Maximum value of a vector
+{id: maximum-vale-of-a-vector}
+
+![](examples/vectors/max_number.rs)
+![](examples/vectors/max_number.out)
+
+
