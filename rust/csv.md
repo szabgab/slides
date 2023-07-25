@@ -1,19 +1,26 @@
 # CSV
 {id: csv}
 
-## Handle CSV file
-{id: handle-csv-file}
+## Read CSV file as a vector of StringRecords
+{id: read-csv-file-as-a-vector-of-stringrecords}
+{i: csv}
+{i: StringRecord}
 
 * [csv](https://crates.io/crates/csv)
+* [StringRecord](https://docs.rs/csv/latest/csv/struct.StringRecord.html)
 
-![](examples/csv-demo/planets.csv)
-![](examples/csv-demo/Cargo.toml)
-![](examples/csv-demo/src/main.rs)
+* We read the rows (skipping the first row)
+* We can iterate over the rows or access the individual elements
+
+![](examples/csv-stringrecord/planets.csv)
+![](examples/csv-stringrecord/Cargo.toml)
+![](examples/csv-stringrecord/src/main.rs)
+![](examples/csv-stringrecord/out.txt)
 
 ## Read CSV file into hashes
 {id: read-csv-file-into-hashes}
 
 ![](examples/csv-demo-hash/planets.csv)
-![](examples/csv-demo-hash/src/main.rs)
 ![](examples/csv-demo-hash/Cargo.toml)
+![](examples/csv-demo-hash/src/main.rs)
 
