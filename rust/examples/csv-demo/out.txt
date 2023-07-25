@@ -1,0 +1,28 @@
+StringRecord(["Mercury", "0.4", "0.055"])
+Mercury
+StringRecord(["Venus", "0.7", "0.815"])
+Venus
+StringRecord(["Earth", "1", "1"])
+Earth
+StringRecord(["Mars", "1.5", "0.107"])
+Mars
+StringRecord(["Ceres", "2.77", "0.00015"])
+Ceres
+StringRecord(["Jupiter", "5.2", "318"])
+Jupiter
+StringRecord(["Saturn", "9.5", "95"])
+Saturn
+StringRecord(["Uranus", "19.6", "14"])
+Uranus
+StringRecord(["Neptune", "30", "17"])
+Neptune
+StringRecord(["Pluto", "39", "0.00218"])
+Pluto
+StringRecord(["Charon", "39", "0.000254"])
+Charon
+------
+Mercury
+0.4
+0.055
+------
+Mars
