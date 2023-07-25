@@ -8,8 +8,6 @@ fn main() {
     println!("{}", counter["foo"]);
     println!("{:?}", counter.get("foo"));
 
-    // println!("{}", counter["zz"]); // panick
+    // println!("{}", counter["zz"]); // panic
     println!("{:?}", counter.get("zz")); // None
-    println!("{:?}", counter.contains_key("zz")); // false
-    println!("{:?}", counter.contains_key("foo")); // true
 }

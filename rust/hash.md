@@ -22,10 +22,17 @@
 ![](examples/hashes/create_hash_with_data.rs)
 ![](examples/hashes/create_hash_with_data.out)
 
+## Check if hash contains key (key exists)
+{id: hash-containes-key}
+{i: contains}
+{i exists}
+
+![](examples/hashes/contains_key.rs)
+![](examples/hashes/contains_key.out)
+
 ## Get value from hash
 {id: get-value-from-hash}
 {i: get}
-{i: contains_key}
 
 * `get` returns a reference to the value corresponding to the key.
 
