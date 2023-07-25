@@ -134,4 +134,17 @@
 ![](examples/vectors/max_number.rs)
 ![](examples/vectors/max_number.out)
 
+## Change vector using map
+{id: change-vector-using-map}
+{i: into_iter}
+{i: map}
+{i: collect}
+
+![](examples/vectors/map_on_integers.rs)
+
+## Update values in vector of structs using map
+{id: update-values-in-vector-of-structs-using-map}
+
+![](examples/vectors/update_vector_of_structs.rs)
+![](examples/vectors/update_vector_of_structs.out)
 
