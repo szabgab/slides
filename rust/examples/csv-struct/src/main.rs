@@ -3,8 +3,13 @@ use std::fs::File;
 
 #[derive(Debug, serde::Deserialize)]
 struct Record {
+    #[serde(rename = "Planet name")]
     name: String,
+
+    #[serde(rename = "Distance (AU)")]
     distance: f32,
+
+    #[serde(rename = "Mass")]
     mass: f32,
 }
 

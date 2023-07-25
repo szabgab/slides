@@ -32,8 +32,9 @@
 {i: csv}
 {i: struct}
 
-examples/csv-struct/planets.csv
+![](examples/csv-struct/planets.csv)
 
-examples/csv-struct/Cargo.toml
-examples/csv-struct/src/main.rs
-examples/csv-struct/out.txt
+![](examples/csv-struct/Cargo.toml)
+![](examples/csv-struct/src/main.rs)
+
+![](examples/csv-struct/out.txt)
