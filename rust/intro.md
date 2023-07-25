@@ -22,6 +22,13 @@
 
 * [The Rust book in Hebrew](https://github.com/IttayWeiss/rustbook-heb)
 
+## What is written in Rust?
+{id: what-is-written-in-rust}
+
+* [Pydentic](https://docs.pydantic.dev/) is now written in Rust.
+* [SurrealDB](https://surrealdb.com/) multi-model database.
+
+
 ## Install Rust
 {id: rust-installation}
 

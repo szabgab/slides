@@ -116,10 +116,10 @@ first or last
 ![](examples/liquid-filters-order/out.txt)
 
 
-## Liquid TODO
+## Liquid
 {id: liquid-todo}
 
-* pass struct
+* pass integer, string, bool, vector, tuple, struct
 * Control structures (if, else)
 * Loops (for)
 * Filters
@@ -176,11 +176,11 @@ first or last
 ![](examples/liquid-layout/templates/page.txt)
 
 
-## Liquid with struct TODO
+## Liquid with struct
 {id: liquid-with-struct}
 
 
 ![](examples/liquid-with-struct/Cargo.toml)
 ![](examples/liquid-with-struct/src/main.rs)
-
+![](examples/liquid-with-struct/out.html)
 
