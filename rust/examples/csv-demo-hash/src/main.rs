@@ -4,16 +4,17 @@ use std::collections::HashMap;
 
 type Record = HashMap<String, String>;
 
-
 fn main() {
     let filepath = "planets.csv";
     let result = read_file(filepath);
     match result {
         Ok(rows) => {
-            for row in rows {
+            for row in &rows {
                 println!("{:?}", row);
-                //println!("{}", row["Planet name"]);
+                println!("{}", row["Planet name"]);
             }
+            println!("---");
+            println!("{}", rows[3]["Planet name"]);
         },
         Err(err) => panic!("Error: {}", err)
     }

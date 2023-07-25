@@ -1,0 +1,24 @@
+{"Mass": "0.055", "Planet name": "Mercury", "Distance (AU)": "0.4"}
+Mercury
+{"Distance (AU)": "0.7", "Planet name": "Venus", "Mass": "0.815"}
+Venus
+{"Planet name": "Earth", "Distance (AU)": "1", "Mass": "1"}
+Earth
+{"Mass": "0.107", "Distance (AU)": "1.5", "Planet name": "Mars"}
+Mars
+{"Planet name": "Ceres", "Distance (AU)": "2.77", "Mass": "0.00015"}
+Ceres
+{"Distance (AU)": "5.2", "Mass": "318", "Planet name": "Jupiter"}
+Jupiter
+{"Distance (AU)": "9.5", "Planet name": "Saturn", "Mass": "95"}
+Saturn
+{"Planet name": "Uranus", "Mass": "14", "Distance (AU)": "19.6"}
+Uranus
+{"Planet name": "Neptune", "Mass": "17", "Distance (AU)": "30"}
+Neptune
+{"Distance (AU)": "39", "Mass": "0.00218", "Planet name": "Pluto"}
+Pluto
+{"Planet name": "Charon", "Mass": "0.000254", "Distance (AU)": "39"}
+Charon
+---
+Mars
