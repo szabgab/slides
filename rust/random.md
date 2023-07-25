@@ -13,7 +13,6 @@ cd random
 ```
 
 ![](examples/random/Cargo.toml)
-![](examples/random/Cargo.lock)
 ![](examples/random/src/main.rs)
 
 ```

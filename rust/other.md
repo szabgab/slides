@@ -43,7 +43,6 @@ Somthing that looks like a function but ends with an exclamation point. e.g. `pr
 ![](examples/project/src/main.rs)
 ![](examples/project/src/helper.rs)
 ![](examples/project/Cargo.toml)
-![](examples/project/Cargo.lock)
 
 ## Variable Scope in Rust
 {id: rust-variable-scope}
@@ -74,7 +73,6 @@ Somthing that looks like a function but ends with an exclamation point. e.g. `pr
 ## serde
 {id: serde}
 
-![](examples/serde-demo/Cargo.lock)
 ![](examples/serde-demo/Cargo.toml)
 
 ## serde manipulate json (change, add)
@@ -82,8 +80,6 @@ Somthing that looks like a function but ends with an exclamation point. e.g. `pr
 
 ![](examples/serde-manipulate-json/Cargo.toml)
 ![](examples/serde-manipulate-json/src/main.rs)
-
-![](examples/serde-manipulate-json/Cargo.lock)
 
 ## Exit
 {id: exit}
@@ -105,8 +101,6 @@ echo %ERROR_LEVEL%
 
 ![](examples/simple_logger_demo/src/main.rs)
 
-![](examples/simple_logger_demo/Cargo.lock)
-
 ## Define multiple variables
 {id: define-multiple-variables}
 
@@ -115,7 +109,6 @@ echo %ERROR_LEVEL%
 ## wc
 {id: wc}
 
-![](examples/rust-wc/Cargo.lock)
 ![](examples/rust-wc/Cargo.toml)
 ![](examples/rust-wc/src/main.rs)
 

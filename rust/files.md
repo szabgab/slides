@@ -67,7 +67,6 @@
 ## Create temporary directory
 {id: temporary-directory}
 
-![](examples/tempdir-demo/Cargo.lock)
 ![](examples/tempdir-demo/Cargo.toml)
 ![](examples/tempdir-demo/src/main.rs)
 
