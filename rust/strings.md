@@ -93,6 +93,13 @@
 ![](examples/strings/concatenation_with_format.rs)
 ![](examples/strings/concatenation_with_format.out)
 
+## concat
+{id: concat}
+{i: concat}
+
+![](examples/strings/concat.rs)
+![](examples/strings/concat.out)
+
 ## Split string
 {id: split-string}
 {i: split}

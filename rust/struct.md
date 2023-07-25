@@ -8,17 +8,11 @@
 ![](examples/struct/point.rs)
 ![](examples/struct/point.out)
 
-## Mutable struct
+## Change attributes of a mutable struct
 {id: mutable-struct}
 
 ![](examples/struct/mutable_point.rs)
 ![](examples/struct/mutable_point.out)
-
-## Struct with method
-{id: struct-with-method}
-
-![](examples/struct/point_with_method.rs)
-![](examples/struct/point_with_method.out)
 
 ## Struct method to modify fields
 {id: struct-method-to-modify-fields}
@@ -29,7 +23,7 @@
 ## Struct inheritance
 {id: struct-inheritance}
 
-* There is no inheritance among structs similar to classes in other languages.
+* There is no inheritance among structs similar to classes in other languages. However, there is composition.
 
 ## Struct composition
 {id: struct-composition}
@@ -76,3 +70,9 @@
 
 ![](examples/struct/debugging_struct.rs)
 ![](examples/struct/debugging_struct.out)
+
+## Struct with vector and optional value
+{id: struct-with-vector-and-optional-value}
+
+![](examples/struct/struct_with_vector_and_optional_value.rs)
+![](examples/struct/struct_with_vector_and_optional_value.out)
