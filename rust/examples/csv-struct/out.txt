@@ -1,0 +1,15 @@
+Record { name: "Mercury", distance: 0.4, mass: 0.055 }
+Record { name: "Venus", distance: 0.7, mass: 0.815 }
+Record { name: "Earth", distance: 1.0, mass: 1.0 }
+Record { name: "Mars", distance: 1.5, mass: 0.107 }
+Record { name: "Ceres", distance: 2.77, mass: 0.00015 }
+Record { name: "Jupiter", distance: 5.2, mass: 318.0 }
+Record { name: "Saturn", distance: 9.5, mass: 95.0 }
+Record { name: "Uranus", distance: 19.6, mass: 14.0 }
+Record { name: "Neptune", distance: 30.0, mass: 17.0 }
+Record { name: "Pluto", distance: 39.0, mass: 0.00218 }
+Record { name: "Charon", distance: 39.0, mass: 0.000254 }
+---
+Mars
+1.5
+0.107
