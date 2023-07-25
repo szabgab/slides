@@ -20,7 +20,8 @@
 ## Read CSV file into hashes
 {id: read-csv-file-into-hashes}
 
-![](examples/csv-demo-hash/planets.csv)
-![](examples/csv-demo-hash/Cargo.toml)
-![](examples/csv-demo-hash/src/main.rs)
+![](examples/csv-hash/planets.csv)
+![](examples/csv-hash/Cargo.toml)
+![](examples/csv-hash/src/main.rs)
+![](examples/csv-hash/out.txt)
 
