@@ -2,6 +2,12 @@ use std::error::Error;
 use std::fs::File;
 
 #[derive(Debug, serde::Deserialize)]
+struct Person {
+    name: String,
+    birth_year: u16,
+}
+
+#[derive(Debug, serde::Deserialize)]
 struct Record {
     #[serde(rename = "Planet name")]
     name: String,
@@ -17,12 +23,18 @@ struct Record {
 
     #[serde(default = "get_zero")]
     float: f32,
+
+    #[serde(default = "get_person")]
+    person: Person
 }
 fn get_text() -> String {
     "abc".to_string()
 }
 fn get_zero() -> f32 {
     0.0
+}
+fn get_person() -> Person {
+    Person { name: "".to_string(), birth_year: 0 }
 }
 
 fn main() {
@@ -39,6 +51,8 @@ fn main() {
             println!("{}", rows[3].mass);
             println!("{}", rows[3].text);
             println!("{}", rows[3].float);
+            println!("{}", rows[3].person.name);
+            println!("{}", rows[3].person.birth_year);
         },
         Err(err) => panic!("Error: {}", err)
     }
