@@ -38,3 +38,19 @@
 ![](examples/csv-struct/src/main.rs)
 
 ![](examples/csv-struct/out.txt)
+
+## Read CSV to struct, add extra fields
+{id: read-csv-to-struct-with-extra-fields}
+
+![](examples/csv-struct-extra-fields/Cargo.toml)
+![](examples/csv-struct-extra-fields/out.txt)
+![](examples/csv-struct-extra-fields/planets.csv)
+![](examples/csv-struct-extra-fields/src/main.rs)
+
+## CSV TODO
+{id: csv-todo}
+
+* What if a field is missing (basically there is an empty string instead of the value) How can we set a default value for that? Especially numerical columns.
+* What if a field has "na" in it meaning not available? Especially numerical columns.
+* How can we skip a row (e.g. if one of the fields is missing)?
+
