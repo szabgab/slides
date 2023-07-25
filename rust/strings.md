@@ -71,11 +71,27 @@
 ![](examples/strings/concatenation_string_with_string.rs)
 ![](examples/strings/concatenation_string_with_string.out)
 
+## Concatenation String with String (clone)
+{id: concatetation-string-with-string-clone}
+{i: clone}
+
+![](examples/strings/concatenation_string_with_string_clone.rs)
+![](examples/strings/concatenation_string_with_string_clone.out)
+
 ## Concatenation String with str
 {id: concatetation-string-with-str}
 
 ![](examples/strings/concatenation_string_with_str.rs)
 ![](examples/strings/concatenation_string_with_str.out)
+
+## Concatenate strings using format!
+{id: concatenate-strings-using-format}
+{i: format!}
+
+* In this case all the strings are copied so it is less efficient than where we move the string, but this means we can continue to use the original variables.
+
+![](examples/strings/concatenation_with_format.rs)
+![](examples/strings/concatenation_with_format.out)
 
 ## Split string
 {id: split-string}
