@@ -98,4 +98,9 @@
 ![](examples/struct/tuple_as_struct_method.rs)
 ![](examples/struct/tuple_as_struct_method.out)
 
+## Struct with method
+{id: struct-with-method}
+
+![](examples/struct/struct_with_method.rs)
+![](examples/struct/struct_with_method.out)
 
