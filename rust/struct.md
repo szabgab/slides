@@ -76,3 +76,26 @@
 
 ![](examples/struct/struct_with_vector_and_optional_value.rs)
 ![](examples/struct/struct_with_vector_and_optional_value.out)
+
+## Printing and debug-printing simple struct
+{id: printing-simple-struct}
+
+![](examples/struct/struct_cannot_be_printed.rs)
+![](examples/struct/struct_with_debug.rs)
+![](examples/struct/struct_with_debug.out)
+![](examples/struct/struct_with_display.rs)
+![](examples/struct/struct_with_display.out)
+
+## Use a tuple as a struct to represent color
+{id: use-a-typle-as-struct}
+
+![](examples/struct/tuple_as_struct.rs)
+![](examples/struct/tuple_as_struct.out)
+
+## Add method to tuple-based struct
+{id: method-to-tuple-based-struct}
+
+![](examples/struct/tuple_as_struct_method.rs)
+![](examples/struct/tuple_as_struct_method.out)
+
+
