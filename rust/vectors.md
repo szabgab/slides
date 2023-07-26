@@ -148,3 +148,15 @@
 ![](examples/vectors/update_vector_of_structs.rs)
 ![](examples/vectors/update_vector_of_structs.out)
 
+## map is lazy
+{id: map-is-lazy}
+
+![](examples/vectors/map1.rs)
+![](examples/vectors/map1.out)
+
+![](examples/vectors/map2.rs)
+![](examples/vectors/map2.out)
+
+![](examples/vectors/map3.rs)
+![](examples/vectors/map3.out)
+

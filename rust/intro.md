@@ -17,6 +17,7 @@
 * [This week in Rust](https://this-week-in-rust.org/) - a weekly newsletter
 * [Rustacean](https://www.rustaceans.org/)
 * [Rustacean station](https://rustacean-station.org/) - a podcast
+* [Let's Get Rusty](https://letsgetrusty.com/)
 
 * [From Perl to Rust](https://oylenshpeegul.gitlab.io/from-perl-to-rust/introduction.html)
 
