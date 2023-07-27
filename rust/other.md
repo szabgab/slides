@@ -18,18 +18,6 @@
 ![](examples/functions/square_root.rs)
 ![](examples/other/collect.rs)
 
-## Rust and print
-{id: rust-and-print}
-
-```
-print!
-println!
-eprint!   to STDERR
-eprintln! to STDERR
-
-format!
-```
-
 ## Macros
 {id: macros}
 

@@ -166,33 +166,42 @@ Since Rust 1.58
 
 ## Debugging print
 {id: debugging-print}
-{i: dbg}
+{i: dbg!}
+
+* goes to STDERR
 
 ![](examples/intro/debugging_print.rs)
 ![](examples/intro/debugging_print.out)
+
+## Rust and print
+{id: rust-and-print}
+{i: print!}
+{i: println!}
+{i: eprint!}
+{i: eprintln!}
+{i: dbg!}
+{i: format!}
+
+
+* [print!](https://doc.rust-lang.org/std/macro.print.html)    to STDOUT
+* [println!](https://doc.rust-lang.org/std/macro.println.html)  to STDOUT
+
+* [eprint!](https://doc.rust-lang.org/std/macro.eprint.html)   to STDERR
+* [eprintln!](https://doc.rust-lang.org/std/macro.eprintln.html) to STDERR
+* [dbg!](https://doc.rust-lang.org/std/macro.dbg.html)      to STDERR
+
+* [format!](https://doc.rust-lang.org/std/macro.format.html)   returns formatted string
+
+![](examples/intro/print.rs)
+![](examples/intro/print.out)
+
 
 ## Exercise 1
 {id: exercise-1}
 
 * Make sure you have Rust installed.
 * Try `rustc --version`
-* Write a stand-alone program that prints "Hello World". Compile with `rustc` and run it.
-* Add comments
-* Do the same using Cargo.
-
-## Using the Standard library
-{id: using-the-standard-library}
-
-* [std](https://doc.rust-lang.org/std/)
-
-![](examples/intro/std_pi.rs)
-![](examples/intro/std_pi.out)
-
-![](examples/intro/std_pi_use.rs)
-![](examples/intro/std_pi_use.out)
-
-![](examples/intro/std_pi_partial_use.rs)
-![](examples/intro/std_pi_partial_use.out)
-
-
+* Create a new project with Cargo.
+* Write a program that prints "Hello World".
+* Add comments.
 
