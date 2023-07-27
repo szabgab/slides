@@ -18,6 +18,8 @@
 * [Rustacean](https://www.rustaceans.org/)
 * [Rustacean station](https://rustacean-station.org/) - a podcast
 * [Let's Get Rusty](https://letsgetrusty.com/)
+* [noboilerplate](https://github.com/0atman/noboilerplate)
+
 
 * [From Perl to Rust](https://oylenshpeegul.gitlab.io/from-perl-to-rust/introduction.html)
 
