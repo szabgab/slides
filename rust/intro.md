@@ -32,6 +32,15 @@
 * [SurrealDB](https://surrealdb.com/) multi-model database.
 
 
+## Demo None handling
+{id: demo-non-handling}
+
+![](examples/intro/demo_none_handling.rs)
+
+
+See original idea on [What is Rust and why is it so popular?](https://stackoverflow.blog/2020/01/20/what-is-rust-and-why-is-it-so-popular/)
+
+
 ## Install Rust
 {id: rust-installation}
 
