@@ -121,6 +121,8 @@ TODO
 ## Run external programs
 {id: run-external-programs}
 
+* [Command](https://doc.rust-lang.org/std/process/struct.Command.html)
+
 ![](examples/external/run_external_command.rs)
 
 [see](https://stackoverflow.com/questions/41034635/how-do-i-convert-between-string-str-vecu8-and-u8)
