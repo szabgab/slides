@@ -1,5 +1,5 @@
-# Rust and Files
-{id: rust-and-files}
+# Files
+{id: files}
 
 ## Rust - write to file
 {id: rust-write-to-file}

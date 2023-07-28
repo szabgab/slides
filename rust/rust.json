@@ -38,6 +38,7 @@
         "liquid.md",
         "packages.md",
         "crates.md",
+        "threads.md",
         "other.md"
     ]
 }

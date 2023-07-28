@@ -1,5 +1,5 @@
-# Rust functions
-{id: rust-functions}
+# Functions
+{id: functions}
 
 ## Rust main function
 {id: rust-main-function}

@@ -39,6 +39,8 @@ fn main() {
 fn get_examples() -> Vec<String> {
     let exclude = vec![
         "examples/try-packages/Cargo.toml",
+        "examples/try-threads/Cargo.toml",
+        "examples/threads-messages/Cargo.toml",
         ];
     let mut examples = vec![];
     let path = Path::new("examples");
