@@ -112,6 +112,13 @@
 ![](examples/vectors/vector_of_structs.rs)
 ![](examples/vectors/vector_of_structs.out)
 
+## Vector of structs - change value
+{id: vector-of-structs-change-value}
+
+
+![](examples/vectors/vector_of_structs_change_value.rs)
+![](examples/vectors/vector_of_structs_change_value.out)
+
 ## Join elements of vector into a string
 {id: join-elements-of-vector}
 {i: join}
