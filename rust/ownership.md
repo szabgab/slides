@@ -1,4 +1,4 @@
-# Rust variable ownership
+# Variable ownership in Rust
 {id: ownership}
 
 ## Stack and Heap

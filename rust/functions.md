@@ -6,8 +6,10 @@
 
 ![](examples/functions/main.rs)
 
-## Rust function with parameters
-{id: rust-function-with-parameters}
+## Rust hello world function
+{id: rust-hello-world-function}
+
+![](examples/functions/hello_world.rs)
 
 ## Rust function with parameter
 {id: rust-function-with-parameter}
@@ -28,11 +30,6 @@
 {id: rust-recursive-functions-fibonacci}
 
 ![](examples/functions/recursive_fibonacci.rs)
-
-## Rust function without returning anything
-{id: rust-function-without-returning-anything}
-
-![](examples/functions/no_return.rs)
 
 ## Make function argument mutable inside the function
 {id: make-function-argument-mutable-inside-the-function}

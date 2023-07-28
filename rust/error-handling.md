@@ -1,4 +1,4 @@
-# Error handling
+# Error handling in Rust
 {id: error-handling}
 
 

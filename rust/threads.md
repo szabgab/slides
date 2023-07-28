@@ -1,4 +1,4 @@
-# Threads
+# Threads in Rust
 {id: threads}
 
 ## First example with threads
