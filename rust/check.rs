@@ -41,7 +41,8 @@ fn get_examples() -> Vec<String> {
         "examples/try-packages/Cargo.toml",
         "examples/try-threads/Cargo.toml",
         "examples/threads-messages/Cargo.toml",
-        ];
+        "examples/threads-messages-multiple-sources/Cargo.toml",
+    ];
     let mut examples = vec![];
     let path = Path::new("examples");
     for entry in path.read_dir().expect("read_dir call failed") {
