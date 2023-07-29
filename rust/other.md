@@ -114,3 +114,15 @@ TODO
 ![](examples/external/run_external_command.rs)
 
 [see](https://stackoverflow.com/questions/41034635/how-do-i-convert-between-string-str-vecu8-and-u8)
+
+## Type alias
+{id: type-alias}
+{i: type}
+
+* We can use the `type` keyword to create aliases to existing types. This can help us in reading the code, but Rust does not do any enforcement.
+* As you can see in the following example we can pass arguments to a "different" type as long as it is an alias to the same type.
+* [type](https://doc.rust-lang.org/std/keyword.type.html)
+
+![](examples/other/type_alias.rs)
+
+
