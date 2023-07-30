@@ -171,4 +171,10 @@
 
 ![](examples/ownership/lifetime_annotation.rs)
 
+## Change vector of structs
+{id: change-vector-of-structs}
+
+![](examples/ownership/change_vector_of_structs.rs)
+![](examples/ownership/change_vector_of_structs.out)
+
 

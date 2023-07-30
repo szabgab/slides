@@ -1,0 +1,28 @@
+[examples/ownership/change_vector_of_structs.rs:3] &graph = [
+    Point {
+        x: 0,
+        y: 0,
+    },
+    Point {
+        x: 10,
+        y: 20,
+    },
+    Point {
+        x: 30,
+        y: 40,
+    },
+]
+[examples/ownership/change_vector_of_structs.rs:5] &graph = [
+    Point {
+        x: 100,
+        y: 0,
+    },
+    Point {
+        x: 110,
+        y: 20,
+    },
+    Point {
+        x: 130,
+        y: 40,
+    },
+]

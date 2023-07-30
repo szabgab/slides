@@ -166,3 +166,25 @@
 ![](examples/strings/replace_range.rs)
 ![](examples/strings/replace_range.out)
 
+
+## Function to combine two strings
+{id: function-to-combine-two-strings}
+
+![](examples/strings/combine.rs)
+
+
+## Ownership and strings
+{id: ownership-and-strings}
+
+* take ownership
+
+![](examples/strings/take_ownership.rs)
+
+* borrow
+
+![](examples/strings/borrow.rs)
+
+* give ownership
+
+![](examples/strings/give_ownership.rs)
+

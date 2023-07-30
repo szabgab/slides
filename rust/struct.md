@@ -104,3 +104,8 @@
 ![](examples/struct/struct_with_method.rs)
 ![](examples/struct/struct_with_method.out)
 
+## Structs and circural references
+{id: structs-and-circular-references}
+
+![](examples/struct/circural_references.rs)
+
