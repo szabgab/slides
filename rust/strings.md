@@ -188,3 +188,8 @@
 
 ![](examples/strings/give_ownership.rs)
 
+## Slice and change string
+{id: slice-and-change-string}
+
+![](examples/strings/slice_and_change.rs)
+
