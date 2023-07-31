@@ -20,6 +20,7 @@
 * [Let's Get Rusty](https://letsgetrusty.com/)
 * [noboilerplate](https://github.com/0atman/noboilerplate)
 
+* [Why do Programmers Love Rust?](https://www.youtube.com/watch?v=vBsEF-anSLY) presentation by Dave Rolsky [slides](https://presentations.houseabsolute.com/why-do-programmers-love-rust/) - [source](https://github.com/autarch/presentations/tree/master/why-do-programmers-love-rust)
 
 * [From Perl to Rust](https://oylenshpeegul.gitlab.io/from-perl-to-rust/introduction.html)
 
