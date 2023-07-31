@@ -125,4 +125,10 @@ TODO
 
 ![](examples/other/type_alias.rs)
 
+## Solution: Age limit
+{id: solution-age-limit}
+
+![](examples/other/age_limit_18.rs)
+![](examples/other/age_limit_18_21.rs)
+![](examples/other/age_limit_anywhere.rs)
 
