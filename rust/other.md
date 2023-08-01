@@ -132,3 +132,9 @@ TODO
 ![](examples/other/age_limit_18_21.rs)
 ![](examples/other/age_limit_anywhere.rs)
 
+## Multi-counter in manually handled CSV file
+{id: multi-counter-in-manually-handled-csv-file}
+
+
+![](examples/multi_counter_with_manual_csv/src/main.rs)
+

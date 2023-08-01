@@ -43,6 +43,8 @@ fn get_examples() -> Vec<String> {
         "examples/threads-messages/Cargo.toml",
         "examples/threads-messages-multiple-sources/Cargo.toml",
         "examples/threads-messages-multiple-sources/threads-load-test/Cargo.toml",
+        "examples/multi_counter_with_manual_csv/Cargo.toml",
+        "examples/multi_counter_with_manual_csv/counter.csv",
     ];
     let mut examples = vec![];
     let path = Path::new("examples");
