@@ -25,7 +25,7 @@
 ## Check if hash contains key (key exists)
 {id: hash-containes-key}
 {i: contains}
-{i exists}
+{i: exists}
 
 ![](examples/hashes/contains_key.rs)
 ![](examples/hashes/contains_key.out)
