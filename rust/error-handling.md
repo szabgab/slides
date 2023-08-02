@@ -63,3 +63,8 @@
 
 ![](examples/errors/file_open.rs)
 
+## Error handling on the command line
+{id: command-line-error-handling}
+
+![](examples/argv-error-handling/src/main.rs)
+
