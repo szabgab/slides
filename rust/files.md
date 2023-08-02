@@ -64,9 +64,32 @@
 
 ![](examples/files/makedir.rs)
 
+## Get the temporary directory
+{id: get-the-temporary-directory}
+
+![](examples/files/temp_dir.rs)
+
 ## Create temporary directory
 {id: temporary-directory}
 
 ![](examples/tempdir-demo/Cargo.toml)
 ![](examples/tempdir-demo/src/main.rs)
+
+## Current working directory
+{id: current-working-directory}
+{i: cwd}
+{i: pwd}
+{i: current_dir}
+
+* [current_dir](https://doc.rust-lang.org/std/env/fn.current_dir.html)
+
+![](examples/files/pwd.rs)
+
+## Change directory
+{id: change-directory}
+{i: set_current_dir}
+{i: chdir}
+{i: cd}
+
+![](examples/files/chdir.rs)
 
