@@ -93,3 +93,8 @@
 
 ![](examples/files/chdir.rs)
 
+## open file error handling
+{id: open-file-error-handling}
+
+![](examples/files/open_file_handling.rs)
+
