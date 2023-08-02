@@ -144,3 +144,15 @@ rustc all.rs
 
 ![](examples/multi_counter_with_manual_csv/src/main.rs)
 
+
+## Get path to current executable
+{id: get-path-to-current-executable}
+{i: current_exe}
+
+![](examples/other/current_executable.rs)
+
+## cache dependencies with sccache
+{id: cache-dependencies}
+
+* [sccache](https://github.com/mozilla/sccache)
+
