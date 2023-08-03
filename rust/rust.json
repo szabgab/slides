@@ -38,6 +38,7 @@
         "liquid.md",
         "packages.md",
         "crates.md",
+        "testing.md",
         "threads.md",
         "other.md"
     ]
