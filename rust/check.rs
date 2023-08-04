@@ -19,7 +19,7 @@ fn main() {
     // println!("{:?}", md_files);
     let imported_files = get_imported_files(md_files);
     // println!("{:?}", imported_files);
-    let examples = get_examples();
+    let examples = get_all_the_examples();
     //println!("{:?}", examples);
     let mut count = 0;
     for filename in examples {
@@ -36,7 +36,12 @@ fn main() {
 
 // TODO: go deeper than 2 levels to also handle examples/*/src/main.rs
 // TODO: but exclude examples/*/target/
-fn get_examples() -> Vec<String> {
+fn get_all_the_examples() -> Vec<String> {
+    get_examples(Path::new("examples"))
+}
+
+
+fn get_examples(path: &Path) -> Vec<String> {
     let exclude = vec![
         "examples/try-packages/Cargo.toml",
         "examples/try-threads/Cargo.toml",
@@ -48,7 +53,6 @@ fn get_examples() -> Vec<String> {
         "examples/argv-error-handling/Cargo.toml",
     ];
     let mut examples = vec![];
-    let path = Path::new("examples");
     for entry in path.read_dir().expect("read_dir call failed") {
         if let Ok(entry) = entry {
             let dirname = entry.path();
