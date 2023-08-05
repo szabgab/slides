@@ -37,12 +37,7 @@ fn main() {
 // TODO: go deeper than 2 levels to also handle examples/*/src/main.rs
 // TODO: but exclude examples/*/target/
 fn get_all_the_examples() -> Vec<String> {
-    get_examples(Path::new("examples"))
-}
-
-
-fn get_examples(path: &Path) -> Vec<String> {
-    let exclude = vec![
+    let exclude: Vec<String> = vec![
         "examples/try-packages/Cargo.toml",
         "examples/try-threads/Cargo.toml",
         "examples/threads-messages/Cargo.toml",
@@ -51,7 +46,14 @@ fn get_examples(path: &Path) -> Vec<String> {
         "examples/multi_counter_with_manual_csv/Cargo.toml",
         "examples/multi_counter_with_manual_csv/counter.csv",
         "examples/argv-error-handling/Cargo.toml",
-    ];
+    ].iter().map(|path| path.to_string()).collect();
+    let pathes = get_examples(Path::new("examples"));
+    let pathes: Vec<String> = pathes.iter().filter(|path| !exclude.contains(path)).cloned().collect();
+    pathes
+}
+
+
+fn get_examples(path: &Path) -> Vec<String> {
     let mut examples = vec![];
     for entry in path.read_dir().expect("read_dir call failed") {
         if let Ok(entry) = entry {
@@ -65,10 +67,6 @@ fn get_examples(path: &Path) -> Vec<String> {
                             continue;
                         }
                         if filepath.path().ends_with("Cargo.lock") {
-                            continue;
-                        }
-                        if exclude.contains(&filepath.path().into_os_string().into_string().expect("Bad").as_str()) {
-                            // println!("exclude {:?}", filepath.path());
                             continue;
                         }
                         let filename = filepath.path();
