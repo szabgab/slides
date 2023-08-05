@@ -54,32 +54,30 @@ fn get_all_the_examples() -> Vec<String> {
 
 
 fn get_examples(path: &Path) -> Vec<String> {
-    let mut examples = vec![];
+    let mut examples: Vec<String> = vec![];
     for entry in path.read_dir().expect("read_dir call failed") {
         if let Ok(entry) = entry {
-            let dirname = entry.path();
-            if dirname.is_dir() {
-                //println!("dir");
-                for filepath in dirname.read_dir().expect("read_dir call failed") {
-                    if let Ok(filepath) = filepath {
-                        //println!("{:?}", filepath);
-                        if filepath.path().is_dir() {
-                            continue;
-                        }
-                        if filepath.path().ends_with("Cargo.lock") {
-                            continue;
-                        }
-                        let filename = filepath.path();
-                        examples.push(filename);
-                    }
+            if entry.path().ends_with("Cargo.lock") {
+                continue;
+            }
+
+            if entry.path().is_dir() {
+                if entry.path().ends_with("target") {
+                    continue;
                 }
-            } else {
-                println!("'ERROR: {:?}' is not a directory", dirname);
-                exit(1);
+                examples.extend(get_examples(entry.path().as_path()));
+                continue;
+            }
+            //dbg!(&entry);
+
+            if entry.path().is_file() {
+                examples.push(entry.path().into_os_string().into_string().unwrap());
+                continue;
             }
         }
     }
-    return Vec::from_iter( examples.iter().map(|s| s.clone().into_os_string().into_string().expect("Bad") ) );
+    examples
+    //return Vec::from_iter( examples.iter().map(|s| s.clone().into_os_string().into_string().expect("Bad") ) );
 }
 
 fn get_imported_files(md_files: Vec<PathBuf>) -> Vec<String> {
