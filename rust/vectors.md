@@ -4,10 +4,12 @@
 ## Fixed vector of numbers
 {id: fixed-vector-of-numbers}
 {i: vec!}
+{i: len}
 
 * [Vec](https://doc.rust-lang.org/std/vec/struct.Vec.html)
 
 ![](examples/vectors/numbers.rs)
+![](examples/vectors/numbers.out)
 
 ## Iterate over elements of vector using for-loop
 {id: iterate-over-element-of-vector}
@@ -166,4 +168,14 @@
 
 ![](examples/vectors/map3.rs)
 ![](examples/vectors/map3.out)
+
+## filter numbers
+{id: filter-numbers}
+{i: iter}
+{i: filter}
+{i: cloned}
+{i: collect}
+
+![](examples/vectors/filter_numbers.rs)
+![](examples/vectors/filter_numbers.out)
 

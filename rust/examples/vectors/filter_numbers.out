@@ -1,0 +1,26 @@
+[examples/vectors/filter_numbers.rs:3] &numbers = [
+    -7,
+    0,
+    1,
+    2,
+    22,
+    23,
+]
+[examples/vectors/filter_numbers.rs:6] &same_numbers = [
+    -7,
+    0,
+    1,
+    2,
+    22,
+    23,
+]
+[examples/vectors/filter_numbers.rs:9] &positive_numbers = [
+    1,
+    2,
+    22,
+    23,
+]
+[examples/vectors/filter_numbers.rs:13] &big_numbers = [
+    22,
+    23,
+]
