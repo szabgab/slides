@@ -18,12 +18,15 @@
 {id: create-hash-with-data}
 {i: HashMap}
 {i: from}
+{i: keys}
 
 ![](examples/hashes/create_hash_with_data.rs)
 ![](examples/hashes/create_hash_with_data.out)
 
 ## Check if hash contains key (key exists)
 {id: hash-containes-key}
+{i: from}
+{i: contains_key}
 {i: contains}
 {i: exists}
 
@@ -33,6 +36,7 @@
 ## Get value from hash
 {id: get-value-from-hash}
 {i: get}
+{i: from}
 
 * `get` returns a reference to the value corresponding to the key.
 
@@ -43,12 +47,14 @@
 ## Iterate over keys of a hash
 {id: iterate-over-keys-of-hash}
 {i: keys}
+{i: from}
 
 ![](examples/hashes/iterate_over_keys.rs)
 ![](examples/hashes/iterate_over_keys.out)
 
 ## Iterate over key-value pairs in a Hash
 {id: iterate-over-key-value-pairs-of-hash}
+{i: keys}
 {i: iter}
 
 * Use the `iter` method to get the iterator
@@ -61,6 +67,7 @@
 ## Rust hash update value
 {id: rust-hashmap-update-value}
 {i: entry}
+{i: new}
 {i: or_insert}
 
 ![](examples/hashes/update_hash.rs)
@@ -68,18 +75,25 @@
 
 ## Rust update values in a hash - count words
 {id: rust-update-values-in-a-hash}
+{i: entry}
+{i: or_insert}
 
 ![](examples/hashes/count_words.rs)
 
 ## Remove element from hash
 {id: remove-element-from-hash}
 {i: remove}
+{i: keys}
 
 ![](examples/hashes/remove_from_hash.rs)
 ![](examples/hashes/remove_from_hash.out)
 
 ## Accessing values
 {id: accessing-values}
+{i: unsert}
+{i: unwrap_or}
+{i: get}
+{i: copied}
 
 * unwrap_or(0)  sets a default value to 0
 
@@ -89,11 +103,18 @@
 
 ## Split string create hash
 {id: spplit-string-create-hash}
+{i: split_whitespace}
+{i: collect}
+{i: insert}
 
 ![](examples/hashes/split_string_create_hash.rs)
+![](examples/hashes/split_string_create_hash.out)
 
 ## Create hash from key-value pairs after split
 {id: create-hash-from-key-value-pairs}
+{i: to_string}
+{i: collect}
+{i: insert}
 
 ![](examples/hashes/hash_from_key_value_pairs.rs)
 ![](examples/hashes/hash_from_key_value_pairs.out)
@@ -109,6 +130,8 @@
 ## Sort vector of hashes
 {id: sort-vector-of-hashes}
 {i: sort_by}
+{i: push}
 
 ![](examples/hashes/sort_vector_of_hashes.rs)
 ![](examples/hashes/sort_vector_of_hashes.out)
+

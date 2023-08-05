@@ -2,7 +2,7 @@ use std::collections::HashMap;
 
 fn main() {
     let text = String::from("apple   banana");
-    println!("{text}");
+    println!("The original '{text}'");
     let mut data = HashMap::new();
 
     //let parts = text.split(" ");
@@ -12,13 +12,13 @@ fn main() {
     //    println!("'{}'", part);
     //}
     //
-    let parts: Vec<&str> = parts.collect();
-    println!("{:?}", parts);
-    println!("{}", parts[0]);
+    let parts: Vec<&str> = parts.collect(); // collect the items from an iterator to be a vector
+    println!("parts: {:?}", parts);
+    println!("First element '{}'", parts[0]);
 
     for part in parts {
         data.insert(part, part);
     }
-    println!("{:?}", data);
+    println!("The Hash: {:?}", data);
 
 }

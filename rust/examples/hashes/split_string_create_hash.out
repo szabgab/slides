@@ -1,0 +1,4 @@
+The original 'apple   banana'
+parts: ["apple", "banana"]
+First element 'apple'
+The Hash: {"apple": "apple", "banana": "banana"}
