@@ -62,6 +62,7 @@ Somthing that looks like a function but ends with an exclamation point. e.g. `pr
 {id: serde}
 
 ![](examples/serde-demo/Cargo.toml)
+![](examples/serde-demo/src/main.rs)
 
 ## serde manipulate json (change, add)
 {id: serde-manipulate-json}
