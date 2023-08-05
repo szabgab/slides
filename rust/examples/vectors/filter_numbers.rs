@@ -8,7 +8,6 @@ fn main() {
     let positive_numbers: Vec<i32> = numbers.iter().filter(|number| number.is_positive()).cloned().collect();
     dbg!(&positive_numbers);
 
-    //let big_numbers: Vec<i32> = numbers.iter().filter(|&number| **number > 12).collect();
     let big_numbers: Vec<i32> = numbers.iter().filter(|number| number > &&12).cloned().collect();
     dbg!(&big_numbers);
 }

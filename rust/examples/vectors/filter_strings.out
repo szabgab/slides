@@ -1,0 +1,16 @@
+[examples/vectors/filter_strings.rs:8] &animals = [
+    "elephant",
+    "cat",
+    "snake",
+    "dog",
+]
+[examples/vectors/filter_strings.rs:11] &same_animals = [
+    "elephant",
+    "cat",
+    "snake",
+    "dog",
+]
+[examples/vectors/filter_strings.rs:14] &short_animals = [
+    "cat",
+    "dog",
+]

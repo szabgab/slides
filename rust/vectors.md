@@ -176,6 +176,20 @@
 {i: cloned}
 {i: collect}
 
+* [cloned](https://doc.rust-lang.org/std/iter/trait.Iterator.html#method.cloned)
+
 ![](examples/vectors/filter_numbers.rs)
 ![](examples/vectors/filter_numbers.out)
+
+## filter string
+{id: filter-string}
+{i: iter}
+{i: filter}
+{i: cloned}
+{i: collect}
+
+
+![](examples/vectors/filter_strings.rs)
+![](examples/vectors/filter_strings.out)
+
 
