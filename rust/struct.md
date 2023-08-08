@@ -109,3 +109,9 @@
 
 ![](examples/struct/circural_references.rs)
 
+## Multiple referene to a struct
+{id: multiple-reference-to-a-struct}
+
+![](examples/struct/multiple_referene_to_struct.rs)
+
+
