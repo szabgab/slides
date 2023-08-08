@@ -199,4 +199,28 @@
 ![](examples/vectors/filter_strings.rs)
 ![](examples/vectors/filter_strings.out)
 
+## Two references to the same vector
+{id: two-refernces-to-the-same-vector}
+
+![](examples/vectors/two_references_to_the_same_vector.rs)
+
+
+## Filter vector of structs (cloning)
+{id: filter-vector-of-structs-cloning}
+{i: filter}
+{i: cloned}
+{i: Clone}
+
+![](examples/vectors/filter_vector_of_structs_with_clone.rs)
+
+## Convert vector of structs to vector of references
+{id: convert-vector-of-structs-to-vector-of-references}
+
+![](examples/vectors/convert_vector_of_structs_to_vector_of_references.rs)
+
+
+## Filter vector of structs without copy
+{id: filter-vector-of-structs-without-copy}
+
+![](examples/vectors/filter_vector_of_structs.rs)
 
