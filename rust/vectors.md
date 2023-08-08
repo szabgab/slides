@@ -181,6 +181,13 @@
 ![](examples/vectors/filter_numbers.rs)
 ![](examples/vectors/filter_numbers.out)
 
+## filter numbers iter into
+{id: filter-numbers-iter-into}
+{i: iter_into}
+
+![](examples/vectors/filter_numbers_iter_into.rs)
+
+
 ## filter string
 {id: filter-string}
 {i: iter}
