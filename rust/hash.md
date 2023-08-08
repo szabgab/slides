@@ -135,3 +135,19 @@
 ![](examples/hashes/sort_vector_of_hashes.rs)
 ![](examples/hashes/sort_vector_of_hashes.out)
 
+
+## Mapping structs based on more than one key
+{id: mapping-structs-based-on-more-than-one-key}
+{i: Debug}
+{i: dead_code}
+{i: struct}
+{i: HashMap}
+
+![](examples/hashes/multiple_mapping.rs)
+
+## Mapping structs based on more than one key from a vector
+{id: mapping-structs-based-on-more-than-one-key-from-a-vector}
+
+
+![](examples/hashes/multiple_mapping_from_vector.rs)
+
