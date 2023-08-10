@@ -18,3 +18,6 @@
     * Running tests
     * Exercism
     * Asking on forums
+
+* Learn concepts in context
+* Use real-world examples (try to implement them)
