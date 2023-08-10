@@ -184,3 +184,10 @@ first or last
 ![](examples/liquid-with-struct/src/main.rs)
 ![](examples/liquid-with-struct/out.html)
 
+
+## Liquid filter reverse array
+{id: liquid-filter-reverse-array}
+
+![](examples/liquid-filter-reverse/Cargo.toml)
+![](examples/liquid-filter-reverse/src/main.rs)
+
