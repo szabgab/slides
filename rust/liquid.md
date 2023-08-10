@@ -191,3 +191,13 @@ first or last
 ![](examples/liquid-filter-reverse/Cargo.toml)
 ![](examples/liquid-filter-reverse/src/main.rs)
 
+## Liquid for loop: limit, offset, reversed
+{id: liquid-for-loop-limit-offset-reversed}
+{i: limit}
+{i: offset}
+{i: reversed}
+
+![](examples/liquid-loops/Cargo.toml)
+![](examples/liquid-loops/src/main.rs)
+
+
