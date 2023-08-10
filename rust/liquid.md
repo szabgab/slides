@@ -200,4 +200,18 @@ first or last
 ![](examples/liquid-loops/Cargo.toml)
 ![](examples/liquid-loops/src/main.rs)
 
+## Liquid: comma between every two elements (forloop.last)
+{id: liquid-forloop-last}
+
+* length
+* index   (numbers start from 1)
+* index0  (numbers start from 0)
+* rindex
+* rindex0
+* first
+* last
+
+![](examples/liquid-loop-last/Cargo.toml)
+![](examples/liquid-loop-last/src/main.rs)
+
 
