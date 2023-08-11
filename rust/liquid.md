@@ -200,7 +200,7 @@ first or last
 ![](examples/liquid-loops/Cargo.toml)
 ![](examples/liquid-loops/src/main.rs)
 
-## Liquid: comma between every two elements (forloop.last)
+## Liquid comma between every two elements (forloop.last)
 {id: liquid-forloop-last}
 
 * length

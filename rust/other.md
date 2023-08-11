@@ -157,3 +157,9 @@ rustc all.rs
 
 * [sccache](https://github.com/mozilla/sccache)
 
+## Commafy
+{id: commafy}
+
+![](examples/commafy/Cargo.toml)
+![](examples/commafy/src/lib.rs)
+
