@@ -21,3 +21,7 @@
 
 * Learn concepts in context
 * Use real-world examples (try to implement them)
+
+
+* https://rustatic.code-maven.com/
+* https://rust-digger.code-maven.com/
