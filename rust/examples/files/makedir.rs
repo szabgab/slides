@@ -5,13 +5,14 @@ fn main() {
         Ok(res) => {
             dbg!(res);
         },
-        Err(_) => {
-            dbg!("error");
+        Err(err) => {
+            dbg!("error: {}", err);
         },
     }
 }
 
 fn makedir() -> std::io::Result<()> {
-    fs::create_dir_all("hello")?;
+    //fs::create_dir("paren/sub")?;
+    fs::create_dir("folder")?;
     Ok(())
 }

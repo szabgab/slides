@@ -31,11 +31,17 @@
 ## Rust - read file line-by-line with row number (enumerate)
 {id: rust-read-file-line-by-line-enumerate}
 {i: enumerate}
+{i: lines}
 
 ![](examples/files/read_line_by_line_enumerate.rs)
 
 ## Rust - counter
 {id: rust-counter}
+{i: Read}
+{i: Write}
+{i: File}
+{i: read_to_string}
+{i: create}
 
 ![](examples/files/counter.rs)
 
@@ -59,13 +65,28 @@
 
 ## Count digits in file
 {id: count-digits-in-file}
+{i: chars}
+{i: usize}
 
 ![](examples/files/count_digits.rs)
 
-## Makedirs
-{id: makedirs}
+## Makedir
+{id: makedir}
+{i: mkdir}
+{i: create_dir}
+
+* [create_dir](https://doc.rust-lang.org/std/fs/fn.create_dir.html)
 
 ![](examples/files/makedir.rs)
+
+## Makedirs
+{id: makedirs}
+{i: mkdir}
+{i: create_dir_all}
+
+* [create_dir_all](https://doc.rust-lang.org/std/fs/fn.create_dir_all.html)
+
+![](examples/files/makedirs.rs)
 
 ## Get the temporary directory
 {id: get-the-temporary-directory}
@@ -93,6 +114,7 @@
 {i: set_current_dir}
 {i: chdir}
 {i: cd}
+
 
 ![](examples/files/chdir.rs)
 
