@@ -8,6 +8,9 @@
 {i: create}
 {i: writeln!}
 
+* [std::fs::File](https://doc.rust-lang.org/std/fs/struct.File.html)
+* [std::io::Write](https://doc.rust-lang.org/std/io/trait.Write.html)
+
 ![](examples/files/write.rs)
 
 ## Rust - read content of a file as a string
@@ -97,4 +100,9 @@
 {id: open-file-error-handling}
 
 ![](examples/files/open_file_handling.rs)
+
+## Appand to file
+{id: append-to-file}
+
+![](examples/files/append.rs)
 
