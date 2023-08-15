@@ -41,6 +41,7 @@
         "testing.md",
         "threads.md",
         "clap.md",
+        "json.md",
         "other.md"
     ]
 }
