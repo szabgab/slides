@@ -4,7 +4,7 @@ use std::error::Error;
 use std::fs::File;
 use std::io::Write;
 use std::io::Read;
-use chrono::prelude::*;
+use chrono::{Utc, DateTime};
 
 
 fn main() {

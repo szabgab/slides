@@ -22,4 +22,5 @@
 
 ![](examples/chrono-demo/src/main.rs)
 ![](examples/chrono-demo/Cargo.toml)
+![](examples/chrono-demo/out.txt)
 
