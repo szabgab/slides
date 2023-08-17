@@ -1,0 +1,23 @@
+repeat 1  different 1000
+plain_counter              0.6091844770126045
+counter_with_counter       1.232734862016514
+counter_with_default_dict  0.7378899219911546
+counter_with_exceptions    1.4480015779845417
+
+repeat 10  different 100
+plain_counter              0.4949962190585211
+counter_with_counter       0.7886336819501594
+counter_with_default_dict  0.4284116430208087
+counter_with_exceptions    0.4748374510090798
+
+repeat 20  different 50
+plain_counter              0.4847069630632177
+counter_with_counter       0.7627606929745525
+counter_with_default_dict  0.4116779019823298
+counter_with_exceptions    0.407719356007874
+
+repeat 50  different 20
+plain_counter              0.4709314970532432
+counter_with_counter       0.7357207209570333
+counter_with_default_dict  0.3903243549866602
+counter_with_exceptions    0.36094399297144264

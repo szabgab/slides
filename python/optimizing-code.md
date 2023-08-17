@@ -100,6 +100,23 @@ The actual content is not that interesting.
 ![](examples/advanced/benchmark_subs.py)
 ![](examples/advanced/benchmark_subs.out)
 
+## Counting words - which implementation is faster?
+{id: counting-words-which-implementation-is-faster}
+{i: collections}
+{i: defaultdict}
+{i: Counter}
+{i: timeit}
+{i: try}
+{i: except}
+
+* In this example we have 4 functions counting the number of appearances of words that are already in memmory in a list.
+* We use `timeit` to benchmark them.
+* `repeat` is the number of repetition of each string.
+* `different` is the number of different string.
+
+![](examples/dictionary/count_words_speed.py)
+![](examples/dictionary/count_words_speed.out)
+
 
 ## Levenshtein distance
 {id: levenshtein}
