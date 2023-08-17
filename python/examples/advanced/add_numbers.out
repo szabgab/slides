@@ -1,0 +1,8 @@
+num 10
+add_in_loop      0.023712733993306756
+add_with_reduce  0.05284293496515602
+
+num 1000
+add_in_loop      1.57034146389924
+add_with_reduce  3.0021417930256575
+

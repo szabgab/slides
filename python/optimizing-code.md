@@ -117,6 +117,15 @@ The actual content is not that interesting.
 ![](examples/dictionary/count_words_speed.py)
 ![](examples/dictionary/count_words_speed.out)
 
+## for loop or reduce to add numbers?
+{id: for-loop-or-reduce-to-add-numbers}
+{i: for}
+{i: functools}
+{i: reduce}
+
+![](examples/advanced/add_numbers.py)
+![](examples/advanced/add_numbers.out)
+
 
 ## Levenshtein distance
 {id: levenshtein}
