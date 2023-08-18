@@ -4,6 +4,8 @@
 ## Learning porgramming
 {id: learning-programming}
 
+* Install from [Rustup](https://rustup.rs/)
+
 * Reading a tutorial
 * Reading the official documentation
 * Watching videos
@@ -14,14 +16,35 @@
 * Reading the source code of open source projects
 * Contributing to open source projects
 
-* Getting feedback
-    * Running tests
-    * Exercism
-    * Asking on forums
-
 * Learn concepts in context
 * Use real-world examples (try to implement them)
+
+## Web based runner or local environment?
+{id: web-based-runner-or-local-environment}
+
+* The [Playground](https://play.rust-lang.org/)
+* The [Google course](https://google.github.io/comprehensive-rust/) has the online editor and runner.
+* I prefer working on my own computer.
+
+## Getting feedback
+{id: getting-feedback}
+
+* Running tests
+* Exercism
+* Asking on forums
 
 
 * https://rustatic.code-maven.com/
 * https://rust-digger.code-maven.com/
+
+## Community
+{id: community}
+
+
+
+## Example
+{id: examples}
+
+* Some crates, such as [Serde](https://serde.rs/examples.html) have examples listed on their pages.
+* Other crates have examples in their git repository.
+
