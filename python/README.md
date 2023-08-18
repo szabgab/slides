@@ -392,3 +392,9 @@ RankerStatusType = TypedDict('RankerStatusType', {
 
 
 
+## Performance
+
+* Some example of computation in a loop vs using map vs using list comprehension vs generator expression
+
+
+
