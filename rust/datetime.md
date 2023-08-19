@@ -24,3 +24,14 @@
 ![](examples/chrono-demo/Cargo.toml)
 ![](examples/chrono-demo/out.txt)
 
+## Elapsed time
+{id: elapsed-time}
+
+
+* [std::time::Duration](https://doc.rust-lang.org/std/time/struct.Duration.html)
+* [chrono::DateTime](https://docs.rs/chrono/latest/chrono/struct.DateTime.html)
+
+![](examples/chrono-elapsed-time/Cargo.toml)
+![](examples/chrono-elapsed-time/out.txt)
+![](examples/chrono-elapsed-time/src/main.rs)
+

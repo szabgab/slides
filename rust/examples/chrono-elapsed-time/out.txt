@@ -1,0 +1,14 @@
+start:             2023-08-18 10:54:06.606602231 UTC
+start timestamp:   1692356046
+start timestamp:   1692356046606602
+
+elapsed as_micros: 10158
+elapsed as_millis: 10
+
+end:               2023-08-18 10:54:06.616858288 UTC
+end timestamp:     1692356046
+end timestamp:     1692356046616858
+
+Elapsed (sec):     0
+Elapsed (millis):  10
+Elapsed (micros):  10256
