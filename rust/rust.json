@@ -40,6 +40,7 @@
         "crates.md",
         "testing.md",
         "threads.md",
+        "regex.md",
         "clap.md",
         "json.md",
         "other.md"
