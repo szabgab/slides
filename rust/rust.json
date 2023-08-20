@@ -43,6 +43,7 @@
         "regex.md",
         "clap.md",
         "json.md",
+        "toml.md",
         "other.md"
     ]
 }
