@@ -46,6 +46,7 @@ fn get_all_the_examples() -> Vec<String> {
         "examples/multi_counter_with_manual_csv/Cargo.toml",
         "examples/multi_counter_with_manual_csv/counter.csv",
         "examples/argv-error-handling/Cargo.toml",
+        "examples/use-statements/Cargo.toml",
     ].iter().map(|path| path.to_string()).collect();
     let pathes = get_examples(Path::new("examples"));
     let pathes: Vec<String> = pathes.iter().filter(|path| !exclude.contains(path)).cloned().collect();
