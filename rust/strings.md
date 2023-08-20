@@ -193,3 +193,10 @@
 
 ![](examples/strings/slice_and_change.rs)
 
+## To lower, to upper case
+{id: to-lowercase}
+{i: to_lowercase}
+{i: to_uppercase}
+
+![](examples/strings/to_lower_to_upper.rs)
+
