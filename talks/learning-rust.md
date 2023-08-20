@@ -48,3 +48,5 @@
 * Some crates, such as [Serde](https://serde.rs/examples.html) have examples listed on their pages.
 * Other crates have examples in their git repository.
 
+* [Why the developers who use Rust love it so much](https://stackoverflow.blog/2020/06/05/why-the-developers-who-use-rust-love-it-so-much/)
+
