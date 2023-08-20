@@ -114,4 +114,8 @@
 
 ![](examples/struct/multiple_referene_to_struct.rs)
 
+## Default values
+{id: default-values}
+
+![](examples/struct/default.rs)
 
