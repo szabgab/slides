@@ -97,6 +97,7 @@ TODO
 
 ## Run external programs
 {id: run-external-programs}
+{i: Command}
 
 * [Command](https://doc.rust-lang.org/std/process/struct.Command.html)
 
