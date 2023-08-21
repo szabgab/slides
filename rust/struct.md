@@ -119,3 +119,8 @@
 
 ![](examples/struct/default.rs)
 
+## Default for composite struct
+{id: default-for-composite-struct}
+
+![](examples/struct/default_for_composite_struct.rs)
+
