@@ -188,6 +188,11 @@
 ![](examples/vectors/filter_numbers_iter_into.rs)
 
 
+## filter numbers by named function
+{id: filter-numbers-by-named-function}
+
+![](examples/vectors/filter_numbers_by_function.rs)
+
 ## filter string
 {id: filter-string}
 {i: iter}
