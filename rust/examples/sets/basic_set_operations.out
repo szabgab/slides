@@ -1,0 +1,10 @@
+{}
+{"chair"}
+{"table", "chair"}
+{"table", "chair"}
+true
+false
+2
+table
+chair
+{"table"}
