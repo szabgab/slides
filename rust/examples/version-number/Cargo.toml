@@ -1,5 +1,5 @@
 [package]
-name = "cli-version-number"
+name = "version-number"
 version = "1.2.3"
 edition = "2021"
 

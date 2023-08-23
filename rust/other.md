@@ -157,4 +157,12 @@ rustc all.rs
 
 ![](examples/use-statements/src/main.rs)
 
+## Take version number from Cargo.toml
+{id: version-number-from-cargo-toml}
+{i: VERSION}
+{i: CARGO_PKG_VERSION}
+
+
+![](examples/version-number/Cargo.toml)
+![](examples/version-number/src/main.rs)
 
