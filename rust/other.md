@@ -166,3 +166,11 @@ rustc all.rs
 ![](examples/version-number/Cargo.toml)
 ![](examples/version-number/src/main.rs)
 
+## Ansi colors
+{id: ansi-colors}
+
+* [ansi_term](https://crates.io/crates/ansi_term)
+
+![](examples/ansi-colors/Cargo.toml)
+![](examples/ansi-colors/src/main.rs)
+
