@@ -10,7 +10,7 @@
         "intro.md",
         "variables.md",
         "string-to-number.md",
-	"use-libraries.md",
+        "use-libraries.md",
         "random.md",
         "stdin.md",
         "argv.md",
@@ -45,6 +45,7 @@
         "clap.md",
         "json.md",
         "toml.md",
+        "advanced-functions.md",
         "other.md"
     ]
 }
