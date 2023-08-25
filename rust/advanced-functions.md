@@ -11,3 +11,9 @@ pass function as a parameter to another function
 
 ![](examples/advanced-functions/pass_function_as_argument_simple.rs)
 
+
+## Pass function with parameter as an argument
+{id: pass-function-with-parameter-as-an-argument}
+
+![](examples/advanced-functions/pass_function_with_parameter_as_argument.rs)
+
