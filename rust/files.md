@@ -128,3 +128,16 @@
 
 ![](examples/files/append.rs)
 
+## Show size of file
+{id: show-size-of-file}
+{i: size}
+{i: len}
+
+![](examples/files/show_size_of_file.rs)
+
+## du - disk usage
+{id: du}
+
+![](examples/files/du.rs)
+
+
