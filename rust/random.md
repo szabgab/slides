@@ -19,3 +19,4 @@ cd random
 cargo run
 ```
 
+![](examples/random/out.txt)

@@ -1,0 +1,4 @@
+random_bool: true
+random_i8: 69
+random_f32: 0.59957224
+random_number: 59
