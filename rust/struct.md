@@ -114,6 +114,22 @@
 
 ![](examples/struct/multiple_referene_to_struct.rs)
 
+## new method with default values for struct
+{id: new-method-with-default-values}
+{i: new}
+
+![](examples/struct/new.rs)
+
+## The new method has no special feature
+{id: new-method-no-special-feature}
+{i: new}
+
+* We could use any other name instead of `new`. For example we could use `qqrq` as well.
+* The name `new` is only to give the power of familiarity.
+
+![](examples/struct/qqrq.rs)
+
+
 ## Default values
 {id: default-values}
 

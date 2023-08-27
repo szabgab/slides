@@ -6,15 +6,6 @@ struct Something {
     number: i32,
 }
 
-impl Something {
-    pub fn new() -> Something {
-        Something {
-            name: "".to_string(),
-            number: 0,
-        }
-    }
-}
-
 impl Default for Something {
     fn default() -> Something {
         Something {
@@ -30,9 +21,6 @@ fn main() {
         number: 42,
     };
     dbg!(sg);
-
-    let new = Something::new();
-    dbg!(new);
 
     let empty = Something {
         ..Something::default()
