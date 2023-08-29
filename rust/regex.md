@@ -11,3 +11,12 @@
 ![](examples/regex-demo/Cargo.toml)
 ![](examples/regex-demo/src/main.rs)
 
+## Regex
+{id: regex-substitute}
+{i: Captures}
+{i: replace}
+{i: repalce_all}
+
+![](examples/regex-substitute/Cargo.toml)
+![](examples/regex-substitute/src/main.rs)
+
