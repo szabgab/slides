@@ -1,0 +1,6 @@
+one/two/three/four/five/six.rs
+ancestor: 'one/two/three/four/five/six.rs'
+ancestor: 'one/two/three/four/five'
+ancestor: 'one'
+ancestor: ''
+No such ancestor
