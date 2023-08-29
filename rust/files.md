@@ -174,4 +174,11 @@
 ![](examples/files/ancestor.rs)
 ![](examples/files/ancestor.out)
 
+## join pathes
+{id: join-pathes}
+{i: join}
+
+![](examples/files/join.rs)
+![](examples/files/join.out)
+
 
