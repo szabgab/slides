@@ -140,4 +140,10 @@
 
 ![](examples/files/du.rs)
 
+## get file extension
+{id: get-file-extension}
+{i: Path}
+{i: extension}
+
+![](examples/files/get_extension.rs)
 
