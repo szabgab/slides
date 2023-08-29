@@ -147,3 +147,31 @@
 
 ![](examples/files/get_extension.rs)
 
+
+## parent directory
+{id: parent-directory}
+{i: parent}
+{i: dirname}
+
+* [parent](https://doc.rust-lang.org/std/path/struct.Path.html#method.parent)
+
+![](examples/files/parent.rs)
+![](examples/files/parent.out)
+
+## directory ancestors (parent directories)
+{id: directory-ancestors}
+{i: ancestors}
+
+* [ancestors](https://doc.rust-lang.org/std/path/struct.Path.html#method.ancestors)
+
+![](examples/files/ancestors.rs)
+![](examples/files/ancestors.out)
+
+## directory ancestor (n level)
+{id: directory-ancestor}
+{i: ancestors}
+
+![](examples/files/ancestor.rs)
+![](examples/files/ancestor.out)
+
+
