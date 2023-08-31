@@ -140,3 +140,10 @@
 
 ![](examples/struct/default_for_composite_struct.rs)
 
+## Compare structs for partial equality
+{id: compare-structs-for-partial-equality}
+{i: struct}
+{i: PartialEq}
+
+![](examples/struct/compare_structs_for_equality.rs)
+
