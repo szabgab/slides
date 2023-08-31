@@ -20,6 +20,9 @@
 {i: utc}
 {i: now}
 
+* [chrono](https://crates.io/crates/chrono)
+* [strftime](https://docs.rs/chrono/latest/chrono/format/strftime/index.html)
+
 ![](examples/chrono-demo/src/main.rs)
 ![](examples/chrono-demo/Cargo.toml)
 ![](examples/chrono-demo/out.txt)
