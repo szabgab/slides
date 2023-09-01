@@ -34,3 +34,8 @@
 ![](examples/numbers/rounding_float.rs)
 ![](examples/numbers/rounding_float.out)
 
+## Floating point imprecision
+{id: floating-point-imprecision}
+
+![](examples/numbers/floating_point_imprecision.rs)
+![](examples/numbers/floating_point_imprecision.out)
