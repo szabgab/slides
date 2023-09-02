@@ -229,3 +229,17 @@
 
 ![](examples/vectors/filter_vector_of_structs.rs)
 
+## Accessing the last element of a vector
+{id: accessing-the-last-element-of-a-vector}
+{i: len}
+{i: last}
+
+* Unlike Python and Perl, rust won't let us use a negative index in a vector so we won't be able to access the last element using `vector_name[-1]`
+* We can either use `vector_name.len()-1` or
+* We can use `vector_name.last(), but in this case we get an `Option` that can be `None` as well.
+
+* If we access a seemingly arbitrary element that we calculated using `vector_name.len()-1` then either we get back a value or Rust will panic if we gave an index too big.
+* On the other hand using `last` we are more protected. In that case we either get a value or `None` if the vector was empty.
+
+![](examples/vectors/last_vec_index.rs)
+
