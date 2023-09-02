@@ -45,6 +45,7 @@
         "clap.md",
         "json.md",
         "toml.md",
+        "iterators.md",
         "advanced-functions.md",
         "other.md"
     ]
