@@ -32,3 +32,9 @@
 
 ![](examples/iterators/iterator_unlimited_counter.rs)
 ![](examples/iterators/iterator_unlimited_counter.out)
+
+## Iterator to walk directory tree
+{id: walk-directory-tree}
+
+![](examples/iterators/walk_directory_tree_retur_strings.rs)
+
