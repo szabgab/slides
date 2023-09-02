@@ -33,6 +33,20 @@
 ![](examples/iterators/iterator_unlimited_counter.rs)
 ![](examples/iterators/iterator_unlimited_counter.out)
 
+
+## Iterate over files in current directory
+{id: iterate-over-files-in-current-directory}
+{i: read_dir}
+
+![](examples/iterators/list_dir.rs)
+
+## Iterate over files in current directory calling next
+{id: iterate-over-files-in-current-directory-calling-next}
+{i: read_dir}
+{i: next}
+
+![](examples/iterators/list_dir_manually.rs)
+
 ## Iterator to walk directory tree
 {id: walk-directory-tree}
 
