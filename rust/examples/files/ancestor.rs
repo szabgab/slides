@@ -1,46 +1,27 @@
 use std::path::Path;
 
-//trait MyPath {
-//}
-//
-//impl MyPath for Path {
-//}
-//
-//impl MyPath {
-//    fn parentn(self: &Path, n: i32) {
-//        println!("huh");
-//    }
-//}
-
-
 fn main() {
     let path = Path::new("one/two/three/four/five/six.rs");
-    println!("{}", path.display());
 
 
-    match ancestor(&path, 0) {
-        Some(val) => println!("ancestor: '{}'", val.display()),
-        None => println!("No such ancestor"),
-    }
-    match ancestor(&path, 1) {
-        Some(val) => println!("ancestor: '{}'", val.display()),
-        None => println!("No such ancestor"),
-    }
-    match ancestor(&path, 5) {
-        Some(val) => println!("ancestor: '{}'", val.display()),
-        None => println!("No such ancestor"),
-    }
-    match ancestor(&path, 6) {
-        Some(val) => println!("ancestor: '{}'", val.display()),
-        None => println!("No such ancestor"),
-    }
-    match ancestor(&path, 7) {
-        Some(val) => println!("ancestor: '{}'", val.display()),
-        None => println!("No such ancestor"),
-    }
+    //match ancestor(&path, 0) {
+    //    Some(val) => println!("ancestor: '{}'", val.display()),
+    //    None => println!("No such ancestor"),
+    //}
+    assert_eq!(ancestor(&path, 0), Some(Path::new("one/two/three/four/five/six.rs")));
+    assert_eq!(ancestor(&path, 1), Some(Path::new("one/two/three/four/five")));
+    assert_eq!(ancestor(&path, 5), Some(Path::new("one")));
+    assert_eq!(ancestor(&path, 6), Some(Path::new("")));
+    assert_eq!(ancestor(&path, 7), None);
+
+    assert_eq!(parentn(&path, 0), Some(Path::new("one/two/three/four/five/six.rs")));
+    assert_eq!(parentn(&path, 1), Some(Path::new("one/two/three/four/five")));
+    assert_eq!(parentn(&path, 5), Some(Path::new("one")));
+    assert_eq!(parentn(&path, 6), Some(Path::new("")));
+    assert_eq!(parentn(&path, 7), None);
 }
 
-fn ancestor(mut path: &Path, mut n: i32) -> Option<&Path> {
+fn ancestor(mut path: &Path, mut n: u16) -> Option<&Path> {
     while n > 0 {
         match path.parent() {
             Some(value) => path = value,
@@ -51,14 +32,15 @@ fn ancestor(mut path: &Path, mut n: i32) -> Option<&Path> {
     return Some(path);
 }
 
-//fn ancestor(path: &Path, n: i32) -> Option<&Path> {
-//    if n == 0 {
-//        return Some(path);
-//    }
-//    match path.parent() {
-//        Some(value) => ancestor(value, n-1),
-//        None => None,
-//    }
-//}
+// recursive
+fn parentn(path: &Path, n: u16) -> Option<&Path> {
+    if n == 0 {
+        return Some(path);
+    }
+    match path.parent() {
+        Some(value) => parentn(value, n-1),
+        None => None,
+    }
+}
 
 
