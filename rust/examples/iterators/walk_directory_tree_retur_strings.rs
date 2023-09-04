@@ -2,10 +2,9 @@ use std::path::Path;
 use std::fs::ReadDir;
 
 
-#[derive(Debug)]
+//#[derive(Debug)]
 //#[allow(dead_code)]
 struct Walk {
-    root: String,
     rds: Vec<ReadDir>,
 }
 
@@ -15,7 +14,6 @@ impl Walk {
         match path.read_dir() {
             Ok(rd) => {
                 let w = Walk {
-                    root: root.to_string(),
                     rds: vec![rd],
                 };
                 std::result::Result::Ok(w)
@@ -68,7 +66,12 @@ impl Iterator for Walk {
 }
 
 fn main() {
-    let path_from_user = ".";
+    let args: Vec<String> = std::env::args().collect();
+    if args.len() != 2 {
+        eprintln!("Usage: {} PATH", args[0]);
+        std::process::exit(1);
+    }
+    let path_from_user = &args[1];
     let tree = match Walk::new(path_from_user) {
         Ok(tree) => tree,
         Err(err) => {
