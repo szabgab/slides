@@ -19,6 +19,14 @@ fn main() {
     assert_eq!(parentn(&path, 5), Some(Path::new("one")));
     assert_eq!(parentn(&path, 6), Some(Path::new("")));
     assert_eq!(parentn(&path, 7), None);
+
+
+    assert_eq!(path.ancestors().nth(0), Some(Path::new("one/two/three/four/five/six.rs")));
+    assert_eq!(path.ancestors().nth(1), Some(Path::new("one/two/three/four/five")));
+    assert_eq!(path.ancestors().nth(5), Some(Path::new("one")));
+    assert_eq!(path.ancestors().nth(6), Some(Path::new("")));
+    assert_eq!(path.ancestors().nth(7), None);
+
 }
 
 //fn ancestor(mut path: &Path, mut n: u16) -> Option<&Path> {
