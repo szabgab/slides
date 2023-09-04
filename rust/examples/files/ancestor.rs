@@ -21,16 +21,25 @@ fn main() {
     assert_eq!(parentn(&path, 7), None);
 }
 
-fn ancestor(mut path: &Path, mut n: u16) -> Option<&Path> {
-    while n > 0 {
-        match path.parent() {
-            Some(value) => path = value,
-            None => return None,
-        }
-        n = n - 1;
+//fn ancestor(mut path: &Path, mut n: u16) -> Option<&Path> {
+//    while n > 0 {
+//        match path.parent() {
+//            Some(value) => path = value,
+//            None => return None,
+//        }
+//        n = n - 1;
+//    }
+//    return Some(path);
+//}
+
+// improved by Alice Ryhl
+fn ancestor(mut path: &Path, n: u16) -> Option<&Path> {
+    for _ in 0..n {
+        path = path.parent()?
     }
     return Some(path);
 }
+
 
 // recursive
 fn parentn(path: &Path, n: u16) -> Option<&Path> {
