@@ -16,7 +16,7 @@
 * [Rust by example](https://doc.rust-lang.org/stable/rust-by-example/)
 
 ## Crates
-{id: crates}
+{id: crates-io}
 
 * [Crates.io](https://crates.io/)
 * [Docs.rs](https://docs.rs/)
@@ -66,7 +66,7 @@
 
 
 ## Demo None handling
-{id: demo-non-handling}
+{id: demo-none-handling}
 
 ![](examples/intro/demo_none_handling.rs)
 
