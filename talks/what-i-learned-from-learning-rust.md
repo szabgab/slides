@@ -1,6 +1,17 @@
 # What I learned from learning Rust
 {id: what-i-learned-from-learning-rust}
 
+## What I learned from learning Rust
+{id: gabor-szabo}
+
+* Gabor Szabo
+* https://szabgab.com/
+* https://github.com/szabgab
+
+* https://rustatic.code-maven.com/
+* https://rust-digger.code-maven.com/
+* https://rust.code-maven.com/
+
 ## Why?
 {id: why}
 
@@ -69,6 +80,18 @@ Supply and demand?
 
 {aside}
 {/aside}
+
+## Ladino vs. Rust
+{id: ladino-vs-rust}
+
+* Learning a human language vs learning a programming language.
+
+## People love Rust
+{id: people-love-rust}
+
+* People love Rust - According to the StackOverflow survey Rust is the most loved programming language by its users
+
+
 
 ## How do people learn a programming language?
 {id: how-do-people-learn-a-programming-language}
@@ -146,11 +169,13 @@ Rust has a really nice tool chain with built in code formatter and linter.
 {id: community}
 
 
-
 ## Example
 {id: examples}
 
 * Some crates, such as [Serde](https://serde.rs/examples.html) have examples listed on their pages.
 * Other crates have examples in their git repository.
+
+## Thank You
+{id: thank-you}
 
 
