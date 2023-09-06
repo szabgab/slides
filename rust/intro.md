@@ -7,25 +7,41 @@
 * [Learn Rust](https://www.rust-lang.org/learn)
 * [The Rust book](https://doc.rust-lang.org/book/)
 * [Rust by example](https://doc.rust-lang.org/stable/rust-by-example/)
-* [rustlings](https://rustlings.cool/)
-* [Exercism Rust track](https://exercism.org/tracks/rust)
 
 * [Rust Documentation](https://doc.rust-lang.org/)
 * [Rust the language](https://www.rust-lang.org/)
 * [Lib.rs](https://lib.rs/) - Lightweight, opinionated, curated, unofficial alternative to crates.io
 
-* [This week in Rust](https://this-week-in-rust.org/) - a weekly newsletter
-* [Rustacean](https://www.rustaceans.org/)
-* [Rustacean station](https://rustacean-station.org/) - a podcast
+
 * [Let's Get Rusty](https://letsgetrusty.com/)
 * [noboilerplate](https://github.com/0atman/noboilerplate)
 
-* [Why do Programmers Love Rust?](https://www.youtube.com/watch?v=vBsEF-anSLY) presentation by Dave Rolsky [slides](https://presentations.houseabsolute.com/why-do-programmers-love-rust/) - [source](https://github.com/autarch/presentations/tree/master/why-do-programmers-love-rust)
-* [Why the developers who use Rust love it so much](https://stackoverflow.blog/2020/06/05/why-the-developers-who-use-rust-love-it-so-much/)
+## Podcast, newsleter
+{id: rust-podcast}
+
+* [This week in Rust](https://this-week-in-rust.org/) - a weekly newsletter
+* [Rustacean](https://www.rustaceans.org/)
+* [Rustacean station](https://rustacean-station.org/) - a podcast
+
+## Rust exercises with feedback
+{id: rust-exercises-with-feedback}
+
+* [rustlings](https://rustlings.cool/)
+* [Exercism Rust track](https://exercism.org/tracks/rust)
+* [Rust users forum](https://users.rust-lang.org/)
+
+## Rust in other languages
+{id: rust-in-other-languages}
 
 * [From Perl to Rust](https://oylenshpeegul.gitlab.io/from-perl-to-rust/introduction.html)
 
 * [The Rust book in Hebrew](https://github.com/IttayWeiss/rustbook-heb)
+
+## Articles about Rust
+{id: articles-about-rust}
+
+* [Why do Programmers Love Rust?](https://www.youtube.com/watch?v=vBsEF-anSLY) presentation by Dave Rolsky [slides](https://presentations.houseabsolute.com/why-do-programmers-love-rust/) - [source](https://github.com/autarch/presentations/tree/master/why-do-programmers-love-rust)
+* [Why the developers who use Rust love it so much](https://stackoverflow.blog/2020/06/05/why-the-developers-who-use-rust-love-it-so-much/)
 
 ## What is written in Rust?
 {id: what-is-written-in-rust}
