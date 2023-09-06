@@ -77,3 +77,9 @@ One way to avoid reaching stack overflow is to call panic! ourselves.
 
 ![](examples/argv-error-handling/src/main.rs)
 
+## Reporting error from a function
+{id: reporting-error-from-a-function}
+
+![](examples/errors/factorial.rs)
+![](examples/errors/factorial_create_panic.rs)
+
