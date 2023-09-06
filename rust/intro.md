@@ -4,17 +4,31 @@
 ## Rust resources
 {id: rust-resources}
 
+* [Rust the language](https://www.rust-lang.org/)
+* [Rust Documentation](https://doc.rust-lang.org/)
+
+## Rust Books
+{id: rust-books}
+
+
 * [Learn Rust](https://www.rust-lang.org/learn)
 * [The Rust book](https://doc.rust-lang.org/book/)
 * [Rust by example](https://doc.rust-lang.org/stable/rust-by-example/)
 
-* [Rust Documentation](https://doc.rust-lang.org/)
-* [Rust the language](https://www.rust-lang.org/)
+## Crates
+{id: crates}
+
+* [Crates.io](https://crates.io/)
+* [Docs.rs](https://docs.rs/)
 * [Lib.rs](https://lib.rs/) - Lightweight, opinionated, curated, unofficial alternative to crates.io
+* [Rust Digger](https://rust-digger.code-maven.com/) - analyzing crates and recommending improvements
 
+## Rust exercises with feedback
+{id: rust-exercises-with-feedback}
 
-* [Let's Get Rusty](https://letsgetrusty.com/)
-* [noboilerplate](https://github.com/0atman/noboilerplate)
+* [rustlings](https://rustlings.cool/)
+* [Exercism Rust track](https://exercism.org/tracks/rust)
+* [Rust users forum](https://users.rust-lang.org/)
 
 ## Podcast, newsleter
 {id: rust-podcast}
@@ -23,12 +37,13 @@
 * [Rustacean](https://www.rustaceans.org/)
 * [Rustacean station](https://rustacean-station.org/) - a podcast
 
-## Rust exercises with feedback
-{id: rust-exercises-with-feedback}
 
-* [rustlings](https://rustlings.cool/)
-* [Exercism Rust track](https://exercism.org/tracks/rust)
-* [Rust users forum](https://users.rust-lang.org/)
+## Other Rust learning resources
+{id: other-rust-learning-resources}
+
+* [Let's Get Rusty](https://letsgetrusty.com/)
+* [noboilerplate](https://github.com/0atman/noboilerplate)
+
 
 ## Rust in other languages
 {id: rust-in-other-languages}
