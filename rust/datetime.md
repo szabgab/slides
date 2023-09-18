@@ -38,3 +38,14 @@
 ![](examples/chrono-elapsed-time/out.txt)
 ![](examples/chrono-elapsed-time/src/main.rs)
 
+## Date and time arithmetic
+{id: date-and-time-arithmetic}
+
+![](examples/chrono-date-arithmetic/Cargo.toml)
+
+![](examples/chrono-date-arithmetic/src/main.rs)
+
+![](examples/chrono-date-arithmetic/out.txt)
+
+
+
