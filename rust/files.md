@@ -182,3 +182,7 @@
 ![](examples/files/join.out)
 
 
+## basename
+{id: basename}
+
+![](examples/files/basename.rs)
