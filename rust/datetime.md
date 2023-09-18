@@ -47,5 +47,12 @@
 
 ![](examples/chrono-date-arithmetic/out.txt)
 
+## Compare chrono dates
+{id: compare-chrono-dates}
 
+![](examples/chrono-compare-dates/Cargo.toml)
+
+![](examples/chrono-compare-dates/src/main.rs)
+
+![](examples/chrono-compare-dates/out.txt)
 

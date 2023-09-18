@@ -1,0 +1,7 @@
+2023-09-18 17:35:06.308589789 UTC
+2023-09-18 17:35:07.308589789 UTC
+later is bigger: true
+later is not smaller: false
+later is not the same as now: false
+2023-09-18 17:35:06.308589789 UTC
+now is now: true
