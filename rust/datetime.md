@@ -56,6 +56,15 @@
 
 ![](examples/chrono-compare-dates/out.txt)
 
+## Format DateTime
+{id: format-datetime}
+{i: strftime}
+
+* [strftime](https://docs.rs/chrono/0.4.31/chrono/format/strftime/index.html)
+
+![](examples/chrono-format-date/Cargo.toml)
+![](examples/chrono-format-date/src/main.rs)
+
 ## Parse string to datetime
 {id: parse-string-to-datetime}
 
