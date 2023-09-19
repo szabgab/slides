@@ -70,4 +70,5 @@
 
 ![](examples/chrono-parse-date-string/Cargo.toml)
 ![](examples/chrono-parse-date-string/src/main.rs)
+![](examples/chrono-parse-date-string/out.txt)
 
