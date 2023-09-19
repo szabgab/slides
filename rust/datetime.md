@@ -56,3 +56,9 @@
 
 ![](examples/chrono-compare-dates/out.txt)
 
+## Parse string to datetime
+{id: parse-string-to-datetime}
+
+![](examples/chrono-parse-date-string/Cargo.toml)
+![](examples/chrono-parse-date-string/src/main.rs)
+
