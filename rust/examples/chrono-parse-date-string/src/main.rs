@@ -10,9 +10,6 @@ fn main() {
 
     //let ts3 = DateTime::parse_from_str("2023-09-18", "%Y-%m-%d").unwrap();
     //let ts3 = DateTime::parse_from_str("2023-09-18 01:44:10 ", "%Y-%m-%d %H:%M:%S").unwrap();
-    //let ts3 = "2023-09-18 01:44:10.299066".parse::<DateTime<FixedOffset>>().unwrap();
-    //let ts3 = DateTime::parse_from_str("Sat Nov 28 12:00:09 2014", "%a %b %e %T %Y").is_err();
-    //let ts3 = DateTime::parse_from_str("2014-11-28 21:00:09 +09:00", "%Y-%m-%d %H:%M:%S %z").unwrap();
     let ts3 = NaiveDateTime::parse_from_str("2023-09-19 08:00:02", "%Y-%m-%d %H:%M:%S").unwrap();
     println!("{}", ts3);
 
