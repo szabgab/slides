@@ -47,6 +47,7 @@
         "toml.md",
         "iterators.md",
         "advanced-functions.md",
+        "image.md",
         "other.md"
     ]
 }
