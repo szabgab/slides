@@ -37,27 +37,10 @@ fn main() {
 // TODO: go deeper than 2 levels to also handle examples/*/src/main.rs
 // TODO: but exclude examples/*/target/
 fn get_all_the_examples() -> Vec<String> {
-    let exclude: Vec<String> = vec![
-        "examples/try-packages/Cargo.toml",
-        "examples/try-threads/Cargo.toml",
-        "examples/threads-messages/Cargo.toml",
-        "examples/threads-messages-multiple-sources/Cargo.toml",
-        "examples/threads-messages-multiple-sources/threads-load-test/Cargo.toml",
-        "examples/multi_counter_with_manual_csv/Cargo.toml",
-        "examples/multi_counter_with_manual_csv/counter.csv",
-        "examples/argv-error-handling/Cargo.toml",
-        "examples/use-statements/Cargo.toml",
-        "examples/liquid-if-else/Cargo.toml",
-        "examples/liquid-elsif/Cargo.toml",
-        "examples/liquid-hello-world-from-file/Cargo.toml",
-        "examples/liquid-hello-world-variables/Cargo.toml",
-        "examples/liquid-objects/Cargo.toml",
-        "examples/liquid-for-loop/Cargo.toml",
-        "examples/liquid-loop-and-if/Cargo.toml",
-        "examples/liquid-filters-numbers/Cargo.toml",
-    ].iter().map(|path| path.to_string()).collect();
+    //let exclude: Vec<String> = vec![
+    //].iter().map(|path| path.to_string()).collect();
     let pathes = get_examples(Path::new("examples"));
-    let pathes: Vec<String> = pathes.iter().filter(|path| !exclude.contains(path)).cloned().collect();
+    //let pathes: Vec<String> = pathes.iter().filter(|path| !exclude.contains(path)).cloned().collect();
     pathes
 }
 
@@ -67,6 +50,9 @@ fn get_examples(path: &Path) -> Vec<String> {
     for entry in path.read_dir().expect("read_dir call failed") {
         if let Ok(entry) = entry {
             if entry.path().ends_with("Cargo.lock") {
+                continue;
+            }
+            if entry.path().ends_with("Cargo.toml") {
                 continue;
             }
 
