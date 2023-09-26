@@ -56,6 +56,11 @@ liquid = "0.26.4"
 ![](examples/liquid-elsif/src/main.rs)
 ![](examples/liquid-elsif/out.txt)
 
+## Liquid flow control: case/when
+{id: liquid-flow-control-case-when}
+
+![](examples/liquid-case-when/src/main.rs)
+![](examples/liquid-case-when/out.txt)
 
 ## Liquid object
 {id: liquid-object}
@@ -98,7 +103,6 @@ liquid = "0.26.4"
 {i: downcase}
 {i: capitalize}
 
-![](examples/liquid-filters-strings/Cargo.toml)
 ![](examples/liquid-filters-strings/src/main.rs)
 ![](examples/liquid-filters-strings/out.txt)
 
@@ -111,7 +115,6 @@ first or last
 * character in a string
 * element in an array, a vector, or a tuple
 
-![](examples/liquid-filters-order/Cargo.toml)
 ![](examples/liquid-filters-order/src/main.rs)
 ![](examples/liquid-filters-order/out.txt)
 
@@ -131,8 +134,6 @@ first or last
 {i: include}
 {i: partials}
 
-![](examples/liquid-include/Cargo.toml)
-
 ![](examples/liquid-include/templates/page.txt)
 ![](examples/liquid-include/templates/incl/header.txt)
 
@@ -144,7 +145,6 @@ first or last
 {id: liquid-assign}
 {i: assign}
 
-![](examples/liquid-assign/Cargo.toml)
 ![](examples/liquid-assign/src/main.rs)
 
 ![](examples/liquid-assign/templates/page.txt)
@@ -156,7 +156,6 @@ first or last
 {id: liquid-include-header-and-footer}
 {i: include}
 
-![](examples/liquid-include-header-footer/Cargo.toml)
 ![](examples/liquid-include-header-footer/out.txt)
 ![](examples/liquid-include-header-footer/src/main.rs)
 ![](examples/liquid-include-header-footer/templates/incl/footer.txt)
@@ -169,7 +168,6 @@ first or last
 {i: include}
 {i: capture}
 
-![](examples/liquid-layout/Cargo.toml)
 ![](examples/liquid-layout/out.txt)
 ![](examples/liquid-layout/src/main.rs)
 ![](examples/liquid-layout/templates/layout.txt)
@@ -188,7 +186,6 @@ first or last
 ## Liquid filter reverse array
 {id: liquid-filter-reverse-array}
 
-![](examples/liquid-filter-reverse/Cargo.toml)
 ![](examples/liquid-filter-reverse/src/main.rs)
 
 ## Liquid for loop: limit, offset, reversed
@@ -197,7 +194,6 @@ first or last
 {i: offset}
 {i: reversed}
 
-![](examples/liquid-loops/Cargo.toml)
 ![](examples/liquid-loops/src/main.rs)
 
 ## Liquid comma between every two elements (forloop.last)
@@ -211,7 +207,6 @@ first or last
 * first
 * last
 
-![](examples/liquid-loop-last/Cargo.toml)
 ![](examples/liquid-loop-last/src/main.rs)
 
 
