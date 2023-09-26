@@ -30,7 +30,6 @@ liquid = "0.26.4"
 ## Liquid Hello World with variable
 {id: liquid-hello-world-with-variable}
 
-![](examples/liquid-hello-world-variables/Cargo.toml)
 ![](examples/liquid-hello-world-variables/out.txt)
 ![](examples/liquid-hello-world-variables/src/main.rs)
 
@@ -38,7 +37,6 @@ liquid = "0.26.4"
 {id: liquid-hello-world-read-template-from-file}
 {i: parse_file}
 
-![](examples/liquid-hello-world-from-file/Cargo.toml)
 ![](examples/liquid-hello-world-from-file/out.txt)
 ![](examples/liquid-hello-world-from-file/src/main.rs)
 ![](examples/liquid-hello-world-from-file/template.txt)
@@ -49,14 +47,19 @@ liquid = "0.26.4"
 {i: else}
 {i: endif}
 
-![](examples/liquid-if-else/Cargo.toml)
 ![](examples/liquid-if-else/src/main.rs)
 ![](examples/liquid-if-else/out.txt)
+
+## Liquid flow control: else if written as elsif
+{id: liquid-flow-control-elsif}
+
+![](examples/liquid-elsif/src/main.rs)
+![](examples/liquid-elsif/out.txt)
+
 
 ## Liquid object
 {id: liquid-object}
 
-![](examples/liquid-objects/Cargo.toml)
 ![](examples/liquid-objects/src/main.rs)
 ![](examples/liquid-objects/out.txt)
 
@@ -65,7 +68,6 @@ liquid = "0.26.4"
 {i: for}
 {i: endfor}
 
-![](examples/liquid-for-loop/Cargo.toml)
 ![](examples/liquid-for-loop/src/main.rs)
 ![](examples/liquid-for-loop/out.txt)
 
@@ -76,7 +78,6 @@ liquid = "0.26.4"
 {i: if}
 {i: endif}
 
-![](examples/liquid-loop-and-if/Cargo.toml)
 ![](examples/liquid-loop-and-if/src/main.rs)
 ![](examples/liquid-loop-and-if/out.txt)
 
@@ -88,7 +89,6 @@ liquid = "0.26.4"
 
 * Increment or decerement the number by the given number
 
-![](examples/liquid-filters-numbers/Cargo.toml)
 ![](examples/liquid-filters-numbers/src/main.rs)
 ![](examples/liquid-filters-numbers/out.txt)
 

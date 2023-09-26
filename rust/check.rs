@@ -47,6 +47,14 @@ fn get_all_the_examples() -> Vec<String> {
         "examples/multi_counter_with_manual_csv/counter.csv",
         "examples/argv-error-handling/Cargo.toml",
         "examples/use-statements/Cargo.toml",
+        "examples/liquid-if-else/Cargo.toml",
+        "examples/liquid-elsif/Cargo.toml",
+        "examples/liquid-hello-world-from-file/Cargo.toml",
+        "examples/liquid-hello-world-variables/Cargo.toml",
+        "examples/liquid-objects/Cargo.toml",
+        "examples/liquid-for-loop/Cargo.toml",
+        "examples/liquid-loop-and-if/Cargo.toml",
+        "examples/liquid-filters-numbers/Cargo.toml",
     ].iter().map(|path| path.to_string()).collect();
     let pathes = get_examples(Path::new("examples"));
     let pathes: Vec<String> = pathes.iter().filter(|path| !exclude.contains(path)).cloned().collect();
