@@ -174,3 +174,14 @@ rustc all.rs
 ![](examples/ansi-colors/Cargo.toml)
 ![](examples/ansi-colors/src/main.rs)
 
+## What I learned from learning Rust
+{id: what-i-learned-from-learning-rust}
+
+* Gabor Szabo
+* https://szabgab.com/
+* https://github.com/szabgab
+
+* https://rustatic.code-maven.com/
+* https://rust-digger.code-maven.com/
+* https://rust.code-maven.com/
+

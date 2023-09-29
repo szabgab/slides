@@ -1,17 +1,6 @@
 # Introduction to Rust
 {id: rust-intro}
 
-## What I learned from learning Rust
-{id: what-i-learned-from-learning-rust}
-
-* Gabor Szabo
-* https://szabgab.com/
-* https://github.com/szabgab
-
-* https://rustatic.code-maven.com/
-* https://rust-digger.code-maven.com/
-* https://rust.code-maven.com/
-
 
 ## Rust resources
 {id: rust-resources}
