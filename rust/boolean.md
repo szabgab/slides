@@ -10,6 +10,8 @@
 
 ## Conditional: if - else
 {id: rust-conditional-if-else}
+{i: if}
+{i: else}
 
 ![](examples/booleans/if_else.rs)
 ![](examples/booleans/if_else.out)
@@ -17,6 +19,9 @@
 ## Conditional: else - if
 {id: rust-conditional-else-if}
 {i: arms}
+{i: else if}
+{i: elseif}
+{i: elsif}
 
 * The code pathes in an if-else-if statement are called "arms".
 
@@ -64,6 +69,9 @@
 
 ## Conditional (Ternary) operator
 {id: ternary-operator}
+{i: ?:}
+{i: if else}
+
 
 ![](examples/booleans/ternary.rs)
 ![](examples/booleans/ternary.out)

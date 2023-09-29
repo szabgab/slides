@@ -4,6 +4,11 @@
 
 ## Using the Standard library
 {id: using-the-standard-library}
+{i: std}
+{i: f32}
+{i: f64}
+{i: consts}
+{i: PI}
 
 * [std](https://doc.rust-lang.org/std/)
 

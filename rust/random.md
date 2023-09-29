@@ -4,6 +4,7 @@
 ## Random module
 {id: random-module}
 {i: rand}
+{i: random}
 
 * [rand](https://lib.rs/crates/rand)
 

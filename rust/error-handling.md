@@ -15,6 +15,9 @@
 
 ## Return error on failure
 {id: return-error-on-failure}
+{i: match}
+{i: Ok}
+{i: Err}
 
 ![](examples/errors/divide_by_zero_return_error.rs)
 

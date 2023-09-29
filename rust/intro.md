@@ -68,6 +68,10 @@
 
 ## Demo None handling
 {id: demo-none-handling}
+{i: Option}
+{i: match}
+{i: Some}
+{i: None}
 
 ![](examples/intro/demo_none_handling.rs)
 

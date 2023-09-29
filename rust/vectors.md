@@ -139,6 +139,7 @@
 
 ## Maximum value of a vector
 {id: maximum-vale-of-a-vector}
+{i: match}
 
 ![](examples/vectors/max_number.rs)
 ![](examples/vectors/max_number.out)
