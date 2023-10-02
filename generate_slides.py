@@ -50,7 +50,7 @@ def main():
 
 
     generate_singles(names, ext)
-    generate_multis(books, ext)
+    generate_multis(books, ext, args.hostname)
     generate_index(args.ext)
     generate_sitemap_xml(args.hostname)
     copy_static_files()
@@ -130,11 +130,12 @@ def generate_singles(names, ext):
         if ret != 0:
             exit("Failed")
 
-def generate_multis(books, ext):
+def generate_multis(books, ext, hostname):
     for book in books:
         print("{} - {} - {} - {}".format(book['dir'], book['filename'], book['outdir'], book['canonical']))
-        cmd = '''{executable} "{slider}" --yaml "{root}/{bdir}/{bfilename}" --html --dir "{root}/html/{boutdir}/" --templates "{root}/templates/" --static "{root}/static/" --url "https://code-maven.com/slides/{canonical}" {ext}'''.format(
+        cmd = '''{executable} "{slider}" --yaml "{root}/{bdir}/{bfilename}" --html --dir "{root}/html/{boutdir}/" --templates "{root}/templates/" --static "{root}/static/" --url "{hostname}/slides/{canonical}" {ext}'''.format(
             executable = sys.executable,
+            hostname = hostname,
             slider = slider,
             root   = root,
             bdir   = book['dir'],
