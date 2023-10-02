@@ -52,7 +52,7 @@ def main():
     generate_singles(names, ext)
     generate_multis(books, ext)
     generate_index(args.ext)
-    generate_sitemap_xml()
+    generate_sitemap_xml(args.hostname)
     copy_static_files()
 
 def get_arguments():
@@ -60,6 +60,7 @@ def get_arguments():
     parser.add_argument('--ext', default='html')
     parser.add_argument('--keep', action='store_true')
     parser.add_argument('--chapter', nargs='+')
+    parser.add_argument('--hostname', default='https://code-maven.com')
     parser.add_argument('names', nargs='*')
     args = parser.parse_args()
 
@@ -147,14 +148,14 @@ def generate_multis(books, ext):
         if ret != 0:
             exit("Failed")
 
-def generate_sitemap_xml():
+def generate_sitemap_xml(hostname):
     html_dir = os.path.join(root, 'html')
     ts = datetime.datetime.now().strftime("%Y-%m-%d")
     #print(ts)
     xml  = '''<?xml version="1.0" encoding="UTF-8"?>\n'''
     xml += '''<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'''
     xml += '''   <url>\n'''
-    xml += '''      <loc>https://code-maven.com/slides/</loc>\n'''
+    xml += f'''      <loc>{hostname}/slides/</loc>\n'''
     xml += '''      <lastmod>{ts}</lastmod>\n'''.format(ts=ts)
     xml += '''   </url>\n'''
 
@@ -164,7 +165,7 @@ def generate_sitemap_xml():
             continue
         #print(subject)
         xml += '''   <url>\n'''
-        xml += '''      <loc>https://code-maven.com/slides/{subject}</loc>\n'''.format(subject=subject)
+        xml += f'''      <loc>{hostname}/slides/{subject}</loc>\n'''
         xml += '''      <lastmod>{ts}</lastmod>\n'''.format(ts=ts)
         xml += '''   </url>\n'''
 
@@ -174,7 +175,7 @@ def generate_sitemap_xml():
             if not os.path.isfile(os.path.join(html_dir, subject, page)):
                 continue
             xml += '''   <url>\n'''
-            xml += '''      <loc>https://code-maven.com/slides/{subject}/{page}</loc>\n'''.format(subject=subject, page=page)
+            xml += f'''      <loc>{hostname}/slides/{subject}/{page}</loc>\n'''
             xml += '''      <lastmod>{ts}</lastmod>\n'''.format(ts=ts)
             xml += '''   </url>\n'''
     xml += '''</urlset>\n'''
