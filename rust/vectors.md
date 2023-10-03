@@ -244,3 +244,9 @@
 
 ![](examples/vectors/last_vec_index.rs)
 
+## Insert element in vector
+{id: instert-element-in-vector}
+{i: insert}
+
+![](examples/vectors/insert_element_in_vector.rs)
+
