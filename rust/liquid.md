@@ -209,4 +209,11 @@ first or last
 
 ![](examples/liquid-loop-last/src/main.rs)
 
+## Liquid: create your own filter - reverse a string
+{id: liquid-create-your-own-filter-reverse-a-string}
+
+This is using the [liquid-filter-reverse-string](https://crates.io/crates/liquid-filter-reverse-string). Look at its [source code](https://github.com/szabgab/liquid-filter-reverse-string.rs)
+
+![](examples/liquid-filter-reverse-string-use/Cargo.toml)
+![](examples/liquid-filter-reverse-string-use/src/main.rs)
 
