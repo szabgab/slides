@@ -48,6 +48,7 @@
         "iterators.md",
         "advanced-functions.md",
         "image.md",
+        "http.md",
         "other.md"
     ]
 }
