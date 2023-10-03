@@ -152,6 +152,12 @@ rustc all.rs
 ![](examples/commafy/Cargo.toml)
 ![](examples/commafy/src/lib.rs)
 
+## Commafys
+{id: commafy2}
+
+![](examples/commafys/src/main.rs)
+
+
 ## Use statements
 {id: use-statements}
 
