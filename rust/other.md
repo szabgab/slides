@@ -155,7 +155,7 @@ rustc all.rs
 ## Commafys
 {id: commafy2}
 
-![](examples/commafys/src/main.rs)
+![](examples/commafy2/src/main.rs)
 
 
 ## Use statements
