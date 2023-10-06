@@ -7,12 +7,18 @@
 {i: new}
 {i: insert}
 {i: len}
+{i: mut}
 
 * [std::collections](https://doc.rust-lang.org/std/collections/index.html)
 * [HashMap](https://doc.rust-lang.org/std/collections/hash_map/struct.HashMap.html)
 
-![](examples/hashes/create_empty_hash.rs)
-![](examples/hashes/create_empty_hash.out)
+* When we create a HashMap we don't necessarily have to define the types of the keys and the values as those can be deducted from the later assignments.
+* If we'd like to add new key-value pairs to the hash, we need to declare it as **mutable**.
+* The `insert` method allows us to add a new key-value pair.
+* `len` will tell us the number of keys.
+
+![](examples/hashes/create-empty-hash/src/main.rs)
+![](examples/hashes/create-empty-hash/out.out)
 
 ## Create immutable hash with data
 {id: create-hash-with-data}
@@ -20,8 +26,11 @@
 {i: from}
 {i: keys}
 
-![](examples/hashes/create_hash_with_data.rs)
-![](examples/hashes/create_hash_with_data.out)
+* We can also create a HashMap from existing data. In this case the hash does not have to be mutable.
+
+![](examples/hashes/create-hash-with-data/src/main.rs)
+![](examples/hashes/create-hash-with-data/out.out)
+
 
 ## Check if hash contains key (key exists)
 {id: hash-containes-key}
@@ -30,8 +39,8 @@
 {i: contains}
 {i: exists}
 
-![](examples/hashes/contains_key.rs)
-![](examples/hashes/contains_key.out)
+![](examples/hashes/contains-key/src/main.rs)
+![](examples/hashes/contains-key/out.out)
 
 ## Get value from hash
 {id: get-value-from-hash}
@@ -42,7 +51,6 @@
 
 ![](examples/hashes/get_value_from_hash.rs)
 ![](examples/hashes/get_value_from_hash.out)
-
 
 ## Iterate over keys of a hash
 {id: iterate-over-keys-of-hash}
@@ -70,7 +78,11 @@
 {i: new}
 {i: or_insert}
 
-![](examples/hashes/update_hash.rs)
+* Using the `or_insert` method we can update a value and insert a default value in case the key did not exist.
+
+![](examples/hashes/update-hash-value/src/main.rs)
+![](examples/hashes/update-hash-value/out.out)
+
 ![](examples/hashes/updating_values.rs)
 
 ## Rust update values in a hash - count words
