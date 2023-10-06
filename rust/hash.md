@@ -49,16 +49,16 @@
 
 * `get` returns a reference to the value corresponding to the key.
 
-![](examples/hashes/get_value_from_hash.rs)
-![](examples/hashes/get_value_from_hash.out)
+![](examples/hashes/get-value-from-hash/src/main.rs)
+![](examples/hashes/get-value-from-hash/out.out)
 
 ## Iterate over keys of a hash
 {id: iterate-over-keys-of-hash}
 {i: keys}
 {i: from}
 
-![](examples/hashes/iterate_over_keys.rs)
-![](examples/hashes/iterate_over_keys.out)
+![](examples/hashes/iterate-over-keys/src/main.rs)
+![](examples/hashes/iterate-over-keys/out.out)
 
 ## Iterate over key-value pairs in a Hash
 {id: iterate-over-key-value-pairs-of-hash}
