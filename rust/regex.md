@@ -21,14 +21,33 @@ No match
 ```
 
 
-## Regex demo
-{id: regex-demo}
+## Regex match numbers - capture using parentheses
+{id: regex-match-numbers}
 {i: Regex}
 {i: captures}
+{i: (}
+{i: )}
 
 * [regex::Captures](https://docs.rs/regex/latest/regex/struct.Captures.html)
 
 ![](examples/regex-demo/src/main.rs)
+
+## Regex capture all the numbers - multiple match
+{id: regex-capture-all-the-numbers}
+{i: Captures}
+{i: captures_iter}
+
+* [regex::Captures](https://docs.rs/regex/latest/regex/struct.Captures.html)
+
+![](examples/regex-capture-multiple-numbers/src/main.rs)
+
+```
+There is the number 23 and another number here: 19
+23
+19
+["23", "19"]
+```
+
 
 ## Regex
 {id: regex-substitute}
