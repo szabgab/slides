@@ -30,7 +30,7 @@ No match
 
 * [regex::Captures](https://docs.rs/regex/latest/regex/struct.Captures.html)
 
-![](examples/regex-demo/src/main.rs)
+![](examples/regex-match-number/src/main.rs)
 
 ## Regex capture all the numbers - multiple match
 {id: regex-capture-all-the-numbers}
