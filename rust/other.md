@@ -198,3 +198,7 @@ rustc all.rs
 ![](examples/temperature-converter/input.json)
 ![](examples/temperature-converter/src/main.rs)
 
+## Check slides
+{id: check-slides}
+
+![](examples/other/check-slides/src/main.rs)
