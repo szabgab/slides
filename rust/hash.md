@@ -128,8 +128,8 @@
 {i: collect}
 {i: insert}
 
-![](examples/hashes/hash_from_key_value_pairs.rs)
-![](examples/hashes/hash_from_key_value_pairs.out)
+![](examples/hashes/hash-from-key-value-pairs/src/main.rs)
+![](examples/hashes/hash-from-key-value-pairs/out.out)
 
 ## Read key-value pairs from file
 {id: read-key-value-pairs-from-file}
