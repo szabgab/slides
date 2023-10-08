@@ -1,8 +1,8 @@
 # JSON
 {id: json}
 
-## JSON serialize examples/json
-{id: json-serialize-examples/json}
+## JSON serialize examples
+{id: json-serialize-examples}
 {i: json}
 
 ![](examples/json/json-serialize/Cargo.toml)
