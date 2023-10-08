@@ -83,7 +83,7 @@
 ![](examples/hashes/update-hash-value/src/main.rs)
 ![](examples/hashes/update-hash-value/out.out)
 
-![](examples/hashes/updating_values.rs)
+![](examples/hashes/updating-values/src/main.rs)
 
 ## Rust update values in a hash - count words
 {id: rust-update-values-in-a-hash}
