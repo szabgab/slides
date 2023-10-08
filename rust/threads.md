@@ -4,7 +4,7 @@
 ## First example with threads
 {id: threads-first-example}
 
-![](examples/try-threads/src/main.rs)
+![](examples/threads/try-threads/src/main.rs)
 
 ## Threads with messages
 {id: threads-with-messages}

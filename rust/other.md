@@ -161,7 +161,7 @@ rustc all.rs
 ## Use statements
 {id: use-statements}
 
-![](examples/use-statements/src/main.rs)
+![](examples/other/use-statements/src/main.rs)
 
 ## Take version number from Cargo.toml
 {id: version-number-from-cargo-toml}
@@ -169,8 +169,7 @@ rustc all.rs
 {i: CARGO_PKG_VERSION}
 
 
-![](examples/version-number/Cargo.toml)
-![](examples/version-number/src/main.rs)
+![](examples/other/version-number/src/main.rs)
 
 ## Ansi colors
 {id: ansi-colors}
