@@ -18,8 +18,8 @@ fn main() {
     let mut mapping_from_key1: HashMap<String, &Something> = HashMap::new();
     let mut mapping_from_key2: HashMap<String, &Something> = HashMap::new();
     for thing in &things {
-        mapping_from_key1.insert(thing.key1.clone(), &thing);
-        mapping_from_key2.insert(thing.key2.clone(), &thing);
+        mapping_from_key1.insert(thing.key1.clone(), thing);
+        mapping_from_key2.insert(thing.key2.clone(), thing);
     }
 
     dbg!(&mapping_from_key1);

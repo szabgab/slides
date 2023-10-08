@@ -161,5 +161,5 @@
 {id: mapping-structs-based-on-more-than-one-key-from-a-vector}
 
 
-![](examples/hashes/multiple_mapping_from_vector.rs)
+![](examples/hashes/multiple-mapping-from-vector/src/main.rs)
 
