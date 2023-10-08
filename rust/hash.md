@@ -136,8 +136,8 @@
 
 ![](examples/hashes/key_value_pairs.txt)
 
-![](examples/hashes/read_key_value_pairs.rs)
-![](examples/hashes/read_key_value_pairs.out)
+![](examples/hashes/read-key-value-pairs/src/main.rs)
+![](examples/hashes/read-key-value-pairs/out.out)
 
 ## Sort vector of hashes
 {id: sort-vector-of-hashes}
