@@ -155,7 +155,7 @@
 {i: struct}
 {i: HashMap}
 
-![](examples/hashes/multiple_mapping.rs)
+![](examples/hashes/multiple-mapping/src/main.rs)
 
 ## Mapping structs based on more than one key from a vector
 {id: mapping-structs-based-on-more-than-one-key-from-a-vector}
