@@ -7,8 +7,8 @@
 * [reqwest](https://crates.io/crates/reqwest)
 * [tokio](https://crates.io/crates/tokio)
 
-![](examples/http-client/Cargo.toml)
-![](examples/http-client/src/main.rs)
+![](examples/reqwest/http-client/Cargo.toml)
+![](examples/reqwest/http-client/src/main.rs)
 
 
 ## Simple blocking http client
@@ -18,7 +18,7 @@
 cargo add reqwest --features blocking
 ```
 
-![](examples/simple-http-client/Cargo.toml)
-![](examples/simple-http-client/src/main.rs)
+![](examples/reqwest/simple-http-client/Cargo.toml)
+![](examples/reqwest/simple-http-client/src/main.rs)
 
 
