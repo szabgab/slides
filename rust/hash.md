@@ -97,8 +97,8 @@
 {i: remove}
 {i: keys}
 
-![](examples/hashes/remove_from_hash.rs)
-![](examples/hashes/remove_from_hash.out)
+![](examples/hashes/remove-from-hash/src/main.rs)
+![](examples/hashes/remove-from-hash/out.out)
 
 ## Accessing values
 {id: accessing-values}
