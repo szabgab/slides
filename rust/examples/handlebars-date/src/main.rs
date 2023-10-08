@@ -11,13 +11,13 @@ fn main() {
     let filename = "hello.html";
     let template = "template.html";
     match render_without_register(template, filename) {
-        Ok(_) => println!(""),
+        Ok(_) => println!(),
         Err(_) => println!("error"),
     }
 }
 
 fn render_without_register(template_file: &str, filename: &str) -> Result<(), Box<dyn Error>> {
-    let template = read_template(&template_file);
+    let template = read_template(template_file);
 
     let utc: DateTime<Utc> = Utc::now();
 

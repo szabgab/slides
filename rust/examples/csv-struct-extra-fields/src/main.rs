@@ -60,7 +60,7 @@ fn main() {
 
 fn read_file(filepath: &str) -> Result<Vec<Record>, Box<dyn Error>> {
     let mut records:Vec<Record> = vec![];
-    match File::open(filepath.to_string()) {
+    match File::open(filepath) {
         Ok(file) => {
             let mut rdr = csv::Reader::from_reader(file);
             for result in rdr.deserialize() {

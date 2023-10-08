@@ -6,7 +6,7 @@ fn main() {
     println!("start:             {}", start);
     println!("start timestamp:   {}", start.timestamp());
     println!("start timestamp:   {}", start.timestamp_micros());
-    println!("");
+    println!();
 
     let ten_millis = time::Duration::from_millis(10);
     let now = time::Instant::now();
@@ -16,12 +16,12 @@ fn main() {
     println!("elapsed as_millis: {}", now.elapsed().as_millis());
 
     let end: DateTime<Utc> = Utc::now();
-    println!("");
+    println!();
     println!("end:               {}", end);
     println!("end timestamp:     {}", end.timestamp());
     println!("end timestamp:     {}", end.timestamp_micros());
 
-    println!("");
+    println!();
     println!("Elapsed (sec):     {}", end.timestamp()-start.timestamp());
     println!("Elapsed (millis):  {}", end.timestamp_millis()-start.timestamp_millis());
     println!("Elapsed (micros):  {}", end.timestamp_micros()-start.timestamp_micros());

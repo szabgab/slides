@@ -13,10 +13,8 @@ fn main() {
 fn get_pathes() -> Vec<PathBuf> {
     let mut entries = vec![];
     let path = Path::new(".");
-    for entry in path.read_dir().expect("read_dir call failed") {
-        if let Ok(entry) = entry {
-            entries.push(entry.path());
-        }
+    for entry in path.read_dir().expect("read_dir call failed").flatten() {
+        entries.push(entry.path());
     }
     entries
 }
