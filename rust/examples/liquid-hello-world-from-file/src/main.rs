@@ -3,7 +3,7 @@ fn main() {
     let template = liquid::ParserBuilder::with_stdlib()
         .build()
         .unwrap()
-        .parse_file(&filename)
+        .parse_file(filename)
         .unwrap();
 
     let name = String::from("Liquid");
