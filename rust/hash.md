@@ -68,8 +68,8 @@
 * Use the `iter` method to get the iterator
 * Though you can iterate over the hash directly. It does the same.
 
-![](examples/hashes/iterate_over_pairs.rs)
-![](examples/hashes/iterate_over_pairs.out)
+![](examples/hashes/iterate-over-pairs/src/main.rs)
+![](examples/hashes/iterate-over-pairs/out.out)
 
 
 ## Rust hash update value

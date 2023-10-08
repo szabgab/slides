@@ -11,7 +11,7 @@ fn main() {
     for (name, value) in counter.iter() {
         println!("{} : {}", name, value);
     }
-    println!("");
+    println!();
 
     for (name, value) in counter {
         println!("{} : {}", name, value);
