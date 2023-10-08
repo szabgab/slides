@@ -6,8 +6,8 @@
 
 * using the [image](https://crates.io/crates/image) crate
 
-![](examples/crate-image/Cargo.toml)
+![](examples/image/create-image/Cargo.toml)
 
-![](examples/crate-image/src/main.rs)
+![](examples/image/create-image/src/main.rs)
 
 
