@@ -9,9 +9,9 @@ fn main() {
         Ok(file) => {
             let reader = BufReader::new(file);
             for line in reader.lines() {
-                let line = String::from(line.unwrap());
+                let line = line.unwrap();
                 // println!("'{}'", line);
-                let parts = line.split("=");
+                let parts = line.split('=');
                 //println!("{:?}", parts);
                 let parts: Vec<&str> = parts.collect();
                 // println!("{:?}", parts);
