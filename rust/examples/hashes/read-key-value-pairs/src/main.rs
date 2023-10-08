@@ -3,7 +3,7 @@ use std::io::{BufRead, BufReader};
 use std::collections::HashMap;
 
 fn main() {
-    let filename = "examples/hashes/key_value_pairs.txt";
+    let filename = "key_value_pairs.txt";
     let mut data = HashMap::new();
     match File::open(filename) {
         Ok(file) => {
