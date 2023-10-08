@@ -144,8 +144,8 @@
 {i: sort_by}
 {i: push}
 
-![](examples/hashes/sort_vector_of_hashes.rs)
-![](examples/hashes/sort_vector_of_hashes.out)
+![](examples/hashes/sort-vector-of-hashes/src/main.rs)
+![](examples/hashes/sort-vector-of-hashes/out.out)
 
 
 ## Mapping structs based on more than one key
