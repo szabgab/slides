@@ -81,7 +81,7 @@ One way to avoid reaching stack overflow is to call panic! ourselves.
 {i: Ordering}
 {i: std::cmp::Ordering}
 
-![](examples/argv-error-handling/src/main.rs)
+![](examples/errors/argv-error-handling/src/main.rs)
 
 ## Reporting error from a function
 {id: reporting-error-from-a-function}

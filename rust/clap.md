@@ -5,8 +5,8 @@
 {id: clap-example}
 {i: CLI}
 
-![](examples/clap-example/Cargo.toml)
-![](examples/clap-example/src/main.rs)
+![](examples/clap/clap-example/Cargo.toml)
+![](examples/clap/clap-example/src/main.rs)
 
 TODO
 
