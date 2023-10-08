@@ -176,8 +176,8 @@ rustc all.rs
 
 * [ansi_term](https://crates.io/crates/ansi_term)
 
-![](examples/ansi-colors/Cargo.toml)
-![](examples/ansi-colors/src/main.rs)
+![](examples/other/ansi-colors/Cargo.toml)
+![](examples/other/ansi-colors/src/main.rs)
 
 ## What I learned from learning Rust
 {id: what-i-learned-from-learning-rust}
