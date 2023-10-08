@@ -1,4 +1,3 @@
-use toml;
 use toml::Table;
 use serde::Deserialize;
 
