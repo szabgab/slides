@@ -5,5 +5,5 @@
 ## Try packages
 {id: try-packages}
 
-![](examples/try-packages/src/main.rs)
+![](examples/packages/try-packages/src/main.rs)
 
