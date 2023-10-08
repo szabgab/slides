@@ -5,14 +5,14 @@ fn main() {
     println!("{}", text);
 
     let re = Regex::new(r"cat").unwrap();
-    match re.captures(&text) {
+    match re.captures(text) {
         Some(value) => println!("Full match: '{}'", &value[0]),
         None => println!("No match"),
     };
 
 
     let re = Regex::new(r"dog").unwrap();
-    match re.captures(&text) {
+    match re.captures(text) {
         Some(value) => println!("Full match: '{}'", &value[0]),
         None => println!("No match"),
     };
