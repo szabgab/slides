@@ -1,6 +1,7 @@
 use std::path::Path;
 use std::path::PathBuf;
 use std::process::exit;
+use std::process::Command;
 use std::fs::File;
 use std::io::{BufRead, BufReader};
 use std::iter::FromIterator;
@@ -28,10 +29,63 @@ fn main() {
             count += 1;
         }
     }
+
+    let crates = get_crates(Path::new("examples"));
+    let root_folder = std::env::current_dir().unwrap();
+    for crate_folder in crates {
+        //println!("crate: {:?}", crate_folder);
+        std::env::set_current_dir(&crate_folder).unwrap();
+        //let result = Command::new("cargo")
+        //    .arg("fmt")
+        //    .arg("--check")
+        //    .output()
+        //    .expect("failed to execute process");
+        //println!("{}", std::str::from_utf8(&result.stdout).unwrap());
+        //println!("{}", std::str::from_utf8(&result.stderr).unwrap());
+        //println!("{}", result.status);
+
+        let result = Command::new("cargo")
+            .arg("clippy")
+            .arg("--")
+            .arg("--deny")
+            .arg("warnings")
+            .output()
+            .expect("failed to execute process");
+        if !result.status.success() {
+            println!("{}", result.status);
+            println!("crate: {:?}", crate_folder);
+            println!("{}", std::str::from_utf8(&result.stdout).unwrap());
+            println!("{}", std::str::from_utf8(&result.stderr).unwrap());
+            std::process::exit(1);
+        }
+        std::env::set_current_dir(&root_folder).unwrap();
+    }
+
     println!("There are {count} unused examples");
     if count > 0 {
         exit(1);
     }
+}
+
+
+fn get_crates(path: &Path) -> Vec<PathBuf> {
+    let mut crates: Vec<PathBuf> = vec![];
+    for entry in path.read_dir().expect("read_dir call failed") {
+        if let Ok(entry) = entry {
+            if entry.path().ends_with("target") {
+                continue;
+            }
+            //println!("{:?}", entry);
+            if entry.path().ends_with("Cargo.toml") {
+                //println!("cargo: {:?}", entry.path().parent());
+                crates.push(entry.path().parent().unwrap().to_path_buf());
+            }
+            if entry.path().is_dir() {
+                crates.extend(get_crates(entry.path().as_path()));
+            }
+        }
+    }
+    crates
 }
 
 // TODO: go deeper than 2 levels to also handle examples/*/src/main.rs
