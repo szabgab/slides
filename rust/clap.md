@@ -1,8 +1,9 @@
 # Command line Interface with clap
 {id: clap}
 
-## Clap example
+## Clap example for CLI
 {id: clap-example}
+{i: CLI}
 
 ![](examples/clap-example/Cargo.toml)
 ![](examples/clap-example/src/main.rs)
