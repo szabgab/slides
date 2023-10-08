@@ -12,40 +12,40 @@
 * We read the rows (skipping the first row)
 * We can iterate over the rows or access the individual elements
 
-![](examples/csv-stringrecord/planets.csv)
-![](examples/csv-stringrecord/Cargo.toml)
-![](examples/csv-stringrecord/src/main.rs)
-![](examples/csv-stringrecord/out.txt)
+![](examples/csv/csv-stringrecord/planets.csv)
+![](examples/csv/csv-stringrecord/Cargo.toml)
+![](examples/csv/csv-stringrecord/src/main.rs)
+![](examples/csv/csv-stringrecord/out.txt)
 
 ## Read CSV file into hashes
 {id: read-csv-file-into-hashes}
 {i: csv}
 {i: HashMap}
 
-![](examples/csv-hash/planets.csv)
-![](examples/csv-hash/Cargo.toml)
-![](examples/csv-hash/src/main.rs)
-![](examples/csv-hash/out.txt)
+![](examples/csv/csv-hash/planets.csv)
+![](examples/csv/csv-hash/Cargo.toml)
+![](examples/csv/csv-hash/src/main.rs)
+![](examples/csv/csv-hash/out.txt)
 
 ## Read CSV file as structs
 {id: read-csv-file-into-structs}
 {i: csv}
 {i: struct}
 
-![](examples/csv-struct/planets.csv)
+![](examples/csv/csv-struct/planets.csv)
 
-![](examples/csv-struct/Cargo.toml)
-![](examples/csv-struct/src/main.rs)
+![](examples/csv/csv-struct/Cargo.toml)
+![](examples/csv/csv-struct/src/main.rs)
 
-![](examples/csv-struct/out.txt)
+![](examples/csv/csv-struct/out.txt)
 
 ## Read CSV to struct, add extra fields
 {id: read-csv-to-struct-with-extra-fields}
 
-![](examples/csv-struct-extra-fields/Cargo.toml)
-![](examples/csv-struct-extra-fields/out.txt)
-![](examples/csv-struct-extra-fields/planets.csv)
-![](examples/csv-struct-extra-fields/src/main.rs)
+![](examples/csv/csv-struct-extra-fields/Cargo.toml)
+![](examples/csv/csv-struct-extra-fields/out.txt)
+![](examples/csv/csv-struct-extra-fields/planets.csv)
+![](examples/csv/csv-struct-extra-fields/src/main.rs)
 
 ## CSV TODO
 {id: csv-todo}
