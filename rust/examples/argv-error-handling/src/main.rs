@@ -1,5 +1,6 @@
 use std::env;
 use std::process::exit;
+use std::cmp::Ordering;
 
 fn main() {
     run();
@@ -72,11 +73,9 @@ fn run() {
 
 fn get_name() -> Result<String, String> {
     let args: Vec<String> = env::args().collect();
-    if args.len() < 2 {
-        Err("Not enough parameters".to_string())
-    } else if args.len() > 2 {
-        Err("Too many parameters".to_string())
-    } else {
-        Ok(args[1].clone())
+    match args.len().cmp(&2_usize) {
+        Ordering::Less => Err("Not enough parameters".to_string()),
+        Ordering::Greater => Err("Too many parameters".to_string()),
+        Ordering::Equal => Ok(args[1].clone()),
     }
 }

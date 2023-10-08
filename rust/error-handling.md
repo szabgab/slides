@@ -77,6 +77,9 @@ One way to avoid reaching stack overflow is to call panic! ourselves.
 
 ## Error handling on the command line
 {id: command-line-error-handling}
+{i: cmp}
+{i: Ordering}
+{i: std::cmp::Ordering}
 
 ![](examples/argv-error-handling/src/main.rs)
 
