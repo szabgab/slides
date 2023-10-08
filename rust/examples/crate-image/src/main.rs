@@ -1,4 +1,3 @@
-use image;
 
 fn main() {
     let width = 800;
@@ -53,7 +52,7 @@ fn main() {
     // }
 
     // draw a vertical line
-    let red = 100 as u8;
+    let red = 100_u8;
     let green = 100;
     let blue = 0;
     let x = 200;
