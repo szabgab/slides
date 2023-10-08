@@ -6,7 +6,7 @@ use std::io::Write;
 
 fn main() {
     match render_without_register("hello.html") {
-        Ok(_) => println!(""),
+        Ok(_) => println!(),
         Err(_) => println!("error"),
     }
 }
