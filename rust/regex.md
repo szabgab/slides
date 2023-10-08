@@ -9,9 +9,9 @@
 
 * [regex::Captures](https://docs.rs/regex/latest/regex/struct.Captures.html)
 
-![](examples/regex-simple-match/Cargo.toml)
+![](examples/regex/regex-simple-match/Cargo.toml)
 
-![](examples/regex-simple-match/src/main.rs)
+![](examples/regex/regex-simple-match/src/main.rs)
 
 
 ```
@@ -30,7 +30,7 @@ No match
 
 * [regex::Captures](https://docs.rs/regex/latest/regex/struct.Captures.html)
 
-![](examples/regex-match-number/src/main.rs)
+![](examples/regex/regex-match-number/src/main.rs)
 
 ## Regex capture all the numbers - multiple match
 {id: regex-capture-all-the-numbers}
@@ -39,7 +39,7 @@ No match
 
 * [regex::Captures](https://docs.rs/regex/latest/regex/struct.Captures.html)
 
-![](examples/regex-capture-multiple-numbers/src/main.rs)
+![](examples/regex/regex-capture-multiple-numbers/src/main.rs)
 
 ```
 There is the number 23 and another number here: 19
@@ -55,6 +55,6 @@ There is the number 23 and another number here: 19
 {i: replace}
 {i: repalce_all}
 
-![](examples/regex-substitute/Cargo.toml)
-![](examples/regex-substitute/src/main.rs)
+![](examples/regex/regex-substitute/Cargo.toml)
+![](examples/regex/regex-substitute/src/main.rs)
 
