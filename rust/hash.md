@@ -119,8 +119,8 @@
 {i: collect}
 {i: insert}
 
-![](examples/hashes/split_string_create_hash.rs)
-![](examples/hashes/split_string_create_hash.out)
+![](examples/hashes/split-string-create-hash/src/main.rs)
+![](examples/hashes/split-string-create-hash/out.out)
 
 ## Create hash from key-value pairs after split
 {id: create-hash-from-key-value-pairs}
