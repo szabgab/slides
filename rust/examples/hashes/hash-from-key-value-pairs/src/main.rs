@@ -16,7 +16,7 @@ fn main() {
 }
 
 fn mysplit(entry: &str) -> Vec<&str> {
-    let parts = entry.split("=");
+    let parts = entry.split('=');
     let parts: Vec<&str> = parts.collect();
     parts
 }
