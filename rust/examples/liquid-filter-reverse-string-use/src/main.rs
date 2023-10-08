@@ -5,7 +5,7 @@ fn main() {
     let template = "reversed: {{text | reversestr}}";
     let text = "Hello World!";
 
-    let result = render(&template, &text);
+    let result = render(template, text);
     println!("{}", result);
     assert_eq!(result, "reversed: !dlroW olleH");
 }
@@ -22,7 +22,6 @@ fn render(tmpl: &str, text: &str) -> String {
         .unwrap()
         .parse(tmpl).unwrap();
 
-    let output = template.render(&globals).unwrap();
-    return output
+    template.render(&globals).unwrap()
 }
 
