@@ -41,7 +41,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "regex-demo"
+name = "regex-match-number"
 version = "0.1.0"
 dependencies = [
  "regex",
