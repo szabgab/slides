@@ -134,7 +134,7 @@
 ## Read key-value pairs from file
 {id: read-key-value-pairs-from-file}
 
-![](examples/hashes/key_value_pairs.txt)
+![](examples/hashes/read-key-value-pairs/key_value_pairs.txt)
 
 ![](examples/hashes/read-key-value-pairs/src/main.rs)
 ![](examples/hashes/read-key-value-pairs/out.out)
