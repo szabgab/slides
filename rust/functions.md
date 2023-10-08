@@ -89,6 +89,6 @@ Simplify it by moving the code that reads the number from STDIN into a function 
 ## Function that can accept any number (any integer or any float)
 {id: function-to-accept-any-number}
 
-![](examples/any_number/Cargo.toml)
-![](examples/any_number/src/main.rs)
+![](examples/functions/any_number/Cargo.toml)
+![](examples/functions/any_number/src/main.rs)
 
