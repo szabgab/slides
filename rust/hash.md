@@ -109,8 +109,8 @@
 
 * unwrap_or(0)  sets a default value to 0
 
-![](examples/hashes/accessing_values.rs)
-![](examples/hashes/accessing_values.out)
+![](examples/hashes/accessing-values/src/main.rs)
+![](examples/hashes/accessing-values/out.out)
 
 
 ## Split string create hash
