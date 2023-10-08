@@ -1,8 +1,9 @@
-use std::process::Command;
+//use std::process::Command;
 use std::env;
 
 fn main() {
     let folder = get_url();
+    println!("{}", folder);
     // get a repo url on the command line
     //
     // create a temporary directory
@@ -20,7 +21,10 @@ fn main() {
     //println!("{}", result.status);
 }
 
-fn get_url() {
+fn get_url() -> String {
     let args: Vec<String> = env::args().collect();
-    args[1]
+    if args.len() != 2 {
+        std::process::exit(1);
+    }
+    args[1].clone()
 }
