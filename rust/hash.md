@@ -90,7 +90,7 @@
 {i: entry}
 {i: or_insert}
 
-![](examples/hashes/count_words.rs)
+![](examples/hashes/count-words/src/main.rs)
 
 ## Remove element from hash
 {id: remove-element-from-hash}
