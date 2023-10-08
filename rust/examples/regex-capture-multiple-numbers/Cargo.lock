@@ -41,7 +41,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "regex-capture-multipl-numbers"
+name = "regex-capture-multiple-numbers"
 version = "0.1.0"
 dependencies = [
  "regex",

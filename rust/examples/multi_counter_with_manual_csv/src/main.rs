@@ -43,7 +43,7 @@ fn read_the_csv_file() -> Counter {
             for line in reader.lines() {
                 let line = line.unwrap();
                 let line = line.trim();
-                let parts: Vec<&str> = line.split("=").collect();
+                let parts: Vec<&str> = line.split('=').collect();
                 let name = parts[0];
                 let count: u32 = parts[1].parse().unwrap();
                 counters.insert(name.to_string(), count);

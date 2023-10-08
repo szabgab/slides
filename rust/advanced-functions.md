@@ -17,3 +17,7 @@ pass function as a parameter to another function
 
 ![](examples/advanced-functions/pass_function_with_parameter_as_argument.rs)
 
+## Calculator
+{id: calculator}
+
+![](examples/advanced-functions/calculator.rs)

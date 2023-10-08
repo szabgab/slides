@@ -191,3 +191,10 @@ rustc all.rs
 * https://rust-digger.code-maven.com/
 * https://rust.code-maven.com/
 
+## Temperature converter
+{id: tempreature-converter}
+
+![](examples/temperature-converter/Cargo.toml)
+![](examples/temperature-converter/input.json)
+![](examples/temperature-converter/src/main.rs)
+

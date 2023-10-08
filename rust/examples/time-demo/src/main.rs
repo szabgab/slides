@@ -54,7 +54,7 @@ fn print_date(date: Date) {
     println!("{}", date.year());
     println!("{}", date.month());
     println!("{}", date.day());
-    println!("");
+    println!();
 }
 
 

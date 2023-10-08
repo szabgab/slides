@@ -10,7 +10,7 @@ fn main() {
     let filename = "hello.html";
     let template = "template.html";
     match render_without_register(template, filename) {
-        Ok(_) => println!(""),
+        Ok(_) => println!(),
         Err(_) => println!("error"),
     }
 }

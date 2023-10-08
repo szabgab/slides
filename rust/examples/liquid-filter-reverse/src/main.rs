@@ -1,3 +1,8 @@
+fn main() {
+    let result = render("direct: {{ items }}");
+    println!("{}", result);
+}
+
 fn render(tmpl: &str) -> String {
     let template = liquid::ParserBuilder::with_stdlib()
         .build()
@@ -7,8 +12,7 @@ fn render(tmpl: &str) -> String {
     let globals = liquid::object!({
         "items": vec![2, 3, 4],
     });
-    let output = template.render(&globals).unwrap();
-    return output
+    template.render(&globals).unwrap()
 }
 
 #[test]

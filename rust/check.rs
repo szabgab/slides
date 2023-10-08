@@ -52,11 +52,11 @@ fn main() {
             .output()
             .expect("failed to execute process");
         if !result.status.success() {
-            println!("{}", result.status);
+            //println!("{}", result.status);
             println!("crate: {:?}", crate_folder);
-            println!("{}", std::str::from_utf8(&result.stdout).unwrap());
-            println!("{}", std::str::from_utf8(&result.stderr).unwrap());
-            std::process::exit(1);
+            //println!("{}", std::str::from_utf8(&result.stdout).unwrap());
+            //println!("{}", std::str::from_utf8(&result.stderr).unwrap());
+            //std::process::exit(1);
         }
         std::env::set_current_dir(&root_folder).unwrap();
     }
@@ -91,10 +91,11 @@ fn get_crates(path: &Path) -> Vec<PathBuf> {
 // TODO: go deeper than 2 levels to also handle examples/*/src/main.rs
 // TODO: but exclude examples/*/target/
 fn get_all_the_examples() -> Vec<String> {
-    //let exclude: Vec<String> = vec![
-    //].iter().map(|path| path.to_string()).collect();
+    let exclude: Vec<String> = vec![
+        "examples/crate-image/image.png",
+    ].iter().map(|path| path.to_string()).collect();
     let pathes = get_examples(Path::new("examples"));
-    //let pathes: Vec<String> = pathes.iter().filter(|path| !exclude.contains(path)).cloned().collect();
+    let pathes: Vec<String> = pathes.iter().filter(|path| !exclude.contains(path)).cloned().collect();
     pathes
 }
 

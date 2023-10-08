@@ -4,7 +4,7 @@ use std::error::Error;
 
 fn main() {
     match render() {
-        Ok(_) => println!(""),
+        Ok(_) => println!(),
         Err(_) => println!("error"),
     }
 }
