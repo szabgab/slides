@@ -32,6 +32,7 @@ fn main() {
 
     let crates = get_crates(Path::new("examples"));
     let root_folder = std::env::current_dir().unwrap();
+    let mut clippy_error = 0;
     for crate_folder in crates {
         //println!("crate: {:?}", crate_folder);
         std::env::set_current_dir(&crate_folder).unwrap();
@@ -54,15 +55,20 @@ fn main() {
         if !result.status.success() {
             //println!("{}", result.status);
             println!("crate: {:?}", crate_folder);
+            clippy_error += 1;
             //println!("{}", std::str::from_utf8(&result.stdout).unwrap());
             //println!("{}", std::str::from_utf8(&result.stderr).unwrap());
             //std::process::exit(1);
         }
         std::env::set_current_dir(&root_folder).unwrap();
     }
+    if clippy_error > 0 {
+        eprintln!("There are {clippy_error} examples with clippy errors.");
+        exit(1);
+    }
 
-    println!("There are {count} unused examples");
     if count > 0 {
+        eprintln!("There are {count} unused examples");
         exit(1);
     }
 }
@@ -93,6 +99,7 @@ fn get_crates(path: &Path) -> Vec<PathBuf> {
 fn get_all_the_examples() -> Vec<String> {
     let exclude: Vec<String> = vec![
         "examples/crate-image/image.png",
+        "examples/multi_counter_with_manual_csv/counter.csv",
     ].iter().map(|path| path.to_string()).collect();
     let pathes = get_examples(Path::new("examples"));
     let pathes: Vec<String> = pathes.iter().filter(|path| !exclude.contains(path)).cloned().collect();
