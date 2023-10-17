@@ -109,4 +109,4 @@ crystal/examples/kemal/bin/
 
 /rust/myexe
 /rust/*.o
-/rust/examples/multi_counter_with_manual_csv/counter.csv
+/rust/examples/other/multi_counter_with_manual_csv/counter.csv

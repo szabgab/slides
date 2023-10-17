@@ -79,8 +79,8 @@ echo %ERROR_LEVEL%
 ## wc
 {id: wc}
 
-![](examples/rust-wc/Cargo.toml)
-![](examples/rust-wc/src/main.rs)
+![](examples/other/rust-wc/Cargo.toml)
+![](examples/other/rust-wc/src/main.rs)
 
 ## copy vs clone
 {id: copy-vs-clone}
@@ -125,7 +125,7 @@ rustc all.rs
 {id: multi-counter-in-manually-handled-csv-file}
 
 
-![](examples/multi_counter_with_manual_csv/src/main.rs)
+![](examples/other/multi_counter_with_manual_csv/src/main.rs)
 
 
 ## Get path to current executable
@@ -186,9 +186,9 @@ rustc all.rs
 ## Temperature converter
 {id: tempreature-converter}
 
-![](examples/temperature-converter/Cargo.toml)
-![](examples/temperature-converter/input.json)
-![](examples/temperature-converter/src/main.rs)
+![](examples/other/temperature-converter/Cargo.toml)
+![](examples/other/temperature-converter/input.json)
+![](examples/other/temperature-converter/src/main.rs)
 
 ## Check slides
 {id: check-slides}

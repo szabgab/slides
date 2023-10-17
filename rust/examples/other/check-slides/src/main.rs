@@ -101,7 +101,7 @@ fn get_all_the_examples() -> Vec<String> {
 
     let exclude: Vec<String> = [
         "examples/image/create-image/image.png",
-        "examples/multi_counter_with_manual_csv/counter.csv",
+        "examples/other/multi_counter_with_manual_csv/counter.csv",
     ]
     .iter()
     .map(|path| path.to_string())

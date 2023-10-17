@@ -96,8 +96,8 @@
 ## Create temporary directory
 {id: temporary-directory}
 
-![](examples/tempdir-demo/Cargo.toml)
-![](examples/tempdir-demo/src/main.rs)
+![](examples/files/tempdir-demo/Cargo.toml)
+![](examples/files/tempdir-demo/src/main.rs)
 
 ## Current working directory
 {id: current-working-directory}
