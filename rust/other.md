@@ -149,13 +149,13 @@ rustc all.rs
 ## Commafy
 {id: commafy}
 
-![](examples/commafy/Cargo.toml)
-![](examples/commafy/src/lib.rs)
+![](examples/other/commafy/Cargo.toml)
+![](examples/other/commafy/src/lib.rs)
 
 ## Commafys
 {id: commafy2}
 
-![](examples/commafy2/src/main.rs)
+![](examples/other/commafy2/src/main.rs)
 
 
 ## Use statements
