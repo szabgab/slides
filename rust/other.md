@@ -28,9 +28,9 @@ Somthing that looks like a function but ends with an exclamation point. e.g. `pr
 ## Split function into files
 {id: split-functions-into-file}
 
-![](examples/project/src/main.rs)
-![](examples/project/src/helper.rs)
-![](examples/project/Cargo.toml)
+![](examples/other/project/src/main.rs)
+![](examples/other/project/src/helper.rs)
+![](examples/other/project/Cargo.toml)
 
 ## Variable Scope in Rust
 {id: rust-variable-scope}

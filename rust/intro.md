@@ -140,8 +140,8 @@ cargo new hello-world
 cd hello-world
 ```
 
-![](examples/hello-world/src/main.rs)
-![](examples/hello-world/Cargo.toml)
+![](examples/intro/hello-world/src/main.rs)
+![](examples/intro/hello-world/Cargo.toml)
 
 * It will also create a git repository out of this folder.
 

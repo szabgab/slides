@@ -6,8 +6,8 @@
 {i: test}
 {i: assert_eq}
 
-![](examples/test-function/Cargo.toml)
-![](examples/test-function/src/main.rs)
+![](examples/testing/test-function/Cargo.toml)
+![](examples/testing/test-function/src/main.rs)
 
 
 ## Testing crates
@@ -15,6 +15,6 @@
 
 TODO
 
-![](examples/test-crate/Cargo.toml)
-![](examples/test-crate/src/main.rs)
+![](examples/testing/test-crate/Cargo.toml)
+![](examples/testing/test-crate/src/main.rs)
 
