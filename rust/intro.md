@@ -64,6 +64,7 @@
 
 * [Pydentic](https://docs.pydantic.dev/) is now written in Rust.
 * [SurrealDB](https://surrealdb.com/) multi-model database.
+* ...
 
 
 ## Demo None handling
@@ -73,7 +74,7 @@
 {i: Some}
 {i: None}
 
-![](examples/intro/demo_none_handling.rs)
+![](examples/intro/demo-none-handling/src/main.rs)
 
 
 See original idea on [What is Rust and why is it so popular?](https://stackoverflow.blog/2020/01/20/what-is-rust-and-why-is-it-so-popular/)
@@ -180,14 +181,14 @@ It also created a file called `Cargo.lock` and a folder called `target`.
 
 * [spec of comments](https://doc.rust-lang.org/reference/comments.html)
 
-![](examples/intro/comments.rs)
+![](examples/intro/comments/src/main.rs)
 
 ## Rust - Hello Foo
 {id: hello-foo}
 {i: let}
 
-![](examples/intro/hello_foo.rs)
-![](examples/intro/hello_foo.out)
+![](examples/intro/hello-foo/src/main.rs)
+![](examples/intro/hello-foo/out.out)
 
 * [format macro](https://doc.rust-lang.org/std/fmt/)
 
@@ -196,8 +197,8 @@ It also created a file called `Cargo.lock` and a folder called `target`.
 
 Since Rust 1.58
 
-![](examples/intro/interpolation.rs)
-![](examples/intro/interpolation.out)
+![](examples/intro/interpolation/src/main.rs)
+![](examples/intro/interpolation/out.out)
 
 ## Printing a string
 {id: printing-a-string}
