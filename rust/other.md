@@ -71,13 +71,6 @@ echo $?
 echo %ERROR_LEVEL%
 ```
 
-## Logging
-{id: logging}
-
-![](examples/simple_logger_demo/Cargo.toml)
-
-![](examples/simple_logger_demo/src/main.rs)
-
 ## Define multiple variables
 {id: define-multiple-variables}
 

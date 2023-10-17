@@ -51,6 +51,7 @@
         "advanced-functions.md",
         "image.md",
         "http.md",
+        "logging.md",
         "other.md"
     ]
 }

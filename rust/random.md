@@ -13,11 +13,11 @@ cargo new random
 cd random
 ```
 
-![](examples/random/Cargo.toml)
-![](examples/random/src/main.rs)
+![](examples/random/random/Cargo.toml)
+![](examples/random/random/src/main.rs)
 
 ```
 cargo run
 ```
 
-![](examples/random/out.txt)
+![](examples/random/random/out.txt)
