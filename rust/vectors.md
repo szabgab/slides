@@ -8,33 +8,33 @@
 
 * [Vec](https://doc.rust-lang.org/std/vec/struct.Vec.html)
 
-![](examples/vectors/numbers.rs)
-![](examples/vectors/numbers.out)
+![](examples/vectors/numbers/src/main.rs)
+![](examples/vectors/numbers/out.out)
 
 ## Iterate over elements of vector using for-loop
 {id: iterate-over-element-of-vector}
 
-![](examples/vectors/numbers_iterate.rs)
+![](examples/vectors/numbers-iterate/src/main.rs)
 
 ## Mutable vector of numbers, append (push) values
 {id: mutable-numbers-vector}
 {i: push}
 {i: append}
 
-![](examples/vectors/mutable_numbers_vector.rs)
+![](examples/vectors/mutable-numbers-vector/src/main.rs)
 
 ## Mutable empty vector for numbers (push)
 {id: mutable-empty-vector-for-numbers}
 {i: push}
 
-![](examples/vectors/mutable_empty_vector_for_integers.rs)
-![](examples/vectors/mutable_empty_vector_for_integers.out)
+![](examples/vectors/mutable-empty-vector-for-integers/src/main.rs)
+![](examples/vectors/mutable-empty-vector-for-integers/out.out)
 
 ## Mutable empty vector for strings
 {id: mutable-empty-vector-for-strings}
 
-![](examples/vectors/mutable_empty_vector_for_strings.rs)
-![](examples/vectors/mutable_empty_vector_for_strings.out)
+![](examples/vectors/mutable-empty-vector-for-strings/src/main.rs)
+![](examples/vectors/mutable-empty-vector-for-strings/out.out)
 
 ## Mutable empty vector with type definition
 {id: rust-vector}

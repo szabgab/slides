@@ -1,5 +1,6 @@
 fn main() {
     let mut names = vec![];
+    println!("{:?}", names);
 
     names.push("abc");
     // names.push(23);   // error[E0308]: mismatched types - expected `&str`, found integer

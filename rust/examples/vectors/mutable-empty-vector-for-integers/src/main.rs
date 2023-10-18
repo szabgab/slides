@@ -1,5 +1,6 @@
 fn main() {
     let mut names = vec![];
+    println!("{:?}", names);
 
     names.push(23);
 
