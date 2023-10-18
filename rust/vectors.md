@@ -108,28 +108,28 @@
 ## Vector of tuples
 {id: vector-of-tuples}
 
-![](examples/vectors/vector_of_tuples.rs)
-![](examples/vectors/vector_of_tuples.out)
+![](examples/vectors/vector-of-tuples/src/main.rs)
+![](examples/vectors/vector-of-tuples/out.out)
 
 ## Vector of structs
 {id: vector-of-structs}
 
-![](examples/vectors/vector_of_structs.rs)
-![](examples/vectors/vector_of_structs.out)
+![](examples/vectors/vector-of-structs/src/main.rs)
+![](examples/vectors/vector-of-structs/out.out)
 
 ## Vector of structs - change value
 {id: vector-of-structs-change-value}
 
 
-![](examples/vectors/vector_of_structs_change_value.rs)
-![](examples/vectors/vector_of_structs_change_value.out)
+![](examples/vectors/vector-of-structs-change-value/src/main.rs)
+![](examples/vectors/vector-of-structs-change-value/out.out)
 
 ## Join elements of vector into a string
 {id: join-elements-of-vector}
 {i: join}
 
-![](examples/vectors/join.rs)
-![](examples/vectors/join.out)
+![](examples/vectors/join/src/main.rs)
+![](examples/vectors/join/out.out)
 
 ## Join vector of integers
 {id: join-vector-of-integers}
@@ -138,14 +138,14 @@
 {i: map}
 {i: collect}
 
-![](examples/vectors/join_integers.rs)
+![](examples/vectors/join-integers/src/main.rs)
 
 ## Maximum value of a vector
 {id: maximum-vale-of-a-vector}
 {i: match}
 
-![](examples/vectors/max_number.rs)
-![](examples/vectors/max_number.out)
+![](examples/vectors/max-number/src/main.rs)
+![](examples/vectors/max-number/out.out)
 
 ## Change vector using map
 {id: change-vector-using-map}
