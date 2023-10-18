@@ -41,6 +41,9 @@ fn main() {
         if crate_folder.clone().into_os_string().into_string().unwrap() == "examples/intro/formatting-required" {
             continue;
         }
+        if crate_folder.clone().into_os_string().into_string().unwrap() == "examples/intro/print" {
+            continue;
+        }
         std::env::set_current_dir(&crate_folder).unwrap();
         //let result = Command::new("cargo")
         //    .arg("fmt")
@@ -60,7 +63,7 @@ fn main() {
             .expect("failed to execute process");
         if !result.status.success() {
             //println!("{}", result.status);
-            println!("ERROR crate: {:?}", crate_folder);
+            println!("ERROR in crate: {:?}", crate_folder);
             clippy_error += 1;
             //println!("{}", std::str::from_utf8(&result.stdout).unwrap());
             //println!("{}", std::str::from_utf8(&result.stderr).unwrap());

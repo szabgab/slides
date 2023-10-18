@@ -219,8 +219,8 @@ Since Rust 1.58
 
 * goes to STDERR
 
-![](examples/intro/debugging_print.rs)
-![](examples/intro/debugging_print.out)
+![](examples/intro/debugging-print/src/main.rs)
+![](examples/intro/debugging-print/out.out)
 
 ## Rust and print
 {id: rust-and-print}
@@ -241,8 +241,8 @@ Since Rust 1.58
 
 * [format!](https://doc.rust-lang.org/std/macro.format.html)   returns formatted string
 
-![](examples/intro/print.rs)
-![](examples/intro/print.out)
+![](examples/intro/print/src/main.rs)
+![](examples/intro/print/out.out)
 
 
 ## Exercise 1
