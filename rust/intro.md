@@ -116,15 +116,16 @@ rustc 1.70.0 (90c541806 2023-05-31)
 * The main Rust file must have a function called `main`.
 * `println!` is a macro (it looks like function, it generates some Rust code during compilation).
 
-![](examples/intro/hello.rs)
+![](examples/intro/hello/src/main.rs)
 
 ```
-rustc hello.rs
+rustc src/main.rs
 ```
 
 ```
-./hello
+./main
 ```
+
 
 ## Hello World with Cargo
 {id: hello-world-with-cargo}
@@ -203,14 +204,14 @@ Since Rust 1.58
 ## Printing a string
 {id: printing-a-string}
 
-![](examples/intro/formatting_required.rs)
-![](examples/intro/formatting_required.out)
+![](examples/intro/formatting-required/src/main.rs)
+![](examples/intro/formatting-required/out.out)
 
 ## Printing a string fixed
 {id: printing-a-string-fixed}
 
-![](examples/intro/formatting_required_fixed.rs)
-![](examples/intro/formatting_required_fixed.out)
+![](examples/intro/formatting-required-fixed/src/main.rs)
+![](examples/intro/formatting-required-fixed/out.out)
 
 ## Debugging print
 {id: debugging-print}

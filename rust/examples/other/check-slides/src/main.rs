@@ -38,6 +38,9 @@ fn main() {
     let mut clippy_error = 0;
     for crate_folder in crates {
         //println!("crate: {:?}", crate_folder);
+        if crate_folder.clone().into_os_string().into_string().unwrap() == "examples/intro/formatting-required" {
+            continue;
+        }
         std::env::set_current_dir(&crate_folder).unwrap();
         //let result = Command::new("cargo")
         //    .arg("fmt")
