@@ -142,7 +142,9 @@
 
 ## Maximum value of a vector
 {id: maximum-vale-of-a-vector}
+{i: max}
 {i: match}
+{i: iter}
 
 ![](examples/vectors/max-number/src/main.rs)
 ![](examples/vectors/max-number/out.out)
@@ -153,25 +155,25 @@
 {i: map}
 {i: collect}
 
-![](examples/vectors/map_on_integers.rs)
+![](examples/vectors/map-on-integers/src/main.rs)
 
 ## Update values in vector of structs using map
 {id: update-values-in-vector-of-structs-using-map}
 
-![](examples/vectors/update_vector_of_structs.rs)
-![](examples/vectors/update_vector_of_structs.out)
+![](examples/vectors/update-vector-of-structs/src/main.rs)
+![](examples/vectors/update-vector-of-structs/out.out)
 
 ## map is lazy
 {id: map-is-lazy}
 
-![](examples/vectors/map1.rs)
-![](examples/vectors/map1.out)
+![](examples/vectors/map1/src/main.rs)
+![](examples/vectors/map1/out.out)
 
-![](examples/vectors/map2.rs)
-![](examples/vectors/map2.out)
+![](examples/vectors/map2/src/main.rs)
+![](examples/vectors/map2/out.out)
 
-![](examples/vectors/map3.rs)
-![](examples/vectors/map3.out)
+![](examples/vectors/map3/src/main.rs)
+![](examples/vectors/map3/out.out)
 
 ## filter numbers
 {id: filter-numbers}
@@ -182,20 +184,20 @@
 
 * [cloned](https://doc.rust-lang.org/std/iter/trait.Iterator.html#method.cloned)
 
-![](examples/vectors/filter_numbers.rs)
-![](examples/vectors/filter_numbers.out)
+![](examples/vectors/filter-numbers/src/main.rs)
+![](examples/vectors/filter-numbers/out.out)
 
 ## filter numbers iter into
 {id: filter-numbers-iter-into}
 {i: iter_into}
 
-![](examples/vectors/filter_numbers_iter_into.rs)
+![](examples/vectors/filter-numbers-iter-into/src/main.rs)
 
 
 ## filter numbers by named function
 {id: filter-numbers-by-named-function}
 
-![](examples/vectors/filter_numbers_by_function.rs)
+![](examples/vectors/filter-numbers-by-function/src/main.rs)
 
 ## filter string
 {id: filter-string}
