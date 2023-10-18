@@ -1,5 +1,6 @@
 fn main() {
     let mut names:Vec<&str> = vec![];
+    println!("{:?}", names);
 
     //names.push(23);  // error
 

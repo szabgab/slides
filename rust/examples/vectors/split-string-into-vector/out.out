@@ -1,0 +1,7 @@
+mouse cat   oliphant
+Split(SplitInternal { start: 0, end: 20, matcher: CharSearcher { haystack: "mouse cat   oliphant", finger: 0, finger_back: 20, needle: ' ', utf8_size: 1, utf8_encoded: [32, 0, 0, 0] }, allow_trailing_empty: true, finished: false })
+mouse
+cat
+
+
+oliphant

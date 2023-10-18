@@ -6,7 +6,7 @@ fn main() {
     let fruits2 = vec!["peach", "kiwi"];
     dbg!(&fruits2);
 
-    &fruits1.extend(&fruits2);
+    fruits1.extend(&fruits2);
     dbg!(&fruits1);
     dbg!(&fruits2);
     fruits1[2] = "egg";

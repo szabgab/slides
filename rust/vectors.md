@@ -41,16 +41,15 @@
 {i: vec!}
 {i: push}
 
-![](examples/vectors/vector_with_type.rs)
-![](examples/vectors/vector_with_type.out)
+![](examples/vectors/vector-with-type/src/main.rs)
+![](examples/vectors/vector-with-type/out.out)
 
 
 ## Mutable vector of strings
 {id: mutable-vector-of-strings}
 
-![](examples/vectors/mutable_vector_of_strings_one.rs)
-![](examples/vectors/mutable_vector_of_strings_one.out)
-
+![](examples/vectors/mutable-vector-of-strings/src/main.rs)
+![](examples/vectors/mutable-vector-of-strings/out.out)
 
 
 ## Count words
@@ -58,21 +57,25 @@
 
 * Given a string that consists of words and white-spaces, count how many times each word appears?
 
-![](examples/vectors/count_words.rs)
+![](examples/vectors/count-words/src/main.rs)
 
 ## Vector extend (combining two vectors)
 {id: vector-extend}
 {i: extend}
 
-![](examples/vectors/extend.rs)
+![](examples/vectors/extend/src/main.rs)
+![](examples/vectors/extend/out.out)
 
 ## Split string into vector
 {id: split-string-into-vector}
 {i: split}
 {i: vec}
 
-![](examples/vectors/split_string_into_vector.rs)
-![](examples/vectors/split_to_vector.rs)
+![](examples/vectors/split-string-into-vector/src/main.rs)
+![](examples/vectors/split-string-into-vector/out.out)
+
+![](examples/vectors/split-to-vector/src/main.rs)
+![](examples/vectors/split-to-vector/out.out)
 
 ## Sort vector of numbers
 {id: sort-vector-of-numbers}
