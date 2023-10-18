@@ -207,13 +207,13 @@
 {i: collect}
 
 
-![](examples/vectors/filter_strings.rs)
-![](examples/vectors/filter_strings.out)
+![](examples/vectors/filter-strings/src/main.rs)
+![](examples/vectors/filter-strings/out.out)
 
 ## Two references to the same vector
 {id: two-refernces-to-the-same-vector}
 
-![](examples/vectors/two_references_to_the_same_vector.rs)
+![](examples/vectors/two-references-to-the-same-vector/src/main.rs)
 
 
 ## Filter vector of structs (cloning)
@@ -222,18 +222,18 @@
 {i: cloned}
 {i: Clone}
 
-![](examples/vectors/filter_vector_of_structs_with_clone.rs)
+![](examples/vectors/filter-vector-of-structs-with-clone/src/main.rs)
 
 ## Convert vector of structs to vector of references
 {id: convert-vector-of-structs-to-vector-of-references}
 
-![](examples/vectors/convert_vector_of_structs_to_vector_of_references.rs)
+![](examples/vectors/convert-vector-of-structs-to-vector-of-references/src/main.rs)
 
 
 ## Filter vector of structs without copy
 {id: filter-vector-of-structs-without-copy}
 
-![](examples/vectors/filter_vector_of_structs.rs)
+![](examples/vectors/filter-vector-of-structs/src/main.rs)
 
 ## Accessing the last element of a vector
 {id: accessing-the-last-element-of-a-vector}
@@ -247,11 +247,11 @@
 * If we access a seemingly arbitrary element that we calculated using `vector_name.len()-1` then either we get back a value or Rust will panic if we gave an index too big.
 * On the other hand using `last` we are more protected. In that case we either get a value or `None` if the vector was empty.
 
-![](examples/vectors/last_vec_index.rs)
+![](examples/vectors/last-vec-index/src/main.rs)
 
 ## Insert element in vector
 {id: instert-element-in-vector}
 {i: insert}
 
-![](examples/vectors/insert_element_in_vector.rs)
+![](examples/vectors/insert-element-in-vector/src/main.rs)
 
