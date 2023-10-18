@@ -10,8 +10,8 @@ fn main() {
     println!("{:?}", numbers);
 }
 
-fn median(numbers: &Vec<i32>) -> i32 {
-    let mut numbers = numbers.clone();
+fn median(numbers: &[i32]) -> i32 {
+    let mut numbers = numbers.to_owned();
     numbers.sort();
     let middle = numbers.len()/2;
     numbers[middle]
