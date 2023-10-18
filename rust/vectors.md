@@ -149,6 +149,21 @@
 ![](examples/vectors/max-number/src/main.rs)
 ![](examples/vectors/max-number/out.out)
 
+
+## Longest or shortest string in a vector
+{id: longes-or-shortest-string-in-vector}
+{i: max}
+{i: min}
+{i: max_by}
+{i: min_by}
+{i: cmp}
+
+* max and min abc order
+* max and min by length
+
+![](examples/vectors/get-longest-string/src/main.rs)
+
+
 ## Change vector using map
 {id: change-vector-using-map}
 {i: into_iter}
