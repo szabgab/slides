@@ -11,3 +11,13 @@
 
 ![](examples/path/return-pathes/src/main.rs)
 
+## Convert the PathBuf to String to compare
+{id: convert-pathbuf-to-string-to-compare}
+{i: current_dir}
+{i: clone}
+{i: into_os_string}
+{i: into_string}
+{i: unwrap}
+
+![](examples/path/convert-pathbuf-to-string/src/main.rs)
+
