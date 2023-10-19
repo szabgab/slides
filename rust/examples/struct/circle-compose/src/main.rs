@@ -28,7 +28,7 @@ fn main() {
     println!("{}", a.point.y);
     println!("{}", a.radius);
     println!("{}", a.area());
-    println!("");
+    println!();
 
     a.point.mv(4, 5);
     println!("{}", a.point.x);

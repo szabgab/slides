@@ -5,20 +5,20 @@
 {id: create-simple-struct}
 {i: struct}
 
-![](examples/struct/point.rs)
-![](examples/struct/point.out)
+![](examples/struct/point/src/main.rs)
+![](examples/struct/point/out.out)
 
 ## Change attributes of a mutable struct
 {id: mutable-struct}
 
-![](examples/struct/mutable_point.rs)
-![](examples/struct/mutable_point.out)
+![](examples/struct/mutable-point/src/main.rs)
+![](examples/struct/mutable-point/out.out)
 
 ## Struct method to modify fields
 {id: struct-method-to-modify-fields}
 
-![](examples/struct/point_with_method.rs)
-![](examples/struct/point_with_method.out)
+![](examples/struct/point-with-method/src/main.rs)
+![](examples/struct/point-with-method/out.out)
 
 ## Struct inheritance
 {id: struct-inheritance}
@@ -28,14 +28,14 @@
 ## Struct composition
 {id: struct-composition}
 
-![](examples/struct/circle_compose.rs)
-![](examples/struct/circle_compose.out)
+![](examples/struct/circle-compose/src/main.rs)
+![](examples/struct/circle-compose/out.out)
 
 ## Struct duplicate
 {id: struct-duplicate}
 
-![](examples/struct/circle_duplicate.rs)
-![](examples/struct/circle_duplicate.out)
+![](examples/struct/circle-duplicate/src/main.rs)
+![](examples/struct/circle-duplicate/out.out)
 
 ## Printing struct fails
 {id: printing-struct-fails}

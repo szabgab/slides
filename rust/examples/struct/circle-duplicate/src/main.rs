@@ -31,7 +31,7 @@ fn main() {
     let mut p = Point {x: 2, y: 3};
     println!("{}", p.x);
     println!("{}", p.y);
-    println!("");
+    println!();
 
     p.mv(4, 5);
     println!("{}", p.x);
@@ -43,7 +43,7 @@ fn main() {
     println!("{}", a.y);
     println!("{}", a.radius);
     println!("{}", a.area());
-    println!("");
+    println!();
 
     a.mv(4, 5);
     println!("{}", a.x);
