@@ -73,17 +73,20 @@
 ## Struct with vector and optional value
 {id: struct-with-vector-and-optional-value}
 
-![](examples/struct/struct_with_vector_and_optional_value.rs)
-![](examples/struct/struct_with_vector_and_optional_value.out)
+![](examples/struct/struct-with-vector-and-optional-value/src/main.rs)
+![](examples/struct/struct-with-vector-and-optional-value/out.out)
 
 ## Printing and debug-printing simple struct
 {id: printing-simple-struct}
 
-![](examples/struct/struct_cannot_be_printed.rs)
-![](examples/struct/struct_with_debug.rs)
-![](examples/struct/struct_with_debug.out)
-![](examples/struct/struct_with_display.rs)
-![](examples/struct/struct_with_display.out)
+![](examples/struct/struct-cannot-be-printed/src/main.rs)
+
+![](examples/struct/struct-with-debug/src/main.rs)
+![](examples/struct/struct-with-debug/out.out)
+
+
+![](examples/struct/struct-with-display/src/main.rs)
+![](examples/struct/struct-with-display/out.out)
 
 ## Use a tuple as a struct to represent color
 {id: use-a-typle-as-struct}
