@@ -44,6 +44,10 @@ fn main() {
         if crate_folder.clone().into_os_string().into_string().unwrap() == "examples/intro/print" {
             continue;
         }
+        if crate_folder.clone().into_os_string().into_string().unwrap() == "examples/struct/printing-struct-fails" {
+            continue;
+        }
+
         std::env::set_current_dir(&crate_folder).unwrap();
         //let result = Command::new("cargo")
         //    .arg("fmt")

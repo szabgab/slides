@@ -40,36 +40,35 @@
 ## Printing struct fails
 {id: printing-struct-fails}
 
-![](examples/struct/printing_struct_fails.rs)
+![](examples/struct/printing-struct-fails/src/main.rs)
 
 ## Print struct (Point)
 {id: print-struct}
 {i: std::fmt::Display}
 {i: Display}
 
-![](examples/struct/print_point.rs)
-![](examples/struct/print_point.out)
+![](examples/struct/print-point/src/main.rs)
+![](examples/struct/print-point/out.out)
 
 ## Debug struct (Point)
 {id: debug-struct}
 {i: std::fmt::Debug}
 {i: Debug}
 
-
-![](examples/struct/debug_point.rs)
-![](examples/struct/debug_point.out)
+![](examples/struct/debug-point/src/main.rs)
+![](examples/struct/debug-point/out.out)
 
 ## Print complex struct
 {id: print-complex-struct}
 
-![](examples/struct/printing_struct.rs)
-![](examples/struct/printing_struct.out)
+![](examples/struct/printing-struct/src/main.rs)
+![](examples/struct/printing-struct/out.out)
 
 ## Debug complex struct
 {id: debug-complex-struct}
 
-![](examples/struct/debugging_struct.rs)
-![](examples/struct/debugging_struct.out)
+![](examples/struct/debugging-struct/src/main.rs)
+![](examples/struct/debugging-struct/out.out)
 
 ## Struct with vector and optional value
 {id: struct-with-vector-and-optional-value}
