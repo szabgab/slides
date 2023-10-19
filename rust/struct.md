@@ -91,36 +91,36 @@
 ## Use a tuple as a struct to represent color
 {id: use-a-typle-as-struct}
 
-![](examples/struct/tuple_as_struct.rs)
-![](examples/struct/tuple_as_struct.out)
+![](examples/struct/tuple-as-struct/src/main.rs)
+![](examples/struct/tuple-as-struct/out.out)
 
 ## Add method to tuple-based struct
 {id: method-to-tuple-based-struct}
 
-![](examples/struct/tuple_as_struct_method.rs)
-![](examples/struct/tuple_as_struct_method.out)
+![](examples/struct/tuple-as-struct-method/src/main.rs)
+![](examples/struct/tuple-as-struct-method/out.out)
 
 ## Struct with method
 {id: struct-with-method}
 
-![](examples/struct/struct_with_method.rs)
-![](examples/struct/struct_with_method.out)
+![](examples/struct/struct-with-method/src/main.rs)
+![](examples/struct/struct-with-method/out.out)
 
 ## Structs and circural references
 {id: structs-and-circular-references}
 
-![](examples/struct/circural_references.rs)
+![](examples/struct/circural-references/src/main.rs)
 
 ## Multiple referene to a struct
 {id: multiple-reference-to-a-struct}
 
-![](examples/struct/multiple_referene_to_struct.rs)
+![](examples/struct/multiple-referene-to-struct/src/main.rs)
 
 ## new method with default values for struct
 {id: new-method-with-default-values}
 {i: new}
 
-![](examples/struct/new.rs)
+![](examples/struct/new-method/src/main.rs)
 
 ## The new method has no special feature
 {id: new-method-no-special-feature}
@@ -129,13 +129,13 @@
 * We could use any other name instead of `new`. For example we could use `qqrq` as well.
 * The name `new` is only to give the power of familiarity.
 
-![](examples/struct/qqrq.rs)
+![](examples/struct/constructor/src/main.rs)
 
 
 ## Default values
 {id: default-values}
 
-![](examples/struct/default.rs)
+![](examples/struct/default/src/main.rs)
 
 ## Default for composite struct
 {id: default-for-composite-struct}

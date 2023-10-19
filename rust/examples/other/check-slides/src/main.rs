@@ -50,6 +50,9 @@ fn main() {
         if crate_folder.clone().into_os_string().into_string().unwrap() == "examples/struct/struct-cannot-be-printed" {
             continue;
         }
+        if crate_folder.clone().into_os_string().into_string().unwrap() == "examples/struct/circural-references" {
+            continue;
+        }
 
         std::env::set_current_dir(&crate_folder).unwrap();
         //let result = Command::new("cargo")
