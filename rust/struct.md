@@ -140,12 +140,12 @@
 ## Default for composite struct
 {id: default-for-composite-struct}
 
-![](examples/struct/default_for_composite_struct.rs)
+![](examples/struct/default-for-composite-struct/src/main.rs)
 
 ## Compare structs for partial equality
 {id: compare-structs-for-partial-equality}
 {i: struct}
 {i: PartialEq}
 
-![](examples/struct/compare_structs_for_equality.rs)
+![](examples/struct/compare-structs-for-equality/src/main.rs)
 
