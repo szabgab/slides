@@ -142,10 +142,19 @@
 
 ![](examples/struct/default-for-composite-struct/src/main.rs)
 
-## Compare structs for partial equality
+## Compare structs for partial equality - PartialEq
 {id: compare-structs-for-partial-equality}
 {i: struct}
 {i: PartialEq}
 
+* [PartialEq](https://doc.rust-lang.org/std/cmp/trait.PartialEq.html)
+
 ![](examples/struct/compare-structs-for-equality/src/main.rs)
+
+## Compare structs for ordering (sorting) - PartialOrd
+{id: compare-structs-for-ordering}
+{i: PartialOrd}
+
+![](examples/struct/compare-structs-to-sort/src/main.rs)
+![](examples/struct/compare-structs-to-sort/out.out)
 

@@ -27,4 +27,6 @@ fn main() {
     println!("{}", a == b);
     println!("{}", a == c);
 
+    // must implement `PartialOrd`
+    // println!("{}", a < c);
 }
