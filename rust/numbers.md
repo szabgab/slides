@@ -64,3 +64,14 @@
 ![](examples/numbers/compare-floats/out.out)
 
 
+## Approximately compare floating point numbers
+{id: approximately-compare-floating-point-numbers}
+{i: TBD}
+{i: approx_eq}
+
+* [ordered-float](https://crates.io/crates/ordered-float)
+* [float-cmp](https://crates.io/crates/float-cmp)
+
+![](examples/numbers/compare-floats-approximately/src/main.rs)
+![](examples/numbers/compare-floats-approximately/out.out)
+
