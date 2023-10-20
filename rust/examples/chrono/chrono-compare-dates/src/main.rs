@@ -10,6 +10,9 @@ fn main() {
     println!("later is bigger: {}", now < later);
     println!("later is not smaller: {}", now > later);
     println!("later is not the same as now: {}", now == later);
+    println!();
+    println!("{:?}", now.cmp(&later));
+    println!();
 
     let now2 = later - Duration::seconds(1);
     println!("{}", now2);
