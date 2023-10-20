@@ -55,3 +55,12 @@
 
 ![](examples/numbers/compare-integers/out.out)
 
+
+## Compare floating point numbers
+{id: compare-floating-pount-numbers}
+
+![](examples/numbers/compare-floats/src/main.rs)
+
+![](examples/numbers/compare-floats/out.out)
+
+
