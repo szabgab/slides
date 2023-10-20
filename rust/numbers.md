@@ -63,6 +63,12 @@
 
 ![](examples/numbers/compare-floats/out.out)
 
+## Compare floating point numbers by rounding
+{id: compare-floating-point-numbers-by-rounding}
+{i: round}
+
+![](examples/numbers/compare-floats-by-rounding/src/main.rs)
+![](examples/numbers/compare-floats-by-rounding/out.out)
 
 ## Approximately compare floating point numbers
 {id: approximately-compare-floating-point-numbers}
@@ -74,4 +80,5 @@
 
 ![](examples/numbers/compare-floats-approximately/src/main.rs)
 ![](examples/numbers/compare-floats-approximately/out.out)
+
 
