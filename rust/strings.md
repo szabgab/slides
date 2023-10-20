@@ -200,3 +200,18 @@
 
 ![](examples/strings/to_lower_to_upper.rs)
 
+## Compare strings
+{id: compare-strings}
+{i: cmp}
+{i: Less}
+{i: Equal}
+{i: Greater}
+{i: Ordering}
+
+* We can use the regular `<`, `>`, `==` operators to compare both strings and string slices
+* The `cmp` method returns a value from the [Ordering](https://doc.rust-lang.org/std/cmp/enum.Ordering.html) enum.
+
+![](examples/strings/compare-strings/src/main.rs)
+![](examples/strings/compare-strings/out.out)
+
+
