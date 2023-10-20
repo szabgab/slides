@@ -39,3 +39,19 @@
 
 ![](examples/numbers/floating_point_imprecision.rs)
 ![](examples/numbers/floating_point_imprecision.out)
+
+## Compare integers
+{id: compare-integers}
+{i: cmp}
+{i: Less}
+{i: Greater}
+{i: Equal}
+{i: Ordering}
+
+* We can use the regular `<`, `>`, `==` operators to compare any type of integers assuming the two sides are from the same type.
+* The `cmp` method returns a value from the [Ordering](https://doc.rust-lang.org/std/cmp/enum.Ordering.html) enum.
+
+![](examples/numbers/compare-integers/src/main.rs)
+
+![](examples/numbers/compare-integers/out.out)
+
