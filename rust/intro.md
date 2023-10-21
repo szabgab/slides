@@ -44,6 +44,7 @@
 
 * [Let's Get Rusty](https://letsgetrusty.com/)
 * [noboilerplate](https://github.com/0atman/noboilerplate)
+* [Rust Cookbook](https://rust-lang-nursery.github.io/rust-cookbook/)
 
 
 ## Rust in other languages

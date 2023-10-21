@@ -17,6 +17,7 @@ use std::process::Command;
 const ROOT: &str = "../../..";
 
 fn main() {
+    let verbose = false;
     std::env::set_current_dir(ROOT).unwrap();
     let md_files = get_md_files();
     let imported_files = get_imported_files(md_files);
@@ -36,8 +37,11 @@ fn main() {
     println!("\ncheck_crates");
     let root_folder = std::env::current_dir().unwrap();
     let mut clippy_error = 0;
-    for crate_folder in crates {
-        //println!("crate: {:?}", crate_folder);
+    let number_of_crates = crates.len();
+    for (ix, crate_folder) in crates.iter().enumerate() {
+        if verbose {
+            println!("crate: {}/{}, {:?}", ix, number_of_crates, crate_folder);
+        }
         if crate_folder.clone().into_os_string().into_string().unwrap() == "examples/intro/formatting-required" {
             continue;
         }
@@ -54,7 +58,7 @@ fn main() {
             continue;
         }
 
-        std::env::set_current_dir(&crate_folder).unwrap();
+        std::env::set_current_dir(crate_folder).unwrap();
         //let result = Command::new("cargo")
         //    .arg("fmt")
         //    .arg("--check")
@@ -81,6 +85,8 @@ fn main() {
         }
         std::env::set_current_dir(&root_folder).unwrap();
     }
+    println!("checked all the crates");
+
     if clippy_error > 0 {
         eprintln!("There are {clippy_error} examples with clippy errors.");
         exit(1);

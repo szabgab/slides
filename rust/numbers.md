@@ -81,4 +81,37 @@
 ![](examples/numbers/compare-floats-approximately/src/main.rs)
 ![](examples/numbers/compare-floats-approximately/out.out)
 
+## Complex numbers
+{id: complex-numbers}
+{i: TBD}
+
+* The [num-complex](https://crates.io/crates/num-complex) seems to be the most popular one.
+
+## NaN - Not a Number
+{id: not-a-number}
+{i: NaN}
+{i: sqrt}
+
+* Floating point numbers, [f32](https://doc.rust-lang.org/std/primitive.f32.html) or f64, can also represent a value called NaN or Not a Number.
+* One way to get the number is to take the square root of -1.0.
+* Most operations with a NaN result in NaN.
+* Two NaN values are not equal.
+
+* The `sqrt` (square root) method is not implemented for integers.
+
+![](examples/numbers/not-a-number/src/main.rs)
+![](examples/numbers/not-a-number/out.out)
+
+## Infinite floating point numbers
+{id: infinite-floating-point-numbers}
+{i: inf}
+{i: NaN}
+
+* You get `inf` or `-inf` if you devide by 0.0 or -0.0 respectively.
+* Adding  `inf` to `-inf` yields a `NaN`.
+
+![](examples/numbers/infinite-floating-point-number/src/main.rs)
+![](examples/numbers/infinite-floating-point-number/out.out)
+
+
 
