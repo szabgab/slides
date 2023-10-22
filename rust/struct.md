@@ -159,8 +159,8 @@
 
 * In order for two objects of this type to be equal, all the fields have to be equal.
 
-![](examples/struct/compare-struct-for-equality/src/main.rs)
-![](examples/struct/compare-struct-for-equality/out.out)
+![](examples/struct/compare-structs-for-equality/src/main.rs)
+![](examples/struct/compare-structs-for-equality/out.out)
 
 
 ## Compare structs for Equality - manual implementation
@@ -171,8 +171,8 @@
 
 * The `#[allow(dead_code)]` part is only needed as in this example we never use the `name` field. In real code you will probably not need it.
 
-![](examples/struct/compare-struct-for-equality-manually/src/main.rs)
-![](examples/struct/compare-struct-for-equality-manually/out.out)
+![](examples/struct/compare-structs-for-equality-manually/src/main.rs)
+![](examples/struct/compare-structs-for-equality-manually/out.out)
 
 
 ## Compare structs for partial equality - PartialEq
@@ -182,7 +182,8 @@
 
 * [PartialEq](https://doc.rust-lang.org/std/cmp/trait.PartialEq.html)
 
-![](examples/struct/compare-structs-for-equality/src/main.rs)
+![](examples/struct/compare-structs-for-partial-equality/src/main.rs)
+![](examples/struct/compare-structs-for-partial-equality/out.out)
 
 ## Compare structs for ordering (sorting) - PartialOrd
 {id: compare-structs-for-ordering}

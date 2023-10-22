@@ -1,5 +1,5 @@
 [package]
-name = "compare-struct-for-equality"
+name = "compare-structs-for-equality-manually"
 version = "0.1.0"
 edition = "2021"
 
