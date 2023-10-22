@@ -104,6 +104,8 @@ cargo run 3 '*' 4
 
 ## Default path - return PathBuf
 {id: return-pathbuf}
+{i: PathBuf}
+{i: args}
 
 * The user must supply the path to root and optionally the path to the pages.
 * If the user does not supply the path to the pages then we use root/pages
