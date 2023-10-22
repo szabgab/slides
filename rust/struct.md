@@ -210,3 +210,20 @@
 ![](examples/struct/compare-structs-for-partial-ordering/out.out)
 
 
+## Manually implement ordering
+{id: manually-implement-ordering}
+{i: PartialOrd}
+{i: PartialEq}
+{i: partial_cmp}
+{i: eq}
+
+* In rare case we might want to have an ordering that is not the same as the default implementation of `PartialOrd`. In these cases we can implement it ourselves.
+* For this we need to implement both `PartialEq` and `PartialOrd`.
+* In our case the functions only take into account the `height` field.
+* the `#[allow(dead_code)]` is only needed in this example because we never access the `id` and `name` fields.
+
+![](examples/struct/implement-ordering/src/main.rs)
+
+![](examples/struct/implement-ordering/out.out)
+
+

@@ -3,5 +3,5 @@
 version = 3
 
 [[package]]
-name = "compare-struct-for-equality-manually"
+name = "compare-structs-for-equality-manually"
 version = "0.1.0"
