@@ -142,6 +142,39 @@
 
 ![](examples/struct/default-for-composite-struct/src/main.rs)
 
+
+## Compare structs for Equality
+{id: compare-structs-for-equality}
+{i: Eq}
+{i: PartialEq}
+
+* Each data type in Rust either implements Eq or PartialEq to allow users to check if two objects of the same type are equal using either the `==` operator or the `eq` method.
+* When creating a struct it does not automatically implement these traits, but we can add them.
+* Primitive data types such as `integers` and `strings` implement both Eq and PartialEq.
+* `float` on the other hand only implements PartialEq as a float can also be NaN that would break Eq.
+
+* We can add the `Eq` trait to any struct and if all the elements of the struct implement `Eq` then we can add that too:
+* It will automatically provide us with the possibility to use `==` or `eq` (or `!=` or `ne` for that matter) on the values of that type.
+* However `Eq` is mostly just an indication to the compiler, the actual implementation is in `PartialEq` so we need to add that too.
+
+* In order for two objects of this type to be equal, all the fields have to be equal.
+
+![](examples/struct/compare-struct-for-equality/src/main.rs)
+![](examples/struct/compare-struct-for-equality/out.out)
+
+
+## Compare structs for Equality - manual implementation
+{id: compare-structs-for-equality-manual-implementation}
+{i: PartialEq}
+{i: eq}
+
+
+* The `#[allow(dead_code)]` part is only needed as in this example we never use the `name` field. In real code you will probably not need it.
+
+![](examples/struct/compare-struct-for-equality-manually/src/main.rs)
+![](examples/struct/compare-struct-for-equality-manually/out.out)
+
+
 ## Compare structs for partial equality - PartialEq
 {id: compare-structs-for-partial-equality}
 {i: struct}
@@ -155,6 +188,9 @@
 {id: compare-structs-for-ordering}
 {i: PartialOrd}
 
+* [PartialOrd](https://doc.rust-lang.org/std/cmp/trait.PartialOrd.html)
+
 ![](examples/struct/compare-structs-to-sort/src/main.rs)
 ![](examples/struct/compare-structs-to-sort/out.out)
+
 
