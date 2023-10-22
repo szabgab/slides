@@ -1,5 +1,5 @@
 [package]
-name = "compare-structs-to-sort"
+name = "compare-structs-for-partial-ordering"
 version = "0.1.0"
 edition = "2021"
 

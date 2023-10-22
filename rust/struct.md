@@ -181,17 +181,32 @@
 {i: PartialEq}
 
 * [PartialEq](https://doc.rust-lang.org/std/cmp/trait.PartialEq.html)
+* the trait `Eq` is not implemented for `f32`
 
 ![](examples/struct/compare-structs-for-partial-equality/src/main.rs)
 ![](examples/struct/compare-structs-for-partial-equality/out.out)
 
-## Compare structs for ordering (sorting) - PartialOrd
+
+## Compare structs for ordering (sorting) - Ord
 {id: compare-structs-for-ordering}
+{i: Ord}
+{i: PartialOrd}
+
+* In order to be able to decide which object is "bigger" or "smaller" than the other one we need the `Ord` trait that requires `PartialOrd` trait and the `Eq` and `PartialEq` traits.
+* This will allow use to `sort` the values.
+* Comaring the fields happen in the order the appear in the definition of ths struct. In our case Rust forst compares the 'number' fields. The 'name' fields are only compared if the 'number' fields are equal.
+
+![](examples/struct/compare-structs-for-ordering/src/main.rs)
+![](examples/struct/compare-structs-for-ordering/out.out)
+
+## Compare structs for partial ordering (sorting) - PartialOrd
+{id: compare-structs-for-partial-ordering}
 {i: PartialOrd}
 
 * [PartialOrd](https://doc.rust-lang.org/std/cmp/trait.PartialOrd.html)
+* Neither the `Eq` nor the `Ord` traits are implemented for floats.
 
-![](examples/struct/compare-structs-to-sort/src/main.rs)
-![](examples/struct/compare-structs-to-sort/out.out)
+![](examples/struct/compare-structs-for-partial-ordering/src/main.rs)
+![](examples/struct/compare-structs-for-partial-ordering/out.out)
 
 
