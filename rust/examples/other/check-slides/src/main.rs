@@ -60,6 +60,9 @@ fn main() {
         if crate_folder.clone().into_os_string().into_string().unwrap() == "examples/argv/argv" {
             continue;
         }
+        if crate_folder.clone().into_os_string().into_string().unwrap() == "examples/functions/return-integer" {
+            continue;
+        }
 
         std::env::set_current_dir(crate_folder).unwrap();
         //let result = Command::new("cargo")

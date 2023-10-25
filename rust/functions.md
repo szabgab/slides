@@ -34,20 +34,41 @@
 ![](examples/functions/hello-foo/src/main.rs)
 ![](examples/functions/hello-foo/out.out)
 
-## Rust function return value
+## Rust function return value (integer i32)
 {id: rust-function-return-value}
+{i: return}
+{i: i32}
 
-![](examples/functions/return.rs)
+* After an arrow `->` we can add the type of the return value.
+* We can then return that value by using the `return` statement.
+
+![](examples/functions/return-integer/src/main.rs)
+
+## Return the last expression (no return)
+{id: return-the-last-expression}
+
+* If the last thing in the function is an expression (no semi-colon at the end) then this is the returned value.
+* No need for the `return` statement.
+
+![](examples/functions/return-integer-expression/src/main.rs)
+![](examples/functions/return-integer-expression/out.out)
+
+## Return a string
+{id: return-a-string}
+{i: String}
+
+![](examples/functions/return-string/src/main.rs)
 
 ## Rust recursive functions: factorial
 {id: rust-recursive-functions-factorial}
 
-![](examples/functions/factorial.rs)
+![](examples/functions/factorial/src/main.rs)
+![](examples/functions/factorial/out.out)
 
 ## rust recursive functions: Fibonacci
 {id: rust-recursive-functions-fibonacci}
 
-![](examples/functions/recursive_fibonacci.rs)
+![](examples/functions/recursive-fibonacci/src/main.rs)
 
 ## Make function argument mutable inside the function
 {id: make-function-argument-mutable-inside-the-function}
@@ -66,11 +87,6 @@
 * Statements do not have values and need a semi-colon
 
 ![](examples/functions/statements.rs)
-
-## Implicit return the last expression
-{id: implicit-return-the-last-expression}
-
-![](examples/functions/implicit_return.rs)
 
 ## Increment in a function
 {id: increment-in-a-function}
