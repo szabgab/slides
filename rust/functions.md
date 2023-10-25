@@ -3,18 +3,36 @@
 
 ## Rust main function
 {id: rust-main-function}
+{i: fn}
+{i: main}
 
-![](examples/functions/main.rs)
+* There are two types of crates: Libraries and executables. The latter can also contain libraries.
+* For executable crates we must have a file called `src/main.rs` and it must have a function called `main`
+* This is the most basic definition of a `main` function. It does nothing.
+
+![](examples/functions/main/src/main.rs)
 
 ## Rust hello world function
 {id: rust-hello-world-function}
+{i: fn}
 
-![](examples/functions/hello_world.rs)
+* We can declare functions with other names using the `fn` keyword.
+* The relative location of the functions does not matter. There is no need to defined headers.
 
-## Rust function with parameter
+![](examples/functions/hello-world/src/main.rs)
+
+## Rust function with parameter (&str)
 {id: rust-function-with-parameter}
+{i: &str}
 
-![](examples/functions/hello_foo.rs)
+* Functions can expect parameters.
+* We have to define the type of the parameter.
+* In this case we are expecting a [string slice](https://doc.rust-lang.org/std/primitive.str.html) `&str`.
+* If we already have a string slice we can pass it as it is.
+* If we have a [String](https://doc.rust-lang.org/std/string/struct.String.html) then we have to prefix it with `&`.
+
+![](examples/functions/hello-foo/src/main.rs)
+![](examples/functions/hello-foo/out.out)
 
 ## Rust function return value
 {id: rust-function-return-value}
