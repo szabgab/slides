@@ -1,14 +1,13 @@
-use std::fs::File;
-use std::io::{BufRead, BufReader};
 use sendgrid::SGClient;
 use sendgrid::{Destination, Mail};
-
+use std::fs::File;
+use std::io::{BufRead, BufReader};
 
 fn main() {
     let sendgrid_api_key = get_key();
     let to_address = "szabgab@gmail.com".to_string();
     let to_name = "Gabor Szabo".to_string();
-    let subject = "Test subject".to_string();
+    let subject = "Test mail".to_string();
 
     sendgrid(&sendgrid_api_key, &to_name, &to_address, &subject);
 }
@@ -27,10 +26,10 @@ fn get_key() -> String {
                 }
             }
             panic!("Could not find line");
-        },
+        }
         Err(error) => {
             panic!("Error opening file {}: {}", filename, error);
-        },
+        }
     }
 }
 
@@ -46,9 +45,9 @@ fn sendgrid(api_key: &str, to_name: &str, to_address: &str, subject: &str) {
             name: to_name,
         })
         .add_from("gabor@szabgab.com")
+        .add_from_name("Original Sender")
         .add_subject(subject)
         .add_html("<h1>Hello from SendGrid!</h1>")
-        .add_from_name("Test")
         .add_header("x-cool".to_string(), "indeed")
         .add_x_smtpapi(&x_smtpapi);
 
