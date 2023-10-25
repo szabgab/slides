@@ -42,10 +42,14 @@ fn main() {
         if verbose {
             println!("crate: {}/{}, {:?}", ix, number_of_crates, crate_folder);
         }
-        if crate_folder.clone().into_os_string().into_string().unwrap() == "examples/intro/formatting-required" {
+        let folder = crate_folder.clone().into_os_string().into_string().unwrap();
+        if folder == "examples/intro/formatting-required" {
             continue;
         }
-        if crate_folder.clone().into_os_string().into_string().unwrap() == "examples/intro/print" {
+        if folder == "examples/intro/print" {
+            continue;
+        }
+        if folder == "examples/functions/declare-twice" {
             continue;
         }
 

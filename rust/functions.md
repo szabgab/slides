@@ -66,20 +66,25 @@
 ![](examples/functions/factorial/src/main.rs)
 ![](examples/functions/factorial/out.out)
 
-## rust recursive functions: Fibonacci
+## Rust recursive functions: Fibonacci
 {id: rust-recursive-functions-fibonacci}
 
-![](examples/functions/recursive-fibonacci/src/main.rs)
+![](examples/functions/fibonacci/src/main.rs)
 
 ## Make function argument mutable inside the function
 {id: make-function-argument-mutable-inside-the-function}
+{i: mut}
 
-![](examples/functions/change_argument_inside_function.rs)
+* Sometimes you pass an argument and you would like to change that value inside the function (without chaning the external variable).
+
+![](examples/functions/change-argument-inside-function/src/main.rs)
+![](examples/functions/change-argument-inside-function/out.out)
 
 ## Cannot decalre the same function twice
 {id: cannot-declare-the-same-function-name-twice}
 
-![](examples/functions/add.rs)
+![](examples/functions/declare-twice/src/main.rs)
+![](examples/functions/declare-twice/out.out)
 
 ## Expressions vs statements
 {id: expressions-vs-statement}

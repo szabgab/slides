@@ -1,6 +1,7 @@
 fn main() {
     let n = 1;
     println!("before: {n}");
+
     do_something(n);
     println!("after:  {n}");
 }

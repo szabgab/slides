@@ -1,0 +1,29 @@
+   Compiling declare-twice v0.1.0 (/home/gabor/work/slides/rust/examples/functions/declare-twice)
+error[E0428]: the name `add` is defined multiple times
+  --> src/main.rs:11:1
+   |
+6  | fn add(x: i32, y: i32) {
+   | ---------------------- previous definition of the value `add` here
+...
+11 | fn add(x: &str, y: &str) {
+   | ^^^^^^^^^^^^^^^^^^^^^^^^ `add` redefined here
+   |
+   = note: `add` must be defined only once in the value namespace of this module
+
+error[E0308]: arguments to this function are incorrect
+ --> src/main.rs:3:5
+  |
+3 |     add("x", "y");
+  |     ^^^ ---  --- expected `i32`, found `&str`
+  |         |
+  |         expected `i32`, found `&str`
+  |
+note: function defined here
+ --> src/main.rs:6:4
+  |
+6 | fn add(x: i32, y: i32) {
+  |    ^^^ ------  ------
+
+Some errors have detailed explanations: E0308, E0428.
+For more information about an error, try `rustc --explain E0308`.
+error: could not compile `declare-twice` (bin "declare-twice") due to 2 previous errors
