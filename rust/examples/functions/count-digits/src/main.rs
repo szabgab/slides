@@ -20,7 +20,7 @@ fn count_digits(text: &str) -> [i8; 10] {
 }
 
 fn display(counter: &[i8]) {
-    for ix in 0..counter.len() {
-        println!("{ix}: {}", counter[ix]);
+    for (ix, item) in counter.iter().enumerate() {
+        println!("{ix}: {item}");
     }
 }

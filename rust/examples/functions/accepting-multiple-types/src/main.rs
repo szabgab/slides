@@ -4,7 +4,7 @@
 //fn add(a: i32, b: i32) -> i32 {
 //    a + b
 //}
-//
+
 fn add<T: Into<f64>>(a: T, b: T) -> f64 {
     a.into() + b.into()
 }

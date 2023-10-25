@@ -86,23 +86,41 @@
 ![](examples/functions/declare-twice/src/main.rs)
 ![](examples/functions/declare-twice/out.out)
 
-## Expressions vs statements
-{id: expressions-vs-statement}
-
-* Expressions have a return value do NOT need a trailing semi-colon
-* Statements do not have values and need a semi-colon
-
-![](examples/functions/statements.rs)
-
-## Increment in a function
+## Pass by reference to change external variable - Increment in a function
 {id: increment-in-a-function}
 
-![](examples/functions/increment.rs)
+![](examples/functions/increment/src/main.rs)
+![](examples/functions/increment/out.out)
 
 ## Count digits using functions
 {id: count-digits-functions}
+{i: chars}
+{i: iter}
+{i: enumerate}
 
-![](examples/functions/count_digits.rs)
+![](examples/functions/count-digits/src/main.rs)
+![](examples/functions/count-digits/out.out)
+
+## Function returning multiple values
+{id: function-returning-multiple-values}
+{i: tuple}
+
+* returns a [tuple](https://doc.rust-lang.org/std/primitive.tuple.html)
+
+![](examples/functions/return-multiple-values/src/main.rs)
+![](examples/functions/return-multiple-values/out.out)
+
+## Function accepting multiple types (e.g. any type of numbers)
+{id: function-accepting-multiple-types}
+
+![](examples/functions/accepting-multiple-types/src/main.rs)
+![](examples/functions/accepting-multiple-types/out.out)
+
+## Function that can accept any number (any integer or any float)
+{id: function-to-accept-any-number}
+
+![](examples/functions/any_number/Cargo.toml)
+![](examples/functions/any_number/src/main.rs)
 
 ## Exercise rectangle functions
 {id: exercise-rectangle-functions}
@@ -112,23 +130,6 @@ area and the circumference to the screen.
 
 Simplify it by moving the code that reads the number from STDIN into a function that we call twice. Once for the width and one for the length.
 
-![](examples/functions/rectangle_stdin.rs)
+![](examples/functions/rectangle-stdin/src/main.rs)
 
-## Function returning multiple values
-{id: function-returning-multiple-values}
-
-* returns a tuple
-
-![](examples/functions/return_multiple_values.rs)
-
-## Function accepting multiple types (e.g. any type of numbers)
-{id: function-accepting-multiple-types}
-
-![](examples/functions/accepting_multiple_types.rs)
-
-## Function that can accept any number (any integer or any float)
-{id: function-to-accept-any-number}
-
-![](examples/functions/any_number/Cargo.toml)
-![](examples/functions/any_number/src/main.rs)
 

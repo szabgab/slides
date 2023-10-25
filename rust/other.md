@@ -194,3 +194,14 @@ rustc all.rs
 {id: check-slides}
 
 ![](examples/other/check-slides/src/main.rs)
+
+
+## Expressions vs statements
+{id: expressions-vs-statement}
+
+* Expressions have a return value do NOT need a trailing semi-colon
+* Statements do not have values and need a semi-colon
+
+![](examples/other/statements/src/main.rs)
+
+
