@@ -1,0 +1,13 @@
+error[E0506]: cannot assign to `jane.partner` because it is borrowed
+ --> src/main.rs:8:5
+  |
+7 |     joe.partner = Some(&jane);
+  |                        ----- `jane.partner` is borrowed here
+8 |     jane.partner = Some(&joe);
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^^ `jane.partner` is assigned to here but it was already borrowed
+9 |     dbg!(&joe);
+  |          ---- borrow later used here
+
+For more information about this error, try `rustc --explain E0506`.
+error: could not compile `circural-references` (bin "circural-references") due to previous error
+

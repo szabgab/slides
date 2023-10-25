@@ -4,5 +4,6 @@ fn main() {
 }
 
 fn add(x: i32, y: i32) -> i32 {
+    #[allow(clippy::needless_return)]
     return x + y;
 }

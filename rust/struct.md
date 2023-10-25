@@ -109,7 +109,15 @@
 ## Structs and circural references
 {id: structs-and-circular-references}
 
+* Rust will make sure we cannot create circulare reference in this way.
+* `#[allow(unused_mut)]` is needed to silence clippy, the linter
+
 ![](examples/struct/circural-references/src/main.rs)
+![](examples/struct/circural-references/out.out)
+
+* Try to enable the commented out code and see the error message.
+
+![](examples/struct/circural-references/err.out)
 
 ## Multiple referene to a struct
 {id: multiple-reference-to-a-struct}

@@ -8,6 +8,7 @@
 {i: Vec}
 
 * We load the [std::env](https://doc.rust-lang.org/std/env/) module
+* `#[allow(clippy::needless_range_loop)]` is needed to silence clippy, the linter
 
 ![](examples/argv/argv/src/main.rs)
 
