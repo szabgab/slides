@@ -204,4 +204,17 @@ rustc all.rs
 
 ![](examples/other/statements/src/main.rs)
 
+## Send email via SendGrid
+{id: send-email-via-sendgrid}
+
+![](examples/other/send-mail-with-sendgrid/src/main.rs)
+
+![](examples/other/send-mail-with-sendgrid/Cargo.toml)
+
+With a file called config.txt in the same directy that has:
+
+```
+SENDGRID_API_KEY=SG....
+```
+
 
