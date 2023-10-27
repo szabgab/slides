@@ -4,48 +4,59 @@
 ## Create string
 {id: create-string}
 {i: println!}
+{i: String}
+{i: from}
+{i: to_string}
+{i: to_owned}
 
-![](examples/strings/create.rs)
-![](examples/strings/create.out)
+* The first one is a reference to a string embedded in the program. You can never change this.
+* `String::from` and [to_string](https://doc.rust-lang.org/std/string/trait.ToString.html) trait
+
+![](examples/strings/create/src/main.rs)
+![](examples/strings/create/out.out)
 
 ## Length of string
 {id: length-of-string}
 {i: len}
 
-![](examples/strings/length.rs)
-![](examples/strings/length.out)
+* With the `len` method we can get the length of a string in bytes.
+
+![](examples/strings/length/src/main.rs)
+![](examples/strings/length/out.out)
 
 ## Rust - string slices
 {id: rust-string-slices}
 
-![](examples/strings/slice.rs)
-![](examples/strings/slice.out)
+![](examples/strings/slice/src/main.rs)
+![](examples/strings/slice/out.out)
 
 ## Rust - string characters
 {id: rust-string-character}
 {i: chars}
 
-![](examples/strings/characters.rs)
-![](examples/strings/characters.out)
+![](examples/strings/characters/src/main.rs)
+![](examples/strings/characters/out.out)
 
 ## Rust - string ends with
 {id: rust-string-ends-with}
 {i: ends_with}
 
-![](examples/strings/ends_with.rs)
-![](examples/strings/ends_with.out)
+![](examples/strings/ends-with/src/main.rs)
+![](examples/strings/ends-with/out.out)
 
 ## Rust - string starts with
 {id: rust-string-starts-with}
 {i: starts_with}
 
-![](examples/strings/starts_with.rs)
-![](examples/strings/starts_with.out)
+![](examples/strings/starts-with/src/main.rs)
+![](examples/strings/starts-with/out.out)
 
 ## Iterate over the characters of a string
 {id: iterate-over-characters}
+{i: chars}
 
-![](examples/strings/iterate.rs)
+![](examples/strings/iterate/src/main.rs)
+![](examples/strings/iterate/out.out)
 
 
 ## Rust - reverse string

@@ -25,6 +25,9 @@ fn main() {
 
     let mut count = 0;
     for filename in examples {
+        if filename.ends_with("swp") {
+            continue;
+        }
         if !imported_files.contains(&filename) {
             println!("ERROR Unused file: `{}`", filename);
             count += 1;
@@ -119,6 +122,7 @@ fn get_all_the_examples() -> Vec<String> {
     let exclude: Vec<String> = [
         "examples/image/create-image/image.png",
         "examples/other/multi_counter_with_manual_csv/counter.csv",
+        "examples/other/send-mail-with-sendgrid/config.txt",
     ]
     .iter()
     .map(|path| path.to_string())
