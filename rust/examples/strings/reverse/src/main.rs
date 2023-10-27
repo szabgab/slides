@@ -8,5 +8,5 @@ fn main() {
 
 fn reverse(text: &str) -> String {
     let reversed: String = text.chars().rev().collect();
-    return reversed;
+    reversed
 }

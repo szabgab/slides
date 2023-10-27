@@ -65,35 +65,35 @@
 {i: rev}
 {i: collect}
 
-![](examples/strings/reverse.rs)
-![](examples/strings/reverse.out)
+![](examples/strings/reverse/src/main.rs)
+![](examples/strings/reverse/out.out)
 
 
 ## Concatenation str with str
 {id: concatetation-str-with-str}
 
-![](examples/strings/concatenation_str_with_str.rs)
-![](examples/strings/concatenation_str_with_str.out)
+![](examples/strings/concatenation-str-with-str/src/main.rs)
+![](examples/strings/concatenation-str-with-str/out.out)
 
 ## Concatenation String with String
 {id: concatetation-string-with-string}
 
 
-![](examples/strings/concatenation_string_with_string.rs)
-![](examples/strings/concatenation_string_with_string.out)
+![](examples/strings/concatenation-string-with-string/src/main.rs)
+![](examples/strings/concatenation-string-with-string/out.out)
 
 ## Concatenation String with String (clone)
 {id: concatetation-string-with-string-clone}
 {i: clone}
 
-![](examples/strings/concatenation_string_with_string_clone.rs)
-![](examples/strings/concatenation_string_with_string_clone.out)
+![](examples/strings/concatenation-string-with-string-clone/src/main.rs)
+![](examples/strings/concatenation-string-with-string-clone/out.out)
 
 ## Concatenation String with str
 {id: concatetation-string-with-str}
 
-![](examples/strings/concatenation_string_with_str.rs)
-![](examples/strings/concatenation_string_with_str.out)
+![](examples/strings/concatenation-string-with-str/src/main.rs)
+![](examples/strings/concatenation-string-with-str/out.out)
 
 ## Concatenate strings using format!
 {id: concatenate-strings-using-format}
@@ -101,8 +101,8 @@
 
 * In this case all the strings are copied so it is less efficient than where we move the string, but this means we can continue to use the original variables.
 
-![](examples/strings/concatenation_with_format.rs)
-![](examples/strings/concatenation_with_format.out)
+![](examples/strings/concatenation-with-format/src/main.rs)
+![](examples/strings/concatenation-with-format/out.out)
 
 ## concat
 {id: concat}
