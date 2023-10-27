@@ -108,30 +108,31 @@
 {id: concat}
 {i: concat}
 
-![](examples/strings/concat.rs)
-![](examples/strings/concat.out)
+![](examples/strings/concat/src/main.rs)
+![](examples/strings/concat/out.out)
 
 ## Split string
 {id: split-string}
 {i: split}
 
-![](examples/strings/split_string.rs)
-![](examples/strings/split_string.out)
+![](examples/strings/split-string/src/main.rs)
+![](examples/strings/split-string/out.out)
 
 ## Split string on whitespace
 {id: split-string-on-whitespace}
 {i: split_whitespace}
 
-![](examples/strings/split_string_whitespace.rs)
-![](examples/strings/split_string_whitespace.out)
+![](examples/strings/split-string-whitespace/src/main.rs)
+![](examples/strings/split-string-whitespace/out.out)
 
 ## Append to string with push_str
 {id: append-to-string-with-push-str}
+{i: push}
 {i: push_str}
 {i: to_string}
 
-![](examples/strings/append_to_string.rs)
-![](examples/strings/append_to_string.out)
+![](examples/strings/append-to-string/src/main.rs)
+![](examples/strings/append-to-string/out.out)
 
 ## Create String from literal string using to_string
 {id: create-string-from-literal-string}
@@ -139,14 +140,14 @@
 
 * [ToString](https://doc.rust-lang.org/std/string/trait.ToString.html) is a trait that can convert anything to a String.
 
-![](examples/strings/to_string.rs)
-![](examples/strings/to_string.out)
+![](examples/strings/to-string/src/main.rs)
+![](examples/strings/to-string/out.out)
 
 ## Str and String equality
 {id: str-string-equality}
 
-![](examples/strings/str_string_equality.rs)
-![](examples/strings/str_string_equality.out)
+![](examples/strings/str-string-equality/src/main.rs)
+![](examples/strings/str-string-equality/out.out)
 
 ## String notes
 {id: string-notes}
@@ -159,8 +160,8 @@
 {id: string-replace}
 {i: replace}
 
-![](examples/strings/replace.rs)
-![](examples/strings/replace.out)
+![](examples/strings/replace/src/main.rs)
+![](examples/strings/replace/out.out)
 
 ## String replace limited times
 {id: string-replacen}

@@ -2,7 +2,7 @@ fn main() {
     let mut text = String::from("");
     println!("{text}");
 
-    text.push_str("a");
+    text.push('a');
     println!("{text}");
 
     text.push_str("bcd");
