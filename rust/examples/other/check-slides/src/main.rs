@@ -67,6 +67,12 @@ fn main() {
         if folder == "examples/variables/cannot-change-type" {
             continue;
         }
+        if folder == "examples/tuples/empty" {
+            continue;
+        }
+        if folder == "examples/tuples/change-tuple" {
+            continue;
+        }
 
         std::env::set_current_dir(crate_folder).unwrap();
         //let result = Command::new("cargo")
