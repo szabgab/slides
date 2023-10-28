@@ -65,7 +65,7 @@
 * This expersssion must have an `else` part!
 * The last statement in both the `if` and the `else` part has no `;` at the end and thus they are called `expressions` and not `statements`.
 
-![](examples/booleans/if_returns_value.rs)
+![](examples/booleans/if-returns-value/src/main.rs)
 
 ## Conditional (Ternary) operator
 {id: ternary-operator}
@@ -73,8 +73,8 @@
 {i: if else}
 
 
-![](examples/booleans/ternary.rs)
-![](examples/booleans/ternary.out)
+![](examples/booleans/ternary/src/main.rs)
+![](examples/booleans/ternary/out.out)
 
 ## match
 {id: match}
@@ -83,12 +83,12 @@
 
 * Similar to case or switch in other languages, `match` provides several `arms`.
 
-![](examples/booleans/match.rs)
-![](examples/booleans/match.out)
+![](examples/booleans/match-operator/src/main.rs)
+![](examples/booleans/match-operator/out.out)
 
 ## match with conditions
 {id: match-with-conditions}
 
-![](examples/booleans/match_with_conditions.rs)
-![](examples/booleans/match_with_conditions.out)
+![](examples/booleans/match-with-conditions/src/main.rs)
+![](examples/booleans/match-with-conditions/out.out)
 
