@@ -12,42 +12,42 @@
 
 * Make the copy mutable
 
-![](examples/ownership/integers.rs)
-![](examples/ownership/integers.out)
+![](examples/ownership/integers/src/main.rs)
+![](examples/ownership/integers/out.out)
 
 ## Passing integers to functions and returning integer
 {id: passing-integers-to-functions-and-returning-integer}
 
-![](examples/ownership/integers_in_function.rs)
-![](examples/ownership/integers_in_function.out)
+![](examples/ownership/integers-in-function/src/main.rs)
+![](examples/ownership/integers-in-function/out.out)
 
 ## Mutable integers are copies
 {id: mutable-integers-are-copies}
 
 * Both are mutable
 
-![](examples/ownership/mutable_integers.rs)
-![](examples/ownership/mutable_integers.out)
+![](examples/ownership/mutable-integers/src/main.rs)
+![](examples/ownership/mutable-integers/out.out)
 
 ## Immutable integers are copies
 {id: immutable-integer-are-copies}
 
 * Only the original is mutable, the copy is not
 
-![](examples/ownership/immutable_integer.rs)
-![](examples/ownership/immutable_integer.out)
+![](examples/ownership/immutable-integer/src/main.rs)
+![](examples/ownership/immutable-integer/out.out)
 
 ## Pass integer to function return changed value
 {id: pass-integer-to-function-return-changed-value}
 
-![](examples/ownership/mutable_integers_in_function_return.rs)
-![](examples/ownership/mutable_integers_in_function_return.out)
+![](examples/ownership/mutable-integers-in-function-return/src/main.rs)
+![](examples/ownership/mutable-integers-in-function-return/out.out)
 
 ## Pass mutable reference of integer to function
 {id: pass-mutable-reference-of-inteher-to-function}
 
-![](examples/ownership/mutable_integers_in_function.rs)
-![](examples/ownership/mutable_integers_in_function.out)
+![](examples/ownership/mutable-integers-in-function/src/main.rs)
+![](examples/ownership/mutable-integers-in-function/out.out)
 
 
 ## Literal string
