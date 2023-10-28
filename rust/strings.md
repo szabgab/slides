@@ -191,27 +191,29 @@
 
 * take ownership
 
-![](examples/strings/take_ownership.rs)
+![](examples/strings/take-ownership/src/main.rs)
+![](examples/strings/take-ownership/out.out)
 
 * borrow
 
-![](examples/strings/borrow.rs)
+![](examples/strings/borrow/src/main.rs)
 
 * give ownership
 
-![](examples/strings/give_ownership.rs)
+![](examples/strings/give-ownership/src/main.rs)
 
 ## Slice and change string
 {id: slice-and-change-string}
 
-![](examples/strings/slice_and_change.rs)
+![](examples/strings/slice-and-change/src/main.rs)
 
 ## To lower, to upper case
 {id: to-lowercase}
 {i: to_lowercase}
 {i: to_uppercase}
 
-![](examples/strings/to_lower_to_upper.rs)
+![](examples/strings/to-lower-to-upper/src/main.rs)
+![](examples/strings/to-lower-to-upper/out.out)
 
 ## Compare strings
 {id: compare-strings}
