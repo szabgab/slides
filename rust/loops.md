@@ -19,7 +19,7 @@ Two loop controls
 
 * We usually use a `while` loop if we don't know how many iterations we'll have to do.
 
-![](examples/loops/while.rs)
+![](examples/loops/while-loop/src/main.rs)
 
 ## Rust: loop with break
 {id: rust-loop-with-break}
@@ -29,7 +29,7 @@ Two loop controls
 * If we cannot have the condition at the top in some languages we write `while true`. In Rust we use `loop`.
 * We better have a condition with a `break` or we create an infinite loop!
 
-![](examples/loops/loop.rs)
+![](examples/loops/loop-loop/src/main.rs)
 
 ## for loop in Rust
 {id: rust-for-loop}
@@ -40,7 +40,7 @@ Two loop controls
 * `1..5` means the right-hand limit is NOT included.
 * `1..=5` means the right-hand limit is included
 
-![](examples/loops/for_loop.rs)
-![](examples/loops/for_loop.out)
+![](examples/loops/for-loop/src/main.rs)
+![](examples/loops/for-loop/out.out)
 
 
