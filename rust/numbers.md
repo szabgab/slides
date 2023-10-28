@@ -7,38 +7,38 @@
 
 * The division keeps the type so dividing one integer by another integer will always return an integer.
 
-![](examples/numbers/calc.rs)
-![](examples/numbers/calc.out)
+![](examples/numbers/calc/src/main.rs)
+![](examples/numbers/calc/out.out)
 
 ## Increment integers
 {id: increment-integers}
 
-![](examples/numbers/increment.rs)
-![](examples/numbers/increment.out)
+![](examples/numbers/increment/src/main.rs)
+![](examples/numbers/increment/out.out)
 
 ## unfit in i8 - compile time
 {id: unfit-in-i8-compile-time}
 
-![](examples/numbers/small_integers_unfit_in_i8.rs)
-![](examples/numbers/small_integers_unfit_in_i8.out)
+![](examples/numbers/small-integers-unfit-in-i8/src/main.rs)
+![](examples/numbers/small-integers-unfit-in-i8/out.out)
 
 ## unfit in i8 - run time
 {id: unfit-in-i8-run-time}
 
-![](examples/numbers/increment_small_integers.rs)
-![](examples/numbers/increment_small_integers.out)
+![](examples/numbers/increment-small-integers/src/main.rs)
+![](examples/numbers/increment-small-integers/out.out)
 
 ## rounding float
 {id: rounding-float}
 
-![](examples/numbers/rounding_float.rs)
-![](examples/numbers/rounding_float.out)
+![](examples/numbers/rounding-float/src/main.rs)
+![](examples/numbers/rounding-float/out.out)
 
 ## Floating point imprecision
 {id: floating-point-imprecision}
 
-![](examples/numbers/floating_point_imprecision.rs)
-![](examples/numbers/floating_point_imprecision.out)
+![](examples/numbers/floating-point-imprecision/src/main.rs)
+![](examples/numbers/floating-point-imprecision/out.out)
 
 ## Compare integers
 {id: compare-integers}

@@ -1,3 +1,4 @@
+#[allow(clippy::assign_op_pattern)]
 fn main() {
     let mut x: i8 = 126;
     println!("{x}");

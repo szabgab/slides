@@ -56,6 +56,8 @@ fn main() {
             "examples/variables/cannot-change-type",
             "examples/tuples/empty",
             "examples/tuples/change-tuple",
+            "examples/numbers/small-integers-unfit-in-i8",
+            "examples/numbers/rounding-float",
         ].into_iter().map(|x| x.to_string()).collect::<String>();
         if folders.contains(&folder) {
             continue;
