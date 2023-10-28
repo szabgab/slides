@@ -49,29 +49,15 @@ fn main() {
         let folders = vec![
             "examples/intro/formatting-required",
             "examples/intro/print",
+            "examples/functions/declare-twice",
+            "examples/variables/change-literal-string",
+            "examples/variables/immutable-string",
+            "examples/variables/immutable-number",
+            "examples/variables/cannot-change-type",
+            "examples/tuples/empty",
+            "examples/tuples/change-tuple",
         ].into_iter().map(|x| x.to_string()).collect::<String>();
         if folders.contains(&folder) {
-            continue;
-        }
-        if folder == "examples/functions/declare-twice" {
-            continue;
-        }
-        if folder == "examples/variables/change-literal-string" {
-            continue;
-        }
-        if folder == "examples/variables/immutable-string" {
-            continue;
-        }
-        if folder == "examples/variables/immutable-number" {
-            continue;
-        }
-        if folder == "examples/variables/cannot-change-type" {
-            continue;
-        }
-        if folder == "examples/tuples/empty" {
-            continue;
-        }
-        if folder == "examples/tuples/change-tuple" {
             continue;
         }
 
