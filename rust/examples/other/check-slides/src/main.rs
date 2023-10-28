@@ -47,9 +47,9 @@ fn main() {
         }
         let folder = crate_folder.clone().into_os_string().into_string().unwrap();
         let folders = vec![
-            "examples/intro/formatting-required".to_string(),
-            "examples/intro/print".to_string(),
-        ];
+            "examples/intro/formatting-required",
+            "examples/intro/print",
+        ].into_iter().map(|x| x.to_string()).collect::<String>();
         if folders.contains(&folder) {
             continue;
         }
