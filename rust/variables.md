@@ -65,8 +65,8 @@
 ## Cannot change variable type
 {id: cannot-change-variable-type}
 
-![](examples/variables/cannot_change_type.rs)
-![](examples/variables/cannot_change_type.out)
+![](examples/variables/cannot-change-type/src/main.rs)
+![](examples/variables/cannot-change-type/out.out)
 
 ## Redeclare immutable variable - Shadowing
 {id: rust-redeclared-immutable-variable}
@@ -75,8 +75,8 @@
 * You can actually change even an immutable variable by declaring it again.
 * It can be useful if you need to make a few changes and then later no more changes.
 
-![](examples/variables/shadow.rs)
-![](examples/variables/shadow.out)
+![](examples/variables/shadow/src/main.rs)
+![](examples/variables/shadow/out.out)
 
 ## Redeclare immutable variable and change type - Shadowing
 {id: rust-redeclared-immutable-variable-change-type}
@@ -85,7 +85,7 @@
 * We don't even need to make it mutable.
 * e.g. we read from a file or from STDIN a string that we then convert to a number. We can use the same variable name.
 
-![](examples/variables/change_type.rs)
-![](examples/variables/change_type.out)
+![](examples/variables/change-type/src/main.rs)
+![](examples/variables/change-type/out.out)
 
 

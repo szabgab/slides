@@ -64,6 +64,9 @@ fn main() {
         if folder == "examples/variables/immutable-number" {
             continue;
         }
+        if folder == "examples/variables/cannot-change-type" {
+            continue;
+        }
 
         std::env::set_current_dir(crate_folder).unwrap();
         //let result = Command::new("cargo")
