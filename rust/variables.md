@@ -7,8 +7,8 @@
 
 * Variables in Rust are immutable by default.
 
-![](examples/variables/number_immutable.rs)
-![](examples/variables/number_immutable.out)
+![](examples/variables/immutable-number/src/main.rs)
+![](examples/variables/immutable-number/out.out)
 
 ## Number in a mutable variable
 {id: rust-number-in-a-mutable-variable}
@@ -17,8 +17,8 @@
 
 * You can make them mutable by adding the `mut` keyword to the declaration
 
-![](examples/variables/number_mutable.rs)
-![](examples/variables/number_mutable.out)
+![](examples/variables/mutable-number/src/main.rs)
+![](examples/variables/mutable-number/out.out)
 
 ## Literal strings in variables are immutable
 {id: literal-strings-in-variables-are-immutable}
@@ -27,8 +27,8 @@
 * Literal strings and changeable strings are stored differently in Rust.
 * Literal strings stored in a variable are immutable.
 
-![](examples/variables/immutable_string.rs)
-![](examples/variables/immutable_string.out)
+![](examples/variables/immutable-string/src/main.rs)
+![](examples/variables/immutable-string/out.out)
 
 ## Literal string in a mutable variable can be replaced
 {id: a-literal-string-in-mutable-variable}
@@ -39,8 +39,8 @@
 * That way we can replace the string...
 
 
-![](examples/variables/mutable_string.rs)
-![](examples/variables/mutable_string.out)
+![](examples/variables/mutable-string/src/main.rs)
+![](examples/variables/mutable-string/out.out)
 
 ## A literal string cannot be changed
 {id: a-literal-string-cannot-be-changed}
@@ -48,8 +48,8 @@
 
 * ...but we cannot really change it.
 
-![](examples/variables/change_literal_string.rs)
-![](examples/variables/change_literal_string.out)
+![](examples/variables/change-literal-string/src/main.rs)
+![](examples/variables/change-literal-string/out.out)
 
 ## Really mutable string
 {id: really-mutable-string}
@@ -59,8 +59,8 @@
 
 * We can create a really mutable string using the `String::from` function.
 
-![](examples/variables/really_mutable_string.rs)
-![](examples/variables/really_mutable_string.out)
+![](examples/variables/really-mutable-string/src/main.rs)
+![](examples/variables/really-mutable-string/out.out)
 
 ## Cannot change variable type
 {id: cannot-change-variable-type}

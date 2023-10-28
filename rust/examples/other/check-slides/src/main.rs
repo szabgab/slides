@@ -55,6 +55,15 @@ fn main() {
         if folder == "examples/functions/declare-twice" {
             continue;
         }
+        if folder == "examples/variables/change-literal-string" {
+            continue;
+        }
+        if folder == "examples/variables/immutable-string" {
+            continue;
+        }
+        if folder == "examples/variables/immutable-number" {
+            continue;
+        }
 
         std::env::set_current_dir(crate_folder).unwrap();
         //let result = Command::new("cargo")
