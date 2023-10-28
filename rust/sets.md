@@ -15,18 +15,18 @@
 {i: remove}
 {i: contains}
 
-![](examples/sets/basic_set_operations.rs)
-![](examples/sets/basic_set_operations.out)
+![](examples/sets/basic-set-operations/src/main.rs)
+![](examples/sets/basic-set-operations/out.out)
 
 ## Union
 {id: union}
 {i: union}
 
-![](examples/sets/union.rs)
+![](examples/sets/union/src/main.rs)
 
 ## Difference
 {id: difference}
 {i: difference}
 
-![](examples/sets/difference.rs)
+![](examples/sets/difference/src/main.rs)
 
