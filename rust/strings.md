@@ -167,22 +167,23 @@
 {id: string-replacen}
 {i: replacen}
 
-![](examples/strings/replacen.rs)
-![](examples/strings/replacen.out)
+![](examples/strings/replacen/src/main.rs)
+![](examples/strings/replacen/out.out)
 
 ## String replace range
 {id: string-replace-range}
 {i: replace_range}
 
 
-![](examples/strings/replace_range.rs)
-![](examples/strings/replace_range.out)
+![](examples/strings/replace-range/src/main.rs)
+![](examples/strings/replace-range/out.out)
 
 
 ## Function to combine two strings
 {id: function-to-combine-two-strings}
 
-![](examples/strings/combine.rs)
+![](examples/strings/combine/src/main.rs)
+![](examples/strings/combine/out.out)
 
 
 ## Ownership and strings
