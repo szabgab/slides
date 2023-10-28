@@ -46,10 +46,11 @@ fn main() {
             println!("crate: {}/{}, {:?}", ix, number_of_crates, crate_folder);
         }
         let folder = crate_folder.clone().into_os_string().into_string().unwrap();
-        if folder == "examples/intro/formatting-required" {
-            continue;
-        }
-        if folder == "examples/intro/print" {
+        let folders = vec![
+            "examples/intro/formatting-required".to_string(),
+            "examples/intro/print".to_string(),
+        ];
+        if folders.contains(&folder) {
             continue;
         }
         if folder == "examples/functions/declare-twice" {
