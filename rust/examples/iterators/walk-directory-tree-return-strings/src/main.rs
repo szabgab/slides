@@ -30,7 +30,7 @@ impl Iterator for Walk {
     type Item = String;
 
     fn next(&mut self) -> Option<Self::Item> {
-        if self.rds.len() == 0 {
+        if self.rds.is_empty() {
             //println!("empty rds");
             return None;
         }
@@ -53,7 +53,7 @@ impl Iterator for Walk {
                         return Some(dir_entry.path().to_str().unwrap().to_string());
                     },
                     Err(_err) =>  {
-                        return None
+                        None
                     },
                 }
             },

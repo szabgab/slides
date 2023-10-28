@@ -8,7 +8,7 @@ impl Counter {
     fn new(limit: u32) -> Counter {
         Counter {
             current: 0,
-            limit: limit,
+            limit,
         }
     }
 }
