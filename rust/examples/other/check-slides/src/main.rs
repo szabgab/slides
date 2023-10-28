@@ -58,6 +58,7 @@ fn main() {
             "examples/tuples/change-tuple",
             "examples/numbers/small-integers-unfit-in-i8",
             "examples/numbers/rounding-float",
+            "examples/booleans/other",
         ].into_iter().map(|x| x.to_string()).collect::<String>();
         if folders.contains(&folder) {
             continue;

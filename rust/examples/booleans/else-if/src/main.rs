@@ -1,3 +1,4 @@
+#[allow(clippy::comparison_chain)]
 fn main() {
     let x = 23;
     let y = 32;

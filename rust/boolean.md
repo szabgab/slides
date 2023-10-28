@@ -5,16 +5,16 @@
 {id: rust-conditional-if}
 {i: if}
 
-![](examples/booleans/if.rs)
-![](examples/booleans/if.out)
+![](examples/booleans/condition-if/src/main.rs)
+![](examples/booleans/condition-if/out.out)
 
 ## Conditional: if - else
 {id: rust-conditional-if-else}
 {i: if}
 {i: else}
 
-![](examples/booleans/if_else.rs)
-![](examples/booleans/if_else.out)
+![](examples/booleans/if-else/src/main.rs)
+![](examples/booleans/if-else/out.out)
 
 ## Conditional: else - if
 {id: rust-conditional-else-if}
@@ -25,28 +25,28 @@
 
 * The code pathes in an if-else-if statement are called "arms".
 
-![](examples/booleans/else_if.rs)
-![](examples/booleans/else_if.out)
+![](examples/booleans/else-if/src/main.rs)
+![](examples/booleans/else-if/out.out)
 
 ## Rust: boolean values true and false
 {id: rust-boolean-values}
 {i: true}
 {i: false}
 
-![](examples/booleans/bool.rs)
-![](examples/booleans/bool.out)
+![](examples/booleans/bool/src/main.rs)
+![](examples/booleans/bool/out.out)
 
 ## Assign result of conditional to variable
 {id: assign-result-to-variable}
 
-![](examples/booleans/assign_result_to_variable.rs)
-![](examples/booleans/assign_result_to_variable.out)
+![](examples/booleans/assign-result-to-variable/src/main.rs)
+![](examples/booleans/assign-result-to-variable/out.out)
 
 ## Rust: other types don't have true/false values
 {id: rust-boolean-only}
 
-![](examples/booleans/other.rs)
-![](examples/booleans/other.out)
+![](examples/booleans/other/src/main.rs)
+![](examples/booleans/other/out.out)
 
 * expected `bool`, found integer
 
@@ -56,8 +56,8 @@
 
 * ! is the not-operator
 
-![](examples/booleans/toggle.rs)
-![](examples/booleans/toggle.out)
+![](examples/booleans/toggle/src/main.rs)
+![](examples/booleans/toggle/out.out)
 
 ## if-else returns a value
 {id: if-else-returns-value}
