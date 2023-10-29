@@ -108,7 +108,7 @@
 
 * [current_dir](https://doc.rust-lang.org/std/env/fn.current_dir.html)
 
-![](examples/files/pwd.rs)
+![](examples/files/pwd/src/main.rs)
 
 ## Change directory
 {id: change-directory}
@@ -117,29 +117,29 @@
 {i: cd}
 
 
-![](examples/files/chdir.rs)
+![](examples/files/chdir/src/main.rs)
 
 ## open file error handling
 {id: open-file-error-handling}
 
-![](examples/files/open_file_handling.rs)
+![](examples/files/open-file-handling/src/main.rs)
 
 ## Appand to file
 {id: append-to-file}
 
-![](examples/files/append.rs)
+![](examples/files/append/src/main.rs)
 
 ## Show size of file
 {id: show-size-of-file}
 {i: size}
 {i: len}
 
-![](examples/files/show_size_of_file.rs)
+![](examples/files/show-size-of-file/src/main.rs)
 
 ## du - disk usage
 {id: du}
 
-![](examples/files/du.rs)
+![](examples/files/du/src/main.rs)
 
 ## get file extension
 {id: get-file-extension}
