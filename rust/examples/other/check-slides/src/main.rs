@@ -63,6 +63,7 @@ fn main() {
             "examples/files/list-tree",  // TODO
             "examples/files/open-file-handling", // TODO
             "examples/arrays/numbers-change",
+            "examples/types/type-mismatch",
         ].into_iter().map(|x| x.to_string()).collect::<String>();
         if folders.contains(&folder) {
             continue;

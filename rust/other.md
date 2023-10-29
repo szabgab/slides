@@ -47,8 +47,8 @@ Somthing that looks like a function but ends with an exclamation point. e.g. `pr
 
 * Every block creates a scope
 
-![](examples/intro/scope.rs)
-![](examples/intro/scope.out)
+![](examples/other/scope/src/main.rs)
+![](examples/other/scope/out.out)
 
 ## Declare empty variable and assign to it later
 {id: assign-to-variable-later}
@@ -59,8 +59,8 @@ Somthing that looks like a function but ends with an exclamation point. e.g. `pr
 ## Declare empty variable - requires type
 {id: declare-empty-variable}
 
-![](examples/intro/empty_string.rs)
-![](examples/intro/empty_string.out)
+![](examples/other/empty-string/src/main.rs)
+![](examples/other/empty-string/out.out)
 
 
 ## SystemTime now
