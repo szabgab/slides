@@ -53,7 +53,7 @@ Somthing that looks like a function but ends with an exclamation point. e.g. `pr
 ## Declare empty variable and assign to it later
 {id: assign-to-variable-later}
 
-![](examples/other/assign_later.rs)
+![](examples/other/assign-later/src/main.rs)
 
 
 ## Declare empty variable - requires type
@@ -66,7 +66,7 @@ Somthing that looks like a function but ends with an exclamation point. e.g. `pr
 ## SystemTime now
 {id: systemtime-now}
 
-![](examples/other/now.rs)
+![](examples/other/now/src/main.rs)
 
 ## Exit
 {id: exit}
@@ -74,7 +74,7 @@ Somthing that looks like a function but ends with an exclamation point. e.g. `pr
 
 * [Function std::process::exit](https://doc.rust-lang.org/std/process/fn.exit.html)
 
-![](examples/other/exit.rs)
+![](examples/other/exit/src/main.rs)
 
 ```
 echo $?
@@ -84,7 +84,7 @@ echo %ERROR_LEVEL%
 ## Define multiple variables
 {id: define-multiple-variables}
 
-![](examples/other/define_multiple_variables.rs)
+![](examples/other/define-multiple-variables/src/main.rs)
 
 ## wc
 {id: wc}
@@ -122,14 +122,14 @@ rustc all.rs
 * As you can see in the following example we can pass arguments to a "different" type as long as it is an alias to the same type.
 * [type](https://doc.rust-lang.org/std/keyword.type.html)
 
-![](examples/other/type_alias.rs)
+![](examples/other/type-alias/src/main.rs)
 
 ## Solution: Age limit
 {id: solution-age-limit}
 
-![](examples/other/age_limit_18.rs)
-![](examples/other/age_limit_18_21.rs)
-![](examples/other/age_limit_anywhere.rs)
+![](examples/other/age-limit-18/src/main.rs)
+![](examples/other/age-limit-18-21/src/main.rs)
+![](examples/other/age-limit-anywhere/src/main.rs)
 
 ## Multi-counter in manually handled CSV file
 {id: multi-counter-in-manually-handled-csv-file}
@@ -142,7 +142,7 @@ rustc all.rs
 {id: get-path-to-current-executable}
 {i: current_exe}
 
-![](examples/other/current_executable.rs)
+![](examples/other/current-executable/src/main.rs)
 
 ## cache dependencies with sccache
 {id: cache-dependencies}

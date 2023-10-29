@@ -11,9 +11,9 @@ fn main() {
         .read_line(&mut age)
         .expect("Faild to get input");
 
-    let age: f32 = age.trim().parse().expect(&format!("Could not convert '{age}' to floating point number"));
+    let age: f32 = age.trim().parse().unwrap_or_else(|_| panic!("Could not convert '{age}' to floating point number"));
     if age < 18.0 {
-        println!("You ar under 18. You cannot legally drink alcohol!");
+        println!("You are under 18. You cannot legally drink alcohol!");
     } else if age >= 21.0 {
         println!("Congratulations, you can legally drink alcohol! Even in the USA.");
     } else {

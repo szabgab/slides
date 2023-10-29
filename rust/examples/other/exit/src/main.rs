@@ -1,7 +1,7 @@
 use std::process;
 
 fn main() {
-    let early_exit = fals;
+    let early_exit = false;
 
     if early_exit {
         println!("Early exit");
