@@ -4,4 +4,4 @@
 ## Enumeration
 {id: enumeration}
 
-![](examples/enums/weekdays.rs)
+![](examples/enums/weekdays/src/main.rs)

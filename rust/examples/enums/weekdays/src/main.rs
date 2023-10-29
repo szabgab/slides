@@ -1,3 +1,5 @@
+#[derive(PartialEq)]
+#[allow(dead_code)]
 enum Weekday {
     Monday,
     Tuesday,

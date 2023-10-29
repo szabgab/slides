@@ -1,3 +1,4 @@
+#[allow(clippy::approx_constant)]
 fn main() {
     const NAME: &str = "Foo";
     println!("{}", NAME);

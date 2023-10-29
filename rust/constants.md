@@ -10,15 +10,15 @@
 * Must have type declaration.
 * Name must be `UPPER_CASE`.
 
-![](examples/constants/constant.rs)
-![](examples/constants/constant.out)
+![](examples/constants/constant/src/main.rs)
+![](examples/constants/constant/out.out)
 
 
 ## Constant shadowing
 {id: constant-shadowing}
 {i: const}
 
-![](examples/constants/constant_shadowing.rs)
-![](examples/constants/constant_shadowing.out)
+![](examples/constants/constant-shadowing/src/main.rs)
+![](examples/constants/constant-shadowing/out.out)
 
 
