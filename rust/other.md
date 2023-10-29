@@ -5,18 +5,28 @@
 {id: variable-shadowing}
 {i: let}
 
-![](examples/other/shadowing.rs)
+![](examples/other/shadowing/src/main.rs)
 
 ## String formatting
 {id: string-formatting}
 {i: format}
 {i: sprintf}
 
-![](examples/intro/string_formatting.rs)
+![](examples/other/string-formatting/src/main.rs)
 
-![](examples/functions/reverse.rs)
-![](examples/functions/square_root.rs)
-![](examples/other/collect.rs)
+![](examples/other/reverse/src/main.rs)
+![](examples/other/reverse/out.out)
+
+![](examples/other/collect/src/main.rs)
+
+## Factorial functions returning Result
+{id: factorial-function-returning-result}
+{i: Restult}
+{i: Ok}
+{i: Err}
+
+![](examples/other/factorial-returning-result/src/main.rs)
+![](examples/other/factorial-returning-result/out.out)
 
 ## Macros
 {id: macros}

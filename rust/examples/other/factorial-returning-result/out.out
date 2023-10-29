@@ -1,0 +1,7 @@
+0! = Ok(1)
+1! = Ok(1)
+2! = Ok(2)
+3! = Ok(6)
+4! = Ok(24)
+-1! = Err("Factorial requires a non-negative integer")
+
