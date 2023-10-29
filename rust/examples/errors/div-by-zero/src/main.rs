@@ -12,8 +12,7 @@ fn main() {
 
 
 fn divide_by(dividend: i32, divisor: i32) -> i32 {
-    let res = dividend / divisor;
-    res
+    dividend / divisor
 }
 
 fn get_number() -> i32 {

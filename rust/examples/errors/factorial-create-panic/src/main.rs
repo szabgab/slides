@@ -1,6 +1,3 @@
-use std::io;
-use std::io::Write;
-
 fn main() {
     for number in [5, 10, 0, -1, 3] {
         let fact = factorial(number);
@@ -15,5 +12,5 @@ fn factorial(n:i64) -> i64 {
     if n == 0 {
         return 1;
     }
-    return n * factorial(n-1);
+    n * factorial(n-1)
 }

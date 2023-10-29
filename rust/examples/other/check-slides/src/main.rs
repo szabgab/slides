@@ -64,6 +64,8 @@ fn main() {
             "examples/files/open-file-handling", // TODO
             "examples/arrays/numbers-change",
             "examples/types/type-mismatch",
+            "examples/errors/out-of-bounds-array",
+            "examples/errors/div-by-zero-hard-coded",
         ].into_iter().map(|x| x.to_string()).collect::<String>();
         if folders.contains(&folder) {
             continue;
