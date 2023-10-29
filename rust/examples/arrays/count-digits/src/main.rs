@@ -10,7 +10,7 @@ fn main() {
         //println!("{ix}");
         counter[ix] += 1;
     }
-    for ix in 0..counter.len() {
-        println!("{ix}: {}", counter[ix]);
+    for (ix, count) in counter.iter().enumerate() {
+        println!("{ix}: {}", count);
     }
 }

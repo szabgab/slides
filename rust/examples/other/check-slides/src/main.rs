@@ -62,6 +62,7 @@ fn main() {
             "examples/ownership/mutable-string-in-immutable-variable",
             "examples/files/list-tree",  // TODO
             "examples/files/open-file-handling", // TODO
+            "examples/arrays/numbers-change",
         ].into_iter().map(|x| x.to_string()).collect::<String>();
         if folders.contains(&folder) {
             continue;
