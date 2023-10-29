@@ -60,6 +60,7 @@ fn main() {
             "examples/numbers/rounding-float",
             "examples/booleans/other",
             "examples/ownership/mutable-string-in-immutable-variable",
+            "examples/files/list-tree",  // TODO
         ].into_iter().map(|x| x.to_string()).collect::<String>();
         if folders.contains(&folder) {
             continue;

@@ -18,7 +18,7 @@
 {i: open}
 {i: read_to_string}
 
-![](examples/files/read_whole_file.rs)
+![](examples/files/read-whole-file/src/main.rs)
 
 ## Rust - read file line-by-line
 {id: rust-read-file-line-by-line}
@@ -26,14 +26,14 @@
 {i: BufReader}
 {i: lines}
 
-![](examples/files/read_line_by_line.rs)
+![](examples/files/read-line-by-line/src/main.rs)
 
 ## Rust - read file line-by-line with row number (enumerate)
 {id: rust-read-file-line-by-line-enumerate}
 {i: enumerate}
 {i: lines}
 
-![](examples/files/read_line_by_line_enumerate.rs)
+![](examples/files/read-line-by-line-enumerate/src/main.rs)
 
 ## Rust - counter
 {id: rust-counter}
@@ -43,7 +43,7 @@
 {i: read_to_string}
 {i: create}
 
-![](examples/files/counter.rs)
+![](examples/files/counter/src/main.rs)
 
 ## Rust list content of directory
 {id: rust-list-directory}
@@ -52,23 +52,24 @@
 
 * [read_dir](https://doc.rust-lang.org/std/path/struct.Path.html#method.read_dir)
 
-![](examples/files/list_dir.rs)
+![](examples/files/list-dir/src/main.rs)
 
 ## Rust list directory content recursively (tree)
 {id: directory-tree-recursively}
 
 * std::fs::File [struct.File](https://doc.rust-lang.org/std/fs/struct.File.html)
 
-![](examples/files/tree.rs)
+![](examples/files/tree/src/main.rs)
 
-![](examples/files/list_tree.rs)
+![](examples/files/list-tree/src/main.rs)
 
 ## Count digits in file
 {id: count-digits-in-file}
 {i: chars}
 {i: usize}
 
-![](examples/files/count_digits.rs)
+![](examples/files/count-digits/src/main.rs)
+![](examples/files/count-digits/out.out)
 
 ## Makedir
 {id: makedir}
@@ -77,7 +78,7 @@
 
 * [create_dir](https://doc.rust-lang.org/std/fs/fn.create_dir.html)
 
-![](examples/files/makedir.rs)
+![](examples/files/makedir/src/main.rs)
 
 ## Makedirs
 {id: makedirs}
@@ -86,7 +87,7 @@
 
 * [create_dir_all](https://doc.rust-lang.org/std/fs/fn.create_dir_all.html)
 
-![](examples/files/makedirs.rs)
+![](examples/files/makedirs/src/main.rs)
 
 ## Get the temporary directory
 {id: get-the-temporary-directory}

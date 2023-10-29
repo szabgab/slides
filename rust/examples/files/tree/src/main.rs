@@ -22,19 +22,17 @@ fn get_path() -> String {
         return args[1].to_string();
     }
 
-    return ".".to_string();
+    ".".to_string()
 }
 
 
 fn list_dir(path: &Path) {
-    for entry in path.read_dir().expect("read_dir call failed") {
-        if let Ok(entry) = entry {
-            println!("{:?}", entry.path());
-            let metadata = fs::metadata(entry.path());
-            let file_type = metadata.expect("Could not access file").file_type();
-            if file_type.is_dir() {
-                list_dir(&entry.path());
-            }
+    for entry in path.read_dir().expect("read_dir call failed").flatten() {
+        println!("{:?}", entry.path());
+        let metadata = fs::metadata(entry.path());
+        let file_type = metadata.expect("Could not access file").file_type();
+        if file_type.is_dir() {
+            list_dir(&entry.path());
         }
     }
 }

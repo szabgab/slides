@@ -17,9 +17,7 @@ fn main() {
         path = Path::new(&args[1]);
     }
 
-    for entry in path.read_dir().expect("read_dir call failed") {
-        if let Ok(entry) = entry {
-            println!("{:?}", entry.path());
-        }
+    for entry in path.read_dir().expect("read_dir call failed").flatten() {
+        println!("{:?}", entry.path());
     }
 }
