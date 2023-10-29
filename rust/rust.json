@@ -52,6 +52,7 @@
         "image.md",
         "http.md",
         "logging.md",
+        "external.md",
         "other.md"
     ]
 }

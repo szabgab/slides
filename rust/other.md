@@ -98,22 +98,6 @@ echo %ERROR_LEVEL%
 TODO
 * [What’s the difference between Copy and Clone?](https://doc.rust-lang.org/std/marker/trait.Copy.html#whats-the-difference-between-copy-and-clone)
 
-## Run external programs
-{id: run-external-programs}
-{i: Command}
-
-* [Command](https://doc.rust-lang.org/std/process/struct.Command.html)
-
-![](examples/external/all.rs)
-
-```
-rustc all.rs
-```
-
-![](examples/external/run_external_command.rs)
-
-[see](https://stackoverflow.com/questions/41034635/how-do-i-convert-between-string-str-vecu8-and-u8)
-
 ## Type alias
 {id: type-alias}
 {i: type}
