@@ -59,6 +59,7 @@ fn main() {
             "examples/numbers/small-integers-unfit-in-i8",
             "examples/numbers/rounding-float",
             "examples/booleans/other",
+            "examples/ownership/mutable-string-in-immutable-variable",
         ].into_iter().map(|x| x.to_string()).collect::<String>();
         if folders.contains(&folder) {
             continue;
