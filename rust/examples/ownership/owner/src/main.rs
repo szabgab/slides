@@ -10,7 +10,7 @@ fn ex1() {
     let other = text;
     println!("{text}");
     println!("{other}");
-    println!("");
+    println!();
 }
 
 fn ex2() {
@@ -19,7 +19,7 @@ fn ex2() {
     let other = text;
     //println!("{text}");  // borrow of moved value: `text`
     println!("{other}");
-    println!("");
+    println!();
 }
 
 fn ex3() {
@@ -28,7 +28,7 @@ fn ex3() {
     let other = text.clone();
     println!("{text}");
     println!("{other}");
-    println!("");
+    println!();
 }
 
 

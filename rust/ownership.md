@@ -153,29 +153,28 @@
 * In the function definition we also include the `&` in-front of the type.
 * Inside the function we can prefix it with `*` to dereference the variable but in general we don't need to as Rust figures that out.
 
-![](examples/ownership/string_function_borrow.rs)
+![](examples/ownership/string-function-borrow/src/main.rs)
 
 ## Rust function to change string
 {id: rust-function-to-change-string}
 
-![](examples/ownership/change_string.rs)
+![](examples/ownership/change-string/src/main.rs)
 
 ## Rust function to change integer (i32)
 {id: rust-function-to-change-integer}
 
-![](examples/ownership/change_i32.rs)
+![](examples/ownership/change-i32/src/main.rs)
 
-![](examples/ownership/owner.rs)
+![](examples/ownership/owner/src/main.rs)
 
 ## Lifetime annotation
 {id: lifetime-annotation}
 
-![](examples/ownership/lifetime_annotation.rs)
+![](examples/ownership/lifetime-annotation/src/main.rs)
 
 ## Change vector of structs
 {id: change-vector-of-structs}
 
-![](examples/ownership/change_vector_of_structs.rs)
-![](examples/ownership/change_vector_of_structs.out)
-
+![](examples/ownership/change-vector-of-structs/src/main.rs)
+![](examples/ownership/change-vector-of-structs/out.out)
 
