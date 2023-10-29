@@ -146,7 +146,7 @@
 {i: Path}
 {i: extension}
 
-![](examples/files/get_extension.rs)
+![](examples/files/get-extension/src/main.rs)
 
 
 ## parent directory
@@ -156,8 +156,8 @@
 
 * [parent](https://doc.rust-lang.org/std/path/struct.Path.html#method.parent)
 
-![](examples/files/parent.rs)
-![](examples/files/parent.out)
+![](examples/files/parent/src/main.rs)
+![](examples/files/parent/out.out)
 
 ## directory ancestors (parent directories)
 {id: directory-ancestors}
@@ -165,25 +165,25 @@
 
 * [ancestors](https://doc.rust-lang.org/std/path/struct.Path.html#method.ancestors)
 
-![](examples/files/ancestors.rs)
-![](examples/files/ancestors.out)
+![](examples/files/ancestors/src/main.rs)
+![](examples/files/ancestors/out.out)
 
 ## directory ancestor (n level)
 {id: directory-ancestor}
 {i: ancestors}
 
-![](examples/files/ancestor.rs)
-![](examples/files/ancestor.out)
+![](examples/files/ancestor/src/main.rs)
+![](examples/files/ancestor/out.out)
 
 ## join pathes
 {id: join-pathes}
 {i: join}
 
-![](examples/files/join.rs)
-![](examples/files/join.out)
+![](examples/files/join/src/main.rs)
+![](examples/files/join/out.out)
 
 
 ## basename
 {id: basename}
 
-![](examples/files/basename.rs)
+![](examples/files/basename/src/main.rs)

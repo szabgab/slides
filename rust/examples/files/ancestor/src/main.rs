@@ -1,5 +1,6 @@
 use std::path::Path;
 
+#[allow(clippy::iter_nth_zero)]
 fn main() {
     let path = Path::new("one/two/three/four/five/six.rs");
 
@@ -8,19 +9,20 @@ fn main() {
     //    Some(val) => println!("ancestor: '{}'", val.display()),
     //    None => println!("No such ancestor"),
     //}
-    assert_eq!(ancestor(&path, 0), Some(Path::new("one/two/three/four/five/six.rs")));
-    assert_eq!(ancestor(&path, 1), Some(Path::new("one/two/three/four/five")));
-    assert_eq!(ancestor(&path, 5), Some(Path::new("one")));
-    assert_eq!(ancestor(&path, 6), Some(Path::new("")));
-    assert_eq!(ancestor(&path, 7), None);
+    assert_eq!(ancestor(path, 0), Some(Path::new("one/two/three/four/five/six.rs")));
+    assert_eq!(ancestor(path, 1), Some(Path::new("one/two/three/four/five")));
+    assert_eq!(ancestor(path, 5), Some(Path::new("one")));
+    assert_eq!(ancestor(path, 6), Some(Path::new("")));
+    assert_eq!(ancestor(path, 7), None);
 
-    assert_eq!(parentn(&path, 0), Some(Path::new("one/two/three/four/five/six.rs")));
-    assert_eq!(parentn(&path, 1), Some(Path::new("one/two/three/four/five")));
-    assert_eq!(parentn(&path, 5), Some(Path::new("one")));
-    assert_eq!(parentn(&path, 6), Some(Path::new("")));
-    assert_eq!(parentn(&path, 7), None);
+    assert_eq!(parentn(path, 0), Some(Path::new("one/two/three/four/five/six.rs")));
+    assert_eq!(parentn(path, 1), Some(Path::new("one/two/three/four/five")));
+    assert_eq!(parentn(path, 5), Some(Path::new("one")));
+    assert_eq!(parentn(path, 6), Some(Path::new("")));
+    assert_eq!(parentn(path, 7), None);
 
 
+    assert_eq!(path.ancestors().next(), Some(Path::new("one/two/three/four/five/six.rs")));
     assert_eq!(path.ancestors().nth(0), Some(Path::new("one/two/three/four/five/six.rs")));
     assert_eq!(path.ancestors().nth(1), Some(Path::new("one/two/three/four/five")));
     assert_eq!(path.ancestors().nth(5), Some(Path::new("one")));
@@ -45,7 +47,7 @@ fn ancestor(mut path: &Path, n: u16) -> Option<&Path> {
     for _ in 0..n {
         path = path.parent()?
     }
-    return Some(path);
+    Some(path)
 }
 
 
