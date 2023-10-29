@@ -11,7 +11,7 @@
 * [std::fs::File](https://doc.rust-lang.org/std/fs/struct.File.html)
 * [std::io::Write](https://doc.rust-lang.org/std/io/trait.Write.html)
 
-![](examples/files/write.rs)
+![](examples/files/write/src/main.rs)
 
 ## Rust - read content of a file as a string
 {id: rust-read-content-of-a-file-as-a-string}
@@ -92,7 +92,7 @@
 ## Get the temporary directory
 {id: get-the-temporary-directory}
 
-![](examples/files/temp_dir.rs)
+![](examples/files/temp-dir/src/main.rs)
 
 ## Create temporary directory
 {id: temporary-directory}
