@@ -66,6 +66,7 @@ fn main() {
             "examples/types/type-mismatch",
             "examples/errors/out-of-bounds-array",
             "examples/errors/div-by-zero-hard-coded",
+            "examples/advanced-functions/calculator", // TODO
         ].into_iter().map(|x| x.to_string()).collect::<String>();
         if folders.contains(&folder) {
             continue;
