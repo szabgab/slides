@@ -10,22 +10,22 @@
 
 * In the printing we won't see the difference, but we can do numberical operations on numbers
 
-![](examples/convert/string_to_int.rs)
-![](examples/convert/string_to_int.out)
+![](examples/convert/string-to-int/src/main.rs)
+![](examples/convert/string-to-int/out.out)
 
 ## Convert string to number that ends with newline
 {id: rust-convert-string-to-number-end-with-newline}
 {i: trim}
 
-![](examples/convert/string_to_int_fail.rs)
-![](examples/convert/string_to_int_fail.out)
+![](examples/convert/string-to-int-fail/src/main.rs)
+![](examples/convert/string-to-int-fail/out.out)
 
 ## Convert string to number after removing whitespaces
 {id: rust-convert-string-to-number-trim}
 {i: trim}
 
-![](examples/convert/string_to_int_trim.rs)
-![](examples/convert/string_to_int_trim.out)
+![](examples/convert/string-to-int-trim/src/main.rs)
+![](examples/convert/string-to-int-trim/out.out)
 
 ## Convert string to float
 {id: convert-string-to-float}
@@ -33,7 +33,6 @@
 
 * Sometimes we are expecting floating point numbers.
 
-![](examples/convert/string_to_float.rs)
-![](examples/convert/string_to_float.out)
-
+![](examples/convert/string-to-float/src/main.rs)
+![](examples/convert/string-to-float/out.out)
 
