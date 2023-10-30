@@ -34,6 +34,17 @@
 ![](examples/tuples/change-tuple/src/main.rs)
 ![](examples/tuples/change-tuple/out.out)
 
+## Create tuple with types, but without values
+{id: create-tuple-with-types-but-without-values}
+
+* We can create a tuple without initializing. In this case it seems even more usefule to declare the types. (Though not required.)
+* Then later we can assign all the values at once.
+* We cannot assign them one-by-one.
+
+![](examples/tuples/create-tuple-without-values/src/main.rs)
+![](examples/tuples/create-tuple-without-values/out.out)
+
+
 ## Destructuring tuple
 {id: destructuring-tuple}
 

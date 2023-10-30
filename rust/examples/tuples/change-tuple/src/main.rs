@@ -1,5 +1,5 @@
 fn main() {
-    let mut row = ("Blue", 300, 3.14);
+    let mut row = ("Blue", 300, 3.67);
     println!("{:?}", row);
     row.0 = "Green";
 
