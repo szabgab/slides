@@ -1,0 +1,18 @@
+Before starting: ThreadId(1)
+hi number 1 from the main thread! ThreadId(1)
+hi number 1 from the spawned thread! ThreadId(2)
+hi number 2 from the main thread! ThreadId(1)
+hi number 2 from the spawned thread! ThreadId(2)
+hi number 3 from the main thread! ThreadId(1)
+hi number 3 from the spawned thread! ThreadId(2)
+hi number 4 from the main thread! ThreadId(1)
+hi number 4 from the spawned thread! ThreadId(2)
+main thread ended
+hi number 5 from the spawned thread! ThreadId(2)
+hi number 6 from the spawned thread! ThreadId(2)
+hi number 7 from the spawned thread! ThreadId(2)
+hi number 8 from the spawned thread! ThreadId(2)
+hi number 9 from the spawned thread! ThreadId(2)
+spwaned thread ended
+After ending: ThreadId(1)
+exiting
