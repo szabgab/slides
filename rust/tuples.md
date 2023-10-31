@@ -47,26 +47,32 @@
 
 ## Destructuring tuple
 {id: destructuring-tuple}
+{i: _}
+
+* It is not *destructing*! Just looks similar.
+* It means to taking the values of a tuple apart into individual variables.
+* We havae to assign all the value
 
 ![](examples/tuples/destructuring-tuple/src/main.rs)
-
-## Tuple
-{id: tuple-example}
-
-![](examples/tuples/tuple/src/main.rs)
+![](examples/tuples/destructuring-tuple/out.out)
 
 ## The empty tuple is called the unit
 {id: empty-tuple-unit}
+{i: unit}
+{i: ()}
 
-* An empty pair of parentheses `()` creates an empty tuple, also called a `unit`.
+* An empty pair of parentheses `()` creates an empty tuple, also called a [unit](https://doc.rust-lang.org/std/primitive.unit.html).
 * Functions that don't return anything return the same `unit` value.
 
 ![](examples/tuples/empty/src/main.rs)
+![](examples/tuples/empty/out.out)
 
 ## One element tuple
 {id: one-element-tuple}
 
-* This works, but do we need it?
+* We can create a one-element tuple by putting a comma after the element, but probably there is not much value in it.
+* Probably it is better to just create a variable holding that single value.
 
 ![](examples/tuples/one-element/src/main.rs)
+![](examples/tuples/one-element/out.out)
 

@@ -10,9 +10,11 @@ fn main() {
 
     let res = empty();
     println!("{:?}", res);
+    assert_eq!(res, ());
 
     let res = no_return();
     println!("{:?}", res);
+    assert_eq!(res, ());
 }
 
 fn empty() {

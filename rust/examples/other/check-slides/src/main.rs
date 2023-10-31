@@ -55,7 +55,6 @@ fn main() {
             "examples/variables/immutable-number",
             "examples/variables/cannot-change-type",
             "examples/tuples/empty",
-            "examples/tuples/change-tuple",
             "examples/numbers/small-integers-unfit-in-i8",
             "examples/numbers/rounding-float",
             "examples/booleans/other",

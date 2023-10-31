@@ -1,5 +1,5 @@
 fn main() {
-    let thing: (char,) = ('x',);
+    let thing = ("text",);
     println!("{:?}", thing);
     println!("{:?}", thing.0);
 }
