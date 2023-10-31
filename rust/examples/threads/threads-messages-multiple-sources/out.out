@@ -1,0 +1,14 @@
+ThreadId(1): start
+Got: ThreadId(2): 1
+Got: ThreadId(3): 1
+Got: ThreadId(3): 2
+Got: ThreadId(2): 2
+Got: ThreadId(3): 3
+Got: ThreadId(2): 3
+Got: ThreadId(2): 4
+Got: ThreadId(3): 4
+Spawned thread ThreadId(2) ends
+Spawned thread ThreadId(3) ends
+Got: ThreadId(2): 5
+Got: ThreadId(3): 5
+Main thread ends
