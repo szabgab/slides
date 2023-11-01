@@ -55,3 +55,10 @@
 
 ![](examples/iterators/walk-directory-tree-return-strings/src/main.rs)
 
+## Count number of elements of an iterator
+{id: count-number-of-elements-of-an-iterator}
+{i: count}
+
+![](examples/iterators/count/src/main.rs)
+![](examples/iterators/count/out.out)
+

@@ -28,13 +28,6 @@
 ![](examples/other/factorial-returning-result/src/main.rs)
 ![](examples/other/factorial-returning-result/out.out)
 
-## Macros
-{id: macros}
-
-Somthing that looks like a function but ends with an exclamation point. e.g. `println!`
-
-* Metaprogramming - a program that generate a program
-
 ## Split function into files
 {id: split-functions-into-file}
 
