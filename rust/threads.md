@@ -57,4 +57,9 @@ TODO: what if there are variables in the main function? Can we read them from th
 TODO: How to share workload? e.g. We would like to create 10,000 files with the sequnce number of the file being botht the content and the filename.
 TODO: What if we have a vector of 10,000 values and we would like to save each one of them in a separate file?
 
+## Save many files
+{id: save-many-files}
+
+![](examples/threads/save-many-files/src/main.rs)
+
 
