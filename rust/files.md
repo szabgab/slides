@@ -91,11 +91,13 @@
 
 ## Get the temporary directory
 {id: get-the-temporary-directory}
+{i: temp_dir}
 
 ![](examples/files/temp-dir/src/main.rs)
 
 ## Create temporary directory
 {id: temporary-directory}
+{i: tempdir}
 
 ![](examples/files/tempdir-demo/Cargo.toml)
 ![](examples/files/tempdir-demo/src/main.rs)
@@ -126,6 +128,8 @@
 
 ## Appand to file
 {id: append-to-file}
+{i: append}
+{i: open}
 
 ![](examples/files/append/src/main.rs)
 
@@ -138,6 +142,9 @@
 
 ## du - disk usage
 {id: du}
+{i: metadata}
+{i: len}
+{i: read_dir}
 
 ![](examples/files/du/src/main.rs)
 
@@ -170,7 +177,10 @@
 
 ## directory ancestor (n level)
 {id: directory-ancestor}
+{i: ancestor}
 {i: ancestors}
+{i: nth}
+{i: next}
 
 ![](examples/files/ancestor/src/main.rs)
 ![](examples/files/ancestor/out.out)
@@ -185,5 +195,9 @@
 
 ## basename
 {id: basename}
+{i: file_name}
+{i: basename}
+
 
 ![](examples/files/basename/src/main.rs)
+
