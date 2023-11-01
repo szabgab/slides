@@ -5,5 +5,5 @@ fn main() {
     for n in numbers.iter() {
         println!("{}", n);
     }
-    println!("{:?}", &numbers);
+    println!("{:?}", numbers);
 }

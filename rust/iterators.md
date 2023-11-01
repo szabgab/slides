@@ -3,6 +3,8 @@
 
 ## Iterate over vector of numbers
 {id: iterate-over-vector-of-numbers}
+{i: vec!}
+{i: for}
 
 ![](examples/iterators/iterator-over-vector-of-numbers/src/main.rs)
 ![](examples/iterators/iterator-over-vector-of-numbers/out.out)

@@ -6,7 +6,7 @@ fn main() {
     for n in &numbers {
         println!("{}", n);
     }
-    println!("{:?}", &numbers);
+    println!("{:?}", numbers);
 }
 
 
