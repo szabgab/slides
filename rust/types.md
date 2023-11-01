@@ -5,6 +5,19 @@
 ## Rust Type system
 {id: rust-type-system}
 
+
+## Print type of variable
+{id: print-type-of-variable}
+{i: type_name}
+{i: type_name_of_val}
+
+* It will be added to the stanard library as [type_name_of_val](https://doc.rust-lang.org/stable/core/any/fn.type_name_of_val.html)
+
+![](examples/types/print-type/src/main.rs)
+
+![](examples/types/print-type/out.out)
+
+
 ## Rust numerical operations
 {id: rust-numerical-operations}
 
