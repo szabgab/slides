@@ -1,0 +1,11 @@
+as is       3s
+as seconds: 3
+as millis:  3000
+as micros:  3000000
+as nanos:   3000000000
+
+2.000000004s
+as seconds: 2
+
+5.000000004s
+999.999996ms
