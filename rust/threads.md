@@ -68,10 +68,12 @@ TODO: What if we have a vector of 10,000 values and we would like to save each o
 
 * Compute primes up to 1 (that is, do almost nothing).  Create 100,000 files. This is mostly IO intensive.
 * We can see a 35-40% speed imprvement going from no threads to 2 threads, but there is no more speed improvement.
+
 ![](examples/threads/save-many-files/100000_1.out)
 
 
 * Compute primes up to 500 (CPU intensive).  Create 100,000 files. This has both CPU and IO part.
 * We can see speed increase by each additional thread, but the improvement diminishes as we add more threads.
+
 ![](examples/threads/save-many-files/100000_500.out)
 
