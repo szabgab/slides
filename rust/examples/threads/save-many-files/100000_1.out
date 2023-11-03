@@ -1,0 +1,5 @@
+Elapsed time: 1.619909245s
+Elapsed time for 2 threads: 1.003796038s
+Elapsed time for 3 threads: 1.019957126s
+Elapsed time for 4 threads: 998.978148ms
+Elapsed time for 5 threads: 1.042834678s
