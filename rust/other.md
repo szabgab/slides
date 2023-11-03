@@ -204,4 +204,12 @@ With a file called config.txt in the same directy that has:
 SENDGRID_API_KEY=SG....
 ```
 
+## Compare memory address (pointer)
+{id: compare-memory-address}
+{i: std::ptr::addr_of}
+{i: addr_of}
+
+![](examples/other/compare-memory-address/src/main.rs)
+![](examples/other/compare-memory-address/out.out)
+
 
