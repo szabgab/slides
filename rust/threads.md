@@ -77,3 +77,34 @@ TODO: What if we have a vector of 10,000 values and we would like to save each o
 
 ![](examples/threads/save-many-files/100000_500.out)
 
+
+## Pass reference of read-only vector to thread
+{id: pass-reference-of-read-only-vector-to-thread}
+{i: Arc}
+{i: clone}
+
+* [Arc](https://doc.rust-lang.org/std/sync/struct.Arc.html) allows us to have reference counting.
+* Here the `clone` only copies the reference and not the whole data structure.
+
+![](examples/threads/pass-reference-to-vector/src/main.rs)
+
+
+## Pass reference of read-only vector to thread improved
+{id: pass-reference-of-read-only-vector-to-thread-improved}
+{i: Arc}
+{i: clone}
+
+* In this solution the external block was moved inside the spawn.
+
+![](examples/threads/pass-vector/src/main.rs)
+
+## Pass and return reference (return ownership)
+{id: pass-and-return-reference}
+
+* An alternate way to handle this situation is to return the vector.
+* This way we pass the ownership back to the caller.
+
+![](examples/threads/pass-and-return-reference/src/main.rs)
+
+
+
