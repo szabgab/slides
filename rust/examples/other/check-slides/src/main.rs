@@ -1,7 +1,6 @@
 use std::fs::File;
 use std::io::{BufRead, BufReader};
 use std::iter::FromIterator;
-use std::ops::ControlFlow;
 use std::path::Path;
 use std::path::PathBuf;
 use std::process::exit;
@@ -43,9 +42,7 @@ fn main() {
     let mut clippy_error = 0;
     let number_of_crates = crates.len();
     for (ix, crate_folder) in crates.iter().enumerate() {
-        if let ControlFlow::Break(_) = check_crate(verbose, ix, number_of_crates, crate_folder, &mut clippy_error, &root_folder) {
-            continue;
-        }
+        check_crate(verbose, ix, number_of_crates, crate_folder, &mut clippy_error, &root_folder);
     }
     println!("check crates done");
 
@@ -60,7 +57,7 @@ fn main() {
     }
 }
 
-fn check_crate(verbose: bool, ix: usize, number_of_crates: usize, crate_folder: &PathBuf, clippy_error: &mut i32, root_folder: &PathBuf) -> ControlFlow<()> {
+fn check_crate(verbose: bool, ix: usize, number_of_crates: usize, crate_folder: &PathBuf, clippy_error: &mut i32, root_folder: &PathBuf) {
     if verbose {
         println!("crate: {}/{}, {:?}", ix, number_of_crates, crate_folder);
     }
@@ -87,7 +84,7 @@ fn check_crate(verbose: bool, ix: usize, number_of_crates: usize, crate_folder: 
         "examples/advanced-functions/calculator", // TODO
     ].into_iter().map(|x| x.to_string()).collect::<String>();
     if folders.contains(&folder) {
-        return ControlFlow::Break(());
+        return;
     }
     std::env::set_current_dir(crate_folder).unwrap();
     let result = Command::new("cargo")
@@ -115,8 +112,6 @@ fn check_crate(verbose: bool, ix: usize, number_of_crates: usize, crate_folder: 
     //println!("{}", std::str::from_utf8(&result.stdout).unwrap());
     //println!("{}", std::str::from_utf8(&result.stderr).unwrap());
     //println!("{}", result.status);
-
-    ControlFlow::Continue(())
 }
 
 fn get_crates(path: &Path) -> Vec<PathBuf> {
