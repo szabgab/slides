@@ -42,7 +42,10 @@ fn main() {
     let mut clippy_error = 0;
     let number_of_crates = crates.len();
     for (ix, crate_folder) in crates.iter().enumerate() {
-        check_crate(verbose, ix, number_of_crates, crate_folder, &mut clippy_error, &root_folder);
+        if verbose {
+            println!("crate: {}/{}, {:?}", ix, number_of_crates, crate_folder);
+        }
+        check_crate(crate_folder, &mut clippy_error, &root_folder);
     }
     println!("check crates done");
 
@@ -57,10 +60,7 @@ fn main() {
     }
 }
 
-fn check_crate(verbose: bool, ix: usize, number_of_crates: usize, crate_folder: &PathBuf, clippy_error: &mut i32, root_folder: &PathBuf) {
-    if verbose {
-        println!("crate: {}/{}, {:?}", ix, number_of_crates, crate_folder);
-    }
+fn check_crate(crate_folder: &PathBuf, clippy_error: &mut i32, root_folder: &PathBuf) {
     let folder = crate_folder.clone().into_os_string().into_string().unwrap();
     let folders = vec![
         "examples/intro/formatting-required",
