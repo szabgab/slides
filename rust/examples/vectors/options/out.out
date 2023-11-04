@@ -1,0 +1,5 @@
+[Some(3), None, Some(7)]
+[Some(3), None, Some(7)]
+None
+Some(None)
+None

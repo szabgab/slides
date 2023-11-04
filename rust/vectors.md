@@ -270,3 +270,24 @@
 
 ![](examples/vectors/insert-element-in-vector/src/main.rs)
 
+## Vector with optional values
+{id: vector-with-optional-values}
+{i: Option}
+{i: None}
+{i: Some}
+{i: get}
+
+![](examples/vectors/options/src/main.rs)
+![](examples/vectors/options/out.out)
+
+## Vector length and capacity
+{id: vector-length-and-capacity}
+{i: len}
+{i: capacity}
+{i: with_capacity}
+{i: resize}
+
+![](examples/vectors/with-capacity/src/main.rs)
+![](examples/vectors/with-capacity/out.out)
+
+
