@@ -45,7 +45,9 @@ fn main() {
         if verbose {
             println!("crate: {}/{}, {:?}", ix, number_of_crates, crate_folder);
         }
-        check_crate(crate_folder, &mut clippy_error, &root_folder);
+        if !check_crate(crate_folder, &root_folder) {
+            clippy_error += 1;
+        }
     }
     println!("check crates done");
 
@@ -60,7 +62,7 @@ fn main() {
     }
 }
 
-fn check_crate(crate_folder: &PathBuf, clippy_error: &mut i32, root_folder: &PathBuf) {
+fn check_crate(crate_folder: &PathBuf, root_folder: &PathBuf) -> bool {
     let folder = crate_folder.clone().into_os_string().into_string().unwrap();
     let folders = vec![
         "examples/intro/formatting-required",
@@ -84,7 +86,7 @@ fn check_crate(crate_folder: &PathBuf, clippy_error: &mut i32, root_folder: &Pat
         "examples/advanced-functions/calculator", // TODO
     ].into_iter().map(|x| x.to_string()).collect::<String>();
     if folders.contains(&folder) {
-        return;
+        return true;
     }
     std::env::set_current_dir(crate_folder).unwrap();
     let result = Command::new("cargo")
@@ -94,15 +96,16 @@ fn check_crate(crate_folder: &PathBuf, clippy_error: &mut i32, root_folder: &Pat
         .arg("warnings")
         .output()
         .expect("failed to execute process");
+    std::env::set_current_dir(root_folder).unwrap();
+
     if !result.status.success() {
         //println!("{}", result.status);
         println!("ERROR in crate: {:?}", crate_folder);
-        *clippy_error += 1;
         //println!("{}", std::str::from_utf8(&result.stdout).unwrap());
         //println!("{}", std::str::from_utf8(&result.stderr).unwrap());
         //std::process::exit(1);
     }
-    std::env::set_current_dir(root_folder).unwrap();
+    result.status.success()
 
     //let result = Command::new("cargo")
     //    .arg("fmt")
