@@ -78,6 +78,11 @@ TODO: What if we have a vector of 10,000 values and we would like to save each o
 ![](examples/threads/save-many-files/100000_500.out)
 
 
+## Rust threads read-only access to shared variables
+{id: read-only-access-to-shared-variables}
+
+* See several solutions
+
 ## Pass reference of read-only vector to thread
 {id: pass-reference-of-read-only-vector-to-thread}
 {i: Arc}
@@ -107,4 +112,10 @@ TODO: What if we have a vector of 10,000 values and we would like to save each o
 ![](examples/threads/pass-and-return-reference/src/main.rs)
 
 
+## Thread scope
+{id: thread-scrope}
+
+* using [thread::scope](https://doc.rust-lang.org/stable/std/thread/fn.scope.html) there is an even simpler solution.
+
+![](examples/threads/thread-scope/src/main.rs)
 
