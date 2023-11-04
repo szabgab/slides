@@ -1,6 +1,7 @@
 use std::fs::File;
 use std::io::{BufRead, BufReader};
 use std::iter::FromIterator;
+use std::ops::ControlFlow;
 use std::path::Path;
 use std::path::PathBuf;
 use std::process::exit;
@@ -42,63 +43,11 @@ fn main() {
     let mut clippy_error = 0;
     let number_of_crates = crates.len();
     for (ix, crate_folder) in crates.iter().enumerate() {
-        if verbose {
-            println!("crate: {}/{}, {:?}", ix, number_of_crates, crate_folder);
-        }
-        let folder = crate_folder.clone().into_os_string().into_string().unwrap();
-        let folders = vec![
-            "examples/intro/formatting-required",
-            "examples/intro/print",
-            "examples/functions/declare-twice",
-            "examples/variables/change-literal-string",
-            "examples/variables/immutable-string",
-            "examples/variables/immutable-number",
-            "examples/variables/cannot-change-type",
-            "examples/tuples/empty",
-            "examples/numbers/small-integers-unfit-in-i8",
-            "examples/numbers/rounding-float",
-            "examples/booleans/other",
-            "examples/ownership/mutable-string-in-immutable-variable",
-            "examples/files/list-tree",  // TODO
-            "examples/files/open-file-handling", // TODO
-            "examples/arrays/numbers-change",
-            "examples/types/type-mismatch",
-            "examples/errors/out-of-bounds-array",
-            "examples/errors/div-by-zero-hard-coded",
-            "examples/advanced-functions/calculator", // TODO
-        ].into_iter().map(|x| x.to_string()).collect::<String>();
-        if folders.contains(&folder) {
+        if let ControlFlow::Break(_) = check_crate(verbose, ix, number_of_crates, crate_folder, &mut clippy_error, &root_folder) {
             continue;
         }
-
-        std::env::set_current_dir(crate_folder).unwrap();
-        //let result = Command::new("cargo")
-        //    .arg("fmt")
-        //    .arg("--check")
-        //    .output()
-        //    .expect("failed to execute process");
-        //println!("{}", std::str::from_utf8(&result.stdout).unwrap());
-        //println!("{}", std::str::from_utf8(&result.stderr).unwrap());
-        //println!("{}", result.status);
-
-        let result = Command::new("cargo")
-            .arg("clippy")
-            .arg("--")
-            .arg("--deny")
-            .arg("warnings")
-            .output()
-            .expect("failed to execute process");
-        if !result.status.success() {
-            //println!("{}", result.status);
-            println!("ERROR in crate: {:?}", crate_folder);
-            clippy_error += 1;
-            //println!("{}", std::str::from_utf8(&result.stdout).unwrap());
-            //println!("{}", std::str::from_utf8(&result.stderr).unwrap());
-            //std::process::exit(1);
-        }
-        std::env::set_current_dir(&root_folder).unwrap();
     }
-    println!("checked all the crates");
+    println!("check crates done");
 
     if clippy_error > 0 {
         eprintln!("There are {clippy_error} examples with clippy errors.");
@@ -109,6 +58,65 @@ fn main() {
         eprintln!("There are {count} unused examples");
         exit(1);
     }
+}
+
+fn check_crate(verbose: bool, ix: usize, number_of_crates: usize, crate_folder: &PathBuf, clippy_error: &mut i32, root_folder: &PathBuf) -> ControlFlow<()> {
+    if verbose {
+        println!("crate: {}/{}, {:?}", ix, number_of_crates, crate_folder);
+    }
+    let folder = crate_folder.clone().into_os_string().into_string().unwrap();
+    let folders = vec![
+        "examples/intro/formatting-required",
+        "examples/intro/print",
+        "examples/functions/declare-twice",
+        "examples/variables/change-literal-string",
+        "examples/variables/immutable-string",
+        "examples/variables/immutable-number",
+        "examples/variables/cannot-change-type",
+        "examples/tuples/empty",
+        "examples/numbers/small-integers-unfit-in-i8",
+        "examples/numbers/rounding-float",
+        "examples/booleans/other",
+        "examples/ownership/mutable-string-in-immutable-variable",
+        "examples/files/list-tree",  // TODO
+        "examples/files/open-file-handling", // TODO
+        "examples/arrays/numbers-change",
+        "examples/types/type-mismatch",
+        "examples/errors/out-of-bounds-array",
+        "examples/errors/div-by-zero-hard-coded",
+        "examples/advanced-functions/calculator", // TODO
+    ].into_iter().map(|x| x.to_string()).collect::<String>();
+    if folders.contains(&folder) {
+        return ControlFlow::Break(());
+    }
+    std::env::set_current_dir(crate_folder).unwrap();
+    let result = Command::new("cargo")
+        .arg("clippy")
+        .arg("--")
+        .arg("--deny")
+        .arg("warnings")
+        .output()
+        .expect("failed to execute process");
+    if !result.status.success() {
+        //println!("{}", result.status);
+        println!("ERROR in crate: {:?}", crate_folder);
+        *clippy_error += 1;
+        //println!("{}", std::str::from_utf8(&result.stdout).unwrap());
+        //println!("{}", std::str::from_utf8(&result.stderr).unwrap());
+        //std::process::exit(1);
+    }
+    std::env::set_current_dir(root_folder).unwrap();
+
+    //let result = Command::new("cargo")
+    //    .arg("fmt")
+    //    .arg("--check")
+    //    .output()
+    //    .expect("failed to execute process");
+    //println!("{}", std::str::from_utf8(&result.stdout).unwrap());
+    //println!("{}", std::str::from_utf8(&result.stderr).unwrap());
+    //println!("{}", result.status);
+
+    ControlFlow::Continue(())
 }
 
 fn get_crates(path: &Path) -> Vec<PathBuf> {
