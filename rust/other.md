@@ -212,4 +212,11 @@ SENDGRID_API_KEY=SG....
 ![](examples/other/compare-memory-address/src/main.rs)
 ![](examples/other/compare-memory-address/out.out)
 
+## Equality of Some - values
+{id: equality-of-some-values}
+{i: Some}
+
+![](examples/other/some-equality/src/main.rs)
+![](examples/other/some-equality/out.out)
+
 
