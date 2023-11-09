@@ -229,4 +229,17 @@
 ![](examples/strings/compare-strings/src/main.rs)
 ![](examples/strings/compare-strings/out.out)
 
+## Is one string in another string - contains?
+{id: string-contains}
+{i: contains}
+{i: find}
+{i: in}
+{i: index}
+
+* `contains` will return a boolean value telling if one string contains the other
+* `find` will return a number indicating the location of a substring (or `None` if the string cannot be found).
+
+![](examples/strings/contains/src/main.rs)
+![](examples/strings/contains/out.out)
+
 
