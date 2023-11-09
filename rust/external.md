@@ -34,4 +34,8 @@ Run:
 
 [see](https://stackoverflow.com/questions/41034635/how-do-i-convert-between-string-str-vecu8-and-u8)
 
+## Run external program combining parameters
+{id: run-external-prorgam-combining-parameter}
+{i: args}
 
+![](examples/external/run-with-args/src/main.rs)
