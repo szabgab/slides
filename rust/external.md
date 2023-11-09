@@ -39,3 +39,9 @@ Run:
 {i: args}
 
 ![](examples/external/run-with-args/src/main.rs)
+
+## Run a command provided as a string
+{id: run-a-command-provided-as-a-string}
+
+![](examples/external/run-string/src/main.rs)
+
