@@ -270,6 +270,23 @@
 
 ![](examples/vectors/insert-element-in-vector/src/main.rs)
 
+
+## Vector with optional values - None or out of range?
+{id: none-or-out-of-range}
+{i: get}
+{i: is_none}
+{i: is_some}
+
+* If we have a vector that some of the elements can be `None` then the other elements must be `Some`-values and the whole thing must be defined using `Option`.
+* If we try to access an element in a vector that is out of range we get a run-time panic.
+* In order to avoid such panic we either need to check if our index is in range or we can use the `get` method.
+* We can use the `get` method to access the element. It will return `None` if the index was out of range.
+* Then the question arise, how do we know if the value was out of range or if it was in the range but the value was `None`?
+
+![](examples/vectors/none-or-out-of-range/src/main.rs)
+![](examples/vectors/none-or-out-of-range/out.out)
+
+
 ## Vector with optional values
 {id: vector-with-optional-values}
 {i: Option}
@@ -280,6 +297,7 @@
 ![](examples/vectors/options/src/main.rs)
 ![](examples/vectors/options/out.out)
 
+
 ## Vector length and capacity
 {id: vector-length-and-capacity}
 {i: len}
@@ -289,5 +307,11 @@
 
 ![](examples/vectors/with-capacity/src/main.rs)
 ![](examples/vectors/with-capacity/out.out)
+
+## References to numbers
+{id: references-to-numbers}
+
+![](examples/other/references-to-numbers/src/main.rs)
+![](examples/other/references-to-numbers/out.out)
 
 

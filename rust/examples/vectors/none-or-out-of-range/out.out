@@ -1,0 +1,11 @@
+[Some(3), None]
+None
+Some(None)
+None
+
+false
+true
+
+true
+false
+

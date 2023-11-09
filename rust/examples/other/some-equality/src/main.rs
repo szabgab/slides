@@ -1,3 +1,4 @@
+#[allow(clippy::unnecessary_literal_unwrap)]
 fn main() {
     let x = Some(3);
     let y = Some(3);
