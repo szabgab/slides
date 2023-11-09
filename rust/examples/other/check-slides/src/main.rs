@@ -37,6 +37,20 @@ fn main() {
     println!("\nget_crates");
     let crates = get_crates(Path::new("examples"));
 
+    let clippy_error = check_crates(crates, verbose);
+
+    if clippy_error > 0 {
+        eprintln!("There are {clippy_error} examples with clippy errors.");
+        exit(1);
+    }
+
+    if count > 0 {
+        eprintln!("There are {count} unused examples");
+        exit(1);
+    }
+}
+
+fn check_crates(crates: Vec<PathBuf>, verbose: bool) -> i32 {
     println!("\ncheck_crates");
     let root_folder = std::env::current_dir().unwrap();
     let mut clippy_error = 0;
@@ -50,16 +64,7 @@ fn main() {
         }
     }
     println!("check crates done");
-
-    if clippy_error > 0 {
-        eprintln!("There are {clippy_error} examples with clippy errors.");
-        exit(1);
-    }
-
-    if count > 0 {
-        eprintln!("There are {count} unused examples");
-        exit(1);
-    }
+    clippy_error
 }
 
 fn check_crate(crate_folder: &PathBuf, root_folder: &PathBuf) -> bool {
