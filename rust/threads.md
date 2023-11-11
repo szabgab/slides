@@ -126,4 +126,10 @@ TODO: What if we have a vector of 10,000 values and we would like to save each o
 * Use forks.
 
 
+## map with threads
+{id: map-with-threads}
+
+TODO: This is experimental code that needs to be improved
+
+![](examples/threads/map-thread/src/main.rs)
 
