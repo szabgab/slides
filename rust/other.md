@@ -222,6 +222,8 @@ SENDGRID_API_KEY=SG....
 ## Fork
 {id: fork}
 
+* [fork](https://docs.rs/fork/)
+
 ![](examples/other/show-forking/Cargo.toml)
 ![](examples/other/show-forking/src/main.rs)
 
