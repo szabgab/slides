@@ -37,3 +37,23 @@ warning: queue 0x7fa398000ca0 destroyed while proxies still attached:
 ```
 
 This was [reported here](https://github.com/emilk/egui/issues/3413).
+
+## eGUI heading
+{id: egui-heading}
+{i: heading}
+
+![](examples/egui/egui-heading/src/main.rs)
+
+
+![](examples/egui/egui-heading/screenshot.png)
+
+## eGUI label
+{id: egui-label}
+{i: label}
+
+![](examples/egui/egui-label/src/main.rs)
+
+![](examples/egui/egui-label/screenshot.png)
+
+
+
