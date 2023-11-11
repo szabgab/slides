@@ -219,4 +219,11 @@ SENDGRID_API_KEY=SG....
 ![](examples/other/some-equality/src/main.rs)
 ![](examples/other/some-equality/out.out)
 
+## Fork
+{id: fork}
+
+![](examples/other/show-forking/Cargo.toml)
+![](examples/other/show-forking/src/main.rs)
+
+TODO: wait, waitpid?
 
