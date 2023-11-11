@@ -56,4 +56,20 @@ This was [reported here](https://github.com/emilk/egui/issues/3413).
 ![](examples/egui/egui-label/screenshot.png)
 
 
+## eGUI counter with label and button
+{id: egui-counter-with-label-and-button}
+{i: button}
+{i: clicked}
+{i: label}
+
+
+![](examples/egui/egui-label-and-button/src/main.rs)
+
+* Every time we click on the button, the code in the block gets executed incrementing the counter
+* Then the displayed label is refreshed.
+
+![](examples/egui/egui-label-and-button/screenshot.png)
+
+
+
 
