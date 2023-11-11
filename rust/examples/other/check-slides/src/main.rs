@@ -5,6 +5,8 @@ use std::path::Path;
 use std::path::PathBuf;
 use std::process::exit;
 use std::process::Command;
+use std::sync::mpsc;
+use std::thread;
 
 // use regex::Regex;
 
@@ -52,22 +54,54 @@ fn main() {
 
 fn check_crates(crates: Vec<PathBuf>, verbose: bool) -> i32 {
     println!("\ncheck_crates");
-    let root_folder = std::env::current_dir().unwrap();
     let mut clippy_error = 0;
     let number_of_crates = crates.len();
-    for (ix, crate_folder) in crates.iter().enumerate() {
+
+    // We want run max_threads at once, when one is finished we start a new one
+    // Then we collect the messages from the remaining ones.
+    let (tx, rx) = mpsc::channel();
+    let max_threads = 10;
+    let mut thread_count = 0;
+    let mut started = 0;
+    let mut finished = 0;
+
+    for (ix, crate_folder) in crates.into_iter().enumerate() {
+        started += 1;
         if verbose {
-            println!("crate: {}/{}, {:?}", ix, number_of_crates, crate_folder);
+            println!("crate: {}/{}, {:?}", ix+1, number_of_crates, crate_folder);
         }
-        if !check_crate(crate_folder, &root_folder) {
-            clippy_error += 1;
+        let mytx = tx.clone();
+
+        thread::spawn(move || {
+            let res = check_crate(&crate_folder);
+            mytx.send(res).unwrap();
+        });
+        thread_count += 1;
+        if thread_count >= max_threads {
+            let received = rx.recv().unwrap();
+            if !received {
+                clippy_error += 1;
+            }
+            finished += 1;
         }
     }
+
+    for received in rx {
+        //println!("received {}", thread_count);
+        finished += 1;
+        if !received {
+            clippy_error += 1;
+        }
+        if finished >= started {
+            break;
+        }
+    }
+
     println!("check crates done");
     clippy_error
 }
 
-fn check_crate(crate_folder: &PathBuf, root_folder: &PathBuf) -> bool {
+fn check_crate(crate_folder: &PathBuf) -> bool {
     let folder = crate_folder.clone().into_os_string().into_string().unwrap();
     let folders = vec![
         "examples/intro/formatting-required",
@@ -93,15 +127,17 @@ fn check_crate(crate_folder: &PathBuf, root_folder: &PathBuf) -> bool {
     if folders.contains(&folder) {
         return true;
     }
-    std::env::set_current_dir(crate_folder).unwrap();
+    //println!("current_dir:  {:?}", std::env::current_dir().unwrap());
+    //println!("crate_folder: {:?}", crate_folder);
+    //std::env::set_current_dir(crate_folder).unwrap();
     let result = Command::new("cargo")
         .arg("clippy")
         .arg("--")
         .arg("--deny")
         .arg("warnings")
+        .current_dir(crate_folder)
         .output()
         .expect("failed to execute process");
-    std::env::set_current_dir(root_folder).unwrap();
 
     if !result.status.success() {
         //println!("{}", result.status);
