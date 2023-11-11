@@ -21,9 +21,9 @@ fn double_function(num: &i32) -> i32 {
     2 * num
 }
 
-fn map_thread<Tin:Send+Copy+'static, Tout:Ord+Send+Copy+'static>(numbers: &[Tin], func: fn(&Tin) -> Tout, max_threads: i32) -> Vec<Tout> {
-    //numbers.iter().map(double_function).collect::<Vec<i32>>()
-    //numbers.iter().map(func).collect::<Vec<i32>>()
+fn map_thread<Tin:Send+Copy+'static, Tout:Ord+Send+Copy+'static>(params: &[Tin], func: fn(&Tin) -> Tout, max_threads: i32) -> Vec<Tout> {
+    //params.iter().map(double_function).collect::<Vec<Tout>>()
+    //params.iter().map(func).collect::<Vec<Tout>>()
 
     let (tx, rx) = mpsc::channel();
     let mut thread_count = 0;
@@ -31,8 +31,8 @@ fn map_thread<Tin:Send+Copy+'static, Tout:Ord+Send+Copy+'static>(numbers: &[Tin]
     let mut finished = 0;
     let mut results: Vec<(i32, Tout)> = vec![];
 
-    for numberx in numbers.iter() {
-        let number = *numberx;
+    for paramx in params.iter() {
+        let number = *paramx;
         started += 1;
         let mytx = tx.clone();
         thread::Builder::new().name(format!("{}", started)).spawn(move || {
