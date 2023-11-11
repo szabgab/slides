@@ -45,3 +45,10 @@ Run:
 
 ![](examples/external/run-string/src/main.rs)
 
+## Run external command in another directory
+{id: run-external-program-in-another-directory}
+{i: current_dir}
+
+![](examples/external/chdir-for-execution/src/main.rs)
+![](examples/external/chdir-for-execution/out.out)
+
