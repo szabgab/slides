@@ -54,6 +54,7 @@
         "logging.md",
         "external.md",
         "macros.md",
+        "egui.md",
         "other.md"
     ]
 }
