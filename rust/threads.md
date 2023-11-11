@@ -119,3 +119,11 @@ TODO: What if we have a vector of 10,000 values and we would like to save each o
 
 ![](examples/threads/thread-scope/src/main.rs)
 
+## chdir in threads
+{id: chdir-in-threads}
+
+* The current working directory is a per process so separate threads cannot have different current working directories
+* Use forks.
+
+
+
