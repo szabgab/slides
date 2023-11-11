@@ -1,5 +1,7 @@
 use std::sync::mpsc;
 use std::thread;
+use std::marker::Send;
+
 
 fn main() {
     let numbers: Vec<i32> = (1..=10).collect();
@@ -19,7 +21,7 @@ fn double_function(num: &i32) -> i32 {
     2 * num
 }
 
-fn map_thread(numbers: &[i32], func: fn(&i32) -> i32, max_threads: i32) -> Vec<i32> {
+fn map_thread<Tin:Send+Copy+'static, Tout:Ord+Send+Copy+'static>(numbers: &[Tin], func: fn(&Tin) -> Tout, max_threads: i32) -> Vec<Tout> {
     //numbers.iter().map(double_function).collect::<Vec<i32>>()
     //numbers.iter().map(func).collect::<Vec<i32>>()
 
@@ -27,7 +29,7 @@ fn map_thread(numbers: &[i32], func: fn(&i32) -> i32, max_threads: i32) -> Vec<i
     let mut thread_count = 0;
     let mut started = 0;
     let mut finished = 0;
-    let mut results: Vec<(i32, i32)> = vec![];
+    let mut results: Vec<(i32, Tout)> = vec![];
 
     for numberx in numbers.iter() {
         let number = *numberx;
@@ -48,7 +50,6 @@ fn map_thread(numbers: &[i32], func: fn(&i32) -> i32, max_threads: i32) -> Vec<i
     }
 
     for received in rx {
-        //println!("received {}", thread_count);
         finished += 1;
         results.push(received);
         if finished >= started {
@@ -57,6 +58,6 @@ fn map_thread(numbers: &[i32], func: fn(&i32) -> i32, max_threads: i32) -> Vec<i
     }
 
     results.sort();
-    results.iter().map(|item| item.1).collect::<Vec<i32>>()
+    results.iter().map(|item| item.1).collect::<Vec<Tout>>()
 
 }
