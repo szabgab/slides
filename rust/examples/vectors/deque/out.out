@@ -1,0 +1,6 @@
+len: 0 capacity: 0 empty:  true
+len: 1 capacity: 4 empty:  false
+len: 5 capacity: 8 empty:  false
+["cat", "dog", "rat", "squirrel", "snake"]
+cat
+len: 4 capacity: 8 empty:  false
