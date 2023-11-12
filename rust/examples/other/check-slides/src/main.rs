@@ -36,7 +36,6 @@ fn main() {
         }
     }
 
-    println!("\nget_crates");
     let crates = get_crates(Path::new("examples"));
 
     let clippy_error = check_crates(crates, verbose);
@@ -159,6 +158,13 @@ fn check_crate(crate_folder: &PathBuf) -> bool {
 }
 
 fn get_crates(path: &Path) -> Vec<PathBuf> {
+    println!("get_crates");
+    let crates = get_crates_recoursive(path);
+    println!("get_crates done\n");
+    crates
+}
+
+fn get_crates_recoursive(path: &Path) -> Vec<PathBuf> {
     let mut crates: Vec<PathBuf> = vec![];
     for entry in path.read_dir().expect("read_dir call failed").flatten() {
         if entry.path().ends_with("target") {
@@ -170,16 +176,17 @@ fn get_crates(path: &Path) -> Vec<PathBuf> {
             crates.push(entry.path().parent().unwrap().to_path_buf());
         }
         if entry.path().is_dir() {
-            crates.extend(get_crates(entry.path().as_path()));
+            crates.extend(get_crates_recoursive(entry.path().as_path()));
         }
     }
+
     crates
 }
 
 // TODO: go deeper than 2 levels to also handle examples/*/src/main.rs
 // TODO: but exclude examples/*/target/
 fn get_all_the_examples() -> Vec<String> {
-    println!("\nget_all_the_examples");
+    println!("get_all_the_examples");
 
     let exclude: Vec<String> = [
         "examples/image/create-image/image.png",
@@ -195,6 +202,8 @@ fn get_all_the_examples() -> Vec<String> {
         .filter(|path| !exclude.contains(path))
         .cloned()
         .collect();
+
+    println!("get_all_the_examples done\n");
     pathes
 }
 
@@ -227,7 +236,7 @@ fn get_examples(path: &Path) -> Vec<String> {
 }
 
 fn get_imported_files(md_files: Vec<PathBuf>) -> Vec<String> {
-    println!("\nget_imported_files");
+    println!("get_imported_files");
     // println!("{:?}", md_files);
     // ![](examples/arrays/update_hash.rs)
     // let re = Regex::new(r"^!\[\]]\((.*)\)\s*$").unwrap();
@@ -250,11 +259,12 @@ fn get_imported_files(md_files: Vec<PathBuf>) -> Vec<String> {
             }
         }
     }
+    println!("get_imported_files done\n");
     return Vec::from_iter(imported_files.iter().map(|s| s.to_string()));
 }
 
 fn get_md_files() -> Vec<PathBuf> {
-    println!("\nget_md_files");
+    println!("get_md_files");
     let mut md_files = vec![];
     let path = Path::new(".");
     for entry in path.read_dir().expect("read_dir call failed").flatten() {
@@ -270,5 +280,7 @@ fn get_md_files() -> Vec<PathBuf> {
         }
         //println!("{:?}", extension.unwrap())
     }
+
+    println!("get_md_files done\n");
     md_files
 }
