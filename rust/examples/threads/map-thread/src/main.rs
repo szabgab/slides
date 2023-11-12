@@ -1,6 +1,8 @@
 use std::sync::mpsc;
 use std::thread;
 use std::marker::Send;
+use rayon::prelude::*;
+
 
 
 fn main() {
@@ -15,9 +17,19 @@ fn main() {
 
     let doubles = map_thread(&numbers, double_function, 3);
     println!("{:?}", doubles);
+
+    let doubles = numbers.into_par_iter().map(double_function2).collect::<Vec<i32>>();
+    //let doubles = numbers.into_par_iter().map(|val| double_function(&val)).collect::<Vec<i32>>();
+    println!("{:?}", doubles);
 }
 
 fn double_function(num: &i32) -> i32 {
+    //println!("{:?}", std::thread::current().id());
+    2 * num
+}
+
+fn double_function2(num: i32) -> i32 {
+    //println!("{:?}", std::thread::current().id());
     2 * num
 }
 
