@@ -63,7 +63,6 @@
 
 * TODO: show in both cases how to handle cases when a fiedl is missing or the value is incorrect type (eg. we have  "x": "qqrq")
 * TODO: show in both cases what happens if there are fields in the JSON file that we don't know about in the struct.
-* TODO: show using from_reader
 * TODO: show lists in the JSON file
 * TODO: show deeper structure
 
@@ -71,3 +70,16 @@
 ![](examples/json/json-read-from-file/src/main.rs)
 
 ![](examples/json/json-read-from-file/out.out)
+
+
+## Read JSON file using from_reader
+{id: read-json-file-using-from-reader}
+{i: from_reader}
+
+![](examples/json/json-read-from-reader/data.json)
+
+![](examples/json/json-read-from-reader/Cargo.toml)
+
+![](examples/json/json-read-from-reader/src/main.rs)
+
+![](examples/json/json-read-from-reader/out.out)
