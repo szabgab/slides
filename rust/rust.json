@@ -46,6 +46,7 @@
         "sets.md",
         "clap.md",
         "json.md",
+        "yaml.md",
         "toml.md",
         "iterators.md",
         "advanced-functions.md",
