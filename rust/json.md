@@ -42,3 +42,32 @@
 * Deserialize into struct
 * Read multi-json files (the result of a json-based logger)
 
+## Read JSON file
+{id: read-json-file}
+{i: serde_json}
+{i: from_str}
+{i: Value}
+
+* We would like to read the following simple JSON file:
+
+![](examples/json/json-read-from-file/data.json)
+
+* We need [serde](https://serde.rs/) and [serde_json](https://docs.rs/serde_json/latest/serde_json/)
+
+![](examples/json/json-read-from-file/Cargo.toml)
+
+* We first open the file and read the content of the file.
+* Then we parse the string in two ways.
+* Once into a generic `serde::Value` structure. In this case we need to extract and convert the values.
+* Once into a pre-defined `struct`.
+
+* TODO: show in both cases how to handle cases when a fiedl is missing or the value is incorrect type (eg. we have  "x": "qqrq")
+* TODO: show in both cases what happens if there are fields in the JSON file that we don't know about in the struct.
+* TODO: show using from_reader
+* TODO: show lists in the JSON file
+* TODO: show deeper structure
+
+
+![](examples/json/json-read-from-file/src/main.rs)
+
+![](examples/json/json-read-from-file/out.out)
