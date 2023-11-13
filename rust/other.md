@@ -229,3 +229,17 @@ SENDGRID_API_KEY=SG....
 
 TODO: wait, waitpid?
 
+## sysinfo - Which Operating System are we running on?
+{id: which-operating-system}
+{i: systinfo}
+{i: kernel_version}
+{i: os_version}
+
+* [sysinfo](https://docs.rs/sysinfo/latest/sysinfo/)
+
+![](examples/other/system-info/Cargo.toml)
+
+![](examples/other/system-info/src/main.rs)
+
+![](examples/other/system-info/out.out)
+
