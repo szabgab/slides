@@ -243,3 +243,17 @@ TODO: wait, waitpid?
 
 ![](examples/other/system-info/out.out)
 
+## Operating system information with os_info
+{id: operating-system}
+{i: os_info}
+{i: os_type}
+{i: architecture}
+
+* [os_info](https://crates.io/crates/os_info)
+
+![](examples/other/os-information/Cargo.toml)
+
+![](examples/other/os-information/src/main.rs)
+
+![](examples/other/os-information/out.out)
+
