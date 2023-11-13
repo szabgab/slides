@@ -47,5 +47,5 @@ https://github.com/dracula/pygments
 Install rustatic from https://github.com/szabgab/rustatic
 
 ```
-rustatic --path html/ --indexfile index.html --nice
+rustatic --path html/ --indexfile index.html --nice --port 5000
 ```
