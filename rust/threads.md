@@ -133,3 +133,35 @@ TODO: This is experimental code that needs to be improved
 
 ![](examples/threads/map-thread/src/main.rs)
 
+
+## Counter in a loop in the same process and thread
+{id: counter-in-a-loop}
+
+
+* This simple examples shows how we can change a variable from multiple threads
+* This is the example without any threads:
+
+![](examples/threads/counter-loop/src/main.rs)
+
+
+## Counter with threads (shared variable?)
+{id: counter-with-threads}
+{i: Mutex}
+{i: lock}
+
+* Solution is using Mutex
+
+![](examples/threads/counter-with-mutex/src/main.rs)
+
+## Counter with message passing
+{id: counter-with-message-passing}
+{i: mpsc}
+{i: channel}
+{i: send}
+{i: drop}
+
+* Solution using messages
+
+![](examples/threads/counter-with-messages/src/main.rs)
+
+
