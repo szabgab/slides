@@ -133,6 +133,11 @@ TODO: This is experimental code that needs to be improved
 
 ![](examples/threads/map-thread/src/main.rs)
 
+## map with threads with Mutex
+{id: map-with-thread-mutex}
+{i: Mutex}
+
+![](examples/threads/map-thread-suggested/src/main.rs)
 
 ## Counter in a loop in the same process and thread
 {id: counter-in-a-loop}
