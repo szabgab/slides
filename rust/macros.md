@@ -101,7 +101,18 @@ DSL - Domain Specific Language
 
 ## Procedural macros
 {id: procedural-macros}
+{i: proc-macro}
+{i: TokenStream}
 
 * [procedural macros](https://doc.rust-lang.org/reference/procedural-macros.html)
 
+* Add `proc-macro` to the `Cargo.toml`
+
+![](examples/macros/random-constant-macro/Cargo.toml)
+![](examples/macros/random-constant-macro/src/lib.rs)
+
+![](examples/macros/random-constant/Cargo.toml)
+![](examples/macros/random-constant/src/main.rs)
+
 TODO: #[macro_export]
+
