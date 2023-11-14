@@ -52,7 +52,7 @@ fn main() {
 }
 
 fn check_crates(crates: Vec<PathBuf>, verbose: bool) -> i32 {
-    println!("\ncheck_crates");
+    println!("check_crates");
     let mut clippy_error = 0;
     let number_of_crates = crates.len();
 
