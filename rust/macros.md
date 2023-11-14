@@ -108,6 +108,19 @@ DSL - Domain Specific Language
 
 * Add `proc-macro` to the `Cargo.toml`
 
+* Here we show that the macro is executed during the compilation.
+* It needs to return a TokenStream.
+
+![](examples/macros/hello-world-macro/Cargo.toml)
+![](examples/macros/hello-world-macro/src/lib.rs)
+
+![](examples/macros/hello-world-use/Cargo.toml)
+![](examples/macros/hello-world-use/src/main.rs)
+
+
+## Compile random number in the code using macro
+{id: compile-random-number-on-the-code}
+
 ![](examples/macros/random-constant-macro/Cargo.toml)
 ![](examples/macros/random-constant-macro/src/lib.rs)
 
