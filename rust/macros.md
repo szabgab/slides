@@ -11,6 +11,7 @@ Somthing that looks like a function but ends with an exclamation point. e.g. `pr
 
 * [List of macros](https://doc.rust-lang.org/std/#macros)
 * [Macros in the reference](https://doc.rust-lang.org/reference/macros.html)
+* [The Little book of Rust Macros](https://veykril.github.io/tlborm/)
 
 * print!
 * println!
@@ -42,7 +43,7 @@ DSL - Domain Specific Language
 
 ![](examples/macros/hello-world/src/main.rs)
 
-## Say hello macro
+## macro to say hello
 {id: macro-say-hello}
 {i: macro_rules!}
 {i: expr}
@@ -61,6 +62,28 @@ DSL - Domain Specific Language
 
 ![](examples/macros/say-hello/src/main.rs)
 
+
+## Macro to say hello many times
+{id: macro-say-hello-many-times}
+{i: macro_rules!}
+{i: expr}
+{i: "*"}
+{i: "+"}
+
+* This macro can accept 0 or more parameters and then it will repeate the code as many times as parameters we got.
+* Instead of `*` we could use `+` in the declaration and that would mean the macro accepts 1 or more parameters.
+
+![](examples/macros/say-hello-many-times/src/main.rs)
+![](examples/macros/say-hello-many-times/out.out)
+
+## Macro to create a HashMap to be a counter
+{id: macro-to-crate-a-hashmap}
+{i: HashMap}
+
+![](examples/macros/create-counter-hash/src/main.rs)
+![](examples/macros/create-counter-hash/out.out)
+
+
 ## HTML to string macro
 {id: html-to-string-macro}
 
@@ -76,4 +99,9 @@ DSL - Domain Specific Language
 * [num-traits](https://crates.io/crates/num-traits)
 * [num-traits](https://docs.rs/num-traits)
 
+## Procedural macros
+{id: procedural-macros}
 
+* [procedural macros](https://doc.rust-lang.org/reference/procedural-macros.html)
+
+TODO: #[macro_export]
