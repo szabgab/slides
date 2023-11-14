@@ -31,3 +31,49 @@ cargo run foo
 cargo run bar
 ```
 
+## Declarative macros
+{id: declarative-macros}
+
+DSL - Domain Specific Language
+
+## Hello World macro
+{id: macro-hello-world}
+{i: macro_rules!}
+
+![](examples/macros/hello-world/src/main.rs)
+
+## Say hello macro
+{id: macro-say-hello}
+{i: macro_rules!}
+{i: expr}
+
+* name of the macro
+* parameters of the macro
+* `$name: expr`    means we have a parameter called `$name` and it has a type "expr" (expression)
+
+
+// $t:ty          means we have a paramerer called $t    and it has a type "ty" (type, such as i32 or f64)
+// With this macro we can replace a short syntax with a longer syntax in at compile time.
+
+//maco_rules! include_text_file {
+//}
+
+
+![](examples/macros/say-hello/src/main.rs)
+
+## HTML to string macro
+{id: html-to-string-macro}
+
+* [html-to-string-macro](https://crates.io/crates/html-to-string-macro)
+
+![](examples/macros/embed-html/Cargo.toml)
+![](examples/macros/embed-html/src/main.rs)
+
+## Num traits
+{id: num-traits}
+
+
+* [num-traits](https://crates.io/crates/num-traits)
+* [num-traits](https://docs.rs/num-traits)
+
+
