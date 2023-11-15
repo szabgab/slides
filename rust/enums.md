@@ -35,3 +35,13 @@
 ![](examples/enums/colors-match/src/main.rs)
 ![](examples/enums/colors-match/out.out)
 
+
+## Struct using enum
+{id: struct-using-enum}
+{i: struct}
+{i: enum}
+
+![](examples/enums/colors-struct/src/main.rs)
+![](examples/enums/colors-struct/out.out)
+
+
