@@ -1,0 +1,9 @@
+Input: Joe
+Value: Joe
+Input: cat, dog, elephant
+Value: cat, dog, elephant
+Hello 'Joe'
+---
+Hello 'cat'
+Hello 'dog'
+Hello 'elephant'

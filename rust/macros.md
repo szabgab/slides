@@ -121,6 +121,25 @@ cargo run bar
 ![](examples/macros/hello-world-use/src/main.rs)
 
 
+## Macro accepting a single string
+{id: macro-accepting-a-single-string}
+
+![](examples/macros/say-hello-macro/src/lib.rs)
+![](examples/macros/say-hello-use/out.out)
+![](examples/macros/say-hello-use/src/main.rs)
+
+
+## Accept list of values as a plain string in a macro
+{id: accept-list-of-values-as-a-plain-string}
+
+![](examples/macros/say-hello-many-times-macro/Cargo.toml)
+![](examples/macros/say-hello-many-times-macro/src/lib.rs)
+
+![](examples/macros/say-hello-many-times-use/Cargo.toml)
+![](examples/macros/say-hello-many-times-use/src/main.rs)
+![](examples/macros/say-hello-many-times-use/out.out)
+
+
 ## Compile random number in the code using macro
 {id: compile-random-number-on-the-code}
 
