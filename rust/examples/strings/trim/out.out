@@ -1,0 +1,4 @@
+original:   '  Some text  '
+trim_end:   '  Some text'
+trim_start: 'Some text  '
+trim:       'Some text'

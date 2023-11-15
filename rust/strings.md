@@ -253,3 +253,14 @@
 ![](examples/strings/embed-double-quotes/src/main.rs)
 ![](examples/strings/embed-double-quotes/out.out)
 
+## Remove leading and trailing whitespace
+{id: remove-leading-and-trailing-whitespace}
+{i: trim}
+{i: trim_end}
+{i: trim_start}
+
+* Read more about [trim](https://doc.rust-lang.org/std/string/struct.String.html#method.trim) and the related functions.
+
+![](examples/strings/trim/src/main.rs)
+![](examples/strings/trim/out.out)
+
