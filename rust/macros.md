@@ -14,11 +14,12 @@ Somthing that looks like a function but ends with an exclamation point. e.g. `pr
 * [Macros in the reference](https://doc.rust-lang.org/reference/macros.html)
 * [The Little book of Rust Macros](https://veykril.github.io/tlborm/)
 
-* print!
-* println!
-* vec!
-* todo!
-* unimplemented!
+* [print!](https://doc.rust-lang.org/std/macro.print.html)
+* [println!](https://doc.rust-lang.org/std/macro.println.html)
+* [vec!](https://doc.rust-lang.org/std/macro.vec.html)
+* [todo!](https://doc.rust-lang.org/std/macro.todo.html)
+* [unimplemented!](https://doc.rust-lang.org/std/macro.unimplemented.html)
+* [matches!](https://doc.rust-lang.org/std/macro.matches.html)
 
 ## todo!
 {id: macro-todo}
