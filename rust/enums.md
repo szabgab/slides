@@ -44,4 +44,11 @@
 ![](examples/enums/colors-struct/src/main.rs)
 ![](examples/enums/colors-struct/out.out)
 
+## Enums with embedded values and comparing them with match
+{id: enums-with-embedded-values}
+{i: enum}
+
+![](examples/enums/colors-enum-with-value/src/main.rs)
+![](examples/enums/colors-enum-with-value/out.out)
+
 
