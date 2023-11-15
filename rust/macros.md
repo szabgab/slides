@@ -8,6 +8,7 @@
 Somthing that looks like a function but ends with an exclamation point. e.g. `println!`
 
 * Metaprogramming - a program that generate a program
+* DSL - Domain Specific Language
 
 * [List of macros](https://doc.rust-lang.org/std/#macros)
 * [Macros in the reference](https://doc.rust-lang.org/reference/macros.html)
@@ -16,6 +17,8 @@ Somthing that looks like a function but ends with an exclamation point. e.g. `pr
 * print!
 * println!
 * vec!
+* todo!
+* unimplemented!
 
 ## todo!
 {id: macro-todo}
@@ -35,7 +38,6 @@ cargo run bar
 ## Declarative macros
 {id: declarative-macros}
 
-DSL - Domain Specific Language
 
 ## Hello World macro
 {id: macro-hello-world}
@@ -43,7 +45,7 @@ DSL - Domain Specific Language
 
 ![](examples/macros/hello-world/src/main.rs)
 
-## macro to say hello
+## Macro with parameter to say hello
 {id: macro-say-hello}
 {i: macro_rules!}
 {i: expr}
@@ -63,7 +65,7 @@ DSL - Domain Specific Language
 ![](examples/macros/say-hello/src/main.rs)
 
 
-## Macro to say hello many times
+## Macro with many parameters to say hello
 {id: macro-say-hello-many-times}
 {i: macro_rules!}
 {i: expr}
@@ -105,6 +107,7 @@ DSL - Domain Specific Language
 {i: TokenStream}
 
 * [procedural macros](https://doc.rust-lang.org/reference/procedural-macros.html)
+* Apparently the Macro needs to be in its own Crate separate from where it is being used.
 
 * Add `proc-macro` to the `Cargo.toml`
 
@@ -128,4 +131,10 @@ DSL - Domain Specific Language
 ![](examples/macros/random-constant/src/main.rs)
 
 TODO: #[macro_export]
+
+## SQLx - compile-time SQL queries
+{id: sqlx-compile-time-sql-queries}
+
+TODO
+* [SQLx](https://crates.io/crates/sqlx)
 
