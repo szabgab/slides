@@ -10,7 +10,6 @@ Somthing that looks like a function but ends with an exclamation point. e.g. `pr
 * Metaprogramming - a program that generate a program
 * DSL - Domain Specific Language
 
-* [List of macros](https://doc.rust-lang.org/std/#macros)
 * [Macros in the reference](https://doc.rust-lang.org/reference/macros.html)
 * [The Little book of Rust Macros](https://veykril.github.io/tlborm/)
 
@@ -18,8 +17,13 @@ Somthing that looks like a function but ends with an exclamation point. e.g. `pr
 * [println!](https://doc.rust-lang.org/std/macro.println.html)
 * [vec!](https://doc.rust-lang.org/std/macro.vec.html)
 * [todo!](https://doc.rust-lang.org/std/macro.todo.html)
+* [include_str!](https://doc.rust-lang.org/std/macro.include_str.html)
+* [include_bytes!](https://doc.rust-lang.org/std/macro.include_bytes.html)
 * [unimplemented!](https://doc.rust-lang.org/std/macro.unimplemented.html)
 * [matches!](https://doc.rust-lang.org/std/macro.matches.html)
+
+* [Full list of standard macros](https://doc.rust-lang.org/std/#macros)
+* [Crates tagged as macro](https://crates.io/keywords/macro)
 
 ## todo!
 {id: macro-todo}
@@ -39,10 +43,17 @@ cargo run bar
 ## Declarative macros
 {id: declarative-macros}
 
+* Use `macro_rules!`
+* Macros look like functions with an exclamation mark `!` at the end.
+* `match`-like arms to match the input of the macro.
+
 
 ## Hello World macro
 {id: macro-hello-world}
 {i: macro_rules!}
+
+* The name of the macro is `hello_world`
+* The `()` matches empty input.
 
 ![](examples/macros/hello-world/src/main.rs)
 
@@ -51,19 +62,24 @@ cargo run bar
 {i: macro_rules!}
 {i: expr}
 
-* name of the macro
+* The macro is called `say_hello`.
 * parameters of the macro
-* `$name: expr`    means we have a parameter called `$name` and it has a type "expr" (expression)
+* `$name: expr`    means that the macro is expecting an `expr` (expression) and it will be assigned to a variable called `$name`.
 
 
 // $t:ty          means we have a paramerer called $t    and it has a type "ty" (type, such as i32 or f64)
 // With this macro we can replace a short syntax with a longer syntax in at compile time.
 
-//maco_rules! include_text_file {
-//}
-
 
 ![](examples/macros/say-hello/src/main.rs)
+
+## Macro with optional parameter to say hello
+{id: macro-with-optional-parameter}
+
+* In this macro we have two "arms". The first will handle the case when no paramater is passed.
+* We can have separate implementations or we can recursively use the macro.
+
+![](examples/macros/say-hello-optional/src/main.rs)
 
 
 ## Macro with many parameters to say hello
