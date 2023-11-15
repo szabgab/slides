@@ -8,7 +8,7 @@ pub fn say_hello(input: TokenStream) -> TokenStream {
     let value = input.to_string();
     println!("Value: {}", value);
 
-    let values = value.split(",").map(|val| val.trim()).collect::<Vec<&str>>();
+    let values = value.split(',').map(|val| val.trim()).collect::<Vec<&str>>();
     let mut code = "".to_string();
     for val in values {
         code += format!(r#"println!("Hello '{val}'");"#).as_str();
