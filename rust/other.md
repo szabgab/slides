@@ -257,3 +257,12 @@ TODO: wait, waitpid?
 
 ![](examples/other/os-information/out.out)
 
+
+## Parse string to Rust expression using syn
+{id: parse-string-to-rust-expression}
+{i: syn}
+{i: parse_str}
+
+![](examples/other/syn-parse-str/src/main.rs)
+![](examples/other/syn-parse-str/out.out)
+
