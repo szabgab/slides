@@ -1,0 +1,3 @@
+vector of pairs: [("snake", 1), ("dog", 2), ("cat", 3)]
+hash: {"cat": 3, "snake": 1, "dog": 2}
+dog: 2

@@ -163,3 +163,15 @@
 
 ![](examples/hashes/multiple-mapping-from-vector/src/main.rs)
 
+
+## Create hash from vector of tuple pairs
+{id: create-hash-from-vector-of-pairs}
+{i: vec!}
+{i: Vec}
+{i: HashMap}
+{i: from_iter}
+
+
+![](examples/hashes/hash-from-vector/src/main.rs)
+![](examples/hashes/hash-from-vector/out.out)
+
