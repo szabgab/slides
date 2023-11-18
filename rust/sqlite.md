@@ -21,20 +21,20 @@
 ![](examples/sqlite/in-memory-example/out.out)
 
 
-## SQLite INSERT with placeholder
-{id: sqlite-insert-with-placeholder}
-{i: prepare}
-{i: bind}
-{i: next}
-
-![](examples/sqlite/in-memory-select-placeholders/src/main.rs)
-
 ## SQLite SELECT with placeholder
 {id: sqlite-select-with-placeholder}
 {i: prepare}
 {i: bind_iter}
 {i: next}
 
+
+![](examples/sqlite/in-memory-select-placeholders/src/main.rs)
+
+## SQLite INSERT with placeholder
+{id: sqlite-insert-with-placeholder}
+{i: prepare}
+{i: bind}
+{i: next}
 
 ![](examples/sqlite/in-memory-insert-placeholders/src/main.rs)
 
