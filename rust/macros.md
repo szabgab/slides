@@ -177,3 +177,31 @@ TODO: #[macro_export]
 TODO
 * [SQLx](https://crates.io/crates/sqlx)
 
+
+## Macro ok! to replace unwrap
+{id: macri-ok}
+
+Seen in the tests of the sqlite crate.
+
+```
+macro_rules! ok(($result:expr) => ($result.unwrap()));
+```
+
+## Error logging
+{id: macro-error-logging}
+
+A macro that will replace
+
+
+```
+let x = err_log!(expression);
+
+let x = match expression {
+    Ok(val) => val,
+    Err(err) => {
+        log::error!("{:?}", err),
+    }
+}
+```
+
+
