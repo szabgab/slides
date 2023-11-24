@@ -2,7 +2,8 @@ use eframe::egui;
 
 fn main() -> Result<(), eframe::Error> {
     let options = eframe::NativeOptions {
-        initial_window_size: Some(egui::vec2(320.0, 240.0)),
+        viewport: egui::ViewportBuilder::default()
+        .with_inner_size([320.0, 240.0]),
         ..Default::default()
     };
 
