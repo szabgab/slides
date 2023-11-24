@@ -17,7 +17,7 @@ fn main() {
     }
     let _ = insert_statement.next();
 
-    insert_statement.reset();
+    let _ = insert_statement.reset();
     match insert_statement.bind_iter::<_, (_, sqlite::Value)>([
         (":name", "George".into()),
         (":age", 99.into()),
