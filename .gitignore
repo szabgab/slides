@@ -111,3 +111,4 @@ crystal/examples/kemal/bin/
 /rust/*.o
 /rust/examples/other/multi_counter_with_manual_csv/counter.csv
 /rust/examples/other/send-mail-with-sendgrid/config.txt
+/rust/examples/sqlite/counter/counter.db

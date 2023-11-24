@@ -30,6 +30,9 @@ fn main() {
         if filename.ends_with("swp") {
             continue;
         }
+        if filename.ends_with("counter.db") {
+            continue;
+        }
         if !imported_files.contains(&filename) {
             println!("ERROR Unused file: `{}`", filename);
             count += 1;

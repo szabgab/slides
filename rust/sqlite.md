@@ -38,4 +38,8 @@
 
 ![](examples/sqlite/in-memory-insert-placeholders/src/main.rs)
 
+## SQLite Counter
+{id: sqlite-counter}
+
+![](examples/sqlite/counter/src/main.rs)
 
