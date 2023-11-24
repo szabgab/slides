@@ -72,4 +72,10 @@ This was [reported here](https://github.com/emilk/egui/issues/3413).
 
 
 
+## Egui demo app
+{id: egui-demo-app}
+
+* Taken from the [documentation](https://docs.rs/eframe/0.24.0/eframe/)
+
+![](examples/egui/egui-app/src/main.rs)
 
