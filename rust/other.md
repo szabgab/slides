@@ -266,3 +266,17 @@ TODO: wait, waitpid?
 ![](examples/other/syn-parse-str/src/main.rs)
 ![](examples/other/syn-parse-str/out.out)
 
+## Parse HTML
+{id: parse-html}
+{i: Html}
+{i: parse}
+{i: parse_document}
+{i: CSS}
+{i: Selector}
+{i: attr}
+{i: inner_html}
+
+* [scraper](https://crates.io/crates/scraper)
+
+![](examples/other/parse-html/src/main.rs)
+
