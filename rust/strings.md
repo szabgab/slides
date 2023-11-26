@@ -264,3 +264,12 @@
 ![](examples/strings/trim/src/main.rs)
 ![](examples/strings/trim/out.out)
 
+## Remove extra whitespace from string
+{id: remove-extra-whitespace-from-string}
+{i: split_whitespace}
+
+* The second solution is obviously the better solution, but the first one might be applied to situations where we would like to get rid of other duplicate characters.
+
+![](examples/strings/remove-extra-white-spaces/src/main.rs)
+![](examples/strings/remove-extra-white-spaces/out.out)
+
