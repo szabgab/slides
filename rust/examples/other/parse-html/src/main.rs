@@ -14,11 +14,15 @@ fn main() {
     for element in document.select(&selector) {
         assert_eq!(element.value().name(), "h1");
         assert_eq!(element.attr("class").unwrap(), "foo");
-        assert_eq!(element.inner_html(), "Hello, <i>world!</i>");
+        assert_eq!(element.inner_html(), "Hello, <i>world!</i>");       
         assert!(element.has_children());
         let x = element.has_children();
         //let x = element.inner_html();
         println!("{:?}", x);
+
+        // The text content of an elemnet after removing all the markup
+        let text = element.text().collect::<Vec<_>>().join("");
+        assert_eq!(text, "Hello, world!");
     }
 
     let selector = Selector::parse("i").unwrap();
