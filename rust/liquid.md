@@ -223,3 +223,13 @@ This is using the [liquid-filter-reverse-string](https://crates.io/crates/liquid
 ![](examples/liquid/liquid-filter-commafy-use/Cargo.toml)
 ![](examples/liquid/liquid-filter-commafy-use/src/main.rs)
 
+## Liquid: length of string, size of vector
+{id: liquid-length-size}
+{i: len}
+{i: size}
+
+* Sometimes we would like to display or compare the length of a string or the number of elements in a vector.
+* We can do that using the `size` attribute.
+
+![](examples/liquid/liquid-size/src/main.rs)
+
