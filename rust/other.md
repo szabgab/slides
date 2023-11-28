@@ -280,3 +280,22 @@ TODO: wait, waitpid?
 
 ![](examples/other/parse-html/src/main.rs)
 
+## Fix URL parameter
+{id: fix-url-parameter}
+{i: trim_end_matches}
+{i: url}
+
+* The user can provide a URL, but I would like to be flexible and accept both with and without a trailing slash:
+* https://rust.code-maven.com
+* https://rust.code-maven.com/
+
+At first I tried some over-engineered solutions, till I got the recommendation to use `trim_end_matches`.
+
+![](examples/other/fix-url-string/src/main.rs)
+
+However using the [url](https://crates.io/crates/url) crate might be the best solution in this case:
+
+![](examples/other/fix-url/Cargo.toml)
+![](examples/other/fix-url/src/main.rs)
+
+
