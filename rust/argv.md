@@ -102,6 +102,14 @@ cargo run 3 '*' 4
 3 * 4 = 12
 ```
 
+## Default value on the command line
+{id: default-value-for-argv}
+
+* In this example we set the `config_file` variable to the parameter passed on the command line
+* or to a default value that can be any string, including the empty string.
+
+![](examples/argv/default-value/src/main.rs)
+
 
 ## Default path - return PathBuf
 {id: return-pathbuf}
