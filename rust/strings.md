@@ -273,3 +273,16 @@
 ![](examples/strings/remove-extra-white-spaces/src/main.rs)
 ![](examples/strings/remove-extra-white-spaces/out.out)
 
+## String is alphabetic or alphanumeric
+{id: string-is-alphabetic}
+{i: is_alphabetic}
+{i: is_alphanumeric}
+{i: all}
+{i: chars}
+
+The [char](https://doc.rust-lang.org/std/primitive.char.html) type has methods such as [is_alphabetic](https://doc.rust-lang.org/std/primitive.char.html#method.is_alphabetic)
+and [is_alphanumeric](https://doc.rust-lang.org/std/primitive.char.html#method.is_alphanumeric) and several other similar methods.
+
+![](examples/strings/is-alphabetic/src/main.rs)
+
+
