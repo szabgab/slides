@@ -284,5 +284,6 @@ The [char](https://doc.rust-lang.org/std/primitive.char.html) type has methods s
 and [is_alphanumeric](https://doc.rust-lang.org/std/primitive.char.html#method.is_alphanumeric) and several other similar methods.
 
 ![](examples/strings/is-alphabetic/src/main.rs)
+![](examples/strings/is-alphabetic/out.out)
 
 
