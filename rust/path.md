@@ -21,3 +21,56 @@
 
 ![](examples/path/convert-pathbuf-to-string/src/main.rs)
 
+## get file extension
+{id: get-file-extension}
+{i: Path}
+{i: extension}
+
+![](examples/path/get-extension/src/main.rs)
+
+
+## parent directory
+{id: parent-directory}
+{i: parent}
+{i: dirname}
+
+* [parent](https://doc.rust-lang.org/std/path/struct.Path.html#method.parent)
+
+![](examples/path/parent/src/main.rs)
+![](examples/path/parent/out.out)
+
+## directory ancestors (parent directories)
+{id: directory-ancestors}
+{i: ancestors}
+
+* [ancestors](https://doc.rust-lang.org/std/path/struct.Path.html#method.ancestors)
+
+![](examples/path/ancestors/src/main.rs)
+![](examples/path/ancestors/out.out)
+
+## directory ancestor (n level)
+{id: directory-ancestor}
+{i: ancestor}
+{i: ancestors}
+{i: nth}
+{i: next}
+
+![](examples/path/ancestor/src/main.rs)
+![](examples/path/ancestor/out.out)
+
+## join pathes
+{id: join-pathes}
+{i: join}
+
+![](examples/path/join/src/main.rs)
+![](examples/path/join/out.out)
+
+
+## basename (file_name)
+{id: basename}
+{i: file_name}
+{i: basename}
+
+
+![](examples/path/basename/src/main.rs)
+
