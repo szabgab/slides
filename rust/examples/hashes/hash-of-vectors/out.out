@@ -1,0 +1,18 @@
+{
+    "Foo Bar": [
+        Address {
+            atype: "home",
+            phone: "+03-1234567",
+        },
+        Address {
+            atype: "mobile",
+            phone: "+42-1234567",
+        },
+    ],
+    "Joe Doe": [
+        Address {
+            atype: "mobile",
+            phone: "+1-1234-567",
+        },
+    ],
+}

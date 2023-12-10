@@ -175,3 +175,15 @@
 ![](examples/hashes/hash-from-vector/src/main.rs)
 ![](examples/hashes/hash-from-vector/out.out)
 
+
+## Hash of vectors in Rust
+{id: hash-of-vectors}
+{i: and_modify}
+{i: split}
+{i: contains_key}
+{i: insert}
+
+
+![](examples/hashes/hash-of-vectors/src/main.rs)
+
+![](examples/hashes/hash-of-vectors/out.out)
