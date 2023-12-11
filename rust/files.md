@@ -67,6 +67,7 @@
 {id: count-digits-in-file}
 {i: chars}
 {i: usize}
+{i: enumerate}
 
 ![](examples/files/count-digits/src/main.rs)
 ![](examples/files/count-digits/out.out)
