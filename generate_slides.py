@@ -91,8 +91,11 @@ def select_books(args):
     return names, books
 
 def get_availables():
-    with open(os.path.join(root, 'slides.txt')) as fh:
-        available_names = map(lambda s: s.rstrip("\n"), fh.readlines())
+    available_names = []
+    slides_path = os.path.join(root, 'slides.txt')
+    if os.path.exists(slides_path):
+        with open(slides_path) as fh:
+            available_names = map(lambda s: s.rstrip("\n"), fh.readlines())
 
     with open(os.path.join(root, 'books.txt')) as fh:
         available_books = []
