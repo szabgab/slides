@@ -1,8 +1,0 @@
-to stdout
-to stderr. Exit code 3
-exit status: 3
-
-to stdout
-to stderr. Exit code 0
-exit status: 0
-

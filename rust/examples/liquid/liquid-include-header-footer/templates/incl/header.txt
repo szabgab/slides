@@ -1,2 +1,0 @@
-title in header: {{title}}
-value in header: {{header_value}}

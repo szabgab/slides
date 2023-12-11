@@ -1,5 +1,0 @@
-126
-127
-thread 'main' panicked at 'attempt to add with overflow', examples/intro/increment_small_integers.rs:8:5
-note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
-

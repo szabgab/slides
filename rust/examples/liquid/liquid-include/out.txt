@@ -1,8 +1,0 @@
-title in header: Liquid
-value in header: some value
-
-
-title in page template: Liquid
-name in page template: Foo Bar
-
-
