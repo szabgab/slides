@@ -4,15 +4,15 @@
 ## Biopython
 {id: bio-python}
 
-* [Biopython](http://biopython.org/)
+* [Biopython](https://biopython.org/)
 * [Biopython GitHub project](https://github.com/biopython/biopython)
-* [Biopython Tutorial and Cookbook](http://biopython.org/DIST/docs/tutorial/Tutorial.html)
+* [Biopython Tutorial and Cookbook](https://biopython.org/DIST/docs/tutorial/Tutorial.html)
 
 
 ## Biopython background
 {id: bio-python-background}
 
-* [Sequence formats](https://www.genomatix.de/online_help/help/sequence_formats.html) (FASTA, FASTQ, EMBL, ...)
+* Sequence formats:
 * [FASTA](https://en.wikipedia.org/wiki/FASTA_format)
 * [FASTQ](https://en.wikipedia.org/wiki/FASTQ_format)
 * [EMBL](https://en.wikipedia.org/wiki/European_Molecular_Biology_Laboratory) European Molecular Biology Laboratory
