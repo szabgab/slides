@@ -9,6 +9,12 @@ This application shows a number of widgets available in Python Tk.
 The primary goal is to show a few features that we'll learn about on the following pages.
 {/aside}
 
+* On recent versions of Ubuntu you might need to install python3-tk in addition to python3 using
+
+```
+sudo apt-get install python3-tk
+```
+
 ![](examples/tk/tk_demo.py)
 
 ## Simple file dialog
