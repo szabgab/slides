@@ -204,6 +204,7 @@ However they are more complex to implement.
 
 ## Multi-feature Classification (Iris)
 {id: ml-multi-feature-classification-iris}
+{i: iris}
 
 ```
 multi_feature_classification_iris.ipynb

@@ -99,4 +99,10 @@ Using generated data
 
 * examples/ml/usa-housing-listings.ipynb
 
+## Kaggle - Iris
+{id: ml-kaggle-iris}
+{i: iris}
+
+* examples/ml/iris.ipynb
+
 
