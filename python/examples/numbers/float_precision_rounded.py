@@ -4,6 +4,7 @@ y = 0.3
 print(x)   # 0.30000000000000004
 print(y)   # 0.3
 
+print(round(x, 10))
 if round(x, 10) == round(y, 10):
     print("They are equal")
 else:
