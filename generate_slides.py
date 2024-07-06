@@ -136,7 +136,7 @@ def generate_singles(names, ext):
 def generate_multis(books, ext, hostname):
     for book in books:
         print("{} - {} - {} - {}".format(book['dir'], book['filename'], book['outdir'], book['canonical']))
-        cmd = '''{executable} "{slider}" --yaml "{root}/{bdir}/{bfilename}" --html --dir "{root}/html/{boutdir}/" --templates "{root}/templates/" --static "{root}/static/" --url "{hostname}/slides/{canonical}" {ext}'''.format(
+        cmd = '''{executable} "{slider}" --config "{root}/{bdir}/{bfilename}" --html --dir "{root}/html/{boutdir}/" --templates "{root}/templates/" --static "{root}/static/" --url "{hostname}/slides/{canonical}" {ext}'''.format(
             executable = sys.executable,
             hostname = hostname,
             slider = slider,
