@@ -10,14 +10,14 @@ jobs:
     steps:
 
     - name: Checkout slider-py
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
       with:
         repository: 'szabgab/slider-py'
         path: slider-py
 
 
     - name: Checkout this repo
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
       with:
         path: slides
 
@@ -30,7 +30,7 @@ jobs:
         ls -l slider-py/
 
     - name: Set up Python
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v5
       with:
         python-version: 3.11
 
@@ -57,7 +57,7 @@ jobs:
 
   #  steps:
   #  - name: Checkout this repo
-  #    uses: actions/checkout@v3
+  #    uses: actions/checkout@v4
 
   #  - name: Check files
   #    run: |
