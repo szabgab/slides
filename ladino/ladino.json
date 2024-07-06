@@ -5,6 +5,7 @@
     "copyright_name": "Gabor Szabo",
     "copyright_url": "https://szabgab.com/",
     "version": "1.00",
+    "repo": "https://github.com/szabgab/slides/blob/main/",
     "files": [
         "ladino.md"
     ]

@@ -5,6 +5,7 @@
     "description": "Ruby tutorials and training course for beginner Ruby programmers.",
     "copyright_name": "Gabor Szabo",
     "copyright_url": "https://szabgab.com/",
+    "repo": "https://github.com/szabgab/slides/blob/main/",
     "version": "1.18",
     "files": [
         "intro.md",
