@@ -53,7 +53,7 @@
       <b>{{ c.title }}</b><br>
       {% if c.filename.endswith('.out') or c.filename.endswith('.err') %}
       {% else %}
-         <b><a href="https://github.com/szabgab/slides/tree/main/{{ srcdir }}/{{ c.filename }}" rel="nofollow">{{ c.filename }}</a></b><br>
+         <b><a href="{{repo}}{{ srcdir }}/{{ c.filename }}" rel="nofollow">{{ c.filename }}</a></b><br>
       {% endif %}
 
 <pre class="included-code dracula">
