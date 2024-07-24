@@ -27,6 +27,16 @@ Specific examples:
 
 {aside}
 There are two mechanism in PyTest to setup and teardown fixtures. One of them is the xUnit-style system that is also available in other languages such as Java and C#.
+
+In this example there are 3 tests, 3 functions that are called `test_SOMETHING`. There are also two pairs of functions to setup and teardown the fixtures on a per-function and per-module level.
+
+Before starting to run the tests of this file PyTest will run the `setup_module` function, and after it is done running the tests PyTest will run the `teardonw_module` function. This will happen even if one or more of the tests failed.  These functions will be called once regradless of the number of tests we have in the module.
+
+Before every test function PyTest will run the `setup_function` and after the test finisihed it will run the `teardown_function`. Regardless of the success or failure of the test.
+
+So in our case where we have all 4 of the fixture functions implemented and we have 3 tests function the order can be seen on the next page.
+
+In this example we also see one of the major issues of this style. The variable `db` that is set in the setup_module function must be marked as `global` in order to make it accessible in the test functions and in the `teardown_module` function.
 {/aside}
 
 ![](examples/pytest/test_fixture.py)
@@ -57,6 +67,14 @@ Note, the teardown_function is executed even after failed tests.
 {i: teardown_class}
 {i: setup_method}
 {i: teardown_method}
+
+{aside}
+In case you are using test classes then you can use another 2 pairs of functions, well actually methods, to setup and teardown the environment.
+In this case it is much easier to pass values from the setup to the test functions and to the teardown function, but we need to write the whole thing in
+OOP style.
+
+Also note, the test functions are independent. They all see the atributes set in the `setup_class`, but the test functions cannot pass values to each other.
+{/aside}
 
 ![](examples/pytest/test_class.py)
 

@@ -2,6 +2,7 @@ setup_module
 
   setup_function
     test_one
+42
     test_one after
   teardown_function
 
@@ -15,4 +16,4 @@ setup_module
   teardown_function
 
 teardown_module
-
+42

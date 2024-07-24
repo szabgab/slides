@@ -1,14 +1,18 @@
 setup_class called once for the class
-  setup_method called for every method
+<class 'test_class.TestClass'>
+  setup_method called for every method 1
+<test_class.TestClass object at 0x7d5621762960>
     one
     one after
-  teardown_method called for every method
-  setup_method called for every method
+.  teardown_method called for every method 1
+  setup_method called for every method mydb 1
+<test_class.TestClass object at 0x7d5620ee6060>
     two
-  teardown_method called for every method
-  setup_method called for every method
+F  teardown_method called for every method 1
+  setup_method called for every method 1
+<test_class.TestClass object at 0x7d5620c1c830>
     three
     three after
-  teardown_method called for every method
-teardown_class called once for the class
+.  teardown_method called for every method 1
+teardown_class called once for the class mydb
 
