@@ -1,7 +1,9 @@
+import tempfile
+
 def setup_module():
-    print("setup_module")
     global db
-    db = 42
+    db = tempfile.TemporaryDirectory()
+    print(f"setup_module: {db}")
 
 def teardown_module():
     print("teardown_module")

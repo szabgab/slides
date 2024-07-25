@@ -1,8 +1,7 @@
 # PyTest Fixtures
 {id: pytest-fixtures}
 
-
-## PyTest What are Fixtures
+## PyTest: What are Fixtures?
 {id: pytest-what-are-fixture}
 
 * In generally we call [test fixture](https://en.wikipedia.org/wiki/Test_fixture) the environment in which a test is expected to run.
@@ -17,6 +16,18 @@ Specific examples:
 
 * If I'd like to test the login mechanism, I need that before the test starts running we'll have a verified account in the system.
 * If I test the 3rd element in a pipeline I need the results of the 2nd pipeline to get started and after the test runs I need to remove all those files.
+
+## PyTest: test with functions
+{id: pytest-test-with-functions}
+
+* We need to call the `setup_db()` in every test.
+* We need to call the `teardown_db()` in every test - and it still does not work when the test fails.
+* What if there is some work that needs to be done only once and not for every test?
+
+![](examples/pytest/test_functions.py)
+
+![](examples/pytest/test_functions.out)
+
 
 ## PyTest Fixture setup and teardown xUnit style
 {id: pytest-fixture-setup-teardown}

@@ -1,0 +1,13 @@
+$ pytest -qqs test_functions.py
+
+setup_db <TemporaryDirectory '/tmp/tmppjc3h7k2'>
+    test_one <TemporaryDirectory '/tmp/tmppjc3h7k2'>
+    test_one after
+teardown_db <TemporaryDirectory '/tmp/tmppjc3h7k2'>
+setup_db <TemporaryDirectory '/tmp/tmp_0j_gnnb'>
+    test_two <TemporaryDirectory '/tmp/tmp_0j_gnnb'>
+setup_db <TemporaryDirectory '/tmp/tmpl3gvod_3'>
+    test_three <TemporaryDirectory '/tmp/tmpl3gvod_3'>
+    test_three after
+teardown_db <TemporaryDirectory '/tmp/tmpl3gvod_3'>
+
