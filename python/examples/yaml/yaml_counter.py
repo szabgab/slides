@@ -17,7 +17,7 @@ if os.path.exists(filename):
 
 if len(sys.argv) == 1:
     if counter:
-        for key, value in counter.items:
+        for key, value in counter.items():
             print("{key} {value}")
     else:
         print("No counters were found")
