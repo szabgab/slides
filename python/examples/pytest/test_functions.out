@@ -1,17 +1,16 @@
 $ pytest -qqs test_functions.py
-
 setup db_server
 new db_serverironment
-setup_db <TemporaryDirectory '/tmp/tmpsqk01wqt'>
-    test_one <TemporaryDirectory '/tmp/tmpsqk01wqt'>
+setup_db             <TemporaryDirectory '/tmp/tmpvct7ng6r'>
+    test_one         <TemporaryDirectory '/tmp/tmpvct7ng6r'>
     test_one after
-teardown_db <TemporaryDirectory '/tmp/tmpsqk01wqt'>
+teardown_db          <TemporaryDirectory '/tmp/tmpvct7ng6r'>
 setup db_server
-setup_db <TemporaryDirectory '/tmp/tmp8qyhchd6'>
-    test_two <TemporaryDirectory '/tmp/tmp8qyhchd6'>
+setup_db             <TemporaryDirectory '/tmp/tmptmaql_a_'>
+    test_two         <TemporaryDirectory '/tmp/tmptmaql_a_'>
 setup db_server
-setup_db <TemporaryDirectory '/tmp/tmpu4ei9yc5'>
-    test_three <TemporaryDirectory '/tmp/tmpu4ei9yc5'>
+setup_db             <TemporaryDirectory '/tmp/tmpwb18nwil'>
+    test_three       <TemporaryDirectory '/tmp/tmpwb18nwil'>
     test_three after
-teardown_db <TemporaryDirectory '/tmp/tmpu4ei9yc5'>
+teardown_db          <TemporaryDirectory '/tmp/tmpwb18nwil'>
 

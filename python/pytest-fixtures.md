@@ -120,10 +120,22 @@ def serve_bolognese(pasta, sauce):
 {id: pytest-tmpdir}
 {i: tmpdir}
 
+* Probably the simples fixture that PyTest can provide is the `tmpdir`.
+* Pytest will prepare a temporary directory and call the test function passing the path to the `tmpdir`.
+* PyTest will also clean up the temporary folder, though it will keep the 3 most recent ones. (this is configurable)
+
 ![](examples/pytest/test_tmpdir.py)
 
 ## Pytest and tempdir
 {id: pytest-tempdir}
+{i: tmpdir}
+
+* This is a simple application that reads and writes config files (ini file).
+* We can test the `parse_file` by preparing some input files and check if we get the expected data structure.
+* In order to test the `save_file` we need to be able to save a file somewhere.
+* Saving it in the current folder will create garbage files. (and the folder might be read-only in some environments).
+* For each test we'll have to come up with a separate filename so they won't collide.
+* Using a `tmpdir` solves this problem.
 
 ![](examples/pytest/mycfg.py)
 ![](examples/pytest/a.cfg)
