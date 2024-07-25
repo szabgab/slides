@@ -1,34 +1,34 @@
 import tempfile
 
 def setup_module():
-    global db
-    db = tempfile.TemporaryDirectory()
-    print(f"setup_module: {db}")
+    global db_server
+    db_server = tempfile.TemporaryDirectory()
+    print(f"setup_module: {db_server}")
 
 def teardown_module():
-    print("teardown_module")
-    print(db)
+    print(f"teardown_module {db_server}")
 
 
 def setup_function():
-    print("  setup_function")
+    global db
+    db = tempfile.TemporaryDirectory()
+    print(f"  setup_function {db}")
 
 def teardown_function():
-    print("  teardown_function")
+    print(f"  teardown_function {db}")
 
 
 def test_one():
-    print("    test_one")
-    print(db)
+    print(f"    test_one {db_server} {db}")
     assert True
     print("    test_one after")
 
 def test_two():
-    print("    test_two")
+    print(f"    test_two {db_server} {db}")
     assert False
     print("    test_two after")
 
 def test_three():
-    print("    test_three")
+    print(f"    test_three {db_server} {db}")
     assert True
     print("    test_three after")

@@ -1,19 +1,14 @@
-setup_module
-
-  setup_function
-    test_one
-42
+setup_module: <TemporaryDirectory '/tmp/tmp18kxxqva'>
+  setup_function <TemporaryDirectory '/tmp/tmp_bd8lazj'>
+    test_one <TemporaryDirectory '/tmp/tmp18kxxqva'> <TemporaryDirectory '/tmp/tmp_bd8lazj'>
     test_one after
-  teardown_function
-
-  setup_function
-    test_two
-  teardown_function
-
-  setup_function
-    test_three
+  teardown_function <TemporaryDirectory '/tmp/tmp_bd8lazj'>
+  setup_function <TemporaryDirectory '/tmp/tmp9k2cbqcb'>
+    test_two <TemporaryDirectory '/tmp/tmp18kxxqva'> <TemporaryDirectory '/tmp/tmp9k2cbqcb'>
+  teardown_function <TemporaryDirectory '/tmp/tmp9k2cbqcb'>
+  setup_function <TemporaryDirectory '/tmp/tmp5u8n90cx'>
+    test_three <TemporaryDirectory '/tmp/tmp18kxxqva'> <TemporaryDirectory '/tmp/tmp5u8n90cx'>
     test_three after
-  teardown_function
+  teardown_function <TemporaryDirectory '/tmp/tmp5u8n90cx'>
+teardown_module <TemporaryDirectory '/tmp/tmp18kxxqva'>
 
-teardown_module
-42
