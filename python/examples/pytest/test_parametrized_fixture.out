@@ -1,0 +1,8 @@
+Fixture before test using apple
+Test using apple
+Fixture after test using apple
+
+Fixture before test using banana
+Test not using param
+Fixture after test using banana
+

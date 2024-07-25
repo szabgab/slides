@@ -145,11 +145,16 @@ def serve_bolognese(pasta, sauce):
 ## Pytest CLI key-value store
 {id: pytest-cli-key-value-store}
 
+* This is a similar application - a file-base key-value store - where the data files is computed from the name of the program: `store.json`.
+* Runing two tests in parallel will make the tests collide by using the same data file.
+
 ![](examples/pytest/key-value-store/store.py)
 ![](examples/pytest/key-value-store/test_store.py)
 
 ## Pytest testing key-value store - environment variable
 {id: pytest-cli-testing-key-value-store}
+
+* We need to be able to set the name of the data file externally. e.g. Using an environment variable.
 
 ![](examples/pytest/key-value-store-testable/store.py)
 ![](examples/pytest/key-value-store-testable/test_store.py)
@@ -171,6 +176,7 @@ def serve_bolognese(pasta, sauce):
 
 ## Pytest capture STDOUT and STDERR with capsys
 {id: pytest-capsys}
+{i: capsys}
 
 Captures everything that is printed to STDOUT and STDERR so we can compare that to the expected output and error.
 
@@ -179,6 +185,16 @@ Captures everything that is printed to STDOUT and STDERR so we can compare that 
 ```
 pytest test_greet.py
 ```
+
+## PyTest - write your own fixture
+{id: pytest-write-your-own-fixture}
+
+* `tmpdir` and `capsys` are nice to have, but we will need more complex setup and teardown.
+
+* We can write any function to become fixture, we only need to decorate it with `@pytest.fixture`
+
+* We can implement fixture functions to act like the xUnit fixture we saw ealrier or using dependency injection as `tmpdir` and `capsys` work.
+
 
 ## Pytest Fixture - autouse fixtures
 {id: pytest-autouse-fixture}
@@ -288,6 +304,11 @@ $ pytest -sq
 
 ![](examples/pytest/fixture-mongodb/conftest.py)
 
+## Pytest parameters
+{id: pytest-parameters}
+
+![](examples/pytest/test_mymath_parameters.py)
+
 ## Pytest parametrized fixture
 {id: pytest-parametrized-fixture}
 
@@ -296,16 +317,14 @@ Sometimes we would like to pass some parameters to the fixture. We can do this w
 {/aside}
 
 ![](examples/pytest/test_parametrized_fixture.py)
+![](examples/pytest/test_parametrized_fixture.out)
 
-```
-Fixture before test using apple
-Test using apple
-Fixture after test using apple
+## Pytest parametrized fixture with dependency injection
+{id: pytest-parametrized-fixture-with-dependency-injection}
 
-Fixture before test using banana
-Test not using param
-Fixture after test using banana
-```
+
+![](examples/pytest/test_parametrized_injection_fixture.py)
+![](examples/pytest/test_parametrized_injection_fixture.out)
 
 ## Pytest parametrized fixture to use Docker
 {id: pytest-parametrized-fixture-to-use-docker}
@@ -317,7 +336,4 @@ At one point I wanted the whole image creation and running in the image be part 
 
 ![](examples/pytest/test_parametrized_fixture_with_docker.py)
 
-## Pytest parameters
-{id: pytest-parameters}
 
-![](examples/pytest/test_mymath_parameters.py)

@@ -1,8 +1,9 @@
 import os
+import store
 
 def test_store(tmpdir):
     os.environ['STORE_DIR'] = str(tmpdir) # str expected, not LocalPath
-    import store
+    print(os.environ['STORE_DIR'])
     store.set('color', 'Blue')
     assert store.get('color') == 'Blue'
 
