@@ -45,16 +45,15 @@ jobs:
     - name: Setup Pages
       uses: actions/configure-pages@v4
 
-
     - name: Generate slides
       run: |
         cd slides
         pwd
         ./generate_slides.py
 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        path: html
+    - name: Upload artifact
+      uses: actions/upload-pages-artifact@v3
+      path: html
 
   # Deployment job
   deploy:
