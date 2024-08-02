@@ -1,9 +1,10 @@
 # GitHub Actions
 {id: actions}
 
-
-## What is Github Actions
+## What is Github Actions - GitHub Workflows?
 {id: what-is-github-actions}
+
+* Run any process triggered by events.
 
 * Integrated CI and CD system (a workflow).
 * Free for limited use for both public and private repos.
