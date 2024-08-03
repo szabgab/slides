@@ -4,12 +4,22 @@
 ## What is Github Actions - GitHub Workflows?
 {id: what-is-github-actions}
 
-* Run any process triggered by events.
+* Run any process triggered by some event.
 
 * Integrated CI and CD system (a workflow).
 * Free for limited use for both public and private repos.
 * See [pricing](https://github.com/pricing) for details.
 * [Check Total time used](https://docs.github.com/en/free-pro-team@latest/github/setting-up-and-managing-billing-and-payments-on-github/viewing-your-github-actions-usage)
+
+## GitHub Actions use-cases
+{id: github-actions-use-cases}
+
+* CI - Continuous Integration - compile code and run all the tests on every push amd ever pull-request.
+* CD - Continuous Delivery/Deployment.
+* Run a scheduled job to collect data.
+* Generate static web sites.
+* Automatically handle issues (eg. close old issues).
+
 
 ## Documentation
 {id: github-actions-documentation}
@@ -27,6 +37,7 @@
 * GitHub repository
 * There is a link called "Actions"
 
+* There are many ready-made workflows one can get started with in a few clicks.
 
 ## Python
 {id: github-actions-python}
@@ -372,5 +383,6 @@ ssh-keyscan host
 * [lock-threads](https://github.com/dessant/lock-threads)
 
 ![](examples/workflows/lock.yml)
+
 
 

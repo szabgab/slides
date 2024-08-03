@@ -12,6 +12,7 @@
         "appveyor.md",
         "coveralls.md",
         "actions.md",
+        "actions-for-perl.md",
         "circleci.md"
     ]
 }
