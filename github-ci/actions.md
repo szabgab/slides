@@ -23,7 +23,8 @@
 
 ## Documentation
 {id: github-actions-documentation}
-* [GitHub Actions](https://docs.github.com/en/free-pro-team@latest/actions)
+
+* [GitHub Actions Documentation](https://docs.github.com/en/actions)
 
 ## Setup
 {id: github-actions-setup}
@@ -34,7 +35,8 @@
 ## UI of the GitHub actions
 {id: ui-of-github-actions}
 
-* GitHub repository
+* [GitHub](https://github.com/)
+* Create a repository
 * There is a link called "Actions"
 
 * There are many ready-made workflows one can get started with in a few clicks.
@@ -94,19 +96,25 @@ on: [push, pull_request]
 {id: environment-variables}
 {i: env}
 
-* [environment variables](https://docs.github.com/en/free-pro-team@latest/actions/reference/environment-variables)
-* GITHUB_* are reversed
+* [environment variables](https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/variables)
+* [Using secrets in GitHub Actions](https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions)
+* `GITHUB_*` are reserved.
 
 ```
 env:
    DEMO_FIELD: value
 ```
 
-![](examples/workflows/env_vars.yml)
+* [Environment variables](https://github.com/szabgab/github-actions-environment-variables)
 
 
 ## Matrix (env vars)
 {id: matrix}
+{i: matrix}
+{i: strategy}
+{i: fail-fast}
+
+* [matrix](https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/using-a-matrix-for-your-jobs)
 
 ![](examples/workflows/matrix_env_vars.yml)
 
@@ -115,8 +123,10 @@ env:
 
 * Jobs run **parallel** by default
 
-## GitHub Actions - Jobs runs-on
+## GitHub Actions - Runners - runs-on
 {id: github-actions-jobs-runs-on}
+{i: runs-on}
+
 
 * [runs-on](https://docs.github.com/en/free-pro-team@latest/actions/reference/workflow-syntax-for-github-actions#jobsjob_idruns-on)
 
