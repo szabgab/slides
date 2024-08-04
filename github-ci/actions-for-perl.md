@@ -52,6 +52,8 @@ e.g. [DBI](https://metacpan.org/pod/DBI) and [DBI Matrix](http://matrix.cpantest
 ## CI Perl Tester Helpers
 {id: ci-perl-tester-helpers}
 
+Set of scripts (available via action syntax as well), all of them included in perltester dockers
+
 * [CI Perl Tester Helpers](https://github.com/oalders/ci-perl-tester-helpers)
 
 ## GitHub Action to setup perl environment in the marketplace
@@ -87,7 +89,9 @@ e.g. [DBI](https://metacpan.org/pod/DBI) and [DBI Matrix](http://matrix.cpantest
 
 
 <!--
-auto-build-and-test-dist 
--->
+auto-build-and-test-dist
 
+- perl-versions matrix generator of perl versions (will automatically include newer perls for you)
+
+-->
 

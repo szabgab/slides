@@ -331,6 +331,14 @@ ssh-keyscan host
 * [monitor web assets](https://github.com/szabgab/monitor/)
 * [Kantoniko](https://kantoniko.com/) - [on GitHub](https://github.com/kantoniko/) - [Site builder repo](https://github.com/kantoniko/kantoniko.github.io)
 
+## GitHub Workflows
+{id: github-workflows}
+
+* github-workflows - simple reusable workflow
+
+* Example:
+
+* the workflow in [osdc-2023-01-perl](https://github.com/OSDC-Code-Maven/osdc-2023-01-perl) uses [osdc-site-generator](https://github.com/osdc-code-maven/osdc-site-generator)
 
 
 
