@@ -105,7 +105,7 @@ env:
    DEMO_FIELD: value
 ```
 
-* [Environment variables](https://github.com/szabgab/github-actions-environment-variables)
+* [Demo Environment variables](https://github.com/szabgab/github-actions-environment-variables)
 
 
 ## Matrix (env vars)
@@ -122,6 +122,8 @@ env:
 {id: jobs}
 
 * Jobs run **parallel** by default
+
+* [Demo GitHub Actions in parallel](https://github.com/szabgab/github-actions-parallel/)
 
 ## GitHub Actions - Runners - runs-on
 {id: github-actions-jobs-runs-on}

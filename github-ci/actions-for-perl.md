@@ -33,7 +33,7 @@ e.g. [DBI](https://metacpan.org/pod/DBI) and [DBI Matrix](http://matrix.cpantest
 
 * [with Build.PL](https://github.com/szabgab/github-actions-perl-build/)
 
-* [GitHub Actions exaemples](https://code-maven.com/github-actions)
+* [GitHub Actions examples](https://code-maven.com/github-actions)
 
 * [DBD::Pg](https://metacpan.org/pod/DBD::Pg)
 
@@ -47,10 +47,7 @@ e.g. [DBI](https://metacpan.org/pod/DBI) and [DBI Matrix](http://matrix.cpantest
 * [Perl tester Docker image](https://hub.docker.com/r/perldocker/perl-tester)
 
 * [CI Perl Tester Helpers](https://github.com/oalders/ci-perl-tester-helpers)
-* [Presentation](https://www.youtube.com/watch?v=WfXo71I7LmE&list=PLA9_Hq3zhoFznY_cvm5iAbUZ9T6-6zbIu&index=38) of Olaf Alders
-* [Slides](https://github.com/oalders/presentations/blob/master/slides/4-github-actions/marp.pdf) of Olaf Alders
 
-auto-build-and-test-dist
 
 
 ## Perl and OS matrix
@@ -68,5 +65,15 @@ auto-build-and-test-dist
 
 ![](examples/workflows/perl-os-matrix-no-warnings.yml)
 
+## About Github Action for Perl
+{id: presentations-about-github-actions-for-perl}
+
+* [Presentation](https://www.youtube.com/watch?v=WfXo71I7LmE&list=PLA9_Hq3zhoFznY_cvm5iAbUZ9T6-6zbIu&index=38) of Olaf Alders
+* [Slides](https://github.com/oalders/presentations/blob/master/slides/4-github-actions/marp.pdf) of Olaf Alders
+
+
+<!--
+auto-build-and-test-dist 
+-->
 
 
