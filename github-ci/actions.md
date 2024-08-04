@@ -325,5 +325,12 @@ ssh-keyscan host
 
 ![](examples/workflows/lock.yml)
 
+## GitHub Actions examples
+{id: github-actions-examples}
+
+* [monitor web assets](https://github.com/szabgab/monitor/)
+* [Kantoniko](https://kantoniko.com/) - [on GitHub](https://github.com/kantoniko/) - [Site builder repo](https://github.com/kantoniko/kantoniko.github.io)
+
+
 
 

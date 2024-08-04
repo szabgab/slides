@@ -44,11 +44,20 @@ e.g. [DBI](https://metacpan.org/pod/DBI) and [DBI Matrix](http://matrix.cpantest
 * [Test2-Harness](https://github.com/Test-More/Test2-Harness/tree/master/.github/workflows)
 * [Perl Power Tools](https://github.com/briandfoy/PerlPowerTools)
 
+## Perl Tester Docker Image
+{id: perl-tester-docker-image}
+
 * [Perl tester Docker image](https://hub.docker.com/r/perldocker/perl-tester)
+
+## CI Perl Tester Helpers
+{id: ci-perl-tester-helpers}
 
 * [CI Perl Tester Helpers](https://github.com/oalders/ci-perl-tester-helpers)
 
+## GitHub Action to setup perl environment in the marketplace
+{id: setup-perl-environment}
 
+* [setup-perl-environment](https://github.com/marketplace/actions/setup-perl-environment)
 
 ## Perl and OS matrix
 {id: perl-os-matrix}
@@ -64,6 +73,11 @@ e.g. [DBI](https://metacpan.org/pod/DBI) and [DBI Matrix](http://matrix.cpantest
 {id: perl-os-matrix-avoid-warnings}
 
 ![](examples/workflows/perl-os-matrix-no-warnings.yml)
+
+## The Perl Planetarium
+{id: github-actions-to-build-the-perl-planetarium}
+
+* [Perl Planetarium](https://perl.theplanetarium.org/)
 
 ## About Github Action for Perl
 {id: presentations-about-github-actions-for-perl}
