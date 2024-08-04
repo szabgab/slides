@@ -80,6 +80,8 @@ name: Free Text defaults to the filename
 {id: triggering-jobs}
 {i: on}
 
+* [triggers](https://docs.github.com/en/actions/writing-workflows/choosing-when-your-workflow-runs/events-that-trigger-workflows)
+
 * Single event
 
 ```
@@ -99,8 +101,6 @@ on: [push, pull_request]
 ![](examples/workflows/triggers.yml)
 
 * Manual events (via POST request)
-
-* [events](https://docs.github.com/en/free-pro-team@latest/actions/reference/events-that-trigger-workflows)
 
 ## Environment variables
 {id: environment-variables}
