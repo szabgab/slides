@@ -39,18 +39,6 @@
 
 * There are many ready-made workflows one can get started with in a few clicks.
 
-## Python
-{id: github-actions-python}
-
-* A demo to show a simple task before we start learning about the YAML files from scratch
-
-![](examples/workflows/python.yml)
-
-![](examples/requirements.txt)
-
-![](examples/test_demo.py)
-
-
 ## Minimal Ubuntu Linux configuration
 {id: minimal-linux-configuration}
 
@@ -173,18 +161,6 @@ jobs:
 
 ![](examples/workflows/schedule_and_conditional.yml)
 
-## Python with Matrix
-{id: github-actions-python-matrix}
-
-![](examples/workflows/python_matrix.yml)
-
-
-## Perl with Makefile.PL
-{id: perl-with-makefile}
-
-![](examples/workflows/perl_makefile_tester.yml)
-
-
 ## Available GitHub actions
 {id: available-github-actions}
 
@@ -202,32 +178,6 @@ a script that will copy it, if necessary. Then I'd call that script in my YAML f
 
 ![](examples/workflows/create_file.yml)
 
-
-## Examples - Perl
-{id: examples-perl}
-
-* [docker-perl-tester](https://github.com/Perl/docker-perl-tester/tree/master/.github/workflows)
-* [Test2-Harness](https://github.com/Test-More/Test2-Harness/tree/master/.github/workflows)
-* [Perl Power Tools](https://github.com/briandfoy/PerlPowerTools)
-
-* [Perl tester Docker image](https://hub.docker.com/r/perldocker/perl-tester)
-
-* [CI Perl Tester Helpers](https://github.com/oalders/ci-perl-tester-helpers)
-* [Presentation](https://www.youtube.com/watch?v=WfXo71I7LmE&list=PLA9_Hq3zhoFznY_cvm5iAbUZ9T6-6zbIu&index=38) of Olaf Alders
-* [Slides](https://github.com/oalders/presentations/blob/master/slides/4-github-actions/marp.pdf) of Olaf Alders
-
-auto-build-and-test-dist
-
-
-
-## Examples - Python
-{id: examples-python}
-
-* [TFkit](https://github.com/voidful/TFkit/blob/master/.github/workflows/python-package.yml)
-
-* [Awesome actions](https://github.com/sdras/awesome-actions)
-
-* [Run GitHub Actions locally](https://github.com/nektos/act)
 
 ## OS Matrix (Windows, Linux, Mac OSX)
 {id: os-matrix}
@@ -249,27 +199,6 @@ auto-build-and-test-dist
 {id: generate-github-pages}
 
 ![](examples/workflows/generate-github-pages.yml)
-
-## Perl and OS matrix
-{id: perl-os-matrix}
-
-![](examples/workflows/perl-os-matrix.yml)
-
-## Perl and OS matrix - show error logs
-{id: perl-os-matrix-show-error-logs}
-
-![](examples/workflows/perl-os-matrix-show-logs.yml)
-
-## Perl and OS matrix - avoid warnings
-{id: perl-os-matrix-avoid-warnings}
-
-![](examples/workflows/perl-os-matrix-no-warnings.yml)
-
-## NodeJS and OS matrix
-{id: nodejs-os-matrix}
-
-![](examples/workflows/nodejs-os-matrix.yml)
-
 
 ## Workflow Dispatch (manually and via REST call)
 {id: workflow-dispatch}

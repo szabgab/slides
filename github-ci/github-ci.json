@@ -13,6 +13,8 @@
         "coveralls.md",
         "actions.md",
         "actions-for-perl.md",
+        "actions-for-python.md",
+        "actions-for-nodejs.md",
         "circleci.md"
     ]
 }
