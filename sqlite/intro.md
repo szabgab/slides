@@ -27,3 +27,26 @@
 {i: SELECT}
 
 ![](examples/create-insert-select.sql)
+
+```
+$ sqlite3 demo.db < create-insert-select.sql
+Foo|foo@example.com
+Bar|bar@example.com
+
+$ rm -f demo.db
+```
+
+## AUTOINCREMENT
+{id: atoincrement}
+
+![](examples/autoincrement.sql)
+
+```
+$ sqlite3 demo.db < autoincrement.sql
+1|foo
+2|bar
+
+$ rm -f demo.db
+```
+
+
