@@ -72,9 +72,15 @@ If the result set might be empty, then the fetchone might return None. Check for
 
 ![](examples/sqlite/sql_update.py)
 
-
 ## A counter
 {id: sqlite-counter}
 
 ![](examples/sqlite/counter.py)
+
+## SQLite in-memory AUTOINCREMENT
+{id: sqlite-in-memory-autoincrement}
+{i: AUTOINCREMENT}
+{i: :memory:}
+
+![](examples/sqlite/sql_autoincrement.py)
 
