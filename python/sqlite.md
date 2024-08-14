@@ -80,7 +80,14 @@ If the result set might be empty, then the fetchone might return None. Check for
 ## SQLite in-memory AUTOINCREMENT
 {id: sqlite-in-memory-autoincrement}
 {i: AUTOINCREMENT}
-{i: :memory:}
+{i: memory}
 
 ![](examples/sqlite/sql_autoincrement.py)
+
+## SQLite in-memory field with DEFAULT value
+{id: sqlite-in-memory-field-with-default-value}
+{i: DEFAULT}
+{i: memory}
+
+![](examples/sqlite/sql_defaults.py)
 

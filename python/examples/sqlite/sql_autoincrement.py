@@ -1,5 +1,19 @@
 import sqlite3
 
+def create_table(conn, crs):
+    sql = '''
+        CREATE TABLE people (
+           id        INTEGER PRIMARY KEY AUTOINCREMENT,
+           username  VARCHAR(100) UNIQUE NOT NULL
+    );
+    '''
+
+    try:
+        crs.execute(sql)
+    except sqlite3.OperationalError as err:
+        print(f'sqlite error: {err.args[0]}')  # table companies already exists
+    conn.commit()
+
 
 def insert(conn, crs, username):
     sql = 'INSERT INTO people (username) VALUES (?)'
@@ -15,20 +29,6 @@ def list_rows(conn, crs):
     for id, username in crs.execute(sql):
         print(f"{id} - {username}")
 
-
-def create_table(conn, crs):
-    sql = '''
-        CREATE TABLE people (
-           id        INTEGER PRIMARY KEY AUTOINCREMENT,
-           username  VARCRCHAR(100) UNIQUE NOT NULL
-    );
-    '''
-
-    try:
-        crs.execute(sql)
-    except sqlite3.OperationalError as err:
-        print(f'sqlite error: {err.args[0]}')  # table companies already exists
-    conn.commit()
 
 def main():
     conn = sqlite3.connect(":memory:")
