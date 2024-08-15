@@ -5,7 +5,8 @@
 {id: sqlite3}
 {i: sqlite}
 
-* [sqlite3](http://docs.python.org/library/sqlite3.html)
+* [SQLite](https://sqlite.org/) the most popular embedded relational database.
+* [sqlite3](http://docs.python.org/library/sqlite3.html) - Python library to use SQLite.
 
 
 ## Connecting to SQLite database
@@ -13,7 +14,20 @@
 {i: connect|sqlite}
 {i: cursor|sqlite}
 
+This connects to the database in the given file. If the file does not exist yet this will create the file and prepare it to hold
+an SQLite database. No tables are created at this point and no data is inserted.
+
 ![](examples/sqlite/sql_connect.py)
+
+## Connecting to in-memory SQLite database
+{id: sqlite-in-memory-connect}
+
+We can also create in-memory database.
+
+This is not persistent, but it can be useful to load some data into memory and then do fast SQL queries on
+that database.
+
+![](examples/sqlite/in_memory.py)
 
 
 ## Create TABLE in SQLite

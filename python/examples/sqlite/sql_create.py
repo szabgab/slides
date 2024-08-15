@@ -1,25 +1,34 @@
 import sqlite3
 
-conn = sqlite3.connect("companies.db")
-crs = conn.cursor()
 
-sql = '''
-    CREATE TABLE companies (
-                    id          INTEGER PRIMARY KEY AUTOINCREMENT,
-                    name        VARCRCHAR(100) UNIQUE NOT NULL,
-                    established INTEGER NOT NULL,
-                    employees   INTEGER DEFAULT 0
-)
-'''
+def create_table(conn):
+    crs = conn.cursor()
 
-try:
-    crs.execute(sql)
-except sqlite3.OperationalError as err:
-    print(f'sqlite error: {err.args[0]}')  # table companies already exists
-    print(f'remove companies.db to show how it works')
+    sql = '''
+        CREATE TABLE companies (
+                        id          INTEGER PRIMARY KEY AUTOINCREMENT,
+                        name        VARCRCHAR(100) UNIQUE NOT NULL,
+                        established INTEGER NOT NULL,
+                        employees   INTEGER DEFAULT 0
+    )
+    '''
 
-conn.commit()
+    try:
+        crs.execute(sql)
+    except sqlite3.OperationalError as err:
+        print(f'sqlite error: {err.args[0]}')  # table companies already exists
+        print(f'remove companies.db to show how it works')
 
-conn.close()
+    conn.commit()
 
-print('done')
+def main():
+    conn = sqlite3.connect("companies.db")
+
+    create_table(conn)
+
+    conn.close()
+
+    print('done')
+
+if __name__ == "__main__":
+    main()
