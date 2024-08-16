@@ -105,3 +105,12 @@ If the result set might be empty, then the fetchone might return None. Check for
 
 ![](examples/sqlite/sql_defaults.py)
 
+## SQLite transactions
+{id: sqlite-transactions}
+{i: TBD}
+
+This example is supposed to show the importance of transactions, but so far I failed to replicate the problem as we have in
+[this example](https://slides.code-maven.com/sqlite/sqlite-transactions-in-a-bank)
+
+![](examples/sqlite/in_memory_bank.py)
+
