@@ -148,6 +148,7 @@ Meaning of life?|
 ## Field with DEFAULT value
 {id: field-with-default-value}
 
+![](examples/default-value.sql)
 
 ```
 $ sqlite3 demo.db < default-value.sql ; rm -f demo.db
