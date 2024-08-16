@@ -166,8 +166,23 @@ Meaning of life?|42
 ## Transactions
 {id: transactions}
 
+![](examples/transaction.sql)
+
 ## PRAGMA
 {id: pragma}
 
 [PRAGMA](https://sqlite.org/pragma.html)
+
+## UPDATE
+{id: update}
+
+![](examples/update.sql)
+
+
+
+
+* TODO: loading a large CSV file into the database and running queries.
+* TODO: creating a multi-tabe databas, dumping it and then loading it and running queries against it.
+* TODO: FOREIGN KEY - cascading deletition?
+
 
