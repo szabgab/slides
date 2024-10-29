@@ -339,6 +339,8 @@ Elapsed time 9.05
 
 ## MCE - Many-Core Engine
 {id: many-core-engine}
+{i: MCE}
+{i: fork}
 
 * [MCE](https://metacpan.org/pod/MCE)
 
@@ -352,8 +354,11 @@ $ perl use_mce.pl 5
 
 ![](examples/forks/use_mce.out)
 
-## MCE - map
+## MCE - map running in parallel
 {id: mce-map}
+{i: MCE}
+{i: fork}
+{i: map}
 
 * [MCE::Map](https://metacpan.org/pod/MCE::Map)
 
