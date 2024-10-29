@@ -296,6 +296,7 @@ Elapsed time 9.05
 
 ## Use Parallel::ForkManager
 {id: use-parallel-forkmanager}
+{i: fork}
 
 * [Parallel::ForkManager](https://metacpan.org/pod/Parallel::ForkManager)
 
@@ -303,6 +304,7 @@ Elapsed time 9.05
 
 ## Return values using Parallel::ForkManager
 {id: return-values-using-paralle-forkmanager}
+{i: fork}
 
 ![](examples/forks/forkmanager_return_values.pl)
 
