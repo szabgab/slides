@@ -22,9 +22,9 @@
 ## Bio python sequences
 {id: bio-python-sequences}
 
-![](examples/science/sequences.py)
+![](examples/biology/sequences.py)
 
-![](examples/science/sequences_err.py)
+![](examples/biology/sequences_err.py)
 
 ## Download and Read FASTA, GenBank files
 {id: bio-python-read-fasta-files}
@@ -36,7 +36,7 @@ For example the data about Orchids in two formats:
 
 Download those files and use them:
 
-![](examples/science/read_fasta.py)
+![](examples/biology/read_fasta.py)
 
 ## Search NCBI and Download FASTA and GenBank files
 {id: bio-python-download-data}
@@ -50,13 +50,13 @@ or tons of other types of data. Then one can download the files manually from th
 
 You can also search the same database programmatically.
 
-![](examples/science/search_nucleotids.py)
+![](examples/biology/search_nucleotids.py)
 
 
 ## Download nucleotids
 {id: bio-python-download-nucleotids}
 
-![](examples/science/fetch_nucleotid.py)
+![](examples/biology/fetch_nucleotid.py)
 
 
 ## Exercise: Nucleotid
