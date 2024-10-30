@@ -335,6 +335,14 @@ Adding banana: 2
 
 * [traceback](https://docs.python.org/3/library/traceback.html)
 
+## Raise Exception from
+{id: raise-exception-from}
+{i: from}
+{i: None}
+{i: raise}
+
+![](examples/exceptions/raise_from.py)
+
 ## Exercise: Exception int conversion
 {id: exercise-exception-int-conversion}
 
