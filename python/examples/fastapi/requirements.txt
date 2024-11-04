@@ -1,5 +1,4 @@
 fastapi[all]
-uvicorn[standard]
 
 pytest
 requests
