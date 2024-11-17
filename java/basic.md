@@ -40,7 +40,27 @@ OpenJDK Runtime Environment (build 14.0.2+12-46)
 OpenJDK 64-Bit Server VM (build 14.0.2+12-46, mixed mode, sharing)
 ```
 
-On Ubuntu Linux:
+## Java Installation on Ubuntu Linux
+{id: java-installation-on-ubuntu}
+
+
+```
+sudo apt install openjdk-24-jdk-headless
+```
+
+
+```
+$ javac -version
+javac 24-ea
+
+$ java --version
+openjdk 24-ea 2025-03-18
+OpenJDK Runtime Environment (build 24-ea+16-Ubuntu-1)
+OpenJDK 64-Bit Server VM (build 24-ea+16-Ubuntu-1, mixed mode, sharing)
+```
+
+
+An older version
 
 ```
 $ javac -version
