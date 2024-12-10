@@ -1,32 +1,41 @@
 # CSV
 {id: csv}
 
-## Reading CSV the naive way
-{id: reading-csv-the-naive-way}
+## What is a CSV file?
+{id: what-is-a-csv-file}
 
-![](examples/csv/plain.csv)
-![](examples/csv/read_csv_split.py)
+* CSV stands for Comma Separated Values
+* A CSV file is similar to the values you might put in an Excel file. Though in Excel each cell has both a `value` and a `format` (and maybe more) attributes. A CSV file only contains values.
+* A CSV file has rows and in each row there are values separated by a comma.
+* In some cases the separator is some other character. e.g. a semic-colon (`;`), a pipeline (`|`) or a TAB character. (The last one is also referred to a TSV file where TSV stands for TAB Separated Values.
 
-```
-python examples/csv/read_csv_split.py examples/csv/plain.csv
-```
+* There are a number of other variations, so the csv-reading and writing librariers usually provide options to handle these variations.
+
+* Sometimes all the lines hold values. Sometimes the first line acts as the list of column-names.
+
+## CSV file without title row
+{id: csv-file-without-title-row}
+
+* Some of the figures in Snow White in Hungarian.
+
+![](examples/csv/snowwhite.csv)
 
 
-## CSV with quotes and newlines
-{id: csv-with-newlines}
+## CSV file with header
+{id: csv-file-with-header}
 
-![](examples/csv/with_quotes.csv)
-![](examples/csv/with_newlines.csv)
+* This CSV file contains information about the members of the Monthy Python show.
+* The first row contains the titles of the columns.
 
-## Reading a CSV file
-{id: reading-csv}
-{i: csv}
-{i: reader}
+![](examples/csv/monty_python.csv)
+
+## Read CSV file into lists
+{id: read-csv-file-into-lists}
 
 ![](examples/csv/read_csv.py)
 
 ```
-python examples/csv/read_csv.py examples/csv/plain.csv
+python examples/csv/read_csv.py  example/snowwhite.csv
 ```
 
 ## CSV with newlines missing closing quote
@@ -39,7 +48,6 @@ python examples/csv/read_csv.py examples/csv/plain.csv
 {id: csv-to-dictionary}
 {i: DictReader}
 
-![](examples/csv/monty_python.csv)
 ![](examples/csv/read_monty.py)
 ![](examples/csv/read_monty.out)
 
@@ -69,6 +77,37 @@ The csv module defines a number of "dialects", sets of attributes.
 
 Dialects of CSV files. See also:
 [csv](http://docs.python.org/library/csv.html)
+
+## Reading CSV the naive way
+{id: reading-csv-the-naive-way}
+{i: split}
+
+* This is not recommended as it will fail in some cases. See next page!
+
+![](examples/csv/plain.csv)
+![](examples/csv/read_csv_split.py)
+
+```
+python examples/csv/read_csv_split.py examples/csv/plain.csv
+```
+
+
+## CSV with quotes and newlines
+{id: csv-with-newlines}
+
+![](examples/csv/with_quotes.csv)
+![](examples/csv/with_newlines.csv)
+
+## Reading a CSV file
+{id: reading-csv}
+{i: csv}
+{i: reader}
+
+![](examples/csv/read_csv_with_semicolons.py)
+
+```
+python examples/csv/read_csv.py examples/csv/plain.csv
+```
 
 
 ## Exercise: CSV as dictionary of dictionaries
