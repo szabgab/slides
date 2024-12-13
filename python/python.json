@@ -133,6 +133,7 @@
         "overview.md",
         "serialization.md",
         "mlops.md",
+        "python-types-at-pyweb-2024-12.md",
         "other.md"
     ]
 }
