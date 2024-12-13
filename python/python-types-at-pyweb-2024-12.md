@@ -1,21 +1,33 @@
-# Python types ast PyWeb 2024.12
+# Python types at PyWeb 2024.12
 {id: python-types-at-pyweb-2024-12}
 
+## The Answer
+{id: python-types-at-pyweb-2024-12-answer}
 
+![](examples/python-types-at-pyweb-2024-12/answer.py)
 
-## Types
-{id: python-types-at-pyweb-2024-12}
+## Add
+{id: python-types-at-pyweb-2024-12-add}
 
-What is the result of this code in Perl?
+What is the result of this code in Perl / Python / Rust?
 
-![](examples/python-types-at-pyweb-2024-12/types-in-perl.pl)
+![](examples/python-types-at-pyweb-2024-12/add.pl)
 
-![](examples/python-types-at-pyweb-2024-12/types-in-python.py)
+![](examples/python-types-at-pyweb-2024-12/add.py)
 
-![](examples/python-types-at-pyweb-2024-12/types-in-rust.rs)
+![](examples/python-types-at-pyweb-2024-12/add.rs)
 
 ```
-rustc types-in-rust.rs
+rustc add.rs
 ```
+
+## Add in function
+{id: python-types-at-pyweb-2024-12-add-in-function}
+
+![](examples/python-types-at-pyweb-2024-12/function.pl)
+
+![](examples/python-types-at-pyweb-2024-12/function.py)
+
+![](examples/python-types-at-pyweb-2024-12/function.rs)
 
 
