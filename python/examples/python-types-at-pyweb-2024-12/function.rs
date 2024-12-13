@@ -4,5 +4,7 @@ fn add(x: u32, y: u32) -> u32 {
 
 fn main() {
     println!("ok");
-    println!("{}", add("19", 23));
+    let first = "19";
+    let second = 23;
+    println!("{}", add(first, second));
 }
