@@ -114,10 +114,10 @@ variable_and_function_with_return_type.py:8:15: error: Incompatible types in ass
 Found 1 error in 1 file (checked 1 source file)
 ```
 
-## Deduct (infer) the type
+## Infer (deduct) the type
 {id: python-types-at-pyweb-2024-12-infer-the-type}
 
-* We can define every variable, but in many cases Python will deduct them from other definitions.
+* We can define every variable, but in many cases Python will infer them from other definitions.
 
 ![](examples/python-types-at-pyweb-2024-12/deduct_type_of_variable.py)
 
@@ -125,7 +125,27 @@ Found 1 error in 1 file (checked 1 source file)
 ## Type in unannotated function
 {id: python-types-at-pyweb-2024-12-unannotated-function}
 
-![](examples/python-types-at-pyweb-2024-12/type_in_unannotated_function.py)
+![](examples/python-types-at-pyweb-2024-12/unannotated_function.py)
+
+```
+$ mypy unannotated_function.py
+unannotated_function.py:3:5: note: By default the bodies of untyped functions are not checked, consider using --check-untyped-defs  [annotation-unchecked]
+Success: no issues found in 1 source file
+
+
+$ mypy --check-untyped-def unannotated_function.py 
+unannotated_function.py:3:19: error: Incompatible types in assignment (expression has type "int", variable has type "str")  [assignment]
+Found 1 error in 1 file (checked 1 source file)
+
+
+$ mypy --strict unannotated_function.py 
+unannotated_function.py:2:1: error: Function is missing a return type annotation  [no-untyped-def]
+unannotated_function.py:2:1: note: Use "-> None" if function does not return a value
+unannotated_function.py:3:19: error: Incompatible types in assignment (expression has type "int", variable has type "str")  [assignment]
+unannotated_function.py:6:1: error: Call to untyped function "do_something" in typed context  [no-untyped-call]
+Found 3 errors in 1 file (checked 1 source file)
+```
+
 
 ## Built-in types
 {id: python-types-at-pyweb-2024-12-built-in-types}
@@ -136,18 +156,68 @@ Found 1 error in 1 file (checked 1 source file)
 {i: list}
 {i: tuple}
 {i: dict}
+{i: set}
 
 ![](examples/python-types-at-pyweb-2024-12/built_in_types.py)
+
+## Complex types
+{id: python-types-at-pyweb-2024-12-complex-types}
+{i: List}
+{i: Dict}
+{i: Set}
+{i: Tuple}
+
+* For Python 3.8 and before
+
+![](examples/python-types-at-pyweb-2024-12/complex_types_old.py)
+
+* For Python 3.9+
+
+![](examples/python-types-at-pyweb-2024-12/complex_types.py)
+
+## Either this or that type
+{id: python-types-at-pyweb-2024-12-either-this-or-that-type}
+{i: Union}
+
+* Before 3.10
+
+![](examples/python-types-at-pyweb-2024-12/union.py)
+
+```
+$ python union.py
+int
+str
+float
+
+$ mypy union.py
+union.py:8:9: error: Argument 1 to "my_exit" has incompatible type "float"; expected "str | int"  [arg-type]
+Found 1 error in 1 file (checked 1 source file)
+```
+
+* Python 3.10+
+
+![](examples/python-types-at-pyweb-2024-12/pipe.py)
+
+```
+$ python union.py
+int
+str
+float
+
+$ mypy pipe.py
+pipe.py:6:9: error: Argument 1 to "my_exit" has incompatible type "float"; expected "str | int"  [arg-type]
+Found 1 error in 1 file (checked 1 source file)
+```
+## mypy generics
+{id: python-types-at-pyweb-2024-12-mypy-generics}
+
+![](examples/python-types-at-pyweb-2024-12/generics.py)
 
 ## mypy suggestions
 {id: python-types-at-pyweb-2024-12-mypy-suggestions}
 
 Defined parameters and the return value of a function
 Simple types such as int
-
-More complex types:
-
-things: list = ["snake", 42]
 
 from typing import Dict, List, Union, KeysView, Tuple, Optional
 from typing_extensions import Literal, TypedDict, NotRequired  # TODO move to typing after upgrading python to 3.8
@@ -166,7 +236,7 @@ HistoryType = TypedDict('HistoryType', {'date' : str, 'event': str, 'info': str}
 PipelineStepType = TypedDict('PipelineStepType', {
     "step_type": str,
     "step_name": str,
-
+})
 
 
 
@@ -174,4 +244,11 @@ PipelineStepType = TypedDict('PipelineStepType', {
 * Create `mypy.ini`
 
 ![](examples/python-types-at-pyweb-2024-12/mypy.ini)
+
+
+## The end
+{id: python-types-at-pyweb-2024-12-the-end}
+
+* Don't forget to run mypy!
+
 

@@ -12,4 +12,6 @@ mapping: dict = {
         "crab": "Rust",
 }
 
+things: set = {"chair", "table"}
+
 
