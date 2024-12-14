@@ -1,6 +1,13 @@
 # Python types at PyWeb 2024.12
 {id: python-types-at-pyweb-2024-12}
 
+
+## Python types at PyWeb 2024.12
+{id: python-types-at-pyweb-2024-12-open}
+
+[see the types](https://python.org.il/en/people/)
+
+
 ## The Answer
 {id: python-types-at-pyweb-2024-12-answer}
 
@@ -51,7 +58,7 @@ Much less obvious if we are calling a function with parameters that are not the 
 The result is the same as in the previous example.
 {/aside}
 
-## Shift-left
+## Shift-left (testing, programming)
 {id: python-types-at-pyweb-2024-12-shift-left}
 
 * Rust is the shift-left language noticing bugs earlier in the development process.
@@ -86,33 +93,16 @@ answer.py:2:15: error: Incompatible types in assignment (expression has type "in
 Found 1 error in 1 file (checked 1 source file)
 ```
 
+## How add type annotation?
+{id: python-types-at-pyweb-2024-12-add-type-annotation}
 
-## Define the type of variables
-{id: python-types-at-pyweb-2024-12-type-of-variables}
+* We already saw the two examples:
+* Add type annotation to variables.
+* Add type annotation to the function signature.
 
-![](examples/python-types-at-pyweb-2024-12/variable_and_function.py)
-
-```
-$ mypy variable_and_function.py
-variable_and_function.py:7:15: error: Incompatible types in assignment (expression has type "int", variable has type "str")  [assignment]
-Found 1 error in 1 file (checked 1 source file)
+![](examples/python-types-at-pyweb-2024-12/type_annotation.py)
 
 
-$ mypy --strict variable_and_function.py
-variable_and_function.py:2:1: error: Function is missing a return type annotation  [no-untyped-def]
-Found 1 error in 1 file (checked 1 source file)
-```
-
-## Define the return type
-{id: python-types-at-pyweb-2024-12-define-return-type}
-
-![](examples/python-types-at-pyweb-2024-12/variable_and_function_with_return_type.py)
-
-```
-$ mypy variable_and_function_with_return_type.py
-variable_and_function_with_return_type.py:8:15: error: Incompatible types in assignment (expression has type "int", variable has type "str")  [assignment]
-Found 1 error in 1 file (checked 1 source file)
-```
 
 ## Infer (deduct) the type
 {id: python-types-at-pyweb-2024-12-infer-the-type}
@@ -124,6 +114,8 @@ Found 1 error in 1 file (checked 1 source file)
 
 ## Type in unannotated function
 {id: python-types-at-pyweb-2024-12-unannotated-function}
+{i: --check-untyped-def}
+{i: --strict}
 
 ![](examples/python-types-at-pyweb-2024-12/unannotated_function.py)
 
@@ -162,37 +154,14 @@ Found 3 errors in 1 file (checked 1 source file)
 
 ## Complex types
 {id: python-types-at-pyweb-2024-12-complex-types}
-{i: List}
-{i: Dict}
-{i: Set}
-{i: Tuple}
-
-* For Python 3.8 and before
-
-![](examples/python-types-at-pyweb-2024-12/complex_types_old.py)
 
 * For Python 3.9+
 
 ![](examples/python-types-at-pyweb-2024-12/complex_types.py)
 
-## Either this or that type
+## Either this or that type (Union)
 {id: python-types-at-pyweb-2024-12-either-this-or-that-type}
 {i: Union}
-
-* Before 3.10
-
-![](examples/python-types-at-pyweb-2024-12/union.py)
-
-```
-$ python union.py
-int
-str
-float
-
-$ mypy union.py
-union.py:8:9: error: Argument 1 to "my_exit" has incompatible type "float"; expected "str | int"  [arg-type]
-Found 1 error in 1 file (checked 1 source file)
-```
 
 * Python 3.10+
 
@@ -208,37 +177,62 @@ $ mypy pipe.py
 pipe.py:6:9: error: Argument 1 to "my_exit" has incompatible type "float"; expected "str | int"  [arg-type]
 Found 1 error in 1 file (checked 1 source file)
 ```
-## mypy generics
+
+## Optional type (variable can also be None)
+{id: python-types-at-pyweb-2024-12-optional-type-with-pipe}
+{i: Optional}
+{i: split}
+
+![](examples/python-types-at-pyweb-2024-12/this_or_none.py)
+
+## Define type alias
+{id: python-types-at-pyweb-2024-12-define-type-alias}
+
+![](examples/python-types-at-pyweb-2024-12/defined_type_alias.py)
+
+## Define complex type alias
+{id: python-types-at-pyweb-2024-12-define-complex-type-alias}
+
+![](examples/python-types-at-pyweb-2024-12/defined_complex_type_alias.py)
+
+## Define type for enum and complex dictionary
+{id: python-types-at-pyweb-2024-12-define-type-for-enum}
+
+![](examples/python-types-at-pyweb-2024-12/defined_types.py)
+
+## mypy generics - plain
+{id: python-types-at-pyweb-2024-12-mypy-generics-plain}
+
+* We can use [generics](https://mypy.readthedocs.io/en/stable/generics.html) to say that we accept any type and we can use it to indicate that some other parameter or the return type will be the same type.
+
+![](examples/python-types-at-pyweb-2024-12/generics_plain.py)
+
+## mypy generics - cannot be any type
+{id: python-types-at-pyweb-2024-12-mypy-generics-cannot-be-any-type}
+
+![](examples/python-types-at-pyweb-2024-12/generics_cannot_be_any_type.py)
+
+```
+mypy generics_cannot_be_any_type.py
+
+generics_limit_types_by_listing.py:2:12: error: Unsupported left operand type for + ("T")  [operator]
+Found 1 error in 1 file (checked 1 source file)
+```
+
+## mypy generics - limit the types by listing
+{id: python-types-at-pyweb-2024-12-mypy-generics-limit-the-types-by-listing}
+
+![](examples/python-types-at-pyweb-2024-12/generics_limit_types_by_listing.py)
+
+## mypy generics - limit by functionality
 {id: python-types-at-pyweb-2024-12-mypy-generics}
+
+* A more generic way to define generics is by creating types that need to have certain functionality
 
 ![](examples/python-types-at-pyweb-2024-12/generics.py)
 
 ## mypy suggestions
 {id: python-types-at-pyweb-2024-12-mypy-suggestions}
-
-Defined parameters and the return value of a function
-Simple types such as int
-
-from typing import Dict, List, Union, KeysView, Tuple, Optional
-from typing_extensions import Literal, TypedDict, NotRequired  # TODO move to typing after upgrading python to 3.8
-import numpy as np
-import numpy.typing as npt
-import uuid
-import pandas as pd
-
-LabelType = str  # "square \u2208 shape"
-WebReturnType = Dict[str, Union[str, int]]
-XYModelType = Literal["umap", "tsne", "pca"]
-ActivationType = npt.NDArray[np.complex64]
-HashType = str  # should be 40 bytes long, this is the hashed ID of an image
-HistoryType = TypedDict('HistoryType', {'date' : str, 'event': str, 'info': str})
-
-PipelineStepType = TypedDict('PipelineStepType', {
-    "step_type": str,
-    "step_name": str,
-})
-
-
 
 * Set `MYPY_CACHE_DIR` environment variable
 * Create `mypy.ini`
@@ -250,5 +244,61 @@ PipelineStepType = TypedDict('PipelineStepType', {
 {id: python-types-at-pyweb-2024-12-the-end}
 
 * Don't forget to run mypy!
+
+## Bloopers
+{id: python-types-at-pyweb-2024-12-bloopers}
+
+## Define the type of variables
+{id: python-types-at-pyweb-2024-12-type-of-variables}
+
+![](examples/python-types-at-pyweb-2024-12/variable_and_function.py)
+
+```
+$ mypy variable_and_function.py
+variable_and_function.py:7:15: error: Incompatible types in assignment (expression has type "int", variable has type "str")  [assignment]
+Found 1 error in 1 file (checked 1 source file)
+
+
+$ mypy --strict variable_and_function.py
+variable_and_function.py:2:1: error: Function is missing a return type annotation  [no-untyped-def]
+Found 1 error in 1 file (checked 1 source file)
+```
+
+## Define the return type
+{id: python-types-at-pyweb-2024-12-define-return-type}
+
+![](examples/python-types-at-pyweb-2024-12/variable_and_function_with_return_type.py)
+
+```
+$ mypy variable_and_function_with_return_type.py
+variable_and_function_with_return_type.py:8:15: error: Incompatible types in assignment (expression has type "int", variable has type "str")  [assignment]
+Found 1 error in 1 file (checked 1 source file)
+```
+
+## Complex types for Python 3.8 and before
+{id: python-types-at-pyweb-2024-12-complex-types-for-older-versions}
+{i: List}
+{i: Dict}
+{i: Set}
+{i: Tuple}
+
+![](examples/python-types-at-pyweb-2024-12/complex_types_old.py)
+
+## Either this or that type for Python before 3.10
+{id: python-types-at-pyweb-2024-12-either-this-or-that-type-for-older-version}
+{i: Union}
+
+![](examples/python-types-at-pyweb-2024-12/union.py)
+```
+$ python union.py
+int
+str
+float
+
+$ mypy union.py
+union.py:8:9: error: Argument 1 to "my_exit" has incompatible type "float"; expected "str | int"  [arg-type]
+Found 1 error in 1 file (checked 1 source file)
+```
+
 
 
