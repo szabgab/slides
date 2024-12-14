@@ -231,6 +231,17 @@ Found 1 error in 1 file (checked 1 source file)
 
 ![](examples/python-types-at-pyweb-2024-12/generics.py)
 
+## Two variables of the same and different types
+{id: python-types-at-pyweb-2024-12-same-and-different-types}
+
+![](examples/python-types-at-pyweb-2024-12/generics_two_types.py)
+
+```
+$ mypy generics_two_types.py
+generics_two_types.py:10:1: error: Value of type variable "T" of "the_same" cannot be "object"  [type-var]
+Found 1 error in 1 file (checked 1 source file)
+```
+
 ## mypy suggestions
 {id: python-types-at-pyweb-2024-12-mypy-suggestions}
 
@@ -300,12 +311,5 @@ union.py:8:9: error: Argument 1 to "my_exit" has incompatible type "float"; expe
 Found 1 error in 1 file (checked 1 source file)
 ```
 
-
-## Two variables of the same and different types
-{id: python-types-at-pyweb-2024-12-same-and-different-types}
-
-TODO: Why is mypy accepting this?
-
-![](examples/python-types-at-pyweb-2024-12/generics_two_types.py)
 
 
