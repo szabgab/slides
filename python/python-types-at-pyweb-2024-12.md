@@ -301,4 +301,11 @@ Found 1 error in 1 file (checked 1 source file)
 ```
 
 
+## Two variables of the same and different types
+{id: python-types-at-pyweb-2024-12-same-and-different-types}
+
+TODO: Why is mypy accepting this?
+
+![](examples/python-types-at-pyweb-2024-12/generics_two_types.py)
+
 
