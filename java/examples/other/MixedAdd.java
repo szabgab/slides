@@ -9,5 +9,11 @@ public class MixedAdd {
         System.out.println("The sum: " + (a+c));
         System.out.println("The sum: " + (a+d));
         System.out.println("The sum: " + (a+f));
+        System.out.println("The sum: " + (f+a));
+
+
+        // MixedAdd.java:16: error: bad operand types for binary operator '*'
+        // String line = "-";
+        // System.out.println(line * 23);
     }
 }
