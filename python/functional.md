@@ -444,6 +444,15 @@ This can have only one iterable!
 ![](examples/functional/filter_map_one.py)
 ![](examples/functional/filter_map_one.out)
 
+## filter a dictionary using dict comprehension
+{id: filter-a-dictionary}
+
+We have a dictionary, we would like to create another dictionary based on this one that contains only key-value pairs that meet a certain condition.
+
+![](examples/functional/filter_dictionary.py)
+![](examples/functional/filter_dictionary.out)
+
+
 ## Get indices of values
 {id: get-indexes-of-values}
 
