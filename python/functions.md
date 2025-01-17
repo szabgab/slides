@@ -130,6 +130,11 @@ They are all optional and can be given in any order after the positional argumen
 {/aside}
 
 
+## Default list
+{id: default-list}
+
+![](examples/functions/default_list.py)
+
 ## Arbitrary number of arguments `*`
 {id: arbitrary-number-of-arguments}
 {i: `*args`}
