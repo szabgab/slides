@@ -152,6 +152,8 @@ job-name:
 
 * [Manual interaction](https://docs.gitlab.com/ee/ci/pipelines/#add-manual-interaction-to-your-pipeline)
 
+* Select the `gear` icon, type in the variable: `name` and a value. Then let it run.
+
 ![](examples/pipelines/manual-interaction/.gitlab-ci.yml)
 
 ![](img/manual-interaction.png)
@@ -159,7 +161,28 @@ job-name:
 ## Manual approval
 {id: manual-approval}
 
+* Click on the `gear` as variable type in `CODE` and as value type in `secret`.
+
 ![](examples/pipelines/manual-approval/.gitlab-ci.yml)
+
+To generate such a secret hash use the following command on linux:
+
+```
+echo "'$(echo -n secret | sha256sum)'"
+```
+
+## Pick a Windows and MacOS runner
+{id: pick-a-runner-windows-macos}
+
+
+## Use Postgres service
+{id: use-postgres-service}
+
+[Postgres service on GitLab](https://docs.gitlab.com/ee/ci/services/postgres.html)
+
+
+## Use MongoDB service
+{id: use-mongodb-service}
 
 
 ## Script
