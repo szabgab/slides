@@ -35,6 +35,8 @@
 * GitLab.org [documentation](https://docs.gitlab.com/)
 * GitLab.com specific [documentation](https://docs.gitlab.com/ee/user/gitlab_com/)
 
+* Documentation of [GitLab pipelines](https://docs.gitlab.com/ee/ci/pipelines/)
+
 ## Runner
 {id: runner}
 
@@ -42,7 +44,7 @@
 * [shared runners](https://gitlab.com/szabgab/gl-try/-/settings/ci_cd#js-runners-settings)
 * Mostly Linux
 * Windows is also avilable
-* Mac OSX is in beta
+* Mac OSX is also avilable
 
 ## Docker images
 {id: docker-images}
@@ -55,13 +57,6 @@
 * Configuration is in `.gitlab-ci.yml`
 * [YAML](https://yaml.org/)
 
-## Pipeline Linter
-{id: pipeline-linter}
-
-* CI/CD
-* Pipelines
-* [CI Lint](https://gitlab.com/szabgab/gl-try/-/ci/lint)
-
 ## Hello World
 {id: hello-world}
 
@@ -70,7 +65,11 @@
 * default (required) - an arbitrary name we used for this job
 * script: (required) the command to execute in the Docker container
 
-* Current default Docker image is `ruby:2.5`
+* Current default Docker image is `ruby:3.1`
+
+* See the [pipelines-demo](https://gitlab.com/szabgab/pipelines-demo) repo.
+* See `Build / Pipelines` menu point.
+
 
 
 ## Hello World in container
@@ -92,7 +91,7 @@
 
 
 * **Pipeline** Each repository can have a Pipeline (described in the .gitlab-ci.yml file).
-* **Stages** Each Pipeline can have one or stages. One stage runs after the previous stage finished.
+* **Stages** Each Pipeline can have one or more stages. One stage runs after the previous stage finished.
 * **Jobs** Each Stage can have 1 or more jobs. The jobs will run in parallel.
 * **Script** Each job must have a `script` and can, optionally, have a `before_script` and an `after_script` step.
 
@@ -303,6 +302,13 @@ So I am using Personal Access Tokens stored as a secret.
 ![](examples/pipelines/gitlab-pages/.gitlab-ci.yml)
 ![](examples/pipelines/gitlab-pages/src/index.html)
 
+* [szabgab.gitlab.io](https://szabgab.gitlab.io/)
+* [repo](https://gitlab.com/szabgab/szabgab.gitlab.io)
+
+* [gitlab.szabgab.com](https://gitlab.szabgab.com/)
+* [repo](https://gitlab.com/szabgab/gitlab.szabgab.com)
+
+
 ## Deployment
 {id: deployment}
 
@@ -312,4 +318,24 @@ ssh-keygen -N '' -f ~/.ssh/deploy-demo-gitlab/gitlab_rsa
 ssh-keygen -N '' -f ~/.ssh/deploy-demo-gitlab/gitlab_rsa -p
 copy the content of gitlab_rsa_pub to ~/.ssh/authorized_keys on the server
 ```
+
+## Perl projects using GitLab
+{id: perl-projects-using-gitlab}
+
+Find Perl project using GitLab: https://cpan.rocks/
+CPAN Digger: https://cpan-digger.perlmaven.com/
+
+## Rust projects using GitLab
+{id: rust-projects-using-gitlab}
+
+* Many projects use GitLab.com, many other projects use their own installation of GitLab.
+
+* [Rust Digger vcs report](https://rust-digger.code-maven.com/vcs/)
+
+## Python projects using GitLab
+{id: python-projects-using-gitlab}
+
+* [PyDigger stats](https://pydigger.com/stats)
+
+
 
