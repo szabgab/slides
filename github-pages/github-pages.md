@@ -7,16 +7,16 @@
 * Everyone uses some version control. (e.g. by copying the document with a date suffix).
 * There are many version control systems (VCSs).
 * `git` is the de-facto standard these days. It is open source and free. It is integrated in many tools.
-* [GitHub](https://github.com/) is the most popular cloud hosting service for git repositories with many fun extra features.
+* [GitHub](https://github.com/) is the most popular cloud-based hosting service for `git` repositories with many extra features.
 
 ## GitHub Account
 {id: github-account}
 
 * If you don't have an account yet on [GitHub](https://github.com/) then create one now.
-* It should be personal. It will remain with you for your life.
+* It should be personal. It will remain with you for your life. (or the life of GitHub)
 * It should not be related to your current educational institute or workplace or this presentation or course.
 
-* My account is [szabgab on GitHub](https://github.com/szabgab/)
+* My account is [szabgab on GitHub](https://github.com/szabgab/). It is my nickname almost everywhere on the Internet.
 
 ## GitHub Avatar
 {id: github-avatar}
@@ -28,37 +28,59 @@
 {id: setting-up-github-page}
 
 * Create a GitHub repository called USERNAME.github.io (using your own USERNAME).
-* (For user `szabgab` it is `szabgab.github.io`)
+* For user [szabgab](https://github.com/szabgab/) it is [szabgab.github.io](https://github.com/szabgab/szabgab.github.io).
 * Make the new repository public so we'll all be able to see the source.
 * Check the "Add a README file" checkbox.
 
 * Check the `Actions` tab to see the process generating the web site.
 
 * Visit https://USERNAME.github.io (it may take a few minutes to update)
+* For user szabgab it is [szabgab.github.io](https://szabgab.github.io/).
 * For GitHub Organizations it is exactly the same process.
-
-
-## Markdown
-{id: markdown}
-
-* Titles
-* Bold:
-* Italic
-
 
 ## GitHub page with Jekyll
 {id: github-page-with-jekyll}
 
 * [Jekyll](https://jekyllrb.com/) a static site generator
+
+## Makrdown
+{id: markdown-links}
+
 * [Markdown](https://daringfireball.net/projects/markdown/)
 * [GitHub flavored Markdow](https://github.github.com/gfm/)
+
+
+## Markdown
+{id: markdown}
+
+* Titles: One or more `#` followed by the the title
+* **Bold** `**` on both sides
+* _Italic_ `_` on both sides
+
+* Horizontal separator `---`.
+
+* Link to some other site. e.g. to the slides.
+
+* Unordered list. `*`
+* Ordered list (both with ordered numbers and with  `1.`-s)
+
+* Add image from other site `![](http://www.adelaidezoo.com.au/wp-content/uploads/sites/2/2016/03/Fu-Ni-7.jpg)`
+* Upload an image and show it. `![my ant](little-black-ants.jpg)`
+
+* Table
+
+* Verbatim with backticks.
+* Inline with one-tick.
+* Multiline with 3-ticks. Add also programming language for highlighting.
+* Indenting 4 spaces also works.
+
+
 
 ## Jekyll themese
 {id: jekyll-themes}
 
 * [themes](https://pages.github.com/themes/)
-* Create **_config.yml** with **theme: jekyll-theme-cayman**
-
+* Create `_config.yml` with `theme: jekyll-theme-cayman`
 
 
 ## Themes layout
@@ -68,7 +90,6 @@
 * [Cayman in GitHub](https://github.com/pages-themes/cayman)
 * [Cayman demo](https://pages-themes.github.io/cayman/)
 * [_layouts/default.html](https://github.com/pages-themes/cayman/blob/master/_layouts/default.html) look at the template tags to learn about config options.
-
 
 
 ## Site-wise configuration
@@ -173,6 +194,8 @@ description: Some text
 * Code Maven sites
 * Perl Maven sites
 
+* [slides](https://slides.code-maven.com/) - [source](https://github.com/szabgab/slides/) - [generator](https://github.com/szabgab/slider-py) written in Python.
+
 ## Rename repository
 {id: rename-repository}
 
@@ -182,8 +205,11 @@ description: Some text
 ## Open Issue
 {id: open-issue}
 
+* Show how to open an issue on the repository with a link to your site and repository.
+* Show with my own site.
 
+## Add table of people
+{id: add-table-of-people}
 
-
-
+* Take the data from the issue and add it to the table listing the web sites.
 
