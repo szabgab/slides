@@ -10,7 +10,7 @@
 * Visit https://USERNAME.github.io (it may take a few minutes to update)
 * For GitHub Organizations it is exactly the same process.
 
-![](github-pages/index.html)
+![](examples/index.html)
 
 
 ## GitHub page with Jekyll
@@ -23,7 +23,7 @@
 * Visit https://USERNAME.github.io/about
 * Note: the .html files take precedence over the .md files!
 
-![](github-pages/about.md)
+![](examples/about.md)
 
 
 ## Jekyll themese
@@ -49,7 +49,7 @@
 
 * In **_config.yml**
 
-![](github-pages/_config.yml)
+![](examples/_config.yml)
 
 
 
@@ -69,7 +69,8 @@ title: About the szabgab page
 
 ## JavaScript code
 {id: javascript-code}
-![](github-pages/js.md)
+
+![](examples/js.md)
 
 * One can include plain HTML in the md file. So include **script** tags.
 * The code should come at the end to have the DOM available already.
@@ -78,8 +79,9 @@ title: About the szabgab page
 
 ## Load jQuery and add jQuery code
 {id: load-jquery-code}
-![](github-pages/jquery.md)
-![](github-pages/demo.js)
+
+![](examples/jquery.md)
+![](examples/demo.js)
 
 When you change the JavaScript file, make sure it is reloaded! Browser cashing can cause you a bad day.
 
@@ -87,9 +89,10 @@ When you change the JavaScript file, make sure it is reloaded! Browser cashing c
 
 ## Add a JSON file, load it with jQuery and display the content
 {id: load-json-file}
-![](github-pages/json.md)
-![](github-pages/json.js)
-![](github-pages/data.json)
+
+![](examples/json.md)
+![](examples/json.js)
+![](examples/data.json)
 
 
 
