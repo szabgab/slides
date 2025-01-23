@@ -4,7 +4,7 @@
 
 * bullet
 * points
-* and [link](https://edumaven.com/)
+* and [home](/)
 
 1. Numbered
 1. List

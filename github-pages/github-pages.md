@@ -75,6 +75,21 @@
 * Indenting 4 spaces also works.
 
 
+## Add page
+{id: add-another-page}
+
+* Create a file called `about.md`.
+* Visit https://USERNAME.github.io/about
+* Show how to linke to it from the main page.
+
+![](examples/about.md)
+
+
+## Customized 404 Page not found
+{id: page-not-found}
+
+Create the `404.md` files.
+
 
 ## Jekyll themese
 {id: jekyll-themes}
@@ -120,10 +135,8 @@ title: About the szabgab page
 
 ![](examples/js.md)
 
-* One can include plain HTML in the md file. So include **script** tags.
+* One can include plain HTML in the md file. So include `script` tags.
 * The code should come at the end to have the DOM available already.
-
-
 
 ## Load jQuery and add jQuery code
 {id: load-jquery-code}
@@ -149,7 +162,7 @@ When you change the JavaScript file, make sure it is reloaded! Browser cashing c
 
 
 
-In the _config file we can add a field called **description:**. It will provide the content for the subtitle of the header.
+In the _config file we can add a field called `description:`. It will provide the content for the subtitle of the header.
 
 ```
 description: Some text
@@ -159,11 +172,8 @@ description: Some text
 
 ![](examples/index.html)
 
-* Create a file called **about.md**
-* Visit https://USERNAME.github.io/about
 * Note: the .html files take precedence over the .md files!
 
-![](examples/about.md)
 
 ## Examples
 {id: examples}
@@ -195,6 +205,9 @@ description: Some text
 * Perl Maven sites
 
 * [slides](https://slides.code-maven.com/) - [source](https://github.com/szabgab/slides/) - [generator](https://github.com/szabgab/slider-py) written in Python.
+
+* [rust.org.il](https://rust.org.il/) - [source](https://github.com/szabgab/rust.org.il/) written in Rust.
+* [python.org.il](https://python.org.il/) - [source](https://gitlab.com/hamakor/python.org.il/) is written in Python but it is hosted on GitLab pages.
 
 ## Rename repository
 {id: rename-repository}
