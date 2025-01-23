@@ -9,6 +9,8 @@
 * `git` is the de-facto standard these days. It is open source and free. It is integrated in many tools.
 * [GitHub](https://github.com/) is the most popular cloud-based hosting service for `git` repositories with many extra features.
 
+* In this session we will use `git` only via the web-site of GitHub.
+
 ## GitHub Account
 {id: github-account}
 
@@ -21,8 +23,11 @@
 ## GitHub Avatar
 {id: github-avatar}
 
+* Update your profile, add information about yourself.
 * Add a picture or an avatar of you to make your account more recognizable.
 * Your profile / Edit profile / ...
+
+* The big text comes from the `README.md` file of the [szabgab/szabgab](https://github.com/szabgab/szabgab) repository.
 
 ## Setting up GitHub page
 {id: setting-up-github-page}
@@ -38,10 +43,16 @@
 * For user szabgab it is [szabgab.github.io](https://szabgab.github.io/).
 * For GitHub Organizations it is exactly the same process.
 
+## HTML - view source
+{id: html-view-source}
+
+* Look at the source of the page. That's HTML. We don't want to write that.
+
 ## GitHub page with Jekyll
 {id: github-page-with-jekyll}
 
 * [Jekyll](https://jekyllrb.com/) a static site generator
+
 
 ## Makrdown
 {id: markdown-links}
@@ -65,7 +76,13 @@
 * Ordered list (both with ordered numbers and with  `1.`-s)
 
 * Add image from other site `![](http://www.adelaidezoo.com.au/wp-content/uploads/sites/2/2016/03/Fu-Ni-7.jpg)`
-* Upload an image and show it. `![my ant](little-black-ants.jpg)`
+* Upload an image and show it.
+
+* Use the `img` HTML element to set the size of the image.
+
+```
+![my ant](little-black-ants.jpg)
+```
 
 * Table
 
@@ -80,7 +97,7 @@
 
 * Create a file called `about.md`.
 * Visit https://USERNAME.github.io/about
-* Show how to linke to it from the main page.
+* Show how to link to it from the main page.
 
 ![](examples/about.md)
 
@@ -88,14 +105,18 @@
 ## Customized 404 Page not found
 {id: page-not-found}
 
-Create the `404.md` files.
+Create the `404.md` file to provide custom error message.
 
 
-## Jekyll themese
+## Jekyll themes
 {id: jekyll-themes}
 
 * [themes](https://pages.github.com/themes/)
-* Create `_config.yml` with `theme: jekyll-theme-cayman`
+* Create `_config.yml` with
+
+```
+theme: jekyll-theme-cayman
+```
 
 
 ## Themes layout
@@ -104,13 +125,20 @@ Create the `404.md` files.
 * [themes](https://pages.github.com/themes/)
 * [Cayman in GitHub](https://github.com/pages-themes/cayman)
 * [Cayman demo](https://pages-themes.github.io/cayman/)
-* [_layouts/default.html](https://github.com/pages-themes/cayman/blob/master/_layouts/default.html) look at the template tags to learn about config options.
+* [`_layouts/default.html`](https://github.com/pages-themes/cayman/blob/master/_layouts/default.html) look at the template tags to learn about config options.
 
 
 ## Site-wise configuration
 {id: site-wise-configuration}
 
 * In `_config.yml`
+
+In the `_config` file we can add a field called `description:`. It will provide the content for the subtitle of the header.
+
+```
+description: Some text
+```
+
 
 ![](examples/_config.yml)
 
@@ -157,22 +185,15 @@ When you change the JavaScript file, make sure it is reloaded! Browser cashing c
 
 
 
-## Other
-{id: other}
+## HTML pages
+{id: html-pages}
 
 
+* Create a file called `about.html`.
 
-In the _config file we can add a field called `description:`. It will provide the content for the subtitle of the header.
+![](examples/about.html)
 
-```
-description: Some text
-```
-
-* Create a file called **index.html**
-
-![](examples/index.html)
-
-* Note: the .html files take precedence over the .md files!
+* Note: the `.html` files take precedence over the `.md` files!
 
 
 ## Examples
