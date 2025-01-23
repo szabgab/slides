@@ -1,16 +1,49 @@
 # GitHub Pages
 {id: github-pages}
 
+## Why use version control?
+{id: why-use-version-control}
+
+* Everyone uses some version control. (e.g. by copying the document with a date suffix).
+* There are many version control systems (VCSs).
+* `git` is the de-facto standard these days. It is open source and free. It is integrated in many tools.
+* [GitHub](https://github.com/) is the most popular cloud hosting service for git repositories with many fun extra features.
+
+## GitHub Account
+{id: github-account}
+
+* If you don't have an account yet on [GitHub](https://github.com/) then create one now.
+* It should be personal. It will remain with you for your life.
+* It should not be related to your current educational institute or workplace or this presentation or course.
+
+* My account is [szabgab on GitHub](https://github.com/szabgab/)
+
+## GitHub Avatar
+{id: github-avatar}
+
+* Add a picture or an avatar of you to make your account more recognizable.
+* Your profile / Edit profile / ...
+
 ## Setting up GitHub page
 {id: setting-up-github-page}
 
-* Create an account on [GitHub](https://github.com/)
-* Create a GitHub repository called USERNAME.github.io
-* Create a file called **index.html**
+* Create a GitHub repository called USERNAME.github.io (using your own USERNAME).
+* (For user `szabgab` it is `szabgab.github.io`)
+* Make the new repository public so we'll all be able to see the source.
+* Check the "Add a README file" checkbox.
+
+* Check the `Actions` tab to see the process generating the web site.
+
 * Visit https://USERNAME.github.io (it may take a few minutes to update)
 * For GitHub Organizations it is exactly the same process.
 
-![](examples/index.html)
+
+## Markdown
+{id: markdown}
+
+* Titles
+* Bold:
+* Italic
 
 
 ## GitHub page with Jekyll
@@ -18,13 +51,7 @@
 
 * [Jekyll](https://jekyllrb.com/) a static site generator
 * [Markdown](https://daringfireball.net/projects/markdown/)
-* [GitHub flavored Markdow](https://guides.github.com/features/mastering-markdown/)
-* Create a file called **about.md**
-* Visit https://USERNAME.github.io/about
-* Note: the .html files take precedence over the .md files!
-
-![](examples/about.md)
-
+* [GitHub flavored Markdow](https://github.github.com/gfm/)
 
 ## Jekyll themese
 {id: jekyll-themes}
@@ -47,7 +74,7 @@
 ## Site-wise configuration
 {id: site-wise-configuration}
 
-* In **_config.yml**
+* In `_config.yml`
 
 ![](examples/_config.yml)
 
@@ -103,11 +130,59 @@ When you change the JavaScript file, make sure it is reloaded! Browser cashing c
 
 In the _config file we can add a field called **description:**. It will provide the content for the subtitle of the header.
 
-
-
 ```
 description: Some text
 ```
+
+* Create a file called **index.html**
+
+![](examples/index.html)
+
+* Create a file called **about.md**
+* Visit https://USERNAME.github.io/about
+* Note: the .html files take precedence over the .md files!
+
+![](examples/about.md)
+
+## Examples
+{id: examples}
+
+
+* [rustatic](https://rustatic.code-maven.com/) - [source](https://github.com/szabgab/rustatic/) using Jekyll.
+* my simple site [github.szabgab.com](https://github.szabgab.com/) - [soruce](https://github.com/szabgab/real-szabgab.github.io) using only Markdown files and the default Jekyll processor on GitHub pages.
+* [Kantoniko](https://kantoniko.com/) - [source](https://github.com/kantoniko/) - using Python combining data from many repositories.  A dictionary and content in Ladino. Written in Python collecting data from multiple repositories.
+* my personal site [szabgab.com](https://szabgab.com/) - [source](https://github.com/szabgab/szabgab.com) - using Perl.
+* [Perl Weekly](https://perlweekly.com/) - [source](https://github.com/szabgab/perlweekly) - Perl, generate the site locally and push the HTML files as well.
+
+* The students of [WIS Python course started in 2024-04](https://github.com/szabgab/wis-python-course-2024-04)
+* The students of [WIS Python course started in 2024-11](https://github.com/szabgab/wis-python-course-2024-11)
+
+
+* [Jekyll](https://jekyllrb.com/) a static site generator.
+* Many [Static Site Generators](https://jamstack.org/generators/).
+
+* [Planet Perl](https://perl.theplanetarium.org/) - [source](https://github.com/PerlToolsTeam/planetperl) using Perl.
+* [Forem Reports](https://forem.code-maven.com/) - [source](https://github.com/szabgab/forem-reports).
+* [(Rust) virtual events](https://events.code-maven.com/) - [source](https://github.com/szabgab/virtual-events).
+* [Ruby Digger](https://ruby-digger.code-maven.com/) - [source](https://github.com/szabgab/ruby-digger)
+* CPAN Digger
+
+* [Rust Maven](https://rust.code-maven.com/) - [source](https://github.com/szabgab/rust.code-maven.com/) - [Rust Maven SSG](https://ssg.code-maven.com/) written in Rust.
+* [Rust news](https://rust-news.code-maven.com/) written in Rust, collectin RSS/Atom feeds and generating the web site.
+
+* Code Maven sites
+* Perl Maven sites
+
+## Rename repository
+{id: rename-repository}
+
+* Rename repository so I'll be able to demo this later as well.
+* Show how to access the web site now.
+
+## Open Issue
+{id: open-issue}
+
+
 
 
 
