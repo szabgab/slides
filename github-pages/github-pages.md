@@ -32,6 +32,10 @@
 * USERNAME
 * USERNAME.github.io
 
+For me they are
+* [https://github.com/szabgab/szabgab](https://github.com/szabgab/szabgab)
+* [https://github.com/szabgab/szabgab.github.io](https://github.com/szabgab/szabgab.github.io)
+
 
 ## GitHub Avatar
 {id: github-avatar}
@@ -47,7 +51,7 @@
 
 * Create a GitHub repository called USERNAME.github.io (using your own USERNAME).
 * For user [szabgab](https://github.com/szabgab/) it is [szabgab.github.io](https://github.com/szabgab/szabgab.github.io).
-* Make the new repository public so we'll all be able to see the source.
+* Make the new repository public so everyone will be able to see the source.
 * Check the "Add a README file" checkbox.
 
 * Check the `Actions` tab to see the process generating the web site.
@@ -59,7 +63,10 @@
 ## HTML - view source
 {id: html-view-source}
 
+* Web sites are built using HTML.
 * Look at the source of the page. That's HTML. We don't want to write that.
+* So we'll use Markdown and an some tool that will convert Markdown to HTML.
+
 
 ## GitHub page with Jekyll
 {id: github-page-with-jekyll}
@@ -67,7 +74,7 @@
 * [Jekyll](https://jekyllrb.com/) a static site generator
 
 
-## Makrdown
+## Markdown
 {id: markdown-links}
 
 * [Markdown](https://daringfireball.net/projects/markdown/)
@@ -118,7 +125,8 @@
 ## Customized 404 Page not found
 {id: page-not-found}
 
-Create the `404.md` file to provide custom error message.
+* Visit a page that does not exist.
+* Create the `404.md` file to provide custom error message.
 
 
 ## Jekyll themes
