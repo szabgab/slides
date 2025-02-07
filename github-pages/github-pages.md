@@ -74,6 +74,9 @@ For me they are
 * [Jekyll](https://jekyllrb.com/) a static site generator
 
 
+* Many [Static Site Generators](https://jamstack.org/generators/).
+
+
 ## Markdown
 {id: markdown-links}
 
@@ -106,9 +109,9 @@ For me they are
 
 * Table
 
-* Verbatim with backticks.
+* Verbatim with back-ticks.
 * Inline with one-tick.
-* Multiline with 3-ticks. Add also programming language for highlighting.
+* Multi-line with 3-ticks. Add also programming language for highlighting.
 * Indenting 4 spaces also works.
 
 
@@ -222,7 +225,7 @@ When you change the JavaScript file, make sure it is reloaded! Browser cashing c
 
 
 * [rustatic](https://rustatic.code-maven.com/) - [source](https://github.com/szabgab/rustatic/) using Jekyll.
-* my simple site [github.szabgab.com](https://github.szabgab.com/) - [soruce](https://github.com/szabgab/real-szabgab.github.io) using only Markdown files and the default Jekyll processor on GitHub pages.
+* my simple site [github.szabgab.com](https://github.szabgab.com/) - [source](https://github.com/szabgab/real-szabgab.github.io) using only Markdown files and the default Jekyll processor on GitHub pages.
 * [Kantoniko](https://kantoniko.com/) - [source](https://github.com/kantoniko/) - using Python combining data from many repositories.  A dictionary and content in Ladino. Written in Python collecting data from multiple repositories.
 * my personal site [szabgab.com](https://szabgab.com/) - [source](https://github.com/szabgab/szabgab.com) - using Perl.
 * [Perl Weekly](https://perlweekly.com/) - [source](https://github.com/szabgab/perlweekly) - Perl, generate the site locally and push the HTML files as well.
@@ -231,17 +234,13 @@ When you change the JavaScript file, make sure it is reloaded! Browser cashing c
 * The students of [WIS Python course started in 2024-11](https://github.com/szabgab/wis-python-course-2024-11)
 
 
-* [Jekyll](https://jekyllrb.com/) a static site generator.
-* Many [Static Site Generators](https://jamstack.org/generators/).
-
 * [Planet Perl](https://perl.theplanetarium.org/) - [source](https://github.com/PerlToolsTeam/planetperl) using Perl.
 * [Forem Reports](https://forem.code-maven.com/) - [source](https://github.com/szabgab/forem-reports).
 * [(Rust) virtual events](https://events.code-maven.com/) - [source](https://github.com/szabgab/virtual-events).
 * [Ruby Digger](https://ruby-digger.code-maven.com/) - [source](https://github.com/szabgab/ruby-digger)
-* CPAN Digger
 
-* [Rust Maven](https://rust.code-maven.com/) - [source](https://github.com/szabgab/rust.code-maven.com/) - [Rust Maven SSG](https://ssg.code-maven.com/) written in Rust.
-* [Rust news](https://rust-news.code-maven.com/) written in Rust, collectin RSS/Atom feeds and generating the web site.
+* [Rust Maven](https://rust.code-maven.com/) - [source](https://github.comr/szabgab/rust.code-maven.com/) - [Rust Maven SSG](https://ssg.code-maven.com/) written in Rust.
+* [Rust news](https://rust-news.code-maven.com/) written in Rust, collecting RSS/Atom feeds and generating the web site.
 
 * Code Maven sites
 * Perl Maven sites
