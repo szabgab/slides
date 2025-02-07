@@ -18,7 +18,20 @@
 * It should be personal. It will remain with you for your life. (or the life of GitHub)
 * It should not be related to your current educational institute or workplace or this presentation or course.
 
-* My account is [szabgab on GitHub](https://github.com/szabgab/). It is my nickname almost everywhere on the Internet.
+* My account is [szabgab on GitHub](https://github.com/szabgab/). It is my nickname almost everywhere on the Internet. It is even the address of [my web site](https://szabgab.com/).
+
+## Repositories
+{id: github-repositories}
+
+* On GitHub you can store as many `git` repositories as you like. They can be either private or public.
+* The names of the repositories are arbitrary.
+* https://github.com/USERNAME/REPO-NAME
+* https://github.com/ORGANISATION/REPO-NAME
+
+* Some repository names have special meanings.
+* USERNAME
+* USERNAME.github.io
+
 
 ## GitHub Avatar
 {id: github-avatar}
