@@ -78,7 +78,7 @@ For me they are
 {id: markdown-links}
 
 * [Markdown](https://daringfireball.net/projects/markdown/)
-* [GitHub flavored Markdow](https://github.github.com/gfm/)
+* [GitHub flavored Markdown](https://github.github.com/gfm/)
 
 
 ## Markdown
