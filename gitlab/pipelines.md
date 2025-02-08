@@ -325,12 +325,16 @@ So I am using Personal Access Tokens stored as a secret.
 ![](examples/pipelines/gitlab-pages/.gitlab-ci.yml)
 ![](examples/pipelines/gitlab-pages/src/index.html)
 
+## GitLab pages with Perl
+{id: gitlab-pages-with-perl-examples}
+
 * [szabgab.gitlab.io](https://szabgab.gitlab.io/)
 * [repo](https://gitlab.com/szabgab/szabgab.gitlab.io)
 
 * [gitlab.szabgab.com](https://gitlab.szabgab.com/)
 * [repo](https://gitlab.com/szabgab/gitlab.szabgab.com)
 
+* [CPAN Rocks](https://cpan.rocks/)
 
 ## Deployment
 {id: deployment}
