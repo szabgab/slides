@@ -64,6 +64,15 @@ jobs:
         pwd
         ./generate_slides.py
 
+    - name: Download mdBook
+      run: |
+        wget https://github.com/rust-lang/mdBook/releases/download/v0.4.44/mdbook-v0.4.44-x86_64-unknown-linux-gnu.tar.gz
+        tar xzf mdbook-v0.4.44-x86_64-unknown-linux-gnu.tar.gz
+
+    - name: mdBook
+      run: |
+        ../mdbook build --dest-dir ../html/github-pages github-pages/
+
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v3
       with:
