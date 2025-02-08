@@ -74,6 +74,7 @@ jobs:
       run: |
         cd slides
         ./mdbook build --dest-dir ../html/github-pages github-pages/
+        ./mdbook build --dest-dir ../html/gitlab gitlab/
 
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v3
