@@ -66,11 +66,13 @@ jobs:
 
     - name: Download mdBook
       run: |
+        cd slides
         wget https://github.com/rust-lang/mdBook/releases/download/v0.4.44/mdbook-v0.4.44-x86_64-unknown-linux-gnu.tar.gz
         tar xzf mdbook-v0.4.44-x86_64-unknown-linux-gnu.tar.gz
 
     - name: mdBook
       run: |
+        cd slides
         ./mdbook build --dest-dir ../html/github-pages github-pages/
 
     - name: Upload artifact
