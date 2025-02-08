@@ -1,11 +1,16 @@
+---
+keywords:
+  - include
+  - stdio
+  - main
+  - printf
+---
+
 ## Hello World
 
-{i: include}
-{i: stdio}
-{i: main}
-{i: printf}
-
-![](examples/hello_world/hello_world.c)
+```c
+{{#include ../examples/hello_world/hello_world.c}}
+```
 
 ```
 gcc hello_world.c
