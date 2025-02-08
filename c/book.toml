@@ -1,0 +1,6 @@
+[book]
+authors = ["Gabor Szabo"]
+language = "en"
+multilingual = false
+src = "src"
+title = "C programming"
