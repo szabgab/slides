@@ -71,7 +71,7 @@ jobs:
 
     - name: mdBook
       run: |
-        ../mdbook build --dest-dir ../html/github-pages github-pages/
+        ./mdbook build --dest-dir ../html/github-pages github-pages/
 
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v3
