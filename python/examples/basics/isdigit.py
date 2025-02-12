@@ -1,5 +1,5 @@
 
-for var in ["23", "2.3", "a", "2.3.4"]:
+for var in ["23", "2.3", "a", "2.3.4", "2x"]:
     print(var)
     if var.isdigit():
         print(f"{var} can be converted to int:", int(var))
