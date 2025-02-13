@@ -87,6 +87,14 @@ In many aspects it behaves as an iterator. Specifically it allows us to iterate 
 ![](examples/iterators/range.out)
 
 
+## Range with floating point steps
+{id: range-with-floating-point-steps}
+
+![](examples/iterators/range-with-steps/count.py)
+![](examples/iterators/range-with-steps/it.py)
+![](examples/iterators/range-with-steps/count.out)
+
+
 ## Iterator: a counter
 {id: iterator-counter}
 {i: StopIteration }
