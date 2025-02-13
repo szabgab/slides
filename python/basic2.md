@@ -431,13 +431,13 @@ There is no is_int, we just need to try to convert and catch the exception, if t
 
 In other languages this is the [?:](https://en.wikipedia.org/wiki/%3F:) construct.
 
-## Case or Switch in Python
+## Case or Switch in Python: match pattern matching
 {id: case-switch}
 {i: case}
 {i: switch}
+{i: match}
 
-* There is no case or switch statement in Python.
-
+![](examples/basics/switch.py)
 
 ## Exercise: Rectangle
 {id: exercise-rectangle}
