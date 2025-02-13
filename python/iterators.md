@@ -93,6 +93,7 @@ In many aspects it behaves as an iterator. Specifically it allows us to iterate 
 ![](examples/iterators/range-with-steps/count.py)
 ![](examples/iterators/range-with-steps/it.py)
 ![](examples/iterators/range-with-steps/count.out)
+![](examples/iterators/range-with-steps/test_counter.py)
 
 
 ## Iterator: a counter
