@@ -6,6 +6,7 @@ def extend_and_print(names = []):
 
 extend_and_print()
 extend_and_print()
+print()
 
 def fixed(names = None):
     if names is None:

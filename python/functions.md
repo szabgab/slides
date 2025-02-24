@@ -134,6 +134,7 @@ They are all optional and can be given in any order after the positional argumen
 {id: default-list}
 
 ![](examples/functions/default_list.py)
+![](examples/functions/default_list.out)
 
 ## Arbitrary number of arguments `*`
 {id: arbitrary-number-of-arguments}
