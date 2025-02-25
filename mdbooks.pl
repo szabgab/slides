@@ -26,8 +26,8 @@ for my $name (readdir $dh) {
     next if $name eq "." or $name eq "..";
     next if not -d "html/$name";
     my @html_files  = glob("html/$name/*.html");
-    $count{$name} = @html_files - 5;
-    $total += @html_files - 5;
+    $count{$name} = @html_files - 4;
+    $total += @html_files - 4;
 }
 my $now = localtime();
 
