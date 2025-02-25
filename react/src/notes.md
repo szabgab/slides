@@ -1,8 +1,4 @@
-# React JS
-{id: react}
-
 ## Notes
-{id: notes}
 
 * Check if we have node
 
