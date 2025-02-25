@@ -23,6 +23,7 @@ my $total = 0;
 opendir my $dh, "html" or die;
 for my $name (readdir $dh) {
     next if $name eq "." or $name eq "..";
+    next if not -d "html/$name";
     my @html_files  = glob("html/$name/*.html");
     $count{$name} = @html_files - 3;
     $total += @html_files - 3;
@@ -68,7 +69,7 @@ my $html = q{
 <ul>
 };
 
-for my $name (sort {$count{$a} <=> $count{$b}} keys %count) {
+for my $name (sort {$count{$b} <=> $count{$a}} keys %count) {
     $html .= qq{<li><a href="$name">$name</a> ($count{$name})</li>}
 }
 
