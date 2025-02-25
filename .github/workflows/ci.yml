@@ -74,7 +74,7 @@ jobs:
       run: |
         export PATH=$PATH:.
         cd slides
-        mdbooks.sh
+        perl mdbooks.pl
 
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v3
