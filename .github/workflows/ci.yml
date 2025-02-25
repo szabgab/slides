@@ -74,10 +74,7 @@ jobs:
       run: |
         export PATH=$PATH:.
         cd slides
-        mdbook build --dest-dir ../html/github-pages github-pages/
-        mdbook build --dest-dir ../html/gitlab gitlab/
-        mdbook build --dest-dir ../html/c c/
-        mdbook.sh
+        mdbooks.sh
 
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v3
