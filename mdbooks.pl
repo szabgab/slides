@@ -8,6 +8,7 @@ my @names = qw(
     c
     react
     typescript
+    sqlite
 );
 
 for my $name (@names) {
