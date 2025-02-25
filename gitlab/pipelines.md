@@ -1,4 +1,3 @@
 # GitLab Pipelines
 {id: pipelines}
 
-This file is unused. Everything was moved to src
