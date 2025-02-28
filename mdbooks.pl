@@ -3,7 +3,6 @@ use warnings;
 use feature 'say';
 
 my @names = qw(
-    mdbook
     github-pages
     gitlab
     c
