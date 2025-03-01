@@ -145,7 +145,7 @@ sub get_title {
             }
         }
     } elsif (-e $json_file) {
-        open my $fh, "<", $book_file or die;
+        open my $fh, "<", $json_file or die;
         while (my $line = <$fh>) {
             # "title": "Perl Programming",
             if ($line =~ /^\s*"title": "(.*)",/) {
