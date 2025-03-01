@@ -12,27 +12,45 @@ my @names = qw(
     typescript
 );
 
-for my $name (@names) {
-    say $name;
-    my $cmd = "mdbook build --dest-dir ../html/$name $name/";
-    #say $cmd;
-    system $cmd;
+main();
+exit;
+
+sub main {
+    generate_md_books();
+    my ($total, $books) = collect_count();
+    generate_html_page($total, $books);
+}
+
+sub collect_count {
+    my %books;
+    my $total = 0;
+    opendir my $dh, "html" or die;
+    for my $name (readdir $dh) {
+        next if $name eq "." or $name eq "..";
+        next if not -d "html/$name";
+
+        say "Collecting from '$name'";
+
+        my $title = get_title($name);
+
+
+        my @html_files  = glob("html/$name/*.html");
+        $books{$name} = {
+            count => scalar(@html_files) - 4,
+            title => $title,
+        };
+        $total += @html_files - 4;
+    }
+
+    return $total, \%books;
 }
 
 
-my %count;
-my $total = 0;
-opendir my $dh, "html" or die;
-for my $name (readdir $dh) {
-    next if $name eq "." or $name eq "..";
-    next if not -d "html/$name";
-    my @html_files  = glob("html/$name/*.html");
-    $count{$name} = @html_files - 4;
-    $total += @html_files - 4;
-}
-my $now = localtime();
+sub generate_html_page {
+    my ($total, $books) = @_;
+    my $now = localtime();
 
-my $html = q{
+    my $html = q{
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -71,12 +89,12 @@ my $html = q{
 <ul>
 };
 
-for my $name (sort {$count{$b} <=> $count{$a}} keys %count) {
-    $html .= qq{<li><a href="$name">$name</a> ($count{$name})</li>}
-}
+    for my $name (sort {$books->{$b}{count} <=> $books->{$a}{count}} keys %$books) {
+        $html .= qq{<li><a href="$name">$books->{$name}{title}</a> ($books->{$name}{count})</li>}
+    }
 
 
-$html .= qq{
+    $html .= qq{
 </ul>
 
 <p>
@@ -97,6 +115,48 @@ Total number of pages: $total
 </html>
 };
 
-open my $fh, "> html/index.html" or die;
-print $fh $html;
+    open my $fh, "> html/index.html" or die;
+    print $fh $html;
+}
+
+
+sub generate_md_books {
+    for my $name (@names) {
+        say "mdbook '$name'";
+        my $cmd = "mdbook build --dest-dir ../html/$name $name/";
+        #say $cmd;
+        system $cmd;
+    }
+}
+
+
+sub get_title {
+    my ($name) = @_;
+
+    my $title;
+    my $book_file = "$name/book.toml";
+    my $json_file = "$name/$name.json";
+    if (-e $book_file) {
+        open my $fh, "<", $book_file or die;
+        while (my $line = <$fh>) {
+            if ($line =~ /^title = (.*)/) {
+                $title = $1;
+                last;
+            }
+        }
+    } elsif (-e $json_file) {
+        open my $fh, "<", $book_file or die;
+        while (my $line = <$fh>) {
+            # "title": "Perl Programming",
+            if ($line =~ /^\s*"title": "(.*)",/) {
+                $title = $1;
+                last;
+            }
+        }
+    } else {
+        die "Neither '$book_file' nor '$json_file'";
+    }
+    die "Could not find title" if not $title;
+}
+
 
