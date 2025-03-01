@@ -140,7 +140,7 @@ sub get_title {
     if (-e $book_file) {
         open my $fh, "<", $book_file or die;
         while (my $line = <$fh>) {
-            if ($line =~ /^title = (.*)/) {
+            if ($line =~ /^title = "(.*)"/) {
                 $title = $1;
                 last;
             }
