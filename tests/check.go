@@ -150,7 +150,7 @@ func check_main_dir(root string, imports *[]string) int {
 		os.Exit(1)
 	}
 	for _, file := range files {
-		if file.Name() == ".vscode" || file.Name() == "examples" || file.Name() == "go.json" {
+		if file.Name() == ".vscode" || file.Name() == "examples" || file.Name() == "golang.json" {
 			continue
 		}
 		if ! strings.HasSuffix(file.Name(), ".md") {
