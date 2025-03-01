@@ -27,6 +27,7 @@ sub collect_count {
     opendir my $dh, "html" or die;
     for my $name (readdir $dh) {
         next if $name eq "." or $name eq "..";
+        next if $name eq "about";
         next if not -d "html/$name";
 
         say "Collecting from '$name'";
