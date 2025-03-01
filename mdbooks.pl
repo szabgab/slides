@@ -91,7 +91,7 @@ sub generate_html_page {
 };
 
     for my $name (sort {$books->{$b}{count} <=> $books->{$a}{count}} keys %$books) {
-        $html .= qq{<li><a href="$name">$books->{$name}{title}</a> ($books->{$name}{count})</li>}
+        $html .= qq{<li><a href="$name">$books->{$name}{title}</a> ($books->{$name}{count})</li>\n}
     }
 
 
@@ -158,6 +158,8 @@ sub get_title {
         die "Neither '$book_file' nor '$json_file'";
     }
     die "Could not find title" if not $title;
+
+    return $title;
 }
 
 
