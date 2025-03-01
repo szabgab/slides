@@ -141,8 +141,7 @@ Open htmlcov/index.html
 
 * [Tic-tac-toe](https://en.wikipedia.org/wiki/Tic-tac-toe)
 
-![](tic-tac-toe.png)
-
+tic-tac-toe.png
 
 ## Tic-tac-toe - hints
 {id: tic-tac-toe-hints}
