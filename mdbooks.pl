@@ -3,12 +3,13 @@ use warnings;
 use feature 'say';
 
 my @names = qw(
+    bsd
+    c
     github-pages
     gitlab
-    c
     react
-    typescript
     sqlite
+    typescript
 );
 
 for my $name (@names) {
