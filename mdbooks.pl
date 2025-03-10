@@ -4,7 +4,6 @@ use feature 'say';
 
 my @names = qw(
     bsd
-    c
     github-pages
     gitlab
     react
