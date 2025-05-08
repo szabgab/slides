@@ -247,6 +247,14 @@ if status_code == 401 or 302:
     pass
 ```
 
+Python treats it as if we wrote:
+
+```
+if (status_code == 401) or 302:
+    pass
+```
+
+
 {aside}
 However, this is incorrect. This condition will always be true  as this is actually same as if you wrote: 
 `if (status_code == 401) or (302)` so it will compare status_code to 401, and it will separately check if
