@@ -291,11 +291,11 @@ Write script called **unicode_to_char.py** that accepts a number on the command 
 * It should work like this:
 
 ```
-$ python rot13.py "Hello world!"
+$ python rot13.py "Hello World!"
 Uryyb Jbeyq!
 
 $ python rot13.py "Uryyb Jbeyq!"
-Hello world!
+Hello World!
 ```
 
 ## Solution: one string in another string
