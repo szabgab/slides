@@ -20,11 +20,13 @@ Why would anyone write such obviously incorrect code?
 ## Add
 {id: python-types-at-pyweb-2025-05-add}
 
-What is the result of this code in Perl / Python / Rust?
+What is the result of this code in Perl / Python / JavaScript / Rust?
 
 ![](examples/python-types-at-pyweb-2025-05/add.rs)
 
 ![](examples/python-types-at-pyweb-2025-05/add.py)
+
+![](examples/python-types-at-pyweb-2025-05/add.js)
 
 ![](examples/python-types-at-pyweb-2025-05/add.pl)
 
@@ -49,6 +51,8 @@ Howeever, in these example the problem is in-front of us. We can easily see it.
 ![](examples/python-types-at-pyweb-2025-05/function.rs)
 
 ![](examples/python-types-at-pyweb-2025-05/function.py)
+
+![](examples/python-types-at-pyweb-2025-05/function.js)
 
 ![](examples/python-types-at-pyweb-2025-05/function.pl)
 
