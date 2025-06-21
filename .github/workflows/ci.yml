@@ -64,23 +64,23 @@ jobs:
         pwd
         ./generate_slides.py
 
-      - name: Download mdBook
-        env:
-          MDBOOK_VERSION: 0.4.51
-          EMBEDIFY_VERSION: 0.2.13
-          ALERTS_VERSION: 0.7.0
-        run: |
-          set -x
-          wget https://github.com/rust-lang/mdBook/releases/download/v${MDBOOK_VERSION}/mdbook-v${MDBOOK_VERSION}-x86_64-unknown-linux-gnu.tar.gz
-          tar xzf mdbook-v${MDBOOK_VERSION}-x86_64-unknown-linux-gnu.tar.gz
+    - name: Download mdBook
+      env:
+        MDBOOK_VERSION: 0.4.51
+        EMBEDIFY_VERSION: 0.2.13
+        ALERTS_VERSION: 0.7.0
+      run: |
+        set -x
+        wget https://github.com/rust-lang/mdBook/releases/download/v${MDBOOK_VERSION}/mdbook-v${MDBOOK_VERSION}-x86_64-unknown-linux-gnu.tar.gz
+        tar xzf mdbook-v${MDBOOK_VERSION}-x86_64-unknown-linux-gnu.tar.gz
 
-          wget https://github.com/MR-Addict/mdbook-embedify/releases/download/${EMBEDIFY_VERSION}/mdbook-embedify-${EMBEDIFY_VERSION}-x86_64-unknown-linux-gnu.zip
-          unzip mdbook-embedify-${EMBEDIFY_VERSION}-x86_64-unknown-linux-gnu.zip
-          mv mdbook-embedify-${EMBEDIFY_VERSION}-x86_64-unknown-linux-gnu/mdbook-embedify .
+        wget https://github.com/MR-Addict/mdbook-embedify/releases/download/${EMBEDIFY_VERSION}/mdbook-embedify-${EMBEDIFY_VERSION}-x86_64-unknown-linux-gnu.zip
+        unzip mdbook-embedify-${EMBEDIFY_VERSION}-x86_64-unknown-linux-gnu.zip
+        mv mdbook-embedify-${EMBEDIFY_VERSION}-x86_64-unknown-linux-gnu/mdbook-embedify .
 
-          wget https://github.com/lambdalisue/rs-mdbook-alerts/releases/download/v${ALERTS_VERSION}/mdbook-alerts-x86_64-unknown-linux-gnu
-          mv mdbook-alerts-x86_64-unknown-linux-gnu mdbook-alerts
-          chmod +x mdbook-alerts
+        wget https://github.com/lambdalisue/rs-mdbook-alerts/releases/download/v${ALERTS_VERSION}/mdbook-alerts-x86_64-unknown-linux-gnu
+        mv mdbook-alerts-x86_64-unknown-linux-gnu mdbook-alerts
+        chmod +x mdbook-alerts
 
     - name: mdBook
       run: |
