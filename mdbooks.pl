@@ -6,6 +6,7 @@ my @names = qw(
     bsd
     github-pages
     gitlab
+    perl-oop
     react
     sqlite
     typescript
