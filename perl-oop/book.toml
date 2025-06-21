@@ -3,3 +3,18 @@ authors = ["Gabor Szabo"]
 language = "en"
 src = "src"
 title = "OOP in Perl"
+
+# Add github icon to the menu
+[output.html]
+git-repository-url = "https://github.com/szabgab/slides"
+git-repository-icon = "fa-github"
+edit-url-template = "https://github.com/szabgab/slides/edit/main/perl-oop/{path}"
+
+# Handle Youtube video embedding and the footer
+[preprocessor.embedify]
+footer.enable = true
+footer.message = "Copyright © 2025 • Created with ❤️  by [Gábor Szabó](https://szabgab.com/)"
+
+
+
+
