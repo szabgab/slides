@@ -5,6 +5,7 @@ path_to_thing = __file__
 if len(sys.argv) == 2:
     path_to_thing = sys.argv[1]
 
+print(path_to_thing)
 print( os.path.basename(path_to_thing) )
 print( os.path.dirname(path_to_thing) )
 print( os.path.abspath(path_to_thing) )

@@ -7,8 +7,10 @@ div(1, 0)
 
 # before
 # Traceback (most recent call last):
-#   File "examples/exceptions/divide_by_zero.py", line 8, in <module>
+#   File "examples/exceptions/divide_by_zero.py", line 6, in <module>
 #     div(1, 0)
-#   File "examples/exceptions/divide_by_zero.py", line 5, in div
+#   File "examples/exceptions/divide_by_zero.py", line 3, in div
 #     print(a/b)
-# ZeroDivisionError: integer division or modulo by zero
+#           ~^~
+# ZeroDivisionError: division by zero
+
