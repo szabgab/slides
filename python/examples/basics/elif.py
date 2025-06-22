@@ -5,9 +5,9 @@ def main():
     if int(a) == int(b):
         print("They are equal")
     elif int(a) < int(b):
-        print(a + " is smaller than " + b)
+        print(f"{a} is smaller than {b}")
     else:
-        print(a + " is bigger than " + b)
+        print(f"{a} is bigger than {b}")
 
 
 main()

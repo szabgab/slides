@@ -8,9 +8,10 @@ original = sys.argv[1]
 encoded = ''
 for char in original:
     code = ord(char)
-    if 97 <= code and code <= 122:
-        new_char = chr((code-97 + 13 ) % 26 + 97)
-    elif 65 <= code and code <= 90:
+    if 'a' <= char <= 'z':
+    #if ord('a') <= code and code <= ord('z'):
+        new_char = chr((code-ord('a') + 13 ) % 26 + ord('a'))
+    elif 'A' <= char <= 'Z':
         new_char = chr((code-65 + 13 ) % 26 + 65)
     else:
         new_char = char
