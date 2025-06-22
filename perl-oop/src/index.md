@@ -19,19 +19,20 @@ You get tasked to maintain a project that was already written in Object Oriented
 OOP or Object Oriented Programming is not the same in every programming language. Each implementation has its own features. However there is a mostly common vocabulary. I wrote "mostly" as even
 the vocabulary used for various features of OOP might differ among programming languages. Let's see what are the words usually used:
 
-* class
-* instance (sometimes called object)
-* constructor
-* initializer
-* destructor
-* members
-* attributes
-* methods (class and instance methods)
-* accessors (getters and setters)
-* inheritance
-* polymorphism
-* encapsulation
+* class (The blueprint of a collection of data and actions on that data. In python it is referred to as 'class object')
+* instance (As in an instance of the class. Sometimes it is called an object. In python it is called an 'instance object'.)
+* members (the collective name of attributes and methods)
+* attributes (values, the data, basically internal variables)
+* methods (actions, basically functions working with the data in the class or the instance. There are both class and instance methods)
+* accessors (getters and setters, a subset of the methods that will allow the user to read or change the content of attributes)
+* constructor (A specialized method to create the structure of an instance from a class.)
+* initializer (A specialized method to fill the initial values of an instance after it was created by the constructor.)
+* destructor (A method to clean up the mess after we are done using an instance.)
+* inheritance (A way for a specialized class to reuse features of a more generic class.)
+* polymorphism (The idea that different classes might have identically named attributes or behaviors that are somehow related.)
+* encapsulation (It is the concept of hiding the internal parts of a class from the external world.)
 
-* singleton
+
+* singleton (A design pattern to ensure that a class has only one instance.)
 
 
