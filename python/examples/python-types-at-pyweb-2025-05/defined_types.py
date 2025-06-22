@@ -1,8 +1,8 @@
 from typing import Literal
-LevelType = Literal["debug", "info", "warning"]
+LevelType = Literal["debug", "info", "warning", "error"]
 
 size: LevelType = "debug"
-#size = "error"
+#call it label size = "eror"
 
 # ------------------------------------------
 
