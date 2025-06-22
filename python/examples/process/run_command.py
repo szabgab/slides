@@ -1,10 +1,15 @@
 import subprocess
 import time
+import os
+import psutil
 
 def run_process(command):
-    print("Before Popen")
+    print(f"Before Popen {os.getpid()}")
     proc = subprocess.Popen(command)  # This starts runing the external process
-    print("After Popen")
+    print(f"After Popen of {proc.pid}")
+    psproc = psutil.Process(proc.pid)
+    print(f"name: {psproc.name()}")
+    print(f"cmdline: {psproc.cmdline()}")
     time.sleep(1.5)
 
     print("Before communicate")
