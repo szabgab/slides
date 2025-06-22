@@ -125,4 +125,4 @@ Some partially ready examples
 
 ![](examples/process/slow_starting_server.py)
 ![](examples/process/wait_do_and_stop.py)
-
+![](examples/process/run_multiple_commands.py)

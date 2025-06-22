@@ -404,3 +404,18 @@ RankerStatusType = TypedDict('RankerStatusType', {
 
 Biology:
 https://genome.ucsc.edu/
+
+
+```
+Name:         nt
+System:       Windows
+Release:      10
+Architecture: ('64bit', 'WindowsPE')
+Machine:      AMD64
+Processor:    Intel64 Family 6 Model 186 Stepping 2, GenuineIntel
+Release:      10
+Version:      10.0.19045
+```
+
+
+
