@@ -125,8 +125,9 @@ sub generate_md_books {
     for my $name (@names) {
         chdir $name;
         say "mdbook '$name'";
-        my $cmd = "mdbook build --dest-dir ../../html/$name";
-        #say $cmd;
+        say `pwd`;
+        my $cmd = "mdbook build --dest-dir ../html/$name .";
+        say $cmd;
         system $cmd;
         chdir "..";
     }
