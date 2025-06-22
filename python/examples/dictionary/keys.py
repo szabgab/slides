@@ -10,7 +10,13 @@ with open(filename) as fh:
     for row in fh:
         row = row.rstrip("\n")
         # print(row)
-        planet, distance = row.split(":")
+        # planet, distance = row.split(":")
+        tpl = row.split(":")
+        if len(tpl) != 2:
+            print(f"not good {row}")
+            #exit(1)
+            continue
+        planet, distance = tpl
         # print(planet)
         planets[planet] = distance
 
