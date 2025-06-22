@@ -176,6 +176,23 @@ pipe.py:6:9: error: Argument 1 to "my_exit" has incompatible type "float"; expec
 Found 1 error in 1 file (checked 1 source file)
 ```
 
+## Either this or that type for Python before 3.10
+{id: python-types-at-pyweb-2025-05-either-this-or-that-type-for-older-version}
+{i: Union}
+
+![](examples/python-types-at-pyweb-2025-05/union.py)
+```
+$ python union.py
+int
+str
+float
+
+$ mypy union.py
+union.py:8:9: error: Argument 1 to "my_exit" has incompatible type "float"; expected "str | int"  [arg-type]
+Found 1 error in 1 file (checked 1 source file)
+```
+
+
 ## Optional type (variable can also be None)
 {id: python-types-at-pyweb-2025-05-optional-type-with-pipe}
 {i: Optional}
@@ -225,6 +242,8 @@ mypy generics_cannot_be_any_type.py
 * A more generic way to define generics is by creating types that need to have certain functionality
 
 ![](examples/python-types-at-pyweb-2025-05/generics.py)
+
+![](examples/python-types-at-pyweb-2025-05/generics2.py)
 
 ## Two variables of the same and different types
 {id: python-types-at-pyweb-2025-05-same-and-different-types}
@@ -289,22 +308,6 @@ Found 1 error in 1 file (checked 1 source file)
 {i: Tuple}
 
 ![](examples/python-types-at-pyweb-2025-05/complex_types_old.py)
-
-## Either this or that type for Python before 3.10
-{id: python-types-at-pyweb-2025-05-either-this-or-that-type-for-older-version}
-{i: Union}
-
-![](examples/python-types-at-pyweb-2025-05/union.py)
-```
-$ python union.py
-int
-str
-float
-
-$ mypy union.py
-union.py:8:9: error: Argument 1 to "my_exit" has incompatible type "float"; expected "str | int"  [arg-type]
-Found 1 error in 1 file (checked 1 source file)
-```
 
 
 
