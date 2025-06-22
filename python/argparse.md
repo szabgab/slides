@@ -347,4 +347,10 @@ Like this:
 python ex.py file1 file2 file3 --machine MACHINE --verbose
 ```
 
+## Other
+{id: argparse-other}
+
+![](examples/argparse/accept_date.py)
+![](examples/argparse/positive_number.py)
+![](examples/argparse/pw.py)
 
