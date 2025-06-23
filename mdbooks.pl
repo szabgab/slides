@@ -7,6 +7,7 @@ my @names = qw(
     github-pages
     gitlab
     perl-oop
+    python-functional-programming
     react
     sqlite
     typescript
