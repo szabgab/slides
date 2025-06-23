@@ -1,9 +1,9 @@
 # Summary
 
 - [Functional programmin in Python](./index.md)
+- [Programming Paradigms](./programming-paradigms.md)
+- [Functional programming](./functional-programming.md)
 - [Part 1]()
-  - [Programming Paradigms](./programming-paradigms.md)
-  - [Functional programming](./functional-programming.md)
   - [Iterators (Iterables)](./iterables.md)
   - [range](./range-iterator.md)
   - [range with list](./range-list.md)
