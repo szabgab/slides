@@ -1,0 +1,4 @@
+# Solution: string to length
+
+
+{% embed include file="src/examples/functional/map_string_to_len.py" %}
