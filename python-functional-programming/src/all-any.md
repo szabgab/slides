@@ -10,5 +10,8 @@ any
 
 {% embed include file="src/examples/functional/all_any.py" %}
 
+**Output:**
+
+
 
 

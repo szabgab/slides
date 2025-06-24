@@ -7,6 +7,9 @@
 * dict
 
 {% embed include file="src/examples/functional/pairs.txt" %}
+
+**Output:**
+
 {% embed include file="src/examples/functional/read_key_value_pairs.py" %}
 
 ```

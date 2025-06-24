@@ -6,3 +6,7 @@ So to avoid exceptions, we had some exra code replacing the None values by 0, us
 {% embed include file="src/examples/functional/map_add_none.py" %}
 
 
+**Output:**
+
+
+
