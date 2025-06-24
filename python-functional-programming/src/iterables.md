@@ -7,11 +7,11 @@ and you have probably seen the **for in** construct in other cases as well. The 
 [iterables](https://docs.python.org/glossary.html#term-iterable).
 You can do all kind of interesting things on such **iterables**. We'll see a few now.
 
-* A few data type we can iterate over using the **for ... in ...** construct.
+* There are several data types that we can iterate over using the **for ... in ...** construct. For example, strings, lists, tuples, filehandles, and range:
 
 ## string
 
-We can iterate over the "elements" of a string. The elements are the characters. We can also print the whole string.
+We can iterate over the "elements" of a string that are the characters. We can also print the whole string.
 
 {% embed include file="src/examples/functional/iterable_string.py" %}
 
@@ -40,6 +40,24 @@ We can iterate over the elements of a tuple. We can also print the whole tuple a
 
 {% embed include file="src/examples/functional/iterable_tuple.out" %}
 
+
+## filehandle
+
+We can iterate over a filehandle. On each iteration we'll get one line from the file.
+
+{% embed include file="src/examples/functional/iterable_fh.py" %}
+
+Running this program will print itself.
+
+We can also print the filehandle: `print(fh)`, but the output will be:
+
+```
+<_io.TextIOWrapper name='iterable_fh.py' mode='r' encoding='UTF-8'>
+```
+
+not the content of the file.
+
+So the "thing" that the `open` function returned is iterable, but it is different from the previous 3 types.
 
 ## range
 

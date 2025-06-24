@@ -6,6 +6,8 @@
 - [Part 1]()
   - [Iterators (Iterables)](./iterables.md)
   - [range](./range-iterator.md)
+  - [range index and len](./range-len.md)
+  - [filehandle index and len](./filehandle-len.md)
   - [range with list](./range-list.md)
   - [range vs. list size](./range-size.md)
   - [for loop with transformation](./for-loop-transformation.md)
