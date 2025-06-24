@@ -17,5 +17,3 @@ In this example we just double the values and use **append** to add each value t
 
 There are better ways to do this.
 
-* append
-

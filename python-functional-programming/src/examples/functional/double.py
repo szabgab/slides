@@ -1,7 +1,7 @@
 def double(n):
     return 2 * n
 
-numbers = [1, 2, 3, 4]
+numbers = [7, 2, 4, 1]
 
 double_numbers = []
 for num in numbers:

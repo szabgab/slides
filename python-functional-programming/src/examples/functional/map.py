@@ -1,12 +1,10 @@
 def double(n):
     return 2 * n
 
-numbers = [1, 2, 3, 4]
+numbers = [7, 2, 4, 1]
 
-double_numbers = map(double, numbers)
-print(double_numbers)   # <map object at 0x7f8eb2d849e8>
-#for num in double_numbers:
-#    print(num)
+double_iterable = map(double, numbers)
+print(double_iterable)
+for num in double_iterable:
+    print(num)
 
-dbl = list(double_numbers)
-print(dbl)
