@@ -481,14 +481,6 @@ Is this interesting at all ?
 
 ![](examples/threads/run_tasks.py)
 
-## Filtered Fibonacci with ifilter
-{id: ifiltered-fibonacci}
-{i: itertools}
-{i: ifilter}
-
-![](examples/generators/ifiltered_fibonacci.py)
-
-
 
 
 ## Python from .NET
