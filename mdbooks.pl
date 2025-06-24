@@ -8,6 +8,7 @@ my @names = qw(
     gitlab
     perl-oop
     python-functional-programming
+    python-regular-expressions
     react
     sqlite
     typescript
