@@ -6,6 +6,9 @@
 This can have only one iterable!
 
 {% embed include file="src/examples/functional/filter_with_function.py" %}
+
+**Output:**
+
 {% embed include file="src/examples/functional/filter_with_function.out" %}
 
 

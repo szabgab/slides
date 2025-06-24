@@ -5,4 +5,7 @@
 
 {% embed include file="src/examples/functional/reduce_list_of_dicts.py" %}
 
+**Output:**
+
+
 

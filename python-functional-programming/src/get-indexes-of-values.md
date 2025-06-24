@@ -11,6 +11,9 @@ Finally there is another example that shows how to get the indexes of all the na
 Just to show you that we can use any arbitray condition there.
 
 {% embed include file="src/examples/functional/get_indexes.py" %}
+
+**Output:**
+
 {% embed include file="src/examples/functional/get_indexes.out" %}
 
 
