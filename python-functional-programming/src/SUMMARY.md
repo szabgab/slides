@@ -149,5 +149,7 @@
   - [Operations on infinite lists](./operations-on-infinite-lists.md)
   - [Infinite random number generator](./infinte-randum-number-generator.md)
   - [Infinite random set generator](./infinite-random-set-generator.md)
+  - [Simple function (before generators)](./generators-simple-function.md)
+
 
 
