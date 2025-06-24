@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File ".../fh_len.py", line 5, in <module>
+    print(len(fh))
+          ~~~^^^^
+TypeError: object of type '_io.TextIOWrapper' has no len()
