@@ -76,7 +76,6 @@
         "matplotlib.md",
         "seaborn.md",
         "jupyter.md",
-        "pytest-other.md",
         "tox.md",
         "selenium.md",
         "playwright.md",
