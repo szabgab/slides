@@ -15,7 +15,7 @@ say $res->status_line;
 say $mech->status();
 say $mech->res->status_line;
 
-say "";
+say '';
 
 $mech->dump_headers();
 say '';
