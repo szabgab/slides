@@ -2,8 +2,8 @@
 
 * ConfigParse
 
-{% embed include file="src/examples/other/data_clean.ini" %}
-{% embed include file="src/examples/other/config_parsing.py" %}
+{% embed include file="src/examples/regex/data_clean.ini" %}
+{% embed include file="src/examples/regex/config_parsing.py" %}
 
 
 
