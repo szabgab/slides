@@ -7,6 +7,7 @@ my @names = qw(
     github-pages
     gitlab
     perl-oop
+    python-fastapi
     python-flask
     python-functional-programming
     python-regular-expressions
