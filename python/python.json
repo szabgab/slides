@@ -76,7 +76,6 @@
         "matplotlib.md",
         "seaborn.md",
         "jupyter.md",
-        "testing.md",
         "unittest.md",
         "pytest.md",
         "pytest-assert.md",

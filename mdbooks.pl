@@ -9,6 +9,7 @@ my @names = qw(
     perl-oop
     python-functional-programming
     python-regular-expressions
+    python-testing
     react
     sqlite
     typescript
