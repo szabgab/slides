@@ -48,7 +48,6 @@
         "redis.md",
         "web-client.md",
         "web-server.md",
-        "flask.md",
         "fastapi.md",
         "net.md",
         "interactive-shell.md",
