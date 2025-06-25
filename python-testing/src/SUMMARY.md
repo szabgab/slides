@@ -203,6 +203,16 @@
   - [PyTest expected exceptions (no exception) output](./pytest-expected-exceptions-no-exception-output.md)
   - [PyTest compare short lists - output](./pytest-compare-short-lists-output.md)
   - [Testing Master Mind](./pytest-master-mind.md)
+  - [Module Fibonacci](./pytest-fibo.md)
+  - [PyTest - assertion](./pytest-assertion.md)
+  - [PyTest - failure](./pytest-fibonacci-failure.md)
+  - [PyTest - list](./pytest-list.md)
+  - [Pytest: monkeypatching time](./pytest-monkeypatching-time.md)
+  - [PyTest: no random order](./pytest-no-random-order.md)
+
+
+
+
 
 
 
