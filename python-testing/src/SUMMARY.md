@@ -178,6 +178,63 @@
   - [PyTest: Test Coverage](./pytest-coverage.md)
   - [Pytest and flake8](./pytest-and-flake-8.md)
   - [Pytest and mypy](./pytest-and-mypy.md)
+- [Pytest - other](./pytest-other.md)
+  - [Testing with Pytest](./pytested-module.md)
+  - [Testing functions](./pytest-module.md)
+  - [Testing class and methods](./pytest-module-class.md)
+  - [Pytest - execute](./pytest-run-tests.md)
+  - [Pytest - execute](./pytest-execute.md)
+  - [Pytest simple module to be tested](./pytest-simple-module-to-be-tested.md)
+  - [Pytest simple tests - success](./pytest-simple-success.md)
+  - [Pytest simple tests - success output](./pytest-simple-success-output.md)
+  - [Pytest simple tests - failure](./pytest-simple-failure.md)
+  - [Pytest simple tests - failure output](./pytest-simple-failure-output.md)
+  - [PyTest bank deposit](./pytest-bank-deposit.md)
+  - [PyTest expected exceptions (bank deposit)](./pytest-expected-exceptions-bank-deposit.md)
+  - [PyTest expected exceptions (bank deposit) - no exception happens](./pytest-expected-exceptions-bank-deposit-no-exception.md)
+  - [PyTest expected exceptions (bank deposit) - different exception is raised](./pytest-expected-exceptions-bank-deposit-different-exception.md)
+  - [PyTest expected exceptions - divide](./pytest-expected-exceptions.md)
+  - [PyTest expected exceptions output](./pytest-expected-exceptions-output.md)
+  - [PyTest expected exceptions (text changed)](./pytest-expected-exceptions-test-changed.md)
+  - [PyTest expected exceptions (text changed) output](./pytest-expected-exceptions-test-changed-output.md)
+  - [PyTest expected exceptions (other exception)](./pytest-expected-exceptions-failure.md)
+  - [PyTest expected exceptions (other exception) output](./pytest-expected-exceptions-failure-output.md)
+  - [PyTest expected exceptions (no exception)](./pytest-expected-exceptions-no-exception.md)
+  - [PyTest expected exceptions (no exception) output](./pytest-expected-exceptions-no-exception-output.md)
+  - [PyTest compare short lists - output](./pytest-compare-short-lists-output.md)
+  - [Testing Master Mind](./pytest-master-mind.md)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
