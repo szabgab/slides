@@ -232,28 +232,6 @@ method of the object, respectively.
 ![](examples/advanced/stack_trace.out)
 
 
-## Module Fibonacci
-{id: pytest-fibo}
-![](examples/pytest/fibo.py)
-
-
-## PyTest - assertion
-{id: pytest-assertion}
-![](examples/pytest/test_fibonacci_ok.py)
-![](examples/pytest/test_fibonacci_ok.out)
-
-
-## PyTest - failure
-{id: pytest-fibonacci-failure}
-![](examples/pytest/test_fibonacci.py)
-![](examples/pytest/test_fibonacci.out)
-
-
-## PyTest - list
-{id: pytest-list}
-![](examples/pytest/test_fibo.py)
-![](examples/pytest/test_fibo.out)
-
 
 ## SAX with coroutine
 {id: sax-coroutine}
@@ -832,25 +810,6 @@ python common_error_in_function.py 42
 ![](examples/decorators/dir_tree_return.py)
 ![](examples/decorators/dir_tree_with_callback.py)
 ![](examples/other/deco.py)
-
-## Pytest: monkeypatching time
-{id: pytest-monkeypatching-time}
-
-![](examples/pytest/time-changed/app.py)
-![](examples/pytest/time-changed/test_impact.py)
-![](examples/pytest/time-changed2/app.py)
-![](examples/pytest/time-changed2/test_impact.py)
-![](examples/pytest/time-changed2/test_impact_monkeypatch.py)
-
-## PyTest: no random order
-{id: pytest-no-random-order}
-
-```
-pytest -p no:random-order -v
-```
-
-![](examples/pytest/py3/conftest.py)
-![](examples/pytest/py3/test_one.py)
 
 ## Classes
 {id: old-oop-examples}
