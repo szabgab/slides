@@ -76,7 +76,6 @@
         "matplotlib.md",
         "seaborn.md",
         "jupyter.md",
-        "pytest-mocking.md",
         "pytest-options.md",
         "pytest-other.md",
         "tox.md",
