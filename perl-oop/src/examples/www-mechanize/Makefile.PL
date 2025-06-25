@@ -12,8 +12,8 @@ WriteMakefile(
 		: () ),
 	PL_FILES  => {},
 	PREREQ_PM => {
-		'WWW::Mechanize'              => 0,
-		'Test::More'   => 1,
+		'WWW::Mechanize'  => 0,
+		'Test::More'      => 1,
 	},
 	dist  => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
 	clean => { FILES    => 'Demo-*' },
