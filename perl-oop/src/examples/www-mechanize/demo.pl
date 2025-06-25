@@ -13,7 +13,9 @@ my $mech = WWW::Mechanize->new(autocheck => 0);
 my $res = $mech->get($url);
 say $res->status_line;
 say $mech->status();
-say $mech->res->status_line, "\n";
+say $mech->res->status_line;
+
+say "";
 
 $mech->dump_headers();
 say '';
