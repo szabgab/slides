@@ -1,30 +1,23 @@
 use strict;
 use warnings;
 use feature 'say';
-
-my @names = qw(
-    bsd
-    github-pages
-    gitlab
-    perl-oop
-    python-fastapi
-    python-flask
-    python-functional-programming
-    python-oop
-    python-regular-expressions
-    python-testing
-    react
-    sqlite
-    typescript
-);
+use Data::Dumper qw(Dumper);
+use File::Basename qw(dirname);
 
 main();
 exit;
 
 sub main {
-    generate_md_books();
+    my $names = get_book_names();
+
+    generate_md_books($names);
     my ($total, $books) = collect_count();
     generate_html_page($total, $books);
+}
+
+sub get_book_names {
+    my @names = map { dirname $_ } glob("*/book.toml");
+    return \@names;
 }
 
 sub collect_count {
@@ -128,7 +121,9 @@ Total number of pages: $total
 
 
 sub generate_md_books {
-    for my $name (@names) {
+    my $names = shift;
+
+    for my $name (@$names) {
         chdir $name;
         say "mdbook '$name'";
         say `pwd`;
