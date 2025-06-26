@@ -255,26 +255,6 @@ How to find out which class an object (instance) belongs to?
 ![](examples/other/class.py)
 
 
-## Inheritance - super
-{id: inheritance-call-super}
-
-{aside}
-We can also call super() passing a different class name
-{/aside}
-
-![](examples/oop/inheritance/ball_shape2.py)
-
-
-## Inheritance - super - other class
-{id: inheritance-bad-super}
-
-{aside}
-We cannot pass any class name to super()
-{/aside}
-
-![](examples/oop/inheritance/bad_shapes.py)
-
-
 
 ## iterator - pairwise
 {id: iterator-pairwise}
@@ -390,30 +370,6 @@ It was experimental and dropped from Python 3
 
 ![](examples/advanced/slow_hotshot.py)
 ![](examples/advanced/slow_hotshot.out)
-
-## Abstract Base Class without abc
-{id: abstract-base-class-without-abc-python-2}
-
-Only works in Python 2?
-
-![](examples/oop/abc/without_abc.py)
-
-## Abstract Base Class with abc Python 2 ?
-{id: abstract-base-class-with-abc-python2}
-{i: abc}
-
-![](examples/oop/abc/with_abc.py)
-
-* [Abstract Base Classes in Python](https://dbader.org/blog/abstract-base-classes-in-python)
-* [abc](https://docs.python.org/library/abc.html)
-
-
-## Abstract Base Class with metaclass
-{id: abstract-base-class-with-metaclass}
-{i: __metaclass__}
-
-![](examples/oop/abc/abc_meta.py)
-
 
 ## Create class with metaclass
 {id: create-class-with-metaclass}
@@ -824,13 +780,6 @@ python common_error_in_function.py 42
 
 ![](examples/classes/with_object.py)
 ![](examples/classes/with_object.out)
-
-
-## Abstract Base Class without ABC
-{id: abstract-base-class-without-abc}
-
-![](examples/oop/abc/no_abc.py)
-![](examples/oop/abc/no_abc.out)
 
 
 ## Gravatar in Python

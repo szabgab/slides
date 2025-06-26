@@ -94,6 +94,17 @@
   - [Use Python @propery to fix bad API](./property-fixing-bad-api.md)
   - [Use Python @propery decorator to fix bad API](./property-fixing-bad-api-with-decorators.md)
   - [Use Python @propery for value validation](./property-for-validation.md)
+- [Other](./other.md)
+  - [Inheritance - super](./inheritance-call-super.md)
+  - [Inheritance - super - other class](./inheritance-bad-super.md)
+  - [Abstract Base Class without abc](./abstract-base-class-without-abc-python-2.md)
+  - [Abstract Base Class with abc Python 2 ?](./abstract-base-class-with-abc-python2.md)
+  - [Abstract Base Class with metaclass](./abstract-base-class-with-metaclass.md)
+  - [Abstract Base Class without ABC](./abstract-base-class-without-abc.md)
+
+
+
+
 
 
 
