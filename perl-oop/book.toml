@@ -2,7 +2,7 @@
 authors = ["Gabor Szabo"]
 language = "en"
 src = "src"
-title = "OOP in Perl"
+title = "OOP - Object Oriented Programming in Perl"
 
 # Add github icon to the menu
 [output.html]

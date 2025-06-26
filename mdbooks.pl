@@ -10,6 +10,7 @@ my @names = qw(
     python-fastapi
     python-flask
     python-functional-programming
+    python-oop
     python-regular-expressions
     python-testing
     react

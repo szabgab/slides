@@ -2,7 +2,7 @@
 authors = ["Gabor Szabo"]
 language = "en"
 src = "src"
-title = "Object Oriented programming in Python"
+title = "OOP - Object Oriented Programming in Python"
 
 # Add github icon to the menu
 [output.html]
