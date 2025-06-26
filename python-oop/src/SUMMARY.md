@@ -38,21 +38,62 @@
   - [Exercise: Bookexchange](./exercise-bookexchange.md)
   - [Exercise: Represent turtle graphics](./exercise-turle-graphics.md)
   - [Solution - Polygon](./solution-polygon.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [Advanced OOP](advanced-oop.md)
+  - [Stringify class](./class-stringification.md)
+  - [Multiple inheritance](./oop-multiple-inheritance.md)
+  - [Multiple inheritance - diamond](./oop-multiple-inheritance-diamond.md)
+  - [Interfaces](./oop-interfaces.md)
+  - [Abstract Base Class](./oop-abstract-base-class.md)
+  - [Abstract Base Class with abc](./oop-abstract-base-class-with-abc.md)
+  - [ABC working example](./oop-abc-working-example.md)
+  - [ABC - cannot instantiate the base-class](./oop-abc-no-instance-from-base-class.md)
+  - [ABC - must implement methods](./oop-abc-must-implement-methods.md)
+  - [Class Attributes](./oop-class-attributes.md)
+  - [Class count instances](./oop-class-count-instances.md)
+  - [Destructor: __del__](./destructor.md)
+  - [Class count instances - decrease also (destructor: __del__)](./oop-class-count-instances-decrease-also.md)
+  - [Keep track of instances](./oop-keep-track-of-instances.md)
+  - [Keep track of instances properly (weakref)](./oop-keep-track-of-instances-properly.md)
+  - [Destructor delayed](./oop-destructor-delayed.md)
+  - [Destructor delayed for both](./oop-destructor-delayed-for-both.md)
+  - [Class Attributes in Instances](./oop-class-attributes-in-instances.md)
+  - [Attributes with method access](./oop-attributes-method-access.md)
+  - [Methods are class attributes - add method](./oop-methods-are-class-attributes.md)
+  - [Methods are class attributes - replace method](./oop-methods-are-class-attributes-replace-method.md)
+  - [Methods are class attributes - Enhance method (Monkey patching)](./oop-enhance-method-monkey-patching.md)
+  - [Method types](./oop-method-types.md)
+  - [Instance methods](./oop-instance-method.md)
+  - [Class methods](./oop-class-methods.md)
+  - [Class methods accessing class attributes](./oop-class-methods-accessing-class-attributes.md)
+  - [Default Constructor](./oop-default-constructor.md)
+  - [Alternative constructor with class method](./oop-class-methods-alternative-constructor.md)
+  - [Static methods](./oop-static-methods.md)
+  - [Module functions](./oop-module-functions.md)
+  - [Class and static methods](./oop-class-and-static-methods.md)
+  - [Special methods](./special-class-methods.md)
+  - [Opearator overloading](./oop-operator-overloading.md)
+  - [Operator overloading methods](./oop-operator-overloading-methods.md)
+  - [Declaring attributes (dataclasses)](./dataclass.md)
+  - [Dataclasses and __repr__](./dataclass-and-repr.md)
+  - [Dataclasses and __eq__](./dataclass-provide-eq.md)
+  - [Dataclasses create __init__ and call __post_init__](./dataclass-post-init.md)
+  - [Dataclasses can provide default values to attributes](./dataclasses-default.md)
+  - [Dataclasses and default factory](./dataclasses-and-default-factory.md)
+  - [Read only (frozen) Dataclass](./read-only-dataclass.md)
+  - [Serialization of instances with pickle](./selialization-with-pickle.md)
+  - [Class in function](./class-in-function.md)
+  - [Exercise: rectangle](./exercise-oop-rectangle.md)
+  - [Exercise: SNMP numbers](./exercise-snmp-numbers.md)
+  - [Exercise: Implement a Gene inheritance model combining DNA](./exercise-implement-a-gene-inheritance-model.md)
+  - [Exercise: imaginary numbers - complex numbers](./exercise-imaginary-numbers.md)
+  - [Solution: Rectangle](./solution-oop-rectangle.md)
+  - [Solution: Implement a Gene inheritance model combining DNA](./solution-implement-a-gene-inheritance-model.md)
+  - [Instance Attribute](./instance-attribute.md)
+  - [Use Python @propery to fix bad interface (the bad interface)](./property-fixing-bad-api-original.md)
+  - [Use Python @propery to fix bad interface (first attempt)](./property-fixing-bad-api-first-attempt.md)
+  - [Use Python @propery to fix bad API](./property-fixing-bad-api.md)
+  - [Use Python @propery decorator to fix bad API](./property-fixing-bad-api-with-decorators.md)
+  - [Use Python @propery for value validation](./property-for-validation.md)
 
 
 
