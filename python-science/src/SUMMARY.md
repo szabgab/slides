@@ -18,6 +18,14 @@
   - [Exercise: Search tool for NCBI](./exercise-seach-tool-for-ncbi.md)
   - [Biology background](./biology-background.md)
 
+- [Chemistry](./chemistry.md)
+  - [Chemistry links](./chemistry-links.md)
+  - [Python-based Simulations of Chemistry Framework](./pyscf.md)
+  - [Bond length](./bond-length.md)
+  - [Covalent radius](./covalent-radius.md)
+  - [Python energy landscape explorer](./python-energy-landscape-explorer.md)
+  - [Other chemistry links](./other-chemistry-links.md)
+
 
 
 
