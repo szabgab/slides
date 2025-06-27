@@ -114,6 +114,43 @@
   - [Solution: Number guessing game - level 0](./solution-number-guessing-game-0.md)
   - [Solution: Fruit salad](./solution-fruit-salad.md)
 
+- [Comparison and Boolean](./boolean.md)
+  - [if statement again](./if-statement-again.md)
+  - [Comparison operators](./comparison-operators.md)
+  - [Compare numbers, compare strings](./compare-numbers-compare-strings.md)
+  - [Do NOT Compare different types!](./compare-different-types.md)
+  - [Complex if statement with boolean operators](./complex-if-statement.md)
+  - [Chained expressions](./chaioned-expressions.md)
+  - [Boolean operators](./boolean-operators.md)
+  - [Boolean truth tables](./boolean-truth-tables.md)
+  - [Boolean values: True and False](./boolean-values.md)
+  - [Using True and False in variables](./using-true-and-false-in-variables.md)
+  - [Comparison returns True or False](./comparison-returns-true-or-false.md)
+  - [Assign comparisons to variables](./assign-comparisons-to-variables.md)
+  - [Flag](./flag.md)
+  - [Use flag to skip first few lines](./use-flag-to-skip-first-few-lines.md)
+  - [Toggle](./toggle.md)
+  - [Short circuit](./short-circuit.md)
+  - [Short circuit fixed](./short-circuit-fixed.md)
+  - [Does this value count as True or False?](./any-boolean-value.md)
+  - [True and False values in Python](./false-values.md)
+  - [Incorrect use of conditions](./incorrect-use-of-conditions.md)
+  - [Exercise: compare numbers](./exercise-compare-numbers.md)
+  - [Exercise: compare strings](./exercise-compare-strings.md)
+  - [Solution: compare numbers](./solution-compare-numbers.md)
+  - [Solution: compare strings](./solution-compare-strings.md)
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
