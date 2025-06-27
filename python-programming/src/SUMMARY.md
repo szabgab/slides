@@ -97,6 +97,28 @@
   - [Flake8 checking](./flake8-compile.md)
   - [Pylint checking](./pylint-checking.md)
 
+- [Numbers](./numbers.md)
+  - [Numbers](./python-numbers.md)
+  - [Operators for Numbers](./operators-for-numbers.md)
+  - [Integer division and the __future__](./integer-division.md)
+  - [Pseudo Random Number (uniform distribution)](./random.md)
+  - [Fixed random numbers](./random-seed.md)
+  - [Rolling dice - randrange](./random-dice.md)
+  - [Random choice](./random-choice.md)
+  - [built-in method](./built-in-method.md)
+  - [Exception: TypeError: 'module' object is not callable](./exception-module-object-is-not-callable.md)
+  - [Fixing the previous code](./random-code-fixed.md)
+  - [Exception: AttributeError: module 'random' has no attribute](./exception-attributeerror-module-has-no-attribute.md)
+  - [Exercise: Number guessing game - level 0](./exercise-number-guessing-game-0.md)
+  - [Exercise: Fruit salad](./exercise-fruit-salad.md)
+  - [Solution: Number guessing game - level 0](./solution-number-guessing-game-0.md)
+  - [Solution: Fruit salad](./solution-fruit-salad.md)
+
+
+
+
+
+
 
 
 
