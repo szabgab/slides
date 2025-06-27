@@ -67,4 +67,77 @@
   - [More Numpy](./more-numpy.md)
 
 
+- [Pandas](./pandas.md)
+  - [Pandas](./about-pandas.md)
+  - [Datasets](./datasets.md)
+  - [Planets data](./planets-data.md)
+  - [StackOverflow Survey data](./stackoverflow-survey-data.md)
+  - [Planets - Read CSV into Dataframes](./pandas-planets-read-csv.md)
+  - [Planets - DataFrame Statistics](./pandas-planets-statistics.md)
+  - [Pandas Read CSV various datatypes](./pandas-read-csv-various-datatypes.md)
+  - [Pandas Read CSV set dtype](./pandas-read-csv-set-dtype.md)
+  - [Pandas Read CSV convert values](./pandas-read-csv-convert-values.md)
+  - [Pandas split multivalue column into separate columns](./pandas-split-multivalue-column.md)
+  - [Pandas split multivalue column into separate columns - get_dummies](./pandas-split-multivalue-column-get-dummies.md)
+  - [Planets - Show first and last rows](./pandas-planets-show-first-and-last-rows.md)
+  - [Planets DataFrame select columns](./pandas-planets-select-columns.md)
+  - [Planets DataFrame select rows](./pandas-planets-select-rows.md)
+  - [Planets DataFrame select rows and columns](./pandas-planets-select-rows-and-columns.md)
+  - [DataFrame filter rows by size](./pandas-planets-filter-rows-by-size.md)
+  - [DataFrame filter rows by value](./pandas-planets-filter-rows-by-value.md)
+  - [DataFrame filter rows by value in list](./pandas-planets-filter-rows-by-value-in-list.md)
+  - [DataFrame filter elementwise boolean and](./pandas-planets-filter-elementwise-boolean-and.md)
+  - [DataFrame sort (sort_values)](./pandas-planets-sort.md)
+  - [DataFrame loc vs. iloc](./pandas-planets-loc-vs-iloc.md)
+  - [Pandas Planets - Add calculated column, remove / delete column (drop)](./pandas-add-column.md)
+  - [Pandas Planets - calculate](./pandas-plantes-calculate.md)
+  - [Pandas read CSV set index column](./pandas-read-csv-set-index-column.md)
+  - [Count values](./count-values.md)
+  - [Select top items](./select-top-items.md)
+  - [Pandas Show histogram](./pandas-show-histogram.md)
+  - [Pandas read selected columns](./pandas-read-selected-columns.md)
+  - [Pandas read file in chunks](./pandas-read-file-in-chunks.md)
+  - [Pandas read selected rows in chunks](./pandas-read-in-chunks-select-rows.md)
+  - [Combine columns to create a new column](./pandas-combine-columns.md)
+  - [Add a new column (conditional)](./pandas-add-column-conditional.md)
+  - [Pandas read Excel](./pandas-read-excel.md)
+  - [Create Excel file for experiment with random data](./create-excel-file-for-experiment.md)
+  - [Calculate Genome metrics](./calculate-genome-metrics.md)
+  - [Exercise: Pandas](./exercise-pandas.md)
+  - [TODO: Stack Overflow example](./stack-overflow-examples.md)
+
+- [Other slides](./pandas-other.md)
+  - [Pandas Stocks](./pandas-stocks.md)
+  - [Pandas Stocks](./pandas-read-csv-stocks.md)
+  - [Merge Dataframes](./merge-dataframes.md)
+  - [Analyze Alerts](./analyze-alerts.md)
+  - [Analyze IFMetrics](./analyze-ifmetrics.md)
+  - [Calculate Genome metrics - add columns](./calculate-genome-metrics-add-columns.md)
+  - [Calculate Genome metrics - vectorized](./calculate-genome-metrics-vecorized.md)
+  - [Calculate Genome metrics - vectorized numpy](./calculate-genome-metrics-vecorized-numpy.md)
+  - [Pandas more](./pandas-more.md)
+  - [Pandas Series](./pandas-series.md)
+  - [Pandas Series with names](./pandas-series-with-names.md)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
