@@ -26,13 +26,45 @@
   - [Python energy landscape explorer](./python-energy-landscape-explorer.md)
   - [Other chemistry links](./other-chemistry-links.md)
 
-
-
-
-
-
-
-
+- [numpy](./numpy.md)
+  - [What is NumPy](./what-is-numpy.md)
+  - [Install Numpy](./install-numpy.md)
+  - [Numpy - vector](./numpy-vector.md)
+  - [NumPy 2D arrays](./numpy-2d-arrays.md)
+  - [Numpy - set type](./numpy-set-tyep.md)
+  - [NumPy arrays: ones and zeros](./numpy-arrays-ones-and-zeros.md)
+  - [Numpy: eye](./numpy-slice-eye.md)
+  - [NumPy array random](./numpy-array-random.md)
+  - [NumPy Random integers](./mumpy-random-integers.md)
+  - [NumPy array type change by division (int to float)](./numpy-array-type-change.md)
+  - [Numpy: Array methods: transpose](./numpy-array-methods.md)
+  - [Numpy: reference, not copy](./numpy-array-references.md)
+  - [Numpy: copy array](./numpy-array-copy.md)
+  - [Numpy: Elementwise Operations on Arrays](./numpy-arrays.md)
+  - [Numpy: multiply, matmul, dot for vectors](./numpy-multiply-matmul-dot-for-vectors.md)
+  - [Numpy: multiply, matmul, dot for vector and matrix](./numpy-multiply-matmul-dot-for-1d-2d.md)
+  - [Numpy: multiply, matmul, dot for matrices](./numpy-multiply-matmul-dot-for-matrices.md)
+  - [Numpy: casting - converting from strings to integer](.numpy-array-casting.md)
+  - [Numpy: indexing 1d array](./numpy-indexing-1d-array.md)
+  - [Numpy: slice is a reference](./numpy-slice-reference.md)
+  - [Numpy: slice - copy](./numpy-slice-copy.md)
+  - [Numpy: abs value on a Numpy array](./abs-value-on-numpy-array.md)
+  - [Numpy: Logical not on a Numpy array](./logical-not-on-numpy-array.md)
+  - [Numpy: Vectorize a function](./vectorize-function.md)
+  - [Numpy: Vectorize len](./vectorize-len.md)
+  - [Numpy: Vectorize lambda](./vectorize-lambda.md)
+  - [Numpy: Filtering array (selecting some of the values from an array)](./numpy-filtering-array.md)
+  - [Numpy: Filter matrix values](./numpy-filter-matrix-values.md)
+  - [Numpy: Filter matrix rows (selecting some rows)](./numpy-filter-matrix-rows.md)
+  - [Numpy: Some statistics (sum, mean, std, var)](./numpy-stat.md)
+  - [Numpy: Serialization (saving an array to a file)](./numpy-serialization.md)
+  - [Numpy: Load from Matlab file to a Numpy array](./matlab-load.md)
+  - [Numpy: Save a Numpy array as a Matlab file](./matlab-save.md)
+  - [Numpy: Horizontal stack vectors (hstack)](./numpy-hstack.md)
+  - [Numpy: Append or vertically stack vectors and matrices (vstack)](./numpy-vstack.md)
+  - [Numpy uint8](./numpy-uint8.md)
+  - [Numpy int8](./numpy-int8.md)
+  - [More Numpy](./more-numpy.md)
 
 
 
