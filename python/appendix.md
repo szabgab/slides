@@ -11,8 +11,8 @@
 
 We will see how break and continue work, but first let's see a loop to find all the dividers on a number n.
 
-![](examples/strings/no_break_continue.py)
-![](examples/strings/no_break_continue.out)
+![](examples/other/no_break_continue.py)
+![](examples/other/no_break_continue.out)
 
 
 

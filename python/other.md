@@ -68,19 +68,6 @@ Linter
 
 
 
-## Strings as Comments
-{id: strings-as-comments}
-{i: '''}
-
-{aside}
-
-# marks single line comments.
-There are no real multi-line comments in Python, but we can use triple-quots to
-create multi-line strings and if they are not part of another statement,  they will be
-disregarded by the Python interpreter. Effectively creating multi-line comments.
-{/aside}
-![](examples/other/string_comments.py)
-
 
 ## pydoc
 {id: pydoc}
@@ -142,53 +129,6 @@ Run as **python argv.py Foo**
 Later we'll see the `argparse` module that can handle command line arguments in a better way.
 
 
-
-
-## Infinite loop
-{id: infinite-loop}
-![](examples/strings/infinite_loop.py)
-
-
-## break
-{id: break}
-{i: break}
-![](examples/strings/break.py)
-
-```
-0
-1
-2
-3
-4
-5
-6
-done
-```
-
-
-## continue
-{id: continue}
-{i: continue}
-![](examples/strings/continue.py)
-
-```
-1
-2
-3
-8
-9
-10
-```
-
-
-## While with many conditions
-{id: while-many-conditions}
-![](examples/strings/while_many_conditions.py)
-
-
-## while loop with many conditions
-{id: infinite-while-many-conditions}
-![](examples/strings/infinite_while_many_conditions.py)
 
 
 ## Format with conversion (stringifiation with str or repr)
@@ -635,12 +575,6 @@ nd.describe()
 nd.groupby('Country').mean().sort_values('OpenSourcer', ascending=False)
 ```
 
-
-## ord in a file
-{id: ord-in-file}
-{i: ord}
-
-![](examples/strings/ord.py)
 
 ## NameError
 {id: name-error}

@@ -140,6 +140,55 @@
   - [Solution: compare numbers](./solution-compare-numbers.md)
   - [Solution: compare strings](./solution-compare-strings.md)
 
+- [Strings](./strings.md)
+  - [Single quoted and double quoted strings](./single-quote-double-quote.md)
+  - [Long lines](./long-lines.md)
+  - [Multiline strings](./multiline-strings.md)
+  - [Triple quoted strings (multiline)](./triple-quoted-strings.md)
+  - [Triple quoted comments - documentation](./triple-quoted-comments.md)
+  - [String length (len)](./string-length.md)
+  - [String repetition and concatenation](./string-repetition.md)
+  - [A character in a string](./character--in-string.md)
+  - [String slice (instead of substr)](./string-slice.md)
+  - [Change a string](./string-change.md)
+  - [How to change a string](./how-to-change-a-string.md)
+  - [String copy](./string-copy.md)
+  - [String functions and methods (len, upper, lower)](./string-functions.md)
+  - [index in string](./index-in-string.md)
+  - [index in string with range](./index-in-string-range.md)
+  - [Find all in the string](./find-all-in-the-string.md)
+  - [rindex in string with range](./rindex-in-string-range.md)
+  - [find in string](./find-in-string.md)
+  - [in string](./in-syntax-on-string.md)
+  - [index if in string](./location-if-in-string.md)
+  - [Encodings: ASCII, Windows-1255, Unicode](./ascii-unicode.md)
+  - [raw strings](./raw-strings.md)
+  - [ord](./ord.md)
+  - [chr - number to character](./chr.md)
+  - [Exercise: one string in another string](./exercise-one-string-in-another-string.md)
+  - [Exercise: Character to Unicode-8 - CLI](./exercise-to-unicode-cli.md)
+  - [Exercise: from Unicode to character - CLI](./exercise-from-unicode-cli.md)
+  - [Exercise: ROT13](./exercise-rot13.md)
+  - [Solution: one string in another string](./solution-one-string-in-another-string.md)
+  - [Solution: compare strings](.solution-compare-string.md)
+  - [Solution: to Unicode CLI](./solution-to-unicode-cli.md)
+  - [Solution: from Unicode CLI](./solution-from-unicode-cli.md)
+  - [Solution: Show characters based on Unicode code-points](./solution-show-characters-based-on-code-points.md)
+  - [Solution: ROT13](./solution-rot13.md)
+- [Other]()
+  - [Infinite loop](./infinite-loop.md)
+  - [break](./break.md)
+  - [continue](./continue.md)
+  - [While with many conditions](./while-many-conditions.md)
+  - [while loop with many conditions](./infinite-while-many-conditions.md)
+  - [ord in a file](./ord-in-file.md)
+  - [Strings as Comments](./strings-as-comments.md)
+
+
+
+
+
+
 
 
 
