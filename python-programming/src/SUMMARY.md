@@ -184,11 +184,41 @@
   - [ord in a file](./ord-in-file.md)
   - [Strings as Comments](./strings-as-comments.md)
 
-
-
-
-
-
+- [Loops](./python-loops.md)
+  - [Loops: for-in and while](./for-while-loops.md)
+  - [for-in loop on strings](./for-loop-on-strings.md)
+  - [for-in loop on list](./for-loop-on-list-sample.md)
+  - [for-in loop on range](./for-loop-on-range.md)
+  - [Iterable, iterator](./iterable.md)
+  - [for in loop with early end using break](./for-break.md)
+  - [for in loop skipping parts using continue](./for-continue.md)
+  - [for in loop with break and continue](./for-break-continue.md)
+  - [while loop](./while-loop.md)
+  - [Infinite while loop](./infinite-while-loop.md)
+  - [While with complex expression](./while-complex-expression.md)
+  - [While with break](./while-with-break.md)
+  - [While True](./while-true.md)
+  - [Testing the refactoring of the while loop](./testing-the-refactoring-of-the-while-loop.md)
+  - [Duplicate input call](./duplicate-input-call.md)
+  - [Duplicate input call with loop](./duplicate-input-call-with-loop.md)
+  - [Eliminate duplicate input call](./eliminate-duplicate-input-call.md)
+  - [do while loop](./do-while-loop.md)
+  - [while with many continue calls](./while-many-continue.md)
+  - [Break out from multi-level loops](./break-from-multi-level-loops.md)
+  - [For-else](./for-break-or-else.md)
+  - [Exercise: Print all the locations in a string](./exercise-print-all-the-locations.md)
+  - [Exercise: Number guessing game](./exercise-number-guessing-game.md)
+  - [Exercise: Count unique characters](./exercise-count-unique.md)
+  - [Exercise: Convert for-loop to while-loop](./exercise-convert-for-loop-to-while-loop.md)
+  - [Solution: Print all the locations in a string](./solution-print-all-the-locations.md)
+  - [Solution 1 for Number Guessing](./solution-1-number-guessing.md)
+  - [Solution 2 for Number Guessing (x)](./solution-2-number-guessing.md)
+  - [Solution 3 for Number Guessing (s)](./solution-3-number-guessing.md)
+  - [Solution for Number Guessing (debug)](./solution-4-number-guessing.md)
+  - [Solution for Number Guessing (move)](./solution-5-number-guessing.md)
+  - [Solution for Number Guessing (multi-game)](./solution-6-number-guessing.md)
+  - [Solution: Count unique characters](./solution-count-unique.md)
+  - [Solution: Convert for-loop to while-loop](./solution-convert-for-loop-to-while-loop.md)
 
 
 
