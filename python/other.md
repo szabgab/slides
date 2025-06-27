@@ -59,7 +59,7 @@ Linter
 
 ## sh-bang - executable on Linux/Apple
 {id: sh-bang}
-![](examples/basics/hello_ex.py)
+![](examples/other/hello_ex.py)
 
 * The first line staring with # is needed if you want to have a file that can be executed without explicitly typing in python as well.
 * Make your file executable: **chmod u+x hello_ex.py**
@@ -79,7 +79,7 @@ There are no real multi-line comments in Python, but we can use triple-quots to
 create multi-line strings and if they are not part of another statement,  they will be
 disregarded by the Python interpreter. Effectively creating multi-line comments.
 {/aside}
-![](examples/basics/string_comments.py)
+![](examples/other/string_comments.py)
 
 
 ## pydoc
@@ -95,7 +95,7 @@ I don't recommend this.
 Type `pydoc`. On Windows, you might need to create the following file and put it in a directory in your PATH. (see `echo %PATH%`)
 
 
-![](examples/basics/pydoc.bat)
+![](examples/other/pydoc.bat)
 
 
 
@@ -124,7 +124,7 @@ print("abc")
 
 ## Parameter passing
 {id: parameter-passing}
-![](examples/basics/parameter_passing.py)
+![](examples/other/parameter_passing.py)
 
 ```
 Hello Foo!!!!
@@ -133,7 +133,7 @@ Hello Foo!!!!
 
 ## Command line arguments and main
 {id: command-line-arguments-and-main}
-![](examples/basics/argv_main.py)
+![](examples/other/argv_main.py)
 
 Run as **python argv.py Foo**
 

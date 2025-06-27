@@ -35,7 +35,7 @@ because they can be expressed by += 1 and -= 1 respectively.
 {id: integer-division}
 {i: __future__}
 
-![](examples/basics/divide.py)
+![](examples/numbers/divide.py)
 
 ```
 $ python divide.py
@@ -45,7 +45,7 @@ $ python3 divide.py
 1.5
 ```
 
-![](examples/basics/future_divide.py)
+![](examples/numbers/future_divide.py)
 
 {aside}
 If you need to use Python 2, remember that by default division is integer based so 3/2 would return 1.

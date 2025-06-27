@@ -11,7 +11,7 @@ you'll get into the Interactive shell of Python.
 In the interactive shell you can type:
 
 
-![](examples/basics/interactive_shell.txt)
+![](examples/other/interactive_shell.txt)
 
 
 ## REPL - Read Evaluate Print Loop
@@ -25,7 +25,7 @@ A variable comes to existence the first time we assign a value to it.
 It points to an object and that object knows about its type.
 
 
-![](examples/basics/repl.txt)
+![](examples/other/repl.txt)
 
 
 ## Using Modules

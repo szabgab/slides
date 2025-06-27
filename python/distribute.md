@@ -55,7 +55,7 @@ pyinstaller --onefile --windowed myscript.py
 
 ```
 pip install py2app
-py2applet examples/basics/hello.py
+py2applet examples/other/hello.py
 ```
 
 
