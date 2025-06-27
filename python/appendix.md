@@ -105,7 +105,7 @@ and we don't want to blindly change the behaviour of Python.
 * One can connect the outside name to an inside name using the 'global' keyword.
 * if and for blocks don't provide scoping.
 
-![](examples/basics/scope.py)
+![](examples/appendix/scope.py)
 
 {aside}
 

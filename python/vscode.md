@@ -42,7 +42,7 @@
 
 * Set argv
 
-![](examples/basics/rectangle_argv.py)
+![](examples/other/rectangle_argv.py)
 
 
 * Refactor "z" to "operator"
