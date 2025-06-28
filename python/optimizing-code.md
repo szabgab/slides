@@ -114,8 +114,8 @@ The actual content is not that interesting.
 * `repeat` is the number of repetition of each string.
 * `different` is the number of different string.
 
-![](examples/dictionary/count_words_speed.py)
-![](examples/dictionary/count_words_speed.out)
+![](examples/perf/count_words_speed.py)
+![](examples/perf/count_words_speed.out)
 
 ## for loop or reduce to add numbers?
 {id: for-loop-or-reduce-to-add-numbers}
