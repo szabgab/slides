@@ -234,7 +234,7 @@ Given a file count how many times each word appears.
 Have two implementations. One using two list and one using a dictionary.
 Profile the code and benchmark the two solutions.
 
-See `examples/lists/count_words_two_lists.py` and `examples/dictionary/count_words.py`
+See `examples/perf/count_words_two_lists.py` and `examples/dictionary/count_words.py`
 
 
 
