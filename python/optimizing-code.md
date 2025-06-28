@@ -45,8 +45,8 @@ Read more [performance tips](https://wiki.python.org/moin/PythonSpeed/Performanc
 
 In Perl it is called Schwartzian transform
 
-![](examples/lists/sort_dsu.py)
-![](examples/lists/sort_dsu.out)
+![](examples/perf/sort_dsu.py)
+![](examples/perf/sort_dsu.out)
 
 
 ## Profile code
