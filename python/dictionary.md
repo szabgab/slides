@@ -575,6 +575,6 @@ Generate random DNA sequence
 ## Sort Hungarian letters (lookup table)
 {id: sort-hungarian-letters}
 
-![](examples/lists/sort_hungarian_letters.py)
+![](examples/dictionary/sort_hungarian_letters.py)
 
 
