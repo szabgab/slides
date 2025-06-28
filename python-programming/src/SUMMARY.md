@@ -240,6 +240,95 @@
   - [raw f-format](./raw-f-format.md)
   - [Format with conversion (stringifiation with str or repr)](./format-with-conversion.md)
 
+- [Lists](./lists.md)
+  - [Anything can be a list](./any-lists.md)
+  - [Any layout](./any-lists2.md)
+  - [Access elements of a list](./access-elements-of-lists.md)
+  - [List slice with steps](./list-slice.md)
+  - [Change a List](./list-change.md)
+  - [Change sublist vs change element of a list](./change-sublist-vs-change-element.md)
+  - [Change with steps](./list-change-steps.md)
+  - [List assignment and list copy](./list-copy.md)
+  - [Shallow vs. Deep copy of lists](./deep-copy-of-lists.md)
+  - [join](./join.md)
+  - [join list of numbers](./join-mixed-list.md)
+  - [split](./split.md)
+  - [for loop on lists](./for-loop-on-list.md)
+  - [in list](./in-syntax-on-list.md)
+  - [Where is the element in the list](./where-is-the-element-in-the-list.md)
+  - [Index improved](./index-improved.md)
+  - [[].insert](./list-insert.md)
+  - [[].append](./list-append.md)
+  - [[].remove](./list-remove.md)
+  - [Remove element by index [].pop](./list-pop.md)
+  - [Remove first element of list](./list-shift.md)
+  - [Remove several elements of list by index](./list-remove-by-index.md)
+  - [Use list as a queue - FIFO](./list-as-a-queue.md)
+  - [Queue using deque from collections](./dequeue.md)
+  - [Fixed size queue](./fixed-size-dequeue.md)
+  - [List as a stack - LIFO](./list-as-a-stack.md)
+  - [stack with deque](./stack-with-deque.md)
+  - [Exercies: Queue](./exercise-queue.md)
+  - [Exercise: Stack](./exercise-stack.md)
+  - [Exercise: MasterMind](./exercise-mastermind.md)
+  - [Solution: Queue with list](./solution-queue.md)
+  - [Solution: Queue with deque](./solution-queue-deque.md)
+  - [Solution: Reverse Polish calculator (stack) with lists](./solution-stack.md)
+  - [Solution: Reverse Polish calculator (stack) with deque](./solution-stack-deque.md)
+  - [Solution: MasterMind](./solution-mastermind.md)
+  - [MasterMind to debug](./mastermind-to-debug.md)
+  - [Debugging Queue](./debugging-queue.md)
+  - [sort](./sort.md)
+  - [sort numbers](./sort-numbers.md)
+  - [key sort of strings](./key-sort.md)
+  - [sort mixed values](./sort-mixed.md)
+  - [sort mixed values fixed with str](./sort-mixed-fixed-with-str.md)
+  - [sorting with sorted](./sorted.md)
+  - [sort vs. sorted](./sort-vs-sorted.md)
+  - [Sorted and change - shallow copy](./sorted-and-change.md)
+  - [Sorting characters of a string](./sorting-characters.md)
+  - [range](./range.md)
+  - [Looping over index](./looping-over-index.md)
+  - [Enumerate lists](./enumerate-lists.md)
+  - [List operators](./list-operators.md)
+  - [List of lists](./list-of-lists.md)
+  - [List assignment](./list-assignment.md)
+  - [List documentation](./list-documentation.md)
+  - [Exercise: color selector menu](./exercise-menu.md)
+  - [Exercise: count digits](./exercise-count-digits.md)
+  - [Exercise: Create list](./exercise-create-list.md)
+  - [Exercise: Count words](./exercise-count-words-in-list.md)
+  - [Exercise: Check if number is prime](./exercise-is-prime.md)
+  - [Exercise: DNA sequencing](./exercise-dna-sequencing.md)
+  - [Solution: menu](./solution-menu.md)
+  - [Solution: count digits](./solution-count-digits.md)
+  - [Solution: Create list](./solution-create-list.md)
+  - [Solution: Count words](./solution-count-words-in-list.md)
+  - [Solution: Check if number is prime](./solution-is-prime.md)
+  - [Solution: DNA sequencing](./solution-dna-sequencing.md)
+  - [Solution: DNA sequencing other](./solution-dna-sequencing-using-other.md)
+  - [Solution: DNA sequencing using replace](./solution-dna-sequencing-using-replace.md)
+  - [Solution: DNA sequencing using regex](./solution-dna-sequencing-using-regex.md)
+  - [Solution: DNA sequencing with filter](./solution-dna-sequencing-filter.md)
+  - [Solution: DNA sequencing with filter and lambda](./solution-dna-sequencing-filter-lambda.md)
+  - [[].extend](./list-extend.md)
+  - [append vs. extend](./list-append-vs-extend.md)
+  - [split and extend](./split-extend.md)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
