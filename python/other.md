@@ -275,7 +275,7 @@ Every N element from a list
 {i: range}
 {i: xrange}
 
-![](examples/lists/xrange.py)
+![](examples/other/xrange.py)
 
 In Python 2 `range` creates a list of values `range(from, to, step)` and `xrnage` creates and iterator.
 In Python 3 `range` creates the iterator and if really necesary then `list(range())` can create the list.
@@ -659,8 +659,8 @@ easy_install -d ~/python Genshi
 
 To sort the list according to length using sorted
 
-![](examples/lists/sorted_key.py)
-![](examples/lists/sorted_key.out)
+![](examples/other/sorted_key.py)
+![](examples/other/sorted_key.out)
 
 ## get and set locale
 {id: get-and-set-locale}
