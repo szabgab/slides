@@ -95,8 +95,8 @@ As a special case `dump` will save the string in a file or in other stream.
 {i: collections}
 {i: OrderedDict}
 
-![](examples/dictionary/set_order.py)
-![](examples/dictionary/set_order.out)
+![](examples/json/set_order.py)
+![](examples/json/set_order.out)
 
 
 ## Exercise: Counter in JSON
