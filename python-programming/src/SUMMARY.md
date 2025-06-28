@@ -238,6 +238,7 @@
   - [format binary, octal, hexa numbers](./format-binar-octal-hexa-numbers.md)
   - [Examples using format with attributes of objects](./format-attributes.md)
   - [raw f-format](./raw-f-format.md)
+  - [Format with conversion (stringifiation with str or repr)](./format-with-conversion.md)
 
 
 

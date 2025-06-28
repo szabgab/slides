@@ -131,24 +131,6 @@ Later we'll see the `argparse` module that can handle command line arguments in 
 
 
 
-## Format with conversion (stringifiation with str or repr)
-{id: format-with-conversion}
-
-Adding !s or !r in the place-holder we tell it to cal the str or repr
-method of the object, respectively.
-
-
-
-* repr (__repr__) Its goal is to be unambiguous
-* str (__str__) Its goal is to be readable
-* The default implementation of both are useless
-* Suggestion
-* [Difference between __str__ and __repr__](http://stackoverflow.com/questions/1436703/difference-between-str-and-repr-in-python)
-
-![](examples/format/format_no_conversion.py)
-![](examples/format/format_conversions.py)
-
-
 ## Name of the current function in Python
 {id: name-of-the-current-function}
 {i: inspect}
