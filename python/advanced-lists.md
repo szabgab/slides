@@ -67,7 +67,7 @@ There is no do-while in Python, but you can emulate it:
 
 ## list slice is copy
 {id: list-slice-copy}
-![](examples/lists/list_slice_is_copy.py)
+![](examples/advanced/list_slice_is_copy.py)
 
 
 

@@ -149,7 +149,7 @@ Unless it was marked using the global word.
 
 ## Look deeper in a list
 {id: deeper}
-![](examples/lists/string_deeper.py)
+![](examples/appendix/string_deeper.py)
 
 ## Exercise: iterators - count
 {id: exercise-reimplement-count}
