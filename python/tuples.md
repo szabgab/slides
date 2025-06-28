@@ -13,8 +13,8 @@ Tuple
 * Can be accessed by **index**, using the **slice** notation.
 * A tuple is denoted with parentheses: (1,2,3)
 
-![](examples/lists/tuple.py)
-![](examples/lists/tuple.out)
+![](examples/tuples/tuple.py)
+![](examples/tuples/tuple.out)
 
 List
 
@@ -23,8 +23,8 @@ List
 * A list can grow and shrink using **append** and **pop** methods or using the **slice** notation.
 * A list is denoted with square brackets:   [1, 2, 3]
 
-![](examples/lists/list.py)
-![](examples/lists/list.out)
+![](examples/tuples/list.py)
+![](examples/tuples/list.out)
 
 
 {aside}
@@ -37,35 +37,35 @@ e.g. keys of dictionaries can be tuple (but not lists).
 ## Convert list to tuple and tuple to list
 {id: convert-list-to-tuple}
 
-![](examples/lists/totuple.py)
-![](examples/lists/totuple.out)
+![](examples/tuples/totuple.py)
+![](examples/tuples/totuple.out)
 
 ## Enumerate returns tuples
 {id: enumerate-lists-tuples}
 {i: enumerate}
 {i: tuple}
 
-![](examples/lists/enumerate_tuple.py)
-![](examples/lists/enumerate_tuple.out)
+![](examples/tuples/enumerate_tuple.py)
+![](examples/tuples/enumerate_tuple.out)
 
 
 ## Change a tuple
 {id: change-a-tuple}
 
-![](examples/lists/change_tuple.py)
+![](examples/tuples/change_tuple.py)
 
 
 ## Sort tuples
 {id: sort-tuples}
 
-![](examples/lists/sort_tuples.py)
+![](examples/tuples/sort_tuples.py)
 
 ## Sort tuples by specific elements
 {id: sort-tuples-by-specific-element}
 
 Sorting tuples or list, or other complex structures
 
-![](examples/lists/sort_tuples_by_specific_elements.py)
+![](examples/tuples/sort_tuples_by_specific_elements.py)
 
 ## Sort and secondary sort
 {id: sort-and-secondary-sort}
@@ -77,7 +77,7 @@ that have the same length?
 A sort using a lambda-function that returns a tuple can provide the secondary sort order.
 {/aside}
 
-![](examples/lists/sort_by_two_keys.py)
+![](examples/tuples/sort_by_two_keys.py)
 
 
 
