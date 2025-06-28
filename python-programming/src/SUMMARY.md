@@ -220,6 +220,26 @@
   - [Solution: Count unique characters](./solution-count-unique.md)
   - [Solution: Convert for-loop to while-loop](./solution-convert-for-loop-to-while-loop.md)
 
+- [Formatted strings](./format.md)
+  - [format - sprintf](./string-format.md)
+  - [printf using old %-syntax](./printf.md)
+  - [Examples using format with names](./format-names.md)
+  - [Format columns](./format-columns.md)
+  - [Examples using format - alignment](./format-alignment.md)
+  - [Format - string](./format-as-string.md)
+  - [Format characters and types (binary, octal, hexa)](./format-base.md)
+  - [Format floating point number](./format-float.md)
+  - [Examples using format - indexing](./format-indexing.md)
+  - [Format characters and types using f-format](./format-base-f-string.md)
+  - [f-format (formatted string literals)](./f-format.md)
+  - [Format floating point numbers using f-format](./format-numbers-f-string.md)
+  - [Format braces, bracket, and parentheses](./format-braces.md)
+  - [parameterized formatter](./parameterized-formatter.md)
+  - [format binary, octal, hexa numbers](./format-binar-octal-hexa-numbers.md)
+  - [Examples using format with attributes of objects](./format-attributes.md)
+  - [raw f-format](./raw-f-format.md)
+
+
 
 
 
