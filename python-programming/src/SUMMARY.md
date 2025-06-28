@@ -316,6 +316,16 @@
   - [split and extend](./split-extend.md)
 
 
+- [Tuples](./tuples/tuples.md)
+  - [Create tuple](./tuples/tuple.md)
+  - [Convert list to tuple and tuple to list](./tuples/convert-list-to-tuple.md)
+  - [Enumerate returns tuples](./tuples/enumerate-lists-tuples.md)
+  - [Change a tuple](./tuples/change-a-tuple.md)
+  - [Sort tuples](./tuples/sort-tuples.md)
+  - [Sort tuples by specific elements](./tuples/sort-tuples-by-specific-element.md)
+  - [Sort and secondary sort](./tuples/sort-and-secondary-sort.md)
+
+
 
 
 
