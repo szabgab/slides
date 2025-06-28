@@ -1,0 +1,19 @@
+
+# A comment
+
+Course:
+  Language:
+    Name: Ladino
+    IETF BCP 47: lad
+  For speakers of:
+    Name: English
+    IETF BCP 47: en
+  Special characters: []
+
+Modules:
+  - basic/
+  - words/
+  - verbs/
+  - grammar/
+  - names/
+  - sentences/

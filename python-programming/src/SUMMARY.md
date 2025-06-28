@@ -325,6 +325,49 @@
   - [Sort tuples by specific elements](./tuples/sort-tuples-by-specific-element.md)
   - [Sort and secondary sort](./tuples/sort-and-secondary-sort.md)
 
+- [Files](./files/index.md)
+  - [File types: Text vs Binary](./files/file-types-text-vs-binary.md)
+  - [Open vs. Read vs. Load](./files/open-vs-read.md)
+  - [Binary files: Images](./files/binary-file-images.md)
+  - [Reading an Excel file](./files/binary-reading-an-excel-file.md)
+  - [Reading a YAML file](./files/reading-a-yaml-file.md)
+  - [Read and analyze a text file](./files/read-and-analyze-a-text-file.md)
+  - [Open and read file (easy but not recommended)](./files/open-and-read.md)
+  - [Open and read file using with (recommended)](./files/open-and-read-with.md)
+  - [Read file remove newlines](./files/read-file-remove-newlines.md)
+  - [Filename on the command line](./files/filename-on-the-command-line.md)
+  - [Filehandle with return](./files/filehandle-with-return.md)
+  - [Read all the lines into a list](./files/read-all-the-lines.md)
+  - [Read all the characters into a string (slurp)](./files/slurp.md)
+  - [Not existing file](./files/not-existing-file.md)
+  - [Open file exception handling](./files/open-file-exception-handling.md)
+  - [Open many files - exception handling](./files/open-many-files-exception-handling.md)
+  - [Writing to file](./files/writing-to-file.md)
+  - [Print to file](./files/print-to-file.md)
+  - [Append to file](./files/append-to-file.md)
+  - [Binary mode](./files/binary-mode.md)
+  - [Does file exist? Is it a file?](./files/file-exists.md)
+  - [Direct access of a line in a file](./files/direct-access-of-a-line.md)
+  - [Exercise: count digits](./files/exercise-count-digits-in-file.md)
+  - [Exercise: remove newlines](./files/exercise-remove-newlines.md)
+  - [Exercise: print lines with Report](./files/exercise-print-lines-with-report.md)
+  - [Exercise: color selector](./files/exercise-file-color-selector.md)
+  - [Exercise: ROT13](./files/exercise-rot13-files.md)
+  - [Exercise: Combine lists](./files/exercise-combine-lists.md)
+  - [Exercise: Number guessing game - save to file](./files/exercise-number-guessing-game-save-to-file.md)
+  - [Solution: count numbers](./files/solution-count-numbers.md)
+  - [Solution: remove newlines](./files/solution-remove-newlines.md)
+  - [Solution: print lines with Report](./files/solution-print-lines-with-report.md)
+  - [Solution: color selector](./solution-file-color-selector.md)
+  - [Solution: ROT13](./files/solution-rot13-files.md)
+  - [Solution: Combine lists](./files/solution-combine-lists.md)
+  - [Solution: Combine lists with tuple](./files/solution-combine-lists-with-tuple.md)
+  - [Filehandle using with and not using it](./files/filehandle-with-and-without.md)
+
+
+
+
+
 
 
 
