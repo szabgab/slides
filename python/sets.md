@@ -152,7 +152,7 @@
 {id: create-set-from-list}
 
 
-![](examples/dictionary/set_from_list.py)
-![](examples/dictionary/set_from_list.out)
+![](examples/sets/set_from_list.py)
+![](examples/sets/set_from_list.out)
 
 
