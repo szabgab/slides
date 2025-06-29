@@ -364,6 +364,86 @@
   - [Solution: Combine lists with tuple](./files/solution-combine-lists-with-tuple.md)
   - [Filehandle using with and not using it](./files/filehandle-with-and-without.md)
 
+- [Dictionary (hash)](./dictionary/python-dictionary.md)
+  - [What is a dictionary](./dictionary/what-is-a-dictionary.md)
+  - [When to use dictionaries](./dictionary/when-to-use-dictionaries.md)
+  - [Various dictionary examples](./dictionary/various-dictionary-examples.md)
+  - [Dictionary](./dictionary/dictionary.md)
+  - [Create dictionary](./dictionary/create-dictionary-with-data.md)
+  - [keys](./dictionary/dictionary-keys.md)
+  - [Loop over keys](./dictionary/loop-over-keys.md)
+  - [Loop over dictionary keys](./dictionary/loop-over-dictionary-keys.md)
+  - [Loop using items](./dictionary/loop-items.md)
+  - [values](./dictionary/dictionary-values.md)
+  - [Not existing key](./dictionary/not-existing-key.md)
+  - [Get key](./dictionary/get-key.md)
+  - [Does the key exist?](./dictionary/key-exists.md)
+  - [Does the value exist?](./dictionary/value-exists.md)
+  - [Delete key](./dictionary/delete-key.md)
+  - [List of dictionaries](./dictionary/list-of-dicts.md)
+  - [Shared dictionary](./dictionary/shared-dictionary.md)
+  - [immutable collection: tuple as dictionary key](./dictionary/tuple-as-key.md)
+  - [immutable numbers: numbers as dictionary key](./dictionary/numbers-as-key.md)
+  - [Sort a dictionary](./dictionary/sort-dictionary.md)
+  - [Sort dictionary values](./dictionary/sort-dictionary-values.md)
+  - [Sort dictionary by value](./dictionary/sort-dictionary-by-value.md)
+  - [Sort dictionary keys by value (another example)](./dictionary/sort-keys-by-value.md)
+  - [Insertion Order is kept](./dictionary/insertion-order.md)
+  - [Change order of keys in dictionary - OrderedDict](./dictionary/change-order-of-keys.md)
+  - [Set order of keys in dictionary - OrderedDict](./dictionary/set-order-of-keys.md)
+  - [Setdefault](./dictionary/setdefault.md)
+  - [Exercise: count characters](./dictionary/exercise-count-characters.md)
+  - [Exercise: count words](./dictionary/exercise-count-words.md)
+  - [Exercise: count words from a file](./dictionary/exercise-count-words-in-file.md)
+  - [Exercise: Apache log](./dictionary/exercise-apache-log.md)
+  - [Exercise: Combine lists again](./dictionary/exercise-combine-lists-again.md)
+  - [Exercise: counting DNA bases](./dictionary/exercise-counting-dna-bases.md)
+  - [Exercise: Count Amino Acids](./dictionary/exercise-count-amino-acids.md)
+  - [Exercise: List of dictionaries](./dictionary/exercise-list-of-dictionaries.md)
+  - [Exercise: Dictionary of dictionaries](./dictionary/exercise-dictionary-of-dictionaries.md)
+  - [Exercise: Age limit with dictionaries](./dictionary/exercise-age-limit-with-dictionaries.md)
+  - [Exercise: Merge files with timestamps](./dictionary/exercise-merge-files-with-timestamps.md)
+  - [Solution: count characters](./dictionary/solution-count-characters.md)
+  - [Default Dict](./dictionary/default-dict.md)
+  - [Solution: count characters with default dict](./dictionary/solution-count-characters-with-default-dict.md)
+  - [Solution: count words (plain)](./dictionary/solution-count-words.md)
+  - [Solution: count words (defaultdict)](./dictionary/solution-count-words-defaultdict.md)
+  - [Solution: count words (Counter)](./dictionary/solution-count-words-counter.md)
+  - [Solution: count words in file](./dictionary/solution-count-words-in-file.md)
+  - [Solution: Apache log](./dictionary/solution-apache-log.md)
+  - [Solution: Apache log using split](./dictionary/solution-apache-log-using-split.md)
+  - [Solution: Combine files](./dictionary/solution-combine-files.md)
+  - [Solution: Combine files-improved](./dictionary/solution-combine-files-improved.md)
+  - [Solution: counting DNA bases](./dictionary/solution-counting-dna-bases.md)
+  - [Solution: Count Amino Acids](./dictionary/solution-count-amino-acids.md)
+  - [Solution: List of dictionaries](./dictionary/solution-list-of-dictionaries.md)
+  - [Solution: Dictionary of dictionaries](./dictionary/solution-dictionary-of-dictionaries.md)
+  - [Solution: Age limit with dictionaries](./dictionary/solution-age-limit-with-dictionaries.md)
+  - [Solution: Merge files with timestamps](./dictionary/solution-merge-files-with-timestamps.md)
+  - [Do not change dictionary in loop](./dictionary/do-not-change-in-loop.md)
+  - [Named tuple (sort of immutable dictionary)](./dictionary/namedtuple.md)
+  - [Create dictionary from List](./dictionary/create-dictionary-from-list.md)
+  - [Sort Hungarian letters (lookup table)](./dictionary/sort-hungarian-letters.md)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
