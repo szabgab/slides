@@ -46,8 +46,8 @@ We will see how break and continue work, but first let's see a loop to find all 
 * sys.modules to list loaded modules
 * imp.reload to reload module (Just reload before 3.3)
 
-![](examples/modules/mod.py)
-![](examples/modules/a.py)
+![](examples/appendix/mod.py)
+![](examples/appendix/a.py)
 
 
 ## import hooks

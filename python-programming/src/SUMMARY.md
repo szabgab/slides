@@ -551,6 +551,21 @@
   - [Loaded modules and their path](./modules/loaded-modules-and-their-path.md)
   - [Built-in modules](./modules/built-in-modules.md)
 
+- [Other Modules]()
+  - [assert to verify values](./modules/assert.md)
+  - [mycalc as a self testing module](./modules/self-testing-module.md)
+  - [doctest](./modules/doctest.md)
+  - [Export import](./modules/export-import.md)
+  - [Export import with __all__](./modules/import-with-all.md)
+  - [import module](./modules/import-module.md)
+  - [deep copy list](./modules/deep-copy-list.md)
+  - [deep copy dictionary](./modules/deep-copy-dictionary.md)
+
+
+
+
+
+
 
 
 
