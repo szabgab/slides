@@ -1,0 +1,5 @@
+generate the books: perl mdbooks.pl
+\mv perl-oop/book/markdown/* ~/Dropbox/perl-oop/manuscript/
+Visit https://leanpub.com/perl-oop/preview
+Create Preview
+Check it in ~/Dropbox/perl-oop/preview/
