@@ -1,8 +1,4 @@
-# Python standard modules (standard packages)
-{id: standard-modules}
-
-## Some Standard packages
-{id: some-standard-packages}
+# Some Standard packages
 
 * [sys](http://docs.python.org/library/sys.html) - (Python) System specific
 * [os](http://docs.python.org/library/os.html) - Operating System
@@ -19,4 +15,6 @@
 * [time](http://docs.python.org/library/time.html) - Timestamp and friends
 * [datetime](http://docs.python.org/library/datetime.html) - Time management
 * [random](http://docs.python.org/library/random.html) - Random numbers
+
+
 
