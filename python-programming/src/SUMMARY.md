@@ -569,7 +569,22 @@
   - [sys module](./sys/sys-module.md)
   - [Writing to standard error (stderr)](./sys/writing-to-standard-error.md)
   - [exit prints to STDERR](./sys/exit-prints-to-stderr.md)
-
+- [os](./os/index.md)
+  - [python which OS are we running on (os, platform)](./os/which-os-are-we-running-on.md)
+  - [Current directory (getcwd, pwd, chdir)](./os/pwd-current-working-directory.md)
+  - [OS path](./os/os-path.md)
+  - [os.path.join](./os/os-path-join.md)
+  - [Directory listing](./os/directory-listing.md)
+  - [Directory listing using glob](./os/listing-files-using-glob.md)
+  - [Traverse directory tree - list directories recursively](./os/travers-directory-tree.md)
+  - [OS dir (mkdir, makedirs, remove, rmdir)](./os/os-dir.md)
+  - [expanduser - handle tilde ~ the home directory of the user](./os/expanduser.md)
+  - [Get process ID](./os/os-pid-process-id.md)
+  - [External command with system](./os/external-command-with-system.md)
+  - [Accessing the system environment variables from Python](./os/environment-variables.md)
+  - [Set environment variables on the fly](./os/environment-variables-on-the-fly.md)
+  - [Reading the .env environment file in Python](./os/reading-the-environment-file.md)
+  - [Set env and run command](./os/set-env-and-run-command.md)
 
 
 

@@ -9,7 +9,6 @@
     "files": [
         "pycharm.md",
         "vscode.md",
-        "os.md",
         "pathlib.md",
         "shutil.md",
         "time.md",
