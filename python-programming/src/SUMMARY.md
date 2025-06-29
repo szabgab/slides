@@ -561,9 +561,14 @@
   - [deep copy list](./modules/deep-copy-list.md)
   - [deep copy dictionary](./modules/deep-copy-dictionary.md)
 
-
-
-
+- [Python standard modules (standard packages)](./std/index.md)
+  - [Some Standard packages](./std/some-standard-packages.md)
+- [math](./math/index.md)
+  - [math examples](./math/math-examples.md)
+- [sys](./sys/index.md)
+  - [sys module](./sys/sys-module.md)
+  - [Writing to standard error (stderr)](./sys/writing-to-standard-error.md)
+  - [exit prints to STDERR](./sys/exit-prints-to-stderr.md)
 
 
 
