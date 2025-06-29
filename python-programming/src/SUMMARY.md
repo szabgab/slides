@@ -456,6 +456,77 @@
   - [k-Permutations - module](./code-reuse/k-permutations-module.md)
   - [Binomial coefficient - module](./code-reuse/binomial-coefficient-module.md)
 
+- [Functions (subroutines)](./functions/index.md)
+  - [Why use functions?](./functions/why-use-functions.md)
+  - [Defining simple function](./functions/add-functions.md)
+  - [Passing positional parameters to a function](./functions/use-function-with-positional-parameters.md)
+  - [Function parameters can be named](./functions/named-parameters.md)
+  - [Mixing positional and named parameters](./functions/mixing-positional-and-named-parameters.md)
+  - [Mixing positional and named parameters - order](./functions/mixing-positional-and-named-parameters-order.md)
+  - [Default values, optional parameters, optional parameters](./functions/parameter-with-default-values.md)
+  - [Default value in first param](./functions/parameter-with-default-value-in-first-param.md)
+  - [Several defaults, using names](./functions/defaults-with-names.md)
+  - [Default list](./functions/default-list.md)
+  - [Arbitrary number of arguments `*`](./functions/arbitrary-number-of-arguments.md)
+  - [Arbitrary number of arguments passing a lists](./functions/arbitrary-number-of-arguments-list.md)
+  - [Arbitrary number of arguments passing a  tuple](./functions/arbitrary-number-of-arguments-tuple.md)
+  - [Fixed parmeters before the others](./functions/fixed-and-variable-length-argument-list.md)
+  - [Pass arbitrary number of functions](./functions/arbitrary-number-of-functions.md)
+  - [Arbitrary key-value pairs in parameters `**`](./functions/kw-value-pairs.md)
+  - [Pass a real dictionary](./functions/pass-a-real-dictionary.md)
+  - [The dictionary contains copy](./functions/kw-dictionary-is-copy.md)
+  - [The dictionary contains copy but NOT deep copy!](./functions/kw-dictionary-is-not-a-deep-copy.md)
+  - [Extra key-value pairs in parameters](./functions/extra-kw-value-pairs.md)
+  - [Extra key-value pairs in parameters for email](./functions/extra-kw-value-pairs-for-email.md)
+  - [Every parameter option](./functions/every-parameter-option.md)
+  - [Duplicate declaration of functions (multiple signatures)](./functions/duplicate-declaration.md)
+  - [Pylint duplicate declaration](./functions/pylint-duplicate-declaration.md)
+  - [Return more than one value](./functions/return-more-than-one-value.md)
+  - [Recursive factorial](./functions/recursive-factorial.md)
+  - [Recursive Fibonacci](./functions/recursive-fibonacci.md)
+  - [Non-recursive Fibonacci](./functions/non-recursive-fibonacci.md)
+  - [Unbound recursion](./functions/unbound-recursion.md)
+  - [Set recurions limit](./functions/set-recursion-limit.md)
+  - [Variable assignment and change - Immutable](./functions/remember-assignment.md)
+  - [Variable assignment and change - Mutable list](./functions/assignment-details-list.md)
+  - [Variable assignment and change - Mutabled dict](./functions/assignment-details-dict.md)
+  - [Parameter passing of functions](./functions/function-parameter-passing.md)
+  - [Passing references](./functions/passing-references.md)
+  - [Function documentation](./functions/function-documentation.md)
+  - [Sum ARGV](./functions/sum-argv.md)
+  - [Copy-paste code](./functions/copy-paste.md)
+  - [Copy-paste code fixed](./functions/copy-paste-fixed.md)
+  - [Copy-paste code further improvement](./functions/copy-paste-further-improvement.md)
+  - [Palindrome](./functions/palindrome.md)
+  - [Exit vs return vs break and continue](./functions/exit-return-break.md)
+  - [Exercise: statistics](./functions/exercise-statistics.md)
+  - [Exercise: Pascal's triangle](./functions/exercise-pascal-triangle.md)
+  - [Exercise: Pascal's triangle functions](./functions/exercise-pascal-triangle-functions.md)
+  - [Exercise: recursive dependency tree](./functions/exercise-recursive-dependency-tree.md)
+  - [Exercise: dependency tree](./functions/exercise-dependency-tree.md)
+  - [Exercise: Tower of Hanoi](./functions/exercise-tower-of-hanoi-recursive.md)
+  - [Exercise: Merge  and Bubble sort](./functions/exercise-bubble-sort.md)
+  - [Exercise: Refactor previous solutions to use functions](./functions/exercise-refactor-previous-solutions-to-us-functions.md)
+  - [Exercise: Number guessing - functions](./functions/exercise-number-guessing-game-with-functions.md)
+  - [Solution: statistics](./functions/solution-statistics.md)
+  - [Solution: Pascal triangle](./functions/solution-pascal-triangle.md)
+  - [Solution: Pascal triangle functions](./functions/solution-pascal-triangle-functions.md)
+  - [Solution: recursive](./functions/solution-recursive.md)
+  - [Solution: Tower of Hanoi](./functions/solution-tower-of-hanoi-recursive.md)
+  - [Solution: Merge and Bubble sort](./functions/solution-bubble-sort.md)
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -37,7 +37,7 @@
 * Set breakpoint
 * Set conditional breakpoint
 
-![](examples/functions/fibonacci.py)
+examples/functions/fibonacci.py
 
 
 * Set argv
