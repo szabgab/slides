@@ -136,8 +136,8 @@ is fixed. In this case it is "../lib". We can compute the relative path in each 
 Regardless of the location of the whole project tree.
 {/aside}
 
-![](examples/project_root/lib/my_module.py)
-![](examples/project_root/bin/relative_path.py)
+![](examples/modules/project_root/lib/my_module.py)
+![](examples/modules/project_root/bin/relative_path.py)
 
 
 ## Relative path explained
@@ -149,8 +149,8 @@ Regardless of the location of the whole project tree.
      lib/my_module.py
 ```
 
-![](examples/project_root/bin/relative_path_explained.py)
-![](examples/project_root/bin/relative_path_explained.out)
+![](examples/modules/project_root/bin/relative_path_explained.py)
+![](examples/modules/project_root/bin/relative_path_explained.out)
 
 ## Submodules
 {id: submodules}
@@ -161,8 +161,8 @@ aproject/
     mymodules/math.py
 ```
 
-![](examples/aproject/app.py)
-![](examples/aproject/mymodules/math.py)
+![](examples/modules/aproject/app.py)
+![](examples/modules/aproject/mymodules/math.py)
 
 
 ## Python modules are compiled
