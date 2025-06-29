@@ -4,3 +4,22 @@ language = "en"
 multilingual = false
 src = "src"
 title = "GitHub pages"
+
+
+
+# Add github icon to the menu
+[output.html]
+git-repository-url = "https://github.com/szabgab/slides"
+git-repository-icon = "fa-github"
+edit-url-template = "https://github.com/szabgab/slides/edit/main/github-pages/{path}"
+
+[output.markdown]
+
+# Handle Youtube video embedding and the footer
+[preprocessor.embedify]
+footer.enable = true
+footer.message = "Copyright © 2025 • Created with ❤️  by [Gábor Szabó](https://szabgab.com/)"
+
+
+
+
