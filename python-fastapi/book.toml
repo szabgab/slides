@@ -10,6 +10,8 @@ git-repository-url = "https://github.com/szabgab/slides"
 git-repository-icon = "fa-github"
 edit-url-template = "https://github.com/szabgab/slides/edit/main/python-fastapi/{path}"
 
+[output.markdown]
+
 # Handle Youtube video embedding and the footer
 [preprocessor.embedify]
 footer.enable = true

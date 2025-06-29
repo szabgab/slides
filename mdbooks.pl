@@ -10,6 +10,7 @@ exit;
 sub main {
     my $names = get_book_names();
 
+    mkdir "html";
     generate_md_books($names);
     my ($total, $books) = collect_count();
     generate_html_page($total, $books);
@@ -127,7 +128,12 @@ sub generate_md_books {
         chdir $name;
         say "mdbook '$name'";
         say `pwd`;
-        my $cmd = "mdbook build --dest-dir ../html/$name .";
+
+        my $cmd = "mdbook build";
+        say $cmd;
+        system $cmd;
+
+        $cmd = "mv book/html ../html/$name";
         say $cmd;
         system $cmd;
         chdir "..";
