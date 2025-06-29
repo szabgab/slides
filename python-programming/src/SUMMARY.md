@@ -425,10 +425,24 @@
   - [Create dictionary from List](./dictionary/create-dictionary-from-list.md)
   - [Sort Hungarian letters (lookup table)](./dictionary/sort-hungarian-letters.md)
 
-
-
-
-
+- [Sets](./set/sets.md)
+  - [sets](./set/python-sets.md)
+  - [set operations](./set/set-operations.md)
+  - [Creating a set](./set/creating-a-set.md)
+  - [Creating a set from a list](./set/creating-a-set-from-a-list.md)
+  - [Converting set to list](./set/converting-set-to-list.md)
+  - [Creating an empty set](./set/creating-an-empty-set.md)
+  - [Adding an element to a set (add)](./set/adding-an-element-to-a-set.md)
+  - [Merging one set into another set (update)](./set/merging-one-set-into-another-set.md)
+  - [set intersection](./set/set-intersection.md)
+  - [set subset](./set/set-subset.md)
+  - [set symmetric difference](./set/set-symmetric-difference.md)
+  - [set union](./set/set-union.md)
+  - [set relative complement (difference)](./set/set-relative-complement.md)
+  - [Set of numbers](./set/set-of-numbers.md)
+  - [Set of lists](./set/set-of-lists.md)
+  - [Set of tuples](./set/set-of-tuples.md)
+  - [Create set from List](./set/create-set-from-list.md)
 
 
 
