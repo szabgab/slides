@@ -444,55 +444,17 @@
   - [Set of tuples](./set/set-of-tuples.md)
   - [Create set from List](./set/create-set-from-list.md)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [Code Reuse](./code-reuse/index.md)
+  - [Permutations](./code-reuse/permutations.md)
+  - [k-Permutations](./code-reuse/k-permutations.md)
+  - [Binomial coefficient](./code-reuse/binomial-coefficient.md)
+  - [Binomial coefficient - factorial function](./code-reuse/binomial-coefficient-factorial-function.md)
+  - [k-Permutations - factorial function](./code-reuse/k-permutations-factorial-function.md)
+  - [Permutations - factorial funcion](./code-reuse/permutations-factorial-function.md)
+  - [mymath module](./code-reuse/mymath-module.md)
+  - [Permutations - module](./code-reuse/permutations-module.md)
+  - [k-Permutations - module](./code-reuse/k-permutations-module.md)
+  - [Binomial coefficient - module](./code-reuse/binomial-coefficient-module.md)
 
 
 
