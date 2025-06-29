@@ -515,12 +515,41 @@
   - [Solution: Tower of Hanoi](./functions/solution-tower-of-hanoi-recursive.md)
   - [Solution: Merge and Bubble sort](./functions/solution-bubble-sort.md)
 
-
-
-
-
-
-
+- [Modules](./modules/index.md)
+  - [Goal of having modules](./modules/goal-of-having-modules.md)
+  - [Before modules](./modules/in-one-file.md)
+  - [Create modules](./modules/create-modules.md)
+  - [path to load modules from - The module search path](./modules/path-to-load-modules-from.md)
+  - [sys.path - the module search path](./modules/sys-path.md)
+  - [Project directory layouts](./modules/project-directory-layouts.md)
+  - [Flat project directory structure](./modules/project-directory-structure.md)
+  - [Absolute path](./modules/absolute-path.md)
+  - [Relative path](./modules/relative-path.md)
+  - [Relative path explained](./modules/relative-path-explained.md)
+  - [Submodules](./modules/submodules.md)
+  - [Python modules are compiled](./modules/compile-python-modules.md)
+  - [How "import" and "from" work?](./modules/how-import-works.md)
+  - [Execute at import time](./modules/execute-at-import-time.md)
+  - [Runtime loading of modules](./modules/runtime-loading-of-module.md)
+  - [Conditional loading of modules](./modules/conditional-loading-of-modules.md)
+  - [What is in our namespace?](./modules/what-is-in-your-namespace.md)
+  - [Runtime import](./modules/runtime-import.md)
+  - [Duplicate importing of functions](./modules/duplicate-importing-of-functions.md)
+  - [Duplicate importing of functions - solved](./modules/duplicate-importing-of-functions-solved.md)
+  - [Script or library](./modules/python-script-or-library.md)
+  - [Script or library - import](./modules/python-script-or-library-import.md)
+  - [Script or library - from import](./modules/python-script-or-library-from-import.md)
+  - [Scope of import](./modules/scope-of-import.md)
+  - [Import multiple times](./modules/import-multiple-times.md)
+  - [Do not import `*`](./modules/do-not-import-everything.md)
+  - [Exercise: Number guessing](./modules/exercise-number-guessing-game-with-modules.md)
+  - [Exercies: Scripts and modules](./modules/exercise-functional-scripts-and-modules.md)
+  - [Exercise: Module my_sum](./modules/exercise-module-sum.md)
+  - [Exercise: Convert your script to module](./modules/exercise-convert-your-script-to-module.md)
+  - [Exercise: Add doctests to your own code](./modules/exercise-add-doctests-to-your-own-code.md)
+  - [Solution: Module my_sum](./modules/solution-module-sum.md)
+  - [Loaded modules and their path](./modules/loaded-modules-and-their-path.md)
+  - [Built-in modules](./modules/built-in-modules.md)
 
 
 
