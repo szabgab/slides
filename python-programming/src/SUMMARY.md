@@ -170,7 +170,7 @@
   - [Exercise: from Unicode to character - CLI](./exercise-from-unicode-cli.md)
   - [Exercise: ROT13](./exercise-rot13.md)
   - [Solution: one string in another string](./solution-one-string-in-another-string.md)
-  - [Solution: compare strings](.solution-compare-string.md)
+  - [Solution: compare strings](./solution-compare-string.md)
   - [Solution: to Unicode CLI](./solution-to-unicode-cli.md)
   - [Solution: from Unicode CLI](./solution-from-unicode-cli.md)
   - [Solution: Show characters based on Unicode code-points](./solution-show-characters-based-on-code-points.md)
