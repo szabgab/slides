@@ -34,7 +34,7 @@ sub collect_count {
         my $title = get_title($name);
 
 
-        my @html_files  = glob("html/$name/*.html");
+        my @html_files  = (glob("html/$name/*.html"), glob("html/$name/*/*.html"));
         $books{$name} = {
             count => scalar(@html_files) - 4,
             title => $title,
