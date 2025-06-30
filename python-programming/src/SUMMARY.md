@@ -586,12 +586,14 @@
   - [Reading the .env environment file in Python](./os/reading-the-environment-file.md)
   - [Set env and run command](./os/set-env-and-run-command.md)
 
-
-
-
-
-
-
-
-
+- [Pathlib](./pathlib/index.md)
+  - [Pathlib example](./pathlib/pathlib-example.md)
+  - [Pathlib cwd](./pathlib/pathlib-cwd.md)
+  - [Pathlib get extension (suffix)](./pathlib/pathlib-extension.md)
+  - [Pathlib current file](./pathlib/pathlib-current-file.md)
+  - [Pathlib parents (dirname)](./pathlib/pathlib-parents.md)
+  - [Pathlib parts (basename)](./pathlib/pathlib-parts.md)
+  - [Pathlib exists](./pathlib/pathlib-exists.md)
+  - [Pathlib iterdir (flat)](./pathlib/pathlib-iterdir.md)
+  - [Pathlib mkdir (makedir)](./pathlib/pathlib-mkdir.md)
 
