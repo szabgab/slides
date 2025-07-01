@@ -1,12 +1,12 @@
 # Behind the scenes
 
-Now that we saw a common Perl module that is used in an OOP fashion, let's look a little bit behind the scenes.
+Now that we saw a common Perl module that is used in an OOP fashion, let's look a little bit behind the scenes for that module.
 
-What is that `$mech` variable that was returned by the constructor of WWW::Mechanize that we called an **instance** or an **object**?
+What is that `$mech` variable that was returned by the constructor of WWW::Mechanize? We called it an **instance** or an **object**, but what is it really?
 
 {% embed include file="src/examples/www-mechanize/dump.pl" %}
 
-In order to see this I printed out the content of `$mech`, first with as a plain variable.
+In order to see this I printed out the content of `$mech`, first with as a plain `print`-statement. Well, I used `say` because it is shorter, but you get the picture.
 
 This is the result I got:
 
@@ -42,4 +42,10 @@ $VAR1 = bless( {
 
 
 At the beginning you can see the `bless` keyword I mentioned earlier. At the end you can see "WWW::Mechanize", the name of the module (class).
+These are the visual indications that this is a bless-ed reference. The part between the curly braces is just one big HASH.
+
+Later we'll see that the keys of this hash are the attributes of the instance and as in any hash they can store any type of value: `undef`, scalars, and other, complex data-structures.
+
+
+In most other programming languages you cannot really see the underlying data stored in the instance, but in Perl you can see it and even manipulate it. Don't do that.
 
