@@ -1,5 +1,6 @@
 # Summary
 
+- [Changes](./changes.md)
 - [OOP in Perl](./index.md)
 - [Example using OOP](./www-mechanize.md)
 - [Use recent version of Perl](./use-recent-version-of-perl.md)
