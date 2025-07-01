@@ -9,7 +9,6 @@
     "files": [
         "pycharm.md",
         "vscode.md",
-        "subprocess.md",
         "argparse.md",
         "json.md",
         "yaml.md",
