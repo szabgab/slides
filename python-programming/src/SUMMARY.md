@@ -630,3 +630,25 @@
   - [Exercise: Processes](./subprocess/exercise-processes.md)
   - [Subprocess TBD](./subprocess/subprocess-other.md)
 
+- [Command line arguments with argparse](./argparse/index.md)
+  - [Command line arguments](./argparse/argparse-command-line-arguments.md)
+  - [Modules to handle the command line](./argparse/command-line-modules.md)
+  - [argparse](./argparse/argparse-full.md)
+  - [Basic usage of argparse](./argparse/argparse-basic.md)
+  - [Positional argument](./argparse/argparse-positional.md)
+  - [Many positional argument](./argparse/argparse-positional-many.md)
+  - [Convert to integers](./argparse/argparse-type.md)
+  - [Convert to integer](./argparse/argparse-number.md)
+  - [Named arguments](./argparse/argparse-named.md)
+  - [Boolean Flags](./argparse/argparse-boolean.md)
+  - [Short names](./argparse/argparse-shortnames.md)
+  - [argparse print help explicitely](./argparse/argparse-print-help.md)
+  - [Argparse xor - mutual exlucise - only one - exactly one](./argparse/argparse-xor.md)
+  - [Argparse argument with default and optional value](./argparse/argparse-with-default-and-optional-value.md)
+  - [Conditional required parameter with argparse](./argparse/argparse-conditional-required-parameter.md)
+  - [Exercise: Command line parameters](./argparse/exercise-argparse.md)
+  - [Exercise: argparse positional and named](./argparse/exercise-argparse-positional-and-named.md)
+  - [Other](./argparse/argparse-other.md)
+
+
+
