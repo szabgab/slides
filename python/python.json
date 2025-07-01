@@ -9,7 +9,6 @@
     "files": [
         "pycharm.md",
         "vscode.md",
-        "argparse.md",
         "json.md",
         "yaml.md",
         "exceptions.md",
