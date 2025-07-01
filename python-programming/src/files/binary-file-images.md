@@ -5,6 +5,10 @@ This is just a quick example how to use the Pillow module to handle images. Ther
 
 * [Pillow](https://pillow.readthedocs.io/en/stable/)
 
+```
+pip install pillow
+```
+
 {% embed include file="src/examples/files/resize_image_demo.py" %}
 
 ```
