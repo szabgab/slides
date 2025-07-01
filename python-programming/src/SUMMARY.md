@@ -674,7 +674,7 @@
   - [Exercise: Phone book in YAML](./yaml/exercise-yaml-phonebook.md)
   - [Solution: Counter in YAML](./yaml/solution-yaml-counter.md)
 
-
+- [Exception handling](./exception-handling/index.md)
 
 
 
