@@ -2,7 +2,7 @@
 authors = ["Gabor Szabo"]
 language = "en"
 src = "src"
-title = "Programming in Python"
+title = "Python Programming"
 
 # Add github icon to the menu
 [output.html]
