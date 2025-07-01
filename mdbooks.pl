@@ -148,6 +148,8 @@ sub generate_md_books {
         system $cmd;
 
         chdir "..";
+
+        system "cp leanpub.md $name/book/markdown/";
     }
 }
 
@@ -162,6 +164,7 @@ sub convert_summary_to_book_txt {
     @rows = map { s{\).*}{}; $_ } @rows;
     #print Dumper \@rows;
     open my $fh, ">", "book/markdown/Book.txt" or die;
+    print $fh "leanpub.md\n";
     for my $row (@rows) {
         print $fh "$row\n";
     }
