@@ -1,5 +1,15 @@
 generate the books: perl mdbooks.pl
 \mv perl-oop/book/markdown/* ~/Dropbox/perl-oop/manuscript/
-Visit https://leanpub.com/perl-oop/preview
+Preview: Visit https://leanpub.com/perl-oop/preview
+Publish: https://leanpub.com/perl-oop/publish
 Create Preview
 Check it in ~/Dropbox/perl-oop/preview/
+
+
+\mv python-functional-programming/book/markdown/* ~/Dropbox/python-functional-programming/manuscript/
+Preview: Visit https://leanpub.com/python-functional-programming/preview
+Publish: https://leanpub.com/python-functional-programming/publish
+Create Preview
+Check it in ~/Dropbox/python-functional-programming/preview/
+
+
