@@ -619,3 +619,14 @@
   - [Convert datetime object to time object](./datetime/convert-datetime-to-time.md)
   - [Today (date)](./datetime/today.md)
 
+- [subprocess](./subprocess/index.md)
+  - [External CLI tool to demo subprocess](./subprocess/external-cli-tool-to-demo-subprocess.md)
+  - [Run with os.system](./subprocess/run-with-os-system.md)
+  - [Run external process let STDOUT and STDERR through](./subprocess/run-external-process-and-let-stdout-and-stderr-through.md)
+  - [Run external process and capture STDOUT and STDERR separately](./subprocess/run-external-process-and-capture-stdout-and-stderr-separately.md)
+  - [Run external process and capture STDOUT and STDERR merged together](./subprocess/run-external-process-and-capture-stdout-and-stderr-merged-together.md)
+  - [subprocess in the background](./subprocess/subprocess-background.md)
+  - [subprocess collect output while external program is running](./subprocess/subprocess-collect-output-while-external-program-is-running.md)
+  - [Exercise: Processes](./subprocess/exercise-processes.md)
+  - [Subprocess TBD](./subprocess/subprocess-other.md)
+
