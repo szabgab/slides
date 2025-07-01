@@ -8,13 +8,8 @@ In order for you to get an email notification when I publish a new version you n
 
 To do so:
 
-1. Go to [your library](https://leanpub.com/user_dashboard/library) on LeanPub.
-1. Find the book in question.
-1. Click on the book image.
-1. Check the box "New version available".
-1. You can also optionally check the box "Share my email address with the author" if you'd like to share your email with me.
 
-
-
-
+1. Visit the [email settings](https://leanpub.com/user_dashboard/email).
+1. Check the boxes next to the book(s) about which you'd like to get notification.
+1. Click on "Configure Email Settings for Specific Books".
 
