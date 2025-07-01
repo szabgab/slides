@@ -9,7 +9,6 @@
     "files": [
         "pycharm.md",
         "vscode.md",
-        "exceptions.md",
         "pypi.md",
         "database.md",
         "sqlite.md",
@@ -33,7 +32,6 @@
         "decorators.md",
         "context.md",
         "advanced-lists.md",
-        "advanced-exceptions.md",
         "warnings.md",
         "csv.md",
         "excel.md",
