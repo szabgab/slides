@@ -1,8 +1,5 @@
-# Dancer Skeleton
-{id: dancer-skeleton}
+# Create skeleton with dancer2 -a
 
-## Create skeleton with dancer2 -a
-{id: create-skeleton}
 
 ```
 dancer2 -a App::Skeleton
@@ -63,3 +60,6 @@ To run the tests:
 ```
 prove -l
 ```
+
+
+
