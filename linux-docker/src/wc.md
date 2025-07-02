@@ -1,0 +1,8 @@
+# wc - word count
+
+
+```
+wc
+```
+
+
