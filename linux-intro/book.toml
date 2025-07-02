@@ -2,13 +2,13 @@
 authors = ["Gabor Szabo"]
 language = "en"
 src = "src"
-title = "SQL - Relational Databases"
+title = "Linux as a Virtual Environment"
 
 # Add github icon to the menu
 [output.html]
 git-repository-url = "https://github.com/szabgab/slides"
 git-repository-icon = "fa-github"
-edit-url-template = "https://github.com/szabgab/slides/edit/main/sql/{path}"
+edit-url-template = "https://github.com/szabgab/slides/edit/main/linux-intro/{path}"
 
 [output.markdown]
 
