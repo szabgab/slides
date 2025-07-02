@@ -1,14 +1,11 @@
-# Introduction to Raku
-{id: introduction-to-raku}
+# Getting started
 
-## Getting started
-{id: getting-started}
-{i: Rakudo}
-{i: MoarVM}
-{i: JVM}
-{i: Niecza}
-{i: CLR}
-{i: Pugs}
+* Rakudo
+* MoarVM
+* JVM
+* Niecza
+* CLR
+* Pugs
 
 
 * Raku is a specification and a set of tests.
@@ -22,14 +19,4 @@
 
 We are going to use Rakudo with MoarVM.
 
-## Other resources
-{id: other-resources}
-{i: IRC}
-{i: mailing list}
 
-There are lots of free resources for learning Raku. Probably the most central place is the <a href="http://www.raku.org/">Raku community site</a>, that has lot of other links.
-
-* [Raku documentation](http://docs.raku.org/)
-* The most active place to ask about Raku is the #raku [IRC channel](https://raku.org/community/irc).
-* [Raku Community](https://raku.org/community/)
-* [Learn Raku in Y minutes](https://learnxinyminutes.com/docs/raku/)
