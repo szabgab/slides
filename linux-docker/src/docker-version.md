@@ -1,0 +1,7 @@
+# Docker version
+
+```
+docker -v
+```
+
+
