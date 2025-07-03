@@ -1,5 +1,6 @@
 generate the books: perl mdbooks.pl
 \mv perl-oop/book/markdown/* ~/Dropbox/perl-oop/manuscript/
+\cp perl-oop/title_page.png ~/Dropbox/perl-oop/manuscript/resources/
 Preview: Visit https://leanpub.com/perl-oop/preview
 Publish: https://leanpub.com/perl-oop/publish
 Create Preview
