@@ -1,8 +1,11 @@
 use strict;
 use warnings;
+use Data::Dumper qw(Dumper);
 
 use Person;
 
-my $teacher = Person->new;
+my $figure = Person->new;
 
-print $teacher, "\n";  # Person=HASH(0x3f7ff4)
+print $figure, "\n";
+
+print Dumper $figure;

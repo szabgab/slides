@@ -13,7 +13,7 @@ As both cats and dogs are mammals it sounded like a good idea to create a class 
 After all there are a lot of common features between cats and dogs.
 So instead of implementing almost everything twice we can implement them in the "Mammal" class and then make the specializations in the "Cat" and "Dog" classes.
 
-This was fine. However, the need arised to also represent other things around the house: chairs and tables.
+This was fine. However, the need arose to also represent other things around the house: chairs and tables.
 
 At that point some overly enthusiastic person noticed that all 4 types: chairs, tables, cats, and dogs have legs. So they created a class call "LeggedThings" and made
 all 4 classes inherit from that.
