@@ -1,0 +1,4 @@
+examples/perl/t/bail_out....Bailout called.  Further testing stopped:  no way
+
+#   Failed test 'second II'
+#   at examples/perl/t/bail_out.t line 8.

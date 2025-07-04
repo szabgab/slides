@@ -1,0 +1,16 @@
+1..4
+not ok 1 - correct number
+#   Failed test 'correct number'
+#   at t/dice_any_diag.t line 16.
+# Received: 1.5
+# Expected:
+#          1
+#          2
+#          3
+#          4
+#          5
+#          6
+ok 2 - correct number
+ok 3 - correct number
+ok 4 - correct number
+# Looks like you failed 1 test of 4.

@@ -1,0 +1,12 @@
+1..1
+not ok 1
+#   Failed test at t/test_differences.t line 15.
+# +----+------------------------+-----------------------+
+# | Elt|Got                     |Expected               |
+# +----+------------------------+-----------------------+
+# |   0|[                       |[                      |
+# *   1|  'This is a stringx',  |  'This is a string',  *
+# |   2|  'Another string'      |  'Another string'     |
+# |   3|]                       |]                      |
+# +----+------------------------+-----------------------+
+# Looks like you failed 1 test of 1.
