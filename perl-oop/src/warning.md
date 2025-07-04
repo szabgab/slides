@@ -8,7 +8,7 @@ So I'd like to tell you up-front that OOP is not the solution to every problem.
 
 We saw this very clearly when in the mid '90s with the introduction of Java people started to use OOP and specifically inheritance everywhere.
 
-The well known example, though its entirely possible I made that up, was the representations of household items: cats and dogs.
+The well known example, though it is entirely possible I made that up, was the representations of household items: cats and dogs.
 As both cats and dogs are mammals it sounded like a good idea to create a class called "Mammal" and to make the class "Cat" and the class "Dog" both inherit from that class.
 After all there are a lot of common features between cats and dogs.
 So instead of implementing almost everything twice we can implement them in the "Mammal" class and then make the specializations in the "Cat" and "Dog" classes.
