@@ -48,7 +48,6 @@
 
         "parallel.md",
 
-        "mocking.md",
         "test-class.md",
         "test-reporting.md",
         "bdd.md",
