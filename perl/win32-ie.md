@@ -16,7 +16,7 @@
 ## Accessing Google
 {id: win32-ie-mechanize-google}
 
-![](examples/www/google_win32.pl)
+![](examples/win32-ie/google_win32.pl)
 
 
 ## Examples
