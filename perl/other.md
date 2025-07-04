@@ -1,12 +1,6 @@
 # Other
 {id: other}
 
-## Mocking get in LWP::Simple
-{id: mocking-get-in-lwp-simple}
-
-
-![](examples/mock-lwp/t/webapi_mock_lwp_simple.t)
-
 ## Read CSV file as array of hashes
 {id: read-csv-file-as-array-of-hashes}
 {i: csv}
