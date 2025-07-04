@@ -305,3 +305,13 @@
   - [Exercise: Testing Smolder](./selenium/exercise-test-smolder.md)
   - [Exercise: Act](./selenium/exercise-with-act.md)
 
+- [Servers](./servers/index.md)
+  - [Net::Server](./servers/net-server.md)
+  - [Skeleton Server](./servers/skeleton-network-server.md)
+  - [Simple Echo Server](./servers/simple-echo-server.md)
+  - [Echo Server](./servers/echo-server.md)
+  - [Complex network servers](./servers/complex-net-server.md)
+
+
+
+

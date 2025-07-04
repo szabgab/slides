@@ -8,7 +8,6 @@
     "repo": "https://github.com/szabgab/slides/blob/main/",
     "version": "1.18",
     "files": [
-        "servers.md",
         "testing-network.md",
         "database.md",
         "dbi-intro.md",
