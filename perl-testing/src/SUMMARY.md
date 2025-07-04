@@ -192,6 +192,11 @@
   - [Test STDIN](./mocking/test-stdin.md)
   - [Mocking get in LWP::Simple](./mocking/get-in-lwp-simple.md)
 
-
-
+- [Test::Class](./test-class/index.md)
+  - [Simple module to test](./test-class/simple-module-to-test.md)
+  - [Test::Class simple example](./test-class/test-class-simple-example.md)
+  - [Test::Class with fixtures](./test-class/test-class-with-fixtures.md)
+  - [Test::Class run both test classes](./test-class/test-class-run-both.md)
+  - [Test::Class inline](./test-class/test-class-inline.md)
+  - [Test::Class Load](./test-class/test-class-load.md)
 

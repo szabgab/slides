@@ -8,7 +8,6 @@
     "repo": "https://github.com/szabgab/slides/blob/main/",
     "version": "1.18",
     "files": [
-        "test-class.md",
         "test-reporting.md",
         "bdd.md",
         "command-line.md",
