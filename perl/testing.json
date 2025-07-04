@@ -8,8 +8,6 @@
     "repo": "https://github.com/szabgab/slides/blob/main/",
     "version": "1.18",
     "files": [
-        "web.md",
-        "selenium.md",
         "servers.md",
         "testing-network.md",
         "database.md",
