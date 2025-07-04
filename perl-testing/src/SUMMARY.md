@@ -190,6 +190,7 @@
   - [Override printing functions (mocking)](./mocking/testing-override-printing-functions.md)
   - [Monkey Patching](./mocking/monkey-patching.md)
   - [Test STDIN](./mocking/test-stdin.md)
+  - [Mocking get in LWP::Simple](./mocking/get-in-lwp-simple.md)
 
 
 
