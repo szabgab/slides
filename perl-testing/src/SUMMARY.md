@@ -200,3 +200,17 @@
   - [Test::Class inline](./test-class/test-class-inline.md)
   - [Test::Class Load](./test-class/test-class-load.md)
 
+- [Running and reporting tests](./test-reporting/index.md)
+  - [TAP - Test Anything Protocol](./test-reporting/tap.md)
+  - [prove](./test-reporting/prove-options.md)
+  - [Parallel testing](./test-reporting/parallel-testing.md)
+  - [prove --state](./test-reporting/prove-state.md)
+  - [Parse TAP from a file](./test-reporting/prove-parse-tap-from-a-file.md)
+  - [prove - run other executables](./test-reporting/prove-run-other-executables.md)
+  - [TAP::Formatter::HTML by Steve Purkis](./test-reporting/tap-html.md)
+  - [Collecting Test reports](./test-reporting/collecting-test-reports.md)
+  - [Generating HTML reports from Archives](./test-reporting/generating-html-reports-from-archives.md)
+
+
+
+
