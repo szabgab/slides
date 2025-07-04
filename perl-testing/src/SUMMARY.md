@@ -215,4 +215,33 @@
   - [BDD Hello World](./bdd/bdd-hello-world.md)
   - [BDD Demo](./bdd/bdd-demo.md)
 
+- [Test Command line application](./test-cli/index.md)
+  - [bc - An arbitrary precision calculator language](./test-cli/bc.md)
+  - [Normal operation](./test-cli/bc-normal-operation.md)
+  - [Expect.pm](./test-cli/expect.md)
+  - [Simple computation - adding two values](./test-cli/expect-simple-computation.md)
+  - [Results](./test-cli/expect-simple-computation-result.md)
+  - [Reduce output - turn it into a test script](./test-cli/expect-reduce-output.md)
+  - [Output](./test-cli/expect-reduced-output.md)
+  - [Expect and BAIL_OUT](./test-cli/expect-bail-out.md)
+  - [More than one test](./test-cli/expect-more-than-one-test.md)
+  - [Output](./test-cli/expect-more-than-one-test-output.md)
+  - [External test file](./test-cli/expect-external-test-file.md)
+  - [Random regression tests](./test-cli/expect-random-regression-test.md)
+  - [Random and regression testing](./test-cli/expect-random-and-regression-test.md)
+  - [Random and regression testing - slight improvement](./test-cli/expect-random-and-regression-test-diff.md)
+  - [Results](./test-cli/expect-random-and-regression-test-result.md)
+  - [Expect multiple values](./test-cli/expect-multiple-values.md)
+  - [Test::Expect](./test-cli/expect-test-expect.md)
+  - [Capturing both STDOUT and STDERR](./test-cli/capturing-stdout-and-stderr.md)
+  - [Capturing both STDOUT and STDERR manually](./test-cli/capturing-stdout-and-stderr-manually.md)
+  - [Capturing both STDOUT and STDERR using IPC::Run3](./test-cli/capturing-stdout-and-stderr-using-ipc-run3.md)
+  - [Capture::Tiny](./test-cli/capture-tiny.md)
+  - [Test::Snapshots](./test-cli/test-snapshots.md)
+  - [Exercise: Expect](./test-cli/exercise-expect.md)
+
+
+
+
+
 
