@@ -8,7 +8,6 @@
     "repo": "https://github.com/szabgab/slides/blob/main/",
     "version": "1.18",
     "files": [
-        "bdd.md",
         "command-line.md",
         "networking.md",
         "web.md",
