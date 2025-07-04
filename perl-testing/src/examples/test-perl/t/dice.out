@@ -1,0 +1,28 @@
+1..8
+ok 1 - correct number
+not ok 2 - correct number
+#   Failed test 'correct number'
+#   at t/dice.t line 17.
+# Received: 1.5
+# Expected:
+#          1
+#          2
+#          3
+#          4
+#          5
+#          6
+ok 3 - correct number
+ok 4 - correct number
+not ok 5 - correct number
+#   Failed test 'correct number'
+#   at t/dice.t line 25.
+# Received: 3.5
+# Expected:
+#          1
+#          2
+#          3
+#          4
+ok 6 - correct number
+ok 7 - correct number
+ok 8 - correct number
+# Looks like you failed 2 tests of 8.

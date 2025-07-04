@@ -1,0 +1,9 @@
+1..3
+ok 1 - Deep Purple
+ok 2 - Beatles
+not ok 3 - ABBA
+#   Failed test 'ABBA'
+#   at t/isnt.t line 10.
+#          got: 'ABBA'
+#     expected: anything else
+# Looks like you failed 1 test of 3.

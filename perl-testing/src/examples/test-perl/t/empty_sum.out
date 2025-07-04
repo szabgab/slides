@@ -1,0 +1,4 @@
+1..1
+Use of uninitialized value in addition (+) at lib/MyTools.pm line 12.
+Use of uninitialized value in addition (+) at lib/MyTools.pm line 12.
+ok 1

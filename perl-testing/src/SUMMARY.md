@@ -54,13 +54,46 @@
   - [Exercise: Add tests](./test-simple/exercise-test-simple-add-tests.md)
   - [Test::Simple](./test-simple/test-simple.md)
 
-
-
-
-
-
-
-
-
+- [Test::More](./test-more/index.md)
+  - [Moving over to Test::More](./test-more/moving-to-test-more.md)
+  - [Test::Simple ok(  trueness,     name);](./test-more/test-simple-ok.md)
+  - [Test::More ok(  trueness,     name);](./test-more/test-more-ok.md)
+  - [Test::More is(  value,   expected_value,   name);](./test-more/test-more-is.md)
+  - [Test::More isnt( value, not_expected_value,  name);](./test-more/test-more-isnt.md)
+  - [Test::More isnt undef](./test-more/test-more-isnt-undef.md)
+  - [note( message ) or diag( message );](./test-more/test-more-diag-note.md)
+  - [(note or diag) explain( a_variable );](./test-more/test-more-explain.md)
+  - [TODO](./test-more/test-more-todo.md)
+  - [TODO Verbose output](./test-more/test-more-todo-verbose.md)
+  - [TODO: unexpected success](./test-more/test-more-todo-unexpected-success.md)
+  - [TODO: unexpected success (the code)](./test-more/test-more-todo-unexpected-success-the-code.md)
+  - [MyTools with various functions](./test-more/mytools-with-various-functions.md)
+  - [like(value, qr/expected regex/, name);](./test-more/test-more-like-date.md)
+  - [like(value, qr/expected regex/, name);](./test-more/test-more-like.md)
+  - [Another example with like](./test-more/test-more-like2.md)
+  - [cmp_ok(   this,   op,  that,    name);](./test-more/test-more-cmp-ok.md)
+  - [is_deeply(  complex_structure,   expected_complex_structure,   name);](./test-more/test-more-is-deeply.md)
+  - [Function returning data from bug-tracker](./test-more/function-returning-data-from-bugtracker.md)
+  - [is_deeply on a hash](./test-more/test-more-is-deeply-hash.md)
+  - [Platform dependent tests](./test-more/platform-dependent-tests.md)
+  - [SKIP some tests](./test-more/test-more-skip.md)
+  - [locale](./test-more/test-more-locale.md)
+  - [Stop running current test script](./test-more/test-more-stop-testing.md)
+  - [Stop all the test scripts](./test-more/test-more-bail-out.md)
+  - [Exercises](./test-more/exercise-test-more.md)
+  - [Test coverage using Devel::Cover](./test-more/devel-cover.md)
+  - [Test coverage report example](./test-more/devel-cover-example.md)
+  - [Declare your plan at execution time](./test-more/test-calculated-plan.md)
+  - [done_testing](./test-more/done-testing.md)
+  - [plan tests, no_testing, done_testing](./test-more/plan-tests-no-testing-done-testing.md)
+  - [Compute test plan](./test-more/compute-test-plan.md)
+  - [subtest with plan](./test-more/subtest-with-plan.md)
+  - [subtest with implicit done_testing](./test-more/subtest.md)
+  - [subtest to restrict scope](./test-more/subtest-to-restrict-scope.md)
+  - [skip all](./test-more/skip-all.md)
+  - [Exercise: skip test](./test-more/exercise-skip-test.md)
+  - [Exercise: use coverage](./test-more/exercise-test-coverage.md)
+  - [Test blocks (use subtest instead)](./test-more/test-blocks.md)
+  - [Counting tests in the small blocks (use subtest instead)](./test-more/test-begin-block.md)
 
 

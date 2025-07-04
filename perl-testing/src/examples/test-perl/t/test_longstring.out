@@ -1,0 +1,13 @@
+1..2
+not ok 1
+#   Failed test at t/test_longstring.t line 10.
+#          got: 'qgjVLTjmhSKWoIZIAiCNSBkJQOOrLUYVihtrBehKKtUEozKzZvJDwClTCgHayvbrPsZojPiNGrzwXNDtuEpHuBcSDepTsoNlzPWMezBhuCJJZPbsLVMDWvuMZfXjtDhSrAsfrciXuJuZVCEXTBxkLXwklcgrqXMPoPloZhdoxu iTGjygbCuiSpNTgrdrkpONiEVfAEa'
+#     expected: 'qgjVLTjmhSKWoIZIAiCNSBkJQOOrLUYVihtrBehKKtUEozKzZvJDwClTCgHayvbrPsZojPiNGrzwXNDtuEpHuBcSDepTsoNlzPWMezBhuCJJZPbsLVMDWvuMZfXjtDhSrAsfrciXuJuZVCEXTBxkLXwklcgrqXMPoPloZhdoxuBiTGjygbCuiSpNTgrdrkpONiEVfAEa'
+not ok 2
+#   Failed test at t/test_longstring.t line 12.
+#          got: ..."oPloZhdoxu iTGjygbCuiSpNTgrdrkpONiEVfAEa"...
+#       length: 200
+#     expected: ..."oPloZhdoxuBiTGjygbCuiSpNTgrdrkpONiEVfAEa"...
+#       length: 200
+#     strings begin to differ at char 171 (line 1 column 171)
+# Looks like you failed 2 tests of 2.

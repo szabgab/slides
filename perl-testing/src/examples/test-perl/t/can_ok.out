@@ -1,0 +1,7 @@
+1..2
+ok 1 - MyTools->can('fibonacci')
+not ok 2 - MyTools->can('make_tea')
+#   Failed test 'MyTools->can('make_tea')'
+#   at examples/perl/t/can_ok.t line 11.
+#     MyTools->can('make_tea') failed
+# Looks like you failed 1 test of 2.
