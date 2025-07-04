@@ -240,8 +240,27 @@
   - [Test::Snapshots](./test-cli/test-snapshots.md)
   - [Exercise: Expect](./test-cli/exercise-expect.md)
 
-
-
+- [Networking devices](./test-networking/index.md)
+  - [Introduction - pick the right abstraction level](./test-networking/networking-introduction.md)
+  - [Socket level programming using Socket.pm](./test-networking/socket-pm.md)
+  - [Newline](./test-networking/newlines.md)
+  - [Socket level programming using IO::Socket](./test-networking/io-socket.md)
+  - [Net::Telnet](./test-networking/net-telnet.md)
+  - [Net::Telnet for HTTP](./test-networking/net-telnet-for-http.md)
+  - [Net::Telnet configure VLAN](./test-networking/net-telnet-configure-vlan.md)
+  - [ftp using Net::FTP](./test-networking/net-ftp.md)
+  - [ssh using Net::SSH](./test-networking/net-ssh.md)
+  - [LWP::Simple](./test-networking/lwp-simple.md)
+  - [LWP::UserAgent](./test-networking/lwp.md)
+  - [WWW::Mechanize](./test-networking/www-mechanize.md)
+  - [WWW::Mechanize for Google](./test-networking/www-mechanize-google.md)
+  - [Exercise: Search on Financial Times](./test-networking/exercise-search-on-financial-times.md)
+  - [Exercise: Compare exchange rates](./test-networking/exercise-compare-exchange-rates.md)
+  - [Exercise: Telnet or SSH to Unix machines](./test-networking/exercise-telnet-to-unix-machines.md)
+  - [Introduction](./test-networking/cli-introduction.md)
+  - [Connect to the device](./test-networking/cli-connect-to-device.md)
+  - [Reduce timeout](./test-networking/reduce-timeout.md)
+  - [Our test script](./test-networking/test-telnet.md)
 
 
 
