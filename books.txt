@@ -1,5 +1,4 @@
 agile/agile.json,agile,
-ansible/ansible.json,ansible,
 ansible-intro/ansible-intro.json,ansible-intro,
 aws-lambda/aws-lambda.json,aws-lambda,
 css/css.json,css,
