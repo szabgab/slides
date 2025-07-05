@@ -19,9 +19,27 @@
   - [Ansible Inventory in YAML format](./ansible/ansible-inventory-in-yaml-format.md)
 
 
-
-
-
-
-
+- [Introduction to Ansible](./intro/index.md)
+  - [Why](./intro/startwithwhy.md)
+  - [How](./intro/how.md)
+  - [What is Ansible?](./intro/whatisansible.md)
+  - [Prerequisites for the installations](./intro/installation.md)
+  - [The samples structure](./intro/imagefortraining.md)
+  - [Starting up - configuring the structure](./intro/structure.md)
+  - [Configuring Ansible basic files](./intro/conffiles.md)
+  - [Running Ansible](./intro/runningansible.md)
+  - [Creating an ssh key file and passing it to the hosts](./intro/sshkey.md)
+  - [Some simple commands](./intro/morecommands.md)
+  - [Install a package - failure](./intro/installing-packages-failure.md)
+  - [Passwordless sudo](./intro/passwordless-sudo.md)
+  - [Install a package](./intro/installing-packages.md)
+  - [removing a package](./intro/removingapackage.md)
+  - [Shell command](./intro/shell.md)
+  - [Playbooks - combining tasks](./intro/playbookintro.md)
+  - [Running the playbook](./intro/runningplaybook.md)
+  - [Adding vars to the play](./intro/vars.md)
+  - [More vars](./intro/morevars.md)
+  - [Roles](./intro/ansible-roles.md)
+  - [Ansible Galaxy](./intro/ansible-galaxy.md)
+  - [Resources](./intro/resources.md)
 
