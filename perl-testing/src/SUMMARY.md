@@ -312,6 +312,18 @@
   - [Echo Server](./servers/echo-server.md)
   - [Complex network servers](./servers/complex-net-server.md)
 
-
-
+- [Testing networking devices](./testing-network/index.md)
+  - [Elements](./testing-network/network-test-elements.md)
+  - [Network testing](./testing-network/manual-network-testing.md)
+  - [Hardware setup](./testing-network/hardware-setup.md)
+  - [Access the administrative interface](./testing-network/administrative-interface.md)
+  - [CLI testing](./testing-network/manual-cli-testing.md)
+  - [Configure devices on all sides of our box](./testing-network/configure-devices.md)
+  - [Run tests](./testing-network/networking-run-test.md)
+  - [Check results](./testing-network/networking-check-results.md)
+  - [Expect.pm](./testing-network/networking-expect.md)
+  - [Networking](./testing-network/networking-cpan-modules.md)
+  - [Network devices](./testing-network/network-devices.md)
+  - [Devices connected to Serial or Parallel port](./testing-network/serial-port-parallel-port.md)
+  - [X10 protocol](./testing-network/x10-protocol.md)
 
