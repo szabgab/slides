@@ -1,0 +1,76 @@
+# Summary
+
+- [Ruby](./index.md)
+
+- [Introduction to Ruby](./ruby-introduction/index.md)
+  - [Where to get Ruby](./ruby-introduction/where-to-get-ruby.md)
+  - [Ruby on the command line](./ruby-introduction/ruby-on-the-command-line.md)
+  - [irb - Interactive Ruby](./ruby-introduction/irb.md)
+  - [Hello world](./ruby-introduction/hello-world.md)
+  - [Ruby development environment](./ruby-introduction/ruby-development-environment.md)
+  - [Create variable and print content using puts](./ruby-introduction/create-variable-and-print-content.md)
+  - [Hello Foo using puts](./ruby-introduction/hello-foo-puts.md)
+  - [Hello Foo - print](./ruby-introduction/hello-foo-print.md)
+  - [Ruby variable interpolation](./ruby-introduction/ruby-interpolate-in-string.md)
+  - [Hello Foo - puts with interpolation](./ruby-introduction/hello-foo-with-interpolation.md)
+  - [Hello Foo STDIN read](./ruby-introduction/hello-foo-stdin.md)
+  - [Hello Foo STDIN and strip](./ruby-introduction/hello-foo-stdin-strip.md)
+  - [Hello Foo ARGV](./ruby-introduction/hello-foo-argv.md)
+  - [Interpolation with expression](./ruby-introduction/hello-foo-capitalize.md)
+  - [Ruby conditionals - if statement](./ruby-introduction/ruby-conditionals-if-statement.md)
+  - [Ruby conditionals - if else statement](./ruby-introduction/ruby-conditionals-if-else-statement.md)
+  - [Ruby path to current script](./ruby-introduction/ruby-path-to-current-script.md)
+  - [Ruby command line arguments ARGV](./ruby-introduction/ruby-command-line-arguments-argv.md)
+  - [Variable Types in Ruby](./ruby-introduction/ruby-variable-types.md)
+  - [Resources](./ruby-introduction/ruby-resources.md)
+
+- [Ruby Arrays](./ruby-arrays/index.md)
+  - [Ruby Arrays intro](./ruby-arrays/arrays-intro.md)
+
+- [Hashes](./ruby-hashes/index.md)
+  - [Ruby empty Hash](./ruby-hashes/ruby-empty-hash.md)
+  - [Ruby Hash add key-value pairs](./ruby-hashes/ruby-hash-add-key-value-pairs.md)
+  - [Ruby hash list keys](./ruby-hashes/ruby-hash-list-keys.md)
+
+
+- [Functions](./ruby-functions/index.md)
+  - [Why create functions?](./ruby-functions/ruby-why-create-functions.md)
+  - [Hello World in a function](./ruby-functions/ruby-hello-world-function.md)
+  - [Hello Person in a function](./ruby-functions/ruby-hello-person-function.md)
+  - [Simple function](./ruby-functions/ruby-simple-function.md)
+  - [Ruby Function with a star (asterisk)](./ruby-functions/ruby-function-with-a-star.md)
+  - [Function with a star example](./ruby-functions/rub-splat-example.md)
+  - [Ruby Function with two stars](./ruby-functions/ruby-function-with-two-stars.md)
+
+
+- [Filesystem](./ruby-filesystem/index.md)
+  - [Ruby makedir](./ruby-filesystem/ruby-makedir.md)
+  - [Ruby directory exists](./ruby-filesystem/ruby-exists.md)
+  - [Ruby write to file](./ruby-filesystem/ruby-write-to-file.md)
+  - [Ruby append to file](./ruby-filesystem/ruby-append-to-file.md)
+  - [Ruby list files by using glob](./ruby-filesystem/ruby-list-files-by-using-glob.md)
+
+- [Time](./ruby-time/index.md)
+  - [Ruby current time](./ruby-time/ruby-current-time.md)
+  - [Ruby time string formating with strftime](./ruby-time/ruby-time-string-formatting-with-strftime.md)
+
+- [net/http](./ruby-net-http/index.md)
+  - [API requests](./ruby-net-http/ruby-api-requests.md)
+  - [GET URL httpbin](./ruby-net-http/get-url-httpbin.md)
+  - [GET URL that does not exist (404 error)](./ruby-net-http/get-urr-that-does-not-to-exist.md)
+  - [GET URL that pretends not to exist (404)](./ruby-net-http/get-url-that-pretends-not-to-exist.md)
+  - [GET URL that pretends to crash (500)](./ruby-net-http/get-url-that-pretends-to-crash.md)
+  - [Show request headers](./ruby-net-http/show-request-headers.md)
+  - [Get request headers using Firefox](./ruby-net-http/get-request-headers-with-firefox.md)
+  - [Get request headers using curl](./ruby-net-http/get-request-headers-using-curl.md)
+  - [Set request headers](./ruby-net-http/set-request-header.md)
+  - [Sending a POST request](./ruby-net-http/sending-post-request.md)
+  - [Setting header in POST request](./ruby-net-http/setting-header-in-post-request.md)
+  - [Debugging a failed request](./ruby-net-http/debugging-a-failed-request.md)
+  - [GET URL](./ruby-net-http/net-http-get-url.md)
+
+
+- [Other](./ruby-other/index.md)
+  - [Ruby - Execute external command (system)](./ruby-other/ruby-execute-external-command.md)
+  - [Ruby - Execute external command (system) - failure](./ruby-other/ruby-execute-external-command-failure.md)
+
