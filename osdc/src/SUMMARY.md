@@ -36,4 +36,28 @@
 
 
 
+- [Collaborative Development and Open Source Projects](./osdc-collab-dev/index.md)
+  - [Videos](./osdc-collab-dev/videos.md)
+  - [Book](./osdc-collab-dev/book.md)
+  - [Who is this for?](./osdc-collab-dev/who-is-this-for.md)
+  - [Why do it?](./osdc-collab-dev/why-is-it-important.md)
+  - [Reasons to contribute](./osdc-collab-dev/reasons-to-contribute.md)
+  - [Overview: Git - GitHub - Travis-CI](./osdc-collab-dev/overview-pr.md)
+  - [Why use a Version Control System - VCS?](./osdc-collab-dev/why-use-vcs.md)
+  - [Why Git?](./osdc-collab-dev/why-git.md)
+  - [Why GitHub?](./osdc-collab-dev/github.md)
+  - [CI = Continuous Integration](./osdc-collab-dev/overview-ci.md)
+  - [Travis-CI](./osdc-collab-dev/what-is-travis-ci.md)
+  - [Register on GitHub](./osdc-collab-dev/github-register.md)
+  - [Hacktoberfest](./osdc-collab-dev/hacktoberfest.md)
+  - [GitHub names](./osdc-collab-dev/github-names.md)
+  - [Task: Edit the README file](./osdc-collab-dev/pr-edit-readme-file.md)
+  - [Task: Edit a CSV file](./osdc-collab-dev/pr-edit-csv-file.md)
+  - [Task: Edit a JSON file](./osdc-collab-dev/pr-edit-json-file.md)
+  - [Git](./osdc-collab-dev/git.md)
+  - [Task: Update Code-Maven articles or these slides](./osdc-collab-dev/task-slides.md)
+  - [Task: Code and Talk](./osdc-collab-dev/code-and-talk.md)
+  - [Task: Awesome for beginners and non-programmers](./osdc-collab-dev/awesome-for-beginners.md)
+  - [Task: Pydigger](./osdc-collab-dev/pydigger.md)
+  - [Testing and CI](./osdc-collab-dev/testing-and-ci.md)
 

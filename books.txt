@@ -1,6 +1,5 @@
 agile/agile.json,agile,
 aws-lambda/aws-lambda.json,aws-lambda,
-collab-dev/collab-dev.json,collab-dev,
 crystal/crystal.json,crystal,
 data-science/data-science.json,data-science,
 dart/dart.json,dart,
