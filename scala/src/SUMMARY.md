@@ -1,0 +1,28 @@
+# Summary
+
+- [Scala](./index.md)
+
+- [Scala](./scala-basics/index.md)
+  - [What is Scala?](./scala-basics/what-is-scala.md)
+  - [Install Scala](./scala-basics/install-scala.md)
+  - [Editors](./scala-basics/scala-editors.md)
+  - [Everything is an object](./scala-basics/everything-is-object-in-scala.md)
+  - [Check if Java is installed](./scala-basics/check-java-version.md)
+  - [Scala in Docker](./scala-basics/scala-in-docker.md)
+  - [REPL](./scala-basics/scala-repl.md)
+  - [Scala Syntax](./scala-basics/scala-syntax.md)
+  - [Hello World in Scala](./scala-basics/hello-world-in-scala.md)
+  - [Run (Shell script)](./scala-basics/run.md)
+  - [Hello Name (command line parameters)](./scala-basics/hello-name.md)
+  - [var vs val](./scala-basics/var-vs-val.md)
+  - [val is immutable](./scala-basics/val-is-immutable.md)
+  - [var is immutable](./scala-basics/var-is-immutable.md)
+  - [Concatenate strings](./scala-basics/concatenate-strings.md)
+  - [Add Numbers (convert string to int)](./scala-basics/add-numbers.md)
+  - [Run with sbt](./scala-basics/run-with-sbt.md)
+  - [Comments](./scala-basics/comments-in-scala.md)
+  - [Scala While loop](./scala-basics/while-loop.md)
+  - [Scala For loop](./scala-basics/for-loop.md)
+  - [Scala show dates](./scala-basics/scala-show-dates.md)
+  - [More](./scala-basics/more.md)
+
