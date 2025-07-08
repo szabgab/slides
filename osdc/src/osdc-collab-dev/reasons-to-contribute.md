@@ -17,7 +17,7 @@ On one end there are people who work at some company that happens to develop an 
 In this case the people working on open source do so because that's what they were told to do. They get paid for their work. In many cases these project have two version control systems and two bug-tracking systems.
 One internal to the company where they might discuss requests from clients and their own priorities. Then there is the public VCS with its public issue-tracker.
 
-You use an open source product, e.g. Firefox, VLC, WordPress, or Moodle. There is a bug that annoys you or a feature you really want to have. On one hand the promise of Open Source is that you can make those changes
+You use an open source product, e.g. Firefox, [VLC](https://www.videolan.org/), [WordPress](https://wordpress.org/), or [Moodle](https://moodle.org/). There is a bug that annoys you or a feature you really want to have. On one hand the promise of Open Source is that you can make those changes
 both technically as you have access to the source code and legally as you have the proper licenses. On the other hand these are large and very complex applications and are probably written in a programming language
 that you are not familiar with.
 
@@ -25,7 +25,7 @@ that you are not familiar with.
 ## Do you need to be a programmer to contribute to open source projects?
 
 A common misconception is that only programmers can contribute to open source project. Being a programmer of course make it possible for you to make changes to the source code of the application,
-but there are tons of other things that need to be done in a project. Especially if it a large, end-user facing project such as Firefox, VLC, Moodle, or mdbook.
+but there are tons of other things that need to be done in a project. Especially if it a large, end-user facing project such as [Firefox](https://www.mozilla.org/), [VLC](https://www.videolan.org/), [Moodle](https://moodle.org/), or [mdbook](https://rust-lang.github.io/mdBook/).
 
 QA - Quality Assurance. There is always a need to help checking the quality of these open source projects.
 
