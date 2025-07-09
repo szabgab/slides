@@ -1,0 +1,5 @@
+# Keyboard shortcuts
+
+* Ctrl + /
+
+
