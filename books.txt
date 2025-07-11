@@ -1,4 +1,3 @@
-aws-lambda/aws-lambda.json,aws-lambda,
 crystal/crystal.json,crystal,
 data-science/data-science.json,data-science,
 dart/dart.json,dart,
