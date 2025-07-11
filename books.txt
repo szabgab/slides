@@ -1,5 +1,4 @@
 crystal/crystal.json,crystal,
-google-gcp/google-gcp.json,google-gcp,
 git/git.json,git,
 git-intro/git-intro.json,git-intro,
 github-ci/github-ci.json,github-ci,
