@@ -42,6 +42,7 @@
   - [Who is this for?](./osdc-collab-dev/who-is-this-for.md)
   - [Why do it?](./osdc-collab-dev/why-is-it-important.md)
   - [Reasons to contribute](./osdc-collab-dev/reasons-to-contribute.md)
+  - [Moodle](./osdc-collab-dev/moodle.md)
   - [Overview: Git - GitHub - Travis-CI](./osdc-collab-dev/overview-pr.md)
   - [Why use a Version Control System - VCS?](./osdc-collab-dev/why-use-vcs.md)
   - [Why Git?](./osdc-collab-dev/why-git.md)
