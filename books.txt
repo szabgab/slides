@@ -1,6 +1,5 @@
 crystal/crystal.json,crystal,
 data-science/data-science.json,data-science,
-dart/dart.json,dart,
 google-gcp/google-gcp.json,google-gcp,
 git/git.json,git,
 git-intro/git-intro.json,git-intro,
