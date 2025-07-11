@@ -23,7 +23,7 @@
   - [By country of origin (or language spoken by the maintainer)](./project/by-country.md)
   - [Type of project](./project/type-of-project.md)
   - [Desktop applications](./project/desktop-applications.md)
-  - [ Web application](./project/web-applications.md)
+  - [Web application](./project/web-applications.md)
   - [JavaScript frameworks](./project/web-frameworks.md)
   - [HTML/CSS frameworks](./project/html-css-frameworks.md)
   - [Databases](./project/databases.md)
@@ -33,6 +33,7 @@
   - [CMS - Content Management System](./project/cms.md)
   - [In the OSDC](./project/in-the-osdc.md)
   - [Other](./project/other.md)
+  - [Entry points](./project/entry-point.md)
 
 
 
@@ -43,6 +44,7 @@
   - [Why do it?](./osdc-collab-dev/why-is-it-important.md)
   - [Reasons to contribute](./osdc-collab-dev/reasons-to-contribute.md)
   - [Moodle](./osdc-collab-dev/moodle.md)
+  - [nmap](./osdc-collab-dev/nmap.md)
   - [Overview: Git - GitHub - Travis-CI](./osdc-collab-dev/overview-pr.md)
   - [Why use a Version Control System - VCS?](./osdc-collab-dev/why-use-vcs.md)
   - [Why Git?](./osdc-collab-dev/why-git.md)
