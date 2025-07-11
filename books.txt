@@ -1,4 +1,3 @@
-agile/agile.json,agile,
 aws-lambda/aws-lambda.json,aws-lambda,
 crystal/crystal.json,crystal,
 data-science/data-science.json,data-science,
