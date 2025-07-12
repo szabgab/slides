@@ -65,4 +65,5 @@
 - [Open Source Projects](./open-source-projects/index.md)
   - [Moodle](./open-source-projects/moodle.md)
   - [nmap](./open-source-projects/nmap.md)
+  - [PyPI](./open-source-projects/pypi.md)
 
