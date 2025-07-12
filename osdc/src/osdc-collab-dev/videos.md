@@ -2,10 +2,10 @@
 
 
 
-The material covered in these slides have also been recorded. You can check out the vides following the links here.
+The material covered in these slides have also been recorded. You can check out the videos following the links here.
 
 
-* [Hebrew](https://he.code-maven.com/collab-dev)
+* [Hebrew](https://git-he.code-maven.com/collab-dev)
 * English - TBD
 
 
