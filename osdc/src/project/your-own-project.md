@@ -18,6 +18,8 @@ Contra: You have to do everything yourself.
 * logo
 * web site for the project
 
+Drawbacks:
+
 * No users.
 * No cooperation from others (at least at the beginning).
 * No community.

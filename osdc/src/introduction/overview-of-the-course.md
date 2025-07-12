@@ -6,17 +6,18 @@
 * Overview of the [Open Source Development Course](https://osdc.code-maven.com/)
 
 * git
-* GitHub - Issues
-* GitHub - Pull Request
-* GitHub - Pages
-* GitHub - Actions
+* GitHub
+    * Issues
+    * Pull Request
+    * Pages
+    * Actions (Workflows)
 * (GitLab)
-* Markdown (journal, issues, etc.)
+* Markdown (blog/journal, issues, etc.)
 * Docker
 * Programming languages: Python, JavaScript
 * (Functional) Testing
 * Static analysis
 * Communication
-* Slack
+    * Slack
 
 

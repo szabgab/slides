@@ -9,6 +9,6 @@
 
 * Show the Git repository of the project and the web site generated from it.
 
-* https://kantoniko.com/
+* [Kantoniko](https://kantoniko.com/)
 
 

@@ -16,8 +16,8 @@
   - [Your own project](./project/your-own-project.md)
   - [A well-known project](./project/a-well-known-project.md)
   - [A brand new project](./project/a-brand-new-project.md)
-  - [A project that is missing something](./project/low-hanging-fruits.md)
   - [Something that you use](./project/a-project-that-you-use.md)
+  - [A project that is missing something](./project/low-hanging-fruits.md)
   - [A project by an organization](./project/projects-by-organizations.md)
   - [Awesome lists](./project/awesome-lists.md)
   - [By country of origin (or language spoken by the maintainer)](./project/by-country.md)
@@ -43,8 +43,6 @@
   - [Who is this for?](./osdc-collab-dev/who-is-this-for.md)
   - [Why do it?](./osdc-collab-dev/why-is-it-important.md)
   - [Reasons to contribute](./osdc-collab-dev/reasons-to-contribute.md)
-  - [Moodle](./osdc-collab-dev/moodle.md)
-  - [nmap](./osdc-collab-dev/nmap.md)
   - [Overview: Git - GitHub - Travis-CI](./osdc-collab-dev/overview-pr.md)
   - [Why use a Version Control System - VCS?](./osdc-collab-dev/why-use-vcs.md)
   - [Why Git?](./osdc-collab-dev/why-git.md)
@@ -63,4 +61,8 @@
   - [Task: Awesome for beginners and non-programmers](./osdc-collab-dev/awesome-for-beginners.md)
   - [Task: Pydigger](./osdc-collab-dev/pydigger.md)
   - [Testing and CI](./osdc-collab-dev/testing-and-ci.md)
+
+- [Projects](./projects/index.md)
+  - [Moodle](./osdc-collab-dev/moodle.md)
+  - [nmap](./osdc-collab-dev/nmap.md)
 
