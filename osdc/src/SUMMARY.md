@@ -62,7 +62,7 @@
   - [Task: Pydigger](./osdc-collab-dev/pydigger.md)
   - [Testing and CI](./osdc-collab-dev/testing-and-ci.md)
 
-- [Projects](./projects/index.md)
-  - [Moodle](./osdc-collab-dev/moodle.md)
-  - [nmap](./osdc-collab-dev/nmap.md)
+- [Open Source Projects](./open-source-projects/index.md)
+  - [Moodle](./open-source-projects/moodle.md)
+  - [nmap](./open-source-projects/nmap.md)
 
