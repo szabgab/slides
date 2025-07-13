@@ -1,0 +1,32 @@
+# Summary
+
+- [Ladino](./index.md)
+
+- [Ladino](./ladino/index.md)
+  - [The dictionary](./ladino/the-dictionary.md)
+  - [About Ladino](./ladino/about-ladino.md)
+  - [Origin of Ladino](./ladino/origin-of-ladino.md)
+  - [Expulsion of Sefardic Jews](./ladino/expulsion-of-sefardic-jews.md)
+  - [Writing system](./ladino/writing-system.md)
+  - [Who am I and how I learned Ladino](./ladino/who-am-i.md)
+  - [Goals](./ladino/goals.md)
+  - [My site about Ladino](./ladino/site-about-ladino.md)
+  - [LibreLingo](./ladino/libre-lingo.md)
+  - [LibreTranslate](./ladino/libre-translate.md)
+  - [Ladino communities](./ladino/ladino-communities.md)
+  - [Ladino academy](./ladino/ladino-academy.md)
+  - [Existing Ladino dictionaries](./ladino/ladino-dictionaries.md)
+  - [The dictionary](./ladino/the-online-dictionary.md)
+  - [Quick overview of the technology](./ladino/quick-overview.md)
+  - [The source of the dictionary](./ladino/source-of-the-dictionary.md)
+  - [YAML representation](./ladino/yaml-representation.md)
+  - [config.yaml](./ladino/config-yaml.md)
+  - [Processing in Python](./ladino/processing-in-python.md)
+  - [CI/CD](./ladino/ci-cd.md)
+  - [Front-end](./ladino/front-end.md)
+  - [Tests for the code](./ladino/tests-for-the-code.md)
+  - [Issues to handle](./ladino/issues-to-handle.md)
+  - [Questions](./ladino/question.md)
+  - [QA session](./ladino/qa-session.md)
+
+
