@@ -1,6 +1,5 @@
 crystal/crystal.json,crystal,
 git/git.json,git,
-git-intro/git-intro.json,git-intro,
 github-ci/github-ci.json,github-ci,
 golang/golang.json,golang,
 javascript/javascript.json,javascript,

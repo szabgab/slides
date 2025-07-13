@@ -1,0 +1,6 @@
+# blame
+
+* git blame [filename]
+
+
+
