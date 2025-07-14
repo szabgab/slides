@@ -182,12 +182,12 @@ instead of the ones that were unique in the original list.
 A subroutine that generates subroutines based on some input values.
 ```
 
-![](examples/references/incrementer.pl)
-![](examples/references/incrementer-generator.pl)
+![](examples/functional/incrementer.pl)
+![](examples/functional/incrementer-generator.pl)
 
 Output:
 
-![](examples/references/incrementer-generator.out)
+![](examples/functional/incrementer-generator.out)
 
 
 ![](examples/functional/Transformers.pm)
