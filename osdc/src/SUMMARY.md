@@ -15,7 +15,7 @@
 - [Which open source project to work on?](./project/index.md)
   - [Your own project](./project/your-own-project.md)
   - [A well-known project](./project/a-well-known-project.md)
-  - [A brand new project](./project/a-brand-new-project.md)
+  - [Join a brand new project](./project/a-brand-new-project.md)
   - [Something that you use](./project/a-project-that-you-use.md)
   - [A project that is missing something](./project/low-hanging-fruits.md)
   - [A project by an organization](./project/projects-by-organizations.md)
