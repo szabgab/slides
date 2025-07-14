@@ -12,12 +12,6 @@
   - [Cloud-based CI system](./github-ci/introduction/cloud-based-ci.md)
   - [Exercises](./github-ci/introduction/exercises.md)
 
-- [Travis-CI](./github-ci/travis-ci/index.md)
-  - [Enable Travis-CI](./github-ci/travis-ci/enable-travis-ci.md)
-  - [Travis Examples: simple verification](./github-ci/travis-ci/travis-examples-1.md)
-  - [Travis Examples: several keys](./github-ci/travis-ci/travis-examples-2.md)
-
-
 - [Appveyor](./github-ci/appveyor/index.md)
   - [About Appveyor](./github-ci/appveyor/about-appveyor.md)
   - [Appveyor Example](./github-ci/appveyor/appveyor-example.md)

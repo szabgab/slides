@@ -49,4 +49,10 @@
 
 
 
+- [Travis-CI](./github-ci/travis-ci/index.md)
+  - [Enable Travis-CI](./github-ci/travis-ci/enable-travis-ci.md)
+  - [Travis Examples: simple verification](./github-ci/travis-ci/travis-examples-1.md)
+  - [Travis Examples: several keys](./github-ci/travis-ci/travis-examples-2.md)
+
+
 
