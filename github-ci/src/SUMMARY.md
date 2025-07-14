@@ -12,10 +12,6 @@
   - [Cloud-based CI system](./github-ci/introduction/cloud-based-ci.md)
   - [Exercises](./github-ci/introduction/exercises.md)
 
-- [Appveyor](./github-ci/appveyor/index.md)
-  - [About Appveyor](./github-ci/appveyor/about-appveyor.md)
-  - [Appveyor Example](./github-ci/appveyor/appveyor-example.md)
-
 - [Coveralls](./github-ci/coveralls/index.md)
   - [About Coveralls](./github-ci/coveralls/about-coveralls.md)
 
