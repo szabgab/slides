@@ -1,21 +1,5 @@
-# Appveyor
-{id: appveyor}
+# Appveyor Example
 
-
-## About Appveyor
-{id: about-appveyor}
-
-* Windows
-* Now Linux as well
-
-* Register at [Appveyor](https://www.appveyor.com/)
-* Connect your GitHub account
-* Enable the repository
-* Create the `appveyor.yml` or `.appveyor.yml` file
-* Push it out
-
-## Appveyor Example
-{id: appveyor-example}
 
 * [codeandtalk](https://github.com/szabgab/codeandtalk.com/)
 
