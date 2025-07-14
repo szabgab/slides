@@ -45,7 +45,6 @@
 
         "parallel.md",
 
-        "database.md",
         "dbi-intro.md",
         "dbi.md",
         "dbix-class.md",

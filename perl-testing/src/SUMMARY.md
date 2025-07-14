@@ -327,3 +327,15 @@
   - [Devices connected to Serial or Parallel port](./testing-network/serial-port-parallel-port.md)
   - [X10 protocol](./testing-network/x10-protocol.md)
 
+- [Database Testing](./perl/database-testing/index.md)
+  - [Database testing](./perl/database-testing/manual-database-testing.md)
+  - [A couple of tools](./perl/database-testing/db-testing-tools.md)
+  - [Test::More and DBI](./perl/database-testing/db-testing-test-more-and-dbi.md)
+  - [Test::DatabaseRow](./perl/database-testing/db-testing-test-database-row.md)
+  - [Test::DatabaseRow fail](./perl/database-testing/db-testing-test-database-row-fail.md)
+  - [Test::DatabaseRow tests more than one row](./perl/database-testing/db-testing-more-than-one-row.md)
+  - [Test::DatabaseRow tests more than one row - failure](./perl/database-testing/db-testing-more-than-one-row-fail.md)
+  - [Test::DatabaseRow without SQL](./perl/database-testing/db-testing-without-sql.md)
+
+
+
