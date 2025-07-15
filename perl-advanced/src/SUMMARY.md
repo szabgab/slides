@@ -183,6 +183,32 @@
   - [Solution](./perl/error-handling/perl5-solution-exceptions-not-number.md)
   - [Solution](./perl/error-handling/perl5-solution-exceptions-bad-number.md)
 
+- [Introduction to Moose](./perl/moose/index.md)
+  - [Moose Constructor](./perl/moose/moose-person-00.md)
+  - [Test Moose Constructor](./perl/moose/test-moose-person-00.md)
+  - [Moose Attribute](./perl/moose/moose-person-01.md)
+  - [Test Moose Attribute](./perl/moose/test-moose-person-01.md)
+  - [Moose Attribute Type](./perl/moose/moose-person-02.md)
+  - [Test Moose Attribute Type](./perl/moose/test-moose-person-02.md)
+  - [Moose Attribute Type class](./perl/moose/moose-person-03.md)
+  - [Test Moose Attribute Type class](./perl/moose/test-moose-person-03.md)
+  - [Moose Attribute - create your own subtype](./perl/moose/moose-person-04.md)
+  - [Test Moose Attribute - create your own subtype](./perl/moose/test-moose-person-04.md)
+  - [Moose Attribute - coercion](./perl/moose/moose-person-05.md)
+  - [Test Moose Attribute - coercion](./perl/moose/test-moose-person-05.md)
+  - [Moose Enumeration](./perl/moose/moose-enumeration.md)
+  - [Moose Attributes Overview](./perl/moose/moose-attributes.md)
+  - [Inheritance](./perl/moose/moose-inheritance.md)
+  - [Testing Inheritance](./perl/moose/moose-inheritance-test.md)
+  - [MooseX::StrictConstructor](./perl/moose/moose-strict-attributes.md)
+  - [Testing Strict attributes](./perl/moose/moose-strict-attributes-test.md)
+  - [Encapsulation](./perl/moose/moose-encapsulation.md)
+  - [Class data](./perl/moose/moose-class-data.md)
+  - [Special actions during object construction](./perl/moose/moose-special-constructions.md)
+  - [Singleton in Moose](./perl/moose/moose-singleton.md)
+  - [Destructor in Moose](./perl/moose/moose-destructor.md)
+
+
 
 
 
