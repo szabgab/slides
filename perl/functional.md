@@ -38,19 +38,19 @@ Note, there is no comma after the curly braces.
 ```
 ARRAY = grep BLOCK LIST
 ```
-![](examples/advanced-perl/grep_perl.pl)
+![](examples/functional/grep_perl.pl)
 
 ## grep to filter files based on modification date
 {id: grep-to-filter-files}
 {i: grep}
 
-![](examples/advanced-perl/grep_files.pl)
+![](examples/functional/grep_files.pl)
 
 ## Imitating the Unix/Linux grep command in Perl
 {id: imitating-the-unix-grep-command}
 {i: grep}
 
-![](examples/advanced-perl/unix_grep.pl)
+![](examples/functional/unix_grep.pl)
 
 
 ## map
@@ -71,7 +71,7 @@ that collects all the responses.
 ```
 ARRAY = map BLOCK LIST
 ```
-![](examples/advanced-perl/map_perl.pl)
+![](examples/functional/map_perl.pl)
 
 
 ## Use map to filter values
@@ -82,17 +82,17 @@ I am not sure why would you do this instead of using `grep`, but you can do this
 more usefule example.
 {/aside}
 
-![](examples/advanced-perl/map_to_filter.pl)
+![](examples/functional/map_to_filter.pl)
 
 ## Map to add more elements
 {id: map-to-add-more-elements}
 
-![](examples/advanced-perl/map_to_duplicate.pl)
+![](examples/functional/map_to_duplicate.pl)
 
 ## Use map to filter and enrich
 {id: map-to-filter-and-enrich}
 
-![](examples/advanced-perl/map_filter_and_enrich.pl)
+![](examples/functional/map_filter_and_enrich.pl)
 
 ## Create a hash from an array using map
 {id: map-create-hash}
@@ -115,7 +115,7 @@ If we need a lot of look-ups and there are many elements in the original array t
 We use more memory but we can gain speed.
 {/aside}
 
-![](examples/advanced-perl/map_create_hash.pl)
+![](examples/functional/map_create_hash.pl)
 
 
 ## Unique values

@@ -83,4 +83,48 @@
   - [Graceful termination of process](./perl/processes/graceful-termination-of-process.md)
 
 
+- [Advanced slides](./perl/advanced-perl/index.md)
+  - [Always use strict and warnings](./perl/advanced-perl/use-strict-and-warninigs.md)
+  - [Avoid warnings](./perl/advanced-perl/avoid-warnings.md)
+  - [Turn off warnings selectively and in a small scope](./perl/advanced-perl/no-warnings.md)
+  - [Catch and log warnings](./perl/advanced-perl/catch-warning.md)
+  - [splain and use diagnostics](./perl/advanced-perl/use-diagnostics.md)
+  - [Fatal warnings](./perl/advanced-perl/fatal-warnings.md)
+  - [Logging Exceptions](./perl/advanced-perl/logging-exceptions.md)
+  - [Always open files in the new way](./perl/advanced-perl/open-with-3-parameters.md)
+  - [Array slices](./perl/advanced-perl/array-slices.md)
+  - [Array slices on the fly](./perl/advanced-perl/array-slices-on-the-fly.md)
+  - [Hash slices](./perl/advanced-perl/hash-slices.md)
+  - [Hash slices in assignment](./perl/advanced-perl/hash-slice-in-assignment.md)
+  - [splice](./perl/advanced-perl/splice.md)
+  - [LIST and SCALAR context](./perl/advanced-perl/localtime-in-context.md)
+  - [wantarray](./perl/advanced-perl/wantarray.md)
+  - [wantarray example](./perl/advanced-perl/count-and-sum.md)
+  - [Slow sorting](./perl/advanced-perl/slow-sort.md)
+  - [Speed up sorting](./perl/advanced-perl/speed-up-sorting.md)
+  - [Schwartzian transformation](./perl/advanced-perl/schwartzian-transformation.md)
+  - [Compilation phases: BEGIN, CHECK, INIT, END](./perl/advanced-perl/perl-phases-begin-check-init-end.md)
+  - [AUTOLOAD](./perl/advanced-perl/autoload-in-perl5.m)
+  - [Static variable](./perl/advanced-perl/static-variable.md)
+  - [Exercise: create counter](./perl/advanced-perl/exercise-create-counter.md)
+  - [Solution: create counter](./perl/advanced-perl/solution-create-counter.md)
+  - [Saved variable: local](./perl/advanced-perl/local-in-perl5.md)
+  - [autodie](./perl/advanced-perl/autodie.md)
+  - [Modern::Perl](./perl/advanced-perl/modern-perl.md)
+  - [Perl::Critic](./perl/advanced-perl/perl-critic.md)
+  - [Perl::Tidy](./perl/advanced-perl/perl-tidy.md)
+  - [caller](./perl/advanced-perl/caller.md)
+  - [Log::Dispatch](./perl/advanced-perl/log-dispatch.md)
+  - [Log::Log4perl easy](./perl/advanced-perl/log4perl-easy.md)
+  - [Exercise: Log::Dispatch](./perl/advanced-perl/exercise-log-dispatch.md)
+  - [Solution Log::Dispatch](./perl/advanced-perl/solution-log-dispatch.md)
+
+
+
+
+
+
+
+
+
 
