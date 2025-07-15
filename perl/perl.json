@@ -25,11 +25,8 @@
         "xml.md",
         "html-parser.md",
         "appendix.md",
-
         "files-more.md",
-        "ipc.md",
-        "prima.md",
-        "wxperl.md",
+
         "win32.md",
         "psgi.md",
         "testing-demo.md",

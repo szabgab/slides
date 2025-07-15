@@ -1,12 +1,4 @@
-# Running subprocess
-{id: ipc}
-
-
-
-
-
-## Possibilities
-{id: ipc-possibilities}
+# Possibilities
 
 * system
 * qx, backticks
@@ -20,9 +12,6 @@
 
 
 See the documentation of IPC::Run3 for a comparison
-
-
-
 
 
 

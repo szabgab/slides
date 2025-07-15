@@ -208,8 +208,14 @@
   - [Singleton in Moose](./perl/moose/moose-singleton.md)
   - [Destructor in Moose](./perl/moose/moose-destructor.md)
 
+- [Running subprocess](./perl/ipc/index.md)
+  - [Possibilities](./perl/ipc/ipc-possibilities.md)
 
+- [Prima](./perl/prima/index.md)
+  - [Prima Hello World](./perl/prima/prima-hello-world.md)
 
+- [wxPerl - wxWidgets for Perl](./perl/wxperl/index.md)
+  - [wxPerl - Hello World](./perl/wxperl/wxperl-hello-world.md)
 
 
 
