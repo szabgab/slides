@@ -283,4 +283,9 @@
   - [Debugging (Trace levels)](./perl/dbi/dbi-debugging.md)
 
 
+- [Database access using DBIx::Class](./perl/dbix-class/index.md)
+  - [DBIx::Class](./perl/dbix-class/dbix-class.md)
+  - [Create Sample Database](./perl/dbix-class/dbix-class-create-sample-database.md)
+
+
 
