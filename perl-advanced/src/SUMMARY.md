@@ -292,4 +292,26 @@
   - [Accessing Google](./perl/win32-ie/win32-ie-mechanize-google.md)
   - [Examples](./perl/win32-ie/win32-ie-mechanize-examples.md)
 
+- [X-Windows](./perl/x-windows/index.md)
+  - [X11](./perl/x-windows/x11.md)
+  - [X11 Tools](./perl/x-windows/x11-tools.md)
+  - [X11::GUITest](./perl/x-windows/x11-guitest.md)
+  - [LDTP - Linux Desktop Testing Project](./perl/x-windows/ldtp.md)
+  - [Manual steps](./perl/x-windows/x11-manual-steps.md)
+  - [X11: Launch the application](./perl/x-windows/x11-launch-application.md)
+  - [Let's see the coordinates](./perl/x-windows/x11-coordinates.md)
+  - [Where is this top left corner ?](./perl/x-windows/x11-top-left-corner.md)
+  - [And let's see the rest of the coordinates](./perl/x-windows/x11-coordinates-more.md)
+  - [Smooth on the edges](./perl/x-windows/x11-smooth-edges.md)
+  - [Closing the window](./perl/x-windows/x11-closing-window.md)
+  - [Placing the cursor on one of the buttons and clicking on it](./perl/x-windows/x11-moving-the-mouse.md)
+  - [So let's do all the calculations](./perl/x-windows/x11-calculations.md)
+  - [Fetch the list of Child Windows](./perl/x-windows/x11-child-windows.md)
+  - [Locate the Child Windows](./perl/x-windows/x11-locate-child-windows.md)
+  - [Using the keyboard](./perl/x-windows/x11-using-the-keyboard.md)
+  - [Separate the keystrokes](./perl/x-windows/x11-separate-keystrokes.md)
+  - [Full solution for xcalc](./perl/x-windows/x11-xcals.md)
+
+
+
 
