@@ -261,3 +261,26 @@
   - [MCE - map with init](./perl/parallel/mce-map-with-init.md)
   - [other modules](./perl/parallel/other-modules-for-forking.md)
 
+
+- [Database access using Perl DBI](./perl/dbi-intro/index.md)
+  - [Architecture of a DBI Application](./perl/dbi-intro/dbi-architecture.md)
+  - [Create Sample Database](./perl/dbi-intro/dbi-create-sample-database.md)
+  - [Connect to database](./perl/dbi-intro/dbi-connect-to-database.md)
+  - [SELECT with one result](./perl/dbi-intro/dbi-select-with-one-result.md)
+  - [SELECT with more results](./perl/dbi-intro/dbi-select-with-more-results.md)
+  - [SELECT, prepare with placeholders](./perl/dbi-intro/dbi-select-prepare-with-placeholders.md)
+  - [SELECT, using hashref](./perl/dbi-intro/dbi-select-using-hashref.md)
+  - [INSERT](./perl/dbi-intro/dbi-insert.md)
+  - [UPDATE](./perl/dbi-intro/dbi-update.md)
+
+- [Advanced Database access using Perl DBI](./perl/dbi/index.md)
+  - [Data integrity](./perl/dbi/dbi-data-integrity.md)
+  - [Transactions](./perl/dbi/dbi-transaction.md)
+  - [Sample database creation](./perl/dbi/dbi-sample-database.md)
+  - [Disconnect from the database](./perl/dbi/dbi-disconnect.md)
+  - [Attributes](./perl/dbi/dbi-attributes.md)
+  - [Error handling](./perl/dbi/dbi-error-handling.md)
+  - [Debugging (Trace levels)](./perl/dbi/dbi-debugging.md)
+
+
+
