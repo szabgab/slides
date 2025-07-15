@@ -287,5 +287,9 @@
   - [DBIx::Class](./perl/dbix-class/dbix-class.md)
   - [Create Sample Database](./perl/dbix-class/dbix-class-create-sample-database.md)
 
+- [Internet Explorer](./perl/win32-ie/index.md)
+  - [Win32::IE::Mechanize](./perl/win32-ie/win32-ie-mechanize.md)
+  - [Accessing Google](./perl/win32-ie/win32-ie-mechanize-google.md)
+  - [Examples](./perl/win32-ie/win32-ie-mechanize-examples.md)
 
 
