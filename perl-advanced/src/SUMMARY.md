@@ -217,7 +217,11 @@
 - [wxPerl - wxWidgets for Perl](./perl/wxperl/index.md)
   - [wxPerl - Hello World](./perl/wxperl/wxperl-hello-world.md)
 
+- [Microsoft Windows](./perl/win32/index.md)
+  - [Win32 examples](./perl/win32/win32-examples.md)
 
 
+- [PSGI](./perl/psgi/index.md)
+  - [PSGI Cookbook](./perl/psgi/psg-cookbook.md)
 
 
