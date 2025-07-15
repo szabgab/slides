@@ -75,5 +75,12 @@
   - [Resources](./perl/references/references-resources.md)
 
 
+- [Processes and signals](./perl/processes/process-and-signals.md)
+  - [Signals and the kill function](./perl/processes/signal-handlers.md)
+  - [Catch signals](./perl/processes/catch-signals.md)
+  - [Exercise: Catch ctrl-c and ask continue or terminate?](./perl/processes/exercise-catch-ctrl-c.md)
+  - [Solution: Catch ctrl-c and ask](./perl/processes/solution-catch-ctrl-c.md)
+  - [Graceful termination of process](./perl/processes/graceful-termination-of-process.md)
+
 
 
