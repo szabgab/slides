@@ -170,6 +170,22 @@
   - [Overview](./perl/modules/perl-modules-overview.md)
 
 
+- [Error Handling](./perl/error-handling/index.md)
+  - [Returning error status or throwing exception?](./perl/error-handling/perl5-returning-error-status.md)
+  - [eval block](./perl/error-handling/perl5-eval-block.md)
+  - [Exception handling with Try::Tiny](./perl/error-handling/perl5-try-tiny.md)
+  - [Carp](./perl/error-handling/perl5-carp.md)
+  - [Carp::Clan](./perl/error-handling/perl5-carp-clan.md)
+  - [The problem with die and croak](./perl/error-handling/perl5-the-problem-with-die-and-croak.md)
+  - [Exception::Class](./perl/error-handling/perl5-exception-class.md)
+  - [Processing exceptions](./perl/error-handling/perl5-exception-class-processing-exceptions.md)
+  - [Exercise](./perl/error-handling/perl5-exercise-exceptions.md)
+  - [Solution](./perl/error-handling/perl5-solution-exceptions-not-number.md)
+  - [Solution](./perl/error-handling/perl5-solution-exceptions-bad-number.md)
+
+
+
+
 
 
 
