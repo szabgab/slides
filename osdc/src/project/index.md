@@ -8,6 +8,9 @@
 ---
 
 * To "show off"? Probably won't work. Find the passion!
+* To learn a new language or technique.
+* To learn the social interaction.
+* To "give back" to the world.
 
 ---
 
