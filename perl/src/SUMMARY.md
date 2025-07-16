@@ -329,4 +329,9 @@
   - [Solution: Create multiple counters](./perl/files-more/solution-create-multiple-counter.md)
   - [Solutions: List old logfiles](./perl/files-more/solution-list-old-logfiles.md)
 
+- [Testing Demo for Perl](./perl/testing-demo/index.md)
+  - [Testing Demo AUT](./perl/testing-demo/testing-demo-aut.md)
+  - [Testing Demo using Test::More (success)](./perl/testing-demo/testing-demo-using-test-more-success.md)
+  - [Testing Demo using Test::More (failure)](./perl/testing-demo/testing-demo-using-test-more-failure.md)
+  - [Testing Demo - Test coverage report](./perl/testing-demo/testing-demo-test-coverage-report.md)
 
