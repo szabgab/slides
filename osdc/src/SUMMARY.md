@@ -19,6 +19,7 @@
   - [Something that you use](./project/a-project-that-you-use.md)
   - [A project that is missing something](./project/low-hanging-fruits.md)
   - [A project by an organization](./project/projects-by-organizations.md)
+  - [Good first issues](./project/good-first-issues.md)
   - [Awesome lists](./project/awesome-lists.md)
   - [By country of origin (or language spoken by the maintainer)](./project/by-country.md)
   - [Type of project](./project/type-of-project.md)

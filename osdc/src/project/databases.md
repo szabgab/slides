@@ -2,7 +2,7 @@
 
 
 * [SQLite](https://www.sqlite.org/)
-* [PostgreSQ:](https://www.postgresql.org/) - [Test fram](https://buildfarm.postgresql.org/)
+* [PostgreSQL](https://www.postgresql.org/) - [Test farm](https://buildfarm.postgresql.org/)
 * [MySQL](https://www.mysql.com/)
 * [MariaDB](https://mariadb.org/)
 * ...
