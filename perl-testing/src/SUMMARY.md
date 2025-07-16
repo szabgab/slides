@@ -359,3 +359,14 @@
   - [Installing Win32::GuiTest](./perl/win32-gui/download-win32-guitest.md)
   - [Tools](./perl/win32-gui/win32-tools.md)
 
+- [Appendixes](./perl/testing-appendix/index.md)
+  - [Test related CPAN Modules](./perl/testing-appendix/test-related-cpan-modules.md)
+  - [Generic modules](./perl/testing-appendix/generic-cpan-modules.md)
+  - [Web testing](./perl/testing-appendix/cpan-modules-for-web-testing.md)
+  - [GUI testing](./perl/testing-appendix/cpan-modules-for-gui-testing.md)
+  - [Other sources of information](./perl/testing-appendix/other-sources-of-information.md)
+  - [Test Realistically](./perl/testing-appendix/test-realistically.md)
+  - [Test Unrealistically](./perl/testing-appendix/test-unrealistically.md)
+  - [File System testing](./perl/testing-appendix/manual-filesystem-testing.md)
+
+
