@@ -247,4 +247,22 @@
   - [Solution: Module installation](./perl/using-modules/solution-module-installation.md)
   - [Solution: Read Excel file](./perl/using-modules/solution-parse-excel-file.md)
 
+- [Applications](./perl/applications/index.md)
+  - [Simple uses of Perl](./perl/applications/simple-uses-of-perl.md)
+  - [Create Unix user account](./perl/applications/create-unix-user.md)
+  - [Reporting file system diskspace usage (df)](./perl/applications/available-diskspace.md)
+  - [Reporting diskspace usage on the mail server](./perl/applications/mailserver-diskspace-usage.md)
+  - [A du like script](./perl/applications/disk-usage.md)
+  - [Send files by e-mail](./perl/applications/send-files.md)
+  - [Read Excel file](./perl/applications/read-excel-file.md)
+  - [Process file with fixed width records](./perl/applications/fixed-width-record.md)
+  - [Process file with multiline records](./perl/applications/multiline-records.md)
+  - [Process multi field csv file](./perl/applications/process-multi-field-csv-file.md)
+  - [Fetch web page](./perl/applications/fetch-web-pages.md)
+  - [Generate web page](./perl/applications/generate-web-pages.md)
+  - [Parse XML file](./perl/applications/parse-xml.md)
+  - [Database access using DBI and DBD::SQLite](./perl/applications/database-using-dbi.md)
+  - [Net::LDAP](./perl/applications/net-ldap.md)
+  - [Tie::File](./perl/applications/tie-file.md)
+
 
