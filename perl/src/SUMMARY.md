@@ -171,6 +171,27 @@
   - [Exercise: Number guessing in sub](./perl/subroutines/exercise-number-guessing-in-sub.md)
   - [Solution: Number guessing in sub](./perl/subroutines/solution-number-guessing-in-sub.md)
 
+- [Hashes](./perl/hashes/index.md)
+  - [What is a hash?](./perl/hashes/what-is-a-hash.md)
+  - [Uses of hashes](./perl/hashes/uses-of-hashes.md)
+  - [Creating hashes](./perl/hashes/creating-hashes.md)
+  - [Create hash from an array](./perl/hashes/create-hash-from-array.md)
+  - [Hash in scalar context](./perl/hashes/hash-in-scalar-context.md)
+  - [Fetching data from hash](./perl/hashes/fetching-data-from-hash.md)
+  - [exists, delete hash element](./perl/hashes/hash-exists-delete.md)
+  - [Multi dimensional hashes](./perl/hashes/multi-dimensional-hash.md)
+  - [Count words](./perl/hashes/count-words.md)
+  - [Exercise: Parse HTTP values](./perl/hashes/exercise-parse-http-values.md)
+  - [Exercise: Improve the color selector](./perl/hashes/exercise-improve-color-selector.md)
+  - [Exercise: Display scores](./perl/hashes/exercise-display-scores.md)
+  - [Exercise: Analyze Apache log file](./perl/hashes/exercise-analyze-apache-hash.md)
+  - [Exercise: Parse variable width fields](./perl/hashes/exercise-parse-variable-width-fields.md)
+  - [Solution: Parse HTTP values](./perl/hashes/solution-parse-http-values.md)
+  - [Solution: Improve the color selector](./perl/hashes/solution-improve-color-selector.md)
+  - [Solution: Display scores](./perl/hashes/solution-display-scores.md)
+  - [Solution: Analyze Apache log file](./perl/hashes/solution-analyze-apache-hash.md)
+  - [Solution: Parse variable width fields](./perl/hashes/solution-parse-variable-width-fields.md)
+
 
 
 
