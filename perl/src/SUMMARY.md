@@ -218,11 +218,33 @@
   - [Solution: CPU load](./perl/shell/solution-cpu-load.md)
   - [Solution: MANIFEST file](./perl/shell/solution-manifest.md)
 
-
-
-
-
-
-
+- [Using Perl modules, using CPAN](./perl/using-modules/index.md)
+  - [Using modules exporting functions](./perl/using-modules/using-modules-exporting-functions.md)
+  - [Using Object Oriented modules](./perl/using-modules/using-object-oriented-modules.md)
+  - [Selecting Module to use](./perl/using-modules/selecting-modules-to-use.md)
+  - [Some interesting CPAN Modules: DateTime](./perl/using-modules/cpan-modules-datetime.md)
+  - [Days passed](./perl/using-modules/datetime-days-passed.md)
+  - [Some interesting CPAN Modules: Databases](./perl/using-modules/cpan-modules-databases.md)
+  - [Some interesting CPAN Modules: Web](./perl/using-modules/cpan-modules-web.md)
+  - [Some interesting CPAN Modules: common file format](./perl/using-modules/cpan-modules-common-file-format.md)
+  - [Some interesting CPAN Modules](./perl/using-modules/cpan-modules.md)
+  - [Installing modules](./perl/using-modules/installing-cpan-modules.md)
+  - [Installing modules from the os vendor](./perl/using-modules/installing-module-from-os-vendor.md)
+  - [Using CPAN.pm](./perl/using-modules/using-cpan-pm.md)
+  - [Configure CPAN.pm](./perl/using-modules/configure-cpan-pm.md)
+  - [Installing modules manually](./perl/using-modules/installing-modules-manually.md)
+  - [Installing modules manually using Build.PL](./perl/using-modules/installing-modules-manually-build-pl.md)
+  - [On Windows](./perl/using-modules/on-windows.md)
+  - [Changing @INC](./perl/using-modules/changing-inc.md)
+  - [Changing @INC - Relative PATH](./perl/using-modules/changing-inc-relative-path.md)
+  - [local::lib](./perl/using-modules/local-lib.md)
+  - [CPAN.pm](./perl/using-modules/cpan-pm-configuration.md)
+  - [Installing modules on ActivePerl](./perl/using-modules/installing-modules-on-activeperl.md)
+  - [CPAN::Reporter](./perl/using-modules/cpan-reporter.md)
+  - [Exercise: setup local::lib](./perl/using-modules/exercise-setup-local-lib.md)
+  - [Exercise: Module installation](./perl/using-modules/exercise-module-installation.md)
+  - [Exercise: Read Excel file](./perl/using-modules/exercise-read-excel-file.md)
+  - [Solution: Module installation](./perl/using-modules/solution-module-installation.md)
+  - [Solution: Read Excel file](./perl/using-modules/solution-parse-excel-file.md)
 
 
