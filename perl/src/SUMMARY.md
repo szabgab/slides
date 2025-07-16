@@ -193,5 +193,36 @@
   - [Solution: Parse variable width fields](./perl/hashes/solution-parse-variable-width-fields.md)
 
 
+- [Shell to Perl](./perl/shell/index.md)
+  - [Shell and Perl intro](./perl/shell/shell-and-perl-intro.md)
+  - [File test or -X operators](./perl/shell/file-test.md)
+  - [Running External Programs](./perl/shell/running-external-programs.md)
+  - [Open pipe for reading](./perl/shell/perl-open-pipe-for-reading.md)
+  - [Open pipe for writing](./perl/shell/perl-open-pipe-for-writing.md)
+  - [Pager](./perl/shell/command-line-pager.md)
+  - [sendmail.pl](./perl/shell/sendmail-with-perl.md)
+  - [UNIX commands from the inside](./perl/shell/unix-commands-in-perl.md)
+  - [File globbing (wildcards)](./perl/shell/file-globbing.md)
+  - [Rename files](./perl/shell/rename-files.md)
+  - [Directory handles](./perl/shell/directory-handles.md)
+  - [File::HomeDir](./perl/shell/file-homedir.md)
+  - [More UNIX commands implemented in modules](./perl/shell/more-unix-commands-in-perl.md)
+  - [File::Spec](./perl/shell/more-file-modules.md)
+  - [Change Copyright text in every source file in a directory hierarchy](./perl/shell/file-find.md)
+  - [Exercise: Tree](./perl/shell/exercise-tree.md)
+  - [Exercise: Check for UID 0](./perl/shell/exercise-check-for-uid-0.md)
+  - [Exercise: CPU load](./perl/shell/exercise-cpu-load.md)
+  - [Exercise: MANIFEST file](./perl/shell/exercise-manifest.md)
+  - [Solutions: Tree](./perl/shell/solution-tree.md)
+  - [Solutions: Check for UID 0](./perl/shell/solution-check-for-uid-0.md)
+  - [Solution: CPU load](./perl/shell/solution-cpu-load.md)
+  - [Solution: MANIFEST file](./perl/shell/solution-manifest.md)
+
+
+
+
+
+
+
 
 
