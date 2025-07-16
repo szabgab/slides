@@ -321,6 +321,12 @@
   - [Resources, How to get support for Perl ?](./perl/appendix/resources.md)
   - [Recommended Books](./perl/appendix/books.md)
 
-
+- [More about files](./perl/files-more/index.md)
+  - [Exercise: Create a counter](./perl/files-more/exercise-create-counter2.md)
+  - [Exercise: Create multiple counters](./perl/files-more/exercise-create-multiple-counter.md)
+  - [Exercises: List old logfiles](./perl/files-more/exercise-list-old-logfiles.md)
+  - [Solution: Create a counter](./perl/files-more/solution-create-counter2.md)
+  - [Solution: Create multiple counters](./perl/files-more/solution-create-multiple-counter.md)
+  - [Solutions: List old logfiles](./perl/files-more/solution-list-old-logfiles.md)
 
 
