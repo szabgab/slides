@@ -317,9 +317,9 @@
   - [HTML::Encode](./perl/html-parser/html-encode.md)
   - [Autoclose](./perl/html-parser/autoclose.md)
 
-
-
-
+- [Appendix](./perl/appendix/index.md)
+  - [Resources, How to get support for Perl ?](./perl/appendix/resources.md)
+  - [Recommended Books](./perl/appendix/books.md)
 
 
 
