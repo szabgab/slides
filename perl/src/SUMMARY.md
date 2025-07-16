@@ -290,10 +290,26 @@
   - [Where is perl installed on your system ?](./perl/extra/where-is-perl-installed.md)
   - [Send e-mail](./perl/extra/send-email.md)
 
-
-
-
-
+- [XML using Perl](./perl/xml/index.md)
+  - [XML sample data](./perl/xml/xml-data.md)
+  - [XML Definitions](./perl/xml/xml-definition.md)
+  - [XML processing modes](./perl/xml/xml-processing-modes.md)
+  - [XML::Simple](./perl/xml/xml-simple.md)
+  - [XML::Simple dumped](./perl/xml/xml-simple-data-dumped.md)
+  - [XML::Simple processing](./perl/xml/xml-simple-process.md)
+  - [XML::Parser](./perl/xml/xml-parser.md)
+  - [XML::Parser tree](./perl/xml/xml-parser-tree.md)
+  - [XML::Parser tree results](./perl/xml/xml-parser-tree-results.md)
+  - [XML::Parser](./perl/xml/xml-parser-tree-process.md)
+  - [XML::LibXML](./perl/xml/xml-libxml.md)
+  - [XML::XPath](./perl/xml/xml-xpath.md)
+  - [XML::Twig](./perl/xml/xml-twig.md)
+  - [XML::Writer](./perl/xml/xml-writer.md)
+  - [XML::Dumper](./perl/xml/xml-dumper.md)
+  - [Exercise: parse glade.xml](./perl/xml/xml-exercise-parse-gladexml.md)
+  - [DTD validation](./perl/xml/xml-dtd-validation.md)
+  - [Specialized XML modules](./perl/xml/specialized-xml-modules.md)
+  - [Resources](./perl/xml/xml-resources.md)
 
 
 
