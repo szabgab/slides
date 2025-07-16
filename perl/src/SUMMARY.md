@@ -311,5 +311,16 @@
   - [Specialized XML modules](./perl/xml/specialized-xml-modules.md)
   - [Resources](./perl/xml/xml-resources.md)
 
+- [Parsing HTML File](./perl/html-parser/index.md)
+  - [HTML::Parser - fetch title](./perl/html-parser/html-parser.md)
+  - [HTML::Parser](./perl/html-parser/html-parser-generic.md)
+  - [HTML::Encode](./perl/html-parser/html-encode.md)
+  - [Autoclose](./perl/html-parser/autoclose.md)
+
+
+
+
+
+
 
 
