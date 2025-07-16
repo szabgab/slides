@@ -100,12 +100,31 @@
   - [Solution: Write report to file](./perl/files/solution-write-report-to-file.md)
   - [Solution: Analyze Apache - number of successful hits](./perl/files/solution-analyze-apache-log.md)
 
-
-
-
-
-
-
-
+- [Lists and Arrays](./perl/arrays/index.md)
+  - [Lists and Arrays intro](./perl/arrays/lists-arrays-intro.md)
+  - [List Literals, list ranges](./perl/arrays/lists.md)
+  - [List Assignment](./perl/arrays/list-assignments.md)
+  - [loop over elements of list with foreach](./perl/arrays/foreach-list.md)
+  - [Create an Array, loop over with foreach](./perl/arrays/foreach-array.md)
+  - [Array Assignment](./perl/arrays/array-assignment.md)
+  - [Debugging an array](./perl/arrays/debug-array.md)
+  - [foreach loop on numbers](./perl/arrays/foreach-number.md)
+  - [Array index (menu)](./perl/arrays/array-index.md)
+  - [Load Module](./perl/arrays/array-index-checked.md)
+  - [Command line parameters](./perl/arrays/command-line-parameters-argv.md)
+  - [Process command line parameters, use modules](./perl/arrays/process-command-line-parameters.md)
+  - [Module documentation](./perl/arrays/module-documentations.md)
+  - [process CSV file](./perl/arrays/split-strings.md)
+  - [process csv file (short version)](./perl/arrays/process-csv-files-short.md)
+  - [One-liner sum numbers in CSV file](./perl/arrays/oneliner-sum-numbers-in-csv.md)
+  - [process csv file using Text::CSV](./perl/arrays/process-csv-file.md)
+  - [process csv file using Text::CSV](./perl/arrays/process-csv-file-newline.md)
+  - [Join](./perl/arrays/join-lists.md)
+  - [Labels](./perl/arrays/labels.md)
+  - [Exercise: Make the color selector user friendly](./perl/arrays/exercise-user-friendly-color-selector.md)
+  - [Exercise: improve the color selector](./perl/arrays/exercise-color-selector.md)
+  - [Exercise: Improve the Number Guessing game](./perl/arrays/exercise-number-guessing-game-2.md)
+  - [Solution: improved color selector](./perl/arrays/solution-color-selector.md)
+  - [Solution: Improve the Number Guessing game](./perl/arrays/solution-number-guessing-game-2.md)
 
 
