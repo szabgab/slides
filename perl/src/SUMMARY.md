@@ -265,4 +265,35 @@
   - [Net::LDAP](./perl/applications/net-ldap.md)
   - [Tie::File](./perl/applications/tie-file.md)
 
+- [Extra slides](./perl/extra/index.md)
+  - [List all defined variables](./perl/extra/list-all-defined-variables.md)
+  - [Perl internal variables](./perl/extra/perl-internal-variables.md)
+  - [What is Perl ?](./perl/extra/what-is-perl.md)
+  - [What does Perl stand for ?](./perl/extra/perl-backronym.md)
+  - [Scripting language ?](./perl/extra/scripting-language.md)
+  - [Is Perl Interpreted or Compiled Language](./perl/extra/compiled-interpreted.md)
+  - [Why use Perl ?](./perl/extra/why-use-perl.md)
+  - [What is it good for ?](./perl/extra/what-is-perl-good-for.md)
+  - [Its strengths](./perl/extra/strengths-of-perl.md)
+  - [Redirection by the user](./perl/extra/redirection.md)
+  - [for loop](./perl/extra/for-loop.md)
+  - [ASCII table](./perl/extra/ascii-table.md)
+  - [default variable `$_`](./perl/extra/topic.md)
+  - [Return values](./perl/extra/return-values.md)
+  - [UNIX file system, hard links symbolic links](./perl/extra/unix-file-system.md)
+  - [stat, lstat](./perl/extra/stat-lstat.md)
+  - [Compare values](./perl/extra/compare-values.md)
+  - [Bitwise Operations](./perl/extra/perl-bitwise-operations.md)
+  - [bitwise examples](./perl/extra/perl-bitwise-example.md)
+  - [Filename creation based on date](./perl/extra/filename-with-timestamp.md)
+  - [Debugging prints](./perl/extra/debugging-prints.md)
+  - [Where is perl installed on your system ?](./perl/extra/where-is-perl-installed.md)
+  - [Send e-mail](./perl/extra/send-email.md)
+
+
+
+
+
+
+
 
