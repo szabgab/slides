@@ -156,6 +156,21 @@
   - [List::Util](./perl/advanced-arrays/list-util.md)
   - [Advanced: Multi dimensional array](./perl/advanced-arrays/multi-dimensional-array.md)
 
+- [Functions and Subroutines](./perl/subroutines/index.md)
+  - [Why to use subroutines?](./perl/subroutines/why-use-subroutines.md)
+  - [Subroutines](./perl/subroutines/subroutines-introduction.md)
+  - [Variable number of parameters](./perl/subroutines/subroutines-sum.md)
+  - [Recursive subroutines: factorial](./perl/subroutines/recursive-subroutines.md)
+  - [Recursive subroutines: Fibonacci](./perl/subroutines/recursive-subroutines-fibonacci.md)
+  - [Sort using a function](./perl/subroutines/sorting-function.md)
+  - [Return a list](./perl/subroutines/return-a-list.md)
+  - [Return several elements](./perl/subroutines/return-several-elements.md)
+  - [Error handling with eval - files](./perl/subroutines/error-handling-with-eval-files.md)
+  - [Error handling with eval - two calls](./perl/subroutines/error-handling-with-eval.md)
+  - [Exercise: Subroutines](./perl/subroutines/exercise-subroutines.md)
+  - [Exercise: Number guessing in sub](./perl/subroutines/exercise-number-guessing-in-sub.md)
+  - [Solution: Number guessing in sub](./perl/subroutines/solution-number-guessing-in-sub.md)
+
 
 
 
