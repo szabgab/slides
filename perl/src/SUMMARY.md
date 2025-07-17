@@ -335,3 +335,10 @@
   - [Testing Demo using Test::More (failure)](./perl/testing-demo/testing-demo-using-test-more-failure.md)
   - [Testing Demo - Test coverage report](./perl/testing-demo/testing-demo-test-coverage-report.md)
 
+
+- [File processing](./perl/file-processing/index.md)
+  - [Filehandle in scalar and list context](./perl/file-processing/filehandle-in-scalar-and-list-context.md)
+  - [slurp mode](./perl/file-processing/slurp-mode.md)
+  - [Diamond operator](./perl/file-processing/diamond-operator.md)
+  - [File::Slurp](./perl/file-processing/file-slurp.md)
+
