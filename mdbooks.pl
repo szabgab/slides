@@ -25,7 +25,8 @@ sub collect_count {
     my %books;
     my $total = 0;
     opendir my $dh, "html" or die;
-    for my $name (readdir $dh) {
+    for my $name (sort readdir $dh) {
+        say "Entry: '$name'";
         next if $name eq "." or $name eq "..";
         next if $name eq "about";
         next if not -d "html/$name";
@@ -35,9 +36,11 @@ sub collect_count {
         my $title = get_title($name);
 
 
-        my @html_files  = (glob("html/$name/*.html"), glob("html/$name/*/*.html"));
+        my @html_files  = (glob("html/$name/*.html"), glob("html/$name/*/*.html"), glob("html/$name/*/*/*.html"));
+        my $count = scalar(@html_files) - 4;
+        say "Collected $count from '$name'";
         $books{$name} = {
-            count => scalar(@html_files) - 4,
+            count => $count,
             title => $title,
         };
         $total += @html_files - 4;
@@ -163,10 +166,12 @@ sub convert_summary_to_book_txt {
     @rows = map { s{^.*\(\./}{}; $_ } @rows;
     @rows = map { s{\).*}{}; $_ } @rows;
     #print Dumper \@rows;
-    open my $fh, ">", "book/markdown/Book.txt" or die;
-    print $fh "leanpub.md\n";
-    for my $row (@rows) {
-        print $fh "$row\n";
+    {
+        open my $fh, ">", "book/markdown/Book.txt" or die;
+        print $fh "leanpub.md\n";
+        for my $row (@rows) {
+            print $fh "$row\n";
+        }
     }
     #exit;
 }
