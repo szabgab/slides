@@ -28,30 +28,25 @@ sub generate_md_books {
         say "mdbook '$name'";
         say `pwd`;
 
-        my $cmd = "rm -rf book";
-        say $cmd;
-        system $cmd;
-
-        $cmd = "mdbook build";
-        say $cmd;
-        system $cmd;
+        _system("rm -rf book");
+        _system("mdbook build");
 
         convert_summary_to_book_txt();
 
-        $cmd = "rm -rf ../../html/$name";
-        say $cmd;
-        system $cmd;
-
-        $cmd = "mv book/html ../../html/$name";
-        say $cmd;
-        system $cmd;
+        _system("rm -rf ../../html/$name");
+        _system("mv book/html ../../html/$name");
 
         chdir "../..";
 
-        system "cp leanpub.md books/$name/book/markdown/";
+        _system("cp leanpub.md books/$name/book/markdown/");
     }
 }
 
+sub _system {
+    my ($cmd) = @_;
+    say $cmd;
+    system $cmd;
+}
 
 sub convert_summary_to_book_txt {
     open my $fh, "<", "src/SUMMARY.md" or die;
