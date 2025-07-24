@@ -30,6 +30,10 @@ sub generate_md_books {
 
         _system("rm -rf book");
         _system("mdbook build");
+        _system(q{perl -i -p -e 's{href="index.html"}{href="."}g'           book/toc.js});
+        _system(q{perl -i -p -e 's{(href="[a-zA-Z0-9.][^"]+)\.html"}{$1"}g' book/toc.js});
+        _system(q{find book/ -name *.html | xargs perl -i -p -e 's{href="index.html"}{href="."}g'});
+        _system(q{find book/ -name *.html | xargs perl -i -p -e 's{(href="[a-zA-Z0-9.][^"]+)\.html"}{$1"}g'});
 
         convert_summary_to_book_txt();
 
