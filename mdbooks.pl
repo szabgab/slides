@@ -2,7 +2,7 @@ use strict;
 use warnings;
 use feature 'say';
 use Data::Dumper qw(Dumper);
-use File::Basename qw(dirname);
+use File::Basename qw(basename dirname);
 
 main();
 exit;
@@ -15,7 +15,7 @@ sub main {
 }
 
 sub get_book_names {
-    my @names = map { dirname $_ } glob("*/book.toml");
+    my @names = map { basename dirname $_ } glob("books/*/book.toml");
     return \@names;
 }
 
@@ -23,7 +23,8 @@ sub generate_md_books {
     my $names = shift;
 
     for my $name (@$names) {
-        chdir $name;
+        say "name $name";
+        chdir "books/$name";
         say "mdbook '$name'";
         say `pwd`;
 
@@ -37,17 +38,17 @@ sub generate_md_books {
 
         convert_summary_to_book_txt();
 
-        $cmd = "rm -rf ../html/$name";
+        $cmd = "rm -rf ../../html/$name";
         say $cmd;
         system $cmd;
 
-        $cmd = "mv book/html ../html/$name";
+        $cmd = "mv book/html ../../html/$name";
         say $cmd;
         system $cmd;
 
-        chdir "..";
+        chdir "../..";
 
-        system "cp leanpub.md $name/book/markdown/";
+        system "cp leanpub.md books/$name/book/markdown/";
     }
 }
 

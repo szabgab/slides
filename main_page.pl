@@ -44,7 +44,7 @@ sub get_title {
     my ($name) = @_;
 
     my $title;
-    my $book_file = "$name/book.toml";
+    my $book_file = "books/$name/book.toml";
     my $json_file = "$name/$name.json";
     if (-e $book_file) {
         open my $fh, "<", $book_file or die;
