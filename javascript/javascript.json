@@ -8,10 +8,6 @@
     "repo": "https://github.com/szabgab/slides/blob/main/",
     "version": "1.18",
     "files": [
-        "intro.md",
-        "basics.md",
-        "conditionals.md",
-        "arrays.md",
         "functions.md",
         "objects.md",
         "advanced.md",
