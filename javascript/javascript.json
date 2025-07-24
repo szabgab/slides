@@ -8,7 +8,6 @@
     "repo": "https://github.com/szabgab/slides/blob/main/",
     "version": "1.18",
     "files": [
-        "advanced.md",
         "regexp.md",
         "dom.md",
         "other.md",
