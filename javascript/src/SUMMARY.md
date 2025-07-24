@@ -183,3 +183,24 @@
 - [Other](./javascript/other/index.md)
   - [Date](./javascript/other/other-date.md)
   - [Try Catch](./javascript/other/other-try-catch.md)
+
+- [Application](./javascript/application/index.md)
+  - [Install NodeJS](./javascript/application/install-nodejs.md)
+
+- [JavaScript Appendix](./javascript/appendix/index.md)
+  - [Resources](./javascript/appendix/javascript-resources.md)
+  - [JavaScript Videos](./javascript/appendix/javascript-videos.md)
+  - [JavaScript Tools](./javascript/appendix/javascript-tools.md)
+  - [Reserved words in JavaScript](./javascript/appendix/reserved-words.md)
+  - [Awful parts](./javascript/appendix/awful-parts.md)
+  - [Bad Parts](./javascript/appendix/bad-parts.md)
+  - [JSLint](./javascript/appendix/jslint.md)
+  - [Deep copy](./javascript/appendix/deep-copy.md)
+  - [Invocation patterns](./javascript/appendix/invocation-patterns.md)
+  - [Apply](./javascript/appendix/apply.md)
+  - [getElementsByClassName](./javascript/appendix/get-elements-by-classname.md)
+
+
+
+
+

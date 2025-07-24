@@ -1,8 +1,4 @@
-# Application
-{id: application}
-
-## Install NodeJS
-{id: install-nodejs}
+# Install NodeJS
 
 
 * [NodeJS](https://nodejs.org/)   (There is 18.16.0 LTS and Installing 20.3.0 Current)
@@ -30,8 +26,8 @@ Then running
 
 
 
-![](examples/demo-app/dist/index.html)
-![](examples/demo-app/src/index.js)
-![](examples/demo-app/src/mymath.js)
+{% embed include file="src/examples/demo-app/dist/index.html" %}
+{% embed include file="src/examples/demo-app/src/index.js" %}
+{% embed include file="src/examples/demo-app/src/mymath.js" %}
 
-![](examples/demo-app/package.json)
+{% embed include file="src/examples/demo-app/package.json" %}
