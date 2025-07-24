@@ -62,7 +62,8 @@ sub convert_summary_to_book_txt {
     @rows = map { s{\).*}{}; $_ } @rows;
     #print Dumper \@rows;
     {
-        open my $fh, ">", "book/markdown/Book.txt" or die;
+        my $filename = "book/markdown/Book.txt";
+        open my $fh, ">", $filename or die "Could not open `$filename` for writing";
         print $fh "leanpub.md\n";
         for my $row (@rows) {
             print $fh "$row\n";
