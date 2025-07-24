@@ -180,4 +180,6 @@
   - [Clear local storage](./javascript/dom/clear-local-storage.md)
   - [Local storage - boolean](./javascript/dom/local-storage-boolean.md)
 
-
+- [Other](./javascript/other/index.md)
+  - [Date](./javascript/other/other-date.md)
+  - [Try Catch](./javascript/other/other-try-catch.md)
