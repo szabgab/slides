@@ -141,6 +141,27 @@
   - [Count words fixed](./javascript/objects/count-words-fixed.md)
   - [keys of an object](./javascript/objects/keys.md)
 
+- [Advanced JavaScript](./javascript/advanced/index.md)
+  - [Stringify NaN, Infinite, and null](./javascript/advanced/stringify-nan-infinite-and-null.md)
+  - [JSON parsing NaN, Infinite, and null](./javascript/advanced/json-parsing-nan-infinite-and-null.md)
+  - [JSON parsing NaN, Infinite, and null (Node.js" %}](./javascript/advanced/json-parsing-nan-infinite-and-null-node.md)
+  - [typeof](./javascript/advanced/typeof.md)
+  - [typeof and null](./javascript/advanced/typeof-null.md)
+  - [Delayed (scheduled) execution - setTimeout](./javascript/advanced/set-timeout.md)
+  - [Recurring execution - setInterval](./javascript/advanced/set-interval.md)
+  - [Stop recurring execution - clearInterval](./javascript/advanced/clear-interval.md)
+  - [Dates](./javascript/advanced/dates.md)
+  - [sort](./javascript/advanced/sort.md)
+  - [sort object](./javascript/advanced/sort-object.md)
+  - [sort datestrings](./javascript/advanced/sort-datestrings.md)
+  - [map](./javascript/advanced/map.md)
+  - [Closures in JavaScript](./javascript/advanced/closure.md)
+  - [Exception handling](./javascript/advanced/exception-handling.md)
+  - [NodeJS: command line arguments](./javascript/advanced/nodejs-command-line-arguments.md)
+  - [NodeJS: prompt on STDIN](./javascript/advanced/nodejs-prompt.md)
+  - [Transliterate](./javascript/advanced/transliterate.md)
+
+
 
 
 
