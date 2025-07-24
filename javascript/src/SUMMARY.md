@@ -168,7 +168,16 @@
   - [Substitute](./javascript/regexp/substitute.md)
   - [RegExp cheat sheet](./javascript/regexp/regexp-cheat-sheet.md)
 
-
-
+- [DOM - Document Object Model](./javascript/dom/index.md)
+  - [Inject content in HTML](./javascript/dom/display-embedded-html.md)
+  - [Add event listener](./javascript/dom/add-event-listener.md)
+  - [Get value of input box](./javascript/dom/get-value-of-input-box.md)
+  - [Get value of selected option](./javascript/dom/get-value-of-selected-option.md)
+  - [Update selection box based on other selection](./javascript/dom/javascript-update-selection-box.md)
+  - [Autoresizing Grid](./javascript/dom/grid.md)
+  - [Local storage - counter](./javascript/dom/local-storage-counter.md)
+  - [Remove item from local storage - reset counter](./javascript/dom/local-storage-reset-counter.md)
+  - [Clear local storage](./javascript/dom/clear-local-storage.md)
+  - [Local storage - boolean](./javascript/dom/local-storage-boolean.md)
 
 
