@@ -87,6 +87,7 @@ jobs:
         export PATH=$PATH:$(pwd)
         cd slides
         perl mdbooks.pl
+        perl main_page.pl
 
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v3
