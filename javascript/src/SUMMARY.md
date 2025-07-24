@@ -162,6 +162,13 @@
   - [Transliterate](./javascript/advanced/transliterate.md)
 
 
+- [RegExp - Regular Expressions in JavaScript](./javascript/regexp/index.md)
+  - [RexExp Object](./javascript/regexp/regexp-object.md)
+  - [Match](./javascript/regexp/matc.md)
+  - [Substitute](./javascript/regexp/substitute.md)
+  - [RegExp cheat sheet](./javascript/regexp/regexp-cheat-sheet.md)
+
+
 
 
 

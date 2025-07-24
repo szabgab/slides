@@ -1,30 +1,4 @@
-# RegExp - Regular Expressions in JavaScript
-{id: regexp}
-
-## RexExp Object
-{id: regexp-object}
-![](examples/regex/regexp.html)
-
-
-## Match
-{id: match}
-![](examples/regex/regex.html)
-
-
-## Substitute
-{id: substitute}
-{i: replace}
-{i: /g}
-
-{aside}
-Replace the first match of a regex by a string.
-Replace it globally.
-{/aside}
-![](examples/regex/substitute.html)
-
-
-## RegExp cheat sheet
-{id: regexp-cheat-sheet}
+# RegExp cheat sheet
 
 ```
 var pattern = new RegExp(pattern, modifiers);
@@ -76,10 +50,6 @@ Modifiers
 * i - case insensitive
 * g - global
 * m - multiline
-
-
-
-
 
 
 
