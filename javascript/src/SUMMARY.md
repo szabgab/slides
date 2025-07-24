@@ -107,5 +107,23 @@
   - [Exercise: Reverse the number guessing game](./javascript/arrays/exercise-reversed-number-guessing-game.md)
   - [Solution: Reverse the number guessing game](./javascript/arrays/solution-reversed-number-guessing-game.md)
 
+- [JavaScript functions](./javascript/functions/index.md)
+  - [Function statements](./javascript/functions/functions.md)
+  - [Function expressions (Anonymous functions)](./javascript/functions/anonymous-functions.md)
+  - [Unknown number of function arguments](./javascript/functions/function-arguments.md)
+  - [Assign function](./javascript/functions/assign-functions.md)
+  - [Passing functions as parameter of another function](./javascript/functions/passing-function-as-parameter.md)
+  - [Recursive function](./javascript/functions/recursive-function.md)
+  - [Dispatch table](./javascript/functions/dispatch-table.md)
+  - [Variable scope](./javascript/functions/variable-scope.md)
+  - [Scope in if block](./javascript/functions/scope-in-if-block.md)
+  - [Variable in for loop](./javascript/functions/variable-in-for-loop.md)
+  - [Immediate Execution using ()](./javascript/functions/immediate-execution.md)
+  - [Immediate Execution with parameters using ()](./javascript/functions/immediate-execution-params.md)
+  - [Private Global Scope](./javascript/functions/private-global-scope.md)
+  - [Exercise: Reverse Polish Calculator](./javascript/functions/exercise-reverse-polish-calculator.md)
+  - [Reverse Polish Calculator in JavaScript](./javascript/functions/reverse-polish-calculator.md)
+  - [Order](./javascript/functions/function-order.md)
+
 
 
