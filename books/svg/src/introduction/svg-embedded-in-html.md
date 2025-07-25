@@ -4,4 +4,4 @@
 
 The above HTML file will render to this:
 
-![SVG rendered](/examples/svg-embedded-in-html.png)
+![SVG rendered](../examples/svg-embedded-in-html.png)

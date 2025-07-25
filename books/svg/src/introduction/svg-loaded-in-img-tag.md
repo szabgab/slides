@@ -21,4 +21,4 @@ In the HTML document refer to the file via an `img` tag:
 
 The page is rendered like this:
 
-![](/examples/svg-loaded-via-html-tag.png)
+![](../examples/svg-loaded-via-html-tag.png)
