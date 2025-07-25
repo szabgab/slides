@@ -27,6 +27,7 @@
 
 - [Flags](./flags/index.md)
   - [Flag of Hungary](./flags/hungary.md)
+  - [Flag of Switzerland](./flags/switzerland.md)
 
 
 
