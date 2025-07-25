@@ -14,5 +14,7 @@
   - [Polygon](./shapes/polygon.md)
   - [Text](./shapes/text.md)
 
+  - [Rectangles](./shapes/rectangles.md)
+  - [Square](./shapes/square.md)
 
 

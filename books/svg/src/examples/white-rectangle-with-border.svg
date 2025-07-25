@@ -1,0 +1,4 @@
+<svg width="150" height="100" xmlns="http://www.w3.org/2000/svg">
+  <rect width="40" height="100" fill="#FFF" stroke="black" stroke-width="1" />
+  <rect width="40" height="100" x="110" style="fill:#FFF;stroke:black;stroke-width:1" />
+</svg>
