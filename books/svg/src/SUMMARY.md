@@ -12,9 +12,17 @@
   - [Rectangle](./shapes/rectangle.md)
   - [Lines](./shapes/lines.md)
   - [Polygon](./shapes/polygon.md)
+  - [Triangle](./shapes/triangle.md)
+  - [Polyline](./shapes/polyline.md)
   - [Text](./shapes/text.md)
 
   - [Rectangles](./shapes/rectangles.md)
   - [Square](./shapes/square.md)
+  - [Ellipse](./shapes/ellipse.md)
+  - [Horizontal gradient](./shapes/horizontal-gradient.md)
+
+  - [House front](./shapes/house-front.md)
+
+
 
 
