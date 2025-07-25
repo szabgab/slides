@@ -21,8 +21,12 @@
   - [Ellipse](./shapes/ellipse.md)
   - [Horizontal gradient](./shapes/horizontal-gradient.md)
 
-  - [House front](./shapes/house-front.md)
 
+- [Drawings](./drawings/index.md)
+  - [House front](./drawings/house-front.md)
+
+- [Flags](./flags/index.md)
+  - [Flag of Hungary](./flags/hungary.md)
 
 
 
