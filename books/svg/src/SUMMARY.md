@@ -11,6 +11,7 @@
   - [Circle](./shapes/circle.md)
   - [Rectangle](./shapes/rectangle.md)
   - [Lines](./shapes/lines.md)
+  - [Polygon](./shapes/polygon.md)
   - [Text](./shapes/text.md)
 
 
