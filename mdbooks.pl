@@ -8,7 +8,7 @@ main();
 exit;
 
 sub main {
-    my $names = get_book_names();
+    my $names = @ARGV ? \@ARGV : get_book_names();
 
     mkdir "html";
     generate_md_books($names);
