@@ -13,4 +13,12 @@ Publish: https://leanpub.com/python-functional-programming/publish
 Create Preview
 Check it in ~/Dropbox/python-functional-programming/preview/
 
+rm -rf ~/Dropbox/svg/manuscript
+\mv books/svg/book/markdown ~/Dropbox/svg/manuscript
+Preview:
+  Visit https://leanpub.com/svg/preview
+  Create Preview
+  Check it in ~/Dropbox/svg/preview/
+Publish:
+  Visit: https://leanpub.com/svg/publish
 
