@@ -52,33 +52,20 @@
   - [SELECT](./postgresql/postgresql-select.md)
   - [DELETE](./postgresql/postgresql-delete.md)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [MongoDB](./mongodb/index.md)
+  - [MongoDB CRUD](./mongodb/mongodb-crud.md)
+  - [Install MongoDB support](./mongodb/install-mongodb-support.md)
+  - [MongoDB in Docker compose](./mongodb/mongodb-in-docker.md)
+  - [Python MongoDB drop database](./mongodb/mongodb-drop-database.md)
+  - [Python MongoDB insert](./mongodb/mongodb-insert.md)
+  - [MongoDB CLI](./mongodb/mongodb-cli.md)
+  - [Python MongoDB find](./mongodb/mongodb-find.md)
+  - [Python MongoDB find refine](./mongodb/mongodb-find-refine.md)
+  - [Python MongoDB update](./mongodb/mongodb-update.md)
+  - [Python MongoDB remove (delete)](./mongodb/mongodb-remove.md)
+  - [Python MongoDB replace](./mongodb/mongodb-replace.md)
+  - [Python MongoDB upsert](./mongodb/python-mongodb-upsert.md)
+  - [Python Mongodb: TypeError: upsert must be True or False](./mongodb/python-mongodb-upsert-error.md)
+  - [Python MongoDB Async with motor - connect](./mongodb/pyton-mongodb-async-motor-connect.md)
+  - [Python MongoDB Async with motor - insert and find](./mongodb/pyton-mongodb-async-motor-insert.md)
 
