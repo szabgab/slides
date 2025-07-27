@@ -1,0 +1,15 @@
+
+<svg height="210" width="500" xmlns="http://www.w3.org/2000/svg">
+  <polyline
+     points="
+        10,10
+        50,70
+        90,10
+        130,70
+        170,10
+     "
+    fill="none"
+    stroke="cyan"
+    stroke-width="3"
+  />
+</svg>

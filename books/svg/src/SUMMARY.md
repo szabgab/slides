@@ -35,4 +35,4 @@
   - [Circle using Perl](./perl/circle.md)
   - [Rectangle using Perl](./perl/rectangle.md)
 
-
+- [Book cover](./book-cover.md)
