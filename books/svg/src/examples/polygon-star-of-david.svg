@@ -1,0 +1,33 @@
+<svg width="300" height="300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="white" stroke="black" stroke-width="1" />
+  <polygon points="
+    10,73
+    210,73
+    110,246
+    "
+    fill="none"
+    stroke="#0038b8"
+    stroke-width="10"
+    />
+
+  <polygon points="
+    10,190
+    210,190
+    110,17
+    "
+    fill="none"
+    stroke="#0038b8"
+    stroke-width="10"
+    />
+</svg>
+<!--height is 4 width is 2*3 =6 -->
+
+<!--
+
+173 full height
+17+x+y+x = 253
+2x+y = 236
+x+y=173
+x = 63
+-->
+
