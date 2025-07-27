@@ -1,9 +1,9 @@
-<svg width="300" height="300" xmlns="http://www.w3.org/2000/svg">
+<svg width="220" height="249" xmlns="http://www.w3.org/2000/svg">
   <rect width="100%" height="100%" fill="white" stroke="black" stroke-width="1" />
   <polygon points="
-    10,73
-    210,73
-    110,246
+    10,66
+    210,66
+    110,239
     "
     fill="none"
     stroke="#0038b8"
@@ -11,9 +11,9 @@
     />
 
   <polygon points="
-    10,190
-    210,190
-    110,17
+    10,183
+    210,183
+    110,10
     "
     fill="none"
     stroke="#0038b8"
