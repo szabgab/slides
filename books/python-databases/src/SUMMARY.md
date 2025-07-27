@@ -69,3 +69,14 @@
   - [Python MongoDB Async with motor - connect](./mongodb/pyton-mongodb-async-motor-connect.md)
   - [Python MongoDB Async with motor - insert and find](./mongodb/pyton-mongodb-async-motor-insert.md)
 
+- [Redis](./redis/index.md)
+  - [Redis CLI](./redis/redis-cli.md)
+  - [Redis list keys](./redis/redis-list-keys.md)
+  - [Redis set get](./redis/redis-set-get.md)
+  - [Redis incr](./redis/redis-incr.md)
+  - [Redis incrby](./redis/redis-incrby.md)
+  - [Redis setex](./redis/redis-setex.md)
+
+
+
+
