@@ -57,6 +57,10 @@
   - [API config file](./web-client/api-config-file.md)
   - [Exercise: Combine web server and client](./web-client/exercise-web.md)
 
-
-
+- [Python Web server](./web-server/index.md)
+  - [Hello world web](./web-server/web-hello-world.md)
+  - [Dump web environment info](./web-server/web-dump.md)
+  - [Web echo](./web-server/web-echo.md)
+  - [Web form](./web-server/web-form.md)
+  - [Resources](./web-server/web-more.md)
 
