@@ -30,3 +30,33 @@
   - [Requirements](./pypi/python-requirements.md)
   - [Virtualenv](./pypi/virtualenv.md)
 
+- [Web client - web scraping](./web-client/index.md)
+  - [get HTML page using urllib](./web-client/urllib.md)
+  - [Download image using urllib](./web-client/urllib-download.md)
+  - [get HTML page using requests](./web-client/requests-get.md)
+  - [Download image using requests](./web-client/dowload-image-using-requests.md)
+  - [Download image as a stream using requests](./web-client/dowload-image-as-a-stream-using-requests.md)
+  - [Download zip file using requests](./web-client/download-zip-file.md)
+  - [Extract zip file](./web-client/extract-zip-file.md)
+  - [Beautiful Soup to parse HTML](./web-client/beautiful-soup.md)
+  - [requests - JSON - API](./web-client/requests-and-json.md)
+  - [httpbin.org](./web-client/httpbin-org.md)
+  - [requests get from httpbin - JSON](./web-client/requests-get-httpbin.md)
+  - [requests get IP from httpbin - JSON](./web-client/requests-get-json.md)
+  - [requests get JSON User-Agent](./web-client/requests-get-json-ua.md)
+  - [requests change User-Agent](./web-client/requests-change-ua.md)
+  - [requests get header](./web-client/requests-get-headers.md)
+  - [requests change header](./web-client/requests-change-headers.md)
+  - [requests post](./web-client/requests-post.md)
+  - [Interactive Requests](./web-client/interactive-requests.md)
+  - [Download the weather - scraping](./web-client/download-weather-scraping.md)
+  - [Download the weather - API call with requests](./web-client/download-weather-api-call-requests.md)
+  - [Download the weather - API call with requests](./web-client/download-weather-api-wrapper.md)
+  - [Tweet](./web-client/tweet.md)
+  - [bit.ly](./web-client/bitly.md)
+  - [API config file](./web-client/api-config-file.md)
+  - [Exercise: Combine web server and client](./web-client/exercise-web.md)
+
+
+
+
