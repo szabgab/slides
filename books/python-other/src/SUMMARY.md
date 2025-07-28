@@ -20,3 +20,13 @@
   - [Install the Python Extension](./vscode/install-python-extension.md)
   - [VS Code examples](./vscode/vscode-examples.md)
 
+- [PyPi - Python Package Index](./pypi/index.md)
+  - [What is PyPi?](./pypi/what-is-pypi.md)
+  - [pip](./pypi/pip.md)
+  - [Configure pip on Windows to avoid SSL issues](./pypi/configure-pip-on-windows.md)
+  - [Upgrade pip](./pypi/upgrade-pip.md)
+  - [Upgrade PIP on Windows](./pypi/upgrade-pip-on-windows.md)
+  - [PYTHONPATH](./pypi/pythonpath.md)
+  - [Requirements](./pypi/python-requirements.md)
+  - [Virtualenv](./pypi/virtualenv.md)
+
