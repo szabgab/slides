@@ -7,7 +7,6 @@
     "repo": "https://github.com/szabgab/slides/blob/main/",
     "version": "1.18",
     "files": [
-        "net.md",
         "interactive-shell.md",
         "testing-demo.md",
 
