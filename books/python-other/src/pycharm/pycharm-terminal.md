@@ -1,0 +1,5 @@
+# PyCharm Terminal
+
+* Bottom "Terminal"
+
+
