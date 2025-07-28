@@ -64,3 +64,16 @@
   - [Web form](./web-server/web-form.md)
   - [Resources](./web-server/web-more.md)
 
+- [Networking](./net/index.md)
+  - [Secure shell](./net/secure-shell.md)
+  - [ssh](./net/ssh.md)
+  - [ssh from Windows](./net/ssh-from-windows.md)
+  - [Parallel ssh](./net/parallel-ssh.md)
+  - [telnet](./net/telnet.md)
+  - [prompt for password](./net/get-password.md)
+  - [ftp](./net/ftp.md)
+
+
+
+
+
