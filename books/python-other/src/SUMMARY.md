@@ -73,6 +73,14 @@
   - [prompt for password](./net/get-password.md)
   - [ftp](./net/ftp.md)
 
+- [Interactive shell](./repl/index.md)
+  - [The Python interactive shell](./repl/the-python-interactive-shell.md)
+  - [REPL - Read Evaluate Print Loop](./repl/python-repl.md)
+  - [Using Modules](./repl/using-modules.md)
+  - [Getting help](./repl/getting-help.md)
+  - [Exercise: Interactive shell](./repl/exercise-interactive-shell.md)
+
+
 
 
 
