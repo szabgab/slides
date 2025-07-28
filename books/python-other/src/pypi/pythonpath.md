@@ -1,0 +1,7 @@
+# PYTHONPATH
+
+```
+export PYTHONPATH=~/python
+```
+
+
