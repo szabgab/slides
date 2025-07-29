@@ -458,18 +458,6 @@ python common_error_in_function.py 42
 
 ![](examples/other/find_insert_location_bisect.py)
 
-## Insert element in sorted list using insort
-{id: instert-element-in-sorted-list-using-insort}
-{i: insort}
-
-![](examples/other/find_insert_location_insort.py)
-
-
-![](examples/decorators/dir_tree.py)
-![](examples/decorators/dir_tree_return.py)
-![](examples/decorators/dir_tree_with_callback.py)
-![](examples/other/deco.py)
-
 ## Classes
 {id: old-oop-examples}
 
