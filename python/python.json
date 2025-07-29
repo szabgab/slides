@@ -7,8 +7,6 @@
     "repo": "https://github.com/szabgab/slides/blob/main/",
     "version": "1.18",
     "files": [
-        "testing-intro.md",
-
         "advanced-lists.md",
         "warnings.md",
         "csv.md",

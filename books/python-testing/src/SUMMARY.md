@@ -210,44 +210,13 @@
   - [Pytest: monkeypatching time](./pytest-monkeypatching-time.md)
   - [PyTest: no random order](./pytest-no-random-order.md)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [Testing Intro](./testing-intro/index.md)
+  - [The software testing equasion](./testing-intro/software-testing-equasion.md)
+  - [The software testing equasion (fixed)](./testing-intro/software-testing-equasion-revised.md)
+  - [The pieces of your software?](./testing-intro/pieces-of-your-software.md)
+  - [Manual testing](./testing-intro/manual-testing.md)
+  - [What to tests?](./testing-intro/what-to-test.md)
+  - [Continuous Integration](./testing-intro/continuous-integration.md)
 
 
 
