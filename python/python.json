@@ -9,7 +9,6 @@
     "files": [
         "testing-intro.md",
 
-        "logging.md",
         "closures.md",
         "decorators.md",
         "context.md",
