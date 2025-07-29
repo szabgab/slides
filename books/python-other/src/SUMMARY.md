@@ -231,6 +231,19 @@
   - [Exercise: Tempdir on Windows](./context/exercise-tempdir-on-windows.md)
   - [Solution: Context manager](./context/solution-context.md)
 
+- [Advanced lists](./advanced-lists/index.md)
+  - [Change list while looping: endless list](./advanced-lists/endless-list.md)
+  - [Change list while looping](./advanced-lists/change-list-while-looping.md)
+  - [Copy list before iteration](./advanced-lists/copy-list-before-iteration.md)
+  - [for with flag](./advanced-lists/for-with-flag.md)
+  - [for else](./advanced-lists/for-else.md)
+  - [enumerate](./advanced-lists/enumerate.md)
+  - [do while](./advanced-lists/do-while.md)
+  - [list slice is copy](./advanced-lists/list-slice-copy.md)
+
+
+
+
 
 
 
