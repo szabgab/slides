@@ -80,8 +80,29 @@
   - [Getting help](./repl/getting-help.md)
   - [Exercise: Interactive shell](./repl/exercise-interactive-shell.md)
 
-
-
-
+- [Testing Demo](./testing-demo/index.md)
+  - [Testing Flask](./testing-demo/demo-testing-flask.md)
+  - [How do you test your code?](./testing-demo/how-do-you-test-your-code.md)
+  - [What is testing?](./testing-demo/what-is-testing.md)
+  - [What is testing really?](./testing-demo/what-is-testing-really.md)
+  - [Testing demo tools](./testing-demo/testing-demo-tools.md)
+  - [Testing demo methodology](./testing-demo/testing-demo-methodology.md)
+  - [Testing demo - AUT - Application Under Test](./testing-demo/testing-demo-aut.md)
+  - [Testing demo - use the module](./testing-demo/testing-demo-user-the-module.md)
+  - [Testing demo: doctest](./testing-demo/testing-demo-doctest.md)
+  - [Testing demo: doctest with failure](./testing-demo/testing-demo-doctets-with-failure.md)
+  - [Testing demo: Unittest success](./testing-demo/testing-demo-unittest.md)
+  - [Testing demo: Unittest failure](./testing-demo/testing-demo-unittest-failure.md)
+  - [Testing demo: pytest using classes](./testing-demo/testing-demo-pytest-class.md)
+  - [Testing demo: pytest using classes - failure](./testing-demo/testing-demo-pytest-class-failure.md)
+  - [Testing demo: pytest without classes](./testing-demo/testing-demo-pytest.md)
+  - [Testing demo: pytest without classes failure](./testing-demo/testing-demo-pytest-failure.md)
+  - [Testing demo: Failure in one sub](./testing-demo/testing-demo-pytest-onsub-failure.md)
+  - [Testing demo: pytest run doctests](./testing-demo/testing-demo-pytest-run-doctests.md)
+  - [Testing demo: pytest run unittest](./testing-demo/testing-demo-pytest-run-unittests.md)
+  - [Test demo: test coverage](./testing-demo/testing-demo-test-coverage.md)
+  - [Exercise: Testing demo - anagrams](./testing-demo/exercise-testing-demo.md)
+  - [Exercise: Test previous solutions](./testing-demo/exercise-test-previous-solutions.md)
+  - [Solution: Testing demo](./testing-demo/solution-testing-demo.md)
 
 
