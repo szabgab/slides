@@ -181,17 +181,17 @@ of the `fh` object will be called when we leave the context of the `with` statem
 ## cwd context manager
 {id: cwd-context-manager}
 
-![](examples/advanced/mycwd.py)
-![](examples/advanced/context_cd.py)
+![](examples/context/mycwd.py)
+![](examples/context/context_cd.py)
 
 ```
 $ python context_cd.py /tmp
-/home/gabor/work/slides/python/examples/advanced
-/home/gabor/work/slides/python/examples/advanced
+/home/gabor/work/slides/python/examples/context
+/home/gabor/work/slides/python/examples/context
 
 $ python context_cd.py /opt
-/home/gabor/work/slides/python/examples/advanced
-/home/gabor/work/slides/python/examples/advanced
+/home/gabor/work/slides/python/examples/context
+/home/gabor/work/slides/python/examples/context
 ```
 
 
@@ -202,9 +202,9 @@ $ python context_cd.py /opt
 {i: tempfile}
 {i: mkdtemp}
 
-![](examples/advanced/mytmpdir.py)
-![](examples/advanced/use_mytmpdir.py)
-![](examples/advanced/use_mytmpdir.out)
+![](examples/context/mytmpdir.py)
+![](examples/context/use_mytmpdir.py)
+![](examples/context/use_mytmpdir.out)
 
 ## Context manager with class
 {id: with-context-manager}
@@ -212,7 +212,7 @@ $ python context_cd.py /opt
 {i: __exit__}
 
 
-![](examples/advanced/context-manager.py)
+![](examples/context/context-manager.py)
 
 ## Context managers with class
 {id: with-context-managers}
@@ -223,14 +223,14 @@ $ python context_cd.py /opt
 Even if there was en exception in the middle of the process,
 the __exit__ methods of each object will be called.
 
-![](examples/advanced/context-managers.py)
-![](examples/advanced/context-managers.out)
+![](examples/context/context-managers.py)
+![](examples/context/context-managers.out)
 
 
 ## Context manager: with for file
 {id: with}
 {i: with}
-![](examples/advanced/with_file.py)
+![](examples/context/with_file.py)
 
 
 ## With - context managers
@@ -247,15 +247,15 @@ the __exit__ methods of each object will be called.
 Create a few CSV file likes these:
 
 
-![](examples/advanced/a.csv)
-![](examples/advanced/b.csv)
-![](examples/advanced/c.csv)
+![](examples/context/a.csv)
+![](examples/context/b.csv)
+![](examples/context/c.csv)
 
 
 Merge them horizontally to get this:
 
 
-![](examples/advanced/out.csv)
+![](examples/context/out.csv)
 
 * Do it without your own context manager
 * Create a context manager called myopen that accepts N filenames. It opens the first one to write and the other N-1 to read
@@ -273,7 +273,7 @@ Make the tempdir context manager example work on windows as well. Probably need 
 
 ## Solution: Context manager
 {id: solution-context}
-![](examples/advanced/merge.py)
+![](examples/context/merge.py)
 
 
 
