@@ -241,6 +241,9 @@
   - [do while](./advanced-lists/do-while.md)
   - [list slice is copy](./advanced-lists/list-slice-copy.md)
 
+- [Warnings](./warnings/index.md)
+  - [Warnings](./warnings/warnings.md)
+
 
 
 
