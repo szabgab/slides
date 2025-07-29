@@ -99,11 +99,11 @@ calling `os.chdir(start_dir)` just before calling `return`. However this would s
 in the function.
 {/aside}
 
-![](examples/advanced/no_context_cd.py)
+![](examples/context/no_context_cd.py)
 
-![](examples/advanced/no_context_cd_tmp.out)
+![](examples/context/no_context_cd_tmp.out)
 
-![](examples/advanced/no_context_cd_opt.out)
+![](examples/context/no_context_cd_opt.out)
 
 * In the second example `return` was called and thus we stayed on the /opt directory.:w
 
@@ -117,7 +117,7 @@ This is not the recommended way to open a file, but this is how it was done befo
 Here we have the same issue. We have a conditional call to `return` where we forgot to close the file.
 {/aside}
 
-![](examples/advanced/no_context_fh.py)
+![](examples/context/no_context_fh.py)
 
 
 ## open in for loop
@@ -141,42 +141,42 @@ If we open the file in the recommended way using the `with` statement then we ca
 of the `fh` object will be called when we leave the context of the `with` statement.
 {/aside}
 
-![](examples/advanced/with_fh.py)
+![](examples/context/with_fh.py)
 
 
 ## Plain context manager
 {id: plain-context-manager}
 
-![](examples/advanced/my_plain_context.py)
-![](examples/advanced/my_plain_context.out)
+![](examples/context/my_plain_context.py)
+![](examples/context/my_plain_context.out)
 
 
 ## Param context manager
 {id: param-context-manager}
 
-![](examples/advanced/my_param_context.py)
-![](examples/advanced/my_param_context.out)
+![](examples/context/my_param_context.py)
+![](examples/context/my_param_context.out)
 
 
 ## Context manager that returns a value
 {id: return-context-manager}
 
-![](examples/advanced/my_tempdir.py)
+![](examples/context/my_tempdir.py)
 
-![](examples/advanced/use_my_tempdir.py)
-![](examples/advanced/use_my_tempdir.out)
+![](examples/context/use_my_tempdir.py)
+![](examples/context/use_my_tempdir.out)
 
 ## Use my tempdir - return
 {id: use-my-tempdir-return}
 
-![](examples/advanced/use_my_tempdir_return.py)
-![](examples/advanced/use_my_tempdir_return.out)
+![](examples/context/use_my_tempdir_return.py)
+![](examples/context/use_my_tempdir_return.out)
 
 ## Use my tempdir - exception
 {id: use-my-tempdir-exception}
 
-![](examples/advanced/use_my_tempdir_exception.py)
-![](examples/advanced/use_my_tempdir_exception.out)
+![](examples/context/use_my_tempdir_exception.py)
+![](examples/context/use_my_tempdir_exception.out)
 
 ## cwd context manager
 {id: cwd-context-manager}
