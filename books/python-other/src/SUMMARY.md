@@ -208,3 +208,29 @@
   - [A list of functions](./decorators/list-of-dunctions.md)
   - [Insert element in sorted list using insort](./decorators/instert-element-in-sorted-list-using-insort.md)
 
+- [Context managers (with statement)](./context/index.md)
+  - [Why use context managers?](./context/context-manager-why.md)
+  - [Using Context Manager](./context/context-manager-how.md)
+  - [Context Manager examples](./context/context-manager-examples.md)
+  - [cd in a function](./context/cd-in-function.md)
+  - [open in function](./context/open-in-function.md)
+  - [open in for loop](./context/open-in-for-loop.md)
+  - [open in function using with](./context/open-in-function-with.md)
+  - [Plain context manager](./context/plain-context-manager.md)
+  - [Param context manager](./context/param-context-manager.md)
+  - [Context manager that returns a value](./context/return-context-manager.md)
+  - [Use my tempdir - return](./context/use-my-tempdir-return.md)
+  - [Use my tempdir - exception](./context/use-my-tempdir-exception.md)
+  - [cwd context manager](./context/cwd-context-manager.md)
+  - [tempdir context manager](./context/tempdir-context-manager.md)
+  - [Context manager with class](./context/with-context-manager.md)
+  - [Context managers with class](./context/with-context-managers.md)
+  - [Context manager: with for file](./context/with.md)
+  - [With - context managers](./context/with-example.md)
+  - [Exercise: Context manager](./context/exercise-context.md)
+  - [Exercise: Tempdir on Windows](./context/exercise-tempdir-on-windows.md)
+  - [Solution: Context manager](./context/solution-context.md)
+
+
+
+
