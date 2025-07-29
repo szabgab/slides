@@ -206,5 +206,5 @@
   - [Solution: Logger decorator (testing)](./decorators/solution-logger-decor-testing.md)
   - [Solution decorators decorator](./decorators/solution-decorators.md)
   - [A list of functions](./decorators/list-of-dunctions.md)
-
+  - [Insert element in sorted list using insort](./decorators/instert-element-in-sorted-list-using-insort.md)
 
