@@ -401,4 +401,9 @@
   - [Exercise: package](./packages/exercise-package.md)
   - [Exercise: create executable](./packages/exercise-create-executable.md)
 
+- [Distribution of Python code](./distribution/index.md)
+  - [Distribution demo 1](./distribution/demo1.md)
+  - [Distribution demo 2](./distribution/demo2.md)
+  - [Distribution demo 3](./distribution/demo3.md)
+
 
