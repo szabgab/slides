@@ -330,6 +330,16 @@
   - [Jupyter notebook Checkpoints](./jupyter/jupyter-notebook-checkpoints.md)
   - [Jupyter notebook autoreload](./jupyter/jupyter-notebook-autoreload.md)
 
+- [Tox](./tox/index.md)
+  - [Tox Examples](./tox/tox-example.md)
 
+- [Selenium](./selenium/index.md)
+  - [Selenium installation](./selenium/selenium-installation.md)
+  - [Get started with Selenium](./selenium/selenium-get-started.md)
+  - [Selenium Headless Screenshot](./selenium/selenium-headless-screenshot.md)
 
+- [Playwright](./playwright/index.md)
+  - [Playwright installation](./playwright/playwright-installation.md)
+  - [Playwright demo](./playwright/playwright-demo.md)
+  - [Playwright screenshot](./playwright/playwright-screenshot.md)
 
