@@ -16,6 +16,9 @@
   - [Triangle](./shapes/triangle.md)
   - [Polyline](./shapes/polyline.md)
   - [Text](./shapes/text.md)
+    - [Text with stroke (border) and no fill (color)](./shapes/text-no-fill.md)
+    - [tspan to add style to part of the text](./shapes/text-with-tspan.md)
+    - [Text with letters rotated](./shapes/text-rotated.md)
 
   - [Rectangles](./shapes/rectangles.md)
   - [Square](./shapes/square.md)
