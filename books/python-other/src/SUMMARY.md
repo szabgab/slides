@@ -364,6 +364,18 @@
   - [Inspect](./advanced-functions/inspect.md)
 
 
+- [Variable number of function arguments](./function-arguments/index.md)
+  - [Python function arguments - a reminder](./function-arguments/function-arguments.md)
+  - [Functions with unknown number of argumerns](./function-arguments/function-with-unknown-number-of-arguments.md)
+  - [Variable length argument list with `*` and `**`](./function-arguments/varagrs.md)
+  - [Passing arguments as they were received (but incorrectly)](./function-arguments/passing-varargs.md)
+  - [Unpacking args before passing them on](./function-arguments/unpacking-args.md)
+  - [Exercise: implement the my_sum function](./function-arguments/exercise-sum-function.md)
+  - [Solution: implement the my_sum function](./function-arguments/solution-sum-function.md)
+  - [Exercise: implement the reduce function](./function-arguments/exercise-reduce-function.md)
+  - [Soluton: implement the reduce function](./function-arguments/solution-reduce-function.md)
+  - [Exercise: sort pairs](./function-arguments/exercise-sort-pairs.md)
+  - [Solution: sort pairs](./function-arguments/solution-sort-pairs.md)
 
 
 
