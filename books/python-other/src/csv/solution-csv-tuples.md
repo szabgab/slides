@@ -1,0 +1,8 @@
+# Solution: CSV as dictionary of tuples of dictionaries
+
+Create a script called **monty_python_dictionary_of_tuples.py** that given a file like the CSV file of Monty Python troupe (examples/csv/monty_python.csv" %},
+will create a dictionary where we can look up information about them based on the first name and last name. For example:
+
+{% embed include file="src/examples/csv/read_mp_tuple.py" %}
+
+
