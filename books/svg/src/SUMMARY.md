@@ -37,4 +37,7 @@
   - [Rectangle using Perl](./perl/rectangle.md)
   - [Grid using Perl](./perl/grid.md)
 
+- [SVG using Rust](./rust/index.md)
+  - [Line](./rust/linde.md)
+
 - [Book cover](./book-cover.md)
