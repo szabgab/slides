@@ -10,3 +10,6 @@
 
 * Perl script to generate the Star of David.
 * Perl script to generate the snake.
+
+
+* Some tool to verify if the SVG file is correct. e.g. no invalid attribute names or attribute values?
