@@ -418,5 +418,17 @@
   - [concat](./ctypes/ctypes-concat.md)
   - [links](./ctypes/ctypes-links.md)
 
+- [2to3](./2to3/index.md)
+  - [Convertig from Python 2 to Python 3](./2to3/converting-from-2-to-3.md)
+  - [division](./2to3/division.md)
+  - [print in Python 2](./2to3/print2.md)
+  - [print in Python 3](./2to3/print3.md)
+  - [input and raw_input](./2to3/raw-input.md)
+  - [Code that works on both 2 and 3](./2to3/dual-life-code.md)
+  - [Compare different types](./2to3/compare-different-types-2to3.md)
+  - [Octal numbers](./2to3/octal-numbers.md)
+  - [2to3 Resources](./2to3/python3porting-resources.md)
+
+
 
 
