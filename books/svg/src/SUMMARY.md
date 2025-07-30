@@ -32,7 +32,9 @@
 - [SVG using Perl](./perl/index.md)
   - [Default SVG](./perl/default.md)
   - [Plain SVG](./perl/plain.md)
+  - [Line using Perl](./perl/line.md)
   - [Circle using Perl](./perl/circle.md)
   - [Rectangle using Perl](./perl/rectangle.md)
+  - [Grid using Perl](./perl/grid.md)
 
 - [Book cover](./book-cover.md)

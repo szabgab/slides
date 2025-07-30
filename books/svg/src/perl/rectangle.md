@@ -10,4 +10,4 @@ The generated SVG
 
 The image:
 
-![Circle](../examples/perl/rectangle.svg)
+![Rectangle](../examples/perl/rectangle.svg)

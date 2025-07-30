@@ -1,6 +1,5 @@
 # Lines
 
-
 ## Blue line
 
 {% embed include file="src/examples/line.svg" %}
