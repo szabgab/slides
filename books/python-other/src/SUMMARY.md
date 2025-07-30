@@ -406,4 +406,10 @@
   - [Distribution demo 2](./distribution/demo2.md)
   - [Distribution demo 3](./distribution/demo3.md)
 
+- [Distribute Python application as an exe](./distribute/index.md)
+  - [Packaging applications (creating executable binaries)](./distribute/packaging-applications.md)
+  - [Using PyInstaller](./distribute/pyinstaller.md)
+  - [Other PyInstaller examples](./distribute/pyinstaller-and-sys.md)
+  - [Other](./distribute/pyinstaller-other.md)
+  - [Py2app for Mac](./distribute/py2app.md)
 
