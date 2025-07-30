@@ -377,9 +377,28 @@
   - [Exercise: sort pairs](./function-arguments/exercise-sort-pairs.md)
   - [Solution: sort pairs](./function-arguments/solution-sort-pairs.md)
 
-
-
-
-
+- [Python Packages](./packages/index.md)
+  - [Why Create package](./packages/why-create-package.md)
+  - [Create package](./packages/create-package.md)
+  - [Internal usage](./packages/internal-usage.md)
+  - [use module in package - relative path](./packages/use-package-module.md)
+  - [use package (does not work)](./packages/use-package.md)
+  - [package importing (and exporting) module](./packages/package-importing-module.md)
+  - [use package (module) with import](./packages/use-package-module-with-import.md)
+  - [use package with import](./packages/use-package-with-import.md)
+  - [Creating an installable Python package](./packages/package-basics.md)
+  - [Create tar.gz file](./packages/package-sdist.md)
+  - [Install Package](./packages/package-install.md)
+  - [Dependencies](./packages/package-dependencies.md)
+  - [Add README file](./packages/package-other-file.md)
+  - [Add README file (setup.py)](./packages/package-add-readme.md)
+  - [Include executables](./packages/package-executables.md)
+  - [Add tests](./packages/add-tests.md)
+  - [Add tests calc](./packages/add-tests-calc.md)
+  - [Add tests all](./packages/add-tests-all.md)
+  - [setup.py](./packages/package-setup2.md)
+  - [Run tests and create package](./packages/run-test-and-create-package.md)
+  - [Exercise: package](./packages/exercise-package.md)
+  - [Exercise: create executable](./packages/exercise-create-executable.md)
 
 
