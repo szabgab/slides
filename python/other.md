@@ -155,17 +155,6 @@ Later we'll see the `argparse` module that can handle command line arguments in 
 
 
 
-## SAX with coroutine
-{id: sax-coroutine}
-![](examples/xml/sax_coroutine.py)
-
-
-copied from [Stack Overflow](http://stackoverflow.com/questions/8873643/how-to-return-data-from-a-python-sax-parser)
-based on [coroutines](http://www.dabeaz.com/coroutines/)
-
-![](examples/xml/cosax.py)
-
-
 ## Getting the class name of an object
 {id: class-name}
 {i: __class__}

@@ -283,6 +283,8 @@
   - [XML SAX - Simple API for XML](./xml/xml-sax.md)
   - [SAX collect](./xml/xml-sax-collect.md)
   - [XML elementtree](./xml/xml-elemttree.md)
+  - [SAX with coroutine](./xml/sax-coroutine.md)
+
 
 - [Matplotlib](./matplotlib/index.md)
   - [About Matplotlib](./matplotlib/matplotlib-about.md)
