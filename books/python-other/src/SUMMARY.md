@@ -343,3 +343,31 @@
   - [Playwright demo](./playwright/playwright-demo.md)
   - [Playwright screenshot](./playwright/playwright-screenshot.md)
 
+- [Advancted functions](./advanced-functions/index.md)
+  - [Variable scopes](./advanced-functions/variable-scopes.md)
+  - [Name resolution order (LEGB)](./advanced-functions/name-resolution-order.md)
+  - [Scoping: global seen from fuction](./advanced-functions/scoping-global-seen-from-function.md)
+  - [Assignment creates local scope](./advanced-functions/scoping-assignment-creates-local-scope.md)
+  - [Local scope gone wrong](./advanced-functions/local-scope-gone-wrong.md)
+  - [Changing global variable from a function](./advanced-functions/changing-global-variable.md)
+  - [Global variables mutable in functions](./advanced-functions/mutable-in-function.md)
+  - [Scoping issues](./advanced-functions/scoping-issues.md)
+  - [sub in sub](./advanced-functions/sub-in-sub.md)
+  - [Scoping sub in sub (enclosing scope)](./advanced-functions/scoping-internal-sub.md)
+  - [Function objects](./advanced-functions/function-objects.md)
+  - [Functions are created at run time](./advanced-functions/runtime-def.md)
+  - [Mutable default](./advanced-functions/function-parameters-mutable-default.md)
+  - [Use None as default parameter](./advanced-functions/none-as-default-parameter.md)
+  - [Inner function created every time the outer function runs](./advanced-functions/runtime-inner-def.md)
+  - [Static variable](./advanced-functions/static-variable.md)
+  - [Static variable in generated function](./advanced-functions/static-variable-in-generated-func.md)
+  - [Inspect](./advanced-functions/inspect.md)
+
+
+
+
+
+
+
+
+

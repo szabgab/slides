@@ -1,0 +1,1 @@
+# Advancted functions
