@@ -315,19 +315,6 @@ Is this interesting at all ?
 ![](examples/iterators/alter.py)
 
 
-## Create a counter queue
-{id: class-counter-queue}
-{i: Queue}
-
-![](examples/threads/counter_queue.py)
-
-## A Queue of tasks
-{id: class-tasks}
-
-![](examples/threads/run_tasks.py)
-
-
-
 ## Python from .NET
 {id: python-from-dotnet}
 
