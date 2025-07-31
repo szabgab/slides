@@ -50,4 +50,5 @@
 
 - [Book cover](./book-covers/index.md)
   - [Functional Programming in Python](./book-covers/python-functional-programming.md)
+  - [Testing Python](./book-covers/python-testing.md)
   - [OOP in Perl](./book-covers/perl-oop.md)
