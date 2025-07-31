@@ -22,6 +22,8 @@
     - [Text with letters rotated](./shapes/text-rotated.md)
     - [Rotate the whole text with transform](./shapes/text-transformed.md)
 
+  - [Embed external image](./shapes/image.md)
+
   - [Rectangles](./shapes/rectangles.md)
   - [Square](./shapes/square.md)
   - [Ellipse](./shapes/ellipse.md)
@@ -48,3 +50,4 @@
 
 - [Book cover](./book-covers/index.md)
   - [Functional Programming in Python](./book-covers/python-functional-programming.md)
+  - [OOP in Perl](./book-covers/perl-oop.md)

@@ -1,0 +1,12 @@
+<svg    width="2100" height="3000" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="2000"          fill="#EEEEEE" />
+  <rect width="100%" height="1000" y="2000" fill="black" />
+
+  <text x="1050" y="400" font-size="200" text-anchor="middle" fill="black">OOP</text>
+  <text x="1050" y="900" font-size="200" text-anchor="middle" fill="black">Object Oriented</text>
+  <text x="1050" y="1200" font-size="200" text-anchor="middle" fill="black">Programming</text>
+  <text x="1050" y="1500" font-size="200" text-anchor="middle" fill="black">in Perl</text>
+
+
+  <text x="750" y="2700" font-size="150" text-anchor="left" fill="yellow">by Gábor Szabó</text>
+</svg>
