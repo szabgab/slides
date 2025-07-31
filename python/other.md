@@ -136,22 +136,22 @@ Later we'll see the `argparse` module that can handle command line arguments in 
 {i: inspect}
 {i: currentframe}
 {i: stack}
-![](examples/advanced/name_of_current_function.py)
+![](examples/other/name_of_current_function.py)
 
 
 ## Name of the caller function in Python
 {id: name-of-the-caller-function}
 {i: inspect}
 {i: stack}
-![](examples/advanced/name_of_caller_function.py)
+![](examples/other/name_of_caller_function.py)
 
 
 ## Stack trace in Python using inspect
 {id: stack-trace-using-inspect}
 {i: inspect}
 {i: stack}
-![](examples/advanced/stack_trace.py)
-![](examples/advanced/stack_trace.out)
+![](examples/other/stack_trace.py)
+![](examples/other/stack_trace.out)
 
 
 
@@ -193,7 +193,7 @@ Group elements
 circular references are cleaned up the by the garbage collector
 but maybe not all the memory is given back to the OS, and it can take some time to clean them up.
 
-![](examples/advanced/circular.py)
+![](examples/other/circular.py)
 
 but weakref might expedite the cleanup. See also the gc module and if I can show it
 http://stackoverflow.com/questions/2428301/should-i-worry-about-circular-references-in-python
@@ -201,7 +201,7 @@ http://stackoverflow.com/questions/2428301/should-i-worry-about-circular-referen
 ## Context managers: with (file) experiments
 {id: context-managers-with-file-experiments}
 
-![](examples/advanced/with_file_write.py)
+![](examples/other/with_file_write.py)
 
 ```
 f = open('out.txt', 'w')
@@ -279,8 +279,8 @@ It was experimental and dropped from Python 3
 
 * [](https://docs.python.org/2/library/hotshot.html)
 
-![](examples/advanced/slow_hotshot.py)
-![](examples/advanced/slow_hotshot.out)
+![](examples/other/slow_hotshot.py)
+![](examples/other/slow_hotshot.out)
 
 ## Create class with metaclass
 {id: create-class-with-metaclass}
