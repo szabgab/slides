@@ -429,6 +429,17 @@
   - [Octal numbers](./2to3/octal-numbers.md)
   - [2to3 Resources](./2to3/python3porting-resources.md)
 
+- [Design Patterns](./design-patterns/index.md)
+  - [What are Design Patterns?](./design-patterns/what-are-design-patterns.md)
+  - [Don't replace built-in objects](./design-patterns/dont-replace-built-in-objects.md)
+  - [Facade - simple interface to complex system](./design-patterns/dp-facade.md)
+  - [Monkey Patching](./design-patterns/monkey-patching.md)
+  - [Creation DPs "Just One"](./design-patterns/just-one-design-pattern.md)
+  - [Singleton](./design-patterns/singleton.md)
+  - [Monostate (Borg)](./design-patterns/monostate-design-pattern.md)
+  - [Dispatch table](./design-patterns/dispatch-table.md)
+
+
 
 
 
