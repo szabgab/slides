@@ -46,4 +46,5 @@
 - [SVG using Rust](./rust/index.md)
   - [Line](./rust/linde.md)
 
-- [Book cover](./book-cover.md)
+- [Book cover](./book-covers/index.md)
+  - [Functional Programming in Python](./book-covers/python-functional-programming.md)
