@@ -530,4 +530,11 @@
   - [Solution: Process N files in parallel](./multiprocess/solution-process-n-files-in-parallel.md)
   - [Solution: Fetch URLs in parallel](./multiprocess/solution-fetch-urls-in-parallel.md)
 
+- [Multitasking](./multitasking/index.md)
+  - [What is Multitasking?](./multitasking/what-is-multitasking.md)
+  - [Multitasking example](./multitasking/multitasking-example.md)
+  - [Multitasking example with wait](./multitasking/multitasking-example-with-wait.md)
+  - [Multitaksing - second loop waits for first one](./multitasking/multitaksing-two-loops.md)
+  - [Multitasking counter](./multitasking/multitasking-counter.md)
+  - [Multitasking counter with thread locking](./multitasking/multitasking-counter-with-locking.md)
 
