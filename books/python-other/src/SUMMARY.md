@@ -439,6 +439,15 @@
   - [Monostate (Borg)](./design-patterns/monostate-design-pattern.md)
   - [Dispatch table](./design-patterns/dispatch-table.md)
 
+- [Parallel](./parallel/index.md)
+  - [Types of Problems](./parallel/problems-solved-by-parallel.md)
+  - [Types of solutions](./parallel/types-of-solutions.md)
+  - [Time slicing](./parallel/time-slicing.md)
+  - [Concurrencies](./parallel/concurrencies.md)
+  - [How many parallels to use?](./parallel/how-many-parallels-to-use)
+  - [Dividing jobs](./parallel/dividing-jobs.md)
+  - [Performance Monitoring](./parallel/performance-monitoring.md)
+
 
 
 
