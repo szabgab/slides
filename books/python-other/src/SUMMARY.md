@@ -501,4 +501,12 @@
   - [Sync chores](./async/sync-chorse.md)
   - [Async chores](./async/async-chorse.md)
 
+- [Async more](./async-more/index.md)
+  - [Explanation](./async-more/async-explanation.md)
+  - [Coroutines](./async-more/coroutines.md)
+  - [More about asyncio](./async-more/more-about-async.md)
+  - [unsync](./async-more/unsync.md)
+  - [Async files](./async-more/async-files.md)
+  - [Async example](./async-more/async-example.md)
+
 
