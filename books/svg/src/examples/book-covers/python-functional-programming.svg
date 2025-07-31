@@ -1,11 +1,10 @@
 <svg    width="2100" height="3000" xmlns="http://www.w3.org/2000/svg">
-  <rect width="100%" height="2000"          fill="grey" />
+  <rect width="100%" height="2000"          fill="#DDDDDD" />
   <rect width="100%" height="1000" y="2000" fill="black" />
 
-  <image x="600" y="300" width="900" height="1100" href="../python-logo-only.svg" />
+  <text x="1050" y="400" font-size="270" text-anchor="middle" fill="black">Functional</text>
+  <text x="1050" y="750" font-size="270" text-anchor="middle" fill="black">Programming</text>
+  <text x="1050" y="1500" font-size="270" text-anchor="middle" fill="black">in Python</text>
 
-  <text x="75" y="2200" font-size="150" text-anchor="left" fill="white">Functional Programming</text>
-  <text x="1250" y="2450" font-size="150" text-anchor="middle" fill="white">in Python</text>
-
-  <text x="1450" y="2900" font-size="70" text-anchor="left" fill="yellow">by Gábor Szabó</text>
+  <text x="350" y="2700" font-size="200" text-anchor="left" fill="yellow">by Gábor Szabó</text>
 </svg>

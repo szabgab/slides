@@ -1,6 +1,7 @@
-# Book cover
+# Functional Programming in Python
 
-<object data="../examples/book-covers/python-functional-programming.svg" type="image/svg+xml"></object>
+
+![Functional programming in Python](../examples/book-covers/python-functional-programming.svg)
 
 {% embed include file="src/examples/book-covers/python-functional-programming.svg" %}
 
