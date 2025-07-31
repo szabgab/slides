@@ -65,23 +65,23 @@ This code does some stuff which was deemed to be "too slow" by some client.
 The actual content is not that interesting.
 {/aside}
 
-![](examples/advanced/slow.py)
+![](examples/perf/slow.py)
 
 
 ## profile slow code
 {id: profile-slow-code}
 {i: profile}
 
-![](examples/advanced/slow_profile.py)
-![](examples/advanced/slow_profile.out)
+![](examples/perf/slow_profile.py)
+![](examples/perf/slow_profile.out)
 
 
 ## cProfile slow code
 {id: cprofile-slow-code}
 {i: cProfile}
 
-![](examples/advanced/slow_cprofile.py)
-![](examples/advanced/slow_cprofile.out)
+![](examples/perf/slow_cprofile.py)
+![](examples/perf/slow_cprofile.out)
 
 
 ## Benchmarking
@@ -90,15 +90,15 @@ The actual content is not that interesting.
 * [benchmark](http://docs.python.org/library/timeit.html)
 
 
-![](examples/advanced/benchmark.py)
-![](examples/advanced/benchmark.out)
+![](examples/perf/benchmark.py)
+![](examples/perf/benchmark.out)
 
 
 ## Benchmarking subs
 {id: benchmarking-subs}
 
-![](examples/advanced/benchmark_subs.py)
-![](examples/advanced/benchmark_subs.out)
+![](examples/perf/benchmark_subs.py)
+![](examples/perf/benchmark_subs.out)
 
 ## Counting words - which implementation is faster?
 {id: counting-words-which-implementation-is-faster}
@@ -123,8 +123,8 @@ The actual content is not that interesting.
 {i: functools}
 {i: reduce}
 
-![](examples/advanced/add_numbers.py)
-![](examples/advanced/add_numbers.out)
+![](examples/perf/add_numbers.py)
+![](examples/perf/add_numbers.out)
 
 
 ## Levenshtein distance
