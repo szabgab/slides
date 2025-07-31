@@ -2,7 +2,7 @@
   <rect width="100%" height="2000"          fill="grey" />
   <rect width="100%" height="1000" y="2000" fill="black" />
 
-  <image x="600" y="300" width="900" height="1100" href="python-logo-only.svg" />
+  <image x="600" y="300" width="900" height="1100" href="../python-logo-only.svg" />
 
   <text x="75" y="2200" font-size="150" text-anchor="left" fill="white">Functional Programming</text>
   <text x="1250" y="2450" font-size="150" text-anchor="middle" fill="white">in Python</text>
