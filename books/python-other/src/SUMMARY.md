@@ -448,7 +448,24 @@
   - [Dividing jobs](./parallel/dividing-jobs.md)
   - [Performance Monitoring](./parallel/performance-monitoring.md)
 
-
-
+- [Threads](./threads/index.md)
+  - [Python Threading docs](./threads/python-threading.md)
+  - [Threaded counters](./threads/threaded-counter.md)
+  - [Simple threaded counters](./threads/simple-threaded-counter.md)
+  - [Simple threaded counters (parameterized)](./threads/simple-threaded-counter-parameterized.md)
+  - [Pass parameters to threads - Counter with attributes](./threads/class-counter.md)
+  - [Create a central counter](./threads/class-counter-central.md)
+  - [Lock - acquire - release](./threads/class-counter-central-lock.md)
+  - [Counter - plain](./threads/counter-central-plain.md)
+  - [GIL - Global Interpreter Lock](./threads/gil.md)
+  - [Thread load](./threads/thread-load.md)
+  - [Exercise: thread files](./threads/exercise-threads-queue.md)
+  - [Exercise: thread URL requests.](./threads/exercise-threads-url-requests.md)
+  - [Exercise: thread queue](./threads/exercise-thread-queue.md)
+  - [Solution: thread queue](./threads/solution-thread-queue.md)
+  - [Solution: thread URL requests.](./threads/solution-threads-url-requests.md)
+  - [Concurrency](./threads/concurrency.md)
+  - [Create a counter queue](./threads/class-counter-queue.md)
+  - [A Queue of tasks](./threads/class-tasks.md)
 
 
