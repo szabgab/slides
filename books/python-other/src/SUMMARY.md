@@ -444,7 +444,7 @@
   - [Types of solutions](./parallel/types-of-solutions.md)
   - [Time slicing](./parallel/time-slicing.md)
   - [Concurrencies](./parallel/concurrencies.md)
-  - [How many parallels to use?](./parallel/how-many-parallels-to-use)
+  - [How many parallels to use?](./parallel/how-many-parallels-to-use.md)
   - [Dividing jobs](./parallel/dividing-jobs.md)
   - [Performance Monitoring](./parallel/performance-monitoring.md)
 
