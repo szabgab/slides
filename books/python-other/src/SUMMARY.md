@@ -468,4 +468,14 @@
   - [Create a counter queue](./threads/class-counter-queue.md)
   - [A Queue of tasks](./threads/class-tasks.md)
 
+- [Forking](./forking/index.md)
+  - [Fork](./forking/fork.md)
+  - [Forking](./forking/forking.md)
+  - [Fork skeleton](./forking/fork-skeleton.md)
+  - [Fork with load](./forking/fork-load.md)
+  - [Fork load results](./forking/fork-load-results.md)
+  - [Marshalling / Serialization](./forking/marshalling.md)
+  - [Fork with random](./forking/fork-with-random.md)
+  - [Exercise: fork return data](./forking/exercise-fork-return-data.md)
+  - [Solution: fork return data](./forking/solution-fork-return-data.md)
 
