@@ -1,24 +1,8 @@
-generate the books: perl mdbooks.pl
-\mv perl-oop/book/markdown/* ~/Dropbox/perl-oop/manuscript/
-\cp perl-oop/title_page.png ~/Dropbox/perl-oop/manuscript/resources/
-Preview: Visit https://leanpub.com/perl-oop/preview
-Publish: https://leanpub.com/perl-oop/publish
-Create Preview
-Check it in ~/Dropbox/perl-oop/preview/
+Generate all the books:
+
+perl mdbooks.pl
 
 
-\mv python-functional-programming/book/markdown/* ~/Dropbox/python-functional-programming/manuscript/
-Preview: Visit https://leanpub.com/python-functional-programming/preview
-Publish: https://leanpub.com/python-functional-programming/publish
-Create Preview
-Check it in ~/Dropbox/python-functional-programming/preview/
+Publish on Leanpub:
 
-rm -rf ~/Dropbox/svg/manuscript
-\mv books/svg/book/markdown ~/Dropbox/svg/manuscript
-Preview:
-  Visit https://leanpub.com/svg/preview
-  Create Preview
-  Check it in ~/Dropbox/svg/preview/
-Publish:
-  Visit: https://leanpub.com/svg/publish
-
+perl leanpub.pl svg
