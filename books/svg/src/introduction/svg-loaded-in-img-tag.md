@@ -22,3 +22,17 @@ In the HTML document refer to the file via an `img` tag:
 The page is rendered like this:
 
 ![](../examples/svg-loaded-via-html-tag.png)
+
+## SVG loaded in an object tag
+
+Certain features do not work when using the `img` tag to display an SVG file, specifically the embedding of other images in the SVG file using the `image` tag that we'll see later. Using `object` solves this problem.
+
+<object data="../examples/load-svg-via-img-tag.svg" type="image/svg+xml"></object>
+
+## SVG loaded in an iframe
+
+<iframe src="load-svg-via-img-tag.svg"></iframe>
+
+
+
+
