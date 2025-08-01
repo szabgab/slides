@@ -7,7 +7,6 @@
     "repo": "https://github.com/szabgab/slides/blob/main/",
     "version": "1.18",
     "files": [
-        "faq.md",
         "appendix.md",
         "algorithm.md",
         "scapy.md",
