@@ -506,8 +506,8 @@ We will see how break and continue work, but first let's see a loop to find all 
 * sys.modules to list loaded modules
 * imp.reload to reload module (Just reload before 3.3)
 
-![](examples/appendix/mod.py)
-![](examples/appendix/a.py)
+![](examples/other/mod.py)
+![](examples/other/c.py)
 
 
 ## import hooks
@@ -565,7 +565,7 @@ and we don't want to blindly change the behaviour of Python.
 * One can connect the outside name to an inside name using the 'global' keyword.
 * if and for blocks don't provide scoping.
 
-![](examples/appendix/scope.py)
+![](examples/other/scope.py)
 
 {aside}
 
@@ -609,6 +609,6 @@ Unless it was marked using the global word.
 
 ## Look deeper in a list
 {id: deeper}
-![](examples/appendix/string_deeper.py)
+![](examples/other/string_deeper.py)
 
 
