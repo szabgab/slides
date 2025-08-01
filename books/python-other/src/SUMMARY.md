@@ -538,4 +538,10 @@
   - [Rectangle with rounded corners](./pil/rectangle-with-rounded-corners.md)
   - [TODO](./pil/pil-todo.md)
 
+- [FAQ](./faq/index.md)
+  - [How not to name example scirpts?](./faq/file-naming-advice.md)
+  - [Platform independent code](./faq/platform-independent-code.md)
+  - [How to profile a python code to find causes of slowness?](./faq/profile.md)
+  - [pdb = Python Debugger](./faq/pdb-debugger.md)
+  - [Avoid Redefining functions](./faq/avoid-redefining-functions.md)
 
