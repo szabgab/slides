@@ -512,4 +512,6 @@
   - [Exercise: Signals](./signals/exercise-signals.md)
   - [Ctrl-z](./signals/ctrl-z.md)
 
+- [Data Science](./data-science/index.md)
+  - [Data Scince Resources](./data-science/data-science-resources.md)
 
