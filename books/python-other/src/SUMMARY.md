@@ -469,4 +469,10 @@
   - [Exercise: compare split words:](./optimizing-code/exercise-compare-split-words.md)
   - [Exercise: count words](./optimizing-code/exercise-performance-of-word-coounting.md)
 
+- [Python Pitfalls](./pitfalls/index.md)
+  - [Reuse of existing module name](./pitfalls/reuse-module-name.md)
+  - [Use the same name more than once](./pitfalls/overwrite-names.md)
+  - [Compare string and number](./pitfalls/compare-string-and-number.md)
+  - [Compare different types](./pitfalls/compare-different-types-in-python3.md)
+  - [Sort mixed data](./pitfalls/sort-mixed-data.md)
 
