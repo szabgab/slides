@@ -355,7 +355,7 @@ python common_error_in_function.py 42
 ## Gravatar in Python
 {id: gravatar}
 
-![](examples/gravatar.py)
+![](examples/other/gravatar.py)
 
 ## Debug with ptpython
 {id: debug-with-ptpython}
@@ -440,7 +440,7 @@ If we we wait a bit between calls, or if we flush the buffer of the file, then t
 
 ## print_function
 {id: print-in-the-future}
-![](examples/future/print.py)
+![](examples/other/print.py)
 
 
 ## Dividers (no break or continue)
