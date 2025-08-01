@@ -17,6 +17,7 @@
         "overview.md",
         "serialization.md",
         "mlops.md",
+        "iterators.md",
         "other.md"
     ]
 }
