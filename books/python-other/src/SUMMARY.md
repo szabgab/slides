@@ -476,3 +476,9 @@
   - [Compare different types](./pitfalls/compare-different-types-in-python3.md)
   - [Sort mixed data](./pitfalls/sort-mixed-data.md)
 
+- [Linters](./linters/index.md)
+  - [Static Code Analyzis - Linters](./linters/linters.md)
+  - [PEP8](./linters/pep8.md)
+  - [F811 - redefinition of unused](./linters/flake8-f811.md)
+  - [Warn when Redefining functions](./linters/warn-when-redefining-functions.md)
+
