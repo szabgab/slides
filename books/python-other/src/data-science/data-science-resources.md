@@ -1,10 +1,4 @@
-# Data Science
-{id: data-science}
-
-
-## Data Scince Resources
-{id: data-science-resources}
-
+# Data Scince Resources
 
 * [Machine Learning](https://www.coursera.org/learn/machine-learning/home/welcome) with Andrew Ng.
 * [Data Scientist with Python](https://learn.datacamp.com/career-tracks/data-scientist-with-python) on DataCamp.
