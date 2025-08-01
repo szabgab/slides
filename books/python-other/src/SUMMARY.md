@@ -489,3 +489,7 @@
   - [Python and .NET examples](./dotnet/python-and-dotnet.md)
   - [Exercise Python and .NET](./dotnet/exercise-python-and-dotnet.md)
 
+- [Python and Java](./java/index.md)
+  - [Jython](./java/see-jython.md)
+  - [Calling Java from Python](./java/calling-java-from-python.md)
+
