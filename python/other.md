@@ -216,14 +216,6 @@ It was experimental and dropped from Python 3
 ![](examples/other/slow_hotshot.py)
 ![](examples/other/slow_hotshot.out)
 
-## Create class with metaclass
-{id: create-class-with-metaclass}
-
-![](examples/classes/meta.py)
-![](examples/classes/create_class.py)
-
-* [what is a metaclass](http://stackoverflow.com/questions/100003/what-is-a-metaclass-in-python)
-
 ## Python Descriptors
 {id: descriptors}
 {i: __init__}
@@ -360,21 +352,6 @@ python common_error_in_function.py 42
 
 ![](examples/other/find_insert_location_bisect.py)
 
-## Classes
-{id: old-oop-examples}
-
-![](examples/classes/ppl.py)
-![](examples/classes/ppl.out)
-
-## Create a class inherit from object
-{id: class-creation-inherit-from-object}
-
-* In Python 2.x classes had to inherit from `object` in order to become 'new style' classes.
-
-![](examples/classes/with_object.py)
-![](examples/classes/with_object.out)
-
-
 ## Gravatar in Python
 {id: gravatar}
 
@@ -474,17 +451,6 @@ We will see how break and continue work, but first let's see a loop to find all 
 ![](examples/other/no_break_continue.py)
 ![](examples/other/no_break_continue.out)
 
-
-
-## Lambdas
-{id: lambdas}
-![](examples/classes/lambdas.py)
-
-
-## Abstract Class
-{id: abstract-class}
-{i: abc}
-![](examples/classes/abstract.py)
 
 
 ## Remove file
