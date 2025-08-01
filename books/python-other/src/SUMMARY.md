@@ -545,3 +545,11 @@
   - [pdb = Python Debugger](./faq/pdb-debugger.md)
   - [Avoid Redefining functions](./faq/avoid-redefining-functions.md)
 
+- [Algorithm](./algorithms/index.md)
+  - [Exercise: Find the odd value](./algorithms/exercise-find-the-odd-value.md)
+  - [Solution: Find the odd value](./algorithms/solution-find-the-odd-value.md)
+  - [Exercise: Generalized find the odd value](./algorithms/exercise-generalized-find-the-odd-value.md)
+  - [Solution: Generlized Find the odd value](./algorithms/solution-generalized-find-the-odd-value.md)
+  - [Exercise: Shortest sublist with sum over limit](./algorithms/exercise-shortest-sublist.md)
+  - [Solution: Shortest sublist with sum over limit](./algorithms/solution-shortest-sublist.md)
+
