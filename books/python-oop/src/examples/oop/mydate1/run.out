@@ -1,7 +1,0 @@
-Date(2013, 11, 22)
-Date(2014, 1, 27)
-Date(2000, 2, 1)
-Traceback (most recent call last):
-  File "run.py", line 17, in <module>
-    Date.set_date(1999, 2, 1)
-TypeError: set_date() missing 1 required positional argument: 'd'

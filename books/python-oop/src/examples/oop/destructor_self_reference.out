@@ -1,6 +1,0 @@
-__init__ A
-__init__ B
-in main - after
-__del__ B
-after main
-__del__ A
