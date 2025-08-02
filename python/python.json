@@ -7,8 +7,6 @@
     "repo": "https://github.com/szabgab/slides/blob/main/",
     "version": "1.18",
     "files": [
-        "machine-learning.md",
-        "machine-learning2.md",
         "octave.md",
         "overview.md",
         "serialization.md",
