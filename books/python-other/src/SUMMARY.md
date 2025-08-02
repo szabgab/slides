@@ -668,4 +668,11 @@
   - [Functions](./overview/overview-functions.md)
   - [Modules](./overview/overview-modules.md)
 
+- [Serialization (Marshalling)](./serialization/index.md)
+  - [Why Serialization is needed?](./serialization/why-serialization.md)
+  - [Questions to ask](./serialization/data-serialization-questions.md)
+  - [Various tools for serialization](./serialization/tools-for-serialization.md)
+  - [Serialization with h5py](./serialization/serialization-h5py.md)
+  - [Serialization of single Numpy array](./serialization/serialization-of-single-numpy-array.md)
+  - [Serialization of multiple Numpy arrays](./serialization/serialization-of-multiple-numpy-arrays.md)
 
