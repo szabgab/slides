@@ -117,6 +117,19 @@
   - [Solution: compare files](./solution-compare-files.md)
   - [Solution: collect packets](./solution-collect-packets.md)
 
+- [Iterators](./iterators/index.md)
+  - [iterator - pairwise](./iterators/iterator-pairwise.md)
+  - [iterator - grouped](./iterators/iterator-grouped.md)
+  - [itertools - groupby](./iterators/itertools-groupby.md)
+  - [itertools - izip](./iterators/itertools-izip.md)
+  - [mixing iterators](./iterators/iterators-mixer.md)
+  - [mixing iterators](./iterators/iterators-mixer-iterators.md)
+  - [itertools - pairwise](./iterators/itertools-pairwise.md)
+  - [itertools - grouped](./iterators/itertools-grouped.md)
+  - [alter iterator](./iterators/iterators-alter.md)
+  - [Exercise: iterators - count](./iterators/exercise-reimplement-count.md)
+
+
 
 - [Generators and Generator Expressions](./generator-experssions.md)
   - [Generators Glossary](./generators-glossary.md)
