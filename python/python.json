@@ -9,7 +9,6 @@
     "files": [
         "mlops.md",
         "iterators.md",
-        "classes.md",
-        "other.md"
+        "classes.md"
     ]
 }
