@@ -589,3 +589,9 @@
   - [Create new turtle](./turtle/turtle-create-new.md)
   - [Clone a turtle](./turtle/turtle-clone.md)
 
+- [Refactor](./refactoring/index.md)
+  - [Refactoring example - change variable name](./refactoring/refactoring-change-variable-name.md)
+  - [How to Refactor](./refactoring/how-to-refactor.md)
+  - [Exercise: Fix deep indentation](./refactoring/exercise-fix-deep-indentation.md)
+
+
