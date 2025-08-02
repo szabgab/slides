@@ -1,5 +1,0 @@
-{'fname': 'Foo', 'lname': 'Bar', 'email': 'foo@bar.com'}
-Foo
-{'lname': 'Bar', 'email': 'foo@bar.com'}
-Bar
-{'email': 'foo@bar.com'}

@@ -1,4 +1,0 @@
-Traceback (most recent call last):
-  File "counter.py", line 5, in <module>
-    counter[word] += 1
-KeyError: 'eggplant'

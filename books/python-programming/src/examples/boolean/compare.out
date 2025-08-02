@@ -1,6 +1,0 @@
-Yes
-No
-Traceback (most recent call last):
-  File "examples/other/compare.py", line 11, in <module>
-    print("Yes" if x > y else "No") # Yes
-TypeError: '>' not supported between instances of 'str' and 'int'

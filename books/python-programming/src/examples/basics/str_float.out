@@ -1,7 +1,0 @@
-3.14
-3.14
-4.24
-Traceback (most recent call last):
-  File "/home/gabor/work/slides/python/examples/basics/str_float.py", line 9, in <module>
-    print(y + 1.1)
-TypeError: can only concatenate str (not "float") to str

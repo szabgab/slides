@@ -1,7 +1,0 @@
-car: null
-children:
-- Kid1
-- Kid2
-- Kid3
-code: 42
-name: Foo Bar

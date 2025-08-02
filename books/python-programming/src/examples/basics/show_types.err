@@ -1,4 +1,0 @@
-Traceback (most recent call last):
-  File "python/examples/basics/types.py", line 15, in <module>
-    print( type(hello) )   # str
-NameError: name 'hello' is not defined

@@ -1,7 +1,0 @@
-['examples/basics/cli.py']
-examples/basics/cli.py
-Traceback (most recent call last):
-  File "examples/basics/cli.py", line 6, in <module>
-    print(sys.argv[1])
-IndexError: list index out of range
-

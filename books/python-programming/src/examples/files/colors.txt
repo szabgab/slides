@@ -1,4 +1,0 @@
-blue
-yellow
-white
-green

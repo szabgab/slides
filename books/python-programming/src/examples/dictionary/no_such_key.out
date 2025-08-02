@@ -1,7 +1,0 @@
-Foo
-Traceback (most recent call last):
-  File "examples/dictionary/no_such_key.py", line 11, in <module>
-    main()
-  File "examples/dictionary/no_such_key.py", line 9, in main
-    print(user['email'])
-KeyError: 'email'

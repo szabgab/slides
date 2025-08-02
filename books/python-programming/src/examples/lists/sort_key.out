@@ -1,4 +1,0 @@
-['chicken', 'cow', 'snail', 'elephant']
-['chicken', 'cow', 'elephant', 'snail']
-['cow', 'snail', 'chicken', 'elephant']
-['elephant', 'chicken', 'snail', 'cow']

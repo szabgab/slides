@@ -1,8 +1,0 @@
-([2, 3, 5, 6],)
-<class 'tuple'>
-Traceback (most recent call last):
-  File "/home/gabor/work/slides/python/examples/functions/sum_of_list.py", line 5, in <module>
-    mysum(x)
-  File "/home/gabor/work/slides/python/examples/functions/mysum.py", line 6, in mysum
-    total += s
-TypeError: unsupported operand type(s) for +=: 'int' and 'list'
