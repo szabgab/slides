@@ -1,9 +1,0 @@
-foo in Real
-bar in Real
-foo in Fake
-Traceback (most recent call last):
-  File "no_abc.py", line 28, in <module>
-    f.bar()    # NotImplementedError
-  File "no_abc.py", line 9, in bar
-    raise NotImplementedError()
-__main__.NotImplementedError

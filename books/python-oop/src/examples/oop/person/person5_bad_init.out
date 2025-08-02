@@ -1,9 +1,0 @@
-Hello
-Traceback (most recent call last):
-  File "person5_bad_init.py", line 5, in <module>
-    p = Person(-1)
-  File "/home/gabor/work/slides/python-programming/examples/classes/person/person5.py", line 4, in __init__
-    self.age =  years
-  File "/home/gabor/work/slides/python-programming/examples/classes/person/person5.py", line 13, in age
-    raise ValueError("Age cannot be negative")
-ValueError: Age cannot be negative

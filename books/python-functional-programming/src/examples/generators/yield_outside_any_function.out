@@ -1,4 +1,0 @@
-  File "examples/generators/yield_outside_any_function.py", line 2
-    yield "ok";
-    ^
-SyntaxError: 'yield' outside function
