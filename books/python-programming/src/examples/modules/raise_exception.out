@@ -1,6 +1,0 @@
-add(2, 2) == 4
-add(9, 2) == 11
-Traceback (most recent call last):
-  File "examples/functions/raise_exception.py", line 7, in <module>
-    raise Exception(f"add({x}, {y}) != {z}")
-Exception: add(9, 2) != 11

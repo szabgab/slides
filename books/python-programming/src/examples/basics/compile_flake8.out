@@ -1,2 +1,0 @@
-compile.py:3:7: F821 undefined name 'y'
-compile.py:6:1: W391 blank line at end of file

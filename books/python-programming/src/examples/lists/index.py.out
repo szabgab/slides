@@ -1,5 +1,0 @@
-2
-Traceback (most recent call last):
-  File "examples/lists/index.py", line 6, in <module>
-    print(words.index('python'))
-ValueError: 'python' is not in list

@@ -1,5 +1,0 @@
-File "examples/other/syntax_error.py", line 4
-    if x > 3
-           ^
-SyntaxError: invalid syntax
-

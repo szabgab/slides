@@ -1,4 +1,0 @@
-Traceback (most recent call last):
-  File "examples/argparse/argparse_number.py", line 10, in <module>
-    print(args.number * args.number)
-TypeError: can't multiply sequence by non-int of type 'str'

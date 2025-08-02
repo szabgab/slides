@@ -1,9 +1,0 @@
-Name:         posix
-System:       Linux
-Release:      5.13.0-37-generic
-Architecture: ('64bit', 'ELF')
-Machine:      x86_64
-Processor:    x86_64
-Release:      5.13.0-37-generic
-Version:      #42-Ubuntu SMP Tue Mar 15 14:34:06 UTC 2022
-Uname:        posix.uname_result(sysname='Linux', nodename='code-maven', release='5.13.0-37-generic', version='#42-Ubuntu SMP Tue Mar 15 14:34:06 UTC 2022', machine='x86_64')

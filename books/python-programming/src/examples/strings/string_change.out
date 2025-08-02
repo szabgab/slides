@@ -1,5 +1,0 @@
-abcd
-Traceback (most recent call last):
-  File "string_change.py", line 4, in <module>
-    text[2] = 'Y'
-TypeError: 'str' object does not support item assignment

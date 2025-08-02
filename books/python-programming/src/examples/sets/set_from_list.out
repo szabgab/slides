@@ -1,2 +1,0 @@
-{'animals': set(), 'vegetables': set(), 'fruits': set()}
-{'animals': {'cat'}, 'vegetables': set(), 'fruits': set()}

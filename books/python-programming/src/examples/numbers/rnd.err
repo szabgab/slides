@@ -1,5 +1,0 @@
-hello
-Traceback (most recent call last):
-  File "examples/numbers/rnd.py", line 3, in <module>
-    x = random()
-TypeError: 'module' object is not callable

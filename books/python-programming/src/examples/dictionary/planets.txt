@@ -1,3 +1,0 @@
-Jupiter:300
-Saturn:500
-Earth:0
