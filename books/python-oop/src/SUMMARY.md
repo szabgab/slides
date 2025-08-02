@@ -102,13 +102,11 @@
   - [Abstract Base Class with metaclass](./abstract-base-class-with-metaclass.md)
   - [Abstract Base Class without ABC](./abstract-base-class-without-abc.md)
 
-
-
-
-
-
-
-
-
+- [Classes](./classes/index.md)
+  - [Create class with metaclass](./classes/create-class-with-metaclass.md)
+  - [Classes](./classes/old-oop-examples.md)
+  - [Create a class inherit from object](./classes/class-creation-inherit-from-object.md)
+  - [Lambdas](./classes/lambdas.md)
+  - [Abstract Class](./classes/abstract-class.md)
 
 
