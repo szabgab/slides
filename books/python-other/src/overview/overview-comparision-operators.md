@@ -1,0 +1,13 @@
+# Comparision operators
+
+```python
+==
+!=
+<
+<=
+>=
+>
+```
+
+
+
