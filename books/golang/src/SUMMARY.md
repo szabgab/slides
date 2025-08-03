@@ -85,4 +85,20 @@
   - [Boolean values - bool, true, false](./golang/boolean/boolean-values.md)
   - [Boolean truth table](./golang/boolean/boolean-truth-table.md)
 
+- [Loops](./golang/loops/index.md)
+  - [3-part for loop](./golang/loops/3-part-for-loop.md)
+  - [while-like for loop](./golang/loops/while.md)
+  - [infinite loop](./golang/loops/infinite-loop.md)
+  - [break out from loop](./golang/loops/break.md)
+  - [continue](./golang/loops/continue.md)
+  - [loop on two variables](./golang/loops/loop-on-two-variables.md)
+  - [break out from internal loop (labels)](./golang/loops/break-out-from-internal-loop.md)
+  - [Exercise: One-dimensional spacefight](./golang/loops/exercise-one-dimensional-spacefight.md)
+  - [Exercise: FizzBuzz](./golang/loops/exercise-fizzbuzz.md)
+  - [Solution: One-dimensional spacefight - multiple guesses till hit](./golang/loops/solution-one-dimensinal-spacefight-multiple-guesses.md)
+  - [Solution: One-dimensional spacefight - allow x](./golang/loops/solution-one-dimensional-spacefight-allow-x.md)
+  - [Solution: One-dimensional spacefight - allow m](./golang/loops/solution-one-dimensiona-spacefight-allow-m.md)
+  - [Solution: FizzBuzz](./golang/loops/solution-fizzbuzz.md)
+
+
 
