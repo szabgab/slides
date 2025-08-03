@@ -1,2 +1,0 @@
-person = "Foo"
-puts person
