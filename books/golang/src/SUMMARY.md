@@ -56,3 +56,10 @@
   - [TODO: Solution: calculator CLI](./golang/cli/solution-calculator-if.md)
   - [TODO: Solution: calculator (switch)](./golang/cli/solution-calculator-switch.md)
 
+- [Skeleton](./golang/skeleton/index.md)
+  - [empty file](./golang/skeleton/empty-file.md)
+  - [Only package main](./golang/skeleton/package-main.md)
+  - [Other package name](./golang/skeleton/other-package-name.md)
+  - [Skeleton file](./golang/skeleton/skeleton-file.md)
+
+
