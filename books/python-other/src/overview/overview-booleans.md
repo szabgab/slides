@@ -1,9 +1,0 @@
-# Booleans
-
-```python
-True
-False
-```
-
-
-

@@ -1,5 +1,0 @@
-# PyCharm Terminal
-
-* Bottom "Terminal"
-
-

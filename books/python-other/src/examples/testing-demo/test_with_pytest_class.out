@@ -1,9 +1,0 @@
-============================= test session starts ==============================
-platform linux -- Python 3.8.2, pytest-5.4.2, py-1.8.1, pluggy-0.13.1
-rootdir: /home/gabor/work/slides/python/examples/testing-demo
-plugins: flake8-1.0.6
-collected 1 item
-
-test_with_pytest_class.py .                                              [100%]
-
-============================== 1 passed in 0.01s ===============================

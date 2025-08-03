@@ -1,4 +1,0 @@
-numpy
-pandas
-requests
-flask>=1.00
