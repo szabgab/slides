@@ -21,9 +21,11 @@ sub get_book_names {
 
 sub generate_md_books {
     my $names = shift;
+    my $cwd = dirname $0;
 
     for my $name (@$names) {
         say "name $name";
+        _system("rm -rf html/$name");
         chdir "books/$name";
         say "mdbook '$name'";
         say `pwd`;
@@ -37,12 +39,11 @@ sub generate_md_books {
 
         convert_summary_to_book_txt();
 
-        _system("rm -rf ../../html/$name");
         _system("mv book/html ../../html/$name");
 
         chdir "../..";
 
-        _system("cp leanpub.md books/$name/book/markdown/");
+        _system("cp $cwd/leanpub.md books/$name/book/markdown/");
     }
 }
 
