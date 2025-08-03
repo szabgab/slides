@@ -1,6 +1,0 @@
-fastapi[all]
-
-pytest
-requests
-
-motor
