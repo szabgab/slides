@@ -81,3 +81,8 @@
   - [Exercise: One-dimensional spacefight - level 1](./golang/numbers/exercise-one-dimensional-spacefight-level-1.md)
   - [Solution: One-dimensiona spacefight - level 1](./golang/numbers/solution-number-guessing-game-level-1.md)
 
+- [Boolean - Logical operators](./golang/boolean/index.md)
+  - [Boolean values - bool, true, false](./golang/boolean/boolean-values.md)
+  - [Boolean truth table](./golang/boolean/boolean-truth-table.md)
+
+
