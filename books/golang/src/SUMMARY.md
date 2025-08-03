@@ -18,4 +18,36 @@
   - [Separate directories! - main redeclared in this block](./golang/intro/separate-directories.md)
   - [Exercise: Hello World](./golang/intro/exercise-hello-world.md)
 
+- [Basics](./golang/basics/index.md)
+  - [Hello Foo - Println](./golang/basics/hello-foo.md)
+  - [Hello Bar - Printf](./golang/basics/hello-bar-printf.md)
+  - [Hello Bar - Printf %v](./golang/basics/hello-bar-printf-v.md)
+  - [Enforce variables types](./golang/basics/enforce-variable-types.md)
+  - [Basic Types](./golang/basics/basic-types.md)
+  - [Show inferred variable type - Printf %T](./golang/basics/show-variable-type.md)
+  - [Show type of variable - reflect.TypeOf](./golang/basics/show-typeof.md)
+  - [get variable type - %T or reflect.TypeOf](./golang/basics/get-variable-type.md)
+  - [Variable declaration (var)](./golang/basics/variable-declaration.md)
+  - [Default values of variables](./golang/basics/default-values.md)
+  - [Scan input strings from STDIN](./golang/basics/scan.md)
+  - [if else statement](./golang/basics/if-else-statement-intro.md)
+  - [Converting string to integer - strconv, Atoi](./golang/basics/converting-string-to-integer.md)
+  - [Error Handling](./golang/basics/error-handling.md)
+  - [Converting string to integer with error handling - strconv, Itoa](./golang/basics/converting-string-to-integer-with-error-handling.md)
+  - [Converting string to float - strconv, ParseFloat](./golang/basics/converting-string-to-float.md)
+  - [Converting integer to string - strconv, Itoa](./golang/basics/converting-integer-to-string.md)
+  - [Scan STDIN convert to number](./golang/basics/scan-stdin-convert-to-number.md)
+  - [Comments](./golang/basics/comments.md)
+  - [Exercise: circle STDIN](./golang/basics/exercise-circle-stdin.md)
+  - [Exercise: rectangular STDIN](./golang/basics/exercise-rectangular-stdin.md)
+  - [Exercise: calculator STDIN](./golang/basics/ecxercise-calculator-stdin.md)
+  - [Solution: circle STDIN](./golang/basics/solution-circle-stdin.md)
+  - [Solution: circle STDIN with math](./golang/basics/solution-circle-stdin-math.md)
+  - [Solution: rectangular STDIN](./golang/basics/solution-rectangular-stdin.md)
+  - [Solution: calculator STDIN](./golang/basics/solution-calculator-stdin-if.md)
+  - [Solution: calculator STDIN switch](./golang/basics/solution-calculator-stdin-switch.md)
+
+
+
+
 
