@@ -47,7 +47,12 @@
   - [Solution: calculator STDIN](./golang/basics/solution-calculator-stdin-if.md)
   - [Solution: calculator STDIN switch](./golang/basics/solution-calculator-stdin-switch.md)
 
-
-
-
+- [CLI](./golang/cli/index.md)
+  - [Args - (argv) command line arguments](./golang/cli/args-command-line-arguments.md)
+  - [Exit early with exit code](./golang/cli/exit-early.md)
+  - [Exercise: rectangular](./golang/cli/exercise-rectangular.md)
+  - [Exercise: calculator](./golang/cli/ecxercise-calculator.md)
+  - [Solution: rectangular CLI](./golang/cli/solution-rectangular.md)
+  - [TODO: Solution: calculator CLI](./golang/cli/solution-calculator-if.md)
+  - [TODO: Solution: calculator (switch)](./golang/cli/solution-calculator-switch.md)
 
