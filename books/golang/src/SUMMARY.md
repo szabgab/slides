@@ -419,3 +419,13 @@
   - [Traverse directory tree](./golang/filesystem/traverse-directory-tree.md)
   - [Join parts of a directory or filepath](./golang/filesystem/join-filepath.md)
 
+- [Regular Expressions (Regexes, Regexp)](./golang/regexes/index.md)
+  - [Regexp](./golang/regexes/regexp.md)
+  - [Regexp](./golang/regexes/regex2.md)
+  - [Regex nomatch](./golang/regexes/regex-nomatch.md)
+  - [Regex Markua include](./golang/regexes/regex-markua-include.md)
+  - [Exercise: Parse ini file](./golang/regexes/exercise-parse-ini-file.md)
+  - [Exercise: parse hours log file and give report](./golang/regexes/exercise-parse-hours-log-file.md)
+  - [Solution: Parse ini file](./golang/regexes/solution-parse-ini-file.md)
+  - [Solution: parse hours log file and give report](./golang/regexes/solution-parse-hours-log-file.md)
+
