@@ -439,3 +439,8 @@
   - [switch](./golang/flow-control/switch.md)
   - [type switch](./golang/flow-control/type-switch.md)
 
+
+- [JSON](./golang/json/index.md)
+  - [JSON round trip](./golang/json/json-round-trip.md)
+
+
