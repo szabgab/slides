@@ -505,3 +505,8 @@
   - [Parse HTML Token by token](./golang/appendix/parse-html-token-by-token.md)
   - [Parse HTML extract tags and attributes](./golang/appendix/parse-html-extract-tags-and-attributes.md)
 
+
+- [Other](./golang/other/index.md)
+  - [Print to STDERR or STDOUT](./golang/other/print-to-stderr-or-stdout.md)
+  - [Companies using Golang in Israel](./golang/other/companies-in-israel.md)
+

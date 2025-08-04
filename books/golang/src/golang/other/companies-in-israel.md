@@ -1,23 +1,7 @@
-# Other slides
-{id: other-slides}
+# Companies using Golang in Israel
 
-## Print to STDERR or STDOUT
-{id: print-to-stderr-or-stdout}
-{i: STDERR}
-{i: STDOUT}
-{i: Stderr}
-{i: WriteString}
-{i: Fprintln}
-
-![](examples/stderr-stdout/stderr_stdout.go)
-
-## Companies using Golang in Israel
-{id: companies-in-israel}
-
-{aside}
 Though many of the readers of these slides are from around the world and for them I'd probably need to create a page for companies in their respective countries,
 but for now I have listed a few companies that have offices in Israel where they use Go along with the titles of job posts I saw on LinkedIn.
-{/aside}
 
 
 * [Alibaba Group](https://www.alibabagroup.com/) - Expert Backend Engineer-Machine Intelligence Israel Lab
@@ -49,6 +33,5 @@ but for now I have listed a few companies that have offices in Israel where they
 * [Spot.IM](https://www.spot.im/) - Senior Back End Developer
 * [Tonkean](https://tonkean.com/) - DevOps Engineer
 * [Wix](https://www.wix.com/) - DevOps Engineer; Database Infrastructure Engineer; System Security Engineer; Infrastructure Lead - DevEx Team
-
 
 
