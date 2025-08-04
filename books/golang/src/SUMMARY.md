@@ -429,3 +429,13 @@
   - [Solution: Parse ini file](./golang/regexes/solution-parse-ini-file.md)
   - [Solution: parse hours log file and give report](./golang/regexes/solution-parse-hours-log-file.md)
 
+
+- [Flow Control](./golang/flow-control/index.md)
+  - [if-statements](./golang/flow-control/if-statements.md)
+  - [if, else, else if](./golang/flow-control/if-else-statements.md)
+  - [if with initializer](./golang/flow-control/if-with-initializer.md)
+  - [Comparision Operators](./golang/flow-control/comparision-operators.md)
+  - [Short circuit](./golang/flow-control/short-circuit.md)
+  - [switch](./golang/flow-control/switch.md)
+  - [type switch](./golang/flow-control/type-switch.md)
+
