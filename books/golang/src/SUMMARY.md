@@ -482,4 +482,9 @@
   - [go install](./golang/distribution/go-install.md)
 
 
+- [Command line arguments (Flag)](./golang/cli2/index.md)
+  - [Flag](./golang/cli2/flag.md)
+  - [Flags as pointers](./golang/cli2/flags-as-poineters.md)
+  - [Flags as variables](./golang/cli2/flags-as-variables.md)
+
 
