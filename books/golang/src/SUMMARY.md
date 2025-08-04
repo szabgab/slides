@@ -383,4 +383,18 @@
   - [Exercise: Fibonacci in parallel](./golang/goroutine/exercise-fibonacci-in-parallel.md)
   - [Solution: Collect data from urls](./golang/goroutine/solution-collect-data-from-urls.md)
 
+- [Functions 2](./golang/functions-2/index.md)
+  - [Numbers passed by reference](./golang/functions-2/numbers-pass-by-reference.md)
+  - [Array passed by value or by reference](./golang/functions-2/array-passed-by-value.md)
+  - [TODO: pass by value, pass by reference](./golang/functions-2/functions-todo.md)
+  - [Variable declaration outside of functions](./golang/functions-2/variable-declaration-outside-of-functions.md)
+  - [Exercise: Fibonacci series](./golang/functions-2/exercise-fibonacci-series.md)
+  - [Exercise: Permutations](./golang/functions-2/exercise-permutations.md)
+  - [Exercise: 100 doors](./golang/functions-2/exercise-100-doors.md)
+  - [Solution: Fibonacci series](./golang/functions-2/solution-fibonacci-series.md)
+  - [Solution: Fibonacci recursive](./golang/functions-2/solution-fibonacci-recursive.md)
+  - [Solution: single counter](./golang/functions-2/solution-single-counter.md)
+  - [Solution: Permutations](./golang/functions-2/solution-permutations.md)
+  - [Solution: 100 doors](./golang/functions-2/solution-100-doors.md)
+  - [TODO return array](./golang/functions-2/return-array.md)
 
