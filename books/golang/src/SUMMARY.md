@@ -238,3 +238,18 @@
   - [Solution: DNA Sequencing](./golang/slices/solution-dna-sequencing.md)
   - [Solution: DNA Sequencing with in place filter](./golang/slices/solution-dna-sequencing-in-place-filter.md)
 
+- [Files](./golang/files/index.md)
+  - [Read file line-by-line with Scanner](./golang/files/read-file-line-by-line-with-scanner.md)
+  - [Read file line by line with Reader](./golang/files/read-file-line-by-line.md)
+  - [Read file as one string (slurp)](./golang/files/read-file-as-one-string.md)
+  - [Write to file](./golang/files/write-to-file.md)
+  - [Write number to file](./golang/files/write-number-to-file.md)
+  - [Append to file](./golang/files/append-to-file.md)
+  - [Reading CSV file](./golang/files/reading-csv-file.md)
+  - [Exercise: Sum of numbers in a file](./golang/files/exercise-sum-of-numbers.md)
+  - [Exercise: Count number of digitis](./golang/files/exercise-count-number-of-digits.md)
+  - [Exercise: ROT13 on file](./golang/files/exercise-rot13-on-file.md)
+  - [Exercise: Selector with list of items from a file](./golang/files/exercise-selector-with-list-of-items-from-a-file.md)
+  - [TODO: Solution: Sum of numbers in a file](./golang/files/solution-sum-of-numbers.md)
+
+
