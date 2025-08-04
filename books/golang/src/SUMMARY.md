@@ -325,3 +325,12 @@
   - [TODO: log function names](./golang/logging/logging-function-names.md)
   - [TODO: logrotation](./golang/logging/logging-logrotation.md)
 
+
+- [Time](./golang/time/index.md)
+  - [Monolitic vs Wallclock time](./golang/time/monolitic-vs-wallclock-time.md)
+  - [Time example](./golang/time/time-example.md)
+  - [Nanoseconds](./golang/time/nano-seconds.md)
+  - [sleep and elapsed time](./golang/time/sleep-and-elapsed-time.md)
+  - [Time format](./golang/time/time-format.md)
+  - [Date Arithmetic](./golang/time/date-arithmetic.md)
+
