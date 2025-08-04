@@ -7,7 +7,6 @@
     "repo": "https://github.com/szabgab/slides/blob/main/",
     "version": "1.01",
     "files": [
-        "pointers.md",
         "panic.md",
         "goroutine.md",
         "functions-2.md",

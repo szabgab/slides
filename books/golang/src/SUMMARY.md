@@ -334,3 +334,9 @@
   - [Time format](./golang/time/time-format.md)
   - [Date Arithmetic](./golang/time/date-arithmetic.md)
 
+- [Pointers](./golang/pointers/index.md)
+  - [Integer assignment is copying (not pointer)](./golang/pointers/no-pointer.md)
+  - [Pointer to integer](./golang/pointers/int-pointer.md)
+  - [Array Pointer](./golang/pointers/array-pointer.md)
+  - [Slice Pointer and copy slice](./golang/pointers/slice-pointer.md)
+
