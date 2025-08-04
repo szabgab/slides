@@ -398,3 +398,12 @@
   - [Solution: 100 doors](./golang/functions-2/solution-100-doors.md)
   - [TODO return array](./golang/functions-2/return-array.md)
 
+
+- [Bitwise](./golang/bitwise/index.md)
+  - [bitwise operators](./golang/bitwise/bitwise-operators.md)
+  - [bitwise left shift](./golang/bitwise/bitwise-left-shift.md)
+  - [bitwise not](./golang/bitwise/bitwise-not.md)
+  - [bitwise clear bit - AND NOT](./golang/bitwise/bitwise-clear-bit-and-not.md)
+
+
+
