@@ -450,4 +450,17 @@
   - [TODO fteching youtube playlist](./golang/web-client/fetching-youtube-playlist.md)
   - [HTTP GET failure](./golang/web-client/http-get-failure.md)
 
+- [HTTP Server](./golang/http-server/index.md)
+  - [HTTP Hello World](./golang/http-server/http-hello-world.md)
+  - [HTTP Echo GET](./golang/http-server/http-echo-get.md)
+  - [HTTP Echo POST](./golang/http-server/http-echo-post.md)
+  - [text/template](./golang/http-server/text-template.md)
+  - [text/template with map](./golang/http-server/text-template-map.md)
+  - [text/template with struct](./golang/http-server/text-template-struct.md)
+  - [text/template in file](./golang/http-server/text-template-in-file.md)
+  - [text/template if](./golang/http-server/text-template-if.md)
+  - [text/template loop](./golang/http-server/text-template-loop.md)
+  - [html/template](./golang/http-server/html-template.md)
+  - [HTTP Hello World templates](./golang/http-server/http-hello-world-templates.md)
+
 
