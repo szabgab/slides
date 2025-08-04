@@ -312,5 +312,16 @@
   - [Exercise: implement wc](./golang/struct/exercise-implement-wc.md)
   - [Solution: implement wc](./golang/struct/solution-implement-wc.md)
 
-
+- [Logging](./golang/logging/index.md)
+  - [Simple Logging](./golang/logging/simple-logging.md)
+  - [Logging Fatal errors](./golang/logging/logging-fatal-errors.md)
+  - [Logging to a file - rewrite](./golang/logging/logging-to-a-file.md)
+  - [Logging to a file - append](./golang/logging/append-to-logfile.md)
+  - [Logging the filename](./golang/logging/logging-the-filename.md)
+  - [Logging flags](./golang/logging/logging-flags.md)
+  - [Logging: Set Prefix](./golang/logging/logging-set-prefix.md)
+  - [Turn logging on/off](./golang/logging/logging-turn-on-off.md)
+  - [TODO: log levels?](./golang/logging/logging-levels.md)
+  - [TODO: log function names](./golang/logging/logging-function-names.md)
+  - [TODO: logrotation](./golang/logging/logging-logrotation.md)
 
