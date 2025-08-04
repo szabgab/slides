@@ -405,5 +405,9 @@
   - [bitwise not](./golang/bitwise/bitwise-not.md)
   - [bitwise clear bit - AND NOT](./golang/bitwise/bitwise-clear-bit-and-not.md)
 
-
+- [Formatting](./golang/formatting/index.md)
+  - [Println](./golang/formatting/println.md)
+  - [Sprintln](./golang/formatting/sprintln.md)
+  - [Sprintf](./golang/formatting/sprintf.md)
+  - [Padding and alignment](./golang/formatting/padding-and-alignment.md)
 
