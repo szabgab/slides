@@ -167,4 +167,13 @@
   - [Shadowing package variable](./golang/variables/shadowing-package-variable.md)
   - [Variable scope](./golang/variables/variable-sciope.md)
 
+- [Constants](./golang/constants/index.md)
+  - [Constants](./golang/constants/constant-with-type.md)
+  - [Constants cannot be changed](./golang/constants/constants-cannot-be-changed.md)
+  - [Shadowing constants](./golang/constants/shadowing-constants.md)
+  - [Constant blocks](./golang/constants/constant-blocks.md)
+  - [iota](./golang/constants/iota.md)
+  - [iota skipping 0](./golang/constants/iota-skipping-zero.md)
+  - [const powers of 2](./golang/constants/const-powers-of-two.md)
+
 
