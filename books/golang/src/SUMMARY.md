@@ -292,3 +292,25 @@
   - [Solution: Test Calculator](./golang/testing/solution-test-calculator.md)
   - [Solution: statistics](./golang/testing/solution-statistics.md)
 
+- [Struct](./golang/struct/index.md)
+  - [Struct and type](./golang/struct/struct-and-type.md)
+  - [Struct with partial information (default values)](./golang/struct/struct-with-partial-information.md)
+  - [Slice of structs](./golang/struct/slice-of-structs.md)
+  - [Anonymous struct](./golang/struct/anonymous-struct.md)
+  - [Struct in a struct](./golang/struct/struct-in-a-struct.md)
+  - [composition via embedding instead of inheritance](./golang/struct/composition.md)
+  - [Tags and introspection (reflect)](./golang/struct/tags.md)
+  - [use cleanenv](./golang/struct/use-cleanenv.md)
+  - [methods](./golang/struct/methods.md)
+  - [method of int](./golang/struct/method-of-int.md)
+  - [map keys method](./golang/struct/map-keys-method.md)
+  - [method gets copy of struct](./golang/struct/method-gets-copy-of-struct.md)
+  - [method pass pointer of struct](./golang/struct/method-pass-pointer-of-struct.md)
+  - [Exercise: read-csv-struct](./golang/struct/exercise-read-csv-struct.md)
+  - [Exercise: implement 2D point and move](./golang/struct/exercise-implement-2d-point-and-move.md)
+  - [Exercise: implement 3D point and move](./golang/struct/exercise-implement-3d-point-and-move.md)
+  - [Exercise: implement wc](./golang/struct/exercise-implement-wc.md)
+  - [Solution: implement wc](./golang/struct/solution-implement-wc.md)
+
+
+
