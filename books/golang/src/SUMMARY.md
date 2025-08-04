@@ -156,3 +156,15 @@
   - [Solution: count digits from string](./golang/arrays/solution-count-digits-from-string.md)
   - [Solution: Report statistics](./golang/arrays/solution-report-statistics.md)
 
+- [Variables](./golang/variables/index.md)
+  - [Variable Declarations](./golang/variables/variables-declarations.md)
+  - [Variables - Naming](./golang/variables/naming-variables.md)
+  - [Declare multiple variables in one line](./golang/variables/declare-multiple-variables-in-one-line.md)
+  - [Variables cannot be redefined (no new variables on left side of :=)](./golang/variables/no-variable-redeclaration.md)
+  - [At least one new variable on the left side of :=](./golang/variables/at-least-one-new-variable-on-the-left-side.md)
+  - [Use the same err on the left hand side](./golang/variables/redefine-variable.md)
+  - [Package variable](./golang/variables/package-variable.md)
+  - [Shadowing package variable](./golang/variables/shadowing-package-variable.md)
+  - [Variable scope](./golang/variables/variable-sciope.md)
+
+
