@@ -411,3 +411,11 @@
   - [Sprintf](./golang/formatting/sprintf.md)
   - [Padding and alignment](./golang/formatting/padding-and-alignment.md)
 
+- [Filesystem](./golang/filesystem/index.md)
+  - [os.stat information about a file or directory (file exists)](./golang/filesystem/os-stat.md)
+  - [List Directory](./golang/filesystem/list-directory.md)
+  - [Get Current Working Directory (cwd)](./golang/filesystem/get-current-working-directory.md)
+  - [Create Temporary Directory](./golang/filesystem/create-temporary-directory.md)
+  - [Traverse directory tree](./golang/filesystem/traverse-directory-tree.md)
+  - [Join parts of a directory or filepath](./golang/filesystem/join-filepath.md)
+
