@@ -443,4 +443,11 @@
 - [JSON](./golang/json/index.md)
   - [JSON round trip](./golang/json/json-round-trip.md)
 
+- [Web client](./golang/web-client/index.md)
+  - [http get request](./golang/web-client/http-get-request.md)
+  - [URL parsing](./golang/web-client/url-parsing.md)
+  - [TODO Checking links of a web site](./golang/web-client/checking-linkst-of-a-website.md)
+  - [TODO fteching youtube playlist](./golang/web-client/fetching-youtube-playlist.md)
+  - [HTTP GET failure](./golang/web-client/http-get-failure.md)
+
 

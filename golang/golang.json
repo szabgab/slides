@@ -7,7 +7,6 @@
     "repo": "https://github.com/szabgab/slides/blob/main/",
     "version": "1.01",
     "files": [
-        "web_client.md",
         "http_server.md",
         "external-programs.md",
         "distribution.md",
