@@ -1,7 +1,0 @@
-# go install
-
-```
-go install
-```
-
-

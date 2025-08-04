@@ -1,3 +1,0 @@
-# command-line-arguments
-./redeclare_function.go:12:6: say redeclared in this block
-	previous declaration at ./redeclare_function.go:8:6

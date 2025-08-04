@@ -1,3 +1,0 @@
-This is just some random
-text with more than one lines.
-This is already the 3rd line.

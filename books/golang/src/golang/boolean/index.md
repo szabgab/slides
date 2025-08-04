@@ -1,1 +1,0 @@
-# Boolean - Logical operators
