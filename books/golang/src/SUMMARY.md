@@ -469,6 +469,17 @@
   - [Run external program in the background](./golang/external-programs/run-external-program-in-the-background.md)
   - [Capture the outout of an external program](./golang/external-programs/capture-output-of-external-program.md)
 
+- [Distribution](./golang/distribution/index.md)
+  - [Corss Compilation](./golang/distribution/compilation.md)
+  - [Packages](./golang/distribution/packages.md)
+  - [Cross compile](./golang/distribution/cross-compile.md)
+  - [Environment variables](./golang/distribution/environment-variables.md)
+  - [Install packages](./golang/distribution/install-packages.md)
+  - [Include and distribute external files](./golang/distribution/external-files.md)
+  - [go workspace layout](./golang/distribution/go-workspace-layout.md)
+  - [Directory of 3rd party packages](./golang/distribution/directory-of-packages.md)
+  - [Semantic versioning](./golang/distribution/semantic-versioning.md)
+  - [go install](./golang/distribution/go-install.md)
 
 
 

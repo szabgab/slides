@@ -1,0 +1,7 @@
+# go install
+
+```
+go install
+```
+
+
