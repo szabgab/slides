@@ -278,3 +278,17 @@
   - [Solution: count words](./golang/maps/solution-count-words.md)
   - [Solution: count words from file](./golang/maps/solution-count-words-from-file.md)
 
+
+- [Testing](./golang/testing/index.md)
+  - [Testing in Go](./golang/testing/testing-in-go.md)
+  - [Testing modules](./golang/testing/testing-modules.md)
+  - [Simple example with testing](./golang/testing/simple-test.md)
+  - [Test with failure](./golang/testing/test-with-failure.md)
+  - [Run selected test functions](./golang/testing/run-selected-test-functions.md)
+  - [Exercise: Test Anagram](./golang/testing/exercise-test-anagram.md)
+  - [Exercise: Test Calculator](./golang/testing/exercise-test-calculator.md)
+  - [Exercise: statistics](./golang/testing/exercises-statistics.md)
+  - [Solution: Test Anagram](./golang/testing/solution-test-anagram.md)
+  - [Solution: Test Calculator](./golang/testing/solution-test-calculator.md)
+  - [Solution: statistics](./golang/testing/solution-statistics.md)
+
