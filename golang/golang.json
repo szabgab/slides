@@ -7,7 +7,6 @@
     "repo": "https://github.com/szabgab/slides/blob/main/",
     "version": "1.01",
     "files": [
-        "slices.md",
         "files.md",
         "maps.md",
         "testing.md",
