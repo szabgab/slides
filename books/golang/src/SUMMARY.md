@@ -340,3 +340,14 @@
   - [Array Pointer](./golang/pointers/array-pointer.md)
   - [Slice Pointer and copy slice](./golang/pointers/slice-pointer.md)
 
+- [Panic (Exception handling)](./golang/panic/index.md)
+  - [Panic](./golang/panic/go-panic.md)
+  - [We Panic](./golang/panic/we-panic.md)
+  - [Turn error into panic when port is used](./golang/panic/panic-when-port-is-used.md)
+  - [Panic after defer](./golang/panic/panic-after-defer.md)
+  - [Recover (and re-panic)](./golang/panic/recover.md)
+  - [Recover from deep panic](./golang/panic/recover-from-deep-panic.md)
+  - [Convert panic to returned error](./golang/panic/convert-panic-to-returned-error.md)
+  - [Exercise: read several files](./golang/panic/exercise-read-several-files.md)
+  - [Solution: read several files](./golang/panic/solution-read-several-files.md)
+
