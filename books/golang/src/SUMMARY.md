@@ -463,4 +463,12 @@
   - [html/template](./golang/http-server/html-template.md)
   - [HTTP Hello World templates](./golang/http-server/http-hello-world-templates.md)
 
+- [External programs](./golang/external-programs/index.md)
+  - [Find executable (which where)](./golang/external-programs/find-executable.md)
+  - [Run external programs](./golang/external-programs/run-external-programs.md)
+  - [Run external program in the background](./golang/external-programs/run-external-program-in-the-background.md)
+  - [Capture the outout of an external program](./golang/external-programs/capture-output-of-external-program.md)
+
+
+
 
