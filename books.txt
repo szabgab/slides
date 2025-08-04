@@ -1,4 +1,3 @@
 crystal/crystal.json,crystal,
-golang/golang.json,golang,
 linux/linux.json,linux,
 web/web.json,web,
