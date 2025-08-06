@@ -8,6 +8,7 @@ my @SUPPORTED = qw(
     perl-oop
     python-functional-programming
     python-testing
+    python-testing-demo
     svg
     );
 
@@ -18,13 +19,15 @@ sub main {
     my $name = shift @ARGV;
     my $supported = join "", map {"\n  $_"} @SUPPORTED;
 
+    my $exe_path = dirname $0;
+
     die "Usage: $0 NAME where name is one of the following: $supported\n" if not defined $name;
 
     die "'$name' is not in the list of supported books: $supported\n"  if not grep {$name eq $_} @SUPPORTED;
 
     say "Working on $name";
     _system("rm -rf ~/Dropbox/leanpub/$name/manuscript");
-    _system("perl mdbooks.pl $name");
+    _system("perl $exe_path/mdbooks.pl $name");
     _system("mv -f books/$name/book/markdown ~/Dropbox/leanpub/$name/manuscript");
     _system("mkdir ~/Dropbox/leanpub/$name/manuscript/resources/");
     _system("cp books/$name/title_page.png ~/Dropbox/leanpub/$name/manuscript/resources/");
@@ -40,7 +43,7 @@ sub main {
 sub _system {
     my ($cmd) = @_;
     say $cmd;
-    system $cmd;
+    system $cmd and die "Execution of '$cmd' failed\n";
 }
 
 

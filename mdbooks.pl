@@ -21,7 +21,7 @@ sub get_book_names {
 
 sub generate_md_books {
     my $names = shift;
-    my $cwd = dirname $0;
+    my $exe_path = dirname $0;
 
     for my $name (@$names) {
         say "name $name";
@@ -43,14 +43,14 @@ sub generate_md_books {
 
         chdir "../..";
 
-        _system("cp $cwd/leanpub.md books/$name/book/markdown/");
+        _system("cp $exe_path/leanpub.md books/$name/book/markdown/");
     }
 }
 
 sub _system {
     my ($cmd) = @_;
     say $cmd;
-    system $cmd;
+    system $cmd and die "Execution of '$cmd' failed\n";
 }
 
 sub convert_summary_to_book_txt {
