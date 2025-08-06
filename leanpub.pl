@@ -6,9 +6,13 @@ use File::Basename qw(basename dirname);
 
 my @SUPPORTED = qw(
     perl-oop
+
     python-functional-programming
     python-testing
     python-testing-demo
+
+    rust-programming
+
     svg
     );
 
@@ -16,7 +20,7 @@ main();
 exit;
 
 sub main {
-    my $name = shift @ARGV;
+    my $name = basename shift @ARGV;
     my $supported = join "", map {"\n  $_"} @SUPPORTED;
 
     my $exe_path = dirname $0;
