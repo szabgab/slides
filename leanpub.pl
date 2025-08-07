@@ -10,6 +10,7 @@ my @SUPPORTED = qw(
     python-functional-programming
     python-testing
     python-testing-demo
+    python-tk
 
     rust-programming
 
