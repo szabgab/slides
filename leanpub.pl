@@ -11,6 +11,8 @@ my @SUPPORTED = qw(
     python-testing
     python-testing-demo
     python-tk
+    python-flask
+    python-fastapi
 
     rust-programming
 
