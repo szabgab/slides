@@ -8,7 +8,6 @@
     "repo": "https://github.com/szabgab/slides/blob/main/",
     "version": "1.23",
     "files": [
-        "terminal.md",
         "file-system.md",
         "files-and-directories.md",
         "file-security.md",
