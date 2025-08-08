@@ -13,8 +13,10 @@ my @SUPPORTED = qw(
     python-tk
     python-flask
     python-fastapi
+    python-regexes
 
     rust-programming
+    rust-json
 
     svg
     );
