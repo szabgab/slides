@@ -74,4 +74,24 @@
   - [Exercise: File system](./linux/file-system/exercise-filesystem.md)
   - [Exercise: Explore /proc](./linux/file-system/exercise-proc.md)
 
+- [Manipulating Files and Directories](./linux/files-and-directories/index.md)
+  - [Creating directory](./linux/files-and-directories/creating-directory.md)
+  - [Create a file using 'touch'](./linux/files-and-directories/touch.md)
+  - [Create file using echo](./linux/files-and-directories/echo-to-file.md)
+  - [Copy files and directories](./linux/files-and-directories/cp.md)
+  - [Move files or directories](./linux/files-and-directories/move-files.md)
+  - [Removing File or Directory](./linux/files-and-directories/removing-directory.md)
+  - [Symbolic links](./linux/files-and-directories/symbolic-links.md)
+  - [Hard links](./linux/files-and-directories/hard-links.md)
+  - [Determining File types](./linux/files-and-directories/file-type.md)
+  - [Finding files (find)](./linux/files-and-directories/finding-files.md)
+  - [find examples](./linux/files-and-directories/find-examples.md)
+  - [Search indexed files](./linux/files-and-directories/index-files.md)
+  - [Comparing files using diff](./linux/files-and-directories/diff.md)
+  - [Comparing directories using diff](./linux/files-and-directories/diff-dirs.md)
+  - [File and Directory Name conventions](./linux/files-and-directories/name-conventions.md)
+  - [Exercise: files](./linux/files-and-directories/exercises-files.md)
+  - [Exercise: shutdown vs halt](./linux/files-and-directories/exercise-file-path.md)
+
+
 
