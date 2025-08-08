@@ -179,5 +179,16 @@
   - [logout script](./linux/shell/logout-script.md)
   - [Exercise: Prompt](./linux/shell/exercise-prompt.md)
 
+- [System information](./linux/system-information/index.md)
+  - [id](./linux/system-information/id.md)
+  - [who](./linux/system-information/who.md)
+  - [w](./linux/system-information/w.md)
+  - [whoami](./linux/system-information/whoami.md)
+  - [last](./linux/system-information/last.md)
+  - [uname](./linux/system-information/uname.md)
+  - [free](./linux/system-information/free.md)
+  - [vmstat](./linux/system-information/vmstat.md)
+  - [/proc/meminfo](./linux/system-information/proc-meminfo.md)
+  - [Exercise: System information](./linux/system-information/exercise-system-information.md)
 
 
