@@ -262,4 +262,11 @@
   - [Exercise: lorem ipsum](./linux/network-basics/exercise-lorem-ipsum.md)
 
 
+- [Scheduling processes](./linux/schedule-process/index.md)
+  - [crontab](./linux/schedule-process/cron.md)
+  - [Load crontab file](./linux/schedule-process/load-crontab-file.md)
+  - [crontab examples](./linux/schedule-process/crontab-examples.md)
+  - [Schedule using at or batch](./linux/schedule-process/at.md)
+
+
 
