@@ -211,5 +211,23 @@
   - [yes](./linux/package-management/yes.md)
   - [Exercise: Package management](./linux/package-management/exercise-package-management.md)
 
+- [Process and Job Management](./linux/process-management/index.md)
+  - [uptime](./linux/process-management/uptime.md)
+  - [ps](./linux/process-management/ps.md)
+  - [System load: top](./linux/process-management/system-load-top.md)
+  - [System load: htop](./linux/process-management/system-load-htop.md)
+  - [Process state](./linux/process-management/process-state.md)
+  - [Process control](./linux/process-management/process-control.md)
+  - [Job control](./linux/process-management/job-control.md)
+  - [Refuse to die](./linux/process-management/refuse-to-die.md)
+  - [killall](./linux/process-management/killall.md)
+  - [Zombie demonstration](./linux/process-management/zombie-demonstration.md)
+  - [Reaping child processes demonstration](./linux/process-management/reaping-child-process-demonstration.md)
+  - [Stopped process demonstration](./linux/process-management/stopped-process-demonstration.md)
+  - [List open files (lsof)](./linux/process-management/open-files.md)
+  - [Current working directory of a process](./linux/process-management/pwdx.md)
+  - [Services](./linux/process-management/services.md)
+  - [tail multiple log files](./linux/process-management/tail-multiple-log-files.md)
+
 
 
