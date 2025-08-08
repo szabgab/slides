@@ -55,6 +55,23 @@
   - [Exercise: Terminal](./linux/terminal/exercise-terminal.md)
   - [Exercise: commands](./linux/terminal/exercises-commands.md)
 
-
+- [Navigating the File System](./linux/file-system/index.md)
+  - [File system types](./linux/file-system/filesystem-types.md)
+  - [Linux file system structure](./linux/file-system/linux-filesystem-structure.md)
+  - [Show directory tree](./linux/file-system/show-directory-tree.md)
+  - [Current Working directory](./linux/file-system/current-working-directory.md)
+  - [Directory listing - ls](./linux/file-system/ls.md)
+  - [File types](./linux/file-system/file-types.md)
+  - [Hidden files](./linux/file-system/hidden-files.md)
+  - [Change Directory](./linux/file-system/change-directory.md)
+  - [Display disk usage statistics](./linux/file-system/display-disk-usage-statistics.md)
+  - [du -s](./linux/file-system/du-s.md)
+  - [Display free disk space using df](./linux/file-system/display-free-disk-space.md)
+  - [Disk layout](./linux/file-system/disk-layout.md)
+  - [Free Disk space with human readable numbers](./linux/file-system/df-h.md)
+  - [Show inodes stats: df -hi](./linux/file-system/df-hi.md)
+  - [mounting external disks](./linux/file-system/mounting.md)
+  - [Exercise: File system](./linux/file-system/exercise-filesystem.md)
+  - [Exercise: Explore /proc](./linux/file-system/exercise-proc.md)
 
 
