@@ -268,5 +268,13 @@
   - [crontab examples](./linux/schedule-process/crontab-examples.md)
   - [Schedule using at or batch](./linux/schedule-process/at.md)
 
+- [Boot](./linux/boot/index.md)
+  - [Boot stages](./linux/boot/boot-stages.md)
+  - [BIOS](./linux/boot/bios.md)
+  - [Boot loader](./linux/boot/boot-loader.md)
+  - [Grub](./linux/boot/grub.md)
+  - [init](./linux/boot/init.md)
+  - [Multiple OS-es](./linux/boot/multiple-os-es.md)
+
 
 

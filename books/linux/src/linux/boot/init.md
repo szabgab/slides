@@ -1,0 +1,8 @@
+# init
+
+* /sbin/init
+* initrd
+
+
+
+
