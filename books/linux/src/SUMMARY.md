@@ -111,4 +111,22 @@
   - [Solution: chmod](./linux/file-security/solution-chmod.md)
 
 
+- [File content](./linux/file-content/index.md)
+  - [Text editors](./linux/file-content/text-editors.md)
+  - [nano - a small editor](./linux/file-content/nano.md)
+  - [Displaying file content](./linux/file-content/displaying-file-content.md)
+  - [cut](./linux/file-content/cut.md)
+  - [sort](./linux/file-content/sort.md)
+  - [uniq](./linux/file-content/uniq.md)
+  - [Finding text in a file](./linux/file-content/grep.md)
+  - [word count with wc](./linux/file-content/word-count.md)
+  - [tr - transcribe](./linux/file-content/tr.md)
+  - [sed - the stream editor](./linux/file-content/sed.md)
+  - [Compression and archiving](./linux/file-content/compression-and-archiving.md)
+  - [Generate random output](./linux/file-content/generate-random-output.md)
+  - [Generate random log](./linux/file-content/generate-random-log.md)
+  - [Exercise: log file](./linux/file-content/exercise-log-file.md)
+  - [Exercise: File content](./linux/file-content/exercise-file-content.md)
+  - [Exercise: File content round 2](./linux/file-content/exercise-file-content2.md)
+
 
