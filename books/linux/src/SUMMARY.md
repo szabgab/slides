@@ -279,5 +279,17 @@
 - [NFS - Network Filesystem](./linux/nfs/index.md)
   - [Fileserver](./linux/nfs/fileserver.md)
 
+- [Variables](./linux/variables/index.md)
+  - [Legal variables](./linux/variables/rules.md)
+  - [Setting and getting variables](./linux/variables/setting-getting-variables.md)
+  - [Backtick or back quote](./linux/variables/backtick-or-backquote.md)
+  - [Command substitution](./linux/variables/command-substitution.md)
+  - [Exporting variables](./linux/variables/export.md)
+  - [env](./linux/variables/env.md)
+  - [set](./linux/variables/set.md)
+  - [unset](./linux/variables/unset.md)
+  - [Predefined variables](./linux/variables/predefined-variables.md)
+  - [Change PATH](./linux/variables/change-path.md)
+  - [PATH environment variable](./linux/variables/path-environment-variable.md)
 
 

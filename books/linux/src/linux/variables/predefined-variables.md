@@ -1,0 +1,17 @@
+# Predefined variables
+
+```
+DISPLAY
+HISTFILE
+HISTSIZE
+HOME
+LANGUAGE
+MANPATH
+OLDPWD
+PATH
+SHELL
+TERM
+USER
+```
+
+
