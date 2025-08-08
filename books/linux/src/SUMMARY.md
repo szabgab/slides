@@ -94,4 +94,21 @@
   - [Exercise: shutdown vs halt](./linux/files-and-directories/exercise-file-path.md)
 
 
+- [File security - File system rights management](./linux/file-security/index.md)
+  - [ls -l](./linux/file-security/ls-l.md)
+  - [chmod](./linux/file-security/chmod-characters.md)
+  - [chmod octal](./linux/file-security/chmod-octal.md)
+  - [Change ownership with chown](./linux/file-security/chown.md)
+  - [Change group only using chgrp](./linux/file-security/chgrp.md)
+  - [Default file permissions: umask](./linux/file-security/umask.md)
+  - [Shell Script](./linux/file-security/shell-script.md)
+  - [Perl](./linux/file-security/perl.md)
+  - [Python](./linux/file-security/python.md)
+  - [Exercise: Create Bash script](./linux/file-security/exercise-create-bash-script.md)
+  - [Exercise: File security](./linux/file-security/exercise-file-security.md)
+  - [Exercise: Remove write protected file](./linux/file-security/exercise-remove-write-protected-file.md)
+  - [Exercise: chmod](./linux/file-security/exercise-chmod.md)
+  - [Solution: chmod](./linux/file-security/solution-chmod.md)
+
+
 
