@@ -198,4 +198,18 @@
   - [Logfiles in /var/log](./linux/sysadmin/var-log.md)
   - [Exercise: sysadmin](./linux/sysadmin/exercise-sysadmin.md)
 
+- [Package Management - Installing software](./linux/package-management/index.md)
+  - [App-store](./linux/package-management/app-store.md)
+  - [Package formats](./linux/package-management/package-formats.md)
+  - [Package managemnt tools](./linux/package-management/package-tools.md)
+  - [Instalation with apt-get](./linux/package-management/apt-get.md)
+  - [apt-cache](./linux/package-management/apt-cache.md)
+  - [aptitude](./linux/package-management/aptitude.md)
+  - [dpkg](./linux/package-management/dpkg.md)
+  - [yum on CentOS  7.2 x64](./linux/package-management/yum.md)
+  - [CentOS repoquery](./linux/package-management/repoquery.md)
+  - [yes](./linux/package-management/yes.md)
+  - [Exercise: Package management](./linux/package-management/exercise-package-management.md)
+
+
 

@@ -8,7 +8,6 @@
     "repo": "https://github.com/szabgab/slides/blob/main/",
     "version": "1.23",
     "files": [
-        "package-management.md",
         "process-management.md",
         "network-basics.md",
         "schedule-process.md",
