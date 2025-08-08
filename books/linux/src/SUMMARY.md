@@ -191,4 +191,11 @@
   - [/proc/meminfo](./linux/system-information/proc-meminfo.md)
   - [Exercise: System information](./linux/system-information/exercise-system-information.md)
 
+- [System administration basics](./linux/sysadmin/index.md)
+  - [Basic sysadmin tasks](./linux/sysadmin/sysadmin-tasks.md)
+  - [sudo](./linux/sysadmin/sudo.md)
+  - [su](./linux/sysadmin/su.md)
+  - [Logfiles in /var/log](./linux/sysadmin/var-log.md)
+  - [Exercise: sysadmin](./linux/sysadmin/exercise-sysadmin.md)
+
 
