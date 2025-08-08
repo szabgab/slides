@@ -8,7 +8,6 @@
     "repo": "https://github.com/szabgab/slides/blob/main/",
     "version": "1.23",
     "files": [
-        "install.md",
         "intro.md",
         "gui.md",
         "terminal.md",
