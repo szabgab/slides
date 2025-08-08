@@ -129,4 +129,17 @@
   - [Exercise: File content](./linux/file-content/exercise-file-content.md)
   - [Exercise: File content round 2](./linux/file-content/exercise-file-content2.md)
 
+- [Redirection and Pipes](./linux/redirection/index.md)
+  - [Open Channels](./linux/redirection/open-channels.md)
+  - [Redirection](./linux/redirection/redirection-in-general.md)
+  - [Redirection bash](./linux/redirection/redirection-bash.md)
+  - [Redirection bash append](./linux/redirection/redirection-bash-append.md)
+  - [Redirection bash merge](./linux/redirection/redirection-bash-merge.md)
+  - [Redirection tcsh](./linux/redirection/redirection-tcsh.md)
+  - [Redirect to /dev/null](./linux/redirection/dev-null.md)
+  - [Pipes](./linux/redirection/pipes.md)
+  - [Filters](./linux/redirection/filters.md)
+  - [tee](./linux/redirection/tee.md)
+  - [Exercises: redirection](./linux/redirection/exercises-redirection.md)
+  - [Exercise: HTML content](./linux/redirection/exercise-conten.md)
 
