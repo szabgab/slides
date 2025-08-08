@@ -143,3 +143,17 @@
   - [Exercises: redirection](./linux/redirection/exercises-redirection.md)
   - [Exercise: HTML content](./linux/redirection/exercise-conten.md)
 
+- [Commands and aliases](./linux/commands-and-aliases/index.md)
+  - [which](./linux/commands-and-aliases/which.md)
+  - [type](./linux/commands-and-aliases/type.md)
+  - [whereis](./linux/commands-and-aliases/whereis.md)
+  - [alias](./linux/commands-and-aliases/alias.md)
+  - [Creating alias in bash](./linux/commands-and-aliases/creating-alias-bash.md)
+  - [Creating alias in tcsh](./linux/commands-and-aliases/creating-alias-tcsh.md)
+  - [Suppress alias](./linux/commands-and-aliases/suppress-alias.md)
+  - [Alias only works in the shell it has been defined in](./linux/commands-and-aliases/alias-in-subshell.md)
+  - [Exercises: commands and aliases](./linux/commands-and-aliases/exercises-commands-and-aliases.md)
+
+
+
+
