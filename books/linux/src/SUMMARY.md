@@ -20,4 +20,9 @@
   - [Installation](./linux/intro/installation-of-linux.md)
   - [Exercise: Install Linux](./linux/intro/exercise-install.md)
 
+- [GUI](./linux/gui/index.md)
+  - [Desktop GUIs](./linux/gui/desktop-guis.md)
+  - [GUI Tasks](./linux/gui/gui-tasks.md)
+  - [Exercise: GUI](./linux/gui/exercise-gui.md)
+
 
