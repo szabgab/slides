@@ -276,5 +276,8 @@
   - [init](./linux/boot/init.md)
   - [Multiple OS-es](./linux/boot/multiple-os-es.md)
 
+- [NFS - Network Filesystem](./linux/nfs/index.md)
+  - [Fileserver](./linux/nfs/fileserver.md)
+
 
 

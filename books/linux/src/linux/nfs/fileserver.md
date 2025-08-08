@@ -1,8 +1,4 @@
-# NFS - Network Filesystem
-{id: nfs}
-
-## Fileserver
-{id: fileserver}
+# Fileserver
 
 * NFS Daemon - mountd
 * nfsd
@@ -11,9 +7,6 @@
 * statd
 * /etc/fstab
 * mount
-
-
-
 
 
 
