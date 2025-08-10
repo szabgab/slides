@@ -332,5 +332,17 @@
   - [Arrays](./linux/bash-scripts/arrays.md)
   - [Create array](./linux/bash-scripts/create-array.md)
 
+- [Users](./linux/users/index.md)
+  - [Overview](./linux/users/users-overview.md)
+  - [/etc/passwd](./linux/users/etc-passwd.md)
+  - [User properties](./linux/users/user-properties.md)
+  - [/etc/group](./linux/users/etc-group.md)
+  - [/etc/shadow](./linux/users/etc-shadow.md)
+  - [User manipulation](./linux/users/user-manipulation-front-end.md)
+  - [Group manipulation](./linux/users/group-manipulation-front-end.md)
+  - [/etc/skel](./linux/users/etc-skel.md)
+  - [/etc/profile](./linux/users/etc-profile.md)
+  - [Changing password](./linux/users/passwd.md)
+  - [Change shell - chsh](./linux/users/chsh.md)
 
 
