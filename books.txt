@@ -1,3 +1,2 @@
 crystal/crystal.json,crystal,
-linux/linux.json,linux,
 web/web.json,web,
