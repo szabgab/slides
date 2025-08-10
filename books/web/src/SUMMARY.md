@@ -137,6 +137,18 @@
   - [MetaCPAN API](./web/angularjs-ajax/metacpan-api.md)
   - [Exercise: Implement a new interface for MetaCPAN](./web/angularjs-ajax/exercise-ajax.md)
 
+- [AngularJS - Filters](./web/angularjs-filters/index.md)
+  - [Filters in HTML view](./web/angularjs-filters/filters.md)
+  - [Filters in JavaScript Controller](./web/angularjs-filters/filters-in-javascript.md)
+  - [Filter date](./web/angularjs-filters/filter-date.md)
+  - [Filter number](./web/angularjs-filters/filter-number.md)
+  - [Filter by case-insensitive substring](./web/angularjs-filters/filter-by-string.md)
+  - [Filter by attributes](./web/angularjs-filters/filter-by-attributes.md)
+  - [Filter table](./web/angularjs-filters/filter-table.md)
+  - [Filter by calling a function](./web/angularjs-filters/filter-functions.md)
+  - [New (crazy) filter](./web/angularjs-filters/new-crazy-filter.md)
+  - [Filter number in JavaScript Controller](./web/angularjs-filters/filter-number-in-js.md)
+  - [Exercise: display clock and stopper](./web/angularjs-filters/exercise-display-clock.md)
 
 
 
