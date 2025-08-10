@@ -120,5 +120,23 @@
   - [AngularJS resources](./web/angularjs-design/angularjs-resources.md)
   - [Other resources](./web/angularjs-design/other-resources.md)
 
+- [AngularJS - Ajax - Building a Single Page Application](./web/angularjs-ajax/index.md)
+  - [What are Single-page web applications?](./web/angularjs-ajax/what-are-single-page-web-applications.md)
+  - [Access data on server](./web/angularjs-ajax/access-data-on-server.md)
+  - [Mojolicious Backend](./web/angularjs-ajax/mojolicous-backend.md)
+  - [$http GET request](./web/angularjs-ajax/http-get-request-v1.md)
+  - [$http GET request with CORS enabled](./web/angularjs-ajax/http-get-request-with-cors-enabled-v2.md)
+  - [$http GET request with data](./web/angularjs-ajax/http-get-request-with-data-v2.md)
+  - [$http POST, OPTIONS requests](./web/angularjs-ajax/http-post-request-v2.md)
+  - [$http list items](./web/angularjs-ajax/http-v2-list-items.md)
+  - [$http DELETE request](./web/angularjs-ajax/http-v2.md)
+  - [Using ngResource](./web/angularjs-ajax/resource-get.md)
+  - [ngResource error handling (no CORS)](./web/angularjs-ajax/resource-get-error.md)
+  - [ngResource GET with param](./web/angularjs-ajax/resource-get-with-data.md)
+  - [Public APIs with Cross-origin Resource Sharing (CORS) enabled](./web/angularjs-ajax/public-apis.md)
+  - [MetaCPAN API](./web/angularjs-ajax/metacpan-api.md)
+  - [Exercise: Implement a new interface for MetaCPAN](./web/angularjs-ajax/exercise-ajax.md)
+
+
 
 
