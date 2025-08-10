@@ -1,2 +1,1 @@
 crystal/crystal.json,crystal,
-web/web.json,web,
