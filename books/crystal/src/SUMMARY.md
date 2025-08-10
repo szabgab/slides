@@ -161,3 +161,7 @@
   - [Path from string](./crystal/directories/path.md)
   - [Expand Path](./crystal/directories/expand-path.md)
 
+- [Sets](./crystal/sets/index.md)
+  - [Create empty set](./crystal/sets/create-empty-set.md)
+  - [Set examples](./crystal/sets/set.md)
+
