@@ -86,7 +86,14 @@
   - [Exercise: TODO](./web/angularjs-services/exercise-todo.md)
   - [Solution: Automatic Counter with $interval](./web/angularjs-services/automatic-counter-with-interval.md)
 
-
-
+- [AngularJS - Routing](./web/angularjs-routing/index.md)
+  - [Routing](./web/angularjs-routing/routing.md)
+  - [Simple routing](./web/angularjs-routing/routing-simple.md)
+  - [Routing from code](./web/angularjs-routing/routing-from-code.md)
+  - [Two Angular controllers on the same page](./web/angularjs-routing/angular-two-conrollers.md)
+  - [Two Angular Apps on the same page](./web/angularjs-routing/angular-two-apps-on-same-page.md)
+  - [Routing with controller](./web/angularjs-routing/routing-with-controller.md)
+  - [Routing with parameters](./web/angularjs-routing/routing-with-parameters.md)
+  - [Exercise: Routing](./web/angularjs-routing/exercise-routing.md)
 
 
