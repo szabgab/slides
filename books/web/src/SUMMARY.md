@@ -12,5 +12,21 @@
   - [Proxy and Mojolicious Ajax server](./web/backend/psgi-proxy.md)
 
 
+- [HTML and CSS](./web/html/index.md)
+  - [Emulate devices](./web/html/view-page-as-on-device.md)
+  - [Browserstack screenshots](./web/html/browserstack.md)
+  - [Mobile or Responsive?](./web/html/mobile-or-responsive.md)
+  - [HTML elements](./web/html/html-elements.md)
+  - [HTML form elements](./web/html/html-form-elements.md)
+  - [Bare HTML](./web/html/bare-html.md)
+  - [HTML and CSS](./web/html/html-css.md)
+  - [Viewport and Media Query for body](./web/html/viewport-and-media-query-body.md)
+  - [Viewport and Media Query](./web/html/viewport-and-media-query.md)
+  - [Pixels (px), em, rem](./web/html/units.md)
+  - [Units: px (pixels)](./web/html/units-pixels.md)
+  - [Units: em (The size of Letter M)](./web/html/units-em.md)
+  - [Units: rem (root em)](./web/html/units-rem.md)
+  - [Viewport width and height](./web/html/viewport-width-and-height.md)
+  - [Exercise: Responsive HTML](./web/html/exercise-responsive-html.md)
 
 
