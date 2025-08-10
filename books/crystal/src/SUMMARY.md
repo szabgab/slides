@@ -122,3 +122,17 @@
   - [First element of the array](./crystal/arrays/array-first.md)
   - [Permutations](./crystal/arrays/array-permutations.md)
 
+- [Hash](./crystal/hashes/index.md)
+  - [Hash intro](./crystal/hashes/hash-intro.md)
+  - [Count words](./crystal/hashes/count-words.md)
+  - [Create empty hash](./crystal/hashes/create-empty-hash.md)
+  - [Hash and types](./crystal/hashes/hash-and-types.md)
+  - [Hash get value, get default value](./crystal/hashes/hash-get-value.md)
+  - [Merge hashes](./crystal/hashes/hash-merge.md)
+  - [Delete - remove an element from a hash](./crystal/hashes/hash-delete.md)
+  - [Reject - remove an element from a hash](./crystal/hashes/hash-reject.md)
+  - [Clear - empty a hash](./crystal/hashes/hash-clear.md)
+  - [Select - keep certain key-value pairs](./crystal/hashes/hash-select.md)
+  - [Multi-dimensional hash](./crystal/hashes/hash-multi-dimensional.md)
+  - [Dig a hash](./crystal/hashes/hash-dig.md)
+
