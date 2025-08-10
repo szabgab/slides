@@ -267,3 +267,7 @@
   - [Random as a class](./crystal/random/random-class.md)
   - [Random - seed](./crystal/random/random-seed.md)
 
+- [YAML](./crystal/yaml/index.md)
+  - [Parse YAML](./crystal/yaml/parse-yaml.md)
+
+
