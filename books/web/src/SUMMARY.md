@@ -150,5 +150,12 @@
   - [Filter number in JavaScript Controller](./web/angularjs-filters/filter-number-in-js.md)
   - [Exercise: display clock and stopper](./web/angularjs-filters/exercise-display-clock.md)
 
+- [AngularJS - Directives](./web/angularjs-directives/index.md)
+  - [Directives](./web/angularjs-directives/directives.md)
+  - [Example: List people](./web/angularjs-directives/list-people.md)
+  - [Example: List people with directive](./web/angularjs-directives/list-people-directive.md)
+  - [Example: List people with directive and templateUrl](./web/angularjs-directives/list-people-directive-url.md)
+  - [Hello World directive](./web/angularjs-directives/hello-world-directive.md)
+  - [Create new directive](./web/angularjs-directives/define-directive.md)
 
 
