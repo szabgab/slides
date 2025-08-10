@@ -47,3 +47,29 @@
   - [Exercise: Calculator ARGV](./crystal/intro/exercise-calculator-argv.md)
   - [Exercise: Age limit](./crystal/intro/exercise-age-limit-stdin.md)
 
+- [Strings](./crystal/strings/index.md)
+  - [Strings intro](./crystal/strings/strings-intro.md)
+  - [Length or size of a string](./crystal/strings/strings-length.md)
+  - [Locate substring (index, rindex)](./crystal/strings/strings-index.md)
+  - [Reverse a string](./crystal/strings/strings-revers.md)
+  - [Substring, range of characters](./crystal/strings/substring.md)
+  - [String includes another string](./crystal/strings/strings-includes-another-string.md)
+  - [String starts with](./crystal/strings/strings-starts-with.md)
+  - [String ends with](./crystal/strings/strings-ends-with.md)
+  - [Replace part of a string (substitute)](./crystal/strings/strings-substitute.md)
+  - [Is the string empty or blank?](./crystal/strings/strings-empty.md)
+  - [Iterate over characters of a string](./crystal/strings/strings-iterator.md)
+  - [Type conversion  from string to float, to int](./crystal/strings/type-conversion.md)
+  - [Converting string to integer or float](./crystal/strings/converting-string-to-integer-or-float.md)
+  - [Split String](./crystal/strings/split-string.md)
+  - [String Transliteration](./crystal/strings/string-transliteration.md)
+  - [String Builder](./crystal/strings/string-builder.md)
+  - [sprintf and %](./crystal/strings/string-sprintf.md)
+  - [Split to the same string length](./crystal/strings/split-to-fixed-width.md)
+  - [Split characters](./crystal/strings/split-characters.md)
+  - [printf](./crystal/strings/printf.md)
+  - [Here documents](./crystal/strings/here-documents.md)
+
+
+
+

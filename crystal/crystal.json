@@ -8,7 +8,6 @@
     "repo": "https://github.com/szabgab/slides/blob/main/",
     "version": "0.01",
     "files": [
-        "strings.md",
         "conditionals.md",
         "loops.md",
         "arrays.md",
