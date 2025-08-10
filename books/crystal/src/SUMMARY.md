@@ -136,3 +136,17 @@
   - [Multi-dimensional hash](./crystal/hashes/hash-multi-dimensional.md)
   - [Dig a hash](./crystal/hashes/hash-dig.md)
 
+- [Files](./crystal/files/index.md)
+  - [Files intro](./crystal/files/files-intro.md)
+  - [Read from file (slurp)](./crystal/files/read-from-file.md)
+  - [Read lines into array](./crystal/files/read-lines-into-array.md)
+  - [Read file line-by-line](./crystal/files/read-file-line-by-line.md)
+  - [Write to file](./crystal/files/write-to-file.md)
+  - [Append to file](./crystal/files/append-to-file.md)
+  - [Does file exist?](./crystal/files/file-exists.md)
+  - [Size of file?](./crystal/files/size-of-file.md)
+  - [Last Modified date of file?](./crystal/files/modified-date-of-file.md)
+  - [Counter](./crystal/files/counter.md)
+  - [Multi Counter JSON](./crystal/files/multi-counter-json.md)
+  - [Multi Counter YAML](./crystal/files/multi-counter-yaml.md)
+
