@@ -239,3 +239,7 @@
   - [Testing 1](./crystal/testing/testing-1.md)
   - [Testing with Spec](./crystal/testing/testing-with-spec.md)
 
+- [Modules](./crystal/modules/index.md)
+  - [Namespace](./crystal/modules/namespace.md)
+  - [Extend class - include module](./crystal/modules/include-module.md)
+
