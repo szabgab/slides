@@ -71,5 +71,19 @@
   - [Here documents](./crystal/strings/here-documents.md)
 
 
-
+- [Conditionals](./crystal/conditionals/index.md)
+  - [Comparison Operators](./crystal/conditionals/comparison-operators.md)
+  - [Spaceship operator](./crystal/conditionals/spaceship-operator.md)
+  - [if statement](./crystal/conditionals/if.md)
+  - [elsif](./crystal/conditionals/elsif.md)
+  - [unless statement](./crystal/conditionals/unless.md)
+  - [Suffix if](./crystal/conditionals/suffix-if.md)
+  - [Suffix unless](./crystal/conditionals/suffix-unless.md)
+  - [Logical operators](./crystal/conditionals/logical-operators.md)
+  - [Truth-table](./crystal/conditionals/truth-table.md)
+  - [case / when](./crystal/conditionals/case.md)
+  - [case of types](./crystal/conditionals/case-of-types.md)
+  - [Ternary operator and or to set default value](./crystal/conditionals/default-value.md)
+  - [Exercise: Number Guessing game - level 0](./crystal/conditionals/exercise-number-guessing-game-0.md)
+  - [Solution: Number Guessing game - level 0](./crystal/conditionals/solution-number-guessing-game-0.md)
 
