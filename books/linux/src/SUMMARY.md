@@ -345,4 +345,12 @@
   - [Changing password](./linux/users/passwd.md)
   - [Change shell - chsh](./linux/users/chsh.md)
 
+- [More](./linux/more/index.md)
+  - [Access modes](./linux/more/access-modes.md)
+  - [Process CSV file](./linux/more/process-csv-file.md)
+  - [Shell Pipe ideas](./linux/more/shell-pipe-ideas.md)
+  - [List and kill processes by username](./linux/more/kill-the-processes-by-user.md)
+  - [Compiling software: Perl](./linux/more/compiling-software-perl.md)
+  - [Exercise: compile](./linux/more/exercise-compile.md)
+
 
