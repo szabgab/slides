@@ -212,3 +212,20 @@
   - [Extend struct](./crystal/structs/struct-extend-struct.md)
   - [Extend other structs](./crystal/structs/struct-extend-other-structs.md)
 
+
+- [Classes](./crystal/classes/index.md)
+  - [Empty Class definition](./crystal/classes/empty-class-definition.md)
+  - [Class with attributes](./crystal/classes/class-with-attributes.md)
+  - [Class with getters](./crystal/classes/class-with-getters.md)
+  - [Class with setter](./crystal/classes/class-with-setters.md)
+  - [Class with getters and setter (property)](./crystal/classes/class-with-getters-and-setters.md)
+  - [Class with property with default value](./crystal/classes/class-with-property-with-default-value.md)
+  - [Class with declared getter and default value](./crystal/classes/class-with-declared-getter-and-default-value.md)
+  - [Class with declared getter](./crystal/classes/class-with-declared-getter.md)
+  - [Serialize Crystal-lang class to/from JSON from_json to_json](./crystal/classes/class-serialization-to-from-json.md)
+  - [Compare objects for equality](./crystal/classes/compare-objects-for-equality.md)
+  - [Singleton using class properties](./crystal/classes/singleton-using-class-properties.md)
+  - [Singleton using class properties with default values](./crystal/classes/singleton-using-class-properties-with-defaults.md)
+  - [Class monkey-path add method](./crystal/classes/class-monkey-path-add-method.md)
+  - [Stringification to_s](./crystal/classes/class-stringification.md)
+
