@@ -270,4 +270,7 @@
 - [YAML](./crystal/yaml/index.md)
   - [Parse YAML](./crystal/yaml/parse-yaml.md)
 
+- [Exception Handling in Crystal-lang](./crystal/exceptions/index.md)
+  - [Catch exception - begin, rescue](./crystal/exceptions/catch-exception.md)
+  - [Raise exception](./crystal/exceptions/raise-exception.md)
 
