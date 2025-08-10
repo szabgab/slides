@@ -150,3 +150,14 @@
   - [Multi Counter JSON](./crystal/files/multi-counter-json.md)
   - [Multi Counter YAML](./crystal/files/multi-counter-yaml.md)
 
+- [Directories](./crystal/directories/index.md)
+  - [List directory content](./crystal/directories/list-directory.md)
+  - [List directory tree](./crystal/directories/directory-tree.md)
+  - [Get Current working directory (cwd, pwd)](./crystal/directories/current-working-directory.md)
+  - [Temporary directory](./crystal/directories/temporary-directory.md)
+  - [Tempdir function](./crystal/directories/tempdir.md)
+  - [Join / concatenate file system path](./crystal/directories/join-file-system-path.md)
+  - [Join / concatenate file system path](./crystal/directories/concatenate-file-system-path.md)
+  - [Path from string](./crystal/directories/path.md)
+  - [Expand Path](./crystal/directories/expand-path.md)
+
