@@ -87,3 +87,11 @@
   - [Exercise: Number Guessing game - level 0](./crystal/conditionals/exercise-number-guessing-game-0.md)
   - [Solution: Number Guessing game - level 0](./crystal/conditionals/solution-number-guessing-game-0.md)
 
+- [Loops](./crystal/loops/index.md)
+  - [loop](./crystal/loops/loop.md)
+  - [loop controls (next, break)](./crystal/loops/loop-controls.md)
+  - [while](./crystal/loops/while.md)
+  - [until](./crystal/loops/until.md)
+  - [Exercise: Number guessing game](./crystal/loops/exercise-number-guessing-game.md)
+  - [Solution: Number guessing game](./crystal/loops/solution-number-guessing-game.md)
+

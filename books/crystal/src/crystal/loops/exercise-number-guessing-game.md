@@ -1,36 +1,4 @@
-# Loops
-{id: loops}
-
-## loop
-{id: loop}
-{i: loop}
-{i: break}
-
-![](examples/loops/loop.cr)
-
-
-## loop controls (next, break)
-{id: loop-controls}
-{i: next}
-{i: continue}
-
-* next  (continue)
-* break (last)
-
-## while
-{id: while}
-{i: while}
-
-![](examples/loops/while.cr)
-
-## until
-{id: until}
-{i: until}
-
-![](examples/loops/until.cr)
-
-## Exercise: Number guessing game
-{id: exercise-number-guessing-game}
+# Exercise: Number guessing game
 
 Level 0
 
@@ -72,11 +40,4 @@ Level 6
 * Let the user play several games.
 * Pressing 'n' will skip this game and start a new one. Generates a new number to guess.
 
-## Solution: Number guessing game
-{id: solution-number-guessing-game}
-
-
-![](examples/game/number_guessing_game_1.cr)
-
-![](examples/game/number_guessing_game_2.cr)
 
