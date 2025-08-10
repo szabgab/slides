@@ -260,3 +260,10 @@
   - [Range with step](./crystal/range/range-with-step.md)
   - [Range to Array](./crystal/range/range-to-array.md)
 
+
+- [Random](./crystal/random/index.md)
+  - [rand](./crystal/random/rand.md)
+  - [Random in other parts of Crystal](./crystal/random/other-random.md)
+  - [Random as a class](./crystal/random/random-class.md)
+  - [Random - seed](./crystal/random/random-seed.md)
+
