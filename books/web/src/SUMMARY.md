@@ -114,4 +114,11 @@
   - [Bootstrap Grid hide the side when small](./web/bootstrap/bootstrap-responsive-grid-hide-side.md)
   - [Exercises: Bootstrap](./web/bootstrap/exercises-bootstrap.md)
 
+- [AngularJS - Design](./web/angularjs-design/index.md)
+  - [Design](./web/angularjs-design/design.md)
+  - [Bootstrap Angular](./web/angularjs-design/bootrap-angular.md)
+  - [AngularJS resources](./web/angularjs-design/angularjs-resources.md)
+  - [Other resources](./web/angularjs-design/other-resources.md)
+
+
 
