@@ -229,3 +229,8 @@
   - [Class monkey-path add method](./crystal/classes/class-monkey-path-add-method.md)
   - [Stringification to_s](./crystal/classes/class-stringification.md)
 
+- [Regexes](./crystal/regexes/index.md)
+  - [Alternate delimiter matching slashes](./crystal/regexes/alternate-delimiter.md)
+  - [Substitute](./crystal/regexes/substitute.md)
+  - [gsub](./crystal/regexes/gsub.md)
+
