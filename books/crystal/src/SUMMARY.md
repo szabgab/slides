@@ -243,3 +243,10 @@
   - [Namespace](./crystal/modules/namespace.md)
   - [Extend class - include module](./crystal/modules/include-module.md)
 
+
+- [JSON](./crystal/json/index.md)
+  - [JSON (to_json, parse)](./crystal/json/parse-json.md)
+  - [JSON to NamedTuple](./crystal/json/json-to-namedtuple.md)
+  - [Reading a JSON file](./crystal/json/reading-a-json-file.md)
+  - [JSON to Array](./crystal/json/json-to-array.md)
+
