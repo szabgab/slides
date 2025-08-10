@@ -165,3 +165,23 @@
   - [Create empty set](./crystal/sets/create-empty-set.md)
   - [Set examples](./crystal/sets/set.md)
 
+- [Functions](./crystal/functions/index.md)
+  - [Functions and methods](./crystal/functions/functions-and-methods.md)
+  - [Function return value](./crystal/functions/return-value.md)
+  - [Function parameter passing](./crystal/functions/function-parameter-passing.md)
+  - [Function parameter default value](./crystal/functions/function-parameter-default-value.md)
+  - [Wrong number of arguments](./crystal/functions/wrong-number-of-arguments.md)
+  - [Any number of arguments (splat, `*`)](./crystal/functions/any-number-of-arguments.md)
+  - [Manually separate](./crystal/functions/manually-separate.md)
+  - [Tuple from](./crystal/functions/tuple-from.md)
+  - [Array overload](./crystal/functions/array-overload.md)
+  - [Multiple dispatch](./crystal/functions/multiple-dispatch.md)
+  - [Implicit return value](./crystal/functions/implicit-return-value.md)
+  - [Return Type definition](./crystal/functions/return-type.md)
+  - [Type or Nil](./crystal/functions/type-or-nil.md)
+  - [Yield](./crystal/functions/yield.md)
+  - [Yield with parameters](./crystal/functions/yield-with-parameters.md)
+  - [Block and parameters](./crystal/functions/block-and-parameters.md)
+
+
+
