@@ -250,3 +250,13 @@
   - [Reading a JSON file](./crystal/json/reading-a-json-file.md)
   - [JSON to Array](./crystal/json/json-to-array.md)
 
+
+- [Range](./crystal/range/index.md)
+  - [Range using dots](./crystal/range/range-with-dots.md)
+  - [Range using a class](./crystal/range/range-with-class.md)
+  - [Range - sum](./crystal/range/range-sum.md)
+  - [Range - count](./crystal/range/range-count.md)
+  - [Range and loop controls](./crystal/range/range-loop-controls.md)
+  - [Range with step](./crystal/range/range-with-step.md)
+  - [Range to Array](./crystal/range/range-to-array.md)
+
