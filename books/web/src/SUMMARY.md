@@ -29,4 +29,11 @@
   - [Viewport width and height](./web/html/viewport-width-and-height.md)
   - [Exercise: Responsive HTML](./web/html/exercise-responsive-html.md)
 
+- [CSS](./web/css/index.md)
+  - [CSS - embed in HTML file](./web/css/css-embed-in-html.md)
+  - [CSS - include from external file](./web/css/css-include-from-external-file.md)
+  - [CSS syntax](./web/css/css-syntax.md)
+  - [CSS attributes](./web/css/css-attributes.md)
+  - [CSS selectors](./web/css/css-selectors.md)
+  - [HTML/CSS frameworks](./web/css/html-css-frameworks.md)
 
