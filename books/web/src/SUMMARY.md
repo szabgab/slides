@@ -65,5 +65,28 @@
   - [Solution: Calculator](./web/angularjs/solution-calculator-using-angularjs.md)
 
 
+- [AngularJS - Services](./web/angularjs-services/index.md)
+  - [Services](./web/angularjs-services/angular-services.md)
+  - [Console log](./web/angularjs-services/console-log.md)
+  - [Logging with $log](./web/angularjs-services/logging.md)
+  - [Turn off logging with $logProvider](./web/angularjs-services/turn-off-logging.md)
+  - [Showing the correct line number](./web/angularjs-services/logging-right-line-number.md)
+  - [Dependency Injection](./web/angularjs-services/dependency-injection-explained.md)
+  - [Automatic counter with $timeout](./web/angularjs-services/automatic-counter.md)
+  - [Automatic counter with stop button](./web/angularjs-services/automatic-counter-with-stop.md)
+  - [Automatic counter with stop and start buttons](./web/angularjs-services/automatic-counter-with-stop-and-start.md)
+  - [Simple pages](./web/angularjs-services/simple-pages.md)
+  - [Simple pages with controller](./web/angularjs-services/simple-pages-controller.md)
+  - [HTML form elements with AngularJS](./web/angularjs-services/form-elements-with-angular.md)
+  - [Input validation with $messages](./web/angularjs-services/input-validation.md)
+  - [TODO with AngularJS](./web/angularjs-services/todo-with-angular.md)
+  - [TODO with AngularJS (ENTER to submit and delete item)](./web/angularjs-services/todo2-with-angular.md)
+  - [TODO with AngularJS (localStorage)](./web/angularjs-services/todo3-with-angular.md)
+  - [Exercise: Automatic Counter with $interval](./web/angularjs-services/exercise-automatic-counter-with-interval.md)
+  - [Exercise: TODO](./web/angularjs-services/exercise-todo.md)
+  - [Solution: Automatic Counter with $interval](./web/angularjs-services/automatic-counter-with-interval.md)
+
+
+
 
 
