@@ -183,5 +183,10 @@
   - [Yield with parameters](./crystal/functions/yield-with-parameters.md)
   - [Block and parameters](./crystal/functions/block-and-parameters.md)
 
-
+- [Tuples and Named Tuples](./crystal/tuples/index.md)
+  - [Create Tuple](./crystal/tuples/tuple-create.md)
+  - [Create Named Tuple](./crystal/tuples/create-named-tuple.md)
+  - [Access fields of Named Tuple](./crystal/tuples/access-fields-of-named-tuple.md)
+  - [Named Tuple with non-alphanumeric fields](./crystal/tuples/named-tuple-with-non-alphanumeric-fields.md)
+  - [Named Tuple with optional field](./crystal/tuples/named-tuple-with-optional-field.md)
 
