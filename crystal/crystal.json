@@ -8,7 +8,6 @@
     "repo": "https://github.com/szabgab/slides/blob/main/",
     "version": "0.01",
     "files": [
-        "kemal.md",
         "other.md",
         "crystal_1_0_conf.md"
     ]

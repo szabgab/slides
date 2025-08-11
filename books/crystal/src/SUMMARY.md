@@ -323,3 +323,23 @@
   - [Send and receive](./crystal/concurrency/send-and-receive.md)
   - [Concurrent HTTP request](./crystal/concurrency/concurrent-http-request.md)
 
+
+- [Kemal](./crystal/kemal/index.md)
+  - [About Kemal](./crystal/kemal/kemal-about.md)
+  - [Kemal Install](./crystal/kemal/kemal-install.md)
+  - [Hello World](./crystal/kemal/kemal-hello-world.md)
+  - [Testing Hello World](./crystal/kemal/kemal-testing-hello-world.md)
+  - [Kemal Autorestart (autoreload)](./crystal/kemal/kemal-autorestart.md)
+  - [Kemal GET parameters](./crystal/kemal/kemal-get-parameters.md)
+  - [Kemal POST parameters](./crystal/kemal/kemal-post-parameters.md)
+  - [Kemal Route parameters](./crystal/kemal/kemal-route-parameters.md)
+  - [Kemal ECR Templates](./crystal/kemal/kemal-ecr-templates.md)
+  - [Kemal with Jinja templates](./crystal/kemal/kemal-jinja-templates.md)
+  - [Kemal Elapsed time](./crystal/kemal/kemal-elapsed-time.md)
+  - [Accept GET, POST, and route parameter in the same POST route](./crystal/kemal/kemal-get-post-route.md)
+  - [Kemal indicate 404](./crystal/kemal/kemal-indicate-404.md)
+  - [Kemal Styling 404 pages](./crystal/kemal/kemal-styling-404-pages.md)
+  - [Kemal set headers (change content-type)](./crystal/kemal/kemal-set-header.md)
+  - [Kemal redirect](./crystal/kemal/kemal-redirect.md)
+  - [Kemal in Docker](./crystal/kemal/kemal-in-docker.md)
+
