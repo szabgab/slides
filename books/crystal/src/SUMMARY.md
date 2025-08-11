@@ -304,3 +304,9 @@
   - [Pass parameters to OptionParser](./crystal/cli/parameters-for-option-parser.md)
   - [Order of parsing](./crystal/cli/order-of-parsing.md)
 
+- [HTTP Client](./crystal/http-client/index.md)
+  - [HTTP Client example](./crystal/http-client/http-client-example.md)
+  - [Parse URL (URI)](./crystal/http-client/parse-url.md)
+  - [HTTP::Request GET](./crystal/http-client/http-request-get.md)
+  - [HTTP::Request POST](./crystal/http-client/http-request-post.md)
+
