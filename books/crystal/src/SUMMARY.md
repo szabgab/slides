@@ -310,3 +310,12 @@
   - [HTTP::Request GET](./crystal/http-client/http-request-get.md)
   - [HTTP::Request POST](./crystal/http-client/http-request-post.md)
 
+
+- [Process](./crystal/process/index.md)
+  - [Execute external program (system)](./crystal/process/execute-external-program-system.md)
+  - [Execute external program (backtick)](./crystal/process/execute-external-program-backtick.md)
+  - [Execute external program (Process)](./crystal/process/execute-external-program-process.md)
+  - [Execute external program (capture)](./crystal/process/execute-external-program-capture.md)
+  - [Execute external program (capture)](./crystal/process/execute-external-program-capture2.md)
+  - [Abort](./crystal/process/abort.md)
+
