@@ -286,3 +286,13 @@
   - [SQLite all](./crystal/sqlite/sqlite-all.md)
   - [SQLite in memory](./crystal/sqlite/sqlite-in-memory.md)
 
+
+- [Time](./crystal/time/index.md)
+  - [Dates and Time](./crystal/time/datetime.md)
+  - [Sleep](./crystal/time/sleep.md)
+  - [Time difference or Time::Span](./crystal/time/time-difference.md)
+  - [Elapsed time](./crystal/time/elapsed-time.md)
+  - [Timestamp formatting](./crystal/time/timestamp-formatting.md)
+  - [Add timespan](./crystal/time/add-timespan.md)
+  - [Time Types](./crystal/time/time-types.md)
+
