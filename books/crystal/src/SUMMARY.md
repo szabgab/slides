@@ -410,3 +410,13 @@
   - [Future](./crystal/crystal-1-0-conf/crystal-1-0-conf-future.md)
   - [Thank you - QA ?!?!](./crystal/crystal-1-0-conf/crystal-1-0-conf-thank-you.md)
 
+
+- [Macros](./crystal/macros/index.md)
+  - [Macro - increment x by 1](./crystal/macros/macro-increment-x-by-1.md)
+  - [Macro - with parameter and placeholder](./crystal/macros/macro-with-parameter.md)
+  - [Macro Swap](./crystal/macros/macro-swap.md)
+  - [Macro - internal variables - Swap fixed](./crystal/macros/macro-swap-fixed.md)
+  - [Macros function](./crystal/macros/macro-function.md)
+  - [Macro to print type and content](./crystal/macros/macro-to-print-type-and-content.md)
+
+
