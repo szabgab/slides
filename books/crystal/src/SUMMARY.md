@@ -296,3 +296,11 @@
   - [Add timespan](./crystal/time/add-timespan.md)
   - [Time Types](./crystal/time/time-types.md)
 
+
+- [CLI](./crystal/cli/index.md)
+  - [ARGV](./crystal/cli/argv.md)
+  - [Usage statement and exit](./crystal/cli/usage-statement-and-exit.md)
+  - [Command line Option Parser (argparse, GetOpts)](./crystal/cli/option-parser.md)
+  - [Pass parameters to OptionParser](./crystal/cli/parameters-for-option-parser.md)
+  - [Order of parsing](./crystal/cli/order-of-parsing.md)
+
