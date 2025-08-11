@@ -277,3 +277,12 @@
 - [Logging](./crystal/logging/index.md)
   - [Crystal logging](./crystal/logging/crystal-logging.md)
 
+- [SQLite](./crystal/sqlite/index.md)
+  - [Try SQLite](./crystal/sqlite/sqlite-try.md)
+  - [Multi-counter with SQLite](./crystal/sqlite/sqlite-multi-counter.md)
+  - [SQLite last_id last_insert_id](./crystal/sqlite/sqlite-last-insert-id.md)
+  - [SQLite UPDATE row_affected](./crystal/sqlite/sqlite-update-row-affected.md)
+  - [SQLite exception handling (during INSERT)](./crystal/sqlite/sqlite-exception-handling.md)
+  - [SQLite all](./crystal/sqlite/sqlite-all.md)
+  - [SQLite in memory](./crystal/sqlite/sqlite-in-memory.md)
+
