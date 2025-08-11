@@ -319,3 +319,7 @@
   - [Execute external program (capture)](./crystal/process/execute-external-program-capture2.md)
   - [Abort](./crystal/process/abort.md)
 
+- [Concurrency](./crystal/concurrency/index.md)
+  - [Send and receive](./crystal/concurrency/send-and-receive.md)
+  - [Concurrent HTTP request](./crystal/concurrency/concurrent-http-request.md)
+
