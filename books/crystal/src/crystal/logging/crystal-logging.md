@@ -1,13 +1,9 @@
-# Logging
-{id: logging}
-
-## Crystal logging
-{id: crystal-logging}
+# Crystal logging
 
 * [Log](https://crystal-lang.org/api/Log.html)
 
 * 7 levels of logging, default is `info` and higher to the `STDOUT`
 
-![](examples/logging/logging.cr)
+{% embed include file="src/examples/logging/logging.cr" %}
 
 

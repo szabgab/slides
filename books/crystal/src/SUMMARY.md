@@ -274,3 +274,6 @@
   - [Catch exception - begin, rescue](./crystal/exceptions/catch-exception.md)
   - [Raise exception](./crystal/exceptions/raise-exception.md)
 
+- [Logging](./crystal/logging/index.md)
+  - [Crystal logging](./crystal/logging/crystal-logging.md)
+
