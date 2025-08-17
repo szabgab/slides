@@ -15,6 +15,7 @@ my @SUPPORTED = qw(
     python-fastapi
     python-regexes
 
+    clap
     rust-programming
     rust-json
 
