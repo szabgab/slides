@@ -1,9 +1,0 @@
-$VAR1 = {
-          'Paris' => {
-                       'London' => 350
-                     },
-          'New York' => {
-                          'Bejin' => 10100,
-                          'London' => 5027
-                        }
-        };

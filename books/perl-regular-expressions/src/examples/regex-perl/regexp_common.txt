@@ -1,8 +1,0 @@
-
-one
-(two)
-(three))
-((three)
-)four(
-3.4
-42

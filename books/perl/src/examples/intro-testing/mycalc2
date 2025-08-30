@@ -1,7 +1,0 @@
-#!/usr/bin/perl
-
-use strict;
-
-my $cl = join " ", @ARGV;
-print eval $cl
-

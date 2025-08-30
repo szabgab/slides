@@ -1,1 +1,0 @@
-# BDD - Behavior Driven Development

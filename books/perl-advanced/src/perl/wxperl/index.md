@@ -1,1 +1,0 @@
-# wxPerl - wxWidgets for Perl

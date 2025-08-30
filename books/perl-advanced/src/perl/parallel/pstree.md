@@ -1,8 +1,0 @@
-# pstree
-
-
-```
-pstree -p -a
-```
-
-

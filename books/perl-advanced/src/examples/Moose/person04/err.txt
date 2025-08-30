@@ -1,3 +1,0 @@
-Attribute (sex) does not pass the type constraint because:
-  (male) is not a valid sex.
-  Valid values are 'f' and 'm'. at script\person.pl line 13

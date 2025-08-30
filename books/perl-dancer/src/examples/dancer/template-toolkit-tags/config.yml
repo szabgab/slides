@@ -1,9 +1,0 @@
----
-template: "template_toolkit"
-engines:
-  template:
-    template_toolkit:
-      # Note: start_tag and end_tag are regexes
-      start_tag: '<%'
-      end_tag:   '%>'
-

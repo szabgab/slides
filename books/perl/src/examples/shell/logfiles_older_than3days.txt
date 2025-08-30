@@ -1,2 +1,0 @@
-perl -e 'for (<*.log>) {print "$_\n" if -M $_ > 3}'
-

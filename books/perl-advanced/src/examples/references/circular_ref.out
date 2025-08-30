@@ -1,8 +1,0 @@
-$VAR1 = {
-          'b' => {
-                   'a' => $VAR1,
-                   'myself' => 'b'
-                 },
-          'myself' => 'a'
-        };
-$VAR2 = $VAR1->{'b'};

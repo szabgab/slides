@@ -1,4 +1,0 @@
-yellow y
-blue b
-black k
-green g
