@@ -18,6 +18,7 @@ my @SUPPORTED = qw(
     clap
     rust-programming
     rust-json
+    rust-liquid
 
     svg
     );
