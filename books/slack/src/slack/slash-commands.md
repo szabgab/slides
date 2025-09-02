@@ -1,7 +1,0 @@
-# Slash commands
-
-* /
-* /join
-* /remind
-
-

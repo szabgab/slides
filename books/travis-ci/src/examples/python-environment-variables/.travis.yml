@@ -1,5 +1,0 @@
-language: python
-script: pytest -s
-
-python:
-  - "3.8"

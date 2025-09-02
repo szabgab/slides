@@ -1,1 +1,0 @@
-# Testing real world applications

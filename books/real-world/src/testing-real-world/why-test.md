@@ -1,5 +1,0 @@
-# Why test?
-
-* Business Value
-
-

@@ -1,9 +1,0 @@
-os: windows
-language: minimal
-script:
-  - echo Hello World
-  - python -V
-  - ruby -v
-  - perl -v
-  - git --version
-  - uname -a
