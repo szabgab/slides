@@ -1,2 +1,0 @@
-default:
-  script: echo Hello World

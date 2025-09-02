@@ -1,6 +1,0 @@
-# gitk
-
-
-* gitk --all
-
-

@@ -1,6 +1,0 @@
-# blame
-
-* git blame [filename]
-
-
-
