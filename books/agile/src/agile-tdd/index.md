@@ -1,1 +1,0 @@
-# TDD and Pair programming

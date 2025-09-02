@@ -1,1 +1,0 @@
-# XP - Extreme Programming
