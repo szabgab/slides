@@ -1,5 +1,0 @@
-adr # => Address(@city="Capital", @country="Big", @street="Main str. 3")
-prs # => Person(
- @address=Address(@city="Capital", @country="Big", @street="Main str. 3"),
- @email="me@foo.bar",
- @name="Foo")

@@ -1,9 +1,0 @@
-# Logical operators
-
-```
-&&
-||
-!
-```
-
-
