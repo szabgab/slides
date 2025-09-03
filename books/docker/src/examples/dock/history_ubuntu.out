@@ -1,6 +1,0 @@
-IMAGE               CREATED             CREATED BY                                      SIZE
-74435f89ab78        4 weeks ago         /bin/sh -c #(nop)  CMD ["/bin/bash"]            0B
-<missing>           4 weeks ago         /bin/sh -c mkdir -p /run/systemd && echo 'do…   7B
-<missing>           4 weeks ago         /bin/sh -c set -xe   && echo '#!/bin/sh' > /…   811B
-<missing>           4 weeks ago         /bin/sh -c [ -z "$(apt-get indextargets)" ]     1.01MB
-<missing>           4 weeks ago         /bin/sh -c #(nop) ADD file:b2342c7e6665d5ff3…   72.8MB

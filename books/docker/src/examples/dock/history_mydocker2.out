@@ -1,7 +1,0 @@
-IMAGE               CREATED             CREATED BY                                      SIZE                COMMENT
-d2e1e0d54ec3        26 seconds ago      /bin/sh -c apt-get update &&     apt-get upg…   65.3MB              
-1d622ef86b13        5 weeks ago         /bin/sh -c #(nop)  CMD ["/bin/bash"]            0B                  
-<missing>           5 weeks ago         /bin/sh -c mkdir -p /run/systemd && echo 'do…   7B                  
-<missing>           5 weeks ago         /bin/sh -c set -xe   && echo '#!/bin/sh' > /…   811B                
-<missing>           5 weeks ago         /bin/sh -c [ -z "$(apt-get indextargets)" ]     1.01MB              
-<missing>           5 weeks ago         /bin/sh -c #(nop) ADD file:a58c8b447951f9e30…   72.8MB              

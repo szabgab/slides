@@ -1,8 +1,0 @@
-IMAGE               CREATED             CREATED BY                                      SIZE
-77dfbe63aa19        2 hours ago         /bin/sh -c apt-get install -y curl              16.2MB
-05d6b032b3c6        2 hours ago         /bin/sh -c apt-get update                       22.3MB
-74435f89ab78        4 weeks ago         /bin/sh -c #(nop)  CMD ["/bin/bash"]            0B
-<missing>           4 weeks ago         /bin/sh -c mkdir -p /run/systemd && echo 'do…   7B
-<missing>           4 weeks ago         /bin/sh -c set -xe   && echo '#!/bin/sh' > /…   811B
-<missing>           4 weeks ago         /bin/sh -c [ -z "$(apt-get indextargets)" ]     1.01MB
-<missing>           4 weeks ago         /bin/sh -c #(nop) ADD file:b2342c7e6665d5ff3…   72.8MB

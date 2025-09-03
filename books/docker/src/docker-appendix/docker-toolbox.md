@@ -1,6 +1,0 @@
-# Docker Toolbox
-
-
-Legacy system
-
-

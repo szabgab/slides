@@ -1,6 +1,0 @@
-FROM ubuntu:22.10
-
-ENV FIRST Foo
-
-CMD echo $FIRST $SECOND
-

@@ -1,6 +1,0 @@
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  name: ping-demo
-data:
-  hostname: "code-maven.com"

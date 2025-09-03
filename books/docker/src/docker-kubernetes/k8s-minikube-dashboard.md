@@ -1,7 +1,0 @@
-# minkube dashboard
-
-```
-minikube dashboard
-```
-
-

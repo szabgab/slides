@@ -1,1 +1,0 @@
-# Kubernetes on Digital Ocean

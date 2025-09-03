@@ -1,1 +1,0 @@
-# Decomissioned Docker slides
