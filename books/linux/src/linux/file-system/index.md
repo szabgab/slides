@@ -1,1 +1,0 @@
-# Navigating the File System

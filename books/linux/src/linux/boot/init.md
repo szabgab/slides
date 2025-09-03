@@ -1,8 +1,0 @@
-# init
-
-* /sbin/init
-* initrd
-
-
-
-

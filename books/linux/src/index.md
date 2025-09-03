@@ -1,1 +1,0 @@
-# Linux for Power Users

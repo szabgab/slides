@@ -1,8 +1,0 @@
-# Pipelines
-
-
-```
-find . | grep h
-```
-
-

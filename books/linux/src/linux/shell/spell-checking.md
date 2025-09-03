@@ -1,7 +1,0 @@
-# Spell checking
-
-* ispell
-* aspell
-
-
-

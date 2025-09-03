@@ -1,9 +1,0 @@
-$ pwd
-/home/foobar/training/linux
-
-$ (cd ~; pwd)
-/home/foobar
-
-$ pwd
-/home/foobar/training/linux
-

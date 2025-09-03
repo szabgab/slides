@@ -1,7 +1,0 @@
-# Telnet
-
-* telnet
-
-
-
-

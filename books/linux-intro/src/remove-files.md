@@ -1,5 +1,0 @@
-# Remove files
-
-
-
-* rm

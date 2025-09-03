@@ -1,6 +1,0 @@
-# System load: top
-
-* top
-
-
-
