@@ -1,5 +1,0 @@
-# Salaries?
-
-Supply and demand?
-
-
