@@ -1,4 +1,0 @@
-# Typescript
-{id: typescript}
-
-
