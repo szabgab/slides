@@ -1,1 +1,0 @@
-# Groovy in Jenkisfile
