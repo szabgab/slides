@@ -1,3 +1,0 @@
-add = function (x, y) {
-    ...
-};
