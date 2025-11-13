@@ -6,6 +6,7 @@ use File::Basename qw(basename dirname);
 
 my @SUPPORTED = qw(
     perl-oop
+    oneliners
 
     python-functional-programming
     python-testing
