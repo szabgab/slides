@@ -188,9 +188,9 @@ $ git difftool
 * [SourceTree](http://www.sourcetreeapp.com/) a free Git and Mercurical client for Windows and Mac
 * [The home of Git](http://git-scm.com/)
 * [Pro Git book](http://git-scm.com/book) 
-* [Git Guys](http://www.gitguys.com/)
+* [Git commands explained](https://coddy.tech/git-commands)
 * [Tutorial of Ralf Ebert](http://www.ralfebert.de/tutorials/git/)
-* [Git reference site](http://gitref.org/)
+* [Git reference site](https://git-scm.com/docs)
 * [Leran Git branching](http://pcottle.github.com/learnGitBranching/) interactive tutorial.
 * [Why aren't you using git-flow?](http://jeffkreeftmeijer.com/2010/why-arent-you-using-git-flow/)
 * [git-flow, a successful Git branching model](http://nvie.com/posts/a-successful-git-branching-model/)
